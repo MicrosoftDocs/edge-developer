@@ -762,7 +762,11 @@ See also:
 <!-- ------------------------------ -->
 #### Client certificates
 
-In WebView2, you can use the Client Certificate API to select the client certificate at the application level.  This API allows you to show UI if desired, replace the default client certificate dialog prompt, programmatically query the certificates, and select a certificate from the list to respond to the server when WebView2 is making a request to a HTTP server that needs a client certificate for HTTP authentication. 
+In WebView2, you can use the Client Certificate API to select the client certificate at the application level.  This API allows you to:
+*  Display a UI to the user, if desired.
+*  Replace the default client certificate dialog prompt.
+*  Programmatically query the certificates.
+*  Select a certificate from the list to respond to the server, when WebView2 is making a request to a HTTP server that needs a client certificate for HTTP authentication. 
 
 ##### [C#](#tab/c-sharp)
 
@@ -836,7 +840,7 @@ Learn how to handle basic authentication in WebView2 controls.
 <!-- what's the benefit for end users?  how does it essentially work? what's involved? -->
 
 See also:
-* [Basic authentication](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
+* [Basic authentication for WebView2 apps](basic-authentication.md)
 
 ##### [C#](#tab/c-sharp)
 
@@ -1100,6 +1104,10 @@ Spatial input (mouse, touch, pen) is received by the application and must be sen
 
 By default, WebView2 will show up in the accessibility tree as a child of the parent HWND, for Win32/C++ apps.  WebView2 provides API to better position the WebView2 content relative to other elements in the application.
 
+##### [C#](#tab/c-sharp)
+
+Not applicable for C#.
+
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2CompositionController2::AutomationProvider property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller2#get_automationprovider)<!--no put-->
@@ -1126,9 +1134,9 @@ See also:
 
 * [ICoreWebView2Environment7::UserDataFolder property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!--no put-->
 * [ICoreWebView2EnvironmentOptions2::ExclusiveUserDataFolderAccess property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#get_exclusiveuserdatafolderaccess), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#put_exclusiveuserdatafolderaccess)
-* [ICoreWebView2Profile2::ClearBrowsingData method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22#clearbrowsingdata)
-* [ICoreWebView2Profile2::ClearBrowsingDataAll method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22#clearbrowsingdataall)
-* [ICoreWebView2Profile2::ClearBrowsingDataInTimeRange method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22#clearbrowsingdataintimerange)
+* [ICoreWebView2Profile2::ClearBrowsingData method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdata)
+* [ICoreWebView2Profile2::ClearBrowsingDataAll method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataall)
+* [ICoreWebView2Profile2::ClearBrowsingDataInTimeRange method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataintimerange)
 * [ICoreWebView2Environment10 interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment10)<!--TODO: why is this link here, which members?-->
 
 ---
