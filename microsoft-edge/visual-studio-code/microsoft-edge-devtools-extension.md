@@ -138,9 +138,9 @@ One of the features of the **Elements** tool is that it displays the source file
 <!-- ====================================================================== -->
 ## Syncing live changes from the Styles tool by using CSS Mirror Editing
 
-The Styles tool in Microsoft Edge DevTools is excellent for debugging and tweaking CSS property styles.  One problem is that although these changes show up live in the browser, they aren't reflected in your source files.  This means that at the end of your CSS debugging session, you need to copy and paste what you changed back into your source files.
+The Styles tool in Microsoft Edge DevTools is excellent for debugging and tweaking your CSS.  One problem is that although these changes show up live in the browser, they aren't reflected in your source files.  This means that at the end of your CSS debugging session, you need to copy and paste what you changed back into your source files.
 
-CSS Mirror Editing is a feature of the Microsoft Edge DevTools extension that works around that problem.  When you turn on Mirror Editing, any change made in the Styles tool of DevTools also changes the file in your workspace.
+CSS Mirror Editing is a feature of the Microsoft Edge DevTools extension that works around that problem. Any change made in the Styles tool of DevTools also changes the file in your workspace.  CSS Mirror editing is enabled by default in the extension.
 
 In the following example, we have `index.html` currently open in Visual Studio Code, and the Microsoft Edge DevTools extension is open.  When we select the flexbox icon in the `.searchbar` CSS selector and change the `flex-direction` to `column`, we not only see the change in the browser and in DevTools, but Visual Studio Code also automatically navigates to the correct style sheet file and the appropriate line number, and inserts the `flex-direction: column` CSS code:
 
