@@ -251,10 +251,11 @@ To allow users to control which webpage is displayed in the WebView2 control, ad
 
 1.  Close the sample app.
 
-1.  Close the sample app.  The following appears:
+1.  Close the sample app.  The following dialog boxes might appear:
 
     ![Debugger not configured](winui-images/debugger-not-configd.png)
 
+1.  These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
 
 <!--
 maintenance link (keep)
@@ -327,13 +328,15 @@ In this section, you add code to import the WebView2 Core library.
 
     Navigation is blocked to HTTP sites. <!--need clearer instructions, results description, what if you get: -->
 
-1.  Close the sample app.  The following appears:
-
-    ![Debugger not configured](winui-images/debugger-not-configd.png)
-
 1.  Enter an HTTPS URL, such as `https://bing.com`.
 
     Navigation is allowed for HTTPS sites.
+
+1.  Close the sample app.  The following dialog boxes might appear:
+
+    ![Debugger not configured](winui-images/debugger-not-configd.png)
+
+1.  These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
 
 
 ### WinRT CoreWebView2 object availability
