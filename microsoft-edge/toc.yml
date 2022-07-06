@@ -1319,15 +1319,18 @@
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
-    - name: Microsoft Edge IDE integration
+    - name: DevTools extension for Visual Studio Code
       items:
-        - name: Microsoft Edge IDE integration  # new firstchild article
-          href: visual-studio-code/ide-integration.md
+        - name: Microsoft Edge DevTools extension for Visual Studio Code
+          href: visual-studio-code/microsoft-edge-devtools-extension.md
           displayName: 
 
-        # move to be top-level after polish content
-        - name: Microsoft Edge DevTools extension
-          href: visual-studio-code/microsoft-edge-devtools-extension.md
+# =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
+    - name: Microsoft Edge IDE integration
+      items:
+        - name: Microsoft Edge IDE integration
+          href: visual-studio-code/ide-integration.md
           displayName: 
 
         - name: Open source files in Visual Studio Code
