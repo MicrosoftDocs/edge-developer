@@ -117,7 +117,7 @@ landingContent:
 # =============================================================================
 # Row 2 with 3 cards
 # =============================================================================
-# Card r1c1
+# Card r2c1
   - title: Progressive Web Apps
     linkLists:
       - linkListType: overview
@@ -146,54 +146,8 @@ landingContent:
 
           - text: Web App Manifests
             url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
-
 # =============================================================================
 # Card r2c2
-  - title: Test and automation
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Test and automation in Microsoft Edge  # new firstchild article
-            url: /microsoft-edge/test-and-automation/test-and-automation
-
-          - text: DevTools Protocol
-            url: /microsoft-edge/devtools-protocol-chromium
-
-          - text: Origin Trials
-            url: /microsoft-edge/origin-trials/index
-
-          - text: Playwright
-            url: /microsoft-edge/playwright/index
-
-          - text: Puppeteer
-            url: /microsoft-edge/puppeteer
-
-          - text: WebDriver
-            url: /microsoft-edge/webdriver-chromium
-
-          - text: webhint extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/webhint
-# =============================================================================
-# Card r2c3
-  - title: Web platform
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Web platform overview  # new firstchild article
-            url: /microsoft-edge/web-platform/web-platform
-
-          - text: Site compatibility-impacting changes
-            url: /microsoft-edge/web-platform/site-impacting-changes
-
-          - text: Detect Microsoft Edge from your website
-            url: /microsoft-edge/web-platform/user-agent-guidance
-
-          - text: Detect Windows 11 using User-Agent Client Hints
-            url: /microsoft-edge/web-platform/how-to-detect-win11
-# =============================================================================
-# Row 3 with 3 cards
-# =============================================================================
-# Card r3c1
   - title: WebView2
     linkLists:
       - linkListType: overview
@@ -223,7 +177,26 @@ landingContent:
           - text: WebView2 API Reference
             url: /microsoft-edge/webview2/webview2-api-reference
 # =============================================================================
-# Card r3c2
+# Card r2c3
+  - title: Web platform
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Web platform overview  # new firstchild article
+            url: /microsoft-edge/web-platform/web-platform
+
+          - text: Site compatibility-impacting changes
+            url: /microsoft-edge/web-platform/site-impacting-changes
+
+          - text: Detect Microsoft Edge from your website
+            url: /microsoft-edge/web-platform/user-agent-guidance
+
+          - text: Detect Windows 11 using User-Agent Client Hints
+            url: /microsoft-edge/web-platform/how-to-detect-win11
+# =============================================================================
+# Row 3 with 3 cards
+# =============================================================================
+# Card r3c1
   - title: Microsoft Edge IDE integration
     linkLists:
       - linkListType: overview
@@ -240,7 +213,7 @@ landingContent:
           - text: Visual Studio for web development
             url: /microsoft-edge/visual-studio/
 # =============================================================================
-# Card r3c3
+# Card r3c2
   - title: Accessibility in Microsoft Edge
     linkLists:
       - linkListType: overview
@@ -255,3 +228,29 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
           - text: Accessibility testing
             url: /microsoft-edge/accessibility/test
+# =============================================================================
+# Card r3c3
+  - title: Test and automation
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Test and automation in Microsoft Edge  # new firstchild article
+            url: /microsoft-edge/test-and-automation/test-and-automation
+
+          - text: DevTools Protocol
+            url: /microsoft-edge/devtools-protocol-chromium
+
+          - text: Origin Trials
+            url: /microsoft-edge/origin-trials/index
+
+          - text: Playwright
+            url: /microsoft-edge/playwright/index
+
+          - text: Puppeteer
+            url: /microsoft-edge/puppeteer
+
+          - text: WebDriver
+            url: /microsoft-edge/webdriver-chromium
+
+          - text: webhint extension for Visual Studio Code
+            url: /microsoft-edge/visual-studio-code/webhint
