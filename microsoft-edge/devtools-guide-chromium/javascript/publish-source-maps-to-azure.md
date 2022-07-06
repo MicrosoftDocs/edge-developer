@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/02/2022
+ms.date: 05/26/2022
 ---
 
 # Securely debug original code by publishing source maps to the Azure Artifacts symbol server
@@ -164,6 +164,7 @@ module.exports = (env, args) => {
 <!-- ====================================================================== -->
 ## Step 3: Publish source maps to the Azure Artifacts symbol server
 
+Complete either one of the following options to publish source maps.
 
 ### Publish source maps using Azure DevOps Pipelines
 

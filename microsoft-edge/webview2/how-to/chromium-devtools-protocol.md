@@ -83,7 +83,7 @@ To create an `HTML file` to find your geolocation, complete following the action
 
 1. To display your latitude and longitude coordinates, click the **Display Location** button.  To verify and compare your geolocation, copy and paste your coordinates in [https://www.bing.com/maps](https://www.bing.com/maps).
 
-   :::image type="content" source="./media/geolocater-browser.png" alt-text="Displaying the user's geolocation coordinates in Microsoft Edge." lightbox="./media/geolocater-browser.png":::
+   ![Displaying the user's geolocation coordinates in Microsoft Edge.](./media/geolocater-browser.png)
 
 
 <!-- ====================================================================== -->
@@ -103,7 +103,7 @@ To create an `HTML file` to find your geolocation, complete following the action
 
 1. Make sure the `geolocation.html` file is displayed in your WebView2 control app:
 
-   :::image type="content" source="./media/initial-geolocate.png" alt-text="The geolocation.html file, displayed in your WebView2 control app." lightbox="./media/initial-geolocate.png":::
+   ![The geolocation.html file, displayed in your WebView2 control app.](./media/initial-geolocate.png)
 
 
 <!-- ====================================================================== -->
@@ -119,7 +119,7 @@ To install the package:
 
 1. Make sure **Microsoft.Web.WebView2.DevToolsProtocolExtension** is displayed in the Visual Studio NuGet Package Manager:
 
-   :::image type="content" source="./media/cdp-nuget.png" alt-text="Making sure Microsoft.Web.WebView2.DevToolsProtocolExtension is displayed in the Visual Studio NuGet Package Manager." lightbox="./media/cdp-nuget.png":::
+   ![Making sure Microsoft.Web.WebView2.DevToolsProtocolExtension is displayed in the Visual Studio NuGet Package Manager.](./media/cdp-nuget.png)
 
 
 <!-- ====================================================================== -->
@@ -166,7 +166,7 @@ To install the package:
 
 1. To display the coordinates of Paris, France, click the **Display Location** button:
 
-   :::image type="content" source="./media/final-location-cdp.png" alt-text="Display the .html file in a WebView2 control with the coordinates for Paris." lightbox="./media/final-location-cdp.png":::
+   ![Display the .html file in a WebView2 control with the coordinates for Paris.](./media/final-location-cdp.png)
 
 
 <!-- ====================================================================== -->

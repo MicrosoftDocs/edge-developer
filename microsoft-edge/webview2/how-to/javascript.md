@@ -101,7 +101,7 @@ To begin, explore the current drag-and-drop functionality:
 
 1. Drag-and-drop the `contoso.txt` file into the WebView2 control.  A new window opens, which is the result of the code in your sample project:
 
-   :::image type="content" source="./media/drag-text.png" alt-text="Result of dragging and dropping contoso.txt." lightbox="./media/drag-text.png":::
+   ![Result of dragging and dropping contoso.txt.](./media/drag-text.png)
 
 1. Next, add code to remove the drag-and-drop functionality from the WebView2 control.  Paste the following code after the CoreWebView2 object is initialized in your code:
 
@@ -131,7 +131,7 @@ To begin, explore the current functionality of the right-click menu:
 
 1. Right-click anywhere on the WebView2 control.  The context menu displays the default right-click menu commands:
 
-   :::image type="content" source="./media/context-menu.png" alt-text="The right-click menu, showing the default commands." lightbox="./media/context-menu.png":::
+   ![The right-click menu, showing the default commands.](./media/context-menu.png)
 
    Next, add code to remove the right-click menu functionality from the WebView2 control.
 

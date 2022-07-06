@@ -82,7 +82,7 @@ You can now visualize **Layers** content alongside z-index values and the Docume
 
 ![Composited Layers pane.](../../media/2020/11/experiments-layers.msft.png)
 
-Update: This feature has been released and is no longer experimental.  The **Layers** tool has been replaced by the **3D View** tool.
+Update: This feature has been released and is no longer experimental.  The **Layers** tool has been removed and replaced by the **3D View** tool.
 
 See also:
 * [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md)
@@ -411,5 +411,5 @@ For the history of this feature in the Chromium open-source project, see Issue [
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-88) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

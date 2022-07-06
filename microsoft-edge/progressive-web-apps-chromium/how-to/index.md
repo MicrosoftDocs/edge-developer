@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/19/2021
+ms.date: 06/07/2022
 ---
 # Get started with Progressive Web Apps
 
@@ -19,6 +19,9 @@ In this overview of PWA basics, you create a simple web app and extend it as a P
 
 > [!TIP]
 > You can use [PWABuilder](https://www.pwabuilder.com) to create a new PWA, enhance your existing PWA, or package your PWA for app stores.
+
+<!-- link is placed here per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->
+To install or run a PWA on Windows, see [Installing a PWA](../ux.md#installing-a-pwa) in _The user experience of PWAs_.
 
 
 <!-- ====================================================================== -->
@@ -155,17 +158,17 @@ Confirm that your service worker runs, as follows:
 
 1.  In Microsoft Edge, select `F12` to open DevTools.  Select **Application**, then **Service Workers** to view the service workers.  If the service worker isn't displayed, refresh the page.
 
-    :::image type="content" source="../media/devtools-sw-overview.png" alt-text="DevTools Service Worker overview." lightbox="../media/devtools-sw-overview.png":::
+    ![DevTools Service Worker overview.](../media/devtools-sw-overview.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, CSS, and JavaScript files.
 
-    :::image type="content" source="../media/devtools-cache.png" alt-text="Service Worker cache in DevTools." lightbox="../media/devtools-cache.png":::
+    ![Service Worker cache in DevTools.](../media/devtools-cache.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  Try your PWA as an offline app, as follows.  In DevTools, select **Network**, and then change the status from **Online** to **Offline**.
 
-    :::image type="content" source="../media/devtools-offline.png" alt-text="Setting the app to offline mode in DevTools." lightbox="../media/devtools-offline.png":::
+    ![Setting the app to offline mode in DevTools.](../media/devtools-offline.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  Refresh your app.  It should display the offline mechanism for serving the resources of your app from the cache.

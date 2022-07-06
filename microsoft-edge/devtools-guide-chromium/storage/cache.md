@@ -32,23 +32,23 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 
 1. Click the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.
 
-   :::image type="content" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest.msft.png":::
+   ![The Manifest pane.](../media/storage-application-manifest.msft.png)
 
 1. Expand the **Cache Storage** section to view available caches.
 
-   :::image type="content" source="../media/storage-application-cache-storage.msft.png" alt-text="Available caches." lightbox="../media/storage-application-cache-storage.msft.png":::
+   ![Available caches.](../media/storage-application-cache-storage.msft.png)
 
 1. Click a cache to view the contents.
 
-   :::image type="content" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="Viewing the contents of a cache." lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
+   ![Viewing the contents of a cache.](../media/storage-application-cache-storage-domain-root-headers.msft.png)
 
 1. Click a resource to view the HTTP headers in the section below the table.
 
-   :::image type="content" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="Viewing the HTTP headers of a resource." lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
+   ![Viewing the HTTP headers of a resource.](../media/storage-application-cache-storage-index-headers.msft.png)
 
 1. Click **Preview** to view the content of a resource.
 
-   :::image type="content" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="Viewing the content of a resource." lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
+   ![Viewing the content of a resource.](../media/storage-application-cache-storage-domain-js-preview.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -57,7 +57,7 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 1. [View the data for a cache](#view-cache-data).
 1. Click the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.
 
-   :::image type="content" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Selecting a resource to refresh." lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+   ![Selecting a resource to refresh.](../media/storage-application-cache-storage-domain-refresh.msft.png)
 
 1. Click **Refresh** (![Refresh.](../media/refresh-icon.msft.png)).
 
@@ -69,7 +69,7 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 
 1. Use the **Filter by Path** text box to filter out any resources that don't match the path that you provide.
 
-   :::image type="content" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="Filtering out resources that don't match the specified path." lightbox="../media/storage-application-cache-storage-filter.msft.png":::
+   ![Filtering out resources that don't match the specified path.](../media/storage-application-cache-storage-filter.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -79,7 +79,7 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 
 1. Click the resource that you want to delete.  DevTools highlights it to indicate that it is selected.
 
-   :::image type="content" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Selecting a resource to delete." lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+   ![Selecting a resource to delete.](../media/storage-application-cache-storage-delete-selected.msft.png)
 
 1. Click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)).
 
@@ -91,17 +91,17 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 
 1. Make sure that the **Cache storage** checkbox is selected.
 
-   :::image type="content" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="The Cache Storage checkbox." lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+   ![The Cache Storage checkbox.](../media/storage-application-clear-storage-cache-storage-checkbox.msft.png)
 
 1. Click the **Clear site data** button.
 
-   :::image type="content" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="The 'Clear site data' button." lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+   ![The 'Clear site data' button.](../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/storage/cache/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

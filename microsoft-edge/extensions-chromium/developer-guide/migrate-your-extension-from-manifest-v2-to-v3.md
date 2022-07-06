@@ -1,15 +1,15 @@
 ---
-title: Prepare to update your extensions from Manifest V2 to V3
+title: Migrate an extension from Manifest V2 to V3
 description: Updating your extension from Manifest V2 to V3.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/24/2021
+ms.date: 05/26/2021
 ---
-# Prepare to update your extensions from Manifest V2 to V3
+# Migrate an extension from Manifest V2 to V3
 
-This article lists important changes being implemented as part of Manifest V3, which is the next version of the Chromium Extensions platform.  For guidance on migrating your extension to Manifest V3, see [Migrating to Manifest V3](https://developer.chrome.com/docs/extensions/mv3/mv3-migration-checklist).
+This article lists important changes being implemented as part of Manifest V3, which is the next version of the Chromium Extensions platform.  For guidance on migrating your extension to Manifest V3, see [Overview of Manifest V3 - Chrome Developers](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/).
 
 
 <!-- ====================================================================== -->

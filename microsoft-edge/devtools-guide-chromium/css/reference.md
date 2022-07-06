@@ -34,7 +34,7 @@ The **Elements** tool in DevTools lets you view or change the CSS of one element
 
 In the following figure, the `h1` element that is highlighted in the **DOM Tree** is the selected element.  On the right, the styles of the element are shown in the **Styles** pane.  On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**:
 
-:::image type="content" source="../media/css-elements-styles-h1.msft.png" alt-text="An example of a selected element." lightbox="../media/css-elements-styles-h1.msft.png":::
+![An example of a selected element.](../media/css-elements-styles-h1.msft.png)
 
 There are many ways to select an element:
 
@@ -59,7 +59,7 @@ In the following figure, after you click
 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --> you are taken to line 2 of
 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- master kind of works but all lines are concated.  changing master to main doesn't work -->
 
-:::image type="content" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Viewing the stylesheet where a rule is defined." lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
+![Viewing the stylesheet where a rule is defined.](../media/css-elements-styles-h1-highlight.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -79,7 +79,7 @@ The **Styles** panel shows you all of the rules that apply to an element, includ
 
    In the following figure, the **Computed** panel shows the CSS properties being applied to the currently selected `h1` element:
 
-   :::image type="content" source="../media/css-elements-computed-h1.msft.png" alt-text="The Computed panel." lightbox="../media/css-elements-computed-h1.msft.png":::
+   ![The Computed panel.](../media/css-elements-computed-h1.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -103,7 +103,7 @@ To change a value, double-click it.
 
 In the following figure, the **Box Model** diagram in the **Styles** panel shows the box model for the currently selected `h1` element.
 
-:::image type="content" source="../media/css-elements-styles-h1-2.msft.png" alt-text="The Box Model diagram." lightbox="../media/css-elements-styles-h1-2.msft.png":::
+![The Box Model diagram.](../media/css-elements-styles-h1-2.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -115,11 +115,11 @@ To also search inherited properties in the **Computed** panel, check the **Show 
 
 In the following figure, the **Styles** panel is filtered to only show rules that include the search query `color`.
 
-:::image type="content" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filter the Styles panel." lightbox="../media/css-elements-styles-filter-color.msft.png":::
+![Filter the Styles panel.](../media/css-elements-styles-filter-color.msft.png)
 
 In the following figure, the **Computed** panel is filtered to only show declarations that include the search query `100%`.
 
-:::image type="content" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Filter the Computed panel." lightbox="../media/css-elements-computed-filter-100.msft.png":::
+![Filter the Computed panel.](../media/css-elements-computed-filter-100.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -137,7 +137,7 @@ To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
 
    The following figure shows toggling the `:hover` pseudo-class.  In the viewport, the `background-color: cornflowerblue` declaration is applied to the element, even though the element isn't actually being hovered over.
 
-   :::image type="content" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Toggle the :hover pseudo-class." lightbox="../media/css-elements-styles-hov-hover.msft.png":::
+   ![Toggle the :hover pseudo-class.](../media/css-elements-styles-hov-hover.msft.png)
 
 For an interactive tutorial, see [Add a pseudostate to a class](../css/index.md#add-a-pseudostate-to-a-class).
 
@@ -165,23 +165,23 @@ The **Coverage** tool shows you what CSS a page actually uses.
 
    Opening the Coverage tab from the Command Menu:
 
-   :::image type="content" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Opening the Coverage tab from the Command Menu." lightbox="../media/css-console-command-menu-coverage.msft.png":::
+   ![Opening the Coverage tab from the Command Menu.](../media/css-console-command-menu-coverage.msft.png)
 
    The Coverage tab:
 
-   :::image type="content" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="The Coverage tab." lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+   ![The Coverage tab.](../media/css-console-qs-coverage-empty.msft.png)
 
 1. Click **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page.](../media/refresh-icon.msft.png)).  The page refreshes and the **Coverage** tab provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
 
    An overview of how much CSS (and JavaScript) is used and unused:
 
-   :::image type="content" source="../media/css-console-qs-coverage-run.msft.png" alt-text="An overview of how much CSS (and JavaScript) is used and unused." lightbox="../media/css-console-qs-coverage-run.msft.png":::
+   ![An overview of how much CSS (and JavaScript) is used and unused.](../media/css-console-qs-coverage-run.msft.png)
 
 1. To display a line-by-line breakdown of what CSS is used, click a CSS file.
 
    In the following figure, lines 145 to 147 and 149 to 151 of `b66bc881.site-ltr.css` are unused, whereas lines 163 to 166 are used:
 
-   :::image type="content" source="../media/css-sources-css-coverage.msft.png" alt-text="A line-by-line breakdown of used and unused CSS." lightbox="../media/css-sources-css-coverage.msft.png":::
+   ![A line-by-line breakdown of used and unused CSS.](../media/css-sources-css-coverage.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -220,7 +220,7 @@ To add an inline declaration:
 
 In the following figure, the `margin-top` and `background-color` properties have been applied to the selected element.  In the **DOM Tree**, the declarations are reflected in the element's `style` attribute.
 
-:::image type="content" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="Add inline declarations." lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
+![Add inline declarations.](../media/css-elements-styles-margin-top-background-color.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -238,7 +238,7 @@ To add a declaration to an existing style rule:
 
 1. Enter a valid value for that property and press `Enter`.
 
-:::image type="content" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="Adding a declaration to a style rule." lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
+![Adding a declaration to a style rule.](../media/css-elements-styles-border-bottom-style.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -246,7 +246,7 @@ To add a declaration to an existing style rule:
 
 Double-click a declaration's name or value to change it.  See [Change declaration values with keyboard shortcuts](#change-declaration-values-with-keyboard-shortcuts) for shortcuts for quickly incrementing or decrementing a value by 0.1, 1, 10, or 100 units.
 
-:::image type="content" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Changing the value of a declaration." lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
+![Changing the value of a declaration.](../media/css-elements-styles-border-bottom-style-dropdown.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -277,7 +277,7 @@ To add a class to an element:
 
 1. Press `Enter`.
 
-   :::image type="content" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="The Element Classes pane." lightbox="../media/css-elements-styles-filter-classes.msft.png":::
+   ![The Element Classes pane.](../media/css-elements-styles-filter-classes.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -303,7 +303,7 @@ To add a new style rule:
 
    In the following figure, DevTools adds the `h1.devsite-page-title` style rule after you click **New Style Rule**.
 
-   :::image type="content" source="../media/css-elements-styles-style-new.msft.png" alt-text="Add a new style rule." lightbox="../media/css-elements-styles-style-new.msft.png":::
+   ![Add a new style rule.](../media/css-elements-styles-style-new.msft.png)
 
 <!-- are we recommending continuing from the above then doing the following?  or does the following give more detail on how or where to do the above? -->
 
@@ -314,7 +314,7 @@ When [adding a new style rule](#add-a-style-rule), to select a stylesheet to add
 
 *  Click and hold **New Style Rule** (![New Style Rule.](../media/new-style-rule-icon.msft.png)) to select a stylesheet to add the style rule to.
 
-:::image type="content" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Selecting a stylesheet." lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
+![Selecting a stylesheet.](../media/css-elements-styles-style-new-select-existing.msft.png)
 
 <!-- is the above an alternative to the below, or sequential? clarify flow/relation -->
 
@@ -329,7 +329,7 @@ To add a style rule to a specific location in the **Styles** panel:<!--is this o
 
 1. Select **Insert Style Rule Below** (![Insert Style Rule Below icon.](../media/new-style-rule-icon.msft.png)).
 
-:::image type="content" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Insert Style Rule Below." lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
+![Insert Style Rule Below.](../media/css-elements-styles-insert-style-rule-below.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -348,13 +348,13 @@ To reveal the **More Actions** toolbar:
 
    In the following figure, hover on the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.
 
-   :::image type="content" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Reveal 'More Actions' (...)." lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
+   ![Reveal 'More Actions' (...).](../media/css-elements-styles-new-rule-styles.msft.png)
 
 1. Hover on **More Actions** (`...`) to reveal the actions mentioned above.
 
    The **Insert Style Rule Below** action is revealed after hovering over **More Actions**.
 
-   :::image type="content" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="The 'More Actions' toolbar." lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+   ![The 'More Actions' toolbar.](../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -368,7 +368,7 @@ To add a `background-color` declaration to an element:
 
 1. Click **Add Background Color** (![Add Background Color icon.](../media/add-background-color-icon.msft.png)).
 
-:::image type="content" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Add Background Color." lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
+![Add Background Color.](../media/css-elements-styles-rule-add-background-color.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -382,7 +382,7 @@ To add a `color` declaration to an element:
 
 1. Click **Add Color** (![Add Color icon.](../media/add-color-icon.msft.png)).
 
-   :::image type="content" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Add Color." lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
+   ![Add Color.](../media/css-elements-styles-rule-add-color.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -396,7 +396,7 @@ To add a `box-shadow` declaration to an element:
 
 1. Click **Add Box Shadow** (![Add Box Shadow icon.](../media/add-box-shadow-icon.msft.png)).
 
-   :::image type="content" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Add Box Shadow." lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
+   ![Add Box Shadow.](../media/css-elements-styles-rule-add-box-shadow.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -410,7 +410,7 @@ To add a `text-shadow` declaration to an element:
 
 1. Click **Add Text Shadow** (![Add Text Shadow icon.](../media/add-text-shadow-icon.msft.png)).
 
-   :::image type="content" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Add Text Shadow." lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
+   ![Add Text Shadow.](../media/css-elements-styles-rule-add-text-shadow.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -426,7 +426,7 @@ To toggle a single declaration on or off:
 
    In the following figure, the `margin-top` property for the currently selected element has been toggled off.
 
-   :::image type="content" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Toggle a declaration." lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
+   ![Toggle a declaration.](../media/css-elements-styles-rule-deactivated.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -442,15 +442,15 @@ To open the **Color Picker**:
 
    In the following figure, the small square to the left of `rgba(0, 0, 0, 0.7)` is a preview of that color.
 
-   :::image type="content" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="Color preview." lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
+   ![Color preview.](../media/css-elements-styles-rule-overlay-color-box.msft.png)
 
 1. Click the preview to open the **Color Picker**.
 
-   :::image type="content" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="The Color Picker." lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
+   ![The Color Picker.](../media/css-elements-styles-rule-color-picker.msft.png)
 
 The following figure and list describes of each of the UI elements of the **Color Picker**.
 
-:::image type="content" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="The Color Picker, annotated." lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
+![The Color Picker, annotated.](../media/css-elements-styles-rule-color-picker-annotated.msft.png)
 
 | Callout | Component | Description |
 |---|---|---|
@@ -477,7 +477,7 @@ To change the selected color to some other color on the page:
 
    In the following figure, the **Color Picker** shows a current color value of `rgba(0,0,0,0.7)`, which is close to black.  The specific color changes to the version of black that is currently highlighted in the viewport after you clicked it.
 
-   :::image type="content" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Using the Eyedropper." lightbox="../media/css-color-picker-eye-dropper.msft.png":::
+   ![Using the Eyedropper.](../media/css-color-picker-eye-dropper.msft.png)
 
 See also:
 * [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
@@ -495,7 +495,6 @@ To open the **Angle Clock**:
 1. In the **Styles** tab, find the `transform` or `background` declaration that you want to change.  Click the **Angle Preview** box next to the angle value.
 
    In the following figure, the small clock to the left of `100deg` is a preview of the angle.
-   <!-- ![The Angle Clock.](../media/__.png) -->
 
 1. Click the preview to open the **Angle Clock**:
 
@@ -509,7 +508,7 @@ There are more keyboard shortcuts to change the angle value.  Find out more in t
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/css/reference/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

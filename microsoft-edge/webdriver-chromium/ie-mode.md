@@ -28,7 +28,7 @@ To begin automating tests in IE mode in Microsoft Edge, [download IEDriver](http
 <!-- ====================================================================== -->
 ## Required Configuration
 
-To configure IEDriver, Windows, and Microsoft Edge correctly, complete the requirements for [Selenium's required configuration](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#required-configuration).  
+To configure IEDriver, Windows, and Microsoft Edge correctly, complete the requirements for [Selenium's required configuration](https://www.selenium.dev/documentation/ie_driver_server/#required-configuration).
 
 
 ### Place the driver executable in the PATH
@@ -314,7 +314,7 @@ After the `click` method is called on a button that opens a new window, the test
 ```java
 int initialHandleCount = driver.getWindowHandles().size();
 driver.findElement(By.id("<Id of the button that will open a new window>")).click();        
-Set<string> newHandles = driver.getWindowHandles();
+Set<String> newHandles = driver.getWindowHandles();
 while (newHandles.size() == initialHandleCount) {
     newHandles = driver.getWindowHandles();
 }

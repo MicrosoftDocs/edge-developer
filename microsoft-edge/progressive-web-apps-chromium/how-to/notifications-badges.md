@@ -106,7 +106,7 @@ Requesting permission should only be done in response to a user action. This is 
 
 ```javascript
 button.addEventListener("click", () => {
-    Notifications.requestPermission().then(permission => {
+    Notification.requestPermission().then(permission => {
         if (permission === "granted") {
             console.log("The user accepted");
         }

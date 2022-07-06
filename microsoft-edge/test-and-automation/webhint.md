@@ -8,6 +8,10 @@ ms.prod: microsoft-edge
 ms.date: 04/25/2022
 ---
 # webhint extension for Visual Studio Code
+<!-- keep in sync:
+[webhint extension for Visual Studio Code](../test-and-automation/webhint.md)
+[The webhint extension for Visual Studio Code](../visual-studio-code/index.md#the-webhint-extension-for-visual-studio-code) in _Visual Studio Code for web development_.
+-->
 
 **Note:** As of April 2022, the webhint extension for Visual Studio Code is no longer being maintained.  See [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md).
 

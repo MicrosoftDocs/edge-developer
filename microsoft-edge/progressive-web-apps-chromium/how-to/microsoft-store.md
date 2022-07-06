@@ -51,7 +51,7 @@ To create an app reservation:
 
 1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, select **Product management** > **Product Identity**.
 
-    :::image type="content" source="../media/windows-partner-center-publisher-info.msft.png" alt-text="Copy your publisher information from Windows Partner Center." lightbox="../media/windows-partner-center-publisher-info.msft.png":::
+    ![Copy your publisher information from Windows Partner Center.](../media/windows-partner-center-publisher-info.msft.png)
     <!-- lightbox justified because large detailed image -->
 
 1.  Copy and save the following values.
