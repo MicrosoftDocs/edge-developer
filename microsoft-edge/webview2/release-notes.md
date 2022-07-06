@@ -38,10 +38,10 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 <!-- ====================================================================== -->
 ## Platforms covered
 
-Generally, release notes apply across Win32, .NET, and WinRT.  The APIs for the platforms are roughly parallel, such as:
-* Win32 [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2) together with similarly named interfaces such as [ICoreWebView2_10](/microsoft-edge/webview2/reference/win32/icorewebview2_10).
-* .NET [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2).
-* WinRT [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2).
+Generally, release notes apply across the supported platforms.  The APIs for the platforms are roughly parallel, such as:
+* .NET/C# [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2).
+* WinRT/C# [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2).
+* Win32/C++ [ICoreWebView2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2) together with similarly named interfaces such as [ICoreWebView2_10](/microsoft-edge/webview2/reference/win32/icorewebview2_10).
 
 
 <!-- ====================================================================== -->
@@ -59,7 +59,21 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 The following items are now stable:
 
-*  Added [ContextMenuRequested API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1245.22&preserve-view=true) to enable host app to create or modify their own context menu.
+*  Added `ContextMenuRequested`API to enable host app to create or modify their own context menu.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.ContextMenuRequested Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested?view=webview2-dotnet-1.0.1264.42&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.ContextMenuRequested Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42&preserve-view=true#contextmenurequested)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_11::add_ContextMenuRequested event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1264.42&preserve-view=true#add_contextmenurequested), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1264.42&preserve-view=true#remove_contextmenurequested)
+
+---
 
 
 <!-- ====================================================================== -->
@@ -77,6 +91,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 The following APIs are promoted to stable in this prerelease SDK:
 
+<!-- TODO: link -->
 * The [Favicon API](#):
    * `add_FaviconChanged`
    * `remove_FaviconChanged`
@@ -84,21 +99,23 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 #### Bug fixes
 
-* Fixed an issue that `PrintToPdfAsync` may hang for long time. ([Issue #1974](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1974))
+<!-- TODO: check indent experiment, of link tabs: -->
 
-##### [.NET/C#](#tab/dotnetcsharp)
+*  Fixed an issue that `PrintToPdfAsync` may hang for long time. ([Issue #1974](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1974))
 
-* [CoreWebView2.PrintToPdfAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync?view=webview2-dotnet-1.0.1305-prerelease&preserve-view=true)
+   ##### [.NET/C#](#tab/dotnetcsharp)
 
-##### [WinRT/C#](#tab/winrtcsharp)
+   * [CoreWebView2.PrintToPdfAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync?view=webview2-dotnet-1.0.1305-prerelease&preserve-view=true)
 
-* [CoreWebView2.PrintToPdfAsync Method](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1305-prerelease&preserve-view=true#printtopdfasync)
+   ##### [WinRT/C#](#tab/winrtcsharp)
 
-##### [Win32/C++](#tab/win32cpp)
+   * [CoreWebView2.PrintToPdfAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1305-prerelease&preserve-view=true#printtopdfasync)
 
-* [ICoreWebView2_7::PrintToPdf method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1305-prerelease#printtopdf&preserve-view=true)
+   ##### [Win32/C++](#tab/win32cpp)
 
----
+   * [ICoreWebView2_7::PrintToPdf method](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1305-prerelease#printtopdf&preserve-view=true)
+
+   ---
 
 * Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible. ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862))
 
