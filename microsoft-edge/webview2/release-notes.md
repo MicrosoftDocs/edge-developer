@@ -117,7 +117,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2_7::PrintToPdf method](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1305-prerelease#printtopdf&preserve-view=true)
+* [ICoreWebView2_7::PrintToPdf method](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1305-prerelease&preserve-view=true#printtopdf)
 
 ---
 
