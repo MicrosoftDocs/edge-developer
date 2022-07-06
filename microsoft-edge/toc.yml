@@ -770,6 +770,14 @@
 # /DevTools
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
+    - name: DevTools for Visual Studio Code
+      items:
+        - name: Microsoft Edge DevTools extension for Visual Studio Code
+          href: visual-studio-code/microsoft-edge-devtools-extension.md
+          displayName: 
+
+# =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge extensions
       items:
         - name: Overview of Microsoft Edge extensions  # existing firstchild article
@@ -1315,14 +1323,6 @@
 
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
-          displayName: 
-
-# =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
-    - name: DevTools for Visual Studio Code
-      items:
-        - name: Microsoft Edge DevTools extension for Visual Studio Code
-          href: visual-studio-code/microsoft-edge-devtools-extension.md
           displayName: 
 
 # =============================================================================
