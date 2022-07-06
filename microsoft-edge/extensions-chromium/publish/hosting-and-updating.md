@@ -1,5 +1,5 @@
 ---
-title: Publish and update extensions in the Microsoft Edge Add-ons website
+title: Extension hosting
 description: Host and publish extensions in the enterprise for Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,9 +7,9 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/10/2021
 ---
-# Publish and update extensions in the Microsoft Edge Add-ons website
+# Extension hosting
 
-Most extensions are published to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions) to protect users from malicious extensions.
+Most extensions are published to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions), to protect users from malicious extensions.
 
 
 <!-- ====================================================================== -->
@@ -22,16 +22,13 @@ The following two scenarios don't require you to publish your extension in the M
 *   Extensions distributed using Enterprise policy.
 *   Using unpacked extension directories on a local machine when Microsoft Edge is in developer mode.
 
+In both cases, Microsoft Edge periodically checks extension hosts for new versions of installed extensions and automatically updates them without user intervention.
+
 
 <!-- ====================================================================== -->
-## Updates to extensions
-
-The Microsoft Edge browser automatically checks for new versions of installed Extensions. Updates are installed without user intervention.
-
-
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/extensions/hosting).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

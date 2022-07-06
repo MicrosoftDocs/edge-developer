@@ -1,5 +1,5 @@
 ---
-title: Match patterns
+title: Defining match patterns for an extension to access file URLs
 description: How host permission and content script pattern matching works, with examples.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,25 +9,26 @@ ms.date: 03/17/2021
 ---
 <!-- Copyright A. W. Fuchs
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-       https://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
-# Match patterns
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.  -->
+# Defining match patterns for an extension to access file URLs
+
+A Microsoft Edge Add-on (extension) can request access to `file` URLs.  To enable this feature, you need to explicitly configure this access.  Access to `file` URLs isn't automatic.  You must visit the **Extensions management** page at the Microsoft Edge Add-ons website to opt into `file` access for each Microsoft Edge extension that requests access to `file` URLs.
+
+For Microsoft Edge Add-ons (extensions), host permission and content script pattern matching works as follows.
 
 Host permissions and content script matching are based on a set of URLs defined by match patterns.  A match pattern is essentially a URL that begins with a permitted scheme (`http`, `https`, `file`, or `ftp`, and that can contain '`*`' characters.  The special pattern `<all_urls>` matches any URL that starts with a permitted scheme.  Each match pattern has 3 parts:
 
 *   _scheme_ — for example, `http` or `file` or `*`
-
-> [!NOTE]
-> Access to `file` URLs isn't automatic.  The user must visit the Extensions management page and opt in to `file` access for each Extension that requests it.
 
 *   `_host_` — for example, `www.google.com` or `*.google.com` or `*`; if the scheme is file, there is no host part.
 *   `_path_` — for example, `/*`, `/foo*`, or `/foo/bar`.  The path must be present in a host permission, but is always treated as `/*`.
@@ -82,5 +83,5 @@ Some schemes aren't supported in all contexts.
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/extensions/match_patterns).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

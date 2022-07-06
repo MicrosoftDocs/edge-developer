@@ -2,14 +2,14 @@
   href: developer/index.yml
   items:
 # =============================================================================
-    - name: Develop for the web with Microsoft Edge  # new, topmost firstchild article
+    - name: Develop for the web with Microsoft Edge
       href: develop-web-microsoft-edge.md
       displayName: 
 
     - name: Microsoft Edge DevTools
       items:
 # Card-based landing page -----------------------------------------------------
-        - name: Microsoft Edge DevTools documentation  # new landing page
+        - name: Microsoft Edge DevTools documentation
           href: devtools-guide-chromium/landing/index.yml
           displayName: DevTools
 
@@ -26,12 +26,16 @@
           items:
 
 # What's New firstchild article
-            - name: What's new in Microsoft Edge DevTools  # new firstchild article
+            - name: What's new in Microsoft Edge DevTools
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: 
 
 # What's New pages ------------------------------------------------------------
             # add new pages to nav page too
+            - name: Microsoft Edge 103
+              href: devtools-guide-chromium/whats-new/2022/06/devtools-103.md
+              displayName: what's new, announcements, release notes
+
             - name: Microsoft Edge 102
               href: devtools-guide-chromium/whats-new/2022/05/devtools-102.md
               displayName: what's new, announcements, release notes
@@ -131,6 +135,10 @@
             - name: Simplify DevTools using Focus Mode
               href: devtools-guide-chromium/experimental-features/focus-mode.md
               displayName: Experimental features, Focus Mode
+
+            - name: Run commands via keyboard with Command Palette
+              href: devtools-guide-chromium/experimental-features/edge-command-palette.md
+              displayName: Experimental features, Edge Command Palette
 
 # TOOLS =======================================================================
         - name: Tools
@@ -765,10 +773,9 @@
 
 # /DevTools
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge extensions
       items:
-        - name: Overview of Microsoft Edge extensions  # existing firstchild article
+        - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
 
         - name: What's new
@@ -795,11 +802,11 @@
 
         - name: Developer Guide
           items:
-            - name: API support
+            - name: Supported APIs for Microsoft Edge extensions
               href: extensions-chromium/developer-guide/api-support.md
 
-            - name: Declare permissions
-              href: extensions-chromium/enterprise/declare-permissions.md
+            - name: Declare API permissions in extension manifests
+              href: extensions-chromium/developer-guide/declare-permissions.md  # moved from /enterprise/
 
             - name: Port a Chrome extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
@@ -810,44 +817,50 @@
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
 
+            - name: Defining match patterns for an extension to access file URLs
+              href: extensions-chromium/developer-guide/match-patterns.md  # moved from /enterprise/
+
         - name: Manifest
           items:
             - name: Overview and timelines for migrating to Manifest V3
               href: extensions-chromium/developer-guide/manifest-v3.md
-              displayName: 
 
             - name: Migrate an extension from Manifest V2 to V3
               href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
-              displayName: 
 
             - name: Manifest file format for extensions
               href: extensions-chromium/getting-started/manifest-format.md
-              displayName: 
 
         - name: Publish to the Add-ons website
           items:
-            - name: Register as an extension developer
+            - name: Register as a Microsoft Edge extension developer
               href: extensions-chromium/publish/create-dev-account.md
 
             - name: Verify your company account information
               href: extensions-chromium/publish/verify-microsoft-edge-program.md
 
-            - name: Publish extensions using a GitHub account
+            - name: Publish a Microsoft Edge extension by using a GitHub account
               href: extensions-chromium/publish/github.md
 
             - name: Add users to the Microsoft Edge program
               href: extensions-chromium/publish/aad-account.md
 
-            - name: Publish an extension
+            - name: Publish a Microsoft Edge extension
               href: extensions-chromium/publish/publish-extension.md
 
-            - name: Update an extension
+            - name: Extension hosting
+              href: extensions-chromium/publish/hosting-and-updating.md  # moved from /enterprise/
+
+            - name: Update a Microsoft Edge extension
               href: extensions-chromium/publish/update-extension.md
 
-            - name: Submission states
+            - name: Automatically update extensions in Microsoft Edge
+              href: extensions-chromium/publish/auto-update.md  # moved from /enterprise/
+
+            - name: Submission states for extensions in the Microsoft Edge Add-ons website
               href: extensions-chromium/publish/submission-states.md
 
-            - name: View extensions analytics dashboard
+            - name: View Microsoft Edge extensions analytics dashboard
               href: extensions-chromium/publish/extensions-analytics.md
 
             - name: Reply to user reviews
@@ -857,37 +870,29 @@
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
 
-            - name: Contact extensions support
+            - name: Contact Microsoft Edge extensions support
               href: extensions-chromium/publish/contact-extensions-team.md
               displayName: feedback, log issues, enter issues, report issues, reporting issues
 
             - name: Policies for Microsoft Edge Add-ons
               items:
-                - name: Content security policy
+                - name: Content Security Policy (CSP)
                   href: extensions-chromium/store-policies/csp.md
 
-                - name: Microsoft Edge developer ADA addendum
+                - name: App Developer Agreement Addendum for Microsoft Edge program users
                   href: extensions-chromium/store-policies/ada-addendum.md
 
-                - name: Developer policies
+                - name: Microsoft Edge Add-ons store developer policies
                   href: extensions-chromium/store-policies/developer-policies.md
 
             - name: Microsoft Edge Add-ons API
               items:
                 - name: Using the Microsoft Edge Add-ons API
                   href: extensions-chromium/publish/api/using-addons-api.md
+
                 - name: Microsoft Edge Add-ons API Reference
                   href: extensions-chromium/publish/api/addons-api-reference.md
-        - name: Extensions for enterprise
-          items:
-            - name: Match patterns
-              href: extensions-chromium/enterprise/match-patterns.md
 
-            - name: Hosting and updating
-              href: extensions-chromium/enterprise/hosting-and-updating.md
-
-            - name: Auto-update
-              href: extensions-chromium/enterprise/auto-update.md
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
@@ -1158,7 +1163,7 @@
 
             - name: Customize context menus
               href: webview2/how-to/context-menus.md
-              displayName: right-click menu, Customize context menus in WebView2  # top of page title
+              displayName: right-click menu, Customize context menus in WebView2  # top-of-page title
 
             - name: Use the Chrome DevTools Protocol
               href: webview2/how-to/chromium-devtools-protocol.md
