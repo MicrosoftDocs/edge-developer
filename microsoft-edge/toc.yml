@@ -1319,7 +1319,7 @@
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
-    - name: DevTools extension for Visual Studio Code
+    - name: DevTools for Visual Studio Code
       items:
         - name: Microsoft Edge DevTools extension for Visual Studio Code
           href: visual-studio-code/microsoft-edge-devtools-extension.md
