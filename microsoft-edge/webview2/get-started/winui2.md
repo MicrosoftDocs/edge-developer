@@ -1,12 +1,12 @@
 ---
-title: Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
+title: Get started with WebView2 in WinUI 2 (UWP) apps
 description: Get started guide with WebView2 for WinUI 2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 07/06/2022
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps
 
@@ -29,7 +29,7 @@ Follow the major Step sections in sequence, below.
 <!-- ====================================================================== -->
 ## Step 1 - Download a preview channel of Microsoft Edge
 
-For full API compatibility of the **Microsoft.UI.Xaml** (WinUI 2) package and WebView2, this tutorial uses a _prerelease_ version of WebView2 SDK, together with a preview channel of Microsoft Edge.  (This tutorial doesn't use the other supported combination, which is a _release_ version of WebView2 SDK + the WebView2 Runtime.)
+For full API compatibility of the **Microsoft.UI.Xaml** (WinUI 2) package and WebView2, this tutorial uses a _prerelease_<!-- todo: update re "prerelease"? --> version of WebView2 SDK, together with a preview channel of Microsoft Edge.  (This tutorial doesn't use the other supported combination, which is a _release_ version of WebView2 SDK + the WebView2 Runtime.)
 
 1. If you haven't already, download any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
    *  Windows 7
@@ -153,7 +153,7 @@ Next, you set up this new WinUI 2 (UWP) project to host the WebView2 control and
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
-## Step 5 - Install the prerelease WebView2 SDK
+## Step 5 - Install the WebView2 SDK
 
 1. In Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
 
@@ -161,7 +161,7 @@ Next, you set up this new WinUI 2 (UWP) project to host the WebView2 control and
 
 1. In the **NuGet Package Manager**, click the **Browse** tab.
 
-1. To the right of the search text box, select the **Include prerelease** check box.
+1. To the right of the search text box, clear the **Include prerelease** check box.
 
 1. In the search text box, enter **Microsoft.Web.WebView2**.
 
@@ -169,9 +169,9 @@ Next, you set up this new WinUI 2 (UWP) project to host the WebView2 control and
 
 1. Click the **Microsoft.Web.WebView2** card below the search box.
 
-1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected:
+1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected:<!-- todo: update re "prerelease" -->
 
-   ![NuGet Package Manager with WebView2 SDK prerelease selected.](media/winui2-nuget-pkg-mgr-webview2.png)
+   ![NuGet Package Manager with WebView2 SDK prerelease selected.](media/winui2-nuget-pkg-mgr-webview2.png)<!-- todo: update re "prerelease" -->
 
    _To zoom, right-click > **Open image in new tab**._
 
@@ -181,7 +181,7 @@ Next, you set up this new WinUI 2 (UWP) project to host the WebView2 control and
 
    The **Preview Changes** dialog box appears:
 
-   ![The Preview Changes dialog box for the WebView2 NugGet package.](media/winui2-webview2-pkg-preview-changes.png)
+   ![The Preview Changes dialog box for the WebView2 NugGet package.](media/winui2-webview2-pkg-preview-changes.png)<!-- todo: update re "prerelease" -->
 
 1. Click the **OK** button.
 
@@ -189,9 +189,9 @@ The WebView2 SDK is now installed for this project.
 
 
 <!-- ====================================================================== -->
-## Step 6 - Install the prerelease WinUI 2 SDK (Microsoft.UI.Xaml)
+## Step 6 - Install the prerelease WinUI 2 SDK (Microsoft.UI.Xaml)<!-- todo: update re "prerelease"? -->
 
-Next, you install the _prerelease_ **Microsoft.UI.Xaml** package.  Microsoft.UI.Xaml is WinUI 2.
+Next, you install the _prerelease_<!-- todo: update re "prerelease"? --> **Microsoft.UI.Xaml** package.  Microsoft.UI.Xaml is WinUI 2.
 
 1. If the **NuGet Package Manager** panel isn't open: in Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
 
@@ -199,11 +199,11 @@ Next, you install the _prerelease_ **Microsoft.UI.Xaml** package.  Microsoft.UI.
 
 1. In the **NuGet Package Manager**, click the **Browse** tab.
 
-1. Select the **Include prerelease** check box.
+1. Clear the **Include prerelease** check box.<!-- todo: updated to Clear re "prerelease"? -->
 
 1. In the **Search** box, enter **Microsoft.UI.Xaml**, and then select the **Microsoft.UI.Xaml** card below the search box.
 
-1. On the right, make sure that the **Version** is **Latest prerelease**.
+1. On the right, make sure that the **Version** is **Latest prerelease**.<!-- todo: update re "prerelease"? -->
 
 1. Click the  **Install** (or **Update**) button:
 
@@ -317,20 +317,26 @@ Package summary:
 * [Overview of the NuGet package for Microsoft.UI.Xaml](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
 
 
-## WinUI2 WebView2 special considerations
+<!-- ====================================================================== -->
+## WinUI 2 WebView2 special considerations
+
 
 ### SmartScreen
-WebView2 sends URLs navigated to in your application to the [SmartScreen](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service to ensure your customers stay secure. If you would like to disable this, you may do so via environment variable.
+
+WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
 
 * `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
-    *  Note this must be set prior to CoreWebView2 creation (first time WV2.Source set or EnsureCoreWebView2Async() called).
 
-### API Limitations
-Please note that the following interfaces are not accessible in both WinUI 2 and WinUI 3:
+This environment variable must be set prior to `CoreWebView2` creation (the first time `WV2.Source` is set or `EnsureCoreWebView2Async` is called).
 
-* ICoreWebView2Environment
-* ICoreWebView2EnvironmentOptions & ICoreWebView2EnvironmentOptions2
-* ICoreWebView2ControllerOptions
+
+### API limitations
+
+The following interfaces aren't accessible in WinUI 2:
+
+* `ICoreWebView2Environment`
+* `ICoreWebView2EnvironmentOptions` and `ICoreWebView2EnvironmentOptions2`
+* `ICoreWebView2ControllerOptions`
 
 
 <!-- ====================================================================== -->

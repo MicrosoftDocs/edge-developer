@@ -124,4 +124,4 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## See also
 
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
+* [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md)

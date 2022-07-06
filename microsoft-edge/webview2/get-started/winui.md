@@ -13,7 +13,7 @@ ms.date: 04/27/2022
 This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.
 
 
-* Corresponding Get Started sample at GitHub: [Getting Started with WebView2 in WinUI3 (WinUI3_GettingStarted/WinUI_Sample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/GettingStartedGuides/WinUI3_GettingStarted/README.md)
+* Corresponding Get Started sample at GitHub: [Getting Started with WebView2 in WinUI 3 (WinUI3_GettingStarted/WinUI_Sample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/GettingStartedGuides/WinUI3_GettingStarted/README.md)
 
 
 <!-- ====================================================================== -->
@@ -369,20 +369,30 @@ As an example, next, you add scripts that send an alert when a user tries to ope
 
 Congratulations, you built your first WebView2 app!
 
-## WinUI3 WebView2 special considerations
+
+<!-- ====================================================================== -->
+## WinUI 3 WebView2 special considerations
 
 ### SmartScreen
-WebView2 sends URLs navigated to in your application to the [SmartScreen](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service to ensure your customers stay secure. If you would like to disable this, you may do so via environment variable.
+
+WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
 
 * `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
-    *  Note this must be set prior to CoreWebView2 creation (first time WV2.Source set or EnsureCoreWebView2Async() called).
 
-### API Limitations
-Please note that the following interfaces are not accessible in both WinUI 2 and WinUI 3:
+This environment variable must be set prior to `CoreWebView2` creation (the first time `WV2.Source` is set or `EnsureCoreWebView2Async` is called).
+<!-- TODO: which?
+This environment variable must be set prior to `CoreWebView2` creation; this environment variable must be set before the first time your app sets `WV2.Source` or calls `EnsureCoreWebView2Async`.
+This environment variable must be set prior to `CoreWebView2` creation; this environment variable must be set when your app first sets `WV2.Source` or calls `EnsureCoreWebView2Async`.
+-->
 
-* ICoreWebView2Environment
-* ICoreWebView2EnvironmentOptions & ICoreWebView2EnvironmentOptions2
-* ICoreWebView2ControllerOptions
+
+### API limitations
+
+The following interfaces aren't accessible in WinUI 3:
+
+* `ICoreWebView2Environment`
+* `ICoreWebView2EnvironmentOptions` and `ICoreWebView2EnvironmentOptions2`
+* `ICoreWebView2ControllerOptions`
 
 
 <!-- ====================================================================== -->

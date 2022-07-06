@@ -233,4 +233,4 @@ At the top of Visual Studio, set the build target, as follows:
 <!-- ====================================================================== -->
 ## See also
 
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
+* [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md)
