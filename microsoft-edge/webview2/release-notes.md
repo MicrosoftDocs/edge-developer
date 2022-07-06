@@ -12,6 +12,8 @@ ms.date: 07/05/2022
 
 The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) on a four-week cadence. This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
+Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](webview2-api-reference.md).
+
 WebView2 bug fixes, such as the fixes listed below, are either Runtime-specific or SDK-specific.
 
 
@@ -33,15 +35,6 @@ For more information, see [Matching the Runtime version with the SDK version](co
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
-
-
-<!-- ====================================================================== -->
-## Platforms covered
-
-Generally, release notes apply across the supported platforms.  The APIs for the platforms are roughly parallel, such as:
-* .NET/C# [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2).
-* WinRT/C# [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2).
-* Win32/C++ [ICoreWebView2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2) together with similarly named interfaces such as [ICoreWebView2_10](/microsoft-edge/webview2/reference/win32/icorewebview2_10).
 
 
 <!-- ====================================================================== -->
@@ -111,8 +104,6 @@ The following APIs are promoted to stable in this prerelease SDK:
 ---
 
 #### Bug fixes
-
-<!-- TODO: check indent experiment, of link tabs: -->
 
 *  Fixed an issue where `PrintToPdfAsync` may hang for long time. ([Issue #1974](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1974))
 
