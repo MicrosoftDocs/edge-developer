@@ -92,7 +92,7 @@ There are various ways to start a new browser session in the extension:
 
     ![Select Launch Instance to open the browser in Visual Studio Code.](media/devtools-extension-new-browser-instance.png)
 
-1. You can open the browser as part of a [debugging session](#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code)
+1. You can open the browser as part of a debugging session.  See [Use the extension with the Visual Studio Code debugging workflow](#use-the-extension-with-the-visual-studio-code-debugging-workflow) below.
 
 The extension will open a new browser as an embedded browser in Visual Studio Code. This `Devtools: Browser preview` tab can be moved anywhere within the editor. You can use it side by side with your source code or split the panes and have the browser preview below your code. 
 
