@@ -76,7 +76,7 @@ To download the repo (as a `.zip` file):
 
 1. Copy or cut the `WebView2Samples-main.zip` file from your Downloads directory to a regular directory, such as `Documents`.
 
-1. Unzip the .`WebView2Samples-main.zip` file and note the location of the unzipped files.
+1. Unzip the `WebView2Samples-main.zip` file and note the location of the unzipped files.
 
    ![The downloaded, unzipped WebView2Samples repo.](../media/downloaded-samples-repo-unzipped.png)
 

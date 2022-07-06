@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/24/2022
+ms.date: 06/21/2022
 ---
 <!-- Copyright Meggin Kearney
 
@@ -69,7 +69,7 @@ Click the **Clear all profiles** icon to remove snapshots (both from DevTools an
 Closing the DevTools window doesn't delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
 
 > [!NOTE]
-> Try out this example of [scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
+> Try out this example of [scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) and profile it using the heap profiler.  A number of (object) item allocations are displayed.
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
@@ -116,7 +116,9 @@ After expanding a total line in the upper view, all of the instances are display
 * Yellow objects have JavaScript references.
 * Red objects are detached nodes.  A detached node is referenced from a node that has a yellow background.
 
-**What do the various constructor (group) entries in the Heap profiler correspond to?**
+### Constructor (group) entries in the heap profiler
+
+The various constructor (group) entries in the heap profiler correspond to the following types of objects.
 
 ![Constructor groups.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png)
 
@@ -128,8 +130,15 @@ After expanding a total line in the upper view, all of the instances are display
 | **(array, string, number, regexp)** | A list of object types with properties which reference an Array, String, Number, or regular expression. |
 | **(compiled code)** | Everything related to compiled code.  Script is similar to a function, but corresponds to a `<script>` body.  SharedFunctionInfos (SFI) are objects standing between functions and compiled code.  Functions usually have a context, while SFIs do not. |
 | **HTMLDivElement**, **HTMLAnchorElement**, **DocumentFragment**, and so on.  | References to elements or document objects of a particular type referenced by your code. |
+| **(object shape)** | References to the hidden classes and descriptor arrays that V8 (the JavaScript engine of Microsoft Edge) uses to understand and index the properties in objects.  See [HiddenClasses and DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays). |
+| **(BigInt)** | References to the **BigInt** object, which is used to represent and manipulate values that are too large to be represented by the **Number** object.  See [BigInt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt). |
 
-<!--todo: add heap profiling summary section when available -->
+
+<!--
+### Heap profiling summary
+todo: add heap profiling summary section when available
+-->
+
 
 ### Comparison view
 
@@ -312,7 +321,7 @@ The **Memory** tool exports a JSON file that contains all of the string objects 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
