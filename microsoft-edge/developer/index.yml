@@ -33,7 +33,6 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
 
-
 # =============================================================================
 # Limits
 
@@ -43,10 +42,8 @@ landingContent:
 
 # https://review.docs.microsoft.com/help/contribute/contribute-how-to-write-landing-page?branch=main
 
-
 # =============================================================================
 # Row 1 with 3 cards
-
 # =============================================================================
 # Card r1c1
   - title: Microsoft Edge DevTools
@@ -82,7 +79,6 @@ landingContent:
         links:
           - text: Keyboard shortcuts
             url: /microsoft-edge/devtools-guide-chromium/shortcuts
-
 # =============================================================================
 # Card r1c2
   - title: Microsoft Edge extensions
@@ -110,8 +106,6 @@ landingContent:
 
           - text: Create a simple extension
             url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
-
-
 # =============================================================================
 # Card r1c3
   - title: Progressive Web Apps
@@ -145,7 +139,6 @@ landingContent:
 
 # =============================================================================
 # Row 2 with 3 cards
-
 # =============================================================================
 # Card r2c1
   - title: Test and automation
@@ -172,8 +165,6 @@ landingContent:
 
           - text: webhint extension for Visual Studio Code
             url: /microsoft-edge/visual-studio-code/webhint
-
-
 # =============================================================================
 # Card r2c2
   - title: Web platform
@@ -191,7 +182,6 @@ landingContent:
 
           - text: Detect Windows 11 using User-Agent Client Hints
             url: /microsoft-edge/web-platform/how-to-detect-win11
-
 # =============================================================================
 # Card r2c3 - tall, avoid placing in col 1; fits in col 3 b/c 3rd row only has col 1 & 2 filled
   - title: WebView2
@@ -222,47 +212,46 @@ landingContent:
         links:
           - text: WebView2 API Reference
             url: /microsoft-edge/webview2/webview2-api-reference
-
 # =============================================================================
-# Row 3 with 2 cards
-
+# Row 3 with 3 cards
 # =============================================================================
 # Card r3c1
+  - title: DevTools for Visual Studio Code
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: DevTools extension for Visual Studio Code
+            url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
+# =============================================================================
+# Card r3c2
   - title: Microsoft Edge IDE integration
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Edge IDE integration  # new firstchild article
+          - text: Microsoft Edge IDE integration
             url: /microsoft-edge/visual-studio-code/ide-integration
 
-          - text: Visual Studio Code for web development
-            url: /microsoft-edge/visual-studio-code/
+          - text: Open source files in Visual Studio Code
+            url: /microsoft-edge/devtools-guide-chromium/sources/opening-sources-in-vscode
 
-          - text: DevTools extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
-
-          - text: webhint extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/webhint
+          - text: Debugger for Edge
+            url: /microsoft-edge/visual-studio-code/debugger-for-edge
 
           - text: Visual Studio for web development
             url: /microsoft-edge/visual-studio/
-
-
 # =============================================================================
-# Card r3c2
+# Card r3c3
   - title: Accessibility in Microsoft Edge
     linkLists:
       - linkListType: overview
         links:
           - text: Accessibility-testing features
             url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
-
           - text: Accessibility in Microsoft Edge
             url: /microsoft-edge/accessibility/
       - linkListType: how-to-guide
         links:
           - text: Overview of accessibility testing using DevTools
             url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
-
           - text: Accessibility testing
             url: /microsoft-edge/accessibility/test
