@@ -1211,7 +1211,7 @@ WebView2 can specify a default background color.  The color can be any opaque co
 
 
 <!-- ====================================================================== -->
-### Rendering WebView2 using Composition
+## Rendering WebView2 using Composition
 
 For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering.
 
@@ -1416,4 +1416,4 @@ Receiver:
 ## See also
 
 * [Introduction to Microsoft Edge WebView2](../index.md)
-* [WebView2 API Reference](https://docs.microsoft.com/en-us/microsoft-edge/webview2/webview2-api-reference) - API Reference links for additional platforms and languages, such as WinRT/C++ (COM).
+* [WebView2 API Reference](../webview2-api-reference.md) - API Reference links for additional platforms and languages, such as WinRT/C++ (COM).
