@@ -29,10 +29,6 @@ Return from that page and continue the steps below.
 
 For this sample, you don't need to separately install the WebView2 SDK.  Below, you'll select the project template **Blank App, Packaged (WinUI in Desktop)**, which uses the WindowsAppSDK, which includes the WebView2 SDK.
 
-**Turning on Developer Mode:**
-
-1.  When Visual Studio opens at some point during the present article's steps, you might be prompted to turn on Developer Mode for your computer.  For more information, if needed, see [Enable your device for development](/windows/apps/get-started/enable-your-device-for-development), at _Build desktop apps for Windows_.
-
 
 <!-- ====================================================================== -->
 ## Step 2 - Install a preview channel of Microsoft Edge
@@ -59,7 +55,9 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
     Or, if Visual Studio is running, select **File** > **New** > **Project**.  The **Create a new project** dialog box opens.
 
-1.  In the **Search for templates** field, enter **WinUI 3 in Desktop**:
+    **Turning on Developer Mode:**  When Visual Studio opens at some point during the present article's steps, you might be prompted to turn on Developer Mode for your computer.  For more information, if needed, see [Enable your device for development](/windows/apps/get-started/enable-your-device-for-development), at _Build desktop apps for Windows_.
+
+1.  In the **Create a new project** dialog box, in the **Search for templates** field, enter **WinUI 3 in Desktop**:
 
     ![Searching on "WinUI 3 in Desktop" to create a new project](winui-images/create-project-winui3-desktop.png)
 
@@ -114,6 +112,8 @@ The above values represent:
 
 <!-- ====================================================================== -->
 ## Step 4 - Add a WebView2 control
+
+This tutorial project is based on the project template **Blank App, Packaged (WinUI in Desktop)**.  This project template uses the WindowsAppSDK, which includes the WebView2 SDK.
 
 Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to a WebView2 control to the blank WinUI 3 sample app project, as follows.
 
