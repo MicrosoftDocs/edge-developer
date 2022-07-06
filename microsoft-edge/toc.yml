@@ -1325,23 +1325,18 @@
           href: visual-studio-code/ide-integration.md
           displayName: 
 
-        - name: Visual Studio Code
-          items:
-            - name: Visual Studio Code for web development
-              href: visual-studio-code/index.md
-              displayName: 
+        # move to be top-level after polish content
+        - name: Microsoft Edge DevTools extension
+          href: visual-studio-code/microsoft-edge-devtools-extension.md
+          displayName: 
 
-            - name: Microsoft Edge DevTools extension
-              href: visual-studio-code/microsoft-edge-devtools-extension.md
-              displayName: 
+        - name: Open source files in Visual Studio Code
+          href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
+          displayName: 
 
-            - name: Open source files in Visual Studio Code
-              href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
-              displayName: 
-
-            - name: Debugger for Edge
-              href: visual-studio-code/debugger-for-edge.md
-              displayName: 
+        - name: Debugger for Edge
+          href: visual-studio-code/debugger-for-edge.md
+          displayName: 
 
         - name: Visual Studio for web development
           href: visual-studio/index.md
