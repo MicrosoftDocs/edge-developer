@@ -50,13 +50,17 @@ The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` clas
 See also:
 * [Main classes for WebView2: Environment, Controller, and Core](environment-controller-core.md)
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)
 * [CoreWebView2Controller Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
 * [CoreWebView2Environment Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)
 * [ICoreWebView2Controller](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller)
@@ -90,13 +94,17 @@ WebView2 enables objects that are defined in native code to be passed to your ap
 
 Host objects can be projected into JavaScript, so that you can call native object methods (or other APIs) from your app's web-side code.  For example, your app can call such APIs as a result of user interaction on the web side of your app. This way, you don't need to reimplement your native objects' APIs, such as methods or properties, in your web-side code.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.AddHostObjectToScript Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
 * [CoreWebView2.RemoveHostObjectFromScript Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.removehostobjectfromscript)
 * [CoreWebView2Settings.AreHostObjectsAllowed Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arehostobjectsallowed)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::AddHostObjectToScript method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
 * [ICoreWebView2::RemoveHostObjectFromScript method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#removehostobjectfromscript)
@@ -110,7 +118,7 @@ Host objects can be projected into JavaScript, so that you can call native objec
 
 Allows host app to add JavaScript in the web content within the WebView2 control. 
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync)
 * [CoreWebView2.ExecuteScriptAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.executescriptasync)
@@ -118,7 +126,11 @@ Allows host app to add JavaScript in the web content within the WebView2 control
 * [CoreWebView2Settings.IsScriptEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isscriptenabled)
 * [CoreWebView2Frame2.ExecuteScriptAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.executescriptasync)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated)
 * [ICoreWebView2::ExecuteScript method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#executescript)
@@ -134,7 +146,7 @@ Allows host app to add JavaScript in the web content within the WebView2 control
 
 Your app can send messages to the web content that's within the WebView2 control, and receive messages from that web content.  Messages are sent as strings or JSON objects.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.PostWebMessageAsJson Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasjson)
 * [CoreWebView2.PostWebMessageAsString Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasstring)
@@ -145,7 +157,11 @@ Your app can send messages to the web content that's within the WebView2 control
 * [CoreWebView2Frame.PostWebMessageAsString Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postwebmessageasstring)
 * [CoreWebView2Frame.WebMessageReceived Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.webmessagereceived)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::PostWebMessageAsJson method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson)
 * [ICoreWebView2::PostWebMessageAsString method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasstring)
@@ -164,12 +180,16 @@ Your app can send messages to the web content that's within the WebView2 control
 
 When hosting WebView2, your app can manage different JavaScript dialogs, to suppress them or to replace them with custom dialogs.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.ScriptDialogOpening Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening)
    * [CoreWebView2ScriptDialogOpeningEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2scriptdialogopeningeventargs)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::ScriptDialogOpening event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_scriptdialogopening), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_scriptdialogopening)
    * [ICoreWebView2ScriptDialogOpeningEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2scriptdialogopeningeventargs)
@@ -188,13 +208,17 @@ The WebView2 control gives your host app access to many browser features. You ca
 
 You can configure custom print settings and print to PDF.  
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.PrintToPdfAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync)
 * [CoreWebView2Environment.CreatePrintSettings Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createprintsettings)
 * [CoreWebView2PrintSettings Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2_7::PrintToPdf method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_7#printtopdf)
 * [ICoreWebView2Environment6::CreatePrintSettings method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
@@ -211,14 +235,18 @@ You can use cookies in WebView2 to manage user sessions, store user personalizat
 See also:
 * [View, edit, and delete cookies](/microsoft-edge/devtools-guide-chromium/storage/cookies)
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Cookie Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2cookie)
 * [CoreWebView2CookieList Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2cookielist)
 * [CoreWebView2.CookieManager Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.cookiemanager#microsoft-web-webview2-core-corewebview2-cookiemanager)
    * [CoreWebView2CookieManager Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2cookiemanager)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Cookie interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2cookie)
 * [ICoreWebView2CookieList interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2cookielist)
@@ -233,11 +261,15 @@ See also:
 
 By hosting WebView2, your app can capture screenshots and indicate which format to use to save the image.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.CapturePreviewAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.capturepreviewasync)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2.CapturePreview method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview)
 
@@ -253,7 +285,7 @@ Your app can manage the download experience in WebView2.  Your app can:
 *  Configure a custom download UI.
 *  Customize the default UI.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 General:
 * [CoreWebView2.IsDefaultDownloadDialogOpenChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.isdefaultdownloaddialogopenchanged)
@@ -271,8 +303,11 @@ Custom Download Experience:
    * [CoreWebView2DownloadStartingEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadstartingeventargs)
 * [CoreWebView2DownloadOperation Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadoperation)
 
+##### [WinRT/C#](#tab/winrtcsharp)
 
-##### [C++](#tab/cpp)
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 General:
 * [ICoreWebView2_9::IsDefaultDownloadDialogOpen property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_isdefaultdownloaddialogopen)<!--no put-->
@@ -298,13 +333,17 @@ Custom Download Experience:
 
 Different web pages may ask you for permissions to access some privileged resources, such as geolocation sensor, camera, and microphone.  By using the WebView2 permissions APIs, your host app can programmatically respond to permissions requests and/or replace the default permissions UI with its own UI. 
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.PermissionRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested)
    * [CoreWebView2PermissionRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs)
 * [CoreWebView2Frame.PermissionRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.permissionrequested)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::PermissionRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_permissionrequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_permissionrequested)
    * [ICoreWebView2PermissionRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs)
@@ -321,7 +360,7 @@ The WebView2 control provides a default context menu (right-click menu) which yo
 See also:
 * [Customize context menus in WebView2](../how-to/context-menus.md)
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Environment.CreateContextMenuItem Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcontextmenuitem)
 * [CoreWebView2ContextMenuItem Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)
@@ -330,7 +369,11 @@ See also:
    * [CoreWebView2ContextMenuRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)
 * [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Environment9::CreateContextMenuItem method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment9#createcontextmenuitem)
 * [ICoreWebView2ContextMenuItem interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem)
@@ -354,13 +397,17 @@ See also:
 * []()
 -->
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.StatusBarTextChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.statusbartextchanged)
 * [CoreWebView2.StatusBarText Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.statusbartext)
 * [CoreWebView2Settings.IsStatusBarEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isstatusbarenabled)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2_12::StatusBarTextChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_12#add_statusbartextchanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_12#remove_statusbartextchanged)
 * [ICoreWebView2_12::StatusBarText property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_12#get_statusbartext)
@@ -380,11 +427,15 @@ See also:
 * []()
 -->
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Settings.UserAgent Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.useragent)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Settings2::UserAgent property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings2#get_useragent), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings2#put_useragent)
 
@@ -396,12 +447,16 @@ See also:
 
 Your app can independently control whether the browser's autofill functionality is enabled for general information or for passwords.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Settings.IsGeneralAutofillEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isgeneralautofillenabled)
 * [CoreWebView2Settings.IsPasswordAutosaveEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.ispasswordautosaveenabled)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Settings4::IsGeneralAutofillEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings4#get_isgeneralautofillenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings4#put_isgeneralautofillenabled)
 * [ICoreWebView2Settings4::IsPasswordAutosaveEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings4#get_ispasswordautosaveenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings4#put_ispasswordautosaveenabled)
@@ -414,14 +469,18 @@ Your app can independently control whether the browser's autofill functionality 
 
 Your app can mute and unmute all audio, and find out when audio is playing.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.IsDocumentPlayingAudioChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.isdocumentplayingaudiochanged)
 * [CoreWebView2.IsMutedChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.ismutedchanged)
 * [CoreWebView2.IsDocumentPlayingAudio Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.isdocumentplayingaudio)
 * [CoreWebView2.IsMuted Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.ismuted)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2_8::IsDocumentPlayingAudioChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_8#add_isdocumentplayingaudiochanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_8#remove_isdocumentplayingaudiochanged)
 * [ICoreWebView2_8::IsMutedChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_8#add_ismutedchanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_8#remove_ismutedchanged)
@@ -440,12 +499,16 @@ By hosting the WebView2 control, your app can enable or disable swiping gesture 
 
 This feature is currently disabled by default in the browser.  To enable this feature in WebView2, set the `AdditionalBrowserArguments` property, specifying the `--pull-to-refresh` switch.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Settings.IsSwipeNavigationEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isswipenavigationenabled)
 * [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Settings6::IsSwipeNavigationEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings6#get_isswipenavigationenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings6#put_isswipenavigationenabled)
 * [ICoreWebView2EnvironmentOptions::AdditionalBrowserArguments property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_additionalbrowserarguments), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_additionalbrowserarguments)
@@ -458,12 +521,16 @@ This feature is currently disabled by default in the browser.  To enable this fe
 
 Your app can detect when the title of the current top-level document has changed.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.DocumentTitle Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitle)
 * [CoreWebView2.DocumentTitleChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitlechanged)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::DocumentTitle property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#get_documenttitle)<!--no put-->
 * [ICoreWebView2::DocumentTitleChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_documenttitlechanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_documenttitlechanged)
@@ -476,12 +543,16 @@ Your app can detect when the title of the current top-level document has changed
 
 In WebView2, you can find out when an HTML element enters or leaves full-screen view.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.ContainsFullScreenElement Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.containsfullscreenelement)
 * [CoreWebView2.ContainsFullScreenElementChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.containsfullscreenelementchanged)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::ContainsFullScreenElement property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#get_containsfullscreenelement)<!--no put-->
 * [ICoreWebView2::ContainsFullScreenElementChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_containsfullscreenelementchanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_containsfullscreenelementchanged)
@@ -493,11 +564,15 @@ In WebView2, you can find out when an HTML element enters or leaves full-screen 
 
 In the browser PDF viewer, there's a PDF-specific toolbar along the top.  In WebView2, you can hide some of the items in the PDF viewer toolbar.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Settings.HiddenPdfToolbarItems Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.hiddenpdftoolbaritems)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Settings7::HiddenPdfToolbarItems property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings7#get_hiddenpdftoolbaritems), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings7#put_hiddenpdftoolbaritems)
 
@@ -508,11 +583,15 @@ In the browser PDF viewer, there's a PDF-specific toolbar along the top.  In Web
 
 In WebView2, you can customize the color theme as system, light, or dark.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Profile.PreferredColorScheme Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2profile.preferredcolorscheme)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Profile::PreferredColorScheme property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile#get_preferredcolorscheme), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile#put_preferredcolorscheme)
 
@@ -523,11 +602,15 @@ In WebView2, you can customize the color theme as system, light, or dark.
 
 You can set the default display language for WebView2 that applies to the browser UI (such as context menus and dialogs), along with setting the `accept-language` HTTP header which WebView2 sends to websites.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2EnvironmentOptions.Language Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.language)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2EnvironmentOptions::Language property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_language), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_language)
 
@@ -538,13 +621,17 @@ You can set the default display language for WebView2 that applies to the browse
 
 WebView2 provides functionality to handle the JavaScript function `window.open()`.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.NewWindowRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested)
    * [CoreWebView2NewWindowRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs)
    * [CoreWebView2WindowFeatures Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2windowfeatures)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::NewWindowRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_newwindowrequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_newwindowrequested)
    * [ICoreWebView2NewWindowRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs)
@@ -558,12 +645,16 @@ WebView2 provides functionality to handle the JavaScript function `window.open()
 
 WebView2 provides functionality to handle the JavaScript function `window.close()`.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Controller.Close Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close)
 * [CoreWebView2.WindowCloseRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.windowcloserequested)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Controller::Close method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)
 * [ICoreWebView2::WindowCloseRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_windowcloserequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_windowcloserequested)
@@ -576,7 +667,7 @@ WebView2 provides functionality to handle the JavaScript function `window.close(
 
 Get information about running WebView2 processes, exiting processes, and failed processes, so that your app can take action accordingly.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 Info:
 * [CoreWebView2.BrowserProcessId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.browserprocessid)
@@ -592,7 +683,11 @@ Failed:
 * [CoreWebView2.ProcessFailed Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.processfailed)
    * [CoreWebView2ProcessFailedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 Info:
 * [ICoreWebView2::BrowserProcessId property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#get_browserprocessid)<!--no put-->
@@ -627,7 +722,7 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 *  Local content via virtual host name to local folder mapping.
 *  From a constructed network request.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.Navigate Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigate)
 * [CoreWebView2.NavigateToString Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatetostring)
@@ -638,7 +733,11 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 * [CoreWebView2.ClearVirtualHostNameToFolderMapping Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.clearvirtualhostnametofoldermapping)
 * [CoreWebView2Settings.IsBuiltInErrorPageEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isbuiltinerrorpageenabled#microsoft-web-webview2-core-corewebview2settings-isbuiltinerrorpageenabled)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::Navigate method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#navigate)
 * [ICoreWebView2::NavigateToString method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#navigatetostring)
@@ -657,7 +756,7 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 
 The history methods allow back and forward navigation in WebView2, and the history events provide information about the changes in history and in WebView2's current source.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.Source Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.source)
 * [CoreWebView2.SourceChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.sourcechanged)
@@ -668,7 +767,11 @@ The history methods allow back and forward navigation in WebView2, and the histo
 * [CoreWebView2.CanGoForward Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.cangoforward)
    * [CoreWebView2.GoForward Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.goforward)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::Source property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#get_source)<!--no put-->
 * [ICoreWebView2::SourceChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_sourcechanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_sourcechanged)
@@ -687,7 +790,7 @@ The history methods allow back and forward navigation in WebView2, and the histo
 
 The `NavigationStarting` event allows the app to cancel navigating to specified URLs in WebView2, including for frames.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.NavigationStarting Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationstarting)
    * [CoreWebView2NavigationStartingEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs)
@@ -695,7 +798,11 @@ The `NavigationStarting` event allows the app to cancel navigating to specified 
 * [CoreWebView2Frame.NavigationStarting Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationstarting)
    * [CoreWebView2NavigationStartingEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::NavigationStarting event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationstarting), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationstarting)
    * [ICoreWebView2NavigationStartingEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs)<!--TODO: used by above? yes according to Ref-->
@@ -716,7 +823,7 @@ With `NavigationStarting` and the other navigation events, the app can be inform
 See also:
 * [Navigation events for WebView2 apps](navigation-events.md)
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.ContentLoading Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.contentloading)
    * [CoreWebView2ContentLoadingEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contentloadingeventargs)
@@ -729,7 +836,11 @@ See also:
 * [CoreWebView2Frame.DOMContentLoaded Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.domcontentloaded)
 * [CoreWebView2Frame.NavigationCompleted Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationcompleted)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::ContentLoading event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_contentloading), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_contentloading)
    * [ICoreWebView2ContentLoadingEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2contentloadingeventargs)
@@ -754,14 +865,18 @@ The `WebResourceRequested` event allows the app to intercept and override all ne
 See also:
 * [Custom management of network requests](/microsoft-edge/webview2/how-to/webresourcerequested)
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.WebResourceRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
    * [CoreWebView2WebResourceRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs)
 * [CoreWebView2.WebResourceResponseReceived Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourceresponsereceived)
    * [CoreWebView2WebResourceResponseReceivedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::WebResourceRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
    * [ICoreWebView2WebResourceRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)
@@ -780,13 +895,17 @@ In WebView2, you can use the Client Certificate API to select the client certifi
 *  Programmatically query the certificates.
 *  Select a certificate from the list to respond to the server, when WebView2 is making a request to an HTTP server that needs a client certificate for HTTP authentication. 
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2ClientCertificate Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2clientcertificate)
 * [CoreWebView2.ClientCertificateRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.clientcertificaterequested)
    * [CoreWebView2ClientCertificateRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2clientcertificaterequestedeventargs)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2ClientCertificate interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate)
    * [ICoreWebView2ClientCertificateCollection interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificatecollection)<!--n/a for c#-->
@@ -800,12 +919,16 @@ In WebView2, you can use the Client Certificate API to select the client certifi
 
 In WebView2, you can use the Server Certificate API to trust the server's TLS certificate at the application level.  This way, your host app can render the page without prompting the user about the TLS error, or your host app can automatically cancel the request. 
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.ServerCertificateErrorDetected Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.servercertificateerrordetected)
 * [CoreWebView2.ClearServerCertificateErrorActionsAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.clearservercertificateerroractionsasync)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2_14::ServerCertificateErrorDetected event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_14#add_servercertificateerrordetected), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_14#remove_servercertificateerrordetected)
 * [ICoreWebView2_14::ClearServerCertificateErrorActions method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_14#clearservercertificateerroractions)
@@ -824,14 +947,18 @@ iFrames allow you to embed other webpages into your own webpage.  In WebView2, y
 <!-- wording per overview table:
 Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. -->
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Frame Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame)
 * [CoreWebView2FrameInfo Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo)
 * [CoreWebView2.FrameCreated Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.framecreated)
    * [CoreWebView2FrameCreatedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2framecreatedeventargs)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Frame interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame)
 * [ICoreWebView2FrameInfo interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)
@@ -854,7 +981,7 @@ Learn how to handle basic authentication in WebView2 controls.
 See also:
 * [Basic authentication for WebView2 apps](basic-authentication.md)
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2HttpRequestHeaders Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2httprequestheaders)
 * [CoreWebView2.BasicAuthenticationRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
@@ -863,7 +990,11 @@ See also:
    * [CoreWebView2HttpResponseHeaders Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2httpresponseheaders)
 * [CoreWebView2HttpHeadersCollectionIterator Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2httpheaderscollectioniterator)<!--TODO: why does this collectioniterator class exist in c#, usu not needed-->
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2HttpRequestHeaders interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2httprequestheaders)
 * [ICoreWebView2_10::BasicAuthenticationRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_10#remove_basicauthenticationrequested)
@@ -884,13 +1015,17 @@ These APIS are used to set up the WebView2 rendering system in non-framework app
 
 If you're using a UI framework for your app, you should use the WebView2 element for that UI framework.  If you're not using a UI framework for your app (for example, if you're using pure Win32 directly), or your UI framework doesn't have a WebView2 element, then you need to create `CoreWebView2Controller` and render it into your app.  If your app UI is build using `DirectComposition` or `Windows.UI.Composition`, then you should use `CoreWebView2CompositionController`; otherwise you should use `CoreWebView2Controller`.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Controller.CoreWebView2 Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.corewebview2)
 * [CoreWebView2Controller.Close Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close)
 * [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controllerasync)<!--2 overloads-->
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Controller::CoreWebView2 property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_corewebview2)<!--no put-->
 * [ICoreWebView2Controller::Close method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)
@@ -910,12 +1045,16 @@ WebView2 gives your app access to window-specific attributes, such as positionin
 
 `CoreWebView2Controller` takes a parent `HWND`. The `Bounds` property sizes and positions the WebView2 relative to the parent `HWND`. The visibility of WebView2 can be toggled using `IsVisible`.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Controller.Bounds Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.bounds)
 * [CoreWebView2Controller.IsVisible Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Controller::Bounds property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_bounds), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_bounds)
 * [ICoreWebView2Controller::IsVisible property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)
@@ -928,7 +1067,7 @@ WebView2 gives your app access to window-specific attributes, such as positionin
 
 WebView2 `ZoomFactor` is used to scale just the web content of the window.  UI scaling is also updated when the user zooms the content by pressing `Ctrl` while rotating the mouse wheel.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Controller.ZoomFactor Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactor)
 * [CoreWebView2Controller.ZoomFactorChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactorchanged)
@@ -938,7 +1077,11 @@ Browser/gesture/zoom features:<!-- moved from Rendering section - fits best in "
 * [CoreWebView2Settings.IsPinchZoomEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.ispinchzoomenabled)
 * [CoreWebView2Settings.IsZoomControlEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.iszoomcontrolenabled)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Controller::ZoomFactor property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_zoomfactor), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_zoomfactor)
 * [ICoreWebView2Controller::ZoomFactorChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_zoomfactorchanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_zoomfactorchanged)
@@ -956,14 +1099,18 @@ Browser/gesture/zoom features:<!-- moved from Rendering section - fits best in "
 
 The RasterizationScale API scales all WebView2 UI including context menus, tooltip, and popups.  The app can set whether the WebView2 should detect monitor scale changes and automatically update the RasterizationScale.  `BoundsMode` is used to configure whether the Bounds property is interpreted as raw pixels, or DIPs (which need to be scaled by `RasterizationScale`).
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Controller.BoundsMode Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.boundsmode)
 * [CoreWebView2Controller.RasterizationScale Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.rasterizationscale)
 * [CoreWebview2Controller.RasterizationScaleChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.rasterizationscalechanged)
 * [CoreWebview2Controller.ShouldDetectMonitorScaleChanges Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.shoulddetectmonitorscalechanges)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Controller3::BoundsMode property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_boundsmode), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_boundsmode)
 * [ICoreWebView2Controller3::RasterizationScale property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_rasterizationscale), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_rasterizationscale)
@@ -978,7 +1125,7 @@ The RasterizationScale API scales all WebView2 UI including context menus, toolt
 
 The WebView2 control raises events to let the app know when the control gains focus or loses focus. For tabbing, there's an API to move focus into WebView2 and an event for WebView2 to request the app to take focus back.<!--TODO: specify either user presses the Tab key, or browser tab is selected; disambiguate "tab"/"tabbing"-->
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebview2Controller.MoveFocus Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocus)
 * [CoreWebview2Controller.MoveFocusRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocusrequested)
@@ -986,7 +1133,11 @@ The WebView2 control raises events to let the app know when the control gains fo
 * [CoreWebview2Controller.GotFocus Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.gotfocus)
 * [CoreWebview2Controller.LostFocus Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.lostfocus)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebview2Controller::MoveFocus method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#movefocus)
 * [ICoreWebview2Controller::MoveFocusRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_movefocusrequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_movefocusrequested)
@@ -1002,12 +1153,16 @@ The WebView2 control raises events to let the app know when the control gains fo
 
 WebView2 can be reparented to a different parent window handle (`HWND`).  WebView2 also needs to be notified when the app's position on the screen has changed.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebview2Controller.NotifyParentWindowPositionChanged Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.notifyparentwindowpositionchanged)
    * [CoreWebview2Controller.ParentWindow Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.parentwindow)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebview2Controller::NotifyParentWindowPositionChanged method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#notifyparentwindowpositionchanged)
    * [ICoreWebview2Controller::ParentWindow property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_parentwindow), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_parentwindow)
@@ -1020,13 +1175,17 @@ WebView2 can be reparented to a different parent window handle (`HWND`).  WebVie
 
 When WebView2 has focus, it directly receives input from the user. An app may want to intercept and handle certain accelerator key combinations, or disable the normal browser accelerator key behaviors.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arebrowseracceleratorkeysenabled)
 * [CoreWebView2Controller.AcceleratorKeyPressed Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed)
    * [CoreWebView2AcceleratorKeyPressedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Settings3::AreBrowserAcceleratorKeysEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings3#get_arebrowseracceleratorkeysenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings3#put_arebrowseracceleratorkeysenabled)
 * [ICoreWebView2Controller::AcceleratorKeyPressed event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_acceleratorkeypressed), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_acceleratorkeypressed)
@@ -1040,11 +1199,15 @@ When WebView2 has focus, it directly receives input from the user. An app may wa
 
 WebView2 can specify a default background color.  The color can be any opaque color, or transparent.  This color will be used if the HTML page doesn't set its own background color.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Controller.DefaultBackgroundColor Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Controller2::DefaultBackgroundColor property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
 
@@ -1056,12 +1219,16 @@ WebView2 can specify a default background color.  The color can be any opaque co
 
 For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2CompositionController Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller)
 * [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync)<!--2 overloads-->
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2CompositionController interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller)
 * [ICoreWebView2Environment3::CreateCoreWebview2CompositionController method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2compositioncontroller)
@@ -1074,11 +1241,15 @@ For composition-based WebView2 rendering, use `CoreWebView2Environment` to creat
 
 WebView2 can connect its composition tree to an [IDCompositionVisual](https://docs.microsoft.com/windows/win32/api/dcomp/nn-dcomp-idcompositionvisual), [IDCompositionTarget](https://docs.microsoft.com/windows/win32/api/dcomp/nn-dcomp-idcompositiontarget), or `Windows::UI::Composition::ContainerVisual`.<!--link these?  both plats?  not linked in wv2 api ref.  these are c++ not .net links -->
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2CompositionController.RootVisualTarget Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.rootvisualtarget)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2CompositionController::RootVisualTarget property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_rootvisualtarget), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#put_rootvisualtarget)
 
@@ -1089,7 +1260,7 @@ WebView2 can connect its composition tree to an [IDCompositionVisual](https://do
 
 Spatial input (mouse, touch, pen) is received by the application and must be sent to WebView2.  WebView2 notifies the app when the cursor should be updated based on the mouse position.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2CompositionController.Cursor Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursor)
 * [CoreWebView2CompositionController.CursorChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursorchanged)
@@ -1099,7 +1270,11 @@ Spatial input (mouse, touch, pen) is received by the application and must be sen
 * [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2pointerinfo)
    * [CoreWebView2PointerInfo Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2pointerinfo)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2CompositionController::Cursor property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_cursor)<!--no put-->
 * [ICoreWebView2CompositionController::CursorChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#add_cursorchanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#remove_cursorchanged)
@@ -1116,11 +1291,15 @@ Spatial input (mouse, touch, pen) is received by the application and must be sen
 
 By default, WebView2 will show up in the accessibility tree as a child of the parent HWND, for Win32/C++ apps.  WebView2 provides API to better position the WebView2 content relative to other elements in the application.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
-Not applicable for C#.
+Not applicable.
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+Not applicable.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2CompositionController2::AutomationProvider property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller2#get_automationprovider)<!--no put-->
 * [ICoreWebView2Environment4::GetAutomationProviderForWindow method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment4#getautomationproviderforwindow)<!--not in c#-->
@@ -1135,7 +1314,7 @@ Manage the user data folder (UDF), which is a folder on the user's machine.  The
 See also:
 * [Manage user data folders](user-data-folder.md)
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
 * [CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.exclusiveuserdatafolderaccess)
@@ -1144,7 +1323,11 @@ See also:
 * [CoreWebView2Environment.CreateCoreWebView2ControllerOptions Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controlleroptions)
 * [CoreWebView2Environment.CreateCoreWebView2ControllerWithOptions Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controllerasync)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Environment7::UserDataFolder property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!--no put-->
 * [ICoreWebView2EnvironmentOptions2::ExclusiveUserDataFolderAccess property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#get_exclusiveuserdatafolderaccess), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#put_exclusiveuserdatafolderaccess)
@@ -1162,7 +1345,7 @@ See also:
 
 Use these WebView2 features to optimize your host app's performance and to debug performance issues.  Your app listens for performance-related events for WebView2 controls and then handles them.
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 <!--TODO: clarify note on IsBuiltInErrorPageEnabled: (probs for navigation and process)-->
 
@@ -1172,7 +1355,11 @@ Use these WebView2 features to optimize your host app's performance and to debug
    * [CoreWebView2.Resume Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
 * [CoreWebView2.OpenTaskManagerWindow Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow) 
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Experimental5::MemoryUsageTargetLevel property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#get_memoryusagetargetlevel), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)
 * [ICoreWebView2_3::TrySuspend method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)
@@ -1193,7 +1380,7 @@ See also:
 * [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol)
 
 
-##### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 Open:
 * [CoreWebView2Settings.AreDevToolsEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredevtoolsenabled)
@@ -1208,7 +1395,11 @@ Receiver:
    * [CoreWebView2DevToolsProtocolEventReceivedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceivedeventargs)
    * [CoreWebView2DevToolsProtocolEventReceiver Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceiver)
 
-##### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [WinRT API Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+
+##### [Win32/C++](#tab/win32cpp)
 
 Open:
 * [ICoreWebView2Settings::AreDevToolsEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredevtoolsenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredevtoolsenabled)
