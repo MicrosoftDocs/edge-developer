@@ -10,7 +10,7 @@ ms.date: 06/30/2022
 ---
 # Overview of WebView2 features and APIs
 
-By including WebView2 in your app, your app can use various methods and properties provided by the WebView2 control to easily add many kinds of browser features.
+Embedding the WebView2 control in your app gives it access to various methods and properties provided via the WebView2 interfaces.  WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities to enabling your app to modify browser experiences.  This article provides a high-level grouping of WebView2 APIs to help you understand the different things you can do using WebView2.
 
 When hosting the WebView2 control, your app has access to the following browser features and APIs:
 
@@ -24,8 +24,7 @@ When hosting the WebView2 control, your app has access to the following browser 
 | [iFrames](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
 | [Authentication](#authentication) | Handle basic authentication in WebView2 controls. |
 | [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Set up the WebView2 rendering system in non-framework apps, such as how the WebView2 control renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
-| [Window management](#window-management) | Window-specific attributes, such as positioning, focus, and keyboard accelerators. |
-| [Composition-based rendering](#composition-based-rendering) | For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering. |
+| [Rendering WebView2 using Composition](#rendering-webview2-using-composition) | For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering. |
 | [User data](#user-data) | Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
 | [Performance and debugging](#performance-and-debugging) | Analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness. |
 | [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
@@ -41,7 +40,7 @@ When hosting the WebView2 control, your app has access to the following browser 
 
 The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These three large classes expose a wide range of APIs that your host app can access to provide many categories of browser-related features for your users.
 
-*  The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
+*  The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer processes.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
 *  The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
 *  The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
 
@@ -1034,14 +1033,11 @@ If you're using a UI framework for your app, you should use the WebView2 element
 ---
 
 
-<!-- ====================================================================== -->
-### Window management
-
-WebView2 gives your app access to window-specific attributes, such as positioning, focus, and keyboard accelerators.
-
-
 <!-- ------------------------------ -->
 #### Sizing, positioning, and visibility
+
+<!-- from the removed "window mgmt" h2 section:
+WebView2 gives your app access to window-specific attributes, such as positioning, focus, and keyboard accelerators. -->
 
 `CoreWebView2Controller` takes a parent `HWND`. The `Bounds` property sizes and positions the WebView2 relative to the parent `HWND`. The visibility of WebView2 can be toggled using `IsVisible`.
 
@@ -1215,7 +1211,7 @@ WebView2 can specify a default background color.  The color can be any opaque co
 
 
 <!-- ====================================================================== -->
-### Composition-based rendering
+### Rendering WebView2 using Composition
 
 For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering.
 
@@ -1237,7 +1233,7 @@ For composition-based WebView2 rendering, use `CoreWebView2Environment` to creat
 
 
 <!-- ------------------------------ -->
-#### Output
+#### Connecting to the visual tree
 
 WebView2 can connect its composition tree to an [IDCompositionVisual](https://docs.microsoft.com/windows/win32/api/dcomp/nn-dcomp-idcompositionvisual), [IDCompositionTarget](https://docs.microsoft.com/windows/win32/api/dcomp/nn-dcomp-idcompositiontarget), or `Windows::UI::Composition::ContainerVisual`.<!--link these?  both plats?  not linked in wv2 api ref.  these are c++ not .net links -->
 
@@ -1256,7 +1252,7 @@ WebView2 can connect its composition tree to an [IDCompositionVisual](https://do
 ---
 
 <!-- ------------------------------ -->
-#### Input
+#### Forwarding input
 
 Spatial input (mouse, touch, pen) is received by the application and must be sent to WebView2.  WebView2 notifies the app when the cursor should be updated based on the mouse position.
 
@@ -1420,3 +1416,4 @@ Receiver:
 ## See also
 
 * [Introduction to Microsoft Edge WebView2](../index.md)
+* [WebView2 API Reference](https://docs.microsoft.com/en-us/microsoft-edge/webview2/webview2-api-reference) - API Reference links for additional platforms and languages, such as WinRT/C++ (COM).
