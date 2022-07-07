@@ -36,7 +36,7 @@ An app can also use the `OpenDevToolsWindow` API to programmatically open a DevT
 
 ---
 
-If none of the above approaches are available, your app can add `--auto-open-devtools-for-tabs` to the browser arguments via an environment variable or registry key.  This approach will open a DevTools window when a WebView2 is created.
+If none of the above approaches are available, you can add `--auto-open-devtools-for-tabs` to the browser arguments via an environment variable or registry key.  This approach will open a DevTools window when a WebView2 is created.
 
 
 <!-- ====================================================================== -->
