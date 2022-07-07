@@ -9,6 +9,8 @@ ms.date: 07/07/2022
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
 
+<!-- heading convention in this file: skip h3's; tag subheadings as h4's instead -->
+
 <!-- lexicon (except when quoting a UI string):
 Microsoft Edge DevTools extension for Visual Studio Code
 Microsoft Edge DevTools extension
@@ -82,25 +84,39 @@ You can use this extension in one of three modes:
 <!-- ====================================================================== -->
 ## Opening a browser instance in the extension
 
-There are various ways to start a new browser session in the extension:
+There are various ways to start a new browser session in the extension, described in the subsections below.
 
-*   In the **Explorer** of Visual Studio Code, right-click an HTML file, select **Open with Edge**, and then select **Open Browser** or **Open Browser with DevTools**.
+
+#### By right-clicking an HTML file in the Explorer
+
+In the **Explorer** of Visual Studio Code, right-click an HTML file, select **Open with Edge**, and then select **Open Browser** or **Open Browser with DevTools**.
     
-    ![Opening the context menu on any html file in the file explorer shows options to open with Edge with or without DevTools](media/context-menu-open-in-code.msft.png)
+![Opening the context menu on any html file in the file explorer shows options to open with Edge with or without DevTools](media/context-menu-open-in-code.msft.png)
 
-*   Select the **Microsoft Edge Tools** icon in the **Activity Bar**.  This lets you launch an instance of Edge or generate a `launch.json` file to automate the debugging workflow:
 
-    ![Microsoft Edge DevTools for Visual Studio Code extension.](media/edge-devtools-for-vscode-extension-icon.png)
+#### By clicking the Launch Instance button
 
-    Then click the **Launch Instance** button.  Both a browser preview window and the **Edge DevTools** tab open in Visual Studio Code:
+As another way to open a browser instance:
 
-    ![Select Launch Instance to open the browser in Visual Studio Code.](media/devtools-extension-new-browser-instance.png)
+1. Click the **Microsoft Edge Tools** icon in the **Activity Bar**.  This lets you launch an instance of Edge or generate a `launch.json` file to automate the debugging workflow:
 
-*   Open the browser as part of a debugging session.  See [Use the extension with the Visual Studio Code debugging workflow](#use-the-extension-with-the-visual-studio-code-debugging-workflow) below.
+![Microsoft Edge DevTools for Visual Studio Code extension.](media/edge-devtools-for-vscode-extension-icon.png)
+
+1. Then click the **Launch Instance** button.  Both a browser preview window and the **Edge DevTools** tab open in Visual Studio Code:
+
+![Select Launch Instance to open the browser in Visual Studio Code.](media/devtools-extension-new-browser-instance.png)
+
+
+#### Opening the browser as part of a debugging session
+
+Another way to open a browser instance is to open the browser as part of a debugging session.  See [Use the extension with the Visual Studio Code debugging workflow](#use-the-extension-with-the-visual-studio-code-debugging-workflow) below.
 
 The extension opens a new browser as an embedded browser in Visual Studio Code. This **Devtools: Browser preview** tab can be moved anywhere within the editor. You can use this tab side by side with your source code, or split the panes and have the browser preview below your code:
 
 ![Extension open in VS Code showing the browser preview below the source code and the DevTools to the right](media/browser-split-down.png)
+
+
+#### Opening an external browser window (headless mode)
 
 If you want to have an external browser window, you can change the default setting. Select **Settings** > **Headless mode** and then select the checkbox, to open the browser in headless mode:
 
@@ -114,24 +130,39 @@ In the Edge DevTools: Browser preview tab, the emulation toolbar on the bottom e
 
 ![Browser preview in the extension with emulation tool bar showing](media/edge-for-code-screencast-v2.msft.png)
 
-<!-- Toolbar item 1. Emulate devices: -->
+
+#### Emulate Devices dropdown menu
+<!-- toolbar item 1. Emulate devices -->
+
 In the **Emulate devices** dropdown menu, you can select from a number of different devices.  When you select a device, the viewport resizes to the correct measurements and simulates the touch interface.  For example, an emulated iPhone layout:
 
 ![Browser preview in the extension showing the web product in an emulated phone layout](media/edge-for-code-screencast-v2-emulating.msft.png)
 
-<!-- Toolbar item 2. Width: -->
-<!-- Toolbar item 3. Height: -->
+
+#### Width and Height dropdown menus
+<!-- toolbar item 2. Width -->
+<!-- toolbar item 3. Height -->
+
 Click the **Width** and **Height** dropdown menus to change the viewport dimensions: ![Width and Height dropdown menus.](media/width-height.png)
 
-<!-- Toolbar item 4. Rotate: -->
+
+#### Rotate button
+<!-- toolbar item 4. Rotate -->
+
 Click the **Rotate** button (![The Rotate button.](media/rotate-button.png)) to rotate the viewport.
 
-<!-- Toolbar item 5. Emulate CSS media features: -->
+
+#### Emulate CSS Media Features button
+<!-- toolbar item 5. Emulate CSS media features -->
+
 To emulate CSS media queries, click the **Emulate CSS media features** (![Emulate CSS media features.](media/emulate-css-media-features-button.png)) button.  This button enables you to test how your product looks in print mode.  You can switch between dark and light mode, and emulate forced colors:
 
 ![Browser preview in the extension showing the web product in forced color mode](media/edge-for-code-forced-colours.msft.png)
 
-<!-- Toolbar item 6. Emulate vision deficiencies: -->
+
+#### Emulate Vision Deficiencies button
+<!-- toolbar item 6. Emulate vision deficiencies -->
+
 Click the **Emulate vision deficiencies** (![The Emulate vision deficiencies button.](media/emulate-vision-deficiencies-button.png)) button to try the experience of the current web project with different visual deficiencies.  This button lets you test your product in a blurred mode or in different color deficiencies:
 
 ![Browser preview in the extension showing the web product in a blurred emulation](media/edge-for-code-blurred.msft.png)
@@ -152,7 +183,12 @@ The **Styles** tool in Microsoft Edge DevTools is excellent for debugging and tw
 
 CSS Mirror Editing is a feature of the Microsoft Edge DevTools extension that works around that problem. Any change made in the **Styles** tool also changes the file in your workspace.  CSS Mirror editing is enabled by default in the extension.
 
-In the following example, we have `index.html` currently open in Visual Studio Code, and the Microsoft Edge DevTools extension is open.  When we select the flexbox icon in the `.searchbar` CSS selector and change the `flex-direction` to `column`, we not only see the change in the browser and in DevTools, but Visual Studio Code also automatically navigates to the correct style sheet file and the appropriate line number, and inserts the `flex-direction: column` CSS code:
+You can edit any selector or create new selectors in the **Styles** tool, and all changes are automatically mirrored in the correct CSS source file. The extension only changes the downloaded copy of the file; it doesn't automatically save the changes back to your hard drive. This is a security measure to make sure you don't accidentally overwrite any of your code.
+
+
+#### Example of mirroring changes from the Styles tool to a CSS source file
+
+In the following example, we have `index.html` currently open in Visual Studio Code, and the Microsoft Edge DevTools extension is open.  We select the flexbox icon in the `.searchbar` CSS selector, and then change the `flex-direction` to `column`.  As as result, we not only see the change in the browser and in DevTools (the first image below), but Visual Studio Code also automatically navigates to the correct style sheet file and the appropriate line number, and inserts the `flex-direction: column` CSS code (the second image below):
 
 ![Selecting the flexbox icon in the Styles tool to create a CSS change.](media/css-mirror-editing-start.msft.png)
 
@@ -160,15 +196,16 @@ Changing the CSS setting created a new line of code in the correct CSS source fi
 
 ![Changing the CSS setting created a new line of code in the correct CSS source file.](media/css-mirror-editing-changed-file.msft.png)
 
-You can edit any selector or create new ones in the Styles tool and all changes will get mirrored in the right CSS source file. The extension only changes the file, it doesn't automatically save the changes back to your hard drive. This is a security measure to make sure you don't accidentally overwrite any of your code.
 
-You can enable and disable CSS Mirror Editing by checking and unchecking the box in the **Styles** panel of the **Elements** tool, or by using the Command Menu and searching for `mirror`:
+#### Enabling CSS Mirror Editing
 
-![You can check or uncheck a box in the Styles panel of the Elements tool to enable or disable CSS mirroring](media/css-mirror-editing-checkbox.msft.png)
+To enable and disable CSS Mirror Editing, select or clear the checkbox in the **Styles** panel of the **Elements** tool:
 
-Using the command menu to turn CSS Mirror Editing on or off:
+![Checkbox in the Styles panel of the Elements tool to enable or disable CSS mirroring](media/css-mirror-editing-checkbox.msft.png)
 
-![Using the command menu to focus the CSS mirror editing view and turn CSS Mirror Editing on or off.](media/css-mirror-editing-command.msft.png)
+Or, use the Command Menu and start typing the word **mirror**, to turn CSS Mirror Editing on or off:
+
+![Using the Command Menu to focus the CSS mirror editing view and turn CSS Mirror Editing on or off](media/css-mirror-editing-command.msft.png)
 
 
 #### Sourcemap support
@@ -203,9 +240,15 @@ The [Console](/microsoft-edge/devtools-guide-chromium/console/) tool is availabl
 
 You can see your [log messages](/microsoft-edge/devtools-guide-chromium/console-log), access the `window` object and use the [DOM interaction convenience methods](/microsoft-edge/devtools-guide-chromium/console-dom-interaction). You can also [filter the Console](/microsoft-edge/devtools-guide-chromium/console-filters) and set [live expressions](/microsoft-edge/devtools-guide-chromium/live-expressions). 
 
+
+#### Console side-by-side with other tools
+
 You can also use the **Console** alongside the **Elements** tool if you open the **Console** in the lower panel:
 
 ![The DevTools Console inside the extension alongside the elements tool.](media/edge-devtools-for-vscode-console-in-elements.png)
+
+
+#### Console during Run and Debug
 
 If you launch the extension from the Run and Debug workflow, the [Debug Console of Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) gives you most of the functions of the DevTools [Console](/microsoft-edge/devtools-guide-chromium/console/) inside of Visual Studio Code, but no filtering options and a more basic results display:
 
@@ -215,15 +258,17 @@ If you launch the extension from the Run and Debug workflow, the [Debug Console 
 <!-- ====================================================================== -->
 ## Application tool integration
 
-The **Application tool** allows you to inspect the various parts of your application. 
+The **Application** tool allows you to inspect the various parts of your application. 
 
 ![The Application tool inside the Edge DevTools for Visual Studio Code extension](media/edge-extension-application-tool.png)
 
-You can:
+Use the **Application** tool to:
 
-* Check different storage options like Cookies, LocalStorage, SessionStorage and IndexedDB.
+* Check different storage options such as Cookies, LocalStorage, SessionStorage and IndexedDB.
+
 * Analyze the cache of your application.
-* Analyze services like Notification, Payment handler or background sync.
+
+* Analyze services like Notification, Payment handler, or background sync.
 
 
 <!-- ====================================================================== -->
