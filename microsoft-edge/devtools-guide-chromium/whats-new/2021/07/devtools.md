@@ -79,7 +79,10 @@ For more details about improvements and fixes, check the [changelog file](https:
 
 ![DevTools extension integrated with Visual Studio Code Debugger workflow.](../../media/2021/07/extension-integrated-debugger.msft.png)
 
-For more information, see [Browser debugging with Microsoft Edge DevTools integration in Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code).  Get the [Microsoft Edge Developer Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).  Microsoft Visual Studio Code updates extensions automatically; to update this extension manually instead, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).
+See also:
+* [Use the extension with the Visual Studio Code debugging workflow](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#use-the-extension-with-the-visual-studio-code-debugging-workflow) in _Microsoft Edge DevTools extension for Visual Studio Code_.
+
+Get the [Microsoft Edge Developer Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).  Microsoft Visual Studio Code updates extensions automatically; to update this extension manually instead, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).
 
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
