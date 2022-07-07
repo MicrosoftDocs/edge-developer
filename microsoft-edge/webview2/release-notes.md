@@ -6,11 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/15/2022
+ms.date: 07/05/2022
 ---
 # Release Notes for the WebView2 SDK
 
 The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) on a four-week cadence. This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
+
+Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](webview2-api-reference.md).
 
 WebView2 bug fixes, such as the fixes listed below, are either Runtime-specific or SDK-specific.
 
@@ -36,12 +38,90 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 
 <!-- ====================================================================== -->
-## Platforms covered
+## 1.0.1264.42
 
-Generally, release notes apply across Win32, .NET, and WinRT.  The APIs for the platforms are roughly parallel, such as:
-* Win32 [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2) together with similarly named interfaces such as [ICoreWebView2_10](/microsoft-edge/webview2/reference/win32/icorewebview2_10).
-* .NET [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2).
-* WinRT [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2).
+Release Date: July 4, 2022
+
+[NuGet package for WebView2 SDK 1.0.1264.42](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1264.42)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 103.0.1264.42 or higher.
+
+### General
+
+#### Promotions
+
+The following items are now stable:
+
+*  Added `ContextMenuRequested`API to enable host app to create or modify their own context menu.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested?view=webview2-dotnet-1.0.1264.42&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.ContextMenuRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42&preserve-view=true#contextmenurequested)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_11::add_ContextMenuRequested event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1264.42&preserve-view=true#add_contextmenurequested), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1264.42&preserve-view=true#remove_contextmenurequested)
+
+---
+
+
+<!-- ====================================================================== -->
+## 1.0.1305-prerelease
+
+Release Date: July 4, 2022
+
+[NuGet package for WebView2 SDK 1.0.1305-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1305-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 105.0.1305.0 or higher.
+
+### General
+
+#### Promotions
+
+The following APIs are promoted to stable in this prerelease SDK:
+
+* The Favicon API:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.FaviconChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconchanged?view=webview2-dotnet-1.0.1305-prerelease&preserve-view=true)
+* [CoreWebView2.FaviconUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconuri?view=webview2-dotnet-1.0.1305-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.FaviconChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1305-prerelease&preserve-view=true#faviconchanged)
+* [CoreWebView2.FaviconUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1305-prerelease&preserve-view=true#faviconuri)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_15::FaviconChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1305-prerelease&preserve-view=true#add_faviconchanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1305-prerelease&preserve-view=true#remove_faviconchanged)
+* [ICoreWebView2_15::FaviconUri property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1305-prerelease&preserve-view=true#get_faviconuri)<!--no put-->
+
+---
+
+#### Bug fixes
+
+*  Fixed an issue where `PrintToPdfAsync` may hang for long time. ([Issue #1974](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1974))
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.PrintToPdfAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync?view=webview2-dotnet-1.0.1305-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.PrintToPdfAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1305-prerelease&preserve-view=true#printtopdfasync)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_7::PrintToPdf method](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1305-prerelease&preserve-view=true#printtopdf)
+
+---
+
+* Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible. ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862))
 
 
 <!-- ====================================================================== -->
