@@ -17,8 +17,8 @@ In this tutorial, you:
 *  Learn about WebView2 concepts along the way.
 
 The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  This package provides Windows UI features, including:
-*  UWP XAML controls
-*  Dense control styles
+*  UWP XAML controls.
+*  Dense control styles.
 *  Fluent styles and materials.
 
 WinUI 2 supports UWP only.  These controls are backward-compatible.
@@ -27,23 +27,30 @@ Follow the major Step sections in sequence, below.
 
 
 <!-- ====================================================================== -->
-## Step 1 - Download a preview channel of Microsoft Edge
+## Step 1 - Download the WebView2 Runtime
 
-For full API compatibility of the **Microsoft.UI.Xaml** (WinUI 2) package and WebView2, this tutorial uses a _prerelease_<!-- todo: update re "prerelease"? --> version of WebView2 SDK, together with a preview channel of Microsoft Edge.  (This tutorial doesn't use the other supported combination, which is a _release_ version of WebView2 SDK + the WebView2 Runtime.)
+For full API compatibility of the **Microsoft.UI.Xaml** (WinUI 2) package and WebView2, this tutorial uses a release version of the WebView2 SDK, together with the WebView2 Runtime.  (This tutorial doesn't use the other supported combination, which is a _prerelease_ version of WebView2 SDK together with a preview channel of Microsoft Edge.)
 
-1. If you haven't already, download any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
-   *  Windows 7
-   *  Windows 8.1
-   *  Windows 10
-   *  Windows 11
+1. In a new window or tab, go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) at developer.microsoft.com, and then scroll down to the "Download the WebView2 Runtime" section.
 
-   We recommend using the Canary channel of Microsoft Edge.  The minimum required version is 82.0.488.0.
+1. In the **Evergreen Bootstrapper** section, click the **Get the Link** button.  The page opens.
+
+1. Click the **Accept and Get Link** button.  The **Thank you** page opens.
+
+1. Click the **Copy** button to the right of the link string.  Paste the WebView2 Evergreen Bootstrapper link in a safe place.
+
+https://go.microsoft.com/fwlink/p/?LinkId=2124703
+
+If you need more information, see [Install the WebView2 Runtime](../how-to/machine-setup.md#install-the-webview2-runtime).
+
+Continue with the steps below.
 
 
 <!-- ====================================================================== -->
 ## Step 2 - Install Visual Studio
 
-Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual Studio 2017 isn't supported.  If you need information about Visual Studio 2019 version 16.9, in a new window or tab, see [Microsoft Visual Studio 2019 version 16.9](/visualstudio/releases/2019/release-notes-v16.9).
+Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual Studio 2022 is supported.  Visual Studio 2017 isn't supported.
+<!-- https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.9 -->
 
 1. If a suitable version of Microsoft Visual Studio isn't installed already, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that page to do a basic default installation of Visual Studio.
 
@@ -58,7 +65,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 1. Open Microsoft Visual Studio.  The opening option window appears:
 
    ![Visual Studio 2022 opening option window.](media/winui2-vs2022-opening-option-window.png)
- 
+
 1. In the lower right, click **Continue without code**.  Visual Studio opens, empty:
 
    ![Visual Studio 2022 empty.](media/winui2-visual-studio-2022-empty.png)
@@ -89,7 +96,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 1. A dialog box appears, "Before we get started, close Visual Studio":
 
    ![Dialog box: Before we get started, close Visual Studio.](media/winui2-before-we-get-started.png)
-   
+
 1. Click the **Continue** button.
 
    Visual Studio downloads, verified, and installs the selected packages:
@@ -114,7 +121,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
    ![The startup screen of Visual Studio: click the 'Create a new project' card.](media/winui2-opening-win-create-new-project-card.png)
 
-   The **Create a new project** dialog box opens.   
+   The **Create a new project** dialog box opens.
 
 1. In the **Search for templates** text box at the top, enter **C# Blank App (Universal Windows)**, and then select the **C# Blank App (Universal Windows)** card:
 
@@ -149,11 +156,10 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 Next, you set up this new WinUI 2 (UWP) project to host the WebView2 control and use the WebView2 API.
 
 
-<!-- maintenance link; keep: main copy:
-[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
--->
 <!-- ====================================================================== -->
-## Step 5 - Install the WebView2 SDK
+## Step 5 - Install the WinUI 2 SDK (Microsoft.UI.Xaml)
+
+Next, you install the **Microsoft.UI.Xaml** package.  Microsoft.UI.Xaml is WinUI 2.
 
 1. In Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
 
@@ -161,49 +167,11 @@ Next, you set up this new WinUI 2 (UWP) project to host the WebView2 control and
 
 1. In the **NuGet Package Manager**, click the **Browse** tab.
 
-1. To the right of the search text box, clear the **Include prerelease** check box.
-
-1. In the search text box, enter **Microsoft.Web.WebView2**.
-
-   The **Microsoft.Web.WebView2** card appears in the search results.
-
-1. Click the **Microsoft.Web.WebView2** card below the search box.
-
-1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected:<!-- todo: update re "prerelease" -->
-
-   ![NuGet Package Manager with WebView2 SDK prerelease selected.](media/winui2-nuget-pkg-mgr-webview2.png)<!-- todo: update re "prerelease" -->
-
-   _To zoom, right-click > **Open image in new tab**._
-
-1. Click the **Install** (or **Update**) button.
-
-   <!-- If needed, in a new window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Return from that page and continue the steps below. -->
-
-   The **Preview Changes** dialog box appears:
-
-   ![The Preview Changes dialog box for the WebView2 NugGet package.](media/winui2-webview2-pkg-preview-changes.png)<!-- todo: update re "prerelease" -->
-
-1. Click the **OK** button.
-
-The WebView2 SDK is now installed for this project.
-
-
-<!-- ====================================================================== -->
-## Step 6 - Install the prerelease WinUI 2 SDK (Microsoft.UI.Xaml)<!-- todo: update re "prerelease"? -->
-
-Next, you install the _prerelease_<!-- todo: update re "prerelease"? --> **Microsoft.UI.Xaml** package.  Microsoft.UI.Xaml is WinUI 2.
-
-1. If the **NuGet Package Manager** panel isn't open: in Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
-
-   The **NuGet Package Manager** panel opens in Visual Studio.
-
-1. In the **NuGet Package Manager**, click the **Browse** tab.
-
-1. Clear the **Include prerelease** check box.<!-- todo: updated to Clear re "prerelease"? -->
+1. Clear the **Include prerelease** check box.
 
 1. In the **Search** box, enter **Microsoft.UI.Xaml**, and then select the **Microsoft.UI.Xaml** card below the search box.
 
-1. On the right, make sure that the **Version** is **Latest prerelease**.<!-- todo: update re "prerelease"? -->
+1. On the right, make sure that the **Version** is TBD<!-- todo -->
 
 1. Click the  **Install** (or **Update**) button:
 
@@ -229,7 +197,48 @@ Next, you install the _prerelease_<!-- todo: update re "prerelease"? --> **Micro
 
 1. Select **File** > **Save All**.
 
-You've now installed the Microsoft.UI.Xaml package, which is WinUI (WinUI 2), for your project.
+You've now installed the Microsoft.UI.Xaml package, which is WinUI 2, for your project.
+
+
+<!-- maintenance link; keep: main copy:
+[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+-->
+<!-- ====================================================================== -->
+## Step 6 - Install or inspect the WebView2 SDK (delete step?)
+
+The WinUI 2 SDK (Microsoft.UI.Xaml) includes the WebView2 SDK, so you don't need to do these steps in this major section.  You can skip to the next major step.
+
+1. In Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
+
+   The **NuGet Package Manager** panel opens in Visual Studio.
+
+1. In the **NuGet Package Manager**, click the **Browse** tab.
+
+1. To the right of the search text box, clear the **Include prerelease** check box.
+
+1. In the search text box, enter **Microsoft.Web.WebView2**.
+
+   The **Microsoft.Web.WebView2** card appears in the search results.
+
+1. Click the **Microsoft.Web.WebView2** card below the search box.
+
+1. On the right, in the **Version** dropdown list, make sure TBD is selected:<!-- todo -->
+
+   ![NuGet Package Manager with WebView2 SDK selected.](media/winui2-nuget-pkg-mgr-webview2.png)<!-- todo: update re "prerelease" -->
+
+   _To zoom, right-click > **Open image in new tab**._
+
+1. Click the **Install** (or **Update**) button.
+
+   <!-- If needed, in a new window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Return from that page and continue the steps below. -->
+
+   The **Preview Changes** dialog box appears:
+
+   ![The Preview Changes dialog box for the WebView2 NugGet package.](media/winui2-webview2-pkg-preview-changes.png)<!-- todo: update re "prerelease" -->
+
+1. Click the **OK** button.
+
+The WebView2 SDK is now installed or updated for this project.
 
 
 <!-- ====================================================================== -->
