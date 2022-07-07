@@ -6,11 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/30/2022
+ms.date: 07/07/2022
 ---
 # Overview of WebView2 features and APIs
 
-Embedding the WebView2 control in your app gives it access to various methods and properties provided via the WebView2 interfaces.  WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities to enabling your app to modify browser experiences.  This article provides a high-level grouping of WebView2 APIs to help you understand the different things you can do using WebView2.
+<!-- todo: re-sync table sentences -->
+
+Embedding the WebView2 control in your app gives your app access to various methods and properties that are provided through the WebView2 classes or interfaces.  WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities,<!--such as [concrete/specific]--> to enabling your app to modify browser experiences.<!--reword "modify browser experiences"; ... such as [concrete/specific]-->  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
 
 When hosting the WebView2 control, your app has access to the following browser features and APIs:
 
@@ -26,7 +28,7 @@ When hosting the WebView2 control, your app has access to the following browser 
 | [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Set up the WebView2 rendering system in non-framework apps, such as how the WebView2 control renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
 | [Rendering WebView2 using Composition](#rendering-webview2-using-composition) | For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering. |
 | [User data](#user-data) | Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
-| [Performance and debugging](#performance-and-debugging) | Analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness. |
+| [Performance and debugging](#performance-and-debugging) | Analyze and debug performance, handle performance-related events, and manage memory usage to increase responsiveness of your app. |
 | [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
 
 
@@ -815,7 +817,7 @@ The `NavigationStarting` event allows the app to cancel navigating to specified 
 <!-- ------------------------------ -->
 #### Navigation events
 
-With `NavigationStarting` and the other navigation events, the app can be informed of the state of navigational<!--TODO: define 'navigations', a navigation--> in WebView2.  A _navigation_ is the process for loading a new URL.
+With `NavigationStarting` and the other navigation events, the app can be informed of the state of navigation in WebView2.  A _navigation_ is the process for loading a new URL.
 
 See also:
 * [Navigation events for WebView2 apps](navigation-events.md)
@@ -1117,7 +1119,7 @@ The RasterizationScale API scales all WebView2 UI including context menus, toolt
 <!-- ------------------------------ -->
 #### Focus and tabbing
 
-The WebView2 control raises events to let the app know when the control gains focus or loses focus. For tabbing, there's an API to move focus into WebView2 and an event for WebView2 to request the app to take focus back.<!--TODO: specify either user presses the Tab key, or browser tab is selected; disambiguate "tab"/"tabbing"-->
+The WebView2 control raises events to let the app know when the control gains focus or loses focus. For tabbing (pressing the `Tab` key), there's an API to move focus into WebView2 and an event for WebView2 to request the app to take focus back.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1337,11 +1339,9 @@ See also:
 <!-- ====================================================================== -->
 ## Performance and debugging
 
-Use these WebView2 features to optimize your host app's performance and to debug performance issues.  Your app listens for performance-related events for WebView2 controls and then handles them.
+Analyze and debug performance, handle performance-related events, and manage memory usage to increase responsiveness of your app.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
-
-<!--TODO: clarify note on IsBuiltInErrorPageEnabled: (probs for navigation and process)-->
 
 * [CoreWebView2.MemoryUsageTargetLevel Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel)
 * [CoreWebView2.TrySuspendAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
