@@ -22,15 +22,15 @@ The extension allows you to:
 
 | Task | Section |
 |---|---|
-| Get live analysis of problems in your source code | [Inline and live issue analysis](#inline-and-live-issue-analysis) |
-| Start a new browser instance with DevTools for your project | [Opening a browser instance in the extension](#opening-a-browser-instance-in-the-extension) |
-| Emulate different devices and see your project in different display modes | [Device and state emulation](#device-and-state-emulation) |
-| View the runtime DOM structure and layout of your page using the **Elements** tool | [Opening source files from the Elements tool](#opening-source-files-from-the-elements-tool) |
-| Analyze and change styles (CSS) of your project with live preview and live changes to your project's source files | [Syncing live changes from the Styles tool by using CSS Mirror Editing](#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing) |
-| Analyze site traffic using the **Network** tool | [Network tool integration](#network-tool-integration) |
-| Log information, try out JavaScript, and access the Window/DOM using the **Console** tool | [Console integration](#console-integration) |
-| Inspect storage and Service Workers using the **Application** tool | [Application tool integration](#application-tool-integration) |
-| Use the extension in the Visual Studio Code debugging workflow | [Automatically opening the browser and DevTools when debugging in Visual Studio Code](#automatically-opening-the-browser-and-devtools-when-debugging-in-visual-studio-code) |
+| Get live analysis of problems in your source code. | [Inline and live issue analysis](#inline-and-live-issue-analysis) |
+| Start a new browser instance with DevTools for your project. | [Opening a browser instance in the extension](#opening-a-browser-instance-in-the-extension) |
+| Emulate different devices and see your project in different display modes. | [Device and state emulation](#device-and-state-emulation) |
+| View the runtime DOM structure and layout of your page using the **Elements** tool. | [Opening source files from the Elements tool](#opening-source-files-from-the-elements-tool) |
+| Analyze and change CSS styles of your project with live preview and live changes to your project's source files. | [Syncing live changes from the Styles tool by using CSS Mirror Editing](#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing) |
+| Analyze site traffic using the **Network** tool. | [Network tool integration](#network-tool-integration) |
+| Log information, try out JavaScript, and access the Window/DOM using the **Console** tool. | [Console integration](#console-integration) |
+| Inspect storage and Service Workers using the **Application** tool. | [Application tool integration](#application-tool-integration) |
+| Use the extension in the Visual Studio Code debugging workflow. | [Automatically opening the browser and DevTools when debugging in Visual Studio Code](#automatically-opening-the-browser-and-devtools-when-debugging-in-visual-studio-code) |
 
 
 <!-- ====================================================================== -->

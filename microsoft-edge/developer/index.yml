@@ -203,13 +203,12 @@ landingContent:
         links:
           - text: Microsoft Edge IDE integration
             url: /microsoft-edge/visual-studio-code/ide-integration
-
+          - text: Debug Microsoft Edge in Visual Studio Code
+            url: /microsoft-edge/visual-studio-code/debugger-for-edge
+      - linkListType: how-to-guide
+        links:
           - text: Open source files in Visual Studio Code
             url: /microsoft-edge/devtools-guide-chromium/sources/opening-sources-in-vscode
-
-          - text: Debugger for Edge
-            url: /microsoft-edge/visual-studio-code/debugger-for-edge
-
           - text: Visual Studio for web development
             url: /microsoft-edge/visual-studio/
 # =============================================================================

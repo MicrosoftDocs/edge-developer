@@ -176,6 +176,13 @@ conceptualContent:
               itemType: reference
 
         # Card
+        - title: DevTools for Visual Studio Code
+          links:
+            - url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
+              itemType: how-to-guide
+              text: DevTools extension for Visual Studio Code
+
+        # Card
         - title: Microsoft Edge extensions
           links:
             - url: /microsoft-edge/extensions-chromium/index
@@ -305,21 +312,21 @@ conceptualContent:
         # Card
         - title: Microsoft Edge IDE integration
           links:
-            - url: /microsoft-edge/visual-studio-code/ide-integration
-              text: Microsoft Edge IDE integration  # new firstchild article
+            - text: Microsoft Edge IDE integration
+              url: /microsoft-edge/visual-studio-code/ide-integration
               itemType: overview
-            - url: /microsoft-edge/visual-studio/
+
+            - text: Open source files in Visual Studio Code
+              url: /microsoft-edge/devtools-guide-chromium/sources/opening-sources-in-vscode
+              itemType: how-to-guide
+
+            - text: Debug Microsoft Edge in Visual Studio Code
+              url: /microsoft-edge/visual-studio-code/debugger-for-edge
               itemType: overview
-              text: Visual Studio
-            - url: /microsoft-edge/visual-studio-code/
-              itemType: overview
-              text: Visual Studio Code overview
-            - url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
-              itemType: overview
-              text: DevTools extension for Visual Studio Code
-            - url: /microsoft-edge/visual-studio-code/webhint
-              itemType: overview
-              text: webhint extension for Visual Studio Code
+
+            - text: Visual Studio for web development
+              url: /microsoft-edge/visual-studio/
+              itemType: how-to-guide
         # Card
         - title: Accessibility in Microsoft Edge
           links:
