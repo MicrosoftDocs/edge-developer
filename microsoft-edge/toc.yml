@@ -776,9 +776,9 @@
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: DevTools for Visual Studio Code
       items:
-        - name: Microsoft Edge DevTools extension for Visual Studio Code
+        - name: DevTools extension for Visual Studio Code
           href: visual-studio-code/microsoft-edge-devtools-extension.md
-          displayName: 
+          displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
@@ -1334,11 +1334,11 @@
           href: visual-studio-code/ide-integration.md
           displayName: 
 
-        - name: Open source files in Visual Studio Code
+        - name: Opening source files in Visual Studio Code
           href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
           displayName: 
 
-        - name: Debugger for Edge
+        - name: Debug Microsoft Edge in Visual Studio Code
           href: visual-studio-code/debugger-for-edge.md
           displayName: 
 
