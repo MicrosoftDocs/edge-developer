@@ -1206,16 +1206,6 @@
               href: webview2/webview2-api-reference.md
               displayName: functions, methods  # list relevant platforms
 
-            - name: Win32 C++
-              items:
-                - name: Win32 C++ WebView2 API conventions
-                  href: webview2/concepts/win32-api-conventions.md
-                  displayName: 
-
-                - name: Win32 C++ API Reference
-                  href: /microsoft-edge/webview2/reference/win32/index
-                  displayName: functions, methods
-
             - name: .NET
               items:
                 - name: Microsoft.Web.WebView2.Core
@@ -1232,12 +1222,22 @@
 
             - name: WinRT
               items:
-                - name: Microsoft.Web.WebView2.Core
+                - name: Microsoft.Web.WebView2.Core (C#)
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: functions, methods
 
-                - name: COM Interop
+                - name: COM Interop (C++)
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
+                  displayName: functions, methods
+
+            - name: Win32 C++
+              items:
+                - name: Win32 C++ WebView2 API conventions
+                  href: webview2/concepts/win32-api-conventions.md
+                  displayName: 
+
+                - name: Win32 C++ API Reference
+                  href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
 
         - name: Contact the WebView2 Team
