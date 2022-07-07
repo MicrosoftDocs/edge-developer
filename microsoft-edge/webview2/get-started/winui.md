@@ -407,7 +407,6 @@ This environment variable must be set prior to `CoreWebView2` creation, which oc
 
 The following interfaces aren't accessible in WinUI 3:
 
-<!-- todo: delete I prefix? -->
 * `ICoreWebView2Environment`
 * `ICoreWebView2EnvironmentOptions` and `ICoreWebView2EnvironmentOptions2`
 * `ICoreWebView2ControllerOptions`
