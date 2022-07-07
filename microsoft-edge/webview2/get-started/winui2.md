@@ -327,7 +327,7 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 
 * `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
 
-This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](https://docs.microsoft.com/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) is set or the [WebView2.EnsureCoreWebView2Async method](https://docs.microsoft.com/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) is called.
+This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](https://docs.microsoft.com/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) is initially set or the [WebView2.EnsureCoreWebView2Async method](https://docs.microsoft.com/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) is initially called.
 
 
 ### API limitations
@@ -337,6 +337,16 @@ The following interfaces aren't accessible in WinUI 2:
 * `ICoreWebView2Environment`
 * `ICoreWebView2EnvironmentOptions` and `ICoreWebView2EnvironmentOptions2`
 * `ICoreWebView2ControllerOptions`
+
+
+<!-- ====================================================================== -->
+## API Reference
+
+* [WinRT API Reference: Core (C#)](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
+* [WinRT API Reference: COM Interop (C++)](/microsoft-edge/webview2/reference/winrt/interop/index)
+
+All platforms/languages:
+* [WebView2 API Reference](../webview2-api-reference.md) - API Reference for each platform
 
 
 <!-- ====================================================================== -->
@@ -353,10 +363,3 @@ GitHub:
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
 * [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
-
-WinRT API Reference for WinUI 2 (UWP):
-* [Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
-* [COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)
-* [WebView2 API Reference](../webview2-api-reference.md) - each platform's API Reference
-* [WinRT API Reference: Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
-* [WinRT API Reference: COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)

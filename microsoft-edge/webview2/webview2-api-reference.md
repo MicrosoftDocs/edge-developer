@@ -22,19 +22,20 @@ For more information, see [Overview of Microsoft Edge WebView2](index.md) and [G
 
 WebView2 is available for the following languages and frameworks:
 
-* [Win32 C++](/microsoft-edge/webview2/reference/win32/index)
-
 * .NET
-   * [Core](/dotnet/api/microsoft.web.webview2.core)
+   * [Core/C#](/dotnet/api/microsoft.web.webview2.core)
    * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
    * [Windows Forms](/dotnet/api/microsoft.web.webview2.winforms)
 
-* WinRT (for WinUI 2/UWP)
-   * [Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
-   * [COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)
+* WinRT - for WinUI 2 (UWP)
+   * [Core/C#](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
+   * [COM Interop/C++](/microsoft-edge/webview2/reference/winrt/interop/index)
 
-* WinUI 3 (for Windows App SDK)
-   * [API reference](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 -->
+* WinRT - for WinUI 3 (Windows App SDK)
+   * [Microsoft.UI.Xaml.Controls.WebView2 Class](https://docs.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2) - in: API reference for Windows desktop apps > WinRT APIs > `Microsoft.UI.Xaml.Controls`.
+   * [WebView2 spec](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 -->
+
+* [Win32/COM/C++](/microsoft-edge/webview2/reference/win32/index)
 
 
 <!-- ====================================================================== -->
