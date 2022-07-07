@@ -25,15 +25,15 @@ The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` clas
 
 #### [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)
-* [CoreWebView2Controller Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
-* [CoreWebView2Environment Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
+* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+* [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
+* [CoreWebView2Environment Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
 
 #### [C++](#tab/cpp)
 
-* [ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)
-* [ICoreWebView2Controller](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller)
-* [ICoreWebView2Environment](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)
 
 ---
 
