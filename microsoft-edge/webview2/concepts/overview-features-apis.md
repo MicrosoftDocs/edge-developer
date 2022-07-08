@@ -20,16 +20,16 @@ When hosting the WebView2 control, your app has access to the following browser 
 |---|---|
 | [Main classes: Environment, Controller, and Core](#main-classes-environment-controller-and-core) | The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These large classes expose a wide range of APIs that your host app can access to provide the below categories of browser-related features for your users. |
 | [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
-| [Browser features](#browser-features) | Toggle and change these inherited features that are inherited from the browser and are available in a WebView2 control. |
+| [Browser features](#browser-features) | The WebView2 control gives your app access to many browser features.  You can modify these browser features and turn them on or off. |
 | [Process management](#process-management) | Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly. |
-| [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content) | In the WebView2 control you can manage navigation to web pages and content loaded in the web pages. |
+| [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content) | Manage navigation to webpages and manage content that's loaded in the webpages. |
 | [iFrames](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
-| [Authentication](#authentication) | Handle basic authentication in WebView2 controls. |
-| [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Set up the WebView2 rendering system in non-framework apps, such as how the WebView2 control renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
-| [Rendering WebView2 using Composition](#rendering-webview2-using-composition) | For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering. |
+| [Authentication](#authentication) | Your app can handle basic authentication using the WebView2 control.  _Basic authentication_ is a specific authentication approach that's part of the HTTP protocol. |
+| [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Use these APIs to set up the WebView2 rendering system if your host app doesn't use a UI framework.  This rendering setup controls how WebView2 renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
+| [Rendering WebView2 using Composition](#rendering-webview2-using-composition) | For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  `CoreWebView2CompositionController` provides the same APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering. |
 | [User data](#user-data) | Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
-| [Performance and debugging](#performance-and-debugging) | Analyze and debug performance, handle performance-related events, and manage memory usage to increase responsiveness of your app. |
-| [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
+| [Performance and debugging](#performance-and-debugging) | Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app. |
+| [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features<!--TODO: what type of features? features specifically for testing/profiling?--> that aren't implemented in the WebView2 platform. |
 
 
 <!-- ====================================================================== -->
@@ -201,8 +201,7 @@ When hosting WebView2, your app can manage different JavaScript dialogs, to supp
 <!-- ====================================================================== -->
 ## Browser features
 
-The WebView2 control gives your host app access to many browser features. You can modify or turn off these features.
-
+The WebView2 control gives your app access to many browser features.  You can modify these browser features and turn them on or off.
 
 <!-- ------------------------------ -->
 #### Printing
@@ -332,7 +331,7 @@ Custom Download Experience:
 <!-- ------------------------------ -->
 #### Permissions
 
-Different web pages may ask you for permissions to access some privileged resources, such as geolocation sensor, camera, and microphone.  By using the WebView2 permissions APIs, your host app can programmatically respond to permissions requests and/or replace the default permissions UI with its own UI. 
+Different webpages may ask you for permissions to access some privileged resources, such as geolocation sensor, camera, and microphone.  Your host app can programmatically respond to permissions requests and can replace the default permissions UI with its own UI.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -711,17 +710,17 @@ Failed:
 <!-- ====================================================================== -->
 ## Navigate to pages and manage loaded content
 
-In the WebView2 control you can manage navigation to web pages and content loaded in the web pages. 
+Through the WebView2 control, your app can manage navigation to webpages and manage content that's loaded in the webpages.
 
 
 <!-- ------------------------------ -->
 #### Manage content loaded into WebView2
 
 These APIs load, stop loading, and reload content to WebView2.  The content that's loaded can be:
-*  From a URL.
+*  Content from a URL.
 *  A string of HTML.
 *  Local content via virtual host name to local folder mapping.
-*  From a constructed network request.
+*  Content from a constructed network request.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -974,7 +973,8 @@ Embed other webpages into your own webpage.  Detect when embedded webpages are c
 
 <!-- selling point / value prop: easy configuration of WebView2 apps - support user accounts -->
 
-Learn how to handle basic authentication in WebView2 controls.
+Your app can handle basic authentication using the WebView2 control.  _Basic authentication_ is a specific authentication approach that's part of the HTTP protocol.
+
 <!-- what's the benefit for end users?  how does it essentially work? what's involved? -->
 
 See also:
@@ -1008,11 +1008,14 @@ See also:
 <!-- ====================================================================== -->
 ## Rendering WebView2 in non-framework apps
 
-<!-- keep old intro?:
-These APIS are used to set up the WebView2 rendering system in non-framework apps.  For example, how WebView2 renders output into the host app, how WebView2 handles input, focus, and also (for C++ only) accessibility.
--->
+Use these APIs to set up the WebView2 rendering system if your host app doesn't use a UI framework.  This rendering setup controls how WebView2 renders output into your host app, and how WebView2 handles input, focus, and accessibility.
 
-If you're using a UI framework for your app, you should use the WebView2 element for that UI framework.  If you're not using a UI framework for your app (for example, if you're using pure Win32 directly), or your UI framework doesn't have a WebView2 element, then you need to create `CoreWebView2Controller` and render it into your app.  If your app UI is build using `DirectComposition` or `Windows.UI.Composition`, then you should use `CoreWebView2CompositionController`; otherwise you should use `CoreWebView2Controller`.
+<!-- TODO: make a simple flat list of the 3-4 scenarios, clearly differentiated/identified/described.  switch to table layout? -->
+*  If you're using a UI framework for your app, you should use the WebView2 element that's provided by that UI framework, rather than using these APIs.
+
+*  If you're not using a UI framework for your app (for example, if you're using pure Win32 directly), or if your UI framework doesn't have a WebView2 element, then you need to create `CoreWebView2Controller` and render it into your app, using these APIS.
+
+*  If your app UI is built using `DirectComposition`<!-- TODO: where?  0 hits in this page--> or `Windows.UI.Composition`,<!-- TODO: where?  0 hits in this page--> you should use `CoreWebView2CompositionController` rather than uising these APIs; see [Rendering WebView2 using Composition](#rendering-webview2-using-composition). Otherwise, you should use `CoreWebView2Controller` (the following APIs).<!-- TODO: clarify relevance & non-relevance, logical nesting of this list item -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1213,7 +1216,7 @@ WebView2 can specify a default background color.  The color can be any opaque co
 <!-- ====================================================================== -->
 ## Rendering WebView2 using Composition
 
-For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering.
+For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  `CoreWebView2CompositionController` provides the same APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1339,7 +1342,7 @@ See also:
 <!-- ====================================================================== -->
 ## Performance and debugging
 
-Analyze and debug performance, handle performance-related events, and manage memory usage to increase responsiveness of your app.
+Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1367,7 +1370,7 @@ Analyze and debug performance, handle performance-related events, and manage mem
 <!-- ====================================================================== -->
 ## Chrome Developer Protocol (CDP)
 
-The Chrome DevTools Protocol provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform.
+The Chrome DevTools Protocol provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features<!--TODO: what type of features? features specifically for testing/profiling?--> that aren't implemented in the WebView2 platform.
 
 See also:
 * [Use the Chrome DevTools Protocol in WebView2 apps](../how-to/chromium-devtools-protocol.md)
