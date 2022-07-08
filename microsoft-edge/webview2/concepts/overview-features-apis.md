@@ -1035,7 +1035,7 @@ Use these APIs to set up the WebView2 rendering system if your host app doesn't 
 
 * **No UI framework, and not using Composition** - If you're not using a UI framework for your app (for example, if you're using pure Win32 directly), or if your UI framework doesn't have a WebView2 element, then you need to create `CoreWebView2Controller` and render it into your app, using these APIs in this section.
 
-* **No UI framework, and using Composition** - If your app UI is built using [DirectComposition](https://docs.microsoft.com/en-us/windows/win32/directcomp/directcomposition-portal) or [Windows.UI.Composition](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Composition?view=winrt-22621), you should use `CoreWebView2CompositionController` rather than using these APIs; see [Rendering WebView2 using Composition](#rendering-webview2-using-composition), below.
+* **No UI framework, and using Composition** - If your app UI is built using [DirectComposition](/windows/win32/directcomp/directcomposition-portal) or [Windows.UI.Composition](/uwp/api/Windows.UI.Composition), you should use `CoreWebView2CompositionController` rather than using these APIs; see [Rendering WebView2 using Composition](#rendering-webview2-using-composition), below.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
