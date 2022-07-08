@@ -313,8 +313,8 @@ The WebView2 WinUI 2 (UWP) control is in development.  The following features ha
 *  Autofill UI.
 *  File Picker Dialog.
 *  Background Audio.
-*  Print to PDF.
-*  Print Preview.
+*  Print to PDF.<!--todo: has issues?  dated info?  not implemented?-->
+*  Print Preview.<!--todo: has issues?  dated info?  not implemented?-->
 *  Adding COM Objects (WinRT `AddHostObject`).
 *  Playready DRM.
 *  Service Workers on Windows devices before 20H2.
