@@ -59,7 +59,9 @@ See also:
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2)
+* [CoreWebView2Controller Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller)
+* [CoreWebView2Environment Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -103,7 +105,9 @@ Host objects can be projected into JavaScript, so that you can call native objec
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
+* [CoreWebView2.RemoveHostObjectFromScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#removehostobjectfromscript)
+* [CoreWebView2Settings.AreHostObjectsAllowed Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#arehostobjectsallowed)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -125,11 +129,15 @@ Allows host app to add JavaScript in the web content within the WebView2 control
 * [CoreWebView2.ExecuteScriptAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.executescriptasync)
 * [CoreWebView2.RemoveScriptToExecuteOnDocumentCreated Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.removescripttoexecuteondocumentcreated)
 * [CoreWebView2Settings.IsScriptEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isscriptenabled)
-* [CoreWebView2Frame2.ExecuteScriptAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.executescriptasync)
+* [CoreWebView2Frame.ExecuteScriptAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.executescriptasync)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync)
+* [CoreWebView2.ExecuteScriptAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#executescriptasync)
+* [CoreWebView2.RemoveScriptToExecuteOnDocumentCreated Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#removescripttoexecuteondocumentcreated)
+* [CoreWebView2Settings.IsScriptEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isscriptenabled)
+* [CoreWebView2Frame.ExecuteScriptAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#executescriptasync)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -160,7 +168,14 @@ Your app can send messages to the web content that's within the WebView2 control
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2.PostWebMessageAsJson Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postwebmessageasjson)
+* [CoreWebView2.PostWebMessageAsString Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postwebmessageasstring)
+* [CoreWebView2.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webmessagereceived)
+   * [CoreWebView2WebMessageReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webmessagereceivedeventargs)
+* [CoreWebView2Settings.IsWebMessageEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#iswebmessageenabled)
+* [CoreWebView2Frame.PostWebMessageAsJson Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#postwebmessageasjson)
+* [CoreWebView2Frame.PostWebMessageAsString Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#postwebmessageasstring)
+* [CoreWebView2Frame.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#webmessagereceived)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -188,7 +203,8 @@ When hosting WebView2, your app can manage different JavaScript dialogs, to supp
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2.ScriptDialogOpening Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#scriptdialogopening)
+   * [CoreWebView2ScriptDialogOpeningEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptdialogopeningeventargs)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -216,7 +232,9 @@ You can configure custom print settings and print to PDF.
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2.PrintToPdfAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#printtopdfasync)
+* [CoreWebView2Environment.CreatePrintSettings Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createprintsettings)
+* [CoreWebView2PrintSettings Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -267,7 +285,7 @@ By hosting WebView2, your app can capture screenshots and indicate which format 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2.CapturePreviewAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#capturepreviewasync)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -341,7 +359,9 @@ Different webpages may ask you for permissions to access some privileged resourc
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2.PermissionRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#permissionrequested)
+   * [CoreWebView2PermissionRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionrequestedeventargs)
+* [CoreWebView2Frame.PermissionRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#permissionrequested)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -433,7 +453,7 @@ See also:
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2Settings.UserAgent Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#useragent)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -454,7 +474,8 @@ Your app can independently control whether the browser's autofill functionality 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2Settings.IsGeneralAutofillEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isgeneralautofillenabled)
+* [CoreWebView2Settings.IsPasswordAutosaveEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#ispasswordautosaveenabled)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -608,7 +629,7 @@ You can set the default display language for WebView2 that applies to the browse
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2EnvironmentOptions.Language Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#language)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -652,7 +673,8 @@ WebView2 provides functionality to handle the JavaScript function `window.close(
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2Controller.Close Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#close)
+* [CoreWebView2.WindowCloseRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#windowcloserequested)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -924,7 +946,8 @@ In WebView2, you can use the Server Certificate API to trust the server's TLS ce
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2.ServerCertificateErrorDetected Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#servercertificateerrordetected)
+* [CoreWebView2.ClearServerCertificateErrorActionsAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#clearservercertificateerroractionsasync)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1159,7 +1182,8 @@ WebView2 can be reparented to a different parent window handle (`HWND`).  WebVie
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebview2Controller.NotifyParentWindowPositionChanged Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#notifyparentwindowpositionchanged)
+   * [CoreWebview2Controller.ParentWindow Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#parentwindow)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1204,7 +1228,7 @@ WebView2 can specify a default background color.  The color can be any opaque co
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2Controller.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#defaultbackgroundcolor)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1246,7 +1270,7 @@ WebView2 can connect its composition tree to an [IDCompositionVisual](/windows/w
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
+* [CoreWebView2CompositionController.RootVisualTarget Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#rootvisualtarget)
 
 ##### [Win32/C++](#tab/win32cpp)
 
