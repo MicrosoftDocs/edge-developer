@@ -6,15 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/07/2022
+ms.date: 07/08/2022
 ---
 # Overview of WebView2 features and APIs
 
-<!-- todo: re-sync table sentences -->
+Embedding the WebView2 control in your app gives your app access to various methods and properties that are provided through the WebView2 classes or interfaces.  WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities, to enabling your app to modify browser experiences.  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
 
-Embedding the WebView2 control in your app gives your app access to various methods and properties that are provided through the WebView2 classes or interfaces.  WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities,<!--such as [concrete/specific]--> to enabling your app to modify browser experiences.<!--reword "modify browser experiences"; ... such as [concrete/specific]-->  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
-
-When hosting the WebView2 control, your app has access to the following browser features and APIs:
+When hosting the WebView2 control, your app has access to the following features and APIs:
 
 | Feature area | Purpose |
 |---|---|
@@ -29,7 +27,7 @@ When hosting the WebView2 control, your app has access to the following browser 
 | [Rendering WebView2 using Composition](#rendering-webview2-using-composition) | For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  `CoreWebView2CompositionController` provides the same APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering. |
 | [User data](#user-data) | Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
 | [Performance and debugging](#performance-and-debugging) | Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app. |
-| [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features<!--TODO: what type of features? features specifically for testing/profiling?--> that aren't implemented in the WebView2 platform. |
+| [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
 
 
 <!-- ====================================================================== -->
@@ -1033,12 +1031,11 @@ See also:
 
 Use these APIs to set up the WebView2 rendering system if your host app doesn't use a UI framework.  This rendering setup controls how WebView2 renders output into your host app, and how WebView2 handles input, focus, and accessibility.
 
-<!-- TODO: make a simple flat list of the 3-4 scenarios, clearly differentiated/identified/described.  switch to table layout? -->
-*  If you're using a UI framework for your app, you should use the WebView2 element that's provided by that UI framework, rather than using these APIs.
+* **UI framework** - If you're using a UI framework for your app, you should use the WebView2 element that's provided by that UI framework, rather than using these APIs.
 
-*  If you're not using a UI framework for your app (for example, if you're using pure Win32 directly), or if your UI framework doesn't have a WebView2 element, then you need to create `CoreWebView2Controller` and render it into your app, using these APIS.
+* **No UI framework, and not using Composition** - If you're not using a UI framework for your app (for example, if you're using pure Win32 directly), or if your UI framework doesn't have a WebView2 element, then you need to create `CoreWebView2Controller` and render it into your app, using these APIs in this section.
 
-*  If your app UI is built using `DirectComposition`<!-- TODO: where?  0 hits in this page--> or `Windows.UI.Composition`,<!-- TODO: where?  0 hits in this page--> you should use `CoreWebView2CompositionController` rather than uising these APIs; see [Rendering WebView2 using Composition](#rendering-webview2-using-composition). Otherwise, you should use `CoreWebView2Controller` (the following APIs).<!-- TODO: clarify relevance & non-relevance, logical nesting of this list item -->
+* **No UI framework, and using Composition** - If your app UI is built using [DirectComposition](https://docs.microsoft.com/en-us/windows/win32/directcomp/directcomposition-portal) or [Windows.UI.Composition](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Composition?view=winrt-22621), you should use `CoreWebView2CompositionController` rather than using these APIs; see [Rendering WebView2 using Composition](#rendering-webview2-using-composition), below.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1394,7 +1391,7 @@ Analyze and debug performance, handle performance-related events, and manage mem
 <!-- ====================================================================== -->
 ## Chrome Developer Protocol (CDP)
 
-The Chrome DevTools Protocol provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features<!--TODO: what type of features? features specifically for testing/profiling?--> that aren't implemented in the WebView2 platform.
+The Chrome DevTools Protocol provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform.
 
 See also:
 * [Use the Chrome DevTools Protocol in WebView2 apps](../how-to/chromium-devtools-protocol.md)
