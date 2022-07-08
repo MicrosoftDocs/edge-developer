@@ -25,7 +25,7 @@ WebView2 is available for the following frameworks and programming languages:
 
 * WinRT for WinUI 3 (Windows App SDK)
    * [Microsoft.UI.Xaml.Controls.WebView2 Class](https://docs.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2)
-   * [Spec: WebView2 Xaml control](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 -->
+      * [Spec: WebView2 Xaml control](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 -->
 
 * [Win32/C++](/microsoft-edge/webview2/reference/win32/index)
 
