@@ -372,3 +372,4 @@ GitHub:
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
 * [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
+*  Unlike for some other platforms, there isn't a Getting Started completed version of this tutorial in the WebView2Samples repo.
