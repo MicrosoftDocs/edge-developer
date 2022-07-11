@@ -28,7 +28,7 @@ The WebView2 Get Started guides help you create a host app using various framewo
 
 
 <!-- ====================================================================== -->
-## The Win32 and Multi-project WebView2Samples.sln file
+## The Win32 and multi-project WebView2Samples.sln file
 
 The `WebView2Samples` repo includes samples that demonstrate the WebView2 control and the WebView2 API, for Win32, WPF, WinForms, and WinUI.  These samples are hybrid applications that use the Microsoft Edge WebView2 control.
 
