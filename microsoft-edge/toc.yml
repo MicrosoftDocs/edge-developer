@@ -980,60 +980,17 @@
           displayName: 
 
 # -----------------------------------------------------------------------------
-        - name: Setup and sample code
-          items:
-            - name: Set up your Dev environment  # new article
-              href: webview2/how-to/machine-setup.md
-              displayName: Sample Code for WebView2  # top-of-page title
+# machine setup
+        - name: Set up your Dev environment for WebView2
+          href: webview2/how-to/machine-setup.md
+          displayName: 
 
-            - name: Sample Code
-              href: webview2/code-samples-links.md
-              displayName: Sample Code for WebView2  # top-of-page title
-
-# in alpha order of downloaded repo directories
-            - name: WebView2 control and API samples
-              items:
-                - name: WinUI 2 (UWP) browser app
-                  href: webview2/samples/webview2_sample_uwp.md
-                  displayName: webview2_sample_uwp  # repo dir name
-
-                - name: Win32 C++ app
-                  href: webview2/samples/webview2apissample.md
-                  displayName: WebView2APISample, SampleApps  # repo dir names
-
-                - name: Win32 C++ app with Visual Composition
-                  href: webview2/samples/webview2samplewincomp.md
-                  displayName: WebView2SampleWinComp  # repo dir name
-
-                - name: WinForms browser app
-                  href: webview2/samples/webview2windowsformsbrowser.md
-                  displayName: WebView2WindowsFormsBrowser  # repo dir name
-
-                - name: WPF .NET browser app
-                  href: webview2/samples/webview2wpfbrowser.md
-                  displayName: WebView2WpfBrowser  # repo dir name
-
-                - name: Chrome DevTools Protocol extension in a WPF app
-                  href: webview2/samples/wv2cdpextensionwpfsample.md
-                  displayName: WV2CDPExtensionWPFSample  # repo dir name
-
-# deployment samples
-            - name: Deployment samples
-              items:
-                - name: WebView2 Deployment Visual Studio installer
-                  href: webview2/samples/wv2deploymentvsinstallersample.md
-                  displayName: WV2DeploymentVSInstallerSample  # repo dir name
-
-                - name: WiX Burn Bundle to deploy the Runtime
-                  href: webview2/samples/wv2deploymentwixburnbundlesample.md
-                  displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
-
-                - name: WiX Custom Action to deploy the Runtime
-                  href: webview2/samples/wv2deploymentwixcustomactionsample.md
-                  displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
-
+        - name: List of WebView2 tutorials and samples
+          href: webview2/code-samples-links.md
+          displayName: 
 # -----------------------------------------------------------------------------
-        - name: "Tutorial: Create a WebView2 app"
+# getstart
+        - name: Get Started tutorials and samples
           items:
             - name: Get started with WebView2
               href: webview2/get-started/get-started.md
@@ -1058,6 +1015,50 @@
             - name: WPF
               href: webview2/get-started/wpf.md
               displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
+
+# -----------------------------------------------------------------------------
+# regular samples (in alpha order of downloaded repo directories)
+        - name: Regular samples
+          items:
+            - name: WinUI 2 (UWP) browser app
+              href: webview2/samples/webview2_sample_uwp.md
+              displayName: webview2_sample_uwp  # repo dir name
+
+            - name: Win32 C++ app
+              href: webview2/samples/webview2apissample.md
+              displayName: WebView2APISample, SampleApps  # repo dir names
+
+            - name: Win32 C++ app with Visual Composition
+              href: webview2/samples/webview2samplewincomp.md
+              displayName: WebView2SampleWinComp  # repo dir name
+
+            - name: WinForms browser app
+              href: webview2/samples/webview2windowsformsbrowser.md
+              displayName: WebView2WindowsFormsBrowser  # repo dir name
+
+            - name: WPF .NET browser app
+              href: webview2/samples/webview2wpfbrowser.md
+              displayName: WebView2WpfBrowser  # repo dir name
+
+            - name: Chrome DevTools Protocol extension in a WPF app
+              href: webview2/samples/wv2cdpextensionwpfsample.md
+              displayName: WV2CDPExtensionWPFSample  # repo dir name
+
+# -----------------------------------------------------------------------------
+# deployment samples
+        - name: Deployment samples
+          items:
+            - name: WebView2 Deployment Visual Studio installer
+              href: webview2/samples/wv2deploymentvsinstallersample.md
+              displayName: WV2DeploymentVSInstallerSample  # repo dir name
+
+            - name: WiX Burn Bundle to deploy the Runtime
+              href: webview2/samples/wv2deploymentwixburnbundlesample.md
+              displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
+
+            - name: WiX Custom Action to deploy the Runtime
+              href: webview2/samples/wv2deploymentwixcustomactionsample.md
+              displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
 
 # -----------------------------------------------------------------------------
         - name: Fundamentals
