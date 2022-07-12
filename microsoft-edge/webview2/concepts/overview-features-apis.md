@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/08/2022
+ms.date: 07/12/2022
 ---
 # Overview of WebView2 features and APIs
 
@@ -324,20 +324,20 @@ Custom Download Experience:
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
 General:
-* [CoreWebView2.IsDefaultDownloadDialogOpenChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#isdefaultdownloaddialogopenchanged)
-* [CoreWebView2.IsDefaultDownloadDialogOpen Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#isdefaultdownloaddialogopen)
-* [CoreWebView2.OpenDefaultDownloadDialog Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#opendefaultdownloaddialog)
-* [CoreWebView2.CloseDefaultDownloadDialog Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#closedefaultdownloaddialog)
+* [CoreWebView2.IsDefaultDownloadDialogOpenChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#isdefaultdownloaddialogopenchanged)
+* [CoreWebView2.IsDefaultDownloadDialogOpen Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#isdefaultdownloaddialogopen)
+* [CoreWebView2.OpenDefaultDownloadDialog Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#opendefaultdownloaddialog)
+* [CoreWebView2.CloseDefaultDownloadDialog Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#closedefaultdownloaddialog)
 
 Modify Default Experience:
-* [CoreWebView2.DefaultDownloadDialogCornerAlignment Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#defaultdownloaddialogcorneralignment)
-* [CoreWebView2.DefaultDownloadDialogMargin Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#defaultdownloaddialogmargin)
-* [CoreWebView2Profile.DefaultDownloadFolderPath Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1264.42#defaultdownloadfolderpath)
+* [CoreWebView2.DefaultDownloadDialogCornerAlignment Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#defaultdownloaddialogcorneralignment)
+* [CoreWebView2.DefaultDownloadDialogMargin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#defaultdownloaddialogmargin)
+* [CoreWebView2Profile.DefaultDownloadFolderPath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#defaultdownloadfolderpath)
 
 Custom Download Experience:
-* [CoreWebView2.DownloadStarting Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#downloadstarting)
-   * [CoreWebView2DownloadStartingEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2DownloadOperation Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadoperation?view=webview2-winrt-1.0.1264.42)
+* [CoreWebView2.DownloadStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#downloadstarting)
+   * [CoreWebView2DownloadStartingEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs)
+* [CoreWebView2DownloadOperation Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadoperation)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -407,12 +407,12 @@ See also:
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2Environment.CreateContextMenuItem Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1264.42#createcontextmenuitem)
-* [CoreWebView2ContextMenuItem Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenuitem?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2ContextMenuTarget Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenutarget?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2.ContextMenuRequested Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#contextmenurequested)
-   * [CoreWebView2ContextMenuRequestedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenurequestedeventargs?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1264.42#aredefaultcontextmenusenabled)
+* [CoreWebView2Environment.CreateContextMenuItem Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcontextmenuitem)
+* [CoreWebView2ContextMenuItem Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenuitem)
+* [CoreWebView2ContextMenuTarget Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenutarget)
+* [CoreWebView2.ContextMenuRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#contextmenurequested)
+   * [CoreWebView2ContextMenuRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenurequestedeventargs)
+* [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#aredefaultcontextmenusenabled)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -430,12 +430,10 @@ See also:
 <!-- ------------------------------ -->
 #### Status bar
 
-<!-- why is this desirable, what kinds of changes for example, does this mean programmatically monitor? -->
 A status bar is located in the bottom left of the page and displays the state of the webpage being displayed. In WebView2 you can enable/disable the status bar, get the text in the status bar, and find out when the status bar text has changed. 
 
 <!--
 See also:
-* []()
 -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -448,9 +446,9 @@ See also:
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2.StatusBarTextChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#statusbartextchanged)
-* [CoreWebView2.StatusBarText Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#statusbartext)
-* [CoreWebView2Settings.IsStatusBarEnabled Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1264.42#isstatusbarenabled)
+* [CoreWebView2.StatusBarTextChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#statusbartextchanged)
+* [CoreWebView2.StatusBarText Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#statusbartext)
+* [CoreWebView2Settings.IsStatusBarEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isstatusbarenabled)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -467,10 +465,10 @@ See also:
 <!-- why would you do this, what is benefit for end user, what's involved?  Your app can detect which XYZ and then ABC so that the X is Y. -->
 The user agent is a string that represents the identity of the program on behalf of the user, such as the browser name. In WebView2, you can set the user agent.
 
-<!--
 See also:
-* []()
--->
+* [Detect Windows 11 using User-Agent Client Hints](../../web-platform/how-to-detect-win11.md)
+* [Override the user agent string](../../devtools-guide-chromium/device-mode/override-user-agent.md)
+
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -526,10 +524,10 @@ Your app can mute and unmute all audio, and find out when audio is playing.
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2.IsDocumentPlayingAudioChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#isdocumentplayingaudiochanged)
-* [CoreWebView2.IsMutedChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#ismutedchanged)
-* [CoreWebView2.IsDocumentPlayingAudio Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#isdocumentplayingaudio)
-* [CoreWebView2.IsMuted Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#ismuted)
+* [CoreWebView2.IsDocumentPlayingAudioChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#isdocumentplayingaudiochanged)
+* [CoreWebView2.IsMutedChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#ismutedchanged)
+* [CoreWebView2.IsDocumentPlayingAudio Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#isdocumentplayingaudio)
+* [CoreWebView2.IsMuted Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#ismuted)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -559,8 +557,8 @@ This feature is currently disabled by default in the browser.  To enable this fe
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2Settings.IsSwipeNavigationEnabled Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1264.42#isswipenavigationenabled)
-* [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1264.42#additionalbrowserarguments)
+* [CoreWebView2Settings.IsSwipeNavigationEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isswipenavigationenabled)
+* [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#additionalbrowserarguments)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -584,8 +582,8 @@ Your app can detect when the title of the current top-level document has changed
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2.DocumentTitle Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#documenttitle)
-* [CoreWebView2.DocumentTitleChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#documenttitlechanged)
+* [CoreWebView2.DocumentTitle Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitle)
+* [CoreWebView2.DocumentTitleChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitlechanged)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -609,8 +607,8 @@ In WebView2, you can find out when an HTML element enters or leaves full-screen 
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2.ContainsFullScreenElement Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#containsfullscreenelement)
-* [CoreWebView2.ContainsFullScreenElementChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#containsfullscreenelementchanged)
+* [CoreWebView2.ContainsFullScreenElement Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#containsfullscreenelement)
+* [CoreWebView2.ContainsFullScreenElementChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#containsfullscreenelementchanged)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -632,7 +630,7 @@ In the browser PDF viewer, there's a PDF-specific toolbar along the top.  In Web
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2Settings.HiddenPdfToolbarItems Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1264.42#hiddenpdftoolbaritems)
+* [CoreWebView2Settings.HiddenPdfToolbarItems Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#hiddenpdftoolbaritems)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -653,7 +651,7 @@ In WebView2, you can customize the color theme as system, light, or dark.
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2Profile.PreferredColorScheme Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1264.42#preferredcolorscheme)
+* [CoreWebView2Profile.PreferredColorScheme Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#preferredcolorscheme)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -695,9 +693,9 @@ WebView2 provides functionality to handle the JavaScript function `window.open()
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2.NewWindowRequested Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#newwindowrequested)
-   * [CoreWebView2NewWindowRequestedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2newwindowrequestedeventargs?view=webview2-winrt-1.0.1264.42)
-   * [CoreWebView2WindowFeatures Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowfeatures?view=webview2-winrt-1.0.1264.42)
+* [CoreWebView2.NewWindowRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#newwindowrequested)
+   * [CoreWebView2NewWindowRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2newwindowrequestedeventargs)
+   * [CoreWebView2WindowFeatures Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowfeatures)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -757,18 +755,18 @@ Failed:
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
 Info:
-* [CoreWebView2.BrowserProcessId Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#browserprocessid)
-* [CoreWebView2Environment.GetProcessInfos Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1264.42#getprocessinfos)
-* [CoreWebView2Environment.ProcessInfosChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1264.42#processinfoschanged)
-* [CoreWebView2ProcessInfo Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processinfo?view=webview2-winrt-1.0.1264.42)
+* [CoreWebView2.BrowserProcessId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#browserprocessid)
+* [CoreWebView2Environment.GetProcessInfos Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#getprocessinfos)
+* [CoreWebView2Environment.ProcessInfosChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#processinfoschanged)
+* [CoreWebView2ProcessInfo Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processinfo)
 
 Exited:
-* [CoreWebView2Environment.BrowserProcessExited Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1264.42#browserprocessexited)
-   * [CoreWebView2BrowserProcessExitedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browserprocessexitedeventargs?view=webview2-winrt-1.0.1264.42)
+* [CoreWebView2Environment.BrowserProcessExited Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#browserprocessexited)
+   * [CoreWebView2BrowserProcessExitedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browserprocessexitedeventargs)
 
 Failed:
-* [CoreWebView2.ProcessFailed Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#processfailed)
-   * [CoreWebView2ProcessFailedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.1264.42)
+* [CoreWebView2.ProcessFailed Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#processfailed)
+   * [CoreWebView2ProcessFailedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -820,14 +818,14 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2.Navigate Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#navigate)
-* [CoreWebView2.NavigateToString Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#navigatetostring)
-* [CoreWebView2.NavigateWithWebResourceRequest Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#navigatewithwebresourcerequest)
-* [CoreWebView2.Stop Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#stop)
-* [CoreWebView2.Reload Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#reload)
-* [CoreWebView2.SetVirtualHostNameToFolderMapping Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#setvirtualhostnametofoldermapping)
-* [CoreWebView2.ClearVirtualHostNameToFolderMapping Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#clearvirtualhostnametofoldermapping)
-* [CoreWebView2Settings.IsBuiltInErrorPageEnabled Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1264.42#isbuiltinerrorpageenabled)
+* [CoreWebView2.Navigate Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigate)
+* [CoreWebView2.NavigateToString Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigatetostring)
+* [CoreWebView2.NavigateWithWebResourceRequest Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigatewithwebresourcerequest)
+* [CoreWebView2.Stop Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#stop)
+* [CoreWebView2.Reload Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#reload)
+* [CoreWebView2.SetVirtualHostNameToFolderMapping Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#setvirtualhostnametofoldermapping)
+* [CoreWebView2.ClearVirtualHostNameToFolderMapping Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#clearvirtualhostnametofoldermapping)
+* [CoreWebView2Settings.IsBuiltInErrorPageEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isbuiltinerrorpageenabled)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -863,14 +861,14 @@ The history methods allow back and forward navigation in WebView2, and the histo
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2.Source Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#source)
-* [CoreWebView2.SourceChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#sourcechanged)
-   * [CoreWebView2SourceChangedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sourcechangedeventargs?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2.HistoryChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#historychanged)
-* [CoreWebView2.CanGoBack Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#cangoback)
-   * [CoreWebView2.GoBack Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#goback)
-* [CoreWebView2.CanGoForward Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#cangoforward)
-   * [CoreWebView2.GoForward Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#goforward)
+* [CoreWebView2.Source Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#source)
+* [CoreWebView2.SourceChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#sourcechanged)
+   * [CoreWebView2SourceChangedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sourcechangedeventargs)
+* [CoreWebView2.HistoryChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#historychanged)
+* [CoreWebView2.CanGoBack Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#cangoback)
+   * [CoreWebView2.GoBack Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#goback)
+* [CoreWebView2.CanGoForward Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#cangoforward)
+   * [CoreWebView2.GoForward Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#goforward)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -903,11 +901,11 @@ The `NavigationStarting` event allows the app to cancel navigating to specified 
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2.NavigationStarting Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#navigationstarting)
-   * [CoreWebView2NavigationStartingEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2.FrameNavigationStarting Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#framenavigationstarting)
-* [CoreWebView2Frame.NavigationStarting Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1264.42#navigationstarting)
-   * [CoreWebView2NavigationStartingEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs?view=webview2-winrt-1.0.1264.42)
+* [CoreWebView2.NavigationStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigationstarting)
+   * [CoreWebView2NavigationStartingEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs)
+* [CoreWebView2.FrameNavigationStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationstarting)
+* [CoreWebView2Frame.NavigationStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#navigationstarting)
+   * [CoreWebView2NavigationStartingEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -945,16 +943,16 @@ See also:
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2.ContentLoading Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#contentloading)
-   * [CoreWebView2ContentLoadingEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contentloadingeventargs?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2.DOMContentLoaded Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#domcontentloaded)
-   * [CoreWebView2DOMContentLoadedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2domcontentloadedeventargs?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2.NavigationCompleted Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#navigationcompleted)
-   * [CoreWebView2NavigationCompletedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationcompletedeventargs?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2.FrameNavigationCompleted Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#framenavigationcompleted)
-* [CoreWebView2Frame.ContentLoading Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1264.42#contentloading)
-* [CoreWebView2Frame.DOMContentLoaded Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1264.42#domcontentloaded)
-* [CoreWebView2Frame.NavigationCompleted Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1264.42#navigationcompleted)
+* [CoreWebView2.ContentLoading Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#contentloading)
+   * [CoreWebView2ContentLoadingEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contentloadingeventargs)
+* [CoreWebView2.DOMContentLoaded Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#domcontentloaded)
+   * [CoreWebView2DOMContentLoadedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2domcontentloadedeventargs)
+* [CoreWebView2.NavigationCompleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigationcompleted)
+   * [CoreWebView2NavigationCompletedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationcompletedeventargs)
+* [CoreWebView2.FrameNavigationCompleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationcompleted)
+* [CoreWebView2Frame.ContentLoading Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#contentloading)
+* [CoreWebView2Frame.DOMContentLoaded Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#domcontentloaded)
+* [CoreWebView2Frame.NavigationCompleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#navigationcompleted)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -992,10 +990,10 @@ See also:
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2.WebResourceRequested Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#webresourcerequested)
-   * [CoreWebView2WebResourceRequestedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2.WebResourceResponseReceived Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#webresourceresponsereceived)
-   * [CoreWebView2WebResourceResponseReceivedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourceresponsereceivedeventargs?view=webview2-winrt-1.0.1264.42)
+* [CoreWebView2.WebResourceRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourcerequested)
+   * [CoreWebView2WebResourceRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs)
+* [CoreWebView2.WebResourceResponseReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourceresponsereceived)
+   * [CoreWebView2WebResourceResponseReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourceresponsereceivedeventargs)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1026,9 +1024,9 @@ In WebView2, you can use the Client Certificate API to select the client certifi
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2ClientCertificate Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clientcertificate?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2.ClientCertificateRequested Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#clientcertificaterequested)
-   * [CoreWebView2ClientCertificateRequestedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clientcertificaterequestedeventargs?view=webview2-winrt-1.0.1264.42)
+* [CoreWebView2ClientCertificate Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clientcertificate)
+* [CoreWebView2.ClientCertificateRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#clientcertificaterequested)
+   * [CoreWebView2ClientCertificateRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clientcertificaterequestedeventargs)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1084,10 +1082,10 @@ Embed other webpages into your own webpage.  Detect when embedded webpages are c
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2Frame Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2FrameInfo Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo?view=webview2-winrt-1.0.1264.42)
-* [CoreWebView2.FrameCreated Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#framecreated)
-   * [CoreWebView2FrameCreatedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framecreatedeventargs?view=webview2-winrt-1.0.1264.42)
+* [CoreWebView2Frame Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame)
+* [CoreWebView2FrameInfo Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo)
+* [CoreWebView2.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framecreated)
+   * [CoreWebView2FrameCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framecreatedeventargs)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1126,12 +1124,12 @@ See also:
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2HttpRequestHeaders Class]()
-* [CoreWebView2.BasicAuthenticationRequested Event]()
-   * [CoreWebView2BasicAuthenticationRequestedEventArgs Class]()
-* [CoreWebView2BasicAuthenticationResponse Class]()
-   * [CoreWebView2HttpResponseHeaders Class]()
-* [CoreWebView2HttpHeadersCollectionIterator Class]()
+* [CoreWebView2HttpRequestHeaders Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2httprequestheaders)
+* [CoreWebView2.BasicAuthenticationRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#basicauthenticationrequested)
+   * [CoreWebView2BasicAuthenticationRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2basicauthenticationrequestedeventargs)
+* [CoreWebView2BasicAuthenticationResponse Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2basicauthenticationresponse)
+   * [CoreWebView2HttpResponseHeaders Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2httpresponseheaders)
+* [CoreWebView2HttpHeadersCollectionIterator Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2httpheaderscollectioniterator)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1166,9 +1164,9 @@ Use these APIs to set up the WebView2 rendering system if your host app doesn't 
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2Controller.CoreWebView2 Property]()
-* [CoreWebView2Controller.Close Method]()
-* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method]()
+* [CoreWebView2Controller.CoreWebView2 Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#corewebview2)
+* [CoreWebView2Controller.Close Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#close)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controllerasync)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1196,8 +1194,8 @@ WebView2 gives your app access to window-specific attributes, such as positionin
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2Controller.Bounds Property]()
-* [CoreWebView2Controller.IsVisible Property]()
+* [CoreWebView2Controller.Bounds Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#bounds)
+* [CoreWebView2Controller.IsVisible Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#isvisible)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1226,13 +1224,13 @@ Browser/gesture/zoom features:<!-- moved from Rendering section - fits best in "
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2Controller.ZoomFactor Property]()
-* [CoreWebView2Controller.ZoomFactorChanged Event]()
-* [CoreWebView2Controller.SetBoundsAndZoomFactor Method]()
+* [CoreWebView2Controller.ZoomFactor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#zoomfactor)
+* [CoreWebView2Controller.ZoomFactorChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#zoomfactorchanged)
+* [CoreWebView2Controller.SetBoundsAndZoomFactor Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#setboundsandzoomfactor)
 
 Browser/gesture/zoom features:
-* [CoreWebView2Settings.IsPinchZoomEnabled Property]()
-* [CoreWebView2Settings.IsZoomControlEnabled Property]()
+* [CoreWebView2Settings.IsPinchZoomEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#ispinchzoomenabled)
+* [CoreWebView2Settings.IsZoomControlEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#iszoomcontrolenabled)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1263,10 +1261,10 @@ The RasterizationScale API scales all WebView2 UI including context menus, toolt
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2Controller.BoundsMode Property]()
-* [CoreWebView2Controller.RasterizationScale Property]()
-* [CoreWebview2Controller.RasterizationScaleChanged Event]()
-* [CoreWebview2Controller.ShouldDetectMonitorScaleChanges Property]()
+* [CoreWebView2Controller.BoundsMode Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#boundsmode)
+* [CoreWebView2Controller.RasterizationScale Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#rasterizationscale)
+* [CoreWebview2Controller.RasterizationScaleChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#rasterizationscalechanged)
+* [CoreWebview2Controller.ShouldDetectMonitorScaleChanges Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#shoulddetectmonitorscalechanges)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1295,11 +1293,11 @@ The WebView2 control raises events to let the app know when the control gains fo
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebview2Controller.MoveFocus Method]()
-* [CoreWebview2Controller.MoveFocusRequested Event]()
-   * [CoreWebView2MoveFocusRequestedEventArgs Class]()
-* [CoreWebview2Controller.GotFocus Event]()
-* [CoreWebview2Controller.LostFocus Event]()
+* [CoreWebview2Controller.MoveFocus Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#movefocus)
+* [CoreWebview2Controller.MoveFocusRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#movefocusrequested)
+   * [CoreWebView2MoveFocusRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2movefocusrequestedeventargs)
+* [CoreWebview2Controller.GotFocus Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#gotfocus)
+* [CoreWebview2Controller.LostFocus Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#lostfocus)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1350,9 +1348,9 @@ When WebView2 has focus, it directly receives input from the user. An app may wa
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled Property]()
-* [CoreWebView2Controller.AcceleratorKeyPressed Event]()
-   * [CoreWebView2AcceleratorKeyPressedEventArgs Class]()
+* [CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#arebrowseracceleratorkeysenabled)
+* [CoreWebView2Controller.AcceleratorKeyPressed Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#acceleratorkeypressed)
+   * [CoreWebView2AcceleratorKeyPressedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2acceleratorkeypressedeventargs)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1397,8 +1395,8 @@ For composition-based WebView2 rendering, use `CoreWebView2Environment` to creat
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2CompositionController Class]()
-* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method]()
+* [CoreWebView2CompositionController Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2compositioncontrollerasync)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1446,13 +1444,16 @@ Spatial input (mouse, touch, pen) is received by the application and must be sen
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2CompositionController.Cursor Property]()
-* [CoreWebView2CompositionController.CursorChanged Event]()
-* [CoreWebView2CompositionController.SystemCursorId Property]()
-* [CoreWebView2CompositionController.SendMouseInput Method]()
-* [CoreWebView2CompositionController.SendPointerInput Method]()
-* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method]()
-   * [CoreWebView2PointerInfo Class]()
+* [CoreWebView2CompositionController.Cursor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#cursor)
+* [CoreWebView2CompositionController.CursorChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#cursorchanged)
+* [CoreWebView2CompositionController.SendMouseInput Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#sendmouseinput)
+* [CoreWebView2CompositionController.SendPointerInput Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#sendpointerinput)
+* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2pointerinfo)
+   * [CoreWebView2PointerInfo Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2pointerinfo)
+
+<!--TODO - not found, omit?
+* `CoreWebView2CompositionController.SystemCursorId` Property
+-->
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1507,12 +1508,13 @@ See also:
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2Environment.UserDataFolder Property]()
-* [CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess Property]()
-* [CoreWebView2Profile.ClearBrowsingDataAsync Method]()
-* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method]()
-* [CoreWebView2Environment.CreateCoreWebView2ControllerOptions Method]()
-* [CoreWebView2Environment.CreateCoreWebView2ControllerWithOptions Method]()
+* [CoreWebView2Environment.UserDataFolder Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder)
+* [CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#exclusiveuserdatafolderaccess)
+* [CoreWebView2Profile.ClearBrowsingDataAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#clearbrowsingdataasync)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2compositioncontrollerasync)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(options) Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controllerasync)<!-- c#: might ~=CreateCoreWebView2CompositionControllerAsync -->
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controllerasync-1)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerOptions Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controlleroptions)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1521,11 +1523,12 @@ See also:
 * [ICoreWebView2Profile2::ClearBrowsingData method](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdata)
 * [ICoreWebView2Profile2::ClearBrowsingDataAll method](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataall)
 * [ICoreWebView2Profile2::ClearBrowsingDataInTimeRange method](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataintimerange)
-* [ICoreWebView2Environment10::CreateCoreWebView2CompositionControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)<!-- c#: CreateCoreWebView2CompositionControllerAsync -->
+* [ICoreWebView2Environment10::CreateCoreWebView2CompositionControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)<!-- c#: might ~=CreateCoreWebView2CompositionControllerAsync -->
 * [ICoreWebView2Environment10::CreateCoreWebView2ControllerOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controlleroptions)
 * [ICoreWebView2Environment10::CreateCoreWebView2ControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controllerwithoptions)
 
 ---
+
 
 <!-- ====================================================================== -->
 ## Performance and debugging
@@ -1544,11 +1547,11 @@ Analyze and debug performance, handle performance-related events, and manage mem
 
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
-* [CoreWebView2.MemoryUsageTargetLevel Property]()
-* [CoreWebView2.TrySuspendAsync Method]()
-   * [CoreWebView2.IsSuspended Property]()
-   * [CoreWebView2.Resume Method]()
-* [CoreWebView2.OpenTaskManagerWindow Method]()
+* [CoreWebView2.MemoryUsageTargetLevel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#memoryusagetargetlevel)
+* [CoreWebView2.TrySuspendAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#trysuspendasync)
+   * [CoreWebView2.IsSuspended Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#issuspended)
+   * [CoreWebView2.Resume Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#resume)
+* [CoreWebView2.OpenTaskManagerWindow Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#opentaskmanagerwindow)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1591,17 +1594,17 @@ Receiver:
 * [WinRT API Reference](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - same naming as .NET/C#.
 
 Open:
-* [CoreWebView2Settings.AreDevToolsEnabled Property]()
-* [CoreWebView2.OpenDevToolsWindow Method]()
+* [CoreWebView2Settings.AreDevToolsEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#aredevtoolsenabled)
+* [CoreWebView2.OpenDevToolsWindow Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#opendevtoolswindow)
 
 Call:
-* [CoreWebView2.CallDevToolsProtocolMethodAsync Method]()
-* [CoreWebView2.CallDevToolsProtocolMethodForSessionAsync Method]()
+* [CoreWebView2.CallDevToolsProtocolMethodAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#calldevtoolsprotocolmethodasync)
+* [CoreWebView2.CallDevToolsProtocolMethodForSessionAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#calldevtoolsprotocolmethodforsessionasync)
 
 Receiver:
-* [CoreWebView2.GetDevToolsProtocolEventReceiver Method]()
-   * [CoreWebView2DevToolsProtocolEventReceivedEventArgs Class]()
-   * [CoreWebView2DevToolsProtocolEventReceiver Class]()
+* [CoreWebView2.GetDevToolsProtocolEventReceiver Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#getdevtoolsprotocoleventreceiver)
+   * [CoreWebView2DevToolsProtocolEventReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2devtoolsprotocoleventreceivedeventargs)
+   * [CoreWebView2DevToolsProtocolEventReceiver Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2devtoolsprotocoleventreceiver)
 
 ##### [Win32/C++](#tab/win32cpp)
 
