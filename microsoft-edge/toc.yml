@@ -990,7 +990,7 @@
           displayName: 
 # -----------------------------------------------------------------------------
 # getstart
-        - name: Get Started tutorials and samples
+        - name: Get Started tutorials
           items:
             - name: Get started with WebView2
               href: webview2/get-started/get-started.md
@@ -1018,7 +1018,7 @@
 
 # -----------------------------------------------------------------------------
 # regular samples (in alpha order of downloaded repo directories)
-        - name: Regular samples
+        - name: Framework samples
           items:
             - name: WinUI 2 (UWP) browser app
               href: webview2/samples/webview2_sample_uwp.md

@@ -12,13 +12,15 @@ ms.date: 07/11/2022
 
 <!-- delete article? purely rely on TOC & details in articles?  not yet - this redesigned .md file might be overhead to maintain, and ult'ly not needed, but need to see this presentation/org'n before deleting this .md file -->
 
+There's a 1-to-1 correspondence between articles in this documentation and Readme files in the WebView2Samples repo (in almost all cases).  The Readme which corresponds to the present top-level article is [Readme: WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples#readme).
+
 
 <!-- ====================================================================== -->
 ## Get Started tutorials
 
 For each Get Started tutorial, there's a regular article.  For most Get Started tutorials, there's also a Readme and a completed project (directory, solution) in the WebView2Samples repo.
 
-| Platform | Article | Sample |
+| Framework | Article | Sample |
 |---|---|---|
 | WinUI 2 (UWP) | [Get started with WebView2 in WinUI 2 (UWP) apps](get-started/winui2.md) | n/a |
 | WinUI 3 (Windows App SDK) | [Get started with WebView2 in WinUI 3 (Windows App SDK) apps](get-started/winui.md) | [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted) |
@@ -28,11 +30,11 @@ For each Get Started tutorial, there's a regular article.  For most Get Started 
 
 
 <!-- ====================================================================== -->
-## Regular samples
+## Framework samples
 
-For each regular (platform) sample in the WebView2Samples repo, there's an article in the regular docs, as well as a Readme, directory, and solution file in the repo.
+For each framework sample in the WebView2Samples repo, there's an article in the regular docs, as well as a Readme, directory, and solution file in the repo.
 
-| Platform | Article | Sample |
+| Framework | Article | Sample |
 |---|---|---|
 | WinUI 2 (UWP) | [WinUI 2 (UWP) browser app](samples/webview2_sample_uwp.md) | [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) |
 | WinUI 3 (Windows App SDK) | n/a | n/a |
