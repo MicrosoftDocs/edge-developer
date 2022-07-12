@@ -12,7 +12,7 @@ ms.date: 07/06/2022
 
 The Microsoft Edge WebView2 control enables you to host web content in your application using Chromium-based Microsoft Edge as the rendering engine.
 
-WebView2 is available for the following frameworks and programming languages:
+WebView2 is available for the following frameworks (or platforms) and programming languages:
 
 * .NET
    * [Core/C#](/dotnet/api/microsoft.web.webview2.core)
@@ -24,7 +24,7 @@ WebView2 is available for the following frameworks and programming languages:
    * [COM Interop/C++](/microsoft-edge/webview2/reference/winrt/interop/index)
 
 * WinRT for WinUI 3 (Windows App SDK)
-   * [Microsoft.UI.Xaml.Controls.WebView2 Class](https://docs.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2)
+   * [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2)
       * [Spec: WebView2 Xaml control](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 -->
 
 * [Win32/C++](/microsoft-edge/webview2/reference/win32/index)
