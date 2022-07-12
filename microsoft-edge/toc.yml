@@ -991,29 +991,29 @@
               displayName: Sample Code for WebView2  # top-of-page title
 
 # in alpha order of downloaded repo directories
-            - name: WebView2 control and API samples
+            - name: WebView2 sample apps
               items:
-                - name: WinUI 2 (UWP) browser app
+                - name: WinUI 2 (UWP) sample app
                   href: webview2/samples/webview2_sample_uwp.md
                   displayName: webview2_sample_uwp  # repo dir name
 
-                - name: Win32 C++ app
+                - name: Win32 sample app
                   href: webview2/samples/webview2apissample.md
                   displayName: WebView2APISample, SampleApps  # repo dir names
 
-                - name: Win32 C++ app with Visual Composition
+                - name: Win32 sample app with Visual Composition
                   href: webview2/samples/webview2samplewincomp.md
                   displayName: WebView2SampleWinComp  # repo dir name
 
-                - name: WinForms browser app
+                - name: WinForms sample app
                   href: webview2/samples/webview2windowsformsbrowser.md
                   displayName: WebView2WindowsFormsBrowser  # repo dir name
 
-                - name: WPF .NET browser app
+                - name: WPF sample app
                   href: webview2/samples/webview2wpfbrowser.md
                   displayName: WebView2WpfBrowser  # repo dir name
 
-                - name: Chrome DevTools Protocol extension in a WPF app
+                - name: WPF sample app with CDP extension
                   href: webview2/samples/wv2cdpextensionwpfsample.md
                   displayName: WV2CDPExtensionWPFSample  # repo dir name
 

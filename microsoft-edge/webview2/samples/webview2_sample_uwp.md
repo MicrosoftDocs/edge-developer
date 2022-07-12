@@ -1,17 +1,16 @@
 ---
-title: "WebView2 sample: WinUI 2 (UWP) browser app"
+title: WinUI 2 (UWP) sample app
 description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a UWP WinUI 2 app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 07/12/2022
 ---
-# WebView2 sample: WinUI 2 (UWP) browser app
-<!-- old title:
-# WebView2 sample: UWP WinUI 2 browser app
--->
+# WinUI 2 (UWP) sample app
+
+<!-- TODO: check rendered article: from prerel to stable -->
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinUI 2 (UWP) app.
 
@@ -21,9 +20,7 @@ Directory &amp; .sln: **webview2_sample_uwp/webview2_sample_uwp.sln**.
 <!-- ====================================================================== -->
 ## Step 1 - View the Readme
 
-The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
-
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#readme).  Then return to this page and continue the steps below.
+1. In a separate window or tab, briefly read the rendered README.md file for this project at GitHub: [README file for webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#readme).  Then return to this page and continue the steps below.
 
    * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#prerequisites)
 
@@ -89,47 +86,9 @@ Now that the project is open, install or update NuGet packages for the project.
 
 
 <!-- ====================================================================== -->
-## Step 8 - Install or update the prerelease WebView2 SDK
+## Step 9 - Install or update the Microsoft.UI.Xaml package (WinUI 2 SDK)
 
-Install or update the _prerelease_ WebView2 SDK for the project, as follows:
-
-1. In Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
-
-   The **NuGet Package Manager** panel opens in Visual Studio.
-
-1. In the **NuGet Package Manager**, click the **Browse** tab.
-
-1. To the right of the search text box, select the **Include prerelease** check box.
-
-1. In the search text box, enter **Microsoft.Web.WebView2**.
-
-   The **Microsoft.Web.WebView2** card appears in the search results.
-
-1. Click the **Microsoft.Web.WebView2** card below the search box.
-
-1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected:
-
-   ![NuGet Package Manager with WebView2 SDK prerelease selected.](media/webview2_sample_uwp-pkg-mgr-prerelease-webview2.png)
-
-   _The above image is from another project, but is similar._
-
-1. Click the **Install** (or **Update**) button.
-
-   The **Preview Changes** dialog box appears:
-
-   ![The Preview Changes dialog box for the WebView2 NugGet package.](media/webview2_sample_uwp-webview2-pkg-preview-changes.png)
-
-   _The above image is from another project, but is similar._
-
-1. Click the **OK** button.
-
-The WebView2 SDK is now installed for this project.
-
-
-<!-- ====================================================================== -->
-## Step 9 - Install or update the prerelease Microsoft.UI.Xaml package (WinUI 2 SDK)
-
-Next, install or update the _prerelease_ **Microsoft.UI.Xaml** package.  Microsoft.UI.Xaml is WinUI 2, as follows:
+Next, install or update the **Microsoft.UI.Xaml** package.  Microsoft.UI.Xaml is WinUI 2, as follows:
 
 1. If the **NuGet Package Manager** panel isn't open: in Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
 
@@ -137,23 +96,21 @@ Next, install or update the _prerelease_ **Microsoft.UI.Xaml** package.  Microso
 
 1. In the **NuGet Package Manager**, click the **Browse** tab.
 
-1. Select the **Include prerelease** check box.
+1. Clear the **Include prerelease** check box.
 
 1. In the **Search** box, enter **Microsoft.UI.Xaml**, and then select the **Microsoft.UI.Xaml** card below the search box.
 
-1. On the right, make sure that the **Version** is **Latest prerelease**.
+1. On the right, make sure that the **Version** is **Latest stable**.
 
 1. Click the  **Install** (or **Update**) button:
 
    ![The NuGet package manager to install Microsoft.UI.Xaml.](media/webview2_sample_uwp-nuget-package-ui-xaml.png)
-
-   _Image borrowed from another project.  To zoom, right-click > **Open image in new tab**._
+   <!-- TODO: update capture from prerelease to stable -->
 
    The **Preview Changes** dialog box appears:
 
    ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package.](media/webview2_sample_uwp-preview-changes-ui-xaml-pkg.png)
-
-   _Image borrowed from another project._
+   <!-- TODO: update capture from prerelease to stable -->
 
 1. Click the **OK** button.
 
@@ -166,6 +123,7 @@ Next, install or update the _prerelease_ **Microsoft.UI.Xaml** package.  Microso
    ![The readme.txt file after installing the Microsoft.UI.Xaml package, reports that you installed the WinUI NuGet package.](media/webview2_sample_uwp-readme-winui-pkg.png)
 
    _Image borrowed from another project._
+   <!-- TODO: update capture, remove note -->
 
    The readme lists some lines of code that are similar to what we'll add.
 
@@ -180,8 +138,6 @@ Next, install or update the _prerelease_ **Microsoft.UI.Xaml** package.  Microso
    *  **Microsoft.Web.WebView2 - Prerelease**
 
    ![The installed prerelease WinUI 2 (Microsoft.UI.Xaml) package and prerelease WebView2 SDK package.](media/webview2_sample_uwp-installed-pkgs.png)
-
-   _To zoom, right-click > **Open image in new tab**._
 
 1. Close the **NuGet Package Manager** window.
 
@@ -226,8 +182,6 @@ At the top of Visual Studio, set the build target, as follows:
 1. In the Visual Studio code editor, inspect the code:
 
    ![MainPage.xaml in Visual Studio.](media/webview2_sample_uwp-mainpage-xaml.png)
-
-   _To zoom, right-click > **Open image in new tab**._
 
 
 <!-- ====================================================================== -->

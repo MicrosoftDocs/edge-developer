@@ -374,7 +374,7 @@ All platforms/languages:
 ## See also
 
 Local pages:
-* [WebView2 sample: WinUI 2 (UWP) browser app](../samples/webview2_sample_uwp.md) - a detailed walkthrough article of how to build and run the WinUI 2 WebView2 sample.
+* [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - a detailed walkthrough article of how to build and run the WinUI 2 WebView2 sample.
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)

@@ -421,7 +421,7 @@ General articles:
 
 Sample:
 * [WebView2Samples > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - WebView2 UWP WinUi2 browser.
-* [WebView2 sample: WinUI 2 (UWP) browser app](../samples/webview2_sample_uwp.md) - General walkthrough of how to download, compile, and run the sample.
+* [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - General walkthrough of how to download, compile, and run the sample.
 * [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md) - Tutorial to download, compile, and run the sample.
 
 API Reference:
