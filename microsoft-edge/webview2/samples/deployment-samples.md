@@ -20,6 +20,6 @@ For each deployment sample in the WebView2Samples repo, there's an article in th
 
 | Article | Sample |
 |---|---|
-| [WebView2 Deployment Visual Studio installer](samples/wv2deploymentvsinstallersample.md) | [WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentVSInstallerSample) |
-| [WiX Burn Bundle to deploy the Runtime](samples/wv2deploymentwixburnbundlesample.md) | [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample) |
-| [WiX Custom Action to deploy the Runtime](samples/wv2deploymentwixcustomactionsample.md) | [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample) |
+| [WebView2 Deployment Visual Studio installer](wv2deploymentvsinstallersample.md) | [WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentVSInstallerSample) |
+| [WiX Burn Bundle to deploy the Runtime](wv2deploymentwixburnbundlesample.md) | [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample) |
+| [WiX Custom Action to deploy the Runtime](wv2deploymentwixcustomactionsample.md) | [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample) |
