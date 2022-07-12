@@ -1,5 +1,5 @@
 ---
-title: "WebView2 sample: Chrome DevTools Protocol extension in a WPF app"
+title: Chrome DevTools Protocol extension in a WPF app
 description: This WebView2 sample demonstrates how to use the DevTools Protocol in a WPF app by using the WebView2 CDP extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
 ---
-# WebView2 sample: Chrome DevTools Protocol extension in a WPF app
+# Chrome DevTools Protocol extension in a WPF app
 
 This WebView2 sample demonstrates how to use the WebView2 CDP extension to use the Chrome DevTools Protocol in a WPF app.
 
