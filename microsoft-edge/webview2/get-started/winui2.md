@@ -25,6 +25,8 @@ WinUI 2 supports UWP only.  These controls are backward-compatible.
 
 Follow the major Step sections in sequence, below.
 
+<!-- skip h3 -->
+
 
 <!-- ====================================================================== -->
 ## Step 1 - Download the WebView2 Runtime
@@ -286,7 +288,7 @@ Now you are ready to add WebView2 code to the project.  First, add a namespace r
 -->
 
 
-### Build and test the WebView2 project
+#### Build and test the WebView2 project
 
 <!-- resume here -->
 1. Click **Debug** > **Start Debugging**.  The app window opens, briefly showing the WebView2 WebUI grid:
@@ -342,7 +344,7 @@ Package summary:
 ## WinUI 2 WebView2 special considerations
 
 
-### SmartScreen
+#### SmartScreen
 
 WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreoverview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
 
@@ -351,7 +353,7 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) is initially called.
 
 
-### API limitations
+#### API limitations
 
 The following interfaces aren't accessible in WinUI 2:
 
