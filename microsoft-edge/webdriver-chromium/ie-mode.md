@@ -314,7 +314,7 @@ After the `click` method is called on a button that opens a new window, the test
 ```java
 int initialHandleCount = driver.getWindowHandles().size();
 driver.findElement(By.id("<Id of the button that will open a new window>")).click();        
-Set<string> newHandles = driver.getWindowHandles();
+Set<String> newHandles = driver.getWindowHandles();
 while (newHandles.size() == initialHandleCount) {
     newHandles = driver.getWindowHandles();
 }

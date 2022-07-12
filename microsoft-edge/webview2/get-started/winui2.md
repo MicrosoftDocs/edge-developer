@@ -310,12 +310,12 @@ The WebView2 WinUI 2 (UWP) control is in development.  The following features ha
         * Depending on the user's OS, downloaded files will be downloaded to different folders. For Windows 11, the downloaded files will appear in a subfolder with the app package's name in the Downloads folder. For OS's below Windows 11, the downloaded files will appear in a subfolder named WebView2Downloads within this app package's subfolder in the Downloads folder.
         * Additionally, saving files via Save As is functional and enabled for UWP WebView2. The files will be saved in the respective folder the user selects.
 *  Autofill UI.
-*  Print to PDF.
-*  Default printing is disabled, however developers may work around this by using CapturePreviewAsync (though this only captures the current viewport).
+*  Adding COM Objects (WinRT `AddHostObject`).
+*  Playready DRM.
+*  Service Workers on Windows devices before 20H2.
 
 Package summary:
 * [Overview of the NuGet package for Microsoft.UI.Xaml](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
-
 
 ## WinUI WebView2 special considerations
 
