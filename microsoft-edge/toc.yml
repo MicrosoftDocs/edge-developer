@@ -996,23 +996,23 @@
               href: webview2/get-started/get-started.md
               displayName: GettingStartedGuides  # repo dir name
 
-            - name: Get started with WebView2 in WinUI 2 (UWP) apps
+            - name: WinUI 2 (UWP)
               href: webview2/get-started/winui2.md
               displayName: Get started with WebView2 in WinUI 2 (UWP) apps  # no repo dir exists  # top-of-page title
 
-            - name: Get started with WebView2 in WinUI 3 (Windows App SDK) apps
+            - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
               displayName: WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
 
-            - name: Get started with WebView2 in WPF apps
+            - name: WPF
               href: webview2/get-started/wpf.md
               displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
 
-            - name: Get started with WebView2 in WinForms apps
+            - name: WinForms
               href: webview2/get-started/winforms.md
               displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
 
-            - name: Get started with WebView2 in Win32 apps
+            - name: Win32
               href: webview2/get-started/win32.md
               displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
 
@@ -1020,27 +1020,27 @@
 # regular samples (in alpha order of downloaded repo directories)
         - name: Framework samples
           items:
-            - name: WinUI 2 (UWP) browser app
+            - name: WinUI 2 (UWP)
               href: webview2/samples/webview2_sample_uwp.md
               displayName: webview2_sample_uwp  # repo dir name
 
-            - name: WPF .NET browser app
+            - name: WPF
               href: webview2/samples/webview2wpfbrowser.md
               displayName: WebView2WpfBrowser  # repo dir name
 
-            - name: WPF app with CDP extension
+            - name: WPF with CDP
               href: webview2/samples/wv2cdpextensionwpfsample.md
               displayName: WV2CDPExtensionWPFSample  # repo dir name
 
-            - name: WinForms browser app
+            - name: WinForms
               href: webview2/samples/webview2windowsformsbrowser.md
               displayName: WebView2WindowsFormsBrowser  # repo dir name
 
-            - name: Win32 C++ app
+            - name: Win32
               href: webview2/samples/webview2apissample.md
               displayName: WebView2APISample, SampleApps  # repo dir names
 
-            - name: Win32 C++ app with Visual Composition
+            - name: Win32 with Visual Composition
               href: webview2/samples/webview2samplewincomp.md
               displayName: WebView2SampleWinComp  # repo dir name
 
