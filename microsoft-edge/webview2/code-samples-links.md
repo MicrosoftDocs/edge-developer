@@ -18,21 +18,21 @@ ms.date: 07/11/2022
 
 For each Get Started tutorial, there's a regular article.  For most Get Started tutorials, there's also a Readme and a completed project (directory, solution) in the WebView2Samples repo.
 
-| Platform | Article | Readme/directory/sample |
+| Platform | Article | Sample |
 |---|---|---|
 | WinUI 2 (UWP) | [Get started with WebView2 in WinUI 2 (UWP) apps](get-started/winui2.md) | n/a |
 | WinUI 3 (Windows App SDK) | [Get started with WebView2 in WinUI 3 (Windows App SDK) apps](get-started/winui.md) | [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted) |
 | WPF | [Get started with WebView2 in WPF apps](get-started/wpf.md) | [WPF_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted) |
-| WinForms | [Get started with WebView2 in WinForms apps](get-started/winforms.md) | [WinForms_GettingStarted]()https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted |
+| WinForms | [Get started with WebView2 in WinForms apps](get-started/winforms.md) | [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) |
 | Win32 | [Get started with WebView2 in Win32 apps](get-started/win32.md) | [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) |
 
 
 <!-- ====================================================================== -->
 ## Regular samples
 
-For each regular platform sample, there's a regular article, and a Readme and a project (directory, solution) in the WebView2Samples repo.
+For each regular (platform) sample in the WebView2Samples repo, there's an article in the regular docs, as well as a Readme, directory, and solution file in the repo.
 
-| Platform | Article | Readme/directory/sample |
+| Platform | Article | Sample |
 |---|---|---|
 | WinUI 2 (UWP) | [WinUI 2 (UWP) browser app](samples/webview2_sample_uwp.md) | [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) |
 | WinUI 3 (Windows App SDK) | n/a | n/a |
@@ -46,10 +46,10 @@ For each regular platform sample, there's a regular article, and a Readme and a 
 <!-- ====================================================================== -->
 ## Deployment samples
 
-For each deployment sample, there's a regular article, and a Readme and a project (directory, solution) in the WebView2Samples repo.
+For each deployment sample in the WebView2Samples repo, there's an article in the regular docs, as well as a Readme, directory, and solution file in the repo.
 
-| Article | Readme/directory/sample |
-|---|---|---|
-| [WebView2 Deployment Visual Studio installer](samples/wv2deploymentvsinstallersample.md) | [WV2DeploymentVSInstallerSample]() |
-| [WiX Burn Bundle to deploy the Runtime](samples/wv2deploymentwixburnbundlesample.md) | [WV2DeploymentWiXBurnBundleSample]() |
-| [WiX Custom Action to deploy the Runtime](samples/wv2deploymentwixcustomactionsample.md) | [WV2DeploymentWiXCustomActionSample]() |
+| Article | Sample |
+|---|---|
+| [WebView2 Deployment Visual Studio installer](samples/wv2deploymentvsinstallersample.md) | [WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentVSInstallerSample) |
+| [WiX Burn Bundle to deploy the Runtime](samples/wv2deploymentwixburnbundlesample.md) | [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample) |
+| [WiX Custom Action to deploy the Runtime](samples/wv2deploymentwixcustomactionsample.md) | [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample) |
