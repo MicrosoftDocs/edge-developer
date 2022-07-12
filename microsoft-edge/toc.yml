@@ -985,9 +985,6 @@
           href: webview2/how-to/machine-setup.md
           displayName: 
 
-        - name: List of WebView2 tutorials and samples
-          href: webview2/code-samples-links.md
-          displayName: 
 # -----------------------------------------------------------------------------
 # getstart
         - name: Get Started tutorials
@@ -1020,6 +1017,10 @@
 # regular samples (in alpha order of downloaded repo directories)
         - name: Framework samples
           items:
+            - name: Framework samples for WebView2
+              href: webview2/code-samples-links.md
+              displayName: 
+
             - name: WinUI 2 (UWP)
               href: webview2/samples/webview2_sample_uwp.md
               displayName: webview2_sample_uwp  # repo dir name
@@ -1048,6 +1049,10 @@
 # deployment samples
         - name: Deployment samples
           items:
+            - name: Deployment samples for WebView2
+              href: webview2/samples/deployment-samples.md
+              displayName: 
+
             - name: WebView2 Deployment Visual Studio installer
               href: webview2/samples/wv2deploymentvsinstallersample.md
               displayName: WV2DeploymentVSInstallerSample  # repo dir name
