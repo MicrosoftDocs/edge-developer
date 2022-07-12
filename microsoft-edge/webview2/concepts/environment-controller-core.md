@@ -23,13 +23,19 @@ The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` clas
 
 <!-- / keep sync'd -->
 
-#### [C#](#tab/c-sharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
 * [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
 * [CoreWebView2Environment Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
 
-#### [C++](#tab/cpp)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2)
+* [CoreWebView2Controller Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller)
+* [CoreWebView2Environment Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
 * [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)
@@ -37,10 +43,11 @@ The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` clas
 
 ---
 
+
 Cross-platform API implementation: Most of the WebView2 APIs are initially developed for C++, and then most of the C++ APIs are wrapped as C# APIs.  This way, there is a consistent parallelism and equivalence across platforms and programming languages.
 
 
-### Overview of the top-level classes
+#### Overview of the top-level classes
 
 Overview of:
 * `CoreWebView2Environment`
