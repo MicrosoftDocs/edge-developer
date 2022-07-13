@@ -1,20 +1,34 @@
 ---
 title: WinUI 2 (UWP) sample app
-description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a UWP WinUI 2 app.
+description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinUI 2 (UWP) app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/12/2022
+ms.date: 07/13/2022
 ---
 # WinUI 2 (UWP) sample app
 
-<!-- TODO: check rendered article: from prerel to stable -->
+<!--
+spelling conventions:
+"WinUI 2" https://docs.microsoft.com/en-us/windows/apps/winui/winui2/
+-->
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinUI 2 (UWP) app.
 
-Directory &amp; .sln: **webview2_sample_uwp/webview2_sample_uwp.sln**.
+
+#### Sample name
+
+**webview2_sample_uwp**; the repo directory and Solution file are: **webview2_sample_uwp/webview2_sample_uwp.sln**.
+
+
+#### Installed NuGet packages
+
+To demonstrate the latest features, this sample in the WebView2Samples repo is set up to use a pre-release version of the WinUI 2 SDK (listed as **Microsoft.UI.Xaml** in NuGet Package Manager), rather than a Stable version.  That SDK includes a compatible version of the WebView2 SDK, as a dependency of **Microsoft.UI.Xaml**.  This sample includes the following NuGet packages:
+
+*  **Microsoft.NETCore.UniversalWindowsPlatform**
+*  **Microsoft.UI.Xaml - Prerelease**
 
 
 <!-- ====================================================================== -->
@@ -56,7 +70,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 5 - Open .sln in Visual Studio
+## Step 5 - Open the solution in Visual Studio
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
@@ -74,43 +88,70 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 7 - View the opened project
+## Step 7 - Build and run the project using the initial NuGet packages
 
 Solution Explorer shows the **webview2_sample_uwp** project:
 
 ![The webview2_sample_uwp sample opened in Visual Studio in Solution Explorer.](media/webview2_sample_uwp-in-solution-explorer.png)
 
-_To zoom, right-click > **Open image in new tab**._
+Build and run the project, using the versions of the NuGet packages that were installed in the sample from the repo:
 
-Now that the project is open, install or update NuGet packages for the project.
+1. In the **Solution Configurations** dropdown list, select a configuration, such as **Debug**.
+
+1. In the **Solution Platforms** dropdown list, select a platform, such as **x64**.
+
+   ![Setting the build target at the top of Visual Studio.](media/webview2_sample_uwp-set-build-target.png)
+
+1. In **Solution Explorer**, right-click the **webview2_sample_uwp** project, and then select **Build**.
+
+   The project builds.
+
+1. Select **Debug** > **Start Debugging** (`F5`).
+
+   An empty grid window initially appears for a moment:
+
+   ![The webview2_sample_uwp project running, with initial empty grid.](media/webview2_sample_uwp-empty-grid.png)
+
+   The sample app window then displays webpage content:
+
+   ![The webview2_sample_uwp project running, displaying webpage content.](media/webview2_sample_uwp-webpage-content.png)
+
+1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
+
+
+Next, update the NuGet packages for the project, per the following sections.
 
 
 <!-- ====================================================================== -->
-## Step 9 - Install or update the Microsoft.UI.Xaml package (WinUI 2 SDK)
+## Step 8 - Update the NuGet packages
 
-Next, install or update the **Microsoft.UI.Xaml** package.  Microsoft.UI.Xaml is WinUI 2, as follows:
+To demonstrate the latest features, this sample in the WebView2Samples repo is set up to use a pre-release version of the WinUI 2 SDK (listed as **Microsoft.UI.Xaml** in NuGet Package Manager).  That SDK includes a compatible pre-release or release version of the WebView2 SDK.  WebView2 SDK is not explicitly listed in NuGet Package Manager, though it is listed separately in the Preview Changes dialog box.
 
-1. If the **NuGet Package Manager** panel isn't open: in Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
+Next, check which version of the WinUI 2 SDK is installed in the project, and update the NuGet packages to the latest pre-release version:
+
+1. In Visual Studio, in Solution Explorer, right-click the **webview2_sample_uwp** project (not the solution node above it), and then select **Manage NuGet Packages**.
 
    The **NuGet Package Manager** panel opens in Visual Studio.
 
-1. In the **NuGet Package Manager**, click the **Browse** tab.
+1. In the **NuGet Package Manager**, click the **Installed** tab.
 
-1. Clear the **Include prerelease** check box.
+1. Select the **Include prerelease** check box.
 
-1. In the **Search** box, enter **Microsoft.UI.Xaml**, and then select the **Microsoft.UI.Xaml** card below the search box.
+   A pre-release version of the **Microsoft.UI.Xaml** package is listed, indicating the WinUI 2 SDK.  That package includes a pre-release version of the WebView2 SDK.  **Microsoft.Web.WebView2** is listed in the **Dependencies** section of the **Microsoft.UI.Xaml** package.
 
-1. On the right, make sure that the **Version** is **Latest stable**.
+1. In the **NuGet Package Manager**, click the **Updates** tab.
 
-1. Click the  **Install** (or **Update**) button:
+1. Click the **Microsoft.UI.Xaml** card on the left.
+
+1. In the **Version** text box, make sure **Latest prerelease** is selected.
+
+1. Click the **Update** button on the right:
 
    ![The NuGet package manager to install Microsoft.UI.Xaml.](media/webview2_sample_uwp-nuget-package-ui-xaml.png)
-   <!-- TODO: update capture from prerelease to stable -->
 
-   The **Preview Changes** dialog box appears:
+   After getting the latest packages, which can take a few minutes, the **Preview Changes** dialog box appears:
 
    ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package.](media/webview2_sample_uwp-preview-changes-ui-xaml-pkg.png)
-   <!-- TODO: update capture from prerelease to stable -->
 
 1. Click the **OK** button.
 
@@ -122,48 +163,40 @@ Next, install or update the **Microsoft.UI.Xaml** package.  Microsoft.UI.Xaml is
 
    ![The readme.txt file after installing the Microsoft.UI.Xaml package, reports that you installed the WinUI NuGet package.](media/webview2_sample_uwp-readme-winui-pkg.png)
 
-   _Image borrowed from another project._
-   <!-- TODO: update capture, remove note -->
-
    The readme lists some lines of code that are similar to what we'll add.
+
+1. Update the **Microsoft.NETCore.UniversalWindowsPlatform** NuGet package, using similar steps.
+
+   After getting the latest UWP packages, which can take a few minutes, the **Preview Changes** dialog box appears:
+
+   ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package.](webview2-sample-uwp-images/preview-changes-uwp-pkg.png)
 
 1. Select **File** > **Save All**.
 
    You've now installed the Microsoft.UI.Xaml package, which is WinUI (WinUI 2), for your project.  Check the resulting installed packages, as follows:
 
-1. In NuGet Package Manager, click the **Installed** tab, and make sure the three packages are listed:
+1. In NuGet Package Manager, click the **Installed** tab, and inspect the updated packages:
 
    *  **Microsoft.NETCore.UniversalWindowsPlatform**
    *  **Microsoft.UI.Xaml - Prerelease**
-   *  **Microsoft.Web.WebView2 - Prerelease**
 
-   ![The installed prerelease WinUI 2 (Microsoft.UI.Xaml) package and prerelease WebView2 SDK package.](media/webview2_sample_uwp-installed-pkgs.png)
+   ![The updated installed packages.](media/webview2_sample_uwp-installed-pkgs.png)
 
 1. Close the **NuGet Package Manager** window.
 
 
 <!-- ====================================================================== -->
-## Step 10 - Build the project
+## Step 9 - Build and run the project with updated packages
 
-At the top of Visual Studio, set the build target, as follows:
-
-1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
-
-1. In the **Solution Platforms** dropdown list, select **Any CPU** (or a specific platform if **Any CPU** isn't listed).<!--Any CPU is not available.-->
-
-   ![Setting the build target at the top of Visual Studio.](media/webview2_sample_uwp-set-build-target.png)
+Now that the NuGet packages have been updated, build and run the project again:
 
 1. In **Solution Explorer**, right-click the **webview2_sample_uwp** project, and then select **Build**.
 
-   This builds the project file `webview2_sample_uwp.csproj` (per **Build** > **Rebuild Solution** > **Output**), or `WebView2_UWP.csproj` (per Readme.md).
-
-
-<!-- ====================================================================== -->
-## Step 11 - Run (debug) the project
+   The project builds.
 
 1. Select **Debug** > **Start Debugging** (`F5`).
 
-   An empty grid window initially appears:
+   An empty grid window initially appears for a moment:
 
    ![The webview2_sample_uwp project running, with initial empty grid.](media/webview2_sample_uwp-empty-grid.png)
 
@@ -171,13 +204,11 @@ At the top of Visual Studio, set the build target, as follows:
 
    ![The webview2_sample_uwp project running, displaying webpage content.](media/webview2_sample_uwp-webpage-content.png)
 
-1. Use the sample app; see [README file for webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#readme).
-
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
 
 <!-- ====================================================================== -->
-## Step 12 - Inspect the code
+## Step 10 - Inspect the code
 
 1. In the Visual Studio code editor, inspect the code:
 

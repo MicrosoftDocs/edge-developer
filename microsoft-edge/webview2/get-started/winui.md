@@ -339,7 +339,7 @@ In this section, you add code to import the WebView2 Core library.
 1.  These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
 
 
-### WinRT CoreWebView2 object availability
+#### WinRT CoreWebView2 object availability
 
 The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  For a list of available APIs, see:
 * WinUI 3 API Reference (Windows App SDK) - [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2) - in API reference for Windows desktop apps > WinRT APIs.
@@ -394,7 +394,7 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## WinUI 3 WebView2 special considerations
 
-### SmartScreen
+#### SmartScreen
 
 WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
 
@@ -403,7 +403,7 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.source#microsoft-ui-xaml-controls-webview2-source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async#microsoft-ui-xaml-controls-webview2-ensurecorewebview2async) is initially called.
 
 
-### API limitations
+#### API limitations
 
 The following interfaces aren't accessible in WinUI 3:
 
