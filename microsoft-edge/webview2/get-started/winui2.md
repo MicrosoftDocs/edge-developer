@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/11/2022
+ms.date: 07/13/2022
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps
 
@@ -29,26 +29,7 @@ Follow the major Step sections in sequence, below.
 
 
 <!-- ====================================================================== -->
-## Step 1 - Download the WebView2 Runtime
-<!-- todo: is this major step needed & correct? -->
-
-For full API compatibility of the **Microsoft.UI.Xaml** (WinUI 2) package and WebView2, this tutorial uses a release version of the WebView2 SDK, together with the WebView2 Runtime.  (This tutorial doesn't use the other supported combination, which is a _prerelease_ version of WebView2 SDK together with a preview channel of Microsoft Edge.)
-
-1. In a new window or tab, go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) at developer.microsoft.com, and then scroll down to the "Download the WebView2 Runtime" section.
-
-1. In the **Evergreen Bootstrapper** section, click the **Get the Link** button.  The page opens.
-
-1. Click the **Accept and Get Link** button.  The **Thank you** page opens.
-
-1. Click the **Copy** button to the right of the link string.  You can paste this WebView2 Evergreen Bootstrapper link in a safe place, or click this button again later when you need this link string.<!-- 2022-07-08 & 2022-07-11: https://go.microsoft.com/fwlink/p/?LinkId=2124703 -->
-
-If you need more information, see [Install the WebView2 Runtime](../how-to/machine-setup.md#install-the-webview2-runtime).
-
-Continue with the steps below.
-
-
-<!-- ====================================================================== -->
-## Step 2 - Install Visual Studio
+## Step 1 - Install Visual Studio
 
 Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual Studio 2022 is supported.  Visual Studio 2017 isn't supported.
 <!-- https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.9 -->
@@ -61,7 +42,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install workloads for .NET desktop, C++ desktop, and UWP development tools
+## Step 2 - Install workloads for .NET desktop, C++ desktop, and UWP development tools
 
 1. Open Microsoft Visual Studio.  The opening option window appears:
 
@@ -86,6 +67,8 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
    ![The 'Modifying Visual Studio 2019' dialog displays cards and installation details.](media/winui2-getting-started-install-workloads.png)
 
+   If all of these components have already been installed, you can click the **Close** button, close the **Visual Studio Installer** window, and skip to the next major section of steps below.
+
 1. Click the **Modify** button.
 
    A **User Account Control** window appears, asking "Do you want to allow this app to make changes to your device?  Visual Studio Installer.  Verified publisher: Microsoft Corporation.  File origin: Hard drive on this computer.  Show more details (button)".
@@ -98,7 +81,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 1. Click the **Continue** button.
 
-   Visual Studio downloads, verified, and installs the selected packages:
+   Visual Studio downloads, verifies, and installs the selected packages:
 
    ![Visual Studio Installer working.](media/winui2-vs-installer-working.png)
 
@@ -110,7 +93,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 
 <!-- ====================================================================== -->
-## Step 4 - Create a UWP app
+## Step 3 - Create a UWP app
 
 1. If Visual Studio is open, select **File** > **New** > **Project**.  The **Create a new project** dialog box opens.
 
@@ -153,6 +136,18 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
    ![Visual Studio, containing the newly created WinUI 2 (UWP) project.](media/winui2-vs-after-new-project-created.png)
 
+
+<!-- ====================================================================== -->
+## Step 4 - Build and run the empty project
+
+Before adding WebView2 code, confirm that the project works and see what the empty app looks like, as follows:
+
+1. Build and run the empty project.  To do this, select **Debug** > **Start Debugging** (`F5`).
+
+   ![The empty project before adding WebView2 code](winui2-images/initial-empty-project-running.png)
+
+1. Close the app.
+
 Next, you set up this new WinUI 2 (UWP) project to host the WebView2 control and use the WebView2 API.
 
 
@@ -172,17 +167,24 @@ Next, you install the **Microsoft.UI.Xaml** package for this project.  Microsoft
 1. In the **Search** box, enter **Microsoft.UI.Xaml**, and then select the **Microsoft.UI.Xaml** card below the search box:
 
    ![The NuGet package manager to install Microsoft.UI.Xaml](media/winui2-nuget-package-ui-xaml.png)
+   <!-- TODO: update capture after 2.8 GA, show Microsoft.Web.WebView2 in Dependencies -->
 
-1. On the right, make sure that the **Version** is **Latest stable**.
+   The above image shows 2.7.1, but these instructions are actually written for 2.8 or later, for General Availability of WebView2 in the Microsoft.UI.Xaml NuGet package.
+   <!-- TODO: remove note after update image -->
 
-1. Click the  **Install** (or **Update**) button.
+   For version 2.8.0 or later, in the **Dependencies** section, **Microsoft.Web.WebView2** might be<!-- TODO: confirm after GA, change to "is" --> listed.
+
+1. On the right, make sure that the **Version** is **Latest stable**, 2.8.0 or later.
+
+1. Click the  **Install** button.
 
    The **Preview Changes** dialog box appears:
 
    ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package.](media/winui2-preview-changes-ui-xaml-pkg.png)
+   <!-- TODO: update capture after 2.8 GA, show 2.8.0 or later -->
 
-   Note: The capture shows 2.7.1, before General Availability of WebView2 in the Microsoft.UI.Xaml NuGet package.
-   <!-- todo: update to 2.8? -->
+   The above image shows 2.7.1, but these instructions are actually written for 2.8.0 or later, for General Availability of WebView2 in the Microsoft.UI.Xaml NuGet package.
+   <!-- TODO: remove note after update image -->
 
 1. Click the **OK** button.
 
@@ -202,7 +204,7 @@ You've now installed the Microsoft.UI.Xaml package, which is WinUI 2, for your p
 
 
 <!-- ====================================================================== -->
-## Step 6 - Build and run the empty project
+## Step 5 - Build and run the empty project
 
 Before adding WebView2 code, confirm that the project works and see what the empty app looks like, as follows:
 
@@ -214,43 +216,7 @@ Before adding WebView2 code, confirm that the project works and see what the emp
 
 
 <!-- ====================================================================== -->
-<!-- ## Step 7 - Install or inspect the WebView2 SDK -->
-
-<!-- The WinUI 2 SDK (Microsoft.UI.Xaml) includes the WebView2 SDK, so you don't need to do these steps in this major section.  You can skip to the next major step. -->
-
-<!-- 1. In Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
-
-   The **NuGet Package Manager** panel opens in Visual Studio.
-
-1. In the **NuGet Package Manager**, click the **Browse** tab.
-
-1. To the right of the search text box, clear the **Include prerelease** check box.
-
-1. In the search text box, enter **Microsoft.Web.WebView2**.
-
-1. Click the **Microsoft.Web.WebView2** card below the search box.
-
-1. On the right, in the **Version** dropdown list, make sure **Latest version** is selected:
-
-   ![NuGet Package Manager with WebView2 SDK selected.](media/winui2-nuget-pkg-mgr-webview2.png)
-
-1. Click the **Install** (or **Update**) button.
- -->
-   <!-- If needed, in a new window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Return from that page and continue the steps below. -->
-
-   <!-- The **Preview Changes** dialog box appears:
-
-   ![The Preview Changes dialog box for the WebView2 NugGet package.](media/winui2-webview2-pkg-preview-changes.png)
-
-1. Click the **OK** button.
-
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
-
-The WebView2 SDK is now installed or updated for this project. -->
-
-
-<!-- ====================================================================== -->
-## Step 7 - Instantiate the WebView2 control in XAML code
+## Step 6 - Instantiate the WebView2 control in XAML code
 
 Now you are ready to add WebView2 code to the project.  First, add a namespace reference for the WebView2 control, as follows:
 
@@ -281,23 +247,21 @@ Now you are ready to add WebView2 code to the project.  First, add a namespace r
     ![Preview of the WebView2 content.](media/winui2-getting-started-preview-webview2-content.png)
 
     The above image shows "control" on two lines; we recommend using the word "controls" on those lines instead.
-    <!-- todo: update capture -->
+    <!-- TODO: update capture after GA -->
 
 <!--
 1. Resize the preview grid to make it bigger.
 -->
 
 
-#### Build and test the WebView2 project
+<!-- ====================================================================== -->
+## Build and run the project containing the WebView2 control
 
-<!-- resume here -->
 1. Click **Debug** > **Start Debugging**.  The app window opens, briefly showing the WebView2 WebUI grid:
 
    ![During debugging, the WebView2 WebUI grid briefly appears.](media/winui2-getting-started-webview2-grid.png)
 
-1. After a moment, the app window shows the Bing website in the WebView2 control for WebUI 2.
-
-   The sample app with WebView2 control displays the Bing website:
+1. After a moment, the app window shows the Bing website in the WebView2 control for WebUI 2:
 
    ![The sample app displays the Bing website.](media/winui2-getting-started-webview2-with-content.png)
 
@@ -311,7 +275,7 @@ maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 -->
 <!-- ====================================================================== -->
-## Step 8 - Navigation events
+## Step 7 - Navigation events
 
 Next, learn about navigation events, which are essential for WebView2 apps.
 

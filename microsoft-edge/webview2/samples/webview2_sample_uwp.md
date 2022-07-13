@@ -25,10 +25,13 @@ This WebView2 sample demonstrates how to use the WebView2 control and WebView2 A
 
 #### Installed NuGet packages
 
-To demonstrate the latest features, this sample in the WebView2Samples repo is set up to use a pre-release version of the WinUI 2 SDK (listed as **Microsoft.UI.Xaml** in NuGet Package Manager), rather than a Stable version.  That SDK includes a compatible version of the WebView2 SDK, as a dependency of **Microsoft.UI.Xaml**.  This sample includes the following NuGet packages:
+This sample includes the following NuGet packages:
 
 *  **Microsoft.NETCore.UniversalWindowsPlatform**
-*  **Microsoft.UI.Xaml - Prerelease**
+*  **Microsoft.UI.Xaml - Prerelease** - includes Microsoft.Web.WebView2 SDK as a dependency.
+
+To demonstrate the latest features, this sample in the WebView2Samples repo is set up to use a pre-release version of the WinUI 2 SDK (listed as **Microsoft.UI.Xaml** in NuGet Package Manager), rather than a Stable version.  That SDK includes a compatible version of the WebView2 SDK, as a dependency of **Microsoft.UI.Xaml**.
+<!-- After you update the packages, the resulting WebView2 SDK might be a stable or prerelease SDK.  Per screenshots below; appears to have switched from prerelease (per repo) to stable (after local update) -->
 
 
 <!-- ====================================================================== -->
