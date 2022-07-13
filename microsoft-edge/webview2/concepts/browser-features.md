@@ -101,7 +101,10 @@ The following Microsoft Edge and Google Chrome settings webpages aren't availabl
 *  `edge://supervised-user-internals`
 *  `edge://version`
 
+<!-- ====================================================================== -->
+## Google Authentication
 
+Google Authentication is disabled in WebView2 due to a policy set by Google. You can read more about this decision from [Google's Blog](https://developers.googleblog.com/2021/06/upcoming-security-changes-to-googles-oauth-2.0-authorization-endpoint.html), and stay up-to-date on the latest in our [WebView2 GitHub Issue](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1647).
 <!-- ====================================================================== -->
 ## Additional keyboard shortcuts information
 
