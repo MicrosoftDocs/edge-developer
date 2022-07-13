@@ -92,7 +92,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 Solution Explorer shows the **webview2_sample_uwp** project:
 
-![The webview2_sample_uwp sample opened in Visual Studio in Solution Explorer.](media/webview2_sample_uwp-in-solution-explorer.png)
+![The webview2_sample_uwp sample opened in Visual Studio in Solution Explorer](media/webview2_sample_uwp-in-solution-explorer.png)
 
 Build and run the project, using the versions of the NuGet packages that were installed in the sample from the repo:
 
@@ -100,7 +100,7 @@ Build and run the project, using the versions of the NuGet packages that were in
 
 1. In the **Solution Platforms** dropdown list, select a platform, such as **x64**.
 
-   ![Setting the build target at the top of Visual Studio.](media/webview2_sample_uwp-set-build-target.png)
+   ![Setting the build target at the top of Visual Studio](media/webview2_sample_uwp-set-build-target.png)
 
 1. In **Solution Explorer**, right-click the **webview2_sample_uwp** project, and then select **Build**.
 
@@ -110,11 +110,11 @@ Build and run the project, using the versions of the NuGet packages that were in
 
    An empty grid window initially appears for a moment:
 
-   ![The webview2_sample_uwp project running, with initial empty grid.](media/webview2_sample_uwp-empty-grid.png)
+   ![The webview2_sample_uwp project running, with initial empty grid](media/webview2_sample_uwp-empty-grid.png)
 
    The sample app window then displays webpage content:
 
-   ![The webview2_sample_uwp project running, displaying webpage content.](media/webview2_sample_uwp-webpage-content.png)
+   ![The webview2_sample_uwp project running, displaying webpage content](media/webview2_sample_uwp-webpage-content.png)
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
@@ -147,21 +147,21 @@ Next, check which version of the WinUI 2 SDK is installed in the project, and up
 
 1. Click the **Update** button on the right:
 
-   ![The NuGet package manager to install Microsoft.UI.Xaml.](media/webview2_sample_uwp-nuget-package-ui-xaml.png)
+   ![The NuGet package manager to install Microsoft.UI.Xaml](media/webview2_sample_uwp-nuget-package-ui-xaml.png)
 
    After getting the latest packages, which can take a few minutes, the **Preview Changes** dialog box appears:
 
-   ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package.](media/webview2_sample_uwp-preview-changes-ui-xaml-pkg.png)
+   ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package](media/webview2_sample_uwp-preview-changes-ui-xaml-pkg.png)
 
 1. Click the **OK** button.
 
 1. The **License Acceptance** dialog box appears:
 
-   ![The 'License Acceptance' dialog box for installing the Microsoft.UI.Xaml package.](media/webview2_sample_uwp-license-acceptance-ui-xaml-pkg.png)
+   ![The 'License Acceptance' dialog box for installing the Microsoft.UI.Xaml package](media/webview2_sample_uwp-license-acceptance-ui-xaml-pkg.png)
 
 1. Click the **I Accept** button.  In Visual Studio, the `readme.txt` file is displayed, saying that you've installed the WinUI package:
 
-   ![The readme.txt file after installing the Microsoft.UI.Xaml package, reports that you installed the WinUI NuGet package.](media/webview2_sample_uwp-readme-winui-pkg.png)
+   ![The readme.txt file after installing the Microsoft.UI.Xaml package, reports that you installed the WinUI NuGet package](media/webview2_sample_uwp-readme-winui-pkg.png)
 
    The readme lists some lines of code that are similar to what we'll add.
 
@@ -169,7 +169,7 @@ Next, check which version of the WinUI 2 SDK is installed in the project, and up
 
    After getting the latest UWP packages, which can take a few minutes, the **Preview Changes** dialog box appears:
 
-   ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package.](webview2-sample-uwp-images/preview-changes-uwp-pkg.png)
+   ![The 'Preview Changes' dialog box for installing the UWP package](webview2-sample-uwp-images/preview-changes-uwp-pkg.png)
 
 1. Select **File** > **Save All**.
 
@@ -180,7 +180,7 @@ Next, check which version of the WinUI 2 SDK is installed in the project, and up
    *  **Microsoft.NETCore.UniversalWindowsPlatform**
    *  **Microsoft.UI.Xaml - Prerelease**
 
-   ![The updated installed packages.](media/webview2_sample_uwp-installed-pkgs.png)
+   ![The updated installed packages](media/webview2_sample_uwp-installed-pkgs.png)
 
 1. Close the **NuGet Package Manager** window.
 
@@ -198,11 +198,11 @@ Now that the NuGet packages have been updated, build and run the project again:
 
    An empty grid window initially appears for a moment:
 
-   ![The webview2_sample_uwp project running, with initial empty grid.](media/webview2_sample_uwp-empty-grid.png)
+   ![The webview2_sample_uwp project running, with initial empty grid](media/webview2_sample_uwp-empty-grid.png)
 
    The sample app window then displays webpage content:
 
-   ![The webview2_sample_uwp project running, displaying webpage content.](media/webview2_sample_uwp-webpage-content.png)
+   ![The webview2_sample_uwp project running, displaying webpage content](media/webview2_sample_uwp-webpage-content.png)
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
@@ -212,7 +212,7 @@ Now that the NuGet packages have been updated, build and run the project again:
 
 1. In the Visual Studio code editor, inspect the code:
 
-   ![MainPage.xaml in Visual Studio.](media/webview2_sample_uwp-mainpage-xaml.png)
+   ![MainPage.xaml in Visual Studio](media/webview2_sample_uwp-mainpage-xaml.png)
 
 
 <!-- ====================================================================== -->
