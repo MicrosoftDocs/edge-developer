@@ -18,9 +18,10 @@ spelling conventions:
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinUI 2 (UWP) app.
 
 
-#### Sample name
+#### Sample name: webview2_sample_uwp
 
-**webview2_sample_uwp**; the repo directory and Solution file are: **webview2_sample_uwp/webview2_sample_uwp.sln**.
+*  Repo directory: **webview2_sample_uwp**
+*  Solution file: **webview2_sample_uwp.sln**
 
 
 #### Installed NuGet packages
