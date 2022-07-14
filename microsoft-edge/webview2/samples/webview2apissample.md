@@ -158,7 +158,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    _To zoom, right-click > **Open image in new tab**._
 
-1. Use the sample app.  See [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme)
+1. Use the sample app.  See [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme), which is a long Readme about the code in this sample.
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 

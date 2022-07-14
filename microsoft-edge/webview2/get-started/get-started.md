@@ -12,8 +12,6 @@ ms.date: 01/24/2022
 
 These articles cover how to set up your development tools and create an initial WebView2 app, and learn about WebView2 concepts along the way.
 
-For each Get Started tutorial, there's a regular article.  For most Getting Started tutorials, there's also a completed Get Started tutorial project in the WebView2Samples repo, with a Readme.
-
 | Framework | Article | Completed project |
 |---|---|---|
 | WinUI 2 (UWP) | [Get started with WebView2 in WinUI 2 (UWP) apps](winui2.md) | n/a |
@@ -21,6 +19,8 @@ For each Get Started tutorial, there's a regular article.  For most Getting Star
 | WPF | [Get started with WebView2 in WPF apps](wpf.md) | [WPF_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted) |
 | WinForms | [Get started with WebView2 in WinForms apps](winforms.md) | [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) |
 | Win32 | [Get started with WebView2 in Win32 apps](win32.md) | [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) |
+
+For most Getting Started tutorials, there's a completed Get Started tutorial project in the WebView2Samples repo, with a Readme.
 
 
 <!-- ====================================================================== -->
@@ -30,7 +30,7 @@ For each Get Started tutorial, there's a regular article.  For most Getting Star
 * [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo), in _Set up your Dev environment for WebView2_.
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2, at `developer.microsoft.com`.
 
-The repo's top-level Readme, [WebView2Samples repo > Readme](https://github.com/MicrosoftEdge/WebView2Samples#readme), is arranged by framework or platform, and covers all three kinds of samples:
+The repo's top-level Readme, [WebView2Samples repo > Readme](https://github.com/MicrosoftEdge/WebView2Samples#readme), is arranged by framework or platform, and covers all three kinds of samples in the repo:
 *  Completed "Getting Started" tutorials.
 *  Sample apps.
 *  Deployment samples.
