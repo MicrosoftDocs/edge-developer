@@ -986,67 +986,67 @@
           displayName: 
 
 # -----------------------------------------------------------------------------
-# getstart
+# Getting Started tutorials
         - name: Getting Started tutorials
           items:
             - name: Getting Started tutorials
               href: webview2/get-started/get-started.md
               displayName: GettingStartedGuides  # repo dir name
 
-            - name: WinUI 2 (UWP)
+            - name: Get started with WinUI 2 (UWP) apps
               href: webview2/get-started/winui2.md
               displayName: Get started with WebView2 in WinUI 2 (UWP) apps  # no repo dir exists  # top-of-page title
 
-            - name: WinUI 3 (Windows App SDK)
+            - name: Get started with WinUI 3 (Windows App SDK) apps
               href: webview2/get-started/winui.md
               displayName: WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
 
-            - name: WPF
+            - name: Get started with WPF apps
               href: webview2/get-started/wpf.md
               displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
 
-            - name: WinForms
+            - name: Get started with WinForms apps
               href: webview2/get-started/winforms.md
               displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
 
-            - name: Win32
+            - name: Get started with Win32 apps
               href: webview2/get-started/win32.md
               displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
 
 # -----------------------------------------------------------------------------
-# regular samples (in alpha order of downloaded repo directories)
+# Sample apps
         - name: Sample apps
           items:
             - name: Sample apps
               href: webview2/code-samples-links.md
               displayName: 
 
-            - name: WinUI 2 (UWP)
+            - name: WinUI 2 (UWP) sample app
               href: webview2/samples/webview2_sample_uwp.md
               displayName: webview2_sample_uwp  # repo dir name
 
-            - name: WPF
+            - name: WPF sample app
               href: webview2/samples/webview2wpfbrowser.md
               displayName: WebView2WpfBrowser  # repo dir name
 
-            - name: WPF with CDP
+            - name: WPF sample app with CDP
               href: webview2/samples/wv2cdpextensionwpfsample.md
               displayName: WV2CDPExtensionWPFSample  # repo dir name
 
-            - name: WinForms
+            - name: WinForms sample app
               href: webview2/samples/webview2windowsformsbrowser.md
               displayName: WebView2WindowsFormsBrowser  # repo dir name
 
-            - name: Win32
+            - name: Win32 sample app
               href: webview2/samples/webview2apissample.md
               displayName: WebView2APISample, SampleApps  # repo dir names
 
-            - name: Win32 with Visual Composition
+            - name: Win32 sample app with Visual Composition
               href: webview2/samples/webview2samplewincomp.md
               displayName: WebView2SampleWinComp  # repo dir name
 
 # -----------------------------------------------------------------------------
-# deployment samples
+# Deployment samples
         - name: Deployment samples
           items:
             - name: Deployment samples
@@ -1057,11 +1057,11 @@
               href: webview2/samples/wv2deploymentvsinstallersample.md
               displayName: WV2DeploymentVSInstallerSample  # repo dir name
 
-            - name: WiX Burn Bundle to deploy the Runtime
+            - name: WiX Burn Bundle to deploy the WebView2 Runtime
               href: webview2/samples/wv2deploymentwixburnbundlesample.md
               displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
 
-            - name: WiX Custom Action to deploy the Runtime
+            - name: WiX Custom Action to deploy the WebView2 Runtime
               href: webview2/samples/wv2deploymentwixcustomactionsample.md
               displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
 
@@ -1228,16 +1228,6 @@
               href: webview2/webview2-api-reference.md
               displayName: functions, methods  # list relevant platforms
 
-            - name: Win32 C++
-              items:
-                - name: Win32 C++ WebView2 API conventions
-                  href: webview2/concepts/win32-api-conventions.md
-                  displayName: 
-
-                - name: Win32 C++ API Reference
-                  href: /microsoft-edge/webview2/reference/win32/index
-                  displayName: functions, methods
-
             - name: .NET
               items:
                 - name: Microsoft.Web.WebView2.Core
@@ -1254,12 +1244,22 @@
 
             - name: WinRT
               items:
-                - name: Microsoft.Web.WebView2.Core
+                - name: Microsoft.Web.WebView2.Core (C#)
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: functions, methods
 
-                - name: COM Interop
+                - name: COM Interop (C++)
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
+                  displayName: functions, methods
+
+            - name: Win32 C++
+              items:
+                - name: Win32 C++ WebView2 API conventions
+                  href: webview2/concepts/win32-api-conventions.md
+                  displayName: 
+
+                - name: Win32 C++ API Reference
+                  href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
 
         - name: Contact the WebView2 Team

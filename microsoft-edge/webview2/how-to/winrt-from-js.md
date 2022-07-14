@@ -101,7 +101,7 @@ Let's get started!
 
 In case you need more information, see detailed steps in these pages, and then continue below:
 * [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - steps to open, compile, and run the sample app.
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md) - setting up a basic WebView2 app.
+* [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md) - setting up a basic WebView2 app.
 * [GitHub > WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
 * [Set up your Dev environment for WebView2](machine-setup.md) - details about setting up prerequisites.
 
@@ -419,10 +419,9 @@ Command-line help contains similar information for the parameters of `wv2winrt.e
 General articles:
 * [Call native-side code from web-side code](hostobject.md)
 
-Sample:
-* [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - Steps to download, build, run, and update the sample.
-* [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - WebView2 UWP WinUi2 browser.
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md) - Tutorial to download, compile, and run the sample.
+Tutorial and sample:
+* [Get started with WinUI 2 (UWP) apps](../get-started/winui2.md) - Tutorial: Steps to create an app with WebView2 using a project template.
+* [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - Sample: Steps to download, build, run, and update the sample.
 
 API Reference:
 * WinRT: [CoreWebView2.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)

@@ -1,5 +1,5 @@
 ---
-title: WiX Burn Bundle to deploy Runtime
+title: WiX Burn Bundle to deploy the WebView2 Runtime
 description: A WebView2 sample demonstrating how to use a WiX Burn Bundle to deploy the WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
 ---
-# WiX Burn Bundle to deploy Runtime
+# WiX Burn Bundle to deploy the WebView2 Runtime
 
 This is a WebView2 sample demonstrating how to use a WiX Burn Bundle to deploy the WebView2 Runtime.
 
