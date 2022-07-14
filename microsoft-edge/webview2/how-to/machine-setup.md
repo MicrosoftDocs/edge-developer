@@ -6,11 +6,11 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 07/27/2022
 ---
 # Set up your Dev environment for WebView2
 
-This article covers general-purpose setup of your development environment for WebView2 development.  Some Get Started tutorials point here for preliminary setup steps, and then add platform-specific or project-specific setup steps.
+This article covers general-purpose setup of your development environment for WebView2 development.  Some Getting Started tutorials point here for preliminary setup steps, and then add platform-specific or project-specific setup steps.
 
 
 <!-- ====================================================================== -->
@@ -190,7 +190,7 @@ After you download or clone the `WebView2Samples` repo, open a `.sln` file in Vi
 
 For general, initial Dev environment setup, you can open any type of `.sln` file from the `WebView2Samples` repo:
 
-*  A platform-specific `.sln` file in a subdirectory of the `GettingStartedGuides` directory.  These match the Get Started tutorials and are completed examples that demonstrate a couple API features.
+*  A platform-specific `.sln` file in a subdirectory of the `GettingStartedGuides` directory.  These match the Getting Started tutorials and are completed examples that demonstrate a couple API features.
 
 *  The Win32 `.sln` file containing multiple platform projects, in the `SampleApps` directory.  This is a comprehensive API demonstration.
 

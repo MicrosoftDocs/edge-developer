@@ -987,9 +987,9 @@
 
 # -----------------------------------------------------------------------------
 # getstart
-        - name: Get Started tutorials
+        - name: Getting Started tutorials
           items:
-            - name: Get started with WebView2
+            - name: Getting Started tutorials
               href: webview2/get-started/get-started.md
               displayName: GettingStartedGuides  # repo dir name
 
@@ -1015,9 +1015,9 @@
 
 # -----------------------------------------------------------------------------
 # regular samples (in alpha order of downloaded repo directories)
-        - name: Framework samples
+        - name: Sample apps
           items:
-            - name: Framework samples for WebView2
+            - name: Sample apps
               href: webview2/code-samples-links.md
               displayName: 
 
@@ -1049,7 +1049,7 @@
 # deployment samples
         - name: Deployment samples
           items:
-            - name: Deployment samples for WebView2
+            - name: Deployment samples
               href: webview2/samples/deployment-samples.md
               displayName: 
 

@@ -1,20 +1,20 @@
 ---
-title: Framework samples for WebView2
-description: Framework samples for WebView2.
+title: Sample apps
+description: Sample apps for WebView2, for various frameworks or platforms including WinUI 2 (UWP), WinUI 3 (Windows App SDK), WPF, WPF with Chrome DevTools Protocol extension, WinForms, Win32/C++, and Win32 with Visual Composition.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/11/2022
+ms.date: 07/14/2022
 ---
-# Framework samples for WebView2
+# Sample apps
 
-There's a 1-to-1 correspondence between articles in this documentation and Readme files in the WebView2Samples repo (in almost all cases).  The Readme which corresponds to the present top-level article is [Readme: WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples#readme).
+Sample apps that use WebView2 are available in the **WebView2Samples** repo, for various frameworks or platforms.  For some frameworks or platforms, the samples repo contains both a completed Getting Started tutorial and a sample app.  The sample apps demonstrate more features than the completed Getting Started tutorials.
 
-For each framework sample in the WebView2Samples repo, there's an article in the regular docs, as well as a Readme, directory, and solution file in the repo.
+For each sample app in the samples repo, there's an article here.  In the samples repo, each sample has a short Readme, a directory, and a solution file.
 
-| Framework | Article | Sample |
+| Framework or platform | Article | Sample in repo |
 |---|---|---|
 | WinUI 2 (UWP) | [WinUI 2 (UWP) browser app](samples/webview2_sample_uwp.md) | [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) |
 | WinUI 3 (Windows App SDK) | n/a | n/a |
@@ -23,3 +23,12 @@ For each framework sample in the WebView2Samples repo, there's an article in the
 | WinForms | [WinForms browser app](samples/webview2windowsformsbrowser.md) | [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser) |
 | Win32 | [Win32 C++ app](samples/webview2apissample.md) | [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) |
 | Win32 with Visual Composition | [Win32 C++ app with Visual Composition](samples/webview2samplewincomp.md) | [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp) |
+
+
+<!-- ====================================================================== -->
+## See also
+
+The repo's top-level Readme, [WebView2Samples repo > Readme](https://github.com/MicrosoftEdge/WebView2Samples#readme), is arranged by framework or platform, and covers all three kinds of samples:
+*  Completed "Getting Started" tutorials.
+*  Sample apps.
+*  Deployment samples.
