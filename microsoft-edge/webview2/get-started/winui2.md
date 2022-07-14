@@ -204,18 +204,6 @@ You've now installed the Microsoft.UI.Xaml package, which is WinUI 2, for your p
 
 
 <!-- ====================================================================== -->
-## Step 5 - Build and run the empty project
-
-Before adding WebView2 code, confirm that the project works and see what the empty app looks like, as follows:
-
-1. Build and run the empty project.  To do this, select **Debug** > **Start Debugging** (`F5`).
-
-   ![The empty project before adding WebView2 code](winui2-images/initial-empty-project-running.png)
-
-1. Close the app.
-
-
-<!-- ====================================================================== -->
 ## Step 6 - Instantiate the WebView2 control in XAML code
 
 Now you are ready to add WebView2 code to the project.  First, add a namespace reference for the WebView2 control, as follows:
