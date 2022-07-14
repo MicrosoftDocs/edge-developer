@@ -243,7 +243,7 @@ Now you are ready to add WebView2 code to the project.  First, add a namespace r
 
 
 <!-- ====================================================================== -->
-## Build and run the project containing the WebView2 control
+## Step 7 - Build and run the project containing the WebView2 control
 
 1. Click **Debug** > **Start Debugging**.  The app window opens, briefly showing the WebView2 WebUI grid:
 
@@ -255,6 +255,8 @@ Now you are ready to add WebView2 code to the project.  First, add a namespace r
 
 1. In Visual Studio, click **Debug** > **Stop Debugging** to close the app window.
 
+Congratulations, you built your first WebView2 app!
+
 Now you can change the content of the WebView2 control to add your own content.
 
 
@@ -263,15 +265,11 @@ maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 -->
 <!-- ====================================================================== -->
-## Step 7 - Navigation events
+## Learn about navigation events
 
-Next, learn about navigation events, which are essential for WebView2 apps.
+Next, learn about navigation events, which are essential for WebView2 apps.  The app initially navigates to `https://bing.com`.
 
-The app initially navigates to `https://bing.com`.
-
-1. In a new window or tab, read [Navigation events for WebView2 apps](../concepts/navigation-events.md), and then return to this page.
-
-Congratulations, you built your first WebView2 app!
+* In a new window or tab, read [Navigation events for WebView2 apps](../concepts/navigation-events.md), and then return to this page.
 
 
 <!-- ====================================================================== -->
