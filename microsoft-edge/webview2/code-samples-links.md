@@ -46,7 +46,4 @@ Typically, for these samples, you do the following sequence:
 <!-- ====================================================================== -->
 ## See also
 
-The repo's top-level Readme, [WebView2Samples repo > Readme](https://github.com/MicrosoftEdge/WebView2Samples#readme), is arranged by framework or platform, and covers all three kinds of samples in the repo:
-*  Completed "Getting Started" tutorials.
-*  Sample apps.
-*  Deployment samples.
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#readme)

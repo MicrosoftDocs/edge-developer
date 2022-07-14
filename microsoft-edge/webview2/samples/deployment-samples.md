@@ -10,8 +10,6 @@ ms.date: 07/11/2022
 ---
 # Deployment samples
 
-There's a 1-to-1 correspondence between articles in this documentation and Readme files in the WebView2Samples repo (in almost all cases).  The Readme which corresponds to the present top-level article is [Readme: WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples#readme).
-
 For each deployment sample in the WebView2Samples repo, there's an article in the regular docs, as well as a Readme, directory, and solution file in the repo.
 
 | Article | Sample |
@@ -24,7 +22,4 @@ For each deployment sample in the WebView2Samples repo, there's an article in th
 <!-- ====================================================================== -->
 ## See also
 
-The repo's top-level Readme, [WebView2Samples repo > Readme](https://github.com/MicrosoftEdge/WebView2Samples#readme), is arranged by framework or platform, and covers all three kinds of samples in the repo:
-*  Completed "Getting Started" tutorials.
-*  Sample apps.
-*  Deployment samples.
+* [WebView2Samples repo > Readme](https://github.com/MicrosoftEdge/WebView2Samples#readme)
