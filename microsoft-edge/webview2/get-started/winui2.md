@@ -8,17 +8,13 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
 ---
-# Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
+# Get started with WebView2 in WinUI 2 (UWP) apps
 
 In this tutorial, you:
 *  Set up your development tools for creating UWP apps that use WebView2 to display web content.
 *  Create an initial WinUI 2 (UWP) app.
 *  Add a WebView2 control that displays webpage content.
 *  Learn about WebView2 concepts along the way.
-
-
-* Corresponding Get Started sample at GitHub: none; WinUI 3: [Getting Started with WebView2 in WinUI3 (WinUI_Sample/WinUI_Sample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted#readme)
-
 
 The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  This package provides Windows UI features, including:
 *  UWP XAML controls
@@ -306,21 +302,35 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## Status of WebView2 functionality on WinUI 2 (UWP)
 
-The WebView2 WinUI 2 (UWP) control is in development.  The following features haven't been implemented, or have issues:
+The WebView2 WinUI 2 (UWP) control is in development.  The following features haven't been implemented, or are disabled due to pending work:
 
-*  Download UI.
-   *  Although the Download UI feature currently doesn't work, this feature might show up automatically in your app's UI after the issue is fixed.  To maintain compatibility, you should manually disable the Download UI feature by intercepting the [download starting event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs).
+*  Downloads.
+   *  Downloading files is only available in preview via the Edge Dev channel until Edge 104; moreover, it is disabled by default. To enable, please use the command line switch `edge-webview-optional-enable-uwp-regular-downloads`. There are a couple of known limitations to the current downloads behavior for WebView2 in UWP:
+        * The downloads hub is currently disabled.
+        * Depending on the user's OS, downloaded files will be downloaded to different folders. For Windows 11, the downloaded files will appear in a subfolder with the app package's name in the Downloads folder. For OS's below Windows 11, the downloaded files will appear in a subfolder named WebView2Downloads within this app package's subfolder in the Downloads folder.
+        * Additionally, saving files via Save As is functional and enabled for UWP WebView2. The files will be saved in the respective folder the user selects.
 *  Autofill UI.
-*  File Picker Dialog.
-*  Background Audio.
-*  Print to PDF.<!--todo: has issues?  dated info?  not implemented?-->
-*  Print Preview.<!--todo: has issues?  dated info?  not implemented?-->
 *  Adding COM Objects (WinRT `AddHostObject`).
 *  Playready DRM.
 *  Service Workers on Windows devices before 20H2.
 
 Package summary:
 * [Overview of the NuGet package for Microsoft.UI.Xaml](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
+
+## WinUI WebView2 special considerations
+
+### SmartScreen
+WebView2 uses SmartScreen to ensure your webview2 apps stay secure. If you would like to disable this, you may do so via environment variable.
+
+* `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
+    *  Note this must be set prior to CWV2Environment creation (first time WV2.Source set or EnsureCoreWebView2Async() called).
+
+### API Limitations
+Please note that the following interfaces are not accessible in both WinUI2 and WinUI3:
+
+* ICoreWebView2Environment
+* ICoreWebView2EnvironmentOptions & ICoreWebView2EnvironmentOptions2
+* ICoreWebView2ControllerOptions
 
 
 <!-- ====================================================================== -->
