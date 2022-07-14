@@ -991,29 +991,29 @@
               displayName: Sample Code for WebView2  # top-of-page title
 
 # in alpha order of downloaded repo directories
-            - name: WebView2 control and API samples
+            - name: WebView2 sample apps
               items:
-                - name: WinUI 2 (UWP) browser app
+                - name: WinUI 2 (UWP) sample app
                   href: webview2/samples/webview2_sample_uwp.md
                   displayName: webview2_sample_uwp  # repo dir name
 
-                - name: Win32 C++ app
+                - name: Win32 sample app
                   href: webview2/samples/webview2apissample.md
                   displayName: WebView2APISample, SampleApps  # repo dir names
 
-                - name: Win32 C++ app with Visual Composition
+                - name: Win32 sample app with Visual Composition
                   href: webview2/samples/webview2samplewincomp.md
                   displayName: WebView2SampleWinComp  # repo dir name
 
-                - name: WinForms browser app
+                - name: WinForms sample app
                   href: webview2/samples/webview2windowsformsbrowser.md
                   displayName: WebView2WindowsFormsBrowser  # repo dir name
 
-                - name: WPF .NET browser app
+                - name: WPF sample app
                   href: webview2/samples/webview2wpfbrowser.md
                   displayName: WebView2WpfBrowser  # repo dir name
 
-                - name: Chrome DevTools Protocol extension in a WPF app
+                - name: WPF sample app with CDP extension
                   href: webview2/samples/wv2cdpextensionwpfsample.md
                   displayName: WV2CDPExtensionWPFSample  # repo dir name
 
@@ -1024,11 +1024,11 @@
                   href: webview2/samples/wv2deploymentvsinstallersample.md
                   displayName: WV2DeploymentVSInstallerSample  # repo dir name
 
-                - name: WiX Burn Bundle to deploy the Runtime
+                - name: WiX Burn Bundle to deploy the WebView2 Runtime
                   href: webview2/samples/wv2deploymentwixburnbundlesample.md
                   displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
 
-                - name: WiX Custom Action to deploy the Runtime
+                - name: WiX Custom Action to deploy the WebView2 Runtime
                   href: webview2/samples/wv2deploymentwixcustomactionsample.md
                   displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
 
@@ -1047,9 +1047,9 @@
               href: webview2/get-started/winforms.md
               displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
 
-            - name: WinUI 2 (UWP, public preview)
+            - name: WinUI 2 (UWP)
               href: webview2/get-started/winui2.md
-              displayName: Get started with WebView2 in WinUI 2 (UWP) apps (public preview)  # repo dir name  # top-of-page title
+              displayName: Get started with WebView2 in WinUI 2 (UWP) apps  # repo dir name  # top-of-page title
 
             - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
@@ -1222,16 +1222,6 @@
               href: webview2/webview2-api-reference.md
               displayName: functions, methods  # list relevant platforms
 
-            - name: Win32 C++
-              items:
-                - name: Win32 C++ WebView2 API conventions
-                  href: webview2/concepts/win32-api-conventions.md
-                  displayName: 
-
-                - name: Win32 C++ API Reference
-                  href: /microsoft-edge/webview2/reference/win32/index
-                  displayName: functions, methods
-
             - name: .NET
               items:
                 - name: Microsoft.Web.WebView2.Core
@@ -1248,12 +1238,22 @@
 
             - name: WinRT
               items:
-                - name: Microsoft.Web.WebView2.Core
+                - name: Microsoft.Web.WebView2.Core (C#)
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: functions, methods
 
-                - name: COM Interop
+                - name: COM Interop (C++)
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
+                  displayName: functions, methods
+
+            - name: Win32 C++
+              items:
+                - name: Win32 C++ WebView2 API conventions
+                  href: webview2/concepts/win32-api-conventions.md
+                  displayName: 
+
+                - name: Win32 C++ API Reference
+                  href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
 
         - name: Contact the WebView2 Team

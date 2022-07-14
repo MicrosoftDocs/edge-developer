@@ -1,5 +1,5 @@
 ---
-title: "WebView2 sample: WebView2 Deployment Visual Studio installer"
+title: WebView2 Deployment Visual Studio installer
 description: This WebView2 sample demonstrates how to deploy a WebView2 app by using the Visual Studio installer.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 06/17/2022
 ---
-# WebView2 sample: WebView2 Deployment Visual Studio installer
+# WebView2 Deployment Visual Studio installer
 
 This WebView2 sample demonstrates how to deploy a WebView2 app using the Visual Studio installer.
 
@@ -119,7 +119,7 @@ Complete these steps to edit and run the project.
    1. In Visual Studio, select **File** > **New** > **Project**. 
    1. Search for `Setup Project`.
 
-       ![WebView2 Deployment Visual Studio Installer: Create Setup Project](./wv2deploymentvsinstaller-create-setup-project.png)
+       ![WebView2 Deployment Visual Studio Installer: Create Setup Project](wv2deploymentvsinstallersample-images/create-setup-project.png)
 
    1. Create a Setup project.
 
@@ -127,11 +127,11 @@ Complete these steps to edit and run the project.
    1. In Visual Studio, select **Project** > **Properties**.
    1. In the Property page, select **Prerequisites**.
 
-       ![WebView2 Deployment Visual Studio Installer: Set Up Prerequisites](./wv2deploymentvsinstaller-setup-prerequisites.png)
+       ![WebView2 Deployment Visual Studio Installer: Set Up Prerequisites](wv2deploymentvsinstallersample-images/setup-prerequisites.png)
 
    1. Check **Edge WebView2 runtime**, and un-check other prerequisites. Select **OK**.
    
-       ![WebView2 Deployment Visual Studio Installer: Select Prerequisite](./wv2deploymentvsinstaller-select-prerequisites.png)
+       ![WebView2 Deployment Visual Studio Installer: Select Prerequisite](wv2deploymentvsinstallersample-images/select-prerequisites.png)
 
 1. Press **F5** to save and build the Setup project.
 

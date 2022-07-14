@@ -414,7 +414,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 *  Fixed an issue causing erroneous warnings in the Visual Studio Error List window.  ([Issue #1722](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1722))
 *  Fixed a bug where NewWindowRequested was not getting raised when opening PDF downloads.
-*  Resolved a bug in WinUI3 where select dropdowns would not show up.  ([Issue #1693](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1693))
+*  Resolved a bug in WinUI 3 where select dropdowns would not show up.  ([Issue #1693](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1693))
 *  Added the ability to toggle WebView2 mute state, even when there is no audio playing.
 
 
