@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/28/2022
+ms.date: 07/06/2022
 ---
 # Get started with WebView2 in WinUI 3 (Windows App SDK) apps
 
@@ -339,9 +339,11 @@ In this section, you add code to import the WebView2 Core library.
 1.  These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
 
 
-### WinRT CoreWebView2 object availability
+#### WinRT CoreWebView2 object availability
 
-The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  The [WebView2 Spec](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 --> lists which of the APIs are available for WebView2.
+The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  For a list of available APIs, see:
+* WinUI 3 API Reference (Windows App SDK) - [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2) - in API reference for Windows desktop apps > WinRT APIs.
+* The [WebView2 Spec](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 -->
 
 
 <!-- ====================================================================== -->
@@ -353,7 +355,10 @@ You can use host apps to inject JavaScript code into WebView2 controls at runtim
 
 *  Run the injected JavaScript before running any other script that's included in the HTML document.
 
-As an example, next, you add scripts that send an alert when a user tries to open non-HTTPS sites.  To do this, you inject a script into the web content that uses [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync).
+As an example, next, you add scripts that send an alert when a user tries to open non-HTTPS sites.  To do this, you inject a script into the web content that uses
+[ExecuteScriptAsync](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.executescriptasync).
+<!-- todo: correct link? -->
+<!-- [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync). -->
 
 1.  Modify the `EnsureHttps` function as follows:
 
@@ -384,6 +389,37 @@ As an example, next, you add scripts that send an alert when a user tries to ope
     ![Sample app WebView2 control displays an alert dialog for non-HTTPS websites](winui-images/getting-started-script.png)
 
 Congratulations, you built your first WebView2 app!
+
+
+<!-- ====================================================================== -->
+## WinUI 3 WebView2 special considerations
+
+#### SmartScreen
+
+WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
+
+* `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
+
+This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.source#microsoft-ui-xaml-controls-webview2-source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async#microsoft-ui-xaml-controls-webview2-ensurecorewebview2async) is initially called.
+
+
+#### API limitations
+
+The following interfaces aren't accessible in WinUI 3:
+
+* `ICoreWebView2Environment`
+* `ICoreWebView2EnvironmentOptions` and `ICoreWebView2EnvironmentOptions2`
+* `ICoreWebView2ControllerOptions`
+
+
+<!-- ====================================================================== -->
+## API Reference
+
+WinUI 3 API Reference (Windows App SDK):
+* [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2) - in API reference for Windows desktop apps > WinRT APIs.
+
+All platforms/languages:
+* [WebView2 API Reference](../webview2-api-reference.md) - API Reference for each platform.
 
 
 <!-- ====================================================================== -->
