@@ -30,7 +30,7 @@ This sample includes the following NuGet packages:
 *  **Microsoft.NETCore.UniversalWindowsPlatform**
 *  **Microsoft.UI.Xaml - Prerelease** - includes Microsoft.Web.WebView2 SDK as a dependency.
 
-To demonstrate the latest features, this sample in the WebView2Samples repo is set up to use a pre-release version of the WinUI 2 SDK (listed as **Microsoft.UI.Xaml** in NuGet Package Manager), rather than a Stable version.  That SDK includes a compatible version of the WebView2 SDK, as a dependency of **Microsoft.UI.Xaml**.
+To demonstrate the latest features, this sample in the WebView2Samples repo is set up to use a prerelease version of the WinUI 2 SDK (listed as **Microsoft.UI.Xaml** in NuGet Package Manager), rather than a Stable version.  The WinUI 2 SDK includes a compatible version of the WebView2 SDK, as a dependency of **Microsoft.UI.Xaml**.
 <!-- After you update the packages, the resulting WebView2 SDK might be a stable or prerelease SDK.  Per screenshots below; appears to have switched from prerelease (per repo) to stable (after local update) -->
 
 
@@ -43,7 +43,7 @@ To demonstrate the latest features, this sample in the WebView2Samples repo is s
 
    * [README > Build the WebView2 UWP WinUi2 browser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#build-the-webview2-uwp-winui2-browser)
 
-   You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:<!-- todo: is there a .md preview capability locally? -->
+   You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:
 
    `<your-repos-directory>/WebView2Samples/SampleApps/webview2_sample_uwp/README.md`
 
@@ -128,9 +128,9 @@ Next, update the NuGet packages for the project, per the following sections.
 <!-- ====================================================================== -->
 ## Step 8 - Update the NuGet packages
 
-To demonstrate the latest features, this sample in the WebView2Samples repo is set up to use a pre-release version of the WinUI 2 SDK (listed as **Microsoft.UI.Xaml** in NuGet Package Manager).  That SDK includes a compatible pre-release or release version of the WebView2 SDK.  WebView2 SDK is not explicitly listed in NuGet Package Manager, though it is listed separately in the Preview Changes dialog box.
+In this step, we'll update the project's NuGet packages, to get the latest prerelease version of the WinUI 2 SDK.  The WinUI 2 SDK includes a compatible prerelease or release version of the WebView2 SDK.
 
-Next, check which version of the WinUI 2 SDK is installed in the project, and update the NuGet packages to the latest pre-release version:
+Update the project's NuGet packages:
 
 1. In Visual Studio, in Solution Explorer, right-click the **webview2_sample_uwp** project (not the solution node above it), and then select **Manage NuGet Packages**.
 
@@ -140,7 +140,7 @@ Next, check which version of the WinUI 2 SDK is installed in the project, and up
 
 1. Select the **Include prerelease** check box.
 
-   A pre-release version of the **Microsoft.UI.Xaml** package is listed, indicating the WinUI 2 SDK.  That package includes a pre-release version of the WebView2 SDK.  **Microsoft.Web.WebView2** is listed in the **Dependencies** section of the **Microsoft.UI.Xaml** package.
+   A pre-release version of the **Microsoft.UI.Xaml** package is listed, indicating the WinUI 2 SDK.  The **Microsoft.UI.Xaml** package includes the WebView2 SDK; **Microsoft.Web.WebView2** is listed in the **Dependencies** section of the **Microsoft.UI.Xaml** package.  Updating the **Microsoft.UI.Xaml** package will also cause an update to the compatible WebView2 SDK.
 
 1. In the **NuGet Package Manager**, click the **Updates** tab.
 
@@ -152,7 +152,7 @@ Next, check which version of the WinUI 2 SDK is installed in the project, and up
 
    ![The NuGet package manager to install Microsoft.UI.Xaml](media/webview2_sample_uwp-nuget-package-ui-xaml.png)
 
-   After getting the latest packages, which can take a few minutes, the **Preview Changes** dialog box appears:
+   After getting the latest packages, which can take a few minutes, the **Preview Changes** dialog box opens.  **Microsoft.Web.WebView2** (the WebView2 SDK) is listed separately in the **Preview Changes** dialog box:
 
    ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package](media/webview2_sample_uwp-preview-changes-ui-xaml-pkg.png)
 

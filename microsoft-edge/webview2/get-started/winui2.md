@@ -326,14 +326,14 @@ All platforms/languages:
 ## See also
 
 Local pages:
-* [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - a detailed walkthrough article of how to build and run the WinUI 2 WebView2 sample.
+* [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - steps to download, update, build, and run the WinUI 2 WebView2 sample.
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - Conceptual and how-to articles about building and deploying WebView2 apps.
+* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - articles about building and deploying WebView2 apps.
 
 GitHub:
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
 * [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - the WinUI 2 (UWP) WebView2 sample.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
-*  Unlike for some other platforms, there isn't a Getting Started completed version of this tutorial in the WebView2Samples repo.
+*  Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
