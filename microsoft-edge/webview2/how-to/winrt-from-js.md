@@ -123,6 +123,8 @@ Add a project for the wv2winrt tool, as follows:
 
    ![Selecting the Windows Runtime Component (C++/WinRT) card in the 'Add a new project' dialog.](winrt-from-js-images/add-proj-cpp-winrt.png)
 
+   **Note:** Make sure the template includes C++/WinRT in its name. If you can't see this template, install the **Universal Windows Platform development** workload from within the Visual Studio Installer. If you are using Visual Studio 2019 and still can't find the template, install the **C++/WinRT templates and visualizer for VS2019** extension from **Visual Studio > Extensions > Manage Extenions**.
+   
    The **Configure your new project** window opens.
 
 1. In the **Project name** textbox, name the Project, specifically, **WinRTAdapter**.  **Note:** For now, you must use this specific project name:
