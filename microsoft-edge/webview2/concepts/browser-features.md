@@ -104,7 +104,7 @@ The following Microsoft Edge and Google Chrome settings webpages aren't availabl
 <!-- ====================================================================== -->
 ## Google Authentication
 
-Google Authentication is disabled in embedded webviews, which includes WebView2, due to a security policy set by Google.  See [Upcoming security changes to Google's OAuth 2.0 authorization endpoint in embedded webviews](https://developers.googleblog.com/2021/06/upcoming-security-changes-to-googles-oauth-2.0-authorization-endpoint.html).
+Google has disabled Google Authentication in embedded webviews, which includes WebView2, due to a security policy they have set.  See [Upcoming security changes to Google's OAuth 2.0 authorization endpoint in embedded webviews](https://developers.googleblog.com/2021/06/upcoming-security-changes-to-googles-oauth-2.0-authorization-endpoint.html).
 
 To stay up-to-date on the latest discussion, in the WebView2Feedback repo, see [Google Auth Flows and WebView2](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1647).
 <!-- ====================================================================== -->
