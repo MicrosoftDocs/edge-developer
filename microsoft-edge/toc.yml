@@ -993,25 +993,25 @@
               href: webview2/get-started/get-started.md
               displayName: GettingStartedGuides  # repo dir name
 
-            - name: Get started with WinUI 2 (UWP) apps
+            - name: WinUI 2 (UWP)
               href: webview2/get-started/winui2.md
-              displayName: Get started with WebView2 in WinUI 2 (UWP) apps  # no repo dir exists  # top-of-page title
+              displayName: Get started with WinUI 2 (UWP) apps  # no repo dir exists  # top-of-page title
 
-            - name: Get started with WinUI 3 (Windows App SDK) apps
+            - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
-              displayName: WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
+              displayName: WinUI3_GettingStarted, Get started with WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
 
-            - name: Get started with WPF apps
+            - name: WPF
               href: webview2/get-started/wpf.md
-              displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
+              displayName: WPF_GettingStarted, Get started with WPF apps  # repo dir name  # top-of-page title
 
-            - name: Get started with WinForms apps
+            - name: WinForms
               href: webview2/get-started/winforms.md
-              displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
+              displayName: WinForms_GettingStarted, Get started with WinForms apps  # repo dir name  # top-of-page title
 
-            - name: Get started with Win32 apps
+            - name: Win32
               href: webview2/get-started/win32.md
-              displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
+              displayName: Win32_GettingStarted, Get started with Win32 apps  # repo dir name  # top-of-page title
 
 # -----------------------------------------------------------------------------
 # Sample apps
@@ -1023,27 +1023,27 @@
 
             - name: WinUI 2 (UWP) sample app
               href: webview2/samples/webview2_sample_uwp.md
-              displayName: webview2_sample_uwp  # repo dir name
+              displayName: webview2_sample_uwp, WinUI 2 (UWP) sample app  # repo dir name, top-of-page title
 
             - name: WPF sample app
               href: webview2/samples/webview2wpfbrowser.md
-              displayName: WebView2WpfBrowser  # repo dir name
+              displayName: WebView2WpfBrowser, WPF sample app  # repo dir name, top-of-page title
 
             - name: WPF sample app with CDP
               href: webview2/samples/wv2cdpextensionwpfsample.md
-              displayName: WV2CDPExtensionWPFSample  # repo dir name
+              displayName: WV2CDPExtensionWPFSample, WPF sample app with CDP  # repo dir name, top-of-page title
 
             - name: WinForms sample app
               href: webview2/samples/webview2windowsformsbrowser.md
-              displayName: WebView2WindowsFormsBrowser  # repo dir name
+              displayName: WebView2WindowsFormsBrowser, WinForms sample app  # repo dir name, top-of-page title
 
             - name: Win32 sample app
               href: webview2/samples/webview2apissample.md
-              displayName: WebView2APISample, SampleApps  # repo dir names
+              displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
 
             - name: Win32 sample app with Visual Composition
               href: webview2/samples/webview2samplewincomp.md
-              displayName: WebView2SampleWinComp  # repo dir name
+              displayName: WebView2SampleWinComp, Win32 sample app with Visual Composition  # repo dir name, top-of-page title
 
 # -----------------------------------------------------------------------------
 # Deployment samples
