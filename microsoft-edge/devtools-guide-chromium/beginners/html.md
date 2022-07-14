@@ -60,7 +60,7 @@ You'll build a site in the Glitch online code editor.
 
 1. Open the [source code](https://glitch.com/edit/#!/alluring-shock?path=index.html). This tab is called the **editor tab** throughout this tutorial.
 
-   ![The editor tab.](media/beginners-html-setup1.msft.png)
+   ![The editor tab.](/media/beginners-html-setup1.msft.png)
 
 1. Select **alluring-shock**. The **Project Options** menu opens.
 
