@@ -694,7 +694,7 @@ developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:
-* [WebView2 sample: Win32 C++ app](../samples/webview2apissample.md)
+* [Win32 sample app](../samples/webview2apissample.md)
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the samples in the **WebView2Samples** repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
