@@ -22,7 +22,7 @@ Sample apps that use WebView2 are available in the **WebView2Samples** repo, for
 | Win32 | [Win32 sample app](samples/webview2apissample.md) | [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) | Main sample; extensive.  Detailed Readme. |
 | Win32 with Visual Composition | [Win32 sample app with Visual Composition](samples/webview2samplewincomp.md) | [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp) | &nbsp; |
 
-These articles provide the specific steps to set up your machine and build, update, and run each sample.
+These articles provide the specific steps to set up your machine and build, run, and update each sample.
 
 
 #### Sample apps vs. completed Getting Started tutorials
@@ -32,7 +32,7 @@ For some frameworks or platforms, the samples repo contains both a completed Get
 
 #### Articles, readmes, sample directories, and solution files
 
-For each sample app in the samples repo, there's an article here.  In the samples repo, each sample has a short Readme, a directory, and a solution file.
+For each sample app in the samples repo, there's an article here.  In the samples repo, each sample has a Readme, a directory, and a solution file.
 
 
 #### Installed SDK package versions

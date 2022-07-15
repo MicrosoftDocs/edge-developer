@@ -10,7 +10,7 @@ ms.date: 07/11/2022
 ---
 # Deployment samples
 
-For each deployment sample in the WebView2Samples repo, there's an article in the regular docs, as well as a Readme, directory, and solution file in the repo.
+For each deployment sample in the WebView2Samples repo, there's an article in the regular docs, as well as a Readme, directory, and (if appropriate) a project file in the repo.
 
 | Article | Sample |
 |---|---|
