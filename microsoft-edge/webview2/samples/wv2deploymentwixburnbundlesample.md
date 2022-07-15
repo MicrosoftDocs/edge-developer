@@ -13,8 +13,7 @@ ms.date: 04/27/2022
 This is a WebView2 sample demonstrating how to use a WiX Burn Bundle to deploy the WebView2 Runtime.
 
 
-#### Sample name: WV2DeploymentWiXBurnBundleSample
-
+*  Sample name: **WV2DeploymentWiXBurnBundleSample**
 *  Repo directory: **WV2DeploymentWiXBurnBundleSample**
 *  Project file: **WV2DeploymentWiXBurnBundleSample.wixproj**
 

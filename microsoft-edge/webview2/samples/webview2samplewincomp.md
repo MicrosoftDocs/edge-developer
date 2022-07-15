@@ -17,8 +17,7 @@ It is built as a Win32 Visual Studio 2019 project and makes use of both C++ and 
 It also uses Windows Runtime Composition APIs (also called the Visual layer) to take advantage of the Windows UI features and create a better look, feel, and functionality in C++ Win32 applications.
 
 
-#### Sample name: WebView2SampleWinComp
-
+*  Sample name: **WebView2SampleWinComp**
 *  Repo directory: **WebView2SampleWinComp**
 *  Solution file: **WebView2SampleWinComp.sln**
 

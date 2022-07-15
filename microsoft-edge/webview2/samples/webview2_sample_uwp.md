@@ -17,9 +17,7 @@ spelling conventions:
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinUI 2 (UWP) app.
 
-
-#### Sample name: webview2_sample_uwp
-
+*  Sample name: **webview2_sample_uwp**
 *  Repo directory: **webview2_sample_uwp**
 *  Solution file: **webview2_sample_uwp.sln**
 

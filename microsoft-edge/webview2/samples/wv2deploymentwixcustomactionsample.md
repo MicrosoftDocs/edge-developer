@@ -13,8 +13,7 @@ ms.date: 04/27/2022
 This is a WebView2 sample demonstrating how to use a WiX Custom Action to deploy the WebView2 Runtime.
 
 
-#### Sample name: WV2DeploymentWiXCustomActionSample
-
+*  Sample name: **WV2DeploymentWiXCustomActionSample**
 *  Repo directory: **WV2DeploymentWiXCustomActionSample**
 *  Project file: **WV2DeploymentWiXCustomActionSample.wixproj**
 

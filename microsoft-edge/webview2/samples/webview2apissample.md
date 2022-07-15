@@ -16,9 +16,7 @@ The WebView2APISample is an example of an application that embeds a WebView2 con
 
 The API Sample showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView2 control and vice versa.
 
-
-#### Sample name: WebView2APISample
-
+*  Sample name: **WebView2APISample**
 *  Repo directory: **WebView2APISample**
 *  Solution file: **WebView2Samples.sln** (in parent directory)
 *  Project name in Solution Explorer: **WebView2APISample**
