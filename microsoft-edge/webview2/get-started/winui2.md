@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/13/2022
+ms.date: 07/14/2022
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps
 
