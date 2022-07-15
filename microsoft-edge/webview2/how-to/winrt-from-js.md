@@ -274,7 +274,7 @@ Source code is generated for namespaces or classes that you specified in the **I
 >
 > Alternatively, add the following after the last `</ItemGroup>` in the project file `WinRTAdapter.vcxproj`:
 >
->```xaml
+>```xml
 ><ItemGroup Condition="'$(WebView2UseDispatchAdapter)' == 'true'">
 >  <Reference Include="$(WebView2SDKPath)lib\Microsoft.Web.WebView2.Core.winmd">
 >    <!-- wv2winrt needs Dispatch Adapter metadata to generate code -->
