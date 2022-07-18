@@ -6,11 +6,11 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/14/2022
+ms.date: 07/18/2022
 ---
 # Sample apps
 
-Sample apps that use WebView2 are available in the **WebView2Samples** repo, for various frameworks or platforms.
+Sample apps that use WebView2 are available in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps), for various frameworks or platforms.
 
 | Framework or platform | Article | Sample in repo | Comments |
 |---|---|---|---|
@@ -27,12 +27,9 @@ These articles provide the specific steps to set up your machine and build, run,
 
 #### Sample apps vs. completed Getting Started tutorials
 
-For some frameworks or platforms, the samples repo contains both a completed Getting Started tutorial and a sample app.  The sample apps demonstrate more features than the completed Getting Started tutorials.
+The sample apps are the source of the sample code snippets that are shown in the API Reference docs and conceptual docs.
 
-
-#### Articles, readmes, sample directories, and solution files
-
-For each sample app in the samples repo, there's an article here.  In the samples repo, each sample has a Readme, a directory, and a solution file.
+For some frameworks or platforms, the samples repo contains both a completed Getting Started tutorial and a sample app.  These sample apps showcase more of the WebView2 APIs than the Getting Started tutorials.
 
 
 #### Installed SDK package versions
