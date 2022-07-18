@@ -9,10 +9,6 @@ ms.date: 06/28/2022
 ---
 # Create an extension tutorial, part 1
 
-
-<!-- ====================================================================== -->
-## Overview
-
 The goal for this tutorial is to build a Microsoft Edge extension, starting with an empty directory.  You are building an extension that pops up the NASA picture of the day.  In this tutorial, you'll learn how to create an extension by:
 
 *   Creating a `manifest.json` file.

@@ -1,5 +1,5 @@
 ---
-title: "WebView2 sample: Win32 C++ app with Visual Composition"
+title: Win32 sample app with Visual Composition
 description: This WebView2 sample demonstrates creating an application that embeds a WebView2 control within a Win32 native application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 06/14/2022
 ---
-# WebView2 sample: Win32 C++ app with Visual Composition
+# Win32 sample app with Visual Composition
 
 This WebView2 sample demonstrates creating an application that embeds a WebView2 control within a Win32 native application.
 
