@@ -13,6 +13,14 @@ The following features have been launched on [Partner Center](https://partner.mi
 
 
 <!-- ====================================================================== -->
+## Retirement of submitting new Microsoft Edge Add-ons with Manifest V2
+
+Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension submissions, with visibility set as 'Hidden' or 'Public'. To share your feedback and comments, see [GitHub discussion topic - Update your extensions from Manifest V2 to V3](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/27).
+
+*Released July 2022*
+
+
+<!-- ====================================================================== -->
 ## Developers can respond to user reviews about their Microsoft Edge Add-on
 
 Developers can reply via Partner Center to reviews and feedback received about their extension on the Microsoft Edge Add-ons product page. To share your feedback and comments, see [GitHub discussion topic - Reply to user reviews on your Microsoft Edge Add-on product page](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18). 
