@@ -9,7 +9,7 @@ ms.date: 07/19/2021
 ---
 # Microsoft Edge Add-ons roadmap
 
-These are the next planned Partner Center features or updates for Microsoft Edge extensions.
+These are the next planned [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) features or updates for Microsoft Edge extensions.
 
 
 <!-- ====================================================================== -->
@@ -35,7 +35,7 @@ When this change is released, Microsoft Edge Enterprise Add-ons with Manifest V2
 <!-- ====================================================================== -->
 ## See also
 
-For recently released Partner Center features or updates, see [Released features for Microsoft Edge Add-ons](released-features.md).
+For Partner Center features or updates, see [Released features for Microsoft Edge Add-ons](released-features.md).
 
 To view the consumer roadmap, go to [Microsoft Edge Insider Roadmap](https://www.microsoftedgeinsider.com/whats-next) and scroll down to the **Feature Roadmap** section. 
 

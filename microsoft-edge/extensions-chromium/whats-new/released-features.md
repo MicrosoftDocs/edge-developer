@@ -121,4 +121,4 @@ By clicking the extension certification report link, you can view and download t
 <!-- ====================================================================== -->
 ## See also
 
-For more information about upcoming features or updates, see [Microsoft Edge Add-ons roadmap](roadmap.md).
+* For upcoming Partner Center features or updates, see [Microsoft Edge Add-ons roadmap](roadmap.md).
