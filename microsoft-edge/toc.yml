@@ -1045,6 +1045,10 @@
               href: webview2/samples/webview2samplewincomp.md
               displayName: WebView2SampleWinComp, Win32 sample app with Visual Composition  # repo dir name, top-of-page title
 
+            - name: WebView2Browser (Win32 C++/JS)
+              href: webview2/samples/webview2browser.md
+              displayName: 
+
 # -----------------------------------------------------------------------------
 # Deployment samples
         - name: Deployment samples

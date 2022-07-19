@@ -24,6 +24,6 @@ These articles cover how to set up your development tools and create an initial 
 <!-- ====================================================================== -->
 ## See also
 
-* [Sample apps](../code-samples-links.md)
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2, at `developer.microsoft.com`.
-* [WebView2Samples repo > Readme](https://github.com/MicrosoftEdge/WebView2Samples#readme)
+* [Sample apps](../code-samples-links.md) - these sample apps showcase more of the WebView2 APIs than the Getting Started tutorials.
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#readme) - contains completed Visual Studio projects that result from following the steps in these Getting Started tutorials.

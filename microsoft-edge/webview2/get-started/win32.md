@@ -10,6 +10,8 @@ ms.date: 04/27/2022
 ---
 # Get started with WebView2 in Win32 apps
 
+<!-- TODO: Rewrite to start from a project template? -->
+
 In this article, you set up your development tools (if not done already), add WebView2 code to the Win32 app, and learn about WebView2 concepts along the way.
 
 The project uses the [Win32_GettingStarted / WebView2GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) directory that's part of the `WebView2Samples` repo.  To use this article, you do the following:
@@ -18,8 +20,7 @@ The project uses the [Win32_GettingStarted / WebView2GettingStarted](https://git
 1. Optionally delete the WebView2 code from `HelloWebView.cpp`.
 1. Follow the remaining steps in this article about adding and understanding the WebView2 code.
 
-
-* Corresponding, completed, runnable Get Started sample at GitHub: [Getting Started with WebView2 for Win32 apps (Win32_GettingStarted/WebView2GettingStarted.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted#readme).
+<!-- A completed version of this tutorial project is available in the WebView2Samples repo: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted#readme). -->
 
 
 <!-- ====================================================================== -->
@@ -697,25 +698,6 @@ Congratulations, you built your first WebView2 app!  Your development environmen
 <!-- ====================================================================== -->
 ## See also
 
-developer.microsoft.com:
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
-
-Local pages:
-* [Win32 sample app](../samples/webview2apissample.md)
-* [Manage user data folders](../concepts/user-data-folder.md)
-* [Sample Code for WebView2](../code-samples-links.md) - a guide to the samples in the **WebView2Samples** repo.
-* [Development best practices for WebView2 apps](../concepts/developer-guide.md)
-
-WebView2Samples repo:
-* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
-* [Win32 Sample Code](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) - the code used in this tutorial.
-* [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/README.md) - a comprehensive example of WebView2 capabilities.
-* [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - a WebView2 sample app.
-
-Libraries:
+* [Sample Code for WebView2](../code-samples-links.md)
 * [Windows Runtime C++ Template Library (WRL)](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true)
 * [Windows Implementation Libraries (WIL)](https://github.com/Microsoft/wil) GitHub repo.
-
-<!--clickable full link:
-https://docs.microsoft.com/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=msvc-170&preserve-view=true&viewFallbackFrom=vs-2019
--->

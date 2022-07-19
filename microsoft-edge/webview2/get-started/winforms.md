@@ -23,11 +23,9 @@ This article covers how to set up your development tools and create an initial W
 
 Do either of the following:
 
-*  Create a new project in Visual Studio, using the steps below.  If you want to see the completed project, you can see the [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) directory in the `WebView2Samples` repo.
+*  Create a new project in Visual Studio, using the steps below.
 
-*  Download or clone the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.
-
-The corresponding Get Started sample at GitHub: [WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) (no readme file).
+*  Download or clone the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.  See [Download the WebView2Samples repo](https://docs.microsoft.com/en-us/microsoft-edge/webview2/how-to/machine-setup#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  A completed version of this tutorial project is available in the WebView2Samples repo directory [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted).
 
 
 <!-- ====================================================================== -->
@@ -43,6 +41,8 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## Step 3 - Install a preview channel of Microsoft Edge
 
+<!-- TODO: delete this major step? -->
+
 1. Install any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
    *  Windows 7
    *  Windows 8.1
@@ -54,6 +54,8 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 <!-- ====================================================================== -->
 ## Step 4 - Install the WebView2 Runtime (optional)
+
+<!-- TODO: delete this major step? -->
 
 1. Optionally, install the WebView2 Runtime.  See [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2).
 
@@ -585,22 +587,6 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
-developer.microsoft.com:
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
-
-Local pages:
 * [WinForms sample app](../samples/webview2windowsformsbrowser.md) - Demonstrates more WebView2 APIs than the present tutorial.
-* [Manage user data folders](../concepts/user-data-folder.md)
-* [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
-* [Development best practices for WebView2 apps](../concepts/developer-guide.md)
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - Conceptual and how-to articles about building and deploying WebView2 apps.
-
-GitHub:
-* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
-
-API Reference:
-* [API Reference: Microsoft.Web.WebView2.WinForms Namespace](/dotnet/api/microsoft.web.webview2.winforms)
-* [WebView2 API reference](/dotnet/api/microsoft.web.webview2.winforms.webview2)
-
-NuGet:
-* [Microsoft.Web.WebView2 SDK at nuget.org](https://www.nuget.org/packages/Microsoft.Web.WebView2)
+* [Microsoft.Web.WebView2.WinForms](/dotnet/api/microsoft.web.webview2.winforms) - API Reference.

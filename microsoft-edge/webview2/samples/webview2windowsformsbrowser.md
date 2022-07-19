@@ -10,6 +10,8 @@ ms.date: 04/27/2022
 ---
 # WinForms sample app
 
+<!-- todo: paste/merge into here from corresp Readme https://github.com/MicrosoftEdge/WebView2Samples/pull/140/files -->
+
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinForms app.
 
 

@@ -49,7 +49,11 @@ See [Understand the different WebView2 SDK versions](../concepts/versioning.md).
 <!-- ====================================================================== -->
 ## Download the WebView2Samples repo
 
-You can download the repo as a `.zip` file, or clone the repo.
+There are two repos containing WebView2 samples:
+*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
+*  [WebView2Browser repo](https://github.com/MicrosoftEdge/WebView2Browser)
+
+You can download a repo as a `.zip` file, or clone the repo.
 
 *  If you download the repo (as a `.zip` file), you get a snapshot copy of the repo.  You can then download another, updated copy of the repo later.
 
@@ -58,7 +62,7 @@ You can download the repo as a `.zip` file, or clone the repo.
 
 To download the repo (as a `.zip` file):
 
-1. Open the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) in a new window or tab.
+1. Open the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) (or the [WebView2Browser repo](https://github.com/MicrosoftEdge/WebView2Browser)) in a new window or tab.
 
 1. Click the green **Code** button in the upper right of the GitHub repo, and then click **Download ZIP**.
 
@@ -98,7 +102,7 @@ You can download the repo as a `.zip` file, or clone the repo.
 *  If you clone the repo, you can update your local copy using git commands or features of various Dev apps.
 
 
-To clone the `WebView2Samples` repo, you must first install git.  You can download the repo, as described above, or clone it.
+To clone the `WebView2Samples` repo (or the `WebView2Browser` repo), you must first install git.  You can download the repo, as described above, or clone it.
 
 ### Install git
 

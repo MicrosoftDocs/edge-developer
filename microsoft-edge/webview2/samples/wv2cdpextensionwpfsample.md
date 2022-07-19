@@ -10,12 +10,23 @@ ms.date: 04/27/2022
 ---
 # WPF sample app with CDP extension
 
+<!-- todo: after copying the "summary / which project/ which lang" info to top of each Sample .md file, merge into here the Readme sections: Prereq, Build. -->
+<!-- todo: global: like readmes PR in samples repo, add a tangible representative "finished result" screenshot at top of each sample or getstart. -->
+
+
 This WebView2 sample demonstrates how to use the WebView2 CDP extension to use the Chrome DevTools Protocol in a WPF app.
 
+This sample, **WV2CDPExtensionWPFSample**, is built with the WebView2 CDP Extension.  This sample calls Chrome DevTools Protocol (CDP) methods on a `DevToolsProtocolHelper` object in WebView2.
+
+This sample is built as a WPF Visual Studio 2019 project.  It uses C# in the WebView2 environment.
 
 *  Sample name: **WV2CDPExtensionWPFSample**
 *  Repo directory: **WV2CDPExtensionWPFSample**
 *  Solution file: **WV2CDPExtensionWPFSample.sln**
+
+![WV2CDPExtensionWPFSample sample app.](media/wv2cdpextensionwpfsample-app-running.png)
+
+If this is your first time using WebView2, we recommend first following the [Get started with WebView2 in WPF apps](../get-started/wpf.md) tutorial.  The tutorial walks you through creating a WebView2 and adding some basic WebView2 functionality.
 
 
 <!-- ====================================================================== -->
@@ -128,3 +139,31 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 ## See also
 
 * [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md)
+
+
+
+<!-- TODO: merge to above -->
+
+<!-- ====================================================================== -->
+## Prerequisites
+
+- [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on a supported OS. Currently we recommend the latest version of the Edge Canary channel.
+- [Visual Studio](https://visualstudio.microsoft.com/vs/) with .NET support installed.
+- Latest version of our [WebView2 SDK](https://aka.ms/webviewnuget), which is included in this project.
+- Latest release version of our [WebView2 CDP Extension](https://aka.ms/webviewcdpnuget), which is included in this project.
+
+
+<!-- ====================================================================== -->
+## Build the WebView2 WPF Browser
+
+Clone the repository and open the solution in Visual Studio. WebView2 and WebView2 DevToolsProtocolExtension is already included as a NuGet package* in this project.
+
+- Open the solution in Visual Studio 2019**
+- Set the target you want to build (Debug/Release, AnyCPU)
+- Build the project file: _WV2CDPExtensionSample.csproj_
+
+That's it! Everything should be ready to just launch the app.
+
+*You can get the WebView2 and WebView2 DevToolsProtocolExtension NugetPackage through the Visual Studio NuGet Package Manager.
+
+**You can also use Visual Studio 2017 by changing the project's Platform Toolset in Project Properties/Configuration properties/General/Platform Toolset. You might also need to change the Windows SDK to the latest version available to you.

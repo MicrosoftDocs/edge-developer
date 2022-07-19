@@ -10,6 +10,8 @@ ms.date: 06/14/2022
 ---
 # Win32 sample app with Visual Composition
 
+<!-- todo: paste/merge into here from corresp Readme https://github.com/MicrosoftEdge/WebView2Samples/pull/140/files -->
+
 This WebView2 sample demonstrates creating an application that embeds a WebView2 control within a Win32 native application.
 
 It is built as a Win32 Visual Studio 2019 project and makes use of both C++ and HTML/CSS/JavaScript in the WebView2 environment.

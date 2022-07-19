@@ -22,4 +22,5 @@ For each deployment sample in the WebView2Samples repo, there's an article in th
 <!-- ====================================================================== -->
 ## See also
 
-* [WebView2Samples repo > Readme](https://github.com/MicrosoftEdge/WebView2Samples#readme)
+* [Deploying the Evergreen WebView2 Runtime](../concepts/distribution#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#readme)
