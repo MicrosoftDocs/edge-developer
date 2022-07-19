@@ -1,5 +1,5 @@
 ---
-title: "WebView2 sample: WinForms browser app"
+title: WinForms sample app
 description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinForms app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
 ---
-# WebView2 sample: WinForms browser app
+# WinForms sample app
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinForms app.
 
@@ -34,7 +34,7 @@ To use this sample, follow the steps below in order.
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WindowsFormsBrowser/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/README.md`
 
 
 <!-- ====================================================================== -->
@@ -66,7 +66,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
 
 <!-- ====================================================================== -->
 ## Step 6 - Install workloads if prompted
@@ -157,7 +157,7 @@ Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
 
 At the top of Visual Studio, set the build target, as follows:
 

@@ -34,7 +34,7 @@ ms.date: 05/04/2021
 
 Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE distributions.  Download and install the Microsoft Edge Dev `.deb` or `.rpm` package directly from the [Microsoft Edge Insider site](https://www.microsoftedgeinsider.com/download?platform=linux) or use the standard package management tools of your Linux distribution.
 
-If you are using a Linux environment in your continuous integration and delivery (CI/CD) solutions, Microsoft Edge WebDriver is also available on Linux.  To get started automating Microsoft Edge with Microsoft Edge WebDriver, see [Microsoft Edge WebDriver Downloads page](https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads).  For help with automating Microsoft Edge with Microsoft Edge WebDriver, see [Use WebDriver for test automation](../../../../webdriver-chromium/index.md).
+If you are using a Linux environment in your continuous integration and delivery (CI/CD) solutions, Microsoft Edge WebDriver is also available on Linux.  To get started automating Microsoft Edge with Microsoft Edge WebDriver, see [Recent versions](https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads) at the Microsoft Edge WebDriver page.  For help with automating Microsoft Edge with Microsoft Edge WebDriver, see [Use WebDriver for test automation](../../../../webdriver-chromium/index.md).
 
 ![DevTools in Microsoft Edge on Linux.](../../media/2020/11/edge-on-linux.msft.png)
 
@@ -82,7 +82,7 @@ You can now visualize **Layers** content alongside z-index values and the Docume
 
 ![Composited Layers pane.](../../media/2020/11/experiments-layers.msft.png)
 
-Update: This feature has been released and is no longer experimental.  The **Layers** tool has been replaced by the **3D View** tool.
+Update: This feature has been released and is no longer experimental.  The **Layers** tool has been removed and replaced by the **3D View** tool.
 
 See also:
 * [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md)
@@ -411,5 +411,5 @@ For the history of this feature in the Chromium open-source project, see Issue [
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-88) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

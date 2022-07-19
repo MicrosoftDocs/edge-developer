@@ -41,7 +41,7 @@ For more information, see [Search for Console errors on the web](../09/devtools.
 ![All error and warning messages in the Console now have a Search Web icon.](../../media/2021/10/console-message-search-web-button.png)
 
 See also:
-* [Look up error messages on the web from the Console](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console) in _Console overview_.
+* [Search the web for a Console error message string](../../../console/index.md#search-the-web-for-a-console-error-message-string) in _Console overview_.
 
 
 <!-- ====================================================================== -->
@@ -164,5 +164,5 @@ For the history of this feature, see Chromium issue [1201997](https://crbug.com/
 > [!NOTE]
 > The "Announcements from the Chromium project" section of this page is a modification based on work that is created and shared by Google per [Site Policies](https://developers.google.com/terms/site-policies), and is used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).  The original page for the Announcements from the Chromium project is [What's New in DevTools (Chrome 95)](https://developer.chrome.com/blog/new-in-devtools-95), authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen), a Developer advocate working on Chrome DevTools at Google.
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

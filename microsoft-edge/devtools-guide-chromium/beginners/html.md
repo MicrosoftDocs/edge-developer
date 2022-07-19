@@ -32,7 +32,7 @@ This tutorial describes HTML and the [Document Object Model](https://developer.m
 
 You're going to learn web development by building a website.  By the time you complete all of the tutorials in the **DevTools for Beginners** series, your finished site will look like the following figure.
 
-:::image type="content" source="media/beginners-html-finished.msft.png" alt-text="The finished site." lightbox="media/beginners-html-finished.msft.png":::
+![The finished site.](media/beginners-html-finished.msft.png)
 
 By the end of this tutorial, you'll understand the following concepts:
 
@@ -60,21 +60,21 @@ You'll build a site in the Glitch online code editor.
 
 1. Open the [source code](https://glitch.com/edit/#!/alluring-shock?path=index.html). This tab is called the **editor tab** throughout this tutorial.
 
-   :::image type="content" source="media/beginners-html-setup1.msft.png" alt-text="The editor tab." lightbox="media/beginners-html-setup1.msft.png":::
+   ![The editor tab.](media/beginners-html-setup1.msft.png)
 
 1. Select **alluring-shock**. The **Project Options** menu opens.
 
-   :::image type="content" source="media/beginners-html-setup2.msft.png" alt-text="The Project Options menu." lightbox="media/beginners-html-setup2.msft.png":::
+   ![The Project Options menu.](media/beginners-html-setup2.msft.png)
 
 1. Select **Remix Project**. Glitch creates a copy of the project that you can edit and randomly generates a new name for the project. The content is the same as before.
 
-   :::image type="content" source="media/beginners-html-setup3.msft.png" alt-text="The remixed project." lightbox="media/beginners-html-setup3.msft.png":::
+   ![The remixed project.](media/beginners-html-setup3.msft.png)
 
 1. If you plan to complete the next tutorial in this series, select **Sign In** to Glitch using your Facebook, GitHub, or Google account; or email yourself a magic link. If you don't sign in to an account, you can't edit the project after closing the editor tab.
 
 1. Select **Show** > **In a New Window**.  A new tab opens, showing the live page.  This tab is called the **live tab** throughout this tutorial.
 
-   :::image type="content" source="media/beginners-html-setup4.msft.png" alt-text="The live tab." lightbox="media/beginners-html-setup4.msft.png":::
+   ![The live tab.](media/beginners-html-setup4.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -92,11 +92,11 @@ Your site needs more information.  To add some content:
             </main>
     ```
 
-   :::image type="content" source="media/beginners-html-add1.msft.png" alt-text="The new code is highlighted in the editor tab." lightbox="media/beginners-html-add1.msft.png":::
+   ![The new code is highlighted in the editor tab.](media/beginners-html-add1.msft.png)
 
 1. View your changes in the **live tab**. The text `About Me` is visible on the page. The text is larger than the surrounding text because the `<h1>` element represents a Heading 1. Your web browser automatically styles headings in larger font sizes.
 
-   :::image type="content" source="media/beginners-html-add2.msft.png" alt-text="The new heading is visible in the live tab." lightbox="media/beginners-html-add2.msft.png":::
+   ![The new heading is visible in the live tab.](media/beginners-html-add2.msft.png)
 
 1. Back in the **editor tab**, insert `<p>I am learning web development. Recent accomplishments:</p>` on the line below  `<h1>About Me</h1>`.
 
@@ -109,7 +109,7 @@ Your site needs more information.  To add some content:
             </main>
     ```
 
-   :::image type="content" source="media/beginners-html-add3.msft.png" alt-text="The updated code is highlighted in the editor tab." lightbox="media/beginners-html-add3.msft.png":::
+   ![The updated code is highlighted in the editor tab.](media/beginners-html-add3.msft.png)
 
 1. View your change in the **live tab**.
 
@@ -125,11 +125,11 @@ Your site needs more information.  To add some content:
       </ul>
    ```
 
-   :::image type="content" source="media/beginners-html-add4.msft.png" alt-text="The updated code is also highlighted in the editor tab." lightbox="media/beginners-html-add4.msft.png":::
+   ![The updated code is also highlighted in the editor tab.](media/beginners-html-add4.msft.png)
 
 1. View the **live tab** to make sure that the new content is displayed correctly.
 
-   :::image type="content" source="media/beginners-html-add5.msft.png" alt-text="The new list is visible in the live tab." lightbox="media/beginners-html-add5.msft.png":::
+   ![The new list is visible in the live tab.](media/beginners-html-add5.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -144,22 +144,22 @@ Before editing content from Microsoft Edge DevTools, let's understand the differ
 1. Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` is displayed.
 
     <!--
-      :::image type="content" source="media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page, the text 'A new element!?!' is displayed." lightbox="media/beginners-html-dom1.msft.png":::
+      ![At the bottom of the page, the text 'A new element!?!' is displayed.](media/beginners-html-dom1.msft.png)
     -->
 
 1. Open the **editor tab** and try to find the text in `index.html`. The text doesn't appear in this view.
 
     <!--
-      :::image type="content" source="media/beginners-html-dom2.msft.png" alt-text="The mystery text 'A new element!?!' isn't found in index.html." lightbox="media/beginners-html-dom2.msft.png":::
+      ![The mystery text 'A new element!?!' isn't found in index.html.](media/beginners-html-dom2.msft.png)
     -->
 
 1. Open the **live tab**, right-click `A new element!?!`, and then select **Inspect**.
 
-   :::image type="content" source="media/beginners-html-dom3.msft.png" alt-text="Inspecting some text." lightbox="media/beginners-html-dom3.msft.png":::
+   ![Inspecting some text.](media/beginners-html-dom3.msft.png)
 
    DevTools opens alongside your page.  `<div>A new element!?!</div>` is highlighted.  Although this structure in DevTools looks like HTML, it's actually the **DOM Tree**.
 
-   :::image type="content" source="media/beginners-html-dom4.msft.png" alt-text="DevTools is open alongside the page." lightbox="media/beginners-html-dom4.msft.png":::
+   ![DevTools is open alongside the page.](media/beginners-html-dom4.msft.png)
 
 When your page loads, the browser uses the HTML to create the initial content of the page.  The DOM represents the current content of the page, which can change over time.
 
@@ -182,11 +182,11 @@ To quickly experiment with content changes without leaving the live tab:
    </header>
    ```
 
-   :::image type="content" source="media/beginners-html-edit2.msft.png" alt-text="Updating the node as HTML." lightbox="media/beginners-html-edit2.msft.png":::
+   ![Updating the node as HTML.](media/beginners-html-edit2.msft.png)
 
 1. Press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to save your changes, or select outside the box. Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.
 
-   :::image type="content" source="media/beginners-html-edit3.msft.png" alt-text="The new content shows up immediately on the page." lightbox="media/beginners-html-edit3.msft.png":::
+   ![The new content shows up immediately on the page.](media/beginners-html-edit3.msft.png)
 
 This workflow is only suitable for experimenting with content changes.  If you refresh the page or close the tab, your changes are lost.  If you want to save your changes, manually copy the code to your HTML file. The next couple of sections show you some more ways to change content from the DOM Tree.
 
@@ -200,11 +200,11 @@ Move the navigation menu to the top:
 
 1. Find the `<nav>` node in the **DOM Tree** of DevTools.
 
-   :::image type="content" source="media/beginners-html-reorder1.msft.png" alt-text="The nav node is highlighted in DevTools." lightbox="media/beginners-html-reorder1.msft.png":::
+   ![The nav node is highlighted in DevTools.](media/beginners-html-reorder1.msft.png)
 
 1. Drag the `<nav>` node to the top, so that the node is the first child after the `<body>` node.
 
-   :::image type="content" source="media/beginners-html-reorder3.msft.png" alt-text="The nav node is at the top of the page." lightbox="media/beginners-html-reorder3.msft.png":::
+   ![The nav node is at the top of the page.](media/beginners-html-reorder3.msft.png)
 
 ### Delete a node
 
@@ -214,7 +214,7 @@ Remove a node from the DOM Tree:
 
 1. Press `Delete`.  The `<div>A new element!?!</div>` node is removed from the DOM Tree.
 
-   :::image type="content" source="media/beginners-html-delete2.msft.png" alt-text="The node has been deleted." lightbox="media/beginners-html-delete2.msft.png":::
+   ![The node has been deleted.](media/beginners-html-delete2.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -224,7 +224,7 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
 
 1. Refresh the **live tab**. The changes that you made in the DOM Tree disappear. In particular, the text `Your site!` returns to the top of the page, and the text `A new element!?!` returns to the bottom.
 
-   :::image type="content" source="media/beginners-html-copy1.msft.png" alt-text="The changes that you made are gone." lightbox="media/beginners-html-copy1.msft.png":::
+   ![The changes that you made are gone.](media/beginners-html-copy1.msft.png)
 
 1. Copy the following code:
 
@@ -262,7 +262,7 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
     
 1. Go back to the **editor tab** and replace the content of your `index.html` file with the code that you copied.
 
-   :::image type="content" source="media/beginners-html-copy2.msft.png" alt-text="How your index.html file should look." lightbox="media/beginners-html-copy2.msft.png":::
+   ![How your index.html file should look.](media/beginners-html-copy2.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -278,7 +278,7 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page was found at `https://developers.google.com/web/tools/chrome-devtools/beginners/html` <!-- 404 now --> and was authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
+> The original page was found at `https://developers.google.com/web/tools/chrome-devtools/beginners/html` and was authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

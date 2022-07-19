@@ -11,7 +11,7 @@ ms.date: 04/27/2022
 # Manage user data folders
 <!-- # old title: Manage the user data folder -->
 
-The user data folder (UDF) is a folder stored on the user's machine, that contains data related to the host app and WebView2.
+The user data folder (UDF) is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
 
 
 **Terminology:**
@@ -264,7 +264,7 @@ Use [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icoreweb
 
 ```cpp
 std::wstring m_userDataFolder;
-m_userDataFolder = L"C:\MyAppUserDataFolder"
+m_userDataFolder = L"C:\\MyAppUserDataFolder"
 auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
 
 HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
@@ -313,7 +313,7 @@ Use the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.w
 
 ```csharp
 string UserDataFolder;
-UserDataFolder = "C:\MyAppUserDataFolder";
+UserDataFolder = "C:\\MyAppUserDataFolder";
 _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
                                             UserDataFolder, 
                                             new CoreWebView2EnvironmentOptions(null, Language, null));
@@ -358,7 +358,7 @@ You should specify the same folder where all other app data is stored.
 
 ```csharp
 string UserDataFolder;
-UserDataFolder = "C:\MyAppUserDataFolder";
+UserDataFolder = "C:\\MyAppUserDataFolder";
 _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
                                             UserDataFolder, 
                                             new CoreWebView2EnvironmentOptions(null, Language, null));

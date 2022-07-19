@@ -1,5 +1,5 @@
 ---
-title: "WebView2 sample: Chrome DevTools Protocol extension in a WPF app"
+title: WPF sample app with CDP extension
 description: This WebView2 sample demonstrates how to use the DevTools Protocol in a WPF app by using the WebView2 CDP extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
 ---
-# WebView2 sample: Chrome DevTools Protocol extension in a WPF app
+# WPF sample app with CDP extension
 
 This WebView2 sample demonstrates how to use the WebView2 CDP extension to use the Chrome DevTools Protocol in a WPF app.
 
@@ -32,7 +32,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2CDPExtensionWPFSample/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2CDPExtensionWPFSample/README.md`
 
 
 <!-- ====================================================================== -->
@@ -64,7 +64,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln`
 
 
 <!-- ====================================================================== -->
@@ -124,4 +124,4 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## See also
 
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
+* [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md)

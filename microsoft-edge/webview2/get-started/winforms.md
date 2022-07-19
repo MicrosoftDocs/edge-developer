@@ -55,7 +55,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## Step 4 - Install the WebView2 Runtime (optional)
 
-1. Optionally, install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2).
+1. Optionally, install the WebView2 Runtime.  See [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2).
 
    If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
   
@@ -585,10 +585,11 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
+developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:
-* [WebView2 sample: WinForms browser app](../samples/webview2windowsformsbrowser.md) - Demonstrates more WebView2 APIs than the present tutorial.
+* [WinForms sample app](../samples/webview2windowsformsbrowser.md) - Demonstrates more WebView2 APIs than the present tutorial.
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)

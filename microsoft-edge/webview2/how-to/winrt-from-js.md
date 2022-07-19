@@ -101,8 +101,8 @@ Let's get started!
 
 In case you need more information, see detailed steps in these pages, and then continue below:
 * [WebView2 sample: WinUI 2 (UWP) browser app](../samples/webview2_sample_uwp.md) - steps to open, compile, and run the sample app.
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md) - setting up a basic WebView2 app.
-* [GitHub > WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp)
+* [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md) - setting up a basic WebView2 app.
+* [GitHub > WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
 * [Set up your Dev environment for WebView2](machine-setup.md) - details about setting up prerequisites.
 
 
@@ -122,6 +122,8 @@ Add a project for the wv2winrt tool, as follows:
 1. Select the **Windows Runtime Component (C++/WinRT)** card, and then click the **Next** button:
 
    ![Selecting the Windows Runtime Component (C++/WinRT) card in the 'Add a new project' dialog.](winrt-from-js-images/add-proj-cpp-winrt.png)
+
+   **Note:** Make sure the template includes C++/WinRT in its name. If you can't see this template, install the **Universal Windows Platform development** workload from within the Visual Studio Installer. If you are using Visual Studio 2019 and still can't find the template, install the **C++/WinRT templates and visualizer for VS2019** extension from **Visual Studio > Extensions > Manage Extensions**.
 
    The **Configure your new project** window opens.
 
@@ -267,6 +269,21 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
 
 Source code is generated for namespaces or classes that you specified in the **Include filters** dialog.  That dialog populates the **Include filters** row of the **WinRTAdapter Property Pages** dialog for the **WinRTAdapter** project.
 
+> [!IMPORTANT]
+> If you installed a release version of the WebView2 SDK and your build fails with `error MIDL2011: [msg]unresolved type declaration [context]: Microsoft.Web.WebView2.Core.ICoreWebView2DispatchAdapter [ RuntimeClass 'WinRTAdapter.DispatchAdapter'  ]`, this is an issue in the release version of the WebView2 SDK and you will need to change **Use WebView2 WinRT APIs** to **Yes** in the steps above.
+>
+> Alternatively, add the following after the last `</ItemGroup>` in the project file `WinRTAdapter.vcxproj`:
+>
+>```xml
+><ItemGroup Condition="'$(WebView2UseDispatchAdapter)' == 'true'">
+>  <Reference Include="$(WebView2SDKPath)lib\Microsoft.Web.WebView2.Core.winmd">
+>    <!-- wv2winrt needs Dispatch Adapter metadata to generate code -->
+>  </Reference>
+></ItemGroup>
+>```
+>
+> Replace `$(WebView2SDKPath)` with the directory where the WebView2 SDK was installed, with a `\` at the end. For example: `..\webview2_sample_uwp\packages\Microsoft.Web.WebView2.1.0.1264.42\`.
+
 
 <!-- =============================================== -->
 ## Step 7. Add the host object in the webview2_sample_uwp project
@@ -364,8 +381,8 @@ webview.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync(
                     "if (chrome && chrome.webview) {" +
                         "console.log('Setting up WinRT projection options');" +
                         "chrome.webview.hostObjects.options.defaultSyncProxy = true;" +
-                        "chrome.webview.hostObjects.options.forceAsyncMethodMatches = [/Async$/,/AsyncWithSpeller$/];" + 
-                        "chrome.webview.hostObjects.options.ignoreMemberNotFoundError = true;"  + 
+                        "chrome.webview.hostObjects.options.forceAsyncMethodMatches = [/Async$/,/AsyncWithSpeller$/];" +
+                        "chrome.webview.hostObjects.options.ignoreMemberNotFoundError = true;"  +
                         "window.Windows = chrome.webview.hostObjects.sync.Windows;" +
                     "}" +
                 "})();");
@@ -421,8 +438,8 @@ General articles:
 
 Sample:
 * [WebView2Samples > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - WebView2 UWP WinUi2 browser.
-* [WebView2 sample: WinUI 2 (UWP) browser app](../samples/webview2_sample_uwp.md) - General walkthrough of how to download, compile, and run the sample.
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md) - Tutorial to download, compile, and run the sample.
+* [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - General walkthrough of how to download, compile, and run the sample.
+* [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md) - Tutorial to download, compile, and run the sample.
 
 API Reference:
 * WinRT: [CoreWebView2.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)

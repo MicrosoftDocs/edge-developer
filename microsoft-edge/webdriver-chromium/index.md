@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 01/20/2022
+ms.date: 05/17/2022
 ---
 # Use WebDriver to automate Microsoft Edge
 
@@ -50,13 +50,13 @@ To begin writing automated tests, make sure the Edge WebDriver version you insta
 
 1.  Go to `edge://settings/help` and note your version of Microsoft Edge.
 
-    :::image type="content" source="./media/microsoft-edge-version.msft.png" alt-text="The build number for Microsoft Edge on April 15, 2021." lightbox="./media/microsoft-edge-version.msft.png":::
+    ![The build number for Microsoft Edge on April 15, 2021.](media/microsoft-edge-version.msft.png)
 
 1.  Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver).
 
 1.  In the **Get the latest version** section of the page, select a platform in the channel that matches your version number of Microsoft Edge.
 
-    :::image type="content" source="./media/microsoft-edge-driver-install.msft.png" alt-text="The `Get the latest version` section of the Microsoft Edge WebDriver webpage." lightbox="./media/microsoft-edge-driver-install.msft.png":::
+    ![The `Get the latest version` section of the Microsoft Edge WebDriver webpage.](media/microsoft-edge-driver-install.msft.png)
 
 1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
 
@@ -68,27 +68,33 @@ After downloading Edge WebDriver, the last component you must download is a WebD
 
 This article provides instructions for using the Selenium framework, but you can use any library, framework, and programming language that supports WebDriver.  To accomplish the same tasks using a WebDriver testing framework other than Selenium, consult the official documentation for your framework of choice.
 
+
 ### Using Selenium 4
 
 Selenium WebDriver is an open-source testing framework that can be used on any platform, and provides language bindings for Java, Python, C#, Ruby, and JavaScript.
 
-The Microsoft Edge team recommends [Selenium 4](https://www.nuget.org/packages/Selenium.WebDriver), because Selenium 4 has built-in support for Microsoft Edge (Chromium).  To install Selenium 4, see [Installing Selenium libraries](https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries).
+To use WebDriver to automate Microsoft Edge, if you use Selenium, you must use Selenium 4, which has built-in support for Microsoft Edge (Chromium).
+
+To install Selenium 4, see [Install a Selenium library](https://www.selenium.dev/documentation/webdriver/getting_started/install_library/).  In case you need it, the nuget packages page is [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver).
+
 
 ### Upgrading from Selenium 3
 
-The Microsoft Edge team recommends upgrading existing Selenium 3 tests to Selenium 4, because the Selenium project no longer maintains Selenium 3.  To learn more about upgrading to Selenium 4, see [Upgrade to Selenium 4](https://www.selenium.dev/documentation/webdriver/getting_started/upgrade_to_selenium_4/).
+To use WebDriver to automate Microsoft Edge, if you use Selenium, make sure you are using Selenium 4.  Selenium 3 is no longer supported.
+
+You must upgrade existing Selenium 3 tests to Selenium 4.  To learn more about upgrading to Selenium 4, see [Upgrade to Selenium 4](https://www.selenium.dev/documentation/webdriver/getting_started/upgrade_to_selenium_4/).
 
 If you're using [Selenium Tools for Microsoft Edge](https://github.com/microsoft/edge-selenium-tools) to add Microsoft Edge (Chromium) support to your Selenium 3 browser tests, update your tests as follows:
 
-1. Remove [Selenium Tools for Microsoft Edge](https://github.com/microsoft/edge-selenium-tools) from your project.  You don't need to use Selenium Tools for Microsoft Edge with Selenium 4, because Selenium 4 already has built-in support for Microsoft Edge (Chromium).
+1. Remove Selenium Tools for Microsoft Edge from your project.  You don't need to use Selenium Tools for Microsoft Edge with Selenium 4, because Selenium 4 already has built-in support for Microsoft Edge (Chromium).
 
 1. Update your tests to use the built-in `EdgeDriver` and related classes that Selenium 4 provides instead.
 
 1. Remove all usages of the `EdgeOptions.UseChromium` property.  This property no longer exists in Selenium 4, because Selenium 4 supports only Microsoft Edge (Chromium).
 
-<!-- apparently decorative only; not a tab-end indicator: -->
+<!-- decorative hr; not a tab-end indicator: -->
 
-* * *
+---
 
 
 <!-- ====================================================================== -->
@@ -113,7 +119,7 @@ Selenium uses the `EdgeDriver` class to manage a Microsoft Edge session.  The fo
 
 To get started automating Microsoft Edge with WebDriver, copy and paste the code snippet for your preferred language:
 
-#### [C#](#tab/c-sharp/)
+# [C#](#tab/c-sharp)
 
 ```csharp
 using OpenQA.Selenium;
@@ -146,7 +152,7 @@ namespace EdgeDriverSample
 }
 ```
 
-#### [Python](#tab/python/)
+# [Python](#tab/python)
 
 ```python
 from selenium import webdriver
@@ -165,7 +171,7 @@ time.sleep(5)
 driver.quit()
 ```
 
-#### [Java](#tab/java/)
+# [Java](#tab/java)
 
 ```java
 import org.openqa.selenium.By;
@@ -190,7 +196,7 @@ public class EdgeDriverSample {
 }
 ```
 
-#### [JavaScript](#tab/javascript/)
+# [JavaScript](#tab/javascript)
 
 ```javascript
 const { Builder, By } = require('selenium-webdriver');
@@ -211,7 +217,7 @@ const { Builder, By } = require('selenium-webdriver');
 })();
 ```
 
-* * *
+---
 
 ### Manage and configure the Edge WebDriver service
 
@@ -223,7 +229,7 @@ You can also use `EdgeDriverService` to configure command-line options for the E
 
 The following snippet creates a new `EdgeDriverService` and enables verbose log output:
 
-#### [C#](#tab/c-sharp/)
+# [C#](#tab/c-sharp)
 
 ```csharp
 var service = EdgeDriverService.CreateDefaultService();
@@ -232,7 +238,7 @@ service.UseVerboseLogging = true;
 var driver = new EdgeDriver(service);
 ```
 
-#### [Python](#tab/python/)
+# [Python](#tab/python)
 
 ```python
 from selenium import webdriver
@@ -243,7 +249,7 @@ service = Service(verbose = True)
 driver = webdriver.Edge(service = service)
 ```
 
-#### [Java](#tab/java/)
+# [Java](#tab/java)
 
 ```java
 System.setProperty("webdriver.edge.verboseLogging", "true");
@@ -252,7 +258,7 @@ EdgeDriverService service = EdgeDriverService.createDefaultService();
 EdgeDriver driver = new EdgeDriver(service);
 ```
 
-#### [JavaScript](#tab/javascript/)
+# [JavaScript](#tab/javascript)
 
 ```javascript
 const edge = require('selenium-webdriver/edge');
@@ -263,7 +269,7 @@ const options = new edge.Options();
 const driver = edge.Driver.createSession(options, service);
 ```
 
-* * *
+---
 
 ### Configure Microsoft Edge Options
 
@@ -273,7 +279,7 @@ You can pass an `EdgeOptions` object to the `EdgeDriver` constructor to configur
 
 You can start a WebDriver session with specific Microsoft Edge binaries.  For example, you can run tests using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download), such as Microsoft Edge Beta, Dev, or Canary.
 
-##### [C#](#tab/c-sharp/)
+# [C#](#tab/c-sharp)
 
 ```csharp
 var options = new EdgeOptions();
@@ -282,7 +288,7 @@ options.BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge Beta\Applicatio
 var driver = new EdgeDriver(options);
 ```
 
-##### [Python](#tab/python/)
+# [Python](#tab/python)
 
 ```python
 from selenium import webdriver
@@ -294,7 +300,7 @@ options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Applicati
 driver = webdriver.Edge(options = options)
 ```
 
-##### [Java](#tab/java/)
+# [Java](#tab/java)
 
 ```java
 EdgeOptions options = new EdgeOptions();
@@ -303,7 +309,7 @@ options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge Beta\\Application\\m
 EdgeDriver driver = new EdgeDriver(options);
 ```
 
-##### [JavaScript](#tab/javascript/)
+# [JavaScript](#tab/javascript)
 
 ```javascript
 const edge = require('selenium-webdriver/edge');
@@ -314,13 +320,13 @@ options.setBinaryPath("C:\\Program Files (x86)\\Microsoft\\Edge Beta\\Applicatio
 let driver = edge.Driver.createSession(options);
 ```
 
-* * *
+---
 
 #### Pass extra command-line arguments
 
 You can use `EdgeOptions` to configure command-line arguments that will be passed to the Microsoft Edge browser process when a session is created.  For example, you can configure the browser to run in headless mode.
 
-##### [C#](#tab/c-sharp/)
+# [C#](#tab/c-sharp)
 
 ```csharp
 var options = new EdgeOptions();
@@ -329,7 +335,7 @@ options.AddArgument("headless");
 var driver = new EdgeDriver(options);
 ```
 
-##### [Python](#tab/python/)
+# [Python](#tab/python)
 
 ```python
 from selenium import webdriver
@@ -341,7 +347,7 @@ options.add_argument("headless")
 driver = webdriver.Edge(options = options)
 ```
 
-##### [Java](#tab/java/)
+# [Java](#tab/java)
 
 ```java
 EdgeOptions options = new EdgeOptions();
@@ -350,7 +356,7 @@ options.addArguments("headless");
 EdgeDriver driver = new EdgeDriver(options);
 ```
 
-##### [JavaScript](#tab/javascript/)
+# [JavaScript](#tab/javascript)
 
 ```javascript
 const edge = require('selenium-webdriver/edge');
@@ -361,7 +367,7 @@ options.addArguments("headless");
 let driver = edge.Driver.createSession(options);
 ```
 
-* * *
+---
 
 
 <!-- ====================================================================== -->
@@ -369,7 +375,7 @@ let driver = edge.Driver.createSession(options);
 
 ### Docker
 
-If you use [Docker](https://hub.docker.com), run the following command to download a pre-configured image that has Microsoft Edge and [Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) pre-installed.
+If you use [Docker](https://hub.docker.com), run the following command to download a pre-configured image that has Microsoft Edge and Microsoft Edge WebDriver pre-installed.
 
 ```console
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
@@ -396,7 +402,7 @@ For more information about Application Guard, see:
 <!-- ====================================================================== -->
 ## Opt out of diagnostic data collection
 
-By default, Edge WebDriver sends diagnostic data such as the status of the [New Session WebDriver command](https://www.w3.org/TR/webdriver2/#new-session) to Microsoft.  To turn off diagnostic data collection for Edge WebDriver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about the data that Edge WebDriver collects, see the [Microsoft Edge Privacy Whitepaper](/microsoft-edge/privacy-whitepaper#microsoft-edge-webdriver).
+By default, Edge WebDriver sends diagnostic data such as the status of the [New Session](https://www.w3.org/TR/webdriver2/#new-session) WebDriver command to Microsoft.  To turn off diagnostic data collection for Edge WebDriver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about the data that Edge WebDriver collects, see the [Microsoft Edge Privacy Whitepaper](/microsoft-edge/privacy-whitepaper#microsoft-edge-webdriver).
 
 
 <!-- ====================================================================== -->
@@ -412,11 +418,14 @@ See [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/).
 
 These are troubleshooting considerations when using WebDriver to automate Microsoft Edge.
 
+
 ### Developer Tools Availability policy
 
-If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy to `2`,  [Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) is blocked from driving Microsoft Edge, because the driver uses [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md).  To automate Microsoft Edge, make sure the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy is set to `0` or `1`.
+If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy to `2`, Microsoft Edge WebDriver is blocked from driving Microsoft Edge, because the driver uses [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md).  To automate Microsoft Edge, make sure the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy is set to `0` or `1`.
 
 ### Upgrading from Selenium 3 to Selenium 4
+
+To use WebDriver to automate Microsoft Edge, if you use Selenium, make sure you are using Selenium 4.  Selenium 3 is no longer supported.
 
 If you use Selenium 4, you don't need to use Selenium Tools for Microsoft Edge.  Selenium Tools for Microsoft Edge are for Selenium 3 only.  If you try to use Selenium 4 with Selenium Tools for Microsoft Edge and try to create a new `EdgeDriver` instance, you get the following error: `System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`.
 
@@ -426,5 +435,5 @@ If you're using Selenium 4 and get this error, remove `Microsoft.Edge.SeleniumTo
 <!-- ====================================================================== -->
 ## See also
 
-*  [Selenium documentation](https://www.selenium.dev/documentation) - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
-*  [Contact the Microsoft Edge WebDriver team](contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.
+* [The Selenium Browser Automation Project](https://www.selenium.dev/documentation) - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
+* [Contact the Microsoft Edge WebDriver team](contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.

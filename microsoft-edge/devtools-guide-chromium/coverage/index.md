@@ -24,7 +24,7 @@ ms.date: 05/04/2021
 
 The Coverage tool can help you find unused JavaScript and CSS code.  Removing unused code can speed up your page load and save your mobile users cellular data.
 
-:::image type="content" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyzing code coverage." lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+![Analyzing code coverage.](../media/coverage-sources-resource-drawer-coverage.msft.png)
 
 Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs can be difficult.  This guide doesn't cover how to refactor a codebase to avoid unused code, because this refactoring depends on your technology stack.
 
@@ -58,7 +58,7 @@ This extra CSS is a problem for the following reasons:
 
 1. Start typing `coverage`, select the **Show Coverage** command, and then press `Enter`.  The **Coverage** tool opens in the **Drawer**.
 
-   :::image type="content" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage tool." lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+   ![The Coverage tool.](../media/coverage-console-drawer-coverage-empty.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -80,7 +80,7 @@ The table in the **Coverage** tool displays the resources that were analyzed, an
 
 A code coverage report:
 
-:::image type="content" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="A code coverage report." lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+![A code coverage report.](../media/coverage-sources-resource-drawer-coverage-selected.msft.png)
 
 Columns in the code coverage report:
 
@@ -96,7 +96,7 @@ Columns in the code coverage report:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/coverage/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/coverage/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

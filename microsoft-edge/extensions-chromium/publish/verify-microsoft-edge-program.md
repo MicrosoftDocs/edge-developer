@@ -27,8 +27,9 @@ This section describes the types of verification, what is verified, and suggesti
 
 Email ownership verifies that the primary contact (primary email) address is valid.
 
-* The primary contact email address must be a work account that is monitored and can send/receive email.
-* Avoid using a personal email address not associated with the company domain, or a tenant user credential not associated with email. For example, jsmith@testcompany on microsoft.com, or abc@gmail.com.
+* The primary contact email address must be a work account that is monitored and can send and receive email.
+* Avoid using a personal email address.  You must use an email address associated with a company domain, such as \<alias\>@contoso.com.
+* Avoid using a tenant user credential that's not associated with email, such as \<alias\>@contoso on microsoft.com.
 
 #### Suggestions
 
@@ -73,7 +74,7 @@ Submit one of the following documents for business verification:
 
 Confirm that the company name and address in your [Legal business profile](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) have no spelling errors or abbreviations. They must match your formal company business registration records exactly. If appropriate, select the match found in external company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
 
-Microsoft uses this documentation to verify that the company is authorized to do business under that name, and that it is located at the address provided. For further assistance, go to your profile page to upload additional proofs through the [interactive vetting experience](#checking-your-verification-status) |
+Microsoft uses this documentation to verify that the company is authorized to do business under that name, and that it is located at the address provided. For further assistance, go to your profile page to upload additional proofs through the interactive vetting experience; see the next section, [Checking your verification status](#checking-your-verification-status).
 
 
 <!-- ====================================================================== -->

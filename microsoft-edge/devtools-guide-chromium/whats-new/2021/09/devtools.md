@@ -22,7 +22,7 @@ Search the web for your **Console** errors, from within DevTools.  In the **Cons
 
 ![The 'Search for this message on the Web' button on an error in the Console.](../../media/2021/09/search-console-icon.msft.png)
 
-See [Look up error messages on the web from the Console](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console).
+See [Search the web for a Console error message string](../../../console/index.md#search-the-web-for-a-console-error-message-string).
 
 
 <!-- ====================================================================== -->
@@ -87,5 +87,5 @@ See also:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-94) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

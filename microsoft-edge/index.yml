@@ -127,10 +127,10 @@ conceptualContent:
               text: Manage Microsoft Edge extensions in the enterprise
               url: /deployedge/microsoft-edge-manage-extensions
             - itemType: reference
-              text: Match patterns
+              text: Defining match patterns to access file URLs
               url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
             - itemType: reference
-              text: Hosting and updating
+              text: Extension hosting
               url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
 # =============================================================================
     - title: Microsoft Edge for Developers # < 60 chars (optional)
@@ -174,7 +174,28 @@ conceptualContent:
             - text: Keyboard shortcuts
               url: /microsoft-edge/devtools-guide-chromium/shortcuts
               itemType: reference
+        # Card
+        - title: Microsoft Edge IDE integration
+          links:
+            - url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
+              itemType: how-to-guide
+              text: DevTools extension for Visual Studio Code
 
+            - text: Microsoft Edge IDE integration
+              url: /microsoft-edge/visual-studio-code/ide-integration
+              itemType: overview
+
+            - text: Open source files in Visual Studio Code
+              url: /microsoft-edge/devtools-guide-chromium/sources/opening-sources-in-vscode
+              itemType: how-to-guide
+
+            - text: Debug Microsoft Edge in Visual Studio Code
+              url: /microsoft-edge/visual-studio-code/debugger-for-edge
+              itemType: overview
+
+            - text: Visual Studio for web development
+              url: /microsoft-edge/visual-studio/
+              itemType: how-to-guide
         # Card
         - title: Microsoft Edge extensions
           links:
@@ -303,24 +324,6 @@ conceptualContent:
               url: /microsoft-edge/web-platform/how-to-detect-win11
               itemType: how-to-guide
         # Card
-        - title: Microsoft Edge IDE integration
-          links:
-            - url: /microsoft-edge/visual-studio-code/ide-integration
-              text: Microsoft Edge IDE integration  # new firstchild article
-              itemType: overview
-            - url: /microsoft-edge/visual-studio/
-              itemType: overview
-              text: Visual Studio
-            - url: /microsoft-edge/visual-studio-code/
-              itemType: overview
-              text: Visual Studio Code overview
-            - url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
-              itemType: overview
-              text: DevTools extension for Visual Studio Code
-            - url: /microsoft-edge/visual-studio-code/webhint
-              itemType: overview
-              text: webhint extension for Visual Studio Code
-        # Card
         - title: Accessibility in Microsoft Edge
           links:
             - url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
@@ -368,8 +371,8 @@ additionalContent:
           links:
             - text: How to detect Microsoft Edge in your website
               url: /microsoft-edge/web-platform/user-agent-guidance
-            - text: Platform Status
-              url: https://developer.microsoft.com/microsoft-edge/platform/status
+            - text: Microsoft Edge Platform Status
+              url: https://developer.microsoft.com/microsoft-edge/status
             - text: Visual Studio Code
               url: /microsoft-edge/visual-studio-code/index
             - text: Privacy Whitepaper

@@ -2,14 +2,14 @@
   href: developer/index.yml
   items:
 # =============================================================================
-    - name: Develop for the web with Microsoft Edge  # new, topmost firstchild article
+    - name: Develop for the web with Microsoft Edge
       href: develop-web-microsoft-edge.md
       displayName: 
 
     - name: Microsoft Edge DevTools
       items:
 # Card-based landing page -----------------------------------------------------
-        - name: Microsoft Edge DevTools documentation  # new landing page
+        - name: Microsoft Edge DevTools documentation
           href: devtools-guide-chromium/landing/index.yml
           displayName: DevTools
 
@@ -26,11 +26,20 @@
           items:
 
 # What's New firstchild article
-            - name: What's new in Microsoft Edge DevTools  # new firstchild article
+            - name: What's new in Microsoft Edge DevTools
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: 
 
 # What's New pages ------------------------------------------------------------
+            # add new pages to nav page too
+            - name: Microsoft Edge 103
+              href: devtools-guide-chromium/whats-new/2022/06/devtools-103.md
+              displayName: what's new, announcements, release notes
+
+            - name: Microsoft Edge 102
+              href: devtools-guide-chromium/whats-new/2022/05/devtools-102.md
+              displayName: what's new, announcements, release notes
+
             - name: Microsoft Edge 101
               href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
               displayName: what's new, announcements, release notes
@@ -126,6 +135,10 @@
             - name: Simplify DevTools using Focus Mode
               href: devtools-guide-chromium/experimental-features/focus-mode.md
               displayName: Experimental features, Focus Mode
+
+            - name: Run commands via keyboard with Command Palette
+              href: devtools-guide-chromium/experimental-features/edge-command-palette.md
+              displayName: Experimental features, Edge Command Palette
 
 # TOOLS =======================================================================
         - name: Tools
@@ -290,7 +303,7 @@
               items:
                 - name: Navigate webpage layers, z-index, and DOM using the 3D View tool  # added article
                   href: devtools-guide-chromium/3d-view/index.md
-                  displayName: 3D View tool, Layers tool, composited layers
+                  displayName: 3D View tool, composited layers
 # Animations tool -------------------------------------------------------------
             - name: Animations tool
               items:
@@ -388,12 +401,6 @@
                 - name: JavaScript Profiler tool
                   href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
                   displayName: JavaScript Profiler tool
-# Layers tool -----------------------------------------------------------------
-            - name: Layers tool
-              items:
-                - name: Layers tool
-                  href: devtools-guide-chromium/layers/layers-tool.md
-                  displayName: Layers tool
 # Lighthouse tool -------------------------------------------------------------
             - name: Lighthouse tool  # new jump page  # main article is in Accessibility
               items:
@@ -767,9 +774,17 @@
 # /DevTools
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
+    - name: DevTools for Visual Studio Code
+      items:
+        - name: DevTools extension for Visual Studio Code
+          href: visual-studio-code/microsoft-edge-devtools-extension.md
+          displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
+
+# =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge extensions
       items:
-        - name: Overview of Microsoft Edge extensions  # existing firstchild article
+        - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
 
         - name: What's new
@@ -796,11 +811,11 @@
 
         - name: Developer Guide
           items:
-            - name: API support
+            - name: Supported APIs for Microsoft Edge extensions
               href: extensions-chromium/developer-guide/api-support.md
 
-            - name: Declare permissions
-              href: extensions-chromium/enterprise/declare-permissions.md
+            - name: Declare API permissions in extension manifests
+              href: extensions-chromium/developer-guide/declare-permissions.md  # moved from /enterprise/
 
             - name: Port a Chrome extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
@@ -811,44 +826,50 @@
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
 
+            - name: Defining match patterns for an extension to access file URLs
+              href: extensions-chromium/developer-guide/match-patterns.md  # moved from /enterprise/
+
         - name: Manifest
           items:
             - name: Overview and timelines for migrating to Manifest V3
               href: extensions-chromium/developer-guide/manifest-v3.md
-              displayName: 
 
             - name: Migrate an extension from Manifest V2 to V3
               href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
-              displayName: 
 
             - name: Manifest file format for extensions
               href: extensions-chromium/getting-started/manifest-format.md
-              displayName: 
 
         - name: Publish to the Add-ons website
           items:
-            - name: Register as an extension developer
+            - name: Register as a Microsoft Edge extension developer
               href: extensions-chromium/publish/create-dev-account.md
 
             - name: Verify your company account information
               href: extensions-chromium/publish/verify-microsoft-edge-program.md
 
-            - name: Publish extensions using a GitHub account
+            - name: Publish a Microsoft Edge extension by using a GitHub account
               href: extensions-chromium/publish/github.md
 
             - name: Add users to the Microsoft Edge program
               href: extensions-chromium/publish/aad-account.md
 
-            - name: Publish an extension
+            - name: Publish a Microsoft Edge extension
               href: extensions-chromium/publish/publish-extension.md
 
-            - name: Update an extension
+            - name: Extension hosting
+              href: extensions-chromium/publish/hosting-and-updating.md  # moved from /enterprise/
+
+            - name: Update a Microsoft Edge extension
               href: extensions-chromium/publish/update-extension.md
 
-            - name: Submission states
+            - name: Automatically update extensions in Microsoft Edge
+              href: extensions-chromium/publish/auto-update.md  # moved from /enterprise/
+
+            - name: Submission states for extensions in the Microsoft Edge Add-ons website
               href: extensions-chromium/publish/submission-states.md
 
-            - name: View extensions analytics dashboard
+            - name: View Microsoft Edge extensions analytics dashboard
               href: extensions-chromium/publish/extensions-analytics.md
 
             - name: Reply to user reviews
@@ -858,37 +879,28 @@
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
 
-            - name: Contact extensions support
+            - name: Contact Microsoft Edge extensions support
               href: extensions-chromium/publish/contact-extensions-team.md
               displayName: feedback, log issues, enter issues, report issues, reporting issues
 
             - name: Policies for Microsoft Edge Add-ons
               items:
-                - name: Content security policy
+                - name: Content Security Policy (CSP)
                   href: extensions-chromium/store-policies/csp.md
 
-                - name: Microsoft Edge developer ADA addendum
+                - name: App Developer Agreement Addendum for Microsoft Edge program users
                   href: extensions-chromium/store-policies/ada-addendum.md
 
-                - name: Developer policies
+                - name: Microsoft Edge Add-ons store developer policies
                   href: extensions-chromium/store-policies/developer-policies.md
 
             - name: Microsoft Edge Add-ons API
               items:
                 - name: Using the Microsoft Edge Add-ons API
                   href: extensions-chromium/publish/api/using-addons-api.md
+
                 - name: Microsoft Edge Add-ons API Reference
                   href: extensions-chromium/publish/api/addons-api-reference.md
-        - name: Extensions for enterprise
-          items:
-            - name: Match patterns
-              href: extensions-chromium/enterprise/match-patterns.md
-
-            - name: Hosting and updating
-              href: extensions-chromium/enterprise/hosting-and-updating.md
-
-            - name: Auto-update
-              href: extensions-chromium/enterprise/auto-update.md
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
@@ -963,6 +975,10 @@
           href: webview2/index.md
           displayName: 
 
+        - name: Overview of WebView2 features and APIs
+          href: webview2/concepts/overview-features-apis.md
+          displayName: 
+
 # -----------------------------------------------------------------------------
         - name: Setup and sample code
           items:
@@ -975,29 +991,29 @@
               displayName: Sample Code for WebView2  # top-of-page title
 
 # in alpha order of downloaded repo directories
-            - name: WebView2 control and API samples
+            - name: WebView2 sample apps
               items:
-                - name: WinUI 2 (UWP) browser app
+                - name: WinUI 2 (UWP) sample app
                   href: webview2/samples/webview2_sample_uwp.md
                   displayName: webview2_sample_uwp  # repo dir name
 
-                - name: Win32 C++ app
+                - name: Win32 sample app
                   href: webview2/samples/webview2apissample.md
                   displayName: WebView2APISample, SampleApps  # repo dir names
 
-                - name: Win32 C++ app with Visual Composition
+                - name: Win32 sample app with Visual Composition
                   href: webview2/samples/webview2samplewincomp.md
                   displayName: WebView2SampleWinComp  # repo dir name
 
-                - name: WinForms browser app
+                - name: WinForms sample app
                   href: webview2/samples/webview2windowsformsbrowser.md
                   displayName: WebView2WindowsFormsBrowser  # repo dir name
 
-                - name: WPF .NET browser app
+                - name: WPF sample app
                   href: webview2/samples/webview2wpfbrowser.md
                   displayName: WebView2WpfBrowser  # repo dir name
 
-                - name: Chrome DevTools Protocol extension in a WPF app
+                - name: WPF sample app with CDP extension
                   href: webview2/samples/wv2cdpextensionwpfsample.md
                   displayName: WV2CDPExtensionWPFSample  # repo dir name
 
@@ -1008,11 +1024,11 @@
                   href: webview2/samples/wv2deploymentvsinstallersample.md
                   displayName: WV2DeploymentVSInstallerSample  # repo dir name
 
-                - name: WiX Burn Bundle to deploy the Runtime
+                - name: WiX Burn Bundle to deploy the WebView2 Runtime
                   href: webview2/samples/wv2deploymentwixburnbundlesample.md
                   displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
 
-                - name: WiX Custom Action to deploy the Runtime
+                - name: WiX Custom Action to deploy the WebView2 Runtime
                   href: webview2/samples/wv2deploymentwixcustomactionsample.md
                   displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
 
@@ -1031,9 +1047,9 @@
               href: webview2/get-started/winforms.md
               displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
 
-            - name: WinUI 2 (UWP, public preview)
+            - name: WinUI 2 (UWP)
               href: webview2/get-started/winui2.md
-              displayName: Get started with WebView2 in WinUI 2 (UWP) apps (public preview)  # repo dir name  # top-of-page title
+              displayName: Get started with WebView2 in WinUI 2 (UWP) apps  # repo dir name  # top-of-page title
 
             - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
@@ -1048,6 +1064,10 @@
           items:
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
+              displayName: 
+
+            - name: "Main classes for WebView2: Environment, Controller, and Core"
+              href: webview2/concepts/environment-controller-core.md
               displayName: 
 
             - name: Navigation events
@@ -1080,10 +1100,12 @@
                   href: webview2/how-to/winrt-from-js.md
                   displayName: AddHostObjectToScript, host objects
 
+            # updated h2: Experimental APIs, added a 2nd, new h3:
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
               displayName: Understand WebView2 SDK versions  # old title
 
+            # update needed?
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
               displayName: 
@@ -1157,7 +1179,7 @@
 
             - name: Customize context menus
               href: webview2/how-to/context-menus.md
-              displayName: right-click menu, Customize context menus in WebView2  # top of page title
+              displayName: right-click menu, Customize context menus in WebView2  # top-of-page title
 
             - name: Use the Chrome DevTools Protocol
               href: webview2/how-to/chromium-devtools-protocol.md
@@ -1200,16 +1222,6 @@
               href: webview2/webview2-api-reference.md
               displayName: functions, methods  # list relevant platforms
 
-            - name: Win32 C++
-              items:
-                - name: Win32 C++ WebView2 API conventions
-                  href: webview2/concepts/win32-api-conventions.md
-                  displayName: 
-
-                - name: Win32 C++ API Reference
-                  href: /microsoft-edge/webview2/reference/win32/index
-                  displayName: functions, methods
-
             - name: .NET
               items:
                 - name: Microsoft.Web.WebView2.Core
@@ -1226,12 +1238,22 @@
 
             - name: WinRT
               items:
-                - name: Microsoft.Web.WebView2.Core
+                - name: Microsoft.Web.WebView2.Core (C#)
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: functions, methods
 
-                - name: COM Interop
+                - name: COM Interop (C++)
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
+                  displayName: functions, methods
+
+            - name: Win32 C++
+              items:
+                - name: Win32 C++ WebView2 API conventions
+                  href: webview2/concepts/win32-api-conventions.md
+                  displayName: 
+
+                - name: Win32 C++ API Reference
+                  href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
 
         - name: Contact the WebView2 Team
@@ -1316,27 +1338,17 @@
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge IDE integration
       items:
-        - name: Microsoft Edge IDE integration  # new firstchild article
+        - name: Microsoft Edge IDE integration
           href: visual-studio-code/ide-integration.md
           displayName: 
 
-        - name: Visual Studio Code
-          items:
-            - name: Visual Studio Code for web development
-              href: visual-studio-code/index.md
-              displayName: 
+        - name: Opening source files in Visual Studio Code
+          href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
+          displayName: 
 
-            - name: Microsoft Edge DevTools extension
-              href: visual-studio-code/microsoft-edge-devtools-extension.md
-              displayName: 
-
-            - name: Open source files in Visual Studio Code
-              href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
-              displayName: 
-
-            - name: Debugger for Edge
-              href: visual-studio-code/debugger-for-edge.md
-              displayName: 
+        - name: Debug Microsoft Edge in Visual Studio Code
+          href: visual-studio-code/debugger-for-edge.md
+          displayName: 
 
         - name: Visual Studio for web development
           href: visual-studio/index.md

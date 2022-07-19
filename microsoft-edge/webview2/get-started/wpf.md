@@ -34,8 +34,6 @@ This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code
 
    We recommend using the Canary channel of Microsoft Edge.  The minimum required version is 82.0.488.0.
 
-<!-- Or, download the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), or  -->
-
 
 <!-- ====================================================================== -->
 ## Step 3 - Create a single-window WebView2 app
@@ -455,10 +453,11 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
+developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:
-* [WebView2 sample: WPF .NET browser app](../samples/webview2wpfbrowser.md)
+* [WPF sample app](../samples/webview2wpfbrowser.md)
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)

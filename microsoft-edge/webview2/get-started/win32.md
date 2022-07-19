@@ -688,13 +688,20 @@ Congratulations, you built your first WebView2 app!  Your development environmen
 
 
 <!-- ====================================================================== -->
+## API Reference
+
+* [API Reference for WebView2 Win32 C++](/microsoft-edge/webview2/reference/win32)
+* [WebView2 API reference](/microsoft-edge/webview2/reference/win32) - API Reference for each platform.
+
+
+<!-- ====================================================================== -->
 ## See also
 
-Developer.microsoft.com:
+developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:
-* [WebView2 sample: Win32 C++ app](../samples/webview2apissample.md)
+* [Win32 sample app](../samples/webview2apissample.md)
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the samples in the **WebView2Samples** repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
@@ -704,10 +711,6 @@ WebView2Samples repo:
 * [Win32 Sample Code](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) - the code used in this tutorial.
 * [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/README.md) - a comprehensive example of WebView2 capabilities.
 * [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - a WebView2 sample app.
-
-API Reference:
-* [API Reference for WebView2 Win32 C++](/microsoft-edge/webview2/reference/win32)
-* [WebView2 API reference](/microsoft-edge/webview2/reference/win32) - API Reference for each platform.
 
 Libraries:
 * [Windows Runtime C++ Template Library (WRL)](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true)

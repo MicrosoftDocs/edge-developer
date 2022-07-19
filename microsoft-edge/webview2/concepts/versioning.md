@@ -87,15 +87,31 @@ For full support for the latest APIs in a release version of the SDK, the Runtim
 <!-- ====================================================================== -->
 ## Experimental APIs
 
+To try out new forthcoming features that are in development, use experimental APIs.  Experimental APIs are contained in prerelease versions of the WebView2 SDK, but not in release versions of the WebView2 SDK.
+
+
+### Developing with experimental APIs and providing feedback
+
 The experimental APIs in a WebView2 SDK _prerelease_ package aren't guaranteed to be forward-compatible and might be removed in future Runtime updates.  When a _prerelease_ version of the WebView2 SDK is initially made available, that SDK only works with Microsoft Edge Canary.  Soon after that, the prerelease SDK also works with the Beta and Dev channels.  Use a prerelease SDK to try out new APIs early and provide feedback before the new APIs are promoted to become stable, forward-compatible APIs.
 
-For full support of experimental APIs, use a Microsoft Edge preview channel, not the WebView2 Evergreen Runtime.  Any experimental APIs that are in a prerelease SDK aren't guaranteed to be forward-compatible.  The APIs that are in an SDK _release_ version are forward-compatible.  For more information, see [Forward compatibility of APIs](#forward-compatibility-of-apis) above.
+For full support of experimental APIs, use a Microsoft Edge preview channel, not the WebView2 Evergreen Runtime.  Any experimental APIs that are in a prerelease SDK aren't guaranteed to be forward-compatible.  The APIs that are in an SDK _release_ version are forward-compatible.  For more information, see [Forward compatibility of APIs](#forward-compatibility-of-apis), above.
 
 The WebView2 team is seeking feedback on experimental WebView2 APIs that might be promoted to Stable in future releases.  The experimental APIs are indicated as "experimental" in the WebView2 SDK Reference documentation.
 
 To help you evaluate the experimental APIs and share your feedback, use the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
-Avoid using the experimental APIs in production apps.  In subsequent versions of the SDK, experimental APIs might be modified, removed, or added.  After the release of an API as stable and public, the experimental version of that API is supported for two releases in a deprecated state.
+
+### Moving from experimental APIs to stable APIs
+
+Once an API has been moved from experimental to stable APIs, you need to move your app's code to the stable API.  Using experimental APIs is not recommended for production apps.  Follow these practices when moving your app from using experimental APIs to using stable APIs:
+
+*  In your project in Visual Studio, update your WebView2 SDK package version.  See [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
+
+*  Update your app's code to use stable APIs instead of experimental APIs (for COM).  The stable API will be supported with bug fixes, but the experimental API will be deprecated, and not available in the newer SDK.  After the release of an API as stable, the experimental version of that API is supported for two releases, in a deprecated state.  In subsequent versions of the SDK, experimental APIs might be modified, removed, or added.
+
+*  Always use feature detection, to ensure that the stable API is implemented in the user's version of the WebView2 Runtime.  See [Feature-detecting to test whether the installed Runtime supports recently added APIs](#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis), below.
+
+*  Note for .NET only: In a prerelease WebView2 SDK, the .NET stable APIs will fallback to the corresponding experimental APIs, if the user's WebView2 Runtime has only the experimental API implementation and doesn't have the stable API implementation.
 
 
 <!-- ====================================================================== -->
@@ -103,8 +119,7 @@ Avoid using the experimental APIs in production apps.  In subsequent versions of
 
 In the Evergreen distribution approach, the client's WebView2 Runtime automatically updates to the latest version available.  However, a user or IT admin might choose to prevent automatic updating of the WebView2 Runtime.  The resulting outdated Runtime on the client might cause compatibility issues with your updated WebView2 app that uses new APIs from a recent SDK.
 
-In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) that is required by your app.  The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.
-The latest Runtime supports all APIs that are in the latest SDK release build.  
+In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the WebView2 Runtime that is required by your app.  See [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/).  The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.  The latest Runtime supports all APIs that are in the latest SDK release build.
 
 To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, see [Release Notes for the WebView2 SDK](../release-notes.md).
 
