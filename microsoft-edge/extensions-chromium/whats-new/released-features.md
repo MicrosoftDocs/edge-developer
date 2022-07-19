@@ -9,7 +9,7 @@ ms.date: 07/19/2021
 ---
 # Released features for Microsoft Edge Add-ons
 
-The following features or changes have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for developers of Microsoft Edge extensions.
+The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
 
 
 <!-- ====================================================================== -->
@@ -121,4 +121,4 @@ By clicking the extension certification report link, you can view and download t
 <!-- ====================================================================== -->
 ## See also
 
-For more information about upcoming updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).
+For more information about upcoming features or updates, see [Microsoft Edge Add-ons roadmap](roadmap.md).
