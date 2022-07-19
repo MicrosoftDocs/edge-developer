@@ -13,6 +13,21 @@ This article describes the latest updates about new Partner Center features for 
 
 
 <!-- ====================================================================== -->
+## Features in development
+
+The following features are actively being developed by our engineers.
+
+### Retirement of submitting new Microsoft Edge Add-ons with Manifest V2
+
+Microsoft Partner Center will no longer accept new Manifest V2 Microsoft Edge extension submissions, with visibility set as Hidden or Public. To share your feedback and comments, see [GitHub discussion topic - Update your extensions from Manifest V2 to V3](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/27).
+
+
+<br/>
+
+---
+
+
+<!-- ====================================================================== -->
 ## Features in backlog
 
 The following features are currently in our backlog.
