@@ -5,11 +5,19 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/31/2021
+ms.date: 07/19/2021
 ---
 # Released features for Microsoft Edge Add-ons
 
 The following features have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for developers of Microsoft Edge extensions.
+
+
+<!-- ====================================================================== -->
+## Retirement of submitting new Microsoft Edge Add-ons with Manifest V2
+
+Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension submissions, with visibility set as 'Hidden' or 'Public'. To share your feedback and comments, see [GitHub discussion topic - Update your extensions from Manifest V2 to V3](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/27).
+
+*Released July 2022*
 
 
 <!-- ====================================================================== -->
