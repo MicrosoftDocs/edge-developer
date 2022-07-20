@@ -16,14 +16,16 @@ This sample is in the [WebView2Browser repo](https://github.com/MicrosoftEdge/We
 
 This sample is a web browser built with the [Microsoft Edge WebView2](https://aka.ms/webview2) control.
 
-![WebView2Browser](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Browser/master/screenshots/WebView2Browser.png)
+![WebView2Browser](./webview2browser-images/WebView2Browser.png)
+<!-- todo: remove png from other repo, in PR 140: -->
+<!-- ![WebView2Browser](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Browser/master/screenshots/WebView2Browser.png) -->
 
 <!-- delta: swapped end of sentence: -->
 WebView2Browser is a sample Windows desktop application demonstrating the capabilities of the WebView2 control.  <!-- delta: added sentence: -->The WebView2Browser sample app uses multiple WebView2 instances.
 
 This sample is built as a Win32 [Visual Studio 2019](https://visualstudio.microsoft.com/vs/) project.  It uses C++ and JavaScript in the WebView2 environment.
 
-WebView2Browser shows some of the simplest uses of WebView2, such as creating and navigating a WebView, but also some more complex workflows like using the [PostWebMessageAsJson API](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson) to communicate WebViews in separate environments. It is a rich code sample to look at how you can use WebView2 APIs to build your own app.
+WebView2Browser shows some of the simplest uses of WebView2, such as creating and navigating a WebView, but also some more complex workflows like using the [PostWebMessageAsJson API](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson) to communicate WebViews in separate environments. It is a rich code sample to look at how you can use WebView2 APIs to build your own app.
 
 
 <!-- ====================================================================== -->
@@ -102,7 +104,10 @@ WebView2Browser has a multi-WebView approach to integrate web content and applic
 
 The multi-WebView approach involves using two separate WebView environments (each with its own user data directory): one for the UI WebViews and the other for all content WebViews. UI WebViews (controls and options dropdown) use the UI environment while web content WebViews (one per tab) use the content environment.
 
+![Browser layout](./webview2browser-images/layout.png)
+<!-- todo: remove png from other repo, in PR 140: 
 ![Browser layout](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Browser/master/screenshots/layout.png)
+-->
 
 
 <!-- ====================================================================== -->
@@ -124,38 +129,38 @@ WebView2Browser provides all the functionalities to make a basic web browser, bu
 <!-- ====================================================================== -->
 ## WebView2 APIs
 
-WebView2Browser makes use of a handful of the APIs available in WebView2. For the APIs not used here, you can find more about them in the [Microsoft Edge WebView2 Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32). The following is a list of the most interesting APIs WebView2Browser uses and the feature(s) they enable.
+WebView2Browser makes use of a handful of the APIs available in WebView2. For the APIs not used here, you can find more about them in the [Microsoft Edge WebView2 Reference](/microsoft-edge/webview2/reference/win32). The following is a list of the most interesting APIs WebView2Browser uses and the features they enable.
 
-API | Feature(s)
+API | Features
 :--- | :---
-CreateCoreWebView2EnvironmentWithOptions | Used to create the environments for UI and content WebViews. Different user data directories are passed to isolate UI from web content. |
-ICoreWebView2 | There are several WebViews in WebView2Browser and most features make use of members in this interface, the table below shows how they're used.
-ICoreWebView2DevToolsProtocolEventReceivedEventHandler | Used along with add_DevToolsProtocolEventReceived to listen for CDP security events to update the lock icon in the browser UI. |
-ICoreWebView2DevToolsProtocolEventReceiver | Used along with add_DevToolsProtocolEventReceived to listen for CDP security events to update the lock icon in the browser UI. |
-ICoreWebView2ExecuteScriptCompletedHandler | Used along with ExecuteScript to get the title and favicon from the visited page. |
-ICoreWebView2FocusChangedEventHandler | Used along with add_LostFocus to hide the browser options dropdown when it loses focus.
-ICoreWebView2HistoryChangedEventHandler | Used along with add_HistoryChanged to update the navigation buttons in the browser UI. |
-ICoreWebView2Controller | There are several WebViewControllers in WebView2Browser and we fetch the associated WebViews from them.
-ICoreWebView2NavigationCompletedEventHandler | Used along with add_NavigationCompleted to update the reload button in the browser UI.
-ICoreWebView2Settings | Used to disable DevTools in the browser UI.
-ICoreWebView2SourceChangedEventHandler | Used along with add_SourceChanged to update the address bar in the browser UI. |
-ICoreWebView2WebMessageReceivedEventHandler | This is one of the most important APIs to WebView2Browser. Most functionalities involving communication across WebViews use this.
+`CreateCoreWebView2EnvironmentWithOptions` | Used to create the environments for UI and content WebViews. Different user data directories are passed to isolate UI from web content. |
+`ICoreWebView2` | There are several WebViews in WebView2Browser and most features make use of members in this interface, the table below shows how they're used.
+`ICoreWebView2DevToolsProtocolEventReceivedEventHandler` | Used along with add_DevToolsProtocolEventReceived to listen for CDP security events to update the lock icon in the browser UI. |
+`ICoreWebView2DevToolsProtocolEventReceiver` | Used along with add_DevToolsProtocolEventReceived to listen for CDP security events to update the lock icon in the browser UI. |
+`ICoreWebView2ExecuteScriptCompletedHandler` | Used along with ExecuteScript to get the title and favicon from the visited page. |
+`ICoreWebView2FocusChangedEventHandler` | Used along with add_LostFocus to hide the browser options dropdown when it loses focus.
+`ICoreWebView2HistoryChangedEventHandler` | Used along with add_HistoryChanged to update the navigation buttons in the browser UI. |
+`ICoreWebView2Controller` | There are several WebViewControllers in WebView2Browser and we fetch the associated WebViews from them.
+`ICoreWebView2NavigationCompletedEventHandler` | Used along with add_NavigationCompleted to update the reload button in the browser UI.
+`ICoreWebView2Settings` | Used to disable DevTools in the browser UI.
+`ICoreWebView2SourceChangedEventHandler` | Used along with add_SourceChanged to update the address bar in the browser UI. |
+`ICoreWebView2WebMessageReceivedEventHandler` | This is one of the most important APIs to WebView2Browser. Most functionalities involving communication across WebViews use this.
 
-ICoreWebView2 API | Feature(s)
+ICoreWebView2 API | Features
 :--- | :---
-add_NavigationStarting | Used to display the cancel navigation button in the controls WebView.
-add_SourceChanged | Used to update the address bar.
-add_HistoryChanged | Used to update go back/forward buttons.
-add_NavigationCompleted | Used to display the reload button once a navigation completes.
-ExecuteScript | Used to get the title and favicon of a visited page.
-PostWebMessageAsJson | Used to communicate WebViews. All messages use JSON to pass parameters needed.
-add_WebMessageReceived | Used to handle web messages posted to the WebView.
-CallDevToolsProtocolMethod | Used to enable listening for security events, which will notify of security status changes in a document.
+`add_NavigationStarting` | Used to display the cancel navigation button in the controls WebView.
+`add_SourceChanged` | Used to update the address bar.
+`add_HistoryChanged` | Used to update go back/forward buttons.
+`add_NavigationCompleted` | Used to display the reload button once a navigation completes.
+`ExecuteScript` | Used to get the title and favicon of a visited page.
+`PostWebMessageAsJson` | Used to communicate WebViews. All messages use JSON to pass parameters needed.
+`add_WebMessageReceived` | Used to handle web messages posted to the WebView.
+`CallDevToolsProtocolMethod` | Used to enable listening for security events, which will notify of security status changes in a document.
 
 ICoreWebView2Controller API | Feature(s)
 :--- | :---
-get_CoreWebView2 | Used to get the CoreWebView2 associated with this CoreWebView2Controller.
-add_LostFocus | Used to hide the options dropdown when the user clicks away of it.
+`get_CoreWebView2` | Used to get the CoreWebView2 associated with this CoreWebView2Controller.
+`add_LostFocus` | Used to hide the options dropdown when the user clicks away from it.
 
 
 <!-- ====================================================================== -->
@@ -181,7 +186,7 @@ The sections below describe how some of the features in WebView2Browser were imp
 
 ### Set up the environment, create a WebView
 
-WebView2 allows you to host web content in your Windows app. It exposes the globals [CreateCoreWebView2Environment](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) and [CreateCoreWebView2EnvironmentWithOptions](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions) from which we can create the two separate environments for the browser's UI and content.
+WebView2 allows you to host web content in your Windows app. It exposes the globals [CreateCoreWebView2Environment](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) and [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions) from which we can create the two separate environments for the browser's UI and content.
 
 ```cpp
     // Get directory for user data. This will be kept separated from the
@@ -235,7 +240,7 @@ HRESULT BrowserWindow::InitUIWebViews()
 }
 ```
 
-We use the [ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2createcorewebview2environmentcompletedhandler) to create the UI WebViews once the environment is ready.
+We use the [ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2createcorewebview2environmentcompletedhandler) to create the UI WebViews once the environment is ready.
 
 ```cpp
 HRESULT BrowserWindow::CreateBrowserControlsWebView()
@@ -275,7 +280,7 @@ HRESULT BrowserWindow::CreateBrowserControlsWebView()
 }
 ```
 
-We're setting up a few things here. The [ICoreWebView2Settings](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings) interface is used to disable DevTools in the WebView powering the browser controls. We're also adding a handler for received web messages. This handler will enable us to do something when the user interacts with the controls in this WebView.
+We're setting up a few things here. The [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings) interface is used to disable DevTools in the WebView powering the browser controls. We're also adding a handler for received web messages. This handler will enable us to do something when the user interacts with the controls in this WebView.
 
 #### Navigate to web page
 
@@ -484,7 +489,7 @@ function reloadActiveTabContent() {
 
 #### Communicating the WebViews
 
-We need to communicate the WebViews powering tabs and UI so that user interactions in one have the desired effect in the other. WebView2Browser makes use of set of very useful WebView2 APIs for this purpose, including [PostWebMessageAsJson](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson), [add_WebMessageReceived](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) and [ICoreWebView2WebMessageReceivedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventhandler). On the JavaScript side, we're making use of the `window.chrome.webview` object exposed to call the `postMessage` method and add an event lister for received messages.
+We need to communicate the WebViews powering tabs and UI so that user interactions in one have the desired effect in the other. WebView2Browser makes use of set of very useful WebView2 APIs for this purpose, including [PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson), [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) and [ICoreWebView2WebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventhandler). On the JavaScript side, we're making use of the `window.chrome.webview` object exposed to call the `postMessage` method and add an event lister for received messages.
 
 ```cpp
 HRESULT BrowserWindow::CreateBrowserControlsWebView()
@@ -584,7 +589,7 @@ function createNewTab(shouldBeActive) {
 }
 ```
 
-On the host app side, the registered [ICoreWebView2WebMessageReceivedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventhandler) will catch the message and create the WebView for that tab.
+On the host app side, the registered [ICoreWebView2WebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventhandler) will catch the message and create the WebView for that tab.
 
 ```cpp
         case MG_CREATE_TAB:
@@ -699,7 +704,7 @@ HRESULT BrowserWindow::SwitchToTab(size_t tabId)
 
 #### Updating the security icon
 
-We use the [CallDevToolsProtocolMethod](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#calldevtoolsprotocolmethod) to enable listening for security events. Whenever a `securityStateChanged` event is fired, we will use the new state to update the security icon on the controls WebView.
+We use the [CallDevToolsProtocolMethod](/microsoft-edge/webview2/reference/win32/icorewebview2#calldevtoolsprotocolmethod) to enable listening for security events. Whenever a `securityStateChanged` event is fired, we will use the new state to update the security icon on the controls WebView.
 
 ```cpp
         // Enable listening for security events to update secure icon

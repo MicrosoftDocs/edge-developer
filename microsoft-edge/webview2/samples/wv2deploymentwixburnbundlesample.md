@@ -12,8 +12,6 @@ ms.date: 04/27/2022
 
 This WebView2 sample demonstrates how to use a WiX Burn Bundle to deploy the WebView2 Runtime.  Do the steps in this article to create a WiX installer that chain-installs the Evergreen WebView2 Runtime through Burn Bundle.
 
-For background information, see [Deploying the Evergreen WebView2 Runtime](../concepts/distribution#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
-
 This sample creates a [WiX](https://wixtoolset.org/) installer for the Win32 sample app [WebView2APISample](webview2apissample.md).  This sample uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.
 
 *  Sample name: **WV2DeploymentWiXBurnBundleSample**
@@ -152,5 +150,4 @@ Follow the steps in that section, and then return to this page and continue belo
 <!-- ====================================================================== -->
 ## See also
 
-* [Deploying the Evergreen WebView2 Runtime](../concepts/distribution#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
-* [README file for WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample#readme)
+* [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
