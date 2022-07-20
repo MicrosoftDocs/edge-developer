@@ -255,6 +255,8 @@ This hybrid approach allows you to create and iterate faster using web technolog
 Both of these parts of the Sample App are displayed in the image below:
 
 ![Hybrid app](./webview2apissample-images/sample-app-layout-diagram.png)
+<!-- todo: remove from PR 140: ![alt text](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Samples/master/SampleApps/WebView2APISample/documentation/screenshots/sample-app-layout-diagram.png) -->
+
 
 1. Section One: The top part of the Sample App is a Win32 component written in C++. This part of the application takes in UI inputs from the user and uses them to control the WebView.
 
