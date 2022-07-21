@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/29/2021
+ms.date: 07/21/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -117,15 +117,15 @@ The Search bar also supports CSS and XPath selectors.
 
 You can edit the DOM on the fly and review how the changes affect the page.
 
-### Edit content
+### Edit text content
 
-To edit the content of a node, double-click the content in the DOM Tree.
+To edit the text content of a node, double-click the content in the DOM Tree.
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
 1. Under **Edit Content**, right-click **Michelle** and then select **Inspect**.
 
-1. In the DOM Tree, double-click `Michelle`.  In other words, double-click the text between `<li>` and `</li>`.  The text is highlighted to indicate that it is selected.
+1. In the DOM Tree, expand the `<li>...</li>` node and double-click `Michelle`.  In other words, double-click the text between `<li>` and `</li>`.  The text is highlighted to indicate that it is selected.
 
    ![Edit the text.](../media/dom-elements-highlighted-edit-content.msft.png)
 
@@ -160,6 +160,24 @@ To edit the type of a node, double-click the type and then type in the new type.
 1. Delete `li`, type `button`, then press `Enter`.  The `<li>` node changes to a `<button>` node.
 
    ![Change the node type to button.](../media/dom-elements-highlighted-edit-node-type-button.msft.png)
+
+### Edit multiple nodes, text, and attributes 
+
+To change the type, content, or attributes of multiple nodes at once, you can edit part of the DOM using a text editor in the **Elements** tool.
+
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
+
+1. Right-click **Edit Content**, and then select **Inspect**.
+
+1. In the DOM Tree, right-click the `<div id="edit-content-1">` node and select **Edit as HTML**. The HTML editor appears.
+
+1. Make required changes in the HTML editor such as:
+
+  * Adding, deleting, or editing attributes.
+  * Adding or deleting nodes.
+  * Editing nodes' text content or node type.
+
+1. Type `Ctrl`+`Enter` to apply the changes to the DOM tree.
 
 ### Reorder DOM nodes
 
