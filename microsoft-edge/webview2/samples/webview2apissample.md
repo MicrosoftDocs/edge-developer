@@ -10,7 +10,12 @@ ms.date: 04/27/2022
 ---
 # Win32 sample app
 
-This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
+This sample, **WebView2APISample**, demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
+
+*  Sample name: **WebView2APISample**
+*  Repo directory: [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)
+*  Solution file: **WebView2Samples.sln** (located in the parent directory, `\SampleApps\`)
+*  Project name in Solution Explorer: **WebView2APISample**
 
 **WebView2APISample** embeds a WebView2 control within a Win32 native application.
 
@@ -18,11 +23,6 @@ This sample is built as a Win32 Visual Studio 2019 project.  It uses C++ and HTM
 <!-- [Visual Studio 2019](https://visualstudio.microsoft.com/vs/) -->
 
 **WebView2APISample** showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView2 control and vice versa.
-
-*  Sample name: **WebView2APISample**
-*  Repo directory: [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)
-*  Solution file: **WebView2Samples.sln** (located in the parent directory, `\SampleApps\`)
-*  Project name in Solution Explorer: **WebView2APISample**
 
 This sample and its solution file are unique: it contains a copy of other samples, in Solution Explorer.
 
@@ -35,7 +35,7 @@ This is a hybrid application built with the Microsoft Edge WebView2 control; tha
 
 Another version of the **WebView2APISample** app:
 
-![WebView2APISample app window](media/webview2apisample-app-window.png)
+![WebView2APISample app window](./webview2apissample-images/webview2apissample-images/webview2apisample-app-window.png)
 
 If this is your first time using WebView, we recommend first following the tutorial [Get started with WebView2 in Win32 apps](../get-started/win32.md), which goes over how to create a WebView2 app and walks through some basic WebView2 functionality.  That particular tutorial doesn't start with you creating a new Win32 project using a project template; instead, it starts with a finished project in the WebView2Samples repo, and walks you through how to optionally re-add the WebView2 code.
 <!-- the getstart tut should probably create new app from project template, but, currently starts from existing project, that is provided now as a finished project -->
@@ -43,21 +43,20 @@ If this is your first time using WebView, we recommend first following the tutor
 For details of events and API handlers in WebView2, see [WebView2 API Reference](../webview2-api-reference.md).
 
 
-
 <!-- ====================================================================== -->
-## Step 2 - Install Visual Studio
+## Step 1 - Install Visual Studio
 
-Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
+Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.  It is currently being tested within Visual Studio 2022.
 
 1. If Visual Studio (minimum required version) is not already installed with C++ support, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio with C++ support, and then return to this page and continue the steps below.
 
-If you want to use Visual Studio 2017, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.
+If you want to use Visual Studio 2017, after you open the solution in Visual Studio 2017, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.
 
 To use Visual Studio 2017, you might also need to install a recent Windows SDK on your machine.
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install a preview channel of Microsoft Edge
+## Step 2 - Install a preview channel of Microsoft Edge
 
 Next, make sure a preview channel of Microsoft Edge in installed, on a supported OS.  Currently we recommend the latest version of the Canary channel.
 
@@ -65,7 +64,7 @@ Next, make sure a preview channel of Microsoft Edge in installed, on a supported
 
 
 <!-- ====================================================================== -->
-## Step 4 - Download or clone the WebView2Samples repo
+## Step 3 - Download or clone the WebView2Samples repo
 
 1. If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
@@ -73,7 +72,7 @@ Next, make sure a preview channel of Microsoft Edge in installed, on a supported
 
 
 <!-- ====================================================================== -->
-## Step 5 - Open .sln in Visual Studio
+## Step 4 - Open .sln in Visual Studio
 
 1. On your local drive, open the `.sln` file in Visual Studio.
 
@@ -87,7 +86,7 @@ Unlike some other samples, the `.sln` file is not in the sample repo directory t
 
 
 <!-- ====================================================================== -->
-## Step 6 - Install workloads if prompted
+## Step 5 - Install workloads if prompted
 
 1. **Visual Studio workloads** - If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
@@ -100,6 +99,77 @@ Unlike some other samples, the `.sln` file is not in the sample repo directory t
 You don't need to install WiX to continue.  Installing WiX is covered in [WiX Burn Bundle to deploy the WebView2 Runtime](./wv2deploymentwixburnbundlesample.md).
 
 Continue the steps below.
+
+
+<!-- ====================================================================== -->
+## Step 6 - Install build tools v143 if Visual Studio 2022
+
+The **Output** window might show the message:
+
+**Some of the properties associated with the solution could not be read.  <repo-path>\WebView2Samples\SampleApps\WebView2APISample\WebView2APISample.vcxproj : warning  : The build tools for v143 cannot be found. Install v143 to build using the v143 build tools.**
+
+Do a **Find** in the repo's [WebView2APISample.vcxproj](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/WebView2APISample.vcxproj)
+for "v142" (which is for Visual Studio 2019) and for "v143" (which is for Visual Studio 2022).
+
+
+Right-click the WebView2APISample project and then select **Properties**.  The **Property Pages** window opens.  It might show **Platform Toolset: v143 (not installed)**.
+
+https://docs.microsoft.com/en-us/cpp/build/how-to-modify-the-target-framework-and-platform-toolset?view=msvc-170
+
+* Visual Studio 2022: v143
+* Visual Studio 2019: v142
+* Visual Studio 2017: v141
+
+<!-- check readme: https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample
+search web: "Visual Studio" "Platform Toolset" "not installed"
+-->
+
+
+<!-- todo: copied from winui2.md, clean up:-->
+
+1. Select **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens, and then the **Modifying - Visual Studio** window opens over it:
+
+   ![The Modifying Visual Studio window, initial state](./webview2apissample-images/modifying-vs2019-initial.png)
+
+  <!-- is this a relevant alt path to show here?  If the **Modifying Visual Studio** window isn't open, in the **Visual Studio Installer** window, click the **Modify** button. -->
+
+1. On the **Workloads** tab, scroll to and click the following cards, to select them; make sure a checkmark is on each of these cards:
+   * **.NET desktop development**
+   * **Desktop development with C++**
+   * **Universal Windows Platform development**
+
+1. On the right, in the **Installation details** section, expand **Universal Windows Platform development**, and then select **C++ (v143) Universal Windows Platform tools** or **C++ (v142) Universal Windows Platform tools**:
+
+   ![The 'Modifying Visual Studio 2019' dialog displays cards and installation details](media/winui2-getting-started-install-workloads.png)
+   <!-- todo: copy to this article's images dir; no sharing - or retake -->
+
+   If all of these components have already been installed, you can click the **Close** button, close the **Visual Studio Installer** window, and skip to the next major section of steps below.
+
+1. Click the **Modify** button.
+
+   A **User Account Control** window appears, asking "Do you want to allow this app to make changes to your device?  Visual Studio Installer.  Verified publisher: Microsoft Corporation.  File origin: Hard drive on this computer.  Show more details (button)".
+
+1. Click the **Yes** button.
+
+1. A dialog box appears, "Before we get started, close Visual Studio":
+
+   ![Dialog box: Before we get started, close Visual Studio](media/winui2-before-we-get-started.png)
+   <!-- todo: copy or retake -->
+
+1. Click the **Continue** button.
+
+   Visual Studio downloads, verifies, and installs the selected packages:
+
+   ![Visual Studio Installer working](media/winui2-vs-installer-working.png)
+   <!--todo: copy or retake-->
+
+   This can take several minutes.  In a new window or tab, you can check out a top-level overview at [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - an initial introduction to WebView2 features at developer.microsoft.com.
+
+   When Visual Studio Installer is finished, return to this page and continue with the steps below.  Visual Studio appears, with an empty **Solution Explorer**.
+
+1. Press `Alt`+`Tab` to switch to the **Visual Studio Installer** window, and then close the **Visual Studio Installer** window.
+
+<!-- /copied -->
 
 
 <!-- ====================================================================== -->
@@ -135,13 +205,13 @@ Continue the steps below.
 
 Solution Explorer shows several projects, including the **WebView2APISample** project:
 
-![The WebView2APISample project in Solution Explorer](media/webview2apisample-in-solution-explorer.png)
+![The WebView2APISample project in Solution Explorer](./webview2apissample-images/webview2apisample-in-solution-explorer.png)
 
 <!-- ![WebView2APISample project Solution Explorer](./webview2apissample-images/solution-opened.png) -->
 
 
 <!-- ====================================================================== -->
-## Step 9 - Build the project using the installed SDK version
+## Step 8 - Build the project using the installed SDK version
 
 At the top of Visual Studio, set the build target, as follows:
 
@@ -159,19 +229,19 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 10 - Run (debug) the project
+## Step 9 - Run (debug) the project
 
 1. Select **Debug** > **Start Debugging** (`F5`).  
 
    Troubleshooting: if you skip the build step and immediately select **Debug** > **Start Debugging** (`F5`), a dialog box might appear, "Unable to start program: Cannot find the path specified":
 
-   ![Dialog box: Unable to start program: Cannot find the path specified](media/webview2apisample-unable-to-start-program-cannot-find-path.png)
+   ![Dialog box: Unable to start program: Cannot find the path specified](./webview2apissample-images/webview2apisample-unable-to-start-program-cannot-find-path.png)
 
    To fix this problem: in **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
    The **WebView2APISample** app window opens:
 
-   ![The WebView2APISample app window](media/webview2apisample-app-window.png)
+   ![The WebView2APISample app window](./webview2apissample-images/webview2apisample-app-window.png)
 
    _To zoom, right-click > **Open image in new tab**._
 
@@ -181,7 +251,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 8 - Update the prerelease WebView2 SDK
+## Step 10 - Update the prerelease WebView2 SDK
 
 After you initially build & run this project, update the WebView2 SDK and then re-build the project.
 
@@ -205,7 +275,7 @@ Update the _prerelease_ WebView2 SDK for the project, as follows:
 
 1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected:
 
-   ![NuGet Package Manager with WebView2 SDK prerelease selected](media/webview2apisample-pkg-mgr-prerelease-webview2.png)
+   ![NuGet Package Manager with WebView2 SDK prerelease selected](./webview2apissample-images/webview2apisample-pkg-mgr-prerelease-webview2.png)
 
    _The above image is from another project, but is similar.  To zoom, right-click > **Open image in new tab**._
 
@@ -213,7 +283,7 @@ Update the _prerelease_ WebView2 SDK for the project, as follows:
 
    The **Preview Changes** dialog box appears:
 
-   ![The Preview Changes dialog box for the WebView2 NugGet package](media/webview2apisample-webview2-pkg-preview-changes.png)
+   ![The Preview Changes dialog box for the WebView2 NugGet package](./webview2apissample-images/webview2apisample-webview2-pkg-preview-changes.png)
 
    _The above image is from another project, but is similar._
 
@@ -223,18 +293,18 @@ The latest version of the WebView2 SDK is now installed for this project.
 
 
 <!-- ====================================================================== -->
-## Step 9 - Build and run the project with updated SDK
+## Step 11 - Build and run the project with updated SDK
 
 
 1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
-   ![WebView2APISample project selected in Solution Explorer](media/webview2apisample-project-selected.png)
+   ![WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)
 
 1. Select **Debug** > **Start Debugging** (`F5`).  
 
    The **WebView2APISample** app window opens:
 
-   ![The WebView2APISample app window](media/webview2apisample-app-window.png)
+   ![The WebView2APISample app window](./webview2apissample-images/webview2apisample-app-window.png)
 
 1. Use the sample app.
 
@@ -242,7 +312,7 @@ The latest version of the WebView2 SDK is now installed for this project.
 
 
 <!-- ====================================================================== -->
-## Step 11 - Inspect the code
+## Step 12 - Inspect the code
 
 1. In the Visual Studio code editor, inspect the code, per the following sections.
 
