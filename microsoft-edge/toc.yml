@@ -178,10 +178,6 @@
                   href: devtools-guide-chromium/css/reference.md
                   displayName: Elements tool
 
-                - name: Get started with CSS
-                  href: devtools-guide-chromium/beginners/css.md
-                  displayName: Elements tool
-
                 - name: Get started viewing and changing CSS
                   href: devtools-guide-chromium/css/index.md
                   displayName: Elements tool

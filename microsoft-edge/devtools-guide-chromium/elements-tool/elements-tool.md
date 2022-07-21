@@ -20,7 +20,6 @@ Debug your HTML using the DOM tree, and inspect and work on the CSS for your web
 ## See also
 
 * [CSS features reference](../css/reference.md)
-* [Get started with CSS](../beginners/css.md)
 * [Get started viewing and changing CSS](../css/index.md)
 * [Inspect CSS Grid](../css/grid.md)
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)

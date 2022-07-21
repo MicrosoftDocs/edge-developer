@@ -369,7 +369,6 @@ CSS changes take effect immediately; you don't need to manually save the changes
 #### See also
 
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
-* [DevTools for beginners: Get started with CSS](../beginners/css.md) - tutorial
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
 
 
