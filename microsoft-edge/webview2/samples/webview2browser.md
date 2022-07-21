@@ -49,7 +49,7 @@ The [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/)
 <!-- ====================================================================== -->
 ## Step 3: Clone the WebView2Samples repo
 
-* Clone (or download as `.zip`) the **WebView2Samples** repo.  See [Clone the WebView2Samples repo](https://docs.microsoft.com/en-us/microsoft-edge/webview2/how-to/machine-setup#clone-the-webview2samples-repo).
+* Clone (or download as `.zip`) the **WebView2Samples** repo.  See [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
 
 <!-- ====================================================================== -->

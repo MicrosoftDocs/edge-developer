@@ -27,7 +27,7 @@ showcases a selection of WebView2's event handlers and API methods that allow a 
 
 If this is your first time using WebView2, we recommend first following the Getting Started tutorial, which goes over how to create a WebView2 and walks through some basic WebView2 functionality.  See [Get started with WebView2 in WPF apps](../get-started/wpf.md).
 
-For more information about events and API Handlers in WebView2, see [WebView2 APR Reference](https://docs.microsoft.com/microsoft-edge/webview2/webview2-api-reference).
+For more information about events and API Handlers in WebView2, see [WebView2 API Reference](/microsoft-edge/webview2/webview2-api-reference).
 
 
 <!-- ====================================================================== -->

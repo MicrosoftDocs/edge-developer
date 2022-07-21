@@ -228,7 +228,7 @@ The latest version of the WebView2 SDK is now installed for this project.
 
 1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
-   ![The WebView2APISample project selected in Solution Explorer](media/webview2apisample-project-selected.png)
+   ![WebView2APISample project selected in Solution Explorer](media/webview2apisample-project-selected.png)
 
 1. Select **Debug** > **Start Debugging** (`F5`).  
 

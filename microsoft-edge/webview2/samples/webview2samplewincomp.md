@@ -186,7 +186,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 1. In the Visual Studio code editor, inspect the code:
 
-   ![The WebView2SampleWinComp project in Visual Studio](webview2samplewincomp-images/inspect-code-visual-studio.png)
+   ![WebView2SampleWinComp project in Visual Studio](webview2samplewincomp-images/inspect-code-visual-studio.png)
 
 
 <!-- ====================================================================== -->
