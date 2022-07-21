@@ -12,7 +12,7 @@ ms.date: 01/24/2022
 
 These articles cover how to set up your development tools and create an initial WebView2 app, and learn about WebView2 concepts along the way.
 
-| Framework | Article | Completed project |
+| Framework | Article | Completed project in repo |
 |---|---|---|
 | WinUI 2 (UWP) | [Get started with WebView2 in WinUI 2 (UWP) apps](winui2.md) | n/a |
 | WinUI 3 (Windows App SDK) | [Get started with WebView2 in WinUI 3 (Windows App SDK) apps](winui.md) | [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted) |

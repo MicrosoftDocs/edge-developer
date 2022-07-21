@@ -10,12 +10,17 @@ ms.date: 06/17/2022
 ---
 # WebView2 Deployment Visual Studio installer
 
-This WebView2 sample demonstrates how to deploy a WebView2 app using the Visual Studio installer.
+<!-- todo: check against readme  -->
 
-To demonstrate how to deploy the Evergreen WebView2 Runtime with your app, this article describes how to use the [Microsoft Visual Studio Installer Project](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) to create an installer for [WebView2APISample](./webview2apissample.md) and chain-install the Evergreen WebView2 Runtime.
+This sample, **WV2DeploymentVSInstallerSample**, demonstrates how to deploy a WebView2 app by using the Visual Studio installer.
+
+To demonstrate how to deploy the Evergreen WebView2 Runtime with your app, this article describes how to use the [Microsoft Visual Studio Installer Project](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) extension for Visual Studio.  You create a project of type **Setup Project**, to create an installer for the [Win32 sample app](./webview2apissample.md) (**WebView2APISample**).  That installer that you create chain-installs the Evergreen WebView2 Runtime.
+
+You first edit the `project.xml` file from the repo, and then in Visual Studio, you create a new project by using the **Setup Project** project template from the **Microsoft Visual Studio Installer Projects** extension.
 
 *  Sample name: **WV2DeploymentVSInstallerSample**
-*  Repo directory: **WV2DeploymentVSInstallerSample**
+*  Repo directory: [WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentVSInstallerSample)
+*  Solution file: not provided in the repo.  You create a solution file named **TODO: filename** in the steps below.
 
 This sample demonstrates several different deployment approaches:
 * Downloading the Evergreen WebView2 Runtime Bootstrapper by using a link.
@@ -26,135 +31,159 @@ For information about these different approaches, see [Deploying the Evergreen W
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install Visual Studio and Installer Projects
+## Step 1 - Build and run WebView2APISample
 
-Microsoft Visual Studio is required, including C++ support.  Microsoft Visual Studio Code is not supported for this sample.
+To become familiar with the app that this sample distributes, and to make sure your environment is set up for general Win32 WebView2 app development, build and run the Win32 sample app before using this deployment sample.
 
-1. If Visual Studio 2019 or higher is not already installed, in a separate window or tab, open [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, selecting C++ support, and then return to this page and continue the steps below.
+1. Do the steps in [Win32 sample app](./webview2apissample.md) (**WebView2APISample**) and then continue below.
+
+As stated in the above page, Microsoft Visual Studio is required, including C++ support.  Microsoft Visual Studio Code is not supported for this **WV2DeploymentVSInstallerSample** sample.
+
+The above page helps you clone or download the WebView2Samples repo.
+
+
+<!-- ====================================================================== -->
+## Step 2 - Install Visual Studio Installer Projects
 
 1. Install the [Microsoft Visual Studio Installer Projects](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects). Follow the steps on that page, and then return to this page and continue the steps below.
 
+The above page has links for an installer that's designed to work with Visual Studio 2017 and Visual Studio 2019.  The page also links to a version for Visual Studio 2022.
+<!-- todo: is the VS2022 version of the installer supported? -->
 
-<!-- ====================================================================== -->
-## Step 2 - Install a preview channel of Microsoft Edge
+![VSIX Installer Visual Studio Installer Projects 2019](./wv2deploymentvsinstallersample-images/vsix-installer-vs-installer-projects-2019.png)
 
-1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
-
-
-<!-- ====================================================================== -->
-## Step 3 - Download or clone the WebView2Samples repo
-
-1. If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+If a **Waiting on the following processes to shut down** dialog appears, close Visual Studio.
 
 
 <!-- ====================================================================== -->
-<!-- ## Step 5 - Open .sln in Visual Studio -->
+## Step 3 - Edit product.xml to configure how to distribute the WebView2 Runtime
 
-<!-- 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
+1. Open Visual Studio.  In the opening screen, you can click the **Continue without code** link in the lower right.
 
-   *  `<your-repos-directory>/WebView2Samples/SampleApps/WV2DeploymentVSInstallerSample/WV2DeploymentVSInstallerSample.sln`
+1. Open the following individual file that's in your local copy of the repo: `<repo-location>\WebView2Samples\SampleApps\WV2DeploymentVSInstallerSample\product.xml`
 
-   or:
+   Location of the file in the repo at GitHub: [SampleApps/WV2DeploymentVSInstallerSample/product.xml](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WV2DeploymentVSInstallerSample/product.xml)
 
-   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentVSInstallerSample/WV2DeploymentVSInstallerSample.sln` -->
+   ![product.xml file opened for editing, unchanged, in Visual Studio 2019](./wv2deploymentvsinstallersample-images/product-xml-open-for-editing-unchanged.png)
+
+1. Edit `product.xml`, as follows.  Do the steps in one of the three sections below.
+
+
+<!-- this section order matches product.xml's order & top of present .md file -->
+#### Downloading the Evergreen WebView2 Runtime Bootstrapper through a link
+
+If you want the app to download the Evergreen WebView2 Runtime Bootstrapper (`MicrosoftEdgeWebview2Setup.exe`) through a link:
+
+1. Within the `<PackageFiles CopyAllPackageFiles="false">` section, un-comment the following line (keep the long public key value), and comment out the other lines:
+
+   ```xml
+   <PackageFile Name="MicrosoftEdgeWebview2Setup.exe" HomeSite="WebViewRuntime" PublicKey="..."/>
+   ```
+
+1. The `PublicKey` value for the WebView2 Runtime Bootstrapper may change without notice.  We're working on addressing this issue.  For now, you may need to replace it in `product.xml` with an updated `PublicKey` value.
+
+1. Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebview2Setup.exe"` so that the Visual Studio installer is using the Bootstrapper.
+
+1. Save the file.
+
+
+#### Packaging the Evergreen WebView2 Runtime Bootstrapper with the app
+
+If you want to package the Evergreen WebView2 Runtime Bootstrapper (`MicrosoftEdgeWebview2Setup.exe`) with the app:
+
+1. Within the `<PackageFiles CopyAllPackageFiles="false">` section, un-comment the following line and comment out the other lines:
+
+   ```xml
+   <PackageFile Name="MicrosoftEdgeWebview2Setup.exe" />
+   ```
+
+1. Within the `<Commands Reboot="Defer">` section, make sure `PackageFile` points to `"MicrosoftEdgeWebview2Setup.exe"` so that the Visual Studio installer is using the Bootstrapper.
+
+1. Save the file.
+
+
+#### Packaging the Evergreen WebView2 Runtime Standalone Installer with your app
+
+If you want to package the Evergreen WebView2 Runtime Standalone Installer with the app:
+
+1. Within the `<PackageFiles CopyAllPackageFiles="false">` section, un-comment the following line and comment out the other lines:
+
+   ```xml
+   <PackageFile Name="MicrosoftEdgeWebView2RuntimeInstallerX64.exe" />
+   ```
+
+1. Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebView2RuntimeInstallerX64.exe"` so that the Visual Studio installer is using the Standalone Installer.
+
+1. If you're targeting non-X64 devices, edit the `MicrosoftEdgeWebView2RuntimeInstallerX64` filename to reflect the correct architecture.
+
+1. Save the file.
 
 
 <!-- ====================================================================== -->
-## **Visual Studio workloads** - If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+## Step 4 - Download the WebView2 Bootstrapper or Standalone Installer
 
-   <!-- Solution Explorer shows the **WV2DeploymentVSInstallerSample** project. -->
+If you want to package either the Bootstrapper or the Standalone Installer with the app, do the steps in this section.  Otherwise skip to the next major Step section.
 
-   <!-- Solution Explorer shows the **WV2DeploymentVSInstallerSample** project: -->
+1. Download [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) Bootstrapper or the Standalone Installer.
 
-   <!-- ![The WV2DeploymentVSInstallerSample sample opened in Visual Studio in Solution Explorer.](media/wv2deploymentvsinstallersample-in-solution-explorer.png) -->
-   <!--todo: create png-->
-
-
-<!-- ====================================================================== -->
-## Step 4 - Install or update the WebView2 SDK
-
-1. If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  You can follow these steps to determine whether the WebView2 SDK is installed for the project.  Follow the steps in that section, and then return to this page and continue below.
+1. Save the downloaded Bootstrapper or the Standalone Installer under the `<repo-location>\WebView2Samples\SampleApps\WV2DeploymentVSInstallerSample\` folder.
 
 
 <!-- ====================================================================== -->
-<!-- 1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`). -->
+## Step 5 - Copy the WV2DeploymentVSInstallerSample folder into a Packages folder
 
-   <!-- The sample app window opens. -->
+1. Copy the `WV2DeploymentVSInstallerSample` folder, and paste it into either one of the following folders:
 
+   * `<drive>:\Program Files (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`
 
-<!-- 1. In the sample app window, use the sample app.  In the Visual Studio code editor, inspect the code; see [README file for WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentVSInstallerSample#readme). -->
+   * `<Visual Studio install dir>\MSBuild\Microsoft\VisualStudio\BootstrapperPackages\` (requires at least Visual Studio 2019 Update 7)
 
-<!-- 1. Close the sample app window. -->
+   Typical paths for `<Visual Studio install dir>`:
+
+   * `C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE`
+   * `C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\"`
 
 
 <!-- ====================================================================== -->
-## Step 5 - Create a Visual Studio installer for the Evergreen WebView2 Runtime
+## Step 6 - Create a Setup Project in Visual Studio
 
-This section demonstrates several deployment approaches:
-* Downloading the Evergreen WebView2 Runtime Bootstrapper by using a link.
-* Packaging the Evergreen WebView2 Runtime Bootstrapper with your app.
-* Packaging the Evergreen WebView2 Runtime Standalone Installer with your app.
+1. In Visual Studio, select **File** > **New** > **Project**.  The **Create a new project** window appears.
 
-For information about these different approaches, see [Deploying the Evergreen WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
-
-
-#### Build Steps
-
-1. Start Visual Studio.
-
-1. Open the local copy of the `WebView2Samples` repo.
-
-1. Edit the `product.xml` file, depending on which workflow you want to use:<!--todo: the order doesn't match the above lists:-->
-
-    * To package the Evergreen WebView2 Runtime Bootstrapper with your app:
-
-        * Within the `<PackageFiles CopyAllPackageFiles="false">` and `</PackageFiles>` section, un-comment the line `<PackageFile Name="MicrosoftEdgeWebview2Setup.exe" />` and comment out other lines.
-
-        * Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebview2Setup.exe"` so that the Visual Studio installer is using the Bootstrapper.
-
-    * To download the Evergreen WebView2 Runtime Bootstrapper through a link:
-
-        * Within the `<PackageFiles CopyAllPackageFiles="false">` and `</PackageFiles>` section, un-comment the line `<PackageFile Name="MicrosoftEdgeWebview2Setup.exe" HomeSite="WebViewRuntime" PublicKey="..."/>` and comment out other lines. Note that the `PublicKey` for the WebView2 Runtime Bootstrapper may change without notice and we are working on addressing this issue. For now, you may need to replace it with an updated `PublicKey`.
-
-        * Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebview2Setup.exe"` so that the Visual Studio installer is using the Bootstrapper.
-
-    * To package the Evergreen WebView2 Runtime Standalone Installer with your app:
-
-        * Within the `<PackageFiles CopyAllPackageFiles="false">` and `</PackageFiles>` section, un-comment the line `<PackageFile Name="MicrosoftEdgeWebView2RuntimeInstallerX64.exe" />` and comment out other lines.
-
-        * Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebView2RuntimeInstallerX64.exe"` so that the Visual Studio installer is using the Standalone Installer.
-
-        * If you're targeting non-X64 devices, edit the `MicrosoftEdgeWebView2RuntimeInstallerX64` filename to reflect the correct architecture.
-
-1. If you plan to package either the Bootstrapper or the Standalone Installer, download [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) Bootstrapper or the Standalone Installer and save it in the `WV2DeploymentVSInstallerSample` folder.
-
-1. Copy the `WV2DeploymentVSInstallerSample` folder, and paste it in either one of the following folders:
-
-   * `Program Files (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`
-
-   * `<Visual Studio Install Dir>\MSBuild\Microsoft\VisualStudio\BootstrapperPackages\` (requires at least Visual Studio 2019 Update 7)
-
-   **Create a Setup Project in Visual Studio:**
-
-1. In Visual Studio, select **File** > **New** > **Project**. 
-
-1. Search for **setup project**:
+1. In the **Search for templates** text box, enter **setup project**, select **Setup Project**, and then click the **Next** button:
 
    ![WebView2 Deployment Visual Studio Installer: Create Setup Project](wv2deploymentvsinstallersample-images/create-setup-project.png)
 
-1. Create a Setup project.
+   The **Configure your new project: Setup Project** dialog opens.
 
-   **Add WebView2 Runtime as a prerequisite:**
+1. In the **Project name** text box, enter a name, such as **MyWin32WV2DeploySample**.
 
-1. In Visual Studio, select **Project** > **Properties**.
+1. In the **Location** text box, navigate to a location that's not inside another project directory, such as `<repo-path>\WebView2Samples\` or a location that's not in the repo directory.
 
-1. In the Property page, click the **Prerequisites** button:
+   ![Configure new project](./wv2deploymentvsinstallersample-images/config-new-project.png)
+
+1. Click the **Create** button.
+
+   ![New empty deployment project (2019)](./wv2deploymentvsinstallersample-images/new-empty-deployment-project-2019.png)
+
+
+<!-- ====================================================================== -->
+## Step 7 - Add WebView2 Runtime as a prerequisite
+
+1. In Visual Studio, in Solution Explorer, right-click your project, and then select **Properties**.  The **Property Pages** dialog opens.
+
+1. Click the **Prerequisites** button:
 
    ![WebView2 Deployment Visual Studio Installer: Set Up Prerequisites](wv2deploymentvsinstallersample-images/setup-prerequisites.png)
 
-1. Check **Edge WebView2 runtime**, un-check the other prerequisites, and then click the **OK** button:
+1. Select the **Edge WebView2 runtime** checkbox.  If that checkbox doesn't appear, go to the __ section above<!--todo-->.
+
+1. Clear the other prerequisites checkboxes.  Then click the **OK** button:
    
    ![WebView2 Deployment Visual Studio Installer: Select Prerequisite](wv2deploymentvsinstallersample-images/select-prerequisites.png)
+
+
+<!-- ====================================================================== -->
+## Step 8 - Build the Setup project
 
 1. Press **F5** to save and build the Setup project.
 

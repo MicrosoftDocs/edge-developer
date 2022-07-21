@@ -12,56 +12,58 @@ ms.date: 07/18/2022
 
 <!-- copied from readme with tiny changes so far-->
 
-This sample is in the [WebView2Browser repo](https://github.com/MicrosoftEdge/WebView2Browser) rather than in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
-
-This sample is a web browser built with the [Microsoft Edge WebView2](https://aka.ms/webview2) control.
+This sample, **WebView2Browser**, is a web browser built with the [Microsoft Edge WebView2](https://aka.ms/webview2) control.
 
 ![WebView2Browser](./webview2browser-images/WebView2Browser.png)
 <!-- todo: remove png from other repo, in PR 140: -->
 <!-- ![WebView2Browser](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Browser/master/screenshots/WebView2Browser.png) -->
 
 <!-- delta: swapped end of sentence: -->
-WebView2Browser is a sample Windows desktop application demonstrating the capabilities of the WebView2 control.  <!-- delta: added sentence: -->The WebView2Browser sample app uses multiple WebView2 instances.
+**WebView2Browser** is a sample Windows desktop application demonstrating the capabilities of the WebView2 control.  <!-- delta: added sentence: -->The **WebView2Browser** sample app uses multiple WebView2 instances.
 
 This sample is built as a Win32 [Visual Studio 2019](https://visualstudio.microsoft.com/vs/) project.  It uses C++ and JavaScript in the WebView2 environment.
 
-WebView2Browser shows some of the simplest uses of WebView2, such as creating and navigating a WebView, but also some more complex workflows like using the [PostWebMessageAsJson API](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson) to communicate WebViews in separate environments. It is a rich code sample to look at how you can use WebView2 APIs to build your own app.
+**WebView2Browser** shows some of the simplest uses of WebView2, such as creating and navigating a WebView, but also some more complex workflows like using the [PostWebMessageAsJson API](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson) to communicate across WebView2 controls in separate environments.  This is a rich code sample to demonstrate how you can use WebView2 APIs to build your own app.
+
+The sample is in the **WebView2Browser** repo:
+
+*  Sample name: **WebView2Browser**
+*  Repo directory: [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser)
+*  Solution file: **WebViewBrowserApp.sln**
 
 
 <!-- ====================================================================== -->
-## Requisites
-<!-- todo: Requirements|Prerequisites: what are we telling user to do?  Rewrite as clear explicit directions. -->
+## Step 1: Install a preview channel of Microsoft Edge
 
-* A [preview channel of Microsoft Edge](https://www.microsoftedgeinsider.com/download/) installed on a supported OS.
-* [Visual Studio](https://visualstudio.microsoft.com/vs/) with C++ support installed.
+*  If not installed yet, install a [preview channel of Microsoft Edge](https://www.microsoftedgeinsider.com/download/) on a supported OS.
+
+
+<!-- ====================================================================== -->
+## Step 2: Install Visual Studio
+
+1. Install [Visual Studio](https://visualstudio.microsoft.com/vs/), including C++ support.
 
 The [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) is recommended for the installation.<!-- TODO: give actionable steps/instructions.  Why preview channel and also Runtime? -->  The minimum version is 86.0.622.38.
 
 
 <!-- ====================================================================== -->
-## Build the browser
+## Step 3: Clone the WebView2Samples repo
 
-Clone the repository and open the solution in Visual Studio. WebView2 is already included as a NuGet package* in the project!
-
-* Clone this repository.  See [TODO]().
-* Open the solution in Visual Studio 2019**
-* Make the changes listed below if you're using a Windows version below Windows 10.
-* Set the target you want to build (Debug/Release, x86/x64).
-* Build the solution.
-
-That's it. Everything should be ready to just launch the app.
-
-<!-- TODO: rework section to remove footnotes -->
-*You can get the WebView2 NuGet Package through the Visual Studio NuGet Package Manager.  
-**You can also use Visual Studio 2017 by changing the project's Platform Toolset in Project Properties/Configuration properties/General/Platform Toolset. You might also need to change the Windows SDK to the latest version available to you.
+* Clone (or download as `.zip`) the **WebView2Samples** repo.  See [Clone the WebView2Samples repo](https://docs.microsoft.com/en-us/microsoft-edge/webview2/how-to/machine-setup#clone-the-webview2samples-repo).
 
 
 <!-- ====================================================================== -->
-## Using versions below Windows 10
+## Step 4: Open the solution in Visual Studio
 
-There's a couple of changes you need to make if you want to build and run the browser in other versions of Windows. This is because of how DPI is handled in Windows 10 vs previous versions of Windows.
+1. Open the solution in Visual Studio 2019.<!--todo: or Visual Studio 2022.-->  The WebView2 SDK is already included as a NuGet package in the project.  If you want to use Visual Studio 2017, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.  You might also need to change the Windows SDK to the latest version.
 
-In `WebViewBrowserApp.cpp`, you will need to replace the call to `SetProcessDpiAwarenessContext` and call `SetProcessDPIAware` instead.
+1. Make the changes listed below, if you're using a Windows version below Windows 10.
+
+#### Using versions below Windows 10
+
+If you want to build and run the browser in versions of Windows before Windows 10, make the following changes.  This is required because of how DPI is handled in Windows 10 vs previous versions of Windows.
+
+1. If you want to build and run the browser in versions of Windows before Windows 10:  In `WebViewBrowserApp.cpp`, change `SetProcessDpiAwarenessContext` to `SetProcessDPIAware`:
 
 ```cpp
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
@@ -81,7 +83,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     // ...
 ```
 
-In `BrowserWindow.cpp`, you will need to remove the call to `GetDpiForWindow`.
+1. If you want to build and run the browser in versions of Windows before Windows 10:  In `BrowserWindow.cpp`, remove or comment out the following call to `GetDpiForWindow`:
 
 ```cpp
 int BrowserWindow::GetDPIAwareBound(int bound)
@@ -92,6 +94,30 @@ int BrowserWindow::GetDPIAwareBound(int bound)
     return (bound * GetDpiForWindow(m_hWnd) / DEFAULT_DPI);
 }
 ```
+
+
+<!-- ====================================================================== -->
+## Step 5: Build and run the app
+
+1. Set the target you want to build (such as Debug or Release, targeting x86 or x64).
+
+1. Build the solution.
+
+1. Run (or Debug) the app.
+
+1. Close the app.
+
+
+<!-- ====================================================================== -->
+## Step 6: Update the WebView2 SDK
+
+* Update the version of the WebView2 SDK, in Visual Studio.  To do this, right-click the project and then click **Manage NuGet Packages**.
+
+
+<!-- ====================================================================== -->
+## Step 7: Build and run the app with updated WebView2 SDK
+
+* Build and run the app again.
 
 
 <!-- ====================================================================== -->
@@ -113,8 +139,9 @@ The multi-WebView approach involves using two separate WebView environments (eac
 <!-- ====================================================================== -->
 ## Features
 
-WebView2Browser provides all the functionalities to make a basic web browser, but there's plenty of room for you to play around.
+The **WebView2Browser** sample provides all the functionalities to make a basic web browser, but there's plenty of room for you to play around.
 
+The **WebView2Browser** sample implements the following features:
 * Go back/forward
 * Reload page
 * Cancel navigation
@@ -167,6 +194,8 @@ ICoreWebView2Controller API | Feature(s)
 ## Implementing the features
 
 The sections below describe how some of the features in WebView2Browser were implemented. You can look at the source code for more details about how everything works here.
+
+**Contents:**
 
 * [The basics](#the-basics)
   * [Set up the environment, create a WebView](#set-up-the-environment-create-a-webview)
@@ -281,6 +310,7 @@ HRESULT BrowserWindow::CreateBrowserControlsWebView()
 ```
 
 We're setting up a few things here. The [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings) interface is used to disable DevTools in the WebView powering the browser controls. We're also adding a handler for received web messages. This handler will enable us to do something when the user interacts with the controls in this WebView.
+
 
 #### Navigate to web page
 
@@ -398,6 +428,7 @@ We have sent the `MG_UPDATE_URI` message along with the URI to the controls WebV
             break;
 ```
 
+
 #### Going back, going forward
 
 Each WebView will keep a history for the navigations it has performed so we only need to connect the browser UI with the corresponding methods. If the active tab's WebView can be navigated back/forward, the buttons will post a web message to the host application when clicked.
@@ -487,9 +518,12 @@ function reloadActiveTabContent() {
 <!-- ====================================================================== -->
 ## Some interesting features
 
+
 #### Communicating the WebViews
 
-We need to communicate the WebViews powering tabs and UI so that user interactions in one have the desired effect in the other. WebView2Browser makes use of set of very useful WebView2 APIs for this purpose, including [PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson), [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) and [ICoreWebView2WebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventhandler). On the JavaScript side, we're making use of the `window.chrome.webview` object exposed to call the `postMessage` method and add an event lister for received messages.
+We need to communicate the WebViews that power the tabs and UI, so that user interactions in one tab's WebView have the desired effect in the other WebView.  WebView2Browser makes use of set of very useful WebView2 APIs for this purpose, including [PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson), [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) and [ICoreWebView2WebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventhandler).
+
+On the JavaScript side, we're making use of the `window.chrome.webview` object exposed to call the `postMessage` method and add an event lister for received messages.
 
 ```cpp
 HRESULT BrowserWindow::CreateBrowserControlsWebView()
@@ -552,7 +586,7 @@ function reloadActiveTabContent() {
 
 #### Tab handling
 
-A new tab will be created whenever the user clicks on the new tab button to the right of the open tabs. The controls WebView will post a message to the host application to create the WebView for that tab and create an object tracking its state.
+A new tab will be created whenever the user clicks on the **new tab** button to the right of the open tabs. The control's WebView will post a message to the host application to create the WebView for that tab and create an object tracking its state.
 
 ```javascript
 function createNewTab(shouldBeActive) {

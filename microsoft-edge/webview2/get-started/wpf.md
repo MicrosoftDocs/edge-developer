@@ -12,7 +12,10 @@ ms.date: 04/27/2022
 
 This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.
 
-A completed version of this tutorial project is available in the WebView2Samples repo: [WPF_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme).
+A completed version<!--TODO: what date?--> of this tutorial project is available in the **WebView2Samples** repo:
+*  Sample name: **WPF_GettingStarted**
+*  Repo directory: [WPF_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)
+*  Solution file: **WPFSample.sln**
 
 
 <!-- ====================================================================== -->
@@ -52,27 +55,27 @@ Start with a basic desktop project that contains a single main window.
 
    The highlighted card in the following image is **WPF Application: .NET Core WPF Application**:
     
-   ![The 'Create a new project' panel with the card selected, 'WPF Application: .NET Core WPF Application'.](media/wpf-getting-started-wpf-core.png)
+   ![The 'Create a new project' panel with the card selected, 'WPF Application: .NET Core WPF Application'](media/wpf-getting-started-wpf-core.png)
 
    Alternatively, the highlighted card in the following image is **WPF App (.NET Framework): Windows Presentation Foundation client application**:
 
-   ![The 'Create a new project' panel with the card selected, 'WPF App (.NET Framework): Windows Presentation Foundation client application'.](media/wpf-getting-started-wpf-fw.png)
+   ![The 'Create a new project' panel with the card selected, 'WPF App (.NET Framework): Windows Presentation Foundation client application'](media/wpf-getting-started-wpf-fw.png)
 
    The **Configure your new project** WPF application dialog box appears.
 
-   ![The 'Configure your new project' WPF application dialog box.](media/wpf-getting-started-create-core.png)
+   ![The 'Configure your new project' WPF application dialog box](media/wpf-getting-started-create-core.png)
 
 1. Enter values for **Project name** and **Location**, and then click **Next**.
 
    The **Additional information** dialog box appears, with a **Target Framework** dropdown list:
 
-   ![The 'Additional information' dialog with a 'Target Framework' dropdown list.](media/wpf-getting-started-create-core-add-info.png)
+   ![The 'Additional information' dialog with a 'Target Framework' dropdown list](media/wpf-getting-started-create-core-add-info.png)
 
 1. Select **.NET Core 3.1**, **5.0**, **6.0**, or later (not **3.0**).  Then click **Next**.
 
    The **Configure your new project** dialog box appears, for **WPF App (.NET framework)**:
 
-   ![Configure your new project WPF app .NET framework dialog box displays project name, location, and solution name text boxes.](media/wpf-getting-started-create-fw.png)
+   ![Configure your new project WPF app .NET framework dialog box displays project name, location, and solution name text boxes](media/wpf-getting-started-create-fw.png)
 
 1. Enter values for **Project name** and **Location**.
 
@@ -93,7 +96,7 @@ Use NuGet to add the WebView2 SDK to the project.
 
 1. In **Solution Explorer**, right-click the project name, and then select **Manage NuGet Packages**:
 
-   ![The 'Manage NuGet packages' command on the right-click menu.](media/wpf-getting-started-mng-nuget.png)
+   ![The 'Manage NuGet packages' command on the right-click menu](media/wpf-getting-started-mng-nuget.png)
 
    <!-- todo: The above image is supposed to show the WPF project instead of the WinForms project.  generally, avoid sharing images across multiple .md files -->
    _(The above image is supposed to show the WPF project instead of the WinForms project.)_
@@ -102,7 +105,7 @@ Use NuGet to add the WebView2 SDK to the project.
 
    The NuGet package manager dialog box displays search results, including a **Microsoft.Web.WebView2** card.  The dialog box has a version number and **Install** button.
    
-   ![NuGet package manager dialog box displays the Microsoft.Web.WebView2 card.](media/install-nuget.png)
+   ![NuGet package manager dialog box displays the Microsoft.Web.WebView2 card](media/install-nuget.png)
 
 1. Accept the default version, and then click the **Install** button.
 
@@ -114,7 +117,7 @@ Use NuGet to add the WebView2 SDK to the project.
 
    The project runs, and displays an empty window.  This verifies that WebView2 is installed and working, although WebView2 has no content to display yet:
 
-   ![Empty app window.](media/winforms-empty-app.png)
+   ![Empty app window](media/winforms-empty-app.png)
 
 
 <!-- ====================================================================== -->
@@ -165,7 +168,7 @@ Add a WebView2 control to your app.
 
 1. Make sure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com):
 
-   ![The WebView2 control, displaying webpage content from microsoft.com.](media/wpf-getting-started-microsoft.png)
+   ![The WebView2 control, displaying webpage content from microsoft.com](media/wpf-getting-started-microsoft.png)
 
 
 <!-- ====================================================================== -->
@@ -255,7 +258,7 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
 
    The sample app displays the Bing website with the URL `https://www.bing.com` in the address bar:
 
-   ![The app displays the Bing website.](media/wpf-getting-started-bing.png)
+   ![The app displays the Bing website](media/wpf-getting-started-bing.png)
 
 
 <!--
@@ -273,7 +276,7 @@ During webpage navigation, the WebView2 control raises events. The app that host
 *  `HistoryChanged`
 *  `NavigationCompleted`
 
-![Navigation events, from new document, to navigation starting, through navigation completed.](../media/navigation-events.png)
+![Navigation events, from new document, to navigation starting, through navigation completed](../media/navigation-events.png)
 
 The above diagram shows the event sequence.  Navigation events start with a new document.
 
@@ -371,7 +374,7 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
 
 1. Make sure the app displays an alert when you navigate to a website that doesn't use HTTPS.
 
-   ![Message showing that an http: URL is not safe, and recommending trying an https: URL instead.](media/wpf-getting-started-https.png)
+   ![Message showing that an http: URL is not safe, and recommending trying an https: URL instead](media/wpf-getting-started-https.png)
 
 
 <!-- ====================================================================== -->
@@ -445,7 +448,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
    The sample app displays the URI in the address bar and the Microsoft website, https://www.microsoft.com:
 
-   ![The sample app displays the URI in the address bar and the Microsoft website.](media/wpf-getting-started-searchbar.png)
+   ![The sample app displays the URI in the address bar and the Microsoft website](media/wpf-getting-started-searchbar.png)
 
 Congratulations, you built your first WebView2 app!
 

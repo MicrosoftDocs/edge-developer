@@ -18,15 +18,9 @@ It is built as a Win32 Visual Studio 2019 project and makes use of both C++ and 
 
 It also uses Windows Runtime Composition APIs (also called the Visual layer) to take advantage of the Windows UI features and create a better look, feel, and functionality in C++ Win32 applications.
 
-
 *  Sample name: **WebView2SampleWinComp**
-*  Repo directory: **WebView2SampleWinComp**
+*  Repo directory: [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp)
 *  Solution file: **WebView2SampleWinComp.sln**
-
-
-**To use this sample (general-purpose steps):**
-
-The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 
 
 <!-- ====================================================================== -->
@@ -80,7 +74,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    A **Review Solution Actions** dialog box might open, prompting you for which installed Windows SDK to retarget the project to:
 
-   ![The 'Review Solution Actions' dialog box.](webview2samplewincomp-images/review-solution-actions.png)
+   ![The 'Review Solution Actions' dialog box](webview2samplewincomp-images/review-solution-actions.png)
 
 1. In the **Windows SDK Version** dropdown list, select **10.0.20348.0** or later, or **10.0.18362.0** or earlier; do not select **10.0.19041.0**.  Then click the **OK** button.  If those versions aren't available, do the steps in the "Install the Windows SDK" section below.  Otherwise, skip to the section below that.
 
@@ -108,11 +102,11 @@ To install a Windows 10 SDK:
 
 1. The **Windows SDK setup** window opens:
 
-   ![Windows SDK setup.](webview2samplewincomp-images/windows-sdk-setup.png)
+   ![Windows SDK setup](webview2samplewincomp-images/windows-sdk-setup.png)
 
 1. Click the **Next** button and then follow the prompts.  You can accept the defaults.  At the end of installing, the Windows SDK Welcome screen for whichever version that you selected appears:
 
-   ![Welcome to the Windows SDK.](webview2samplewincomp-images/welcome-winsdk.png)
+   ![Welcome to the Windows SDK](webview2samplewincomp-images/welcome-winsdk.png)
 
 1. Click the **Close** button.
 
@@ -130,9 +124,7 @@ Do the previous step, "Open the Solution and set the Windows SDK target".  Or, i
 
 The project opens in Visual Studio, showing the **WebView2SampleWinComp** project in Solution Explorer:
 
-![The WebView2SampleWinComp project in Visual Studio.](webview2samplewincomp-images/project-in-sln-explorer.png)
-
-_To zoom the screenshot, right-click > **Open image in new tab**._
+![The WebView2SampleWinComp project in Visual Studio](webview2samplewincomp-images/project-in-sln-explorer.png)
 
 
 <!-- ====================================================================== -->
@@ -148,9 +140,7 @@ This step is optional.  The sample has preinstalled a version of the WebView2 pr
 
 1. If a newer prerelease of the **Microsoft.Web.WebView2** SDK is listed, click the **Update** button.  A prerelease has a "-prerelease" suffix, such as **1.0.1248-prerelease**.  If you want to see details about this step, in a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
-![The Updates tab of NuGet Package Manager after initially opening the WebView2SampleWinComp solution.](webview2samplewincomp-images/updates-tab-initial-state.png)
-
-_To zoom the screenshot, right-click > **Open image in new tab**._
+![The Updates tab of NuGet Package Manager after initially opening the WebView2SampleWinComp solution](webview2samplewincomp-images/updates-tab-initial-state.png)
 
 
 <!-- ====================================================================== -->
@@ -184,7 +174,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    The sample app window opens:
 
-   ![The WebView2SampleWinComp app window.](webview2samplewincomp-images/app-window.png)
+   ![The WebView2SampleWinComp app window](webview2samplewincomp-images/app-window.png)
 
 1. Use the sample app; see [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp#readme).
 

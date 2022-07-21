@@ -12,12 +12,22 @@ ms.date: 04/27/2022
 
 <!-- todo: paste/merge into here from corresp Readme https://github.com/MicrosoftEdge/WebView2Samples/pull/140/files -->
 
-This WebView2 sample, available from the WebView2Samples repo, demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WPF .NET app.
+This sample, **WebView2WpfBrowser**, is a WPF .NET app that demonstrates how to embed the WebView2 control and use WebView2 APIs to implement a web browser.
 
+This sample is built as a WPF Visual Studio 2019 project.  It uses C# and HTML/CSS/JavaScript in the WebView2 environment.
+
+The API Sample
+showcases a selection of WebView2's event handlers and API methods that allow a WPF application to directly interact with a WebView and vice versa.
+<!-- TODO: "the API Sample", does that mean the present sample, or a WPF sample that's within the WebView2Samples.sln for WebView2APISample? https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample ? -->
+<!-- todo: clarify relation between WebView2APISample vs the projects it contains vs the other platform samples -->
 
 *  Sample name: **WebView2WpfBrowser**
-*  Repo directory: **WebView2WpfBrowser**
+*  Repo directory: [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)
 *  Solution file: **WebView2WpfBrowser.sln**
+
+If this is your first time using WebView2, we recommend first following the Getting Started tutorial, which goes over how to create a WebView2 and walks through some basic WebView2 functionality.  See [Get started with WebView2 in WPF apps](../get-started/wpf.md).
+
+For more information about events and API Handlers in WebView2, see [WebView2 APR Reference](https://docs.microsoft.com/microsoft-edge/webview2/webview2-api-reference).
 
 
 <!-- ====================================================================== -->
@@ -79,7 +89,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    The **WebView2WpfBrowser** project opens in Visual Studio:
 
-   ![The WebView2WpfBrowser project in Visual Studio.](media/webview2wpfbrowser-project-opened.png)
+   ![The WebView2WpfBrowser project in Visual Studio](media/webview2wpfbrowser-project-opened.png)
 
    _To zoom, right-click > **Open image in new tab**._
 
@@ -111,7 +121,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    The sample app window opens:
 
-   ![The WebView2WpfBrowser sample app.](media/webview2wpfbrowser-sample-app.png)
+   ![The WebView2WpfBrowser sample app](media/webview2wpfbrowser-sample-app.png)
 
 1. Use the sample app; see [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#readme).
 
@@ -123,7 +133,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 1. In the Visual Studio code editor, inspect the code:
 
-   ![WebView2WpfBrowser project's code in Visual Studio.](media/webview2wpfbrowser-code.png)
+   ![WebView2WpfBrowser project's code in Visual Studio](media/webview2wpfbrowser-code.png)
 
    _To zoom, right-click > **Open image in new tab**._
 

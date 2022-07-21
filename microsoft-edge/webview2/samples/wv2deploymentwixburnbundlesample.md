@@ -10,12 +10,12 @@ ms.date: 04/27/2022
 ---
 # WiX Burn Bundle to deploy the WebView2 Runtime
 
-This WebView2 sample demonstrates how to use a WiX Burn Bundle to deploy the WebView2 Runtime.  Do the steps in this article to create a WiX installer that chain-installs the Evergreen WebView2 Runtime through Burn Bundle.
+This sample, **WV2DeploymentWiXBurnBundleSample**, demonstrates how to use a WiX Burn Bundle to deploy the WebView2 Runtime.  Do the steps in this article to create a WiX installer that chain-installs the Evergreen WebView2 Runtime through Burn Bundle.
 
 This sample creates a [WiX](https://wixtoolset.org/) installer for the Win32 sample app [WebView2APISample](webview2apissample.md).  This sample uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.
 
 *  Sample name: **WV2DeploymentWiXBurnBundleSample**
-*  Repo directory: **WV2DeploymentWiXBurnBundleSample**
+*  Repo directory: [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample)
 *  Project file: **WV2DeploymentWiXBurnBundleSample.wixproj**
 
 This sample demonstrates these two different distribution approaches to distribute the WebView2 Runtime for your app:
@@ -42,9 +42,8 @@ Then return to this page and continue the steps below.
 <!-- ====================================================================== -->
 ## Step 2 - Install WiX Toolset build tools
 
-<!-- todo: copy/move/link to main location of this section which will be the main wix sample .md file -->
-
-<!-- If you haven't installed WiX tools, the WiX deployment projects in Solution Explorer are marked as "Unsupported":
+<!-- todo: how to make "Unsupported" go away?  what to say about it?
+If you haven't installed WiX tools, the WiX deployment projects in Solution Explorer are marked as "Unsupported":
 
 ![Review project changes > Unsupported > .wixproj](./wv2deploymentwixburnbundlesample-images/review-project-changes-unsupported-wix.png) -->
 
@@ -122,7 +121,7 @@ Follow the steps in that section, and then return to this page and continue belo
 
 
 <!-- ====================================================================== -->
-## Step 4 - Build 
+## Step 5 - Build 
 
 1. In your local copy of the WebView2Samples repo, open `<repo-location>\WebView2Samples\SampleApps\WebView2Samples.sln` with Visual Studio (not Visual Studio Code).
 

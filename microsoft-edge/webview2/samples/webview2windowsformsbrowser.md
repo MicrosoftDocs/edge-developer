@@ -12,11 +12,10 @@ ms.date: 04/27/2022
 
 <!-- todo: paste/merge into here from corresp Readme https://github.com/MicrosoftEdge/WebView2Samples/pull/140/files -->
 
-This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinForms app.
-
+This sample, **WebView2WindowsFormsBrowser**, demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinForms app.
 
 *  Sample name: **WebView2WindowsFormsBrowser**
-*  Repo directory: **WebView2WindowsFormsBrowser**
+*  Repo directory: [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser)
 *  Solution file: **WebView2WindowsFormsBrowser.sln**
 
 
@@ -86,7 +85,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    <!-- Solution Explorer shows the **WebView2WindowsFormsBrowser** project: -->
 
-   <!-- ![The WebView2WindowsFormsBrowser sample opened in Visual Studio in Solution Explorer.](media/webview2windowsformsbrowser-in-solution-explorer.png) -->
+   <!-- ![The WebView2WindowsFormsBrowser sample opened in Visual Studio in Solution Explorer](media/webview2windowsformsbrowser-in-solution-explorer.png) -->
    <!--todo: create png-->
 
 
@@ -134,8 +133,8 @@ At the top of Visual Studio, set the build target, as follows:
 
    The **Microsoft .NET Framework Developer Pack** license agreement dialog box appears:
 
-   ![The Microsoft .NET Framework Developer Pack license agreement dialog box.](media/webview2windowsformsbrowser-net-fwk-license-462.png)
-   <!-- ![The Microsoft .NET Framework Developer Pack license agreement dialog box.](media/webview2windowsformsbrowser-net-fwk-license.png) 4.8, keep as-in, in case needed -->
+   ![The Microsoft .NET Framework Developer Pack license agreement dialog box](media/webview2windowsformsbrowser-net-fwk-license-462.png)
+   <!-- ![The Microsoft .NET Framework Developer Pack license agreement dialog box](media/webview2windowsformsbrowser-net-fwk-license.png) 4.8, keep as-in, in case needed -->
 
 1. Select the **I agree to the license terms and conditions** checkbox, and then click the **Install** button.
 
@@ -145,8 +144,8 @@ At the top of Visual Studio, set the build target, as follows:
 
    The Microsoft .NET Framework Developer Pack **Setup Successful** dialog box appears:
 
-   ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog box.](media/webview2windowsformsbrowser-net-dev-pak-success-462.png)
-   <!-- ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog box.](media/webview2windowsformsbrowser-net-dev-pak-success.png) 4.8, keep as-in, in case needed -->
+   ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog box](media/webview2windowsformsbrowser-net-dev-pak-success-462.png)
+   <!-- ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog box](media/webview2windowsformsbrowser-net-dev-pak-success.png) 4.8, keep as-in, in case needed -->
 
 1. Click the **Close** button.
 
@@ -182,7 +181,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    The sample app window opens:
 
-   ![The WebView2WindowsFormsBrowser app window.](media/webview2windowsformsbrowser-app-window.png)
+   ![The WebView2WindowsFormsBrowser app window](media/webview2windowsformsbrowser-app-window.png)
 
 1. Use the sample app; see [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser#readme).
 

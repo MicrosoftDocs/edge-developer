@@ -17,6 +17,15 @@ In this tutorial, you start with the Visual Studio project template for a blank 
 A completed version of this tutorial project is available in the WebView2Samples repo: [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted).
 
 
+A completed version of this tutorial project (as of 2020) is available in the **WebView2Samples** repo:
+
+*  Sample name: **WinUI3_GettingStarted**
+*  Repo directory: [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)
+*  Solution file: **WinUI_Sample.sln**
+
+The present tutorial is updated and only creates a single project, not a second, "(Package)" project like in 2020.
+
+
 <!-- ====================================================================== -->
 ## Step 1 - Install Visual Studio and the Windows App SDK
 

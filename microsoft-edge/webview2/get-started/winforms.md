@@ -15,7 +15,16 @@ todo: errors experienced with vs2022 by following these instructions:
 *  The addressbar text box & Go button shift to the right when alt+tab to the Form1 window. 
 -->
 
-This article covers how to set up your development tools and create an initial WebView2 app for the WinForms platform, and learn about WebView2 concepts along the way.
+This tutorial helps you:
+*  Set up your development tools.
+*  Use the **C# Windows Forms App (.NET Framework)** Visual Studio project template to create a WinForms project that includes WebView2.
+*  Learn about WebView2 concepts along the way.
+
+A completed version<!--TODO: what date?--> of this tutorial project is available in the **WebView2Samples** repo:
+
+*  Sample name: **Win32_GettingStarted**
+*  Repo directory: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)
+*  Solution file: **WebView2GettingStarted.sln**
 
 
 <!-- ====================================================================== -->
@@ -79,13 +88,13 @@ Start with a basic desktop project that contains a single main window.
 
    The Visual Studio **Open recent** window appears:
 
-   ![The Visual Studio opening panel displays the Create a new project card.](media/winforms-opening-panel.png)
+   ![The Visual Studio opening panel displays the Create a new project card](media/winforms-opening-panel.png)
 
 1. On the right, click the **Create a new project** card.
 
    The Visual Studio **Create a new project** window appears:
 
-   ![The Visual Studio 'Create a new project' window.](media/vs2022-create-a-new-project.png)
+   ![The Visual Studio 'Create a new project' window](media/vs2022-create-a-new-project.png)
 
 1. In the **Search** text box, paste or start typing the following:
 
@@ -97,7 +106,7 @@ Start with a basic desktop project that contains a single main window.
 
 1. Select the **C# Windows Forms App (.NET Framework)** card, and then click the **Next** button:
 
-   ![In the 'Create a new project' panel, select 'C# > Windows Forms App (.NET Framework)'.](media/winforms-new-project.png)
+   ![In the 'Create a new project' panel, select 'C# > Windows Forms App (.NET Framework)'](media/winforms-new-project.png)
 
 1. In the **Project name** text box, enter a project name.  This tutorial article uses the name **WinForms_GettingStarted**, like the [repo's directory name](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) for the completed project.
 
@@ -105,13 +114,13 @@ Start with a basic desktop project that contains a single main window.
 
 1. In the **Framework** dropdown list, select **.NET Framework 4.7.2** or later, such as **.NET Framework 4.8**:
 
-   ![Filling in the 'Configure your new project' window.](media/winforms-start-proj.png)
+   ![Filling in the 'Configure your new project' window](media/winforms-start-proj.png)
 
 1. Click the **Create** button.
 
    The Visual Studio window opens, showing the baseline WinForms project in the Solution Explorer, and showing a Form Designer window:
 
-   ![The Visual Studio window, showing the baseline WinForms project and a Forms Designer.](media/vs2022-new-empty-winforms-gettingstarted-project.png)
+   ![The Visual Studio window, showing the baseline WinForms project and a Forms Designer](media/vs2022-new-empty-winforms-gettingstarted-project.png)
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
@@ -120,7 +129,7 @@ Start with a basic desktop project that contains a single main window.
    An empty **Form1** window opens, from the fresh WinForms project:
    
    <!-- used at end of 2 sections: -->
-   ![The empty Form1 window from the fresh WinForms project.](media/form1-empty-window-fresh-winforms-project.png)
+   ![The empty Form1 window from the fresh WinForms project](media/form1-empty-window-fresh-winforms-project.png)
 
 1. Close the **Form1** window.
 
@@ -139,7 +148,7 @@ Use NuGet to add the WebView2 SDK to the project, as follows:
 
 1. In **Solution Explorer**, right-click the project name (not the solution name above it), and then select **Manage NuGet Packages**:
 
-   ![Manage NuGet Packages.](media/winforms-getting-started-mng-nuget.png)
+   ![Manage NuGet Packages](media/winforms-getting-started-mng-nuget.png)
 
    The NuGet Package Manager opens in Visual Studio.
 
@@ -149,13 +158,13 @@ Use NuGet to add the WebView2 SDK to the project, as follows:
 
 1. In the search bar, type **WebView2**, and then below the search bar, click **Microsoft.Web.WebView2** to select it:
 
-   ![The NuGet Package Manager in Visual Studio, installing the Microsoft.Web.WebView2 SDK NuGet package for the current project.](media/winforms-project-nuget-webview2-install.png)
+   ![The NuGet Package Manager in Visual Studio, installing the Microsoft.Web.WebView2 SDK NuGet package for the current project](media/winforms-project-nuget-webview2-install.png)
 
    _To zoom, right-click > **Open image in new tab**._
 
 1. Click the **Install** (or **Update**) button.  The **Preview Changes** dialog box opens:
 
-   ![The Preview Changes dialog box.](media/winforms-install-webview2-preview.png)
+   ![The Preview Changes dialog box](media/winforms-install-webview2-preview.png)
 
 1. Click the **OK** button.
 
@@ -168,10 +177,10 @@ Use NuGet to add the WebView2 SDK to the project, as follows:
    The running project displays the same empty window as before:
 
    <!-- used at end of 2 sections: -->
-   ![The empty Form1 window from the fresh WinForms project.](media/form1-empty-window-fresh-winforms-project.png)
+   ![The empty Form1 window from the fresh WinForms project](media/form1-empty-window-fresh-winforms-project.png)
 
    <!-- what's the toolbar?
-   ![Sample app displays an empty window.](media/winforms-empty-app.png) -->
+   ![Sample app displays an empty window](media/winforms-empty-app.png) -->
 
 1. Close the **Form1** window.
 
@@ -191,11 +200,11 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
 1. On the right, select **Form (Windows Forms)**, and then click the **Add** button:
 
-   ![The 'Add New Item' window, expanded to 'Visual C# Items' > 'Windows Forms', selecting 'Form (Windows Forms)'.](media/add-new-item-form-windows-forms.png)
+   ![The 'Add New Item' window, expanded to 'Visual C# Items' > 'Windows Forms', selecting 'Form (Windows Forms)'](media/add-new-item-form-windows-forms.png)
 
    The project now has an additional form, with filename `Form2.cs`, shown in the Form Designer and in Solution Explorer:
 
-   ![The added form, Form2.cs, in the Form Designer and in Solution Explorer.](media/winforms-added-form2.png)
+   ![The added form, Form2.cs, in the Form Designer and in Solution Explorer](media/winforms-added-form2.png)
 
 1. Click the **Form1** canvas.  We won't use **Form2**.
 
@@ -209,13 +218,13 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
 1. In the **Toolbox**, click or drag the **WebView2** control onto the Forms Designer canvas of the control you added, such as `Form2.cs`:
 
-   ![Toolbox displaying WebView2.](media/winforms-toolbox.png)
+   ![Toolbox displaying WebView2](media/winforms-toolbox.png)
 
 1. Drag the sides of the WebView2 control to make it fill almost all of the canvas.
 
 1. Make sure the new **WebView2** control on the form is selected.  In the **Properties** panel, in the **Design** section, set the **(Name)** property to **webView** (lowercase 'w', capital 'V', no numeric suffix).  The control might initially be named something else, such as **webView21**.  Use the **Categorized** and **Alphabetical** sort option buttons as needed to find properties:
 
-   ![Properties of the WebView2 control.](media/winforms-properties.png)
+   ![Properties of the WebView2 control](media/winforms-properties.png)
 
 1. In the **Properties** panel, in the **Misc** section, set the **Source** property to `https://www.microsoft.com`.  The **Source** property sets the initial URL that will be displayed in the WebView2 control.  
 
@@ -225,13 +234,13 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
    The WebView2 control displays content from https://www.microsoft.com, in a WebView2 control in the Windows Forms form, with a **Skip to main content** link if you pressed `Alt`+`Tab` to switch to the window:
 
-   ![Alt+Tab causes the sample app to initially display a 'Skip to main content' link.](media/winforms-hello-webview-skip-to-main-content.png)
+   ![Alt+Tab causes the sample app to initially display a 'Skip to main content' link](media/winforms-hello-webview-skip-to-main-content.png)
 
 1. If needed, click the **Skip to main content** link.
 
    The WebView2 control displays content from https://www.microsoft.com, in a WebView2 control in the Windows Forms form:
 
-   ![The sample app displays the Microsoft website.](media/winforms-hello-webview.png)
+   ![The sample app displays the Microsoft website](media/winforms-hello-webview.png)
 
 1. Close the **Form1** window.
 
@@ -272,11 +281,11 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 
 1. Position the text box on the left side of the form, vertically aligned with the button, as shown below:
 
-   ![WinForms designer.](media/winforms-designer.png)
+   ![WinForms designer](media/winforms-designer.png)
 
 1. Resize the text box as shown:
 
-   ![WinForms designer textbox and button.](media/winforms-designer-txtbtn.png)
+   ![WinForms designer textbox and button](media/winforms-designer-txtbtn.png)
 
 
 1. Click **View** > **Code** to open `Form1.cs`.
@@ -309,7 +318,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
    }
    ```
 
-   ![Form_Resize code added.](media/winforms-form-resize-code-added.png)
+   ![Form_Resize code added](media/winforms-form-resize-code-added.png)
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
@@ -317,7 +326,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 
    A **Form1** window appears, displaying webpage content from https://www.microsoft.com:
 
-   ![A Form1 WinForm window displaying webpage content from microsoft.com.](media/winforms-app.png)
+   ![A Form1 WinForm window displaying webpage content from microsoft.com](media/winforms-app.png)
 
    If you press `Alt`+`Tab` to switch to the **Form1** window, you may need to click the **Skip to main content** link that's added.
 
@@ -363,13 +372,13 @@ Enable users to change the URL that the WebView2 control displays, by reading th
 
 1. In the address bar, enter a URL that starts with `https`, such as `https://www.bing.com`, and then click the **Go!** button:
 
-   ![bing.com.](media/winforms-bing.png)
+   ![bing.com](media/winforms-bing.png)
 
    The WebView2 control shows the webpage content for the URL.
 
 1. In the address bar, enter a string that doesn't start with `http`, such as `www.bing.com`, and then click the **Go!** button.
 
-   ![Argument exception due to entering a non-URL.](media/winforms-non-url-arg-exception.png)
+   ![Argument exception due to entering a non-URL](media/winforms-non-url-arg-exception.png)
 
    An `ArgumentException` is thrown if the URL doesn't start with `http://` or `https://`.
 
@@ -395,7 +404,7 @@ During webpage navigation, the WebView2 control raises events. The app that host
 
 For more information, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
-![Navigation events.](../media/navigation-events.png)
+![Navigation events](../media/navigation-events.png)
 
 When an error occurs, the following events are raised and may depend on navigation to an error webpage:
 
@@ -488,7 +497,7 @@ For example, add a script that sends an alert when a user navigates to a non-HTT
 
    The app displays an alert:
 
-   ![An http alert, that says try https instead.](media/winforms-https.png)
+   ![An http alert, that says try https instead](media/winforms-https.png)
 
 
 <!-- ====================================================================== -->
@@ -567,7 +576,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1. Enter a URL, such as `https://www.bing.com`:
 
-   ![The updated address bar URL initially is displayed in an alert box.](media/winforms-update-addr-bar-alert.png)
+   ![The updated address bar URL initially is displayed in an alert box](media/winforms-update-addr-bar-alert.png)
 
    An alert initially appears, showing the resulting URL that's sent from the host website.
 
@@ -575,7 +584,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
    The WebView2 control now displays the new URL in the address bar, and webpage content from the URL is displayed in the WebView2 control in the WinForms window:
 
-   ![The application displays the URL in the address bar.](media/winforms-final-app.png)
+   ![The application displays the URL in the address bar](media/winforms-final-app.png)
 
    * When the app starts, the default URL is `https://www.microsoft.com`, and the resulting displayed address shows the locale, such as `https://www.microsoft.com/en-us/`.<!--keep /en-us here-->
 

@@ -20,9 +20,13 @@ This sample is built as a Win32 Visual Studio 2019 project.  It uses C++ and HTM
 **WebView2APISample** showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView2 control and vice versa.
 
 *  Sample name: **WebView2APISample**
-*  Repo directory: **WebView2APISample**
-*  Solution file: **WebView2Samples.sln** (in parent directory)
+*  Repo directory: [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)
+*  Solution file: **WebView2Samples.sln** (located in the parent directory, `\SampleApps\`)
 *  Project name in Solution Explorer: **WebView2APISample**
+
+This sample and its solution file are unique: it contains a copy of other samples, in Solution Explorer.
+
+<!-- todo: copy the sln exp image here -->
 
 
 This is a hybrid application built with the Microsoft Edge WebView2 control; that is, this app combines a native side and a browser web app side.  See [Hybrid app approach](../index.md#hybrid-app-approach) in _Introduction to Microsoft Edge WebView2_.
@@ -31,7 +35,7 @@ This is a hybrid application built with the Microsoft Edge WebView2 control; tha
 
 Another version of the **WebView2APISample** app:
 
-![WebView2APISample app window.](media/webview2apisample-app-window.png)
+![WebView2APISample app window](media/webview2apisample-app-window.png)
 
 If this is your first time using WebView, we recommend first following the tutorial [Get started with WebView2 in Win32 apps](../get-started/win32.md), which goes over how to create a WebView2 app and walks through some basic WebView2 functionality.  That particular tutorial doesn't start with you creating a new Win32 project using a project template; instead, it starts with a finished project in the WebView2Samples repo, and walks you through how to optionally re-add the WebView2 code.
 <!-- the getstart tut should probably create new app from project template, but, currently starts from existing project, that is provided now as a finished project -->
@@ -131,9 +135,9 @@ Continue the steps below.
 
 Solution Explorer shows several projects, including the **WebView2APISample** project:
 
-<!-- ![WebView2APISample project Solution Explorer](./webview2apissample-images/solution-opened.png) -->
-
 ![The WebView2APISample project in Solution Explorer](media/webview2apisample-in-solution-explorer.png)
+
+<!-- ![WebView2APISample project Solution Explorer](./webview2apissample-images/solution-opened.png) -->
 
 
 <!-- ====================================================================== -->
@@ -161,13 +165,13 @@ At the top of Visual Studio, set the build target, as follows:
 
    Troubleshooting: if you skip the build step and immediately select **Debug** > **Start Debugging** (`F5`), a dialog box might appear, "Unable to start program: Cannot find the path specified":
 
-   ![Dialog box: Unable to start program: Cannot find the path specified.](media/webview2apisample-unable-to-start-program-cannot-find-path.png)
+   ![Dialog box: Unable to start program: Cannot find the path specified](media/webview2apisample-unable-to-start-program-cannot-find-path.png)
 
    To fix this problem: in **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
    The **WebView2APISample** app window opens:
 
-   ![The WebView2APISample app window.](media/webview2apisample-app-window.png)
+   ![The WebView2APISample app window](media/webview2apisample-app-window.png)
 
    _To zoom, right-click > **Open image in new tab**._
 
@@ -201,7 +205,7 @@ Update the _prerelease_ WebView2 SDK for the project, as follows:
 
 1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected:
 
-   ![NuGet Package Manager with WebView2 SDK prerelease selected.](media/webview2apisample-pkg-mgr-prerelease-webview2.png)
+   ![NuGet Package Manager with WebView2 SDK prerelease selected](media/webview2apisample-pkg-mgr-prerelease-webview2.png)
 
    _The above image is from another project, but is similar.  To zoom, right-click > **Open image in new tab**._
 
@@ -209,7 +213,7 @@ Update the _prerelease_ WebView2 SDK for the project, as follows:
 
    The **Preview Changes** dialog box appears:
 
-   ![The Preview Changes dialog box for the WebView2 NugGet package.](media/webview2apisample-webview2-pkg-preview-changes.png)
+   ![The Preview Changes dialog box for the WebView2 NugGet package](media/webview2apisample-webview2-pkg-preview-changes.png)
 
    _The above image is from another project, but is similar._
 
@@ -224,13 +228,13 @@ The latest version of the WebView2 SDK is now installed for this project.
 
 1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
-   ![The WebView2APISample project selected in Solution Explorer.](media/webview2apisample-project-selected.png)
+   ![The WebView2APISample project selected in Solution Explorer](media/webview2apisample-project-selected.png)
 
 1. Select **Debug** > **Start Debugging** (`F5`).  
 
    The **WebView2APISample** app window opens:
 
-   ![The WebView2APISample app window.](media/webview2apisample-app-window.png)
+   ![The WebView2APISample app window](media/webview2apisample-app-window.png)
 
 1. Use the sample app.
 
