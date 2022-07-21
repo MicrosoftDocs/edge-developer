@@ -14,7 +14,7 @@ ms.date: 07/18/2022
 
 This sample, **WebView2Browser**, is a web browser built with the [Microsoft Edge WebView2](https://aka.ms/webview2) control.
 
-![WebView2Browser](./webview2browser-images/WebView2Browser.png)
+![The WebView2Browser sample app](./webview2browser-images/WebView2Browser.png)
 <!-- todo: remove png from other repo, in PR 140: -->
 <!-- ![WebView2Browser](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Browser/master/screenshots/WebView2Browser.png) -->
 
