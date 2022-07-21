@@ -392,8 +392,6 @@ To undo an edit, press `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
 
 To view other commands while editing an HTML file, in the Editor pane, right-click the HTML file.
 
-You can also edit HTML by using an HTML editor, rather than DevTools.  For example, the article [DevTools for beginners: Get started with HTML and the DOM](../beginners/html.md) uses a website that enables HTML editing within the webpage.
-
 
 ### Going to a line number or function
 

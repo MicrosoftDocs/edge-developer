@@ -24,5 +24,4 @@ Debug your HTML using the DOM tree, and inspect and work on the CSS for your web
 * [Inspect CSS Grid](../css/grid.md)
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 * [Style editing for CSS-in-JS frameworks](../css/css-in-js.md)
-* [Get started with HTML and the DOM](../beginners/html.md)
 * [Get started viewing and changing the DOM](../dom/index.md)
