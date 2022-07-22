@@ -45,7 +45,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
    ![Inspecting a node.](../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png)
 
-   The **Elements** tool of DevTools opens.  `<li>Michelangelo</li>` is highlighted in the **DOM Tree**.
+   The **Elements** tool of DevTools opens.  `<p>Michelangelo</p>` node is highlighted in the **DOM Tree**.
 
    ![Highlighting the Michelangelo node.](../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png)
 
@@ -53,7 +53,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
    ![The Inspect icon.](../media/dom-elements-highlighted-select-element-page-inspect.msft.png)
 
-1. Under **Inspect a Node**, click the **Tokyo** text.  Now, `<li>Tokyo</li>` is highlighted in the DOM Tree.
+1. Under **Inspect a Node**, click the **Tokyo** text.  Now, `<p>Tokyo</p>` node is highlighted in the DOM Tree.
 
 Inspecting a node is also the first step towards viewing and changing the styles of a node.  See [Get started viewing and changing CSS](../css/index.md).
 
@@ -64,19 +64,19 @@ Once you have selected a node in the DOM Tree, you can navigate the DOM Tree wit
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Navigate the DOM Tree with a Keyboard**, right-click **Ringo** and then select **Inspect**.  `<li>Ringo</li>` is selected in the DOM Tree.
+1. Under **Navigate the DOM Tree with a Keyboard**, right-click **Ringo** and then select **Inspect**.  `<p>Ringo</p>` is selected in the DOM Tree.
 
    ![Inspecting the 'Ringo' node.](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png)
 
-1. Press the `Up` arrow key 2 times.  `<ul>` is selected.
+1. Press the `Up` arrow key 2 times.  `<div>` is selected.
 
-   ![Inspecting the 'ul' node.](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png)
+   ![Inspecting the 'div' node.](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png)
 
-1. Press the `Left` arrow key.  The `<ul>` list collapses.
+1. Press the `Left` arrow key.  The `<div>` list collapses.
 
-1. Press the `Left` arrow key again.  The parent of the `<ul>` node is selected.  In this case it is the `<div>` with the ID `navigate-the-dom-tree-with-a-keyboard-1`.
+1. Press the `Left` arrow key again.  The parent of the `<div>` node is selected.  In this case it is the `<section>` with the ID `navigate-the-dom-tree-with-a-keyboard-1`.
 
-1. Press the `Down` arrow key 2 times so that you have re-selected the `<ul>` list that you just collapsed.  It should look like this: `<ul>... </ul>`
+1. Press the `Down` arrow key 2 times so that you have re-selected the `<div>` list that you just collapsed.  It should look like this: `<div>... </div>`
 
 1. Press the `Right` arrow key.  The list expands.
 
@@ -93,7 +93,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 
 1. The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.
 
-1. Right-click the `<li>Magritte</li>` node, and then click **Scroll into view**.  Your viewport scrolls back up to display the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if the **Scroll into view** option isn't displayed.
+1. Right-click the `<p>Magritte</p>` node, and then click **Scroll into view**.  Your viewport scrolls back up to display the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if the **Scroll into view** option isn't displayed.
 
 ![Scroll into view.](../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png)
 
