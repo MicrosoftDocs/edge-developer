@@ -6,11 +6,11 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 07/27/2022
 ---
 # Set up your Dev environment for WebView2
 
-This article covers general-purpose setup of your development environment for WebView2 development.  Some Get Started tutorials point here for preliminary setup steps, and then add platform-specific or project-specific setup steps.
+This article covers general-purpose setup of your development environment for WebView2 development.  Some Getting Started tutorials point here for preliminary setup steps, and then add platform-specific or project-specific setup steps.
 
 
 <!-- ====================================================================== -->
@@ -179,7 +179,7 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 
 After you download or clone the `WebView2Samples` repo, open a `.sln` file in Visual Studio.
 
-1. In your local copy of the repo directory structure, locate a `.sln` file.  See [Local paths for all .sln and README.md files](../code-samples-links.md#local-paths-for-sln-and-readmemd-files) in _Sample Code for WebView2_.  The [top-level README file in the WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#readme) gives a similar overview.
+1. In your local copy of the repo directory structure, locate a `.sln` file.  The [top-level README file in the WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#readme) gives a similar overview.
 
 1. Open a `.sln` file in Visual Studio.  For example, open your local copy of [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln).  This repo's solution files require Visual Studio, not Visual Studio Code.
 
@@ -190,7 +190,7 @@ After you download or clone the `WebView2Samples` repo, open a `.sln` file in Vi
 
 For general, initial Dev environment setup, you can open any type of `.sln` file from the `WebView2Samples` repo:
 
-*  A platform-specific `.sln` file in a subdirectory of the `GettingStartedGuides` directory.  These match the Get Started tutorials and are completed examples that demonstrate a couple API features.
+*  A platform-specific `.sln` file in a subdirectory of the `GettingStartedGuides` directory.  These match the Getting Started tutorials and are completed examples that demonstrate a couple API features.
 
 *  The Win32 `.sln` file containing multiple platform projects, in the `SampleApps` directory.  This is a comprehensive API demonstration.
 

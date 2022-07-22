@@ -16,7 +16,10 @@ The WebView2APISample is an example of an application that embeds a WebView2 con
 
 The API Sample showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView2 control and vice versa.
 
-Directory &amp; .sln: **WebView2APISample / WebView2Samples.sln (in parent dir)**.
+*  Sample name: **WebView2APISample**
+*  Repo directory: **WebView2APISample**
+*  Solution file: **WebView2Samples.sln** (in parent directory)
+*  Project name in Solution Explorer: **WebView2APISample**
 
 
 <!-- ====================================================================== -->
@@ -158,7 +161,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    _To zoom, right-click > **Open image in new tab**._
 
-1. Use the sample app.  See [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme)
+1. Use the sample app.  See [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme), which is a long Readme about the code in this sample.
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
