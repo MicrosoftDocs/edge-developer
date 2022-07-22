@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 104)
-description: TODO
+description: "Use Layers in 3D View. Improved display of request URLs in Issues tool. Improving accessibility for the Detached Elements tool. Fix: Arrows representing web socket traffic now render correctly in the Network tool. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,6 +14,9 @@ ms.date: 07/21/2022
 
 <!-- ====================================================================== -->
 ## Use Layers in 3D View
+<!-- rank: 1 -->
+
+<!-- todo: check work item -->
 
 <!-- Title: Where did Layers go? -->
 <!-- Subtitle: Layers isn't a stand-alone tool anymore, it's wrapped up in the comprehensive 3D View; a tool for all your visual debugging needs. -->
@@ -26,6 +29,73 @@ In the **3D View** tool, the **Composited Layers** view has all the features you
 
 See also:
 * [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md)
+
+
+<!-- ====================================================================== -->
+## Improved display of request URLs in Issues tool
+<!-- rank: 2 -->
+
+<!-- Title: Improved display of request URLs in Issues tool -->
+<!-- Subtitle: Long request URLs have been truncated, making issues easier to read. -->
+
+In the **Issues** tool, long request URLs have been truncated or wrapped, making issues easier to read.
+
+![Request URLs truncated for readability of issues in Issues tool](./devtools-104-images/issues-request-urls.png)
+
+See also:
+* [Find and fix problems using the Issues tool](../../../issues/index.md)
+
+
+<!-- ====================================================================== -->
+## Improving accessibility for the Detached Elements tool
+<!-- rank: 3 -->
+
+<!-- Title: The Detached Elements tool now works better with assistive technology -->
+<!-- Subtitle: In Microsoft Edge 104, Screen readers announce the name of the table of detached elements in the tool. -->
+
+In previous versions of Microsoft Edge, when selecting the table of detached elements in the **Detached Elements** tool, assistive technology only announced "Table" and the number of rows and columns.  In Microsoft Edge version 104, this issue has been fixed.  When selecting the table of detached elements in the **Detached Elements** tool, assistive technology now announces "Detached Elements List, Table" and the number of rows and columns.
+
+![Detached Elements List, Table, 5 rows, 3 columns](./devtools-104-images/a11y-detached-elements.png)
+<!-- Instructions for screenshot
+todo: see/use screenshot in work item attachment
+1. Navigate to: https://microsoftedge.github.io/Demos/detached-elements/
+2. Open DevTools > Detached Elements
+3. Send 5 messages in Room 1 by selecting the "Send 1 message" button 5 times
+4. Switch to Room 2
+5. In the Detached Elements tool, press the refresh arrow icon to get detached elements
+6. Take the screenshot and draw a red highlight box over the table (5 rows, 3 columns) in the Detached Elements tool -->
+
+<!-- Video recording of feature in action
+todo: see work item -->
+
+See also:
+* [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
+* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
+
+
+<!-- ====================================================================== -->
+## Fix: Arrows representing web socket traffic now render correctly in the Network tool
+<!-- rank: 4 -->
+
+<!-- todo: check work item eg video -->
+
+<!-- Title: Use the Network tool to understand web socket traffic -->
+<!-- Subtitle: Arrows representing messages from the server or client now display correctly in the Network tool. -->
+
+In previous versions of Microsoft Edge, when inspecting web socket traffic in the Network tool, the arrows representing whether a message was sent from the client or server were not rendering correctly.  In Microsoft Edge 104, this issue has been fixed.  Green up-arrows represent messages sent by the client, and red down-arrows represent messages sent by the server.  Thank you for sending us your feedback about this issue!
+
+![Network tool](./devtools-104-images/network-tool-ws-arrows.png)
+<!-- Start by using the work item attached png
+
+1. Navigate to: Online WebSocket & Socket.io Tester - PieSocket Realtime
+2. Open DevTools > Network and undock the tools
+3. On the website, select Connect and send a test message
+4. In the Network tool, select WS to filter to only WebSocket network requests
+5. Select the one network request that should appear
+6. Take a screenshot and draw a red highlight box over the red and green arrows -->
+
+See also:
+* [Network features reference](../../../network/reference.md)
 
 
 <!-- ====================================================================== -->
