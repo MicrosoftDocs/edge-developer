@@ -12,7 +12,7 @@ ms.date: 04/27/2022
 
 This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.
 
-* Corresponding Get Started sample at GitHub: [Getting Started with WebView2 in WPF (WPF_GettingStarted/WPFSample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)
+A completed version of this tutorial project is available in the WebView2Samples repo: [Getting Started with WebView2 in WPF (WPF_GettingStarted/WPFSample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme).
 
 
 <!-- ====================================================================== -->
@@ -468,4 +468,4 @@ API Reference:
 * [API reference: WebView2.Wpf namespace](/dotnet/api/microsoft.web.webview2.wpf)
 
 GitHub:
-* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+* [WebView2Samples repo > WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)

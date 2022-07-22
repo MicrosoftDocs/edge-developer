@@ -12,9 +12,11 @@ ms.date: 06/17/2022
 
 This WebView2 sample demonstrates how to deploy a WebView2 app using the Visual Studio installer.
 
-Directory: **WV2DeploymentVSInstallerSample** (no `.sln` file)
-
 To help you understand how to deploy the [Evergreen WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution#deploying-the-evergreen-webview2-runtime) with an application, this article describes how to use the [Microsoft Visual Studio Installer Project](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) to create an installer for [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme) and chain-install the Evergreen WebView2 Runtime.
+
+*  Sample name: **WV2DeploymentVSInstallerSample**
+*  Repo directory: **WV2DeploymentVSInstallerSample**
+
 
 <!-- ====================================================================== -->
 ## Step 1 - Install Visual Studio and Installer Projects
