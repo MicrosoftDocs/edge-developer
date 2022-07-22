@@ -35,12 +35,20 @@ See also:
 ## Improved display of request URLs in Issues tool
 <!-- rank: 2 -->
 
-<!-- Title: Improved display of request URLs in Issues tool -->
-<!-- Subtitle: Long request URLs have been truncated, making issues easier to read. -->
+<!-- Title: In Issues tool, long request URLs have been shortened -->
+<!-- Subtitle: Links to network request URLs have been truncated, making issues easier to read. -->
 
-In the **Issues** tool, long request URLs have been truncated or wrapped, making issues easier to read.
+The **Issues** tool provides recommendations to improve a web page's accessibility, performance, security, and more.  Some of the recommendations that are listed include a link to a network request that opens in the **Network** tool.
 
-![Request URLs truncated for readability of issues in Issues tool](./devtools-104-images/issues-request-urls.png)
+Previously, issues related to network requests displayed the entire URL for the network request.  When these URLs were lengthy, they took up a lot of space, making the list of issues difficult to browse.  In Microsoft Edge 104, these long request URL links have been truncated.  The links still direct to the relevant part of DevTools, but now take up less space.
+
+Before:
+
+![Issues tool showing a long URL, making the issue entry too tall](./devtools-104-images/issues-request-urls-long.png)
+
+After:
+
+![Issues tool showing the URL truncated to save vertical space](./devtools-104-images/issues-request-urls-short.png)
 
 See also:
 * [Find and fix problems using the Issues tool](../../../issues/index.md)
@@ -104,8 +112,6 @@ See also:
 Microsoft Edge 104 also includes the following updates from the Chromium project:
 
 * [Restart frame during debugging](https://developer.chrome.com/blog/new-in-devtools-104/#restart-frame)
-* [Slow replay options in the Recorder panel](https://developer.chrome.com/blog/new-in-devtools-104/#recorder)
-* [Build an extension for the Recorder panel](https://developer.chrome.com/blog/new-in-devtools-104/#recorder-extension)
 * [Group files by Authored / Deployed in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-104/#authored-deployed)
 * [New User Timings track in the Performance insights panel](https://developer.chrome.com/blog/new-in-devtools-104/#performance)
 * [Reveal assigned slot of an element](https://developer.chrome.com/blog/new-in-devtools-104/#slot)
