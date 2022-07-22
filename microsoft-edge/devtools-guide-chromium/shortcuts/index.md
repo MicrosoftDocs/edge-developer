@@ -90,7 +90,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 
 | Action | Windows/Linux | macOS |
 |---|---|---|
-| Go to the line where a property value is declared | Hold `Control`, then click the property value | Hold `Command`, then click the property value |
+| Go to the line where a property value is declared | Hold `Ctrl`, then click the property value | Hold `Command`, then click the property value |
 | Cycle through the RBGA, HSLA, and Hex representations of a color value | Hold `Shift`, then click the **Color Preview** box next to the value | Hold `Shift`, then click the **Color Preview** box next to the value |
 | Select the next / previous property or value | Click a property name or value, then press `Tab` / `Shift`+`Tab` | Click a property name or value, then press `Tab` / `Shift`+`Tab` |
 | Increment / decrement a property value by 0.1 | Click a value, then press `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Click a value, then press `Option`+`Up Arrow` / Option+Down Arrow |
@@ -112,7 +112,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Step over next function call | `F10` or `Ctrl`+`'` | `F10` or `Command`+`'` |
 | Step into next function call | `F11` or `Ctrl`+`;` | `F11` or `Command`+`;` |
 | Step out of current function | `Shift`+`F11` or `Ctrl`+`Shift`+`;` | `Shift`+`F11` or `Command`+`Shift`+`;` |
-| Continue to a [specific line of code while paused](../javascript/breakpoints.md#line-of-code-breakpoints) | Hold `Control`, then click the line of code | Hold `Command`, then click the line of code |
+| Continue to a [specific line of code while paused](../javascript/breakpoints.md#line-of-code-breakpoints) | Hold `Ctrl`, then click the line of code | Hold `Command`, then click the line of code |
 | Select the call frame below / above the currently selected frame | `Ctrl`+`.` / `Ctrl`+`,` | `Ctrl`+`.` / `Ctrl`+`,` |
 | Save changes to local modifications | `Ctrl`+`S` | `Command`+`S` |
 | Save all changes | `Ctrl`+`Alt`+`S` | `Command`+`Option`+`S` |
