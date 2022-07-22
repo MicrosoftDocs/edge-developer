@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/21/2022
+ms.date: 07/22/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -91,7 +91,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 
 1. Scroll to the bottom of the DOM Examples page.
 
-1. The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.
+1. The `<p>Magritte</p>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.
 
 1. Right-click the `<p>Magritte</p>` node, and then click **Scroll into view**.  Your viewport scrolls back up to display the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if the **Scroll into view** option isn't displayed.
 
@@ -125,7 +125,7 @@ To edit the text content of a node, double-click the content in the DOM Tree.
 
 1. Under **Edit Content**, right-click **Michelle** and then select **Inspect**.
 
-1. In the DOM Tree, expand the `<li>...</li>` node and double-click `Michelle`.  In other words, double-click the text between `<li>` and `</li>`.  The text is highlighted to indicate that it is selected.
+1. In the DOM Tree, double-click `Michelle`.  In other words, double-click the text between `<p>` and `</p>`.  The text is highlighted to indicate that it is selected.
 
    ![Edit the text.](../media/dom-elements-highlighted-edit-content.msft.png)
 
@@ -139,7 +139,7 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
 1. Under **Edit Attributes**, right-click **Howard** and then select **Inspect**.
 
-1. Double-click `<li>`.  The text is highlighted to indicate that the node is selected.
+1. Double-click `<p>`.  The text is highlighted to indicate that the node is selected.
 
    ![Edit the node.](../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png)
 
@@ -147,37 +147,45 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
    ![Add a style attribute to the node.](../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png)
 
-### Edit node type
+### Edit node tag name
 
-To edit the type of a node, double-click the type and then type in the new type.<!--do the following steps do that?-->
+To edit the tag name of a node, double-click the tag name and then type in the new tag name.
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Edit Node Type**, right-click **Hank** and then select **Inspect**.
+1. Under **Edit Node Tag Name**, right-click **Hank** and then select **Inspect**.
 
-1. Double-click `<li>`.  The text `li` is highlighted.
+1. Double-click `<p>`.  The text `p` is highlighted.
 
-1. Delete `li`, type `button`, then press `Enter`.  The `<li>` node changes to a `<button>` node.
+1. Delete `p`, type `button`, then press `Enter`.  The `<p>` node changes to a `<button>` node.
 
    ![Change the node type to button.](../media/dom-elements-highlighted-edit-node-type-button.msft.png)
 
 ### Edit multiple nodes, text, and attributes 
 
-To change the type, content, or attributes of multiple nodes at once, you can edit part of the DOM using a text editor in the **Elements** tool.
+To change the tag name, text content, or attributes of multiple nodes at once, you can edit part of the DOM using an HTML text editor.
+
+To use the HTML editor:
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Right-click **Edit Content**, and then select **Inspect**.
+1. Right-click **Edit Content, Tag Name, and Attributes**, and then select **Inspect**.
 
-1. In the DOM Tree, right-click the `<div id="edit-content-1">` node and select **Edit as HTML**. The HTML editor appears.
+1. In the DOM Tree, right-click the `<section id="edit-as-html-1">` node and select **Edit as HTML**. The HTML editor appears.
 
-1. Make required changes in the HTML editor such as:
+   ![The HTML editor.](../media/dom-elements-highlighted-edit-html-editor.png)
 
-  * Adding, deleting, or editing attributes.
-  * Adding or deleting nodes.
-  * Editing nodes' text content or node type.
+1. Type the changes you want to make in the HTML editor, such as:
 
-1. Type `Ctrl`+`Enter` to apply the changes to the DOM tree.
+   * Adding, deleting, or editing attributes.
+   * Adding or deleting nodes.
+   * Editing nodes' text content or tag names.
+
+   For example, try adding `<p>Dijon</p>` after the `<p>Marseille</p>` line.
+
+1. Type `Ctrl`+`Enter` to apply the changes to the DOM tree and close the HTML editor.
+
+   ![The new DOM tree, with the an extra <p> node, after the HTML editor closed.](../media/dom-elements-highlighted-edit-html-editor-closed.png)
 
 ### Reorder DOM nodes
 
@@ -187,7 +195,7 @@ Drag nodes to reorder them.
 
 1. Under **Reorder DOM Nodes**, right-click **Elvis Presley** and then select **Inspect**.
 
-1. In the DOM Tree, drag `<li>Elvis Presley</li>` to the top of the list.
+1. In the DOM Tree, drag `<p>Elvis Presley</p>` to the top of the list.
 
 ![Drag the node to the top of the list.](../media/dom-elements-reorder-dom-nodes.msft.png)
 
@@ -201,7 +209,7 @@ You can force nodes to remain in states including `:active`, `:hover`, `:focus`,
 
 1. Right-click **The Lord of the Flies**, and then select **Inspect**.
 
-1. Right-click `<li class="demo--hover">The Lord of the Flies</li>`, and then select **Force State** > **:hover**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.  The background color remains orange even though you aren't actually hovering over the node.
+1. Right-click `<p class="demo--hover">The Lord of the Flies</p>`, and then select **Force State** > **:hover**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.  The background color remains orange even though you aren't actually hovering over the node.
 
 ### Hide a node
 
@@ -223,12 +231,9 @@ Press `Delete` to delete a node, as follows:
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Delete a Node**, right-click **Foundation** and then select **Inspect**.  Inspect the following nodes:
-    * The Illustrated Man
-    * Through the Looking-Glass
-    * Foundation
+1. Under **Delete a Node**, right-click **Foundation** and then select **Inspect**.
 
-1. Select the `Delete` key.  The node is deleted.
+1. Press `Delete`.  The node is deleted.
 
 1. Press `Ctrl`+`Z` (Windows, Linux) or `Command`+`Z` (macOS).  The last action is undone and the node reappears.
 
@@ -248,13 +253,13 @@ When you inspect a node, the `== $0` text next to the node means that you can re
 
 1. Select the `Escape` key to open the Console Drawer.
 
-1. Type `$0` and select the `Enter` key.  The result of the expression shows that `$0` evaluates to `<li>The Left Hand of Darkness</li>`:
+1. Type `$0` and press `Enter`.  The result of the expression shows that `$0` evaluates to `<p>The Left Hand of Darkness</p>`:
 
    ![The result of the first $0 expression in the Console.](../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png)
 
 1. Hover on the result.  The node is highlighted in the viewport.
 
-1. Click `<li>Dune</li>` in the DOM Tree, type `$0` in the Console again, and then press `Enter` again.  Now, `$0` evaluates to `<li>Dune</li>`:
+1. Click `<p>Dune</p>` in the DOM Tree, type `$0` in the Console again, and then press `Enter` again.  Now, `$0` evaluates to `<p>Dune</p>`:
 
 ![The result of the second $0 expression in the Console.](../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png)
 
@@ -266,7 +271,7 @@ If you need to refer back to a node many times, store it as a global variable.
 
 1. Under **Store as global variable**, right-click **The Big Sleep**, and then select **Inspect**.
 
-1. Right-click `<li>The Big Sleep</li>` in the DOM Tree, and then select **Store as global variable**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
+1. Right-click `<p>The Big Sleep</p>` in the DOM Tree, and then select **Store as global variable**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
 1. Type `temp1` in the Console and then press `Enter`.  The result of the expression shows that the variable evaluates to the node.
 
@@ -280,7 +285,7 @@ Copy the JavaScript path to a node when you need to reference it in an automated
 
 1. Under **Copy JS path**, right-click **The Brothers Karamazov**, and then select **Inspect**.
 
-1. Right-click `<li>The Brothers Karamazov</li>` in the DOM Tree, and then select **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.
+1. Right-click `<p>The Brothers Karamazov</p>` in the DOM Tree, and then select **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.
 
 1. Press `Ctrl`+`V` (Windows, Linux) or `Command`+`V` (macOS) to paste the expression into the Console.
 
@@ -304,17 +309,15 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
 1. Under **Break on attribute modifications**, right-click **Sauerkraut** and then select **Inspect**.
 
-1. In the DOM Tree, right-click `<li id="target">Sauerkraut</li>`, and then select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
+1. In the DOM Tree, right-click `<p id="botm_target">Sauerkraut</p>`, and then select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
    ![Break on attribute modifications.](../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png)
 
-1. In the next step, you'll be instructed to click a button that pauses the code of the page.  After the page is paused, you can no longer scroll the page.  To make the page scrollable again, select **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)).
+1. Click the **Set Background** button.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change.
 
-   ![Where to resume script running.](../media/dom-break-attribute-modifications-sources-paused-on.msft.png)
+   ![The Sources tool showing the line of code that caused the attribute to change.](../media/dom-break-attribute-modifications-sources-paused-on.msft.png)
 
-1. Click the **Set Background** button above.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change.
-
-1. Select **Resume Script** (![Resume Script.](../media/resume-script-icon.msft.png)), as mentioned earlier.
+1. Click **Resume Script** (![Resume Script.](../media/resume-script-icon.msft.png)) to resume the JavaScript execution.
 
 ### Break on node removal
 
@@ -324,7 +327,7 @@ If you want to pause when a particular node is removed, use node removal breakpo
 
 1. Under **Break on Node Removal**, right-click **Neuromancer** and then select **Inspect**.
 
-1. In the DOM Tree, right-click `<li id="target">Neuromancer</li>`, and then select **Break On** > **Node Removal**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
+1. In the DOM Tree, right-click `<p id="target">Neuromancer</p>`, and then select **Break On** > **Node Removal**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
 1. Click the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.
 
@@ -338,9 +341,9 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 
 1. Under **Break on Subtree Modifications**, right-click **A Fire Upon The Deep** and then select **Inspect**.
 
-1. In the DOM Tree, right-click `<ul id="target">`, which is the node above `<li>A Fire Upon the Deep</li>`, and then select **Break On** > **Subtree Modifications**.  If the **Subtree Modifications** command doesn't appear, see [Appendix: Missing options](#appendix-missing-options).
+1. In the DOM Tree, right-click `<div id="ul_target">`, which is the node above `<p>A Fire Upon the Deep</p>`, and then select **Break On** > **Subtree Modifications**.  If the **Subtree Modifications** command doesn't appear, see [Appendix: Missing options](#appendix-missing-options).
 
-1. Click **Add Child**.  The code pauses because a `<li>` node was added to the list.
+1. Click **Add Child**.  The code pauses because a `<p>` node was added to the list.
 
 1. Select **Resume Script** (![Resume Script.](../media/resume-script-icon.msft.png)).
 
@@ -360,7 +363,7 @@ Check out [Overview of DevTools](../../devtools-guide-chromium/overview.md) to d
 
 This section explains the difference between HTML and the DOM.
 
-When you use a web browser to request a page, the server returns HTML like this:
+When you use a web browser to request a page, the server returns HTML code like this:
 
 ```html
 <!doctype html>
@@ -376,7 +379,7 @@ When you use a web browser to request a page, the server returns HTML like this:
 </html>
 ```
 
-The browser parses the HTML and creates a tree of objects like this:
+The browser then parses the HTML and creates a tree of objects based on the HTML like this:
 
 ```DOM
 html
@@ -410,27 +413,15 @@ html
         p
 ```
 
-The page's HTML is now different than its DOM.  In other words, HTML represents initial page content, and the DOM represents current page content.  When JavaScript adds, removes, or edits nodes, the DOM becomes different than the HTML.
+The page's HTML is now different than its DOM.  In other words, HTML represents the initial page content, and the DOM represents the current page content.  When JavaScript adds, removes, or edits nodes, the DOM becomes different than the HTML.
 
 See [Introduction to the DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) to learn more.
 
 
 <!-- ====================================================================== -->
-## Appendix: Scroll into view
-
-This is a continuation of the [Scroll into view](#scroll-into-view) section.  Follow the instructions below to complete the section.
-
-1. The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.
-
-1. Right-click the `<li>Magritte</li>` node and select **Scroll into view**.  Your viewport scrolls back up so that the **Magritte** node is displayed.  If the **Scroll into view** option isn't displayed, see [Appendix: Missing options](#appendix-missing-options).
-
-![Scroll into view.](../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png)
-
-
-<!-- ====================================================================== -->
 ## Appendix: Missing options
 
-Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If you don't see the specified option in the context menu, try right-clicking away from the node text.
+Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If you don't see the specified option in the context menu, try right-clicking away from the node text, or click the `...` button to the left of the node.
 
 ![Where to click if all of the options aren't displayed.](../media/dom-elements-highlighted-right-click-right-side.msft.png)
 
