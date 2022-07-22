@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge Add-ons roadmap
+title: Roadmap for Microsoft Edge Add-ons
 description: The latest updates about new Partner Center features for Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
 ---
-# Microsoft Edge Add-ons roadmap
+# Roadmap for Microsoft Edge Add-ons
 
 These are the next planned [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) features or updates for Microsoft Edge extensions.
 
