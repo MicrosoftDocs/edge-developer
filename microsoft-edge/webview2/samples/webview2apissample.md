@@ -35,7 +35,7 @@ This is a hybrid application built with the Microsoft Edge WebView2 control; tha
 
 Another version of the **WebView2APISample** app:
 
-![WebView2APISample app window](./webview2apissample-images/webview2apissample-images/webview2apisample-app-window.png)
+![WebView2APISample app window](./webview2apissample-images/webview2apisample-app-window.png)
 
 If this is your first time using WebView, we recommend first following the tutorial [Get started with WebView2 in Win32 apps](../get-started/win32.md), which goes over how to create a WebView2 app and walks through some basic WebView2 functionality.  That particular tutorial doesn't start with you creating a new Win32 project using a project template; instead, it starts with a finished project in the WebView2Samples repo, and walks you through how to optionally re-add the WebView2 code.
 <!-- the getstart tut should probably create new app from project template, but, currently starts from existing project, that is provided now as a finished project -->
@@ -102,23 +102,21 @@ Continue the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 6 - Install build tools v143 if Visual Studio 2022
+<!-- ## Step n - Install build tools v143 if Visual Studio 2022 -->
 
-The **Output** window might show the message:
+<!-- The **Output** window might show the message: -->
 
-**Some of the properties associated with the solution could not be read.  <repo-path>\WebView2Samples\SampleApps\WebView2APISample\WebView2APISample.vcxproj : warning  : The build tools for v143 cannot be found. Install v143 to build using the v143 build tools.**
+<!-- **Some of the properties associated with the solution could not be read.  <repo-path>\WebView2Samples\SampleApps\WebView2APISample\WebView2APISample.vcxproj : warning  : The build tools for v143 cannot be found. Install v143 to build using the v143 build tools.** -->
 
-Do a **Find** in the repo's [WebView2APISample.vcxproj](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/WebView2APISample.vcxproj)
-for "v142" (which is for Visual Studio 2019) and for "v143" (which is for Visual Studio 2022).
+<!-- Do a **Find** in the repo's [WebView2APISample.vcxproj](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/WebView2APISample.vcxproj) -->
+<!-- for "v142" (which is for Visual Studio 2019) and for "v143" (which is for Visual Studio 2022). -->
 
+<!-- Right-click the WebView2APISample project and then select **Properties**.  The **Property Pages** window opens.  It might show **Platform Toolset: v143 (not installed)**. -->
 
-Right-click the WebView2APISample project and then select **Properties**.  The **Property Pages** window opens.  It might show **Platform Toolset: v143 (not installed)**.
-
-https://docs.microsoft.com/en-us/cpp/build/how-to-modify-the-target-framework-and-platform-toolset?view=msvc-170
-
+<!-- Version numbers are listed in [How to: Modify the Target Framework and Platform Toolset](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset):
 * Visual Studio 2022: v143
 * Visual Studio 2019: v142
-* Visual Studio 2017: v141
+* Visual Studio 2017: v141 -->
 
 <!-- check readme: https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample
 search web: "Visual Studio" "Platform Toolset" "not installed"
@@ -127,23 +125,23 @@ search web: "Visual Studio" "Platform Toolset" "not installed"
 
 <!-- todo: copied from winui2.md, clean up:-->
 
-1. Select **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens, and then the **Modifying - Visual Studio** window opens over it:
+<!-- 1. Select **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens, and then the **Modifying - Visual Studio** window opens over it:
 
-   ![The Modifying Visual Studio window, initial state](./webview2apissample-images/modifying-vs2019-initial.png)
+   ![The Modifying Visual Studio window, initial state](./webview2apissample-images/modifying-vs2019-initial.png) -->
 
   <!-- is this a relevant alt path to show here?  If the **Modifying Visual Studio** window isn't open, in the **Visual Studio Installer** window, click the **Modify** button. -->
 
-1. On the **Workloads** tab, scroll to and click the following cards, to select them; make sure a checkmark is on each of these cards:
+<!-- 1. On the **Workloads** tab, scroll to and click the following cards, to select them; make sure a checkmark is on each of these cards:
    * **.NET desktop development**
    * **Desktop development with C++**
    * **Universal Windows Platform development**
 
-1. On the right, in the **Installation details** section, expand **Universal Windows Platform development**, and then select **C++ (v143) Universal Windows Platform tools** or **C++ (v142) Universal Windows Platform tools**:
+1. On the right, in the **Installation details** section, expand **Universal Windows Platform development**, and then select **C++ (v143) Universal Windows Platform tools** or **C++ (v142) Universal Windows Platform tools**: -->
 
-   ![The 'Modifying Visual Studio 2019' dialog displays cards and installation details](media/winui2-getting-started-install-workloads.png)
+   <!-- ![The 'Modifying Visual Studio 2019' dialog displays cards and installation details](media/winui2-getting-started-install-workloads.png) -->
    <!-- todo: copy to this article's images dir; no sharing - or retake -->
 
-   If all of these components have already been installed, you can click the **Close** button, close the **Visual Studio Installer** window, and skip to the next major section of steps below.
+   <!-- If all of these components have already been installed, you can click the **Close** button, close the **Visual Studio Installer** window, and skip to the next major section of steps below.
 
 1. Click the **Modify** button.
 
@@ -151,29 +149,29 @@ search web: "Visual Studio" "Platform Toolset" "not installed"
 
 1. Click the **Yes** button.
 
-1. A dialog box appears, "Before we get started, close Visual Studio":
+1. A dialog box appears, "Before we get started, close Visual Studio": -->
 
-   ![Dialog box: Before we get started, close Visual Studio](media/winui2-before-we-get-started.png)
+   <!-- ![Dialog box: Before we get started, close Visual Studio](media/winui2-before-we-get-started.png) -->
    <!-- todo: copy or retake -->
 
-1. Click the **Continue** button.
+<!-- 1. Click the **Continue** button.
 
-   Visual Studio downloads, verifies, and installs the selected packages:
+   Visual Studio downloads, verifies, and installs the selected packages: -->
 
-   ![Visual Studio Installer working](media/winui2-vs-installer-working.png)
+   <!-- ![Visual Studio Installer working](media/winui2-vs-installer-working.png) -->
    <!--todo: copy or retake-->
 
-   This can take several minutes.  In a new window or tab, you can check out a top-level overview at [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - an initial introduction to WebView2 features at developer.microsoft.com.
+   <!-- This can take several minutes.  In a new window or tab, you can check out a top-level overview at [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - an initial introduction to WebView2 features at developer.microsoft.com.
 
    When Visual Studio Installer is finished, return to this page and continue with the steps below.  Visual Studio appears, with an empty **Solution Explorer**.
 
-1. Press `Alt`+`Tab` to switch to the **Visual Studio Installer** window, and then close the **Visual Studio Installer** window.
+1. Press `Alt`+`Tab` to switch to the **Visual Studio Installer** window, and then close the **Visual Studio Installer** window. -->
 
 <!-- /copied -->
 
 
 <!-- ====================================================================== -->
-## Step 7 - View the opened project
+## Step 6 - View the opened project
 
 1. On your local drive, open again the **WebView2Samples** solution in the same version of Visual Studio that you set up:
 
@@ -211,7 +209,7 @@ Solution Explorer shows several projects, including the **WebView2APISample** pr
 
 
 <!-- ====================================================================== -->
-## Step 8 - Build the project using the installed SDK version
+## Step 7 - Build the project using the installed SDK version
 
 At the top of Visual Studio, set the build target, as follows:
 
@@ -221,7 +219,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
-   ![The WebView2APISample project selected in Solution Explorer](./media/webview2apisample-project-selected.png)
+   ![The WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)
 
    _To zoom, right-click > **Open image in new tab**._
 
@@ -229,7 +227,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 9 - Run (debug) the project
+## Step 8 - Run (debug) the project
 
 1. Select **Debug** > **Start Debugging** (`F5`).  
 
@@ -251,7 +249,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 10 - Update the prerelease WebView2 SDK
+## Step 9 - Update the prerelease WebView2 SDK
 
 After you initially build & run this project, update the WebView2 SDK and then re-build the project.
 
@@ -293,7 +291,7 @@ The latest version of the WebView2 SDK is now installed for this project.
 
 
 <!-- ====================================================================== -->
-## Step 11 - Build and run the project with updated SDK
+## Step 10 - Build and run the project with updated SDK
 
 
 1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
@@ -312,7 +310,7 @@ The latest version of the WebView2 SDK is now installed for this project.
 
 
 <!-- ====================================================================== -->
-## Step 12 - Inspect the code
+## Step 11 - Inspect the code
 
 1. In the Visual Studio code editor, inspect the code, per the following sections.
 
