@@ -232,7 +232,7 @@ If your page depends on orientation information from a mobile device to render p
 
    ![The Sensors command on the More tools menu.](../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png)
 
-   Or, open the Command Menu by selecting `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type `Sensors`, and then select **Show Sensors**.
+   Or, open the Command Menu by pressing `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type `Sensors`, and then select **Show Sensors**.
 
    ![Show Sensors for orientation.](../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png)
 
@@ -252,7 +252,7 @@ If your page depends on the user agent string from a mobile device to render pro
 
    ![Network conditions entry in the More Tools menu.](../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png)
 
-   Or, open the Command Menu by selecting `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).Type `Network conditions`, and select **Show Network conditions**.
+   Or, open the Command Menu by pressing `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).Type `Network conditions`, and select **Show Network conditions**.
 
    ![Showing network conditions.](../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png)
 

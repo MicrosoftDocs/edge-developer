@@ -37,7 +37,7 @@ The DOM Tree of the Elements panel is where you do all DOM-related activities in
 
 When you are interested in a particular DOM node, **Inspect** is a fast way to open DevTools and investigate that node.
 
-1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.  To do this, right-click the link, or press and hold `Control` (Windows, Linux) or `Command` (macOS) and then click the link.
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.  To do this, right-click the link, or press and hold `Ctrl` (Windows, Linux) or `Command` (macOS) and then click the link.
 
 <!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
