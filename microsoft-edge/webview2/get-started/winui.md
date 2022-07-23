@@ -94,11 +94,11 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
     *  The `MainWindow.xaml.cs` file defines a `MainWindow` class that represents the main window displayed by your app instance.  The classes derive from types in the `Microsoft.UI.Xaml` namespace of WinUI.
 
-1.  Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
-
 1.  In the **Solution Configurations** dropdown list, select **Debug**.
 
 1.  In the **Solution Platforms** dropdown list, select a platform, such as **x64**.
+
+1.  Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
 1.  Press **F5** to build and run the project.  The blank WinUI Desktop app opens, with no WebView2 control added yet:
 
@@ -259,8 +259,6 @@ To allow users to control which webpage is displayed in the WebView2 control, ad
 1.  Enter an incomplete URL in the address bar, such as `bing.com`, and then click the **Go** button.
 
     An `ArgumentException` exception is thrown,<!--and appears after you close the app--> because the URL doesn't start with `http://` or `https://`.
-
-1.  Close the sample app.
 
 1.  Close the sample app.  The following dialog boxes might appear:
 

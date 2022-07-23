@@ -677,7 +677,7 @@ Have the host app and web content communicate through `postMessage`, as follows:
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
-1. Press **F5** to build and run the project.
+1. Press `F5` to build and run the project.
 
    The sample app first opens a pop-up window, which displays the URL that will be loaded, along with an **OK** button:
 

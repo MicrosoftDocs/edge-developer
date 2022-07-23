@@ -792,7 +792,7 @@
             - name: Released features for Microsoft Edge Add-ons
               href: extensions-chromium/whats-new/released-features.md
 
-            - name: Microsoft Edge Add-ons roadmap
+            - name: Roadmap for Microsoft Edge Add-ons
               href: extensions-chromium/whats-new/roadmap.md
 
         - name: Getting started
