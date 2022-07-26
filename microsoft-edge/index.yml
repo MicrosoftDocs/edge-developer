@@ -159,10 +159,6 @@ conceptualContent:
               url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
               itemType: whats-new
 
-            - text: DevTools for beginners
-              url: /microsoft-edge/devtools-guide-chromium/beginners/html
-              itemType: overview
-
             - text: Command Menu
               url: /microsoft-edge/devtools-guide-chromium/command-menu/index
               itemType: how-to-guide

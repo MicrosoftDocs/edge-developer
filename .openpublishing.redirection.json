@@ -980,6 +980,16 @@
         "redirect_document_id": false
       },
       {
+        "source_path": "microsoft-edge/devtools-guide-chromium/beginners/css.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/css",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/devtools-guide-chromium/beginners/html.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/dom",
+        "redirect_document_id": false
+      },
+      {
         "source_path": "microsoft-edge/devtools-guide-chromium/console/javascript.md",
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/console/console-javascript",
         "redirect_document_id": false
