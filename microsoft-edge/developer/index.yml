@@ -59,9 +59,6 @@ landingContent:
           - text: Overview of DevTools  # renamed from index.md
             url: /microsoft-edge/devtools-guide-chromium/overview
 
-          - text: DevTools for beginners
-            url: /microsoft-edge/devtools-guide-chromium/beginners/html
-
       - linkListType: whats-new
         links:
           - text: What's new in Microsoft Edge DevTools
