@@ -41,7 +41,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
 <!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
-1. Under **Inspect a Node**, right-click **Michelangelo** and then select **Inspect**.
+1. In the rendered webpage, under **Inspect a Node**, right-click **Michelangelo** and then select **Inspect**.
 
    ![Inspecting a node.](../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png)
 
@@ -64,7 +64,7 @@ Once you have selected a node in the DOM Tree, you can navigate the DOM Tree wit
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Navigate the DOM Tree with a Keyboard**, right-click **Ringo** and then select **Inspect**.  `<p>Ringo</p>` is selected in the DOM Tree.
+1. In the rendered webpage, under **Navigate the DOM Tree with a Keyboard**, right-click **Ringo** and then select **Inspect**.  `<p>Ringo</p>` is selected in the DOM Tree.
 
    ![Inspecting the 'Ringo' node.](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png)
 
@@ -87,7 +87,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Scroll into View**, right-click **Magritte** and then select **Inspect**.
+1. In the rendered webpage, under **Scroll into View**, right-click **Magritte** and then select **Inspect**.
 
 1. Scroll to the bottom of the DOM Examples page.
 
@@ -123,7 +123,7 @@ To edit the text content of a node, double-click the content in the DOM Tree.
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Edit Content**, right-click **Michelle** and then select **Inspect**.
+1. In the rendered webpage, under **Edit Content**, right-click **Michelle** and then select **Inspect**.
 
 1. In the DOM Tree, double-click `Michelle`.  In other words, double-click the text between `<p>` and `</p>`.  The text is highlighted to indicate that it is selected.
 
@@ -137,7 +137,7 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Edit Attributes**, right-click **Howard** and then select **Inspect**.
+1. In the rendered webpage, under **Edit Attributes**, right-click **Howard** and then select **Inspect**.
 
 1. Double-click `<p>`.  The text is highlighted to indicate that the node is selected.
 
@@ -153,7 +153,7 @@ To edit the tag name of a node, double-click the tag name and then type in the n
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Edit Node Tag Name**, right-click **Hank** and then select **Inspect**.
+1. In the rendered webpage, under **Edit Node Tag Name**, right-click **Hank** and then select **Inspect**.
 
 1. Double-click `<p>`.  The text `p` is highlighted.
 
@@ -169,7 +169,7 @@ To use the HTML editor:
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Right-click **Edit Content, Tag Name, and Attributes**, and then select **Inspect**.
+1. In the rendered webpage, right-click in the **Edit Content, Tag Name, and Attributes** section, and then select **Inspect**.
 
 1. In the DOM Tree, right-click the `<section id="edit-as-html-1">` node and select **Edit as HTML**. The HTML editor appears.
 
@@ -193,7 +193,7 @@ Drag nodes to reorder them.
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Reorder DOM Nodes**, right-click **Elvis Presley** and then select **Inspect**.
+1. In the rendered webpage, under **Reorder DOM Nodes**, right-click **Elvis Presley** and then select **Inspect**.
 
 1. In the DOM Tree, drag `<p>Elvis Presley</p>` to the top of the list.
 
@@ -205,7 +205,7 @@ You can force nodes to remain in states including `:active`, `:hover`, `:focus`,
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Force state**, hover on **The Lord of the Flies**.  The background color becomes orange.
+1. In the rendered webpage, under **Force state**, hover on **The Lord of the Flies**.  The background color becomes orange.
 
 1. Right-click **The Lord of the Flies**, and then select **Inspect**.
 
@@ -217,7 +217,7 @@ Press `H` to hide a node, as follows:
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Hide a node**, right-click **The Stars My Destination** and then select **Inspect**.
+1. In the rendered webpage, under **Hide a node**, right-click **The Stars My Destination** and then select **Inspect**.
 
 1. Press the `H` key.  The node is hidden.
 
@@ -231,7 +231,7 @@ Press `Delete` to delete a node, as follows:
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Delete a Node**, right-click **Foundation** and then select **Inspect**.
+1. In the rendered webpage, under **Delete a Node**, right-click **Foundation** and then select **Inspect**.
 
 1. Press `Delete`.  The node is deleted.
 
@@ -249,7 +249,7 @@ When you inspect a node, the `== $0` text next to the node means that you can re
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Reference the currently-selected node with $0**, right-click **The Left Hand of Darkness** and then select **Inspect**.
+1. In the rendered webpage, under **Reference the currently-selected node with $0**, right-click **The Left Hand of Darkness** and then select **Inspect**.
 
 1. Select the `Escape` key to open the Console Drawer.
 
@@ -269,7 +269,7 @@ If you need to refer back to a node many times, store it as a global variable.
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Store as global variable**, right-click **The Big Sleep**, and then select **Inspect**.
+1. In the rendered webpage, under **Store as global variable**, right-click **The Big Sleep**, and then select **Inspect**.
 
 1. Right-click `<p>The Big Sleep</p>` in the DOM Tree, and then select **Store as global variable**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
@@ -283,7 +283,7 @@ Copy the JavaScript path to a node when you need to reference it in an automated
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Copy JS path**, right-click **The Brothers Karamazov**, and then select **Inspect**.
+1. In the rendered webpage, under **Copy JS path**, right-click **The Brothers Karamazov**, and then select **Inspect**.
 
 1. Right-click `<p>The Brothers Karamazov</p>` in the DOM Tree, and then select **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.
 
@@ -307,7 +307,7 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Break on attribute modifications**, right-click **Sauerkraut** and then select **Inspect**.
+1. In the rendered webpage, under **Break on attribute modifications**, right-click **Sauerkraut** and then select **Inspect**.
 
 1. In the DOM Tree, right-click `<p id="botm_target">Sauerkraut</p>`, and then select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
@@ -325,7 +325,7 @@ If you want to pause when a particular node is removed, use node removal breakpo
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Break on Node Removal**, right-click **Neuromancer** and then select **Inspect**.
+1. In the rendered webpage, under **Break on Node Removal**, right-click **Neuromancer** and then select **Inspect**.
 
 1. In the DOM Tree, right-click `<p id="target">Neuromancer</p>`, and then select **Break On** > **Node Removal**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
@@ -339,7 +339,7 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. Under **Break on Subtree Modifications**, right-click **A Fire Upon The Deep** and then select **Inspect**.
+1. In the rendered webpage, under **Break on Subtree Modifications**, right-click **A Fire Upon The Deep** and then select **Inspect**.
 
 1. In the DOM Tree, right-click `<div id="ul_target">`, which is the node above `<p>A Fire Upon the Deep</p>`, and then select **Break On** > **Subtree Modifications**.  If the **Subtree Modifications** command doesn't appear, see [Appendix: Missing options](#appendix-missing-options).
 
