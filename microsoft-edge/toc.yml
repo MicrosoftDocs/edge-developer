@@ -784,7 +784,7 @@
             - name: Released features for Microsoft Edge Add-ons
               href: extensions-chromium/whats-new/released-features.md
 
-            - name: Microsoft Edge Add-ons roadmap
+            - name: Roadmap for Microsoft Edge Add-ons
               href: extensions-chromium/whats-new/roadmap.md
 
         - name: Getting started
@@ -972,84 +972,90 @@
           displayName: 
 
 # -----------------------------------------------------------------------------
-        - name: Setup and sample code
-          items:
-            - name: Set up your Dev environment  # new article
-              href: webview2/how-to/machine-setup.md
-              displayName: Sample Code for WebView2  # top-of-page title
-
-            - name: Sample Code
-              href: webview2/code-samples-links.md
-              displayName: Sample Code for WebView2  # top-of-page title
-
-# in alpha order of downloaded repo directories
-            - name: WebView2 sample apps
-              items:
-                - name: WinUI 2 (UWP) sample app
-                  href: webview2/samples/webview2_sample_uwp.md
-                  displayName: webview2_sample_uwp  # repo dir name
-
-                - name: Win32 sample app
-                  href: webview2/samples/webview2apissample.md
-                  displayName: WebView2APISample, SampleApps  # repo dir names
-
-                - name: Win32 sample app with Visual Composition
-                  href: webview2/samples/webview2samplewincomp.md
-                  displayName: WebView2SampleWinComp  # repo dir name
-
-                - name: WinForms sample app
-                  href: webview2/samples/webview2windowsformsbrowser.md
-                  displayName: WebView2WindowsFormsBrowser  # repo dir name
-
-                - name: WPF sample app
-                  href: webview2/samples/webview2wpfbrowser.md
-                  displayName: WebView2WpfBrowser  # repo dir name
-
-                - name: WPF sample app with CDP extension
-                  href: webview2/samples/wv2cdpextensionwpfsample.md
-                  displayName: WV2CDPExtensionWPFSample  # repo dir name
-
-# deployment samples
-            - name: Deployment samples
-              items:
-                - name: WebView2 Deployment Visual Studio installer
-                  href: webview2/samples/wv2deploymentvsinstallersample.md
-                  displayName: WV2DeploymentVSInstallerSample  # repo dir name
-
-                - name: WiX Burn Bundle to deploy the WebView2 Runtime
-                  href: webview2/samples/wv2deploymentwixburnbundlesample.md
-                  displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
-
-                - name: WiX Custom Action to deploy the WebView2 Runtime
-                  href: webview2/samples/wv2deploymentwixcustomactionsample.md
-                  displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
+# machine setup
+        - name: Set up your Dev environment for WebView2
+          href: webview2/how-to/machine-setup.md
+          displayName: 
 
 # -----------------------------------------------------------------------------
-        - name: "Tutorial: Create a WebView2 app"
+# Getting Started tutorials
+        - name: Getting Started tutorials
           items:
-            - name: Get started with WebView2
+            - name: Getting Started tutorials
               href: webview2/get-started/get-started.md
               displayName: GettingStartedGuides  # repo dir name
 
-            - name: Win32
-              href: webview2/get-started/win32.md
-              displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
-
-            - name: WinForms
-              href: webview2/get-started/winforms.md
-              displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
-
             - name: WinUI 2 (UWP)
               href: webview2/get-started/winui2.md
-              displayName: Get started with WebView2 in WinUI 2 (UWP) apps  # repo dir name  # top-of-page title
+              displayName: Get started with WinUI 2 (UWP) apps  # no repo dir exists  # top-of-page title
 
             - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
-              displayName: WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
+              displayName: WinUI3_GettingStarted, Get started with WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
 
             - name: WPF
               href: webview2/get-started/wpf.md
-              displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
+              displayName: WPF_GettingStarted, Get started with WPF apps  # repo dir name  # top-of-page title
+
+            - name: WinForms
+              href: webview2/get-started/winforms.md
+              displayName: WinForms_GettingStarted, Get started with WinForms apps  # repo dir name  # top-of-page title
+
+            - name: Win32
+              href: webview2/get-started/win32.md
+              displayName: Win32_GettingStarted, Get started with Win32 apps  # repo dir name  # top-of-page title
+
+# -----------------------------------------------------------------------------
+# Sample apps
+        - name: Sample apps
+          items:
+            - name: Sample apps
+              href: webview2/code-samples-links.md
+              displayName: 
+
+            - name: WinUI 2 (UWP) sample app
+              href: webview2/samples/webview2_sample_uwp.md
+              displayName: webview2_sample_uwp, WinUI 2 (UWP) sample app  # repo dir name, top-of-page title
+
+            - name: WPF sample app
+              href: webview2/samples/webview2wpfbrowser.md
+              displayName: WebView2WpfBrowser, WPF sample app  # repo dir name, top-of-page title
+
+            - name: WPF sample app with CDP
+              href: webview2/samples/wv2cdpextensionwpfsample.md
+              displayName: WV2CDPExtensionWPFSample, WPF sample app with CDP  # repo dir name, top-of-page title
+
+            - name: WinForms sample app
+              href: webview2/samples/webview2windowsformsbrowser.md
+              displayName: WebView2WindowsFormsBrowser, WinForms sample app  # repo dir name, top-of-page title
+
+            - name: Win32 sample app
+              href: webview2/samples/webview2apissample.md
+              displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
+
+            - name: Win32 sample app with Visual Composition
+              href: webview2/samples/webview2samplewincomp.md
+              displayName: WebView2SampleWinComp, Win32 sample app with Visual Composition  # repo dir name, top-of-page title
+
+# -----------------------------------------------------------------------------
+# Deployment samples
+        - name: Deployment samples
+          items:
+            - name: Deployment samples
+              href: webview2/samples/deployment-samples.md
+              displayName: 
+
+            - name: WebView2 Deployment Visual Studio installer
+              href: webview2/samples/wv2deploymentvsinstallersample.md
+              displayName: WV2DeploymentVSInstallerSample  # repo dir name
+
+            - name: WiX Burn Bundle to deploy the WebView2 Runtime
+              href: webview2/samples/wv2deploymentwixburnbundlesample.md
+              displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
+
+            - name: WiX Custom Action to deploy the WebView2 Runtime
+              href: webview2/samples/wv2deploymentwixcustomactionsample.md
+              displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
 
 # -----------------------------------------------------------------------------
         - name: Fundamentals

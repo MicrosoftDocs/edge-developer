@@ -262,7 +262,7 @@ To filter requests by request type, click the buttons on the **Network** panel:
 
 If the buttons don't appear, the **Filters** pane might be hidden.  See [Hide the Filters pane](#hide-the-filters-pane).
 
-To enable multiple type filters simultaneously, press and hold `Control` (Windows, Linux) or `Command` (macOS) and then click the filters.
+To enable multiple type filters simultaneously, press and hold `Ctrl` (Windows, Linux) or `Command` (macOS) and then click the filters.
 
 Use the **Type** filters to display JS, CSS, and Document resources:
 
