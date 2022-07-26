@@ -25,15 +25,13 @@ By default, Command Palette isn't enabled. To enable the Command Palette experim
 
 1. Go to `edge://flags`.
 
-<!-- DevTools Toaster is in the process of being changed in Edge to match the feature's name -->
-1. In the **Search flags** text field, type **DevTools Toaster** or **Command Palette**.
+1. In the **Search flags** text field, type **Command Palette**.
 
-<!-- DevTools Toaster is in the process of being changed in Edge to match the feature's name -->
-1. In the **DevTools Toaster** or **Command Palette** dropdown menu, select **Enabled**:
+1. In the **Command Palette** dropdown menu, select **Enabled**.
+
+1. Click the **Restart** button which appears in the lower right:
 
    ![Enabling the Command Palette flag in the edge://flags page](./media/command-palette-flag.png)
-
-1. Click the **Restart** button which appears in the lower right.
 
 
 <!-- ====================================================================== -->
