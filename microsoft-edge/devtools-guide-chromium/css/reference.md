@@ -468,11 +468,11 @@ The following figure and list describes of each of the UI elements of the **Colo
 
 ### Sample a color off the page with the Eyedropper
 
-When you open the **Color Picker**, the **Eyedropper** (![Eyedropper.](../media/eyedropper-icon.msft.png)) is on by default.
-
 To change the selected color to some other color on the page:
 
-1. Hover on the target color in the viewport.
+1. Click the **Eyedropper** icon (![Eyedropper.](../media/eyedropper-icon.msft.png)). Your cursor changes to a magnifying glass.
+
+1. Hover on the pixel that has the color you want to sample, anywhere on your screen.
 
 1. Click to confirm.
 
