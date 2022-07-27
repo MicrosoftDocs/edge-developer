@@ -29,7 +29,7 @@ If this is your first time using WebView2, we recommend first following the [Get
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install a preview channel of Microsoft Edge
+## Step 1 - Prerequisite: Install a preview channel of Microsoft Edge
 
 <!-- readme said "Prerequisites: Microsoft Edge (Chromium) installed on a supported OS. Currently we recommend the latest version of the Edge Canary channel." -->
 
@@ -39,7 +39,7 @@ We recommend the latest version of the Canary channel.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install Visual Studio
+## Step 2 - Prerequisite: Install Visual Studio with .NET support
 
 <!-- readme said "Prerequisites: Visual Studio with .NET support installed." -->
 Microsoft Visual Studio (with .NET support) is required.  Microsoft Visual Studio Code is not supported for this sample.
@@ -143,7 +143,7 @@ For more information, see [WebView2 CDP Extension](https://aka.ms/webviewcdpnuge
 
 
 <!-- ====================================================================== -->
-## Step 9 - Build and run the project with updated WebView2 SDK
+## Step 9 - Build and run the project with updated packages
 
 1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
 

@@ -34,7 +34,7 @@ See also [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/W
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install Visual Studio
+## Step 1 - Install Visual Studio
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
 
@@ -42,19 +42,19 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install a preview channel of Microsoft Edge
+## Step 2 - Install a preview channel of Microsoft Edge
 
 1.If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Clone or download the WebView2Samples repo
+## Step 3 - Clone or download the WebView2Samples repo
 
 1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 5 - Open .sln in Visual Studio
+## Step 4 - Open the solution in Visual Studio
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
@@ -66,7 +66,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 6 - Install workloads if prompted
+## Step 5 - Install workloads if prompted
 
 1. If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
@@ -78,13 +78,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 7 - Install or update the WebView2 SDK
-
-1. Install or update the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
-
-
-<!-- ====================================================================== -->
-## Step 8 - Build the project
+## Step 6 - Build and run the project
 
 At the top of Visual Studio, set the build target, as follows:
 
@@ -95,10 +89,6 @@ At the top of Visual Studio, set the build target, as follows:
 1. In **Solution Explorer**, right-click the **WebView2WpfBrowser** project, and then select **Build**.
 
    This builds the project file `WebView2WpfBrowser.csproj`.
-
-
-<!-- ====================================================================== -->
-## Step 9 - Run (debug) the project
 
 1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
 
@@ -112,7 +102,15 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 10 - Inspect the code
+## Step 7 - Update or install the WebView2 SDK
+
+1. Update or install the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+
+1. Build and run the project again.
+
+
+<!-- ====================================================================== -->
+## Step 8 - Inspect the code
 
 1. In the Visual Studio code editor, inspect the code:
 

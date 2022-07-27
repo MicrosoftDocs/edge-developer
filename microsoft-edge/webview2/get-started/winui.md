@@ -12,10 +12,10 @@ ms.date: 07/06/2022
 
 This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.
 
-In this tutorial, you start with the Visual Studio project template for a blank WinUI 3 project, and then add a WebView2 control.  You then add an address bar and logic to display a warning dialog when the user tries to navigate to a URL with an `http://` prefix.
+In this tutorial, you use the **Blank App, Packaged (WinUI in Desktop)** Visual Studio project template to create a blank WinUI 3 project.  That project template uses the WindowsAppSDK, which includes the WebView2 SDK.  You add a WebView2 control.  You then add an address bar and logic to display a warning dialog when the user tries to navigate to a URL with an `http://` prefix.
 
-A completed version of this tutorial project is available in the WebView2Samples repo: [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted).
 
+#### Completed project
 
 A completed version of this tutorial project (as of 2020) is available in the **WebView2Samples** repo:
 

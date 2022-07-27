@@ -12,17 +12,20 @@ ms.date: 04/27/2022
 
 <!-- TODO: Rewrite to start from a project template? -->
 
-In this article, you set up your development tools (if not done already), add WebView2 code to the Win32 app, and learn about WebView2 concepts along the way.
+In this article, you set up your development tools (if not done already), learn how to add WebView2 code to a Win32 app project, and learn about WebView2 concepts along the way.
 
-The project uses the [Win32_GettingStarted (WebView2GettingStarted.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) directory that's part of the `WebView2Samples` repo.  To use this article, you do the following:
+This tutorial starts by opening an existing Win32 app project that has WebView2 code added.  The project uses the [Win32_GettingStarted (WebView2GettingStarted.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) directory that's part of the `WebView2Samples` repo.  To use this article, you do the following:
 1. Clone or download the `WebView2Samples` repo to your local drive.
 1. Run the completed project.
-1. Optionally delete the WebView2 code from `HelloWebView.cpp`.
+1. Optionally delete the WebView2 code from `HelloWebView.cpp` to restore the Win32 baseline app.
 1. Follow the remaining steps in this article about adding and understanding the WebView2 code.
 
 <!-- A completed version of this tutorial project is available in the WebView2Samples repo: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted#readme). -->
 
 This tutorial does not have you create a new project; you don't use a project template in Visual Studio to create a new project.  Instead, you start with the completed project that's in the repo.
+
+
+#### Completed project
 
 The completed tutorial project is available in the **WebView2Samples** repo:
 
@@ -32,7 +35,7 @@ The completed tutorial project is available in the **WebView2Samples** repo:
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install Visual Studio
+## Step 1 - Prerequisite: Install Visual Studio
 
 This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code.
 
@@ -42,7 +45,7 @@ Then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install a preview channel of Microsoft Edge
+## Step 2 - Prerequisite: Install a preview channel of Microsoft Edge
 
 1. If it's not installed already, install a preview channel of Microsoft Edge.  To do that, in a new window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.
 
@@ -68,7 +71,7 @@ Then return here after you've copied the repo to your local drive, and continue 
 
 
 <!-- ====================================================================== -->
-## Step 4 - Open the existing Win32 single-window app (WebView2GettingStarted.sln)
+## Step 4 - Open the finished solution (WebView2GettingStarted.sln)
 
 You start with a basic desktop project that contains a single main window.  We'll start with an existing app project from the **WebView2Samples** repo, which you cloned or downloaded from GitHub in the previous step.
 
@@ -150,7 +153,32 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Install the Windows Implementation Libraries (WIL)
+## Step 7 - Build and run the repo's finished project
+
+At this point, your Dev environment is set up to run Win32 WebView2 apps in debug mode in Visual Studio and add WebView2 features.
+
+---
+
+To confirm that your system is set up for WebView2 coding, run the project in Debug mode, as follows:
+
+1. Select **Debug** > **Start debugging** (`F5`) to build and run the project.
+
+   The sample app first opens a pop-up window, which displays the URL that will be loaded, along with an **OK** button:
+
+   ![The sample app displays a pop-up window with URL and OK button over an empty WebView2 window](../media/show-url.png)
+
+1. Click the **OK** button to dismiss the pop-window and continue to the URL:
+
+   The WebView2 window now displays webpage content: the Bing website, `http://www.bing.com`.
+
+   <!-- instance 3 of bing-window.png -->
+   ![The sample app now displays the Bing website](../media/bing-window.png)
+
+1. Close the **WebView sample** window.
+
+
+<!-- ====================================================================== -->
+## Step 8 - Update or install the Windows Implementation Libraries (WIL)
 
 WIL is already installed into the project at the repo, but walk through these steps to learn about setup and to check the project's setup.
 
@@ -201,13 +229,15 @@ Continue with the steps below.
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
-## Step 8 - Install the WebView2 SDK
+## Step 9 - Update or install the WebView2 SDK
 
-Next, you'll install the WebView2 SDK.  The WebView2 SDK includes the WebView2 control, which is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
+The finished project in the repo already has a version of the WebView2 SDK installed for the project.  If you were creating a project from scratch by starting by using a Win32 project template, you'd need to install the WebView SDK package for the project, as described here.
+
+Next, update (or install) the WebView2 SDK.  The WebView2 SDK includes the WebView2 control, which is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
 
 ---
 
-Install the WebView2 SDK, as follows:
+Update (or install) the WebView2 SDK, as follows:
 
 1. In Visual Studio, make sure that the **WebView2GettingStarted** solution is open, as described above.
 
@@ -217,7 +247,9 @@ Install the WebView2 SDK, as follows:
 
    ![Manage NuGet packages](../media/manage-nuget-packages.png)
 
-1. In the **NuGet** window, click the **Browse** tab.
+1. If the WebView2 SDK is already installed for the project, as is the case with the repo project, in the **NuGet** window, click the **Installed** tab or the **Update** tab.
+
+1. Or, if you're installing the WebView2 SDK in a new project, click the **Browse** tab.
 
 1. On the right of the search bar, clear the **Include prerelease** checkbox (unless you know that you want a prerelease version of the SDK).
 
@@ -227,42 +259,15 @@ Install the WebView2 SDK, as follows:
    Microsoft.Web.WebView2
    ```
 
-1. In the right-hand side window, click **Install** (or **Update**).  NuGet downloads the WebView2 SDK to your machine.
+1. In the right-hand side window, click **Update** (or **Install**).  NuGet downloads the WebView2 SDK to your machine.
 
    ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio](../media/nuget.png)
 
-   _To zoom, right-click > **Open image in new tab**._
-
 1. Close the **NuGet Package Manager** tab.
 
-The WebView2 SDK is now installed, so your development environment is now set up to add WebView2 features to your Win32 app.
+The WebView2 SDK is now updated or installed, so your development environment is now set up to add WebView2 features to your Win32 app.
 
 Continue with the steps below.
-
-
-<!-- ====================================================================== -->
-## Step 9 - Run the finished project
-
-At this point, your Dev environment is set up to run Win32 WebView2 apps in debug mode in Visual Studio and add WebView2 features.
-
----
-
-To confirm that your system is set up for WebView2 coding, run the project in Debug mode, as follows:
-
-1. Select **Debug** > **Start debugging** (`F5`) to build and run the project.
-
-   The sample app first opens a pop-up window, which displays the URL that will be loaded, along with an **OK** button:
-
-   ![The sample app displays a pop-up window with URL and OK button over an empty WebView2 window](../media/show-url.png)
-
-1. Click the **OK** button to dismiss the pop-window and continue to the URL:
-
-   The WebView2 window now displays webpage content: the Bing website, `http://www.bing.com`.
-
-   <!-- instance 3 of bing-window.png -->
-   ![The sample app now displays the Bing website](../media/bing-window.png)
-
-1. Close the **WebView sample** window.
 
 
 <!-- ====================================================================== -->
@@ -367,9 +372,9 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 ## Step 11 - Include the WebView2.h header in HelloWebView.cpp
 
 Above, we did the following:
-*  Cloned or downloaded an existing project that contains a standard C++ Windows desktop application.
-*  Installed the Windows Implementation Library (WIL).
-*  Installed the WebView2 SDK, to add WebView2 features.
+*  Cloned or downloaded the samples repo including an existing project that contains a standard C++ Windows desktop application.
+*  Updated or installed the Windows Implementation Library (WIL).
+*  Updated or installed the WebView2 SDK, to add WebView2 features.
 *  Optionally deleted the WebView2 code from `HelloWebView.cpp`.
 
 ---
@@ -693,7 +698,7 @@ Have the host app and web content communicate through `postMessage`, as follows:
 1. When you are ready, close the **WebView sample** window.
 
 
-Congratulations, you built your first WebView2 app!  Your development environment is now set up for WebView2 app development, to include the WebView2 control in your Win32 apps.  You've also had an introduction to WebView2 programming concepts.
+Congratulations, you've built a Win32 app that hosts and uses the WebView2 control!  Your development environment is now set up for WebView2 app development, to include the WebView2 control in your Win32 apps.  You've also had an introduction to WebView2 programming concepts.
 
 
 <!-- ====================================================================== -->

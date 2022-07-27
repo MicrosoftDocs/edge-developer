@@ -22,7 +22,7 @@ See also [README file for WebView2WindowsFormsBrowser](https://github.com/Micros
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install Visual Studio
+## Step 1 - Install Visual Studio
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
 
@@ -30,19 +30,19 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install a preview channel of Microsoft Edge
+## Step 2 - Install a preview channel of Microsoft Edge
 
 1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Clone or download the WebView2Samples repo
+## Step 3 - Clone or download the WebView2Samples repo
 
 1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 5 - Open .sln in Visual Studio
+## Step 4 - Open .sln in Visual Studio
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
@@ -53,43 +53,15 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
    *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
 
 <!-- ====================================================================== -->
-## Step 6 - Install workloads if prompted
+## Step 5 - Install workloads if prompted
 
 1. If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 7 - View the opened project
+## Step 6 - Build and run the project
 
-   Solution Explorer shows the **WebView2WindowsFormsBrowser** project.
-
-   <!-- Solution Explorer shows the **WebView2WindowsFormsBrowser** project: -->
-
-   <!-- ![The WebView2WindowsFormsBrowser sample opened in Visual Studio in Solution Explorer](media/webview2windowsformsbrowser-in-solution-explorer.png) -->
-   <!--todo: create png-->
-
-
-<!-- ====================================================================== -->
-## Step 8 - Install or update the WebView2 SDK
-
-<!-- checking comment at repo says "Update projects to use latest WebView2 SDK 1.0.781-prerelease (#74)" -->
-
-1. **WebView2 SDK** - Install or update the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
-
-   <!-- this same png is used multiple times in this file -->
-   ![The WebView2WindowsFormsBrowser project in Visual Studio](media/webview2windowsformsbrowser-in-visual-studio.png)
-
-   _To zoom, right-click > **Open image in new tab**._
-
-
-<!-- ====================================================================== -->
-## Step 9 - Install .NET Framework 4.6.2 Developer Pack
-
-To build this project, .NET Framework 4.6.2 Developer Pack is required.
-
-To test whether .NET Framework 4.6.2 Developer Pack is installed:
-
-At the top of Visual Studio, set the build target, as follows:
+The **WebView2WindowsFormsBrowser** project is now open in Visual Studio, from doing the above steps.  At the top of Visual Studio, set the build target, as follows:
 
 1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
 
@@ -100,6 +72,22 @@ At the top of Visual Studio, set the build target, as follows:
    This builds the project file `SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.vcxproj`.  This might take a couple minutes.
 
    If you get error messages about missing .NET Framework 4.6.2 Developer Pack, follow the steps below.  Otherwise, skip to the next major section below.
+
+1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
+
+   The sample app window opens:
+
+   ![The WebView2WindowsFormsBrowser app window](media/webview2windowsformsbrowser-app-window.png)
+
+1. Use the sample app; see [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser#readme).
+
+1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
+
+
+<!-- ====================================================================== -->
+## Step 7 - Install .NET Framework 4.6.2 Developer Pack
+
+If you build the **WebView2WindowsFormsBrowser** project and get error messages about missing .NET Framework 4.6.2 Developer Pack, follow the steps below.  Otherwise, skip to the next major section below.
 
 1. Go to [Download .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework/), select v4.6.2, and then click the **Download .NET Framework 4.6.2 Developer Pack** button:
 
@@ -133,7 +121,18 @@ Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
 
 
 <!-- ====================================================================== -->
-## Step 10 - Build the project
+## Step 8 - Update or install the WebView2 SDK
+
+<!-- a checkin comment at repo says "Update projects to use latest WebView2 SDK 1.0.781-prerelease (#74)" -->
+
+1. **WebView2 SDK** - Update or install the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+
+   <!-- this same png is used multiple times in this file -->
+   ![The WebView2WindowsFormsBrowser project in Visual Studio](media/webview2windowsformsbrowser-in-visual-studio.png)
+
+
+<!-- ====================================================================== -->
+## Step 9 - Build and run the updated project
 
 1. If you just now installed .NET Framework 4.6.2 Developer Pack above, close Visual Studio, and then open the solution file in Visual Studio again, from the directory:
 
@@ -153,10 +152,6 @@ At the top of Visual Studio, set the build target, as follows:
 
    This builds the project file `SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.vcxproj`.
 
-
-<!-- ====================================================================== -->
-## Step 11 - Run (debug) the project
-
 1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
 
    The sample app window opens:
@@ -169,14 +164,12 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 12 - Inspect the code
+## Step 10 - Inspect the code
 
 1. In the Visual Studio code editor, inspect the code:
 
    <!-- this same png is used multiple times in this file -->
    ![The WebView2WindowsFormsBrowser project in Visual Studio](media/webview2windowsformsbrowser-in-visual-studio.png)
-
-   _To zoom, right-click > **Open image in new tab**._
 
 
 <!-- ====================================================================== -->

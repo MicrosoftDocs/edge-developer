@@ -296,7 +296,7 @@ The `NavigateWithWebResourceRequest` method allows your host app to navigate the
 <!-- ====================================================================== -->
 ### Example: Constructing a custom request and navigating using that request
 
-<!-- This is an existing example in the Win32 sample app. -->
+<!-- This is an existing example in the Win32 sample app (WebView2APISample). -->
 
 <!-- CreateWebResourceRequest and NavigateWithWebResourceRequest -->
 

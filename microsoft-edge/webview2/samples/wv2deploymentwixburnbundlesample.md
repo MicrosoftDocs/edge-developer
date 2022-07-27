@@ -16,7 +16,7 @@ This sample, **WV2DeploymentWiXBurnBundleSample**, demonstrates how to use a WiX
 *  Repo directory: [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample)
 *  Project file: **WV2DeploymentWiXBurnBundleSample.wixproj**
 
-This sample creates a [WiX](https://wixtoolset.org/) installer for the Win32 sample app [WebView2APISample](webview2apissample.md).  This sample uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.
+This sample creates a [WiX](https://wixtoolset.org/) installer for the [Win32 sample app (WebView2APISample)](webview2apissample.md).  This sample uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.
 
 <!-- todo: screenshot representing the success state -->
 
@@ -30,7 +30,7 @@ For an overview of the approaches, see [Deploying the Evergreen WebView2 Runtime
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install Visual Studio
+## Step 1 - Prerequisite: Install Visual Studio
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
 
@@ -42,7 +42,7 @@ Then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install WiX Toolset build tools
+## Step 2 - Prerequisite: Install WiX Toolset build tools
 
 <!-- todo: how to make "Unsupported" go away?  what to say about it?
 If you haven't installed WiX tools, the WiX deployment projects in Solution Explorer are marked as "Unsupported":
@@ -87,7 +87,7 @@ Also install the WiX Visual Studio component, per the next section.
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install WiX Toolset Visual Studio Extension
+## Step 3 - Prerequisite: Install WiX Toolset Visual Studio Extension
 
 1. In a new window or tab, go to [WiX Toolset](https://wixtoolset.org/releases/) and then download and install the appropriate extension:
    * WiX Toolset Visual Studio 2022 Extension - downloaded installer file: `Votive2022.vsix` 
@@ -123,7 +123,7 @@ Follow the steps in that section, and then return to this page and continue belo
 
 
 <!-- ====================================================================== -->
-## Step 5 - Build 
+## Step 5 - Build the deployment project
 
 1. In your local copy of the WebView2Samples repo, open `<repo-location>\WebView2Samples\SampleApps\WebView2Samples.sln` with Visual Studio (not Visual Studio Code).
 
@@ -146,6 +146,11 @@ Follow the steps in that section, and then return to this page and continue belo
 1. If you are packaging the Evergreen WebView2 Runtime Bootstrapper with your app, [download](https://developer.microsoft.com/microsoft-edge/webview2/) the Bootstrapper and place it under the enclosing `SampleApps` folder.
 
 1. Build the `WV2DeploymentWiXBurnBundleSample` project.
+
+<!-- TODO: describe the Done state; explain result: accomplished xyz.  you'll use this result to... distribute runtime with app.
+
+## Next steps
+-->
 
 
 <!-- ====================================================================== -->

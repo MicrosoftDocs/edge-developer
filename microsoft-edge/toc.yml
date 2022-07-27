@@ -1021,7 +1021,7 @@
               href: webview2/code-samples-links.md
               displayName: 
 
-            - name: Win32 sample app
+            - name: Win32 sample app (WebView2APISample)
               href: webview2/samples/webview2apissample.md
               displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
 

@@ -13,8 +13,11 @@ ms.date: 07/14/2022
 In this tutorial, you:
 *  Set up your development tools for creating UWP apps that use WebView2 to display web content.
 *  Create an initial WinUI 2 (UWP) app.
+*  Install the **Microsoft.UI.Xaml** package (WinUI 2) for the project.
 *  Add a WebView2 control that displays webpage content.
 *  Learn about WebView2 concepts along the way.
+
+You use the **C# Blank App (Universal Windows)** project template, then install the **Microsoft.UI.Xaml** package (WinUI 2) for this project.  Installing that package installs the **Microsoft.Web.WebView2** package (the WebView2 SDK) as a dependency.
 
 The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  This package provides Windows UI features, including:
 *  UWP XAML controls.
@@ -22,6 +25,9 @@ The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  
 *  Fluent styles and materials.
 
 WinUI 2 supports UWP only.  These controls are backward-compatible.
+
+
+#### Completed project
 
 Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
 <!-- A completed version of this tutorial project is available in the **WebView2Samples** repo:

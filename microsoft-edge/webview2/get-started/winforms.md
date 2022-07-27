@@ -17,8 +17,12 @@ todo: errors experienced with vs2022 by following these instructions:
 
 This tutorial helps you:
 *  Set up your development tools.
-*  Use the **C# Windows Forms App (.NET Framework)** Visual Studio project template to create a WinForms project that includes WebView2.
+*  Use the **C# Windows Forms App (.NET Framework)** Visual Studio project template to create a WinForms project.
+*  Install the **Microsoft.Web.WebView2** SDK package for the WinForms project.
 *  Learn about WebView2 concepts along the way.
+
+
+#### Completed project
 
 A completed version<!--TODO: what date?--> of this tutorial project is available in the **WebView2Samples** repo:
 
@@ -90,11 +94,7 @@ Start with a basic desktop project that contains a single main window.
 
    ![The Visual Studio opening panel displays the Create a new project card](media/winforms-opening-panel.png)
 
-1. On the right, click the **Create a new project** card.
-
-   The Visual Studio **Create a new project** window appears:
-
-   ![The Visual Studio 'Create a new project' window](media/vs2022-create-a-new-project.png)
+1. On the right, click the **Create a new project** card.  The Visual Studio **Create a new project** window opens.
 
 1. In the **Search** text box, paste or start typing the following:
 
@@ -104,7 +104,7 @@ Start with a basic desktop project that contains a single main window.
 
    Search results appear, listing project types.
 
-1. Select the **C# Windows Forms App (.NET Framework)** card, and then click the **Next** button:
+1. Select the **C# Windows Forms App (.NET Framework)** card.  Make sure the name matches, with a **C#** icon and then the name **Windows Forms App (.NET Framework)**.  Then click the **Next** button:
 
    ![In the 'Create a new project' panel, select 'C# > Windows Forms App (.NET Framework)'](media/winforms-new-project.png)
 
@@ -142,7 +142,7 @@ You now have an empty WinForms project that runs.  Next, set up the project to a
 <!-- ====================================================================== -->
 ## Step 6 - Install the WebView2 SDK
 
-For every WebView2 project, you use the NuGet package manager within Visual Studio to add the WebView2 SDK to the project.  You install the Microsoft.Web.WebView2 SDK NuGet package for use by the current project.
+For every WebView2 project, you use the NuGet package manager within Visual Studio to add the WebView2 SDK to the project.  You install the **Microsoft.Web.WebView2** SDK NuGet package for use by the current project.
 
 Use NuGet to add the WebView2 SDK to the project, as follows:
 
