@@ -10,9 +10,15 @@ ms.date: 07/18/2022
 ---
 # WebView2Browser (Win32 C++/JS)
 
-<!-- copied from readme with tiny changes so far-->
+<!-- copied from https://github.com/MicrosoftEdge/WebView2Browser#readme -->
 
 This sample, **WebView2Browser**, is a web browser built with the [Microsoft Edge WebView2](https://aka.ms/webview2) control.
+
+This sample has its own dedicated repo.
+
+*  Sample name: **WebView2Browser**
+*  Repo: [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser)
+*  Solution file: **WebViewBrowserApp.sln**
 
 ![The WebView2Browser sample app](./webview2browser-images/WebView2Browser.png)
 <!-- todo: remove png from other repo, in PR 140: -->
@@ -24,12 +30,6 @@ This sample, **WebView2Browser**, is a web browser built with the [Microsoft Edg
 This sample is built as a Win32 [Visual Studio 2019](https://visualstudio.microsoft.com/vs/) project.  It uses C++ and JavaScript in the WebView2 environment.
 
 **WebView2Browser** shows some of the simplest uses of WebView2, such as creating and navigating a WebView, but also some more complex workflows like using the [PostWebMessageAsJson API](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson) to communicate across WebView2 controls in separate environments.  This is a rich code sample to demonstrate how you can use WebView2 APIs to build your own app.
-
-The sample is in the **WebView2Browser** repo:
-
-*  Sample name: **WebView2Browser**
-*  Repo directory: [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser)
-*  Solution file: **WebViewBrowserApp.sln**
 
 
 <!-- ====================================================================== -->

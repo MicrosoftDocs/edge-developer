@@ -14,6 +14,10 @@ ms.date: 04/27/2022
 
 This sample, **WebView2WpfBrowser**, is a WPF .NET app that demonstrates how to embed the WebView2 control and use WebView2 APIs to implement a web browser.
 
+*  Sample name: **WebView2WpfBrowser**
+*  Repo directory: [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)
+*  Solution file: **WebView2WpfBrowser.sln**
+
 This sample is built as a WPF Visual Studio 2019 project.  It uses C# and HTML/CSS/JavaScript in the WebView2 environment.
 
 The API Sample
@@ -21,33 +25,12 @@ showcases a selection of WebView2's event handlers and API methods that allow a 
 <!-- TODO: "the API Sample", does that mean the present sample, or a WPF sample that's within the WebView2Samples.sln for WebView2APISample? https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample ? -->
 <!-- todo: clarify relation between WebView2APISample vs the projects it contains vs the other platform samples -->
 
-*  Sample name: **WebView2WpfBrowser**
-*  Repo directory: [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)
-*  Solution file: **WebView2WpfBrowser.sln**
 
 If this is your first time using WebView2, we recommend first following the Getting Started tutorial, which goes over how to create a WebView2 and walks through some basic WebView2 functionality.  See [Get started with WebView2 in WPF apps](../get-started/wpf.md).
 
 For more information about events and API Handlers in WebView2, see [WebView2 API Reference](/microsoft-edge/webview2/webview2-api-reference).
 
-
-<!-- ====================================================================== -->
-## Step 1 - View the Readme
-
-The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
-
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#readme).  Then return to this page and continue the steps below.
-
-   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#prerequisites)
-
-   * [README > Build the WebView2 WPF Browser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#build-the-webview2-wpf-browser)
-
-   You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:<!-- todo: is there a .md preview capability locally? -->
-
-   `<your-repos-directory>/WebView2Samples/SampleApps/WebView2WpfBrowser/README.md`
-
-   or:
-
-   `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WpfBrowser/README.md`
+See also [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#readme).
 
 
 <!-- ====================================================================== -->
@@ -65,9 +48,9 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 4 - Download or clone the WebView2Samples repo
+## Step 4 - Clone or download the WebView2Samples repo
 
-1. If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->

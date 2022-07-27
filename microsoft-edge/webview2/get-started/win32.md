@@ -15,7 +15,7 @@ ms.date: 04/27/2022
 In this article, you set up your development tools (if not done already), add WebView2 code to the Win32 app, and learn about WebView2 concepts along the way.
 
 The project uses the [Win32_GettingStarted (WebView2GettingStarted.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) directory that's part of the `WebView2Samples` repo.  To use this article, you do the following:
-1. Download or clone the `WebView2Samples` repo to your local drive.
+1. Clone or download the `WebView2Samples` repo to your local drive.
 1. Run the completed project.
 1. Optionally delete the WebView2 code from `HelloWebView.cpp`.
 1. Follow the remaining steps in this article about adding and understanding the WebView2 code.
@@ -50,7 +50,7 @@ Then continue below.
 
 
 <!-- ====================================================================== -->
-## Step 3 - Download or clone the WebView2Samples repo
+## Step 3 - Clone or download the WebView2Samples repo
 
 The code that you add in this tutorial's steps, has already been added to the sample repo, for you.  An optional step below allows you to delete the WebView2 code from `HelloWebView.cpp`, so that you can add it yourself, if you want.
 
@@ -60,9 +60,9 @@ The existing Visual Studio project we'll start with is part of the sample code f
 
 ---
 
-Download or clone the WebView2Samples repo, as follows:
+Clone or download the WebView2Samples repo, as follows:
 
-1. If you haven't already, download or clone the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) or [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
+1. If you haven't already, clone or download the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) or [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
 Then return here after you've copied the repo to your local drive, and continue with the steps below.
 

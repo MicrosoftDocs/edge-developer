@@ -12,11 +12,13 @@ ms.date: 04/27/2022
 
 This sample, **WV2DeploymentWiXBurnBundleSample**, demonstrates how to use a WiX Burn Bundle to deploy the WebView2 Runtime.  Do the steps in this article to create a WiX installer that chain-installs the Evergreen WebView2 Runtime through Burn Bundle.
 
-This sample creates a [WiX](https://wixtoolset.org/) installer for the Win32 sample app [WebView2APISample](webview2apissample.md).  This sample uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.
-
 *  Sample name: **WV2DeploymentWiXBurnBundleSample**
 *  Repo directory: [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample)
 *  Project file: **WV2DeploymentWiXBurnBundleSample.wixproj**
+
+This sample creates a [WiX](https://wixtoolset.org/) installer for the Win32 sample app [WebView2APISample](webview2apissample.md).  This sample uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.
+
+<!-- todo: screenshot representing the success state -->
 
 This sample demonstrates these two different distribution approaches to distribute the WebView2 Runtime for your app:
 *  Downloading the Evergreen WebView2 Runtime Bootstrapper through a link stored in your app.
@@ -113,9 +115,9 @@ Also install the WiX Visual Studio component, per the next section.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Download or clone the WebView2Samples repo
+## Step 4 - Clone or download the WebView2Samples repo
 
-1. If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
+1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
 Follow the steps in that section, and then return to this page and continue below.
 

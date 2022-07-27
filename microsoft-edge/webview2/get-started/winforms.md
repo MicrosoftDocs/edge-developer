@@ -28,13 +28,13 @@ A completed version<!--TODO: what date?--> of this tutorial project is available
 
 
 <!-- ====================================================================== -->
-## Step 1 - Optionally download or clone the WebView2Samples repo
+## Step 1 - Optionally clone or download the WebView2Samples repo
 
 Do either of the following:
 
-*  Create a new project in Visual Studio, using the steps below.
+*  Create a new project in Visual Studio starting from a project template, using the steps below.
 
-*  Download or clone the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.  See [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  A completed version of this tutorial project is available in the WebView2Samples repo directory [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted).
+*  Clone or download the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.  See [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  A completed version of this tutorial project is available in the WebView2Samples repo directory [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted).
 
 
 <!-- ====================================================================== -->

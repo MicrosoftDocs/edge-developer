@@ -10,11 +10,6 @@ ms.date: 07/13/2022
 ---
 # WinUI 2 (UWP) sample app
 
-<!--
-spelling conventions:
-"WinUI 2" https://docs.microsoft.com/en-us/windows/apps/winui/winui2/
--->
-
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinUI 2 (UWP) app.
 
 *  Sample name: **webview2_sample_uwp**
@@ -32,27 +27,11 @@ This sample includes the following NuGet packages:
 To demonstrate the latest features, this sample in the WebView2Samples repo is set up to use a prerelease version of the WinUI 2 SDK (listed as **Microsoft.UI.Xaml** in NuGet Package Manager), rather than a Stable version.  The WinUI 2 SDK includes a compatible version of the WebView2 SDK, as a dependency of **Microsoft.UI.Xaml**.
 <!-- After you update the packages, the resulting WebView2 SDK might be a stable or prerelease SDK.  Per screenshots below; appears to have switched from prerelease (per repo) to stable (after local update) -->
 
-
-<!-- ====================================================================== -->
-## Step 1 - View the Readme
-
-1. In a separate window or tab, briefly read the rendered README.md file for this project at GitHub: [README file for webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#readme).  Then return to this page and continue the steps below.
-
-   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#prerequisites)
-
-   * [README > Build the WebView2 UWP WinUi2 browser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#build-the-webview2-uwp-winui2-browser)
-
-   You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:
-
-   `<your-repos-directory>/WebView2Samples/SampleApps/webview2_sample_uwp/README.md`
-
-   or:
-
-   `<your-repos-directory>/WebView2Samples-main/SampleApps/webview2_sample_uwp/README.md`
+See also [README file for webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#readme).
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install Visual Studio
+## Step 1 - Install Visual Studio
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
 
@@ -60,19 +39,19 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install a preview channel of Microsoft Edge
+## Step 2 - Install a preview channel of Microsoft Edge
 
 1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Download or clone the WebView2Samples repo
+## Step 3 - Clone or download the WebView2Samples repo
 
-1. If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 5 - Open the solution in Visual Studio
+## Step 4 - Open the solution in Visual Studio
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
@@ -84,13 +63,13 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 6 - Install workloads if prompted
+## Step 5 - Install workloads if prompted
 
 1. If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Build and run the project using the initial NuGet packages
+## Step 6 - Build and run the project using the initial NuGet packages
 
 Solution Explorer shows the **webview2_sample_uwp** project:
 
@@ -125,7 +104,7 @@ Next, update the NuGet packages for the project, per the following sections.
 
 
 <!-- ====================================================================== -->
-## Step 8 - Update the NuGet packages
+## Step 7 - Update the NuGet packages
 
 In this step, we'll update the project's NuGet packages, to get the latest prerelease version of the WinUI 2 SDK.  The WinUI 2 SDK includes a compatible prerelease or release version of the WebView2 SDK.
 
@@ -188,7 +167,7 @@ Update the project's NuGet packages:
 
 
 <!-- ====================================================================== -->
-## Step 9 - Build and run the project with updated packages
+## Step 8 - Build and run the project with updated packages
 
 Now that the NuGet packages have been updated, build and run the project again:
 
@@ -210,7 +189,7 @@ Now that the NuGet packages have been updated, build and run the project again:
 
 
 <!-- ====================================================================== -->
-## Step 10 - Inspect the code
+## Step 9 - Inspect the code
 
 1. In the Visual Studio code editor, inspect the code:
 

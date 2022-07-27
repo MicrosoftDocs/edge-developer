@@ -1021,9 +1021,26 @@
               href: webview2/code-samples-links.md
               displayName: 
 
+            - name: Win32 sample app
+              href: webview2/samples/webview2apissample.md
+              displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
+
+            - name: Win32 sample app with Visual Composition
+              href: webview2/samples/webview2samplewincomp.md
+              displayName: WebView2SampleWinComp, Win32 sample app with Visual Composition  # repo dir name, top-of-page title
+
+            - name: WebView2Browser (Win32 C++/JS)
+              href: webview2/samples/webview2browser.md
+              displayName: WebView2Browser  # repo dir name
+
             - name: WinUI 2 (UWP) sample app
               href: webview2/samples/webview2_sample_uwp.md
               displayName: webview2_sample_uwp, WinUI 2 (UWP) sample app  # repo dir name, top-of-page title
+
+# pending, July 26 2022
+#            - name: WinUI 3 sample app
+#              href: webview2/samples/webview2-winui3-sample.md
+#              displayName: WebView2_WinUI3_Sample  # repo dir name
 
             - name: WPF sample app
               href: webview2/samples/webview2wpfbrowser.md
@@ -1036,18 +1053,6 @@
             - name: WinForms sample app
               href: webview2/samples/webview2windowsformsbrowser.md
               displayName: WebView2WindowsFormsBrowser, WinForms sample app  # repo dir name, top-of-page title
-
-            - name: Win32 sample app
-              href: webview2/samples/webview2apissample.md
-              displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
-
-            - name: Win32 sample app with Visual Composition
-              href: webview2/samples/webview2samplewincomp.md
-              displayName: WebView2SampleWinComp, Win32 sample app with Visual Composition  # repo dir name, top-of-page title
-
-            - name: WebView2Browser (Win32 C++/JS)
-              href: webview2/samples/webview2browser.md
-              displayName: 
 
 # -----------------------------------------------------------------------------
 # Deployment samples

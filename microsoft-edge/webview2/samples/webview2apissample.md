@@ -26,16 +26,14 @@ This sample is built as a Win32 Visual Studio 2019 project.  It uses C++ and HTM
 
 This sample and its solution file are unique: it contains a copy of other samples, in Solution Explorer.
 
-<!-- todo: copy the sln exp image here -->
+**WebView2APISample** is a hybrid application built with the Microsoft Edge WebView2 control; that is, this app combines a native side and a browser web app side.  See [Hybrid app approach](../index.md#hybrid-app-approach) in _Introduction to Microsoft Edge WebView2_.
 
+The running **WebView2APISample** app window shows the WebView2 SDK version and also the WebView2 Runtime version and path.  There are many useful menus and menuitems provided for you:
 
-This is a hybrid application built with the Microsoft Edge WebView2 control; that is, this app combines a native side and a browser web app side.  See [Hybrid app approach](../index.md#hybrid-app-approach) in _Introduction to Microsoft Edge WebView2_.
-
+![WebView2APISample app window showing WebView2 SDK version and WebView2 Runtime version and path](./webview2apissample-images/webview2apisample-app-window.png)
+<!-- old:
 ![Sample App Snapshot](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Samples/master/SampleApps/WebView2APISample/documentation/screenshots/sample-app-screenshot.png)
-
-Another version of the **WebView2APISample** app:
-
-![WebView2APISample app window](./webview2apissample-images/webview2apisample-app-window.png)
+-->
 
 If this is your first time using WebView, we recommend first following the tutorial [Get started with WebView2 in Win32 apps](../get-started/win32.md), which goes over how to create a WebView2 app and walks through some basic WebView2 functionality.  That particular tutorial doesn't start with you creating a new Win32 project using a project template; instead, it starts with a finished project in the WebView2Samples repo, and walks you through how to optionally re-add the WebView2 code.
 <!-- the getstart tut should probably create new app from project template, but, currently starts from existing project, that is provided now as a finished project -->
@@ -64,9 +62,9 @@ Next, make sure a preview channel of Microsoft Edge in installed, on a supported
 
 
 <!-- ====================================================================== -->
-## Step 3 - Download or clone the WebView2Samples repo
+## Step 3 - Clone or download the WebView2Samples repo
 
-1. If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 1. If you previously cloned the repo, pull the latest commits to your local copy of the repo.
 
@@ -253,31 +251,29 @@ At the top of Visual Studio, set the build target, as follows:
 
 After you initially build & run this project, update the WebView2 SDK and then re-build the project.
 
+To quickly see which version of the WebView2 SDK is installed in the repo's copy of the sample app at GitHub, see [packages.config](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/packages.config).
+
 The repo version of this sample has a pre-release version of the WebView2 SDK installed.  Below, you'll update it to the latest pre-release version of the WebView2 SDK, or confirm that the latest SDK is installed.  Using a pre-release SDK gives you access to the latest functionality.
 
-Update the _prerelease_ WebView2 SDK for the project, as follows:
+Examine and possibly update the installed NuGet packages, as follows:
 
-1. In Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
+1. In Solution Explorer, right-click the **WebView2APISample** project (not the solution node above it), and then select **Manage NuGet Packages**.
 
    The **NuGet Package Manager** panel opens in Visual Studio.
 
-1. In the **NuGet Package Manager**, click the **Browse** tab.
-
 1. To the right of the search text box, select the **Include prerelease** check box.
 
-1. In the search text box, enter **Microsoft.Web.WebView2**.
+1. In the **NuGet Package Manager**, click the **Installed** tab.  On the right side of each package, check whether there is a newer version number listed as well as the existing version number.
 
-   The **Microsoft.Web.WebView2** card appears in the search results.
-
-1. Click the **Microsoft.Web.WebView2** card below the search box.
-
-1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected:
+1. Click the **Update** tab.  If updates are available for WebView2 or WIL packages, if you want, you can update the package here.
+ 
+1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected, if you want to be able to try the latest APIs:
 
    ![NuGet Package Manager with WebView2 SDK prerelease selected](./webview2apissample-images/webview2apisample-pkg-mgr-prerelease-webview2.png)
 
    _The above image is from another project, but is similar.  To zoom, right-click > **Open image in new tab**._
 
-1. Click the **Install** (or **Update**) button.
+1. Click the **Update** button.
 
    The **Preview Changes** dialog box appears:
 

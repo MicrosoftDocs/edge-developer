@@ -45,7 +45,7 @@ If unsure, skip this step; you can use the Microsoft Edge preview channel from t
 See [Understand the different WebView2 SDK versions](../concepts/versioning.md).
 
 
-<!-- The h3 section [Download or clone the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
+<!-- The h3 section [Clone or download the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
 <!-- ====================================================================== -->
 ## Download the WebView2Samples repo
 
@@ -91,7 +91,7 @@ To download the repo (as a `.zip` file):
 1. Recommended: Rename the root directory from `WebView2Samples-main` to `WebView2Samples`, to match the repo name and path.
 
 
-<!-- The h3 section [Download or clone the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
+<!-- The h3 section [Clone or download the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
 <!-- ====================================================================== -->
 ## Clone the WebView2Samples repo
 
@@ -181,7 +181,7 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 <!-- ====================================================================== -->
 ## Open a WebView2Samples .sln file in Visual Studio
 
-After you download or clone the `WebView2Samples` repo, open a `.sln` file in Visual Studio.
+After you clone or download the `WebView2Samples` repo, open a `.sln` file in Visual Studio.
 
 1. In your local copy of the repo directory structure, locate a `.sln` file.  The [top-level README file in the WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#readme) gives a similar overview.
 
@@ -249,7 +249,7 @@ The WebView2 SDK includes the WebView2 control, which is powered by Microsoft Ed
 
 You install the WebView2 SDK once per project node of each `.sln` file.  The WebView2 SDK installation applies only to the project that it's installed on.
 
-Instead of downloading the `Microsoft.Web.WebView2` SDK NuGet package from nuget.org, you install the WebView2 SDK NuGet package through the **NuGet Package Manager** panel in Visual Studio.  After you Download or clone the WebView2Samples repo, you then open one of the repo's `.sln` files in Visual Studio, and right-click a project node within the solution.  You use the **NuGet Package Manager** panel to install the `Microsoft.Web.WebView2` SDK as a NuGet package.
+Instead of downloading the `Microsoft.Web.WebView2` SDK NuGet package from nuget.org, you install the WebView2 SDK NuGet package through the **NuGet Package Manager** panel in Visual Studio.  After you clone or download the WebView2Samples repo, you then open one of the repo's `.sln` files in Visual Studio, and right-click a project node within the solution.  You use the **NuGet Package Manager** panel to install the `Microsoft.Web.WebView2` SDK as a NuGet package.
 
 The `Microsoft.Web.WebView2` SDK is available in Release and Prerelease versions.  To get started, a Release version is recommended.
 

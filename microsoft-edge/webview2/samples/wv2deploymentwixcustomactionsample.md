@@ -16,29 +16,13 @@ This sample, **WV2DeploymentWiXCustomActionSample**, demonstrates how to use a W
 *  Repo directory: **WV2DeploymentWiXCustomActionSample**
 *  Project file: **WV2DeploymentWiXCustomActionSample.wixproj**
 
+<!-- todo: screenshot representing the success state -->
 
-<!-- ====================================================================== -->
-## Step 1 - View the Readme
-
-The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
-
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme).  Then return to this page and continue the steps below.
-
-   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#prerequisites)
-
-   * [README > Build steps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#build-steps)
-
-   You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:<!-- todo: is there a .md preview capability locally? -->
-
-   `<your-repos-directory>/WebView2Samples/SampleApps/WV2DeploymentWiXCustomActionSample/README.md`
-
-   or:
-
-   `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentWiXCustomActionSample/README.md`
+See also [README file for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme).
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install Visual Studio
+## Step 1 - Install Visual Studio
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
 
@@ -46,15 +30,15 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install a preview channel of Microsoft Edge
+## Step 2 - Install a preview channel of Microsoft Edge
 
 1. **Preview channel of Microsoft Edge** - If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Download or clone the WebView2Samples repo
+## Step 3 - Clone or download the WebView2Samples repo
 
-1. If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
@@ -81,7 +65,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 5 - Install or update the WebView2 SDK
+## Step 4 - Install or update the WebView2 SDK
 
 1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  You can follow these steps to determine whether the WebView2 SDK is installed for the project.  Follow the steps in that section, and then return to this page and continue below.
 
