@@ -14,16 +14,15 @@ ms.date: 07/21/2022
 
 <!-- ====================================================================== -->
 ## Use Layers in 3D View
-<!-- rank: 1 -->
 
 <!-- todo: check work item -->
 
 <!-- Title: Where did Layers go? -->
 <!-- Subtitle: Layers isn't a stand-alone tool anymore, it's wrapped up in the comprehensive 3D View; a tool for all your visual debugging needs. -->
 
-The standalone **Layers** tool has now been completely removed.  During the phase-out period, the **Layers** tool remained, as an empty panel containing a link that opened the **3D View** tool.
+The standalone **Layers** tool has now been completely removed.  During the phase-out period, the **Layers** tool redirected users to the **3D View** tool.
 
-In the **3D View** tool, the **Composited Layers** view has all the features you love from the **Layers** tool, along with some updates.  The **Composited Layers** view now sits alongside even more visual debugging tools.  Try out the **DOM** and **Z-index** views for debugging while you're in the **3D View** tool, and you'll see how these three views work together.
+In the **3D View** tool, the **Composited Layers** view has all the features you love from the **Layers** tool, along with some updates.  The **Composited Layers** view is now complemented by two other visual debugging panes.  Try out the **DOM** and **Z-index** views for debugging while you're in the **3D View** tool, and you'll see how these three views work together.
 
 ![The Composited Layers tab in the 3D View tool](./devtools-104-images/3d-view-composited-layers.png)
 
@@ -33,7 +32,6 @@ See also:
 
 <!-- ====================================================================== -->
 ## Improved display of request URLs in Issues tool
-<!-- rank: 2 -->
 
 <!-- Title: In Issues tool, long request URLs have been shortened -->
 <!-- Subtitle: Links to network request URLs have been truncated, making issues easier to read. -->
@@ -56,7 +54,6 @@ See also:
 
 <!-- ====================================================================== -->
 ## Improving accessibility for the Detached Elements tool
-<!-- rank: 3 -->
 
 <!-- Title: The Detached Elements tool now works better with assistive technology -->
 <!-- Subtitle: In Microsoft Edge 104, Screen readers announce the name of the table of detached elements in the tool. -->
@@ -83,7 +80,6 @@ See also:
 
 <!-- ====================================================================== -->
 ## Fix: Arrows representing web socket traffic now render correctly in the Network tool
-<!-- rank: 4 -->
 
 <!-- todo: check work item eg video -->
 
