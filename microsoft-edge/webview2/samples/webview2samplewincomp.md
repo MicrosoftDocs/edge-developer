@@ -18,7 +18,7 @@ This WebView2 sample embeds a WebView2 control within a Win32 native application
 
 This sample is built as a Win32 Visual Studio 2019 project.  It uses C++ and HTML/CSS/JavaScript in the WebView2 environment.
 
-This sample uses the [Windows Runtime Composition APIs](https://docs.microsoft.com/uwp/api/windows.ui.composition) (also called the Visual layer) to take advantage of the Windows UI features and create a better look, feel, and functionality in C++ Win32 applications.
+This sample uses the [Windows Runtime Composition APIs](/uwp/api/windows.ui.composition) (also called the Visual layer) to take advantage of the Windows UI features and create a better look, feel, and functionality in C++ Win32 applications.
 
 This sample showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView and vice versa.
 
@@ -184,4 +184,4 @@ This step is optional.  The sample has preinstalled:
 ## See also
 
 * [Get started with WebView2 in Win32 apps](../get-started/win32.md)
-* [WebView2 Reference Documentation](https://docs.microsoft.com/microsoft-edge/webview2/webview2-api-reference)
+* [WebView2 Reference Documentation](/microsoft-edge/webview2/webview2-api-reference)
