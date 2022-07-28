@@ -99,12 +99,7 @@ Start with a basic desktop project that contains a single main window.
 
 Use NuGet to add the WebView2 SDK to the project.
 
-1. In **Solution Explorer**, right-click the project name, and then select **Manage NuGet Packages**:
-
-   ![The 'Manage NuGet packages' command on the right-click menu](media/wpf-getting-started-mng-nuget.png)
-
-   <!-- todo: The above image is supposed to show the WPF project instead of the WinForms project.  generally, avoid sharing images across multiple .md files -->
-   _(The above image is supposed to show the WPF project instead of the WinForms project.)_
+1. In **Solution Explorer**, right-click the project name (not the solution node), and then select **Manage NuGet Packages**.  The **NuGet Package Manager** window opens.
 
 1. In the upper left, click the **Browse** tab.  In the search bar, type `Microsoft.Web.WebView2`, then click the **Microsoft.Web.WebView2** card.
 
