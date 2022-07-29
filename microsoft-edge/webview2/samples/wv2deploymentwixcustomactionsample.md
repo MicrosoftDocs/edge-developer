@@ -87,7 +87,6 @@ If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 
 1. In a new window or tab, go to [WiX Toolset](https://wixtoolset.org/releases/) and then download and install the extension:
    * WiX Toolset Visual Studio 2019 Extension - downloaded installer file: `Votive2019.vsix`
-   <!-- * WiX Toolset Visual Studio 2022 Extension - downloaded installer file: `Votive2022.vsix`  -->
 
 1. In **User Account Control**, click the **Yes** button.  VSIX Installer for WiX Visual Studio extension opens:
 
@@ -95,11 +94,11 @@ If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 
    <!-- ![VSIX Installer for WiX Visual Studio 2022 extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2022-ext.png) -->
 
-1. Click the **Install** button.  A **VSIX waiting for processes to shut down** dialog might open:
+1. Click the **Install** button.
 
-   ![VSIX Installer waiting for processes to shut down](./wv2deploymentwixburnbundlesample-images/vsix-waiting-processes-shut-down.png)
+1. If a **VSIX waiting for processes to shut down** dialog opens, close Visual Studio.  The VSIX Installer proceeds.
 
-1. Close Visual Studio.  The VSIX Installer proceeds.  The VSIX Installer reads **Install complete**:
+   The VSIX Installer reads **Install complete**:
 
    ![VSIX Installer - Install Complete - WiX Toolset Visual Studio 2019 Extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2019-ext-complete.png)
 
