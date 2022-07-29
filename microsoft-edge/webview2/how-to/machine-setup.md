@@ -16,11 +16,11 @@ This article covers general-purpose setup of your development environment for We
 <!-- ====================================================================== -->
 ## Install Visual Studio
 
-1. Install [Visual Studio](https://visualstudio.microsoft.com) 2015 or later, such as Visual Studio Professional 2022.
+1. Install [Visual Studio](https://visualstudio.microsoft.com) 2015 or later, such as Visual Studio Professional 2019.  Most of the WebView2 samples were created and tested using Visual Studio 2019.  If a sample was created using Visual Studio 2019, you should build and run the sample in Visual Studio 2019, before using the sample in Visual Studio 2022.
 
    The WebView2 samples are designed for Microsoft **Visual Studio**, not Microsoft **Visual Studio Code**.
 
-   If you are installing Visual Studio 2022, you can accept the defaults for now; you can click **Install**, and decline installing the Workloads at this time.  Visual Studio will prompt you later, when you open a particular `.sln` file, to install the platform-appropriate workloads.
+   If you are installing Visual Studio, you can accept the defaults for now; you can click **Install**, and decline installing the Workloads at this time.  Visual Studio will prompt you later, when you open a particular `.sln` file, to install the platform-appropriate workloads.
 
 
 <!-- ====================================================================== -->

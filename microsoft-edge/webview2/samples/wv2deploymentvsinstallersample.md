@@ -49,10 +49,9 @@ The above page helps you clone or download the WebView2Samples repo, and install
 <!-- ====================================================================== -->
 ## Step 2 - Prerequisite: Install Visual Studio Installer Projects
 
-1. Install the [Microsoft Visual Studio Installer Projects](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects). Follow the steps on that page, and then return to this page and continue the steps below.
+If not done yet, install Visual Studio Installer Projects:
 
-The above page has links for an installer that's designed to work with Visual Studio 2017 and Visual Studio 2019.  The page also links to a version for Visual Studio 2022.
-<!-- todo: is the VS2022 version of the installer supported? -->
+1. Install the [Microsoft Visual Studio Installer Projects](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) for Visual Studio 2019. Follow the steps on that page, and then return to this page and continue the steps below.
 
 ![VSIX Installer Visual Studio Installer Projects 2019](./wv2deploymentvsinstallersample-images/vsix-installer-vs-installer-projects-2019.png)
 
@@ -86,7 +85,7 @@ If a **Waiting on the following processes to shut down** dialog appears, close V
    <PackageFile Name="MicrosoftEdgeWebview2Setup.exe" />
    ```
 
-   The third `<PackageFile>` line uses file `MicrosoftEdgeWebView2RuntimeInstallerX64.exe`, which is a platform-specific Evergreen WebView2 Runtime Standalone Installer.  Use this line for _Approach 3: Packaging the Evergreen WebView2 Runtime Standalone Installer with your app:
+   The third `<PackageFile>` line uses file `MicrosoftEdgeWebView2RuntimeInstallerX64.exe`, which is a platform-specific Evergreen WebView2 Runtime Standalone Installer.  Use this line for _Approach 3: Packaging the Evergreen WebView2 Runtime Standalone Installer with your app_:
 
    ```xml
    <!-- Package the WebView Standalone Installer -->
@@ -170,10 +169,9 @@ This step applies to all of the approaches (1, 2, or 3).
 
    * `<Visual Studio install dir>\MSBuild\Microsoft\VisualStudio\BootstrapperPackages\` (requires at least Visual Studio 2019 Update 7)
 
-   Typical paths for `<Visual Studio install dir>`:
+   Typical path for `<Visual Studio install dir>`:
 
-   * `C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE`
-   * `C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\"`
+   * `C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\`
 
 
 <!-- ====================================================================== -->

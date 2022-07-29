@@ -55,7 +55,7 @@ The [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/)
 <!-- ====================================================================== -->
 ## Step 4: Open the solution in Visual Studio
 
-1. Open the solution in Visual Studio 2019.<!--todo: or Visual Studio 2022.-->  The WebView2 SDK is already included as a NuGet package in the project.  If you want to use Visual Studio 2017, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.  You might also need to change the Windows SDK to the latest version.
+1. Open the solution in Visual Studio 2019.  The WebView2 SDK is already included as a NuGet package in the project.  If you want to use Visual Studio 2017, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.  You might also need to change the Windows SDK to the latest version.
 
 1. Make the changes listed below, if you're using a Windows version below Windows 10.
 

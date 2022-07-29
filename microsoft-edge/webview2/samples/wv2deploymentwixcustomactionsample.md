@@ -45,6 +45,8 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## Step 3 - Prerequisite: Install WiX Toolset build tools
 
+If not done yet, install WiX Toolset:
+
 1. In a new window or tab, go to [WiX Toolset](https://wixtoolset.org/releases/) and then download the **WiX Toolset build tools**.
 
 1. Click the `wixnnn.exe` file, and then click **Open file**.
@@ -81,15 +83,17 @@ Also install the WiX Visual Studio component, per the next section.
 <!-- ====================================================================== -->
 ## Step 4 - Prerequisite: Install WiX Toolset Visual Studio Extension
 
-1. In a new window or tab, go to [WiX Toolset](https://wixtoolset.org/releases/) and then download and install the appropriate extension:
-   * WiX Toolset Visual Studio 2022 Extension - downloaded installer file: `Votive2022.vsix` 
+If not done yet, install WiX Toolset Visual Studio 2019 Extension:
+
+1. In a new window or tab, go to [WiX Toolset](https://wixtoolset.org/releases/) and then download and install the extension:
    * WiX Toolset Visual Studio 2019 Extension - downloaded installer file: `Votive2019.vsix`
+   <!-- * WiX Toolset Visual Studio 2022 Extension - downloaded installer file: `Votive2022.vsix`  -->
 
 1. In **User Account Control**, click the **Yes** button.  VSIX Installer for WiX Visual Studio extension opens:
 
-   <!-- ![VSIX Installer for WiX Visual Studio 2019 extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2019-ext.png) -->
+   ![VSIX Installer for WiX Visual Studio 2019 extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2019-ext.png)
 
-   ![VSIX Installer for WiX Visual Studio 2022 extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2022-ext.png)
+   <!-- ![VSIX Installer for WiX Visual Studio 2022 extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2022-ext.png) -->
 
 1. Click the **Install** button.  A **VSIX waiting for processes to shut down** dialog might open:
 
@@ -97,9 +101,10 @@ Also install the WiX Visual Studio component, per the next section.
 
 1. Close Visual Studio.  The VSIX Installer proceeds.  The VSIX Installer reads **Install complete**:
 
-   <!-- ![VSIX Installer - Install Complete - WiX Toolset Visual Studio 2019 Extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2019-ext-complete.png) -->
+   ![VSIX Installer - Install Complete - WiX Toolset Visual Studio 2019 Extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2019-ext-complete.png)
 
-   ![VSIX Installer - Install Complete - WiX Toolset Visual Studio 2022 Extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2022-ext-complete.png)
+   <!-- ![VSIX Installer - Install Complete - WiX Toolset Visual Studio 2022 Extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2022-ext-complete.png) -->
+   <!--todo: delete the two above pngs after confirm end-to-end -->
 
 1. In VSIX Installer, click the **Close** button.
 

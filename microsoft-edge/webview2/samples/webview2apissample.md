@@ -44,7 +44,7 @@ For details of events and API handlers in WebView2, see [WebView2 API Reference]
 <!-- ====================================================================== -->
 ## Step 1 - Install Visual Studio
 
-Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.  It is currently being tested within Visual Studio 2022.
+Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.
 
 1. If Visual Studio (minimum required version) is not already installed with C++ support, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio with C++ support, and then return to this page and continue the steps below.
 
@@ -88,90 +88,21 @@ Unlike some other samples, the `.sln` file is not in the sample repo directory t
 
 1. **Visual Studio workloads** - If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
-   The **Review project changes** dialog might open, indicating that the WiX deployment projects in Solution Explorer are Unsupported:
+   <!-- The **Review project changes** dialog might open, indicating that the WiX deployment projects in Solution Explorer are Unsupported: -->
 
-   ![Review project changes > Unsupported > .wixproj](./webview2apissample-images/review-project-changes-unsupported-wix.png)
+   <!-- ![Review project changes > Unsupported > .wixproj](./webview2apissample-images/review-project-changes-unsupported-wix.png) -->
 
-1. Click the **OK** button.
+<!-- 1. Click the **OK** button. -->
 
-You don't need to install WiX to continue.  Installing WiX is covered in [WiX Burn Bundle to deploy the WebView2 Runtime](./wv2deploymentwixburnbundlesample.md).
+<!-- You don't need to install WiX to continue.  Installing WiX is covered in [WiX Burn Bundle to deploy the WebView2 Runtime](./wv2deploymentwixburnbundlesample.md). -->
 
 Continue the steps below.
 
 
 <!-- ====================================================================== -->
-<!-- ## Step n - Install build tools v143 if Visual Studio 2022 -->
-
-<!-- The **Output** window might show the message: -->
-
-<!-- **Some of the properties associated with the solution could not be read.  <repo-path>\WebView2Samples\SampleApps\WebView2APISample\WebView2APISample.vcxproj : warning  : The build tools for v143 cannot be found. Install v143 to build using the v143 build tools.** -->
-
-<!-- Do a **Find** in the repo's [WebView2APISample.vcxproj](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/WebView2APISample.vcxproj) -->
-<!-- for "v142" (which is for Visual Studio 2019) and for "v143" (which is for Visual Studio 2022). -->
-
-<!-- Right-click the WebView2APISample project and then select **Properties**.  The **Property Pages** window opens.  It might show **Platform Toolset: v143 (not installed)**. -->
-
-<!-- Version numbers are listed in [How to: Modify the Target Framework and Platform Toolset](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset):
-* Visual Studio 2022: v143
-* Visual Studio 2019: v142
-* Visual Studio 2017: v141 -->
-
-<!-- check readme: https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample
-search web: "Visual Studio" "Platform Toolset" "not installed"
--->
-
-
-<!-- todo: copied from winui2.md, clean up:-->
-
-<!-- 1. Select **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens, and then the **Modifying - Visual Studio** window opens over it:
-
-   ![The Modifying Visual Studio window, initial state](./webview2apissample-images/modifying-vs2019-initial.png) -->
-
-  <!-- is this a relevant alt path to show here?  If the **Modifying Visual Studio** window isn't open, in the **Visual Studio Installer** window, click the **Modify** button. -->
-
-<!-- 1. On the **Workloads** tab, scroll to and click the following cards, to select them; make sure a checkmark is on each of these cards:
-   * **.NET desktop development**
-   * **Desktop development with C++**
-   * **Universal Windows Platform development**
-
-1. On the right, in the **Installation details** section, expand **Universal Windows Platform development**, and then select **C++ (v143) Universal Windows Platform tools** or **C++ (v142) Universal Windows Platform tools**: -->
-
-   <!-- ![The 'Modifying Visual Studio 2019' dialog displays cards and installation details](media/winui2-getting-started-install-workloads.png) -->
-   <!-- todo: copy to this article's images dir; no sharing - or retake -->
-
-   <!-- If all of these components have already been installed, you can click the **Close** button, close the **Visual Studio Installer** window, and skip to the next major section of steps below.
-
-1. Click the **Modify** button.
-
-   A **User Account Control** window appears, asking "Do you want to allow this app to make changes to your device?  Visual Studio Installer.  Verified publisher: Microsoft Corporation.  File origin: Hard drive on this computer.  Show more details (button)".
-
-1. Click the **Yes** button.
-
-1. A dialog box appears, "Before we get started, close Visual Studio": -->
-
-   <!-- ![Dialog box: Before we get started, close Visual Studio](media/winui2-before-we-get-started.png) -->
-   <!-- todo: copy or retake -->
-
-<!-- 1. Click the **Continue** button.
-
-   Visual Studio downloads, verifies, and installs the selected packages: -->
-
-   <!-- ![Visual Studio Installer working](media/winui2-vs-installer-working.png) -->
-   <!--todo: copy or retake-->
-
-   <!-- This can take several minutes.  In a new window or tab, you can check out a top-level overview at [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - an initial introduction to WebView2 features at developer.microsoft.com.
-
-   When Visual Studio Installer is finished, return to this page and continue with the steps below.  Visual Studio appears, with an empty **Solution Explorer**.
-
-1. Press `Alt`+`Tab` to switch to the **Visual Studio Installer** window, and then close the **Visual Studio Installer** window. -->
-
-<!-- /copied -->
-
-
-<!-- ====================================================================== -->
 ## Step 6 - View the opened project
 
-1. On your local drive, open again the **WebView2Samples** solution in the same version of Visual Studio that you set up:
+1. On your local drive, open again the **WebView2Samples** solution in the same version of Visual Studio that you set up, such as Visual Studio 2019:
 
    *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2Samples.sln`
 
@@ -179,15 +110,9 @@ search web: "Visual Studio" "Platform Toolset" "not installed"
 
    *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2Samples.sln`
 
-   Example of one way to open the solution:
+   <!-- The Unsupported dialog might open: -->
 
-   ![Re-opening the WebView2APISample solution in Visual Studio 2022](./webview2apissample-images/re-open-solution.png)
-
-   The Unsupported dialog might open:
-
-   ![Review project changes > Unsupported > .wixproj](./webview2apissample-images/review-project-changes-unsupported-wix.png)
-
-   Make sure you're opening the correct version of Visual Studio.
+   <!-- ![Review project changes > Unsupported > .wixproj](./webview2apissample-images/review-project-changes-unsupported-wix.png) -->
 
 1. Click the **OK** button.  The **Retarget Projects** dialog might open:
 
