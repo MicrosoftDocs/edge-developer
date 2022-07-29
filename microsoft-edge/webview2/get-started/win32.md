@@ -488,7 +488,7 @@ As an example of using navigation events, register a handler for the `Navigation
 
 1. If it's not already present, paste the following code into `HelloWebView.cpp`, below the Step 3 code:
 
-    :::code language="cpp" source="microsoft-edge/webview2/code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="Step4":::
+    :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" range="139,151":::
 
 Now the app doesn't open any non-https sites.  You can use a similar mechanism to accomplish other tasks, such as restricting navigation to within your own domain.
 
@@ -511,7 +511,7 @@ The injected JavaScript is run with specific timing:
 
 1. If the following code isn't present already, paste the following code into `HelloWebView.cpp`:
 
-    :::code language="cpp" source="microsoft-edge/webview2/code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="Step5":::
+    :::code language="cpp" source="../../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="Step5":::
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
@@ -554,7 +554,7 @@ Have the host app and web content communicate through `postMessage`, as follows:
 
 1. If it's not already present, paste the following code into `HelloWebView.cpp`:
 
-    :::code language="cpp" source="microsoft-edge/webview2/code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="Step6":::
+    :::code language="cpp" source="code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="Step6":::
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
