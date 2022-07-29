@@ -70,11 +70,37 @@ If a **Waiting on the following processes to shut down** dialog appears, close V
 
    ![product.xml file opened for editing, unchanged, in Visual Studio 2019](./wv2deploymentvsinstallersample-images/product-xml-open-for-editing-unchanged.png)
 
+1. Inspect `product.xml`.  There are three `<PackageFile>` lines.  Study the comment above each of the 3 lines.  Here is a simplified view of the lines, with clarifications:
+
+   The first `<PackageFile>` line uses file `MicrosoftEdgeWebview2Setup.exe`, which is the Evergreen WebView2 Runtime Bootstrapper, and it specifies a `HomeSite` website.   Use this line for _Approach 1: Downloading the Evergreen WebView2 Runtime Bootstrapper through a link_:
+
+   ```xml
+   <!-- Download the MicrosoftEdgeWebview2Setup.exe -->
+   <!-- <PackageFile Name="MicrosoftEdgeWebview2Setup.exe" HomeSite="WebViewRuntime" PublicKey="..."/> -->
+   ```
+
+   The second `<PackageFile>` line uses file `MicrosoftEdgeWebview2Setup.exe`, which is the Evergreen WebView2 Runtime Bootstrapper.  Use this line for _Approach 2: Packaging the Evergreen WebView2 Runtime Bootstrapper with the app_:
+
+   ```xml
+   <!-- Package the MicrosoftEdgeWebview2Setup.exe -->
+   <PackageFile Name="MicrosoftEdgeWebview2Setup.exe" />
+   ```
+
+   The third `<PackageFile>` line uses file `MicrosoftEdgeWebView2RuntimeInstallerX64.exe`, which is a platform-specific Evergreen WebView2 Runtime Standalone Installer.  Use this line for _Approach 3: Packaging the Evergreen WebView2 Runtime Standalone Installer with your app:
+
+   ```xml
+   <!-- Package the WebView Standalone Installer -->
+   <!-- <PackageFile Name="MicrosoftEdgeWebView2RuntimeInstallerX64.exe" /> -->
+   ```
+
+1. Understand which approach you are using.  Approach 2 is the default; that is, it's un-commented in the repo's `product.xml` file.
+
 1. Edit `product.xml`, as follows.  Do the steps in one of the three sections below.
 
 
 <!-- this section order matches product.xml's order & top of present .md file -->
 #### Approach 1: Downloading the Evergreen WebView2 Runtime Bootstrapper through a link
+
 
 If you want the app to download the Evergreen WebView2 Runtime Bootstrapper (`MicrosoftEdgeWebview2Setup.exe`) through a link:
 
@@ -136,7 +162,9 @@ If you want to package either the Bootstrapper (Approach 2) or the Standalone In
 <!-- ====================================================================== -->
 ## Step 5 - Copy the WV2DeploymentVSInstallerSample folder into a Packages folder
 
-1. Copy the `WV2DeploymentVSInstallerSample` folder, and paste it into either one of the following folders:
+This step applies to all of the approaches (1, 2, or 3).
+
+1. Copy the `<repo-location>\WebView2Samples\SampleApps\WV2DeploymentVSInstallerSample\` folder, and paste it into either one of the following folders:
 
    * `<drive>:\Program Files (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`
 
@@ -181,10 +209,12 @@ If you want to package either the Bootstrapper (Approach 2) or the Standalone In
 
    ![WebView2 Deployment Visual Studio Installer: Set Up Prerequisites](wv2deploymentvsinstallersample-images/setup-prerequisites.png)
 
-1. Select the **Edge WebView2 runtime** checkbox.<!-- TODO: If that checkbox doesn't appear, go to the __ section above -->
+1. Select the **Edge WebView2 runtime** checkbox.
+
+   If that checkbox isn't listed, that might indicate that a needed file hasn't been placed in a Packages folder.  Check which approach you are using.  You might need to do the steps above, in sections [Step 4 - Download the WebView2 Bootstrapper or Standalone Installer](#step-4---download-the-webview2-bootstrapper-or-standalone-installer) and [Step 5 - Copy the WV2DeploymentVSInstallerSample folder into a Packages folder](#step-5---copy-the-wv2deploymentvsinstallersample-folder-into-a-packages-folder).
 
 1. Clear the other prerequisites checkboxes.  Then click the **OK** button:
-   
+
    ![WebView2 Deployment Visual Studio Installer: Select Prerequisite](wv2deploymentvsinstallersample-images/select-prerequisites.png)
 
 

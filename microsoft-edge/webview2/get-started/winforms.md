@@ -70,7 +70,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 <!-- TODO: delete this major step? -->
 
-1. Optionally, install the WebView2 Runtime.  See [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2).
+1. Optionally, install the WebView2 <!--Fixed Version--> Runtime.  Go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2), click the **Download Now** link.  In the **Fixed Version** section, select a version and architecture, and then click the **Download** button.  A file such as `Microsoft.WebView2.FixedVersionRuntime.103.0.1264.71.x64.cab` is placed in your **Downloads** directory.  
 
    If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
   
