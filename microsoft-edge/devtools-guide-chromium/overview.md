@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 09/23/2021
+ms.date: 07/29/2022
 ---
 # Overview of DevTools
 
