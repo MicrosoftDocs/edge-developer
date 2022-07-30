@@ -25,6 +25,15 @@ This sample is built as a WPF Visual Studio 2019 project.  It uses C# in the Web
 
 ![WV2CDPExtensionWPFSample sample app](media/wv2cdpextensionwpfsample-app-running.png)
 
+The **DevTools Commands** menu:
+
+![DevTools Commands menu of WV2CDPExtensionWPFSample app](./wv2cdpextensionwpfsample-images/devtools-commands-menu.png)
+
+The **DevTools Events** menu:
+
+![DevTools Events menu of WV2CDPExtensionWPFSample app](./wv2cdpextensionwpfsample-images/devtools-events-menu.png)
+
+
 If this is your first time using WebView2, we recommend first following the [Get started with WebView2 in WPF apps](../get-started/wpf.md) tutorial.  The tutorial walks you through creating a WebView2 and adding some basic WebView2 functionality.
 
 
@@ -160,6 +169,14 @@ For more information, see [WebView2 CDP Extension](https://aka.ms/webviewcdpnuge
 1. In the Visual Studio code editor, inspect the code:
 
    ![WV2CDPExtensionWPFSample project's code in Visual Studio](media/wv2cdpextensionwpfsample-code.png)
+
+   The **DevTools Commands** menu:
+
+   ![The DevTools Commands menu](./wv2cdpextensionwpfsample-images/devtools-commands-menu.png)
+
+   The **DevTools Events** menu:
+
+   ![The DevTools Events menu](./wv2cdpextensionwpfsample-images/devtools-events-menu.png)
 
 
 <!-- ====================================================================== -->

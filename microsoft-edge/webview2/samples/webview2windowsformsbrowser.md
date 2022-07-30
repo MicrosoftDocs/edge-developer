@@ -18,7 +18,11 @@ This sample, **WebView2WindowsFormsBrowser**, demonstrates how to use the WebVie
 *  Repo directory: [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser)
 *  Solution file: **WebView2WindowsFormsBrowser.sln**
 
-See also [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser#readme).
+![WebView2WindowsFormsBrowser app window](media/webview2windowsformsbrowser-app-window.png)
+
+*  The **Control** menu has toggle menuitems for **Accelerator Keys** and **Allow External Drop**.
+*  The **View** menu has **Zoom** and **Background Color** submenus.
+*  The **Events** button opens the **EventMonitor** window.
 
 
 <!-- ====================================================================== -->
@@ -158,7 +162,9 @@ At the top of Visual Studio, set the build target, as follows:
 
    ![The WebView2WindowsFormsBrowser app window](media/webview2windowsformsbrowser-app-window.png)
 
-1. Use the sample app; see [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser#readme).
+   *  The **Control** menu has toggle menuitems for **Accelerator Keys** and **Allow External Drop**.
+   *  The **View** menu has **Zoom** and **Background Color** submenus.
+   *  The **Events** button opens the **EventMonitor** window.
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 

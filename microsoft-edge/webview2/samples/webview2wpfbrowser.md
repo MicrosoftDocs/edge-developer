@@ -20,31 +20,34 @@ This sample, **WebView2WpfBrowser**, is a WPF .NET app that demonstrates how to 
 
 This sample is built as a WPF Visual Studio 2019 project.  It uses C# and HTML/CSS/JavaScript in the WebView2 environment.
 
-The API Sample
-showcases a selection of WebView2's event handlers and API methods that allow a WPF application to directly interact with a WebView and vice versa.
-<!-- TODO: "the API Sample", does that mean the present sample, or a WPF sample that's within the WebView2Samples.sln for WebView2APISample? https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample ? -->
-<!-- todo: clarify relation between WebView2APISample vs the projects it contains vs the other platform samples -->
+This sample showcases a selection of WebView2's event handlers and API methods that allow a WPF application to directly interact with a WebView and vice versa.
 
+![WebView2WpfBrowser sample app](media/webview2wpfbrowser-sample-app.png)
+
+The **WebView2WpfBrowser** sample app has the following menus, containing many useful menuitems:
+*  **File**
+*  **View**
+*  **Settings**
+*  **Scenario**
 
 If this is your first time using WebView2, we recommend first following the Getting Started tutorial, which goes over how to create a WebView2 and walks through some basic WebView2 functionality.  See [Get started with WebView2 in WPF apps](../get-started/wpf.md).
 
 For more information about events and API Handlers in WebView2, see [WebView2 API Reference](/microsoft-edge/webview2/webview2-api-reference).
 
-See also [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#readme).
+
+<!-- ====================================================================== -->
+## Step 1 - Prerequisite: Install a preview channel of Microsoft Edge
+
+1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install Visual Studio
+## Step 2 - Prerequisite: Install Visual Studio 2019 with .NET support
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
 
-1. If Visual Studio (minimum required version) is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
-
-
-<!-- ====================================================================== -->
-## Step 2 - Install a preview channel of Microsoft Edge
-
-1.If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+1. If Visual Studio 2019 (minimum required version) with .NET support is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio 2019 with .NET support, and then return to this page and continue the steps below.
+<!-- could show selecting .NET support -->
 
 
 <!-- ====================================================================== -->
@@ -74,8 +77,6 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    ![The WebView2WpfBrowser project in Visual Studio](media/webview2wpfbrowser-project-opened.png)
 
-   _To zoom, right-click > **Open image in new tab**._
-
 
 <!-- ====================================================================== -->
 ## Step 6 - Build and run the project
@@ -96,27 +97,29 @@ At the top of Visual Studio, set the build target, as follows:
 
    ![The WebView2WpfBrowser sample app](media/webview2wpfbrowser-sample-app.png)
 
-1. Use the sample app; see [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#readme).
-
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Update or install the WebView2 SDK
+## Step 7 - Update the WebView2 SDK
 
-1. Update or install the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. Update the prerelease WebView2 SDK on the project node (not the solution node) in Solution Explorer.  Install the latest prerelease of the WebView2 SDK, so that you can try the latest features.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 1. Build and run the project again.
 
 
 <!-- ====================================================================== -->
-## Step 8 - Inspect the code
+## Step 8 - Explore the menus and inspect the code
 
+1. Explore the **WebView2WpfBrowser** sample app's menus, containing many useful menuitems:
+   *  **File**
+   *  **View**
+   *  **Settings**
+   *  **Scenario**
+   
 1. In the Visual Studio code editor, inspect the code:
 
    ![WebView2WpfBrowser project's code in Visual Studio](media/webview2wpfbrowser-code.png)
-
-   _To zoom, right-click > **Open image in new tab**._
 
 
 <!-- ====================================================================== -->
