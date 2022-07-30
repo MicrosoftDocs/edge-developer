@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 07/29/2022
 ---
 # Win32 sample app (WebView2APISample)
 
@@ -42,19 +42,7 @@ For details of events and API handlers in WebView2, see [WebView2 API Reference]
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install Visual Studio
-
-Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.
-
-1. If Visual Studio (minimum required version) is not already installed with C++ support, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio with C++ support, and then return to this page and continue the steps below.
-
-If you want to use Visual Studio 2017, after you open the solution in Visual Studio 2017, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.
-
-To use Visual Studio 2017, you might also need to install a recent Windows SDK on your machine.
-
-
-<!-- ====================================================================== -->
-## Step 2 - Install a preview channel of Microsoft Edge
+## Step 1 - Prerequisite: Install a preview channel of Microsoft Edge
 
 Next, make sure a preview channel of Microsoft Edge in installed, on a supported OS.  Currently we recommend the latest version of the Canary channel.
 
@@ -62,17 +50,29 @@ Next, make sure a preview channel of Microsoft Edge in installed, on a supported
 
 
 <!-- ====================================================================== -->
-## Step 3 - Clone or download the WebView2Samples repo
+## Step 2 - Prerequisite: Install Visual Studio 2019
 
-1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.
+
+1. If Visual Studio 2019 (minimum required version) is not already installed with C++ support, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio 2019 with C++ support, and then return to this page and continue the steps below.
+
+If you want to use Visual Studio 2017, after you open the solution in Visual Studio 2017, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.
+
+To use Visual Studio 2017, you might also need to install a recent Windows SDK on your machine.
+
+
+<!-- ====================================================================== -->
+## Step 3 - Clone the WebView2Samples repo
+
+1. If not done already, clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 1. If you previously cloned the repo, pull the latest commits to your local copy of the repo.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Open .sln in Visual Studio
+## Step 4 - Open the solution in Visual Studio
 
-1. On your local drive, open the `.sln` file in Visual Studio.
+1. On your local drive, open the `.sln` file in Visual Studio:
 
    *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2Samples.sln`
 
@@ -80,7 +80,11 @@ Next, make sure a preview channel of Microsoft Edge in installed, on a supported
 
    *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2Samples.sln`
 
-Unlike some other samples, the `.sln` file is not in the sample repo directory that contains this sample's Readme.  Instead, the `.sln` file for this sample is in the parent directory.
+The **WebView2APISample** sample and project is the main Win32 sample.
+
+Unlike some other samples, there's not a dedicated `.sln` file in the sample repo directory that contains this sample's Readme.  Instead, the `.sln` file for this sample (including other sample projects as well) is in the parent directory.
+
+![All projects in the solution in Solution Explorer](./webview2apissample-images/all-projects-in-solution-explorer.png)
 
 
 <!-- ====================================================================== -->
