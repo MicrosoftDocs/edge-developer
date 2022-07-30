@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 07/29/2022
 ---
 # Get started with WebView2 in Win32 apps
 
@@ -277,10 +277,7 @@ If you want to follow the steps below to add the WebView2 code to `HelloWebView.
 
 1. In `HelloWebView.cpp`, delete the following code:
 
-   ```cpp
-   // include WebView2 header
-   #include "WebView2.h"
-   ```
+    :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="IncludeHeader":::
 
 1. In `HelloWebView.cpp`, delete the lines of code that are in between these two comment lines, but keep these two comment lines:
 
@@ -309,10 +306,7 @@ Next, add WebView2 features to the app, as follows:
 
 1. If the following code isn't already present, paste the following code in `HelloWebView.cpp`, after the last `#include` line:
 
-   ```cpp
-   // include WebView2 header
-   #include "WebView2.h"
-   ```
+    :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="IncludeHeader":::
 
    Make sure that the `include` section looks like the following:
 
@@ -421,17 +415,11 @@ Now to do the above, in the callback, you'll:
                   // Schedule an async task to navigate to Bing
                   webview->Navigate(L"https://www.bing.com/");
 
-                  // <Step4>
                   // Step 4 - Navigation events
-                  // <Step4>
 
-                  // <Step5>
                   // Step 5 - Scripting
-                  // <Step5>
 
-                  // <Step6>
                   // Step 6 - Communication between host and web content
-                  // <Step6>
 
                   return S_OK;
                }).Get());
@@ -494,23 +482,7 @@ As an example of using navigation events, register a handler for the `Navigation
 
 1. If it's not already present, paste the following code into `HelloWebView.cpp`, below the Step 3 code:
 
-   ```cpp
-                  // <Step4>
-                  // Step 4 - Navigation events
-                  // register an ICoreWebView2NavigationStartingEventHandler to cancel any non-https navigation
-                  EventRegistrationToken token;
-                  webview->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEventHandler>(
-                     [](ICoreWebView2* webview, ICoreWebView2NavigationStartingEventArgs* args) -> HRESULT {
-                        wil::unique_cotaskmem_string uri;
-                        args->get_Uri(&uri);
-                        std::wstring source(uri.get());
-                        if (source.substr(0, 5) != L"https") {
-                           args->put_Cancel(true);
-                        }
-                        return S_OK;
-                     }).Get(), &token);
-                  // <Step4>
-   ```
+    :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="NavigationEvents":::
 
 Now the app doesn't open any non-https sites.  You can use a similar mechanism to accomplish other tasks, such as restricting navigation to within your own domain.
 
@@ -533,20 +505,7 @@ The injected JavaScript is run with specific timing:
 
 1. If the following code isn't present already, paste the following code into `HelloWebView.cpp`:
 
-   ```cpp
-                  // <Step5>
-                  // Step 5 - Scripting
-                  // Schedule an async task to add initialization script that freezes the Object object
-                  webview->AddScriptToExecuteOnDocumentCreated(L"Object.freeze(Object);", nullptr);
-                  // Schedule an async task to get the document URL
-                  webview->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2ExecuteScriptCompletedHandler>(
-                     [](HRESULT errorCode, LPCWSTR resultObjectAsJson) -> HRESULT {
-                        LPCWSTR URL = resultObjectAsJson;
-                        //doSomethingWithURL(URL);
-                        return S_OK;
-                     }).Get());
-                  // <Step5>
-   ```
+    :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="Scripting":::
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
@@ -589,28 +548,7 @@ Have the host app and web content communicate through `postMessage`, as follows:
 
 1. If it's not already present, paste the following code into `HelloWebView.cpp`:
 
-   ```cpp
-                  // <Step6>
-                  // Step 6 - Communication between host and web content
-                  // Set an event handler for the host to return received message back to the web content
-                  webview->add_WebMessageReceived(Callback<ICoreWebView2WebMessageReceivedEventHandler>(
-                     [](ICoreWebView2* webview, ICoreWebView2WebMessageReceivedEventArgs* args) -> HRESULT {
-                        wil::unique_cotaskmem_string message;
-                        args->TryGetWebMessageAsString(&message);
-                        // processMessage(&message);
-                        webview->PostWebMessageAsString(message.get());
-                        return S_OK;
-                     }).Get(), &token);
-                  // <Step6>
-
-                  // Schedule an async task to add initialization script that
-                  // 1) Add an listener to print message from the host
-                  // 2) Post document URL to the host
-                  webview->AddScriptToExecuteOnDocumentCreated(
-                     L"window.chrome.webview.addEventListener(\'message\', event => alert(event.data));" \
-                     L"window.chrome.webview.postMessage(window.document.URL);",
-                     nullptr);
-   ```
+    :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="CommunicationHostWeb":::
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
