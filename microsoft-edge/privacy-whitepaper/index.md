@@ -196,6 +196,13 @@ Microsoft Edge lets you download files safely and securely.  To choose where fil
 
 To view the history of your previous downloads, go to `edge://downloads`.  To clear your browsing data and delete your download history, go to `edge://settings/clearBrowserData`.  Deleting your download history from Microsoft Edge does not remove the files from your device.  Deleting downloaded files from your device does not remove the files from your download history.  When you use **InPrivate** browsing or **Guest** mode, the download history from the session is cleared when you close the **InPrivate** or **Guest** windows. The files remain saved on the device.
 
+<!-- ====================================================================== -->
+## Enterprise Security & Compliance
+Microsoft Edge supports a variety of first party enterprise security & compliance features including, Windows Information Protection, Microsoft Defender Application Guard, Microsoft Endpoint DLP, and Microsoft Insider Risk management. These features become functional only on an Enterprise managed devices either by acquiring the right license for the feature or the administrator deploying specific policies on the device.
+
+When these enterprise features are on, the browser sends auditing and diagnostic data to the administrator as per the feature’s requirement to function, manage or diagnose properly. This data collection is controlled by the enterprise administrator and end user is not able to opt-out.
+
+Please contact your enterprise administrator to understand your company’s policies for such data collection.
 
 <!-- ====================================================================== -->
 ## Extensions and Microsoft Edge Add-ons
@@ -735,24 +742,6 @@ When you pin a site, it is added to your taskbar or dock.  The data is stored lo
 Microsoft Edge WebView controls allow app developers to host web content in native applications on Windows 7, Windows 10, and later.  The applications hosting the WebView2 instance may send diagnostic data to Microsoft. Diagnostic data can include how you use the Microsoft Edge, and sites you visit.
 
 To enable diagnostic data collection, go to `edge://settings/privacy`. Turn on the **Optional diagnostic data** setting. To turn off diagnostic data collection for Microsoft Edge on Windows 10 and later, open **Start** > **Settings** > **Privacy** and select **Diagnostics & feedback**. To turn off diagnostic data collection for all other platforms, go to `edge://settings/privacy`. Turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting. The applications hosting Microsoft Edge WebView may collect other data that is governed by the data collection management of the developer and relevant privacy policies.
-
-
-<!-- ====================================================================== -->
-## Windows Defender Application Guard
-
-Windows Defender Application Guard (WDAG) is a feature available for organizations.  When Windows Defender Application Guard is turned on, Microsoft Edge opens untrusted sites inside an isolated container. The use of a container helps protect the resources in your organization from malicious sites or phishing attacks. The feature is only turned on with group policies that are managed by your organization. It is only available on recent versions of Windows 10 and later. WDAG collects product improvement diagnostic data about opening untrusted sites in the isolated container, such as how long it takes to open a new Application Guard window.
-
-With your permission, WDAG also collects information about how you use the browser and information about sites you visit.  To turn off the diagnostic data collection for Microsoft Edge on Windows 10 and later, open **Start** > **Settings** > **Privacy** and select **Diagnostics & feedback**.  To disable diagnostic data collection for all other platforms, go to `edge://settings/privacy` in a normal browsing session and turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting.
-
-
-<!-- ====================================================================== -->
-## Windows Information Protection
-
-Windows Information Protection (WIP) helps prevent accidental leaking of corporate information. It is only available for organizations through group policies managed by your organization. WIP is enabled for those sites identified as corporate assets. Identify which sites are corporate assets from the management icon in the address bar. WIP prevents copying and pasting from the browser or uploading certain files to sites outside your organization.
-
-![Windows Information Protection.](./media/w-i-p.png)
-
-If WIP is turned on for your version of Microsoft Edge, the browser collects event logs and sends them to your organization.  If WIP is turned on, you aren't able to opt out of the data collection.  WIP is only available on releases of Windows 10 from August 2016 or later.  For more information about the event logs captured by WIP, see [How to collect Windows Information Protection (WIP) audit event logs](/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs).
 
 
 <!-- ====================================================================== -->
