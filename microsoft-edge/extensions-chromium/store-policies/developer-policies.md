@@ -361,6 +361,16 @@ All the extensions should adhere to the store policies listed above. If your ext
 
 ### Microsoft Edge Add-ons appeal statistics for FY2021
 
-| Main Complaint Type #1: Enforcement Appeal | Main Complaint Type #2: Certification Results | Other Complaint Types | Total Complaints | Overturned Complaints |
-|:--- |:--- |
-| 8 | 2 | 4 | 14 | 0 |
+Numbers as reported on 8/1/2022
+
+
+| Statistic                                             | Count    |
+|----------------------------------------------|----------|
+| App and/or Account Enforcement Action Appeals |      42 |
+| Complaints about Technological Issues  |       27 |
+| Regulatory Compliance Complaints    |       0 |
+| Questions about certification, policy, submission, and technical help                    |      76 |
+| Miscellaneous | 15 |
+| Total Issues                              |      160 |
+| Overturned decisions                        |       8 |
+| Average Processing Time                      | 3.6 days |
