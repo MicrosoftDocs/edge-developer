@@ -950,6 +950,9 @@
                 - name: Define app shortcuts
                   href: progressive-web-apps-chromium/how-to/shortcuts.md
 
+                - name: Build operating system Widgets
+                  href: progressive-web-apps-chromium/how-to/widgets.md
+
                 - name: Synchronize and update in the background
                   href: progressive-web-apps-chromium/how-to/background-syncs.md
 
