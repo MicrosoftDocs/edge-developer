@@ -305,6 +305,16 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
    This method calls `AddHostObjectToScript`.
 
+   In the line AddHostObjectToScript(“Windows”, Windows is the top level namespace. So you can add your own third party one as well like the following example    :
+
+    ```csharp
+   WebView2.CoreWebView2.AddHostObjectToScript("RuntimeComponent1", dispatchAdapter.WrapNamedObject("RuntimeComponent1", dispatchAdapter));
+    ```
+
+    The WrapNamedObject call creates a wrapper object for the RuntimeComponent1 namespace. The AddHostObjectToScript call adds that wrapped object to script using the name RuntimeComponent1.
+
+    For full guidance on how to use custom WinRT components see [## Custom (3rd Party) WinRT Components] //todo: have michael hyperlink this
+
 1. In the `MainPage` constructor, above the `StatusUpdate("Ready");` line, add the following code:
 
    ```csharp
@@ -343,8 +353,32 @@ Next, use the DevTools Console to demonstrate that web-side code can call the in
    ![Using the DevTools Console to test calling native-side code from web-side code.](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
 Congratulations!  You've finished the sample demonstration of calling WinRT code from JavaScript code.
+## Custom (3rd Party) WinRT Components
 
+The WebView2 WinRT tool supports custom WinRT component projections as long as its using a C# base WinRT class.
 
+The following are the steps you will need to take:
+
+1. Add a third project (other than your main app and WinRTAdapter project) to your VS solution that implements your winrt class.
+2. Have the WinRTAdapter project 'Add a reference' to your new third project containing your winrt class.
+3. Update the WinRTAdapter project's Include filter in the properties to also include your new class.
+4. Add an additional line to InitializeWebView2Async to add your winrt class's namespace `WebView2.CoreWebView2.AddHostObjectToScript("MyCustomNamespace", dispatchAdapter.WrapNamedObject("MyCustomNamespace", dispatchAdapter));`
+1. For easy method calling from the web, optionally add your namespace sync proxy as a global object in script. Ex. `window.MyCustomNamespace = chrome.webview.hostObjects.sync.MyCustomNamespace;`
+
+See the following [sample app](https://github.com/MicrosoftEdge/WebView2Samples/compare/uwp-wv2winrt-custom-csharp-winrt) to see an example of this.
+## Asynchronous calls into WinRT
+
+Following the steps in the above guide you should be able to use synchronous proxies. For async method calls you will need to use chrome.webview.hostObjects.options.forceAsyncMethodMatches. This is an array of regex that if any match a method name on a sync proxy, the method will be run asynchronously instead. Setting this to [/Async$/] will have it match any method ending with the suffix Async. Then matching method calls work just like a method on an async proxy and returns a promise that you can await.
+
+An example:
+
+```javascript
+const Windows = chrome.webview.hostObjects.sync.Windows;
+chrome.webview.hostObjects.options.forceAsyncMethodMatches = [/Async$/];
+
+let fileOpenPicker = new Windows.Storage.Pickers.FileOpenPicker();
+let result = await fileOpenPicker.pickSingleFileAsync();
+```
 <!-- ====================================================================== -->
 ## Make AddHostObjectToScript JavaScript proxies act more like other JavaScript APIs
 
