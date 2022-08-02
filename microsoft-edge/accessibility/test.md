@@ -32,10 +32,7 @@ Use the following tools and testing procedures to evaluate your website for acce
 
 *  [webhint](https://webhint.io) - Use webhint to check for out-of-date libraries, security improvements, performance problems, and accessibility issues.
 
-*  [Web Accessibility Checker](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec) - A Visual Studio extension that performs accessibility checks on any ASP.NET web app.
-
 *  [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html) - A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
-
 
 <!-- ====================================================================== -->
 ## The Web Accessibility Initiative (WAI)
