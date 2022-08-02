@@ -27,8 +27,8 @@ In the **3D View** tool, the **Composited Layers** view has all the features you
 ![The Composited Layers tab in the 3D View tool](./devtools-104-images/3d-view-composited-layers.png)
 
 See also:
-* [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md)
 * [Debug the web in 3D with the 3D View tool](https://blogs.windows.com/msedgedev/2022/06/21/debug-the-web-in-3d-with-the-3d-view-tool/)
+* [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md)
 
 
 <!-- ====================================================================== -->
@@ -54,7 +54,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Improving accessibility for the Detached Elements tool
+## Improved accessibility for the Detached Elements tool
 
 <!-- Title: The Detached Elements tool now works better with assistive technology -->
 <!-- Subtitle: In Microsoft Edge 104, Screen readers announce the name of the table of detached elements in the tool. -->
