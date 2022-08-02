@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/21/2022
+ms.date: 08/02/2022
 ---
 # What's New in DevTools (Microsoft Edge 104)
 
@@ -20,14 +20,15 @@ ms.date: 07/21/2022
 <!-- Title: Where did Layers go? -->
 <!-- Subtitle: Layers isn't a stand-alone tool anymore, it's wrapped up in the comprehensive 3D View; a tool for all your visual debugging needs. -->
 
-The standalone **Layers** tool has now been completely removed.  During the phase-out period, the **Layers** tool redirected users to the **3D View** tool.
+The standalone **Layers** tool has been removed in Microsoft Edge version 104.  In previous versions of Microsoft Edge, the **Layers** tool redirected users to the **3D View** tool.
 
-In the **3D View** tool, the **Composited Layers** view has all the features you love from the **Layers** tool, along with some updates.  The **Composited Layers** view is now complemented by two other visual debugging panes.  Try out the **DOM** and **Z-index** views for debugging while you're in the **3D View** tool, and you'll see how these three views work together.
+In the **3D View** tool, the **Composited Layers** view has all the features you love from the **Layers** tool, along with some updates.  The **Composited Layers** view is now complemented by two other visual debugging panes: **DOM** and **Z-index**.  Combine these additional views with the **Composited Layers** view for better debugging.
 
 ![The Composited Layers tab in the 3D View tool](./devtools-104-images/3d-view-composited-layers.png)
 
 See also:
 * [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md)
+* [Debug the web in 3D with the 3D View tool](https://blogs.windows.com/msedgedev/2022/06/21/debug-the-web-in-3d-with-the-3d-view-tool/)
 
 
 <!-- ====================================================================== -->
@@ -36,15 +37,15 @@ See also:
 <!-- Title: In Issues tool, long request URLs have been shortened -->
 <!-- Subtitle: Links to network request URLs have been truncated, making issues easier to read. -->
 
-The **Issues** tool provides recommendations to improve a web page's accessibility, performance, security, and more.  Some of the recommendations that are listed include a link to a network request that opens in the **Network** tool.
+The **Issues** tool provides recommendations to improve a web page's accessibility, performance, security, and more.  Some of these recommendations around networking include a link to a given request that opens in the **Network** tool.
 
-Previously, issues related to network requests displayed the entire URL for the network request.  When these URLs were lengthy, they took up a lot of space, making the list of issues difficult to browse.  In Microsoft Edge 104, these long request URL links have been truncated.  The links still direct to the relevant part of DevTools, but now take up less space.
+Previously, issues related to network requests displayed the entire URL for the network request.  When these URLs were lengthy, they took up a lot of space, making the list of issues difficult to browse.  In Microsoft Edge 104, these long request URL links have been truncated to take up less space.  The links still direct to the relevant part of the **Network** tool.
 
-Before:
+In previous versions of Microsoft Edge:
 
 ![Issues tool showing a long URL, making the issue entry too tall](./devtools-104-images/issues-request-urls-long.png)
 
-After:
+In Microsoft Edge version 104:
 
 ![Issues tool showing the URL truncated to save vertical space](./devtools-104-images/issues-request-urls-short.png)
 
