@@ -368,7 +368,9 @@ The following are the steps you will need to take:
 See the following [sample app](https://github.com/MicrosoftEdge/WebView2Samples/compare/uwp-wv2winrt-custom-csharp-winrt) to see an example of this.
 ## Asynchronous calls into WinRT
 
-Following the steps in the above guide you should be able to use synchronous proxies. For async method calls you will need to use chrome.webview.hostObjects.options.forceAsyncMethodMatches. This is an array of regex that if any match a method name on a sync proxy, the method will be run asynchronously instead. Setting this to [/Async$/] will have it match any method ending with the suffix Async. Then matching method calls work just like a method on an async proxy and returns a promise that you can await.
+Following the steps in the above guide you should be able to use synchronous proxies. For async method calls you will need to use chrome.webview.hostObjects.options.forceAsyncMethodMatches. 
+
+This is an array of regex that if any match a method name on a sync proxy, the method will be run asynchronously instead. Setting this to [/Async$/] will have it match any method ending with the suffix Async. Then matching method calls work just like a method on an async proxy and returns a promise that you can await.
 
 An example:
 
