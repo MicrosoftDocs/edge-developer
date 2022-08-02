@@ -106,7 +106,7 @@ In the above example, an agenda Widget is defined by the PWA. Possible fields ar
 <!-- ====================================================================== -->
 ## Choose or define a Widget template
 
-**OPEN QUESTIONS: Are generic template not supported at all? Should it be documented at all?**
+**OPEN QUESTIONS: Are generic templates supported at all? Should they be documented?**
 
 To make Widgets easy to create and adapt to various operating systems, they are displayed with templates. Two types of templates exist:
 
