@@ -370,7 +370,7 @@ See the following [sample app](https://github.com/MicrosoftEdge/WebView2Samples/
 
 Following the steps in the above guide you should be able to use synchronous proxies. For async method calls you will need to use chrome.webview.hostObjects.options.forceAsyncMethodMatches. 
 
-This is an array of regex that if any match a method name on a sync proxy, the method will be run asynchronously instead. Setting this to [/Async$/] will have it match any method ending with the suffix Async. Then matching method calls work just like a method on an async proxy and returns a promise that you can await.
+The property [forceAsyncMethodMatches](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#addhostobjecttoscript) is an array of regex that if any match a method name on a sync proxy, the method will be run asynchronously instead. Setting this to [/Async$/] will have it match any method ending with the suffix Async. Then matching method calls work just like a method on an async proxy and returns a promise that you can await.
 
 An example:
 
