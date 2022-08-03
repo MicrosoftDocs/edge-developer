@@ -1236,7 +1236,7 @@
 
             - name: WinRT
               items:
-                - name: Microsoft.Web.WebView2.Core (C#)
+                - name: Microsoft.Web.WebView2.Core
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: functions, methods
 
