@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/09/2022
+ms.date: 08/02/2022
 ---
 # Call native-side WinRT code from web-side code
 
@@ -305,15 +305,15 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
    This method calls `AddHostObjectToScript`.
 
-   In the line AddHostObjectToScript(“Windows”, Windows is the top level namespace. So you can add your own third party one as well like the following example    :
+   In the line `AddHostObjectToScript("Windows", ...`, `Windows` is the top-level namespace.  If you have other top-level namespaces, you can add additional calls to `AddHostObjectToScript`, like the following example:
 
-    ```csharp
+   ```csharp
    WebView2.CoreWebView2.AddHostObjectToScript("RuntimeComponent1", dispatchAdapter.WrapNamedObject("RuntimeComponent1", dispatchAdapter));
-    ```
+   ```
 
-    The WrapNamedObject call creates a wrapper object for the RuntimeComponent1 namespace. The AddHostObjectToScript call adds that wrapped object to script using the name RuntimeComponent1.
+   The `WrapNamedObject` call creates a wrapper object for the `RuntimeComponent1` namespace. The `AddHostObjectToScript` call adds that wrapped object to script using the name `RuntimeComponent1`.
 
-    For full guidance on how to use custom WinRT components see [## Custom (3rd Party) WinRT Components] //todo: have michael hyperlink this
+   For full guidance on how to use custom WinRT components, see [Custom (3rd-party) WinRT components](#custom-3rd-party-winrt-components).
 
 1. In the `MainPage` constructor, above the `StatusUpdate("Ready");` line, add the following code:
 
@@ -353,34 +353,92 @@ Next, use the DevTools Console to demonstrate that web-side code can call the in
    ![Using the DevTools Console to test calling native-side code from web-side code.](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
 Congratulations!  You've finished the sample demonstration of calling WinRT code from JavaScript code.
-## Custom (3rd Party) WinRT Components
 
-The WebView2 WinRT tool supports custom WinRT component projections as long as its using a C# base WinRT class.
 
-The following are the steps you will need to take:
+<!-- =============================================== -->
+## Custom (3rd-party) WinRT components
 
-1. Add a third project (other than your main app and WinRTAdapter project) to your VS solution that implements your winrt class.
-2. Have the WinRTAdapter project 'Add a reference' to your new third project containing your winrt class.
-3. Update the WinRTAdapter project's Include filter in the properties to also include your new class.
-4. Add an additional line to InitializeWebView2Async to add your winrt class's namespace `WebView2.CoreWebView2.AddHostObjectToScript("MyCustomNamespace", dispatchAdapter.WrapNamedObject("MyCustomNamespace", dispatchAdapter));`
-1. For easy method calling from the web, optionally add your namespace sync proxy as a global object in script. Ex. `window.MyCustomNamespace = chrome.webview.hostObjects.sync.MyCustomNamespace;`
+The wv2winrt tool supports custom third-party WinRT components, in addition to first-party OS WinRT APIs.
 
-See the following [sample app](https://github.com/MicrosoftEdge/WebView2Samples/compare/uwp-wv2winrt-custom-csharp-winrt) to see an example of this.
-## Asynchronous calls into WinRT
+![3rd-party WinRT components with wv2winrt tool](./winrt-from-js-images/wv2winrt-custom-components.png)
 
-Following the steps in the above guide you should be able to use synchronous proxies. For async method calls you will need to use chrome.webview.hostObjects.options.forceAsyncMethodMatches. 
+To use custom (3rd-party) WinRT components with the wv2winrt tool, in addition to the above steps, also do the following steps:
 
-The property [forceAsyncMethodMatches](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1264.42#addhostobjecttoscript) is an array of regex that if any match a method name on a sync proxy, the method will be run asynchronously instead. Setting this to [/Async$/] will have it match any method ending with the suffix Async. Then matching method calls work just like a method on an async proxy and returns a promise that you can await.
+1. Add a third project (other than your main app and WinRTAdapter project) to your Visual Studio solution that implements your WinRT class.
 
-An example:
+1. Have the WinRTAdapter project 'Add a reference' to your new third project containing your WinRT class.
+
+1. Update the WinRTAdapter project's Include filter in the properties to also include your new class.
+
+1. Add an additional line to `InitializeWebView2Async` to add your winrt class's namespace:
+
+   `WebView2.CoreWebView2.AddHostObjectToScript("MyCustomNamespace", dispatchAdapter.WrapNamedObject("MyCustomNamespace", dispatchAdapter));`
+
+1. For easy method calling from the web, optionally add your namespace sync proxy as a global object in script.  For example:
+
+   `window.MyCustomNamespace = chrome.webview.hostObjects.sync.MyCustomNamespace;`
+
+For an example of this, see the following branch in WebView2Samples repo:
+
+* [sample app: uwp-wv2winrt-custom-csharp-winrt](https://github.com/MicrosoftEdge/WebView2Samples/compare/uwp-wv2winrt-custom-csharp-winrt) to see an example of this.
+
+
+<!-- =============================================== -->
+## Asynchronous WinRT methods
+
+Following the steps in the above guide, you should be able to use synchronous proxies. For async method calls, you will need to use `chrome.webview.hostObjects.options.forceAsyncMethodMatches`.
+
+The [forceAsyncMethodMatches property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript) is an array of regexes, where if any regex matches a method name on a sync proxy, the method will be run asynchronously instead. Setting this to `[/Async$/]` will have it match any method ending with the suffix `Async`.  Then matching method calls work just like a method on an async proxy and returns a promise that you can await.
+
+Example:
 
 ```javascript
 const Windows = chrome.webview.hostObjects.sync.Windows;
 chrome.webview.hostObjects.options.forceAsyncMethodMatches = [/Async$/];
 
-let fileOpenPicker = new Windows.Storage.Pickers.FileOpenPicker();
-let result = await fileOpenPicker.pickSingleFileAsync();
+let result = await Windows.System.Launcher.launchUriAsync(new Windows.Foundation.Uri('https://contoso.com/'));
 ```
+
+
+<!-- ====================================================================== -->
+
+## Subscribing to WinRT events
+
+WinRT events are also exposed via the script proxies. You can add and remove event handlers for instance and static WinRT events using the `addEventListener(string eventName, function handler)` and `removeEventListener(string eventName, function handler)` methods. 
+
+These work similarly to the DOM methods of the same name. Call `addEventListener` with a string name of the WinRT event you want to subscribe as the first parameter, and a function callback to be called whenever the event is raised. Calling `removeEventListener` with the same parameters unsubscribes from that event. For example:
+
+```javascript
+const Windows = chrome.webview.hostObjects.sync.Windows;
+const coreApplication = Windows.ApplicationModel.Core.CoreApplication;
+const coreApplicationView = coreApplication.getCurrentView();
+const titleBar = coreApplicationView.titleBar;
+titleBar.addEventListener('IsVisibleChanged', () => {
+    console.log('titlebar visibility changed to: ' + titleBar.isVisible);
+});
+```
+
+For a WinRT event that provides event args, those are provided as the first parameter to the event handler function. For example, the `Windows.Foundation.Collections.PropertySet.MapChanged` event has `IMapChangedEventArgs<string, object>` event arg object and that object is provided as the parameter to the callback.
+
+```javascript
+const Windows = chrome.webview.hostObjects.sync.Windows;
+const propertySet = new Windows.Foundation.Collections.PropertySet();
+propertySet.addEventListener('MapChanged', eventArgs => {
+    const key = eventArgs.key;
+    const collectionChange = eventArgs.collectionChange;
+    // ...
+});
+```
+
+The event args object will additionally have the following properties:
+
+| Property Name | Description |
+| --- | --- |
+| `target` | The object that raised the event |
+| `type` | The string name of the event |
+| `detail` | An array of all parameters provided to the WinRT delegate |
+
+
 <!-- ====================================================================== -->
 ## Make AddHostObjectToScript JavaScript proxies act more like other JavaScript APIs
 
