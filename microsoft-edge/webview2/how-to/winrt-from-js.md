@@ -378,9 +378,9 @@ To use custom (3rd-party) WinRT components with the wv2winrt tool, in addition t
 
    `window.MyCustomNamespace = chrome.webview.hostObjects.sync.MyCustomNamespace;`
 
-For an example of this, see the following branch in WebView2Samples repo:
+For an example of this, see the following WebView2 sample:
 
-* [sample app: uwp-wv2winrt-custom-csharp-winrt](https://github.com/MicrosoftEdge/WebView2Samples/compare/uwp-wv2winrt-custom-csharp-winrt) to see an example of this.
+* [uwp-wv2winrt-custom-csharp-winrt](https://github.com/MicrosoftEdge/WebView2Samples/compare/uwp-wv2winrt-custom-csharp-winrt) - A sample, as a branch.
 
 
 <!-- =============================================== -->
