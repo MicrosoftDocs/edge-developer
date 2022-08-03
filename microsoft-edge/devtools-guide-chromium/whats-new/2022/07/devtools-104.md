@@ -30,7 +30,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Improved display of request URLs in Issues tool
+## Request URLs in Issues tool have been shortened to display better
 
 <!-- Title: In Issues tool, long request URLs have been shortened -->
 <!-- Subtitle: Links to network request URLs have been truncated, making issues easier to read. -->
