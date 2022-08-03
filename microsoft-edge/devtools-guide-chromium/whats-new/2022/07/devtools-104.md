@@ -15,8 +15,6 @@ ms.date: 08/02/2022
 <!-- ====================================================================== -->
 ## Use Layers in 3D View
 
-<!-- todo: check work item -->
-
 <!-- Title: Where did Layers go? -->
 <!-- Subtitle: Layers isn't a stand-alone tool anymore, it's wrapped up in the comprehensive 3D View; a tool for all your visual debugging needs. -->
 
@@ -62,17 +60,6 @@ See also:
 In previous versions of Microsoft Edge, when selecting the table of detached elements in the **Detached Elements** tool, assistive technology only announced "Table" and the number of rows and columns.  In Microsoft Edge version 104, this issue has been fixed.  When selecting the table of detached elements in the **Detached Elements** tool, assistive technology now announces "Detached Elements List, Table" and the number of rows and columns.
 
 ![Detached Elements List, Table, 5 rows, 3 columns](./devtools-104-images/a11y-detached-elements.png)
-<!-- Instructions for screenshot
-todo: see/use screenshot in work item attachment
-1. Navigate to: https://microsoftedge.github.io/Demos/detached-elements/
-2. Open DevTools > Detached Elements
-3. Send 5 messages in Room 1 by selecting the "Send 1 message" button 5 times
-4. Switch to Room 2
-5. In the Detached Elements tool, press the refresh arrow icon to get detached elements
-6. Take the screenshot and draw a red highlight box over the table (5 rows, 3 columns) in the Detached Elements tool -->
-
-<!-- Video recording of feature in action
-todo: see work item -->
 
 See also:
 * [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
@@ -82,22 +69,14 @@ See also:
 <!-- ====================================================================== -->
 ## Fix: Arrows representing web socket traffic now render correctly in the Network tool
 
-<!-- todo: check work item eg video -->
-
 <!-- Title: Use the Network tool to understand web socket traffic -->
 <!-- Subtitle: Arrows representing messages from the server or client now display correctly in the Network tool. -->
 
-In previous versions of Microsoft Edge, when inspecting web socket traffic in the Network tool, the arrows representing whether a message was sent from the client or server were not rendering correctly.  In Microsoft Edge 104, this issue has been fixed.  Green up-arrows represent messages sent by the client, and red down-arrows represent messages sent by the server.  Thank you for sending us your feedback about this issue!
+In previous versions of Microsoft Edge, when inspecting web socket traffic in the Network tool, the arrows representing whether a message was sent from the client or server were not rendering correctly.  In Microsoft Edge 104, this issue has been fixed.  Thank you for sending us your feedback about this issue!
+*  Green up-arrows (![Green up arrow](./devtools-104-images/green-up-arrow.png)) represent messages sent by the client.
+*  Red down-arrows (![Red down arrow](./devtools-104-images/red-down-arrow.png)) represent messages sent by the server.
 
 ![Network tool](./devtools-104-images/network-tool-ws-arrows.png)
-<!-- Start by using the work item attached png
-
-1. Navigate to: Online WebSocket & Socket.io Tester - PieSocket Realtime
-2. Open DevTools > Network and undock the tools
-3. On the website, select Connect and send a test message
-4. In the Network tool, select WS to filter to only WebSocket network requests
-5. Select the one network request that should appear
-6. Take a screenshot and draw a red highlight box over the red and green arrows -->
 
 See also:
 * [Network features reference](../../../network/reference.md)
@@ -117,7 +96,6 @@ Microsoft Edge 104 also includes the following updates from the Chromium project
 * [Identify blocking frames in the Back/forward cache pane](https://developer.chrome.com/blog/new-in-devtools-104/#bfcache)
 * [Improved autocomplete suggestions for JavaScript objects](https://developer.chrome.com/blog/new-in-devtools-104/#autocomplete)
 * [Sourcemaps improvements](https://developer.chrome.com/blog/new-in-devtools-104/#sourcemaps)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-104/#misc)
 
 
 <!-- ====================================================================== -->
