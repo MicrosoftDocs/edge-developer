@@ -388,7 +388,13 @@ For an example of this, see the following branch in WebView2Samples repo:
 
 Following the steps in the above guide, you should be able to use synchronous proxies. For async method calls, you will need to use `chrome.webview.hostObjects.options.forceAsyncMethodMatches`.
 
-The [forceAsyncMethodMatches property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript) is an array of regexes, where if any regex matches a method name on a sync proxy, the method will be run asynchronously instead. Setting this to `[/Async$/]` will have it match any method ending with the suffix `Async`.  Then matching method calls work just like a method on an async proxy and returns a promise that you can await.
+The [forceAsyncMethodMatches](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript) property is an array of regexes, where if any regex matches a method name on a sync proxy, the method will be run asynchronously instead. Setting this to `[/Async$/]` will have it match any method ending with the suffix `Async`.  Then matching method calls work just like a method on an async proxy and returns a promise that you can await.
+
+From the above Reference documentation:
+
+| Options property | Details |
+|---|---|
+| `forceAsyncMethodMatches` | This is an array of regular expressions. When calling a method on a synchronous proxy, the method call will be performed asynchronously if the method name matches a string or regular expression in this array. Setting this value to `Async` will make any method that ends with Async be an asynchronous method call. If an async method doesn't match here and isn't forced to be asynchronous, the method will be invoked synchronously, blocking execution of the calling JavaScript and then returning the resolution of the promise, rather than returning a promise. |
 
 Example:
 
