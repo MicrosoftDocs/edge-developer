@@ -1236,15 +1236,15 @@
 
             - name: WinRT
               items:
-                - name: Microsoft.Web.WebView2.Core (C#)
+                - name: Microsoft.Web.WebView2.Core
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: functions, methods
 
-                - name: COM Interop (C++)
+                - name: COM Interop/C++
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
                   displayName: functions, methods
 
-            - name: Win32 C++
+            - name: Win32/C++
               items:
                 - name: Win32 C++ WebView2 API conventions
                   href: webview2/concepts/win32-api-conventions.md
