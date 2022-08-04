@@ -209,7 +209,7 @@ These features become functional only on enterprise-managed devices by acquiring
 
 When these enterprise features are on, the browser sends auditing and diagnostic data to the administrator as per the feature’s requirement to function, manage or diagnose properly. This data collection is controlled by the enterprise administrator and end user is not able to opt-out.
 
-Please contact your enterprise administrator to understand your company’s policies for such data collection.
+Please contact your enterprise administrator to understand your company's policies for such data collection.
 
 <!-- ====================================================================== -->
 ## Extensions and Microsoft Edge Add-ons
