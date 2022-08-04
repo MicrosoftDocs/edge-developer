@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 07/21/2022
+ms.date: 08/03/2022
 ---
 # Experimental features
 
