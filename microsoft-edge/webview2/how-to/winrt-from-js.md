@@ -313,7 +313,7 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
    The `WrapNamedObject` call creates a wrapper object for the `RuntimeComponent1` namespace. The `AddHostObjectToScript` call adds that wrapped object to script using the name `RuntimeComponent1`.
 
-   For full guidance on how to use custom WinRT components, see [Custom (3rd-party) WinRT components](#custom-3rd-party-winrt-components).
+   For full guidance on how to use custom WinRT components, see [Custom (3rd-party) WinRT components](#custom-3rd-party-winrt-components), below.
 
 1. In the `MainPage` constructor, above the `StatusUpdate("Ready");` line, add the following code:
 
@@ -390,12 +390,6 @@ Following the steps in the above guide, you should be able to use synchronous pr
 
 The [forceAsyncMethodMatches](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript) property is an array of regexes, where if any regex matches a method name on a sync proxy, the method will be run asynchronously instead. Setting this to `[/Async$/]` will have it match any method ending with the suffix `Async`.  Then matching method calls work just like a method on an async proxy and returns a promise that you can await.
 
-From the above Reference documentation:
-
-| Options property | Details |
-|---|---|
-| `forceAsyncMethodMatches` | This is an array of regular expressions. When calling a method on a synchronous proxy, the method call will be performed asynchronously if the method name matches a string or regular expression in this array. Setting this value to `Async` will make any method that ends with Async be an asynchronous method call. If an async method doesn't match here and isn't forced to be asynchronous, the method will be invoked synchronously, blocking execution of the calling JavaScript and then returning the resolution of the promise, rather than returning a promise. |
-
 Example:
 
 ```javascript
@@ -410,9 +404,9 @@ let result = await Windows.System.Launcher.launchUriAsync(new Windows.Foundation
 
 ## Subscribing to WinRT events
 
-WinRT events are also exposed via the script proxies. You can add and remove event handlers for instance and static WinRT events using the `addEventListener(string eventName, function handler)` and `removeEventListener(string eventName, function handler)` methods. 
+WinRT events are also exposed via the script proxies. You can add and remove event handlers of instance WinRT events and static WinRT events by using the `addEventListener(string eventName, function handler)` and `removeEventListener(string eventName, function handler)` methods. 
 
-These work similarly to the DOM methods of the same name. Call `addEventListener` with a string name of the WinRT event you want to subscribe as the first parameter, and a function callback to be called whenever the event is raised. Calling `removeEventListener` with the same parameters unsubscribes from that event. For example:
+These methods work similarly to the DOM methods of the same name. Call `addEventListener` with a string name of the WinRT event you want to subscribe as the first parameter, and a function callback to be called whenever the event is raised. Calling `removeEventListener` with the same parameters unsubscribes from that event. For example:
 
 ```javascript
 const Windows = chrome.webview.hostObjects.sync.Windows;
