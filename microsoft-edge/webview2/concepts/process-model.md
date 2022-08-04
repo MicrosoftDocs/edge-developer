@@ -55,7 +55,7 @@ The `CoreWebView2Environment` represents a user data folder and the collection o
 
 On the other hand, if you create multiple `CoreWebView2Environment` objects that are configured the same way, including sharing the same user data folder, each of these `CoreWebView2Environment` objects will represent the same user data folder and the same associated collection of processes. Use any of these `CoreWebView2Environment` objects to create a `WebView2` with the one shared user data folder and associated collection of processes.
 
-If you try to create a `CoreWebView2Environment` using a user data folder which another `CoreWebView2Environment` is already using, and you don't configure the two `CoreWebView2Environment` objects the same, for example if they were created with different `CoreWebView2EnvironmentOptions.Language` values, then the second `CoreWebView2Environment` will fail to create `WebView2`s. This is true for `CoreWebView2Environment` objects that are in the same process or in different processes.
+If you try to create a `CoreWebView2Environment` using a user data folder which another `CoreWebView2Environment` is already using, and you don't configure the two `CoreWebView2Environment` objects the same, for example if they were created with different `CoreWebView2EnvironmentOptions.Language` values, then the second `CoreWebView2Environment` will fail to create `WebView2` objects. This is true for `CoreWebView2Environment` objects that are in the same process or in different processes.
 
 <!-- ====================================================================== -->
 ## Handling process events and lifetime
