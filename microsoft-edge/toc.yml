@@ -33,7 +33,7 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             - name: Microsoft Edge 104
-              href: devtools-guide-chromium/whats-new/2022/07/devtools-104.md
+              href: devtools-guide-chromium/whats-new/2022/08/devtools-104.md
               displayName: what's new, announcements, release notes
 
             - name: Microsoft Edge 103
