@@ -108,7 +108,7 @@ In the above example, an agenda Widget is defined by the PWA. Possible fields ar
 
 **OPEN QUESTIONS: Are generic templates supported at all? Should they be documented?**
 
-To make Widgets easy to create and adapt to various operating systems, they are displayed with templates. Two types of templates exist:
+To make Widgets easy to create and adapt to various operating systems, they are displayed by using templates. Two types of templates exist:
 
 * Generic templates, defined by their names using the `template` field.
 * Custom templates, defined by their URLs using a custom template field.
