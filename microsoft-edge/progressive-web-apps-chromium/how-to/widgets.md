@@ -157,7 +157,7 @@ To learn more, see [Adaptive Cards Templating](/adaptive-cards/templating/).
 <!-- ====================================================================== -->
 ## Bind data to your template
 
-While the template declares the user interface of a Widget, data is what populates this user interface.
+The template declares the user interface of a Widget.  Data then populates this user interface.
 
 To bind data to your template, use the `data` field in your Widget definition. This field should be set to a URL that returns valid JSON data.
 
