@@ -19,7 +19,7 @@ On Windows 11, Widgets can be displayed from the Taskbar.
 Progressive Web Apps (PWAs) can also declare Widgets, update them, and handle user interactions within them.
 
 > [!NOTE]
-> Support for the `widgets` manifest member and associated JavaScript APIs, documented below, is experimental and depends on Microsoft Windows functionality not widely available yet.
+> Support for the `widgets` manifest member and associated JavaScript APIs, documented below, is experimental and depends on Microsoft Windows functionality that's not widely available yet.
 
 
 <!-- ====================================================================== -->
