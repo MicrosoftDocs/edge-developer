@@ -367,7 +367,7 @@ When using `matchAll(options)` to get multiple Widgets, a `WidgetOptions` object
 
 ### WidgetPayload object
 
-When creating or updating a Widget instance, the service worker must send the data necessary to populate the Widget. This data is called the payload, it includes template- and content-related data and contains the following properties:
+When creating or updating a Widget instance, the service worker must send the data that's necessary to populate the Widget. This data is called the _payload_.  The payload includes template-related data and content-related data.  The `WidgetPayload` object contains the following properties:
 
 * `template`: The name of the template to use.
 * `data`: The data to use with the Widget template, as a `String`.  This data can be stringified JSON data.
