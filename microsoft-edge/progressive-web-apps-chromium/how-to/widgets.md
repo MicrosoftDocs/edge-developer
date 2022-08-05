@@ -90,7 +90,7 @@ In the above example, an agenda Widget is defined by the PWA. Possible fields ar
 |:--- |:--- |:--- |
 | `name` | The title of the Widget, presented to users. | Yes |
 | `tag` | A string used to reference the widget in the PWA Service Worker. | Yes |
-| `template` | The template to use to display the Widget in the operating system. Note that to be installable, a Widget should either declare the name of the template to use with the `template` field, or declare the URL to a custom template using a custom template field (e.g. `ms_ac_template`). See [Choose or define a Widget template](#choose-or-define-a-widget-template) to learn more. | Yes |
+| `template` | The template to use to display the Widget in the operating system. To be installable, a Widget should either declare the name of the template to use with the `template` field, or specify the URL for a custom template by using a custom template field (such as `ms_ac_template`). See [Choose or define a Widget template](#choose-or-define-a-widget-template), below. | Yes |
 | `data` | The URL where the data to fill the template with can be found. For now, this URL is required to return valid JSON. | Yes |
 | `type` | The MIME type for the Widget data. Note that it is, for now, required to be `application/json`. | Yes |
 | `auth` | A boolean indicating if the Widget requires authentication. | No |
