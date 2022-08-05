@@ -113,7 +113,7 @@ To make Widgets easy to create and adapt to various operating systems, they are 
 * Generic templates, defined by their names using the `template` field.
 * Custom templates, defined by their URLs using a custom template field.
 
-For the time being, only custom Adaptive Cards templates are supported. Adaptive Cards are an open card exchange format that can be used to exchange UI content in a common and consistent way. To learn more, check the [Adaptive Cards Overview](/adaptive-cards/).
+For the time being, only custom Adaptive Cards templates are supported. Adaptive Cards are an open card exchange format that can be used to exchange UI content in a common and consistent way. See [Adaptive Cards Overview](/adaptive-cards/).
 
 To define a custom Adaptive Cards template, use the `ms_ac_template` field:
 
