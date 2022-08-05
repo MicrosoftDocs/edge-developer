@@ -27,7 +27,7 @@ Progressive Web Apps (PWAs) can also declare Widgets, update them, and handle us
 
 Widgets are experimentally supported starting with Microsoft Edge 105.
 
-To test your Widgets PWA code locally, start Microsoft Edge from the command line with the `msWebAppWidgets` feature enable:
+To test your Widgets PWA code locally, start Microsoft Edge from the command line with the `msWebAppWidgets` feature enabled:
 
 ```cmd
 "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --enable-features=msWebAppWidgets
