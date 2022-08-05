@@ -291,7 +291,7 @@ The `type` field instructs the operating system how to render the particular set
 
 Some of the types above require extra information to be rendered correctly. This information is provided by the `options` field. The `options` field can either be an array of values, or a URL that returns an array of values.
 
-Finally, the `name` field is used in the service worker code to know which setting was change.
+Finally, the `name` field is used in the service worker code to know which setting was changed.
 
 
 <!-- ====================================================================== -->
