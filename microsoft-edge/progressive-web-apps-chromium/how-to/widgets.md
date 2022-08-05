@@ -342,7 +342,7 @@ The service worker global object (or [ServiceWorkerGlobalScope](https://develope
 | `getByInstanceId(id)` | Get a Widget by instance id | The Widget instance id | A Promise that resolves to the corresponding [Widget object](#widget-object), or undefined.
 | `getByHostId(id)` | Get Widgets by host id  | The host id | An array of [Widget objects](#widget-object) found in that host.
 | `matchAll(options)` | Get Widgets by matching options | A [WidgetOptions object](#widgetoptions-object) | A Promise that resolves to an array of [Widget objects](#widget-object) that match the `options` criteria. |
-| `updateByInstanceId(id, payload)` | Update a Widget by instance id  | The instance id, and a [WidgetPayload object](#widgetpayload-object) | A Promise that resolves to undefined or Error.
+| `updateByInstanceId(id, payload)` | Update a Widget by instance id  | The instance id, and a [WidgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`.
 | `updateByTag(tag, payload)` | Update a Widget by tag | The Widget tag, and a [WidgetPayload object](#widgetpayload-object) | A Promise that resolves to undefined or Error.
 | `removeByInstanceId(id)` | Remove a Widget by instance id | The instance id | A Promise that resolves to undefined or Error.
 | `removeByTag()` | Remove a Widget by tag | The Widget tag | A Promise that resolves to undefined or Error.
