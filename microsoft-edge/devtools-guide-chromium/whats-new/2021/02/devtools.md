@@ -335,7 +335,7 @@ See also:
 <!-- ====================================================================== -->
 ### Full accessibility tree view in the Elements tool
 
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)<!-- valid 05/10/2022 -->
+![Experimental feature.](../../../../media/experimental-tag.png)<!-- valid 05/10/2022 -->
 
 This experiment provides a **full accessibility tree view** in the **Elements** tool.  The **Accessibility** tab (grouped with the **Styles** tab) provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  After you turn on this experiment and reload DevTools, click the button area at the top of the **Elements** panel to switch the display in the Elements tool for all elements on the webpage.
 

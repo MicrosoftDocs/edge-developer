@@ -18,8 +18,9 @@ On Windows 11, Widgets can be displayed from the Taskbar.
 
 Progressive Web Apps (PWAs) can also declare Widgets, update them, and handle user interactions within them.
 
-> [!NOTE]
-> Support for the `widgets` manifest member and associated JavaScript APIs, documented below, is experimental and depends on Microsoft Windows functionality that's not widely available yet.
+![Experimental feature](../../media/experimental-tag.png)
+
+**Note:** Support for the `widgets` manifest member and associated JavaScript APIs, documented below, is experimental and depends on Microsoft Windows functionality that's not widely available yet.
 
 
 <!-- ====================================================================== -->
@@ -39,12 +40,12 @@ Widgets are also available as an origin trial in Microsoft Edge 105. Learn [how 
 <!-- ====================================================================== -->
 ## Define Widgets
 
-Widgets can be defined in your PWA manifest file, by using the `widgets` manifest member. This manifest member is an array which can contain multiple widget definitions.
+Widgets can be defined in your PWA manifest file, by using the `widgets` manifest member. This manifest member is an array which can contain multiple Widget definitions.
 
 ```json
 {
   "name": "app",
-  "description": "An app that defines widgets",
+  "description": "An app that defines Widgets",
   "icons": [
     { "src": "img/icon-96.png", "sizes": "96x96" },
     { "src": "img/icon-128.png", "sizes": "128x128" },
@@ -62,7 +63,7 @@ Each entry in the `widgets` array contains several fields, as shown below:
 ```json
 {
   "name": "app",
-  "description": "An app that defines widgets",
+  "description": "An app that defines Widgets",
   "icons": [
     { "src": "img/icon-96.png", "sizes": "96x96" },
     { "src": "img/icon-128.png", "sizes": "128x128" },
@@ -94,7 +95,7 @@ In the above example, an agenda Widget is defined by the PWA. Possible fields ar
 | `data` | The URL where the data to fill the template with can be found. For now, this URL is required to return valid JSON. | Yes |
 | `type` | The MIME type for the Widget data. Note that it is, for now, required to be `application/json`. | Yes |
 | `auth` | A boolean indicating if the Widget requires authentication. | No |
-| `update` | The frequency, in seconds, you want the widget to be updated. Note that to actually update the Widget, [Periodic Background Sync](./background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content) is used. | No |
+| `update` | The frequency, in seconds, you want the Widget to be updated. Note that to actually update the Widget, [Periodic Background Sync](./background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content) is used. | No |
 | `actions` | An array of actions exposed to users within the Widget (only if the template supports actions). | No |
 | `settings` | An array of settings that can be used to configure different instances of the same Widget differently. | No |
 | `short_name` | An alternative short version of the name. | No |
@@ -280,7 +281,7 @@ Here is an example of a setting definition:
 
 It is up to the operating system to provide access, and render, the right setting screen for the Widget, based on the setting definition. 
 
-In the setting definition above, the `label` and `description` fields are presented in the widget setting screen for the user to know what the setting does.
+In the setting definition above, the `label` and `description` fields are presented in the Widget setting screen for the user to know what the setting does.
 
 The `type` field instructs the operating system how to render the particular setting. The following types are available:
 
@@ -339,12 +340,12 @@ The service worker global object (or [ServiceWorkerGlobalScope](https://develope
 | Method | Description | Parameters | Return value |
 |:--- |:--- |:--- |:--- |
 | `getByTag(tag)` | Get a Widget by tag | The Widget tag | A Promise that resolves to the [Widget object](#widget-object) that matches the tag, or `undefined`. |
-| `getByInstanceId(id)` | Get a Widget by instance id | The Widget instance id | A Promise that resolves to the corresponding [Widget object](#widget-object), or undefined.
-| `getByHostId(id)` | Get Widgets by host id  | The host id | An array of [Widget objects](#widget-object) found in that host.
+| `getByInstanceId(id)` | Get a Widget by instance ID | The Widget instance ID | A Promise that resolves to the corresponding [Widget object](#widget-object), or undefined.
+| `getByHostId(id)` | Get Widgets by host ID  | The host ID | An array of [Widget objects](#widget-object) found in that host.
 | `matchAll(options)` | Get Widgets by matching options | A [WidgetOptions object](#widgetoptions-object) | A Promise that resolves to an array of [Widget objects](#widget-object) that match the `options` criteria. |
-| `updateByInstanceId(id, payload)` | Update a Widget by instance id  | The instance id, and a [WidgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`.
+| `updateByInstanceId(id, payload)` | Update a Widget by instance ID  | The instance ID, and a [WidgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`.
 | `updateByTag(tag, payload)` | Update a Widget by tag | The Widget tag, and a [WidgetPayload object](#widgetpayload-object) | A Promise that resolves to undefined or Error.
-| `removeByInstanceId(id)` | Remove a Widget by instance id | The instance id | A Promise that resolves to undefined or Error.
+| `removeByInstanceId(id)` | Remove a Widget by instance ID | The instance ID | A Promise that resolves to undefined or Error.
 | `removeByTag()` | Remove a Widget by tag | The Widget tag | A Promise that resolves to undefined or Error.
 
 ### Widget object
@@ -361,7 +362,7 @@ When using `matchAll(options)` to get multiple Widgets, a `WidgetOptions` object
 
 * `installable`: A Boolean that indicates if the Widget is considered installable.
 * `installed`: A Boolean that indicates if the Widget has been installed in the Widget host.
-* `tag`: The Widget tag.
+* `tag`: The tag of the Widget.
 * `instance`: The Widget instance.
 * `host`: The Widget host id.
 
