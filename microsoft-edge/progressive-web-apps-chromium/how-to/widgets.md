@@ -338,7 +338,7 @@ The service worker global object (or [ServiceWorkerGlobalScope](https://develope
 
 | Method | Description | Parameters | Return value |
 |:--- |:--- |:--- |:--- |
-| `getByTag(tag)` | Get a Widget by tag | The Widget tag | A Promise that resolves to the [Widget object](#widget-object) that matches the tag, or undefined.
+| `getByTag(tag)` | Get a Widget by tag | The Widget tag | A Promise that resolves to the [Widget object](#widget-object) that matches the tag, or `undefined`. |
 | `getByInstanceId(id)` | Get a Widget by instance id | The Widget instance id | A Promise that resolves to the corresponding [Widget object](#widget-object), or undefined.
 | `getByHostId(id)` | Get Widgets by host id  | The host id | An array of [Widget objects](#widget-object) found in that host.
 | `matchAll(options)` | Get Widgets by matching options | A [WidgetOptions object](#widgetoptions-object) | A Promise that resolves to an array of [Widget objects](#widget-object) that match the `options` criteria. |
