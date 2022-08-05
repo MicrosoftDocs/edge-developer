@@ -385,4 +385,4 @@ This object represents a given instance of a Widget in a Widget host and contain
 
 ### WidgetDefinition object
 
-This object represents the original definition of the Widget, found in the PWA manifest file. The properties of this object match the ones documented in [Define Widgets](#define-widgets).
+This object represents the original definition of the Widget, found in the PWA manifest file. The properties of this object match the properties that are listed in [Define Widgets](#define-widgets), above.
