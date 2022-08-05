@@ -161,7 +161,7 @@ The template declares the user interface of a Widget.  Data then populates this 
 
 To bind data to your template, use the `data` field in your Widget definition. This field should be set to a URL that returns valid JSON data.
 
-The template defined in [the previous section](#choose-or-define-a-widget-template) contains 2 variables: `name` and `meetingNb`, enclosed binding expression syntax: `${}`. So the data returned by the `data` URL in your Widget definition should contain values for these variables.
+The template defined in [the previous section](#choose-or-define-a-widget-template) contains two variables: `name` and `meetingNb`, which are enclosed in the binding expression syntax: `${}`. The data that's returned by the `data` URL in your Widget definition should contain values for these variables.
 
 Here is an example of what the `data` URL might return: 
 
