@@ -10,7 +10,7 @@ ms.date: 08/01/2022
 ---
 # Build PWA-driven Widgets
 
-Native applications can expose information and let users perform tasks via widgets in various operating system's widget dashboards. Examples of this include Android Home Screen Widgets, macOS Dashboard and Today Panel Widgets, the Apple Touch Bar, Samsung Daily Cards, Mini App Widgets, smart watch app companions.
+Native applications can expose information and let users perform tasks via Widgets in various operating systems' Widget dashboards. Examples of this include Android Home Screen Widgets, macOS Dashboard and Today Panel Widgets, the Apple Touch Bar, Samsung Daily Cards, Mini App Widgets, and smart watch app companions.
 
 On Windows 11, Widgets can be displayed from the Taskbar.
 
