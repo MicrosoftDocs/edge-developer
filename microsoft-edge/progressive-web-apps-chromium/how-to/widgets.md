@@ -324,7 +324,7 @@ See the [Service Worker API reference](#service-worker-api-reference) below for 
 <!-- ====================================================================== -->
 ## Access Widget instances at runtime
 
-Widget instances can be accessed at runtime from your service worker code, which can be useful to update Widgets periodically for instance.
+Widget instances can be accessed at runtime from your service worker code.  For example, this approach can can be useful for updating Widgets periodically.
 
 **TODO: Intro/tutorial.**
 
