@@ -379,7 +379,7 @@ This object represents a given instance of a Widget in a Widget host and contain
 
 * `id`: The internal GUID string used to reference the instance.
 * `host`: An internal pointer to the Widget host that has installed this instance.
-* `settings`: If the Widget has settings, the key/values pairs set for this instance.
+* `settings`: If the Widget has settings, the key/value pairs that are set for this instance.
 * `updated`: A `Date` object that represents the last time when data was sent to the instance.
 * `payload`: A [WidgetPayload object](#widgetpayload-object) that represents the last payload that was sent to this instance.
 
