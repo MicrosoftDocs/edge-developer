@@ -102,7 +102,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
-*  Added support for custom scheme registration which allows WebView2 apps to be able to handle WebResourceRequested event for requests with eh specific scheme and beable to navigate the webView2 control to the custom scheme. 
+*  Added support for custom scheme registration which allows WebView2 apps to be able to handle WebResourceRequested event for requests with the specified scheme and be able to navigate the WebView2 control to the custom scheme. 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
