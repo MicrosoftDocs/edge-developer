@@ -36,6 +36,109 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
+<!-- ====================================================================== -->
+## 1.0.1293.44
+
+Release Date: August 8, 2022
+
+[NuGet package for WebView2 SDK 1.0.1293.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1293.44)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 104.0.1293.44 or higher.
+
+### General
+
+#### Promotions
+
+The following items are now stable:
+
+* The Favicon API:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.FaviconChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconchanged?view=webview2-dotnet-1.0.1293.44&preserve-view=true)
+* [CoreWebView2.FaviconUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconuri?view=webview2-dotnet-1.0.1293.44&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.FaviconChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1293.44&preserve-view=true#faviconchanged)
+* [CoreWebView2.FaviconUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1293.44&preserve-view=true#faviconuri)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_15::FaviconChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#add_faviconchanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#remove_faviconchanged)
+* [ICoreWebView2_15::FaviconUri property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#get_faviconuri)<!--no put-->
+
+
+---
+
+
+<!-- ====================================================================== -->
+## 1.0.1340-prerelease
+
+Release Date: August 8, 2022
+
+[NuGet package for WebView2 SDK 1.0.1340-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1340-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 105.0.1340.0 or higher.
+
+### General
+
+#### Experimental features
+
+*  Added support for webResourceRequested for workers which allows setting filters in order to receive WebResourceRequested events for service workers, shared workers, and different origin iFrames. 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2experimental16](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease)
+*  [ICoreWebView2ExperimentalWebResourceRequestedEventArgs](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs?view=webview2-1.0.1340-prerelease)
+
+---
+
+*  Added support for custom scheme registration which allows WebView2 apps to be able to handle WebResourceRequested event for requests with eh specific scheme and beable to navigate the webView2 control to the custom scheme. 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalEnvironmentOptions](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1340-prerelease)
+* [ICoreWebView2ExperimentalCustomSchemeRegistration](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomschemeregistration?view=webview2-1.0.1340-prerelease)
+
+---
+
+#### Bug fixes
+
+*   Added the ability for developers to explicitly specify the path from which to load the WebView2Loader.dll. ([Issue #767](https://github.com/MicrosoftEdge/WebView2Feedback/issues/767))
+
+*   Added useful error messages when using CallDevToolsProtocolMethod. ([Issue #1609](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1609))  
+
+*   Fixed a bug in finding and loading the WebView2Loader.dll in some .NET apps. ([Issue #2372](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2372))  
+
+*   Fixed bug where DownloadStarting event was not fired when retrying a download. ([Issue #2489](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2489))
+
+*   Fixed an issue in service worker caching if the path was too long. ([Issue #1900](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1900))  
+
+*   Improved handling of running as admin user apps.  
+
+*   Fixed online/offline status and notifications when using WebView2 in UWP apps.  
+
+*   GDI scaling can now be enabled for WebView2.  WebView2 will respect the GDI scaling setting of the hosting 
+application without additional work needed from the app.  ([Issue #1700](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1700))
+
+*   Fixed a bug where focus is not returned to the application after closing find bar for windowed mode. ([Issue #1225](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1225))
 
 <!-- ====================================================================== -->
 ## 1.0.1264.42
