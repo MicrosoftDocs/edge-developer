@@ -2,26 +2,28 @@
 title: Create an extension tutorial, part 2
 description: Dynamically inserting a NASA picture below the page body tag by using content scripts.
 author: MSEdgeTeam
-ms.author: msedgedevrel
+ms.author: v-jandrew    
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/28/2022
+ms.date: 08/05/2022
 ---
 # Create an extension tutorial, part 2
 
-To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).  The source code has been updated from Manifest V2 to Manifest V3.
+To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).  
+
+The source code has been updated from Manifest V2 to Manifest V3.
 
 This tutorial covers the following extension technologies:
-*   Injecting JavaScript libraries into an extension.
+*   Injecting JavaScript libraries into an extension.  
 *   Exposing extension assets to browser tabs.
 *   Including content pages in existing browser tabs.
 *   Having content pages listen for messages from pop-ups and respond.
 
-You'll learn to update your pop-up menu to replace your static stars image with a title and a standard HTML button.  That button, when selected, passes that stars image, which is embedded in the extension, to the content page.  That image, is inserted into the active browser tab. Follow the below steps for further details.
+You'll learn to update your pop-up menu to replace your static stars image with a title and a standard HTML button.  That button, when selected, passes that star’s image to the content page.  This image is now embedded in the extension and inserted into the active browser tab. Here are the steps.
 
-1.  Remove the image from the pop-up and replace it with a button.
+## Remove the image from the pop-up and replace it with a button.
 
-First, update your `popup.html` file with some straightforward markup that displays a title and a button.  You'll program that button shortly, but for now, just include a reference to an empty JavaScript file `popup.js`.  Here is the updated HTML:
+Update your `popup.html` file with some straightforward markup that displays a title and a button.  You'll later program that button in a different step, but for now include a reference to an empty JavaScript file `popup.js`.  Below is a sample updated HTML:
 
 ```html
 <html>
@@ -56,15 +58,15 @@ After updating and opening the extension, a pop-up opens with a display button.
 
 <!--![popup.html display after selecting the Extension icon] -->
 
-2.  Update strategy to display image at the top of the browser tab
+## Update strategy to display image at the top of the browser tab
 
 After adding the button, the next task is to make it bring up the `images/stars.jpeg` image file at the top of the active tab page.
 
-Remember, each tab page runs in its own thread. Also, the extension uses a different thread.  First, create a content script that is injected into the tab page.  Then, send a message from your pop-up to that content script running on the tab page. The content script receives the message, which describes which image should be displayed.
+Each tab page (and extension) runs in its own thread. Create a content script that is injected into the tab page.  Then, send a message from your pop-up to that content script running on the tab page. The content script will receive the message, which describes which image should be displayed.
 
-3. Create the pop-up JavaScript to send a message
+## Create the pop-up JavaScript to send a message
 
-First, create `popup/popup.js` and add code to send a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up display button:
+Create the `popup/popup.js` and add code to send a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up display button:
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -77,7 +79,7 @@ if (sendMessageId) {
 
 In the `onclick` event, find the current browser tab.  Then, use the `chrome.tabs.sendmessage` Extension API to send a message to that tab.
 
-In that message, you must include the URL to the image you want to display.  Also, send a unique ID to assign to the inserted image.  You could let the content insertion JavaScript generate that image ID, but for reasons that become apparent later, you'll generate that unique ID here in `popup.js`, and then pass that ID to the not-yet-created content script.
+In that message, you must include the URL to the image you want to display.  Ensure that you send a unique ID to assign to the inserted image.  Let the content insertion JavaScript generate that image ID in `popup.js`, and then pass that ID to the not-yet-created content script.
 
 The following code outlines the updated code in `popup/popup.js`.  You also pass in the current tab ID, which is used later in this article:
 
@@ -141,9 +143,9 @@ if (sendMessageId) {
 
 ---
 
-4. Make your `stars.jpeg` available from any browser tab
+## Make your `stars.jpeg` available from any browser tab
 
-You're probably wondering why, when you pass the `images/stars.jpeg` must you use the `chrome.runtime.getURL` (or `chrome.extension.getURL` while using Manifest V2) API instead of just passing in the relative URL without the extra prefix like in the previous section.  By the way, that extra prefix, returned by `getUrl` with the image attached looks something like the following:
+This is why the `images/stars.jpeg` must use the `chrome.runtime.getURL` (or `chrome.extension.getURL` while using Manifest V2) API instead of just passing in the relative URL without the extra prefix like in the previous section.  The extra prefix, returned by `getUrl` with the image attached, should look something like the following:
 
 ```http
 extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
@@ -176,7 +178,7 @@ Add another entry in the `manifest.json` file to declare that the image is avail
 
 You've now written the code in your `popup.js` file to send a message to the content page that is embedded on the current active tab page, but you haven't created and injected that content page.  Do that now.
 
-5.  Update your `manifest.json` for content and web access
+## Update your `manifest.json` for content and web access
 
 The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows:
 
@@ -247,15 +249,15 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
 
 ---
 
-The section you added is `content_scripts`.  The `matches` attribute is set to `<all_urls>`, which means that all files in `content_scripts` are injected into all browser tab pages when each tab is loaded.  The allowed files types that can be injected are JavaScript and CSS.  You also added `lib\jquery.min.js`.  You're able to include that from the download mentioned at the top of the section.
+The `matches` attribute is set to `<all_urls>`, which means that all files in `content_scripts` are injected into all browser tab pages when each tab is loaded.  The allowed files types that can be injected are JavaScript and CSS.  You also added `lib\jquery.min.js`.  You're able to include that from the download mentioned at the top of the section.
 
-6. Add jQuery and understanding the associated thread
+## Add jQuery and understanding the associated thread
 
 In the content scripts that you're injecting, plan on using jQuery (`$`).  You added a minified version of jQuery and put it in your Extension package as `lib\jquery.min.js`.  These content scripts run in individual sandboxes, which means that the jQuery injected into the `popup.js` page isn't shared with the content.
 
 Keep in mind that even if the browser tab has JavaScript running on it on the loaded web page, any content injected doesn't have access to that.  That injected JavaScript just has access to the actual DOM loaded in that browser tab.
 
-7. Add the content script message listener
+## Add the content script message listener
 
 Here is that `content-scripts\content.js` file that gets injected into every browser tab page based on your `manifest.json` `content-scripts` section:
 
