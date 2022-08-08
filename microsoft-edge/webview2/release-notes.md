@@ -127,9 +127,13 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 *   Fixed a bug in finding and loading the WebView2Loader.dll in some .NET apps. ([Issue #2372](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2372))  
 
-*   Fixed bug where DownloadStarting event was not fired when retrying a download. ([Issue #2489](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2489))
+*   Fixed a bug where DownloadStarting event was not fired when retrying a download. ([Issue #2489](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2489))
 
 *   Fixed an issue in service worker caching if the path was too long. ([Issue #1900](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1900))  
+
+*    Improved performance for wv2winrt IMap and IMapView projections into JavaScript.
+
+*    Adding support for HWND_MESSAGE to be used as webView2 parent window to support headless scenarios.  ([Issue #202](https://github.com/MicrosoftEdge/WebView2Feedback/issues/202))  
 
 *   Improved handling of running as admin user apps.  
 
