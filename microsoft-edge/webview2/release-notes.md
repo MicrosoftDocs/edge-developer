@@ -132,7 +132,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 *   Added the ability for developers to explicitly specify the path from which to load the WebView2Loader.dll. ([Issue #767](https://github.com/MicrosoftEdge/WebView2Feedback/issues/767))
 
-*   Added useful error messages when using CallDevToolsProtocolMethod. ([Issue #1609](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1609))  
+*   Added useful error messages when using `CallDevToolsProtocolMethod`. ([Issue #1609](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1609))  
+
 
 *   Fixed a bug in finding and loading the WebView2Loader.dll in some .NET apps. ([Issue #2372](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2372))  
 
