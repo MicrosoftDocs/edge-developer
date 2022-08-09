@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/08/2022
+ms.date: 08/09/2022
 ---
 # Release Notes for the WebView2 SDK
 
@@ -16,9 +16,7 @@ Generally, release notes apply across the supported platforms, which are listed 
 
 WebView2 bug fixes, such as the fixes listed below, are either Runtime-specific or SDK-specific.
 
-
-<!-- ====================================================================== -->
-## Recommended browser channel and Runtime
+#### Recommended browser channel and Runtime
 
 Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView2 team recommends the following:
 
@@ -28,13 +26,12 @@ Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet 
 
 For more information, see [Matching the Runtime version with the SDK version](concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version).
 
-
-<!-- ====================================================================== -->
-## Minimum version of the browser or Runtime to load WebView2
+#### Minimum version of the browser or Runtime to load WebView2
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
+
 
 <!-- ====================================================================== -->
 ## 1.0.1293.44
@@ -91,22 +88,19 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 * [CoreWebView2.AddWebResourceRequestedFilterWithRequestSourceKinds Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0#microsoft-web-webview2-core-corewebview2-addwebresourcerequestedfilter)
 * [CoreWebView2.RemoveWebResourceRequestedFilterWithRequestSourceKinds Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2-removewebresourcerequestedfilter)
-* [CoreWebView2.AddWebResourceRequestedFilter Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1340-prerelease)
-* [CoreWebView2WebResourceRequestedEventArgs.RequestedSourceKind Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs.requestedsourcekind?view=webview2-dotnet-1.0.1340-prerelease)
-* [CoreWebView2WebResourceRequestSourceKinds Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestsourcekinds?view=webview2-dotnet-1.0.1340-prerelease)
-
+* [CoreWebView2WebResourceRequestedEventArgs Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs?view=webview2-dotnet-1.0.1340-prerelease)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2.AddWebResourceRequestedFilterWithRequestSourceKinds Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1340-prerelease#addwebresourcerequestedfilter)
-* [CoreWebView2.RemoveWebResourceRequestedFilter Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1340-prerelease#removewebresourcerequestedfilter)
-
+* [CoreWebView2.RemoveWebResourceRequestedFilter(requestSourceKinds) Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1340-prerelease#removewebresourcerequestedfilter)
+* [CoreWebView2WebResourceRequestedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs?view=webview2-winrt-1.0.1340-prerelease)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [AddWebResourceRequestedFilterWithRequestSourceKinds method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#addwebresourcerequestedfilterwithrequestsourcekinds)
-* [RemoveWebResourceRequestedFilterWithRequestSourceKinds method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#removewebresourcerequestedfilterwithrequestsourcekinds)
-* [ICoreWebView2ExperimentalWebResourceRequestedEventArgs.RequestedSourceKind property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs?view=webview2-1.0.1340-prerelease&preserve-view=true#get_requestedsourcekind)
+* [ICoreWebView2Experimental16.AddWebResourceRequestedFilterWithRequestSourceKinds method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#addwebresourcerequestedfilterwithrequestsourcekinds)
+* [ICoreWebView2Experimental16.RemoveWebResourceRequestedFilterWithRequestSourceKinds method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#removewebresourcerequestedfilterwithrequestsourcekinds)
+* [ICoreWebView2ExperimentalWebResourceRequestedEventArgs interface](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs?view=webview2-1.0.1340-prerelease&preserve-view=true)
 
 
 ---
@@ -115,16 +109,18 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-
+* [CoreWebView2EnvironmentOptions Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2?view=webview2-dotnet-1.0.1340-prerelease)
+* [CoreWebView2CustomSchemeRegistration Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2customschemeregistration?view=webview2-dotnet-1.0.1340-prerelease)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-
+* [CoreWebView2EnvironmentOptions Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1340-prerelease)
+* [CoreWebView2CustomSchemeRegistration Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.1340-prerelease)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ExperimentalEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1340-prerelease&preserve-view=true)
-* [ICoreWebView2ExperimentalCustomSchemeRegistration](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomschemeregistration?view=webview2-1.0.1340-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalEnvironmentOptions interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1340-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalCustomSchemeRegistration interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomschemeregistration?view=webview2-1.0.1340-prerelease&preserve-view=true)
 
 ---
 
@@ -134,25 +130,25 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 *   Added useful error messages when using `CallDevToolsProtocolMethod`. ([Issue #1609](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1609))  
 
+*   Fixed a bug in finding and loading the `WebView2Loader.dll` in some .NET apps. ([Issue #2372](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2372))  
 
-*   Fixed a bug in finding and loading the WebView2Loader.dll in some .NET apps. ([Issue #2372](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2372))  
-
-*   Fixed a bug where DownloadStarting event was not fired when retrying a download. ([Issue #2489](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2489))
+*   Fixed a bug where `DownloadStarting` event was not fired when retrying a download. ([Issue #2489](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2489))
 
 *   Fixed an issue in service worker caching if the path was too long. ([Issue #1900](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1900))  
 
-*    Improved performance for wv2winrt IMap and IMapView projections into JavaScript.
+*   Improved performance for wv2winrt `IMap` and `IMapView` projections into JavaScript.
 
-*    Adding support for HWND_MESSAGE to be used as webView2 parent window to support headless scenarios.  ([Issue #202](https://github.com/MicrosoftEdge/WebView2Feedback/issues/202))  
+*   Adding support for HWND_MESSAGE to be used as WebView2 parent window to support headless scenarios.  ([Issue #202](https://github.com/MicrosoftEdge/WebView2Feedback/issues/202))
 
-*   Improved handling of running as admin user apps.  
+*   Improved handling of running as admin user apps.
 
-*   Fixed online/offline status and notifications when using WebView2 in UWP apps.  
+*   Fixed online/offline status and notifications when using WebView2 in UWP apps.
 
 *   GDI scaling can now be enabled for WebView2.  WebView2 will respect the GDI scaling setting of the hosting 
 application without additional work needed from the app.  ([Issue #1700](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1700))
 
-*   Fixed a bug where focus is not returned to the application after closing find bar for windowed mode. ([Issue #1225](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1225))
+*   Fixed a bug where focus is not returned to the application after closing the find bar for windowed mode. ([Issue #1225](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1225))
+
 
 <!-- ====================================================================== -->
 ## 1.0.1264.42
