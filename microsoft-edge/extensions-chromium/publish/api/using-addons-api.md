@@ -17,9 +17,9 @@ To submit suggestions and feedback, enter an [Issue about the Add-ons API](https
 <!-- ====================================================================== -->
 ## Library Support
 
-| Language | Package | Source code |
-| --- | --- | --- |
-| Node.js | [Edge Webstore Upload](https://www.npmjs.com/package/@plasmo-corp/ewu) | [Github](https://github.com/plasmo-corp/edge-webstore-upload)|
+| Language | Package | Source code | Notes |
+| --- | --- | --- | --- |
+| Node.js | [Edge Webstore Upload](https://www.npmjs.com/package/@plasmo-corp/ewu) | [Github](https://github.com/plasmo-corp/edge-webstore-upload)| This is a 3rd party library. Microsoft makes no warranties, express or implied, with respect to the information provided here. |
 
 
 <!-- ====================================================================== -->
