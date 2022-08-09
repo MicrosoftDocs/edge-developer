@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/05/2022
+ms.date: 08/08/2022
 ---
 # Release Notes for the WebView2 SDK
 
@@ -85,24 +85,32 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Experimental features
 
-*  Added support for webResourceRequested for workers which allows setting filters in order to receive WebResourceRequested events for service workers, shared workers, and different origin iFrames. 
+*  Added support for `WebResourceRequested` for workers which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iFrames. 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* [CoreWebView2.AddWebResourceRequestedFilterWithRequestSourceKinds Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0#microsoft-web-webview2-core-corewebview2-addwebresourcerequestedfilter)
+* [CoreWebView2.RemoveWebResourceRequestedFilterWithRequestSourceKinds Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2-removewebresourcerequestedfilter)
+* [CoreWebView2.AddWebResourceRequestedFilter Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1340-prerelease)
+* [CoreWebView2WebResourceRequestedEventArgs.RequestedSourceKind Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs.requestedsourcekind?view=webview2-dotnet-1.0.1340-prerelease)
+* [CoreWebView2WebResourceRequestSourceKinds Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestsourcekinds?view=webview2-dotnet-1.0.1340-prerelease)
 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+* [CoreWebView2.AddWebResourceRequestedFilterWithRequestSourceKinds Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1340-prerelease#addwebresourcerequestedfilter)
+* [CoreWebView2.RemoveWebResourceRequestedFilter Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1340-prerelease#removewebresourcerequestedfilter)
 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2experimental16](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease)
-*  [ICoreWebView2ExperimentalWebResourceRequestedEventArgs](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs?view=webview2-1.0.1340-prerelease)
+* [AddWebResourceRequestedFilterWithRequestSourceKinds method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#addwebresourcerequestedfilterwithrequestsourcekinds)
+* [RemoveWebResourceRequestedFilterWithRequestSourceKinds method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#removewebresourcerequestedfilterwithrequestsourcekinds)
+* [ICoreWebView2ExperimentalWebResourceRequestedEventArgs.RequestedSourceKind property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs?view=webview2-1.0.1340-prerelease&preserve-view=true#get_requestedsourcekind:~:text=Descriptions-,get_RequestedSourceKind,-The%20web%20resource)
 
 ---
 
-*  Added support for custom scheme registration which allows WebView2 apps to be able to handle WebResourceRequested event for requests with the specified scheme and be able to navigate the WebView2 control to the custom scheme. 
+*  Added support for custom scheme registration which allows WebView2 apps to be able to handle `WebResourceRequested` event for requests with the specified scheme and be able to navigate the WebView2 control to the custom scheme. 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -114,8 +122,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ExperimentalEnvironmentOptions](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1340-prerelease)
-* [ICoreWebView2ExperimentalCustomSchemeRegistration](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomschemeregistration?view=webview2-1.0.1340-prerelease)
+* [ICoreWebView2ExperimentalEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1340-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalCustomSchemeRegistration](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomschemeregistration?view=webview2-1.0.1340-prerelease&preserve-view=true)
 
 ---
 
