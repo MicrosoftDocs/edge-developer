@@ -1,18 +1,21 @@
 ---
-title: "WebView2 sample: WiX Custom Action to deploy the WebView2 Runtime"
+title: WiX Custom Action to deploy the WebView2 Runtime
 description: A WebView2 sample demonstrating how to use a WiX Custom Action to deploy the WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/18/2022
+ms.date: 04/27/2022
 ---
-# WebView2 sample: WiX Custom Action to deploy the WebView2 Runtime
+# WiX Custom Action to deploy the WebView2 Runtime
 
 This is a WebView2 sample demonstrating how to use a WiX Custom Action to deploy the WebView2 Runtime.
 
-Directory &amp; .proj: **WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCustomActionSample.wixproj** (no .sln)
+
+*  Sample name: **WV2DeploymentWiXCustomActionSample**
+*  Repo directory: **WV2DeploymentWiXCustomActionSample**
+*  Project file: **WV2DeploymentWiXCustomActionSample.wixproj**
 
 
 <!-- ====================================================================== -->
@@ -20,11 +23,11 @@ Directory &amp; .proj: **WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCust
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXCustomActionSample#readme).  Then return to this page and continue the steps below.
+1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme).  Then return to this page and continue the steps below.
 
-   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXCustomActionSample#prerequisites)
+   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#prerequisites)
 
-   * [README > Build steps](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXCustomActionSample#build-steps)
+   * [README > Build steps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#build-steps)
 
    You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:<!-- todo: is there a .md preview capability locally? -->
 
@@ -32,7 +35,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentWiXCustomActionSample/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentWiXCustomActionSample/README.md`
 
 
 <!-- ====================================================================== -->
@@ -64,7 +67,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCustomActionSample.sln` -->
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCustomActionSample.sln` -->
 
 
 <!-- ====================================================================== -->
@@ -89,7 +92,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    <!-- The sample app window opens. -->
 
-<!-- 1. In the sample app window, use the sample app.  In the Visual Studio code editor, inspect the code; see [README file for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXCustomActionSample#readme). -->
+<!-- 1. In the sample app window, use the sample app.  In the Visual Studio code editor, inspect the code; see [README file for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme). -->
 
 <!-- 1. Close the sample app window. -->
 
@@ -97,4 +100,4 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## See also
 
-* [README file for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXCustomActionSample#readme)
+* [README file for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme)

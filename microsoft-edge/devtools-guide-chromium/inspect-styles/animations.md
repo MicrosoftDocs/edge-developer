@@ -25,7 +25,7 @@ ms.date: 05/11/2021
 
 Inspect and modify CSS animation effects by using the **Animation Inspector** in the **Animations** tool.
 
-:::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="The Animations tool." lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
+![The Animations tool.](../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png)
 
 ### Summary
 
@@ -61,7 +61,7 @@ To open the Animation Inspector, use any of these approaches, in DevTools:
 
 *  From the **main toolbar** or on the **Drawer**: click the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button, and then select **Animations**.
 
-   :::image type="content" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animations using Main Menu." lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
+   ![Animations using Main Menu.](../media/inspect-styles-elements-styles-more-tools-animations.msft.png)
 
 *  From the **Customize** menu: Click the **Customize and control DevTools** (![Customize icon.](../media/customize-devtools-icon-light-theme.png)) menu button, point to the **More tools** sub-menu, and then select **Animations**.
 
@@ -69,7 +69,7 @@ To open the Animation Inspector, use any of these approaches, in DevTools:
 
 By default, the **Animations** tool opens in the **Drawer**, next to the **Console** tool.  By using the **Animations** tool on the **Drawer**, you can use it at the same time as using another tools on the main toolbar.
 
-:::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Empty Animation Inspector." lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
+![Empty Animation Inspector.](../media/inspect-styles-elements-styles-drawer-animations.msft.png)
 
 The Animation Inspector is grouped into four main sections (or panes).  This guide refers to each pane as follows:
 
@@ -80,13 +80,13 @@ The Animation Inspector is grouped into four main sections (or panes).  This gui
 | 3 | **Timeline** | Pause and start an animation from here, or jump to a specific point in the animation. |
 | 4 | **Details** | Inspect and modify the currently selected Animation Group. |
 
-:::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="Annotated Animation Inspector." lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
+![Annotated Animation Inspector.](../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png)
 
 To capture an animation, just perform the interaction that triggers the animation while the Animation Inspector is open.  If an animation is triggered on page load, refresh the page with the Animation Inspector open to detect the animation.
 
 <!--  old link: <video src="animations/capture-animations.mp4" autoplay loop muted controls></video>  -->
 
-<!--  import the video to ACOM using https://review.docs.microsoft.com/en-us/help/contribute/contribute-video-publish?branch=master  -->
+<!--  import the video to ACOM using https://review.docs.microsoft.com/help/contribute/contribute-video-publish  -->
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->
 
@@ -104,19 +104,19 @@ After you capture an animation, there are a few ways to replay it:
 
 After you capture an Animation Group, click on it from the **Overview** pane to view the details.  In the **Details** pane, each individual animation is assigned to a row.
 
-:::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Animation Group details." lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
+![Animation Group details.](../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png)
 
 Hover on an animation to highlight it in the viewport.  Click on the animation to select it in the **Elements** tool.
 
-:::image type="content" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Hover on the animation to highlight it in viewport." lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
+![Hover on the animation to highlight it in viewport.](../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png)
 
 The leftmost, darker section of an animation is its definition.  The right, more faded section represents iterations.  For example, in the following figure, sections two and three represent iterations of section one:
 
-:::image type="content" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="Diagram of animation iterations." lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
+![Diagram of animation iterations.](../media/inspect-styles-glitch-display-animations-highlight.msft.png)
 
 If two elements have the same animation applied to them, the Animation Inspector assigns the same color to the elements.  The color is random and has no significance.  For example, in the following figure, the two elements `div.cwccw.earlier` and `div.cwccw.later` have the same animation (`spinrightleft`) applied, as do the `div.ccwcw.earlier` and `div.ccwcw.later` elements.
 
-:::image type="content" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="Color-coded animations." lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
+![Color-coded animations.](../media/inspect-styles-glitch-display-animations.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -130,25 +130,25 @@ There are three ways you can modify an animation with the Animation Inspector:
 
 For this section, suppose that the screenshot below represents the original animation:
 
-:::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="Original animation before modification." lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
+![Original animation before modification.](../media/inspect-styles-glitch-spin-animations-console-animations.msft.png)
 
 To change the duration of an animation, click and drag the first or last circle.
 
-:::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="Modified duration." lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
+![Modified duration.](../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png)
 
 If the animation defines any keyframe rules, then these are represented as white-filled inner circles.  Click and drag a white-filled inner circle to change the timing of the keyframe:
 
-:::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="Modified keyframe." lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
+![Modified keyframe.](../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png)
 
 To add a delay to an animation, click the animation anywhere except the circles, and drag it:
 
-:::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="Modified delay." lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
+![Modified delay.](../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/css/animations/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

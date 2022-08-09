@@ -31,11 +31,11 @@ As an example, on the demo page, the blue links of the sidebar navigation menu h
 
 1. In the rendered webpage, hover over the blue **Cats** link of the sidebar navigation menu.  The **Inspect** tool's information overlay appears.  In the **Accessibility** section of the information overlay, a green checkmark appears on the **Contrast** row, indicating that this element has enough contrast of text color versus background color.
 
-   :::image type="content" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The menu items have enough contrast, as shown in the Inspect tool." lightbox="../media/a11y-testing-enough-contrast.msft.png":::
+   ![The menu items have enough contrast, as shown in the Inspect tool.](../media/a11y-testing-enough-contrast.msft.png)
 
 1. In the rendered webpage, in the **Donation Status** section, hover over the **Dogs** link.  The **Inspect** tool's information overlay shows an orange exclamation point on the **Contrast** row, indicating that this element doesn't have enough contrast of text versus background colors.
 
-   :::image type="content" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="An element that doesn't have enough contrast, as shown by the warning in the Inspect tool." lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
+   ![An element that doesn't have enough contrast, as shown by the warning in the Inspect tool.](../media/a11y-testing-not-enough-contrast.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -47,7 +47,7 @@ Use the following DevTools features to inspect text-color contrast.
 
 *  The **Issues** tool automatically reports any color-contrast issues for the entire webpage, when text and background color don't contrast enough.  This approach is described in [Verify that text colors have enough contrast](test-issues-tool.md#verify-that-text-colors-have-enough-contrast).
 
-*  Emulate a non-default state, such as the `hover` state, by using **Toggle Element State** in the **Styles** pane, described in [Verify accessibility of all states of elements](test-inspect-states.md).
+*  Emulate a non-default state, such as the `hover` state.  To do this, click the **Toggle Element State** button in the **Styles** pane, which displays the **Force element state** checkboxes section.  This feature is described in [Verify accessibility of all states of elements](test-inspect-states.md).
 
 
 <!-- ====================================================================== -->

@@ -33,7 +33,6 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
 
-
 # =============================================================================
 # Limits
 
@@ -41,12 +40,10 @@ landingContent:
 # Number of linkListType in a card: 1-6
 # Number of links in a linkListType: 1-10
 
-# https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-landing-page?branch=main
-
+# https://review.docs.microsoft.com/help/contribute/contribute-how-to-write-landing-page?branch=main
 
 # =============================================================================
 # Row 1 with 3 cards
-
 # =============================================================================
 # Card r1c1
   - title: Microsoft Edge DevTools
@@ -61,9 +58,6 @@ landingContent:
 
           - text: Overview of DevTools  # renamed from index.md
             url: /microsoft-edge/devtools-guide-chromium/overview
-
-          - text: DevTools for beginners
-            url: /microsoft-edge/devtools-guide-chromium/beginners/html
 
       - linkListType: whats-new
         links:
@@ -82,9 +76,16 @@ landingContent:
         links:
           - text: Keyboard shortcuts
             url: /microsoft-edge/devtools-guide-chromium/shortcuts
-
 # =============================================================================
 # Card r1c2
+  - title: DevTools for Visual Studio Code
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: DevTools extension for Visual Studio Code
+            url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
+# =============================================================================
+# Card r1c3
   - title: Microsoft Edge extensions
     linkLists:
       - linkListType: overview
@@ -110,10 +111,10 @@ landingContent:
 
           - text: Create a simple extension
             url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
-
-
 # =============================================================================
-# Card r1c3
+# Row 2 with 3 cards
+# =============================================================================
+# Card r2c1
   - title: Progressive Web Apps
     linkLists:
       - linkListType: overview
@@ -142,58 +143,8 @@ landingContent:
 
           - text: Web App Manifests
             url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
-
-# =============================================================================
-# Row 2 with 3 cards
-
-# =============================================================================
-# Card r2c1
-  - title: Test and automation
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Test and automation in Microsoft Edge  # new firstchild article
-            url: /microsoft-edge/test-and-automation/test-and-automation
-
-          - text: DevTools Protocol
-            url: /microsoft-edge/devtools-protocol-chromium
-
-          - text: Origin Trials
-            url: /microsoft-edge/origin-trials/index
-
-          - text: Playwright
-            url: /microsoft-edge/playwright/index
-
-          - text: Puppeteer
-            url: /microsoft-edge/puppeteer
-
-          - text: WebDriver
-            url: /microsoft-edge/webdriver-chromium
-
-          - text: webhint extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/webhint
-
-
 # =============================================================================
 # Card r2c2
-  - title: Web platform
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Web platform overview  # new firstchild article
-            url: /microsoft-edge/web-platform/web-platform
-
-          - text: Site compatibility-impacting changes
-            url: /microsoft-edge/web-platform/site-impacting-changes
-
-          - text: Detect Microsoft Edge from your website
-            url: /microsoft-edge/web-platform/user-agent-guidance
-
-          - text: Detect Windows 11 using User-Agent Client Hints
-            url: /microsoft-edge/web-platform/how-to-detect-win11
-
-# =============================================================================
-# Card r2c3 - tall, avoid placing in col 1; fits in col 3 b/c 3rd row only has col 1 & 2 filled
   - title: WebView2
     linkLists:
       - linkListType: overview
@@ -222,32 +173,41 @@ landingContent:
         links:
           - text: WebView2 API Reference
             url: /microsoft-edge/webview2/webview2-api-reference
-
 # =============================================================================
-# Row 3 with 2 cards
+# Card r2c3
+  - title: Web platform
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Web platform overview  # new firstchild article
+            url: /microsoft-edge/web-platform/web-platform
 
+          - text: Site compatibility-impacting changes
+            url: /microsoft-edge/web-platform/site-impacting-changes
+
+          - text: Detect Microsoft Edge from your website
+            url: /microsoft-edge/web-platform/user-agent-guidance
+
+          - text: Detect Windows 11 using User-Agent Client Hints
+            url: /microsoft-edge/web-platform/how-to-detect-win11
+# =============================================================================
+# Row 3 with 3 cards
 # =============================================================================
 # Card r3c1
   - title: Microsoft Edge IDE integration
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Edge IDE integration  # new firstchild article
+          - text: Microsoft Edge IDE integration
             url: /microsoft-edge/visual-studio-code/ide-integration
-
-          - text: Visual Studio Code for web development
-            url: /microsoft-edge/visual-studio-code/
-
-          - text: DevTools extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
-
-          - text: webhint extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/webhint
-
+          - text: Debug Microsoft Edge in Visual Studio Code
+            url: /microsoft-edge/visual-studio-code/debugger-for-edge
+      - linkListType: how-to-guide
+        links:
+          - text: Open source files in Visual Studio Code
+            url: /microsoft-edge/devtools-guide-chromium/sources/opening-sources-in-vscode
           - text: Visual Studio for web development
             url: /microsoft-edge/visual-studio/
-
-
 # =============================================================================
 # Card r3c2
   - title: Accessibility in Microsoft Edge
@@ -256,13 +216,37 @@ landingContent:
         links:
           - text: Accessibility-testing features
             url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
-
           - text: Accessibility in Microsoft Edge
             url: /microsoft-edge/accessibility/
       - linkListType: how-to-guide
         links:
           - text: Overview of accessibility testing using DevTools
             url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
-
           - text: Accessibility testing
             url: /microsoft-edge/accessibility/test
+# =============================================================================
+# Card r3c3
+  - title: Test and automation
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Test and automation in Microsoft Edge  # new firstchild article
+            url: /microsoft-edge/test-and-automation/test-and-automation
+
+          - text: DevTools Protocol
+            url: /microsoft-edge/devtools-protocol-chromium
+
+          - text: Origin Trials
+            url: /microsoft-edge/origin-trials/index
+
+          - text: Playwright
+            url: /microsoft-edge/playwright/index
+
+          - text: Puppeteer
+            url: /microsoft-edge/puppeteer
+
+          - text: WebDriver
+            url: /microsoft-edge/webdriver-chromium
+
+          - text: webhint extension for Visual Studio Code
+            url: /microsoft-edge/visual-studio-code/webhint

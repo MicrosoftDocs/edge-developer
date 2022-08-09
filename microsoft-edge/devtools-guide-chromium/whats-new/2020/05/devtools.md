@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 84)
-description: Use the DevTools in Windows high contrast mode, match keyboard shortcuts in the DevTools to Visual Studio Code, and more.
+description: Use DevTools in Windows high contrast mode, match keyboard shortcuts in DevTools to Visual Studio Code, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -22,30 +22,37 @@ ms.date: 12/13/2021
    limitations under the License.  -->
 # What's new in DevTools (Microsoft Edge 84)
 
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://aka.ms/microsoftedge) and [follow us on Twitter](https://aka.ms/twitter/edgedevtools).
 
+<!-- ====================================================================== -->
 ### Use the DevTools in Windows high contrast mode
 
-The Microsoft Edge DevTools are now displayed in high contrast mode when Windows is in high contrast mode.
+Microsoft Edge DevTools is now displayed in high-contrast mode when Windows is in high-contrast mode.
 
-:::image type="content" source="../../media/2020/05/high-contrast.msft.png" alt-text="The Microsoft Edge DevTools in high-contrast mode." lightbox="../../media/2020/05/high-contrast.msft.png":::
+![The Microsoft Edge DevTools in high-contrast mode.](../../media/2020/05/high-contrast.msft.png)
 
-[Follow the instructions to turn on high contrast mode in Windows](https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off).  To open the DevTools in Microsoft Edge, select `F12` or `Ctrl`+`Shift`+`I`.  The DevTools are displayed in high contrast mode.
+[Follow the instructions to turn on high-contrast mode in Windows](https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off).  To open DevTools in Microsoft Edge, select `F12` or `Ctrl`+`Shift`+`I`.  DevTools is displayed in high-contrast mode.
 
-> [!NOTE]
-> The Microsoft Edge DevTools currently support high-contrast mode on Windows but not on macOS.
+Note: DevTools currently supports high-contrast mode on Windows, but not on macOS.
 
 Chromium issue [#1048378](https://crbug.com/1048378)
 
+See also:
+* [Apply a color theme to DevTools](../../../customize/theme.md)
+* [Check for contrast issues with dark theme and light theme](../../../accessibility/test-dark-mode.md)
+
+
+<!-- ====================================================================== -->
 ### Match keyboard shortcuts in the DevTools to Visual Studio Code
 
-From your [feedback](../../../contact.md) and the [Chromium public issue tracker](https://bugs.chromium.org/p/chromium/issues/list), the Microsoft Edge DevTools team learned that you wanted the ability to customize keyboard shortcuts in the DevTools.  In Microsoft Edge 84, you are now able to match keyboard shortcuts in the DevTools to [Visual Studio Code](https://code.visualstudio.com/), which is just one of the features the team is working on for shortcut customization.
+From your [feedback](../../../contact.md) and the [Chromium public issue tracker](https://bugs.chromium.org/p/chromium/issues/list), the Microsoft Edge DevTools team learned that you wanted to be able to customize keyboard shortcuts in DevTools.  In Microsoft Edge 84, you can now match keyboard shortcuts in DevTools to [Visual Studio Code](https://code.visualstudio.com/), which is just one of the features the team is working on for shortcut customization.
 
-:::image type="content" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code." lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
+![Match keyboard shortcuts in DevTools to Visual Studio Code.](../../media/2020/05/keyboard-shortcut.msft.png)
 
 To try the experiment:
 
@@ -59,74 +66,92 @@ To try the experiment:
 
 1. Click the **Match shortcuts from preset** dropdown list, select **DevTools (Default)**, and then select **Visual Studio Code**.  
 
-The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.
+The keyboard shortcuts in DevTools now match the shortcuts for equivalent actions in Visual Studio Code.
 
-For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8` but with the **Visual Studio Code** preset, that shortcut is now also `F5`.
+For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) is `F5`.  With the **DevTools (Default)** preset, that same shortcut in DevTools is `F8`, but with the **Visual Studio Code** preset, that shortcut is now also `F5`.
 
 The feature is currently available in Microsoft Edge 84 as an experiment, so please share your [feedback](../../../contact.md) with the team!
 
 Chromium issue [#174309](https://crbug.com/174309)
 
+See also:
+* [Customize keyboard shortcuts](../../../customize/shortcuts.md)
+
+
+<!-- ====================================================================== -->
 ### Remote debug Surface Duo emulators
 
-You are now able to remotely debug your web content running in the [Surface Duo emulator](/dual-screen/android/use-emulator) using the full power of the [Microsoft Edge DevTools](../../../index.md).
+You can now remotely debug your web content that's running in the [Surface Duo emulator](/dual-screen/android/use-emulator) using the full power of Microsoft Edge DevTools.
 
-With the [Surface Duo emulator](/dual-screen/android/use-emulator), you can test how your web content renders on a new class of foldable and dual-screen devices.  The emulator runs the Android operating system and provides the [Microsoft Edge Android app](https://play.google.com/store/apps/details?id=com.microsoft.emmx).  Load your web content in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) and debug it with the [Microsoft Edge DevTools](../../../index.md).
+With the Surface Duo emulator, you can test how your web content renders on a new class of foldable and dual-screen devices.  The emulator runs the Android operating system and provides the [Microsoft Edge Android app](https://play.google.com/store/apps/details?id=com.microsoft.emmx).  Load your web content in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) and debug it with DevTools:
 
-:::image type="content" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="The Microsoft Edge app running on the Surface Duo emulator." lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
+![The Microsoft Edge app running on the Surface Duo emulator.](../../media/2020/05/surface-duo-emulator.msft.png)
 
-The `edge://inspect` page in a desktop instance of [Microsoft Edge](https://www.microsoft.com/edge/) shows the **SurfaceDuoEmulator** with a list of the open tabs or [PWAs](../../../../progressive-web-apps-chromium/index.md) that are running on the [Surface Duo emulator](/dual-screen/android/use-emulator).
+The `edge://inspect` page in a desktop instance of Microsoft Edge shows the **SurfaceDuoEmulator** with a list of the open tabs or [PWAs](../../../../progressive-web-apps-chromium/index.md) that are running on the Surface Duo emulator:
 
-:::image type="content" source="../../media/2020/05/edge-inspect.msft.png" alt-text="The edge://inspect page displays a list of the open tabs in the Microsoft Edge app running on the emulator" lightbox="../../media/2020/05/edge-inspect.msft.png":::
+![The edge://inspect page displays a list of the open tabs in the Microsoft Edge app running on the emulator.](../../media/2020/05/edge-inspect.msft.png)
 
-Click **inspect** for the tab or PWA that you want to debug to open the [Microsoft Edge DevTools](../../../index.md).  [Follow the step-by-step guide to remotely debug your web content on the Surface Duo emulator](../../../remote-debugging/surface-duo-emulator.md).
+Click **inspect** for the tab or PWA that you want to debug, to open DevTools.  Follow the step-by-step guide to remotely debug your web content on the Surface Duo emulator: [Remotely debug Surface Duo emulators](../../../remote-debugging/surface-duo-emulator.md).
 
+
+<!-- ====================================================================== -->
 ### Resize the DevTools drawer more easily
 
-In Microsoft Edge 83 or earlier, you resized the [Devtools Drawer](../../../customize/index.md#drawer) by hovering inside the toolbar of the drawer. The drawer behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it. The following image shows how resizing the drawer worked in Microsoft Edge version 83 or earlier:
+In Microsoft Edge 83 or earlier, you resized the [DevTools Drawer](../../../customize/index.md#drawer) by hovering inside the toolbar of the drawer.  The drawer behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it.  The following image shows how resizing the drawer worked in Microsoft Edge version 83 or earlier:
 
 ![Resizing the DevTools Drawer in Microsoft Edge 83.](../../media/2020/05/drawer-83.msft.png)
 
-Starting with Microsoft Edge 84, you can resize the drawer by hovering over the border. This change aligns the behavior for resizing the DevTools drawer with other panes in DevTools. The following image shows how resizing the drawer works in Microsoft Edge 84 or later:
+Starting with Microsoft Edge 84, you can resize the drawer by hovering over the border.  This change aligns the behavior for resizing the DevTools drawer with other panes in DevTools. The following image shows how resizing the drawer works in Microsoft Edge 84 or later:
 
 ![Resizing the DevTools Drawer in Microsoft Edge 84.](../../media/2020/05/drawer-84.msft.png)
 
 Chromium issue [#1076112](https://crbug.com/1076112)
 
+
+<!-- ====================================================================== -->
 ### Screencasting navigation buttons display focus
 
-When remote debugging an [Android device](../../../remote-debugging/index.md), a [Windows 10 or later device](../../../remote-debugging/windows.md), or a [Surface Duo emulator](../../../remote-debugging/surface-duo-emulator.md), you can toggle screencasting with the ![Toggle Screencast.](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you can navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard-accessible.
+When remote debugging an [Android device](../../../remote-debugging/index.md), a [Windows 10 or later device](../../../remote-debugging/windows.md), or a [Surface Duo emulator](../../../remote-debugging/surface-duo-emulator.md), you can toggle screencasting with the ![Toggle Screencast.](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of DevTools.  With screencasting enabled, you can navigate the tab in Microsoft Edge on the remote device from the DevTools window.
 
-:::image type="content" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Pressing Shift+Tab from the screencasted URL bar puts focus on the Refresh button." lightbox="../../media/2020/05/screencasting-nav.msft.png":::
+In Microsoft Edge 84, these navigation buttons are now also keyboard-accessible.  For example, pressing `Shift`+`Tab` from the screencasted URL bar puts focus on the **Refresh** button:
+
+![Pressing Shift+Tab from the screencasted URL bar puts focus on the Refresh button.](../../media/2020/05/screencasting-nav.msft.png)
 
 Chromium issue [#1081486](https://crbug.com/1081486)
 
+
+<!-- ====================================================================== -->
 ### Network panel Details pane is now accessible
 
 In Microsoft Edge 84, the [Details pane](../../../network/index.md#inspect-the-details-of-the-resource) in the **Network** tool now takes focus when you open it for a resource in the [Network Log](../../../network/index.md#log-network-activity).  This change allows screen readers to read out and interact with the content of the **Details** pane.
 
-:::image type="content" source="../../media/2020/05/network-details.msft.png" alt-text="The Details pane in the Network panel takes focus when opened." lightbox="../../media/2020/05/network-details.msft.png":::
+![The Details pane in the Network panel now takes focus when opened.](../../media/2020/05/network-details.msft.png)
 
 Chromium issue [#963183](https://crbug.com/963183)
 
 
 <!-- ====================================================================== -->
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 The following sections announce additional features available in Microsoft Edge 84 that were contributed to the open source Chromium project.
 
+
+<!-- ====================================================================== -->
 ### Fix site issues with the new Issues tool in the DevTools Drawer
 
-The new **Issues** tool in the DevTools Drawer was built to help reduce the notification fatigue and clutter of the **Console**.  Currently, the **Console** is the central place for website developers, libraries, frameworks, and Microsoft Edge to log messages, warnings, and errors.  The **Issues** tool aggregates warnings from the browser in a structured, aggregated, and actionable way, links to affected resources within Microsoft Edge DevTools, and provides guidance on how to fix the issues.
+The new **Issues** tool in the Drawer at the bottom of DevTools reduces the notification fatigue and clutter of the **Console**.  Currently, the **Console** is the central place for website developers, libraries, frameworks, and Microsoft Edge to log messages, warnings, and errors.  The **Issues** tool aggregates warnings from the browser in a structured, aggregated, and actionable way.  The **Issues** tool links to affected resources within DevTools, and provides guidance on how to fix the issues.
 
-Over time, more and more warnings are surfaced in Microsoft Edge in the **Issues** tool rather than the **Console**, which should help reduce the clutter in the **Console**.
+Over time, more warnings will be surfaced in the **Issues** tool rather than in the **Console**, to streamline the **Console** messages.
 
 To get started, see [Find and fix problems using the Issues tool](../../../issues/index.md).
 
-:::image type="content" source="../../media/2020/05/issues.msft.png" alt-text="The Issues tool in the DevTools Drawer." lightbox="../../media/2020/05/issues.msft.png":::
+![The Issues tool in the DevTools Drawer.](../../media/2020/05/issues.msft.png)
 
 Chromium issue [#1068116](https://crbug.com/1068116)
 
+
+<!-- ====================================================================== -->
 ### View accessibility information in the Inspect Mode tooltip
 
 The **Inspect Mode** tooltip now indicates whether the element has an accessible
@@ -136,12 +161,22 @@ The **Inspect Mode** tooltip now indicates whether the element has an accessible
 <!--todo:  add link name and role (WebdevLabelsText) when section is live  -->
 <!--todo:  add link keyboard-focusable (WebdevControlFocus) when section is live  -->
 
-:::image type="content" source="../../media/2020/05/a11y.msft.png" alt-text="The Inspect Mode tooltip with accessibility information." lightbox="../../media/2020/05/a11y.msft.png":::
+![The Inspect Mode tooltip with accessibility information.](../../media/2020/05/a11y.msft.png)
 
 Chromium issue [#1040025](https://crbug.com/1040025)
 
+See also:
+* [Analyze pages using the Inspect tool](../../../css/inspect.md)
+
+
+<!-- ====================================================================== -->
 ### Performance panel updates
 
+See also:
+* [Performance features reference](../../../evaluate-performance/reference.md)
+
+
+<!-- ====================================================================== -->
 #### View Total Blocking Time information in the footer
 
 After recording your load performance, the **Performance** panel now shows Total Blocking Time (TBT) information in the footer.  TBT is a load performance metric that helps quantify how long a page takes to become usable.  TBT essentially measures how long a page only _appears_ to be usable (because the content is rendered to the screen); but the page isn't actually usable, because JavaScript is blocking the main thread and therefore the page doesn't respond to user input.  TBT is the main metric for approximating First Input Delay.
@@ -156,10 +191,15 @@ Instead, select **Record** ![Record icon.](../../../media/record-icon.msft.png),
 
 If `Total Blocking Time: Unavailable` is displayed, Microsoft Edge DevTools did not get the required information from the internal profiling data in Microsoft Edge.
 
-:::image type="content" source="../../media/2020/05/tbt.msft.png" alt-text="Total Blocking Time information in the footer of a Performance panel recording." lightbox="../../media/2020/05/tbt.msft.png":::
+![Total Blocking Time information in the footer of a Performance panel recording.](../../media/2020/05/tbt.msft.png)
 
 Chromium issue [#1054381](https://crbug.com/1054381)
 
+See also:
+* [Performance features reference](../../../evaluate-performance/reference.md)
+
+
+<!-- ====================================================================== -->
 #### Layout Shift events in the new Experience section
 
 The new **Experience** section of the **Performance** panel helps you detect layout shifts.  Cumulative Layout Shift (CLS) is a metric that helps you quantify unwanted visual instability.
@@ -169,38 +209,63 @@ The new **Experience** section of the **Performance** panel helps you detect lay
 
 Click the **Layout Shift** event to display the details of the layout shift in the **Summary** pane.  Hover on the **Moved from** and **Moved to** fields to visualize where the layout shift occurred.
 
-:::image type="content" source="../../media/2020/05/cls.msft.png" alt-text="The details of a layout shift." lightbox="../../media/2020/05/cls.msft.png":::
+![The details of a layout shift.](../../media/2020/05/cls.msft.png)
 
+See also:
+* [Performance features reference](../../../evaluate-performance/reference.md)
+
+
+<!-- ====================================================================== -->
 ### More accurate promise terminology in the Console
 
 When logging a `Promise`, the **Console** incorrectly provided `PromiseStatus` value set to `resolved`.
 
-:::image type="content" source="../../media/2020/05/resolved.msft.png" alt-text="An example of the Console using the old resolved terminology." lightbox="../../media/2020/05/resolved.msft.png":::
+![An example of the Console using the old resolved terminology.](../../media/2020/05/resolved.msft.png)
 
-The **Console** now uses the term `fulfilled`, which aligns with the `Promise` specification.  For more information about the `Promise` specification, see [States and Fates on GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).
+The **Console** now uses the term `fulfilled`, which aligns with the `Promise` specification.  For more information about the `Promise` specification, see [States and Fates on GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).<!-- changing master to main doesn't work 5/19/2022 -->
 
-:::image type="content" source="../../media/2020/05/fulfilled.msft.png" alt-text="An example of the Console using the new fulfilled terminology." lightbox="../../media/2020/05/fulfilled.msft.png":::
+![An example of the Console using the new fulfilled terminology.](../../media/2020/05/fulfilled.msft.png)
 
 V8 issue [#6751](https://bugs.chromium.org/p/v8/issues/detail?id=6751)
 
+See also:
+* [Console overview](../../../console/index.md)
+
+
+<!-- ====================================================================== -->
 ### Styles pane updates
 
+See also:
+* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+
+
+<!-- ====================================================================== -->
 #### Support for the revert keyword
 
 The autocomplete UI of the **Styles** pane now detects the [revert](https://developer.mozilla.org/docs/Web/CSS/revert) CSS keyword, which reverts the cascaded value of a property to the previous value applied to the styling of the element.
 
-:::image type="content" source="../../media/2020/05/revert.msft.png" alt-text="Setting the value of a property to revert." lightbox="../../media/2020/05/revert.msft.png":::
+![" alt-text="Setting the value of a property to revert.](../../media/2020/05/revert.msft.png)
 
 Chromium issue [#1075437](https://crbug.com/1075437)
 
+See also:
+* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+
+
+<!-- ====================================================================== -->
 #### Image previews
 
 Hover on a `background-image` value in the **Styles** pane to display a preview of the image in a tooltip.
 
-:::image type="content" source="../../media/2020/05/image-preview.msft.png" alt-text="Hovering over a background-image value." lightbox="../../media/2020/05/image-preview.msft.png":::
+![Hovering over a background-image value.](../../media/2020/05/image-preview.msft.png)
 
 Chromium issue [#1040019](https://crbug.com/1040019)
 
+See also:
+* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+
+
+<!-- ====================================================================== -->
 #### Color Picker now uses space-separated functional color notation
 
 [CSS Color Module Level 4](https://drafts.csswg.org/css-color#changes-from-3) specifies that color functions, such as `rgb()`, should support space-separated
@@ -208,7 +273,7 @@ arguments.  For example, `rgb(0, 0, 0)` is equivalent to `rbg(0 0 0)`.
 
 When you select colors with the [Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) or alternate between color representations in the **Styles** pane by holding `Shift` and selecting the `background-color` value, the space-separated argument syntax is displayed.
 
-:::image type="content" source="../../media/2020/05/color.msft.png" alt-text="Using space-separated arguments in the Styles pane." lightbox="../../media/2020/05/color.msft.png":::
+![Using space-separated arguments in the Styles pane.](../../media/2020/05/color.msft.png)
 
 You should also display the syntax in the **Computed** pane and the **Inspect Mode** tooltip.
 
@@ -218,32 +283,34 @@ The space-separated argument syntax has been supported in most browsers for a wh
 
 Chromium issue [#1072952](https://crbug.com/1072952)
 
+
+<!-- ====================================================================== -->
 ### Deprecation of the Properties pane in the Elements panel
 
 The **Properties** pane in the **Elements** tool is deprecated.  Run `console.dir($0)` in the **Console** instead.
 
-:::image type="content" source="../../media/2020/05/properties.msft.png" alt-text="The deprecated Properties pane." lightbox="../../media/2020/05/properties.msft.png":::
+![The deprecated Properties pane.](../../media/2020/05/properties.msft.png)
 
-#### References
+#### Reference
 
 * [console.dir()](../../../console/api.md#dir)
 * [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object)
 
+
+<!-- ====================================================================== -->
 ### App shortcuts support in the Manifest pane
 
-App shortcuts help users quickly start common or recommended tasks within a web app.  The app shortcuts menu is shown only for [Progressive Web Apps](../../../../progressive-web-apps-chromium/index.md) that are installed on the user's desktop or mobile device.
+In the **Application** tool, the **Manifest** page now shows app shortcuts.  App shortcuts help users quickly start common or recommended tasks within a web app.  The app shortcuts menu is shown only for Progressive Web Apps that are installed on the user's desktop or mobile device.
 
 <!-- For more information, see [Get things done quickly with app shortcuts](https://alphabet-dev/app-shortcuts). -->
 
-<!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->
+<!--todo: add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->
 
-:::image type="content" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="App shortcuts in the Manifest pane." lightbox="../../media/2020/05/app-shortcuts.msft.png":::
+![App shortcuts in the Manifest pane of the Application tool.](../../media/2020/05/app-shortcuts.msft.png)
 
-
-<!-- ====================================================================== -->
-## Download the Microsoft Edge preview channels
-
-If you are on Windows or macOS, consider using the [Microsoft Edge preview channels](https://aka.ms/microsoftedge) as your default development browser.  The preview channels give you access to the latest DevTools features.
+See also:
+* [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps-chromium/index.md)
+* [Debug Progressive Web Apps (PWAs)](../../../progressive-web-apps/index.md)
 
 
 <!-- ====================================================================== -->
@@ -251,5 +318,5 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-84) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

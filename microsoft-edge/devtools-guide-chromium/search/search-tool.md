@@ -25,11 +25,11 @@ To quickly open the **Search** tool:
 
 1. In DevTools, press `Esc` to open the Drawer, and then on the Drawer toolbar, select the **Search** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
-   Or, press `Ctrl`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (macOS).
+   Or, press `Ctrl`+`Shift`+`F` (Windows, Linux) or `Command`+`Option`+`F` (macOS).
 
 The **Search** tool appears in the **Drawer**, with a search toolbar:
 
-:::image type="content" source="../media/search-tool/search-tool-first-open-reduced.png" alt-text="The Search tool, with the search toolbar." lightbox="../media/search-tool/search-tool-first-open.png":::
+![The Search tool, with the search toolbar](../media/search-tool/search-tool-first-open.png)
 
 See also [Global keyboard shortcuts](../shortcuts/index.md#global-keyboard-shortcuts).
 
@@ -41,11 +41,11 @@ To open the **Search** tool from the **Command Menu**:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Open the [Command Menu](../command-menu/index.md), by pressing `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).
+1. Open the [Command Menu](../command-menu/index.md), by pressing `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
 
 1. Type `search`, and then press `Enter`.
 
-:::image type="content" source="../media/search-tool/open-search-tool.png" alt-text="The Command Menu with the Show Search item selected.":::
+![The Command Menu with the Show Search item selected.](../media/search-tool/open-search-tool.png)
 
 
 <!-- ====================================================================== -->
@@ -58,7 +58,7 @@ To search for text in the current webpage and its resource files:
 
 The **Search** tool shows the list of matching resources, and highlights the corresponding lines of text.  The number of matching files and lines is also indicated at the bottom of the tool.
 
-:::image type="content" source="../media/search-tool/search-tool-search-results.png" alt-text="Search results displayed in the search tool, with matching text highlighted in yellow.":::
+![Search results displayed in the search tool, with matching text highlighted in yellow.](../media/search-tool/search-tool-search-results.png)
 
 <!-- The search results are pretty-printed. -->
 
@@ -74,9 +74,9 @@ To only find results that match a particular case (lowercase or uppercase charac
 <!-- ====================================================================== -->
 ## Search for regular expressions
 
-You can use regular expressions, including [JavaScript regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), to find matching results.  To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid regular expression in the search input field.
+You can use regular expressions, including [JavaScript regular expressions](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions), to find matching results.  To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid regular expression in the search input field.
 
-:::image type="content" source="../media/search-tool/search-tool-regexp.png" alt-text="Searching for a regular expression.":::
+![Searching for a regular expression.](../media/search-tool/search-tool-regexp.png)
 
 
 <!-- ====================================================================== -->
@@ -84,7 +84,7 @@ You can use regular expressions, including [JavaScript regular expressions](http
 
 After doing a search, click a result line to open the corresponding file.  The **Sources** tool opens in the main panel and loads the resource file, scrolled to the matching line.
 
-:::image type="content" source="../media/search-tool/search-tool-open-in-sources.png" alt-text="Clicking on a search line opens the Sources tool and loads the corresponding resource." lightbox="../media/search-tool/search-tool-open-in-sources.png":::
+![Clicking on a search line opens the Sources tool and loads the corresponding resource.](../media/search-tool/search-tool-open-in-sources.png)
 
 
 <!-- ====================================================================== -->

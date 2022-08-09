@@ -27,7 +27,7 @@ People with low vision might not see areas that are very bright or very dark.  E
 
 Contrast ratio measures the difference in brightness between the foreground and background of text.  If your text has a low contrast ratio, then people with low vision might experience your site as a blank screen.
 
-In DevTools, one way to view the contrast ratio of a text element is to use the Color Picker, from the **Styles** tab of the **Elements** tool.  The Color Picker helps you verify that your text meets recommended contrast ratio levels.
+In DevTools, one way to view the contrast ratio of a text element is to use the [Color Picker](../css/reference.md#change-colors-with-the-color-picker), from the **Styles** tab of the **Elements** tool.  The Color Picker helps you verify that your text meets recommended contrast ratio levels.
 
 **To check the text-color contrast using the Color Picker:**
 
@@ -35,27 +35,33 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
 
 1. In the **DOM Tree**, select the text element that you want to inspect.
 
-   :::image type="content" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspecting a paragraph in the DOM Tree." lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
+   ![Inspecting a paragraph in the DOM Tree.](../media/accessibility-elements-paragraph-highlight.msft.png)
 
 1. On the **Styles** tab, locate the **color** property that's applied to the element, and then select the color square next to the **color** property.
 
-   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="The 'color' property of the element." lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
+   ![The 'color' property of the element.](../media/accessibility-elements-styles-paragraph-highlight-color.msft.png)
 
 1. Examine the **Contrast Ratio** section of the Color Picker.  One check mark means that the element meets the [minimum recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum).  Two check marks means that it meets the [enhanced recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced).
 
-   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="The 'Contrast Ratio' section of the Color Picker shows two check marks and a value of 13.97." lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
+   ![The 'Contrast Ratio' section of the Color Picker shows two check marks and a value of 13.97.](../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png)
 
 1. For more information, select the **Contrast ratio** section to expand it.  In the visual picker at the top of the Color Picker, two lines appear, running across the visual picker, along with a circle for the current color.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color doesn't meet recommendations, then anything on the same side also doesn't meet recommendations.
 
-   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="The 'Contrast Ratio' Line in the visual picker." lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
+   ![The 'Contrast Ratio' Line in the visual picker.](../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png)
 
 1. To try different colors, click within the visual picker, or select a color swatch at the bottom of the Color Picker.
 
 
 <!-- ====================================================================== -->
+## See also
+
+* [Change colors with the Color Picker](../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/accessibility/reference/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

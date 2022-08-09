@@ -34,7 +34,7 @@ Use the **Security** panel to inspect the security of a page.
 
    The **Security** tool (or _panel_) opens:
 
-:::image type="content" source="../media/security-security-overview-secure.msft.png" alt-text="The Security panel." lightbox="../media/security-security-overview-secure.msft.png":::
+![The Security panel.](../media/security-security-overview-secure.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -44,13 +44,13 @@ Use the **Security** panel to inspect the security of a page.
 
 When the main origin of a page isn't secure, the **Security Overview** says **This page is not secure**.
 
-:::image type="content" source="../media/security-security-overview-non-secure.msft.png" alt-text="A non-secure page." lightbox="../media/security-security-overview-non-secure.msft.png":::
+![A non-secure page.](../media/security-security-overview-non-secure.msft.png)
 
 This problem occurs when the URL that you visited was requested over HTTP.  To make it secure you need to request it over HTTPS.  For example, if you look at the URL in your address bar, it probably looks similar to `http://example.com`.  To make it secure the URL should be `https://example.com`.
 
 If you already set up HTTPS on your server, all you need to do to fix this problem is configure your server to redirect all HTTP requests to HTTPS.
 
-If you haven't set up HTTPS on your server, [Let's Encrypt](https://letsencrypt.org) provides a free and relatively-easy way to start the process.  Or, you might consider hosting your site on a CDN.  Most major CDNs host sites on HTTPS by default now.
+If you haven't set up HTTPS on your server, [Let's Encrypt](https://letsencrypt.org) provides a free and relatively easy way to start the process.  Or, you might consider hosting your site on a CDN.  Most major CDNs host sites on HTTPS by default now.
 
 > [!TIP]
 > The [Use HTTPS](https://webhint.io/docs/user-guide/hints/hint-https-only) hint in [webhint](https://webhint.io) can help automate the process of making sure that all HTTP requests are directed to HTTPS.
@@ -59,11 +59,11 @@ If you haven't set up HTTPS on your server, [Let's Encrypt](https://letsencrypt.
 
 **Mixed content**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> means that the main origin of a page is secure, but the page requested resources from non-secure origins.  Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to man-in-the-middle attacks.
 
-:::image type="content" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Mixed content." lightbox="../media/security-security-overview-mixed-secure.msft.png":::
+![Mixed content.](../media/security-security-overview-mixed-secure.msft.png)
 
 In the previous figure, select **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.
 
-:::image type="content" source="../media/security-network-filter.msft.png" alt-text="Mixed resources in the Network Log." lightbox="../media/security-network-filter.msft.png":::
+![Mixed resources in the Network Log.](../media/security-network-filter.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -73,19 +73,19 @@ In the previous figure, select **View 1 request in Network panel** to open the *
 
 From the **Security Overview**, click **View certificate** to quickly inspect the certificate for the main origin.
 
-:::image type="content" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="A main origin certificate." lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+![A main origin certificate.](../media/security-security-overview-secure-view-certificate.msft.png)
 
 ### View origin details
 
 Click one of the entries in the left-hand nav to view the details of the origin.  From the details page you can view connection and certificate information.  Certificate transparency information is also shown when available.
 
-:::image type="content" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Main origin details." lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
+![Main origin details.](../media/security-security-overview-mixed-secure-main-origin.msft.png)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/security/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/security/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

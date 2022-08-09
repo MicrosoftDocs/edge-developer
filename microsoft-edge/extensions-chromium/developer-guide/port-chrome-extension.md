@@ -18,7 +18,7 @@ To port your Chrome extension:
    > [!NOTE]
    > If your extension uses APIs that aren't supported by Microsoft Edge, it might not port directly.
 
-1. In the manifest file, set the `update_URL` field to `https://edge.microsoft.com/extensionwebstorebase/v1/crx`.  The value points to the `.crx` file of your extension in the Microsoft Edge Add-ons website and allows Microsoft Edge to check for extension updates.
+1. Remove the `update_URL` field from the manifest file.
 
 1. If `Chrome` is used in either the name or the description of your extension, rebrand your extension using `Microsoft Edge`.  To pass the certification process, the changes are required.
 

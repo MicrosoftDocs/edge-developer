@@ -9,11 +9,7 @@ ms.date: 03/09/2022
 ---
 # What's New in DevTools (Microsoft Edge 99)
 
-The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of Microsoft Edge DevTools and of the Edge DevTools extension for Microsoft Visual Studio and Visual Studio Code, read these announcements.  To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
-
-If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
-
-To report a problem with DevTools or ask for a new feature, file an issue at the new [Microsoft Edge DevTools feedback repo](https://github.com/MicrosoftEdge/DevTools).
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -78,10 +74,13 @@ See also:
 
 Since [Microsoft Edge 88](../../2020/11/devtools.md#composited-layers-are-now-in-3d-view), the **3D View** tool has provided an improved version of the **Layers** tool.  Now, in Microsoft Edge 99, the functionality in the **Layers** tool has been removed, and the **Layers** tool instead contains a link that redirects you to the Composited Layers view within the **3D View** tool.  You can find all the features that were previously in the **Layers** tool, and more, in the **3D View** tool.
 
+Update: the **Layers** tool has now been removed.
+
 ![The Layers tool now links to the 3D View tool.](../../media/2022/03/layers-3d-view-tool.png)
 <!-- work item > layersmove.gif -->
 
-See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md).
+See also:
+* [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md)
 
 
 <!-- ====================================================================== -->
@@ -108,7 +107,6 @@ After clicking **Unminify** (![Unminify icon.](../../media/2022/03/unminify-icon
 ![Unminified function names in the flame chart in the Performance tool.](../../media/2022/03/unminified-call-stack-performance-tool.png)
 
 See also:
-
 * [Unminifying function names in DevTools performance profiles](https://blogs.windows.com/msedgedev/2022/02/03/unminifying-function-names-in-devtools-performance-profiles/) at the Microsoft Edge Blog.
 * [Display original function names in performance profiles](../../../evaluate-performance/unminify.md).
 
@@ -127,7 +125,8 @@ In previous versions of Microsoft Edge, assistive technology would only announce
 
 ![The 3D View tool.](../../media/2022/03/3d-view-tool.png)
 
-To learn more about how using assistive technology with DevTools, read [Navigate DevTools with assistive technology](../../../accessibility/navigation.md).
+See also:
+* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
 <!-- ====================================================================== -->
@@ -140,6 +139,9 @@ In the **Page** tab of the **Sources** tool, the tree of source folders is now i
 For the history of this feature in the Chromium open-source project, see Issue [1284737](https://crbug.com/1284737).
 
 <!-- https://developer.chrome.com/blog/new-in-devtools-99/#source-tree -->
+
+See also:
+* [Using the Page tab to explore resources that construct the current webpage]() in _Sources tool overview_.
 
 
 <!-- ====================================================================== -->
@@ -166,9 +168,8 @@ Microsoft Edge version 99 also includes the following updates from the Chromium 
 > The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 99)](https://developer.chrome.com/blog/new-in-devtools-99) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
 
 
-
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

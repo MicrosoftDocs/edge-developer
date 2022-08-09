@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
 ---
-
 # Manifest file format for extensions
 
 Every extension for Microsoft Edge has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.  The manifest file includes information such as:
@@ -16,7 +15,7 @@ Every extension for Microsoft Edge has a JSON-formatted manifest file, named `ma
 *  The title of the extension.
 *  The permissions that are needed for the extension to run.
 
-The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, see [Prepare to update your extensions from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
+The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, see [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
 
 
 <!-- ====================================================================== -->
@@ -201,5 +200,5 @@ For reference information about each field, see [Manifest file format (V2)](http
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/extensions/mv3/manifest/).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

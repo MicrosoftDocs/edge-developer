@@ -90,7 +90,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 
 | Action | Windows/Linux | macOS |
 |---|---|---|
-| Go to the line where a property value is declared | Hold `Control`, then click the property value | Hold `Command`, then click the property value |
+| Go to the line where a property value is declared | Hold `Ctrl`, then click the property value | Hold `Command`, then click the property value |
 | Cycle through the RBGA, HSLA, and Hex representations of a color value | Hold `Shift`, then click the **Color Preview** box next to the value | Hold `Shift`, then click the **Color Preview** box next to the value |
 | Select the next / previous property or value | Click a property name or value, then press `Tab` / `Shift`+`Tab` | Click a property name or value, then press `Tab` / `Shift`+`Tab` |
 | Increment / decrement a property value by 0.1 | Click a value, then press `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Click a value, then press `Option`+`Up Arrow` / Option+Down Arrow |
@@ -112,7 +112,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Step over next function call | `F10` or `Ctrl`+`'` | `F10` or `Command`+`'` |
 | Step into next function call | `F11` or `Ctrl`+`;` | `F11` or `Command`+`;` |
 | Step out of current function | `Shift`+`F11` or `Ctrl`+`Shift`+`;` | `Shift`+`F11` or `Command`+`Shift`+`;` |
-| Continue to a [specific line of code while paused](../javascript/breakpoints.md#line-of-code-breakpoints) | Hold `Control`, then click the line of code | Hold `Command`, then click the line of code |
+| Continue to a [specific line of code while paused](../javascript/breakpoints.md#line-of-code-breakpoints) | Hold `Ctrl`, then click the line of code | Hold `Command`, then click the line of code |
 | Select the call frame below / above the currently selected frame | `Ctrl`+`.` / `Ctrl`+`,` | `Ctrl`+`.` / `Ctrl`+`,` |
 | Save changes to local modifications | `Ctrl`+`S` | `Command`+`S` |
 | Save all changes | `Ctrl`+`Alt`+`S` | `Command`+`Option`+`S` |
@@ -178,7 +178,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/shortcuts) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/shortcuts/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

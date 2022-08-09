@@ -26,11 +26,11 @@ To open the Performance monitor:
 
 1. In DevTools, on the main toolbar, select the **Performance monitor** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
-:::image type="content" source="../media/performance-monitor-tool/open-performance-monitor.png" alt-text="The More Tools menu, showing the Performance monitor menu command.":::
+![The More Tools menu, showing the Performance monitor menu command.](../media/performance-monitor-tool/open-performance-monitor.png)
 
 The Performance monitor shows graphs of various performance metrics that update in real time.
 
-:::image type="content" source="../media/performance-monitor-tool/performance-monitor-first-open.png" alt-text="What the Performance monitor tool looks like when it is first opened." lightbox="../media/performance-monitor-tool/performance-monitor-first-open.png":::
+![What the Performance monitor tool looks like when it is first opened.](../media/performance-monitor-tool/performance-monitor-first-open.png)
 
 
 <!-- ====================================================================== -->
@@ -51,4 +51,4 @@ The **Performance monitor** tool shows three performance metrics by default, and
 
 To enable or disable any of the available performance metrics, click the labels in the side bar.
 
-:::image type="content" source="../media/performance-monitor-tool/performance-monitor-metrics.png" alt-text="The Performance monitor sidebar, showing various metrics that can be toggled." lightbox="../media/performance-monitor-tool/performance-monitor-metrics.png":::
+![The Performance monitor sidebar, showing various metrics that can be toggled.](../media/performance-monitor-tool/performance-monitor-metrics.png)

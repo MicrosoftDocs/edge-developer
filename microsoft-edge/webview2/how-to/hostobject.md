@@ -6,13 +6,28 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 2/28/2022
+ms.date: 04/27/2022
 ---
 # Call native-side code from web-side code
 
 WebView2 enables applications to bridge the gap between the web and native sides of an application by enabling an object to be passed to the web. Such objects are defined in the native code and often called *host objects*. They can be projected into JavaScript using the WebView2 `AddHostObjectToScript` API, as described in this document.
 
-Why use `AddHostObjectToScript`?
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.AddHostObjectToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
+
+---
+
+
+#### Why use `AddHostObjectToScript`?
 
   * When developing a WebView2 app, you may encounter a native object whose methods or properties you find useful. You might want to trigger these native object methods from web-side code, or as a result of user interaction on the web side of your app. In addition, you might not want to re-implement your native objects' methods in your web-side code.  The `AddHostObjectToScript` API enables re-use of native-side code by web-side code. 
 
@@ -24,11 +39,12 @@ Scenarios that may benefit from using host objects in script:
 
   * JavaScript is sandboxed, limiting its ability on the native side. For example, if you need to access a file on the native side, you must use the native file system. If you have a native object exposed to JavaScript via `AddHostObjectToScript`, you can use it to manipulate files on the native file system.
 
-This article uses the [WebView2 Win32 sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample) to demonstrate some practical applications of `AddHostObjectToScript`. For more information about how to embed web content into native applications, see [Embed web content into native applications](/microsoft-edge/webview2/how-to/communicate-btwn-web-native).
+This article uses the [WebView2 Win32 sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) to demonstrate some practical applications of `AddHostObjectToScript`. For more information about how to embed web content into native applications, see [Embed web content into native applications](/microsoft-edge/webview2/how-to/communicate-btwn-web-native).
 
-**Preview of the major steps in this article:**
 
-1. Install Visual Studio, install git, clone the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample), and open the solution.
+#### Preview of the major steps in this article
+
+1. Install Visual Studio, install git, clone the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample), and open the solution.
 
 1. Define the host object and implement `IDispatch` so that WebView2 can project/add it to the web side.
 
@@ -136,9 +152,9 @@ Implement all the functions that are defined in your object's interface, as we o
 
 Next, we examine two specific properties that were defined in the IDL, to show how the IDL is related to the `.cpp` file.
 
-1. In Visual Studio **Solution Explorer**, open **WebView2APISample** > **Source Files** > **HostObjectSampleImpl.cpp**.
+1.  In Visual Studio **Solution Explorer**, open **WebView2APISample** > **Source Files** > **HostObjectSampleImpl.cpp**.
 
-1. Compare the property *declarations*, in `HostObjectSample.idl` ...
+1.  Compare the property *declarations*, in `HostObjectSample.idl` ...
  
     ```csharp
     [propget] HRESULT Property([out, retval] BSTR* stringResult);
@@ -260,3 +276,33 @@ To follow along, we use the WebView2 Sample App.
 Congratulations! You have successfully created a host object in your app's native-side code, passed the host object to your app's web-side code, and then used the host object from the app's web-side code.
 
 Now let's see what other APIs there are in the host object ecosystem. For more information about host objects, see [WebView2 Win32 C++ ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1054.31#addhostobjecttoscript&preserve-view=true).
+
+
+<!-- ====================================================================== -->
+## API Reference overview
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.AddHostObjectToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
+* [CoreWebView2.RemoveHostObjectFromScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.removehostobjectfromscript)
+* [CoreWebView2Settings.AreHostObjectsAllowed Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arehostobjectsallowed)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
+* [CoreWebView2.RemoveHostObjectFromScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#removehostobjectfromscript)
+* [CoreWebView2Settings.AreHostObjectsAllowed Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#arehostobjectsallowed)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
+* [ICoreWebView2::RemoveHostObjectFromScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#removehostobjectfromscript)
+* [ICoreWebView2Settings::AreHostObjectsAllowed property (get](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_arehostobjectsallowed), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_arehostobjectsallowed)
+
+---
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Web/Native Interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.

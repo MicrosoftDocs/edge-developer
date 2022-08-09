@@ -1,18 +1,21 @@
 ---
-title: "WebView2 sample: WiX Burn Bundle to deploy Runtime"
+title: WiX Burn Bundle to deploy the WebView2 Runtime
 description: A WebView2 sample demonstrating how to use a WiX Burn Bundle to deploy the WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/18/2022
+ms.date: 04/27/2022
 ---
-# WebView2 sample: WiX Burn Bundle to deploy Runtime
+# WiX Burn Bundle to deploy the WebView2 Runtime
 
 This is a WebView2 sample demonstrating how to use a WiX Burn Bundle to deploy the WebView2 Runtime.
 
-Directory& .proj: **WV2DeploymentWiXBurnBundleSample/WV2DeploymentWiXBurnBundleSample.wixproj** (no .sln)
+
+*  Sample name: **WV2DeploymentWiXBurnBundleSample**
+*  Repo directory: **WV2DeploymentWiXBurnBundleSample**
+*  Project file: **WV2DeploymentWiXBurnBundleSample.wixproj**
 
 
 <!-- ====================================================================== -->
@@ -20,11 +23,11 @@ Directory& .proj: **WV2DeploymentWiXBurnBundleSample/WV2DeploymentWiXBurnBundleS
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 
-1. **README** - In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXBurnBundleSample#readme).  Then return to this page and continue the steps below.
+1. **README** - In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample#readme).  Then return to this page and continue the steps below.
 
-   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXBurnBundleSample#prerequisites)
+   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample#prerequisites)
 
-   * [README > Build steps](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXBurnBundleSample#build-steps)
+   * [README > Build steps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample#build-steps)
 
    You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:<!-- todo: is there a .md preview capability locally? -->
 
@@ -32,7 +35,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md`
 
 
 <!-- ====================================================================== -->
@@ -64,7 +67,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentWiXBurnBundleSample/WV2DeploymentWiXBurnBundleSample.sln` -->
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentWiXBurnBundleSample/WV2DeploymentWiXBurnBundleSample.sln` -->
 
 
 <!-- ====================================================================== -->
@@ -88,7 +91,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    <!-- The sample app window opens. -->
 
-<!-- 1. In the sample app window, use the sample app.  In the Visual Studio code editor, inspect the code; see [README file for WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXBurnBundleSample#readme). -->
+<!-- 1. In the sample app window, use the sample app.  In the Visual Studio code editor, inspect the code; see [README file for WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample#readme). -->
 
 <!-- 1. Close the sample app window. -->
 
@@ -96,4 +99,4 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## See also
 
-[README file for WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXBurnBundleSample#readme)
+[README file for WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample#readme)

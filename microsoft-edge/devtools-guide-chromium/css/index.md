@@ -28,7 +28,7 @@ Follow these interactive tutorial sections to learn the basics of viewing and ch
 <!-- ====================================================================== -->
 ## View the CSS for an element
 
-1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.  To do this, right-click the link, or press and hold `Control` (Windows, Linux) or `Command` (macOS) and then click the link.
+1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.  To do this, right-click the link, or press and hold `Ctrl` (Windows, Linux) or `Command` (macOS) and then click the link.
 
    <!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
 
@@ -36,7 +36,7 @@ Follow these interactive tutorial sections to learn the basics of viewing and ch
 
    In DevTools, on the **Elements** tool, in the **DOM Tree** panel, the `Inspect Me!` element is highlighted.
 
-   :::image type="content" source="../media/css-elements-inspect-me.msft.png" alt-text="The inspected element is highlighted in the DOM Tree." lightbox="../media/css-elements-inspect-me.msft.png":::
+   ![The inspected element is highlighted in the DOM Tree.](../media/css-elements-inspect-me.msft.png)
 
 1. In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.
 
@@ -50,7 +50,7 @@ Follow these interactive tutorial sections to learn the basics of viewing and ch
 
 1. In the `aloha` class, find the value for the `padding` style and copy it.
 
-   :::image type="content" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS classes is applied to the inspected element are highlighted in the Styles panel." lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+   ![CSS classes is applied to the inspected element are highlighted in the Styles panel.](../media/css-elements-inspect-me-styles.msft.png)
 
 1. On the page, in the **Value of `padding`:** text box, enter the value.
 
@@ -74,7 +74,7 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 
     The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** panel:
 
-   :::image type="content" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Add a CSS declaration to the element using the Styles panel." lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+   ![Add a CSS declaration to the element using the Styles panel.](../media/css-elements-add-background-color-to-me-styles-p.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -94,7 +94,7 @@ To display how an element looks when a CSS class is applied to or removed from a
 
    The `color_me` class is applied to the element using the **.cls** section of the **Styles** panel:
 
-   :::image type="content" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="Apply the color_me class to the element." lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
+   ![Apply the color_me class to the element.](../media/css-elements-add-a-class-to-me-styles-cls.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -116,7 +116,7 @@ Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  
 
    Here's the result of toggling the `:hover` pseudostate on an element:
 
-   :::image type="content" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="Toggling the hover pseudostate on an element." lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
+   ![Toggling the hover pseudostate on an element.](../media/css-elements-hover-over-me-styles-hov-hover.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -140,11 +140,11 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
    Hovering over the element's padding:
 
-   :::image type="content" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Hovering over the element's padding." lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
+   ![Hovering over the element's padding.](../media/css-elements-change-my-margin-styles-padding.msft.png)
 
    Changing the element's left margin:
 
-   :::image type="content" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="Changing the element's left margin." lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
+   ![Changing the element's left margin.](../media/css-elements-change-my-margin-styles-margin-edit.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -162,27 +162,27 @@ To debug or test the Media Queries you defined in your CSS:
 
    <!-- todo: update to show new tooltip: -->
 
-   :::image type="content" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Opening the device toolbar." lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
+   ![Opening the device toolbar.](../media/css-elements-media-queries-open-device-toolbar.msft.png)
 
 1. With the device toolbar open, click the `...` menu on the top-right and then select **Show media queries**:
 
-   :::image type="content" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="Showing Media Queries in the Device Toolbar." lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
+   ![Showing Media Queries in the Device Toolbar.](../media/css-elements-media-queries-showing-mq.msft.png)
 
    The colored bars above the webpage represent the different media queries.
        
 1. Hover on the boundaries in the bars to display the values of the different media queries.  Click each media query value to resize the web page to match.
 
-   :::image type="content" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="Selecting a media query from the preview bar." lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
+   ![Selecting a media query from the preview bar.](../media/css-elements-media-queries-select-bar.msft.png)
 
 1. To debug media queries and open the CSS file in the `Sources` editor, right-click a bar segment and then select `reveal in source code`.
 
-   :::image type="content" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="Reveal Media Queries in Sources Editor." lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
+   ![Reveal Media Queries in Sources Editor.](../media/css-elements-media-queries-reveal-in-sources.msft.png)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/css/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

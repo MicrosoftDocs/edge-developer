@@ -40,7 +40,7 @@ To copy a style rule as JavaScript:
 
 1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.  For example: `'--more-link': 'lime'`.
 
-   :::image type="content" source="images/copy-declaration-as-js.msft.png" alt-text="Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands." lightbox="images/copy-declaration-as-js.msft.png":::
+   ![Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands.](images/copy-declaration-as-js.msft.png)
 
 This feature is available starting with Microsoft Edge version 93. <!-- delete statement sometime after September 2, 2021 --> To learn more about viewing and changing CSS, see [CSS features reference](reference.md).
 
@@ -48,7 +48,7 @@ This feature is available starting with Microsoft Edge version 93. <!-- delete s
 <!-- ====================================================================== -->
 ## Editing style rules that were initially defined by a CSSOM function
 
-<!-- from https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
+<!-- from https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
 
 The **Styles** pane supports editing styles that were created with the [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom) APIs.  Many CSS-in-JS frameworks and libraries use the CSS Object Model APIs under the hood to construct styles.
 
@@ -73,7 +73,7 @@ function addStyle() {
 
 This sample demonstrates changing the `background` property of the `h1` styles that are added by the CSS Object Model function `insertRule()`.  The `background` color is initially set by calling a CSS Object Model function, and then can be changed from `pink` to `lightblue` by using the **Styles** pane.
 
-:::image type="content" source="../media/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with 'CSSStyleSheet' from 'pink' to 'lightblue'." lightbox="../media/css-in-js.msft.png":::
+![Changing the background property of the h1 styles added with 'CSSStyleSheet' from 'pink' to 'lightblue'.](../media/css-in-js.msft.png)
 
 Give this feature a try with a [sample that uses CSS-in-JS](https://codepen.io/zoherghadyali/full/abdGrPZ).
 
@@ -81,7 +81,7 @@ Give this feature a try with a [sample that uses CSS-in-JS](https://codepen.io/z
 <!-- ====================================================================== -->
 ## What is CSS-in-JS?
 
-This section is an excerpt from the blog post [CSS-in-JS support in DevTools](https://developers.google.com/web/updates/2021/02/css-in-js).
+This section is an excerpt from the blog post [CSS-in-JS support in DevTools](https://developer.chrome.com/blog/css-in-js/).
 
 Here's what we mean by _CSS-in-JS_, and how it's different from regular CSS.  The definition of _CSS-in-JS_ is somewhat vague.  In a broad sense, it's an approach for managing CSS code using JavaScript.  For example, it could mean that the CSS content is defined using JavaScript and the final CSS output is generated on-the-fly by the app.
 
@@ -129,5 +129,5 @@ The **Styles** pane supports CSS rules that you can modify by using the CSS Obje
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/css-in-js/) and is authored by [Alex Rudenko](https://developers.google.com/web/resources/contributors#alex-rudenko) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

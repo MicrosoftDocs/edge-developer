@@ -1,14 +1,14 @@
 ---
-title: "WebView2 sample: Win32 C++ app"
+title: Win32 sample app
 description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/18/2022
+ms.date: 04/27/2022
 ---
-# WebView2 sample: Win32 C++ app
+# Win32 sample app
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
 
@@ -16,7 +16,10 @@ The WebView2APISample is an example of an application that embeds a WebView2 con
 
 The API Sample showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView2 control and vice versa.
 
-Directory &amp; .sln: **WebView2APISample / WebView2Samples.sln (in parent dir)**.
+*  Sample name: **WebView2APISample**
+*  Repo directory: **WebView2APISample**
+*  Solution file: **WebView2Samples.sln** (in parent directory)
+*  Project name in Solution Explorer: **WebView2APISample**
 
 
 <!-- ====================================================================== -->
@@ -24,11 +27,11 @@ Directory &amp; .sln: **WebView2APISample / WebView2Samples.sln (in parent dir)*
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme).  Then return to this page and continue the steps below.
+1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme).  Then return to this page and continue the steps below.
 
-   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#prerequisites)
+   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#prerequisites)
 
-   * [README > Build the WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#build-the-webview2-api-sample)
+   * [README > Build the WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#build-the-webview2-api-sample)
 
    You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:<!-- todo: is there a .md preview capability locally? -->
 
@@ -36,7 +39,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/README.md`
 
 
 <!-- ====================================================================== -->
@@ -68,7 +71,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2Samples.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2Samples.sln`
 
 
 <!-- ====================================================================== -->
@@ -128,9 +131,9 @@ The WebView2 SDK is now installed for this project.
 
 At the top of Visual Studio, set the build target, as follows:
 
-1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
 
-1. In the **Solution Platforms** drop-down list, select **x86**, **x64**, or **ARM64**.
+1. In the **Solution Platforms** dropdown list, select **x86**, **x64**, or **ARM64**.
 
 1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
@@ -158,7 +161,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    _To zoom, right-click > **Open image in new tab**._
 
-1. Use the sample app.  See [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme)
+1. Use the sample app.  See [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme), which is a long Readme about the code in this sample.
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
@@ -170,7 +173,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!--
-Note: The `.sln` file is not in the sample repo directory that contains this sample's [README.md file](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme), or the equivalent local filesystem directory.  Instead, the `.sln` file for this sample is in the parent directory that corresponds to the [SampleApps](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps) repo directory.
+Note: The `.sln` file is not in the sample repo directory that contains this sample's [README.md file](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme), or the equivalent local filesystem directory.  Instead, the `.sln` file for this sample is in the parent directory that corresponds to the [SampleApps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps) repo directory.
 -->
 
 

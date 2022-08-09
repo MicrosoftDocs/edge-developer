@@ -26,7 +26,7 @@ To suggest a change to the docs:
 
 1.  When you are done, commit your changes and open a pull request.
 
-After you create the pull request, the Microsoft Edge Developer Docs team reviews it.  If your pull request is approved, updates are published to [Microsoft Edge Developer documentation](https://docs.microsoft.com/en-us/microsoft-edge/developer/).
+After you create the pull request, the Microsoft Edge Developer Docs team reviews it.  If your pull request is approved, updates are published to [Microsoft Edge Developer documentation](https://docs.microsoft.com/microsoft-edge/developer/).
 
 
 <!-- ====================================================================== -->
@@ -63,7 +63,7 @@ After you are ready to add your changes to the remote repo so that the changes a
 | 1 | `git status` | This command displays the files you have changed so that you can confirm that you intended to make those changes. |
 | 2 | `git add -A` | This command tells git to add all of your changes.  If you prefer to only add the changes you have made to one particular file, instead enter the command: `git add {file.md}`, where `file.md` represents the name the file containing your changes. |
 | 3 | `git commit -m "Fixed a few typos"` | This command tells git to commit the changes that you added in the previous step, along with a short message describing the changes that you made. |
-| 4 | `git push origin {your_branch_name}` | This command pushes your changes to the remote repo that you forked on GitHub (the `origin`) into the branch that you have specified.  Because you have forked the repo to your own GitHub account, you are welcome to do your work in the `master` branch. |
+| 4 | `git push origin {your_branch_name}` | This command pushes your changes to the remote repo that you forked on GitHub (the `origin`) into the branch that you have specified.  Because you have forked the repo to your own GitHub account, you are welcome to do your work in the `main` branch. |
 
 When you are happy with your changes and ready to submit a PR:
 
@@ -79,36 +79,36 @@ When you are happy with your changes and ready to submit a PR:
 
 1.  After pushing your contribution to the remote repo, you receive an email from **Open Publishing Build Service** indicating whether your commit built successfully.  The email contains links to any errors or warnings, such as broken links.  Click the **View** links to see your content staged on the `review.docs.microsoft.com` site.
 
-1.  After your PR is submitted, the Microsoft Edge Developer Docs team reviews the PR, approves the PR, merges the PR into the `master` branch, and then merges the PR's commits into the `live` branch.
+1.  After your PR is submitted, the Microsoft Edge Developer Docs team reviews the PR, approves the PR, merges the PR into the `main` branch, and then merges the PR's commits into the `live` branch.
 
 
 <!-- ====================================================================== -->
 ## Working with Branches
 
-When making contributions, submit your Pull Request (PR), requesting to merge from your working branch (such as a branch in your forked copy of the repo) into the `master` branch of the `edge-developer` repo.
+When making contributions, submit your Pull Request (PR), requesting to merge from your working branch (such as a branch in your forked copy of the repo) into the `main` branch of the `edge-developer` repo.
 
 The [Microsoft Edge Docs GitHub repository](https://github.com/MicrosoftDocs/edge-developer) uses the following two main parent branches:
 
 | Branch  | Details  |
 |:--- |:--- |
-| [master](https://github.com/MicrosoftDocs/edge-developer/tree/master)  | The content in the `master` branch has been internally reviewed. |
+| [main](https://github.com/MicrosoftDocs/edge-developer/tree/main)  | The content in the `main` branch has been internally reviewed. |
 | [live](https://github.com/MicrosoftDocs/edge-developer/tree/live)  |  The content in the `live` branch has been published on the [live site](https://docs.microsoft.com/microsoft-edge). |
 
 The series of branches is as follows:
 
 1. Fork the `edge-developer` repo, using GitHub.com.
 
-1. Create a working branch and make your changes there, rather than making your changes in the `master` branch of a fork of the repo.  It works OK, though, if you do end up using the `master` branch of a fork of the repo.
+1. Create a working branch and make your changes there, rather than making your changes in the `main` branch of a fork of the repo.  It works OK, though, if you do end up using the `main` branch of a fork of the repo.
 
 1. Edit a `.md` file.  If you create a new `.md` file, add it to `toc.yml`.
 
 1. Push your commits up to the repo at GitHub.com.
 
-1. Create a PR at GitHub.com, requesting to merge the commits from your working branch into the `master` branch of the `edge-developer` repo.
+1. Create a PR at GitHub.com, requesting to merge the commits from your working branch into the `main` branch of the `edge-developer` repo.
 
-1. The Microsoft Edge Developer Docs team reviews the PR, approves the PR, and then merges the PR's commits from the PR's working branch into the `master` branch of the `edge-developer` repo.
+1. The Microsoft Edge Developer Docs team reviews the PR, approves the PR, and then merges the PR's commits from the PR's working branch into the `main` branch of the `edge-developer` repo.
 
-1. The Microsoft Edge Developer Docs team merges commits from the `master` branch into the `live` branch of the `edge-developer` repo.
+1. The Microsoft Edge Developer Docs team merges commits from the `main` branch into the `live` branch of the `edge-developer` repo.
 
 1. The build process publishes the PR's commits at the public site, [Microsoft Edge Developer documentation](https://docs.microsoft.com/microsoft-edge/developer/).
 
@@ -125,5 +125,5 @@ Be sure to include the topic title and the URL for the page.
 ## See also
 
 *  [Getting started with writing and formatting on GitHub](https://help.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
-*  [Docs Contributor Guide](https://docs.microsoft.com/en-us/contribute/)
+*  [Docs Contributor Guide](https://docs.microsoft.com/contribute/)
 *  [README](README.md)

@@ -28,7 +28,7 @@ When you use the **Sources** tool to step through code, sometimes you pause on c
 
 1. In the **Settings** > **Library Code** page, select the **Mark content scripts as Library Code** checkbox.
 
-   :::image type="content" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Enabling the 'Mark content scripts as Library code' checkbox." lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+   ![Enabling the 'Mark content scripts as Library code' checkbox.](../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png)
 
 1. Click the **Close** DevTools (![Close DevTools icon.](../../media/close-devtools-icon-light-theme.png)) button.
 
@@ -44,5 +44,5 @@ When you use the **Sources** tool to step through code, sometimes you pause on c
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/ignore-chrome-extension-scripts/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools & Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/17/2022
+ms.date: 04/27/2022
 ---
 # Manage user data folders
 <!-- # old title: Manage the user data folder -->
 
-The user data folder (UDF) is a folder stored on the user's machine, that contains data related to the host app and WebView2.
+The user data folder (UDF) is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
 
 
 **Terminology:**
@@ -264,7 +264,7 @@ Use [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icoreweb
 
 ```cpp
 std::wstring m_userDataFolder;
-m_userDataFolder = L"C:\MyAppUserDataFolder"
+m_userDataFolder = L"C:\\MyAppUserDataFolder"
 auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
 
 HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
@@ -274,7 +274,7 @@ HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
         .Get());
 ```
 
-For example code, see the Win32-appropriate, `.cpp` or `.cs` file, near [WebView2Samples repo > WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample).
+For example code, see the Win32-appropriate, `.cpp` or `.cs` file, near [WebView2Samples repo > WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample).
 
 
 <!-- neither specific to custom nor default -->
@@ -313,13 +313,13 @@ Use the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.w
 
 ```csharp
 string UserDataFolder;
-UserDataFolder = "C:\MyAppUserDataFolder";
+UserDataFolder = "C:\\MyAppUserDataFolder";
 _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
                                             UserDataFolder, 
                                             new CoreWebView2EnvironmentOptions(null, Language, null));
 ```
 
-For example code, see the .NET (WPF & WinForms)-appropriate, .cpp or .cs file, near [WebView2Samples repo > WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser).
+For example code, see the .NET (WPF & WinForms)-appropriate, .cpp or .cs file, near [WebView2Samples repo > WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser).
 
 
 **Why you need to specify a custom UDF on this platform:**
@@ -358,13 +358,13 @@ You should specify the same folder where all other app data is stored.
 
 ```csharp
 string UserDataFolder;
-UserDataFolder = "C:\MyAppUserDataFolder";
+UserDataFolder = "C:\\MyAppUserDataFolder";
 _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
                                             UserDataFolder, 
                                             new CoreWebView2EnvironmentOptions(null, Language, null));
 ```
 
-For example code, see the .NET (WPF & WinForms)-appropriate, .cpp or .cs file, near [WebView2Samples repo > WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser).
+For example code, see the .NET (WPF & WinForms)-appropriate, .cpp or .cs file, near [WebView2Samples repo > WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser).
 
 
 <!-- neither specific to custom nor default -->
@@ -391,7 +391,7 @@ After creation of the session and UDF, browser data from your WebView2 control i
 
 **Example code:**
 
-For example code, see the WinUI 2 (UWP) `.cs` file, at [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp).
+For example code, see the WinUI 2 (UWP) `.cs` file, at [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp).
 
 
 
@@ -408,7 +408,7 @@ On this platform, use the default UDF location.
 
 **Example code:**
 
-For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2_WinUI3_Sample).
+For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample).
 
 
 **Where browser data gets stored within the UDF:**
@@ -486,7 +486,7 @@ Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/micro
 <!-- // ADO work item "[wv2] Update ClickOnce sample to add code to retrieve UDF location" - then copy lines to here
 <!-- ``` -->
 
-For examples of reading the `UserDataFolder` property, see [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp).
+For examples of reading the `UserDataFolder` property, see [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp).
 
 
 <!-- ====================================================================== -->
@@ -507,7 +507,7 @@ private void OnGetUDFClick(object sender, RoutedEventArgs e)
 }
 ```
 
-For examples of reading the `UserDataFolder` property, see the WinUI 2 (UWP) samples in the [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp).
+For examples of reading the `UserDataFolder` property, see the WinUI 2 (UWP) samples in the [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp).
 
 
 <!-- ====================================================================== -->
@@ -528,7 +528,7 @@ private void OnGetUDFClick(object sender, RoutedEventArgs e)
 }
 ```
 
-For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2_WinUI3_Sample).
+For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample).
 
 
 ---

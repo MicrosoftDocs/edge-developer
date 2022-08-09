@@ -63,7 +63,7 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 | Action | Resulting tool |
 |---|---|
 | Right-click any item on a webpage, and then select **Inspect**. | The **Elements** tool, with the DOM tree expanded to show the right-clicked page element. |
-| Press `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS).| The previously used tool, or the **Welcome** tool. |
+| Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).| The previously used tool, or the **Welcome** tool. |
 | Press `F12`. | The previously used tool, or the **Welcome** tool. |
 
 **Additional ways:**
@@ -129,6 +129,7 @@ Opening a tool this way puts focus in the content area of the tool.  In the case
 
 The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  For an example, see [Navigate the **DOM Tree** with a keyboard](../dom/index.md#navigate-the-dom-tree-with-a-keyboard).
 
+
 ### Copy the code for an element in the DOM Tree
 
 1. Right-click a node in the **DOM Tree**.
@@ -141,6 +142,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 *  **Copy outerHTML** often doesn't select the current node, but instead selects the parent node.  However, the contents of the element should still be in the copied `outerHTML`.
 
+
 ### Modify the attributes of an element in the DOM Tree
 
 *  With focus on a node in the **DOM Tree**, press `Enter` to make it editable.
@@ -152,6 +154,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 #### Known issues
 
 *  When you type into the text input, you get no feedback.  If you make a typo and use the arrow keys to explore your input, you also get no feedback.  The easiest way to check your work is to accept the change, then listen for the entire element to be announced.
+
 
 ### Edit the HTML of an element in the DOM Tree
 
@@ -175,6 +178,7 @@ The **Elements** tool contains additional tabs for inspecting things like the CS
 
 The **DOM Tree** turns elements with `href` attributes into focusable links, so you may need to press `Tab` more than once to reach the **Styles** pane.
 
+
 ### Known issues
 
 The **DOM Breakpoints** and **Properties** tabs aren't keyboard-accessible.
@@ -184,7 +188,7 @@ The **DOM Breakpoints** and **Properties** tabs aren't keyboard-accessible.
 
 The **Styles** pane has controls to filter styles, toggle element states (such as [:active](https://developer.mozilla.org/docs/Web/CSS/:active) and [:focus](https://developer.mozilla.org/docs/Web/CSS/:focus)), toggle classes, and add new classes.  There's also a powerful style inspection tool to explore and modify styles currently applied to the element that has focus in the **DOM Tree**.
 
-The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you're done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.
+The key concept to understand about the **Styles** pane is that it only shows styles for the currently selected node in the **DOM Tree**.  For example, suppose you're done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.
 
 You might find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node (such as a link within the footer), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you're interested.
 
@@ -216,17 +220,17 @@ To toggle the state of an element, such as `:active` or `:focus`:
 
 1. Go to the **Styles** pane and press `Tab` until the **Toggle Element State** button has focus.
 
-1. Press `Enter` to expand the collection of element states.  The element states are presented as a group of checkboxes.
+1. Press `Enter` to display the **Force element state** section, which contains checkboxes.
 
 1. Press `Tab` until the first state, `:active`, has focus.
 
-1. Press `Spacebar` to enable it.  If the currently-selected element in the DOM Tree has an `:active` style, it is now applied.
+1. Press `Spacebar` to enable it.  If the currently selected element in the DOM Tree has an `:active` style, it is now applied.
 
 1. Hold `Tab` to explore all of the available states.
 
 #### Add an existing class
 
-Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, press `Tab` and then press `Enter`.  Focus moves into an edit text field labeled **Add new class**.
+The **Element Classes** button is next to the **Toggle Element State** button.  To move the focus to the **Element Classes** button, press `Tab` and then press `Enter`.  Focus moves into an edit text field labeled **Add new class**.
 
 The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix`, you can press `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and press `Enter` to apply it.
 
@@ -279,6 +283,18 @@ The **Accessibility Tree** is presented as an [ARIA tree](https://www.w3.org/TR/
 
 
 <!-- ====================================================================== -->
+## Persisting the Inspect tool's tooltip and grid color overlay
+<!-- keep sync'd:
+* [Persisting the Inspect tool's tooltip and grid color overlay](../css/inspect.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Analyze pages using the Inspect tool_ -->
+
+When you click the **Inspect** tool button and move around in the rendered webpage, the Inspect tooltip changes.  To keep the current tooltip and grid color overlay displayed, press and hold `Ctrl`+`Alt` (Windows, Linux) or `Ctrl`+`Option` (macOS) while you move around in the rendered webpage.
+
+This technique can be helpful when using a screen magnifier or other assistive technologies.  If you don't make the Inspect tool's tooltip persist, the hover overlay constantly changes when you use the **Inspect tool** (![Inspect tool button.](../media/inspect-tool-icon-light-theme.png)).
+
+See [Analyze pages using the Inspect tool](../css/inspect.md).
+
+
+<!-- ====================================================================== -->
 ## The Lighthouse tool
 
 **Lighthouse** runs a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.
@@ -316,7 +332,7 @@ To run a new audit, use `Shift`+`Tab` to exit the report and select the **Genera
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) and is authored by [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor, Google WebFundamentals).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/accessibility/navigation/) and is authored by [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor, Google WebFundamentals).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

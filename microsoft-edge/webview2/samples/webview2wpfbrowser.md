@@ -1,18 +1,21 @@
 ---
-title: "WebView2 sample: WPF .NET browser app"
+title: WPF sample app
 description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WPF .NET app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/18/2022
+ms.date: 04/27/2022
 ---
-# WebView2 sample: WPF .NET browser app
+# WPF sample app
 
-This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WPF .NET app.
+This WebView2 sample, available from the WebView2Samples repo, demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WPF .NET app.
 
-Directory &amp; .sln: **WebView2WpfBrowser/WebView2WpfBrowser.sln**.
+
+*  Sample name: **WebView2WpfBrowser**
+*  Repo directory: **WebView2WpfBrowser**
+*  Solution file: **WebView2WpfBrowser.sln**
 
 
 <!-- ====================================================================== -->
@@ -20,11 +23,11 @@ Directory &amp; .sln: **WebView2WpfBrowser/WebView2WpfBrowser.sln**.
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser#readme).  Then return to this page and continue the steps below.
+1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#readme).  Then return to this page and continue the steps below.
 
-   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser#prerequisites)
+   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#prerequisites)
 
-   * [README > Build the WebView2 WPF Browser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser#build-the-webview2-wpf-browser)
+   * [README > Build the WebView2 WPF Browser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#build-the-webview2-wpf-browser)
 
    You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:<!-- todo: is there a .md preview capability locally? -->
 
@@ -32,7 +35,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WpfBrowser/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WpfBrowser/README.md`
 
 
 <!-- ====================================================================== -->
@@ -64,7 +67,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln`
 
 
 <!-- ====================================================================== -->
@@ -90,9 +93,9 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 At the top of Visual Studio, set the build target, as follows:
 
-1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
 
-1. In the **Solution Platforms** drop-down list, select **Any CPU**.
+1. In the **Solution Platforms** dropdown list, select **Any CPU**.
 
 1. In **Solution Explorer**, right-click the **WebView2WpfBrowser** project, and then select **Build**.
 
@@ -108,7 +111,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    ![The WebView2WpfBrowser sample app.](media/webview2wpfbrowser-sample-app.png)
 
-1. Use the sample app; see [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser#readme).
+1. Use the sample app; see [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#readme).
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 

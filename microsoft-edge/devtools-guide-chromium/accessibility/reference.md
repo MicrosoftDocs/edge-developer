@@ -40,7 +40,7 @@ To test your webpages for accessibility, first make a checklist of accessibility
 | Verify that text has enough contrast (automatically, for the entire page) | **Issues** tool > **Accessibility** section of report | [Verify that text colors have enough contrast](test-issues-tool.md#verify-that-text-colors-have-enough-contrast) |
 | Verify that text has enough contrast | **Elements** tool > **Styles** tab > **Color Picker** | [Test text-color contrast using the Color Picker](color-picker.md) |
 | Verify that text has enough contrast | **Inspect** tool > **Accessibility** section of overlay > **Contrast** row | [Use the Inspect tool to detect accessibility issues by hovering over the webpage](test-inspect-tool.md) and [Analyze HTML pages using the Inspect tool](../css/inspect.md) |
-| Verify that text has enough contrast: in the hover state | **Elements** tool > **Styles** tab > **Toggle Element State** | [Verify accessibility of all states of elements](test-inspect-states.md) |
+| Verify that text has enough contrast: in the hover state | **Elements** tool > **Styles** tab > **Toggle Element State** (shows **Force element state** checkboxes) | [Verify accessibility of all states of elements](test-inspect-states.md) |
 | Verify that text has enough contrast: with dark theme (dark mode) and light theme | **Rendering** tool > **Emulate CSS media feature prefers-color-scheme** | [Check for contrast issues with dark theme and light theme](test-dark-mode.md) |
 
 

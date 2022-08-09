@@ -52,27 +52,27 @@ To get the most out of this tutorial, open the demo and try out the features on 
 
 1. Open the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/) in a new tab or window:
 
-   :::image type="content" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="The demo." lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
+   ![The demo.](../media/network-glitch-inspect-network-activity-demo.msft.png)
 
    <!-- You can view the source files for this demo in the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) repo folder: -->
 
    <!--
-   :::image type="content" source="../media/network-tutorial/windows.msft.png" alt-text="The demo in one window and this tutorial in a different window." lightbox="../media/network-tutorial/windows.msft.png":::
+   ![The demo in one window and this tutorial in a different window.](../media/network-tutorial/windows.msft.png)
    -->
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens.
 
 1. In DevTools, on the main toolbar, select the **Console** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button:
 
-   :::image type="content" source="../media/network-glitch-console.msft.png" alt-text="The Console." lightbox="../media/network-glitch-console.msft.png":::
+   ![The Console.](../media/network-glitch-console.msft.png)
 
    You might prefer to [dock DevTools to the bottom of your window](../customize/placement.md):
 
-   :::image type="content" source="../media/network-glitch-console-bottom.msft.png" alt-text="DevTools docked to the bottom of the window." lightbox="../media/network-glitch-console-bottom.msft.png":::
+   ![DevTools docked to the bottom of the window.](../media/network-glitch-console-bottom.msft.png)
 
 1. Open the **Network** tool:
 
-   :::image type="content" source="../media/network-glitch-network-bottom.msft.png" alt-text="Network tool in DevTools, with DevTools docked to the bottom of the window." lightbox="../media/network-glitch-network-bottom.msft.png":::
+   ![Network tool in DevTools, with DevTools docked to the bottom of the window.](../media/network-glitch-network-bottom.msft.png)
 
 The **Network** tool is initially empty.  DevTools only logs network activity after you open it, and no network activity has occurred since you opened DevTools.
 
@@ -84,7 +84,7 @@ To view the network activity that a page causes:
 
 1. Refresh the webpage.  The **Network** panel logs all network activity in the **Network Log**:
 
-   :::image type="content" source="../media/network-glitch-network.msft.png" alt-text="The Network Log." lightbox="../media/network-glitch-network.msft.png":::
+   ![The Network Log.](../media/network-glitch-network.msft.png)
 
    Each row of the **Network Log** represents a resource.  By default the resources are listed chronologically.  The top resource is usually the main HTML document.  The bottom resource is whatever was requested last.
 
@@ -111,7 +111,7 @@ To view the network activity that a page causes:
 
 1. Look at the bottom of the **Network Log** again.  A new resource named `getstarted.json` is displayed:
 
-   :::image type="content" source="../media/network-glitch-network-new-resource.msft.png" alt-text="A new resource in the Network Log." lightbox="../media/network-glitch-network-new-resource.msft.png":::
+   ![A new resource in the Network Log.](../media/network-glitch-network-new-resource.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -121,7 +121,7 @@ The columns of the Network Log are configurable.  You can hide columns that you 
 
 1. Right-click the header of the Network Log table, and then select **Domain**.  The domain of each resource is now shown:
 
-   :::image type="content" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Enable the Domain column." lightbox="../media/network-glitch-network-edit-column.msft.png":::
+   ![Enable the Domain column.](../media/network-glitch-network-edit-column.msft.png)
 
 1. To see the full URL of a resource, hover over its cell in the **Name** column.
 
@@ -135,15 +135,17 @@ The network connection of the computer that you use to build sites is probably f
 
 1. Select **Slow 3G**:
 
-   :::image type="content" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Select Slow 3G." lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
+   ![Select Slow 3G.](../media/network-glitch-network-throttling-slow-3g.msft.png)
 
 1. Long-press **Reload** (![Reload.](../media/refresh-icon.msft.png)) (or right-click **Refresh**) and then select **Empty cache and hard refresh**:
 
-   :::image type="content" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Empty cache and hard refresh." lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
+   ![Empty cache and hard refresh.](../media/network-glitch-empty-cache-and-hard-reset.msft.png)
 
 On repeat visits, the browser usually serves some files from the [cache](https://developer.mozilla.org/docs/Web/HTTP/Caching), which speeds up the page load.  **Empty cache and hard refresh** forces the browser to go the network for all resources.  Use it to display how a first-time visitor experiences a page load.
 
 The **Empty cache and hard refresh** workflow is only available when DevTools is open.
+
+See also [Emulate slow network connections](../network/reference.md#emulate-slow-network-connections) in _Network features reference_.
 
 
 <!-- ====================================================================== -->
@@ -153,17 +155,17 @@ Screenshots display how a webpage looks over time while it loads.
 
 1. Click the (![Network settings.](../media/settings-icon.msft.png)) button and then select the **Capture screenshots** checkbox:
 
-   :::image type="content" source="../media/network-glitch-network-screenshots-setting.msft.png" alt-text="The Capture Screenshot checkbox in the Network settings." lightbox="../media/network-glitch-network-screenshots-setting.msft.png":::
+   ![The Capture Screenshot checkbox in the Network settings.](../media/network-glitch-network-screenshots-setting.msft.png)
 
 1. Refresh the page again using the **Empty cache and hard refresh** workflow.  See [Simulate a slower connection](#simulate-a-slower-network-connection) above if you need a reminder on how to do this.
 
    The **Screenshots** panel provides thumbnails of how the page looked at various points during the loading process:
 
-   :::image type="content" source="../media/network-glitch-network-screenshots.msft.png" alt-text="Screenshots of the page load." lightbox="../media/network-glitch-network-screenshots.msft.png":::
+   ![Screenshots of the page load.](../media/network-glitch-network-screenshots.msft.png)
 
 1. Click the first thumbnail.  DevTools shows you what network activity was occurring at that moment in time:
 
-   :::image type="content" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="The network activity that was happening during the first screenshot." lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
+   ![The network activity that was happening during the first screenshot.](../media/network-glitch-network-screenshots-first.msft.png)
 
 1. Click (![Network settings.](../media/settings-icon.msft.png)) again and turn off the **Capture screenshots** checkbox to close the **Screenshots** pane.
 
@@ -177,27 +179,27 @@ Select a resource to learn more information about it.
 
 1. Select `network-tutorial/`.  The **Headers** panel is shown.  Use this panel to inspect HTTP headers:
 
-   :::image type="content" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="The Headers panel." lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+   ![The Headers panel.](../media/network-glitch-network-resources-headers.msft.png)
 
 1. Select the **Preview** panel.  A basic rendering of the HTML is shown:
 
-   :::image type="content" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="The Preview panel." lightbox="../media/network-glitch-network-resources-preview.msft.png":::
+   ![The Preview panel.](../media/network-glitch-network-resources-preview.msft.png)
 
     The panel is helpful when an API returns an error code in HTML.  You might find it easier to read the rendered HTML than the HTML source code, or when you inspect images.
 
 1. Select the **Response** panel.  The HTML source code is shown:
 
-   :::image type="content" source="../media/network-glitch-network-resources-response.msft.png" alt-text="The Response panel." lightbox="../media/network-glitch-network-resources-response.msft.png":::
+   ![The Response panel.](../media/network-glitch-network-resources-response.msft.png)
 
    Tip: When a file is minified, select the **Format** (![Format.](../media/format-icon.msft.png)) button at the bottom of the **Response** panel to re-format the contents of the file for readability.
 
 1. Select the **Timing** panel.  A breakdown of the network activity for the resource is displayed:
 
-   :::image type="content" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="The Timing panel." lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+   ![The Timing panel.](../media/network-glitch-network-resources-timing.msft.png)
 
 1. Click **Close** (![Close.](../media/close-icon.msft.png)) to view the Network Log again:
 
-   :::image type="content" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="The Close button." lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
+   ![The Close button.](../media/network-glitch-network-resources-close-tabs.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -211,15 +213,15 @@ For example, suppose you want to verify that your resources are using reasonable
 
 1. Select **Search** (![Search.](../media/search-icon.msft.png)).  The Search pane opens to the left of the Network log:
 
-   :::image type="content" source="../media/network-glitch-network-search-empty.msft.png" alt-text="The Search pane." lightbox="../media/network-glitch-network-search-empty.msft.png":::
+   ![The Search pane.](../media/network-glitch-network-search-empty.msft.png)
 
 1. Type `no-cache` and press `Enter`.  The Search pane lists all instances of `no-cache` that it finds in resource headers or content:
 
-   :::image type="content" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Search results for no-cache." lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
+   ![Search results for no-cache.](../media/network-glitch-network-search-cache-control.msft.png)
 
 1. Click a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the **Headers** panel opens.   If the query was found in content, the **Response** panel opens:
 
-   :::image type="content" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="A search result highlighted in the Headers panel." lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+   ![A search result highlighted in the Headers panel.](../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png)
 
 1. Close the Search pane and the **Headers** panel.
 
@@ -229,7 +231,7 @@ For example, suppose you want to verify that your resources are using reasonable
 
 DevTools provides numerous workflows for filtering out resources that aren't relevant to the task at hand:
 
-:::image type="content" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="The Filters toolbar." lightbox="../media/network-glitch-network-filter-empty.msft.png":::
+![The Filters toolbar.](../media/network-glitch-network-filter-empty.msft.png)
 
 The **Filters** toolbar should be turned on by default.  If the **Filters** toolbar isn't on, click **Filter** (![Filter.](../media/filter-icon.msft.png)) to show it.
 
@@ -240,19 +242,19 @@ The **Filter** text box supports many different types of filtering.
 
 1. Type `png` into the **Filter** text box.  Only the files that contain the text `png` are shown.  In this case the only files that match the filter are the PNG images:
 
-   :::image type="content" source="../media/network-glitch-network-filter-png.msft.png" alt-text="A string filter." lightbox="../media/network-glitch-network-filter-png.msft.png":::
+   ![A string filter.](../media/network-glitch-network-filter-png.msft.png)
 
 1. Type `/.*\.[cj]s+$/`.  DevTools filters out any resource with a filename that doesn't end with a `j` or a `c` followed by 1 or more `s` characters:
 
-   :::image type="content" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="A regular expression filter." lightbox="../media/network-glitch-network-filter-regex.msft.png":::
+   ![A regular expression filter.](../media/network-glitch-network-filter-regex.msft.png)
 
 1. Type `-main.css`.  DevTools filters out `main.css`.  If any file matches that pattern, it's also filtered out:
 
-   :::image type="content" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="A negative filter." lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
+   ![A negative filter.](../media/network-glitch-network-filter-negative-statement.msft.png)
 
 1. Type `larger-than:1000` into the **Filter** text box.  DevTools filters out any resource with responses that are smaller than 1000 bytes:
 
-   :::image type="content" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="A property filter." lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
+   ![A property filter.](../media/network-glitch-network-filter-property-value.msft.png)
 
    For the full list of filterable properties, see [Filter requests by properties](reference.md#filter-requests-by-properties).
 
@@ -265,11 +267,11 @@ To focus in on a certain type of file, such as stylesheets:
 
 1. Select **CSS**.  All other file types are filtered out:
 
-   :::image type="content" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="Show CSS files only." lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
+   ![Show CSS files only.](../media/network-glitch-network-filter-file-type-css.msft.png)
 
-1. To also display scripts, press and hold `Control` (Windows, Linux) or `Command` (macOS), and then click **JS**:
+1. To also display scripts, press and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then click **JS**.
 
-   :::image type="content" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Show CSS and JS files only." lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
+   ![Show CSS and JS files only.](../media/network-glitch-network-filter-file-type-css-js.msft.png)
 
 1. To remove the filters and display all resources again, select **All**.
 
@@ -285,13 +287,13 @@ How does a page look and behave when some of the page resources aren't available
 
 1. Type `block`, select **Show Request Blocking**, and then press `Enter`:
 
-   :::image type="content" source="../media/network-glitch-network-cli-block.msft.png" alt-text="Show Request Blocking." lightbox="../media/network-glitch-network-cli-block.msft.png":::
+   ![Show Request Blocking.](../media/network-glitch-network-cli-block.msft.png)
 
 1. Click **Add Pattern** (![Add Pattern.](../media/add-icon.msft.png)).
 
 1. Type `main.css`:
 
-   :::image type="content" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blocking 'main.css'." lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
+   ![Blocking 'main.css'.](../media/network-glitch-network-cli-block-add-pattern.msft.png)
 
 1. Click **Add**.
 
@@ -299,7 +301,7 @@ How does a page look and behave when some of the page resources aren't available
 
    In the `main.css` row in the Network Log, the red text means that the resource was blocked:
 
-   :::image type="content" source="../media/network-glitch-network-cli-block-main-css.msft.png" alt-text="main.css has been blocked." lightbox="../media/network-glitch-network-cli-block-main-css.msft.png":::
+   ![main.css has been blocked.](../media/network-glitch-network-cli-block-main-css.msft.png)
 
 1. Clear the **Enable request blocking** checkbox.
 
@@ -315,7 +317,7 @@ To discover more DevTools features related to inspecting network activity, see [
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/network/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

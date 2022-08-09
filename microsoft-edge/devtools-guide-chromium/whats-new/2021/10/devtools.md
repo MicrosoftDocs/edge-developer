@@ -9,9 +9,7 @@ ms.date: 10/20/2021
 ---
 # What's New in DevTools (Microsoft Edge 95)
 
-The top of this page lists announcements from the Microsoft Edge DevTools team, and then the bottom of this page describes selected features from the Chromium project.  To try new features in Microsoft Edge DevTools and in the Microsoft Edge DevTools extension for Visual Studio Code, read these announcements.
-
-To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  Whether you are on Windows, Linux, or macOS, consider using one of the preview channels of Microsoft Edge as your default development browser.
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -26,7 +24,7 @@ For more information, see [Syncing live changes from the Styles tool by using CS
 
 To provide feedback, in Visual Studio Code, in the **Activity Bar**, click **Microsoft Edge Tools**, and then in the **CSS Mirror Editing** section, click the **leaving feedback here** link.
 
-:::image type="content" source="../../media/2021/10/css-mirror-editing-button.msft.png" alt-text="Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code." lightbox="../../media/2021/10/css-mirror-editing-button.msft.png":::
+![Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code.](../../media/2021/10/css-mirror-editing-button.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -38,8 +36,12 @@ To provide feedback, in Visual Studio Code, in the **Activity Bar**, click **Mic
 The **Search for this message on the Web** icon is now available for all errors and warnings in the **Console**.  Previously, this icon only appeared for some of the common errors and warnings.  Now the icon has been added on the remaining errors and warnings.  Click the **Search for this message on the Web** icon to search the web using the relevant error or warning string.
 
 For more information, see [Search for Console errors on the web](../09/devtools.md#search-for-console-errors-on-the-web).
+<!-- todo: cover in regular doc -->
 
-:::image type="content" source="../../media/2021/10/console-message-search-web-button.png" alt-text="All error and warning messages in the Console now have a Search Web icon." lightbox="../../media/2021/10/console-message-search-web-button.png":::
+![All error and warning messages in the Console now have a Search Web icon.](../../media/2021/10/console-message-search-web-button.png)
+
+See also:
+* [Search the web for a Console error message string](../../../console/index.md#search-the-web-for-a-console-error-message-string) in _Console overview_.
 
 
 <!-- ====================================================================== -->
@@ -59,7 +61,7 @@ In Microsoft Edge version 95, this issue has been fixed.  Selecting the **User a
 
 To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from your website](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints).
 
-:::image type="content" source="../../media/2021/10/keyboard-define-ua-client-hints.png" alt-text="Description." lightbox="../../media/2021/10/keyboard-define-ua-client-hints.png":::
+![Settings > Devices > Setting User-Agent Client Hints.](../../media/2021/10/keyboard-define-ua-client-hints.png)
 
 To view the history of this feature in the Chromium open-source project, see [Issue 1243827: User agent client hints form accessibility](https://bugs.chromium.org/p/chromium/issues/detail?id=1243827).
 
@@ -74,15 +76,16 @@ You can use `console.group()` to label a group of messages and provide some orga
 
 In Microsoft Edge version 95, these problems have been fixed.  Filtering to a label now displays the group label and the individual messages inside of the group.  When the filter doesn't match the group label, the entire group is hidden.
 
-To learn more about the `group()` API for the Console in DevTools, see [group](../../../../devtools-guide-chromium/console/api.md#group) in _Console object API Reference_.
-
 When the filter string matches a group label, the group and its members are displayed:
 
-:::image type="content" source="../../media/2021/10/filter-matches-group-label.png" alt-text="When the filter string matches a group label, the group and its members are displayed." lightbox="../../media/2021/10/filter-matches-group-label.png":::
+![When the filter string matches a group label, the group and its members are displayed.](../../media/2021/10/filter-matches-group-label.png)
 
 When the filter string doesn't match a group label, neither the group nor its members are displayed:
 
-:::image type="content" source="../../media/2021/10/filter-matches-group-label-asdf.png" alt-text="When the filter string doesn't match a group label, neither the group nor its members are displayed." lightbox="../../media/2021/10/filter-matches-group-label-asdf.png":::
+![When the filter string doesn't match a group label, neither the group nor its members are displayed.](../../media/2021/10/filter-matches-group-label-asdf.png)
+
+See also:
+* [group](../../../../devtools-guide-chromium/console/api.md#group) in _Console object API Reference_.
 
 To view the history of this feature in the Chromium open-source project, see [Issue 363796: ☂ Console filter inappropriately hides grouped content and doesn't hide group titles](https://bugs.chromium.org/p/chromium/issues/detail?id=363796).
 
@@ -99,10 +102,10 @@ The following are some of the additional features that are available in Microsof
 <!-- Chromium What's New entry: [Improved the display of properties](https://developer.chrome.com/blog/new-in-devtools-95/#properties) at _What's New in DevTools (Chrome 95)_. -->
 
 DevTools improves the display of properties by:
-*  Always bolding and sorting own properties first, in the **Console**, **Sources** panel, and **Properties** pane.  (An _own property_ is a property that's defined directly on the object.)
+*  Always bolding and sorting own properties first, in the **Console**, in the **Sources** tool, and in the **Properties** tab in the **Elements** tool.  (An _own property_ is a property that's defined directly on the object.)
 *  Flattening the properties display in the **Properties** pane.
 
-For example, the snippet below creates an [URL](https://developer.mozilla.org/docs/Web/API/URL) object `link` with two own properties: `user` and `access`, and then updates the value of an inherited property, `search`.
+For example, the snippet below creates an [URL](https://developer.mozilla.org/docs/Web/API/URL) object `link` with two own properties: `user` and `access`, and then updates the value of an inherited property, `search`:
 
 ```javascript
 const link = new URL('https://blogs.windows.com/msedgedev/');
@@ -111,13 +114,17 @@ link.access = 'admin';
 link.search = `?access=${link.access}`;
 ```
 
-After entering the above code in the **Console**, try logging `link`.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) (such as `URL`) that have many inherited properties.
+After entering the above code in the **Console**, try logging `link`.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/docs/Web/API) (such as `URL`) that have many inherited properties:
 
-:::image type="content" source="../../media/2021/10/improved-display-properties.png" alt-text="Own properties are bold and sorted first.":::
+![Own properties are bold and sorted first.](../../media/2021/10/improved-display-properties.png)
 
-In the **Properties** pane, the list of properties is now flattened for a better experience when debugging DOM properties, especially for [Web components](https://www.webcomponents.org/introduction).
+In the **Properties** pane of the **Elements** tool, the list of properties is now flattened for a better experience when debugging DOM properties, especially for [Web components](https://www.webcomponents.org/introduction):
 
-:::image type="content" source="../../media/2021/10/flattened-list-of-properties.png" alt-text="Flattened list of properties.":::
+![Flattened list of properties.](../../media/2021/10/flattened-list-of-properties.png)
+
+See also:
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+<!-- todo: link to an Elements > Properties ui doc'n?  try FTS repo **Properties** - not really found -->
 
 For the history of this feature, see Chromium issues [1076820](https://crbug.com/1076820) and [1119900](https://crbug.com/1119900).
 
@@ -127,11 +134,15 @@ For the history of this feature, see Chromium issues [1076820](https://crbug.com
 
 <!-- Chromium What's New entry: [Sort snippets in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-95/#snippets) at _What's New in DevTools (Chrome 95)_. -->
 
-Snippets in the **Snippets** pane in the **Sources** panel are now sorted alphabetically.  Previously, the snippets weren't sorted.
+In the **Snippets** tab of the **Sources** tool, previously, the snippets weren't sorted.  Snippets are now sorted alphabetically:
 
-:::image type="content" source="../../media/2021/10/snippets-sorted-alphbetically.png" alt-text="Sorted snippets in the Sources panel.":::
+![Sorted snippets in the Sources panel.](../../media/2021/10/snippets-sorted-alphbetically.png)
 
-For more information about snippets, see [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).  For the history of this feature, see Chromium issue: [1243976](https://crbug.com/1243976).
+See also:
+* [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md)
+* [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176) - video.
+
+For the history of this feature, see Chromium issue: [1243976](https://crbug.com/1243976).
 
 
 <!-- ====================================================================== -->
@@ -139,9 +150,12 @@ For more information about snippets, see [Run snippets of JavaScript on any webp
 
 <!-- Chromium What's New entry: [Improved UI for DevTools command menu](https://developer.chrome.com/blog/new-in-devtools-95/#command-menu) at _What's New in DevTools (Chrome 95)_. -->
 
-The [Command Menu](../../../command-menu/index.md) has been enhanced to make it easier to search for a file.  When you press `Ctrl`+`P` in Windows and Linux or `Command+P` in macOS, the **Command Menu** now displays filenames in bold, along with an icon indicating the file type.
+The **Command Menu** has been enhanced to make it easier to search for a file.  When you press `Ctrl`+`P` in Windows and Linux or `Command+P` in macOS, the **Command Menu** now displays filenames in bold, along with an icon indicating the file type:
 
-:::image type="content" source="../../media/2021/10/command-menu-filenames-bold-icons.png" alt-text="Command Menu showing filenames in bold with an icon indicating the file type.":::
+![Command Menu showing filenames in bold with an icon indicating the file type.](../../media/2021/10/command-menu-filenames-bold-icons.png)
+
+See also:
+* [Command Menu](../../../command-menu/index.md)
 
 For the history of this feature, see Chromium issue [1201997](https://crbug.com/1201997). 
 
@@ -150,5 +164,5 @@ For the history of this feature, see Chromium issue [1201997](https://crbug.com/
 > [!NOTE]
 > The "Announcements from the Chromium project" section of this page is a modification based on work that is created and shared by Google per [Site Policies](https://developers.google.com/terms/site-policies), and is used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).  The original page for the Announcements from the Chromium project is [What's New in DevTools (Chrome 95)](https://developer.chrome.com/blog/new-in-devtools-95), authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen), a Developer advocate working on Chrome DevTools at Google.
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
