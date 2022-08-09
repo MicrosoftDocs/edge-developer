@@ -106,7 +106,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 * [AddWebResourceRequestedFilterWithRequestSourceKinds method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#addwebresourcerequestedfilterwithrequestsourcekinds)
 * [RemoveWebResourceRequestedFilterWithRequestSourceKinds method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#removewebresourcerequestedfilterwithrequestsourcekinds)
-* [ICoreWebView2ExperimentalWebResourceRequestedEventArgs.RequestedSourceKind property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs?view=webview2-1.0.1340-prerelease&preserve-view=true#get_requestedsourcekind:~:text=Descriptions-,get_RequestedSourceKind,-The%20web%20resource)
+* [ICoreWebView2ExperimentalWebResourceRequestedEventArgs.RequestedSourceKind property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs?view=webview2-1.0.1340-prerelease&preserve-view=true#get_requestedsourcekind)
+
 
 ---
 
