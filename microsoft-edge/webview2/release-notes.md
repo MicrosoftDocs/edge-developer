@@ -108,7 +108,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2EnvironmentOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2?view=webview2-dotnet-1.0.1340-prerelease&preserve-view=true)
+* [CoreWebView2EnvironmentOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions?view=webview2-dotnet-1.0.1340-prerelease&preserve-view=true)
 * [CoreWebView2CustomSchemeRegistration Class](/dotnet/api/microsoft.web.webview2.core.corewebview2customschemeregistration?view=webview2-dotnet-1.0.1340-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
