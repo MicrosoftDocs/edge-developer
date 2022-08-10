@@ -44,7 +44,7 @@ The following table lists the currently available permission strings to use in y
 |:--- |:--- |
 | `activeTab` | Requests that the extension is granted permissions according to the `activeTab` specification. |
 | `alarms` | Gives your extension access to the `chrome.alarms` API. |
-| `background` | Makes Microsoft Edge start up early and shut down late, so that extensions may have a longer life.  When any installed extension has `background` permission, Microsoft Edge runs invisibly as soon as the user logs into the user's computer, and before the user launches Microsoft Edge.  The `background` permission also makes Microsoft Edge continue running, even after its last window is closed, until the user explicitly quits Microsoft Edge.  This permission doesn't affect extensions that are turned off in the browser.  The `background` permission is normally used on a background page. |
+| `background` | Makes Microsoft Edge start up early and shut down late, so that extensions may have a longer life.  When any installed extension has `background` permission, Microsoft Edge runs invisibly as soon as the user logs into the user's computer, and before the user launches Microsoft Edge.  The `background` permission also makes Microsoft Edge continue running, even after its last window is closed, until the user explicitly quits Microsoft Edge. The `background` permission is normally used on a background page. <br/>Disabled extensions are treated as if they aren't installed. You should use the "background" permission with [background scripts](https://developer.chrome.com/docs/extensions/mv3/background_pages/).|
 | `bookmarks` | Gives your extension access to the `chrome.bookmarks` API. |
 | `browsingData` | Gives your extension access to the `chrome.browsingData` API. |
 | `certificateProvider` | Gives your extension access to the `chrome.certificateProvider` API. |
@@ -101,7 +101,7 @@ The following table lists the currently available permission strings to use in y
 | `topSites` | Gives your extension access to the `chrome.topSites` API. |
 | `tts` | Gives your extension access to the `chrome.tts` API. |
 | `ttsEngine` | Gives your extension access to the `chrome.ttsEngine` API. |
-| `unlimitedStorage` | Provides an unlimited quota for storing client-side data, such as databases and local storage files.  Without this permission, the extension is limited to 5 MB of local storage. |
+| `unlimitedStorage` | Provides an unlimited quota for storing client-side data, such as databases and local storage files.  Without this permission, the extension is limited to 5 MB of local storage. <br/>This permission applies only to Web SQL Database and application cache (see [Issue 58985: Unlimited Storage permission should apply to Local Storage](https://bugs.chromium.org/p/chromium/issues/detail?id=58985)). <br/>This permission currently doesn't work with wildcard subdomains such as `http://*.contoso.com`. |
 | `vpnProvider` | Gives your extension access to the `chrome.vpnProvider` API. |
 | `wallpaper` | Gives your extension access to the `chrome.wallpaper` API. |
 | `webNavigation` | Gives your extension access to the `chrome.webNavigation` API. |
