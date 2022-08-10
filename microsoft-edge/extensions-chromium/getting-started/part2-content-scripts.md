@@ -14,7 +14,7 @@ To see the completed extension package source for this part of the tutorial, go 
 The source code has been updated from Manifest V2 to Manifest V3.
 
 This tutorial covers the following extension technologies:
-*   Injecting JavaScript libraries into an extension.  
+*   Injecting JavaScript libraries into an extension.
 *   Exposing extension assets to browser tabs.
 *   Including content pages in existing browser tabs.
 *   Having content pages listen for messages from pop-ups and respond.
