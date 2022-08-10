@@ -184,7 +184,9 @@ Add another entry in the `manifest.json` file to declare that the image is avail
 
 You've now written the code in your `popup.js` file to send a message to the content page that is embedded on the current active tab page, but you haven't created and injected that content page.  Do that now.
 
-## Update your `manifest.json` for content and web access
+
+<!-- ====================================================================== -->
+## Step 4: Update your `manifest.json` for content and web access
 
 The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows:
 
