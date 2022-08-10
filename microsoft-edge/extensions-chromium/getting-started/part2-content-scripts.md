@@ -66,7 +66,9 @@ After adding the button, the next task is to make it bring up the `images/stars.
 
 Each tab page (and extension) runs in its own thread. Create a content script that is injected into the tab page.  Then, send a message from your pop-up to that content script running on the tab page. The content script will receive the message, which describes which image should be displayed.
 
-## Create the pop-up JavaScript to send a message
+
+<!-- ====================================================================== -->
+## Step 2: Create the pop-up JavaScript to send a message
 
 Create the `popup/popup.js` and add code to send a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up display button:
 
