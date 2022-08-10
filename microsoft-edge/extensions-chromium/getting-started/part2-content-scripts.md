@@ -21,6 +21,8 @@ This tutorial covers the following extension technologies:
 
 You'll learn to update your pop-up menu to replace your static stars image with a title and a standard HTML button.  That button, when selected, passes that star's image to the content page.  This image is now embedded in the extension and inserted into the active browser tab. Here are the steps.
 
+
+<!-- ====================================================================== -->
 ## Remove the image from the pop-up and replace it with a button.
 
 Update your `popup.html` file with some straightforward markup that displays a title and a button.  You'll later program that button in a different step, but for now include a reference to an empty JavaScript file `popup.js`.  Below is a sample updated HTML:
