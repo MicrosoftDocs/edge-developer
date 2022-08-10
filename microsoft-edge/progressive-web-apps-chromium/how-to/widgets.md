@@ -364,7 +364,7 @@ When using `matchAll(options)` to get multiple Widgets, a `WidgetOptions` object
 * `installed`: A Boolean that indicates if the Widget has been installed in the Widget host.
 * `tag`: The tag of the Widget.
 * `instance`: The Widget instance.
-* `host`: The Widget host id.
+* `host`: The Widget host ID.
 
 ### WidgetPayload object
 
