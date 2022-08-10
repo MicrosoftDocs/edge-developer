@@ -265,7 +265,9 @@ In the content scripts that you're injecting, plan on using jQuery (`$`).  You a
 
 Keep in mind that even if the browser tab has JavaScript running on it on the loaded web page, any content injected doesn't have access to that.  That injected JavaScript just has access to the actual DOM loaded in that browser tab.
 
-## Add the content script message listener
+
+<!-- ====================================================================== -->
+## Step 6: Add the content script message listener
 
 Here is that `content-scripts\content.js` file that gets injected into every browser tab page based on your `manifest.json` `content-scripts` section:
 
