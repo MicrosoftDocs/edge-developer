@@ -2,7 +2,7 @@
 title: Create an extension tutorial, part 2
 description: Dynamically inserting a NASA picture below the page body tag by using content scripts.
 author: MSEdgeTeam
-ms.author: v-jandrew    
+ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/05/2022
