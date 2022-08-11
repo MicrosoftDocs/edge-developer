@@ -201,6 +201,21 @@ For reference information about each field, see [Manifest file format (V2)](http
 
 
 <!-- ====================================================================== -->
+## Changes in manifest.json from V2 to V3
+
+| V2 | V3 |
+|---|---|
+| `"manifest_version": 2,` | `  "manifest_version": 3,` |
+| `"action": ...,` | `"action": {...},` |
+| `"browser_action": {...},` | removed |
+| `"page_action": {...},` | removed |
+| `"persistent": false,` | removed |
+| If `background` is included, `service_ worker` is optional | If `background` is included, `service_ worker` is required |
+| `"host_permissions": ...,` | `"host_permissions": [...],` |
+| `"version_name": ...,` | `"version_name": "aString",` |
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/extensions/mv3/manifest/).
