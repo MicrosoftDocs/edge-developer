@@ -45,7 +45,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 1. Open DevTools.  After a few seconds, a blue information badge appears on the **Issues icon** in the **Activity bar** (![Issues icon.](media/issues-icon.png)).
 
-1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
+1. Refresh the page, because some issues are reported based on network requests.
 
 1. Select the **Issues counter**.  The **Issues** tool opens with issues grouped into different categories.
 
