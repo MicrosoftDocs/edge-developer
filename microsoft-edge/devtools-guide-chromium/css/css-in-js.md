@@ -34,15 +34,19 @@ When using CSS-in-JS libraries, you can copy CSS declarations (a CSS property an
 
 To copy a style rule as JavaScript:
 
-1. In DevTools, open the **Elements** tool, and then click the **Styles** tab.
+1. Navigate to the webpage you want to copy styles from. For example, use the [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo page.
+
+1. Open DevTools by pressing `F12`.
+
+1. Open the **Elements** tool, and then click the **Styles** tab.
 
 1. Right-click a declaration in a style rule, and then select **Copy declaration as JS** or **Copy all declarations as JS**.
 
-1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.  For example: `'--more-link': 'lime'`.
+1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.
 
    ![Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands.](images/copy-declaration-as-js.msft.png)
 
-This feature is available starting with Microsoft Edge version 93. <!-- delete statement sometime after September 2, 2021 --> To learn more about viewing and changing CSS, see [CSS features reference](reference.md).
+To learn more about viewing and changing CSS, see [CSS features reference](reference.md).
 
 
 <!-- ====================================================================== -->
@@ -59,7 +63,7 @@ You can edit styles added in JavaScript using [Constructable Stylesheets](https:
 In this sample code, style rules are initially defined by calling a CSS Object Model (CSSOM) function, and then the style rules are edited using the **Styles** pane.  The `CSSStyleSheet` object contains the CSSOM APIs, such as `insertRule()`.  The `h1` styles that were initially added by a `CSSStyleSheet` function are then editable in the **Styles** pane.
 
 ```javascript
-//Add CSS-in-JS button
+// Add CSS-in-JS button
 
 function addStyle() {
   const sheet = new CSSStyleSheet();
@@ -73,9 +77,17 @@ function addStyle() {
 
 This sample demonstrates changing the `background` property of the `h1` styles that are added by the CSS Object Model function `insertRule()`.  The `background` color is initially set by calling a CSS Object Model function, and then can be changed from `pink` to `lightblue` by using the **Styles** pane.
 
-![Changing the background property of the h1 styles added with 'CSSStyleSheet' from 'pink' to 'lightblue'.](../media/css-in-js.msft.png)
+To try it out:
 
-Give this feature a try with a [sample that uses CSS-in-JS](https://codepen.io/zoherghadyali/full/abdGrPZ).
+1. Navigate to a [sample that uses CSS-in-JS](https://codepen.io/zoherghadyali/full/abdGrPZ).
+
+1. Click **Add CSS-in-JS** in the sample page to insert the style rule from JavaScript.
+
+1. Right-click **MICROSOFT EDGE DEVTOOLS ❤ DEVELOPERS** in the sample page and click **Inspect** to open DevTools.
+
+1. In the **Styles** pane, click **pink** and type **lightblue** to change the color of the `h1` element in the page.
+
+![Changing the background property of the h1 styles added with 'CSSStyleSheet' from 'pink' to 'lightblue'.](../media/css-in-js.msft.png)
 
 
 <!-- ====================================================================== -->
