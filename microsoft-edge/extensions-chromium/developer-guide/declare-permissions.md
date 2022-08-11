@@ -24,7 +24,7 @@ ms.date: 03/17/2021
 
 To use most of the `chrome.*` APIs, your extension must declare its intent in the `permissions` fields of the manifest.  An extension can declare permissions using a permission string from the table that follows, or use a pattern to match similar strings.  Permissions help to constrain your extension if it gets compromised by malware.  Some permissions are displayed to users for their consent before installation of the extension, or at runtime, as needed; these are Permission Warnings.
 
-If an API requires you to declare permissions in the manifest, see the documentation for that API to understand the needed permissions.  For example, the Storage API page describes how to declare the `storage` permission.
+If an API requires you to declare permissions in the manifest, see the documentation for that API to understand the needed permissions.  For example, the Storage<!-- linked, in upstream doc --> API page describes how to declare the `storage` permission.
 
 The following code outlines how to declare permissions in the manifest file:
 
@@ -38,13 +38,36 @@ The following code outlines how to declare permissions in the manifest file:
 ]
 ```
 
+<!-- per upstream doc:
+todo: differs in v2 vs v3?
+-->
+
+Here's an example of the permissions part of a manifest file:
+
+```json
+"permissions": [
+  "tabs",
+  "bookmarks",
+  "unlimitedStorage"
+],
+"optional_permissions": [
+  "unlimitedStorage"
+],
+"host_permissions": [
+  "http://www.blogger.com/",
+  "http://*.google.com/"
+],
+```
+
 The following table lists the currently available permission strings to use in your manifest, and the descriptions.
+
+<!-- compare upstream doc (link at bottom) -->
 
 | Permission string | Details |
 |:--- |:--- |
 | `activeTab` | Requests that the extension is granted permissions according to the `activeTab` specification. |
 | `alarms` | Gives your extension access to the `chrome.alarms` API. |
-| `background` | Makes Microsoft Edge start up early and shut down late, so that extensions may have a longer life.  When any installed extension has `background` permission, Microsoft Edge runs invisibly as soon as the user logs into the user's computer, and before the user launches Microsoft Edge.  The `background` permission also makes Microsoft Edge continue running, even after its last window is closed, until the user explicitly quits Microsoft Edge. The `background` permission is normally used on a background page. <br/>Disabled extensions are treated as if they aren't installed. You should use the "background" permission with [background scripts](https://developer.chrome.com/docs/extensions/mv3/background_pages/).|
+| `background` | Makes Microsoft Edge start up early and shut down late, so that extensions may have a longer life. <br/>The `background` permission is normally used on a background page.  When any installed extension has `background` permission, Microsoft Edge runs invisibly as soon as the user logs into the user's computer, and before the user launches Microsoft Edge.  The `background` permission also makes Microsoft Edge continue running, even after its last window is closed, until the user explicitly quits Microsoft Edge. <br/>**Note:** Disabled extensions are treated as if they aren't installed. <br/>You should use the "background" permission with [background scripts](https://developer.chrome.com/docs/extensions/mv3/background_pages/).|
 | `bookmarks` | Gives your extension access to the `chrome.bookmarks` API. |
 | `browsingData` | Gives your extension access to the `chrome.browsingData` API. |
 | `certificateProvider` | Gives your extension access to the `chrome.certificateProvider` API. |
