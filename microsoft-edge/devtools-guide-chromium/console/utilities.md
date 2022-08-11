@@ -678,7 +678,7 @@ profileEnd('A');
 profileEnd('B');
 ```
 
-The result is the same, regardless of the order.  The result appears as a Heap Snapshot in the **Memory** tool, with grouped profiles:
+The result is the same, regardless of the order.  The result appears as a Heap Snapshot in the **JavaScript Profiler** tool, with grouped profiles:
 
 ![Grouped profiles.](../media/console-memory-multiple-cpu-profiles.msft.png)
 
