@@ -206,11 +206,9 @@ To open the DevTools code editor alongside other tools:
 
 1. Navigate to the **Elements** tool.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The **Command Menu** opens.
+1. At the bottom of the DevTools window, expand the **Quick View** dropdown and select **Quick Source**, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
 
-1. Type `quick`, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
-
-   ![Open the 'Quick source' tool by using the Command Menu.](../media/workspaces-workspaces-demo-search-show-quick-source.msft.png)
+   ![Open the 'Quick source' tool via the 'Quick View' dropdown.](../media/workspaces-workspaces-demo-search-show-quick-source.msft.png)
 
 1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog, as shown below.
 
