@@ -36,7 +36,7 @@ To turn off JavaScript:
 
    ![Select 'Disable JavaScript' in the Command Menu.](../media/javascript-console-command-javascript.msft.png)
 
-    The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.
+    The yellow warning icon next to **Sources** reminds you that JavaScript is disabled:
 
    ![The warning icon next to Sources.](../media/javascript-console-javascript-disabled-warning.msft.png)
 
