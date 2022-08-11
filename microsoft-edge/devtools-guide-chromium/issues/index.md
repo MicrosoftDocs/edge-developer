@@ -47,7 +47,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 1. Refresh the page, because some issues are reported based on network requests.
 
-1. Select the **Issues counter**.  The **Issues** tool opens with issues grouped into different categories.
+1. Select the **Issues Icon**.  The **Issues** tool opens with issues grouped into different categories.
 
    ![Categories of issues in the Issues tool on the demo page](media/categories.png)
 
