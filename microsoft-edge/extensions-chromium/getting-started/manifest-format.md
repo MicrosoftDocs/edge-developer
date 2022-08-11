@@ -112,30 +112,27 @@ The following code shows the fields that are supported in `manifest.json` for ex
 
 For reference information about each field, see [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) and then select the links on the fields.
 
+TEMP BRANCH - BELOW IS ACTUALLY V3, TO SEE DELTA:
+
 ```json
 {
   // Required
-  "manifest_version": 2,
-  "name": "My V2 Extension",
+  "manifest_version": 3,
+  "name": "My V3 Extension",
   "version": "versionString",
 
   // Recommended
+  "action": {...},
   "default_locale": "en",
   "description": "A plain-text description",
   "icons": {...},
-
-  // Pick one or none
-  "browser_action": {...},
-  "page_action": {...},
 
   // Optional
   "action": ...,
   "author": ...,
   "automation": ...,
   "background": {
-    // If `background` is included, `persistent` is recommended
-    "persistent": false,
-    // If `background` is included, `service_worker` is optional
+    // If `background` is included, `service_ worker` is required
     "service_worker": ...
   },
   "chrome_settings_overrides": {...},
@@ -160,7 +157,7 @@ For reference information about each field, see [Manifest file format (V2)](http
     "source": "network"
   },
   "homepage_url": "http://path/to/homepage",
-  "host_permissions": ...,
+  "host_permissions": [...],
   "import": [{"id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
   "incognito": "spanning, split, or not_allowed",
   "input_components": ...,
@@ -191,7 +188,7 @@ For reference information about each field, see [Manifest file format (V2)](http
   "system_indicator": ...,
   "tts_engine": {...},
   "update_url": "http://path/to/updateInfo.xml",
-  "version_name": ...,
+  "version_name": "aString",
   "web_accessible_resources": [...]
 }
 ```
