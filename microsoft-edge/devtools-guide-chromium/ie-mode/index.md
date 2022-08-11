@@ -30,11 +30,11 @@ IE mode is available on Windows 10 Version 1903 (May 2019 Update), and is coming
 
 To turn on Internet Explorer mode:
 
-1. In the address bar for Microsoft Edge, type **edge://settings/defaultbrowser** and then click `Enter`.  The **Settings** page opens:
+1. In the address bar for Microsoft Edge, type **edge://settings/defaultbrowser** and then click `Enter`.  The **Settings** page opens.
+
+1. In the **Allow sites to be reloaded in Internet Explorer mode (IE mode)** menu, select **Allow**:
 
    ![The Settings page](./index-images/settings-page.png)
-
-1. Slide the **Allow sites to be reloaded in Internet Explorer** toggle to ON.
 
 1. Restart Microsoft Edge.
 
@@ -84,9 +84,9 @@ If a browser tab uses IE mode, the tab has the following limitations:
 
 
 <!-- ====================================================================== -->
-## Open DevTools on a tab in IE mode
+## Open DevTools for an IE mode tab
 
-1. In a tab that's in IE mode, press `F12` or `Ctrl`+`Shift`+`I`, or click **Settings and more** (...) > **More tools** > **Developer Tools**.  A Microsoft Edge DevTools opens, grayed out, and displays the following message: **Developer Tools aren't available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**
+1. In a browser tab that's in IE mode, press `F12` or `Ctrl`+`Shift`+`I`, or click **Settings and more** (...) > **More tools** > **Developer Tools**.  A Microsoft Edge DevTools opens, grayed out, and displays the following message: **Developer Tools aren't available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**
 
    ![DevTools launched in IE mode.](../media/ie-mode-devtools.msft.png)
 
@@ -94,10 +94,17 @@ If a browser tab uses IE mode, the tab has the following limitations:
 
 1. In Windows, open the **Run** dialog box.  For example, press the `Windows logo key` + `R`.
 
-1. Enter `%systemroot%\system32\f12\IEChooser.exe`, and then click **OK**.  For example:
+1. Enter **%systemroot%\System32\F12\IEChooser.exe**, and then press `Enter`.
 
-   * "C:\Windows\SysWOW64\F12\IEChooser.exe"
-   * "C:\Windows\System32\F12\IEChooser.exe"
+   ```
+   %systemroot%\System32\F12\IEChooser.exe
+   ```
+
+   Your machine might have multiple versions of IEChooser available, such as:
+   * `C:\Windows\SysWOW64\F12\IEChooser.exe`
+   * `C:\Windows\System32\F12\IEChooser.exe`
+
+   IEChooser opens:
 
    ![IEChooser](./index-images/ie-chooser.png)
 
