@@ -20,7 +20,7 @@ This feature enables website authors to deliver value to these customers in part
 ## Regional Codes
 The user’s formatting preferences are abstracted into a relatively simple regional code, which is used by web applications to infer the various details noted above about dates, times, and other formatting preferences. With a regional code, websites can use a built-in Internationalization API to properly format information into the user's preferences. The built-in Internationalization API saves lots of MB of data transfer over the network, keeping websites small and allowing them to quickly and easily adapt to different regions. In general, the website's internationalization customer experiences are only as good as the regional code that they're able to determine for the current user. 
 
-A regional code is a hyphenated two letter language code followed by a two-letter region code: [chromium uses ICU an implementation of the Unicode Standard’s Internationalization API](https://icu.unicode.org/home).
+A regional code is a two-letter language code followed by a hyphen and a two-letter region code.  Microsoft Edge uses ICU, which is an implementation of the Unicode standard's Internationalization API.  See [ICU](https://icu.unicode.org/home).
 
 To set the user’s language preferences, Microsoft Edge gets the default values from the OS at the time it's first installed. After that, users can change the language preferences via **edge://settings/**languages and sorting them in a priority order.
 
