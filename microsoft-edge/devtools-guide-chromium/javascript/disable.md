@@ -32,17 +32,18 @@ To turn off JavaScript:
 
    ![The Command Menu](../media/javascript-console-command.msft.png)
 
-1. Start typing `javascript`, select **Disable JavaScript**, and then press `Enter`.  JavaScript is now disabled.
+1. Start typing `javascript`, select **Disable JavaScript**, and then press `Enter`:
 
    ![Select 'Disable JavaScript' in the Command Menu](../media/javascript-console-command-javascript.msft.png)
 
-   If Focus Mode is not turned on, a yellow warning icon next to the **Sources** tab reminds you that JavaScript is disabled:
+   <!-- todo: re-take screenshot when Focus Mode has the equivalent indicator
+   A yellow warning icon next to the **Sources** icon reminds you that JavaScript is disabled:
 
-   ![The warning icon next to the Sources tab](../media/javascript-console-javascript-disabled-warning.msft.png)
+   ![The warning icon next to the Sources icon](../media/javascript-console-javascript-disabled-warning.msft.png) -->
+
+1. To see whether the current page depends on JavaScript while loading, refresh the page.
 
 JavaScript remains disabled in the tab for as long as you have DevTools open.
-
-To see whether the page depends on JavaScript while loading, refresh the page.
 
 To re-enable JavaScript:
 
