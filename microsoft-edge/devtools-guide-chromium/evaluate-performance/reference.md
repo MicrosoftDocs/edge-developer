@@ -162,7 +162,7 @@ After you [record runtime performance](#record-runtime-performance) or [record l
 
 ### Select a portion of a recording
 
-Drag your mouse left or right across the **Overview** to select a portion of a recording.  The **Overview** is the section that contains the **FPS**, **CPU**, and **NET** charts.
+Drag your mouse left or right across the **Overview** to select a portion of a recording.  The **Overview** is the section that contains the **CPU**, and **NET** charts.
 
 ![Drag the mouse across the Overview to zoom.](../media/evaluate-performance-performance-zoom-highlighted.msft.png)
 
@@ -174,7 +174,7 @@ To select a portion using the keyboard:
 
 To select a portion using a trackpad:
 
-1. Hover your mouse over the **Overview** section or the **Details** section.  The **Overview** section is the area containing the **FPS**, **CPU**, and **NET** charts.  The **Details** section is the area containing the **Main** section, the **Interactions** section, and so on.
+1. Hover your mouse over the **Overview** section or the **Details** section.  The **Overview** section is the area containing the  **CPU** and **NET** charts.  The **Details** section is the area containing the **Main** section, the **Interactions** section, and so on.
 
 1. Using two fingers, swipe up to zoom out, swipe left to move left, swipe down to zoom in, and swipe right to move right.
 
@@ -213,8 +213,6 @@ Select an event to view more information about it in the **Summary** panel.  Dev
 DevTools represents main thread activity with a flame chart.  The x-axis represents the recording over time.  The y-axis represents the call stack.  The events on top cause the events below it.
 
 ![A flame chart.](../media/evaluate-performance-performance-main-flame-chart.msft.png)
-
-In the previous figure, a `click` event caused a `Function Call` in `activitytabs.js` on line 53.  Below `Function Call`, review that an anonymous function was run.  The anonymous function requested `a`, which requested `wait`, which requested `Minor GC`.
 
 DevTools assigns scripts random colors.  In the previous figure, function requests from one script are colored light green.  Requests from another script are colored beige.  The darker yellow represents scripting activity, and the purple event represents rendering activity.  These darker yellow and purple events are consistent across all recordings.
 
@@ -475,7 +473,7 @@ To open the **Rendering** tool:
 
 1. [Open the Command Menu](../command-menu/index.md#open-the-command-menu).
 
-1. Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tool at the bottom of your DevTools window.
+1. Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tool.
 
 ![The Rendering tool.](../media/evaluate-performance-console-drawer-rendering.msft.png)
 
