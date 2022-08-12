@@ -105,7 +105,7 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 100x100 - store tile 2x display scale
     * 200x200 - store tile 4x display scale
     * 620x300 - splash screen
-    * 775x375 - splash screen 1.25x display scale
+    * 775x375 - splash screen 1.25x display scale  
     * 930x450 - splash screen 1.5x display scale
     * 1240x600 - splash screen 2x display scale
     * 2480x1200 - splash screen 4x display scale
