@@ -48,11 +48,11 @@ The first step in debugging is to find a series of actions that consistently rep
 
 DevTools provides many different tools for different tasks.  Different tasks include changing CSS, profiling page-load performance, and monitoring network requests.  The **Sources** tool is where you debug JavaScript.
 
-1. To open the **Console** tool in DevTools, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. To open the **Console** tool in DevTools, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console tool opens:
 
    ![The Console tool.](../media/javascript-console-empty.msft.png)
 
-1. Select the **Sources** tool.
+1. Select the **Sources** tool:
 
    ![The Sources tool.](../media/javascript-sources-sections.msft.png)
 
@@ -60,11 +60,11 @@ The **Sources** tool UI has three parts.
 
 ![The 3 parts of the Sources tool UI.](../media/javascript-sources-sections-annotated.msft.png)
 
-*  The **Navigator** pane (in the upper left corner).  Every file that the webpage requests is listed here.
+*  The **Navigator** pane (on the left).  Every file that the webpage requests is listed here.
 
-*  The **Editor** pane (in the upper right corner).  After you select a file in the **Navigator** pane, this pane displays the contents of the file.
+*  The **Editor** pane (in the middle).  After you select a file in the **Navigator** pane, this pane displays the contents of the file.
 
-*  The **Debugger** pane (at the bottom).  This pane provides tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.
+*  The **Debugger** pane (on the right).  This pane provides tools for inspecting the JavaScript for the webpage.  If your DevTools window is narrow, this pane is displayed at the bottom of DevTools.
 
 
 <!-- ====================================================================== -->
@@ -93,7 +93,7 @@ The `console.log()` method might get the job done, but **breakpoints** get it do
 In short, breakpoints can help you find and fix bugs faster than the `console.log()` method.
 
 
-### Event listener breakpoints
+#### Event listener breakpoints
 
 If you step back and think about how the app works, you might make an educated guess that the incorrect sum (`5 + 1 = 51`) is computed in the `click` event listener associated with the **Add Number 1 and Number 2** button.  So, you probably want to pause the code around the time that the `click` listener runs.  **Event Listener Breakpoints** let you do that:
 
@@ -163,40 +163,41 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
 
 The values of `addend1`, `addend2`, and `sum` look suspicious.  The values are wrapped in quotes.  The quotations mean that the value is a string, which is a good hypothesis to explain the cause of the bug.  Gather more information about the situation.  DevTools provides many tools for examining variable values.
 
-### Method 1: The Scope pane
+#### Method 1: The Scope pane
 
 If you pause on a line of code, the **Scope** pane displays the local and global variables that are currently defined, along with the value of each variable.  It also displays closure variables, as applicable.  Double-click a variable value to edit it.  If you don't pause on a line of code, the **Scope** pane is empty.
 
 ![The Scope pane.](../media/javascript-sources-breakpoint-paused-scope.msft.png)
 
-### Method 2: Watch Expressions
+#### Method 2: Watch expressions
 
-The **Watch** pane allows you to monitor the values of variables (such as `sum`) or expressions (such as `typeof sum`).  You can store any valid JavaScript expression in a Watch Expression.
+The **Watch** pane allows you to monitor the values of variables (such as `sum`) or expressions (such as `typeof sum`).  You can store any valid JavaScript expression in a watch expression.
 
 1. Select the **Watch** tab.
 
 1. Click **Add watch expression** (![Add watch expression.](../media/add-expression-icon.msft.png)).
 
-1. Type `typeof sum`.
-
-1. Press `Enter`.  DevTools displays `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.
-
-> [!NOTE]
-> In the following figure, the `typeof sum` Watch Expression is displayed in the **Watch** pane.  If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.
+1. Type `typeof sum`, and then press `Enter`.  The **Watch** pane displays `typeof sum: "string"`.  The value to the right of the colon is the result of your watch expression:
 
 ![The Watch pane.](../media/javascript-sources-breakpoint-paused-watch.msft.png)
 
+The `typeof sum` watch expression is displayed in the **Watch** pane.  If your DevTools window is narrow, the **Watch** pane is displayed at the bottom of DevTools.
+
 As suspected, `sum` is being evaluated as a string, when it should be a number.  You now confirmed value type is the cause of the bug.
 
-### Method 3: The Console
+#### Method 3: The Console
 
 The **Console** allows you to view `console.log()` output.  You can also use the **Console** to evaluate arbitrary JavaScript statements while the debugger is paused at a code statement.  For debugging, you can use the **Console** to test potential fixes for bugs.
 
 1. If the **Console** tool is closed, press `Esc` to open it.  The **Console** tool opens in the lower pane of the DevTools window.
 
-1. In the **Console**, type `parseInt(addend1) + parseInt(addend2)`.  The statement the tool is paused on a line of code where `addend1` and `addend2` are in scope.
+1. In the **Console**, enter the following JavaScript statement, and then press `Enter`:
 
-1. Press `Enter`.  DevTools evaluates the statement and prints `6`, which is the result you expect the demo to produce.
+   ```javascript
+   parseInt(addend1) + parseInt(addend2)
+   ```
+
+   The above statement is valid when the debugger is paused on a line of code where `addend1` and `addend2` are in scope.  DevTools evaluates the statement and prints `6`, which is the result you expect the demo to produce.
 
    ![The Console tool, after evaluating parseInt(addend1) + parseInt(addend2)](../media/javascript-sources-breakpoint-paused-console.msft.png)
 
