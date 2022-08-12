@@ -494,9 +494,9 @@ Result:
 
 ![Output of using getEventListeners(document).](../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png)
 
-If more than one listener is registered on the specified object, then the array contains a member for each listener.  In the following figure, two event listeners are registered on the `document` element for the `click` event:
+If more than one listener is registered on the specified object, then the array contains a member for each listener.  In the following figure, two event listeners are registered on the `document` element for the `touchstart` event:
 
-![Multiple event listeners registered on the 'document' element for the 'click' event.](../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png)
+![Multiple event listeners registered on the 'document' element for the 'touchstart' event.](../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png)
 
 You can further expand each of the following objects to explore their properties.  Here's an expanded view of the listener object:
 
