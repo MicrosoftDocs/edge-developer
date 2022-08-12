@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.date: 08/12/2022
 ---
 # Interact with the DOM using the Console
 
@@ -15,7 +15,9 @@ The **Console** tool is a great way to interact with the webpage in the browser.
 <!-- ====================================================================== -->
 ## Read from the DOM
 
-To reference the header of the webpage:
+To reference an element of the webpage:
+
+1. Navigate to the [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo site.
 
 1. Open the DevTools **Console**.  To do this from a webpage, you can press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
@@ -35,9 +37,11 @@ To reference the header of the webpage:
 <!-- ====================================================================== -->
 ## Manipulate the DOM
 
-You can manipulate the webpage from the **Console**, as follows.  In this example, you set a value in the DOM by using the Console, to affect the webpage styling: you add a green border around the header.
+You can manipulate the webpage from the **Console**, as follows.  In this example, you set a value in the DOM by using the **Console**, to affect the webpage styling: you add a green border around the header.
 
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the present webpage.
+1. Navigate to the [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo site.
+
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** opens in DevTools, next to the webpage.
 
 1. Paste the following code into the **Console**:
 
@@ -52,7 +56,7 @@ You can manipulate the webpage from the **Console**, as follows.  In this exampl
 
 ### Get a direct reference an element
 
-Depending on the complexity of the webpage, it can be daunting to find the right element to manipulate.  But you can use the **Inspect** tool to help you.  Suppose you want to manipulate the **Documentation** region within the header of the rendered page:
+Depending on the complexity of the webpage, it can be daunting to find the right element to manipulate.  But you can use the **Inspect** tool to help you.  Suppose you want to manipulate the site navigation toolbar on the [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo site.
 
 ![Display the element that you inspect on the screen.](../media/console-dom-highlight-documentation.msft.png)
 
@@ -69,7 +73,7 @@ To get a direct reference to the element that you want to manipulate:
 
    ![The clicked element appears in the DOM tree of the Elements tool.  Click the overflow menu to get more features.](../media/console-dom-overflow-menu-in-elements.msft.png)
 
-1. Right-click the element in the DOM tree and then select **Copy** > **Copy JS Path**.
+1. Select **Copy** > **Copy JS Path**.
 
    ![Copy the JavaScript path from an element in the DOM tree of the Elements tool.](../media/console-dom-copy-JS-path.msft.png)
 
@@ -88,7 +92,7 @@ To get a direct reference to the element that you want to manipulate:
 
 1. In the **Console**, paste the JavaScript path that you copied, but don't press `Enter` yet.
 
-1. Change the text of the link to `My Playground`.  To do that, add `.textContent = "My Playground"` to the JavaScript path that you previously pasted:
+1. Change the background color of the site navigation to red.  To do that, add `.style.backgroundColor = "red"` to the JavaScript path that you previously pasted, and press `Enter`:
 
    ![Using the Console to change the content of an element.](../media/console-dom-change-content.msft.png)
 
@@ -103,11 +107,11 @@ Many convenience methods and shortcuts are available to you as [Console Utilitie
 
 ### The power of the $ functions
 
-The `$` has special powers in **Console**, and you may remember that from jQuery.
+The `$` sign has special powers in the **Console**. Below is a list of predefined **Console** variables and methods with the `$` sign.
 
-*  `$_` stores the result of the last command.  So, if you type `2+2` and press `Enter`, and then type `$_`, the **Console** displays `4`.
+*  `$_` stores the result of the last command. If you type `2+2` and press `Enter`, you can then type `$_` to refer to the result again.
 
-*  `$0` to `$4` is a stack of the last inspected elements.  `$0` is always the newest one.  So in the earlier example, you just select the element in the **Inspect** tool and type `$0.textContent = "My Playground"` to get the same effect.
+*  `$0` to `$4` is a stack of the last inspected elements.  `$0` always refers to the currently inspected element.  In the earlier example ([Get a direct reference an element](#get-a-direct-reference-an-element)), after you select the element with the **Inspect** tool, you can refer to it with `$0` and therefore get the same effect with `$0..style.backgroundColor = "red"`.
 
 *  `$x()` allows you to select DOM elements using XPATH.
 
@@ -116,70 +120,74 @@ The `$` has special powers in **Console**, and you may remember that from jQuery
 
 ### Example: Extracting all links from a page, as a sortable table
 
-1. Enter the following code, which retrieves all the links in the webpage, and displays the links as a sortable table to copy and paste (for example, into Excel):
+1. Navigate to the [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo site.
+
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** opens in DevTools, next to the webpage.
+
+1. Enter the following expression, which retrieves all the images in the webpage, and displays their sources as a sortable table to copy and paste (for example, into Excel):
 
    ```javascript
-   console.table($$('a'),['href','text']);
+   console.table($$('img'),['src']);
    ```
    
-   `$$('a')` is short for `document.querySelectorAll('a')`.
+   `$$('img')` is short for `document.querySelectorAll('a')`.
 
-   ![Get all links in the webpage and display the result as a table.](../media/console-dom-get-all-links.msft.png)
+   ![Get all images in the webpage and display the result as a table.](../media/console-dom-get-all-links.msft.png)
 
    However, suppose you don't want to display all the information, but you want to grab it as data and then select only some of the data.
 
-   The `$$('a')` shortcut helps with that: it selects the anchor links and all of the properties for each anchor link.  But the problem is that you only want the anchor links and the related text, not all the properties of the anchor links.
+   The `$$('img')` shortcut helps with that: it selects the image elements and all of the properties for each of them.  But the problem is that you only want the image elements and their source, not all the properties of the image elements.
 
    ![The $$ shortcut returns far too much information.](../media/console-dom-too-much-link-information.msft.png)
 
-   To solve that problem, the `$$` shortcut has an interesting extra feature: instead of returning a pure `NodeList` like `document.querySelectorAll()`, the `$$` shortcut gives you all of the `Array` methods, including `map()`.
+   To solve that problem, the `$$` shortcut has an interesting extra feature: instead of returning a `NodeList` object like `document.querySelectorAll()` does, the `$$` shortcut returns an `Array`, which gives you access to `Array` methods like `map()`.
 
 1. Use the `map()` method of the `Array` object to reduce the information to what you need:
 
    ```javascript
-   $$('a').map(a => {
-      return {url: a.href, text: a.innerText}
-   })
+   $$('img').map(img => {
+      return {src: img.src, width: img.naturalWidth, height: img.naturalHeight}
+   });
    ```
 
-   The above code returns an `Array` of all the links, as objects with `url` and `text` properties.
+   The above code returns an `Array` of all the images, as objects with the `src`, `width`, and `height` properties.
 
    ![Use map on $$ to filter information down to the bare minimum.](../media/console-dom-filter-link-data.msft.png)
 
-   You aren't done yet; several links are internal links to the webpage or have empty text.
-
-1. Use the `filter` method to get rid of the internal links:
+1. Use the `filter` method to filter the list of elements returned by `$$`.
 
    ```javascript
-   $$('a').map(a => {
-      return {text: a.innerText, url: a.href}
-   }).filter(a => {
-      return a.text !== '' && !a.url.match('docs.microsoft.com')
-   })
+    $$('img').map(img => {
+       return {src: img.src, width: img.naturalWidth, height: img.naturalHeight}
+    }).filter(img => {
+       return img.width > 1000
+    });
    ```
 
-   ![Get the links that aren't empty and are external.](../media/console-dom-filter-out-empty-links.msft.png)
+   The above code returns an `Array` of all the images that are wider than 1000 pixels.
+
+   ![Get the images that are wider than 1000px.](../media/console-dom-filter-out-empty-links.msft.png)
 
    By manipulating the DOM through issuing statements in the **Console**, you can change these elements in the rendered webpage.
 
-1. For example, enter the following code, which adds a green border around all external links:
+1. For example, enter the following code, which adds a red border around all images that do not have alternate text:
 
    ```javascript
-   $$('a[href^="https://"]').forEach(
-      a => a.style.border = '1px solid green'
-   )
+   $$('img:not([alt])').forEach(img => img.style.border = '5px solid red');
    ```
 
-   ![To highlight all external links, add a green border around each.](../media/console-dom-highlight-links.msft.png)
+   ![To highlight all images that do not have an alt text, add a red border around each.](../media/console-dom-highlight-links.msft.png)
 
 Instead of writing complex JavaScript to filter results, use the power of CSS selectors.
 
 
 ### Creating a table
 
-To create a table of the `src` and `alt` information for all images on the webpage that aren't inline images:
+To create a table of the `src` and `alt` information for all images on the webpage:
 
-1. Open the **Console**.
+1. Navigate to the [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo site.
+
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** opens in DevTools, next to the webpage.
 
 1. Paste the following code into the **Console**, and then press `Enter`:
 
@@ -189,29 +197,25 @@ To create a table of the `src` and `alt` information for all images on the webpa
 
    ![To programmatically select a set of elements, use a complex CSS selector.](../media/console-dom-complex-css-selector.msft.png)
 
-<!-- mystery wiggly line preventer -->
-
 
 ### Example: Getting all page headings and anchor URLs
 
-Ready for an even more complex example?  HTML webpages that are generated from Markdown tagging, like the present article, have automatic ID values for each heading, to allow you to deep-link directly to that section of the webpage.  For example, a `# New features` h1 heading in the Markdown source file becomes `<h1 id="new-features">New features</h1>` in the HTML file.
+Ready for an even more complex example?  HTML webpages often use `id` attributes on sections of their content to allow you to deep-link directly to that section of the webpage using the `https://example.com/#sectionid` URL syntax.
 
-To list all of the automatic headings to copy and paste:
+To list all of the anchor links in the demo page:
 
-1. Open the **Console**.
+1. Navigate to the [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo site.
+
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** opens in DevTools, next to the webpage.
 
 1. Copy and paste the following code:
 
    ```javascript
-   let out = '';
-   $$('#main [id]').filter(
-      elm => {return elm.nodeName.startsWith('H')}
-   ).forEach(elm => {
-      out += elm.innerText + "\n" +
-            document.location.href + '#' +
-            elm.id + "\n";
-   });
-   console.log(out);
+    let out = '';
+    $$('[id]:has(h2)').forEach(el => {
+      out += el.querySelector('h2').innerText + '\n' + document.location.href + '#' + el.id + '\n';
+    });
+    console.log(out);
    ```
     
    The result is text that contains content for each heading followed by the full URL that points to it.
@@ -236,51 +240,47 @@ Two other interesting utility methods of **Console** deal with event handling:
 
 * `monitorEvents(node, events)` monitors and logs the events that happen on a node.
 
+To list all of the event listeners that are assigned to the donation form in the webpage:
 
-To list all of the event listeners that are assigned to the first form in the webpage:
+1. Navigate to the [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo site.
 
-1. In DevTools, open the **Console**.
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** opens in DevTools, next to the webpage.
 
 1. Type or paste the following code into the **Console**:
 
    ```javascript
-   getEventListeners($('form'));
+   getEventListeners($('#donate'));
    ```
 
    ![Get all events listeners for the first form in the webpage.](../media/console-dom-get-form-events.msft.png)
 
-When you monitor, you to get a notification in the **Console** every time something changes to the specified elements.  You define the events you want to listen to as a second parameter.  It's important for you to define the events that you want to monitor, otherwise any event happening to the element is reported.
+If you want to get a notification in the **Console** every time an event occurs on the specified element, use the `monitorEvents` utility. Define the element you want to monitor as the first parameter, and the events you want to listen to as a second parameter.  It's important for you to define the events that you want to monitor, otherwise any event happening to the element is reported.
 
-
-To get a notification in the **Console** every time you scroll, resize the window, or when the user types in the search form:
-
-1. In DevTools, open the **Console**.
+To get a notification in the **Console** every time the donation form is clicked:
 
 1. Paste the following code into the **Console**:
 
    ```javascript
-   monitorEvents(window, ['resize', 'scroll']);
-   monitorEvents($0, 'keyup');
+   monitorEvents($('#donate'), 'click');
    ```
 
-   ![Console displays every scroll event that happens on the Window.](../media/console-dom-monitor-events.msft.png)
+1. Click in the donation form, in the webpage. For example, click the **50** donation amount, and the **Other** text field.
 
-1. To log any key action on the currently selected element, focus on the search form in the header and press some keys.
+   The click events are logged in the **Console**.
 
-   ![Console displays 'keyup' events that occur on the form.](../media/console-dom-monitor-key-events.msft.png)
+   ![Console displays every click event that happens on the form.](../media/console-dom-monitor-events.msft.png)
 
 1. To stop logging, remove the monitoring you set, enter the following code into the **Console**:
 
    ```javascript
-   unmonitorEvents(window, ['resize', 'scroll']);
-   unmonitorEvents($0, 'key');
+   unmonitorEvents($('#donate'), 'click');
    ```
    
 
 <!-- ====================================================================== -->
 ## Reuse DOM manipulation scripts
 
-You may find it useful to manipulate the DOM from the **Console**.  You might soon run into the limitations of the **Console** as a development platform.  The good news is that the [Sources](../sources/index.md) tool in DevTools offers a fully featured development environment.  In the **Sources** tool, you can:
+You may find it useful to manipulate the DOM from the **Console**.  You might soon run into the limitations of the **Console** as a code editor though. The good news is that the [Sources](../sources/index.md) tool in DevTools offers a fully featured code editor environment.  In the **Sources** tool, you can:
 
 *  Store your scripts for the **Console** as snippets; see [Run snippets of JavaScript on any webpage](../javascript/snippets.md).
 
