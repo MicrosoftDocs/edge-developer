@@ -81,7 +81,7 @@ First, you must set up the site so that you can make changes to it later.
 
    ![DevTools and the demo.](../media/speed-glitch-tony-show-live-console.msft.png)
 
-For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.  Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, type `Undock`, and then select **Undock into separate window**.
+For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.  Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, type `Undock`, and then select **Undock into separate window**.<!--Focus Mode GUI menuitem = "Pop out window"-->
 
 ![DevTools undocked into a separate window.](../media/speed-console.msft.png)
 

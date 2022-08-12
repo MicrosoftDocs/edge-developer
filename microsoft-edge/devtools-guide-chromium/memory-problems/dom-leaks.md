@@ -147,11 +147,13 @@ When looking for memory leaks, remember that leaks can depend on the context of 
 
 The following image shows detached elements in the form of messages that are reattached when a user navigates from **Room 2** back to **Room 1**:
 
-1. Assume you did the main steps above to view detached elements when the **Room 2** button of the demo page is selected.  The elements were loaded when **Room 1** button was selected, but became detached when **Room 2** was selected.
+1. Assume you did the main steps above to view detached elements when the **Room 2** button of the demo page is selected.
+
+   The elements were loaded when **Room 1** button was selected, but became detached when **Room 2** was selected.
 
 1. Click the **Room 1** button to return to the room that created the elements.
 
-1. Click the **Get Detached Elements** (![Get Detached Elements icon](images/get-detached-elements-icon-light-mode.png)) icon.
+1. Click the **Get Detached Elements** (![Get Detached Elements icon](images/get-detached-elements-icon-light-mode.png)) icon.  Now there are no detached elements, because the elements became reattached when returning to Room 1:
 
    ![The detached elements are reattached to the DOM when switching back to Room 1](images/detached-elements-reattached.msft.png)
 
