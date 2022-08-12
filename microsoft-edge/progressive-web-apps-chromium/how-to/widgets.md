@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 08/01/2022
+ms.date: 08/12/2022
 ---
 # Build PWA-driven Widgets
 
@@ -26,15 +26,17 @@ Progressive Web Apps (PWAs) can also declare Widgets, update them, and handle us
 <!-- ====================================================================== -->
 ## Enable Widgets in Microsoft Edge
 
-Widgets are experimentally supported starting with Microsoft Edge 105.
+Widgets are experimentally supported for local testing starting with Microsoft Edge 105.
 
 To test your Widgets PWA code locally, start Microsoft Edge from the command line with the `msWebAppWidgets` feature enabled:
 
 ```cmd
-"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --enable-features=msWebAppWidgets
+"C:\path\to\msedge.exe" --enable-features=msWebAppWidgets
 ```
 
-Widgets are also available as an origin trial in Microsoft Edge 105. Learn [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
+In the above command, replace `C:\path\to\msedge.exe` with the correct path to the Microsoft Edge executable on your computer. Since Widgets are an experimental feature at the moment, we recommend using Microsoft Edge Canary which might be installed under the following location: `C:\Users\<your user name>\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe`.
+
+Widgets are also available as an origin trial in Microsoft Edge 106. Learn [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
 
 
 <!-- ====================================================================== -->
@@ -75,7 +77,8 @@ Each entry in the `widgets` array contains several fields, as shown below:
       "name": "Agenda",
       "description": "Your day, at a glance",
       "tag": "agenda",
-      "template": "agenda",
+      "template": "calendar-agenda",
+      "ms_ac_template": "/widgets/template/agenda_template.ac.json",
       "data": "/widgets/data/agenda",
       "type": "application/json",
       "auth": true,
@@ -91,13 +94,13 @@ In the above example, an agenda Widget is defined by the PWA. Possible fields ar
 |:--- |:--- |:--- |
 | `name` | The title of the Widget, presented to users. | Yes |
 | `tag` | A string used to reference the widget in the PWA Service Worker. | Yes |
-| `template` | The template to use to display the Widget in the operating system. To be installable, a Widget should either declare the name of the template to use with the `template` field, or specify the URL for a custom template by using a custom template field (such as `ms_ac_template`). See [Choose or define a Widget template](#choose-or-define-a-widget-template), below. | Yes |
+| `template` | The template to use to display the Widget in the operating system Widget dashboard. Note: although `template` is a required field, its value is currently not used. See `ms_ac_template` below. | Yes |
+| `ms_ac_template` | The URL to the custom Adaptive Cards template to use to display the Widget in the operating system Widget dashboard. See [Define a Widget template](#define-a-widget-template) below. | Yes |
 | `data` | The URL where the data to fill the template with can be found. For now, this URL is required to return valid JSON. | Yes |
 | `type` | The MIME type for the Widget data. Note that it is, for now, required to be `application/json`. | Yes |
 | `auth` | A boolean indicating if the Widget requires authentication. | No |
 | `update` | The frequency, in seconds, you want the Widget to be updated. Note that to actually update the Widget, [Periodic Background Sync](./background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content) is used. | No |
 | `actions` | An array of actions exposed to users within the Widget (only if the template supports actions). | No |
-| `settings` | An array of settings that can be used to configure different instances of the same Widget differently. | No |
 | `short_name` | An alternative short version of the name. | No |
 | `description` | A description of what the Widget does. | No |
 | `icons` | An array of icons to be used for the Widget. If not present, the manifest `icons` member will be used. | No |
@@ -105,11 +108,9 @@ In the above example, an agenda Widget is defined by the PWA. Possible fields ar
 
 
 <!-- ====================================================================== -->
-## Choose or define a Widget template
+## Define a Widget template
 
-**OPEN QUESTIONS: Are generic templates supported at all? Should they be documented?**
-
-To make Widgets easy to create and adapt to various operating systems, they are displayed by using templates. Two types of templates exist:
+To make Widgets easy to create and adapt to various operating system Widget dashboards, they are displayed by using templates. Two types of templates exist:
 
 * Generic templates, defined by their names using the `template` field.
 * Custom templates, defined by their URLs using a custom template field.
@@ -125,6 +126,7 @@ To define a custom Adaptive Cards template, use the `ms_ac_template` field:
   "tag": "agenda",
   "data": "/widgets/data/agenda",
   "type": "application/json",
+  "template": "calendar-agenda",
   "ms_ac_template": "/widgets/template/agenda_template.ac.json"
 }
 ```
@@ -177,8 +179,6 @@ Here is an example of what the `data` URL might return:
 <!-- ====================================================================== -->
 ## Define Widget actions
 
-**OPEN QUESTIONS: Are actions supported yet? How do actions from the manifest work with actions from the ac template? Maybe using the data.tag field in the ac action?**
-
 If you want your Widget to let users perform tasks, use the `actions` field in your Widget definition, and define a template that supports actions.
 
 The `actions` field is an array of action definitions. Here is an example:
@@ -222,15 +222,16 @@ To actually trigger the action from the Widget, your template needs to support i
     {
       "type": "Action.Execute",
       "title": "Create a new meeting",
-      "data": {
-        "tag": "create-meeting"
-      }
+      "verb": "create-meeting"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
   "version": "1.5"
 }
 ```
+
+Note that the `verb` action field in the template above maps to the `action` field in the PWA manifest file.
+
 
 <!-- ====================================================================== -->
 ## Handle Widget actions
@@ -250,10 +251,9 @@ self.addEventListener('widgetclick', event => {
 See the [Service Worker API reference](#service-worker-api-reference) below for more information about the `widgetclick` event and what information you can access from it.
 
 
-<!-- ====================================================================== -->
+<!-- ======================================================================
+Widget settings are not supported in SV2. There is a plan to support them post-SV2, so let's keep this draft doc for now.
 ## Define Widget settings
-
-**OPEN QUESTIONS: Are settings supported yet? If so, are all types implemented?**
 
 Several instances of the same Widget can be enabled at the same time and configured differently by using setting definitions via the `settings` field.
 
@@ -295,7 +295,7 @@ Some of the types above require extra information to be rendered correctly. This
 Finally, the `name` field is used in the service worker code to know which setting was changed.
 
 
-<!-- ====================================================================== -->
+<!-- ======================================================================
 ## Handle Widget setting changes
 
 For simplicity reasons, just like Widget actions are sent to the service worker as a `widgetclick` events (see [Handle Widget actions](#handle-widget-actions)), setting changes are also sent to the service worker as `widgetclick` events.
@@ -320,6 +320,7 @@ self.addEventListener('widgetclick', event => {
 As shown in the above code snippet, the `widget-save` event is triggered in the service worker when a particular Widget instance has settings and one of the settings was changed.
 
 See the [Service Worker API reference](#service-worker-api-reference) below for more information about the `widgetclick` event and what information you can access from it.
+-->
 
 
 <!-- ====================================================================== -->
@@ -331,9 +332,9 @@ Widget instances can be accessed at runtime from your service worker code.  For 
 
 
 <!-- ====================================================================== -->
+<!-- Widgets are too early in the making for MDN. But there is enough complexity with the APIs that a reference doc is needed.
+For now we are documenting all functions and objects in this section. When Widgets become standard, move this to MDN and remove the section. -->
 ## Service Worker API reference
-
-**TODO: Widgets are too early in the making for MDN. But there is enough complexity with the APIs that a reference doc is needed. The plan is to document all functions and objects right here in this section. Ultimately this would move to MDN and we'll remove this section.**
 
 The service worker global object (or [ServiceWorkerGlobalScope](https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope)) contains a `widgets` attribute that exposes the following Promise-based methods:
 
@@ -345,8 +346,6 @@ The service worker global object (or [ServiceWorkerGlobalScope](https://develope
 | `matchAll(options)` | Get Widgets by matching options | A [WidgetOptions object](#widgetoptions-object) | A Promise that resolves to an array of [Widget objects](#widget-object) that match the `options` criteria. |
 | `updateByInstanceId(id, payload)` | Update a Widget by instance ID  | The instance ID, and a [WidgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`.
 | `updateByTag(tag, payload)` | Update a Widget by tag | The Widget tag, and a [WidgetPayload object](#widgetpayload-object) | A Promise that resolves to undefined or Error.
-| `removeByInstanceId(id)` | Remove a Widget by instance ID | The instance ID | A Promise that resolves to undefined or Error.
-| `removeByTag()` | Remove a Widget by tag | The Widget tag | A Promise that resolves to undefined or Error.
 
 ### Widget object
 
@@ -368,11 +367,9 @@ When using `matchAll(options)` to get multiple Widgets, a `WidgetOptions` object
 
 ### WidgetPayload object
 
-When creating or updating a Widget instance, the service worker must send the data that's necessary to populate the Widget. This data is called the _payload_.  The payload includes template-related data and content-related data.  The `WidgetPayload` object contains the following properties:
+When creating or updating a Widget instance, the service worker must send the data that's necessary to populate the Widget. This data is called the _payload_.  The payload includes content-related data.  The `WidgetPayload` object contains the following properties:
 
-* `template`: The name of the template to use.
 * `data`: The data to use with the Widget template, as a `String`.  This data can be stringified JSON data.
-* `settings`: The settings to use for the Widget instance, if any.
 
 ### WidgetInstance object
 
@@ -380,7 +377,6 @@ This object represents a given instance of a Widget in a Widget host and contain
 
 * `id`: The internal GUID string used to reference the instance.
 * `host`: An internal pointer to the Widget host that has installed this instance.
-* `settings`: If the Widget has settings, the key/value pairs that are set for this instance.
 * `updated`: A `Date` object that represents the last time when data was sent to the instance.
 * `payload`: A [WidgetPayload object](#widgetpayload-object) that represents the last payload that was sent to this instance.
 
