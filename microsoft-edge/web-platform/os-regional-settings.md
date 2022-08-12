@@ -58,10 +58,11 @@ If **Always** is selected, the customer is exposed to the full set of risks note
 ## Policy Controls 
 A related new policy added to Microsoft Edge provides a setting for corporate or enterprise-level default configurations: **ShareOSRegionThroughJavaScriptLocale** which accepts an integer with potential values: 
 
-| Number| Category |
-| 0 | Limited |
-| 1 | Always |
-| 2 | Never |
+|Number| Description |
+|--------|-------------------------|
+| 1 | Limited | 
+| 2 | Always | 
+| 3 | Never | 
 
 In addition, an [older policy](/DeployEdge/microsoft-edge-policies#applicationlocalevalue) (**ApplicationLocaleValue**) allows setting the Microsoft Edge locale and prevents users from changing it. 
 
