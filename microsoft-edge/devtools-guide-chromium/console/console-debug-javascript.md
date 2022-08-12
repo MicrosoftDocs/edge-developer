@@ -24,9 +24,9 @@ The first experience you have with the **Console** is likely to be errors in scr
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
-   In the top right of DevTools, the **Open Console to view errors** button displays an error about the webpage.
+   In the **Activity bar**, the **Console** tool icon displays a red badge indicating that there were errors on the webpage.
 
-1. Click the **Open Console to view errors** button on the top right.  In DevTools, the **Console** gives you more information about the error:
+1. Click the **Console** icon. In DevTools, the **Console** gives you more information about the errors:
 
    ![DevTools gives detailed information about the error in the Console.](../media/console-debug-displays-error.msft.png)
 
