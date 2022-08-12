@@ -113,7 +113,7 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
 For level 3, your web app manifest should contain tile images for all Windows display scale sizes.
 
 Display scales are user-configurable in Windows:
-![Display Sample](../media/windows-image-display-scales.png) 
+![Display Sample](..\media\windows-image-display-scales.png.png) 
 
 * Level 4 (Tiles, display scales, and target sizes)
 Your web app manifest icons should include images with these dimensions:
@@ -182,7 +182,7 @@ Consider, for example, how your app icon might show different content depending 
 
 * Wide surface: Wide tile in start menu, showing a more articulated app icon: ![The wide size icon](../media/windows-image-wide-tile.png) 
 
-Notice how the content of the icon changed. This is possible only through the use of higher levels of icon support. We recommend developers choose higher levels to give the best experience for your Windows users.
+Notice how the content of the icon changed. This is possible only through the use of higher levels of icon support. We recommend developers choose higher levels to give the best experience for your Windows users.  
 
 ### Icon Descriptions
 
@@ -229,7 +229,7 @@ Shown in the start menu when the user sets your app’s tile to wide size.
 The large tile icon is in the start menu when the user sets your app’s tile to large size.
 
 * 310x310
-* 388x388 (1.25x scale)
+* 388x388 (1.25x scale)  
 * 465x465 (1.5x scale)
 * 620x620 (2x scale)
 * 1240x1240 (4x scale)
