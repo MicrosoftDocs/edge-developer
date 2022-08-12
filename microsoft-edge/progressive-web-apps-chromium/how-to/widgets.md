@@ -164,7 +164,7 @@ The template declares the user interface of a Widget.  Data then populates this 
 
 To bind data to your template, use the `data` field in your Widget definition. This field should be set to a URL that returns valid JSON data.
 
-The template defined in [the previous section](#choose-or-define-a-widget-template) contains two variables: `name` and `meetingNb`, which are enclosed in the binding expression syntax: `${}`. The data that's returned by the `data` URL in your Widget definition should contain values for these variables.
+The template defined in [the previous section](#define-a-widget-template) contains two variables: `name` and `meetingNb`, which are enclosed in the binding expression syntax: `${}`. The data that's returned by the `data` URL in your Widget definition should contain values for these variables.
 
 Here is an example of what the `data` URL might return: 
 
@@ -326,9 +326,155 @@ See the [Service Worker API reference](#service-worker-api-reference) below for 
 <!-- ====================================================================== -->
 ## Access Widget instances at runtime
 
-Widget instances can be accessed at runtime from your service worker code.  For example, this approach can can be useful for updating Widgets periodically.
+Widget instances can be accessed at runtime from your service worker code. This can be useful for updating Widgets proactively, even when there are no user interaction events. For example, you may wish to update a Widget instance on a push notification, or a periodic sync.
 
-**TODO: Intro/tutorial.**
+For more information about push notifications, see [Add push notifications to your PWA](notifications-badges.md#add-push-notifications-to-your-pwa) and for more information about periodic syncs, see [Use the Periodic Background Sync API to regularly get fresh content](background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
+
+In the following service worker code snippet, a listener for `widgetclick` is used to react to various lifecycle events of the application widget.
+
+When a Widget installation is detected, a periodic sync is registered and when a Widget removal is detected, the periodic sync is unregistered.
+
+When periodic sync events occur, Widget instances are updated using the `widgets.updateByTag` method (see [Service Worker API reference](#service-worker-api-reference) for more information).
+
+The code also reacts to updates from the Widget host (using the `widget-resume` action) and uses it to update all Widget instances.
+
+Finally, the code listens to a custom Widget action called `refresh`. This action needs to be defined in the PWA manifest file as explained in [Define Widget actions](#define-widget-actions). When this action occurs, the code uses the `widgets.updateByInstanceId` method to update the specific Widget the action originated from (see [Service Worker API reference](#service-worker-api-reference) for more information).
+<!-- TODO: move this sample to the Demos repo when possible, and link from here. -->
+
+```javascript
+const periodicSync = self.registration.periodicSync;
+
+/**
+ * Register a periodic sync for a widget.
+ */
+async function registerPeriodicSync(widget) {
+  // If the widget is not set up to auto-update, don't register a periodic sync.
+  if ("update" in widget.definition) {
+    return;
+  }
+
+  // Register a periodic sync, if this wasn't done already.
+  // The same tag is used for both the sync registration and the widget here to
+  // ensure this.
+  const tags = await registration.periodicSync.getTags();
+  if (! tags.includes(widget.definition.tag)) {
+    await periodicSync.register(widget.definition.tag, { minInterval: widget.definition.update });
+  }
+}
+
+/**
+ * Unregister the periodic sync for a given widget.
+ */
+async function unregisterPeriodicSync(widget) {
+  // If this was the last widget instance, then unregister the periodic sync.
+  if (widget.instances.length === 1 && "update" in widget.definition) {
+    await periodicSync.unregister(widget.definition.tag);
+  }
+}
+
+/**
+ * Update a given widget's instances.
+ */
+async function updateWidget(widget) {
+  // Fetch the updated widget data.
+  const response = await fetch(widget.definition.data);
+  const data = await response.json();
+  
+  // Create the payload object.
+  const payload = { data };
+  
+  // Update the widget by tag.
+  await widgets.updateByTag(widget.definition.tag, payload);
+}
+
+/**
+ * Update a specific widget instance.
+ */
+async function updateInstance(instance_id, widget) {
+  // Fetch the updated widget data.
+  const response = await fetch(widget.definition.data);
+  const data = await response.json();
+  
+  // Create the payload object.
+  const payload = { data };
+
+  // Update the widget instance.
+  await widgets.updateByInstanceId(instance_id, payload);
+}
+
+/**
+ * React to widget-install events.
+ */
+async function onWidgetInstall(instance_id, widget) {
+  // On install, update the instance and register the periodic sync.
+  await updateInstance(instance_id, widget);
+  await registerPeriodicSync(widget);
+}
+
+/**
+ * React to widget-uninstall events.
+ */
+async function onWidgetUninstall(instance_id, widget) {
+  // On uninstall, unregister the periodic sync if needed.
+  await unregisterPeriodicSync(widget);
+}
+
+/**
+ * React to widget-resume events, which happen when a host
+ * requests all of its widgets to update.
+ */
+async function onWidgetResume(host_id) {
+  // Find all the widgets the host is requesting to update.
+  const widgetList = await widgets.matchAll({ hostId: host_id });
+
+  // Update them all.
+  await Promise.all(widgetList.map(widget => {
+    return updateWidget(widget);
+  }));
+}
+
+// Listen to the widgetclick event, to be able to react
+// to several lifecycle events of the widget.
+self.addEventListener("widgetclick", function(event) {
+  const action = event.action;
+  const host_id = event.hostId;
+  const widget = event.widget;
+  const instance_id = event.instanceId;
+    
+  switch (action) {
+    // If a widget is being installed.
+    case "widget-install":
+      event.waitUntil(onWidgetInstall(instance_id, widget));
+      break;
+    
+    // If a widget is being uninstalled.
+    case "widget-uninstall":
+      event.waitUntil(onWidgetUninstall(instance_id, widget));
+      break;
+
+    // If a widget host is requesting all its widgets update.
+    case "widget-resume":
+      event.waitUntil(onWidgetResume(host_id));
+      break;
+    
+    // Custom Actions.
+    case "refresh":
+      event.waitUntil(updateInstance(instance_id, widget));
+      break;
+  }
+});
+
+// Listen to periodicsync events to update all widget instances
+// periodically.
+self.addEventListener("periodicsync", event => {
+  const tag = event.tag;
+  const widget = widgets.getByTag(tag);
+
+  if (widget && "update" in widget.definition) {
+    event.waitUntil(updateWidget(widget));
+  }
+});
+```
 
 
 <!-- ====================================================================== -->
