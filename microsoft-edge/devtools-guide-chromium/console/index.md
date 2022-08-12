@@ -33,7 +33,7 @@ The fastest way to directly open the **Console** is to press `Ctrl`+`Shift`+`J` 
 <!-- ====================================================================== -->
 ## Error reports and the Console
 
-The **Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, the **Issues counter** is displayed next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Click the **Issues counter** to open the **Issues** tool and display the problem.  For more information, see [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
+The **Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, a red error badge is added to the  **Console** icon in the **Activity bar** in DevTools.  Click the **Console** icon to open the **Console** tool and display the problems.  For more information, see [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
 
 DevTools gives detailed information about the error in the **Console**:
 
