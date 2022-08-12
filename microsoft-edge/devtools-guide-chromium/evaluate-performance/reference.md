@@ -473,7 +473,7 @@ To open the **Rendering** tool:
 
 1. [Open the Command Menu](../command-menu/index.md#open-the-command-menu).
 
-1. Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tool at the bottom of your DevTools window.
+1. Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tool.
 
 ![The Rendering tool.](../media/evaluate-performance-console-drawer-rendering.msft.png)
 
