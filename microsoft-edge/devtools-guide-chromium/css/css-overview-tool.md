@@ -28,16 +28,43 @@ https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020
 # What's New in DevTools (Microsoft Edge 87)
 ### View and fix color contrast issues in the CSS Overview tool -->
 
-The **CSS Overview** tool displays a summary of CSS-related information about the webpage.  This tool lists the colors, fonts, and media queries the webpage uses.  The tool also lists the elements on your page that have color contrast issues, and the unused CSS declarations.  The [CSS Overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me) page has an example of a color contrast issue.
-
-To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  
-
-To open the element in the **Elements** tool, click an element in the list.  To help fix contrast issues, DevTools [automatically provides color suggestions](../whats-new/2020/08/devtools.md#accessible-color-suggestion-in-the-styles-pane).
+The **CSS Overview** tool displays a summary of CSS-related information about the webpage.  This tool lists the colors, fonts, and media queries the webpage uses.  The tool also lists the elements on your page that have color contrast issues, and the unused CSS declarations.
 
 
-For updates on this feature in the Chromium open-source project, see Issue [#1120316](https://crbug.com/1120316).
+<!-- ====================================================================== -->
+## Open the CSS Overview tool
 
-![Low color contrast issues.](../whats-new/media/2020/10/css-overview.msft.png)
+1. Navigate to a page you want to inspect. You can use the [CSS Overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me) page which has an example of a color contrast issue.
+
+1. Open DevTools by pressing `F12`.
+
+1. Click **More tools** (`+`) and select **CSS Overview** from the list.
+
+   ![The CSS Overview tool in the More tools menu.](images/css-overview-in-more-tools.png)
+
+1. In the **CSS Overview** tool, click **Capture overview**. The overview summary is displayed.
+
+   ![The CSS Overview tool after an overview was captured.](images/css-overview-summary.png)
+
+1. Click **Colors**, **Font info**, **Unused declarations**, or **Media queries** in the tool sidebar to view the corresponding information.
+
+
+<!-- ====================================================================== -->
+## Find color contrast issues
+
+To view a list of elements that have a color contrast issue:
+
+1. Click **Colors** in the sidebar.
+
+1. Scroll down to the **Contrast issues** section.
+
+1. Click **Text** to view the problematic elements.
+
+   ![Low color contrast issues.](images/css-overview-contrast-issue.png)
+
+To open the element with a contrast issue in the **Elements** tool, click the element in the list.
+
+To help fix contrast issues, see [Test text-color contrast using the Color Picker](../accessibility/color-picker.md).
 
 
 <!-- ====================================================================== -->
