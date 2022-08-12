@@ -1338,7 +1338,7 @@
 
         - name: Updates to Region information exposed to web content
           href: web-platform/os-regional-settings.md
-          displayName: 
+          displayName: globalization, language, region, limited, intl, date, time, format
           
 
 # =============================================================================
