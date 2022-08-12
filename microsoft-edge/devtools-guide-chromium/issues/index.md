@@ -43,11 +43,11 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 1. Go to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab or window.
 
-1. Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)) appears in the upper right corner of DevTools.
+1. Open DevTools.  After a few seconds, a blue information badge appears on the **Issues icon** in the **Activity bar** (![Issues icon.](media/issues-icon.png)).
 
-1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
+1. Refresh the page, because some issues are reported based on network requests.
 
-1. Select the **Issues counter**.  The **Issues** tool opens with issues grouped into different categories.
+1. Select the **Issues Icon**.  The **Issues** tool opens with issues grouped into different categories.
 
    ![Categories of issues in the Issues tool on the demo page](media/categories.png)
 
@@ -185,6 +185,6 @@ By default, the **Issues** tool only lists issues that pertain to the current we
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton](https://developers.google.com/web/resources/contributors#sam-dutton) (Developer Advocate).
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+> The original page is found [here](https://developer.chrome.com/docs/devtools/issues/) and is authored by [Sam Dutton](https://developers.google.com/web/resources/contributors#sam-dutton) (Developer Advocate).
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

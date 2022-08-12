@@ -29,7 +29,7 @@ To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent 
 
    ![Matching keyboard shortcuts in DevTools to Visual Studio Code.](../media/match-keyboard-shortcuts-visual-studio-code.msft.png)
 
-For example, to pause or continue running a script in Visual Studio Code, you select `F5`.  But with the **DevTools (Default)** preset, to pause or continue running a script, you press `F8`.  When you change the preset to **Visual Studio Code**, you now also press `F5` in DevTools, just like in Visual Studio Code.
+For example, to pause or continue running a script in Visual Studio Code, you press `F5`.  But with the **DevTools (Default)** preset, to pause or continue running a script, you press `F8`.  When you change the preset to **Visual Studio Code**, you now also press `F5` in DevTools, just like in Visual Studio Code.
 
 ### See also
 
@@ -60,7 +60,7 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 
 1. To save your new keyboard shortcut, select the checkmark (![CheckmarkKeyboardShortcut.](../media/checkmark-keyboard-shortcut-icon.msft.png)) icon.
 
-   :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Select the checkmark icon to save your new keyboard shortcut." lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+   ![Select the checkmark icon to save your new keyboard shortcut](../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png)
 
 1. Select your new keyboard shortcut to trigger the action in DevTools.
 

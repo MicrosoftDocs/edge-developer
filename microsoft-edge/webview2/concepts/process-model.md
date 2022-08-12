@@ -13,7 +13,7 @@ ms.date: 04/01/2022
 
 Supported platforms: Win32, Windows Forms, WinUI, WPF.
 
-The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Browser Architecture](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture) in _Inside look at modern web browser (part 1)_.
+The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Browser Architecture](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture) in _Inside look at modern web browser (part 1)_.
 
 
 <!-- ====================================================================== -->
@@ -30,7 +30,7 @@ The number and presence of processes in a WebView2 process group can change as a
 
 The number of renderer processes can vary based on the following conditions:
 
-*  Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation).
+*  Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developer.chrome.com/blog/inside-browser-part1/#site-isolation).
 
 *  The number of distinct disconnected origins that are rendered in instances of WebView2 that use the same user data folder.
 
@@ -53,6 +53,11 @@ When the first `WebView2` instance is created for a given user data folder, the 
 <!-- TODO: update with profile info -->
 The `CoreWebView2Environment` represents a user data folder and the collection of processes associated with it.  A given renderer process is not associated with a single `CoreWebView2` instance, because the renderer process can serve frames in multiple `CoreWebView2` instances that use the same user data folder, depending on website isolation.  See [Per-frame renderer processes - Site Isolation](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation).
 
+#### Multiple environment objects
+
+If you create multiple `CoreWebView2Environment` objects that are configured the same way (including sharing the same user data folder), they will represent the same user data folder and the same associated collection of processes. Use any of these `CoreWebView2Environment` objects to create a `CoreWebView2` with the one shared user data folder and associated collection of processes.
+
+If you try to create a `CoreWebView2Environment` using a user data folder which another `CoreWebView2Environment` is already using, and you don't configure the two `CoreWebView2Environment` objects the same, for example if they were created with different `CoreWebView2EnvironmentOptions.Language` values, then the second `CoreWebView2Environment` will fail to create `WebView2` objects. This is true for `CoreWebView2Environment` objects that are in the same process or in different processes.
 
 <!-- ====================================================================== -->
 ## Handling process events and lifetime
@@ -89,7 +94,7 @@ All processes that are associated with the browser process of your WebView2 are 
 <!-- ====================================================================== -->
 ## See also
 
-* [Inside look at modern web browser (part 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture) - the browser process model that's used by the WebView2 Runtime and the Microsoft Edge browser.
+* [Inside look at modern web browser (part 1)](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture) - the browser process model that's used by the WebView2 Runtime and the Microsoft Edge browser.
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)

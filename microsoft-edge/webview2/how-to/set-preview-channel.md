@@ -154,7 +154,7 @@ If you want to make your application use a Microsoft Edge preview channel by usi
 
 1. Copy the ADMX file into a Policy Definitions template folder, such as `C:\Windows\PolicyDefinitions`.
 
-1. Copy the ADML file into a matching locale folder within the `Policy Definitions` folder, such as a `C:\Windows\PolicyDefinitions\en-us` folder.
+1. Copy the ADML file into a matching locale folder within the `Policy Definitions` folder, such as a `C:\Windows\PolicyDefinitions\en-us`<!--keep /en-us here--> folder.
 
 1. Open the **Local Group Policy Editor**.  To do this, in the Windows search bar, type "group policy", and then select **Edit group policy**.
 

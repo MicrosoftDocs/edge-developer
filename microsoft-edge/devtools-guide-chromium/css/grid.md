@@ -11,7 +11,8 @@ ms.date: 05/04/2021
 
 This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays.
 
-The examples used in the figures in this article are taken from the following webpages:
+The examples used in the images in this article are taken from the following webpages:
+
 * [Fruit box](https://jec.fyi/demo/css-grid-fruit)
 * [Snack box](https://jec.fyi/demo/css-grid-snack)
 
@@ -19,7 +20,7 @@ The examples used in the figures in this article are taken from the following we
 <!-- ====================================================================== -->
 ## Before you begin
 
-CSS Grid is a powerful layout paradigm for the web.  A great place to get started learning about CSS Grid and the many features is the [CSS Grid Layout guide](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) on MDN.
+CSS Grid is a powerful layout paradigm for the web.  A great place to get started learning about CSS Grid and its many features is the [CSS Grid Layout guide](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) on MDN.
 
 
 <!-- ====================================================================== -->
@@ -33,7 +34,7 @@ Click the badge to toggle the display of a grid overlay on the page.  The overla
 
 ![Toggle grid badge.](../media/grid-highlight-grid.msft.png)
 
-Open the **Layout** pane.  When grids are included on a page, the **Layout** pane includes a **Grid** section containing a number of options for viewing the grids.
+Click **Layout** in the **Elements** tool to open the **Layout** pane.  When grids are included on a page, the **Layout** pane includes a **Grid** section containing a number of options for viewing the grids.
 
 ![Layout pane.](../media/grid-layout-pane.msft.png)
 
@@ -115,15 +116,15 @@ In the demo, the `snack-box` column sizes are defined in the `grid-template-colu
 
 | Track size | Authored size | Computed size |
 |:--- |:--- |:--- |
-| **1fr** &#x2022; **96.66px** | 1fr | 96.66px |
-| **2fr** &#x2022; **193.32px** | 2fr | 193.32px |
+| **1fr** &#x2022; **48.33px** | 1fr | 48.33px |
+| **2fr** &#x2022; **93.67px** | 2fr | 93.67px |
 
 The row line labels display only computed sizes, since there are no row sizes defined in the stylesheet.
 
 | Track size | Authored size | Computed size |
 |:--- |:--- |:--- |
-| **80px** | &nbsp;| 80px |
-| **80px** | &nbsp;| 80px |
+| **40px** | &nbsp;| 40px |
+| **40px** | &nbsp;| 40px |
 
 ![Show track sizes.](../media/grid-show-track-sizes.msft.png)
 
@@ -170,7 +171,7 @@ To highlight the HTML element in the **Elements** tool and scroll to it on the w
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/grid) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/css/grid/) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

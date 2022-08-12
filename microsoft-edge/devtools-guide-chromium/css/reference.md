@@ -126,6 +126,7 @@ In the following figure, the **Computed** panel is filtered to only show declara
 ## Toggle a pseudo-class
 
 To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
+<!-- :focus-within, :focus-visible, :target. -->
 
 1. [Select an element](#select-an-element).
 
@@ -139,7 +140,7 @@ To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
 
    ![Toggle the :hover pseudo-class.](../media/css-elements-styles-hov-hover.msft.png)
 
-For an interactive tutorial, see [Add a pseudostate to a class](../css/index.md#add-a-pseudostate-to-a-class).
+For an interactive tutorial, see [Add a pseudo-state to a class](../css/index.md#add-a-pseudostate-to-a-class).
 
 
 <!-- ====================================================================== -->
@@ -467,11 +468,11 @@ The following figure and list describes of each of the UI elements of the **Colo
 
 ### Sample a color off the page with the Eyedropper
 
-When you open the **Color Picker**, the **Eyedropper** (![Eyedropper.](../media/eyedropper-icon.msft.png)) is on by default.
-
 To change the selected color to some other color on the page:
 
-1. Hover on the target color in the viewport.
+1. Click the **Eyedropper** icon (![Eyedropper.](../media/eyedropper-icon.msft.png)). Your cursor changes to a magnifying glass.
+
+1. Hover on the pixel that has the color you want to sample, anywhere on your screen.
 
 1. Click to confirm.
 
@@ -508,7 +509,7 @@ There are more keyboard shortcuts to change the angle value.  Find out more in t
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/css/reference/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

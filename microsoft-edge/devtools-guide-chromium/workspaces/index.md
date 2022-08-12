@@ -206,11 +206,9 @@ To open the DevTools code editor alongside other tools:
 
 1. Navigate to the **Elements** tool.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The **Command Menu** opens.
+1. At the bottom of the DevTools window, expand the **Quick View** dropdown and select **Quick Source**, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
 
-1. Type `quick`, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
-
-   ![Open the 'Quick source' tool by using the Command Menu.](../media/workspaces-workspaces-demo-search-show-quick-source.msft.png)
+   ![Open the 'Quick source' tool via the 'Quick View' dropdown.](../media/workspaces-workspaces-demo-search-show-quick-source.msft.png)
 
 1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog, as shown below.
 
@@ -244,7 +242,7 @@ Use what you have learned in this tutorial to set up Workspaces in your own proj
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/workspaces/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

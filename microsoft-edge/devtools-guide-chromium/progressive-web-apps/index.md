@@ -104,7 +104,7 @@ The **Service Workers** pane in the **Application** panel is the main place in D
 
 ![The Service Workers pane.](../media/service-workers-pane.msft.png)
 
-*  If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.
+*  If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://airhorner.com`.
 
 *  The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** tool, or the `Go offline` option in the [Command Menu](../command-menu/index.md).
 
@@ -145,10 +145,6 @@ The **Cache Storage** pane provides a read-only list of resources that have been
 
 > [!NOTE]
 > The first time you open a cache and add a resource to it, DevTools may not detect the change.  Refresh the page and to display the cache.
-
-If you have two or more caches open, the caches are displayed under the **Cache Storage** dropdown list, as shown in the following screenshot.
-
-![The Cache Storage dropdown list.](../media/cache-pane-cache-storage.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -198,7 +194,7 @@ Related Guides:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/progressive-web-apps/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

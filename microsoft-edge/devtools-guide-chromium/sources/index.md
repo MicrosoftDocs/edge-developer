@@ -369,7 +369,6 @@ CSS changes take effect immediately; you don't need to manually save the changes
 #### See also
 
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
-* [DevTools for beginners: Get started with CSS](../beginners/css.md) - tutorial
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
 
 
@@ -392,8 +391,6 @@ To find text, press `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS.
 To undo an edit, press `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
 
 To view other commands while editing an HTML file, in the Editor pane, right-click the HTML file.
-
-You can also edit HTML by using an HTML editor, rather than DevTools.  For example, the article [DevTools for beginners: Get started with HTML and the DOM](../beginners/html.md) uses a website that enables HTML editing within the webpage.
 
 
 ### Going to a line number or function
@@ -563,5 +560,5 @@ The following articles cover the **Debugger** pane and breakpoints:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/sources/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

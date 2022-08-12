@@ -23,13 +23,13 @@ To quickly open the **Search** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. In DevTools, press `Esc` to open the Drawer, and then on the Drawer toolbar, select the **Search** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, press `Esc` to open Quick View, and then on the Quick View toolbar, select the **Search** tab. 
 
-   Or, press `Ctrl`+`Shift`+`F` (Windows, Linux) or `Command`+`Option`+`F` (macOS).
+  Or, press `Ctrl`+`Shift`+`F` (Windows, Linux) or `Command`+`Option`+`F` (macOS).
 
-The **Search** tool appears in the **Drawer**, with a search toolbar:
+The **Search** tool appears in the **Quick View** panel with a search toolbar:
 
-:::image type="content" source="../media/search-tool/search-tool-first-open-reduced.png" alt-text="The Search tool, with the search toolbar." lightbox="../media/search-tool/search-tool-first-open.png":::
+![The Search tool, with the search toolbar](../media/search-tool/search-tool-first-open.png)
 
 See also [Global keyboard shortcuts](../shortcuts/index.md#global-keyboard-shortcuts).
 
