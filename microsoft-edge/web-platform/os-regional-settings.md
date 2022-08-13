@@ -27,7 +27,7 @@ To set the user’s language preferences, Microsoft Edge gets the default values
 | The language/region used for formatting date, time, numbers, etc. | The language in the **edge://settings/languages** list specified as the **displayed language** |
 
 #### Regional format
-To reflect a customer’s regional preferences (especially in the cases where the customer has changed their default preferences in the OS), Microsoft Edge is making a new Setting available in the “Language” section of Settings:
+To reflect a customer's regional preferences (especially when the user has changed their default preferences in the OS), Microsoft Edge has a new setting in the **Language** section of **Settings**:
 
 ![Share additional OS regional format with the option **limited** selected.](media/os-regional-setting-screenshot.msft.png)
 
