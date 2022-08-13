@@ -9,7 +9,7 @@ ms.date: 08/11/2022
 --- 
 # Updates to Region information exposed to web content
 
-Microsoft Edge provides OS regional preference information to web content in order to help web site authors curate regional tailored experiences for their customers.
+Microsoft Edge provides operating sysytem (OS) regional preference information to web content to help web site authors create regional experiences on their website. This feature allows website authors to deliver value to customers who specifically change their regional preferences in the OS to reflect their personal preferences.
 
 ## Data Presentation
 Users want to see dates, times, numbers, and other formatting printed according to their preferences. For example, the US geographic region translates **7/2/2022** into **July 2nd, 2022**.  Another geographic region could translate that same date into **February 7, 2022** because they read the month and day inversely. 
