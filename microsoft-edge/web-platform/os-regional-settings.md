@@ -13,8 +13,6 @@ Microsoft Edge provides operating sysytem (OS) regional preference information t
 
 Users want to see dates, times, numbers, and other formatting printed according to their preferences. For example, the US geographic region translates **7/2/2022** into **July 2nd, 2022**.  Another geographic region could translate that same date into **February 7, 2022** because they read the month and day inversely. 
 
-This feature enables website authors to deliver value to these customers in particular—customers who specifically change their regional preferences in the OS to reflect their personal needs or interests. 
-
 ## Regional Codes
 The user’s formatting preferences are abstracted into a simple regional code, which is used by web applications to infer the various details noted above about dates, times, and other formatting preferences. With a regional code, websites can use a built-in Internationalization API to properly format information into the user's preferences. The built-in Internationalization API saves lots of MB of data transfer over the network, keeping websites small and allowing them to quickly and easily adapt to different regions. In general, the website's internationalization customer experiences are only as good as the regional code that they're able to determine for the current user. 
 
