@@ -9,7 +9,6 @@ ms.date: 08/11/2022
 --- 
 # Updates to Region information exposed to web content
 
-## Abstract 
 Microsoft Edge provides OS regional preference information to web content in order to help web site authors curate regional tailored experiences for their customers.
 
 ## Data Presentation
