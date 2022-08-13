@@ -26,7 +26,7 @@ To set the user’s language preferences, Microsoft Edge gets the default values
 | The Language used to render web sites | **Website Server-side processing**: Microsoft Edge sends the language list (as regional codes) specified in **edge://settings/languages** via the accept-language header. <br><br> **Website Client-side processing**: Microsoft Edge makes the language list (as regional codes) available via the `navigator.languages` DOM API. The preferred language (at the top of the list) is also available as `navigator.language`. |
 | The language/region used for formatting date, time, numbers, etc. | The language in the **edge://settings/languages** list specified as the **displayed language** |
 
-### Regional Format
+#### Regional format
 To reflect a customer’s regional preferences (especially in the cases where the customer has changed their default preferences in the OS), Microsoft Edge is making a new Setting available in the “Language” section of Settings:
 
 ![Share additional OS regional format with the option **limited** selected.](media/os-regional-setting-screenshot.msft.png)
