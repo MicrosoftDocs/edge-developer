@@ -82,4 +82,4 @@ The default regional code is what is surfaced via the new user preference. For e
 Intl.DateTimeFormat().resolvedOptions().locale 
 ```
 
-Other areas in the platform, such as the accept-languages header sent via HTTP/HTTPS gets requests and the `navigator.language` and `navigator.languages` API aren't impacted by the regional information shared by the OS as noted earlier.
+Other areas in the platform, such as the `accept-languages` header that's sent via HTTP/HTTPS GET requests, and the `navigator.language` and `navigator.languages` APIs, aren't impacted by the regional information that's shared by the OS, as noted earlier.
