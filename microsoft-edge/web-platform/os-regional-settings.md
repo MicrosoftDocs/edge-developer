@@ -40,7 +40,7 @@ Customers have three settings on Microsoft Edge to select the level of informati
 * Limited (default) 
 * Always (not recommended). 
 
-#### Never Setting
+#### The Never setting
 To minimize the risks, customers can disable the sharing of OS regional information by selecting **Never**. The **Never** option prevents websites from reading region information, but doesn't block any specific OS regional customizations that the user has made from being exposed to website content. Instead, the browser's display language is used to derive a default region. 
 
 #### The Limited setting (default)
