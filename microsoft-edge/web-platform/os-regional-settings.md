@@ -62,7 +62,7 @@ A related new policy added to Microsoft Edge provides a setting for corporate or
 
 In addition, an [older policy](/DeployEdge/microsoft-edge-policies#applicationlocalevalue) (**ApplicationLocaleValue**) allows setting the Microsoft Edge locale and prevents users from changing it. 
 
-## Avoiding Potential Misuse 
+## Avoiding potential misuse
 We believe that **limited** is the right default that allows the most customer’s regional preferences to be respected with the least amount of risk of the website misusing this information.
 
 #### Fingerprinting Entropy
