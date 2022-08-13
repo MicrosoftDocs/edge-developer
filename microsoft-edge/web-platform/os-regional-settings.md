@@ -18,7 +18,7 @@ The user’s formatting preferences are abstracted into a simple regional code, 
 
 A regional code is a two-letter language code followed by a hyphen and a two-letter region code.  Microsoft Edge uses ICU, which is an implementation of the Unicode standard's Internationalization API.  See [ICU](https://icu.unicode.org/home).
 
-To set the user’s language preferences, Microsoft Edge gets the default values from the OS at the time it's first installed. After that, users can change the language preferences on **edge://settings/languages** and then sorting them in priority order.
+To set the user's language preferences, Microsoft Edge gets the default values from the OS at the time it's first installed. After that, users can change the language preferences on **edge://settings/languages** and then sorting them in priority order.
 
 |Microsoft Edge Languages settings| Description |
 |--------|-------------------------|
