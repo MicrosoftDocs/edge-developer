@@ -20,7 +20,7 @@ A regional code is a two-letter language code followed by a hyphen and a two-let
 
 To set the user’s language preferences, Microsoft Edge gets the default values from the OS at the time it's first installed. After that, users can change the language preferences on **edge://settings/languages** and then sorting them in priority order.
 
-|Microsoft Edge Setting Category| Description |
+|Microsoft Edge Languages settings| Description |
 |--------|-------------------------|
 | The language used for rendering Microsoft Edge's UI | edge://settings/languages. One item in the list will indicate **Microsoft Edge is displayed in this language**|
 | The Language used to render web sites | **Website Server-side processing**: Microsoft Edge sends the language list (as regional codes) specified in **edge://settings/languages** via the accept-language header. <br><br> **Website Client-side processing**: Microsoft Edge makes the language list (as regional codes) available via the `navigator.languages` DOM API. The preferred language (at the top of the list) is also available as `navigator.language`. |
