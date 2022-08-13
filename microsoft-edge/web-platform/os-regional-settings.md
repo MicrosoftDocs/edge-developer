@@ -22,7 +22,7 @@ To set the user's language preferences, Microsoft Edge gets the default values f
 
 |Microsoft Edge Languages settings| Description |
 |--------|-------------------------|
-| The language used for rendering Microsoft Edge's UI | edge://settings/languages. One item in the list will indicate **Microsoft Edge is displayed in this language**|
+| **Microsoft Edge is displayed in this language** | One item in the list of **Preferred languages** indicates the language used for rendering Microsoft Edge's UI|
 | The Language used to render web sites | **Website Server-side processing**: Microsoft Edge sends the language list (as regional codes) specified in **edge://settings/languages** via the `accept-language` header. <br><br> **Website Client-side processing**: Microsoft Edge makes the language list (as regional codes) available via the `navigator.languages` DOM API. The preferred language (at the top of the list) is also available as `navigator.language`. |
 | The language/region used for formatting date, time, numbers, etc. | The language in the **edge://settings/languages** list specified as the **displayed language** |
 
