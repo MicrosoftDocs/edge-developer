@@ -51,6 +51,9 @@ Note: the **limited** value is similar to current Firefox behavior for exposing 
 #### The Always setting (not recommended)
 If **Always** is selected, the customer is exposed to the full set of risks noted earlier: the potential to be easily signaled out for fingerprinting, and also to potentially see website language-processing problems and inconsistencies. However, the user's OS preferences will be made available to the website without any limitations or restrictions to be sure their preferences are respected. 
 
+
+
+<!-- ====================================================================== -->
 ## Policy Controls 
 A related new policy added to Microsoft Edge provides a setting for corporate or enterprise-level default configurations: **ShareOSRegionThroughJavaScriptLocale** which accepts an integer with potential values: 
 
