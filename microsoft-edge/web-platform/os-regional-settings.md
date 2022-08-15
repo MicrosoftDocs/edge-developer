@@ -54,7 +54,8 @@ The default recommended value is **limited**. With this setting, the above risks
 Note: the **limited** value is similar to current Firefox behavior for exposing the regional code as described in [Firefox Source Docs documentation (mozilla.org)](https://firefox-source-docs.mozilla.org/intl/locale.html#regional-preferences), but also offers the possibility to not share this information at all. 
 
 #### The Always setting (not recommended)
-If **Always** is selected, the customer is exposed to the full set of risks noted earlier: the potential to be easily signaled out for fingerprinting, and also to potentially see website language-processing problems and inconsistencies. However, the user's OS preferences will be made available to the website without any limitations or restrictions to be sure their preferences are respected. 
+
+If **Always** is selected, the customer is exposed to the full set of risks noted earlier: the potential to be easily signaled out for fingerprinting, and also to potentially see website language-processing problems and inconsistencies. However, the user's OS preferences will be made available to the website without any limitations or restrictions, to be sure their preferences are respected. 
 
 
 
