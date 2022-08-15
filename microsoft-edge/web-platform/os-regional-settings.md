@@ -61,7 +61,7 @@ If **Always** is selected, the customer is exposed to the full set of risks note
 
 <!-- ====================================================================== -->
 ## Policy Controls 
-A related new policy added to Microsoft Edge provides a setting for corporate or enterprise-level default configurations: **ShareOSRegionThroughJavaScriptLocale** which accepts an integer with potential values: 
+A related new policy in Microsoft Edge, **ShareOSRegionThroughJavaScriptLocale**, provides a setting for corporate or enterprise-level default configurations.  This setting accepts an integer with the following potential values: 
 
 |Number| Description |
 |--------|-------------------------|
