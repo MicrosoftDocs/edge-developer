@@ -14,7 +14,12 @@ Microsoft Edge provides operating system (OS) regional preference information to
 Users want to see dates, times, numbers, and other formatting printed according to their preferences. For example, the US geographic region translates **7/2/2022** into **July 2nd, 2022**.  Another geographic region could translate that same date into **February 7, 2022** because they read the month and day inversely. 
 
 ## Regional Codes
-The user’s formatting preferences are abstracted into a simple regional code, which is used by web applications to infer the various details noted above about dates, times, and other formatting preferences. With a regional code, websites can use a built-in Internationalization API to properly format information into the user's preferences. The built-in Internationalization API saves lots of MB of data transfer over the network, keeping websites small and allowing them to quickly and easily adapt to different regions. In general, the website's internationalization customer experiences are only as good as the regional code that they're able to determine for the current user. 
+
+The user's formatting preferences are abstracted into a simple regional code, which is used by web applications to infer the various details noted above about dates, times, and other formatting preferences.
+
+By using a regional code, websites can use the built-in Internationalization API to properly format information into the user's preferences.  The Internationalization API saves lots of MB of data transfer over the network, keeping websites small and allowing them to quickly and easily adapt to different regions.
+
+In general, the website's internationalization customer experiences are only as good as the regional code that they're able to determine for the current user. 
 
 A regional code is a two-letter language code followed by a hyphen and a two-letter region code.  Microsoft Edge uses ICU, which is an implementation of the Unicode standard's Internationalization API.  See [ICU](https://icu.unicode.org/home).
 
