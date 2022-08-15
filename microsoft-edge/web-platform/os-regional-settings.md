@@ -38,7 +38,7 @@ To reflect a customer's regional preferences (especially when the user has chang
 
 This access will allow websites to have visibility into more customer's specific regional preferences than was previously possible. Customers that changed their OS regional preferences may now see their preferences reflected automatically in more websites.
 
-## Sharing Setting
+## The Sharing setting
 Customers have three settings on Microsoft Edge to select the level of information their browser will share about their regions:
 
 * Never 
