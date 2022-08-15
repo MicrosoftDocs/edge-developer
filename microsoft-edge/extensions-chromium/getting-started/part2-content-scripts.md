@@ -263,7 +263,7 @@ The `matches` attribute is set to `<all_urls>`, which means that all files in `c
 
 In the content scripts that you're injecting, plan on using jQuery (`$`).  You added a minified version of jQuery and put it in your Extension package as `lib\jquery.min.js`.  These content scripts run in individual sandboxes, which means that the jQuery injected into the `popup.js` page isn't shared with the content.
 
-Keep in mind that even if the browser tab has JavaScript running on it on the loaded web page, any content injected doesn't have access to that.  That injected JavaScript just has access to the actual DOM loaded in that browser tab.
+Keep in mind that even if the browser tab has JavaScript running on it on the loaded web page, any content that's injected doesn't have access to that JavaScript.  The injected JavaScript only has access to the actual DOM that's loaded in that browser tab.
 
 
 <!-- ====================================================================== -->
