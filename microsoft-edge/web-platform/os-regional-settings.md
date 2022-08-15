@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/11/2022
+ms.date: 08/15/2022
 --- 
 # Updates to Region information exposed to web content
 
