@@ -69,7 +69,7 @@ A related new policy in Microsoft Edge, **ShareOSRegionThroughJavaScriptLocale**
 | 2 | Always | 
 | 3 | Never | 
 
-In addition, an [older policy](/DeployEdge/microsoft-edge-policies#applicationlocalevalue) (**ApplicationLocaleValue**) allows setting the Microsoft Edge locale and prevents users from changing it. 
+In addition, an older policy, [ApplicationLocaleValue](/DeployEdge/microsoft-edge-policies#applicationlocalevalue), allows setting the Microsoft Edge locale and prevents users from changing it. 
 
 ## Avoiding potential misuse
 We believe that **limited** is the right default that allows the most customer’s regional preferences to be respected with the least amount of risk of the website misusing this information.
