@@ -23,6 +23,7 @@ You'll learn to update your pop-up menu to replace your static stars image with 
 
 
 <!-- ====================================================================== -->
+
 ## Step 1: Remove the image from the pop-up and replace it with a button.
 
 Update your `popup.html` file with some straightforward markup that displays a title and a button.  You'll later program that button in a different step, but for now include a reference to an empty JavaScript file `popup.js`.  Below is a sample updated HTML:
