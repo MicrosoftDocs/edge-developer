@@ -23,7 +23,7 @@ You'll learn to update your pop-up menu to replace your static stars image with 
 
 
 <!-- ====================================================================== -->
-## Remove the image from the pop-up and replace it with a button.
+## Step 1: Remove the image from the pop-up and replace it with a button.
 
 Update your `popup.html` file with some straightforward markup that displays a title and a button.  You'll later program that button in a different step, but for now include a reference to an empty JavaScript file `popup.js`.  Below is a sample updated HTML:
 
@@ -60,7 +60,7 @@ After updating and opening the extension, a pop-up opens with a display button.
 
 <!--![popup.html display after selecting the Extension icon] -->
 
-## Update strategy to display image at the top of the browser tab
+## Step 2: Update strategy to display image at the top of the browser tab
 
 After adding the button, the next task is to make it bring up the `images/stars.jpeg` image file at the top of the active tab page.
 
@@ -68,7 +68,7 @@ Each tab page (and extension) runs in its own thread. Create a content script th
 
 
 <!-- ====================================================================== -->
-## Step 2: Create the pop-up JavaScript to send a message
+## Step 3: Create the pop-up JavaScript to send a message
 
 Create the `popup/popup.js` and add code to send a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up **Display** button:
 
@@ -149,7 +149,7 @@ if (sendMessageId) {
 
 
 <!-- ====================================================================== -->
-## Step 3: Make your `stars.jpeg` available from any browser tab
+## Step 4: Make your `stars.jpeg` available from any browser tab
 
 This is why the `images/stars.jpeg` must use the `chrome.runtime.getURL` (or `chrome.extension.getURL` while using Manifest V2) API instead of just passing in the relative URL without the extra prefix like in the previous section.  The extra prefix, returned by `getUrl` with the image attached, should look something like the following:
 
@@ -186,7 +186,7 @@ You've now written the code in your `popup.js` file to send a message to the con
 
 
 <!-- ====================================================================== -->
-## Step 4: Update your `manifest.json` for content and web access
+## Step 5: Update your `manifest.json` for content and web access
 
 The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows:
 
