@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 08/16/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,23 +21,11 @@ ms.date: 05/04/2021
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Console object API Reference
-<!-- orig:
-# Console API reference
--->
 
-Use the `console` object's methods to write messages to the **Console** from your JavaScript.
+Use the `console` object's methods to write messages to the **Console** tool from your JavaScript code.
 
-You can also enter these methods into the **Console**.  For example, in the **Console**, to enter a `console` method that takes a variable:
+You can also use the `console` object's methods in the **Console** tool directly. This can be useful when debugging code with breakpoints to display the value of in-scope variables while the code is paused. To learn more about breakpoint debugging, see [Pause code with breakpoints](../javascript/breakpoints.md).
 
-1. In the **Sources** tool, in the Debugger, set a breakpoint in your JavaScript code.
-
-1. In the Debugger, step through your code.
-
-1. When you are in a valid context so that the desired variable is in-scope, enter a method of the `console` object into the **Console** tool.  The result is displayed in the **Console**.
-
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## assert
@@ -48,7 +36,7 @@ Writes an [error](#error) to the **Console** when `expression` evaluates to `fal
 console.assert(expression, object)
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Error`
+[Log level](reference.md#filter-by-log-level): `Error`
 
 ### Example
 
@@ -63,16 +51,13 @@ console.assert(x < y, {x, y, reason});
 
 ![The result of the console.assert() example](../media/console-demo-assert-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## clear
 
 Clears the **Console**.
 
-If [Preserve Log](reference.md#filter-by-log-level) is turned on, the [clear](#clear) method is turned off.
+If [Preserve Log](reference.md#persist-messages-across-page-loads) is turned on, the [clear](#clear) method is turned off.
 
 ```javascript
 console.clear()
@@ -82,9 +67,6 @@ console.clear()
 
 * [Clear the Console](reference.md#clear-the-console)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## count
@@ -95,7 +77,7 @@ Writes the number of times that the [count](#count) method has been invoked at t
 console.count([label])
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Info`
+[Log level](reference.md#filter-by-log-level): `Info`
 
 ### Example
 
@@ -110,9 +92,6 @@ console.count();
 
 ![The result of the console.count() example](../media/console-demo-count-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## countReset
@@ -130,20 +109,17 @@ console.countReset();
 console.countReset('coffee');
 ```
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## debug
 
-Identical to the [log](#log) method, except different log level.
+Identical to the [log](#log) method, but with the `Verbose` log level.
 
 ```javascript
 console.debug(object [, object, ...])
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Verbose`
+[Log level](reference.md#filter-by-log-level): `Verbose`
 
 ### Example
 
@@ -155,9 +131,6 @@ console.debug('debug');
 
 ![The result of the console.debug() example](../media/console-demo-debug-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## dir
@@ -168,7 +141,7 @@ Prints a JSON representation of the specified object.
 console.dir(object)
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Info`
+[Log level](reference.md#filter-by-log-level): `Info`
 
 ### Example
 
@@ -180,9 +153,6 @@ console.dir(document.head);
 
 ![The result of the console.dir() example](../media/console-demo-dir-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## dirxml
@@ -193,7 +163,7 @@ Prints an XML representation of the descendants of `node`.
 console.dirxml(node)
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Info`
+[Log level](reference.md#filter-by-log-level): `Info`
 
 ### Example
 
@@ -205,9 +175,6 @@ console.dirxml(document);
 
 ![The result of the console.dirxml() example](../media/console-demo-dirxml-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## error
@@ -218,7 +185,7 @@ Prints the `object` to the **Console**, formats it as an error, and includes a s
 console.error(object [, object, ...])
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Error`
+[Log level](reference.md#filter-by-log-level): `Error`
 
 ### Example
 
@@ -230,9 +197,6 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 
 ![The result of the console.error() example](../media/console-demo-error-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## group
@@ -259,9 +223,6 @@ console.groupEnd(label);
 
 ![The result of the console.group() example](../media/console-demo-group-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## groupCollapsed
@@ -272,9 +233,6 @@ Identical to the [log](#log) method, except the group is initially collapsed whe
 console.groupCollapsed(label)
 ```
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## groupEnd
@@ -285,9 +243,6 @@ Stops visually grouping messages.  See the [group](#group) method.
 console.groupEnd(label)
 ```
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## info
@@ -298,7 +253,7 @@ Identical to the [log](#log) method.
 console.info(object [, object, ...])
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Info`
+[Log level](reference.md#filter-by-log-level): `Info`
 
 ### Example
 
@@ -310,9 +265,6 @@ console.info('info');
 
 ![The result of the console.info() example](../media/console-demo-info-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## log
@@ -323,7 +275,7 @@ Prints a message to the **Console**.
 console.log(object [, object, ...])
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Info`
+[Log level](reference.md#filter-by-log-level): `Info`
 
 ### Example
 
@@ -335,9 +287,6 @@ console.log('log');
 
 ![The result of the console.log() example](../media/console-demo-log-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## table
@@ -348,25 +297,25 @@ Logs an array of objects as a table.
 console.table(array)
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Info`
+[Log level](reference.md#filter-by-log-level): `Info`
 
 ### Example
 
 ```javascript
 console.table([
-      {
-         first: 'René',
-         last: 'Magritte',
-      },
-      {
-         first: 'Chaim',
-         last: 'Soutine',
-         birthday: '18930113',
-      },
-      {
-         first: 'Henri',
-         last: 'Matisse',
-      }
+   {
+      first: 'René',
+      last: 'Magritte',
+   },
+   {
+      first: 'Chaim',
+      last: 'Soutine',
+      birthday: '18930113',
+   },
+   {
+      first: 'Henri',
+      last: 'Matisse',
+   }
 ]);
 ```
 
@@ -374,9 +323,6 @@ console.table([
 
 ![The result of the console.table() example](../media/console-demo-table-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## time
@@ -401,9 +347,6 @@ console.timeEnd();
 
 ![The result of the console.time() example](../media/console-demo-time-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## timeEnd
@@ -414,11 +357,8 @@ Stops a timer.  For more information, see the [time](#time) method.
 console.timeEnd([label])
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Info`
+[Log level](reference.md#filter-by-log-level): `Info`
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## trace
@@ -429,7 +369,7 @@ Prints a stack trace to the **Console**.
 console.trace()
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Info`
+[Log level](reference.md#filter-by-log-level): `Info`
 
 ### Example
 
@@ -445,9 +385,6 @@ first();
 
 ![The result of the console.trace() example](../media/console-demo-trace-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## warn
@@ -458,7 +395,7 @@ Prints a warning to the **Console**.
 console.warn(object [, object, ...])
 ```
 
-[Log level](reference.md#persist-messages-across-page-loads): `Warning`
+[Log level](reference.md#filter-by-log-level): `Warning`
 
 ### Example
 
@@ -470,9 +407,6 @@ console.warn('warn');
 
 ![The result of the console.warn() example](../media/console-demo-warn-button.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## See also
