@@ -84,6 +84,8 @@ The OS regional information could be misused by a website is in the consistency 
 
 When the language and regional information is self-consistent, then it doesn't really matter which signals the website uses to assemble its content presentation. However, if one part of the web platform starts reporting a language preference, but another part of the platform reports a separate language, then the website may start to mix-and-match regional preferences, resulting in strange and unusual experiences.  Watch for the phrasing of requests that mixes languages and regional preferences together, such as "Email sent on miércoles, 5 de enero de 2021".
 
+
+<!-- ====================================================================== -->
 ## Developer Details 
 The new setting to **Share additional OS regional format** directly impacts the JavaScript `Intl` object's default regional value and all other JavaScript APIs that use the default region (such as the `Date` constructor). 
 
