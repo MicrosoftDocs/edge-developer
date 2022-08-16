@@ -76,7 +76,7 @@ A related new policy in Microsoft Edge, **ShareOSRegionThroughJavaScriptLocale**
 In addition, an older policy, [ApplicationLocaleValue](/DeployEdge/microsoft-edge-policies#applicationlocalevalue), allows setting the Microsoft Edge locale and prevents users from changing it. 
 
 ## Avoiding potential misuse
-We believe that **Limited** is the right default that allows the most user's regional preferences to be respected with the least amount of risk of the website misusing this information.
+We believe that **Limited** is the right default that allows the most user's regional preferences to be respected with the least amount of risk of the website misusing this information.  
 
 #### Fingerprinting Entropy
 OS regional information could be misused to compromise the user's privacy.  The regional information would help hackers establish fingerprinting entropy. In combination with many other pre-existing bits of entropy in the platform today, the user could be uniquely identified leading to more potential secondary harm. 
