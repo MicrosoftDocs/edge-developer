@@ -31,7 +31,11 @@
               displayName: 
 
 # What's New pages ------------------------------------------------------------
-            # add new pages to nav page too
+            # also add new pages to nav page: /whats-new/whats-new.md
+            - name: Microsoft Edge 104
+              href: devtools-guide-chromium/whats-new/2022/08/devtools-104.md
+              displayName: what's new, announcements, release notes
+
             - name: Microsoft Edge 103
               href: devtools-guide-chromium/whats-new/2022/06/devtools-103.md
               displayName: what's new, announcements, release notes
@@ -178,10 +182,6 @@
                   href: devtools-guide-chromium/css/reference.md
                   displayName: Elements tool
 
-                - name: Get started with CSS
-                  href: devtools-guide-chromium/beginners/css.md
-                  displayName: Elements tool
-
                 - name: Get started viewing and changing CSS
                   href: devtools-guide-chromium/css/index.md
                   displayName: Elements tool
@@ -196,10 +196,6 @@
 
                 - name: Style editing for CSS-in-JS frameworks  # added article from blog
                   href: devtools-guide-chromium/css/css-in-js.md
-                  displayName: Elements tool
-
-                - name: Get started with HTML and the DOM  # orig article is 404
-                  href: devtools-guide-chromium/beginners/html.md
                   displayName: Elements tool
 
                 - name: Get started viewing and changing the DOM
@@ -1253,15 +1249,15 @@
 
             - name: WinRT
               items:
-                - name: Microsoft.Web.WebView2.Core (C#)
+                - name: Microsoft.Web.WebView2.Core
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: functions, methods
 
-                - name: COM Interop (C++)
+                - name: COM Interop/C++
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
                   displayName: functions, methods
 
-            - name: Win32 C++
+            - name: Win32/C++
               items:
                 - name: Win32 C++ WebView2 API conventions
                   href: webview2/concepts/win32-api-conventions.md

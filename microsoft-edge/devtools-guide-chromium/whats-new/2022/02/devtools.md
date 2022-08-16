@@ -118,7 +118,6 @@ Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon.](../
 
 See also:
 * [Service workers](../../../progressive-web-apps/index.md#service-workers) in _Debug Progressive Web Apps (PWAs)_ - debugging service workers in DevTools.
-* [Get started with HTML and the DOM](../../../beginners/html.md) - `<script>` tags in the **Elements** tool.
 
 
 <!-- ====================================================================== -->
