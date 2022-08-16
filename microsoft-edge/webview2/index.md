@@ -100,6 +100,7 @@ WebView2 apps can run on the following versions of Windows:
 
 <!-- possibly remove some of these and rely on TOC instead -->
 
+* [Overview of WebView2 features and APIs](concepts/overview-features-apis.md)
 * [Understand the different WebView2 SDK versions](concepts/versioning.md)
 * [Distribute your app and the WebView2 Runtime](concepts/distribution.md)
 * [Best practices for developing secure WebView2 apps](concepts/security.md)

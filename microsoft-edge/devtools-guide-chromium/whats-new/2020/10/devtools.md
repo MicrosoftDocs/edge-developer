@@ -192,7 +192,7 @@ See also:
 <!-- ====================================================================== -->
 #### View the Computed sidebar pane in the Styles pane
 
-Toggle the **Computed** pane in the **Styles** pane.  The **Computed** pane in the **Styles** pane is collapsed by default.  To display or hide the **Computed** pane within the **Styles** pane, click the **Show Computed Styles sidebar** (!['Show Computed Styles sidebar' icon.](../../media/2020/10/show-computed-styles-sidebar-icon.png)) icon/button.
+Toggle the **Computed** pane in the **Styles** pane.  The **Computed** pane in the **Styles** pane is collapsed by default.  To display or hide the **Computed** pane within the **Styles** pane, click the **Show Computed Styles sidebar** (!['Show Computed Styles sidebar' icon.](../../media/2020/10/show-computed-styles-sidebar-icon.png)) button.
 
 Opening the **Computed sidebar** pane:
 
@@ -324,5 +324,5 @@ For history, in the Chromium open-source project, see Issue [#1120316](https://c
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-87) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

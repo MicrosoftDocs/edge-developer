@@ -34,11 +34,11 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 
 1. Click the **Application** tab to open the **Application** panel.  The **Manifest** pane opens:
 
-   :::image type="content" source="../media/storage-application-manifest-empty.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest-empty.msft.png":::
+   ![The Manifest pane.](../media/storage-application-manifest-empty.msft.png)
 
 1. Under **Storage**, expand **Cookies**, then select an origin:
 
-   :::image type="content" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="The Cookies pane." lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+   ![The Cookies pane.](../media/storage-application-storage-cookies-selected.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -72,7 +72,7 @@ The **Cookies** table contains the following fields:
 
 To filter cookies by **Name** or **Value**, use the **Filter** text box:
 
-:::image type="content" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="Filtering out any cookies that don't contain the text ID." lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+![Filtering out any cookies that don't contain the text ID.](../media/storage-application-storage-cookies-filter-id.msft.png)
 
 Filtering by other fields isn't supported.
 
@@ -82,7 +82,7 @@ Filtering by other fields isn't supported.
 
 The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.  Double-click a field to edit it:
 
-:::image type="content" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Setting the name of a cookie to 'DEVTOOLS!'" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
+![Setting the name of a cookie to 'DEVTOOLS!'](../media/storage-application-storage-cookies-rename.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -90,17 +90,17 @@ The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields 
 
 To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)):
 
-:::image type="content" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Deleting a specific cookie." lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
+![Deleting a specific cookie.](../media/storage-application-storage-cookies-delete-selected.msft.png)
 
 To delete all cookies, click **Clear All** (![Clear All.](../media/clear-icon.msft.png)):
 
-:::image type="content" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Clearing all cookies." lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
+![Clearing all cookies.](../media/storage-application-storage-cookies-clear-all.msft.png)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/storage/cookies/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

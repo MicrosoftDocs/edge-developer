@@ -173,19 +173,21 @@ To submit the YouTube video URL of your video:
 
 1. On the store listing details webpage, paste the HTML code in the `YouTube video URL` field.
 
+
 ### Search terms requirements
 
 Search terms must meet the following requirements:
 
 *  You can enter search terms to use up to a maximum of 21 words.  Whether used as single words, phrases, or a combination of both, you're only allowed a maximum of 21 words.
 
-*  Up to a maximum of seven search terms:  single word or phrases.  Each search term has a character limit of 30 characters.
+*  Up to a maximum of seven search terms (single word or phrases).  Each search term has a character limit of 30 characters.
 
 
 <!-- ========================================================================== -->
 ## Step 6: Complete your submission
 
 On the **Submit your extension** webpage, add notes for certification to help test your extension.
+
 
 ### Notes for certification (optional)
 
@@ -207,5 +209,8 @@ After you provide the information, select **Publish** to submit your extension t
 
 After your submission passes certification, your extension is published in the Microsoft Edge Add-ons website.  The status of your extension in the Partner Center dashboard changes to `In the Store`.
 
-> [!NOTE]
-> If you encounter any issues in the submission or registration process, file a support ticket on [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) or send an email to [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
+
+<!-- ========================================================================== -->
+## Support for issues
+
+If you encounter any issues in the submission or registration process, file a support ticket on [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) or send an email to [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).

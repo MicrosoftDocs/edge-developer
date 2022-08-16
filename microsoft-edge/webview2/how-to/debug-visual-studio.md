@@ -45,7 +45,7 @@ First, install the **JavaScript diagnostics** component in **Desktop development
 
 1. In Visual Studio, under **Workloads**, select the **Desktop Development with C++** setting:
 
-   :::image type="content" source="./media/workloads.png" alt-text="Visual Studio Modifying Workloads Screen." lightbox="./media/workloads.png":::
+   ![Visual Studio Modifying Workloads Screen.](./media/workloads.png)
 
 1. Select **Individual components**, at the top.
 
@@ -55,7 +55,7 @@ First, install the **JavaScript diagnostics** component in **Desktop development
 
 1. Click **Modify**.
 
-   :::image type="content" source="./media/indiv-comp.png" alt-text="Visual Studio: Modifying values in the 'Individual components' tab." lightbox="./media/indiv-comp.png":::
+   ![Visual Studio: Modifying values in the 'Individual components' tab.](./media/indiv-comp.png)
 
 
 <!-- ====================================================================== -->
@@ -69,7 +69,7 @@ Second, enable script debugging for WebView2 apps, as follows.
 
 1. Under the **Debugger Type**, select **JavaScript (WebView2)**.
 
-   :::image type="content" source="./media/enb-js.png" alt-text="The 'Debugging' configuration property in Visual Studio." lightbox="./media/enb-js.png":::
+   ![The 'Debugging' configuration property in Visual Studio.](./media/enb-js.png)
 
 
 <!-- ====================================================================== -->
@@ -79,15 +79,15 @@ After doing the above setup, debug your WebView2 app, as follows.
 
 1. To set a breakpoint in your source code, hover to the left of the line number, and click to set a breakpoint.  The JS/TS debug adapter doesn't perform source path mapping.  You must open the exact same path associated with your WebView2.
 
-   :::image type="content" source="./media/breakpoint.png" alt-text="Adding a breakpoint in Visual Studio." lightbox="./media/breakpoint.png":::
+   ![Adding a breakpoint in Visual Studio.](./media/breakpoint.png)
 
 1. To run the debugger, select the bit size of the platform, and then click the green Play button next to **Local Windows Debugger**.  The app runs and the debugger connects to the first WebView2 process that is created.
 
-   :::image type="content" source="./media/run.png" alt-text="The Local Windows Debugger in Visual Studio." lightbox="./media/run.png":::
+   ![The Local Windows Debugger in Visual Studio.](./media/run.png)
 
 1. In the **Debug Console**, find the output from the debugger.
 
-   :::image type="content" source="./media/console.png" alt-text="Debug Console in Visual Studio." lightbox="./media/console.png":::
+   ![Debug Console in Visual Studio.](./media/console.png)
 
 
 <!-- ====================================================================== -->

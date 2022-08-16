@@ -79,7 +79,10 @@ For more details about improvements and fixes, check the [changelog file](https:
 
 ![DevTools extension integrated with Visual Studio Code Debugger workflow.](../../media/2021/07/extension-integrated-debugger.msft.png)
 
-For more information, see [Browser debugging with Microsoft Edge DevTools integration in Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code).  Get the [Microsoft Edge Developer Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).  Microsoft Visual Studio Code updates extensions automatically; to update this extension manually instead, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).
+See also:
+* [Use the extension with the Visual Studio Code debugging workflow](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#use-the-extension-with-the-visual-studio-code-debugging-workflow) in _Microsoft Edge DevTools extension for Visual Studio Code_.
+
+Get the [Microsoft Edge Developer Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).  Microsoft Visual Studio Code updates extensions automatically; to update this extension manually instead, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).
 
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
@@ -195,5 +198,5 @@ For the history of this feature, see Issue [932971](https://bugs.chromium.org/p/
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-93) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -261,7 +261,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 
 1. Make sure the button control has focus.
 
-1. In the **Properties** panel, in the **Design** section, change the **(Name)** (probably from **button1**) to **goButton**.
+<!-- 1. In the **Properties** panel, in the **Design** section, change the **(Name)** (probably from **button1**) to **goButton**. -->
 
 1. In the **Properties** panel, in the bolded **Appearance** section (about 15 properties down), change the **Text** property (probably from **button1**) to **Go!**
 
@@ -561,7 +561,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save changes.
 
-1. Press **F5** to build and run the project.
+1. Press `F5` to build and run the project.
 
 1. Enter a URL, such as `https://www.bing.com`:
 
@@ -589,7 +589,7 @@ developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:
-* [WebView2 sample: WinForms browser app](../samples/webview2windowsformsbrowser.md) - Demonstrates more WebView2 APIs than the present tutorial.
+* [WinForms sample app](../samples/webview2windowsformsbrowser.md) - Demonstrates more WebView2 APIs than the present tutorial.
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)

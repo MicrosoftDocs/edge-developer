@@ -10,7 +10,13 @@ ms.date: 10/27/2020
 ---
 # Designing accessible websites
 
-Creating an inclusive design makes technology usable by all people no matter their age, education, geographic location, language, or disability.  People using technology and browsing the web have a wide range of abilities and preferences.  As you design your website, keep in mind the following key accessibility scenarios.
+<!-- summary sentence -->
+
+Create a webpage design that's usable by all people, no matter their mouse or keyboard preference, age, education, geographic location, language, or disability.
+
+<!-- /summary sentence -->
+
+People using technology and browsing the web have a wide range of abilities and preferences.  As you design your website, keep in mind the following key accessibility scenarios.
 
 
 <!-- ====================================================================== -->
@@ -28,7 +34,7 @@ Many accessibility users rely on the keyboard to navigate and operate the UI by:
 
 *  Navigating in container elements such as lists, grids, and tree views by using the arrow keys.
 
-*  Invoking actions by pressing the `Enter` key or Spacebar.
+*  Invoking actions by pressing the `Enter` key or `Spacebar`.
 
 *  Using shortcut keys to efficiently access other app functionality.
 

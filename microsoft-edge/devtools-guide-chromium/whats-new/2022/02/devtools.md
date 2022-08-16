@@ -118,7 +118,6 @@ Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon.](../
 
 See also:
 * [Service workers](../../../progressive-web-apps/index.md#service-workers) in _Debug Progressive Web Apps (PWAs)_ - debugging service workers in DevTools.
-* [Get started with HTML and the DOM](../../../beginners/html.md) - `<script>` tags in the **Elements** tool.
 
 
 <!-- ====================================================================== -->
@@ -157,6 +156,6 @@ Microsoft Edge version 98 also includes the following updates from the Chromium 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 <!--
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 -->

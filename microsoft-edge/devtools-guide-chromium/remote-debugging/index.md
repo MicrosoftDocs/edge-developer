@@ -31,7 +31,7 @@ Remote debug live content on an Android device from your Windows or macOS comput
 *  Screencast content from your Android device onto a DevTools instance on your development machine.
 
 <!--
-:::image type="content" source="../media/remote-debugging--remote-debugging.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine." lightbox="../media/remote-debugging--remote-debugging.msft.png":::
+![Remote Debugging lets you inspect a page running on an Android device from your development machine.](../media/remote-debugging--remote-debugging.msft.png)
 -->
 
 > [!NOTE]
@@ -52,16 +52,16 @@ The workflow below works for most users.  For more help, see [Troubleshooting: D
 
 1. In the Address bar, go to `edge://inspect`.
 
-   :::image type="content" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="The edge://inspect page in Microsoft Edge." lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
+   ![The edge://inspect page in Microsoft Edge.](../media/remote-debugging-edge-inspect-no-targets.msft.png)
 
 1. Connect your Android device directly to your development machine using a USB cable.  The first time you try to connect, a prompt should be displayed about DevTools detecting an unknown device.  Accept the **Allow USB Debugging** permission prompt on your Android device.
 
-   :::image type="content" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="The Allow USB Debugging permission prompt on an Android device." lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
+   ![The Allow USB Debugging permission prompt on an Android device.](../media/remote-debugging-android-permissions-prompt.msft.png)
 
 1. If the model name of your Android device is displayed, then Microsoft Edge has successfully established the connection to your device.  Continue to the [Step 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) section.
 
    <!--
-   :::image type="content" source="../media/remote-debugging--unknown-device.msft.png" alt-text="The Remote Devices tab has successfully detected an unknown device that is pending authorization." lightbox="../media/remote-debugging--unknown-device.msft.png":::
+   ![The Remote Devices tab has successfully detected an unknown device that is pending authorization.](../media/remote-debugging--unknown-device.msft.png)
    -->
 
 ### Troubleshooting: DevTools isn't detecting the Android device
@@ -94,7 +94,7 @@ If you find a solution that isn't mentioned on this page or in [DevTools Devices
 
 1. Go to `edge://inspect`.  The model name of your Android device is displayed, followed by the device serial number.  Below that, the version of Microsoft Edge running on the device should be displayed, with the version number in parentheses.  Each open Microsoft Edge tab gets a unique section.  You can interact with that tab from a section.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->
 
-  :::image type="content" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="A connected remote device." lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
+  ![A connected remote device.](../media/remote-debugging-edge-inspect-with-targets.msft.png)
 
 1. In the **Open tab with url** text box, enter a URL and then click **Open**.  The page opens in a new tab on your Android device.
 
@@ -108,7 +108,7 @@ The version of Microsoft Edge running on your Android device determines the vers
 
 Select **focus tab**, **reload**, or **close** next to the tab that you want to focus, refresh, or close.
 
-:::image type="content" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="The buttons for focusing, refreshing, or closing a tab." lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
+![The buttons for focusing, refreshing, or closing a tab.](../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png)
 
 ### Inspect elements
 
@@ -140,7 +140,7 @@ Use the following tips to help you screencast:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/remote-debugging/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

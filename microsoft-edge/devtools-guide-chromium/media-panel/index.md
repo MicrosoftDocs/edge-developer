@@ -34,7 +34,7 @@ The **Media** tool is the main place in DevTools for inspecting the media player
 
 1. In DevTools, on the main toolbar, select the **Media** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
-   :::image type="content" source="../media/media-panel-empty.msft.png" alt-text="Media panel." lightbox="../media/media-panel-empty.msft.png":::
+   ![Media panel.](../media/media-panel-empty.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -48,19 +48,19 @@ The **Media** tool is the main place in DevTools for inspecting the media player
 
 1. Click the player.  The **Properties** panel displays the properties of the media player.
 
-   :::image type="content" source="../media/media-panel-view.msft.png" alt-text="Media properties." lightbox="../media/media-panel-view.msft.png":::
+   ![Media properties.](../media/media-panel-view.msft.png)
 
 1. To view all the media player events, click the **Events** panel.
 
-   :::image type="content" source="../media/media-panel-events.msft.png" alt-text="Media events." lightbox="../media/media-panel-events.msft.png":::
+   ![Media events.](../media/media-panel-events.msft.png)
 
 1. To view the media player message logs, click the **Messages** panel.  You can filter the messages by log level or string.
 
-   :::image type="content" source="../media/media-panel-messages.msft.png" alt-text="Media messages." lightbox="../media/media-panel-messages.msft.png":::
+   ![Media messages.](../media/media-panel-messages.msft.png)
 
 1. On the **Timeline** panel, the media playback and buffer status is displayed live.
 
-   :::image type="content" source="../media/media-panel-timeline.msft.png" alt-text="Media timeline." lightbox="../media/media-panel-timeline.msft.png":::
+   ![Media timeline.](../media/media-panel-timeline.msft.png)
 
 ### Remote debugging
 
@@ -72,7 +72,7 @@ View the media players information on an Android device from your Windows or mac
 
     <!-- TODO: recreate image using an Android device -->
     <!--
-   :::image type="content" source="../media/media-panel-remote-debug.msft.png" alt-text="Remote debugging." lightbox="../media/media-panel-remote-debug.msft.png":::
+   ![Remote debugging.](../media/media-panel-remote-debug.msft.png)
     -->
 
 
@@ -89,7 +89,7 @@ You can hide (or show) each media player, for an easier debugging experience:
     *  To hide a single media player, right-click a media player, and then select **Hide player**.
     *  To hide all of the other media players, right-click a media player, and then select **Hide all others**.
 
-:::image type="content" source="../media/media-panel-hide-show.msft.png" alt-text="Hide media players." lightbox="../media/media-panel-hide-show.msft.png":::
+![Hide media players.](../media/media-panel-hide-show.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -97,13 +97,13 @@ You can hide (or show) each media player, for an easier debugging experience:
 
 *  To download the media player info as a JSON file, right-click a media player, and then select **Save player info**.
 
-:::image type="content" source="../media/media-panel-save.msft.png" alt-text="Export media information." lightbox="../media/media-panel-save.msft.png":::
+![Export media information.](../media/media-panel-save.msft.png)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/media-panel/) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

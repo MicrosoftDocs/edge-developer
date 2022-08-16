@@ -60,7 +60,7 @@ See also:
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do any of the following: 
 
 *  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
-*  Press `Ctrl`+`Shift`+`H` (Windows/Linux) or `Cmd`+`Shift`+`H` (macOS).
+*  Press `Ctrl`+`Shift`+`H` (Windows, Linux) or `Cmd`+`Shift`+`H` (macOS).
 *  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type `tooltips`.
 
 Then hover over each outlined region of DevTools:
@@ -489,5 +489,5 @@ For the history of this feature in the Chromium open-source project, see Issue [
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-91) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
