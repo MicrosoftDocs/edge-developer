@@ -20,6 +20,8 @@ To reflect a user's regional preferences for how data is displayed (such as the 
 
 This access will allow websites to have visibility into more user's specific regional preferences than was previously possible. Customers that changed their OS regional preferences may now see their preferences reflected automatically in more websites.
 
+
+<!-- ====================================================================== -->
 ## OS Regional Data Display Codes
 
 The user's formatting preferences are abstracted into a simple regional code, which is used by web applications to infer the various details noted above about dates, times, and other formatting preferences.
