@@ -85,7 +85,7 @@ When the language and regional information is self-consistent, then it doesn't r
 ## Developer Details 
 The new setting to **Share additional OS regional format** directly impacts the JavaScript `Intl` object's default regional value and all other JavaScript APIs that use the default region (such as the `Date` constructor). 
 
-In cases where the `Intl` object's constructors are used to create a new regional code, such as `DateTimeFormat` (with an existing regional code where these behaviors are unchanged). However, the constructors do offer options to create objects without a specified regional code, but the APIs fallback to a default regional code.
+When the `Intl` object's constructors are used to create a new regional code, such as `DateTimeFormat`, with an existing regional code these behaviors are unchanged). However, the constructors do offer options to create objects without a specified regional code, but the APIs fallback to a default regional code.
 
 The default regional code is what is surfaced via the new user preference. For example, a `DateTimeFormat` can be created with the user's default regional code (and inspected) via the following expression:
 
