@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/15/2022
 --- 
-# Updates to Region information exposed to web content
+# Introducing the OS regional sharing setting
 
 Microsoft Edge provides operating system (OS) regional preference information to create web content to help website authors create regional experiences on their web site. This feature allows website authors to deliver value to customers who specifically change their regional preferences in the OS to reflect their personal preferences.
 
