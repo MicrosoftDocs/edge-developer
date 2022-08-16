@@ -723,7 +723,7 @@ In WebView2 you can you can set a [Favicon](https://developer.mozilla.org/en-US/
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.FaviconChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1293.44&preserve-view=true#faviconchanged)
+* [CoreWebView2.FaviconChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#faviconchanged)
 * [CoreWebView2.FaviconUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1293.44&preserve-view=true#faviconuri)
 
 ##### [Win32/C++](#tab/win32cpp)
