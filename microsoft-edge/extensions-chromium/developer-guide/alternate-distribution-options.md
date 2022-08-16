@@ -43,8 +43,8 @@ The following examples use `1.0` as the version, and `aaaaaaaaaabbbbbbbbbbcccccc
 To distribute your extension using the Windows registry:
 
 1. Find or create the following key in the registry:
-   *  32-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`.
-   *  64-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`.
+   *  32-bit Windows: `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`
+   *  64-bit Windows: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`
 
 1. Create a new key, or folder, under **Extensions** with the same name as the ID of your extension. For example, create the key with the name `aaaaaaaaaabbbbbbbbbbcccccccccc`.
 
@@ -59,38 +59,38 @@ To distribute your extension using the Windows registry:
    > [!NOTE]
    > If you want to install an extension from the Chrome Web Store, set the value of `update_url` to `https://clients2.google.com/service/update2/crx`.
 
-1. Verify that your extension is listed in Microsoft Edge, by going to `edge://extensions`.
+1. In Microsoft Edge, go to `edge://extensions` and verify that your extension is listed.
 
 
 <!-- ====================================================================== -->
 ## Use a preferences JSON file (macOS and Linux)
 
-To distribute your extension using a preferences JSON file:
+To distribute your extension by using a preferences JSON file:
 
-1. When using Linux, ensure your `.crx` extension file is available on the machine that the extension will be installed on. Copy the `.crx` extension file to a local directory, or use a  network share that is reachable from the machine.
+1. When using Linux, make sure your `.crx` extension file is available on the machine that the extension will be installed on.  Copy the `.crx` extension file to a local directory, or use a network share that is reachable from the machine.
 
-1. Create a JSON file where the name of the file corresponds to the ID of your extension. For example, create a JSON file with the file name `aaaaaaaaaabbbbbbbbbbcccccccccc.json`.
+1. Create a <!--todo: preferences?--> JSON file where the name of the file corresponds to the ID of your extension. For example, create a JSON file with the file name `aaaaaaaaaabbbbbbbbbbcccccccccc.json`.
 
-1. Depending on your operating system, save the JSON file to one of the following folders:
+1. Depending on your operating system, save the <!--todo: preferences?--> JSON file to one of the following folders:
 
     *  **macOS**
         *  User-specific: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`
         *  For all users: `/Library/Application Support/Microsoft/Edge/External Extensions/`
 
-        To prevent unauthorized users from installing extensions for all users, make sure your extension file is read-only.
+        To prevent unauthorized users from installing extensions for all users, make sure your extension <!--todo: preferences file, or .crx file?-->  file is read-only.
 
         Also make sure that the following conditions are met:
 
         *  Every directory in the path is owned by the user root.
         *  Every directory in the path is assigned to the `admin` or `wheel` group.
-        *  Every directory in the path isn't world writable.
-        *  The path must also be free of symbolic links.
+        *  Every directory in the path isn't `world` writable.
+        *  The path must be free of symbolic links.
 
     *  **Linux**
         *  User-specific: `~/.config/microsoft-edge/External Extensions/`
         *  For all users: `/usr/share/microsoft-edge/extensions/`
 
-1. Depending on your scenario, copy the appropriate code that follows, into your JSON file.
+1. Depending on your scenario, copy the appropriate code that follows, into your <!--todo: preferences?--> JSON file.
 
     *  Applies to Linux only.  If you install from a file, specify the location and version in `external_crx` and `external_version`:
 
@@ -103,7 +103,7 @@ To distribute your extension using a preferences JSON file:
 
     *  Applies to macOS and Linux.  If you install from an `update_URL`, specify the update URL in `external_update_url`.
 
-       Copy the following code into your JSON file when installing from local `.crx` files on Linux only:
+       Copy the following code into your <!--todo: preferences?--> JSON file when installing from local `.crx` files on Linux only:
 
        ```json
        {
@@ -111,7 +111,7 @@ To distribute your extension using a preferences JSON file:
        }
        ```
 
-    *  Copy the following code to your JSON file when installing from the Microsoft Edge Add-ons website on macOS and Linux:
+    *  Copy the following code to your <!--todo: preferences?--> JSON file when installing from the Microsoft Edge Add-ons website on macOS and Linux:
 
        ```json
        {
@@ -138,9 +138,14 @@ To distribute your extension using a preferences JSON file:
 
 Microsoft Edge scans the metadata entries in the registry each time the browser starts, and makes any changes to the externally installed extensions.
 
-To update your extension to a new version, update the version in the manifest file, and then update the version in the registry.
+To update your extension to a new version, update the `version` string in the <!--todo: host? extension?--> manifest file, and then update the version in the registry.
 
 You may need to uninstall externally installed extensions, which were installed as part of a bundle of software that was previously installed on the machine.  To uninstall your extension, remove your preferences JSON file or remove the key from the registry.
+
+
+See also:
+* [Manifest file format for extensions](../getting-started/manifest-format.md)
+
 
 
 <!-- ====================================================================== -->

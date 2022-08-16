@@ -79,41 +79,41 @@ Note that The Microsoft Edge program doesn't currently support registering with 
 
 Fill in the fields of the registration form as follows.
 
-### Account country/region
+#### Account country/region
 
 This field is either where you live, or where your business is located.
 
 > [!IMPORTANT]
 > After enrollment, the value of this field is read-only.
 
-### Account type
+#### Account type
 
 The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts.  The accounts are described in detail in the following sections.  Both account types enable you to publish extensions to the Microsoft Edge Add-ons website.
 
 > [!IMPORTANT]
 > After enrollment, you aren't able to change the value of this field.
 
-#### Individual account
+##### Individual account
 
 An individual account is appropriate for a developer not associated with a company.  The account verification process is shorter and involves verifying that the publisher display name is available.
 
-#### Company account
+##### Company account
 
 A company account is associated with an organization or business.  The account verification process is longer and involves confirmation that you are authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
 
 For a company account, it is crucial to verify your Microsoft Edge program information when you enroll into a new Partner Center program. This is required to publish extensions to the Microsoft Edge Add-ons store. See [Verify your Microsoft Edge Partner Center program information](verify-microsoft-edge-program.md).
 
-### Publisher display name
+#### Publisher display name
 
 This field contains the name that's displayed in the Microsoft Edge Add-ons website.  To use a particular name, that name must be available, and you must have the rights to use it.  Company accounts must use the registered business name of your organization.
 
 The maximum length for this field is fifty (50) characters.
 
-### Contact details
+#### Contact details
 
 This field contains any contact information that Microsoft uses to contact you about any account issues.  After registration is complete, you receive an email confirmation.  For a company account, you must use the registered email address associated with your organization.
 
-### Company approver
+#### Company approver
 
 For a company account, you must provide the contact information of your company approver.  The contact information includes name, email address, and phone number.  As a part of the verification process, Microsoft contacts the specified company approver, to make sure that your extension belongs to your organization.
 
