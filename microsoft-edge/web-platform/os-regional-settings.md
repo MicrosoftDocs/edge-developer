@@ -1,6 +1,6 @@
 ---
 title: OS Regional Data Display in Microsoft Edge
-description: How customers and web developers can use the OS regional format in Microsoft Edge for improved site experiences
+description: How users and web developers can use the OS regional format in Microsoft Edge for improved site experiences
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -9,16 +9,16 @@ ms.date: 08/15/2022
 --- 
 # Introducing the OS regional sharing setting
 
-Microsoft Edge provides operating system (OS) regional preference information to create web content to help website authors create regional experiences on their web site. This feature allows website authors to deliver value to customers who specifically change their regional preferences in the OS to reflect their personal preferences.
+Microsoft Edge provides operating system (OS) regional preference information to create web content to help website authors create regional experiences on their web site. This feature allows website authors to deliver value to users who specifically change their regional preferences in the OS to reflect their personal preferences.
 
 Users want to see dates, times, numbers, and other formatting printed according to their preferences. For example, the US geographic region translates **7/2/2022** into **July 2nd, 2022**.  Another geographic region could translate that same date into **February 7, 2022** because they read the month and day inversely. 
 
 #### Regional format
-To reflect a customer's regional preferences for how data is displayed (such as the date),Microsoft Edge has a new option  in the **Language** section of **Settings**.
+To reflect a user's regional preferences for how data is displayed (such as the date),Microsoft Edge has a new option  in the **Language** section of **Settings**.
 
 ![Share additional OS regional format with the option **limited** selected.](media/os-regional-setting-screenshot.msft.png)
 
-This access will allow websites to have visibility into more customer's specific regional preferences than was previously possible. Customers that changed their OS regional preferences may now see their preferences reflected automatically in more websites.
+This access will allow websites to have visibility into more user's specific regional preferences than was previously possible. Customers that changed their OS regional preferences may now see their preferences reflected automatically in more websites.
 
 ## OS Regional Data Display Codes
 
@@ -26,7 +26,7 @@ The user's formatting preferences are abstracted into a simple regional code, wh
 
 By using a regional code, websites can use the built-in Internationalization API to properly format information into the user's preferences.  The Internationalization API saves lots of MB of data transfer over the network, keeping websites small and allowing them to quickly and easily adapt to different regions.
 
-In general, the website's internationalization customer experiences are only as good as the regional code that they're able to determine for the current user. 
+In general, the website's internationalization user experiences are only as good as the regional code that they're able to determine for the current user. 
 
 A regional code is a two-letter language code followed by a hyphen and a two-letter region code.  Microsoft Edge uses ICU, which is an implementation of the Unicode standard's Internationalization API.  See [ICU](https://icu.unicode.org/home).
 
@@ -46,7 +46,7 @@ Customers have three settings on Microsoft Edge to select the level of informati
 * Always (not recommended). 
 
 #### The Never option
-To minimize the risks, customers can disable the sharing of OS regional information by selecting **Never**. The **Never** option still allows websites to read regional information, but does block any specific OS regional customizations that the user has made from being exposed to website content. Instead, the browser's display language is used to derive a default region. 
+To minimize the risks, users can disable the sharing of OS regional information by selecting **Never**. The **Never** option still allows websites to read regional information, but does block any specific OS regional customizations that the user has made from being exposed to website content. Instead, the browser's display language is used to derive a default region. 
 
 #### The Limited option (default)
 The default recommended value is **limited**. With this setting, the above risks are mitigated by ensuring that mismatched combinations of language and region aren't revealed to websites. The **limited** value ensures that only valid combinations of the user's current browser display language preference and a given region value are used. **Limited** ensures that websites won't see a regional code anomaly (though it could still look unusual per geographic inference), and also ensures that for language processing, websites will at least provide a consistent language experience (not mixing languages in weird combinations). The **limited** setting compares the language part of the regional code that is derived from the browser’s display language, and the regional part coming from the OS setting, and if the language parts match and if the resulting regional code is a valid combination, will pass the result through to the website. If the language in the message doesn't match, the feature acts as if **never** was selected (the regional information falls back to being derived from the browser’s display language). 
@@ -55,7 +55,7 @@ Note: the **limited** value is similar to current Firefox behavior for exposing 
 
 #### The Always option (not recommended)
 
-If **Always** is selected, the customer is exposed to the full set of risks noted earlier: the potential to be easily signaled out for fingerprinting, and also to potentially see website language-processing problems and inconsistencies. However, the user's OS preferences will be made available to the website without any limitations or restrictions, to be sure their preferences are respected. 
+If **Always** is selected, the user is exposed to the full set of risks noted earlier: the potential to be easily signaled out for fingerprinting, and also to potentially see website language-processing problems and inconsistencies. However, the user's OS preferences will be made available to the website without any limitations or restrictions, to be sure their preferences are respected. 
 
 
 
@@ -72,10 +72,10 @@ A related new policy in Microsoft Edge, **ShareOSRegionThroughJavaScriptLocale**
 In addition, an older policy, [ApplicationLocaleValue](/DeployEdge/microsoft-edge-policies#applicationlocalevalue), allows setting the Microsoft Edge locale and prevents users from changing it. 
 
 ## Avoiding potential misuse
-We believe that **Limited** is the right default that allows the most customer’s regional preferences to be respected with the least amount of risk of the website misusing this information.
+We believe that **Limited** is the right default that allows the most user's regional preferences to be respected with the least amount of risk of the website misusing this information.
 
 #### Fingerprinting Entropy
-OS regional information could be misused to compromise the user's privacy.  The regional information would help hackers establish fingerprinting entropy. In combination with many other pre-existing bits of entropy in the platform today, the user could be uniquely identified leading to more potential secondary harm. While a user's region and language are already available via the web platform, users generally fall into well-recognized regional codes that are similar across geographies.  Because the sample sizes are so large, the risk of any specific regional code standing out is small, and thus the risk is small. If the user changes their OS preferences to a unique language + region, websites may be able to identify the anomaly in a population, and easily uniquely identify the associated customer. 
+OS regional information could be misused to compromise the user's privacy.  The regional information would help hackers establish fingerprinting entropy. In combination with many other pre-existing bits of entropy in the platform today, the user could be uniquely identified leading to more potential secondary harm. While a user's region and language are already available via the web platform, users generally fall into well-recognized regional codes that are similar across geographies.  Because the sample sizes are so large, the risk of any specific regional code standing out is small, and thus the risk is small. If the user changes their OS preferences to a unique language + region, websites may be able to identify the anomaly in a population, and easily uniquely identify the associated user. 
 
 #### Content Presentation
 The OS regional information could be misused by a website is in the consistency of their content presentation. There are various places in the web platform where language and regional information is made available.  Regional information is processed in one place, while language preferences are surfaced in another.  Furthermore, this information is proactively sent to the server on the initial request for content.
