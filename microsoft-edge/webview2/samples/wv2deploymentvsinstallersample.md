@@ -69,7 +69,7 @@ If a **Waiting on the following processes to shut down** dialog appears, close V
 
    ![product.xml file opened for editing, unchanged, in Visual Studio 2019](./wv2deploymentvsinstallersample-images/product-xml-open-for-editing-unchanged.png)
 
-1. Inspect `product.xml`.  There are three `<PackageFile>` lines.  Study the comment above each of the 3 lines.  Here is a simplified view of the lines, with clarifications:
+1. Inspect `product.xml`.  There are three `<PackageFile>` lines.  Study the comment above each of the 3 lines.  Here is a simplified view of the lines, with clarifications.
 
    The first `<PackageFile>` line uses file `MicrosoftEdgeWebview2Setup.exe`, which is the Evergreen WebView2 Runtime Bootstrapper, and it specifies a `HomeSite` website.   Use this line for _Approach 1: Downloading the Evergreen WebView2 Runtime Bootstrapper through a link_:
 
@@ -92,9 +92,9 @@ If a **Waiting on the following processes to shut down** dialog appears, close V
    <!-- <PackageFile Name="MicrosoftEdgeWebView2RuntimeInstallerX64.exe" /> -->
    ```
 
-1. Understand which approach you are using.  Approach 2 is the default; that is, it's un-commented in the repo's `product.xml` file.
+1. Identify which approach you are using.  Approach 2 is the default; that is, the line to use Approach 2 is un-commented in the repo's `product.xml` file.
 
-1. Edit `product.xml`, as follows.  Do the steps in one of the three sections below.
+1. Edit `product.xml`, as follows; do the steps in one of the three sections below.
 
 
 <!-- this section order matches product.xml's order & top of present .md file -->
