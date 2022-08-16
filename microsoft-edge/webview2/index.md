@@ -74,7 +74,7 @@ A General Availability (GA) or Preview version of WebView2 is available for the 
 *  .NET Core 3.1 or later
 *  .NET 5
 *  .NET 6
-*  WinUI 2.0 (Preview)
+*  [WinUI 2.0](/uwp/toolkits/winui2/index)
 *  [WinUI 3.0](/uwp/toolkits/winui3/index)
 
 WebView2 apps can run on the following versions of Windows:
