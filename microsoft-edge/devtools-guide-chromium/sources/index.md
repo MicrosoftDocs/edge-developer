@@ -369,7 +369,6 @@ CSS changes take effect immediately; you don't need to manually save the changes
 #### See also
 
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
-* [DevTools for beginners: Get started with CSS](../beginners/css.md) - tutorial
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
 
 
@@ -392,8 +391,6 @@ To find text, press `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS.
 To undo an edit, press `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
 
 To view other commands while editing an HTML file, in the Editor pane, right-click the HTML file.
-
-You can also edit HTML by using an HTML editor, rather than DevTools.  For example, the article [DevTools for beginners: Get started with HTML and the DOM](../beginners/html.md) uses a website that enables HTML editing within the webpage.
 
 
 ### Going to a line number or function

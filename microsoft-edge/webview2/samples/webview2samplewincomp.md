@@ -1,5 +1,5 @@
 ---
-title: "WebView2 sample: Win32 C++ app with Visual Composition"
+title: Win32 sample app with Visual Composition
 description: This WebView2 sample demonstrates creating an application that embeds a WebView2 control within a Win32 native application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 06/14/2022
 ---
-# WebView2 sample: Win32 C++ app with Visual Composition
+# Win32 sample app with Visual Composition
 
 This WebView2 sample demonstrates creating an application that embeds a WebView2 control within a Win32 native application.
 
@@ -16,7 +16,10 @@ It is built as a Win32 Visual Studio 2019 project and makes use of both C++ and 
 
 It also uses Windows Runtime Composition APIs (also called the Visual layer) to take advantage of the Windows UI features and create a better look, feel, and functionality in C++ Win32 applications.
 
-Directory &amp; `.sln`: **WebView2SampleWinComp/WebView2SampleWinComp.sln**.
+
+*  Sample name: **WebView2SampleWinComp**
+*  Repo directory: **WebView2SampleWinComp**
+*  Solution file: **WebView2SampleWinComp.sln**
 
 
 **To use this sample (general-purpose steps):**

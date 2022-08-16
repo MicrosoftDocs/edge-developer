@@ -9,12 +9,17 @@ ms.date: 03/17/2022
 ---
 # Using the Microsoft Edge Add-ons API 
 
-> [!NOTE]
-> The **Publish API** page is present at Partner Center. 
+The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.  Use the **Publish API** page at Partner Center.
 
-This article, along with the [Microsoft Edge Add-ons API Reference](addons-api-reference.md), provides an overview of the proposed Microsoft Edge Add-ons API.  Please submit your suggestions and feedback on the proposed API contracts as an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
+To submit suggestions and feedback, enter an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
 
-The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.
+
+<!-- ====================================================================== -->
+## Library Support
+
+| Language | Package | Source code | Notes |
+| --- | --- | --- | --- |
+| Node.js | [Edge Webstore Upload](https://www.npmjs.com/package/@plasmo-corp/ewu) | [Github](https://github.com/plasmo-corp/edge-webstore-upload)| This is a 3rd party library. Microsoft makes no warranties, express or implied, with respect to the information provided here. |
 
 
 <!-- ====================================================================== -->
@@ -33,8 +38,7 @@ The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatic
 <!-- ====================================================================== -->
 ## Before you begin
 
-To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center, by creating API credentials.
-
+To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center, by creating API credentials, as follows:
 
 1. Visit Microsoft Partner Center and sign in to the account from which you have already published an add-on.
 

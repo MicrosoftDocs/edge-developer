@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
 ---
-
 # Content Security Policy (CSP)
 
 In order to mitigate a large class of potential cross-site scripting issues, the Microsoft Edge Extension system has incorporated the general concept of [Content Security Policy (CSP)](https://w3c.github.io/webappsec-csp).  This introduces some fairly strict policies that make Extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that can be loaded and run by your Extensions and applications.
