@@ -719,7 +719,7 @@ In WebView2 you can you can set a [Favicon](https://developer.mozilla.org/en-US/
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.FaviconChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconchanged?view=webview2-dotnet-1.0.1293.44&preserve-view=true)
-* [CoreWebView2.FaviconUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconuri?view=webview2-dotnet-1.0.1293.44&preserve-view=true)
+* [CoreWebView2.FaviconUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconuri)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
