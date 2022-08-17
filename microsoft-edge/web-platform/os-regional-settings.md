@@ -57,7 +57,7 @@ Note: the **Limited** option is similar to current Firefox behavior for exposing
 
 #### The Always option (not recommended)
 
-If **Always** is selected, the user is exposed to the full set of risks noted earlier: the potential to be easily signaled out for fingerprinting, and also to potentially see website language-processing problems and inconsistencies. However, the user's OS preferences will be made available to the website without any limitations or restrictions, to be sure their preferences are respected. 
+If **Always** is selected, the user's OS regional preferences will be provided to the Website without any limitations or restrictions. The user may be exposed to additionall fingerprinting and to Website compatibility problems (inconsistent use of language and formatting). See below "Avoiding potential misuse" section.)
 
 
 
