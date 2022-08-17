@@ -40,7 +40,7 @@ To set the user's language preferences, Microsoft Edge gets the default values f
 |  `accept-language` HTTP header | This is a list of regional codes sent to the server to allow a Website to display the right language. Microsoft Edge sends the regional codes in the order specified in **edge://settings/languages**. |
 | `navigator.language` API (and similar) | Allow a Website to display the right language and regional formatting for user input and other content produced locally. |
 
-## The Sharing setting
+## Regional Data Display options
 Users have three options on Microsoft Edge to select the level of information their browser will share about their regions:
 
 * Never 
