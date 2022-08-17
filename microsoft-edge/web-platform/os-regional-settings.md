@@ -41,7 +41,7 @@ To set the user's language preferences, Microsoft Edge gets the default values f
 | `navigator.language` API (and similar) | Allow a Website to display the right language and regional formatting for user input and other content produced locally. |
 
 ## The Sharing setting
-Customers have three settings on Microsoft Edge to select the level of information their browser will share about their regions:
+Users have three options on Microsoft Edge to select the level of information their browser will share about their regions:
 
 * Never 
 * Limited (default) 
