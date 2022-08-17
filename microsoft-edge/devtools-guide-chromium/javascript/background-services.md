@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/06/2022
+ms.date: 08/16/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -33,7 +33,6 @@ Microsoft Edge DevTools considers each of the following APIs to be a background 
 *  [Periodic Background Sync](#periodic-background-sync)
 *  [Push Messages](#push-messages)
 *  [Reporting API](#reporting-api)
-<!-- TODO: add a section about Payment Handler -->
 
 The **Background Services** section logs API events, even when you're not using DevTools, to help you make sure that events are being sent and received as expected.
 
@@ -43,16 +42,18 @@ The **Background Services** section logs API events, even when you're not using 
 
 The **Background Fetch API** enables the **service worker** of a Progressive Web App to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch events for 3 days, even when DevTools isn't open:
 
+1. Navigate to [the Background Fetch demo webpage](https://background-fetch.glitch.me/).
+
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, open the **Application** tool.
 
 1. On the left, in the **Background Services** section, select **Background Fetch**.  The **Background Fetch** page opens.
 
    ![The Background Fetch panel.](./images/application-background-fetch-empty.png)
 
 1. Click **Record** (![Record.](../media/record-icon.msft.png)).
-   After triggering some Background Fetch activity, DevTools logs the events to the table.
+   Click **Store assets locally** in the webpage to trigger some Background Fetch activity, DevTools logs the events to the table.
 
    ![A log of events in the Background Fetch panel.](./images/application-background-fetch-events.png)
 
@@ -66,15 +67,17 @@ The **Background Fetch API** enables the **service worker** of a Progressive Web
 
 The **Background Sync API** enables the offline **service worker** of a Progressive Web App to send data to a server once it has re-established a reliable internet connection.  To log Background Sync events for 3 days, even when DevTools isn't open:
 
+1. Navigate to [the Background Sync demo webpage](https://wicg.github.io/background-sync/demo/).
+
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, open the **Application** tool.
 
 1. On the left, in the **Background Services** section, select **Background Sync**.  The **Background Sync** page opens.
 
    ![The Background Sync pane.](./images/application-background-sync-empty.png)
 
-1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some Background Sync activity, DevTools logs the events to the table.
+1. Click **Record** (![Record.](../media/record-icon.msft.png)).  Trigger some Background Sync activity by clicking **Register background sync** in the webpage, DevTools logs the events to the table.
 
    ![A log of events in the Background Sync pane.](./images/application-background-sync-events.png)
 
@@ -88,15 +91,17 @@ The **Background Sync API** enables the offline **service worker** of a Progress
 
 After a **service worker** has received a [Push Message](https://developer.mozilla.org/docs/Web/API/Push_API) from a server, the service worker uses the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API) to display the data to a user.  To log Notifications for 3 days, even when DevTools isn't open:
 
+1. Navigate to [the Notifications demo webpage](https://wicg.github.io/background-sync/demo/).
+
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, open the **Application** tool.
 
 1. On the left, in the **Background Services** section, select **Notifications**.  The **Notifications** page opens.
 
    ![The Notifications pane.](./images/application-notifications-empty.png)
 
-1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some Notifications activity, DevTools logs the events to the table.
+1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some Notifications activity by clicking **Register background sync** in the webpage, DevTools logs the events to the table.
 
    ![A log of events in the Notifications pane.](./images/application-notifications-events.png)
 
@@ -110,15 +115,17 @@ After a **service worker** has received a [Push Message](https://developer.mozil
 
 The [Payment Handler API](https://web.dev/web-based-payment-apps-overview/) allows web applications to handle payment requests on behalf of users. To log the payment request and response events for 3 days, even when DevTools isn't open:
 
+1. Navigate to [the payment handler demo webpage](https://rsolomakhin.github.io/pr/apps/origin/) and click **Install**.
+
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, open the **Application** tool.
 
 1. On the left, in the **Background Services** section, select **Payment Handler**.  The **Payment Handler** page opens.
 
    ![The Payment Handler pane.](./images/application-payment-handler-empty.png)
 
-1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some payment requests, DevTools logs the events to the table.
+1. Click **Record** (![Record.](../media/record-icon.msft.png)).  Reload the webpage to trigger some payment requests, DevTools logs the events to the table.
 
    ![A log of events in the Payment Handler pane.](./images/application-payment-handler-events.png)
 
@@ -134,15 +141,17 @@ The **Periodic Background Sync API** enables the **service worker** of a Progres
 
 To log Periodic Background Sync events for 3 days, even when DevTools isn't open:
 
+1. Navigate to [devtoolstips.org](https://devtoolstips.org) which uses the Periodic Background Sync API.
+
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, open the **Application** tool.
 
 1. On the left, in the **Background Services** section, select **Periodic Background Sync**.  The **Periodic Background Sync** page opens.
 
    ![The Periodic Background Sync pane.](./images/application-periodic-background-sync-empty.png)
 
-1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some Periodic Background Sync activity, DevTools logs the events to the table.
+1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some Periodic Background Sync activity, DevTools logs the events to the table. Note that the demo website only triggers periodic sync once a day.
 
    ![A log of events in the Periodic Background Sync pane.](./images/application-periodic-background-sync-events.png)
 
@@ -152,15 +161,17 @@ To log Periodic Background Sync events for 3 days, even when DevTools isn't open
 
 To display a push notification to a user, the **service worker** of a Progressive Web App must first use the [Push Message API](https://developer.mozilla.org/docs/Web/API/Push_API) to receive data from a server.  When the service worker is ready to display the notification, it uses the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API).  To log Push Messages for 3 days, even when DevTools isn't open:
 
+1. Navigate to the [Web Push Notifications](https://webpushdemo.azurewebsites.net/) demo website.
+
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, open the **Application** tool.
 
 1. On the left, in the **Background Services** section, select **Push Messaging**.  The **Push Messaging** page opens.
 
    ![Open the Push Messaging pane.](./images/application-push-messaging-empty.png)
 
-1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some Push Message activity, DevTools logs the events to the table.
+1. Click **Record** (![Record.](../media/record-icon.msft.png)).  Scroll down the webpage and click **Initiate push** to trigger some Push Message activity. DevTools logs the events to the table.
 
    ![A log of events in the Push Messaging pane.](./images/application-push-messaging-events.png)
 
@@ -176,15 +187,17 @@ The **Reporting API** enables web developers to receive reports of security viol
 
 To see reports that have been sent by the browser using the **Reporting API**:
 
+1. Navigate to [the Reporting API demo webpage](https://reporting-api-demo.glitch.me/).
+
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, open the **Application** tool.
 
 1. On the left, in the **Background Services** section, select **Reporting API**.  The **Reporting API** page opens.
 
    ![Open the Reporting API pane.](./images/application-reporting-api.png)
 
-1. The **Reporting API** page displays the reports sent in the table at the top.
+1. The **Reporting API** page displays the reports sent in the table at the top. If you don't see any reports, reload the webpage.
 
    ![List of reports in the Reporting API pane](./images/application-reporting-api-reports.png)
 
