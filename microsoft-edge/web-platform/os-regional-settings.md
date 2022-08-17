@@ -20,7 +20,6 @@ To reflect a user's regional preferences for how data is displayed (such as the 
 
 This access will allow websites to have visibility into more user's specific regional preferences than was previously possible. Users that change their OS regional preferences may now see their preferences reflected automatically in more websites.
 
-
 <!-- ====================================================================== -->
 ## OS Regional Data Display Codes
 
@@ -71,7 +70,7 @@ A related new policy in Microsoft Edge, **ShareOSRegionThroughJavaScriptLocale**
 
 In addition, an older policy, [ApplicationLocaleValue](/DeployEdge/microsoft-edge-policies#applicationlocalevalue), sets the Microsoft Edge locale and locks it to prevent users from changing it. 
 
-## Avoiding potential misuse
+## Avoiding potential misuse  
 We believe that **Limited** is the right option for most users. **Limited** respects the user's regional preferences while introducing the least amount of risk of the website misusing this information.
 
 #### Fingerprinting Entropy
@@ -81,7 +80,6 @@ OS regional information could be misused to compromise the user's privacy.  The 
 The OS regional information can also be misused and lead to inconsistency of a Website's language presentation. Microsoft Edge provides multiple language and regional APIs to Websites developers.  Websites may process regional information in one place, while deriving language preferences from another.
 
 When the language and regional information is self-consistent, then it doesn't really matter which APIs the website uses to assemble its content presentation. However, if a Website reads the language information from multiple APIs and those APIs return different language codes, then the website may inadvertently start to mix-and-match regional preferences, resulting in strange user experiences. Watch for phrasing that mixes languages and regional preferences together, such as "Email sent on miércoles, 5 de enero de 2021".
-
 
 <!-- ====================================================================== -->
 ## Developer Details 
