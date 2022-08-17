@@ -169,7 +169,7 @@ Your web app manifest icons should include images with these dimensions:
 In level 4, you supply images for tiles with display scales and target size images for display in various surfaces in Windows, including taskbar, start menu, task manager, ALT+Tab task switcher, and more.
 
 <!-- ====================================================================== -->
-### Image Level Summary
+### Image level summary
 
 Consider, for example, how your app icon might show different content depending on the available surface area:
 
@@ -185,7 +185,7 @@ Consider, for example, how your app icon might show different content depending 
 Notice how the content of the icon changed. This is possible only through the use of higher levels of icon support. We recommend developers choose higher levels to give the best experience for your Windows users.  
 
 <!-- ====================================================================== -->
-### Icon Descriptions
+### Icon descriptions
 
 Below you’ll find a description of each app icon and where they show up in Windows.
 
@@ -258,7 +258,7 @@ The splash screen asset is shown as the splash screen for your app. Currently su
 * 1240x600 (2x scale)
 * 2480x1200 (4x scale)
 
-### Target Sized Images
+### Target sized images
 
 In addition to the standard scale factor sizes described above, we also recommend creating “target-size” assets. We call these assets target-size because they target specific sizes, such as 16 pixels, rather than specific scale factors, such as 400. Target-size assets are for Windows surfaces that don’t use the scaling plateau system.
 
