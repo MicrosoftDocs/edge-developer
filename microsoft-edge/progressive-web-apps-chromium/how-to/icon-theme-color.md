@@ -65,7 +65,7 @@ Learn more about [the icons member](https://developer.mozilla.org/docs/Web/Manif
 
 Your PWA can be enhanced on Windows by supplying the images with specific dimensions in your web app manifest. We recommend choosing one of the options below:
 
-* Level 1: (Basic image support: 512x512) This is the base image from which to generate missing images
+* Level 1: (Basic image support: 512x512) This is the base image from which to generate missing images.
 * Level 2: (Titles) At this level, your web app manifest contains tile images for the default (1x) display scale. Each of the images must be in PNG format and purpose any.Here is a list of recommended images and sizes.
     * 44x44 - app icon
     * 71x71 - small tile
@@ -112,9 +112,6 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 2480x1200 - splash screen 4x display scale
 
 For level 3, your web app manifest should contain tile images for all Windows display scale sizes.
-
-Display scales are user-configurable in Windows:
-![Display Sample](../media/windows-image-display-scales.png) 
 
 * Level 4 (Tiles, display scales, and target sizes)
 Your web app manifest icons should include images with these dimensions:
@@ -171,18 +168,19 @@ Your web app manifest icons should include images with these dimensions:
     * 256x256 - target size for taskbar, start menu, task manager
 In level 4, you supply images for tiles with display scales and target size images for display in various surfaces in Windows, including taskbar, start menu, task manager, ALT+Tab task switcher, and more.
 
-This provides the best experience for your users, but also requires the most developer effort.
-
 <!-- ====================================================================== -->
 ### Image Level Summary
 
 Consider, for example, how your app icon might show different content depending on the available surface area:
 
-* Small surface: App icon (44x44) in taskbar, showing a small, abbreviated logo: ![The small size icon](../media/windows-image-app-icon.png) 
+* Small surface: App icon (44x44) in taskbar, showing a small, abbreviated logo: !
+[The small size icon](../media/windows-image-app-icon.png) 
 
-* Larger surface: Medium tile (150x150) in start menu, showing the full logo of the app:  ![The medium size icon.](../media/windows-image-small-tile.png) 
+* Larger surface: Medium tile (150x150) in start menu, showing the full logo of the app:  
+![The medium size icon.](../media/windows-image-small-tile.png) 
 
-* Wide surface: Wide tile in start menu, showing a more articulated app icon: ![The wide size icon](../media/windows-image-wide-tile.png) 
+* Wide surface: Wide tile in start menu, showing a more articulated app icon: 
+![The wide size icon](../media/windows-image-wide-tile.png) 
 
 Notice how the content of the icon changed. This is possible only through the use of higher levels of icon support. We recommend developers choose higher levels to give the best experience for your Windows users.  
 
@@ -191,8 +189,9 @@ Notice how the content of the icon changed. This is possible only through the us
 
 Below you’ll find a description of each app icon and where they show up in Windows.
 
-![App Icon](../media/windows-image-app-icon.png) 
 The normal app icon that's shown in the start menu, task bar, or task manager.
+
+![App Icon](../media/windows-image-app-icon.png) 
 
 * 44x44
 * 55x55 (1.25x scale)
@@ -200,8 +199,9 @@ The normal app icon that's shown in the start menu, task bar, or task manager.
 * 88x88 (2x scale)
 * 176x176 (4x scale)
 
-![Small tile](../media/windows-image-small-tile.png) 
 The small tile is shown in the start menu when the user set your app’s tile to small size.
+
+![Small tile](../media/windows-image-small-tile.png) 
 
 * 71x71
 * 89x89 (1.25x scale)
@@ -209,8 +209,9 @@ The small tile is shown in the start menu when the user set your app’s tile to
 * 142x142 (2x scale)
 * 284x284 (4x scale)
 
-![Medium tile](../media/windows-image-medium-tile.png)
 The medium tile icon is shown in the start menu when the user sets your app’s tile to medium size.
+
+![Medium tile](../media/windows-image-medium-tile.png)
 
 * 150x150
 * 188x188 (1.25x scale)
@@ -218,9 +219,9 @@ The medium tile icon is shown in the start menu when the user sets your app’s 
 * 300x300 (2x scale)
 * 600x600 (4x scale)
 
+The wide tile icon is shown in the start menu when the user sets your app’s tile to wide size.
+
 ![Wide tile](../media/windows-image-wide-tile.png)
-The wide tile icon
-Shown in the start menu when the user sets your app’s tile to wide size.
 
 * 310x150
 * 388x188 (1.25x scale)
@@ -228,8 +229,8 @@ Shown in the start menu when the user sets your app’s tile to wide size.
 * 620x300 (2x scale)
 * 1240x600 (4x scale)
 
-![Large tile](../media/windows-image-large-tile.png)
 The large tile icon is in the start menu when the user sets your app’s tile to large size.
+![Large tile](../media/windows-image-large-tile.png)
 
 * 310x310
 * 388x388 (1.25x scale)  
@@ -237,8 +238,9 @@ The large tile icon is in the start menu when the user sets your app’s tile to
 * 620x620 (2x scale)
 * 1240x1240 (4x scale)
 
-![Store Logo](../media/windows-image-store-logo.png)
 The store logo icon is shown in app installer, Windows Partner Center, the “Report an app” option in the Store, and the “Write a review” option in the Store.
+
+![Store Logo](../media/windows-image-store-logo.png)
 
 * 50x50
 * 63x63 (1.25x scale)
@@ -246,8 +248,9 @@ The store logo icon is shown in app installer, Windows Partner Center, the “Re
 * 100x100 (2x scale)
 * 200x200 (4x scale)
 
-![Splash Screen](../media/windows-image-splash.png)
 The splash screen asset is shown as the splash screen for your app. Currently supported only in classic package. In the future, we may add support for the modern hosted app package as well.
+
+![Splash Screen](../media/windows-image-splash.png)
 
 * 620x300
 * 775x375 (1.25x scale)
