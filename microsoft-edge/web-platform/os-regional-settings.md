@@ -9,7 +9,7 @@ ms.date: 08/15/2022
 --- 
 # Operating System Regional Data Display in Microsoft Edge
 
-Microsoft Edge provides operating system (OS) regional preference information to create web content to help website authors create regional experiences on their web site. This feature allows website authors to deliver value to users who specifically change their regional preferences in the OS to reflect their personal preferences.
+Microsoft Edge provides operating system (OS) regional preference information to help website authors create regional experiences on their web site. This feature allows website authors to deliver value to users who specifically change their regional preferences in the OS to reflect their personal preferences.
 
 Users want to see dates, times, numbers, and other formatting printed according to their preferences. For example, the US geographic region translates **7/2/2022** into **July 2nd, 2022**.  Another geographic region could translate that same date into **February 7, 2022** because they read the month and day inversely. 
 
