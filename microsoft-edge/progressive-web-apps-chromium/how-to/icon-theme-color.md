@@ -60,7 +60,7 @@ Each icon in the `icons` array should come with at least the `src` and `sizes` p
 
 Learn more about [the icons member](https://developer.mozilla.org/docs/Web/Manifest/icons).
 
-## Icon Image Sizes
+## Icon image sizes
 
 Your PWA can be enhanced on Windows by supplying the images with specific dimensions in your web app manifest. We recommend choosing one of the options below:
 
