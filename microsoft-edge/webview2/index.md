@@ -55,7 +55,7 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 *  **Code-sharing**.  Add web code to your codebase allows for increased reuse across multiple platforms.
 
-*  **Microsoft support**.  Microsoft provides support and adds new feature requests when WebView2 releases at General Availability.
+*  **Microsoft support**.  Microsoft provides support and adds new feature requests on supported platforms.
 
 *  **Evergreen distribution**.  Rely on an up-to-date version of Chromium with regular platform updates and security patches.
 
