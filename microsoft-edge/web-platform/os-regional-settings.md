@@ -26,7 +26,7 @@ This access will allow websites to have visibility into more user's specific reg
 
 The user's formatting preferences are abstracted into a simple regional code, which is used by web applications to infer the various details noted above about dates, times, and other formatting preferences.
 
-By using a regional code, websites can use the built-in Internationalization API to properly format information into the user's preferences.  The Internationalization API saves lots of MB of data transfer over the network, keeping websites small and allowing them to quickly and easily adapt to different regions.
+Websites can use the built-in Internationalization API with a regional code to properly format information into the user's preferences.  The Internationalization API can save lots of MB of data transfer over the network, keeping websites small and allowing them to quickly and easily adapt to different regions.
 
 In general, the website's internationalization user experiences are only as good as the regional code that they're able to determine for the current user. 
 
