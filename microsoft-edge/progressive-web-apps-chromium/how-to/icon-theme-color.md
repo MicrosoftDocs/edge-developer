@@ -60,6 +60,7 @@ Each icon in the `icons` array should come with at least the `src` and `sizes` p
 
 Learn more about [the icons member](https://developer.mozilla.org/docs/Web/Manifest/icons).
 
+<!-- ====================================================================== -->
 ## Icon image sizes
 
 Your PWA can be enhanced on Windows by supplying the images with specific dimensions in your web app manifest. We recommend choosing one of the options below:
@@ -172,6 +173,7 @@ In level 4, you supply images for tiles with display scales and target size imag
 
 This provides the best experience for your users, but also requires the most developer effort.
 
+<!-- ====================================================================== -->
 ### Image Level Summary
 
 Consider, for example, how your app icon might show different content depending on the available surface area:
@@ -184,6 +186,7 @@ Consider, for example, how your app icon might show different content depending 
 
 Notice how the content of the icon changed. This is possible only through the use of higher levels of icon support. We recommend developers choose higher levels to give the best experience for your Windows users.  
 
+<!-- ====================================================================== -->
 ### Icon Descriptions
 
 Below you’ll find a description of each app icon and where they show up in Windows.
