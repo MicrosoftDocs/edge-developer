@@ -1,5 +1,5 @@
 ---
-title: OS Regional Data Display in Microsoft Edge
+title: Operation System Regional Data Display in Microsoft Edge
 description: How users and web developers can use the OS regional format in Microsoft Edge for improved site experiences
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/15/2022
 --- 
-# Introducing the OS regional sharing setting
+# Operation System Regional Data Display in Microsoft Edge
 
 Microsoft Edge provides operating system (OS) regional preference information to create web content to help website authors create regional experiences on their web site. This feature allows website authors to deliver value to users who specifically change their regional preferences in the OS to reflect their personal preferences.
 
