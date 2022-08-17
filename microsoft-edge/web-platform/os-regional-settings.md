@@ -53,7 +53,7 @@ Users can disable the sharing of OS regional information by selecting **Never**.
 #### The Limited option (default)
 The default, recommended value is **Limited**. When using the **Limited** setting, only valid combinations of the user's current browser display language preference and a given region value are used. **Limited** ensures that for language processing, websites will at least provide a consistent language experience (not mixing languages in mismatched combinations). The **Limited** option compares the language part of the regional code that is derived from the browser’s display language, and the regional part coming from the OS setting, and if the language parts match and if the resulting regional code is a valid combination, will provide the regional code to websites as the default locale. If the OS-specified formatting language doesn't match Microsoft Edge's preferred language, the **Limited** option will act as if **Never** was selected (the regional code falls back to the browser’s preferred display language). 
 
-Note: the **limited** value is similar to current Firefox behavior for exposing the regional code, as described in [Regional Preferences - Firefox Source Docs documentation (mozilla.org)](https://firefox-source-docs.mozilla.org/intl/locale.html#regional-preferences), but also offers the possibility to not share this information at all. 
+Note: the **Limited** option is similar to current Firefox behavior for exposing the regional code, as described in [Regional Preferences - Firefox Source Docs documentation (mozilla.org)](https://firefox-source-docs.mozilla.org/intl/locale.html#regional-preferences), but also offers the possibility to not share this information at all. 
 
 #### The Always option (not recommended)
 
