@@ -74,7 +74,7 @@ The following programming environments are supported:
 *  .NET Core 3.1 or later
 *  .NET 5
 *  .NET 6
-*  [WinUI 2.0](/windows/apps/winui/winui3/)
+*  [WinUI 2.0](/windows/apps/winui/winui2/)
 *  [WinUI 3.0](/windows/apps/winui/winui3/)
 
 WebView2 apps can run on the following versions of Windows:
