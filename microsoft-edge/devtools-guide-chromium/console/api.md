@@ -38,7 +38,7 @@ console.assert(expression, object)
 
 [Log level](reference.md#filter-by-log-level): `Error`
 
-### Example
+#### Example
 
 ```javascript
 const x = 5;
@@ -63,7 +63,7 @@ If [Preserve Log](reference.md#persist-messages-across-page-loads) is turned on,
 console.clear()
 ```
 
-### See also
+#### See also
 
 * [Clear the Console](reference.md#clear-the-console)
 
@@ -79,7 +79,7 @@ console.count([label])
 
 [Log level](reference.md#filter-by-log-level): `Info`
 
-### Example
+#### Example
 
 ```javascript
 console.count();
@@ -102,7 +102,7 @@ Resets a count.
 console.countReset([label])
 ```
 
-### Example
+#### Example
 
 ```javascript
 console.countReset();
@@ -121,7 +121,7 @@ console.debug(object [, object, ...])
 
 [Log level](reference.md#filter-by-log-level): `Verbose`
 
-### Example
+#### Example
 
 ```javascript
 console.debug('debug');
@@ -143,7 +143,7 @@ console.dir(object)
 
 [Log level](reference.md#filter-by-log-level): `Info`
 
-### Example
+#### Example
 
 ```javascript
 console.dir(document.head);
@@ -165,7 +165,7 @@ console.dirxml(node)
 
 [Log level](reference.md#filter-by-log-level): `Info`
 
-### Example
+#### Example
 
 ```javascript
 console.dirxml(document);
@@ -187,7 +187,7 @@ console.error(object [, object, ...])
 
 [Log level](reference.md#filter-by-log-level): `Error`
 
-### Example
+#### Example
 
 ```javascript
 console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
@@ -207,7 +207,7 @@ Visually groups messages together until the [groupEnd](#groupend) method is used
 console.group(label)
 ```
 
-### Example
+#### Example
 
 ```javascript
 const label = 'Adolescent Irradiated Espionage Tortoises';
@@ -255,7 +255,7 @@ console.info(object [, object, ...])
 
 [Log level](reference.md#filter-by-log-level): `Info`
 
-### Example
+#### Example
 
 ```javascript
 console.info('info');
@@ -277,7 +277,7 @@ console.log(object [, object, ...])
 
 [Log level](reference.md#filter-by-log-level): `Info`
 
-### Example
+#### Example
 
 ```javascript
 console.log('log');
@@ -299,7 +299,7 @@ console.table(array)
 
 [Log level](reference.md#filter-by-log-level): `Info`
 
-### Example
+#### Example
 
 ```javascript
 console.table([
@@ -333,7 +333,7 @@ Starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and pr
 console.time([label])
 ```
 
-### Example
+#### Example
 
 ```javascript
 console.time();
@@ -371,7 +371,7 @@ console.trace()
 
 [Log level](reference.md#filter-by-log-level): `Info`
 
-### Example
+#### Example
 
 ```javascript
 const first = () => { second(); };
@@ -397,7 +397,7 @@ console.warn(object [, object, ...])
 
 [Log level](reference.md#filter-by-log-level): `Warning`
 
-### Example
+#### Example
 
 ```javascript
 console.warn('warn');
