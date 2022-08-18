@@ -42,12 +42,9 @@ To set the user's language preferences, Microsoft Edge gets the default values f
 ## Regional Data Display options
 Users have three options on Microsoft Edge to select the level of information their browser will share about their regions:
 
-* Never 
 * Limited (default).
-* Always (not recommended). 
-
-#### Never
-Users can disable the sharing of OS regional information by selecting **Never**. The **Never** option still allows websites to read regional information, but does block any specific OS regional customizations that the user has made from being exposed to website content. Instead, the browser's display language is used to derive a default region.
+* Always (not recommended).
+* Never 
 
 #### Limited  (default)
 The default, recommended value is **Limited**. This setting uses only valid combinations of the user's current browser display language preference and the given region value. **Limited** ensures that for language processing, websites will at least provide a consistent language experience (not mixing languages in mismatched combinations). The **Limited** option compares the language part of the regional code that is derived from the browser's display language, and the regional part coming from the OS setting, and if the language parts match and if the resulting regional code is a valid combination, will provide the regional code to websites as the default locale. If the OS-specified formatting language doesn't match Microsoft Edge's preferred language, the **Limited** option will act as if **Never** was selected (the regional code falls back to the browser's preferred display language). 
@@ -57,6 +54,10 @@ Note: the **Limited** option is similar to current Firefox behavior for exposing
 #### Always option (not recommended)
 
 If **Always** is selected, the user's OS regional preferences will be provided to the Website without any limitations or restrictions. The user may be exposed to fingerprinting and to Website compatibility problems (inconsistent use of language and formatting). See below "Avoiding potential misuse" section.)
+
+#### Never
+Users can disable the sharing of OS regional information by selecting **Never**. The **Never** option still allows websites to read regional information, but does block any specific OS regional customizations that the user has made from being exposed to website content. Instead, the browser's display language is used to derive a default region.
+
 
 <!-- ====================================================================== -->
 ## Policy Controls 
