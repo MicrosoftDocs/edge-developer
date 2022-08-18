@@ -88,7 +88,7 @@ The new setting to **Share additional OS regional format** directly impacts the 
 
 When the `Intl` object's constructors (such as `DateTimeFormat`) are provided with an existing regional code, their behavior is unchanged. However, when a specific regional code isn't provided, the constructors will use the **default regional code**. The new user preference also affects other date and time formatting APIs that rely on the default regional code, such as `Date`.
 
-The default regional code is what is surfaced via the new user preference. For example, a `DateTimeFormat` can be created with the user's default regional code (and inspected) via the following expression:
+For example, a `DateTimeFormat` can be created with the user's default regional code (and inspected) via the following expression:
 
 ```js
 Intl.DateTimeFormat().resolvedOptions().locale 
