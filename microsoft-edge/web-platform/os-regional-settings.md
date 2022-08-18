@@ -80,7 +80,7 @@ OS regional information could be misused to compromise the user's privacy.  The 
 #### Content Presentation
 The OS regional information can also be misused and lead to inconsistency of a Website's language presentation. Microsoft Edge provides multiple language and regional APIs to Websites developers.  Websites may process regional information in one place, while deriving language preferences from another.
 
-When the language and regional information is self-consistent, then it doesn't really matter which APIs the website uses to assemble its content presentation. However, if a Website reads the language information from multiple APIs and those APIs return different language codes, then the website may inadvertently start to mix-and-match regional preferences, resulting in strange user experiences. Watch for phrasing that mixes languages and regional preferences together, such as "Email sent on miércoles, 5 de enero de 2021".
+When the language and regional information is self-consistent, then it doesn't really matter which APIs the website uses to assemble its content presentation. However, if a Website reads the language information from multiple APIs and those APIs return different language codes, then the website may inadvertently start to mix-and-match regional preferences, resulting in strange user experiences. For example, phrasing that mixes languages and regional preferences together, such as "Email sent on miércoles, 5 de enero de 2021".
 
 <!-- ====================================================================== -->
 ## Developer Details 
