@@ -16,7 +16,7 @@ Users want to see dates, times, numbers, and other formatting printed according 
 #### Regional format
 To reflect a user's regional preferences for how data is displayed (such as the date), Microsoft Edge has a new option  in the **Language** section of **Settings**.
 
-![The 'Share additional OS regional format' menu with the Limited (default) option selected](media/os-regional-setting-screenshot.msft.png)
+![The 'Share additional OS regional format' menu with the Limited (default) option selected](../media/os-regional-setting-screenshot.png)
 
 This access will allow websites to have visibility into more user's specific regional preferences than was previously possible. Users that change their OS regional preferences may now see their preferences reflected automatically in more websites.
 
