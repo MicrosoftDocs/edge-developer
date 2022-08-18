@@ -31,7 +31,7 @@ In general, the website's internationalization user experiences are only as good
 
 A regional code is a two-letter language code followed by a hyphen and a two-letter region code.  Microsoft Edge uses ICU to understand regional codes. ICU is an implementation of the Unicode standard's Internationalization API.  See [ICU](https://icu.unicode.org/home).
 
-To set the user's language preferences, Microsoft Edge gets the default values from the OS when Microsoft Edge is first installed. The user can then change the language preferences in `edge://settings/languages` and sort them in priority order.
+To set the user's language preferences, Microsoft Edge gets the default values from the OS when it is first installed. The user can then change the language preferences in `edge://settings/languages` and sort them in priority order.
 
 | Language or region data | User impact |
 |--------|-------------------------|
