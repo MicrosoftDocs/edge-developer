@@ -56,7 +56,7 @@ Note: the **Limited** option is similar to current Firefox behavior for exposing
 If **Always** is selected, the user's OS regional preferences will be provided to the Website without any limitations or restrictions. The user may be exposed to fingerprinting and to Website compatibility problems (inconsistent use of language and formatting). See below "Avoiding potential misuse" section.)
 
 #### Never
-Users can disable the sharing of OS regional information by selecting **Never**. The **Never** option still allows websites to read regional information, but does block any specific OS regional customizations that the user has made from being exposed to website content. Instead, the browser's display language is used to derive a default region.
+Users can disable the sharing of OS regional information by selecting **Never**. The **Never** option still allows websites to read regional information, but does block any specific OS regional customizations that the user has made from being exposed to website content. Instead, the browser's preferred display language is used to derive a default region.
 
 
 <!-- ====================================================================== -->
