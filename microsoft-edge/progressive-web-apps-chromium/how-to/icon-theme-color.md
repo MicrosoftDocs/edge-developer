@@ -172,13 +172,16 @@ In level 4, you supply images for tiles with display scales and target size imag
 
 Consider, for example, how your app icon might show different content depending on the available surface area:
 
-* Small surface: App icon (44x44) in taskbar, showing a small, abbreviated logo: !
-[The small size icon](../media/windows-image-app-icon.png) 
+* Small surface: App icon (44x44) in taskbar, showing a small, abbreviated logo: 
+
+![The small size icon](../media/windows-image-app-icon.png) 
 
 * Larger surface: Medium tile (150x150) in start menu, showing the full logo of the app:  
+
 ![The medium size icon.](../media/windows-image-small-tile.png) 
 
 * Wide surface: Wide tile in start menu, showing a more articulated app icon: 
+
 ![The wide size icon](../media/windows-image-wide-tile.png) 
 
 Notice how the content of the icon changed. This is possible only through the use of higher levels of icon support. We recommend developers choose higher levels to give the best experience for your Windows users.  
