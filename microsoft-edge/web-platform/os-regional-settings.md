@@ -1,5 +1,5 @@
 ---
-title: Operating System Regional Data Display in Microsoft Edge
+title: Operating System Regional Data Display
 description: How users and web developers can use the OS regional format in Microsoft Edge for improved site experiences
 author: MSEdgeTeam
 ms.author: msedgedevrel
