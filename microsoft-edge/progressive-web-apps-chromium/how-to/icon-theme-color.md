@@ -66,7 +66,7 @@ Learn more about [the icons member](https://developer.mozilla.org/docs/Web/Manif
 Your PWA can be enhanced on Windows by supplying the images with specific dimensions in your web app manifest. We recommend choosing one of the options below:
 
 * Level 1: (Basic image support: 512x512) This is the base image from which to generate missing images.
-* Level 2: (Titles) At this level, your web app manifest contains tile images for the default (1x) display scale. Each of the images must be in PNG format and purpose any.Here is a list of recommended images and sizes.
+* Level 2: (Tiles) At this level, your web app manifest contains tile images for the default (1x) display scale. Each of the images must be in PNG format and have the `any` purpose set. Here is a list of recommended images and sizes.
     * 44x44 - app icon
     * 71x71 - small tile
     * 150x150 - medium tile
