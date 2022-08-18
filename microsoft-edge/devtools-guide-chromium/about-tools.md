@@ -10,11 +10,12 @@ ms.date: 02/02/2022
 # About the list of tools
 
 DevTools provides 35 tools:
-*  2 toolbar icons, for the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)).
-*  3 permanent toolbar tabs, for the **Elements**, **Console**, and **Sources** tools.
-*  30 optional toolbar tabs, for the optional tools.
 
-The default tools, including toolbar icons, toolbar tabs, and tools on the **More tabs** (![More tabs icon.](media/more-tabs-icon-light-theme.png)) menu:
+*  2 toolbar icons, for the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)).
+*  3 permanent activity bar tabs, for the **Elements**, **Console**, and **Sources** tools.
+*  29 optional activity bar tabs, for the optional tools.
+
+The default tools, including activity bar icons, activity bar tabs, and tools on the **More tabs** (![More tabs icon.](media/more-tools-icon-light-theme.png)) menu:
 
 ![All of the default tools of DevTools, including 2 toolbar icons and 11 toolbar tabs on the toolbar or More tabs menu.](media/all-default-tools.png)
 
