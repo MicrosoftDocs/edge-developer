@@ -1336,6 +1336,11 @@
           href: web-platform/password-reveal.md
           displayName: 
 
+        - name: Operating System Regional Data Display
+          href: web-platform/os-regional-settings.md
+          displayName: globalization, language, region, limited, intl, date, time, format
+          
+
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge IDE integration
