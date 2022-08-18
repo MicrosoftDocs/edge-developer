@@ -13,7 +13,7 @@ Microsoft Edge provides operating system (OS) regional preference information to
 
 Users want to see dates, times, numbers, and other formatting printed according to their preferences. For example, the US geographic region translates **7/2/2022** into **July 2nd, 2022**.  Another geographic region could translate that same date into **February 7, 2022** because they read the month and day inversely. 
 
-#### Regional format
+## Regional format
 To reflect a user's regional preferences for how data is displayed (such as the date), Microsoft Edge has a new option  in the **Language** section of **Settings**.
 
 ![The 'Share additional OS regional format' menu with the Limited (default) option selected](media/os-regional-setting-screenshot.png)
