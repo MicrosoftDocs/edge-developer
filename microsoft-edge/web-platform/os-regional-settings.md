@@ -29,15 +29,15 @@ Websites can use the built-in Internationalization API with a regional code to p
 
 In general, the website's internationalization user experiences are only as good as the regional code that they're able to determine for the current user. 
 
-A regional code is a two-letter language code followed by a hyphen and a two-letter region code.  Microsoft Edge uses ICU to understand regional codes. ICU is an implementation of the Unicode standard's Internationalization API.  See [ICU](https://icu.unicode.org/home).
+A regional code is a two-letter language code followed by a hyphen and a two-letter region code.  Microsoft Edge uses ICU to understand regional codes. ICU is an implementation of the Unicode standard's Internationalization API.  For more information, see [ICU-TC Home Page](https://icu.unicode.org/home).
 
 To set the user's language preferences, Microsoft Edge gets the default values from the OS when it is first installed. The user can then change the language preferences in `edge://settings/languages` and sort them in priority order.
 
 | Language or region data | User impact |
 |--------|-------------------------|
 | **Preferred language** in the **setting** page | The language selected for rendering Microsoft Edge. This language/region is also used for formatting values such as date, time, and numbers. |
-|  `accept-language` HTTP header | A list of regional codes sent to the server to allow a Website to display the right language. Microsoft Edge sends the regional codes in the order specified in **edge://settings/languages**. |
-| `navigator.language` API (and similar) | Allow a Website to display the right language and regional formatting for user input and other content produced locally. |
+|  `accept-language` HTTP header | A list of regional codes (as defined in preferred languages) sent to the server to allow a Website to display the right language. Microsoft Edge sends the regional codes in the order specified in **edge://settings/languages**. |
+| `navigator.language` API (and similar) | Code inserted into a website that allows the browsers to display the correct regional formatting (as defined in preferred languages) for user input and other content produced locally. |
 
 ## Regional Data Display options
 Users have three options on Microsoft Edge to select the level of information their browser will share about their regions:
