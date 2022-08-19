@@ -35,7 +35,7 @@ To set the user's language preferences, Microsoft Edge gets the default values f
 
 | Language or region data | User impact |
 |--------|-------------------------|
-| **Preferred language** in the **setting** page | The language selected for rendering Microsoft Edge. This language/region is also used for formatting values such as date, time, and numbers. |
+| **Preferred languages** in the **Settings** > **Languages** page | The language selected for rendering Microsoft Edge. This language/region is also used for formatting values such as date, time, and numbers. |
 |  `accept-language` HTTP header | A list of regional codes (as defined in **Settings** > **Languages** > **Preferred languages**) that's sent to the server to allow a Website to display the right language. Microsoft Edge sends the regional codes in the order that's specified in **edge://settings/languages**. |
 | `navigator.language` API (and similar) | Code inserted into a website that allows the browsers to display the correct regional formatting (as defined in preferred languages) for user input and other content produced locally. |
 
