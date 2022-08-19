@@ -16,8 +16,6 @@ Users want to see dates, times, numbers, and other formatting printed according 
 ## Regional format
 To reflect a user's regional preferences for how data is displayed (such as the date), Microsoft Edge has a new option  in the **Language** section of **Settings**.
 
-![The 'Share additional OS regional format' menu with the Limited (default) option selected](media/os-regional-setting-screenshot.png)
-
 This access allows websites to have visibility into more user's specific regional preferences than was previously possible. Users that change their OS regional preferences may now see their preferences reflected automatically in more websites.
 
 <!-- ====================================================================== -->
@@ -28,6 +26,8 @@ The user's formatting preferences are abstracted into a simple regional code, wh
 Websites can use the built-in Internationalization API with a regional code to properly format information into the user's preferences.  The Internationalization API can save lots of MB of data transfer over the network, keeping websites small and allowing them to quickly and easily adapt to different regions.
 
 In general, the website's internationalization user experiences are only as good as the regional code that they're able to determine for the current user. 
+
+![The 'Share additional OS regional format' menu with the Limited (default) option selected](media/os-regional-setting-screenshot.png)
 
 A regional code is a two-letter language code followed by a hyphen and a two-letter region code.  Microsoft Edge uses ICU to understand regional codes. ICU is an implementation of the Unicode standard's Internationalization API.  For more information, see [ICU-TC Home Page](https://icu.unicode.org/home).
 
