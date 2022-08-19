@@ -257,9 +257,11 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
 
 The `matches` attribute is set to `<all_urls>`, which means that all files in `content_scripts` are injected into all browser tab pages when each tab is loaded.  The allowed files types that can be injected are JavaScript and CSS.  You also added `lib\jquery.min.js`.  You're able to include that from the download mentioned at the top of the section.
 
-### Add jQuery
+#### Add jQuery
 
 In the content scripts that you're injecting, plan on using jQuery (`$`).  You added a minified version of jQuery and put it in your Extension package as `lib\jquery.min.js`.  These content scripts run in individual sandboxes, which means that the jQuery injected into the `popup.js` page isn't shared with the content.
+
+#### Understanding the Thread
 
 Keep in mind that even if the browser tab has JavaScript running on it on the loaded web page, any content that's injected doesn't have access to that JavaScript.  The injected JavaScript only has access to the actual DOM that's loaded in that browser tab.
 
