@@ -1,87 +1,57 @@
 ---
 title: Visual vs. windowed hosting of WebView2
-description: Visual vs. windowed hosting of WebView2.
+description: Learn about hosting WebView2 in visual and windowed environments.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/30/2022
+ms.date: 08/19/2022
 ---
 # Visual vs. windowed hosting of WebView2
 
-Sentence 1 clarifying the title: the difference between visual hosting vs. windowed hosting of the WebView2 control by your host app.  Paragraph 1 nutshell summary defining the difference between visual hosting vs. windowed hosting of the WebView2 control by your host app:
-*  Difference 1.
-*  Difference 2.
-*  Difference 3.
+Before hosting the WebView2 control in your app, it's important to understand visual and windowed hosting. In addition to having different requirements, each form of hosting has its own constraints and benefits. Hosting is about how to get WebView2 onto different platforms.
 
-Hosting is about how to get WebView2 onto different platforms.
+Both approaches implement a whiteboard or container approach for storing and presenting information. The hosting form determines how the application works and the key differences are as follows:
 
-Actors:
-*  You (the Developer of the host app).
-*  The user.
-*  The host app.
-*  The operating system.
-*  The WebView2 control.
-*  The HTTP server.
-
-Visual vs. Windowed is about how the application works:
-*  Visual: The host app takes the input from the __.
-*  Windowed: The WebView2 control takes input from the operating system.  The OS sends the input to the WebView2.
-
-
-**Terminology:**
-
-| Term | Definition |
-|---|---|
-| _visual hosting_ | x |
-| _windowed hosting_ | x |
+*  Visual: The host app takes spatial input (for example, mouse, touch) from the user. The app sends this input to the WebView2 control.
+*  Windowed: The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2.
 
 
 <!-- ====================================================================== -->
-## First major heading
+## Compatibility and constraints
 
-<!-- template -->
+Key compatibility limitations include the operating system and rendering in framework and non-framework applications.
+
+#### Operating system
+
+Windows 7 and Windows 8 can only do windowed hosting.
+  
+#### Rendering WebView2 in framework and non-framework applications
+
+If you're using a UI framework for your application, you should use the corresponding WebView2 element for that UI framework. If you aren't using a UI framework for your application (for example, Win32, React Native, etc.) or your UI framework doesn't have a WebView2 element, then the developer will need to create `CoreWebView2Controller` and render it into the desired application. 
+
+ If your application UI is built using `DirectComposition` or `Windows.UI.Composition`, then you should use `CoreWebView2CompositionController`, otherwise you should use `CoreWebView2Controller`. 
+
+`CoreWebView2Controller` properties and methods:
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2.PostWebMessageAsJson Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasjson)
-* [CoreWebView2.PostWebMessageAsString Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasstring)
-* [CoreWebView2.WebMessageReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webmessagereceived)
-   * [CoreWebView2WebMessageReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs)
-* [CoreWebView2Settings.IsWebMessageEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.iswebmessageenabled)
-* [CoreWebView2Frame.PostWebMessageAsJson Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postwebmessageasjson)
-* [CoreWebView2Frame.PostWebMessageAsString Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postwebmessageasstring)
-* [CoreWebView2Frame.WebMessageReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.webmessagereceived)
+* [CoreWebView2Controller.CoreWebView2 Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.corewebview2?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Controller.Close Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controllerasync)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.PostWebMessageAsJson Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postwebmessageasjson)
-* [CoreWebView2.PostWebMessageAsString Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postwebmessageasstring)
-* [CoreWebView2.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webmessagereceived)
-   * [CoreWebView2WebMessageReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webmessagereceivedeventargs)
-* [CoreWebView2Settings.IsWebMessageEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#iswebmessageenabled)
-* [CoreWebView2Frame.PostWebMessageAsJson Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#postwebmessageasjson)
-* [CoreWebView2Frame.PostWebMessageAsString Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#postwebmessageasstring)
-* [CoreWebView2Frame.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#webmessagereceived)
+* [CoreWebView2Controller.CoreWebView2 Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44)
+* [CoreWebView2Controller.Close Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#close)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2::PostWebMessageAsJson method](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson)
-* [ICoreWebView2::PostWebMessageAsString method](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasstring)
-* [ICoreWebView2::WebMessageReceived event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webmessagereceived)
-   * [ICoreWebView2WebMessageReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs)
-* [ICoreWebView2Settings::IsWebMessageEnabled property (get](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_iswebmessageenabled), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_iswebmessageenabled)
-* [ICoreWebView2Frame2::PostWebMessageAsJson method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#postwebmessageasjson)
-* [ICoreWebView2Frame2::PostWebMessageAsString method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#postwebmessageasstring)
-* [ICoreWebView2Frame2::WebMessageReceived event (add](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_webmessagereceived), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_webmessagereceived)
-
----
-
-
-#### Minor heading
-
-
-#### Minor heading
+* [ICoreWebView2Controller Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44)
+* [ICoreWebView2Controller::Close Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#close)
+* [CoreWebView2Environment::CreateCoreWebView2ControllerAsync Method]()
 
 
 <!-- ====================================================================== -->
