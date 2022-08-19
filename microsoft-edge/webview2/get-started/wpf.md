@@ -68,7 +68,7 @@ Start with a basic desktop project that contains a single main window.
 
    ![The 'Additional information' dialog with a 'Target Framework' dropdown list.](media/wpf-getting-started-create-core-add-info.png)
 
-1. Select **.NET Core 3.1**, **5.0**, **6.0**, or later (not **3.0**).  Then click **Next**.
+1. Select **.NET Core 3.1**, **5.0**, **6.0**, or later (not **3.0**).  Then click the **Create** button.
 
    The **Configure your new project** dialog box appears, for **WPF App (.NET framework)**:
 
@@ -343,6 +343,9 @@ To demonstrate how to use the events, register a handler for `NavigationStarting
 ## Step 8 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime.  You can task WebView2 to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.
+<!-- TODO: are Core and Framework both supported?
+Core and Framework are both supported.
+-->
 
 The injected JavaScript is run with specific timing:
 
