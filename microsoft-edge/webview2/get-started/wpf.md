@@ -77,6 +77,7 @@ Start with a basic desktop project that contains a single main window.
 1. Enter values for **Project name** and **Location**.
 
 1. In the **Framework** dropdown list, select **.NET Framework 4.6.2** or later.
+   <!-- TODO: are Core and Framework both supported?  eg clarify a statement like: Core and Framework are both supported. -->
 
 1. Click the **Create** button.
 
@@ -343,9 +344,6 @@ To demonstrate how to use the events, register a handler for `NavigationStarting
 ## Step 8 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime.  You can task WebView2 to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.
-<!-- TODO: are Core and Framework both supported?
-Core and Framework are both supported.
--->
 
 The injected JavaScript is run with specific timing:
 
