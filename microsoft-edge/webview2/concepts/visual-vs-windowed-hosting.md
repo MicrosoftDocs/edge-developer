@@ -225,8 +225,8 @@ When WebView2 has focus, it receives input directly from the user. An applicatio
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Settings::AreBrowserAcceleratorKeysEnabled Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1293.44#arebrowseracceleratorkeysenabled)
-* [ICoreWebView2Controller::AcceleratorKeyPressed Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#acceleratorkeypressed) 
+* [ICoreWebView2Settings::AreBrowserAcceleratorKeysEnabled Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.1293.44#get_arebrowseracceleratorkeysenabled), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.1293.44#put_arebrowseracceleratorkeysenabled)
+* [ICoreWebView2Controller::AcceleratorKeyPressed Event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_acceleratorkeypressed), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_acceleratorkeypressed)
   * [ICoreWebView2AcceleratorKeyPressedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2acceleratorkeypressedeventargs?view=webview2-winrt-1.0.1293.44)
   * [ICoreWebView2KeyEventKind Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2keyeventkind?view=webview2-winrt-1.0.1293.44) 
   * [ICoreWebView2PhysicalKeyStatus Struct](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2physicalkeystatus?view=webview2-winrt-1.0.1293.44)
@@ -243,21 +243,19 @@ WebView2 can specify a default background color. This can be any opaque color or
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Controller.DefaultBackgroundColor Property] 
-  * [CoreWebView2Color Struct]
+* [CoreWebView2Controller.DefaultBackgroundColor Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor?view=webview2-dotnet-1.0.1293.44)
+  * [CoreWebView2Color Struct](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2color?view=webview2-dotnet-1.0.1293.44)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Controller.DefaultBackgroundColor Property] 
-  * [CoreWebView2Color Struct]
+* [CoreWebView2Controller.DefaultBackgroundColor Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-defaultbackgroundcolor)
+  * [CoreWebView2Color Struct](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2color?view=webview2-dotnet-1.0.1293.44)
 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::DefaultBackgroundColor Property] 
-  * [ICoreWebView2Color Struct]
-
----
+* [ICoreWebView2Controller::DefaultBackgroundColor Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.1293.44#get_defaultbackgroundcolor), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.1293.44#put_defaultbackgroundcolor)
+  * [ICoreWebView2Color Struct]()
 
 <!-- ====================================================================== -->
 ## Visual hosting
