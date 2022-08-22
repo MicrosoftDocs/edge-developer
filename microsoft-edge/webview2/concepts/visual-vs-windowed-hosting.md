@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/21/2022
+ms.date: 08/22/2022
 ---
 # Visual vs. windowed hosting of WebView2
 
@@ -185,13 +185,40 @@ The following APIs can be used when configuring WebView2 in a visual hosting env
 
 #### Composition based rendering 
 
+For composition based WebView2 rendering, use the `CoreWebView2Environment` to create a `CoreWebView2CompositionController`. The `CoreWebView2CompositionController` implements all the APIs as `CoreWebView2Controller`, but includes additional APIs specific to composition-based rendering. 
 
-#### Output 
+* CoreWebView2CompositionController Class 
+* CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method 
+
+#### Output
+
+WebView2 can connect its composition tree to `IDCompositionVisual`, `IDCompositionTarget`, or `Windows::UI::Composition::ContainerVisual`. 
+
+* CoreWebView2CompositionController.RootVisualTarget Property 
 
 #### Input
 
+Spatial input such as mouse, touch, or pen is received by the application and must be sent to WebView2. WebView2 notifies the application when the cursor should be updated based on the input device's position. 
+
+* CoreWebView2CompositionController.Cursor Property 
+* CoreWebView2CompositionController.CursorChanged Event 
+* CoreWebView2CompositionController.SystemCursorId Property 
+* CoreWebView2CompositionController.SendMouseInput Method 
+  * CoreWebView2MouseEventKind Enum 
+  * CoreWebView2MouseEventVirtualKeys Enum 
+* CoreWebView2CompositionController.SendPointerInput Method 
+  * CoreWebView2PointerEventKind Enum 
+* CoreWebView2Environment.CreateCoreWebView2PointerInfo Method 
+  * CoreWebView2PointerInfo Class 
+
 #### Accessibility
 
+By default, WebView2 will show up in the accessibility tree as a child of the parent HWND. WebView2 provides an API to better position the WebView2 content relative to other elements in the application.
+
+* CoreWebView2CompositionController.AutomationProvider Property 
+* CoreWebView2Environment.GetAutomationProviderForWindow Method 
+
+<!-- ====================================================================== -->
 ## Scenarios
 
 There are instances where a developer might want to focus on displaying web content as quickly and easily as possible in their application. In this case, windowed hosting allows for a solution that quickly displays web content without having to include features for inputs, outputs, and accessibility.
@@ -200,6 +227,7 @@ Alternatively, visual based hosting allows for (and requires) more granular cont
 
 Both hosting approaches are similar in functionality but suit different needs depending on the application requirements. 
 
+<!-- ====================================================================== -->
 ## Conclusion
 
 Windowed and visual hosting achieve the same output, but in different ways. The choice between the two options isn't a matter of convenience, but is based on what works best for the application. 
