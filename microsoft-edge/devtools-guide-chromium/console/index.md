@@ -141,7 +141,7 @@ To try running JavaScript in the Console:
 
 The **Console** displays the result of `2+2` live as you type it, displaying the result `4` on the following line:
 
-![The Console displays the result of 2+2 live as you type it.](../media/console-javascript-eager-evaluation.msft.png)
+![The Console displays the result of 2+2 live as you type it.](../media/console-intro-eager-evaluation.msft.png)
 
 This **Eager evaluation** feature is useful to debug and verify that you aren't making mistakes in your code.
 
@@ -149,7 +149,7 @@ To run the JavaScript expression in the **Console** and optionally display a res
 
 Running several lines of JavaScript code in succession:
 
-![Run several lines of JavaScript code in succession.](../media/console-javascript-several-expressions.msft.png)
+![Run several lines of JavaScript code in succession.](../media/console-intro-several-expressions.msft.png)
 
 By default, you run JavaScript code on a single line.  To run a line, type your JavaScript and then press `Enter`.  To work around the single-line limitation, press `Shift`+`Enter` instead of `Enter`.
 
@@ -169,7 +169,7 @@ For more information about all the ways to work with **Console**, see [Console a
 
 Autocompletion of JavaScript expressions in the **Console**:
 
-![Console autocompletion of JavaScript expressions.](../media/console-javascript-autocomplete.msft.png)
+![Console autocompletion of JavaScript expressions.](../media/console-intro-autocomplete.msft.png)
 
 
 <!-- ====================================================================== -->
