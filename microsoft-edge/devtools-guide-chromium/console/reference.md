@@ -61,40 +61,40 @@ You can open the **Console** as a [tool in the upper pane](#open-the-console-too
 
 Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
-![The Console tool.](../media/console-hello-console.msft.png)
+![The Console tool.](../media/console-ref-hello-console.msft.png)
 
 To open the **Console** tool from the [Command Menu](../command-menu/index.md), type `Console` and then run the **Show Console** command that has the **Panel** badge next to it.
 
-![Run the command to display the Console tool.](../media/console-command-menu-show-console.msft.png)
+![Run the command to display the Console tool.](../media/console-ref-command-menu-show-console.msft.png)
 
 
 ### Open the Console tool in the Drawer
 
 Press `Esc`.  Or, click **Customize and control DevTools** (`...`) and then select **Show console drawer**.
 
-![Show console drawer.](../media/console-elements-customize-control-devtools-show-console-drawer.msft.png)
+![Show console drawer.](../media/console-ref-elements-customize-control-devtools-show-console-drawer.msft.png)
 
 The Drawer pops up in the bottom of the DevTools window, with the **Console** tool open.
 
-![The Console tool in the Drawer.](../media/console-elements-console-drawer-hello-world.msft.png)
+![The Console tool in the Drawer.](../media/console-ref-elements-console-drawer-hello-world.msft.png)
 
 To open the **Console** tool from the [Command Menu](../command-menu/index.md), type **Console** and then run the **Show Console** command that has the **Drawer** badge next to it.
 
-![Run the command to display the **Console** tool in the Drawer.](../media/console-command-menu-show-console.msft.png)
+![Run the command to display the **Console** tool in the Drawer.](../media/console-ref-command-menu-show-console.msft.png)
 
 
 ### Open Console Settings
 
 Click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button.
 
-![Console Settings.](../media/console-settings-group-similar-empty.msft.png)
+![Console Settings.](../media/console-ref-settings-group-similar-empty.msft.png)
 
 
 ### Open the Console Sidebar
 
 To display the **Sidebar**, click **Show console sidebar** (![Show console sidebar.](../media/show-console-sidebar-icon.msft.png)).  The **Sidebar** helps you filter.
 
-![Console Sidebar.](../media/console-sidebar-drawer-empty.msft.png)
+![Console Sidebar.](../media/console-ref-sidebar-drawer-empty.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -112,7 +112,7 @@ To turn off the default message grouping behavior of the **Console**, click the 
 
 To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens, click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button and then select the checkbox next to **Log XMLHttpRequests**.
 
-![Logging XMLHttpRequest and Fetch requests.](../media/console-xhr-fetch.msft.png)
+![Logging XMLHttpRequest and Fetch requests.](../media/console-ref-xhr-fetch.msft.png)
 
 The top message in previous figure displays the default grouping behavior of the **Console**.  <!--  In the following figure, the same log is displayed after you [turn off message grouping](#turn-off-message-grouping).  -->
 
@@ -134,7 +134,7 @@ When you load a new webpage, the default action clears the **Console**.  To pers
 
 The default action for Microsoft Edge is to logs network messages to the **Console**.  In the following figure, the selected message represents an HTTP status code of `429`.
 
-![A '429' message in the Console.](../media/console-show-network.msft.png)
+![A '429' message in the Console.](../media/console-ref-show-network.msft.png)
 
 To hide network messages:
 
@@ -153,7 +153,7 @@ There are multiple ways to filter out messages in the **Console**.
 
 To only display messages that came from the JavaScript of the webpage, [Open the Console Sidebar](#open-the-console-sidebar) and then click **# user messages**.
 
-![Displaying user messages.](../media/console-sidebar-drawer-user-messages.msft.png)
+![Displaying user messages.](../media/console-ref-sidebar-drawer-user-messages.msft.png)
 
 
 ### Filter by log level
@@ -171,22 +171,22 @@ You can hide any level of messages that you're not interested in.  For example, 
 
 To filter the messages, click the **Log Levels** dropdown list and then select `Verbose`, `Info`, `Warning`, or `Error`.
 
-![The Log Levels dropdown list.](../media/console-log-level-default-levels.msft.png)
+![The Log Levels dropdown list.](../media/console-ref-log-level-default-levels.msft.png)
 
 To use the log level to filter, [open the Console Sidebar](#open-the-console-sidebar) and then select **Errors**, **Warnings**, **Info**, or **Verbose**.
 
-![Use the Sidebar to view warnings.](../media/console-sidebar-warnings.msft.png)
+![Use the Sidebar to view warnings.](../media/console-ref-sidebar-warnings.msft.png)
 
 
 ### Filter messages by URL
 
 Type `url:` followed by a URL to only view messages that came from that URL.  After you type `url:`, DevTools displays all relevant URLs.  Domains also work.  For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:https://example.com` allows you to focus on the messages from these two scripts.
 
-![A URL filter.](../media/console-filter-text.msft.png)
+![A URL filter.](../media/console-ref-filter-text.msft.png)
 
 To hide messages from a URL, type `-url:`.  It's a negative URL filter.
 
-![A negative URL filter that hides all messages that match the https://b.wal.co URL.](../media/console-negative-filter-text.msft.png)
+![A negative URL filter that hides all messages that match the https://b.wal.co URL.](../media/console-ref-negative-filter-text.msft.png)
 
 To display messages from a single URL:
 
@@ -196,7 +196,7 @@ To display messages from a single URL:
 
 1. Select the URL of the script that contains the messages that you want to focus on.
 
-![Displaying the messages that came from wp-ad.min.js.](../media/console-filter-text-specified.msft.png)
+![Displaying the messages that came from wp-ad.min.js.](../media/console-ref-filter-text-specified.msft.png)
 
 
 ### Filter out messages from different contexts
@@ -208,7 +208,7 @@ Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded
 
 Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to filter out any messages that don't match that pattern.  DevTools checks whether the pattern is found in the message text or in the script that caused the message to be logged.
 
-![Filtering out any messages that don't match the regex expression.](../media/console-filter-regex.msft.png)
+![Filtering out any messages that don't match the regex expression.](../media/console-ref-filter-regex.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -241,18 +241,18 @@ As you type out an expression, the autocomplete popup window for the **Console**
 
 In the following figure, `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.
 
-![The autocomplete popup menu displays expressions from history.](../media/console-filter-text-autofilter-history.msft.png)
+![The autocomplete popup menu displays expressions from history.](../media/console-ref-filter-text-autofilter-history.msft.png)
 
 
 ### Select JavaScript context
 
 By default, the **JavaScript Context** dropdown is set to **top**, which represents the main webpage's [browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context).
 
-![The JavaScript Context dropdown list.](../media/console-dom-level-top.msft.png)
+![The JavaScript Context dropdown list.](../media/console-ref-dom-level-top.msft.png)
 
 Suppose you have an ad on your webpage embedded in an `<iframe>`, and you want to run JavaScript to tweak the DOM of the ad.  Click the **JavaScript Context** dropdown list and then select the browsing context of the ad:
 
-![Selecting a different JavaScript context.](../media/console-dom-level-multiple.msft.png)
+![Selecting a different JavaScript context.](../media/console-ref-dom-level-multiple.msft.png)
 
 
 <!-- ====================================================================== -->
