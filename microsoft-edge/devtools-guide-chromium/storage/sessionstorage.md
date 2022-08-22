@@ -32,11 +32,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
    ![The Manifest pane.](../media/storage-application-manifest.msft.png)
 
-1. Expand the **Session Storage** menu.
-
-   ![The Session Storage Menu.](../media/storage-application-storage-session-storage.msft.png)
-
-1. Click a domain to view the key-value pairs.
+1. Expand the **Session Storage** menu and click a domain to view the key-value pairs.
 
    ![The sessionStorage key-value pairs.](../media/storage-application-storage-session-storage-domain.msft.png)
 
@@ -70,7 +66,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).
 
-1. Click the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
+1. Click the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.
 
 1. Press `Delete` or click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)).
 

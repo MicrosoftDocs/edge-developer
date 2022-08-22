@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/10/2021
+ms.date: 08/11/2022
 ---
 # Use DevTools in Internet Explorer mode (IE mode)
 
@@ -26,13 +26,55 @@ IE mode is available on Windows 10 Version 1903 (May 2019 Update), and is coming
 
 
 <!-- ====================================================================== -->
-## Open DevTools on a tab in IE mode
+## Turn on IE mode and reload a page in an IE mode tab
 
-The IE mode indicator icon appears in the address bar if the Enterprise admin has configured the website to appear in IE mode.  To view the document mode of a website in IE mode, select the IE mode indicator icon in the address bar.
+To turn on Internet Explorer mode:
 
-![View document mode using the IE mode indicator icon.](../media/ie-mode-badge-doc-mode.msft.png)
+1. In the address bar for Microsoft Edge, type **edge://settings/defaultbrowser** and then click `Enter`.  The **Settings** page opens.
 
-If a tab uses IE mode, the tab has the following limitations:
+1. In the **Allow sites to be reloaded in Internet Explorer mode (IE mode)** menu, select **Allow**:
+
+   ![The Settings page](./index-images/settings-page.png)
+
+1. Restart Microsoft Edge.
+
+1. Go to a website that supports IE mode, such as [Bing.com](https://www.bing.com/):
+
+   ![Bing.com without IE mode](./index-images/bing-not-ie-mode.png)
+
+1. Do any of the following:
+
+   *  Select **Settings and more** (...) > **Reload in Internet Explorer** mode.
+
+   *  Right-click a link and then select **Open link in new Internet Explorer mode tab**.
+
+   *  Right-click a tab and then select **Reload tab in Internet Explorer mode**:
+
+   ![Right-click a browser tab](./index-images/right-click-tab.png)
+
+   A dialog opens, **This page is open in Internet Explorer mode**, and the **Internet Explorer mode** icon is added on the left of the address bar:
+
+   ![Dialog: This page is open in Internet Explorer mode](./index-images/page-open-ie-mode.png)
+
+
+<!-- ====================================================================== -->
+## View the document mode of a tab
+
+The IE mode indicator icon appears in the address bar if the Enterprise admin has configured the website to appear in IE mode, and if you do the steps in [Turn on IE mode and reload a page in an IE mode tab](#turn-on-ie-mode-and-reload-a-page-in-an-ie-mode-tab), above.
+
+To view the document mode of a website in IE mode:
+
+*  Click the IE mode indicator icon in the address bar:
+
+   ![View document mode using the IE mode indicator icon.](../media/ie-mode-badge-doc-mode.msft.png)
+
+   A dialog opens, **This page is open in Internet Explorer mode**.
+
+
+<!-- ====================================================================== -->
+## Limitations of a tab that's in IE mode
+
+If a browser tab uses IE mode, the tab has the following limitations:
 
 *  Some DevTools panels don't work, such as **Network** and **Performance**, because the rendering engine switches from Chromium to Internet Explorer 11.
 
@@ -40,17 +82,35 @@ If a tab uses IE mode, the tab has the following limitations:
 
 *  Right-clicking and then selecting **View Source** launches Notepad.
 
-*  Pressing `F12` or `Ctrl`+`Shift`+`I` opens a blank instance of the Microsoft Edge DevTools and displays the following message: **Developer Tools aren't available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**
 
-![DevTools launched in IE mode.](../media/ie-mode-devtools.msft.png)
+<!-- ====================================================================== -->
+## Open DevTools for an IE mode tab
 
-If Internet Explorer isn't available on your computer, to debug the content of an IE mode tab, use IEChooser to open Internet Explorer DevTools, as follows:
+1. In a browser tab that's in IE mode, press `F12` or `Ctrl`+`Shift`+`I`, or click **Settings and more** (...) > **More tools** > **Developer Tools**.  A Microsoft Edge DevTools opens, grayed out, and displays the following message: **Developer Tools aren't available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**
+
+   ![DevTools launched in IE mode.](../media/ie-mode-devtools.msft.png)
+
+   If Internet Explorer isn't available on your computer, to debug the content of an IE mode tab, use IEChooser to open Internet Explorer DevTools, as follows:
 
 1. In Windows, open the **Run** dialog box.  For example, press the `Windows logo key` + `R`.
 
-1. Enter `%systemroot%\system32\f12\IEChooser.exe`, and then click **OK**.
+1. Enter **%systemroot%\System32\F12\IEChooser.exe**, and then press `Enter`.
 
-1. In IEChooser, select the entry for the IE mode tab.
+   ```
+   %systemroot%\System32\F12\IEChooser.exe
+   ```
+
+   Your machine might have multiple versions of IEChooser available, such as:
+   * `C:\Windows\SysWOW64\F12\IEChooser.exe`
+   * `C:\Windows\System32\F12\IEChooser.exe`
+
+   IEChooser opens:
+
+   ![IEChooser](./index-images/ie-chooser.png)
+
+1. In IEChooser, select the entry for the tab that's in IE mode.  An Internet Explorer DevTools window opens:
+
+   ![Internet Explorer DevTools](./index-images/ie-devtools.png)
 
 
 <!-- ====================================================================== -->

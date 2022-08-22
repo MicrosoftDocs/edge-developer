@@ -29,11 +29,7 @@ To filter messages in the **Console**, use the **Log Level** dropdown menu.  You
 
 ![The dropdown menu filters Console messages using the log level.](../media/console-filter-dropdown.msft.png)
 
-Since no filter is applied, the following figure displays dozens of messages.  Next, reduce and manage the number of messages.
-
-![No filter set means that you can display many console messages.](../media/console-filter-displays-all.msft.png)
-
-To hide all the Warning-level messages to cut down on the noise, click the **Log Levels** dropdown and then clear the `Warnings` level.
+For example, to hide all the Warning-level messages to cut down on the noise, click the **Log Levels** dropdown and then clear the `Warnings` level.
 
 ![Hiding all the warning level messages in the Console to filter much of the noise.](../media/console-filter-hide-warning.msft.png)
 

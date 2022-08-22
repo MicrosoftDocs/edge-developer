@@ -63,9 +63,6 @@ These commands only work by entering them directly into the DevTools **Console**
 | [unmonitorEvents(object[, events])](#unmonitorevents) | Stops monitoring events for the specified object and events. |
 | [values(object)](#values) | Returns an array containing the values of all properties belonging to the specified object. |
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## Recently evaluated expression
@@ -83,7 +80,7 @@ $_
 
 ### Example 1
 
-1. To open the **Console** tool: In Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tab.
+1. To open the **Console** tool: In Microsoft Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tool in the **Activity bar**.
 
 1. Click in the **Console**, type the expression `2+2`, and then press `Enter`:
 
@@ -110,7 +107,7 @@ $_
 
 ### Example 2
 
-1. To open the **Console** tool: In Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tab.
+1. To open the **Console** tool: In Microsoft Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tool in the **Activity bar**.
 
 1. Paste the following code into the **Console**, and then press `Enter`:
 
@@ -150,9 +147,6 @@ $_
 
 ![$_ changes when new commands are evaluated.](../media/console-array-length.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## Recently selected element or JavaScript object
@@ -181,9 +175,6 @@ The following image shows a different element selected in the same webpage.  The
 
 ![The $1 command.](../media/console-image-highlighted-$1.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## Query selector
@@ -237,9 +228,6 @@ Result: the first `img` element after the `title--image` element is found, and t
 > [!NOTE]
 > If you are using a library such as jQuery that uses `$`, the functionality is overwritten, and `$` corresponds to the implementation from that library.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## Query selector all
@@ -293,9 +281,6 @@ Here's the result.  `$$()` selects all images that appear after the specified `<
 > [!NOTE]
 > Press `Shift`+`Enter` in the **Console** to start a new line without running the script.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## XPath
@@ -341,9 +326,6 @@ Similar to the other selector commands, `$x(path)` has an optional second parame
 
 ![Using an XPath selector with startNode.](../media/console-array-xpath-startnode.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## clear
@@ -367,9 +349,6 @@ clear()
 clear()
 ```
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## copy
@@ -392,9 +371,6 @@ copy(object)
 copy($0)
 ```
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## debug
@@ -429,9 +405,6 @@ Use `undebug(function)` to stop breaking on the function, or use the UI to turn 
 
 For more information on breakpoints, see [Pause your code with breakpoints](../javascript/breakpoints.md).
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## dir
@@ -466,9 +439,6 @@ Result:
 
 For more information, see [console.dir()](api.md#dir) in the Console API.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## dirxml
@@ -486,9 +456,6 @@ This function is equivalent to [console.dirxml()](https://developer.mozilla.org/
 dirxml(object)
 ```
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## inspect
@@ -521,9 +488,6 @@ Result:
 
 When passing a function to inspect, the function opens the webpage in the **Sources** tool for you to inspect.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## getEventListeners
@@ -553,17 +517,14 @@ Result:
 
 ![Output of using getEventListeners(document).](../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png)
 
-If more than one listener is registered on the specified object, then the array contains a member for each listener.  In the following figure, two event listeners are registered on the `document` element for the `click` event:
+If more than one listener is registered on the specified object, then the array contains a member for each listener.  In the following figure, two event listeners are registered on the `document` element for the `touchstart` event:
 
-![Multiple event listeners registered on the 'document' element for the 'click' event.](../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png)
+![Multiple event listeners registered on the 'document' element for the 'touchstart' event.](../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png)
 
 You can further expand each of the following objects to explore their properties.  Here's an expanded view of the listener object:
 
 ![Expanded view of listener object.](../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## keys
@@ -601,9 +562,6 @@ Result:
 
 ![The keys() and values() commands.](../media/console-keys-values.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## monitor
@@ -635,9 +593,6 @@ Result:
 
 To end monitoring, use `unmonitor(function)`.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## monitorEvents
@@ -698,9 +653,6 @@ Here's the sample output after typing a character in the text field:
 
 ![Monitoring key events.](../media/console-monitor-events-type-t-y.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## profile
@@ -737,16 +689,13 @@ profileEnd('A');
 profileEnd('B');
 ```
 
-The result is the same, regardless of the order.  The result appears as a Heap Snapshot in the **Memory** tool, with grouped profiles:
+The result is the same, regardless of the order.  The result appears as a Heap Snapshot in the **JavaScript Profiler** tool, with grouped profiles:
 
 ![Grouped profiles.](../media/console-memory-multiple-cpu-profiles.msft.png)
 
 > [!NOTE]
 > Multiple CPU profiles can operate at the same time, and you aren't required to close-out each profile in creation order.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## profileEnd
@@ -776,9 +725,6 @@ profileEnd([name])
 
 For more information, see [profile](#profile), above.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## queryObjects
@@ -804,9 +750,6 @@ queryObjects(Constructor)
 
 *  `queryObjects(functionName)` returns all objects that were instantiated using `new functionName()`.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## table
@@ -846,9 +789,6 @@ Result:
 
 ![The result of the table() function.](../media/console-table-display.msft.png)
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## undebug
@@ -871,9 +811,6 @@ undebug(function)
 undebug(getData);
 ```
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## unmonitor
@@ -897,9 +834,6 @@ unmonitor(function)
 unmonitor(getData);
 ```
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## unmonitorEvents
@@ -931,9 +865,6 @@ monitorEvents($0, "mouse");
 unmonitorEvents($0, "mousemove");
 ```
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## values
@@ -956,9 +887,6 @@ values(object)
 values(object);
 ```
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## See also

@@ -48,15 +48,15 @@ To add a live expression:
 
    <!-- revise the step & the capture after it: -->
 
-1. In that same window, go to the webpage [Overview of DevTools](../overview.md), and then click the **Docs** button in the upper left.
+1. In that same window, go to the webpage [Overview of DevTools](../overview.md), and then click the **Docs** button in the upper right.
 
-   The Live Expression value changes to `button.nav-bar-button.focus-visible`:
+   The Live Expression value changes to `button.nav-bar-button`:
 
    ![To change the value of the Live Expression, interact with different elements on the webpage.](../media/console-live-expressions-document-active-element-nav-button.msft.png)
 
 1. To change the value again, open and click the **Search** text box on the webpage.
 
-   The Live Expression value changes to `input#site-search-input.autocomplete-input.input.is-small.focus-visible`:
+   The Live Expression value changes to `input#site-search-input.autocomplete-input.input.input-sm.focus-visible`:
 
    ![Navigate to a different element in the webpage to update the Live Expression.](../media/console-live-expressions-document-active-element-search.msft.png)
 
