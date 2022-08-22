@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/19/2022
+ms.date: 08/21/2022
 ---
 # Visual vs. windowed hosting of WebView2
 
@@ -41,11 +41,15 @@ If you're using a UI framework for your application, you should use the correspo
 * [CoreWebView2Controller.Close Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close?view=webview2-dotnet-1.0.1293.44)
 * [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controllerasync)
 
+---
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2Controller.CoreWebView2 Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44)
 * [CoreWebView2Controller.Close Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#close)
 * [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
+
+---
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -53,15 +57,123 @@ If you're using a UI framework for your application, you should use the correspo
 * [ICoreWebView2Controller::Close Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#close)
 * [CoreWebView2Environment::CreateCoreWebView2ControllerAsync Method]()
 
+---
 
 <!-- ====================================================================== -->
-## Second major heading
+## Windowed hosting
 
+Windowed hosting can be described as a whiteboard or container that stores information. You can have multiple whiteboards in your application that will each be used as a WebView component to access web content. Some of the Output/Input commands are handled for you by the framework you choose, however you will still need to handle window management. 
 
-#### Minor heading
+Some of the most notable benefits for Windowed hosting including the following:
 
+* Zooming and rasterization scales (for example, menus, context menus, and so on) will also automatically scale to the application's parent HWND. It also handles how the WebView manages being focused and tabbing in/out of itself when it reaches the final element. 
+* The application handles keyboard accelerators and keyboard shortcuts when in the WebView. For example, Ctrl + C in a WebView will know that you are trying to copy content in the WebView, and not pressing Ctrl and C on the keyboard. 
+* If you don't have to manage the various composition-based rendering (for example,  Inputs, Outputs, and Accessibility controls) if you don't want to.
 
-#### Minor heading
+#### Window management
+
+The following aspects of window management are handled in a windowed hosting environment.
+
+**Sizing, positioning, and visibility** 
+
+CoreWebView2Controller takes a parent HWND. The Bounds property sizes and positions the WebView2 relative to the parent HWND. The visibility of WebView2 can be toggled using 'IsVisible`. 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Controller.Bounds](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.bounds?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-bounds)
+* [CoreWebView2Controller.IsVisible property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible?view=webview2-dotnet-1.0.1293.44)
+
+---
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Controller.Bounds](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#bounds)
+* [CoreWebView2Controller.IsVisible property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#isvisible)
+
+---
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [CoreWebView2Controller::Bounds property][(get]https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_bounds, [put)]https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_bounds
+* [ICoreWebView2Controller::IsVisible property][(get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_isvisible), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_isvisible)
+
+---
+
+**Zooming**
+
+WebView2 ZoomFactor is used to scale just the web content. This is also update??? when the user zooms the content through Ctrl+Mouse Wheel. 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+[CoreWebView2Controller.ZoomFactor property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactor?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-zoomfactor) 
+[CoreWebView2Controller.ZoomFactorChanged event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactorchanged?view=webview2-dotnet-1.0.1293.44) 
+[CoreWebView2Controller.SetBoundsAndZoomFactor method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.setboundsandzoomfactor?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-setboundsandzoomfactor(system-windows-rect-system-double))
+
+---
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+[CoreWebView2Controller.ZoomFactor property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#zoomfactor) 
+[CoreWebView2Controller.ZoomFactorChanged event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#zoomfactorchanged)
+[CoreWebView2Controller.SetBoundsAndZoomFactor method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#setboundsandzoomfactor)
+
+---
+
+##### [Win32/C++](#tab/win32cpp)
+
+[ICoreWebView2Controller.ZoomFactor property(get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_zoomfactor),[put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_zoomfactor)
+[ICoreWebView2Controller.ZoomFactorChanged event] 
+[ICoreWebView2Controller.SetBoundsAndZoomFactor method]
+
+---
+
+**Rasterization scale**
+
+The RasterizationScale API scales all WebView2 UI including context menus, tooltip, and popups. The app can set whether the WebView2 should detect monitor scale changes and automatically update the RasterizationScale. `BoundsMode` is used to configure whether the `Bounds` property is interpreted as raw pixels, or DIPs (which need to be scaled by `RasterizationScale`). 
+
+* CoreWebView2Controller.BoundsMode Property 
+  * CoreWebView2BoundsMode Enum 
+* CoreWebView2Controller.RasterizationScale Property 
+* CoreWebView2Controller.RasterizationScaleChanged Event 
+* CoreWebView2Controller.ShouldDetectMonitorScaleChanges Property 
+
+**Focus and tabbing**
+
+WebView2 raises events to let the application know when it gains or loses focus. For tabbing, there's an API to move focus into WebView2 and an event for WebView2 to request the application to take focus back. 
+
+* CoreWebView2Controller.MoveFocus Method 
+  * CoreWebView2MoveFocusReason Enum 
+* CoreWebView2Controller.MoveFocusRequested Event 
+  * CoreWebView2MoveFocusRequestedEventArgs Class 
+* CoreWebView2Controller.GotFocus Event 
+* CoreWebView2Controller.LostFocus Event 
+
+**Parent window**
+
+WebView2 can be re-parented to a different parent HWND. WebView2 also needs to be notified when the application’s position on the screen changes. 
+
+* CoreWebView2Controller.NotifyParentWindowPositionChanged Method 
+* CoreWebView2Controller.ParentWindow Property 
+
+**Keyboard accelerators** 
+
+When WebView2 has focus, it receives input directly from the user. An application may want to intercept and handle certain accelerator key combinations or disable the normal browser accelerator key behaviors. 
+
+* CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled Property 
+* CoreWebView2Controller.AcceleratorKeyPressed Event 
+  * CoreWebView2AcceleratorKeyPressedEventArgs Class 
+  * CoreWebView2KeyEventKind Enum 
+  * CoreWebView2PhysicalKeyStatus Struct 
+
+**Default background color** 
+
+WebView2 can specify a default background color. This can be any opaque color or transparent color. This color will be used if the html page doesn't set its own background color. 
+
+* CoreWebView2Controller.DefaultBackgroundColor Property 
+  * CoreWebView2Color Struct 
+
+<!-- ====================================================================== -->
+## Visual hosting
+
 
 
 <!-- ====================================================================== -->
