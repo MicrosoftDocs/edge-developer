@@ -181,9 +181,28 @@ The following facts apply to a WebView2 application that uses visual hosting:
 * The controls and/or configurations to DPI scaling must be set by the application. 
 * Inputs are routed to the application's HWND and must be configured to send the spatial input (for example, mouse, touch, and pen) based on positions, NOT what currently has focus like a keyboard.  
 
-Consider the following APIs when configuring WebView2 in a visual hosting environment.
+The following APIs can be used when configuring WebView2 in a visual hosting environment.
+
+#### Composition based rendering 
 
 
+#### Output 
+
+#### Input
+
+#### Accessibility
+
+## Scenarios
+
+There are instances where a developer might want to focus on displaying web content as quickly and easily as possible in their application. In this case, windowed hosting allows for a solution that quickly displays web content without having to include features for inputs, outputs, and accessibility.
+
+Alternatively, visual based hosting allows for (and requires) more granular controls. The application needs specific handling of  window management and rendering API’s. 
+
+Both hosting approaches are similar in functionality but suit different needs depending on the application requirements. 
+
+## Conclusion
+
+Windowed and visual hosting achieve the same output, but in different ways. The choice between the two options isn't a matter of convenience, but is based on what works best for the application. 
 
 <!-- ====================================================================== -->
 ## See also
