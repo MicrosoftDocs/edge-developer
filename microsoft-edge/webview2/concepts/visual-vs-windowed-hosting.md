@@ -46,7 +46,7 @@ The `CoreWebView2Controller` properties and methods:
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Controller.CoreWebView2 Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44)
+* [CoreWebView2Controller.CoreWebView2 Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_corewebview2)
 * [CoreWebView2Controller.Close Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#close)
 * [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
 
@@ -54,7 +54,7 @@ The `CoreWebView2Controller` properties and methods:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::CoreWebView2 Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44)
+* [ICoreWebView2Controller::CoreWebView2 Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44) <!--no put--> 
 * [ICoreWebView2Controller::Close Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#close)
 * [CoreWebView2Environment::CreateCoreWebView2ControllerAsync Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-1.0.1293.44#createcorewebview2controller)
 
@@ -122,10 +122,9 @@ WebView2 ZoomFactor is used to scale just the web content. This is also update??
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller.ZoomFactor Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_zoomfactor),[put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_zoomfactor)
-* [ICoreWebView2Controller.ZoomFactorChanged Event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_zoomfactorchanged), [remove](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_zoomfactorchanged)
-
-* [ICoreWebView2Controller.SetBoundsAndZoomFactor Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#setboundsandzoomfactor)
+* [ICoreWebView2Controller::ZoomFactor Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_zoomfactor),[put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_zoomfactor)
+* [ICoreWebView2Controller::ZoomFactorChanged Event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_zoomfactorchanged), [remove](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_zoomfactorchanged)
+* [ICoreWebView2Controller::SetBoundsAndZoomFactor Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#setboundsandzoomfactor)
 
 ---
 
@@ -133,22 +132,77 @@ WebView2 ZoomFactor is used to scale just the web content. This is also update??
 
 The RasterizationScale API scales all WebView2 UI including context menus, tooltip, and popups. The app can set whether the WebView2 should detect monitor scale changes and automatically update the RasterizationScale. `BoundsMode` is used to configure whether the `Bounds` property is interpreted as raw pixels, or DIPs (which need to be scaled by `RasterizationScale`). 
 
-* CoreWebView2Controller.BoundsMode Property 
-  * CoreWebView2BoundsMode Enum 
-* CoreWebView2Controller.RasterizationScale Property 
-* CoreWebView2Controller.RasterizationScaleChanged Event 
-* CoreWebView2Controller.ShouldDetectMonitorScaleChanges Property 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Controller.BoundsMode Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.boundsmode?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-boundsmode)
+  * [CoreWebView2BoundsMode Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2boundsmode?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Controller.RasterizationScale Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.rasterizationscale?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Controller.RasterizationScaleChanged Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.rasterizationscalechanged?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Controller.ShouldDetectMonitorScaleChanges Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.shoulddetectmonitorscalechanges?view=webview2-dotnet-1.0.1293.44)
+
+---
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Controller.BoundsMode Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#boundsmode)
+  * [CoreWebView2BoundsMode Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2boundsmode?view=webview2-winrt-1.0.1293.44)
+* [CoreWebView2Controller.RasterizationScale Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#rasterizationscale)
+* [CoreWebView2Controller.RasterizationScaleChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#rasterizationscalechanged)
+* [CoreWebView2Controller.ShouldDetectMonitorScaleChanges Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#shoulddetectmonitorscalechanges)
+
+---
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Controller::BoundsMode Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_bounds), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_bounds)
+  * [ICoreWebView2BoundsMode Enum]() 
+* [ICoreWebView2Controller::RasterizationScale Property]()
+* [ICoreWebView2Controller::RasterizationScaleChanged Event]()
+* [ICoreWebView2Controller::ShouldDetectMonitorScaleChanges Property]()
+
+---
 
 **Focus and tabbing**
 
 WebView2 raises events to let the application know when it gains or loses focus. For tabbing, there's an API to move focus into WebView2 and an event for WebView2 to request the application to take focus back. 
+<!---
+##### [.NET/C#](#tab/dotnetcsharp)
+##### [WinRT/C#](#tab/winrtcsharp)
+##### [Win32/C++](#tab/win32cpp)    -->
 
-* CoreWebView2Controller.MoveFocus Method 
-  * CoreWebView2MoveFocusReason Enum 
-* CoreWebView2Controller.MoveFocusRequested Event 
-  * CoreWebView2MoveFocusRequestedEventArgs Class 
-* CoreWebView2Controller.GotFocus Event 
-* CoreWebView2Controller.LostFocus Event 
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Controller.MoveFocus Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocus?view=webview2-dotnet-1.0.1293.44)
+  * [CoreWebView2MoveFocusReason Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusreason?view=webview2-dotnet-1.0.1293.44) 
+* [CoreWebView2Controller.MoveFocusRequested Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocusrequested?view=webview2-dotnet-1.0.1293.44) 
+  * [CoreWebView2MoveFocusRequestedEventArgs Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusrequestedeventargs?view=webview2-dotnet-1.0.1293.44) 
+* [CoreWebView2Controller.GotFocus Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.gotfocus?view=webview2-dotnet-1.0.1293.44) 
+* [CoreWebView2Controller.LostFocus Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.lostfocus?view=webview2-dotnet-1.0.1293.44) 
+
+---
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Controller.MoveFocus Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#movefocus) 
+  * [CoreWebView2MoveFocusReason Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2movefocusreason?view=webview2-winrt-1.0.1293.44)
+* [CoreWebView2Controller.MoveFocusRequested Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#movefocusrequested) 
+  * [CoreWebView2MoveFocusRequestedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2movefocusrequestedeventargs?view=webview2-winrt-1.0.1293.44)
+* [CoreWebView2Controller.GotFocus Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#gotfocus) 
+* [CoreWebView2Controller.LostFocus Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#lostfocus) 
+
+---
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Controller::MoveFocus Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#movefocus)
+  * [ICoreWebView2MoveFocusReason Enum]() 
+* [ICoreWebView2Controller::MoveFocusRequested Event- (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_movefocusrequested), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_movefocusrequested) 
+  * [ICoreWebView2MoveFocusRequestedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2movefocusrequestedeventargs?view=webview2-1.0.1293.44) 
+* [ICoreWebView2Controller::GotFocus Event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_gotfocus), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_gotfocus) 
+* [ICoreWebView2Controller::LostFocus Event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_lostfocus), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_lostfocus) 
+
+---
 
 **Parent window**
 
