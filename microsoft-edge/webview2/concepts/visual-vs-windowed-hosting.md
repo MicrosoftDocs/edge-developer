@@ -10,7 +10,7 @@ ms.date: 08/22/2022
 ---
 # Visual vs. windowed hosting of WebView2
 
-Before hosting the WebView2 control in your app, it's important to understand visual and windowed hosting. In addition to having different requirements, each form of hosting has its own constraints and benefits. Hosting is about how to get WebView2 onto different platforms.
+This article describes the two options you have for hosting the Microsoft Edge WebView2 control in your application. Before you decide which hosting option to use in your app, it's important to understand visual and windowed hosting. In addition to having different requirements, each form of hosting has its own constraints and benefits. Hosting is about how to get WebView2 onto different platforms.
 
 Both approaches implement a whiteboard or container approach for storing and presenting information. The hosting form determines how the application works and the key differences are as follows:
 
@@ -29,11 +29,12 @@ Windows 7 and Windows 8 can only do windowed hosting.
   
 #### Rendering WebView2 in framework and non-framework applications
 
-If you're using a UI framework for your application, you should use the corresponding WebView2 element for that UI framework. If you aren't using a UI framework for your application (for example, Win32, React Native, etc.) or your UI framework doesn't have a WebView2 element, then the developer will need to create `CoreWebView2Controller` and render it into the desired application. 
+If you're using a UI framework for your application, you should use the corresponding WebView2 element for that UI framework. If you aren't using a UI framework for your application (for example, Win32, React Native, etc.) or your UI framework doesn't have a WebView2 element, you'll have to create `CoreWebView2Controller` and render it into the desired application. 
 
- If your application UI is built using `DirectComposition` or `Windows.UI.Composition`, then you should use `CoreWebView2CompositionController`, otherwise you should use `CoreWebView2Controller`. 
+> [!NOTE]
+> If your application's UI is built using `DirectComposition` or `Windows.UI.Composition`, then you should use `CoreWebView2CompositionController`, otherwise you should use `CoreWebView2Controller`. 
 
-`CoreWebView2Controller` properties and methods:
+The `CoreWebView2Controller` properties and methods:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -94,8 +95,8 @@ CoreWebView2Controller takes a parent `HWND`. The Bounds property sizes and posi
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [CoreWebView2Controller::Bounds Property(get]https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_bounds, [put)]https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_bounds
-* [ICoreWebView2Controller::IsVisible Property][(get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_isvisible), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_isvisible)
+* [CoreWebView2Controller::Bounds Property(get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_bounds), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_bounds)
+* [ICoreWebView2Controller::IsVisible Property(get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_isvisible), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_isvisible)
 
 ---
 
@@ -104,25 +105,27 @@ CoreWebView2Controller takes a parent `HWND`. The Bounds property sizes and posi
 WebView2 ZoomFactor is used to scale just the web content. This is also update??? when the user zooms the content through Ctrl+Mouse Wheel. 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
-[CoreWebView2Controller.ZoomFactor Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactor?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-zoomfactor) 
-[CoreWebView2Controller.ZoomFactorChanged Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactorchanged?view=webview2-dotnet-1.0.1293.44) 
-[CoreWebView2Controller.SetBoundsAndZoomFactor Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.setboundsandzoomfactor?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-setboundsandzoomfactor(system-windows-rect-system-double))
+
+* [CoreWebView2Controller.ZoomFactor Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactor?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-zoomfactor) 
+* [CoreWebView2Controller.ZoomFactorChanged Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactorchanged?view=webview2-dotnet-1.0.1293.44) 
+* [CoreWebView2Controller.SetBoundsAndZoomFactor Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.setboundsandzoomfactor?view=webview2-dotnet-1.0.1293.)
 
 ---
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-[CoreWebView2Controller.ZoomFactor Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#zoomfactor) 
-[CoreWebView2Controller.ZoomFactorChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#zoomfactorchanged)
-[CoreWebView2Controller.SetBoundsAndZoomFactor Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#setboundsandzoomfactor)
+* [CoreWebView2Controller.ZoomFactor Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#zoomfactor) 
+* [CoreWebView2Controller.ZoomFactorChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#zoomfactorchanged)
+* [CoreWebView2Controller.SetBoundsAndZoomFactor Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#setboundsandzoomfactor)
 
 ---
 
 ##### [Win32/C++](#tab/win32cpp)
 
-[ICoreWebView2Controller.ZoomFactor Property](get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_zoomfactor),[put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_zoomfactor)
-[ICoreWebView2Controller.ZoomFactorChanged Event] 
-[ICoreWebView2Controller.SetBoundsAndZoomFactor Method]
+* [ICoreWebView2Controller.ZoomFactor Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_zoomfactor),[put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_zoomfactor)
+* [ICoreWebView2Controller.ZoomFactorChanged Event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_zoomfactorchanged), [remove](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_zoomfactorchanged)
+
+* [ICoreWebView2Controller.SetBoundsAndZoomFactor Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#setboundsandzoomfactor)
 
 ---
 
