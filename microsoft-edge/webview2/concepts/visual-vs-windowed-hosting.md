@@ -51,7 +51,7 @@ The `CoreWebView2Controller` properties and methods:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::CoreWebView2 Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44) <!--no put--> 
+* [ICoreWebView2Controller::CoreWebView2 Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_corewebview2)<!-- no put-->
 * [ICoreWebView2Controller::Close Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#close)
 * [ICoreWebView2Environment::CreateCoreWebView2Controller Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-1.0.1293.44#createcorewebview2controller)
 
