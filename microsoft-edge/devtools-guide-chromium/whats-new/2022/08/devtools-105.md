@@ -76,13 +76,13 @@ In previous versions of Microsoft Edge, there was a bug that sometimes resulted 
 
 
 <!-- ====================================================================== -->
-## 3
+<!-- ## 3 -->
 
 <!-- Title:  -->
 <!-- Subtitle: . -->
 
 
-![3](./devtools-105-images/pngtemplate.png)
+<!-- ![3](./devtools-105-images/pngtemplate.png) -->
 
 <!-- See also:
 * []()
@@ -90,13 +90,13 @@ In previous versions of Microsoft Edge, there was a bug that sometimes resulted 
 
 
 <!-- ====================================================================== -->
-## 4
+<!-- ## 4 -->
 
 <!-- Title:  -->
 <!-- Subtitle: . -->
 
 
-![4](./devtools-105-images/pngtemplate.png)
+<!-- ![4](./devtools-105-images/pngtemplate.png) -->
 
 <!-- See also:
 * []()
