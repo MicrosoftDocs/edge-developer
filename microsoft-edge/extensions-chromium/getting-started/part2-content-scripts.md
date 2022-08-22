@@ -81,7 +81,11 @@ if (sendMessageId) {
 
 In the `onclick` event, find the current browser tab.  Then, use the `chrome.tabs.sendmessage` Extension API to send a message to that tab.
 
-In that message, you must include the URL to the image you want to display.  Also, make sure that you send a unique ID to assign to the inserted image.  Let the content insertion JavaScript generate that image ID in `popup.js`, and then pass that ID to the not-yet-created content script.
+In that message, you must include the URL to the image you want to display.  Also, make sure that you send a unique ID to assign to the inserted image.
+
+To send a unique ID to assign to the inserted image, a couple different approaches are possible:
+*  Approach 1: Let the content insertion JavaScript generate that image ID.  We won't use that approach here, for reasons that become apparent later.
+*  Approach 2: Generate that unique ID here in `popup.js`, and then pass that ID to the not-yet-created content script.  We'll use this approach.
 
 The following code outlines the updated code in `popup/popup.js`.  You also pass in the current tab ID, which is used later in this article:
 
