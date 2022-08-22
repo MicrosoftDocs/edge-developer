@@ -53,9 +53,9 @@ If you're using a UI framework for your application, you should use the correspo
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44)
+* [ICoreWebView2Controller::CoreWebView2 Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44)
 * [ICoreWebView2Controller::Close Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#close)
-* [CoreWebView2Environment::CreateCoreWebView2ControllerAsync Method]()
+* [CoreWebView2Environment::CreateCoreWebView2ControllerAsync Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-1.0.1293.44#createcorewebview2controller)
 
 ---
 
@@ -66,7 +66,7 @@ Windowed hosting can be described as a whiteboard or container that stores infor
 
 Some of the most notable benefits for Windowed hosting including the following:
 
-* Zooming and rasterization scales (for example, menus, context menus, and so on) will also automatically scale to the application's parent HWND. It also handles how the WebView manages being focused and tabbing in/out of itself when it reaches the final element. 
+* Zooming and rasterization scales (for example, menus, context menus, and so on) will also automatically scale to the application's parent `HWND`. It also handles how the WebView manages being focused and tabbing in/out of itself when it reaches the final element. 
 * The application handles keyboard accelerators and keyboard shortcuts when in the WebView. For example, Ctrl + C in a WebView will know that you are trying to copy content in the WebView, and not pressing Ctrl and C on the keyboard. 
 * If you don't have to manage the various composition-based rendering (for example,  Inputs, Outputs, and Accessibility controls) if you don't want to.
 
@@ -76,7 +76,7 @@ The following aspects of window management are handled in a windowed hosting env
 
 **Sizing, positioning, and visibility** 
 
-CoreWebView2Controller takes a parent HWND. The Bounds property sizes and positions the WebView2 relative to the parent HWND. The visibility of WebView2 can be toggled using 'IsVisible`. 
+CoreWebView2Controller takes a parent `HWND`. The Bounds property sizes and positions the WebView2 relative to the parent `HWND`. The visibility of WebView2 can be toggled using 'IsVisible`. 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -94,7 +94,7 @@ CoreWebView2Controller takes a parent HWND. The Bounds property sizes and positi
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [CoreWebView2Controller::Bounds Property][(get]https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_bounds, [put)]https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_bounds
+* [CoreWebView2Controller::Bounds Property(get]https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_bounds, [put)]https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_bounds
 * [ICoreWebView2Controller::IsVisible Property][(get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_isvisible), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_isvisible)
 
 ---
@@ -149,7 +149,7 @@ WebView2 raises events to let the application know when it gains or loses focus.
 
 **Parent window**
 
-WebView2 can be re-parented to a different parent HWND. WebView2 also needs to be notified when the application’s position on the screen changes. 
+WebView2 can be re-parented to a different parent `HWND`. WebView2 also needs to be notified when the application’s position on the screen changes. 
 
 * CoreWebView2Controller.NotifyParentWindowPositionChanged Method 
 * CoreWebView2Controller.ParentWindow Property 
@@ -179,7 +179,7 @@ Visual Hosting can be described as a single whiteboard in which the information 
 The following facts apply to a WebView2 application that uses visual hosting: 
 
 * The controls and/or configurations to DPI scaling must be set by the application. 
-* Inputs are routed to the application's HWND and must be configured to send the spatial input (for example, mouse, touch, and pen) based on positions, NOT what currently has focus like a keyboard.  
+* Inputs are routed to the application's `HWND` and must be configured to send the spatial input (for example, mouse, touch, and pen) based on positions, NOT what currently has focus like a keyboard.  
 
 The following APIs can be used when configuring WebView2 in a visual hosting environment.
 
@@ -213,7 +213,7 @@ Spatial input such as mouse, touch, or pen is received by the application and mu
 
 #### Accessibility
 
-By default, WebView2 will show up in the accessibility tree as a child of the parent HWND. WebView2 provides an API to better position the WebView2 content relative to other elements in the application.
+By default, WebView2 will show up in the accessibility tree as a child of the parent `HWND`. WebView2 provides an API to better position the WebView2 content relative to other elements in the application.
 
 * CoreWebView2CompositionController.AutomationProvider Property 
 * CoreWebView2Environment.GetAutomationProviderForWindow Method 
