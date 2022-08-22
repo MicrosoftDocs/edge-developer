@@ -153,7 +153,7 @@ if (sendMessageId) {
 <!-- ====================================================================== -->
 ## Step 4: Make your `stars.jpeg` available from any browser tab
 
-This is why the `images/stars.jpeg` must use the `chrome.runtime.getURL` (or `chrome.extension.getURL` while using Manifest V2) API instead of just passing in the relative URL without the extra prefix like in the previous section.  The extra prefix, returned by `getUrl` with the image attached, should look something like the following:
+When you pass the `images/stars.jpeg`, you must use the `chrome.runtime.getURL` API (or `chrome.extension.getURL` if using Manifest V2) instead of just passing in the relative URL without the extra prefix like in the previous section.  That extra prefix is returned by `getUrl` with the image attached, and looks something like the following:
 
 ```http
 extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
