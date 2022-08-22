@@ -174,6 +174,15 @@ WebView2 can specify a default background color. This can be any opaque color or
 <!-- ====================================================================== -->
 ## Visual hosting
 
+Visual Hosting can be described as a single whiteboard in which the information is written directly to the board. By doing so, content is embedded to a location on the whiteboard. This location must handle how it will scale and behave in an application when there's interaction with the application. In addition to the window management described  for windowed hosting, visual hosting will need the application to manage the composition-based rendering, when it receives any and all user interaction(s).  
+
+The following facts apply to a WebView2 application that uses visual hosting: 
+
+* The controls and/or configurations to DPI scaling must be set by the application. 
+* Inputs are routed to the application's HWND and must be configured to send the spatial input (for example, mouse, touch, and pen) based on positions, NOT what currently has focus like a keyboard.  
+
+Consider the following APIs configuring for WebView in a visual hosting environment.
+
 
 
 <!-- ====================================================================== -->
