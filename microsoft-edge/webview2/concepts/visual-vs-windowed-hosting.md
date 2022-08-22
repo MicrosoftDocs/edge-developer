@@ -181,7 +181,7 @@ The following facts apply to a WebView2 application that uses visual hosting:
 * The controls and/or configurations to DPI scaling must be set by the application. 
 * Inputs are routed to the application's HWND and must be configured to send the spatial input (for example, mouse, touch, and pen) based on positions, NOT what currently has focus like a keyboard.  
 
-Consider the following APIs configuring for WebView in a visual hosting environment.
+Consider the following APIs when configuring WebView2 in a visual hosting environment.
 
 
 
