@@ -112,7 +112,7 @@ WebView2 ZoomFactor is used to scale just the web content. This is also update??
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Controller::ZoomFactor Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_zoomfactor),[put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_zoomfactor)
-* [ICoreWebView2Controller::ZoomFactorChanged Event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_zoomfactorchanged), [remove](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_zoomfactorchanged)
+* [ICoreWebView2Controller::ZoomFactorChanged Event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_zoomfactorchanged), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_zoomfactorchanged)
 * [ICoreWebView2Controller::SetBoundsAndZoomFactor Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#setboundsandzoomfactor)
 
 ---
@@ -217,19 +217,19 @@ When WebView2 has focus, it receives input directly from the user. An applicatio
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled Property] 
-* [CoreWebView2Controller.AcceleratorKeyPressed Event] 
-  * [CoreWebView2AcceleratorKeyPressedEventArgs Class] 
-  * [CoreWebView2KeyEventKind Enum] 
-  * [CoreWebView2PhysicalKeyStatus Struct]
+* [CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arebrowseracceleratorkeysenabled?view=webview2-dotnet-1.0.1293.44) 
+* [CoreWebView2Controller.AcceleratorKeyPressed Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.1293.44) 
+  * [CoreWebView2AcceleratorKeyPressedEventArgs Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs?view=webview2-dotnet-1.0.1293.44) 
+  * [CoreWebView2KeyEventKind Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2keyeventkind?view=webview2-dotnet-1.0.1293.44)
+  * [CoreWebView2PhysicalKeyStatus Struct](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus?view=webview2-dotnet-1.0.1293.44)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Settings::AreBrowserAcceleratorKeysEnabled Property] 
-* [ICoreWebView2Controller::AcceleratorKeyPressed Event] 
-  * [ICoreWebView2AcceleratorKeyPressedEventArgs Class] 
-  * [ICoreWebView2KeyEventKind Enum] 
-  * [ICoreWebView2PhysicalKeyStatus Struct]
+* [ICoreWebView2Settings::AreBrowserAcceleratorKeysEnabled Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1293.44#arebrowseracceleratorkeysenabled)
+* [ICoreWebView2Controller::AcceleratorKeyPressed Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#acceleratorkeypressed) 
+  * [ICoreWebView2AcceleratorKeyPressedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2acceleratorkeypressedeventargs?view=webview2-winrt-1.0.1293.44)
+  * [ICoreWebView2KeyEventKind Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2keyeventkind?view=webview2-winrt-1.0.1293.44) 
+  * [ICoreWebView2PhysicalKeyStatus Struct](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2physicalkeystatus?view=webview2-winrt-1.0.1293.44)
 
 ---
 
