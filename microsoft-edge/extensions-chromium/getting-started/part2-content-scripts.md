@@ -68,7 +68,7 @@ Each tab page (and extension) runs in its own thread. Create a content script th
 <!-- ====================================================================== -->
 ## Step 3: Create the pop-up JavaScript to send a message
 
-Create the `popup/popup.js` and add code to send a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up **Display** button:
+Create the `popup/popup.js` file and add code to send a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up **Display** button:
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
