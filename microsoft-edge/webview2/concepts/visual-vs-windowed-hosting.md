@@ -285,11 +285,6 @@ For composition based WebView2 rendering, use the `CoreWebView2Environment` to c
 
 ---
 
-<!---
-##### [.NET/C#](#tab/dotnetcsharp)
-##### [WinRT/C#](#tab/winrtcsharp)
-##### [Win32/C++](#tab/win32cpp)    -->
-
 #### Output
 
 WebView2 can connect its composition tree to `IDCompositionVisual`, `IDCompositionTarget`, or `Windows::UI::Composition::ContainerVisual`. 
@@ -312,6 +307,11 @@ WebView2 can connect its composition tree to `IDCompositionVisual`, `IDCompositi
 
 Spatial input such as mouse, touch, or pen is received by the application and must be sent to WebView2. WebView2 notifies the application when the cursor should be updated based on the input device's position. 
 
+<!---
+##### [.NET/C#](#tab/dotnetcsharp)
+##### [WinRT/C#](#tab/winrtcsharp)
+##### [Win32/C++](#tab/win32cpp)    -->
+
 * CoreWebView2CompositionController.Cursor Property 
 * CoreWebView2CompositionController.CursorChanged Event 
 * CoreWebView2CompositionController.SystemCursorId Property 
@@ -327,8 +327,22 @@ Spatial input such as mouse, touch, or pen is received by the application and mu
 
 By default, WebView2 will show up in the accessibility tree as a child of the parent `HWND`. WebView2 provides an API to better position the WebView2 content relative to other elements in the application.
 
-* CoreWebView2CompositionController.AutomationProvider Property 
-* CoreWebView2Environment.GetAutomationProviderForWindow Method 
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2CompositionController.AutomationProvider Property]() 
+* [CoreWebView2Environment.GetAutomationProviderForWindow Method]() 
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2CompositionController.AutomationProvider Property]() 
+* [CoreWebView2Environment.GetAutomationProviderForWindow Method]()
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionController::AutomationProvider Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller2?view=webview2-1.0.1293.44#get_automationprovider), <!--- no put -->
+* [ICoreWebView2Environment::GetAutomationProviderForWindow Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment4?view=webview2-1.0.1293.44#getautomationproviderforwindow)
+
+--- 
 
 <!-- ====================================================================== -->
 ## Scenarios
