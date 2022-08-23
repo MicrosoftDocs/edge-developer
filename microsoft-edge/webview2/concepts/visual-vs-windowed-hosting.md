@@ -51,7 +51,7 @@ The `CoreWebView2Controller` properties and methods:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::CoreWebView2 Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_corewebview2)<!-- no put-->
+* [ICoreWebView2Controller::CoreWebView2 Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_corewebview2),<!-- no put-->
 * [ICoreWebView2Controller::Close Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#close)
 * [ICoreWebView2Environment::CreateCoreWebView2Controller Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-1.0.1293.44#createcorewebview2controller)
 
@@ -337,9 +337,9 @@ Spatial input such as mouse, touch, or pen is received by the application and mu
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2CompositionControllerC::Cursor Property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_cursor)<!---no put------> 
+* [ICoreWebView2CompositionControllerC::Cursor Property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_cursor),<!---no put------> 
 * [ICoreWebView2CompositionController::CursorChanged Event (add ](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#add_cursorchanged), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#remove_cursorchanged)
-* [ICoreWebView2CompositionController::SystemCursorId Property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_systemcursorid)<!---no put------> 
+* [ICoreWebView2CompositionController::SystemCursorId Property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_systemcursorid),<!---no put------> 
 * [ICoreWebView2CompositionController::SendMouseInput Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#sendmouseinput)
   * [ICoreWebView2MouseEventKind Enum]
   * [ICoreWebView2MouseEventVirtualKeys Enum]
