@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/22/2022
+ms.date: 08/23/2022
 ---
 # Visual vs. windowed hosting of WebView2
 
@@ -236,10 +236,6 @@ When WebView2 has focus, it receives input directly from the user. An applicatio
 **Default background color** 
 
 WebView2 can specify a default background color. This can be any opaque color or transparent color. This color will be used if the html page doesn't set its own background color. 
-<!---
-##### [.NET/C#](#tab/dotnetcsharp)
-##### [WinRT/C#](#tab/winrtcsharp)
-##### [Win32/C++](#tab/win32cpp)    -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -250,7 +246,6 @@ WebView2 can specify a default background color. This can be any opaque color or
 
 * [CoreWebView2Controller.DefaultBackgroundColor Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-defaultbackgroundcolor)
   * [CoreWebView2Color Struct](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2color?view=webview2-dotnet-1.0.1293.44)
-
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -273,14 +268,45 @@ The following APIs can be used when configuring WebView2 in a visual hosting env
 
 For composition based WebView2 rendering, use the `CoreWebView2Environment` to create a `CoreWebView2CompositionController`. The `CoreWebView2CompositionController` implements all the APIs as `CoreWebView2Controller`, but includes additional APIs specific to composition-based rendering. 
 
-* CoreWebView2CompositionController Class 
-* CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method 
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2CompositionController Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync?view=webview2-dotnet-1.0.1293.44)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2CompositionController Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync?view=webview2-dotnet-1.0.1293.44)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionController Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44)
+* [ICoreWebView2Environment::CreateCoreWebView2CompositionController Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment3?view=webview2-1.0.1293.44#createcorewebview2compositioncontroller)
+
+---
+
+<!---
+##### [.NET/C#](#tab/dotnetcsharp)
+##### [WinRT/C#](#tab/winrtcsharp)
+##### [Win32/C++](#tab/win32cpp)    -->
 
 #### Output
 
 WebView2 can connect its composition tree to `IDCompositionVisual`, `IDCompositionTarget`, or `Windows::UI::Composition::ContainerVisual`. 
 
-* CoreWebView2CompositionController.RootVisualTarget Property 
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2CompositionController.RootVisualTarget Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.rootvisualtarget?view=webview2-dotnet-1.0.1293.44)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2CompositionController.RootVisualTarget Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.rootvisualtarget?view=webview2-dotnet-1.0.1293.44)
+
+##### [Win32/C++](#tab/win32cpp) 
+
+* [ICoreWebView2CompositionController::RootVisualTarget Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_rootvisualtarget), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#put_rootvisualtarget)
+
+---
 
 #### Input
 
