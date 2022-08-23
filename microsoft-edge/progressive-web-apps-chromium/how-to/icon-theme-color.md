@@ -189,7 +189,7 @@ Notice how the content of the icon changed. This is possible only through the us
 <!-- ====================================================================== -->
 ### Icon descriptions
 
-Below you’ll find a description of each app icon and where they show up in Windows.
+Below you'll find a description of each app icon and where they show up in Windows.
 
 The normal app icon that's shown in the start menu, task bar, or task manager.
 
@@ -201,7 +201,7 @@ The normal app icon that's shown in the start menu, task bar, or task manager.
 * 88x88 (2x scale)
 * 176x176 (4x scale)
 
-The small tile is shown in the start menu when the user set your app’s tile to small size.
+The small tile is shown in the start menu when the user set your app's tile to small size.
 
 ![Small tile](../media/windows-image-small-tile.png) 
 
@@ -211,7 +211,7 @@ The small tile is shown in the start menu when the user set your app’s tile to
 * 142x142 (2x scale)
 * 284x284 (4x scale)
 
-The medium tile icon is shown in the start menu when the user sets your app’s tile to medium size.
+The medium tile icon is shown in the start menu when the user sets your app's tile to medium size.
 
 ![Medium tile](../media/windows-image-medium-tile.png)
 
@@ -221,7 +221,7 @@ The medium tile icon is shown in the start menu when the user sets your app’s 
 * 300x300 (2x scale)
 * 600x600 (4x scale)
 
-The wide tile icon is shown in the start menu when the user sets your app’s tile to wide size.
+The wide tile icon is shown in the start menu when the user sets your app's tile to wide size.
 
 ![Wide tile](../media/windows-image-wide-tile.png)
 
@@ -231,7 +231,7 @@ The wide tile icon is shown in the start menu when the user sets your app’s ti
 * 620x300 (2x scale)
 * 1240x600 (4x scale)
 
-The large tile icon is in the start menu when the user sets your app’s tile to large size.
+The large tile icon is in the start menu when the user sets your app's tile to large size.
 ![Large tile](../media/windows-image-large-tile.png)
 
 * 310x310
@@ -240,7 +240,7 @@ The large tile icon is in the start menu when the user sets your app’s tile to
 * 620x620 (2x scale)
 * 1240x1240 (4x scale)
 
-The store logo icon is shown in app installer, Windows Partner Center, the “Report an app” option in the Store, and the “Write a review” option in the Store.
+The store logo icon is shown in app installer, Windows Partner Center, the "Report an app" option in the Store, and the "Write a review" option in the Store.
 
 ![Store Logo](../media/windows-image-store-logo.png)
 
@@ -262,7 +262,7 @@ The splash screen asset is shown as the splash screen for your app. Currently su
 
 ### Target sized images
 
-In addition to the standard scale factor sizes described above, we also recommend creating “target-size” assets. We call these assets target-size because they target specific sizes, such as 16 pixels, rather than specific scale factors, such as 400. Target-size assets are for Windows surfaces that don’t use the scaling plateau system.
+In addition to the standard scale factor sizes described above, we also recommend creating "target-size" assets. We call these assets target-size because they target specific sizes, such as 16 pixels, rather than specific scale factors, such as 400. Target-size assets are for Windows surfaces that don't use the scaling plateau system.
 
 For example, the Apps & features Windows setting uses app icons with specific sizes
 
