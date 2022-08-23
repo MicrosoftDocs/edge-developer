@@ -252,6 +252,8 @@ WebView2 can specify a default background color. This can be any opaque color or
 * [ICoreWebView2Controller::DefaultBackgroundColor Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.1293.44#get_defaultbackgroundcolor), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.1293.44#put_defaultbackgroundcolor)
   * [ICoreWebView2Color Struct]()
 
+---
+
 <!-- ====================================================================== -->
 ## Visual hosting
 
@@ -311,17 +313,46 @@ Spatial input such as mouse, touch, or pen is received by the application and mu
 ##### [.NET/C#](#tab/dotnetcsharp)
 ##### [WinRT/C#](#tab/winrtcsharp)
 ##### [Win32/C++](#tab/win32cpp)    -->
+##### [.NET/C#](#tab/dotnetcsharp)
 
-* CoreWebView2CompositionController.Cursor Property 
-* CoreWebView2CompositionController.CursorChanged Event 
-* CoreWebView2CompositionController.SystemCursorId Property 
-* CoreWebView2CompositionController.SendMouseInput Method 
-  * CoreWebView2MouseEventKind Enum 
-  * CoreWebView2MouseEventVirtualKeys Enum 
-* CoreWebView2CompositionController.SendPointerInput Method 
-  * CoreWebView2PointerEventKind Enum 
-* CoreWebView2Environment.CreateCoreWebView2PointerInfo Method 
-  * CoreWebView2PointerInfo Class 
+* [CoreWebView2CompositionController.Cursor Property]
+* [CoreWebView2CompositionController.CursorChanged Event] 
+* [CoreWebView2CompositionController.SystemCursorId Property] 
+* [CoreWebView2CompositionController.SendMouseInput Method]
+  * [CoreWebView2MouseEventKind Enum] 
+  * [CoreWebView2MouseEventVirtualKeys Enum]
+* [CoreWebView2CompositionController.SendPointerInput Method] 
+  * [CoreWebView2PointerEventKind Enum] 
+* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method] 
+  * [CoreWebView2PointerInfo Class] 
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2CompositionController.Cursor Property]
+* [CoreWebView2CompositionController.CursorChanged Event] 
+* [CoreWebView2CompositionController.SystemCursorId Property] 
+* [CoreWebView2CompositionController.SendMouseInput Method]
+  * [CoreWebView2MouseEventKind Enum] 
+  * [CoreWebView2MouseEventVirtualKeys Enum]
+* [CoreWebView2CompositionController.SendPointerInput Method] 
+  * [CoreWebView2PointerEventKind Enum] 
+* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method] 
+  * [CoreWebView2PointerInfo Class] 
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionControllerC::Cursor Property]
+* [ICoreWebView2CompositionController::CursorChanged Event] 
+* [ICoreWebView2CompositionController::SystemCursorId Property] 
+* [ICoreWebView2CompositionController::SendMouseInput Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#sendmouseinput)
+  * [ICoreWebView2MouseEventKind Enum] 
+  * [ICoreWebView2MouseEventVirtualKeys Enum]
+* [ICoreWebView2CompositionController::SendPointerInput Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#sendpointerinput) 
+  * [ICoreWebView2PointerEventKind Enum] 
+* [ICoreWebView2Environment::CreateCoreWebView2PointerInfo Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment3?view=webview2-1.0.1293.44#createcorewebview2pointerinfo) 
+  * [ICoreWebView2PointerInfo Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2pointerinfo?view=webview2-1.0.1293.44) 
+
+---
 
 #### Accessibility
 
