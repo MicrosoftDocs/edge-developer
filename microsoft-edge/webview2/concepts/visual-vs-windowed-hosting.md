@@ -88,8 +88,8 @@ CoreWebView2Controller takes a parent `HWND`. The Bounds property sizes and posi
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::Bounds Property(get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_bounds), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_bounds)
-* [ICoreWebView2Controller::IsVisible Property(get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_isvisible), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_isvisible)
+* [ICoreWebView2Controller::Bounds Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_bounds), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_bounds)
+* [ICoreWebView2Controller::IsVisible Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_isvisible), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_isvisible)
 
 ---
 
