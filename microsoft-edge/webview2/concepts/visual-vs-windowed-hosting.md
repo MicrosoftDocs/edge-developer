@@ -309,43 +309,39 @@ WebView2 can connect its composition tree to `IDCompositionVisual`, `IDCompositi
 
 Spatial input such as mouse, touch, or pen is received by the application and must be sent to WebView2. WebView2 notifies the application when the cursor should be updated based on the input device's position. 
 
-<!---
-##### [.NET/C#](#tab/dotnetcsharp)
-##### [WinRT/C#](#tab/winrtcsharp)
-##### [Win32/C++](#tab/win32cpp)    -->
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2CompositionController.Cursor Property]
-* [CoreWebView2CompositionController.CursorChanged Event] 
-* [CoreWebView2CompositionController.SystemCursorId Property] 
-* [CoreWebView2CompositionController.SendMouseInput Method]
-  * [CoreWebView2MouseEventKind Enum] 
-  * [CoreWebView2MouseEventVirtualKeys Enum]
-* [CoreWebView2CompositionController.SendPointerInput Method] 
-  * [CoreWebView2PointerEventKind Enum] 
-* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method] 
-  * [CoreWebView2PointerInfo Class] 
+* [CoreWebView2CompositionController.Cursor Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursor?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2CompositionController.CursorChanged Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursorchanged?view=webview2-dotnet-1.0.1293.44) 
+* [CoreWebView2CompositionController.SystemCursorId Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.systemcursorid?view=webview2-dotnet-1.0.1293.44) 
+* [CoreWebView2CompositionController.SendMouseInput Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendmouseinput?view=webview2-dotnet-1.0.1293.44)
+  * [CoreWebView2MouseEventKind Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2mouseeventkind) 
+  * [CoreWebView2MouseEventVirtualKeys Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2mouseeventvirtualkeys?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2CompositionController.SendPointerInput Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendpointerinput?view=webview2-dotnet-1.0.1293.44) 
+  * [CoreWebView2PointerEventKind Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2pointereventkind?view=webview2-dotnet-1.0.1293.44) 
+* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2pointerinfo?view=webview2-dotnet-1.0.1293.44) 
+  * [CoreWebView2PointerInfo Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2pointerinfo?view=webview2-dotnet-1.0.1293.44) 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2CompositionController.Cursor Property]
-* [CoreWebView2CompositionController.CursorChanged Event] 
-* [CoreWebView2CompositionController.SystemCursorId Property] 
-* [CoreWebView2CompositionController.SendMouseInput Method]
-  * [CoreWebView2MouseEventKind Enum] 
-  * [CoreWebView2MouseEventVirtualKeys Enum]
-* [CoreWebView2CompositionController.SendPointerInput Method] 
-  * [CoreWebView2PointerEventKind Enum] 
-* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method] 
-  * [CoreWebView2PointerInfo Class] 
+* [CoreWebView2CompositionController.Cursor Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1293.44#cursor)
+* [CoreWebView2CompositionController.CursorChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1293.44#cursorchanged) 
+* [CoreWebView2CompositionController.SystemCursorId Property]()
+* [CoreWebView2CompositionController.SendMouseInput Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1293.44#sendmouseinput)
+  * [CoreWebView2MouseEventKind Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2mouseeventkind) 
+  * [CoreWebView2MouseEventVirtualKeys Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2mouseeventvirtualkeys?view=webview2-winrt-1.0.1293.44)
+* [CoreWebView2CompositionController.SendPointerInput Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1293.44#sendpointerinput) 
+  * [CoreWebView2PointerEventKind Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2mouseeventkind?view=webview2-winrt-1.0.1293.44) 
+* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1293.44#createcorewebview2pointerinfo) 
+  * [CoreWebView2PointerInfo Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2pointerinfo?view=webview2-winrt-1.0.1293.44) 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2CompositionControllerC::Cursor Property]
-* [ICoreWebView2CompositionController::CursorChanged Event] 
-* [ICoreWebView2CompositionController::SystemCursorId Property] 
+* [ICoreWebView2CompositionControllerC::Cursor Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_cursor)<!---no put------> 
+* [ICoreWebView2CompositionController::CursorChanged Event (add ](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#add_cursorchanged), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#remove_cursorchanged)
+* [ICoreWebView2CompositionController::SystemCursorId Property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_systemcursorid)<!---no put------> 
 * [ICoreWebView2CompositionController::SendMouseInput Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#sendmouseinput)
-  * [ICoreWebView2MouseEventKind Enum] 
+  * [ICoreWebView2MouseEventKind Enum]
   * [ICoreWebView2MouseEventVirtualKeys Enum]
 * [ICoreWebView2CompositionController::SendPointerInput Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#sendpointerinput) 
   * [ICoreWebView2PointerEventKind Enum] 
