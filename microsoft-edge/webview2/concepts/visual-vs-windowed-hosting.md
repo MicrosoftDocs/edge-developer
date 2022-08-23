@@ -10,16 +10,16 @@ ms.date: 08/23/2022
 ---
 # Visual vs. windowed hosting of WebView2
 
-There are two options for hosting the Microsoft Edge WebView2 control in your app:
+There are two options for hosting the Microsoft Edge WebView2 control in your app: visual hosting and windowed hosting.
 
 | Approach | Description | Optimized for |
 |---|---|
-| Visual hosting of the WebView2 control | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | Granular controls.  The app needs to do specific handling of window management and rendering APIs. |
-| Windowed hosting of the WebView2 control | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
+| Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | Granular controls.  The app needs to do specific handling of window management and rendering APIs. |
+| Windowed hosting | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
 
 Visual hosting and windowed hosting achieve the same output, but in different ways.  The choice between the two options isn't a matter of convenience, but is based on what works best for the app.
 
-To decide which hosting option to use in your app, understand visual and windowed hosting.  Each approach to hosting the control has different requirements, constraints, and benefits.  Hosting is about how to get WebView2 onto different platforms.
+To decide which option to use for hosting the WebView2 control in your app, understand visual and windowed hosting.  Each approach to hosting the control has different requirements, constraints, and benefits.  Hosting is about how to get WebView2 onto different platforms.
 
 Both approaches implement a whiteboard or container approach for storing and presenting information.  The hosting form determines how the app works.
 
@@ -27,7 +27,7 @@ Both approaches implement a whiteboard or container approach for storing and pre
 <!-- ====================================================================== -->
 ## Scenarios for selecting the hosting approach
 
-Both hosting approaches are similar in functionality, but they suit different needs depending on the app requirements.
+Both approaches for hosting the WebView2 control in your app are similar in functionality, but they suit different needs depending on the app requirements.
 
 
 #### Visual hosting: Good for granular controls
@@ -106,7 +106,7 @@ The following aspects of window management are handled in a windowed hosting env
 <!-- todo: experiment: changed bold to h5: -->
 #####  Sizing, positioning, and visibility
 
-CoreWebView2Controller takes a parent `HWND`. The Bounds property sizes and positions the WebView2 relative to the parent `HWND`. The visibility of WebView2 can be toggled using `IsVisible`.
+`CoreWebView2Controller` takes a parent `HWND`. The `Bounds` property sizes and positions the WebView2 relative to the parent `HWND`.  The visibility of WebView2 can be toggled using `IsVisible`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -130,7 +130,7 @@ CoreWebView2Controller takes a parent `HWND`. The Bounds property sizes and posi
 <!-- todo: experiment: changed bold to h6: -->
 ###### Zooming
 
-WebView2 ZoomFactor is used to scale just the web content. This is also update??? when the user zooms the content through Ctrl+Mouse Wheel.
+WebView2 `ZoomFactor` is used to scale just the web content. This is also updated when the user zooms the content through `Ctrl` + Mouse Wheel.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -156,7 +156,7 @@ WebView2 ZoomFactor is used to scale just the web content. This is also update??
 <!-- ------------------------------ -->
 **Rasterization scale**
 
-The RasterizationScale API scales all WebView2 UI including context menus, tooltip, and popups. The app can set whether the WebView2 should detect monitor scale changes and automatically update the RasterizationScale. `BoundsMode` is used to configure whether the `Bounds` property is interpreted as raw pixels, or DIPs (which need to be scaled by `RasterizationScale`).
+The `RasterizationScale` API scales all WebView2 UI including context menus, tooltip, and popups. The app can set whether the WebView2 should detect monitor scale changes and automatically update the `RasterizationScale`. `BoundsMode` is used to configure whether the `Bounds` property is interpreted as raw pixels, or DIPs (which need to be scaled by `RasterizationScale`).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -188,7 +188,7 @@ The RasterizationScale API scales all WebView2 UI including context menus, toolt
 <!-- ------------------------------ -->
 **Focus and tabbing**
 
-WebView2 raises events to let the app know when it gains or loses focus. For tabbing, there's an API to move focus into WebView2 and an event for WebView2 to request the app to take focus back.
+WebView2 raises events to let the app know when it gains or loses focus.  For tabbing, there's an API to move focus into WebView2, and an event for WebView2 to request the app to take focus back.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -279,7 +279,7 @@ When WebView2 has focus, it receives input directly from the user. An app may wa
 <!-- ------------------------------ -->
 **Default background color**
 
-WebView2 can specify a default background color. This can be any opaque color or transparent color. This color will be used if the html page doesn't set its own background color.
+WebView2 can specify a default background color. This can be any opaque color or transparent color. This color will be used if the webpage doesn't set its own background color.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -302,11 +302,11 @@ WebView2 can specify a default background color. This can be any opaque color or
 <!-- ====================================================================== -->
 ## Visual hosting
 
-Visual Hosting can be described as a single whiteboard in which the information is written directly to the board. By doing so, content is embedded to a location on the whiteboard. This location must handle how it will scale and behave in an app when there's interaction with the app. In addition to the window management described  for windowed hosting, visual hosting will need the app to manage the composition-based rendering, when it receives any and all user interaction(s).
+Visual Hosting can be described as a single whiteboard in which the information is written directly to the board. By doing so, content is embedded to a location on the whiteboard. This location must handle how it will scale and behave in an app when there's interaction with the app. In addition to the window management described  for windowed hosting, visual hosting will need the app to manage the composition-based rendering, when it receives any and all user interactions.
 
-The following facts apply to a WebView2 app that uses visual hosting:
+If your WebView2 app uses visual hosting:
 
-* The controls and/or configurations to DPI scaling must be set by the app.
+* The controls or configurations to set the DPI scaling must be set by the app.
 
 * Inputs are routed to the app's `HWND` and must be configured to send the spatial input (for example, mouse, touch, and pen) based on positions, _not_ what currently has focus like a keyboard.
 
@@ -392,7 +392,7 @@ Spatial input such as mouse, touch, or pen is received by the app and must be se
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2CompositionControllerC::Cursor property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_cursor)<!--no put-->
-* [ICoreWebView2CompositionController::CursorChanged event (add ](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#add_cursorchanged), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#remove_cursorchanged)
+* [ICoreWebView2CompositionController::CursorChanged event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#add_cursorchanged), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#remove_cursorchanged)
 * [ICoreWebView2CompositionController::SystemCursorId property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_systemcursorid)<!--no put-->
 * [ICoreWebView2CompositionController::SendMouseInput method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#sendmouseinput)
   * [COREWEBVIEW2_MOUSE_EVENT_KIND enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1293.44#corewebview2_mouse_event_kind)
@@ -408,7 +408,7 @@ Spatial input such as mouse, touch, or pen is received by the app and must be se
 <!-- ------------------------------ -->
 #### Accessibility
 
-By default, WebView2 will show up in the accessibility tree as a child of the parent `HWND`. WebView2 provides an API to better position the WebView2 content relative to other elements in the app.
+By default, WebView2 will show up in the accessibility tree as a child of the parent `HWND`.  WebView2 provides an API to better position the WebView2 content relative to other elements in the app.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -432,3 +432,4 @@ Not applicable.
 <!--
 * []()
 -->
+ 
