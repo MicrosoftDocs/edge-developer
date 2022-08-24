@@ -60,13 +60,16 @@ Each icon in the `icons` array should come with at least the `src` and `sizes` p
 
 Learn more about [the icons member](https://developer.mozilla.org/docs/Web/Manifest/icons).
 
+
 <!-- ====================================================================== -->
 ## Icon image sizes
 
 Your PWA can be enhanced on Windows by supplying the images with specific dimensions in your web app manifest. We recommend choosing one of the options below:
 
 * Level 1: (Basic image support: 512x512) This is the base image from which to generate missing images.
+
 * Level 2: (Tiles) At this level, your web app manifest contains tile images for the default (1x) display scale. Each of the images must be in PNG format and have the `any` purpose set. Here is a list of recommended images and sizes.
+
     * 44x44 - app icon
     * 71x71 - small tile
     * 150x150 - medium tile
@@ -74,7 +77,9 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 310x310 - large tile
     * 50x50 - store logo
     * 620x300 - splash screen
+
 * Level 3: (Tiles with display scales) At this level, your web app manifest should contain tile images for all Windows display scale sizes. Display scale is a user-configuration in Windows (users can change it by going to **Settings** > **Display** > **Scale**). Your web app manifest icons should include images with these dimensions:
+
     * 44x44 - app icon
     * 55x55 - app icon 1.25x display scale
     * 66x66 - app icon 1.5x display scale
@@ -164,7 +169,6 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 96x96 - target size for taskbar, start menu, task manager
     * 256x256 - target size for taskbar, start menu, task manager
 
-<!-- ====================================================================== -->
 ### Image level summary
 
 Consider, for example, how your app icon might show different content depending on the available surface area:
@@ -183,7 +187,6 @@ Consider, for example, how your app icon might show different content depending 
 
 Notice how the content of the icon changed. This is possible only through the use of higher levels of icon support. We recommend developers choose higher levels to give the best experience for your Windows users.  
 
-<!-- ====================================================================== -->
 ### Icon descriptions
 
 Below you'll find a description of each app icon and where they show up in Windows.
@@ -229,6 +232,7 @@ The wide tile icon is shown in the start menu when the user sets your app's tile
 * 1240x600 (4x scale)
 
 The large tile icon is in the start menu when the user sets your app's tile to large size.
+
 ![Large tile](../media/windows-image-large-tile.png)
 
 * 310x310
@@ -280,6 +284,8 @@ For example, the **Apps & features** Windows setting uses app icons with specifi
 * 96x96
 * 256x256 (recommended)
 
+
+<!-- ====================================================================== -->
 ## Choose a theme color
 
 On Windows, PWAs have their own application window, with a title bar that contains the name of the app and the system **close**, **maximize**, and **minimize** icons.
@@ -307,4 +313,5 @@ Individual web pages can also define a theme color, by using the [`theme-color` 
 <!-- ====================================================================== -->
 ## See also
 
-*   [PWABuilder Image Generator](https://www.pwabuilder.com/imageGenerator)
+* [PWABuilder Image Generator](https://www.pwabuilder.com/imageGenerator)
+* [Image recommendations for Windows PWA packages](https://blog.pwabuilder.com/docs/image-recommendations-for-windows-pwa-packages/)
