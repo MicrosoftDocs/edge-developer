@@ -1,6 +1,6 @@
 ---
-title: Visual vs. windowed hosting of WebView2
-description: Learn about hosting WebView2 in visual and windowed environments.
+title: Windowed vs. visual hosting of WebView2
+description: Deciding whether to have your app use windowed hosting vs. visual hosting of the WebView2 control.  Hosting WebView2 in windowed or visual environments.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,20 +8,24 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/23/2022
 ---
-# Visual vs. windowed hosting of WebView2
+# Windowed vs. visual hosting of WebView2
 
-There are two options for hosting the Microsoft Edge WebView2 control in your app: visual hosting and windowed hosting.
+There are two options for hosting the Microsoft Edge WebView2 control in your app: windowed hosting and visual hosting.
 
 | Approach | Description | Optimized for |
 |---|---|
-| Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | Granular controls.  The app needs to do specific handling of window management and rendering APIs. |
 | Windowed hosting | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
+| Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | Granular controls.  The app needs to do specific handling of window management and rendering APIs. |
 
-Visual hosting and windowed hosting achieve the same output, but in different ways.  The choice between the two options isn't a matter of convenience, but is based on what works best for the app.
+Windowed hosting is simpler to implement than visual hosting.  Visual hosting requires everything that windowed hosting requires, and has additional requirements, for it to render properly.
 
-To decide which option to use for hosting the WebView2 control in your app, understand visual and windowed hosting.  Each approach to hosting the control has different requirements, constraints, and benefits.  Hosting is about how to get WebView2 onto different platforms.
+Windowed hosting and visual hosting achieve the same output, but in different ways.  The choice between the two options isn't a matter of convenience, but is based on what works best for the app.
 
-Both approaches implement a whiteboard or container approach for storing and presenting information.  The hosting form determines how the app works.
+Hosting the WebView2 control is about how to get WebView2 onto different platforms.
+
+These approaches have different requirements, constraints, and benefits.
+
+Both approaches implement a whiteboard or container approach for storing and presenting information.  The hosting approach determines how the app works.
 
 
 <!-- ====================================================================== -->
@@ -30,14 +34,14 @@ Both approaches implement a whiteboard or container approach for storing and pre
 Both approaches for hosting the WebView2 control in your app are similar in functionality, but they suit different needs depending on the app requirements.
 
 
-#### Visual hosting: Good for granular controls
-
-Visual-based hosting allows for (and requires) more granular controls. When using this approach, the app needs specific handling of window management and rendering APIs.
-
-
 #### Windowed hosting: Good for displaying content quickly and easily
 
 There are instances where you might want to focus on displaying web content as quickly and easily as possible in your app.  Windowed hosting allows for a solution that quickly displays web content without having to include features for inputs, outputs, and accessibility.
+
+
+#### Visual hosting: Good for granular controls
+
+Visual-based hosting allows for (and requires) more granular controls.  When using this approach, the app needs specific handling of window management and rendering APIs.
 
 
 <!-- ====================================================================== -->
@@ -55,7 +59,7 @@ Windows 7 and Windows 8 can only do windowed hosting.
 <!-- ------------------------------ -->
 #### Rendering WebView2 in framework and non-framework apps
 
-If you're using a UI framework for your app, you should use the corresponding WebView2 element for that UI framework. If you aren't using a UI framework for your app (such as Win32 or React Native) or your UI framework doesn't have a WebView2 element, you'll have to create `CoreWebView2Controller` and render it into the desired app.
+If you're using a UI framework for your app, you should use the corresponding WebView2 element for that UI framework.  If you aren't using a UI framework for your app (such as Win32 or React Native) or your UI framework doesn't have a WebView2 element, you'll need to create `CoreWebView2Controller` and render it into the desired app.
 
 **Note:** If your app's UI is built using `DirectComposition` or `Windows.UI.Composition`, then you should use `CoreWebView2CompositionController`, otherwise you should use `CoreWebView2Controller`.
 
@@ -85,15 +89,15 @@ The `CoreWebView2Controller` properties and methods:
 <!-- ====================================================================== -->
 ## Windowed hosting
 
-Windowed hosting can be described as a whiteboard or container that stores information. You can have multiple whiteboards in your app that will each be used as a WebView component to access web content. Some of the Output/Input commands are handled for you by the framework you choose, however you will still need to handle window management.
+Windowed hosting can be described as a whiteboard or container that stores information.  You can have multiple whiteboards in your app that will each be used as a WebView component to access web content.  Some of the Output/Input commands are handled for you by the framework you choose; however, you will still need to handle window management.
 
-Some of the most notable benefits for Windowed hosting including the following:
+Benefits for Windowed hosting include:
 
 * Zooming and rasterization scales (for example, menus, context menus, and so on) will also automatically scale to the app's parent `HWND`. It also handles how the WebView manages being focused and tabbing in/out of itself when it reaches the final element.
 
 * The app handles keyboard accelerators and keyboard shortcuts when in the WebView. For example, `Ctrl+C` in a WebView will know that you are trying to copy content in the WebView, and not pressing `Ctrl` and `C` separately.
 
-* If you don't have to manage the various composition-based rendering (for example,  Inputs, Outputs, and Accessibility controls) if you don't want to.<!--todo: fix latter phrase-->
+* You don't have to manage the various composition-based rendering (for example, Inputs, Outputs, and Accessibility controls) if you don't want to.
 
 
 <!-- ------------------------------ -->
@@ -102,11 +106,10 @@ Some of the most notable benefits for Windowed hosting including the following:
 The following aspects of window management are handled in a windowed hosting environment.
 
 
-<!-- ------------------------------ -->
-<!-- todo: experiment: changed bold to h5: -->
-#####  Sizing, positioning, and visibility
+<!-- ---------- -->
+###### Sizing, positioning, and visibility
 
-`CoreWebView2Controller` takes a parent `HWND`. The `Bounds` property sizes and positions the WebView2 relative to the parent `HWND`.  The visibility of WebView2 can be toggled using `IsVisible`.
+`CoreWebView2Controller` takes a parent `HWND`.  The `Bounds` property sizes and positions the WebView2 relative to the parent `HWND`.  The visibility of WebView2 can be toggled by using `IsVisible`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -126,11 +129,10 @@ The following aspects of window management are handled in a windowed hosting env
 ---
 
 
-<!-- ------------------------------ -->
-<!-- todo: experiment: changed bold to h6: -->
+<!-- ---------- -->
 ###### Zooming
 
-WebView2 `ZoomFactor` is used to scale just the web content. This is also updated when the user zooms the content through `Ctrl` + Mouse Wheel.
+WebView2 `ZoomFactor` is used to scale just the web content.  This is also updated when the user zooms the content through `Ctrl` + Mouse Wheel.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -154,9 +156,9 @@ WebView2 `ZoomFactor` is used to scale just the web content. This is also update
 
 
 <!-- ------------------------------ -->
-**Rasterization scale**
+#### Rasterization scale
 
-The `RasterizationScale` API scales all WebView2 UI including context menus, tooltip, and popups. The app can set whether the WebView2 should detect monitor scale changes and automatically update the `RasterizationScale`. `BoundsMode` is used to configure whether the `Bounds` property is interpreted as raw pixels, or DIPs (which need to be scaled by `RasterizationScale`).
+The `RasterizationScale` API scales all WebView2 UI including context menus, tooltip, and popups.  The app can set whether the WebView2 should detect monitor scale changes and automatically update the `RasterizationScale`.  `BoundsMode` is used to configure whether the `Bounds` property is interpreted as raw pixels, or DIPs (which need to be scaled by `RasterizationScale`).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -185,8 +187,8 @@ The `RasterizationScale` API scales all WebView2 UI including context menus, too
 ---
 
 
-<!-- ------------------------------ -->
-**Focus and tabbing**
+<!-- ---------- -->
+###### Focus and tabbing
 
 WebView2 raises events to let the app know when it gains or loses focus.  For tabbing, there's an API to move focus into WebView2, and an event for WebView2 to request the app to take focus back.
 
@@ -220,8 +222,8 @@ WebView2 raises events to let the app know when it gains or loses focus.  For ta
 ---
 
 
-<!-- ------------------------------ -->
-**Parent window**
+<!-- ---------- -->
+###### Parent window
 
 WebView2 can be re-parented to a different parent `HWND`. WebView2 also needs to be notified when the app's position on the screen changes.
 
@@ -244,8 +246,8 @@ WebView2 can be re-parented to a different parent `HWND`. WebView2 also needs to
 ---
 
 
-<!-- ------------------------------ -->
-**Keyboard accelerators**
+<!-- ---------- -->
+###### Keyboard accelerators
 
 When WebView2 has focus, it receives input directly from the user. An app may want to intercept and handle certain accelerator key combinations or disable the normal browser accelerator key behaviors.
 
@@ -276,8 +278,8 @@ When WebView2 has focus, it receives input directly from the user. An app may wa
 ---
 
 
-<!-- ------------------------------ -->
-**Default background color**
+<!-- ---------- -->
+###### Default background color
 
 WebView2 can specify a default background color. This can be any opaque color or transparent color. This color will be used if the webpage doesn't set its own background color.
 

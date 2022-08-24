@@ -1080,8 +1080,8 @@
               href: webview2/concepts/basic-authentication.md
               displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
 
-            - name: Visual vs. windowed hosting of WebView2
-              href: webview2/concepts/visual-vs-windowed-hosting.md
+            - name: Windowed vs. visual hosting of WebView2
+              href: webview2/concepts/windowed-vs-visual-hosting.md
               displayName: 
 
             - name: Custom management of network requests
