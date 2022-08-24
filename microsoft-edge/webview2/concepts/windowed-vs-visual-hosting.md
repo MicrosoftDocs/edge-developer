@@ -12,20 +12,16 @@ ms.date: 08/23/2022
 
 There are two options for hosting the Microsoft Edge WebView2 control in your app: windowed hosting and visual hosting.
 
+If you use windowed hosting, like most apps, you might not need to read this article.  If you want to provide a more custom user experience (UX), and want to use visual hosting, read this article.
+
 | Approach | Description | Optimized for |
-|---|---|
+|---|---|---|
 | Windowed hosting | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
-| Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | Granular controls.  The app needs to do specific handling of window management and rendering APIs. |
+| Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | More granular control over layout.  For example, you can control the positioning of the WebView2 control in the page.  The app needs to do specific handling of window management and rendering APIs. |
 
-Windowed hosting is simpler to implement than visual hosting.  Visual hosting requires everything that windowed hosting requires, and has additional requirements, for it to render properly.
-
-Windowed hosting and visual hosting achieve the same output, but in different ways.  The choice between the two options isn't a matter of convenience, but is based on what works best for the app.
-
-Hosting the WebView2 control is about how to get WebView2 onto different platforms.
+Windowed hosting is simpler to implement than visual hosting.  Visual hosting requires all the API calls that are listed in [Windowed hosting](#windowed-hosting), and has additional requirements, for it to render properly, listed in [Visual hosting](#visual-hosting).
 
 These approaches have different requirements, constraints, and benefits.
-
-Both approaches implement a whiteboard or container approach for storing and presenting information.  The hosting approach determines how the app works.
 
 
 <!-- ====================================================================== -->
@@ -36,12 +32,16 @@ Both approaches for hosting the WebView2 control in your app are similar in func
 
 #### Windowed hosting: Good for displaying content quickly and easily
 
+"Windowed" means that in your app, an HWND inherits many default properties from the operating system.
+
 There are instances where you might want to focus on displaying web content as quickly and easily as possible in your app.  Windowed hosting allows for a solution that quickly displays web content without having to include features for inputs, outputs, and accessibility.
 
 
 #### Visual hosting: Good for granular controls
 
-Visual-based hosting allows for (and requires) more granular controls.  When using this approach, the app needs specific handling of window management and rendering APIs.
+Visual hosting allows for (and requires) more granular controls.  When using this approach, the app needs specific handling of window management and rendering APIs.
+
+With visual hosting, for example you must choose how when the user resizes the window, how the webview scales in relation to the whole page - for example, if you want the webview to scale twice as much as the app.
 
 
 <!-- ====================================================================== -->
@@ -318,7 +318,7 @@ The following APIs can be used when configuring WebView2 in a visual hosting env
 <!-- ------------------------------ -->
 #### Composition-based rendering
 
-For composition based WebView2 rendering, use the `CoreWebView2Environment` to create a `CoreWebView2CompositionController`. The `CoreWebView2CompositionController` implements all the APIs as `CoreWebView2Controller`, but includes additional APIs specific to composition-based rendering.
+For composition-based WebView2 rendering, use the `CoreWebView2Environment` to create a `CoreWebView2CompositionController`. The `CoreWebView2CompositionController` implements all the APIs as `CoreWebView2Controller`, but includes additional APIs specific to composition-based rendering.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -393,7 +393,7 @@ Spatial input such as mouse, touch, or pen is received by the app and must be se
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2CompositionControllerC::Cursor property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_cursor)<!--no put-->
+* [ICoreWebView2CompositionController::Cursor property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_cursor)<!--no put-->
 * [ICoreWebView2CompositionController::CursorChanged event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#add_cursorchanged), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#remove_cursorchanged)
 * [ICoreWebView2CompositionController::SystemCursorId property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_systemcursorid)<!--no put-->
 * [ICoreWebView2CompositionController::SendMouseInput method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#sendmouseinput)
