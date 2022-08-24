@@ -214,17 +214,15 @@ To confirm that your service worker is running:
 
     ![The DevTools Application tool, showing the Service Workers panel, with the new sw.js worker running](../media/devtools-sw-overview.png)
 
-1.  View the service worker cache by expanding **Cache Storage** and select **my-sample-app-cache-v1**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, and the initial page.
+1.  View the service worker cache by expanding **Cache Storage** and selecting **my-sample-app-cache-v1**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, and the initial page.
 
     ![DevTools, showing where to view the cached resources](../media/devtools-cache.png)
 
 1.  Try your PWA as an offline app. In DevTools, open the **Network** tool, and change the **Throttling** value to **Offline**.
 
+1.  Refresh your app. It should still appear correctly in the browser, using cached resources served by the service worker.
+
     ![DevTools, showing where to switch the Throttling value to Offline](../media/devtools-offline.png)
-
-1.  Refresh your app. It should display the offline mechanism for serving the resources of your app from the cache.
-
-    ![The simple website, now with a service worker, in Microsoft Edge](../media/sample-pwa-app.png)
 
 
 <!-- ====================================================================== -->
@@ -235,6 +233,10 @@ Now that your simple website has a web app manifest and a service worker, suppor
 In Microsoft Edge, once you refresh your app, the **App available** button appears in the address bar. Clicking the **App available** button prompts you to install the app locally.
 
 ![Microsoft Edge, with the sample PWA in a tab. The App available button in the address bar has been clicked and the installation prompt is displayed](../media/sample-pwa-app-available-button.png)
+
+Click **Install** to install the app locally. After the installation completes, your app is displayed in its own window, and its own application icon in the Taskbar.
+
+![The sample PWA, installed and running in its own window](../media/sample-pwa-installed.png)
 
 To learn more about installing PWAs, see [The user experience of PWAs](../ux.md).
 
