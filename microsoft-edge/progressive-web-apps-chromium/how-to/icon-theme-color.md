@@ -264,7 +264,7 @@ The splash screen asset is shown as the splash screen for your app. Currently su
 
 In addition to the standard scale factor sizes described above, we also recommend creating “target-size” assets. We call these assets target-size because they target specific sizes, such as 16 pixels, rather than specific scale factors, such as 400. Target-size assets are for Windows surfaces that don’t use the scaling plateau system.
 
-For example, the Apps & features Windows setting uses app icons with specific sizes
+For example, the **Apps & features** Windows setting uses app icons with specific sizes
 
 ![Shown in start jump list, shortcuts, control panel:](../media/windows-image-target-size.png)
 
