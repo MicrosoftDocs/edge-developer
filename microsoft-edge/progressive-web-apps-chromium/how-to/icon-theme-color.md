@@ -111,8 +111,6 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 1240x600 - splash screen 2x display scale
     * 2480x1200 - splash screen 4x display scale
 
-For level 3, your web app manifest should contain tile images for all Windows display scale sizes.
-
 * Level 4 (Tiles, display scales, and target sizes) At this level you supply images for tiles with display scales and target size images for display in various surfaces in Windows, including taskbar, start menu, task manager, ALT+Tab task switcher, and more. This provides the best experience for your users, but also requires the most developer effort. Your web app manifest icons should include images with these dimensions:
 
     * 44x44 - app icon
@@ -165,7 +163,6 @@ For level 3, your web app manifest should contain tile images for all Windows di
     * 80x80 - target size for taskbar, start menu, task manager
     * 96x96 - target size for taskbar, start menu, task manager
     * 256x256 - target size for taskbar, start menu, task manager
-In level 4, you supply images for tiles with display scales and target size images for display in various surfaces in Windows, including taskbar, start menu, task manager, ALT+Tab task switcher, and more.
 
 <!-- ====================================================================== -->
 ### Image level summary
