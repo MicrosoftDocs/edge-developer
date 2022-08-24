@@ -6,22 +6,20 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/23/2022
+ms.date: 08/24/2022
 ---
 # Windowed vs. visual hosting of WebView2
 
 There are two options for hosting the Microsoft Edge WebView2 control in your app: windowed hosting and visual hosting.
 
-If you use windowed hosting, like most apps, you might not need to read this article.  If you want to provide a more custom user experience (UX), and want to use visual hosting, read this article.
+If you use windowed hosting, which is a good starting point for most apps, you don't need to read this article.  If you want to provide a more custom user experience (UX), and want to use visual hosting, read this article.
 
 | Approach | Description | Optimized for |
 |---|---|---|
 | Windowed hosting | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
 | Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | More granular control over layout.  For example, you can control the positioning of the WebView2 control in the page.  The app needs to do specific handling of window management and rendering APIs. |
 
-Windowed hosting is simpler to implement than visual hosting.  Visual hosting requires all the API calls that are listed in [Windowed hosting](#windowed-hosting), and has additional requirements, for it to render properly, listed in [Visual hosting](#visual-hosting).
-
-These approaches have different requirements, constraints, and benefits.
+These approaches have different requirements, constraints, and benefits.  Windowed hosting is simpler to implement than visual hosting.  Visual hosting requires all the API calls that Windowed hosting requires, and visual hosting has additional requirements for it to render properly.  The API calls are listed in [Windowed hosting](#windowed-hosting) and [Visual hosting](#visual-hosting), below.
 
 
 <!-- ====================================================================== -->
@@ -30,16 +28,16 @@ These approaches have different requirements, constraints, and benefits.
 Both approaches for hosting the WebView2 control in your app are similar in functionality, but they suit different needs depending on the app requirements.
 
 
-#### Windowed hosting: Good for displaying content quickly and easily
+#### Windowed hosting: For displaying content quickly and easily
 
 "Windowed" means that in your app, an HWND inherits many default properties from the operating system.
 
 There are instances where you might want to focus on displaying web content as quickly and easily as possible in your app.  Windowed hosting allows for a solution that quickly displays web content without having to include features for inputs, outputs, and accessibility.
 
 
-#### Visual hosting: Good for granular controls
+#### Visual hosting: For more granular control over layout
 
-Visual hosting allows for (and requires) more granular controls.  When using this approach, the app needs specific handling of window management and rendering APIs.
+Visual hosting allows for (and requires) more granular control of layout.  When using this approach, the app needs specific handling of window management and rendering APIs.
 
 With visual hosting, for example you must choose how when the user resizes the window, how the webview scales in relation to the whole page - for example, if you want the webview to scale twice as much as the app.
 
