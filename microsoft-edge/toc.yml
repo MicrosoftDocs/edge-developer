@@ -307,7 +307,7 @@
                   href: devtools-guide-chromium/inspect-styles/animations.md
                   displayName: Animations tool
 # Application tool ------------------------------------------------------------
-            - name: Application tool, for storage
+            - name: Application tool, for storage and PWAs
               items:
                 - name: Application tool, to manage storage
                   href: devtools-guide-chromium/storage/application-tool.md
@@ -345,6 +345,10 @@
                   href: devtools-guide-chromium/progressive-web-apps/index.md
                   displayName: Application tool
 
+                - name: Test Progressive Web App (PWA) protocol handling
+                  href: devtools-guide-chromium/progressive-web-apps/protocol-handlers.md
+                  displayName: Application tool
+                  
                 - name: Debug background services
                   href: devtools-guide-chromium/javascript/background-services.md
                   displayName: Application tool
