@@ -345,7 +345,7 @@
                   href: devtools-guide-chromium/progressive-web-apps/index.md
                   displayName: Application tool
 
-                - name: Test protocol handlers for PWAs
+                - name: Test Progressive Web App (PWA) protocol handling
                   href: devtools-guide-chromium/progressive-web-apps/protocol-handlers.md
                   displayName: Application tool
                   

@@ -41,11 +41,11 @@ In the above example, the app is registered to handle the `mailto` protocol.  Wh
 
 ## Test protocols with the DevTools
 
-You can use the **Application** tool in Microsoft Edge DevTools to verify that Microsoft Edge successfully registered your app as a handler for the protocols you defined in your web app manifest.  You can also test protocols and launch your PWA with different URLs and endpoints.  See [Test protocol handlers for PWAs](../../devtools-guide-chromium/progressive-web-apps/protocol-handlers.md) for more info.
+You can use the **Application** tool in Microsoft Edge DevTools to verify that Microsoft Edge successfully registered your app as a handler for the protocols you defined in your web app manifest.  You can also test protocols and launch your PWA with different URLs and endpoints.  For more information, see [Test Progressive Web App (PWA) protocol handling](../../devtools-guide-chromium/progressive-web-apps/protocol-handlers.md).
 
 <!-- ====================================================================== -->
 ## See also
 
 *  [Getting started with Protocol Handlers for your web app](https://blogs.windows.com/msedgedev/2022/01/20/getting-started-url-protocol-handlers-microsoft-edge/)
 *  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)
-*  [Test protocol handlers for PWAs](../../devtools-guide-chromium/progressive-web-apps/protocol-handlers.md)
+*  [Test Progressive Web App (PWA) protocol handling](../../devtools-guide-chromium/progressive-web-apps/protocol-handlers.md)
