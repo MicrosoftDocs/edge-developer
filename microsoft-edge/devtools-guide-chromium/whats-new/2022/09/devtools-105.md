@@ -12,6 +12,46 @@ ms.date: 09/01/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 <!-- ====================================================================== -->
+## Test your PWA's protocol handlers from the Application tool-->
+
+<!-- Rank: 1 -->
+<!-- Title: Test your PWA's protocol handlers from the Application tool  -->
+<!-- Subtitle: From the Manifest section of the Application tool, you can now provide custom protocols to launch your PWA. -->
+
+In Microsoft Edge 105, the Application tool now supports testing protocol handlers. Since Microsoft Edge 96, you've been able to define protocol handlers in the application manifest of your PWA. Now you can  test those protocols from the Application tool itself in DevTools if you have your PWA installed. 
+
+With DevTools open against your PWA:
+1. Open the Application tool.
+2. Expand the Manifest dropdown.
+3. Select the Protocol Handlers entry in the dropdown.
+4. Select the protocol you want to test from the dropdown.
+5. Enter in the URL or endpoint that you would like to test
+6. Select *Test Protocol*
+
+The Application tool will attempt to launch your PWA with the protocol and URL you specified. The browser asks for permission to open the application, and then prompts you to confirm that you want to handle the protocol and the app you'd like to launch. If you give permission, your app will open with the specified content.
+
+<!-- (how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
+Refer to the attachment.
+
+To take your own screenshot:
+Open Microsoft Edge Beta, Dev, or Canary (just go to edge://version and ensure you're on version 105+)
+Navigate to URL protocol handler (protocol-handler.glitch.me)
+Install the PWA
+Open DevTools > Application tool
+Select the Manifest dropdown to expand it
+Select the Protocol Handler entry in the dropdown
+With the web+coffee:// protocol selected, enter into the textbox "americano"
+Take a screenshot. Draw red highlight boxes over the "Protocol handlers" entry in the Manifest dropdown and around the Protocol Handlers section in the pane
+Video recording of feature in action
+(we want to incorporate more multimedia assets into our What's New docs which drives engagement. Check out the wiki for instructions)
+Refer to .mp4 attachment -->
+
+<!-- ![4](./devtools-105-images/pngtemplate.png) -->
+
+See also:
+* [Test Progressive Web App (PWA) protocol handling](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/progressive-web-apps/protocol-handlers)
+
+<!-- ====================================================================== -->
 ## Edit and resend network requests more reliably in the Network Console tool
 
 <!-- RANK 3 -->
@@ -112,51 +152,10 @@ In previous versions of Microsoft Edge, there was a bug that that caused issues 
 * []() -->
 
 <!-- ====================================================================== -->
-## Test your PWA's protocol handlers from the Application tool-->
-
-<!-- Rank: 1 -->
-<!-- Title: Test your PWA's protocol handlers from the Application tool  -->
-<!-- Subtitle: From the Manifest section of the Application tool, you can now provide custom protocols to launch your PWA. -->
-
-In Microsoft Edge 105, the Application tool now supports testing protocol handlers. Since Microsoft Edge 96, you've been able to define protocol handlers in the application manifest of your PWA. Now you can  test those protocols from the Application tool itself in DevTools if you have your PWA installed. 
-
-With DevTools open against your PWA:
-1. Open the Application tool.
-2. Expand the Manifest dropdown.
-3. Select the Protocol Handlers entry in the dropdown.
-4. Select the protocol you want to test from the dropdown.
-5. Enter in the URL or endpoint that you would like to test
-6. Select *Test Protocol*
-
-The Application tool will attempt to launch your PWA with the protocol and URL you specified. The browser asks for permission to open the application, and then prompts you to confirm that you want to handle the protocol and the app you'd like to launch. If you give permission, your app will open with the specified content.
-
-<!-- (how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
-Refer to the attachment.
-
-To take your own screenshot:
-Open Microsoft Edge Beta, Dev, or Canary (just go to edge://version and ensure you're on version 105+)
-Navigate to URL protocol handler (protocol-handler.glitch.me)
-Install the PWA
-Open DevTools > Application tool
-Select the Manifest dropdown to expand it
-Select the Protocol Handler entry in the dropdown
-With the web+coffee:// protocol selected, enter into the textbox "americano"
-Take a screenshot. Draw red highlight boxes over the "Protocol handlers" entry in the Manifest dropdown and around the Protocol Handlers section in the pane
-Video recording of feature in action
-(we want to incorporate more multimedia assets into our What's New docs which drives engagement. Check out the wiki for instructions)
-Refer to .mp4 attachment -->
-
-<!-- ![4](./devtools-105-images/pngtemplate.png) -->
-
-See also:
-* [Test Progressive Web App (PWA) protocol handling](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/progressive-web-apps/protocol-handlers)
-
-<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 Microsoft Edge 105 also includes the following updates from the Chromium project:  
 
-* [Step-by-step replay in the Recorder](https://developer.chrome.com/blog/new-in-devtools-105/#recorder)
 * [Support mouse over event in the Recorder panel](https://developer.chrome.com/blog/new-in-devtools-105/#recorder-hover)
 * [Largest Contentful Paint (LCP) in the Performance insights panel](https://developer.chrome.com/blog/new-in-devtools-105/#lcp)
 * [Identify flashes of text (FOIT, FOUT) as potential root causes for layout shifts](https://developer.chrome.com/blog/new-in-devtools-105/#foit-fout)
@@ -168,6 +167,18 @@ Microsoft Edge 105 also includes the following updates from the Chromium project
 * [Sourcemap improvements](https://developer.chrome.com/blog/new-in-devtools-105/#sourcemaps)
 * [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-105/#misc)
 
+<!-- * [Step-by-step replay in the Recorder](https://developer.chrome.com/blog/new-in-devtools-105/#recorder)
+* [Support mouse over event in the Recorder panel](https://developer.chrome.com/blog/new-in-devtools-105/#recorder-hover)
+* [Largest Contentful Paint (LCP) in the Performance insights panel](https://developer.chrome.com/blog/new-in-devtools-105/#lcp)
+* [Identify flashes of text (FOIT, FOUT) as potential root causes for layout shifts](https://developer.chrome.com/blog/new-in-devtools-105/#foit-fout)
+* [Protocol handlers in the Manifest pane](https://developer.chrome.com/blog/new-in-devtools-105/#manifest)
+* [Top layer badge in the Elements panel](https://developer.chrome.com/blog/new-in-devtools-105/#top-layer)
+* [Attach Wasm debugging information at runtime](https://developer.chrome.com/blog/new-in-devtools-105/#wasm)
+* [Support live edit during debugging](https://developer.chrome.com/blog/new-in-devtools-105/#live-edit)
+* [View and edit @scope at rules in the Styles pane](https://developer.chrome.com/blog/new-in-devtools-105/#scope)
+* [Sourcemap improvements](https://developer.chrome.com/blog/new-in-devtools-105/#sourcemaps)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-105/#misc)
+-->
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
