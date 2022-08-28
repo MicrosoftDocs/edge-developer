@@ -11,6 +11,27 @@ ms.date: 09/01/2022
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
+<!-- ====================================================================== -->
+## Edit and resend network requests more reliably in the Network Console tool
+
+<!-- RANK 3 -->
+<!-- Title: Edit and resend network requests more reliably in the Network Console tool  -->
+<!-- Subtitle: Modify and resend network requests that have been logged in the Network tool with the Network Console tool. -->
+
+Previously in Microsoft Edge, selecting **Edit and resend** for a network request from the Network tool may not have reliably opened the Network Console tool and prepopulated it with the values from the request. 
+
+In Microsoft Edge 105, this issue has been fixed. The **Edit and resend** now prepopulates the Network Console tool with the values for the network request that you are looking to resend. You can continue to modify these values before sending the request from the Network Console tool. Thank you for sending us your feedback about this issue!
+
+Right-click the network request that you want to change and resend, and then select *Edit and Resend*.
+[1](./devtools-105-images/edit-and-resend.msft.png
+
+In the Network Console, edit the network request information, and then click the *Send* button.
+[2](./devtools-105-images/networkconsole-edit.msft.png
+
+
+<!-- See also:
+* []()
+* []() -->
 
 <!-- ====================================================================== -->
 ## Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View
@@ -19,12 +40,9 @@ ms.date: 09/01/2022
 <!-- Title: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View -->
 <!-- Subtitle: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View. -->
 
-For users of Focus Mode, several improvements have been made to existing location controls for DevTools, including a new control for changing the orientation of Quick View.
+Several improvements to [Focus Mode](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode) in existing location controls for DevTools have been made, including a new control for changing the orientation of Quick View.
 
-The Settings menu provides options for changing DevTools between docked locations and a separate window. This menu also contains settings for how the Activity Bar is displayed. Starting in Edge 105, these options can be navigated and changed more quickly. The previous submenus have been replaced with toggle buttons. Additionally, improved contrast means the option you have selected is more easily visible at a glance.
-
-https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do
-https://MicrosoftEdge.github.io/Demos/demo-to-do/
+The Settings menu now provides options for changing DevTools between docked locations and a separate window. This menu also contains settings for how the Activity Bar is displayed. Starting in Edge 105, these options can be navigated and changed more quickly. The previous submenus have been replaced with toggle buttons. Additionally, improved contrast means the option you have selected is more easily visible at a glance.
 
 Before:
 
@@ -51,28 +69,29 @@ To minimize Quick View, use the **Collapse** toggle or press `Escape`:
 See also:
 * [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
-
 <!-- ====================================================================== -->
-## Improved reliability in Issues tool
-<!-- Rank 6 -->
-<!-- Title: Improved reliability in Issues tool -->
-<!-- Subtitle: Improved reliability in Issues tool. -->
+## Fix: Search in the Sources and Network tools now works as expected in Focus Mode
 
-In previous versions of Microsoft Edge, there was a bug that sometimes resulted in issues not appearing in the **Issues** tool.  This bug has been fixed, resulting in improved reliability of the **Issues** tool.
+<!-- Rank 4 -->
+<!-- Title: Fix: Search in the Sources and Network tools now works as expected in Focus Mode  -->
+<!-- Subtitle: Try Focus Mode, a new, more simplified, and streamlined UI for DevTools!-->
 
-![entry 2](./devtools-105-images/pngtemplate.png)
+[Focus Mode experiment](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode#enable-focus-mode) in previous versions of Microsoft Edge didn't properly showcase the Search feature in the Network tool nor the *Search in all files* feature in the Sources tool. In Microsoft Edge version 105, these issues have been fixed.
 
-<!-- See also:
-* []()
-* []() -->
+You can now search in the Network tool via the Search icon.  You can leverage the *Search in all files* feature in the Sources tool by opening the context menu on files in the Page section.  This will display the Search tool in the Quick View.
 
-
-<!-- ====================================================================== -->
-<!-- ## 3 -->
-
-<!-- Title:  -->
-<!-- Subtitle: . -->
-
+<!-- Instructions for screenshot
+(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
+Refer to attachments. If you want to take screenshots yourself:
+Open Edge Beta, Dev, or Canary (navigate to edge://version and ensure you're on 105+)
+Navigate to:  Simplify DevTools using Focus Mode - Microsoft Edge Development | Microsoft Docs
+Open DevTools. Go to Settings > Experiments. Turn on Focus Mode. Reload DevTools
+Open the Network tool. Refresh the page so you can see some network requests. Now select the Search (magnifying glass icon)
+Take a screenshot
+Open the Sources tool
+Right-click docs.microsoft.com
+Take a screenshot of the "Search in all files" context menu entry
+Draw red highlight boxes around the Search icon and Search pane in the Network tool. Draw a red highlight box around the "Search in all files" entry in the context menu in the Sources tool. -->
 
 <!-- ![3](./devtools-105-images/pngtemplate.png) -->
 
@@ -80,25 +99,62 @@ In previous versions of Microsoft Edge, there was a bug that sometimes resulted 
 * []()
 * []() -->
 
-
 <!-- ====================================================================== -->
-<!-- ## 4 -->
+## Improved reliability in Issues tool
+<!-- Rank 6 -->
+<!-- Title: Improved reliability in Issues tool -->
+<!-- Subtitle: Improved reliability in Issues tool. -->
 
-<!-- Title:  -->
-<!-- Subtitle: . -->
-
-
-<!-- ![4](./devtools-105-images/pngtemplate.png) -->
+In previous versions of Microsoft Edge, there was a bug that that caused issues not appearing in the **Issues** tool.  This bug has been fixed, resulting in improved reliability of the **Issues** tool.
 
 <!-- See also:
 * []()
 * []() -->
 
+<!-- ====================================================================== -->
+## Test your PWA's protocol handlers from the Application tool-->
+
+<!-- Rank: 1 -->
+<!-- Title: Test your PWA's protocol handlers from the Application tool  -->
+<!-- Subtitle: From the Manifest section of the Application tool, you can now provide custom protocols to launch your PWA. -->
+
+In Microsoft Edge 105, the Application tool now supports testing protocol handlers. Since Microsoft Edge 96, you've been able to define protocol handlers in the application manifest of your PWA. Now you can  test those protocols from the Application tool itself in DevTools if you have your PWA installed. 
+
+With DevTools open against your PWA:
+1. Open the Application tool.
+2. Expand the Manifest dropdown.
+3. Select the Protocol Handlers entry in the dropdown.
+4. Select the protocol you want to test from the dropdown.
+5. Enter in the URL or endpoint that you would like to test
+6. Select *Test Protocol*
+
+The Application tool will attempt to launch your PWA with the protocol and URL you specified. The browser asks for permission to open the application, and then prompts you to confirm that you want to handle the protocol and the app you'd like to launch. If you give permission, your app will open with the specified content.
+
+<!-- (how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
+Refer to the attachment.
+
+To take your own screenshot:
+Open Microsoft Edge Beta, Dev, or Canary (just go to edge://version and ensure you're on version 105+)
+Navigate to URL protocol handler (protocol-handler.glitch.me)
+Install the PWA
+Open DevTools > Application tool
+Select the Manifest dropdown to expand it
+Select the Protocol Handler entry in the dropdown
+With the web+coffee:// protocol selected, enter into the textbox "americano"
+Take a screenshot. Draw red highlight boxes over the "Protocol handlers" entry in the Manifest dropdown and around the Protocol Handlers section in the pane
+Video recording of feature in action
+(we want to incorporate more multimedia assets into our What's New docs which drives engagement. Check out the wiki for instructions)
+Refer to .mp4 attachment -->
+
+<!-- ![4](./devtools-105-images/pngtemplate.png) -->
+
+See also:
+* [Test Progressive Web App (PWA) protocol handling](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/progressive-web-apps/protocol-handlers)
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-Microsoft Edge 105 also includes the following updates from the Chromium project:
+Microsoft Edge 105 also includes the following updates from the Chromium project:  
 
 * [Step-by-step replay in the Recorder](https://developer.chrome.com/blog/new-in-devtools-105/#recorder)
 * [Support mouse over event in the Recorder panel](https://developer.chrome.com/blog/new-in-devtools-105/#recorder-hover)
