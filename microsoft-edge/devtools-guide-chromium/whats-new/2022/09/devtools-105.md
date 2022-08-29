@@ -25,8 +25,8 @@ With DevTools open against your PWA:
 2. Expand the Manifest dropdown.
 3. Select the Protocol Handlers entry in the dropdown.
 4. Select the protocol you want to test from the dropdown.
-5. Enter in the URL or endpoint that you would like to test
-6. Select *Test Protocol*
+5. Enter in the URL or endpoint that you would like to test.
+6. Select **Test Protocol**.
 
 The Application tool will attempt to launch your PWA with the protocol and URL you specified. The browser asks for permission to open the application, and then prompts you to confirm that you want to handle the protocol and the app you'd like to launch. If you give permission, your app will open with the specified content.
 
@@ -49,9 +49,11 @@ Refer to .mp4 attachment -->
 <!-- ![4](./devtools-105-images/pngtemplate.png) -->
 
 See also:
+
 * [Test Progressive Web App (PWA) protocol handling](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/progressive-web-apps/protocol-handlers)
 
 <!-- ====================================================================== -->
+
 ## Edit and resend network requests more reliably in the Network Console tool
 
 <!-- RANK 3 -->
@@ -91,6 +93,7 @@ Before:
 After:
 
 ![1 after](./devtools-105-images/after-docking-menu.msft.png)
+
 <!-- 
 Screenshot 1, "before" in Edge 104: Ensure Focus Mode is enabled. Open Settings menu, then navigate to the docking submenu to show options.
 Screenshot 1, "after" in Edge 105: Ensure Focus Mode is enabled. Open Settings menu to show DevTools docking location and Activity Bar location settings. -->
@@ -110,6 +113,7 @@ See also:
 * [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 <!-- ====================================================================== -->
+
 ## Fix: Search in the Sources and Network tools now works as expected in Focus Mode
 
 <!-- Rank 4 -->
@@ -145,7 +149,7 @@ Draw red highlight boxes around the Search icon and Search pane in the Network t
 <!-- Title: Improved reliability in Issues tool -->
 <!-- Subtitle: Improved reliability in Issues tool. -->
 
-In previous versions of Microsoft Edge, there was a bug that that caused issues not appearing in the **Issues** tool.  This bug has been fixed, resulting in improved reliability of the **Issues** tool.
+In previous versions of Microsoft Edge, there was a bug that that caused issues not appearing in the **Issues** tool.  This bug has been fixed resulting in improved reliability.
 
 <!-- See also:
 * []()
