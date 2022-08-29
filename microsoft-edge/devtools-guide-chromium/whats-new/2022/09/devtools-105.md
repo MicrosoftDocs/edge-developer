@@ -126,7 +126,7 @@ You can now search in the Network tool via the Search icon.
 
 You can leverage the *Search in all files* feature in the Sources tool by opening the context menu on files in the Page section.  This will display the Search tool in the Quick View.
 
-![2](./devtools-105-images/networking-search2.png)
+![2](./devtools-105-images/search2.png)
 
 <!-- Open Edge Beta, Dev, or Canary (navigate to edge://version and ensure you're on 105+)
 1. Navigate to:  Simplify DevTools using Focus Mode - Microsoft Edge Development | Microsoft Docs
