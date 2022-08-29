@@ -30,6 +30,26 @@ To add a new video:
 
 
 <!-- ====================================================================== -->
+## DevTools - What's new in DevTools 104
+
+_Published on 5 August 2022._
+
+[![Thumbnail image for the DevTools What's New in 104 video](./images/devtools-whatsnew-104.png)](https://www.youtube.com/watch?v=0_ZprFX8x0I)
+
+Learn more about our latest announcements from the Microsoft Edge DevTools team at [What's New in DevTools 104](../devtools-guide-chromium/whats-new/2022/08/devtools-104.md).
+
+
+<!-- ====================================================================== -->
+## DevTools - What's new in DevTools 103
+
+_Published on 5 July 2022._
+
+[![Thumbnail image for the DevTools What's New in 103 video](./images/devtools-whatsnew-103.png)](https://www.youtube.com/watch?v=aa0C6BRdaPA)
+
+Learn more about our latest announcements from the Microsoft Edge DevTools team at [What's New in DevTools 103](../devtools-guide-chromium/whats-new/2022/06/devtools-103.md).
+
+
+<!-- ====================================================================== -->
 ## DevTools - Debug the web in 3D
 
 _Published on 21 June 2022._

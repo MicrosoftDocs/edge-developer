@@ -55,7 +55,7 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 *  **Code-sharing**.  Add web code to your codebase allows for increased reuse across multiple platforms.
 
-*  **Microsoft support**.  Microsoft provides support and adds new feature requests when WebView2 releases at General Availability (GA).
+*  **Microsoft support**.  Microsoft provides support and adds new feature requests on supported platforms.
 
 *  **Evergreen distribution**.  Rely on an up-to-date version of Chromium with regular platform updates and security patches.
 
@@ -67,15 +67,15 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 <!-- ====================================================================== -->
 ## Supported platforms
 
-A General Availability (GA) or Preview version of WebView2 is available for the following programming environments:
+The following programming environments are supported:
 
-*  Win32 C/C++ (GA)
+*  Win32 C/C++
 *  .NET Framework 4.5 or later
 *  .NET Core 3.1 or later
 *  .NET 5
 *  .NET 6
-*  WinUI 2.0 (Preview)
-*  [WinUI 3.0](/uwp/toolkits/winui3/index)
+*  [WinUI 2.0](/windows/apps/winui/winui2/)
+*  [WinUI 3.0](/windows/apps/winui/winui3/)
 
 WebView2 apps can run on the following versions of Windows:
 
