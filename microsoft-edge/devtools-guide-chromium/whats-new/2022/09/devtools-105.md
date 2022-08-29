@@ -34,19 +34,16 @@ The Application tool will attempt to launch your PWA with the protocol and URL y
 Refer to the attachment.
 
 To take your own screenshot:
-Open Microsoft Edge Beta, Dev, or Canary (just go to edge://version and ensure you're on version 105+)
-Navigate to URL protocol handler (protocol-handler.glitch.me)
-Install the PWA
-Open DevTools > Application tool
-Select the Manifest dropdown to expand it
-Select the Protocol Handler entry in the dropdown
-With the web+coffee:// protocol selected, enter into the textbox "americano"
-Take a screenshot. Draw red highlight boxes over the "Protocol handlers" entry in the Manifest dropdown and around the Protocol Handlers section in the pane
-Video recording of feature in action
-(we want to incorporate more multimedia assets into our What's New docs which drives engagement. Check out the wiki for instructions)
-Refer to .mp4 attachment -->
+1. Open Microsoft Edge Beta, Dev, or Canary (just go to edge://version and ensure you're on version 105+)
+2. Navigate to URL protocol handler (protocol-handler.glitch.me).
+3. Install the PWA (see docs).
+4. Open DevTools > Application tool.
+5. Select the Manifest dropdown to expand it.
+6. Select the Protocol Handler entry in the dropdown.
+7 With the web+coffee:// protocol selected, enter into the textbox "americano".
+8 Take a screenshot. Draw red highlight boxes over the "Protocol handlers" entry in the Manifest dropdown and around the Protocol Handlers section in the panel. -->
 
-<!-- ![4](./devtools-105-images/pngtemplate.png) -->
+![1](./devtools-105-images/protocol-handler.png)
 
 See also:
 
@@ -65,15 +62,15 @@ Previously in Microsoft Edge, selecting **Edit and resend** for a network reques
 In Microsoft Edge 105, this issue has been fixed. The **Edit and resend** now prepopulates the Network Console tool with the values for the network request that you are looking to resend. You can continue to modify these values before sending the request from the Network Console tool. Thank you for sending us your feedback about this issue!
 
 Right-click the network request that you want to change and resend, and then select *Edit and Resend*.
+
 [1](./devtools-105-images/edit-and-resend.msft.png
 
 In the Network Console, edit the network request information, and then click the *Send* button.
 [2](./devtools-105-images/networkconsole-edit.msft.png
 
 
-<!-- See also:
-* []()
-* []() -->
+See also:
+* [Compose and send web API requests using the Network Console tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network-console/network-console-tool#starting-from-the-network-tool)
 
 <!-- ====================================================================== -->
 ## Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View
@@ -100,7 +97,8 @@ Screenshot 1, "after" in Edge 105: Ensure Focus Mode is enabled. Open Settings m
 
 You can now change the orientation of the Quick View panel as well. To change Quick View to a vertical split, select the location toggle (**Dock Quick View to the right**). Selecting this toggle a second time will return Quick View to a horizontal split.
 
-![2](./devtools-105-images/quickview-console.msft.png) 
+![2](./devtools-105-images/quickview-console.png) 
+
 <!-- 
 Screenshot 2: Ensure Focus Mode is enabled. With Elements open in main panel and Console in Quick View, press the location toggle at the top right of Quick View to change its orientation to vertical. -->
 
@@ -122,26 +120,28 @@ See also:
 
 [Focus Mode experiment](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode#enable-focus-mode) in previous versions of Microsoft Edge didn't properly showcase the Search feature in the Network tool nor the *Search in all files* feature in the Sources tool. In Microsoft Edge version 105, these issues have been fixed.
 
-You can now search in the Network tool via the Search icon.  You can leverage the *Search in all files* feature in the Sources tool by opening the context menu on files in the Page section.  This will display the Search tool in the Quick View.
+You can now search in the Network tool via the Search icon.  
 
-<!-- Instructions for screenshot
-(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
-Refer to attachments. If you want to take screenshots yourself:
-Open Edge Beta, Dev, or Canary (navigate to edge://version and ensure you're on 105+)
-Navigate to:  Simplify DevTools using Focus Mode - Microsoft Edge Development | Microsoft Docs
-Open DevTools. Go to Settings > Experiments. Turn on Focus Mode. Reload DevTools
-Open the Network tool. Refresh the page so you can see some network requests. Now select the Search (magnifying glass icon)
-Take a screenshot
-Open the Sources tool
-Right-click docs.microsoft.com
-Take a screenshot of the "Search in all files" context menu entry
-Draw red highlight boxes around the Search icon and Search pane in the Network tool. Draw a red highlight box around the "Search in all files" entry in the context menu in the Sources tool. -->
+![1](./devtools-105-images/networking-search.png)
 
-<!-- ![3](./devtools-105-images/pngtemplate.png) -->
+You can leverage the *Search in all files* feature in the Sources tool by opening the context menu on files in the Page section.  This will display the Search tool in the Quick View.
 
-<!-- See also:
-* []()
-* []() -->
+![2](./devtools-105-images/networking-search2.png)
+
+<!-- Open Edge Beta, Dev, or Canary (navigate to edge://version and ensure you're on 105+)
+1. Navigate to:  Simplify DevTools using Focus Mode - Microsoft Edge Development | Microsoft Docs
+2. Open DevTools. Go to Settings > Experiments. Turn on Focus Mode. Reload DevTools
+3. Open the Network tool. Refresh the page so you can see some network requests. Now select the Search (magnifying glass icon)
+4. Take a screenshot
+5. Open the Sources tool
+6. Right-click docs.microsoft.com
+7. Take a screenshot of the "Search in all files" context menu entry
+8. Draw red highlight boxes around the Search icon and Search pane in the Network tool. Draw a red highlight box around the "Search in all files" entry in the context menu in the Sources tool. -->
+
+
+See also:
+* [Inspect network activity - Microsoft Edge Development](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/#search-network-headers-and-responses)
+* [Find source files for a page using the Search tool ](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/search/search-tool)
 
 <!-- ====================================================================== -->
 ## Improved reliability in Issues tool
@@ -160,29 +160,10 @@ In previous versions of Microsoft Edge, there was a bug that that caused issues 
 
 Microsoft Edge 105 also includes the following updates from the Chromium project:  
 
-* [Support mouse over event in the Recorder panel](https://developer.chrome.com/blog/new-in-devtools-105/#recorder-hover)
-* [Largest Contentful Paint (LCP) in the Performance insights panel](https://developer.chrome.com/blog/new-in-devtools-105/#lcp)
-* [Identify flashes of text (FOIT, FOUT) as potential root causes for layout shifts](https://developer.chrome.com/blog/new-in-devtools-105/#foit-fout)
-* [Protocol handlers in the Manifest pane](https://developer.chrome.com/blog/new-in-devtools-105/#manifest)
-* [Top layer badge in the Elements panel](https://developer.chrome.com/blog/new-in-devtools-105/#top-layer)
 * [Attach Wasm debugging information at runtime](https://developer.chrome.com/blog/new-in-devtools-105/#wasm)
 * [Support live edit during debugging](https://developer.chrome.com/blog/new-in-devtools-105/#live-edit)
 * [View and edit @scope at rules in the Styles pane](https://developer.chrome.com/blog/new-in-devtools-105/#scope)
 * [Sourcemap improvements](https://developer.chrome.com/blog/new-in-devtools-105/#sourcemaps)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-105/#misc)
-
-<!-- * [Step-by-step replay in the Recorder](https://developer.chrome.com/blog/new-in-devtools-105/#recorder)
-* [Support mouse over event in the Recorder panel](https://developer.chrome.com/blog/new-in-devtools-105/#recorder-hover)
-* [Largest Contentful Paint (LCP) in the Performance insights panel](https://developer.chrome.com/blog/new-in-devtools-105/#lcp)
-* [Identify flashes of text (FOIT, FOUT) as potential root causes for layout shifts](https://developer.chrome.com/blog/new-in-devtools-105/#foit-fout)
-* [Protocol handlers in the Manifest pane](https://developer.chrome.com/blog/new-in-devtools-105/#manifest)
-* [Top layer badge in the Elements panel](https://developer.chrome.com/blog/new-in-devtools-105/#top-layer)
-* [Attach Wasm debugging information at runtime](https://developer.chrome.com/blog/new-in-devtools-105/#wasm)
-* [Support live edit during debugging](https://developer.chrome.com/blog/new-in-devtools-105/#live-edit)
-* [View and edit @scope at rules in the Styles pane](https://developer.chrome.com/blog/new-in-devtools-105/#scope)
-* [Sourcemap improvements](https://developer.chrome.com/blog/new-in-devtools-105/#sourcemaps)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-105/#misc)
--->
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
