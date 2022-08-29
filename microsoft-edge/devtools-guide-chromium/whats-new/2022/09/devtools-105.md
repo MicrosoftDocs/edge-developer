@@ -70,7 +70,7 @@ In the Network Console, edit the network request information, and then click the
 
 
 See also:
-* [Compose and send web API requests using the Network Console tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network-console/network-console-tool#starting-from-the-network-tool)
+* [Compose and send web API requests using the Network Console tool](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/network-console/network-console-tool#starting-from-the-network-tool)
 
 <!-- ====================================================================== -->
 ## Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View
@@ -140,8 +140,8 @@ You can leverage the *Search in all files* feature in the Sources tool by openin
 
 
 See also:
-* [Inspect network activity - Microsoft Edge Development](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/#search-network-headers-and-responses)
-* [Find source files for a page using the Search tool ](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/search/search-tool)
+* [Inspect network activity - Microsoft Edge Development](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/network/#search-network-headers-and-responses)
+* [Find source files for a page using the Search tool ](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/search/search-tool)
 
 <!-- ====================================================================== -->
 ## Improved reliability in Issues tool
