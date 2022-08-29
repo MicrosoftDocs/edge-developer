@@ -12,7 +12,7 @@ ms.date: 09/01/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 <!-- ====================================================================== -->
-## Test your PWA's protocol handlers from the Application tool
+## Test your PWA's protocol handlers from the Application tool  
 
 <!-- Rank: 1 -->
 <!-- Title: Test your PWA's protocol handlers from the Application tool  -->
