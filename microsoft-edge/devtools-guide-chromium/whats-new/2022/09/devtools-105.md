@@ -149,7 +149,7 @@ See also:
 <!-- Title: Improved reliability in Issues tool -->
 <!-- Subtitle: Improved reliability in Issues tool. -->
 
-In previous versions of Microsoft Edge, there was a bug that that caused issues not appearing in the **Issues** tool.  This bug has been fixed resulting in improved reliability.
+In previous versions of Microsoft Edge, there was a bug that that caused issues not appearing in the **Issues** tool.  This bug has been fixed resulting in improved reliability.  
 
 <!-- See also:
 * []()
