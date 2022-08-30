@@ -46,7 +46,7 @@ See also:
 
 Previously in Microsoft Edge, selecting **Edit and resend** for a network request from the Network tool may not have reliably opened the Network Console tool and prepopulated it with the values from the request. 
 
-In Microsoft Edge 105, this issue has been fixed. The **Edit and resend** now prepopulates the Network Console tool with the values for the network request that you are looking to resend. You can continue to modify these values before sending the request from the Network Console tool. Thank you for sending us your feedback about this issue!
+In Microsoft Edge 105, this issue has been fixed. The **Edit and resend** now prepopulates the **Network Console** tool with the values for the network request that you are looking to resend. You can continue to modify these values before sending the request from the **Network Console** tool. Thank you for sending us your feedback about this issue!
 
 Right-click the network request that you want to change and resend, and then select *Edit and Resend*.
 
@@ -123,6 +123,10 @@ See also:
 <!-- Subtitle: A bug that sometimes resulted in issues not appearing has been fixed.. -->
 
 In previous versions of Microsoft Edge, there was a bug that that caused issues not appearing in the **Issues** tool.  This bug has been fixed resulting in improved reliability.  
+
+See also:
+
+* [Find and fix problems using the Issues tool](../../../issues/index.md)
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
