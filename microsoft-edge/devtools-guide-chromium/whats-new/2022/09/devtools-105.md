@@ -47,7 +47,7 @@ To take your own screenshot:
 
 See also:
 
-* [Test Progressive Web App (PWA) protocol handling](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/progressive-web-apps/protocol-handlers)
+* [Test Progressive Web App (PWA) protocol handling](/microsoft-edge/devtools-guide-chromium/progressive-web-apps/protocol-handlers)
 
 <!-- ====================================================================== -->
 
@@ -70,7 +70,7 @@ In the Network Console, edit the network request information, and then click the
 
 
 See also:
-* [Compose and send web API requests using the Network Console tool](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/network-console/network-console-tool#starting-from-the-network-tool)
+* [Compose and send web API requests using the Network Console tool](microsoft-edge/devtools-guide-chromium/network-console/network-console-tool#starting-from-the-network-tool)
 
 <!-- ====================================================================== -->
 ## Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View
@@ -78,7 +78,7 @@ See also:
 <!-- Title: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View -->
 <!-- Subtitle: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View. -->
 
-Several improvements to [Focus Mode](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode) in existing location controls for DevTools have been made, including a new control for changing the orientation of Quick View.
+Several improvements to [Focus Mode](/devtools-guide-chromium/experimental-features/focus-mode) in existing location controls for DevTools have been made, including a new control for changing the orientation of Quick View.
 
 The Settings menu now provides options for changing DevTools between docked locations and a separate window. This menu also contains settings for how the Activity Bar is displayed. Starting in Edge 105, these options can be navigated and changed more quickly. The previous submenus have been replaced with toggle buttons. Additionally, improved contrast means the option you have selected is more easily visible at a glance.
 
@@ -117,7 +117,7 @@ See also:
 <!-- Title: Fix: Search in the Sources and Network tools now works as expected in Focus Mode  -->
 <!-- Subtitle: Try Focus Mode, a new, more simplified, and streamlined UI for DevTools!-->
 
-[Focus Mode experiment](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode#enable-focus-mode) in previous versions of Microsoft Edge didn't properly showcase the Search feature in the Network tool nor the *Search in all files* feature in the Sources tool. In Microsoft Edge version 105, these issues have been fixed.
+[Focus Mode experiment](/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode#enable-focus-mode) in previous versions of Microsoft Edge didn't properly showcase the Search feature in the Network tool nor the *Search in all files* feature in the Sources tool. In Microsoft Edge version 105, these issues have been fixed.
 
 You can now search in the Network tool via the Search icon.  
 
@@ -139,8 +139,8 @@ You can leverage the *Search in all files* feature in the Sources tool by openin
 
 
 See also:
-* [Inspect network activity - Microsoft Edge Development](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/network/#search-network-headers-and-responses)
-* [Find source files for a page using the Search tool ](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/search/search-tool)
+* [Inspect network activity - Microsoft Edge Development](/microsoft-edge/devtools-guide-chromium/network/#search-network-headers-and-responses)
+* [Find source files for a page using the Search tool ](/microsoft-edge/devtools-guide-chromium/search/search-tool)
 
 <!-- ====================================================================== -->
 ## Improved reliability in Issues tool
