@@ -22,11 +22,11 @@ In Microsoft Edge 105, the Application tool now supports testing protocol handle
 
 With DevTools open against your PWA:
 1. Open the Application tool.
-2. Expand the Manifest dropdown.
-3. Select the Protocol Handlers entry in the dropdown.
-4. Select the protocol you want to test from the dropdown.
-5. Enter in the URL or endpoint that you would like to test.
-6. Select **Test Protocol**.
+1. Expand the **Manifest** dropdown.
+1. Select the Protocol Handlers entry in the dropdown.
+1. Select the protocol you want to test from the dropdown.
+1. Enter in the URL or endpoint that you would like to test.
+1. Select **Test Protocol**.
 
 The Application tool will attempt to launch your PWA with the protocol and URL you specified. The browser asks for permission to open the application, and then prompts you to confirm that you want to handle the protocol and the app you'd like to launch. If you give permission, your app will open with the specified content.
 
