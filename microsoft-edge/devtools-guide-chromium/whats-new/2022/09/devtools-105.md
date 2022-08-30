@@ -23,7 +23,7 @@ In Microsoft Edge 105, the Application tool now supports testing protocol handle
 With DevTools open against your PWA:
 1. Open the Application tool.
 2. Expand the Manifest dropdown.
-3. Select the Protocol Handlers entry in the dropdown.
+3. Select the 'Protocol Handlers' entry in the dropdown.
 4. Select the protocol you want to test from the dropdown.
 5. Enter in the URL or endpoint that you would like to test.
 6. Select **Test Protocol**.
@@ -43,7 +43,7 @@ To take your own screenshot:
 7 With the web+coffee:// protocol selected, enter into the textbox "americano".
 8 Take a screenshot. Draw red highlight boxes over the "Protocol handlers" entry in the Manifest dropdown and around the Protocol Handlers section in the panel. -->
 
-![1](./devtools-105-images/protocol-handler.png)
+![Protocol Handler](./devtools-105-images/protocol-handler.png)
 
 See also:
 
@@ -63,10 +63,10 @@ In Microsoft Edge 105, this issue has been fixed. The **Edit and resend** now pr
 
 Right-click the network request that you want to change and resend, and then select *Edit and Resend*.
 
-[1](./devtools-105-images/edit-and-resend.msft.png
+[Edit and Resent](./devtools-105-images/edit-and-resend.msft.png
 
 In the Network Console, edit the network request information, and then click the *Send* button.
-[2](./devtools-105-images/networkconsole-edit.msft.png
+[Network Console Edit and Send](./devtools-105-images/networkconsole-edit.msft.png
 
 
 See also:
@@ -75,7 +75,6 @@ See also:
 <!-- ====================================================================== -->
 ## Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View
 
-<!-- Rank 3 -->
 <!-- Title: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View -->
 <!-- Subtitle: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View. -->
 
@@ -85,11 +84,11 @@ The Settings menu now provides options for changing DevTools between docked loca
 
 Before:
 
-![1 before](./devtools-105-images/before-docking-menu.msft.png)
+![Focus Mode Before](./devtools-105-images/before-docking-menu.msft.png)
 
 After:
 
-![1 after](./devtools-105-images/after-docking-menu.msft.png)
+![Focus Mode After](./devtools-105-images/after-docking-menu.msft.png)
 
 <!-- 
 Screenshot 1, "before" in Edge 104: Ensure Focus Mode is enabled. Open Settings menu, then navigate to the docking submenu to show options.
@@ -97,14 +96,14 @@ Screenshot 1, "after" in Edge 105: Ensure Focus Mode is enabled. Open Settings m
 
 You can now change the orientation of the Quick View panel as well. To change Quick View to a vertical split, select the location toggle (**Dock Quick View to the right**). Selecting this toggle a second time will return Quick View to a horizontal split.
 
-![2](./devtools-105-images/quickview-console.png) 
+![Quick View from Console](./devtools-105-images/quickview-console.png) 
 
 <!-- 
 Screenshot 2: Ensure Focus Mode is enabled. With Elements open in main panel and Console in Quick View, press the location toggle at the top right of Quick View to change its orientation to vertical. -->
 
 To minimize Quick View, use the **Collapse** toggle or press `Escape`:
 
-![3](./devtools-105-images/focus-mode-improved-location-controls3.png)
+![Focus Mode Improved Location Control](./devtools-105-images/focus-mode-improved-location-controls3.png)
 <!-- Screenshot 3: Continuation of previous screenshot. Minimize Quick View in vertical orientation with with Esc keyboard shortcut. See below. -->
 
 See also:
@@ -122,11 +121,11 @@ See also:
 
 You can now search in the Network tool via the Search icon.  
 
-![1](./devtools-105-images/networking-search.png)
+![Networking Search](./devtools-105-images/networking-search.png)
 
 You can leverage the *Search in all files* feature in the Sources tool by opening the context menu on files in the Page section.  This will display the Search tool in the Quick View.
 
-![2](./devtools-105-images/search2.png)
+![Networking Search All](./devtools-105-images/search2.png)
 
 <!-- Open Edge Beta, Dev, or Canary (navigate to edge://version and ensure you're on 105+)
 1. Navigate to:  Simplify DevTools using Focus Mode - Microsoft Edge Development | Microsoft Docs
