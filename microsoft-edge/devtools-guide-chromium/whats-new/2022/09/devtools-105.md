@@ -78,9 +78,9 @@ See also:
 <!-- Title: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View -->
 <!-- Subtitle: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View. -->
 
-Several improvements to [Focus Mode](/devtools-guide-chromium/experimental-features/focus-mode) in existing location controls for DevTools have been made, including a new control for changing the orientation of Quick View.
+Several improvements to [Focus Mode](/devtools-guide-chromium/experimental-features/focus-mode) in existing location controls for DevTools have been made, including a new control for changing the orientation of **Quick View**.
 
-The Settings menu now provides options for changing DevTools between docked locations and a separate window. This menu also contains settings for how the Activity Bar is displayed. Starting in Edge 105, these options can be navigated and changed more quickly. The previous submenus have been replaced with toggle buttons. Additionally, improved contrast means the option you have selected is more easily visible at a glance.
+The Settings menu now provides options for changing DevTools between docked locations and a separate window. This menu also contains settings for how the **Activity Bar** is displayed. Starting in Edge 105, these options can be navigated and changed more quickly. The previous submenus have been replaced with toggle buttons. Additionally, improved contrast means the option you have selected is more easily visible at a glance.
 
 Before:
 
@@ -94,14 +94,14 @@ After:
 Screenshot 1, "before" in Edge 104: Ensure Focus Mode is enabled. Open Settings menu, then navigate to the docking submenu to show options.
 Screenshot 1, "after" in Edge 105: Ensure Focus Mode is enabled. Open Settings menu to show DevTools docking location and Activity Bar location settings. -->
 
-You can now change the orientation of the Quick View panel as well. To change Quick View to a vertical split, select the location toggle (**Dock Quick View to the right**). Selecting this toggle a second time will return Quick View to a horizontal split.
+You can now change the orientation of the **Quick View** panel as well. To change Quick View to a vertical split, select the location toggle (**Dock Quick View to the right**). Selecting this toggle a second time will return Quick View to a horizontal split.
 
 ![Quick View from Console](./devtools-105-images/quickview-console.png) 
 
 <!-- 
 Screenshot 2: Ensure Focus Mode is enabled. With Elements open in main panel and Console in Quick View, press the location toggle at the top right of Quick View to change its orientation to vertical. -->
 
-To minimize Quick View, use the **Collapse** toggle or press `Escape`:
+To minimize **Quick View**, use the **Collapse** toggle or press `Escape`:
 
 ![Focus Mode Improved Location Control](./devtools-105-images/focus-mode-improved-location-controls3.png)
 <!-- Screenshot 3: Continuation of previous screenshot. Minimize Quick View in vertical orientation with with Esc keyboard shortcut. See below. -->
@@ -123,7 +123,7 @@ You can now search in the Network tool via the Search icon.
 
 ![Networking Search](./devtools-105-images/networking-search.png)
 
-You can leverage the *Search in all files* feature in the Sources tool by opening the context menu on files in the Page section.  This will display the Search tool in the Quick View.
+You can leverage the *Search in all files* feature in the Sources tool by opening the context menu on files in the Page section.  This will display the Search tool in the **Quick View**.
 
 ![Networking Search All](./devtools-105-images/search2.png)
 
