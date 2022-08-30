@@ -48,7 +48,7 @@ Previously in Microsoft Edge, selecting **Edit and resend** for a network reques
 
 In Microsoft Edge 105, this issue has been fixed. The **Edit and resend** now prepopulates the **Network Console** tool with the values for the network request that you are looking to resend. You can continue to modify these values before sending the request from the **Network Console** tool. Thank you for sending us your feedback about this issue!
 
-Right-click the network request that you want to change and resend, and then select *Edit and Resend*.
+Right-click the network request that you want to change and resend, and then select **Edit and Resend**.
 
 ![Edit and Resent](./devtools-105-images/edit-and-resend.png
 
