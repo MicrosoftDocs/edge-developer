@@ -70,7 +70,7 @@ In the Network Console, edit the network request information, and then click the
 
 
 See also:
-* [Compose and send web API requests using the Network Console tool](microsoft-edge/devtools-guide-chromium/network-console/network-console-tool#starting-from-the-network-tool)
+* [Compose and send web API requests using the Network Console tool](/microsoft-edge/devtools-guide-chromium/network-console/network-console-tool#starting-from-the-network-tool)
 
 <!-- ====================================================================== -->
 ## Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View
