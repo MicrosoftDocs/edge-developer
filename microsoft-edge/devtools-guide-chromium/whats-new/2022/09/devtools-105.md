@@ -50,11 +50,11 @@ In Microsoft Edge 105, this issue has been fixed. The **Edit and resend** now pr
 
 Right-click the network request that you want to change and resend, and then select *Edit and Resend*.
 
-[Edit and Resent](./devtools-105-images/edit-and-resend.png
+![Edit and Resent](./devtools-105-images/edit-and-resend.png
 
 In the Network Console, edit the network request information, and then click the *Send* button.
 
-[Network Console Edit and Send](./devtools-105-images/networkconsole-edit.png
+![Network Console Edit and Send](./devtools-105-images/networkconsole-edit.png
 
 See also:
 * [Compose and send web API requests using the Network Console tool](/microsoft-edge/devtools-guide-chromium/network-console/network-console-tool#starting-from-the-network-tool)
@@ -72,24 +72,20 @@ The Settings menu now provides options for changing DevTools between docked loca
 
 Before:
 
-![Focus Mode Before](./devtools-105-images/before-docking-menu.png)
+![Focus Mode Before](./devtools-105-images/before-docking-menu.png) 
 
 After:
 
 ![Focus Mode After](./devtools-105-images/after-docking-menu.png)
 
-<!-- 
-Screenshot 1, "before" in Edge 104: Ensure Focus Mode is enabled. Open Settings menu, then navigate to the docking submenu to show options.
-Screenshot 1, "after" in Edge 105: Ensure Focus Mode is enabled. Open Settings menu to show DevTools docking location and Activity Bar location settings. -->
 
 You can now change the orientation of the **Quick View** panel as well. To change Quick View to a vertical split, select the location toggle (**Dock Quick View to the right**). Selecting this toggle a second time will return **Quick View** to a horizontal split.
 
 ![Quick View from Console](./devtools-105-images/quickview-console.png) 
 
-
 To minimize **Quick View**, use the **Collapse** toggle or press `Esc`:
 
-![Focus Mode Improved Location Control](./devtools-105-images/focus-mode-improved-location-controls3.png)
+![Focus Mode Improved Location Control](./devtools-105-images/focus-mode-improved-location-controls.png)
 
 See also:
 * [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
