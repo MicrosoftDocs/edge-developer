@@ -48,7 +48,7 @@ Previously in Microsoft Edge, selecting **Edit and resend** for a network reques
 
 In Microsoft Edge 105, this issue has been fixed. The **Edit and resend** now prepopulates the **Network Console** tool with the values for the network request that you are looking to resend. You can continue to modify these values before sending the request from the **Network Console** tool. Thank you for sending us your feedback about this issue!
 
-Right-click the network request that you want to change and resend, and then select *Edit and Resend*.
+Right-click the network request that you want to change and resend, and then select **Edit and Resend**.
 
 ![Edit and Resent](./devtools-105-images/edit-and-resend.png
 
@@ -99,7 +99,7 @@ See also:
 
 [Focus Mode experiment](/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode#enable-focus-mode) in previous versions of Microsoft Edge didn't properly showcase the Search feature in the Network tool nor the *Search in all files* feature in the Sources tool. In Microsoft Edge version 105, these issues have been fixed.
 
-You can now search in the Network tool via the Search icon.  
+You can now search in the **Network** tool via the **Search** icon.  
 
 ![Networking Search](./devtools-105-images/networking-search.png)
 
@@ -117,7 +117,7 @@ See also:
 <!-- Title: Improved reliability in Issues tool -->
 <!-- Subtitle: A bug that sometimes resulted in issues not appearing has been fixed.. -->
 
-In previous versions of Microsoft Edge, there was a bug that that caused issues not appearing in the **Issues** tool.  This bug has been fixed resulting in improved reliability.  
+In previous versions of Microsoft Edge, there was a bug that that caused issues to not appear in the **Issues** tool.  This bug has been fixed, resulting in improved reliability.  
 
 See also:
 
