@@ -50,11 +50,11 @@ In Microsoft Edge 105, this issue has been fixed. The **Edit and resend** now pr
 
 Right-click the network request that you want to change and resend, and then select **Edit and Resend**.
 
-![Edit and Resent](./devtools-105-images/edit-and-resend.png
+![Edit and Resent](./devtools-105-images/edit-and-resend.png)
 
 In the Network Console, edit the network request information, and then click the *Send* button.
 
-![Network Console Edit and Send](./devtools-105-images/networkconsole-edit.png
+![Network Console Edit and Send](./devtools-105-images/networkconsole-edit.png)
 
 See also:
 * [Compose and send web API requests using the Network Console tool](/microsoft-edge/devtools-guide-chromium/network-console/network-console-tool#starting-from-the-network-tool)
@@ -97,7 +97,7 @@ See also:
 <!-- Title: Fix: Search in the Sources and Network tools now works as expected in Focus Mode  -->
 <!-- Subtitle: Try Focus Mode, a new, more simplified, and streamlined UI for DevTools!-->
 
-[Focus Mode experiment](/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode#enable-focus-mode) in previous versions of Microsoft Edge didn't properly showcase the Search feature in the Network tool nor the *Search in all files* feature in the Sources tool. In Microsoft Edge version 105, these issues have been fixed.
+![Focus Mode experiment](/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode#enable-focus-mode) in previous versions of Microsoft Edge didn't properly showcase the Search feature in the Network tool nor the *Search in all files* feature in the Sources tool. In Microsoft Edge version 105, these issues have been fixed.
 
 You can now search in the **Network** tool via the **Search** icon.  
 
