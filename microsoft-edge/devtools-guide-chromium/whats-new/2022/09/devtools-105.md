@@ -78,7 +78,6 @@ After:
 
 ![Focus Mode After](./devtools-105-images/after-docking-menu.png)
 
-
 You can now change the orientation of the **Quick View** panel as well. To change Quick View to a vertical split, select the location toggle (**Dock Quick View to the right**). Selecting this toggle a second time will return **Quick View** to a horizontal split.
 
 ![Quick View from Console](./devtools-105-images/quickview-console.png) 
