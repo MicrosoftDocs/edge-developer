@@ -100,7 +100,7 @@ See also:
 
 [Focus Mode experiment](/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode#enable-focus-mode) in previous versions of Microsoft Edge didn't properly showcase the Search feature in the Network tool nor the *Search in all files* feature in the Sources tool. In Microsoft Edge version 105, these issues have been fixed.
 
-You can now search in the Network tool via the Search icon.  
+You can now search in the **Network** tool via the **Search** icon.  
 
 ![Networking Search](./devtools-105-images/networking-search.png)
 
