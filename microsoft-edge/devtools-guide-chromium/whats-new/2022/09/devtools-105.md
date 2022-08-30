@@ -18,7 +18,7 @@ ms.date: 09/01/2022
 <!-- Title: Test your PWA's protocol handlers from the Application tool  -->
 <!-- Subtitle: From the Manifest section of the Application tool, you can now provide custom protocols to launch your PWA. -->
 
-In Microsoft Edge 105, the Application tool now supports testing protocol handlers. Since Microsoft Edge 96, you've been able to define protocol handlers in the application manifest of your PWA. Now you can  test those protocols from the Application tool itself in DevTools if you have your PWA installed. 
+In Microsoft Edge 105, the **Application** tool now supports testing protocol handlers. Since Microsoft Edge 96, you've been able to define protocol handlers in the application manifest of your Progressive Web App (PWA). Now you can  test those protocols from the **Application** tool itself in DevTools if you have your PWA installed. 
 
 With DevTools open against your PWA:
 1. Open the Application tool.
