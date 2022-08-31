@@ -753,7 +753,7 @@ Status:
 Whether to show the re-designed version of the **Breakpoint Sidebar** pane in the **Sources** tool.
 
 See also:
-* [Pause code with breakpoints](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/breakpoints)
+* [Pause code with breakpoints](../javascript/breakpoints.md)
 
 Status:
 *  This checkbox is not present in Microsoft Edge Stable v103.<!--todo-->
