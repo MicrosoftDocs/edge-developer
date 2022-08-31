@@ -68,13 +68,13 @@ See also:
 
 In Microsoft Edge 105, several improvements to location controls have been made in [Focus Mode](/devtools-guide-chromium/experimental-features/focus-mode), including a new option for changing the orientation of **Quick View**.
 
-The **Settings** menu now directly provides options for changing the docking location of DevTools.  This menu also contains settings for where the **Activity Bar** is displayed.  The previous submenus have been replaced with toggle buttons.  Additionally, improved contrast means the option you have selected is more easily visible at a glance.
+The **Customize and control DevTools** (**...**) menu now directly provides options for changing the docking location of DevTools.  This menu also contains settings for where the **Activity Bar** is displayed.  The previous submenus have been replaced with toggle buttons.  Additionally, improved contrast means the option you have selected is more easily visible at a glance.
 
-Focus Mode, in previous versions of Microsoft Edge:
+Selecting the docking location in Focus Mode, in previous versions of Microsoft Edge:
 
 ![Focus Mode Before](./devtools-105-images/before-docking-menu.png)
 
-Focus Mode, in Microsoft Edge 105:
+Selecting the docking location in Focus Mode, in Microsoft Edge 105:
 
 ![Focus Mode After](./devtools-105-images/after-docking-menu.png)
 
