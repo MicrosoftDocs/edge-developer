@@ -46,7 +46,7 @@ See also:
 
 Previously in Microsoft Edge, selecting **Edit and resend** for a network request from the Network tool may not have reliably opened the **Network Console** tool and pre-populated it with the values from the request.
 
-In Microsoft Edge 105, this issue has been fixed.  (This issue will also be fixed in [Focus Mode](../../../experimental-features/focus-mode.md) in a future release.)  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you're looking to resend. You can continue to modify these values before sending the request from the **Network Console** tool. Thank you for sending us your feedback about this issue!
+In Microsoft Edge 105, this issue has been fixed in the default UI.  This issue will also be fixed in [Focus Mode](../../../experimental-features/focus-mode.md) in a future release.  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you're looking to resend.  You can continue to modify these values before sending the request from the **Network Console** tool.  Thank you for sending us your feedback about this issue!
 
 Right-click the network request that you want to change and resend, and then select **Edit and Resend**:
 
@@ -57,7 +57,7 @@ In the **Network Console**, edit the network request information, and then click
 ![Network Console Edit and Send](./devtools-105-images/networkconsole-edit.png)
 
 See also:
-* [Compose and send web API requests using the Network Console tool](../../../network-console/network-console-tool.md#starting-from-the-network-tool)
+* [Starting from the Network tool](../../../network-console/network-console-tool.md#starting-from-the-network-tool) in _Compose and send web API requests using the Network Console tool_.
 
 
 <!-- ====================================================================== -->
