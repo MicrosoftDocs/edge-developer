@@ -32,7 +32,7 @@ This checkbox is|is not present in Microsoft Edge Stable v123.
 
 Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes the experimental features which are in either:
 *  The latest version of the Canary preview channel of Microsoft Edge.
-*  The latest version of the Stable version of Microsoft Edge.
+*  The latest version of the Stable release of Microsoft Edge.
 
 All [channels of Microsoft Edge](/deployedge/microsoft-edge-channels) have experimental features. You can get the latest experimental features by using the [Microsoft Edge Canary channel](https://www.microsoftedgeinsider.com/welcome?channel=canary). To view the full list available in your version of Microsoft Edge, see the **Settings** > **Experiments** page in DevTools.
 

@@ -48,11 +48,11 @@ Previously in Microsoft Edge, selecting **Edit and resend** for a network reques
 
 In Microsoft Edge 105, this issue has been fixed.  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you are looking to resend. You can continue to modify these values before sending the request from the **Network Console** tool. Thank you for sending us your feedback about this issue!
 
-Right-click the network request that you want to change and resend, and then select **Edit and Resend**.
+Right-click the network request that you want to change and resend, and then select **Edit and Resend**:
 
 ![Edit and Resend](./devtools-105-images/edit-and-resend.png)
 
-In the **Network Console**, edit the network request information, and then click the **Send** button.
+In the **Network Console**, edit the network request information, and then click the **Send** button:
 
 ![Network Console Edit and Send](./devtools-105-images/networkconsole-edit.png)
 
@@ -102,13 +102,13 @@ See also:
 
 In previous versions of Microsoft Edge, the Focus Mode experiment didn't properly showcase the **Search** feature in the **Network** tool or the **Search in all files** feature in the **Sources** tool.  In Microsoft Edge 105, these issues have been fixed.
 
-You can now search in the **Network** tool via the **Search** icon.
+You can now search in the **Network** tool via the **Search** icon:
 
 ![Networking Search](./devtools-105-images/networking-search.png)
 
-To search in all files in the **Sources** tool, right-click a window icon node or a cloud icon node in the **Page** section, and then select **Search in all files**.  Or right-click a folder icon node and then select **Search in folder**.  This displays the **Search** tool in the **Quick View**.
+To search in all files in the **Sources** tool, right-click a window icon node or a cloud icon node in the **Page** section, and then select **Search in all files**.  Or right-click a folder icon node and then select **Search in folder**.  This displays the **Search** tool in **Quick View**:
 
-![Networking Search All](./devtools-105-images/search2.png)
+![Networking Search All](./devtools-105-images/sources-search-all-files.png)
 
 See also:
 * [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
