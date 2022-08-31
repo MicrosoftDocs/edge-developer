@@ -15,7 +15,7 @@ ms.date: 09/01/2022
 <!-- ====================================================================== -->
 ## Test your PWA's protocol handlers from the Application tool
 
-<!-- Title: Test your PWA's protocol handlers from the Application tool  -->
+<!-- Title: Test your PWA's protocol handlers from the Application tool -->
 <!-- Subtitle: From the Manifest section of the Application tool, you can now provide custom protocols to launch your PWA. -->
 
 In Microsoft Edge 105, the **Application** tool now supports testing protocol handlers.  Since Microsoft Edge 96, you've been able to define protocol handlers in the application manifest of your Progressive Web App (PWA).  Now you can test those protocols from the **Application** tool itself in DevTools if you have your PWA installed.
@@ -35,6 +35,7 @@ The **Application** tool will attempt to launch your PWA with the protocol and U
 See also:
 
 * [Test Progressive Web App (PWA) protocol handling](../../../progressive-web-apps/protocol-handlers.md)
+* [Handle protocols in Progressive Web Apps](../../../../progressive-web-apps-chromium/how-to/handle-protocols.md)
 
 
 <!-- ====================================================================== -->
@@ -45,11 +46,11 @@ See also:
 
 Previously in Microsoft Edge, selecting **Edit and resend** for a network request from the Network tool may not have reliably opened the **Network Console** tool and pre-populated it with the values from the request.
 
-In Microsoft Edge 105, this issue has been fixed. The **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you are looking to resend. You can continue to modify these values before sending the request from the **Network Console** tool. Thank you for sending us your feedback about this issue!
+In Microsoft Edge 105, this issue has been fixed.  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you are looking to resend. You can continue to modify these values before sending the request from the **Network Console** tool. Thank you for sending us your feedback about this issue!
 
 Right-click the network request that you want to change and resend, and then select **Edit and Resend**.
 
-![Edit and Resent](./devtools-105-images/edit-and-resend.png)
+![Edit and Resend](./devtools-105-images/edit-and-resend.png)
 
 In the **Network Console**, edit the network request information, and then click the **Send** button.
 
@@ -65,25 +66,29 @@ See also:
 <!-- Title: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View -->
 <!-- Subtitle: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View. -->
 
-Several improvements to Focus Mode in existing location controls for DevTools have been made, including a new control for changing the orientation of **Quick View**.
+In Microsoft Edge 105, several improvements to location controls have been made in [Focus Mode](/devtools-guide-chromium/experimental-features/focus-mode), including a new option for changing the orientation of **Quick View**.
 
-The **Settings** menu now directly provides options for changing DevTools between docked locations and a separate undocked window.  The **Settings** menu now also directly contains settings for where the **Activity Bar** is displayed. Starting in Edge 105, these options can be navigated and changed more quickly.  The previous submenus have been replaced with toggle buttons that are directly on the **Settings** menu.  Additionally, improved contrast means the option you have selected is more easily visible at a glance.
+The **Settings** menu now directly provides options for changing the docking location of DevTools.  This menu also contains settings for where the **Activity Bar** is displayed.  The previous submenus have been replaced with toggle buttons.  Additionally, improved contrast means the option you have selected is more easily visible at a glance.
 
-Before:
+Focus Mode, in previous versions of Microsoft Edge:
 
 ![Focus Mode Before](./devtools-105-images/before-docking-menu.png)
 
-After:
+Focus Mode, in Microsoft Edge 105:
 
 ![Focus Mode After](./devtools-105-images/after-docking-menu.png)
 
-You can now change the orientation of the **Quick View** panel as well.  To change **Quick View** to a vertical split, click the **Dock Quick View to the right** toggle button.  Clicking this toggle button again returns **Quick View** to a horizontal split.
+You can now change the orientation of the **Quick View** panel as well.  To display **Quick View** vertically instead of horizontally, click the **Dock Quick View to the right** toggle button.  Clicking this toggle again returns **Quick View** to the horizontal orientation.
 
-![Quick View from Console](./devtools-105-images/quickview-console.png)
+![Docking Quick View to the right](./devtools-105-images/quickview-console.png)
 
-To minimize **Quick View**, click the **Collapse Quick View** toggle button, or press `Esc`:
+Returning **Quick View** to the horizontal orientation:
 
-![Focus Mode improved location control](./devtools-105-images/focus-mode-improved-location-controls.png)
+![Docking Quick View to the bottom](./devtools-105-images/dock-quick-view-bottom.png)
+
+To minimize **Quick View** in either orientation, click the **Collapse Quick View** toggle button, or press `Esc`:
+
+![Minimizing Quick View](./devtools-105-images/focus-mode-improved-location-controls.png)
 
 See also:
 * [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
@@ -93,9 +98,9 @@ See also:
 ## Fix: Search in the Sources and Network tools now works as expected in Focus Mode
 
 <!-- Title: Fix: Search in the Sources and Network tools now works as expected in Focus Mode  -->
-<!-- Subtitle: Try Focus Mode, a new, more simplified, and streamlined UI for DevTools!-->
+<!-- Subtitle: Try Focus Mode, a new, more simplified, and streamlined UI for DevTools! -->
 
-In previous versions of Microsoft Edge, Focus Mode didn't properly showcase the **Search** feature in the **Network** tool or the **Search in all files** feature in the **Sources** tool.  In Microsoft Edge version 105, these issues have been fixed.
+In previous versions of Microsoft Edge, the Focus Mode experiment didn't properly showcase the **Search** feature in the **Network** tool or the **Search in all files** feature in the **Sources** tool.  In Microsoft Edge 105, these issues have been fixed.
 
 You can now search in the **Network** tool via the **Search** icon.
 
@@ -115,9 +120,9 @@ See also:
 ## Improved reliability in the Issues tool
 
 <!-- Title: Improved reliability in Issues tool -->
-<!-- Subtitle: A bug that sometimes resulted in issues not appearing has been fixed.. -->
+<!-- Subtitle: A bug that sometimes resulted in issues not appearing has been fixed. -->
 
-In previous versions of Microsoft Edge, there was a bug that that caused issues to not appear in the **Issues** tool.  This bug has been fixed, resulting in improved reliability.
+In previous versions of Microsoft Edge, there was a bug that that caused issues to not appear in the **Issues** tool.  This bug has been fixed in Microsoft Edge 105.
 
 See also:
 
