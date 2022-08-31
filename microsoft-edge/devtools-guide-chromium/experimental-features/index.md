@@ -30,7 +30,7 @@ This checkbox is|is not present in Microsoft Edge Canary v123.
 This checkbox is|is not present in Microsoft Edge Stable v123.
 -->
 
-Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes the experimental features which are in either:
+Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes the experimental features that are in either:
 *  The latest version of the Canary preview channel of Microsoft Edge.
 *  The latest version of the Stable release of Microsoft Edge.
 

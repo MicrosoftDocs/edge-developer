@@ -46,7 +46,7 @@ See also:
 
 Previously in Microsoft Edge, selecting **Edit and resend** for a network request from the Network tool may not have reliably opened the **Network Console** tool and pre-populated it with the values from the request.
 
-In Microsoft Edge 105, this issue has been fixed.  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you are looking to resend. You can continue to modify these values before sending the request from the **Network Console** tool. Thank you for sending us your feedback about this issue!
+In Microsoft Edge 105, this issue has been fixed.  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you're looking to resend. You can continue to modify these values before sending the request from the **Network Console** tool. Thank you for sending us your feedback about this issue!
 
 Right-click the network request that you want to change and resend, and then select **Edit and Resend**:
 
@@ -68,7 +68,7 @@ See also:
 
 In Microsoft Edge 105, several improvements to location controls have been made in [Focus Mode](/devtools-guide-chromium/experimental-features/focus-mode), including a new option for changing the orientation of **Quick View**.
 
-The **Customize and control DevTools** (**...**) menu now directly provides options for changing the docking location of DevTools.  This menu also contains settings for where the **Activity Bar** is displayed.  The previous submenus have been replaced with toggle buttons.  Additionally, improved contrast means the option you have selected is more easily visible at a glance.
+The **Customize and control DevTools** (**...**) menu now directly provides options for changing the docking location of DevTools.  This menu also contains settings for where the **Activity Bar** is displayed.  The previous submenus have been replaced with toggle buttons.  Also, the selected docking option has greater contrast, for increased visibility.
 
 Selecting the docking location in Focus Mode, in previous versions of Microsoft Edge:
 
@@ -106,7 +106,7 @@ You can now search in the **Network** tool via the **Search** icon:
 
 ![Networking Search](./devtools-105-images/networking-search.png)
 
-To search in all files in the **Sources** tool, right-click a window icon node or a cloud icon node in the **Page** section, and then select **Search in all files**.  Or right-click a folder icon node and then select **Search in folder**.  This displays the **Search** tool in **Quick View**:
+To search in all files in the **Sources** tool, in the **Page** section, right-click the **top** window or any domain, and then select **Search in all files**:
 
 ![Networking Search All](./devtools-105-images/sources-search-all-files.png)
 
