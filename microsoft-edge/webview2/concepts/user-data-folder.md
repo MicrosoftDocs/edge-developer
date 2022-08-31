@@ -28,7 +28,7 @@ WebView2 creates the UDF in the default location for the platform, or in the cus
 
 By default, WebView2 creates a UDF in the default location for the particular platform.  This works well on some platforms, but not others.  If your app has specific needs, you can specify a custom UDF location.  Make sure that the custom UDF location that you specify has appropriate Read/Write permissions for the WebView2 app runtime.
 
-Avoid storing user settings on a network drive. This results in slowdowns, crashes, or even loss of data.
+Avoid storing user settings on a network drive. This can result in slowdowns, crashes, or loss of data.
 
 <!-- ====================================================================== -->
 ## What kind of data is stored in the UDF
