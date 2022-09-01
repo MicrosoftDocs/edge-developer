@@ -32,6 +32,10 @@
 
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
+            - name: Microsoft Edge 105
+              href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
+              displayName: what's new, announcements, release notes
+
             - name: Microsoft Edge 104
               href: devtools-guide-chromium/whats-new/2022/08/devtools-104.md
               displayName: what's new, announcements, release notes
@@ -161,7 +165,7 @@
               items:
                 - name: Emulate mobile devices (Device Emulation)  # orig: Simulate mobile devices with Device Mode
                   href: devtools-guide-chromium/device-mode/index.md
-                  displayName: Device Emulation, Device Emulator, Device Mode  # also Network conditions tool (1x), Settings > Devices (1x)
+                  displayName: device emulator, device mode, device simulation, device simulator  # also Network conditions tool (1x), Settings > Devices (1x)
 
                 - name: Emulate dual-screen and foldable devices  # added article
                   href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
