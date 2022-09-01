@@ -455,7 +455,7 @@ _new as of v105_
 
 Whether to enable CSS authoring hints in the **Styles** panel of the **Elements** tool to display information tooltips next to inactive or deprecated properties.
 
-In Canary v105 and later, this checkbox has no effect.  When this feature is implemented, this feature will provide help when writing or inspecting CSS in the **Styles** panel.  Small information icons will appear next to CSS properties that are inactive (or deprecated).
+This feature provides help when writing or inspecting CSS in the **Styles** panel.  Small information icons appear next to CSS properties that are inactive or deprecated.  An inactive property is one that applies correctly to an element but has no effect on it (for example, `width:100px` applied to an inline element has no effect).
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary v106.
@@ -505,9 +505,10 @@ Status:
 <!-- ====================================================================== -->
 ## Group sources into Authored and Deployed trees
 
-_new as of v105_
+_new as of v104_
+<!-- This experiment was shown in the What's New 104 video [Microsoft Edge | What's New in DevTools 104](https://www.youtube.com/watch?v=0_ZprFX8x0I&t=129s) at 2:09. -->
 
-Controls whether to group sources into **Authored** and **Deployed** trees in the **Page**, **Filesystem**, and **Overrides** tabs of the **Sources** tool.  This feature in the **Sources** tool allows you to group source files in two folders depending on whether these are:
+Controls whether to group resources into separate **Authored** and **Deployed** trees in the **Page** tab of the **Sources** tool.  This feature in the **Sources** tool allows you to group source files in two folders depending on whether these are:
 *  Original source files (authored, that is, files with your local edits).
 *  Production files (deployed files that are on the web server after compiling and bundling the source files).
 

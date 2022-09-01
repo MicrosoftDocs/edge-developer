@@ -165,7 +165,7 @@
               items:
                 - name: Emulate mobile devices (Device Emulation)  # orig: Simulate mobile devices with Device Mode
                   href: devtools-guide-chromium/device-mode/index.md
-                  displayName: Device Emulation, Device Emulator, Device Mode  # also Network conditions tool (1x), Settings > Devices (1x)
+                  displayName: device emulator, device mode, device simulation, device simulator  # also Network conditions tool (1x), Settings > Devices (1x)
 
                 - name: Emulate dual-screen and foldable devices  # added article
                   href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
