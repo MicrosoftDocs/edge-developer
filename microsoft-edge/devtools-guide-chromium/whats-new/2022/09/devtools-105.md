@@ -78,7 +78,7 @@ Selecting the docking location in Focus Mode, in Microsoft Edge 105:
 
 ![Dock location menu icons after](./devtools-105-images/after-docking-menu.png)
 
-You can now change the orientation of the **Quick View** panel as well.  To display **Quick View** vertically instead of horizontally, click the **Dock Quick View to the right** toggle button.  Clicking this toggle again returns **Quick View** to the horizontal orientation.
+You can now change the orientation of the **Quick View** panel as well.  To display **Quick View** vertically instead of horizontally, click the **Dock Quick View to right** toggle button.  Clicking the **Dock Quick View to bottom** toggle returns **Quick View** to the horizontal orientation.
 
 ![Docking Quick View to the right](./devtools-105-images/quickview-console.png)
 
