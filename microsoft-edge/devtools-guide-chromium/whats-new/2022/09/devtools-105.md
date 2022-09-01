@@ -68,7 +68,9 @@ See also:
 
 In Microsoft Edge 105, several improvements to location controls have been made in [Focus Mode](../../../experimental-features/focus-mode.md), including a new option for changing the orientation of **Quick View**.
 
-The **Customize and control DevTools** (**...**) menu now directly provides options for changing the docking location of DevTools.  This menu also contains settings for where the **Activity Bar** is displayed.  The previous submenus have been replaced with toggle buttons.  The **Dock location** icons now have greater contrast, and the currently selected **Dock location** option is now highlighted.
+The **Customize and control DevTools** (**...**) menu now directly contains buttons to set the docking location of DevTools, instead of requiring opening a submenu.  The **Dock location** icons now have greater contrast, and the currently selected **Dock location** button is now highlighted.
+
+This menu also now directly contains buttons to set and indicate where the **Activity Bar** is displayed, instead of using a submenu.
 
 Selecting the docking location in Focus Mode, in previous versions of Microsoft Edge:
 
@@ -78,7 +80,7 @@ Selecting the docking location in Focus Mode, in Microsoft Edge 105:
 
 ![Dock location menu icons after](./devtools-105-images/after-docking-menu.png)
 
-You can now change the orientation of the **Quick View** panel as well.  To display **Quick View** vertically instead of horizontally, click the **Dock Quick View to right** toggle button.  Clicking the **Dock Quick View to bottom** toggle returns **Quick View** to the horizontal orientation.
+You can now change the orientation of the **Quick View** panel as well.  To display **Quick View** vertically instead of horizontally, click the **Dock Quick View to right** button.  Clicking the **Dock Quick View to bottom** button returns **Quick View** to the horizontal orientation.
 
 ![Docking Quick View to the right](./devtools-105-images/quickview-console.png)
 
@@ -86,7 +88,7 @@ Returning **Quick View** to the horizontal orientation:
 
 ![Docking Quick View to the bottom](./devtools-105-images/dock-quick-view-bottom.png)
 
-To minimize **Quick View** in either orientation, click the **Collapse Quick View** toggle button, or press `Esc`:
+To minimize **Quick View** in either orientation, click the **Collapse Quick View** button, or press `Esc`:
 
 ![Minimizing Quick View](./devtools-105-images/focus-mode-improved-location-controls.png)
 
