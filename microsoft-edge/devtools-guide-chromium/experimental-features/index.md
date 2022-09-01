@@ -235,7 +235,8 @@ Status:
 
 <!-- ====================================================================== -->
 ## Show option to expose internals in heap snapshots
-<!-- new in v105 -->
+
+_new as of v105_
 
 Whether to display a checkbox to expose internals in heap snapshots in the **Memory** tool.
 <!-- todo: need text -->
@@ -308,7 +309,8 @@ Status:
 
 <!-- ====================================================================== -->
 ## Emulation: Support dual screen mode
-<!-- new in v106 -->
+
+_new as of v106_
 
 Whether to show the UI to emulate dual-screen mode in device emulation.
 
@@ -448,7 +450,8 @@ Status:
 <!-- ====================================================================== -->
 ## Enable CSS Authoring hints for inactive rules, deprecated properties, etc.
 <!-- keep "etc." in heading, to match UI label -->
-<!-- new in v105 -->
+
+_new as of v105_
 
 Whether to enable CSS authoring hints in the **Styles** panel of the **Elements** tool to display information tooltips next to inactive or deprecated properties.
 
@@ -501,7 +504,8 @@ Status:
 
 <!-- ====================================================================== -->
 ## Group sources into Authored and Deployed trees
-<!-- new in v105 -->
+
+_new as of v105_
 
 Controls whether to group sources into **Authored** and **Deployed** trees in the **Page**, **Filesystem**, and **Overrides** tabs of the **Sources** tool.  This feature in the **Sources** tool allows you to group source files in two folders depending on whether these are:
 *  Original source files (authored, that is, files with your local edits).
@@ -514,7 +518,8 @@ Status:
 
 <!-- ====================================================================== -->
 ## Hide ignore-listed code in sources tree view
-<!-- new in v106 -->
+
+_new as of v106_
 
 Whether to hide or display code that's in the ignore list, in the **Sources** tool's tree view, such as the **Page** tab.
 
@@ -732,8 +737,9 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable re-designed Breakpoint Sidebar Pane in the Sources Panel
-<!-- new in v106 -->
 <!-- preserve heading = UI label -->
+
+_new as of v106_
 
 Whether to show the re-designed version of the **Breakpoint Sidebar** pane in the **Sources** tool.
 
