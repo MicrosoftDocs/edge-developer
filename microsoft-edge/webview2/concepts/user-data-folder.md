@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 08/31/2022
 ---
 # Manage user data folders
 <!-- # old title: Manage the user data folder -->
@@ -26,7 +26,15 @@ The user data folder (UDF) is a folder stored on the user's machine, that contai
 
 WebView2 creates the UDF in the default location for the platform, or in the custom UDF location that your host app explicitly specifies.
 
-By default, WebView2 creates a UDF in the default location for the particular platform.  This works well on some platforms, but not others.  If your app has specific needs, you can specify a custom UDF location.  Make sure that the custom UDF location that you specify has appropriate Read/Write permissions for the WebView2 app runtime.
+By default, WebView2 creates a UDF in the default location for the particular platform.  This works well on some platforms, but not others.  If your app has specific needs, you can specify a custom UDF location.
+
+#### Suitable custom UDF locations
+
+If you specify a custom UDF location, it should meet the following requirements:
+
+* The custom UDF location must have appropriate Read/Write permissions for the WebView2 app runtime.
+
+* Avoid storing user settings on a network drive. This can result in slowdowns, crashes, or loss of data.
 
 
 <!-- ====================================================================== -->
