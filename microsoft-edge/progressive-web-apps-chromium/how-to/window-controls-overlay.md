@@ -82,7 +82,7 @@ Using `position: fixed;` makes sure your title bar does not scroll with the rest
 
 Knowing where the overlay is and how big it is is important.  The overlay might not always be on the same side of the window; on macOS, the overlay is on the left side, but on Windows, the overlay is on the right side.  Also, the overlay might not always be the same size.
 
-Note that the `env()` CSS function takes a second parameter useful to define the position of your app content when the window controls overlay feature is missing or disabled.
+The `env()` CSS function takes a second parameter that's useful for defining the position of your app content when the window controls overlay feature is missing or disabled.
 
 
 <!-- ====================================================================== -->
