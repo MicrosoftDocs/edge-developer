@@ -157,7 +157,7 @@ See [The Web We Want initiative](web-we-want/index.md).
 <!-- ============================================================================================================================================ -->
 ## How to use this documentation
 
-These are tips for using the documentation UI at docs.microsoft.com.
+These are tips for using the documentation UI of Microsoft Docs.
 
 
 <!-- ====================================================================== -->
@@ -186,9 +186,9 @@ If the desired article isn't found, select **Search for "_search-term_" in all M
 
 ![If title word or index term isn't found, an option is provided to full-text search all Microsoft Edge documentation.](media/full-text-search-fallback.png)
 
-The full-text search page initially searches all _Microsoft Edge_ docs.  Or, click the **View all results on Microsoft Docs** link for a broader search:
+The full-text search page initially searches all _Microsoft Edge_ docs.  Or, click the **View all results** link for a broader search:
 
-![The full-text search page initially searches all Microsoft Edge docs, or click the link 'View all results on Microsoft Docs' for a broader search.](media/full-text-search-page.png)
+![The full-text search page initially searches all Microsoft Edge docs, or click the link 'View all results' for a broader search.](media/full-text-search-page.png)
 
 
 <!-- ====================================================================== -->
