@@ -34,6 +34,54 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 
 <!-- ====================================================================== -->
+## 1.0.1369-prerelease
+
+Release Date: Sep 4, 2022
+
+[NuGet package for WebView2 SDK 1.0.1369-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1369-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 106.0.1369.0 or higher. 
+
+### General
+
+#### Promotions
+
+The following items are now stable:
+
+*  The drag and drop API: 
+   * `DragEnter`
+   * `DragLeave`
+   * `DragOver`
+   * `Drop`
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2CompositionController Class](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller?view=webview2-dotnet-1.0.1369-prerelease&preserve-view=true)
+
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2CompositionController Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true)
+
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionController3 Class](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true)
+
+---
+
+#### Bug fixes
+
+*   Fix a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
+
+*   Fixed a bug that produced simultaneous WebView creation failure. This change is Runtime-specific. ([Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703))  
+
+*   Fixed print settings paper size to support dimensions as small as 0.01 inches (Runtime).  
+
+*   Fixed a bug that WebView2 print dialog may reset scale to fit to printable everytime. ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))  
+
+<!-- ====================================================================== -->
+
 ## 1.0.1293.44
 
 Release Date: August 8, 2022
