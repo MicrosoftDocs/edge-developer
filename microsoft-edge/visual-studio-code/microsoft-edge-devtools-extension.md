@@ -73,6 +73,23 @@ Issues are evaluated live while you edit your code.  As you type, you get feedba
 
 ![A possible issue being explained on an output element](microsoft-edge-devtools-extension-images/live-issue-reporting.png)
 
+#### Automated fixes and issue filtering
+
+When you hover over the element with the issue, you get a lightbulb icon indicating that there are quick fixes available.
+
+![An anchor element with a protocol specific href attribute highliighted as a problem with a lightbulb icon above it](microsoft-edge-devtools-extension-images/light-bulb.png)
+
+Activating the lightbulb icon shows a list of options. For example, if you added a link with a protocol relative URL, you get:
+
+![The quick fix panel opened next to the anchor element with the error offering the different options explained in the following text](microsoft-edge-devtools-extension-images/quick-fix-options.png)
+
+* Fix "no-protocol-relative-urls" issue
+* Disable "no-protocol-relative-urls" hints in this project
+* Edit .hintrc for this project
+
+Chosing the first would add the missing `https://` to the link and remove the underline, the second option creates a `.hintrc` file in the project folder telling the extension never to report this issue again and the last allows you to make edits to the `.hintrc` configuration file.
+
+Using quick fixes you can customise the error reporting of the extension to the needs of the current project.
 
 <!-- ====================================================================== -->
 ## Modes for using Microsoft Edge DevTools in Visual Studio Code
