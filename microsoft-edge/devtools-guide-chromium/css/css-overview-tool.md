@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 09/06/2022
+ms.date: 09/07/2022
 ---
 # Identify potential CSS improvements
 
