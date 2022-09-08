@@ -32,14 +32,13 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 
 1. Open DevTools on the webpage you want to edit. To open DevTools, use one of the techniques described in [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
 
-2. Click the **Application** tab to open the **Application** panel.  The **Manifest** pane opens:
+2. Click the **Application** icon (![Application icon in Activity Bar](images/application-storage-cookies-application-icon.png)) in the Activity Bar or select "Application" in the Quick View dropdown list to open the **Application** panel.  The **Manifest** pane opens:
 
-   ![The Manifest pane.](../media/storage-application-manifest-empty.msft.png)
+   ![The Manifest pane.](images/application-storage-cookies-application-pane.png)
 
 3. Under **Storage**, expand **Cookies**, then select an origin:
 
-   ![The Cookies pane.](../media/storage-application-storage-cookies-selected.msft.png)
-
+   ![The Cookies pane.](images/application-storage-cookies-expand-cookies-select-origin.png)
 
 <!-- ====================================================================== -->
 ## Fields
@@ -68,7 +67,7 @@ The **Cookies** table contains the following fields:
 
 *  **Partition Key**.
 
-*  **Priority**.  Contains `low`, `medium` (default), or `high` if the cookie is using the deprecated [cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) attribute.
+*  **Priority**.  Contains `low`, `medium` (default), or `high` if the cookie is using the deprecated [Cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) attribute.
 
 
 <!-- ====================================================================== -->
@@ -76,17 +75,17 @@ The **Cookies** table contains the following fields:
 
 To filter cookies by **Name** or **Value**, use the **Filter** text box:
 
-![Filtering out any cookies that don't contain the text ID.](../media/storage-application-storage-cookies-filter-id.msft.png)
+![Filtering out any cookies that don't contain the text ID.](images/application-storage-cookies-filter-cookies.png)
 
-Filtering by other fields isn't supported.
-
+> [!NOTE]
+> Filtering by other fields isn't supported.
 
 <!-- ====================================================================== -->
 ## Edit a cookie
 
 The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.  Double-click a field to edit it:
 
-![Setting the name of a cookie to 'DEVTOOLS!'](../media/storage-application-storage-cookies-rename.msft.png)
+![Setting the name of a cookie to 'DEVTOOLS!'](images/application-storage-cookies-rename-cookie.png)
 
 
 <!-- ====================================================================== -->
@@ -94,11 +93,11 @@ The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields 
 
 To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected](images/application-storage-cookies-delete-cookie-icon.png)):
 
-![Deleting a specific cookie.](../media/storage-application-storage-cookies-delete-selected.msft.png)
+![Deleting a specific cookie.](/images/application-storage-cookies-delete-selected-cookie.png)
 
 To delete all cookies, click **Clear All** (![Clear All.](images/application-storage-cookies-clear-all-cookies-icon.png)):
 
-![Clearing all cookies.](../media/storage-application-storage-cookies-clear-all.msft.png)
+![Clearing all cookies.](/images/application-storage-cookies-clear-all-cookies.png)
 
 
 
