@@ -16,7 +16,7 @@ If you are a Microsoft Employee, follow the internal guidance.
 
 To suggest a change to the docs:
 
-1.  If you are viewing the [docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge) page, click the **Edit** button in the upper right of the page.  You are redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/edge-developer).  If you are already in the GitHub repo, navigate to the source file that you are changing.
+1.  If you are viewing the [Microsoft Edge documentation](https://docs.microsoft.com/microsoft-edge) page, click the **Edit** button in the upper right of the page.  You are redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/edge-developer).  If you are already in the GitHub repo, navigate to the source file that you are changing.
 
 1.  If you don't already have a GitHub account, click **Sign Up** in the upper-right corner and create a new account.
 
