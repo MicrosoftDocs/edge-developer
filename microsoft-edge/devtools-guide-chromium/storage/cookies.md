@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/08/2022
+ms.date: 09/08/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -77,8 +77,7 @@ To filter cookies by **Name** or **Value**, use the **Filter** text box:
 
 ![Filtering out any cookies that don't contain the text ID.](images/application-storage-cookies-filter-cookies.png)
 
-> [!NOTE]
-> Filtering by other fields isn't supported.
+**Note:** Filtering by other fields isn't supported.
 
 <!-- ====================================================================== -->
 ## Edit a cookie
@@ -86,7 +85,6 @@ To filter cookies by **Name** or **Value**, use the **Filter** text box:
 The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.  Double-click a field to edit it:
 
 ![Setting the name of a cookie to 'DEVTOOLS!'](images/application-storage-cookies-rename-cookie.png)
-
 
 <!-- ====================================================================== -->
 ## Delete cookies
