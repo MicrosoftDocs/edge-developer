@@ -77,7 +77,8 @@ The following items are now stable:
 
 #### Bug fixes
 
-*   Fix a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
+*   Fixed a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
+
 
 *   Fixed a bug that produced simultaneous WebView creation failure. This change is Runtime-specific. ([Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703))  
 
