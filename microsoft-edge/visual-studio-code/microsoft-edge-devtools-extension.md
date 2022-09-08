@@ -80,15 +80,11 @@ Using Quick Fixes, you can customize the error reporting of the extension to the
 
 When you hover over an element that has an issue, you get a lightbulb icon indicating that there are Quick Fixes available:
 
-![An anchor element with a protocol specific href attribute highliighted as a problem with a lightbulb icon above it](microsoft-edge-devtools-extension-images/light-bulb.png)
+![An anchor element with a protocol-specific href attribute highlighted as a problem, by a wavy underline and lightbulb icon above it](microsoft-edge-devtools-extension-images/light-bulb.png)
 
-Clicking the lightbulb icon shows a list of options. For example, if you added a link with a protocol relative URL, you get the following list of three Quick Fixes:
+Clicking the lightbulb icon shows a list of options. For example, if you added a link with a protocol relative URL, you get the following list of Quick Fixes:
 
-* **Fix "no-protocol-relative-urls" issue**
-* **Disable "no-protocol-relative-urls" hints in this project**
-* **Edit .hintrc for this project**
-
-![The Quick Fix panel opened next to the anchor element with the error offering the different options explained in the following text](microsoft-edge-devtools-extension-images/quick-fix-options.png)
+![The Quick Fix panel opened next to the anchor element with the error, offering several Quick Fix options](microsoft-edge-devtools-extension-images/quick-fix-options.png)
 
 * **Fix "no-protocol-relative-urls" issue** - Selecting this Quick Fix adds the missing URL prefix `https://` to the link and removes the underline.
 
