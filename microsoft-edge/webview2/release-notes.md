@@ -67,7 +67,11 @@ The following items are now stable:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2CompositionController3 Class](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true)
+* [ICoreWebView2CompositionController3.DragEnter method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragenter)
+* [ICoreWebView2CompositionController3.DragLeave method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragleave)
+* [ICoreWebView2CompositionController3.DragOver method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragover)
+* [ICoreWebView2CompositionController3.Drop method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#drop)
+
 
 ---
 
