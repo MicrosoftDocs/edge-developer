@@ -57,7 +57,8 @@ The following items are now stable:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2CompositionController Class](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller?view=webview2-dotnet-1.0.1369-prerelease&preserve-view=true)
+* [CoreWebView2CompositionController.DragLeave Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.dragleave?view=webview2-dotnet-1.0.1369-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2compositioncontroller-dragleave)
+
 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
