@@ -93,11 +93,11 @@ The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields 
 
 To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected](images/application-storage-cookies-delete-cookie-icon.png)):
 
-![Deleting a specific cookie.](/images/application-storage-cookies-delete-selected-cookie.png)
+![Deleting a specific cookie.](images/application-storage-cookies-delete-selected-cookie.png)
 
 To delete all cookies, click **Clear All** (![Clear All.](images/application-storage-cookies-clear-all-cookies-icon.png)):
 
-![Clearing all cookies.](/images/application-storage-cookies-clear-all-cookies.png)
+![Clearing all cookies.](images/application-storage-cookies-clear-all-cookies.png)
 
 
 
