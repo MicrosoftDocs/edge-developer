@@ -46,9 +46,15 @@ This video covers how to dock or undock DevTools, open new tools, and close thos
 
 September 1, 2022
 
+<!-- from YouTube: -->
+
 Understand how the Microsoft Edge DevTools UI is organized. If you are confused about what tools are available, and what the main parts of the DevTools interface do, this video will help get more comfortable.
 
 In this video, we go over the UI structure, with its main toolbar and panel and its drawer area. We also go over how to find, open, and close tools, restore the default settings, and go over the list of available tools.
+
+<!-- from Welcome: -->
+
+Check out this video to learn about the main parts of the DevTools UI, how to customize it to meet your needs, learn about the different tools that are available, and where to go for help.
 
 
 #### See also
