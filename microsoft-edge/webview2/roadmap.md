@@ -18,7 +18,6 @@ If you have concerns or questions about the Roadmap, provide your feedback in th
 
 The WebView2 team is planning the following major efforts for future updates:
 
-* UWP Preview
 * MacOS Preview
 * Xbox Preview
 * HoloLens Preview
@@ -50,6 +49,10 @@ The Win32 C/C++ SDK has reached GA.
 
 The .NET SDK has reached GA.
 
+### Windows UI Library 2
+
+You can access WebView2 controls in your UWP applications using [Windows UI Library 2 (WinUI 2)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/get-started/winui2). This has reached GA.
+
 ### Windows UI Library 3
 
-You can access WebView2 controls in your applications using [Windows UI Library 3 (WinUI 3)](/uwp/toolkits/winui3/index) with the Windows App SDK.  This has reached GA. For more information, see [Windows App SDK roadmap](https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md).
+You can access WebView2 controls in your applications using [Windows UI Library 3 (WinUI 3)](/uwp/toolkits/winui3/index) with the Windows App SDK.  This has reached GA.
