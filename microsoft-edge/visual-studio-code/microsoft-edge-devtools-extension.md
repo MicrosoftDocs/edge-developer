@@ -86,9 +86,11 @@ Clicking the lightbulb icon shows a list of options. For example, if you added a
 
 ![The Quick Fix panel opened next to the anchor element with the error, offering several Quick Fix options](microsoft-edge-devtools-extension-images/quick-fix-options.png)
 
+You can select multiple Quick Fixes, one at a time.  Selecting these particular Quick Fixes does the following, to address an issue:
+
 * **Fix "no-protocol-relative-urls" issue** - Selecting this Quick Fix adds the missing URL prefix `https://` to the link and removes the underline.
 
-* **Disable "no-protocol-relative-urls" hints in this project** - Selecting this Quick Fix creates a `.hintrc` file in the project folder, telling the extension never to report this issue again.
+* **Disable "no-protocol-relative-urls" hints in this project** - Selecting this Quick Fix creates a `.hintrc` file in the project folder, and tells the extension never to report this issue again.
 
 * **Edit .hintrc for this project** - Selecting this Quick Fix allows you to make edits to the `.hintrc` configuration file.
 
