@@ -62,7 +62,8 @@ The following items are now stable:
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2CompositionController Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true)
+* [CoreWebView2CompositionController.DragLeave Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true#dragleave)
+
 
 
 ##### [Win32/C++](#tab/win32cpp)
