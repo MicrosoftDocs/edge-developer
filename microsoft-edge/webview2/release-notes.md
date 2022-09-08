@@ -36,7 +36,8 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 <!-- ====================================================================== -->
 ## 1.0.1369-prerelease
 
-Release Date: Sep 4, 2022
+Release Date: September 4, 2022
+
 
 [NuGet package for WebView2 SDK 1.0.1369-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1369-prerelease)
 
