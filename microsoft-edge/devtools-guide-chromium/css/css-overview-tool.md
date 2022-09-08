@@ -1,5 +1,5 @@
 ---
-title: Identify potential CSS improvements
+title: Optimize CSS styles with the CSS Overview tool
 description: The CSS Overview tool in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 09/07/2022
 ---
-# Identify potential CSS improvements
+# Optimize CSS styles with the CSS Overview tool
 
 The **CSS Overview** tool captures an overview of the CSS code used on a webpage and displays a report about the colors, fonts, and media-queries used. The tool also identifies potential color contrast issues and unused CSS declarations issues.
 
