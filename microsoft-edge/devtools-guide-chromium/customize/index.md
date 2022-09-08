@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 09/08/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -23,6 +23,37 @@ ms.date: 05/04/2021
 # Customize DevTools
 
 This page lists the ways to customize Microsoft Edge DevTools.
+
+
+<!-- ====================================================================== -->
+## Videos about Customizing the DevTools UI
+
+
+#### Customizing Microsoft Edge Developer Tools and quick feature access
+
+[Customizing Microsoft Edge Developer Tools and quick feature access](https://www.youtube.com/watch?v=ypRzEBYNptQ)
+
+May 5, 2022
+
+Learn how to customize DevTools to fit your needs.
+
+This video covers how to dock or undock DevTools, open new tools, and close those you don't need. It describes how to move tools in the bottom drawer and customize the text size and theme. The video also explains how you can use the Command Menu keyboard shortcuts to quickly customize DevTools.
+
+
+#### Understand the DevTools user interface
+
+[Understand the DevTools user interface](https://www.youtube.com/watch?v=ayemJLeE55c)
+
+September 1, 2022
+
+Understand how the Microsoft Edge DevTools UI is organized. If you are confused about what tools are available, and what the main parts of the DevTools interface do, this video will help get more comfortable.
+
+In this video, we go over the UI structure, with its main toolbar and panel and its drawer area. We also go over how to find, open, and close tools, restore the default settings, and go over the list of available tools.
+
+
+#### See also
+
+* [Videos about web development with Microsoft Edge](../../dev-videos/index.md)
 
 
 <!-- ====================================================================== -->
