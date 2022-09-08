@@ -63,9 +63,9 @@ The **Cookies** table contains the following fields:
 
 *  **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite](https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies) attribute.
 
-*  **SameParty**. 
+*  **SameParty**. This attribute provides web developers a means to annotate cookies that are allowed to be set or sent in same-party, cross-site contexts. 
 
-*  **Partition Key**.
+*  **Partition Key**. Partition key is the property or path within documents that can be used to distribute data. Data having the same partition key value are logically grouped together and stored in the same physical partition.
 
 *  **Priority**.  Contains `low`, `medium` (default), or `high` if the cookie is using the deprecated [Cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) attribute.
 
