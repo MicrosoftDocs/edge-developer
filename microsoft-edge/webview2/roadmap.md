@@ -51,7 +51,7 @@ The .NET SDK has reached GA.
 
 ### Windows UI Library 2
 
-You can access WebView2 controls in your UWP applications using [Windows UI Library 2 (WinUI 2)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/get-started/winui2). This has reached GA.
+You can access WebView2 controls in your UWP applications using [Windows UI Library 2 (WinUI 2)](https://docs.microsoft.com/microsoft-edge/webview2/get-started/winui2). This has reached GA.
 
 ### Windows UI Library 3
 
