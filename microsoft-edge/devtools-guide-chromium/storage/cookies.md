@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 06/08/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,13 +30,13 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 <!-- ====================================================================== -->
 ## Open the Cookies pane
 
-1. [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
+1. Open DevTools on the webpage you want to edit. To open DevTools, use one of the techniques described in [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
 
-1. Click the **Application** tab to open the **Application** panel.  The **Manifest** pane opens:
+2. Click the **Application** tab to open the **Application** panel.  The **Manifest** pane opens:
 
    ![The Manifest pane.](../media/storage-application-manifest-empty.msft.png)
 
-1. Under **Storage**, expand **Cookies**, then select an origin:
+3. Under **Storage**, expand **Cookies**, then select an origin:
 
    ![The Cookies pane.](../media/storage-application-storage-cookies-selected.msft.png)
 
@@ -58,11 +58,15 @@ The **Cookies** table contains the following fields:
 
 *  **Size**.  The size, in bytes, of the cookie.
 
-*  **HTTP**.  If true, this field indicates that the cookie should only be used over HTTP, and JavaScript modification isn't allowed.  See [HttpOnly cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
+*  **HttpOnly**.  If true, this field indicates that the cookie should only be used over HTTP, and JavaScript modification isn't allowed.  See [HttpOnly cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
 
 *  **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
 
 *  **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite](https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies) attribute.
+
+*  **SameParty**. 
+
+*  **Partition Key**.
 
 *  **Priority**.  Contains `low`, `medium` (default), or `high` if the cookie is using the deprecated [cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) attribute.
 
@@ -88,13 +92,14 @@ The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields 
 <!-- ====================================================================== -->
 ## Delete cookies
 
-To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)):
+To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected](images/application-storage-cookies-delete-cookie-icon.png)):
 
 ![Deleting a specific cookie.](../media/storage-application-storage-cookies-delete-selected.msft.png)
 
-To delete all cookies, click **Clear All** (![Clear All.](../media/clear-icon.msft.png)):
+To delete all cookies, click **Clear All** (![Clear All.](images/application-storage-cookies-clear-all-cookies-icon.png)):
 
 ![Clearing all cookies.](../media/storage-application-storage-cookies-clear-all.msft.png)
+
 
 
 <!-- ====================================================================== -->
