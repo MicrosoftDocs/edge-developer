@@ -84,7 +84,7 @@ When you hover over an element that has an issue, you get a lightbulb icon indic
 
 Clicking the lightbulb icon shows a list of options. For example, if you added a link with a protocol-relative URL, you get the following list of Quick Fixes to choose from:
 
-![The Quick Fix panel opened next to the anchor element with the error, offering several Quick Fix options](microsoft-edge-devtools-extension-images/quick-fix-options.png)
+![The Quick Fix panel opened next to the anchor element with the error, offering several Quick Fix options](microsoft-edge-devtools-extension-images/quick-fix-options-light.png)
 
 You can select whichever Quick Fix you want to use to resolve the issue or stop reporting it as an issue:
 
