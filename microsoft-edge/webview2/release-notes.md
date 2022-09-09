@@ -102,7 +102,7 @@ The following items are now stable:
 
 *   Fixed print settings paper size to support dimensions as small as 0.01 inches (Runtime).  
 
-*   Fixed a bug that WebView2 print dialog may reset scale to fit to printable everytime. ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
+* Fixed a bug where the WebView2 print dialog reset the **Scale** setting to **Fit to printable area** every time. ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
 
 *   Fixed a bug in the **wv2winrt** tool where a WinMD file wasn't referenced in some projects.
 
