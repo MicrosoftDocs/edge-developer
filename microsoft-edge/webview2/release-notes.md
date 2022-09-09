@@ -44,7 +44,9 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ### General
 
-* Fixed a bug in the wv2winrt tool where a WinMD file wasn't referenced in some projects.
+#### Bug fixes
+
+
 
 
 <!-- ====================================================================== -->
@@ -57,6 +59,8 @@ Release Date: September 6, 2022
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 106.0.1369.0 or higher. 
 
 ### General
+
+* Fixed a bug that produced simultaneous WebView creation failure (Runtime) [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
 
 #### Promotions
 
@@ -94,12 +98,13 @@ The following items are now stable:
 
 *   Fixed a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
 
-
-*   Fixed a bug that produced simultaneous WebView creation failure. This change is Runtime-specific. ([Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703))  
+*   Fixed a bug that produced simultaneous WebView creation failure (Runtime) [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
 
 *   Fixed print settings paper size to support dimensions as small as 0.01 inches (Runtime).  
 
-*   Fixed a bug that WebView2 print dialog may reset scale to fit to printable everytime. ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))  
+*   Fixed a bug that WebView2 print dialog may reset scale to fit to printable everytime. ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
+
+*   Fixed a bug in the **wv2winrt** tool where a WinMD file wasn't referenced in some projects.
 
 <!-- ====================================================================== -->
 
@@ -204,7 +209,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 *   Fixed an issue in service worker caching if the path was too long. ([Issue #1900](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1900))  
 
-*   Improved performance for wv2winrt `IMap` and `IMapView` projections into JavaScript.
+*   Improved performance for **wv2winrt** `IMap` and `IMapView` projections into JavaScript.
 
 *   Adding support for HWND_MESSAGE to be used as WebView2 parent window to support headless scenarios.  ([Issue #202](https://github.com/MicrosoftEdge/WebView2Feedback/issues/202))
 
