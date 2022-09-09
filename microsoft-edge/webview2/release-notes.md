@@ -44,7 +44,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ### General
 
-* Fixed a bug in the wv2winrt tool where a WinMD file wasn't referenced in some projects.
+* Fixed a bug in the **wv2winrt** tool where a WinMD file wasn't referenced in some projects.
+
 
 
 <!-- ====================================================================== -->
