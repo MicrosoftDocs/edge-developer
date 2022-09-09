@@ -32,13 +32,13 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 
 1. Open DevTools on the webpage you want to edit. To open DevTools, use one of the techniques described in [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
 
-2. Click the **Application** icon (![Application icon in Activity Bar](images/application-storage-cookies-application-icon.png)) in the Activity Bar or select "Application" in the Quick View dropdown list to open the **Application** panel.  The **Manifest** pane opens:
+2. Click the **Application** tab to open the **Application** panel. The **Manifest** pane opens:
 
-   ![The Manifest pane.](images/application-storage-cookies-application-pane.png)
+   ![The Manifest pane.](cookies-images/pick-application-no-manifest.png)
 
 3. Under **Storage**, expand **Cookies**, then select an origin:
 
-   ![The Cookies pane.](images/application-storage-cookies-expand-cookies-select-origin.png)
+   ![The Cookies pane.](cookies-images/open-cookies-select-source.png)
 
 <!-- ====================================================================== -->
 ## Fields
@@ -75,7 +75,7 @@ The **Cookies** table contains the following fields:
 
 To filter cookies by **Name** or **Value**, use the **Filter** text box:
 
-![Filtering out any cookies that don't contain the text ID.](images/application-storage-cookies-filter-cookies.png)
+![Filtering out any cookies that don't contain the text ID.](cookies-images/filter-cookies-name.png)
 
 **Note:** Filtering by other fields isn't supported.
 
@@ -84,18 +84,18 @@ To filter cookies by **Name** or **Value**, use the **Filter** text box:
 
 The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.  Double-click a field to edit it:
 
-![Setting the name of a cookie to 'DEVTOOLS!'](images/application-storage-cookies-rename-cookie.png)
+![Setting the name of a cookie to 'DEVTOOLS!'](cookies-images/rename-cookie.png)
 
 <!-- ====================================================================== -->
 ## Delete cookies
 
-To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected](images/application-storage-cookies-delete-cookie-icon.png)):
+To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected](cookies-images/delete-cookie-icon.png)):
 
-![Deleting a specific cookie.](images/application-storage-cookies-delete-selected-cookie.png)
+![Deleting a specific cookie.](cookies-images/delete-selected-cookie.png)
 
-To delete all cookies, click **Clear All** (![Clear All.](images/application-storage-cookies-clear-all-cookies-icon.png)):
+To delete all cookies, click **Clear All** (![Clear All.](cookies-images/clear-all-cookies-icon.png)):
 
-![Clearing all cookies.](images/application-storage-cookies-clear-all-cookies.png)
+![Clearing all cookies.](cookies-images/clear-all-cookies.png)
 
 
 
