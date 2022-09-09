@@ -378,7 +378,7 @@
 # CSS Overview tool -----------------------------------------------------------
             - name: CSS Overview tool
               items:
-                - name: Identify potential CSS improvements  # real content pending
+                - name: Optimize CSS styles with the CSS Overview tool
                   href: devtools-guide-chromium/css/css-overview-tool.md
                   displayName: CSS Overview tool
 # Detached Elements tool ------------------------------------------------------
