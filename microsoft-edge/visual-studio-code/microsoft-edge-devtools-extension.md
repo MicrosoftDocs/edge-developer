@@ -81,7 +81,7 @@ When you hover over the element with the issue, you get a lightbulb icon indicat
 
 Activating the lightbulb icon shows a list of options. For example, if you added a link with a protocol relative URL, you get:
 
-![The quick fix panel opened next to the anchor element with the error offering the different options explained in the following text](microsoft-edge-devtools-extension-images/quick-fix-options.png)
+![The quick fix panel opened next to the anchor element with the error offering the different options explained in the following text](microsoft-edge-devtools-extension-images/quick-fix-options-light.png)
 
 * Fix "no-protocol-relative-urls" issue
 * Disable "no-protocol-relative-urls" hints in this project
