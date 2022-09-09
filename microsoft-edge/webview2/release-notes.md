@@ -58,7 +58,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ### General
 
-* Fixed a bug that produced simultaneous WebView creation failure (Runtime) [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
+* Fixed a bug that produced simultaneous WebView creation failure (Runtime). [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
+
 
 #### Promotions
 
