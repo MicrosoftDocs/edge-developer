@@ -97,7 +97,8 @@ The following items are now stable:
 
 *   Fixed a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
 
-*   Fixed a bug that produced simultaneous WebView creation failure (Runtime) [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
+*   Fixed a bug that produced simultaneous WebView creation failure (Runtime). [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
+
 
 *   Fixed print settings paper size to support dimensions as small as 0.01 inches (Runtime).  
 
