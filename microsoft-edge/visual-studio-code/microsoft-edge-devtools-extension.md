@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/07/2022
+ms.date: 09/07/2022
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
 
@@ -73,23 +73,27 @@ Issues are evaluated live while you edit your code.  As you type, you get feedba
 
 ![A possible issue being explained on an output element](microsoft-edge-devtools-extension-images/live-issue-reporting.png)
 
-#### Automated fixes and issue filtering
 
-When you hover over the element with the issue, you get a lightbulb icon indicating that there are quick fixes available.
+#### Automated Quick Fixes and issue filtering
 
-![An anchor element with a protocol specific href attribute highliighted as a problem with a lightbulb icon above it](microsoft-edge-devtools-extension-images/light-bulb.png)
+Using Quick Fixes, you can customize the error reporting of the extension to the needs of the current project.
 
-Activating the lightbulb icon shows a list of options. For example, if you added a link with a protocol relative URL, you get:
+When you hover over an element that has an issue, you get a lightbulb icon indicating that there are Quick Fixes available:
 
-![The quick fix panel opened next to the anchor element with the error offering the different options explained in the following text](microsoft-edge-devtools-extension-images/quick-fix-options-light.png)
+![An anchor element with a protocol-specific href attribute highlighted as a problem, by a wavy underline and lightbulb icon above it](microsoft-edge-devtools-extension-images/light-bulb.png)
 
-* Fix "no-protocol-relative-urls" issue
-* Disable "no-protocol-relative-urls" hints in this project
-* Edit .hintrc for this project
+Clicking the lightbulb icon shows a list of options. For example, if you added a link with a protocol-relative URL, you get the following list of Quick Fixes to choose from:
 
-Chosing the first would add the missing `https://` to the link and remove the underline, the second option creates a `.hintrc` file in the project folder telling the extension never to report this issue again and the last allows you to make edits to the `.hintrc` configuration file.
+![The Quick Fix panel opened next to the anchor element with the error, offering several Quick Fix options](microsoft-edge-devtools-extension-images/quick-view-options.png)
 
-Using quick fixes you can customise the error reporting of the extension to the needs of the current project.
+You can select whichever Quick Fix you want to use to resolve the issue or stop reporting it as an issue:
+
+* **Fix "no-protocol-relative-urls" issue** - Selecting this Quick Fix adds the missing URL prefix `https://` to the link.
+
+* **Disable "no-protocol-relative-urls" hints in this project** - Selecting this Quick Fix creates a `.hintrc` file in the project folder, and tells the extension never to report this issue again.
+
+* **Edit .hintrc for this project** - Selecting this Quick Fix allows you to make edits to the `.hintrc` configuration file.
+
 
 <!-- ====================================================================== -->
 ## Modes for using Microsoft Edge DevTools in Visual Studio Code
