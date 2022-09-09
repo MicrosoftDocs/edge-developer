@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/09/2022 
+ms.date: 09/09/2022 
 ---
 # Release Notes for the WebView2 SDK
 
@@ -34,10 +34,23 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 
 <!-- ====================================================================== -->
+## 1.0.1343.22
+
+Release Date: September 6, 2022
+
+[NuGet package for WebView2 SDK 1.0.1343.22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1343.22)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 105.0.1343.22 or higher.
+
+### General
+
+* Fixed a bug in the wv2winrt tool where a WinMD file wasn't referenced in some projects.
+
+
+<!-- ====================================================================== -->
 ## 1.0.1369-prerelease
 
-Release Date: September 4, 2022
-
+Release Date: September 6, 2022
 
 [NuGet package for WebView2 SDK 1.0.1369-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1369-prerelease)
 
