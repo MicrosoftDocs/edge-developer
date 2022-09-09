@@ -42,11 +42,6 @@ Release Date: September 6, 2022
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 105.0.1343.22 or higher.
 
-### General
-
-No changes in this release.
-
-
 <!-- ====================================================================== -->
 ## 1.0.1369-prerelease
 
