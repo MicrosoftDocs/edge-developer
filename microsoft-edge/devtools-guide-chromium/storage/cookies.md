@@ -59,13 +59,13 @@ The **Cookies** table contains the following fields:
 
 *  **HttpOnly**.  If `true`, this field indicates that the cookie should only be used over HTTP, and JavaScript modification isn't allowed.  See [HttpOnly cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
 
-*  **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
+*  **Secure**.  If `true`, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
 
 *  **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite](https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies) attribute.
 
 *  **SameParty**. This attribute provides web developers a means to annotate cookies that are allowed to be set or sent in same-party, cross-site contexts. 
 
-*  **Partition Key**. Partition key is the property or path within documents that can be used to distribute data. Data having the same partition key value are logically grouped together and stored in the same physical partition.
+*  **Partition Key**. A _partition key_ is a property or path within a document that can be used to distribute data within a document yet store the data together. Multiple pieces of data that are spread throughout a document and that have the same partition key value are logically grouped together and stored in the same physical partition.
 
 *  **Priority**.  Contains `low`, `medium` (default), or `high` if the cookie is using the deprecated [Cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) attribute.
 
@@ -75,7 +75,7 @@ The **Cookies** table contains the following fields:
 
 To filter cookies by **Name** or **Value**, use the **Filter** text box:
 
-![Filtering out any cookies that don't contain the text ID.](cookies-images/filter-cookies-name.png)
+![Filtering out any cookies that don't contain the text ID](cookies-images/filter-cookies-name.png)
 
 **Note:** Filtering by other fields isn't supported.
 
