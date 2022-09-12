@@ -30,11 +30,11 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 <!-- ====================================================================== -->
 ## Open the Cookies pane
 
-1. Open DevTools on the webpage you want to edit. To open DevTools, use one of the techniques described in [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
+1. Open DevTools on the webpage you want to edit.  For example, right-click the page and then select **Inspect**, or press `F12`.  For additional ways, see [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
 
-2. Click the **Application** tab to open the **Application** panel. The **Manifest** pane opens:
+2. Click the **Application** tab to open the **Application** tool. The **Manifest** pane opens:
 
-   ![The Manifest pane.](cookies-images/pick-application-no-manifest.png)
+   ![The Manifest pane](cookies-images/pick-application-no-manifest.png)
 
 3. Under **Storage**, expand **Cookies**, then select an origin:
 
