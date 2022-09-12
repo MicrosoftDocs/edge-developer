@@ -93,9 +93,9 @@ To delete a specific cookie, click a cookie and then click **Delete Selected** (
 
 ![Deleting a specific cookie.](cookies-images/delete-selected-cookie.png)
 
-To delete all cookies, click **Clear All** (![Clear All.](cookies-images/clear-all-cookies-icon.png)):
+To delete all cookies, click **Clear all cookies** (![Clear all cookies icon](cookies-images/clear-all-cookies-icon.png)):
 
-![Clearing all cookies.](cookies-images/clear-all-cookies.png)
+![Clearing all cookies](cookies-images/clear-all-cookies.png)
 
 
 
