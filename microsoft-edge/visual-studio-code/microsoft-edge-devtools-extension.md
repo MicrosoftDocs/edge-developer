@@ -81,9 +81,7 @@ bold "Quick Fix" when focusing on the UI
 the UI label string is "Quick Fix", not "Quick Fixes"
 -->
 
-The Microsoft Edge DevTools extension for Visual Studio Code includes a **Quick Fix** feature.
-
-By using Quick Fixes, you can customize the error reporting of the extension to meet the needs of the current project.
+The Microsoft Edge DevTools extension for Visual Studio Code includes a **Quick Fix** feature.  By using Quick Fixes, you can customize the error reporting of the extension to meet the needs of the current project.
 
 When you hover over an element that has an issue, you get a lightbulb icon indicating that there are Quick Fixes available:
 
@@ -97,7 +95,7 @@ You can select whichever **Quick Fix** you want to use to resolve the issue or t
 
 * **Fix "no-protocol-relative-urls" issue** - Adds the missing URL prefix `https://` to the link.
 
-* **Disable "no-protocol-relative-urls" hints in this project** - Creates a `.hintrc` file in the project folder if the file doesn't exist yet, and tells the extension never to report this issue again.
+* **Disable "no-protocol-relative-urls" hints in this project** - Creates a `.hintrc` configuration file in the project folder, and tells the extension never to report this issue again.
 
 * **Edit .hintrc for this project** - Opens the `.hintrc` configuration file so you can edit it to customize the extension's error reporting.
 
