@@ -38,7 +38,7 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 
 3. Under **Storage**, expand **Cookies**, then select an origin:
 
-   ![The Cookies pane.](cookies-images/open-cookies-select-source.png)
+   ![The Cookies pane](cookies-images/open-cookies-select-source.png)
 
 <!-- ====================================================================== -->
 ## Fields
@@ -57,7 +57,7 @@ The **Cookies** table contains the following fields:
 
 *  **Size**.  The size, in bytes, of the cookie.
 
-*  **HttpOnly**.  If true, this field indicates that the cookie should only be used over HTTP, and JavaScript modification isn't allowed.  See [HttpOnly cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
+*  **HttpOnly**.  If `true`, this field indicates that the cookie should only be used over HTTP, and JavaScript modification isn't allowed.  See [HttpOnly cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
 
 *  **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
 
