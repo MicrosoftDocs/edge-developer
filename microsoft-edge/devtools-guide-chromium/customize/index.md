@@ -138,6 +138,10 @@ Understand how the Microsoft Edge DevTools UI is organized. If you are confused 
 
 In this video, we go over the UI structure, with its main toolbar and panel and its drawer area. We also go over how to find, open, and close tools, restore the default settings, and go over the list of available tools.
 
+<!-- additional text, from Welcome panel, which includes 'customize': -->
+
+Check out this video to learn about the main parts of the DevTools UI, how to customize it to meet your needs, learn about the different tools that are available, and where to go for help.
+
 
 #### See also
 
