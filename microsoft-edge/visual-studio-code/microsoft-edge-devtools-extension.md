@@ -76,23 +76,28 @@ Issues are evaluated live while you edit your code.  As you type, you get feedba
 
 #### Automated Quick Fixes and issue filtering
 
-Using Quick Fixes, you can customize the error reporting of the extension to the needs of the current project.
+<!--
+bold "Quick Fix" when focusing on the UI
+the UI label string is "Quick Fix", not "Quick Fixes"
+-->
+
+The Microsoft Edge DevTools extension for Visual Studio Code includes a **Quick Fix** feature.  By using Quick Fixes, you can customize the error reporting of the extension to meet the needs of the current project.
 
 When you hover over an element that has an issue, you get a lightbulb icon indicating that there are Quick Fixes available:
 
 ![An anchor element with a protocol-specific href attribute highlighted as a problem, by a wavy underline and lightbulb icon above it](microsoft-edge-devtools-extension-images/light-bulb.png)
 
-Clicking the lightbulb icon shows a list of options. For example, if you added a link with a protocol-relative URL, you get the following list of Quick Fixes to choose from:
+Clicking the lightbulb icon shows a list of options. For example, if you added a link that has a protocol-relative URL, you get the following **Quick Fix** list to choose from:
 
-![The Quick Fix panel opened next to the anchor element with the error, offering several Quick Fix options](microsoft-edge-devtools-extension-images/quick-view-options.png)
+![The Quick Fix panel opened next to the anchor element with the error, offering several Quick Fix options](microsoft-edge-devtools-extension-images/quick-fix-options.png)
 
-You can select whichever Quick Fix you want to use to resolve the issue or stop reporting it as an issue:
+You can select whichever **Quick Fix** you want to use to resolve the issue or to stop reporting it as an issue:
 
-* **Fix "no-protocol-relative-urls" issue** - Selecting this Quick Fix adds the missing URL prefix `https://` to the link.
+* **Fix "no-protocol-relative-urls" issue** - Adds the missing URL prefix `https://` to the link.
 
-* **Disable "no-protocol-relative-urls" hints in this project** - Selecting this Quick Fix creates a `.hintrc` file in the project folder, and tells the extension never to report this issue again.
+* **Disable "no-protocol-relative-urls" hints in this project** - Creates a `.hintrc` configuration file in the project folder, and tells the extension never to report this issue again.
 
-* **Edit .hintrc for this project** - Selecting this Quick Fix allows you to make edits to the `.hintrc` configuration file.
+* **Edit .hintrc for this project** - Opens the `.hintrc` configuration file so you can edit it to customize the extension's error reporting.
 
 
 <!-- ====================================================================== -->
