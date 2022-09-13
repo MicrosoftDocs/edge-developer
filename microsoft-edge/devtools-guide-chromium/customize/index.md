@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 09/08/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -111,6 +111,41 @@ To restore the default theme, placement, tools order, and any other customized s
 ## Customize keyboard shortcuts
 
 See [Customize keyboard shortcuts](../customize/shortcuts.md).
+
+
+<!-- ====================================================================== -->
+## Videos about Customizing the DevTools UI
+
+
+#### Customizing Microsoft Edge Developer Tools and quick feature access
+
+_Published on 5 May 2022._
+
+[![Thumbnail image for the DevTools customization video](./index-images/customize-devtools.png)](https://www.youtube.com/watch?v=ypRzEBYNptQ)
+
+Learn how to customize DevTools to fit your needs.
+
+This video covers how to dock or undock DevTools, open new tools, and close those you don't need. It describes how to move tools in the bottom drawer and customize the text size and theme. The video also explains how you can use the Command Menu keyboard shortcuts to quickly customize DevTools.
+
+
+#### Understand the DevTools user interface
+
+_Published on 1 September 2022._
+
+[![Thumbnail image for the Understand the DevTools UI video](./index-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
+
+Understand how the Microsoft Edge DevTools UI is organized. If you are confused about what tools are available, and what the main parts of the DevTools interface do, this video will help get more comfortable.
+
+In this video, we go over the UI structure, with its main toolbar and panel and its drawer area. We also go over how to find, open, and close tools, restore the default settings, and go over the list of available tools.
+
+<!-- additional text, from Welcome panel, which includes 'customize': -->
+
+Check out this video to learn about the main parts of the DevTools UI, how to customize it to meet your needs, learn about the different tools that are available, and where to go for help.
+
+
+#### See also
+
+* [Videos about web development with Microsoft Edge](../../dev-videos/index.md)
 
 
 <!-- ====================================================================== -->
