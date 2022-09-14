@@ -72,4 +72,4 @@ When you choose to debug your project in Visual Studio Code it will automaticall
 ## See also
 
 * [Launch configurations](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) in the _Debugging_ article for Visual Studio Code.
-* [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

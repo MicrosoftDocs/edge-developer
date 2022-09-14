@@ -17,4 +17,4 @@ One of the features of the **Elements** tool is that it displays the source file
 <!-- ====================================================================== -->
 ## See also
 
-*  [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

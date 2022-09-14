@@ -35,4 +35,4 @@ If you launch the extension from the Run and Debug workflow, the [Debug Console 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

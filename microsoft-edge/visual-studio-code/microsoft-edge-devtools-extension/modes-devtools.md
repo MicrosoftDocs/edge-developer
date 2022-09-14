@@ -21,4 +21,4 @@ You can use this extension in one of three modes:
 <!-- ====================================================================== -->
 ## See also
 
-*  [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

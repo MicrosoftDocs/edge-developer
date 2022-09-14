@@ -60,4 +60,4 @@ You can select whichever **Quick Fix** you want to use to resolve the issue or t
 <!-- ====================================================================== -->
 ## See also
 
-*  [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

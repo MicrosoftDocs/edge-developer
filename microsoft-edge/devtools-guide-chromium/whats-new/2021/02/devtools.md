@@ -144,7 +144,7 @@ For the history of this feature in the Chromium open-source project, see Issues 
 
 See also:
 * [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
-* [Syncing live changes from the Styles tool by using CSS Mirror Editing](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing) in _Microsoft Edge DevTools extension for Visual Studio Code_.<!-- eg "flex-direction" is only mentioned in this extension article -->
+* [Syncing live changes from the Styles tool by using CSS Mirror Editing](../../../../visual-studio-code/microsoft-edge-devtools-extension/sync-live-changes-styles-tool-css-mirror-editing.md)<!-- eg "flex-direction" is only mentioned in this extension article -->
 <!-- todo: copy section content to regular docs -->
 
 

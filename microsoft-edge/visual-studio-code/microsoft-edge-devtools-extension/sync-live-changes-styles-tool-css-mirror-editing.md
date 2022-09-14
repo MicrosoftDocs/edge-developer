@@ -53,4 +53,4 @@ CSS Mirroring also supports abstractions like Sass or CSS-in-JS when you have se
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

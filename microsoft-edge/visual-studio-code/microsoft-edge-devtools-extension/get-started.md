@@ -72,5 +72,5 @@ tbd
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md)
-* [Source for Demo To Do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do), a basic To Do app.
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Source for Demo To Do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)

@@ -33,4 +33,4 @@ Some settings have a note that reads **(reload required after changing)**.  For 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

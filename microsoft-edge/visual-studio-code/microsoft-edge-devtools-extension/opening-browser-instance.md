@@ -37,7 +37,7 @@ As another way to open a browser instance:
 <!-- ====================================================================== -->
 ## Opening the browser as part of a debugging session
 
-Another way to open a browser instance is to open the browser as part of a debugging session.  See [Use the extension with the Visual Studio Code debugging workflow](#use-the-extension-with-the-visual-studio-code-debugging-workflow) below.
+Another way to open a browser instance is to open the browser as part of a debugging session.  See [Use the extension with the Visual Studio Code debugging workflow](./extension-debugging-workflow.md).
 
 The extension opens a new browser as an embedded browser in Visual Studio Code. This **Devtools: Browser preview** tab can be moved anywhere within the editor. You can use this tab side by side with your source code, or split the panes and have the browser preview below your code:
 
@@ -55,4 +55,4 @@ If you want to have an external browser window, you can change the default setti
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
