@@ -32,6 +32,10 @@
 
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
+            - name: Microsoft Edge 105
+              href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
+              displayName: what's new, announcements, release notes
+
             - name: Microsoft Edge 104
               href: devtools-guide-chromium/whats-new/2022/08/devtools-104.md
               displayName: what's new, announcements, release notes
@@ -161,7 +165,7 @@
               items:
                 - name: Emulate mobile devices (Device Emulation)  # orig: Simulate mobile devices with Device Mode
                   href: devtools-guide-chromium/device-mode/index.md
-                  displayName: Device Emulation, Device Emulator, Device Mode  # also Network conditions tool (1x), Settings > Devices (1x)
+                  displayName: device emulator, device mode, device simulation, device simulator  # also Network conditions tool (1x), Settings > Devices (1x)
 
                 - name: Emulate dual-screen and foldable devices  # added article
                   href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
@@ -307,7 +311,7 @@
                   href: devtools-guide-chromium/inspect-styles/animations.md
                   displayName: Animations tool
 # Application tool ------------------------------------------------------------
-            - name: Application tool, for storage
+            - name: Application tool, for storage and PWAs
               items:
                 - name: Application tool, to manage storage
                   href: devtools-guide-chromium/storage/application-tool.md
@@ -345,6 +349,10 @@
                   href: devtools-guide-chromium/progressive-web-apps/index.md
                   displayName: Application tool
 
+                - name: Test Progressive Web App (PWA) protocol handling
+                  href: devtools-guide-chromium/progressive-web-apps/protocol-handlers.md
+                  displayName: Application tool
+                  
                 - name: Debug background services
                   href: devtools-guide-chromium/javascript/background-services.md
                   displayName: Application tool
@@ -370,7 +378,7 @@
 # CSS Overview tool -----------------------------------------------------------
             - name: CSS Overview tool
               items:
-                - name: Identify potential CSS improvements  # real content pending
+                - name: Optimize CSS styles with the CSS Overview tool
                   href: devtools-guide-chromium/css/css-overview-tool.md
                   displayName: CSS Overview tool
 # Detached Elements tool ------------------------------------------------------
@@ -1339,6 +1347,11 @@
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
           displayName: 
+
+        - name: Operating System Regional Data Display
+          href: web-platform/os-regional-settings.md
+          displayName: globalization, language, region, limited, intl, date, time, format
+          
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
