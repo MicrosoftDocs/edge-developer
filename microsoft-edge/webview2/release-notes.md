@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/09/2022 
+ms.date: 09/09/2022 
 ---
 # Release Notes for the WebView2 SDK
 
@@ -34,6 +34,72 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 
 <!-- ====================================================================== -->
+## 1.0.1343.22
+
+Release Date: September 6, 2022
+
+[NuGet package for WebView2 SDK 1.0.1343.22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1343.22)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 105.0.1343.22 or higher.
+
+<!-- ====================================================================== -->
+## 1.0.1369-prerelease
+
+Release Date: September 6, 2022
+
+[NuGet package for WebView2 SDK 1.0.1369-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1369-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 106.0.1369.0 or higher. 
+
+### General
+
+#### Promotions
+
+The following items are now stable:
+
+*  The drag and drop API: 
+   * `DragEnter`
+   * `DragLeave`
+   * `DragOver`
+   * `Drop`
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2CompositionController.DragLeave Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.dragleave?view=webview2-dotnet-1.0.1369-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2compositioncontroller-dragleave)
+
+
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2CompositionController.DragLeave Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true#dragleave)
+
+
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionController3.DragEnter method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragenter)
+* [ICoreWebView2CompositionController3.DragLeave method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragleave)
+* [ICoreWebView2CompositionController3.DragOver method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragover)
+* [ICoreWebView2CompositionController3.Drop method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#drop)
+
+
+---
+
+#### Bug fixes
+
+*   Fixed a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
+
+*   Fixed a bug that produced simultaneous WebView creation failure (Runtime). [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
+
+
+*   Fixed print settings paper size to support dimensions as small as 0.01 inches (Runtime).  
+
+* Fixed a bug where the WebView2 print dialog reset the **Scale** setting to **Fit to printable area** every time. ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
+
+*   Fixed a bug in the **wv2winrt** tool where a WinMD file wasn't referenced in some projects.
+
+<!-- ====================================================================== -->
+
 ## 1.0.1293.44
 
 Release Date: August 8, 2022
@@ -135,7 +201,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 *   Fixed an issue in service worker caching if the path was too long. ([Issue #1900](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1900))  
 
-*   Improved performance for wv2winrt `IMap` and `IMapView` projections into JavaScript.
+*   Improved performance for **wv2winrt** `IMap` and `IMapView` projections into JavaScript.
 
 *   Adding support for HWND_MESSAGE to be used as WebView2 parent window to support headless scenarios.  ([Issue #202](https://github.com/MicrosoftEdge/WebView2Feedback/issues/202))
 

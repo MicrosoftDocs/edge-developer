@@ -30,6 +30,28 @@ To add a new video:
 
 
 <!-- ====================================================================== -->
+## DevTools - What's new in DevTools 105
+
+_Published on 6 September 2022._
+
+[![Thumbnail image for the DevTools What's New in 105 video](./images/devtools-whatsnew-105.png)](https://www.youtube.com/watch?v=h0XJH_iLoUk)
+
+Learn more about our latest announcements from the Microsoft Edge DevTools team at [What's New in DevTools 105](../devtools-guide-chromium/whats-new/2022/09/devtools-105.md).
+
+
+<!-- ====================================================================== -->
+## DevTools - Understand the DevTools user interface
+
+_Published on 1 September 2022._
+
+[![Thumbnail image for the Understand the DevTools UI video](./images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
+
+Understand how the Microsoft Edge DevTools UI is organized. If you are confused about what tools are available, and what the main parts of the DevTools interface do, this video will help get more comfortable.
+
+In this video, we go over the UI structure, with its main toolbar and panel and its drawer area. We also go over how to find, open, and close tools, restore the default settings, and go over the list of available tools.
+
+
+<!-- ====================================================================== -->
 ## DevTools - What's new in DevTools 104
 
 _Published on 5 August 2022._
