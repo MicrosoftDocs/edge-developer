@@ -7,13 +7,11 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 9/13/2022
 ---
-# Heap Snapshot Schema
+# Understanding heapsnapshot files
 
 _In this document we will explain the schema of a `*.heapsnapshot` file which you can take and export using DevTools. This is helpful in case you want to create your own analysis tools or visualizations._
 
 The DevTools Memory tool allows you to explore all the objects allocated in memory by taking a heap snapshot. This information is useful for performance investigations because you can find out what objects are consuming the most memory. Read more on [Heap Snapshots](heap-snapshots.md). 
-
-In DevTools the results are shown in the form of a table, in the top there is a list of aggerates that summarizes all the objects by type or class name and in the bottom there is a list of retainers which gets updated every time you elect a single object from the list of aggregates. 
 
 Memory in v8 is a graph made of nodes and edges. The purpose of the `*.heapsnapshot` file is to represent that graph efficiently and to facilitate its transfer in chunks between the browser process and DevTools, so the contents of this file are a flattened representation of those node-edge relations as simple arrays of numbers and strings. The file has a `*.heapsnapshot` extension but its contents are actually just a `JSON`. 
 
@@ -31,24 +29,21 @@ Memory in v8 is a graph made of nodes and edges. The purpose of the `*.heapsnaps
 4. Auto format its contents
 
 
-All snapshots are dynamically generated based on the content of the web site or application, so the contents of the file will change. The code that generates this file lives here: [HeapSnapshotGenerator](https://chromium.googlesource.com/external/v8/+/master/src/heap-snapshot-generator.h)
+All snapshots are dynamically generated based on the content of the web site or application, so the metadata contents will also be different between files. The code that generates this file lives here: [HeapSnapshotGenerator](https://chromium.googlesource.com/external/v8/+/master/src/heap-snapshot-generator.h)
 
-As the platform evolves there are bound to be changes in the format of this file, we always try to keep our documentation up to date but if you ever encounter a discrepancy this is your best bet to start your investigation. 
+Note that the format of this file may change in the future as v8 and DevTools evolves, we always try to keep our documentation up to date but if you ever encounter a discrepancy please send us feedback on our GitHub repository. 
 
 This file has two main parts: **metadata** and **payload**. The metadata contains all the information you need to parse the different arrays of information in the payload and re-create the graph.
 
 ### Base hierarchy of the file
 ```JSON
 {
-    # This section contains all the metadata
     "snapshot": {     
         "meta": {},
         "node_count": 123,
         "edge_count": 456,
         "trace_function_count": 0
     },
-
-    # These arrays have all the payload
     "nodes": [],
     "edges": [],
     "trace_function_infos": [],
@@ -181,7 +176,7 @@ Similar to the **Nodes** array, edges contains all the individual elements neede
 
 Edges are stored sequentially and to read them properly you need to parse the nodes first, because each node knows how many edges it has. 
 
-To re-construct an edge we need 3 elements of information, and we can use `metadata.edge_types` to understand what each element is. 
+To re-construct an edge we need 3 elements of information: the edge type, its name or index, and the node it's connected to. We can use `metadata.edge_types` to understand what each element is. 
 
 For example, if you read the first node and its property edge_count is set to 4, that means that the first 4 triplets of the edges array are the elements needed to from this node to some other nodes, etc.
 
@@ -197,7 +192,7 @@ to_node | Index in the array of the node that it points to
 :- | :- 
 Internal | Edges that don't correspond to JS-visible names but are still important. As an example, Function instances have a "context" representing the state of variables that were in scope where the function was defined. There is no way for JS code to directly read the "context" of a function, but it's still a very important link when trying to understand retainers.
 Weak | Weak edges don't keep the target alive, and thus are omitted from the Retainers view. Any object with only weak edges pointing to it can be discarded by the GC.
-Hidden | Just like Internal, except these edges don't have nice names because nobody bothered to write special-case code for them.  They're just numbered in increasing order.
+Hidden | Just like Internal, except these edges don't have unique names and instead are numbered in increasing order.
 Shortcut | An easier-to-read representation of some other path. This type is used very little. An example is if you use Function.prototype.bind to create a bound function with some bound arguments, V8 creates a JSBoundFunction, which points to a FixedArray (an internal type), which points to each bound argument. When producing a snapshot, V8 adds a shortcut edge from the bound function directly to each bound argument, bypassing the FixedArray.
 Element | Object properties where the key is a number.
 
