@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 09/09/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,16 +30,15 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 <!-- ====================================================================== -->
 ## Open the Cookies pane
 
-1. [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
+1. Open DevTools on the webpage you want to edit.  For example, right-click the page and then select **Inspect**, or press `F12`.  For additional ways, see [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
 
-1. Click the **Application** tab to open the **Application** panel.  The **Manifest** pane opens:
+2. Click the **Application** tab to open the **Application** tool. The **Manifest** pane opens:
 
-   ![The Manifest pane.](../media/storage-application-manifest-empty.msft.png)
+   ![The Manifest pane](cookies-images/pick-application-no-manifest.png)
 
-1. Under **Storage**, expand **Cookies**, then select an origin:
+3. Under **Storage**, expand **Cookies**, then select an origin:
 
-   ![The Cookies pane.](../media/storage-application-storage-cookies-selected.msft.png)
-
+   ![The Cookies pane](cookies-images/open-cookies-select-source.png)
 
 <!-- ====================================================================== -->
 ## Fields
@@ -58,13 +57,17 @@ The **Cookies** table contains the following fields:
 
 *  **Size**.  The size, in bytes, of the cookie.
 
-*  **HTTP**.  If true, this field indicates that the cookie should only be used over HTTP, and JavaScript modification isn't allowed.  See [HttpOnly cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
+*  **HttpOnly**.  If `true`, this field indicates that the cookie should only be used over HTTP, and JavaScript modification isn't allowed.  See [HttpOnly cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
 
-*  **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
+*  **Secure**.  If `true`, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies).
 
 *  **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite](https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies) attribute.
 
-*  **Priority**.  Contains `low`, `medium` (default), or `high` if the cookie is using the deprecated [cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) attribute.
+*  **SameParty**. This attribute provides web developers a means to annotate cookies that are allowed to be set or sent in same-party, cross-site contexts. 
+
+*  **Partition Key**. A _partition key_ is a property or path within a document that can be used to distribute data within a document yet store the data together. Multiple pieces of data that are spread throughout a document and that have the same partition key value are logically grouped together and stored in the same physical partition.
+
+*  **Priority**.  Contains `low`, `medium` (default), or `high` if the cookie is using the deprecated [Cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) attribute.
 
 
 <!-- ====================================================================== -->
@@ -72,29 +75,28 @@ The **Cookies** table contains the following fields:
 
 To filter cookies by **Name** or **Value**, use the **Filter** text box:
 
-![Filtering out any cookies that don't contain the text ID.](../media/storage-application-storage-cookies-filter-id.msft.png)
+![Filtering out any cookies that don't contain the text ID](cookies-images/filter-cookies-name.png)
 
-Filtering by other fields isn't supported.
-
+**Note:** Filtering by other fields isn't supported.
 
 <!-- ====================================================================== -->
 ## Edit a cookie
 
 The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.  Double-click a field to edit it:
 
-![Setting the name of a cookie to 'DEVTOOLS!'](../media/storage-application-storage-cookies-rename.msft.png)
-
+![Setting the name of a cookie to 'DEVTOOLS!'](cookies-images/rename-cookie.png)
 
 <!-- ====================================================================== -->
 ## Delete cookies
 
-To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)):
+To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected](cookies-images/delete-cookie-icon.png)):
 
-![Deleting a specific cookie.](../media/storage-application-storage-cookies-delete-selected.msft.png)
+![Deleting a specific cookie.](cookies-images/delete-selected-cookie.png)
 
-To delete all cookies, click **Clear All** (![Clear All.](../media/clear-icon.msft.png)):
+To delete all cookies, click **Clear all cookies** (![Clear all cookies icon](cookies-images/clear-all-cookies-icon.png)):
 
-![Clearing all cookies.](../media/storage-application-storage-cookies-clear-all.msft.png)
+![Clearing all cookies](cookies-images/clear-all-cookies.png)
+
 
 
 <!-- ====================================================================== -->
