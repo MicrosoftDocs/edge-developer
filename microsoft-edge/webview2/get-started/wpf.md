@@ -32,11 +32,11 @@ This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code
 
    Visual Studio 2022:
 
-   ![The Visual Studio 'Modifying' dialog to install .NET project templates for the '.NET desktop development' card](wpf-images/install-dotnet-support-project-templates.png)
+   ![Visual Studio 2022 'Modifying' dialog to install project templates for '.NET desktop development'](wpf-images/install-dotnet-support-project-templates.png)
 
    Visual Studio 2019:
 
-   ![The Visual Studio 'Modifying' dialog to install .NET project templates for the '.NET desktop development' card](wpf-images/install-dotnet-support-project-templates-2019.png)
+   ![Visual Studio 2019 'Modifying' dialog to install project templates for '.NET desktop development'](wpf-images/install-dotnet-support-project-templates-2019.png)
 
 This tutorial also works with Visual Studio 2019 or 2017.  If you want to download either of those, see [Visual Studio older downloads](https://visualstudio.microsoft.com/vs/older-downloads/).  Install .NET support, to get the needed project templates.
 
