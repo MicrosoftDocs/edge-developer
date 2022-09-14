@@ -784,6 +784,59 @@
           href: visual-studio-code/microsoft-edge-devtools-extension.md
           displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
 
+        - name: Get started with the DevTools extension for Visual Studio Code
+          href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
+          displayName: 
+
+        - name: Inline and live issue analysis
+          href: visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
+          displayName: 
+
+        - name: Modes for using Microsoft Edge DevTools in Visual Studio Code
+          href: visual-studio-code/microsoft-edge-devtools-extension/modes-devtools.md
+          displayName: 
+
+        - name: Opening a browser instance in the extension
+          href: visual-studio-code/microsoft-edge-devtools-extension/opening-browser-instance.md
+          displayName: 
+
+        - name: Device and state emulation
+          href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
+          displayName: 
+
+        - name: Opening source files from the Elements tool
+          href: visual-studio-code/microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md
+          displayName: 
+
+        - name: Syncing live changes from the Styles tool by using CSS mirror editing
+          href: visual-studio-code/microsoft-edge-devtools-extension/sync-live-changes-styles-tool-css-mirror-editing.md
+          displayName: 
+
+        - name: Network tool integration
+          href: visual-studio-code/microsoft-edge-devtools-extension/network-tool-integration.md
+          displayName: 
+
+        - name: Console integration
+          href: visual-studio-code/microsoft-edge-devtools-extension/console-integration.md
+          displayName: 
+
+        - name: Application tool integration
+          href: visual-studio-code/microsoft-edge-devtools-extension/application-tool-integration.md
+          displayName: 
+
+        - name: Use the extension with the Visual Studio Code debugging workflow
+          href: visual-studio-code/microsoft-edge-devtools-extension/extension-debugging-workflow.md
+          displayName: 
+
+        - name: Changing the extension settings
+          href: visual-studio-code/microsoft-edge-devtools-extension/change-extension-settings.md
+          displayName: 
+
+        - name: Getting in touch with the Microsoft Edge DevTools Extension team
+          href: visual-studio-code/microsoft-edge-devtools-extension/contact-visual-studio-code-devtools-extension-team.md
+          displayName: 
+
+
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge extensions
