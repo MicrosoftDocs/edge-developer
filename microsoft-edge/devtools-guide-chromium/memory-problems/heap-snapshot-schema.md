@@ -9,7 +9,7 @@ ms.date: 9/13/2022
 ---
 # Understanding heapsnapshot files
 
-_In this document we will explain the schema of a `*.heapsnapshot` file which you can take and export using DevTools. This is helpful in case you want to create your own analysis tools or visualizations._
+_Investigating memory usage in web applications can be hard. Sometimes you may need to focus on specific parts of the data that the DevTools Memory tool doesn't show. Fortunately DevTools makes it possible to extract the entire memory data as a `*.heapsnapshot` file which you can then analyze and visualize. This article describes the structure and content of heapsnapshot files so you can build your own analysis tools._
 
 The DevTools Memory tool allows you to explore all the objects allocated in memory by taking a heap snapshot. This information is useful for performance investigations because you can find out what objects are consuming the most memory. Read more on [Heap Snapshots](heap-snapshots.md). 
 
