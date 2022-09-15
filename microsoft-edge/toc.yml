@@ -1025,7 +1025,7 @@
               href: webview2/code-samples-links.md
               displayName: 
 
-            - name: Win32 sample app (WebView2APISample)
+            - name: Win32 sample app
               href: webview2/samples/webview2apissample.md
               displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
 
@@ -1033,7 +1033,7 @@
               href: webview2/samples/webview2samplewincomp.md
               displayName: WebView2SampleWinComp, Win32 sample app with Visual Composition  # repo dir name, top-of-page title
 
-            - name: WebView2Browser (Win32 C++/JS)
+            - name: Win32 sample WebView2Browser
               href: webview2/samples/webview2browser.md
               displayName: WebView2Browser  # repo dir name
 

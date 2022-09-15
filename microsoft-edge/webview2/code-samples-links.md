@@ -14,7 +14,7 @@ Sample apps that use WebView2 are available in the [WebView2Samples repo](https:
 
 | Article | Sample | Notes |
 |---|---|---|
-| [Win32 sample app (WebView2APISample)](samples/webview2apissample.md) | [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) | Main sample; extensive. |
+| [Win32 sample app](samples/webview2apissample.md) | [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) | Main sample; extensive. |
 | [Win32 sample app with Visual Composition](samples/webview2samplewincomp.md) | [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp) | Windows Runtime Composition APIs leverage the Windows UI in Win32 app. |
 | [WebView2Browser (Win32 C++/JS)](samples/webview2browser.md) | [WebView2Browser repo](https://github.com/MicrosoftEdge/WebView2Browser) | Uses multiple WebView2 instances.  A major sample; has its own repo. |
 | [WinUI 2 (UWP) sample app](samples/webview2_sample_uwp.md) | [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) | &nbsp; |

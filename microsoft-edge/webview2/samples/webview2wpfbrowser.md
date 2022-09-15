@@ -36,13 +36,13 @@ For more information about events and API Handlers in WebView2, see [WebView2 AP
 
 
 <!-- ====================================================================== -->
-## Step 1 - Prerequisite: Install a preview channel of Microsoft Edge
+## Step 1 - Install a preview channel of Microsoft Edge
 
 1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Prerequisite: Install Visual Studio 2019 with .NET support
+## Step 2 - Install Visual Studio 2019 with .NET support
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
 

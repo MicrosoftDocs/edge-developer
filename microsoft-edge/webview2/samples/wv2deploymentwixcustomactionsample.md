@@ -27,7 +27,7 @@ This sample demonstrates several different deployment approaches:
 
 
 <!-- ====================================================================== -->
-## Step 1 - Prerequisite: Install Visual Studio 2019 with C++ support
+## Step 1 - Install Visual Studio 2019 with C++ support
 
 <!-- readme says "Prereqs: Visual Studio 2019 with C++ support installed." -->
 
@@ -37,13 +37,13 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 2 - Prerequisite: Install a preview channel of Microsoft Edge
+## Step 2 - Install a preview channel of Microsoft Edge
 
 1. **Preview channel of Microsoft Edge** - If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 3 - Prerequisite: Install WiX Toolset build tools
+## Step 3 - Install WiX Toolset build tools
 
 If not done yet, install WiX Toolset:
 
@@ -81,7 +81,7 @@ Also install the WiX Visual Studio component, per the next section.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Prerequisite: Install WiX Toolset Visual Studio Extension
+## Step 4 - Install WiX Toolset Visual Studio Extension
 
 If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 
@@ -192,7 +192,7 @@ If you plan to package either the Bootstrapper (Approach 2) or the Standalone In
 <!-- ====================================================================== -->
 ## See also
 
-* [Win32 sample app (WebView2APISample)](./webview2apissample.md)
+* [Win32 sample app](./webview2apissample.md)
 * [Deploying the Evergreen WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution.md#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
 * [Readme for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme).
 * [WiX Toolset](https://wixtoolset.org/)

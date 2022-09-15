@@ -18,7 +18,7 @@ This sample, **WV2DeploymentVSInstallerSample**, demonstrates how to deploy a We
 *  Repo directory: [WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentVSInstallerSample)
 *  Solution file: not provided in the repo.  You create a solution file in the steps below.
 
-To demonstrate how to deploy the Evergreen WebView2 Runtime with your app, this article describes how to use the [Microsoft Visual Studio Installer Project](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) extension for Visual Studio.  You create a project of type **Setup Project**, to create an installer for the [Win32 sample app (WebView2APISample)](./webview2apissample.md) (**WebView2APISample**).  That installer that you create chain-installs the Evergreen WebView2 Runtime.
+To demonstrate how to deploy the Evergreen WebView2 Runtime with your app, this article describes how to use the [Microsoft Visual Studio Installer Project](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) extension for Visual Studio.  You create a project of type **Setup Project**, to create an installer for the [Win32 sample app](./webview2apissample.md) (**WebView2APISample**).  That installer that you create chain-installs the Evergreen WebView2 Runtime.
 
 <!-- todo: screenshot representing the success state -->
 
@@ -33,13 +33,13 @@ For information about these different approaches, see [Deploying the Evergreen W
 
 
 <!-- ====================================================================== -->
-## Step 1 - Prerequisite: Build and run WebView2APISample
+## Step 1 - Build and run WebView2APISample
 
 <!-- todo: is this required before using this sample? -->
 
 To become familiar with the app that this sample distributes, and to make sure your environment is set up for general Win32 WebView2 app development, build and run the Win32 sample app (**WebView2APISample**) before using this deployment sample.
 
-1. Do the steps in [Win32 sample app (WebView2APISample)](./webview2apissample.md) (**WebView2APISample**) and then continue below.
+1. Do the steps in [Win32 sample app](./webview2apissample.md) (**WebView2APISample**) and then continue below.
 
 Prerequisite: As stated in the above page, Microsoft Visual Studio is required, including C++ support.  Microsoft Visual Studio Code is not supported for this **WV2DeploymentVSInstallerSample** sample.
 
@@ -47,7 +47,7 @@ The above page helps you clone or download the WebView2Samples repo, and install
 
 
 <!-- ====================================================================== -->
-## Step 2 - Prerequisite: Install Visual Studio Installer Projects
+## Step 2 - Install Visual Studio Installer Projects
 
 If not done yet, install Visual Studio Installer Projects:
 

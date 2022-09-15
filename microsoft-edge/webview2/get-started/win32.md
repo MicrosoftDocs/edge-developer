@@ -35,7 +35,7 @@ The completed tutorial project is available in the **WebView2Samples** repo:
 
 
 <!-- ====================================================================== -->
-## Step 1 - Prerequisite: Install Visual Studio
+## Step 1 - Install Visual Studio
 
 This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code.
 
@@ -45,7 +45,7 @@ Then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Prerequisite: Install a preview channel of Microsoft Edge
+## Step 2 - Install a preview channel of Microsoft Edge
 
 1. If it's not installed already, install a preview channel of Microsoft Edge.  To do that, in a new window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.
 
