@@ -13,6 +13,24 @@ Use these sample Progressive Web Apps (PWAs) to learn how to use features and AP
 
 
 <!-- ====================================================================== -->
+## PWAmp
+
+A desktop music player app.
+
+[App](https://microsoftedge.github.io/Demos/pwamp/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp).
+
+Features:
+
+*  [Window Controls Overlay](how-to/window-controls-overlay.md)
+*  [Protocol handling](how-to/handle-protocols.md)
+*  [File handling](how-to/handle-files.md)
+*  [Web Share](how-to/share.md#sharing-content)
+*  [Share Target](how-to/share.md#receiving-shared-content)
+
+![Screenshot of the PWAmp app, showing playback buttons and a list of songs.](./media/pwamp.png)
+
+
+<!-- ====================================================================== -->
 ## Webboard
 
 An intelligent whiteboarding app.
