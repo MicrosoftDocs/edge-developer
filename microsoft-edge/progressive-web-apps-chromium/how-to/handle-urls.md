@@ -1,162 +1,49 @@
 ---
-title: Handle URLs in Progressive Web Apps
-description: How to register your PWA as a URL handler to more deeply integrate it in the operating system with other applications.
+title: Handle links to your Progressive Web Apps
+description: How links to your PWA can be handled by your app rather than the web browser.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 01/12/2022
+ms.date: 09/15/2022
 ---
-# Handle URLs in Progressive Web Apps
+# Handle links to your Progressive Web Apps
 
-Native applications on many operating systems can be associated with URLs. They can request to be launched, instead of the browser, when associated URLs are activated.
+Native applications on many operating systems can handle links. They can request to be launched, instead of the web browser, when associated URLs are activated and doing so creates a more engaging experience for these applications.
 
-Progressive Web Apps (PWAs) can also handle URLs in the same way, to create a more engaging experience.
-
-> [!NOTE]
-> Support for the experimental `url_handlers` manifest member, documented below, is being phased out.
-> The `url_handlers` manifest member is being replaced by the new `handle_links` manifest member, which is currently being standardized and implemented.
-> See the `handle_links` [explainer](https://github.com/WICG/pwa-url-handler/blob/main/handle_links/explainer.md).
+Progressive Web Apps (PWAs) can also handle links in a similar way.
 
 
 <!-- ====================================================================== -->
-## Enable URL handling
+## Automatic link handling
 
-URL handling is an experimental feature. To enable the URL handling experiment:
+When you install a PWA using Microsoft Edge, all the links that refer to content within the scope of this PWA will automatically launch it instead of the web browser.
 
-1. In Microsoft Edge, go to `edge://flags`.
+No code is required for automatic link handling to work, but end users can opt-out of automatic link handling. To opt-out of automatic link handling:
 
-1. In the **Search flags** text box, type "url handling".  The **Desktop PWA URL handling** setting appears.
+1. In Microsoft Edge, navigate to `edge://apps`.
 
-1. Change the setting from **Default** to **Enabled**, and then click the **Restart** button.
+1. Find the PWA you want to disable automatic link handling for and click **Details**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Enabling the 'Desktop PWA URL handling' experiment..](../media/enable-url-handling-experiment.png)
+1. On the PWA details page, under the **Link handling** section, click the toggle button.
 
-URL handling is an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
-
-
-<!-- ====================================================================== -->
-## Define which URLs your app handles
-
-The first thing to do is declare which URLs your app handles. This is done in your app [manifest file](web-app-manifests.md), using the `url_handlers` array member.
-
-Each entry in the `url_handlers` array contains a `origin` string, which is a pattern for matching origins.
-
-```json
-{
-    "url_handlers": [
-        {
-            "origin": "https://contoso.com"
-        },
-        {
-            "origin": "https://*.contoso.com"
-        },
-        {
-            "origin": "https://conto.so"
-        }
-    ]
-}
-```
-
-In the above example, the app is registered to handle URLs that have their origins set to `contoso.com` or any of its subdomains, as well as `conto.so`.
+![The edge://apps details page for the PWAmp music player app, showing where the link handling toggle button is](../media/link-handling-opt-out.png)
 
 
 <!-- ====================================================================== -->
-## Verify the origin ownership
+## Handle links from other origins with scope extensions
 
-Microsoft Edge needs to verify the Progressive Web App's ownership of the handled URLs to successfully launch the app. This is required when the handled URL and the Progressive Web App (PWA) are both on the same origin and when they're not. In most cases, the PWA will handle URLs that have the same origin, but this isn't required.
+The manifest of a PWA defines which part of the hosting domain the PWA is scoped to. For example, the `www.contoso.com` domain name may have a PWA defined under `www.contoso.com/app` with its scope set to `/app`. In this case, all the web pages available within the `www.contoso.com/app` path are part of the PWA scope. However the web pages within the `www.contoso.com/foo` path are not part of the PWA scope. Furthermore, web pages available at `bar.contoso.com/app` or `www.contoso.co.uk` are also not part of the PWA scope.
 
-Origin ownership is established with the `web-app-origin-association` JSON file, which is used by Microsoft Edge to validate the handshake between the PWA and the URL.
+Scope extensions make it possible for a PWA to capture navigation to paths, subdomains, or even sites other than its own scope. This can be useful for PWAs that span multiple domains for localization purposes for examples. E.g. a PWA may span `contoso.com`, `contoso.co.uk`, and `contoso.fr`.
 
-Let's take the example of a PWA hosted at `https://app.contoso.com` trying to handle `https://contoso.com` and `https://partnerapp.com` URLs.
+**Note**: the scope extensions feature is in active development and not ready to be used yet. To find out more about the state of development of this feature in Chromium, check out the [Web app scope extensions feature at Chrome Platform Status](https://chromestatus.com/feature/5746537956114432).
 
-*  To establish the PWA's ownership of the `contoso.com` origin, the following JSON content needs to be available at `https://contoso.com/.well-known/web-app-origin-association`.
-
-    ```json
-    {
-        "web_apps": [
-            {
-                "manifest": "https://app.contoso.com/manifest.json",
-                "details": {
-                    "paths": [
-                        "/*"
-                    ]
-                }
-            }
-        ]
-    }
-    ```
-
-*  To establish the PWA's ownership of the `partnerapp.com` origin, the same JSON content needs to be available at `https://partnerapp.com/.well-known/web-app-origin-association`.
-
-    ```json
-    {
-        "web_apps": [
-            {
-                "manifest": "https://app.contoso.com/manifest.json",
-                "details": {
-                    "paths": [
-                        "/*"
-                    ]
-                }
-            }
-        ]
-    }
-    ```
-
-To learn more about the valid members in `web-app-origin-association`, see the [URL Handlers explainer](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file).
-
-
-<!-- ====================================================================== -->
-## Testing URL handling
-
-Testing your app's URL handling from a web browser won't work, since in-browser page navigation doesn't trigger URL handling at the OS level.
-
-To test the feature, send yourself a URL in a chat message app, or a desktop email client like Windows Mail. You can also use the Windows Run app:
-
-1. Press `Windows logo key`+`R`.
-1. Enter a URL that your app handles.
-1. Press `Enter`.
-
-> [!NOTE]
-> At the moment, only PWAs that were installed from the default system browser can handle URLs.
-
-
-<!-- ====================================================================== -->
-## Demo
-
-[DevTools Tips](https://devtoolstips.org/) is a demo Progressive Web App (PWA) that handles URLs for its own domain, so that the app opens instead of the website when a URL for its domain is used.
-
-To test URL handling on the DevTools Tips demo:
-
-1. [Enable URL handling](#enable-url-handling) in Microsoft Edge.
-
-1. Go to the [DevTools Tips](https://devtoolstips.org/) PWA.
-
-1. Click the **App available. Install DevTools Tips** (![The 'App available. Install DevTools Tips' icon..](../media/app-available-icon.png)) icon in the Address bar to install the DevTools Tips app locally.
-
-1. Press `Windows logo key` + `R` to open the Windows **Run** dialog.
-
-1. Enter a URL for one of the tips on the site, such as https://devtoolstips.org/tips/en/find-css-changes/.
-
-1. Press `Enter`.
-
-Windows knows that your app can handle URLs, but since there may be other apps that can handle URLs, Windows asks you which app to use. Select the **DevTools Tips** app. If you want to avoid seeing this dialog every time, select **Remember my choice**.
-
-> [!div class="mx-imgBorder"]
-> ![Selecting an application to handle URLs on Windows..](../media/devtools-tips-url-handling-app-selection.png)
-
-The DevTools Tips app launches and displays the Tips page.
-
-You can find the [source code on GitHub](https://github.com/captainbrosset/devtools-tips/).
-* The DevTools Tips app registers the handled URLs in the [manifest.json](https://github.com/captainbrosset/devtools-tips/blob/main/src/manifest.json) file.
-* The website establishes the app's ownership in the [web-app-origin-association](https://github.com/captainbrosset/devtools-tips/blob/main/src/.well-known/web-app-origin-association) file.
+Once the feature can be used in Microsoft Edge, we will document it here. In the meantime, to learn more about how scope extensions will work, check out [the explainer document on the WICG repository](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Handling URLs in PWAs video](https://www.youtube.com/watch?v=jYc7ih9Xwqw).
 *  [PWAs as URL Handlers](https://web.dev/pwa-url-handler/).
