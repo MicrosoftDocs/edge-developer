@@ -17,7 +17,7 @@ This sample, **WV2DeploymentWiXBurnBundleSample**, demonstrates how to use a WiX
 *  Repo directory: [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample)
 *  Project file: **WV2DeploymentWiXBurnBundleSample.wixproj**
 
-This sample creates a [WiX](https://wixtoolset.org/) installer for the [Win32 sample app (WebView2APISample)](webview2apissample.md).  This sample uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.
+This sample creates a [WiX](https://wixtoolset.org/) installer for the [Win32 sample app](webview2apissample.md).  This sample uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.
 
 <!-- todo: screenshot representing the success state -->
 
@@ -31,7 +31,7 @@ For an overview of the approaches, see [Deploying the Evergreen WebView2 Runtime
 
 
 <!-- ====================================================================== -->
-## Step 1 - Prerequisite: Install Visual Studio
+## Step 1 - Install Visual Studio
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
 
@@ -43,7 +43,7 @@ Then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Prerequisite: Install WiX Toolset build tools
+## Step 2 - Install WiX Toolset build tools
 
 If not done yet, install WiX Toolset:
 
@@ -90,7 +90,7 @@ Also install the WiX Visual Studio component, per the next section.
 
 
 <!-- ====================================================================== -->
-## Step 3 - Prerequisite: Install WiX Toolset Visual Studio Extension
+## Step 3 - Install WiX Toolset Visual Studio Extension
 
 If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 

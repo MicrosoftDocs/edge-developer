@@ -20,7 +20,7 @@ This article covers general-purpose setup of your development environment for We
 
    The WebView2 samples are designed for Microsoft **Visual Studio**, not Microsoft **Visual Studio Code**.
 
-   If you are installing Visual Studio, you can accept the defaults for now; you can click **Install**, and decline installing the Workloads at this time.  Visual Studio will prompt you later, when you open a particular `.sln` file, to install the platform-appropriate workloads.
+   If you are installing Visual Studio, you can accept the defaults for now; you can click **Install**, and then decline installing the Workloads at this time.  Visual Studio will prompt you later, when you open a particular `.sln` file, to install the platform-appropriate workloads.
 
 
 <!-- ====================================================================== -->

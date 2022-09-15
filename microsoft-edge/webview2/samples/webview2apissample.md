@@ -1,5 +1,5 @@
 ---
-title: Win32 sample app (WebView2APISample)
+title: Win32 sample app
 description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 07/29/2022
 ---
-# Win32 sample app (WebView2APISample)
+# Win32 sample app
 
 This sample, **WebView2APISample**, demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
 
@@ -42,7 +42,7 @@ For details of events and API handlers in WebView2, see [WebView2 API Reference]
 
 
 <!-- ====================================================================== -->
-## Step 1 - Prerequisite: Install a preview channel of Microsoft Edge
+## Step 1 - Install a preview channel of Microsoft Edge
 
 Next, make sure a preview channel of Microsoft Edge in installed, on a supported OS.  Currently we recommend the latest version of the Canary channel.
 
@@ -50,7 +50,7 @@ Next, make sure a preview channel of Microsoft Edge in installed, on a supported
 
 
 <!-- ====================================================================== -->
-## Step 2 - Prerequisite: Install Visual Studio 2019
+## Step 2 - Install Visual Studio 2019
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.
 

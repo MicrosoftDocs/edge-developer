@@ -28,7 +28,7 @@ See also [Readme file for WebView2SampleWinComp](https://github.com/MicrosoftEdg
 
 
 <!-- ====================================================================== -->
-## Step 1 - Prerequisite: Install a preview channel of Microsoft Edge
+## Step 1 - Install a preview channel of Microsoft Edge
 
 We recommend the latest version of the Edge Canary channel.
 
@@ -36,7 +36,7 @@ We recommend the latest version of the Edge Canary channel.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Prerequisite: Install Visual Studio with C++ support
+## Step 2 - Install Visual Studio with C++ support
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
 

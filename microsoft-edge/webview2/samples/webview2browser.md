@@ -1,5 +1,5 @@
 ---
-title: WebView2Browser (Win32 C++/JS)
+title: Win32 sample WebView2Browser
 description: "A web browser built with the Microsoft Edge WebView2 control."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,13 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 07/18/2022
 ---
-# WebView2Browser (Win32 C++/JS)
+# Win32 sample WebView2Browser
 
-<!-- copied from https://github.com/MicrosoftEdge/WebView2Browser#readme -->
+<!-- copied from:
+https://github.com/MicrosoftEdge/WebView2Browser#readme
+aka
+https://github.com/MicrosoftEdge/WebView2Browser/blob/main/README.md
+-->
 
 This sample, **WebView2Browser**, is a web browser built with the [Microsoft Edge WebView2](https://aka.ms/webview2) control.
 
