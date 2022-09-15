@@ -563,30 +563,6 @@ This feature is currently disabled by default in the browser.  To enable this fe
 
 ---
 
-
-<!-- ------------------------------ -->
-#### Document title
-
-Your app can detect when the title of the current top-level document has changed.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2.DocumentTitle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitle)
-* [CoreWebView2.DocumentTitleChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitlechanged)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2.DocumentTitle Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitle)
-* [CoreWebView2.DocumentTitleChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitlechanged)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2::DocumentTitle property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2#get_documenttitle)<!--no put-->
-* [ICoreWebView2::DocumentTitleChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_documenttitlechanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_documenttitlechanged)
-
----
-
-
 <!-- ------------------------------ -->
 #### Fullscreen
 
@@ -691,7 +667,6 @@ WebView2 provides functionality to handle the JavaScript function `window.open()
 
 ---
 
-
 <!-- ------------------------------ -->
 #### Close window
 
@@ -714,6 +689,49 @@ WebView2 provides functionality to handle the JavaScript function `window.close(
 
 ---
 
+<!-- ------------------------------ -->
+#### Document title
+
+Your app can detect when the title of the current top-level document has changed.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.DocumentTitle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitle)
+* [CoreWebView2.DocumentTitleChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitlechanged)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.DocumentTitle Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitle)
+* [CoreWebView2.DocumentTitleChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitlechanged)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2::DocumentTitle property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2#get_documenttitle)<!--no put-->
+* [ICoreWebView2::DocumentTitleChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_documenttitlechanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_documenttitlechanged)
+
+---
+
+<!-- ------------------------------ -->
+#### Favicon 
+
+In WebView2 you can you can set a [Favicon](https://developer.mozilla.org/en-US/docs/Glossary/Favicon) for a website or get notified when it changes. 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.FaviconChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconchanged)
+* [CoreWebView2.FaviconUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconuri)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.FaviconChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#faviconchanged)
+* [CoreWebView2.FaviconUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#faviconuri)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_15::FaviconChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_15#add_faviconchanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_15#remove_faviconchanged)
+* [ICoreWebView2_15::FaviconUri property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2_15#get_faviconuri)<!--no put-->
+
+----
 
 <!-- ====================================================================== -->
 ## Process management
