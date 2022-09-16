@@ -786,7 +786,7 @@
 
         - name: Get started with the DevTools extension for Visual Studio Code
           href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
-          displayName: 
+          displayName: installing, setup, tutorial, demo to do
 
         - name: Inline and live issue analysis
           href: visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
