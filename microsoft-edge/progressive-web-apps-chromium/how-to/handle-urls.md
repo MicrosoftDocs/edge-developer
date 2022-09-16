@@ -40,7 +40,7 @@ Scope extensions make it possible for a PWA to capture navigation to paths, subd
 
 **Note**: The scope extensions feature is in active development and isn't ready to be used yet. To find out more about the state of development of this feature in Chromium, check out the [Web app scope extensions feature](https://chromestatus.com/feature/5746537956114432) at Chrome Platform Status.
 
-Once the feature can be used in Microsoft Edge, we will document it here. In the meantime, to learn more about how scope extensions will work, check out [the explainer document on the WICG repository](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md).
+Once the feature can be used in Microsoft Edge, we will document it here. In the meantime, to learn more about how scope extensions will work, see [the explainer document on the WICG repository](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md).
 
 
 <!-- ====================================================================== -->
