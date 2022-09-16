@@ -10,7 +10,7 @@ ms.date: 09/15/2022
 ---
 # Handle links to your Progressive Web Apps
 
-Native applications on many operating systems can handle links. They can request to be launched, instead of the web browser, when associated URLs are activated and doing so creates a more engaging experience for these applications.
+Native applications on many operating systems can handle links. Native applications can request to be launched, instead of the web browser, when associated URLs are activated, to create a more engaging experience for these applications.
 
 Progressive Web Apps (PWAs) can also handle links in a similar way.
 
