@@ -38,7 +38,7 @@ The manifest of a PWA defines which part of the hosting domain the PWA is scoped
 
 Scope extensions make it possible for a PWA to capture navigation to paths, subdomains, or even sites other than its own scope. This can be useful for PWAs that span multiple domains for localization purposes for examples. E.g. a PWA may span `contoso.com`, `contoso.co.uk`, and `contoso.fr`.
 
-**Note**: the scope extensions feature is in active development and not ready to be used yet. To find out more about the state of development of this feature in Chromium, check out the [Web app scope extensions feature at Chrome Platform Status](https://chromestatus.com/feature/5746537956114432).
+**Note**: The scope extensions feature is in active development and isn't ready to be used yet. To find out more about the state of development of this feature in Chromium, check out the [Web app scope extensions feature](https://chromestatus.com/feature/5746537956114432) at Chrome Platform Status.
 
 Once the feature can be used in Microsoft Edge, we will document it here. In the meantime, to learn more about how scope extensions will work, check out [the explainer document on the WICG repository](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md).
 
