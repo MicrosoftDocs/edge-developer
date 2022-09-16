@@ -41,7 +41,7 @@ Command Palette provides access to Microsoft Edge commands, including various De
 
 To open Command Palette:
 
-1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Command Palette opens.
+1. In Microsoft Edge, press `Ctrl`+`Q`.  Command Palette opens.
 
 1. Start typing in the input box. For example:
    * Type **tabs** to display commands about tabs management.
