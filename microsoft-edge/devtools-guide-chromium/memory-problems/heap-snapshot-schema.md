@@ -1,5 +1,5 @@
 ---
-title: Understand the heap snapshot file format
+title: The heap snapshot file format
 description: How the heap snapshot files are structured, when exported from the Memory tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 9/16/2022
 ---
-# Understand the heap snapshot file format
+# The heap snapshot file format
 
-Investigating memory usage in web applications can be hard. The DevTools **Memory** tool allows you to explore all the objects allocated in memory by your web application by taking a heap snapshot. This information is useful for performance investigations because you can find out what objects are consuming the most memory.
+Investigating memory usage in web applications can be difficult. The DevTools **Memory** tool allows you to explore all of the objects that are allocated in memory, by your web application by taking a heap snapshot. This information is useful for performance investigations because you can find out which objects are consuming the most memory.
 
-However, sometimes you may need to focus on specific parts of the data that the **Memory** tool doesn't show. Fortunately DevTools makes it possible to export the entire memory data as a `heapsnapshot` file which you can then analyze and visualize with your own tools.
+However, sometimes you may need to focus on specific parts of the memory data that the **Memory** tool doesn't show. In this case, use DevTools to export the entire set of memory data as a `.heapsnapshot` JSON file.
 
-This article describes the structure and content of `heapsnapshot` files so you can build your own analysis tools.
+This article describes the structure and content of `.heapsnapshot` JSON files so you can build your own visualization and analysis tools.
 
 
 <!-- ====================================================================== -->
 ## Record a heap snapshot
 
-To export a `heapsnapshot` file, you first need to record it in the **Memory** tool.
+To export a `.heapsnapshot` file, you first need to record a heap snapshot in the **Memory** tool, as follows:
 
 1. In Microsoft Edge, navigate to the website you want to export the data from.
 
@@ -29,46 +29,48 @@ To export a `heapsnapshot` file, you first need to record it in the **Memory** t
 
 1. Select **Heap snapshot** and then click **Take snapshot**.
 
-To find out more see [Record heap snapshots using the Memory tool](heap-snapshots.md).
+For more information, see [Record heap snapshots using the Memory tool](heap-snapshots.md).
 
 
 <!-- ====================================================================== -->
-## Export and view a `heapsnapshot` file
+## Export and view a `.heapsnapshot` file
 
 Once you have recorded a heap snapshot, you can export it.
 
 1. In the **Memory** tool left sidebar, click **Save** next to the heap snapshot item you just recorded.
 
-1. Change the file extension from `.heapsnapshot` to `.json` to make it easier to open the file in a text editor.
+1. Change the file extension from `.heapsnapshot` to `.json`, to make it easier to open the file in a text editor.
 
-1. Open the saved file in a text editor such as Visual Studio Code.
+1. Open the saved file in a text editor, such as Visual Studio Code.
 
-1. To facilitate reading the `heapsnapshot` file, re-format the JSON: in Visual Studio Code, right-click on the code and choose **Format document**.
+1. To make the JSON easier to read, in Visual Studio Code, right-click anywhere in the code and then select **Format document**.
 
-Note that the resulting file will be different every time you record and export a heap snapshot. Heap snapshots are dynamically generated based on the content of the web application currently being inspecting in DevTools.
+Generally, the resulting `.heapsnapshot` file is different every time you record and export a heap snapshot. Heap snapshots are dynamically generated, based on the content of the web application that's currently being inspected in DevTools.
 
 
 <!-- ====================================================================== -->
-## Overview of the `heapsnapshot` file format
+## Overview of the `.heapsnapshot` file format
 
-The memory used by a web application is organized in a graph by V8, the JavaScript engine used by Microsoft Edge. A graph is a data type that is composed of nodes (points on the graph) and edges (links between the points).
+The memory used by a web application is organized as a graph by V8, which is the JavaScript engine used by Microsoft Edge. A graph is a data type that is composed of _nodes_ (points on the graph) and _edges_ (links between the points).
 
-The data in the `heapsnapshot` file represents that graph efficiently and in a way that facilitates the transfer of data as chunks between the browser process and DevTools. The `heapsnapshot` file contains a flattened representation of the relations between nodes and edges as a JSON object containing arrays of numbers and strings. Even if the file originally has a `.heapsnapshot` extension, it contains JSON.
+The data in the `.heapsnapshot` file represents the web app's memory that graph efficiently, and makes it easier to transfer groups of data between the browser process and DevTools. The `.heapsnapshot` file contains a flattened representation of the relations between nodes and edges, as a JSON object that contains arrays of numbers and strings. The file has a `.heapsnapshot` file name extension, and contains JSON-formatted data.
 
 The data has two main parts:
 
-* The metadata, which contains all of the information you need in order to parse the arrays of data found in the payload to re-create the graph.
-* The payload, which contains the actual data needed to re-create the graph.
+* The metadata, which contains all of the information you need to parse the arrays of data that represent the memory graph.
+* The arrays data, which contain the actual data that's needed to re-create the graph.
 
-Note that the format of the `heapsnapshot` file, as documented below, may change in the future as V8 and DevTools evolve. We always try to keep our documentation up to date but if you encounter a discrepancy please send us feedback on our [GitHub repository](https://github.com/MicrosoftDocs/edge-developer/issues).
+#### Updating this data format documentation
+
+The format of the `.heapsnapshot` file, as documented below, may change as V8 and DevTools evolve. If you find a discrepancy in the documentation, please provide feedback in the [MicrosoftDocs/edge-developer repo](https://github.com/MicrosoftDocs/edge-developer/issues).
 
 
 <!-- ====================================================================== -->
-## Schema of the `heapsnashot` data
+## Schema of the `.heapsnashot` data
 
-### Top-level structure
+#### Top-level structure
 
-The `heapsnapshot` JSON data contains a root object with the following properties:
+The `.heapsnapshot` JSON data contains a root object that has the following properties:
 
 ```json
 {
@@ -85,16 +87,16 @@ The `heapsnapshot` JSON data contains a root object with the following propertie
 
 | Property | Description | Format |
 | --- | --- | --- |
-| `snapshot` | Contains all the information about the format of the payload and its size | `Object` |
-| `nodes` | All the information required to re-create the nodes of the graph. To parse this information you need `snapshot.meta.node_types` and `snapshot.meta.node_fields` | `Array` |
-| `edges` | All the information required to re-create the edges of the graph. To parse this you need `snapshot.meta.edge_types` and `snapshot.meta.edge_fields` | `Array` |
+| `snapshot` | Contains all of the information about the format of the memory graph data and its size. | `Object` |
+| `nodes` | All the information that's needed to re-create the nodes of the graph. To parse this data, use `snapshot.meta.node_types` and `snapshot.meta.node_fields`. | `Array` |
+| `edges` | All the information that's needed to re-create the edges of the graph. To parse this data, use `snapshot.meta.edge_types` and `snapshot.meta.edge_fields`. | `Array` |
 | `trace_function_infos` | _Not documented yet_ | `Array` |
 | `trace_tree` | _Not documented yet_ | `Array` |
 | `samples` | _Not documented yet_ | `Array` |
 | `locations` | _Not documented yet_ | `Array` |
-| `strings` | An array with all the strings held in memory. These can be user-defined strings, code, etc. | `Array` |
+| `strings` | An array of all of the strings that are held in memory. These can be any strings, such as user-defined strings or code. | `Array` |
 
-### Snapshot
+#### Snapshot
 
 ```json
 {
@@ -110,12 +112,12 @@ The `heapsnapshot` JSON data contains a root object with the following propertie
 
 | Property | Description | Format |
 | --- | --- | --- |
-| `meta` | Contains several fields with information about the shape and size of every object contained in the payload | `Object` |
-| `node_count` | The total number of nodes | `Number` |
-| `edge_count` | The total number of edges. | `Number` |
-| `trace_function_count` | The total number of trace functions | `Number` |
+| `meta` | Properties that contain information about the shape and size of every object that's contained in the memory graph data. | `Object` |
+| `node_count` | The total number of nodes in the memory graph. | `Number` |
+| `edge_count` | The total number of edges in the memory graph. | `Number` |
+| `trace_function_count` | The total number of trace functions in the memory graph. | `Number` |
 
-### Snapshot metadata
+#### Snapshot metadata
 
 ```json
 {
@@ -133,12 +135,12 @@ The `heapsnapshot` JSON data contains a root object with the following propertie
 
 | Property | Description | Format |
 | --- | --- | --- |
-| `node_fields` | The list of all the properties required to recreate a node. | `Array` |
-| `node_types` | The types of all the properties required to recreate a node. The number of types is the same as the number of properties defined in `node_fields`. | `Array` |
-| `edge_fields` | The list of all properties required to recreate an edge. | `Array` |
-| `edge_types` | The types of all the properties required to recreate an edge. The number of types is the same the number of properties in `edge_fields`. | `Array` |
+| `node_fields` | The list of all the properties that are required to re-create a node. | `Array` |
+| `node_types` | The types of all the properties that are required to re-create a node. The number of types is the same as the number of properties defined in `node_fields`. | `Array` |
+| `edge_fields` | The list of all the properties that are required to re-create an edge. | `Array` |
+| `edge_types` | The types of all the properties that are required to re-create an edge. The number of types is the same the number of properties in `edge_fields`. | `Array` |
 
-The code snippet below shows a metadata object example.
+The following is an example of a metadata object:
 
 ```json
 {
@@ -201,20 +203,20 @@ The code snippet below shows a metadata object example.
 }
 ```
 
-### Nodes
+#### Nodes
 
-This `nodes` array, at the top-level of the `heapsnapshot` data, contains all the information needed to recreate the nodes of the graph.
+The `nodes` array, which is at the top level of the `.heapsnapshot` data, contains all of the information that's needed to re-create the nodes of the memory graph.
 
 To parse this array, the following information is needed:
 
-* `snapshot.node_count` to know how many nodes there are.
-* `snapshot.meta.node_fields` to know how many fields each node has.
+* `snapshot.node_count`, to know how many nodes there are.
+* `snapshot.meta.node_fields`, to know how many fields each node has.
 
 Each node in the array is represented by a series of `snapshot.meta.node_fields.length` numbers. So the total number of elements in the `nodes` array is `snapshot.node_count` multiplied by `snapshot.meta.node_fields.length`.
 
-In order to recreate a node you need to read the numbers from the `nodes` array by groups of `snapshot.meta.node_fields.length`.
+To re-create a node, read the numbers from the `nodes` array by groups of size `snapshot.meta.node_fields.length`.
 
-Below is a code snippet that shows the node fields metadata and the data for the two first nodes in the graph.
+The following code snippet shows the `node_fields` metadata and the data for the first two nodes in the graph:
 
 ```json
 {
@@ -244,71 +246,65 @@ Below is a code snippet that shows the node fields metadata and the data for the
 
 | Index in node group | Name | Description |
 | --- | --- | --- |
-| `0` | `type` | The type of node. See [Node types](#node-types) to find out what are the possible types. |
-| `1` | `name` | The name of the node. This number corresponds to the index in the `strings` top-level array which you need to look-up to find the actual name. |
+| `0` | `type` | The type of node. See [Node types](#node-types), below. |
+| `1` | `name` | The name of the node. This is a number that's the index in the top-level `strings` array. To find the actual name, use the index number to look up the string in the top-level `strings` array. |
 | `2` | `id` | The node's unique ID. |
 | `3` | `self_size` | The node's size in bytes. |
 | `4` | `edge_count` | The number of edges connected to this node. |
 | `5` | `trace_node_id` | _Not documented yet_ |
-| `6` | `detachedness` | Whether this node can be reached from the `window` global object. `0` if it can be reached, `1` if it can't. |
+| `6` | `detachedness` | Whether this node can be reached from the `window` global object. `0` means the node is not detached; the node can be reached from the `window` global object. `1` means the node is detached; the node can't be reached from the `window` global object. |
 
-### Node types
+#### Node types
 
-The first number found in the group of numbers for a node in the `nodes` array corresponds to its type. 
-
-This number is an index that can be used to lookup the type name in the `snapshot.meta.node_types[0]` array.
+The first number in the group of numbers for a node in the `nodes` array corresponds to its type. This number is an index that can be used to lookup the type name in the `snapshot.meta.node_types[0]` array.
 
 | Node type | Description |
 | --- | --- |
 | Hidden | A V8 internal element that doesn't correspond directly to a user-controllable JavaScript object. In DevTools, these all show up under the category name **(system)**. Even though these objects are internal, they can be an important part of retainer paths. |
-| Object | Any user-defined object like `{ x: 2 }` or `new Foo(4)`. Contexts, which show up in DevTools as **system / Context** hold variables that had to be allocated on the heap because they're used by a nested function. |
-| Native | Things allocated by the Blink rendering engine, not by V8. These are mostly DOM: HTMLDivElement, CSSStyleRule, etc. |
-| Concatenated string | The result of concatenating two strings with the `+` operator. Rather than making a new string with a copy of all the data from the two source strings, V8 creates a ConsString object with pointers to the two source strings. From a JavaScript perspective, it acts just like any other string, but from a memory profiling perspective, it is different. |
+| Object | Any user-defined object, such as `{ x: 2 }` or `new Foo(4)`. Contexts, which show up in DevTools as **system / Context**, hold variables that had to be allocated on the heap because they're used by a nested function. |
+| Native | Things that are allocated by the Blink rendering engine, rather than by V8. These are mostly DOM items such as `HTMLDivElement` or `CSSStyleRule`. |
+| Concatenated string | The result of concatenating two strings with the `+` operator. Rather than making a new string that contains a copy of all the data from the two source strings, V8 creates a `ConsString` object that contains pointers to the two source strings. From a JavaScript perspective, it acts just like any other string, but from a memory profiling perspective, it is different. |
 | Sliced string | The result of a substring operation, such as using `String.prototype.substr` or `String.prototype.substring`. V8 avoids copying string data by instead creating a SlicedString which points to the original string and specifies the start index and length. From a JS perspective, it acts just like any other string, but from a memory profiling perspective, it is different. |
-| Array | Various internal lists, which show up in the devtools with the category name **(array)**. Like Hidden, this category clumps together a bunch of unrelated things. Many of the objects here are named **(object properties)** or **(object elements)**, indicating that they contain the string-keyed or numeric-keyed properties of a JavaScript object. |
+| Array | Various internal lists, which are displayed in DevTools with the category name **(array)**. Like Hidden, this category groups together a variety of things. Many of the objects here are named **(object properties)** or **(object elements)**, indicating that they contain the string-keyed or numeric-keyed properties of a JavaScript object. |
 | Code | Things that grow proportionally to the amount of script, and/or the number of times that functions run. |
-| Synthetic | Synthetic nodes don't correspond to anything actually allocated in memory. These are used to distinguish the different kinds of GC roots. |
+| Synthetic | Synthetic nodes don't correspond to anything actually allocated in memory. These are used to distinguish the different kinds of garbage-collection (GC) roots. |
 
-### Edges
+#### Edges
 
-Similar to the `nodes` array, the `edges` top-level array contains all the individual elements needed to recreate the edges of the graph.
+Similar to the `nodes` array, the `edges` top-level array contains all of the elements that are needed to re-create the edges of the memory graph.
 
 Also similar to nodes, the total number of edges can be calculated by multiplying `snapshot.edge_count` with `snapshot.meta.edge_fields.length`. Edges are also stored as a sequence of numbers which you will need to iterate on by groups of `snapshot.meta.edge_fields.length`.
 
-However, to read the `edges` array correctly, you first need read the `nodes` array because each node knows how many edges it has. 
+However, to read the `edges` array correctly, you first need to read the `nodes` array, because each node knows how many edges it has. 
 
-To recreate an edge you need three pieces of information:
+To re-create an edge, you need three pieces of information:
 
 * The edge type.
 * The edge name or index.
-* The node the edge is connected to.
+* The node that the edge is connected to.
 
-You can use `snapshot.meta.edge_types` to understand what each element is.
-
-For example, if you read the first node in the `nodes` array and its `edge_count` property is set to 4, then the first 4 groups of `snapshot.meta.edge_fields.length` numbers in the `edges` array correspond to the 4 edges of this node.
+For example, if you read the first node in the `nodes` array and its `edge_count` property is set to 4, then the first four groups of `snapshot.meta.edge_fields.length` numbers in the `edges` array correspond to the four edges of this node.
 
 | Index in edge group | Name | Description |
 | --- | --- | --- |
 | `0` | `type` | The type of edge. See [Edge types](#edge-types) to find out what are the possible types. |
-| `1` | `name_or_index` | This can be a number or a string. If it’s a number, it corresponds to the index in the top-level `strings` array where the name of the edge can be found. |
+| `1` | `name_or_index` | This can be a number or a string. If it's a number, it corresponds to the index in the top-level `strings` array, where the name of the edge can be found. |
 | `2` | `to_node` | The index within the `nodes` array that this edge is connected to. |
 
-### Edge types
+#### Edge types
 
-The first number found in the group of numbers for an edge in the `edges` array corresponds to its type. 
-
-This number is an index that can be used to lookup the type name in the `snapshot.meta.edge_types[0]` array.
+The first number in the group of numbers for an edge in the `edges` array corresponds to its type. This number is an index that can be used to lookup the type name in the `snapshot.meta.edge_types[0]` array.
 
 | Edge type | Description |
 | --- | --- |
-| Internal | Edges that don't correspond to JS-visible names but are still important. As an example, Function instances have a "context" representing the state of variables that were in scope where the function was defined. There is no way for JS code to directly read the "context" of a function, but it's still a very important link when trying to understand retainers. |
-| Weak | Weak edges don't keep the node they are connected to alive, and thus are omitted from the Retainers view. Any object with only weak edges pointing to it can be discarded by the GC. |
-| Hidden | Just like Internal, except these edges don't have unique names and instead are numbered in increasing order. |
-| Shortcut | An easier-to-read representation of some other path. This type is used very little. An example is if you use `Function.prototype.bind` to create a bound function with some bound arguments, V8 creates a JSBoundFunction, which points to a FixedArray (an internal type), which points to each bound argument. When producing a snapshot, V8 adds a shortcut edge from the bound function directly to each bound argument, bypassing the FixedArray. |
+| Internal | Edges that don't correspond to JavaScript-visible names, but are still important. As an example, Function instances have a "context" representing the state of variables that were in scope where the function was defined. There is no way for JavaScript code to directly read the "context" of a function, but these edges are needed when investigating retainers. |
+| Weak | Weak edges don't keep the node they are connected to alive, and thus are omitted from the Retainers view. Any object with only weak edges pointing to it can be discarded by the garbage collection (GC). |
+| Hidden | Similar to Internal, except these edges don't have unique names, and instead are numbered in increasing order. |
+| Shortcut | An easier-to-read representation of some other path. This type is rarely used. For example, if you use `Function.prototype.bind` to create a bound function with some bound arguments, V8 creates a `JSBoundFunction`, which points to a `FixedArray` (an internal type), which points to each bound argument. When producing a snapshot, V8 adds a shortcut edge from the bound function directly to each bound argument, bypassing the `FixedArray`. |
 | Element | Object properties where the key is a number. |
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* To learn more about the `heapsnapshot` file format, see the code that generates the file: [HeapSnapshotGenerator](https://chromium.googlesource.com/external/v8/+/master/src/heap-snapshot-generator.h).
+* To learn more about the `.heapsnapshot` file format, see the code that generates the file, which is  [the `HeapSnapshotGenerator` class in `heap-snapshot-generator.h`](https://chromium.googlesource.com/external/v8/+/master/src/heap-snapshot-generator.h#142).

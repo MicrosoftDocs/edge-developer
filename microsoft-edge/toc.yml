@@ -440,7 +440,7 @@
                   href: devtools-guide-chromium/rendering-tools/js-runtime.md
                   displayName: Memory tool
 
-                - name: Understand the heap snapshot file format
+                - name: The heap snapshot file format
                   href: devtools-guide-chromium/memory-problems/heap-snapshot-schema.md
                   displayName: Memory tool
 # Memory Inspector tool -------------------------------------------------------
