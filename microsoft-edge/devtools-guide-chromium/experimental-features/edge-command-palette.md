@@ -63,7 +63,7 @@ Use the DevTools [**Device Emulation**](../device-mode/index.md) tool to approxi
 
 To open the DevTools Device Emulation tool by using Command Palette:
 
-1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Command Palette opens.
+1. In Microsoft Edge 108 or later, press `Ctrl`+`Q`. Or, in Microsoft Edge 105-107, press `Ctrl`+`Shift`+`Space`. Command Palette opens.
 
 1. Press `>`.
 
@@ -77,7 +77,7 @@ The DevTools [**Snippets**](../javascript/snippets.md) tool allows you to save J
 
 To open the DevTools **Snippets** tab by using Command Palette:
 
-1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Command Palette opens.
+1. In Microsoft Edge 108 or later, press `Ctrl`+`Q`. Or, in Microsoft Edge 105-107, press `Ctrl`+`Shift`+`Space`. Command Palette opens.
 
 1. Press `>`.
 
@@ -93,7 +93,7 @@ Many useful tab-related commands are available in Command Palette, such as:
 *  **Open recently closed tab**
 *  **Search tabs**
 
-1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Command Palette opens.
+1. In Microsoft Edge 108 or later, press `Ctrl`+`Q`. Or, in Microsoft Edge 105-107, press `Ctrl`+`Shift`+`Space`. Command Palette opens.
 
 1. Type the word **tab**, press `Down Arrow` or `Up Arrow` to select a command, and then press `Enter`.
 
