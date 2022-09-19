@@ -24,7 +24,7 @@ ms.date: 05/04/2021
 
 This guide shows you how to use DevTools to inspect [Cache](https://developer.mozilla.org/docs/Web/API/Cache) data.
 
-To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) data, in the **Network** tool, use the **Size** column of the **Network Log**.  See [Log network activity](../network/index.md#log-network-activity) in _Inspect network activity_.
+To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) data, in the **Network** tool, use the **Size** column of the **Network Log**.  See [Log network activity](../network/index.md#log-network-activity) in _Inspect network activity_.  See [Quota Useage](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/progressive-web-apps/#quota-usage)
 
 
 <!-- ====================================================================== -->
