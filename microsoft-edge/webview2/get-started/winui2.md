@@ -43,7 +43,7 @@ Follow the major Step sections in sequence, below.
 ## Step 1 - Install Visual Studio
 
 Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual Studio 2022 is supported.  Visual Studio 2017 isn't supported.
-<!-- https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.9 -->
+<!-- https://learn.microsoft.com/visualstudio/releases/2019/release-notes-v16.9 -->
 
 1. If a suitable version of Microsoft Visual Studio isn't installed already, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that page to do a basic default installation of Visual Studio.
 
