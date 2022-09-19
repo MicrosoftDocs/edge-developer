@@ -33,6 +33,7 @@ By default, Command Palette isn't enabled. To enable the Command Palette experim
 
    ![Enabling the Command Palette flag in the edge://flags page](./media/command-palette-flag.png)
 
+The above screenshot shows the shortcut for Microsoft Edge 105-107.  Microsoft Edge 108 or later will show the shortcut `Ctrl+Q` instead.
 
 <!-- ====================================================================== -->
 ## Open Command Palette
