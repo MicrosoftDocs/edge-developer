@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 09/13/2022
+ms.date: 09/19/2022
 ---
 # Get started with WebView2 in WPF apps
 
@@ -28,7 +28,12 @@ This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code
 
 1. Select the card **.NET desktop development** so there's a checkmark on it.
 
-1. In the section **Installation details** > **.NET desktop development** on the right, make sure **.NET desktop development tools** is selected, and then click the **Modify** button:
+1. In the section **Installation details** > **.NET desktop development** > **Included** on the right, make sure **.NET desktop development tools** and **.NET Framework 4.7.2 development tools** are listed, with a checkmark next to them.
+
+1. In the section **Installation details** > **.NET desktop development** > **Optional** on the right:
+
+   * If you're using Visual Studio 2022, make sure **Development tools for .NET** is selected.
+   * If you're using Visual Studio 2019, make sure **.NET development tools** is selected.
 
    Visual Studio 2022:
 
@@ -37,6 +42,8 @@ This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code
    Visual Studio 2019:
 
    ![Visual Studio 2019 'Modifying' dialog to install project templates for '.NET desktop development'](wpf-images/install-dotnet-support-project-templates-2019.png)
+
+1. Click the **Modify** button.
 
 This tutorial also works with Visual Studio 2019 or 2017.  If you want to download either of those, see [Visual Studio older downloads](https://visualstudio.microsoft.com/vs/older-downloads/).  Install .NET support, to get the needed project templates.
 
