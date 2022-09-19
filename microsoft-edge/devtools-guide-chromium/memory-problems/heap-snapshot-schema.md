@@ -66,7 +66,7 @@ The format of the `.heapsnapshot` file, as documented below, may change as V8 an
 
 
 <!-- ====================================================================== -->
-## Schema of the `.heapsnashot` data
+## Schema of the `.heapsnapshot` data
 
 #### Top-level structure
 
