@@ -12,7 +12,15 @@ ms.date: 09/19/2022
 
 This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.
 
-A completed version of this tutorial project is available in the WebView2Samples repo: [Getting Started with WebView2 in WPF (WPF_GettingStarted/WPFSample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme).
+In this tutorial, you use the **WPF Application** or **WPF App (.NET Framework)** project template to create a WPF app, and then install the WebView2 SDK for the project to add WebView2.
+
+
+#### Completed project
+
+A completed version<!--TODO: what date?--> of this tutorial project is available in the **WebView2Samples** repo:
+*  Sample name: **WPF_GettingStarted**
+*  Repo directory: [WPF_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)
+*  Solution file: **WPFSample.sln**
 
 
 <!-- ====================================================================== -->
@@ -197,10 +205,10 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 
 In Visual Studio, use NuGet Package Manager to add the WebView2 SDK to the project, as follows:
 
-1. In **Solution Explorer**, right-click the project name (based on either the Core or .NET Framework project template), and then select **Manage NuGet Packages**:
+1. In **Solution Explorer**, right-click the project name (based on either the .NET (Core) or .NET Framework project template), and then select **Manage NuGet Packages**:
 
-   ![The 'Manage NuGet packages' command on the right-click menu](media/wpf-getting-started-mng-nuget.png)
- 
+   ![The 'Manage NuGet packages' command on the right-click menu](./wpf-images/manage-nuget-packages-menuitem.png)
+
 1. In the upper left, click the **Browse** tab.  In the search bar, type `Microsoft.Web.WebView2`, then click the **Microsoft.Web.WebView2** package.
 
    The NuGet package manager dialog box displays search results, including a **Microsoft.Web.WebView2** package.  The dialog box has a version number and **Install** button.
