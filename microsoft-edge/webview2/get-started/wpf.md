@@ -89,11 +89,12 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
 1. If you're using Visual Studio 2022, click a project template that has the title **WPF Application** and the description text **A project for creating a .NET WPF Application**:
 
-   ![Selecting the template 'WPF Application: .NET Core WPF Application' in the 2022 'Create a new project' dialog](wpf-images/wpf-getting-started-wpf-core-2022.png)
+   ![Selecting the template 'WPF Application: .NET Core WPF Application' in the 2022 'Create a new project' dialog](wpf-images/template-wpf-app-core-2022.png)
 
    If you're using Visual Studio 2019, click a project template that has the title **WPF Application** and the description text **A project for creating a .NET Core WPF Application**:
 
    ![Selecting the template 'WPF Application: .NET Core WPF Application' in the 2019 'Create a new project' dialog](media/wpf-getting-started-wpf-core.png)
+   <!--todo: after move png to article's dedicated images dir, change filename like for vs2022 above -->
 
    If the above project template isn't listed, see [Step 1 - Install Visual Studio with .NET support](#step-1---install-visual-studio-with-net-support) above, to install **.NET desktop development tools**.
 
@@ -101,11 +102,8 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
    The **Configure your new project: WPF Application** dialog box opens:
 
-   ![The 'Configure your new project: WPF Application' dialog for a .NET Core/5/6 project](wpf-images/wpf-getting-started-create-core-2022.png)
-
-   <!-- ![The 'Configure your new project: WPF Application' dialog for a .NET Core/5/6 project](media/wpf-getting-started-create-core.png)
-   ok to delete png
-   -->
+   ![The 'Configure your new project: WPF Application' dialog for a .NET Core/5/6 project](wpf-images/config-new-core-project-2022.png)
+   <!-- ok to delete png media/wpf-getting-started-create-core.png -->
 
 1. In the **Project name** text box, enter a project name, such as **MyWpfDotnetCoreWv2App**.
 
