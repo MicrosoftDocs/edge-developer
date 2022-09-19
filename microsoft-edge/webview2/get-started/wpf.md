@@ -26,20 +26,17 @@ This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code
 
 1. In Visual Studio, select **Tools** > **Get Tools and Features**.  The **Visual Studio Installer window** opens, and the **Modifying** dialog opens over it.
 
-1. Select the **.NET desktop development** project template so there's a checkmark on it.
+1. Select the **.NET desktop development** workload so there's a checkmark on it.
 
 1. In the section **Installation details** > **.NET desktop development** > **Included** on the right, make sure **.NET desktop development tools** and **.NET Framework 4.7.2 development tools** are listed, with a checkmark next to them.
 
 1. In the section **Installation details** > **.NET desktop development** > **Optional** on the right:
 
-   * If you're using Visual Studio 2022, make sure **Development tools for .NET** is selected.
-   * If you're using Visual Studio 2019, make sure **.NET development tools** is selected.
-
-   Visual Studio 2022:
+   * If you're using Visual Studio 2022, make sure **Development tools for .NET** is selected:
 
    ![Visual Studio 2022 'Modifying' dialog to install templates for '.NET desktop development'](wpf-images/install-dotnet-support-project-templates.png)
 
-   Visual Studio 2019:
+   * If you're using Visual Studio 2019, make sure **.NET development tools** is selected:
 
    ![Visual Studio 2019 'Modifying' dialog to install templates for '.NET desktop development'](wpf-images/install-dotnet-support-project-templates-2019.png)
 
@@ -65,7 +62,11 @@ This tutorial also works with Visual Studio 2017.  See [Visual Studio older down
 
 Start by creating a basic desktop project that contains a single main window.
 
-Decide whether to create a **.NET Core/5/6** project, or a **WPF App (.NET Framework)** project.  Then follow the applicable section below.
+1. Decide whether to create a **.NET Core/5/6** project (newer), or a **WPF App (.NET Framework)** project (older).  For more information, see:
+   * [.NET history](https://learn.microsoft.com/dotnet/core/introduction#net-history) in _What is .NET? Introduction and overview_.
+   * [.NET](https://en.wikipedia.org/wiki/.NET) at Wikipedia.
+
+1. Follow the applicable section below.
 
 
 #### Creating a .NET Core/5/6 project
@@ -106,7 +107,7 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
    ![The 'Additional information' dialog with a 'Target Framework' dropdown list](media/wpf-getting-started-create-core-add-info.png)
 
-1. Select **.NET Core 3.1**, **5.0**, **6.0**, or later (not **3.0**).  Then click the **Create** button.
+1. Select **.NET Core 3.1** or later, such as **.NET 6.0**.  (Don't select **.NET Core 3.0**.)  Then click the **Create** button.
 
    The initial .NET Core WPF Application project opens in Visual Studio:
 
