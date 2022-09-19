@@ -26,7 +26,7 @@ This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code
 
 1. In Visual Studio, select **Tools** > **Get Tools and Features**.  The **Visual Studio Installer window** opens, and the **Modifying** dialog opens over it.
 
-1. Select the card **.NET desktop development** so there's a checkmark on it.
+1. Select the **.NET desktop development** project template so there's a checkmark on it.
 
 1. In the section **Installation details** > **.NET desktop development** > **Included** on the right, make sure **.NET desktop development tools** and **.NET Framework 4.7.2 development tools** are listed, with a checkmark next to them.
 
@@ -37,11 +37,11 @@ This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code
 
    Visual Studio 2022:
 
-   ![Visual Studio 2022 'Modifying' dialog to install project templates for '.NET desktop development'](wpf-images/install-dotnet-support-project-templates.png)
+   ![Visual Studio 2022 'Modifying' dialog to install templates for '.NET desktop development'](wpf-images/install-dotnet-support-project-templates.png)
 
    Visual Studio 2019:
 
-   ![Visual Studio 2019 'Modifying' dialog to install project templates for '.NET desktop development'](wpf-images/install-dotnet-support-project-templates-2019.png)
+   ![Visual Studio 2019 'Modifying' dialog to install templates for '.NET desktop development'](wpf-images/install-dotnet-support-project-templates-2019.png)
 
 1. Click the **Modify** button.
 
@@ -76,17 +76,17 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
 1. In the opening panel, click **Create new project**.  Or, in the main Visual Studio window, select **File** > **New** > **Project**.  The **Create a new project** dialog opens.
 
-1. In the **Search for templates** text box, type `WPF Application`.  The **Create a new project** panel shows the installed templates that match your entered text.  This article shows the C# rather than VB dialogs; both languages are supported for WebView2.
+1. In the **Search for templates** text box, type `WPF Application`.  The **Create a new project** panel shows the installed project templates that match your entered text.  This article shows the C# rather than VB dialogs; both languages are supported for WebView2.
 
-1. If you're using Visual Studio 2022, click a card that has the title **WPF Application** and the description text **A project for creating a .NET WPF Application**:
+1. If you're using Visual Studio 2022, click a project template that has the title **WPF Application** and the description text **A project for creating a .NET WPF Application**:
 
-   ![Selecting the card 'WPF Application: .NET Core WPF Application' in the 2022 'Create a new project' dialog](wpf-images/wpf-getting-started-wpf-core-2022.png)
+   ![Selecting the template 'WPF Application: .NET Core WPF Application' in the 2022 'Create a new project' dialog](wpf-images/wpf-getting-started-wpf-core-2022.png)
 
-   If you're using Visual Studio 2019, click a card that has the title **WPF Application** and the description text **A project for creating a .NET Core WPF Application**:
+   If you're using Visual Studio 2019, click a project template that has the title **WPF Application** and the description text **A project for creating a .NET Core WPF Application**:
 
-   ![Selecting the card 'WPF Application: .NET Core WPF Application' in the 2019 'Create a new project' dialog](media/wpf-getting-started-wpf-core.png)
+   ![Selecting the template 'WPF Application: .NET Core WPF Application' in the 2019 'Create a new project' dialog](media/wpf-getting-started-wpf-core.png)
 
-   If the above card isn't listed, see [Step 1 - Install Visual Studio with .NET support](#step-1---install-visual-studio-with-net-support) above, to install **.NET desktop development tools**.
+   If the above project template isn't listed, see [Step 1 - Install Visual Studio with .NET support](#step-1---install-visual-studio-with-net-support) above, to install **.NET desktop development tools**.
 
 1. Click the **Next** button.
 
@@ -110,12 +110,12 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
    The initial .NET Core WPF Application project opens in Visual Studio:
 
-   ![Initial project in Visual Studio 2022 using .NET Core WPF Application project template](wpf-images/initial-project-core-2022.png)
+   ![Initial project in Visual Studio 2022 using .NET Core WPF Application template](wpf-images/initial-project-core-2022.png)
 
 Skip to [Step 4 - Build and run the initial project without WebView2](#step-4---build-and-run-the-initial-project-without-webview2) below.
 
 
-<!-- card title: WPF App (.NET Framework) -->
+<!-- project template title: WPF App (.NET Framework) -->
 #### Creating a WPF App (.NET Framework) project
 
 If you are creating a WPF App (.NET Framework) project, do the following steps.  Otherwise, skip to [Step 4 - Build and run the initial project without WebView2](#step-4---build-and-run-the-initial-project-without-webview2).
@@ -125,18 +125,13 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 1. In the opening panel, click **Create new project**.  Or, in the main Visual Studio window, select **File** > **New** > **Project**.  The **Create a new project** dialog opens.
    <!-- resume here, using 2022 ~ -->
 
-1. In the **Search for templates** text box, type `WPF App`.  The **Create a new project** panel shows the installed templates that match your entered text.  This article shows the C# rather than VB dialogs; both languages are supported for WebView2.
+1. In the **Search for templates** text box, type `WPF App`.  The **Create a new project** panel shows the installed project templates that match your entered text.  This article shows the C# rather than VB dialogs; both languages are supported for WebView2.
 
-1. Click a card that has the title **WPF App (.NET Framework)** and the description text **Windows Presentation Foundation client application**:
+1. Click a project template that has the title **WPF App (.NET Framework)** and the description text **Windows Presentation Foundation client application**:
 
-   ![Selecting the card 'WPF App' in the 2022 'Create a new project' dialog](wpf-images/select-fw-project-template-2022.png)
+   ![Selecting the template 'WPF App' in the 2022 'Create a new project' dialog](wpf-images/select-fw-project-template-2022.png)
 
-   <!-- same as 2022 (unlike for Core)
-   If you're using Visual Studio 2019, click a card that has the title **WPF App** and the description text **Windows Presentation Foundation client application**:
-   ![Selecting the card 'WPF App' in the 2019 'Create a new project' dialog](media/wpf-getting-started-wpf-fw) 
-   ok to delete png -->
-
-   If the above card isn't listed, see [Step 1 - Install Visual Studio with .NET support](#step-1---install-visual-studio-with-net-support) above, to install **.NET desktop development tools**.
+   If the above project template isn't listed, see [Step 1 - Install Visual Studio with .NET support](#step-1---install-visual-studio-with-net-support) above, to install **.NET desktop development tools**.
 
 1. Click the **Next** button.
 
@@ -154,7 +149,7 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 
    The initial WPF App (.NET Framework) project opens in Visual Studio:
 
-   ![Initial project in Visual Studio 2022 using WPF App (.NET Framework) project template](wpf-images/initial-project-dotnet-framework-2022.png)
+   ![Initial project in Visual Studio 2022 using the WPF App (.NET Framework) template](wpf-images/initial-project-dotnet-framework-2022.png)
 
 
 <!-- ====================================================================== -->
@@ -201,15 +196,15 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 
 In Visual Studio, use NuGet Package Manager to add the WebView2 SDK to the project, as follows:
 
-1. In **Solution Explorer**, right-click the project name (based on either the Core or .NET Framework template), and then select **Manage NuGet Packages**:
+1. In **Solution Explorer**, right-click the project name (based on either the Core or .NET Framework project template), and then select **Manage NuGet Packages**:
 
    ![The 'Manage NuGet packages' command on the right-click menu](media/wpf-getting-started-mng-nuget.png)
  
-1. In the upper left, click the **Browse** tab.  In the search bar, type `Microsoft.Web.WebView2`, then click the **Microsoft.Web.WebView2** card.
+1. In the upper left, click the **Browse** tab.  In the search bar, type `Microsoft.Web.WebView2`, then click the **Microsoft.Web.WebView2** package.
 
-   The NuGet package manager dialog box displays search results, including a **Microsoft.Web.WebView2** card.  The dialog box has a version number and **Install** button.
+   The NuGet package manager dialog box displays search results, including a **Microsoft.Web.WebView2** package.  The dialog box has a version number and **Install** button.
    
-   ![NuGet package manager dialog box displays the Microsoft.Web.WebView2 card](media/install-nuget.png)
+   ![NuGet package manager dialog box displays the Microsoft.Web.WebView2 package](media/install-nuget.png)
 
 1. Accept the default version, and then click the **Install** button.
 
