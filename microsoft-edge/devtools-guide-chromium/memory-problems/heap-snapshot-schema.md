@@ -251,7 +251,7 @@ The following code snippet shows the `node_fields` metadata and the data for the
 | `2` | `id` | The node's unique ID. |
 | `3` | `self_size` | The node's size in bytes. |
 | `4` | `edge_count` | The number of edges connected to this node. |
-| `5` | `trace_node_id` | _Not documented yet_ |
+| `5` | `trace_node_id` | The ID of the trace node <!--todo: more detail --> |
 | `6` | `detachedness` | Whether this node can be reached from the `window` global object. `0` means the node is not detached; the node can be reached from the `window` global object. `1` means the node is detached; the node can't be reached from the `window` global object. |
 
 #### Node types
@@ -264,7 +264,7 @@ The first number in the group of numbers for a node in the `nodes` array corresp
 | Object | Any user-defined object, such as `{ x: 2 }` or `new Foo(4)`. Contexts, which show up in DevTools as **system / Context**, hold variables that had to be allocated on the heap because they're used by a nested function. |
 | Native | Things that are allocated by the Blink rendering engine, rather than by V8. These are mostly DOM items such as `HTMLDivElement` or `CSSStyleRule`. |
 | Concatenated string | The result of concatenating two strings with the `+` operator. Rather than making a new string that contains a copy of all the data from the two source strings, V8 creates a `ConsString` object that contains pointers to the two source strings. From a JavaScript perspective, it acts just like any other string, but from a memory profiling perspective, it is different. |
-| Sliced string | The result of a substring operation, such as using `String.prototype.substr` or `String.prototype.substring`. V8 avoids copying string data by instead creating a SlicedString which points to the original string and specifies the start index and length. From a JS perspective, it acts just like any other string, but from a memory profiling perspective, it is different. |
+| Sliced string | The result of a substring operation, such as using `String.prototype.substr` or `String.prototype.substring`. V8 avoids copying string data by instead creating a `SlicedString`, which points to the original string and specifies the start index and length. From a JavaScript perspective, a sliced string acts like any other string, but from a memory profiling perspective, it is different. |
 | Array | Various internal lists, which are displayed in DevTools with the category name **(array)**. Like Hidden, this category groups together a variety of things. Many of the objects here are named **(object properties)** or **(object elements)**, indicating that they contain the string-keyed or numeric-keyed properties of a JavaScript object. |
 | Code | Things that grow proportionally to the amount of script, and/or the number of times that functions run. |
 | Synthetic | Synthetic nodes don't correspond to anything actually allocated in memory. These are used to distinguish the different kinds of garbage-collection (GC) roots. |
@@ -273,7 +273,7 @@ The first number in the group of numbers for a node in the `nodes` array corresp
 
 Similar to the `nodes` array, the `edges` top-level array contains all of the elements that are needed to re-create the edges of the memory graph.
 
-Also similar to nodes, the total number of edges can be calculated by multiplying `snapshot.edge_count` with `snapshot.meta.edge_fields.length`. Edges are also stored as a sequence of numbers which you will need to iterate on by groups of `snapshot.meta.edge_fields.length`.
+Also similar to nodes, the total number of edges can be calculated by multiplying `snapshot.edge_count` by `snapshot.meta.edge_fields.length`. Edges are also stored as a sequence of numbers, which you will need to iterate on by groups of size `snapshot.meta.edge_fields.length`.
 
 However, to read the `edges` array correctly, you first need to read the `nodes` array, because each node knows how many edges it has. 
 
