@@ -18,9 +18,9 @@ A completed version of this tutorial project is available in the WebView2Samples
 <!-- ====================================================================== -->
 ## Step 1 - Install Visual Studio with .NET support
 
-This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code.  This article describes using Visual Studio 2022.
+This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code.  This article mainly describes using Visual Studio 2022.
 
-1. Install [Visual Studio](https://visualstudio.microsoft.com) 2022.  Install **.NET desktop development** support, to get the needed project templates, as follows.
+1. Install [Visual Studio](https://visualstudio.microsoft.com).<!--strong default is 2022-->  Install **.NET desktop development** support, to get the needed project templates, as follows.
 
 1. If you're at the Visual Studio startup screen, scroll to the bottom of the **Create a new project** dialog and click the link **Open without code**.  Visual Studio opens.
 
@@ -45,7 +45,7 @@ This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code
 
 1. Click the **Modify** button.
 
-This tutorial also works with Visual Studio 2019 or 2017.  If you want to download either of those, see [Visual Studio older downloads](https://visualstudio.microsoft.com/vs/older-downloads/).  Install .NET support, to get the needed project templates.
+This tutorial also works with Visual Studio 2017.  See [Visual Studio older downloads](https://visualstudio.microsoft.com/vs/older-downloads/).  Install .NET support, to get the needed project templates, similar to the above steps.
 
 
 <!-- ====================================================================== -->
