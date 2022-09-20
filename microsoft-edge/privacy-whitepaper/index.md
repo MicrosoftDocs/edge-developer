@@ -466,6 +466,8 @@ If you previously saved payment information to your Microsoft account, it is als
 
 The feature is only available for users with a non-child Microsoft account.  The feature is not available for users signed into Microsoft Edge with a work or school account.
 
+<!-- ====================================================================== -->
+## Personalization
 If you allow personalization, the Microsoft Edge team collects and uses your Microsoft Edge browsing history to personalize experiences and advertising on [Bing](https://bing.com), Microsoft News, and other Microsoft services.  Personalization provides more relevant and useful search results, ads, and news content.  For example, if the Microsoft Edge team determines based on your browsing that you prefer a particular store, the ads you see may be for that store.  Similarly, if you frequently look at travel blogs and read travel articles, your news feed may include news content about traveling.
 
 The personalization feature is only available for users with a non-child Microsoft account. The feature is not available for users signed in to Microsoft Edge with a work or school account.
@@ -481,7 +483,6 @@ Your browsing history and other data are transferred over HTTPS and attached to 
 
 You may modify your interests or opt-out of personalized ads from the [Ad settings](https://account.microsoft.com/privacy/ad-settings) on the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
 
-> [!NOTE]
 > Opting out of personalized ads on the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/) does not turn off the collection and use of your browsing history for personalization of search results and content in your news feed. You can turn off the collection and use of your Microsoft Edge browsing history for personalized search results and news. Go to `edge://settings/privacy`. In **Personalize your web experience** turn off the **Improve your web experience by allowing Microsoft to use your browsing history from the account for personalizing advertising, search, news and other Microsoft services** setting. If you stop sharing the data, Microsoft no longer collects and uses your browsing history to personalize ads, search results, and news. For more information about personalization in Microsoft Edge, see [Microsoft Edge browsing history for personalized advertising and experiences](https://support.microsoft.com/help/4532583).
 
 
@@ -657,15 +658,6 @@ To convert your speech into text, Microsoft Edge supports the [Web Speech API](h
 
 To turn off speech translated to text, you may deny microphone access from any site that prompts for permission.  To turn off the Microphone permission for all sites, go to `edge://settings/content/microphone`.
 
-
-<!-- ====================================================================== -->
-## Spellcheck
-
-Microsoft Edge checks your spelling as you type in the browser.  The spellcheck service is completed locally on the device. Microsoft Edge does not send information about your typing to Microsoft for spellcheck. You can turn off the feature. Go to `edge://settings/languages`. In **Check Spelling**, turn off the setting for each desired language.
-
-When you add a new language to Microsoft Edge, the browser downloads the dictionary for the new language to the device using HTTPS.  The dictionary is used for the built-in spellcheck service.  Deleting the language from your Microsoft Edge settings deletes the dictionary from the device.  Guest mode does not use the custom dictionary from the profile or any added languages.  To add or remove words in your local dictionary, go to `edge://settings/languages` and under **Check Spelling** select **Add or delete words**.
-
-
 <!-- ====================================================================== -->
 ## Suggest similar sites
 
@@ -750,6 +742,16 @@ Microsoft Edge WebView controls allow app developers to host web content in nati
 
 To enable diagnostic data collection, go to `edge://settings/privacy`. Turn on the **Optional diagnostic data** setting. To turn off diagnostic data collection for Microsoft Edge on Windows 10 and later, open **Start** > **Settings** > **Privacy** and select **Diagnostics & feedback**. To turn off diagnostic data collection for all other platforms, go to `edge://settings/privacy`. Turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting. The applications hosting Microsoft Edge WebView may collect other data that is governed by the data collection management of the developer and relevant privacy policies.
 
+<!-- ====================================================================== -->
+## Writing assistance
+
+Microsoft Edge provides enhanced spelling and grammar checking as you type in the browser. Go to `edge://settings/languages` and select **Microsoft Editor** under **Use writing assistance toggle**. If you select **Microsoft Editor** to provide enhanced spelling and grammar checking, Microsoft Edge will send your typed text and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to detect spelling and grammar errors in your text. All your typed text sent to Microsoft are deleted immediately after processing occurs. No data is stored for any period of time. If you select **Basic** under **Use writing assistance** toggle in `edge://settings/languages`, the service will perform only local spellchecking on the device and no data will be sent to the cloud for spellchecking services. 
+
+To turn off all spelling and grammar capabilities, toggle **Use writing assistance toggle** off. 
+ 
+When you add a new language to Microsoft Edge, the browser downloads the dictionary for the new language to the device using HTTPS. The dictionary is used for the basic spellcheck service or for languages not supported by Editor spelling and grammar checking. Deleting the language from your Microsoft Edge settings deletes the dictionary from the device.To add or remove words in your local dictionary, go to `edge://settings/languages` and under **Customize dictionary**, select **Add or delete words**.
+
+ Custom dictionary is not available in **Guest** mode.
 
 <!-- ====================================================================== -->
 ## Thank you!
