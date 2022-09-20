@@ -24,8 +24,7 @@ ms.date: 05/04/2021
 
 This guide shows you how to use DevTools to inspect [Cache](https://developer.mozilla.org/docs/Web/API/Cache) data.
 
-To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) data, in the **Network** tool, use the **Size** column of the **Network Log**.  See [Log network activity](../network/index.md#log-network-activity) in _Inspect network activity_.  See [Quota Useage](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/progressive-web-apps/#quota-usage)
-
+To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) data, in the **Network** tool, use the **Size** column of the **Network Log**.  See [Log network activity](../network/index.md#log-network-activity) in _Inspect network activity_.  
 
 <!-- ====================================================================== -->
 ## View cache data
@@ -102,6 +101,8 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/storage/cache/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+
+Note that to accurately interpret the Storage Usage chart in the **Application** tool, see the [Quota usage section](../../progressive-web-apps/#quota-usage) of the Debug Progressive Web Apps article."
 
 [![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
