@@ -19,7 +19,7 @@ This article describes the structure and content of `.heapsnapshot` JSON files s
 <!-- ====================================================================== -->
 ## Record a heap snapshot
 
-To export a `.heapsnapshot` file, you first need to record a heap snapshot in the **Memory** tool, as follows:
+To export a `.heapsnapshot` file, first you need to record a heap snapshot in the **Memory** tool, as follows:
 
 1. In Microsoft Edge, navigate to the website you want to export the data from.
 
