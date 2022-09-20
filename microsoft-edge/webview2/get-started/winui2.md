@@ -313,6 +313,9 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) is initially called.
 
+#### Xbox, HoloLens, and XAML limitations
+
+This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered at a future point in time.
 
 #### API limitations
 
