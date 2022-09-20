@@ -43,4 +43,4 @@ The Application tool has the following pages:
 
 *  Frames 
 
-For more information, see [Cache Storage](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/progressive-web-apps/#quota-usage).
+Note: to accurately interpret the Storage Usage chart in the Application tool, see the [Quota usage](progressive-web-apps/#quota-usage) section of the Debug Progressive Web Apps article.
