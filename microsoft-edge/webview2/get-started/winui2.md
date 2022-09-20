@@ -13,8 +13,11 @@ ms.date: 07/14/2022
 In this tutorial, you:
 *  Set up your development tools for creating UWP apps that use WebView2 to display web content.
 *  Create an initial WinUI 2 (UWP) app.
+*  Install the **Microsoft.UI.Xaml** package (WinUI 2) for the project.
 *  Add a WebView2 control that displays webpage content.
 *  Learn about WebView2 concepts along the way.
+
+You use the **C# Blank App (Universal Windows)** project template, then install the **Microsoft.UI.Xaml** package (WinUI 2) for this project.  Installing that package installs the **Microsoft.Web.WebView2** package (the WebView2 SDK) as a dependency.
 
 The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  This package provides Windows UI features, including:
 *  UWP XAML controls.
@@ -23,9 +26,17 @@ The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  
 
 WinUI 2 supports UWP only.  These controls are backward-compatible.
 
-Follow the major Step sections in sequence, below.
 
-<!-- skip h3 -->
+#### Completed project
+
+Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
+<!-- A completed version of this tutorial project is available in the **WebView2Samples** repo:
+*  Sample name: **__**
+*  Repo directory: [__](__)
+*  Solution file: **__.sln**
+-->
+
+Follow the major Step sections in sequence, below.
 
 
 <!-- ====================================================================== -->
@@ -46,15 +57,15 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 1. Open Microsoft Visual Studio.  The opening option window appears:
 
-   ![Visual Studio 2022 opening option window.](media/winui2-vs2022-opening-option-window.png)
+   ![Visual Studio 2022 opening option window](media/winui2-vs2022-opening-option-window.png)
 
 1. In the lower right, click **Continue without code**.  Visual Studio opens, empty:
 
-   ![Visual Studio 2022 empty.](media/winui2-visual-studio-2022-empty.png)
+   ![Visual Studio 2022 empty](media/winui2-visual-studio-2022-empty.png)
 
 1. Select **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens, and then the **Modifying - Visual Studio** window opens over it:
 
-   ![The Modifying Visual Studio window, initial state.](media/winui2-modifying-vs-window.png)
+   ![The Modifying Visual Studio window, initial state](media/winui2-modifying-vs-window.png)
 
   If the **Modifying Visual Studio** window isn't open, in the **Visual Studio Installer** window, click the **Modify** button.
 
@@ -65,7 +76,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 1. On the right, in the **Installation details** section, expand **Universal Windows Platform development**, and then select **C++ (v143) Universal Windows Platform tools** or **C++ (v142) Universal Windows Platform tools**:
 
-   ![The 'Modifying Visual Studio 2019' dialog displays cards and installation details.](media/winui2-getting-started-install-workloads.png)
+   ![The 'Modifying Visual Studio 2019' dialog displays cards and installation details](media/winui2-getting-started-install-workloads.png)
 
    If all of these components have already been installed, you can click the **Close** button, close the **Visual Studio Installer** window, and skip to the next major section of steps below.
 
@@ -77,13 +88,13 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 1. A dialog box appears, "Before we get started, close Visual Studio":
 
-   ![Dialog box: Before we get started, close Visual Studio.](media/winui2-before-we-get-started.png)
+   ![Dialog box: Before we get started, close Visual Studio](media/winui2-before-we-get-started.png)
 
 1. Click the **Continue** button.
 
    Visual Studio downloads, verifies, and installs the selected packages:
 
-   ![Visual Studio Installer working.](media/winui2-vs-installer-working.png)
+   ![Visual Studio Installer working](media/winui2-vs-installer-working.png)
 
    This can take several minutes.  In a new window or tab, you can check out a top-level overview at [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - an initial introduction to WebView2 features at developer.microsoft.com.
 
@@ -99,17 +110,17 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
    Or, if Visual Studio is closed, open it, and then in the startup screen of Visual Studio, click the **Create a new project** card:
 
-   ![The startup screen of Visual Studio: click the 'Create a new project' card.](media/winui2-opening-win-create-new-project-card.png)
+   ![The startup screen of Visual Studio: click the 'Create a new project' card](media/winui2-opening-win-create-new-project-card.png)
 
 1. In the **Search for templates** text box at the top, enter **C# Blank App (Universal Windows)**, and then select the **C# Blank App (Universal Windows)** card:
 
-   ![The 'Create a new project' dialog box displays the blank app (Universal Windows) card.](media/winui2-getting-started-create-project.png)
+   ![The 'Create a new project' dialog box displays the blank app (Universal Windows) card](media/winui2-getting-started-create-project.png)
 
 1. Click the **Next** button.
 
    The **Configure your new project** dialog appears, for a **Blank App (Universal Windows)**:
 
-   ![The 'Configure your new project' dialog box displays text boxes for a Blank App (Universal Windows).](media/winui2-getting-started-config-new-project.png)
+   ![The 'Configure your new project' dialog box displays text boxes for a Blank App (Universal Windows)](media/winui2-getting-started-config-new-project.png)
 
 1. In the **Project name** text box, enter a project name, such as `MyUWPGetStartApp`.
 
@@ -120,12 +131,12 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 <!-- apparently old ui, doesn't appear in latest vs2022 july 11 2022, apparently got simplified later:
    The **New Universal Windows Platform Project** dialog box appears:
 
-   ![The 'New Universal Windows Platform Project' dialog box.](media/winui2-new-univ-win-plat-project.png)
+   ![The 'New Universal Windows Platform Project' dialog box](media/winui2-new-univ-win-plat-project.png)
  -->
 
    The **New Windows Project** dialog box appears:
 
-   ![The 'New Windows Project' dialog box.](media/winui2-new-windows-project.png)
+   ![The 'New Windows Project' dialog box](media/winui2-new-windows-project.png)
 
 1. Accept the defaults, and click the **OK** button.
 
@@ -134,7 +145,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
    Visual Studio displays the newly created solution and project:
 
-   ![Visual Studio, containing the newly created WinUI 2 (UWP) project.](media/winui2-vs-after-new-project-created.png)
+   ![Visual Studio, containing the newly created WinUI 2 (UWP) project](media/winui2-vs-after-new-project-created.png)
 
 
 <!-- ====================================================================== -->
@@ -180,7 +191,7 @@ Next, you install the **Microsoft.UI.Xaml** package for this project.  Microsoft
 
    The **Preview Changes** dialog box appears:
 
-   ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package.](media/winui2-preview-changes-ui-xaml-pkg.png)
+   ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package](media/winui2-preview-changes-ui-xaml-pkg.png)
    <!-- TODO: update capture after 2.8 GA, show 2.8.0 or later -->
 
    The above image shows 2.7.1, but these instructions are actually written for 2.8.0 or later, for General Availability of WebView2 in the Microsoft.UI.Xaml NuGet package.
@@ -190,11 +201,11 @@ Next, you install the **Microsoft.UI.Xaml** package for this project.  Microsoft
 
 1. The **License Acceptance** dialog box appears:
 
-   ![The 'License Acceptance' dialog box for installing the Microsoft.UI.Xaml package.](media/winui2-license-acceptance-ui-xaml-pkg.png)
+   ![The 'License Acceptance' dialog box for installing the Microsoft.UI.Xaml package](media/winui2-license-acceptance-ui-xaml-pkg.png)
 
 1. Click the **I Accept** button.  In Visual Studio, the `readme.txt` file is displayed, saying that you've installed the WinUI package:
 
-   ![The readme.txt file after installing the Microsoft.UI.Xaml package, reports that you installed the WinUI NuGet package.](media/winui2-readme-winui-pkg.png)
+   ![The readme.txt file after installing the Microsoft.UI.Xaml package, reports that you installed the WinUI NuGet package](media/winui2-readme-winui-pkg.png)
 
    The readme lists some lines of code that are similar to what we'll add.
 
@@ -232,7 +243,7 @@ Now you are ready to add WebView2 code to the project.  First, add a namespace r
 
     Above the `MainPage.xaml` file in the code editor, a preview of the WebView2 content might be displayed, or it might remain blank (white) until you first build the app:
 
-    ![Preview of the WebView2 content.](media/winui2-getting-started-preview-webview2-content.png)
+    ![Preview of the WebView2 content](media/winui2-getting-started-preview-webview2-content.png)
 
     The above image shows "control" on two lines; we recommend using the word "controls" on those lines instead.
     <!-- TODO: update capture after GA -->
@@ -247,11 +258,11 @@ Now you are ready to add WebView2 code to the project.  First, add a namespace r
 
 1. Click **Debug** > **Start Debugging**.  The app window opens, briefly showing the WebView2 WebUI grid:
 
-   ![During debugging, the WebView2 WebUI grid briefly appears.](media/winui2-getting-started-webview2-grid.png)
+   ![During debugging, the WebView2 WebUI grid briefly appears](media/winui2-getting-started-webview2-grid.png)
 
 1. After a moment, the app window shows the Bing website in the WebView2 control for WebUI 2:
 
-   ![The sample app displays the Bing website.](media/winui2-getting-started-webview2-with-content.png)
+   ![The sample app displays the Bing website](media/winui2-getting-started-webview2-with-content.png)
 
 1. In Visual Studio, click **Debug** > **Stop Debugging** to close the app window.
 
