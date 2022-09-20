@@ -751,15 +751,15 @@ Microsoft Edge provides enhanced spelling and grammar checking as you type in th
 
 If you select **Microsoft Editor**, Microsoft Edge sends your typed text and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to detect spelling and grammar errors in your text. All your typed text that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time. 
 
-If you select **Basic** under **Use writing assistance** toggle in `edge://settings/languages`, the service will perform only local spellchecking on the device, and no data will be sent to the cloud for spellchecking services. 
+If you select **Basic** under the **Use writing assistance** toggle in `edge://settings/languages`, the service will perform only local spellchecking on the device, and no data will be sent to the cloud for spellchecking services. 
 
-To turn off all spelling and grammar capabilities, toggle **Use writing assistance toggle** off. 
+To turn off all spelling and grammar capabilities, turn off the **Use writing assistance** toggle.
  
 When you add a new language to Microsoft Edge, the browser downloads the dictionary for the new language to the device over HTTPS. The dictionary is used for the basic spellcheck service or for languages that aren't supported by Microsoft Editor spelling and grammar checking. Deleting the language from your Microsoft Edge settings deletes the dictionary from the device.
 
-To add or remove words in your local dictionary, go to `edge://settings/languages`, and then under **Customize dictionary**, select **Add or delete words**.
+To add a word in your local dictionary, go to `edge://settings/languages`, click **Customize dictionary**, type a word in the **Add a new word** text box, and then click the **Add word** button.  To remove a word, click the **X** button next to a word.
 
- Custom dictionary is not available in **Guest** mode.
+The custom dictionary is not available in **Guest** mode.
 
 <!-- ====================================================================== -->
 ## Thank you!
