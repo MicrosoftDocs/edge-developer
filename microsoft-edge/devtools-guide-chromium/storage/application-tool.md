@@ -29,7 +29,7 @@ The Application tool has the following pages:
    *  Interest Groups
 
 *  Cache
-   *  [Cache Storage](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/progressive-web-apps/#quota-usage)
+   *  Cache Storage
    *  Back/forward cache
 
 *  Background Services
@@ -42,3 +42,5 @@ The Application tool has the following pages:
    *  Reporting API
 
 *  Frames 
+
+For more information, see [Cache Storage](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/progressive-web-apps/#quota-usage).
