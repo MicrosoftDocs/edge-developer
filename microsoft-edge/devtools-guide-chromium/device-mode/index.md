@@ -36,7 +36,7 @@ DevTools provides the following mobile device emulation features:
 
 
 <!-- ====================================================================== -->
-## Limitations
+## Limitations   
 
 **Device Emulation** is a [first-order approximation](https://en.wikipedia.org/wiki/Order_of_approximation#First-order) of the look and feel of your page on a mobile device.  **Device Emulation** doesn't actually run your code on a mobile device.  Instead, you simulate the mobile user experience from your laptop or desktop.
 
