@@ -534,19 +534,13 @@ Status:
 <!-- ====================================================================== -->
 ## Highlight important DOM properties in the Object Properties viewer
 
-_new as of v107_
+_new as of v107; added to Stable v105 through Canary v107 when v107 was released_
 
-Selecting this checkbox causes important DOM properties to be highlighted in the Object Properties viewer.
-<!-- todo: need text.  what tool contains Object Properties viewer? check other "?" link: no link in Can 108 -->
+Selecting this checkbox causes important DOM properties to be highlighted in the **Properties** tab in the **Elements** tool, for the DOM tree element that's currently selected.  Each important property is highlighted by bold font and a star icon to the left.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary v107.
 *  This checkbox is present in Microsoft Edge Stable v105.
-
-<!-- todo - link?  "object properties" only appears in:
-See also:
-* [Thread safety](../../webview2/concepts/threading-model.md#thread-safety) in _Threading model for WebView2 apps_.
--->
 
 
 <!-- ====================================================================== -->
