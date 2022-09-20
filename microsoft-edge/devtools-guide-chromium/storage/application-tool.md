@@ -42,3 +42,5 @@ The Application tool has the following pages:
    *  Reporting API
 
 *  Frames 
+
+Note: to accurately interpret the Storage Usage chart in the Application tool, see the [Quota usage](../progressive-web-apps/#quota-usage) section of the Debug Progressive Web Apps article.
