@@ -45,7 +45,7 @@ The following image shows the **Weekly users** who have enabled and disabled the
 > [!div class="mx-imgBorder"]
 > ![Weekly users who have enabled and disabled the extension over the selected time period](../media/extensions-analytics-enabled-disabled.png)
 
-
+To view more
 <!-- ====================================================================== -->
 
 
