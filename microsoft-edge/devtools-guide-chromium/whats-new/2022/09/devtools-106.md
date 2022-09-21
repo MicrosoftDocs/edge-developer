@@ -50,7 +50,7 @@ Screenshot:
 <!-- see att. -->
 
 See also:
-* [Automated Quick Fixes and issue filtering](https://docs.microsoft.com/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension#automated-quick-fixes-and-issue-filtering) in _Microsoft Edge DevTools extension for Visual Studio Code_.
+* [Automated Quick Fixes and issue filtering](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#automated-quick-fixes-and-issue-filtering) in _Microsoft Edge DevTools extension for Visual Studio Code_.
 
 
 <!-- ====================================================================== -->
