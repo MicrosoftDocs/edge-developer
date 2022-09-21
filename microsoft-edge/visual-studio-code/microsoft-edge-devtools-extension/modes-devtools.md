@@ -26,7 +26,7 @@ How specifically do you do each of these approaches?  How do these 3 approaches 
 https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
 -->
 
-* Open a new instance of Microsoft Edge inside Visual Studio Code.  This starts a new browser instance with DevTools for your project.  See [Opening a browser instance in the extension](./microsoft-edge-devtools-extension/opening-browser-instance.md).
+* Open a new instance of Microsoft Edge inside Visual Studio Code.  This starts a new browser instance with DevTools for your project.  See [Opening a browser instance in the extension](./opening-browser-instance.md).
 
 * Launch Microsoft Edge in a new window, and go to your web application.
 

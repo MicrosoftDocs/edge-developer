@@ -780,7 +780,7 @@
         - name: DevTools for Visual Studio Code
           items:
             - name: DevTools extension for Visual Studio Code
-              href: visual-studio-code/microsoft-edge-devtools-extension.md
+              href: visual-studio-code/microsoft-edge-devtools-extension.md # was long article, now firstchild/landing page
               displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
 
             - name: Inline and live issue analysis
@@ -1405,8 +1405,8 @@
           href: visual-studio-code/ide-integration.md
           displayName: 
 
-        - name: DevTools extension for Visual Studio Code
-          href: visual-studio-code/microsoft-edge-devtools-extension/aux-toc-page.md
+        - name: DevTools extension for Visual Studio Code # aux jump page for toc outside of devtools bucket
+          href: visual-studio-code/microsoft-edge-devtools-extension/devtools-extension.md
 
         - name: Opening source files in Visual Studio Code
           href: devtools-guide-chromium/sources/opening-sources-in-vscode.md

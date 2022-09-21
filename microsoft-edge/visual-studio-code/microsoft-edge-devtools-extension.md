@@ -8,6 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 09/07/2022
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
+<!-- this is the main landing (firstchild) page for the DevTools extension TOC bucket -->
 
 <!-- heading convention in these files: skip h3's; tag subheadings as h4's instead -->
 
