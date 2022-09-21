@@ -536,7 +536,19 @@ Status:
 
 _new as of v105_
 
-Selecting this checkbox causes important DOM properties to be highlighted in the **Properties** tab in the **Elements** tool, for the DOM tree element that's currently selected.  Each important property is highlighted by bold font and a star icon to the left.
+Selecting this checkbox causes important DOM properties to be highlighted in the **Properties** tab in tools such as the **Elements** tool, for the DOM tree element that's currently selected.  This new experiment makes certain important properties easier to see.  Some properties appear in bold, and others appear in bold and have a star icon next to them.
+
+The Object Properties viewer is in several tools, including **Elements**, **Sources**, **Console**, and **Network**.  It provides a tree view of properties and sub-properties of objects.
+
+To see the Object Properties viewer in the **Elements** tool:
+
+1. Right-click an item in a webpage and then select **Inspect**.  DevTools opens, with the page element selected in the DOM tree of the **Elements** tool.
+
+1. In the **Elements** tool, select the **Properties** tab, which is grouped with the **Styles** tab.
+
+   The **Properties** tab contains the list of properties for the selected element.  This list of properties is rendered by the Object Properties viewer.
+
+This experiment makes major properties easier to see.  This is useful because in JavaScript, objects inherit from parent objects, which themselves inherit from other ancestors, sometimes amounting to hundreds of properties.  This experiment helps you find the main properties.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary v107.
