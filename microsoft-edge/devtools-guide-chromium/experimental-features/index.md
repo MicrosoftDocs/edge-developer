@@ -534,7 +534,7 @@ Status:
 <!-- ====================================================================== -->
 ## Highlight important DOM properties in the Object Properties viewer
 
-_new as of v107; added to Stable v105 through Canary v107 when v107 was released_
+_new as of v105_
 
 Selecting this checkbox causes important DOM properties to be highlighted in the **Properties** tab in the **Elements** tool, for the DOM tree element that's currently selected.  Each important property is highlighted by bold font and a star icon to the left.
 
