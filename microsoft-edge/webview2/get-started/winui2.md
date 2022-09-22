@@ -43,7 +43,7 @@ Follow the major Step sections in sequence, below.
 ## Step 1 - Install Visual Studio
 
 Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual Studio 2022 is supported.  Visual Studio 2017 isn't supported.
-<!-- https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.9 -->
+<!-- https://learn.microsoft.com/visualstudio/releases/2019/release-notes-v16.9 -->
 
 1. If a suitable version of Microsoft Visual Studio isn't installed already, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that page to do a basic default installation of Visual Studio.
 
@@ -313,6 +313,9 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) is initially called.
 
+#### Xbox, HoloLens, and XAML limitations
+
+This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered at a future point in time.
 
 #### API limitations
 

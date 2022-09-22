@@ -72,7 +72,7 @@ Microsoft Edge DevTools includes the following tools.
 
 <!-- when no longer experimental, move into table:
 | **CSP Violations** tool | Displays any Content Security Policy (CSP) violations that are detected on the inspected webpage. | [CSP Violations tool](csp-violations/csp-violations-tool.md) |
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
+https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
 -->
 
 
