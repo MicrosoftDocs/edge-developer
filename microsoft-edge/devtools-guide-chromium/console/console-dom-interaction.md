@@ -154,7 +154,7 @@ The `$` has special powers in **Console**, and you may remember that from jQuery
    $$('a').map(a => {
       return {text: a.innerText, url: a.href}
    }).filter(a => {
-      return a.text !== '' && !a.url.match('docs.microsoft.com')
+      return a.text !== '' && !a.url.match('learn.microsoft.com')
    })
    ```
 

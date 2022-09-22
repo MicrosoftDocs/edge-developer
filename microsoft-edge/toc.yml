@@ -370,7 +370,7 @@
                   displayName: Coverage tool
 # CSP Violations --------------------------------------------------------------
             # - name: CSP Violations tool
-            #   https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
+            #   https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
             #   items:
             #     - name: Display Content Security Policy (CSP) violations
             #       href: devtools-guide-chromium/csp-violations/csp-violations-tool.md
@@ -438,6 +438,10 @@
 
                 - name: Speed up JavaScript runtime
                   href: devtools-guide-chromium/rendering-tools/js-runtime.md
+                  displayName: Memory tool
+
+                - name: The heap snapshot file format
+                  href: devtools-guide-chromium/memory-problems/heap-snapshot-schema.md
                   displayName: Memory tool
 # Memory Inspector tool -------------------------------------------------------
             - name: Memory Inspector tool
