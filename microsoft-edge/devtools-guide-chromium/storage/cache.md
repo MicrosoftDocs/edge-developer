@@ -50,6 +50,8 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 
    ![Viewing the content of a resource.](../media/storage-application-cache-storage-domain-js-preview.msft.png)
 
+To learn more about cache data storage quota, see the [Quota usage](../progressive-web-apps/index.md#quota-usage) section of the Debug Progressive Web Apps article.
+
 
 <!-- ====================================================================== -->
 ## Refresh a resource
@@ -102,8 +104,6 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/storage/cache/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
-
-Note: to accurately interpret the Storage Usage chart in the Application tool, see the [Quota usage](/microsoft-edge/devtools-guide-chromium/progressive-web-apps/index#quota-usage) section of the Debug Progressive Web Apps article.
 
 [![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
