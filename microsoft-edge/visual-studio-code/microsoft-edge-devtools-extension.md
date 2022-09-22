@@ -19,10 +19,21 @@ CSS Mirroring
 CSS mirror editing (lowercased in UI, initcapped at gh)
 -->
 
+<!-- todo:
+why sometimes localhost 8080 vs c: path?
+-->
+
 
 The [Microsoft Edge DevTools extension for Visual Studio Code](https://aka.ms/devtools-for-code) lets you use the Microsoft Edge Browser and Developer Tools right from within Visual Studio Code.  Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it's a great tool for web developers.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.
 
 ![Microsoft Edge Developer Tools and browser preview in Visual Studio Code](microsoft-edge-devtools-extension-images/devtools-extension-v201.png)
+
+This extension enables you to:
+*  Develop webpages and use DevTools without leaving Visual Studio Code; without having to work within DevTools within the browser window.
+*  Emulate devices, in terms of viewport size in which your webpage is displayed.
+*  Test the accessibility of your webpages from within Visual Studio Code.
+*  Live-edit CSS and SASS and see your changes reflected immediately in a browser instance while editing your actual source files (rather than a copy of the files returned from the server).
+
 
 The extension allows you to:
 
@@ -37,6 +48,19 @@ The extension allows you to:
 | Log information, try out JavaScript, and access the Window/DOM using the **Console** tool. | [Console integration](./microsoft-edge-devtools-extension/console-integration.md) |
 | Inspect storage and Service Workers using the **Application** tool. | [Application tool integration](./microsoft-edge-devtools-extension/application-tool-integration.md) |
 | Use the extension in the Visual Studio Code debugging workflow. | [Automatically opening the browser and DevTools when debugging in Visual Studio Code](./microsoft-edge-devtools-extension/extension-debugging-workflow.md) |
+
+The following tools are included in the DevTools extension:
+*  Elements tool
+*  Console tool
+*  Network tool
+*  Application tool
+*  Issues tool
+*  Network conditions tool
+*  Network request blocking tool
+*  Inspect tool
+*  Device emulation
+
+For the list of all tools that are in the Microsoft Edge browser version of DevTools, see [Overview of all tools](../devtools-guide-chromium/about-tools.md#overview-of-all-tools) in _About the list of tools_.
 
 
 <!-- ====================================================================== -->

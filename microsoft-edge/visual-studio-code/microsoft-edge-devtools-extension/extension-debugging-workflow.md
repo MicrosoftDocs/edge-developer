@@ -45,15 +45,15 @@ To debug your project, you might want to change the default page that opens in M
 
 1. On the **Activity Bar**, select **Microsoft Edge Tools**.
 
-1. In the **Microsoft Edge Tools: Targets** panel, click the **open a folder** link.
+1. In the **Microsoft Edge Tools: Targets** panel, click the **Open Folder** button.
 
-1. Select your project folder with the new default page to display when you begin debugging in Visual Studio Code.
+1. Select your project folder that contains the new default page (such as `index.html`) that you want to display in the browser instance when you begin debugging your webpage in Visual Studio Code.
 
    The first time you open a folder, you must confirm that you trust the authors of files in this folder.  You can also select the checkbox **Trust the authors of all files in the parent folder**:
 
    ![Do you trust the authors in the files of this folder?](../microsoft-edge-devtools-extension-images/trust.png)
 
-   The first time you complete this process, you must also select **Microsoft Edge Tools** again.
+   The first time you complete this process, you must also click the **Microsoft Edge Tools** button in the **Activity Bar** again.
 
    The **Microsoft Edge Tools: Targets** panel now displays two buttons: **Launch Instance** and **Generate launch.json**:
 
@@ -61,11 +61,11 @@ To debug your project, you might want to change the default page that opens in M
 
 1. Select **Generate launch.json** to create a `launch.json` in your project.
 
-1. In `launch.json`, add the URL of your project. If you leave URL empty, the default page is displayed.
+1. In `launch.json`, add the URL of your project.  This can be a local file path.  If you leave the URL as-is, the default, **Success** page is displayed.
 
 1. Save `launch.json`.
 
-When you choose to debug your project in Visual Studio Code it will automatically launch the browser and open the Developer Tools showing the URL you specified in your `launch.json`. 
+Now, when you select **Debug** when your project folder is open in Visual Studio Code, the **Edge DevTools** tab opens, showing content for the page that you specified in `launch.json`.  Also, the **Edge DevTools: Browser** tab opens, displaying the rendered page that you specified in `launch.json`.
 
 
 <!-- ====================================================================== -->
