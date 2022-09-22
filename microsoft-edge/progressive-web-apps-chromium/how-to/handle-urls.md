@@ -1,6 +1,6 @@
 ---
 title: Handle links to your Progressive Web Apps
-description: How links to your PWA can be handled by your app rather than the web browser.
+description: How links to your Progressive Web App (PWA) can be handled by your app rather than by the web browser.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
