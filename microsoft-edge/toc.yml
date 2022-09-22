@@ -789,10 +789,6 @@
               href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
               displayName: installing, setup, tutorial, demo to do
 
-            - name: The launch.json file for DevTools extension
-              href: visual-studio-code/microsoft-edge-devtools-extension/launch-json.md
-              displayName: 
-
             - name: Inline and live issue analysis
               href: visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
               displayName: 
@@ -831,6 +827,10 @@
 
             - name: Changing the extension settings
               href: visual-studio-code/microsoft-edge-devtools-extension/change-extension-settings.md
+              displayName: 
+
+            - name: The launch.json file for DevTools extension
+              href: visual-studio-code/microsoft-edge-devtools-extension/launch-json.md
               displayName: 
 
             - name: Getting in touch with the Microsoft Edge DevTools Extension team

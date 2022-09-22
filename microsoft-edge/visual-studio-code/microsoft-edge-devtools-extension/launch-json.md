@@ -9,6 +9,10 @@ ms.date: 09/21/2022
 ---
 # The launch.json file for DevTools extension
 
+Normally, you shouldn't need to create, use, or understand the `launch.json` file.  Instead, in the **Explorer** pane of Visual Studio Code, right-click a `.html` file, and then select **Open with Edge** > **Open Browser with DevTools**.  For more information, see [Get started with the DevTools extension for Visual Studio Code](./get-started.md).
+
+Visual Studio Code uses a `launch.json` file to configure and customize the debugger.  `launch.json` is a debugger configuration file.  This file also controls which web browser to use in conjunction with the debugger.  For example, when you test your webpage by clicking a button in the webpage to cause your JavaScript code to run, the VS Code debugger listens to the browser and steps through the JavaScript code of the webpage.
+
 The following is a copy of the `launch.json` after clicking the **Create launch.json** button in the extension.
 
 These configurations are needed because XYZ.  This info is defined in this file in order to control XYZ, as a way of XYZ how Visual Studio Code XYZ.
@@ -21,7 +25,7 @@ There are three _configurations_ and two _compounds_ initially defined by defaul
 
    * **Launch Microsoft Edge in headless mode** - this is a "launch"-type configuration.  It appears in UI xyz.  The Microsoft Edge browser window without UI ...
 
-   * **Open Edge DevTools** - this is a "debug"-type configuration.  It appears in UI xyz.  The **xyz** tab in Visual Studio Code ...
+   * **Open Edge DevTools** - this is a "debug"-type (or "attach"-type) configuration.  It appears in UI xyz.  The **xyz** tab in Visual Studio Code ...
 
 *  `compounds` - in the Visual Studio Code UI, these appear in the Debug toolbar:
 
@@ -46,7 +50,9 @@ The following sections of `launch.json` file are from v2.1.1 of the extension, i
 
 #### Launch Microsoft Edge
 
-This is a "launch"-type configuration.  It appears in UI xyz.  The Microsoft Edge browser window ...
+This is a "launch browser"-type configuration.  This configuration controls the browser component, such as which `.html` file to display, when **headless** is not selected in the UI.
+
+This configuration name doesn't appear directly in the UI.  This configuration is used by a compound configuration, below.
 
 ```json
         {
@@ -66,7 +72,10 @@ This is a "launch"-type configuration.  It appears in UI xyz.  The Microsoft Edg
 
 #### Launch Microsoft Edge in headless mode
 
-This is a "launch"-type configuration.  It appears in UI xyz.  The Microsoft Edge browser window without UI ...
+This is a "launch browser"-type configuration.  This configuration controls the browser component, such as which `.html` file to display, when **headless** is selected in the UI.
+
+This configuration name **Launch Microsoft Edge in headless mode** appears in the UI, such as in the Debug toolbar and in the **Debug Console**.  If you launch multiple instances, a number is appended to the additional instances in the UI, such as **Launch Microsoft Edge in headless mode 2**.  This configuration is used by a compound configuration, below.
+<!-- todo: is it a bug, that the Launch button is available sometimes when already launched? -->
 
 ```json
         {
@@ -87,7 +96,9 @@ This is a "launch"-type configuration.  It appears in UI xyz.  The Microsoft Edg
 
 #### Open Edge DevTools
 
-This is a "debug"-type configuration.  It appears in UI xyz.  The **xyz** tab in Visual Studio Code ...
+This is a "attach debugger"-type configuration.  This configuration controls the **Edge DevTools** tab (pane), such as which `.html` file populates the **Elements** tool.
+
+This configuration name doesn't appear directly in the UI.  This configuration is used by a compound configuration, below.
 
 ```json
         {
@@ -105,8 +116,21 @@ This is a "debug"-type configuration.  It appears in UI xyz.  The **xyz** tab in
 <!-- ====================================================================== -->
 ## Compounds
 
+Each compound configuration refers to two configurations: one configuration to open the Edge DevTools tab in Visual Studio Code, and then other configuration to open either the screencast in the editor (that is, the **Edge DevTools: Browser** tab), or both the screencast in the editor and the entire Microsoft Edge browser window.
+
+In the **Microsoft Edge Tools** pane, in the **Targets** section, on the right side of a target, click the **Toggle screencast** button.  The headless embedded **Edge DevTools: Browser** tab (pane) closes or opens.
+
+In the **Microsoft Edge Tools** pane, in the **Targets** section, on the right side of a target, click the **Attach and open Microsoft Edge Tools** button.
+
+
+
 
 #### Launch Edge Headless and attach DevTools
+
+This compound configuration launches the following components:
+*  The **Edge DevTools: Browser** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Launch Microsoft Edge in headless mode", above.
+*  The **Edge DevTools** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Open Edge DevTools", above.
+
 
 ```json
         {
@@ -118,8 +142,15 @@ This is a "debug"-type configuration.  It appears in UI xyz.  The **xyz** tab in
         },
 ```
 
+The name of this compound configuration, **Launch Edge Headless and attach DevTools**, appears in the UI in the Debug toolbar of Visual Studio Code.
+
 
 #### Launch Edge and attach DevTools
+
+This compound configuration launches the following components:
+*  The **Edge DevTools: Browser** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Launch Microsoft Edge", above.
+*  The Microsoft Edge browser window.  This is defined by the configuration that has the `name` "Launch Microsoft Edge", above.
+*  The **Edge DevTools** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Open Edge DevTools", above.
 
 ```json
         {
@@ -130,6 +161,8 @@ This is a "debug"-type configuration.  It appears in UI xyz.  The **xyz** tab in
             ]
         }
 ```
+
+The name of this compound configuration, **Launch Edge and attach DevTools**, appears in the UI in the Debug toolbar of Visual Studio Code.
 
 
 <!-- ====================================================================== -->
@@ -142,3 +175,5 @@ You can define your own, additional configurations, in order to XYZ.  Click the 
 ## See also
 
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Configure C/C++ debugging](https://code.visualstudio.com/docs/cpp/launch-json-reference) in the Visual Studio Code docs.
+* [Configure the debugger](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_configure-the-debugger) in _Using React in Visual Studio Code_ in the Visual Studio Code docs.
