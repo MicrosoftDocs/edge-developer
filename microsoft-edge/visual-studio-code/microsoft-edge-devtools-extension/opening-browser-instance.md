@@ -64,21 +64,38 @@ As another way to open a browser instance:
 
 Another way to open a browser instance is to open the browser as part of a debugging session.  See [Use the extension with the Visual Studio Code debugging workflow](./extension-debugging-workflow.md).
 
-The extension opens a new browser as an embedded browser in Visual Studio Code, shown as the **DevTools: Browser** tab (pane).  You can move this tab to anywhere within the editor area in the Visual Studio Code window.  You can use this tab side by side with your source code, or split the panes and place the browser preview below your code:
+The extension opens a new browser as an embedded browser in Visual Studio Code, shown as the **Edge DevTools: Browser** tab (pane).  You can move this tab to anywhere within the editor area in the Visual Studio Code window.  You can use this tab side by side with your source code, or split the panes and place the browser preview below your code:
 
 ![Extension open in Visual Studio Code showing the browser preview below the source code and the DevTools to the right](../microsoft-edge-devtools-extension-images/browser-split-down.png)
 
 
 <!-- ====================================================================== -->
-## Opening an external browser window (headless mode)
+## Opening an external browser window instead of headless mode
 
-If you want to have an external browser window, you can change the default setting.  Select **Settings** > **Headless mode** and then select the checkbox, to open the browser in headless mode:
+_headless mode_ means <!--todo-->xyz.  This is the default setting.  Screenshot tbd.
 
-![To open a new browser window instead of using the embedded browser, select Settings > Headless mode](../microsoft-edge-devtools-extension-images/settings-headless.png)
+external browser window means<!--todo-->xyz.  Screenshot tbd.
+
+Pros/cons of each way: ...<!--todo-->
+
+
+#### External browser window
+
+If you want to have an external Microsoft Edge browser window, including the complete UI for Microsoft Edge: go to **Settings**<!--todo--> for the extension by doing ABC.  Then clear the **Headless mode** checkbox. Close and reopen VS Code. Then when you launch a browser instance using the extension (in certain ways at least), an entire Microsoft Edge browser window will open.
+
+
+#### Headless mode
+
+If you want to have the **Edge DevTools: Browser** tab (pane) within Visual Studio Code, which is called _headless mode_, go to **Settings**, and then select the **Headless mode** checkbox.  This is the default setting.  Then when you launch a browser instance using the extension, the **Edge DevTools: Browser** tab (pane) will open within Visual Studio Code.
+
+![Setting the extension to headless mode](../microsoft-edge-devtools-extension-images/settings-headless.png)
+<!-- todo: new screenshot -->
 
 Headless mode:
 
 ![Headless mode](../microsoft-edge-devtools-extension-images/headless.png)
+<!-- todo: new screenshot -->
+
 
 <!-- ====================================================================== -->
 ## See also
