@@ -822,7 +822,7 @@
               displayName: 
 
             - name: Use the extension with the Visual Studio Code debugging workflow
-              href: visual-studio-code/microsoft-edge-devtools-extension/extension-debugging-workflow.md
+              href: visual-studio-code/microsoft-edge-devtools-extension/debugging-workflow.md
               displayName: 
 
             - name: Changing the extension settings

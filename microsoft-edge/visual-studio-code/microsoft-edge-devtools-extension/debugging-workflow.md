@@ -16,9 +16,28 @@ JavaScript debugging is built in to Visual Studio Code.  You can debug in Chrome
 ## Debugging
 <!-- todo: what sets this kind of debugging apart from VS Code's and from DevTool's?  Clarify h2, improve .md filename -->
 
-1. To start debugging, do either of the following:
-   *  Press **F5**.
+<!-- todo:
+add missing steps
+test steps from multiple starting states
+retake screenshots to show assumed starting state/context
+-->
+
+To start debugging:
+
+1. Open VS Code or a new VS Code window.
+
+1. Select File > Open Folder.  Open a folder that contains a webpage, typically an `.html` file and a `.js` file and a `.css` file.
+
+   These steps assume that the **Edge DevTools** tab is not open in Visual Studio Code, and that the **Edge DevTools: Browser** tab is not open in Visual Studio Code, and that there's not a browser instance running under control of the extension such as Microsoft Edge containing the message "Microsoft Edge is being controlled by automated test software".
+
+1. Start the extension by doing ABC.  The ABC tab opens, and the ABC tab opens.  Another way is to ABC, though the Debug toolbar won't be open, this way.
+
+1. Do any of the following:
+
+   *  In Visual Studio Code, click the **Run** menu, and then click **Start Debugging**.  Or, press `F5`.
+
    *  On the menu bar, click the **Debug** icon, and then click the **Run and Debug** button, as shown below.
+
    *  Open the Visual Studio Code command palette, start typing the word **debug**, and then select **Debug: Open Link**.<!--todo: mention **Select environment** text box" as shown in capture-->
     
    ![Start Microsoft Edge DevTools from the JavaScript debugger](../microsoft-edge-devtools-extension-images/start-session.png)<!--todo: make capture match the above text-->
@@ -39,7 +58,29 @@ JavaScript debugging is built in to Visual Studio Code.  You can debug in Chrome
 <!-- ====================================================================== -->
 ## Automatically opening the browser and DevTools when debugging in Visual Studio Code
 
-To debug your project, you might want to change the default page that opens in Microsoft Edge in Visual Studio Code.  To change the default page to your project's website:
+The main way to open a webpage for debugging, in debug mode, is right-click a `.html` file in **Explorer** in VS Code, then select **Open with Edge > Open Browser with DevTools**.
+
+That approach opens the following UI components in Visual Studio Code:
+*  The **Edge DevTools** tab.
+*  The **Edge DevTools: Browser** tab (or an external browser window if you don't use headless mode).
+*  The Debug toolbar.
+*  The **Debugger** pane, including the **Watch** pane.
+*  The **Debug Console** at bottom of window.
+
+![Tabs from right-clicking an HTML file in Explorer](./debugging-workflow-images/tabs-from-right-click-html-explorer.png)
+
+
+But using this other approach, you can ABC.  This way, when you ABC, the ABC ABC, without you having to ABC every time you want to debug the webpage.
+
+To debug your project, you might want to change the default page that opens in Microsoft Edge in Visual Studio Code.
+
+This approach involves editing `launch.json`.  See also [The launch.json file for DevTools extension](./launch-json.md).
+
+
+To change from the default webpage to another webpage, to open in the **Edge DevTools** tab and the **Edge DevTools: Browser** tab (or an external browser window if you don't use headless mode):
+
+
+To customize launch and debug:
 
 1. In Visual Studio Code, select **File** > **New Window**.  Notice that no folder is open.
 
