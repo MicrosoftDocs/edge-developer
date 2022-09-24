@@ -20,7 +20,7 @@ ms.date: 09/28/2022
 
 Command Palette makes it possible to access browser management and developer tools with just one keyboard shortcut: `Ctrl`+`Q`.  Let us know what commands we should add next!
 
-To list the available browser management commands, press `Ctrl`+`Q`.  To filter the commands, start typing:
+To list the available browser management commands and DevTools commands, press `Ctrl`+`Q`.  To filter the commands, start typing:
 
 ![Microsoft Edge Command Palette](./devtools-106-images/command-palette.png)
 
@@ -28,7 +28,8 @@ To list or filter the available DevTools commands, press `Ctrl`+`Q`, and then en
 
 ![Microsoft Edge Command Palette entering `>` to select DevTools commands](./devtools-106-images/command-palette-devtools.png)
 
-In Microsoft Edge 105-107, the keyboard shortcut is `Ctrl`+`Shift`+`Spacebar`.  In Microsoft Edge 108 and later, the shortcut is `Ctrl`+`Q`.
+*  In Microsoft Edge 108 and later, the shortcut is `Ctrl`+`Q`.
+*  In Microsoft Edge 105-107, the keyboard shortcut is `Ctrl`+`Shift`+`Spacebar`.  
 
 See also:
 * [Run commands via keyboard with Command Palette](../../../experimental-features/edge-command-palette.md)
@@ -54,7 +55,7 @@ Screenshot:
 <!-- see att. -->
 
 See also:
-* [Automated Quick Fixes and issue filtering](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#automated-quick-fixes-and-issue-filtering) in _Microsoft Edge DevTools extension for Visual Studio Code_.
+* [Automated Quick Fixes and issue filtering](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#automated-quick-fixes-and-issue-filtering) in _Microsoft Edge DevTools extension for Visual Studio Code_
 
 
 <!-- ====================================================================== -->
@@ -62,7 +63,9 @@ See also:
 
 <!-- Subtitle: In Microsoft Edge 106, sourcemaps are now removed from IndexedDB storage if they haven't been accessed in 30 days. -->
 
-Starting in [Microsoft Edge 101](../../../whats-new/2022/04/devtools-101.md#source-maps-are-now-cached-with-indexeddb), DevTools began caching sourcemaps in IndexedDB to reduce the amount of network requests fetching your sourcemaps.  However, this change could potentially take up a lot of disk space if these sourcemaps are never removed.  In Microsoft Edge 106, this issue has been fixed by removing any sourcemaps that haven't been accessed in 30 days from IndexedDB storage.  Additionally, sourcemaps served from `localhost` are also no longer cached.  Thank you for sending us feedback about this issue!
+Starting in [Microsoft Edge 101](../../../whats-new/2022/04/devtools-101.md#source-maps-are-now-cached-with-indexeddb), DevTools began caching sourcemaps in IndexedDB to reduce the amount of network requests fetching your sourcemaps.  However, this change could potentially take up a lot of disk space if these sourcemaps are never removed.
+
+In Microsoft Edge 106, this issue has been fixed, by removing any sourcemaps that haven't been accessed in 30 days from IndexedDB storage.  Additionally, sourcemaps served from `localhost` are also no longer cached.  Thank you for sending us feedback about this issue!
 
 To understand how DevTools fetches and caches your sourcemaps, watch the **Load status** column in the [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md).  When you first load the webpage, the **Source Maps Monitor** tool shows that the source maps aren't cached yet:
 
@@ -77,7 +80,7 @@ To clear the IndexedDB cache and force DevTools to re-load sourcemaps, run the *
 For history, see [Issue 89](https://github.com/MicrosoftEdge/DevTools/issues/89).
 
 See also:
-* [Source maps are now cached with IndexedDB](../../2022/04/devtools-101.md#source-maps-are-now-cached-with-indexeddb) in _What's New in DevTools (Microsoft Edge 101)_.
+* [Source maps are now cached with IndexedDB](../../2022/04/devtools-101.md#source-maps-are-now-cached-with-indexeddb) in _What's New in DevTools (Microsoft Edge 101)_
 
 
 <!-- ====================================================================== -->
@@ -95,7 +98,7 @@ DevTools in **Dark+** theme:
 
 ![DevTools in Dark+ theme](./devtools-106-images/dark-plus-theme.png)
 
-There are many DevTools color themes to choose from, such as **Monokai** and **Solarized**.  To change the color theme in DevTools, click the **Settings** (![Settings icon.](../../../media/settings-gear-icon-light-theme.png)) button, and then in the **Preferences** page, in the **Theme** dropdown menu, select a theme:
+There are many DevTools color themes to choose from, such as **Monokai** and **Solarized**.  To change the color theme in DevTools, click the **Settings** (![Settings icon](../../../media/settings-gear-icon-light-theme.png)) button, and then in the **Preferences** page, in the **Theme** dropdown menu, select a theme:
 
 ![Setting the DevTools theme to Monokai](./devtools-106-images/set-theme-monokai.png)
 
@@ -111,7 +114,9 @@ See also:
 
 #### Dock location and Activity Bar location buttons in Focus Mode now work better with screen readers
 
-In Microsoft Edge 105, Focus Mode received several improvements, including new **Dock location** and **Activity Bar location** buttons.  In Microsoft Edge 106, these new buttons now work better with assistive technologies, such as screen readers.  Screen readers will now announce which **Dock location** button or which **Activity Bar location** button is currently selected, and the number of buttons, representing the available location options:
+In Microsoft Edge 105, Focus Mode received several improvements, including new **Dock location** and **Activity Bar location** buttons.  In Microsoft Edge 106, these new buttons now work better with assistive technologies, such as screen readers.
+
+Screen readers now announce which **Dock location** button or which **Activity Bar location** button is currently selected, and the number of buttons, representing the available location options:
 
 ![The redesigned Docking menu in Focus Mode](./devtools-106-images/focus-mode-redesigned-docking-menu.png)
 
@@ -123,7 +128,9 @@ See also:
 
 #### Computed styles are easier to see in high contrast mode
 
-In high contrast mode, in previous versions of Microsoft Edge, the expand and collapse buttons for computed styles didn't render correctly, in the **Computed** section of the **Styles** pane in the **Elements** tool.  In Microsoft Edge 106, this issue has been fixed.  The expand and collapse buttons are now visible in high contrast mode:
+In high contrast mode, in previous versions of Microsoft Edge, the expand and collapse buttons for computed styles didn't render correctly, in the **Computed** section of the **Styles** pane in the **Elements** tool.  In Microsoft Edge 106, this issue has been fixed.
+
+The expand and collapse buttons are now visible in high contrast mode:
  
 ![Computed styles in high contrast mode](./devtools-106-images/computed-styles-high-contrast-mode.png)
 <!-- If you want to recreate this image:
@@ -171,5 +178,5 @@ Microsoft Edge 106 also includes the following updates from the Chromium project
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
-<!-- [![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+<!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
