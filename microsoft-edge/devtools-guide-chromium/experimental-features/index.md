@@ -45,7 +45,6 @@ These experiments could be unstable or unreliable and may require you to restart
 ## Experiments which are turned on by default
 
 The following experimental features are turned on by default. You can use these features right away, without changing any settings. You can turn off these default experimental features, if needed.
-<!-- todo: the defaults vary per user.  how much?  which? eg focus mode -->
 
 <!-- listed in order of the Settings > Experiments pane -->
 
