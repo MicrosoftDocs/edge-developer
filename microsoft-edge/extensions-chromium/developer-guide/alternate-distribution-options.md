@@ -71,7 +71,7 @@ To distribute your extension by using a preferences JSON file:
 
 1. Create a <!--todo: preferences?--> JSON file where the name of the file corresponds to the ID of your extension. For example, create a JSON file with the file name `aaaaaaaaaabbbbbbbbbbcccccccccc.json`.
 
-1. Depending on your operating system, save the <!--todo: preferences?--> JSON file to one of the following folders:
+1. Depending on your operating system, save the JSON file to one of the following folders:
 
     *  **macOS**
         *  User-specific: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`
