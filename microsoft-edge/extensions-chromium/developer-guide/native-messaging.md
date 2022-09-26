@@ -137,9 +137,9 @@ When you're ready to distribute your extension to users, publish your extension 
 The final step involves copying the native messaging host manifest file to your computer, and making sure that this manifest file is correctly configured.  To ensure your native messaging host manifest file is placed in the expected location, do the following steps.  The location varies by platform.
 
 > [!NOTE]
-> Make sure that you provide read permissions on the native messaging host manifest file, and run permissions on the host runtime.
-<!-- todo: convert to two numbered steps -->
-
+> Make sure that:
+> 1. You provide read permissions on the native messaging host manifest file. 
+> 2. Run permissions on the host runtime.
 
 ##### [Windows](#tab/windows/)
 
