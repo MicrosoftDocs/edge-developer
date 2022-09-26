@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/24/2022
+ms.date: 09/26/2022
 ---
 # Windowed vs. visual hosting of WebView2
 
