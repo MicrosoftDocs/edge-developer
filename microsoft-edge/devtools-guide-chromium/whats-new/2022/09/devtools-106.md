@@ -20,7 +20,7 @@ ms.date: 09/28/2022
 
 Command Palette makes it possible to access browser management and developer tools with just one keyboard shortcut: `Ctrl`+`Q`.  Let us know what commands we should add next!
 
-To list the available browser management commands and DevTools commands, press `Ctrl`+`Q`.  To filter the commands, start typing:
+To access the available browser management commands and DevTools commands, press `Ctrl`+`Q`.  To filter the commands, start typing:
 
 ![Microsoft Edge Command Palette](./devtools-106-images/command-palette.png)
 
