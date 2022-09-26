@@ -206,9 +206,9 @@ For reference information about each field, see [Manifest file format (V2)](http
 | V2 | V3 |
 |---|---|
 | `"manifest_version": 2,` | `  "manifest_version": 3,` |
-| `"action": ...,` | `"action": {...},` |
-| `"browser_action": {...},` | removed |
-| `"page_action": {...},` | removed |
+| `"action": ...,` | removed |
+| `"browser_action": {...},` | `"action": {...},` |
+| `"page_action": {...},` | `"action": {...},` |
 | `"persistent": false,` | removed |
 | If `background` is included, `service_ worker` is optional | If `background` is included, `service_ worker` is required |
 | `"host_permissions": ...,` | `"host_permissions": [...],` |

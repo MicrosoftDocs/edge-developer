@@ -31,14 +31,18 @@ On the web, such a policy is defined via an HTTP header or `meta` element.  Insi
 
 Packages that don't define a `manifest_version` don't have a default content security policy.
 
-<!-- todo: state the situation for Manifest 3:
-Packages that use `manifest_version` 3 have ...
--->
+Packages that use `manifest_version` have the following default content security policy:
 
-Packages that use `manifest_version` 2 have the following default content security policy:
+#### [Manifest V2](#tab/v2)
 
 ```javascript
 script-src 'self'; object-src 'self'
+```
+
+#### [Manifest V3](#tab/v3)
+
+```javascript
+script-src 'self'; object-src 'self'; worker-src 'self'
 ```
 
 The policy adds security by limiting Extensions and applications in three ways:

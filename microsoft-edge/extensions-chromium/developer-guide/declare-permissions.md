@@ -24,9 +24,11 @@ ms.date: 03/17/2021
 
 To use most of the `chrome.*` APIs, your extension must declare its intent in the `permissions` fields of the manifest.  An extension can declare permissions using a permission string from the table that follows, or use a pattern to match similar strings.  Permissions help to constrain your extension if it gets compromised by malware.  Some permissions are displayed to users for their consent before installation of the extension, or at runtime, as needed; these are Permission Warnings.
 
-If an API requires you to declare permissions in the manifest, see the documentation for that API to understand the needed permissions.  For example, the Storage<!-- linked, in upstream doc --> API page describes how to declare the `storage` permission.
+If an API requires you to declare permissions in the manifest, see the documentation for that API to understand the needed permissions.  For example, the [Storage API](https://developer.chrome.com/docs/extensions/reference/storage/) page describes how to declare the `storage` permission.
 
 The following code outlines how to declare permissions in the manifest file:
+
+#### [Manifest V2](#tab/v2)
 
 ```json
 "permissions": [
@@ -38,11 +40,28 @@ The following code outlines how to declare permissions in the manifest file:
 ]
 ```
 
-<!-- per upstream doc:
-todo: differs in v2 vs v3?
--->
+#### [Manifest V3](#tab/v3)
+
+```json
+"permissions": [
+  "tabs",
+  "bookmarks",
+  "unlimitedStorage"
+],
+"host_permissions": [
+  "http://www.blogger.com/",
+  "http://*.google.com/"
+]
+```
+
+---
+
+
+<!-- ====================================================================== -->
 
 Here's an example of the permissions part of a manifest file:
+
+#### [Manifest V2](#tab/v2)
 
 ```json
 "permissions": [
@@ -59,9 +78,28 @@ Here's an example of the permissions part of a manifest file:
 ],
 ```
 
-The following table lists the currently available permission strings to use in your manifest, and the descriptions.
+#### [Manifest V3](#tab/v3)
 
-<!-- compare upstream doc (link at bottom) -->
+```json
+"permissions": [
+  "tabs",
+  "bookmarks",
+  "storage"
+],
+"optional_permissions": [
+  "unlimitedStorage"
+],
+"host_permissions": [
+  "http://www.blogger.com/",
+  "http://*.google.com/"
+],
+```
+
+---
+
+
+<!-- ====================================================================== -->
+The following table lists the currently available permission strings to use in your manifest, and the descriptions.
 
 | Permission string | Details |
 |:--- |:--- |
@@ -79,6 +117,7 @@ The following table lists the currently available permission strings to use in y
 | `debugger` | Gives your extension access to the `chrome.debugger` API. |
 | `declarativeContent` | Gives your extension access to the `chrome.declarativeContent` API. |
 | `declarativeNetRequest` | Gives your extension access to the `chrome.declarativeNetRequest` API. |
+| `declarativeNetRequestWithHostAccess` | `declarativeNetRequest` API and `declarativeNetRequestWithHostAccess`both allow the extension to use the `declarativeNetRequest` API. The `declarativeNetRequest` permission allows the extension to block and upgrade requests without host permissions but needs host permissions to redirect requests or modify headers. The `declarativeNetRequestWithHostAccess` permission always needs host permissions to the request URL and the initiator to act on the request. |
 | `declarativeNetRequestFeedback` | Grants the extension access to events and methods within the `chrome.declarativeNetRequest` API, which returns information on declarative rules matched. |
 | `declarativeWebRequest` | Gives your extension access to the `chrome.declarativeWebRequest` API. |
 | `desktopCapture` | Gives your extension access to the `chrome.desktopCapture` API. |
