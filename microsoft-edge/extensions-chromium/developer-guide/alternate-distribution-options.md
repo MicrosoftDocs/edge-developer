@@ -24,11 +24,11 @@ Extensions that aren't loaded from the Edge Add-ons store are referred to as ext
 <!-- ====================================================================== -->
 ## Before you begin
 
-Make sure that you publish your extension in the Microsoft Edge Add-ons website, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_URL`, make sure you can go to your extension at that URL.
+Make sure that you publish your extension in the Microsoft Edge Add-ons website, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_url`, make sure you can go to your extension at that URL.
 
 Also, make sure that you have the following information:
 
-*  The file path of the `.crx` file, or the `update_URL` of your extension.
+*  The file path of the `.crx` file, or the `update_url` of your extension.
 
 *  The version of your extension.  The version information is available in your manifest file, or in Microsoft Edge at `edge://extensions` after you load the packed extension.
 
@@ -101,7 +101,7 @@ To distribute your extension by using a preferences JSON file:
         }
         ```
 
-    *  Applies to macOS and Linux.  If you install from an `update_URL`, specify the update URL in `external_update_url`.
+    *  Applies to macOS and Linux.  If you install from an `update_url`, specify the update URL in `external_update_url`.
 
        Copy the following code into your preferences JSON file when installing from local `.crx` files on Linux only:
 
