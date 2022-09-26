@@ -69,7 +69,7 @@ To distribute your extension by using a preferences JSON file:
 
 1. When using Linux, make sure your `.crx` extension file is available on the machine that the extension will be installed on.  Copy the `.crx` extension file to a local directory, or use a network share that is reachable from the machine.
 
-1. Create a <!--todo: preferences?--> JSON file where the name of the file corresponds to the ID of your extension. For example, create a JSON file with the file name `aaaaaaaaaabbbbbbbbbbcccccccccc.json`.
+1. Create a JSON file where the name of the file corresponds to the ID of your extension. For example, create a JSON file with the file name `aaaaaaaaaabbbbbbbbbbcccccccccc.json`.
 
 1. Depending on your operating system, save the JSON file to one of the following folders:
 
