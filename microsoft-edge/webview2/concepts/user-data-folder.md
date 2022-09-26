@@ -468,7 +468,7 @@ For examples of reading the `UserDataFolder` property, see the Win32 samples in 
 
 <!-- Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder). -->
 
-<!-- dev: add example code to https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property, copy that from the below code block: -->
+<!-- dev: add example code to https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property, copy that from the below code block: -->
 
 
 **Example code:**
@@ -687,4 +687,4 @@ Each WebView2 browser process consumes additional memory and disk space.  Theref
 * [ClickOnce security and deployment](/visualstudio/deployment/clickonce-security-and-deployment) - Visual Studio deployment documentation.
 * [Understand the ClickOnce and DirectInvoke features in Microsoft Edge](/deployedge/edge-learn-more-co-di) - in Microsoft Edge Enterprise documentation.
 
-<!-- clickable: https://docs.microsoft.com/windows/apps/package-and-deploy/ -->
+<!-- clickable: https://learn.microsoft.com/windows/apps/package-and-deploy/ -->
