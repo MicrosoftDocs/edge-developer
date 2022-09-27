@@ -18,9 +18,7 @@ ms.date: 09/29/2022
 <!-- Subtitle: Your favorite commands in one place. -->
 <!--           Your favorite browser and DevTools commands in one place. -->
 
-Command Palette makes it possible to access browser management and developer tools commands with just one keyboard shortcut: `Ctrl`+`Shift`+`Spacebar`.  Let us know what commands you'd like to see in future versions of Microsoft Edge by filing issues in the [MicrosoftEdge/DevTools](https://github.com/MicrosoftEdge/DevTools) repo!
-
-To access the available browser management commands and DevTools commands, press `Ctrl`+`Shift`+`Spacebar`.  To filter the commands, start typing:
+Command Palette makes it possible to access browser management and developer tools commands with just one keyboard shortcut: `Ctrl`+`Shift`+`Spacebar`.  To access the available browser management commands and DevTools commands, press `Ctrl`+`Shift`+`Spacebar`, and then start typing.  The commands are filtered based on your input characters:
 
 ![Microsoft Edge Command Palette](./devtools-106-images/command-palette.png)
 
@@ -28,15 +26,14 @@ To list or filter the available DevTools commands, press `Ctrl`+`Shift`+`Spaceba
 
 ![Microsoft Edge Command Palette entering `>` to select DevTools commands](./devtools-106-images/command-palette-devtools.png)
 
+<!--
+*  In Microsoft Edge 106 and most releases of 107, the keyboard shortcut is `Ctrl`+`Shift`+`Spacebar`.
+*  In Microsoft Edge 108 and later, the shortcut is `Ctrl`+`Q`. -->
 The keyboard shortcut is shown on the `edge://flags` page, in the **Command Palette** section:
 
 ![The keyboard shortcut for Command Palette in the flags page for version 106](./devtools-106-images/command-palette-flags-shortcut-106.png)
 
-<!--
-What's New 106 focuses on 106 vs. previous versions, not later versions
-*  In Microsoft Edge 106 and most releases of 107, the keyboard shortcut is `Ctrl`+`Shift`+`Spacebar`.
-*  In Microsoft Edge 108 and later, the shortcut is `Ctrl`+`Q`.
--->
+Let us know what commands you'd like to see in future versions of Microsoft Edge, by posting a comment in [Issue 73: [feedback] Command Palette experiment](https://github.com/MicrosoftEdge/DevTools/issues/73) in the **MicrosoftEdge/DevTools** repo!
 
 See also:
 * [Run commands via keyboard with Command Palette](../../../experimental-features/edge-command-palette.md)
@@ -48,17 +45,24 @@ See also:
 
 <!-- Subtitle: Let Visual Studio Code fix web issues for you or tell it never to bother you about them again. -->
  
-The Microsoft Edge DevTools for Visual Studio Code extension now allows you to fix issues automatically by providing quick fix options with the lightbulb icon.  You can also choose to define a `.hintrc` file which will tell the extension to ignore certain issues and not report them again.
+The Microsoft Edge DevTools extension for Visual Studio Code now provides **Quick Fix** options, allowing you to fix issues automatically.
 
-![Quick Fix options](./devtools-106-images/quick-fix-options.png)
-<!--
-Screenshot:
-1. Install the extension.
-2. Open a file with problems.
-3. Hover over the issue till the lightbulb appears.
-4. Click the light bulb for options.
--->
+To access the **Quick Fix** options:
 
+1. Hover over an issue that's reported by the DevTools extension, indicated by a wavy underline in your code.  A lightbulb icon appears next to the issue.
+
+1. Click the lightbulb (![lightbulb icon](./devtools-106-images/lightbulb-icon.png)) icon.  The **Quick Fix** menu appears:
+
+   ![Quick Fix options](./devtools-106-images/quick-fix-options.png)
+   <!-- screenshot:
+   1. Install the extension.
+   2. Open a file with problems.
+   3. Hover over the issue till the lightbulb appears.
+   4. Click the light bulb for options.
+   -->
+
+1. Select whichever **Quick Fix** you want to use to resolve the issue or to stop reporting it as an issue.  Selecting to ignore the issue automatically creates a `.hintrc` file which tells the extension to ignore this issue type and not report it again.
+      
 <!-- see att. -->
 
 See also:
@@ -135,9 +139,7 @@ See also:
 
 #### Computed styles are easier to see in high contrast mode
 
-In high contrast mode, in previous versions of Microsoft Edge, the expand and collapse buttons for computed styles didn't render correctly, in the **Computed** section of the **Styles** pane in the **Elements** tool.  In Microsoft Edge 106, this issue has been fixed.
-
-The expand and collapse buttons are now visible in high contrast mode:
+In high contrast mode, in previous versions of Microsoft Edge, the expand and collapse buttons for computed styles didn't render correctly, in the **Computed** tab in the **Elements** tool.  In Microsoft Edge 106, this issue has been fixed.  The expand and collapse buttons are now visible in high contrast mode:
  
 ![Computed styles in high contrast mode](./devtools-106-images/computed-styles-high-contrast-mode.png)
 <!-- If you want to recreate this image:
