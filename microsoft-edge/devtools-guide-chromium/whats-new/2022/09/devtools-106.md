@@ -15,8 +15,7 @@ ms.date: 09/29/2022
 <!-- ====================================================================== -->
 ## Introducing the Command Palette
 
-<!-- Subtitle: Your favorite commands in one place. -->
-<!--           Your favorite browser and DevTools commands in one place. -->
+<!-- Subtitle: Your favorite browser management and DevTools commands in one place. -->
 
 Command Palette makes it possible to access browser management and developer tools commands with just one keyboard shortcut: `Ctrl`+`Shift`+`Spacebar`.  To access the available browser management commands and DevTools commands, press `Ctrl`+`Shift`+`Spacebar`, and then start typing.  The commands are filtered based on your input characters:
 
@@ -62,8 +61,6 @@ To access the **Quick Fix** options:
    -->
 
 1. Select whichever **Quick Fix** you want to use to resolve the issue or to stop reporting it as an issue.  Selecting to ignore the issue automatically creates a `.hintrc` file which tells the extension to ignore this issue type and not report it again.
-      
-<!-- see att. -->
 
 See also:
 * [Automated Quick Fixes and issue filtering](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#automated-quick-fixes-and-issue-filtering) in _Microsoft Edge DevTools extension for Visual Studio Code_
@@ -142,20 +139,9 @@ See also:
 In high contrast mode, in previous versions of Microsoft Edge, the expand and collapse buttons for computed styles didn't render correctly, in the **Computed** tab in the **Elements** tool.  In Microsoft Edge 106, this issue has been fixed.  The expand and collapse buttons are now visible in high contrast mode:
  
 ![Computed styles in high contrast mode](./devtools-106-images/computed-styles-high-contrast-mode.png)
-<!-- If you want to recreate this image:
-1.	Open Windows settings > Accessibility > Contrast themes
-2.	Under **Contrast themes**, select **Aquatic** and **Apply**
-3.	Open Edge and navigate to some website. I used: Bing
-4.	Open DevTools
-5.	Navigate to the Elements tool
-6.	Open the **Computed** section in the **Styles** pane
-7.	Take screenshot and draw red highlight boxes around the triangle expand/collapse arrows under the **Filter** textbox. I would also recommend expanding and collapsing some of the styles. -->
-
-<!-- Video recording of feature in action
-See attachments. looking for better way to show how Voiceover reads out the Dock Location and Activity Bar Location buttons on macOS but that might make a better video -->
 
 See also:
-* [Windows High contrast mode](/fluent-ui/web-components/design-system/high-contrast)
+* [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
 
 
 <!-- ====================================================================== -->
