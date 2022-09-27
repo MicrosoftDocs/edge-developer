@@ -67,7 +67,7 @@ Use the Microsoft Edge Browser Task Manager as a starting point to your memory i
 
 1. Right-click the table header of the Microsoft Edge Browser Task Manager, and then enable **JavaScript memory**.
 
-   ![Enabling JavaScript memory.](../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png)
+   ![Enabling JavaScript memory.](../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png) 
 
 These two columns tell you different things about how your page is using memory:
 
