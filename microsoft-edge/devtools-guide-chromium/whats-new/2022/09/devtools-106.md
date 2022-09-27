@@ -18,18 +18,25 @@ ms.date: 09/29/2022
 <!-- Subtitle: Your favorite commands in one place. -->
 <!--           Your favorite browser and DevTools commands in one place. -->
 
-Command Palette makes it possible to access browser management and developer tools with just one keyboard shortcut: `Ctrl`+`Q`.  Let us know what commands we should add next!
+Command Palette makes it possible to access browser management and developer tools commands with just one keyboard shortcut: `Ctrl`+`Shift`+`Spacebar`.  Let us know what commands you'd like to see in future versions of Microsoft Edge by filing issues in the [MicrosoftEdge/DevTools](https://github.com/MicrosoftEdge/DevTools) repo!
 
-To access the available browser management commands and DevTools commands, press `Ctrl`+`Q`.  To filter the commands, start typing:
+To access the available browser management commands and DevTools commands, press `Ctrl`+`Shift`+`Spacebar`.  To filter the commands, start typing:
 
 ![Microsoft Edge Command Palette](./devtools-106-images/command-palette.png)
 
-To list or filter the available DevTools commands, press `Ctrl`+`Q`, and then enter the greater-than (**>**) character:
+To list or filter the available DevTools commands, press `Ctrl`+`Shift`+`Spacebar`, and then enter the greater-than (**>**) character:
 
 ![Microsoft Edge Command Palette entering `>` to select DevTools commands](./devtools-106-images/command-palette-devtools.png)
 
+The keyboard shortcut is shown on the `edge://flags` page, in the **Command Palette** section:
+
+![The keyboard shortcut for Command Palette in the flags page for version 106](./devtools-106-images/command-palette-flags-shortcut-106.png)
+
+<!--
+What's New 106 focuses on 106 vs. previous versions, not later versions
+*  In Microsoft Edge 106 and most releases of 107, the keyboard shortcut is `Ctrl`+`Shift`+`Spacebar`.
 *  In Microsoft Edge 108 and later, the shortcut is `Ctrl`+`Q`.
-*  In Microsoft Edge 105-107, the keyboard shortcut is `Ctrl`+`Shift`+`Spacebar`.  
+-->
 
 See also:
 * [Run commands via keyboard with Command Palette](../../../experimental-features/edge-command-palette.md)
@@ -41,7 +48,7 @@ See also:
 
 <!-- Subtitle: Let Visual Studio Code fix web issues for you or tell it never to bother you about them again. -->
  
-The Microsoft Edge DevTools for Visual Studio Code extension now allows you to fix issues automatically or define a `.hintrc` file to never report certain issues again.  This allows you to customize the error reporting and find out not only why something is a problem, but also how to fix it.
+The Microsoft Edge DevTools for Visual Studio Code extension now allows you to fix issues automatically by providing quick fix options with the lightbulb icon.  You can also choose to define a `.hintrc` file which will tell the extension to ignore certain issues and not report them again.
 
 ![Quick Fix options](./devtools-106-images/quick-fix-options.png)
 <!--
@@ -88,7 +95,7 @@ See also:
 
 <!-- Subtitle: Users of Chromium themes in DevTools will be automatically migrated to the default dark or light theme for a more reliable experience. -->
 
-To improve reliability, the Chromium Light and Chromium Dark themes have been deprecated.  Users who previously had these themes selected will be automatically migrated to the **Light+** or **Dark+** theme, respectively:
+To improve reliability, the **Chromium Light** and **Chromium Dark** themes have been deprecated.  Users who previously had these themes selected will be automatically migrated to the **Light+** or **Dark+** theme, respectively:
 
 DevTools in **Light+** theme: 
 
