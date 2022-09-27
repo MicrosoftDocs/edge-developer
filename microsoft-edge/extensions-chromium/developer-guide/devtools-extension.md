@@ -36,9 +36,13 @@ In this section, you download and run the final state of the extension that the 
 
 1. Click **Load unpacked** and navigate to the folder where you extracted the zip file. In this folder, select **Demos-main** > **devtools-extension** > **sample 4**, and then click **Select Folder**.
 
+  ![The edge://extensions page in Microsoft Edge, showing the Developer mode and Load unpacked buttons.](./devtools-extensions-images/edge-extensions-page.png)
+
 Your DevTools extension should now be loaded. Open a new tab in Microsoft Edge then open DevTools by pressing `F12`.
 
-The extension creates a `Sample Panel` in the DevTools window, and displays some information by using CDP APIs available to Microsoft Edge extensions.
+The extension creates a `Sample Panel` in the DevTools window.
+
+![Microsoft Edge, showing DevTools on the side, with the extension's Sample Panel selected.](./devtools-extensions-images/solution-sample-panel.png)
 
 
 <!-- ====================================================================== -->
@@ -60,11 +64,11 @@ A basic DevTools extension consists of 2 files, as shown in the [Step 1 code](ht
 
     | Property | Description |
     |----------|-------------|
-    | name | The name of the extension that will appear under `edge://extensions/` |
-    | description | The description of the extension that will be displayed under the name of the extension |
-    | version | The version of the extension that will appear next to the name of the extension |
-    | manifest_version | Determines the feature set that the extension will be using.  This includes Service workers, Network request modification, etc. The current version is version `3`. To learn more about this version and the differences with version `2`, see [Overview and timelines for migrating to Manifest V3](./manifest-v3.md) |
-    | devtools_page | The path to an HTML file that will be executed every time the DevTools UI is opened. Though the page is not rendered, it will be used to load the necessary JavaScript files for the extension. |
+    | name | The name of the extension that will appear under `edge://extensions/`. |
+    | description | The description of the extension that will be displayed under the name of the extension. |
+    | version | The version of the extension that will appear next to the name of the extension. |
+    | manifest_version | Determines the set of features that the extension will be using such as Service workers or Network request modification. The current version is version `3`. To learn more about this version and the differences with version `2`, see [Overview and timelines for migrating to Manifest V3](./manifest-v3.md). |
+    | devtools_page | The path to an HTML file that will be executed every time the DevTools UI is opened. Though the page is not rendered in DevTools, it will be used to load the necessary JavaScript files for the extension. |
 
 1. An html file to match the `devtools_page` field in the manifest file.
 
@@ -98,11 +102,13 @@ Your  extension is loaded but invisible in DevTools because you have not created
 
 In this step, you will create a new panel in DevTools. You can find the code for this step here: [Step 2 code](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%202), or write it yourself by following the instructions below.
 
-A panel is a top level tab in DevTools such as **Elements**, **Sources**, or **Console** as shown below. In this step, we will create a basic DevTools extension with a sample panel.
+A panel is a tab in the main toolbar in DevTools similar to the **Elements**, **Console**, or **Sources** tools shown below:
 
-![DevTools panels and sidebars](./devtools-extensions-images/devtools-panels-and-sidebars.png)
+![DevTools panels and sidebars](./devtools-extensions-images/devtools-main-toolbar-tabs.png)
 
-1. Create a `devtools.js` file with the following contents
+In this step, we will create a basic DevTools extension with a sample panel.
+
+1. Create a `devtools.js` file with the following code:
 
     ```javascript
     chrome.devtools.panels.create("Sample Panel", "icon.png", "panel.html", panel => {
@@ -110,7 +116,7 @@ A panel is a top level tab in DevTools such as **Elements**, **Sources**, or **C
     });
     ```
 
-    The method requires four parameters: `title`, `iconpath`, `pagePath`, and a callback function. Note that while the panel's icon is a required parameter, it does not get displayed in Microsoft Edge DevTools currently.
+    The `create` method requires four parameters: `title`, `iconpath`, `pagePath`, and a callback function. Note that while the panel's icon is a required parameter, it does not get displayed in Microsoft Edge DevTools currently.
 
     To learn more about the `chrome.devtools.panels` extension API, see [the chrome.devtools.panels API reference](https://developer.chrome.com/docs/extensions/reference/devtools_panels/).
 
@@ -150,17 +156,19 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
 
 1. Click **Reload**.
 
-Your DevTools extension should now be reloaded. Open a new tab and then open DevTools (`F12`). Your DevTools extension panel should be displayed in DevTools:
+   ![The Microsoft Edge extensions page showing where the Reload button is](./devtools-extensions-images/edge-extensions-page-reload-button.png)
 
-![DevTools Extension with Panel](./devtools-extensions-images/devtools-extension-with-panel.png)
+Your DevTools extension should now be reloaded. Open a new tab in Microsoft Edge and then open DevTools (`F12`). Your DevTools extension panel should be displayed in DevTools:
+
+![Microsoft Edge, with DevTools on the side, showing the new  extension panel](./devtools-extensions-images/devtools-extension-with-panel.png)
 
 
 <!-- ====================================================================== -->
-## Step 3 - Invoking CDP APIs from a DevTools Extension
+## Step 3 - Call extension APIs from a DevTools Extension
 
-In this step, you will use CDP APIs to display memory information in your DevTools panel.  To do this, we will need to update the `permissions` in the manifest file, the panel interface, and the devtools script. The source code for this step can be found in [Step 3 code](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%203), or write it yourself by following the instructions below.
+In this step, you will use extension APIs to display memory information in your DevTools panel.  To do this, we will need to update the `permissions` in the manifest file, the panel interface, and the devtools script. The source code for this step can be found in [Step 3 code](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%203), or write it yourself by following the instructions below.
 
-1. Use the `permissions` manifest member in your `manifest.json` file. This member defines which permissions your extension requires from the user. Some permissions are needed to use certain CDP APIs.
+1. Use the `permissions` manifest member in your `manifest.json` file. This member defines which permissions your extension requires from the user. Some permissions are needed to use certain extension APIs.
 
     ```json
     "permissions": [
@@ -210,8 +218,11 @@ In this step, you will use CDP APIs to display memory information in your DevToo
 The above code snippet does the following:
 
 1. It creates a new panel `Sample Panel` in DevTools.
+
 1. When the panel is displayed (`panel.onShown` listener), the `availableMemoryCapacity` and `totalMemoryCapacity` elements are retrieved from the DOM.
+
 1. Next, a timer is set to execute code every second after the panel is shown.
+
 1. When the timer fires, the `chrome.system.memory.getInfo` method is used to retrieve the available and total memory capacity of the device and these values are displayed in the corresponding DOM elements.
 
 To test your changes in Microsoft Edge, reload your extension from the `edge://extensions/` page:
@@ -224,13 +235,13 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
 
 Your DevTools extension should now be reloaded. Open a new tab and then open DevTools (`F12`). Your DevTools extension panel should now show the available and total memory capacities.
 
-![DevTools Panel - display memory information](./devtools-extensions-images/devtools-extension-with-cdp.png)
+![The new  extension panel in DevTools, showing memory information](./devtools-extensions-images/devtools-extension-with-memory-info.png)
 
-More CDP APIs can be found in the [API Reference](https://developer.chrome.com/docs/extensions/reference/) page.
+More extension APIs can be found in the [API Reference](https://developer.chrome.com/docs/extensions/reference/) page.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Interacting with the Inspected Webpage
+## Step 4 - Interact with the inspected webpage
 
 In this step of the tutorial, you will add code that interacts with the inspected webpage. That code will:
 
@@ -271,9 +282,9 @@ In this part of the tutorial, you will detect the user clicks on a webpage using
 
     | Property | Value |
     |----------|-------|
-    | matches | Specifies which pages this content script will be injected into |
-    | run_at | Indicates when the browser injects the script onto the page |
-    | js | The javascript files to be injected |
+    | matches | Specifies which pages this content script will be injected into. |
+    | run_at | Indicates when the browser injects the script onto the page. |
+    | js | The javascript files to be injected. |
 
 1. Create the file `content_script.js` with the following content:
 
@@ -293,7 +304,7 @@ In this part of the tutorial, you will detect the user clicks on a webpage using
 
     The above code snippet prints a message to the console when the script is injected in the page. It also adds a click event listener to the page that will send a message with mouse click position in the inspected page by using the `chrome.runtime.sendMessage` API.
 
-1. In the `panel.html` file, add a `sayHello` button and a `youClickedOn` label . These two items are used to demo the interaction between the inspected page, the DevTools panel, and the background service worker. When the user clicks the `sayHello` button in the DevTools extension, it will display a greeting message in the inspected window. When the user clicks anywhere in the inspected page, it will display a message to show the mouse click position in the DevTools extension panel.
+1. In the `panel.html` file, add a `sayHello` button and a `youClickedOn` label . These two elements are used to demo the interaction between the inspected page, the DevTools panel, and the background service worker. When the user clicks the `sayHello` button in the DevTools extension, it will display a greeting message in the inspected window. When the user clicks anywhere in the inspected page, it will display a message to show the mouse click position in the DevTools extension panel.
 
     ```html
     <button id="sayHello">Say Hello to The Inspected Page!</button>
@@ -388,19 +399,19 @@ To test the new `sayHello` button:
 
 1. Click the `"Say Hello to The Inspected Page!"` button in your panel. You should see an alert in the inspected page, as shown below.
 
-    ![Console panel with content script injected](./devtools-extensions-images/devtools-extension-show-greeting.png)
+    ![Microsoft Edge, showing the new extension panel in DevTools on the side, and an alert dialog window](./devtools-extensions-images/devtools-extension-show-greeting.png)
 
 To learn more about content scripts, see [the Content Scripts documentation](https://developer.chrome.com/docs/extensions/mv3/content_scripts/).
 
 To test the `youClickedOn` label:
 
-1. Reload your extension as before, open a new browser tab, and open DevTools again.
+1. Click **OK** to close the alert window opened in the previous step.
 
-1. Click anywhere in the inspected page, you should see a **You clicked on position (x,y) in the inspected page** message similar to the image below.
+1. Click anywhere in the inspected page. A **You clicked on position (x,y) in the inspected page** message should appear in the extension panel.
 
     ![The sample panel in DevTools showing the clicked position message](./devtools-extensions-images/devtools-extension-show-position.png)
 
-    You should also see a message in the DevTools **Console** tool.
+1. Open the **Console** tool. A message similar to the previous step should also appear in the  **Console** tool.
 
     ![The DevTools Console tool showing the clicked position message](./devtools-extensions-images/devtools-extension-show-position-in-console.png)
 
