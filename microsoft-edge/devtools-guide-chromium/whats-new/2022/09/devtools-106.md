@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/28/2022
+ms.date: 09/29/2022
 ---
 # What's New in DevTools (Microsoft Edge 106)
 
@@ -162,9 +162,6 @@ Microsoft Edge 106 also includes the following updates from the Chromium project
 * [Hiding ignore-listed sources in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-106/#ignore-nav)
 * [Hiding ignore-listed files in the Command Menu](https://developer.chrome.com/blog/new-in-devtools-106/#ignore-search)
 * [New Interactions track in the Performance panel](https://developer.chrome.com/blog/new-in-devtools-106/#performance)
-* [LCP timings breakdown in the Performance Insights panel](https://developer.chrome.com/blog/new-in-devtools-106/#insights)
-* [Auto-generate default name for recordings in the Recorder panel](https://developer.chrome.com/blog/new-in-devtools-106/#recorder)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-106/#misc)
 
 
 <!-- ====================================================================== -->
