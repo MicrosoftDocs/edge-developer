@@ -25,7 +25,8 @@ You can customize the Visual Studio Code extension to your needs.
 
 Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect:
 
-1. Close the browser opened by the extension, or in the **Microsoft Edge Tools** > **Targets** pane, select **Close instance** (`X`).  This action automatically closes the **Edge DevTools** tab as well.
+1. Close the browser opened by the extension, or in the **Microsoft Edge Tools** > **Targets** pane, click **Close instance** (`X`).  This action automatically closes the **Edge DevTools** tab as well.
+<!-- clicking Close instance (x) doesn't always have an effect.  open folder, have no launch.json, right-click html file (devtools starts) then click x - no effect -->
 
 1. In the **Microsoft Edge Tools** > **Targets** pane, click the **Launch Instance** button.  Microsoft Edge opens, and the **Edge DevTools** tab is displayed.
 
