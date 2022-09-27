@@ -40,7 +40,7 @@ To start debugging:
 
    *  Open the Visual Studio Code command palette, start typing the word **debug**, and then select **Debug: Open Link**.<!--todo: mention **Select environment** text box" as shown in capture-->
     
-   ![Start Microsoft Edge DevTools from the JavaScript debugger](../microsoft-edge-devtools-extension-images/start-session.png)<!--todo: make capture match the above text-->
+   ![Start Microsoft Edge DevTools from the JavaScript debugger](./debugging-workflow-images/start-session.png)<!--todo: make capture match the above text-->
 
 1. Select **Edge**.<!--todo: clarify; **Edge: Launch**?  describe specific UI/controls: link or button or command/list item-->  On the debug toolbar, notice the **Inspect** button:
 
@@ -107,6 +107,28 @@ To customize launch and debug:
 1. Save `launch.json`.
 
 Now, when you select **Debug** when your project folder is open in Visual Studio Code, the **Edge DevTools** tab opens, showing content for the page that you specified in `launch.json`.  Also, the **Edge DevTools: Browser** tab opens, displaying the rendered page that you specified in `launch.json`.
+
+
+<!-- ====================================================================== -->
+## Extension Development Host
+
+This is not intended to be used as part of using the Microsoft Edge DevTools extension for Visual Studio Code.
+
+1. In Visual Studio Code, open the **Run and Debug** pane.
+
+1. Click the **Run and Debug** button.  The **Select debugger** drop-down list opens.
+
+1. In the **Select debugger** drop-down list, select **VS Code Extension Development**:
+
+   ![The 'VS Code Extension Development' debugger menuitem](./debugging-workflow-images/run-and-debug-vs-code-extension-development.png)
+
+   The Debug toolbar opens:
+
+   Also a new Visual Studio Code window opens, titled **[Extension Development Host] Visual Studio Code**:
+
+   ![The '[Extension Development Host] Visual Studio Code' window](./debugging-workflow-images/extension-development-host.png)
+
+1. In the Debug Toolbar, click the **Stop** button.  The **[Extension Development Host] Visual Studio Code** window closes, and the debug toolbar closes.
 
 
 <!-- ====================================================================== -->
