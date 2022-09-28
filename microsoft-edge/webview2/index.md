@@ -86,6 +86,7 @@ WebView2 apps can run on the following versions of Windows:
 *  Windows 10 IoT Enterprise 21h1 x64
 *  Windows 8.1
 *  Windows 7 \*\*
+*  Windows Server 2022
 *  Windows Server 2019
 *  Windows Server 2016
 *  Windows Server 2012
