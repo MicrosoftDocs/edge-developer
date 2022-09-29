@@ -60,7 +60,6 @@ See also:
 
 <!-- ====================================================================== -->
 ## Filter and automatically fix code issues in DevTools for Visual Studio Code
-<!-- todo: mention that the extension supports Compatibility and Security Hints? -->
 
 <!-- Subtitle: Let Visual Studio Code fix web issues for you or tell it never to bother you about them again. -->
  
@@ -73,12 +72,6 @@ To access the **Quick Fix** options:
 1. Click the lightbulb (![lightbulb icon](./devtools-106-images/lightbulb-icon.png)) icon.  The **Quick Fix** menu appears:
 
    ![Quick Fix options](./devtools-106-images/quick-fix-options.png)
-   <!-- screenshot:
-   1. Install the extension.
-   2. Open a file with problems.
-   3. Hover over the issue till the lightbulb appears.
-   4. Click the light bulb for options.
-   -->
 
 1. Select whichever **Quick Fix** you want to use to resolve the issue or to stop reporting it as an issue.  Selecting to ignore the issue automatically creates a `.hintrc` file which tells the extension to ignore this issue type and not report it again.
 
