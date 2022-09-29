@@ -10,7 +10,7 @@ ms.date: 9/27/2022
 ---
 # Create a DevTools extension
 
-This tutorial shows you how to build your own DevTools extension from scratch. It is a good way to experience what goes into a typical DevTools extension. At the end of the tutorial, you should have a working DevTools extension that creates its own panel and interacts with the DevTools extension APIs.
+This tutorial shows you how to build your own DevTools extension from scratch. It is a good way to experience everything that is needed for typical development. At the end of the tutorial, you should have a working extension that creates its own panel and interacts with the DevTools APIs.
 
 First please review the prerequisites. Then download and run the final extension from the [Solution](#solution) section to see what you will be building in this tutorial. Otherwise, start at the [Step 1 - Create a Basic DevTools Extension](#step-1---create-a-basic-devtools-extension) section to build the extensions from scratch.
 
