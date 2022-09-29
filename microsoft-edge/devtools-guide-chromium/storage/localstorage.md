@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/27/2022
+ms.date: 09/29/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -93,7 +93,7 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 1. Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.
 
-![Interact with localStorage from the Console.](../media/storage-console-local-storage-interaction.msft.png)
+   ![Interact with localStorage from the Console.](../media/storage-console-local-storage-interaction.msft.png)
 
 
 <!-- ====================================================================== -->
