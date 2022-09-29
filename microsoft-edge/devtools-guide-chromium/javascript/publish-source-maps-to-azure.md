@@ -78,9 +78,6 @@ Build systems vary from application to application, so there isn't a clear singl
 // Licensed under the BSD 3-clause license.
 
 const crypto = require('crypto');
-const fs = require('fs');
-const path = require('path');
-const process = require('process');
 
 module.exports = class PrepareSourceMapsForSymbolServerPlugin {
   /**
@@ -114,8 +111,7 @@ module.exports = class PrepareSourceMapsForSymbolServerPlugin {
         if (!sourceMapAsset.isBuffer()) {
           // Not a buffer -- write to the _value property
           sourceMapAsset._value = rewrittenSourceMapContents;
-        }
-        else {
+        } else {
           sourceMapAsset._valueAsBuffer = Buffer.from(rewrittenSourceMapContents, 'utf-8');
         }
 
@@ -156,7 +152,7 @@ module.exports = (env, args) => {
         // ... other plugins
         new PrepareSourceMapsForSymbolServerPlugin(),
     ]
-  });
+  };
 };
 ```
 
