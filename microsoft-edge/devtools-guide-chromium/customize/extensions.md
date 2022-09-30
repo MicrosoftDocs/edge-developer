@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 30/09/2022
+ms.date: 09/30/2022
 ---
 # Extend DevTools with extensions
 
