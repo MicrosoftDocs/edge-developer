@@ -9,18 +9,18 @@ ms.date: 09/14/2022
 ---
 # Application tool integration
 
-The **Application** tool allows you to inspect the various parts of your application. 
+In the **Edge DevTools** tab, the **Application** tool allows you to inspect the various parts of your application:
 
 ![The Application tool inside the Edge DevTools for Visual Studio Code extension](./application-tool-integration-images/application-tool.png)
 
 
 Use the **Application** tool to:
 
-* Check different storage options such as **Cookies**, **LocalStorage**, **SessionStorage** and **IndexedDB**.
+* Check different storage options, such as **Cookies**, **LocalStorage**, **SessionStorage** and **IndexedDB**.
 
 * Analyze the cache of your application.
 
-* Analyze services like Notification, Payment handler, or background sync.
+* Analyze services such as Notification, Payment handler, or background sync.
 
 
 <!-- ====================================================================== -->

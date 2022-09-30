@@ -9,7 +9,7 @@ ms.date: 09/14/2022
 ---
 # Network tool integration
 
-The **Network** tool allows you to monitor network traffic and change network conditions of your application right inside Visual Studio Code. 
+The DevTools **Network** tool allows you to monitor network traffic and change network conditions of your application, from within Visual Studio Code:
 
 ![The Network tool inside the Edge DevTools for Visual Studio Code extension](./network-tool-integration-images/vscode-extension-network.png)
 

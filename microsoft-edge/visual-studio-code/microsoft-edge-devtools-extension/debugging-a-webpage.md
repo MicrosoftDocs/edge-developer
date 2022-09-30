@@ -11,7 +11,7 @@ ms.date: 09/14/2022
 
 <!-- TODO: test the steps in this article -->
 
-JavaScript debugging is built in to Visual Studio Code.  You can debug in Chrome, Microsoft Edge, or Node.js without installing any other extensions.  If you debug using Microsoft Edge, you can start Microsoft Edge DevTools from the JavaScript debugger.
+JavaScript debugging is built into Visual Studio Code.  You can debug in Chrome, Microsoft Edge, or Node.js without installing any other extensions.  If you debug by using Microsoft Edge, you can start Microsoft Edge DevTools from the JavaScript debugger of Visual Studio Code.
 
 
 <!-- ====================================================================== -->
@@ -43,9 +43,9 @@ To start debugging:
 
 1. Open Visual Studio Code or a new Visual Studio Code window.
 
-1. Select **File** > **Open Folder**.  Or, select **Activity Bar** > **Explorer** > **Open Folder**.  Open a folder that contains a webpage, typically an `.html` file and a `.js` file and a `.css` file.
+1. If you want to work with local files, select **File** > **Open Folder**.  Or, select **Activity Bar** > **Explorer** > **Open Folder**.  Open a folder that contains a webpage, typically an `.html` file and a `.js` file and a `.css` file.
 
-   These steps assume that the **Edge DevTools** tab is not open in Visual Studio Code, and that the **Edge DevTools: Browser** tab is not open in Visual Studio Code, and that there's not a browser instance running under control of the extension such as Microsoft Edge containing the message "Microsoft Edge is being controlled by automated test software".
+   Or, in the next step, you can enter a URL in the embedded (headless) browser (the **Edge DevTools: Browser** tab).
 
 1. Start the extension, such as by right-clicking an HTML file or by clicking the **Launch Instance** button.  The **Edge DevTools** tab opens, the **Edge DevTools: Browser** tab opens, and the Debug toolbar opens in some cases.
 
@@ -53,15 +53,19 @@ To start debugging:
 
 1. Do any of the following:
 
-   *  In Visual Studio Code, click the **Run** menu, and then click **Start Debugging**.  Or, press `F5`.
+   *  In Visual Studio Code, click the **Run** menu, and then click **Start Debugging**.  Or, press `F5`.  In the **Select debugger** dropdown list, select **Microsoft Edge Tools**.
 
-   *  On the menu bar, click the **Debug** icon, and then click the **Run and Debug** button, as shown below.
+   *  Or, on the Activity Bar, click the **Run and Debug** (![Run and Debug icon](./debugging-a-webpage-images/run-and-debug-icon.png)) button, and then click the **Run and Debug** button, as shown below:
 
-   *  Open the Visual Studio Code command palette, start typing the word **debug**, and then select **Debug: Open Link**.<!--todo: mention **Select environment** text box" as shown in capture-->
-    
    ![Start Microsoft Edge DevTools from the JavaScript debugger](./debugging-a-webpage-images/start-session.png)<!--todo: make capture match the above text-->
 
-1. Select **Edge**.<!--todo: clarify; **Edge: Launch**?  describe specific UI/controls: link or button or command/list item-->  The Debug toolbar includes an **Inspect** button:
+   *  Or, select **View** > **Command Palette** (`Ctrl`+`Shift`+`P`), start typing the word **debug**, and then select **Debug: Open Link**.  The URL text box appears, suggesting **https://localhost:8080** or whatever string was last used:
+
+   ![Command Palette > debug > 'Debug: Open Link'](./debugging-a-webpage-images/command-palette-debug-open-link.png)
+
+1. In the **Select debugger** dropdown list, select **Microsoft Edge Tools**.
+
+   The Debug toolbar includes an **Inspect** button:<!-- TODO: In some above approaches, the Debug toolbar doesn't appear.  What UI steps do you do to make it appear?  The Run and Debug pane says "Open a file which can be debugged or run."-->
 
    ![The Inspect button on the debug toolbar](./debugging-a-webpage-images/inspect-button.png)
 
@@ -124,23 +128,23 @@ To customize launch and debug:
 
 1. Select your project folder that contains the new default page (such as `index.html`) that you want to display in the browser instance when you begin debugging your webpage in Visual Studio Code.
 
-   The first time you open a folder, you must confirm that you trust the authors of files in this folder.  You can also select the checkbox **Trust the authors of all files in the parent folder**:
+   The first time you open a folder, you must confirm that you trust the authors of files in this folder.  Optionally select the checkbox **Trust the authors of all files in the parent folder**, and then click the **Yes I trust the authors** button**:
 
    ![Do you trust the authors in the files of this folder?](./debugging-a-webpage-images/trust.png)
 
-   The first time you complete this process, you must also click the **Microsoft Edge Tools** button in the **Activity Bar** again.
+   The first time you open a folder, you must then click the **Microsoft Edge Tools** button in the **Activity Bar** again.
 
-   The **Microsoft Edge Tools: Targets** panel now displays two buttons: **Launch Instance** and **Generate launch.json**:
+   The **Microsoft Edge Tools: Targets** panel now contains two buttons: **Launch Instance** and **Generate launch.json**:
 
    ![The 'Microsoft Edge Tools: Targets' panel displays 'Launch Instance' and 'Generate launch.json' buttons](./debugging-a-webpage-images/targets-buttons.png)
 
-1. Select **Generate launch.json** to create a `launch.json` in your project.
+1. Click the **Generate launch.json** button to create a `launch.json` file in your project.
 
 1. In `launch.json`, add the URL of your project.  This can be a URL or a local file path.  If you leave the URL as-is, the default, **Success** page is displayed.
 
-1. Save `launch.json`.
+1. Save the `launch.json` file.
 
-Now, when you select **Debug** when your project folder is open in Visual Studio Code, the **Edge DevTools** tab opens, showing content for the page that you specified in `launch.json`.  Also, the **Edge DevTools: Browser** tab opens, displaying the rendered page that you specified in `launch.json`.
+Now, when you debug your project in Visual Studio Code, the **Edge DevTools** tab opens, showing content for the page that you specified in `launch.json`.  Also, the **Edge DevTools: Browser** tab opens, displaying the rendered page that you specified in `launch.json`.
 
 
 <!-- ====================================================================== -->
@@ -148,3 +152,4 @@ Now, when you select **Debug** when your project folder is open in Visual Studio
 
 * [Launch configurations](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) in the _Debugging_ article for Visual Studio Code.
 * [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) at the Visual Studio Marketplace website.
+* [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) in _User Interface_ in the Visual Studio Code documentation.

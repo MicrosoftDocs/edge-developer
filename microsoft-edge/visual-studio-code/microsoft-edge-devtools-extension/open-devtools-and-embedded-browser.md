@@ -25,13 +25,13 @@ In the _headless browser_ approach, you open a new instance of Microsoft Edge as
 
 This starts a new browser instance in the **Edge DevTools: Browser** tab and pane inside Visual Studio Code, displaying your rendered webpage that's specified in `launch.json`.
 
-This approach also opens the **Edge DevTools** tab (pane) within Visual Studio Code, showing information for your specified file, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`.  See [Opening DevTools and the embedded browser](./open-devtools-and-embedded-browser.md).
+This approach also opens the **Edge DevTools** tab (pane) within Visual Studio Code, showing information for your specified file, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`.
 
 ![Embedded browser instance in Visual Studio Code](./opening-browser-instance-images/embedded-browser.png)
 
 If you open DevTools by right-clicking a `.html` file in Explorer in Visual Studio Code, you always get the headless browser, even if you clear the **Activity Bar** > **Microsoft Edge Tools** > **Settings** > **Headless** checkbox.
 
-There are two ways to open the headless browser for DevTools, regardless of the **Settings** > **Headless** checkbox setting:
+There are two ways to open the headless browser for DevTools:
 *  **Activity Bar** > **Explorer** > open a folder > right-click a `.html` file.
 *  **Activity Bar** > **Microsoft Edge Tools** > **Launch Instance** button.
 
@@ -90,7 +90,7 @@ To open DevTools and the embedded or external browser, for a URL:
 ![Select Launch Instance to open the browser in Visual Studio Code](./opening-browser-instance-images/devtools-extension-new-browser-instance.png)
 
 Note that the Debug toolbar isn't open.  You can select **View** > **Run**, or **Run** > **Start Debugging**.
-<!-- todo: how?  To open the Debug toolbar, -->
+<!-- todo: how to open the Debug toolbar? -->
 
 Typically you use the **Explorer** pane, from the Activity Bar, to open a `.js` file during debugging a webpage, as shown in the above layout.
 
@@ -100,4 +100,5 @@ The **Launch Instance** button opens the headless browser with Device Emulation 
 <!-- ====================================================================== -->
 ## See also
 
+* [Using an external browser window](./external-browser-window.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

@@ -55,15 +55,16 @@ If you want to have the **Edge DevTools: Browser** tab (pane) within Visual Stud
 
    Then when you launch a browser instance by selecting Activity Bar > **Microsoft Edge Tools** > **Launch Instance**, the **Edge DevTools: Browser** tab (pane) will open within Visual Studio Code.
 
-![Setting the extension to headless mode](./opening-browser-instance-images/settings-headless.png)
+![Setting the extension to headless mode](./external-browser-window-images/settings-headless.png)
 <!-- todo: new screenshot -->
 
-Headless mode:
+The **Edge DevTools: Browser** tab contains the embedded browser, which is headless mode:
 
-![Headless mode](./opening-browser-instance-images/headless.png)
+![Headless mode](./external-browser-window-images/headless.png)
 <!-- todo: new screenshot -->
 
 
 <!-- ====================================================================== -->
-<!-- ## See also -->
+## See also
 
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

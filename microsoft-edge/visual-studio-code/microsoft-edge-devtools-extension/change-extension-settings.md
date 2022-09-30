@@ -11,27 +11,40 @@ ms.date: 09/14/2022
 
 You can customize the Visual Studio Code extension to your needs.
 
-1. In Visual Studio Code, on the **Activity Bar**, select **Microsoft Edge Tools**.
+1. In Visual Studio Code, on the **Activity Bar**, click **Microsoft Edge Tools**.
 
-1. In **Microsoft Edge Tools** > **Targets**, select **More Actions** (...) to the right of the word **TARGETS**, and then select **Open Settings**.
+1. In **Microsoft Edge Tools** > **Targets**, click **More Actions** (...) to the right of the word **TARGETS**, and then select the **Open Settings** menuitem.
 
-   If you are using a mouse, to access **More Actions** (...), select the **Targets** pane or hover over it:
+   ![The More Actions icon on the Microsoft Edge Tools: Targets panel, to change the settings of the DevTools extension](./change-extension-settings-images/edge-tools-open-settings.png)
 
-   ![The More Actions icon on the Microsoft Edge Tools: Targets panel, to change the settings of the DevTools extension](./change-extension-settings-images/change-extension-settings/edge-tools-open-settings.png)
+   The **Settings** page appears, filtered to show **vscode-edge-devtools** settings only.
+
+1. Scroll through the available settings.
 
 
 <!-- ====================================================================== -->
 ## Reloading the extension after changing settings
 
-Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect:
+Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect, close instances of DevTools, as follows:
 
-1. Close the browser opened by the extension, or in the **Microsoft Edge Tools** > **Targets** pane, click **Close instance** (`X`).  This action automatically closes the **Edge DevTools** tab as well.
-<!-- clicking Close instance (x) doesn't always have an effect.  open folder, have no launch.json, right-click html file (devtools starts) then click x - no effect -->
+*  Select **File** > **Close Folder**.
 
-1. In the **Microsoft Edge Tools** > **Targets** pane, click the **Launch Instance** button.  Microsoft Edge opens, and the **Edge DevTools** tab is displayed.
+*  In the Debug toolbar, click the **Stop** button.
+
+*  On the **Run** menu, select **Stop Debugging**.
+
+*  Select Activity Bar > **Microsoft Edge Tools** > **Targets** > hover on a target > click **Close instance** (`X`).  This action automatically closes the **Edge DevTools** tab as well.  If necessary, close an external browser opened by the extension.
+
+   *  For some scenarios, clicking **Close instance** (**x**) doesn't have an effect.  If needed, use another approach.  For example, if you open a folder that has no `launch.json` file, right-click an `.html` file and select **Open with Edge** > **Open Browser with DevTools**, and then select Activity Bar > **Microsoft Edge Tools** > **Targets** > click **Close instance** (**x**) on a target, DevTools continues running, because of how it was launched.
 
 
-When you change settings, a quick way to restart is to select **File** > **Close Folder**, then select **File** > **Open Recent** > select a folder.
+To start the DevTools extension again:
+
+1. Select **File** > **Open Recent** > select a folder.  (Or, select Activity Bar > **Explorer** > **Open Folder** button.)  Right-click an `.html` file, and then select **Open with Edge** > **Open Browser with DevTools**.
+
+   Or, select Activity Bar > **Microsoft Edge Tools** > **Targets** > click the **Launch Instance** button.
+
+   Microsoft Edge opens, and the **Edge DevTools** tab is displayed.
 
 
 <!-- ====================================================================== -->

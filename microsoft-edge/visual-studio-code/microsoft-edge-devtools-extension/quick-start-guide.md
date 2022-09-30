@@ -41,7 +41,7 @@ This is the simple scenario; try this approach first.
    *  The **Edge DevTools: Browser** tab, displaying the Success page, by default.
    *  The Debug toolbar.
 
-   ![The two Edge DevTools tabs and the Debug toolbar](todo)
+   ![The two Edge DevTools tabs and the Debug toolbar](./quick-start-guide-images/devtools-extension-v211.png)
 
 To try this by using the **demo-to-do** sample app, see [Step 3: Clone the Microsoft Edge Demos repo](./get-started.md#step-3-clone-the-microsoft-edge-demos-repo).
 
@@ -56,17 +56,15 @@ This is the more flexible and advanced scenario; try this approach after you lea
    *  The **Edge DevTools** tab.
    *  The **Edge DevTools: Browser** tab, displaying the Success page, by default.
 
-   The Debug toolbar doesn't open.
-
-   ![DevTools components that are opened by Launch Instance button](todo)
+   When loading the default, **Success** page this way, the Debug toolbar doesn't open.
 
 1. Copy a URL such as a `localhost:8080` path from an existing browser address bar.
 
-   Or, in Visual Studio Code, in the Activity Bar, click the **Explorer** (![Explorer icon]()) button.  In the **Explorer**, right-click an `.html` file, and then select **Copy path**.
+   Or, in Visual Studio Code, in the Activity Bar, click the **Explorer** (![Explorer icon](./quick-start-guide-images/explorer-icon.png)) button.  In the **Explorer**, right-click an `.html` file, and then select **Copy path**.
 
 1. In the **Edge DevTools: Browser** tab, paste the URL (or file path) into the address bar.
 
-   To open the Debug toolbar, [todo].
+   To open the Debug toolbar: close the DevTools instance, then generate a `launch.json` file that starts a URL that uses a `.js` file, or that opens an `.html` file that uses a `.js` file, as described below.<!--todo: any other way to open Debug toolbar?  how load a URL that causes it to appear, starting from this state?-->
 
 
 ###### Optionally using a launch.json file
@@ -75,11 +73,13 @@ If you want to use the **Launch Instance** button instead of right-clicking an `
 
 1. Click the **Generate launch.json** button.  In Visual Studio Code's **Explorer** pane, note where the `launch.json` file is placed.
 
-1. In several places in the `launch.json` file, paste the URL (or an .html file path).  Because this is a JSON string and needs escaping, change each `/` to `//`, or `\` to `\\`.  Save the file.
+1. In several places in the `launch.json` file, paste the URL (or an `.html` file path).  Because this is a JSON string and needs escaping, change each `/` to `//`, or `\` to `\\`.  Save the file.
 
    *  For a repo, such as the Demos repo, if you open the entire repo folder, the **Generate launch.json** button creates a `launch.json` file near the root, for the entire repo directory.
 
-   *  If you open a particular, smaller folder, the **Generate launch.json** button puts a `launch.json` file in that particular folder only.
+   *  If you open a particular, smaller folder, the **Generate launch.json** button puts a `launch.json` file in that folder only.
+
+1. Click Activity Bar > **Microsoft Edge Tools** > **Launch Project** button.
 
 
 <!-- ====================================================================== -->
@@ -93,27 +93,37 @@ If you want to use the **Launch Instance** button instead of right-clicking an `
 <!-- ====================================================================== -->
 ## Debugging
 
-You might have a local .js file open, or a downloaded copy of a .js file returned by a web server.
+1. In Visual Studio Code, if you open a `.html` file from your hard drive (as described above), use Activity Bar > **Explorer** > open a `.js` file.
 
-1. Open Visual Studio Code.
+   If you opened a server URL, such as `https://localhost:8080` (as described above), select **Edge DevTools** tab > **Elements** tool > **Styles** tab > click a `.js` filename.  This opens a downloaded copy of a `.js` file, that was returned by a web server.
 
-<!-- 1. If you're using local filepaths instead of a server URL, open a folder, and then open a `.js` file. -->
+1. In the `.js` file, click to the left of a line number to set a breakpoint.  For example, in `Demos\demo-to-do\to-do.js`, set a breakpoint in the top of the `addTask` or `changeTask` function body.  (To get `to-do.js`, see [Step 3: Clone the Microsoft Edge Demos repo](./get-started.md#step-3-clone-the-microsoft-edge-demos-repo) in _Get started with the DevTools extension for Visual Studio Code_.)
 
-1. In Visual Studio Code, in the Activity Bar, click the Explorer icon, and then open  Set a breakpoint in a `.js` file.
-
-1. Enter data in the webpage, then submit - or equivalent.  For example, in demo-to-do, click a "done" option button next to an entered task, to trigger a JavaScript function that you've set a breakpoint on.
+1. Enter data in the webpage, then submit - or equivalent.  For example, in `Demos\demo-to-do\index.html`, click a "done" option button next to an entered task, to trigger a JavaScript function that you've set a breakpoint on.
 
 
 <!-- ====================================================================== -->
 ## Stopping and closing the DevTools extension
 
-1.  If the Debug toolbar is open, click the **Stop** button on the Debug toolbar.
-(Complicated way: Activity Bar > Microsoft Edge Tools button > Targets pane/sidebar > Close instance (X) button.)
-Or, File > Close Folder.
-Or, click X on the extension's two tabs, and close separate tool-controlled browser if not using Headless mode.
+Do any of the following:
+
+*  Select **File** > **Close Folder**.
+
+*  In the Debug toolbar, click the **Stop** button.
+
+*  On the **Run** menu, select **Stop Debugging**.
+
+*  Select Activity Bar > **Microsoft Edge Tools** > **Targets** > hover on a target > click **Close instance** (`X`).  This action automatically closes the **Edge DevTools** tab as well.  If necessary, close an external browser opened by the extension.
+
+   *  For some scenarios, clicking **Close instance** (**x**) doesn't have an effect.  If needed, use another approach.  For example, if you open a folder that has no `launch.json` file, right-click an `.html` file and select **Open with Edge** > **Open Browser with DevTools**, and then select Activity Bar > **Microsoft Edge Tools** > **Targets** > click **Close instance** (**x**) on a target, DevTools continues running, because of how it was launched.
+
+*  Click **Close** (**X**) on the **Edge DevTools** tab and on the **Edge DevTools: Browser** tab.  If using an external browser window started by the extension (rather than embedded browser/headless mode), close the automation-controlled external browser window.
+
+*  Close the Visual Studio Code window.
 
 
 <!-- ====================================================================== -->
 ## See also
 
 * [Get started with the DevTools extension for Visual Studio Code](./get-started.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
