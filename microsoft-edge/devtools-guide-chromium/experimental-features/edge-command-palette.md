@@ -33,7 +33,8 @@ By default, Command Palette isn't enabled. To enable the Command Palette experim
 
    ![Enabling the Command Palette flag in the edge://flags page](./media/command-palette-flag.png)
 
-The above screenshot shows the shortcut for Microsoft Edge 105-107.  Microsoft Edge 108 or later will show the shortcut `Ctrl+Q` instead.
+The flags page for Microsoft Edge 108 or later shows the shortcut `Ctrl+Q`.  Versions 105 through most versions of 107 show `Ctrl`+`Shift`+`Space` instead.
+
 
 <!-- ====================================================================== -->
 ## Open Command Palette
@@ -51,7 +52,7 @@ To open Command Palette:
 
    ![Command Palette with the word "bookmark" typed in, and a list of related commands](./media/command-palette-bookmark.png)
 
-1. Press `Down Arrow` or `Up Arrow` to select a command, and then press `Enter`.
+1. Press `Down Arrow` or `Up Arrow` to select a command, or use the mouse wheel, and then press `Enter`.
 
 Examples of several useful commands are shown below.
 
