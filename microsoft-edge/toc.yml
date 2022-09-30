@@ -632,6 +632,10 @@
             - name: Customize keyboard shortcuts  # added article
               href: devtools-guide-chromium/customize/shortcuts.md
               displayName: Settings, Shortcuts
+
+            - name: Extend DevTools with extensions
+              href: devtools-guide-chromium/customize/extensions.md
+              displayName: Extensions
 # Remote debugging ------------------------------------------------------------
         - name: Remote debugging
           items:
