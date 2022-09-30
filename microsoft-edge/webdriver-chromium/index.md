@@ -64,14 +64,14 @@ To begin writing automated tests, make sure the Edge WebDriver version you insta
 <!-- ====================================================================== -->
 ## Choose a WebDriver testing framework
 
-After downloading Edge WebDriver, the last component you must download is a WebDriver testing framework.  Test authors use WebDriver testing frameworks to write end-to-end tests and automate browsers.  A WebDriver testing framework provides a language-specific interface that translates your code into commands that Edge WebDriver runs in Microsoft Edge.  WebDriver testing frameworks exist for all major platforms and languages, such as Python, Java, C#, Ruby, and JavaScript. Note that for Python users, Python 3 is required and Python 2.7 is not supported.
+After downloading Edge WebDriver, the last component you must download is a WebDriver testing framework.  Test authors use WebDriver testing frameworks to write end-to-end tests and automate browsers.  A WebDriver testing framework provides a language-specific interface that translates your code into commands that Edge WebDriver runs in Microsoft Edge.  WebDriver testing frameworks exist for all major platforms and languages, such as Python, Java, C#, Ruby, and JavaScript.
 
 This article provides instructions for using the Selenium framework, but you can use any library, framework, and programming language that supports WebDriver.  To accomplish the same tasks using a WebDriver testing framework other than Selenium, consult the official documentation for your framework of choice.
 
 
 ### Using Selenium 4
 
-Selenium WebDriver is an open-source testing framework that can be used on any platform, and provides language bindings for Java, Python, C#, Ruby, and JavaScript.
+Selenium WebDriver is an open-source testing framework that can be used on any platform, and provides language bindings for Java, Python, C#, Ruby, and JavaScript. Note that for Python users, Python 3 is required to run Selenium 4 tests, Python 2.7 is not supported.
 
 To use WebDriver to automate Microsoft Edge, if you use Selenium, you must use Selenium 4, which has built-in support for Microsoft Edge (Chromium).
 
