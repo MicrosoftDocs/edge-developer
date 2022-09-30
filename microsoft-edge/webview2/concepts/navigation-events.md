@@ -41,7 +41,7 @@ The normal sequence of navigation events is:
 
 The following events describe the state of WebView2 during each navigation action:
 
-![WebView2 Navigation Events.](../media/navigation-graph.png)
+![WebView2 Navigation Events](../media/navigation-graph.png)
 
 | Sequence | Event name | Details |
 | --- | --- | --- |
