@@ -1208,9 +1208,13 @@
               href: webview2/how-to/context-menus.md
               displayName: right-click menu, Customize context menus in WebView2  # top-of-page title
 
-            - name: Use the Chrome DevTools Protocol
+            - name: Use the Chrome DevTools Protocol (CDP)
               href: webview2/how-to/chromium-devtools-protocol.md
-              displayName: Use the Chrome DevTools Protocol in WebView2  # old title
+              displayName: Use the Chrome DevTools Protocol in WebView2, chrome developer protocol  # old title & catch mis-type
+
+            - name: Use multiple targets with Chrome DevTools Protocol (CDP)
+              href: webview2/how-to/multiple-cdp-targets.md
+              displayName: 
 
             - name: Automate and test with Microsoft Edge WebDriver
               href: webview2/how-to/webdriver.md

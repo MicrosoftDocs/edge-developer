@@ -107,7 +107,7 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "useWebView": true
 ```
 
-Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger.
+Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome DevTools Protocol (CDP) port open, before starting the debugger.
 
 
 <!-- ====================================================================== -->
