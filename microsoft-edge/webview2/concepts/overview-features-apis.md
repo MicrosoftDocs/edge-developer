@@ -1533,10 +1533,10 @@ Analyze and debug performance, handle performance-related events, and manage mem
 <!-- ====================================================================== -->
 ## Chrome DevTools Protocol (CDP)
 
-The Chrome DevTools Protocol provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform.
+The Chrome DevTools Protocol (CDP) provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform.
 
 See also:
-* [Use the Chrome DevTools Protocol in WebView2 apps](../how-to/chromium-devtools-protocol.md)
+* [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../how-to/chromium-devtools-protocol.md)
 * [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol)
 
 
