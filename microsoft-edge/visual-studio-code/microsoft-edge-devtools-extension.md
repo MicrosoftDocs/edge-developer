@@ -49,6 +49,22 @@ The extension allows you to:
 
 
 <!-- ====================================================================== -->
+## Supported scenarios
+
+
+#### Local .html filepath or URL
+
+If you create a launch.json or open a local file by right-clicking and you access either your file system or a `localhost` or a `127.0.0.1` URL address, you get two-way interaction and can change the CSS, including CSS mirror editing that updates the local source `.css` file or the downloaded copy of the `.css` file from the web server; your changes are mirrored in the `.css` file.
+
+
+#### Remote URLs
+
+If you click the **Launch Instance** button and paste a non-local URL, such as `https://microsoftedge.github.io/Demos/demo-to-do/`, you get browser functionality in the **Edge DevTools: Browser** tab, but not full DevTools functionality.  You can interact with the page and see it in different devices and rendering states from the lower bar.  You can also inspect the CSS and HTML, but you can't edit it without an error:
+
+![Limited CSS editing ability for a remote URL](./microsoft-edge-devtools-extension-images/limited-css-edit-ability-for-remote-url.png)
+
+
+<!-- ====================================================================== -->
 ## Overview of the developer tools
 
 The following tools are included in the DevTools extension.  These links are for the Microsoft Edge browser DevTools main article about each tool.

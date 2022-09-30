@@ -11,6 +11,9 @@ ms.date: 09/29/2022
 
 This page summarizes the least you need to know to use the Microsoft Edge DevTools extension for Visual Studio Code.
 
+_This page will be merged with the Get Started guide to cover launching both local .html files and URLs._
+<!-- todo -->
+
 
 <!-- ====================================================================== -->
 ## Installing
@@ -24,6 +27,8 @@ This page summarizes the least you need to know to use the Microsoft Edge DevToo
 1. Select the **Microsoft Edge Tools for VS Code**, and then click the **Install** button:
 
    ![Installing the Microsoft Edge DevTools extension for Visual Studio Code](./quick-start-guide-images/vscode-edge-tools-install.png)
+
+1. Install Node.js and npm, to get live Issues analysis.  See [Step 3: Install Node.js and Node Package Manager (npm)](./get-started.md#step-3-install-nodejs-and-node-package-manager-npm).
 
 
 <!-- ====================================================================== -->

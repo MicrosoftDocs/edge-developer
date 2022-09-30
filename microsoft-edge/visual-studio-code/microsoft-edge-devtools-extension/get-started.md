@@ -48,7 +48,19 @@ Install the Microsoft Edge DevTools extension for Visual Studio Code, as follows
 
 
 <!-- ====================================================================== -->
-## Step 3: Clone the Microsoft Edge Demos repo
+## Step 3: Install Node.js and Node Package Manager (npm)
+
+To get live (realtime) analysis of your code to indicate issues, such as with wavy underlines, and to offer Quick Fixes, you must install Node.js and Node Package Manager (npm).
+
+The DevTools extension shows a popup suggestion to install Node.js and npm.  The suggestion text is similar to: "Install Node & NPM? (suggested because you installed this extension)".
+
+1. Click the link in the popup.
+
+   Or, install Node.js and npm from [Node.js](https://nodejs.org).
+
+
+<!-- ====================================================================== -->
+## Step 4: Clone the Microsoft Edge Demos repo
 
 This step is optional.  If you want, instead of cloning the repo, you can open an existing project directory if you have one: in the **Explorer** pane of Visual Studio Code, right-click a `.html` file, and then select **Open with Edge** > **Open Browser with DevTools**.  Then skip to [Step 4: Optional: Compare and contrast DevTools in the browser vs. in the extension](#step-4-optional-compare-and-contrast-devtools-in-the-browser-vs-in-the-extension).
 
@@ -95,7 +107,7 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 
 
 <!-- ====================================================================== -->
-## Step 4: Optional: Compare and contrast DevTools in the browser vs. in the extension
+## Step 5: Optional: Compare and contrast DevTools in the browser vs. in the extension
 
 To get some context, before using the Edge DevTools extension in Visual Studio Code, explore the Demo To Do web app and in-browser DevTools debugger, as follows:
 
@@ -129,7 +141,7 @@ Next, to get additional debugging functionality,<!-- todo: eg, list --> and to u
 
 
 <!-- ====================================================================== -->
-## Step 5: View the Success page and the tools
+## Step 6: View the Success page and the tools
 
 At first, we won't create a `launch.json` file and which will load demo to do in the embedded browser.  We'll just explore the extension's DevTools UI in Visual Studio Code by using the default, **Success** webpage.
 
@@ -159,13 +171,13 @@ Next, we'll create a `launch.json` file that points to the specific webpage for 
 
 
 <!-- ====================================================================== -->
-## Step 6: Close Microsoft Edge Tools and the running browser instance
+## Step 7: Close Microsoft Edge Tools and the running browser instance
 
 1. In the **Microsoft Edge Tools** pane on the left, in the **Targets** section, hover on the right side of the listed Target (`index.html`) and then click **Close instance** (**x**).  The Microsoft Edge DevTools panes close.
 
 
 <!-- ====================================================================== -->
-## Step 7: Run the demo app
+## Step 8: Run the demo app
 
 Instead of creating a launch.json file per the optional steps below, in the **Explorer** pane of Visual Studio Code, right-click a `.html` file, such as `Demos\demo-to-do\index.html`, and then select **Open with Edge** > **Open Browser with DevTools**.  Then skip to [Step 8: Use the debugger in Visual Studio Code](#step-8-use-the-debugger-in-visual-studio-code).
 
@@ -222,7 +234,7 @@ Or, use the following more complex and customizable approach (todo: probably rem
 
 
 <!-- ====================================================================== -->
-## Step 8: Use the debugger in Visual Studio Code
+## Step 9: Use the debugger in Visual Studio Code
 
 1. Open `to-do.js` and set a breakpoint near the top of the `addTask` function, as described for the browser environment above.
 
@@ -232,7 +244,7 @@ Or, use the following more complex and customizable approach (todo: probably rem
 
 
 <!-- ====================================================================== -->
-## Step 9: End debugging and close the DevTools tabs
+## Step 10: End debugging and close the DevTools tabs
 
 1. To end debugging, in the Debug toolbar, click **Stop** (`Shift`+`F5`).  The **Edge DevTools** tab (pane) and the **Edge DevTools: Browser** tab (pane) close.
 
