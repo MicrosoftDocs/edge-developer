@@ -9,9 +9,13 @@ ms.date: 09/14/2022
 ---
 # Opening source files from the Elements tool
 
-One of the features of the **Elements** tool is that it displays the source file that applied styles and event handlers to a selected node in the DOM tree.  Source files appear in the form of links to a URL.  Clicking a filename link opens that file in the Visual Studio Code editor:
+In the **Elements** tool:
+*  The **Styles** tab indicates which source file is used to apply styles to the selected node in the DOM tree.
+*  The **Event Listeners** tab indicates which source file is used to define event handlers for the selected node in the DOM tree.
 
-![Opening source files from Elements tool](../microsoft-edge-devtools-extension-images/elements-files.png)
+The source file name and line number are shown as a clickable link.  Clicking a filename link opens that file in the Visual Studio Code editor:
+
+![Opening source files from Elements tool](./opening-source-files-from-elements-tool-images/elements-files.png)
 
 
 <!-- ====================================================================== -->

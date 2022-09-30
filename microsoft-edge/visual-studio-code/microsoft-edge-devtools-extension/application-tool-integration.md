@@ -11,7 +11,8 @@ ms.date: 09/14/2022
 
 The **Application** tool allows you to inspect the various parts of your application. 
 
-![The Application tool inside the Edge DevTools for Visual Studio Code extension](../microsoft-edge-devtools-extension-images/edge-extension-application-tool.png)
+![The Application tool inside the Edge DevTools for Visual Studio Code extension](./application-tool-integration-images/application-tool.png)
+
 
 Use the **Application** tool to:
 

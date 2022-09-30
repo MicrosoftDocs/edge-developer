@@ -17,7 +17,7 @@ You can customize the Visual Studio Code extension to your needs.
 
    If you are using a mouse, to access **More Actions** (...), select the **Targets** pane or hover over it:
 
-   ![The More Actions icon on the Microsoft Edge Tools: Targets panel, to change the settings of the DevTools extension](../microsoft-edge-devtools-extension-images/edge-tools-open-settings-icon.png)
+   ![The More Actions icon on the Microsoft Edge Tools: Targets panel, to change the settings of the DevTools extension](./change-extension-settings-images/change-extension-settings/edge-tools-open-settings.png)
 
 
 <!-- ====================================================================== -->
@@ -29,6 +29,9 @@ Some settings have a note that reads **(reload required after changing)**.  For 
 <!-- clicking Close instance (x) doesn't always have an effect.  open folder, have no launch.json, right-click html file (devtools starts) then click x - no effect -->
 
 1. In the **Microsoft Edge Tools** > **Targets** pane, click the **Launch Instance** button.  Microsoft Edge opens, and the **Edge DevTools** tab is displayed.
+
+
+When you change settings, a quick way to restart is to select **File** > **Close Folder**, then select **File** > **Open Recent** > select a folder.
 
 
 <!-- ====================================================================== -->

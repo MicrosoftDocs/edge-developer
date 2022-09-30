@@ -9,9 +9,9 @@ ms.date: 09/14/2022
 ---
 # Device and state emulation
 
-In the Edge DevTools: Browser preview tab, the emulation toolbar on the bottom enables you to simulate different environments:
+In the **Edge DevTools: Browser** tab, the Device Emulation toolbar on the bottom enables you to simulate different environments:
 
-![Browser preview in the extension with emulation tool bar showing](../microsoft-edge-devtools-extension-images/edge-for-code-screencast-v2.png)
+![Browser preview in the extension with emulation tool bar showing](./device-state-emulation-images/edge-for-code-screencast-v2.png)
 
 
 <!-- ====================================================================== -->
@@ -20,7 +20,7 @@ In the Edge DevTools: Browser preview tab, the emulation toolbar on the bottom e
 
 In the **Emulate devices** dropdown menu, you can select from a number of different devices.  When you select a device, the viewport resizes to the correct measurements and simulates the touch interface.  For example, there are several emulated iPhone layouts:
 
-![Browser preview in the extension showing the web product in an emulated phone layout](../microsoft-edge-devtools-extension-images/edge-for-code-screencast-v2-emulating.png)
+![Browser preview in the extension showing the web product in an emulated phone layout](./device-state-emulation-images/edge-for-code-screencast-v2-emulating.png)
 
 
 <!-- ====================================================================== -->
@@ -28,32 +28,36 @@ In the **Emulate devices** dropdown menu, you can select from a number of differ
 <!-- toolbar item 2. Width -->
 <!-- toolbar item 3. Height -->
 
-Click the **Width** and **Height** dropdown menus to change the viewport dimensions: ![Width and Height dropdown menus](../microsoft-edge-devtools-extension-images/width-height.png)
+Click the **Width** and **Height** dropdown menus to change the viewport dimensions: ![Width and Height dropdown menus](./device-state-emulation-images/width-height.png)
 
 
 <!-- ====================================================================== -->
 ## Rotate button
 <!-- toolbar item 4. Rotate -->
 
-Click the **Rotate** button (![The Rotate button](../microsoft-edge-devtools-extension-images/rotate-button.png)) to rotate the viewport.
+Click the **Rotate** button (![The Rotate button](./device-state-emulation-images/rotate-button.png)) to rotate the viewport.
 
 
 <!-- ====================================================================== -->
 ## Emulate CSS Media Features button
 <!-- toolbar item 5. Emulate CSS media features -->
 
-To emulate CSS media queries, click the **Emulate CSS media features** (![Emulate CSS media features](../microsoft-edge-devtools-extension-images/emulate-css-media-features-button.png)) button.  This button enables you to test how your product looks in print mode.  You can switch between dark and light mode, and emulate forced colors:
+Use the **Emulate CSS media features** button (![Emulate CSS media features](./device-state-emulation-images/emulate-css-media-features-button.png)) to: 
+*  Emulate CSS media queries.
+*  Test how your product looks in print mode.
+*  Switch between dark and light mode.
+*  Emulate forced colors.
 
-![Browser preview in the extension showing the web product in forced color mode](../microsoft-edge-devtools-extension-images/edge-for-code-forced-colours.png)
+![Browser preview in the extension showing the web product in forced color mode](./device-state-emulation-images/edge-for-code-forced-colours.png)
 
 
 <!-- ====================================================================== -->
 ## Emulate Vision Deficiencies button
 <!-- toolbar item 6. Emulate vision deficiencies -->
 
-Click the **Emulate vision deficiencies** (![The Emulate vision deficiencies button](../microsoft-edge-devtools-extension-images/emulate-vision-deficiencies-button.png)) button to try the experience of the current web project with different visual deficiencies.  This button lets you test your product in a blurred mode or in different color deficiencies:
+Click the **Emulate vision deficiencies** (![The Emulate vision deficiencies button](./device-state-emulation-images/emulate-vision-deficiencies-button.png)) button to test the user experience of the current webpage with different visual deficiencies.  This button lets you test your product in a blurred mode, or in different color deficiencies:
 
-![Browser preview in the extension showing the web product in a blurred emulation](../microsoft-edge-devtools-extension-images/edge-for-code-blurred.png)
+![Browser preview in the extension showing the web product in a blurred emulation](./device-state-emulation-images/edge-for-code-blurred.png)
 
 
 <!-- ====================================================================== -->
