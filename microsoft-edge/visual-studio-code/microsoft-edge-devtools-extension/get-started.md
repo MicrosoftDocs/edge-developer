@@ -395,7 +395,7 @@ To use the Visual Studio Code debugger on your webpage's JavaScript file:
 
    If you opened a server URL, such as `http://localhost/demos/demo-to-do/` (as described above), select **Edge DevTools** tab > **Elements** tool > **Styles** tab > click a `.js` filename.  This opens a downloaded copy of a `.js` file, that was returned by a web server.
 
-1. In the `.js` file, click to the left of a line number to set a breakpoint.  For example, in `Demos\demo-to-do\to-do.js`, set a breakpoint in the top of the `addTask` or `changeTask` function body.  (To get `to-do.js`, see [Step 3: Clone the Microsoft Edge Demos repo](./get-started.md#step-3-clone-the-microsoft-edge-demos-repo) in _Get started with the DevTools extension for Visual Studio Code_.)
+1. In the `.js` file, click to the left of a line number to set a breakpoint.  For example, in `Demos\demo-to-do\to-do.js`, set a breakpoint in the top of the `addTask` or `changeTask` function body.  (To get `to-do.js`, see [Step 4: Optional: Clone the Microsoft Edge Demos repo](./get-started.md#step-4-optional-clone-the-microsoft-edge-demos-repo) in _Get started with the DevTools extension for Visual Studio Code_.)
 
 1. Enter data in the webpage, then submit - or equivalent.  For example, in `Demos\demo-to-do\index.html`, click a "done" option button next to an entered task, to trigger a JavaScript function that you've set a breakpoint on.
 

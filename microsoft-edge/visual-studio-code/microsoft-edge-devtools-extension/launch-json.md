@@ -177,7 +177,7 @@ The name of this compound configuration, **Launch Edge and attach DevTools**, ap
 <!-- ====================================================================== -->
 ## Adding configurations
 
-You can define your own, additional configurations, in order to XYZ.  Click the **Add configuration** button.  Or, you can modify the default configurations, such as to point to localhost:8080 or a local file path string as described in [Step 7: Run the demo app](./get-started.md#step-7-run-the-demo-app) in _Get started with the DevTools extension for Visual Studio Code_.
+You can define your own, additional configurations, in order to XYZ.  Click the **Add configuration** button.
 
 
 <!-- ====================================================================== -->
