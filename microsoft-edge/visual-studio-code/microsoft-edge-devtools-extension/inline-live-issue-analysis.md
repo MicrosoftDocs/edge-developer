@@ -13,15 +13,17 @@ Issues in your source code (`.html`, `.css`, or `.js` files) are highlighted wit
 
 ![An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information](./inline-live-issue-analysis-images/inline-issue-reporting.png)
 
+
 This feature requires Node.js and npm (Node Package Manager).  See [Step 3: Install Node.js and Node Package Manager (npm)](get-started.md#step-3-install-nodejs-and-node-package-manager-npm) in _Get started with the DevTools extension for Visual Studio Code_.
 
-<!-- todo: differentiate/discuss VS Code's wavy underlining vs. the extension's -->
+
+
+This feature is on by default; the **Webhint** checkbox is selected in **Settings**.  To turn this feature on or off, select Activity Bar > **Microsoft Edge Tools** > hover to the right of **Targets** > **More Actions** (**...**) > **Open Settings** > select or clear the **Webhint** checkbox:
+
+![Webhint checkbox in Settings](./inline-live-issue-analysis-images/webhint-checkbox-settings.png)
 
 
 To see all the issues in the file, click **View Problem**:
-
-<!-- todo: where to get file with wavy underlining (page-with-errors.html)?  
-to get wavy underline bc missing alt text when add <img src="foo.png"/> in demo-to-do's index.html -->
 
 ![A highlighted issue in the source code with a navigation bar explaining the problem and buttons to move to the next and previous issues](./inline-live-issue-analysis-images/navigating-issues.png)
 
