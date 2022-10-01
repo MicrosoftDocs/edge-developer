@@ -52,11 +52,19 @@ Install the Microsoft Edge DevTools extension for Visual Studio Code, as follows
 
 To get live (realtime) analysis of your code to indicate issues, such as with wavy underlines, and to offer Quick Fixes, you must install Node.js and Node Package Manager (npm).
 
-The DevTools extension shows a popup suggestion to install Node.js and npm.  The suggestion text is similar to: "Install Node & NPM? (suggested because you installed this extension)".
+The DevTools extension shows a popup suggestion to install Node.js and npm.  The suggestion text is similar to: "Install Node.js & npm? (suggested because you installed this extension)".
 
-1. Click the link in the popup.
+1. Click the link in the popup, if it opens.
 
-   Or, install Node.js and npm from [Node.js](https://nodejs.org).
+1. Install Node.js and npm from [Node.js](https://nodejs.org) > Downloads > LTS (long-term stable) (or, Current).
+
+   On Windows, the .msi file is downloaded, such as `node-v16.17.1-x64.msi`.
+
+1. In the browser's Downloads pane, Click **Show in folder**.  Run the downloaded file.  The Node.js Setup Wizard opens.  Click the **Next** button.  Follow the prompts.  
+
+
+See also:
+* [Inline and live issue analysis](./inline-live-issue-analysis.md)
 
 
 <!-- ====================================================================== -->
@@ -104,6 +112,54 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
    An example of a repo location where the **Demos** repo has been cloned is shown above.  The `demo-to-do` folder of the cloned **Demos** repo opens in the Explorer of Visual Studio Code, and no `launch.json` file exists yet:
 
    ![Opened the demo-to-do folder initially](./get-started-images/opened-demo-to-do-folder-initially.png)
+
+
+<!-- ====================================================================== -->
+## Step 1: Set up a localhost server
+
+<!-- You can use Node.js if installed above, to act as the web server. -->
+
+Optionally, set up or enable a local web server for testing.  If you don't do this, you will be able to launch DevTools and the DevTools: Browser in VS Code, with debugging ability, by right-clicking a local .html file but not by entering a URL.  These instructions are for IIS on Windows; use equivalent steps for your environment.
+
+1. In Windows, select **Start** > **Control Panel**:
+
+   ![Control Panel initial page](./get-started-images/control-panel-initial-page.png)
+
+1. Click **Turn Windows features on or off**:
+
+   ![Turn Windows features on or off](./get-started-images/turn-win-features-on-off.png)
+
+1. Select the **Internet Information Services** (IIS) checkbox, and then click the **OK** button:
+
+   ![IIS checkbox in Windows Features dialog](./get-started-images/iis-checkbox-windows-features.png)
+
+   Windows applies the changes.
+
+1. Click the **Close** button to close the **Windows Features** dialog.
+
+1. In a web browser, go to **http://localhost**.
+
+1. Optionally, click in the page to go to [Microsoft IIS.net](https://www.iis.net) for information about using IIS.  For example, see [Getting Started with the IIS Manager in IIS](https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/getting-started-with-the-iis-manager-in-iis-7-and-iis-8).
+
+* [Add a Web Site](https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/create-a-web-site#add-a-web-site) in _Create a Web Site_ in the IIS docs.
+
+1. Select **Start** > type **iis** > select **Internet Information Services (IIS) Manager** > **Open**:
+
+   ![Starting IIS Manager](./get-started-images/iis-manager-starting.png)
+
+1. Click the **Explore** link in the upper right:
+
+   ![The Explore link in IIS Manager](./get-started-images/explore-in-iis-manager.png)
+
+   File Explorer opens, to a location such as `C:\inetpub\wwwroot`.
+
+1. Copy the demo-to-dir directory from the Demos repo into that directory:
+
+   ![Demo files copied to server directory](./get-started-images/demo-copied-to-server-dir.png)
+
+1. In a web browser, go to [http://localhost/demo-to-do/](http://localhost/demo-to-do/), or the equivalent location matching where you placed the `.html` file that you want to load later in the DevTools extension:
+
+   ![demo-to-do page served from localhost](./get-started-images/demo-to-do-page-from-localhost.png)
 
 
 <!-- ====================================================================== -->
@@ -177,7 +233,13 @@ Next, we'll create a `launch.json` file that points to the specific webpage for 
 
 
 <!-- ====================================================================== -->
-## Step 8: Run the demo app
+## Step 8: Launch the demo app by right-clicking a local .html file
+
+
+
+
+<!-- ====================================================================== -->
+## Step 9: Launch the demo app by putting a localhost URL in launch.json
 
 Instead of creating a launch.json file per the optional steps below, in the **Explorer** pane of Visual Studio Code, right-click a `.html` file, such as `Demos\demo-to-do\index.html`, and then select **Open with Edge** > **Open Browser with DevTools**.  Then skip to [Step 8: Use the debugger in Visual Studio Code](#step-8-use-the-debugger-in-visual-studio-code).
 
@@ -198,15 +260,16 @@ Or, use the following more complex and customizable approach (todo: probably rem
 
    You don't need to run port 8080.  You can run the app from your local drive as-is.
 
-1. In Visual Studio Code, in the **Explorer**, right-click the file `Demos\demo-to-do\index.html` and then select **Copy path**.
+1. In a web browser, go to `http://localhost/` where your `.html` file is on the server, such as **http://localhost/demo-to-do/**.
 
-1. In the **Explorer**, click the **launch.json** file.
+1. Copy the URL from the address bar.
 
-1. Paste the path inside the quoted path string in one of the `"url"` strings, and change to use double-quotes.  For example:
+1. In Visual Studio Code > Activity Bar > **Explorer**, click the **launch.json** file.
+
+1. Paste the path inside the quoted path string in one of the `"url"` strings.  For example:
 
    ```js
-   "url": "C:\\Users\\myusername\\Documents\\GitHub\\Demos\\demo-to-do\\index.html", 
-   // Provide your project's url to finish configuring
+   "url": "http://localhost/demo-to-do/", // Provide your project's url to finish configuring
    ```
 
 1. Copy and paste the modified URL line to the other places in the `launch.json` file.  To modify all instances at the same time, you can copy an updated URL string, then select an instance of the initial URL string, press `Ctrl`+`Shift`+`L` to select all instances, and then paste the updated string.
