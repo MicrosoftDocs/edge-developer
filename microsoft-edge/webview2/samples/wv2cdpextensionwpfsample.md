@@ -149,6 +149,7 @@ A prerequisite for this sample is the latest release version of the WebView2 CDP
 1. If a newer release version of the **Microsoft.Web.WebView.DevToolsProtocolExtension** SDK is listed, click the **Update** button.
 
 <!-- For more information, see [WebView2 CDP Extension](https://aka.ms/webviewcdpnuget).  todo: 404, ie: defaults to bing -->
+For more information about the WebView2 CDP Extension, see [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../how-to/chromium-devtools-protocol.md)
 
 
 <!-- ====================================================================== -->
