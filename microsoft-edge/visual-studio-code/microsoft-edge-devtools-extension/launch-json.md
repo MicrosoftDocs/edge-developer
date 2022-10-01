@@ -9,11 +9,20 @@ ms.date: 09/21/2022
 ---
 # The launch.json file for DevTools extension
 
-Normally, you shouldn't need to create, use, or understand the `launch.json` file.  Instead, in the **Explorer** pane of Visual Studio Code, right-click a `.html` file, and then select **Open with Edge** > **Open Browser with DevTools**.  For more information, see [Get started with the DevTools extension for Visual Studio Code](./get-started.md).
+There are two main ways to launch DevTools:
 
-Visual Studio Code uses a `launch.json` file to configure and customize the debugger.  `launch.json` is a debugger configuration file.  This file also controls which web browser to use in conjunction with the debugger.  For example, when you test your webpage by clicking a button in the webpage to cause your JavaScript code to run, the VS Code debugger listens to the browser and steps through the JavaScript code of the webpage.
+*  Right-click an `.html` file in Visual Studio Code > Activity Bar > **Explorer**.  This approach doesn't involve a `launch.json` file.  For more information, see [Step 9: Open DevTools by right-clicking an .html file](./get-started.md#step-9-open-devtools-by-right-clicking-an-html-file) in _Get started with the DevTools extension for Visual Studio Code_.
+
+*  Generate a `launch.json` file, edit it to point to a URL, such as `http://localhost/demos/demo-to-do/`, and then select Visual Studio Code > Activity Bar > **Microsoft Edge Tools** > **Launch Project** button.  For more information, see [Step 11: Open DevTools for a URL using the Launch Instance button](./get-started.md#step-11-open-devtools-for-a-url-using-the-launch-instance-button) in _Get started with the DevTools extension for Visual Studio Code_.
+
+Details about the `launch.json` file format are below.  However, you normally don't need to change anything in the file except to replace several instances of the URL string, as explained in the above linked section.
+
+
+Visual Studio Code uses a `launch.json` file to configure and customize the debugger.  `launch.json` is a debugger configuration file.  This file also controls which web browser to use in conjunction with the debugger.  For example, when you test your webpage by clicking a button in the webpage to cause your JavaScript code to run, the Visual Studio Code debugger listens to the browser and steps through the JavaScript code of the webpage.
 
 The following is a copy of the `launch.json` after clicking the **Create launch.json** button in the extension.
+
+<!-- todo: which "xyz" points to clarify in this article? -->
 
 These configurations are needed because XYZ.  This info is defined in this file in order to control XYZ, as a way of XYZ how Visual Studio Code XYZ.
 

@@ -31,7 +31,7 @@ You can move the **Edge DevTools: Browser** tab to anywhere within the editor ar
 <!-- ====================================================================== -->
 ## Starting the debugger with DevTools
 
-<!-- todo: what sets this kind of debugging apart from VS Code's and from DevTool's?  Clarify h2, improve .md filename -->
+<!-- todo: what sets this kind of debugging apart from Sources tool of DevTools?  Clarify h2, improve .md filename -->
 
 <!-- todo:
 add missing steps

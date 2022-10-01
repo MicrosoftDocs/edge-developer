@@ -39,8 +39,6 @@ This article helps you:
 <!-- ====================================================================== -->
 ## Step 2: Install the Microsoft Edge DevTools extension
 
-1. [Download Visual Studio Code](https://code.visualstudio.com/Download).
-
 1. In Visual Studio Code, in the Activity Bar on the left, click the **Extensions** (![Extensions icon](./get-started-images/extensions-icon.png)) button.
 
 1. In the **Search Extensions in Marketplace** text box, enter **Microsoft Edge Tools for VS Code**.
@@ -102,7 +100,7 @@ See also:
 <!-- ====================================================================== -->
 ## Step 4: Optional: Clone the Microsoft Edge Demos repo
 
-This step is optional.  If you want, instead of cloning the repo, you can open an existing project directory if you have one: in the **Explorer** pane of Visual Studio Code, right-click a `.html` file, and then select **Open with Edge** > **Open Browser with DevTools**.  Then skip to [Step 4: Optional: Compare and contrast DevTools in the browser vs. in the extension](#step-4-optional-compare-and-contrast-devtools-in-the-browser-vs-in-the-extension).
+This step is optional.  If you want, instead of cloning the repo, you can open an existing project directory if you have one: in the **Explorer** pane of Visual Studio Code, right-click a `.html` file, and then select **Open with Edge** > **Open Browser with DevTools**.  Then skip to [Step 6: Optional: Compare and contrast DevTools in the browser vs. in the extension](#step-6-optional-compare-and-contrast-devtools-in-the-browser-vs-in-the-extension).
 
 To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 
@@ -171,9 +169,10 @@ Optionally, set up or enable a local web server for testing.  If you don't do th
 
 1. In a web browser, go to **http://localhost**.
 
-1. Optionally, click in the page to go to [Microsoft IIS.net](https://www.iis.net) for information about using IIS.  For example, see [Getting Started with the IIS Manager in IIS](https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/getting-started-with-the-iis-manager-in-iis-7-and-iis-8).
+1. Optionally, click in the page to go to [Microsoft IIS.net](https://www.iis.net) for information about using IIS.  For example, see:
 
-* [Add a Web Site](https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/create-a-web-site#add-a-web-site) in _Create a Web Site_ in the IIS docs.
+   * [Getting Started with the IIS Manager in IIS](/iis/get-started/getting-started-with-iis/getting-started-with-the-iis-manager-in-iis-7-and-iis-8).
+   * [Add a Web Site](/iis/get-started/getting-started-with-iis/create-a-web-site#add-a-web-site) in _Create a Web Site_ in the IIS docs.
 
 1. Select **Start** > type **iis** > select **Internet Information Services (IIS) Manager** > **Open**:
 
@@ -279,7 +278,7 @@ This is the simple scenario; try this approach first.
 
    ![The two Edge DevTools tabs and the Debug toolbar](./get-started-images/devtools-extension-v211.png)
 
-To try this by using the **demo-to-do** sample app, see [Step 3: Clone the Microsoft Edge Demos repo](./get-started.md#step-3-clone-the-microsoft-edge-demos-repo).
+To try this by using the **demo-to-do** sample app, see [Step 4: Optional: Clone the Microsoft Edge Demos repo](#step-4-optional-clone-the-microsoft-edge-demos-repo).
 
 
 <!-- ====================================================================== -->
@@ -332,7 +331,7 @@ If you want to use the **Launch Instance** button instead of right-clicking an `
 
 Launch the demo app by putting a localhost URL in launch.json
 
-Instead of creating a launch.json file per the optional steps below, in the **Explorer** pane of Visual Studio Code, right-click a `.html` file, such as `Demos\demo-to-do\index.html`, and then select **Open with Edge** > **Open Browser with DevTools**.  Then skip to [Step 8: Use the debugger in Visual Studio Code](#step-8-use-the-debugger-in-visual-studio-code).
+Instead of creating a launch.json file per the optional steps below, in the **Explorer** pane of Visual Studio Code, right-click a `.html` file, such as `Demos\demo-to-do\index.html`, and then select **Open with Edge** > **Open Browser with DevTools**.  Then skip to [Step 12: Debug JavaScript](#step-12-debug-javascript).
 
 Or, use the following more complex and customizable approach (todo: probably remove these steps here):
 
@@ -394,7 +393,7 @@ To use the Visual Studio Code debugger on your webpage's JavaScript file:
 
 1. In Visual Studio Code, if you open a `.html` file from your hard drive (as described above), use Activity Bar > **Explorer** > open a `.js` file.
 
-   If you opened a server URL, such as `https://localhost:8080` (as described above), select **Edge DevTools** tab > **Elements** tool > **Styles** tab > click a `.js` filename.  This opens a downloaded copy of a `.js` file, that was returned by a web server.
+   If you opened a server URL, such as `http://localhost/demos/demo-to-do/` (as described above), select **Edge DevTools** tab > **Elements** tool > **Styles** tab > click a `.js` filename.  This opens a downloaded copy of a `.js` file, that was returned by a web server.
 
 1. In the `.js` file, click to the left of a line number to set a breakpoint.  For example, in `Demos\demo-to-do\to-do.js`, set a breakpoint in the top of the `addTask` or `changeTask` function body.  (To get `to-do.js`, see [Step 3: Clone the Microsoft Edge Demos repo](./get-started.md#step-3-clone-the-microsoft-edge-demos-repo) in _Get started with the DevTools extension for Visual Studio Code_.)
 

@@ -793,10 +793,6 @@
               href: visual-studio-code/microsoft-edge-devtools-extension.md
               displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
 
-            - name: Quick start guide
-              href: visual-studio-code/microsoft-edge-devtools-extension/quick-start-guide.md
-              displayName: "Quick start guide: DevTools extension for Visual Studio Code" # full title
-
             - name: Get started with the DevTools extension for Visual Studio Code
               href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
               displayName: installing, setup, tutorial, demo to do
