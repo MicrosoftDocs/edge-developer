@@ -78,7 +78,7 @@ To configure DevTools:
 
 1. make sure the `Enable JavaScript source maps` and `Enabled CSS source maps` checkboxes are checked.
 
-![The Preferences configuration screen in DevTools settings](images/ado-preferences-source-maps-devtools.png)
+    ![The Preferences configuration screen in DevTools settings](images/ado-preferences-source-maps-devtools.png)
 
 1. In DevTools, click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Symbol Server**.
 
