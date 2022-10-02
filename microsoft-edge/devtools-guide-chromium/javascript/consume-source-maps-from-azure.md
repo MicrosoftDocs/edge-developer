@@ -74,6 +74,12 @@ To configure DevTools:
 
 1. To open DevTools, in Microsoft Edge, right-click a webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
+1. In DevTools, click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
+
+1. make sure the `Enable JavaScript source maps` and `Enabled CSS source maps` checkboxes are checked.
+
+![The Preferences configuration screen in DevTools settings](https://user-images.githubusercontent.com/9786571/193443067-a45ef903-557a-412e-a818-507e5ee6b3b1.png)
+
 1. In DevTools, click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Symbol Server**.
 
 1. In the **Azure DevOps organization** text box, enter the Azure DevOps organization where you created the PAT.
