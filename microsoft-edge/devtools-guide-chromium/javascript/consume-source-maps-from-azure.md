@@ -76,11 +76,11 @@ To configure DevTools:
 
 1. In DevTools, click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
 
-1. make sure the `Enable JavaScript source maps` and `Enabled CSS source maps` checkboxes are checked.
+1. Make sure the **Enable JavaScript source maps** checkbox and the **Enable CSS source maps** checkbox are selected.
 
     ![The Preferences configuration screen in DevTools settings](images/ado-preferences-source-maps-devtools.png)
 
-1. In DevTools, click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Symbol Server**.
+1. In the sidebar of the **Settings** page, click **Symbol Server**.
 
 1. In the **Azure DevOps organization** text box, enter the Azure DevOps organization where you created the PAT.
 
