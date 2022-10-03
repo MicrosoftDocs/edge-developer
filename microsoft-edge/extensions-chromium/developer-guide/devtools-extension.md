@@ -10,9 +10,9 @@ ms.date: 9/27/2022
 ---
 # Create a DevTools extension
 
-This tutorial shows you how to build your own DevTools extension from scratch. It is a good way to experience everything that is needed for typical development. At the end of the tutorial, you should have a working extension that creates its own panel and interacts with the DevTools APIs.
+This tutorial shows how to build your own DevTools extension from scratch. It's a good way to experience everything that's needed for typical development. At the end of the tutorial, you'll have a working extension that creates its own panel and interacts with the DevTools APIs.
 
-First please review the prerequisites. Then download and run the final extension from the [Solution](#solution) section to see what you will be building in this tutorial. Otherwise, start at the [Step 1 - Create a Basic DevTools Extension](#step-1---create-a-basic-devtools-extension) section to build the extensions from scratch.
+First review the prerequisites. Then download and run the final extension from the [Solution](#solution) section to see what you'll be building in this tutorial. Otherwise, start at [Step 1 - Create a Basic DevTools Extension](#step-1---create-a-basic-devtools-extension) to build the extension from scratch.
 
 
 <!-- ====================================================================== -->
@@ -20,35 +20,34 @@ First please review the prerequisites. Then download and run the final extension
 
 * [Microsoft Edge Browser](https://www.microsoft.com/edge) to run the extension.
 * A code editor such as [Visual Studio Code](https://code.visualstudio.com/) to follow along with the tutorial.
-* Knowledge of [GitHub](https://github.com/) to download the code presented in this tutorial.
 
 
 <!-- ====================================================================== -->
 ## Solution
 
-In this section, you download and run the final state of the extension that the rest of this tutorial will teach you to build. Later, you will start from scratch and learn to write the code to create your own extension.
+In this section, you download and run the final state of the extension that the rest of this tutorial will teach you to build. Later, you'll start from scratch and learn to write the code to create your own extension.
 
 1. Get the final extension code by [downloading this zip file](https://codeload.github.com/MicrosoftEdge/Demos/zip/refs/heads/main) and extracting its content to a folder on your computer.
 
-1. Open Microsoft Edge and navigate to the `edge://extensions/` page.
+1. Open Microsoft Edge and go to `edge://extensions/`.
 
-1. Make sure that **Developer mode** is enabled.
+1. Turn on the  **Developer mode** toggle.
 
 1. Click **Load unpacked** and navigate to the folder where you extracted the zip file. In this folder, select **Demos-main** > **devtools-extension** > **sample 4**, and then click **Select Folder**.
 
   ![The edge://extensions page in Microsoft Edge, showing the Developer mode and Load unpacked buttons.](./devtools-extensions-images/edge-extensions-page.png)
 
-Your DevTools extension should now be loaded. Open a new tab in Microsoft Edge then open DevTools by pressing `F12`.
+Your DevTools extension should now be loaded. Open a new tab in Microsoft Edge, and then open DevTools by pressing `F12`.
 
-The extension creates a `Sample Panel` in the DevTools window.
+The extension creates a **Sample Panel** tab in the DevTools window:
 
 ![Microsoft Edge, showing DevTools on the side, with the extension's Sample Panel selected.](./devtools-extensions-images/solution-sample-panel.png)
 
 
 <!-- ====================================================================== -->
-## Step 1 - Create A Basic DevTools Extension
+## Step 1 - Create a basic DevTools extension
 
-A basic DevTools extension consists of 2 files, as shown in the [Step 1 code](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%201):
+A basic DevTools extension consists of two files, as shown in [Step 1 code](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%201):
 
 1. A manifest file.
 
@@ -86,23 +85,23 @@ A basic DevTools extension consists of 2 files, as shown in the [Step 1 code](ht
 
 To load and test your DevTools extension in Microsoft Edge, use the **Developer mode**:
 
-1. Open Microsoft Edge and navigate to the `edge://extensions/` page.
+1. In Microsoft Edge, go to `edge://extensions/`.
 
-1. Make sure that **Developer mode** is enabled.
+1. Turn on the  **Developer mode** toggle.
 
 1. Click **Load unpacked**, navigate to the folder where you wrote the code for your extension, and click **Select folder**.
 
-Your DevTools extension should now be loaded. Open a new tab and then open DevTools (`F12`).
+Your DevTools extension is now loaded. Open a new tab and then open DevTools (`F12`).
 
-Your  extension is loaded but invisible in DevTools because you have not created a panel for the extension yet.
+Your  extension is loaded, but isn't displayed in DevTools yet, because you haven't created a panel for the extension.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Add a DevTools Panel
+## Step 2 - Add a DevTools panel
 
-In this step, you will create a new panel in DevTools. You can find the code for this step here: [Step 2 code](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%202), or write it yourself by following the instructions below.
+In this step, you'll create a new panel in DevTools. You can find the code for this step in [Step 2 code](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%202), or write it yourself by following the instructions below.
 
-A panel is a tab in the main toolbar in DevTools similar to the **Elements**, **Console**, or **Sources** tools shown below:
+A _panel_ is a tab in the main toolbar in DevTools, similar to the **Elements**, **Console**, and **Sources** tools shown below:
 
 ![DevTools panels and sidebars](./devtools-extensions-images/devtools-main-toolbar-tabs.png)
 
@@ -164,7 +163,7 @@ Your DevTools extension should now be reloaded. Open a new tab in Microsoft Edge
 
 
 <!-- ====================================================================== -->
-## Step 3 - Call extension APIs from a DevTools Extension
+## Step 3 - Call extension APIs from a DevTools extension
 
 In this step, you will use extension APIs to display memory information in your DevTools panel.  To do this, we will need to update the `permissions` in the manifest file, the panel interface, and the devtools script. The source code for this step can be found in [Step 3 code](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%203), or write it yourself by following the instructions below.
 
@@ -307,11 +306,11 @@ In this part of the tutorial, you will detect the user clicks on a webpage using
 1. In the `panel.html` file, add a `sayHello` button and a `youClickedOn` label . These two elements are used to demo the interaction between the inspected page, the DevTools panel, and the background service worker. When the user clicks the `sayHello` button in the DevTools extension, it will display a greeting message in the inspected window. When the user clicks anywhere in the inspected page, it will display a message to show the mouse click position in the DevTools extension panel.
 
     ```html
-    <button id="sayHello">Say Hello to The Inspected Page!</button>
+    <button id="sayHello">Say Hello to the inspected page!</button>
     <h2><span id="youClickedOn"></span></h2>
     ```
 
-1. In the `devtools.js` file, use the `chrome.runtime.connect` method to create a connection to the background service worker, then send the inspected window `tabId` to the service worker with the `backgroundPageConnection.postMessage` method. Finally, add event listeners to the `sayHello` button and `youClickedOn` label defined in the  `panel.html` file.
+1. In the `devtools.js` file, use the `chrome.runtime.connect` method to create a connection to the background service worker, and then send the inspected window `tabId` to the service worker by using the `backgroundPageConnection.postMessage` method. Finally, add event listeners to the `sayHello` button and `youClickedOn` label that's defined in the  `panel.html` file.
 
     ```javascript
     let youClickedOn; 
@@ -322,7 +321,7 @@ In this part of the tutorial, you will detect the user clicks on a webpage using
             youClickedOn = extPanelWindow.document.querySelector('#youClickedOn');
             sayHello.addEventListener("click", () => {
                 // show a greeting alert in the inspected page
-                chrome.devtools.inspectedWindow.eval('alert("Hello from the DevTools Extension");');
+                chrome.devtools.inspectedWindow.eval('alert("Hello from the DevTools extension");');
             });             
         });
     });
@@ -355,9 +354,9 @@ In this part of the tutorial, you will detect the user clicks on a webpage using
 
     When the user clicks the `sayHello` button, the DevTools extension will execute a code snippet of `alert("Hello from the DevTools Extension");` in the inspected window by invoking the `eval()` method of the inspected window `chrome.devtools.inspectedWindow`.
 
-    When the user clicks anywhere in the inspected window, the DevTools extension will get a message, from the background service worker, with `request.click == true` and the mouse position information.
+    When the user clicks anywhere in the inspected window, the DevTools extension will receive a message, from the background service worker, with `request.click == true` and the mouse position information.
 
-1. Create the `background.js` file and add the following code to it.
+1. Create the `background.js` file and add the following code to it:
 
     ```javascript
     let id = null;
@@ -389,13 +388,13 @@ In this part of the tutorial, you will detect the user clicks on a webpage using
 
 To test the new `sayHello` button:
 
-1. Navigate (or go back) to the `edge://extensions/` page.
+1. Go to `edge://extensions/`.
 
-1. Find the unpacked extension entry you loaded in step 1.
+1. Find the unpacked extension entry that you loaded in Step 1.
 
-1. Click **Reload**.
+1. Click the **Reload** button.
 
-1. Open a new browser tab, open DevTools (`F12`), and click **Sample panel**.
+1. Open a new browser tab, open DevTools (`F12`), and click the **Sample Panel** tab.
 
 1. Click the `"Say Hello to The Inspected Page!"` button in your panel. You should see an alert in the inspected page, as shown below.
 
@@ -419,7 +418,7 @@ To test the `youClickedOn` label:
 <!-- ====================================================================== -->
 ## Conclusion
 
-In this tutorial, you learned how to create DevTools extensions from scratch and load them into the browser.  You extended DevTools by creating a new panel to display memory information using APIs available to Microsoft Edge extensions.  And then you added a content script to detect the mouse clicks on a webpage, and sent that information to DevTools. Finally, you learned how to send and receive messages between a background service worker and DevTools. The background service worker is able to track the mouse clicks in the background and log outputs in the DevTools console.
+In this tutorial, you learned how to create a DevTools extension from scratch and load it into the browser.  You extended DevTools by creating a new panel to display memory information by using APIs that are available to Microsoft Edge extensions.  And then you added a content script to detect the mouse clicks on a webpage, and sent that information to DevTools. Finally, you learned how to send and receive messages between a background service worker and DevTools. The background service worker tracks the mouse clicks in the background and logs output in the DevTools console.
 
 
 <!-- ====================================================================== -->
