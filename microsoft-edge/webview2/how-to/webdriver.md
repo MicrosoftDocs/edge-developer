@@ -229,6 +229,11 @@ For more info about the `DebuggerAddress` property of the `EdgeOptions` object, 
 
 Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge WebDriver, by attaching Microsoft Edge WebDriver to a running WebView2 app.
 
+### Note for using UWP projects and debugging
+Because of the way that UWP projects are launched the WebDriver is not able to automatically configure the debug settings on launch. You will need to use the registry and enable debugging for all WebView2 process on startup.
+WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS environment variable (and corresponding regkey) that are documented in our https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.818.41 Microsoft Docs page. The browser arguments env var / regkey lets you add to the command line arguments that will be passed to the WebView2 Runtime browser process when it is started.
+
+Be aware that doing so will enabled debugging support for all launched WebView2 processes while this is condigure.
 
 <!-- ====================================================================== -->
 ## See also
