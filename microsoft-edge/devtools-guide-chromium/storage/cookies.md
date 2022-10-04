@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/09/2022
+ms.date: 09/27/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -32,7 +32,7 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 
 1. Open DevTools on the webpage you want to edit.  For example, right-click the page and then select **Inspect**, or press `F12`.  For additional ways, see [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
 
-2. Click the **Application** tab to open the **Application** tool. The **Manifest** pane opens:
+2. Click the **Application** icon (![Application icon](cookies-images/application-icon.png)) or pick "Application" in the **Quick View** drop-down list to open the **Application** tool. The **Manifest** pane opens:
 
    ![The Manifest pane](cookies-images/pick-application-no-manifest.png)
 

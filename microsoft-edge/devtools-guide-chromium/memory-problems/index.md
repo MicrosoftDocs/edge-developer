@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 09/22/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -87,7 +87,9 @@ You can also use the Performance panel as another starting point in your investi
 
 1. Select the **Memory** checkbox.
 
-1. [Make a recording](../evaluate-performance/reference.md#record-performance).
+1. Click the **Record** (![Record icon.](../media/record-icon.msft.png)) button to make a recording.
+
+![The Performance tool default screen, with the record button and the Memory checkbox](images/make-a-recording-with-memory-option.png)
 
 It's a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, click the **collect garbage** ![force garbage collection.](../media/collect-garbage-icon.msft.png) button while recording.
 
@@ -108,17 +110,11 @@ Every time that the button referenced in the code is clicked, 10,000 `div` nodes
 
 ![Simple growth.](../media/memory-problems-glitch-example-1-performance-memory.msft.png)
 
-First, an explanation of the user interface.  The **HEAP** graph in the **Overview** pane (below **NET**) represents the JS heap.  Below the **Overview** pane is the **Counter** pane.  The memory usage is broken down by JS heap (same as **HEAP** graph in the **Overview** pane), documents, DOM nodes, listeners, and GPU memory.  Clear a checkbox to hide it from the graph.
-
-Now, an analysis of the code compared with the previous figure.  If you review the node counter (the green graph), it matches up cleanly with the code.  The node count increases in discrete steps.  You can presume that each increase in the node count is a call to `grow()`.
-
-The JS heap graph (the blue graph) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection (click the  **collect garbage** ![force garbage collection.](../media/collect-garbage-icon.msft.png) button).
+The **HEAP** graph in the **Overview** pane (below **NET**) represents the JS heap.
 
 As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected: the JavaScript code is creating the DOM nodes on every button you click, and is doing a lot of work when it creates the string of one million characters.
 
 The key thing here is the fact that the JS heap ends higher than it began (the "beginning" here being the point after the forced garbage collection).  In the real world, if you saw this pattern of increasing JS heap size or node size, it would potentially indicate a memory leak.
-
-<!--todo: the Heap snapshots and Profiles panel aren't found in Edge  -->
 
 
 <!-- ====================================================================== -->
@@ -160,13 +156,13 @@ To create a snapshot:
 
    The snapshot may take some time to process and load.
 
-1. After the snapshot is finished, select it from the left-hand panel (it's named **HEAP SNAPSHOTS**).
+1. After the snapshot is finished, select it from the left-hand panel under **HEAP SNAPSHOTS**.
 
 1. In the **Class filter** text box, type `Detached`, to search for detached DOM trees:
 
    ![Filtering for detached nodes.](../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png)
 
-1. Expand the carats to investigate a detached tree:
+1. Expand the carets to investigate a detached tree:
 
    ![Investigating the detached tree.](../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png)
 
@@ -204,9 +200,11 @@ Every time that the button referenced in the code is clicked, a string of one mi
 
 To record an Allocation instrumentation on timeline:
 
-1. Open DevTools, and select the **Memory** panel.
+1. Open DevTools, and select the **Memory** tool.
 
 1. Click the **Allocation instrumentation on timeline** radio button, then click the **Start** button.
+
+   ![DevTools Memory tool with the allocation timeline option selected](images/memory-allocation-timeline.png)
 
 1. Perform the action that you suspect is causing the memory leak.
 

@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/18/2022
+ms.date: 09/26/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -90,7 +90,7 @@ Use the **Navigator** pane (on the left) to navigate among the resources that ar
 
 ![The Navigator pane.](../media/navigator-pane.msft.png)
 
-To access any hidden tabs of the Navigator pane, select ![More tabs.](../media/more-tabs-icon.msft.png) (**More tabs**).
+To access any hidden tabs of the Navigator pane, select ![More tabs.](../media/more-tabs-icon.msft.png) (**More tabs**) or make the Navigator pane wider.
 
 The following subsections cover the Navigator pane:
 * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
@@ -290,16 +290,17 @@ To find and replace text, select the **Replace** (**A-\>B**) button to the left 
 
 #### Showing the changes you made
 
-To review the changes you made to a file, right-click in the **Editor** pane and then select **Local Modifications**.
+To review the changes you made to a file, click the **Quick View** list and select **Changes**.
 
-The **Drawer** opens at the bottom of DevTools, showing your changes within the **Changes** tab.
+The **Changes** tool opens at the bottom of DevTools, showing your changes.
 
-![Showing Local Modifications, in the Changes tab of the Drawer](../media/local-modifications.msft.png)
+![Showing Local Modifications, in the Changes tab of the QuickView](../media/local-modifications.msft.png)
 
 
 #### Changes inside a function take effect
 
 DevTools doesn't re-run a script, so the only JavaScript changes that take effect are changes that you make within functions.  For example, in the following figure, we added the following code to the JavaScript that is returned by the server:
+
 *  We added the statement `console.log('A')` outside of any function.
 *  We added the statement `console.log('B')` inside an `onClick` function.
 We then saved the changes, entered numbers into the form, and then selected the form button to send the form.
@@ -311,7 +312,7 @@ After submitting the form, `console.log('A')`, which is at global scope, doesn't
 
 ### Reformatting a minified JavaScript file with pretty-print
 
-To use pretty-print to reformat a file to make it readable, select the **Pretty print** button (![Format.](../media/format-icon.msft.png)), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.
+To use pretty-print to reformat a file to make it readable, select the **Pretty print** button (![Format.](../media/format-icon.msft.png)), which is shown as braces, at the bottom of the Editor pane.
 
 ![The Pretty print button.](../media/minified.msft.png)
 
@@ -350,7 +351,8 @@ In this scenario, the **Sources** tool is useful for inspecting and stepping-thr
 ### Editing a CSS file
 
 There are two ways to edit CSS in DevTools:
-*  In the **Elements** tool, you work with one CSS setting at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
+
+*  In the **Elements** tool, you work with one CSS property at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
 *  In the **Sources** tool, you use a text editor.
 
 The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
@@ -378,9 +380,8 @@ There are two ways to edit HTML in DevTools:
 *  In the **Elements** tool, you work with one HTML element at a time, through user interface controls.
 *  In the **Sources** tool, you use a text editor.
 
-![The HTML editor of the Sources tool.](../media/sources-html-editor.msft.png)
-
 Unlike a JavaScript or CSS file, an HTML file that is returned by the web server cannot be directly edited in the Sources tool.  To edit an HTML file using the Editor of the Sources tool, the HTML file must be in a Workspace or on the **Overrides** tab.  See these subsections of the current article:
+
 * [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
 * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 
@@ -436,6 +437,7 @@ With the debugger, you step through the code, while watching any JavaScript expr
 ![The Debugger pane of the Sources tool  .](../media/sources-paused-breakpoint-highlight-debug-pane.msft.png)
 
 The debugger supports standard debugging actions, such as:
+
 *  Setting breakpoints, to pause code.
 *  Stepping through code.
 *  Viewing and editing properties and variables.
