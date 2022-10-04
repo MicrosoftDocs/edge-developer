@@ -105,8 +105,6 @@ Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from 
 
 *  Right-click anywhere in the **Breakpoints** pane to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.
 
-![Deactivated breakpoints in the Breakpoints pane.](../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png)
-
 
 <!-- ====================================================================== -->
 ## DOM change breakpoints
@@ -115,9 +113,9 @@ Use a DOM change breakpoint when you want to pause on the code that changes a DO
 
 To set a DOM change breakpoint:
 
-1. Select the **Elements** tool.
+1. Open the **Elements** tool.
 
-1. Go the element on which you want to set the breakpoint.
+1. Go to the element on which you want to set the breakpoint.
 
 1. Right-click the element, point to **Break on**, then select **Subtree modifications**, **Attribute modifications**, or **Node removal**.
 
@@ -179,8 +177,6 @@ Use exception breakpoints when you want to pause on the line of code that is thr
 1. Select the **Sources** tool.
 
 1. Click **Pause on exceptions** (![Pause on exceptions.](../media/pause-on-exceptions-icon.msft.png)).  The icon turns blue when enabled.
-
-   ![The Pause on exceptions button.](../media/javascript-sources-page-js-pause-on-exceptions.msft.png)
 
 1. **Optional:** Check the **Pause On Caught Exceptions** checkbox if you also want to pause on caught exceptions, in addition to uncaught ones.
 
