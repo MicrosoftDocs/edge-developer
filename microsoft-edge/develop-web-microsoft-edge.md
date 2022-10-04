@@ -157,11 +157,11 @@ See [The Web We Want initiative](web-we-want/index.md).
 <!-- ============================================================================================================================================ -->
 ## How to use this documentation
 
-These are tips for using the documentation UI of Microsoft Docs.
+These are tips for using the documentation UI of Microsoft Learn.
 
 
 <!-- ====================================================================== -->
-## Zoom an image in the docs
+## Zoom an image in an article
 
 To see details of a screenshot or diagram:
 
@@ -169,30 +169,31 @@ To see details of a screenshot or diagram:
 
 1. Close the image tab to return to the article.
 
-
 <!-- ====================================================================== -->
+
 ## Look up key words and terms in "Filter by title" text box
 
 The multi-purpose **Filter by title** text box supports:
-*  Navigating the table of contents (TOC).
-*  Index term lookup of key words.
-*  Full-text searching the docs.
+
+* Navigating the table of contents (TOC).
+* Index term lookup of key words.
+* Full-text search of the documentation.
 
 In the **Filter by title** box in the upper left, enter a term or key word to find:
 
-![The multi-purpose "Filter by title" text box for navigating the TOC, searching the docs, and index term lookup of key words.](media/filter-by-title-ui.png)
+![The multi-purpose "Filter by title" text box for navigating the table of contents, searching the documentation, and index term lookup of key words.](media/filter-by-title-ui.png)
 
 If the desired article isn't found, select **Search for "_search-term_" in all Microsoft Edge documentation**:
 
 ![If title word or index term isn't found, an option is provided to full-text search all Microsoft Edge documentation.](media/full-text-search-fallback.png)
 
-The full-text search page initially searches all _Microsoft Edge_ docs.  Or, click the **View all results** link for a broader search:
+The full-text search page initially searches all _Microsoft Edge_ documentation.  Or, click the **View all results** link for a broader search:
 
-![The full-text search page initially searches all Microsoft Edge docs, or click the link 'View all results' for a broader search.](media/full-text-search-page.png)
-
+![The full-text search page initially searches all Microsoft Edge documentation, or you can click the link 'View all results' for a broader search.](media/full-text-search-page.png)
 
 <!-- ====================================================================== -->
-## Provide feedback or report issues in the Microsoft Edge Developer docs
+
+## Provide feedback or report issues in the Microsoft Edge Developer documentation
 
 To provide feedback or enter issues:
 
