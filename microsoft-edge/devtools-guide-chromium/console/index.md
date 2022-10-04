@@ -47,7 +47,7 @@ Search the web for your **Console** error messages, right from within DevTools. 
 
 ![The 'Search for this message on the Web' button on an error message in the Console.](../media/search-console-icon.msft.png)
 <!-- to set up screenshot, went to 
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/console-debug-javascript to get a good page that has an error: 
+https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/console/console-debug-javascript to get a good page that has an error: 
 https://microsoftedge.github.io/Demos/devtools-console/error.html -->
 
 When you click the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message:
