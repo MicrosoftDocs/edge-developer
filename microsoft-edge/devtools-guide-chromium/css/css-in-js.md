@@ -52,7 +52,7 @@ To learn more about viewing and changing CSS, see [CSS features reference](refer
 <!-- ====================================================================== -->
 ## Editing style rules that were initially defined by a CSSOM function
 
-<!-- from https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
+<!-- from https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
 
 The **Styles** pane supports editing styles that were created with the [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom) APIs.  Many CSS-in-JS frameworks and libraries use the CSS Object Model APIs under the hood to construct styles.
 

@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 09/29/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,7 +28,7 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 <!-- ====================================================================== -->
 ## View localStorage keys and values
 
-1. Click the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.
+1. Click the **Application** icon (![Application icon](../media/application-icon.png)) or pick "Application" in the **Quick View** drop-down list to open the **Application** tool. The **Manifest** pane is shown by default.
 
    ![The Manifest pane.](../media/storage-application-manifest.msft.png)
 
@@ -64,7 +64,6 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 
    ![Edit a localStorage key.](../media/storage-application-local-storage-edit-key-value.msft.png)
 
-
 <!-- ====================================================================== -->
 ## Delete localStorage key-value pairs
 
@@ -94,7 +93,7 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 1. Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.
 
-![Interact with localStorage from the Console.](../media/storage-console-local-storage-interaction.msft.png)
+   ![Interact with localStorage from the Console.](../media/storage-console-local-storage-interaction.msft.png)
 
 
 <!-- ====================================================================== -->
