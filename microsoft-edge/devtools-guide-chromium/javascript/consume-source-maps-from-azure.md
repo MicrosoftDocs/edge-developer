@@ -68,17 +68,23 @@ To learn more about PAT, see [Use personal access tokens](/azure/devops/organiza
 <!-- ====================================================================== -->
 ## Step 2: Configure DevTools
 
-DevTools now needs to be configured with the PAT to successfully retrieve the source maps.
+DevTools now needs to be configured with the personal access token (PAT) to successfully retrieve the source maps.
 
 To configure DevTools:
 
 1. To open DevTools, in Microsoft Edge, right-click a webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-1. In DevTools, click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Symbol Server**.
+1. In DevTools, click **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
+
+1. Make sure the **Enable JavaScript source maps** checkbox and the **Enable CSS source maps** checkbox are selected:
+
+    ![The Preferences configuration screen in DevTools settings](images/ado-preferences-source-maps-devtools.png)
+
+1. In the sidebar of the **Settings** page, click **Symbol Server**.
 
 1. In the **Azure DevOps organization** text box, enter the Azure DevOps organization where you created the PAT.
 
-1. In the **Azure DevOps personal access token** text box, paste your PAT.
+1. In the **Azure DevOps personal access token** text box, paste your personal access token (PAT).
 
    ![The Symbol Server configuration screen in DevTools settings](images/ado-pat-devtools.png)
 
