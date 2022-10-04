@@ -845,7 +845,7 @@
             - name: Defining match patterns for an extension to access file URLs
               href: extensions-chromium/developer-guide/match-patterns.md  # moved from /enterprise/
 
-            - name: Create a DevTools extension
+            - name: Create an extension that extends DevTools
               href: extensions-chromium/developer-guide/devtools-extension.md
 
         - name: Manifest

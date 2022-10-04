@@ -1,5 +1,5 @@
 ---
-title: Create a DevTools extension
+title: Create an extension that extends DevTools
 description: In this tutorial, you learn to build a Microsoft Edge extension that extends DevTools. At the end of the tutorial, you should have a working DevTools extension that creates its own panel and interacts with the DevTools extension APIs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: extensions
 ms.date: 9/27/2022
 ---
-# Create a DevTools extension
+# Create an extension that extends DevTools
 
 This tutorial shows how to build your own DevTools extension from scratch. It's a good way to experience everything that's needed for typical development. At the end of the tutorial, you'll have a working extension that creates its own panel and interacts with the DevTools APIs.
 
@@ -413,12 +413,6 @@ To test the `youClickedOn` label:
 1. Open the **Console** tool. A message similar to the previous step should also appear in the  **Console** tool.
 
     ![The DevTools Console tool showing the clicked position message](./devtools-extensions-images/devtools-extension-show-position-in-console.png)
-
-
-<!-- ====================================================================== -->
-## Conclusion
-
-In this tutorial, you learned how to create a DevTools extension from scratch and load it into the browser.  You extended DevTools by creating a new panel to display memory information by using APIs that are available to Microsoft Edge extensions.  And then you added a content script to detect the mouse clicks on a webpage, and sent that information to DevTools. Finally, you learned how to send and receive messages between a background service worker and DevTools. The background service worker tracks the mouse clicks in the background and logs output in the DevTools console.
 
 
 <!-- ====================================================================== -->
