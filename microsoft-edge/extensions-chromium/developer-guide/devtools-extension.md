@@ -1,5 +1,5 @@
 ---
-title: Create an extension that extends DevTools
+title: Create an extension that customizes the DevTools UI
 description: In this tutorial, you learn to build a Microsoft Edge extension that extends DevTools. At the end of the tutorial, you should have a working DevTools extension that creates its own panel and interacts with the DevTools extension APIs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: extensions
 ms.date: 9/27/2022
 ---
-# Create an extension that extends DevTools
+# Create an extension that customizes the DevTools UI
 
 This tutorial shows how to build your own DevTools extension from scratch. It's a good way to experience everything that's needed for typical development. At the end of the tutorial, you'll have a working extension that creates its own panel and interacts with the DevTools APIs.
 

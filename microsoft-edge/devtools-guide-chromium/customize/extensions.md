@@ -1,13 +1,13 @@
 ---
-title: Extend DevTools with extensions
-description: Learn to build a Microsoft Edge extension that extends DevTools.
+title: Add custom UI to DevTools using extensions
+description: Learn to add custom panels in the DevTools main toolbar by using or creating Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 09/30/2022
 ---
-# Extend DevTools with extensions
+# Add custom UI to DevTools using extensions
 
 In addition to the tools available in Microsoft Edge DevTools you can add new tools by installing Microsoft EDge extensions, or build your own extensions for your specific use cases.
 
