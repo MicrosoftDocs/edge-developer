@@ -1411,6 +1411,10 @@
                   href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
 
+            - name: JavaScript
+              href: webview2/reference/javascript/overview
+              displayName: 
+
         - name: Contact the WebView2 Team
           href: webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support

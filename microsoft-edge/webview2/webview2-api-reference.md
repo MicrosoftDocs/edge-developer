@@ -38,6 +38,7 @@ WebView2 is available for the following frameworks or platforms:
 
 ---
 
+* [JavaScript](/microsoft-edge/webview2/reference/javascript/overview)
 
 <!-- ====================================================================== -->
 ## See also
