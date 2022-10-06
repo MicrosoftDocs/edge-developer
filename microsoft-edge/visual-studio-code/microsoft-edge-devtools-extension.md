@@ -17,6 +17,13 @@ Microsoft Edge DevTools extension for Visual Studio Code
 Microsoft Edge DevTools extension
 CSS Mirroring
 CSS mirror editing (lowercased in UI, initcapped at gh)
+
+
+Move away from "screencast" and "headless" toward:
+the embedded browser in Visual Studio Code
+the Edge DevTools: Browser tab includes the device emulation toolbar (unlike the external browser window)
+the DevTools embedded browser includes a device emulation toolbar
+the DevTools browser
 -->
 
 The Microsoft Edge DevTools extension for Visual Studio Code lets you use the Microsoft Edge Browser and Developer Tools right from within Visual Studio Code.  Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it's a great tool for web developers.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.
