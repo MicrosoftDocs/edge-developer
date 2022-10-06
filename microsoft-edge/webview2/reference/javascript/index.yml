@@ -1,0 +1,7 @@
+### YamlMime:TSPackage
+uid: Documentation
+name: Documentation
+summary: ''
+type: package
+interfaces:
+  - Documentation.HostObjectsOptions

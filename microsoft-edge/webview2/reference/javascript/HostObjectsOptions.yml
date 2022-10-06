@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: HostObjectsOptions
+uid: Documentation.HostObjectsOptions
+package: Documentation
+summary: ''
+fullName: HostObjectsOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: defaultSyncProxy
+    uid: Documentation.HostObjectsOptions.defaultSyncProxy
+    package: Documentation
+    summary: ''
+    fullName: defaultSyncProxy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultSyncProxy: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: forceAsyncMethodMatches
+    uid: Documentation.HostObjectsOptions.forceAsyncMethodMatches
+    package: Documentation
+    summary: ''
+    fullName: forceAsyncMethodMatches
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'forceAsyncMethodMatches: RegExp[]'
+      return:
+        description: ''
+        type: 'RegExp[]'
+  - name: forceLocalProperties
+    uid: Documentation.HostObjectsOptions.forceLocalProperties
+    package: Documentation
+    summary: ''
+    fullName: forceLocalProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'forceLocalProperties: string[]'
+      return:
+        description: ''
+        type: 'string[]'
+  - name: ignoreMemberNotFoundError
+    uid: Documentation.HostObjectsOptions.ignoreMemberNotFoundError
+    package: Documentation
+    summary: ''
+    fullName: ignoreMemberNotFoundError
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ignoreMemberNotFoundError: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: log
+    uid: Documentation.HostObjectsOptions.log
+    package: Documentation
+    summary: ''
+    fullName: log
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'log: (data: any[]) => void'
+      return:
+        description: ''
+        type: '(data: any[]) =&gt; void'
+  - name: shouldSerializeDates
+    uid: Documentation.HostObjectsOptions.shouldSerializeDates
+    package: Documentation
+    summary: ''
+    fullName: shouldSerializeDates
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shouldSerializeDates: boolean'
+      return:
+        description: ''
+        type: boolean

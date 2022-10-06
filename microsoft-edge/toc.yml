@@ -1412,8 +1412,11 @@
                   displayName: functions, methods
 
             - name: JavaScript
-              href: webview2/reference/javascript/overview
+              uid: Documentation
               displayName: 
+              items:
+                - uid: Documentation.HostObjectsOptions
+                  name: HostObjectsOptions
 
         - name: Contact the WebView2 Team
           href: webview2/contact.md
