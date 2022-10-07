@@ -234,32 +234,26 @@ For example, suppose you want to verify that your resources are using reasonable
 <!-- ====================================================================== -->
 ## Filter resources
 
-DevTools provides numerous workflows for filtering out resources that aren't relevant to the task at hand:
+DevTools provides numerous workflows for filtering out resources that aren't relevant to the task at hand.
+
+The **Filters** toolbar should be turned on by default.  If the **Filters** toolbar isn't on, click **Filter** (![Filter.](../media/filter-icon.msft.png)) to show it:
 
 ![The Filters toolbar.](../media/network-glitch-network-filter-empty.msft.png)
-
-The **Filters** toolbar should be turned on by default.  If the **Filters** toolbar isn't on, click **Filter** (![Filter.](../media/filter-icon.msft.png)) to show it.
 
 
 ### Filter by string, regular expression, or property
 
 The **Filter** text box supports many different types of filtering.
 
-1. Type `png` into the **Filter** text box.  Only the files that contain the text `png` are shown.  In this case the only files that match the filter are the PNG images:
+![The filter text box of the Network tool](images/network-tool-filter-textbox.png)
 
-   ![A string filter.](../media/network-glitch-network-filter-png.msft.png)
+1. Type `png` into the **Filter** text box.  Only the files that contain the text `png` are shown.  In this case the only files that match the filter are the PNG images.
 
-1. Type `/.*\.[cj]s+$/`.  DevTools filters out any resource with a filename that doesn't end with a `j` or a `c` followed by 1 or more `s` characters:
+1. Type `/.*\.[cj]s+$/`, which is a JavaScript regular expression.  DevTools filters out any resource with a filename that doesn't end with a `j` or a `c` followed by 1 or more `s` characters.
 
-   ![A regular expression filter.](../media/network-glitch-network-filter-regex.msft.png)
+1. Type `-main.css`.  DevTools filters out `main.css`.  If any file matches that pattern, it's also filtered out.
 
-1. Type `-main.css`.  DevTools filters out `main.css`.  If any file matches that pattern, it's also filtered out:
-
-   ![A negative filter.](../media/network-glitch-network-filter-negative-statement.msft.png)
-
-1. Type `larger-than:1000` into the **Filter** text box.  DevTools filters out any resource with responses that are smaller than 1000 bytes:
-
-   ![A property filter.](../media/network-glitch-network-filter-property-value.msft.png)
+1. Type `larger-than:1000` into the **Filter** text box.  DevTools filters out any resource with responses that are smaller than 1000 bytes.
 
    For the full list of filterable properties, see [Filter requests by properties](reference.md#filter-requests-by-properties).
 
@@ -275,8 +269,6 @@ To focus in on a certain type of file, such as stylesheets:
    ![Show CSS files only.](../media/network-glitch-network-filter-file-type-css.msft.png)
 
 1. To also display scripts, press and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then click **JS**.
-
-   ![Show CSS and JS files only.](../media/network-glitch-network-filter-file-type-css-js.msft.png)
 
 1. To remove the filters and display all resources again, select **All**.
 
@@ -294,13 +286,9 @@ How does a page look and behave when some of the page resources aren't available
 
    ![Show Request Blocking.](../media/network-glitch-network-cli-block.msft.png)
 
-1. Click **Add Pattern** (![Add Pattern.](../media/add-icon.msft.png)).
-
-1. Type `main.css`:
+1. Click **Add Pattern** (![Add Pattern.](../media/add-icon.msft.png)), then type `main.css`, and then click **Add**:
 
    ![Blocking 'main.css'.](../media/network-glitch-network-cli-block-add-pattern.msft.png)
-
-1. Click **Add**.
 
 1. Refresh the page.  As expected, the styling of the page is slightly messed up, because the main stylesheet has been blocked.
 
