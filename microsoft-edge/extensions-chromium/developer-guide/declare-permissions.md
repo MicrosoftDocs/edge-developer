@@ -67,15 +67,13 @@ Here's an example of the permissions part of a manifest file:
 "permissions": [
   "tabs",
   "bookmarks",
-  "unlimitedStorage"
-],
-"optional_permissions": [
-  "unlimitedStorage"
-],
-"host_permissions": [
+  "storage",
   "http://www.blogger.com/",
   "http://*.google.com/"
 ],
+"optional_permissions": [
+  "unlimitedStorage"
+]
 ```
 
 #### [Manifest V3](#tab/v3)
