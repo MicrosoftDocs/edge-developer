@@ -89,7 +89,7 @@ To send a unique ID to assign to the inserted image, a couple different approach
 
 The following code outlines the updated code in `popup/popup.js`.  You also pass in the current tab ID, which is used later in this article:
 
-#### [Manifest V2](#tab/v2)
+#### [Manifest V3](#tab/v3)
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -99,7 +99,7 @@ if (sendMessageId) {
             chrome.tabs.sendMessage(
                 tabs[0].id,
                 {
-                    url: chrome.extension.getURL("images/stars.jpeg"),
+                    url: chrome.runtime.getURL("images/stars.jpeg"),
                     imageDivId: `${guidGenerator()}`,
                     tabId: tabs[0].id
                 },
@@ -118,7 +118,7 @@ if (sendMessageId) {
 }
 ```
 
-#### [Manifest V3](#tab/v3)
+#### [Manifest V2](#tab/v2)
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -128,7 +128,7 @@ if (sendMessageId) {
             chrome.tabs.sendMessage(
                 tabs[0].id,
                 {
-                    url: chrome.runtime.getURL("images/stars.jpeg"),
+                    url: chrome.extension.getURL("images/stars.jpeg"),
                     imageDivId: `${guidGenerator()}`,
                     tabId: tabs[0].id
                 },
@@ -163,14 +163,6 @@ The reason is that you're injecting the image using the `src` attribute of the `
 
 Add another entry in the `manifest.json` file to declare that the image is available to all browser tabs.  That entry is as follows (you should see it in the full `manifest.json` file below when you add the content script declaration coming up):
 
-#### [Manifest V2](#tab/v2)
-
-```json
-"web_accessible_resources": [
-    "images/*.jpeg"
-]
-```
-
 #### [Manifest V3](#tab/v3)
 
 ```json
@@ -182,6 +174,14 @@ Add another entry in the `manifest.json` file to declare that the image is avail
   ]
 ```
 
+#### [Manifest V2](#tab/v2)
+
+```json
+"web_accessible_resources": [
+    "images/*.jpeg"
+]
+```
+
 ---
 
 You've now written the code in your `popup.js` file to send a message to the content page that is embedded on the current active tab page, but you haven't created and injected that content page.  Do that now.
@@ -191,37 +191,6 @@ You've now written the code in your `popup.js` file to send a message to the con
 ## Step 5: Update your `manifest.json` for content and web access
 
 The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows:
-
-#### [Manifest V2](#tab/v2)
-
-```json
-{
-    "name": "NASA picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "An extension to display the NASA picture of the day.",
-    "icons": {
-        "16": "icons/nasapod16x16.png",
-        "32": "icons/nasapod32x32.png",
-        "48": "icons/nasapod48x48.png",
-        "128": "icons/nasapod128x128.png"
-    },
-    "browser_action": {
-        "default_popup": "popup/popup.html"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-              "<all_urls>"
-            ],
-            "js": ["lib/jquery.min.js","content-scripts/content.js"]
-        }
-    ],
-    "web_accessible_resources": [
-        "images/*.jpeg"
-    ]
-}
-```
 
 #### [Manifest V3](#tab/v3)
 
@@ -253,6 +222,37 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
             "resources": ["images/*.jpeg"],
             "matches": ["<all_urls>"]
         }
+    ]
+}
+```
+
+#### [Manifest V2](#tab/v2)
+
+```json
+{
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "An extension to display the NASA picture of the day.",
+    "icons": {
+        "16": "icons/nasapod16x16.png",
+        "32": "icons/nasapod32x32.png",
+        "48": "icons/nasapod48x48.png",
+        "128": "icons/nasapod128x128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+              "<all_urls>"
+            ],
+            "js": ["lib/jquery.min.js","content-scripts/content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "images/*.jpeg"
     ]
 }
 ```

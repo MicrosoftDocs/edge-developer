@@ -33,7 +33,7 @@ The following is an example **manifest.json** file:
 {
     "name": "Native Messaging Example",
     "version": "1.0",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "Send a message to a native app.",
     "app": {
         "launch": {

@@ -32,6 +32,10 @@
 
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
+            - name: Microsoft Edge 106
+              href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
+              displayName: what's new, announcements, release notes
+
             - name: Microsoft Edge 105
               href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
               displayName: what's new, announcements, release notes
@@ -628,6 +632,10 @@
             - name: Customize keyboard shortcuts  # added article
               href: devtools-guide-chromium/customize/shortcuts.md
               displayName: Settings, Shortcuts
+
+            - name: Add custom UI to DevTools using extensions
+              href: devtools-guide-chromium/customize/extensions.md
+              displayName: Extensions
 # Remote debugging ------------------------------------------------------------
         - name: Remote debugging
           items:
@@ -836,6 +844,9 @@
 
             - name: Defining match patterns for an extension to access file URLs
               href: extensions-chromium/developer-guide/match-patterns.md  # moved from /enterprise/
+
+            - name: Create an extension that customizes the DevTools UI
+              href: extensions-chromium/developer-guide/devtools-extension.md
 
         - name: Manifest
           items:
