@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 09/28/2022
+ms.date: 10/07/2022
 ---
 # Release Notes for the WebView2 SDK
 
@@ -44,19 +44,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ### General
 
-This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1369-prerelease.
-
-#### Bug fixes
-
-*  Fixed a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
-
-*  Fixed a bug that produced simultaneous WebView creation failure (Runtime). [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
-
-*  Fixed print settings paper size to support dimensions as small as 0.01 inches (Runtime).
-
-*  Fixed a bug where the WebView2 print dialog reset the **Scale** setting to **Fit to printable area** every time. ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
-
-*  Fixed a bug in the **wv2winrt** tool where a WinMD file wasn't referenced in some projects.
+This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1369-prerelease.  See **Bug fixes** in the following section.
 
 
 <!-- ====================================================================== -->
@@ -109,8 +97,8 @@ The following items are now stable:
 
 *  Fixed a bug in the **wv2winrt** tool where a WinMD file wasn't referenced in some projects.
 
-<!-- ====================================================================== -->
 
+<!-- ====================================================================== -->
 ## 1.0.1293.44
 
 Release Date: August 8, 2022
@@ -141,7 +129,6 @@ The following items are now stable:
 
 * [ICoreWebView2_15::FaviconChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#add_faviconchanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#remove_faviconchanged)
 * [ICoreWebView2_15::FaviconUri property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#get_faviconuri)<!--no put-->
-
 
 ---
 
