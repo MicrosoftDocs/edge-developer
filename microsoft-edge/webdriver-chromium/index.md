@@ -71,7 +71,7 @@ This article provides instructions for using the Selenium framework, but you can
 
 ### Using Selenium 4
 
-Selenium WebDriver is an open-source testing framework that can be used on any platform, and provides language bindings for Java, Python, C#, Ruby, and JavaScript.
+Selenium WebDriver is an open-source testing framework that can be used on any platform, and provides language bindings for Java, Python, C#, Ruby, and JavaScript. Note: Python 3 is required to run Selenium 4 tests. (Python 2.7 is not supported.)
 
 To use WebDriver to automate Microsoft Edge, if you use Selenium, you must use Selenium 4, which has built-in support for Microsoft Edge (Chromium).
 

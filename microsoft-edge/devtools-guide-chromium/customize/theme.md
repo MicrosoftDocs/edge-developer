@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/03/2021
+ms.date: 09/20/2022
 ---
 <!-- Copyright Kayce Basques
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,14 +33,12 @@ By default, the DevTools theme is set to **System preference** (also called **sy
 
 Light themes:
 - Light+ (Default)
-- Chromium Light
 - Quiet Light
 - Solarized Light
 
 Dark themes:
 - Dark+ (Default)
 - Abyss
-- Chromium Dark
 - Kimbie Dark
 - Monokai
 - Monokai Dimmed

@@ -48,7 +48,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 
 | Action | Windows/Linux | macOS |
 |---|---|---|
-| Show **Settings** | `?` or `F1` | `?` or `Function`+`F1` |
+| Show **Settings** | `Shift`+`?` or `F1` | `Shift`+`?` or `Function`+`F1` |
 | Focus the next panel | `Ctrl`+`]` | `Command`+`]` |
 | Focus the previous panel | `Ctrl`+`[` | `Command`+`[` |
 | Switch back to whatever [docking position](../customize/placement.md) you last used.  If DevTools has been in the default position for the entire session, then this shortcut undocks DevTools into a separate window. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |

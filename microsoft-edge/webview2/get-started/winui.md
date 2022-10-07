@@ -12,7 +12,20 @@ ms.date: 07/06/2022
 
 This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.
 
-In this tutorial, you start with the Visual Studio project template for a blank WinUI 3 project, and then add a WebView2 control.  You then add an address bar and logic to display a warning dialog when the user tries to navigate to a URL with an `http://` prefix.  The completed sample is available at GitHub: [WebView2Samples repo > WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted).
+In this tutorial, you use the **Blank App, Packaged (WinUI in Desktop)** Visual Studio project template to create a blank WinUI 3 project.  That project template uses the WindowsAppSDK, which includes the WebView2 SDK.  You add a WebView2 control.  You then add an address bar and logic to display a warning dialog when the user tries to navigate to a URL with an `http://` prefix.
+
+![Sample app displaying the Bing website](winui-images/getting-started-bing.png)
+
+
+#### Completed project
+
+A completed version of this tutorial project (as of 2020) is available in the **WebView2Samples** repo:
+
+*  Sample name: **WinUI3_GettingStarted**
+*  Repo directory: [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)
+*  Solution file: **WinUI_Sample.sln**
+
+The present tutorial is updated and only creates a single project, not a second, "(Package)" project like in 2020.
 
 
 <!-- ====================================================================== -->
@@ -21,7 +34,7 @@ In this tutorial, you start with the Visual Studio project template for a blank 
 Even if you have Visual Studio installed, read the following page and possibly update your software and install project templates.
 
 1.  In a new window or tab, open the page [Install tools for the Windows App SDK](/windows/apps/windows-app-sdk/set-up-your-development-environment) and then follow the steps on that page, to install Microsoft Visual Studio, such as Visual Studio 2022.
-<!-- clickable: https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment -->
+<!-- clickable: https://learn.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment -->
 
 1.  If needed, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.
 
