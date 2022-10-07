@@ -100,11 +100,9 @@ In the above example, an agenda Widget is defined by the PWA. Possible fields ar
 | `type` | The MIME type for the Widget data. Note that it is, for now, required to be `application/json`. | Yes |
 | `auth` | A boolean indicating if the Widget requires authentication. | No |
 | `update` | The frequency, in seconds, you want the Widget to be updated. Note that to actually update the Widget, [Periodic Background Sync](./background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content) is used. | No |
-| `actions` | An array of actions exposed to users within the Widget (only if the template supports actions). | No |
 | `short_name` | An alternative short version of the name. | No |
 | `description` | A description of what the Widget does. | No |
 | `icons` | An array of icons to be used for the Widget. If not present, the manifest `icons` member will be used. | No |
-| `backgrounds` | An array of background images that can be used in the template (if the template supports it). | No |
 
 
 <!-- ====================================================================== -->
@@ -179,30 +177,9 @@ Here is an example of what the `data` URL might return:
 <!-- ====================================================================== -->
 ## Define Widget actions
 
-If you want your Widget to let users perform tasks, use the `actions` field in your Widget definition, and define a template that supports actions.
+If you want your Widget to let users perform tasks, define a template that supports actions.
 
-The `actions` field is an array of action definitions. Here is an example:
-
-```json
-{
-  "name": "Agenda",
-  "description": "Your day, at a glance",
-  "tag": "agenda",
-  "data": "/widgets/data/agenda",
-  "type": "application/json",
-  "ms_ac_template": "/widgets/template/agenda_template.ac.json",
-  "actions": [
-    {
-      "action": "create-meeting",
-      "title": "Create a new meeting"
-    }
-  ]
-}
-```
-
-Use the `action` field to give the action a name. This name will be used to handle the action in your service worker. The `title` field is presented to the user.
-
-To actually trigger the action from the Widget, your template needs to support it. Here is an example of an action defined in a custom Adaptive Cards template:
+Here is an example of an action defined in a custom Adaptive Cards template:
 
 ```json
 {
@@ -230,8 +207,6 @@ To actually trigger the action from the Widget, your template needs to support i
 }
 ```
 
-Note that the `verb` action field in the template above maps to the `action` field in the PWA manifest file.
-
 
 <!-- ====================================================================== -->
 ## Handle Widget actions
@@ -239,7 +214,7 @@ Note that the `verb` action field in the template above maps to the `action` fie
 Once a user executes an action defined in a Widget, an event is triggered in the PWA's service worker. To handle the user action, listen to the `widgetclick` event in your service worker code:
 
 ```javascript
-self.addEventListener('widgetclick', event => {
+self.addEventListener("widgetclick", event => {
   const action = event.action;
 
   if (action === "create-meeting") {
@@ -247,6 +222,8 @@ self.addEventListener('widgetclick', event => {
   }
 });
 ```
+
+Note that the `action` property of the `WidgetEvent` object passed to the event listener above matches the string defined in the `action.verb` field of the Widget template.
 
 See the [Service Worker API reference](#service-worker-api-reference) below for more information about the `widgetclick` event and what information you can access from it.
 
@@ -493,7 +470,9 @@ The service worker global object (or [ServiceWorkerGlobalScope](https://develope
 | `updateByInstanceId(id, payload)` | Update a Widget by instance ID  | The instance ID, and a [WidgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`.
 | `updateByTag(tag, payload)` | Update a Widget by tag | The Widget tag, and a [WidgetPayload object](#widgetpayload-object) | A Promise that resolves to undefined or Error.
 
-### Widget object
+The service worker global object also defines the `widgetclick` event that's fired when the widget is interacted with. For more information, see the [WidgetEvent object](#widgetevent-object) definition below.
+
+#### Widget object
 
 Each Widget is represented as a `Widget` object, which contains the following properties:
 
@@ -501,7 +480,7 @@ Each Widget is represented as a `Widget` object, which contains the following pr
 * `definition`: A [WidgetDefinition object](#widgetdefinition-object).
 * `instances`: An array of [WidgetInstance objects](#widgetinstance-object) representing the current state of each instance of the Widget.
 
-### WidgetOptions object
+#### WidgetOptions object
 
 When using `matchAll(options)` to get multiple Widgets, a `WidgetOptions` object is necessary to filter which Widgets to return. The `WidgetOptions` object contains the following properties, all of which are optional:
 
@@ -511,13 +490,13 @@ When using `matchAll(options)` to get multiple Widgets, a `WidgetOptions` object
 * `instance`: The Widget instance.
 * `host`: The Widget host ID.
 
-### WidgetPayload object
+#### WidgetPayload object
 
 When creating or updating a Widget instance, the service worker must send the data that's necessary to populate the Widget. This data is called the _payload_.  The payload includes content-related data.  The `WidgetPayload` object contains the following properties:
 
 * `data`: The data to use with the Widget template, as a `String`.  This data can be stringified JSON data.
 
-### WidgetInstance object
+#### WidgetInstance object
 
 This object represents a given instance of a Widget in a Widget host and contains the following properties:
 
@@ -526,6 +505,19 @@ This object represents a given instance of a Widget in a Widget host and contain
 * `updated`: A `Date` object that represents the last time when data was sent to the instance.
 * `payload`: A [WidgetPayload object](#widgetpayload-object) that represents the last payload that was sent to this instance.
 
-### WidgetDefinition object
+#### WidgetDefinition object
 
 This object represents the original definition of the Widget, found in the PWA manifest file. The properties of this object match the properties that are listed in [Define Widgets](#define-widgets), above.
+
+#### WidgetEvent object
+
+This object is passed as an argument to service worker `widgetclick` event listeners when the Widget is interacted with.
+
+The `WidgetEvent` object has the following properties:
+
+| Property | Description | Type |
+|:--- |:--- |:--- |
+| `widget` | The Widget instance that triggered the event. | [WidgetInstance](#widgetinstance-object) |
+| `action` | The action that triggered the event. One of `widget-install`, `widget-uninstall`, `widget-resume`, or a custom action defined in a `actions.verb` field of the Widget template. See [Define Widget actions](#define-widget-actions). | String |
+| `hostId` | The Widget host ID. | String |
+| `instanceId` | The Widget instance ID. | String |
