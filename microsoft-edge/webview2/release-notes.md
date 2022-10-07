@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 09/09/2022 
+ms.date: 10/07/2022
 ---
 # Release Notes for the WebView2 SDK
 
@@ -42,6 +42,11 @@ Release Date: September 6, 2022
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 105.0.1343.22 or higher.
 
+### General
+
+This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1369-prerelease.  See **Bug fixes** in the following section.
+
+
 <!-- ====================================================================== -->
 ## 1.0.1369-prerelease
 
@@ -49,7 +54,7 @@ Release Date: September 6, 2022
 
 [NuGet package for WebView2 SDK 1.0.1369-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1369-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 106.0.1369.0 or higher. 
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 106.0.1369.0 or higher.
 
 ### General
 
@@ -57,7 +62,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 The following items are now stable:
 
-*  The drag and drop API: 
+*  The drag and drop API:
    * `DragEnter`
    * `DragLeave`
    * `DragOver`
@@ -67,13 +72,9 @@ The following items are now stable:
 
 * [CoreWebView2CompositionController.DragLeave Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.dragleave?view=webview2-dotnet-1.0.1369-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2compositioncontroller-dragleave)
 
-
-
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2CompositionController.DragLeave Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true#dragleave)
-
-
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -82,24 +83,22 @@ The following items are now stable:
 * [ICoreWebView2CompositionController3.DragOver method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragover)
 * [ICoreWebView2CompositionController3.Drop method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#drop)
 
-
 ---
 
 #### Bug fixes
 
-*   Fixed a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
+*  Fixed a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
 
-*   Fixed a bug that produced simultaneous WebView creation failure (Runtime). [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
+*  Fixed a bug that produced simultaneous WebView creation failure (Runtime). [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
 
+*  Fixed print settings paper size to support dimensions as small as 0.01 inches (Runtime).
 
-*   Fixed print settings paper size to support dimensions as small as 0.01 inches (Runtime).  
+*  Fixed a bug where the WebView2 print dialog reset the **Scale** setting to **Fit to printable area** every time. ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
 
-* Fixed a bug where the WebView2 print dialog reset the **Scale** setting to **Fit to printable area** every time. ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
+*  Fixed a bug in the **wv2winrt** tool where a WinMD file wasn't referenced in some projects.
 
-*   Fixed a bug in the **wv2winrt** tool where a WinMD file wasn't referenced in some projects.
 
 <!-- ====================================================================== -->
-
 ## 1.0.1293.44
 
 Release Date: August 8, 2022
@@ -131,7 +130,6 @@ The following items are now stable:
 * [ICoreWebView2_15::FaviconChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#add_faviconchanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#remove_faviconchanged)
 * [ICoreWebView2_15::FaviconUri property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#get_faviconuri)<!--no put-->
 
-
 ---
 
 
@@ -148,7 +146,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Experimental features
 
-*  Added support for `WebResourceRequested` for workers which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iFrames. 
+*  Added support for `WebResourceRequested` for workers which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iFrames.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -170,7 +168,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
-*  Added support for custom scheme registration which allows WebView2 apps to be able to handle `WebResourceRequested` event for requests with the specified scheme and be able to navigate the WebView2 control to the custom scheme. 
+*  Added support for custom scheme registration which allows WebView2 apps to be able to handle `WebResourceRequested` event for requests with the specified scheme and be able to navigate the WebView2 control to the custom scheme.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -193,13 +191,13 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 *   Added the ability for developers to explicitly specify the path from which to load the WebView2Loader.dll. ([Issue #767](https://github.com/MicrosoftEdge/WebView2Feedback/issues/767))
 
-*   Added useful error messages when using `CallDevToolsProtocolMethod`. ([Issue #1609](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1609))  
+*   Added useful error messages when using `CallDevToolsProtocolMethod`. ([Issue #1609](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1609))
 
-*   Fixed a bug in finding and loading the `WebView2Loader.dll` in some .NET apps. ([Issue #2372](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2372))  
+*   Fixed a bug in finding and loading the `WebView2Loader.dll` in some .NET apps. ([Issue #2372](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2372))
 
 *   Fixed a bug where `DownloadStarting` event was not fired when retrying a download. ([Issue #2489](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2489))
 
-*   Fixed an issue in service worker caching if the path was too long. ([Issue #1900](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1900))  
+*   Fixed an issue in service worker caching if the path was too long. ([Issue #1900](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1900))
 
 *   Improved performance for **wv2winrt** `IMap` and `IMapView` projections into JavaScript.
 
@@ -209,8 +207,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 *   Fixed online/offline status and notifications when using WebView2 in UWP apps.
 
-*   GDI scaling can now be enabled for WebView2.  WebView2 will respect the GDI scaling setting of the hosting 
-application without additional work needed from the app.  ([Issue #1700](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1700))
+*   GDI scaling can now be enabled for WebView2.  WebView2 will respect the GDI scaling setting of the hosting application without additional work needed from the app.  ([Issue #1700](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1700))
 
 *   Fixed a bug where focus is not returned to the application after closing the find bar for windowed mode. ([Issue #1225](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1225))
 
