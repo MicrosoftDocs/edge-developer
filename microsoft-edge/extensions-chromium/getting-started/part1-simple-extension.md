@@ -29,17 +29,6 @@ Every extension package must have a `manifest.json` file at the root.  The manif
 
 The following code outlines the basic information needed in your `manifest.json` file:
 
-#### [Manifest V2](#tab/v2)
-
-```json
-{
-    "name": "NASA picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "An extension to display the NASA picture of the day."
-}
-```
-
 #### [Manifest V3](#tab/v3)
 
 ```json
@@ -47,6 +36,17 @@ The following code outlines the basic information needed in your `manifest.json`
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 3,
+    "description": "An extension to display the NASA picture of the day."
+}
+```
+
+#### [Manifest V2](#tab/v2)
+
+```json
+{
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
     "description": "An extension to display the NASA picture of the day."
 }
 ```
@@ -79,13 +79,13 @@ The directories of your project should be similar to the following structure:
 
 Next, add the icons to the `manifest.json` file. Update your `manifest.json` file with the icons information so that it matches the following code. The `png` files listed in the following code are available in the download file mentioned earlier in this article.
 
-#### [Manifest V2](#tab/v2)
+#### [Manifest V3](#tab/v3)
 
 ```json
 {
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
@@ -96,13 +96,13 @@ Next, add the icons to the `manifest.json` file. Update your `manifest.json` fil
 }
 ```
 
-#### [Manifest V3](#tab/v3)
+#### [Manifest V2](#tab/v2)
 
 ```json
 {
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
@@ -155,26 +155,6 @@ Ensure that you add the image file `images/stars.jpeg` to the images folder.  Th
 
 Finally, register the pop-up in `manifest.json` under `browser_action` (in Manifest V2) or under `action` (in Manifest V3), as shown in the following code:
 
-#### [Manifest V2](#tab/v2)
-
-```json
-{
-    "name": "NASA picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "An extension to display the NASA picture of the day.",
-    "icons": {
-        "16": "icons/nasapod16x16.png",
-        "32": "icons/nasapod32x32.png",
-        "48": "icons/nasapod48x48.png",
-        "128": "icons/nasapod128x128.png"
-    },
-    "browser_action": {
-        "default_popup": "popup/popup.html"
-    }
-}
-```
-
 #### [Manifest V3](#tab/v3)
 
 ```json
@@ -190,6 +170,26 @@ Finally, register the pop-up in `manifest.json` under `browser_action` (in Manif
         "128": "icons/nasapod128x128.png"
     },
     "action": {
+        "default_popup": "popup/popup.html"
+    }
+}
+```
+
+#### [Manifest V2](#tab/v2)
+
+```json
+{
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "An extension to display the NASA picture of the day.",
+    "icons": {
+        "16": "icons/nasapod16x16.png",
+        "32": "icons/nasapod32x32.png",
+        "48": "icons/nasapod48x48.png",
+        "128": "icons/nasapod128x128.png"
+    },
+    "browser_action": {
         "default_popup": "popup/popup.html"
     }
 }
