@@ -1,360 +1,204 @@
 ---
-title: Get started with the DevTools extension for Visual Studio Code
-description: Installing the Microsoft Edge Developer Tools extension for Visual Studio Code and starting it, closing it, debugging JavaScript, and modifying CSS.
+title: Get started using the DevTools extension for Visual Studio Code
+description: Step-by-step tutorial about opening and closing DevTools and using it to modify CSS and debug JavaScript.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/30/2022
+ms.date: 10/06/2022
 ---
-# Get started with the DevTools extension for Visual Studio Code
+# Get started using the DevTools extension for Visual Studio Code
 
-This extension lets you use many of the same tools that are in the DevTools that's in the Microsoft Edge browser, but instead, use them within the environment and context of the Microsoft Visual Studio Code IDE (integrated development environment).
+This is a step-by-step tutorial about opening and closing DevTools and using it to modify CSS and debug JavaScript.  Follow the steps here from top to bottom for a general introduction and to ensure that your machine is set up to use DevTools.
 
-This article walks you through initial setup and using the extension by cloning, loading, and modifying the **Demo To Do** sample web app from the **MicrosoftEdge/Demos** GitHub repo.
-
-This article helps you:
-
-* Install the DevTools extension.
-
-* Compare using DevTools in the Microsoft Edge browser window versus in the Visual Studio Code IDE environment, by using the existing demo-to-do web app.
-
-* Decide when to use this extension in Visual Studio Code and when to use DevTools in the Microsoft Edge browser.
-
-* Clone the Demos repo, which includes the demo-to-do web app.
-
-* Use the DevTools extension for Visual Studio Code to set a breakpoint and step through the JavaScript code of the demo-to-do app.
-
-* From within Visual Studio Code, open the Microsoft Edge browser several different ways.
+This article uses the Demo To Do app from the Demos repo, which is used for Microsoft Edge Developer documentation.
 
 
 <!-- ====================================================================== -->
-## Step 1: Install Visual Studio Code
+## Step 1: Install DevTools and prerequisites
 
-1. If not done already, in a separate window or tab, go to [Download Visual Studio Code](https://code.visualstudio.com/Download) and download and install Visual Studio Code.
-
-1. Open Visual Studio Code.
+1. Do the steps in [Installing the DevTools extension for Visual Studio Code](./install.md), and then continue below.
 
 
 <!-- ====================================================================== -->
-## Step 2: Install the Microsoft Edge DevTools extension
+## Step 2: Start DevTools in non-debug mode by clicking Launch Instance
 
-1. In Visual Studio Code, in the Activity Bar on the left, click the **Extensions** (![Extensions icon](./get-started-images/extensions-icon.png)) button.
+Clicking the **Launch Instance** button is probably not the main way that you will open DevTools in practice, because it doesn't go directly to your file, and it doesn't open DevTools in Debug mode.  However, this approach is prominent in the UI, and you should be aware of this approach, its limitations, and how to close instances of DevTools that have been opened by clicking the **Launch Instance** button.
 
-1. In the **Search Extensions in Marketplace** text box, enter **Microsoft Edge Tools for VS Code**.
+1. In Visual Studio, if a folder is open, select **File** > **Close Folder**.
 
-1. Select the **Microsoft Edge Tools for VS Code**, and then click the **Install** button:
+1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
 
-   ![Installing the Microsoft Edge DevTools extension for Visual Studio Code](./get-started-images/vscode-edge-tools-install.png)
+1. Click the **Launch Instance** button.  The **Edge DevTools** tab opens, and the **Edge DevTools: Browser** tab opens, displaying the default, Success page by using a file path (not a localhost URL), such as `file:///C:/Users/myusername/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html`.
 
-1. Install Node.js and npm, to get live Issues analysis.  See [Step 3: Install Node.js and Node Package Manager (npm)](./get-started.md#step-3-install-nodejs-and-node-package-manager-npm).
+   The Debug toolbar doesn't open, **Debug Console** doesn't open at bottom, and the **Run** sidebar with **Watch** pane doesn't open.  This indicates that Visual Studio Code is not in Debug mode.  In this state or mode, you can modify CSS of the local files, and you can enter local file paths or localhost URLs in the address bar and interact with local web app pages.
 
+1. In File Explorer, or by opening a folder in Explorer in VS Code, get the full filepath for the Demo To Do app's `index.html` file, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`.
 
-#### TODO: merge into above.
+1. In Visual Studio, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above.  Or, if your localhost server is running, paste a localhost URL, such as **http://localhost/demos/demo-to-do/**.  The Demo To Do app opens.
 
-Install the Microsoft Edge DevTools extension for Visual Studio Code, as follows:
+1. In the demo app, enter a task, such as **test**:
 
-1. In Visual Studio Code, in the Activity Bar on the left, click the **Extensions** (![Extensions icon](./get-started-images/extensions-icon.png)) button.  Or, press `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS.  The **Extensions** Marketplace pane opens.
+![Launch Instance > filepath > non-debug mode](./get-started-images/launch-instance-filepath-non-debug-mode.png)
 
-1. In the **Search Extensions in Marketplace** text box, enter **Microsoft Edge Tools for VS Code**.
+1. In the **Edge DevTools** tab, click **Close** (**x**).
 
-1. Select **Microsoft Edge Tools for VS Code**, and then click the **Install** button:
+1. In the **Edge DevTools: Browser** tab, click **Close** (**x**).
 
-   ![Installing the Microsoft Edge DevTools extension for Visual Studio Code](./get-started-images/vscode-edge-tools-install.png)
+   The DevTools instance from clicking **Launch Instance** remains running.
 
-   Or, you can use the browser to download the Microsoft Edge DevTools extension from the Visual Studio Marketplace website.  Go to [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).
-
-
-<!-- ====================================================================== -->
-## Step 3: Install Node.js and Node Package Manager (npm)
-
-To get live (realtime) analysis of your code to indicate issues, such as with wavy underlines, and to offer Quick Fixes, you must install Node.js and Node Package Manager (npm).
-
-The DevTools extension shows a popup suggestion to install Node.js and npm.  The suggestion text is similar to: "Install Node.js & npm? (suggested because you installed this extension)".
-
-1. Click the link in the popup, if it opens.
-
-1. Install Node.js and npm from [Node.js](https://nodejs.org) > Downloads > LTS (long-term stable) (or, Current).
-
-   On Windows, the .msi file is downloaded, such as `node-v16.17.1-x64.msi`.
-
-1. In the browser's Downloads pane, Click **Show in folder**.  Run the downloaded file.  The Node.js Setup Wizard opens.  Click the **Next** button.  Follow the prompts.  
-
-   Confirm that Node.js and npm are installed:
-
-1. In Visual Studio Code, select **View** > **Terminal**.  At the command prompt, enter `npm version`.  A version number is displayed for `npm` and for `node`, indicating that Node Package Manager and Node.js are installed, to support inline and live issue analysis:
-
-   ```
-   $ npm version
-   {
-   npm: '8.15.0',
-   node: '16.17.1',
-   ...
-   }
-   ```
-
-See also:
-* [Inline and live issue analysis](./inline-live-issue-analysis.md)
+1. In Activity Bar > **Microsoft Edge Tools** > **Targets**, hover to the right of the target instance, and then click **Close instance** (**x**).  The **Launch Instance** button now appears,indicating that the DevTools instances are closed.
 
 
 <!-- ====================================================================== -->
-## Step 4: Optional: Clone the Microsoft Edge Demos repo
+## Step 3: Start DevTools in debug mode by right-clicking an HTML file
 
-This step is optional.  If you want, instead of cloning the repo, you can open an existing project directory if you have one: in the **Explorer** pane of Visual Studio Code, right-click a `.html` file, and then select **Open with Edge** > **Open Browser with DevTools**.  Then skip to [Step 6: Optional: Compare and contrast DevTools in the browser vs. in the extension](#step-6-optional-compare-and-contrast-devtools-in-the-browser-vs-in-the-extension).
+<!-- the equivalent section in Opening is more general than this section, which uses Demos repo -->
 
-To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
+Right-clicking an HTML file in VS Code's Explorer is the main way to open DevTools when your webpage doesn't require running on a web server.  We'll demonstrate by opening the Demo To Do web app.
 
-1. Go to [MicrosoftEdge/Demos repo](https://github.com/MicrosoftEdge/Demos/).
+1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. If the green **Code** button isn't shown, click **Demos** in the path **Microsoft Edge** / **Demos** in the upper left to go to the main page of the repo.
+1. Go to the directory where you cloned the Demos repo, open the specific directory for the Demo To Do app, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`, and then click the **Select Folder** button:
 
-1. Click the green **Code** button, and then select the **Copy** button.  This article assumes you're using the **Source Control** features within Visual Studio Code.  Or, you can use one of the other methods that are provided, if you know that you want to use that approach instead:
-   *  **Open with GitHub Desktop**
-   *  **Open with Visual Studio**
-   *  **Download ZIP**
+   ![Open Folder: demo to do](./get-started-images/open-folder-demo-todo.png)
 
-   ![Cloning the MicrosoftEdge/Demos repo](./get-started-images/clone-repo.png)
+1. Select **Activity Bar** > **Explorer** (![Explorer icon](./get-started-images/explorer-icon.png)) > right-click `index.html` and then select **Open with Edge** > **Open Browser with DevTools**:
 
-1. In Visual Studio Code, in the Activity Bar, click the **Source Control** (![Source Control icon](./get-started-images/source-control-icon.png)) button, and then click the **Clone Repository** button.
+   ![Right-click > Open Browser with DevTools](./get-started-images/open-browser-with-devtools.png)
 
-1. In the **Provide repository URL** text box, paste the copied URL: **https://github.com/MicrosoftEdge/Demos.git** and then press `Enter`.  A folder selection dialog opens.
+   *  The **Edge DevTools** tab opens.
 
-   ![The Clone Repository button in Visual Studio Code](./get-started-images/clone-repository-button.png)
+   *  The **Edge DevTools: Browser** tab opens, displaying the webpage you right-clicked.
 
-1. Navigate to your desired path, such as `C:\Users\myusername\Documents\GitHub` or `Users/myusername/GitHub`, and then click the **Select Repository Location** button.
-
-1. The message **Cloning git repository** appears, then you're prompted to open the cloned repository.  Click the **Open** button:
-
-   ![Prompted to open the cloned repo](./get-started-images/prompt-open-cloned-repo.png)
-
-1. If prompted **Do you trust...**, click the **Yes** button.  Or, click the **No** button and continue with most parts of this walkthrough.
-
-   The **Explorer** tree lists many demos, including **demo-to-do**.
-
-1. In Visual Studio, select **File** > **Close Folder**.
-
-1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens.
-
-1. In the **Microsoft Edge Tools** > **Targets** pane, click the **Open Folder** button.  The **Open Folder** dialog box opens.  Navigate to the `demo-to-do` folder in the Demo repo that you cloned, select the folder or go into it, and then click the **Select Folder** button:
-
-   ![Selecting the demo-to-do folder](./get-started-images/select-demo-to-do-folder.png)
-
-   An example of a repo location where the **Demos** repo has been cloned is shown above.  The `demo-to-do` folder of the cloned **Demos** repo opens in the Explorer of Visual Studio Code, and no `launch.json` file exists yet:
-
-   ![Opened the demo-to-do folder initially](./get-started-images/opened-demo-to-do-folder-initially.png)
-
-
-<!-- ====================================================================== -->
-## Step 5: Set up a localhost server
-
-<!-- You can use Node.js if installed above, to act as the web server. -->
-
-Optionally, set up or enable a local web server for testing.  If you don't do this, you will be able to launch DevTools and the DevTools: Browser in VS Code, with debugging ability, by right-clicking a local .html file but not by entering a URL.  These instructions are for IIS on Windows; use equivalent steps for your environment.
-
-1. In Windows, select **Start** > **Control Panel**:
-
-   ![Control Panel initial page](./get-started-images/control-panel-initial-page.png)
-
-1. Click **Turn Windows features on or off**:
-
-   ![Turn Windows features on or off](./get-started-images/turn-win-features-on-off.png)
-
-1. Select the **Internet Information Services** (IIS) checkbox, and then click the **OK** button:
-
-   ![IIS checkbox in Windows Features dialog](./get-started-images/iis-checkbox-windows-features.png)
-
-   Windows applies the changes.
-
-1. Click the **Close** button to close the **Windows Features** dialog.
-
-1. In a web browser, go to **http://localhost**.
-
-1. Optionally, click in the page to go to [Microsoft IIS.net](https://www.iis.net) for information about using IIS.  For example, see:
-
-   * [Getting Started with the IIS Manager in IIS](/iis/get-started/getting-started-with-iis/getting-started-with-the-iis-manager-in-iis-7-and-iis-8).
-   * [Add a Web Site](/iis/get-started/getting-started-with-iis/create-a-web-site#add-a-web-site) in _Create a Web Site_ in the IIS docs.
-
-1. Select **Start** > type **iis** > select **Internet Information Services (IIS) Manager** > **Open**:
-
-   ![Starting IIS Manager](./get-started-images/iis-manager-starting.png)
-
-1. Click the **Explore** link in the upper right:
-
-   ![The Explore link in IIS Manager](./get-started-images/explore-in-iis-manager.png)
-
-   File Explorer opens, to a location such as `C:\inetpub\wwwroot`.
-
-1. Copy the demo-to-dir directory from the Demos repo into that directory:
-
-   ![Demo files copied to server directory](./get-started-images/demo-copied-to-server-dir.png)
-
-1. In a web browser, go to [http://localhost/demo-to-do/](http://localhost/demo-to-do/), or the equivalent location matching where you placed the `.html` file that you want to load later in the DevTools extension:
-
-   ![demo-to-do page served from localhost](./get-started-images/demo-to-do-page-from-localhost.png)
-
-
-<!-- ====================================================================== -->
-## Step 6: Optional: Compare and contrast DevTools in the browser vs. in the extension
-
-To get some context, before using the Edge DevTools extension in Visual Studio Code, explore the Demo To Do web app and in-browser DevTools debugger, as follows:
-
-1. In Visual Studio Code, in the **Explorer** tree, expand the **demo-to-do** directory, and then click the `README.md` file:
-
-   ![Readme file](./get-started-images/readme.png)
-
-1. `Ctrl+click` the **Open the demo** link (`https://microsoftedge.github.io/Demos/demo-to-do/`), and then press `Alt`+`Tab` (Windows, Linux) or `Cmd`+`Tab` (macOS) to switch to the browser running the Demo To Do app.  This running demo is served out from the github.io server.
-
-1. Click in the **Add a task** field and then enter a task, such as **Buy milk**, then press `Enter` or click the entry button in the webpage:
-
-   ![Using the demo-to-do app in the browser](./get-started-images/demo-to-do-initial-in-browser.png)
-
-1. Click the **Complete task** button to put a checkmark next to a task, such as **Buy milk**.
-
-1. Click the **Delete task** button to remove a task, such as **Buy milk**.
-
-1. Right-click the webpage and then select **Inspect**.  DevTools opens in the browser.  Click the **Sources** tab (or the **More tabs** button and then **Sources**).   In the **Page** tab within the **Sources** tool, click `to-do.js`.  The JavaScript file opens.
-<!-- todo: screenshot -->
-
-1. Scroll down to the `addTask` function and then in the first line in the function, click to the left of the line number to set a breakpoint.
-<!-- todo: screenshot -->
-
-1. In the webpage, enter a task, such as **Buy milk**, and then press `Enter`.  The in-browser DevTools debugger pauses on the breakpoint that you set, and displays values for variables that are in the current scope:
-
-   ![Debugging in Microsoft Edge DevTools Sources tool](./get-started-images/devtools-sources-tool-browser.png)
-
-1. Refresh the page to reset the debugger.
-
-Next, to get additional debugging functionality,<!-- todo: eg, list --> and to use the rich environment of Visual Studio Code, we'll use the debugger of Visual Studio Code, while using the Microsoft Edge DevTools extension for Visual Studio Code, specifically the **Edge DevTools: Browser** tab and the **Elements** tool in the **Edge DevTools** tab.
-
-
-<!-- ====================================================================== -->
-## Step 7: View the Success page and the tools
-
-At first, we won't create a `launch.json` file and which will load demo to do in the embedded browser.  We'll just explore the extension's DevTools UI in Visual Studio Code by using the default, **Success** webpage.
-
-1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens.
-
-   ![Launch Instance button of the DevTools extension](./get-started-images/launch-instance-button.png)
-
-1. Click the **Launch Instance** button.  This starts the debugger of Visual Studio Code.  Several UI areas open:
-
-   *  The **Edge DevTools** tab (pane) opens.  You can move this tab.
-   *  The **Edge DevTools: Browser** tab (pane) opens, displaying the default, **Success** webpage (not the Demo To Do web app yet).  You can move this tab.
-   *  The Debug toolbar.  You can drag this toolbar to move it.  Sometimes debug launch configurations are listed in the Debug toolbar.
-   *  When not headless mode, Microsoft Edge browser window opens, in addition to the **Edge DevTools: Browser** tab (pane) in Visual Studio Code.  We're not using headless mode here.
-   *  In the **Debug Console**, output text is displayed: **Hello from the startpage!**  That string is defined in the `<script>` section in the startpage `index.html` file such as (on Windows): `file:///C:/Users/myusername/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html`, by the JavaScript statement `console.info('Hello from the startpage!')`, which you can get to quickly by clicking the line number link in the Debug Console.
-
-   ![DevTools extension initial view](./get-started-images/devtools-extension-initial-view.png)
-
-1. In the **Edge DevTools** tab in the middle, to the right of the **Elements** tab, click the **More tabs** (**>>**) button to see which other tool tabs are already opened, such as **Console**, **Network**, and **Application**.
-
-1. To the right of the **More tabs** (**>>**) button, click the **More Tools** (**+**) button, to see what additional tools are available, such as **Issues**, **Network conditions**, and **Network request blocking**.
-
-1. To the left of the **More tabs** (**>>**) button, click the **Inspect** button, and then hover over parts of the rendered webpage on the right, to see layout information.  Click the rendered webpage, to go to the selected element in the **Elements** tool.
-
-1. In the the **Edge DevTools: Browser** tab, at the bottom, click the **Emulate devices** dropdown list, and then select a couple different devices.  Then select **Responsive**, at the top of the list, to restore the original view.
-
-Next, we'll create a `launch.json` file that points to the specific webpage for the demo-to-do app.
-
-
-<!-- ====================================================================== -->
-## Step 8: Close Microsoft Edge Tools and the running browser instance
-
-1. In the **Microsoft Edge Tools** pane on the left, in the **Targets** section, hover on the right side of the listed Target (`index.html`) and then click **Close instance** (**x**).  The Microsoft Edge DevTools panes close.
-
-
-
-<!-- ====================================================================== -->
-## Step 9: Open DevTools by right-clicking an .html file
-
-This is the simple scenario; try this approach first.
-
-1. In Visual Studio Code, open a folder.
-
-1. Right-click an `.html` file, such as `index.html`, and then select **Open with Edge** > **Open Browser with DevTools**.  The following components open:
-   *  The **Edge DevTools** tab.
-   *  The **Edge DevTools: Browser** tab, displaying the Success page, by default.
-   *  The Debug toolbar.
+   *  The Debug toolbar of Visual Studio Code opens, the **Debug Console** opens at the bottom, and the **Run** pane opens.  These features indicate that Visual Studio Code is in Debug mode:
 
    ![The two Edge DevTools tabs and the Debug toolbar](./get-started-images/devtools-extension-v211.png)
 
-To try this by using the **demo-to-do** sample app, see [Step 4: Optional: Clone the Microsoft Edge Demos repo](#step-4-optional-clone-the-microsoft-edge-demos-repo).
+   **Layout of the DevTools tabs:**
+
+1. Toward the upper left corner of the **Edge DevTools** tab, click the **Toggle screencast** button a couple times:
+
+   ![Cross-toggling the two tabs on and off](./get-started-images/cross-toggling-tabs.png)
+
+1. In the top right of the **Edge DevTools: Browser** tab, click the **Close DevTools** or **Open DevTools** button a couple times.  The two DevTools tabs are automatically positioned as you open and close them from each other.
 
 
 <!-- ====================================================================== -->
-## Step 10: Edit CSS in DevTools, updating the .css file automatically
+## Step 4: Edit CSS in DevTools, updating the .css file automatically
 
-1. In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, edit CSS selectors, rules, and values.
+In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can edit CSS selectors, rules, and values.  The **CSS mirror editing** checkbox is selected by default, so the `.css` file is automatically edited, but the edits are not saved, so that you can decide whether to save the changes.
 
-1. In some scenarios, when the **CSS Mirror Editing** checkbox is selected in the **Styles** tab (which is the default setting), editing CSS values in the **Styles** tab automatically edits your local hard drive `.css` source file - it doesn't save that file, though; you need to Save if you want to preserve the CSS changes.
+1. In the **Elements** tool, in the **Styles** tab, click a CSS value, such as the body font size.
+
+1. Change the CSS value, such as using mouse wheel or pressing `Up Arrow` and `Down Arrow`.  The associated `.css` file opens, such as `to-do-styles.css` and scrolls to the line that defines the CSS value, and automatically edits the `.css` file but doesn't save changes:
+
+   ![CSS mirror editing](./get-started-images/css-mirror.png)
+
+1. Close the `.css` file.  Visual Studio Code prompts you whether to save changes.
+
+1. Click the **Don't Save** button.
 
 
 <!-- ====================================================================== -->
-## Step 11: Open DevTools for a URL using the Launch Instance button
+## Step 5: Step through JavaScript code in the Debugger
 
-This is the more flexible and advanced scenario; try this approach after you learn how to right-click an `.html` file as described above.
+1. Select Activity Bar > Explorer (![Explorer icon in Activity Bar](./get-started-images/explorer-icon.png)).
 
-1. In Visual Studio Code, in the Activity Bar, click the Microsoft Edge Tools button.
+1. In the **demo-to-do** directory, click **to-do.js** to open it.  Scroll down to the `changeTask` function and then click to the left of a line number to set a breakpoint:
 
-1. Click the **Launch Instance** button.  The following components open:
-   *  The **Edge DevTools** tab.
-   *  The **Edge DevTools: Browser** tab, displaying the Success page, by default.
+   ![Debugging the demo app](./get-started-images/debugging-the-demo-app.png)
 
-   When loading the default, **Success** page this way, the Debug toolbar doesn't open.
+1. If the **Run** sidebar isn't displayed, select **View** > **Run**.  The **Run** sidebar in Visual Studio Code includes the **Watch** pane and other debugger panes.
 
-1. Copy a URL such as a `localhost:8080` path from an existing browser address bar.
+1. In the demo app rendered in the **Edge DevTools: Browser** tab, enter a task, such as **test**.  The debugger of Visual Studio Code pauses at the breakpoint in the `to-do.js` file:
 
-   Or, in Visual Studio Code, in the Activity Bar, click the **Explorer** (![Explorer icon](./get-started-images/explorer-icon.png)) button.  In the **Explorer**, right-click an `.html` file, and then select **Copy path**.
+   ![Stepping through JavaScript in the demo app](./get-started-images/debugging-the-demo-app.png)
 
-1. In the **Edge DevTools: Browser** tab, paste the URL (or file path) into the address bar.
+1. In the Debug toolbar, or using the **Run** menu or by pressing keys, step through a couple lines of code in `to-do.js`.
 
-   To open the Debug toolbar: close the DevTools instance, then generate a `launch.json` file that starts a URL that uses a `.js` file, or that opens an `.html` file that uses a `.js` file, as described below.<!--todo: any other way to open Debug toolbar?  how load a URL that causes it to appear, starting from this state?-->
+1. In the demo app rendered in the **Edge DevTools: Browser** tab, click the "done" circle next to the test task.  The debugger of Visual Studio Code pauses at the breakpoint in the `to-do.js` file.
 
+1. Next, to end debugging, in the Debug toolbar, click the **Stop** (`Shift`+`F5`) button.  Or, on the **Run** menu, select **Stop Debugging**:
 
-#### Creating a launch.json file
+   ![The Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
 
-If you want to use the **Launch Instance** button instead of right-clicking an `.html` file, and you want to avoid having to paste the URL or file path to replace the default, **Success** page, you can optionally create a `launch.json` file.  The `launch.json` file is a convention used by Visual Studio Code to control debugging.
+   The **Edge DevTools** tab closes, and the **Edge DevTools: Browser** tab closes.
 
-1. Click the **Generate launch.json** button.  In Visual Studio Code's **Explorer** pane, note where the `launch.json` file is placed.
-
-1. In several places in the `launch.json` file, paste the URL (or an `.html` file path).  Because this is a JSON string and needs escaping, change each `/` to `//`, or `\` to `\\`.  Save the file.
-
-   *  For a repo, such as the Demos repo, if you open the entire repo folder, the **Generate launch.json** button creates a `launch.json` file near the root, for the entire repo directory.
-
-   *  If you open a particular, smaller folder, the **Generate launch.json** button puts a `launch.json` file in that folder only.
-
-1. Click Activity Bar > **Microsoft Edge Tools** > **Launch Project** button.
+Continue the tutorial steps below.
 
 
+<!-- ====================================================================== -->
+## Step 6: Start DevTools in debug mode by using a localhost URL
 
-#### TODO: merge into the above.
+<!-- the equivalent section in Opening is more general, even if it uses the specific example -->
 
-Launch the demo app by putting a localhost URL in launch.json
+Next, we'll use the Demo Todo app to demonstrate the **Launch Project** button after pointing that button to a localhost URL such as `http://localhost/demos/demo-to-do/`.  As before, this starts DevTools in debug mode.  This is the main way to open DevTools when your webpage requires running on a web server.  As a preliminary step, we'll creating a `launch.json` file and edit the URL in it to point to localhost serving out the Demo Todo example.
 
-Instead of creating a launch.json file per the optional steps below, in the **Explorer** pane of Visual Studio Code, right-click a `.html` file, such as `Demos\demo-to-do\index.html`, and then select **Open with Edge** > **Open Browser with DevTools**.  Then skip to [Step 12: Debug JavaScript](#step-12-debug-javascript).
+You might not need to use this approach.  In many cases, right-clicking an HTML file works, for many APIs.  Many webpages require this approach, so here are specific steps you can follow.
 
-Or, use the following more complex and customizable approach (todo: probably remove these steps here):
 
-1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens.
+<!-- ====================================================================== -->
+## Step 7: Start the web server
+
+This section is in support of the section "Start DevTools in debug mode by using a localhost URL".
+
+1. Set up and start a web server, serving out the demo-to-do app from the Demos repo.  To do this, see [Step 6: Set up a localhost server](./install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.  The present section is similar but more specifically focused on the Demo To Do app.
+
+1. In Visual Studio Code, select **View** > **Terminal**.
+
+1. `cd` into the the specific folder you want to serve via http, `Demos\demo-to-do\`:
+
+   For example, on Windows:
+
+   ```
+   cd C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\
+   ```
+
+1. Enter the command `npx http-server`.  A local webserver starts on port 8080.
+
+   Information about the server and localhost URL is displayed, such as:
+
+   ```
+   Starting up http-server, serving ./
+   
+   Available on:
+   http://10.0.1.8:8080
+   http://127.0.0.1:8080
+   Hit CTRL-C to stop the server
+   ```
+
+   The displayed URLs are equivalent to `http://localhost`.
+   <!-- http://localhost/demos/demo-to-do/ -->
+
+
+<!-- ====================================================================== -->
+## Step 8: Set up launch.json
+
+This section is in support of the section "Start DevTools in debug mode by using a localhost URL".
+
+   1. In Visual Studio, select **File** > **Open Folder**.  Select your project directory that contains `index.html` for the cloned demo-to-do sample in the Demos repo, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
+   
+   1. In the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
+
+   1. Click the **Generate launch.json** button:
 
    ![The 'Generate launch.json' button of the DevTools extension](./get-started-images/launch-instance-button.png)
 
-1. Click the **Generate launch.json** button.  The new `launch.json` file opens.
+   The new `launch.json` file opens.
 
-1. On each of the `"url"` lines, scroll to the right , and note the comment, "Provide your project's url":
+1. In several places in the `launch.json` file, on each of the `"url"` lines, scroll to the right , and note the comment, "Provide your project's url":
 
    ```js
    "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", 
    // Provide your project's url to finish configuring
    ```
 
-   You don't need to run port 8080.  You can run the app from your local drive as-is.
-
-1. In a web browser, go to `http://localhost/` where your `.html` file is on the server, such as **http://localhost/demo-to-do/**.
+1. In a web browser, go to the `http://localhost/` URL where the demo-to-do `.html` file is on the server, such as [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/).
 
 1. Copy the URL from the address bar.
 
-1. In Visual Studio Code > Activity Bar > **Explorer**, click the **launch.json** file.
+1. In `launch.json`, in each URL string, paste the URL for your cloned copy of the Demo To Do app, such as: `http://localhost/demos/demo-to-do/`
 
 1. Paste the path inside the quoted path string in one of the `"url"` strings.  For example:
 
@@ -366,67 +210,33 @@ Or, use the following more complex and customizable approach (todo: probably rem
 
 1. Save the `launch.json` file.
 
+
+<!-- ====================================================================== -->
+## Step 9: Click the Launch Project button
+
+This section is in support of the section "Start DevTools in debug mode by using a localhost URL".
+
 1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens, now containing a **Launch Project** button but not a **Generate launch.json file** button:
 
    ![Targets pane when a launch.json file exists](./get-started-images/targets-pane-when-launch-json-exists.png)
 
 1. Click the **Launch Project** button.
 
-   If you get a dialog **Could not attach to main target** and **Error while fetching list of available targets No available targets to attach**:
-
-   ![Could not attach to main target](./get-started-images/could-not-attach-main-target.png)
-
-   Try again.  Make sure your `launch.json` file is saved.  Examine all instances of your revised string.
-
-
    The **Edge DevTools** tab and the **Edge DevTools: Browser** tab open in separate panes, showing the Demo To Do web app:
 
    ![The Demo To Do web app running in the Edge DevTools: Browser tab](./get-started-images/demo-app-running-in-extension-browser.png)
 
-1. In the Activity Bar, click the **Explorer** button.  The Explorer tree opens.  In the **demo-to-do** directory, click **to-do.js** to open it.  Scroll down to the `add task` function and then click to the left of a line number to set a breakpoint.
+At this point, you could work with CSS edits or step through code in the debugger, as described above for the section [Start DevTools in debug mode by right-clicking an HTML file](#step-3-start-devtools-in-debug-mode-by-right-clicking-an-html-file).
 
 
 <!-- ====================================================================== -->
-## Step 12: Debug JavaScript
+## Step 10: Close DevTools
 
-To use the Visual Studio Code debugger on your webpage's JavaScript file:
+1. Next, to end debugging, in the Debug toolbar, click the **Stop** (`Shift`+`F5`) button:
 
-1. In Visual Studio Code, if you open a `.html` file from your hard drive (as described above), use Activity Bar > **Explorer** > open a `.js` file.
+   ![The Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
 
-   If you opened a server URL, such as `http://localhost/demos/demo-to-do/` (as described above), select **Edge DevTools** tab > **Elements** tool > **Styles** tab > click a `.js` filename.  This opens a downloaded copy of a `.js` file, that was returned by a web server.
-
-1. In the `.js` file, click to the left of a line number to set a breakpoint.  For example, in `Demos\demo-to-do\to-do.js`, set a breakpoint in the top of the `addTask` or `changeTask` function body.  (To get `to-do.js`, see [Step 4: Optional: Clone the Microsoft Edge Demos repo](./get-started.md#step-4-optional-clone-the-microsoft-edge-demos-repo) in _Get started with the DevTools extension for Visual Studio Code_.)
-
-1. Enter data in the webpage, then submit - or equivalent.  For example, in `Demos\demo-to-do\index.html`, click a "done" option button next to an entered task, to trigger a JavaScript function that you've set a breakpoint on.
-
-
-#### TODO: merge into the above.
-
-1. Open `to-do.js` and set a breakpoint near the top of the `addTask` function, as described for the browser environment above.
-
-1. In Visual Studio Code, in the **Edge DevTools: Browser** tab (pane), enter a task.  The debugger of Visual Studio Code pauses at the breakpoint in the `to-do.js` file.
-
-1. Step through the code, inspecting the **Watch** pane in Visual Studio Code.
-
-
-<!-- ====================================================================== -->
-## Step 13: Stop and close the DevTools extension and browser instance
-
-To end debugging, and in some cases to also close the DevTools tabs, do any of the following:
-
-*  Select **File** > **Close Folder**.
-
-*  To end debugging, in the Debug toolbar, click **Stop** (`Shift`+`F5`).  The **Edge DevTools** tab (pane) and the **Edge DevTools: Browser** tab (pane) close.
-
-*  On the **Run** menu, select **Stop Debugging**.
-
-*  Select Activity Bar > **Microsoft Edge Tools** > **Targets** > hover on a target > click **Close instance** (`X`).  This action automatically closes the **Edge DevTools** tab as well.  If necessary, close an external browser opened by the extension.
-
-   *  For some scenarios, clicking **Close instance** (**x**) doesn't have an effect.  If needed, use another approach.  For example, if you open a folder that has no `launch.json` file, right-click an `.html` file and select **Open with Edge** > **Open Browser with DevTools**, and then select Activity Bar > **Microsoft Edge Tools** > **Targets** > click **Close instance** (**x**) on a target, DevTools continues running, because of how it was launched.
-
-*  Click **Close** (**X**) on the **Edge DevTools** tab and on the **Edge DevTools: Browser** tab.  If using an external browser window started by the extension (rather than embedded browser/headless mode), close the automation-controlled external browser window.
-
-*  Close the Visual Studio Code window.
+   Or, on the **Run** menu, select **Stop Debugging**.  Or, close the two DevTools tabs.  The Debug toolbar closes.
 
 
 <!-- ====================================================================== -->

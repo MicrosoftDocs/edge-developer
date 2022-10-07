@@ -5,9 +5,22 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/14/2022
+ms.date: 10/06/2022
 ---
 # Update .css files from within the Styles tab (CSS mirror editing)
+
+CSS mirror editing provides two-way interaction so that you can change the CSS either way:
+*  In the code editor, edit the `.css` file, your changes are mirrored in the **Elements** tool in the **Edge DevTools** tab.
+*  In the **Elements** tool in the **Edge DevTools** tab, your changes are mirrored in the `.css` file in the code editor.
+
+CSS mirror editing works both for accessing a `.css` file through specifying a file path or a URL.
+You can open a .css file either by:
+*  .html file path.  That is: 
+   *  Visual Studio Code > **File** > **Open Folder** > Activity Bar > **Explorer** > right-click an `.html` file > **Open with Edge** > **Open Browser with DevTools**.
+*  URL.  That is:
+   *  Visual Studio Code > Activity Bar > **Microsoft Edge Tools** > **Launch Instance** > **Edge DevTools: Browser** tab > paste URL into address bar, such as **http://localhost/demos/demo-to-do/**.
+   *  Generate a `launch.json file` that contains a `localhost` or a `127.0.0.1` URL address, such as **http://localhost/demos/demo-to-do/** or **http://127.0.0.1/demos/demo-to-do/**.
+
 
 CSS mirror editing is enabled by default in the extension.  As a result, in the DevTools extension, in the **Styles** tab in the **Elements** tool, when you change CSS selectors, rules, or values, the downloaded or local `.css` file is automatically updated as you change values.  
 
@@ -72,4 +85,4 @@ CSS Mirroring also supports abstractions like Sass or CSS-in-JS when you have se
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)

@@ -5,9 +5,19 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/07/2022
+ms.date: 10/06/2022
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
+
+<!-- todo:
+delete most instances of 'headless' & 'screencast'
+   Use eg:
+    the embedded browser in Visual Studio Code
+    the Edge DevTools: Browser tab includes the device emulation toolbar (unlike the external browser window)
+    the DevTools embedded browser includes a device emulation toolbar
+    the DevTools browser
+-->
+
 <!-- this is the main landing (firstchild) page for the DevTools extension TOC bucket -->
 
 <!-- heading convention in these files: skip h3's; tag subheadings as h4's instead -->
@@ -17,13 +27,6 @@ Microsoft Edge DevTools extension for Visual Studio Code
 Microsoft Edge DevTools extension
 CSS Mirroring
 CSS mirror editing (lowercased in UI, initcapped at gh)
-
-
-Move away from "screencast" and "headless" toward:
-the embedded browser in Visual Studio Code
-the Edge DevTools: Browser tab includes the device emulation toolbar (unlike the external browser window)
-the DevTools embedded browser includes a device emulation toolbar
-the DevTools browser
 -->
 
 The Microsoft Edge DevTools extension for Visual Studio Code lets you use the Microsoft Edge Browser and Developer Tools right from within Visual Studio Code.  Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it's a great tool for web developers.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.
@@ -34,7 +37,7 @@ This extension enables you to:
 *  Develop webpages and use DevTools without leaving Visual Studio Code; without having to work within DevTools within the browser window.
 *  Emulate devices, in terms of viewport size in which your webpage is displayed.
 *  Test the accessibility of your webpages from within Visual Studio Code.
-*  Live-edit CSS and SASS and see your changes reflected immediately in a browser instance while editing your actual source files (rather than a copy of the files returned from the server).
+*  Live-edit CSS and SASS and see your changes reflected immediately in a browser instance while editing your actual source files.  DevTools opens and edits your `.css` file, without saving the file, so that you can decide whether to save the changes that you made within the **Styles** tab of the **Elements** tool.
 
 
 <!-- ====================================================================== -->
@@ -53,22 +56,6 @@ The extension allows you to:
 | Log information, try out JavaScript, and access the Window/DOM using the **Console** tool. | [Console integration](./microsoft-edge-devtools-extension/console-integration.md) |
 | Inspect storage and Service Workers using the **Application** tool. | [Application tool integration](./microsoft-edge-devtools-extension/application-tool-integration.md) |
 | Use the extension in the Visual Studio Code debugging workflow. | [Automatically opening the browser and DevTools when debugging in Visual Studio Code](./microsoft-edge-devtools-extension/debugging-a-webpage.md) |
-
-
-<!-- ====================================================================== -->
-## Supported scenarios
-
-
-#### Local .html filepath or URL
-
-If you create a launch.json or open a local file by right-clicking and you access either your file system or a `localhost` or a `127.0.0.1` URL address, you get two-way interaction and can change the CSS, including CSS mirror editing that updates the local source `.css` file or the downloaded copy of the `.css` file from the web server; your changes are mirrored in the `.css` file.
-
-
-#### Remote URLs
-
-If you click the **Launch Instance** button and paste a non-local URL, such as `https://microsoftedge.github.io/Demos/demo-to-do/`, you get browser functionality in the **Edge DevTools: Browser** tab, but not full DevTools functionality.  You can interact with the page and see it in different devices and rendering states from the lower bar.  You can also inspect the CSS and HTML, but you can't edit it without an error:
-
-![Limited CSS editing ability for a remote URL](./microsoft-edge-devtools-extension-images/limited-css-edit-ability-for-remote-url.png)
 
 
 <!-- ====================================================================== -->
@@ -95,9 +82,8 @@ For the list of all tools that are in the Microsoft Edge browser version of DevT
 <!-- ====================================================================== -->
 ## See also
 
-* [Get started with the DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension/get-started.md)
+* [Get started using the DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension/get-started.md)
 * [Supercharging VS Code Live Server](https://dev.to/codepo8/supercharging-vs-code-live-server-1bgi) - If you use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in Visual Studio Code to see the changes in your web products live, you can improve the experience even more by getting a browser and DevTools embedded in Visual Studio Code using the Microsoft Edge DevTools extension for Visual Studio Code.
 * [Getting Started](https://code.visualstudio.com/Docs) - Documentation for Visual Studio Code.
-* [vscode-edge-devtools repo](https://github.com/microsoft/vscode-edge-devtools) - source code for the Microsoft Edge Developer Tools extension for Visual Studio Code, at GitHub.
-* [Download Visual Studio Code](https://code.visualstudio.com).
+* [vscode-edge-devtools repo](https://github.com/microsoft/vscode-edge-devtools) - source code for the Microsoft Edge Developer Tools extension for Visual Studio Code.
 * [Microsoft Edge DevTools extension for Visual Studio Code](https://aka.ms/devtools-for-code) in the Visual Studio Marketplace.

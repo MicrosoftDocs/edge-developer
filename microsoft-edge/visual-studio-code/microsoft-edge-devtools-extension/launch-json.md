@@ -5,17 +5,26 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/21/2022
+ms.date: 10/06/2022
 ---
 # The launch.json file for DevTools extension
 
 There are two main ways to launch DevTools:
 
-*  Right-click an `.html` file in Visual Studio Code > Activity Bar > **Explorer**.  This approach doesn't involve a `launch.json` file.  For more information, see [Step 9: Open DevTools by right-clicking an .html file](./get-started.md#step-9-open-devtools-by-right-clicking-an-html-file) in _Get started with the DevTools extension for Visual Studio Code_.
+*  Right-click an `.html` file in Visual Studio Code > Activity Bar > **Explorer**.  This approach doesn't involve a `launch.json` file.  For more information, see [Step 9: Open DevTools by right-clicking an .html file](./get-started.md#step-9-open-devtools-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
 
-*  Generate a `launch.json` file, edit it to point to a URL, such as `http://localhost/demos/demo-to-do/`, and then select Visual Studio Code > Activity Bar > **Microsoft Edge Tools** > **Launch Project** button.  For more information, see [Step 11: Open DevTools for a URL using the Launch Instance button](./get-started.md#step-11-open-devtools-for-a-url-using-the-launch-instance-button) in _Get started with the DevTools extension for Visual Studio Code_.
+*  Generate a `launch.json` file, edit it to point to a URL, such as `http://localhost/demos/demo-to-do/`, and then select Visual Studio Code > Activity Bar > **Microsoft Edge Tools** > **Launch Project** button.  For more information, see [Step 11: Open DevTools for a URL using the Launch Instance button](./get-started.md#step-11-open-devtools-for-a-url-using-the-launch-instance-button) in _Get started using the DevTools extension for Visual Studio Code_.
 
 Details about the `launch.json` file format are below.  However, you normally don't need to change anything in the file except to replace several instances of the URL string, as explained in the above linked section.
+
+
+#### Where the file is placed
+
+1. In Visual Studio Code's **Explorer** pane, note where the `launch.json` file is placed.
+
+   *  For a repo, such as the Demos repo, if you open the entire repo folder, the **Generate launch.json** button creates a `\.vscode\launch.json` file near the root, for the entire repo directory.
+
+   *  If you open a particular, smaller folder, such as `\Demos\demo-to-do\`, the **Generate launch.json** button puts a `launch.json` file in that folder only.
 
 
 Visual Studio Code uses a `launch.json` file to configure and customize the debugger.  `launch.json` is a debugger configuration file.  This file also controls which web browser to use in conjunction with the debugger.  For example, when you test your webpage by clicking a button in the webpage to cause your JavaScript code to run, the Visual Studio Code debugger listens to the browser and steps through the JavaScript code of the webpage.
@@ -183,6 +192,6 @@ You can define your own, additional configurations, in order to XYZ.  Click the 
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
 * [Configure C/C++ debugging](https://code.visualstudio.com/docs/cpp/launch-json-reference) in the Visual Studio Code docs.
 * [Configure the debugger](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_configure-the-debugger) in _Using React in Visual Studio Code_ in the Visual Studio Code docs.
+* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)

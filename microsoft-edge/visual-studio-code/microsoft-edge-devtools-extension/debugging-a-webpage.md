@@ -5,27 +5,50 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/14/2022
+ms.date: 10/06/2022
 ---
 # Debugging a webpage
 
-<!-- TODO: test the steps in this article -->
+When you start DevTools in one of the main ways, Visual Studio enters Debug mode, and the Debug toolbar opens.  You can set breakpoints in a `.js` file, interact with your webpage, and step through lines of code.  See:
+* [Starting DevTools by right-clicking an HTML file](./get-started.md#starting-devtools-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
+* [Starting DevTools by using a localhost URL](./get-started.md#starting-devtools-by-using-a-localhost-url) in _Get started using the DevTools extension for Visual Studio Code_.
 
-JavaScript debugging is built into Visual Studio Code.  You can debug in Chrome, Microsoft Edge, or Node.js without installing any other extensions.  If you debug by using Microsoft Edge, you can start Microsoft Edge DevTools from the JavaScript debugger of Visual Studio Code.
+
+<!-- TODO:
+test the steps in this article
+remove & link to how to start devtools.  only include points about debugging.
+-->
+
+JavaScript debugging is built into Visual Studio Code.  You can debug in Chrome, Microsoft Edge, or Node.js without installing any other extensions.  If you debug by using Microsoft Edge, you can start Microsoft Edge DevTools from the JavaScript debugger of Visual Studio Code, so that when you select **Run** > **Start Debugging** (`F5`), the **DevTools** tab opens and the **DevTools: Browser** tab opens, as well as the Debug toolbar.
+
+
+
+<!-- ====================================================================== -->
+## How to open the Debug toolbar open when DevTools tabs are open
+
+In some states or scenarios, the two DevTools tabs are open, but the Debug toolbar is not open:
+*  If you use a URL but it's not a localhost or equivalent URL, DevTools will open with limited functionality and VS Code isn't in Debug mode, so the Debug toolbar isn't open.
+*  If no folder is open in Visual Studio Code > Activity Bar **Explorer**, there's no `launch.json` file.  If you then select Activity Bar > Microsoft Edge Tools > Launch Instance button, the **DevTools** tab opens and the **DevTools: Browser** tab opens, but the VS Code's Debug toolbar doesn't open.  You can paste file paths or URLs such as **http://localhost/demos/demo-to-do/**.
+
+If the Debug toolbar isn't open and you want to open it, the main approach is to restart DevTools, using a supported scenario.  See [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
+
+
 
 
 <!-- ====================================================================== -->
 ## Opening the browser as part of a debugging session
 
-You can open the **Edge DevTools** tab and the **Edge DevTools: Browser** tab, which is an embedded (headless) browser, during a <!-- todo: reword?  as part of a --> debugging session.
+<!-- todo: define "as part of a debugging session" -->
+
+You can open the **Edge DevTools** tab and the **Edge DevTools: Browser** tab, which is an embedded web browser, during a debugging session.  The Debug toolbar of Visual Studio opens.
 
 The extension opens a new browser as an embedded browser in Visual Studio Code, shown as the **Edge DevTools: Browser** tab.
-
-If you used the **Targets** > **...** > **Settings** page for the extension and cleared the **Headless mode** checkbox, an external entire Microsoft Edge window opens, if you click the **Launch Instance** button rather than right-clicking an `.html` file.
 
 You can move the **Edge DevTools: Browser** tab to anywhere within the editor area in the Visual Studio Code window.  You can use this tab side by side with your source code, or split the panes and place the browser preview below your code:
 
 ![Extension open in Visual Studio Code showing the browser preview below the source code and the DevTools to the right](./debugging-a-webpage-images/browser-split-down.png)
+
+You can change the settings for the extension so that it opens an external Microsoft Edge window when you click the **Launch Instance** button. rather than right-clicking an `.html` file.  See [Using an external browser window](./external-browser-window.md).
 
 
 <!-- ====================================================================== -->
@@ -45,7 +68,7 @@ To start debugging:
 
 1. If you want to work with local files, select **File** > **Open Folder**.  Or, select **Activity Bar** > **Explorer** > **Open Folder**.  Open a folder that contains a webpage, typically an `.html` file and a `.js` file and a `.css` file.
 
-   Or, in the next step, you can enter a URL in the embedded (headless) browser (the **Edge DevTools: Browser** tab).
+   Or, in the next step, you can enter a URL in the address bar of the **Edge DevTools: Browser** tab.
 
 1. Start the extension, such as by right-clicking an HTML file or by clicking the **Launch Instance** button.  The **Edge DevTools** tab opens, the **Edge DevTools: Browser** tab opens, and the Debug toolbar opens in some cases.
 
@@ -104,21 +127,12 @@ If you want to debug a local `.html`/`.css`/`.js` file, the main way to open a w
 That approach opens the following UI components in Visual Studio Code:
 *  The **Edge DevTools** tab.
 *  The **Edge DevTools: Browser** tab.
-   * If you clear the **Settings** > **Headless** checkbox and click the **Activity Bar** > **Microsoft Edge Tools** > **Launch Instance** button, an external browser window opens instead of the embedded browser tab.
 *  The Debug toolbar.
 *  The **Run** (Debugger) sidebar, including the **Watch** pane.
 *  The **Debug Console** at bottom of window.
 
 ![Tabs from right-clicking an HTML file in Explorer](./debugging-a-webpage-images/tabs-from-right-click-html-explorer.png)
 
-To debug your project, you might want to change the default page that opens in Microsoft Edge in Visual Studio Code.
-
-This approach involves editing `launch.json`.  See also [The launch.json file for DevTools extension](./launch-json.md).
-
-To change from the default webpage to another webpage, to open in the **Edge DevTools** tab and the **Edge DevTools: Browser** tab (or an external browser window if you don't use headless mode).
-
-
-To customize launch and debug:
 
 1. In Visual Studio Code, select **File** > **New Window**.  Initially, no folder is open.
 
@@ -146,10 +160,14 @@ To customize launch and debug:
 
 Now, when you debug your project in Visual Studio Code, the **Edge DevTools** tab opens, showing content for the page that you specified in `launch.json`.  Also, the **Edge DevTools: Browser** tab opens, displaying the rendered page that you specified in `launch.json`.
 
+<!--
+demote this scenario; don't mention it except in the dedicated article about it:
+*  If you change the **Settings** to use an external browser window, and then you click the **Activity Bar** > **Microsoft Edge Tools** > **Launch Instance** button, an external browser window opens instead of the embedded browser tab.  See [Using an external browser window](./external-browser-window.md). -->
+
 
 <!-- ====================================================================== -->
 ## See also
 
 * [Launch configurations](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) in the _Debugging_ article for Visual Studio Code.
-* [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) at the Visual Studio Marketplace website.
 * [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) in _User Interface_ in the Visual Studio Code documentation.
+* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)

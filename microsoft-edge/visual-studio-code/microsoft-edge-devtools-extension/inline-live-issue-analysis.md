@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/14/2022
+ms.date: 10/06/2022
 ---
 # Inline and live issue analysis
 
@@ -14,7 +14,7 @@ Issues in your source code (`.html`, `.css`, or `.js` files) are highlighted wit
 ![An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information](./inline-live-issue-analysis-images/inline-issue-reporting.png)
 
 
-This feature requires Node.js and npm (Node Package Manager).  See [Step 3: Install Node.js and Node Package Manager (npm)](get-started.md#step-3-install-nodejs-and-node-package-manager-npm) in _Get started with the DevTools extension for Visual Studio Code_.
+This feature requires Node.js and npm (Node Package Manager).  See [Step 3: Install Node.js and Node Package Manager (npm)](get-started.md#step-3-install-nodejs-and-node-package-manager-npm) in _Get started using the DevTools extension for Visual Studio Code_.
 
 
 
@@ -71,4 +71,4 @@ You can select whichever **Quick Fix** you want to use to resolve the issue or t
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)

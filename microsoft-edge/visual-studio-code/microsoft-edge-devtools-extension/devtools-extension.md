@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/21/2022
+ms.date: 10/06/2022
 ---
 # DevTools extension for Visual Studio Code
 <!-- this is an aux jump page, that appears in the IDE TOC bucket rather than in the DevTools extension bucket -->

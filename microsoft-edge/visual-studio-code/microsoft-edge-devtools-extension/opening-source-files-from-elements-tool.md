@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/14/2022
+ms.date: 10/06/2022
 ---
 # Opening source files from the Elements tool
 
@@ -21,4 +21,4 @@ The source file name and line number are shown as a clickable link.  Clicking a 
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
