@@ -42,7 +42,7 @@ There's also another way, that's prominent in the UI:
 
 Clicking the **Launch Instance** button is probably not the main way that you will open DevTools in practice, because it doesn't go directly to your file, and it doesn't open DevTools in Debug mode.  However, this approach is prominent in the UI, and you should be aware of this approach, its limitations, and how to close instances of DevTools that have been opened by clicking the **Launch Instance** button.
 
-1. In Visual Studio, if a folder is open, select **File** > **Close Folder**.
+1. In Visual Studio, select **File** > **Open Folder**.  Open the `\Demos\demo-to-do\` folder of the Demos repo that you cloned, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
 
 1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
 
@@ -50,13 +50,15 @@ Clicking the **Launch Instance** button is probably not the main way that you wi
 
    The Debug toolbar doesn't open, **Debug Console** doesn't open at bottom, and the **Run** sidebar with **Watch** pane doesn't open.  This indicates that Visual Studio Code is not in Debug mode.  In this state or mode, you can modify CSS of the local files, and you can enter local file paths or localhost URLs in the address bar and interact with local web app pages.
 
-1. In File Explorer, or by opening a folder in Explorer in VS Code, get the full filepath for the Demo To Do app's `index.html` file, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`.
+1. Activity Bar > **Explorer** > right-click `\demo-to-do\index.html` > **Copy Path**.
 
-1. In Visual Studio, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above.  Or, if your localhost server is running, paste a localhost URL, such as **http://localhost/demos/demo-to-do/**.  The Demo To Do app opens.
+1. In Visual Studio, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above, such as ``C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`.  Or, if your localhost server is running, paste a localhost URL, such as **http://localhost/demos/demo-to-do/**.  The Demo To Do app opens.
 
-1. In the demo app, enter a task, such as **test**:
+1. In the demo app, enter a task, such as **test**.
 
-![Launch Instance > filepath > non-debug mode](./get-started-images/launch-instance-filepath-non-debug-mode.png)
+1. In the **Elements** tool, in the **Styles** tab, change a CSS value, such as: click the point size in `body { font-size: 11pt;}` and then change the value.  The corresponding `.css` file in the folder that you opened opens and it is automatically edited to match your changes made in the **Styles** tab (but is not saved).
+
+   ![Launch Instance > filepath > non-debug mode](./get-started-images/launch-instance-filepath-non-debug-mode.png)
 
 1. In the **Edge DevTools** tab, click **Close** (**x**).
 
@@ -64,7 +66,9 @@ Clicking the **Launch Instance** button is probably not the main way that you wi
 
    The DevTools instance from clicking **Launch Instance** remains running.
 
-1. In Activity Bar > **Microsoft Edge Tools** > **Targets**, hover to the right of the target instance, and then click **Close instance** (**x**).  The **Launch Instance** button now appears,indicating that the DevTools instances are closed.
+1. In Activity Bar > **Microsoft Edge Tools** > **Targets**, hover to the right of the target instance, and then click **Close instance** (**x**).  The **Launch Instance** button now appears, indicating that the DevTools instances are closed.
+
+1. When Visual Studio prompts you to save changes, click the **Don't Save** button.
 
 
 <!-- ====================================================================== -->
