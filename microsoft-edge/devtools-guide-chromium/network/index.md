@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License. -->
 # Inspect network activity
 
-Use the **Network** tool to make sure that resources are being downloaded or uploaded as expected.  Inspect the properties of an individual resource, such as the HTTP headers, content, or size.
+Use the **Network** tool to make sure the resources your webpage needs to run are downloaded as expected and that the requests to server-side APIs are sent correctly.  Inspect the properties of individual HTTP requests and responses, such as the HTTP headers, content, or size.
 
 This is a step-by-step tutorial walkthrough of the **Network** tool, for inspecting network activity for a page.
 
@@ -34,19 +34,19 @@ For an overview of the network-related DevTools features, see [Network features 
 
 
 <!-- ====================================================================== -->
-## When to use the Network panel
+## When to use the Network tool
 
-In general, use the Network panel when you need to make sure that resources are being downloaded or uploaded as expected.  The most common use cases for the **Network** panel are:
+In general, use the Network tool when you need to make sure that resources are being downloaded correctly and requests to server-side APIs are being sent as expected.  The most common use cases for the **Network** tool are:
 
-*  Making sure that resources are actually being uploaded or downloaded at all.
+*  Making sure that resources are actually being downloaded at all.
 
-*  Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.
+*  Verifying the request parameters and responses of server-side API calls.
 
-If you're looking for ways to improve page load performance, don't start with the **Network** tool.  There are many types of load performance issues that aren't related to network activity.  Start with the **Lighthouse** tool, because it gives you targeted suggestions on how to improve your page.  See [Optimize website speed using Lighthouse](../speed/get-started.md).
+If you're looking for ways to improve page load performance, the **Network** tool can help understand how much data is being downloaded and how long it takes to download it, but there are many other types of load performance issues that aren't related to network activity.  To further investigate page load performance issues, you can use the **Performance tool**, the **Issues** tool, and the **Lighthouse** tool, because it gives you targeted suggestions on how to improve your page.  For example, see [Optimize website speed using Lighthouse](../speed/get-started.md).
 
 
 <!-- ====================================================================== -->
-## Open the Network panel
+## Open the Network tool
 
 To get the most out of this tutorial, open the demo and try out the features on the demo page.
 
@@ -62,15 +62,9 @@ To get the most out of this tutorial, open the demo and try out the features on 
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Console** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button:
-
-   ![The Console.](../media/network-glitch-console.msft.png)
+1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tools** (![More tools icon.](../media/more-tools-icon-light-theme.png)) button:
 
    You might prefer to [dock DevTools to the bottom of your window](../customize/placement.md):
-
-   ![DevTools docked to the bottom of the window.](../media/network-glitch-console-bottom.msft.png)
-
-1. Open the **Network** tool:
 
    ![Network tool in DevTools, with DevTools docked to the bottom of the window.](../media/network-glitch-network-bottom.msft.png)
 
@@ -78,11 +72,23 @@ The **Network** tool is initially empty.  DevTools only logs network activity af
 
 
 <!-- ====================================================================== -->
+## Understand the Network tool user interface
+
+The Network tool is divided in three main parts:
+
+* The top toolbar contains options to customize the tool and filter network requests.
+* Below the top toolbar, the **Overview** graph provides a high-level overview of the network traffic over time and allows to filter network requests.
+* Below the **Overview** graph, the **Network Log** section shows the network activity and allows to inspect individual requests.
+
+![The three main parts of the Network tool](./images/network-ui-sections.png)
+
+
+<!-- ====================================================================== -->
 ## Log network activity
 
 To view the network activity that a page causes:
 
-1. Refresh the webpage.  The **Network** panel logs all network activity in the **Network Log**:
+1. Refresh the webpage.  The **Network** tool logs all network activity in the **Network Log**:
 
    ![The Network Log.](../media/network-glitch-network.msft.png)
 
@@ -100,8 +106,7 @@ To view the network activity that a page causes:
 
     *  **Waterfall**.  A graphical representation of the different stages of the request.  To display a breakdown, hover over a **Waterfall**.
 
-    > [!NOTE]
-    > The graph above the **Network Log** is called the **Overview**.  You won't use the **Overview** graph in this tutorial, so you can hide it.  See [Hide the Overview pane](reference.md#hide-the-overview-pane).
+    Note that the **Overview** graph also shows network activity.  You won't use the **Overview** graph in this tutorial, so you can hide it.  See [Hide the Overview pane](reference.md#hide-the-overview-pane).
 
    After you open DevTools, it records network activity in the **Network Log**.
 
@@ -131,7 +136,7 @@ The columns of the Network Log are configurable.  You can hide columns that you 
 
 The network connection of the computer that you use to build sites is probably faster than the network connections of the mobile devices of your users.  By throttling the page, you get a better idea of how long a page takes to load on a mobile device.
 
-1. Select the **Throttling** dropdown list, which is set to **No throttling** by default.
+1. Select the **Throttling** dropdown list in the top toolbar. It is set to **No throttling** by default.
 
 1. Select **Slow 3G**:
 
