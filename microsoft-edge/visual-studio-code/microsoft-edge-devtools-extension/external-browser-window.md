@@ -13,11 +13,13 @@ By default, opening DevTools opens the embedded (headless) **Edge DevTools: Brow
 
 As an alternative approach, an **external browser** approach, from within VS Code, launch the full Microsoft Edge browser window, and then go to your web application (or generate a `launch.json` file to specify the `.html` page to open).  This approach opens a separate Microsoft Edge window that's controlled by DevTools automation:
 
-   ![Separate Microsoft Edge window](./opening-browser-instance-images/success-page-external-browser.png)
+![Separate Microsoft Edge window](./external-browser-window-images/success-page-external-browser.png)
 
-   ![Visual Studio Code when external browser launched (and no Debug toolbar)](./opening-browser-instance-images/vscode-when-external-browser.png)
+Visual Studio Code when external browser launched (and no Debug toolbar):
 
-   Note that there's no Debug toolbar when opening DevTools by clicking the **Launch Instance** button in the **Microsoft Edge Tools** sidebar/pane.  To turn on the Debug toolbar, paste an `.html` filepath or URL into the address bar of the browser, and then in Visual Studio Code, press `F5`, and then select **Microsoft Edge Tools**.<!-- todo: test/review -->
+![Visual Studio Code when external browser launched (and no Debug toolbar)](./external-browser-window-images/vscode-when-external-browser.png)
+
+Note that there's no Debug toolbar when opening DevTools by clicking the **Launch Instance** button in the **Microsoft Edge Tools** sidebar/pane.  To turn on the Debug toolbar, paste an `.html` filepath or URL into the address bar of the browser, and then in Visual Studio Code, press `F5`, and then select **Microsoft Edge Tools**.<!-- todo: test/review -->
 
 When you change settings, a quick way to restart is to select **File** > **Close Folder**, then select **File** > **Open Recent** > select a folder.
 
@@ -34,15 +36,9 @@ To open an external Microsoft Edge browser window, including the complete UI for
 
    Then when you launch a browser instance using the extension by selecting Activity Bar > **Microsoft Edge Tools** > **Launch Instance**, an entire Microsoft Edge browser window will open.
 
-_External browser window_ means that when you launch an instance of the browser by using the Edge DevTools extension, an entire Microsoft Edge window with full UI opens, controlled by test automation.  If you click the **Launch Project** button and no `launch.json` file exists, or the default `launch.json` file exists, the default, Success page opens in the browser:
+_External browser window_ means that when you launch an instance of the browser by using the Edge DevTools extension, an entire Microsoft Edge window with full UI opens, controlled by test automation.  If you click the **Launch Project** button and no `launch.json` file exists, or the default `launch.json` file exists, the default, Success page opens in the external browser.
 
-![The Success page in an external browser window](./opening-browser-instance-images/success-page-external-browser.png)
-
-Visual Studio Code when external browser launched: contains the **Edge DevTools** tab, but not the **Edge DevTools: Browser** tab (and in this scenario for launching, doesn't open the Debug toolbar):
-
-![Visual Studio Code when external browser launched (and no Debug toolbar)](./opening-browser-instance-images/vscode-when-external-browser.png)
-
-In some cases,<!--todo: which?--> the Debug toolbar opens, and the Watch pane of Visual Studio Code opens.
+Visual Studio Code when external browser launched: contains the **Edge DevTools** tab, but not the **Edge DevTools: Browser** tab (and in this scenario for launching, doesn't open the Debug toolbar).
 
 
 #### Embedded browser for DevTools

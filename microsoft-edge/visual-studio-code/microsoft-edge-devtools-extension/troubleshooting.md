@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting the DevTools extension
-description: Use the extension with the Visual Studio Code debugging workflow in the Microsoft Edge Developer Tools extension for Visual Studio Code.
+description: Error messages and how to restart DevTools in ways that avoid them.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -41,8 +41,8 @@ If you get errors while trying to point to a file path, instead of using a `laun
 #### Solution
  
 Start DevTools in one of the two main ways, so that the Debug toolbar appears.  See:
-* [Starting DevTools by right-clicking an HTML file](./get-started.md#starting-devtools-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
-* [Starting DevTools by using a localhost URL](./get-started.md#starting-devtools-by-using-a-localhost-url) in _Get started using the DevTools extension for Visual Studio Code_.
+* [Step 3: Start DevTools in debug mode by right-clicking an HTML file](./get-started.md#step-3-start-devtools-in-debug-mode-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
+* [Step 8: Set up launch.json](./get-started.md#step-8-set-up-launchjson) in _Get started using the DevTools extension for Visual Studio Code_.
 
 
 <!-- ====================================================================== -->

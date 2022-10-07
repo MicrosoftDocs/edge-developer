@@ -10,8 +10,8 @@ ms.date: 10/06/2022
 # Debugging a webpage
 
 When you start DevTools in one of the main ways, Visual Studio enters Debug mode, and the Debug toolbar opens.  You can set breakpoints in a `.js` file, interact with your webpage, and step through lines of code.  See:
-* [Starting DevTools by right-clicking an HTML file](./get-started.md#starting-devtools-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
-* [Starting DevTools by using a localhost URL](./get-started.md#starting-devtools-by-using-a-localhost-url) in _Get started using the DevTools extension for Visual Studio Code_.
+* [Step 3: Start DevTools in debug mode by right-clicking an HTML file](./get-started.md#step-3-start-devtools-in-debug-mode-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
+* [Step 6: Start DevTools in debug mode by using a localhost URL](./get-started.md#step-6-start-devtools-in-debug-mode-by-using-a-localhost-url) in _Get started using the DevTools extension for Visual Studio Code_.
 
 
 <!-- TODO:
@@ -22,7 +22,6 @@ remove & link to how to start devtools.  only include points about debugging.
 JavaScript debugging is built into Visual Studio Code.  You can debug in Chrome, Microsoft Edge, or Node.js without installing any other extensions.  If you debug by using Microsoft Edge, you can start Microsoft Edge DevTools from the JavaScript debugger of Visual Studio Code, so that when you select **Run** > **Start Debugging** (`F5`), the **DevTools** tab opens and the **DevTools: Browser** tab opens, as well as the Debug toolbar.
 
 
-
 <!-- ====================================================================== -->
 ## How to open the Debug toolbar open when DevTools tabs are open
 
@@ -31,8 +30,6 @@ In some states or scenarios, the two DevTools tabs are open, but the Debug toolb
 *  If no folder is open in Visual Studio Code > Activity Bar **Explorer**, there's no `launch.json` file.  If you then select Activity Bar > Microsoft Edge Tools > Launch Instance button, the **DevTools** tab opens and the **DevTools: Browser** tab opens, but the VS Code's Debug toolbar doesn't open.  You can paste file paths or URLs such as **http://localhost/demos/demo-to-do/**.
 
 If the Debug toolbar isn't open and you want to open it, the main approach is to restart DevTools, using a supported scenario.  See [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
-
-
 
 
 <!-- ====================================================================== -->
@@ -121,6 +118,8 @@ You might only need to do one or two of the following steps, depending on the st
 
 <!-- ====================================================================== -->
 ## Automatically opening the browser and DevTools when debugging in Visual Studio Code
+
+todo: remove routine info about starting DevTools and link to main section that explains that.  This article should probably focus on the approach that includes selecting a debugger.
 
 If you want to debug a local `.html`/`.css`/`.js` file, the main way to open a webpage for debugging is **Activity Bar** > **Explorer** > **Open Folder** > right-click a `.html` file, and then select **Open with Edge > Open Browser with DevTools**.
 

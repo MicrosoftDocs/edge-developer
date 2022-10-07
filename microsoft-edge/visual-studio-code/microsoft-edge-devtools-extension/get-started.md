@@ -9,9 +9,26 @@ ms.date: 10/06/2022
 ---
 # Get started using the DevTools extension for Visual Studio Code
 
+<!-- reviewer comment, make sure integrated:
+The difference between the right-click>Open with Edge and the launch.json approaches is key, and right now is still a bit hard to grasp. There should probably be a very straightforward way to understand, right from the start, that the extension works in those 2 different ways. One is for simple local development, without a web server, and the other one is for more involved/advanced debugging use cases.
+-->
+
 This is a step-by-step tutorial about opening and closing DevTools and using it to modify CSS and debug JavaScript.  Follow the steps here from top to bottom for a general introduction and to ensure that your machine is set up to use DevTools.
 
 This article uses the Demo To Do app from the Demos repo, which is used for Microsoft Edge Developer documentation.
+
+
+#### The two main approaches
+
+There are two different ways of using the DevTools extension:
+
+*  Right-click an `.html` file > **Open with Edge**.  For simple local development, without a web server.
+
+*  Generate a `launch.json` file then click **Launch Project**.  For more involved/advanced debugging use cases.
+
+There's also another way, that's prominent in the UI: 
+
+*  Click **Launch Instance**, paste a filepath or localhost URL in the address bar, and enter non-debug mode.  This is prominent in the UI, although limited, so you need to be familiar with this approach and we'll start with it.
 
 
 <!-- ====================================================================== -->
@@ -143,7 +160,7 @@ You might not need to use this approach.  In many cases, right-clicking an HTML 
 
 This section is in support of the section "Start DevTools in debug mode by using a localhost URL".
 
-1. Set up and start a web server, serving out the demo-to-do app from the Demos repo.  To do this, see [Step 6: Set up a localhost server](./install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.  The present section is similar but more specifically focused on the Demo To Do app.
+1. Set up and start a web server, serving out the demo-to-do app from the Demos repo.  To do this, see [Step 6: Set up a localhost server by using npx http-server](./install.md#step-6-set-up-a-localhost-server-by-using-npx-http-server) in _Installing the DevTools extension for Visual Studio Code_.  The present section is similar but more specifically focused on the Demo To Do app.
 
 1. In Visual Studio Code, select **View** > **Terminal**.
 

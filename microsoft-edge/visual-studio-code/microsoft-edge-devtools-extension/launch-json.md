@@ -11,9 +11,9 @@ ms.date: 10/06/2022
 
 There are two main ways to launch DevTools:
 
-*  Right-click an `.html` file in Visual Studio Code > Activity Bar > **Explorer**.  This approach doesn't involve a `launch.json` file.  For more information, see [Step 9: Open DevTools by right-clicking an .html file](./get-started.md#step-9-open-devtools-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
+*  Right-click an `.html` file in Visual Studio Code > Activity Bar > **Explorer**.  This approach doesn't involve a `launch.json` file.  For more information, see [Step 3: Start DevTools in debug mode by right-clicking an HTML file](./get-started.md#step-3-start-devtools-in-debug-mode-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
 
-*  Generate a `launch.json` file, edit it to point to a URL, such as `http://localhost/demos/demo-to-do/`, and then select Visual Studio Code > Activity Bar > **Microsoft Edge Tools** > **Launch Project** button.  For more information, see [Step 11: Open DevTools for a URL using the Launch Instance button](./get-started.md#step-11-open-devtools-for-a-url-using-the-launch-instance-button) in _Get started using the DevTools extension for Visual Studio Code_.
+*  Generate a `launch.json` file, edit it to point to a URL, such as `http://localhost/demos/demo-to-do/`, and then select Visual Studio Code > Activity Bar > **Microsoft Edge Tools** > **Launch Project** button.  For more information, see [Step 8: Set up launch.json](./get-started.md#step-8-set-up-launchjson) in _Get started using the DevTools extension for Visual Studio Code_.
 
 Details about the `launch.json` file format are below.  However, you normally don't need to change anything in the file except to replace several instances of the URL string, as explained in the above linked section.
 
