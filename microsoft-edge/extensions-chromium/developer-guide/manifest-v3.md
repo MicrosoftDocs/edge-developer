@@ -32,8 +32,6 @@ To help you plan, consider the following schedule for Microsoft Partner Center a
 
 This timeline is subject to change. This article will be updated to share exact details as the milestones draw nearer.
 
-We acknowledge that Chrome has revised the timelines for Manifest V2 sunset. We are in the process of updating this document. Watch this space for more updates.
-
 | Timeframe	| Microsoft Partner Center changes | Microsoft Edge changes |
 |--- |--- |--- |
 | July 2022	| Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
