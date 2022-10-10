@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 10/10/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -114,13 +114,11 @@ The main metric for measuring the performance of any animation is frames per sec
 
 1. Look at the **FPS** chart, shown below.  Whenever a red bar is displayed above **FPS**, it means that the framerate dropped so low that it's probably harming the user experience.  In general, the higher the green bar, the higher the FPS.
 
-   ![The FPS chart.](../media/evaluate-performance-performance-fps-chart.msft.png)
-
-1. Below the **FPS** chart, the **CPU** chart is displayed.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The fact that the **CPU** chart is full of color means that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that you should find ways to do less work.
+1. The **CPU** chart is displayed.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The fact that the **CPU** chart is full of color means that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that you should find ways to do less work.
 
    ![The CPU chart and Summary panel.](../media/evaluate-performance-performance-cpu-chart.msft.png)
 
-1. Hover over the **FPS**, **CPU**, or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of animations.
+1. Hover over the **CPU**, or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of animations.
 
    ![View a screenshot of the page around the 2500ms mark of the recording.](../media/evaluate-performance-performance-screenshot-hover.msft.png)
 
