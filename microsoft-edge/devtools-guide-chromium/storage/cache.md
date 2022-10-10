@@ -50,6 +50,8 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 
    ![Viewing the content of a resource.](../media/storage-application-cache-storage-domain-js-preview.msft.png)
 
+To learn more about cache data storage quota, see the [Quota usage](../progressive-web-apps/index.md#quota-usage) section of the Debug Progressive Web Apps article.
+
 
 <!-- ====================================================================== -->
 ## Refresh a resource

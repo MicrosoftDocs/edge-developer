@@ -22,7 +22,7 @@ Microsoft and any contributors reserve all others rights, whether under their re
 <!-- ====================================================================== -->
 ## Contributing
 
-This repo, `edge-developer`, is the repository for the source Markdown files for the Microsoft Edge Developer documentation.  The resulting rendered documentation is hosted at [Microsoft Edge documentation](https://docs.microsoft.com/microsoft-edge/developer/).  This repo also includes the hub page for the Microsoft Edge Enterprise documentation and the Microsoft Edge Developer documentation.  The source files for the Microsoft Edge Enterprise documentation aren't in this repo, but are in the [Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise) repo.
+This repo, `edge-developer`, is the repository for the source Markdown files for the Microsoft Edge Developer documentation.  The resulting rendered documentation is hosted at [Microsoft Edge documentation](https://learn.microsoft.com/microsoft-edge/developer/).  This repo also includes the hub page for the Microsoft Edge Enterprise documentation and the Microsoft Edge Developer documentation.  The source files for the Microsoft Edge Enterprise documentation aren't in this repo, but are in the [Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise) repo.
 
 If you want to include new coverage or have feedback, consider [contributing](CONTRIBUTING.md).  You can edit the existing content, add new content, or report new [issues](https://github.com/MicrosoftDocs/edge-developer/issues).  The Microsoft Edge team reviews a look at your suggestions and works to incorporate the suggestions into the docs.
 
@@ -35,14 +35,14 @@ For the latest implementation status and future plans for web platform features 
 
 *  A directory can contain more directories or `readme.md` files.
 
-*  Folder/directory names are dash-separated (for example, `f12-tools`) and lowercase.  Directories are used in URLs on the `docs.microsoft.com` site.  Avoid using underscores, PascalCase, or camelCase.
+*  Folder/directory names are dash-separated (for example, `f12-tools`) and lowercase.  Directories are used in URLs on the `learn.microsoft.com` site.  Avoid using underscores, PascalCase, or camelCase.
 
 
 <!-- ====================================================================== -->
 ## Markdown tagging
 
 * [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) - GitHub Flavored Markdown, in _GitHub Docs_.
-* [Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference) - in _Docs Contributor Guide_.
+* [Docs Markdown reference](https://learn.microsoft.com/contribute/markdown-reference) - in _Docs Contributor Guide_.
 
 
 ### Images

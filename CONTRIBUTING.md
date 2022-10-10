@@ -16,7 +16,7 @@ If you are a Microsoft Employee, follow the internal guidance.
 
 To suggest a change to the docs:
 
-1.  If you are viewing the [docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge) page, click the **Edit** button in the upper right of the page.  You are redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/edge-developer).  If you are already in the GitHub repo, navigate to the source file that you are changing.
+1.  If you are viewing the [Microsoft Edge documentation](https://learn.microsoft.com/microsoft-edge) page, click the **Edit** button in the upper right of the page.  You are redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/edge-developer).  If you are already in the GitHub repo, navigate to the source file that you are changing.
 
 1.  If you don't already have a GitHub account, click **Sign Up** in the upper-right corner and create a new account.
 
@@ -26,7 +26,7 @@ To suggest a change to the docs:
 
 1.  When you are done, commit your changes and open a pull request.
 
-After you create the pull request, the Microsoft Edge Developer Docs team reviews it.  If your pull request is approved, updates are published to [Microsoft Edge Developer documentation](https://docs.microsoft.com/microsoft-edge/developer/).
+After you create the pull request, the Microsoft Edge Developer Docs team reviews it.  If your pull request is approved, updates are published to [Microsoft Edge Developer documentation](https://learn.microsoft.com/microsoft-edge/developer/).
 
 
 <!-- ====================================================================== -->
@@ -77,7 +77,7 @@ When you are happy with your changes and ready to submit a PR:
 
 1.  Click the green **Create pull request** button.  Give your Pull Request a title and description, then click the **Create pull request** button again.
 
-1.  After pushing your contribution to the remote repo, you receive an email from **Open Publishing Build Service** indicating whether your commit built successfully.  The email contains links to any errors or warnings, such as broken links.  Click the **View** links to see your content staged on the `review.docs.microsoft.com` site.
+1.  After pushing your contribution to the remote repo, you receive an email from **Open Publishing Build Service** indicating whether your commit built successfully.  The email contains links to any errors or warnings, such as broken links.  Click the **View** links to see your content staged on the `review.learn.microsoft.com` site.
 
 1.  After your PR is submitted, the Microsoft Edge Developer Docs team reviews the PR, approves the PR, merges the PR into the `main` branch, and then merges the PR's commits into the `live` branch.
 
@@ -92,7 +92,7 @@ The [Microsoft Edge Docs GitHub repository](https://github.com/MicrosoftDocs/edg
 | Branch  | Details  |
 |:--- |:--- |
 | [main](https://github.com/MicrosoftDocs/edge-developer/tree/main)  | The content in the `main` branch has been internally reviewed. |
-| [live](https://github.com/MicrosoftDocs/edge-developer/tree/live)  |  The content in the `live` branch has been published on the [live site](https://docs.microsoft.com/microsoft-edge). |
+| [live](https://github.com/MicrosoftDocs/edge-developer/tree/live)  |  The content in the `live` branch has been published on the [live site](https://learn.microsoft.com/microsoft-edge). |
 
 The series of branches is as follows:
 
@@ -110,7 +110,7 @@ The series of branches is as follows:
 
 1. The Microsoft Edge Developer Docs team merges commits from the `main` branch into the `live` branch of the `edge-developer` repo.
 
-1. The build process publishes the PR's commits at the public site, [Microsoft Edge Developer documentation](https://docs.microsoft.com/microsoft-edge/developer/).
+1. The build process publishes the PR's commits at the public site, [Microsoft Edge Developer documentation](https://learn.microsoft.com/microsoft-edge/developer/).
 
 
 <!-- ====================================================================== -->
@@ -125,5 +125,5 @@ Be sure to include the topic title and the URL for the page.
 ## See also
 
 *  [Getting started with writing and formatting on GitHub](https://help.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
-*  [Docs Contributor Guide](https://docs.microsoft.com/contribute/)
+*  [Docs Contributor Guide](https://learn.microsoft.com/contribute/)
 *  [README](README.md)

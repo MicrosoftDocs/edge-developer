@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/09/2022
+ms.date: 08/02/2022
 ---
 # Call native-side WinRT code from web-side code
 
@@ -82,7 +82,7 @@ Let's get started!
 
    If you have your own app code base already, you can open that project in Visual Studio, instead of starting with the **webview2_sample_uwp** sample from the `WebView2Samples` repo.
 
-1. If not done already, download or clone the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 1. On your local drive, open the `.sln` file in Visual Studio, in a directory such as:
 
@@ -305,6 +305,16 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
    This method calls `AddHostObjectToScript`.
 
+   In the line `AddHostObjectToScript("Windows", ...`, `Windows` is the top-level namespace.  If you have other top-level namespaces, you can add additional calls to `AddHostObjectToScript`, like the following example:
+
+   ```csharp
+   WebView2.CoreWebView2.AddHostObjectToScript("RuntimeComponent1", dispatchAdapter.WrapNamedObject("RuntimeComponent1", dispatchAdapter));
+   ```
+
+   The `WrapNamedObject` call creates a wrapper object for the `RuntimeComponent1` namespace. The `AddHostObjectToScript` call adds that wrapped object to script using the name `RuntimeComponent1`.
+
+   For full guidance on how to use custom WinRT components, see [Custom (3rd-party) WinRT components](#custom-3rd-party-winrt-components), below.
+
 1. In the `MainPage` constructor, above the `StatusUpdate("Ready");` line, add the following code:
 
    ```csharp
@@ -343,6 +353,92 @@ Next, use the DevTools Console to demonstrate that web-side code can call the in
    ![Using the DevTools Console to test calling native-side code from web-side code.](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
 Congratulations!  You've finished the sample demonstration of calling WinRT code from JavaScript code.
+
+
+<!-- =============================================== -->
+## Custom (3rd-party) WinRT components
+
+The wv2winrt tool supports custom third-party WinRT components, in addition to first-party OS WinRT APIs.
+
+![3rd-party WinRT components with wv2winrt tool](./winrt-from-js-images/wv2winrt-custom-components.png)
+
+To use custom (3rd-party) WinRT components with the wv2winrt tool, in addition to the above steps, also do the following steps:
+
+1. Add a third project (other than your main app and WinRTAdapter project) to your Visual Studio solution that implements your WinRT class.
+
+1. Have the WinRTAdapter project 'Add a reference' to your new third project containing your WinRT class.
+
+1. Update the WinRTAdapter project's Include filter in the properties to also include your new class.
+
+1. Add an additional line to `InitializeWebView2Async` to add your winrt class's namespace:
+
+   `WebView2.CoreWebView2.AddHostObjectToScript("MyCustomNamespace", dispatchAdapter.WrapNamedObject("MyCustomNamespace", dispatchAdapter));`
+
+1. For easy method calling from the web, optionally add your namespace sync proxy as a global object in script.  For example:
+
+   `window.MyCustomNamespace = chrome.webview.hostObjects.sync.MyCustomNamespace;`
+
+For an example of this, see the following WebView2 sample:
+
+* [uwp-wv2winrt-custom-csharp-winrt](https://github.com/MicrosoftEdge/WebView2Samples/compare/uwp-wv2winrt-custom-csharp-winrt) - A sample, as a branch.
+
+
+<!-- =============================================== -->
+## Asynchronous WinRT methods
+
+Following the steps in the above guide, you should be able to use synchronous proxies. For async method calls, you will need to use `chrome.webview.hostObjects.options.forceAsyncMethodMatches`.
+
+The `forceAsyncMethodMatches` property is an array of regexes, where if any regex matches a method name on a sync proxy, the method will be run asynchronously instead. Setting this to `[/Async$/]` will have it match any method ending with the suffix `Async`.  Then matching method calls work just like a method on an async proxy and returns a promise that you can await.
+
+Example:
+
+```javascript
+const Windows = chrome.webview.hostObjects.sync.Windows;
+chrome.webview.hostObjects.options.forceAsyncMethodMatches = [/Async$/];
+
+let result = await Windows.System.Launcher.launchUriAsync(new Windows.Foundation.Uri('https://contoso.com/'));
+```
+
+For more information, see the `forceAsyncMethodMatches` row in [CoreWebView2.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript).
+
+
+<!-- ====================================================================== -->
+
+## Subscribing to WinRT events
+
+WinRT events are also exposed via the script proxies. You can add and remove event handlers of instance WinRT events and static WinRT events by using the `addEventListener(string eventName, function handler)` and `removeEventListener(string eventName, function handler)` methods. 
+
+These methods work similarly to the DOM methods of the same name. Call `addEventListener` with a string name of the WinRT event you want to subscribe as the first parameter, and a function callback to be called whenever the event is raised. Calling `removeEventListener` with the same parameters unsubscribes from that event. For example:
+
+```javascript
+const Windows = chrome.webview.hostObjects.sync.Windows;
+const coreApplication = Windows.ApplicationModel.Core.CoreApplication;
+const coreApplicationView = coreApplication.getCurrentView();
+const titleBar = coreApplicationView.titleBar;
+titleBar.addEventListener('IsVisibleChanged', () => {
+    console.log('titlebar visibility changed to: ' + titleBar.isVisible);
+});
+```
+
+For a WinRT event that provides event args, those are provided as the first parameter to the event handler function. For example, the `Windows.Foundation.Collections.PropertySet.MapChanged` event has `IMapChangedEventArgs<string, object>` event arg object and that object is provided as the parameter to the callback.
+
+```javascript
+const Windows = chrome.webview.hostObjects.sync.Windows;
+const propertySet = new Windows.Foundation.Collections.PropertySet();
+propertySet.addEventListener('MapChanged', eventArgs => {
+    const key = eventArgs.key;
+    const collectionChange = eventArgs.collectionChange;
+    // ...
+});
+```
+
+The event args object will additionally have the following properties:
+
+| Property Name | Description |
+| --- | --- |
+| `target` | The object that raised the event |
+| `type` | The string name of the event |
+| `detail` | An array of all parameters provided to the WinRT delegate |
 
 
 <!-- ====================================================================== -->

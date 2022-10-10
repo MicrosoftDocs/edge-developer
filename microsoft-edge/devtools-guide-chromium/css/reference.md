@@ -56,8 +56,8 @@ If the stylesheet is minified, click the **Format** (![Format.](../media/format-
 
 <!-- todo: delete /en-us ? 2x -->
 In the following figure, after you click
-`https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --> you are taken to line 2 of
-`https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- master kind of works but all lines are concated.  changing master to main doesn't work -->
+`https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --> you are taken to line 2 of
+`https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- master kind of works but all lines are concated.  changing master to main doesn't work -->
 
 ![Viewing the stylesheet where a rule is defined.](../media/css-elements-styles-h1-highlight.msft.png)
 
@@ -274,7 +274,7 @@ To add a class to an element:
 
 1. Click **.cls**.
 
-1. Enter the name of the class in the **Add New Class** text box.
+1. Enter the name of the class in the **Add new class** text box.
 
 1. Press `Enter`.
 
@@ -468,11 +468,11 @@ The following figure and list describes of each of the UI elements of the **Colo
 
 ### Sample a color off the page with the Eyedropper
 
-When you open the **Color Picker**, the **Eyedropper** (![Eyedropper.](../media/eyedropper-icon.msft.png)) is on by default.
-
 To change the selected color to some other color on the page:
 
-1. Hover on the target color in the viewport.
+1. Click the **Eyedropper** icon (![Eyedropper.](../media/eyedropper-icon.msft.png)). Your cursor changes to a magnifying glass.
+
+1. Hover on the pixel that has the color you want to sample, anywhere on your screen.
 
 1. Click to confirm.
 

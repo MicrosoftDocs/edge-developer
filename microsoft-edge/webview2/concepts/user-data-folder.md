@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 08/31/2022
 ---
 # Manage user data folders
 <!-- # old title: Manage the user data folder -->
@@ -26,7 +26,15 @@ The user data folder (UDF) is a folder stored on the user's machine, that contai
 
 WebView2 creates the UDF in the default location for the platform, or in the custom UDF location that your host app explicitly specifies.
 
-By default, WebView2 creates a UDF in the default location for the particular platform.  This works well on some platforms, but not others.  If your app has specific needs, you can specify a custom UDF location.  Make sure that the custom UDF location that you specify has appropriate Read/Write permissions for the WebView2 app runtime.
+By default, WebView2 creates a UDF in the default location for the particular platform.  This works well on some platforms, but not others.  If your app has specific needs, you can specify a custom UDF location.
+
+#### Suitable custom UDF locations
+
+If you specify a custom UDF location, it should meet the following requirements:
+
+* The custom UDF location must have appropriate Read/Write permissions for the WebView2 app runtime.
+
+* Avoid storing user settings on a network drive. This can result in slowdowns, crashes, or loss of data.
 
 
 <!-- ====================================================================== -->
@@ -408,7 +416,7 @@ On this platform, use the default UDF location.
 
 **Example code:**
 
-For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample).
+For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted).
 
 
 **Where browser data gets stored within the UDF:**
@@ -458,9 +466,9 @@ For examples of reading the `UserDataFolder` property, see the Win32 samples in 
 
 # [.NET (WPF/WinForms)](#tab/dotnet)
 
-Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
+<!-- Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder). -->
 
-<!-- dev: add example code to https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property, copy that from the below code block: -->
+<!-- dev: add example code to https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property, copy that from the below code block: -->
 
 
 **Example code:**
@@ -679,4 +687,4 @@ Each WebView2 browser process consumes additional memory and disk space.  Theref
 * [ClickOnce security and deployment](/visualstudio/deployment/clickonce-security-and-deployment) - Visual Studio deployment documentation.
 * [Understand the ClickOnce and DirectInvoke features in Microsoft Edge](/deployedge/edge-learn-more-co-di) - in Microsoft Edge Enterprise documentation.
 
-<!-- clickable: https://docs.microsoft.com/windows/apps/package-and-deploy/ -->
+<!-- clickable: https://learn.microsoft.com/windows/apps/package-and-deploy/ -->

@@ -31,7 +31,19 @@
               displayName: 
 
 # What's New pages ------------------------------------------------------------
-            # add new pages to nav page too
+            # also add new pages to nav page: /whats-new/whats-new.md
+            - name: Microsoft Edge 106
+              href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
+              displayName: what's new, announcements, release notes
+
+            - name: Microsoft Edge 105
+              href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
+              displayName: what's new, announcements, release notes
+
+            - name: Microsoft Edge 104
+              href: devtools-guide-chromium/whats-new/2022/08/devtools-104.md
+              displayName: what's new, announcements, release notes
+
             - name: Microsoft Edge 103
               href: devtools-guide-chromium/whats-new/2022/06/devtools-103.md
               displayName: what's new, announcements, release notes
@@ -157,7 +169,7 @@
               items:
                 - name: Emulate mobile devices (Device Emulation)  # orig: Simulate mobile devices with Device Mode
                   href: devtools-guide-chromium/device-mode/index.md
-                  displayName: Device Emulation, Device Emulator, Device Mode  # also Network conditions tool (1x), Settings > Devices (1x)
+                  displayName: device emulator, device mode, device simulation, device simulator  # also Network conditions tool (1x), Settings > Devices (1x)
 
                 - name: Emulate dual-screen and foldable devices  # added article
                   href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
@@ -303,7 +315,7 @@
                   href: devtools-guide-chromium/inspect-styles/animations.md
                   displayName: Animations tool
 # Application tool ------------------------------------------------------------
-            - name: Application tool, for storage
+            - name: Application tool, for storage and PWAs
               items:
                 - name: Application tool, to manage storage
                   href: devtools-guide-chromium/storage/application-tool.md
@@ -341,6 +353,10 @@
                   href: devtools-guide-chromium/progressive-web-apps/index.md
                   displayName: Application tool
 
+                - name: Test Progressive Web App (PWA) protocol handling
+                  href: devtools-guide-chromium/progressive-web-apps/protocol-handlers.md
+                  displayName: Application tool
+                  
                 - name: Debug background services
                   href: devtools-guide-chromium/javascript/background-services.md
                   displayName: Application tool
@@ -358,7 +374,7 @@
                   displayName: Coverage tool
 # CSP Violations --------------------------------------------------------------
             # - name: CSP Violations tool
-            #   https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
+            #   https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
             #   items:
             #     - name: Display Content Security Policy (CSP) violations
             #       href: devtools-guide-chromium/csp-violations/csp-violations-tool.md
@@ -366,7 +382,7 @@
 # CSS Overview tool -----------------------------------------------------------
             - name: CSS Overview tool
               items:
-                - name: Identify potential CSS improvements  # real content pending
+                - name: Optimize CSS styles with the CSS Overview tool
                   href: devtools-guide-chromium/css/css-overview-tool.md
                   displayName: CSS Overview tool
 # Detached Elements tool ------------------------------------------------------
@@ -426,6 +442,10 @@
 
                 - name: Speed up JavaScript runtime
                   href: devtools-guide-chromium/rendering-tools/js-runtime.md
+                  displayName: Memory tool
+
+                - name: The heap snapshot file format
+                  href: devtools-guide-chromium/memory-problems/heap-snapshot-schema.md
                   displayName: Memory tool
 # Memory Inspector tool -------------------------------------------------------
             - name: Memory Inspector tool
@@ -612,6 +632,10 @@
             - name: Customize keyboard shortcuts  # added article
               href: devtools-guide-chromium/customize/shortcuts.md
               displayName: Settings, Shortcuts
+
+            - name: Add custom UI to DevTools using extensions
+              href: devtools-guide-chromium/customize/extensions.md
+              displayName: Extensions
 # Remote debugging ------------------------------------------------------------
         - name: Remote debugging
           items:
@@ -821,6 +845,9 @@
             - name: Defining match patterns for an extension to access file URLs
               href: extensions-chromium/developer-guide/match-patterns.md  # moved from /enterprise/
 
+            - name: Create an extension that customizes the DevTools UI
+              href: extensions-chromium/developer-guide/devtools-extension.md
+
         - name: Manifest
           items:
             - name: Overview and timelines for migrating to Manifest V3
@@ -1013,9 +1040,26 @@
               href: webview2/code-samples-links.md
               displayName: 
 
+            - name: Win32 sample app
+              href: webview2/samples/webview2apissample.md
+              displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
+
+            - name: Win32 sample app with Visual Composition
+              href: webview2/samples/webview2samplewincomp.md
+              displayName: WebView2SampleWinComp, Win32 sample app with Visual Composition  # repo dir name, top-of-page title
+
+            - name: Win32 sample WebView2Browser
+              href: webview2/samples/webview2browser.md
+              displayName: WebView2Browser  # repo dir name
+
             - name: WinUI 2 (UWP) sample app
               href: webview2/samples/webview2_sample_uwp.md
               displayName: webview2_sample_uwp, WinUI 2 (UWP) sample app  # repo dir name, top-of-page title
+
+# pending, July 26 2022
+#            - name: WinUI 3 sample app
+#              href: webview2/samples/webview2-winui3-sample.md
+#              displayName: WebView2_WinUI3_Sample  # repo dir name
 
             - name: WPF sample app
               href: webview2/samples/webview2wpfbrowser.md
@@ -1028,14 +1072,6 @@
             - name: WinForms sample app
               href: webview2/samples/webview2windowsformsbrowser.md
               displayName: WebView2WindowsFormsBrowser, WinForms sample app  # repo dir name, top-of-page title
-
-            - name: Win32 sample app
-              href: webview2/samples/webview2apissample.md
-              displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
-
-            - name: Win32 sample app with Visual Composition
-              href: webview2/samples/webview2samplewincomp.md
-              displayName: WebView2SampleWinComp, Win32 sample app with Visual Composition  # repo dir name, top-of-page title
 
 # -----------------------------------------------------------------------------
 # Deployment samples
@@ -1236,15 +1272,15 @@
 
             - name: WinRT
               items:
-                - name: Microsoft.Web.WebView2.Core (C#)
+                - name: Microsoft.Web.WebView2.Core
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: functions, methods
 
-                - name: COM Interop (C++)
+                - name: COM Interop/C++
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
                   displayName: functions, methods
 
-            - name: Win32 C++
+            - name: Win32/C++
               items:
                 - name: Win32 C++ WebView2 API conventions
                   href: webview2/concepts/win32-api-conventions.md
@@ -1331,6 +1367,11 @@
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
           displayName: 
+
+        - name: Operating System Regional Data Display
+          href: web-platform/os-regional-settings.md
+          displayName: globalization, language, region, limited, intl, date, time, format
+          
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords

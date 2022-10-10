@@ -1,4 +1,4 @@
-﻿---
+---
 title: Publish a UWP WebView2 app to the Microsoft Store
 description: How to publish a Universal Windows Platform (UWP) app that hosts the WebView2 control to the Microsoft Store.
 author: MSEdgeTeam
@@ -70,7 +70,7 @@ To make sure that all required content files are present in the package, and to 
 <!-- ====================================================================== -->
 ## Step 5: Run Windows App Certification Kit (WACK)
 
-<!-- * [Windows App Certification Kit](https://docs.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit) -->
+<!-- * [Windows App Certification Kit](https://learn.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit) -->
 
 Windows App Certification Kit (WACK) is an app that's a certification tool.  This tool evaluates your host app against the Microsoft Store's requirements.
 
