@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: extensions
-ms.date: 5/09/2022
+ms.date: 10/10/2022
 ---
 # Overview and timelines for migrating to Manifest V3
 
@@ -31,15 +31,15 @@ An overview of the changes involved, as described in [Overview of Manifest V3 - 
 To help you plan, consider the following schedule for Microsoft Partner Center and Microsoft Edge changes.
 
 
-#### Revised timeline
+#### Revised timeline 
 
-This timeline is subject to change. This article will be updated as the milestones draw nearer.  Chrome has revised the timeline for Manifest V2 sunset, and we are about to update this article to reflect that change.
+This timeline is subject to change. This article will be updated as the milestones draw nearer.  Chrome has revised the timeline for Manifest V2 sunset, and we are about to update this article to reflect that change. 
 
 | Timeframe	| Microsoft Partner Center changes | Microsoft Edge changes |
 |--- |--- |--- |
 | July 2022	| Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
-| January 2023 | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. | Microsoft Edge stops running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge using Enterprise policies. |
-| June 2023 | No change. | Manifest V2 extensions will no longer function in Microsoft Edge even with the use of Enterprise policy. |
+| January 2023 | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a Manifest V2 extension to Manifest V3. | Microsoft Edge will stop running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge by setting Enterprise policies. |
+| June 2023 | No change. | Manifest V2 extensions will no longer function in Microsoft Edge, even with the use of Enterprise policy. |
 
 Microsoft continues to iteratively improve the platform and address the feedback shared by extension developers.
 
