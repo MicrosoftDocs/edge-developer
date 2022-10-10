@@ -30,9 +30,10 @@ An overview of the changes involved, as described in [Overview of Manifest V3 - 
 
 To help you plan, consider the following schedule for Microsoft Partner Center and Microsoft Edge changes.
 
-This timeline is subject to change. This article will be updated to share exact details as the milestones draw nearer.
 
-We acknowledge that Chrome has revised the timelines for Manifest V2 sunset. We are in the process of updating this document. Watch this space for more updates.
+#### Revised timeline
+
+This timeline is subject to change. This article will be updated as the milestones draw nearer.  Chrome has revised the timeline for Manifest V2 sunset, and we are about to update this article to reflect that change.
 
 | Timeframe	| Microsoft Partner Center changes | Microsoft Edge changes |
 |--- |--- |--- |
