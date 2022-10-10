@@ -28,7 +28,7 @@
 # What's New firstchild article
             - name: What's new in Microsoft Edge DevTools
               href: devtools-guide-chromium/whats-new/whats-new.md
-              displayName: what's new, release notes, announcements
+              displayName: release notes, announcements
 
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
@@ -956,6 +956,7 @@
 
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
+          displayName: release notes, announcements
 
         - name: Sample PWAs
           href: progressive-web-apps-chromium/demo-pwas.md
@@ -1218,7 +1219,7 @@
 
         - name: Release Notes for the WebView2 SDK
           href: webview2/release-notes.md
-          displayName: 
+          displayName: what's new, announcements
 
         - name: WebView2 Roadmap
           href: webview2/roadmap.md
