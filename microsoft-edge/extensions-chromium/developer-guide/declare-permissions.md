@@ -28,24 +28,15 @@ If an API requires you to declare permissions in the manifest, see the documenta
 
 The following code outlines how to declare permissions in the manifest file:
 
-#### [Manifest V2](#tab/v2)
-
-```json
-"permissions": [
-  "tabs",
-  "bookmarks",
-  "http://www.blogger.com/",
-  "http://*.google.com/",
-  "unlimitedStorage"
-]
-```
-
 #### [Manifest V3](#tab/v3)
 
 ```json
 "permissions": [
   "tabs",
   "bookmarks",
+  "storage"
+],
+"optional_permissions": [
   "unlimitedStorage"
 ],
 "host_permissions": [
@@ -53,13 +44,6 @@ The following code outlines how to declare permissions in the manifest file:
   "http://*.google.com/"
 ]
 ```
-
----
-
-
-<!-- ====================================================================== -->
-
-Here's an example of the permissions part of a manifest file:
 
 #### [Manifest V2](#tab/v2)
 
@@ -76,6 +60,12 @@ Here's an example of the permissions part of a manifest file:
 ]
 ```
 
+---
+
+<!-- ====================================================================== -->
+
+Here's an example of the permissions part of a manifest file:
+
 #### [Manifest V3](#tab/v3)
 
 ```json
@@ -91,6 +81,21 @@ Here's an example of the permissions part of a manifest file:
   "http://www.blogger.com/",
   "http://*.google.com/"
 ],
+```
+
+#### [Manifest V2](#tab/v2)
+
+```json
+"permissions": [
+  "tabs",
+  "bookmarks",
+  "storage",
+  "http://www.blogger.com/",
+  "http://*.google.com/"
+],
+"optional_permissions": [
+  "unlimitedStorage"
+]
 ```
 
 ---
