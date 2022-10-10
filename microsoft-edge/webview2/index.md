@@ -15,7 +15,7 @@ The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, 
 
 With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
 
-![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom.](media/webview2/what-webview.png)
+![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](media/webview2/what-webview.png)
 
 To start building a WebView2 app, see [Get started with WebView2](get-started/get-started.md).
 
@@ -31,7 +31,7 @@ Developers must often decide between building a web app or a native app.  This d
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
-![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach.](media/webview2/web-native.png)
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](media/webview2/web-native.png)
 
 *  Wide **reach** includes websites and Progressive Web Apps.
 
@@ -86,6 +86,7 @@ WebView2 apps can run on the following versions of Windows:
 *  Windows 10 IoT Enterprise 21h1 x64
 *  Windows 8.1
 *  Windows 7 \*\*
+*  Windows Server 2022
 *  Windows Server 2019
 *  Windows Server 2016
 *  Windows Server 2012
@@ -98,13 +99,9 @@ WebView2 apps can run on the following versions of Windows:
 <!-- ====================================================================== -->
 ## See also
 
-<!-- possibly remove some of these and rely on TOC instead -->
-
 * [Overview of WebView2 features and APIs](concepts/overview-features-apis.md)
-* [Understand the different WebView2 SDK versions](concepts/versioning.md)
+* [Getting Started tutorials](get-started/get-started.md)
 * [Distribute your app and the WebView2 Runtime](concepts/distribution.md)
-* [Best practices for developing secure WebView2 apps](concepts/security.md)
-* [Manage user data folders](concepts/user-data-folder.md)
-* [How to Debug with WebView2](how-to/debug.md)
-* [Automating and testing WebView2 with Microsoft Edge WebDriver](how-to/webdriver.md)
-* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - Samples that demonstrate WebView2 SDK features and API usage patterns, including recently added WebView2 features.
+
+developer.microsoft.com:
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
