@@ -180,7 +180,6 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 *   Removed three-dot menu with a broken link from the downloads page. (Runtime)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
 *   Fixed a bug in the WebView2 WinRT JS Projection tool (wv2winrt) where C++20 projects failed to compile.  ([Issue #2768](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2768))
-
 *   Fixed a crash which could occur with the WebView2 WinRT API while closing down WebView2 if you subscribed to any events, especially the CoreWebView2.GetDevToolsEventReceiver event. This is an SDK-only change.
 *   Fixed a bug where it wasn't possible to dismiss the download popup after minimizing the window. (Runtime)
 
