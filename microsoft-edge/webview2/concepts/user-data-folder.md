@@ -663,8 +663,7 @@ WebView2 control instances can share the same user data folders (UDFs), to do th
 
 *  Optimize system resources by running in one browser process.  See [Process model for WebView2 apps](../concepts/process-model.md).
 
-*  Share browser history and cached resources.
-
+*  Have WebView2 controls with different profiles, to separate browser data storage such as cookies, permissions, and cached resources under the same UDF.  See [Multiple profile support](../concepts/multi-profile-support.md).
 
 Consider the following when sharing UDFs:
 
@@ -678,10 +677,13 @@ To isolate different parts of your app, or when sharing data between WebView2 co
 
 Each WebView2 browser process consumes additional memory and disk space.  Therefore, avoid running a WebView2 control with too many different UDFs at the same time.
 
+Rather than multiple UDFs, you can choose to use multiple profiles to achieve browser data storage separation for different WebView2 controls, each profile saves browser data in their dedicated folder under the same UDF.  See [Multiple profile support](../concepts/multi-profile-support.md).
+
 
 <!-- ====================================================================== -->
 ## See also
 
+* [Multiple profile support](multi-profile-support.md)
 * [Clear browsing data from the user data folder](clear-browsing-data.md)
 * [Package and deploy](/windows/apps/package-and-deploy/) in _Windows App Development_ docs (Build desktop apps for Windows).
 * [ClickOnce security and deployment](/visualstudio/deployment/clickonce-security-and-deployment) - Visual Studio deployment documentation.
