@@ -12,7 +12,9 @@ ms.date: 10/11/2022
 
 To achieve data separation, a WebView2 app can choose to use different user data folders for different WebView2 controls. However, in such way you'll have to be running multiple WebView2 runtime instances (each including a browser process and a bunch of child processes), which means much more consumption for system resources including memory, CPU footprint, disk space, so it is not desirable.
 
-Now we have a more desirable solution: multiple profile support, which enables a WebView2 app to have multiple profiles under a single user data folder, each profile has a dedicated profile folder to save browser data, which means separate browsing data storage, such as cookies, user preference settings, and cached resources. All the WebView2 controls associated with the same profile share the single profile folder. Note that the profile maps to the same concept of Edge browser profile.
+Now we have a more desirable solution: multiple profile support, which enables a WebView2 app to have multiple profiles under a single user data folder, each profile has a dedicated profile folder to save browser data, which means separate browsing data storage, such as cookies, user preference settings, and cached resources. All the WebView2 controls associated with the same profile share the single profile folder. 
+
+Note that the profile maps to the same concept of Edge browser profile.
 
 WebView2 multiple profile API allows you to create and manipulate profiles to work with your WebView2 controls to fulfill your needs.
 
@@ -153,7 +155,7 @@ HRESULT AppWindow::CreateControllerWithOptions()
 <!-- ====================================================================== -->
 ## Access and manipulate the profile
 
-You can get the profile object by accessing the property of a WebView2 control.
+You can get the profile object by accessing the profile property of a WebView2 control.
 
 
 <!-- ------------------------------ -->
@@ -174,7 +176,7 @@ TODO
 <!-- end of tab-set -->
 
 
-You can manipulate the profile object. The Profile interface allows to get profile information and do profile-wide settings and operations.
+Then you can manipulate the profile object. The Profile interface allows to get profile information and do profile-wide settings and operations.
 
 
 <!-- ------------------------------ -->
