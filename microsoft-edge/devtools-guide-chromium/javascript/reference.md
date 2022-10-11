@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 10/10/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,7 +36,7 @@ To view and edit a JavaScript file:
 
 1. Select the **Sources** tool.
 
-1. In the **Navigator** pane, select your file, to open it in the **Editor** pane.
+1. In the **Navigator** pane, select your file, to open it in the **Ed0itor** pane.
 
 1. In the **Editor** pane, edit your file.
 
@@ -70,7 +70,7 @@ To set a line-of-code breakpoint:
 
    A red circle (or more recently, a blue rectangle) then appears next to the line number, indicating a breakpoint.
 
-   ![A line-of-code breakpoint.](../media/javascript-sources-page-js-breakpoint-30.msft.png)
+   ![A line-of-code breakpoint.](../media/javascript-sources-page-js-reference-30.msft.png)
 
 Line-of-code breakpoints may be inefficient to set, especially if you don't know exactly where to look, or if your codebase is large.  To save time when debugging, learn how and when to use the other types of breakpoints.  See [Pause your code with breakpoints](breakpoints.md).
 
