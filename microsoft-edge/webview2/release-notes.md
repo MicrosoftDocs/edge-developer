@@ -32,6 +32,149 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
+<!-- ====================================================================== -->
+## 1.0.1370.28
+
+Release Date: October 11, 2022
+
+[NuGet package for WebView2 SDK 1.0.1370.28](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1370.28)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 104.0.1370.28 or higher.
+
+### General
+
+#### Promotions
+
+The following items are now stable:
+
+*  The drag and drop API:
+   * `DragEnter`
+   * `DragLeave`
+   * `DragOver`
+   * `Drop`
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2CompositionController.DragLeave Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.dragleave?view=webview2-dotnet-1.0.1370.28#microsoft-web-webview2-core-corewebview2compositioncontroller-dragleave)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2CompositionController.DragLeave Method]()
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionController3.DragEnter method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1370.28#dragenter)
+* [ICoreWebView2CompositionController3.DragLeave method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1370.28#dragleave)
+* [ICoreWebView2CompositionController3.DragOver method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1370.28#dragover)
+* [ICoreWebView2CompositionController3.Drop method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1370.28#drop)
+
+---
+
+
+<!-- ====================================================================== -->
+## 1.0.1408-prerelease
+
+Release Date: October 11, 2022
+
+[NuGet package for WebView2 SDK 1.0.1408-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1408-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 105.0.1408.0 or higher.
+
+### General
+
+#### Experimental features
+
+*  Added support for the Print API:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* CoreWebView2.PrintAsync Method
+* CoreWebView2.ShowPrintUI Method
+* CoreWebView2.PrintToPdfStream
+* CoreWebView2PrintSettings Class
+   * PageRanges
+   * PagesPerSide
+   * Copies
+   * Collation
+   * ColorMode
+   * Duplex
+   * MediaSize
+   * PrinterName
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* 
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Experimental17.Print Method]
+* [ICoreWebView2Experimental17.ShowPrintUI Method]
+* [ICoreWebView2Experimental17.PrintToPdfStream Method]
+* [ICoreWebView2ExperimentalPrintCompletedHandler]
+* [ICorewebView2ExperimentalPrintToPdfStreamCompletedHandler]
+* [ICoreWebView2ExperimentalPrintSettings2.get_PageRanges]
+* [ICoreWebView2ExperimentalPrintSettings2.put_PageRanges]
+* [ICoreWebView2ExperimentalPrintSettings2.get_PagesPerSide]
+* [ICoreWebView2ExperimentalPrintSettings2.put_PagesPerSide]
+* [ICoreWebView2ExperimentalPrintSettings2.get_Copies]
+* [ICoreWebView2ExperimentalPrintSettings2.put_Copies]
+* [ICoreWebView2ExperimentalPrintSettings2.get_Collation]
+* [ICoreWebView2ExperimentalPrintSettings2.put_Collation]
+* [ICoreWebView2ExperimentalPrintSettings2.get_ColorMode]
+* [ICoreWebView2ExperimentalPrintSettings2.put_ColorMode]
+* [ICoreWebView2ExperimentalPrintSettings2.get_Duplex]
+* [ICoreWebView2ExperimentalPrintSettings2.put_Duplex]
+* [ICoreWebView2ExperimentalPrintSettings2.get_MediaSize]
+* [ICoreWebView2ExperimentalPrintSettings2.put_MediaSize]
+* [ICoreWebView2ExperimentalPrintSettings2.get_PrinterName]
+
+---
+
+*  Added support for SmartScreen API:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-dotnet-1.0.1414-prerelease#microsoft-web-webview2-core-corewebview2settings-isreputationcheckingrequired)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Settings.IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1414-prerelease#isreputationcheckingrequired)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalSettings7.get_IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings7?view=webview2-1.0.1414-prerelease#get_isreputationcheckingrequired)
+* [ICoreWebView2ExperimentalSettings7.put_IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings7?view=webview2-1.0.1414-prerelease#put_isreputationcheckingrequired)
+
+---
+
+*  Added support for Custom Crash Reporting API:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled?view=webview2-dotnet-1.0.1414-prerelease#microsoft-web-webview2-core-corewebview2environmentoptions-iscustomcrashreportingenabled)
+* [CoreWebView2Environment.FailureReportFolderPath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.failurereportfolderpath?view=webview2-dotnet-1.0.1414-prerelease#microsoft-web-webview2-core-corewebview2environment-failurereportfolderpath)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1414-prerelease#iscustomcrashreportingenabled)
+* [CoreWebView2Environment.FailureReportFolderPath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1414-prerelease#failurereportfolderpath)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalEnvironmentOptions2.get_IsCustomCrashReportingEnabled Property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions2?view=webview2-1.0.1414-prerelease#get_iscustomcrashreportingenabled)
+* [ICoreWebView2ExperimentalEnvironmentOptions2.put_IsCustomCrashReportingEnabled Property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions2?view=webview2-1.0.1414-prerelease#put_iscustomcrashreportingenabled)
+* [ICoreWebView2ExperimentalEnvironment.get_FailureReportFolderPath Property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-1.0.1414-prerelease#get_failurereportfolderpath)
+
+---
+
+#### Bug fixes
+
+*   Removed three dot menu with broken link from downloads page. (Runtime)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
+*   Fixed a bug in wv2winrt where C++20 projects failed to compile.  ([Issue #2768](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2768))
+*   Fixed a crash which could occur with the WebView2 WinRT API while closing down WebView2 if you subscribed to any. 
+events, especially the CoreWebView2.GetDevToolsEventReceiver event. This is an SDK only change.  
+*   Fixed bug where download popup was undismissable after minimizing the window. (Runtime)  
+
 
 <!-- ====================================================================== -->
 ## 1.0.1343.22
