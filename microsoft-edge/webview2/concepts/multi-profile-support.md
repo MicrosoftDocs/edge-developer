@@ -12,15 +12,15 @@ ms.date: 10/11/2022
 
 To achieve data separation, a WebView2 app can choose to use different user data folders for different WebView2 controls. However, in such way you'll have to be running multiple WebView2 runtime instances (each including a browser process and a bunch of child processes), which means much more consumption for system resources including memory, CPU footprint, disk space, so it is not desirable.
 
-Now we have a more desirable solution: multiple profile support, which enables a WebView2 app to have multiple WebView2 controls running with separate profiles under a single user data folder, which means separate browsing data storage, such as cookies, user preference settings, and cached resources. Each profile has a dedicated folder to save browser data for all WebView2 controls associated with it.
+Now we have a more desirable solution: multiple profile support, which enables a WebView2 app to have multiple profiles under a single user data folder, each profile has a dedicated profile folder to save browser data, which means separate browsing data storage, such as cookies, user preference settings, and cached resources. All the WebView2 controls associated with the same profile share the single profile folder. Note that the profile maps to the same concept of Edge browser profile.
 
-WebView2 multiple profile API allows you to create and manipulate profiles to work for your WebView2 controls.
+WebView2 multiple profile API allows you to create and manipulate profiles to work with your WebView2 controls to fulfill your needs.
 
 
 <!-- ====================================================================== -->
 ## Specify the profile when creating WebView2
 
-This method creates an options object to give specific information of a profile, including ProfileName and IsInPrivateModeEnabled. This object is to be used to specify the target profile when creating a WebView2 control.
+This method creates an options object to give specific information of a profile, including `ProfileName` and `IsInPrivateModeEnabled`. This object is to be used to specify the target profile when creating a WebView2 control.
 
 
 <!-- ------------------------------ -->
@@ -216,7 +216,7 @@ TODO
 
 ```cpp
 // This is the callback passed to CreateCoreWebView2Controller.
-// Here we can get the profile object of the WebView2 control, then manipulate it.
+// Here we can get the profile property of the WebView2 control, then manipulate it.
 HRESULT AppWindow::OnCreateCoreWebView2ControllerCompleted(HRESULT result, ICoreWebView2Controller* controller)
 {
     // ...
