@@ -48,7 +48,7 @@ The Microsoft Store requires submitting a packaged app.  Package your app as fol
 
    ![Selecting target configurations](publish-uwp-app-store-images/package-selection.png)
 
-   32-bit and 64-bit versions of the WebView2 Runtime will work in UWP on non-ARM platforms.  32-bit is not supported for ARM, due to dependencies on Microsoft Edge, which doesn't support ARM32.
+   32-bit and 64-bit versions of the WebView2 Runtime will work in UWP on non-ARM platforms. 32-bit is not supported for ARM, due to dependencies on Microsoft Edge.  64-Bit is supported on ARM.
 
 1. Once the app package has been created for your configurations, the **Create App Packages** window displays the **Finished creating package** dialog:
 
