@@ -29,3 +29,4 @@ Use the **Network** tool to:
 
 * [Inspect network activity](../../devtools-guide-chromium/network/index.md) - article for browser-based DevTools.
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

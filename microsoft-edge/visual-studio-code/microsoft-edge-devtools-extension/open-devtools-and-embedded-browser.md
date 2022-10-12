@@ -9,11 +9,13 @@ ms.date: 10/11/2022
 ---
 # Opening DevTools and the embedded DevTools browser
 
-<!-- shortest possible names of the approaches -->
 There are several ways to open the **DevTools** tab and the **Edge DevTools: Browser** tab:
-*  Click the **Launch Instance** button.
-*  Right-click an `.html` file.
-*  Click the **Launch Project** button.
+
+| Approach | Description |
+|---|---|
+| Click the **Launch Instance** button. | No `launch.json` file is used.  Opens DevTools in non-debug mode.  Use this approach if you don't want to debug. |
+| Right-click an `.html` file. | No `launch.json` file is used.  Opens DevTools in Debug mode.  Use this approach if you want to debug, and your web app can run from the file system instead of a web server. |
+| Click the **Launch Project** button. | A `launch.json` file is used.  Opens DevTools in Debug mode.  Use this approach if you want to debug, and your web app uses APIs that require running it on a web server. |
 
 These approaches are described below.
 
@@ -133,7 +135,7 @@ To open DevTools by clicking the **Launch Project** button:
 
 1. In Visual Studio, select **File** > **Open Folder**.  Select your project directory that contains a `.html` file, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
    
-1. In the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./open-devtools-and-embedded-browser-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
+1. In the Activity Bar, click **Microsoft Edge Tools** (![the Microsoft Edge Tools icon](./open-devtools-and-embedded-browser-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
 
    *  If the folder doesn't already contain a `.vscode` directory that contains a `launch.json file`, the **Microsoft Edge Tools** Side Bar contains a **Launch Instance** button and a **Generate launch.json** button.
 
@@ -165,6 +167,10 @@ To open DevTools by clicking the **Launch Project** button:
    ```js
    "url": "http://localhost/demo-to-do/", // Provide your project's url to finish configuring
    ```
+
+   The URL string can be a local file path, though in that case, you don't need a `launch.json` file; you can right-click an `.html` file instead.
+
+   If you keep the URL as-is, the default, **Success** page is displayed, and you can paste a localhost URL or a file path into the address bar of the **Edge DevTools: Browser** tab.
 
 1. Copy and paste the modified URL line to the other places in the `launch.json` file.  To modify all instances at the same time, you can copy an updated URL string, then select an instance of the initial URL string, press `Ctrl`+`Shift`+`L` to select all instances, and then paste the updated string.
 
@@ -207,3 +213,4 @@ If you paste a non-local URL, such as `https://microsoftedge.github.io/Demos/dem
 ## See also
 
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

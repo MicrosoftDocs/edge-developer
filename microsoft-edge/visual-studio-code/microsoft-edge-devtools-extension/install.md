@@ -147,7 +147,7 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 <!-- ====================================================================== -->
 ## Step 6: Set up a localhost server by using npx http-server
 
-In many cases, you don't need a URL or a localhost server.  See [Step 3: Start DevTools in debug mode by right-clicking an HTML file](./get-started.md#step-3-start-devtools-in-debug-mode-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
+In many cases, you don't need a URL or a localhost server.  See [Step 3: Start DevTools in debug mode by right-clicking an HTML file](./get-started.md#step-3-start-devtools-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
 
 If your webpage uses certain APIs that require the webpage to be running on a web server, to use DevTools, you must start a local web server for testing.  If you don't serve out your project on a webserver, but only instead, you use local files, you can still use DevTools, with debugging ability, by right-clicking a local `.html` file.  Functionality of your app which specifically requires your app to be on a server won't work, and DevTools will have limited utility.
 
@@ -278,3 +278,4 @@ Next, see [Get started using the DevTools extension for Visual Studio Code](./ge
 ## See also
 
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

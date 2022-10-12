@@ -9,20 +9,9 @@ ms.date: 10/06/2022
 ---
 # The launch.json file for DevTools extension
 
-Visual Studio Code uses a `launch.json` file to define debug configurations.  To use the DevTools extension, a `launch.json` file is only needed if you want to use the debugger and your webpage requires running on a web server, not just a local file system.  Read these article if you want to use custom, advanced configuration.
+Visual Studio Code uses a `launch.json` file to define debug configurations.  To use the DevTools extension, a `launch.json` file is only needed if you want to use the debugger and your webpage requires running on a web server, not just a local file system.  Read this article if you want to use custom, advanced debug configurations.
 
-<!-- shortest possible names of the approaches -->
-There are several ways to open the **DevTools** tab and the **Edge DevTools: Browser** tab:
-
-*  Click the **Launch Instance** button.  No `launch.json` file is used.  Opens DevTools in non-debug mode.
-
-*  Right-click an `.html` file.  No `launch.json` file is used.  Opens DevTools in Debug mode.  Doesn't work if your web app uses APIs that require running from a web server.
-
-*  Click the **Launch Project** button.  A `launch.json` file is used.  Opens DevTools in Debug mode.
-
-These approaches are described in [Opening DevTools and the embedded DevTools browser](./open-devtools-and-embedded-browser.md).
-
-Details about the `launch.json` file format are below.  You normally don't need to change anything in the file except to replace several instances of the URL string, as explained in the above linked article.
+Details about the `launch.json` file format are below.  You normally don't need to change anything in the file except to replace several instances of the URL string, as explained in [Opening DevTools by clicking the Launch Project button](./open-devtools-and-embedded-browser.md#opening-devtools-by-clicking-the-launch-project-button) in _Opening DevTools and the embedded DevTools browser_.
 
 
 <!-- ====================================================================== -->
@@ -199,6 +188,11 @@ You can define your own, additional debugging configurations.  Click the **Add c
 <!-- ====================================================================== -->
 ## See also
 
+* [Opening DevTools and the embedded DevTools browser](./open-devtools-and-embedded-browser.md).
+* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+
+#### launch.json for other platforms
+
 * [Configure C/C++ debugging](https://code.visualstudio.com/docs/cpp/launch-json-reference) in the Visual Studio Code docs.
 * [Configure the debugger](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_configure-the-debugger) in _Using React in Visual Studio Code_ in the Visual Studio Code docs.
-* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)

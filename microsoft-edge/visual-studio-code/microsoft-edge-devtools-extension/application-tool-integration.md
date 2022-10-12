@@ -27,3 +27,4 @@ Use the **Application** tool to:
 ## See also
 
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

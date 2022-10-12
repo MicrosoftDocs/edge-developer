@@ -22,3 +22,4 @@ The source file name and line number are shown as a clickable link.  Clicking a 
 ## See also
 
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

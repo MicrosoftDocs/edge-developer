@@ -9,10 +9,6 @@ ms.date: 10/06/2022
 ---
 # Get started using the DevTools extension for Visual Studio Code
 
-<!-- reviewer comment, make sure integrated:
-The difference between the right-click>Open with Edge and the launch.json approaches is key, and right now is still a bit hard to grasp. There should probably be a very straightforward way to understand, right from the start, that the extension works in those 2 different ways. One is for simple local development, without a web server, and the other one is for more involved/advanced debugging use cases.
--->
-
 This is a step-by-step tutorial about opening and closing DevTools and using it to modify CSS and debug JavaScript.  Follow the steps here from top to bottom for a general introduction and to ensure that your machine is set up to use DevTools.
 
 
@@ -236,7 +232,7 @@ This section is in support of clicking the **Launch Project** button.
 
    ![The Demo To Do web app running in the Edge DevTools: Browser tab](./get-started-images/demo-app-running-in-extension-browser.png)
 
-At this point, you could work with CSS edits or step through code in the debugger, as described above for the section [Start DevTools in debug mode by right-clicking an HTML file](#step-3-start-devtools-in-debug-mode-by-right-clicking-an-html-file).
+At this point, you could work with CSS edits or step through code in the debugger, as described above for the section [Start DevTools in debug mode by right-clicking an HTML file](#step-3-start-devtools-by-right-clicking-an-html-file).
 
 
 <!-- ====================================================================== -->
