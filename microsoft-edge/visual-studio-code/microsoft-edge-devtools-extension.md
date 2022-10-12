@@ -9,46 +9,41 @@ ms.date: 10/06/2022
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
 
-<!-- todo:
-delete most instances of 'headless' & 'screencast'
-   Use eg:
-    the embedded browser in Visual Studio Code
-    the Edge DevTools: Browser tab includes the device emulation toolbar (unlike the external browser window)
-    the DevTools embedded browser includes a device emulation toolbar
-    the DevTools browser
--->
+<!-- main page for DevTools extension -->
 
-<!-- this is the main landing (firstchild) page for the DevTools extension TOC bucket -->
+<!-- use h2/h4/h6, skip h3/h5 -->
 
-<!-- heading convention in these files: skip h3's; tag subheadings as h4's instead -->
-
-<!-- lexicon (except when quoting a UI string):
+<!-- lexicon (except ui strings):
 Microsoft Edge DevTools extension for Visual Studio Code
 Microsoft Edge DevTools extension
 CSS Mirroring
-CSS mirror editing (lowercased in UI, initcapped at gh)
+CSS mirror editing (lowercased in UI, init capped at github)
 -->
 
-The Microsoft Edge DevTools extension for Visual Studio Code lets you use the Microsoft Edge Browser and Developer Tools right from within Visual Studio Code.  Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it's a great tool for web developers.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.
+The Microsoft Edge DevTools extension for Visual Studio Code lets you use Microsoft Edge DevTools and an embedded version of the Microsoft Edge Browser including Device Emulation, right from within Visual Studio Code.  Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it's a great tool for web developers, especially with this DevTools extension.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.
 
 ![Microsoft Edge Developer Tools and browser preview in Visual Studio Code](microsoft-edge-devtools-extension-images/devtools-extension-v211.png)
 
-This extension enables you to:
-*  Develop webpages and use DevTools without leaving Visual Studio Code; without having to work within DevTools within the browser window.
-*  Emulate devices, in terms of viewport size in which your webpage is displayed.
+This DevTools extension for Visual Studio Code enables you to:
+
+*  Develop webpages and use DevTools without leaving Visual Studio Code.  This extension gives you an alternative to using DevTools for webpage development within the browser window.
+
+*  Emulate devices, such as displaying your webpage in various viewport sizes during development.
+
 *  Test the accessibility of your webpages from within Visual Studio Code.
-*  Live-edit CSS and SASS and see your changes reflected immediately in a browser instance while editing your actual source files.  DevTools opens and edits your `.css` file, without saving the file, so that you can decide whether to save the changes that you made within the **Styles** tab of the **Elements** tool.
+
+*  Live-edit CSS and SASS and see your changes reflected immediately in a browser instance while editing your actual source files.  DevTools opens and edits your `.css` files, but without automatically saving the files, so that you can decide and control whether to save the changes that you made within the **Styles** tab of the **Elements** tool.
 
 
 <!-- ====================================================================== -->
 ## Tasks supported by the developer tools
 
-The extension allows you to:
+The DevTools extension for Visual Studio Code allows you to:
 
 | Task | Article |
 |---|---|
 | Get live analysis of problems in your source code. | [Inline and live issue analysis](./microsoft-edge-devtools-extension/inline-live-issue-analysis.md) |
-| Start a new browser instance with DevTools for your project. | [Opening DevTools and the embedded browser](./microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md) |
+| Start a new browser instance with DevTools for your project. | [Opening DevTools and the embedded DevTools browser](./microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md) |
 | Emulate different devices and see your project in different display modes. | [Device and state emulation](./microsoft-edge-devtools-extension/device-state-emulation.md) |
 | View the runtime DOM structure and layout of your page using the **Elements** tool. | [Opening source files from the Elements tool](./microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md) |
 | Analyze and change CSS styles of your project with live preview and live changes to your project's source files. | [Update .css files from within the Styles tool (CSS mirror editing)](./microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md) |
@@ -61,7 +56,7 @@ The extension allows you to:
 <!-- ====================================================================== -->
 ## Overview of the developer tools
 
-The following tools are included in the DevTools extension.  These links are for the Microsoft Edge browser DevTools main article about each tool.
+The following tools are included in the DevTools extension for Visual Studio Code.  The following articles are not specifically focused on the DevTools extension for Visual Studio Code, but are for the Microsoft Edge browser DevTools.
 
 | Tool | Purpose | Article |
 | --- | --- | --- |
@@ -74,7 +69,6 @@ The following tools are included in the DevTools extension.  These links are for
 | **Network request blocking** tool | Use the **Network request blocking** tool to test blocking network requests to a specified URL pattern and see how a webpage behaves. | [Network request blocking tool](../devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md) |
 | **Inspect** tool | Use the **Inspect** tool to see information about an item within a rendered webpage.  When the **Inspect** tool is active, you _hover_ over items in the webpage, and DevTools adds an information overlay and grid highlighting on the webpage. | [Analyze pages using the Inspect tool](../devtools-guide-chromium/css/inspect.md) |
 | **Device Emulation** | Use the **Device Emulation** tool, also called _Device Simulation Mode_ or _Device Mode_, to approximate how your page looks and responds on a mobile device. | [Emulate mobile devices (Device Emulation)](../devtools-guide-chromium/device-mode/index.md) |
-
 
 For the list of all tools that are in the Microsoft Edge browser version of DevTools, see [Overview of all tools](../devtools-guide-chromium/about-tools.md#overview-of-all-tools) in _About the list of tools_.
 

@@ -151,7 +151,8 @@ In many cases, you don't need a URL or a localhost server.  See [Step 3: Start D
 
 If your webpage uses certain APIs that require the webpage to be running on a web server, to use DevTools, you must start a local web server for testing.  If you don't serve out your project on a webserver, but only instead, you use local files, you can still use DevTools, with debugging ability, by right-clicking a local `.html` file.  Functionality of your app which specifically requires your app to be on a server won't work, and DevTools will have limited utility.
 
-If you installed Node.js and npm, as described above, `npx http-server` is a simple way to start a local web server:
+If you installed Node.js and npm, as described above, `npx http-server` is a simple way to start a local web server.  For information, see [http-server: a simple static HTTP server](https://www.npmjs.com/package/http-server).
+
 
 1. In Visual Studio Code, select **File** > **Open Folder** > open the directory that contains the `.html`, `.css`, and `.js` files for a webpage, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
 
@@ -160,7 +161,7 @@ If you installed Node.js and npm, as described above, `npx http-server` is a sim
    *  `\Demos\` is the GitHub repo that's used for examples in the Microsoft Edge Developer documentation.
    *  `\demo-to-do\` is one of the sample directories in the repo.
 
-1. In Visual Studio Code, select **View** > **Terminal**.
+1. In Visual Studio Code, select **View** > **Terminal**.  Or, to keep the web server running regardless of Visual Studio's state, open a command prompt outside of Visual Studio Code, such as `git bash`.
 
 1. `cd` into the the folder you want to serve via http.
 
@@ -170,7 +171,25 @@ If you installed Node.js and npm, as described above, `npx http-server` is a sim
    cd C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\
    ```
 
-1. Enter the command `npx http-server`.  A local webserver starts on port 8080.
+<!-- if you cd to 
+C:\Users\myusername\Documents\GitHub\Demos\
+you would then specify
+http://localhost:8080/demo-to-do/
+but it's fine usually to serve out a single sample dir
+but serving out the entire \Demos\ dir gives a useful dir listing at:
+   http://10.0.1.8:8080
+   http://127.0.0.1:8080
+-->
+
+   **Start the server (npx http-server):**<!-- make prominent/findable -->
+
+1. Enter the command `npx http-server`:
+
+   ```
+   npx http-server
+   ```
+
+   A local webserver starts on port 8080.
 
    You might receive a message like:
 
@@ -199,7 +218,7 @@ If you installed Node.js and npm, as described above, `npx http-server` is a sim
    Hit CTRL-C to stop the server
    ```
    
-   The displayed URLs are equivalent to [http://localhost](http://localhost).  For example, [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/).
+   The displayed URLs are equivalent to [http://localhost:8080/](http://localhost:8080/).
 
 Next, see [Get started using the DevTools extension for Visual Studio Code](./get-started.md) for a step-by-step walkthrough.
 
@@ -248,7 +267,7 @@ These detailed steps are specific to IIS, which is not cross-platform, and invol
 
    ![Demo files copied to server directory](./get-started-images/demo-copied-to-server-dir.png)
 
-1. In a web browser, go to [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/), or the equivalent location matching where you placed the `.html` file that you want to load later in the DevTools extension:
+1. In a web browser, go to [http://localhost:8080/](http://localhost:8080/), [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/), or the equivalent location matching where you placed the `.html` file that you want to load later in the DevTools extension:
 
    ![demo-to-do page served from localhost](./get-started-images/demo-to-do-page-from-localhost.png)
 

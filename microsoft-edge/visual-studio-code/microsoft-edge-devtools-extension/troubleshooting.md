@@ -13,11 +13,26 @@ Make sure to open DevTools in one of the supported ways or scenarios.  See [Get 
 
 
 <!-- ====================================================================== -->
+## Restarting DevTools
+
+One powerful way of restarting DevTools is to close and reopen the folder:
+
+1. In Visual Studio Code, select **File** > **Close Folder**.
+
+1. If you started a web server by using Terminal in Visual Studio Code, restart the web server, such as by running `npx http-server`.  For more information, see [Step 6: Set up a localhost server by using npx http-server](./install.md#step-6-set-up-a-localhost-server-by-using-npx-http-server) in _Installing the DevTools extension for Visual Studio Code_.  Or instead, you can start the web server from a command prompt outside of Visual Studio Code, so it keeps running.
+
+1. In Visual Studio Code, select **File** > **Open Recent**.
+
+Start DevTools
+
+
+
+<!-- ====================================================================== -->
 ## Error messages
 
 The solution for most error messages is to open DevTools in one of the recommended ways, and use DevTools to access local files.
 
-Suppose you click the **Launch Instance** button, then paste a localhost URL into the address bar, such as `http://localhost/demos/demo-to-do/`, and then in the Styles tab of the Elements tool, try to change a CSS value.  This way of opening and using DevTools is not fully supported and produces error messages such as:
+Suppose you click the **Launch Instance** button, then paste a localhost URL into the address bar, such as [http://localhost:8080/](http://localhost:8080/) or [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/), and then in the Styles tab of the Elements tool, try to change a CSS value.  This way of opening and using DevTools is not fully supported and produces error messages such as:
 
 *  **Error while mirroring css content to document.  Could not mirror css changes to document.  No workspace mapping was found.**
 

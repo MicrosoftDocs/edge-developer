@@ -127,7 +127,7 @@ That approach opens the following UI components in Visual Studio Code:
 *  The **Edge DevTools** tab.
 *  The **Edge DevTools: Browser** tab.
 *  The Debug toolbar.
-*  The **Run** (Debugger) sidebar, including the **Watch** pane.
+*  The **Run** (Debugger) Side Bar, including the **Watch** pane.
 *  The **Debug Console** at bottom of window.
 
 ![Tabs from right-clicking an HTML file in Explorer](./debugging-a-webpage-images/tabs-from-right-click-html-explorer.png)

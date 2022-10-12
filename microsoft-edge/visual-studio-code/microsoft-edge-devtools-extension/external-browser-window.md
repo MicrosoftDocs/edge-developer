@@ -9,7 +9,7 @@ ms.date: 10/06/2022
 ---
 # Using an external browser window
 
-By default, opening DevTools opens the embedded (headless) **Edge DevTools: Browser** tab, including a device emulation toolbar, in the Visual Studio Code window.
+By default, opening DevTools opens the embedded **Edge DevTools: Browser** tab, including a device emulation toolbar, in the Visual Studio Code window.  This tab is sometimes called a _screencast_ or a _headless browser_.
 
 As an alternative approach, an **external browser** approach, from within VS Code, launch the full Microsoft Edge browser window, and then go to your web application (or generate a `launch.json` file to specify the `.html` page to open).  This approach opens a separate Microsoft Edge window that's controlled by DevTools automation:
 
@@ -19,12 +19,15 @@ Visual Studio Code when external browser launched (and no Debug toolbar):
 
 ![Visual Studio Code when external browser launched (and no Debug toolbar)](./external-browser-window-images/vscode-when-external-browser.png)
 
-Note that there's no Debug toolbar when opening DevTools by clicking the **Launch Instance** button in the **Microsoft Edge Tools** sidebar/pane.  To turn on the Debug toolbar, paste an `.html` filepath or URL into the address bar of the browser, and then in Visual Studio Code, press `F5`, and then select **Microsoft Edge Tools**.<!-- todo: test/review -->
+Note that there's no Debug toolbar when opening DevTools by clicking the **Launch Instance** button in the **Microsoft Edge Tools** Side Bar.  To turn on the Debug toolbar, paste an `.html` filepath or URL into the address bar of the browser, and then in Visual Studio Code, press `F5`, and then select **Microsoft Edge Tools**.<!-- todo: test/review -->
 
 When you change settings, a quick way to restart is to select **File** > **Close Folder**, then select **File** > **Open Recent** > select a folder.
 
 If you change the settings for the extension so that it opens an external Microsoft Edge window, the automation-controlled external Microsoft Edge window opens when you click the **Launch Project** button.  But when you right-click an `.html` file, the **Edge DevTools: Browser** tab (the embedded browser) still opens rather than the external browser window.
 
+
+<!-- ====================================================================== -->
+## Opening an external Microsoft Edge browser window
 
 To open an external Microsoft Edge browser window, including the complete UI for Microsoft Edge (but without the UI features for Device Emulation):
 
@@ -60,8 +63,6 @@ To change or check the setting for which type of browser window to use:
 The **Edge DevTools: Browser** tab contains the embedded browser:
 
 ![Embedded browser](./external-browser-window-images/embedded-browser.png)
-
-
 
 
 <!-- ====================================================================== -->

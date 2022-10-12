@@ -801,7 +801,7 @@
               href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
               displayName: tutorial, demo to do
 
-            - name: Opening DevTools and the embedded browser
+            - name: Opening DevTools and the embedded DevTools browser
               href: visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md
               displayName: 
 

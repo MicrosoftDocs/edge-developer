@@ -15,21 +15,6 @@ The difference between the right-click>Open with Edge and the launch.json approa
 
 This is a step-by-step tutorial about opening and closing DevTools and using it to modify CSS and debug JavaScript.  Follow the steps here from top to bottom for a general introduction and to ensure that your machine is set up to use DevTools.
 
-This article uses the Demo To Do app from the Demos repo, which is used for Microsoft Edge Developer documentation.
-
-
-#### The two main approaches
-
-There are two different ways of using the DevTools extension:
-
-*  Right-click an `.html` file > **Open with Edge**.  For simple local development, without a web server.
-
-*  Generate a `launch.json` file then click **Launch Project**.  For more involved/advanced debugging use cases.
-
-There's also another way, that's prominent in the UI: 
-
-*  Click **Launch Instance**, paste a filepath or localhost URL in the address bar, and enter non-debug mode.  This is prominent in the UI, although limited, so you need to be familiar with this approach and we'll start with it.
-
 
 <!-- ====================================================================== -->
 ## Step 1: Install DevTools and prerequisites
@@ -38,9 +23,11 @@ There's also another way, that's prominent in the UI:
 
 
 <!-- ====================================================================== -->
-## Step 2: Start DevTools in non-debug mode by clicking Launch Instance
+## Step 2: Start DevTools by clicking the Launch Instance button
 
-Clicking the **Launch Instance** button is probably not the main way that you will open DevTools in practice, because it doesn't go directly to your file, and it doesn't open DevTools in Debug mode.  However, this approach is prominent in the UI, and you should be aware of this approach, its limitations, and how to close instances of DevTools that have been opened by clicking the **Launch Instance** button.
+This approach opens the DevTools tabs in non-debug mode and is useful when you don't want to use the Debug features of Visual Studio Code.
+
+Clicking the **Launch Instance** button doesn't go directly to your file; you have to paste a file path or URL.  This approach is prominent in the UI, and you need to know how to close instances of DevTools that have been opened this way.
 
 1. In Visual Studio, select **File** > **Open Folder**.  Open the `\Demos\demo-to-do\` folder of the Demos repo that you cloned, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
 
@@ -48,17 +35,19 @@ Clicking the **Launch Instance** button is probably not the main way that you wi
 
 1. Click the **Launch Instance** button.  The **Edge DevTools** tab opens, and the **Edge DevTools: Browser** tab opens, displaying the default, Success page by using a file path (not a localhost URL), such as `file:///C:/Users/myusername/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html`.
 
-   The Debug toolbar doesn't open, **Debug Console** doesn't open at bottom, and the **Run** sidebar with **Watch** pane doesn't open.  This indicates that Visual Studio Code is not in Debug mode.  In this state or mode, you can modify CSS of the local files, and you can enter local file paths or localhost URLs in the address bar and interact with local web app pages.
+   The Debug toolbar doesn't open, **Debug Console** doesn't open at bottom, and the **Run and Debug** Side Bar with **Watch** pane doesn't open.  This indicates that Visual Studio Code is not in Debug mode.  In this state or mode, you can modify CSS of the local files, and you can enter local file paths or localhost URLs in the address bar and interact with local web app pages.
 
 1. Activity Bar > **Explorer** > right-click `\demo-to-do\index.html` > **Copy Path**.
 
-1. In Visual Studio, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above, such as ``C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`.  Or, if your localhost server is running, paste a localhost URL, such as **http://localhost/demos/demo-to-do/**.  The Demo To Do app opens.
+1. In Visual Studio, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above, such as ``C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`.  Or, if your localhost server is running, paste a localhost URL, such as [http://localhost:8080/](http://localhost:8080/) or [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/).  The Demo To Do app opens.
 
 1. In the demo app, enter a task, such as **test**.
 
 1. In the **Elements** tool, in the **Styles** tab, change a CSS value, such as: click the point size in `body { font-size: 11pt;}` and then change the value.  The corresponding `.css` file in the folder that you opened opens and it is automatically edited to match your changes made in the **Styles** tab (but is not saved).
 
    ![Launch Instance > filepath > non-debug mode](./get-started-images/launch-instance-filepath-non-debug-mode.png)
+
+   **Close DevTools:**
 
 1. In the **Edge DevTools** tab, click **Close** (**x**).
 
@@ -72,11 +61,11 @@ Clicking the **Launch Instance** button is probably not the main way that you wi
 
 
 <!-- ====================================================================== -->
-## Step 3: Start DevTools in debug mode by right-clicking an HTML file
+## Step 3: Start DevTools by right-clicking an HTML file
 
 <!-- the equivalent section in Opening is more general than this section, which uses Demos repo -->
 
-Right-clicking an HTML file in VS Code's Explorer is the main way to open DevTools when your webpage doesn't require running on a web server.  We'll demonstrate by opening the Demo To Do web app.
+Right-clicking an HTML file in Visual Studio Code's **Explorer** is the main way to open DevTools when your webpage doesn't require running on a web server.  We'll demonstrate by opening the Demo To Do web app.
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
@@ -130,7 +119,7 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 
    ![Debugging the demo app](./get-started-images/debugging-the-demo-app.png)
 
-1. If the **Run** sidebar isn't displayed, select **View** > **Run**.  The **Run** sidebar in Visual Studio Code includes the **Watch** pane and other debugger panes.
+1. If the **Run and Debug** Side Bar isn't displayed, select **View** > **Run**.  The **Run and Debug** Side Bar includes the **Watch** pane and other debugger panes.
 
 1. In the demo app rendered in the **Edge DevTools: Browser** tab, enter a task, such as **test**.  The debugger of Visual Studio Code pauses at the breakpoint in the `to-do.js` file:
 
@@ -150,11 +139,9 @@ Continue the tutorial steps below.
 
 
 <!-- ====================================================================== -->
-## Step 6: Start DevTools in debug mode by using a localhost URL
+## Step 6: Start DevTools by clicking the Launch Project button
 
-<!-- the equivalent section in Opening is more general, even if it uses the specific example -->
-
-Next, we'll use the Demo Todo app to demonstrate the **Launch Project** button after pointing that button to a localhost URL such as `http://localhost/demos/demo-to-do/`.  As before, this starts DevTools in debug mode.  This is the main way to open DevTools when your webpage requires running on a web server.  As a preliminary step, we'll creating a `launch.json` file and edit the URL in it to point to localhost serving out the Demo Todo example.
+Next, we'll use the Demo Todo app to demonstrate the **Launch Project** button after pointing that button to a localhost URL such as [http://localhost:8080/](http://localhost:8080/) or [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/).  As before, this starts DevTools in debug mode.  This is the main way to open DevTools when your webpage requires running on a web server.  As a preliminary step, we'll creating a `launch.json` file and edit the URL in it to point to localhost serving out the Demo Todo example.
 
 You might not need to use this approach.  In many cases, right-clicking an HTML file works, for many APIs.  Many webpages require this approach, so here are specific steps you can follow.
 
@@ -162,7 +149,7 @@ You might not need to use this approach.  In many cases, right-clicking an HTML 
 <!-- ====================================================================== -->
 ## Step 7: Start the web server
 
-This section is in support of the section "Start DevTools in debug mode by using a localhost URL".
+This section is in support of clicking the **Launch Project** button.
 
 1. Set up and start a web server, serving out the demo-to-do app from the Demos repo.  To do this, see [Step 6: Set up a localhost server by using npx http-server](./install.md#step-6-set-up-a-localhost-server-by-using-npx-http-server) in _Installing the DevTools extension for Visual Studio Code_.  The present section is similar but more specifically focused on the Demo To Do app.
 
@@ -178,6 +165,10 @@ This section is in support of the section "Start DevTools in debug mode by using
 
 1. Enter the command `npx http-server`.  A local webserver starts on port 8080.
 
+   ```
+   npx http-server
+   ```
+   
    Information about the server and localhost URL is displayed, such as:
 
    ```
@@ -189,14 +180,14 @@ This section is in support of the section "Start DevTools in debug mode by using
    Hit CTRL-C to stop the server
    ```
 
-   The displayed URLs are equivalent to `http://localhost`.
+   The displayed URLs are equivalent to `http://localhost` or `http://localhost:8080`
    <!-- http://localhost/demos/demo-to-do/ -->
 
 
 <!-- ====================================================================== -->
 ## Step 8: Set up launch.json
 
-This section is in support of the section "Start DevTools in debug mode by using a localhost URL".
+This section is in support of clicking the **Launch Project** button.
 
    1. In Visual Studio, select **File** > **Open Folder**.  Select your project directory that contains `index.html` for the cloned demo-to-do sample in the Demos repo, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
    
@@ -234,8 +225,6 @@ This section is in support of the section "Start DevTools in debug mode by using
 
 <!-- ====================================================================== -->
 ## Step 9: Click the Launch Project button
-
-This section is in support of the section "Start DevTools in debug mode by using a localhost URL".
 
 1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens, now containing a **Launch Project** button but not a **Generate launch.json file** button:
 

@@ -1,91 +1,196 @@
 ---
-title: Opening DevTools and the embedded browser
-description: Opening a browser instance in the Microsoft Edge Developer Tools extension for Visual Studio Code.
+title: Opening DevTools and the embedded DevTools browser
+description: "Opening the Edge DevTools tab and the the Edge DevTools: Browser tab (an embedded browser) in the Microsoft Edge Developer Tools extension for Visual Studio Code."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/06/2022
+ms.date: 10/11/2022
 ---
-# Opening DevTools and the embedded browser
+# Opening DevTools and the embedded DevTools browser
 
-<!-- Getstart only covers the two main ways of entering debug mode: right-click and Launch Project, and does so in a tour approach of "do all steps using the Demos.  this page covers all ways and is not an end-to-end article/tour.  Only use 1 sections at a time. -->
-
+<!-- shortest possible names of the approaches -->
 There are several ways to open the **DevTools** tab and the **Edge DevTools: Browser** tab:
+*  Click the **Launch Instance** button.
+*  Right-click an `.html` file.
+*  Click the **Launch Project** button.
 
-*  Open a folder, and then right-click an HTML file.  DevTools opens in Debug mode.
-
-*  Open a folder that contains an HTML file.  Click the **Launch Instance** button, and then in the address bar of the **Edge DevTools: Browser** tab, enter enter a file path that corresponds to the opened folder (`C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`), or enter a localhost URL that corresponds to the opened folder (**http://localhost/demos/demo-to-do/**).  DevTools opens in non-Debug mode; the Debug toolbar isn't open.
-
-*  Open a folder that contains an HTML file.  Click the **Generate launch.json** button, then add a localhost URL in the `.json` file.  Click the **Launch Project** button.  DevTools opens in Debug mode.
-
-For detailed steps, see [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
-
-![Embedded browser instance in Visual Studio Code](./open-devtools-and-embedded-browser-images/embedded-browser.png)
+These approaches are described below.
 
 
-If you open DevTools by right-clicking a `.html` file in Explorer in Visual Studio Code, you always get the embedded browser, rather than an external browser window.
+<!-- ====================================================================== -->
+## Opening DevTools by clicking the Launch Instance button
+
+This approach opens the DevTools tabs in non-debug mode and is useful when you don't want the Debug toolbar.
+
+These steps assume no folder is open in Visual Studio Code, and the folder you are opening doesn't have a `launch.json` file.
+
+1. Open Visual Studio Code.
+
+1. **File** > **Open Folder** > select a folder.  For example, `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`
+
+1. In the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools button](./open-devtools-and-embedded-browser-images/microsoft-edge-tools-icon.png)) button, and then click the **Launch Instance** button.
+
+   ![Microsoft Edge DevTools for Visual Studio Code extension](./open-devtools-and-embedded-browser-images/extension-icon.png)
+
+   If there's a **Launch Project** button rather than a **Launch Instance** button, that indicates that the folder contains a `launch.json` file.  Inspect what URL is specified in the `launch.json` file and consider clicking **Launch Project**, as described in [Opening DevTools by clicking the Launch Project button](#opening-devtools-by-clicking-the-launch-project-button).
+
+   ![Clicking the Launch Instance button](./open-devtools-and-embedded-browser-images/devtools-extension-new-browser-instance.png)
+
+   *  The **Edge DevTools** tab opens, initially containing information about the Success page.
+   *  The **Edge DevTools: Browser tab** (the embedded browser) opens, initially showing the Success page.
+   *  The Debug toolbar and debug UI of Visual Studio Code doesn't open.
+   *  In the **Microsoft Edge Tools** pane, the **Targets** section opens, listing a target, and the **Launch** button is removed.
+
+1. In the **Edge DevTools: Browser** tab, in the address bar, paste a file path or a localhost URL, that matches the folder that's open in Visual Studio Code.
+
+   If you want to obtain a file path: in Visual Studio Code > Activity Bar > **Explorer** (![Explorer button](./open-devtools-and-embedded-browser-images/explorer-icon.png)) > right-click an `.html` file > **Copy Path**.
+
+   If you want to paste a URL, typical examples are:
+   * [http://localhost:8080](http://localhost:8080)
+   * [http://127.0.0.1:8080](http://127.0.0.1:8080)
+   * [http://10.0.1.8:8080](http://10.0.1.8:8080)
+   * [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/) if you started the server from the root directory of the Demos repo.
+
+   Similar URLs are shown on the command line when you enter `npx http-server`.
+
+   The webpage you specified is displayed in the **Edge DevTools: Browser tab** (the embedded browser).  The **Edge DevTools** tab displays information about the webpage.
 
 
-#### By right-clicking an HTML file in the Explorer
+#### Closing DevTools
+
+To close DevTools after opening it by clicking the **Launch Instance** button:
+
+1. In the Activity Bar, click the **Microsoft Edge Tools** (![the Microsoft Edge Tools button](./open-devtools-and-embedded-browser-images/microsoft-edge-tools-icon.png)) button.
+
+1. In the **Targets**, hover to the right of the target instance, and then click **Close instance** (**x**):
+
+   ![Closing DevTools if opened by clicking the Launch Instance button](./open-devtools-and-embedded-browser-images/close-devtools-opened-by-launch-instance.png)
+
+   The **Launch Instance** button appears, indicating that the DevTools instances are closed.
+
+
+<!-- ====================================================================== -->
+## Opening DevTools by right-clicking an HTML file
+
+This approach opens the DevTools tabs in debug mode and is recommended, unless the webpage requires running on a web server, as with certain APIs.
 
 To open DevTools and the embedded browser, along with the Debug toolbar for an HTML file on your hard drive:
 
-1. In Visual Studio Code, select **Activity Bar** > **Open Folder** (if no folder is open yet) > **Explorer**.
+1. In Visual Studio Code, select **Activity Bar** > **Explorer** (![the Explorer button](./open-devtools-and-embedded-browser-images/explorer-icon.png)) > **Open Folder**.  Or, select **File** > **Open Recent**.
 
-1. Right-click an HTML file, select **Open with Edge**, and then select **Open Browser** or **Open Browser with DevTools**:
+1. Open a folder that contains web app source files.
+
+1. In Visual Studio Code, in **Explorer**, right-click an `.html` file, select **Open with Edge**, and then select **Open Browser with DevTools**:
 
    ![Right-click an HTML file in the Explorer to open it with Edge with or without DevTools](./open-devtools-and-embedded-browser-images/context-menu-open-in-code.png)
 
+   DevTools opens:
+
+   ![Embedded browser instance in Visual Studio Code](./open-devtools-and-embedded-browser-images/embedded-browser.png)
+
    The following components open in Visual Studio Code:
    *  The **Edge DevTools** tab, including the **Elements** tab and other tool tabs.
-   *  The **Edge DevTools: Browser** tab (the headless, embedded web browser), including UI features for Device Emulation.
+   *  The **Edge DevTools: Browser** tab.
    *  The Debug toolbar.
    *  The Debug Console.
-   *  You can select **View** > **Run**, to open the **Run and Debug** pane, which opens via some approaches, and which appears when you hit a breakpoint.
+   *  The **View** > **Run** (**Run and Debug**) pane.
    *  In this approach, an instance is not listed in **Activity Bar** > **Microsoft Edge Tools** > **Targets**.
 
    ![The DevTools components from selecting Open Browser with DevTools](./open-devtools-and-embedded-browser-images/devtools-extension-v211.png)
 
+Use the **Explorer** Side Bar, from the Activity Bar, to open a `.js` file during debugging a webpage.
 
-#### Opening the embedded browser with Device Emulation, without the DevTools tab
+The **Edge DevTools: Browser** tab includes a Device Emulation toolbar.  This tab contains an embedded web browser with DevTools features.  This browser is sometimes called a _screencast_ or a _headless browser_ for DevTools.
 
-1. Select Activity Bar > **Explorer** > **Open Folder** (if not already opened) > right-click an HTML file, select **Open with Edge**, and then select **Open Browser**.
-    
+
+#### Closing DevTools
+
+To close DevTools after opening it by right-clicking an `.html` file, in the Debug toolbar, click the **Stop** (`Shift`+`F5`) button:
+
+   ![Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
+
+   Or, on the **Run** menu, select **Stop Debugging**.  Or, close the two DevTools tabs.  The Debug toolbar closes.
+
 
 <!-- ====================================================================== -->
-## By clicking the Launch Instance button
+## Opening DevTools by clicking the Launch Project button
 
-To open DevTools and the embedded or external browser, for a URL, in non-Debug mode:
+This approach opens the DevTools tabs in debug mode, and is recommended if the webpage requires running on a web server as with certain APIs.
 
-1. Click the **Microsoft Edge Tools** icon in the **Activity Bar**.  This launches an instance of Microsoft Edge.
+Summary:
+1. Open a local folder containing web app source files.
+1. Click the **Generate launch.json** button.
+1. Add a localhost URL in the `.json` file.
+1. Click the **Launch Project** button.
 
-1. Click the **Launch Instance** button:
+These steps assume you are running a localhost web server, as described in [Step 6: Set up a localhost server by using npx http-server](./install.md#step-6-set-up-a-localhost-server-by-using-npx-http-server) in _Installing the DevTools extension for Visual Studio Code_.
 
-   ![Microsoft Edge DevTools for Visual Studio Code extension](./open-devtools-and-embedded-browser-images/extension-icon.png)
+To open DevTools by clicking the **Launch Project** button:
 
-1. Enter a URL or file path into the address bar.
 
-   Or, instead of manually entering a URL or file path into the address bar, you can generate a `launch.json` file to automate the debugging workflow.
+   **Open a local folder containing web app source files:**
 
-   The following tabs and UI components open in Visual Studio Code:
+1. In Visual Studio, select **File** > **Open Folder**.  Select your project directory that contains a `.html` file, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
+   
+1. In the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./open-devtools-and-embedded-browser-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
 
-   *  The **Edge DevTools** tab, which contains DevTools tools such as the **Elements** tool.  You can right-click this tab, click **Split Left** or **Split Right**, and then drag this tab to another pane.
+   *  If the folder doesn't already contain a `.vscode` directory that contains a `launch.json file`, the **Microsoft Edge Tools** Side Bar contains a **Launch Instance** button and a **Generate launch.json** button.
 
-   *  A browser preview window (headless browser; the **Edge DevTools: Browser** tab/pane).  You can right-click this tab, click **Split Left** or **Split Right**, and then drag this tab to another pane.
+   *  If the **Microsoft Edge Tools** Side Bar contains a **Launch Project** button, the opened folder's `.vscode` directory contains a `launch.json` file and you may want to inspect or change the `url` string in that file, described below.
 
-   *  In some scenarios, the Debug toolbar also opens.  You can drag it to move it.
+1. Click the **Generate launch.json** button:
 
-   *  In the Microsoft Edge Tools pane, the **Targets** section opens, listing a target, and the blue **Launch** buttons are removed.  During debugging, the **Watch** pane opens instead of the **Microsoft Edge Tools** pane.
+   ![The 'Generate launch.json' button of the DevTools extension](./get-started-images/launch-instance-button.png)
 
-![Select Launch Instance to open the browser in Visual Studio Code](./open-devtools-and-embedded-browser-images/devtools-extension-new-browser-instance.png)
+   The new `launch.json` file opens.
 
-Note that the Debug toolbar isn't open.  You can select **View** > **Run**, or **Run** > **Start Debugging**.
-<!-- todo: how to open the Debug toolbar? -->
+1. In several places in the `launch.json` file, on each of the `"url"` lines, scroll to the right, and note the comment, "Provide your project's url to finish configuring":
 
-Typically you use the **Explorer** pane, from the Activity Bar, to open a `.js` file during debugging a webpage, as shown in the above layout.
+   ```js
+   "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", 
+   // Provide your project's url to finish configuring
+   ```
 
-The **Launch Instance** button opens the headless browser with Device Emulation features in Visual Studio Code (this is the default setting), or launches an external browser window that's automation-controlled, depending on the **Settings** > **Headless** checkbox.  See [Using an external browser window](./external-browser-window.md).
+   Typical examples:
+   * [http://localhost:8080](http://localhost:8080)
+   * [http://127.0.0.1:8080](http://127.0.0.1:8080)
+   * [http://10.0.1.8:8080](http://10.0.1.8:8080)
+   * [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/) if you started the server from the root directory of the Demos repo.
+
+   Similar URLs are shown on the command line when you enter `npx http-server`.
+
+1. Paste the path inside the quoted path string in one of the `"url"` strings.  For example:
+
+   ```js
+   "url": "http://localhost/demo-to-do/", // Provide your project's url to finish configuring
+   ```
+
+1. Copy and paste the modified URL line to the other places in the `launch.json` file.  To modify all instances at the same time, you can copy an updated URL string, then select an instance of the initial URL string, press `Ctrl`+`Shift`+`L` to select all instances, and then paste the updated string.
+
+1. Save the `launch.json` file.
+
+
+   **Click the Launch Project button:**
+
+1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens, now containing a **Launch Project** button (instead of a **Launch Instance** button), and no longer contains a **Generate launch.json file** button:
+
+   ![Targets pane when a launch.json file exists](./get-started-images/targets-pane-when-launch-json-exists.png)
+
+1. Click the **Launch Project** button.
+
+   The **Edge DevTools** tab and the **Edge DevTools: Browser** tab open in separate panes, showing the web app URL that's specified in `launch.json`:
+
+   ![The Demo To Do web app running in the Edge DevTools: Browser tab](./get-started-images/demo-app-running-in-extension-browser.png)
+
+
+#### Closing DevTools
+
+To close DevTools after opening it by clicking the **Launch Project** button, in the Debug toolbar, click the **Stop** (`Shift`+`F5`) button:
+
+   ![The Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
+
+   Or, on the **Run** menu, select **Stop Debugging**.  Or, close the two DevTools tabs.  The Debug toolbar closes.
 
 
 <!-- ====================================================================== -->
@@ -101,5 +206,4 @@ If you paste a non-local URL, such as `https://microsoftedge.github.io/Demos/dem
 <!-- ====================================================================== -->
 ## See also
 
-* [Using an external browser window](./external-browser-window.md)
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)

@@ -27,4 +27,5 @@ Use the **Network** tool to:
 <!-- ====================================================================== -->
 ## See also
 
+* [Inspect network activity](../../devtools-guide-chromium/network/index.md) - article for browser-based DevTools.
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
