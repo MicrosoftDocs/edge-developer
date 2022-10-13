@@ -19,9 +19,15 @@ This is a step-by-step tutorial about opening and closing DevTools and using it 
 
 
 <!-- ====================================================================== -->
-## Step 2: Start DevTools by clicking the Launch Instance button for the Success page
+## Step 2: Start DevTools by clicking the Launch Instance button for the default page
 
-This approach opens the DevTools tabs in non-debug mode and is useful when you don't want to use the Debug features of Visual Studio Code.
+This approach opens the DevTools tabs in non-debug mode and is useful when you don't want to use the Debug features of Visual Studio Code.  Supported scenarios for this way of opening DevTools:
+
+*  You don't have to have a folder open in Visual Studio Code if you use a file path; you can still use CSS mirror editing to edit your CSS source files.
+
+*  If you don't have a folder open and you want to inspect a page that's specified using a URL.
+
+*  If you don't have a folder open and you want to experiment with changing CSS on a page that's specified using a URL, without using CSS mirror editing.
 
 Clicking the **Launch Instance** button doesn't go directly to your file; you have to paste a file path or URL.  This approach is prominent in the UI, and you need to know how to close instances of DevTools that have been opened this way.  You should also know how to edit the Success page, so you can get started.
 
@@ -116,11 +122,13 @@ Clicking the **Launch Instance** button doesn't go directly to your file; you ha
 
 1. In Visual Studio, select **File** > **Open Folder**.  Open the `\Demos\demo-to-do\` folder of the Demos repo that you cloned, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
 
+1. If prompted, click the **Yes, I trust the authors** button.  Aside from granting trust, the **Launch Instance** approach doesn't actually require opening a folder, if you specify a file path rather than a URL in the DevTools browser.
+
 1. Activity Bar > **Explorer** > right-click `\demo-to-do\index.html` > **Copy Path**.
 
-1. In Visual Studio, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above, such as ``C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`.  The Demo To Do app opens.
+1. In Visual Studio, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above, such as ``C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`.  The Demo To Do app opens.  In the address bar, the `file:///` prefix is added and Windows backslashes are changed to forward slashes; for example: `file:///C:/Users/myusername/Documents/GitHub/Demos/demo-to-do/index.html`.
 
-   Or, if your localhost server is running, paste a localhost URL, such as [http://localhost:8080/](http://localhost:8080/) or [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/).
+   Or, if your localhost server is running, paste a localhost URL, such as [http://localhost:8080/](http://localhost:8080/) or [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/).  If you want to use CSS mirror editing to edit your source files, you'll need to open a folder in Visual Studio Code; otherwise, clear the **CSS mirror editing** checkbox in the **Styles** tab in the **Elements** tool in the **Edge DevTools** tab.  Clearing the checkbox prevents error messages about mapping and mirror editing when you experiment with changing CSS in DevTools and haven't provided a CSS source file for DevTools.
 
    Or, paste the github.io server URL, [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 

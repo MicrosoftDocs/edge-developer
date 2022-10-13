@@ -115,7 +115,7 @@ For the list of all tools that are in the Microsoft Edge browser version of DevT
 ## See also
 
 * [Get started using the DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension/get-started.md)
-* [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md)
+* [Opening DevTools and the DevTools browser](./microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md)
 
 **External pages:**
 
