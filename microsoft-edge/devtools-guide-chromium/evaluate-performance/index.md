@@ -112,7 +112,7 @@ Once you have a recording of the page's performance, you can assess the page's p
 
 The main metric for measuring the performance of any animation is frames per second (FPS).  Users are happy when animations run at 60 FPS.
 
-1. The **CPU** chart is displayed.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The fact that the **CPU** chart is full of color means that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that you should find ways to do less work.
+1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that you should find ways to do less work.
 
    ![The CPU chart and Summary panel.](../media/evaluate-performance-performance-cpu-chart.msft.png)
 
