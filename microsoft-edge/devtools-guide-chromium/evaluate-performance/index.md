@@ -116,7 +116,7 @@ The main metric for measuring the performance of any animation is frames per sec
 
    ![The CPU chart and Summary panel.](../media/evaluate-performance-performance-cpu-chart.msft.png)
 
-1. Hover over the **CPU**, or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of animations.
+1. Hover over the **CPU** or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of the performance recording.
 
    ![View a screenshot of the page around the 2500ms mark of the recording.](../media/evaluate-performance-performance-screenshot-hover.msft.png)
 
