@@ -1,5 +1,5 @@
 ---
-title: Opening DevTools and the embedded DevTools browser
+title: Opening DevTools and the DevTools browser
 description: "Opening the Edge DevTools tab and the the Edge DevTools: Browser tab (an embedded browser) in the Microsoft Edge Developer Tools extension for Visual Studio Code."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/11/2022
 ---
-# Opening DevTools and the embedded DevTools browser
+# Opening DevTools and the DevTools browser
 
 There are several ways to open the **DevTools** tab and the **Edge DevTools: Browser** tab:
 
@@ -17,7 +17,7 @@ There are several ways to open the **DevTools** tab and the **Edge DevTools: Bro
 | Right-click an `.html` file. | No `launch.json` file is used.  Opens DevTools in Debug mode.  Use this approach if you want to debug, and your web app can run from the file system instead of a web server. |
 | Click the **Launch Project** button. | A `launch.json` file is used.  Opens DevTools in Debug mode.  Use this approach if you want to debug, and your web app uses APIs that require running it on a web server. |
 
-These approaches are described below.
+These approaches are described below.  For detailed steps using the Demos repo, see [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
 
 
 <!-- ====================================================================== -->
@@ -25,11 +25,13 @@ These approaches are described below.
 
 This approach opens the DevTools tabs in non-debug mode and is useful when you don't want the Debug toolbar.
 
-These steps assume no folder is open in Visual Studio Code, and the folder you are opening doesn't have a `launch.json` file.
+These steps assume that initially, no folder is open in Visual Studio Code, and the folder you are opening doesn't have a `launch.json` file.
 
 1. Open Visual Studio Code.
 
-1. **File** > **Open Folder** > select a folder.  For example, `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`
+1. Select **File** > **Open Folder** or **Open Recent**, and then select a folder.  Or, select Activity Bar > **Explorer** > **Open Folder**, and then select a folder.  For example, `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`
+
+   To use all the DevTools features, open a folder that contains sources files that match the page that's displayed in the DevTools browser.
 
 1. In the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools button](./open-devtools-and-embedded-browser-images/microsoft-edge-tools-icon.png)) button, and then click the **Launch Instance** button.
 
@@ -200,13 +202,50 @@ To close DevTools after opening it by clicking the **Launch Project** button, in
 
 
 <!-- ====================================================================== -->
-## Local vs. remote URLs
+## Mapping URL files to the opened folder
 
-In the address bar of the **Edge DevTools: Browser** tab, you can paste a local URL and get read/write DevTools functionality, or paste a remote URL and get read-only functionality.
+If DevTools is able to correlate and establish the workspace mapping between the files downloaded from the server and the files in the folder that you opened, DevTools provides its full functionality.
 
-If you paste a non-local URL, such as `https://microsoftedge.github.io/Demos/demo-to-do/`, you get browser functionality in the **Edge DevTools: Browser** tab, but not full DevTools functionality.  You can interact with the page and see it in different devices and rendering states from the lower bar.  You can also inspect the CSS and HTML, but if you try to change the page, you get an error, such as **Error while mirroring**:
+If DevTools can't map the files in the **Edge DevTools: Browser** tab to the files in the folder that you opened in Visual Studio Code's Explorer, you can inspect webpages, but you can't change them, such as changing CSS values in the **Sources** tab of the **Elements** tool in the **Edge DevTools** tab.
 
-![Limited CSS editing ability for a remote URL](./open-devtools-and-embedded-browser-images/limited-css-edit-ability-for-remote-url.png)
+For example:
+
+1. Open a folder that's in your local copy of the Demos repo, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`, as described in [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
+
+1. Open DevTools, as described above.
+
+1. In the **Edge DevTools: Browser** tab, in the address bar, paste a remote `github.io` URL, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
+
+   The files at that address actually reside as source files at GitHub at [https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do), not on your drive.
+
+   You are now able to change CSS values in the **Elements** tool, because in Visual Studio Code's **Explorer**, a folder is open that contains source files that DevTools is able to map to the downloaded resource files constituting the webpage:
+
+   ![Able to change CSS values if a mappable folder is open](./open-devtools-and-embedded-browser-images/edit-css-when-folder-opened.png)
+
+   Next, try changing CSS without a folder opened:
+
+1. Select **File** > **Close Folder**.
+
+1. Start DevTools by clicking the **Launch Instance** button, as described above.
+
+1. In the **Edge DevTools: Browser** tab, in the address bar, paste a remote `github.io` URL, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
+
+   Now that the folder containing source files is closed, if you try to change CSS values in the **Elements** tool, you get a DevTools error message.  You can inspect webpages, but not edit them.  You can interact with the page and see it in different devices and rendering states by using the Device Emulation toolbar at the bottom of the **Edge DevTools: Browser** tab.  You can also inspect the CSS and HTML.  But if you try to change the page, you get an error, such as **Error while mirroring**:
+
+   ![Explorer when unable to change CSS values if a mappable folder isn't open](./open-devtools-and-embedded-browser-images/edit-css-when-no-folder-opened.png)
+
+   As another perspective on that scenario, here is the **Microsoft Edge Tools** Side Bar when the **Launch Instance** button was clicked, when viewing a URL and a folder isn't open that contains source files that match the URL's webpage resources:
+
+   ![The Microsoft Edge Tools Side Bar when viewing a URL](./open-devtools-and-embedded-browser-images/limited-css-edit-ability-for-remote-url.png)
+
+
+#### URLs, file paths, and opening a matching folder
+
+In some cases, behavior of DevTools is different for file paths than for URLs.
+
+*  If you enter a file path in the address bar of the DevTools browser, and you edit the CSS in DevTools, the browser knows where to find the source files.  You might need to open that folder to grant trust to for CSS mirror editing.
+
+*  If you enter a URL in the address bar of the DevTools browser, the browser knows where to find the downloaded copy of the source files.  You might need to open a folder in Visual Studio Code to edit CSS files or to grant trust to for CSS mirror editing, if you change the CSS using DevTools.
 
 
 <!-- ====================================================================== -->

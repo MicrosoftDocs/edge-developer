@@ -9,7 +9,9 @@ ms.date: 10/06/2022
 ---
 # Troubleshooting the DevTools extension
 
-Make sure to open DevTools in one of the supported ways or scenarios.  Make sure you open a folder that contains source files for the webpage that you are inspecting with DevTools.  See [Opening DevTools and the embedded DevTools browser](./open-devtools-and-embedded-browser.md).
+* Make sure to open DevTools in one of the supported ways or scenarios.  See [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
+
+* Make sure you open a folder that contains source files for the webpage that you are inspecting with DevTools.  See [Mapping URL files to the opened folder](./open-devtools-and-embedded-browser.md#mapping-url-files-to-the-opened-folder) in _Opening DevTools and the DevTools browser_.
 
 
 <!-- ====================================================================== -->
@@ -25,9 +27,29 @@ A powerful way of restarting DevTools is to close and reopen the folder:
 
 
 <!-- ====================================================================== -->
+## Closing all instances of DevTools
+
+To reset the state of DevTools, close all instances of DevTools.  Make sure the **Launch Instance** button is shown in Visual Studio Code > Activity Bar > **Microsoft Edge Tools** Side Bar.  That indicates that no instance of DevTools is running.
+
+If necessary, close all Visual Studio Code instances, then open Visual Studio Code, and make sure the **Launch Instance** button is shown in Activity Bar > **Microsoft Edge Tools** Side Bar.
+
+
+<!-- ====================================================================== -->
 ## Error messages
 
-The solution for most error messages is to open DevTools in one of the recommended ways, and use DevTools to access local files.
+The solution for most error messages is to open DevTools in one of the recommended ways.  Make sure a folder is open that contains webpage source files that DevTools can map to the file path or URL that the DevTools browser is using.
+
+The DevTools browser uses the URL or file path that you specify any of the various ways:
+
+| Way of opening DevTools | Where the file path or URL is specified |
+|---|---|
+| Click the **Launch Instance** button. | The URL or file path that you specify in the DevTools browser's address bar. |
+| Right-click an `.html` file. | The path of the `.html` file that you right-click. |
+| Click the **Launch Project** button. | The URL or file path that you specify in `launch.json`. |
+
+If you enter a different URL or file path in the address bar of the DevTools browser, for DevTools to provide its full functionality, you must also open a folder that contains files that match the webpage (file path or URL) that you specify in the DevTools browser.
+
+<!-- todo: when you nav from one demo page to another does addr bar chg? -->
 
 Suppose you click the **Launch Instance** button, then paste a localhost URL into the address bar, such as [http://localhost:8080/](http://localhost:8080/) or [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/), but you don't have the local source files folder open.  Then in the **Styles** tab of the Elements tool, try to change a CSS value.  This way of opening and using DevTools is not fully supported and produces error messages such as:
 
@@ -49,7 +71,27 @@ If you get errors while trying to point to a file path, instead of using a `laun
 
 ![Could not attach to main target](./troubleshooting-images/could-not-attach-main-target.png)
 
-See [Opening DevTools and the embedded DevTools browser](./open-devtools-and-embedded-browser.md).
+See [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
+
+
+<!-- ====================================================================== -->
+## Deleting or re-creating launch.json
+
+In addition to closing a reopening a folder, if you want to reset a project to use with DevTools, you can delete and optionally re-create `launch.json`.  `launch.json` defines debug configurations.
+
+The following `launch.json` file is too short for the DevTools extension.  It was created by Visual Studio Code without using the DevTools extension.  The Demos repo doesn't have `launch.json` in [demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do), so you might want to remove the file:
+
+![Removing an incorrect launch.json file](./troubleshooting-images/wrong-launch-json.png)
+
+To re-create a fresh `launch.json` file for DevTools:
+
+1. Make a backup copy of the `launch.json` file.
+
+1. In Visual Studio Code > Activity Bar > **Explorer**, right-click `launch.json` > **Delete**.
+
+   Activity Bar > **Microsoft Edge Tools** now shows a **Launch Instance** button and a **Generate launch.json** button.
+
+1. If you want use a `launch.json` file for DevTools, make sure you have the desired folder open in Visual Studio Code > Activity Bar > **Explorer**, and then click the **Generate launch.json** button.  See [Opening DevTools by clicking the Launch Project button](./open-devtools-and-embedded-browser.md#opening-devtools-by-clicking-the-launch-project-button) in _Opening DevTools and the DevTools browser_.
 
 
 <!-- ====================================================================== -->
@@ -57,3 +99,4 @@ See [Opening DevTools and the embedded DevTools browser](./open-devtools-and-emb
 
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md)

@@ -9,7 +9,7 @@ ms.date: 10/06/2022
 ---
 # Debugging a webpage
 
-To open DevTools in Visual Studio Code in Debug mode, right-click an `.html` file or click the **Launch Project** button, as described in [Opening DevTools and the embedded DevTools browser](./open-devtools-and-embedded-browser.md).
+To open DevTools in Visual Studio Code in Debug mode, right-click an `.html` file or click the **Launch Project** button, as described in [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
 
 ![Tabs opened from right-clicking an .html file in Explorer](./debugging-a-webpage-images/tabs-from-right-click-html-explorer.png)
 
@@ -19,6 +19,8 @@ When you open DevTools in Visual Studio Code in Debug mode, the following UI com
 *  The Debug toolbar.
 *  The **Run** (Debugger) Side Bar, including the **Watch** pane.
 *  The **Debug Console** at bottom of window.
+
+For a step-by-step example, see [Step 6: Step through JavaScript code in the Debugger](./get-started.md#step-6-step-through-javascript-code-in-the-debugger) in _Get started using the DevTools extension for Visual Studio Code_.
 
 
 <!-- ====================================================================== -->
@@ -65,11 +67,13 @@ To debug your project, you might want to change the default page that opens in M
 
 1. Select your project folder with the new default page to display when you begin debugging in Visual Studio Code.
 
-   The first time you open a folder, you must confirm that you trust the authors of files in this folder.  You can also select the checkbox **Trust the authors of all files in the parent folder**:
+   The first time you open a folder, you must confirm that you trust the authors of files in this folder:
 
    ![Do you trust the authors in the files of this folder?](./debugging-a-webpage-images/trust.png)
 
-   The first time you complete this process, you must also select **Microsoft Edge Tools** again.
+1. Optionally select the checkbox **Trust the authors of all files in the parent folder**, and then click the **Yes, I trust the authors** button:
+
+   The first time you do this process, you must also select Activity Bar > **Microsoft Edge Tools** again.
 
    The **Microsoft Edge Tools: Targets** panel now displays two buttons: **Launch Instance** and **Generate launch.json**:
 

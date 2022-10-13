@@ -36,6 +36,42 @@ This DevTools extension for Visual Studio Code enables you to:
 
 
 <!-- ====================================================================== -->
+## Approaches compared
+
+This extension is one of several ways to use DevTools to change your local files.
+
+| Approach | Pros and Cons | Article |
+|---|---|---|
+| Browser > DevTools > **Elements** tool | You have to manually copy changes from DevTools into your source files. | [Inspect, edit, and debug HTML and CSS with the Elements tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool) |
+| Browser > DevTools > **Sources** tool > **Filesystem** tab to define a **Workspace** | Always saves the changes, which could discourage experimenting | [Using the Filesystem tab to define a local Workspace](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/#using-the-filesystem-tab-to-define-a-local-workspace) in _Sources tool overview_ |
+| Browser > DevTools > **Settings** > **Experiments** > **Open source files in Visual Studio Code** | Always saves the changes, which could discourage experimenting | Experiments > [Opening source files in Visual Studio Code](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/opening-sources-in-vscode). |
+| DevTools extension for VS Code | Automatically opens and edits the CSS source file but doesn't automatically save the file, so you get to choose whether to Save the edits. | The present article. |
+
+
+<!-- ====================================================================== -->
+## 2-way editing
+
+Changes are reflected among the source files in the opened folder, the **Edge DevTools** tab, and the **Edge DevTools: Browser** tab, as follows.
+
+
+#### CSS
+
+Through CSS mirror editing, you can change CSS in the **Edge DevTools** tab, and it automatically changes in the `.html` or `.css` source file, as well as being reflected in the **Edge DevTools: Browser** tab.  DevTools lets you decide whether to save the change, allowing you to experiment.
+
+You can change CSS in the `.css` or `.html` source file, save the change, and then reload the webpage in the **Edge DevTools: Browser** tab, which also updates the **Edge DevTools** tab.
+
+
+#### HTML
+
+You can edit the DOM tree in the **Edge DevTools** tab (such as changing `<h2>Success!</h2>` to `<h2>CSS Success!</h2>`), then press `Enter`, then refresh the **Edge DevTools: Browser** tab to see the change.  (This doesn't automatically edit the `.html` source file.)
+
+You can change HTML in the `.html` source file, save the change, and then reload the webpage in the **Edge DevTools: Browser** tab, which also updates the **Edge DevTools** tab.
+
+
+<!--js-->
+
+
+<!-- ====================================================================== -->
 ## Tasks supported by the developer tools
 
 The DevTools extension for Visual Studio Code allows you to:
@@ -43,7 +79,7 @@ The DevTools extension for Visual Studio Code allows you to:
 | Task | Article |
 |---|---|
 | Get live analysis of problems in your source code. | [Inline and live issue analysis](./microsoft-edge-devtools-extension/inline-live-issue-analysis.md) |
-| Start a new browser instance with DevTools for your project. | [Opening DevTools and the embedded DevTools browser](./microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md) |
+| Start a new browser instance with DevTools for your project. | [Opening DevTools and the DevTools browser](./microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md) |
 | Emulate different devices and see your project in different display modes. | [Device and state emulation](./microsoft-edge-devtools-extension/device-state-emulation.md) |
 | View the runtime DOM structure and layout of your page using the **Elements** tool. | [Opening source files from the Elements tool](./microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md) |
 | Analyze and change CSS styles of your project with live preview and live changes to your project's source files. | [Update .css files from within the Styles tool (CSS mirror editing)](./microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md) |
@@ -54,7 +90,7 @@ The DevTools extension for Visual Studio Code allows you to:
 
 
 <!-- ====================================================================== -->
-## Overview of the developer tools
+## Overview of the tools in the DevTools extension
 
 The following tools are included in the DevTools extension for Visual Studio Code.  The following articles are not specifically focused on the DevTools extension for Visual Studio Code, but are for the Microsoft Edge browser DevTools.
 

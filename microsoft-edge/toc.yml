@@ -801,7 +801,7 @@
               href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
               displayName: tutorial, demo to do
 
-            - name: Opening DevTools and the embedded DevTools browser
+            - name: Opening DevTools and the DevTools browser
               href: visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md
               displayName: 
 
@@ -1445,7 +1445,7 @@
 
         - name: Opening source files in Visual Studio Code
           href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
-          displayName: 
+          displayName: Open source files in Visual Studio Code # variant title string
 
         - name: Debug Microsoft Edge in Visual Studio Code
           href: visual-studio-code/debugger-for-edge.md
