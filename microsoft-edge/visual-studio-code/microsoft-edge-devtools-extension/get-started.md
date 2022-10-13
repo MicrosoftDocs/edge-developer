@@ -317,7 +317,7 @@ This section is in support of clicking the **Launch Project** button.
 
    ![The Demo To Do web app running in the Edge DevTools: Browser tab](./get-started-images/demo-app-running-in-extension-browser.png)
 
-At this point, you could work with CSS edits or step through code in the debugger, as described above for the section [Start DevTools in debug mode by right-clicking an HTML file](#step-3-start-devtools-by-right-clicking-an-html-file).
+At this point, you could work with CSS edits or step through code in the debugger, as described above for the section [Step 4: Start DevTools by right-clicking an HTML file](#step-4-start-devtools-by-right-clicking-an-html-file).
 
 
 <!-- ====================================================================== -->
@@ -333,6 +333,7 @@ At this point, you could work with CSS edits or step through code in the debugge
 <!-- ====================================================================== -->
 ## See also
 
+* [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md)
 * [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) - the demo web app running on the `github.io` server.
 * [Source code for Demo To Do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) - the **MicrosoftEdge/Demos** GitHub repo, containing `demo-to-do` and other demos.
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

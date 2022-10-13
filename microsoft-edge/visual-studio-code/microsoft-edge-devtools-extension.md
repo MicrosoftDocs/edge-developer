@@ -20,11 +20,13 @@ CSS Mirroring
 CSS mirror editing (lowercased in UI, init capped at github)
 -->
 
-The Microsoft Edge DevTools extension for Visual Studio Code lets you use Microsoft Edge DevTools and an embedded version of the Microsoft Edge Browser including Device Emulation, right from within Visual Studio Code.  Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it's a great tool for web developers, especially with this DevTools extension.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.
+The Microsoft Edge DevTools extension for Visual Studio Code lets you use Microsoft Edge DevTools and an embedded version of the Microsoft Edge Browser including Device Emulation, right from within Visual Studio Code.  Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it's a great tool for web developers, especially with this DevTools extension.
+
+Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.
 
 ![Microsoft Edge Developer Tools and browser preview in Visual Studio Code](microsoft-edge-devtools-extension-images/devtools-extension-v211.png)
 
-This DevTools extension for Visual Studio Code enables you to:
+The DevTools extension for Visual Studio Code enables you to:
 
 *  Develop webpages and use DevTools without leaving Visual Studio Code.  This extension gives you an alternative to using DevTools for webpage development within the browser window.
 
@@ -42,10 +44,10 @@ This extension is one of several ways to use DevTools to change your local files
 
 | Approach | Pros and Cons | Article |
 |---|---|---|
-| Browser > DevTools > **Elements** tool | You have to manually copy changes from DevTools into your source files. | [Inspect, edit, and debug HTML and CSS with the Elements tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool) |
-| Browser > DevTools > **Sources** tool > **Filesystem** tab to define a **Workspace** | Always saves the changes, which could discourage experimenting | [Using the Filesystem tab to define a local Workspace](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/#using-the-filesystem-tab-to-define-a-local-workspace) in _Sources tool overview_ |
-| Browser > DevTools > **Settings** > **Experiments** > **Open source files in Visual Studio Code** | Always saves the changes, which could discourage experimenting | Experiments > [Opening source files in Visual Studio Code](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/opening-sources-in-vscode). |
-| DevTools extension for VS Code | Automatically opens and edits the CSS source file but doesn't automatically save the file, so you get to choose whether to Save the edits. | The present article. |
+| Browser > DevTools > **Elements** tool | You have to manually copy changes from DevTools into your source files. | [Inspect, edit, and debug HTML and CSS with the Elements tool](/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool.md) |
+| Browser > DevTools > **Sources** tool > **Filesystem** tab to define a **Workspace** | Always saves the changes, which could discourage experimenting | [Using the Filesystem tab to define a local Workspace](/microsoft-edge/devtools-guide-chromium/sources/index.md#using-the-filesystem-tab-to-define-a-local-workspace) in _Sources tool overview_ |
+| Browser > DevTools > **Settings** > **Experiments** > **Open source files in Visual Studio Code** | Always saves the changes, which could discourage experimenting | Experiments > [Opening source files in Visual Studio Code](/microsoft-edge/devtools-guide-chromium/sources/opening-sources-in-vscode.md). |
+| DevTools extension for VS Code | Automatically opens and edits the CSS source file but doesn't automatically save the file, so you get to choose whether to save the edits. | The present article. |
 
 
 <!-- ====================================================================== -->
@@ -113,6 +115,10 @@ For the list of all tools that are in the Microsoft Edge browser version of DevT
 ## See also
 
 * [Get started using the DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension/get-started.md)
+* [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md)
+
+**External pages:**
+
 * [Supercharging VS Code Live Server](https://dev.to/codepo8/supercharging-vs-code-live-server-1bgi) - If you use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in Visual Studio Code to see the changes in your web products live, you can improve the experience even more by getting a browser and DevTools embedded in Visual Studio Code using the Microsoft Edge DevTools extension for Visual Studio Code.
 * [Getting Started](https://code.visualstudio.com/Docs) - Documentation for Visual Studio Code.
 * [vscode-edge-devtools repo](https://github.com/microsoft/vscode-edge-devtools) - source code for the Microsoft Edge Developer Tools extension for Visual Studio Code.

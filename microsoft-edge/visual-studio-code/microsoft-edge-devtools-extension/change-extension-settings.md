@@ -23,6 +23,34 @@ You can customize the Visual Studio Code extension to your needs.
 
 
 <!-- ====================================================================== -->
+## List of Settings
+
+The **Settings** page of DevTools v2.1.1 contains these settings.  For more information, see the **Settings** page.
+
+* **Browser Args**
+* **Browser Flavor**
+* **Default Entrypoint**
+* **Default Url**
+* **Headless** - the headless embedded browser instead of a complete external browser window is the default.  The headless browser, in DevTools, means the **Edge DevTools: Browser** tab, which is sometimes called the _screencast_.
+* **Hostname**
+* **Path Mapping**
+* **Port**
+* **Show Workers**
+* **Source Map Path Overrides**
+* **Source Maps**
+* **Timeout**
+* **Use Https**
+* **User Data Dir**
+* **Webhint** - required for Issues reporting and Quick Fixes.
+* **Web Root**
+* **Bottom**
+* **Top**
+* **Split On Drag and Drop**
+* **Ignored Extensions**
+* **HTML: Custom Data**
+
+
+<!-- ====================================================================== -->
 ## Reloading the extension after changing settings
 
 Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect, close instances of DevTools, as follows:
