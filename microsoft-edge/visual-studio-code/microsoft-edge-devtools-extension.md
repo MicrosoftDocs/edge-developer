@@ -122,4 +122,5 @@ For the list of all tools that are in the Microsoft Edge browser version of DevT
 * [Supercharging VS Code Live Server](https://dev.to/codepo8/supercharging-vs-code-live-server-1bgi) - If you use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in Visual Studio Code to see the changes in your web products live, you can improve the experience even more by getting a browser and DevTools embedded in Visual Studio Code using the Microsoft Edge DevTools extension for Visual Studio Code.
 * [Getting Started](https://code.visualstudio.com/Docs) - Documentation for Visual Studio Code.
 * [vscode-edge-devtools repo](https://github.com/microsoft/vscode-edge-devtools) - source code for the Microsoft Edge Developer Tools extension for Visual Studio Code.
+   * [Changelog file](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md).
 * [Microsoft Edge DevTools extension for Visual Studio Code](https://aka.ms/devtools-for-code) in the Visual Studio Marketplace.
