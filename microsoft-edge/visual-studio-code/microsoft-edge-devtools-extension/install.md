@@ -149,7 +149,7 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 
 
 <!-- ====================================================================== -->
-## Step 6: Set up a localhost server by using npx http-server
+## Step 6: Set up a localhost server
 
 In many cases, you don't need to enter a URL or run a localhost server.  For example, you can:
 *  Open a folder that contains webpage source files, and then right-click an `.html` file.
@@ -157,6 +157,12 @@ In many cases, you don't need to enter a URL or run a localhost server.  For exa
 *  Enter a remote server URL in the address bar, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 
 If your webpage uses certain APIs that require the webpage to be running on a web server, to use DevTools, you must start a local web server for testing.  If you don't serve out your project on a webserver, but only instead, you use local files, you can still use DevTools, with debugging ability, by right-clicking a local `.html` file.  Functionality of your app which specifically requires your app to be on a server won't work, and DevTools will have limited utility.
+
+Below are specific steps to install a couple different web servers.
+
+
+<!-- ------------------------------ -->
+#### Set up a localhost server by using npx http-server
 
 If you installed Node.js and npm, as described above, `npx http-server` is a simple way to start a local web server.  For information, see [http-server: a simple static HTTP server](https://www.npmjs.com/package/http-server).
 
@@ -230,8 +236,8 @@ but serving out the entire \Demos\ dir gives a useful dir listing at:
 Next, see [Get started using the DevTools extension for Visual Studio Code](./get-started.md) for a step-by-step walkthrough.
 
 
-<!-- ====================================================================== -->
-## Step 7: Set up a localhost server by using IIS on Windows
+<!-- ------------------------------ -->
+## Set up a localhost server by using IIS on Windows
 
 If you use `npx http-server` as described above, you can skip this section.
 
