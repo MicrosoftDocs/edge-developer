@@ -24,6 +24,7 @@ If you are changing CSS in DevTools, either:
    *  Or, clear the **CSS mirror editing** checkbox, to prevent such error messages.
 
 See also:
+* [The CSS Mirror Editing checkbox](./css-mirror-editing-styles-tab.md#the-css-mirror-editing-checkbox) in _Update .css files from within the Styles tab (CSS mirror editing)_
 * [Mapping URL files to the opened folder](./open-devtools-and-embedded-browser.md#mapping-url-files-to-the-opened-folder) in _Opening DevTools and the DevTools browser_.
 
 

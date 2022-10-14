@@ -168,15 +168,10 @@ When you choose to debug your project in Visual Studio Code, whether you use Dev
 ## See also
 
 * [The launch.json file for the DevTools extension](./launch-json.md)
-* [Debug Microsoft Edge in Visual Studio Code](../debugger-for-edge.md)<!-- links to "Browser debugging in VS Code" -->
+* [Debug Microsoft Edge in Visual Studio Code](../debugger-for-edge.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
 
 **External pages:**
 
 * [Launch configurations](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) in the _Debugging_ article for Visual Studio Code.
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
-* [Browser debugging in VS Code](https://code.visualstudio.com/docs/nodejs/browser-debugging) - covers these features of Visual Studio Code:
-   * Open Link command
-   * Launch configuration
-   * Launching browsers
-   * Attaching to browsers
-   * Launch configuration attributes
+* [Browser debugging in VS Code](https://code.visualstudio.com/docs/nodejs/browser-debugging)

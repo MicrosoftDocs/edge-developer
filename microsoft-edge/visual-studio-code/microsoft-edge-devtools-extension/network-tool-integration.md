@@ -23,10 +23,11 @@ Use the **Network** tool to:
 
 * Simulate different user agents to see how your product appears to a search engine bot or a browser that you can't test in.
 
+For more information about the **Network** tool in DevTools, see [Inspect network activity](../../devtools-guide-chromium/network/index.md).
+
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Inspect network activity](../../devtools-guide-chromium/network/index.md) - article for browser-based DevTools.
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
