@@ -244,7 +244,7 @@ You might not need to use this approach, because in many cases, right-clicking a
 
 This section is in support of clicking the **Launch Project** button.
 
-1. Set up and start a web server, serving out the demo-to-do app from the Demos repo.  To do this, see [Step 6: Set up a localhost server by using npx http-server](./install.md#step-6-set-up-a-localhost-server-by-using-npx-http-server) in _Installing the DevTools extension for Visual Studio Code_.  The present section is similar but more specifically focused on the **demo-to-do** app.
+1. Set up and start a web server, serving out the **demo-to-do** app from the Demos repo.  To do this, see [Step 6: Set up a localhost server](./install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
 
 1. In Visual Studio Code, select **View** > **Terminal**.
 
@@ -282,7 +282,7 @@ This section is in support of clicking the **Launch Project** button.
 
 This section is in support of clicking the **Launch Project** button.
 
-   1. In Visual Studio, select **File** > **Open Folder**.  Select your project directory that contains `index.html` for the cloned demo-to-do sample in the Demos repo, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
+   1. In Visual Studio, select **File** > **Open Folder**.  Select your project directory that contains `index.html` for the cloned **demo-to-do** sample in the Demos repo, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
    
    1. In the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
 
@@ -299,7 +299,7 @@ This section is in support of clicking the **Launch Project** button.
    // Provide your project's url to finish configuring
    ```
 
-1. In a web browser, go to the `http://localhost/` URL where the demo-to-do `.html` file is on the server, such as [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/).
+1. In a web browser, go to the `http://localhost/` URL where the **demo-to-do** `.html` file is on the server, such as [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/).
 
 1. Copy the URL from the address bar.
 

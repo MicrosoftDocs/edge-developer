@@ -119,7 +119,7 @@ Summary:
 1. Add a localhost URL in the `.json` file.
 1. Click the **Launch Project** button.
 
-These steps assume you are running a localhost web server, as described in [Step 6: Set up a localhost server by using npx http-server](./install.md#step-6-set-up-a-localhost-server-by-using-npx-http-server) in _Installing the DevTools extension for Visual Studio Code_.
+These steps assume you are running a localhost web server, as described in [Step 6: Set up a localhost server](./install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
 
 To open DevTools by clicking the **Launch Project** button:
 
