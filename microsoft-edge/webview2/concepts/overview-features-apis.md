@@ -1061,6 +1061,9 @@ iFrames allow you to embed other webpages into your own webpage.  In WebView2, y
 <!-- wording per overview table:
 Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. -->
 
+See also:
+* [Using iFrames in WebView2 apps](./iframes.md)
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Frame Class](/dotnet/api/microsoft.web.webview2.core.corewebview2frame)
