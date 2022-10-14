@@ -237,7 +237,7 @@ Next, see [Get started using the DevTools extension for Visual Studio Code](./ge
 
 
 <!-- ------------------------------ -->
-## Set up a localhost server by using IIS on Windows
+#### Set up a localhost server by using IIS on Windows
 
 If you use `npx http-server` as described above, you can skip this section.
 
