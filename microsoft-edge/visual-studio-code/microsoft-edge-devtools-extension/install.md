@@ -13,21 +13,15 @@ The DevTools extension for VS Code provides many of the same tools that are in t
 *  VS Code is a full IDE.
 *  Its CSS mirror editing allows you to control whether to save changes to your `.css` file.
 
-This article walks you through initial setup of the extension by cloning, loading, and modifying the **demo-to-do** example web app from the **MicrosoftEdge/Demos** GitHub repo.
+This article walks you through initial setup of the DevTools extension.  After installing DevTools, you'll be ready to follow the steps in [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
 
 This article helps you:
 
 * Install the DevTools extension.
 
-* Decide when to use this extension in Visual Studio Code and when to use DevTools in the Microsoft Edge browser.
+* Clone the Demos repo, which includes the **demo-to-do** web app.
 
-* Clone the Demos repo, which includes the demo-to-do web app.
-
-* Use the DevTools extension for Visual Studio Code to set a breakpoint and step through the JavaScript code of the demo-to-do app.
-
-* From within Visual Studio Code, open the Microsoft Edge browser several different ways.
-
-* Compare using DevTools in the Microsoft Edge browser window versus in the Visual Studio Code IDE environment, by using the existing **demo-to-do** web app in the Demos repo for Microsoft Edge Developer documentation.
+* Start a web server so you can use localhost URLs in the DevTools extension in Visual Studio Code.
 
 
 <!-- ====================================================================== -->
@@ -158,14 +152,10 @@ In many cases, you don't need to enter a URL or run a localhost server.  For exa
 
 If your webpage uses certain APIs that require the webpage to be running on a web server, to use DevTools, you must start a local web server for testing.  If you don't serve out your project on a webserver, but only instead, you use local files, you can still use DevTools, with debugging ability, by right-clicking a local `.html` file.  Functionality of your app which specifically requires your app to be on a server won't work, and DevTools will have limited utility.
 
-Below are specific steps to install a couple different web servers.
-
-
-<!-- ------------------------------ -->
-#### Set up a localhost server by using npx http-server
-
 If you installed Node.js and npm, as described above, `npx http-server` is a simple way to start a local web server.  For information, see [http-server: a simple static HTTP server](https://www.npmjs.com/package/http-server).
 
+
+**To set up http-server:**
 
 1. In Visual Studio Code, select **File** > **Open Folder** > open the directory that contains the `.html`, `.css`, and `.js` files for a webpage, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
 
@@ -178,11 +168,18 @@ If you installed Node.js and npm, as described above, `npx http-server` is a sim
 
 1. `cd` into the the folder you want to serve via http.
 
-   For example, on Windows:
+   For example, on Windows in **Terminal**:
 
    ```
    cd C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\
    ```
+
+   On Windows in the git bash shell, use forward slashes:
+
+   ```
+   cd C:/Users/myusername/Documents/GitHub/Demos/demo-to-do/
+   ```
+
 
 <!-- if you cd to 
 C:\Users\myusername\Documents\GitHub\Demos\
@@ -194,7 +191,7 @@ but serving out the entire \Demos\ dir gives a useful dir listing at:
    http://127.0.0.1:8080
 -->
 
-   **Start the server (npx http-server):**<!-- make prominent/findable -->
+   **Start the server (npx http-server):**
 
 1. Enter the command `npx http-server`:
 
@@ -232,57 +229,6 @@ but serving out the entire \Demos\ dir gives a useful dir listing at:
    ```
    
    The displayed URLs are equivalent to [http://localhost:8080/](http://localhost:8080/).
-
-Next, see [Get started using the DevTools extension for Visual Studio Code](./get-started.md) for a step-by-step walkthrough.
-
-
-<!-- ------------------------------ -->
-#### Set up a localhost server by using IIS on Windows
-
-If you use `npx http-server` as described above, you can skip this section.
-
-These detailed steps are specific to IIS, which is not cross-platform, and involves multiple steps to set up.  These instructions are for IIS on Windows; use equivalent steps for your environment.
-
-1. In Windows, select **Start** > **Control Panel**:
-
-   ![Control Panel initial page](./get-started-images/control-panel-initial-page.png)
-
-1. Click **Turn Windows features on or off**:
-
-   ![Turn Windows features on or off](./get-started-images/turn-win-features-on-off.png)
-
-1. Select the **Internet Information Services** (IIS) checkbox, and then click the **OK** button:
-
-   ![IIS checkbox in Windows Features dialog](./get-started-images/iis-checkbox-windows-features.png)
-
-   Windows applies the changes.
-
-1. Click the **Close** button to close the **Windows Features** dialog.
-
-1. In a web browser, go to [http://localhost](http://localhost).
-
-1. Optionally, click in the page to go to [Microsoft IIS.net](https://www.iis.net) for information about using IIS.  For example, see:
-
-   * [Getting Started with the IIS Manager in IIS](/iis/get-started/getting-started-with-iis/getting-started-with-the-iis-manager-in-iis-7-and-iis-8).
-   * [Add a Web Site](/iis/get-started/getting-started-with-iis/create-a-web-site#add-a-web-site) in _Create a Web Site_ in the IIS docs.
-
-1. Select **Start** > type **iis** > select **Internet Information Services (IIS) Manager** > **Open**:
-
-   ![Starting IIS Manager](./get-started-images/iis-manager-starting.png)
-
-1. Click the **Explore** link in the upper right:
-
-   ![The Explore link in IIS Manager](./get-started-images/explore-in-iis-manager.png)
-
-   File Explorer opens, to a location such as `C:\inetpub\wwwroot`.
-
-1. Copy the demo-to-dir directory from the Demos repo into that directory:
-
-   ![Demo files copied to server directory](./get-started-images/demo-copied-to-server-dir.png)
-
-1. In a web browser, go to [http://localhost:8080/](http://localhost:8080/), [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/), or the equivalent location matching where you placed the `.html` file that you want to load later in the DevTools extension:
-
-   ![demo-to-do page served from localhost](./get-started-images/demo-to-do-page-from-localhost.png)
 
 Next, see [Get started using the DevTools extension for Visual Studio Code](./get-started.md) for a step-by-step walkthrough.
 

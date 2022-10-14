@@ -81,7 +81,7 @@ Clicking the **Launch Instance** button doesn't go directly to your file; you ha
 
    `index.html` opens, automatically edited by CSS mirror editing to add the line `font-size: 5em;`.  Scroll to that line, in the h2 section.
 
-  **Arrange tabs:**
+   **Arrange tabs:**
 
 1. In the **Edge DevTools** tab, in the non-italic h2 section, click the `font-size` CSS rule that you entered, and then press `Up Arrow` and `Down Arrow`.  The value in `index.html` is automatically edited, by CSS mirror editing.
 
@@ -106,7 +106,7 @@ Clicking the **Launch Instance** button doesn't go directly to your file; you ha
 
 1. Click **Close** (**x**) in the **Edge DevTools** tab and in the **Edge DevTools: Browser** tab, if these tabs are open.
 
-*  Select Activity Bar > **Microsoft Edge Tools**.  If the **Targets** section lists any targets, hover on the right side of the target instance and then click **Close instance** (**x**).  The **Launch Instance** button appears, indicating that all DevTools instances are closed.
+1. Select Activity Bar > **Microsoft Edge Tools**.  If the **Targets** section lists any targets, hover on the right side of the target instance and then click **Close instance** (**x**).  The **Launch Instance** button appears, indicating that all DevTools instances are closed.
 
 1. Close `index.html` without saving changes.
 
