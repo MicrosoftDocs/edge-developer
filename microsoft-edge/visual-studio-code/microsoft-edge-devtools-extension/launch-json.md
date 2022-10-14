@@ -13,6 +13,11 @@ Visual Studio Code uses a `launch.json` file to define debug configurations.  To
 
 Details about the `launch.json` file format are below.  You normally don't need to change anything in the file except to replace several instances of the URL string, as explained in [Opening DevTools by clicking the Launch Project button](./open-devtools-and-embedded-browser.md#opening-devtools-by-clicking-the-launch-project-button) in _Opening DevTools and the DevTools browser_.
 
+<!-- todo
+The "name" string of debug configurations populates the following UI in Visual Studio Code:
+![]()
+-->
+
 
 <!-- ====================================================================== -->
 ## Where the launch.json file is placed

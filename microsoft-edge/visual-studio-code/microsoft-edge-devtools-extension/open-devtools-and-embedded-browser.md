@@ -27,26 +27,28 @@ This approach opens the DevTools tabs in non-debug mode and is useful when you d
 
 These steps assume that initially, no folder is open in Visual Studio Code, and the folder you are opening doesn't have a `launch.json` file.
 
-1. Open Visual Studio Code.
+1. In Visual Studio Code, do any of the following:
 
-1. Select **File** > **Open Folder** or **Open Recent**, and then select a folder.  Or, select Activity Bar > **Explorer** > **Open Folder**, and then select a folder.  For example, `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`
+   *  Select **Activity Bar** > **Explorer** (![the Explorer button](./open-devtools-and-embedded-browser-images/explorer-icon.png)) > click the **Open Folder** button.
+   *  Select **File** > **Open Folder**.
+   *  Select **File** > **Open Recent**.
 
-   To use all the DevTools features, open a folder that contains sources files that match the page that's displayed in the DevTools browser.
+   To use all the DevTools features, including CSS mirror editing of your local source file when you edit CSS in DevTools, open a folder that contains source files that match the webpage that you want to display in DevTools.
 
 1. In the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools button](./open-devtools-and-embedded-browser-images/microsoft-edge-tools-icon.png)) button, and then click the **Launch Instance** button.
 
    ![Microsoft Edge DevTools for Visual Studio Code extension](./open-devtools-and-embedded-browser-images/extension-icon.png)
 
-   If there's a **Launch Project** button rather than a **Launch Instance** button, that indicates that the folder contains a `launch.json` file.  Inspect what URL is specified in the `launch.json` file and consider clicking **Launch Project**, as described in [Opening DevTools by clicking the Launch Project button](#opening-devtools-by-clicking-the-launch-project-button).
+   If there's a **Launch Project** button rather than a **Launch Instance** button, that indicates that the folder contains a `launch.json` file.  Inspect what URL is specified in the `launch.json` file and consider clicking **Launch Project**, as described in [Opening DevTools by clicking the Launch Project button](#opening-devtools-by-clicking-the-launch-project-button).  Or, if you want to explore how the **Launch Instance** button works, you can delete the `launch.json` file and generate a new `launch.json` file later.
 
    ![Clicking the Launch Instance button](./open-devtools-and-embedded-browser-images/devtools-extension-new-browser-instance.png)
 
-   *  The **Edge DevTools** tab opens, initially containing information about the Success page.
+   *  The **Edge DevTools** tab opens, initially containing information about the Success page, such as `C:\Users\myusername\.vscode\extensions\ms-edgedevtools.vscode-edge-devtools-2.1.1\out\startpage\index.html`.
    *  The **Edge DevTools: Browser tab** (the embedded browser) opens, initially showing the Success page.
    *  The Debug toolbar and debug UI of Visual Studio Code doesn't open.
-   *  In the **Microsoft Edge Tools** pane, the **Targets** section opens, listing a target, and the **Launch** button is removed.
+   *  In the **Microsoft Edge Tools** pane, the **Targets** section opens, listing a target, and the **Launch Instance** button is removed.
 
-1. In the **Edge DevTools: Browser** tab, in the address bar, paste a file path or a localhost URL, that matches the folder that's open in Visual Studio Code.
+1. In the **Edge DevTools: Browser** tab, in the address bar, paste a file path or a URL, that matches the folder that's open in Visual Studio Code.
 
    If you want to obtain a file path: in Visual Studio Code > Activity Bar > **Explorer** (![Explorer button](./open-devtools-and-embedded-browser-images/explorer-icon.png)) > right-click an `.html` file > **Copy Path**.
 
@@ -56,7 +58,7 @@ These steps assume that initially, no folder is open in Visual Studio Code, and 
    * [http://10.0.1.8:8080](http://10.0.1.8:8080)
    * [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/) if you started the server from the root directory of the Demos repo.
 
-   Similar URLs are shown on the command line when you enter `npx http-server`.
+   Similar URLs are shown on the command line when you enter (for example) `npx http-server` to run a web server locally.
 
    The webpage you specified is displayed in the **Edge DevTools: Browser tab** (the embedded browser).  The **Edge DevTools** tab displays information about the webpage.
 
@@ -74,6 +76,10 @@ To close DevTools after opening it by clicking the **Launch Instance** button:
    The **Launch Instance** button appears, indicating that the DevTools instances are closed.
 
 
+See also:
+* [Step 2: Start DevTools by clicking the Launch Instance button for the default page](./get-started.md#step-2-start-devtools-by-clicking-the-launch-instance-button-for-the-default-page) in _Get started using the DevTools extension for Visual Studio Code_.
+
+
 <!-- ====================================================================== -->
 ## Opening DevTools by right-clicking an HTML file
 
@@ -81,7 +87,11 @@ This approach opens the DevTools tabs in debug mode and is recommended, unless t
 
 To open DevTools and the embedded browser, along with the Debug toolbar for an HTML file on your hard drive:
 
-1. In Visual Studio Code, select **Activity Bar** > **Explorer** (![the Explorer button](./open-devtools-and-embedded-browser-images/explorer-icon.png)) > **Open Folder**.  Or, select **File** > **Open Recent**.
+1. In Visual Studio Code, do any of the following:
+
+   *  Select **Activity Bar** > **Explorer** (![Explorer button](./open-devtools-and-embedded-browser-images/explorer-icon.png)) > click the **Open Folder** button.
+   *  Select **File** > **Open Folder**.
+   *  Select **File** > **Open Recent**.
 
 1. Open a folder that contains web app source files.
 
@@ -117,6 +127,9 @@ To close DevTools after opening it by right-clicking an `.html` file, in the Deb
    Or, on the **Run** menu, select **Stop Debugging**.  Or, close the two DevTools tabs.  The Debug toolbar closes.
 
 
+See also [Step 4: Start DevTools by right-clicking an HTML file](./get-started.md#step-4-start-devtools-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
+
+
 <!-- ====================================================================== -->
 ## Opening DevTools by clicking the Launch Project button
 
@@ -135,7 +148,13 @@ To open DevTools by clicking the **Launch Project** button:
 
    **Open a local folder containing web app source files:**
 
-1. In Visual Studio, select **File** > **Open Folder**.  Select your project directory that contains a `.html` file, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`.
+1. In Visual Studio Code, do any of the following:
+
+   *  Select **Activity Bar** > **Explorer** (![the Explorer icon](./open-devtools-and-embedded-browser-images/explorer-icon.png)) > click the **Open Folder** button.
+   *  Select **File** > **Open Folder**.
+   *  Select **File** > **Open Recent**.
+
+   Select a directory that contains webpage source files.
    
 1. In the Activity Bar, click **Microsoft Edge Tools** (![the Microsoft Edge Tools icon](./open-devtools-and-embedded-browser-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
 
@@ -201,12 +220,19 @@ To close DevTools after opening it by clicking the **Launch Project** button, in
    Or, on the **Run** menu, select **Stop Debugging**.  Or, close the two DevTools tabs.  The Debug toolbar closes.
 
 
+See also:
+* [Step 7: Start DevTools by clicking the Launch Project button](./get-started.md#step-7-start-devtools-by-clicking-the-launch-project-button) in _Get started using the DevTools extension for Visual Studio Code_.
+
+
 <!-- ====================================================================== -->
 ## Mapping URL files to the opened folder
 
-If DevTools is able to correlate and establish the workspace mapping between the files downloaded from the server and the files in the folder that you opened, DevTools provides its full functionality.
+If DevTools is able to correlate and establish the workspace mapping between the files downloaded from the server and the files in the folder that you opened, DevTools provides its full functionality, including CSS mirror editing of your local source files when you change CSS in DevTools.
 
-If DevTools can't map the files in the **Edge DevTools: Browser** tab to the files in the folder that you opened in Visual Studio Code's Explorer, you can inspect webpages, but you can't change them, such as changing CSS values in the **Sources** tab of the **Elements** tool in the **Edge DevTools** tab.
+If DevTools can't map the files in the **Edge DevTools: Browser** tab to the files in the folder that you opened in Visual Studio Code's Explorer, you can inspect webpages, and you can change them, such as changing CSS values in the **Sources** tab of the **Elements** tool in the **Edge DevTools** tab.  In this case, though, you can't use CSS mirror editing though, to have DevTools automatically edit your source files.  Options include: 
+*  Clear the **CSS mirror editing** checkbox in **Styles** tab and continue experimenting with CSS changes.
+*  Open a folder that contains source files that match the web page.
+*  Grant trust to a folder by opening it in Visual Studio Code.
 
 For example:
 
@@ -238,14 +264,25 @@ For example:
 
    ![The Microsoft Edge Tools Side Bar when viewing a URL](./open-devtools-and-embedded-browser-images/limited-css-edit-ability-for-remote-url.png)
 
+Options in this case include: 
+
+*  Clear the **CSS mirror editing** checkbox in **Styles** tab and continue experimenting with CSS changes (without automatic editing of CSS in source files).  This prevents further error messages about mapping to source files for CSS mirror editing.
+
+*  Open a folder that contains source files that match the web page, to have automatic editing of CSS in source files.
+
+*  Grant trust to a folder by opening it in Visual Studio Code, in case DevTools is attempting to edit a source file but Visual Studio Code hasn't granted trust to the containing folder.
+
+See also:
+* [Troubleshooting the DevTools extension](./troubleshooting.md)
+
 
 #### URLs, file paths, and opening a matching folder
 
 In some cases, behavior of DevTools is different for file paths than for URLs.
 
-*  If you enter a file path in the address bar of the DevTools browser, and you edit the CSS in DevTools, the browser knows where to find the source files.  You might need to open that folder to grant trust to for CSS mirror editing.
+*  If you enter a file path in the address bar of the DevTools browser, and you edit the CSS in DevTools, the browser knows where to find the source files.  You might need to open that folder to grant trust to it, to be able to use CSS mirror editing.  Or, clear the **CSS mirror editing** checkbox.
 
-*  If you enter a URL in the address bar of the DevTools browser, the browser knows where to find the downloaded copy of the source files.  You might need to open a folder in Visual Studio Code to edit CSS files or to grant trust to for CSS mirror editing, if you change the CSS using DevTools.
+*  If you enter a URL in the address bar of the DevTools browser, the browser knows where to find the downloaded copy of the source files, if you are only inspecting webpages and experimenting with CSS.  If you want to use CSS mirror editing (to have DevTools edit CSS in source files), the **CSS mirror editing** checkbox must be selected and you must open a folder in Visual Studio Code containing source files that match the webpage.
 
 
 <!-- ====================================================================== -->

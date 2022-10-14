@@ -106,11 +106,15 @@ Clicking the **Launch Instance** button doesn't go directly to your file; you ha
 
    **Close DevTools:**
 
-   If you were to click **Close** (**x**) in the **Edge DevTools** tab and in the **Edge DevTools: Browser** tab, the DevTools instance that started by clicking the **Launch Instance** button would still be running.  Instead:
+   Click **Close** (**x**) in the **Edge DevTools** tab and in the **Edge DevTools: Browser** tab, if both tabs are open.
+
+   <!-- todo: enter Issue: -->
+   If you want to check whether the DevTools instance that started by clicking the **Launch Instance** button is still running: 
 
 1. In Activity Bar > **Microsoft Edge Tools** > **Targets**, hover to the right of the target instance, and then click **Close instance** (**x**).
 
-   The **Launch Instance** button now appears, indicating that the DevTools instances are closed.
+   The **Launch Instance** button now appears, indicating that all DevTools instances are closed.
+   <!-- / issue -->
 
 1. Close `index.html` without saving changes.
 

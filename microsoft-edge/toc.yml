@@ -805,7 +805,7 @@
               href: visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md
               displayName: 
 
-            - name: Debugging a webpage
+            - name: Integration with Visual Studio Code debugging
               href: visual-studio-code/microsoft-edge-devtools-extension/debugging-a-webpage.md
               displayName: 
 

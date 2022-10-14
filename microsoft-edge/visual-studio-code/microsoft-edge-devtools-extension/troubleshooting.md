@@ -11,7 +11,20 @@ ms.date: 10/06/2022
 
 * Make sure to open DevTools in one of the supported ways or scenarios.  See [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
 
-* Make sure you open a folder that contains source files for the webpage that you are inspecting with DevTools.  See [Mapping URL files to the opened folder](./open-devtools-and-embedded-browser.md#mapping-url-files-to-the-opened-folder) in _Opening DevTools and the DevTools browser_.
+
+<!-- ====================================================================== -->
+## Controlling CSS mirror editing
+
+By default, the **CSS mirror editing** checkbox is selected, in the **Styles** tab in the **Elements** tool in the **Edge DevTools** tab.  If you change CSS values using DevTools, but DevTools doesn't find a matching file in a workspace (folder) that's open in Visual Studio Code, error messages about mapping to source files for CSS mirror editing appear.
+
+If you are changing CSS in DevTools, either:
+
+   *  Select the **CSS mirror editing** checkbox and open a folder that contains source files that match the webpage that you are inspecting with DevTools.
+
+   *  Or, clear the **CSS mirror editing** checkbox, to prevent such error messages.
+
+See also:
+* [Mapping URL files to the opened folder](./open-devtools-and-embedded-browser.md#mapping-url-files-to-the-opened-folder) in _Opening DevTools and the DevTools browser_.
 
 
 <!-- ====================================================================== -->
@@ -28,6 +41,8 @@ A powerful way of restarting DevTools is to close and reopen the folder:
 
 <!-- ====================================================================== -->
 ## Closing all instances of DevTools
+
+Normally, closing the two **DevTools** tabs closes any instances of DevTools and the DevTools browser.  If the Debug toolbar is open, click the **Stop** button.
 
 To reset the state of DevTools, close all instances of DevTools.  Make sure the **Launch Instance** button is shown in Visual Studio Code > Activity Bar > **Microsoft Edge Tools** Side Bar.  That indicates that no instance of DevTools is running.
 
@@ -47,11 +62,9 @@ The DevTools browser uses the URL or file path that you specify any of the vario
 | Right-click an `.html` file. | The path of the `.html` file that you right-click. |
 | Click the **Launch Project** button. | The URL or file path that you specify in `launch.json`. |
 
-If you enter a different URL or file path in the address bar of the DevTools browser, for DevTools to provide its full functionality, you must also open a folder that contains files that match the webpage (file path or URL) that you specify in the DevTools browser.
+If you enter a different URL or file path in the address bar of the DevTools browser, for DevTools to provide automatic CSS mirror editing of local source files, you must also open a folder that contains files that match the webpage (file path or URL) that you specify in the DevTools browser.
 
-<!-- todo: when you nav from one demo page to another does addr bar chg? -->
-
-Suppose you click the **Launch Instance** button, then paste a localhost URL into the address bar, such as [http://localhost:8080/](http://localhost:8080/) or [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/), but you don't have the local source files folder open.  Then in the **Styles** tab of the Elements tool, try to change a CSS value.  This way of opening and using DevTools is not fully supported and produces error messages such as:
+Suppose you click the **Launch Instance** button, then paste a localhost URL into the address bar, such as [http://localhost:8080/](http://localhost:8080/) or [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/), but you don't have the local source files folder open.  Then in the **Styles** tab of the Elements tool, try to change a CSS value.  Error messages might appear, such as:
 
 *  **Error while mirroring css content to document.  Could not mirror css changes to document.  No workspace mapping was found.**
 
