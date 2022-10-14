@@ -113,6 +113,18 @@ There are three _configurations_ and two _compounds_ initially defined by defaul
 
 
 <!-- ====================================================================== -->
+## Intellisense and autocomplete
+
+Hover over a JSON name or value to show a tooltip:
+
+![Intellisense tooltip when hovering over a JSON name or value](./launch-json-images/intellisense-tooltip.png)
+
+Start typing double-quotes, to see the autocompletion list of available JSON properties and descriptions:
+
+![Autocomplete for launch.json](./launch-json-images/autocomplete.png)
+
+
+<!-- ====================================================================== -->
 ## Configuration types: launch vs. debug
 
 These two distinct types of configurations are both defined in this `.json` file for the Visual Studio Code debugger.
