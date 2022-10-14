@@ -121,7 +121,9 @@ Hover over a JSON name or value to show a tooltip:
 
 Start typing double-quotes, to see the autocompletion list of available JSON properties and descriptions:
 
-![Autocomplete for launch.json](./launch-json-images/autocomplete.png)
+![Autocomplete for launch.json](./launch-json-images/autocomplete.png)<!--no comma yet-->
+
+When saving the file, be sure to provide well-formed JSON, including commas.
 
 
 <!-- ====================================================================== -->

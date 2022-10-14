@@ -9,11 +9,7 @@ ms.date: 10/06/2022
 ---
 # Installing the DevTools extension for Visual Studio Code
 
-The DevTools extension for VS Code provides many of the same tools that are in the DevTools that's in the Microsoft Edge browser, from within Visual Studio Code.  Either approach provides the **Elements** tool, CSS mirror editing, and debugging of `.js`, but VS Code has some advantages:
-*  VS Code is a full IDE.
-*  Its CSS mirror editing allows you to control whether to save changes to your `.css` file.
-
-This article walks you through initial setup of the DevTools extension.  After installing DevTools, you'll be ready to follow the steps in [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
+This article walks you through the initial setup of the DevTools extension.  After installing DevTools, you'll be ready to follow the steps in [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
 
 This article helps you:
 
@@ -33,7 +29,7 @@ This article helps you:
 <!-- ====================================================================== -->
 ## Step 2: Install Microsoft Edge
 
-Microsoft Edge is required, for the DevTools extension for VS Code.
+Microsoft Edge is required, for the DevTools extension for Visual Studio Code.
 
 On Windows, Microsoft Edge is installed.  On macOS or Linux, install Microsoft Edge as follows:
 

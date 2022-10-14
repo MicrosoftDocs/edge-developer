@@ -108,6 +108,12 @@ To re-create a fresh `launch.json` file for DevTools:
 
 
 <!-- ====================================================================== -->
+## launch.json requires well-formed JSON
+
+If Activity Bar > **Microsoft Edge Tools** contains a **Configure launch.json** button instead of the expected **Launch Project** button when a DevTools-generated `launch.json` file exists in the opened folder, this may be caused by adding a line with a missing comma or empty quotes.  Be sure `launch.json` contains well-formed JSON.
+
+
+<!-- ====================================================================== -->
 ## See also
 
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)

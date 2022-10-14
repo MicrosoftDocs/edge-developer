@@ -42,9 +42,7 @@ Most of these approaches require a DevTools-generated `launch.json` file that co
 
 *  On the Activity Bar, click the **Run and Debug** icon (![Run and Debug button](./debugging-a-webpage-images/run-and-debug-icon.png)), and then in the **Run and Debug** Side Bar, click the **Run and Debug** button.
 
-*  Open the Visual Studio Code command palette, start typing the word **debug** after **>**, and then select **Debug: Open Link**.
-
-More details are below.
+*  Open the Visual Studio Code command palette, start typing the word **debug** after **>**, and then select **Debug: Open Link**.  See [Open Link command](https://code.visualstudio.com/docs/nodejs/browser-debugging#_open-link-command) in _Browser debugging in VS Code_.
 
 
 <!-- ====================================================================== -->
@@ -170,8 +168,15 @@ When you choose to debug your project in Visual Studio Code, whether you use Dev
 ## See also
 
 * [The launch.json file for the DevTools extension](./launch-json.md)
+* [Debug Microsoft Edge in Visual Studio Code](../debugger-for-edge.md)<!-- links to "Browser debugging in VS Code" -->
 
 **External pages:**
 
 * [Launch configurations](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) in the _Debugging_ article for Visual Studio Code.
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Browser debugging in VS Code](https://code.visualstudio.com/docs/nodejs/browser-debugging) - covers these features of Visual Studio Code:
+   * Open Link command
+   * Launch configuration
+   * Launching browsers
+   * Attaching to browsers
+   * Launch configuration attributes

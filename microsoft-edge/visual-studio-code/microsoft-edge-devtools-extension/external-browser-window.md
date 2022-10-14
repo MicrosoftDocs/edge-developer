@@ -68,3 +68,13 @@ To change or check the setting for which type of browser window to use:
 
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Debug Microsoft Edge in Visual Studio Code](../debugger-for-edge.md)<!-- links to "Browser debugging in VS Code" -->
+
+**External articles:**
+
+* [Browser debugging in VS Code](https://code.visualstudio.com/docs/nodejs/browser-debugging) - covers these features of Visual Studio Code:
+   * Open Link command
+   * Launch configuration
+   * Launching browsers
+   * Attaching to browsers
+   * Launch configuration attributes
