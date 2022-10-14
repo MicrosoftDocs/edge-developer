@@ -9,60 +9,58 @@ ms.date: 10/06/2022
 ---
 # Using an external browser window
 
-By default, opening DevTools opens the embedded **Edge DevTools: Browser** tab, including a device emulation toolbar, in the Visual Studio Code window.  This tab is sometimes called a _screencast_ or a _headless browser_.
-
-As an alternative approach, an **external browser** approach, from within VS Code, launch the full Microsoft Edge browser window, and then go to your web application (or generate a `launch.json` file to specify the `.html` page to open).  This approach opens a separate Microsoft Edge window that's controlled by DevTools automation:
-
-![Separate Microsoft Edge window](./external-browser-window-images/success-page-external-browser.png)
-
-Visual Studio Code when external browser launched (and no Debug toolbar):
-
-![Visual Studio Code when external browser launched (and no Debug toolbar)](./external-browser-window-images/vscode-when-external-browser.png)
-
-Note that there's no Debug toolbar when opening DevTools by clicking the **Launch Instance** button in the **Microsoft Edge Tools** Side Bar.  To turn on the Debug toolbar, paste an `.html` filepath or URL into the address bar of the browser, and then in Visual Studio Code, press `F5`, and then select **Microsoft Edge Tools**.<!-- todo: test/review -->
-
-When you change settings, a quick way to restart is to select **File** > **Close Folder**, then select **File** > **Open Recent** > select a folder.
-
-If you change the settings for the extension so that it opens an external Microsoft Edge window, the automation-controlled external Microsoft Edge window opens when you click the **Launch Project** button.  But when you right-click an `.html` file, the **Edge DevTools: Browser** tab (the embedded browser) still opens rather than the external browser window.
+By default, DevTools opens the **Edge DevTools: Browser** tab in Visual Studio Code.  The alternative approach is to have DevTools open an external, automation-controlled Microsoft Edge window.
 
 
 <!-- ====================================================================== -->
-## Opening an external Microsoft Edge browser window
+## External browser window
 
-To open an external Microsoft Edge browser window, including the complete UI for Microsoft Edge (but without the UI features for Device Emulation):
+_External browser window_ means that when you launch an instance of the browser by using the Edge DevTools extension, an entire Microsoft Edge window with full UI opens, controlled by DevTools test automation:
 
-1. In Visual Studio Code, select Activity Bar > **Microsoft Edge Tools** > **Launch Instance** > **Targets** > hover to the right of a target > click **More Actions** (**...**) > **Open Settings**.
+![Separate Microsoft Edge window](./external-browser-window-images/success-page-external-browser.png)
 
-1. Clear the **Headless mode** checkbox.
+When the external browser window is open, the **Edge DevTools: Browser** tab doesn't open when you start DevTools:
 
-1. Close and reopen Visual Studio Code.  Or, just close and reopen the folder.  This closes all instances of the extension.
+![Visual Studio Code when external browser launched (and no Debug toolbar)](./external-browser-window-images/vscode-when-external-browser.png)
 
-   Then when you launch a browser instance using the extension by selecting Activity Bar > **Microsoft Edge Tools** > **Launch Instance**, an entire Microsoft Edge browser window will open.
+If you then click the **Toggle screencast** button in the **Edge DevTools** tab, the **Edge DevTools: Browser** tab opens, displaying **The tab is inactive**:
 
-_External browser window_ means that when you launch an instance of the browser by using the Edge DevTools extension, an entire Microsoft Edge window with full UI opens, controlled by test automation.  If you click the **Launch Project** button and no `launch.json` file exists, or the default `launch.json` file exists, the default, Success page opens in the external browser.
-
-Visual Studio Code when external browser launched: contains the **Edge DevTools** tab, but not the **Edge DevTools: Browser** tab (and in this scenario for launching, doesn't open the Debug toolbar).
+![Tab inactive](./external-browser-window-images/tab-inactive.png)
 
 
-#### Embedded browser for DevTools
+<!-- ====================================================================== -->
+## The embedded DevTools browser
 
-The **Edge DevTools: Browser** tab within Visual Studio Code has a device emulation toolbar.  This browser tab is sometimes called _headless mode_ or _screencast_.  This is the default setting.  The alternative approach is to have DevTools open an external, automation-controlled Microsoft Edge window, without a device emulation toolbar (other than that provided by regular DevTools in the Microsoft Edge browser).
+By default, DevTools opens the **Edge DevTools: Browser** tab in Visual Studio Code, rather than opening an external browser window.  The  **Edge DevTools: Browser** tab includes a device emulation toolbar at the bottom:
+
+![Embedded browser](./external-browser-window-images/embedded-browser.png)
+
+This tab is also called:
+*  The _headless browser_, in **Settings**.
+*  The _screencast_, in tooltips.
+*  The _embedded browser_.
+*  The _DevTools browser_.
+*  The _embedded DevTools browser_.
+
+
+<!-- ====================================================================== -->
+## Changing the setting
 
 To change or check the setting for which type of browser window to use:
 
-1. In Visual Studio Code, select Activity Bar > **Microsoft Edge Tools** > **Launch Instance** > **Targets** > hover to the right of a target > click **More Actions** (**...**) > **Open Settings**.
+1. In Visual Studio Code, select Activity Bar > **Microsoft Edge Tools**.  The **Microsoft Edge Tools** Side Bar opens.
 
-1. Select the **Headless** checkbox, so that a checkmark appears.
+1. Hover to the right of **Targets**, and then click **More Actions** (**...**) > **Open Settings**.
 
-1. Close and reopen Visual Studio Code.  Or, just close and reopen the folder.  This closes all instances of the extension.
+   ![Setting the extension to use the embedded browser](./external-browser-window-images/settings-headless.png)
 
-   Then when you launch a browser instance by selecting Activity Bar > **Microsoft Edge Tools** > **Launch Instance**, the **Edge DevTools: Browser** tab will open within Visual Studio Code.
+1. If you want to use the **Edge DevTools: Browser** tab in Visual Studio Code, select the **Headless** checkbox.
 
-![Setting the extension to use the embedded browser](./external-browser-window-images/settings-headless.png)
+   Or, if you want to use the external, automation-controlled browser window, clear the **Headless** checkbox.
 
-The **Edge DevTools: Browser** tab contains the embedded browser:
+1. Close DevTools.  See [Closing DevTools](./open-devtools-and-embedded-browser.md#closing-devtools) in _Opening DevTools and the DevTools browser_.
 
-![Embedded browser](./external-browser-window-images/embedded-browser.png)
+1. Open DevTools.  See [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
 
 
 <!-- ====================================================================== -->

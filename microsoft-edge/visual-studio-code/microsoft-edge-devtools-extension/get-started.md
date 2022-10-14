@@ -60,7 +60,6 @@ Clicking the **Launch Instance** button doesn't go directly to your file; you ha
 
 1. Click the **Yes, I trust the authors** button.
 
-   <!-- todo: remove these Launch button steps? -->
    You might need to launch DevTools again, as follows.
 
 1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools button](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens.
@@ -87,7 +86,7 @@ Clicking the **Launch Instance** button doesn't go directly to your file; you ha
 
 1. In the **Edge DevTools** tab, in the non-italic h2 section, click the `font-size` CSS rule that you entered, and then press `Up Arrow` and `Down Arrow`.  The value in `index.html` is automatically edited, by CSS mirror editing.
 
-1. In the **Edge DevTools** tab, click the **Toggle screencast** button a couple times.  The other **DevTools** tab opens and closes, saving space.
+1. In the **Edge DevTools** tab, click the **Toggle screencast** button a couple times.  The **Edge DevTools: Browser** tab opens and closes, saving space.
 
 1. In the **Edge DevTools: Browser** tab, click the **Close DevTools** or **Open DevTools** button a couple times.  The other **DevTools** tab opens and closes, saving space.
 
@@ -106,19 +105,13 @@ Clicking the **Launch Instance** button doesn't go directly to your file; you ha
 
    **Close DevTools:**
 
-   Click **Close** (**x**) in the **Edge DevTools** tab and in the **Edge DevTools: Browser** tab, if both tabs are open.
+1. Click **Close** (**x**) in the **Edge DevTools** tab and in the **Edge DevTools: Browser** tab, if these tabs are open.
 
-   <!-- todo: enter Issue: -->
-   If you want to check whether the DevTools instance that started by clicking the **Launch Instance** button is still running: 
-
-1. In Activity Bar > **Microsoft Edge Tools** > **Targets**, hover to the right of the target instance, and then click **Close instance** (**x**).
-
-   The **Launch Instance** button now appears, indicating that all DevTools instances are closed.
-   <!-- / issue -->
+*  Select Activity Bar > **Microsoft Edge Tools**.  If the **Targets** section lists any targets, hover on the right side of the target instance and then click **Close instance** (**x**).  The **Launch Instance** button appears, indicating that all DevTools instances are closed.
 
 1. Close `index.html` without saving changes.
 
-1. Select **File** > **Close Folder**.  If you want to reopen the folder, select **File** > **Open Recent**.
+1. Select **File** > **Close Folder**.
 
 
 <!-- ====================================================================== -->
@@ -130,7 +123,7 @@ Clicking the **Launch Instance** button doesn't go directly to your file; you ha
 
 1. Activity Bar > **Explorer** > right-click `\demo-to-do\index.html` > **Copy Path**.
 
-1. In Visual Studio, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above, such as ``C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`.  The Demo To Do app opens.  In the address bar, the `file:///` prefix is added and Windows backslashes are changed to forward slashes; for example: `file:///C:/Users/myusername/Documents/GitHub/Demos/demo-to-do/index.html`.
+1. In Visual Studio, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above, such as ``C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`.  The **demo-to-do** app opens.  In the address bar, the `file:///` prefix is added and Windows backslashes are changed to forward slashes; for example: `file:///C:/Users/myusername/Documents/GitHub/Demos/demo-to-do/index.html`.
 
    Or, if your localhost server is running, paste a localhost URL, such as [http://localhost:8080/](http://localhost:8080/) or [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/).  If you want to use CSS mirror editing to edit your source files, you'll need to open a folder in Visual Studio Code; otherwise, clear the **CSS mirror editing** checkbox in the **Styles** tab in the **Elements** tool in the **Edge DevTools** tab.  Clearing the checkbox prevents error messages about mapping and mirror editing when you experiment with changing CSS in DevTools and haven't provided a CSS source file for DevTools.
 
@@ -142,15 +135,16 @@ Clicking the **Launch Instance** button doesn't go directly to your file; you ha
 
    ![Launch Instance > filepath > non-debug mode](./get-started-images/launch-instance-filepath-non-debug-mode.png)
 
+
    **Close DevTools:**
 
-1. In Activity Bar > **Microsoft Edge Tools** > **Targets**, hover to the right of the target instance, and then click **Close instance** (**x**).
+1. Click **Close** (**x**) in the **Edge DevTools** tab and in the **Edge DevTools: Browser** tab, if these tabs are open.
 
-   The **Launch Instance** button now appears, indicating that the DevTools instances are closed.
+*  Select Activity Bar > **Microsoft Edge Tools**.  If the **Targets** section lists any targets, hover on the right side of the target instance and then click **Close instance** (**x**).  The **Launch Instance** button appears, indicating that all DevTools instances are closed.
 
 1. Close `index.html` without saving changes.
 
-1. Select **File** > **Close Folder**.  If you want to reopen the folder, select **File** > **Open Recent**.
+1. Select **File** > **Close Folder**.
 
 
 <!-- ====================================================================== -->
@@ -158,13 +152,20 @@ Clicking the **Launch Instance** button doesn't go directly to your file; you ha
 
 <!-- the equivalent section in Opening is more general than this section, which uses Demos repo -->
 
-Right-clicking an HTML file in Visual Studio Code's **Explorer** is the main way to open DevTools when your webpage doesn't require running on a web server.  We'll demonstrate by opening the Demo To Do web app.
+Right-clicking an `.html` file in Visual Studio Code's **Explorer** is the main way to open DevTools when your webpage doesn't require running on a web server.
+
+*  Unlike the **Launch Instance** button, this approach opens DevTools in Debug mode.
+
+*  Unlike the **Launch Project** button that we'll use later, this approach doesn't require you to generate a `launch.json` file.
+
+
+We'll demonstrate by opening the **demo-to-do** web app:
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Go to the directory where you cloned the Demos repo, open the specific directory for the Demo To Do app, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`, and then click the **Select Folder** button:
+1. Go to the directory where you cloned the Demos repo, open the specific directory for the **demo-to-do** app, such as `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`, and then click the **Select Folder** button:
 
-   ![Open Folder: demo to do](./get-started-images/open-folder-demo-todo.png)
+   ![Open Folder: demo-to-do](./get-started-images/open-folder-demo-todo.png)
 
 1. Select **Activity Bar** > **Explorer** (![Explorer icon](./get-started-images/explorer-icon.png)) > right-click `index.html` and then select **Open with Edge** > **Open Browser with DevTools**:
 
@@ -234,9 +235,9 @@ Continue the tutorial steps below.
 <!-- ====================================================================== -->
 ## Step 7: Start DevTools by clicking the Launch Project button
 
-Next, we'll use the Demo Todo app to demonstrate the **Launch Project** button after pointing that button to a localhost URL such as [http://localhost:8080/](http://localhost:8080/) or [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/).  As before, this starts DevTools in debug mode.  This is the main way to open DevTools when your webpage requires running on a web server.  As a preliminary step, we'll creating a `launch.json` file and edit the URL in it to point to localhost serving out the Demo Todo example.
+Next, we'll use the **demo-to-do** app to demonstrate the **Launch Project** button after pointing that button to a localhost URL such as [http://localhost:8080/](http://localhost:8080/) or [http://localhost/demos/demo-to-do/](http://localhost/demos/demo-to-do/).  As before, this starts DevTools in debug mode.  This is the main way to open DevTools when your webpage requires running on a web server.  As a preliminary step, we'll creating a `launch.json` file and edit the URL in it to point to localhost serving out the **demo-to-do** example app.
 
-You might not need to use this approach.  In many cases, right-clicking an HTML file works, for many APIs.  Many webpages require this approach, so here are specific steps you can follow.
+You might not need to use this approach, because in many cases, right-clicking an HTML file works.  However, many webpages use APIs which require the webpage to be running on a web server, so here are specific steps you can follow.
 
 
 <!-- ====================================================================== -->
@@ -244,7 +245,7 @@ You might not need to use this approach.  In many cases, right-clicking an HTML 
 
 This section is in support of clicking the **Launch Project** button.
 
-1. Set up and start a web server, serving out the demo-to-do app from the Demos repo.  To do this, see [Step 6: Set up a localhost server by using npx http-server](./install.md#step-6-set-up-a-localhost-server-by-using-npx-http-server) in _Installing the DevTools extension for Visual Studio Code_.  The present section is similar but more specifically focused on the Demo To Do app.
+1. Set up and start a web server, serving out the demo-to-do app from the Demos repo.  To do this, see [Step 6: Set up a localhost server by using npx http-server](./install.md#step-6-set-up-a-localhost-server-by-using-npx-http-server) in _Installing the DevTools extension for Visual Studio Code_.  The present section is similar but more specifically focused on the **demo-to-do** app.
 
 1. In Visual Studio Code, select **View** > **Terminal**.
 
@@ -303,7 +304,7 @@ This section is in support of clicking the **Launch Project** button.
 
 1. Copy the URL from the address bar.
 
-1. In `launch.json`, in each URL string, paste the URL for your cloned copy of the Demo To Do app, such as: `http://localhost/demos/demo-to-do/`
+1. In `launch.json`, in each URL string, paste the URL for your cloned copy of the **demo-to-do** app, such as: `http://localhost/demos/demo-to-do/`
 
 1. Paste the path inside the quoted path string in one of the `"url"` strings.  For example:
 
@@ -325,9 +326,9 @@ This section is in support of clicking the **Launch Project** button.
 
 1. Click the **Launch Project** button.
 
-   The **Edge DevTools** tab and the **Edge DevTools: Browser** tab open in separate panes, showing the Demo To Do web app:
+   The **Edge DevTools** tab and the **Edge DevTools: Browser** tab open in separate panes, showing the **demo-to-do** web app:
 
-   ![The Demo To Do web app running in the Edge DevTools: Browser tab](./get-started-images/demo-app-running-in-extension-browser.png)
+   ![The demo-to-do web app running in the 'Edge DevTools: Browser' tab](./get-started-images/demo-app-running-in-extension-browser.png)
 
 At this point, you could work with CSS edits or step through code in the debugger, as described above for the section [Step 4: Start DevTools by right-clicking an HTML file](#step-4-start-devtools-by-right-clicking-an-html-file).
 
@@ -346,6 +347,10 @@ At this point, you could work with CSS edits or step through code in the debugge
 ## See also
 
 * [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md)
-* [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) - the demo web app running on the `github.io` server.
-* [Source code for Demo To Do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) - the **MicrosoftEdge/Demos** GitHub repo, containing `demo-to-do` and other demos.
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+
+**GitHub:**
+
+* [demo-to-do](https://microsoftedge.github.io/Demos/demo-to-do/) - the demo web app running on the `github.io` server.
+* [Source code for demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
+* [MicrosoftEdge/Demos repo](https://github.com/MicrosoftEdge/Demos)

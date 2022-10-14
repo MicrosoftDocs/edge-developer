@@ -13,10 +13,7 @@ Visual Studio Code uses a `launch.json` file to define debug configurations.  To
 
 Details about the `launch.json` file format are below.  You normally don't need to change anything in the file except to replace several instances of the URL string, as explained in [Opening DevTools by clicking the Launch Project button](./open-devtools-and-embedded-browser.md#opening-devtools-by-clicking-the-launch-project-button) in _Opening DevTools and the DevTools browser_.
 
-<!-- todo
-The "name" string of debug configurations populates the following UI in Visual Studio Code:
-![]()
--->
+The "name" string of the debug configurations populates the dropdown list in the **Run and Debug** Side Bar of Visual Studio Code.
 
 
 <!-- ====================================================================== -->
@@ -47,8 +44,6 @@ There are three _configurations_ and two _compounds_ initially defined by defaul
    * **Launch Edge Headless and attach DevTools**
 
    * **Launch Edge and attach DevTools**
-
-<!-- todo: ui screenshot: ![Compounds displayed in the Debug toolbar]() -->
 
 
 <!-- ====================================================================== -->

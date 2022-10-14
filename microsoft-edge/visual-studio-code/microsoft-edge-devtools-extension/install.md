@@ -13,7 +13,7 @@ The DevTools extension for VS Code provides many of the same tools that are in t
 *  VS Code is a full IDE.
 *  Its CSS mirror editing allows you to control whether to save changes to your `.css` file.
 
-This article walks you through initial setup of the extension by cloning, loading, and modifying the **Demo To Do** sample web app from the **MicrosoftEdge/Demos** GitHub repo.
+This article walks you through initial setup of the extension by cloning, loading, and modifying the **demo-to-do** example web app from the **MicrosoftEdge/Demos** GitHub repo.
 
 This article helps you:
 
@@ -27,7 +27,7 @@ This article helps you:
 
 * From within Visual Studio Code, open the Microsoft Edge browser several different ways.
 
-* Compare using DevTools in the Microsoft Edge browser window versus in the Visual Studio Code IDE environment, by using the existing Demo Todo web app in the Demos repo for Microsoft Edge Developer documentation.
+* Compare using DevTools in the Microsoft Edge browser window versus in the Visual Studio Code IDE environment, by using the existing **demo-to-do** web app in the Demos repo for Microsoft Edge Developer documentation.
 
 
 <!-- ====================================================================== -->
@@ -100,7 +100,6 @@ See also:
 ## Step 5: Clone the Demos repo
 
 Cloning the Demos repo is optional.  This repo is useful for following the DevTools documentation.  If you want, instead of cloning the repo, you can open an existing project directory if you have one.
-<!-- todo: link to steps instead of placing them below: -->
 
 To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 

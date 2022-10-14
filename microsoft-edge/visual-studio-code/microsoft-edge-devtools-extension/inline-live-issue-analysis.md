@@ -25,7 +25,6 @@ To see all the issues in the file, click **View Problem**:
 ![A highlighted issue in the source code with a navigation bar explaining the problem and buttons to move to the next and previous issues](./inline-live-issue-analysis-images/navigating-issues.png)
 
 The **Problems** tab in the lower panel lists all the issues that DevTools found in the currently open files:
-<!-- todo: does VS Code also report issues?  are there two distinct UIs for the two groups of issues? -->
 
 ![The Problems tab in the lower panel of Visual Studio Code, listing all the issues that are found in the project's files](./inline-live-issue-analysis-images/issues-in-lower-panel.png)
 

@@ -63,19 +63,6 @@ These steps assume that initially, no folder is open in Visual Studio Code, and 
    The webpage you specified is displayed in the **Edge DevTools: Browser tab** (the embedded browser).  The **Edge DevTools** tab displays information about the webpage.
 
 
-#### Closing DevTools
-
-To close DevTools after opening it by clicking the **Launch Instance** button:
-
-1. In the Activity Bar, click the **Microsoft Edge Tools** (![the Microsoft Edge Tools button](./open-devtools-and-embedded-browser-images/microsoft-edge-tools-icon.png)) button.
-
-1. In the **Targets**, hover to the right of the target instance, and then click **Close instance** (**x**):
-
-   ![Closing DevTools if opened by clicking the Launch Instance button](./open-devtools-and-embedded-browser-images/close-devtools-opened-by-launch-instance.png)
-
-   The **Launch Instance** button appears, indicating that the DevTools instances are closed.
-
-
 See also:
 * [Step 2: Start DevTools by clicking the Launch Instance button for the default page](./get-started.md#step-2-start-devtools-by-clicking-the-launch-instance-button-for-the-default-page) in _Get started using the DevTools extension for Visual Studio Code_.
 
@@ -116,15 +103,6 @@ To open DevTools and the embedded browser, along with the Debug toolbar for an H
 Use the **Explorer** Side Bar, from the Activity Bar, to open a `.js` file during debugging a webpage.
 
 The **Edge DevTools: Browser** tab includes a Device Emulation toolbar.  This tab contains an embedded web browser with DevTools features.  This browser is sometimes called a _screencast_ or a _headless browser_ for DevTools.
-
-
-#### Closing DevTools
-
-To close DevTools after opening it by right-clicking an `.html` file, in the Debug toolbar, click the **Stop** (`Shift`+`F5`) button:
-
-   ![Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
-
-   Or, on the **Run** menu, select **Stop Debugging**.  Or, close the two DevTools tabs.  The Debug toolbar closes.
 
 
 See also [Step 4: Start DevTools by right-clicking an HTML file](./get-started.md#step-4-start-devtools-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
@@ -208,16 +186,7 @@ To open DevTools by clicking the **Launch Project** button:
 
    The **Edge DevTools** tab and the **Edge DevTools: Browser** tab open in separate panes, showing the web app URL that's specified in `launch.json`:
 
-   ![The Demo To Do web app running in the Edge DevTools: Browser tab](./get-started-images/demo-app-running-in-extension-browser.png)
-
-
-#### Closing DevTools
-
-To close DevTools after opening it by clicking the **Launch Project** button, in the Debug toolbar, click the **Stop** (`Shift`+`F5`) button:
-
-   ![The Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
-
-   Or, on the **Run** menu, select **Stop Debugging**.  Or, close the two DevTools tabs.  The Debug toolbar closes.
+   ![The demo-to-do web app running in the Edge DevTools: Browser tab](./get-started-images/demo-app-running-in-extension-browser.png)
 
 
 See also:
@@ -283,6 +252,34 @@ In some cases, behavior of DevTools is different for file paths than for URLs.
 *  If you enter a file path in the address bar of the DevTools browser, and you edit the CSS in DevTools, the browser knows where to find the source files.  You might need to open that folder to grant trust to it, to be able to use CSS mirror editing.  Or, clear the **CSS mirror editing** checkbox.
 
 *  If you enter a URL in the address bar of the DevTools browser, the browser knows where to find the downloaded copy of the source files, if you are only inspecting webpages and experimenting with CSS.  If you want to use CSS mirror editing (to have DevTools edit CSS in source files), the **CSS mirror editing** checkbox must be selected and you must open a folder in Visual Studio Code containing source files that match the webpage.
+
+
+<!-- ====================================================================== -->
+## Closing DevTools
+
+Close instances of DevTools by using any of the following approaches:
+
+*  If Visual Studio Code is in Debug mode, click the **Stop** button in the Debug toolbar, or select **Run** > **Stop Debugging**:
+
+   ![Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
+
+   The **Edge DevTools** and **Edge DevTools: Browser** tabs close.
+
+*  If the **Edge DevTools** tab is open, click **Close** (**x**) on the tab.
+
+*  If the **Edge DevTools: Browser** tab is open, click **Close** (**x**) on the tab.
+
+*  Select Activity Bar > **Microsoft Edge Tools**.  If the **Targets** section lists any targets, hover on the right side of the target instance and then click **Close instance** (**x**):
+
+   ![Closing DevTools if opened by clicking the Launch Instance button](./open-devtools-and-embedded-browser-images/close-devtools-opened-by-launch-instance.png)
+
+   The **Launch Instance** or **Launch Project** button is then displayed.
+
+*  Select **File** > **Close Folder**.
+
+*  Close the Visual Studio Code window.
+
+*  If an external, automation-controlled browser was opened by the DevTools extension, close the external browser window.
 
 
 <!-- ====================================================================== -->

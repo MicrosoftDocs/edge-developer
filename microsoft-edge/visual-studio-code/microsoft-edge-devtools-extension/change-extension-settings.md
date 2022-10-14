@@ -31,7 +31,7 @@ The **Settings** page of DevTools v2.1.1 contains these settings.  For more info
 * **Browser Flavor**
 * **Default Entrypoint**
 * **Default Url**
-* **Headless** - the headless embedded browser instead of a complete external browser window is the default.  The headless browser, in DevTools, means the **Edge DevTools: Browser** tab, which is sometimes called the _screencast_.
+* **Headless**
 * **Hostname**
 * **Path Mapping**
 * **Port**
@@ -41,7 +41,7 @@ The **Settings** page of DevTools v2.1.1 contains these settings.  For more info
 * **Timeout**
 * **Use Https**
 * **User Data Dir**
-* **Webhint** - required for Issues reporting and Quick Fixes.
+* **Webhint**
 * **Web Root**
 * **Bottom**
 * **Top**
@@ -53,26 +53,9 @@ The **Settings** page of DevTools v2.1.1 contains these settings.  For more info
 <!-- ====================================================================== -->
 ## Reloading the extension after changing settings
 
-Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect, close instances of DevTools, as follows:
+Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect, close any instances of DevTools.  See [Closing DevTools](./open-devtools-and-embedded-browser.md#closing-devtools) in _Opening DevTools and the DevTools browser_.
 
-*  Select **File** > **Close Folder**.
-
-*  In the Debug toolbar, click the **Stop** button.
-
-*  On the **Run** menu, select **Stop Debugging**.
-
-*  Select Activity Bar > **Microsoft Edge Tools** > **Targets** > hover on a target > click **Close instance** (`X`).  This action automatically closes the **Edge DevTools** tab as well.  If necessary, close an external browser opened by the extension.
-
-   *  For some scenarios, clicking **Close instance** (**x**) doesn't have an effect.  If needed, use another approach.  For example, if you open a folder that has no `launch.json` file, right-click an `.html` file and select **Open with Edge** > **Open Browser with DevTools**, and then select Activity Bar > **Microsoft Edge Tools** > **Targets** > click **Close instance** (**x**) on a target, DevTools continues running, because of how it was launched.
-
-
-To start the DevTools extension again:
-
-1. Select **File** > **Open Recent** > select a folder.  (Or, select Activity Bar > **Explorer** > **Open Folder** button.)  Right-click an `.html` file, and then select **Open with Edge** > **Open Browser with DevTools**.
-
-   Or, select Activity Bar > **Microsoft Edge Tools** > **Targets** > click the **Launch Instance** button.
-
-   Microsoft Edge opens, and the **Edge DevTools** tab is displayed.
+Then open DevTools again to use the new settings.  See [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
 
 
 <!-- ====================================================================== -->

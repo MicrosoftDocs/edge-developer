@@ -20,7 +20,7 @@ When you open DevTools in Visual Studio Code in Debug mode, the following UI com
 *  The **Run** (Debugger) Side Bar, including the **Watch** pane.
 *  The **Debug Console** at bottom of window.
 
-For a step-by-step example, see [Step 6: Step through JavaScript code in the Debugger](./get-started.md#step-6-step-through-javascript-code-in-the-debugger) in _Get started using the DevTools extension for Visual Studio Code_.
+See also [Step 6: Step through JavaScript code in the Debugger](./get-started.md#step-6-step-through-javascript-code-in-the-debugger) in _Get started using the DevTools extension for Visual Studio Code_.
 
 
 <!-- ====================================================================== -->
@@ -32,7 +32,6 @@ You can open the **Edge DevTools: Browser** tab (the embedded DevTools browser) 
 
 You can use the DevTools extension with the usual Visual Studio Code debugging UI/workflow, as follows.  In this approach, to enter Debug mode, we are not using the DevTools UI; we are not right-clicking an `.html` file to select **Open with Edge**, and we are not clicking the Activity Bar > **Microsoft Edge Tools** > **Launch Project** button.
 
-
 JavaScript debugging is built in to Visual Studio Code; you can debug in Chrome, Microsoft Edge, or Node.js without installing extensions.  If you debug by using the Microsoft Edge option with the Visual Studio Code debugging features and UI, you can start Microsoft Edge DevTools from the JavaScript debugger.  If the DevTools extension isn't installed, you're prompted to optionally install it.
 
 The DevTools extension gives additional functionality, such as the embedded DevTools browser which has a Device Emulation toolbar, and provides additional ways to enter Debug mode in Visual Studio Code.
@@ -43,7 +42,9 @@ To start the Visual Studio Code debugger along with DevTools, by using the usual
 
 1. Open a folder (workspace).  For example, select **File** > **Open Recent** > `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do`.  The **DevTools** tabs aren't open.
 
-1. Do any of the following UI actions that start the Visual Studio Code debugger the usual ways:
+1. Open an `.html` file.
+
+1. Click in the `.html` file in the editor, and then do any of the following UI actions that start the Visual Studio Code debugger the usual ways:
 
    *  Press **F5**.
 
@@ -55,19 +56,31 @@ To start the Visual Studio Code debugger along with DevTools, by using the usual
 
    **Microsoft Edge Tools** doesn't appear in the above screenshot, because for this screenshot, DevTools was uninstalled.
 
-<!-- todo: resume testing/doc'ing here.  uninstall DevTools. -->
+1. Select **Web App (Edge)**.
 
-1. Select **Web App (Edge)**.  On the Debug toolbar, notice the **Inspect** button:
+1. On the Debug toolbar, click the **Inspect** button, which has a tooltip of **Open browser DevTools**:
 
    ![The Inspect button on the debug toolbar](./debugging-a-webpage-images/inspect-button.png)
 
-1. Click the **Inspect** button to open Microsoft Edge DevTools inside Visual Studio Code.
+   The first time you click the **Inspect** button on the Debug toolbar, the **Extensions: Marketplace** Side Bar opens, containing **Microsoft Edge Tools for VS Code**:
 
-   The first time you select **Inspect**, the editor prompts you to install the Microsoft Edge DevTools extension for Visual Studio Code.
+   ![Installing DevTools from the Inspect icon](./debugging-a-webpage-images/install-extension-from-inspect-icon-tooltip.png)
 
-   After the DevTools extension is installed, when you click the **Inspect** button on the Debug toolbar, the **Edge DevTools** tab opens inside of Visual Studio Code:
+1. Click **Microsoft Edge Tools for VS Code** > **Install**.
+
+1. Close DevTools per [Closing DevTools](./open-devtools-and-embedded-browser.md#closing-devtools).
+
+1. Open a folder and an `.html` file, and then press `F5`.  Or, see [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
+
+   After the DevTools extension is installed, when you open an `.html` file and then click the **Inspect** button on the Debug toolbar, the **Edge DevTools** tab opens inside of Visual Studio Code:
 
    ![The Inspect button opens Microsoft Edge DevTools inside Visual Studio Code](./debugging-a-webpage-images/tools-inside.png)
+
+1. In the upper left of the **Edge DevTools** tab, click the **Toggle screencast** button:
+
+   ![Click 'Toggle Screencast' button to open DevTools Browser tab](./debugging-a-webpage-images/toggle-screencast-after-install.png)
+
+   The **Edge DevTools: Browser** tab opens.
 
 
 <!-- ====================================================================== -->
