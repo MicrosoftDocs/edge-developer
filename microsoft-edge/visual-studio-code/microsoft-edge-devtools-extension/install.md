@@ -99,7 +99,12 @@ See also:
 <!-- ====================================================================== -->
 ## Step 5: Clone the Demos repo
 
-Cloning the Demos repo is optional.  This repo is useful for following the DevTools documentation.  If you want, instead of cloning the repo, you can open an existing project directory if you have one.
+Cloning the Demos repo is optional.  The Demos repo is useful for following the various DevTools documentation.  If you want, instead of cloning the repo, you can open an existing project directory if you have one.
+
+As another alternative, instead of cloning the entire directory, you can download only the **demo-to-do** directory.  For example, go to [https://download-directory.github.io/](https://download-directory.github.io/) and then paste the URL [https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do).  The `.zip` file is placed in your download directory.  Unzip these webpage source files into a suitable location.  The tutorial [Get started using the DevTools extension for Visual Studio Code](./get-started.md) uses the example location:
+
+`C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`
+
 
 To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 
