@@ -841,7 +841,7 @@
               href: visual-studio-code/microsoft-edge-devtools-extension/change-extension-settings.md
               displayName: 
 
-            - name: The launch.json file for DevTools extension
+            - name: The launch.json file for the DevTools extension
               href: visual-studio-code/microsoft-edge-devtools-extension/launch-json.md
               displayName: 
 

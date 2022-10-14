@@ -37,7 +37,6 @@ Clicking the **Launch Instance** button doesn't go directly to your file; you ha
 
 1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens.
 
-<!-- conjoin -->
 1. Click the **Launch Instance** button.  The **Edge DevTools** tab opens, and the **Edge DevTools: Browser** tab opens, displaying the default, Success page.  In the address bar of the DevTools browser, there is a `file:///` path (rather than a URL), such as `file:///C:/Users/myusername/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html`.
 
    The Debug toolbar doesn't open, **Debug Console** doesn't open at bottom, and the **Run and Debug** Side Bar with **Watch** pane doesn't open.  This indicates that Visual Studio Code is not in Debug mode.
@@ -354,3 +353,14 @@ At this point, you could work with CSS edits or step through code in the debugge
 * [demo-to-do](https://microsoftedge.github.io/Demos/demo-to-do/) - the demo web app running on the `github.io` server.
 * [Source code for demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
 * [MicrosoftEdge/Demos repo](https://github.com/MicrosoftEdge/Demos)
+
+<!--
+**Often-needed strings:**
+
+C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html
+git bash: cd C:/Users/myusername/Documents/GitHub/Demos/demo-to-do/
+npx http-server
+C:/Users/myusername/Documents/GitHub/Demos/demo-to-do/index.html
+http://localhost:8080/
+https://microsoftedge.github.io/Demos/demo-to-do/
+-->
