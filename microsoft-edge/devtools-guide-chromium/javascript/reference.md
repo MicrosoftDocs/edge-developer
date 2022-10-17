@@ -36,7 +36,7 @@ To view and edit a JavaScript file:
 
 1. Select the **Sources** tool.
 
-1. In the **Navigator** pane, select your file, to open it in the **Ed0itor** pane.
+1. In the **Navigator** pane, select your file, to open it in the **Editor** pane.
 
 1. In the **Editor** pane, edit your file.
 
