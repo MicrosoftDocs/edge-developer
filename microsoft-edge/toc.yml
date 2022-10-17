@@ -1123,7 +1123,7 @@
               href: webview2/concepts/distribution.md
               displayName: 
 
-            - name: Using iFrames in WebView2 apps
+            - name: Using frames in WebView2 apps
               href: webview2/concepts/iframes.md
               displayName: 
 
