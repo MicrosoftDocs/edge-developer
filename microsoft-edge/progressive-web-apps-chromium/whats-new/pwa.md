@@ -13,33 +13,57 @@ This page lists the updates to Progressive Web Apps (PWAs) and Web Apps from the
 
 
 <!-- ====================================================================== -->
-
 ## What's New in Microsoft Edge 105
 
-Microsoft Edge 105 brings exciting new features for PWAs, both for app UX and new developer APIs.
+Microsoft Edge 105 brings the following new features for Progressive Web Apps.
+
 
 ### Window Controls Overlay
-Available now in stable in Microsoft Edge 105 is Window Controls Overlay. This feature allows web developers to take control of the are that would normally be used by the title bar of an application to render arbitrary web content. This feature bridges the gap with modern native applications by allowing to create the effect of custom title bars on PWAs.
 
-The Window Controls Overlay API is available on Windows, macOS and Linux. 
+The **Window Controls Overlay** API is now available by default with Microsoft Edge 105. This feature makes it possible for web developers to take control of the area that would normally be used by the title bar of an installed PWA window. The PWA code can use this area to render arbitrary web content such as a custom title, navigation buttons, or a menu bar.
 
-### Notifications from web apps shows as coming from the PWA
+This feature makes PWAs installed on desktop operating systems more similar to their native counterparts.
 
- Notifications from PWAs will no longer show as coming from Microsoft Edge, but rather will display the name of the web app instead.
+The Window Controls Overlay API is available on Windows, macOS, and Linux operating systems.
+
+![A PWA, with a custom titlebar](media/custom-title-bar.png)
+
+To learn more, check out these resources:
+
+* [Display content in the title bar](../how-to/window-controls-overlay.md).
+* [Closing a 30 pixel gap between native and web](https://blogs.windows.com/msedgedev/2022/09/27/closing-pixel-gap-native-web-window-controls-overlay/).
+* [Window Controls Overlay API](https://developer.mozilla.org/docs/Web/API/Window_Controls_Overlay_API) on MDN.
 
 
+### Notifications from a PWA are now emitted from this PWA
+
+In earlier versions, the notifications created by PWAs looked like they were emitted by Microsoft Edge.
+
+With Microsoft Edge 105, notifications from PWAs now display the name of the PWA instead.
+
+![A PWA app window, with a notification shown near the Windows task bar. The notification has the PWA icon and name.](media/pwa-notifications.png)
+
+
+<!-- ====================================================================== -->
 ## What's New in Microsoft Edge 101
 
-Microsoft Edge 101 introduces the ability to search and browse for content from the PWA sidebar. 
+Microsoft Edge 101 introduces the ability to search for and browse web content by using **sidebar search** in installed PWAs.
 
-Users can access side bar search through a button in the title bar of the installed PWA.
+To access **sidebar search**:
 
- ![The Apps icon can be shown on the toolbar, for quick access.](media/sidebar-search.png)
+1. Click the **Open sidebar search** button in the title bar of the installed PWA.
 
+   ![The sidebar search icon, shown in the app title bar.](media/sidebar-search.png)
+
+1. Type a search query and press `Enter`. The search results are displayed, and you can navigate to a web page from there.
+
+   ![The sidebar search, opened on the side of a PWA, with some search results displayed](media/sidebar-search-results.png)
+
+
+<!-- ====================================================================== -->
 ## What's New in Microsoft Edge 100
 
 Microsoft Edge Dev and Canary channels moved to version 100 on February 9, 2022.  In this milestone, we're testing the following new web app features.  We expect to see these new features rolling out to Stable following the testing period.
-
 
 ### App Sync
 
