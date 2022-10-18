@@ -9,14 +9,16 @@ ms.technology: pwa
 ms.date: 08/12/2022
 ---
 # Build PWA-driven Widgets
+<!-- TODO: HAVEN'T FOUND A WAY TO REPRO. BUT AFTER RESTART, AND ADDING WIDGET, APP IS LAUNCHED AT LEAST 2 TIMES EVERYTIME I CLICK THE WIDGET, AND APP CRASHES WITH RESULT_CODE_KILLED_BAD_MESSAGE. -->
+<!-- SOMETIMES WIDGET DASHBOARD CRASHES TOO, AND RESTARTS. AND THEN MY WIDGET DOESN'T EVER GET REGISTERED. -->
 
-Native applications can expose information and let users perform tasks via Widgets in various operating systems' Widget dashboards. Examples of this include Android Home Screen Widgets, macOS Dashboard and Today Panel Widgets, the Apple Touch Bar, Samsung Daily Cards, Mini App Widgets, and smart watch app companions.
+Various operating systems have Widget dashboards that let users read content and perform tasks. Examples of this include Android Home Screen Widgets, macOS Dashboard and Today Panel Widgets, the Apple Touch Bar, Samsung Daily Cards, Mini App Widgets, and smart watch app companions.
 
 On Windows 11, Widgets can be displayed from the Taskbar.
 
-![Widgets on Windows 11](../media/windows11-widgets.png) 
+![The Widget dashboard on Windows 11](../media/windows11-widgets.png) 
 
-Progressive Web Apps (PWAs) can also declare Widgets, update them, and handle user interactions within them.
+Progressive Web Apps (PWAs) can also define Widgets on Windows 11, update them, and handle user interactions within them.
 
 ![Experimental feature](../../media/experimental-tag.png)
 
@@ -26,7 +28,7 @@ Progressive Web Apps (PWAs) can also declare Widgets, update them, and handle us
 <!-- ====================================================================== -->
 ## Enable Widgets in Microsoft Edge
 
-Widgets are experimentally supported for local testing starting with Microsoft Edge 105.
+Widgets are experimentally supported for local testing starting with Microsoft Edge 108.
 
 To test your Widgets PWA code locally, start Microsoft Edge from the command line with the `msWebAppWidgets` feature enabled:
 
@@ -36,13 +38,14 @@ To test your Widgets PWA code locally, start Microsoft Edge from the command lin
 
 In the above command, replace `C:\path\to\msedge.exe` with the correct path to the Microsoft Edge executable on your computer. Since Widgets are an experimental feature at the moment, we recommend using Microsoft Edge Canary which might be installed under the following location: `C:\Users\<your user name>\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe`.
 
-Widgets are also available as an origin trial in Microsoft Edge 106. Learn [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
+Widgets are also available as an origin trial in Microsoft Edge 108. Learn [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
+<!-- TODO: ARE WE STILL TARGETING 108 FOR THE ORIGIN TRIAL. -->
 
 
 <!-- ====================================================================== -->
 ## Define Widgets
 
-Widgets can be defined in your PWA manifest file, by using the `widgets` manifest member. This manifest member is an array which can contain multiple Widget definitions.
+Widgets are defined in your PWA manifest file, by using the `widgets` manifest member. This manifest member is an array that can contain multiple Widget definitions.
 
 ```json
 {
@@ -74,25 +77,46 @@ Each entry in the `widgets` array contains several fields, as shown below:
   ],
   "widgets": [
     {
-      "name": "Agenda",
-      "description": "Your day, at a glance",
-      "tag": "agenda",
-      "template": "calendar-agenda",
-      "ms_ac_template": "/widgets/template/agenda_template.ac.json",
-      "data": "/widgets/data/agenda",
+      "name": "PWAmp mini player",
+      "description": "Widget to control the PWAmp music player",
+      "tag": "pwamp",
+      "template": "pwamp-template",
+      "ms_ac_template": "widgets/mini-player.json",
+      "data": "widgets/mini-player-data.json",
       "type": "application/json",
-      "auth": true,
-      "update": 900
+      "screenshots": [
+        {
+          "src": "./screenshot-widget.png",
+          "sizes": "600x400",
+          "label": "The PWAmp mini-player widget"
+        }
+      ],
+      "icons": [
+        {
+          "src": "./favicon-48.png",
+          "sizes": "48x48"
+        }
+      ],
+      "backgrounds": [
+        {
+          "src": "./widgets/background.png",
+          "sizes": "600x400"
+        }
+      ],
+      "auth": false,
+      "update": 100
     }
   ]
 }
 ```
 
-In the above example, an agenda Widget is defined by the PWA. Possible fields are documented below.
+In the above example, an music player Widget is defined by the PWA. Possible fields are documented below.
 
 | Field | Description | Required |
 |:--- |:--- |:--- |
 | `name` | The title of the Widget, presented to users. | Yes |
+| `short_name` | An alternative short version of the name. | No |
+| `description` | A description of what the Widget does. | No |
 | `tag` | A string used to reference the widget in the PWA Service Worker. | Yes |
 | `template` | The template to use to display the Widget in the operating system Widget dashboard. Note: although `template` is a required field, its value is currently not used. See `ms_ac_template` below. | Yes |
 | `ms_ac_template` | The URL to the custom Adaptive Cards template to use to display the Widget in the operating system Widget dashboard. See [Define a Widget template](#define-a-widget-template) below. | Yes |
@@ -100,32 +124,31 @@ In the above example, an agenda Widget is defined by the PWA. Possible fields ar
 | `type` | The MIME type for the Widget data. Note that it is, for now, required to be `application/json`. | Yes |
 | `auth` | A boolean indicating if the Widget requires authentication. | No |
 | `update` | The frequency, in seconds, you want the Widget to be updated. Note that to actually update the Widget, [Periodic Background Sync](./background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content) is used. | No |
-| `short_name` | An alternative short version of the name. | No |
-| `description` | A description of what the Widget does. | No |
 | `icons` | An array of icons to be used for the Widget. If not present, the manifest `icons` member will be used. | No |
+| `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). | No |
+| `backgrounds` | An array of alternative background images that can be used by the Widget host. | No |
+<!-- TODO: IT SEEMS THAT SCREENSHOTS AND BACKGROUNDS ARE NEEDED, OTHERWISE THE WIDGET DOES NOT APPEAR ON WINDOWS. EVEN IF THEY AREN'T USED. -->
+<!-- TODO: DO WE HAVE RECOMMENDATIONS FOR ICON SIZES? -->
 
 
 <!-- ====================================================================== -->
 ## Define a Widget template
 
-To make Widgets easy to create and adapt to various operating system Widget dashboards, they are displayed by using templates. Two types of templates exist:
+To make Widgets easy to create and adapt to various operating system Widget dashboards, they are displayed using templates. Two types of templates exist:
 
 * Generic templates, defined by their names using the `template` field.
 * Custom templates, defined by their URLs using a custom template field.
 
-For the time being, only custom Adaptive Cards templates are supported. Adaptive Cards are an open card exchange format that can be used to exchange UI content in a common and consistent way. See [Adaptive Cards Overview](/adaptive-cards/).
+For the time being, only custom Adaptive Cards templates are supported. Adaptive Cards is an open card exchange format that can be used to exchange UI content in a common and consistent way. See [Adaptive Cards Overview](/adaptive-cards/).
 
-To define a custom Adaptive Cards template, use the `ms_ac_template` field:
+To define a custom Adaptive Cards template, use the `ms_ac_template` field. Note that even if `template` is not used at the moment, it is a required field.
 
 ```json
 {
-  "name": "Agenda",
-  "description": "Your day, at a glance",
-  "tag": "agenda",
-  "data": "/widgets/data/agenda",
-  "type": "application/json",
-  "template": "calendar-agenda",
-  "ms_ac_template": "/widgets/template/agenda_template.ac.json"
+  ...
+  "template": "pwamp-template",
+  "ms_ac_template": "widgets/mini-player.json",
+  ...
 }
 ```
 
@@ -140,11 +163,15 @@ Here is an example of an Adaptive Cards template:
     {
       "type": "TextBlock",
       "size": "Medium",
-      "text": "Hello ${name}"
+      "text": "Now playing...",
+      "horizontalAlignment": "Center"
     },
     {
       "type": "TextBlock",
-      "text": "You have ${meetingNb} meetings today"
+      "spacing": "Large",
+      "weight": "Bolder",
+      "horizontalAlignment": "Center",
+      "text": "${song}, by ${artist}",
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -153,6 +180,7 @@ Here is an example of an Adaptive Cards template:
 ```
 
 To learn more, see [Adaptive Cards Templating](/adaptive-cards/templating/).
+<!-- TODO: THIS TEMPLATE DOES NOT SEEM TO BE USED AT ALL AT THE MOMENT. THE WIDGET ONLY APPEARS ONCE THE SW UPDATES IT. -->
 
 
 <!-- ====================================================================== -->
@@ -162,16 +190,17 @@ The template declares the user interface of a Widget.  Data then populates this 
 
 To bind data to your template, use the `data` field in your Widget definition. This field should be set to a URL that returns valid JSON data.
 
-The template defined in [the previous section](#define-a-widget-template) contains two variables: `name` and `meetingNb`, which are enclosed in the binding expression syntax: `${}`. The data that's returned by the `data` URL in your Widget definition should contain values for these variables.
+The template defined in [the previous section](#define-a-widget-template) contains two variables: `song` and `artist`, which are enclosed in the binding expression syntax: `${}`. The data that's returned by the `data` URL in your Widget definition should contain values for these variables.
 
 Here is an example of what the `data` URL might return: 
 
 ```json
 {
-  "name": "Amelie Garner",
-  "meetingNb": 3
+  "song": "I Will Always Love You",
+  "artist": "Whitney Houston"
 }
 ```
+<!-- TODO: THE DATA FIELD DOES NOT SEEM TO BE USED AT THE MOMENT. THE WIDGET ONLY APPEARS ONCE THE SW UPDATES IT. -->
 
 
 <!-- ====================================================================== -->
@@ -188,24 +217,35 @@ Here is an example of an action defined in a custom Adaptive Cards template:
     {
       "type": "TextBlock",
       "size": "Medium",
-      "text": "Hello ${name}"
+      "text": "Now playing...",
+      "horizontalAlignment": "Center"
     },
     {
       "type": "TextBlock",
-      "text": "You have ${meetingNb} meetings today"
+      "spacing": "Large",
+      "weight": "Bolder",
+      "horizontalAlignment": "Center",
+      "text": "${song}, by ${artist}",
     }
   ],
   "actions": [
     {
       "type": "Action.Execute",
-      "title": "Create a new meeting",
-      "verb": "create-meeting"
+      "title": "Previous",
+      "verb": "previous-song"
+    },
+    {
+      "type": "Action.Execute",
+      "title": "Next",
+      "verb": "next-song"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
   "version": "1.5"
 }
 ```
+
+Note the `verb` field in the above JSON. It will be used when handling Widget actions in your service worker code.
 
 
 <!-- ====================================================================== -->
@@ -214,11 +254,14 @@ Here is an example of an action defined in a custom Adaptive Cards template:
 Once a user executes an action defined in a Widget, an event is triggered in the PWA's service worker. To handle the user action, listen to the `widgetclick` event in your service worker code:
 
 ```javascript
-self.addEventListener("widgetclick", event => {
-  const action = event.action;
-
-  if (action === "create-meeting") {
-    // Application logic code to create a meeting.
+self.addEventListener('widgetclick', (event) => {
+  switch (event.action) {
+    case 'previous-song':
+      // Application logic to play the previous song...
+      break;
+    case 'next-song':
+      // Application logic to play the next song...
+      break;
   }
 });
 ```
@@ -303,7 +346,7 @@ See the [Service Worker API reference](#service-worker-api-reference) below for 
 <!-- ====================================================================== -->
 ## Access Widget instances at runtime
 
-Widget instances can be accessed at runtime from your service worker code. This can be useful for updating Widgets proactively, even when there are no user interaction events. For example, you may wish to update a Widget instance on a push notification, or a periodic sync.
+Widget instances can be accessed at runtime from your service worker code. This can be useful for updating Widgets proactively, even when there are no user interaction events. For example, you may wish to update a Widget instance on a push notification, a periodic sync, or when the user interacts with your application.
 
 For more information about push notifications, see [Add push notifications to your PWA](notifications-badges.md#add-push-notifications-to-your-pwa) and for more information about periodic syncs, see [Use the Periodic Background Sync API to regularly get fresh content](background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
 
@@ -417,13 +460,13 @@ self.addEventListener("widgetclick", function(event) {
   const host_id = event.hostId;
   const widget = event.widget;
   const instance_id = event.instanceId;
-    
+
   switch (action) {
     // If a widget is being installed.
     case "widget-install":
       event.waitUntil(onWidgetInstall(instance_id, widget));
       break;
-    
+
     // If a widget is being uninstalled.
     case "widget-uninstall":
       event.waitUntil(onWidgetUninstall(instance_id, widget));
@@ -433,9 +476,17 @@ self.addEventListener("widgetclick", function(event) {
     case "widget-resume":
       event.waitUntil(onWidgetResume(host_id));
       break;
-    
+
     // Custom Actions.
-    case "refresh":
+    case 'previous-song':
+      // Application logic to play the previous song...
+      // Update the widget to show the right information.
+      event.waitUntil(updateInstance(instance_id, widget));
+      break;
+
+    case 'next-song':
+      // Application logic to play the next song...
+      // Update the widget to show the right information.
       event.waitUntil(updateInstance(instance_id, widget));
       break;
   }
