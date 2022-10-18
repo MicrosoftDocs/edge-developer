@@ -506,6 +506,22 @@ self.addEventListener("periodicsync", event => {
 
 
 <!-- ====================================================================== -->
+## Demo app
+
+PWAmp is a PWA demo app that defines a Widget.
+
+1. Follow the instructions in [enable Widgets in Microsoft Edge](#enable-widgets-in-microsoft-edge).
+1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) and install the app on Windows 11.
+1. Open the Windows 11 Widget dashboard by pressing `Ctrl+W`.
+1. Click **Add widgets** to open the **Widgets settings** screen, scroll to the **PWAmp mini player** Widget and add it.
+1. Close the **Widgets settings** screen. The **PWAmp mini player** is now displayed in the Widget dashboard.
+
+The PWAmp Widget displays the current song and buttons to play the previous or next song.
+
+![Windows Widget dashboard, next to the PWAmp demo app. The Widget dashboard contains the PWAmp mini player Widget, showing the current song playing in the PWAmp app](../media/pwamp-widget.png)
+
+
+<!-- ====================================================================== -->
 <!-- Widgets are too early in the making for MDN. But there is enough complexity with the APIs that a reference doc is needed.
 For now we are documenting all functions and objects in this section. When Widgets become standard, move this to MDN and remove the section. -->
 ## Service Worker API reference
