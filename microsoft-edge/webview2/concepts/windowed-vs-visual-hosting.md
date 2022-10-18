@@ -87,7 +87,7 @@ The `CoreWebView2Controller` properties and methods:
 <!-- ====================================================================== -->
 ## Windowed hosting
 
-Windowed hosting can be described as a whiteboard or container that stores information.  You can have multiple whiteboards in your app that will each be used as a WebView component to access web content.  Some of the Output/Input commands are handled for you by the framework you choose; however, you will still need to handle window management.
+Windowed hosting can be described as an HWND that stores information.  You can have multiple HWNDs in your app that will each be used as a WebView component to access web content.  Some of the Output/Input commands are handled for you by the framework you choose; however, you will still need to handle window management.
 
 Benefits for Windowed hosting include:
 
@@ -302,11 +302,9 @@ WebView2 can specify a default background color. This can be any opaque color or
 <!-- ====================================================================== -->
 ## Visual hosting
 
-Visual Hosting can be described as a single whiteboard in which the information is written directly to the board. By doing so, content is embedded to a location on the whiteboard. This location must handle how it will scale and behave in an app when there's interaction with the app. In addition to the window management described  for windowed hosting, visual hosting will need the app to manage the composition-based rendering, when it receives any and all user interactions.
+In Visual Hosting, content is embedded to a given location on the application. This location must handle how it will scale and behave in an app when there's interaction with the application. In addition to the window management described for windowed hosting, visual hosting will need the app to manage the composition-based rendering, when it receives any and all user interactions.
 
 If your WebView2 app uses visual hosting:
-
-* The controls or configurations to set the DPI scaling must be set by the app.
 
 * Inputs are routed to the app's `HWND` and must be configured to send the spatial input (for example, mouse, touch, and pen) based on positions, _not_ what currently has focus like a keyboard.
 
