@@ -6,84 +6,111 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 10/11/2022
+ms.date: 10/18/2022
 ---
 # Support multiple profiles under a single user data folder
 
-To achieve data separation, a WebView2 app can choose to use different user data folders for different WebView2 controls. However, in such way you'll have to be running multiple WebView2 runtime instances (each including a browser process and a bunch of child processes), which means much more consumption for system resources including memory, CPU footprint, disk space, so it is not desirable.
+The WebView2 Multiple Profiles API allows you to create and manipulate user profiles to work with your WebView2 controls.  Profiles in WebView2 are conceptually similar to profiles in Microsoft Edge.  Multiple profile support enables a WebView2 app to have multiple profiles under a single user data folder.
 
-Now we have a more desirable solution: multiple profile support, which enables a WebView2 app to have multiple profiles under a single user data folder, each profile has a dedicated profile folder to save browser data, which means separate browsing data storage, such as cookies, user preference settings, and cached resources. All the WebView2 controls associated with the same profile share the single profile folder. 
-
-Note that the profile maps to the same concept of Edge browser profile.
-
-WebView2 multiple profile API allows you to create and manipulate profiles to work with your WebView2 controls to fulfill your needs.
+Each profile has a dedicated profile folder to save browser data, which provides separate browsing data storage for each user, such as cookies, user preference settings, and cached resources.  All the WebView2 controls that are associated with the same user profile share a single profile folder.
 
 
-<!-- ====================================================================== -->
-## Specify the profile when creating WebView2
+#### Previous approach: Using a different user data folder for each WebView2 control
 
-This method creates an options object to give specific information of a profile, including `ProfileName` and `IsInPrivateModeEnabled`. This object is to be used to specify the target profile when creating a WebView2 control.
-
-
-<!-- ------------------------------ -->
-
-# [C#](#tab/csharp)
-
-TODO
+Previously, without multi-profile support, to achieve data separation, a WebView2 app could use different user data folders for different WebView2 controls.  However, in that approach, you must run multiple WebView2 runtime instances (each including a browser process and a bunch of child processes), which consumed more system resources including memory, CPU footprint, and disk space.
 
 
-<!-- ------------------------------ -->
+<!-- code listings:
+is the Spec, or Samples repo, or API Ref the best place to copy code listings from?
+-->
 
-# [C++](#tab/cpp)
-
-[ICoreWebView2Environment10::CreateCoreWebView2ControllerOptions Method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controlleroptions)
-
-[ICoreWebView2ControllerOptions Interface](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions)
-
----
-
-<!-- end of tab-set -->
-
-
-This method creates a WebView2 control and associates it with the profile you specified. If the specified profile does not exist, a new one will be created.
-
-
-<!-- ------------------------------ -->
-
-# [C#](#tab/csharp)
-
-TODO
-
-
-<!-- ------------------------------ -->
-
-# [C++](#tab/cpp)
-
-* **[ICoreWebView2Environment10](/microsoft-edge/webview2/reference/win32/icorewebview2environment10)**
-   * [CreateCoreWebView2ControllerWithOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controllerwithoptions)
-   * [CreateCoreWebView2CompositionControllerWithOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)
-
----
-
-<!-- end of tab-set -->
+<!-- n/a: 
+Deleting a profile
+* [CoreWebView2Profile.Delete method]()
+* [ICoreWebView2StagingProfile4::Delete method]()
+* [Delete profile (Win32)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#delete-profile)
+* [Delete profile (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#access-and-use-the-cookie-manager-from-profile)
+-->
 
 
 <!-- ====================================================================== -->
-### Example
+## Specify the profile when creating a WebView2
+
+#### Create an options object that defines a profile
+
+The `CreateCoreWebView2ControllerOptions` method on `CoreWebView2Environment` creates an options object, `CoreWebView2ControllerOptions`, to provide specific information about a profile, including `ProfileName` and `IsInPrivateModeEnabled`.  Use this object to specify the target profile when creating a WebView2 control instance.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Environment.CreateCoreWebView2ControllerOptions Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controlleroptions?view=webview2-dotnet-1.0.1370.28)
+   * [CoreWebView2ControllerOptions Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions?view=webview2-dotnet-1.0.1370.28)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Environment.CreateCoreWebView2ControllerOptions Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1370.28#createcorewebview2controlleroptions)
+   * [CoreWebView2ControllerOptions Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.1370.28)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Environment10::CreateCoreWebView2ControllerOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controlleroptions)
+   * [ICoreWebView2ControllerOptions interface](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions)
+
+---
+
+#### Create a WebView2 control that uses the profile
+
+The `CreateCoreWebView2ControllerWithOptions` method creates a WebView2 control and associates it with the profile you specified.  If the specified profile doesn't exist, a new profile will be created.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- Ref topic breakout: one webpage per overload; covers all overloads of the method, no need for per-overload links -->
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync?view=webview2-dotnet-1.0.1370.28)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controllerasync?view=webview2-dotnet-1.0.1370.28)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+<!-- Ref topic breakout: one webpage per type; very long webpage covers all methods of the type including overloads.  2nd overload's url adds -1 at end -->
+<!-- preserve sequence per Ref webpage.  for clarity + brevity, list param names, lowercased -->
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync(parentWindow) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1370.28#createcorewebview2compositioncontrollerasync)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync(parentWindow, options) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1370.28#createcorewebview2compositioncontrollerasync-1)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(parentWindow, options) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1370.28#createcorewebview2controllerasync)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(parentWindow) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1370.28#createcorewebview2controllerasync-1)
+
+##### [Win32/C++](#tab/win32cpp)
+
+<!-- Ref topic breakout: small dedicated iface.  link to iface to bring up overview, and link to methods to show method names -->
+* **[ICoreWebView2Environment10 interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment10)**
+   * [ICoreWebView2Environment10::CreateCoreWebView2ControllerWithOptions method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controllerwithoptions)
+   * [ICoreWebView2Environment10::CreateCoreWebView2CompositionControllerWithOptions method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)
+
+---
 
 
-<!-- ------------------------------ -->
+<!-- ====================================================================== -->
+### Example of specifying the profile when creating a WebView2
 
-# [C#](#tab/csharp)
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+check API Reference (= Samples repo?)
+
+code listing in spec: [Create WebView2 with a specific profile, then access the profile property of WebView2 (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#create-webview2-with-a-specific-profile-then-access-the-profile-property-of-webview2)
 
 ```csharp
 TODO
 ```
 
+##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- ------------------------------ -->
+check API Reference (= Samples repo?)
 
-# [C++](#tab/cpp)
+code listing in spec: [Create WebView2 with a specific profile, then access the profile property of WebView2 (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#create-webview2-with-a-specific-profile-then-access-the-profile-property-of-webview2)
+
+```csharp
+TODO
+```
+
+##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
 HRESULT AppWindow::CreateControllerWithOptions()
@@ -149,72 +176,69 @@ HRESULT AppWindow::CreateControllerWithOptions()
 
 ---
 
-<!-- end of tab-set -->
-
 
 <!-- ====================================================================== -->
 ## Access and manipulate the profile
 
-You can get the profile object by accessing the profile property of a WebView2 control.
+You can get the profile object by accessing the `Profile` property of a WebView2 control.
 
+##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- ------------------------------ -->
+* [CoreWebView2.Profile Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.profile?view=webview2-dotnet-1.0.1370.28#microsoft-web-webview2-core-corewebview2-profile)
 
-# [C#](#tab/csharp)
+##### [WinRT/C#](#tab/winrtcsharp)
 
-TODO
+* [CoreWebView2.Profile Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1370.28#profile)
 
+##### [Win32/C++](#tab/win32cpp)
 
-<!-- ------------------------------ -->
-
-# [C++](#tab/cpp)
-
-[ICoreWebView2_13::get_Profile Method](/microsoft-edge/webview2/reference/win32/icorewebview2_13#get_profile)
+* [ICoreWebView2_13::Profile property (get)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_13#get_profile)<!--no put-->
 
 ---
 
-<!-- end of tab-set -->
+After you get the profile object, you can manipulate it.  Use `CoreWebView2Profile` to get profile information and do profile-wide settings and operations.
 
+##### [.NET/C#](#tab/dotnetcsharp)
 
-Then you can manipulate the profile object. The Profile interface allows to get profile information and do profile-wide settings and operations.
+* [CoreWebView2Profile Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2profile?view=webview2-dotnet-1.0.1370.28)
 
+##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- ------------------------------ -->
+* [CoreWebView2Profile Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1370.28)
 
-# [C#](#tab/csharp)
+##### [Win32/C++](#tab/win32cpp)
 
-TODO
-
-
-<!-- ------------------------------ -->
-
-# [C++](#tab/cpp)
-
-[ICoreWebView2Profile Interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile)
-
-[ICoreWebView2Profile2 Interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile2)
+* [ICoreWebView2Profile interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile)
+   * [ICoreWebView2Profile2 interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile2) - Methods to clear browsing data.<!--keep text-->
 
 ---
-
-<!-- end of tab-set -->
 
 
 <!-- ====================================================================== -->
-### Example
+### Example of accessing and manipulating the profile
 
 
-<!-- ------------------------------ -->
+##### [.NET/C#](#tab/dotnetcsharp)
 
-# [C#](#tab/csharp)
+check API Reference (= Samples repo?)
+
+code listing in spec: [Access and use the cookie manager from profile (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#access-and-use-the-cookie-manager-from-profile)
 
 ```csharp
 TODO
 ```
 
+##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- ------------------------------ -->
+check API Reference (= Samples repo?)
 
-# [C++](#tab/cpp)
+code listing in spec: [Access and use the cookie manager from profile (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#access-and-use-the-cookie-manager-from-profile)
+
+```csharp
+TODO
+```
+
+##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
 // This is the callback passed to CreateCoreWebView2Controller.
@@ -267,8 +291,6 @@ HRESULT AppWindow::OnCreateCoreWebView2ControllerCompleted(HRESULT result, ICore
 ```
 
 ---
-
-<!-- end of tab-set -->
 
 
 <!-- ====================================================================== -->

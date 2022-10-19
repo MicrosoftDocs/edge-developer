@@ -229,5 +229,5 @@ void ClearAutofillData()
 ## See also
 
 * [Manage the user data folder](user-data-folder.md)
-* [Multiple profile support](multi-profile-support.md)
+* [Support multiple profiles under a single user data folder](multi-profile-support.md)
 * [Spec for Clear Browsing Data API](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/ClearBrowsingData.md)
