@@ -42,13 +42,13 @@ The `CreateCoreWebView2ControllerOptions` method on `CoreWebView2Environment` cr
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Environment.CreateCoreWebView2ControllerOptions Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controlleroptions?view=webview2-dotnet-1.0.1370.28)
-   * [CoreWebView2ControllerOptions Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions?view=webview2-dotnet-1.0.1370.28)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerOptions Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controlleroptions)
+   * [CoreWebView2ControllerOptions Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Environment.CreateCoreWebView2ControllerOptions Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1370.28#createcorewebview2controlleroptions)
-   * [CoreWebView2ControllerOptions Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.1370.28)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerOptions Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controlleroptions)
+   * [CoreWebView2ControllerOptions Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -64,17 +64,17 @@ The `CreateCoreWebView2ControllerWithOptions` method creates a WebView2 control 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 <!-- Ref topic breakout: one webpage per overload; covers all overloads of the method, no need for per-overload links -->
-* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync?view=webview2-dotnet-1.0.1370.28)
-* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controllerasync?view=webview2-dotnet-1.0.1370.28)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controllerasync)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 <!-- Ref topic breakout: one webpage per type; very long webpage covers all methods of the type including overloads.  2nd overload's url adds -1 at end -->
 <!-- preserve sequence per Ref webpage.  for clarity + brevity, list param names, lowercased -->
-* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync(parentWindow) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1370.28#createcorewebview2compositioncontrollerasync)
-* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync(parentWindow, options) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1370.28#createcorewebview2compositioncontrollerasync-1)
-* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(parentWindow, options) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1370.28#createcorewebview2controllerasync)
-* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(parentWindow) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1370.28#createcorewebview2controllerasync-1)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync(parentWindow) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2compositioncontrollerasync)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync(parentWindow, options) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2compositioncontrollerasync-1)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(parentWindow, options) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controllerasync)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(parentWindow) Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controllerasync-1)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -87,7 +87,7 @@ The `CreateCoreWebView2ControllerWithOptions` method creates a WebView2 control 
 
 
 <!-- ====================================================================== -->
-### Example of specifying the profile when creating a WebView2
+## Example of specifying the profile when creating a WebView2
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -184,11 +184,11 @@ You can get the profile object by accessing the `Profile` property of a WebView2
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2.Profile Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.profile?view=webview2-dotnet-1.0.1370.28#microsoft-web-webview2-core-corewebview2-profile)
+* [CoreWebView2.Profile Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.profile#microsoft-web-webview2-core-corewebview2-profile)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.Profile Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1370.28#profile)
+* [CoreWebView2.Profile Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#profile)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -200,11 +200,11 @@ After you get the profile object, you can manipulate it.  Use `CoreWebView2Profi
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Profile Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2profile?view=webview2-dotnet-1.0.1370.28)
+* [CoreWebView2Profile Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2profile)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Profile Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1370.28)
+* [CoreWebView2Profile Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -215,7 +215,7 @@ After you get the profile object, you can manipulate it.  Use `CoreWebView2Profi
 
 
 <!-- ====================================================================== -->
-### Example of accessing and manipulating the profile
+## Example of accessing and manipulating the profile
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
