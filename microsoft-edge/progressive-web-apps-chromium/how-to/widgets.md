@@ -10,6 +10,7 @@ ms.date: 08/12/2022
 ---
 # Build PWA-driven Widgets
 <!-- TODO: HAVEN'T FOUND A WAY TO REPRO. BUT AFTER RESTART, AND ADDING WIDGET, APP IS LAUNCHED AT LEAST 2 TIMES EVERYTIME I CLICK THE WIDGET, AND APP CRASHES WITH RESULT_CODE_KILLED_BAD_MESSAGE. -->
+<!-- APP SEEMS TO CRASH WHEN: OPEN APP, ADD WIDGET, FINE, CLOSE APP, WIDGET IS STILL HERE, CLICK ON ACTION, APP OPENS UP, CLICK AGAIN ON ACTION, OTHER APP OPENS UP AGAIN, APP CRASHES. -->
 <!-- SOMETIMES WIDGET DASHBOARD CRASHES TOO, AND RESTARTS. AND THEN MY WIDGET DOESN'T EVER GET REGISTERED. -->
 
 Various operating systems have Widget dashboards that let users read content and perform tasks. Examples of this include Android Home Screen Widgets, macOS Dashboard and Today Panel Widgets, the Apple Touch Bar, Samsung Daily Cards, Mini App Widgets, and smart watch app companions.
