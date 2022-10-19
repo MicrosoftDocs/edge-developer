@@ -79,7 +79,7 @@ You can see your web project in a dedicated tab inside of Visual Studio Code, an
 
 ![The screencast showing the current document in an emulated iPhone 5 in the correct size and with an emulated touchscreen interface.](../../media/2021/11/edge-devtools-for-vscode-simulated-iphone-red-boxes.png)
 
-For details about device emulation, see [Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation).
+For details about device emulation, see [Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md).
 
 
 ### Live, inline issue reporting
@@ -88,7 +88,7 @@ The extension also now features live, inline issue reporting.  Instead of findin
 
 ![An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information.](../../media/2021/11/edge-devtools-for-vscode-inline-issue-reporting-addl-red.png)
 
-For details, see [Inline and live issue analysis](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#inline-and-live-issue-analysis).
+For details, see [Inline and live issue analysis](../../../../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md).
 
 
 <!-- ====================================================================== -->

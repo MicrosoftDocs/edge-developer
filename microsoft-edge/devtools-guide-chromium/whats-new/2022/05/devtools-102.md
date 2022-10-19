@@ -32,9 +32,9 @@ Click the new **Emulate vision deficiencies** (![The Emulate vision deficiencies
 Other new features include a simpler way to toggle CSS mirroring, which now also supports sourcemaps.  This means that you can debug and modify CSS created by Sass, React, and other abstractions live in the browser and see the changes in the source files.
 
 See also:
-* [Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation) in _Microsoft Edge DevTools extension for Visual Studio Code_.
+* [Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md)
 * [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md)
-* [CSS Mirror Editing with Sourcemaps: Known Issues and Feedback](https://github.com/microsoft/vscode-edge-devtools/issues/965).
+* [CSS Mirror Editing with Sourcemaps: Known Issues and Feedback](https://github.com/microsoft/vscode-edge-devtools/issues/965)
 
 
 <!-- ====================================================================== -->
