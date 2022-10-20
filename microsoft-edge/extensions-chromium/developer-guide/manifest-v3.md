@@ -30,7 +30,9 @@ An overview of the changes involved, as described in [Overview of Manifest V3 - 
 
 To help you plan, consider the following schedule for Microsoft Partner Center and Microsoft Edge changes.
 
-This timeline is subject to change. This article will be updated to share exact details as the milestones draw nearer.
+We are currently in the process of updating our MV3 migration timelines.
+
+As of now, we will continue to follow Chromium’s MV3 timelines. While we fundamentally align with these timelines, we will continue to analyze the concerns raised by extension developers and explore the right path for Microsoft Edge Addons ecosystem as a whole. We will independently decide on MV3 migration timelines for Microsoft Edge Addons, and share an update here once they are available.
 
 | Timeframe	| Microsoft Partner Center changes | Microsoft Edge changes |
 |--- |--- |--- |
