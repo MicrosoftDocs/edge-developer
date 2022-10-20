@@ -52,23 +52,14 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install a preview channel of Microsoft Edge
+## Step 3 - Install the WebView2 Runtime (optional)
 
 <!-- TODO: delete this major step? -->
 
-1. Install any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
-   *  Windows 7
-   *  Windows 8.1
-   *  Windows 10
-   *  Windows 11
+<!-- todo: test the article without doing this step -->
 
-   We recommend using the Canary channel.  The minimum required version is 82.0.488.0.
+You and the users don't need to install the WebView2 Runtime on Windows 10 or Windows 11.
 
-
-<!-- ====================================================================== -->
-## Step 4 - Install the WebView2 Runtime (optional)
-
-<!-- TODO: delete this major step? -->
 
 1. Optionally, install the WebView2 <!--Fixed Version--> Runtime.  Go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2), click the **Download Now** link.  In the **Fixed Version** section, select a version and architecture, and then click the **Download** button.  A file such as `Microsoft.WebView2.FixedVersionRuntime.103.0.1264.71.x64.cab` is placed in your **Downloads** directory.  
 
@@ -82,7 +73,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 5 - Create a single-window app
+## Step 4 - Create a single-window app
 
 Start with a basic desktop project that contains a single main window.
 
@@ -140,7 +131,7 @@ You now have an empty WinForms project that runs.  Next, set up the project to a
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
-## Step 6 - Install the WebView2 SDK
+## Step 5 - Install the WebView2 SDK
 
 For every WebView2 project, you use the NuGet package manager within Visual Studio to add the WebView2 SDK to the project.  You install the **Microsoft.Web.WebView2** SDK NuGet package for use by the current project.
 
@@ -188,7 +179,7 @@ You've added the WebView2 SDK to the project, but haven't added any WebView2 cod
 
 
 <!-- ====================================================================== -->
-## Step 7 - Create a single WebView2 control
+## Step 6 - Create a single WebView2 control
 
 Now that the WebView2 SDK is installed for the WinForms project, add a WebView2 control to the app, as follows:
 
@@ -248,7 +239,7 @@ If you're working on a high-resolution monitor, you may need to [configure your 
 
 
 <!-- ====================================================================== -->
-## Step 8 - Add controls and process window resize events
+## Step 7 - Add controls and process window resize events
 
 Add more controls to your Windows Forms form from the toolbox, and then process window resize events, as follows.
 
@@ -338,7 +329,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 
 
 <!-- ====================================================================== -->
-## Step 9 - Navigation
+## Step 8 - Navigation
 
 Enable users to change the URL that the WebView2 control displays, by reading the text entered in the text box, to serve as an address bar.
 
@@ -386,7 +377,7 @@ Enable users to change the URL that the WebView2 control displays, by reading th
 
 
 <!-- ====================================================================== -->
-## Step 10 - Navigation events
+## Step 9 - Navigation events
 
 <!--
 maintenance link (keep)
@@ -459,7 +450,7 @@ To demonstrate how to use the events, start by registering a handler for `Naviga
 
 
 <!-- ====================================================================== -->
-## Step 11 - Scripting
+## Step 10 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript runs with specific timing.
 
@@ -501,7 +492,7 @@ For example, add a script that sends an alert when a user navigates to a non-HTT
 
 
 <!-- ====================================================================== -->
-## Step 12 - Communication between host and web content
+## Step 11 - Communication between host and web content
 
 The host and web content can use `postMessage` to communicate with each other as follows:
 
@@ -594,8 +585,16 @@ Congratulations, you built your first WebView2 app!
 
 
 <!-- ====================================================================== -->
+## Step 12 - Deploy the app
+
+tbd - links
+
+
+<!-- ====================================================================== -->
 ## See also
 
 * [WinForms sample app](../samples/webview2windowsformsbrowser.md) - Demonstrates more WebView2 APIs than the present tutorial.
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - Conceptual and how-to articles about building and deploying WebView2 apps.
 * [Microsoft.Web.WebView2.WinForms](/dotnet/api/microsoft.web.webview2.winforms) - API Reference.
+
+<!-- todo: remove "[see also]" link, replace by direct links -->
