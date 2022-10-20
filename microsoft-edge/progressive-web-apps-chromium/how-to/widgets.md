@@ -238,7 +238,7 @@ Here is an example of an action defined in a custom Adaptive Cards template:
 }
 ```
 
-Note the `verb` field in the above JSON template. It will be used when handling widget actions in your service worker code. See []().
+Note the `verb` field in the above JSON template. It will be used when handling widget actions in your service worker code. See [Handle widget actions](#handle-widget-actions).
 
 
 <!-- ====================================================================== -->
