@@ -28,113 +28,87 @@
 # What's New firstchild article
             - name: What's new in Microsoft Edge DevTools
               href: devtools-guide-chromium/whats-new/whats-new.md
-              displayName: 
+              displayName: release notes, announcements
 
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             - name: Microsoft Edge 106
               href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
-              displayName: what's new, announcements, release notes
 
             - name: Microsoft Edge 105
               href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
-              displayName: what's new, announcements, release notes
 
             - name: Microsoft Edge 104
               href: devtools-guide-chromium/whats-new/2022/08/devtools-104.md
-              displayName: what's new, announcements, release notes
 
             - name: Microsoft Edge 103
               href: devtools-guide-chromium/whats-new/2022/06/devtools-103.md
-              displayName: what's new, announcements, release notes
 
             - name: Microsoft Edge 102
               href: devtools-guide-chromium/whats-new/2022/05/devtools-102.md
-              displayName: what's new, announcements, release notes
 
             - name: Microsoft Edge 101
               href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
-              displayName: what's new, announcements, release notes
 
             - name: Microsoft Edge 100
               href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
-              displayName: what's new, announcements, release notes
 
             - name: Microsoft Edge 99
               href: devtools-guide-chromium/whats-new/2022/03/devtools.md
-              displayName: what's new, announcements, release notes
 
             - name: Microsoft Edge 98
               href: devtools-guide-chromium/whats-new/2022/02/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 97
               href: devtools-guide-chromium/whats-new/2022/01/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 96
               href: devtools-guide-chromium/whats-new/2021/11/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 95
               href: devtools-guide-chromium/whats-new/2021/10/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 94
               href: devtools-guide-chromium/whats-new/2021/09/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 93
               href: devtools-guide-chromium/whats-new/2021/07/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 92
               href: devtools-guide-chromium/whats-new/2021/05/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 90
               href: devtools-guide-chromium/whats-new/2021/02/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 89
               href: devtools-guide-chromium/whats-new/2021/01/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 87
               href: devtools-guide-chromium/whats-new/2020/10/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 86
               href: devtools-guide-chromium/whats-new/2020/08/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 85
               href: devtools-guide-chromium/whats-new/2020/06/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 84
               href: devtools-guide-chromium/whats-new/2020/05/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 81
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
-              displayName: what's new, announcements
 
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-              displayName: what's new, announcements
 
 # Experimental features ------------------------------------------------------------------
         - name: Experimental features
@@ -787,14 +761,80 @@
           href: devtools-guide-chromium/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 
-# /DevTools
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
-    - name: DevTools for Visual Studio Code
-      items:
-        - name: DevTools extension for Visual Studio Code
-          href: visual-studio-code/microsoft-edge-devtools-extension.md
-          displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
+        - name: DevTools for Visual Studio Code
+          items:
+
+            # was long article, now firstchild/landing page
+            - name: DevTools extension for Visual Studio Code
+              href: visual-studio-code/microsoft-edge-devtools-extension.md
+              displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
+
+            - name: Installing the DevTools extension for Visual Studio Code
+              href: visual-studio-code/microsoft-edge-devtools-extension/install.md
+              displayName: installing, setup
+
+            - name: Get started using the DevTools extension for Visual Studio Code
+              href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
+              displayName: tutorial, demo to do
+
+            - name: Opening DevTools and the DevTools browser
+              href: visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md
+              displayName: 
+
+            - name: Integration with Visual Studio Code debugging
+              href: visual-studio-code/microsoft-edge-devtools-extension/debugging-a-webpage.md
+              displayName: 
+
+            - name: Opening source files from the Elements tool
+              href: visual-studio-code/microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md
+              displayName: 
+
+            - name: Inline and live issue analysis
+              href: visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
+              displayName: 
+
+            - name: Device and state emulation
+              href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
+              displayName: 
+
+            - name: Update .css files from within the Styles tool (CSS mirror editing)
+              href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
+              displayName: Syncing live changes from the Styles tool by using CSS mirror editing # previous title
+
+            - name: Network tool integration
+              href: visual-studio-code/microsoft-edge-devtools-extension/network-tool-integration.md
+              displayName: 
+
+            - name: Console integration
+              href: visual-studio-code/microsoft-edge-devtools-extension/console-integration.md
+              displayName: 
+
+            - name: Application tool integration
+              href: visual-studio-code/microsoft-edge-devtools-extension/application-tool-integration.md
+              displayName: 
+
+            - name: Changing the extension settings
+              href: visual-studio-code/microsoft-edge-devtools-extension/change-extension-settings.md
+              displayName: 
+
+            - name: The launch.json file for the DevTools extension
+              href: visual-studio-code/microsoft-edge-devtools-extension/launch-json.md
+              displayName: 
+
+            - name: Using an external browser window
+              href: visual-studio-code/microsoft-edge-devtools-extension/external-browser-window.md
+              displayName: 
+
+            - name: Troubleshooting the DevTools extension
+              href: visual-studio-code/microsoft-edge-devtools-extension/troubleshooting.md
+              displayName: error messages
+
+            - name: Getting in touch with the Microsoft Edge DevTools Extension team
+              href: visual-studio-code/microsoft-edge-devtools-extension/contact-devtools-extension-team.md
+              displayName: 
+# /DevTools
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
@@ -982,6 +1022,7 @@
 
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
+          displayName: release notes, announcements
 
         - name: Sample PWAs
           href: progressive-web-apps-chromium/demo-pwas.md
@@ -1244,7 +1285,7 @@
 
         - name: Release Notes for the WebView2 SDK
           href: webview2/release-notes.md
-          displayName: 
+          displayName: what's new, announcements
 
         - name: WebView2 Roadmap
           href: webview2/roadmap.md
@@ -1381,9 +1422,12 @@
           href: visual-studio-code/ide-integration.md
           displayName: 
 
+        - name: DevTools extension for Visual Studio Code # aux jump page
+          href: visual-studio-code/microsoft-edge-devtools-extension/devtools-extension.md
+
         - name: Opening source files in Visual Studio Code
           href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
-          displayName: 
+          displayName: Open source files in Visual Studio Code # variant title string
 
         - name: Debug Microsoft Edge in Visual Studio Code
           href: visual-studio-code/debugger-for-edge.md

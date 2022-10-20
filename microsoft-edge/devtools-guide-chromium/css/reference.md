@@ -274,7 +274,7 @@ To add a class to an element:
 
 1. Click **.cls**.
 
-1. Enter the name of the class in the **Add New Class** text box.
+1. Enter the name of the class in the **Add new class** text box.
 
 1. Press `Enter`.
 
