@@ -282,12 +282,12 @@ The article [Navigation events for WebView2 apps](https://learn.microsoft.com/mi
 
 The following features, listed in [Overview of WebView2 features and APIs](https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/overview-features-apis), include frame-related APIs:
 
-* [iFrames](./overview-features-apis.md#iframes)
-* [Script execution](./overview-features-apis.md#script-execution)
-* [Web messaging](./overview-features-apis.md#web-messaging)
-* [Permissions](./overview-features-apis.md#permissions)
-* [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating)
-* [Navigation events](./overview-features-apis.md#navigation-events)
+* [iFrames](./overview-features-apis.md#iframes)<!--same link is in h2 "Subscribing to the iFrameCreated event" above-->
+* [Script execution](./overview-features-apis.md#script-execution)<!--same link is in h2 "Running JavaScript code in iFrames by using ExecuteScript" above-->
+* [Web messaging](./overview-features-apis.md#web-messaging)<!--link doesn't exist in an h2 section above-->
+* [Permissions](./overview-features-apis.md#permissions)<!--link doesn't exist in an h2 section above-->
+* [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating)<!--same link is in h2 "Navigation and navigation events" above-->
+* [Navigation events](./overview-features-apis.md#navigation-events)<!--same link is in h2 "Navigation and navigation events" above-->
 
 
 <!-- ====================================================================== -->
