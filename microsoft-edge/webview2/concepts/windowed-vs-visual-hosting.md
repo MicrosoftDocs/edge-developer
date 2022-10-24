@@ -49,7 +49,9 @@ Key compatibility limitations include the operating system and rendering in fram
 
 
 <!-- ------------------------------ -->
-#### Operating systems 7 and Windows 8 can only do windowed hosting.
+#### Operating systems
+
+Windows 7 and Windows 8 can only do windowed hosting, not visual hosting.
 
 
 <!-- ------------------------------ -->
@@ -85,7 +87,7 @@ The `CoreWebView2Controller` properties and methods:
 <!-- ====================================================================== -->
 ## Windowed hosting
 
-Windowed hosting can be described as an HWND that stores information.  You can have multiple HWNDs in your app that will each be used as a WebView component to access web content.  Some of the Output/Input commands are handled for you by the framework you choose; however, you will still need to handle window management. 
+Windowed hosting can be described as an HWND that stores information.  You can have multiple HWNDs in your app that will each be used as a WebView component to access web content.  Some of the Output/Input commands are handled for you by the framework you choose; however, you will still need to handle window management.
 
 Benefits for Windowed hosting include:
 
@@ -95,11 +97,13 @@ Benefits for Windowed hosting include:
 
 * You don't have to manage the various composition-based rendering (for example, Inputs, Outputs, and Accessibility controls) if you don't want to.
 
-For general information regarding Window management and `HWND` functionality, check out our MSDN on [Window Overview](https://learn.microsoft.com/en-us/windows/win32/winmsg/about-windows).
+For general information regarding Window management and `HWND` functionality, see [About Windows](/windows/win32/winmsg/about-windows).
+
+
 <!-- ------------------------------ -->
 #### Window management
 
-The following aspects of window management are handled in a windowed hosting environment. 
+The following aspects of window management are handled in a windowed hosting environment.
 
 
 <!-- ---------- -->
@@ -300,13 +304,13 @@ WebView2 can specify a default background color. This can be any opaque color or
 <!-- ====================================================================== -->
 ## Visual hosting
 
-In [Visual Hosting](https://docs.microsoft.com/en-us/windows/apps/desktop/modernize/visual-layer-in-desktop-apps), content is embedded to a given location on the application. This location must handle how it will scale and behave in an app when there's interaction with the application. In addition to the window management described for windowed hosting, visual hosting will need the app to manage the composition-based rendering, when it receives any and all user interactions.
+In visual hosting, content is embedded to a given location on the application. This location must handle how content will scale and behave in an app when the user interacts with the application.  In addition to the window management described for windowed hosting, visual hosting will need the app to manage the composition-based rendering, when it receives any user interactions.  For more information about visual hosting, see [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps).
 
 If your WebView2 app uses visual hosting:
 
-* Inputs are routed to the app's `HWND` and must be configured to send the spatial input (for example, mouse, touch, and pen) based on positions, _not_ what currently has focus like a keyboard.
+* Inputs are routed to the app's `HWND` and must be configured to send the spatial input (for example, mouse, touch, and pen) based on positions, _not_ what currently has focus, such as a keyboard.
 
-The following APIs can be used when configuring WebView2 in a visual hosting environment.
+The following APIs can be used when configuring WebView2 in a visual hosting environment:
 
 
 <!-- ------------------------------ -->
