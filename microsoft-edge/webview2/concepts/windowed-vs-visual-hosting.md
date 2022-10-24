@@ -65,21 +65,21 @@ The `CoreWebView2Controller` properties and methods:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Controller.CoreWebView2 Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.corewebview2?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.Close Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controllerasync)
+* [CoreWebView2Controller.CoreWebView2 Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.corewebview2)
+* [CoreWebView2Controller.Close Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controllerasync)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Controller.CoreWebView2 Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_corewebview2)
-* [CoreWebView2Controller.Close Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#close)
-* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1293.44#createcorewebview2controllerasync)
+* [CoreWebView2Controller.CoreWebView2 Property](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_corewebview2)
+* [CoreWebView2Controller.Close Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#close)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controllerasync)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::CoreWebView2 property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_corewebview2)<!--no put-->
-* [ICoreWebView2Controller::Close method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#close)
-* [ICoreWebView2Environment::CreateCoreWebView2Controller method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-1.0.1293.44#createcorewebview2controller)
+* [ICoreWebView2Controller::CoreWebView2 property](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_corewebview2)<!--no put-->
+* [ICoreWebView2Controller::Close method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)
+* [ICoreWebView2Environment::CreateCoreWebView2Controller method](/microsoft-edge/webview2/reference/win32/icorewebview2environment#createcorewebview2controller)
 
 ---
 
@@ -111,18 +111,18 @@ The following aspects of window management are handled in a windowed hosting env
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Controller.Bounds Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.bounds?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-bounds)
-* [CoreWebView2Controller.IsVisible Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Controller.Bounds Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.bounds#microsoft-web-webview2-core-corewebview2controller-bounds)
+* [CoreWebView2Controller.IsVisible Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Controller.Bounds Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#bounds)
-* [CoreWebView2Controller.IsVisible Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#isvisible)
+* [CoreWebView2Controller.Bounds Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#bounds)
+* [CoreWebView2Controller.IsVisible Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#isvisible)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::Bounds property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_bounds), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_bounds)
-* [ICoreWebView2Controller::IsVisible property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_isvisible), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_isvisible)
+* [ICoreWebView2Controller::Bounds property (get](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_bounds), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_bounds)
+* [ICoreWebView2Controller::IsVisible property (get](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)
 
 ---
 
@@ -134,21 +134,21 @@ WebView2 `ZoomFactor` is used to scale just the web content.  This is also updat
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Controller.ZoomFactor Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactor?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-zoomfactor)
-* [CoreWebView2Controller.ZoomFactorChanged Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactorchanged?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.SetBoundsAndZoomFactor Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.setboundsandzoomfactor?view=webview2-dotnet-1.0.1293.)
+* [CoreWebView2Controller.ZoomFactor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactor#microsoft-web-webview2-core-corewebview2controller-zoomfactor)
+* [CoreWebView2Controller.ZoomFactorChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactorchanged)
+* [CoreWebView2Controller.SetBoundsAndZoomFactor Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.setboundsandzoomfactor)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Controller.ZoomFactor Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#zoomfactor)
-* [CoreWebView2Controller.ZoomFactorChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#zoomfactorchanged)
-* [CoreWebView2Controller.SetBoundsAndZoomFactor Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#setboundsandzoomfactor)
+* [CoreWebView2Controller.ZoomFactor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#zoomfactor)
+* [CoreWebView2Controller.ZoomFactorChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#zoomfactorchanged)
+* [CoreWebView2Controller.SetBoundsAndZoomFactor Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#setboundsandzoomfactor)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::ZoomFactor property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_zoomfactor), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_zoomfactor)
-* [ICoreWebView2Controller::ZoomFactorChanged event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_zoomfactorchanged), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_zoomfactorchanged)
-* [ICoreWebView2Controller::SetBoundsAndZoomFactor method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#setboundsandzoomfactor)
+* [ICoreWebView2Controller::ZoomFactor property (get](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_zoomfactor), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_zoomfactor)
+* [ICoreWebView2Controller::ZoomFactorChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_zoomfactorchanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_zoomfactorchanged)
+* [ICoreWebView2Controller::SetBoundsAndZoomFactor method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#setboundsandzoomfactor)
 
 ---
 
@@ -160,27 +160,27 @@ The `RasterizationScale` API scales all WebView2 UI including context menus, too
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Controller.BoundsMode Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.boundsmode?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-boundsmode)
-  * [CoreWebView2BoundsMode Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2boundsmode?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.RasterizationScale Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.rasterizationscale?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.RasterizationScaleChanged Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.rasterizationscalechanged?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.ShouldDetectMonitorScaleChanges Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.shoulddetectmonitorscalechanges?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Controller.BoundsMode Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.boundsmode#microsoft-web-webview2-core-corewebview2controller-boundsmode)
+  * [CoreWebView2BoundsMode Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2boundsmode)
+* [CoreWebView2Controller.RasterizationScale Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.rasterizationscale)
+* [CoreWebView2Controller.RasterizationScaleChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.rasterizationscalechanged)
+* [CoreWebView2Controller.ShouldDetectMonitorScaleChanges Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.shoulddetectmonitorscalechanges)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Controller.BoundsMode Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#boundsmode)
-  * [CoreWebView2BoundsMode Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2boundsmode?view=webview2-winrt-1.0.1293.44)
-* [CoreWebView2Controller.RasterizationScale Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#rasterizationscale)
-* [CoreWebView2Controller.RasterizationScaleChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#rasterizationscalechanged)
-* [CoreWebView2Controller.ShouldDetectMonitorScaleChanges Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#shoulddetectmonitorscalechanges)
+* [CoreWebView2Controller.BoundsMode Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#boundsmode)
+  * [CoreWebView2BoundsMode Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2boundsmode)
+* [CoreWebView2Controller.RasterizationScale Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#rasterizationscale)
+* [CoreWebView2Controller.RasterizationScaleChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#rasterizationscalechanged)
+* [CoreWebView2Controller.ShouldDetectMonitorScaleChanges Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#shoulddetectmonitorscalechanges)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::BoundsMode property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#get_bounds), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#put_bounds)
-  * [COREWEBVIEW2_BOUNDS_MODE enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1293.44#corewebview2_bounds_mode)
-* [ICoreWebView2Controller::RasterizationScale property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller3?view=webview2-1.0.1293.44#get_rasterizationscale), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller3?view=webview2-1.0.1293.44#put_rasterizationscale)
-* [ICoreWebView2Controller::RasterizationScaleChanged event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller3?view=webview2-1.0.1293.44#add_rasterizationscalechanged), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller3?view=webview2-1.0.1293.44#remove_rasterizationscalechanged)
-* [ICoreWebView2Controller::ShouldDetectMonitorScaleChanges property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller3?view=webview2-1.0.1293.44#get_shoulddetectmonitorscalechanges), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller3?view=webview2-1.0.1293.44#put_rasterizationscale)
+* [ICoreWebView2Controller::BoundsMode property (get](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_bounds), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_bounds)
+  * [COREWEBVIEW2_BOUNDS_MODE enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_bounds_mode)
+* [ICoreWebView2Controller::RasterizationScale property (get](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_rasterizationscale), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_rasterizationscale)
+* [ICoreWebView2Controller::RasterizationScaleChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#add_rasterizationscalechanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#remove_rasterizationscalechanged)
+* [ICoreWebView2Controller::ShouldDetectMonitorScaleChanges property (get](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_shoulddetectmonitorscalechanges), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_rasterizationscale)
 
 ---
 
@@ -192,30 +192,30 @@ WebView2 raises events to let the app know when it gains or loses focus.  For ta
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Controller.MoveFocus Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocus?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2MoveFocusReason Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusreason?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.MoveFocusRequested Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocusrequested?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2MoveFocusRequestedEventArgs Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusrequestedeventargs?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.GotFocus Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.gotfocus?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.LostFocus Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.lostfocus?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Controller.MoveFocus Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocus)
+  * [CoreWebView2MoveFocusReason Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusreason)
+* [CoreWebView2Controller.MoveFocusRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocusrequested)
+  * [CoreWebView2MoveFocusRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusrequestedeventargs)
+* [CoreWebView2Controller.GotFocus Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.gotfocus)
+* [CoreWebView2Controller.LostFocus Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.lostfocus)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Controller.MoveFocus Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#movefocus)
-  * [CoreWebView2MoveFocusReason Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2movefocusreason?view=webview2-winrt-1.0.1293.44)
-* [CoreWebView2Controller.MoveFocusRequested Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#movefocusrequested)
-  * [CoreWebView2MoveFocusRequestedEventArgs Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2movefocusrequestedeventargs?view=webview2-winrt-1.0.1293.44)
-* [CoreWebView2Controller.GotFocus Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#gotfocus)
-* [CoreWebView2Controller.LostFocus Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#lostfocus)
+* [CoreWebView2Controller.MoveFocus Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#movefocus)
+  * [CoreWebView2MoveFocusReason Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2movefocusreason)
+* [CoreWebView2Controller.MoveFocusRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#movefocusrequested)
+  * [CoreWebView2MoveFocusRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2movefocusrequestedeventargs)
+* [CoreWebView2Controller.GotFocus Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#gotfocus)
+* [CoreWebView2Controller.LostFocus Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#lostfocus)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::MoveFocus method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#movefocus)
-  * [COREWEBVIEW2_MOVE_FOCUS_REASON enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1293.44#corewebview2_move_focus_reason)
-* [ICoreWebView2Controller::MoveFocusRequested event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_movefocusrequested), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_movefocusrequested)
-  * [ICoreWebView2MoveFocusRequestedEventArgs interface](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2movefocusrequestedeventargs?view=webview2-1.0.1293.44)
-* [ICoreWebView2Controller::GotFocus event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_gotfocus), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_gotfocus)
-* [ICoreWebView2Controller::LostFocus event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_lostfocus), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_lostfocus)
+* [ICoreWebView2Controller::MoveFocus method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#movefocus)
+  * [COREWEBVIEW2_MOVE_FOCUS_REASON enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_move_focus_reason)
+* [ICoreWebView2Controller::MoveFocusRequested event (add](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_movefocusrequested), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_movefocusrequested)
+  * [ICoreWebView2MoveFocusRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2movefocusrequestedeventargs)
+* [ICoreWebView2Controller::GotFocus event (add](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_gotfocus), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_gotfocus)
+* [ICoreWebView2Controller::LostFocus event (add](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_lostfocus), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_lostfocus)
 
 ---
 
@@ -228,18 +228,18 @@ WebView2 can be re-parented to a different parent `HWND`. WebView2 also needs to
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Controller.NotifyParentWindowPositionChanged Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.notifyparentwindowpositionchanged?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.ParentWindow Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.notifyparentwindowpositionchanged?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Controller.NotifyParentWindowPositionChanged Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.notifyparentwindowpositionchanged)
+* [CoreWebView2Controller.ParentWindow Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.notifyparentwindowpositionchanged)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Controller.NotifyParentWindowPositionChanged Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.notifyparentwindowpositionchanged?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.ParentWindow Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.parentwindow?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Controller.NotifyParentWindowPositionChanged Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.notifyparentwindowpositionchanged)
+* [CoreWebView2Controller.ParentWindow Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.parentwindow)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::NotifyParentWindowPositionChanged method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#notifyparentwindowpositionchanged)
-* [ICoreWebView2Controller::ParentWindow property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller?view=webview2-winrt-1.0.1293.44#parentwindow)<!--no put-->
+* [ICoreWebView2Controller::NotifyParentWindowPositionChanged method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#notifyparentwindowpositionchanged)
+* [ICoreWebView2Controller::ParentWindow property (get)](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#parentwindow)<!--no put-->
 
 ---
 
@@ -251,27 +251,27 @@ When WebView2 has focus, it receives input directly from the user. An app may wa
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arebrowseracceleratorkeysenabled?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.AcceleratorKeyPressed Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2AcceleratorKeyPressedEventArgs Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2KeyEventKind Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2keyeventkind?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2PhysicalKeyStatus Struct](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arebrowseracceleratorkeysenabled)
+* [CoreWebView2Controller.AcceleratorKeyPressed Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed)
+  * [CoreWebView2AcceleratorKeyPressedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs)
+  * [CoreWebView2KeyEventKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2keyeventkind)
+  * [CoreWebView2PhysicalKeyStatus Struct](/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arebrowseracceleratorkeysenabled?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Controller.AcceleratorKeyPressed Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2AcceleratorKeyPressedEventArgs Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2KeyEventKind Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2keyeventkind?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2PhysicalKeyStatus Struct](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arebrowseracceleratorkeysenabled)
+* [CoreWebView2Controller.AcceleratorKeyPressed Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed)
+  * [CoreWebView2AcceleratorKeyPressedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs)
+  * [CoreWebView2KeyEventKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2keyeventkind)
+  * [CoreWebView2PhysicalKeyStatus Struct](/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Settings::AreBrowserAcceleratorKeysEnabled property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.1293.44#get_arebrowseracceleratorkeysenabled), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.1293.44#put_arebrowseracceleratorkeysenabled)
-* [ICoreWebView2Controller::AcceleratorKeyPressed event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#add_acceleratorkeypressed), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.1293.44#remove_acceleratorkeypressed)
-  * [ICoreWebView2AcceleratorKeyPressedEventArgs class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2acceleratorkeypressedeventargs?view=webview2-winrt-1.0.1293.44)
-  * [ICoreWebView2KeyEventKind enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2keyeventkind?view=webview2-winrt-1.0.1293.44)
-  * [ICoreWebView2PhysicalKeyStatus struct](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2physicalkeystatus?view=webview2-winrt-1.0.1293.44)
+* [ICoreWebView2Settings::AreBrowserAcceleratorKeysEnabled property (get](/microsoft-edge/webview2/reference/win32/icorewebview2settings3#get_arebrowseracceleratorkeysenabled), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2settings3#put_arebrowseracceleratorkeysenabled)
+* [ICoreWebView2Controller::AcceleratorKeyPressed event (add](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_acceleratorkeypressed), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_acceleratorkeypressed)
+  * [ICoreWebView2AcceleratorKeyPressedEventArgs class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2acceleratorkeypressedeventargs)
+  * [ICoreWebView2KeyEventKind enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2keyeventkind)
+  * [ICoreWebView2PhysicalKeyStatus struct](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2physicalkeystatus)
 
 ---
 
@@ -283,18 +283,18 @@ WebView2 can specify a default background color. This can be any opaque color or
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Controller.DefaultBackgroundColor Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2Color Struct](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2color?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Controller.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor)
+  * [CoreWebView2Color Struct](/dotnet/api/microsoft.web.webview2.core.corewebview2color)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Controller.DefaultBackgroundColor Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor?view=webview2-dotnet-1.0.1293.44#microsoft-web-webview2-core-corewebview2controller-defaultbackgroundcolor)
-  * [CoreWebView2Color Struct](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2color?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2Controller.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor#microsoft-web-webview2-core-corewebview2controller-defaultbackgroundcolor)
+  * [CoreWebView2Color Struct](/dotnet/api/microsoft.web.webview2.core.corewebview2color)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller::DefaultBackgroundColor property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.1293.44#get_defaultbackgroundcolor), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.1293.44#put_defaultbackgroundcolor)
-  * [COREWEBVIEW2_COLOR struct](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1293.44#corewebview2_color)
+* [ICoreWebView2Controller::DefaultBackgroundColor property (get](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
+  * [COREWEBVIEW2_COLOR struct](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_color)
 
 ---
 
@@ -318,18 +318,18 @@ For composition-based WebView2 rendering, use the `CoreWebView2Environment` to c
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2CompositionController Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2CompositionController Class](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2CompositionController Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2CompositionController Class](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2CompositionController interface](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44)
-* [ICoreWebView2Environment::CreateCoreWebView2CompositionController method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment3?view=webview2-1.0.1293.44#createcorewebview2compositioncontroller)
+* [ICoreWebView2CompositionController interface](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller)
+* [ICoreWebView2Environment::CreateCoreWebView2CompositionController method](/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2compositioncontroller)
 
 ---
 
@@ -341,15 +341,15 @@ WebView2 can connect its composition tree to `IDCompositionVisual`, `IDCompositi
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2CompositionController.RootVisualTarget Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.rootvisualtarget?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2CompositionController.RootVisualTarget Property](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.rootvisualtarget)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2CompositionController.RootVisualTarget Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.rootvisualtarget?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2CompositionController.RootVisualTarget Property](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.rootvisualtarget)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2CompositionController::RootVisualTarget property (get](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_rootvisualtarget), [put)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#put_rootvisualtarget)
+* [ICoreWebView2CompositionController::RootVisualTarget property (get](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_rootvisualtarget), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#put_rootvisualtarget)
 
 ---
 
@@ -361,44 +361,44 @@ Spatial input such as mouse, touch, or pen is received by the app and must be se
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2CompositionController.Cursor Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursor?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2CompositionController.CursorChanged Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursorchanged?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2CompositionController.SystemCursorId Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.systemcursorid?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2CompositionController.SendMouseInput Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendmouseinput?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2MouseEventKind Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2mouseeventkind)
-  * [CoreWebView2MouseEventVirtualKeys Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2mouseeventvirtualkeys?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2CompositionController.SendPointerInput Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendpointerinput?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2PointerEventKind Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2pointereventkind?view=webview2-dotnet-1.0.1293.44)
-* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2pointerinfo?view=webview2-dotnet-1.0.1293.44)
-  * [CoreWebView2PointerInfo Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2pointerinfo?view=webview2-dotnet-1.0.1293.44)
+* [CoreWebView2CompositionController.Cursor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursor)
+* [CoreWebView2CompositionController.CursorChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursorchanged)
+* [CoreWebView2CompositionController.SystemCursorId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.systemcursorid)
+* [CoreWebView2CompositionController.SendMouseInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendmouseinput)
+  * [CoreWebView2MouseEventKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2mouseeventkind)
+  * [CoreWebView2MouseEventVirtualKeys Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2mouseeventvirtualkeys)
+* [CoreWebView2CompositionController.SendPointerInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendpointerinput)
+  * [CoreWebView2PointerEventKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2pointereventkind)
+* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2pointerinfo)
+  * [CoreWebView2PointerInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2pointerinfo)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2CompositionController.Cursor Property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1293.44#cursor)
-* [CoreWebView2CompositionController.CursorChanged Event](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1293.44#cursorchanged)
-* [CoreWebView2CompositionController.SendMouseInput Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1293.44#sendmouseinput)
-  * [CoreWebView2MouseEventKind Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2mouseeventkind)
-  * [CoreWebView2MouseEventVirtualKeys Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2mouseeventvirtualkeys?view=webview2-winrt-1.0.1293.44)
-* [CoreWebView2CompositionController.SendPointerInput Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1293.44#sendpointerinput)
-  * [CoreWebView2PointerEventKind Enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2mouseeventkind?view=webview2-winrt-1.0.1293.44)
-* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1293.44#createcorewebview2pointerinfo)
-  * [CoreWebView2PointerInfo Class](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2pointerinfo?view=webview2-winrt-1.0.1293.44)
+* [CoreWebView2CompositionController.Cursor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#cursor)
+* [CoreWebView2CompositionController.CursorChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#cursorchanged)
+* [CoreWebView2CompositionController.SendMouseInput Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#sendmouseinput)
+  * [CoreWebView2MouseEventKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2mouseeventkind)
+  * [CoreWebView2MouseEventVirtualKeys Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2mouseeventvirtualkeys)
+* [CoreWebView2CompositionController.SendPointerInput Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#sendpointerinput)
+  * [CoreWebView2PointerEventKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2mouseeventkind)
+* [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2pointerinfo)
+  * [CoreWebView2PointerInfo Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2pointerinfo)
 
 <!--TODO - not found, omitted:
 * `CoreWebView2CompositionController.SystemCursorId` Property-->
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2CompositionController::Cursor property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_cursor)<!--no put-->
-* [ICoreWebView2CompositionController::CursorChanged event (add](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#add_cursorchanged), [remove)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#remove_cursorchanged)
-* [ICoreWebView2CompositionController::SystemCursorId property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#get_systemcursorid)<!--no put-->
-* [ICoreWebView2CompositionController::SendMouseInput method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#sendmouseinput)
-  * [COREWEBVIEW2_MOUSE_EVENT_KIND enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1293.44#corewebview2_mouse_event_kind)
-  * [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1293.44#corewebview2_mouse_event_virtual_keys)
-* [ICoreWebView2CompositionController::SendPointerInput method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.1293.44#sendpointerinput)
-  * [COREWEBVIEW2_POINTER_EVENT_KIND enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1293.44#corewebview2_pointer_event_kind)
-* [ICoreWebView2Environment::CreateCoreWebView2PointerInfo method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment3?view=webview2-1.0.1293.44#createcorewebview2pointerinfo)
-  * [ICoreWebView2PointerInfo interface](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2pointerinfo?view=webview2-1.0.1293.44)
+* [ICoreWebView2CompositionController::Cursor property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_cursor)<!--no put-->
+* [ICoreWebView2CompositionController::CursorChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#add_cursorchanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#remove_cursorchanged)
+* [ICoreWebView2CompositionController::SystemCursorId property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_systemcursorid)<!--no put-->
+* [ICoreWebView2CompositionController::SendMouseInput method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#sendmouseinput)
+  * [COREWEBVIEW2_MOUSE_EVENT_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_mouse_event_kind)
+  * [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_mouse_event_virtual_keys)
+* [ICoreWebView2CompositionController::SendPointerInput method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#sendpointerinput)
+  * [COREWEBVIEW2_POINTER_EVENT_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_pointer_event_kind)
+* [ICoreWebView2Environment::CreateCoreWebView2PointerInfo method](/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2pointerinfo)
+  * [ICoreWebView2PointerInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2pointerinfo)
 
 ---
 
@@ -418,8 +418,8 @@ Not applicable.
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2CompositionController::AutomationProvider property (get)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller2?view=webview2-1.0.1293.44#get_automationprovider)<!--no put-->
-* [ICoreWebView2Environment::GetAutomationProviderForWindow method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment4?view=webview2-1.0.1293.44#getautomationproviderforwindow)
+* [ICoreWebView2CompositionController::AutomationProvider property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller2#get_automationprovider)<!--no put-->
+* [ICoreWebView2Environment::GetAutomationProviderForWindow method](/microsoft-edge/webview2/reference/win32/icorewebview2environment4#getautomationproviderforwindow)
 
 ---
 
