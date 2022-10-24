@@ -87,8 +87,8 @@ Each entry in the `widgets` array contains several fields, as shown below:
       ],
       "icons": [
         {
-          "src": "./favicon-48.png",
-          "sizes": "48x48"
+          "src": "./favicon-16.png",
+          "sizes": "16x16"
         }
       ],
       "auth": false,
@@ -114,14 +114,6 @@ In the above example, a music player application defines a mini player widget. T
 | `type` | The MIME type for the widget data. Note that it is, for now, required to be `application/json`. | Yes |
 | `auth` | A boolean indicating if the widget requires authentication. | No |
 | `update` | The frequency, in seconds, at which the widget will be updated. Note that the widget is not updated automatically and you need code in your service worker to do this. See [Access widget instances at runtime](#access-widget-instances-at-runtime). | No |
-
-
-<!-- ====================================================================== -->
-## Define icons
-
-An array of icons is required in the widget definition that's in your web app manifest.
-
-<!-- Documented in the widget service documentation. Amanda will find it. -->
 
 
 <!-- ====================================================================== -->
