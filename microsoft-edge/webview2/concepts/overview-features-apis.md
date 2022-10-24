@@ -21,7 +21,7 @@ When hosting the WebView2 control, your app has access to the following features
 | [Browser features](#browser-features) | The WebView2 control gives your app access to many browser features.  You can modify these browser features and turn them on or off. |
 | [Process management](#process-management) | Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly. |
 | [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content) | Manage navigation to webpages and manage content that's loaded in the webpages. |
-| [iFrames](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
+| [iframes](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
 | [Authentication](#authentication) | Your app can handle basic authentication using the WebView2 control.  _Basic authentication_ is a specific authentication approach that's part of the HTTP protocol. |
 | [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Use these APIs to set up the WebView2 rendering system if your host app doesn't use a UI framework.  This rendering setup controls how WebView2 renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
 | [Rendering WebView2 using Composition](#rendering-webview2-using-composition) | For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  `CoreWebView2CompositionController` provides the same APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering. |
@@ -1069,18 +1069,18 @@ In WebView2, you can use the Server Certificate API to trust the server's TLS ce
 
 
 <!-- ====================================================================== -->
-## iFrames
+## iframes
 
-iFrames allow you to embed other webpages into your own webpage.  In WebView2, you can:
-*  Find out when iFrames are created.
-*  Find out when iFrames are navigating.
+iframes allow you to embed other webpages into your own webpage.  In WebView2, you can:
+*  Find out when iframes are created.
+*  Find out when iframes are navigating.
 *  Allow bypassing x-frame options.
 
 <!-- wording per overview table:
 Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. -->
 
 See also:
-* [Using iFrames in WebView2 apps](./iframes.md)
+* [Using frames in WebView2 apps](./frames.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
