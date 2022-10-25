@@ -20,9 +20,7 @@ Each profile has a dedicated profile folder to save browser data, which provides
 Previously, without multi-profile support, to achieve data separation, a WebView2 app could use different user data folders for different WebView2 controls.  However, in that approach, you must run multiple WebView2 runtime instances (each including a browser process and a bunch of child processes), which consumed more system resources including memory, CPU footprint, and disk space.
 
 
-<!-- code listings:
-is the Spec, or Samples repo, or API Ref the best place to copy code listings from?
--->
+<!-- todo: need code listings below.  Copy from Spec or Samples repo? -->
 
 <!-- n/a: 
 Deleting a profile
@@ -92,23 +90,19 @@ The `CreateCoreWebView2ControllerWithOptions` method creates a WebView2 control 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-check API Reference (= Samples repo?)
+See [Create WebView2 with a specific profile, then access the profile property of WebView2 (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#create-webview2-with-a-specific-profile-then-access-the-profile-property-of-webview2) in _API spec for multiple profile support_.
 
-code listing in spec: [Create WebView2 with a specific profile, then access the profile property of WebView2 (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#create-webview2-with-a-specific-profile-then-access-the-profile-property-of-webview2)
-
-```csharp
+<!-- ```csharp
 TODO
-```
+``` -->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-check API Reference (= Samples repo?)
+See [Create WebView2 with a specific profile, then access the profile property of WebView2 (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#create-webview2-with-a-specific-profile-then-access-the-profile-property-of-webview2) in _API spec for multiple profile support_.
 
-code listing in spec: [Create WebView2 with a specific profile, then access the profile property of WebView2 (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#create-webview2-with-a-specific-profile-then-access-the-profile-property-of-webview2)
-
-```csharp
+<!-- ```csharp
 TODO
-```
+``` -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -220,23 +214,19 @@ After you get the profile object, you can manipulate it.  Use `CoreWebView2Profi
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-check API Reference (= Samples repo?)
+See [Access and use the cookie manager from profile (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#access-and-use-the-cookie-manager-from-profile) in _API spec for multiple profile support_.
 
-code listing in spec: [Access and use the cookie manager from profile (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#access-and-use-the-cookie-manager-from-profile)
-
-```csharp
+<!-- ```csharp
 TODO
-```
+``` -->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-check API Reference (= Samples repo?)
+See [Access and use the cookie manager from profile (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#access-and-use-the-cookie-manager-from-profile) in _API spec for multiple profile support_.
 
-code listing in spec: [Access and use the cookie manager from profile (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#access-and-use-the-cookie-manager-from-profile)
-
-```csharp
+<!-- ```csharp
 TODO
-```
+``` -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
