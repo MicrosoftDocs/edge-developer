@@ -11,7 +11,7 @@ ms.date: 10/23/2022
 
 To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part2](/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension?tabs=v3).  
 
-The source code has been updated from Manifest V2 to Manifest V3.  [todo]
+The source code has been updated from Manifest V2 to Manifest V3.
 
 This tutorial covers the following extension technologies:
 *   Injecting JavaScript libraries into an extension.
@@ -21,11 +21,11 @@ This tutorial covers the following extension technologies:
 
 You'll learn to update your pop-up menu to replace your static stars image with a title and a standard HTML button.  That button, when selected, passes that image of stars to the content page.  This image is now embedded in the extension and inserted into the active browser tab. Here are the steps.
 
-Note: These steps require that you have completed the steps for initial extension package steps for the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part1](part1-simple-extension?tabs=v3).  
+Note: These steps require that you have completed the steps for initial extension package steps for the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part1](/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension?tabs=v3).  
 
 ## Step 1: Update pop-up.html to include a button
 
-In the popup folder where you created the `popup.html` file [from the initial part of the tutorial](part1-simple-extension?tabs=v3), you will replace with some straightforward markup that displays a title with a button.  You'll later program that button in a different step, but for now include a reference to an empty JavaScript file `popup.js`. 
+In the popup folder where you created the `popup.html` file [from the initial part of the tutorial](/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension?tabs=v3), you will replace with some straightforward markup that displays a title with a button.  You'll later program that button in a different step, but for now include a reference to an empty JavaScript file `popup.js`. 
 
 Below is a sample updated HTML:
 
@@ -62,7 +62,7 @@ After updating and opening the extension, a pop-up opens with a display button.
 
 <!--![popup.html display after selecting the Extension icon] -->
 
-## Step 2: Update strategy to display image at the top of the browser tab
+## Step 2: Update popup.html to display image at the top of the browser tab
 
 After adding the button, the next task is to make it bring up the `images/stars.jpeg` image file at the top of the active tab page.
 
