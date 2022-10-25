@@ -294,6 +294,12 @@ HRESULT AppWindow::OnCreateCoreWebView2ControllerCompleted(HRESULT result, ICore
 
 
 <!-- ====================================================================== -->
+## API Reference overview
+
+See [Multiple profiles](./overview-features-apis.md#multiple-profiles) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ====================================================================== -->
 ## See also
 
 * [Manage the user data folder](user-data-folder.md)
