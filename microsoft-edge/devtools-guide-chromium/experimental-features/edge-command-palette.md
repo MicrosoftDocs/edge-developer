@@ -33,8 +33,7 @@ By default, Command Palette isn't enabled. To enable the Command Palette experim
 
    ![Enabling the Command Palette flag in the edge://flags page](./media/command-palette-flag.png)
 
-The flags page for Microsoft Edge 108 or later shows the shortcut `Ctrl+Q`.  Versions 105 through most versions of 107 show `Ctrl`+`Shift`+`Space` instead.
-
+The flags page for Microsoft Edge 107 or later shows the shortcut `Ctrl+Q`.
 
 <!-- ====================================================================== -->
 ## Open Command Palette
@@ -43,7 +42,7 @@ Command Palette provides access to Microsoft Edge commands, including various De
 
 To open Command Palette:
 
-1. In Microsoft Edge 108 or later, press `Ctrl`+`Q`.  Or, in Microsoft Edge 105-107, press `Ctrl`+`Shift`+`Space`. Command Palette opens.
+1. In Microsoft Edge 107 or later, press `Ctrl`+`Q`.  Command Palette opens.
 
 1. Start typing in the input box. For example:
    * Type **tabs** to display commands about tabs management.
@@ -64,7 +63,7 @@ Use the DevTools [**Device Emulation**](../device-mode/index.md) tool to approxi
 
 To open the DevTools Device Emulation tool by using Command Palette:
 
-1. In Microsoft Edge 108 or later, press `Ctrl`+`Q`. Or, in Microsoft Edge 105-107, press `Ctrl`+`Shift`+`Space`. Command Palette opens.
+1. In Microsoft Edge 107 or later, press `Ctrl`+`Q`. Command Palette opens.
 
 1. Press `>`.
 
@@ -78,7 +77,7 @@ The DevTools [**Snippets**](../javascript/snippets.md) tool allows you to save J
 
 To open the DevTools **Snippets** tab by using Command Palette:
 
-1. In Microsoft Edge 108 or later, press `Ctrl`+`Q`. Or, in Microsoft Edge 105-107, press `Ctrl`+`Shift`+`Space`. Command Palette opens.
+1. In Microsoft Edge 107 or later, press `Ctrl`+`Q`. Command Palette opens.
 
 1. Press `>`.
 
@@ -94,7 +93,7 @@ Many useful tab-related commands are available in Command Palette, such as:
 *  **Open recently closed tab**
 *  **Search tabs**
 
-1. In Microsoft Edge 108 or later, press `Ctrl`+`Q`. Or, in Microsoft Edge 105-107, press `Ctrl`+`Shift`+`Space`. Command Palette opens.
+1. In Microsoft Edge 107 or later, press `Ctrl`+`Q`. Command Palette opens.
 
 1. Type the word **tab**, press `Down Arrow` or `Up Arrow` to select a command, and then press `Enter`.
 
