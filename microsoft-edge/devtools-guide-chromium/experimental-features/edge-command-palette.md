@@ -63,7 +63,7 @@ Use the DevTools [**Device Emulation**](../device-mode/index.md) tool to approxi
 
 To open the DevTools Device Emulation tool by using Command Palette:
 
-1. In Microsoft Edge 107 or later, press `Ctrl`+`Q`. 
+1. In Microsoft Edge 107 or later, press `Ctrl`+`Q`. Command Palette opens.
 
 1. Press `>`.
 
