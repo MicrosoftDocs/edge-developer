@@ -64,6 +64,7 @@ The following table displays the WebView2 features that differ from the Microsof
 | Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you can turn off Smart Screen by using a command-line switch. |
 | Translate | Off | No | This feature is turned off. |
 | Tracking Prevention | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Tracking prevention is always set to balanced. |
+| Visual search on image hover | Off | No | This feature is turned off.
 | Profile and Identity | Off | No | The feature that syncs your favorites, cookies, and so on, is turned off. |
 | Windows Defender Application Guard | Off | No | This feature is turned off. |
 | edge:// URLs | Review Details | No | Settings for the Microsoft Edge browser are on `edge://` URLs.  Because most of these webpages have Microsoft Edge branding or don't make sense within the context of WebView2, some of these URLs are turned off.  For more information, see [Blocked internal URLs](#blocked-internal-urls). |
