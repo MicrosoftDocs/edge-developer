@@ -13,6 +13,7 @@ ms.date: 05/16/2022
 
 <!-- add new pages to toc too -->
 
+* [What's New in DevTools (Microsoft Edge 107)](2022/10/devtools-107.md)
 * [What's New in DevTools (Microsoft Edge 106)](2022/09/devtools-106.md)
 * [What's New in DevTools (Microsoft Edge 105)](2022/09/devtools-105.md)
 * [What's New in DevTools (Microsoft Edge 104)](2022/08/devtools-104.md)
