@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 10/26/2022
 ---
 # Get started with WebView2 in WinForms apps
 
@@ -22,23 +22,19 @@ This tutorial helps you:
 *  Learn about WebView2 concepts along the way.
 
 
-#### Completed project
-
-A completed version<!--TODO: what date?--> of this tutorial project is available in the **WebView2Samples** repo:
-
-*  Sample name: **Win32_GettingStarted**
-*  Repo directory: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)
-*  Solution file: **WebView2GettingStarted.sln**
-
-
 <!-- ====================================================================== -->
 ## Step 1 - Optionally clone or download the WebView2Samples repo
 
 Do either of the following:
 
-*  Create a new project in Visual Studio starting from a project template, using the steps below.
+*  Create a new project in Visual Studio starting from a project template, using the steps in the sections below.  This will give you the latest code and project structure.
 
 *  Clone or download the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.  See [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  A completed version of this tutorial project is available in the WebView2Samples repo directory [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted).
+   *  Sample name: **Win32_GettingStarted**
+   *  Repo directory: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)
+   *  Solution file: **WebView2GettingStarted.sln**
+
+The sample in the repo might not be as up-to-date as a project that you create by using the latest Visual Studio project templates.
 
 
 <!-- ====================================================================== -->
@@ -52,22 +48,23 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install the WebView2 Runtime (optional)
+## Step 3 - Install the WebView2 Runtime
 
-<!-- TODO: delete this major step? -->
+To develop a WebView2 app, you must download and install the WebView2 Runtime on your machine.  (If you were to distribute the app that results from this tutorial, you would need to distribute the WebView2 Runtime along with your app.  The WebView2 Runtime would then be automatically installed onto user machines.)
 
-<!-- todo: test the article without doing this step -->
+1. Go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2), and then click the **Download Now** link.  The page scrolls down to the **Download the WebView2 Runtime** section.
 
-You and the users don't need to install the WebView2 Runtime on Windows 10 or Windows 11.
+<!--
+1. In the **Fixed Version** section, select a version and architecture, and then click the **Download** button.  A file such as `Microsoft.WebView2.FixedVersionRuntime.103.0.1264.71.x64.cab` is placed in your **Downloads** directory.
+-->
 
+1. Under **Evergreen Bootstrapper**, click the **Download** button.  The **Download the Evergreen WebView2 Runtime Bootstrapper** window opens.
 
-1. Optionally, install the WebView2 <!--Fixed Version--> Runtime.  Go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2), click the **Download Now** link.  In the **Fixed Version** section, select a version and architecture, and then click the **Download** button.  A file such as `Microsoft.WebView2.FixedVersionRuntime.103.0.1264.71.x64.cab` is placed in your **Downloads** directory.  
+1. Click the **Accept and Download** button.  In Microsoft Edge, in the Downloads popup, the file is listed, such as `MicrosoftEdgeWebview2Setup.exe`.  This installer will detect the operating system.
 
-   If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
-  
-   If you want more information now, see [Understand the different WebView2 SDK versions](../concepts/versioning.md).
+1. In your downloads directory, double-click the downloaded file and follow the prompts.
 
-In a later step, you'll install the WebView2 SDK on your machine, if it's not installed already.
+   If the WebView2 Runtime is already installed, a message appears: "Installation failed.  The Microsoft Edge Webview2<!--lowercase v in UI--> Runtime is already installed for the system."  Click the **Close** button.
 
 Continue with the steps below.
 
@@ -544,7 +541,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
    Next, for WebView2 to send and respond to the web message, after `CoreWebView2` is initialized, the host will inject a script in the web content to:
  
-  *  Send the URL to the host using `postMessage`.
+   *  Send the URL to the host using `postMessage`.
 
    *  Register an event handler to display a message sent from the host, in an alert box, before displaying webpage content.
 
@@ -584,15 +581,15 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 Congratulations, you built your first WebView2 app!
 
 
-<!-- ====================================================================== -->
-## Step 12 - Deploy the app
+#### Distributing a WebView2 app
 
-tbd - links
+If you were to distribute the app that results from this tutorial, you would need to distribute the WebView2 Runtime along with your app.  The WebView2 Runtime would then be automatically installed onto user machines.  For more information, see [Distribute your app and the WebView2 Runtime](../concepts/distribution.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 
+* [Distribute your app and the WebView2 Runtime](../concepts/distribution.md)
 * [WinForms sample app](../samples/webview2windowsformsbrowser.md) - Demonstrates more WebView2 APIs than the present tutorial.
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - Conceptual and how-to articles about building and deploying WebView2 apps.
 * [Microsoft.Web.WebView2.WinForms](/dotnet/api/microsoft.web.webview2.winforms) - API Reference.

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/27/2022
+ms.date: 10/26/2022
 ---
 # Set up your Dev environment for WebView2
 
@@ -34,15 +34,48 @@ This article covers general-purpose setup of your development environment for We
 
 We recommend using the Canary channel.  The minimum required version is 82.0.488.0.
 
+The preview channels of Microsoft Edge are required in order to use a prerelease version of the WebView2 SDK.  A prerelease SDK enables testing your app against the latest APIs, and trying out the latest APIs.
+
 
 <!-- ====================================================================== -->
 ## Install the WebView2 Runtime
 
-1. Optionally, install the WebView2 Runtime.  To do that, go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2).
+1. Go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) 
 
-If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
+1. Scroll down to the section **Download the WebView2 Runtime**.
 
-See [Understand the different WebView2 SDK versions](../concepts/versioning.md).
+Generally, the Evergreen Runtime is recommended rather than the Fixed Version Runtime.  To install the Evergreen Runtime, you can either:
+*  Download and run the small Evergreen Bootstrapper.
+*  Download and run the full-sized, OS-specific Evergreen Standalone Installer.
+
+
+#### If downloading the Evergreen Bootstrapper
+
+<!-- Example filesize: 1,560 KB. -->
+
+1. Under **Evergreen Bootstrapper**, click the **Download** button.  The **Download the Evergreen WebView2 Runtime Bootstrapper** window opens.
+
+1. Click the **Accept and Download** button.  In Microsoft Edge, in the Downloads popup, the file is listed, such as `MicrosoftEdgeWebview2Setup.exe`.  This installer will detect the operating system.
+
+1. In your downloads directory, double-click the downloaded file and follow the prompts.
+
+   If the WebView2 Runtime is already installed, a message appears: "Installation failed.  The Microsoft Edge Webview2<!--lowercase v in UI--> Runtime is already installed for the system."  Click the **Close** button.
+
+
+#### If downloading the Evergreen Standalone Installer
+
+<!-- Example filesize: 135,584 KB. -->
+
+1. Under **Evergreen Standalone Installer**, click the download button for your development operating system.  The **Download the Evergreen WebView2 Runtime Standalone Installer** window opens.
+
+1. Click the **Accept and Download** button.  In Microsoft Edge, in the Downloads popup, the file is listed, such as `MicrosoftEdgeWebView2RuntimeInstallerX64.exe`.
+
+1. In your downloads directory, double-click the downloaded file and follow the prompts.
+
+   If the WebView2 Runtime is already installed, a message appears: "Installation failed.  The Microsoft Edge WebView2 Runtime is already installed for the system."  Click the **Close** button.
+
+See also:
+* [Understand the different WebView2 SDK versions](../concepts/versioning.md)
 
 
 <!-- The h3 section [Clone or download the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
