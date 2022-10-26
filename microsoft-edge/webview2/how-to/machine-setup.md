@@ -40,7 +40,7 @@ The preview channels of Microsoft Edge are required in order to use a prerelease
 <!-- ====================================================================== -->
 ## Install the WebView2 Runtime
 
-1. Go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) 
+1. Go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2).
 
 1. Scroll down to the section **Download the WebView2 Runtime**.
 
