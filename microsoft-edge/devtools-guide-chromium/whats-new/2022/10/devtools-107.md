@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 107)
-description: "What's New in DevTools (Microsoft Edge 107). And more."
+description: "Automate WebView2 with Playwright. Focus Mode Activity Bar icons have tooltips. New shortcut key for Command Palette. Memory tool loads larger heap snapshots. Links in Application tool render in high contrast mode. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -13,58 +13,121 @@ ms.date: 10/31/2022
 
 
 <!-- ====================================================================== -->
-## 1
+## Automate WebView2 with Playwright
 
-<!-- Subtitle: . -->
+<!-- Subtitle: You can now use Playwright to automate and test web content in the Microsoft Edge WebView2 control. -->
 
-<!-- ![x](./devtools-107-images/x.png) -->
+[Playwright](https://playwright.dev) is a testing library that enables reliable end-to-end testing across different browsers and platforms.  Playwright has always supported automating and testing web content in Microsoft Edge but now, Playwright also supports testing the Microsoft Edge WebView2 control.
 
-<!-- See also:
-* []() -->
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  You can now use Playwright to test your web content running in WebView2.  To get started, see [Playwright's documentation for WebView2](https://playwright.dev/docs/webview2).
 
+![Playwright logo](./devtools-107-images/playwright.png)
 
-<!-- ====================================================================== -->
-## 2
-
-<!-- Subtitle: . -->
-
-<!-- ![x](./devtools-107-images/x.png) -->
-
-<!-- See also:
-* []() -->
+See also:
+* [WebView2 | Playwright docs](https://playwright.dev/docs/webview2)
+* [Introduction to Microsoft Edge WebView2](../../../../webview2/index.md)
+* [Use Playwright to automate and test in Microsoft Edge](../../../../playwright/index.md)
+* [Issue 17617: [Feature] Add Playwright.WebView2.launch()](https://github.com/microsoft/playwright/issues/17617)
 
 
 <!-- ====================================================================== -->
-## 3
+## Focus Mode: Activity Bar icons show text label on mouse hover
 
-<!-- Subtitle: . -->
+<!-- Subtitle: When text labels are not visible in the Activity Bar, the name of the tool will appear while hovering over the icon. -->
+
+The Activity Bar in Focus Mode can be placed in a vertical orientation to save space.  In this position, any tool you have pinned is shown with a representative icon instead of a text label.  Starting in Edge 107, text labels (tooltips) appear when the icon for a pinned tool is hovered with the mouse.  This improvement makes it easier to identify and switch between tools quickly.
 
 <!-- ![x](./devtools-107-images/x.png) -->
+<!-- 1: With DevTools in Focus Mode and Activity Bar vertical, mouse over Console to show label that appears alongside the icon. -->
 
-<!-- See also:
-* []() -->
+These labels also appear when the Activity Bar is horizontal and text labels are removed to save space.
+
+<!-- ![x](./devtools-107-images/x.png) -->
+<!-- 2: With DevTools in Focus Mode and Activity Bar horizontal, mouse over a tool whose label is not visible, such as Network, to show label that appears alongside the icon. -->
+
+See also:
+* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
-## 4
+## New keyboard shortcut for the Command Palette experiment
 
-<!-- Subtitle: . -->
+<!-- Subtitle: Enable the Command Palette experiment in Microsoft Edge 107 and open it with Ctrl+Q (Command+Q on macOS). -->
+
+In [Microsoft Edge 106](../09/devtools-106.md#introducing-the-command-palette), we introduced the Command Palette, an experimental feature for accessing browser management and developer tools commands.  In Microsoft Edge 107, the keyboard shortcut for opening the Command Palette has been updated to `Ctrl`+`Q`. 
+
+To enable the Command Palette experiment, see [Enable Command Palette](../../../experimental-features/edge-command-palette.md#enable-command-palette) in Run commands via keyboard with Command Palette.  With the Command Palette experiment enabled, press `Ctrl`+`Q` to open the Command Palette.
+
+Thank you for your feedback on this issue! Let us know what commands you'd like to see in future versions of Microsoft Edge, by posting a comment in [Issue 73: [feedback] Command Palette experiment](https://github.com/MicrosoftEdge/DevTools/issues/73) in the MicrosoftEdge/DevTools repo!
 
 <!-- ![x](./devtools-107-images/x.png) -->
+<!-- re-use: command-palette.png (799×557) (microsoft.com), also attached to work item. -->
+<!-- If want to take a new screenshot:
+1.	Open Edge Beta (or any of the other Insider channels), just navigate to edge://version and ensure you're on version 107+
+2.	Navigate to edge://flags and enter "Command Palette" in the Search flags textbox
+3.	Enable the "Command Palette" flag
+4.	Restart the browser
+5.	Press `Ctrl`+`Q`
+6.	Enter in some letters
+7.	Take a screenshot -->
 
-<!-- See also:
-* []() -->
+<!-- Video recording of feature in action
+Refer to attachments: -->
+
+<!-- Before	After -->
+ 
+
+<!-- ====================================================================== -->
+## The Memory tool can now load larger heap snapshots
+
+<!-- Subtitle: In Microsoft Edge 107, the Memory tool no longer reports "RangeError: Map maximum size exceeded" messages when loading a large heap snapshot. -->
+
+In previous versions of Microsoft Edge, when loading large heap snapshots in the **Memory** tool, the snapshot would fail to load and a `RangeError: Map maximum size exceeded` message would be logged to the **Console**.
+
+In Microsoft Edge 107, this issue has been fixed.  The **Memory** tool can now successfully load large heap snapshots.  This issue was caused by a hard-coded limit in V8 (the JavaScript engine of the browser), that limits the number of map elements to 16M.  By using a linked list of maps, the **Memory** tool no longer has a hard-coded map limit.
+
+If you still encounter issues when loading large heap snapshots, please [open an issue in the MicrosoftEdge/DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues/new?assignees=&labels=bug&template=bug.md)!
+
+<!-- ![x](./devtools-107-images/x.png) -->
+<!-- re-use the attached screenshot if you want to show the `RangeError` Console message.
+or for new screenshot:
+1.	Open Edge Beta or any of the insider channels. Just ensure you're on version 107 or later by navigating to edge://version
+2.	Navigate to: Microsoft Edge DevTools documentation - Microsoft Edge Development | Microsoft Learn
+3.	Open DevTools > Memory
+4.	Take a heap snapshot by selecting "Take snapshot"
+5.	Select an object to show its retainers
+6.	take a screenshot
+-->
+
+See also:
+* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
+* [Issue 9126: Hardcoded memory limits of Map (backed by FixedArray)](https://bugs.chromium.org/p/v8/issues/detail?id=9126)
 
 
 <!-- ====================================================================== -->
-## 5
+## Links in the Application tool render better in high contrast mode
 
-<!-- Subtitle: . -->
+<!-- Subtitle: In previous versions of Microsoft Edge, links in the Application tool weren't rendering correctly. In Microsoft Edge 107, this issue has been fixed. -->
+
+In previous versions of Microsoft Edge, links in the **Application** tool didn't render correctly in high contrast mode.  The links were not visible, and they were not the same color as defined in the high contrast setting.  In Microsoft Edge 107, this issue has been fixed.  Links in the **Application** tool now match the color that's defined in the high contrast setting.
 
 <!-- ![x](./devtools-107-images/x.png) -->
-
-<!-- See also:
-* []() -->
+<!-- 
+1. Open Edge Beta or any of the other Insider channels. Navigate to edge://version and ensure you're on version 107+.
+2. Navigate to: pwamp (microsoftedge.github.io).
+3. Open DevTools > Application.
+4. From the Windows OS, open the Start menu and enter in "Contrast themes".
+5. Under Contrast themes, select one of the themes and select "Apply".
+6. Take a screenshot of the Application tool and draw red highlight boxes around the links.
+See attached image for reference.  If want to show previous behavior, repeat steps in Edge 106 (which is currently in Stable).
+-->
+ 
+<!-- Video recording of feature in action
+Refer to the attachment -->
+ 
+See also:
+* [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
+* [Debug Progressive Web Apps (PWAs)](../../../progressive-web-apps/index.md)
 
 
 <!-- ====================================================================== -->
