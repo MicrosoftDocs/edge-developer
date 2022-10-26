@@ -92,7 +92,7 @@ Each entry in the `widgets` array contains several fields, as shown below:
         }
       ],
       "auth": false,
-      "update": 100
+      "update": 86400
     }
   ]
 }
@@ -241,7 +241,7 @@ You can access widgets and update them from the PWA service worker code. Accessi
 * [Rendering widgets on installation](#render-widgets-on-installation).
 * [Updating widgets on service worker updates](#update-widgets-on-service-worker-updates).
 * [Handling user actions on widgets](#handle-widget-actions).
-* [Updating widgets periodically or when the app changes](#update-widgets-periodically).
+* [Updating widgets when the application changes](#update-widgets-on-application-changes).
 
 Service workers have access to the `self.widgets` object, and the `widgetclick` event which, together, constitute an API that you use to react to changes and access widgets at runtime.
 
@@ -334,9 +334,9 @@ Note that the `action` property of the `widgetEvent` object passed to the event 
 
 See the [Service Worker API reference](#service-worker-api-reference) below for more information about the `widgetclick` event and what information you can access from it.
 
-#### Update widgets periodically
+#### Update widgets on application changes
 
-In previous sections, you learnt how to update widgets when specific widget events, widget actions, and service worker updates occurred. It can also be useful to update widgets when something happens in the application, or a push notification occurs, or periodically.
+In previous sections, you learnt how to update widgets when specific widget events, widget actions, and service worker updates occurred. It can also be useful to update widgets when something happens in the application, or when a push notification occurs, or periodically.
 
 In this section, you will learn to use the Periodic Background Sync API to update widgets periodically. For more information about the Periodic Background Sync API, see [Use the Periodic Background Sync API to regularly get fresh content](background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
 
