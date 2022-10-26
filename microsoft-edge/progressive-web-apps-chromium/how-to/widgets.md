@@ -98,7 +98,7 @@ Each entry in the `widgets` array contains several fields, as shown below:
 }
 ```
 
-In the above example, a music player application defines a mini player widget. The required and optional fields of a widget definition in the web app manifest are documented below:
+In the above example, a music player application defines a mini player widget. A widget definition in the web app manifest has the following required and optional fields:
 
 | Field | Description | Required |
 |:--- |:--- |:--- |
@@ -109,11 +109,11 @@ In the above example, a music player application defines a mini player widget. T
 | `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). | Yes |
 | `tag` | A string used to reference the widget in the PWA service worker. | Yes |
 | `template` | The template to use to display the widget in the operating system widgets dashboard. Note: although `template` is a required field, its value is currently not used. See `ms_ac_template` below. | Yes |
-| `ms_ac_template` | The URL to the custom Adaptive Cards template to use to display the widget in the operating system widgets dashboard. See [Define a widget template](#define-a-widget-template) below. | Yes |
-| `data` | The URL where the data to fill the template with can be found. For now, this URL is required to return valid JSON. | Yes |
-| `type` | The MIME type for the widget data. Note that it is, for now, required to be `application/json`. | Yes |
+| `ms_ac_template` | The URL of the custom Adaptive Cards template to use to display the widget in the operating system widgets dashboard. See [Define a widget template](#define-a-widget-template) below. | Yes |
+| `data` | The URL where the data to fill the template with can be found. This URL is required to return valid JSON. | Yes |
+| `type` | The MIME type for the widget data. Must be `application/json`. | Yes |
 | `auth` | A boolean indicating if the widget requires authentication. | No |
-| `update` | The frequency, in seconds, at which the widget will be updated. Note that the widget is not updated automatically and you need code in your service worker to do this. See [Access widget instances at runtime](#access-widget-instances-at-runtime). | No |
+| `update` | The frequency, in seconds, at which the widget will be updated. Code in your service worker must perform the updating; the widget is not updated automatically. See [Access widget instances at runtime](#access-widget-instances-at-runtime). | No |
 
 
 <!-- ====================================================================== -->
@@ -126,7 +126,7 @@ To make widgets easy to create and adapt to various operating system widgets das
 
 For the time being, only custom Adaptive Cards templates are supported. Adaptive Cards is an open card exchange format that can be used to exchange UI content in a common and consistent way. See [Adaptive Cards Overview](/adaptive-cards/).
 
-To define a custom Adaptive Cards template on Windows 11, use the `ms_ac_template` field in the widget definition that's in your web app manifest. Note that even if `template` is not used at the moment, it is a required field.
+To define a custom Adaptive Cards template on Windows 11, use the `ms_ac_template` field in the widget definition that's in your web app manifest. Although `template` is not currently used, it's a required field.
 
 ```json
 {
@@ -137,7 +137,7 @@ To define a custom Adaptive Cards template on Windows 11, use the `ms_ac_templat
 }
 ```
 
-The `ms_ac_template` field value should be a valid URL to a template file.
+The `ms_ac_template` field value should be a valid URL of a template file.
 
 Here is an example of an Adaptive Cards template:
 
@@ -282,7 +282,7 @@ async function renderWidget(widget) {
 
 #### Update widgets on service worker updates
 
-When the service worker code changes in a PWA, the browser detects the change, installs, and then later activates the new service worker.
+When the service worker code changes in a PWA, the browser detects that change, installs the new service worker, and then later activates it.
 
 When this happens, it is important to update any widget instances that may already be running. Widgets may have been installed before the service worker `activate` event is emitted. Update your widgets when this event occurs to avoid displaying empty widgets.
 
