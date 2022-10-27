@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/27/2022
+ms.date: 10/26/2022
 ---
 # Set up your Dev environment for WebView2
 
@@ -34,15 +34,7 @@ This article covers general-purpose setup of your development environment for We
 
 We recommend using the Canary channel.  The minimum required version is 82.0.488.0.
 
-
-<!-- ====================================================================== -->
-## Install the WebView2 Runtime
-
-1. Optionally, install the WebView2 Runtime.  To do that, go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2).
-
-If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
-
-See [Understand the different WebView2 SDK versions](../concepts/versioning.md).
+The preview channels of Microsoft Edge are required in order to use a prerelease version of the WebView2 SDK.  A prerelease SDK enables testing your app against the latest APIs, and trying out the latest APIs.
 
 
 <!-- The h3 section [Clone or download the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
