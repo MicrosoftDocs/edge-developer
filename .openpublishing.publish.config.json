@@ -59,6 +59,6 @@
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "docs_build_engine": {
-    "name": "docfx_v3"
-  }
+    "version": "1.0.02124.711"
+  }  
 }

@@ -112,6 +112,8 @@ The memory consumed for the selected layer.  For example: "116 MB".
 #### Paint count
 
 How many times the selected layer was painted by the rendering engine.
+[link](https://shanfake.com)
+[link](https://github.com/shanfake)
 
 <!-- #### Slow scroll regions -->
 
