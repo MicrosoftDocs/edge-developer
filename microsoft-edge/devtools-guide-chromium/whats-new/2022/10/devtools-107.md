@@ -60,33 +60,21 @@ Thank you for your feedback on this issue! Let us know what commands you'd like 
 
 ![Command Palette](./devtools-107-images/command-palette.png)
 
-<!-- Video recording of feature in action
-Refer to attachments: -->
-
-<!-- Before	After -->
- 
 
 <!-- ====================================================================== -->
 ## The Memory tool can now load larger heap snapshots
 
 <!-- Subtitle: In Microsoft Edge 107, the Memory tool no longer reports "RangeError: Map maximum size exceeded" messages when loading a large heap snapshot. -->
 
-In previous versions of Microsoft Edge, when loading large heap snapshots in the **Memory** tool, the snapshot would fail to load and a `RangeError: Map maximum size exceeded` message would be logged to the **Console**.
+In previous versions of Microsoft Edge, when loading large heap snapshots in the **Memory** tool, the snapshot would fail to load and a `RangeError: Map maximum size exceeded` message would be logged to the **Console**:
+
+![The RangeError Console message](./devtools-107-images/heap-snapshot-rangeerror.png)
 
 In Microsoft Edge 107, this issue has been fixed.  The **Memory** tool can now successfully load large heap snapshots.  This issue was caused by a hard-coded limit in V8 (the JavaScript engine of the browser), that limits the number of map elements to 16M.  By using a linked list of maps, the **Memory** tool no longer has a hard-coded map limit.
 
-If you still encounter issues when loading large heap snapshots, please [open an issue in the MicrosoftEdge/DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues/new?assignees=&labels=bug&template=bug.md)!
+If you still encounter issues when loading large heap snapshots, please open an issue in the [DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues/new?assignees=&labels=bug&template=bug.md)!
 
-<!-- ![x](./devtools-107-images/x.png) -->
-<!-- re-use the attached screenshot if you want to show the `RangeError` Console message.
-or for new screenshot:
-1.	Open Edge Beta or any of the insider channels. Just ensure you're on version 107 or later by navigating to edge://version
-2.	Navigate to: Microsoft Edge DevTools documentation - Microsoft Edge Development | Microsoft Learn
-3.	Open DevTools > Memory
-4.	Take a heap snapshot by selecting "Take snapshot"
-5.	Select an object to show its retainers
-6.	take a screenshot
--->
+![Retainers in the Memory tool for a large heap snapshot](./devtools-107-images/retainers.png)
 
 See also:
 * [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
@@ -100,19 +88,7 @@ See also:
 
 In previous versions of Microsoft Edge, links in the **Application** tool didn't render correctly in high contrast mode.  The links were not visible, and they were not the same color as defined in the high contrast setting.  In Microsoft Edge 107, this issue has been fixed.  Links in the **Application** tool now match the color that's defined in the high contrast setting.
 
-<!-- ![x](./devtools-107-images/x.png) -->
-<!-- 
-1. Open Edge Beta or any of the other Insider channels. Navigate to edge://version and ensure you're on version 107+.
-2. Navigate to: pwamp (microsoftedge.github.io).
-3. Open DevTools > Application.
-4. From the Windows OS, open the Start menu and enter in "Contrast themes".
-5. Under Contrast themes, select one of the themes and select "Apply".
-6. Take a screenshot of the Application tool and draw red highlight boxes around the links.
-See attached image for reference.  If want to show previous behavior, repeat steps in Edge 106 (which is currently in Stable).
--->
- 
-<!-- Video recording of feature in action
-Refer to the attachment -->
+![Links in High Contrast mode](./devtools-107-images/high-contrast-links.png)
  
 See also:
 * [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
