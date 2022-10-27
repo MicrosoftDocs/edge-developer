@@ -35,15 +35,13 @@ See also:
 
 <!-- Subtitle: When text labels are not visible in the Activity Bar, the name of the tool will appear while hovering over the icon. -->
 
-The Activity Bar in Focus Mode can be placed in a vertical orientation to save space.  In this position, any tool you have pinned is shown with a representative icon instead of a text label.  Starting in Edge 107, text labels (tooltips) appear when the icon for a pinned tool is hovered with the mouse.  This improvement makes it easier to identify and switch between tools quickly.
+The Activity Bar in Focus Mode can be placed in a vertical orientation to save space.  In this position, any tool you have pinned is shown with a representative icon instead of a text label.  Starting in Microsoft Edge 107, text labels (tooltips) appear when you hover over Activity Bar icons.  This improvement makes it easier to identify and switch between tools quickly.
 
-<!-- ![x](./devtools-107-images/x.png) -->
-<!-- 1: With DevTools in Focus Mode and Activity Bar vertical, mouse over Console to show label that appears alongside the icon. -->
+![Activity Bar tooltips](./devtools-107-images/activity-bar-tooltips.png)
 
-These labels also appear when the Activity Bar is horizontal and text labels are removed to save space.
+These labels also appear when the Activity Bar is horizontal and text labels are removed to save space:
 
-<!-- ![x](./devtools-107-images/x.png) -->
-<!-- 2: With DevTools in Focus Mode and Activity Bar horizontal, mouse over a tool whose label is not visible, such as Network, to show label that appears alongside the icon. -->
+![Tooltips for horizontal Activity Bar icons](./devtools-107-images/activity-bar-tooltips-horizontal.png)
 
 See also:
 * [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
@@ -60,16 +58,7 @@ To enable the Command Palette experiment, see [Enable Command Palette](../../../
 
 Thank you for your feedback on this issue! Let us know what commands you'd like to see in future versions of Microsoft Edge, by posting a comment in [Issue 73: [feedback] Command Palette experiment](https://github.com/MicrosoftEdge/DevTools/issues/73) in the MicrosoftEdge/DevTools repo!
 
-<!-- ![x](./devtools-107-images/x.png) -->
-<!-- re-use: command-palette.png (799×557) (microsoft.com), also attached to work item. -->
-<!-- If want to take a new screenshot:
-1.	Open Edge Beta (or any of the other Insider channels), just navigate to edge://version and ensure you're on version 107+
-2.	Navigate to edge://flags and enter "Command Palette" in the Search flags textbox
-3.	Enable the "Command Palette" flag
-4.	Restart the browser
-5.	Press `Ctrl`+`Q`
-6.	Enter in some letters
-7.	Take a screenshot -->
+![Command Palette](./devtools-107-images/command-palette.png)
 
 <!-- Video recording of feature in action
 Refer to attachments: -->
