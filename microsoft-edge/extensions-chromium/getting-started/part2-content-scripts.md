@@ -25,7 +25,7 @@ These steps require that you complete the steps for initial extension package st
 
 ## Step 1: Update pop-up.html to include a button
 
-In the popup folder where you created the `popup.html` file [from the initial part of the tutorial](/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension?tabs=v3), you will replace with some straightforward markup that displays a title with a button.  You'll later program that button in a different step, but for now include a reference to an empty JavaScript file `popup.js`.   
+In the popup folder where you created the `popup.html` file [from the initial part of the tutorial](/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension?tabs=v3), you'll add tagging that displays a title with a button.  You'll later program that button in a different step, but for now include a reference to an empty JavaScript file `popup.js`.   
 
 Below is a sample updated HTML file:
 
