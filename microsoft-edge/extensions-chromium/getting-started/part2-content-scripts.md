@@ -156,7 +156,7 @@ if (sendMessageId) {
 <!-- ====================================================================== -->
 ## Step 4: Make your `stars.jpeg` available from any browser tab
 
-To make `images/stars.jpeg` available from any browser tab, you must use the `chrome.runtime.getURL` API.  
+To make `images/stars.jpeg` available from any browser tab, you must use the `chrome.runtime.getURL` API.
 
 Note: If you are using Manifest V2, then instead use `chrome.extension.getURL`.  That extra prefix is returned by `getUrl` with the image attached, and looks something like the following: ```httpextension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg```
 
