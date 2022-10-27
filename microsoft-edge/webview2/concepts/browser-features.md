@@ -60,10 +60,12 @@ The following table displays the WebView2 features that differ from the Microsof
 | Intrusive Ads | Off | No | This feature is turned off. |
 | Keyboard Shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You cannot turn these shortcuts off or on.  Instead, you can listen for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, see [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). |
 | PDF Annotations | Off | No | This feature is turned off. The PDF viewing feature is enabled, but drawing, inking, and highlighting in a PDF aren't enabled. For more information, see [Disabling Feature: PDF Annotations Support](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21). |
+| Mini menu | Off | No | This feature is turned off. |
 | Read Aloud | Off | No | This feature is turned off. |
 | Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you can turn off Smart Screen by using a command-line switch. |
 | Translate | Off | No | This feature is turned off. |
 | Tracking Prevention | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Tracking prevention is always set to balanced. |
+| Visual search on image hover | Off | No | This feature is turned off.
 | Profile and Identity | Off | No | The feature that syncs your favorites, cookies, and so on, is turned off. |
 | Windows Defender Application Guard | Off | No | This feature is turned off. |
 | edge:// URLs | Review Details | No | Settings for the Microsoft Edge browser are on `edge://` URLs.  Because most of these webpages have Microsoft Edge branding or don't make sense within the context of WebView2, some of these URLs are turned off.  For more information, see [Blocked internal URLs](#blocked-internal-urls). |
@@ -133,7 +135,7 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 | Open File | `Ctrl`+`O` |
 | Read Aloud `*` | `Ctrl`+`Shift`+`U` |
 | Web Capture `*` | `Ctrl`+`Shift`+`S` |
-| Sidebar `*` | `Ctrl`+`Shift`+`E` |
+| Sidebar | `Ctrl`+`Shift`+`E` |
 | Save Page | `Ctrl`+`S` |
 | Select Last Tab | `Ctrl`+`9` |
 | Select Next Tab | `Ctrl`+`Tab` |
