@@ -158,7 +158,7 @@ if (sendMessageId) {
 
 To make `images/stars.jpeg` available from any browser tab, you must use the `chrome.runtime.getURL` API.
 
-Note: If you are using Manifest V2, then instead use `chrome.extension.getURL`.  That extra prefix is returned by `getUrl` with the image attached, and looks something like the following: ```httpextension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg```
+Note: If you are using Manifest V2, then instead use `chrome.extension.getURL`.  That extra prefix is returned by `getURL` with the image attached, and looks something like the following: ```httpextension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg```
 
 The reason is that you're injecting the image using the `src` attribute of the `img` element into the content page.  The content page is running on a unique thread that isn't the same as the thread running the Extension.  You must expose the static image file as a web asset for it to work correctly.
 
