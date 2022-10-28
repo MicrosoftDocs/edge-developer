@@ -21,8 +21,6 @@ ms.date: 10/31/2022
 
 The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  You can now use Playwright to test your web content running in WebView2.  To get started, see [Playwright's documentation for WebView2](https://playwright.dev/docs/webview2).
 
-![Playwright logo](./devtools-107-images/playwright.png)
-
 See also:
 * [Introduction to Microsoft Edge WebView2](../../../../webview2/index.md)
 * [Use Playwright to automate and test in Microsoft Edge](../../../../playwright/index.md)
@@ -51,7 +49,7 @@ See also:
 
 <!-- Subtitle: Enable the Command Palette experiment in Microsoft Edge 107 and open it with Ctrl+Q (Command+Q on macOS). -->
 
-In [Microsoft Edge 106](../09/devtools-106.md#introducing-the-command-palette), we introduced the Command Palette, an experimental feature for accessing browser management and developer tools commands.  In Microsoft Edge 107, the keyboard shortcut for opening the Command Palette has been updated from `Shift`+`Ctrl`+`Spacebar` to `Ctrl`+`Q`.
+In [Microsoft Edge 106](../09/devtools-106.md#introducing-the-command-palette), we introduced the Command Palette, an experimental feature for accessing browser management and developer tools commands.  In Microsoft Edge 107, the keyboard shortcut for opening the Command Palette has been updated from `Shift`+`Ctrl`+`Spacebar` to `Ctrl`+`Q` on Windows, macOS, and Linux.
 
 To enable the Command Palette experiment, see [Enable Command Palette](../../../experimental-features/edge-command-palette.md#enable-command-palette) in _Run commands via keyboard with Command Palette_.  After the Command Palette experiment is enabled, press `Ctrl`+`Q` to open the Command Palette.
 
@@ -100,13 +98,10 @@ See also:
 
 Microsoft Edge 107 also includes the following updates from the Chromium project:
 
-* [Customize keyboard shortcuts in DevTools](https://developer.chrome.com/blog/new-in-devtools-107/#shortcuts)
 * [Toggle light and dark themes with keyboard shortcut](https://developer.chrome.com/blog/new-in-devtools-107/#toggle-themes)
-* [Highlight C/C++ objects in the Memory Inspector](https://developer.chrome.com/blog/new-in-devtools-107/#memory)
 * [Support full initiator information for HAR import](https://developer.chrome.com/blog/new-in-devtools-107/#har)
 * [Start DOM search after pressing Enter](https://developer.chrome.com/blog/new-in-devtools-107/#search-type)
 * [Display start and end icons for align-content CSS flexbox properties](https://developer.chrome.com/blog/new-in-devtools-107/#flexbox)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-107/#misc)
 
 
 <!-- ====================================================================== -->
