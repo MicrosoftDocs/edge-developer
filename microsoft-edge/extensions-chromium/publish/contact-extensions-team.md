@@ -21,6 +21,8 @@ ms.date: 02/17/2021
 
 1.  To feature your extension in a collection on the Microsoft Edge Add-ons website, see [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u) and complete the form.
 
+1.  Participate in our Github Community [forum](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) to flag any issues, raise a feature request, be a part of discussions and to share your ideas regarding the Microsoft Edge Extensions Store.
+
 
 <!-- ====================================================================== -->
 ## Report copyright or trademark infringement
