@@ -11,7 +11,7 @@ ms.date: 11/01/2022
 
 If you're new to Partner Center, this article will help you create a Partner Center account that you can use to submit Microsoft Edge extensions to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
-If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article will help you create and link a suitable account.  This article will help you create a Microsoft account (MSA) if you don't have one, and will help you link the Microsoft account (MSA) to your Partner Center account.
+If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article will help you create and link to a suitable account. You'll learn how to create a Microsoft account (MSA) if you don't have one, and help you link the Microsoft account (MSA) to your Partner Center account.
 
 To add and manage users in the Microsoft Edge program to manage extensions, you can associate your Partner Center account with your organization's Azure Active Directory (Azure AD) tenant.
 
