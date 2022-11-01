@@ -62,11 +62,11 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 #### Experimental features
 
 *  Added support to create a shared memory based buffer with the specified size:
-    *      `Close`
-    *      `get_Buffer`
-    *      `get_FileMappingHandle`
-    *      `get_Size`
-    *      `OpenStream`
+    *      Close
+    *      get_Buffer
+    *      get_FileMappingHandle
+    *      get_Size
+    *      OpenStream
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
