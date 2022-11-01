@@ -35,13 +35,13 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 <!-- ====================================================================== -->
 ## 1.0.1418.22
 
-Release Date: October 31, 2022
+Release Date: October 31, 2022 
 
-[NuGet package for WebView2 SDK 1.0.1418.28](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1418.22)
+[NuGet package for WebView2 SDK 22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1418.22)
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 107.0.1418.22 or higher.
 
-### General
+### General 
 
 This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1466-prerelease. See Bug fixes in the following section.
 
@@ -70,17 +70,17 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2.ExperimentalSharedBuffer interface](#)
+* [CoreWebView2SharedBuffer Class](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer?view=webview2-dotnet-1.0.1466-prerelease&viewFallbackFrom=webview2-dotnet-1.0.1418.22)
 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.ExperimentalSharedBuffer interface](#)
+* [CoreWebView2SharedBuffer Class](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer?view=webview2-winrt-1.0.1466-prerelease)
 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ExperimentalSharedBuffer interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedbuffer?view=webview2-1.0.1466-prerelease&preserve-view=true)
+* [CoreWebView2SharedBuffer Class](x)
 
 
 ---
@@ -89,8 +89,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Experimental18.PostSharedBufferToScript Method](#)
-* [CoreWebView2ExperimentalFrame4.PostSharedBufferToScript Method](#)
+* [CoreWebView2Experimental18.PostSharedBufferToScript Method](x)
+* [CoreWebView2ExperimentalFrame4.PostSharedBufferToScript Method](x)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
