@@ -1105,6 +1105,10 @@
                   href: webview2/how-to/hostobject.md
                   displayName: AddHostObjectToScript, host objects
 
+                - name: Using frames
+                  href: webview2/how-to/frames.md
+                  displayName: Using frames in WebView2 apps, iframe # full title
+
                 - name: Call native-side WinRT code from web-side code
                   href: webview2/how-to/winrt-from-js.md
                   displayName: AddHostObjectToScript, host objects
@@ -1122,10 +1126,6 @@
             - name: Distribute your app and the WebView2 Runtime
               href: webview2/concepts/distribution.md
               displayName: 
-
-            - name: Using frames
-              href: webview2/concepts/frames.md
-              displayName: Using frames in WebView2 apps # full title
 
 # -----------------------------------------------------------------------------
         - name: Debug WebView2 apps
