@@ -33,6 +33,109 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
 <!-- ====================================================================== -->
+## 1.0.1418.22
+
+Release Date: October 31, 2022
+
+[NuGet package for WebView2 SDK 1.0.1418.28](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1418.22)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 107.0.1418.22 or higher.
+
+### General
+
+This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1466-prerelease. See Bug fixes in the following section.
+
+---
+
+
+<!-- ====================================================================== -->
+## 1.0.1466-prerelease
+
+Release Date: October 31, 2022
+
+[NuGet package for WebView2 SDK 1.0.1466-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1466-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 109.0.1466.0 or higher.
+
+### General
+
+#### Experimental features
+
+*  Added support to create a shared memory based buffer with the specified size:
+	*  	`Close`
+	*  	`get_Buffer`
+	*  	`get_FileMappingHandle`
+	*  	`get_Size`
+	*  	`OpenStream`
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.ExperimentalSharedBuffer interface](#)
+
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.ExperimentalSharedBuffer interface](#)
+
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalSharedBuffer interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedbuffer?view=webview2-1.0.1466-prerelease&preserve-view=true)
+
+
+---
+
+*  Added support to share a shared buffer object with script of the main-frame/iframe
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Experimental18.PostSharedBufferToScript Method](#)
+* [CoreWebView2ExperimentalFrame4.PostSharedBufferToScript Method](#)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Experimental18.PostSharedBufferToScript Method](#)
+* [CoreWebView2ExperimentalFrame4.PostSharedBufferToScript Method](#)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Experimental18.PostSharedBufferToScript Method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental18?view=webview2-1.0.1466-prerelease#postsharedbuffertoscript&preserve-view=true)
+* [ICoreWebView2ExperimentalFrame4.PostSharedBufferToScript Method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe4?view=webview2-1.0.1466-prerelease#postsharedbuffertoscript&preserve-view=true)
+
+---
+
+*  Added support to run JavaScript code from the JavaScript parameter in the current top-level document:
+	*  	`get_ColumnNumber`
+	*  	`get_LineNumber`
+	*  `get_Message`
+	*  `get_Name`
+	*  `get_ToJson`
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2ExperimentalScriptException interface](#)
+
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2ExperimentalScriptException interface](#)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalScriptException interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalscriptexception?view=webview2-1.0.1466-prerelease&preserve-view=true)
+
+---
+
+#### Bug fixes
+
+*   Fixed a bug which custom header title in print settings could be wrong([Issue #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093))
+*   Display AllowedCertificateAuthorities in add_ClientCertificateRequested event as Base64 string. (Runtime)([Issue #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346))
+*   Fixed a bug which default footer URI in print settings is missing.([Issue #2851](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2851))
+*   Fixed a bug that brings null poiner exception related to print settings. (Runtime)([Issue #2858](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2858))
+*   Fixed a bug that reports failure navigation when redirecting to a server that has configured with Client Certificate Authentication and when add_WebResourceRequested is subscribed. (Runtime)
+*   Fixed AddHostObjectToScript bug in which JS calling an async method and then a sync method, the async method call might fail.  
+
+<!-- ====================================================================== -->
 ## 1.0.1370.28
 
 Release Date: October 11, 2022
