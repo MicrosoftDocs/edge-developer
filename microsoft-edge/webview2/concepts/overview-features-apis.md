@@ -80,10 +80,11 @@ Some common use cases include:
 *  Send a native camera object and use its methods from a web app.
 *  Run a dedicated JavaScript file on the web side of an application.
 
-For more information, see:
+See also:
 * [Interop of native-side and web-side code](../how-to/communicate-btwn-web-native.md)
 * [Call web-side code from native-side code](../how-to/javascript.md)
 * [Call native-side code from web-side code](../how-to/hostobject.md)
+* [Call native-side WinRT code from web-side code](../how-to/winrt-from-js.md)
 
 The following are the main APIs for communicating between web and native code.
 
@@ -106,12 +107,14 @@ Host objects can be projected into JavaScript, so that you can call native objec
 * [CoreWebView2.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
 * [CoreWebView2.RemoveHostObjectFromScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#removehostobjectfromscript)
 * [CoreWebView2Settings.AreHostObjectsAllowed Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#arehostobjectsallowed)
+* [CoreWebView2Frame.RemoveHostObjectFromScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#removehostobjectfromscript)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
 * [ICoreWebView2::RemoveHostObjectFromScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#removehostobjectfromscript)
 * [ICoreWebView2Settings::AreHostObjectsAllowed property (get](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_arehostobjectsallowed), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_arehostobjectsallowed)
+* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
 
 ---
 
@@ -1080,7 +1083,8 @@ iframes allow you to embed other webpages into your own webpage.  In WebView2, y
 Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. -->
 
 See also:
-* [Using frames in WebView2 apps](./frames.md)
+* [Host/web object sharing](#hostweb-object-sharing), in this article.
+* [Using frames in WebView2 apps](./frames.md).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

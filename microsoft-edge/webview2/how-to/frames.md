@@ -41,6 +41,9 @@ See also:
 
 As a preliminary step, skim the article [Call native-side code from web-side code](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/hostobject), but realize the Frame version of the core type is used instead, and `AddHostObjectToScriptWithOrigins` is used instead of `AddHostObjectToScript`.
 
+Win32/C++:
+* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
+
 
 <!-- ====================================================================== -->
 ## Step 1: Install Visual Studio, install git, clone the WebView2Samples repo, and open the solution
@@ -275,6 +278,7 @@ It works similar to [Call native-side code from web-side code](https://learn.mic
 1. Call the `AddHostObjectToScriptWithOrigins` API.
 1. Use `AddHostObjectToScriptWithOrigins` to pass a method to the web.
 
+Win32/C++:
 * [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
 
 If a frame wants to control or execute objects that are created on the native side; that is, if you have native objects that you want to control from the JavaScript side, use `AddHostObjectToScriptWithOrigins`.  See also [Call native-side code from web-side code](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/hostobject), but in the present scenario use the  `CoreWebView2Frame.AddHostObjectToScriptWithOrigins` method instead of `CoreWebView2.AddHostObjectToScript`.  `AddHostObjectToScriptWithOrigins` takes an additional parameter, `origins`.
@@ -297,13 +301,12 @@ TODO
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 <!-- TODO: what apis? -->
-
-* [CoreWebView2Frame.AddHostObjectToScript Method](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2frame.addhostobjecttoscript?view=webview2-dotnet-1.0.1370.28)
+* [CoreWebView2Frame.AddHostObjectToScript Method](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2frame.addhostobjecttoscript)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.AddHostObjectToScript Method](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1370.28#addhostobjecttoscript)
-
+<!-- TODO: what apis? -->
+* [CoreWebView2.AddHostObjectToScript Method](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -428,30 +431,9 @@ The article [Navigation events for WebView2 apps](navigation-events.md) is valid
 <!-- ====================================================================== -->
 ## API Reference overview
 
-The following links are copied from [API Reference overview](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/hostobject) in _Call native-side code from web-side code_, then modified to include frame APIs:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2.AddHostObjectToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
-* [CoreWebView2.RemoveHostObjectFromScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.removehostobjectfromscript)
-* [CoreWebView2Settings.AreHostObjectsAllowed Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arehostobjectsallowed)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
-* [CoreWebView2.RemoveHostObjectFromScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#removehostobjectfromscript)
-* [CoreWebView2Settings.AreHostObjectsAllowed Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#arehostobjectsallowed)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
-* [ICoreWebView2::RemoveHostObjectFromScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#removehostobjectfromscript)
-* [ICoreWebView2Settings::AreHostObjectsAllowed property (get](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_arehostobjectsallowed), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_arehostobjectsallowed)
-
----
-
 The following features, listed in [Overview of WebView2 features and APIs](https://learn.microsoft.com/microsoft-edge/webview2/concepts/overview-features-apis), include frame-related APIs:
 
+* [Host/web object sharing](../concepts/overview-features-apis.md)
 * [iframes](./overview-features-apis.md#iframes)<!--same link is in h2 "Subscribing to the FrameCreated event" above-->
 * [Script execution](./overview-features-apis.md#script-execution)<!--same link is in h2 "Running JavaScript code in iframes by using ExecuteScript" above-->
 * [Web messaging](./overview-features-apis.md#web-messaging)<!--link doesn't exist in an h2 section above-->
