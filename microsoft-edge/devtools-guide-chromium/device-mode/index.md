@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/19/2021
+ms.date: 11/01/2022
 ---
 <!-- Copyright Kayce Basques
 
