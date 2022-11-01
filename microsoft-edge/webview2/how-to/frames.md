@@ -11,15 +11,15 @@ ms.date: 10/24/2022
 # Using frames in WebView2 apps
 <!-- TODO: Dev: what other frame types will there be besides iframes? if none other, than change filename to iframes.md and change title to Using iframes... -->
 
-<!-- possibly add another tab-set, such as [Non-frame][Frame], to the existing article https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/hostobject -->
+<!-- possibly add another tab-set, such as [Non-frame][Frame], to the existing article https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject -->
 
 Frames allow you to embed other webpages into your own webpage.  A _frame_ is a sub-page or area within a webpage, like a webpage within a webpage.  
 
-An iframe is one type of frame.  WebView2 currently supports top-level iframes.  WebView2 supports APIs to interact with iframes.  In WebView2, you can:  
+An iframe is one type of frame.  WebView2 currently supports top-level iframes.  WebView2 supports APIs to interact with iframes.  In WebView2, you can:
 * Find out when iframes are created.
 * Find out when iframes are navigating.  This works the same as state machine Navigation events for WebView2 apps.  link to diagram.
 * Communicating between the host app and iframes.
-* Allow bypassing x-frame options.<!-- TODO: Dev/SME: do we want to explicitly have this point?  https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options -->
+* Allow bypassing x-frame options.<!-- TODO: Dev/SME: do we want to explicitly have this point?  https://developer.mozilla.org/docs/Web/HTTP/Headers/X-Frame-Options -->
 
 An API is required for WebView2 for frames, because you can't create a WebView2 frame object from the app.  This API is required, for the app to be able to interact with frames, which are transient.  Without this API, WebView2 wouldn't have access to frames.  For example, `executeScript` requires having the frame object, to interact with the frame.
 
@@ -32,17 +32,17 @@ An API is required for WebView2 for frames, because you can't create a WebView2 
 For iframes, you can listen to network events and modify them, by using the `WebResourceRequested` event.
 
 See also:
-* [Manage network requests in WebView2](./overview-features-apis.md#manage-network-requests-in-webview2) in _Overview of WebView2 features and APIs_.
+* [Manage network requests in WebView2](../concepts/overview-features-apis.md#manage-network-requests-in-webview2) in _Overview of WebView2 features and APIs_.
 * [Custom management of network requests](../how-to/webresourcerequested.md)
 
 
 <!-- ------------------------------ -->
 #### Preliminary step: read the related article
 
-As a preliminary step, skim the article [Call native-side code from web-side code](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/hostobject), but realize the Frame version of the core type is used instead, and `AddHostObjectToScriptWithOrigins` is used instead of `AddHostObjectToScript`.
+As a preliminary step, skim the article [Call native-side code from web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject), but realize the Frame version of the core type is used instead, and `AddHostObjectToScriptWithOrigins` is used instead of `AddHostObjectToScript`.
 
 Win32/C++:
-* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
+* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
 
 
 <!-- ====================================================================== -->
@@ -72,7 +72,7 @@ See [Step 2: Define the host object and implement IDispatch](../how-to/hostobjec
 
 <!-- provide code listings here that call the correct method. -->
 
-See [Step 3: Call the AddHostObjectToScript API](../how-to/hostobject.md#step-3-call-the-addhostobjecttoscript-api) in _Call native-side code from web-side code_, but realize that different types and methods might be used, depending on which framework you're using.  Then return here and continue below.
+See [Step 3: Call AddHostObjectToScript from native code](../how-to/hostobject.md#step-3-call-addhostobjecttoscript-from-native-code) in _Call native-side code from web-side code_, but realize that different types and methods might be used, depending on which framework you're using.  Then return here and continue below.
 
 
 <!-- ====================================================================== -->
@@ -118,8 +118,8 @@ To receive the frame object, you must subscribe to the `FrameCreated` event.
 * [CoreWebView2.FrameCreated Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framecreated)
    * [CoreWebView2FrameCreatedEventArgs Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framecreatedeventargs)
 
-* [CoreWebView2Frame.Destroyed Event](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1370.28#destroyed)
-   * [CoreWebView2Frame.IsDestroyed Method](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1370.28#isdestroyed)
+* [CoreWebView2Frame.Destroyed Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1370.28#destroyed)
+   * [CoreWebView2Frame.IsDestroyed Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1370.28#isdestroyed)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -132,7 +132,7 @@ To receive the frame object, you must subscribe to the `FrameCreated` event.
 ---
 
 See also:
-* [iframes](./overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
+* [iframes](../concepts/overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
@@ -175,7 +175,7 @@ Once the frame navigates to the source url, the following navigation events are 
 * `DOMContentLoaded`
 * `NavigationCompleted`
 
-To learn more about navigation events, see [Navigation events for WebView2 apps](navigation-events.md).
+To learn more about navigation events, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
 Note that the `CoreWebView2.FrameNavigationStarting` event and the `CoreWebView2.FrameNavigationCompleted` event duplicate the `CoreWebView2Frame.NavigationCompleted` event and `CoreWebView2Frame.NavigationStarting` event.  We recommend using the `CoreWebView2Frame.NavigationCompleted` event and `CoreWebView2Frame.NavigationStarting` event, rather than the events on `CoreWebView2`, because the `CoreWebView2Frame` type supports more scenarios to allow interactions with frames.
 
@@ -189,7 +189,6 @@ Navigation potentially could happen within a frame.  A simple use case: An ifram
 
 iframes use navigation and navigation events, such as `FrameNavigationStarting` and `NavigationCompleted`.
 
-The article [Navigation events for WebView2 apps](navigation-events.md) is valid for frames as well as webpages.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -228,8 +227,8 @@ Older:
 ---
 
 See also:
-* [Navigation events](./overview-features-apis.md#navigation-events) in _Overview of WebView2 features and APIs_.
-* [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 features and APIs_.
+* [Navigation events](../concepts/overview-features-apis.md#navigation-events) in _Overview of WebView2 features and APIs_.
+* [Block unwanted navigating](../concepts/overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
@@ -271,27 +270,27 @@ Web messages:
 * Subscribing is for receiving messages from iframes.
 * Sending messages.
 
-Similar to web/native interop page structure  https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/hostobject?tabs=dotnetcsharp  : 3 sections:
+Similar to web/native interop page structure  https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject?tabs=dotnetcsharp  : 3 sections:
 
-It works similar to [Call native-side code from web-side code](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/hostobject) but call `AddHostObjectToScriptWithOrigins` instead of `AddHostObjectToScript`:
+It works similar to [Call native-side code from web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject) but call `AddHostObjectToScriptWithOrigins` instead of `AddHostObjectToScript`:
 1. Define the host object and implement IDispatch.
 1. Call the `AddHostObjectToScriptWithOrigins` API.
 1. Use `AddHostObjectToScriptWithOrigins` to pass a method to the web.
 
 Win32/C++:
-* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
+* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
 
-If a frame wants to control or execute objects that are created on the native side; that is, if you have native objects that you want to control from the JavaScript side, use `AddHostObjectToScriptWithOrigins`.  See also [Call native-side code from web-side code](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/hostobject), but in the present scenario use the  `CoreWebView2Frame.AddHostObjectToScriptWithOrigins` method instead of `CoreWebView2.AddHostObjectToScript`.  `AddHostObjectToScriptWithOrigins` takes an additional parameter, `origins`.
+If a frame wants to control or execute objects that are created on the native side; that is, if you have native objects that you want to control from the JavaScript side, use `AddHostObjectToScriptWithOrigins`.  See also [Call native-side code from web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject), but in the present scenario use the  `CoreWebView2Frame.AddHostObjectToScriptWithOrigins` method instead of `CoreWebView2.AddHostObjectToScript`.  `AddHostObjectToScriptWithOrigins` takes an additional parameter, `origins`.
 The `origins` parameter defines from which urls iframes will have access to the host object. 
 If the frame is navigated to a URL that is not in the `origins` list, the frame will not be able to operate the host object; the frame won't be able to read or write any properties
-<!-- such as: see "Method name" table in https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1370.28#addhostobjecttoscript -->
+<!-- such as: see "Method name" table in https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1370.28#addhostobjecttoscript -->
 
 <!-- applyHostFunction, getHostProperty, setHostProperty	Perform a method invocation, property get, or property set on the host object. Use the methods to explicitly force a method or property to run remotely if a conflicting local method or property exists. For instance, proxy.toString() runs the local toString method on the proxy object. But proxy.applyHostFunction('toString') runs toString on the host proxied object instead.  getLocalProperty, setLocalProperty -->
  ... won't be able to call any methods or access properties on the host object.
 ... implement on native side
 ... while adding host object to script, need to specify which url will be allowed, for security reasons.
 
-This works similarly to [ICoreWebView2.AddHostObjectToScript] https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1370.28#addhostobjecttoscript) and we recommend that you read this API Reference section, though realize you would use [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins) instead.
+This works similarly to [ICoreWebView2.AddHostObjectToScript] https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1370.28#addhostobjecttoscript) and we recommend that you read this API Reference section, though realize you would use [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins) instead.
 
 
 #### Sending and receiving messages
@@ -301,28 +300,28 @@ TODO
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 <!-- TODO: what apis? -->
-* [CoreWebView2Frame.AddHostObjectToScript Method](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2frame.addhostobjecttoscript)
+* [CoreWebView2Frame.AddHostObjectToScript Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.addhostobjecttoscript)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 <!-- TODO: what apis? -->
-* [CoreWebView2.AddHostObjectToScript Method](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
+* [CoreWebView2.AddHostObjectToScript Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
+* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
 
 ---
 
 <!-- todo: after add api links above, remove the n/a links: -->
 See also:
-* [Call native-side code from web-side code](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/hostobject?tabs=dotnetcsharp)
-* [Script execution](./overview-features-apis.md#script-execution) in _Overview of WebView2 features and APIs_.
-* [Web messaging](./overview-features-apis.md#web-messaging) in _Overview of WebView2 features and APIs_.
-* [Permissions](./overview-features-apis.md#permissions) in _Overview of WebView2 features and APIs_.
-* [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 features and APIs_.
-* [Navigation events](./overview-features-apis.md#navigation-events) in _Overview of WebView2 features and APIs_.
-* [iframes](./overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
+* [Call native-side code from web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject?tabs=dotnetcsharp)
+* [Script execution](../concepts/overview-features-apis.md#script-execution) in _Overview of WebView2 features and APIs_.
+* [Web messaging](../concepts/overview-features-apis.md#web-messaging) in _Overview of WebView2 features and APIs_.
+* [Permissions](../concepts/overview-features-apis.md#permissions) in _Overview of WebView2 features and APIs_.
+* [Block unwanted navigating](../concepts/overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 features and APIs_.
+* [Navigation events](../concepts/overview-features-apis.md#navigation-events) in _Overview of WebView2 features and APIs_.
+* [iframes](../concepts/overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
@@ -354,7 +353,7 @@ See also:
 <!-- ====================================================================== -->
 ## Step A4: Run JavaScript code in iframes by using ExecuteScript
 
-The article [Navigation events for WebView2 apps](navigation-events.md) is valid for frames as well as webpages.
+The article [Navigation events for WebView2 apps](../concepts/navigation-events.md) is valid for frames as well as webpages.
 <!-- TODO: ask Dev if BasicAuth should be added to diagram https://learn.microsoft.com/microsoft-edge/webview2/media/navigation-graph.png -->
 
 There are various kinds of frames.  WebView currently supports top-level iframes.  WebView2 doesn't currently support nested iframes.
@@ -389,7 +388,7 @@ There are various kinds of frames.  WebView currently supports top-level iframes
 ---
 
 See also:
-* [Script execution](./overview-features-apis.md#script-execution) in _Overview of WebView2 features and APIs_.
+* [Script execution](../concepts/overview-features-apis.md#script-execution) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
@@ -423,7 +422,7 @@ See also:
 
 iframes use the same navigation states as other WebView2 pages.  All navigation events except `SourceChanged` events, currently, are supported for iframes the same way as in WebView2.
 
-The article [Navigation events for WebView2 apps](navigation-events.md) is valid for frames as well as webpages.
+The article [Navigation events for WebView2 apps](../concepts/navigation-events.md) is valid for frames as well as webpages.
 
 <!-- TODO: is there an API ConvertWebView2ToFrame? -->
 
@@ -434,19 +433,19 @@ The article [Navigation events for WebView2 apps](navigation-events.md) is valid
 The following features, listed in [Overview of WebView2 features and APIs](https://learn.microsoft.com/microsoft-edge/webview2/concepts/overview-features-apis), include frame-related APIs:
 
 * [Host/web object sharing](../concepts/overview-features-apis.md)
-* [iframes](./overview-features-apis.md#iframes)<!--same link is in h2 "Subscribing to the FrameCreated event" above-->
-* [Script execution](./overview-features-apis.md#script-execution)<!--same link is in h2 "Running JavaScript code in iframes by using ExecuteScript" above-->
-* [Web messaging](./overview-features-apis.md#web-messaging)<!--link doesn't exist in an h2 section above-->
-* [Permissions](./overview-features-apis.md#permissions)<!--link doesn't exist in an h2 section above-->
-* [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating)<!--same link is in h2 "Navigation and navigation events" above-->
-* [Navigation events](./overview-features-apis.md#navigation-events)<!--same link is in h2 "Navigation and navigation events" above-->
+* [iframes](../concepts/overview-features-apis.md#iframes)<!--same link is in h2 "Subscribing to the FrameCreated event" above-->
+* [Script execution](../concepts/overview-features-apis.md#script-execution)<!--same link is in h2 "Running JavaScript code in iframes by using ExecuteScript" above-->
+* [Web messaging](../concepts/overview-features-apis.md#web-messaging)<!--link doesn't exist in an h2 section above-->
+* [Permissions](../concepts/overview-features-apis.md#permissions)<!--link doesn't exist in an h2 section above-->
+* [Block unwanted navigating](../concepts/overview-features-apis.md#block-unwanted-navigating)<!--same link is in h2 "Navigation and navigation events" above-->
+* [Navigation events](../concepts/overview-features-apis.md#navigation-events)<!--same link is in h2 "Navigation and navigation events" above-->
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Call native-side code from web-side code](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/hostobject)
-* [Navigation events for WebView2 apps](navigation-events.md) - valid for frames as well as webpages.
+* [Call native-side code from web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject)
+* [Navigation events for WebView2 apps](../concepts/navigation-events.md) - valid for frames as well as webpages.
 
 **External pages:**
 * [HTML <iframe\> Tag](https://www.w3schools.com/tags/tag_iframe.asp)

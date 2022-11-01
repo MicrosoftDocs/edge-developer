@@ -1084,7 +1084,7 @@ Embed other webpages into your own webpage.  Detect when embedded webpages are c
 
 See also:
 * [Host/web object sharing](#hostweb-object-sharing), in this article.
-* [Using frames in WebView2 apps](./frames.md).
+* [Using frames in WebView2 apps](../how-to/frames.md).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

@@ -73,7 +73,7 @@ This article uses the [Win32 sample app](https://github.com/MicrosoftEdge/WebVie
 
 To use the `AddHostObjectToScript` API, you first need to define a host object.  For Win32/C++, the host object definition in an `idl` file describes the exposed or wrapped properties and methods.  The host object must also implement `IDispatch`.  Continue reading this section to see how the Win32 sample app does this.  Implementing `IDispatch` is essential for formatting the host object so that it can be passed to the web-side code.
 
-In your own code base, if you already have a host object that implements `IDispatch`, you can skip to [Step 3: Call the AddHostObjectToScript API](#step-3-call-the-addhostobjecttoscript-api).
+For your own code base, if you already have a host object that implements `IDispatch`, you can skip to [Step 3: Call AddHostObjectToScript from native code](#step-3-call-addhostobjecttoscript-from-native-code).
 
 The Win32 sample app demonstrates creating a host object, as follows:
 
@@ -274,9 +274,9 @@ To follow along, we use the Win32 sample app.
 
     ![Top of Host Objects demo page](./hostobject-images/sample-app-top.png)
 
-1.  The webpage suggests using the **Console** tool of DevTools to run JavaScript statements on the `chrome.webview.hostObjects.sample` object.  If you want to open DevTools from the sample app, right-click the page and then select **Inspect**.  Then select the **Console** tab.  For more information, see [Console overview](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/).
+1.  The webpage suggests using the **Console** tool of DevTools to run JavaScript statements on the `chrome.webview.hostObjects.sample` object.  If you want to open DevTools from the sample app, right-click the page and then select **Inspect**.  Then select the **Console** tab.  For more information, see [Console overview](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/console/).
 
-    To open DevTools, pressing `F12` might not work in this context, and might trigger an exception.  If so, in Visual Studio, select **Stop Debugging**, and then press `F5` to restart debugging.  In the sample app, select **Scenario** > **Host Objects** again.  For more information, see [Open DevTools using an approach other than F12](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/debug-visual-studio#open-devtools-using-an-approach-other-than-f12) in _Debug WebView2 apps with Visual Studio_.
+    To open DevTools, pressing `F12` might not work in this context, and might trigger an exception.  If so, in Visual Studio, select **Stop Debugging**, and then press `F5` to restart debugging.  In the sample app, select **Scenario** > **Host Objects** again.  For more information, see [Open DevTools using an approach other than F12](https://learn.microsoft.com/microsoft-edge/webview2/how-to/debug-visual-studio#open-devtools-using-an-approach-other-than-f12) in _Debug WebView2 apps with Visual Studio_.
 
     The bottom of the Host Objects demo page duplicates the demo object members within an `<iframe>`:
     <!-- todo: explain apparent dup'n -->
@@ -358,7 +358,7 @@ See [Host/web object sharing](../concepts/overview-features-apis.md#hostweb-obje
 
 * [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
 * [Using frames in WebView2 apps](./frames.md)
-* [Call native-side WinRT code from web-side code](./winrt-from-js)
+* [Call native-side WinRT code from web-side code](./winrt-from-js.md)
 
 GitHub:
 * [Win32 sample app (WebView2APISample project)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)
