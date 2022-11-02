@@ -61,12 +61,12 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Experimental features
 
-*  Added support to create a shared memory based buffer with the specified size:
-    *     Close
-    *     get_Buffer
-    *     get_FileMappingHandle
-    *     get_Size
-    *     OpenStream
+* Added support to create a shared memory based buffer with the specified size:
+    *  `close`
+    *  `get_Buffer`
+    *  `get_FileMappingHandle`
+    *  `get_Size`
+    *  `OpenStream`  
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -106,8 +106,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ---
 
 *  Added support to run JavaScript code from the JavaScript parameter in the current top-level document:
-    *      `get_ColumnNumber`
-    *      `get_LineNumber`
+    *  `get_ColumnNumber`
+    *  `get_LineNumber`
     *  `get_Message`
     *  `get_Name`
     *  `get_ToJson`
