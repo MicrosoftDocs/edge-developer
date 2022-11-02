@@ -1,0 +1,16 @@
+### YamlMime:TSType
+name: HostObjectsSyncRoot
+uid: 'WebView2Script!HostObjectsSyncRoot:interface'
+package: WebView2Script!
+fullName: HostObjectsSyncRoot
+summary: >-
+  Contains synchronous proxies for all host objects added via `CoreWebView2.AddHostObjectToScript`<!-- -->.
+
+
+  If you call `coreWebView2.AddHostObjectToScript("myObject", object);` in your host code then a synchronous proxy for
+  `object` will be exposed in script as `chrome.webview.hostObjects.sync.myObject`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+extends: '<xref uid="WebView2Script!HostObjectSyncProxy:interface" />'

@@ -1,0 +1,29 @@
+### YamlMime:TSType
+name: HostObjectAsyncProxy
+uid: 'WebView2Script!HostObjectAsyncProxy:interface'
+package: WebView2Script!
+fullName: HostObjectAsyncProxy
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: sync()
+    uid: 'WebView2Script!HostObjectAsyncProxy#sync:member(1)'
+    package: WebView2Script!
+    fullName: sync()
+    summary: >-
+      A method which returns a promise for a synchronous host object proxy for the same host object. For example,
+      `chrome.webview.hostObjects.sample.methodCall()` returns an asynchronous host object proxy. Use the `sync` method
+      to obtain a synchronous host object proxy instead: `const syncProxy = await
+      chrome.webview.hostObjects.sample.methodCall().sync()`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sync(): Promise<HostObjectSyncProxy>;'
+      return:
+        type: 'Promise&lt;<xref uid="WebView2Script!HostObjectSyncProxy:interface" />&gt;'
+        description: ''
+extends: '<xref uid="WebView2Script!HostObjectAsyncProxyBase:interface" />'

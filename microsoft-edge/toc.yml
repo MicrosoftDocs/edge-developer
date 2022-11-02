@@ -1412,11 +1412,31 @@
                   displayName: functions, methods
 
             - name: JavaScript
-              uid: Documentation
+              uid: WebView2Script!
               displayName: 
               items:
-                - uid: Documentation.HostObjectsOptions
-                  name: HostObjectsOptions
+                - name: Chrome
+                  uid: 'WebView2Script!Chrome:interface'
+                - name: HostObjectAsyncProxy
+                  uid: 'WebView2Script!HostObjectAsyncProxy:interface'
+                - name: HostObjectAsyncProxyBase
+                  uid: 'WebView2Script!HostObjectAsyncProxyBase:interface'
+                - name: HostObjectsAsyncRoot
+                  uid: 'WebView2Script!HostObjectsAsyncRoot:interface'
+                - name: HostObjectsOptions
+                  uid: 'WebView2Script!HostObjectsOptions:interface'
+                - name: HostObjectsSyncRoot
+                  uid: 'WebView2Script!HostObjectsSyncRoot:interface'
+                - name: HostObjectSyncProxy
+                  uid: 'WebView2Script!HostObjectSyncProxy:interface'
+                - name: SharedBufferReceivedEvent
+                  uid: 'WebView2Script!SharedBufferReceivedEvent:interface'
+                - name: WebView
+                  uid: 'WebView2Script!WebView:interface'
+                - name: WebViewEventMap
+                  uid: 'WebView2Script!WebViewEventMap:interface'
+                - name: Window_2
+                  uid: 'WebView2Script!Window_2:interface'
 
         - name: Contact the WebView2 Team
           href: webview2/contact.md

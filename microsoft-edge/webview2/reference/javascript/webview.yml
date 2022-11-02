@@ -1,0 +1,199 @@
+### YamlMime:TSType
+name: WebView
+uid: 'WebView2Script!WebView:interface'
+package: WebView2Script!
+fullName: WebView
+summary: WebView is the interface to access the WebView2 specific APIs available to the script running within WebView2.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: hostObjects
+    uid: 'WebView2Script!WebView#hostObjects:member'
+    package: WebView2Script!
+    fullName: hostObjects
+    summary: >-
+      Contains asynchronous proxies for all host objects added via `CoreWebView2.AddHostObjectToScript` as well as
+      options to configure those proxies, and the container for synchronous proxies.
+
+
+      If you call `coreWebView2.AddHostObjectToScript("myObject", object);` in your host code then an asynchronous proxy
+      for `object` will be exposed in script as `chrome.webview.hostObjects.myObject`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hostObjects: HostObjectsAsyncRoot;'
+      return:
+        type: '<xref uid="WebView2Script!HostObjectsAsyncRoot:interface" />'
+methods:
+  - name: 'addEventListener(type, listener, options)'
+    uid: 'WebView2Script!WebView#addEventListener:member(1)'
+    package: WebView2Script!
+    fullName: 'addEventListener(type, listener, options)'
+    summary: >-
+      The standard EventTarget.addEventListener method. Use it to subscribe to the `message` event or
+      `sharedbufferreceived` event. The `message` event receives messages posted from the WebView2 host via
+      `CoreWebView2.PostWebMessageAsJson` or `CoreWebView2.PostWebMessageAsString`<!-- -->. The `sharedbufferreceived`
+      event receives shared buffers posted from the WebView2 host via `CoreWebView2.PostSharedBufferToScript`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        addEventListener<K extends keyof WebViewEventMap>(type: K, listener: (this: WebView, ev: WebViewEventMap[K]) =>
+        any, options?: boolean | AddEventListenerOptions): void;
+      parameters:
+        - id: type
+          description: >-
+            The name of the event to subscribe to. Valid values are `message`<!-- -->, and `sharedbufferreceived`<!--
+            -->.
+          type: K
+        - id: listener
+          description: ''
+          type: >-
+            (this: <xref uid="WebView2Script!WebView:interface" />, ev: <xref uid="WebView2Script!WebViewEventMap:interface"
+            />[K]) =&gt; any
+        - id: options
+          description: ''
+          type: boolean | AddEventListenerOptions
+      return:
+        type: void
+        description: ''
+  - name: 'addEventListener(type, listener, options)'
+    uid: 'WebView2Script!WebView#addEventListener:member(2)'
+    package: WebView2Script!
+    fullName: 'addEventListener(type, listener, options)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean |
+        AddEventListenerOptions): void;
+      parameters:
+        - id: type
+          description: ''
+          type: string
+        - id: listener
+          description: ''
+          type: EventListenerOrEventListenerObject
+        - id: options
+          description: ''
+          type: boolean | AddEventListenerOptions
+      return:
+        type: void
+        description: ''
+  - name: postMessage(message)
+    uid: 'WebView2Script!WebView#postMessage:member(1)'
+    package: WebView2Script!
+    fullName: postMessage(message)
+    summary: >-
+      When the page calls `postMessage`<!-- -->, the `message` parameter is converted to JSON and is posted
+      asynchronously to the WebView2 host process. This will result in either the `CoreWebView2.WebMessageReceived`
+      event or the `CoreWebView2Frame.WebMessageReceived` event being raised depending on if `postMessage` is called
+      from the top level document in the WebView2 or a child frame.
+    remarks: ''
+    example:
+      - |-
+        Post a message to the CoreWebView2:
+
+        ```TypeScript
+        const inTopLevelFrame = (window === window.parent);
+        if (inTopLevelFrame) {
+            // The message can be any JSON serializable object.
+            window.chrome.webview.postMessage({
+                myMessage: 'Hello from the script!',
+                otherValue: 1}
+            );
+            // A simple string is an example of a JSON serializable object
+            window.chrome.webview.postMessage("example");
+        }
+        ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'postMessage(message: any) : void;'
+      parameters:
+        - id: message
+          description: The message to send to the WebView2 host. This can be any object that can be serialized to JSON.
+          type: any
+      return:
+        type: void
+        description: ''
+  - name: releaseBuffer(buffer)
+    uid: 'WebView2Script!WebView#releaseBuffer:member(1)'
+    package: WebView2Script!
+    fullName: releaseBuffer(buffer)
+    summary: >-
+      Call with the ArrayBuffer from the chrome.webview.sharedbufferreceived event to release the underlying shared
+      memory resource.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'releaseBuffer(buffer: ArrayBuffer): void;'
+      parameters:
+        - id: buffer
+          description: An ArrayBuffer from the chrome.webview.sharedbufferreceived event.
+          type: ArrayBuffer
+      return:
+        type: void
+        description: ''
+  - name: 'removeEventListener(type, listener, options)'
+    uid: 'WebView2Script!WebView#removeEventListener:member(1)'
+    package: WebView2Script!
+    fullName: 'removeEventListener(type, listener, options)'
+    summary: >-
+      The standard EventTarget.removeEventListener method. Use it to unsubscribe to the `message` or
+      `sharedbufferreceived` event.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        removeEventListener<K extends keyof WebViewEventMap>(type: K, listener: (this: WebView, ev: WebViewEventMap[K])
+        => any, options?: boolean | EventListenerOptions): void;
+      parameters:
+        - id: type
+          description: The name of the event to unsubscribe from. Valid values are `message` and `sharedbufferreceived`<!-- -->.
+          type: K
+        - id: listener
+          description: ''
+          type: >-
+            (this: <xref uid="WebView2Script!WebView:interface" />, ev: <xref uid="WebView2Script!WebViewEventMap:interface"
+            />[K]) =&gt; any
+        - id: options
+          description: ''
+          type: boolean | EventListenerOptions
+      return:
+        type: void
+        description: ''
+  - name: 'removeEventListener(type, listener, options)'
+    uid: 'WebView2Script!WebView#removeEventListener:member(2)'
+    package: WebView2Script!
+    fullName: 'removeEventListener(type, listener, options)'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean |
+        EventListenerOptions): void;
+      parameters:
+        - id: type
+          description: ''
+          type: string
+        - id: listener
+          description: ''
+          type: EventListenerOrEventListenerObject
+        - id: options
+          description: ''
+          type: boolean | EventListenerOptions
+      return:
+        type: void
+        description: ''
+extends: EventTarget

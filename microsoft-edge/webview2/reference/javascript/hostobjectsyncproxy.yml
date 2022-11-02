@@ -1,0 +1,145 @@
+### YamlMime:TSType
+name: HostObjectSyncProxy
+uid: 'WebView2Script!HostObjectSyncProxy:interface'
+package: WebView2Script!
+fullName: HostObjectSyncProxy
+summary: >-
+  A synchronous host object proxy. Host objects added via `CoreWebView2.AddHostObjectToScript` are exposed as host
+  object proxies using `window.chrome.webview.hostObjects.{name}`<!-- -->. Host object proxies represent a host object.
+
+
+  Host object proxies are JavaScript Proxy objects that intercept all property get, property set, and method
+  invocations. Properties or methods that are a part of the Function or Object prototype are run locally. Additionally
+  any property or method in the `chrome.webview.hostObjects.options.forceLocalProperties` array are also run locally.
+  This defaults to including optional methods that have meaning in JavaScript like `toJSON` and `Symbol.toPrimitive`<!--
+  -->. Add more to the array as required.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: applyHostFunction(argArray)
+    uid: 'WebView2Script!HostObjectSyncProxy#applyHostFunction:member(1)'
+    package: WebView2Script!
+    fullName: applyHostFunction(argArray)
+    summary: |-
+      Perform a method invocation on the host object that corresponds to this proxy.
+
+      All parameters are converted to call the host object method.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyHostFunction(argArray?: any): any;'
+      parameters:
+        - id: argArray
+          description: ''
+          type: any
+      return:
+        type: any
+        description: The converted value of the return value of the host object method invocation.
+  - name: async()
+    uid: 'WebView2Script!HostObjectSyncProxy#async:member(1)'
+    package: WebView2Script!
+    fullName: async()
+    summary: >-
+      A method which blocks and returns an asynchronous host object proxy for the same host object. For example,
+      `chrome.webview.hostObjects.sync.sample.methodCall()` returns a synchronous host object proxy. Running the `async`
+      method on this blocks and then returns an asynchronous host object proxy for the same host object: `const
+      asyncProxy = chrome.webview.hostObjects.sync.sample.methodCall().async()`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'async(): HostObjectAsyncProxy;'
+      return:
+        type: '<xref uid="WebView2Script!HostObjectAsyncProxy:interface" />'
+        description: ''
+  - name: getHostProperty(propertyName)
+    uid: 'WebView2Script!HostObjectSyncProxy#getHostProperty:member(1)'
+    package: WebView2Script!
+    fullName: getHostProperty(propertyName)
+    summary: >-
+      Perform a property get on the host object. Use this method to explicitly force a property get to occur remotely if
+      a conflicting local method or property exists. For instance, `proxy.toString()` runs the local `toString` method
+      on the proxy object. But proxy.applyHostFunction('toString') runs `toString` on the host proxied object instead.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHostProperty(propertyName: string): any;'
+      parameters:
+        - id: propertyName
+          description: String name of the property of which to get the value.
+          type: string
+      return:
+        type: any
+        description: The converted value of the property of the host object's property.
+  - name: getLocalProperty(propertyName)
+    uid: 'WebView2Script!HostObjectSyncProxy#getLocalProperty:member(1)'
+    package: WebView2Script!
+    fullName: getLocalProperty(propertyName)
+    summary: >-
+      Perform property get locally on the proxy object. Use the methods to force getting a property on the host object
+      proxy rather than on the host object it represents. For instance, `proxy.unknownProperty` gets the property named
+      `unknownProperty` from the host proxied object. But `proxy.getLocalProperty('unknownProperty')` gets the value of
+      the property `unknownProperty` on the proxy object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLocalProperty(propertyName: string): any;'
+      parameters:
+        - id: propertyName
+          description: Name of the property to get the value of.
+          type: string
+      return:
+        type: any
+        description: The value of the property.
+  - name: 'setHostProperty(propertyName, propertyValue)'
+    uid: 'WebView2Script!HostObjectSyncProxy#setHostProperty:member(1)'
+    package: WebView2Script!
+    fullName: 'setHostProperty(propertyName, propertyValue)'
+    summary: >-
+      Perform a property set on the host object. Use this method to explicitly force a property set to occur remotely if
+      a conflicting local method or property exists.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setHostProperty(propertyName: string, propertyValue: any): any;'
+      parameters:
+        - id: propertyName
+          description: Name of the property of which to set the value.
+          type: string
+        - id: propertyValue
+          description: Value to set the property.
+          type: any
+      return:
+        type: any
+        description: The converted value of the property of the host object's property.
+  - name: 'setLocalProperty(propertyName, propertyValue)'
+    uid: 'WebView2Script!HostObjectSyncProxy#setLocalProperty:member(1)'
+    package: WebView2Script!
+    fullName: 'setLocalProperty(propertyName, propertyValue)'
+    summary: >-
+      Perform property set locally on the proxy object. Use the methods to force setting a property on the host object
+      proxy rather than on the host object it represents. For instance, `proxy.unknownProperty = 2` sets the property
+      named `unknownProperty` on the host proxied object. But `proxy.setLocalProperty('unknownProperty', 2)` sets the
+      value of the property `unknownProperty` on the proxy object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLocalProperty(propertyName: string, propertyValue: any): any;'
+      parameters:
+        - id: propertyName
+          description: Name of the property to get the value of.
+          type: string
+        - id: propertyValue
+          description: Value to set the property to.
+          type: any
+      return:
+        type: any
+        description: The value of the property after it is set.
+extends: CallableFunction

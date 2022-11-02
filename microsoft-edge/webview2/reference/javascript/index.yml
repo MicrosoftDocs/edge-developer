@@ -1,7 +1,17 @@
 ### YamlMime:TSPackage
-uid: Documentation
-name: Documentation
-summary: ''
+uid: WebView2Script!
+name: WebView2Script
 type: package
+summary: ''
 interfaces:
-  - Documentation.HostObjectsOptions
+  - 'WebView2Script!Chrome:interface'
+  - 'WebView2Script!HostObjectAsyncProxy:interface'
+  - 'WebView2Script!HostObjectAsyncProxyBase:interface'
+  - 'WebView2Script!HostObjectsAsyncRoot:interface'
+  - 'WebView2Script!HostObjectsOptions:interface'
+  - 'WebView2Script!HostObjectsSyncRoot:interface'
+  - 'WebView2Script!HostObjectSyncProxy:interface'
+  - 'WebView2Script!SharedBufferReceivedEvent:interface'
+  - 'WebView2Script!WebView:interface'
+  - 'WebView2Script!WebViewEventMap:interface'
+  - 'WebView2Script!Window_2:interface'
