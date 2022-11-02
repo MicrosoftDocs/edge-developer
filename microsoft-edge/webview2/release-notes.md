@@ -82,7 +82,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
-*  Added support to share a shared buffer object with script of the main-frame/iframe
+*  Added support for accessing a shared buffer object from the script of the main frame or `iframe`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
