@@ -78,7 +78,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [CoreWebView2SharedBuffer Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer?view=webview2-winrt-1.0.1466-prerelease
+* [CoreWebView2SharedBuffer Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer?view&preserve-view=true=webview2-winrt-1.0.1466-prerelease
 )
 
 ---
@@ -92,8 +92,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.PostSharedBufferToScript method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1466-prerelease#postsharedbuffertoscript)
-* [CoreWebView2Frame.PostSharedBufferToScript method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1466-prerelease#postsharedbuffertoscript)
+* [CoreWebView2.PostSharedBufferToScript method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=&preserve-view=truewebview2-winrt-1.0.1466-prerelease#postsharedbuffertoscript)
+* [CoreWebView2Frame.PostSharedBufferToScript method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view&preserve-view=true=webview2-winrt-1.0.1466-prerelease#postsharedbuffertoscript)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -115,7 +115,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2ScriptException Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptexception?view=webview2-winrt-1.0.1466-prerelease)
+* [CoreWebView2ScriptException Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptexception?view&preserve-view=true=webview2-winrt-1.0.1466-prerelease)
 
 ##### [Win32/C++](#tab/win32cpp)
 
