@@ -74,7 +74,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2SharedBuffer Class](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedbuffer?view=webview2-1.0.1466-prerelease)
+* [CoreWebView2SharedBuffer Class](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedbuffer?view&preserve-view=true=webview2-1.0.1466-prerelease)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -87,8 +87,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postsharedbuffertoscript?view=webview2-dotnet-1.0.1466-prerelease#microsoft-web-webview2-core-corewebview2-postsharedbuffertoscript(microsoft-web-webview2-core-corewebview2sharedbuffer-microsoft-web-webview2-core-corewebview2sharedbufferaccess-system-string))
-* [CoreWebView2Frame.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postsharedbuffertoscript?view=webview2-dotnet-1.0.1466-prerelease#microsoft-web-webview2-core-corewebview2frame-postsharedbuffertoscript(microsoft-web-webview2-core-corewebview2sharedbuffer-microsoft-web-webview2-core-corewebview2sharedbufferaccess-system-string))
+* [CoreWebView2.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postsharedbuffertoscript?view&preserve-view=true=webview2-dotnet-1.0.1466-prerelease#microsoft-web-webview2-core-corewebview2-postsharedbuffertoscript(microsoft-web-webview2-core-corewebview2sharedbuffer-microsoft-web-webview2-core-corewebview2sharedbufferaccess-system-string))
+* [CoreWebView2Frame.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postsharedbuffertoscript?view&preserve-view=true=webview2-dotnet-1.0.1466-prerelease#microsoft-web-webview2-core-corewebview2frame-postsharedbuffertoscript(microsoft-web-webview2-core-corewebview2sharedbuffer-microsoft-web-webview2-core-corewebview2sharedbufferaccess-system-string))
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -111,7 +111,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2ScriptException Class](/dotnet/api/microsoft.web.webview2.core.corewebview2scriptexception?view=webview2-dotnet-1.0.1466-prerelease)
+* [CoreWebView2ScriptException Class](/dotnet/api/microsoft.web.webview2.core.corewebview2scriptexception?view&preserve-view=true=webview2-dotnet-1.0.1466-prerelease)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
