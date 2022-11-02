@@ -194,7 +194,7 @@ Next, we examine two specific properties that were defined in the IDL, to show h
 
 So far, we've built our interface and implemented our host object. Now we're ready to use the `AddHostObjectToScript` API to pass the host object to our app's web-side, JavaScript code.
 
-1. In Visual Studio **Solution Explorer**, open **WebVie2APISample** > **Source Files** > [ScenarioAddHostObject.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/ScenarioAddHostObject.cpp).
+1. In Visual Studio **Solution Explorer**, open **WebView2APISample** > **Source Files** > [ScenarioAddHostObject.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/ScenarioAddHostObject.cpp).
 
 1. Go to line 28, where the `ScenarioAddHostObject` class implementation begins:
 

@@ -24,6 +24,132 @@ An iframe is one type of frame.  WebView2 currently supports top-level iframes. 
 An API is required for WebView2 for frames, because you can't create a WebView2 frame object from the app.  This API is required, for the app to be able to interact with frames, which are transient.  Without this API, WebView2 wouldn't have access to frames.  For example, `executeScript` requires having the frame object, to interact with the frame.
 
 
+<!-- todo: move to appropriate h2 section or create new h2 section -->
+#### Example code for C# 
+
+This sample code from [MainWindow.xaml.cs](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2WpfBrowser/MainWindow.xaml.cs#L842-L878) in the **WebView2WpfBrowser** sample demonstrates:
+
+* `DOMContentLoaded`<!--1st emphasis-->
+   * `CoreWebView2DOMContentLoadedEventArgs`
+* `FrameCreated`<!--2nd emphasis-->
+   * `CoreWebView2FrameCreatedEventArgs`
+* `NavigationCompleted`<!--3rd emphasis-->
+* `ExecuteScriptAsync`
+
+```csharp
+        // <DOMContentLoaded>
+        void DOMContentLoadedCmdExecuted(object target, ExecutedRoutedEventArgs e)
+        {
+            webView.CoreWebView2.DOMContentLoaded += WebView_DOMContentLoaded;
+            webView.CoreWebView2.FrameCreated += WebView_FrameCreatedDOMContentLoaded;
+            webView.NavigateToString(@"<!DOCTYPE html>" +
+                                      "<h1>DOMContentLoaded sample page</h1>" +
+                                      "<h2>The content to the iframe and below will be added after DOM content is loaded </h2>" +
+                                      "<iframe style='height: 200px; width: 100%;'/>");
+            webView.CoreWebView2.NavigationCompleted += (sender, args) =>
+            {
+                webView.CoreWebView2.DOMContentLoaded -= WebView_DOMContentLoaded;
+                webView.CoreWebView2.FrameCreated -= WebView_FrameCreatedDOMContentLoaded;
+            };
+        }
+
+        void WebView_DOMContentLoaded(object sender, CoreWebView2DOMContentLoadedEventArgs arg)
+        {
+            _ = webView.ExecuteScriptAsync(
+                    "let content = document.createElement(\"h2\");" +
+                    "content.style.color = 'blue';" +
+                    "content.textContent = \"This text was added by the host app\";" +
+                    "document.body.appendChild(content);");
+        }
+        // </DOMContentLoaded>
+
+        void WebView_FrameCreatedDOMContentLoaded(object sender, CoreWebView2FrameCreatedEventArgs args)
+        {
+            args.Frame.DOMContentLoaded += (frameSender, DOMContentLoadedArgs) =>
+            {
+                args.Frame.ExecuteScriptAsync(
+                    "let content = document.createElement(\"h2\");" +
+                    "content.style.color = 'blue';" +
+                    "content.textContent = \"This text was added to the iframe by the host app\";" +
+                    "document.body.appendChild(content);");
+            };
+        }
+```
+
+
+<!-- todo: move to appropriate h2 section or create new h2 section -->
+#### Example code from Win32 sample app
+
+This sample code from [ScenarioAddHostObject.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/ScenarioAddHostObject.cpp#L83-L133) in the **WebView2APISample** project (which is the Win32 sample app) demonstrates:
+
+* `ICoreWebView2Frame::add_Destroyed`
+   * `ICoreWebView2FrameDestroyedEventHandler`
+* `ICoreWebView2Frame::add_NameChanged`
+   * `ICoreWebView2FrameNameChangedEventHandler`
+* `ICoreWebView2Frame::AddHostObjectToScriptWithOrigins`
+* `ICoreWebView2Frame::get_Name`
+* `ICoreWebView2FrameCreatedEventHandler`
+   * `ICoreWebView2FrameCreatedEventArgs::get_Frame`
+
+```cpp
+        CHECK_FAILURE(webview2_4->add_FrameCreated(
+            Callback<ICoreWebView2FrameCreatedEventHandler>(
+                [this](
+                    ICoreWebView2* sender,
+                    ICoreWebView2FrameCreatedEventArgs* args) -> HRESULT
+        {
+            wil::com_ptr<ICoreWebView2Frame> webviewFrame;
+            CHECK_FAILURE(args->get_Frame(&webviewFrame));
+
+            wil::unique_cotaskmem_string name;
+            CHECK_FAILURE(webviewFrame->get_Name(&name));
+            if (std::wcscmp(name.get(), L"iframe_name") == 0)
+            {
+                //! [AddHostObjectToScriptWithOrigins]
+                wil::unique_variant remoteObjectAsVariant;
+                // It will throw if m_hostObject fails the QI, but because it is our object
+                // it should always succeed.
+                m_hostObject.query_to<IDispatch>(&remoteObjectAsVariant.pdispVal);
+                remoteObjectAsVariant.vt = VT_DISPATCH;
+
+                // Create list of origins which will be checked.
+                // iframe will have access to host object only if its origin belongs
+                // to this list.
+                LPCWSTR origin = L"https://appassets.example/";
+
+                CHECK_FAILURE(webviewFrame->AddHostObjectToScriptWithOrigins(
+                    L"sample", &remoteObjectAsVariant, 1, &origin));
+                //! [AddHostObjectToScriptWithOrigins]
+            }
+
+            // Subscribe to frame name changed event
+            webviewFrame->add_NameChanged(
+                Callback<ICoreWebView2FrameNameChangedEventHandler>(
+                    [this](ICoreWebView2Frame* sender, IUnknown* args) -> HRESULT {
+                        wil::unique_cotaskmem_string newName;
+                        CHECK_FAILURE(sender->get_Name(&newName));
+                        // Handle name changed event
+                        return S_OK;
+                    }).Get(), NULL);
+
+            // Subscribe to frame destroyed event
+            webviewFrame->add_Destroyed(
+                Callback<ICoreWebView2FrameDestroyedEventHandler>(
+                    [this](ICoreWebView2Frame* sender, IUnknown* args) -> HRESULT {
+                        /*Cleanup on frame destruction*/
+                        return S_OK;
+                    })
+                    .Get(),
+                NULL);
+            return S_OK;
+        }).Get(), &m_frameCreatedToken));
+    }
+```
+
+
+
+
+
 <!-- ------------------------------ -->
 #### The `WebResourceRequested` event
 
