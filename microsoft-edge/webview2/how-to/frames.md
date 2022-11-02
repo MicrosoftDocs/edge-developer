@@ -192,23 +192,23 @@ See [Step 2: Define the host object and implement IDispatch](../how-to/hostobjec
 
 
 <!-- ====================================================================== -->
-## Step 3: Call AddHostObjectToScriptWithOrigins
+## Step 3: Call AddHostObjectToScriptWithOrigins to pass the host object to web-side code
 
 <!-- doc the modifications to these steps vs. other article. -->
 
 <!-- provide code listings here that call the correct method. -->
 
-See [Step 3: Call AddHostObjectToScript from native code](../how-to/hostobject.md#step-3-call-addhostobjecttoscript-from-native-code) in _Call native-side code from web-side code_, but realize that different types and methods might be used, depending on which framework you're using.  Then return here and continue below.
+See [Step 3: Call AddHostObjectToScript to pass the host object to web-side code](../how-to/hostobject.md#step-3-call-addhostobjecttoscript-to-pass-the-host-object-to-web-side-code) in _Call native-side code from web-side code_, but realize that different types and methods might be used, depending on which framework you're using.  Then return here and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 4: Use AddHostObjectToScriptWithOrigins to pass a method to the web
+## Step 4: Access host object members from webpage JavaScript
 
 <!-- doc the modifications to these steps vs. other article. -->
 
 <!-- provide code listings here that call the correct method. -->
 
-See [Step 4: Use AddHostObjectToScript to pass a method to the web](../how-to/hostobject.md#step-4-use-addhostobjecttoscript-to-pass-a-method-to-the-web) in _Call native-side code from web-side code_, but realize that different types and methods might be used, depending on which framework you're using.  Then return here and continue below.
+See [Step 4: Access host object members from webpage JavaScript](../how-to/hostobject.md#step-4-access-host-object-members-from-webpage-javascript) in _Call native-side code from web-side code_, but realize that different types and methods might be used, depending on which framework you're using.  Then return here and continue below.
 
 
 <!-- ====================================================================== -->

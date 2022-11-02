@@ -49,7 +49,7 @@ This article uses the [Win32 sample app](https://github.com/MicrosoftEdge/WebVie
 
 1. Install Visual Studio, install git, clone the WebView2Samples repo (to follow the example steps below), and open the `WebView2Samples` solution file, which includes the `WebView2APISample` project, which is the Win32 sample app.
 
-1. Define the host object in an `.idl` file, to describe the methods and properties on the object.  We'll show how the Win32 sample app defines a host object with example methods and properties.  Also implement `IDispatch` so that WebView2 can project the native host object to the app's web-side code.
+1. Define the host object in an `.idl` file, like [HostObjectSample.idl](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSample.idl), to describe the methods and properties on the object.  We'll show how the Win32 sample app defines a host object with example methods and properties.  Also implement `IDispatch` so that WebView2 can project the native host object to the app's web-side code.
 
 1. Use `AddHostObjectToScript` to pass the native host object to the web-side code.  The Win32 sample app calls `AddHostObjectToScript` in [ScenarioAddHostObject.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/ScenarioAddHostObject.cpp), as shown below.
 
@@ -87,7 +87,7 @@ The Win32 sample app demonstrates creating a host object, as follows:
 
 In the Win32 sample app project, the file [HostObjectSample.idl](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSample.idl) defines a COM object.  This step serves as a model showing how to define your own object in an IDL file.
 
-1.  In Visual Studio **Solution Explorer**, open **WebView2APISample** > **Source Files** > **HostObjectSample.idl**.
+1.  In Visual Studio **Solution Explorer**, expand **WebView2APISample** > **Source Files**, and then double-click **HostObjectSample.idl** to open it.
 
     The following code example is broken up into two sections. The first interface is `IHostObjectSample`, starting at line 9, which inherits the `IUnknown` interface. Use this `IHostObjectSample` definition as a template for defining your object's methods, properties, callback functions, and so on.
     
@@ -127,6 +127,11 @@ In the Win32 sample app project, the file [HostObjectSample.idl](https://github.
     31        };
     32        //! [AddHostObjectInterface]
     33
+    ```
+
+1.  On line 24, note the date property, which uses a `DATE` type.  We'll focus on this date demo property in this article.
+
+    ```csharp
     34        [uuid(637abc45-11f7-4dde-84b4-317d62a638d3)]
     35        coclass HostObjectSample
     36        {
@@ -135,8 +140,6 @@ In the Win32 sample app project, the file [HostObjectSample.idl](https://github.
     39        };
     40    }
     ```
-
-1.  On line 24, note the date property, which uses a `DATE` type.  We'll focus on this demo property in this article.
 
 1.  On line 38, we include `interface IDispatch`, which is needed for our host object to work with `AddHostObjectToScript`.
 
@@ -150,9 +153,9 @@ In the Win32 sample app project, the file [HostObjectSample.idl](https://github.
 
     There might be libraries to do this automatically.  To learn more about the steps that are needed to write an `IDispatch` class wrapper for the object that you want to expose, see [Automation](/previous-versions/windows/desktop/automat/automation-programming-reference).
     
-1.  Save any changes you made in the project.
+1.  Next, save any changes you made in the project.
 
-1.  In Solution Explorer, right-click the **WebView2APISample** (which is the Win32 sample app), and then select **Build**.  This creates the translation lookaside buffer (TLB) file.  You need to reference the TLB file from the C++ source code shown in the following section.
+1.  In Solution Explorer, right-click the **WebView2APISample** (which is the Win32 sample app), and then select **Build**.  This creates a COM type library `.tlb` file.  You need to reference the `.tlb` file from the C++ source code that's shown in the following section.  For more information, see [Type Library](/windows/win32/midl/com-dcom-and-type-libraries#type-library) in _COM, DCOM, and Type Libraries_.
 
 
 <!-- ------------------------------ -->
@@ -164,15 +167,24 @@ Implement all the functions that are defined in your object's interface, as we o
 
 Next, we examine two specific properties that were defined in the IDL, to show how the IDL is related to the `.cpp` file.
 
-1.  In Visual Studio **Solution Explorer**, open **WebView2APISample** > **Source Files** > [HostObjectSampleImpl.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSampleImpl.cpp).
+1.  In Visual Studio **Solution Explorer**, expand **WebView2APISample** > **Source Files**, and then double-click **HostObjectSampleImpl.cpp** to open it.
 
-1.  Compare the property *declarations*, in [HostObjectSample.idl](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSample.idl) ...
+1.  Examine the property *declarations* in [HostObjectSample.idl](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSample.idl):
  
     ```csharp
+    // Demonstrate getting and setting a property.
     [propget] HRESULT Property([out, retval] BSTR* stringResult);
     [propput] HRESULT Property([in] BSTR stringValue);
+    ...
+    // Demonstrate a property which uses Date types
+    [propget] HRESULT DateProperty([out, retval] DATE * dateResult);
+    [propput] HRESULT DateProperty([in] DATE dateValue);
+
+    // Creates a date object on the native side and sets the DateProperty to it.
+    HRESULT CreateNativeDate();
     ```
-    ... to the *implementation* of the object's properties, in `HostObjectSampleImpl.cpp`:
+
+1.  Examine the *implementation* of the object's properties in [HostObjectSampleImpl.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSampleImpl.cpp):
 
     ```cpp
     STDMETHODIMP HostObjectSample::get_Property(BSTR* stringResult)
@@ -186,13 +198,42 @@ Next, we examine two specific properties that were defined in the IDL, to show h
         m_propertyValue = stringValue;
         return S_OK;
     }
+    ...
+
+    STDMETHODIMP HostObjectSample::get_DateProperty(DATE* dateResult)
+    {
+        *dateResult = m_date;
+        return S_OK;
+    }
+    
+    STDMETHODIMP HostObjectSample::put_DateProperty(DATE dateValue)
+    {
+        m_date = dateValue;
+        SYSTEMTIME systemTime;
+        if (VariantTimeToSystemTime(dateValue, &systemTime))
+    ...
+    }
+    
+    STDMETHODIMP HostObjectSample::CreateNativeDate()
+    {
+        SYSTEMTIME systemTime;
+        GetSystemTime(&systemTime);
+        DATE date;
+        if (SystemTimeToVariantTime(&systemTime, &date))
+        {
+            return put_DateProperty(date);
+        }
+        return E_UNEXPECTED;
+    }
     ```
+
+1. Examine the date property, which we trace throughout this article.
 
 
 <!-- ====================================================================== -->
-## Step 3: Call AddHostObjectToScript from native code
+## Step 3: Call AddHostObjectToScript to pass the host object to web-side code
 
-So far, we've built our interface and implemented our host object. Now we're ready to use the `AddHostObjectToScript` API to pass the host object to our app's web-side, JavaScript code.
+So far, we've built our interface and implemented our native host object.  Now we're ready to use the `AddHostObjectToScript` API to pass the host object to our app's web-side, JavaScript code.
 
 1. In Visual Studio **Solution Explorer**, open **WebView2APISample** > **Source Files** > [ScenarioAddHostObject.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/ScenarioAddHostObject.cpp).
 
@@ -258,9 +299,11 @@ Now the sample app's native-side code creates a host object that implements `IDi
 
 
 <!-- ====================================================================== -->
-## Step 4: Use AddHostObjectToScript to pass a method to the web
+## Step 4: Access host object members from webpage JavaScript
 
-To follow along, we use the Win32 sample app.
+Now, JavaScript statements in your `.html` webpage `script` element or in a referenced `.js` JavaScript file can access the exported native-side APIs.
+
+The web-side code of the Win32 sample app is now able to access the properties and methods of the native host object, to access the native APIs.  We'll use the sample app's webpage controls, in the **Scenario** > **Host Objects** webpage of the app, to demonstrate this.
 
 1.  In Microsoft Visual Studio, select **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
@@ -291,9 +334,9 @@ To follow along, we use the Win32 sample app.
     sample.dateProperty: Tue Nov 01 2022 12:45:25 GMT-0700 (Pacific Daylight Time)
     ```
     
-1.  Explore properties and methods by clicking the buttons in the demo webpage and entering values, to see how the sample code behaves.
+1.  Explore properties and methods by clicking the buttons in the demo webpage and entering values, to see how the sample code behaves.  The buttons demonstrate accessing properties and methods of the host object from the app's web-side code.
 
-    The buttons demonstrate accessing properties and methods of the host object from the app's web-side code.  To gain insight into what's happening in JavaScript, examine the following code in [ScenarioAddHostObject.html](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/assets/ScenarioAddHostObject.html).
+1.  To gain insight into what's happening in JavaScript, examine the following code in [ScenarioAddHostObject.html](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/assets/ScenarioAddHostObject.html).
 
     The following code is a demo `Date` property, directly within the `body` element:
 
@@ -315,7 +358,7 @@ To follow along, we use the Win32 sample app.
 
     You can also read the above label text in the rendered demo page in the sample app, explaining the **Date** button code.
 
-    The following code is a demo `Date` property that's wrapped in an `iframe` element that's created within a `script` element:
+1.  The following code is a demo `Date` property that's wrapped in an `iframe` element that's created within a `script` element:
     <!-- todo: relate to the above code, why do the buttons appear dup'd in frame -->
 
     ```javascript
@@ -333,16 +376,18 @@ To follow along, we use the Win32 sample app.
     159    });
     ```
 
-    Line 154 references `chrome.webview.hostObjects.sync.sample.dateProperty`. This line of code is getting the `dateProperty` of the native host object.
+1.  Line 154 references `chrome.webview.hostObjects.sync.sample.dateProperty`. This line of code is getting the `dateProperty` of the native host object.
 
-    In the `.idl` file, described previously, the date property is defined as part of the host object.
+    In the `.idl` file [HostObjectSample.idl](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSample.idl), described previously, the date property is defined as part of the host object.
 
+
+#### Using the sample app
 
 You can experiment with using and modifying the Win32 sample app.  Then follow the same pattern in your own app:
 
-*  Create a host object in your app's native-side code.
-*  Pass the host object to your app's web-side code.
-*  Use the host object from the app's web-side code.
+1. Create a host object in your app's native-side code.
+1. Pass the host object to your app's web-side code.
+1. Use the host object from the app's web-side code.
 
 To find out what other APIs there are in the host object ecosystem, see [WebView2 Win32 C++ ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript).
 
