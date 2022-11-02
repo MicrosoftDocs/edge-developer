@@ -37,7 +37,7 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 Release Date: October 31, 2022 
 
-[NuGet package for WebView2 SDK 22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1418.22)
+[NuGet package for WebView2 SDK 1.0.1418.22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1418.22)
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 107.0.1418.22 or higher.
 
