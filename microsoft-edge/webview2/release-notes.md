@@ -129,7 +129,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 *   Fixed a bug in which the default footer URI in print settings is missing. ([Issue #2851](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2851))
 *   Fixed a bug that produces a null pointer exception that's related to print settings. (Runtime)([Issue #2858](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2858))
 *   Fixed a bug that reports failure navigation when redirecting to a server that has configured with Client Certificate Authentication and when add_WebResourceRequested is subscribed. (Runtime)
-*   Fixed AddHostObjectToScript bug in which JS calling an async method and then a sync method, the async method call might fail.  
+*   Fixed an `AddHostObjectToScript` bug in which, when JavaScript calls an async method and then a synchronous method, the async method call might fail.
 
 <!-- ====================================================================== -->
 ## 1.0.1370.28
