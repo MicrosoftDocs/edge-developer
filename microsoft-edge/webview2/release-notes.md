@@ -87,7 +87,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postsharedbuffertoscript?view&preserve-view=true=webview2-dotnet-1.0.1466-prerelease#microsoft-web-webview2-core-corewebview2-postsharedbuffertoscript(microsoft-web-webview2-core-corewebview2sharedbuffer-microsoft-web-webview2-core-corewebview2sharedbufferaccess-system-string))
+* [CoreWebView2.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postsharedbuffertoscript?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true)
 * [CoreWebView2Frame.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postsharedbuffertoscript?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
