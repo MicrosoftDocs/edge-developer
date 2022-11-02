@@ -128,7 +128,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 *   Display `AllowedCertificateAuthorities` in `add_ClientCertificateRequested` event as a `Base64` string. (Runtime)([Issue #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346))
 *   Fixed a bug in which the default footer URI in print settings is missing. ([Issue #2851](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2851))
 *   Fixed a bug that produces a null pointer exception that's related to print settings. (Runtime)([Issue #2858](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2858))
-*   Fixed a bug that reports failure navigation when redirecting to a server that has configured with Client Certificate Authentication and when add_WebResourceRequested is subscribed. (Runtime)
+*   Fixed a bug that reports navigation failure when redirecting to a server that has been configured with Client Certificate Authentication and when the `WebResourceRequested` event is subscribed to. (Runtime)
 *   Fixed an `AddHostObjectToScript` bug in which, when JavaScript calls an async method and then a synchronous method, the async method call might fail.
 
 <!-- ====================================================================== -->
