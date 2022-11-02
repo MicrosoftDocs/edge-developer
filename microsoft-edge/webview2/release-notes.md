@@ -70,17 +70,15 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2SharedBuffer Class](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer?view=webview2-dotnet-1.0.1466-prerelease)
-
+* [CoreWebView2SharedBuffer Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer?view=webview2-dotnet-1.0.1466-prerelease)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2SharedBuffer Class](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedbuffer?view=webview2-1.0.1466-prerelease)
-
+* [CoreWebView2SharedBuffer Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedbuffer?view=webview2-1.0.1466-prerelease)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [CoreWebView2SharedBuffer Class](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer?view=webview2-winrt-1.0.1466-prerelease
+* [CoreWebView2SharedBuffer Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer?view=webview2-winrt-1.0.1466-prerelease
 )
 
 
@@ -115,7 +113,6 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2ExperimentalScriptException interface](#)
-
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
