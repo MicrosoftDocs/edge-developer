@@ -81,42 +81,41 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 * [CoreWebView2SharedBuffer Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer?view=webview2-winrt-1.0.1466-prerelease
 )
 
-
 ---
 
 *  Added support to share a shared buffer object with script of the main-frame/iframe
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Experimental18.PostSharedBufferToScript Method](x)
-* [CoreWebView2ExperimentalFrame4.PostSharedBufferToScript Method](x)
+* [CoreWebView2.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postsharedbuffertoscript?view=webview2-dotnet-1.0.1466-prerelease#microsoft-web-webview2-core-corewebview2-postsharedbuffertoscript(microsoft-web-webview2-core-corewebview2sharedbuffer-microsoft-web-webview2-core-corewebview2sharedbufferaccess-system-string))
+* [CoreWebView2Frame.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postsharedbuffertoscript?view=webview2-dotnet-1.0.1466-prerelease#microsoft-web-webview2-core-corewebview2frame-postsharedbuffertoscript(microsoft-web-webview2-core-corewebview2sharedbuffer-microsoft-web-webview2-core-corewebview2sharedbufferaccess-system-string))
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Experimental18.PostSharedBufferToScript Method](#)
-* [CoreWebView2ExperimentalFrame4.PostSharedBufferToScript Method](#)
+* [CoreWebView2.PostSharedBufferToScript method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1466-prerelease#postsharedbuffertoscript)
+* [CoreWebView2Frame.PostSharedBufferToScript method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1466-prerelease#postsharedbuffertoscript)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Experimental18.PostSharedBufferToScript Method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental18?view=webview2-1.0.1466-prerelease#postsharedbuffertoscript&preserve-view=true)
-* [ICoreWebView2ExperimentalFrame4.PostSharedBufferToScript Method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe4?view=webview2-1.0.1466-prerelease#postsharedbuffertoscript&preserve-view=true)
+* [ICoreWebView2Experimental18::PostSharedBufferToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental18?view=webview2-1.0.1466-prerelease&preserve-view=true#postsharedbuffertoscript)
+* [ICoreWebView2ExperimentalFrame4::PostSharedBufferToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe4?view=webview2-1.0.1466-prerelease&preserve-view=true#postsharedbuffertoscript)
 
 ---
 
-*  Added support to run JavaScript code from the JavaScript parameter in the current top-level document:
-    *  `get_ColumnNumber`
-    *  `get_LineNumber`
-    *  `get_Message`
-    *  `get_Name`
-    *  `get_ToJson`
+*  Added support by adding these properties to run JavaScript code from the JavaScript parameter in the current top-level document:
+    *  `ColumnNumber`
+    *  `LineNumber`
+    *  `Message`
+    *  `Name`
+    *  `ToJson`
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2ExperimentalScriptException interface](#)
+* [CoreWebView2ScriptException Class](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2scriptexception?view=webview2-dotnet-1.0.1466-prerelease)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2ExperimentalScriptException interface](#)
+* [CoreWebView2ScriptException Class](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptexception?view=webview2-winrt-1.0.1466-prerelease)
 
 ##### [Win32/C++](#tab/win32cpp)
 
