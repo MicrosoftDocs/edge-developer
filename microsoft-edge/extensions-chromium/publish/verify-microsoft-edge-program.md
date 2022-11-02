@@ -9,13 +9,13 @@ ms.date: 11/02/2022
 ---
 # Verify the company account information associated with your Microsoft Partner Center account
 
-When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide. This information can include your company name, company address, and primary contact details. During this process, Microsoft might send email to your primary contact to request verification.
+When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide. This information can include your company name, company address, and primary contact details. During the verification process, Microsoft might send email to your primary contact to request confirmation of the information that was provided.
 
 You can go to [Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) in Partner Center to monitor verification status for the Microsoft Edge Developer program.
 
 When account verification is complete, you can use your Partner Center dashboard to publish your extension to the Microsoft Edge Add-ons website.
 
-Verification usually takes three to five business days. If more than five days have passed, you can contact [Microsoft Edge Extensions support](/microsoft-edge/extensions-chromium/publish/contact-extensions-team/) for assistance.
+Verification usually takes three to five business days. If more than five days have passed, you can contact [Microsoft Edge Extensions support](/microsoft-edge/extensions-chromium/publish/contact-extensions-team/) for help.
 
 
 <!-- ====================================================================== -->
@@ -46,7 +46,7 @@ Employment verification confirms that your primary contact is an employee of the
 
 #### Suggestions
 
-For verification proof, you may submit a screenshot of the website showing name, address, contact information, and domain of the organization.
+For verification proof, you may submit a screenshot of the website showing the name, address, contact information, and domain of the organization.
 
 If employment verification is rejected, or if the domain of the registered email isn't the same as the employer's public domain, you must provide documentation ***confirming your email domain is under the ownership of your employer***, in the form of:
 
@@ -72,9 +72,9 @@ Submit one of the following documents for business verification:
 * External company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
 * Receipt from the company's home country, municipality.
 
-Confirm that the company name and address in your [Legal business profile](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) have no spelling errors or abbreviations. They must match your formal company business registration records exactly. If appropriate, select the match found in external company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
+Confirm that the company name and address in your [Legal business profile](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) don't have spelling errors or abbreviations. They must match your formal company business registration records exactly. If appropriate, select the match found in external company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
 
-Microsoft uses this documentation to verify that the company is authorized to do business under that name, and that it's located at the address provided. For further assistance, go to your profile page to upload additional proofs through the interactive vetting experience; see the next section, [Checking your verification status](#checking-your-verification-status).
+Microsoft uses this documentation to verify that the company is authorized to do business under that name, and that it's located at the address that was provided. For further assistance, go to your profile page to upload more proofs through the interactive vetting experience. For more information, see [Checking your verification status](#checking-your-verification-status).
 
 
 <!-- ====================================================================== -->
@@ -86,7 +86,7 @@ You can check verification status at Partner Center in **[Account Settings | Leg
 1. The **Developer** tab includes the **Account details** progress bar showing the stages of verification and any pending stages.
 1. Your verification status: **Pending**, **Authorized/Accepted**, or **Action Required/Rejected**, with a status icon.
 1. The **Legal business profile** progress bar with an information icon you can select to get more information.
-1. A **Fix now** button to begin resolving verification issues.
+1. A **Fix now** button to start resolving verification issues.
 
 
 <!-- ====================================================================== -->
@@ -98,7 +98,7 @@ There are three possible results when you check your verification status:
 
 *   **Pending**: The verification process has started but isn't complete. If you've completed the email verification step, no further action is required on your part. You can monitor verification status at Account Settings | Legal Info. Verification usually takes three to five business days.
 
-*   **Action Required/Rejected**: The information you submitted couldn't be verified. The reason, and instructions for how to appeal, appear in the **Account Verification** pane. See [Appealing a rejected application](#appealing-a-rejected-application), below.
+*   **Action Required/Rejected**: The information you submitted couldn't be verified. The reason, and instructions for how to appeal, appear in the **Account Verification** pane. See [Appealing a rejected application](#appealing-a-rejected-application) in the next section.
 
 
 <!-- ====================================================================== -->
@@ -123,7 +123,7 @@ The amount of time required to review an appeal varies. You can return to **[Acc
 <!-- ====================================================================== -->
 ## Next steps
 
-To view your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
+To view your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  You can keep building, testing, and preparing your submissions while you wait for the verification process to finish. Review the following extension documents:
 
 *  [Publish an extension](publish-extension.md)
 
