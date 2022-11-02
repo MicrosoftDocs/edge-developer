@@ -74,7 +74,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2SharedBuffer Class](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedbuffer?view&preserve-view=true=webview2-1.0.1466-prerelease)
+* [CoreWebView2SharedBuffer Class](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedbuffer?view=webview2-1.0.1466-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
