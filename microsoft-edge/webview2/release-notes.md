@@ -101,7 +101,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
-*  Added support by adding these properties to run JavaScript code from the JavaScript parameter in the current top-level document:
+*  Added support for running JavaScript code from the `JavaScript` parameter in the current top-level document:
     *  `ColumnNumber`
     *  `LineNumber`
     *  `Message`
