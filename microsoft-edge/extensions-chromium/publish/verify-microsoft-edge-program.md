@@ -5,11 +5,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/09/2022
+ms.date: 11/02/2022
 ---
 # Verify the company account information associated with your Microsoft Partner Center account
 
-When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide. Information can include your company name, company address, and primary contact details. During this process, Microsoft may send email to your primary contact to request verification.
+When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide. This information can include your company name, company address, and primary contact details. During this process, Microsoft might send email to your primary contact to request verification.
 
 You can go to [Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) in Partner Center to monitor verification status for the Microsoft Edge Developer program.
 
@@ -33,7 +33,7 @@ Email ownership verifies that the primary contact (primary email) address is val
 
 #### Suggestions
 
-Be sure to flag email from Microsoft.com as a **safe** domain, and check junk email folders.
+Be sure to flag email from Microsoft.com as a **safe** domain, and check your junk email folders.
 
 If you don't receive the email ownership verification email message within one business day, you can ask us to send the email again. On to your Partner Center account, go to **Home > Account settings**. On the **Account settings | My profile** page, select **Resend verification email**.
 
@@ -48,7 +48,7 @@ Employment verification confirms that your primary contact is an employee of the
 
 For verification proof, you may submit a screenshot of the website showing name, address, contact information, and domain of the organization.
 
-If employment verification is rejected, or if the domain of the registered email is not the same as the employer's public domain, you must provide documentation ***confirming your email domain is under the ownership of your employer***, in the form of:
+If employment verification is rejected, or if the domain of the registered email isn't the same as the employer's public domain, you must provide documentation ***confirming your email domain is under the ownership of your employer***, in the form of:
 
 * Assignment letter from an authorized representative of the organization.
 * Domain ownership records, such as [whois](https://www.whois.com/whois).
@@ -74,7 +74,7 @@ Submit one of the following documents for business verification:
 
 Confirm that the company name and address in your [Legal business profile](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) have no spelling errors or abbreviations. They must match your formal company business registration records exactly. If appropriate, select the match found in external company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
 
-Microsoft uses this documentation to verify that the company is authorized to do business under that name, and that it is located at the address provided. For further assistance, go to your profile page to upload additional proofs through the interactive vetting experience; see the next section, [Checking your verification status](#checking-your-verification-status).
+Microsoft uses this documentation to verify that the company is authorized to do business under that name, and that it's located at the address provided. For further assistance, go to your profile page to upload additional proofs through the interactive vetting experience; see the next section, [Checking your verification status](#checking-your-verification-status).
 
 
 <!-- ====================================================================== -->
@@ -96,7 +96,7 @@ There are three possible results when you check your verification status:
 
 *   **Authorized/Accepted**: The information you submitted was verified, and you're notified of your acceptance into the program. No further action is required.
 
-*   **Pending**: The verification process has started but isn't complete. If you have completed the email verification step, no additional action is required on your part. You can monitor verification status at Account Settings | Legal Info. Verification usually takes three to five business days.
+*   **Pending**: The verification process has started but isn't complete. If you've completed the email verification step, no further action is required on your part. You can monitor verification status at Account Settings | Legal Info. Verification usually takes three to five business days.
 
 *   **Action Required/Rejected**: The information you submitted couldn't be verified. The reason, and instructions for how to appeal, appear in the **Account Verification** pane. See [Appealing a rejected application](#appealing-a-rejected-application), below.
 
@@ -129,5 +129,5 @@ To view your verification status, go to [Partner Center](https://partner.microso
 
 *  [Extension concepts and architecture](../getting-started/index.md)
 
-*  [Add users to the Microsoft Edge program](aad-account.md) - Adding additional users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Azure Active Directory account with your Microsoft account (MSA) on Partner Center.
+*  [Add users to the Microsoft Edge program](aad-account.md) - Adding more users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Azure Active Directory account with your Microsoft account (MSA) on Partner Center.
 
