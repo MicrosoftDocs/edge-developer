@@ -125,7 +125,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Bug fixes
 
-*   Fixed a bug which custom header title in print settings could be wrong([Issue #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093))
+*   Fixed a bug in which the custom header title in print settings could be wrong. ([Issue #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093))
 *   Display AllowedCertificateAuthorities in add_ClientCertificateRequested event as Base64 string. (Runtime)([Issue #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346))
 *   Fixed a bug which default footer URI in print settings is missing.([Issue #2851](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2851))
 *   Fixed a bug that brings null poiner exception related to print settings. (Runtime)([Issue #2858](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2858))
