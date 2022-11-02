@@ -9,7 +9,9 @@ ms.technology: webview
 ms.date: 10/24/2022
 ---
 # Using frames in WebView2 apps
-<!-- TODO: Dev:  What other frame types will there be besides iframes?  If this article covers only iframes, maybe should change the filename to iframes.md, and change the title from "Using frames in WebView2 apps" to "Using iframes in WebView2 apps" -->
+<!--
+scope of article is frames, not only iframes.  Other types of frames are: frameset, portal, embed, fencedFrame, object.  The API is called WebView2Frame (not iframe).  The WebView2Frame API is currently enabled for iframes, and will support additional types of frames.
+-->
 
 <!-- todo
 In hostobjects.md, extend the article by adding an iframes example in C# and in Win32/C++.
@@ -70,7 +72,7 @@ To receive the frame object, you must subscribe to the `FrameCreated` event.
 ---
 
 See also:
-* [iframes](../concepts/overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
+* [iframes](./overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
@@ -113,7 +115,7 @@ Once the frame navigates to the source url, the following navigation events are 
 * `DOMContentLoaded`
 * `NavigationCompleted`
 
-To learn more about navigation events, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
+To learn more about navigation events, see [Navigation events for WebView2 apps](./navigation-events.md).
 
 Note that the `CoreWebView2.FrameNavigationStarting` event and the `CoreWebView2.FrameNavigationCompleted` event duplicate the `CoreWebView2Frame.NavigationCompleted` event and `CoreWebView2Frame.NavigationStarting` event.  We recommend using the `CoreWebView2Frame.NavigationCompleted` event and `CoreWebView2Frame.NavigationStarting` event, rather than the events on `CoreWebView2`, because the `CoreWebView2Frame` type supports more scenarios to allow interactions with frames.
 
@@ -165,8 +167,8 @@ Older:
 ---
 
 See also:
-* [Navigation events](../concepts/overview-features-apis.md#navigation-events) in _Overview of WebView2 features and APIs_.
-* [Block unwanted navigating](../concepts/overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 features and APIs_.
+* [Navigation events](./overview-features-apis.md#navigation-events) in _Overview of WebView2 features and APIs_.
+* [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
@@ -261,12 +263,12 @@ TODO
 <!-- todo: after add api links above, remove the n/a links: -->
 See also:
 * [Call native-side code from web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject?tabs=dotnetcsharp)
-* [Script execution](../concepts/overview-features-apis.md#script-execution) in _Overview of WebView2 features and APIs_.
-* [Web messaging](../concepts/overview-features-apis.md#web-messaging) in _Overview of WebView2 features and APIs_.
-* [Permissions](../concepts/overview-features-apis.md#permissions) in _Overview of WebView2 features and APIs_.
-* [Block unwanted navigating](../concepts/overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 features and APIs_.
-* [Navigation events](../concepts/overview-features-apis.md#navigation-events) in _Overview of WebView2 features and APIs_.
-* [iframes](../concepts/overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
+* [Script execution](./overview-features-apis.md#script-execution) in _Overview of WebView2 features and APIs_.
+* [Web messaging](./overview-features-apis.md#web-messaging) in _Overview of WebView2 features and APIs_.
+* [Permissions](./overview-features-apis.md#permissions) in _Overview of WebView2 features and APIs_.
+* [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 features and APIs_.
+* [Navigation events](./overview-features-apis.md#navigation-events) in _Overview of WebView2 features and APIs_.
+* [iframes](./overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
@@ -298,7 +300,7 @@ See also:
 <!-- ====================================================================== -->
 ## Run JavaScript code in iframes by using ExecuteScript
 
-The article [Navigation events for WebView2 apps](../concepts/navigation-events.md) is valid for frames as well as webpages.
+The article [Navigation events for WebView2 apps](./navigation-events.md) is valid for frames as well as webpages.
 <!-- TODO: ask Dev if BasicAuth should be added to diagram https://learn.microsoft.com/microsoft-edge/webview2/media/navigation-graph.png -->
 
 There are various kinds of frames.  WebView currently supports top-level iframes.  WebView2 doesn't currently support nested iframes.
@@ -333,7 +335,7 @@ There are various kinds of frames.  WebView currently supports top-level iframes
 ---
 
 See also:
-* [Script execution](../concepts/overview-features-apis.md#script-execution) in _Overview of WebView2 features and APIs_.
+* [Script execution](./overview-features-apis.md#script-execution) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
@@ -402,7 +404,7 @@ This sample code shows how to use frame APIs, including:
 For iframes, you can listen to network events and modify them, by using the `WebResourceRequested` event.
 
 See also:
-* [Manage network requests in WebView2](../concepts/overview-features-apis.md#manage-network-requests-in-webview2) in _Overview of WebView2 features and APIs_.
+* [Manage network requests in WebView2](./overview-features-apis.md#manage-network-requests-in-webview2) in _Overview of WebView2 features and APIs_.
 * [Custom management of network requests](../how-to/webresourcerequested.md)
 
 
@@ -411,20 +413,20 @@ See also:
 
 The following features, listed in [Overview of WebView2 features and APIs](https://learn.microsoft.com/microsoft-edge/webview2/concepts/overview-features-apis), include frame-related APIs:
 
-* [Host/web object sharing](../concepts/overview-features-apis.md)
-* [iframes](../concepts/overview-features-apis.md#iframes)<!--same link is in h2 "Subscribing to the FrameCreated event" above-->
-* [Script execution](../concepts/overview-features-apis.md#script-execution)<!--same link is in h2 "Running JavaScript code in iframes by using ExecuteScript" above-->
-* [Web messaging](../concepts/overview-features-apis.md#web-messaging)<!--link doesn't exist in an h2 section above-->
-* [Permissions](../concepts/overview-features-apis.md#permissions)<!--link doesn't exist in an h2 section above-->
-* [Block unwanted navigating](../concepts/overview-features-apis.md#block-unwanted-navigating)<!--same link is in h2 "Navigation and navigation events" above-->
-* [Navigation events](../concepts/overview-features-apis.md#navigation-events)<!--same link is in h2 "Navigation and navigation events" above-->
+* [Host/web object sharing](./overview-features-apis.md)
+* [iframes](./overview-features-apis.md#iframes)<!--same link is in h2 "Subscribing to the FrameCreated event" above-->
+* [Script execution](./overview-features-apis.md#script-execution)<!--same link is in h2 "Running JavaScript code in iframes by using ExecuteScript" above-->
+* [Web messaging](./overview-features-apis.md#web-messaging)<!--link doesn't exist in an h2 section above-->
+* [Permissions](./overview-features-apis.md#permissions)<!--link doesn't exist in an h2 section above-->
+* [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating)<!--same link is in h2 "Navigation and navigation events" above-->
+* [Navigation events](./overview-features-apis.md#navigation-events)<!--same link is in h2 "Navigation and navigation events" above-->
 
 
 <!-- ====================================================================== -->
 ## See also
 
 * [Call native-side code from web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject)
-* [Navigation events for WebView2 apps](../concepts/navigation-events.md) - valid for frames as well as webpages.
+* [Navigation events for WebView2 apps](./navigation-events.md) - valid for frames as well as webpages.
 
 **External pages:**
 * [HTML <iframe\> Tag](https://www.w3schools.com/tags/tag_iframe.asp)
