@@ -233,7 +233,12 @@ Next, we examine two specific properties that were defined in the IDL, to show h
 <!-- ====================================================================== -->
 ## Step 3: Call AddHostObjectToScript to pass the host object to web-side code
 
-So far, we've built our interface and implemented our native host object.  Now we're ready to use the `AddHostObjectToScript` API to pass the host object to our app's web-side, JavaScript code.
+So far, we've built our interface and implemented our native host object.  Now we're ready to use the `ICoreWebView2::AddHostObjectToScript` API to pass the host object to our app's web-side, JavaScript code.
+For adding the host object to an iframe, we'll use `ICoreWebView2Frame::AddHostObjectToScriptWithOrigins`.
+
+<!-- ----------------------------------- -->
+
+##### [WebView2](#tab/webview2)
 
 1. In Visual Studio **Solution Explorer**, open **WebView2APISample** > **Source Files** > [ScenarioAddHostObject.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/ScenarioAddHostObject.cpp).
 
@@ -295,7 +300,57 @@ So far, we've built our interface and implemented our native host object.  Now w
 
 1.  Line 59 passes the `VARIANT` to `AddHostObjectToScript`, names it `sample`, and enables the remote object as `VARIANT` (`&remoteObjectAsVariant`).
 
-Now the sample app's native-side code creates a host object that implements `IDispatch`. This native code also calls the WebView2 API `AddHostObjectToScript` and passes the host object to the app's web-side code. Continue to the next step to see what's enabled by passing the host object from the app's native-side code to the app's web-side code.
+
+<!-- ----------------------------------- -->
+
+##### [WebView2Frame](#tab/webview2frame)
+
+This sample code <!--trimmed--> is from [ScenarioAddHostObject.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/ScenarioAddHostObject.cpp#L83-L133) in the **WebView2APISample** project (which is the Win32 sample app).
+
+This sample code demonstrates these APIs:
+* `ICoreWebView2Frame::AddHostObjectToScriptWithOrigins` 
+* `ICoreWebView2FrameCreatedEventHandler`
+   * `ICoreWebView2FrameCreatedEventArgs::get_Frame`
+
+```cpp
+        CHECK_FAILURE(webview2_4->add_FrameCreated(
+            Callback<ICoreWebView2FrameCreatedEventHandler>(
+                [this](
+                    ICoreWebView2* sender,
+                    ICoreWebView2FrameCreatedEventArgs* args) -> HRESULT
+        {
+            wil::com_ptr<ICoreWebView2Frame> webviewFrame;
+            CHECK_FAILURE(args->get_Frame(&webviewFrame));
+
+            wil::unique_cotaskmem_string name;
+            CHECK_FAILURE(webviewFrame->get_Name(&name));
+            if (std::wcscmp(name.get(), L"iframe_name") == 0)
+            {
+                //! [AddHostObjectToScriptWithOrigins]
+                wil::unique_variant remoteObjectAsVariant;
+                // It will throw if m_hostObject fails the QI, but because it is our object
+                // it should always succeed.
+                m_hostObject.query_to<IDispatch>(&remoteObjectAsVariant.pdispVal);
+                remoteObjectAsVariant.vt = VT_DISPATCH;
+
+                // Create list of origins which will be checked.
+                // iframe will have access to host object only if its origin belongs
+                // to this list.
+                LPCWSTR origin = L"https://appassets.example/";
+
+                CHECK_FAILURE(webviewFrame->AddHostObjectToScriptWithOrigins(
+                    L"sample", &remoteObjectAsVariant, 1, &origin));
+                //! [AddHostObjectToScriptWithOrigins]
+            }
+
+            return S_OK;
+        }).Get(), &m_frameCreatedToken));
+    }
+```
+
+---
+
+Now the sample app's native-side code creates a host object that implements `IDispatch`. This native code also calls the WebView2 API `ICoreWebView2::AddHostObjectToScript` or `ICoreWebView2Frame::AddHostObjectToScriptWithOrigins` and passes the host object to the app's web-side code. Continue to the next step to see what's enabled by passing the host object from the app's native-side code to the app's web-side code.
 
 
 <!-- ====================================================================== -->
