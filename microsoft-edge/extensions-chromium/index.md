@@ -13,13 +13,13 @@ A Microsoft Edge *extension* is a small app that developers use to add or modify
 
 You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages.  Examples of *companion experiences* include ad blockers and password managers.
 
-An extension is structured similar to a regular web app.  An extension should include at least the following features:
+An extension should include at least the following features:
 
 *   An app manifest JSON file that contains basic platform information.
 *   A JavaScript file that defines the function.
 *   HTML and CSS files that define the user interface.
 
-To work directly with part of the browser, such as a window or tab, you must send API requests and must often reference the browser by name.
+To work directly with a specific part of the browser, such as a window or tab, you must send API requests and must often reference the browser by name.
 
 ![A Microsoft Edge extension.](./media/example-extension-screenshot.png)
 
