@@ -87,7 +87,7 @@ Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsof
 
 On the **Availability** webpage, enter the following information about the availability of your extension.
 
-### Visibility
+#### Visibility
 
 Select one of the following visibility options to define whether your extension is discoverable in the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
@@ -97,7 +97,7 @@ Select one of the following visibility options to define whether your extension 
 
 You can change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to **Public** retain access to your extension and receive any updates you make available through the Microsoft Edge Add-ons website.
 
-### Markets
+#### Markets
 
 Define the specific markets in which you plan to offer your extension.  The default setting for markets is all markets and that includes any future markets that are added later.
 
@@ -153,7 +153,7 @@ The information provided in the following section is displayed to users who revi
 | Short description (required) | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it.  |
 | Search terms (optional) | `Search terms` are single words or phrases that help discover your extension when a user searches in the Microsoft Edge Add-ons website.  The search terms aren't displayed to users.  |
 
-### YouTube video URL requirements
+#### YouTube video URL requirements
 
 Make sure your video meets the following requirements.
 
@@ -174,7 +174,7 @@ To submit the YouTube video URL of your video:
 1. On the store listing details webpage, paste the HTML code in the `YouTube video URL` field.
 
 
-### Search terms requirements
+#### Search terms requirements
 
 Search terms must meet the following requirements:
 
@@ -189,7 +189,7 @@ Search terms must meet the following requirements:
 On the **Submit your extension** webpage, add notes for certification to help test your extension.
 
 
-### Notes for certification (optional)
+#### Notes for certification (optional)
 
 When you submit your extension, use the **Notes for certification** webpage to provide additional information to the certification testers.  The additional information helps ensure that your extension is tested correctly.  If your extension isn't fully tested, it might fail certification.
 
