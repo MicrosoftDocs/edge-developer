@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/01/2022
+ms.date: 11/02/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -56,13 +56,13 @@ By default the Device Toolbar opens in Responsive Viewport Mode.
 
 ### Responsive Viewport Mode
 
-To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.  You can also enter any numeric values in the width and height boxes.  If you select a size larger than available in the browser window, the viewport will be auto zoomed-out to accommodate for the larger viewport.
+To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.  You can enter any numeric values in the width and height boxes.  If you select a size larger than available in the browser window, the viewport will be auto zoomed-out to accommodate for the larger viewport.
 
 In the following figure, the width is set to `626` and the height is set to `516`.
 
 ![The handles for changing the dimensions of the viewport when in Responsive Viewport Mode.](../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png)
 
-Remember if you need more viewer space, you can always edit the position of DevTools as explained in ![Change DevTools placement (Undock, Dock to bottom, Dock to left)](/microsoft-edge/devtools-guide-chromium/customize/placement)
+Remember if you need more space on your screen, you can always edit the position of DevTools as explained in ![Change DevTools placement (Undock, Dock to bottom, Dock to left)](/microsoft-edge/devtools-guide-chromium/customize/placement).
 
 #### Show media queries
 
