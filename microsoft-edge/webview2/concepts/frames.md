@@ -6,12 +6,9 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 10/24/2022
+ms.date: 11/02/2022
 ---
 # Using frames in WebView2 apps
-<!--
-scope of article is frames, not only iframes.  Other types of frames are: frameset, portal, embed, fencedFrame, object.  The API is called WebView2Frame (not iframe).  The WebView2Frame API is currently enabled for iframes, and will support additional types of frames.
--->
 
 <!-- todo
 In hostobjects.md, extend the article by adding an iframes example in C# and in Win32/C++.
@@ -21,7 +18,9 @@ iframes overview: c# and win32  - execute script scenario example
 
 Frames allow you to embed other webpages into your own webpage.  A _frame_ is a sub-page or area within a webpage, like a webpage within a webpage.  
 
-An iframe is one type of frame.  WebView2 currently supports top-level iframes.  WebView2 supports APIs to interact with iframes.  In WebView2, you can:
+An iframe is one type of frame.  Other types of frames are `frameset`, `portal`, `embed`, `fencedFrame`, and `object`.  The main type is `CoreWebView2Frame`, which is currently enabled for iframes.  Support for other types of frames is planned.
+
+WebView2 currently supports top-level iframes.  WebView2 supports APIs to interact with iframes.  In WebView2, you can:
 * Find out when iframes are created.
 * Find out when iframes are navigating.  This works the same as state machine Navigation events for WebView2 apps.  link to diagram.
 * Communicating between the host app and iframes.
@@ -58,8 +57,8 @@ To receive the frame object, you must subscribe to the `FrameCreated` event.
 * [CoreWebView2.FrameCreated Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framecreated)
    * [CoreWebView2FrameCreatedEventArgs Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framecreatedeventargs)
 
-* [CoreWebView2Frame.Destroyed Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1370.28#destroyed)
-   * [CoreWebView2Frame.IsDestroyed Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1370.28#isdestroyed)
+* [CoreWebView2Frame.Destroyed Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#destroyed)
+   * [CoreWebView2Frame.IsDestroyed Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#isdestroyed)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -67,7 +66,7 @@ To receive the frame object, you must subscribe to the `FrameCreated` event.
    * [ICoreWebView2FrameCreatedEventArgs interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)
 
 * [ICoreWebView2Frame::Destroyed event]<!-- todo - API Ref exists?  mentioned in next topic: -->
-   * [ICoreWebView2Frame::IsDestroyed method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame?view=webview2-1.0.1370.28#isdestroyed)
+   * [ICoreWebView2Frame::IsDestroyed method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame#isdestroyed)
 
 ---
 
@@ -152,7 +151,7 @@ Older:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler?view=webview2-1.0.1343.22)
+* [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler)
 <!-- TODO: in that API Ref topic, link to the main type that uses that handler -->
 * [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) - This method can be used for iframe as well. Your script must check whether it's an iframe or not.
 
@@ -223,14 +222,14 @@ Win32/C++:
 If a frame wants to control or execute objects that are created on the native side; that is, if you have native objects that you want to control from the JavaScript side, use `AddHostObjectToScriptWithOrigins`.  See also [Call native-side code from web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject), but in the present scenario use the  `CoreWebView2Frame.AddHostObjectToScriptWithOrigins` method instead of `CoreWebView2.AddHostObjectToScript`.  `AddHostObjectToScriptWithOrigins` takes an additional parameter, `origins`.
 The `origins` parameter defines from which urls iframes will have access to the host object. 
 If the frame is navigated to a URL that is not in the `origins` list, the frame will not be able to operate the host object; the frame won't be able to read or write any properties
-<!-- such as: see "Method name" table in https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1370.28#addhostobjecttoscript -->
+<!-- such as: see "Method name" table in https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript -->
 
 <!-- applyHostFunction, getHostProperty, setHostProperty	Perform a method invocation, property get, or property set on the host object. Use the methods to explicitly force a method or property to run remotely if a conflicting local method or property exists. For instance, proxy.toString() runs the local toString method on the proxy object. But proxy.applyHostFunction('toString') runs toString on the host proxied object instead.  getLocalProperty, setLocalProperty -->
  ... won't be able to call any methods or access properties on the host object.
 ... implement on native side
 ... while adding host object to script, need to specify which url will be allowed, for security reasons.
 
-This works similarly to [ICoreWebView2.AddHostObjectToScript] https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1370.28#addhostobjecttoscript) and we recommend that you read this API Reference section, though realize you would use [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins) instead.
+This works similarly to [ICoreWebView2.AddHostObjectToScript] https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript) and we recommend that you read this API Reference section, though realize you would use [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins) instead.
 
 For an example, see [Step 3: Call AddHostObjectToScript to pass the host object to web-side code](../how-to/hostobject.md#step-3-call-addhostobjecttoscript-to-pass-the-host-object-to-web-side-code) in _Call native-side code from web-side code_.
 

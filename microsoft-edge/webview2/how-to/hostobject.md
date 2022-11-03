@@ -25,7 +25,7 @@ WebView2 enables applications to bridge the gap between the web and native sides
 * [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
 * [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
 
-This article covers Win32/C++.  For WinRT, see [Call native-side WinRT code from web-side code](./winrt-from-js).
+This article covers Win32/C++.  For WinRT, see [Call native-side WinRT code from web-side code](./winrt-from-js.md).
 
 ---
 
@@ -73,7 +73,7 @@ This article uses the [Win32 sample app](https://github.com/MicrosoftEdge/WebVie
 
 To use the `AddHostObjectToScript` API, you first need to define a host object.  For Win32/C++, the host object definition in an `idl` file describes the exposed or wrapped properties and methods.  The host object must also implement `IDispatch`.  Continue reading this section to see how the Win32 sample app does this.  Implementing `IDispatch` is essential for formatting the host object so that it can be passed to the web-side code.
 
-For your own code base, if you already have a host object that implements `IDispatch`, you can skip to [Step 3: Call AddHostObjectToScript from native code](#step-3-call-addhostobjecttoscript-from-native-code).
+For your own code base, if you already have a host object that implements `IDispatch`, you can skip to [Step 3: Call AddHostObjectToScript to pass the host object to web-side code](#step-3-call-addhostobjecttoscript-to-pass-the-host-object-to-web-side-code).
 
 The Win32 sample app demonstrates creating a host object, as follows:
 
@@ -457,7 +457,7 @@ See [Host/web object sharing](../concepts/overview-features-apis.md#hostweb-obje
 ## See also
 
 * [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
-* [Using frames in WebView2 apps](./frames.md)
+* [Using frames in WebView2 apps](../concepts/frames.md)
 * [Call native-side WinRT code from web-side code](./winrt-from-js.md)
 
 GitHub:
