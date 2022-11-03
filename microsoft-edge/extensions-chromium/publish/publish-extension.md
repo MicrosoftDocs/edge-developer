@@ -77,7 +77,7 @@ Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsof
 
 1. To upload your package, drag and drop the zip file to the **Drag your package here (.zip)** section of the webpage. Or you can select **Browse your files** to open a dialog box to select the package to upload.
 
-   After your package is uploaded, it is validated. If there is a validation error, resolve the issue and try uploading your package again.
+   After your package is uploaded, it's validated. If there's a validation error, resolve the issue and try uploading your package again.
 
 1. When validation succeeds, review the extension details, and then select **Continue** to proceed.  
 
@@ -95,7 +95,7 @@ Select one of the following visibility options to define whether your extension 
 
 *  `Hidden` - Removes extensions from search results or browsing in the Microsoft Edge Add-ons website.  To distribute hidden extensions in the Microsoft Edge Add-ons website, you must share the listing URL to the extension with your customers.
 
-You can change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to public retain access to your extension and receive any updates you make available through the Microsoft Edge Add-ons website.
+You can change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to **Public** retain access to your extension and receive any updates you make available through the Microsoft Edge Add-ons website.
 
 ### Markets
 
@@ -105,7 +105,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 1. Toggle individual markets to exclude each one or select **Unselect all** and then add individual markets of your choice.
 
-   You can change the markets where your extension is offered. A user who installs your extension while it is available in the user's market retains access to your extension. However, the user doesn't have access to any future updates that are submitted to the Microsoft Edge Add-ons website.
+   You can change the markets where your extension is offered. A user who installs your extension while it's available in the user's market retains access to your extension. However, the user doesn't have access to any future updates that are submitted to the Microsoft Edge Add-ons website.
 
 1. Click **Save & Continue** to continue to the **Properties** section.
 
@@ -126,7 +126,7 @@ On the **Properties** webpage, enter the following information to specify proper
 
 Select **Save & Continue** to continue to the **Store listings** section.
 
-> [!Important]
+> [!IMPORTANT]
 > Your developer/organization name, website URL, and support contact details that you submitted during registration are displayed to users on the Microsoft Edge Add-ons website.
 
 
@@ -150,7 +150,7 @@ The information provided in the following section is displayed to users who revi
 | Screenshots (optional) | You can submit a maximum of 10 `screenshots` describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload at least one for the language.|
 | Large promotional tile (optional) | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge Add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |
 | YouTube video URL (optional) | You can include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing webpage of your extension.  |
-| Short description (required) | To edit the `short description`, you must update the description field in your manifest file of your extension package and re-upload it.  |
+| Short description (required) | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it.  |
 | Search terms (optional) | `Search terms` are single words or phrases that help discover your extension when a user searches in the Microsoft Edge Add-ons website.  The search terms aren't displayed to users.  |
 
 ### YouTube video URL requirements
