@@ -42,14 +42,14 @@ Also see these articles in the Partner Center documentation:
 
 First, determine whether you have a Partner Center account.  If you have a Partner Center account, determine whether the Primary Owner is a Microsoft Account (MSA), which is required for joining the Microsoft Edge program, to manage Microsoft Edge extensions.  Then follow the steps in the section that applies to your type of Partner Center account.
 
-### If you don't have a Partner Center account
+#### If you don't have a Partner Center account
 
 1.  Use a Microsoft account (MSA) to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer](create-dev-account.md). As mentioned in that article, you can use your GitHub account to create a Microsoft account (MSA).
 
 Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 
 
-### If the Primary Owner of your Partner Center account isn't a Microsoft account (MSA)
+#### If the Primary Owner of your Partner Center account isn't a Microsoft account (MSA)
 
 For a Partner Center account to manage Microsoft Edge extensions, the Primary Owner of the Partner Center account must be a Microsoft account (MSA).
 
@@ -66,7 +66,7 @@ To determine whether the Primary Owner of your Partner Center account is a Micro
    Next, go to [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 
 
-### If the Primary Owner of your Partner Center account is a Microsoft account (MSA)
+#### If the Primary Owner of your Partner Center account is a Microsoft account (MSA)
 
 1. If you're already signed in to Partner Center using your work Microsoft account (MSA), sign out. The Microsoft Edge program on Partner Center doesn't support enrolling by using a work Microsoft account (MSA) or a school Microsoft account (MSA).
 
