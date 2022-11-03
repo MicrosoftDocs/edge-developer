@@ -62,7 +62,7 @@ In the following figure, the width is set to `626` and the height is set to `516
 
 ![The handles for changing the dimensions of the viewport when in Responsive Viewport Mode.](../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png)
 
-Remember if you need more space on your screen, you can always edit the position of DevTools as explained in ![Change DevTools placement (Undock, Dock to bottom, Dock to left)](/microsoft-edge/devtools-guide-chromium/customize/placement).
+If you need more space on your screen, you can always change the position of DevTools as explained in [Change DevTools placement (Undock, Dock to bottom, Dock to left)](/microsoft-edge/devtools-guide-chromium/customize/placement).
 
 #### Show media queries
 
