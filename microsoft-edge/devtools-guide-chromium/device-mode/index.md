@@ -56,7 +56,7 @@ By default the Device Toolbar opens in Responsive Viewport Mode.
 
 ### Responsive Viewport Mode
 
-To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.  You can enter any numeric values in the width and height boxes.  If you select a size larger than available in the browser window, the viewport will be auto zoomed-out to accommodate for the larger viewport.
+To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.  You can enter any numeric values in the width and height boxes.  If you select a size larger than available in the browser window, the viewport will be automatically scaled to accommodate for the larger viewport.
 
 In the following figure, the width is set to `626` and the height is set to `516`.
 
