@@ -9,7 +9,7 @@ ms.date: 11/03/2022
 ---
 # Overview of Microsoft Edge extensions
 
-A Microsoft Edge *extension* is a small program that developers use to add or modify features of Microsoft Edge.  An extension improves a user's browsing experience.  It usually provides a niche function that is important to a target audience.
+A Microsoft Edge *extension* is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that is important to a target audience.
 
 You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages.  Examples of *companion experiences* include ad blockers and password managers.
 
