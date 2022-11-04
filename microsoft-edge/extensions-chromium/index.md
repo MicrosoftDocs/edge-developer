@@ -27,7 +27,9 @@ To work directly with a specific part of the browser, such as a window or tab, y
 <!-- ====================================================================== -->
 ## Basic guidance
 
-Some of the most popular browsers to build extensions for include Safari, Firefox, Chrome, Opera, Brave, and Microsoft Edge.  Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  The following table isn't exhaustive or definitive. It is just a starting point for your research.
+Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  Some of the most popular browsers to build extensions for include Safari, Firefox, Chrome, Opera, Brave, and Microsoft Edge. 
+
+The following table isn't exhaustive or definitive. It is just a starting point for your research.
 
 | Web browser | Chromium-based? | Extension development webpage |
 |:--- |:--- |:--- |
@@ -39,7 +41,7 @@ Some of the most popular browsers to build extensions for include Safari, Firefo
 | Microsoft Edge | Yes | [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/microsoft-edge/extensions) |
 
 > [!IMPORTANT]
-> Many of the tutorials of the sites use browser-specific APIs that might not match the browser for which you develop.  In most cases, a Chromium extension works as-is in different Chromium browsers and the APIs work as expected.  Some less-common APIs might be browser-specific.  Links to the tutorials are in the [See also](#see-also) section, below.
+> Many of the tutorials on these sites use browser-specific APIs that might not match the browser for the app you are developing.  In most cases, a Chromium extension works as-is in different Chromium browsers and the APIs work as expected.  Some less-common APIs might be browser-specific.  Links to the tutorials are in the [See also](#see-also) section, below.
 
 
 <!-- ====================================================================== -->
@@ -53,7 +55,7 @@ The following content focuses mostly on Chromium extensions.
 
 
 <!-- ====================================================================== -->
-## Browser compatibility and extension testing
+### Browser compatibility and extension testing
 
 Occasionally, API parity doesn't exist between Chromium browsers.  For example, there are differences in the identity and payment APIs.  To make sure your extension meets customer expectations, review API status through the following official browser documentation:
 
@@ -67,7 +69,7 @@ To test your extension in different environments before you submit the extension
 
 
 <!-- ====================================================================== -->
-## Publish your extension to browser stores
+### Publish your extension to browser stores
 
 You can submit and seek browser extensions in the following browser stores.
 
