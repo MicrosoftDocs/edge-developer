@@ -67,7 +67,6 @@ The APIs that you require define the changes that you must make to address the d
 
 To test your extension in different environments before you submit the extension to a browser store, side-load the extension into your browser while you develop it.
 
-
 <!-- ====================================================================== -->
 ### Publish your extension to browser stores
 
