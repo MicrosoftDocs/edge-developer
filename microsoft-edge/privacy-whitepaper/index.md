@@ -143,7 +143,7 @@ Optional diagnostic data includes feature usage, performance data, site load tim
 
 Information about websites you visit in Microsoft Edge helps us understand how quickly sites load and increases the relevance of search results for all users. The data includes information about the website such as the URL of the page you visit, website metrics, title of the page, how you accessed the page, information about the content of the page, and other relevant information about the page navigation.
 
-Diagnostic data is sent using HTTPS and stored on Microsoft servers. On Windows devices, diagnostic data is sent with an identifier unique to your device. Diagnostic data is associated with a resettable identifier unique to your browser on every device, is randomly generated, and does not contain your personal information. The only exception is in the WebView case, where to ensure a shared identifier per user/device, we generate one deterministic identifier for each of the two Optional Diagnostic data consent states. See the [WebView section](#webview) for more details on the WebView case.
+Diagnostic data is sent using HTTPS and stored on Microsoft servers. On Windows devices, diagnostic data is sent with an identifier unique to your device. On other devices, the diagnostic data is associated with a resettable identifier unique to your browser. The identifier is randomly generated and does not contain your personal information.
 
 The Microsoft Edge team respects the sensitivity of diagnostic data by restricting data access or removing personal information. To reset the identifier unique to your browser on Windows 10 and later devices, select **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**, and then select **Delete** under **Delete diagnostic data**, or change your setting under **Diagnostic data** from **Full** to **Basic** or turn off **Optional diagnostic data**.
 
@@ -740,11 +740,9 @@ When you pin a site, it is added to your taskbar or dock.  The data is stored lo
 <!-- ====================================================================== -->
 ## WebView
 
-Microsoft Edge WebView controls allow app developers to host web content in native applications on Windows 7, Windows 10, and later; and selected non-Windows platforms.  The applications hosting the WebView2 instance may send diagnostic data to Microsoft. Diagnostic data can include how you use the Microsoft Edge, and sites you visit.
+Microsoft Edge WebView controls allow app developers to host web content in native applications on Windows 7, Windows 10, and later; and selected non-Windows platforms. The applications hosting the WebView2 instance may send diagnostic data with its own identifier to Microsoft. Diagnostic data can include how you use the Microsoft Edge, and sites you visit.
 
 To enable diagnostic data collection, go to `edge://settings/privacy`. Turn on the **Optional diagnostic data** setting. To turn off diagnostic data collection for Microsoft Edge on Windows 10 and later, open **Start** > **Settings** > **Privacy** and select **Diagnostics & feedback**. To turn off diagnostic data collection for all other platforms, go to `edge://settings/privacy`. Turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting. The applications hosting Microsoft Edge WebView may collect other data that is governed by the data collection management of the developer and relevant privacy policies.
-
-We will send data with a deterministic identifier to ensure it is shared across WebViews for a specific user/device. We generate one deterministic identifier for each of the two Optional Diagnostic data consent states.
 
 <!-- ====================================================================== -->
 ## Writing assistance
