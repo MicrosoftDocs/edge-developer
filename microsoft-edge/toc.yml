@@ -1165,6 +1165,10 @@
               href: webview2/concepts/user-data-folder.md
               displayName: Manage the user data folder  # old title
 
+            - name: Support multiple profiles under a single user data folder
+              href: webview2/concepts/multi-profile-support.md
+              displayName: 
+
             - name: Clear browsing data from the user data folder
               href: webview2/concepts/clear-browsing-data.md
               displayName: 
