@@ -47,7 +47,7 @@ Every few hours, Microsoft Edge checks whether each installed extension or app h
 <!-- ====================================================================== -->
 ## Update URL
 
-If you host your own extension or app, you must add the `update_url` field to your `manifest.json` file.  The following code snippet; shows an example of the `update_url`.
+If you host your own extension or app, you must add the `update_url` field to your `manifest.json` file.  The following code snippet shows an example of the `update_url` field:
 
 ```json
 {
