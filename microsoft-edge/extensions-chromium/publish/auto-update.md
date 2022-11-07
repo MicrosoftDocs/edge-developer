@@ -87,7 +87,7 @@ The update manifest XML file can contain information about multiple extensions, 
 <!-- ====================================================================== -->
 ## Testing
 
-The default update check frequency is several hours.  To force an update, enter `edge://extensions` with Developer mode enabled and select the **Update** button.
+Microsoft Edge automatically checks for updates of extensions every few hours.  To update extensions immediately, go to `edge://extensions`, turn on the **Developer mode** toggle, and then click the **Update** button.
 
 
 <!-- ====================================================================== -->
