@@ -21,8 +21,6 @@ Using Command Palette, you can directly access productivity and developer featur
 
 By default, Command Palette isn't enabled. To enable the Command Palette experiment:
 
-1. In Microsoft Edge, go to `edge://version`, and make sure you're using Microsoft Edge 105 or later.  To get the latest preview channels of Microsoft Edge, see [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/en-us/download/).
-
 1. Go to `edge://flags`.
 
 1. In the **Search flags** text field, type **Command Palette**.
@@ -42,7 +40,7 @@ Command Palette provides access to Microsoft Edge commands, including various De
 
 To open Command Palette:
 
-1. In Microsoft Edge 107 or later, press `Ctrl`+`Q`.  Command Palette opens.
+1. Press `Ctrl`+`Q`.  Command Palette opens.
 
 1. Start typing in the input box. For example:
    * Type **tabs** to display commands about tabs management.
@@ -63,7 +61,7 @@ Use the DevTools [**Device Emulation**](../device-mode/index.md) tool to approxi
 
 To open the DevTools Device Emulation tool by using Command Palette:
 
-1. In Microsoft Edge 107 or later, press `Ctrl`+`Q`. Command Palette opens.
+1. Press `Ctrl`+`Q`. Command Palette opens.
 
 1. Press `>`.
 
@@ -77,7 +75,7 @@ The DevTools [**Snippets**](../javascript/snippets.md) tool allows you to save J
 
 To open the DevTools **Snippets** tab by using Command Palette:
 
-1. In Microsoft Edge 107 or later, press `Ctrl`+`Q`. Command Palette opens.
+1. Press `Ctrl`+`Q`. Command Palette opens.
 
 1. Press `>`.
 
@@ -93,7 +91,7 @@ Many useful tab-related commands are available in Command Palette, such as:
 *  **Open recently closed tab**
 *  **Search tabs**
 
-1. In Microsoft Edge 107 or later, press `Ctrl`+`Q`. Command Palette opens.
+1. Press `Ctrl`+`Q`. Command Palette opens.
 
 1. Type the word **tab**, press `Down Arrow` or `Up Arrow` to select a command, and then press `Enter`.
 
