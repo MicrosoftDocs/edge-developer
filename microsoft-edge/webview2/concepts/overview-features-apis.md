@@ -890,6 +890,8 @@ The history methods allow back and forward navigation in WebView2, and the histo
 
 The `NavigationStarting` event allows the app to cancel navigating to specified URLs in WebView2, including for frames.
 
+<!-- TODO: basic links such as NavigationStarting should not be only in this "Block unwanted navigating" section; they should primarily be in section "Navigation events", which ought to be moved to above this "Block unwanted navigating" section -->
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.NavigationStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationstarting)
