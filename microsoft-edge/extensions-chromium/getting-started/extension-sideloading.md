@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/24/2020
+ms.date: 11/207/2022
 ---
 # Sideload an extension
 
