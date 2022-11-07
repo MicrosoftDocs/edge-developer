@@ -14,11 +14,11 @@ Microsoft announced the launch of the Extensions Analytics Dashboard on Septembe
 
 You can view extension metrics from your [Partner Center dashboard](https://partner.microsoft.com/dashboard/microsoftedge/overview) and evaluate an extension’s performance from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
-For instance, you can identify regions in which the number of installations for your extension has increased in the past 3 months. You can also export this report as a CSV file.
+For example, you can identify regions in which the number of installations for your extension has increased in the past three months. You can also export this report as a CSV file.
 
 Follow these steps to view your extension’s analytics dashboard:  
 
-1. Navigate to your Partner Center account and select an extension.
+1. Go to your Partner Center account and select an extension.
 
 1. From the left panel, click **Extension overview** > **Analytics** to view your extension metrics.
 
@@ -61,7 +61,7 @@ The following screenshot shows daily successful installations for the last month
 
 The **Impressions** metric captures the total number of page views and user visits to your extension product page on Microsoft Edge Add-ons store. The data points are based on weekly or daily totals depending on the selected time range.
 
-The following screenshot shows **Impressions** for your extension page over the past 3 months.
+The following screenshot shows **Impressions** for an extension page over a three month period.
 
 ![Impressions for your extension over the past 3 months](../media/extensions-analytics-weekly-users-impressions.png)
 
@@ -84,7 +84,7 @@ The following screenshot shows total user visits.
 
 The OS (operating system) filter highlights the OS usage distribution of all the install requests for your extension.
 
-The following screenshot shows Weekly Users by Operating System over the past 30 days.
+The following screenshot shows Weekly Users by Operating System over 30 days.
 
 > [!div class="mx-imgBorder"]
 > ![Operation System usage distribution for your extension](../media/extension-analytics-weekly-users-filter-os-30-days.png)
@@ -93,7 +93,7 @@ The following screenshot shows Weekly Users by Operating System over the past 30
 
 The Language filter shows the language distribution for users of your extension.
 
-The following screenshot shows Installs per Language over the past 6 months.
+The following screenshot shows Installs per Language over a six month period.
 
 > [!div class="mx-imgBorder"]
 > ![Language distribution for your extension](../media/extension-analytics-installs-filter-language-6-months.png)
