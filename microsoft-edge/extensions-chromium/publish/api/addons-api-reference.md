@@ -9,7 +9,7 @@ ms.date: 11/07/2022
 ---
 # Microsoft Edge Add-ons API Reference
 
-This is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons website.
+This article is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons website.
 
 For an overview, see [Using the Microsoft Edge Add-ons API](using-addons-api.md).
 
@@ -239,7 +239,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
-###### Response when there is nothing new to be published
+###### Response when there's nothing new to be published
 
 ```json
 {
@@ -253,7 +253,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
-###### Response when there is an in-review submission for the same product
+###### Response when there's an in-review submission for the same product
 
 ```json
 {
@@ -267,7 +267,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
-###### Response when there is an ongoing unpublished submission for the same product
+###### Response when there's an ongoing unpublished submission for the same product
 
 ```json
 {
@@ -372,7 +372,7 @@ See also:
 <!-- ====================================================================== -->
 ## Error codes
 
-Here are a list of common error codes and possible reasons.  For a full list, see [Partner Center REST error codes](/partner-center/develop/error-codes) or [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+Here's a list of common error codes and possible reasons.  For a full list, see [Partner Center REST error codes](/partner-center/develop/error-codes) or [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 
 #### 4xx: Client error
 
