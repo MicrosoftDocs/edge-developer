@@ -26,9 +26,11 @@ In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and 
 <!-- ====================================================================== -->
 ## Enable widgets in Microsoft Edge
 
-Widgets are experimentally supported for local testing starting with Microsoft Edge 108.
+Widgets are experimentally supported starting with Microsoft Edge 108.
 
-To enable widget support in Microsoft Edge:
+To enable widget support in Microsoft Edge for your website:
+
+1. Register for a trial as described in [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
 
 1. In Microsoft Edge, go to `edge://flags`.
 
@@ -39,8 +41,6 @@ To enable widget support in Microsoft Edge:
 1. Click the **Restart** button which appears in the lower right:
 
    ![Enabling the Web App widgets flag in the edge://flags page](../media/widgets-flag.png)
-
-Widgets are also available as an origin trial in Microsoft Edge 108. Learn [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ In the above example, a music player application defines a mini player widget. A
 | `short_name` | An alternative short version of the name. | No |
 | `description` | A description of what the widget does. | No |
 | `icons` | An array of icons to be used for the widget. | Yes |
-| `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). | Yes |
+| `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). Note that the `platform` field of a screenshot item currently supports the `Windows` and `any` values. | Yes |
 | `tag` | A string used to reference the widget in the PWA service worker. | Yes |
 | `template` | The template to use to display the widget in the operating system widgets dashboard. Note: although `template` is a required field, its value is currently not used. See `ms_ac_template` below. | Yes |
 | `ms_ac_template` | The URL of the custom Adaptive Cards template to use to display the widget in the operating system widgets dashboard. See [Define a widget template](#define-a-widget-template) below. | Yes |
@@ -178,7 +178,7 @@ To bind data to your template, use the `data` field in your widget definition. T
 
 The template defined in [the previous section](#define-a-widget-template) contains two variables: `song` and `artist`, which are enclosed in the binding expression syntax: `${}`. The data that's returned by the `data` URL in your widget definition should contain values for these variables.
 
-Here is an example of what the `data` URL might return: 
+Here's an example of what the `data` URL might return: 
 
 ```json
 {
@@ -284,7 +284,7 @@ async function renderWidget(widget) {
 
 When the service worker code changes in a PWA, the browser detects that change, installs the new service worker, and then later activates it.
 
-When this happens, it is important to update any widget instances that may already be running. Widgets may have been installed before the service worker `activate` event is emitted. Update your widgets when this event occurs to avoid displaying empty widgets.
+When this happens, it's important to update any widget instances that may already be running. Widgets may have been installed before the service worker `activate` event is emitted. To avoid displaying empty widgets, update your widgets when the `activate` event occurs
 
 ```javascript
 // Update the widgets to their initial states
@@ -311,7 +311,7 @@ async function updateWidgets() {
 
 #### Handle widget actions
 
-If the widget template contains actions, users can execute those actions by clicking buttons in the rendered widget. See [Define widget actions](#define-widget-actions) for information about how to define actions in a template.
+If the widget template contains actions, users can execute those actions by clicking buttons in the rendered widget. For information about how to define actions in a template, see [Define widget actions](#define-widget-actions).
 
 When a user executes a widget action, a `widgetclick` event is triggered in the PWA service worker. To handle the user action, listen to the event:
 
@@ -328,17 +328,17 @@ self.addEventListener('widgetclick', (event) => {
 });
 ```
 
-For brevity, the actual application code is not shown in the above code snippet. When the `previous-song` or `next-song` actions are received, a message would probably need to be sent to the app using [Client.postMessage](https://developer.mozilla.org/docs/Web/API/Client/postMessage) to let the app know that it should start playing the previous or next songs.
+For brevity, the actual application code isn't shown in the above code snippet. When the `previous-song` or `next-song` actions are received, a message would probably need to be sent to the app by using [Client.postMessage](https://developer.mozilla.org/docs/Web/API/Client/postMessage) to let the app know that it should start playing the previous or next songs.
 
 Note that the `action` property of the `widgetEvent` object passed to the event listener above matches the string defined in the `action.verb` field of the widget template.
 
-See the [Service Worker API reference](#service-worker-api-reference) below for more information about the `widgetclick` event and what information you can access from it.
+For more information about the `widgetclick` event and what information you can access from it, see the [Service Worker API reference](#service-worker-api-reference) below.
 
 #### Update widgets on application changes
 
 In previous sections, you learnt how to update widgets when specific widget events, widget actions, and service worker updates occurred. It can also be useful to update widgets when something happens in the application, or when a push notification occurs, or periodically.
 
-In this section, you will learn to use the Periodic Background Sync API to update widgets periodically. For more information about the Periodic Background Sync API, see [Use the Periodic Background Sync API to regularly get fresh content](background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
+In this section, you'll learn to use the Periodic Background Sync API to update widgets periodically. For more information about the Periodic Background Sync API, see [Use the Periodic Background Sync API to regularly get fresh content](background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
 
 In the following code snippet, a listener for `widgetclick` is used to react to various lifecycle events of the application widget. When a widget installation is detected, a periodic sync is registered and when a widget removal is detected, the periodic sync is unregistered.
 
@@ -435,11 +435,11 @@ The service worker global object (or [ServiceWorkerGlobalScope](https://develope
 | Method | Description | Parameters | Return value |
 |:--- |:--- |:--- |:--- |
 | `getByTag(tag)` | Get a widget by tag | The widget tag | A Promise that resolves to the [widget object](#widget-object) that matches the tag, or `undefined`. |
-| `getByInstanceId(id)` | Get a widget by instance ID | The widget instance ID | A Promise that resolves to the corresponding [widget object](#widget-object), or undefined.
+| `getByInstanceId(id)` | Get a widget by instance ID | The widget instance ID | A Promise that resolves to the corresponding [widget object](#widget-object), or `undefined`.
 | `getByHostId(id)` | Get widgets by host ID  | The host ID | An array of [widget objects](#widget-object) found in that host.
 | `matchAll(options)` | Get widgets by matching options | A [widgetOptions object](#widgetoptions-object) | A Promise that resolves to an array of [widget objects](#widget-object) that match the `options` criteria. |
 | `updateByInstanceId(id, payload)` | Update a widget by instance ID  | The instance ID, and a [widgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`.
-| `updateByTag(tag, payload)` | Update a widget by tag | The widget tag, and a [widgetPayload object](#widgetpayload-object) | A Promise that resolves to undefined or Error.
+| `updateByTag(tag, payload)` | Update a widget by tag | The widget tag, and a [widgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`.
 
 The service worker global object also defines the `widgetclick` event that's fired when the widget is interacted with. For more information, see the [widgetEvent object](#widgetevent-object) definition below.
 
@@ -455,18 +455,18 @@ Each widget is represented as a `widget` object, which contains the following pr
 
 When using `matchAll(options)` to get multiple widgets, a `widgetOptions` object is necessary to filter which widgets to return. The `widgetOptions` object contains the following properties, all of which are optional:
 
-* `installable`: A Boolean that indicates if the widget is considered installable.
-* `installed`: A Boolean that indicates if the widget has been installed in the widget host.
-* `tag`: The tag of the widget.
-* `instance`: The widget instance.
-* `host`: The widget host ID.
+* `installable`: A Boolean indicating if the returned widgets should be installable.
+* `installed`: A Boolean indicating if the returned widgets should be installed in the widget host.
+* `tag`: A string used to filter the returned widgets by tag.
+* `instance`: A string used to filter the returned widgets by instance ID.
+* `host`: A string used to filter the returned widgets by widget host ID.
 
 #### widgetPayload object
 
 When creating or updating a widget instance, the service worker must send the template and the data that are necessary to populate the widget. The template and data are called the _payload_. The `widgetPayload` object contains the following properties:
 
-* `template`: The template to use to render the widget, as a `String`. This will be the stringified JSON of an Adaptive Card template.
-* `data`: The data to use with the widget template, as a `String`.  This data can be stringified JSON data.
+* `template`: The template, as a string, to use to render the widget. This will be the stringified JSON of an Adaptive Card template.
+* `data`: The data, as a string, to use with the widget template.  This data can be stringified JSON data.
 
 #### widgetInstance object
 
@@ -474,7 +474,7 @@ This object represents a given instance of a widget in a widget host and contain
 
 * `id`: The internal GUID string used to reference the instance.
 * `host`: An internal pointer to the widget host that has installed this instance.
-* `updated`: A `Date` object that represents the last time when data was sent to the instance.
+* `updated`: A `Date` object that represents the last time data was sent to the instance.
 * `payload`: A [widgetPayload object](#widgetpayload-object) that represents the last payload that was sent to this instance.
 
 #### widgetDefinition object
@@ -490,6 +490,6 @@ The `widgetEvent` object has the following properties:
 | Property | Description | Type |
 |:--- |:--- |:--- |
 | `widget` | The widget instance that triggered the event. | [widgetInstance](#widgetinstance-object) |
-| `action` | The action that triggered the event. One of `widget-install`, `widget-uninstall`, `widget-resume`, or a custom action defined in a `actions.verb` field of the widget template. See [Define widget actions](#define-widget-actions). | String |
-| `hostId` | The widget host ID. | String |
-| `instanceId` | The widget instance ID. | String |
+| `action` | The action that triggered the event. One of `widget-install`, `widget-uninstall`, `widget-resume`, or a custom action defined in a `actions.verb` field of the widget template. See [Define widget actions](#define-widget-actions). | `String` |
+| `hostId` | The widget host ID. | `String` |
+| `instanceId` | The widget instance ID. | `String` |
