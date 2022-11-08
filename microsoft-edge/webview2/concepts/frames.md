@@ -272,7 +272,36 @@ See also:
 <!-- ====================================================================== -->
 ## Sending and receiving messages
 
-TODO
+You can send and receive messages between native app and JavaScript code in iframe.  Messages are sent from iframe in an HTML page (via JavaScript) and are received by the host app.
+* To send web messages from an iframe to the host app, use the `window.chrome.webview.postMessage` method.
+* To receive these messages in the host app, the host app must subscribe to the `WebMessageReceived event`<!--add_webmessagereceived-->.
+
+The reverse direction of communication is sending messages from the host app to the iframe:
+* The host app sends messages to the iframe by calling the `PostWebMessageAsJson` or `PostWebMessageAsString` method.
+* The iframe receives the message by subscribing to the `window.chrome.webview.addEventListener('message')` event, as follows:
+
+```javascript
+window.chrome.webview.addEventListener('message', arg => {
+# implement listener here
+});
+```
+
+* [ICoreWebView2Frame2.PostWebMessageAsJson method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2?view=webview2-1.0.1418.22#postwebmessageasjson)
+* [ICoreWebView2Frame2.PostWebMessageAsString method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2?view=webview2-1.0.1418.22#postwebmessageasstring)
+
+See also:
+* [Interop of native-side and web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/communicate-btwn-web-native)
+
+To send, use the `WebMessageReceived` event: 
+
+```javascript
+`window.chrome.webview.postMessage(`SetTitleText ${titleText.value}`);`
+```
+
+<!-- Dev is doc'ing JavaScript APIs -->
+
+Code in a webpage might be running either inside a browser or inside the WebView2 control.  Some features might be disabled when inside a WebView2 control instance.
+
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -285,6 +314,8 @@ TODO
 ##### [Win32/C++](#tab/win32cpp)
 
 <!-- TODO: what apis? -->
+
+* [ICoreWebView2Frame2::WebMessageReceived event (add)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2?view=webview2-1.0.1418.22#add_webmessagereceived)
 
 ---
 
@@ -490,13 +521,48 @@ wil::com_ptr<ICoreWebView2_4> webview2_4 = m_webView.try_query<ICoreWebView2_4>(
 <!-- ====================================================================== -->
 ## The `WebResourceRequested` event in iframes
 
-<!-- todo: this is a frequently asked question: link article to webresourcerequested? listening to network events, modifying - mention it, in experimental.  cover for iframes -->
+![This feature is experimental](../../devtools-guide-chromium/media/experimental-tag-14px.msft.png)
+
+<!-- todo: this is a frequently asked question: link article to webresourcerequested? listening to network events, modifying - 
+mention it, in experimental.  
+cover for iframes -->
 
 For iframes, you can listen to network events and modify them, by using the `WebResourceRequested` event.
 
 See also:
 * [Manage network requests in WebView2](./overview-features-apis.md#manage-network-requests-in-webview2) in _Overview of WebView2 features and APIs_.
 * [Custom management of network requests](../how-to/webresourcerequested.md)
+
+* [CoreWebView2.AddWebResourceRequestedFilter(String, CoreWebView2WebResourceContext, CoreWebView2WebResourceRequestSourceKinds) method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1466-prerelease#microsoft-web-webview2-core-corewebview2-addwebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))<!--possibly delete this link-->
+   * [CoreWebView2WebResourceRequestSourceKinds Enum](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestsourcekinds?view=webview2-dotnet-1.0.1466-prerelease) - To subscribe to network requests that belong to an iframe, you must use this overload and use `Document` as the value of the `CoreWebView2WebResourceRequestSourceKinds` parameter.<!--keep this note-->
+
+See also:
+* [1.0.1222-prerelease > Experimental features](../release-notes.md#experimental-features-2) in _Release Notes for the WebView2 SDK_ regarding these APIs.
+
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: update the release number in the below links: -->
+
+See the latest prerelease APIs, more recent than the `1340-prerelease` links below:
+
+* [CoreWebView2.AddWebResourceRequestedFilter(RequestSourceKinds) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1340-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-addwebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))
+* [CoreWebView2.RemoveWebResourceRequestedFilter(RequestSourceKinds) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter?view=webview2-dotnet-1.0.1340-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-removewebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))
+* [CoreWebView2WebResourceRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs?view=webview2-dotnet-1.0.1340-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.AddWebResourceRequestedFilter(requestSourceKinds) Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1340-prerelease&preserve-view=true#addwebresourcerequestedfilter)
+* [CoreWebView2.RemoveWebResourceRequestedFilter(requestSourceKinds) Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1340-prerelease&preserve-view=true#removewebresourcerequestedfilter)
+* [CoreWebView2WebResourceRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs?view=webview2-winrt-1.0.1340-prerelease&preserve-view=true)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Experimental16.AddWebResourceRequestedFilterWithRequestSourceKinds method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#addwebresourcerequestedfilterwithrequestsourcekinds)
+* [ICoreWebView2Experimental16.RemoveWebResourceRequestedFilterWithRequestSourceKinds method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#removewebresourcerequestedfilterwithrequestsourcekinds)
+* [ICoreWebView2ExperimentalWebResourceRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs?view=webview2-1.0.1340-prerelease&preserve-view=true)
+
+---
 
 
 <!-- ====================================================================== -->
