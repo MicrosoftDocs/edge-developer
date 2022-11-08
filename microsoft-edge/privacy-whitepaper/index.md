@@ -747,7 +747,7 @@ To enable diagnostic data collection, go to `edge://settings/privacy`. Turn on t
 <!-- ====================================================================== -->
 ## Writing assistance
 
-To help you write faster and with fewer mistakes on the web, Microsoft Edge provides different writing assistance tools, including enhanced spelling and grammar checking and text prediction. 
+To help you write faster and with fewer mistakes on the web, Microsoft Edge provides writing assistance tools, including enhanced spelling and grammar checking and text prediction. 
 
 By default, Edge provides spelling and grammar checking using **Microsoft Editor**. When using **Microsoft Editor**, Microsoft Edge sends your typed text and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to detect spelling and grammar errors in your text. All your typed text that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time.   
 
