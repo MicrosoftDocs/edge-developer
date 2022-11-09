@@ -27,4 +27,4 @@ ms.date: 02/17/2021
 <!-- ====================================================================== -->
 ## Report copyright or trademark infringement
 
-If you think an item in the Microsoft Edge Add-ons website violates a copyright or trademark, see [Notices of Infringement](https://www.microsoft.com/info/Marketplace.html) and complete the form.  The Microsoft Edge extensions team reviews your report and then takes the necessary action.
+If you think an item in the Microsoft Edge Add-ons website violates a copyright or trademark, please fill out the [Reporting Infringement](https://www.microsoft.com/en-us/concern/dmca) form.  The Microsoft Edge extensions team will review your report and then take the necessary action.
