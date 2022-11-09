@@ -79,75 +79,41 @@ The `CreateCoreWebView2ControllerWithOptions` method creates a WebView2 control 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- TODO: replace code listing? -->
-
-The code listing below is from [Create WebView2 with a specific profile, then access the profile property of WebView2 (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#create-webview2-with-a-specific-profile-then-access-the-profile-property-of-webview2) in _API spec for multiple profile support_.
-
 ```csharp
-CoreWebView2Environment _webViewEnvironment;
-WebViewCreationOptions _creationOptions;
-public CreateWebView2Controller(IntPtr parentWindow)
+public async void CreateWebView2Controller(object sender, RoutedEventArgs e)
 {
-    CoreWebView2ControllerOptions controllerOptions = new CoreWebView2ControllerOptions();
-    controllerOptions.ProfileName = _creationOptions.profileName;
-    controllerOptions.IsInPrivateModeEnabled = _creationOptions.IsInPrivateModeEnabled;
+    var hwnd = new HwndForWV2();
+    Window window = new Window();
+    window.Content = hwnd;
+    window.Show();
 
-    CoreWebView2Controller controller = null;
+    var env = await CoreWebView2Environment.CreateAsync();
+    var options = env.CreateCoreWebView2ControllerOptions();
+    options.ProfileName = "MyProfile";
+    options.IsInPrivateModeEnabled = true;
+    var controller = await env.CreateCoreWebView2ControllerAsync(hwnd.Handle, options);
 
-    if (_creationOptions.entry == WebViewCreateEntry.CREATE_WITH_OPTION)
-    {
-        controller = await _webViewEnvironment.CreateCoreWebView2ControllerAsync(parentWindow, options);
-    }
-    else
-    {
-        controller = await _webViewEnvironment.CreateCoreWebView2ControllerAsync(parentWindow);
-    }
-
-    string profileName = controller.CoreWebView2.Profile.ProfileName;
-    bool inPrivate = controller.CoreWebView2.Profile.IsInPrivateModeEnabled;
-
-    // update window title with profileName
-    UpdateAppTitle(profileName);
-
-    // update window icon
-    SetAppIcon(inPrivate);
+    controller.Bounds = new System.Drawing.Rectangle(0, 0, 800, 600);
+    controller.CoreWebView2.Navigate("https://www.bing.com/");
+    controller.CoreWebView2.NavigationStarting += CoreWebView_NavigationStarting;
 }
 ```
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo: replace code listing? -->
-
-The code listing below is from [Create WebView2 with a specific profile, then access the profile property of WebView2 (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#create-webview2-with-a-specific-profile-then-access-the-profile-property-of-webview2) in _API spec for multiple profile support_.
-
 ```csharp
-CoreWebView2Environment _webViewEnvironment;
-WebViewCreationOptions _creationOptions;
-public CreateWebView2Controller(IntPtr parentWindow)
+public async Task InitializeCoreWebView2()
 {
-    CoreWebView2ControllerOptions controllerOptions = new CoreWebView2ControllerOptions();
-    controllerOptions.ProfileName = _creationOptions.profileName;
-    controllerOptions.IsInPrivateModeEnabled = _creationOptions.IsInPrivateModeEnabled;
+    CoreWindow coreWindow = Windows.UI.Core.CoreWindow.GetForCurrentThread();
+    CoreWebView2Environment env = await CoreWebView2Environment.CreateAsync();
+    CoreWebView2ControllerWindowReference windowReference = CoreWebView2ControllerWindowReference.CreateFromCoreWindow(coreWindow);
+    CoreWebView2ControllerOptions options = env.CreateCoreWebView2ControllerOptions();
+    options.ProfileName = "MyProfile";
+    options.IsInPrivateModeEnabled = true;
+    CoreWebView2Controller controller = await env.CreateCoreWebView2ControllerAsync(windowReference, options);
 
-    CoreWebView2Controller controller = null;
-
-    if (_creationOptions.entry == WebViewCreateEntry.CREATE_WITH_OPTION)
-    {
-        controller = await _webViewEnvironment.CreateCoreWebView2ControllerAsync(parentWindow, options);
-    }
-    else
-    {
-        controller = await _webViewEnvironment.CreateCoreWebView2ControllerAsync(parentWindow);
-    }
-
-    string profileName = controller.CoreWebView2.Profile.ProfileName;
-    bool inPrivate = controller.CoreWebView2.Profile.IsInPrivateModeEnabled;
-
-    // update window title with profileName
-    UpdateAppTitle(profileName);
-
-    // update window icon
-    SetAppIcon(inPrivate);
+    controller.CoreWebView2.NavigationStarting += WebView2_NavigationStarting;
+    controller.CoreWebView2.Navigate("https://www.bing.com");
 }
 ```
 
@@ -261,62 +227,28 @@ After you get the profile object, you can manipulate it.  Use `CoreWebView2Profi
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- todo: replace code listing? -->
-
-The code listing below is from [Access and use the cookie manager from profile (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#access-and-use-the-cookie-manager-from-profile) in _API spec for multiple profile support_.
-
 ```csharp
-CoreWebView2CookieManager _cookieManager;
-public ScenarioCookieManagement(CoreWebView2Controller controller){
-    // get the cookie manager from controller
-    _cookieManager = controller.CoreWebView2.Profile.CookieManager;
-    // ...
-}
+string profileName = controller.CoreWebView2.Profile.ProfileName;
+bool inPrivate = controller.CoreWebView2.Profile.IsInPrivateModeEnabled;
 
-// Use cookie manager to add or update a cookie
-public AddOrUpdateCookie(string name, string value, string Domain)
-{
-    // create cookie with given parameters and default path
-    CoreWebView2Cookie cookie = cookieManager.CreateCookie(name, value, Domain, "/");
-    // add or update cookie
-    _cookieManager.AddOrUpdateCookie(cookie);
-}
+// update window title with profileName
+UpdateAppTitle(profileName);
 
-// Use cookie manager to delete all cookies
-void DeleteAllCookies()
-{
-    _cookieManager.DeleteAllCookies();
-}
+// update window icon
+SetAppIcon(inPrivate);
 ```
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo: replace code listing? -->
-
-The code listing below is from [Access and use the cookie manager from profile (.NET and WinRT)](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md#access-and-use-the-cookie-manager-from-profile) in _API spec for multiple profile support_.
-
 ```csharp
-CoreWebView2CookieManager _cookieManager;
-public ScenarioCookieManagement(CoreWebView2Controller controller){
-    // get the cookie manager from controller
-    _cookieManager = controller.CoreWebView2.Profile.CookieManager;
-    // ...
-}
+string profileName = controller.CoreWebView2.Profile.ProfileName;
+bool inPrivate = controller.CoreWebView2.Profile.IsInPrivateModeEnabled;
 
-// Use cookie manager to add or update a cookie
-public AddOrUpdateCookie(string name, string value, string Domain)
-{
-    // create cookie with given parameters and default path
-    CoreWebView2Cookie cookie = cookieManager.CreateCookie(name, value, Domain, "/");
-    // add or update cookie
-    _cookieManager.AddOrUpdateCookie(cookie);
-}
+// update window title with profileName
+UpdateAppTitle(profileName);
 
-// Use cookie manager to delete all cookies
-void DeleteAllCookies()
-{
-    _cookieManager.DeleteAllCookies();
-}
+// update window icon
+SetAppIcon(inPrivate);
 ```
 
 ##### [Win32/C++](#tab/win32cpp)
