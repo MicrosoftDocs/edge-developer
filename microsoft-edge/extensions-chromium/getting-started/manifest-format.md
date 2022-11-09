@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/07/2021
+ms.date: 11/07/2022
 ---
 # Manifest file format for extensions
 
@@ -19,7 +19,7 @@ The format for `manifest.json` for extensions is moving from Manifest V2 to Mani
 
 
 <!-- ====================================================================== -->
-## Format of manifest\.json for extensions using Manifest V3
+## Format of manifest.json for extensions using Manifest V3
 
 The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V3 package.
 
