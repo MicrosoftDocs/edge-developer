@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/08/2021
+ms.date: 11/09/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,13 +22,13 @@ ms.date: 11/08/2021
    limitations under the License.  -->
 # Get started viewing and changing CSS
 
-Follow these interactive tutorial sections to learn the basics of viewing and changing the CSS for a page by using DevTools.
+Follow the interactive tutorial sections in this article to learn the basics of viewing and changing the CSS for a page by using DevTools.
 
 
 <!-- ====================================================================== -->
 ## View the CSS for an element
 
-1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.  To open the examples, right-click the link, or press and hold `Ctrl` (Windows, Linux) or `Command` (macOS) and then click the link.
+1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.  To open the examples, right-click the link, or press and hold `Ctrl` (for Windows, Linux) or `Command` (for macOS) and then click the link.
 
    <!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
 
@@ -50,7 +50,7 @@ Follow these interactive tutorial sections to learn the basics of viewing and ch
 
 1. In the `aloha` class, find the value for the `padding` style and copy it.
 
-   ![CSS class is applied to the inspected element are highlighted in the Styles panel.](../media/css-elements-inspect-me-styles.msft.png)
+   ![CSS class applied to the inspected element is highlighted in the Styles panel.](../media/css-elements-inspect-me-styles.msft.png)
 
 1. On the page view, enter the `padding` value and paste it in the **Value of padding:** text box.
 
@@ -60,7 +60,7 @@ Follow these interactive tutorial sections to learn the basics of viewing and ch
 
 Use the **Styles** panel when you want to change or add CSS declarations to an element.
 
-1. First, we recommend doing the preceding [View the CSS for an element](#view-the-css-for-an-element) tutorial section.
+1. First, we recommend doing the preceding [View the CSS for an element](#view-the-css-for-an-element) tutorial.
 
 1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
 
@@ -82,7 +82,7 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 
 To display how an element looks when a CSS class is applied to or removed from an element, see the **Styles** panel.
 
-1. First, we recommend doing the [View the CSS for an element](#view-the-css-for-an-element) tutorial section, above.
+1. First, we recommend doing the preceding [View the CSS for an element](#view-the-css-for-an-element) tutorial.
 
 1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
 
@@ -102,7 +102,7 @@ To display how an element looks when a CSS class is applied to or removed from a
 
 Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  DevTools supports `:active`, `:focus`, `:hover`, and `:visited`.
 
-1. First, we recommend doing the [View the CSS for an element](#view-the-css-for-an-element) tutorial section, above.
+1. First, we recommend doing the preceding [View the CSS for an element](#view-the-css-for-an-element) tutorial.
 
 1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
 
@@ -124,7 +124,7 @@ Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  
 
 Use the **Box Model** interactive diagram in the **Styles** panel to change the width, height, padding, margin, or border length of an element.
 
-1. First, we recommend doing the [View the CSS for an element](#view-the-css-for-an-element) tutorial section, above.
+1. First, we recommend doing the preceding [View the CSS for an element](#view-the-css-for-an-element) tutorial.
 
 1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
 
