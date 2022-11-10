@@ -22,7 +22,7 @@ ms.date: 11/09/2022
    limitations under the License.  -->
 # Get started viewing and changing CSS
 
-Follow the interactive tutorial sections in this article to learn the basics of viewing and changing the CSS for a page by using DevTools.
+Follow the interactive tutorial sections in this article to learn the basics of using DevTools to view and change the CSS for a page.
 
 
 <!-- ====================================================================== -->
@@ -44,7 +44,7 @@ Follow the interactive tutorial sections in this article to learn the basics of 
 
 1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
-1. In DevTools, on the **Elements** tool, select the **Styles** panel.  In the **Styles** panel, the `Inspect Me!` element is highlighted.<!-- no -->
+1. In DevTools, on the **Elements** tool, select the **Styles** panel.  The `Inspect Me!` element is highlighted in the Styles panel.<!-- no -->
 
 1. In the `Inspect Me!` element, find the `aloha` class rule.  This rule is displayed, because it's being applied to the `Inspect Me!` element.
 
@@ -90,7 +90,7 @@ To display how an element looks when a CSS class is applied to or removed from a
 
 1. Click **.cls**.  DevTools shows a text box where you can add CSS classes to the page element that you're inspecting.
 
-1. Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you're can also  toggle each class from here.
+1. Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you can also  toggle each class from here.
 
    The `color_me` class is applied to the element using the **.cls** section of the **Styles** panel:
 
@@ -112,9 +112,9 @@ Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  
 
 1. In the **Styles** panel, click **:hov**.
 
-1. Select the **:hover** checkbox.  The background color changes like before, even though you aren't actually hovering over the element.
+1. Select the **:hover** checkbox.  The background color changes like it did in the first step, even though you aren't actually hovering over the element.
 
-   Here's the result of toggling the `:hover` pseudostate on an element:
+   The next screenshot shows the result of toggling the `:hover` pseudostate on an element.
 
    ![Toggling the hover pseudostate on an element.](../media/css-elements-hover-over-me-styles-hov-hover.msft.png)
 
@@ -134,7 +134,7 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
    Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** panel to display the **Box Model**.
 
-1. Double-click the left margin in the **Box Model**, which currently has a value of `-`. This means that the element doesn't have a value for `margin-left`.
+1. Double-click the left margin in the **Box Model**, which currently has a value of `-`. The `-` means that the element doesn't have a value for `margin-left`.
 
 1. Type `100px` and press `Enter`.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.
 
@@ -150,11 +150,11 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 <!-- ====================================================================== -->
 ## Debugging Media Queries
 
-[Media Queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your website react to changes in the configuration settings for each user.  The most significant use case is to provide your product a different CSS layout depending on the dimensions of the viewport.
+[Media Queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your website react to changes in the configuration settings for each user. The most common use case is to give your page a different CSS layout depending on the dimensions of the viewport.
 
-Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there's more screen estate available.
+Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there's more screen real estate available.
 
-To debug or test the Media Queries you defined in your CSS:
+Use the following steps to debug or test the Media Queries you defined in your CSS.
 
 1. To open DevTools, you can right-click in a webpage and then select **Inspect**.
 
