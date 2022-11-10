@@ -740,7 +740,7 @@ When you pin a site, it is added to your taskbar or dock.  The data is stored lo
 <!-- ====================================================================== -->
 ## WebView
 
-Microsoft Edge WebView controls allow app developers to host web content in native applications on Windows 7, Windows 10, and later.  The applications hosting the WebView2 instance may send diagnostic data to Microsoft. Diagnostic data can include how you use the Microsoft Edge, and sites you visit.
+Microsoft Edge WebView controls allow app developers to host web content in native applications on Windows 7, Windows 10, and later; and selected non-Windows platforms. The applications hosting the WebView2 instance may send diagnostic data with its own identifier to Microsoft. Diagnostic data can include how you use the Microsoft Edge, and sites you visit.
 
 To enable diagnostic data collection, go to `edge://settings/privacy`. Turn on the **Optional diagnostic data** setting. To turn off diagnostic data collection for Microsoft Edge on Windows 10 and later, open **Start** > **Settings** > **Privacy** and select **Diagnostics & feedback**. To turn off diagnostic data collection for all other platforms, go to `edge://settings/privacy`. Turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting. The applications hosting Microsoft Edge WebView may collect other data that is governed by the data collection management of the developer and relevant privacy policies.
 
