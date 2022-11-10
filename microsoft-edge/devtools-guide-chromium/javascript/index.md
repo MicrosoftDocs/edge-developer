@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Get started debugging JavaScript
 
-This article teaches you the basic workflow for debugging any JavaScript issue in DevTools.
+This article teaches you the basic workflow for debugging any JavaScript issue using DevTools.
 
 
 <!-- ====================================================================== -->
@@ -30,7 +30,7 @@ This article teaches you the basic workflow for debugging any JavaScript issue i
 
 The first step in debugging is to find a series of actions that consistently reproduce a bug.
 
-1. Open the demo webpage [Get Started Debugging JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new window or tab.  To do this, right-click the link.  Or, press and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then click the link.
+1. Open the demo webpage [Get Started Debugging JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new window or tab.  To do this, right-click the link.  Or, press and hold `Ctrl` (for Windows, Linux) or `Command` (for macOS), and then click the link.
 
    <!-- You can view the source files for the Debugging demo at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
@@ -38,7 +38,7 @@ The first step in debugging is to find a series of actions that consistently rep
 
 1. Enter `1` in the **Number 2** text box.
 
-1. Click **Add Number 1 and Number 2**.  The label below the button says `5 + 1 = 51`.  The result should be `6`.  Next, fix the addition error that is the bug.
+1. Click **Add Number 1 and Number 2**.  The label below the button says `5 + 1 = 51`.  The result should be `6`.  Next, go to [Step 2: Get familiar with the Sources tool UI](#step-2-get-familiar-with-the-sources-tool-ui) to start fixing the addition error that's the bug.
 
    ![5 + 1 results in 51, but should be 6](../media/javascript-js-demo-bad.msft.png)
 
@@ -46,9 +46,9 @@ The first step in debugging is to find a series of actions that consistently rep
 <!-- ====================================================================== -->
 ## Step 2: Get familiar with the Sources tool UI
 
-DevTools provides many different tools for different tasks.  Different tasks include changing CSS, profiling page-load performance, and monitoring network requests.  The **Sources** tool is where you debug JavaScript.
+DevTools provides several tools for different tasks.  These tasks include changing CSS, profiling page-load performance, and monitoring network requests.  The **Sources** tool is where you debug JavaScript.
 
-1. To open the **Console** tool in DevTools, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. To open the **Console** tool in DevTools, press `Ctrl`+`Shift`+`J` (for Windows, Linux) or `Command`+`Option`+`J` (for macOS).
 
    ![The Console tool.](../media/javascript-console-empty.msft.png)
 
