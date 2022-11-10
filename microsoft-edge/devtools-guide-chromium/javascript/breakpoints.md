@@ -41,6 +41,7 @@ The most well-known type of breakpoint is line-of-code.  But line-of-code breakp
 | [Event listener](#event-listener-breakpoints) | On the code that runs after an event, such as `click`, runs.  |
 | [Exception](#exception-breakpoints) | On the line of code that is throwing a caught or uncaught exception.  |
 | [Function](#function-breakpoints) | Whenever a specific command, function, or method is run.  |
+| [Logpoint](#logpoint-breakpoints) | A variant that does not "break" into the debugger but instead logs a message to the console.  |
 
 
 <!-- ====================================================================== -->
@@ -229,6 +230,24 @@ When you're calling `debug()` from the DevTools Console, here's a technique to e
 
 1. Call `debug()` in the DevTools Console, while the code is still paused on your line-of-code breakpoint.
 
+
+<!-- ====================================================================== -->
+## Logpoint breakpoints
+
+A Logpoint is a breakpoints variant that does not "break" into the debugger but instead logs a message to the console
+
+.Run the `debug(method)` method, where `method` is the command, function, or method you want to debug, when you want to pause whenever a specific function is run.  You can insert `debug()` into your code (such as a `console.log()` statement), or run the method from the DevTools Console.
+
+`debug()` is equivalent to setting a [line-of-code breakpoint](#line-of-code-breakpoints) on the first line of the function.
+
+```javascript
+function sum(a, b) {
+    let result = a + b; // DevTools pauses on this line.
+    return result;
+}
+debug(sum); // Pass the function object, not a string.
+sum();
+```
 
 <!-- ====================================================================== -->
 ## See also
