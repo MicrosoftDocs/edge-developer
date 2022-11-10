@@ -125,8 +125,6 @@ In the Win32 sample app project, the file [HostObjectSample.idl](https://github.
     29            HRESULT CreateNativeDate();
     30
     31        };
-    32        //! [AddHostObjectInterface]
-    33
     ```
 
 1.  On line 24, note the date property, which uses a `DATE` type.  We'll focus on this date demo property in this article.
@@ -305,7 +303,40 @@ For adding the host object to an iframe, we'll use `ICoreWebView2Frame::AddHostO
 
 ##### [WebView2Frame](#tab/webview2frame)
 
-This sample code <!--trimmed--> is from [ScenarioAddHostObject.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/ScenarioAddHostObject.cpp#L83-L133) in the **WebView2APISample** project (which is the Win32 sample app).
+###### .NET/C#
+
+<!-- copied from non-published sample-->
+
+```csharp
+webView.CoreWebView2.FrameCreated += (sender, args) =>
+{
+    if (args.Frame.Name.Equals("iframe_name"))
+    {
+        try
+        {
+            string[] origins = new string[] { "https://appassets.example" };
+            args.Frame.AddHostObjectToScript("bridge", new BridgeAddRemoteObject(), origins);
+        }
+        catch (NotSupportedException exception)
+        {
+            MessageBox.Show("Frame.AddHostObjectToScript failed: " + exception.Message);
+        }
+    }
+    args.Frame.NameChanged += (nameChangedSender, nameChangedArgs) =>
+    {
+        CoreWebView2Frame frame = (CoreWebView2Frame)nameChangedSender;
+        MessageBox.Show("Frame.NameChanged: " + frame.Name);
+    };
+    args.Frame.Destroyed += (frameDestroyedSender, frameDestroyedArgs) =>
+    {
+        // Handle frame destroyed
+    };
+};
+```
+
+###### Win32/C++
+
+This Win32/C++ sample code is condensed from [ScenarioAddHostObject.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/ScenarioAddHostObject.cpp#L83-L133) in the **WebView2APISample** project (which is the Win32 sample app).
 
 This sample code demonstrates these APIs:
 * `ICoreWebView2Frame::AddHostObjectToScriptWithOrigins` 
@@ -313,39 +344,36 @@ This sample code demonstrates these APIs:
    * `ICoreWebView2FrameCreatedEventArgs::get_Frame`
 
 ```cpp
-        CHECK_FAILURE(webview2_4->add_FrameCreated(
-            Callback<ICoreWebView2FrameCreatedEventHandler>(
-                [this](
-                    ICoreWebView2* sender,
-                    ICoreWebView2FrameCreatedEventArgs* args) -> HRESULT
-        {
-            wil::com_ptr<ICoreWebView2Frame> webviewFrame;
-            CHECK_FAILURE(args->get_Frame(&webviewFrame));
+CHECK_FAILURE(webview2_4->add_FrameCreated(
+    Callback<ICoreWebView2FrameCreatedEventHandler>(
+        [this](
+            ICoreWebView2* sender,
+            ICoreWebView2FrameCreatedEventArgs* args) -> HRESULT
+{
+    wil::com_ptr<ICoreWebView2Frame> webviewFrame;
+    CHECK_FAILURE(args->get_Frame(&webviewFrame));
 
-            wil::unique_cotaskmem_string name;
-            CHECK_FAILURE(webviewFrame->get_Name(&name));
-            if (std::wcscmp(name.get(), L"iframe_name") == 0)
-            {
-                //! [AddHostObjectToScriptWithOrigins]
-                wil::unique_variant remoteObjectAsVariant;
-                // It will throw if m_hostObject fails the QI, but because it is our object
-                // it should always succeed.
-                m_hostObject.query_to<IDispatch>(&remoteObjectAsVariant.pdispVal);
-                remoteObjectAsVariant.vt = VT_DISPATCH;
+    wil::unique_cotaskmem_string name;
+    CHECK_FAILURE(webviewFrame->get_Name(&name));
+    if (std::wcscmp(name.get(), L"iframe_name") == 0)
+    {
+        wil::unique_variant remoteObjectAsVariant;
+        // It will throw if m_hostObject fails the QI, but because it is our object
+        // it should always succeed.
+        m_hostObject.query_to<IDispatch>(&remoteObjectAsVariant.pdispVal);
+        remoteObjectAsVariant.vt = VT_DISPATCH;
 
-                // Create list of origins which will be checked.
-                // iframe will have access to host object only if its origin belongs
-                // to this list.
-                LPCWSTR origin = L"https://appassets.example/";
+        // Create list of origins which will be checked.
+        // iframe will have access to host object only if its origin belongs
+        // to this list.
+        LPCWSTR origin = L"https://appassets.example/";
 
-                CHECK_FAILURE(webviewFrame->AddHostObjectToScriptWithOrigins(
-                    L"sample", &remoteObjectAsVariant, 1, &origin));
-                //! [AddHostObjectToScriptWithOrigins]
-            }
-
-            return S_OK;
-        }).Get(), &m_frameCreatedToken));
+        CHECK_FAILURE(webviewFrame->AddHostObjectToScriptWithOrigins(
+            L"sample", &remoteObjectAsVariant, 1, &origin));
     }
+
+    return S_OK;
+}).Get(), &m_frameCreatedToken));
 ```
 
 ---

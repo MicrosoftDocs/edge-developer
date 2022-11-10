@@ -10,12 +10,6 @@ ms.date: 11/09/2022
 ---
 # Using frames in WebView2 apps
 
-<!-- todo
-In hostobjects.md, extend the article by adding an iframes example in C# and in Win32/C++.
-
-iframes overview: c# and win32  - execute script scenario example
--->
-
 Frames allow you to embed other webpages into your own webpage.  A _frame_ is a sub-page or area within a webpage, like a webpage within a webpage.  
 
 An iframe is one type of frame.  Other types of frames are `frameset`, `portal`, `embed`, `fencedFrame`, and `object`.  The main WebView2 type for frames is `CoreWebView2Frame`, which is currently enabled for top-level iframes.  Support for other types of frames is planned.
@@ -67,34 +61,6 @@ See also:
 * [iframes](./overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
 
 
-<!-- ------------------------------ -->
-#### Example of subscribing to the FrameCreated event
-
-<!-- link to API Ref that contains an example code listing? -->
-
-<!-- TODO: Dev: where is sample code? -->
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-```javascript
-
-```
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-```javascript
-
-```
-
-##### [Win32/C++](#tab/win32cpp)
-
-```javascript
-
-```
-
----
-
-
 <!-- ====================================================================== -->
 ## Navigating within a frame
 
@@ -121,7 +87,6 @@ See also:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- * [CoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler Class]()todo: exists? -->
 * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
 
 Recommended:
@@ -134,7 +99,6 @@ Superseded:
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- * [CoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler Class]()todo: exists? -->
 * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
 
 Recommended:
@@ -147,7 +111,7 @@ Superseded:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler)<!-- TODO: in that API Ref topic, link to the main type (AddScriptToExecuteOnDocumentCreated method?) that uses that handler -->
+* [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler)
 * [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
 
 Recommended:
@@ -169,37 +133,6 @@ See also:
 * [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 features and APIs_.
 
 
-<!-- ------------------------------ -->
-#### Example of navigation and navigation events
-
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-todo<!-- TODO: Dev: find sample code -->
-
-```javascript
-
-```
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-todo<!-- TODO: Dev: find sample code -->
-
-```javascript
-
-```
-
-##### [Win32/C++](#tab/win32cpp)
-
-todo<!-- TODO: Dev: find sample code -->
-
-```javascript
-
-```
-
----
-
-
 <!-- ====================================================================== -->
 ## Using host objects in an iframe
 
@@ -213,9 +146,8 @@ Using native-side APIs from script within a frame, via a host object, is similar
 
 To use host objects within an iframe:
 1. Define the host object and implement `IDispatch`.
-1. Call `AddHostObjectToScriptWithOrigins` (Win32) or call `AddHostObjectToScript` with an `origins` parameter (.NET), passing a method to the web.
-1. Call `AddHostObjectToScriptWithOrigins` (Win32) or call `AddHostObjectToScript` with an `origins` parameter (.NET), passing a method to the web.
-<!-- todo: differentiate the bottom two sections/steps -->
+1. Add the host object on the native side by using `AddHostObjectToScriptWithOrigins` (Win32) or `AddHostObjectToScript` (.NET).
+1. From JavaScript in your web-side code, access this host object by using `chrome.webview.hostObjects.<name>` API.
 
 When using `AddHostObjectToScript`, you need to specify which URLs will be allowed (in an `origins` parameter), for security reasons.
 
@@ -241,14 +173,14 @@ The above method works like the following method:
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo: Dev: implement.  Then remove this note. -->
-Not supported yet; pending as of Nov. 9, 2022.
+<!-- todo -->
+Not implemented yet.
 
-* [CoreWebView2Frame.AddHostObjectToScript Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#addhostobjecttoscript) - has an `origins` parameter.<!-- has a **Method name** table? -->
-* [CoreWebView2Frame.RemoveHostObjectFromScript Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#removehostobjectfromscript)<!--remove link?  remove it now, or after the above method exists?-->
+<!-- * [CoreWebView2Frame.AddHostObjectToScript Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#addhostobjecttoscript) - has an `origins` parameter.
+* [CoreWebView2Frame.RemoveHostObjectFromScript Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#removehostobjectfromscript) -->
 
-The above method works like the following method:
-* [CoreWebView2.AddHostObjectToScript Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript).  See the **Method name** table.  Read both of these API Reference topics, although for frames, you would use the method which supports an `origins` parameter instead.
+<!-- The above method works like the following method: -->
+<!-- * [CoreWebView2.AddHostObjectToScript Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript).  See the **Method name** table.  Read both of these API Reference topics, although for frames, you would use the method which supports an `origins` parameter instead. -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -322,56 +254,17 @@ Code in a webpage might be running either inside a browser or inside the WebView
 
 See also:
 * [Interop of native-side and web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/communicate-btwn-web-native)
+* [Web messaging](./overview-features-apis.md#web-messaging) in _Overview of WebView2 features and APIs_.
 
 
+<!-- 
 #### JavaScript API Reference
 
-<!-- TODO: link when exists -->
+TODO: link when exists
 JavaScript APIs are currently being documented.  When the documentation is ready, it will be linked to from here.
 * `window.chrome.webview.postMessage`
 * `window.chrome.webview.addEventListener('message')`
-
-
-<!-- todo: after add api links above, remove the n/a links: -->
-See also:
-* [Call native-side code from web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject?tabs=dotnetcsharp)
-* [Script execution](./overview-features-apis.md#script-execution) in _Overview of WebView2 features and APIs_.
-* [Web messaging](./overview-features-apis.md#web-messaging) in _Overview of WebView2 features and APIs_.
-* [Permissions](./overview-features-apis.md#permissions) in _Overview of WebView2 features and APIs_.
-* [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 features and APIs_.
-* [Navigation events](./overview-features-apis.md#navigation-events) in _Overview of WebView2 features and APIs_.
-* [iframes](./overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
-
-
-<!-- ------------------------------ -->
-#### Example of communicating between the host app and iframes
-
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-todo<!-- TODO: Dev: find sample code -->
-
-```javascript
-
-```
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-todo<!-- TODO: Dev: find sample code -->
-
-```javascript
-
-```
-
-##### [Win32/C++](#tab/win32cpp)
-
-todo<!-- TODO: Dev: find sample code -->
-
-```javascript
-
-```
-
----
+-->
 
 
 <!-- ====================================================================== -->
@@ -402,143 +295,10 @@ See also:
 * [Script execution](./overview-features-apis.md#script-execution) in _Overview of WebView2 features and APIs_.
 
 
-<!-- ------------------------------ -->
-#### Example of running JavaScript code in iframes by using ExecuteScript
-
-This sample code is condensed from [MainWindow.xaml.cs](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2WpfBrowser/MainWindow.xaml.cs#L842-L878) in the **WebView2WpfBrowser** sample.
-
-This sample code shows how to use frame APIs, including:
-* `FrameCreated`
-   * `CoreWebView2FrameCreatedEventArgs`
-* `DOMContentLoaded`
-   * `CoreWebView2DOMContentLoadedEventArgs`
-* `ExecuteScriptAsync`
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-```csharp
-        // <DOMContentLoaded>
-        void DOMContentLoadedCmdExecuted(object target, ExecutedRoutedEventArgs e)
-        {
-            webView.CoreWebView2.FrameCreated += WebView_FrameCreatedDOMContentLoaded;
-            webView.NavigateToString(@"<!DOCTYPE html>" +
-                                      "<h1>DOMContentLoaded sample page</h1>" +
-                                      "<h2>The content to the iframe and below will be added after DOM content is loaded </h2>" +
-                                      "<iframe style='height: 200px; width: 100%;'/>");
-            webView.CoreWebView2.NavigationCompleted += (sender, args) =>
-            {
-                webView.CoreWebView2.DOMContentLoaded -= WebView_DOMContentLoaded;
-                webView.CoreWebView2.FrameCreated -= WebView_FrameCreatedDOMContentLoaded;
-            };
-        }
-
-        void WebView_FrameCreatedDOMContentLoaded(object sender, CoreWebView2FrameCreatedEventArgs args)
-        {
-            args.Frame.DOMContentLoaded += (frameSender, DOMContentLoadedArgs) =>
-            {
-                args.Frame.ExecuteScriptAsync(
-                    "let content = document.createElement(\"h2\");" +
-                    "content.style.color = 'blue';" +
-                    "content.textContent = \"This text was added to the iframe by the host app\";" +
-                    "document.body.appendChild(content);");
-            };
-        }
-```
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-This example code is a copy of the .NET example code.
-<!-- todo: Dev - does this code need to be modified to make it work for WinRT? -->
-
-```javascript
-        // <DOMContentLoaded>
-        void DOMContentLoadedCmdExecuted(object target, ExecutedRoutedEventArgs e)
-        {
-            webView.CoreWebView2.FrameCreated += WebView_FrameCreatedDOMContentLoaded;
-            webView.NavigateToString(@"<!DOCTYPE html>" +
-                                      "<h1>DOMContentLoaded sample page</h1>" +
-                                      "<h2>The content to the iframe and below will be added after DOM content is loaded </h2>" +
-                                      "<iframe style='height: 200px; width: 100%;'/>");
-            webView.CoreWebView2.NavigationCompleted += (sender, args) =>
-            {
-                webView.CoreWebView2.DOMContentLoaded -= WebView_DOMContentLoaded;
-                webView.CoreWebView2.FrameCreated -= WebView_FrameCreatedDOMContentLoaded;
-            };
-        }
-
-        void WebView_FrameCreatedDOMContentLoaded(object sender, CoreWebView2FrameCreatedEventArgs args)
-        {
-            args.Frame.DOMContentLoaded += (frameSender, DOMContentLoadedArgs) =>
-            {
-                args.Frame.ExecuteScriptAsync(
-                    "let content = document.createElement(\"h2\");" +
-                    "content.style.color = 'blue';" +
-                    "content.textContent = \"This text was added to the iframe by the host app\";" +
-                    "document.body.appendChild(content);");
-            };
-        }
-```
-
-##### [Win32/C++](#tab/win32cpp)
-
-This example code is copied from [ICoreWebView2Frame2::ExecuteScript method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#executescript).
-
-```cpp
-wil::com_ptr<ICoreWebView2_4> webview2_4 = m_webView.try_query<ICoreWebView2_4>();
-    if (webview2_4)
-    {
-        CHECK_FAILURE(webview2_4->add_FrameCreated(
-            Callback<ICoreWebView2FrameCreatedEventHandler>(
-                [](ICoreWebView2* sender, ICoreWebView2FrameCreatedEventArgs* args) -> HRESULT {
-                    wil::com_ptr<ICoreWebView2Frame> webviewFrame;
-                    CHECK_FAILURE(args->get_Frame(&webviewFrame));
-                    wil::com_ptr<ICoreWebView2Frame2> frame2 =
-                        webviewFrame.try_query<ICoreWebView2Frame2>();
-                    if (frame2)
-                    {
-                        frame2->add_DOMContentLoaded(
-                            Callback<ICoreWebView2FrameDOMContentLoadedEventHandler>(
-                                [](ICoreWebView2Frame* frame,
-                                   ICoreWebView2DOMContentLoadedEventArgs* args) -> HRESULT {
-                                    wil::com_ptr<ICoreWebView2Frame2> frame2;
-                                    frame->QueryInterface(IID_PPV_ARGS(&frame2));
-                                    frame2->ExecuteScript(
-                                        LR"~(
-                                        let content = document.createElement("h2");
-                                        content.style.color = 'blue';
-                                        content.textContent = "This text was added to the iframe by the host app";
-                                        document.body.appendChild(content);
-                                        )~",
-                                        Callback<ICoreWebView2ExecuteScriptCompletedHandler>(
-                                            [](HRESULT error, PCWSTR result) -> HRESULT {
-                                                // Handle ExecuteScript error and result here if needed
-                                                // or pass nullptr as callback parametr otherwise.
-                                                return S_OK;
-                                            })
-                                            .Get());
-                                    return S_OK;
-                                })
-                                .Get(),
-                            NULL);
-                    }
-                    return S_OK;
-                })
-                .Get(),
-            &m_frameCreatedToken));
-    }
-```
-
----
-
-
 <!-- ====================================================================== -->
 ## Modifying network events by using the `WebResourceRequested` event in iframes
 
 ![This feature is experimental](../../devtools-guide-chromium/media/experimental-tag-14px.msft.png)
-
-<!-- todo: this is a frequently asked question: link article to webresourcerequested? listening to network events, modifying - 
-mention it, in experimental.  
-cover for iframes -->
 
 For iframes, you can listen to network events and modify them, by using the `WebResourceRequested` event.
 
@@ -556,10 +316,6 @@ See the latest prerelease APIs.  The following links contain `1.0.1466-prereleas
    * [CoreWebView2WebResourceRequestSourceKinds Enum](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestsourcekinds?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true)
 * [CoreWebView2.RemoveWebResourceRequestedFilter(uri, resourceContext, requestSourceKinds) Method Overload](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-removewebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))<!--keep parentheses for specific overload-->
 * [CoreWebView2WebResourceRequestedEventArgs Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true)
-
-<!-- todo: wrong overload for frames?  delete link?
-* [CoreWebView2.AddWebResourceRequestedFilter(RequestSourceKinds) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-addwebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))
--->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -607,6 +363,113 @@ See also:
 ##### [Win32/C++](#tab/win32cpp)
 
 [ICoreWebView2NavigationStartingEventArgs2::put_AdditionalAllowedFrameAncestors property (get](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs2#get_additionalallowedframeancestors), [put)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs2#put_additionalallowedframeancestors)
+
+---
+
+
+<!-- ====================================================================== -->
+## Example of using iframes in a host app
+
+This sample code shows how to use frame APIs, including:
+* `FrameCreated`
+   * `CoreWebView2FrameCreatedEventArgs`
+* `DOMContentLoaded`
+   * `CoreWebView2DOMContentLoadedEventArgs`
+* `ExecuteScript`
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+This sample code is condensed from [MainWindow.xaml.cs](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2WpfBrowser/MainWindow.xaml.cs#L842-L878) in the **WebView2WpfBrowser** sample.
+
+```csharp
+        void DOMContentLoadedCmdExecuted(object target, ExecutedRoutedEventArgs e)
+        {
+            // Subscribe to the FrameCreated event to obtain the frame object when 
+            // it's created.
+            webView.CoreWebView2.FrameCreated += WebView_FrameCreatedDOMContentLoaded;
+            webView.NavigateToString(@"<!DOCTYPE html>" +
+                                      "<h1>DOMContentLoaded sample page</h1>" +
+                                      "<h2>The content to the iframe and below will be added after DOM content is loaded </h2>" +
+                                      "<iframe style='height: 200px; width: 100%;'/>");
+        }
+
+        void WebView_FrameCreatedDOMContentLoaded(object sender, CoreWebView2FrameCreatedEventArgs args)
+        {
+            // In order for ExecuteScriptAsync to successfully run inside the iframe, 
+            // subscribe to the ContentLoading or DOMContentLoaded event.  Once these 
+            // events are raised, you can call ExecuteScriptAsync.
+            args.Frame.DOMContentLoaded += (frameSender, DOMContentLoadedArgs) =>
+            {
+                args.Frame.ExecuteScriptAsync(
+                    "let content = document.createElement(\"h2\");" +
+                    "content.style.color = 'blue';" +
+                    "content.textContent = \"This text was added to the iframe by the host app\";" +
+                    "document.body.appendChild(content);");
+            };
+        }
+```
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+<!-- todo -->
+In progress.
+
+##### [Win32/C++](#tab/win32cpp)
+
+This example code is copied from [ICoreWebView2Frame2::ExecuteScript method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#executescript).
+
+```cpp
+wil::com_ptr<ICoreWebView2_4> webview2_4 = m_webView.try_query<ICoreWebView2_4>();
+    if (webview2_4)
+    {
+        // Subscribe to the FrameCreated event to obtain the frame object when 
+        // it's created.
+        CHECK_FAILURE(webview2_4->add_FrameCreated(
+            Callback<ICoreWebView2FrameCreatedEventHandler>(
+                [](ICoreWebView2* sender, ICoreWebView2FrameCreatedEventArgs* args) -> HRESULT {
+                    wil::com_ptr<ICoreWebView2Frame> webviewFrame;
+                    CHECK_FAILURE(args->get_Frame(&webviewFrame));
+                    // DOMContentLoaded event was introduced in ICoreWebView2Frame2 interface.
+                    // So in order to have access to this interface, query ICoreWebView2Frame2
+                    // from ICoreWebView2Frame.
+                    wil::com_ptr<ICoreWebView2Frame2> frame2 =
+                        webviewFrame.try_query<ICoreWebView2Frame2>();
+                    if (frame2)
+                    {
+                            // In order for ExecuteScript to successfully run inside the iframe, 
+                            // subscribe to the ContentLoading or DOMContentLoaded event.  Once these 
+                            // events are raised, you can call ExecuteScript.
+                            frame2->add_DOMContentLoaded(
+                            Callback<ICoreWebView2FrameDOMContentLoadedEventHandler>(
+                                [](ICoreWebView2Frame* frame,
+                                   ICoreWebView2DOMContentLoadedEventArgs* args) -> HRESULT {
+                                    wil::com_ptr<ICoreWebView2Frame2> frame2;
+                                    frame->QueryInterface(IID_PPV_ARGS(&frame2));
+                                    frame2->ExecuteScript(
+                                        LR"~(
+                                        let content = document.createElement("h2");
+                                        content.style.color = 'blue';
+                                        content.textContent = "This text was added to the iframe by the host app";
+                                        document.body.appendChild(content);
+                                        )~",
+                                        Callback<ICoreWebView2ExecuteScriptCompletedHandler>(
+                                            [](HRESULT error, PCWSTR result) -> HRESULT {
+                                                // Handle ExecuteScript error and result here if needed
+                                                // or pass nullptr as callback parameter otherwise.
+                                                return S_OK;
+                                            })
+                                            .Get());
+                                    return S_OK;
+                                })
+                                .Get(),
+                            NULL);
+                    }
+                    return S_OK;
+                })
+                .Get(),
+            &m_frameCreatedToken));
+    }
+```
 
 ---
 
