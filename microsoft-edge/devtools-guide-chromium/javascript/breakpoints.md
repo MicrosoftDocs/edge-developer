@@ -232,9 +232,9 @@ When you're calling `debug()` from the DevTools Console, here's a technique to e
 
 
 <!-- ====================================================================== -->
-## Logpoint breakpoints
+## Logpoint breakpoint variant
 
-A Logpoint is a breakpoints variant that does not "break" into the debugger but instead logs a message to the console
+A Logpoint is a breakpoint variant that does not "break" in the debugger but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint.  
 
 .Run the `debug(method)` method, where `method` is the command, function, or method you want to debug, when you want to pause whenever a specific function is run.  You can insert `debug()` into your code (such as a `console.log()` statement), or run the method from the DevTools Console.
 
