@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/10/2022
+ms.date: 11/11/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -212,7 +212,7 @@ We've identified a possible fix for the bug.  Next, edit the JavaScript code dir
 
 1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save your change.
 
-1. Click **Deactivate breakpoints** (![Deactivate breakpoints.](../media/deactivate-breakpoints-button-icon.msft.png)).  It changes blue to indicate the option is active.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo when the bug is fixed.
+1. Click **Deactivate breakpoints** (![Deactivate breakpoints.](../media/deactivate-breakpoints-button-icon.msft.png)).  It changes blue to indicate the option is active.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
 
    ![Result of troubleshooting and fixing bug](../media/javascript-bug-fixed.msft.png)
 
