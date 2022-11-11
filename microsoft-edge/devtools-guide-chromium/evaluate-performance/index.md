@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/10/2022
+ms.date: 11/11/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -52,7 +52,7 @@ In the following tutorial, you open DevTools on a "Sluggish Animation" demo page
 
    ![The demo on the left, and DevTools on the right](../media/evaluate-performance-get-started-side-by-side.msft.png)
 
-For the rest of the screenshots below, DevTools is [undocked to a separate window](../customize/placement.md), to better focus on the contents.
+For the rest of the following screenshots, DevTools is [undocked to a separate window](../customize/placement.md), to better focus on the contents.
 
 
 ### Simulate a mobile CPU
@@ -61,7 +61,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. In DevTools, open the **Performance** tool.
 
-1. Select the checkbox next to **Screenshots**.
+1. Confirm that checkbox next to **Screenshots** is selected. If it isn't then select it.
 
 1. Click **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)).  DevTools reveals settings related to how it captures performance metrics.
 
