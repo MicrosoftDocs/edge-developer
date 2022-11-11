@@ -48,7 +48,7 @@ The first step in debugging is to find a sequence of actions that consistently r
 
 DevTools provides several tools for different tasks.  These tasks include changing CSS, profiling page-load performance, and monitoring network requests.  The **Sources** tool is where you debug JavaScript.
 
-1. To open the **Console** tool in DevTools, press `Ctrl`+`Shift`+`J` (for Windows, Linux) or `Command`+`Option`+`J` (for macOS).
+1. To open the **Console** tool in DevTools, right-click on the page and then select **Inspect** on the pop up menu. Or, you can press `Ctrl`+`Shift`+`J` (for Windows, Linux) or `Command`+`Option`+`J` (for macOS).
 
    ![The Console tool.](../media/javascript-console-empty.msft.png)
 
