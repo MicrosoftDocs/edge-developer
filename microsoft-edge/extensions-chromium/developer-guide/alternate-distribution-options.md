@@ -21,7 +21,6 @@ Extensions that aren't loaded from the Edge Add-ons store are referred to as ext
 *  Use a preferences JSON file (macOS and Linux). The preferences JSON file would be your **Microsoft Edge extension's CRX ID**.json. The CRX ID is a unique 32 character code which consists of alphabets present at the end of your Microsoft Edge extension's URL. 
 
 
-
 <!-- ====================================================================== -->
 ## Before you begin
 
