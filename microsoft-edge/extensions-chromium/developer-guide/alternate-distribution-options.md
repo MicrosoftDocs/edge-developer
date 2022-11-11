@@ -60,7 +60,7 @@ To distribute your extension using the Windows registry:
    > [!NOTE]
    > If you want to install an extension from the Chrome Web Store, set the value of `update_url` to `https://clients2.google.com/service/update2/crx`.
 
-1. In Microsoft Edge, go to `edge://extensions` and verify that your extension is listed.
+1. In Microsoft Edge, go to `edge://extensions`, and then verify that your extension is listed.
 
 
 <!-- ====================================================================== -->
