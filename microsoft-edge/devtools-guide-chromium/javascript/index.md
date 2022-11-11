@@ -93,7 +93,7 @@ The `console.log()` method might get the job done, but **breakpoints** get it do
 In short, breakpoints can help you find and fix bugs faster than the `console.log()` method.
 
 
-### Event listener breakpoints
+#### Event listener breakpoints
 
 If you step back and think about how the app works, you might make an educated guess that the incorrect sum (`5 + 1 = 51`) is computed in the `click` event listener associated with the **Add Number 1 and Number 2** button.  So, you probably want to pause the code around the time that the `click` listener runs.  **Event Listener Breakpoints** let you do that:
 
