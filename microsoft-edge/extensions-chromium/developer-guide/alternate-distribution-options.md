@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/17/2021
+ms.date: 11/11/2022
 ---
 # Alternative ways to distribute extensions
 
@@ -18,7 +18,9 @@ Generally, extensions are distributed through the Microsoft Edge Add-ons website
 Extensions that aren't loaded from the Edge Add-ons store are referred to as externally installed extensions. The following are alternate methods of distributing externally installed extensions:
 
 *  Use the Windows registry (Windows only).
-*  Use a preferences JSON file (macOS and Linux). The preferences JSON file would be your **Microsoft Edge extension's CRX ID**.json. The CRX ID is a unique 32 character code which consists of alphabets present at the end of your Microsoft Edge extension's URL. 
+*  Use a preferences JSON file (macOS and Linux).
+
+These approaches are described below.
 
 
 <!-- ====================================================================== -->
@@ -38,7 +40,7 @@ The following examples use `1.0` as the version, and `aaaaaaaaaabbbbbbbbbbcccccc
 
 
 <!-- ====================================================================== -->
-## Use the Windows registry (Windows only)
+## Using the Windows registry (Windows only)
 
 To distribute your extension using the Windows registry:
 
@@ -63,13 +65,15 @@ To distribute your extension using the Windows registry:
 
 
 <!-- ====================================================================== -->
-## Use a preferences JSON file (macOS and Linux)
+## Using a preferences JSON file (macOS and Linux)
 
 To distribute your extension by using a preferences JSON file:
 
 1. When using Linux, make sure your `.crx` extension file is available on the machine that the extension will be installed on.  Copy the `.crx` extension file to a local directory, or use a network share that is reachable from the machine.
 
-1. Create a JSON file where the name of the file corresponds to the ID of your extension. For example, create a JSON file with the file name `aaaaaaaaaabbbbbbbbbbcccccccccc.json`.
+1. Create a JSON file where the name of the file corresponds to the ID of your extension. For example, create a JSON file with the file name `aaaaaaaaaabbbbbbbbbbcccccccccc.json`.<!--30 letters, ok?-->
+
+   The name of the preferences JSON file is your Microsoft Edge extension's CRX ID, followed by a `.json` extension.  The CRX ID is a unique 32-character code which is the letters that are present at the end of your extension's URL.
 
 1. Depending on your operating system, save the JSON file to one of the following folders:
 
