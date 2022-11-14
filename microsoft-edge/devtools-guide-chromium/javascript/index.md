@@ -62,11 +62,11 @@ The **Sources** tool UI has three parts.
 
 ![The 3 parts of the Sources tool UI.](../media/javascript-sources-sections-annotated.msft.png)
 
-*  The **Navigator** pane (the first pane beside the activity bar).  Every file that the webpage requests is listed here.
+*  1. The **Navigator** pane (the first pane beside the activity bar).  Every file that the webpage requests is listed here.
 
-*  The **Editor** pane (the second pane to the right, beside the **Navigator** pane).  After you select a file in the **Navigator** pane, this pane displays the contents of the file.
+*  2. The **Editor** pane (the second pane to the right, beside the **Navigator** pane).  After you select a file in the **Navigator** pane, this pane displays the contents of the file.
 
-*  The **Debugger** pane (the third pane to the right, beside the **Editor** pane).  This pane provides tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.
+*  3. The **Debugger** pane (the third pane to the right, beside the **Editor** pane).  This pane provides tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.
 
 
 <!-- ====================================================================== -->
