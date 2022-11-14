@@ -65,7 +65,7 @@ The **Cookies** table contains the following fields:
 
 *  **SameParty**. This attribute provides web developers a means to annotate cookies that are allowed to be set or sent in same-party, cross-site contexts. 
 
-*  **Partition Key**. A _partition key_ is a property or path within a document that can be used to distribute data within a document yet store the data together. Multiple pieces of data that are spread throughout a document and that have the same partition key value are logically grouped together and stored in the same physical partition.
+*  **Partition Key**. The _partition key_ of a cookie only exists when the cookie is set in partitioned storage and corresponds to the top-level site where the cookie was initially created. See [Cookies Having Independent Partitioned State (CHIPS) origin trial](https://developer.chrome.com/blog/chips-origin-trial/).
 
 *  **Priority**.  Contains `low`, `medium` (default), or `high` if the cookie is using the deprecated [Cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) attribute.
 
