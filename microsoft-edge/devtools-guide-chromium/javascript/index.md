@@ -157,7 +157,7 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
 
 1. The line number for `label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;` is **34**. Click line **34**.  DevTools displays a red circle to the left of **34**.  The red circle indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before this line of code is run.
 
-1. Click **Resume script execution** (![Resume script execution.](../media/resume-script-run-icon.msft.png)).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of each variable to the right of the semi-colon on each lines. These values are:
+1. Click **Resume script execution** (![Resume script execution.](../media/resume-script-run-icon.msft.png)).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of each variable to the right of the semi-colon on each line. These values are:
 
    - `addend1` = "5"
    - `addend2` = "1"
@@ -169,7 +169,7 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
 <!-- ====================================================================== -->
 ## Step 6: Check variable values
 
-The values of `addend1`, `addend2`, and `sum` look suspicious.  These values are wrapped in quotes, which means the each value is a string. This is a good clue to the cause of the bug.  The next step is to gather more more information about these variable values.  DevTools provides many tools for examining variable values.
+The values of `addend1`, `addend2`, and `sum` look suspicious.  These values are wrapped in quotes, which means each value is a string. This is a good clue to the cause of the bug.  The next step is to gather more information about these variable values.  DevTools provides many tools for examining variable values.
 
 #### Method 1: The Scope pane
 
