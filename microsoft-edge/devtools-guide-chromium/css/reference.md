@@ -306,112 +306,29 @@ To add a new style rule:
 
    ![Add a new style rule.](../media/css-elements-styles-style-new.msft.png)
 
-<!-- are we recommending continuing from the above then doing the following?  or does the following give more detail on how or where to do the above? -->
-
 
 ### Select a stylesheet to add a rule to
 
-When [adding a new style rule](#add-a-style-rule), to select a stylesheet to add a rule to:
+By default, when adding a style rule, DevTools creates a new stylesheet named `inspector-stylesheet` in the document and then adds the new style rule in this stylesheet.
 
-*  Click and hold **New Style Rule** (![New Style Rule.](../media/new-style-rule-icon.msft.png)) to select a stylesheet to add the style rule to.
+To instead add the rule in an existing stylesheet:
+
+*  Click and hold **New Style Rule** (![New Style Rule.](../media/new-style-rule-icon.msft.png)) and then select a stylesheet from the list to add the style rule to.
 
 ![Selecting a stylesheet.](../media/css-elements-styles-style-new-select-existing.msft.png)
-
-<!-- is the above an alternative to the below, or sequential? clarify flow/relation -->
 
 
 ### Add a style rule to a specific location
 
-To add a style rule to a specific location in the **Styles** panel:<!--is this opposed to some above approach?-->
+By default, adding a style rule by clicking on **New Style Rule** inserts the rule beneath the **element.style** rule.
+
+To add a style rule in a specific location of the **Styles** panel instead:
 
 1. Hover on the style rule that is directly above where you want to add your new style rule.
 
-1. [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-
-1. Select **Insert Style Rule Below** (![Insert Style Rule Below icon.](../media/new-style-rule-icon.msft.png)).
+1. Click **Insert Style Rule Below** (![Insert Style Rule Below icon.](../media/new-style-rule-icon.msft.png)).
 
 ![Insert Style Rule Below.](../media/css-elements-styles-insert-style-rule-below.msft.png)
-
-
-<!-- ====================================================================== -->
-## Reveal the More Actions toolbar
-
-Use the **More Actions** toolbar to:
-
-*  Insert a style rule directly below the one you are focused on.
-
-*  Add a `background-color`, `color`, `box-shadow`, or `text-shadow` declaration to the style rule you are focused on.
-
-
-To reveal the **More Actions** toolbar:
-
-1. In the **Styles** panel, hover on a style rule.  **More Actions** (`...`) is revealed in the bottom-right of the style rule section.
-
-   In the following figure, hover on the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.
-
-   ![Reveal 'More Actions' (...).](../media/css-elements-styles-new-rule-styles.msft.png)
-
-1. Hover on **More Actions** (`...`) to reveal the actions mentioned above.
-
-   The **Insert Style Rule Below** action is revealed after hovering over **More Actions**.
-
-   ![The 'More Actions' toolbar.](../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png)
-
-
-<!-- ====================================================================== -->
-## Add a background-color declaration
-
-To add a `background-color` declaration to an element:
-
-1. Hover on the style rule that you want to add the `background-color` declaration to.
-
-1. [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-
-1. Click **Add Background Color** (![Add Background Color icon.](../media/add-background-color-icon.msft.png)).
-
-![Add Background Color.](../media/css-elements-styles-rule-add-background-color.msft.png)
-
-
-<!-- ====================================================================== -->
-## Add a color declaration
-
-To add a `color` declaration to an element:
-
-1. Hover on the style rule that you want to add the `color` declaration to.
-
-1. [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-
-1. Click **Add Color** (![Add Color icon.](../media/add-color-icon.msft.png)).
-
-   ![Add Color.](../media/css-elements-styles-rule-add-color.msft.png)
-
-
-<!-- ====================================================================== -->
-## Add a box-shadow declaration
-
-To add a `box-shadow` declaration to an element:
-
-1. Hover on the style rule that you want to add the `box-shadow` declaration to.
-
-1. [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-
-1. Click **Add Box Shadow** (![Add Box Shadow icon.](../media/add-box-shadow-icon.msft.png)).
-
-   ![Add Box Shadow.](../media/css-elements-styles-rule-add-box-shadow.msft.png)
-
-
-<!-- ====================================================================== -->
-## Add a text-shadow declaration
-
-To add a `text-shadow` declaration to an element:
-
-1. Hover on the style rule that you want to add the `text-shadow` declaration to.
-
-1. [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-
-1. Click **Add Text Shadow** (![Add Text Shadow icon.](../media/add-text-shadow-icon.msft.png)).
-
-   ![Add Text Shadow.](../media/css-elements-styles-rule-add-text-shadow.msft.png)
 
 
 <!-- ====================================================================== -->
