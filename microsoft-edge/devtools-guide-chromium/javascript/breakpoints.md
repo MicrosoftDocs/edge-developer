@@ -234,17 +234,15 @@ When you're calling `debug()` from the DevTools Console, here's a technique to e
 <!-- ====================================================================== -->
 ## Logpoint breakpoint variant
 
-A Logpoint is a breakpoint variant that does not "break" in the debugger but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint. 
+A Logpoint is a breakpoint variant that does not "break" in the debugger, but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint. 
 
-To set a conditional line-of-code breakpoint:
+To set a logpoint:
 
 1. Select the Sources tool.
 
-1. Open the file that contains the line of code you want to break on.
+1. Open the file that contains the line of code you want to insert a logpoint.
 
-1. Go to the line of code.  
-
-1. To the left of the line of code is the line number column. Right-click it.
+1. Right-click on the left of the line of code on the line number column.
 
 1. Select **Add Logpoint**. A dialog is displayed underneath the line of code.
 
