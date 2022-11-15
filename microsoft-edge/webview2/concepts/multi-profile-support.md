@@ -46,7 +46,7 @@ The `CreateCoreWebView2ControllerOptions` method on `CoreWebView2Environment` cr
 
 #### Create a WebView2 control that uses the profile
 
-The `CreateCoreWebView2ControllerWithOptions` method creates a WebView2 control and associates it with the profile you specified.  If the specified profile doesn't exist, a new profile will be created.
+Each `Create...Controller` method which takes an `options` parameter creates a WebView2 control and associates it with the profile you specified.  If the specified profile doesn't exist, a new profile will be created.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -122,7 +122,6 @@ public async Task InitializeCoreWebView2()
 ```cpp
 HRESULT AppWindow::CreateControllerWithOptions()
 {
-    //! [CreateControllerWithOptions]
     auto webViewEnvironment10 = m_webViewEnvironment.try_query<ICoreWebView2Environment10>();
     if (!webViewEnvironment10)
     {
@@ -140,7 +139,6 @@ HRESULT AppWindow::CreateControllerWithOptions()
         return S_OK;
     }
     CHECK_FAILURE(hr);
-    //! [CreateControllerWithOptions]
 
     // If call 'put_ProfileName' with an invalid profile name, the 'E_INVALIDARG' returned
     // immediately. ProfileName could be reused.
@@ -153,7 +151,6 @@ HRESULT AppWindow::CreateControllerWithOptions()
     if (m_dcompDevice)
 #endif
     {
-        //! [OnCreateCoreWebView2ControllerCompleted]
         CHECK_FAILURE(webViewEnvironment10->CreateCoreWebView2CompositionControllerWithOptions(
             m_mainWindow, options.get(),
             Callback<ICoreWebView2CreateCoreWebView2CompositionControllerCompletedHandler>(
@@ -166,7 +163,6 @@ HRESULT AppWindow::CreateControllerWithOptions()
                     return OnCreateCoreWebView2ControllerCompleted(result, controller.get());
                 })
                 .Get()));
-        //! [OnCreateCoreWebView2ControllerCompleted]
     }
     else
     {
@@ -274,7 +270,6 @@ HRESULT AppWindow::OnCreateCoreWebView2ControllerCompleted(HRESULT result, ICore
     // ProcessFailed event could have been raised yet) so the PID is
     // available.
     CHECK_FAILURE(m_webView->get_BrowserProcessId(&m_newestBrowserPid));
-    //! [CoreWebView2Profile]
     auto webView2_13 = coreWebView2.try_query<ICoreWebView2_13>();
     if (webView2_13)
     {
