@@ -41,7 +41,7 @@ The most well-known type of breakpoint is line-of-code.  But line-of-code breakp
 | [Event listener](#event-listener-breakpoints) | On the code that runs after an event, such as `click`, runs.  |
 | [Exception](#exception-breakpoints) | On the line of code that is throwing a caught or uncaught exception.  |
 | [Function](#function-breakpoints) | Whenever a specific command, function, or method is run.  |
-| [Logpoint](#logpoint-breakpoints) | A variant that does not "break" into the debugger but instead logs a message to the console.  |
+| [Logpoints](#logpoints) | A variant that does not "break" into the debugger but instead logs a message to the console.  |
 
 
 <!-- ====================================================================== -->
@@ -232,7 +232,7 @@ When you're calling `debug()` from the DevTools Console, here's a technique to e
 
 
 <!-- ====================================================================== -->
-## Logpoint breakpoint
+## Logpoints
 
 A Logpoint is a breakpoint variant that does not "break" in the debugger, but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint. 
 
