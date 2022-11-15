@@ -1058,7 +1058,7 @@
 
             - name: WinUI 2 (UWP)
               href: webview2/get-started/winui2.md
-              displayName: Get started with WinUI 2 (UWP) apps  # no repo dir exists  # top-of-page title
+              displayName: Get started with WebView2 in WinUI 2 (UWP) apps  # no repo dir exists  # top-of-page title
 
             - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md

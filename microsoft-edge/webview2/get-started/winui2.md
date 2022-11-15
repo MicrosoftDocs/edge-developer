@@ -286,20 +286,53 @@ Next, learn about navigation events, which are essential for WebView2 apps.  The
 <!-- ====================================================================== -->
 ## Status of WebView2 functionality on WinUI 2 (UWP)
 
-The WebView2 WinUI 2 (UWP) control is in development.  The following features haven't been implemented, or are disabled or have limitations due to pending work:
+The WebView2 WinUI 2 (UWP) control is in development.  For WebView2 for UWP apps, the following features have limitations due to pending work.
 
-*  Downloads.
-   *  Downloading files is only available in preview via the Edge Dev channel until Edge 104; moreover, it is disabled by default. To enable, please use the command line switch `edge-webview-optional-enable-uwp-regular-downloads`. There are a couple of known limitations to the current downloads behavior for WebView2 in UWP:
-        * The downloads hub is currently disabled.
-        * Depending on the user's OS, downloaded files will be downloaded to different folders. For Windows 11, the downloaded files will appear in a subfolder with the app package's name in the Downloads folder. For OS's below Windows 11, the downloaded files will appear in a subfolder named WebView2Downloads within this app package's subfolder in the Downloads folder.
-        * Additionally, saving files via Save As is functional and enabled for UWP WebView2. The files will be saved in the respective folder the user selects.
-*  Autofill UI.
-*  Print to PDF.
-   *  Print to PDF requires that the app have access to a writeable location in UWP, such as a local folder.  For a full list of UWP-accessible paths, see [File access permissions](/windows/uwp/files/file-access-permissions).
-*  Default printing is disabled, however developers may work around this by using CapturePreviewAsync (though this only captures the current viewport).
 
-Package summary:
-* [Overview of the NuGet package for Microsoft.UI.Xaml](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
+<!-- ------------------------------ -->
+#### Downloads
+
+Depending on the user's OS, downloaded files will be downloaded to different folders:
+*  For Windows 11, the downloaded files will appear in a subfolder with the app package's name in the `Downloads` folder.
+*  For Windows prior to Windows 11, the downloaded files will appear in a subfolder named `WebView2Downloads` within the app package's subfolder in the `Downloads` folder.
+
+Saving files via **Save As** is working and is enabled for WebView2 for UWP apps.  The files will be saved in the folder that the user selects.
+
+There are a couple of known limitations of the current downloads behavior for WebView2 in UWP:
+
+*  Downloading files is only available in preview via the Edge Dev channel until Edge 104; moreover, it is disabled by default.  To enable downloading files, use the command-line switch `edge-webview-optional-enable-uwp-regular-downloads`.
+
+*  The downloads hub is currently disabled.
+
+See also:
+* [Downloads](../concepts/overview-features-apis.md#downloads) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ------------------------------ -->
+#### Autofill UI
+
+Autofill UI is not implemented yet for WebView2 for UWP apps.
+
+See also:
+* [Autofill](../concepts/overview-features-apis.md#autofill) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ------------------------------ -->
+#### Print to PDF
+
+Print to PDF requires that the app have access to a writeable location in UWP, such as a local folder.  For a full list of UWP-accessible paths, see [File access permissions](/windows/uwp/files/file-access-permissions).
+
+See also:
+* [Printing](../concepts/overview-features-apis.md#printing) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ------------------------------ -->
+#### Default printing
+
+Default printing is disabled for WebView2 for UWP apps.  However, you can capture and print the current viewport, by calling `CapturePreview`.
+
+See also:
+* [Image capture](../concepts/overview-features-apis.md#image-capture) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ====================================================================== -->
@@ -352,3 +385,4 @@ GitHub:
 * [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - the WinUI 2 (UWP) WebView2 sample.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
 *  Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
+* [Microsoft.UI.Xaml NuGet package](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
