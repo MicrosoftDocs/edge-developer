@@ -84,8 +84,8 @@ The following table lists the currently available permission strings to use in y
 | `cookies` | Gives your extension access to the `chrome.cookies` API. |
 | `debugger` | Gives your extension access to the `chrome.debugger` API. |
 | `declarativeContent` | Gives your extension access to the `chrome.declarativeContent` API. |
-| `declarativeNetRequest` | Gives your extension access to the `chrome.declarativeNetRequest` API. |
-| `declarativeNetRequestWithHostAccess` | `declarativeNetRequest` API and `declarativeNetRequestWithHostAccess` both allow the extension to use the `declarativeNetRequest` API. <br/>The `declarativeNetRequest` permission allows the extension to block and upgrade requests without requiring host permissions, but requires host permissions to redirect requests or modify headers. <br/>The `declarativeNetRequestWithHostAccess` permission always requires host permissions on the request URL and on the initiator, to act on the request. |
+| `declarativeNetRequest` | Gives your extension access to the `chrome.declarativeNetRequest` API. Allows the extension to block and upgrade requests without requiring host permissions, but requires host permissions to redirect requests or modify headers.|
+| `declarativeNetRequestWithHostAccess` | Gives your extension access to the `chrome.declarativeNetRequest` API.  Always requires host permissions on the request URL and on the initiator, to act on the request. |
 | `declarativeNetRequestFeedback` | Grants the extension access to events and methods within the `chrome.declarativeNetRequest` API, which returns information on declarative rules matched. |
 | `declarativeWebRequest` | Gives your extension access to the `chrome.declarativeWebRequest` API. |
 | `desktopCapture` | Gives your extension access to the `chrome.desktopCapture` API. |
