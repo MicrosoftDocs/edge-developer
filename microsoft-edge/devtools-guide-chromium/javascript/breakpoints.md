@@ -232,7 +232,7 @@ When you're calling `debug()` from the DevTools Console, here's a technique to e
 
 
 <!-- ====================================================================== -->
-## Logpoint breakpoint variant
+## Logpoint breakpoint
 
 A Logpoint is a breakpoint variant that does not "break" in the debugger, but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint. 
 
@@ -248,9 +248,7 @@ To set a logpoint:
 
 1. Press Enter to activate the logpoint. A red diamond (or more recently, an orange icon) appears on top of the line number column:
 
-For more information, see [Log messages in the Console tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/console-log)  
-
-```
+For more information, see [Log messages in the Console tool](/microsoft-edge/devtools-guide-chromium/console/console-log).
 
 <!-- ====================================================================== -->
 ## See also
