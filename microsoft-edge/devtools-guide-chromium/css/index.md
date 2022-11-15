@@ -44,7 +44,7 @@ Follow the interactive tutorial sections in this article to learn the basics of 
 
 1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
-1. In DevTools, on the **Elements** tool, select the **Styles** panel.  The `Inspect Me!` element is highlighted in the Styles panel.<!-- no -->
+1. In DevTools, on the **Elements** tool, select the **Styles** panel.  The `Inspect Me!` element is highlighted in the Styles panel.
 
 1. In the `Inspect Me!` element, find the `aloha` class rule.  This rule is displayed, because it's being applied to the `Inspect Me!` element.
 
@@ -52,7 +52,7 @@ Follow the interactive tutorial sections in this article to learn the basics of 
 
    ![CSS class applied to the inspected element is highlighted in the Styles panel.](../media/css-elements-inspect-me-styles.msft.png)
 
-1. On the page view, enter the `padding` value and paste it in the **Value of padding:** text box.
+1. On the page view, paste the `padding` value in the **Value of padding:** text box.
 
 
 <!-- ====================================================================== -->
