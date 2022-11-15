@@ -286,7 +286,7 @@ Next, learn about navigation events, which are essential for WebView2 apps.  The
 <!-- ====================================================================== -->
 ## Status of WebView2 functionality on WinUI 2 (UWP)
 
-The WebView2 WinUI 2 (UWP) control is in development.  The following features haven't been implemented, or are disabled due to pending work:
+The WebView2 WinUI 2 (UWP) control is in development.  The following features haven't been implemented, or are disabled or have limitations due to pending work:
 
 *  Downloads.
    *  Downloading files is only available in preview via the Edge Dev channel until Edge 104; moreover, it is disabled by default. To enable, please use the command line switch `edge-webview-optional-enable-uwp-regular-downloads`. There are a couple of known limitations to the current downloads behavior for WebView2 in UWP:
@@ -295,6 +295,7 @@ The WebView2 WinUI 2 (UWP) control is in development.  The following features ha
         * Additionally, saving files via Save As is functional and enabled for UWP WebView2. The files will be saved in the respective folder the user selects.
 *  Autofill UI.
 *  Print to PDF.
+   *  Print to PDF requires that the app have access to a writeable location in UWP, such as a local folder.  For a full list of UWP-accessible paths, see [File access permissions](/windows/uwp/files/file-access-permissions).
 *  Default printing is disabled, however developers may work around this by using CapturePreviewAsync (though this only captures the current viewport).
 
 Package summary:
