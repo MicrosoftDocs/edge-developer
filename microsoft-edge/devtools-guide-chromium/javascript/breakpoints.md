@@ -242,11 +242,11 @@ To set a conditional line-of-code breakpoint:
 
 1. Open the file that contains the line of code you want to break on.
 
-1. Go to the line of code.
+1. Go to the line of code.  
 
 1. To the left of the line of code is the line number column. Right-click it.
 
-1. Select **Add logpoint**. A dialog is displayed underneath the line of code.
+1. Select **Add Logpoint**. A dialog is displayed underneath the line of code.
 
 1. Press Enter to activate the logpoint. A red diamond (or more recently, an orange icon) appears on top of the line number column:
 
