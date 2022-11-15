@@ -58,7 +58,7 @@ The following is an example **manifest.json** file:
 {
     "name": "Native Messaging Example",
     "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "description": "Send a message to a native app.",
     "app": {
         "launch": {
@@ -88,7 +88,7 @@ Native apps must provide a native messaging host manifest file.  A native messag
 
 The browser reads and validates the native messaging host manifest.  The browser doesn't install or manage the native messaging host manifest file.
 
-The native messaging host manifest file is distinct from Manifest V3 or V2 that's part of a Microsoft Edge extension.
+The native messaging host manifest file is distinct from the Manifest V3 or V2 file that is part of the Microsoft Edge extension.
 
 Example of a native messaging host manifest file:
 
@@ -136,10 +136,9 @@ When you're ready to distribute your extension to users, publish your extension 
 
 The final step involves copying the native messaging host manifest file to your computer, and making sure that this manifest file is correctly configured.  To ensure your native messaging host manifest file is placed in the expected location, do the following steps.  The location varies by platform.
 
-> [!NOTE]
-> Make sure that:
-> 1. You provide read permissions on the native messaging host manifest file. 
-> 2. Run permissions on the host runtime.
+On Linux and macOS:
+*  Make sure that you provide **read** permissions on the native messaging host manifest file. 
+*  Make sure that you provide **run** permissions on the host runtime.
 
 ##### [Windows](#tab/windows/)
 

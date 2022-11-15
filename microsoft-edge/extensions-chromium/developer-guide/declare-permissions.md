@@ -26,41 +26,6 @@ To use most of the `chrome.*` APIs, your extension must declare its intent in th
 
 If an API requires you to declare permissions in the manifest, see the documentation for that API to understand the needed permissions.  For example, the [Storage API](https://developer.chrome.com/docs/extensions/reference/storage/) page describes how to declare the `storage` permission.
 
-The following code outlines how to declare permissions in the manifest file:
-
-#### [Manifest V3](#tab/v3)
-
-```json
-"permissions": [
-  "tabs",
-  "bookmarks",
-  "storage"
-],
-"optional_permissions": [
-  "unlimitedStorage"
-],
-"host_permissions": [
-  "http://www.blogger.com/",
-  "http://*.google.com/"
-]
-```
-
-#### [Manifest V2](#tab/v2)
-
-```json
-"permissions": [
-  "tabs",
-  "bookmarks",
-  "storage",
-  "http://www.blogger.com/",
-  "http://*.google.com/"
-],
-"optional_permissions": [
-  "unlimitedStorage"
-]
-```
-
----
 
 <!-- ====================================================================== -->
 
@@ -108,7 +73,7 @@ The following table lists the currently available permission strings to use in y
 |:--- |:--- |
 | `activeTab` | Requests that the extension is granted permissions according to the `activeTab` specification. |
 | `alarms` | Gives your extension access to the `chrome.alarms` API. |
-| `background` | Makes Microsoft Edge start up early and shut down late, so that extensions may have a longer life. <br/>The `background` permission is normally used on a background page.  When any installed extension has `background` permission, Microsoft Edge runs invisibly as soon as the user logs into the user's computer, and before the user launches Microsoft Edge.  The `background` permission also makes Microsoft Edge continue running, even after its last window is closed, until the user explicitly quits Microsoft Edge. <br/>**Note:** Disabled extensions are treated as if they aren't installed. <br/>You should use the "background" permission with [background scripts](https://developer.chrome.com/docs/extensions/mv3/background_pages/).|
+| `background` | Makes Microsoft Edge start up early and shut down late, so that extensions may have a longer life. <br/>When any installed extension has `background` permission, Microsoft Edge runs invisibly as soon as the user logs into the user's computer, and before the user launches Microsoft Edge.  The `background` permission also makes Microsoft Edge continue running, even after its last window is closed, until the user explicitly quits Microsoft Edge. <br/>**Note:** Disabled extensions are treated as if they aren't installed. <br/>You should use the `background` permission with [background scripts](https://developer.chrome.com/docs/extensions/mv3/background_pages/).|
 | `bookmarks` | Gives your extension access to the `chrome.bookmarks` API. |
 | `browsingData` | Gives your extension access to the `chrome.browsingData` API. |
 | `certificateProvider` | Gives your extension access to the `chrome.certificateProvider` API. |
@@ -120,7 +85,7 @@ The following table lists the currently available permission strings to use in y
 | `debugger` | Gives your extension access to the `chrome.debugger` API. |
 | `declarativeContent` | Gives your extension access to the `chrome.declarativeContent` API. |
 | `declarativeNetRequest` | Gives your extension access to the `chrome.declarativeNetRequest` API. |
-| `declarativeNetRequestWithHostAccess` | `declarativeNetRequest` API and `declarativeNetRequestWithHostAccess`both allow the extension to use the `declarativeNetRequest` API. The `declarativeNetRequest` permission allows the extension to block and upgrade requests without host permissions but needs host permissions to redirect requests or modify headers. The `declarativeNetRequestWithHostAccess` permission always needs host permissions to the request URL and the initiator to act on the request. |
+| `declarativeNetRequestWithHostAccess` | `declarativeNetRequest` API and `declarativeNetRequestWithHostAccess` both allow the extension to use the `declarativeNetRequest` API. <br/>The `declarativeNetRequest` permission allows the extension to block and upgrade requests without requiring host permissions, but requires host permissions to redirect requests or modify headers. <br/>The `declarativeNetRequestWithHostAccess` permission always requires host permissions on the request URL and on the initiator, to act on the request. |
 | `declarativeNetRequestFeedback` | Grants the extension access to events and methods within the `chrome.declarativeNetRequest` API, which returns information on declarative rules matched. |
 | `declarativeWebRequest` | Gives your extension access to the `chrome.declarativeWebRequest` API. |
 | `desktopCapture` | Gives your extension access to the `chrome.desktopCapture` API. |

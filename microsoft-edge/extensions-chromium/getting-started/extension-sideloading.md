@@ -23,23 +23,25 @@ To sideload an extension into Microsoft Edge:
 
    ![Turning on Developer Mode.](./media/part1-developermode-toggle.png)
 
-1. Turn on **Developer mode** by using the toggle at the bottom left of the page.
+1. Turn on the **Developer mode** toggle.
 
-1. When installing your extension for the first time, click the **Load Unpacked** button.  You'll be prompted for the directory with your extension source files.  Your extension is installed in your browser, similar to extensions installed from the store.
+1. When installing your extension for the first time, click the **Load unpacked** button.  The **Select the extension directory** dialog opens.
+
+1. Select the directory that contains your extension source files, and then click the **Select Folder** button.  Your extension is installed in your browser, similar to extensions that are installed from the store:
 
    ![Installed extensions page, showing a sideloaded extension.](./media/part1-installed-extension.png)
-
-During development, you may also need to update or remove an extension.
 
 
 <!-- ====================================================================== -->
 ## Updating an extension
 
-To update the extension:
+To update a sideloaded extension:
+
+1. Make any required changes to the extension.
 
 1. Go to `edge://extensions`.
 
-1. Select **Reload** on the extension.
+1. Click the **Reload** button for the sideloaded extension.  The updated extension is reloaded.
 
 
 <!-- ====================================================================== -->
@@ -49,4 +51,4 @@ To remove the extension from your browser:
 
 1. Go to `edge://extensions`.
 
-1. Click **Remove** on the extension.
+1. On the extension, click **Remove**.

@@ -206,13 +206,11 @@ For reference information about each field, see [Manifest file format (V2)](http
 | V3 | V2 |
 |---|---|
 | `  "manifest_version": 3,` | `"manifest_version": 2,` |
-| removed | `"action": ...,` |
 | `"action": {...},` | `"browser_action": {...},` |
 | `"action": {...},` | `"page_action": {...},` |
 | removed | `"persistent": false,` |
 | If `background` is included, `service_ worker` is required | If `background` is included, `service_ worker` is optional |
-| `"host_permissions": [...],` | `"host_permissions": ...,` |
-| `"version_name": "aString",` | `"version_name": ...,` |
+| `"host_permissions": [...],` | Separated into two different keys: `"permissions": [...], "host_permissions": [...]` |
 
 
 <!-- ====================================================================== -->
