@@ -234,19 +234,24 @@ When you're calling `debug()` from the DevTools Console, here's a technique to e
 <!-- ====================================================================== -->
 ## Logpoint breakpoint variant
 
-A Logpoint is a breakpoint variant that does not "break" in the debugger but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint.  
+A Logpoint is a breakpoint variant that does not "break" in the debugger but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint. 
 
-.Run the `debug(method)` method, where `method` is the command, function, or method you want to debug, when you want to pause whenever a specific function is run.  You can insert `debug()` into your code (such as a `console.log()` statement), or run the method from the DevTools Console.
+To set a conditional line-of-code breakpoint:
 
-`debug()` is equivalent to setting a [line-of-code breakpoint](#line-of-code-breakpoints) on the first line of the function.
+1. Select the Sources tool.
 
-```javascript
-function sum(a, b) {
-    let result = a + b; // DevTools pauses on this line.
-    return result;
-}
-debug(sum); // Pass the function object, not a string.
-sum();
+1. Open the file that contains the line of code you want to break on.
+
+1. Go to the line of code.
+
+1. To the left of the line of code is the line number column. Right-click it.
+
+1. Select **Add logpoint**. A dialog is displayed underneath the line of code.
+
+1. Press Enter to activate the logpoint. A red diamond (or more recently, an orange icon) appears on top of the line number column:
+
+For more information, see [Log messages in the Console tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/console-log)  
+
 ```
 
 <!-- ====================================================================== -->
