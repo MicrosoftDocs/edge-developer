@@ -49,11 +49,11 @@ The following is the normal sequence of events that are fired during each step o
 | 7 | `NavigationCompleted` |  WebView2 completes loading content on the new page. | [Navigation events](./overview-features-apis.md) |
 
 For example code showing how to handle navigation events, see:
-* [Learn about navigation events](https://learn.microsoft.com/microsoft-edge/webview2/get-started/winui2#learn-about-navigation-events) in _Get started with WebView2 in WinUI 2 (UWP) apps_ - no example code in the article; see other frameworks' articles.
-* [Step 6 - Navigation events](https://learn.microsoft.com/microsoft-edge/webview2/get-started/winui#step-6---navigation-events) in _Get started with WebView2 in WinUI 3 (Windows App SDK) apps_.
-* [Step 8 - Navigation events](https://learn.microsoft.com/microsoft-edge/webview2/get-started/wpf#step-8---navigation-events) in _Get started with WebView2 in WPF apps_.
-* [Step 8 - Navigation events](https://learn.microsoft.com/microsoft-edge/webview2/get-started/winforms#step-8---navigation-events) in _Get started with WebView2 in WinForms apps_.
-* [Step 14 - Navigation events](https://learn.microsoft.com/microsoft-edge/webview2/get-started/win32#step-14---navigation-events) in _Get started with WebView2 in Win32 apps_.
+* [Learn about navigation events](../get-started/winui2.md#learn-about-navigation-events) in _Get started with WebView2 in WinUI 2 (UWP) apps_ - no example code in the article; see other frameworks' articles.
+* [Step 6 - Navigation events](../get-started/winui.md#step-6---navigation-events) in _Get started with WebView2 in WinUI 3 (Windows App SDK) apps_.
+* [Step 8 - Navigation events](../get-started/wpf.md#step-8---navigation-events) in _Get started with WebView2 in WPF apps_.
+* [Step 8 - Navigation events](../get-started/winforms.md#step-8---navigation-events) in _Get started with WebView2 in WinForms apps_.
+* [Step 14 - Navigation events](../get-started/win32.md#step-14---navigation-events) in _Get started with WebView2 in Win32 apps_.
 
 
 <!-- ====================================================================== -->

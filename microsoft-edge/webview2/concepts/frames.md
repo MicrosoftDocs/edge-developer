@@ -36,24 +36,24 @@ Your host app must monitor the lifetime of a frame by subscribing to the `CoreWe
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2.FrameCreated Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.framecreated)
-   * [CoreWebView2FrameCreatedEventArgs Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2framecreatedeventargs)
-* [CoreWebView2Frame.Destroyed Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.destroyed)
-   * [CoreWebView2Frame.IsDestroyed Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.isdestroyed)
+* [CoreWebView2.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framecreated)
+   * [CoreWebView2FrameCreatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2framecreatedeventargs)
+* [CoreWebView2Frame.Destroyed Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.destroyed)
+   * [CoreWebView2Frame.IsDestroyed Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.isdestroyed)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.FrameCreated Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framecreated)
-   * [CoreWebView2FrameCreatedEventArgs Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framecreatedeventargs)
-* [CoreWebView2Frame.Destroyed Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#destroyed)
-   * [CoreWebView2Frame.IsDestroyed Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#isdestroyed)
+* [CoreWebView2.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framecreated)
+   * [CoreWebView2FrameCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framecreatedeventargs)
+* [CoreWebView2Frame.Destroyed Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#destroyed)
+   * [CoreWebView2Frame.IsDestroyed Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#isdestroyed)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2_4::FrameCreated event (add](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated), [remove)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_framecreated)
-   * [ICoreWebView2FrameCreatedEventArgs interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)
-* [ICoreWebView2Frame::Destroyed event (add](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame#add_destroyed), [remove)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame#remove_destroyed)
-   * [ICoreWebView2Frame::IsDestroyed method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame#isdestroyed)
+* [ICoreWebView2_4::FrameCreated event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_framecreated)
+   * [ICoreWebView2FrameCreatedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)
+* [ICoreWebView2Frame::Destroyed event (add](/microsoft-edge/webview2/reference/win32/icorewebview2frame#add_destroyed), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2frame#remove_destroyed)
+   * [ICoreWebView2Frame::IsDestroyed method](/microsoft-edge/webview2/reference/win32/icorewebview2frame#isdestroyed)
 
 ---
 
@@ -87,40 +87,40 @@ See also:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
+* [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
 
 Recommended:
-* [CoreWebView2Frame.NavigationStarting Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationstarting)
-* [CoreWebView2Frame.NavigationCompleted Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationcompleted)
+* [CoreWebView2Frame.NavigationStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationstarting)
+* [CoreWebView2Frame.NavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationcompleted)
 
 Superseded:
-* [CoreWebView2.FrameNavigationStarting Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationstarting)
-* [CoreWebView2.FrameNavigationCompleted Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationcompleted)
+* [CoreWebView2.FrameNavigationStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationstarting)
+* [CoreWebView2.FrameNavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationcompleted)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
+* [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
 
 Recommended:
-* [CoreWebView2Frame.NavigationStarting Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#navigationstarting)
-* [CoreWebView2Frame.NavigationCompleted Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#navigationcompleted)
+* [CoreWebView2Frame.NavigationStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#navigationstarting)
+* [CoreWebView2Frame.NavigationCompleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#navigationcompleted)
 
 Superseded:
-* [CoreWebView2.FrameNavigationStarting Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationstarting)
-* [CoreWebView2.FrameNavigationCompleted Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationcompleted)
+* [CoreWebView2.FrameNavigationStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationstarting)
+* [CoreWebView2.FrameNavigationCompleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationcompleted)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler)
-* [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
+* [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler)
+* [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
 
 Recommended:
-* [ICoreWebView2Frame2::NavigationStarting event (add](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationstarting), [remove)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationstarting)
-* [ICoreWebView2Frame2::NavigationCompleted event (add](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationcompleted), [remove)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationcompleted)
+* [ICoreWebView2Frame2::NavigationStarting event (add](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationstarting), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationstarting)
+* [ICoreWebView2Frame2::NavigationCompleted event (add](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationcompleted), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationcompleted)
 
 Superseded:
-* [ICoreWebView2::FrameNavigationStarting event (add](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationstarting), [remove)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationstarting)
-* [ICoreWebView2::FrameNavigationCompleted event (add](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted), [remove)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted)
+* [ICoreWebView2::FrameNavigationStarting event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationstarting), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationstarting)
+* [ICoreWebView2::FrameNavigationCompleted event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted)
 
 ---
 
@@ -142,7 +142,7 @@ The host app subscribes to web messages to receive messages from script within i
 
 The host app sends web messages to script within iframes.
 
-Using native-side APIs from script within a frame, via a host object, is similar to web/native interop page structure as explained in [Call native-side code from web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject):
+Using native-side APIs from script within a frame, via a host object, is similar to web/native interop page structure as explained in [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/hostobject):
 
 To use host objects within an iframe:
 1. Define the host object and implement `IDispatch`.
@@ -166,28 +166,28 @@ URLs that aren't in the `origins` list will need to be implemented on the native
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Frame.AddHostObjectToScript Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.addhostobjecttoscript) - has an `origins` parameter.  The documentation doesn't have a **Method name** table.
+* [CoreWebView2Frame.AddHostObjectToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.addhostobjecttoscript) - has an `origins` parameter.  The documentation doesn't have a **Method name** table.
 
 The above method works like the following method:
-* [CoreWebView2.AddHostObjectToScript Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript).  See the **Method name** table.  Read both of these API Reference topics, although for frames, you would use the method which supports an `origins` parameter instead.
+* [CoreWebView2.AddHostObjectToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript).  See the **Method name** table.  Read both of these API Reference topics, although for frames, you would use the method which supports an `origins` parameter instead.
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 <!-- todo -->
 Not implemented yet.
 
-<!-- * [CoreWebView2Frame.AddHostObjectToScript Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#addhostobjecttoscript) - has an `origins` parameter.
-* [CoreWebView2Frame.RemoveHostObjectFromScript Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#removehostobjectfromscript) -->
+<!-- * [CoreWebView2Frame.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#addhostobjecttoscript) - has an `origins` parameter.
+* [CoreWebView2Frame.RemoveHostObjectFromScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#removehostobjectfromscript) -->
 
 <!-- The above method works like the following method: -->
-<!-- * [CoreWebView2.AddHostObjectToScript Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript).  See the **Method name** table.  Read both of these API Reference topics, although for frames, you would use the method which supports an `origins` parameter instead. -->
+<!-- * [CoreWebView2.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript).  See the **Method name** table.  Read both of these API Reference topics, although for frames, you would use the method which supports an `origins` parameter instead. -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins) - has an `origins` parameter.  The documentation doesn't have a **Method name** table.
+* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins) - has an `origins` parameter.  The documentation doesn't have a **Method name** table.
 
 The above method works like the following method:
-* [ICoreWebView2::AddHostObjectToScript method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript).  See the **Method name** table.  Read both of these API Reference topics, although for frames, you would use the method which supports an `origins` parameter instead.
+* [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript).  See the **Method name** table.  Read both of these API Reference topics, although for frames, you would use the method which supports an `origins` parameter instead.
 
 ---
 
@@ -234,26 +234,26 @@ Code in a webpage might be running either inside a browser or inside the WebView
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Frame.WebMessageReceived Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.webmessagereceived)
-* [CoreWebView2Frame.PostWebMessageAsJson Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postwebmessageasjson)
-* [CoreWebView2Frame.PostWebMessageAsString Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postwebmessageasstring)
+* [CoreWebView2Frame.WebMessageReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.webmessagereceived)
+* [CoreWebView2Frame.PostWebMessageAsJson Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postwebmessageasjson)
+* [CoreWebView2Frame.PostWebMessageAsString Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postwebmessageasstring)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Frame.WebMessageReceived Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#webmessagereceived)
-* [CoreWebView2Frame.PostWebMessageAsJson Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#postwebmessageasjson)
-* [CoreWebView2Frame.PostWebMessageAsString Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#postwebmessageasstring)
+* [CoreWebView2Frame.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#webmessagereceived)
+* [CoreWebView2Frame.PostWebMessageAsJson Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#postwebmessageasjson)
+* [CoreWebView2Frame.PostWebMessageAsString Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#postwebmessageasstring)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Frame2::WebMessageReceived event (add](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_webmessagereceived), [remove)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_webmessagereceived)
-* [ICoreWebView2Frame2::PostWebMessageAsJson method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#postwebmessageasjson)
-* [ICoreWebView2Frame2::PostWebMessageAsString method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#postwebmessageasstring)
+* [ICoreWebView2Frame2::WebMessageReceived event (add](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_webmessagereceived), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_webmessagereceived)
+* [ICoreWebView2Frame2::PostWebMessageAsJson method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#postwebmessageasjson)
+* [ICoreWebView2Frame2::PostWebMessageAsString method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#postwebmessageasstring)
 
 ---
 
 See also:
-* [Interop of native-side and web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/communicate-btwn-web-native)
+* [Interop of native-side and web-side code](/microsoft-edge/webview2/how-to/communicate-btwn-web-native)
 * [Web messaging](./overview-features-apis.md#web-messaging) in _Overview of WebView2 features and APIs_.
 
 
@@ -278,16 +278,16 @@ For information about the `ContentLoading` event, see [Navigation events for Web
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Frame.ExecuteScriptAsync Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.executescriptasync)
+* [CoreWebView2Frame.ExecuteScriptAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.executescriptasync)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Frame.ExecuteScriptAsync Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#executescriptasync)
+* [CoreWebView2Frame.ExecuteScriptAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#executescriptasync)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Frame2::ExecuteScript](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#executescript)
-* [interface ICoreWebView2ExecuteScriptCompletedHandler](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2executescriptcompletedhandler)
+* [ICoreWebView2Frame2::ExecuteScript](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#executescript)
+* [interface ICoreWebView2ExecuteScriptCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2executescriptcompletedhandler)
 
 ---
 
@@ -312,28 +312,32 @@ See also:
 
 See the latest prerelease APIs.  The following links contain `1.0.1466-prerelease`.  In the **Version** drop-down list in the upper left of the API Reference docs, select the latest prerelease.
 
-* [CoreWebView2.AddWebResourceRequestedFilter(uri, resourceContext, requestSourceKinds) Method Overload](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-addwebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))<!--keep parentheses for specific overload--> - To subscribe to network requests that belong to an iframe, you must use this overload and use `Document` as the value of the `requestSourceKinds` parameter.<!--keep this note-->
-   * [CoreWebView2WebResourceRequestSourceKinds Enum](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestsourcekinds?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true)
-* [CoreWebView2.RemoveWebResourceRequestedFilter(uri, resourceContext, requestSourceKinds) Method Overload](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-removewebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))<!--keep parentheses for specific overload-->
-* [CoreWebView2WebResourceRequestedEventArgs Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true)
+<!-- keep ?view as long as experimental-only.  keep # updated. -->
+
+* [CoreWebView2.AddWebResourceRequestedFilter(uri, resourceContext, requestSourceKinds) Method Overload](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-addwebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))<!--keep parentheses for specific overload--> - To subscribe to network requests that belong to an iframe, you must use this overload and use `Document` as the value of the `requestSourceKinds` parameter.<!--keep this note-->
+   * [CoreWebView2WebResourceRequestSourceKinds Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestsourcekinds?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true)
+* [CoreWebView2.RemoveWebResourceRequestedFilter(uri, resourceContext, requestSourceKinds) Method Overload](/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-removewebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))<!--keep parentheses for specific overload-->
+* [CoreWebView2WebResourceRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 See the latest prerelease APIs.  The following links contain `1.0.1466-prerelease`.  In the **Version** drop-down list in the upper left of the API Reference docs, select the latest prerelease.
 
-* [CoreWebView2.AddWebResourceRequestedFilter(uri, resourceContext, requestSourceKinds) Method Overload](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true#addwebresourcerequestedfilter)<!--this is the correct overload; lacks -1 in url; valid for view=prerelease--> - To subscribe to network requests that belong to an iframe, you must use this overload and use `Document` as the value of the `requestSourceKinds` parameter.<!--keep this note-->
-   * [CoreWebView2WebResourceRequestSourceKinds Enum](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestsourcekinds?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true)
-* [CoreWebView2.RemoveWebResourceRequestedFilter(uri, resourceContext, requestSourceKinds) Method Overload](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true#removewebresourcerequestedfilter)<!--this is the correct overload; lacks -1 in url-->
-* [CoreWebView2WebResourceRequestedEventArgs Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true)
+<!-- keep ?view as long as experimental-only.  keep # updated. -->
+
+* [CoreWebView2.AddWebResourceRequestedFilter(uri, resourceContext, requestSourceKinds) Method Overload](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true#addwebresourcerequestedfilter)<!--this is the correct overload; lacks -1 in url; valid for view=prerelease--> - To subscribe to network requests that belong to an iframe, you must use this overload and use `Document` as the value of the `requestSourceKinds` parameter.<!--keep this note-->
+   * [CoreWebView2WebResourceRequestSourceKinds Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestsourcekinds?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true)
+* [CoreWebView2.RemoveWebResourceRequestedFilter(uri, resourceContext, requestSourceKinds) Method Overload](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true#removewebresourcerequestedfilter)<!--this is the correct overload; lacks -1 in url-->
+* [CoreWebView2WebResourceRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 <!-- for win32, "Experimental" links automatically go to latest view -->
 
-* [ICoreWebView2Experimental16.AddWebResourceRequestedFilterWithRequestSourceKinds method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental16#addwebresourcerequestedfilterwithrequestsourcekinds) - To subscribe to network requests that belong to an iframe, you must use this `...WithRequestSourceKinds` method and use `COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS_DOCUMENT` as the value of the `requestSourceKinds` parameter.<!--keep this note-->
-   * [COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS enum](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_web_resource_request_source_kinds)
-* [ICoreWebView2Experimental16.RemoveWebResourceRequestedFilterWithRequestSourceKinds method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental16#removewebresourcerequestedfilterwithrequestsourcekinds)
-* [ICoreWebView2ExperimentalWebResourceRequestedEventArgs interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs)
+* [ICoreWebView2Experimental16.AddWebResourceRequestedFilterWithRequestSourceKinds method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental16#addwebresourcerequestedfilterwithrequestsourcekinds) - To subscribe to network requests that belong to an iframe, you must use this `...WithRequestSourceKinds` method and use `COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS_DOCUMENT` as the value of the `requestSourceKinds` parameter.<!--keep this note-->
+   * [COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_web_resource_request_source_kinds)
+* [ICoreWebView2Experimental16.RemoveWebResourceRequestedFilterWithRequestSourceKinds method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental16#removewebresourcerequestedfilterwithrequestsourcekinds)
+* [ICoreWebView2ExperimentalWebResourceRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs)
 
 <!-- 
 todo: update enum link when it changes to a Globals page section/anchor eg:
@@ -354,15 +358,15 @@ See also:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2NavigationStartingEventArgs.AdditionalAllowedFrameAncestors Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs.additionalallowedframeancestors)
+* [CoreWebView2NavigationStartingEventArgs.AdditionalAllowedFrameAncestors Property](/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs.additionalallowedframeancestors)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2NavigationStartingEventArgs.AdditionalAllowedFrameAncestors Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs)
+* [CoreWebView2NavigationStartingEventArgs.AdditionalAllowedFrameAncestors Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-[ICoreWebView2NavigationStartingEventArgs2::put_AdditionalAllowedFrameAncestors property (get](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs2#get_additionalallowedframeancestors), [put)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs2#put_additionalallowedframeancestors)
+[ICoreWebView2NavigationStartingEventArgs2::put_AdditionalAllowedFrameAncestors property (get](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs2#get_additionalallowedframeancestors), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs2#put_additionalallowedframeancestors)
 
 ---
 
@@ -416,7 +420,7 @@ In progress.
 
 ##### [Win32/C++](#tab/win32cpp)
 
-This example code is copied from [ICoreWebView2Frame2::ExecuteScript method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#executescript).
+This example code is copied from [ICoreWebView2Frame2::ExecuteScript method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#executescript).
 
 ```cpp
 wil::com_ptr<ICoreWebView2_4> webview2_4 = m_webView.try_query<ICoreWebView2_4>();
@@ -476,7 +480,7 @@ if (webview2_4)
 <!-- ====================================================================== -->
 ## API Reference overview
 
-The following features, listed in [Overview of WebView2 features and APIs](https://learn.microsoft.com/microsoft-edge/webview2/concepts/overview-features-apis), include frame-related APIs:
+The following features, listed in [Overview of WebView2 features and APIs](/microsoft-edge/webview2/concepts/overview-features-apis), include frame-related APIs:
 
 * [Host/web object sharing](./overview-features-apis.md#hostweb-object-sharing)
 * [iframes](./overview-features-apis.md#iframes)<!--same link is in h2 "Subscribing to the FrameCreated event" above-->
@@ -490,7 +494,7 @@ The following features, listed in [Overview of WebView2 features and APIs](https
 <!-- ====================================================================== -->
 ## See also
 
-* [Call native-side code from web-side code](https://learn.microsoft.com/microsoft-edge/webview2/how-to/hostobject)
+* [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/hostobject)
 * [Navigation events for WebView2 apps](./navigation-events.md) - valid for frames as well as webpages.
 
 **External pages:**
