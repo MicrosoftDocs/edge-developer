@@ -16,7 +16,7 @@ Navigation events run when specific asynchronous actions occur to the content th
 
 
 <!--
-maintenance links (keep)
+maintenance links (keep, to keep sections' content sync'd)
 This, main page:
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 Derivative copies of this page's content, or links to this page:
@@ -28,7 +28,6 @@ Derivative copies of this page's content, or links to this page:
 -->
 
 Supported platforms: Win32, Windows Forms, WinUI, WPF.
-<!-- todo: it would be more useful to list what's not supported -->
 
 
 <!-- ====================================================================== -->
@@ -42,18 +41,11 @@ The following is the normal sequence of events that are fired during each step o
 |---|---|---|---|
 | 1 | `NavigationStarting` |  WebView2 starts to navigate and the navigation results in a network request.  The host may disallow the request during the event. | [Block unwanted navigating](/microsoft-edge/webview2/concepts/overview-features-apis.md#block-unwanted-navigating) |
 | 2 | `SourceChanged` |  The source of WebView2 changes to a new URL.<!--todo: clarify-->  The event may result from a navigation action that doesn't cause a network request, such as a fragment<!--todo: anchor?--> navigation. | [Navigation history](./overview-features-apis.md#navigation-history) |
-| 3 | `ContentLoading` |  WebView2 starts loading content for the new page. | [Navigation events](./overview-features-apis.md) |
-| 4 | `HistoryChanged` |  The navigation causes the history of WebView2 to update. | [Navigation history](./overview-features-apis.md) |
-| 5 | `BasicAuthenticationRequested` |  tbd<!--todo--> | [Authentication](./overview-features-apis.md) |
-| 6 | `DOMContentLoaded` |  WebView2 finishes parsing the DOM content but hasn't finished loading all images, script, and other content on the page. | [Navigation events](./overview-features-apis.md) |
-| 7 | `NavigationCompleted` |  WebView2 completes loading content on the new page. | [Navigation events](./overview-features-apis.md) |
-
-For example code showing how to handle navigation events, see:
-* [Learn about navigation events](../get-started/winui2.md#learn-about-navigation-events) in _Get started with WebView2 in WinUI 2 (UWP) apps_ - no example code in the article; see other frameworks' articles.
-* [Step 6 - Navigation events](../get-started/winui.md#step-6---navigation-events) in _Get started with WebView2 in WinUI 3 (Windows App SDK) apps_.
-* [Step 8 - Navigation events](../get-started/wpf.md#step-8---navigation-events) in _Get started with WebView2 in WPF apps_.
-* [Step 8 - Navigation events](../get-started/winforms.md#step-8---navigation-events) in _Get started with WebView2 in WinForms apps_.
-* [Step 14 - Navigation events](../get-started/win32.md#step-14---navigation-events) in _Get started with WebView2 in Win32 apps_.
+| 3 | `ContentLoading` |  WebView2 starts loading content for the new page. | [Navigation events](./overview-features-apis.md#navigation-events) |
+| 4 | `HistoryChanged` |  The navigation causes the history of WebView2 to update. | [Navigation history](./overview-features-apis.md#navigation-history) |
+| 5 | `BasicAuthenticationRequested` |  Raised when WebView encounters a Basic HTTP Authentication request.  See [Basic authentication for WebView2 apps](./basic-authentication.md). | [Authentication](./overview-features-apis.md#authentication) |
+| 6 | `DOMContentLoaded` |  WebView2 finishes parsing the DOM content but hasn't finished loading all images, script, and other content on the page. | [Navigation events](./overview-features-apis.md#navigation-events) |
+| 7 | `NavigationCompleted` |  WebView2 completes loading content on the new page. | [Navigation events](./overview-features-apis.md#navigation-events) |
 
 
 <!-- ====================================================================== -->
@@ -83,55 +75,16 @@ To monitor or cancel navigation events inside frames in a WebView2 instance, use
 
 
 <!-- ====================================================================== -->
-## API Reference overview
+## Navigation example code
 
-<!-- 
-todo: the below list of links is arranged by sequence, unlike the "overview of APIs" article.  Copy into that article from here? 
+For example code showing how to handle navigation events, see:
+* [Learn about navigation events](../get-started/winui2.md#learn-about-navigation-events) in _Get started with WebView2 in WinUI 2 (UWP) apps_ - no example code in the article; see other frameworks' articles.
+* [Step 6 - Navigation events](../get-started/winui.md#step-6---navigation-events) in _Get started with WebView2 in WinUI 3 (Windows App SDK) apps_.
+* [Step 8 - Navigation events](../get-started/wpf.md#step-8---navigation-events) in _Get started with WebView2 in WPF apps_.
+* [Step 8 - Navigation events](../get-started/winforms.md#step-8---navigation-events) in _Get started with WebView2 in WinForms apps_.
+* [Step 14 - Navigation events](../get-started/win32.md#step-14---navigation-events) in _Get started with WebView2 in Win32 apps_.
 
-Instead of manually building out a list of links below, it's easier to author & maintain links by improving Overview Of Apis and linking to there.  Get that cleaned up then copy/paste back to here, or link from here to there, or use import file.
--->
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-<!-- todo: finish adding Frame event -->
-
-* [CoreWebView2.NavigationStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationstarting)
-   * [CoreWebView2Frame.NavigationStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationstarting)
-* [CoreWebView2.SourceChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.sourcechanged)
-* [CoreWebView2.ContentLoading Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contentloading)
-   * [CoreWebView2Frame.ContentLoading Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.contentloading)
-* [CoreWebView2.HistoryChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.historychanged)
-* [CoreWebView2.BasicAuthenticationRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
-* [CoreWebView2.DOMContentLoaded Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.domcontentloaded)
-* [CoreWebView2.NavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-<!-- todo: finish adding Frame event -->
-
-* [CoreWebView2.NavigationStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigationstarting)
-   * [CoreWebView2Frame.NavigationStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#navigationstarting)
-* [CoreWebView2.SourceChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#sourcechanged)
-* [CoreWebView2.ContentLoading Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#contentloading)
-* [CoreWebView2.HistoryChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#historychanged)
-* [CoreWebView2.BasicAuthenticationRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#basicauthenticationrequested)
-* [CoreWebView2.DOMContentLoaded Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#domcontentloaded)
-* [CoreWebView2.NavigationCompleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigationcompleted)
-
-##### [Win32/C++](#tab/win32cpp)
-
-<!-- todo: finish adding Frame event -->
-
-* [ICoreWebView2::NavigationStarting event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationstarting), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationstarting)
-   * [ICoreWebView2Frame2::NavigationStarting event (add](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationstarting), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationstarting)
-* [ICoreWebView2::SourceChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_sourcechanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_sourcechanged)
-* [ICoreWebView2::ContentLoading event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_contentloading), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_contentloading)
-* [ICoreWebView2::HistoryChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_historychanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_historychanged)
-* [ICoreWebView2_10::BasicAuthenticationRequested event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_10#remove_basicauthenticationrequested)
-* [ICoreWebView2_2::DOMContentLoaded event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_domcontentloaded), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_domcontentloaded)
-* [ICoreWebView2::NavigationCompleted event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationcompleted), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationcompleted)
-
----
+The WebView2 [Sample apps](../code-samples-links.md) also demonstrate handling navigation events.
 
 
 <!-- ====================================================================== -->
