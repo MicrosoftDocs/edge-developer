@@ -420,55 +420,54 @@ This example code is copied from [ICoreWebView2Frame2::ExecuteScript method](htt
 
 ```cpp
 wil::com_ptr<ICoreWebView2_4> webview2_4 = m_webView.try_query<ICoreWebView2_4>();
-    if (webview2_4)
-    {
-        // Subscribe to the FrameCreated event to obtain the frame object when 
-        // it's created.
-        CHECK_FAILURE(webview2_4->add_FrameCreated(
-            Callback<ICoreWebView2FrameCreatedEventHandler>(
-                [](ICoreWebView2* sender, ICoreWebView2FrameCreatedEventArgs* args) -> HRESULT {
-                    wil::com_ptr<ICoreWebView2Frame> webviewFrame;
-                    CHECK_FAILURE(args->get_Frame(&webviewFrame));
-                    // DOMContentLoaded event was introduced in ICoreWebView2Frame2 interface.
-                    // So in order to have access to this interface, query ICoreWebView2Frame2
-                    // from ICoreWebView2Frame.
-                    wil::com_ptr<ICoreWebView2Frame2> frame2 =
-                        webviewFrame.try_query<ICoreWebView2Frame2>();
-                    if (frame2)
-                    {
-                            // In order for ExecuteScript to successfully run inside the iframe, 
-                            // subscribe to the ContentLoading or DOMContentLoaded event.  Once these 
-                            // events are raised, you can call ExecuteScript.
-                            frame2->add_DOMContentLoaded(
-                            Callback<ICoreWebView2FrameDOMContentLoadedEventHandler>(
-                                [](ICoreWebView2Frame* frame,
-                                   ICoreWebView2DOMContentLoadedEventArgs* args) -> HRESULT {
-                                    wil::com_ptr<ICoreWebView2Frame2> frame2;
-                                    frame->QueryInterface(IID_PPV_ARGS(&frame2));
-                                    frame2->ExecuteScript(
-                                        LR"~(
-                                        let content = document.createElement("h2");
-                                        content.style.color = 'blue';
-                                        content.textContent = "This text was added to the iframe by the host app";
-                                        document.body.appendChild(content);
-                                        )~",
-                                        Callback<ICoreWebView2ExecuteScriptCompletedHandler>(
-                                            [](HRESULT error, PCWSTR result) -> HRESULT {
-                                                // Handle ExecuteScript error and result here if needed
-                                                // or pass nullptr as callback parameter otherwise.
-                                                return S_OK;
-                                            })
-                                            .Get());
-                                    return S_OK;
-                                })
-                                .Get(),
-                            NULL);
-                    }
-                    return S_OK;
-                })
-                .Get(),
-            &m_frameCreatedToken));
-    }
+if (webview2_4)
+{
+    // Subscribe to the FrameCreated event to obtain the frame object when it's created.
+    CHECK_FAILURE(webview2_4->add_FrameCreated(
+        Callback<ICoreWebView2FrameCreatedEventHandler>(
+            [](ICoreWebView2* sender, ICoreWebView2FrameCreatedEventArgs* args) -> HRESULT {
+                wil::com_ptr<ICoreWebView2Frame> webviewFrame;
+                CHECK_FAILURE(args->get_Frame(&webviewFrame));
+                // DOMContentLoaded event was introduced in ICoreWebView2Frame2 interface.
+                // So in order to have access to this interface, query ICoreWebView2Frame2
+                // from ICoreWebView2Frame.
+                wil::com_ptr<ICoreWebView2Frame2> frame2 =
+                    webviewFrame.try_query<ICoreWebView2Frame2>();
+                if (frame2)
+                {
+                        // In order for ExecuteScript to successfully run inside the
+                        // iframe, subscribe to the ContentLoading or DOMContentLoaded
+                        // event.  Once these events are raised, you can call ExecuteScript.
+                        frame2->add_DOMContentLoaded(
+                        Callback<ICoreWebView2FrameDOMContentLoadedEventHandler>(
+                            [](ICoreWebView2Frame* frame,
+                                ICoreWebView2DOMContentLoadedEventArgs* args) -> HRESULT {
+                                wil::com_ptr<ICoreWebView2Frame2> frame2;
+                                frame->QueryInterface(IID_PPV_ARGS(&frame2));
+                                frame2->ExecuteScript(
+                                    LR"~(
+                                    let content = document.createElement("h2");
+                                    content.style.color = 'blue';
+                                    content.textContent = "This text was added to the iframe by the host app";
+                                    document.body.appendChild(content);
+                                    )~",
+                                    Callback<ICoreWebView2ExecuteScriptCompletedHandler>(
+                                        [](HRESULT error, PCWSTR result) -> HRESULT {
+                                            // Handle ExecuteScript error and result here if needed
+                                            // or pass nullptr as callback parameter otherwise.
+                                            return S_OK;
+                                        })
+                                        .Get());
+                                return S_OK;
+                            })
+                            .Get(),
+                        NULL);
+                }
+                return S_OK;
+            })
+            .Get(),
+        &m_frameCreatedToken));
+}
 ```
 
 ---
