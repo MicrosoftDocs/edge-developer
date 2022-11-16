@@ -34,7 +34,7 @@ Follow the interactive tutorial sections in this article to learn the basics of 
 
 1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
-   In the **DOM Tree** panel under the **Elements tool**, you’ll see that the `Inspect Me!` element is highlighted.
+   In the **DOM Tree** panel under the **Elements tool**, the `Inspect Me!` element is highlighted.
 
    ![The inspected element is highlighted in the DOM Tree.](../media/css-elements-inspect-me.msft.png)
 
@@ -158,7 +158,7 @@ Use the following steps to debug or test the Media Queries you defined in your C
 
 1. To open DevTools, you can right-click in a webpage and then select **Inspect**.
 
-1. Click the **Toggle device emulation** (![Device Emulation icon.](../media/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press `Ctrl`+`Shift`+`M` (`Cmd`+`Shift`+`M` on macOS).
+1. Click the **Toggle device emulation** (![Device Emulation icon.](../media/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press `Ctrl`+`Shift`+`M` (Windows, Linux) or `Cmd`+`Shift`+`M` (macOS).
 
    <!-- todo: update to show new tooltip: -->
 
@@ -174,7 +174,7 @@ Use the following steps to debug or test the Media Queries you defined in your C
 
    ![Selecting a media query from the preview bar.](../media/css-elements-media-queries-select-bar.msft.png)
 
-1. To debug media queries and open the CSS file in the `Sources` editor, right-click a bar segment, and then select `reveal in source code`.
+1. To debug media queries and open the CSS file in the `Sources` editor, right-click a bar segment, and then select **Reveal in source code**:
 
    ![Reveal Media Queries in Sources Editor.](../media/css-elements-media-queries-reveal-in-sources.msft.png)
 
