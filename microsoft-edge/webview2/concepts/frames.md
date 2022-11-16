@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/09/2022
+ms.date: 11/16/2022
 ---
 # Using frames in WebView2 apps
 
@@ -25,10 +25,6 @@ An API is required for WebView2 for frames, because you can't create a WebView2 
 
 <!-- ====================================================================== -->
 ## Subscribe to the FrameCreated event to obtain a frame
-<!-- 
-## Starting work with frames 
-## Starting work with frames by subscribing to the FrameCreated event to obtain a frame
-## Subscribing to the FrameCreated event to obtain a frame -->
 
 To interact frames in your host app, the first step is to subscribe to the `FrameCreated` event so that your host app obtains a frame object.  The `FrameCreated` event is raised whenever a new frame is created.  After your host app has obtained a frame object, use the frame object to monitor changes and interact with this specific frame.
 
@@ -80,7 +76,7 @@ Navigation can potentially happen within a frame.  As a simple use case, an `ifr
 
 The frame itself is navigating.  A webpage navigates to a URL.  Similarly, a frame potentially navigates.
 
-After the frame is created, the frame navigates as driven by your host app.  To monitor what's going on in the main page, events such as `NavigationStarted`, `NavigationCompleted`, and `HistoryChanged` enable you<!--the host app?the frame?--> to navigate back and forth among frames or webpages.  Frames are navigated<!--to--> less often than webpages, but the same navigation style is supported.  The user usually cannot navigate inside a frame, although JavaScript enables that; a frame is usually static regarding navigation.
+After the frame is created, the frame navigates as driven by your host app.  To monitor what's going on in the main page, events such as `NavigationStarted`, `NavigationCompleted`, and `HistoryChanged` enable the host app to navigate back and forth among frames or webpages.  Frames are navigated to a new URL less often than webpages, but the same navigation style is supported.  The user usually cannot navigate inside a frame, although JavaScript enables that; a frame is usually static regarding navigation.
 
 See also:
 * [Standard sequence of events](./navigation-events.md) in _Navigation events for WebView2 apps_.
@@ -142,7 +138,7 @@ The host app subscribes to web messages to receive messages from script within i
 
 The host app sends web messages to script within iframes.
 
-Using native-side APIs from script within a frame, via a host object, is similar to web/native interop page structure as explained in [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/hostobject):
+Using native-side APIs from script within a frame, via a host object, is similar to web/native interop page structure as explained in [Call native-side code from web-side code](../how-to/hostobject.md):
 
 To use host objects within an iframe:
 1. Define the host object and implement `IDispatch`.
@@ -173,7 +169,7 @@ The above method works like the following method:
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo -->
+<!-- TODO -->
 Not implemented yet.
 
 <!-- * [CoreWebView2Frame.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#addhostobjecttoscript) - has an `origins` parameter.
@@ -260,10 +256,11 @@ See also:
 <!-- 
 #### JavaScript API Reference
 
-TODO: link when exists
-JavaScript APIs are currently being documented.  When the documentation is ready, it will be linked to from here.
+TODO: link when exists.
 * `window.chrome.webview.postMessage`
 * `window.chrome.webview.addEventListener('message')`
+
+[PR 2315: WebView2 JavaScript Reference Docs](https://github.com/MicrosoftDocs/edge-developer/pull/2315)
 -->
 
 
@@ -340,7 +337,7 @@ See the latest prerelease APIs.  The following links contain `1.0.1466-prereleas
 * [ICoreWebView2ExperimentalWebResourceRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs)
 
 <!-- 
-todo: update enum link when it changes to a Globals page section/anchor eg:
+TODO: at next SDK release early December 2022, update enum link when it changes to a Globals page section/anchor eg:
 https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.1418.22
 https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1418.22
 -->
@@ -415,7 +412,7 @@ This sample code is condensed from [MainWindow.xaml.cs](https://github.com/Micro
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo -->
+<!-- TODO -->
 In progress.
 
 ##### [Win32/C++](#tab/win32cpp)
@@ -480,7 +477,7 @@ if (webview2_4)
 <!-- ====================================================================== -->
 ## API Reference overview
 
-The following features, listed in [Overview of WebView2 features and APIs](/microsoft-edge/webview2/concepts/overview-features-apis), include frame-related APIs:
+The following features, listed in [Overview of WebView2 features and APIs](./overview-features-apis.md), include frame-related APIs:
 
 * [Host/web object sharing](./overview-features-apis.md#hostweb-object-sharing)
 * [iframes](./overview-features-apis.md#iframes)<!--same link is in h2 "Subscribing to the FrameCreated event" above-->
@@ -494,8 +491,8 @@ The following features, listed in [Overview of WebView2 features and APIs](/micr
 <!-- ====================================================================== -->
 ## See also
 
-* [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/hostobject)
+* [Call native-side code from web-side code](../how-to/hostobject.md)
 * [Navigation events for WebView2 apps](./navigation-events.md) - valid for frames as well as webpages.
 
 **External pages:**
-* [HTML <iframe\> Tag](https://www.w3schools.com/tags/tag_iframe.asp)
+* [HTML <iframe\> Tag](https://www.w3schools.com/tags/tag_iframe.asp)<!-- keep escape -->
