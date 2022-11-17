@@ -15,20 +15,20 @@ WebView2 enables applications to bridge the gap between the web and native sides
 <!--
 ##### [.NET](#tab/dotnet)
 
-* [CoreWebView2.AddHostObjectToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript) - non-frame.
+* [CoreWebView2.AddHostObjectToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
 -->
 
 ##### [Win32](#tab/win32)
 
-* [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript) - non-frame.
+* [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
 
 ##### [.NET in a frame](#tab/dotnetframe)
 
-* [CoreWebView2Frame.AddHostObjectToScript](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.addhostobjecttoscript) - for use in frames.
+* [CoreWebView2Frame.AddHostObjectToScript](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.addhostobjecttoscript)
 
 ##### [Win32 in a frame](#tab/win32frame)
 
-* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins) - for use in frames.
+* [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
 
 ---
 
