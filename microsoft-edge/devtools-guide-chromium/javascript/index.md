@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/14/2022
+ms.date: 11/16/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -54,7 +54,7 @@ DevTools provides several tools for different tasks.  These tasks include changi
 
    ![DevTools open on Elements](../media/javascript-console-empty.msft.png)
 
-1. Select the **Sources** tool on the activity bar. Select the **Page** tab, and then select the JavaScript file, `get-started.js`.
+1. Select the **Sources** tool. Select the **Page** tab, and then select the JavaScript file, `get-started.js`.
 
    ![The Sources tool.](../media/javascript-sources-sections.msft.png)
 
@@ -62,11 +62,11 @@ The **Sources** tool UI has three parts.
 
 ![The 3 parts of the Sources tool UI.](../media/javascript-sources-sections-annotated.msft.png)
 
-1. The **Navigator** pane (the first pane beside the activity bar).  Every file that the webpage requests is listed here.
+1. The **Navigator** pane (in the upper left corner).  Every file that the webpage requests is listed here.
 
-2. The **Editor** pane (the second pane to the right, beside the **Navigator** pane).  After you select a file in the **Navigator** pane, this pane displays the contents of the file.
+2. The **Editor** pane (in the upper right corner).  After you select a file in the **Navigator** pane, this pane displays the contents of the file.
 
-3. The **Debugger** pane (the third pane to the right, beside the **Editor** pane).  This pane provides tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.
+3. The **Debugger** pane (at the bottom).  This pane provides tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.
 
 
 <!-- ====================================================================== -->
@@ -200,7 +200,7 @@ As suspected, `sum` is being evaluated as a string, when it should be a number. 
 
 The **Console** allows you to view `console.log()` output.  You can also use the **Console** to evaluate arbitrary JavaScript statements while the debugger is paused at a code statement.  For debugging, you can use the **Console** to test potential fixes for bugs.
 
-1. If the **Console** tool is closed, press `Esc` to open it.  The **Console** tool opens in the lower pane of the DevTools window.
+1. If the **Console** tool is closed, press `Esc` to open it.  The **Console** tool opens in the top pane of the DevTools window.
 
 1. In the **Console**, type `parseInt(addend1) + parseInt(addend2)`.  The statement the tool is paused on a line of code where `addend1` and `addend2` are in scope.
 
