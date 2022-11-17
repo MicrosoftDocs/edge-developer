@@ -20,8 +20,6 @@ WebView2 supports APIs to interact with iframes.  You can:
 * Communicate between the host app and iframes, sending messages in both directions.
 * Allow the app to ignore the `X-Frame-Options` HTTP response header.
 
-An API is required for WebView2 for frames, because you can't create a WebView2 frame object from the host app.  This API is required, for the app to be able to interact with frames, which are transient.  Without this API, WebView2 wouldn't have access to frames.  For example, `ExecuteScript` requires obtaining the frame object, to interact with the frame.
-
 
 <!-- ====================================================================== -->
 ## Subscribe to the FrameCreated event to obtain a frame
