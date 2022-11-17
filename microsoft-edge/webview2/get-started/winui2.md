@@ -294,7 +294,7 @@ The WebView2 WinUI 2 (UWP) control is in development.  For WebView2 for UWP apps
 
 Depending on the user's OS, downloaded files will be downloaded to different folders:
 *  For Windows 11, the downloaded files will appear in a subfolder with the app package's name in the `Downloads` folder.
-*  For Windows prior to Windows 11, the downloaded files will appear in a subfolder named `WebView2Downloads` within the app package's subfolder in the `Downloads` folder.
+*  For Windows versions prior to Windows 11, the downloaded files will appear in a subfolder named `WebView2Downloads` within the app package's subfolder in the `Downloads` folder.
 
 Saving files via **Save As** is working and is enabled for WebView2 for UWP apps.  The files will be saved in the folder that the user selects.
 
