@@ -190,7 +190,7 @@ The above method works like the following method:
 <!-- ------------------------------ -->
 #### Example code
 
-See [Step 3: Call AddHostObjectToScript to pass the host object to web-side code](../how-to/hostobject.md#step-3-call-addhostobjecttoscript-to-pass-the-host-object-to-web-side-code) in _Call native-side code from web-side code_.
+See [Step 6: Call AddHostObjectToScript to pass the host object to web-side code](../how-to/hostobject.md#step-6-call-addhostobjecttoscript-to-pass-the-host-object-to-web-side-code) in _Call native-side code from web-side code_.
 
 
 See also:

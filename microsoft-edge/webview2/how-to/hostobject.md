@@ -134,29 +134,7 @@ Next, the example defines the `HostObjectSample` coclass to include `IHostObject
 
 
 <!-- ====================================================================== -->
-## Step 4: Implement IDispatch
-
-The host object must implement `IDispatch` so that WebView2 can project the native host object to the app's web-side code.
-
-`IDispatch` allows you to dynamically invoke methods and properties. Normally, calling objects requires static invocations, but you can use JavaScript to dynamically create object calls.  In the Win32 sample app code, [HostObjectSampleImpl.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSampleImpl.cpp) implements `IDispatch`, which means implementing these methods:
-* `GetIDsOfNames`
-* `GetTypeInfo`
-* `GetTypeInfoCount`
-* `Invoke`
-
-Implement `IDispatch` as described in [Type Libraries and the Object Description Language](/previous-versions/windows/desktop/automat/type-libraries-and-the-object-description-language).  For more information about `IDispatch` inheritance and methods, see [IDispatch interface (oaidl.h)](/windows/win32/api/oaidl/nn-oaidl-idispatch). 
-
-If the object you want to add to JavaScript doesn't already implement `IDispatch`, you need to write an `IDispatch` class wrapper for the object that you want to expose.
-
-There might be libraries to do this automatically.  To learn more about the steps that are needed to write an `IDispatch` class wrapper for the object that you want to expose, see [Automation](/previous-versions/windows/desktop/automat/automation-programming-reference).
-    
-1.  Next, save any changes you made in the project.
-
-1.  In Solution Explorer, right-click the **WebView2APISample** (which is the Win32 sample app), and then select **Build**.  This creates a COM type library `.tlb` file.  You need to reference the `.tlb` file from the C++ source code that's shown in the following section.  For more information, see [Type Library](/windows/win32/midl/com-dcom-and-type-libraries#type-library) in _COM, DCOM, and Type Libraries_.
-
-
-<!-- ====================================================================== -->
-## Step 5: Implement the members of the C++ object
+## Step 4: Implement the members of the C++ object
 
 In the Win32 sample app code, [HostObjectSampleImpl.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSampleImpl.cpp) takes the skeleton that's created in the COM IDL file and implements each member of the C++ object.  This C++ (`.cpp`) file *implements* the defined interface (and also implements `IDispatch`).
 
@@ -225,6 +203,28 @@ Next, we examine two specific properties that were defined in the IDL, to show h
     ```
 
 1.  Examine the date property, which we trace throughout this article.
+
+
+<!-- ====================================================================== -->
+## Step 5: Implement IDispatch
+
+The host object must implement `IDispatch` so that WebView2 can project the native host object to the app's web-side code.
+
+`IDispatch` allows you to dynamically invoke methods and properties. Normally, calling objects requires static invocations, but you can use JavaScript to dynamically create object calls.  In the Win32 sample app code, [HostObjectSampleImpl.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSampleImpl.cpp) implements `IDispatch`, which means implementing these methods:
+* `GetIDsOfNames`
+* `GetTypeInfo`
+* `GetTypeInfoCount`
+* `Invoke`
+
+Implement `IDispatch` as described in [Type Libraries and the Object Description Language](/previous-versions/windows/desktop/automat/type-libraries-and-the-object-description-language).  For more information about `IDispatch` inheritance and methods, see [IDispatch interface (oaidl.h)](/windows/win32/api/oaidl/nn-oaidl-idispatch). 
+
+If the object you want to add to JavaScript doesn't already implement `IDispatch`, you need to write an `IDispatch` class wrapper for the object that you want to expose.
+
+There might be libraries to do this automatically.  To learn more about the steps that are needed to write an `IDispatch` class wrapper for the object that you want to expose, see [Automation](/previous-versions/windows/desktop/automat/automation-programming-reference).
+    
+1.  Next, save any changes you made in the project.
+
+1.  In Solution Explorer, right-click the **WebView2APISample** (which is the Win32 sample app), and then select **Build**.  This creates a COM type library `.tlb` file.  You need to reference the `.tlb` file from the C++ source code.  For more information, see [Type Library](/windows/win32/midl/com-dcom-and-type-libraries#type-library) in _COM, DCOM, and Type Libraries_.
 
 
 <!-- ====================================================================== -->
@@ -397,7 +397,7 @@ Now the app's web-side code can access the native-side APIs which are exposed by
 
 The web-side code of the Win32 sample app is now able to access the properties and methods of the native host object, to access the native APIs.  We'll use the sample app's webpage controls, in the **Scenario** > **Host Objects** webpage of the app, to demonstrate this.
 
-1.  In Microsoft Visual Studio, select **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1.  In Microsoft Visual Studio, select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
 1.  In Solution Explorer, open **WebView2APISample** > [ScenarioAddHostObject.html](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/assets/ScenarioAddHostObject.html).  We'll compare this file to the corresponding webpage in the running Win32 sample app.
 
