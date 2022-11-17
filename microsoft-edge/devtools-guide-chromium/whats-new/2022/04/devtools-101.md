@@ -34,7 +34,7 @@ The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visu
 
 ![The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visual Studio Code.](devtools-101-images/console-tool-vsc-2.png)
 
-For more information, see [Microsoft Edge DevTools extension for Visual Studio Code > Console integration](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#console-integration).
+For more information, see [Console integration](../../../../visual-studio-code/microsoft-edge-devtools-extension/console-integration.md).
 
 
 <!-- ====================================================================== -->
