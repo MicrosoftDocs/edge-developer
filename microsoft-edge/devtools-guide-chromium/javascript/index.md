@@ -30,9 +30,9 @@ This article teaches you the basic workflow for debugging any JavaScript issue u
 
 The first step in debugging is to find a sequence of actions that consistently reproduce a bug.
 
-1. Open Microsoft Edge in InPrivate Mode. InPrivate Mode ensures that Microsoft Edge runs in a clean state. For more information, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
+1. Open Microsoft Edge in InPrivate Mode. InPrivate Mode ensures that Microsoft Edge runs in a clean state. For more information, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
 
-1. Open the demo webpage [Get Started Debugging JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new window or tab.  To open the webpage, right-click the linK and select "Open link in new tab" or "Open link in new Window" on the popup window.  Alternatively you can press and hold `Ctrl` (for Windows, Linux) or `Command` (for macOS), and then click the link.
+1. Open the demo webpage [Get Started Debugging JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new window or tab.  To open the webpage, right-click the link and then select "Open link in new tab" or "Open link in new window".  Or, press and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then click the link.
 
    <!-- You can view the source files for the Debugging demo at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
@@ -177,9 +177,9 @@ If you pause on a line of code, the **Scope** pane displays the local and global
 
 ![The Scope pane.](../media/javascript-sources-breakpoint-paused-scope.msft.png)
 
-#### Method 2: Watch Expressions
+#### Method 2: Watch expressions
 
-The **Watch** pane allows you to monitor the values of variables (such as `sum`) or expressions (such as `typeof sum`).  You can store any valid JavaScript expression in a Watch Expression.
+The **Watch** pane allows you to monitor the values of variables (such as `sum`) or expressions (such as `typeof sum`).  You can store any valid JavaScript expression in a watch expression.
 
 1. Select the **Watch** tab.
 
@@ -187,10 +187,10 @@ The **Watch** pane allows you to monitor the values of variables (such as `sum`)
 
 1. Type `typeof sum`.
 
-1. Press `Enter`.  DevTools displays `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.
+1. Press `Enter`.  DevTools displays `typeof sum: "string"`.  The value to the right of the colon is the result of your watch expression.
 
 > [!NOTE]
-> In the following screenshot, the `typeof sum` Watch Expression is displayed in the **Watch** pane.  If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.
+> In the following screenshot, the watch expression `typeof sum` is displayed in the **Watch** pane.  If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.
 
 ![The Watch pane.](../media/javascript-sources-breakpoint-paused-watch.msft.png)
 
@@ -220,7 +220,7 @@ We've identified a possible fix for the bug.  Next, edit the JavaScript code dir
 
 1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save your change.
 
-1. Click **Deactivate breakpoints** (![Deactivate breakpoints.](../media/deactivate-breakpoints-button-icon.msft.png)).  It changes blue to indicate the option is active.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
+1. Click **Deactivate breakpoints** (![Deactivate breakpoints.](../media/deactivate-breakpoints-button-icon.msft.png)).  The breakpoint's icon changes to gray to indicate that the breakpoint is inactive.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
 
    ![Result of troubleshooting and fixing bug](../media/javascript-bug-fixed.msft.png)
 
