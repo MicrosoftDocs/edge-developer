@@ -269,6 +269,8 @@ See also:
 
 <!-- TODO: not found, omit?
 * [CoreWebView2CookieList Class]()
+GetCookies returns Vector of CoreWebView2Cookie:
+https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2cookiemanager#getcookiesasync
 -->
 
 ##### [Win32/C++](#tab/win32cpp)
