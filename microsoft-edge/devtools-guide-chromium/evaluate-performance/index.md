@@ -161,7 +161,7 @@ After you verified that the animation isn't performing well, the next step is to
 
    After clicking an event, use the arrow keys to select the events next to it.
 
-1. Under the **app.update** event, there's a bunch of purple events.  Each of those also displays a red triangle.
+1. Under the **app.update** event, there's a bunch of purple events, and they each have a red triangle.
 
 1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  Indeed, there is a warning about forced reflows (another word for _layout_).
 
