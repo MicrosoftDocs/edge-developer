@@ -143,7 +143,7 @@ After you verified that the animation isn't performing well, the next step is to
 
    ![The Main section.](../media/evaluate-performance-performance-main.msft.png)
 
-1. There are a lot of data in the recording.  To zoom into a portion of the recording, click, hold, and drag your cursor over the **Overview**, which is the section that includes the **CPU** and **NET** charts.  The **Main** section and **Summary** panel only display information for the selected portion of the recording.
+1. There is a lot of data in the recording.  To zoom into a portion of the recording, click and drag in the **Overview** area toward the top of the **Performance** tool.  The **Overview** area includes the **CPU** and **NET** charts (indicated on the right).  The **Main** section and **Summary** panel only display information for the selected portion of the recording.
 
    ![Zoom into a section.](../media/evaluate-performance-performance-main-zoomed.msft.png)
 
