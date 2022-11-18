@@ -147,7 +147,9 @@ After you verified that the animation isn't performing well, the next step is to
 
    ![Zoom into a section.](../media/evaluate-performance-performance-main-zoomed.msft.png)
 
-   Another way to change the selected area is to put focus on the **Main** section, click the background or an event, and press `W` to zoom in, `A` to zoom out, `S` to move selection left, or `D` to move selection right.
+   Another way to change the selected area is to put focus on the **Main** section, click the background or an event, and then press:
+   * `W` to zoom in, `S` to zoom out.
+   * `A` to move selection left, `D` to move selection right.
 
 1. Select a **Animation Frame Fired** event.  When a red triangle is displayed at the top right of an event, it's a warning that there may be an issue related to the event.
 
