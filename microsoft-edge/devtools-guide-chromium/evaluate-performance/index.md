@@ -155,7 +155,7 @@ After you measured and verified that the animation isn't performing well, the ne
 
    The **Animation Frame Fired** event occurs whenever a [requestAnimationFrame() callback](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame) is run.
 
-1. Click the **Animation Frame Fired** event.  The **Summary** panel now shows you information about that event.  Note the **Reveal** link.  After you click it, DevTools highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:95** link.  After you click it, the relevant line in the source code is displayed.
+1. Click the **Animation Frame Fired** event.  The **Summary** panel now shows you information about that event.  Note the **Reveal** link.  After you click it, DevTools highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:96** link.  After you click it, the relevant line in the source code is displayed.
 
    ![More information about the Animation Frame Fired event.](../media/evaluate-performance-performance-animation-frame-fired.msft.png)
 
@@ -165,7 +165,7 @@ After you measured and verified that the animation isn't performing well, the ne
 
 1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  Indeed, there is a warning about forced reflows (another word for _layout_).
 
-1. In the **Summary** panel, click the **app.js:71** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.
+1. In the **Summary** panel, click the **app.js:72** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.
 
    ![The line of code that caused the forced layout.](../media/evaluate-performance-sources-app-update.msft.png)
 
