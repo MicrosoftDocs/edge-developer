@@ -128,7 +128,7 @@ Another handy tool is the **Frame Rendering Stats** overlay, which provides real
 
    ![The FPS overlay.](../media/evaluate-performance-fps-meter-overlay.msft.png)
 
-1. Turn off **Frame Rendering Stats** by deselecting the checkbox.
+1. When you are done reviewing the FPS data, clear the **Frame Rendering Stats** checkbox to hide the overlay.
 
 
 ### Find the bottleneck
