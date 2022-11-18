@@ -30,14 +30,14 @@ An overview of the changes involved, as described in [Overview of Manifest V3 - 
 
 To help you plan, consider the following schedule for Microsoft Partner Center and Microsoft Edge changes.
 
-We are currently in the process of updating our MV3 migration timelines.
+**We are currently in the process of updating our MV3 migration timelines.**
 
-We are aware that Chrome has revised the timelines for Manifest V2 sunset and as of now we will continue to follow Chromium's timelines. We continue to analyze the concerns raised by the extension developers and explore the optimal path for Microsoft Edge Add-ons ecosystem. We will independently decide on MV3 migration timelines for Microsoft Edge Addons and share an update here. Meanwhile, please refer to the [Chromium timelines](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/) for planning your extension's migration.
+We are aware that Chromium has revised the timelines for Manifest V2 sunset. We will independently decide on MV3 migration timelines for Microsoft Edge Add-ons and share an update here. We continue to analyze the concerns raised by the extension developers and explore the optimal path for Microsoft Edge Add-ons ecosystem. Meanwhile, please refer to the [Chromium timelines](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/) for planning your extension's migration.
 
 
 | Timeframe	| Microsoft Partner Center changes | Microsoft Edge changes |
 |--- |--- |--- |
-| July 2022	| Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
+| July 2022 (already in effect)	| Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
 | TBD - See note above | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. | Microsoft Edge stops running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge using Enterprise policies. |
 | TBD - See note above | No change. | Manifest V2 extensions will no longer function in Microsoft Edge even with the use of Enterprise policy. |
 
