@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/11/2022
+ms.date: 11/18/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,7 +36,7 @@ See also [Optimize website speed using Lighthouse](../speed/get-started.md).
 
 In the following tutorial, you open DevTools on a "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
 
-1. Open Microsoft Edge in **InPrivate Mode**.  InPrivate Mode ensures that Microsoft Edge runs in a clean state.  For example, if you have a lot of extensions installed, the extensions may create noise in your performance measurements.
+1. Open Microsoft Edge in **InPrivate Mode**.  InPrivate Mode ensures that Microsoft Edge runs in a clean state.  For example, if you have numerous extensions installed, the extensions may create noise in your performance measurements.
 
    <!--TODO: replace section when updated for Chromium-based Edge  -->
 
@@ -61,11 +61,11 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. In DevTools, open the **Performance** tool.
 
-1. Confirm that checkbox next to **Screenshots** is selected. If it isn't then select it.
+1. Confirm that checkbox next to **Screenshots** is selected. If it isn't, then select it.
 
 1. Click **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)).  DevTools reveals settings related to how it captures performance metrics.
 
-1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it is 4 times slower than usual.
+1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.
 
    ![CPU throttle.](../media/evaluate-performance-performance-capture-settings.msft.png)
 
@@ -80,14 +80,14 @@ It's hard to create a runtime performance demo that works consistently for all r
 
 1. Click **Optimize**.  The blue icons should move faster and more smoothly.
 
-1. To better display a difference between the optimized and un-optimized versions, click the **Subtract 10** button a few times and try again.  If you add too many blue icons, you might max out the CPU, and then you might not observe a major difference in the results for the two versions.
+1. To better display a difference between the optimized and unoptimized versions, click the **Subtract 10** button a few times and try again.  If you add too many blue icons, you could max out the CPU, and then you might not observe a major difference in the results for the two versions.
 
 1. Click **Un-Optimize**.  The blue icons move slower and with more sluggishness again.
 
 
 ### Record runtime performance
 
-When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the un-optimized version.
+When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the unoptimized version.
 
 1. In DevTools, click **Record** (![Record.](../media/record-icon.msft.png)).  DevTools captures performance metrics as the page runs.
 
@@ -99,7 +99,7 @@ When you ran the optimized version of the page, the blue icons move faster.  Why
 
    ![The results of the profile.](../media/evaluate-performance-performance-capture-results.msft.png)
 
-That's an overwhelming amount of data, but it'll all make more sense shortly.
+These performance results show an overwhelming amount of data, but it will all make more sense shortly.
 
 
 <!-- ====================================================================== -->
@@ -163,7 +163,7 @@ After you measured and verified that the animation isn't performing well, the ne
 
 1. Under the **app.update** event, there's a bunch of purple events.  If each purple event was wider, it looks as though each one may have a red triangle on it.
 
-1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  Indeed, there is a warning about forced reflows (another word for _layout_).
+1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  There is a warning about forced reflows (another word for _layout_).
 
 1. In the **Summary** panel, click the **app.js:72** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.
 
@@ -174,7 +174,7 @@ After you measured and verified that the animation isn't performing well, the ne
    > To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts).
    -->
 
-That was a lot to learn.  You now have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.
+This article gives you a lot to learn. But now you have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.
 
 
 ### Bonus: Analyze the optimized version
