@@ -69,7 +69,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
    ![CPU throttle.](../media/evaluate-performance-performance-capture-settings.msft.png)
 
-   If you want to ensure that pages work well on low-end mobile devices, set CPU Throttling to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
+   If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
 
 
 ### Set up the demo
