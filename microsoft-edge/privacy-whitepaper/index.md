@@ -747,38 +747,40 @@ To enable diagnostic data collection, go to `edge://settings/privacy`. Turn on t
 <!-- ====================================================================== -->
 ## Writing assistance
 
-To help you write faster and with fewer mistakes on the web, Microsoft Edge provides writing assistance tools, including enhanced spelling and grammar checking and text prediction. 
+To help you write faster and with fewer mistakes on the web, Microsoft Edge provides writing assistance tools, including spell checking, grammar checking, and text prediction. 
 
-By default, Edge provides spelling and grammar checking using **Microsoft Editor**. When using **Microsoft Editor**, Microsoft Edge sends your typed text and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to detect spelling and grammar errors in your text. All your typed text that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time.   
+By default, Edge provides spelling and grammar checking using **Microsoft Editor**. When using **Microsoft Editor**, Microsoft Edge sends your typed text and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to detect spelling and grammar errors in your text. All your typed text that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time.
+
+If you select **Basic** instead of **Microsoft Editor**, Microsoft Edge will perform only local spellchecking on the device, and no data will be sent to the cloud for spellchecking services.
 
 To use **Basic** spelling and grammar checking: 
-1. Go to `edge://settings/languages`    
-1. Select the **Basic** setting in **Use writing assitance**
-
-If you select **Basic**, the service will perform only local spellchecking on the device, and no data will be sent to the cloud for spellchecking services. 
+1. Go to `edge://settings/languages`.
+1. In the **Use writing assistance** section, select **Basic**.
 
 To turn off all spelling and grammar capabilities:
-1. Go to `edge://settings/languages`
-1. Turn off the **Use writing assistance** toggle 
+1. Go to `edge://settings/languages`.
+1. Turn off the **Use writing assistance** toggle.
 
 #### Languages
+
 When you add a new language to Microsoft Edge, the browser downloads the dictionary for the new language to the device over HTTPS. The dictionary is used for the basic spellcheck service or for languages that aren't supported by Microsoft Editor spelling and grammar checking. Deleting the language from your Microsoft Edge settings deletes the dictionary from the device. 
  
 #### Text prediction 
 
-Microsoft Edge will automatically provide word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press Tab or the Right arrow to accept them.  
+Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press `Tab` or the `Right arrow` key to accept them.
 
-To disable text predictions in Microsoft Edge: 
+To turn off text predictions in Microsoft Edge: 
 
-1. Go to `edge://settings/languages`
+1. Go to `edge://settings/languages`.
 
-2. Turn off the **Use text prediction** toggle 
+2. Turn off the **Use text prediction** toggle.
 
-If the **Use text prediction** toggle is turned on, Microsoft Edge sends the text in the text box, your top language from the browser setting, and a pseudonymous text box identifier to a Microsoft cloud service over a secure HTTPS connection. The Microsoft cloud service processes the text to generate a relevant text prediction. Typed characters and text predictions are cached for up to 30 days for service quality and performance improvement purposes only.  
+If the **Use text prediction** toggle is turned on, Microsoft Edge sends the text in the text box, your top language from the browser setting, and a pseudonymous text box identifier to a Microsoft cloud service over a secure HTTPS connection. The Microsoft cloud service processes the text to generate a relevant text prediction. Typed characters and text predictions are cached for up to 30 days, for service quality and performance improvement purposes only.  
 
-If you are browsing while using **InPrivate** or **Guest** mode, text predictions are turned off. If your device is managed with group policies set by your organization, the feature may be disabled depending on the administrator’s policies of your organization.  
+If you are browsing while using **InPrivate** or **Guest** mode, text prediction is turned off. If your device is managed by using group policies set by your organization, the feature may be disabled depending on the administrator's policies of your organization.  
 
-Text Prediction is only available in select languages and regions. 
+Text prediction is only available in select languages and regions.
+
 <!-- ====================================================================== -->
 ## Thank you!
 
