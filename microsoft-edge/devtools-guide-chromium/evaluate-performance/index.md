@@ -151,7 +151,7 @@ After you verified that the animation isn't performing well, the next step is to
    * `W` to zoom in, `S` to zoom out.
    * `A` to move selection left, `D` to move selection right.
 
-1. Select a **Animation Frame Fired** event.  When a red triangle is displayed at the top right of an event, it's a warning that there may be an issue related to the event.
+1. Select an **Animation Frame Fired** event.  When a red triangle is displayed at the top right of an event, it's a warning that there might be an issue related to the event.
 
    The **Animation Frame Fired** event occurs whenever a [requestAnimationFrame() callback](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame) is run.
 
