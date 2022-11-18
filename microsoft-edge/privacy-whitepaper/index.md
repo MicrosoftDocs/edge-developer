@@ -767,7 +767,7 @@ When you add a new language to Microsoft Edge, the browser downloads the diction
  
 #### Text prediction 
 
-Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press `Tab` or the `Right arrow` key to accept them.
+Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press `Tab` or the `Right arrow` key to accept them. Password fields will not offer text predictions.
 
 To turn off text predictions in Microsoft Edge: 
 
@@ -775,9 +775,11 @@ To turn off text predictions in Microsoft Edge:
 
 2. Turn off the **Use text prediction** toggle.
 
-If the **Use text prediction** toggle is turned on, Microsoft Edge sends the text in the text box, your top language from the browser setting, and a pseudonymous text box identifier to a Microsoft cloud service over a secure HTTPS connection. The Microsoft cloud service processes the text to generate a relevant text prediction. Typed characters and text predictions are cached for up to 30 days, for service quality and performance improvement purposes only.  
+If the **Use text prediction** toggle is turned on, Microsoft Edge sends the text in the text box, your top language from the browser setting, and a text box identifier to a Microsoft cloud service over a secure HTTPS connection. The text box identifier is not associated with your account. The Microsoft cloud service processes the text to generate a relevant text prediction. Typed characters and text predictions are cached for up to 30 days, for service quality and performance improvement purposes only.  
 
-If you are browsing while using **InPrivate** or **Guest** mode, text prediction is turned off. If your device is managed by using group policies set by your organization, the feature may be disabled depending on the administrator's policies of your organization.  
+If you are browsing while using **InPrivate** or **Guest** mode, text prediction is turned off. Text prediction does not run when you are editing a password field.
+
+If your device is managed by using group policies set by your organization, the feature may be disabled depending on the administrator's policies of your organization.  
 
 Text prediction is only available in select languages and regions.
 
