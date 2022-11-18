@@ -63,7 +63,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. Select the checkbox next to **Screenshots**.
 
-1. Click **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)).  DevTools reveals settings related to how it captures performance metrics.
+1. Click **Capture settings** (![Capture settings.](../media/capture-settings-icon.msft.png)).  DevTools reveals settings related to how it captures performance metrics.
 
 1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it is 4 times slower than usual.
 
@@ -82,7 +82,7 @@ The following section lets you customize the demo to make sure that your experie
 
 1. To better display a difference between the optimized and un-optimized versions, click the **Subtract 10** button a few times and try again.  If you add too many blue icons, you might max out the CPU, and then you might not observe a major difference in the results for the two versions.
 
-1. Click **Un-Optimize**.  The blue icons should move slower and with more sluggishness again.
+1. Click **Un-Optimize**.  The blue icons move slower and with more sluggishness again.
 
 
 ### Record runtime performance
