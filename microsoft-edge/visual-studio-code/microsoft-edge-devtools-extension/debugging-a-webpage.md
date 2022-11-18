@@ -62,7 +62,7 @@ To start the Visual Studio Code debugger along with DevTools, by using the usual
 
 1. Open a new Visual Studio Code window.  No folder (workspace) is open, and the **DevTools** tabs aren't open.
 
-1. Open a folder (workspace).  For example, select **File** > **Open Recent** > `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do`.  The **DevTools** tabs aren't open.
+1. Open a folder (workspace).  For example, select **File** > **Open Recent** > `C:\Users\username\Documents\GitHub\Demos\demo-to-do`.  The **DevTools** tabs aren't open.
 
 1. Open an `.html` file.
 
