@@ -246,7 +246,7 @@ To set a logpoint:
 
 1. Select **Add Logpoint**. A dialog is displayed underneath the line of code.
 
-1. Press Enter to activate the logpoint. A red diamond (or more recently, an orange icon) appears on top of the line number column:
+1. Enter a message or a JS expression that will get evaluated when the logpoint is hit.  Press 'Enter' to activate the logpoint. A red diamond (or more recently, an orange icon) appears on top of the line number column:
 
 For more information, see [Log messages in the Console tool](/microsoft-edge/devtools-guide-chromium/console/console-log).
 
