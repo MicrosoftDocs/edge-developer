@@ -52,6 +52,7 @@ In the following tutorial, you open DevTools on a "Sluggish Animation" demo page
 
    ![The demo on the left, and DevTools on the right](../media/evaluate-performance-get-started-side-by-side.msft.png)
 
+
 For the rest of the following screenshots, DevTools is [undocked to a separate window](../customize/placement.md), to better focus on the contents.
 
 
@@ -63,18 +64,18 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. Select the **Screenshots** checkbox.
 
-1. Click **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)).  DevTools reveals settings related to how it captures performance metrics.
+1. Click **Capture settings** (![Capture settings.](../media/capture-settings-icon.msft.png)).  DevTools reveals settings related to how it captures performance metrics.
 
 1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.
 
    ![CPU throttle.](../media/evaluate-performance-performance-capture-settings.msft.png)
 
-   When testing other pages; if you want to ensure that each page works well on low-end mobile devices, set CPU Throttling to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
+   If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
 
 
 ### Set up the demo
 
-It's hard to create a runtime performance demo that works consistently for all readers of the website.  The following section lets you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions, regardless of your particular setup.
+The following section lets you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions.
 
 1. Click the **Add 10** button until the blue icons move noticeably slower than before.  On a high-end machine, you can click it about 20 times.
 
@@ -99,7 +100,9 @@ When you ran the optimized version of the page, the blue icons move faster.  Why
 
    ![The results of the profile.](../media/evaluate-performance-performance-capture-results.msft.png)
 
+
 These performance results show an overwhelming amount of data, but it will all make more sense shortly.
+
 
 
 <!-- ====================================================================== -->
@@ -107,7 +110,7 @@ These performance results show an overwhelming amount of data, but it will all m
 
 Once you have a recording of the page's performance, you can assess the page's performance and find the cause of any performance issues.
 
-1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that you should find ways to do less work.
+1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
 
    ![The CPU chart and Summary panel.](../media/evaluate-performance-performance-cpu-chart.msft.png)
 
@@ -115,27 +118,26 @@ Once you have a recording of the page's performance, you can assess the page's p
 
    ![Hover on a frame.](../media/evaluate-performance-performance-frame-hover.msft.png)
 
-The display indicates that the webpage isn't performing well.  In real scenarios, it may not be so clear whether the page is performing well, so having all of the tools to make measurements comes in handy.
 
 
-#### Bonus: Open the FPS meter
+#### Bonus: Open the Frame Rendering Stats overlay
 
-Another handy tool is the FPS meter, which provides real-time estimates for FPS as the page runs.
+Another handy tool is the **Frame Rendering Stats** overlay, which provides real-time estimates for FPS as the page runs. The **Frame Rendering Stats** overlay is not required for this tutorial but may provide helpful insight.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. In DevTools, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
 1. Start typing `Rendering` in the **Command Menu** and click **Show Rendering**.
 
-1. In the **Rendering** tool, turn on **FPS Meter**.  A new overlay appears in the top-right of your viewport.
+1. In the **Rendering** tool, turn on **Frame Rendering Stats**.  A new overlay appears in the top-left of your webpage.
 
-   ![The FPS meter.](../media/evaluate-performance-fps-meter-overlay.msft.png)
+   ![The FPS overlay.](../media/evaluate-performance-fps-meter-overlay.msft.png)
 
-1. Turn off the **FPS Meter** and press `Escape` to close the **Rendering** tool.  You aren't using **FPS Meter** in this tutorial.
+1. When you are done reviewing the FPS data, clear the **Frame Rendering Stats** checkbox to hide the overlay.
 
 
 ### Find the bottleneck
 
-After you measured and verified that the animation isn't performing well, the next step is to answer the question "why?".
+After you verified that the animation isn't performing well, the next step is to answer the question "why?"
 
 1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
 
@@ -145,13 +147,15 @@ After you measured and verified that the animation isn't performing well, the ne
 
    ![The Main section.](../media/evaluate-performance-performance-main.msft.png)
 
-1. There's a lot of data in the recording.  To Zoom into a single event, click, hold, and drag your cursor over the **Overview**, which is the section that includes the **FPS**, **CPU**, and **NET** charts.  The **Main** section and **Summary** panel only display information for the selected portion of the recording.
+1. There is a lot of data in the recording.  To zoom into a portion of the recording, click and drag in the **Overview** area toward the top of the **Performance** tool.  The **Overview** area includes the **CPU** and **NET** charts (indicated on the right).  The **Main** section and **Summary** panel only display information for the selected portion of the recording.
 
-   ![Zoom into an event.](../media/evaluate-performance-performance-main-zoomed.msft.png)
+   ![Zoom into a section.](../media/evaluate-performance-performance-main-zoomed.msft.png)
 
-   Another way to zoom is to put focus on the **Main** section, click the background or an event, and press `W`, `A`, `S`, or `D`.
+   Another way to change the selected area is to put focus on the **Main** section, click the background or an event, and then press:
+   * `W` to zoom in, `S` to zoom out.
+   * `A` to move selection left, `D` to move selection right.
 
-1. Focus on the red triangle in the top-right of the **Animation Frame Fired** event.  Whenever a red triangle is displayed, it's a warning that there may be an issue related to the event.
+1. Select an **Animation Frame Fired** event.  When a red triangle is displayed at the top right of an event, it's a warning that there might be an issue related to the event.
 
    The **Animation Frame Fired** event occurs whenever a [requestAnimationFrame() callback](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame) is run.
 
@@ -161,7 +165,7 @@ After you measured and verified that the animation isn't performing well, the ne
 
    After clicking an event, use the arrow keys to select the events next to it.
 
-1. Under the **app.update** event, there's a bunch of purple events.  If each purple event was wider, it looks as though each one may have a red triangle on it.
+1. Under the **app.update** event, there's a bunch of purple events, and they each have a red triangle.
 
 1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  There is a warning about forced reflows (another word for _layout_).
 
@@ -169,15 +173,16 @@ After you measured and verified that the animation isn't performing well, the ne
 
    ![The line of code that caused the forced layout.](../media/evaluate-performance-sources-app-update.msft.png)
 
-   The problem with the code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
+   The problem with the code is that in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
    <!--
    > To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts).
    -->
 
+
 This article gives you a lot to learn. But now you have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.
 
 
-### Bonus: Analyze the optimized version
+### Analyze the optimized version
 
 Using the workflows and tools that you just learned, click **Optimize** on the demo to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
@@ -191,7 +196,7 @@ Even the optimized version isn't great, because it manipulates the `top` propert
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
 To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rail/). -->
 
-To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, press `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS), or [tweet the DevTools team](https://twitter.com/intent/tweet?text=@EdgeDevTools).  Include screenshots or links to reproducible pages, if possible.
+To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, press `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS), or [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).  Include screenshots or links to reproducible pages, if possible.
 
 ![The **Feedback** icon in the Microsoft Edge DevTools](../media/evaluate-performance-feedback-icon.msft.png)
 
