@@ -320,7 +320,7 @@ To instead add the rule in an existing stylesheet:
 
 ### Add a style rule to a specific location
 
-By default, adding a style rule by clicking on **New Style Rule** inserts the rule beneath the **element.style** rule.
+By default, adding a style rule by clicking on **New Style Rule** inserts the new rule beneath the **element.style** rule in the `inspector-stylesheet` stylesheet.
 
 To add a style rule in a specific location of the **Styles** panel instead:
 
