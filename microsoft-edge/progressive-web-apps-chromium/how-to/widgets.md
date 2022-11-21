@@ -30,7 +30,7 @@ Widgets are experimentally supported starting with Microsoft Edge 108.
 
 To enable widget support in Microsoft Edge for your website:
 
-1. Register for a trial as described in [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
+1. Enroll your site in the [Web App Widgets](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-widgets/registration/) origin trial. To learn more about origin trials, see [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
 
 1. In Microsoft Edge, go to `edge://flags`.
 
