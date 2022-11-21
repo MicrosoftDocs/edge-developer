@@ -36,7 +36,7 @@ See also [Optimize website speed using Lighthouse](../speed/get-started.md).
 
 In the following tutorial, you open DevTools on a "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
 
-1. Open Microsoft Edge in **InPrivate Mode**.  InPrivate Mode ensures that Microsoft Edge runs in a clean state.  For example, if you have numerous extensions installed, the extensions may create noise in your performance measurements.
+1. Open Microsoft Edge in **InPrivate Mode**.  InPrivate Mode ensures that Microsoft Edge runs in a clean state.  For example, if you have many extensions installed, the extensions may create noise in your performance measurements.
 
    <!--TODO: replace section when updated for Chromium-based Edge  -->
 
@@ -61,7 +61,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. In DevTools, open the **Performance** tool.
 
-1. Confirm that checkbox next to **Screenshots** is selected. If it isn't, then select it.
+1. Select the **Screenshots** checkbox.
 
 1. Click **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)).  DevTools reveals settings related to how it captures performance metrics.
 
@@ -80,14 +80,14 @@ It's hard to create a runtime performance demo that works consistently for all r
 
 1. Click **Optimize**.  The blue icons should move faster and more smoothly.
 
-1. To better display a difference between the optimized and unoptimized versions, click the **Subtract 10** button a few times and try again.  If you add too many blue icons, you could max out the CPU, and then you might not observe a major difference in the results for the two versions.
+1. To better display a difference between the optimized and non-optimized versions, click the **Subtract 10** button a few times and try again.  If you add too many blue icons, you could max out the CPU, and then you might not observe a major difference in the results for the two versions.
 
 1. Click **Un-Optimize**.  The blue icons move slower and with more sluggishness again.
 
 
 ### Record runtime performance
 
-When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the unoptimized version.
+When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the non-optimized version.
 
 1. In DevTools, click **Record** (![Record.](../media/record-icon.msft.png)).  DevTools captures performance metrics as the page runs.
 
