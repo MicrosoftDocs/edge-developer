@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 02/14/2022
+ms.date: 11/12/2022
 ---
 # Web platform overview
 
@@ -25,7 +25,7 @@ These aspects of developing for the web platform are described below.
 <!-- ====================================================================== -->
 ## Site compatibility-impacting changes coming to Microsoft Edge
 
-This article lists differences between the schedule of changes for Microsoft Edge versus the Chromium project, and high-impact changes which the Microsoft Edge team is tracking especially closely.
+This article defines lists the schedule of changes for Microsoft Edge and the Chromium project.  It also highlights any differences and high-impact changes which the Microsoft Edge team is tracking especially closely.
 
 The web platform is a collection of technologies used for building webpages, including HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, changes may affect the functionality of existing webpages.
 
