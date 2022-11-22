@@ -240,9 +240,9 @@ To set a logpoint:
 
 1. Select the Sources tool.
 
-1. Open the file that contains the line of code you want to insert a logpoint.
+1. Open the file that contains the line of code where you want to insert a logpoint.
 
-1. Right-click on the left of the line of code on the line number column.
+1. Right-click on the left of the line of code, in the line number column.
 
 1. Select **Add Logpoint**. A dialog is displayed underneath the line of code.
 
