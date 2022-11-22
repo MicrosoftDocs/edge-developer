@@ -288,11 +288,6 @@ Next, learn about navigation events, which are essential for WebView2 apps.  The
 
 The WebView2 WinUI 2 (UWP) control is in development.  The following features haven't been implemented, or are disabled due to pending work:
 
-*  Downloads.
-   *  Downloading files is only available in preview via the Edge Dev channel until Edge 104; moreover, it is disabled by default. To enable, please use the command line switch `edge-webview-optional-enable-uwp-regular-downloads`. There are a couple of known limitations to the current downloads behavior for WebView2 in UWP:
-        * The downloads hub is currently disabled.
-        * Depending on the user's OS, downloaded files will be downloaded to different folders. For Windows 11, the downloaded files will appear in a subfolder with the app package's name in the Downloads folder. For OS's below Windows 11, the downloaded files will appear in a subfolder named WebView2Downloads within this app package's subfolder in the Downloads folder.
-        * Additionally, saving files via Save As is functional and enabled for UWP WebView2. The files will be saved in the respective folder the user selects.
 *  Autofill UI.
 *  Print to PDF.
 *  Default printing is disabled, however developers may work around this by using CapturePreviewAsync (though this only captures the current viewport).
@@ -312,6 +307,12 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 * `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
 
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) is initially called.
+
+#### Download limitations
+   *  Downloading files is availble with a few limitations:
+        * Opening files and folders from the Downloads Hub is disabled. Clicking on the file or folder icon will not open the respective file/folder.
+        * If the host does not change the `ResultFilePath` of the downloaded file, the downloaded files will download to a subfolder with the app package's name in the Downloads folder.
+        * If the host changes the `ResultFilePath` of the downloaded file, the file will only be downloaded if the app has access to that file path by default.
 
 #### Xbox, HoloLens, and XAML limitations
 
