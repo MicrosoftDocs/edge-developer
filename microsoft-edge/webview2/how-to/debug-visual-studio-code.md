@@ -11,16 +11,17 @@ ms.date: 02/11/2022
 # Debug WebView2 apps with Visual Studio Code
 
 Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!-- Make sure you're using Visual Studio Code version [insert build here] or later. -->
+Visual Studio Code has a built-in [debugger](https://code.visualstudio.com/docs/nodejs/browser-debugging) for browser debugging.
 
 
 <!-- ====================================================================== -->
 ## Create a launch.json file
 
-To debug your code, your project is required to have a `launch.json` file.  If your project doesn't have a `launch.json` file, create a new `launch.json` file and paste the following code into it:
+To debug your code, your project is required to have a `launch.json` file.  There are two request types, `launch` and `attach`. The following code demonstrates launching the app from VSCode. To do this, the app must have been built previously. If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project and paste the following code into it:
 
 ```json
 "name": "Hello debug world",
-"type": "pwa-msedge",
+"type": "msedge",
 "port": 9222, // The port value is optional, and the default value is 9222.
 "request": "launch",
 "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
@@ -51,7 +52,7 @@ Visual Studio Code source path mapping now requires an URL, so your app now rece
 
 1. Click **Start Debugging**, which is the green triangle next to the launch configuration dropdown.
 
-   ![The Run tab in Visual Studio Code.](./media/run-vs.png)
+   ![The Run tab in Visual Studio Code.](./media/run-vscode.png)
 
 1. To view the debug output and errors, open **Debug Console**.
 
@@ -97,7 +98,7 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 
 ```json
 "name": "Hello debugging world",
-"type": "pwa-msedge",
+"type": "msedge",
 "port": 9222,
 "request": "attach",
 "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
@@ -107,7 +108,7 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "useWebView": true
 ```
 
-Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger.
+Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger. You will also need to add a new REGKEY `*=--remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port.
 
 
 <!-- ====================================================================== -->
@@ -119,7 +120,7 @@ To enable debug tracing, add the `trace` parameter to `launch.json` , as follows
 
 ```json
 "name": "Hello debugging world",
-"type": "pwa-msedge",
+"type": "msedge",
 "port": 9222,
 "request": "attach",
 "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
