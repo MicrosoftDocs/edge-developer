@@ -6,11 +6,11 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 11/22/2022
+ms.date: 11/24/2022
 ---
 # Overview of Progressive Web Apps (PWAs)
 
-Progressive Web Apps (PWAs) are applications that you build by using web technologies, and that can be installed and can run on all devices, from just one codebase.
+Progressive Web Apps (PWAs) are applications that you build by using web technologies, and that can be installed and can run on all devices, from one codebase.
 
 PWAs provide native-like experiences to your users on supporting devices. They adapt to the capabilities supported by each device and they can also run in web browsers, like websites.
 
@@ -40,11 +40,11 @@ PWAs also have access to advanced capabilities. For example:
 
 #### Web-related advantages
 
-Finally, PWAs can run in web browsers, just like websites. 
+Finally, PWAs can run in web browsers, just like websites. Running like websites provide PWAs with advantages such as:
 
 *  PWAs can be indexed by search engines.
 *  PWAs can be shared and launched from a standard web link.
-*  PWAs are safe for users by using secure HTTPS endpoints and other user safeguards.
+*  PWAs are safe for users because they use secure HTTPS endpoints and other user safeguards.
 *  PWAs adapt to the the user's screen size or orientation, and input method.
 *  PWAs can use advanced web APIs such as WebBluetooth, WebUSB, WebPayment, WebAuthn, or WebAssembly.
 
@@ -66,9 +66,10 @@ Desktop computing continues to be the primary productivity environment for many 
 
 
 <!-- ====================================================================== -->
-## Bridging the gap between web and desktop apps
+## Bridging the gap between web and native
 
-Microsoft Edge has many new capabilities built in that can make your web app feel more integrated on desktop platforms.  These capabilities provide more engaging experiences across web and desktop platforms.  With Progressive Web Apps (PWAs), you can:
+There isn't much you can't do today with web technologies. Much of what was once possible by using device-specific languages only can now be achieved by using standard web technologies. For example:
+
 *   Handle files.
 *   Share content with other apps.
 *   Access the clipboard.
@@ -79,9 +80,9 @@ Microsoft Edge has many new capabilities built in that can make your web app fee
 *   Use CSS layouts, animations, and filters to create advanced designs.
 *   Run near-compiled performance code with WebAssembly.
 
-There isn't much you can't do today with web technologies.  Thanks to Microsoft Edge, PWAs on desktop can take full advantage of web technologies to deliver what users expect desktop apps to do.
+Thanks to Microsoft Edge, PWAs on desktop can take full advantage of these capabilities to deliver what users expect desktop apps to be able to do.  These capabilities provide more engaging experiences across web and desktop platforms.
 
-Check out [Myth Busting PWAs](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition) for more information about what PWAs can do.
+To find examples of what PWAs can do, see [Myth Busting PWAs](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition).
 
 
 <!-- ====================================================================== -->
@@ -89,7 +90,7 @@ Check out [Myth Busting PWAs](https://www.davrous.com/2019/10/18/myth-busting-pw
 
 Because Progressive Web Apps (PWAs) are just like other apps in the [Microsoft Store](https://www.microsoft.com/store/apps/windows), users can fully engage with them—from discovery, to installation, to execution—without<!-- em dashes--> ever opening the browser.
 
-The Microsoft Store app is the most used app on PCs.  The Microsoft Store provides a trustworthy and familiar experience for your users to install your app.  Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
+The Microsoft Store provides a trustworthy and familiar experience for your users to install your app.  Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
 
 Learn how to [publish your PWA to the Microsoft Store](how-to/microsoft-store.md).
 
@@ -109,15 +110,7 @@ Read more success stories on the [PWA Stats](https://www.pwastats.com/) website.
 <!-- ====================================================================== -->
 ## See also
 
-*  [Progressive Web Apps](https://developer.mozilla.org/Apps/Progressive) at MDN Web Docs.
-*  [Microsoft Build 2020 PWA session](https://www.youtube.com/watch?v=y4p_QHZtMKM)
-*  [Myth Busting PWAs](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition)
-*  [A Progressive Roadmap for your Progressive Web App](https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app)
-*  [Offline POSTs with Progressive Web Apps](https://medium.com/web-on-the-edge/offline-posts-with-progressive-web-apps-fc2dc4ad895)
+*  [Progressive Web Apps](https://developer.mozilla.org/docs/Web/Progressive_web_apps) at MDN Web Docs.
+*  [Progressive Web Apps](https://web.dev/progressive-web-apps/) at web.dev.
+*  [Progressive Web Apps](https://en.wikipedia.org/wiki/Progressive_web_app) at Wikipedia.
 *  [PWA Q&A](https://www.aaron-gustafson.com/notebook/pwa-qa)
-*  [Betting on the Web](https://joreteg.com/blog/betting-on-the-web)
-*  [Naming Progressive Web Apps](https://fberriman.com/2017/06/26/naming-progressive-web-apps)
-*  [Designing And Building A Progressive Web App Without A Framework (Part 1)](https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1)
-*  [Designing And Building A Progressive Web App Without A Framework (Part 2)](https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2)
-*  [Designing And Building A Progressive Web App Without A Framework (Part 3)](https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3)
-*  [What makes a good Progressive Web App?](https://web.dev/pwa-checklist)
