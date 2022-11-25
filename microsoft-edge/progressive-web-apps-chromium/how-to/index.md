@@ -14,7 +14,7 @@ Progressive Web Apps (PWAs) are applications that you build by using web technol
 To learn more about what PWAs are and their benefits, see [Overview of Progressive Web Apps (PWAs)](../index.md).
 
 <!-- link is placed here per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->
-This guide is targeted at web developers who want to learn to build PWAs. To learn more about installing and running PWAs, see [Installing a PWA](../ux.md#installing-a-pwa) in _The user experience of PWAs_.
+This guide is targeted at web developers who want to learn to build PWAs. To learn more about installing and running PWAs, see [Installing a PWA](../ux.md#installing-a-pwa) in _Use Progressive Web Apps in Microsoft Edge_.
 
 In this guide, you first learn how PWAs work, then create your first simple PWA, which will be a temperature converter app, and then learn more about how to make great PWAs.
 
@@ -405,7 +405,7 @@ Click **Install** to install the app locally. After the installation completes, 
 
 ![The sample PWA, installed and running in its own window](../media/sample-pwa-installed.png)
 
-To learn more about installing PWAs, see [The user experience of PWAs](../ux.md).
+To learn more about installing PWAs, see [Use Progressive Web Apps in Microsoft Edge](../ux.md).
 
 
 <!-- ====================================================================== -->
