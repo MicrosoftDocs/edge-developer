@@ -17,7 +17,7 @@ This page assumes that you already have a PWA. To learn more about building a si
 
 
 <!-- ====================================================================== -->
-## Installation
+## Provide a custom installation
 
 Your app can already be installed using the **App available** button in the browser address bar if you follow the steps in [Get started with Progressive Web Apps](./index.md).
 
@@ -29,7 +29,7 @@ To see a code example of the `beforeinstallprompt` event, check the [PWAmp demo 
 
 
 <!-- ====================================================================== -->
-## App store
+## Submit to app stores
 
 Many users will look for your app on their device's app store. Downloading from an official app store provides a trustworthy and familiar experience for your users.
 
@@ -39,7 +39,7 @@ To learn how to use PWA Builder and publish to the Microsoft Store, see [Publish
 
 
 <!-- ====================================================================== -->
-## App icon
+## Create a great app icon
 
 Many users find apps on their devices by their icons. To make users can easily find your app choose a recognizable icon, make sure it stands out, and make sure that it adapts to the devices your app is installed on.
 
@@ -49,7 +49,7 @@ To learn which image size are needed on Windows, see [Icon image sizes](./icon-t
 
 
 <!-- ====================================================================== -->
-## App window type
+## Use a standalone app window
 
 Native applications have their own dedicated windows. PWAs can define how they appear in the host operating system.
 
@@ -63,11 +63,11 @@ To learn how to replace the title bar, see [Display content in the title bar](./
 
 
 <!-- ====================================================================== -->
-## Operating system integration
+## Integrate in the operating system
 
-Users expect installed applications to be integrated with the host operating system. By integrating into the operating system, your app provides a more familiar and seamless experience.
+Users expect installed applications to integrate with the host operating system in some way.
 
-PWAs have access to several integration features, such as shortcuts, sharing, badging, or file and link handling.
+Your app can provide a more familiar, engaging, and seamless experience by using operating system integration features such as: shortcuts, sharing between apps, badging, file handling, or link handling.
 
 #### Shortcuts
 
@@ -83,84 +83,118 @@ See [Share content with other apps](./share.md).
 
 #### Icon badges
 
-PWAs can display status badges on their app icons to alert users about the presence of new content in the app.
+PWAs can display status badges on their app icons to alert users of the presence of new content in the app.
 
 See [Display a badge on the app icon](./notifications-badges.md#display-a-badge-on-the-app-icon) in _Re-engage users with badges, notifications, and push messages_.
 
 #### File handling
 
-_TODO_
+You can register your PWA to be a file handler for certain file types.
+
+Use the PWA file handler feature to automatically launch your app when certain file are opened by the user in the operating system.
 
 See [Handle files in Progressive Web Apps](./handle-files.md).
 
-#### Link handling
+#### Link and protocol handling
 
-_TODO_
+Register your app is a link or protocol handler to automatically launch your app when certain links are used in other applications.
 
 See [Handle links to your Progressive Web Apps](./handle-urls.md) and [Handle protocols in Progressive Web Apps](./handle-protocols.md).
 
 
 <!-- ====================================================================== -->
-## Offline support
+## Support offline scenarios
 
-_TODO_
-_Very important for retention. People install apps to perform tasks. Let them do the tasks even when offline. And at least provide a custom offline screen to make it clear the app isn’t broken._
-_Provide a rich [Offline experience](./offline.md).  Make the app work even if the user's device is offline.  Provide a custom offline page rather than using the browser's default offline page._
+When connected to a slow or unreliable network, or even with no internet access, installed applications can usually still be opened and used. Users of installed applications expect them to continue working under these conditions. They also expect the network-dependent parts of an application to gracefully handle the lack of connection with a custom message and local caching capabilities.
+
+To improve retention, use the service worker's `Fetch` and `Cache` APIs, and local data storage access and provide a good offline experience to your users.
+
+You can provide a good offline experience in several steps:
+
+1. Cache all the static resources your app needs to launch, display content, and let users perform the most common tasks.
+1. Redirect to a custom offline page for the pages that can't be cached.
+1. Gracefully handle the tasks of your app that can't be used with no internet access.
+1. Implement advanced scenarios such as letting users download data for offline viewing.
+
+
+To learn more, see [Offline and network connectivity support in Progressive Web Apps](./offline.md).
 
 
 <!-- ====================================================================== -->
-## Data storage
+## Store data locally
 
-_TODO_
-_Store data locally. Pre-cache static resources for great offline use. Also offer to store data (media, text content, etc.) for offline consumption. Various ways to store data, and how much data there is available._
-_Create a new detailed article about this, with quota information and the different options._
+To provide a rich and fast experience to your users, use the different persistent data storage options available to PWAs, such as:
 
+* Cache storage, to store static resources for your app.
+* Local and Session storage, to store small amounts of user data.
+* IndexedDB to store larger, structured, user data.
+* File System Access API to store files on disk.
 
-<!-- ====================================================================== -->
-## App instances
+To learn more, see [Offline and network connectivity support in Progressive Web Apps](./offline.md).
 
-_TODO_
-_Launch handler._
+_TODO: link to a new article about this topic only, with much more details than what's in offline.md now, in particular, information about available space, quota information, and eviction info._
 
 
 <!-- ====================================================================== -->
 ## Use advanced web capabilities
 
+Installed apps typically perform advanced computing scenarios that websites usually don't.
+
+To provide an app-like experience, use advanced web capabilities such as:
+
+* Hardware access with the Web Bluetooth, Web USB, or Web NFC APIs.
+* Clipboard access with the Async Clipboard API.
+* Device contacts integration with the Contacts API.
+* Rich media interactions with Canvas, WebGL, or WebAudio APIs.
+* Safe and trusted authentication and payment with WebAuthn and WebPayment APIs.
+* File handling.
+
+Ensure your app's most important tasks can be done across all browsers and devices. See [Test on multiple browsers and devices](#test-on-multiple-browsers-and-devices).
+
+
+<!-- ====================================================================== -->
+## Make your app look and feel like a real app
+
+Users install apps on their devices to achieve specific tasks, and they have certain expectations about how these tasks are presented in the user interface and how they integrate in the host operating system.
+
+To let your users achieve your app's most important tasks easily and in a familiar way, make design choices such as:
+
+* Don't use a big header area like websites do for navigation to other pages. Use a menu metaphor instead.
+* Don't use a big footer area like websites do for more links and information.
+* Use the `system-ui` font to make your content feel more native and load faster.
+* Use less links, and prefer bigger hit targets.
+* Support the operating system's light and dark themes by using the [prefers-color-scheme](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme) CSS media feature.
+* Provide a `background-color` and `theme-color` in your [web app manifest](https://developer.mozilla.org/docs/Web/Manifest) to customize the application window.
+* Focus on the most important tasks, de-clutter de content, and streamline the user interface.
+* Re-organize the user interface based on the device's form factor, by using CSS [grid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout), [Flexbox](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout), [Media queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries), and [Responsive images](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
+* Improve perceived performance by registering the action interactions immediately.
+* Consider using [skeleton screens](https://css-tricks.com/building-skeleton-screens-css-custom-properties/) when loading the next screen takes time.
+
+
+<!-- ====================================================================== -->
+## Test on multiple browsers and devices
+
+With Progressive Web Apps, you deliver an app for all devices, from one codebase. To make sure your app works everywhere, test it on multiple browsers, operating systems, and devices.
+
+Make sure the most important scenarios of your app work everywhere, and progressively enhance the experience on supporting devices.
+
+To test your app in multiple environment, consider the following resources:
+
+* [Cross-browser testing](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing) on MDN
+* [Emulate and test other browsers](../../devtools-guide-chromium/device-mode/testing-other-browsers.md) from Microsoft Edge, by using DevTools.
+* Create a remote debugging session on [Windows](../../devtools-guide-chromium/remote-debugging/windows.md) or [Android](../../devtools-guide-chromium/remote-debugging/index.md).
+* [Test and automation in Microsoft Edge](../../test-and-automation/test-and-automation.md) to automate your testing.
+* Test on [virtual machines](https://developer.microsoft.com/microsoft-edge/tools/).
+
+
+<!-- ====================================================================== -->
+## Support deep linking
+
+To improve discovery and sharing of your app through the web and social media, route each page of your app to a unique URL and support [deep linking](https://en.wikipedia.org/wiki/Deep_linking).  
+
+
+<!-- ====================================================================== -->
+## Manage your app instances
+
 _TODO_
-_Advanced Web capabilities (fugu, hardware, etc.)_
-
-
-<!-- ====================================================================== -->
-## User interface best practices
-
-_TODO_
-_UI: bigger hit targets, no footers, more media, system-ui font (feels native,  and loads faster), support light and dark themes, theme-color to avoid making the titlebar feel disjointed, and WCO…_
-_UX: streamline tasks, focus on what’s important. People installed your app, don’t waste space and time selling your app. Reduce content clutter. Not only about responsive design, but reorganize the UI based on the target device to make the main task(s) as streamlined as possible. Immediate interaction feedback, even if a step takes time, register the action visually, and perhaps use skeleton UI for the next state._
-
-
-<!-- ====================================================================== -->
-## Cross-browser and cross-device compatibility
-
-Test your app for [cross-browser compatibility](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing).  Make sure your PWA works, by testing it in different browsers and environments.  See [Tools](https://developer.microsoft.com/microsoft-edge/tools/) at _Microsoft Edge Developer_.
-
-_TODO_
-_Progressive enhancement._
-
-
-<!-- ====================================================================== -->
-## Responsive design
-
-Use fluid layouts and flexible images.  [Responsive design](https://en.wikipedia.org/wiki/Responsive_web_design) includes the following elements that adapt your UX to your user's device:
-
-*   CSS [grid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout).
-*   [Flexbox](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout).
-*   [Media queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries).
-*   [Responsive images](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
-
-To test your app locally, use [device emulation tools](../../devtools-guide-chromium/device-mode/testing-other-browsers.md) from your browser.  To test your app directly on a target device, create a remote debugging session on [Windows](../../devtools-guide-chromium/remote-debugging/windows.md) or [Android](../../devtools-guide-chromium/remote-debugging/index.md).
-
-
-<!-- ====================================================================== -->
-## Deep linking
-
-Support [Deep linking](https://en.wikipedia.org/wiki/Deep_linking).  Route each page of your site to a unique URL so existing users can help you engage an even broader audience through social media sharing.
+_Launch handler._
