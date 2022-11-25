@@ -420,4 +420,4 @@ When users install applications, they have certain expectations of what these ap
 * Users expect apps to perform non-trivial computing tasks.
 * Users expect to find apps in app stores.
 
-To build a great PWA, see [Best practices for Progressive Web Apps](./best-practices.md).
+To build a great PWA, see [Best practices for PWAs](./best-practices.md).

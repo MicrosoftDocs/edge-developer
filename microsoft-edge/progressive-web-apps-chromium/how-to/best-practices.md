@@ -1,5 +1,5 @@
 ---
-title: Best practices for Progressive Web Apps
+title: Best practices for PWAs
 description: Learn best practices to build great PWAs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/24/2022
 ---
-# Best practices for Progressive Web Apps
+# Best practices for PWAs
 
 This article lists best practices to make your PWA a great application for your users. When users install applications, they have certain expectations of what these applications can do, such as work offline, integrate deep into the operating system, or perform non-trivial computing tasks.
 
