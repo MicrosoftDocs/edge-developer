@@ -14,7 +14,7 @@ A manifest file is the blueprint of an extension. It includes information such a
 
 In October 2020, Microsoft announced the [decision to embrace Manifest V3](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/) to help reduce fragmentation of the web for all developers and enhance privacy, security, and performance for end users.
 
-Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/Home/). Manifest V2 support ends in June of 2023 for all Chromium-based browsers.
+Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/Home/).
 
 An overview of the changes involved, as described in [Overview of Manifest V3 - Chrome Developers](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/):
 
@@ -40,6 +40,8 @@ We are aware that Chromium has revised the timelines for Manifest V2 sunset. We 
 | July 2022 (already in effect)	| Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
 | TBD - See note above | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. | Microsoft Edge stops running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge using Enterprise policies. |
 | TBD - See note above | No change. | Manifest V2 extensions will no longer function in Microsoft Edge even with the use of Enterprise policy. |
+
+MV2 extensions will continue to be supported through enterprise policy at least until Chromium MV2 support timeline (which is currently January 2024).
 
 Microsoft continues to iteratively improve the platform and address the feedback shared by extension developers.
 
