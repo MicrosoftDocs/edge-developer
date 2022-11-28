@@ -271,15 +271,51 @@ Making changes to your Service Worker can sometimes be complex. Use a library su
 <!-- ====================================================================== -->
 ## Other capabilities
 
-#### Period background ...
+A Service Worker's main responsibility is to make your app faster and more reliable in the event of an unstable network connection. Service Workers mostly use the `fetch` event and `Cache` API to do this, but they can use other APIs for advanced scenarios, such as:
 
-#### Push Notifications
+* Background synchronization of data.
+* Periodic synchronization of data.
+* Large background file downloads.
+* Push messages handling and notifications.
 
-Service Workers can push notifications to users.  Push notifications can prompt users to re-engage with your application after time has elapsed.  To learn more, see [Re-engage users with badges, notifications, and push messages](notifications-badges.md).
+#### Background synchronization
+
+Use the Background Sync API to allow users to continue using your app and perform actions even when the user's device is offline.
+
+For example, an email app can let its users compose and send messages at any time. The app frontend can try to send the message right away, and if the device is offline, the service worker can catch the failed request and use the Background Sync API to defer the task until connected.
+
+To learn more, see [Use the Background Sync API to synchronize data with the server](background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server).
+
+#### Period background synchronization
+
+The Periodic Background Sync API lets PWAs retrieve fresh content periodically, in the background, so users can immediately access it when they later open the app again.
+
+Using the Periodic Background Sync API, PWAs don't have to download new content (such as new articles) while the user is using the app.  Downloading content could slow down the experience, so instead, retrieve the content at a more convenient time.
+
+To learn more, see [Use the Periodic Background Sync API to regularly get fresh content](background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
+
+#### Large background file downloads
+
+The Background Fetch API allows PWAs to completely delegate downloading large amounts of data to the browser engine. This way, the app and service worker don't have to be running at all while the download is in progress.
+
+This API is useful for apps that let users download large files (like music, movies, or podcasts) for offline use cases. Because the download is delegated to the browser engine, which knows how to handle a flaky connection or even a complete loss of connectivity, it can pause and resume the download when necessary.
+
+To learn more, see [Use the Background Fetch API to fetch large files when the app or service worker isn't running](background-syncs.md#use-the-background-fetch-api-to-fetch-large-files-when-the-app-or-service-worker-isnt-running).
+
+#### Push messages
+
+Push messages can be sent to your users without them having to be using the app at the time. A Service Worker can listen to push messages sent by your server even if the app isn't running, and display a notification in the operating system's notification center.
+
+To learn more, see [Add push notifications to your PWA](notifications-badges.md#add-push-notifications-to-your-pwa).
 
 
 <!-- ====================================================================== -->
 ## Debug with devtools
+
+Using Microsoft Edge DevTools, you can see if your Service Worker has been registered correctly and which lifecycle state it's currently in. Additionally, you can debug the JavaScript code in your Service Worker.
+
+To learn more, see [Debug your service worker](debug.md#debug-your-service-worker).
+
 
 <!-- ====================================================================== -->
 ## See also
