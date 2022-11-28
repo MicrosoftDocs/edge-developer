@@ -118,7 +118,7 @@ The app runs in the browser for now, and can't be installed. To make it installe
 <!-- ====================================================================== -->
 ## Step 3 - Create a web app manifest
 
-A [Web App Manifest](https://developer.mozilla.org/docs/Web/Manifest) is a JSON file containing metadata about your app, such as its name, description, icons, and the various operating system features it uses.
+A [Web App Manifest](web-app-manifests.md) is a JSON file containing metadata about your app, such as its name, description, icons, and the various operating system features it uses.
 
 To add an app manifest to your app:
 
@@ -421,3 +421,9 @@ When users install applications, they have certain expectations of what these ap
 * Users expect to find apps in app stores.
 
 To build a great PWA, see [Best practices for PWAs](./best-practices.md).
+
+
+<!-- ====================================================================== -->
+## See also
+
+*  [Getting Started with Progressive Web Apps (Workshop)](https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop).
