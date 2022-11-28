@@ -85,7 +85,7 @@ The following section lets you customize the demo to make sure that your experie
 
 ### Record runtime performance
 
-When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the unoptimized version.
+When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the non-optimized version.
 
 1. In DevTools, click **Record** (![Record.](../media/record-icon.msft.png)).  DevTools captures performance metrics as the page runs.
 
