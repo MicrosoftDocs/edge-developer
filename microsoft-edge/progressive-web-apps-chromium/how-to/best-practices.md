@@ -9,9 +9,9 @@ ms.date: 11/24/2022
 ---
 # Best practices for PWAs
 
-This article lists best practices to make your PWA a great application for your users. When users install applications, they have certain expectations of what these applications can do, such as work offline, integrate deep into the operating system, or perform non-trivial computing tasks.
+This article lists best practices to make your PWA a great application for your users. When users install applications, they have certain expectations of what these applications can do, such as work offline, integrate deeply into the operating system, or perform non-trivial computing tasks.
 
-Read the best practices on this page to learn to make your PWA feel like what users expect real apps can do.
+Read the best practices on this page to learn to make your PWA look and feel like what users expect.
 
 This page assumes that you already have a PWA. To learn more about building a simple PWA first, see [Get started with Progressive Web Apps](./index.md).
 
@@ -25,7 +25,7 @@ A custom installation experience, in the app user interface, can be more obvious
 
 To create a custom installation experience, use the [`beforeinstallprompt`](https://developer.mozilla.org/docs/Web/API/Window/beforeinstallprompt_event) event and provide your own installation button in your app.
 
-To see a code example of the `beforeinstallprompt` event, check the [PWAmp demo app source code](https://github.com/MicrosoftEdge/Demos/blob/main/pwamp/app.js). To test the custom installation, open [PWAmp](https://microsoftedge.github.io/Demos/pwamp/), click **More tools** (`...`) > **About** > **Install app**.
+To see a code example of the `beforeinstallprompt` event, check the [PWAmp demo app source code](https://github.com/MicrosoftEdge/Demos/blob/main/pwamp/app.js). To test the custom installation, open [PWAmp](https://microsoftedge.github.io/Demos/pwamp/), then click **More tools** (`...`) > **About** > **Install app** in the app.
 
 
 <!-- ====================================================================== -->
@@ -41,7 +41,7 @@ To learn how to use PWA Builder and publish to the Microsoft Store, see [Publish
 <!-- ====================================================================== -->
 ## Create a great app icon
 
-Many users find apps on their devices by their icons. To make users can easily find your app choose a recognizable icon, make sure it stands out, and make sure that it adapts to the devices your app is installed on.
+Many users find apps on their devices by their icons. To help users find your app more easily, choose a recognizable icon, make sure it stands out, and make sure that it adapts to the devices your app is installed on.
 
 On Windows, your app icon appears in many places such as the taskbar, the Start menu, or the ALT+Tab task switcher. Provide multiple image sizes to ensure your app icon is easily recognizable in these places.
 
@@ -57,7 +57,7 @@ To display your PWA in a standalone window with no browser navigation user inter
 
 If your app has several HTML pages, make sure users can go between the pages using buttons or links within your app. Use the `minimal-ui` value of the `display` manifest member to let users go between pages using previous and next buttons rendered by the browser in your app title bar.
 
-To create a more immersive, native-like experience, _desktop_ PWAs can also choose to hide the default operating system title bar and display their own content instead. Displaying content where the title bar normally is can help PWAs feel more other apps.  Many desktop applications, such as Visual Studio Code, Microsoft Teams, and Microsoft Edge already do this.
+To create a more immersive, native-like experience, _desktop_ PWAs can also choose to hide the default operating system title bar and display their own content instead. Displaying content where the title bar normally is can help PWAs feel more like native apps.  Many desktop applications, such as Visual Studio Code, Microsoft Teams, and Microsoft Edge already do this.
 
 To learn how to replace the title bar, see [Display content in the title bar](./window-controls-overlay.md).
 
@@ -101,6 +101,11 @@ Register your app is a link or protocol handler to automatically launch your app
 
 See [Handle links to your Progressive Web Apps](./handle-urls.md) and [Handle protocols in Progressive Web Apps](./handle-protocols.md).
 
+<!-- 
+#### Widgets
+
+TODO: when widgets doc land, add a section about it here.
+ -->
 
 <!-- ====================================================================== -->
 ## Support offline scenarios
@@ -111,11 +116,10 @@ To improve retention, use the service worker's `Fetch` and `Cache` APIs, and loc
 
 You can provide a good offline experience in several steps:
 
-1. Cache all the static resources your app needs to launch, display content, and let users perform the most common tasks.
+1. Cache all the static resources your app needs to start, display content, and let users perform the most common tasks.
 1. Redirect to a custom offline page for the pages that can't be cached.
 1. Gracefully handle the tasks of your app that can't be used with no internet access.
 1. Implement advanced scenarios such as letting users download data for offline viewing.
-
 
 To learn more, see [Offline and network connectivity support in Progressive Web Apps](./offline.md).
 
@@ -132,22 +136,23 @@ To provide a rich and fast experience to your users, use the different persisten
 
 To learn more, see [Offline and network connectivity support in Progressive Web Apps](./offline.md).
 
-_TODO: link to a new article about this topic only, with much more details than what's in offline.md now, in particular, information about available space, quota information, and eviction info._
+<!-- TODO: link to a new article about this topic only, with much more details than what's in offline.md now, in particular, information about available space, quota information, and eviction info.  -->
 
 
 <!-- ====================================================================== -->
-## Use advanced web capabilities
+## Use advanced capabilities
 
 Installed apps typically perform advanced computing scenarios that websites usually don't.
 
 To provide an app-like experience, use advanced web capabilities such as:
 
-* Hardware access with the Web Bluetooth, Web USB, or Web NFC APIs.
-* Clipboard access with the Async Clipboard API.
-* Device contacts integration with the Contacts API.
-* Rich media interactions with Canvas, WebGL, or WebAudio APIs.
-* Safe and trusted authentication and payment with WebAuthn and WebPayment APIs.
-* File handling.
+* Hardware access with the [Web Bluetooth](https://developer.mozilla.org/docs/Web/API/Web_Bluetooth_API), [Web USB](https://developer.mozilla.org/docs/Web/API/USB), or [Web NFC](https://developer.mozilla.org/docs/Web/API/Web_NFC_API) APIs.
+* Clipboard access with the [Clipboard API](https://developer.mozilla.org/docs/Web/API/Clipboard_API).
+* Device contacts integration with the [Contact Picker API](https://developer.mozilla.org/docs/Web/API/Contact_Picker_API).
+* Rich media interactions with [Canvas](https://developer.mozilla.org/docs/Web/API/Canvas_API), [WebGL](https://developer.mozilla.org/docs/Web/API/WebGL_API), or [WebAudio](https://developer.mozilla.org/docs/Web/API/Web_Audio_API) APIs.
+* Safe and trusted authentication and payment with [WebAuthn](https://webauthn.guide/) and [Payment Request](https://developer.mozilla.org/docs/Web/API/Payment_Request_API) APIs.
+* Non-trivial computing tasks with [WebAssembly](https://developer.mozilla.org/docs/WebAssembly).
+* Reading and writing to files with the [File System Access API](https://developer.mozilla.org/docs/Web/API/File_System_Access_API).
 
 Ensure your app's most important tasks can be done across all browsers and devices. See [Test on multiple browsers and devices](#test-on-multiple-browsers-and-devices).
 
@@ -167,8 +172,8 @@ To let your users achieve your app's most important tasks easily and in a famili
 * Provide a `background-color` and `theme-color` in your [web app manifest](https://developer.mozilla.org/docs/Web/Manifest) to customize the application window.
 * Focus on the most important tasks, de-clutter de content, and streamline the user interface.
 * Re-organize the user interface based on the device's form factor, by using CSS [grid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout), [Flexbox](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout), [Media queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries), and [Responsive images](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
-* Improve perceived performance by registering the action interactions immediately.
-* Consider using [skeleton screens](https://css-tricks.com/building-skeleton-screens-css-custom-properties/) when loading the next screen takes time.
+* Improve perceived performance by registering user interactions immediately.
+* Consider using [skeleton screens](https://css-tricks.com/building-skeleton-screens-css-custom-properties/) if rendering the next screen takes time.
 
 
 <!-- ====================================================================== -->
@@ -193,8 +198,8 @@ To test your app in multiple environment, consider the following resources:
 To improve discovery and sharing of your app through the web and social media, route each page of your app to a unique URL and support [deep linking](https://en.wikipedia.org/wiki/Deep_linking).  
 
 
-<!-- ====================================================================== -->
+<!-- ======================================================================
 ## Manage your app instances
 
-_TODO_
-_Launch handler._
+TODO: Launch handler.
+-->

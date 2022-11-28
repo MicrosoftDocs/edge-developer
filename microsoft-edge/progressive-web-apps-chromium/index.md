@@ -24,7 +24,7 @@ To start building a PWA, see [Get started with Progressive Web Apps](./how-to/in
 
 When installed on a device, PWAs function just like other apps. For example:
 
-*  PWAs have their own application icons that can be added to the Start menu or the Taskbar.
+*  PWAs have their own application icons that can be added to a device's home screen or task bar.
 *  PWAs can be launched automatically when an associated file type is opened.
 *  PWAs can run when the user signs in.
 *  PWAs can be submitted to application stores like the Microsoft Store.
