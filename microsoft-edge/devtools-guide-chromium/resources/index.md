@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 11/28/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,7 +38,7 @@ This guide assumes that you are familiar with the basics of [web development](ht
 
 When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.
 
-1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS).  The **Open File** dialog opens.
+1. Press `Ctrl`+ `Shift`+ `P` (Windows, Linux) or `Command`+`P` (macOS).  The **Open File** dialog opens.
 
    ![The Open File dialog.](../media/resources-command-menu-empty.msft.png)
 
