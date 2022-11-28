@@ -43,6 +43,8 @@ Your front-end code uses HTML, CSS, JavaScript, and JSON only.
 
 You use HTML to describe the content in your app, such as the text, images, text fields, or buttons that appear in the user interface. You then use CSS to organize the HTML content in a layout, and provide styles to elements. And finally you use JavaScript to add user interactions to your user interface.
 
+Note that although your front-end code runs by using the device's web browser, the browser user interface may not be visible as your app can choose to run in a standalone window.
+
 On top of the user interface code, you also use JavaScript to make your application faster, more reliable, and network-independent by using a service worker file. Finally, your front-end code also contains a JSON manifest file that describes your application to the host operating system.
 
 Below is a diagram of the high-level architecture of a PWA:
