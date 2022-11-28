@@ -347,6 +347,14 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) is initially called.
 
+#### Download limitations
+
+Downloading files is available with a few limitations:
+
+*  Opening files and folders from the Downloads Hub is disabled. Clicking on the file or folder icon will not open the respective file/folder.
+*  If the host does not change the `ResultFilePath` of the downloaded file, the downloaded files will download to a subfolder with the app package's name in the Downloads folder.
+*  If the host changes the `ResultFilePath` of the downloaded file, the file will only be downloaded if the app has access to that file path by default.
+
 #### Xbox, HoloLens, and XAML limitations
 
 This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered at a future point in time.
