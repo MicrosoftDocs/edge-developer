@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/21/2022
+ms.date: 11/22/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -170,7 +170,7 @@ After you verified that the animation isn't performing well, the next step is to
 
    ![The line of code that caused the forced layout.](../media/evaluate-performance-sources-app-update.msft.png)
 
-   The problem with the code is that in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
+   The problem with the non-optimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
    <!--
    > To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts).
    -->
@@ -183,7 +183,7 @@ This article gives you a lot to learn. But now you have a solid foundation in th
 
 Using the workflows and tools that you just learned, click **Optimize** on the demo to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
-Even the optimized version isn't great, because it manipulates the `top` property of every icon.  A better approach is to stick to properties that only affect compositing.
+The optimized code uses a different sequence of actions to do less work. Note that this code could be made even faster by only using properties that only affect compositing, instead of manipulating the `top` property of every icon.
 <!--  > For more information, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations). todo: add rendering section when available -->
 
 
