@@ -84,9 +84,9 @@ The following table shows all available hints request headers with sample values
 > [!NOTE]
 > User-Agent Client Hints are only sent over secure connections using `HTTPS`.
 
-### User-Agent Client Hints JavaScript API
+### User-Agent Client Hints JavaScript API 
 
-You can access User-Agent Client Hints using JavaScript on the client side. When you call the default `navigator.userAgentData`, it returns the following response. 
+You can access User-Agent Client Hints using JavaScript on the client side. When you call the default `navigator.userAgentData`, it returns the following response.  
 
 ```JSON
 {
