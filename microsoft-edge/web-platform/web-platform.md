@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 11/12/2022
+ms.date: 11/28/2022
 ---
 # Web platform overview
 
