@@ -41,7 +41,7 @@ See also:
 
 <!-- Subtitle: This update fixes a bug related to opening DevTools from the Command Palette in Microsoft Edge. -->
 
-The Microsoft Edge Command Palette is an experimental feature that allows users to perform common tasks in Microsoft Edge.  In previous versions of Microsoft Edge, some DevTools-related commands for opening subpanels (tabs) within a tool didn't navigate to the correct tool as expected.  This update fixes this bug, improving the usability of commands such as **Sources: Show Snippets**:
+The Microsoft Edge Command Palette is an experimental feature that allows users to perform common tasks in Microsoft Edge.  In previous versions of Microsoft Edge, DevTools-related commands for opening subpanel tabs within a tool didn't navigate to the correct tool.  This update fixes this bug, improving the usability of commands such as **Sources: Show Snippets**:
 
 ![Command Palette](./devtools-108-images/command-palette.png)
 
