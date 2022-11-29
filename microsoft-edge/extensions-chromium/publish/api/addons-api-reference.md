@@ -18,6 +18,8 @@ For an overview, see [Using the Microsoft Edge Add-ons API](using-addons-api.md)
 
 Uploads a package to update an existing draft submission of an add-on product.
 
+
+<!-- ------------------------------ -->
 #### Request
 
 | Method | Request URI |
@@ -40,6 +42,8 @@ Uploads a package to update an existing draft submission of an add-on product.
 
 * `<Zip package>`
 
+
+<!-- ------------------------------ -->
 #### Response
 
 ###### Response headers
@@ -56,8 +60,8 @@ This API has the following expected status codes.
 | 4XX | See [Error codes](#error-codes). |
 | 5XX | See [Error codes](#error-codes). |
 
-See also:
 
+See also:
 *  Introduction: [Uploading a package to update an existing submission](using-addons-api.md#uploading-a-package-to-update-an-existing-submission)
 
 
@@ -66,6 +70,8 @@ See also:
 
 Gets the status of the package upload.
 
+
+<!-- ------------------------------ -->
 #### Request
 
 | Method | Request URI |
@@ -86,6 +92,8 @@ Gets the status of the package upload.
 
 None.
 
+
+<!-- ------------------------------ -->
 #### Response
 
 There are several responses, for different scenarios.
@@ -146,8 +154,8 @@ This API has the following expected status codes.
 | 4XX | See [Error codes](#error-codes). |
 | 5XX | See [Error codes](#error-codes). |
 
-See also:
 
+See also:
 *  Introduction: [Checking the status of a package upload](using-addons-api.md#checking-the-status-of-a-package-upload)
 
 
@@ -156,6 +164,8 @@ See also:
 
 Publishes the current draft of the product to Microsoft Edge Add-ons.
 
+
+<!-- ------------------------------ -->
 #### Request
 
 | Method | Request URI |
@@ -163,7 +173,6 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 | `POST` | `/products/{productID}/submissions` |
 
 ###### URI parameters
-
 
 | URI parameter | Description |
 |---|---|
@@ -177,6 +186,8 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 
 `<Notes for certification>`, in plain text format.
 
+
+<!-- ------------------------------ -->
 #### Response
 
 ###### Response headers
@@ -193,8 +204,8 @@ This API has the following expected status codes.
 | 4XX | See [Error codes](#error-codes). |
 | 5XX | See [Error codes](#error-codes). |
 
-See also:
 
+See also:
 *  Introduction: [Publishing the submission](using-addons-api.md#publishing-the-submission)
 
 
@@ -203,7 +214,9 @@ See also:
 
 Checks the status of the publish operation.
 
-### Request
+
+<!-- ------------------------------ -->
+#### Request
 
 | Method | Request URI |
 |---|---|
@@ -221,6 +234,8 @@ None.
 
 None.
 
+
+<!-- ------------------------------ -->
 #### Response
 
 A `GET` operation status API can be called in the following scenarios.  In all valid scenarios, `200 OK` is returned, with different status messages.
@@ -364,8 +379,8 @@ This API has the following expected status codes.
 | 4XX | See [Error codes](#error-codes). |
 | 5XX | See [Error codes](#error-codes). |
 
-See also:
 
+See also:
 *  Introduction: [Checking the publishing status](using-addons-api.md#checking-the-publishing-status)
 
 
