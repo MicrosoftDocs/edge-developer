@@ -284,28 +284,9 @@ Next, learn about navigation events, which are essential for WebView2 apps.  The
 
 
 <!-- ====================================================================== -->
-## Status of WebView2 functionality on WinUI 2 (UWP)
+## Special considerations for WebView2 on WinUI 2 (UWP)
 
-The WebView2 WinUI 2 (UWP) control is in development.  For WebView2 for UWP apps, the following features have limitations due to pending work.
-
-
-<!-- ------------------------------ -->
-#### Downloads
-
-Depending on the user's OS, downloaded files will be downloaded to different folders:
-*  For Windows 11, the downloaded files will appear in a subfolder with the app package's name in the `Downloads` folder.
-*  For Windows versions prior to Windows 11, the downloaded files will appear in a subfolder named `WebView2Downloads` within the app package's subfolder in the `Downloads` folder.
-
-Saving files via **Save As** is working and is enabled for WebView2 for UWP apps.  The files will be saved in the folder that the user selects.
-
-There are a couple of known limitations of the current downloads behavior for WebView2 in UWP:
-
-*  Downloading files is only available in preview via the Edge Dev channel until Edge 104; moreover, it is disabled by default.  To enable downloading files, use the command-line switch `edge-webview-optional-enable-uwp-regular-downloads`.
-
-*  The downloads hub is currently disabled.
-
-See also:
-* [Downloads](../concepts/overview-features-apis.md#downloads) in _Overview of WebView2 features and APIs_.
+The WebView2 WinUI 2 (UWP) control is in development.
 
 
 <!-- ------------------------------ -->
@@ -335,10 +316,7 @@ See also:
 * [Image capture](../concepts/overview-features-apis.md#image-capture) in _Overview of WebView2 features and APIs_.
 
 
-<!-- ====================================================================== -->
-## WinUI 2 WebView2 special considerations
-
-
+<!-- ------------------------------ -->
 #### SmartScreen
 
 WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreoverview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
@@ -347,18 +325,45 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) is initially called.
 
-#### Download limitations
 
-Downloading files is available with a few limitations:
+<!-- ------------------------------ -->
+#### Downloading files
 
-*  Opening files and folders from the Downloads Hub is disabled. Clicking on the file or folder icon will not open the respective file/folder.
-*  If the host does not change the `ResultFilePath` of the downloaded file, the downloaded files will download to a subfolder with the app package's name in the Downloads folder.
-*  If the host changes the `ResultFilePath` of the downloaded file, the file will only be downloaded if the app has access to that file path by default.
+There are a couple of known limitations of the current downloads behavior for WebView2 in UWP.
 
+###### Which version supports downloading files
+
+Downloading files is only available in preview via the Edge Dev channel until Edge 104; moreover, it is disabled by default.  To enable downloading files, use the command-line switch `edge-webview-optional-enable-uwp-regular-downloads`.
+
+###### Save As
+
+Saving files via **Save As** is working and is enabled for WebView2 for UWP apps.  The files will be saved in the folder that the user selects.
+
+###### Which folder the files are downloaded to
+
+If the host doesn't change the `ResultFilePath` of the downloaded file, the downloaded files will be downloaded to a subfolder with the app package's name in the `Downloads` folder.
+
+If the host changes the `ResultFilePath` of the downloaded file, the file will only be downloaded if the app has access to that file path by default.
+
+Depending on the user's OS, downloaded files will be downloaded to different folders:
+*  For Windows 11, the downloaded files will appear in a subfolder with the app package's name in the `Downloads` folder.
+*  For Windows versions prior to Windows 11, the downloaded files will appear in a subfolder named `WebView2Downloads` within the app package's subfolder in the `Downloads` folder.
+
+###### Downloads Hub
+
+Opening files and folders from the Downloads Hub is disabled.  Clicking on the file or folder icon won't open the respective file/folder.
+
+See also:
+* [Downloads](../concepts/overview-features-apis.md#downloads) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ------------------------------ -->
 #### Xbox, HoloLens, and XAML limitations
 
-This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered at a future point in time.
+This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered for future releases.
 
+
+<!-- ------------------------------ -->
 #### API limitations
 
 The following interfaces aren't accessible in WinUI 2:
