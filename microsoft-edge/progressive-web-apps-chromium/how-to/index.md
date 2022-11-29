@@ -18,6 +18,8 @@ This guide is targeted at web developers who want to learn to build PWAs. To lea
 
 In this guide, you first learn how PWAs work, then create your first simple PWA, which will be a temperature converter app, and then learn more about how to make great PWAs.
 
+You can find the final source code of the app you will be building in this guide on the [PWA getting started demo app repository](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started).
+
 
 <!-- ====================================================================== -->
 ## Prerequisites
