@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/07/2022
+ms.date: 11/29/2022
 ---
 # Using the Microsoft Edge Add-ons API 
 
@@ -48,13 +48,17 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 
    ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL.](../../media/create-api-credentials-button.png)
 
+ > [!IMPORTANT]
+> You can have as many client secrets as you like when coding a file.  For example, you might want to make a 
+> different client secret for each department using the App.
+
+
    The API credentials have now been created; you've enabled or renewed the API.  The **Client ID**, **Client secret**, **Expiry date**, and **Access token URL** are now displayed on the Publish APIs page.
 
 1. Write down the **Client ID**, **Client secret** and the **Access token URL**.  You'll use these values in the next step, to get an access token.
 
 > [!IMPORTANT]
-> Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials). This secret isn't shown again.
-
+> Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials). This particular secret isn't shown again.
 
 <!-- ====================================================================== -->
 ## Retrieving the access token
