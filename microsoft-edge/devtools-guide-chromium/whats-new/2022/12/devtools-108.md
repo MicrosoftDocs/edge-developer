@@ -24,18 +24,16 @@ As of Microsoft Edge 105, you can now download Microsoft Edge WebDriver for macO
 To download Microsoft Edge WebDriver on Apple M1 devices:
 1. In Microsoft Edge, go to `edge://version`, and note the full version number.
 1. Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/).
-1. Find the version of Microsoft Edge WebDriver that matches your specific version of Microsoft Edge, and then download the **Mac M1** offering:
+1. Find the version of Microsoft Edge WebDriver that matches your specific version of Microsoft Edge, and then click the **Mac M1** download link:
 
 ![WebDriver version numbers for download](./devtools-108-images/webdriver-versions.png)
 
 Thank you for your feedback on this issue!
 
 See also:
-* [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
-* [Use WebDriver to automate Microsoft Edge](https://learn.microsoft.com/en-us/microsoft-edge/webdriver-chromium/)
+* [Use WebDriver to automate Microsoft Edge](../../../../webdriver-chromium/index.md)
+* [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/)
 * [Issue #17: No support for Apple silicon?](https://github.com/MicrosoftEdge/EdgeWebDriver/issues/17)
-
-<!-- * [If you need to install Rosetta on your Mac](https://support.apple.com/HT211861) -->
 
 
 <!-- ====================================================================== -->
@@ -66,7 +64,7 @@ We've fixed a few issues of Developer Tools in High Contrast mode that makes it 
 <!-- steps for screenshot: bug report PR 7911593 -->
 
 See also:
-* [Microsoft Edge DevTools extension for Visual Studio Code](https://learn.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
 
 
 <!-- ====================================================================== -->
