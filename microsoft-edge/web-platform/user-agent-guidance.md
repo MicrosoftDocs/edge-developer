@@ -44,7 +44,7 @@ If you must detect browsers, Microsoft recommends using User-Agent Client Hints,
 
 Microsoft Edge supports User-Agent Client Hints starting with version 90.
 
-User-Agent Client Hints is a cleaner method that will increase privacy-preserving while allowing browser information such as browser name, version number, platform, and more. Soon the User-Agent string will be frozen and deprecated by various browsers. For example, the Chrome Platform Status site describes the change in [Feature: Reduce User Agent string information](https://www.chromestatus.com/feature/5704553745874944).
+User-Agent Client Hints is a method that will improve privacy concerns while allowing browser information such as browser name, version number, platform, and more. Soon the User-Agent string will be frozen and deprecated by various browsers. For example, the Chrome Platform Status site describes the change in [Feature: Reduce User Agent string information](https://www.chromestatus.com/feature/5704553745874944).
 
 Employ User-Agent Client Hints when you want to:
 - Determine if new browser activity is from the expected user.
