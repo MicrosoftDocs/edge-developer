@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/26/2022
+ms.date: 11/10/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -41,6 +41,7 @@ The most well-known type of breakpoint is line-of-code.  But line-of-code breakp
 | [Event listener](#event-listener-breakpoints) | On the code that runs after an event, such as `click`, runs.  |
 | [Exception](#exception-breakpoints) | On the line of code that is throwing a caught or uncaught exception.  |
 | [Function](#function-breakpoints) | Whenever a specific command, function, or method is run.  |
+| [Logpoints](#logpoints) | A variant that does not "break" into the debugger but instead logs a message to the console.  |
 
 
 <!-- ====================================================================== -->
@@ -225,6 +226,27 @@ When you're calling `debug()` from the DevTools Console, here's a technique to e
 
 1. Call `debug()` in the DevTools Console, while the code is still paused on your line-of-code breakpoint.
 
+
+<!-- ====================================================================== -->
+## Logpoints
+
+A Logpoint is a breakpoint variant that does not "break" in the debugger, but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint. 
+
+To set a logpoint:
+
+1. Select the Sources tool.
+
+1. Open the file that contains the line of code where you want to insert a logpoint.
+
+1. Right-click on the left of the line of code, in the line number column.
+
+1. Select **Add Logpoint**. A dialog is displayed underneath the line of code.
+
+1. Enter a message or a JavaScript expression that will get evaluated when the logpoint is hit.
+
+1. Press `Enter` to activate the logpoint. A red diamond (or more recently, an orange icon) appears on top of the line number column.
+
+For more information, see [Log messages in the Console tool](/microsoft-edge/devtools-guide-chromium/console/console-log).
 
 <!-- ====================================================================== -->
 ## See also

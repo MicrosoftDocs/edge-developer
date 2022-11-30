@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 11/17/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,15 +22,18 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Get started debugging JavaScript
 
-This article teaches you the basic workflow for debugging any JavaScript issue in DevTools.
+This article teaches you the basic workflow for debugging any JavaScript issue using DevTools.
 
 
 <!-- ====================================================================== -->
 ## Step 1: Reproduce the bug
 
-The first step in debugging is to find a series of actions that consistently reproduce a bug.
+The first step in debugging is to find a sequence of actions that consistently reproduce a bug.
 
-1. Open the demo webpage [Get Started Debugging JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new window or tab.  To do this, right-click the link.  Or, press and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then click the link.
+1. Open the demo webpage [Get Started Debugging JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new window or tab.  To open the webpage, right-click the linK and select "Open link in new tab" or "Open link in new Window" on the popup window.  Alternatively you can press and hold `Ctrl` (for Windows, Linux) or `Command` (for macOS), and then click the link.
+
+   > [!TIP]
+   > Open Microsoft Edge in InPrivate Mode. InPrivate Mode ensures that Microsoft Edge runs in a clean state. For more information, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
 
    <!-- You can view the source files for the Debugging demo at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
@@ -38,7 +41,7 @@ The first step in debugging is to find a series of actions that consistently rep
 
 1. Enter `1` in the **Number 2** text box.
 
-1. Click **Add Number 1 and Number 2**.  The label below the button says `5 + 1 = 51`.  The result should be `6`.  Next, fix the addition error that is the bug.
+1. Click **Add Number 1 and Number 2**.  The label below the button says `5 + 1 = 51`.  The result should be `6`.  Next, go to [Step 2: Get familiar with the Sources tool UI](#step-2-get-familiar-with-the-sources-tool-ui) to start fixing the addition error that's the bug.
 
    ![5 + 1 results in 51, but should be 6](../media/javascript-js-demo-bad.msft.png)
 
@@ -46,13 +49,13 @@ The first step in debugging is to find a series of actions that consistently rep
 <!-- ====================================================================== -->
 ## Step 2: Get familiar with the Sources tool UI
 
-DevTools provides many different tools for different tasks.  Different tasks include changing CSS, profiling page-load performance, and monitoring network requests.  The **Sources** tool is where you debug JavaScript.
+DevTools provides several tools for different tasks.  These tasks include changing CSS, profiling page-load performance, and monitoring network requests.  The **Sources** tool is where you debug JavaScript.
 
-1. To open the **Console** tool in DevTools, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console tool opens:
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-   ![The Console tool.](../media/javascript-console-empty.msft.png)
+   ![DevTools open on Elements](../media/javascript-console-empty.msft.png)
 
-1. Select the **Sources** tool:
+1. Select the **Sources** tool. Select the **Page** tab, and then select the JavaScript file, `get-started.js`.
 
    ![The Sources tool.](../media/javascript-sources-sections.msft.png)
 
@@ -60,11 +63,11 @@ The **Sources** tool UI has three parts.
 
 ![The 3 parts of the Sources tool UI.](../media/javascript-sources-sections-annotated.msft.png)
 
-*  The **Navigator** pane (on the left).  Every file that the webpage requests is listed here.
+1. The **Navigator** pane (in the upper left corner).  Every file that the webpage requests is listed here.
 
-*  The **Editor** pane (in the middle).  After you select a file in the **Navigator** pane, this pane displays the contents of the file.
+2. The **Editor** pane (in the upper right corner).  After you select a file in the **Navigator** pane, this pane displays the contents of the file.
 
-*  The **Debugger** pane (on the right).  This pane provides tools for inspecting the JavaScript for the webpage.  If your DevTools window is narrow, this pane is displayed at the bottom of DevTools.
+3. The **Debugger** pane (at the bottom).  This pane provides tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.
 
 
 <!-- ====================================================================== -->
@@ -97,15 +100,17 @@ In short, breakpoints can help you find and fix bugs faster than the `console.lo
 
 If you step back and think about how the app works, you might make an educated guess that the incorrect sum (`5 + 1 = 51`) is computed in the `click` event listener associated with the **Add Number 1 and Number 2** button.  So, you probably want to pause the code around the time that the `click` listener runs.  **Event Listener Breakpoints** let you do that:
 
-1. In the **Debugger** pane, click **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of expandable event categories, such as **Animation** and **Clipboard**.
+1. In the **Navigator pane**, `(index)` is selected by default. Click `get-started.js`.
 
-1. Next to the **Mouse** event category, click **Expand** (![Expand icon.](../media/expand-icon.msft.png)).  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.
+1. In the **Debugger** pane, click **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of event categories, such as **Animation** and **Clipboard**.
+
+1. Click **Expand** (![Expand icon.](../media/expand-icon.msft.png)) by the **Mouse** event open that category.  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.
 
 1. Select the checkbox next to **click**.  DevTools is now set up to automatically pause when any `click` event listener runs.
 
    ![Select the checkbox next to click.](../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png)
 
-1. Back on the demo, click **Add Number 1 and Number 2** again.  DevTools pauses the demo and highlights a line of code in the **Sources** tool.  DevTools should pause on line 16 in `get-started.js`.
+1. Back on the demo, click **Add Number 1 and Number 2** again.  DevTools pauses the demo and highlights a line of code in the **Sources** tool.  DevTools should pause on line 16 in `get-started.js`, shown in the next code snippet.
 
     ```javascript
     if (inputsAreEmpty()) {
@@ -151,9 +156,13 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
     label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
     ```
 
-1. On the left, the number of this particular line of code is displayed as **34**.  Click line **34**.  DevTools displays a red circle (or more recently, a blue rectangle) to the left of **34**.  The red circle (or blue rectangle) indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before this line of code is run.
+1. The line number for `label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;` is **34**. Click line **34**.  DevTools displays a red circle to the left of **34**.  The red circle indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before this line of code is run.
 
-1. Click **Resume script execution** (![Resume script execution.](../media/resume-script-run-icon.msft.png)).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.
+1. Click **Resume script execution** (![Resume script execution.](../media/resume-script-run-icon.msft.png)).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of each variable to the right of the semi-colon on each line. These values are:
+
+   - `addend1` = "5"
+   - `addend2` = "1"
+   - `sum` = "51"
 
    ![DevTools pauses on the line-of-code breakpoint on line 34.](../media/javascript-sources-breakpoint-paused.msft.png)
 
@@ -161,7 +170,7 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
 <!-- ====================================================================== -->
 ## Step 6: Check variable values
 
-The values of `addend1`, `addend2`, and `sum` look suspicious.  The values are wrapped in quotes.  The quotations mean that the value is a string, which is a good hypothesis to explain the cause of the bug.  Gather more information about the situation.  DevTools provides many tools for examining variable values.
+The values of `addend1`, `addend2`, and `sum` look suspicious.  These values are wrapped in quotes, which means each value is a string. This is a good clue to the cause of the bug.  The next step is to gather more information about these variable values.  DevTools provides many tools for examining variable values.
 
 #### Method 1: The Scope pane
 
@@ -177,7 +186,12 @@ The **Watch** pane allows you to monitor the values of variables (such as `sum`)
 
 1. Click **Add watch expression** (![Add watch expression.](../media/add-expression-icon.msft.png)).
 
-1. Type `typeof sum`, and then press `Enter`.  The **Watch** pane displays `typeof sum: "string"`.  The value to the right of the colon is the result of your watch expression:
+1. Type `typeof sum`.
+
+1. Press `Enter`.  DevTools displays `typeof sum: "string"`.  The value to the right of the colon is the result of your watch expression.
+
+> [!NOTE]
+> In the following screenshot, the watch expression `typeof sum` is displayed in the **Watch** pane.  If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.
 
 ![The Watch pane.](../media/javascript-sources-breakpoint-paused-watch.msft.png)
 
@@ -213,7 +227,10 @@ We've identified a possible fix for the bug.  Next, edit the JavaScript code dir
 
 1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save your change.
 
-1. Click **Deactivate breakpoints** (![Deactivate breakpoints.](../media/deactivate-breakpoints-button-icon.msft.png)).  It changes blue to indicate the option is active.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set.
+1. Click **Deactivate breakpoints** (![Deactivate breakpoints.](../media/deactivate-breakpoints-button-icon.msft.png)).  The breakpoint's icon changes to gray to indicate that the breakpoint is inactive.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
+
+   ![Result of troubleshooting and fixing bug](../media/javascript-bug-fixed.msft.png)
+
 
 1. Try out the demo with different values.  The demo now calculates correctly.
 
