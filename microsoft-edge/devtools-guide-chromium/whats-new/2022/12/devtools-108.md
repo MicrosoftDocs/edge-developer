@@ -19,11 +19,14 @@ ms.date: 12/01/2022
 
 <!-- Subtitle: On Apple M1 devices, Microsoft Edge WebDriver was previously running under emulation. Now, it will run faster without emulation. -->
 
-As of Microsoft Edge 105, you can now download Microsoft Edge WebDriver for macOS running on Apple M1 devices.  Previously, Microsoft Edge WebDriver on macOS was running under emulation with [Rosetta](https://support.apple.com/HT211861).  With the **Mac M1** version, Microsoft Edge WebDriver has improved performance, because it no longer runs under emulation.
+You can now download Microsoft Edge WebDriver for macOS running on Apple M1 devices.  Previously, Microsoft Edge WebDriver on macOS was running under emulation with [Rosetta](https://support.apple.com/HT211861).  With the **Mac M1** version, Microsoft Edge WebDriver has improved performance, because it no longer runs under emulation.
 
 To download Microsoft Edge WebDriver on Apple M1 devices:
+
 1. In Microsoft Edge, go to `edge://version`, and note the full version number.
+
 1. Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/).
+
 1. Find the version of Microsoft Edge WebDriver that matches your specific version of Microsoft Edge, and then click the **Mac M1** download link:
 
 ![WebDriver version numbers for download](./devtools-108-images/webdriver-versions.png)
@@ -41,7 +44,7 @@ See also:
 
 <!-- Subtitle: This update fixes a bug related to opening DevTools from the Command Palette in Microsoft Edge. -->
 
-The Microsoft Edge Command Palette is an experimental feature that allows users to perform common tasks in Microsoft Edge.  In previous versions of Microsoft Edge, DevTools-related commands for opening subpanel tabs within a tool didn't navigate to the correct tool.  This update fixes this bug, improving the usability of commands such as **Sources: Show Snippets**:
+The Microsoft Edge Command Palette is an experimental feature that allows users to perform common tasks in Microsoft Edge.  In previous versions of Microsoft Edge, DevTools-related commands for opening specific parts of a tool didn't navigate correctly, such as the **Styles** tab in the **Elements** tool or the **Snippets** tab in the **Sources** tool.  In Microsoft Edge 108, this issue is fixed, improving the usability of commands such as **Sources: Show Snippets**:
 
 ![Command Palette](./devtools-108-images/command-palette.png)
 
@@ -51,6 +54,7 @@ Now, when you select **Sources: Show Snippets**, the **Sources** tool opens with
 
 See also:
 * [Run commands via keyboard with Command Palette](../../../experimental-features/edge-command-palette.md)
+* [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md)
 
 
 <!-- ====================================================================== -->
@@ -62,12 +66,12 @@ We've fixed a few issues with Developer Tools in High Contrast mode that makes i
 
 In previous releases of Microsoft Edge, when using High Contrast mode, sometimes there was low contrast in the DevTools UI, such as right-click menus; icons for more information about issues; hovering over list items; error message text; or links.  For example, in the **Elements** tool, some tabs had dark text on a dark background:
 
-![DevTools UI controls had low-contrast text in High Contrast mode](./devtools-108-images/high-contrast-mode-low-contrast.png)
+![DevTools tabs with low-contrast text in High Contrast mode](./devtools-108-images/high-contrast-mode-low-contrast.png)
 <!-- Desert theme, Edge 107 -->
 
 The UI controls now have high contrast:
 
-![DevTools UI controls now have high-contrast text in High Contrast mode](./devtools-108-images/high-contrast-mode-high-contrast.png)
+![DevTools tabs now have high-contrast text in High Contrast mode](./devtools-108-images/high-contrast-mode-high-contrast.png)
 <!-- Desert theme, Edge 109 -->
 
 See also:
@@ -82,11 +86,15 @@ See also:
 
 In previous versions of Microsoft Edge, in Focus Mode, disabling JavaScript in the DevTools didn't produce a visual indication in the **Sources** tool.  In Microsoft Edge version 107, this issue has been fixed.  Disabling JavaScript will now produce a warning icon (![JavaScript Disabled warning icon](./devtools-108-images/javascript-disabled-warning-icon.png)) next to the **Sources** tool icon on the Activity Bar.
 
-![Using Command Menu to select Disable JavaScript](./devtools-108-images/disable-javascript.png)
+1. Open the **Command Menu** by pressing `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
 
-The **Sources** tool icon on the Activity Bar has a yellow warning icon to indicate that JavaScript is disabled:
+1. Start typing **disable**, and then select the **Disable JavaScript** command to run it:
 
-![JavaScript Disabled indicator next to Sources tool icon on Activity Bar](./devtools-108-images/javascript-disabled.png)
+   ![Using Command Menu to select Disable JavaScript](./devtools-108-images/disable-javascript.png)
+
+   A yellow warning icon is added to the **Sources** tool icon on the Activity Bar to indicate that JavaScript is disabled:
+
+   ![JavaScript Disabled indicator next to Sources tool icon on Activity Bar](./devtools-108-images/javascript-disabled.png)
 
 See also:
 * [Disable JavaScript](../../../javascript/disable.md)
