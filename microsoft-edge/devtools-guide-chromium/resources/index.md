@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/28/2022
+ms.date: 11/30/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,7 +22,7 @@ ms.date: 11/28/2022
    limitations under the License.  -->
 # View page resources
 
-Resources are the files that a page needs in order to display correctly.  Examples of resources include:
+Resources are the files that a page needs to display correctly.  Examples of resources include:
 *  CSS files.
 *  JavaScript files.
 *  HTML files.
@@ -30,19 +30,23 @@ Resources are the files that a page needs in order to display correctly.  Exampl
 
 You can view the resources that make up a web page from within several tools, or panels.
 
-This guide assumes that you are familiar with the basics of [web development](https://developer.mozilla.org/docs/Learn) and [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md).
+This guide assumes that you are familiar with the basics of web development described in [Learn web development](https://developer.mozilla.org/docs/Learn) and [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md).
 
 
 <!-- ====================================================================== -->
 ## Open resources from the Command Menu
 
-When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.
+When you know the name of the resource that you want to inspect, the **Command Menu** in DevTools provides a fast way of finding and opening the resource.
 
-1. Press `Ctrl`+ `Shift`+ `P` (Windows, Linux) or `Command`+`P` (macOS).  The **Open File** dialog opens.
+1. Press `Ctrl`+ `P` (Windows, Linux) or `Command`+`P` (macOS). You can also click the (![Customize icon.](../media/customize-devtools-icon-light-theme.png)) menu button and then select **Open file**. 
+
+   The **Open file** dialog:
 
    ![The Open File dialog.](../media/resources-command-menu-empty.msft.png)
 
-1. Select the file from the dropdown list, or start typing the filename and press `Enter` once the correct file is highlighted in the autocomplete box.
+1. Start typing the filename and press `Enter` when the correct file is highlighted in the autocomplete box or select the file from the dropdown list.
+
+   Provide filename:
 
    ![Type a filename in the Open File dialog.](../media/resources-command-menu-file-search.msft.png)
 
@@ -50,17 +54,19 @@ When you know the name of the resource that you want to inspect, the **Command M
 <!-- ====================================================================== -->
 ## Open resources in the Network tool
 
-See [Inspect the details of a resource](../network/index.md#inspect-the-details-of-the-resource) in _Inspect network activity_.
+See [Inspect the details of the resource](../network/index.md#inspect-the-details-of-the-resource) in _Inspect network activity_ to learn how to get the details for a resource.
+
 <!--why?-->
 
-<!-- need lead-in -->
+Show network resource details:
 
 ![Inspect a resource in the Network tool.](../media/resources-network-response.msft.png)
 
-### Reveal resources in the Network tool from other panels
+#### Reveal resources in the Network tool from other panels
 
 The next section, [Browse resources in the Network panel](#browse-resources-in-the-network-panel), shows how to view resources from various parts of the DevTools UI.  To inspect a resource in the **Network** tool, right-click the resource and select **Reveal in Network panel**.
 
+Pick resource to show in Network panel:
 ![Revealing resources in the Network panel.](../media/resources-sources-page-reveal-in-network-panel.msft.png)
 
 
