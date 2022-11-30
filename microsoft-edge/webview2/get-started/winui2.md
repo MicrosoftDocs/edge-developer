@@ -329,11 +329,7 @@ This environment variable must be set prior to `CoreWebView2` creation, which oc
 <!-- ------------------------------ -->
 #### Downloading files
 
-There are a couple of known limitations of the current downloads behavior for WebView2 in UWP.
-
-###### Which version supports downloading files
-
-Downloading files is only available in preview via the Edge Dev channel until Edge 104; moreover, it is disabled by default.  To enable downloading files, use the command-line switch `edge-webview-optional-enable-uwp-regular-downloads`.
+There are a couple of known limitations for current downloads behavior for WebView2 in UWP.
 
 ###### Save As
 
@@ -344,10 +340,6 @@ Saving files via **Save As** is working and is enabled for WebView2 for UWP apps
 If the host doesn't change the `ResultFilePath` of the downloaded file, the downloaded files will be downloaded to a subfolder with the app package's name in the `Downloads` folder.
 
 If the host changes the `ResultFilePath` of the downloaded file, the file will only be downloaded if the app has access to that file path by default.
-
-Depending on the user's OS, downloaded files will be downloaded to different folders:
-*  For Windows 11, the downloaded files will appear in a subfolder with the app package's name in the `Downloads` folder.
-*  For Windows versions prior to Windows 11, the downloaded files will appear in a subfolder named `WebView2Downloads` within the app package's subfolder in the `Downloads` folder.
 
 ###### Downloads Hub
 
