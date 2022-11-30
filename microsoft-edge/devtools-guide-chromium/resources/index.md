@@ -166,7 +166,7 @@ Use the **Application** tool to group resources by file type:
 
 To browse files by type, see [Filter by resource type](../network/index.md#filter-by-resource-type).
 
-Filter for CSS:
+Filter for CSS files:
 
 ![Filter for CSS in the Network Log.](../media/resources-network-resources-filter-css.msft.png)
 
