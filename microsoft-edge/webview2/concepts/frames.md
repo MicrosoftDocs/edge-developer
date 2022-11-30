@@ -20,11 +20,15 @@ WebView2 supports APIs to interact with iframes.  You can:
 * Communicate between the host app and iframes, sending messages in both directions.
 * Allow the app to ignore the `X-Frame-Options` HTTP response header.
 
+See also:
+* [iframes](./overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
+* [HTML <iframe\> Tag](https://www.w3schools.com/tags/tag_iframe.asp)<!-- keep escape -->
+
 
 <!-- ====================================================================== -->
 ## Subscribe to the FrameCreated event to obtain a frame
 
-To interact frames in your host app, the first step is to subscribe to the `FrameCreated` event so that your host app obtains a frame object.  The `FrameCreated` event is raised whenever a new frame is created.  After your host app has obtained a frame object, use the frame object to monitor changes and interact with this specific frame.
+To interact with frames in your host app, the first step is to subscribe to the `FrameCreated` event so that your host app obtains a frame object.  The `FrameCreated` event is raised whenever a new frame is created.  After your host app has obtained a frame object, use the frame object to monitor changes and interact with this specific frame.
 
 Your host app must monitor the lifetime of a frame by subscribing to the `CoreWebView2Frame.Destroyed` event, because when the frame is destroyed, your host app can no longer reference that frame.  Frames get created and destroyed during each new webpage navigation.  Use the `CoreWebView2Frame.IsDestroyed` method to check whether the frame still exists.
 
@@ -74,52 +78,62 @@ Navigation can potentially happen within a frame.  As a simple use case, an `ifr
 
 The frame itself is navigating.  A webpage navigates to a URL.  Similarly, a frame potentially navigates.
 
-After the frame is created, the frame navigates as driven by your host app.  To monitor what's going on in the main page, events such as `NavigationStarted`, `NavigationCompleted`, and `HistoryChanged` enable the host app to navigate back and forth among frames or webpages.  Frames are navigated to a new URL less often than webpages, but the same navigation style is supported.  The user usually cannot navigate inside a frame, although JavaScript enables that; a frame is usually static regarding navigation.
+After the frame is created, the frame navigates as driven by your host app.  To monitor what's going on in the main page, events such as `NavigationStarting`, `NavigationCompleted`, and `HistoryChanged` enable the host app to navigate back and forth among frames or webpages.  Frames are navigated to a new URL less often than webpages, but the same navigation style is supported.  The user usually cannot navigate inside a frame, although JavaScript enables that; a frame is usually static regarding navigation.
 
 See also:
-* [Standard sequence of events](./navigation-events.md) in _Navigation events for WebView2 apps_.
+* [Standard sequence of events](./navigation-events.md#standard-sequence-of-events) in _Navigation events for WebView2 apps_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
 
-Recommended:
+Navigation events:
 * [CoreWebView2Frame.NavigationStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationstarting)
+   * [CoreWebView2.FrameNavigationStarting Event (superseded)](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationstarting)
+* [CoreWebView2.SourceChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.sourcechanged)
+* [CoreWebView2Frame.ContentLoading Event](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2frame.contentloading?view=webview2-dotnet-1.0.1418.22)
+* [CoreWebView2.HistoryChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.historychanged)
+* [CoreWebView2.BasicAuthenticationRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
+* [DOMContentLoaded](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2frame.domcontentloaded?view=webview2-dotnet-1.0.1418.22)
 * [CoreWebView2Frame.NavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationcompleted)
-
-Superseded:
-* [CoreWebView2.FrameNavigationStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationstarting)
-* [CoreWebView2.FrameNavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationcompleted)
+   * [CoreWebView2.FrameNavigationCompleted Event (superseded)](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationcompleted)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
 
-Recommended:
+Navigation events:
 * [CoreWebView2Frame.NavigationStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#navigationstarting)
+   * [CoreWebView2.FrameNavigationStarting Event (superseded)](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationstarting)
+* [CoreWebView2.SourceChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#sourcechanged)
+* [CoreWebView2Frame.ContentLoading Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#contentloading)
+* [CoreWebView2.HistoryChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#historychanged)
+* [CoreWebView2.BasicAuthenticationRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#basicauthenticationrequested)
+* [CoreWebView2.DOMContentLoaded Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#domcontentloaded)
 * [CoreWebView2Frame.NavigationCompleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#navigationcompleted)
-
-Superseded:
-* [CoreWebView2.FrameNavigationStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationstarting)
-* [CoreWebView2.FrameNavigationCompleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationcompleted)
+   * [CoreWebView2.FrameNavigationCompleted Event (superseded)](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationcompleted)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler)
 * [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) - This method can be used for an iframe as well as for a webpage.  Your script must check whether it's in an iframe.
 
-Recommended:
+Navigation events:
 * [ICoreWebView2Frame2::NavigationStarting event (add](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationstarting), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationstarting)
+   * [ICoreWebView2::FrameNavigationStarting event (superseded) (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationstarting), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationstarting)
+* [ICoreWebView2::SourceChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_sourcechanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_sourcechanged)
+* [ICoreWebView2::ContentLoading event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_contentloading), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_contentloading)
+   * [ICoreWebView2Frame2::ContentLoading event (add](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_contentloading), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_contentloading)<!--todo: move up, over? is non-frame event superseded?-->
+* [ICoreWebView2::HistoryChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_historychanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_historychanged)
+* [ICoreWebView2_10::BasicAuthenticationRequested event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_10#remove_basicauthenticationrequested)
+* [ICoreWebView2_2::DOMContentLoaded event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_domcontentloaded), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_domcontentloaded)
+   * [ICoreWebView2Frame2::DOMContentLoaded event (add](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_domcontentloaded), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_domcontentloaded)<!--todo: move up, over? is non-frame event superseded?-->
 * [ICoreWebView2Frame2::NavigationCompleted event (add](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationcompleted), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationcompleted)
-
-Superseded:
-* [ICoreWebView2::FrameNavigationStarting event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationstarting), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationstarting)
-* [ICoreWebView2::FrameNavigationCompleted event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted)
+   * [ICoreWebView2::FrameNavigationCompleted event (superseded) (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted)
 
 ---
 
-The events on `CoreWebView2Frame` are recommended rather than the events on `CoreWebView2`, because the `CoreWebView2Frame` type supports more scenarios to allow interactions with frames.
-
+Regarding the duplicated equivalent `NavigationStarting` and `NavigationCompleted` events, the events on `CoreWebView2Frame` are recommended rather than the equivalent, superseded events on `CoreWebView2`, because the `CoreWebView2Frame` type supports more scenarios to allow interactions with frames.
 
 See also:
 * [Standard sequence of events](./navigation-events.md) in _Navigation events for WebView2 apps_.
@@ -132,10 +146,6 @@ See also:
 
 To communicate between the native side of the host app and JavaScript that's in an iframe, use host objects.  A _host object_ is an object that you create in the host app and then use from JavaScript code in the webpage side of the app.
 
-The host app subscribes to web messages to receive messages from script within iframes.
-
-The host app sends web messages to script within iframes.
-
 Using native-side APIs from script within a frame, via a host object, is similar to web/native interop page structure as explained in [Call native-side code from web-side code](../how-to/hostobject.md):
 
 To use host objects within an iframe:
@@ -143,20 +153,12 @@ To use host objects within an iframe:
 1. Add the host object on the native side by using `AddHostObjectToScriptWithOrigins` (Win32) or `AddHostObjectToScript` (.NET).
 1. From JavaScript in your web-side code, access this host object by using `chrome.webview.hostObjects.<name>` API.
 
-When using `AddHostObjectToScript`, you need to specify which URLs will be allowed (in an `origins` parameter), for security reasons.
-
-If a frame wants to control or execute objects that are created on the native side (that is, if you have native objects that you want to control from the JavaScript side), use `AddHostObjectToScriptWithOrigins` (Win32) or the `AddHostObjectToScript` method overload that has an `origins` parameter.
-
-The `AddHostObjectToScriptWithOrigins` (or equivalent frame-supporting method overload) takes an additional parameter, `origins`.  The `origins` parameter identifies the URLs for which iframes will have access to the host object.
+To access and control native-side objects from web-side JavaScript in a frame, use `AddHostObjectToScriptWithOrigins` (Win32) or `CoreWebView2Frame.AddHostObjectToScript` (.NET), which has an `origins` parameter.  The `origins` parameter specifies which URLs iframes will be allowed to access, for security reasons.  This parameter identifies the URLs for which iframes will have access to the host object.
 
 If the frame is navigated to a URL that is not in the `origins` list, the frame won't be able to operate the host object; the frame won't be able to read or write any properties.
 See the **Method name** table in the `AddHostObjectToScript` method for your framework.  See the following two rows:
 * `applyHostFunction`, `getHostProperty`, and `setHostProperty`.
 * `getLocalProperty` and `setLocalProperty`.
-
-URLs that aren't in the `origins` list won't be able to call any methods or access properties on the host object.
-
-URLs that aren't in the `origins` list will need to be implemented on the native side of the host app.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -198,7 +200,9 @@ See also:
 <!-- ====================================================================== -->
 ## Sending and receiving messages
 
-You can send and receive messages between native app and JavaScript code in iframe.  Messages are sent from iframe in an HTML page (via JavaScript) and are received by the host app.
+Messages can be sent between the native app and JavaScript code that's in an iframe:
+*  You can send messages from JavaScript in an iframe in an HTML page to the host app.
+*  You can send messages from the host app to JavaScript in an iframe in an HTML page.
 
 
 #### Sending web messages from an iframe to the host app

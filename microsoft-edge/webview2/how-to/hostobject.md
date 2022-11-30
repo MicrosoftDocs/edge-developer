@@ -32,7 +32,7 @@ WebView2 enables applications to bridge the gap between the web and native sides
 
 ---
 
-This article mainly covers mainly Win32/C++, and also covers some aspects of .NET/C# within frames.  For WinRT, see [Call native-side WinRT code from web-side code](./winrt-from-js.md).
+This article mainly covers Win32/C++, and also covers some aspects of .NET/C# within frames.  For WinRT, see [Call native-side WinRT code from web-side code](./winrt-from-js.md).
 
 
 #### Why use `AddHostObjectToScript`?
@@ -45,7 +45,7 @@ Scenarios that may benefit from using host objects in script:
 
   * There is a keyboard API, and you want to call the `keyboardObject.showKeyboard` function from the web side.
 
-  * JavaScript is sandboxed, limiting its ability on the native side. For example, if you need to access a file on the native side, you must use the native file system. If you have a native object that's exposed to JavaScript via `AddHostObjectToScript`, you can use the object to manipulate files on the native file system.
+  * Accessing the file system, not just the webpage sandbox, via JavaScript.  JavaScript is sandboxed, which prevents it from directly accessing the file system.  By using `AddHostObjectToScript` to create a native object that's exposed to JavaScript, you can use the host object to manipulate files on the file system, not just in the webpage sandbox.
 
 This article uses the [Win32 sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) to demonstrate some practical applications of `AddHostObjectToScript`.
 
@@ -59,19 +59,15 @@ This article uses the [Win32 sample app](https://github.com/MicrosoftEdge/WebVie
 
 1.  Open Microsoft Visual Studio.  We recommend initially opening the Win32 sample by using Visual Studio 2019.
 
-1.  In your local copy of the cloned `WebView2Samples` repo, open `WebView2Samples > SampleApps > WebView2Samples.sln`.  [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln).) includes the `WebView2APISample` project, which is the Win32 sample app.  Keep the sample app solution open, to follow along with the rest of this article.
+1.  In your local copy of the cloned `WebView2Samples` repo, open `WebView2Samples` > `SampleApps` > [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln).  `WebView2Samples.sln` includes the `WebView2APISample` project, which is the Win32 sample app.  Keep the sample app solution open, to follow along with the rest of this article.
 
 
 <!-- ====================================================================== -->
 ## Step 2: Define the host object's COM interface using IDL
 
-Define the host object's COM interface in an `.idl` file, like [HostObjectSample.idl](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSample.idl), to describe the methods and properties on the host object.  Here's how the Win32 sample app defines a host object with example methods and properties.
+Define the host object's COM interface in an `.idl` file, like [HostObjectSample.idl](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSample.idl), to describe the methods and properties on the host object.
 
-To use the `AddHostObjectToScript` API, you first need to define a host object.  For Win32/C++, the host object definition in an `idl` file describes the exposed or wrapped properties and methods.
-
-In this step, the Win32 sample app defines the host object's COM interface using interface definition language (IDL). This is demonstrated in [HostObjectSample.idl](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSample.idl).  The IDL (`.idl`) file *defines* an interface, but doesn't implement it.
-
-In the Win32 sample app project, the file [HostObjectSample.idl](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSample.idl) defines a COM object.  This step serves as a model showing how to define your own object in an IDL file.
+First, use interface definition language (IDL) to define the host object's COM interface.  This host object definition in an `idl` file describes the exposed (or "wrapped") native-side properties and methods.  The IDL (`.idl`) file *defines* an interface, but doesn't implement it.
 
 1.  In Visual Studio **Solution Explorer**, expand **WebView2APISample** > **Source Files**, and then double-click `HostObjectSample.idl` to open it.
 
@@ -202,7 +198,7 @@ Next, we examine two specific properties that were defined in the IDL, to show h
     }
     ```
 
-1.  Examine the date property, which we trace throughout this article.
+1.  Examine `DateProperty`, which we trace throughout this article.
 
 
 <!-- ====================================================================== -->
@@ -310,7 +306,7 @@ So far, we've built our interface and implemented our native host object.  Now w
 
 ##### [.NET in a frame](#tab/dotnetframe)
 
-To add the host object to an iframe, we'll use an overload of `CoreWebView2Frame.AddHostObjectToScript` which takes an `origins` parameter.
+To add the host object to an iframe, we'll use `CoreWebView2Frame.AddHostObjectToScript`, which takes an `origins` parameter.
 
 <!-- copied from non-published sample-->
 
