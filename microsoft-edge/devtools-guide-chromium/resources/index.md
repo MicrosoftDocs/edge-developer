@@ -32,7 +32,7 @@ You can view the resources that make up a web page from within several tools, or
 
 This guide assumes that you are familiar with the basics of web development described in [Learn web development](https://developer.mozilla.org/docs/Learn) and [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md).
 
-
+To open DevTools, right-click the webpage, and then select **Inspect**. Or press `Ctrl`+ `Shift`+ `I` (Windows, Linux) or `Command`+ `Option`+ `I` (macOS).
 <!-- ====================================================================== -->
 ## Open resources from the Command Menu
 
