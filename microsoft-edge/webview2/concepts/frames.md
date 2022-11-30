@@ -91,10 +91,10 @@ Navigation events:
 * [CoreWebView2Frame.NavigationStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationstarting)
    * [CoreWebView2.FrameNavigationStarting Event (superseded)](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationstarting)
 * [CoreWebView2.SourceChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.sourcechanged)
-* [CoreWebView2Frame.ContentLoading Event](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2frame.contentloading?view=webview2-dotnet-1.0.1418.22)
+* [CoreWebView2Frame.ContentLoading Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.contentloading)
 * [CoreWebView2.HistoryChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.historychanged)
 * [CoreWebView2.BasicAuthenticationRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
-* [DOMContentLoaded](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2frame.domcontentloaded?view=webview2-dotnet-1.0.1418.22)
+* [DOMContentLoaded](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.domcontentloaded)
 * [CoreWebView2Frame.NavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationcompleted)
    * [CoreWebView2.FrameNavigationCompleted Event (superseded)](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationcompleted)
 
