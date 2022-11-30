@@ -36,7 +36,7 @@ Thank you for your feedback on this issue!
 See also:
 * [Use WebDriver to automate Microsoft Edge](../../../../webdriver-chromium/index.md)
 * [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/)
-* [Issue #17: No support for Apple silicon?](https://github.com/MicrosoftEdge/EdgeWebDriver/issues/17)
+* [Issue #17: Support for Apple silicon](https://github.com/MicrosoftEdge/EdgeWebDriver/issues/17)
 
 
 <!-- ====================================================================== -->
