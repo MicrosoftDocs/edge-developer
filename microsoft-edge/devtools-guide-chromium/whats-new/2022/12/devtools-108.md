@@ -60,17 +60,19 @@ See also:
 
 We've fixed a few issues with Developer Tools in High Contrast mode that makes it easier for you to navigate the UI.  High Contrast mode is an accessibility feature of Windows that allows you to differentiate more easily between different sections of the UI.
 
-In previous releases of Microsoft Edge, when using High Contrast mode, sometimes there was low contrast in the DevTools UI.  For example, in the **Network** tool, some tabs, links, or buttons had dark text on a dark background:
+In previous releases of Microsoft Edge, when using High Contrast mode, sometimes there was low contrast in the DevTools UI.  For example, in the **Network** tool, some tabs had dark text on a dark background:
 
 ![DevTools UI controls had low-contrast text in High Contrast mode](./devtools-108-images/high-contrast-mode-low-contrast.png)
+<!-- Desert theme, Edge 107 -->
 
-The UI controls now have white text on a dark background:
+The UI controls now have high contrast:
 
 ![DevTools UI controls now have high-contrast text in High Contrast mode](./devtools-108-images/high-contrast-mode-high-contrast.png)
-<!-- steps for screenshot: bug report PR 7911593 -->
+<!-- Desert theme, Edge 109 -->
 
 See also:
-* [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
+* [Apply a color theme to DevTools](../../../customize/theme.md)
+* [Check for contrast issues with dark theme and light theme](../../../accessibility/test-dark-mode.md)
 
 
 <!-- ====================================================================== -->
