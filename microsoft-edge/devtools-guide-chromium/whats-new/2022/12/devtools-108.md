@@ -58,9 +58,15 @@ See also:
 
 <!-- Subtitle: High Contrast Mode fixes. -->
 
-We've fixed a few issues of Developer Tools in High Contrast mode that makes it easier for you to navigate. High Contrast mode is an accessibility feature of Windows that allows you to differentiate more easily between different sections of the UI.
+We've fixed a few issues with Developer Tools in High Contrast mode that makes it easier for you to navigate the UI.  High Contrast mode is an accessibility feature of Windows that allows you to differentiate more easily between different sections of the UI.
 
-![Edge DevTools tabs in High Contrast mode](./devtools-108-images/high-contrast-mode-vscode.png)
+In previous releases of Microsoft Edge, when using High Contrast mode, sometimes there was low contrast in the DevTools UI.  For example, in the **Network** tool, some tabs, links, or buttons had dark text on a dark background:
+
+![DevTools UI controls had low-contrast text in High Contrast mode](./devtools-108-images/high-contrast-mode-low-contrast.png)
+
+The UI controls now have white text on a dark background:
+
+![DevTools UI controls now have high-contrast text in High Contrast mode](./devtools-108-images/high-contrast-mode-high-contrast.png)
 <!-- steps for screenshot: bug report PR 7911593 -->
 
 See also:
@@ -91,10 +97,8 @@ See also:
 Microsoft Edge 108 also includes the following updates from the Chromium project:
 
 * [Hints for inactive CSS properties](https://developer.chrome.com/blog/new-in-devtools-108/#css-hint)
-* [Auto-detect XPath and text selectors in the Recorder panel](https://developer.chrome.com/blog/new-in-devtools-108/#recorder)
 * [Step through comma-separated expressions](https://developer.chrome.com/blog/new-in-devtools-108/#debugging)
 * [Improved Ignore list setting](https://developer.chrome.com/blog/new-in-devtools-108/#ignore-list)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-108/#misc)
 
 
 <!-- ====================================================================== -->
