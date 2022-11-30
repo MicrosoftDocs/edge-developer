@@ -18,7 +18,7 @@ To port your Chrome extension:
    > [!NOTE]
    > If your extension uses APIs that aren't supported by Microsoft Edge, it might not port directly.
 
-1. Remove the `update_URL` field from the manifest file.
+1. Remove the `update_url` field from the manifest file.
 
 1. If `Chrome` is used in either the name or the description of your extension, rebrand your extension using `Microsoft Edge`.  To pass the certification process, the changes are required.
 

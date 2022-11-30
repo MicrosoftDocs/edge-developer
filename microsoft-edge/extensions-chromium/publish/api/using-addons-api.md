@@ -59,8 +59,6 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 <!-- ====================================================================== -->
 ## Retrieving the access token
 
-
-
 After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the **Before you begin** steps above.
 
 ```rest
@@ -147,8 +145,8 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 If the request succeeds and the update process begins, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` that's required for checking the status of the update operation.
 
-See also:
 
+See also:
 *  API Reference: [Upload a package to update an existing submission](addons-api-reference.md#upload-a-package-to-update-an-existing-submission)
 
 
@@ -173,8 +171,8 @@ Header Parameters: Authorization: Bearer $TOKEN
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package/operations/$operationID
 ```
 
-See also:
 
+See also:
 *  API Reference: [Check the status of a package upload](addons-api-reference.md#check-the-status-of-a-package-upload)
 
 
@@ -203,8 +201,8 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 If the request succeeds and the publishing process begins, you'll receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` that's required for checking the status of the publish operation.
 
-See also:
 
+See also:
 *  API Reference: [Publish the product draft submission](addons-api-reference.md#publish-the-product-draft-submission)
 
 
@@ -229,6 +227,6 @@ Header Parameters: Authorization: Bearer $TOKEN
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
 ```
 
-See also:
 
+See also:
 *  [Using the Microsoft Edge Add-ons API: Check the publishing status](addons-api-reference.md#check-the-publishing-status)
