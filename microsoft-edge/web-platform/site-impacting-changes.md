@@ -11,13 +11,13 @@ ms.date: 11/23/2022
 
 This article lists differences between the schedule of changes for Microsoft Edge versus the Chromium project, and high-impact changes which the Microsoft Edge team is tracking especially closely.
   
-The web platform is a collection of technologies used for building webpages, including HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, changes may affect the functionality of existing webpages.
+The web platform is a collection of technologies used for building webpages, including HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, these changes may affect the functionality of existing webpages.
 
-For functionality and compatibility reasons, Microsoft Edge adopts nearly all of the Chromium project's changes to the web platform.  Microsoft remains in full control of the Microsoft Edge browser and may defer or reject changes.  The Microsoft Edge team decides if the change benefits browser users.
+For functionality and compatibility reasons, Microsoft Edge adopts nearly all of the Chromium project's changes to the web platform.  Microsoft retains full control of the Microsoft Edge browser and may defer or reject changes.  Then, the Microsoft Edge team decides if the change benefits browser users.
 
 For information about upcoming Chromium project web platform changes, see [Chrome Platform Status Release timeline](https://chromestatus.com/roadmap).
 
-Check this article often.  The Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
+T=Check this article often as the Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
 
 
 <!-- ====================================================================== -->

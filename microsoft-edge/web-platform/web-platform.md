@@ -35,7 +35,7 @@ See [Site compatibility-impacting changes coming to Microsoft Edge](site-impacti
 <!-- ====================================================================== -->
 ## Move users to Microsoft Edge from Internet Explorer
 
- When an Internet Explorer user visits an incompatible public website, the user may be informed by the website that the website is incompatible with Internet Explorer, and that the user must switch to a more up-to-date browser in order to use the website properly.
+When an Internet Explorer user visits an incompatible public website, the user may be informed by the website that the website is incompatible with Internet Explorer, and that the user must switch to a more up-to-date browser in order to use the website properly.
 
 To minimize disruptions, Microsoft Edge supports a new capability that automatically redirects users.  When an Internet Explorer user goes to a website that's incompatible with Internet Explorer, Windows can automatically redirect the user to Microsoft Edge.  Only websites that are part of the _Need Microsoft Edge_ list are redirected.
 

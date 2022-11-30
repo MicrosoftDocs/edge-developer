@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/21/2022
+ms.date: 08/19/2022
 ---
 # Customize the password reveal button
 
