@@ -1196,6 +1196,10 @@
               href: webview2/concepts/distribution.md
               displayName: 
 
+            - name: Working with content in WebView2 apps
+              href: webview2/concepts/working-with-content.md
+              displayName: 
+
 # -----------------------------------------------------------------------------
         - name: Debug WebView2 apps
           items: 
