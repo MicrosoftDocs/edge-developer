@@ -18,7 +18,7 @@ For functionality and compatibility reasons, Microsoft Edge adopts nearly all of
 
 For information about upcoming Chromium project web platform changes, see [Chrome Platform Status Release timeline](https://chromestatus.com/roadmap).
 
-T=Check this article often as the Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
+Check this article often as the Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
 
 
 <!-- ====================================================================== -->
