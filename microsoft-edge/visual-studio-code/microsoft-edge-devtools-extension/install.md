@@ -125,9 +125,9 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 
    The **Explorer** tree lists many demos, including **demo-to-do**.
 
-1. In Visual Studio, select **File** > **Close Folder**.
+1. In Visual Studio Code, select **File** > **Close Folder**.
 
-1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./install-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens.
+1. In the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./install-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens.
 
 1. In the **Microsoft Edge Tools** > **Targets** pane, click the **Open Folder** button.  The **Open Folder** dialog box opens.  Navigate to the `demo-to-do` folder in the Demo repo that you cloned, select the folder or go into it, and then click the **Select Folder** button:
 
