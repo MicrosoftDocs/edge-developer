@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 01/07/2021
+ms.date: 11/28/2022
 ---
 # Use a web app manifest to integrate a Progressive Web App into the operating system
 

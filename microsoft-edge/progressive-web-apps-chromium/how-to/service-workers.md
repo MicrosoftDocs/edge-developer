@@ -165,8 +165,8 @@ When your app uses multiple HTML pages, a common offline scenario is to redirect
 // The name of the cache your app uses.
 const CACHE_NAME = "my-app-cache";
 // The list of static files your app needs to start.
-// Note the offline.html page in this list.
-const PRE_CACHED_RESOURCES = ["/", "styles.css", "app.js", "offline.html"];
+// Note the offline page in this list.
+const PRE_CACHED_RESOURCES = ["/", "styles.css", "app.js", "/offline"];
 
 // Listen to the `install` event.
 self.addEventListener("install", event => {
@@ -189,7 +189,7 @@ self.addEventListener("fetch", event => {
     } catch (error) {
       // The network call failed, the device is offline.
       const cache = await caches.open(CACHE_NAME);
-      const cachedResponse = await cache.match("offline.html");
+      const cachedResponse = await cache.match("/offline");
       return cachedResponse;
     }
   }
@@ -269,6 +269,35 @@ Making changes to your Service Worker can sometimes be complex. Use a library su
 
 
 <!-- ====================================================================== -->
+## Test for network connections in your PWA
+
+It's helpful to know when a network connection is available, in order to synchronize data or inform users that the network status has changed.
+
+Use the following options to test for network connectivity:
+
+#### navigator.onLine
+
+The `navigator.onLine` property is a boolean that lets you know the current status of the network. If the value is `true`, the user is online; otherwise, the user is offline.
+
+To learn more, see [navigator.onLine](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine) on MDN.
+
+#### Online and Offline Events
+
+You can take action when your network connectivity changes.  You can listen and take action in response to network events.  The events are available on the `window`, `document`, and `document.body` elements, as shown below:
+
+```javascript
+window.addEventListener("online",  function(){
+    console.log("You are online!");
+});
+window.addEventListener("offline", function(){
+    console.log("Oh no, you lost your network connection.");
+});
+```
+
+To learn more, see [Online and Offline Events](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events) on MDN.
+
+
+<!-- ====================================================================== -->
 ## Other capabilities
 
 A Service Worker's main responsibility is to make your app faster and more reliable in the event of an unstable network connection. Service Workers mostly use the `fetch` event and `Cache` API to do this, but they can use other APIs for advanced scenarios, such as:
@@ -310,7 +339,7 @@ To learn more, see [Add push notifications to your PWA](notifications-badges.md#
 
 
 <!-- ====================================================================== -->
-## Debug with devtools
+## Debug with DevTools
 
 Using Microsoft Edge DevTools, you can see if your Service Worker has been registered correctly and which lifecycle state it's currently in. Additionally, you can debug the JavaScript code in your Service Worker.
 

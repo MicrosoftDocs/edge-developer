@@ -1002,7 +1002,7 @@
             - name: Service Workers
               href: progressive-web-apps-chromium/how-to/service-workers.md
 
-            - name: Offline scenarios
+            - name: Store data on the device
               href: progressive-web-apps-chromium/how-to/offline.md
 
             - name: Define icons and a theme color
