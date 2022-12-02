@@ -77,7 +77,7 @@ If there is more than one overload that has a matching number of parameters, the
 <!-- ====================================================================== -->
 ## Method out parameters
 
-If a WinRT method has `out` parameters, when calling that method from JavaScript, the returned result will be a JavaScript object that has properties for each `out` parameter.  If the method has a non-`void` return type, then the returned result object will also have a property named `value` that contains the return value of the method.
+If a WinRT method has `out` parameters, when calling that method from JavaScript, the returned result will be a JavaScript object that a property for each `out` parameter.  If the method has a non-`void` return type, then the returned result object will also have a property named `value` that contains the return value of the method.
 
 When calling a WinRT method that has `out` parameters, any `out` parameters are skipped in the parameter list in the method call.  For example, suppose a WinRT method that has `out` parameters and a non-`void` return type is defined as follows, using MIDL3:
 
@@ -106,7 +106,7 @@ console.assert(result.intParam3 == 2);
 ```
  
 See also:
-* [Issue #2788: Using pre-release webview2 sdk conflict with windows app sdk (winui3) in C++ WinRT](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2788)
+* [Issue #2788](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2788) about WebView2 SDK and Windows App SDK (WinUI3) in C++ WinRT
 
 
 <!-- ====================================================================== -->
