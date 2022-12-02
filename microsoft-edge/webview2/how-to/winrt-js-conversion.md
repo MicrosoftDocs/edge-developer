@@ -18,16 +18,16 @@ Here's how to use WinRT types and members from within web-side JavaScript code i
 
 The WebView2 WinRT JS Projection tool (**wv2winrt**) converts between WinRT language constructs and JavaScript as follows.
 
-| WinRT | JavaScript | Notes |
+| WinRT language construct | JavaScript representation | Notes |
 |---|---|---|
 | `UInt8`, `Int16`, `UInt16`, `Int32`, `UInt32`, `Int64`, `UInt64`, `Single`, `Double` | `Number` | |
-| `Char`, `String` | `String` | JavaScript Strings are converted back to WinRT |
+| `Char`, `String` | `String` | JavaScript Strings are converted back to WinRT. |
 | `Boolean` | `Boolean` | |
 | `Windows.Foundation.DateTime` struct | `Date` | |
 | `Windows.Foundation.TimeSpan` struct | `Number` | |
 | `Guid` | `String` | JavaScript `String` instances that contain a string representation of a UUID (as described in [RFC 4122](https://www.rfc-editor.org/rfc/rfc4122), with or without delimiting `{` and `}` braces, are converted to the corresponding UUID.  UUIDs are converted to their string representation with delimiting `{` and `}` brace characters at the start and end.
-| `IVector<T>`, `IVectorView<T>`, `IObservableVector<T>` | `Array` and JavaScript object | If a runtimeclass<!--global: spelling?--> instance implements vector interfaces, then it is represented in JavaScript as the usual object described below, but also will act like a JavaScript array with reads and writes performed live on the underlying WinRT vector object.
-| `IMap<K,V>`, `IMapView<K,V>`, `IObservableMap<K,V>` | JavaScript object | If a runtimeclass instance implements map interfaces, then it is represented in JavaScript as the usual object described below, but also will has properties with name and values from the underlying WinRT map object with reads and writes performed live on the underlying WinRT map object. |
+| `IVector<T>`, `IVectorView<T>`, `IObservableVector<T>` | `Array` and JavaScript object | If a runtimeclass<!--global: spelling?--> instance implements vector interfaces, then it is represented in JavaScript as the usual object described below, but also will act like a JavaScript array.  Reads and writes are performed live on the underlying WinRT vector object.
+| `IMap<K,V>`, `IMapView<K,V>`, `IObservableMap<K,V>` | JavaScript object | If a runtimeclass instance implements map interfaces, then it is represented in JavaScript as the usual object described below, but also has properties with name and values from the underlying WinRT map object.  Reads and writes are performed live on the underlying WinRT map object. |
 | `Enum` | JavaScript object | The enum type is represented as a JavaScript object.  Each enum value is a `Number` property on that JavaScript object. |
 | `Struct` type instance | JavaScript object | A struct type is converted back and forth between JavaScript objects with property names corresponding to the `Struct` type member names. |
 | `Namespace` | JavaScript object | Namespaces are represented as JavaScript objects with properties for each child namespace, enum type, and runtimeclasses. |
