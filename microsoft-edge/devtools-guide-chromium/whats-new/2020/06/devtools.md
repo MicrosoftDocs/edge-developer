@@ -87,7 +87,7 @@ See also:
 <!-- ====================================================================== -->
 ### webhint feedback in the Issues panel
 
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)<!-- valid 05/13/2022 -->
+![Experimental feature.](../../../../media/experimental-tag.png)<!-- valid 05/13/2022 -->
 
 [webhint](https://webhint.io) is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  You can view webhint feedback in the [Issues](../../../issues/index.md) panel.
 
