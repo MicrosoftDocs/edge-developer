@@ -773,7 +773,7 @@
               href: visual-studio-code/microsoft-edge-devtools-extension.md
               displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
 
-            - name: Getting started
+            - name: Get started
               items:
                 - name: Installing the DevTools extension for Visual Studio Code
                   href: visual-studio-code/microsoft-edge-devtools-extension/install.md
@@ -799,7 +799,7 @@
                   href: visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md
                   displayName: 
 
-            - name: Basic usage
+            - name: Tools and features
               items:
                 - name: Integration with Visual Studio Code debugging
                   href: visual-studio-code/microsoft-edge-devtools-extension/debugging-a-webpage.md
@@ -833,7 +833,7 @@
                   href: visual-studio-code/microsoft-edge-devtools-extension/application-tool-integration.md
                   displayName: 
 
-            - name: Utility
+            - name: Customize DevTools
               items:
                 - name: Changing the extension settings
                   href: visual-studio-code/microsoft-edge-devtools-extension/change-extension-settings.md
@@ -851,9 +851,9 @@
                   href: visual-studio-code/microsoft-edge-devtools-extension/troubleshooting.md
                   displayName: error messages
 
-                - name: Getting in touch with the Microsoft Edge DevTools Extension team
-                  href: visual-studio-code/microsoft-edge-devtools-extension/contact-devtools-extension-team.md
-                  displayName: 
+            - name: Getting in touch with the Microsoft Edge DevTools Extension team
+              href: visual-studio-code/microsoft-edge-devtools-extension/contact-devtools-extension-team.md
+              displayName: 
 # /DevTools
 
 # =============================================================================
