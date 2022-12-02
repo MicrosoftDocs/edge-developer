@@ -5,11 +5,17 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/06/2022
+ms.date: 12/01/2022
 ---
 # Get started using the DevTools extension for Visual Studio Code
 
 This is a step-by-step tutorial about opening and closing DevTools and using it to modify CSS and debug JavaScript.  Follow the steps here from top to bottom for a general introduction and to ensure that your machine is set up to use DevTools.
+
+In this tutorial, you will:
+*  Learn how to open and close DevTools by clicking the **Launch Instance** button, to experiment with the demo **Success** webpage.
+*  Learn how to open and close DevTools by right-clicking an `.html` file for **Demo To Do** in the **Explorer** of Visual Studio Code, without needing to run a web server.
+*  Learn how to open and close DevTools by clicking the **Launch Project** button, to run **Demo To Do** on a localhost web server and store the URL for the webpage in `launch.json`.
+*  Ensure that DevTools and a local development web server is set up, so you'll be ready to work on your own webpages.
 
 
 <!-- ====================================================================== -->
@@ -21,17 +27,21 @@ This is a step-by-step tutorial about opening and closing DevTools and using it 
 <!-- ====================================================================== -->
 ## Step 2: Start DevTools by clicking the Launch Instance button for the default page
 
-You should know how to open and edit the default, Success webpage, so you can get started using DevTools.  This approach is prominent in the UI.  This approach opens the DevTools tabs in non-debug mode.  You also need to know how to close instances of DevTools that have been opened this way.
+This approach opens the default, Success webpage for editing, so you can practice and get started using DevTools.  This approach is prominent in the UI, and it opens the DevTools tabs in non-debug mode.
 
 This way of opening DevTools is useful for these simple scenarios:
 
-*  If you want to experiment with editing the default, Success page by using DevTools.  If you want to open a different webpage, you have to paste a file path or URL.
+*  If you want to experiment with editing the default, Success page by using DevTools.
 
-*  If you want to inspect a page that's specified by using a URL, and don't need Debug mode.
+*  If you want to inspect a page that's specified by using a URL, and don't need Debug mode.  To open a different webpage, you can paste a URL or file path, in the address bar.
 
-*  If you don't have a folder open and you want to experiment with changing CSS on a page that's specified using a URL, without editing a local source file.
+*  If you don't have a folder open and you want to experiment with changing CSS on a page that's specified by using a URL, without editing a local source file.
 
-   **Open the DevTools tabs:**
+Continue with the next steps.
+
+
+<!-- ------------------------------ -->
+#### Open the DevTools tabs
 
 1. In Visual Studio, select **File** > **New Window**.  Initially, no folder is opened.
 
@@ -49,11 +59,15 @@ This way of opening DevTools is useful for these simple scenarios:
 
    You can modify CSS of the local files, and you can enter local file paths or localhost URLs in the address bar and interact with local web app pages.
 
-   **Open a folder:**
+Continue with the next steps.
 
-   Note that no folder is open in Visual Studio Code.  In many cases, to use DevTools to edit rather than merely inspect a webpage, you must open a folder that contains source files that match the displayed webpage.  Opening a folder gives the most flexibility so you can open either a URL or a file path in the address bar of the **Edge DevTools: Browser** tab and have full DevTools functionality.  Opening a folder gives you the opportunity to grant trust to the folder, so that you don't get an error message when you try to change the source files.
 
-   Otherwise you might get an error message because the folder that contains the Success page is not trusted, and CSS mirror editing is trying to edit the CSS in the `index.html` source file in that folder.
+<!-- ------------------------------ -->
+#### Open a folder
+
+Note that no folder is open in Visual Studio Code.  In many cases, to use DevTools to edit rather than merely inspect a webpage, you must open a folder that contains source files that match the displayed webpage.  Opening a folder gives the most flexibility so you can open either a URL or a file path in the address bar of the **Edge DevTools: Browser** tab and have full DevTools functionality.  Opening a folder gives you the opportunity to grant trust to the folder, so that you don't get an error message when you try to change the source files.
+
+Otherwise you might get an error message because the folder that contains the Success page is not trusted, and CSS mirror editing is trying to edit the CSS in the `index.html` source file in that folder.
 
 1. In the **Edge DevTools: Browser** tab, in the address bar, select and copy the file path, but not the file name, such as `C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/`.
 
@@ -73,7 +87,11 @@ This way of opening DevTools is useful for these simple scenarios:
 
    The **Edge DevTools** tab opens, and the **Edge DevTools: Browser** tab opens, displaying the default, Success page.  The Success page source file is a self-contained `.html` file in a directory on your drive.  This is a single `.html` file that includes CSS rules (in a `<style>` element).  It also includes a JavaScript `console` statement (in a `<script>` element).
 
-   **Edit CSS:**
+Continue with the next steps.
+
+
+<!-- ------------------------------ -->
+#### Edit CSS
 
 1. In the **Edge DevTools** tab, click the **Select an element in the page to inspect it** (![Inspect tool icon](./get-started-images/inspect-tool-icon.png)) button, sometimes called the **Inspect** button.
 
@@ -87,7 +105,11 @@ This way of opening DevTools is useful for these simple scenarios:
 
    `index.html` opens, automatically edited by CSS mirror editing to add the line `font-size: 5em;`.  Scroll to that line, in the h2 section.
 
-   **Arrange tabs:**
+Continue with the next steps.
+
+
+<!-- ------------------------------ -->
+#### Arrange tabs
 
 1. In the **Edge DevTools** tab, in the non-italic h2 section, click the `font-size` CSS rule that you entered, and then press `Up Arrow` and `Down Arrow`.  The value in `index.html` is automatically edited, by CSS mirror editing.
 
@@ -104,11 +126,19 @@ This way of opening DevTools is useful for these simple scenarios:
 
    ![Success page editing h2 CSS size](./get-started-images/success-page-edit-h2-css.png)
 
-   **View JavaScript:**
+Continue with the next steps.
+
+
+<!-- ------------------------------ -->
+#### View JavaScript
 
 1. In the **Edge DevTools** tab, click the **Console** tool's tab.  `index.html` contains a `<script>` element that contains a JavaScript statement `console.info('Hello from the startpage!')`, which outputs "Hello from the startpage!"
 
-   **Close DevTools:**
+Continue with the next steps.
+
+
+<!-- ------------------------------ -->
+#### Close DevTools
 
 1. Click **Close** (**x**) in the **Edge DevTools** tab and in the **Edge DevTools: Browser** tab, if these tabs are open.
 
@@ -117,6 +147,8 @@ This way of opening DevTools is useful for these simple scenarios:
 1. Close `index.html` without saving changes.
 
 1. Select **File** > **Close Folder**.
+
+Continue with the next steps.
 
 
 <!-- ====================================================================== -->
@@ -128,7 +160,7 @@ This way of opening DevTools is useful for these simple scenarios:
 
 1. Activity Bar > **Explorer** > right-click `\demo-to-do\index.html` > **Copy Path**.
 
-1. In Visual Studio, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above, such as ``C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`.  The **demo-to-do** app opens.  In the address bar, the `file:///` prefix is added and Windows backslashes are changed to forward slashes; for example: `file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html`.
+1. In Visual Studio, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`.  The **demo-to-do** app opens.  In the address bar, the `file:///` prefix is added and Windows backslashes are changed to forward slashes; for example: `file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html`.
 
    Or, if your localhost server is running, paste a localhost URL, such as [http://localhost:8080](http://localhost:8080).  If you want to use CSS mirror editing to edit your source files, you'll need to open a folder in Visual Studio Code; otherwise, clear the **CSS mirror editing** checkbox in the **Styles** tab in the **Elements** tool in the **Edge DevTools** tab.  Clearing the checkbox prevents error messages about mapping and mirror editing when you experiment with changing CSS in DevTools and haven't provided a CSS source file for DevTools.
 
@@ -138,18 +170,25 @@ This way of opening DevTools is useful for these simple scenarios:
 
 1. In the **Elements** tool, in the **Styles** tab, change a CSS value, such as: click the point size in `body { font-size: 11pt;}` and then change the value.  The corresponding `.css` file in the folder that you opened opens and it is automatically edited to match your changes made in the **Styles** tab (but is not saved).
 
-   ![Launch Instance > filepath > non-debug mode](./get-started-images/launch-instance-filepath-non-debug-mode.png)
+Continue with the next steps.
 
 
-   **Close DevTools:**
+<!-- ------------------------------ -->
+#### Close DevTools
 
 1. Click **Close** (**x**) in the **Edge DevTools** tab and in the **Edge DevTools: Browser** tab, if these tabs are open.
 
 *  Select Activity Bar > **Microsoft Edge Tools**.  If the **Targets** section lists any targets, hover on the right side of the target instance and then click **Close instance** (**x**).  The **Launch Instance** button appears, indicating that all DevTools instances are closed.
 
+   ![Closing DevTools opened via Launch Instance](./get-started-images/launch-instance-close-devtools.png)
+
+   Note that in the above screenshot, Visual Studio Code isn't in Debug mode; for example, there's no Debug toolbar.  If there were a Debug toolbar, you could close DevTools by clicking the **Stop** button.
+
 1. Close `index.html` without saving changes.
 
 1. Select **File** > **Close Folder**.
+
+Continue with the next steps.
 
 
 <!-- ====================================================================== -->
@@ -184,13 +223,19 @@ We'll demonstrate by opening the **demo-to-do** web app:
 
    ![The two Edge DevTools tabs and the Debug toolbar](./get-started-images/devtools-extension-v211.png)
 
-   **Layout of the DevTools tabs:**
+Continue with the next steps.
+
+
+<!-- ------------------------------ -->
+#### Layout of the DevTools tabs
 
 1. Toward the upper left corner of the **Edge DevTools** tab, click the **Toggle screencast** button a couple times:
 
    ![Cross-toggling the two tabs on and off](./get-started-images/cross-toggling-tabs.png)
 
 1. In the top right of the **Edge DevTools: Browser** tab, click the **Close DevTools** or **Open DevTools** button a couple times.  The two DevTools tabs are automatically positioned as you open and close them from each other.
+
+Continue with the next steps.
 
 
 <!-- ====================================================================== -->
@@ -207,6 +252,8 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 1. Close the `.css` file.  Visual Studio Code prompts you whether to save changes.
 
 1. Click the **Don't Save** button.
+
+Continue with the next steps.
 
 
 <!-- ====================================================================== -->
@@ -243,6 +290,8 @@ Continue the tutorial steps below.
 Next, we'll use the **demo-to-do** app to demonstrate the **Launch Project** button after pointing that button to a localhost URL such as [http://localhost:8080](http://localhost:8080).  As before, this starts DevTools in debug mode.  This is the main way to open DevTools when your webpage requires running on a web server.  As a preliminary step, we'll creating a `launch.json` file and edit the URL in it to point to localhost serving out the **demo-to-do** example app.
 
 You might not need to use this approach, because in many cases, right-clicking an HTML file works.  However, many webpages use APIs which require the webpage to be running on a web server, so here are specific steps you can follow.
+
+Continue with the next steps.
 
 
 <!-- ====================================================================== -->
@@ -289,6 +338,8 @@ These steps explain how to start http-server by using the cross-platform git bas
 
    The displayed URLs are usually equivalent to the common standard URL, [http://localhost:8080](http://localhost:8080).
 
+Continue with the next steps.
+
 
 <!-- ====================================================================== -->
 ## Step 9: Set up launch.json
@@ -332,6 +383,8 @@ This section is in support of clicking the **Launch Project** button.
 
 1. Save the `launch.json` file.
 
+Continue with the next steps.
+
 
 <!-- ====================================================================== -->
 ## Step 10: Click the Launch Project button
@@ -348,6 +401,8 @@ This section is in support of clicking the **Launch Project** button.
 
 At this point, you could work with CSS edits or step through code in the debugger, as described above for the section [Step 4: Start DevTools by right-clicking an HTML file](#step-4-start-devtools-by-right-clicking-an-html-file).
 
+Continue with the next steps.
+
 
 <!-- ====================================================================== -->
 ## Step 11: Close DevTools
@@ -357,6 +412,8 @@ At this point, you could work with CSS edits or step through code in the debugge
    ![Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
 
    Or, on the **Run** menu, select **Stop Debugging**.  Or, close the two DevTools tabs.  The Debug toolbar closes.
+
+Congratulations!  You have finished the Getting Started tutorial for using the DevTools extension for Visual Studio Code, and you now know several ways of opening and closing DevTools, including Launch Instance, Launch Project, and 
 
 
 <!-- ====================================================================== -->
