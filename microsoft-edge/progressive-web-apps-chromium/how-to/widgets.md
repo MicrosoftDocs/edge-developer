@@ -108,10 +108,10 @@ In the above example, a music player application defines a mini player widget. A
 | `icons` | An array of icons to be used for the widget. | Yes |
 | `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). Note that the `platform` field of a screenshot item currently supports the `Windows` and `any` values. | Yes |
 | `tag` | A string used to reference the widget in the PWA service worker. | Yes |
-| `template` | The template to use to display the widget in the operating system widgets dashboard. Note: although `template` is a required field, its value is currently not used. See `ms_ac_template` below. | Yes |
+| `template` | The template to use to display the widget in the operating system widgets dashboard. Note: this property is currently only informational and not used. See `ms_ac_template` below. | No |
 | `ms_ac_template` | The URL of the custom Adaptive Cards template to use to display the widget in the operating system widgets dashboard. See [Define a widget template](#define-a-widget-template) below. | Yes |
-| `data` | The URL where the data to fill the template with can be found. This URL is required to return valid JSON. | Yes |
-| `type` | The MIME type for the widget data. Must be `application/json`. | Yes |
+| `data` | The URL where the data to fill the template with can be found. If present, this URL is required to return valid JSON. | No |
+| `type` | The MIME type for the widget data. | No |
 | `auth` | A boolean indicating if the widget requires authentication. | No |
 | `update` | The frequency, in seconds, at which the widget will be updated. Code in your service worker must perform the updating; the widget is not updated automatically. See [Access widget instances at runtime](#access-widget-instances-at-runtime). | No |
 
