@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/07/2022
+ms.date: 12/02/2022
 ---
 # How WinRT types and members are represented in JavaScript
 
@@ -31,13 +31,39 @@ The WebView2 WinRT JS Projection tool (**wv2winrt**) converts between WinRT lang
 | `Enum` | JavaScript object | The enum type is represented as a JavaScript object.  Each enum value is a `Number` property on that JavaScript object. |
 | `Struct` type instance | JavaScript object | A struct type is converted back and forth between JavaScript objects with property names corresponding to the `Struct` type member names. |
 | `Namespace` | JavaScript object | Namespaces are represented as JavaScript objects with properties for each child namespace, enum type, and runtimeclasses. |
-| `Class` and `Interface` instances | JavaScript object | Runtimeclasses and interfaces are converted to JavaScript objects with all the methods, properties, and events. <br/>There is no support for implementing an interface in JavaScript. |
-| Class static members | JavaScript object properties | Runtimeclasses with static methods, properties, or events, are represented as properties of their namespace with the static methods, properties, and events as properties on that JavaScript object.  For example, to call the static method `Windows.Foundation.Uri.EscapeComponent`, use: <br/>
-`chrome.webview.hostObjects.Windows.Foundation.Uri.EscapeComponent("example");` |
-| Class constructors | JavaScript constructor | Runtimeclasses with constructors are represented as a JavaScript constructor and function on the namespace object.  For example, to create a new `Windows.Foundation.Uri` object, you can either call it as a constructor, using `new`: <br/>
-`let uri = new chrome.webview.hostObjects.Windows.Foundation.Uri("https://example.com/");` <br/>
-Or, call it as a function, without `new`: <br/>
-`let uri = chrome.webview.hostObjects.Windows.Foundation.Uri("https://example.com/");` |
+| `Class` or `Interface` instance | JavaScript object | Runtimeclasses and interfaces are converted to JavaScript objects with all the methods, properties, and events. <br/>There is no support for implementing an interface in JavaScript. |
+| Class static member | JavaScript object property | Runtimeclasses with static methods, properties, or events, are represented as properties of their namespace with the static methods, properties, and events as properties on that JavaScript object.  See example below. |
+| Class constructor | JavaScript constructor | Runtimeclasses with constructors are represented as a JavaScript constructor and function on the namespace object.  See example below. |
+
+
+<!-- ------------------------------ -->
+#### Class static members
+
+Class static members become JavaScript object properties.  Runtimeclasses with static methods, properties, or events, are represented as properties of their namespace with the static methods, properties, and events as properties on that JavaScript object.
+
+For example, to call the static method `Windows.Foundation.Uri.EscapeComponent`, use:
+
+```javascript
+`chrome.webview.hostObjects.Windows.Foundation.Uri.EscapeComponent("example");`
+```
+
+
+<!-- ------------------------------ -->
+#### Class constructors
+
+Class constructors become JavaScript constructors.  Runtimeclasses with constructors are represented as a JavaScript constructor and function on the namespace object.
+
+For example, to create a new `Windows.Foundation.Uri` object, you can either call it as a constructor, using `new`:
+
+```javascript
+`let uri = new chrome.webview.hostObjects.Windows.Foundation.Uri("https://example.com/");`
+```
+
+Or, call it as a function, without `new`:
+
+```javascript
+`let uri = chrome.webview.hostObjects.Windows.Foundation.Uri("https://example.com/");`
+```
 
 
 <!-- ====================================================================== -->
@@ -64,14 +90,14 @@ String MethodWithOutParams(String stringParam1,
 
 When you call that method from JavaScript, omit the `out` arguments:
 
-```js
+```javascript
 let result = object.MethodWithOutParams("stringParam1", 
                                         "stringParam4");
 ```
 
 Then to read the WinRT method's return value, read the `value` property on the JavaScript `result` object.  To read the WinRT method's `out` parameters, read the correspondingly named properties on the JavaScript `result` object:
 
-```js
+```javascript
 console.assert(result.value == "return value");
 
 console.assert(result.intParam2 == 1);
