@@ -35,7 +35,7 @@ To help you plan, consider the following schedule for Microsoft Partner Center a
 We are aware that Chromium has revised the timelines for Manifest V2 sunset. We will independently decide on MV3 migration timelines for Microsoft Edge Add-ons and share an update here. We continue to analyze the concerns raised by the extension developers and explore the optimal path for Microsoft Edge Add-ons ecosystem. Meanwhile, please refer to the [Chromium timelines](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/) for planning your extension's migration.
 
 
-| Timeframe    | Microsoft Partner Center changes | Microsoft Edge changes |
+| Timeframe | Microsoft Partner Center changes | Microsoft Edge changes |
 |--- |--- |--- |
 | July 2022 (already in effect) | Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
 | TBD - See note above | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. | Microsoft Edge stops running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge using Enterprise policies. |
