@@ -63,7 +63,7 @@ These steps assume that initially, no folder is open in Visual Studio Code, and 
 
 
 See also:
-* [Step 2: Start DevTools by clicking the Launch Instance button for the default page](./get-started.md#step-2-start-devtools-by-clicking-the-launch-instance-button-for-the-default-page) in _Get started using the DevTools extension for Visual Studio Code_.
+* [Get started by clicking the Launch Instance button](./get-started-launch-instance.md)
 
 
 <!-- ====================================================================== -->
@@ -104,7 +104,8 @@ Use the **Explorer** Side Bar, from the Activity Bar, to open a `.js` file durin
 The **Edge DevTools: Browser** tab includes a Device Emulation toolbar.  This tab contains an embedded web browser with DevTools features.  This browser is sometimes called a _screencast_ or a _headless browser_ for DevTools.
 
 
-See also [Step 4: Start DevTools by right-clicking an HTML file](./get-started.md#step-4-start-devtools-by-right-clicking-an-html-file) in _Get started using the DevTools extension for Visual Studio Code_.
+See also:
+* [Get started by right-clicking an HTML file](./get-started-right-click-html.md)
 
 
 <!-- ====================================================================== -->
@@ -188,7 +189,7 @@ To open DevTools by clicking the **Launch Project** button:
 
 
 See also:
-* [Step 7: Start DevTools by clicking the Launch Project button](./get-started.md#step-7-start-devtools-by-clicking-the-launch-project-button) in _Get started using the DevTools extension for Visual Studio Code_.
+* [Get started by clicking the Launch Project button](./get-started-launch-project.md)
 
 
 <!-- ====================================================================== -->
@@ -197,9 +198,13 @@ See also:
 If DevTools is able to correlate and establish the workspace mapping between the files downloaded from the server and the files in the folder that you opened, DevTools provides its full functionality, including CSS mirror editing of your local source files when you change CSS in DevTools.
 
 If DevTools can't map the files in the **Edge DevTools: Browser** tab to the files in the folder that you opened in Visual Studio Code's Explorer, you can inspect webpages, and you can change them, such as changing CSS values in the **Sources** tab of the **Elements** tool in the **Edge DevTools** tab.  In this case, though, you can't use CSS mirror editing though, to have DevTools automatically edit your source files.  Options include: 
+
 *  Clear the **CSS mirror editing** checkbox in **Styles** tab and continue experimenting with CSS changes.
+
 *  Open a folder that contains source files that match the web page.
+
 *  Grant trust to a folder by opening it in Visual Studio Code.
+
 
 For example:
 
@@ -223,7 +228,9 @@ For example:
 
 1. In the **Edge DevTools: Browser** tab, in the address bar, paste a remote `github.io` URL, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 
-   Now that the folder containing source files is closed, if you try to change CSS values in the **Elements** tool, you get a DevTools error message.  You can inspect webpages, but not edit them.  You can interact with the page and see it in different devices and rendering states by using the Device Emulation toolbar at the bottom of the **Edge DevTools: Browser** tab.  You can also inspect the CSS and HTML.  But if you try to change the page, you get an error, such as **Error while mirroring**:
+   Now that the folder containing source files is closed, if you try to change CSS values in the **Elements** tool, you get a DevTools error message.  You can inspect webpages, but not edit them.  You can interact with the page and see it in different devices and rendering states by using the Device Emulation toolbar at the bottom of the **Edge DevTools: Browser** tab.
+
+   You can also inspect the CSS and HTML.  But if you try to change the page, you get an error, such as **Error while mirroring**:
 
    ![Explorer when unable to change CSS values if a mappable folder isn't open](./open-devtools-and-embedded-browser-images/edit-css-when-no-folder-opened.png)
 

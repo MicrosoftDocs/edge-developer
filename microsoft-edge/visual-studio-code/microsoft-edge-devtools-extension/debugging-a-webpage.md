@@ -20,7 +20,7 @@ When you open DevTools in Visual Studio Code in Debug mode, the following UI com
 *  The **Run** (Debugger) Side Bar, including the **Watch** pane.
 *  The **Debug Console** at bottom of window.
 
-See also [Step 6: Step through JavaScript code in the Debugger](./get-started.md#step-6-step-through-javascript-code-in-the-debugger) in _Get started using the DevTools extension for Visual Studio Code_.
+See also [Step 4: Step through JavaScript code in the Debugger](./get-started-right-click-html.md#step-4-step-through-javascript-code-in-the-debugger) in _Get started by right-clicking an HTML file_.
 
 
 <!-- ====================================================================== -->

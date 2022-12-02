@@ -129,15 +129,17 @@ Continue with the next steps.
 
    ![The demo-to-do web app running in the 'Edge DevTools: Browser' tab](./get-started-images/demo-app-running-in-extension-browser.png)
 
-At this point, you could work with CSS edits or step through code in the debugger, as described above for the section [Step 4: Start DevTools by right-clicking an HTML file](#step-4-start-devtools-by-right-clicking-an-html-file).
-
-Continue with the next steps.
+At this point, you could work with CSS edits or step through code in the debugger.  See these sections of the tutorial _Get started by right-clicking an HTML file_:
+* [Step 3: Edit CSS in DevTools, updating the .css file automatically](./get-started-right-click-html.md#step-3-edit-css-in-devtools-updating-the-css-file-automatically)
+* [Step 4: Step through JavaScript code in the Debugger](./get-started-right-click-html.md#step-4-step-through-javascript-code-in-the-debugger)
 
 
 <!-- ====================================================================== -->
 ## Step 5: Close DevTools
 
-1. Next, to end debugging, in the Debug toolbar, click the **Stop** (`Shift`+`F5`) button:
+To end debugging and close the **Edge DevTools** tabs:
+
+1. In the Debug toolbar, click the **Stop** (`Shift`+`F5`) button:
 
    ![Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
 
@@ -146,10 +148,17 @@ Continue with the next steps.
 See also:
 * [Closing DevTools](./open-devtools-and-embedded-browser.md#closing-devtools) in _Opening DevTools and the DevTools browser_.
 
+
 Congratulations!  You have finished the Getting Started tutorials for using the DevTools extension for Visual Studio Code, and you now know several ways of opening and closing DevTools, including:
 *  The **Launch Instance** button.
 *  Right-clicking an `.html` file.
 *  The **Launch Project** button.
+
+
+<!-- ====================================================================== -->
+## Next steps
+
+* [Get started by right-clicking an HTML file](./get-started-right-click-html.md)
 
 
 <!-- ====================================================================== -->
