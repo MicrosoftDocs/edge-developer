@@ -16,42 +16,56 @@ Here's how to use WinRT types and members from within web-side JavaScript code i
 <!-- ====================================================================== -->
 ## Language equivalents
 
-The WebView2 WinRT JS Projection tool (**wv2winrt**) converts between WinRT language constructs and JavaScript as follows.
+The WebView2 WinRT JS Projection tool (**wv2winrt**) converts from WinRT to JavaScript language constructs as follows.
 
 | WinRT language construct | JavaScript representation | Notes |
 |---|---|---|
 | `UInt8`, `Int16`, `UInt16`, `Int32`, `UInt32`, `Int64`, `UInt64`, `Single`, `Double` | `Number` | |
-| `Char`, `String` | `String` | JavaScript Strings are converted back to WinRT. |
+| `Char`, `String` | `String` | A JavaScript `String` instance is converted to a WinRT `String` instance. |
 | `Boolean` | `Boolean` | |
 | `Windows.Foundation.DateTime` struct | `Date` | |
 | `Windows.Foundation.TimeSpan` struct | `Number` | |
-| `Guid` | `String` | JavaScript `String` instances that contain a string representation of a UUID (with or without delimiting `{` and `}` braces) are converted to the corresponding UUID.  UUIDs are converted to their string representation with delimiting `{` and `}` brace characters at the start and end.  For information about UUID, see [RFC 4122](https://www.rfc-editor.org/rfc/rfc4122). |
-| `IVector<T>`, `IVectorView<T>`, `IObservableVector<T>` | `Array` and JavaScript object | If a runtimeclass<!--global: spelling?--> instance implements vector interfaces, then it is represented in JavaScript as the usual object described below, but also will act like a JavaScript array.  Reads and writes are performed live on the underlying WinRT vector object.
-| `IMap<K,V>`, `IMapView<K,V>`, `IObservableMap<K,V>` | JavaScript object | If a runtimeclass instance implements map interfaces, then it is represented in JavaScript as the usual object described below, but also has properties with name and values from the underlying WinRT map object.  Reads and writes are performed live on the underlying WinRT map object. |
-| `Enum` | JavaScript object | The enum type is represented as a JavaScript object.  Each enum value is a `Number` property on that JavaScript object. |
-| `Struct` type instance | JavaScript object | A struct type is converted back and forth between JavaScript objects with property names corresponding to the `Struct` type member names. |
-| `Namespace` | JavaScript object | Namespaces are represented as JavaScript objects with properties for each child namespace, enum type, and runtimeclasses. |
-| `Class` or `Interface` instance | JavaScript object | Runtimeclasses and interfaces are converted to JavaScript objects with all the methods, properties, and events. <br/>There is no support for implementing an interface in JavaScript. |
-| Class static member | JavaScript object property | Runtimeclasses with static methods, properties, or events, are represented as properties of their namespace with the static methods, properties, and events as properties on that JavaScript object.  See example below. |
-| Class constructor | JavaScript constructor | Runtimeclasses with constructors are represented as a JavaScript constructor and function on the namespace object.  See example below. |
+| `Guid` | `String` | A JavaScript `String` instance that contains a string representation of a UUID (with or without delimiting `{` and `}` braces) is converted to the corresponding UUID.  A UUID is converted to its string representation, with delimiting `{` and `}` brace characters at the start and end.  For information about UUID, see [RFC 4122](https://www.rfc-editor.org/rfc/rfc4122). |
+| `IVector<T>`, `IVectorView<T>`, `IObservableVector<T>` | `Array` and JavaScript object | If a `RuntimeClass` instance implements `vector` interfaces, then it is represented in JavaScript as the usual object described below, but also will act like a JavaScript array.  Reads and writes are performed live on the underlying WinRT vector object.
+| `IMap<K,V>`, `IMapView<K,V>`, `IObservableMap<K,V>` | JavaScript object | If a `RuntimeClass` instance implements `map` interfaces, then it is represented in JavaScript as the usual object described below, but also has properties with name and values from the underlying WinRT map object.  Reads and writes are performed live on the underlying WinRT map object. |
+| `Enum` | JavaScript object | An enum type is represented as a JavaScript object.  Each enum value is a `Number` property on the JavaScript object. |
+| `Struct` | JavaScript object | A `Struct` type is converted to a JavaScript object that has property names which correspond to the `Struct` type member names.  This is a two-way conversion. |
+| `Namespace` | JavaScript object | A namespace is represented as a JavaScript object that has a property for each child namespace, enum type, and `RuntimeClass`. |
+| `Class` | JavaScript object | A `RuntimeClass` class is converted to a JavaScript object that has the same methods, properties, and events. |
+| `Interface` | JavaScript object | A `RuntimeClass` interface is converted to a JavaScript object that has the same methods, properties, and events.  There is no support for implementing an interface in JavaScript. |
+| Class static member | JavaScript object property | See below. |
+| Class constructor | JavaScript constructor and function | See below. |
+
+See also:
+* [RuntimeClass class](https://learn.microsoft.com/en-us/cpp/cppcx/wrl/runtimeclass-class)
 
 
 <!-- ------------------------------ -->
 #### Class static members
 
-Class static members become JavaScript object properties.  Runtimeclasses with static methods, properties, or events, are represented as properties of their namespace with the static methods, properties, and events as properties on that JavaScript object.
+<!-- orig wording:
+Runtimeclasses with static methods, properties, or events, are represented as properties of their namespace with the static methods, properties, and events as properties on that JavaScript object.
+-->
+A `RuntimeClass` class that has static methods, properties, or events is represented as a property of the corresponding JavaScript namespace object.  The static methods, properties, and events are represented as properties on the JavaScript namespace object.
 
-For example, to call the static method `Windows.Foundation.Uri.EscapeComponent`, use:
+For example, to call the static method `Windows.Foundation.Uri.EscapeComponent`, call:
 
 ```javascript
 `chrome.webview.hostObjects.Windows.Foundation.Uri.EscapeComponent("example");`
 ```
 
+The JavaScript namespace object here is `chrome.webview.hostObjects`.
+
 
 <!-- ------------------------------ -->
 #### Class constructors
 
-Class constructors become JavaScript constructors.  Runtimeclasses with constructors are represented as a JavaScript constructor and function on the namespace object.
+<!-- orig wording:
+Runtimeclasses with constructors are represented as a JavaScript constructor and function on the namespace object.
+-->
+A constructor for a `RuntimeClass` class is represented as two members on a JavaScript object:
+*  A constructor on the JavaScript namespace object.
+*  A function on the JavaScript namespace object.
 
 For example, to create a new `Windows.Foundation.Uri` object, you can either call it as a constructor, using `new`:
 
@@ -64,6 +78,8 @@ Or, call it as a function, without `new`:
 ```javascript
 `let uri = chrome.webview.hostObjects.Windows.Foundation.Uri("https://example.com/");`
 ```
+
+The JavaScript namespace object here is `chrome.webview.hostObjects`.
 
 
 <!-- ====================================================================== -->
@@ -113,3 +129,4 @@ See also:
 ## See also
 
 * [Call native-side WinRT code from web-side code](./winrt-from-js.md)
+* [RuntimeClass class](https://learn.microsoft.com/en-us/cpp/cppcx/wrl/runtimeclass-class)
