@@ -447,7 +447,7 @@ The service worker global object also defines the `widgetclick` event that's fir
 
 Each widget is represented as a `widget` object, which contains the following properties:
 
-* `installable`: A Boolean indicating wether the widget is installable.
+* `installable`: A Boolean indicating whether the widget is installable.
 * `definition`: A [widgetDefinition object](#widgetdefinition-object).
 * `instances`: An array of [widgetInstance objects](#widgetinstance-object) representing the current state of each instance of the widget.
 
