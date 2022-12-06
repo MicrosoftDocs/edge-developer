@@ -96,22 +96,22 @@ methods:
       event or the `CoreWebView2Frame.WebMessageReceived` event being raised depending on if `postMessage` is called
       from the top level document in the WebView2 or a child frame.
     remarks: ''
-    # example:
-    #   - |-
-    #     Post a message to the CoreWebView2:
+    example:
+      - |-
+        Post a message to the CoreWebView2:
 
-    #     ```TypeScript
-    #     const inTopLevelFrame = (window === window.parent);
-    #     if (inTopLevelFrame) {
-    #         // The message can be any JSON serializable object.
-    #         window.chrome.webview.postMessage({
-    #             myMessage: 'Hello from the script!',
-    #             otherValue: 1}
-    #         );
-    #         // A simple string is an example of a JSON serializable object
-    #         window.chrome.webview.postMessage("example");
-    #     }
-    #     ```
+        ```TypeScript
+        const inTopLevelFrame = (window === window.parent);
+        if (inTopLevelFrame) {
+            // The message can be any JSON serializable object.
+            window.chrome.webview.postMessage({
+                myMessage: 'Hello from the script!',
+                otherValue: 1}
+            );
+            // A simple string is an example of a JSON serializable object
+            window.chrome.webview.postMessage("example");
+        }
+        ```
     isPreview: false
     isDeprecated: false
     syntax:
