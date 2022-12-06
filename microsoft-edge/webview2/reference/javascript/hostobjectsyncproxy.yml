@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: HostObjectSyncProxy
-uid: 'WebView2Script!HostObjectSyncProxy:interface'
+uid: 'WebView2Script!HostObjectSyncProxy:class'
 fullName: HostObjectSyncProxy
 summary: >-
   A synchronous host object proxy. Host objects added via `CoreWebView2.AddHostObjectToScript` are exposed as host
@@ -15,7 +15,7 @@ summary: >-
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
+type: class
 methods:
   - name: applyHostFunction(argArray)
     uid: 'WebView2Script!HostObjectSyncProxy#applyHostFunction:member(1)'
@@ -50,7 +50,7 @@ methods:
     syntax:
       content: 'async(): HostObjectAsyncProxy;'
       return:
-        type: '<xref uid="WebView2Script!HostObjectAsyncProxy:interface" />'
+        type: '<xref uid="WebView2Script!HostObjectAsyncProxy:class" />'
         description: ''
   - name: getHostProperty(propertyName)
     uid: 'WebView2Script!HostObjectSyncProxy#getHostProperty:member(1)'

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: HostObjectsSyncRoot
-uid: 'WebView2Script!HostObjectsSyncRoot:interface'
+uid: 'WebView2Script!HostObjectsSyncRoot:class'
 fullName: HostObjectsSyncRoot
 summary: >-
   Contains synchronous proxies for all host objects added via `CoreWebView2.AddHostObjectToScript`<!-- -->.
@@ -11,5 +11,5 @@ summary: >-
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
-extends: '<xref uid="WebView2Script!HostObjectSyncProxy:interface" />'
+type: class
+extends: '<xref uid="WebView2Script!HostObjectSyncProxy:class" />'

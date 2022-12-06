@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: SharedBufferReceivedEvent
-uid: 'WebView2Script!SharedBufferReceivedEvent:interface'
+uid: 'WebView2Script!SharedBufferReceivedEvent:class'
 fullName: SharedBufferReceivedEvent
 summary: >-
   Event object for the `chrome.webview.sharedbufferreceived` event. This event is dispatched when
@@ -8,7 +8,7 @@ summary: >-
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
+type: class
 properties:
   - name: additionalData
     uid: 'WebView2Script!SharedBufferReceivedEvent#additionalData:member'
@@ -34,7 +34,7 @@ properties:
     syntax:
       content: 'source: WebView;'
       return:
-        type: '<xref uid="WebView2Script!WebView:interface" />'
+        type: '<xref uid="WebView2Script!WebView:class" />'
 methods:
   - name: getBuffer()
     uid: 'WebView2Script!SharedBufferReceivedEvent#getBuffer:member(1)'

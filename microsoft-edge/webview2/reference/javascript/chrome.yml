@@ -1,12 +1,12 @@
 ### YamlMime:TSType
 name: Chrome
-uid: 'WebView2Script!Chrome:interface'
+uid: 'WebView2Script!Chrome:class'
 fullName: Chrome
 summary: ''
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
+type: class
 properties:
   - name: webview
     uid: 'WebView2Script!Chrome#webview:member'
@@ -18,4 +18,4 @@ properties:
     syntax:
       content: 'webview: WebView;'
       return:
-        type: '<xref uid="WebView2Script!WebView:interface" />'
+        type: '<xref uid="WebView2Script!WebView:class" />'

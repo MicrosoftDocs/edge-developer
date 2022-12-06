@@ -1,12 +1,12 @@
 ### YamlMime:TSType
 name: WebView
-uid: 'WebView2Script!WebView:interface'
+uid: 'WebView2Script!WebView:class'
 fullName: WebView
-summary: WebView is the interface to access the WebView2 specific APIs available to the script running within WebView2.
+summary: WebView is the class to access the WebView2 specific APIs available to the script running within WebView2.
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
+type: class
 properties:
   - name: hostObjects
     uid: 'WebView2Script!WebView#hostObjects:member'
@@ -24,7 +24,7 @@ properties:
     syntax:
       content: 'hostObjects: HostObjectsAsyncRoot;'
       return:
-        type: '<xref uid="WebView2Script!HostObjectsAsyncRoot:interface" />'
+        type: '<xref uid="WebView2Script!HostObjectsAsyncRoot:class" />'
 methods:
   - name: 'addEventListener(type, listener, options)'
     uid: 'WebView2Script!WebView#addEventListener:member(1)'
@@ -50,7 +50,7 @@ methods:
         - id: listener
           description: ''
           type: >-
-            (this: <xref uid="WebView2Script!WebView:interface" />, ev: <xref uid="WebView2Script!WebViewEventMap:interface"
+            (this: <xref uid="WebView2Script!WebView:class" />, ev: <xref uid="WebView2Script!WebViewEventMap:class"
             />[K]) =&gt; any
         - id: options
           description: ''
@@ -156,7 +156,7 @@ methods:
         - id: listener
           description: ''
           type: >-
-            (this: <xref uid="WebView2Script!WebView:interface" />, ev: <xref uid="WebView2Script!WebViewEventMap:interface"
+            (this: <xref uid="WebView2Script!WebView:class" />, ev: <xref uid="WebView2Script!WebViewEventMap:class"
             />[K]) =&gt; any
         - id: options
           description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: HostObjectsAsyncRoot
-uid: 'WebView2Script!HostObjectsAsyncRoot:interface'
+uid: 'WebView2Script!HostObjectsAsyncRoot:class'
 fullName: HostObjectsAsyncRoot
 summary: >-
   Contains asynchronous proxies for all host objects added via `CoreWebView2.AddHostObjectToScript` as well as options
@@ -12,7 +12,7 @@ summary: >-
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
+type: class
 properties:
   - name: options
     uid: 'WebView2Script!HostObjectsAsyncRoot#options:member'
@@ -24,7 +24,7 @@ properties:
     syntax:
       content: 'options: HostObjectsOptions;'
       return:
-        type: '<xref uid="WebView2Script!HostObjectsOptions:interface" />'
+        type: '<xref uid="WebView2Script!HostObjectsOptions:class" />'
   - name: sync
     uid: 'WebView2Script!HostObjectsAsyncRoot#sync:member'
     fullName: sync
@@ -40,7 +40,7 @@ properties:
     syntax:
       content: 'sync: HostObjectsSyncRoot;'
       return:
-        type: '<xref uid="WebView2Script!HostObjectsSyncRoot:interface" />'
+        type: '<xref uid="WebView2Script!HostObjectsSyncRoot:class" />'
 methods:
   - name: cleanupSome()
     uid: 'WebView2Script!HostObjectsAsyncRoot#cleanupSome:member(1)'
@@ -54,4 +54,4 @@ methods:
       return:
         type: void
         description: ''
-extends: '<xref uid="WebView2Script!HostObjectAsyncProxyBase:interface" />'
+extends: '<xref uid="WebView2Script!HostObjectAsyncProxyBase:class" />'

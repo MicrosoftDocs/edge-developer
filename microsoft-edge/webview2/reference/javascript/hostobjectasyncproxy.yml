@@ -1,12 +1,12 @@
 ### YamlMime:TSType
 name: HostObjectAsyncProxy
-uid: 'WebView2Script!HostObjectAsyncProxy:interface'
+uid: 'WebView2Script!HostObjectAsyncProxy:class'
 fullName: HostObjectAsyncProxy
 summary: ''
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
+type: class
 methods:
   - name: sync()
     uid: 'WebView2Script!HostObjectAsyncProxy#sync:member(1)'
@@ -22,6 +22,6 @@ methods:
     syntax:
       content: 'sync(): Promise<HostObjectSyncProxy>;'
       return:
-        type: 'Promise&lt;<xref uid="WebView2Script!HostObjectSyncProxy:interface" />&gt;'
+        type: 'Promise&lt;<xref uid="WebView2Script!HostObjectSyncProxy:class" />&gt;'
         description: ''
-extends: '<xref uid="WebView2Script!HostObjectAsyncProxyBase:interface" />'
+extends: '<xref uid="WebView2Script!HostObjectAsyncProxyBase:class" />'

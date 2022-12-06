@@ -1416,25 +1416,25 @@
               displayName: 
               items:
                 - name: Chrome
-                  uid: 'WebView2Script!Chrome:interface'
+                  uid: 'WebView2Script!Chrome:class'
                 - name: HostObjectAsyncProxy
-                  uid: 'WebView2Script!HostObjectAsyncProxy:interface'
+                  uid: 'WebView2Script!HostObjectAsyncProxy:class'
                 - name: HostObjectAsyncProxyBase
-                  uid: 'WebView2Script!HostObjectAsyncProxyBase:interface'
+                  uid: 'WebView2Script!HostObjectAsyncProxyBase:class'
                 - name: HostObjectsAsyncRoot
-                  uid: 'WebView2Script!HostObjectsAsyncRoot:interface'
+                  uid: 'WebView2Script!HostObjectsAsyncRoot:class'
                 - name: HostObjectsOptions
-                  uid: 'WebView2Script!HostObjectsOptions:interface'
+                  uid: 'WebView2Script!HostObjectsOptions:class'
                 - name: HostObjectsSyncRoot
-                  uid: 'WebView2Script!HostObjectsSyncRoot:interface'
+                  uid: 'WebView2Script!HostObjectsSyncRoot:class'
                 - name: HostObjectSyncProxy
-                  uid: 'WebView2Script!HostObjectSyncProxy:interface'
+                  uid: 'WebView2Script!HostObjectSyncProxy:class'
                 - name: SharedBufferReceivedEvent
-                  uid: 'WebView2Script!SharedBufferReceivedEvent:interface'
+                  uid: 'WebView2Script!SharedBufferReceivedEvent:class'
                 - name: WebView
-                  uid: 'WebView2Script!WebView:interface'
+                  uid: 'WebView2Script!WebView:class'
                 - name: WebViewEventMap
-                  uid: 'WebView2Script!WebViewEventMap:interface'
+                  uid: 'WebView2Script!WebViewEventMap:class'
 
         - name: Contact the WebView2 Team
           href: webview2/contact.md

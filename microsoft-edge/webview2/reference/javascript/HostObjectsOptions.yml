@@ -1,12 +1,12 @@
 ### YamlMime:TSType
 name: HostObjectsOptions
-uid: 'WebView2Script!HostObjectsOptions:interface'
+uid: 'WebView2Script!HostObjectsOptions:class'
 fullName: HostObjectsOptions
 summary: Contains options applicable to `CoreWebView2.AddHostObjectToScript` added script proxies.
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
+type: class
 properties:
   - name: defaultSyncProxy
     uid: 'WebView2Script!HostObjectsOptions#defaultSyncProxy:member'

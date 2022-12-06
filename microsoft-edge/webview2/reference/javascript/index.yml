@@ -3,14 +3,14 @@ uid: WebView2Script!
 name: WebView2Script
 type: package
 summary: ''
-interfaces:
-  - 'WebView2Script!Chrome:interface'
-  - 'WebView2Script!HostObjectAsyncProxy:interface'
-  - 'WebView2Script!HostObjectAsyncProxyBase:interface'
-  - 'WebView2Script!HostObjectsAsyncRoot:interface'
-  - 'WebView2Script!HostObjectsOptions:interface'
-  - 'WebView2Script!HostObjectsSyncRoot:interface'
-  - 'WebView2Script!HostObjectSyncProxy:interface'
-  - 'WebView2Script!SharedBufferReceivedEvent:interface'
-  - 'WebView2Script!WebView:interface'
-  - 'WebView2Script!WebViewEventMap:interface'
+classes:
+  - 'WebView2Script!Chrome:class'
+  - 'WebView2Script!HostObjectAsyncProxy:class'
+  - 'WebView2Script!HostObjectAsyncProxyBase:class'
+  - 'WebView2Script!HostObjectsAsyncRoot:class'
+  - 'WebView2Script!HostObjectsOptions:class'
+  - 'WebView2Script!HostObjectsSyncRoot:class'
+  - 'WebView2Script!HostObjectSyncProxy:class'
+  - 'WebView2Script!SharedBufferReceivedEvent:class'
+  - 'WebView2Script!WebView:class'
+  - 'WebView2Script!WebViewEventMap:class'

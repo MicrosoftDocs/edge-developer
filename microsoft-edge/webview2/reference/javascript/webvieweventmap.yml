@@ -1,12 +1,12 @@
 ### YamlMime:TSType
 name: WebViewEventMap
-uid: 'WebView2Script!WebViewEventMap:interface'
+uid: 'WebView2Script!WebViewEventMap:class'
 fullName: WebViewEventMap
 summary: ''
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
+type: class
 properties:
   - name: message
     uid: 'WebView2Script!WebViewEventMap#message:member'
@@ -29,4 +29,4 @@ properties:
     syntax:
       content: '"sharedbufferreceived": SharedBufferReceivedEvent;'
       return:
-        type: '<xref uid="WebView2Script!SharedBufferReceivedEvent:interface" />'
+        type: '<xref uid="WebView2Script!SharedBufferReceivedEvent:class" />'
