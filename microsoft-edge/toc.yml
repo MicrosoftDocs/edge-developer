@@ -833,7 +833,7 @@
                   href: visual-studio-code/microsoft-edge-devtools-extension/application-tool-integration.md
                   displayName: 
 
-            - name: Customize DevTools
+            - name: Customize
               items:
                 - name: Changing the extension settings
                   href: visual-studio-code/microsoft-edge-devtools-extension/change-extension-settings.md
