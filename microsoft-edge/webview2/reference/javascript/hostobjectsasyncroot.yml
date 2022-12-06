@@ -1,6 +1,7 @@
 ### YamlMime:TSType
 name: HostObjectsAsyncRoot
 uid: 'WebView2Script!HostObjectsAsyncRoot:class'
+package: WebView2Script!
 fullName: HostObjectsAsyncRoot
 summary: >-
   Contains asynchronous proxies for all host objects added via `CoreWebView2.AddHostObjectToScript` as well as options
@@ -16,6 +17,7 @@ type: class
 properties:
   - name: options
     uid: 'WebView2Script!HostObjectsAsyncRoot#options:member'
+    package: WebView2Script!
     fullName: options
     summary: Contains options applicable to `CoreWebView2.AddHostObjectToScript` added script proxies.
     remarks: ''
@@ -27,6 +29,7 @@ properties:
         type: '<xref uid="WebView2Script!HostObjectsOptions:class" />'
   - name: sync
     uid: 'WebView2Script!HostObjectsAsyncRoot#sync:member'
+    package: WebView2Script!
     fullName: sync
     summary: >-
       Contains synchronous proxies for all host objects added via `CoreWebView2.AddHostObjectToScript`<!-- -->.
@@ -44,6 +47,7 @@ properties:
 methods:
   - name: cleanupSome()
     uid: 'WebView2Script!HostObjectsAsyncRoot#cleanupSome:member(1)'
+    package: WebView2Script!
     fullName: cleanupSome()
     summary: Performs a best effort garbage collection on host object proxies that are no longer in use.
     remarks: ''

@@ -1,6 +1,7 @@
 ### YamlMime:TSType
 name: HostObjectsSyncRoot
 uid: 'WebView2Script!HostObjectsSyncRoot:class'
+package: WebView2Script!
 fullName: HostObjectsSyncRoot
 summary: >-
   Contains synchronous proxies for all host objects added via `CoreWebView2.AddHostObjectToScript`<!-- -->.

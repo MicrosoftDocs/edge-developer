@@ -1,6 +1,7 @@
 ### YamlMime:TSType
 name: SharedBufferReceivedEvent
 uid: 'WebView2Script!SharedBufferReceivedEvent:class'
+package: WebView2Script!
 fullName: SharedBufferReceivedEvent
 summary: >-
   Event object for the `chrome.webview.sharedbufferreceived` event. This event is dispatched when
@@ -12,6 +13,7 @@ type: class
 properties:
   - name: additionalData
     uid: 'WebView2Script!SharedBufferReceivedEvent#additionalData:member'
+    package: WebView2Script!
     fullName: additionalData
     summary: >-
       An object that is the result of parsing the `additionalDataAsJson` parameter to
@@ -26,6 +28,7 @@ properties:
         type: any
   - name: source
     uid: 'WebView2Script!SharedBufferReceivedEvent#source:member'
+    package: WebView2Script!
     fullName: source
     summary: The source of the event is the chrome.webview object.
     remarks: ''
@@ -38,6 +41,7 @@ properties:
 methods:
   - name: getBuffer()
     uid: 'WebView2Script!SharedBufferReceivedEvent#getBuffer:member(1)'
+    package: WebView2Script!
     fullName: getBuffer()
     summary: >-
       Returns an ArrayBuffer object with the backing content from the shared buffer passed to
