@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/11/2022
+ms.date: 12/06/2022
 ---
 # Opening DevTools and the DevTools browser
 
@@ -120,10 +120,11 @@ Summary:
 
 These steps assume you are running a localhost web server, as described in [Step 6: Set up a localhost server](./install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
 
-To open DevTools by clicking the **Launch Project** button:
+To open DevTools by clicking the **Launch Project** button, do the following steps.
 
 
-   **Open a local folder containing web app source files:**
+<!-- ------------------------------ -->
+#### Open a local folder containing web app source files
 
 1. In Visual Studio Code, do any of the following:
 
@@ -139,11 +140,23 @@ To open DevTools by clicking the **Launch Project** button:
 
    *  If the folder already contains a `.vscode` directory that contains a `launch.json` file, the **Microsoft Edge Tools** Side Bar contains a **Launch Project** button and not a **Generate launch.json** button.  In this case, you may want to inspect or change the `url` string in the existing `launch.json` file, as described below.
 
+Continue below.
+
+
+<!-- ------------------------------ -->
+#### Click the "Generate launch.json" button
+
 1. Click the **Generate launch.json** button:
 
    ![The 'Generate launch.json' button of the DevTools extension](./open-devtools-and-embedded-browser-images/generate-launch-json.png)
 
    The new `launch.json` file opens.
+
+Continue below.
+
+
+<!-- ------------------------------ -->
+#### Add a localhost URL in the .json file
 
 1. In several places in the `launch.json` file, on each of the `"url"` lines, scroll to the right, and note the comment, "Provide your project's url to finish configuring":
 
@@ -173,8 +186,11 @@ To open DevTools by clicking the **Launch Project** button:
 
 1. Save the `launch.json` file.
 
+Continue below.
 
-   **Click the Launch Project button:**
+
+<!-- ------------------------------ -->
+#### Click the Launch Project button
 
 1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./open-devtools-and-embedded-browser-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens, now containing a **Launch Project** button (instead of a **Launch Instance** button), and no longer contains a **Generate launch.json file** button:
 
@@ -219,7 +235,12 @@ For example:
 
    ![Able to change CSS values if a mappable folder is open](./open-devtools-and-embedded-browser-images/edit-css-when-folder-opened.png)
 
-   Next, try changing CSS without a folder opened:
+   The above image shows using the **Styles** tab with **CSS mirror editing** checkbox selected, used to enlarge the body text to **24pt**.  The **Edge DevTools: Browser** tab renders the page as you change the value.  The tab's address bar contains a URL rather than a file path.  Because **CSS mirror editing** checkbox selected and the corresponding `.css` file is found in a writeable local folder, the `.css` file on the local drive is automatically edited to `24pt;`.
+
+
+#### Avoiding error messages about mirroring or mapping
+
+Next, try changing CSS without a matching folder opened:
 
 1. Select **File** > **Close Folder**.
 

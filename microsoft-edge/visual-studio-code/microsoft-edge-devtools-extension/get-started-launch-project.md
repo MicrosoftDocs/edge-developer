@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/01/2022
+ms.date: 12/06/2022
 ---
 # Get started by clicking the Launch Project button
 

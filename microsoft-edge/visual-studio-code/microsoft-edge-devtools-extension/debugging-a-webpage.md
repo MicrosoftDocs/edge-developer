@@ -9,6 +9,20 @@ ms.date: 10/06/2022
 ---
 # Integration with Visual Studio Code debugging
 
+<!-- outline:
+## Ways to start the debugger along with the DevTools tabs
+#### DevTools UI features to open DevTools in Debug mode
+#### Visual Studio Code UI features to open DevTools in Debug mode
+
+## Opening the browser as part of a debugging session
+#### Generating a DevTools-oriented launch.json
+
+## Automatically opening the browser and DevTools when debugging in Visual Studio Code
+#### Generating a DevTools-oriented launch.json
+
+## If you see the Success page but want your own webpage instead
+-->
+
 To open DevTools in Visual Studio Code in Debug mode by using the DevTools UI, right-click an `.html` file or click the **Launch Project** button, as described in [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).  You can also use the Visual Studio Code UI for launching the Debugger, such as `F5`, to open the **DevTools** tabs as well, if you define a DevTools-compatible `launch.json` file by clicking the **Generate launch.json** button in the **Microsoft Edge Tools** Side Bar.
 
 ![Tabs opened from right-clicking an .html file in Explorer](./debugging-a-webpage-images/tabs-from-right-click-html-explorer.png)
@@ -94,9 +108,13 @@ To start the Visual Studio Code debugger along with DevTools, by using the usual
 
 1. Open a folder and an `.html` file.
 
-   **Generating a DevTools-oriented launch.json:**
+Continue below.
 
-   Assuming that the opened folder doesn't contain a `.vscode` folder that contains a `launch.json` file already:
+
+<!-- ------------------------------ -->
+#### Generating a DevTools-oriented launch.json
+
+Assuming that the opened folder doesn't contain a `.vscode` folder that contains a `launch.json` file already:
 
 1. Select Activity Bar > **Microsoft Edge Tools** > click the **Generate launch.json** button, and then press `F5`.  Or, see [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
 
@@ -143,7 +161,9 @@ To debug your project, you might want to change the default page that opens in M
 
    ![The 'Microsoft Edge Tools: Targets' panel displays 'Launch Instance' and 'Generate launch.json' buttons](./debugging-a-webpage-images/targets-buttons.png)
 
-   **Generating a DevTools-oriented launch.json:**
+
+<!-- ------------------------------ -->
+#### Generating a DevTools-oriented launch.json
 
 1. Select **Generate launch.json** to create a `launch.json` in your project.  This must be a longer file that's created by DevTools, as shown in [The launch.json file for the DevTools extension](./launch-json.md), not a short, more generic file created by Visual Studio Code.  See also [Deleting or re-creating launch.json](./troubleshooting.md#deleting-or-re-creating-launchjson) in _Troubleshooting the DevTools extension_.
 

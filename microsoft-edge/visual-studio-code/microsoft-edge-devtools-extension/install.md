@@ -153,7 +153,8 @@ If your webpage uses certain APIs that require the webpage to be running on a we
 For information about http-server, see [http-server: a simple static HTTP server](https://www.npmjs.com/package/http-server).
 
 
-**To set up http-server:**
+<!-- ------------------------------ -->
+#### Set up http-server
 
 1. In Visual Studio Code, select **File** > **Open Folder** > open the directory that contains the `.html`, `.css`, and `.js` files for a webpage, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\`.
 
@@ -178,8 +179,13 @@ For information about http-server, see [http-server: a simple static HTTP server
    cd C:\Users\username\Documents\GitHub\Demos\demo-to-do\
    ```
 
+Continue below.
 
-   **Start the server (npx http-server):**
+
+<!-- ------------------------------ -->
+#### Start the server (npx http-server)
+
+These steps start the server for the first time.
 
 1. Enter the command `npx http-server`:
 
@@ -220,7 +226,7 @@ For information about http-server, see [http-server: a simple static HTTP server
 
    ![Starting the server](./install-images/git-bash-starting-server-2nd-time.png)
 
-Next, see [Get started using the DevTools extension for Visual Studio Code](./get-started.md) for a step-by-step walkthrough.
+Next, see [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
 
 
 <!-- ====================================================================== -->

@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/06/2022
+ms.date: 12/06/2022
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
 
@@ -18,13 +18,11 @@ CSS Mirroring
 CSS mirror editing (lowercased in UI, init capped at github)
 -->
 
-The Microsoft Edge DevTools extension for Visual Studio Code lets you use Microsoft Edge DevTools and an embedded version of the Microsoft Edge Browser including Device Emulation, right from within Visual Studio Code.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.  Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it's a great tool for web developers, especially with this DevTools extension.
-
-The DevTools extension provides many of the same tools that are in the DevTools that's in the Microsoft Edge browser, from within Visual Studio Code.  Visual Studio Code has powerful features for web development:
-*  Visual Studio Code is a full IDE (integrated development environment).
-*  Its CSS mirror editing allows you to control whether to save changes to your `.css` file.
+The Microsoft Edge DevTools extension for Visual Studio Code lets you use Microsoft Edge DevTools and an embedded version of the Microsoft Edge Browser including Device Emulation, right from within Visual Studio Code.  The DevTools extension provides many of the same tools that are in the DevTools that's in the Microsoft Edge browser, from within Visual Studio Code.
 
 ![Microsoft Edge Developer Tools and browser preview in Visual Studio Code](microsoft-edge-devtools-extension-images/devtools-extension-v211.png)
+
+Visual Studio Code is a lightweight but powerful source code editor for Windows, Linux, and macOS.  Visual Studio Code is a full IDE (integrated development environment) that has powerful features for web development.  Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it's a great tool for web developers, especially with this DevTools extension.
 
 The DevTools extension for Visual Studio Code enables you to:
 
@@ -34,7 +32,7 @@ The DevTools extension for Visual Studio Code enables you to:
 
 *  Test the accessibility of your webpages from within Visual Studio Code.
 
-*  Live-edit CSS and SASS and see your changes reflected immediately in a browser instance while editing your actual source files.  DevTools opens and edits your `.css` files, but without automatically saving the files, so that you can decide and control whether to save the changes that you made within the **Styles** tab of the **Elements** tool.
+*  Live-edit CSS and SASS and see your changes reflected immediately in a browser instance while editing your actual source files.  CSS mirror editing allows you to control whether to save changes to your `.css` file.  DevTools opens and edits your `.css` files, but without automatically saving the files, so that you can decide and control whether to save the changes that you made within the **Styles** tab of the **Elements** tool.
 
 
 <!-- ====================================================================== -->
