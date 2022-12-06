@@ -95,9 +95,9 @@ methods:
       asynchronously to the WebView2 host process. This will result in either the `CoreWebView2.WebMessageReceived`
       event or the `CoreWebView2Frame.WebMessageReceived` event being raised depending on if `postMessage` is called
       from the top level document in the WebView2 or a child frame.
-    remarks: ''
-    example:
-      - |-
+    remarks: |-
+        #### Examples
+
         Post a message to the CoreWebView2:
 
         ```TypeScript
