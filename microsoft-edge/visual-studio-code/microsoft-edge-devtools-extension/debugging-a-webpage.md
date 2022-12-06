@@ -34,7 +34,7 @@ When you open DevTools in Visual Studio Code in Debug mode, the following UI com
 *  The **Run** (Debugger) Side Bar, including the **Watch** pane.
 *  The **Debug Console** at bottom of window.
 
-See also [Step 4: Step through JavaScript code in the Debugger](./get-started-right-click-html.md#step-4-step-through-javascript-code-in-the-debugger) in _Get started by right-clicking an HTML file_.
+See also [Step 5: Step through JavaScript code in the Debugger](./get-started-right-click-html.md#step-5-step-through-javascript-code-in-the-debugger) in _Get started by right-clicking an HTML file_.
 
 
 <!-- ====================================================================== -->
@@ -177,11 +177,11 @@ When you choose to debug your project in Visual Studio Code, whether you use Dev
 <!-- ====================================================================== -->
 ## If you see the Success page but want your own webpage instead
 
-   Which webpage opens is in DevTools is set by `launch.json` if that file exists in your workspace (your open folder).  Thus you might press `F5` while your own `.html` file is open, and yet see the default, **Success** page in the **DevTools** tabs.  Options in that case are:
+Which webpage opens is in DevTools is set by `launch.json` if that file exists in your workspace (your open folder).  Thus you might press `F5` while your own `.html` file is open, and yet see the default, **Success** page in the **DevTools** tabs.  Options in that case are:
 
-   *  Edit `launch.json` in your open folder to point to a URL (normally), or possibly a file path.  Then you can use the Visual Studio Code debugger workflow/UI, such as `F5`.
+*  Edit `launch.json` in your open folder to point to a URL (normally), or possibly a file path.  Then you can use the Visual Studio Code debugger workflow/UI, such as `F5`.
 
-   *  Or, delete `launch.json`, then Activity Bar > **Explorer** > right-click your `.html` file > select **Open with Edge**.  This approach doesn't use the Visual Studio Code Debugger workflow/UI, such as `F5`.
+*  Or, delete `launch.json`, then Activity Bar > **Explorer** > right-click your `.html` file > select **Open with Edge**.  This approach doesn't use the Visual Studio Code Debugger workflow/UI, such as `F5`.
 
 
 <!-- ====================================================================== -->

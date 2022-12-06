@@ -132,8 +132,8 @@ This section is in support of clicking the **Launch Project** button.
    ![The demo-to-do web app running in the 'Edge DevTools: Browser' tab](./get-started-images/demo-app-running-in-extension-browser.png)
 
 At this point, you could work with CSS edits or step through code in the debugger.  See these sections of the tutorial _Get started by right-clicking an HTML file_:
-* [Step 3: Edit CSS in DevTools, updating the .css file automatically](./get-started-right-click-html.md#step-3-edit-css-in-devtools-updating-the-css-file-automatically)
-* [Step 4: Step through JavaScript code in the Debugger](./get-started-right-click-html.md#step-4-step-through-javascript-code-in-the-debugger)
+* [Step 4: Edit CSS in DevTools, updating the .css file automatically](./get-started-right-click-html.md#step-4-edit-css-in-devtools-updating-the-css-file-automatically)
+* [Step 5: Step through JavaScript code in the Debugger](./get-started-right-click-html.md#step-5-step-through-javascript-code-in-the-debugger)
 
 
 <!-- ====================================================================== -->
