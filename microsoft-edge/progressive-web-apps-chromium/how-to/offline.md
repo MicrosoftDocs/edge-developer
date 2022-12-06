@@ -19,9 +19,11 @@ The following table describes the different options, and the rest of this articl
 | Storage option | Description |
 |:--- |:--- |
 | Web Storage | Web Storage has two types: session and local. Web Storage is useful to store small amounts of data from your app's front-end code. The data is structured as key-value pairs and is only available to the current app origin. In the case of session storage, the data is cleared when the session ends, for example when the app is closed, or when the user browses to another origin in the same window or tab. Local storage persists until the app removes the data. |
-| IndexedDB | IndexedDB is an API for storing larger amounts of structured data. The API is asynchronous and can be used both from your app's front-end code and service worker code. Use the IndexedDB API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects or files. |
+| IndexedDB | IndexedDB is an API for storing larger amounts of structured data. The API is asynchronous and can be used both from your app's front-end code and service worker code. Use the IndexedDB API to store a significant amount of structured data on the client, or binary data, such as encrypted media objects or files. |
 | Cache | The Cache API can be used to manage cached resources. The Cache API is Promise-based and allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on. Usually, the Cache API is used within the context of a service worker, but it's also available to your app's front-end code. |
 | File System Access | The File System Access API allows your PWA to read files and folders on the user's device and save changes back to them. |
+
+Do not use WebSQL or Application Cache. While they are two other browser storage mechanisms, they have both been deprecated. Instead of WebSQL, use IndexedDB. Instead of Application Cache, use the Cache API.
 
 
 <!-- ====================================================================== -->
@@ -59,13 +61,26 @@ To learn more, see [Web Storage API](https://developer.mozilla.org/docs/Web/API/
 
 #### Web Storage quota
 
-In Microsoft Edge, Web Storage is limited to about 5MB.
+In Microsoft Edge, local and session storage are limited to about 5MB each. Trying to add more data than what is allowed results in a `QuotaExceededError` JavaScript error. Your code should catch this error by using a `try...catch` statement as shown below:
 
+```javascript
+try {
+  localStorage.setItem('foo', 'bar');
+} catch (e) {
+  // Code to handle the lack of storage space.
+}
+```
 
 <!-- ====================================================================== -->
 ## IndexedDB
 
 IndexedDB is an asynchronous API for storing structured data that can be used in your app's front-end code or service worker code. Use the `IndexedDB` API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects or files.
+
+IndexedDB is the best option for storing data in your PWA because using the API does not slow down your app by blocking the main thread, and it can be used both from your app's front-end code and service worker.
+
+Using IndexedDB is more complex than using Web Storage.
+
+<ADD CODE EXAMPLE>
 
 To learn more, see [Using IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB) on MDN.
 
@@ -79,10 +94,15 @@ Note that when the user's device starts being low on available disk space, also 
 
 By default, the data you store using IndexedDB is not persistent which means that the browser can clear it under storage pressure. Use the `navigator.storage.persist()` function to ask for your app's storage to be persistent. Persistent storage can only be cleared by the user. To learn more, see [StorageManager.persist()](https://developer.mozilla.org/docs/Web/API/StorageManager/persist) on MDN.
 
-
 <!-- ====================================================================== -->
 ## Cache
 
+
 <!-- ====================================================================== -->
 ## File System Access
+
+
+
+
+
 
