@@ -18,7 +18,7 @@ In the **Edge DevTools: Browser** tab, the Device Emulation toolbar on the botto
 ## Emulate Devices dropdown menu
 <!-- toolbar item 1. Emulate devices -->
 
-In the **Emulate devices** dropdown menu, you can select from a number of different devices.  When you select a device, the viewport resizes to the correct measurements and simulates the touch interface.  For example, there are several emulated iPhone layouts:
+In the **Emulate devices** dropdown menu, you can select from a number of different devices, or the default option of **Responsive**.  When you select a device, the viewport resizes to the correct measurements and simulates the touch interface.  For example, there are several emulated iPhone layouts:
 
 ![Browser preview in the extension showing the web product in an emulated phone layout](./device-state-emulation-images/edge-for-code-screencast-v2-emulating.png)
 

@@ -85,19 +85,18 @@ To open DevTools and the embedded browser, along with the Debug toolbar for an H
 
    ![Right-click an HTML file in the Explorer to open it with Edge with or without DevTools](./open-devtools-and-embedded-browser-images/context-menu-open-in-code.png)
 
-   DevTools opens:
+   DevTools opens, with Visual Studio Code in debug mode:
 
-   ![Embedded browser instance in Visual Studio Code](./open-devtools-and-embedded-browser-images/embedded-browser.png)
+   ![The DevTools components from selecting Open Browser with DevTools](./open-devtools-and-embedded-browser-images/devtools-extension-v211.png)
 
    The following components open in Visual Studio Code:
    *  The **Edge DevTools** tab, including the **Elements** tab and other tool tabs.
-   *  The **Edge DevTools: Browser** tab.
-   *  The Debug toolbar.
-   *  The Debug Console.
-   *  The **View** > **Run** (**Run and Debug**) pane.
-   *  In this approach, an instance is not listed in **Activity Bar** > **Microsoft Edge Tools** > **Targets**.
+   *  The **Edge DevTools: Browser** tab, including the Device Emulation toolbar on the bottom.
+   *  The Debug toolbar at top, including buttons such as **Pause**, **Step Over**, **Step Into**, **Reset**, and **Stop**.
+   *  The Debug Console at bottom.
+   *  The **Run and Debug** side bar (same as selecting **View** > **Run**).
 
-   ![The DevTools components from selecting Open Browser with DevTools](./open-devtools-and-embedded-browser-images/devtools-extension-v211.png)
+In this approach, an instance is not listed in **Activity Bar** > **Microsoft Edge Tools** > **Targets**.
 
 Use the **Explorer** Side Bar, from the Activity Bar, to open a `.js` file during debugging a webpage.
 

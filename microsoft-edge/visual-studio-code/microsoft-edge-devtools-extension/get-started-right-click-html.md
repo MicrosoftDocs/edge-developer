@@ -9,7 +9,7 @@ ms.date: 12/01/2022
 ---
 # Get started by right-clicking an HTML file
 
-Learn how to open and close DevTools by right-clicking an `.html` file for **Demo To Do** in the **Explorer** of Visual Studio Code, without needing to run a web server.
+Use this tutorial to learn how to open and close DevTools by right-clicking an `.html` file for **Demo To Do** in the **Explorer** of Visual Studio Code, without needing to run a web server.
 
 <!-- outline:
 * Step 1: Install DevTools and prerequisites

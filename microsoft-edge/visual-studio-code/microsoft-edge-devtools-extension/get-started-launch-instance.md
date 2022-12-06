@@ -9,7 +9,7 @@ ms.date: 12/01/2022
 ---
 # Get started by clicking the Launch Instance button
 
-Learn how to open and close DevTools by clicking the **Launch Instance** button, to experiment with the demo **Success** webpage.  This approach opens the default, Success webpage for editing, so you can practice and get started using DevTools.  This approach is prominent in the UI, and it opens the DevTools tabs in non-debug mode.
+Use this tutorial to learn how to open and close DevTools by clicking the **Launch Instance** button, to experiment with the demo **Success** webpage.  This approach opens the default, Success webpage for editing, so you can practice and get started using DevTools.  This approach is prominent in the UI, and it opens the DevTools tabs in non-debug mode.
 
 This way of opening DevTools is useful for these simple scenarios:
 

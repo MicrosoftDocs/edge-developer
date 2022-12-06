@@ -9,9 +9,9 @@ ms.date: 12/01/2022
 ---
 # Get started by clicking the Launch Project button
 
-Learn how to open and close DevTools by clicking the **Launch Project** button, to run **Demo To Do** on a localhost web server and store the URL for the webpage in `launch.json`.
+Use this tutorial to learn how to open and close DevTools by clicking the **Launch Project** button, to run **Demo To Do** on a localhost web server and store the URL for the webpage in `launch.json`.
 
-We'll use the **demo-to-do** app to demonstrate the **Launch Project** button after pointing that button to a localhost URL such as [http://localhost:8080](http://localhost:8080).  This starts DevTools in debug mode.  This is the main way to open DevTools when your webpage requires running on a web server.  As a preliminary step, we'll creating a `launch.json` file and edit the URL in it to point to localhost serving out the **demo-to-do** example app.
+We'll use the **demo-to-do** app to demonstrate the **Launch Project** button after pointing that button to a localhost URL such as [http://localhost:8080](http://localhost:8080).  The **Launch Project** button starts DevTools in debug mode.  This is the main way to open DevTools when your webpage requires running on a web server.  As a preliminary step, we'll creating a `launch.json` file and edit the URL in it to point to localhost serving out the **demo-to-do** example app.
 
 You don't always need to use this approach, because in many cases, right-clicking an HTML file works.  However, many webpages use APIs which require the webpage to be running on a web server, so here are specific steps you can follow.
 
