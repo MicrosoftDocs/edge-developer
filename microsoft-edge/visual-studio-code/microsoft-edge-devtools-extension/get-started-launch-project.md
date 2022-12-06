@@ -21,8 +21,6 @@ You don't always need to use this approach, because in many cases, right-clickin
 
 1. If you haven't already, do the steps in [Installing the DevTools extension for Visual Studio Code](./install.md), and then continue below.
 
-Continue with the next steps.
-
 
 <!-- ====================================================================== -->
 ## Step 2: Start the web server
@@ -68,8 +66,6 @@ These steps explain how to start http-server by using the cross-platform git bas
 
    The displayed URLs are usually equivalent to the common standard URL, [http://localhost:8080](http://localhost:8080).
 
-Continue with the next steps.
-
 
 <!-- ====================================================================== -->
 ## Step 3: Set up launch.json
@@ -113,8 +109,6 @@ This section is in support of clicking the **Launch Project** button.
 
 1. Save the `launch.json` file.
 
-Continue with the next steps.
-
 
 <!-- ====================================================================== -->
 ## Step 4: Click the Launch Project button
@@ -149,16 +143,7 @@ See also:
 * [Closing DevTools](./open-devtools-and-embedded-browser.md#closing-devtools) in _Opening DevTools and the DevTools browser_.
 
 
-Congratulations!  You have finished the Getting Started tutorials for using the DevTools extension for Visual Studio Code, and you now know several ways of opening and closing DevTools, including:
-*  The **Launch Instance** button.
-*  Right-clicking an `.html` file.
-*  The **Launch Project** button.
-
-
-<!-- ====================================================================== -->
-## Next steps
-
-* [Get started by right-clicking an HTML file](./get-started-right-click-html.md)
+You've finished the tutorial "Get started by clicking the Launch Project button".  It's recommended that you also do the other tutorials; see [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
 
 
 <!-- ====================================================================== -->

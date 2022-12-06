@@ -50,8 +50,6 @@ We'll demonstrate by opening the **demo-to-do** web app:
 
    ![The two Edge DevTools tabs and the Debug toolbar](./get-started-images/devtools-extension-v211.png)
 
-Continue with the next steps.
-
 
 <!-- ------------------------------ -->
 #### Layout of the DevTools tabs
@@ -61,8 +59,6 @@ Continue with the next steps.
    ![Cross-toggling the two tabs on and off](./get-started-images/cross-toggling-tabs.png)
 
 1. In the top right of the **Edge DevTools: Browser** tab, click the **Close DevTools** or **Open DevTools** button a couple times.  The two DevTools tabs are automatically positioned as you open and close them from each other.
-
-Continue with the next steps.
 
 
 <!-- ====================================================================== -->
@@ -79,8 +75,6 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 1. Close the `.css` file.  Visual Studio Code prompts you whether to save changes.
 
 1. Click the **Don't Save** button.
-
-Continue with the next steps.
 
 
 <!-- ====================================================================== -->
@@ -114,15 +108,11 @@ To end debugging and close the **Edge DevTools** tabs:
 
    The **Edge DevTools** tab closes, and the **Edge DevTools: Browser** tab closes.
 
-
 See also:
 * [Closing DevTools](./open-devtools-and-embedded-browser.md#closing-devtools) in _Opening DevTools and the DevTools browser_.
 
 
-<!-- ====================================================================== -->
-## Next steps
-
-* [Get started by clicking the Launch Project button](./get-started-launch-project.md)
+You've finished the tutorial "Get started by right-clicking an HTML file".  It's recommended that you also do the other tutorials; see [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
 
 
 <!-- ====================================================================== -->

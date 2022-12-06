@@ -25,8 +25,6 @@ This way of opening DevTools is useful for these simple scenarios:
 
 1. If you haven't already, do the steps in [Installing the DevTools extension for Visual Studio Code](./install.md), and then continue below.  You don't need to install and start a web server for the present tutorial, but it's recommended.
 
-Continue with the next steps.
-
 
 <!-- ====================================================================== -->
 ## Step 2: Click the Launch Instance button
@@ -48,8 +46,6 @@ Continue with the next steps.
    The Debug toolbar doesn't open, **Debug Console** doesn't open at bottom, and the **Run and Debug** Side Bar with **Watch** pane doesn't open.  This indicates that Visual Studio Code is not in Debug mode.
 
    You can modify CSS of the local files, and you can enter local file paths or localhost URLs in the address bar and interact with local web app pages.
-
-Continue with the next steps.
 
 
 <!-- ====================================================================== -->
@@ -77,8 +73,6 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 
 1. Click the **Launch Instance** button.  The **Edge DevTools** tab opens, and the **Edge DevTools: Browser** tab opens, displaying the default, Success page.
 
-Continue with the next steps.
-
 
 <!-- ====================================================================== -->
 ## Step 4: Edit CSS
@@ -94,8 +88,6 @@ Continue with the next steps.
 1. Enter a new CSS rule, `font-size: 5em`, and then press `Enter`.  The spelling is similar to the rule shown in the italic h2 section from the user agent stylesheet below it.
 
    `index.html` opens, automatically edited by CSS mirror editing to add the line `font-size: 5em;`.  Scroll to that line, in the h2 section.
-
-Continue with the next steps.
 
 
 <!-- ====================================================================== -->
@@ -116,15 +108,11 @@ Continue with the next steps.
 
    ![Success page editing h2 CSS size](./get-started-images/success-page-edit-h2-css.png)
 
-Continue with the next steps.
-
 
 <!-- ====================================================================== -->
 ## Step 6: View JavaScript
 
 1. In the **Edge DevTools** tab, click the **Console** tool's tab.  `index.html` contains a `<script>` element that contains a JavaScript statement `console.info('Hello from the startpage!')`, which outputs "Hello from the startpage!"
-
-Continue below.
 
 
 <!-- ====================================================================== -->
@@ -148,8 +136,6 @@ By entering a file path in the address bar of the **Edge DevTools: Browser** tab
 
 1. In the **Elements** tool, in the **Styles** tab, change a CSS value, such as: click the point size in `body { font-size: 11pt;}` and then change the value.  The corresponding `.css` file in the folder that you opened opens and it is automatically edited to match your changes made in the **Styles** tab (but is not saved).
 
-Continue below.
-
 
 <!-- ====================================================================== -->
 ## Step 8: Open a URL by using the address bar
@@ -163,8 +149,6 @@ The address bar that results from the **Launch Instance** button can be used to 
 1. In the demo app, enter a task, such as **test**.
 
 1. In the **Elements** tool, in the **Styles** tab, change a CSS value, such as: click the point size in `body { font-size: 11pt;}` and then change the value.  The corresponding `.css` file in the folder that you opened opens and it is automatically edited to match your changes made in the **Styles** tab (but is not saved).
-
-Continue below.
 
 
 <!-- ====================================================================== -->
@@ -182,11 +166,11 @@ Continue below.
 
 1. Select **File** > **Close Folder**.
 
+See also:
+* [Closing DevTools](./open-devtools-and-embedded-browser.md#closing-devtools) in _Opening DevTools and the DevTools browser_.
 
-<!-- ====================================================================== -->
-## Next steps
 
-* [Get started by right-clicking an HTML file](./get-started-right-click-html.md)
+You've finished the tutorial "Get started by clicking the Launch Instance button".  It's recommended that you also do the other tutorials; see [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
 
 
 <!-- ====================================================================== -->
