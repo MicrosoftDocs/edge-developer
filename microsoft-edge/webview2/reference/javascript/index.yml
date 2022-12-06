@@ -14,4 +14,3 @@ interfaces:
   - 'WebView2Script!SharedBufferReceivedEvent:interface'
   - 'WebView2Script!WebView:interface'
   - 'WebView2Script!WebViewEventMap:interface'
-  - 'WebView2Script!Window_2:interface'

@@ -1435,8 +1435,6 @@
                   uid: 'WebView2Script!WebView:interface'
                 - name: WebViewEventMap
                   uid: 'WebView2Script!WebViewEventMap:interface'
-                - name: Window_2
-                  uid: 'WebView2Script!Window_2:interface'
 
         - name: Contact the WebView2 Team
           href: webview2/contact.md
