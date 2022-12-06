@@ -11,6 +11,15 @@ ms.date: 12/01/2022
 
 Learn how to open and close DevTools by right-clicking an `.html` file for **Demo To Do** in the **Explorer** of Visual Studio Code, without needing to run a web server.
 
+<!-- outline:
+* Step 1: Install DevTools and prerequisites
+* Step 2: Start DevTools by right-clicking an HTML file
+* Step 3: Arrange tabs
+* Step 4: Edit CSS in DevTools, updating the .css file automatically
+* Step 5: Step through JavaScript code in the Debugger
+* Step 6: Close DevTools
+-->
+
 
 <!-- ====================================================================== -->
 ## Step 1: Install DevTools and prerequisites
@@ -51,8 +60,8 @@ We'll demonstrate by opening the **demo-to-do** web app:
    ![The two Edge DevTools tabs and the Debug toolbar](./get-started-images/devtools-extension-v211.png)
 
 
-<!-- ------------------------------ -->
-#### Layout of the DevTools tabs
+<!-- ====================================================================== -->
+## Step 3: Arrange tabs
 
 1. Toward the upper left corner of the **Edge DevTools** tab, click the **Toggle screencast** button a couple times:
 
@@ -62,7 +71,7 @@ We'll demonstrate by opening the **demo-to-do** web app:
 
 
 <!-- ====================================================================== -->
-## Step 3: Edit CSS in DevTools, updating the .css file automatically
+## Step 4: Edit CSS in DevTools, updating the .css file automatically
 
 In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can edit CSS selectors, rules, and values.  The **CSS mirror editing** checkbox is selected by default, so the `.css` file is automatically edited, but the edits are not saved, so that you can decide whether to save the changes.
 
@@ -78,7 +87,7 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 
 
 <!-- ====================================================================== -->
-## Step 4: Step through JavaScript code in the Debugger
+## Step 5: Step through JavaScript code in the Debugger
 
 1. Select Activity Bar > Explorer (![Explorer icon in Activity Bar](./get-started-images/explorer-icon.png)).
 
@@ -98,7 +107,7 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 
 
 <!-- ====================================================================== -->
-## Step 5: Close DevTools
+## Step 6: Close DevTools
 
 To end debugging and close the **Edge DevTools** tabs:
 

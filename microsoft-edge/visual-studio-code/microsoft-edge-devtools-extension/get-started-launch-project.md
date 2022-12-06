@@ -15,6 +15,14 @@ We'll use the **demo-to-do** app to demonstrate the **Launch Project** button af
 
 You don't always need to use this approach, because in many cases, right-clicking an HTML file works.  However, many webpages use APIs which require the webpage to be running on a web server, so here are specific steps you can follow.
 
+<!-- outline:
+* Step 1: Install DevTools and prerequisites
+* Step 2: Start the web server
+* Step 3: Set up launch.json
+* Step 4: Click the Launch Project button
+* Step 5: Close DevTools
+-->
+
 
 <!-- ====================================================================== -->
 ## Step 1: Install DevTools and prerequisites

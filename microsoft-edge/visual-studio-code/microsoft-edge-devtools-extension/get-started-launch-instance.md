@@ -19,6 +19,18 @@ This way of opening DevTools is useful for these simple scenarios:
 
 *  If you don't have a folder open and you want to experiment with changing CSS on a page that's specified by using a URL, without editing a local source file.
 
+<!-- outline:
+* Step 1: Install DevTools and prerequisites
+* Step 2: Click the Launch Instance button
+* Step 3: Open a folder, to ensure editing is allowed
+* Step 4: Edit CSS
+* Step 5: Arrange tabs
+* Step 6: View JavaScript
+* Step 7: Open a different .html file by using the address bar
+* Step 8: Open a URL by using the address bar
+* Step 9: Close DevTools
+-->
+
 
 <!-- ====================================================================== -->
 ## Step 1: Install DevTools and prerequisites
@@ -140,7 +152,7 @@ By entering a file path in the address bar of the **Edge DevTools: Browser** tab
 <!-- ====================================================================== -->
 ## Step 8: Open a URL by using the address bar
 
-The address bar that results from the **Launch Instance** button can be used to open a URL on a server.  However, the **Launch Project** button, along with a URL stored in `launch.json`, is the main way to open a webpage by specifying a URL, and the tools open in Debug mode.
+The address bar that results from the **Launch Instance** button can be used to open a URL on a server.  However, the **Launch Project** button, along with a URL stored in `launch.json`, is the main way to open a webpage by specifying a URL, and the tools then open in Debug mode.
 
 1. If your localhost server is running, paste a localhost URL, such as [http://localhost:8080](http://localhost:8080).  Or, paste the github.io server URL, [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 
