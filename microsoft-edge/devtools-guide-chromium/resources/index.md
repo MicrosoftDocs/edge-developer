@@ -22,15 +22,20 @@ ms.date: 11/30/2022
    limitations under the License.  -->
 # View page resources
 
-Resources are the files that a page needs to display correctly.  Examples of resources include:
+Resources are the files that make up a webpage.  Examples of resources include:
 *  CSS files.
 *  JavaScript files.
 *  HTML files.
 *  Image files.
 
-You can view the resources that make up a web page from within several tools, or panels.
+You can view the resources that make up a web page from within several tools (or _panels_) in Microsoft Edge DevTools, including:
+*  Network tool
+*  Sources tool
+*  Application tool
 
-This guide assumes that you are familiar with the basics of web development described in [Learn web development](https://developer.mozilla.org/docs/Learn) and [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md).
+See also:
+*  [Learn web development](https://developer.mozilla.org/docs/Learn) at Mozilla.org
+*  [Overview of DevTools](../../devtools-guide-chromium/overview.md)
 
 To open DevTools, right-click the webpage, and then select **Inspect**. Or press `Ctrl`+ `Shift`+ `I` (Windows, Linux) or `Command`+ `Option`+ `I` (macOS).
 <!-- ====================================================================== -->
@@ -38,11 +43,11 @@ To open DevTools, right-click the webpage, and then select **Inspect**. Or press
 
 When you know the name of the resource that you want to inspect, the **Command Menu** in DevTools provides a fast way of finding and opening the resource.
 
-1. Press `Ctrl`+ `P` (Windows, Linux) or `Command`+`P` (macOS). You can also click the (![Customize icon.](../media/customize-devtools-icon-light-theme.png)) menu button and then select **Open file**. 
+1. To open DevTools, right-click the webpage, and then select **Inspect**. Or press `Ctrl`+ `Shift`+ `I` (Windows, Linux) or `Command`+ `Option`+ `I` (macOS).
 
-   The **Open file** dialog:
+1. When DevTools has focus, press `Ctrl`+ `P` (Windows, Linux) or `Command`+`P` (macOS). Or, you can click the (![Customize icon](../media/customize-devtools-icon-light-theme.png)) menu button in DevTools and then select **Open file**.  The Command Menu opens, displaying the **Open File** list:
 
-   ![The Open File dialog.](../media/resources-command-menu-empty.msft.png)
+   ![The Command Menu, displaying the Open File list](../media/resources-command-menu-empty.msft.png)
 
 1. Start typing the filename and press `Enter` when the correct file is highlighted in the autocomplete box or select the file from the dropdown list.
 
@@ -54,9 +59,7 @@ When you know the name of the resource that you want to inspect, the **Command M
 <!-- ====================================================================== -->
 ## Open resources in the Network tool
 
-See [Inspect the details of the resource](../network/index.md#inspect-the-details-of-the-resource) in _Inspect network activity_ to learn how to get the details for a specific resource.
-
-<!--why?-->
+In the **Network** tool, you can inspect the resources that make up the current webpage, such as `.html`, `.css`, `.js`, and image files.  To learn how to get the details for a specific resource, see [Inspect the details of the resource](../network/index.md#inspect-the-details-of-the-resource) in _Inspect network activity_.
 
 Show network resource details:
 
@@ -110,9 +113,9 @@ To use the Sources tool:
     Here is a breakdown of the non-obvious items in the previous figure.
 
     | Page item | Description |
-    |:--- |:--- |
+    |---|---|
     | `top` | The main document [browsing context](https://developer.mozilla.org/docs/Web/HTML/Element/iframe). |
-    | `microsoftedge.github.io` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `buttons.js` file is probably `https://microsoftedge.github.io/Demos/devtools-a11y-testing/buttons.js`. |
+    | `microsoftedge.github.io` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `buttons.js` file is [https://microsoftedge.github.io/Demos/devtools-a11y-testing/buttons.js](https://microsoftedge.github.io/Demos/devtools-a11y-testing/buttons.js). |
     | `css`, `photos` | Directories |
     | `(index)` | The main HTML document. |
     | `buttons.js` | A script to handle button presses on the page. |
@@ -150,11 +153,9 @@ Use the **Application** tool to group resources by file type:
    
    ![The Application tool.](../media/resources-application-mainfest-airhorner.msft.png)
 
-1. Scroll down to the **Frames** pane and then expand the folder that you're interested in.
+1. Scroll down to the **Frames** pane and then expand the folder that you're interested in:
 
    ![The Frames pane.](../media/resources-application-mainfest-airhorner-frames-expanded.msft.png)
-
-<!-- 1. Expand the resource sections you're interested in. -->
 
 1. Select a resource to view it.
 
@@ -162,13 +163,13 @@ Use the **Application** tool to group resources by file type:
 
 
 <!-- ====================================================================== -->
-## Browse files by type in the Network panel
+## Browse files by type in the Network tool
 
-To browse files by type, see [Filter by resource type](../network/index.md#filter-by-resource-type).
+When you view the resources that make up the current webpage, you can filter which type of resources to list, such as only showing `.css` or `.js` files.  For example, in the **Network** tool, you can click **CSS** to filter and only display CSS files:
 
-Filter for CSS files:
+![Filter for CSS resources in the Network Log](../media/resources-network-resources-filter-css.msft.png)
 
-![Filter for CSS in the Network Log.](../media/resources-network-resources-filter-css.msft.png)
+For more information, see [Filter by resource type](../network/index.md#filter-by-resource-type) in _Inspect network activity_.
 
 
 <!-- ====================================================================== -->
