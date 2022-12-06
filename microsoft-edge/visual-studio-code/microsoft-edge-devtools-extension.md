@@ -86,7 +86,7 @@ The DevTools extension for Visual Studio Code allows you to:
 | Analyze site traffic using the **Network** tool. | [Network tool integration](./microsoft-edge-devtools-extension/network-tool-integration.md) |
 | Log information, try out JavaScript, and access the Window/DOM using the **Console** tool. | [Console integration](./microsoft-edge-devtools-extension/console-integration.md) |
 | Inspect storage and Service Workers using the **Application** tool. | [Application tool integration](./microsoft-edge-devtools-extension/application-tool-integration.md) |
-| Use the extension in the Visual Studio Code debugging workflow. | [Automatically opening the browser and DevTools when debugging in Visual Studio Code](./microsoft-edge-devtools-extension/debugging-a-webpage.md) |
+| Use the extension in the Visual Studio Code debugging workflow. | [Integration with Visual Studio Code debugging](./microsoft-edge-devtools-extension/debugging-a-webpage.md) |
 
 
 <!-- ====================================================================== -->
