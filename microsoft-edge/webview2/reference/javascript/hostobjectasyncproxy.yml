@@ -1,7 +1,6 @@
 ### YamlMime:TSType
 name: HostObjectAsyncProxy
 uid: 'WebView2Script!HostObjectAsyncProxy:interface'
-package: WebView2Script!
 fullName: HostObjectAsyncProxy
 summary: ''
 remarks: ''
@@ -11,7 +10,6 @@ type: interface
 methods:
   - name: sync()
     uid: 'WebView2Script!HostObjectAsyncProxy#sync:member(1)'
-    package: WebView2Script!
     fullName: sync()
     summary: >-
       A method which returns a promise for a synchronous host object proxy for the same host object. For example,

@@ -1,7 +1,6 @@
 ### YamlMime:TSType
 name: HostObjectAsyncProxyBase
 uid: 'WebView2Script!HostObjectAsyncProxyBase:interface'
-package: WebView2Script!
 fullName: HostObjectAsyncProxyBase
 summary: >-
   An asynchronous host object proxy. Host objects added via `CoreWebView2.AddHostObjectToScript` are exposed as host
@@ -24,7 +23,6 @@ type: interface
 methods:
   - name: applyHostFunction(argArray)
     uid: 'WebView2Script!HostObjectAsyncProxyBase#applyHostFunction:member(1)'
-    package: WebView2Script!
     fullName: applyHostFunction(argArray)
     summary: |-
       Perform a method invocation on the host object that corresponds to this proxy.
@@ -44,7 +42,6 @@ methods:
         description: A promise representing the converted value of the return value of the host object method invocation.
   - name: getHostProperty(propertyName)
     uid: 'WebView2Script!HostObjectAsyncProxyBase#getHostProperty:member(1)'
-    package: WebView2Script!
     fullName: getHostProperty(propertyName)
     summary: >-
       Perform a property get on the host object. Use this method to explicitly force a property get to occur remotely if
@@ -64,7 +61,6 @@ methods:
         description: A promise representing the converted value of the property of the host object's property.
   - name: getLocalProperty(propertyName)
     uid: 'WebView2Script!HostObjectAsyncProxyBase#getLocalProperty:member(1)'
-    package: WebView2Script!
     fullName: getLocalProperty(propertyName)
     summary: >-
       Perform property get locally on the proxy object. Use the methods to force getting a property on the host object
@@ -85,7 +81,6 @@ methods:
         description: A promise representing the value of the property.
   - name: 'setHostProperty(propertyName, propertyValue)'
     uid: 'WebView2Script!HostObjectAsyncProxyBase#setHostProperty:member(1)'
-    package: WebView2Script!
     fullName: 'setHostProperty(propertyName, propertyValue)'
     summary: >-
       Perform a property set on the host object. Use this method to explicitly force a property set to occur remotely if
@@ -109,7 +104,6 @@ methods:
           resolves after the property value has been changed.
   - name: 'setLocalProperty(propertyName, propertyValue)'
     uid: 'WebView2Script!HostObjectAsyncProxyBase#setLocalProperty:member(1)'
-    package: WebView2Script!
     fullName: 'setLocalProperty(propertyName, propertyValue)'
     summary: >-
       Perform property set locally on the proxy object. Use the methods to force setting a property on the host object

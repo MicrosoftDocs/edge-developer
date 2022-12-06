@@ -1,7 +1,6 @@
 ### YamlMime:TSType
 name: WebViewEventMap
 uid: 'WebView2Script!WebViewEventMap:interface'
-package: WebView2Script!
 fullName: WebViewEventMap
 summary: ''
 remarks: ''
@@ -11,7 +10,6 @@ type: interface
 properties:
   - name: message
     uid: 'WebView2Script!WebViewEventMap#message:member'
-    package: WebView2Script!
     fullName: message
     summary: ''
     remarks: ''
@@ -23,7 +21,6 @@ properties:
         type: MessageEvent
   - name: sharedbufferreceived
     uid: 'WebView2Script!WebViewEventMap#sharedbufferreceived:member'
-    package: WebView2Script!
     fullName: sharedbufferreceived
     summary: ''
     remarks: ''

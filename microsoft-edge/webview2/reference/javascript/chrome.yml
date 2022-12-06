@@ -1,7 +1,6 @@
 ### YamlMime:TSType
 name: Chrome
 uid: 'WebView2Script!Chrome:interface'
-package: WebView2Script!
 fullName: Chrome
 summary: ''
 remarks: ''
@@ -11,7 +10,6 @@ type: interface
 properties:
   - name: webview
     uid: 'WebView2Script!Chrome#webview:member'
-    package: WebView2Script!
     fullName: webview
     summary: Exposes WebView2 specific JavaScript APIs.
     remarks: ''

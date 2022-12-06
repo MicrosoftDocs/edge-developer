@@ -1,7 +1,6 @@
 ### YamlMime:TSType
 name: WebView
 uid: 'WebView2Script!WebView:interface'
-package: WebView2Script!
 fullName: WebView
 summary: WebView is the interface to access the WebView2 specific APIs available to the script running within WebView2.
 remarks: ''
@@ -11,7 +10,6 @@ type: interface
 properties:
   - name: hostObjects
     uid: 'WebView2Script!WebView#hostObjects:member'
-    package: WebView2Script!
     fullName: hostObjects
     summary: >-
       Contains asynchronous proxies for all host objects added via `CoreWebView2.AddHostObjectToScript` as well as
@@ -30,7 +28,6 @@ properties:
 methods:
   - name: 'addEventListener(type, listener, options)'
     uid: 'WebView2Script!WebView#addEventListener:member(1)'
-    package: WebView2Script!
     fullName: 'addEventListener(type, listener, options)'
     summary: >-
       The standard EventTarget.addEventListener method. Use it to subscribe to the `message` event or
@@ -63,7 +60,6 @@ methods:
         description: ''
   - name: 'addEventListener(type, listener, options)'
     uid: 'WebView2Script!WebView#addEventListener:member(2)'
-    package: WebView2Script!
     fullName: 'addEventListener(type, listener, options)'
     summary: ''
     remarks: ''
@@ -88,7 +84,6 @@ methods:
         description: ''
   - name: postMessage(message)
     uid: 'WebView2Script!WebView#postMessage:member(1)'
-    package: WebView2Script!
     fullName: postMessage(message)
     summary: >-
       When the page calls `postMessage`<!-- -->, the `message` parameter is converted to JSON and is posted
@@ -125,7 +120,6 @@ methods:
         description: ''
   - name: releaseBuffer(buffer)
     uid: 'WebView2Script!WebView#releaseBuffer:member(1)'
-    package: WebView2Script!
     fullName: releaseBuffer(buffer)
     summary: >-
       Call with the ArrayBuffer from the chrome.webview.sharedbufferreceived event to release the underlying shared
@@ -144,7 +138,6 @@ methods:
         description: ''
   - name: 'removeEventListener(type, listener, options)'
     uid: 'WebView2Script!WebView#removeEventListener:member(1)'
-    package: WebView2Script!
     fullName: 'removeEventListener(type, listener, options)'
     summary: >-
       The standard EventTarget.removeEventListener method. Use it to unsubscribe to the `message` or
@@ -173,7 +166,6 @@ methods:
         description: ''
   - name: 'removeEventListener(type, listener, options)'
     uid: 'WebView2Script!WebView#removeEventListener:member(2)'
-    package: WebView2Script!
     fullName: 'removeEventListener(type, listener, options)'
     summary: ''
     remarks: ''

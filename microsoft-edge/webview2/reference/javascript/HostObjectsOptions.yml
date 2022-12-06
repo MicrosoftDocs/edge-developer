@@ -1,7 +1,6 @@
 ### YamlMime:TSType
 name: HostObjectsOptions
 uid: 'WebView2Script!HostObjectsOptions:interface'
-package: WebView2Script!
 fullName: HostObjectsOptions
 summary: Contains options applicable to `CoreWebView2.AddHostObjectToScript` added script proxies.
 remarks: ''
@@ -11,7 +10,6 @@ type: interface
 properties:
   - name: defaultSyncProxy
     uid: 'WebView2Script!HostObjectsOptions#defaultSyncProxy:member'
-    package: WebView2Script!
     fullName: defaultSyncProxy
     summary: >-
       When calling a method on a synchronous proxy, the result should also be a synchronous proxy. But in some cases,
@@ -27,7 +25,6 @@ properties:
         type: boolean
   - name: forceAsyncMethodMatches
     uid: 'WebView2Script!HostObjectsOptions#forceAsyncMethodMatches:member'
-    package: WebView2Script!
     fullName: forceAsyncMethodMatches
     summary: >-
       This is an array of regular expressions. When calling a method on a synchronous proxy, the method call will be
@@ -48,7 +45,6 @@ properties:
         type: 'RegExp[]'
   - name: forceLocalProperties
     uid: 'WebView2Script!HostObjectsOptions#forceLocalProperties:member'
-    package: WebView2Script!
     fullName: forceLocalProperties
     summary: >-
       This is an array of host object property names that will be run locally, instead of being called on the native
@@ -63,7 +59,6 @@ properties:
         type: 'string[]'
   - name: ignoreMemberNotFoundError
     uid: 'WebView2Script!HostObjectsOptions#ignoreMemberNotFoundError:member'
-    package: WebView2Script!
     fullName: ignoreMemberNotFoundError
     summary: >-
       By default, an exception is thrown when attempting to get the value of a proxy property that doesn't exist on the
@@ -78,7 +73,6 @@ properties:
         type: boolean
   - name: log
     uid: 'WebView2Script!HostObjectsOptions#log:member'
-    package: WebView2Script!
     fullName: log
     summary: >-
       This is a callback delegate that will be called with debug information if non-null.
@@ -98,7 +92,6 @@ properties:
         type: '(...data: any[]) =&gt; void'
   - name: shouldSerializeDates
     uid: 'WebView2Script!HostObjectsOptions#shouldSerializeDates:member'
-    package: WebView2Script!
     fullName: shouldSerializeDates
     summary: >-
       By default this is `false`<!-- -->, and javascript `Date` objects will be sent to host objects as a string using
