@@ -94,7 +94,7 @@ conceptualContent:
               text: Set Microsoft Edge as the default browser
               url: /deployedge/edge-default-browser
             - itemType: reference
-              text: Manage web access by using Edge for iOS and Android with Microsoft Intune
+              text: Manage web access using Microsoft Edge for iOS and Android with Microsoft Intune
               url: /mem/intune/apps/manage-microsoft-edge
         # Card
         - title: Manage security and privacy
