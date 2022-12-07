@@ -101,11 +101,12 @@ Register your app is a link or protocol handler to automatically launch your app
 
 See [Handle links to your Progressive Web Apps](./handle-urls.md) and [Handle protocols in Progressive Web Apps](./handle-protocols.md).
 
-<!-- 
 #### Widgets
 
-TODO: when widgets doc land, add a section about it here.
- -->
+Create your own app widgets to display in the operating system widget dashboard such as the Windows 11 widgets board.
+
+See [Build PWA-driven widgets](./widgets.md).
+
 
 <!-- ====================================================================== -->
 ## Support offline scenarios
@@ -121,7 +122,7 @@ You can provide a good offline experience in several steps:
 1. Gracefully handle the tasks of your app that can't be used with no internet access.
 1. Implement advanced scenarios such as letting users download data for offline viewing.
 
-To learn more, see [Offline and network connectivity support in Progressive Web Apps](./offline.md).
+To learn more, see [Use Service Workers to manage network requests](./service-workers.md).
 
 
 <!-- ====================================================================== -->
@@ -134,7 +135,7 @@ To provide a rich and fast experience to your users, use the different persisten
 * IndexedDB to store larger, structured, user data.
 * File System Access API to store files on disk.
 
-To learn more, see [Offline and network connectivity support in Progressive Web Apps](./offline.md).
+To learn more, see [Store data on the device](./offline.md).
 
 <!-- TODO: link to a new article about this topic only, with much more details than what's in offline.md now, in particular, information about available space, quota information, and eviction info.  -->
 
