@@ -1411,7 +1411,7 @@
                   href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
 
-            - name: JavaScript
+            - name: JavaScript APIs in WebView2
               uid: WebView2Script!
               displayName: 
               items:
