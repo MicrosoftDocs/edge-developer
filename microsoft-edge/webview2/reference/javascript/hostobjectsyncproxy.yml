@@ -8,9 +8,9 @@ summary: >-
   object proxies using `window.chrome.webview.hostObjects.{name}`<!-- -->. Host object proxies represent a host object.
 
 
-  Host object proxies are JavaScript Proxy objects that intercept all property get, property set, and method
-  invocations. Properties or methods that are a part of the Function or Object prototype are run locally. Additionally
-  any property or method in the `chrome.webview.hostObjects.options.forceLocalProperties` array are also run locally.
+  Host object proxies are JavaScript Proxy objects that intercept all property `get`, property `set`, and method
+  invocations. Properties or methods that are a part of the `Function` or `Object` prototype are run locally. Additionally
+  any property or method in the `chrome.webview.hostObjects.options.forceLocalProperties` array is also run locally.
   This defaults to including optional methods that have meaning in JavaScript like `toJSON` and `Symbol.toPrimitive`<!--
   -->. Add more to the array as required.
 remarks: ''
@@ -60,9 +60,9 @@ methods:
     package: WebView2Script!
     fullName: getHostProperty(propertyName)
     summary: >-
-      Perform a property get on the host object. Use this method to explicitly force a property get to occur remotely if
+      Perform a property `get` on the host object. Use this method to explicitly force a property `get` to occur remotely if
       a conflicting local method or property exists. For instance, `proxy.toString()` runs the local `toString` method
-      on the proxy object. But proxy.applyHostFunction('toString') runs `toString` on the host proxied object instead.
+      on the proxy object. But `proxy.applyHostFunction('toString')` runs `toString` on the host proxied object instead.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -80,7 +80,7 @@ methods:
     package: WebView2Script!
     fullName: getLocalProperty(propertyName)
     summary: >-
-      Perform property get locally on the proxy object. Use the methods to force getting a property on the host object
+      Perform a property `get` locally on the proxy object. Use the methods to force getting a property on the host object
       proxy rather than on the host object it represents. For instance, `proxy.unknownProperty` gets the property named
       `unknownProperty` from the host proxied object. But `proxy.getLocalProperty('unknownProperty')` gets the value of
       the property `unknownProperty` on the proxy object.
@@ -101,7 +101,7 @@ methods:
     package: WebView2Script!
     fullName: 'setHostProperty(propertyName, propertyValue)'
     summary: >-
-      Perform a property set on the host object. Use this method to explicitly force a property set to occur remotely if
+      Perform a property `set` on the host object. Use this method to explicitly force a property `set` to occur remotely if
       a conflicting local method or property exists.
     remarks: ''
     isPreview: false
