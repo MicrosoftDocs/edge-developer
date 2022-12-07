@@ -30,7 +30,7 @@ In the **Emulate devices** dropdown menu, you can select from a number of differ
 <!-- toolbar item 2. Width -->
 <!-- toolbar item 3. Height -->
 
-To change the viewport dimensions, click the **Width** and **Height** ![Width and Height dropdown menus](./device-state-emulation-images/width-height-icons.png) dropdown menus:
+To change the viewport dimensions, click the **Width** and **Height** ![Width and Height icons](./device-state-emulation-images/width-height-icons.png) dropdown menus:
 
 ![Width and Height dropdown menus](./device-state-emulation-images/width-height.png)
 
