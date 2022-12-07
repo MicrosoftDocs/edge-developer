@@ -23,7 +23,7 @@ The following table describes the different options, and the rest of this articl
 | Cache | The Cache API can be used to manage cached resources. The Cache API is Promise-based and allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on. Usually, the Cache API is used within the context of a service worker, but it's also available to your app's front-end code. |
 | File System Access | The File System Access API allows your PWA to read files and folders on the user's device and save changes back to them. |
 
-Do not use WebSQL or Application Cache. While they are two other browser storage mechanisms, they have both been deprecated. Instead of WebSQL, use IndexedDB. Instead of Application Cache, use the Cache API.
+**Note**: do not use WebSQL or Application Cache. While these are two other browser storage mechanisms, they have both been deprecated. Instead of WebSQL, use IndexedDB. Instead of Application Cache, use the Cache API.
 
 
 <!-- ====================================================================== -->
@@ -59,50 +59,97 @@ const browserInformation = JSON.parse(value);
 
 To learn more, see [Web Storage API](https://developer.mozilla.org/docs/Web/API/Web_Storage_API) on MDN.
 
-#### Web Storage quota
-
-In Microsoft Edge, local and session storage are limited to about 5MB each. Trying to add more data than what is allowed results in a `QuotaExceededError` JavaScript error. Your code should catch this error by using a `try...catch` statement as shown below:
-
-```javascript
-try {
-  localStorage.setItem('foo', 'bar');
-} catch (e) {
-  // Code to handle the lack of storage space.
-}
-```
 
 <!-- ====================================================================== -->
 ## IndexedDB
 
-IndexedDB is an asynchronous API for storing structured data that can be used in your app's front-end code or service worker code. Use the `IndexedDB` API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects or files.
+IndexedDB is an asynchronous API for storing structured data that can be used in your app's front-end code or service worker code. Use the IndexedDB API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects or files.
 
 IndexedDB is the best option for storing data in your PWA because using the API does not slow down your app by blocking the main thread, and it can be used both from your app's front-end code and service worker.
 
-Using IndexedDB is more complex than using Web Storage.
+Using IndexedDB is more complex than using Web Storage and requires the following steps to store data:
 
-<ADD CODE EXAMPLE>
+1. Opening a database by using the `window.indexedDB.open()` function.
+1. Creating an object store in the database by using the `IDBDatabase.createObjectStore()` function.
+1. Starting a transaction to store data by using the `IDBDatabase.transaction()` function.
+1. And waiting for the operation to complete by listening to an event.
 
-To learn more, see [Using IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB) on MDN.
+To learn more and view code examples, see [Using IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB) on MDN.
 
-#### IndexedDB quota
-
-With Microsoft Edge, your app can use up to 60% of the total disk space.
-
-You can use `navigator.storage.estimate()` to ask the Storage Manager API how much total space is available and how much the current app already uses. To learn more, see [StorageManager.estimate()](https://developer.mozilla.org/docs/Web/API/StorageManager/estimate) on MDN.
-
-Note that when the user's device starts being low on available disk space, also known as storage pressure, the browser that's running your app may start clearing non-persistent data.
-
-By default, the data you store using IndexedDB is not persistent which means that the browser can clear it under storage pressure. Use the `navigator.storage.persist()` function to ask for your app's storage to be persistent. Persistent storage can only be cleared by the user. To learn more, see [StorageManager.persist()](https://developer.mozilla.org/docs/Web/API/StorageManager/persist) on MDN.
 
 <!-- ====================================================================== -->
 ## Cache
+
+The Cache API is a system for storing and retrieving network requests and responses in your app's front-end code or service worker. It can be used to store assets, such as images and files, locally on the user's device, which can make your application work offline or improve its performance by reducing the number of network requests needed to render the app.
+
+The following code snippet shows how to listen to the `fetch` event in a service worker, and using it to store the response from the server using the Cache API:
+
+```javascript
+self.addEventListener("fetch", event => {
+  async function cacheAndReturnRequest() {
+    // Get the response from the server.
+    const fetchResponse = await fetch(event.request.url);
+    // Open the app's cache.
+    const cache = await caches.open("cache-name");
+    // Put the response in cache.
+    cache.put(event.request.url, fetchResponse.clone());
+    // And return the response.
+    return fetchResponse.
+  }
+
+  event.respondWith(cacheAndReturnRequest());
+});
+```
+
+To discover other useful Cache API scenarios, see [Use Service Workers to manage network requests](./service-workers.md).
 
 
 <!-- ====================================================================== -->
 ## File System Access
 
+The File System Access API makes it possible for your app to access files on the user's device in a way that's similar to native applications. It can be used to create applications that can read and write files, such as text or image editors.
+
+The open a file from the user's device, use the `showOpenFilePicker()` function:
+
+```javascript
+openFileButton.addEventListener("click", async () => {
+  const fileHandles = await window.showOpenFilePicker();
+});
+```
+
+To learn more, see [Window.showOpenFilePicker()](https://developer.mozilla.org/docs/Web/API/Window/showOpenFilePicker) on MDN.
+
+The _origin-private_ File System Access API is a variation of the File System Access API that's intended to provide more privacy for users. It allows applications to access files on the user's device too, but only within a specific directory that's private to the app's origin. Also, this API is not intended to make it easy for users to access the private directory using their file explorer.
+
+To open a file from the origin-private file system, use the `navigator.storage` Promise-based API:
+
+```javascript
+// Get the origin-private directory handle.
+const root = await navigator.storage.getDirectory();
+// Get the handle for a file in the directory.
+const fileHandle = await root.getFileHandle("my-file.txt");
+```
+
+The File System Access API can also be coupled with the PWA File Handling feature to register your app as a handler of specific file types, and therefore feel more native to users. To learn more, see [Handle files in Progressive Web Apps](./handle-files.md).
 
 
+<!-- ====================================================================== -->
+## Storage quota
 
+In Microsoft Edge, local and session storage are limited to about 5MB each. Your app can also use up to 60% of the total disk space for storing IndexedDB, Cache API, and File System Access API data.
 
+You can use `navigator.storage.estimate()` to ask the Storage Manager API how much total space is available and how much the current app already uses. To learn more, see [StorageManager.estimate()](https://developer.mozilla.org/docs/Web/API/StorageManager/estimate) on MDN.
 
+Trying to store more data than what is allowed results in a JavaScript error messages. Your code should catch these errors by using `try...catch` statements. The code snippet below shows how to catch an exceeded quota error when storing data in Web Storage:
+
+```javascript
+try {
+  localStorage.setItem('foo', 'bar');
+} catch (e) {
+  // Code that handles the lack of storage space.
+}
+```
+
+When the user's device starts being low on available disk space, also known as storage pressure, the browser that's running your app may start evicting non-persistent data. This means that the data your app stored by using the Cache API, IndexedDB, the File System Access API, or Web Storage may get evicted.
+
+By default, the data you store is considered not persistent which means that the browser can clear it under storage pressure. If your app stores critical data, use the `navigator.storage.persist()` function to ask for your app's storage to be persistent. Persistent storage can only be cleared by the user. To learn more, see [StorageManager.persist()](https://developer.mozilla.org/docs/Web/API/StorageManager/persist) on MDN.
