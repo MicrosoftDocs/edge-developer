@@ -214,7 +214,7 @@ Every time a user navigates to one of your app's pages, the browser that's runni
 
 In practice, this means that there can be two Service Workers running at the same time, but only one intercepts the app's network requests. When the app is closed, the existing Service Worker stops being used. The next time the app is opened, the new Service Worker is activated. The `activate` event is triggered, and the new Service Worker starts intercepting `fetch` events.
 
-You can forcefully activate the new Service Worker as soon as it's installed by using `self.skipWaiting()` in your Service Worker's `install` event handler.
+You can forcefully activate the new Service Worker as soon as it's installed, by using `self.skipWaiting()` in your Service Worker's `install` event handler.
 
 To learn more about how Service Workers update, see [Updating the Service Worker](https://web.dev/service-worker-lifecycle#updates) on web.dev.
 
