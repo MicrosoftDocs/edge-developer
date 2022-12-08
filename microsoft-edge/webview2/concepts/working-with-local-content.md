@@ -1,6 +1,6 @@
 ---
 title: Working with local content in WebView2 apps
-description: Working with local content in WebView2 apps.
+description: Ways to work with local content in WebView2 apps, including navigating to a file URL, navigating to a string, virtual host name mapping, or the WebResourceRequested event.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -119,7 +119,7 @@ This approach lets you specify the cross-origin access using the `CoreWebView2Ho
 
 * [CoreWebView2.SetVirtualHostNameToFolderMapping Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping)
 * [CoreWebView2.ClearVirtualHostNameToFolderMapping Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.clearvirtualhostnametofoldermapping)
-* [CoreWebView2HostResourceAccessKind Enum](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2hostresourceaccesskind)
+* [CoreWebView2HostResourceAccessKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2hostresourceaccesskind)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
