@@ -806,6 +806,9 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 *  Local content via virtual host name to local folder mapping.
 *  Content from a constructed network request.
 
+See also:
+* [Working with content in WebView2 apps](./working-with-content.md)
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.Navigate Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigate)
@@ -973,7 +976,6 @@ The `WebResourceRequested` event allows the app to intercept and override all ne
 
 See also:
 * [Custom management of network requests](/microsoft-edge/webview2/how-to/webresourcerequested)
-* [Working with content in WebView2 apps](./working-with-content.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

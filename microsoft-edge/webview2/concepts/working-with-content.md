@@ -9,23 +9,41 @@ ms.technology: webview
 ms.date: 12/08/2022
 ---
 # Working with content in WebView2 apps
-In addition to remote content, content can be loaded locally from WebView2. WebView2 provides a number of ways to load local content as described.
 
+In addition to loading remote content, content can be loaded locally into WebView2.
+WebView2 provides a number of ways to load local content as described.
+
+
+<!-- ====================================================================== -->
+<!-- ## Navigate to string -->
+
+
+<!-- ====================================================================== -->
 ## Navigate to a file URL
-WebView2 allows navigations to file URLs, which is the simplest approach here to load some file content. However like the browser, file URLs are limited in any capabilites. The document origin will be null for a file URL and for each resource the full path is needed to be specified. 
 
+WebView2 allows navigations to file URLs, which is the simplest approach here to load some file content. However like the browser, file URLs are limited in any capabilities. The document origin will be `null` for a file URL, and for each resource, the full path needs to be specified. 
+
+
+<!-- ====================================================================== -->
 ## Virtual host name mapping
+
 A way to load local content in a WebView2 control is to use virtual host mapping. This involves mapping a local domain name to the WebView2 control, so that when the control attempts to load a resource from that domain, it will load the content from the specified local folder location instead. The origin of the document will also be the virtual host name. 
 
+
+<!-- ====================================================================== -->
 ## WebResourceRequested event
+
 Another way that can be used to host local content would be relying on the `WebResourceRequested` event. This event is triggered when the control attempts to load a resource, and it allows the developer to intercept the request and provide their own content instead.
 
+
+<!-- ====================================================================== -->
 ## Comparison between the different approaches
-The main advantage of using the WebResourceRequested event to load local content in a WebView2 control is that it allows the developer to customize the behavior on a per-request basis. This means that they can decide which requests to intercept and provide their own content for, and which requests to let the control handle normally. This can be useful for implementing features like offline mode, where only certain types of requests need to be handled differently.
+
+The main advantage of using the `WebResourceRequested` event to load local content in a WebView2 control is that it allows the developer to customize the behavior on a per-request basis. This means that they can decide which requests to intercept and provide their own content for, and which requests to let the control handle normally. This can be useful for implementing features like offline mode, where only certain types of requests need to be handled differently.
 
 Another advantage of using the WebResourceRequested event is that it gives the developer more control over the content that is loaded into the WebView2 control. They can provide custom content for each request, which can be useful for loading content from a local source or for simulating a production environment.
 
-However, there are also some disadvantages to using the WebResourceRequested event. One disadvantage is that it requires more code and may be more difficult to implement than other methods, such as virtual host mapping and need knowledge of HTTP to be able to construct a proper response. From WebView2's perspective the resource will have come via the network and WebView2 will adhere to the headers that are set by the app as part of the response. 
+However, there are also some disadvantages to using the `WebResourceRequested` event. One disadvantage is that it requires more code and may be more difficult to implement than other methods, such as virtual host mapping and need knowledge of HTTP to be able to construct a proper response. From WebView2's perspective the resource will have come via the network and WebView2 will adhere to the headers that are set by the app as part of the response. 
 
 Another disadvantage of using the WebResourceRequested event is that it can be less efficient than other methods. Because the developer has to intercept each request and provide their own content, it can add an extra layer of overhead to the process of loading content into the WebView2 control. This can make the control slower to load content and may affect the overall performance of the application.
 
