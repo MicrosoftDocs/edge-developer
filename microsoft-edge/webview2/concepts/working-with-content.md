@@ -1,6 +1,6 @@
 ---
-title: Working with content in WebView2 apps
-description: Working with content in WebView2 apps.
+title: Working with local content in WebView2 apps
+description: Working with local content in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 12/08/2022
 ---
-# Working with content in WebView2 apps
+# Working with local content in WebView2 apps
 
 In addition to loading remote content, content can also be loaded locally into WebView2.  There are several different approaches that can be used to load local content into a WebView2 control, including: 
 * Navigating to a file URL.
