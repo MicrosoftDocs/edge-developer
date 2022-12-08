@@ -12,7 +12,12 @@ ms.date: 12/08/2022
 In addition to remote content, content can be loaded locally from WebView2. WebView2 provides a number of ways to load local content as described.
 
 ## Navigate to a file URL
-WebView2 allows navigations to file URLs, which is the simplest approach here to load some file content. However like the browser, file URLs are limited in any capabilites. The document origin will be null for a file URL and for each resource the full path is needed to be specified. 
+WebView2 allows navigations to file URLs, which is the simplest approach here to load some file content. However like the browser, file URLs are limited in any capabilites. The document origin will be null for a file URL and for each resource the full path is needed to be specified.
+
+## Navigate to string
+WebView2 also lets you use the NavigateToString method to load the content directly from a string. This can be useful if you will be packaging the content via the app code or if you'd like to dynamically create the content.
+
+Another scenario where navigating to a string might be useful is if you want to load content that is not accessible via a URL. For example, if you have an in-memory representation of an HTML document, you could use the NavigateToString method to load that content into the WebView2 control. This can be useful if you want to avoid the need to write the content to a file or server before loading it into the control.
 
 ## Virtual host name mapping
 A way to load local content in a WebView2 control is to use virtual host mapping. This involves mapping a local domain name to the WebView2 control, so that when the control attempts to load a resource from that domain, it will load the content from the specified local folder location instead. The origin of the document will also be the virtual host name. 
