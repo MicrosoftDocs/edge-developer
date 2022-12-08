@@ -18,19 +18,24 @@ In addition to loading remote content, content can also be loaded locally into W
 
 This article will discuss these four approaches in more detail and compare their key features and differences.
 
+<!-- the below list is copied from the Overview of APIs article: 
+TODO:
+* Merge the below list items wording with the above list items, to clarify the above wording.
+* Update the h2 headings below to match the above revised list items.
+* Improve the lead-in in the section [Manage content loaded into WebView2](./overview-features-apis.md#manage-content-loaded-into-webview2) in _Overview of WebView2 features and APIs_ to use the clarified wording: -->
+These APIs load, stop loading, and reload content to WebView2.  The content that's loaded can be:
+*  Content from a URL.
+*  A string of HTML.
+*  Local content via virtual host name to local folder mapping.
+*  Content from a constructed network request.
+
 
 <!-- ====================================================================== -->
 ## Navigate to a file URL
 
-For example:
-
-```
-file:///C:/Users/username/Documents/GitHub/edge-developer/microsoft-edge/webview2/concepts/working-with-content.md
-```
-
 WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is the most efficient and simples approach that satisfies the basic scenario.  However, it is less flexible than the other approaches.  This is the simplest approach to load local content.  However, like the browser, file URLs are limited in some capabilities. The document origin will be `null` for a file URL.  For each resource, the full path is needed to be specified.
 
-File URLs behave like they do in the browser.  For example, you can't make an `xmlhttprequest` (XHR) in a file URL, because you're not working in the context of a _ page.  If it's loading local content, still came from bing.com (eg), versus a file that came from _.
+File URLs behave like they do in the browser.  For example, you can't make an `XMLHttpRequest` (XHR) in a file URL, because you're not working in the context of a _ page.  If it's loading local content, still came from bing.com (eg), versus a file that came from _.
 For file URLs, it behaves the same as the browser.
 
 You must specify the full path of the file.  Otherwise, _.  For example, suppose you switch between online and offline content, specify the virtual domain; vs. if use file URL, you have to _ each time you switch.
@@ -55,11 +60,38 @@ Can't tell cross-origin resources for file URLs.
 
 ---
 
+
+<!-- ------------------------------ -->
+#### Example of a file URL
+
+Here's an example of a file URL, for a cloned repo copy of the Demo To Do webpage:
+
+```
+file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html
+```
+
+That path is from a clone of the following on Windows:
+* [Demo To Do rendered page](https://microsoftedge.github.io/Demos/demo-to-do/)
+* [Demo To Do source code](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
+
+To obtain the above string:
+
+1. In Visual Studio Code, open the cloned folder: `C:\Users\username\Documents\GitHub\Demos\demo-to-do`
+
+1. If you haven't already, on the Activity Bar, select **Extensions**, and then install the **Microsoft Edge Tools for VS Code** extension.
+
+1. On the Activity Bar, select **Explorer**, right-click `index.html`, select **Open with Edge**, and then select **Open Browser with DevTools**.
+
+1. In the **Edge DevTools: Browser** tab, copy the string from the address bar.
+
+For details, see [Get started using the DevTools extension for Visual Studio Code](https://learn.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/get-started).
+
+
 <!-- ---------------------------------------- -->
 #### Example of navigating to a file URL
 
 ```javascript
-todo
+TODO
 ```
 
 
@@ -70,16 +102,28 @@ Another method to load local content is the `NavigateToString` method.  This app
 
 Another scenario where navigating to a string might be useful is if you want to load content that is not accessible via a URL. For example, if you have an in-memory representation of an HTML document, you could use the `NavigateToString` method to load that content into the WebView2 control.  This can be useful if you want to avoid the need to write the content to a file or server before loading it into the control.
 
+##### [.NET/C#](#tab/dotnetcsharp)
 
-#### Example of navigating to a string
+* [CoreWebView2.NavigateToString Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatetostring)
 
-As an example of a string, for the [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) page, the following is the string representation of the page.
-You can obtain this string by entering `document.body.parentElement.outerHTML` in the DevTools Console.
+##### [WinRT/C#](#tab/winrtcsharp)
 
-The listing below has added line wrapping for readability.  In practice, these lines would be concatenated into a single long line:
+* [CoreWebView2.NavigateToString Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigatetostring)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2::NavigateToString method](/microsoft-edge/webview2/reference/win32/icorewebview2#navigatetostring)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Example string representation of a webpage
+
+The following is the string representation of the **Demo To Do** webpage.  The listing below has added line wrapping for readability.  In practice, these lines are concatenated into a single long line:
 
 ```html
-<html lang="en"><head>\n    
+`<html lang="en"><head>\n    
 <meta charset="UTF-8">\n    
 <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    
 <title>TODO app</title>\n    
@@ -104,19 +148,23 @@ The listing below has added line wrapping for readability.  In practice, these l
 </html>`
 ```
 
-##### [.NET/C#](#tab/dotnetcsharp)
+To obtain the above string:
 
-* [CoreWebView2.NavigateToString Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatetostring)
+1. Go to [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/).
 
-##### [WinRT/C#](#tab/winrtcsharp)
+1. Right-click the webpage and then select **Inspect** to open DevTools.
 
-* [CoreWebView2.NavigateToString Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigatetostring)
+1. In the **Console** of DevTools, enter: `document.body.parentElement.outerHTML`.  The **Console** outputs a string representation of the webpage:
 
-##### [Win32/C++](#tab/win32cpp)
+   ![A string representation of the Demo To Do webpage](./working-with-local-content-images/demo-todo-page-as-string.png)
 
-* [ICoreWebView2::NavigateToString method](/microsoft-edge/webview2/reference/win32/icorewebview2#navigatetostring)
 
----
+<!-- ------------------------------ -->
+#### Example of navigating to a string
+
+```javascript
+TODO
+```
 
 
 <!-- ====================================================================== -->
@@ -150,10 +198,16 @@ This approach lets you specify the cross-origin access using the `CoreWebView2Ho
 
 
 <!-- ---------------------------------------- -->
+#### Example of a virtual host name
+
+TODO
+
+
+<!-- ---------------------------------------- -->
 #### Example of virtual host name mapping
 
 ```javascript
-todo
+TODO
 ```
 
 
@@ -173,14 +227,6 @@ Another advantage of using the WebResourceRequested event is that it gives the d
 There are also some disadvantages to using the `WebResourceRequested` event. One disadvantage is that it requires more code and may be more difficult to implement than other methods, such as virtual host mapping and need knowledge of HTTP to be able to construct a proper response. From WebView2's perspective the resource will have come via the network and WebView2 will adhere to the headers that are set by the app as part of the response. 
 
 Another disadvantage of using the WebResourceRequested event is that it can be less efficient than other methods. Because the developer has to intercept each request and provide their own content, it can add an extra layer of overhead to the process of loading content into the WebView2 control. This can make the control slower to load content and may affect the overall performance of the application.
-
-
-<!-- copied from Overview of APIs article: -->
-These APIs load, stop loading, and reload content to WebView2.  The content that's loaded can be:
-*  Content from a URL.
-*  A string of HTML.
-*  Local content via virtual host name to local folder mapping.
-*  Content from a constructed network request.
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -212,3 +258,5 @@ todo
 ## See also
 
 * [Manage content loaded into WebView2](./overview-features-apis.md#manage-content-loaded-into-webview2) in _Overview of WebView2 features and APIs_
+* [Demo To Do rendered page](https://microsoftedge.github.io/Demos/demo-to-do/)
+   * [Demo To Do source code](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
