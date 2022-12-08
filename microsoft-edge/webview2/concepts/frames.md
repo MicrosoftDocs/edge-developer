@@ -227,8 +227,6 @@ window.chrome.webview.addEventListener('message', arg => {
     // implement event listener here
 });
 ```
-    
-Code in a webpage might be running either inside a browser or inside the WebView2 control.  Some features might be disabled when inside a WebView2 control instance.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
