@@ -973,6 +973,7 @@ The `WebResourceRequested` event allows the app to intercept and override all ne
 
 See also:
 * [Custom management of network requests](/microsoft-edge/webview2/how-to/webresourcerequested)
+* [Working with content in WebView2 apps](./working-with-content.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
