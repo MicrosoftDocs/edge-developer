@@ -39,11 +39,11 @@ To make your app available to users, you deploy it on a web server that's access
 * **Back-end code**: the endpoints needed by your app, when connected to the internet, to retrieve dynamic content that may be stored in a database on your server.
 * **Front-end code**: the resources needed for the app to be installed on the user's device, such as HTML, CSS, and JavaScript code.
 
-Your back-end code can use the server-side languages of your choice such as ASP.NET, Java, Node.js, or PHP. Note, however, that server-side endpoints may not even be required depending on the app your are building. The PWA you create in this tutorial does not have any server-side code because it exclusively runs on the device it's installed on and doesn't need any server-side data.
+Your back-end code can use the server-side languages of your choice such as ASP.NET, Java, Node.js, or PHP. Note, however, that server-side endpoints may not even be required depending on the app your're building. The PWA that you create in this tutorial doesn't have any server-side code, because the app exclusively runs on the device it's installed on, and doesn't need any server-side data.
 
-Your front-end code uses HTML, CSS, JavaScript, and JSON only.
+Your front-end code uses HTML, CSS, JavaScript, and a JSON manifest only.
 
-You use HTML to describe the content in your app, such as the text, images, text fields, or buttons that appear in the user interface. You then use CSS to organize the HTML content in a layout, and provide styles to elements. And finally you use JavaScript to add user interactions to your user interface.
+You use HTML to describe the content in your app, such as the text, images, text fields, or buttons that appear in the user interface. You then use CSS to organize the HTML content in a layout, and provide styles to elements. You use JavaScript to add user interactions to your user interface. And finally, you use a JSON manifest file that describes your application to the host operating system.
 
 Note that although your front-end code runs by using the device's web browser, the browser user interface may not be visible as your app can choose to run in a standalone window.
 
@@ -91,7 +91,7 @@ For debugging purposes, Microsoft Edge also permits a `localhost` web server to 
 <!-- ====================================================================== -->
 ## Step 2 - Create your app start page
 
-So far, there is no content available on your web server. Start by creating the first page users will see when they access your temperature converter app.
+So far, there is no content available on your web server. Start by creating the first page that users will see when they access your temperature converter app.
 
 1. Open Visual Studio Code, select **File** > **Open Folder** and then select the `MySamplePWA` directory you created in the previous step.
 
@@ -112,9 +112,9 @@ So far, there is no content available on your web server. Start by creating the 
    </html>
    ```
 
-Now browse to `http://localhost:8080` to view your app.
+1. Go to `http://localhost:8080` to view your app:
 
-![Running your new PWA on localhost.](../media/sample-pwa-app.png)
+   ![Running your new PWA on localhost.](../media/sample-pwa-app.png)
 
 The app runs in the browser for now, and can't be installed. To make it installed, the app needs a web app manifest.
 
@@ -166,9 +166,9 @@ Your VS Code project should now look somewhat like this:
 <!-- ====================================================================== -->
 ## Step 4 - Continue building the user interface of your app
 
-Now that your app has a web app manifest file, and a start page, it is time to build out the main app functionality.
+Now that your app has a web app manifest file, and a start page, it's time to build out the main app functionality.
 
-In this step of the tutorial, we will create a basic temperature unit conversion app.
+In this step of the tutorial, we'll create a basic temperature unit conversion app.
 
 1. To create the main user interface content, copy the following HTML code and paste it into the `index.html` file, replacing the `<h1>` HTML tag:
 
@@ -192,7 +192,7 @@ In this step of the tutorial, we will create a basic temperature unit conversion
     </form>
     ```
 
-    The above HTML code contains a form with multiple input elements your app will use to convert a temperature value from one unit to another unit.
+    The above HTML code contains a form with multiple input elements that your app will use to convert a temperature value from one unit to another unit.
 
 1. To make the converter work, you use JavaScript code. Create a new file named `converter.js` in your project and add the following code to it:
 
@@ -241,7 +241,7 @@ In this step of the tutorial, we will create a basic temperature unit conversion
     });
     ```
 
-1. Open the `index.html` file again and add the following code after the closing `</form>` tag to load the JavaScript file:
+1. Open the `index.html` file again and add the following code after the closing `</form>` tag, to load the JavaScript file:
 
     ```html
     <script src="converter.js"></script>
@@ -296,15 +296,15 @@ In this step of the tutorial, we will create a basic temperature unit conversion
     <link rel="stylesheet" href="converter.css">
     ```
 
-Your VS Code project should now look something like this
+    Your Visual Studio Code project should now look something like this:
 
-![Screenshot of VS Code showing the sample PWA project, with the index.html, converter.js, converter.css, and manifest.json files](../media/visual-studio-project-with-front-end-files.png)
+    ![The sample PWA project in Visual Studio Code, with the index.html, converter.js, converter.css, and manifest.json files](../media/visual-studio-project-with-front-end-files.png)
 
-Now browse to `http://localhost:8080` to view your app.
+1. Go to `http://localhost:8080` to view your app:
 
-![Running your new PWA, with the frontend code, on localhost.](../media/sample-pwa-app-with-frontend-code.png)
+    ![Running your new PWA, with the frontend code, on localhost.](../media/sample-pwa-app-with-frontend-code.png)
 
-Your app does something useful now but can't be installed yet. You will make your app installable in the next step by creating a service worker.
+Your app does something useful now, but it can't be installed yet, because there's no service worker. You'll make your app installable in the next step, by creating a service worker.
 
 
 <!-- ====================================================================== -->
@@ -318,11 +318,11 @@ Service workers are specialized [Web Workers](https://developer.mozilla.org/docs
 *  Advanced caching.
 *  Running background tasks such as receiving PUSH messages, adding badges to the app icon, or fetching data from a server.
 
-Your app must have a service worker file for Microsoft Edge to install the app.
+For Microsoft Edge to be able to install the app, your app must have a service worker file.
 
-A service worker is defined in a JavaScript file loaded by your app. To add a service worker to your project:
+A service worker is defined in a JavaScript file that's loaded by your app. To add a service worker to your project:
 
-1. In VS Code, create a new file (`Ctrl`+`N`), add the following content, and save the file as `sw.js`:
+1. In Visual Studio Code, create a new file (`Ctrl`+`N`), add the following content, and save the file as `sw.js`:
 
     ```javascript
     const CACHE_NAME = `temperature-converter-v1`;
@@ -356,7 +356,7 @@ A service worker is defined in a JavaScript file loaded by your app. To add a se
               cache.put(event.request, fetchResponse.clone());
               return fetchResponse;
             } catch (e) {
-              // The network failed
+              // The network failed.
             }
         }
       })());
@@ -379,7 +379,9 @@ A service worker is defined in a JavaScript file loaded by your app. To add a se
 
 To confirm that your service worker is running:
 
-1.  Browse to `http://localhost:8080` in Microsoft Edge and press `F12` to open DevTools.
+1. In Microsoft Edge, go to `http://localhost:8080`.
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
 1. Open the **Application** tool, then **Service Workers**.  If the service worker isn't displayed, refresh the page.
 
@@ -417,10 +419,10 @@ To learn more about installing PWAs, see [Use Progressive Web Apps in Microsoft 
 
 The simple temperature converter PWA you built so far only scratches the surface of what PWAs can do. The previous steps are important prerequisites for any PWA, but there are important best practices that will make your PWA feel like a real app when installed.
 
-When users install applications, they have certain expectations of what these applications can do, for example:
+When users install applications, they have certain expectations of what these applications can do; for example:
 
 * Users expect apps to work offline.
-* Users expect apps to integrate within the operating system by, for example, handling files.
+* Users expect apps to integrate within the operating system, such as by handling files.
 * Users expect apps to perform non-trivial computing tasks.
 * Users expect to find apps in app stores.
 

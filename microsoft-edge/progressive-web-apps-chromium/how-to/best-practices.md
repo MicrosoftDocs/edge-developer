@@ -43,7 +43,7 @@ To learn how to use PWA Builder and publish to the Microsoft Store, see [Publish
 
 Many users find apps on their devices by their icons. To help users find your app more easily, choose a recognizable icon, make sure it stands out, and make sure that it adapts to the devices your app is installed on.
 
-On Windows, your app icon appears in many places such as the taskbar, the Start menu, or the ALT+Tab task switcher. Provide multiple image sizes to ensure your app icon is easily recognizable in these places.
+On Windows, your app icon appears in many places such as the taskbar, the Start menu, or the `Alt`+`Tab` task switcher. Provide multiple image sizes to ensure your app icon is easily recognizable in these places.
 
 To learn which image size are needed on Windows, see [Icon image sizes](./icon-theme-color.md#icon-image-sizes) in _Define icons and a theme color_.
 
@@ -67,7 +67,7 @@ To learn how to replace the title bar, see [Display content in the title bar](./
 
 Users expect installed applications to integrate with the host operating system in some way.
 
-Your app can provide a more familiar, engaging, and seamless experience by using operating system integration features such as: shortcuts, sharing between apps, badging, file handling, or link handling.
+Your app can provide a more familiar, engaging, and seamless experience by using operating system integration features such as shortcuts, sharing between apps, badging, file handling, or link handling.
 
 #### Shortcuts
 
@@ -103,6 +103,8 @@ See [Handle links to your Progressive Web Apps](./handle-urls.md) and [Handle pr
 
 #### Widgets
 
+![Experimental feature](../../media/experimental-tag.png)
+
 Create your own app widgets to display in the operating system widget dashboard such as the Windows 11 widgets board.
 
 See [Build PWA-driven widgets](./widgets.md).
@@ -128,12 +130,12 @@ To learn more, see [Use Service Workers to manage network requests](./service-wo
 <!-- ====================================================================== -->
 ## Store data locally
 
-To provide a rich and fast experience to your users, use the different persistent data storage options available to PWAs, such as:
+To provide a rich and fast experience to your users, use the different persistent data storage options that are available to PWAs, such as:
 
 * Cache storage, to store static resources for your app.
 * Local and Session storage, to store small amounts of user data.
-* IndexedDB to store larger, structured, user data.
-* File System Access API to store files on disk.
+* IndexedDB, to store larger, structured, user data.
+* File System Access API, to store files on disk.
 
 To learn more, see [Store data on the device](./offline.md).
 
@@ -143,7 +145,7 @@ To learn more, see [Store data on the device](./offline.md).
 <!-- ====================================================================== -->
 ## Use advanced capabilities
 
-Installed apps typically perform advanced computing scenarios that websites usually don't.
+Installed apps typically perform advanced computing scenarios that websites usually don't support.
 
 To provide an app-like experience, use advanced web capabilities such as:
 
@@ -184,9 +186,9 @@ With Progressive Web Apps, you deliver an app for all devices, from one codebase
 
 Make sure the most important scenarios of your app work everywhere, and progressively enhance the experience on supporting devices.
 
-To test your app in multiple environment, consider the following resources:
+To test your app in multiple environments, consider the following techniques:
 
-* [Cross-browser testing](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing) on MDN
+* [Cross-browser testing](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing).
 * [Emulate and test other browsers](../../devtools-guide-chromium/device-mode/testing-other-browsers.md) from Microsoft Edge, by using DevTools.
 * Create a remote debugging session on [Windows](../../devtools-guide-chromium/remote-debugging/windows.md) or [Android](../../devtools-guide-chromium/remote-debugging/index.md).
 * [Test and automation in Microsoft Edge](../../test-and-automation/test-and-automation.md) to automate your testing.

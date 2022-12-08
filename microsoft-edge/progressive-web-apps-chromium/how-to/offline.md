@@ -1,6 +1,6 @@
 ---
 title: Store data on the device
-description: How to use the different data storage options in Progressive Web Apps to create resilient experiences.
+description: How to use the different data storage options in Progressive Web Apps to enable users to continue working even if the network connection becomes unstable or goes offline.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -23,7 +23,7 @@ The following table describes the different options, and the rest of this articl
 | Cache | The Cache API can be used to manage cached resources. The Cache API is Promise-based and allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on. Usually, the Cache API is used within the context of a service worker, but it's also available to your app's front-end code. |
 | File System Access | The File System Access API allows your PWA to read files and folders on the user's device and save changes back to them. |
 
-**Note**: do not use WebSQL or Application Cache. While these are two other browser storage mechanisms, they have both been deprecated. Instead of WebSQL, use IndexedDB. Instead of Application Cache, use the Cache API.
+**Note**: Do not use WebSQL or Application Cache. While these are two other browser storage mechanisms, they have both been deprecated. Instead of WebSQL, use IndexedDB. Instead of Application Cache, use the Cache API.
 
 
 <!-- ====================================================================== -->
@@ -35,8 +35,8 @@ Web Storage works synchronously in your app's main thread only. This means that 
 
 Each type of Web Storage, session and local, is maintained as a separate data store that's isolated to the domain that created it.
 
-*  `sessionStorage` persists only for the duration of the session. For example, while the browser is open, which includes refresh and restores.
-*  `localStorage` persists until the data is removed by the code, the user, or the browser. For example, when there is limited storage available.
+*  `sessionStorage` persists only for the duration of the session - for example, while the browser is open, which includes when the page is refreshed.
+*  `localStorage` persists until the data is removed by the app code, the user, or the browser.
 
 The following code shows how to use `localStorage`, which is similar to how `sessionStorage` is used:
 
@@ -65,14 +65,14 @@ To learn more, see [Web Storage API](https://developer.mozilla.org/docs/Web/API/
 
 IndexedDB is an asynchronous API for storing structured data that can be used in your app's front-end code or service worker code. Use the IndexedDB API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects or files.
 
-IndexedDB is the best option for storing data in your PWA because using the API does not slow down your app by blocking the main thread, and it can be used both from your app's front-end code and service worker.
+IndexedDB is the best option for storing data in your PWA, because using the API doesn't slow down your app by blocking the main thread, and it can be used both from your app's front-end code and service worker.
 
-Using IndexedDB is more complex than using Web Storage and requires the following steps to store data:
+Using IndexedDB is more complex than using Web Storage, and requires the following steps to store data:
 
-1. Opening a database by using the `window.indexedDB.open()` function.
-1. Creating an object store in the database by using the `IDBDatabase.createObjectStore()` function.
-1. Starting a transaction to store data by using the `IDBDatabase.transaction()` function.
-1. And waiting for the operation to complete by listening to an event.
+1. Open a database, by using the `window.indexedDB.open()` function.
+1. Create an object store in the database, by using the `IDBDatabase.createObjectStore()` function.
+1. Start a transaction to store data, by using the `IDBDatabase.transaction()` function.
+1. Wait for the operation to complete, by listening to an event.
 
 To learn more and view code examples, see [Using IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB) on MDN.
 
@@ -80,9 +80,9 @@ To learn more and view code examples, see [Using IndexedDB](https://developer.mo
 <!-- ====================================================================== -->
 ## Cache
 
-The Cache API is a system for storing and retrieving network requests and responses in your app's front-end code or service worker. It can be used to store assets, such as images and files, locally on the user's device, which can make your application work offline or improve its performance by reducing the number of network requests needed to render the app.
+The Cache API is a system for storing and retrieving network requests and responses in your app's front-end code or service worker. It can be used to store assets, such as images and files, locally on the user's device. This can make your application work even when it's offline, or improve its performance by reducing the number of network requests that are needed to render the app.
 
-The following code snippet shows how to listen to the `fetch` event in a service worker, and using it to store the response from the server using the Cache API:
+The following code snippet shows how to listen to the `fetch` event in a service worker, and storing the response from the server by using the Cache API:
 
 ```javascript
 self.addEventListener("fetch", event => {
@@ -109,7 +109,7 @@ To discover other useful Cache API scenarios, see [Use Service Workers to manage
 
 The File System Access API makes it possible for your app to access files on the user's device in a way that's similar to native applications. It can be used to create applications that can read and write files, such as text or image editors.
 
-The open a file from the user's device, use the `showOpenFilePicker()` function:
+To open a file from the user's device, use the `showOpenFilePicker()` function:
 
 ```javascript
 openFileButton.addEventListener("click", async () => {
@@ -150,6 +150,6 @@ try {
 }
 ```
 
-When the user's device starts being low on available disk space, also known as storage pressure, the browser that's running your app may start evicting non-persistent data. This means that the data your app stored by using the Cache API, IndexedDB, the File System Access API, or Web Storage may get evicted.
+When the user's device starts being low on available disk space, also known as _storage pressure_, the browser that's running your app may start evicting non-persistent data. This means that the data your app stored by using the Cache API, IndexedDB, the File System Access API, or Web Storage may get evicted.
 
-By default, the data you store is considered not persistent which means that the browser can clear it under storage pressure. If your app stores critical data, use the `navigator.storage.persist()` function to ask for your app's storage to be persistent. Persistent storage can only be cleared by the user. To learn more, see [StorageManager.persist()](https://developer.mozilla.org/docs/Web/API/StorageManager/persist) on MDN.
+By default, the data you store is considered not persistent, which means that the browser might clear your data when there's storage pressure. If your app stores critical data, use the `navigator.storage.persist()` function to make for your app's storage be persistent. Persistent storage can only be cleared by the user. To learn more, see [StorageManager.persist()](https://developer.mozilla.org/docs/Web/API/StorageManager/persist) on MDN.

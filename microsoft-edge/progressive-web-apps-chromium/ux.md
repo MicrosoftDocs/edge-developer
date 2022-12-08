@@ -9,7 +9,7 @@ ms.date: 09/15/2021
 ---
 # Use Progressive Web Apps in Microsoft Edge
 
-Any device running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps.  On Windows, Progressive Web Apps (PWAs) are just like other apps.
+Any device that's running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps.  On Windows, Progressive Web Apps (PWAs) are just like other apps.
 
 
 <!-- ====================================================================== -->

@@ -92,7 +92,7 @@ To learn more about manifest members, see [web app manifests](https://developer.
 <!-- ====================================================================== -->
 ## Handle specific protocol schemes
 
-You can register your PWA as a protocol handler. When a user clicks on a link that uses the protocol scheme your app registered to, your app is launched automatically. This can be used by users to easily share links to specific parts or functionality of your app with each other.
+You can register your PWA as a protocol handler. When a user clicks on a link that uses the protocol scheme your app registered to, your app is launched automatically. This enables users to easily share links to specific parts or functionality of your app with each other.
 
 To register as a protocol handler, use the `protocol_handlers` manifest member:
 
@@ -168,7 +168,7 @@ To learn more about using the Share Target feature, see [Share content with othe
 
 When a PWA is registered as a file handler for certain file types, the operating system can automatically launch the app when those files are opened by the user, similar to how Microsoft Word handles `.docx` files. PWAs that handle files feel more native to users and better integrated in the operating system. 
 
-To handle files, list the file mime types and extensions you want your app to be associated with, and define the URL your app should be launched with:
+To handle files, list the file mime types and extensions you want your app to be associated with, and define the URL that your app should be launched with:
 
 ```json
 {

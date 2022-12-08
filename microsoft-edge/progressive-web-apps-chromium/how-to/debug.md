@@ -87,7 +87,7 @@ To view the total amount of stored data used by your PWA, the available quota, a
 <!-- ====================================================================== -->
 ## Simulate different screen sizes
 
-With Progressive Web Apps, you deliver an app for all devices, from one codebase. To make sure your app adapts to all device's screen sizes, use the **Device Emulation** tool of DevTools.
+With Progressive Web Apps, you deliver an app for all devices, from one codebase. To make sure your app adapts to all device's screen sizes, use the **Device Emulation** tool in DevTools.
 
 To learn more, see [Emulate mobile devices (Device Emulation)](../../devtools-guide-chromium/device-mode/index.md).
 
