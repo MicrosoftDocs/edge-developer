@@ -299,7 +299,7 @@ So far, we've built our interface and implemented our native host object.  Now w
             }
     ```
 
-1.  The `NavigationStarting` event handler then passes the `VARIANT` to `AddHostObjectToScript` (above), names it `sample`, and enables the remote object as `VARIANT` (`&remoteObjectAsVariant`).
+1. Above, in the `NavigationStarting` event handler, the `VARIANT` is passed to `AddHostObjectToScript`, using the name `sample`.
 
 
 <!-- ----------------------------------- -->

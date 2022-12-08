@@ -94,7 +94,7 @@ Navigation events:
 * [CoreWebView2Frame.ContentLoading Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.contentloading)
 * [CoreWebView2.HistoryChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.historychanged)
 * [CoreWebView2.BasicAuthenticationRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
-* [DOMContentLoaded](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.domcontentloaded)
+* [CoreWebView2Frame.DOMContentLoaded](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.domcontentloaded)
 * [CoreWebView2Frame.NavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationcompleted)
    * [CoreWebView2.FrameNavigationCompleted Event (superseded)](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationcompleted)
 
