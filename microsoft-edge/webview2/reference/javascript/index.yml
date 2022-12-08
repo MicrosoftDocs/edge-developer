@@ -1,5 +1,7 @@
 ### YamlMime:TSPackage
 uid: WebView2Script!
+metadata:
+  title: JavaScript APIs in WebView2
 name: WebView2Script
 type: package
 summary: '' # TODO: Add WebView2 JavaScript API overview. See ADO 41704272.
