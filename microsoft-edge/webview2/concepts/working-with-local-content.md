@@ -76,19 +76,32 @@ Another scenario where navigating to a string might be useful is if you want to 
 As an example of a string, for the [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) page, the following is the string representation of the page.
 You can obtain this string by entering `document.body.parentElement.outerHTML` in the DevTools Console.
 
-This would all be concatenated into one line.
+The listing below has added line wrapping for readability.  In practice, these lines would be concatenated into a single long line:
 
 ```html
-<html lang="en"><head>\n
-<meta charset="UTF-8">\n
-<meta name="viewport" content="width=device-width, initial-scale=1.0">\n
-<title>TODO app</title>\n
-<link rel="stylesheet" href="styles/light-theme.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">\n
-<link rel="stylesheet" href="styles/dark-theme.css" media="(prefers-color-scheme: dark)">\n
-<link rel="stylesheet" href="styles/base.css">\n
-<link rel="stylesheet" href="styles/to-do-styles.css">\n
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>">\n  
-</head>\n\n  <body>\n    <h1>📋 My tasks</h1>\n    <form>\n      <div class="new-task-form" tabindex="0">\n        <label for="new-task">➕ Add a task</label>\n        <input id="new-task" autocomplete="off" type="text" placeholder="Try typing 'Buy milk'" title="Click to start adding a task">\n        <input type="submit" value="➡️">\n      </div>\n      <ul id="tasks"><li class="divider">No tasks defined</li></ul>\n    </form>\n\n    \x3Cscript src="to-do.js">\x3C/script>\n  \n\n</body></html>`
+<html lang="en"><head>\n    
+<meta charset="UTF-8">\n    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">\n    
+<title>TODO app</title>\n    
+<link rel="stylesheet" href="styles/light-theme.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">\n    
+<link rel="stylesheet" href="styles/dark-theme.css" media="(prefers-color-scheme: dark)">\n    
+<link rel="stylesheet" href="styles/base.css">\n    
+<link rel="stylesheet" href="styles/to-do-styles.css">\n    
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋
+</text></svg>">\n  
+</head>\n\n  
+<body>\n    
+<h1>📋 My tasks</h1>\n    
+<form>\n      
+<div class="new-task-form" tabindex="0">\n        
+<label for="new-task">➕ Add a task</label>\n        
+<input id="new-task" autocomplete="off" type="text" placeholder="Try typing 'Buy milk'" title="Click to start adding a task">\n        
+<input type="submit" value="➡️">\n      
+</div>\n      
+<ul id="tasks"><li class="divider">No tasks defined</li></ul>\n    
+</form>\n\n    \x3Cscript src="to-do.js">\x3C/script>\n  \n\n
+</body>
+</html>`
 ```
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -125,13 +138,13 @@ This approach lets you specify the cross-origin access using the `CoreWebView2Ho
 
 * [CoreWebView2.SetVirtualHostNameToFolderMapping Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#setvirtualhostnametofoldermapping)
 * [CoreWebView2.ClearVirtualHostNameToFolderMapping Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#clearvirtualhostnametofoldermapping)
-* [CoreWebView2HostResourceAccessKind Enum]()<!-- todo: link -->
+* [CoreWebView2HostResourceAccessKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2hostresourceaccesskind)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2_3::SetVirtualHostNameToFolderMapping method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping)
 * [ICoreWebView2_3::ClearVirtualHostNameToFolderMapping method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#clearvirtualhostnametofoldermapping)
-* [CoreWebView2_Host_Resource_Access_Kind enum]()<!-- todo: link -->
+* [COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_host_resource_access_kind)
 
 ---
 
