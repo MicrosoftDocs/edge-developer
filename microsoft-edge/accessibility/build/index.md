@@ -135,7 +135,7 @@ These are blogs about accessibility.
 
 ### Simply Accessible
 
-[Simply Accessible](http://simplyaccessible.com/articles) is a team of accessibility specialists providing accessibility training, consulting and more to change the perception of accessibility on the web.  Their [Articles](http://simplyaccessible.com/articles) section discusses best practices for web accessibility, accessible design, and more.
+[Simply Accessible](http://simplyaccessible.com/articles) is a team of accessibility specialists providing accessibility training, consulting and more to change the perception of accessibility on the web.  Their [Articles](http://simplyaccessible.com) section discusses best practices for web accessibility, accessible design, and more.
 
 ### Level Access
 
