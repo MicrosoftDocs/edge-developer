@@ -120,7 +120,7 @@ If you aren't able to use the emulators and you don't have access to real device
 
 The following list is a sample of cloud-based emulators and testing sites. Review the descriptions for features or capabilities to consider when selecting a testing site. Conduct your own search to find the best cloud-based emulator for your needs.
 
-* [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
+* [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time. 
 
 * [HeadSpin](https://www.headspin.io/) helps you perform manual cross-browser testing on thousands of real devices, browsers, and operating systems.  You can record videos of complex bugs and share them through integration such as Slack, JIRA, and more.  Fast forward your go-to-market launch by testing in parallel.
 
