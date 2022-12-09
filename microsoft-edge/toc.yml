@@ -32,6 +32,9 @@
 
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
+            - name: Microsoft Edge 108
+              href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
+
             - name: Microsoft Edge 107
               href: devtools-guide-chromium/whats-new/2022/10/devtools-107.md
 
@@ -879,7 +882,7 @@
             - name: Port a Chrome extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
 
-            - name: Alternate methods of distributing extensions
+            - name: Alternative ways to distribute extensions
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
 
             - name: Native messaging
@@ -1020,6 +1023,9 @@
                 - name: Define app shortcuts
                   href: progressive-web-apps-chromium/how-to/shortcuts.md
 
+                - name: Build operating system Widgets
+                  href: progressive-web-apps-chromium/how-to/widgets.md
+
                 - name: Synchronize and update in the background
                   href: progressive-web-apps-chromium/how-to/background-syncs.md
 
@@ -1027,7 +1033,7 @@
           href: progressive-web-apps-chromium/whats-new/pwa.md
           displayName: release notes, announcements
 
-        - name: Sample PWAs
+        - name: Progressive Web App demos
           href: progressive-web-apps-chromium/demo-pwas.md
 
 # =============================================================================
@@ -1058,7 +1064,7 @@
 
             - name: WinUI 2 (UWP)
               href: webview2/get-started/winui2.md
-              displayName: Get started with WinUI 2 (UWP) apps  # no repo dir exists  # top-of-page title
+              displayName: Get started with WebView2 in WinUI 2 (UWP) apps  # no repo dir exists  # top-of-page title
 
             - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
@@ -1241,6 +1247,10 @@
             - name: Manage user data folders
               href: webview2/concepts/user-data-folder.md
               displayName: Manage the user data folder  # old title
+
+            - name: Support multiple profiles under a single user data folder
+              href: webview2/concepts/multi-profile-support.md
+              displayName: 
 
             - name: Clear browsing data from the user data folder
               href: webview2/concepts/clear-browsing-data.md
