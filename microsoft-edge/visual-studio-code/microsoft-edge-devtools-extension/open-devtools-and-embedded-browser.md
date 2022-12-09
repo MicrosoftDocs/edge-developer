@@ -13,11 +13,52 @@ There are several ways to open the **DevTools** tab and the **Edge DevTools: Bro
 
 | Approach | Description |
 |---|---|
-| Click the **Launch Instance** button. | No `launch.json` file is used.  Opens DevTools in non-debug mode.  Use this approach if you don't want to debug. |
 | Right-click an `.html` file. | No `launch.json` file is used.  Opens DevTools in Debug mode.  Use this approach if you want to debug, and your web app can run from the file system instead of a web server. |
+| Click the **Launch Instance** button. | No `launch.json` file is used.  Opens DevTools in non-debug mode.  Use this approach if you don't want to debug. |
 | Click the **Launch Project** button. | A `launch.json` file is used.  Opens DevTools in Debug mode.  Use this approach if you want to debug, and your web app uses APIs that require running it on a web server. |
 
 These approaches are described below.  For detailed steps using the Demos repo, see [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
+
+
+<!-- ====================================================================== -->
+## Opening DevTools by right-clicking an HTML file
+
+This approach opens the DevTools tabs in debug mode and is recommended, unless the webpage requires running on a web server, as with certain APIs.
+
+To open DevTools and the embedded browser, along with the Debug toolbar for an HTML file on your hard drive:
+
+1. In Visual Studio Code, do any of the following:
+
+   *  Select **Activity Bar** > **Explorer** (![Explorer button](./open-devtools-and-embedded-browser-images/explorer-icon.png)) > click the **Open Folder** button.
+   *  Select **File** > **Open Folder**.
+   *  Select **File** > **Open Recent**.
+
+1. Open a folder that contains web app source files.
+
+1. In Visual Studio Code, in **Explorer**, right-click an `.html` file, select **Open with Edge**, and then select **Open Browser with DevTools**:
+
+   ![Right-click an HTML file in the Explorer to open it with Edge with or without DevTools](./open-devtools-and-embedded-browser-images/context-menu-open-in-code.png)
+
+   DevTools opens, with Visual Studio Code in debug mode:
+
+   ![The DevTools components from selecting Open Browser with DevTools](./open-devtools-and-embedded-browser-images/devtools-extension-v211.png)
+
+   The following components open in Visual Studio Code:
+   *  The **Edge DevTools** tab, including the **Elements** tab and other tool tabs.
+   *  The **Edge DevTools: Browser** tab, including the Device Emulation toolbar on the bottom.
+   *  The Debug toolbar at top, including buttons such as **Pause**, **Step Over**, **Step Into**, **Reset**, and **Stop**.
+   *  The Debug Console at bottom.
+   *  The **Run and Debug** side bar (same as selecting **View** > **Run**).
+
+In this approach, an instance is not listed in **Activity Bar** > **Microsoft Edge Tools** > **Targets**.
+
+Use the **Explorer** Side Bar, from the Activity Bar, to open a `.js` file during debugging a webpage.
+
+The **Edge DevTools: Browser** tab includes a Device Emulation toolbar.  This tab contains an embedded web browser with DevTools features.  This browser is sometimes called a _screencast_ or a _headless browser_ for DevTools.
+
+
+See also:
+* [Get started by right-clicking an HTML file](./get-started-right-click-html.md)
 
 
 <!-- ====================================================================== -->
@@ -64,47 +105,6 @@ These steps assume that initially, no folder is open in Visual Studio Code, and 
 
 See also:
 * [Get started by clicking the Launch Instance button](./get-started-launch-instance.md)
-
-
-<!-- ====================================================================== -->
-## Opening DevTools by right-clicking an HTML file
-
-This approach opens the DevTools tabs in debug mode and is recommended, unless the webpage requires running on a web server, as with certain APIs.
-
-To open DevTools and the embedded browser, along with the Debug toolbar for an HTML file on your hard drive:
-
-1. In Visual Studio Code, do any of the following:
-
-   *  Select **Activity Bar** > **Explorer** (![Explorer button](./open-devtools-and-embedded-browser-images/explorer-icon.png)) > click the **Open Folder** button.
-   *  Select **File** > **Open Folder**.
-   *  Select **File** > **Open Recent**.
-
-1. Open a folder that contains web app source files.
-
-1. In Visual Studio Code, in **Explorer**, right-click an `.html` file, select **Open with Edge**, and then select **Open Browser with DevTools**:
-
-   ![Right-click an HTML file in the Explorer to open it with Edge with or without DevTools](./open-devtools-and-embedded-browser-images/context-menu-open-in-code.png)
-
-   DevTools opens, with Visual Studio Code in debug mode:
-
-   ![The DevTools components from selecting Open Browser with DevTools](./open-devtools-and-embedded-browser-images/devtools-extension-v211.png)
-
-   The following components open in Visual Studio Code:
-   *  The **Edge DevTools** tab, including the **Elements** tab and other tool tabs.
-   *  The **Edge DevTools: Browser** tab, including the Device Emulation toolbar on the bottom.
-   *  The Debug toolbar at top, including buttons such as **Pause**, **Step Over**, **Step Into**, **Reset**, and **Stop**.
-   *  The Debug Console at bottom.
-   *  The **Run and Debug** side bar (same as selecting **View** > **Run**).
-
-In this approach, an instance is not listed in **Activity Bar** > **Microsoft Edge Tools** > **Targets**.
-
-Use the **Explorer** Side Bar, from the Activity Bar, to open a `.js` file during debugging a webpage.
-
-The **Edge DevTools: Browser** tab includes a Device Emulation toolbar.  This tab contains an embedded web browser with DevTools features.  This browser is sometimes called a _screencast_ or a _headless browser_ for DevTools.
-
-
-See also:
-* [Get started by right-clicking an HTML file](./get-started-right-click-html.md)
 
 
 <!-- ====================================================================== -->

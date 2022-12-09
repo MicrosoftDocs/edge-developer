@@ -63,11 +63,27 @@ We'll demonstrate by opening the **demo-to-do** web app:
 <!-- ====================================================================== -->
 ## Step 3: Arrange tabs
 
-1. Toward the upper left corner of the **Edge DevTools** tab, click the **Toggle screencast** button a couple times:
+To save space, use the **Close DevTools** or **Open DevTools** button and the **Toggle screencast** button to toggle (open or close) the DevTools tabs.
 
-   ![Cross-toggling the two tabs on and off](./get-started-images/cross-toggling-tabs.png)
+1. Toward the upper left corner of the **Edge DevTools** tab, click the **Toggle screencast** button:
 
-1. In the top right of the **Edge DevTools: Browser** tab, click the **Close DevTools** or **Open DevTools** button a couple times.  The two DevTools tabs are automatically positioned as you open and close them from each other.
+   ![The 'Toggle screencast' button in the 'Edge DevTools' tab](./get-started-images/toggle-screencast-button.png)
+
+   The **Edge DevTools: Browser** tab closes.
+
+1. In the **Edge DevTools** tab, click the **Toggle screencast** button again.
+
+   The **Edge DevTools: Browser** tab opens.
+
+1. In the top right of the **Edge DevTools: Browser** tab, click the **Close DevTools** button:
+
+   ![The 'Close DevTools' button in the 'Edge DevTools: Browser' tab](./get-started-images/close-devtools-button.png)
+
+1. In the top right of the **Edge DevTools: Browser** tab, click the **Open DevTools** button.
+
+1. Drag the **Edge DevTools: Browser** tab to dock it anywhere in Visual Studio Code, such as grouping it with the source code editor.
+
+<!-- maybe move or copy "Arrange tabs" section into its own article.  The article would explain how to customize the UI (eg arranging tabs) and how to use it - including the emulation options in the "Edge DevTools: Browser" tab.  Consider putting it in the Customize TOC bucket. -->
 
 
 <!-- ====================================================================== -->

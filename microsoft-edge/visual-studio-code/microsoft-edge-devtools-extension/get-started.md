@@ -11,9 +11,9 @@ ms.date: 12/06/2022
 
 These tutorials walk you through several ways of opening and closing DevTools, and also get you started with modifying CSS and debugging JavaScript.
 
-*  Click the **Launch Instance** button, to experiment with the demo **Success** webpage.  See [Get started by clicking the Launch Instance button](./get-started-launch-instance.md).
-
 *  Right-click an `.html` file for **Demo To Do** in the **Explorer** of Visual Studio Code, without needing to run a web server.  See [Get started by right-clicking an HTML file](./get-started-right-click-html.md).
+
+*  Click the **Launch Instance** button, to experiment with the demo **Success** webpage.  See [Get started by clicking the Launch Instance button](./get-started-launch-instance.md).
 
 *  Click the **Launch Project** button, to run **Demo To Do** on a localhost web server and store the URL for the webpage in `launch.json`.  See [Get started by clicking the Launch Project button](./get-started-launch-project.md).
 

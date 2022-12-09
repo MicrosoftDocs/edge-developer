@@ -783,12 +783,12 @@
                   href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
                   displayName: tutorial, demo to do
 
-                - name: Get started by clicking the Launch Instance button
-                  href: visual-studio-code/microsoft-edge-devtools-extension/get-started-launch-instance.md
-                  displayName: 
-
                 - name: Get started by right-clicking an HTML file
                   href: visual-studio-code/microsoft-edge-devtools-extension/get-started-right-click-html.md
+                  displayName: 
+
+                - name: Get started by clicking the Launch Instance button
+                  href: visual-studio-code/microsoft-edge-devtools-extension/get-started-launch-instance.md
                   displayName: 
 
                 - name: Get started by clicking the Launch Project button
