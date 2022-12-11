@@ -9,8 +9,7 @@ ms.date: 10/06/2022
 ---
 # Installing the DevTools extension for Visual Studio Code
 
-This article walks you through the initial setup of the DevTools extension.  After installing DevTools, you'll be ready to follow the steps in [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
-
+This article walks you through the initial setup of the DevTools extension.  After installing DevTools, you'll be ready to follow the steps in [Get started using the DevTools extension for Visual Studio Code](./get-started)
 This article helps you:
 
 * Install the DevTools extension.
@@ -83,7 +82,7 @@ The DevTools extension shows a popup suggestion to install Node.js and npm.  The
    ```
 
 See also:
-* [Inline and live issue analysis](./inline-live-issue-analysis.md)
+* [Inline and live issue analysis](./inline-live-issue-analysis)
 
 
 <!-- ====================================================================== -->
@@ -91,7 +90,7 @@ See also:
 
 Cloning the Demos repo is optional.  The Demos repo is useful for following the various DevTools documentation.  If you want, instead of cloning the repo, you can open an existing project directory if you have one.
 
-As another alternative, instead of cloning the entire directory, you can download only the **demo-to-do** directory.  For example, go to [https://download-directory.github.io/](https://download-directory.github.io/) and then paste the URL [https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do).  The `.zip` file is placed in your download directory.  Unzip these webpage source files into a suitable location.  The tutorial [Get started using the DevTools extension for Visual Studio Code](./get-started.md) uses the example location:
+As another alternative, instead of cloning the entire directory, you can download only the **demo-to-do** directory.  For example, go to [https://download-directory.github.io/](https://download-directory.github.io/) and then paste the URL [https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do).  The `.zip` file is placed in your download directory.  Unzip these webpage source files into a suitable location.  The tutorial [Get started using the DevTools extension for Visual Studio Code](./get-started) uses the example location:
 
 `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\`
 
@@ -226,12 +225,12 @@ but serving out the entire \Demos\ dir gives a useful dir listing at:
    
    The displayed URLs are equivalent to [http://localhost:8080/](http://localhost:8080/).
 
-Next, see [Get started using the DevTools extension for Visual Studio Code](./get-started.md) for a step-by-step walkthrough.
+Next, see [Get started using the DevTools extension for Visual Studio Code](./get-started) for a step-by-step walkthrough.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
-* [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md)
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Get started using the DevTools extension for Visual Studio Code](./get-started)
+* [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension)

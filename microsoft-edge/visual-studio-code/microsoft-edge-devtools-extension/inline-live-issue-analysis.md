@@ -13,7 +13,7 @@ Issues in your source code (`.html`, `.css`, or `.js` files) are highlighted wit
 
 ![An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information](./inline-live-issue-analysis-images/inline-issue-reporting.png)
 
-This feature requires Node.js and npm (Node Package Manager).  See [Step 4: Install Node.js and Node Package Manager (npm)](./install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
+This feature requires Node.js and npm (Node Package Manager).  See [Step 4: Install Node.js and Node Package Manager (npm)](./install#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
 
 This feature is on by default; the **Webhint** checkbox is selected in **Settings**.  To turn this feature on or off, select Activity Bar > **Microsoft Edge Tools** > hover to the right of **Targets** > **More Actions** (**...**) > **Open Settings** > select or clear the **Webhint** checkbox:
 
@@ -67,6 +67,6 @@ You can select whichever **Quick Fix** you want to use to resolve the issue or t
 <!-- ====================================================================== -->
 ## See also
 
-* [Find and fix problems using the Issues tool](../../devtools-guide-chromium/issues/index.md)
-* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Find and fix problems using the Issues tool](../../devtools-guide-chromium/issues/index)
+* [Get started using the DevTools extension for Visual Studio Code](./get-started)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension)

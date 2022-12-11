@@ -17,5 +17,5 @@ Your contributions are welcome, to help make the Microsoft Edge DevTools extensi
 <!-- ====================================================================== -->
 ## See also
 
-* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Get started using the DevTools extension for Visual Studio Code](./get-started)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension)

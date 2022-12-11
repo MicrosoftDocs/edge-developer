@@ -14,4 +14,4 @@ The Microsoft Edge DevTools extension for Visual Studio Code lets you use the Mi
 
 Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it's a great tool for web developers.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.
 
-See [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md).
+See [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension).

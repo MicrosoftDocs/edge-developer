@@ -33,13 +33,13 @@ This sample demonstrates several different deployment approaches:
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
 
-1. **Visual Studio** - If Install Visual Studio 2019 (minimum required version) with C++ support is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio 2019 with C++ support, and then return to this page and continue the steps below.
+1. **Visual Studio** - If Install Visual Studio 2019 (minimum required version) with C++ support is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio 2019 with C++ support, and then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
 ## Step 2 - Install a preview channel of Microsoft Edge
 
-1. **Preview channel of Microsoft Edge** - If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+1. **Preview channel of Microsoft Edge** - If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
@@ -113,7 +113,7 @@ If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 <!-- ====================================================================== -->
 ## Step 5 - Clone the WebView2Samples repo
 
-1. If not done already, clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Clone the WebView2Samples repo](../how-to/machine-setup#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
@@ -192,7 +192,7 @@ If you plan to package either the Bootstrapper (Approach 2) or the Standalone In
 <!-- ====================================================================== -->
 ## See also
 
-* [Win32 sample app](./webview2apissample.md)
+* [Win32 sample app](./webview2apissample)
 * [Deploying the Evergreen WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution.md#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
 * [Readme for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme).
 * [WiX Toolset](https://wixtoolset.org/)

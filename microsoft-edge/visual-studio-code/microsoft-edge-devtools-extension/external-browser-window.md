@@ -58,9 +58,9 @@ To change or check the setting for which type of browser window to use:
 
    Or, if you want to use the external, automation-controlled browser window, clear the **Headless** checkbox.
 
-1. Close DevTools.  See [Closing DevTools](./open-devtools-and-embedded-browser.md#closing-devtools) in _Opening DevTools and the DevTools browser_.
+1. Close DevTools.  See [Closing DevTools](./open-devtools-and-embedded-browser#closing-devtools) in _Opening DevTools and the DevTools browser_.
 
-1. Open DevTools.  See [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
+1. Open DevTools.  See [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser).
 
 
 <!-- ====================================================================== -->

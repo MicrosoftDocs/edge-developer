@@ -116,7 +116,7 @@ Microsoft Edge (EdgeHTML) Virtual Machines (VMs) enable you to access different 
 <!-- ====================================================================== -->
 ## Cloud-based emulators and simulators
 
-If you aren't able to use the emulators and you don't have access to real devices, then cloud-based emulators are the next-best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you can automate unit tests for your site across different platforms.
+If you aren't able to use the emulators and you don't have access to real devices, then cloud-based emulators are the next-best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you can automate unit tests for your site across different platforms. 
 
 The following list is a sample of cloud-based emulators and testing sites. Review the descriptions for features or capabilities to consider when selecting a testing site. Conduct your own search to find the best cloud-based emulator for your needs.
 

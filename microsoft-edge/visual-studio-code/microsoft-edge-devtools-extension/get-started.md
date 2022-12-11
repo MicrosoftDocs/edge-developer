@@ -15,7 +15,7 @@ This is a step-by-step tutorial about opening and closing DevTools and using it 
 <!-- ====================================================================== -->
 ## Step 1: Install DevTools and prerequisites
 
-1. Do the steps in [Installing the DevTools extension for Visual Studio Code](./install.md), and then continue below.
+1. Do the steps in [Installing the DevTools extension for Visual Studio Code](./install), and then continue below.
 
 
 <!-- ====================================================================== -->
@@ -244,7 +244,7 @@ You might not need to use this approach, because in many cases, right-clicking a
 
 This section is in support of clicking the **Launch Project** button.
 
-1. Set up and start a web server, serving out the **demo-to-do** app from the Demos repo.  To do this, see [Step 6: Set up a localhost server](./install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
+1. Set up and start a web server, serving out the **demo-to-do** app from the Demos repo.  To do this, see [Step 6: Set up a localhost server](./install#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
 
 1. In Visual Studio Code, select **View** > **Terminal**.
 
@@ -345,7 +345,7 @@ At this point, you could work with CSS edits or step through code in the debugge
 <!-- ====================================================================== -->
 ## See also
 
-* [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md)
+* [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
 
 **GitHub:**

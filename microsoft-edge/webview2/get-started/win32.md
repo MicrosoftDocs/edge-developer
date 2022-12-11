@@ -39,7 +39,7 @@ The completed tutorial project is available in the **WebView2Samples** repo:
 
 This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code.
 
-1. If Microsoft Visual Studio isn't installed already, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps there to do a basic default installation of Visual Studio.
+1. If Microsoft Visual Studio isn't installed already, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps there to do a basic default installation of Visual Studio.
 
 Then return to this page and continue below.
 
@@ -47,7 +47,7 @@ Then return to this page and continue below.
 <!-- ====================================================================== -->
 ## Step 2 - Install a preview channel of Microsoft Edge
 
-1. If it's not installed already, install a preview channel of Microsoft Edge.  To do that, in a new window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.
+1. If it's not installed already, install a preview channel of Microsoft Edge.  To do that, in a new window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.
 
 Then continue below.
 
@@ -65,7 +65,7 @@ The existing Visual Studio project we'll start with is part of the sample code f
 
 Clone or download the WebView2Samples repo, as follows:
 
-1. If you haven't already, clone or download the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) or [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
+1. If you haven't already, clone or download the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) or [Clone the WebView2Samples repo](../how-to/machine-setup#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
 Then return here after you've copied the repo to your local drive, and continue with the steps below.
 
@@ -464,7 +464,7 @@ In the previous step, we discussed navigating to URL by using the `ICoreWebView2
 1. `HistoryChanged`
 1. `NavigationCompleted`
 
-   If you want more information now, in a new window or tab, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
+   If you want more information now, in a new window or tab, see [Navigation events for WebView2 apps](../concepts/navigation-events).
 
 ![Navigation events](../media/navigation-events.png)
 
@@ -581,6 +581,6 @@ Congratulations, you've built a Win32 app that hosts and uses the WebView2 contr
 <!-- ====================================================================== -->
 ## See also
 
-* [Sample Code for WebView2](../code-samples-links.md)
+* [Sample Code for WebView2](../code-samples-links)
 * [Windows Runtime C++ Template Library (WRL)](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true)
 * [Windows Implementation Libraries (WIL)](https://github.com/Microsoft/wil) GitHub repo.

@@ -27,7 +27,7 @@ Supported platforms: Win32, Windows Forms, WinUi, WPF.
 
 This article covers navigation events for WebView2 apps.  Navigation events run when specific asynchronous actions occur to the content that's displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change by listening for the `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.
 
-For an example of navigation events, see [Get started with WebView2](../get-started/get-started.md).
+For an example of navigation events, see [Get started with WebView2](../get-started/get-started).
 
 The normal sequence of navigation events is:
 1. `NavigationStarting`
@@ -74,7 +74,7 @@ To monitor or cancel navigation events inside subframes in a WebView2 instance, 
 <!-- ====================================================================== -->
 ## See also
 
-* [Get started with WebView2](../get-started/get-started.md)
+* [Get started with WebView2](../get-started/get-started)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
+* [See also](../index#see-also) in _Introduction to Microsoft Edge WebView2_.

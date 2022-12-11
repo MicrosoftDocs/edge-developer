@@ -53,13 +53,13 @@ The **Settings** page of DevTools v2.1.1 contains these settings.  For more info
 <!-- ====================================================================== -->
 ## Reloading the extension after changing settings
 
-Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect, close any instances of DevTools.  See [Closing DevTools](./open-devtools-and-embedded-browser.md#closing-devtools) in _Opening DevTools and the DevTools browser_.
+Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect, close any instances of DevTools.  See [Closing DevTools](./open-devtools-and-embedded-browser#closing-devtools) in _Opening DevTools and the DevTools browser_.
 
-Then open DevTools again to use the new settings.  See [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
+Then open DevTools again to use the new settings.  See [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Get started using the DevTools extension for Visual Studio Code](./get-started)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension)

@@ -9,7 +9,7 @@ ms.date: 10/06/2022
 ---
 # Integration with Visual Studio Code debugging
 
-To open DevTools in Visual Studio Code in Debug mode by using the DevTools UI, right-click an `.html` file or click the **Launch Project** button, as described in [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).  You can also use the Visual Studio Code UI for launching the Debugger, such as `F5`, to open the **DevTools** tabs as well, if you define a DevTools-compatible `launch.json` file by clicking the **Generate launch.json** button in the **Microsoft Edge Tools** Side Bar.
+To open DevTools in Visual Studio Code in Debug mode by using the DevTools UI, right-click an `.html` file or click the **Launch Project** button, as described in [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser).  You can also use the Visual Studio Code UI for launching the Debugger, such as `F5`, to open the **DevTools** tabs as well, if you define a DevTools-compatible `launch.json` file by clicking the **Generate launch.json** button in the **Microsoft Edge Tools** Side Bar.
 
 ![Tabs opened from right-clicking an .html file in Explorer](./debugging-a-webpage-images/tabs-from-right-click-html-explorer.png)
 
@@ -20,7 +20,7 @@ When you open DevTools in Visual Studio Code in Debug mode, the following UI com
 *  The **Run** (Debugger) Side Bar, including the **Watch** pane.
 *  The **Debug Console** at bottom of window.
 
-See also [Step 6: Step through JavaScript code in the Debugger](./get-started.md#step-6-step-through-javascript-code-in-the-debugger) in _Get started using the DevTools extension for Visual Studio Code_.
+See also [Step 6: Step through JavaScript code in the Debugger](./get-started#step-6-step-through-javascript-code-in-the-debugger) in _Get started using the DevTools extension for Visual Studio Code_.
 
 
 <!-- ====================================================================== -->
@@ -90,7 +90,7 @@ To start the Visual Studio Code debugger along with DevTools, by using the usual
 
 1. Click **Microsoft Edge Tools for VS Code** > **Install**.
 
-1. Close DevTools per [Closing DevTools](./open-devtools-and-embedded-browser.md#closing-devtools).
+1. Close DevTools per [Closing DevTools](./open-devtools-and-embedded-browser#closing-devtools).
 
 1. Open a folder and an `.html` file.
 
@@ -98,7 +98,7 @@ To start the Visual Studio Code debugger along with DevTools, by using the usual
 
    Assuming that the opened folder doesn't contain a `.vscode` folder that contains a `launch.json` file already:
 
-1. Select Activity Bar > **Microsoft Edge Tools** > click the **Generate launch.json** button, and then press `F5`.  Or, see [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
+1. Select Activity Bar > **Microsoft Edge Tools** > click the **Generate launch.json** button, and then press `F5`.  Or, see [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser).
 
    After the DevTools extension is installed, when you open an `.html` file and then click the **Inspect** button on the Debug toolbar, the **Edge DevTools** tabs open inside of Visual Studio Code:
 
@@ -115,7 +115,7 @@ To start the Visual Studio Code debugger along with DevTools, by using the usual
    In the above screenshot, there's no `launch.json` file in **Explorer** in the `.vscode` folder, and no string such as **Launch Edge Headless and attach DevTools** at the bottom of the window, because DevTools was opened by right-clicking the `.html` file in **Explorer**.
 
 
-For additional UI steps and screenshots, see [Where the name strings appear in the UI](./launch-json.md#where-the-name-strings-appear-in-the-ui).  In most cases, the only thing you need to know about the content of the DevTools-generated `launch.json` file is that you need to enter your desired URL in the `"url"` string in several places.
+For additional UI steps and screenshots, see [Where the name strings appear in the UI](./launch-json#where-the-name-strings-appear-in-the-ui).  In most cases, the only thing you need to know about the content of the DevTools-generated `launch.json` file is that you need to enter your desired URL in the `"url"` string in several places.
 
 
 <!-- ====================================================================== -->
@@ -145,7 +145,7 @@ To debug your project, you might want to change the default page that opens in M
 
    **Generating a DevTools-oriented launch.json:**
 
-1. Select **Generate launch.json** to create a `launch.json` in your project.  This must be a longer file that's created by DevTools, as shown in [The launch.json file for the DevTools extension](./launch-json.md), not a short, more generic file created by Visual Studio Code.  See also [Deleting or re-creating launch.json](./troubleshooting.md#deleting-or-re-creating-launchjson) in _Troubleshooting the DevTools extension_.
+1. Select **Generate launch.json** to create a `launch.json` in your project.  This must be a longer file that's created by DevTools, as shown in [The launch.json file for the DevTools extension](./launch-json), not a short, more generic file created by Visual Studio Code.  See also [Deleting or re-creating launch.json](./troubleshooting#deleting-or-re-creating-launchjson) in _Troubleshooting the DevTools extension_.
 
 1. In `launch.json`, add the URL of your project. If you leave URL empty, the default page is displayed.
 
@@ -167,10 +167,10 @@ When you choose to debug your project in Visual Studio Code, whether you use Dev
 <!-- ====================================================================== -->
 ## See also
 
-* [The launch.json file for the DevTools extension](./launch-json.md)
-* [Debug Microsoft Edge in Visual Studio Code](../debugger-for-edge.md)
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
-* [The Visual Studio Code debugger now integrates with the DevTools extension](../../devtools-guide-chromium/whats-new/2021/07/devtools.md#the-visual-studio-code-debugger-now-integrates-with-the-devtools-extension) in _What's New in DevTools (Microsoft Edge 93)_.
+* [The launch.json file for the DevTools extension](./launch-json)
+* [Debug Microsoft Edge in Visual Studio Code](../debugger-for-edge)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension)
+* [The Visual Studio Code debugger now integrates with the DevTools extension](../../devtools-guide-chromium/whats-new/2021/07/devtools#the-visual-studio-code-debugger-now-integrates-with-the-devtools-extension) in _What's New in DevTools (Microsoft Edge 93)_.
 <!--todo: incorporate pov from what's new; update present article, then remove this link.  Explain: The tools refresh automatically when you switch between different debugging targets.-->
 
 **External pages:**

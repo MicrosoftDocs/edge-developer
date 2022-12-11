@@ -25,7 +25,7 @@ Without CSS mirror editing, the **Styles** tab in Microsoft Edge DevTools is exc
 
 CSS mirror editing is a feature of the Microsoft Edge DevTools extension that works around that problem.  Any change that you make in the **Styles** tab also automatically changes the `.css` file in your open folder in Visual Studio Code.  You can edit any CSS selector or create new CSS selectors in the **Styles** tab, and all changes are automatically mirrored in the correct `.css` file.
 
-CSS mirror editing also works for an `.html` file that contains a `<style>` element, such as the Success page.  This is demonstrated in [Step 2: Start DevTools by clicking the Launch Instance button for the default page](./get-started.md#step-2-start-devtools-by-clicking-the-launch-instance-button-for-the-default-page) in _Get started using the DevTools extension for Visual Studio Code_.
+CSS mirror editing also works for an `.html` file that contains a `<style>` element, such as the Success page.  This is demonstrated in [Step 2: Start DevTools by clicking the Launch Instance button for the default page](./get-started#step-2-start-devtools-by-clicking-the-launch-instance-button-for-the-default-page) in _Get started using the DevTools extension for Visual Studio Code_.
 
 
 #### The CSS Mirror Editing checkbox
@@ -83,5 +83,5 @@ CSS Mirroring also supports abstractions like Sass or CSS-in-JS when you have se
 <!-- ====================================================================== -->
 ## See also
 
-* [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Get started using the DevTools extension for Visual Studio Code](./get-started)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension)
