@@ -100,11 +100,13 @@ You can use the **Sources** tool to see webpage resources organized by directory
 
 To use the Sources tool:
 
-1. Open DevTools.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Select the **Sources** tool, and then in the **Navigator** pane in the upper left, select the **Page** tab.
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
 
-1. Click the **More options** (...) button to the right of the **Page** tab, and then select **Group by folder**.
+1. In the **Navigator** pane in the upper left, select the **Page** tab.
+
+1. By default, resource files are grouped by folder.  If the resources are all listed alphabetically by file name instead, click the **More options** (...) button to the right of the **Page** tab, and then select **Group by folder**:
 
    Open Sources tool:
 
