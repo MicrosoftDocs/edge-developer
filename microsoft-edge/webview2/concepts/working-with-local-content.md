@@ -12,22 +12,11 @@ ms.date: 12/08/2022
 
 In addition to loading remote content, content can also be loaded locally into WebView2.  There are several different approaches that can be used to load local content into a WebView2 control, including: 
 * Navigating to a file URL.
-* Navigating to a string.
+* Navigating to an HTML string.
 * Virtual host name mapping.
-* The `WebResourceRequested` event.
+* Handling the `WebResourceRequested` event.
 
-This article will discuss these four approaches in more detail and compare their key features and differences.
-
-<!-- the below list is copied from the Overview of APIs article: 
-TODO:
-* Merge the below list items wording with the above list items, to clarify the above wording.
-* Update the h2 headings below to match the above revised list items.
-* Improve the lead-in in the section [Manage content loaded into WebView2](./overview-features-apis.md#manage-content-loaded-into-webview2) in _Overview of WebView2 features and APIs_ to use the clarified wording: -->
-These APIs load, stop loading, and reload content to WebView2.  The content that's loaded can be:
-*  Content from a URL.
-*  A string of HTML.
-*  Local content via virtual host name to local folder mapping.
-*  Content from a constructed network request.
+These approaches are described below.
 
 
 <!-- ====================================================================== -->
@@ -35,16 +24,26 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 
 WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is the most efficient and simples approach that satisfies the basic scenario.  However, it is less flexible than the other approaches.  This is the simplest approach to load local content.  However, like the browser, file URLs are limited in some capabilities. The document origin will be `null` for a file URL.  For each resource, the full path is needed to be specified.
 
-File URLs behave like they do in the browser.  For example, you can't make an `XMLHttpRequest` (XHR) in a file URL, because you're not working in the context of a _ page.  If it's loading local content, still came from bing.com (eg), versus a file that came from _.
-For file URLs, it behaves the same as the browser.
+File URLs behave like they do in the browser.  For example, you can't make an `XMLHttpRequest` (XHR) in a file URL, because you're not working in the context of a webpage.  If the WebView2 control is loading local content, still came from a remote source (such as Bing.com), versus a file that came from local.
 
-You must specify the full path of the file.  Otherwise, _.  For example, suppose you switch between online and offline content, specify the virtual domain; vs. if use file URL, you have to _ each time you switch.
-You can specify a folder each time you switch _.
+#### Offline (local) vs. online (remote) content
+
+You must specify the full path of the file, for every resource.  For example:
+
+```
+C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html
+```
+
+<!-- TODO: Dev polish wording: -->
+For example, suppose you switch between online (remote, such as Bing.com) and offline (local path) content, you must specify the virtual domain.
+In contrast, if you navigate to a file URL, you have to replace it with the full path each time you switch between remote and local content.
+
+You can specify a folder each time you switch between online (remote) and offline (local) content.
+
 With a file URL, the app navigates to a specific path; that's the only way the app can load local content.
 
-Can't tell cross-origin resources for file URLs.
+You can't use cross-origin resources for navigating to a file URL.  `document.origin` is null.
 
-<!-- You navigate webview to a file URL. -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -90,13 +89,31 @@ For details, see [Get started using the DevTools extension for Visual Studio Cod
 <!-- ---------------------------------------- -->
 #### Example of navigating to a file URL
 
-```javascript
+<!-- expect short & basic -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+```csharp
 TODO
 ```
 
+##### [WinRT/C#](#tab/winrtcsharp)
+
+```csharp
+TODO
+```
+
+##### [Win32/C++](#tab/win32cpp)
+
+```cpp
+TODO
+```
+
+---
+
 
 <!-- ====================================================================== -->
-## Navigate to a string
+## Navigate to an HTML string
 
 Another method to load local content is the `NavigateToString` method.  This approach loads the content into WebView2 directly from a string.  This can be useful if you will be packaging the content via the app code, or if you'd like to dynamically create the content.
 
@@ -162,19 +179,37 @@ To obtain the above string:
 <!-- ------------------------------ -->
 #### Example of navigating to a string
 
-```javascript
+<!-- expect short, need example here b/c maybe isn't elsewhere -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+```csharp
 TODO
 ```
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+```csharp
+TODO
+```
+
+##### [Win32/C++](#tab/win32cpp)
+
+```cpp
+TODO
+```
+
+---
 
 
 <!-- ====================================================================== -->
 ## Virtual host name mapping
 
-Another way to load local content in a WebView2 control is to use virtual host mapping. This involves mapping a local domain name to the WebView2 control, so that when the control attempts to load a resource from that domain, it will load the content from the specified local folder location instead. The origin of the document will also be the virtual host name. 
+Another way to load local content in a WebView2 control is to use virtual host name mapping.  This involves mapping a local domain name to a local folder, so that when the WebView2 control attempts to load a resource for that domain, it will load the content from the specified local folder location instead. The origin of the document will also be the virtual host name. 
 
-This isn't as efficient as file URL, because on the WebView2 side, there's some translation to the actual path.  Due to a current implementation limitation, media files accessed using virtual host name can be very slow to load.<!-- when limitation is fixed, remove sentence -->
+Due to a current limitation, media files that are accessed using a virtual host name can be slow to load.<!-- when limitation is fixed, remove sentence -->
 
-This approach lets you specify the cross-origin access using the `CoreWebView2HostResourceAccessKind` enum.
+This approach lets you specify the cross-origin access, by using the `CoreWebView2HostResourceAccessKind` enum.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -206,27 +241,45 @@ TODO
 <!-- ---------------------------------------- -->
 #### Example of virtual host name mapping
 
-```javascript
+<!-- expect nontrivial short listings -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+```csharp
 TODO
 ```
 
+##### [WinRT/C#](#tab/winrtcsharp)
+
+```csharp
+TODO
+```
+
+##### [Win32/C++](#tab/win32cpp)
+
+```cpp
+TODO
+```
+
+---
+
 
 <!-- ====================================================================== -->
-## The WebResourceRequested event
+## Handling the WebResourceRequested event
 
-Another way that can be used to host local content would be relying on the `WebResourceRequested` event. This event is triggered when the control attempts to load a resource, and it allows the developer to intercept the request and provide their own content instead.
+Another way you can host local content in a WebView2 control is by relying on the `WebResourceRequested` event.  This event is triggered when the control attempts to load a resource.  You can use this event to intercept the request and provide the local content, as described in [Custom management of network requests](../how-to/webresourcerequested.md).
 
 #### Advantages
 
 The main advantage of using the `WebResourceRequested` event to load local content in a WebView2 control is that it allows the developer to customize the behavior on a per-request basis. This means that they can decide which requests to intercept and provide their own content for, and which requests to let the control handle normally. This can be useful for implementing features like offline mode, where only certain types of requests need to be handled differently.
 
-Another advantage of using the WebResourceRequested event is that it gives the developer more control over the content that is loaded into the WebView2 control. They can provide custom content for each request, which can be useful for loading content from a local source or for simulating a production environment.
+Another advantage of using the `WebResourceRequested` event is that it gives the developer more control over the content that is loaded into the WebView2 control. They can provide custom content for each request, which can be useful for loading content from a local source or for simulating a production environment.
 
 #### Disadvantages
 
 There are also some disadvantages to using the `WebResourceRequested` event. One disadvantage is that it requires more code and may be more difficult to implement than other methods, such as virtual host mapping and need knowledge of HTTP to be able to construct a proper response. From WebView2's perspective the resource will have come via the network and WebView2 will adhere to the headers that are set by the app as part of the response. 
 
-Another disadvantage of using the WebResourceRequested event is that it can be less efficient than other methods. Because the developer has to intercept each request and provide their own content, it can add an extra layer of overhead to the process of loading content into the WebView2 control. This can make the control slower to load content and may affect the overall performance of the application.
+Another disadvantage of using the `WebResourceRequested` event is that it can be less efficient than other methods. Because the developer has to intercept each request and provide their own content, it can add an extra layer of overhead to the process of loading content into the WebView2 control. This can make the control slower to load content and may affect the overall performance of the application.
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -247,11 +300,34 @@ Another disadvantage of using the WebResourceRequested event is that it can be l
 ---
 
 <!-- ---------------------------------------- -->
-#### Example of the WebResourceRequested event
+#### Example of handling the WebResourceRequested event
 
-```javascript
+<!-- expect medium-length listings -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+```csharp
 todo
 ```
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+See the .NET/C# example.
+<!-- or delete the above line and copy the same code listing into both tabs -->
+
+<!--
+```csharp
+todo
+```
+-->
+
+##### [Win32/C++](#tab/win32cpp)
+
+```cpp
+todo
+```
+
+---
 
 
 <!-- ====================================================================== -->
