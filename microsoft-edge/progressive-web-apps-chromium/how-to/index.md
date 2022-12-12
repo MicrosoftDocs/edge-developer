@@ -66,7 +66,7 @@ To start developing your PWA, you can use a local web server instead. To start a
     You can do this by opening a command prompt and typing:
     
     ```shell
-    cd path\to\your\dev\folder
+    cd path/to/your/dev/folder
     mkdir MySamplePWA
     cd MySamplePWA
     ```
