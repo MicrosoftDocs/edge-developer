@@ -49,9 +49,9 @@ Note that although your front-end code runs by using the device's web browser, t
 
 On top of the user interface code, you also use JavaScript to make your application faster, more reliable, and network-independent by using a service worker file. Finally, your front-end code also contains a JSON manifest file that describes your application to the host operating system.
 
-Below is a diagram of the high-level architecture of a PWA:
+The following diagram shows the high-level architecture of a PWA.  The web server is on one side of the PWA, and the device is on the other side. The device contains the front-end code, including HTML, CSS, JavaScript, the service worker, and the manifest:
 
-![Architecture diagram of a PWA, showing the web server on one side, and the device on the other. The device part contains the front-end code with HTML, CSS, JavaScript, the service worker, and the manifest](../media/pwa-architecture.png)
+![Architecture diagram of a PWA](../media/pwa-architecture.png)
 
 
 <!-- ====================================================================== -->
@@ -114,9 +114,9 @@ So far, there is no content available on your web server. Start by creating the 
 
 1. Go to `http://localhost:8080` to view your app:
 
-   ![Running your new PWA on localhost.](../media/sample-pwa-app.png)
+   ![Running your new PWA on localhost](../media/sample-pwa-app.png)
 
-The app runs in the browser for now, and can't be installed. To make it installed, the app needs a web app manifest.
+The app runs in the browser for now, and can't be installed. To make the app installable, the app needs a web app manifest.
 
 
 <!-- ====================================================================== -->
@@ -302,7 +302,7 @@ In this step of the tutorial, we'll create a basic temperature unit conversion a
 
 1. Go to `http://localhost:8080` to view your app:
 
-    ![Running your new PWA, with the frontend code, on localhost.](../media/sample-pwa-app-with-frontend-code.png)
+    ![Running your new PWA, with the frontend code, on localhost](../media/sample-pwa-app-with-frontend-code.png)
 
 Your app does something useful now, but it can't be installed yet, because there's no service worker. You'll make your app installable in the next step, by creating a service worker.
 
