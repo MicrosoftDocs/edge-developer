@@ -445,9 +445,6 @@ Next, use the DevTools Console to demonstrate that web-side code can call the in
 
    ![Using the DevTools Console to test calling native-side code from web-side code.](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
-See also:
-* [How WinRT types and members are represented in JavaScript](./winrt-js-conversion.md)
-
 Congratulations!  You've finished the sample demonstration of calling WinRT code from JavaScript code.
 
 
@@ -625,7 +622,6 @@ Command-line help contains similar information for the parameters of `wv2winrt.e
 <!-- ====================================================================== -->
 ## See also
 
-* [How WinRT types and members are represented in JavaScript](./winrt-js-conversion.md)
 * [Call native-side code from web-side code](hostobject.md)
 
 Tutorial and sample:

@@ -1205,10 +1205,6 @@
                   href: webview2/how-to/winrt-from-js.md
                   displayName: AddHostObjectToScript, host objects
 
-                - name: How WinRT types and members are represented in JavaScript
-                  href: webview2/how-to/winrt-js-conversion.md
-                  displayName: 
-
             - name: Using frames
               href: webview2/concepts/frames.md
               displayName: Using frames in WebView2 apps, iframe # full title
