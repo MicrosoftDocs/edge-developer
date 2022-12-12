@@ -112,9 +112,7 @@ For example, to go from the **Page** tab's resource list in the **Sources** tool
 <!-- ====================================================================== -->
 ## Browse resource files by folder in the Page tab of the Sources tool
 
-You can use the **Sources** tool to see webpage resources organized by directory.
-
-To use the Sources tool:
+You can use the **Sources** tool to view the webpage's resource files organized by directory, as follows:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
@@ -123,8 +121,6 @@ To use the Sources tool:
 1. In the **Navigator** pane in the upper left, select the **Page** tab.
 
 1. By default, resource files are grouped by folder.  If the resources are all listed alphabetically by file name instead, click the **More options** (...) button to the right of the **Page** tab, and then select **Group by folder**:
-
-   Open Sources tool:
 
    ![The webpage's resource files grouped by folder in the Page tab of the Sources tool](../media/resources-sources-page-empty.msft.png)
 
@@ -165,6 +161,10 @@ By default, the **Page** tab groups resources by directory.  To display the reso
 ## Browse resource files by file type in the Frames tree in the Application tool
 
 One way to view webpage resources grouped by file type is by using the **Frames** tree in the **Application** tool:
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs button](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![The More Tools icon](../media/more-tools-icon-light-theme.png)) button.
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
