@@ -1,11 +1,11 @@
 ---
 title: Edit files with Workspaces (Filesystem tab)
-description: How to save changes made within DevTools to disk.
+description: How to save file changes made in DevTools to disk.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 12/12/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,9 +22,9 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Edit files with Workspaces (Filesystem tab)
 
-This tutorial provides hands-on practice in setting up and using a Workspace.  After you add files to a Workspace, the changes that you make in your source code within DevTools are saved on your local computer, and are preserved after you refresh the webpage.
+This tutorial provides hands-on practice in setting up and using a Workspace to edit files locally. After you add files to a Workspace, you can use DevTools to edit webpage source code and save these changes on your local computer. These changes can be kept after you refresh the webpage.
 
-Before beginning this tutorial, you should know how to do the following:
+You can use the following articles as a guide to webpage files, using DevTools and setting up a local web server.
 * [Use html, CSS, and JavaScript to build a web page](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web)
 * [Use DevTools to make basic changes to CSS](../css/index.md)
 * [Run a local HTTP web server](https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server)
@@ -33,9 +33,9 @@ Before beginning this tutorial, you should know how to do the following:
 <!-- ====================================================================== -->
 ## Overview
 
-Workspaces enable you to save a change that you make in Devtools to a local copy of the same file on your computer.  For this tutorial, you should have the following settings on your machine.
+Workspaces let you save a change to a file using DevTools to a local copy of the file on your computer. The following prerequisites are needed for this tutorial.
 
-* You have the source code for your site on your desktop.
+* You have the demonstration source code on your desktop.
 
 * You are running a local web server from the source code directory, so that the site is accessible at `localhost:8080`.
 
@@ -69,7 +69,7 @@ The Workspaces feature doesn't work with the Create React App framework.
 
 We'll set up the demo and then set up DevTools.
 
-### Set up the demo
+#### Set up the demo
 
 1. [Open the demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
 
@@ -91,7 +91,7 @@ We'll set up the demo and then set up DevTools.
 
    ![The demo.](../media/workspaces-workspaces-demo.msft.png)
 
-### Set up DevTools
+#### Set up DevTools
 
 1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) to open the **Console** panel of DevTools.
 
@@ -142,7 +142,7 @@ The color of the `<h1>` element is still set to your favorite color.  The change
 You can change HTML tagging using the Elements tool, but to be able to save the edits, we'll use the Sources tool.
 
 
-### Change HTML from the Elements Panel
+#### Change HTML from the Elements Panel
 
 You can make changes to the HTML content in the Element tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
 
@@ -176,7 +176,7 @@ The DOM tree is not the HTML source tagging.
 In short, the **DOM Tree** `!==` HTML.
 -->
 
-### Change HTML from the Sources tool
+#### Change HTML from the Sources tool
 
 If you want to save a change to the HTML of the webpage, use the **Sources** tool.
 
