@@ -33,23 +33,23 @@ You can use the following articles as a guide to webpage files, using DevTools a
 <!-- ====================================================================== -->
 ## Overview
 
-Workspaces let you save a change to a file using DevTools to a local copy of the file on your computer. The following prerequisites are needed for this tutorial.
+Workspaces let you edit a file in DevTools and then save that file as a local copy on your computer. The following prerequisites are for this tutorial.
 
 * You have the demonstration source code on your desktop.
 
-* You are running a local web server from the source code directory, so that the site is accessible at `localhost:8080`.
+* You're running a local web server from the source code directory, so that the site is accessible at `localhost:8080`.
 
-* You opened `localhost:8080` in Microsoft Edge, and you are using DevTools to change the CSS of the site.
+* You opened `localhost:8080` in Microsoft Edge, and you're using DevTools to change the CSS of the site.
 
-With Workspaces enabled, the CSS changes that you make within DevTools are saved to the source code on your desktop.
+With Workspaces enabled, the CSS changes that you make using DevTools are saved to the source code on your desktop.
 
 
 <!-- ====================================================================== -->
 ## Limitations
 
-If you are using a modern framework, it probably transforms your source code from a format that is easy to maintain into a format that is optimized to run as quickly as possible.
+If you're using a modern framework, it probably transforms your source code from a format that is easy to maintain into a format that is optimized to run as quickly as possible.
 
-Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps).  But there is a lot of variation between frameworks over how each framework uses source maps.  Devtools doesn't support all of the variations.
+Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps).  But there's many variations between frameworks over how each framework uses source maps.  Devtools doesn't support all of the variations.
 
 The Workspaces feature doesn't work with the Create React App framework.
 
@@ -146,7 +146,7 @@ You can change HTML tagging using the Elements tool, but to be able to save the 
 
 You can make changes to the HTML content in the Element tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
 
-The DOM tree is not the HTML source tagging.
+The DOM tree isn't the HTML source tagging.
 
 <!--### Try changing HTML from the Elements panel
 
