@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/07/2022
+ms.date: 12/12/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -23,10 +23,10 @@ ms.date: 12/07/2022
 # View the resource files that make up a webpage
 
 Resources are the files that make up a webpage.  Examples of resources include:
-*  CSS files.
-*  JavaScript files.
-*  HTML files.
-*  Image files.
+*  CSS files
+*  JavaScript files
+*  HTML files
+*  Image files
 
 You can view the resources that make up a web page from within several tools (or _panels_) in Microsoft Edge DevTools, including:
 *  **Network** tool
