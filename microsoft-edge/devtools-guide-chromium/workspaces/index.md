@@ -35,11 +35,11 @@ You can use the following articles as a guide to webpage files, using DevTools a
 
 Workspaces let you edit a file in DevTools and then save that file as a local copy on your computer. The following prerequisites are for this tutorial.
 
-* You have the demonstration source code on your desktop.
+* You have the demo source code on your desktop.
 
-* You're running a local web server from the source code directory, so that the site is accessible at `localhost:8080`.
+* You're running a local web server from the source code directory, so that the demo site is accessible at `localhost:8080`.
 
-* You opened `localhost:8080` in Microsoft Edge, and you're using DevTools to change the CSS of the site.
+* You opened `localhost:8080` in Microsoft Edge, and you're using DevTools to change the CSS for the site.
 
 With Workspaces enabled, the CSS changes that you make using DevTools are saved to the source code on your desktop.
 
@@ -47,19 +47,17 @@ With Workspaces enabled, the CSS changes that you make using DevTools are saved 
 <!-- ====================================================================== -->
 ## Limitations
 
-If you're using a modern framework, it probably transforms your source code from a format that is easy to maintain into a format that is optimized to run as quickly as possible.
+If you're using a modern framework, it probably transforms your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.
 
-Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps).  But there's many variations between frameworks over how each framework uses source maps.  Devtools doesn't support all of the variations.
+Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps).  But there's many variations between frameworks over how each framework uses source maps.  Devtools doesn't support all of these variations. **Note:** The Workspaces feature doesn't work with the Create React App framework.
 
-The Workspaces feature doesn't work with the Create React App framework.
-
-<!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.  -->
+If you run into issues while using Workspaces with your framework of choice, or you can't get it working after some custom configuration, [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.
 
 
 <!-- ====================================================================== -->
 ## Related feature: Local overrides
 
-**Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you don't care about mapping your changes to the source code of the webpage.
+**Local Overrides** is a DevTools feature that is similar to Workspaces. Use overrides when you want to debug a webpage or experiment with changes to a webpage. After you download the webpage source code you can test these changes and display the changes across webpage loads. To learn more about overrides, see [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md).
 
 <!--Todo: add section when content is ready  -->
 
@@ -73,7 +71,7 @@ We'll set up the demo and then set up DevTools.
 
 1. [Open the demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
 
-1. Create an `app` directory on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
+1. Create a `app` directory named `Desktop/app`on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
 
 1. Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you can use whatever server you prefer.
 
