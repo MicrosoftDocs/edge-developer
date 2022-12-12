@@ -140,11 +140,13 @@ You can use the **Sources** tool to view the webpage's resource files organized 
 
 
 <!-- ====================================================================== -->
-## Browse resources by filename in the Sources tool
+## Browse resource files sorted by filename in the Page tab of the Sources tool
 
-By default, the **Page** tab groups resources by directory.  To display the resources for each domain as a flat list, instead of grouping them by directory:
+By default, the **Page** tab in the **Sources** tool groups resource files by folder.  To instead display all the resource files for each domain grouped together in a single alphabetized list:
 
-1. Go to the **Sources** tool.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![The More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
 
 1. In the **Navigator** pane in the upper left, select the **Page** tab.
 
@@ -166,13 +168,9 @@ One way to view webpage resources grouped by file type is by using the **Frames*
 
 1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs button](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![The More Tools icon](../media/more-tools-icon-light-theme.png)) button.
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
-
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs button](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![The More Tools icon](../media/more-tools-icon-light-theme.png)) button.
-
 1. Select the **Application** tab.  The **Application** tool opens and by default shows the **Manifest** pane first:
    
-   ![The Application tool.](../media/resources-application-mainfest-airhorner.msft.png)
+   ![The Application tool](../media/resources-application-mainfest-airhorner.msft.png)
 
 1. Scroll down to the **Frames** pane and then expand the folder that you're interested in:
 
