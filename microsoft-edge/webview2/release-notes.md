@@ -151,7 +151,11 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+<<<<<<< HEAD
 * [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled?view=webview2-dotnet-1.0.1549-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2environmentoptions-iscustomcrashreportingenabled)
+=======
+* [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled?view=webview2-dotnet-1.0.1549-prerelease&preserve-view=true)
+>>>>>>> 72c7729c1e3e1c8b993e7399f997117d5719c2b2
 
 * [CoreWebView2Environment.FailureReportFolderPath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.failurereportfolderpath?view=webview2-dotnet-1.0.1549-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2environment-failurereportfolderpath)
 
@@ -191,7 +195,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ### General
 
-This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1414-prerelease. See **Bug fixes** in the following section.
+This WebView2 SDK release has the same [bug fixes](#bug-fixes-1414-prerelease) that are in WebView2 SDK 1.0.1414-prerelease.
 
 
 <!-- ====================================================================== -->
