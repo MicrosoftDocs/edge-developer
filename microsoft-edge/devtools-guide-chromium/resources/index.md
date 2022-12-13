@@ -188,6 +188,8 @@ In the **Network** tool, when you view the list of resource files that make up t
 
 The above screenshot shows `main.css`, which is part of the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/).  The source files for that page are at [MicrosoftEdge / Demos > network-tutorial](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial).
 
+For more information, see [Filter by resource type](../network/index.md#filter-by-resource-type) in _Inspect network activity_.
+
 
 <!-- ====================================================================== -->
 > [!NOTE]
