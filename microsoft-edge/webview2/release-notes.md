@@ -45,7 +45,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ### General
 
-This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1549-prerelease. See **Bug fixes** in the following section.
+This WebView2 SDK release has the same [bug fixes](#101466-prerelease) that are in WebView2 SDK 1.0.1549-prerelease.
 
 
 <!-- ====================================================================== -->
