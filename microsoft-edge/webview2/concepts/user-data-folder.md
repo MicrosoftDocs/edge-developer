@@ -549,7 +549,7 @@ For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView
 
 Instead of deleting the user data folder (UDF), clear browsing data from the UDF.  For example, clear user data and history when a user signs out.
 
-See [Clear browsing data from the user data folder](clear-browsing-data.md).
+See [Clear browsing data from the user data folder](clear-browsing-data).
 
 
 <!-- ====================================================================== -->
@@ -661,9 +661,9 @@ Files in UDFs might still be in use after the WebView2 app is closed.  In this s
 
 WebView2 control instances can share the same user data folders (UDFs), to do the following:
 
-*  Optimize system resources by running in one browser process.  See [Process model for WebView2 apps](../concepts/process-model.md).
+*  Optimize system resources by running in one browser process.  See [Process model for WebView2 apps](../concepts/process-model).
 
-*  Have WebView2 controls with different profiles, to separate browser data storage such as cookies, permissions, and cached resources under the same UDF.  See [Support multiple profiles under a single user data folder](../concepts/multi-profile-support.md).
+*  Have WebView2 controls with different profiles, to separate browser data storage such as cookies, permissions, and cached resources under the same UDF.  See [Support multiple profiles under a single user data folder](../concepts/multi-profile-support).
 
 Consider the following when sharing UDFs:
 
@@ -677,14 +677,14 @@ To isolate different parts of your app, or when sharing data between WebView2 co
 
 Each WebView2 browser process consumes additional memory and disk space.  Therefore, avoid running a WebView2 control with too many different UDFs at the same time.
 
-Rather than multiple UDFs, you can use multiple profiles to achieve browser data storage separation for different WebView2 controls.  Each profile saves browser data in a dedicated folder under the same, shared UDF.  See [Support multiple profiles under a single user data folder](../concepts/multi-profile-support.md).
+Rather than multiple UDFs, you can use multiple profiles to achieve browser data storage separation for different WebView2 controls.  Each profile saves browser data in a dedicated folder under the same, shared UDF.  See [Support multiple profiles under a single user data folder](../concepts/multi-profile-support).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Support multiple profiles under a single user data folder](multi-profile-support.md)
-* [Clear browsing data from the user data folder](clear-browsing-data.md)
+* [Support multiple profiles under a single user data folder](multi-profile-support)
+* [Clear browsing data from the user data folder](clear-browsing-data)
 * [Package and deploy](/windows/apps/package-and-deploy/) in _Windows App Development_ docs (Build desktop apps for Windows).
 * [ClickOnce security and deployment](/visualstudio/deployment/clickonce-security-and-deployment) - Visual Studio deployment documentation.
 * [Understand the ClickOnce and DirectInvoke features in Microsoft Edge](/deployedge/edge-learn-more-co-di) - in Microsoft Edge Enterprise documentation.
