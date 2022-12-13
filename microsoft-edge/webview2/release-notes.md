@@ -45,7 +45,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ### General
 
-This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1549-prerelease. See **Bug fixes** in the following section.
+This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1549-prerelease. See #### <a id="bug-fixes-1466-prerelease"/>Bug fixes in the following section.
 
 
 <!-- ====================================================================== -->
@@ -286,7 +286,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
-#### Bug fixes
+#### <a id="bug-fixes-1466-prerelease"/>Bug fixes
 
 *   Fixed a bug in which the custom header title in print settings could be wrong. ([Issue #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093))
 *   Display `AllowedCertificateAuthorities` in `add_ClientCertificateRequested` event as a `Base64` string. (Runtime) ([Issue #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346))
