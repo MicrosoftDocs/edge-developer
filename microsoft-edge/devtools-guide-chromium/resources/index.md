@@ -49,7 +49,7 @@ When you know the name of a webpage's resource file that you want to inspect, th
 
    ![The Command Menu, displaying the Open File list](../media/resources-command-menu-empty.msft.png)
 
-1.  If there's a greater-than (>) prompt, press `Backspace` to get to the **Open File** prompt.
+1. If there's a greater-than (>) prompt, press `Backspace` to get to the **Open File** prompt.
 
 1. Start typing the filename, and then press `Enter` when the correct file is highlighted in the autocomplete box, or select the file from the dropdown list:
 
