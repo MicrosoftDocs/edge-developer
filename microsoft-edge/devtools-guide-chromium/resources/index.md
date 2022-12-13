@@ -194,6 +194,8 @@ The above screenshot shows `main.css`, which is part of the [Inspect Network Act
 
 For more information, see [Filter by resource type](../network/index.md#filter-by-resource-type) in _Inspect network activity_.
 
+For more information, see [Filter by resource type](../network/index.md#filter-by-resource-type) in _Inspect network activity_.
+
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
