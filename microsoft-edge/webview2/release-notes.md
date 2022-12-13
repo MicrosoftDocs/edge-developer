@@ -46,7 +46,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ### General
 
-This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1466-prerelease. See **Bug fixes** in the following section.
+This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1549-prerelease. See **Bug fixes** in the following section.
 
 
 <!-- ====================================================================== -->
@@ -54,7 +54,7 @@ This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.14
 
 Release Date: December 12, 2022
 
-[NuGet package for WebView2 SDK 1.0.1466-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1549-prerelease)
+[NuGet package for WebView2 SDK 1.0.1549-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1549-prerelease)
 
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 110.0.1549.0 or higher.
 
@@ -70,7 +70,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-*  [ICoreWebView2EnvironmentOptions3 interface]()
+*  [ICoreWebView2EnvironmentOptions3 interface](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1462.37)
    * [ICoreWebView2EnvironmentOptions3::IsCustomCrashReportingEnabled property(get](), [put)]()
 *  [ICoreWebView2Environment11::get_FailureReportFolderPath property]()
 
@@ -169,7 +169,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 #### Bug fixes
  
-*  Fixed some nullptr issues where now some public APIs which take nullptr as input params do not crash the WebView2. 
+*  Fixed some nullptr issues where now some public APIs which take nullptr as input parameters do not crash the WebView2. 
 *  Disabled "Open link as Profile" in the WebView2 context menu.
 *  Fixed bug where the whole tool bar will be blank when hiding Bookmarks, Search, and PageSelector buttons simultaneously. ([Issue #2866](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2866))
 *  Fix post data missing in form submit with control click. ([Issue #2652](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2652))
@@ -177,7 +177,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 *  Fix drag/drop within the WebView2 for composition hosted WebViews.
 *  Fixed a bug where the app crashes when trying to move focus to WebView2 when it is disabled.
 *  Remove read aloud icon in address bar in a WebView2 popup window.
-*  Fixed an issue where context menu shows unexpected items in WebView2 popup window.
+*  Fixed an issue where context menu shows unexpected items in WebView2 popup window
 
 <!-- ====================================================================== -->
 ## 1.0.1418.22
