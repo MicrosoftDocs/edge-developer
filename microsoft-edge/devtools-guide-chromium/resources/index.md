@@ -1,6 +1,6 @@
 ---
-title: View page resources
-description: Organize resources by frame, domain, type, or other criteria.
+title: View the resource files that make up a webpage
+description: Browse and inspect the resource files that make up a webpage, and filter them by file type, frame, domain, or other criteria.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
