@@ -436,7 +436,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
-#### Bug fixes
+#### <a id="bug-fixes-1414-prerelease"/>Bug fixes
 
 *   Removed three-dot menu with a broken link from the downloads page. (Runtime)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
 *   Fixed a bug in the WebView2 WinRT JS Projection tool (wv2winrt) where C++20 projects failed to compile.  ([Issue #2768](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2768))
