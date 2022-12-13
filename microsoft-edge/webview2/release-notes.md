@@ -70,7 +70,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ##### [Win32/C++](#tab/win32cpp)
 
 *  [ICoreWebView2EnvironmentOptions3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3?view=webview2-1.0.1549-prerelease&preserve-view=true)
-   * [ICoreWebView2EnvironmentOptions3::IsCustomCrashReportingEnabled property(get](), [put)]()
+   * [ICoreWebView2EnvironmentOptions3::IsCustomCrashReportingEnabled property(get](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3?view=webview2-1.0.1549-prerelease&preserve-view=true#get_iscustomcrashreportingenabled), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3?view=webview2-1.0.1549-prerelease&preserve-view=true#put_iscustomcrashreportingenabled)
 *  [ICoreWebView2Environment11::get_FailureReportFolderPath property]()
 
 ---
