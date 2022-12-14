@@ -92,6 +92,9 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+* [CoreWebView2EnvironmentOptions.EnableTrackingPrevention Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1549-prerelease&preserve-view=true#enabletrackingprevention)
+* [CoreWebView2Profile.PreferredTrackingPreventionLevel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1549-prerelease&preserve-view=true#preferredtrackingpreventionlevel)
+
 ##### [Win32/C++](#tab/win32cpp)
 
 *  [ICoreWebView2ExperimentalEnvironmentOptions2 interface](/webview2/reference/win32/icorewebview2environmentoptions3?view=webview2-1.0.1549-prerelease&preserve-view=true)
