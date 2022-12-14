@@ -41,23 +41,23 @@ Workspaces let you edit a file in DevTools and then save that file as a local co
 
 * You opened `localhost:8080` in Microsoft Edge, and you're using DevTools to change the CSS for the site.
 
-With Workspaces enabled, the CSS changes that you make using DevTools are saved to the source code on your desktop.
+With Workspaces enabled, any CSS changes that you make are saved to the source code on your desktop.
 
 
 <!-- ====================================================================== -->
 ## Limitations
 
-If you're using a modern framework, it probably transforms your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.
+If you're using a modern framework, it probably transforms your source code from a format that's easy to maintain into a format that's optimized to load and run as quickly as possible.
 
 Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps).  But there's many variations between frameworks over how each framework uses source maps.  Devtools doesn't support all of these variations. **Note:** The Workspaces feature doesn't work with the Create React App framework.
 
-If you run into issues while using Workspaces with your framework of choice, or you can't get it working after some custom configuration, [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.
+If you run into issues while using Workspaces with your framework of choice, or you can't get it working after a custom configuration, [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to exchange information with the rest of the DevTools community.
 
 
 <!-- ====================================================================== -->
 ## Related feature: Local overrides
 
-**Local Overrides** is a DevTools feature that is similar to Workspaces. Use overrides when you want to debug a webpage or experiment with changes to a webpage. After you download the webpage source code you can test these changes and display the changes across webpage loads. To learn more about overrides, see [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md).
+**Local Overrides** is a DevTools feature that's similar to Workspaces. Local Overrides lets you make changes to the webpage without changing any files on the web server. After you download the webpage source files you can test changes across webpage loads using the local copy of these files. To learn more about overrides, see [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md).
 
 <!--Todo: add section when content is ready  -->
 
@@ -69,9 +69,9 @@ We'll set up the demo and then set up DevTools.
 
 #### Set up the demo
 
-1. [Open the demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
+1. [Open the demo source code page](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
 
-1. Create a `app` directory named `Desktop/app`on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
+1. Create a `app` directory on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
 
 1. Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you can use whatever server you prefer.
 
@@ -85,9 +85,9 @@ We'll set up the demo and then set up DevTools.
    python -m http.server # Python 3
    ```
 
-1. Open a tab in Microsoft Edge and navigate to the locally hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
+1. Open a tab in Microsoft Edge and navigate to the locally hosted version of the site.  You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
 
-   ![The demo.](../media/workspaces-workspaces-demo.msft.png)
+   ![The DevTools Workspaces Demo](../media/workspaces-workspaces-demo.msft.png)
 
 #### Set up DevTools
 
