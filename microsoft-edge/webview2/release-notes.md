@@ -72,7 +72,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1549-prerelease&preserve-view#iscustomcrashreportingenabled)
+* [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1549-prerelease&preserve-view#iscustomcrashreportingenabled
 * [CoreWebView2Environment.FailureReportFolderPath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1549-prerelease&preserve-view#failurereportfolderpath)
 
 ##### [Win32/C++](#tab/win32cpp)
@@ -92,9 +92,9 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ##### [Win32/C++](#tab/win32cpp)
 
 *  [ICoreWebView2ExperimentalEnvironmentOptions2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3?view=webview2-1.0.1549-prerelease&preserve-view=true)
-   * [ICoreWebView2ExperimentalEnvironmentOptions2::EnableTrackingPrevention property(get](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled?view=webview2-dotnet-1.0.1549-prerelease), [put)](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions2?view=webview2-1.0.1549-prerelease#put_enabletrackingprevention)
-*  [ICoreWebView2ExperimentalProfile5 interface](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease)
-   * [ICoreWebView2ExperimentalProfile5::PreferredTrackingPreventionLevel property(get](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease#get_preferredtrackingpreventionlevel), [put)](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease#put_preferredtrackingpreventionlevel)
+   * [ICoreWebView2ExperimentalEnvironmentOptions2::EnableTrackingPrevention property(get](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled?view=webview2-dotnet-1.0.1549-prerelease), [put)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions2?view=webview2-1.0.1549-prerelease#put_enabletrackingprevention)
+*  [ICoreWebView2ExperimentalProfile5 interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease)
+   * [ICoreWebView2ExperimentalProfile5::PreferredTrackingPreventionLevel property(get](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease#get_preferredtrackingpreventionlevel), [put)](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease#put_preferredtrackingpreventionlevel)
         
 ---
 
