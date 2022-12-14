@@ -85,10 +85,10 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-*  [ICoreWebView2ExperimentalEnvironmentOptions2 interface]()
-   * [ICoreWebView2ExperimentalEnvironmentOptions2::EnableTrackingPrevention property(get](), [put)]()
-*  [ICoreWebView2ExperimentalProfile5 interface]()
-   * [ICoreWebView2ExperimentalProfile5::PreferredTrackingPreventionLevel property(get](), [put)]()
+*  [ICoreWebView2ExperimentalEnvironmentOptions2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3?view=webview2-1.0.1549-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalEnvironmentOptions2::EnableTrackingPrevention property(get](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled?view=webview2-dotnet-1.0.1549-prerelease), [put)](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions2?view=webview2-1.0.1549-prerelease#put_enabletrackingprevention)
+*  [ICoreWebView2ExperimentalProfile5 interface](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease)
+   * [ICoreWebView2ExperimentalProfile5::PreferredTrackingPreventionLevel property(get](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease#get_preferredtrackingpreventionlevel), [put)](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease#put_preferredtrackingpreventionlevel)
         
 ---
 
