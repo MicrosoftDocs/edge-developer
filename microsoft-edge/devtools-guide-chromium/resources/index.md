@@ -63,9 +63,17 @@ When you know the name of a webpage's resource file that you want to inspect, th
 
 In the **Network** tool, you can inspect the resource files that make up the current webpage, such as `.html`, `.css`, `.js`, and image files.  To learn how to get the details for a specific resource, see [Inspect the details of the resource](../network/index.md#inspect-the-details-of-the-resource) in _Inspect network activity_.
 
-When you go to the **Network** tool and then refresh the page, all the webpage's resource files are listed in the **Network** tool, one row per resource file:
+1. In a new window or tab, go to a webpage, such as the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/).  (The source files for that webpage are at [MicrosoftEdge / Demos > network-tutorial](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial).)
 
-![Webpage resource files listed in the Network Log, one resource file per row](../media/resources-network-resources.msft.png)
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tabs** (![The 'More tabs' icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![The 'More Tools' icon](../media/more-tools-icon-light-theme.png)) button.
+
+1. Make sure the **Record network log** button in the upper left is selected (red).
+
+1. Refresh the page.  By default, the **All** filter button is selected, so all the webpage's resource files are listed in the **Network** tool, one row per resource file:
+
+   ![Webpage resource files listed in the Network Log, one resource file per row](../media/resources-network-resources.msft.png)
 
 1. Select a resource to view it.  For example, select the `network-tutorial` path to display `index.html`:
 
