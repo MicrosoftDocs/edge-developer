@@ -67,7 +67,7 @@ When you go to the **Network** tool and then refresh the page, all the webpage's
 
 ![Webpage resource files listed in the Network Log, one resource file per row](../media/resources-network-resources.msft.png)
 
-When **All** is selected as the resources filter, all the retrieved resource files for the current webpage are listed, in the lower left:
+1. Select a resource to view it.  For example, select the `network-tutorial` path to display `index.html`:
 
 ![Inspect a resource in the Network tool](../media/resources-network-response.msft.png)
 
