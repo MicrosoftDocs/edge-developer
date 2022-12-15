@@ -43,10 +43,17 @@ See also:
 <!-- ------------------------------ -->
 #### Class static members
 
-<!-- orig wording:
+<!--
+original wording:
 Runtimeclasses with static methods, properties, or events, are represented as properties of their namespace with the static methods, properties, and events as properties on that JavaScript object.
+
+that might mean:
+
+The runtime class that has static properties, methods, or events is a property of the namespace.  Each static property, method, or event is a property of the JavaScript Object.
+
+A `RuntimeClass` class that has static properties, methods, or events is represented as a property of the corresponding JavaScript namespace object.  The static methods, properties, and events are represented as properties on the JavaScript namespace object.
 -->
-A `RuntimeClass` class that has static methods, properties, or events is represented as a property of the corresponding JavaScript namespace object.  The static methods, properties, and events are represented as properties on the JavaScript namespace object.
+A runtime class that has static properties, static methods, or static events is represented as a property of the namespace.  Each static property, method, or event is represented as a property on that JavaScript object.
 
 For example, to call the static method `Windows.Foundation.Uri.EscapeComponent`, call:
 
