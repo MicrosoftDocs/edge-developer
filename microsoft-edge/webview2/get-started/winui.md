@@ -414,6 +414,36 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.source#microsoft-ui-xaml-controls-webview2-source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async#microsoft-ui-xaml-controls-webview2-ensurecorewebview2async) is initially called.
 
 
+<!-- ------------------------------ -->
+#### Setting DefaultBackgroundColor
+
+In WebView2 for WinUI 3, the `DefaultBackgroundColor` setting exists on the WebView2 XAML object.  For example:
+
+```csharp
+public MainWindow()
+{
+    this.InitializedComponent{};
+    MyWebView.DefaultBackgroundColor = Colors.LightBlue;
+}
+```
+
+![Setting the default background color in `MainWindow.xaml.cs` in Visual Studio](./winui-images/default-background-color.png)
+
+<!-- in WinUI3 Sample -->
+
+<!--
+PR: "Sample App for WinUI3/WinAppSDK"
+https://github.com/MicrosoftEdge/WebView2Samples/pull/161
+-->
+
+
+<!-- ------------------------------ -->
+#### Transparency
+
+WinUI 3 doesn't support transparent backgrounds.  See [Transparent background support for WebView2? · Issue #2992](https://github.com/microsoft/microsoft-ui-xaml/issues/2992).
+
+
+<!-- ------------------------------ -->
 #### API limitations
 
 The following interfaces aren't accessible in WinUI 3:
