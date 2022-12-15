@@ -422,7 +422,7 @@ In WebView2 for WinUI 3, the `DefaultBackgroundColor` setting exists on the WebV
 ```csharp
 public MainWindow()
 {
-    this.InitializedComponent{};
+    this.InitializeComponent();
     MyWebView.DefaultBackgroundColor = Colors.LightBlue;
 }
 ```
