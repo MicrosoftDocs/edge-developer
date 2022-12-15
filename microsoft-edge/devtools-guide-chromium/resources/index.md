@@ -128,7 +128,7 @@ You can use the **Sources** tool to view the webpage's resource files organized 
     |---|---|
     | `top` | The main document _browsing context_, such as a browser tab, a browser window, or a frame. See [Browsing context](https://developer.mozilla.org/en-US/docs/Glossary/Browsing_context) or [\<iframe\>: The Inline Frame element](https://developer.mozilla.org/docs/Web/HTML/Element/iframe). |
     | `microsoftedge.github.io` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `buttons.js` file is [https://microsoftedge.github.io/Demos/devtools-a11y-testing/buttons.js](https://microsoftedge.github.io/Demos/devtools-a11y-testing/buttons.js). |
-    | `css`, `photos` | Directories |
+    | `css`, `photos` | Directories. |
     | `(index)` | The main HTML document. |
     | `buttons.js` | A script to handle button presses on the page. |
 
@@ -141,6 +141,8 @@ You can use the **Sources** tool to view the webpage's resource files organized 
 ## Browse resource files sorted by filename in the Page tab of the Sources tool
 
 By default, the **Page** tab in the **Sources** tool groups resource files by folder.  To instead display all the resource files for each domain grouped together in a single alphabetized list:
+
+1. In a new window or tab, go to a webpage, such as the [Accessibility-testing features demo](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).  (The source files for that webpage are at [MicrosoftEdge / Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing).)
 
 1. In a new window or tab, go to a webpage, such as the [Accessibility-testing features demo](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).  (The source files for that webpage are at [MicrosoftEdge / Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing).)
 
