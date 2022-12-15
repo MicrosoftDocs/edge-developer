@@ -143,8 +143,6 @@ By default, the **Page** tab in the **Sources** tool groups resource files by fo
 
 1. In a new window or tab, go to a webpage, such as the [Accessibility-testing features demo](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).  (The source files for that webpage are at [MicrosoftEdge / Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing).)
 
-1. In a new window or tab, go to a webpage, such as the [Accessibility-testing features demo](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).  (The source files for that webpage are at [MicrosoftEdge / Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing).)
-
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
 1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![The More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
