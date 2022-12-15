@@ -107,7 +107,6 @@ For example, to go from the **Page** tab's resource list in the **Sources** tool
    If the **Reveal in Network panel** menuitem isn't listed, go to the **Network** tool, make sure the **Record network log** button in the upper left is selected (red), and then refresh the page.
 
 
-
 <!-- ====================================================================== -->
 ## Browse resource files by folder in the Page tab of the Sources tool
 
