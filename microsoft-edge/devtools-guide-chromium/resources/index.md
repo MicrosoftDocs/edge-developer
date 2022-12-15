@@ -109,7 +109,6 @@ For example, to go from the **Page** tab's resource list in the **Sources** tool
 
 
 
-
 <!-- ====================================================================== -->
 ## Browse resource files by folder in the Page tab of the Sources tool
 
