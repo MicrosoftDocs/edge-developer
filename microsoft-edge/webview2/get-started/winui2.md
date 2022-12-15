@@ -43,10 +43,12 @@ Follow the major Step sections in sequence, below.
 <!-- ------------------------------ -->
 #### About WinUI and WebView2
 
-In WinUI 2 or WinUI 3 apps, WebView2 is exposed as a XAML control.  After you embed the XAML control in your app as a named control, you can then refer to that XAML control within C# files.
+In WinUI 2 (UWP) apps, WebView2 is exposed as a XAML control.  After you embed the XAML control in your app as a named control, you can then refer to that XAML control within C# files.
 
 Only a subset of WebView2 interfaces/functions are exposed in WinUI:
+
 * The `WebView2` XAML object exposes the `CoreWebView2` interface, along with the most important functionality.
+
 * Interfaces such as `CoreWebView2Controller` are hidden, because WinUI takes care of the environment and window creation behind the scenes.
 
 See also [Xbox, HoloLens, and XAML limitations](#xbox-hololens-and-xaml-limitations) below.
