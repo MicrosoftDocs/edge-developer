@@ -77,7 +77,7 @@ In the **Network** tool, you can inspect the resource files that make up the cur
 
 1. Select a resource to view it.  For example, select the `network-tutorial` path to display `index.html`:
 
-![Inspect a resource in the Network tool](../media/resources-network-response.msft.png)
+   ![Inspect a resource in the Network tool](../media/resources-network-response.msft.png)
 
 The above screenshot shows `index.html`, for the `network-tutorial` path or folder that's selected in the lower left.  The screenshot shows the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/).  The source files for that page are at [MicrosoftEdge / Demos > network-tutorial](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial).
 
