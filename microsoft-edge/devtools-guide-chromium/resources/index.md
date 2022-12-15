@@ -106,7 +106,7 @@ For example, to go from the **Page** tab's resource list in the **Sources** tool
 
    ![The 'Reveal in Network panel' right-click menuitem on a resource file in the Page tab of the Sources tool](../media/resources-sources-page-reveal-in-network-panel.msft.png)
 
-   If the **Reveal in Network panel** menuitem isn't listed, go to the **Network** tool and then refresh the page.
+   If the **Reveal in Network panel** menuitem isn't listed, go to the **Network** tool, make sure the **Record network log** button in the upper left is selected (red), and then refresh the page.
 
 
 <!-- ====================================================================== -->
