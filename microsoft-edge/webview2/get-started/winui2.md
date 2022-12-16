@@ -376,14 +376,6 @@ Win32:
 
 On WinUI 2, transparency is achieved by setting the color to `00FFFFFF`.
 
-<!--
-See also:
-.NET:
-* [set color]()
-Win32:
-* [set color]()
--->
-
 
 <!-- ------------------------------ -->
 #### API limitations

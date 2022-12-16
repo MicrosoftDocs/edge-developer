@@ -427,15 +427,6 @@ public MainWindow()
 }
 ```
 
-![Setting the default background color in `MainWindow.xaml.cs` in Visual Studio](./winui-images/default-background-color.png)
-
-<!-- in WinUI3 Sample -->
-
-<!--
-PR: "Sample App for WinUI3/WinAppSDK"
-https://github.com/MicrosoftEdge/WebView2Samples/pull/161
--->
-
 
 <!-- ------------------------------ -->
 #### Transparency
