@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 12/13/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -24,7 +24,7 @@ ms.date: 05/04/2021
 
 Use the **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 
-This article only discusses the Progressive Web App features of the **Application** panel.  For help on the other panes in the **Application** panel, see [View page resources](../resources/index.md) and [View and edit local storage](../storage/localstorage.md).
+This article only discusses the Progressive Web App features of the **Application** panel.  For help on the other panes in the **Application** panel, see [View the resource files that make up a webpage](../resources/index.md) and [View and edit local storage](../storage/localstorage.md).
 
 See also [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps-chromium/index.md).
 
