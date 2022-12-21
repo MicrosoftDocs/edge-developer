@@ -1,6 +1,6 @@
 ---
-title: Edit files with Workspaces (Filesystem tab)
-description: How to save file changes made in DevTools to disk.
+title: Edit webpage files with a DevTools workspace
+description: How to save webpage file changes made in DevTools to disk.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -20,72 +20,68 @@ ms.date: 12/12/2022
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Edit files with Workspaces (Filesystem tab)
+# Edit webpage files with a DevTools workspace
 
-This tutorial provides hands-on practice in setting up and using a Workspace to edit files locally. After you add files to a Workspace, you can use DevTools to edit webpage source code and save these changes on your local computer. These changes can be kept after you refresh the webpage.
+This tutorial provides hands-on practice in setting up and using a workspace in DevTools. After you add files to a workspace changes that you make in your source code with DevTools are saved on your local computer. These changes are saved  after you refresh the webpage.
 
-You can use the following articles as a guide to webpage files, using DevTools and setting up a local web server.
+Before starting this tutorial, you can refresh your knowledge of the technologies used by reading the following articles.
+
 * [Use html, CSS, and JavaScript to build a web page](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web)
 * [Use DevTools to make basic changes to CSS](../css/index.md)
 * [Run a local HTTP web server](https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server)
 
 
 <!-- ====================================================================== -->
-## Overview
+## Introduction
 
-Workspaces let you edit a file in DevTools and then save that file as a local copy on your computer. The following prerequisites are for this tutorial.
+A DevTools workspace lets you save a change that you make to a local copy of the source code to the same file on   your computer. For this tutorial, you need to have  the following environment on your computer.
 
-* You have the demo source code on your desktop.
+* You have the source code for the demo website on your desktop.
 
-* You're running a local web server from the source code directory, so that the demo site is accessible at `localhost:8080`.
+* You are running a local web server from the source code directory, so that the site is accessible at `localhost:8080`.
 
-* You opened `localhost:8080` in Microsoft Edge, and you're using DevTools to change the CSS for the site.
-
-With Workspaces enabled, any CSS changes that you make are saved to the source code on your desktop.
+* You opened `localhost:8080` in Microsoft Edge, and you are using DevTools to change the website source code which includes the CSS, HTML, and JavaScript files. 
 
 
 <!-- ====================================================================== -->
-## Limitations
+#### Limitations
 
-If you're using a modern framework, it probably transforms your source code from a format that's easy to maintain into a format that's optimized to load and run as quickly as possible.
+If you’re  using a modern framework, it probably transforms your source code from a format that’s easy to maintain into a format that’s optimized to run as quickly as possible.
+A workspace is usually able to map the optimized code back to the original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS. However,  there’s  a lot of variation in how each framework uses source maps. **Note:** Devtools doesn't support all framework variations and the workspace feature doesn’t work with the Create React App framework.
 
-Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps).  But there's many variations between frameworks over how each framework uses source maps.  Devtools doesn't support all of these variations. **Note:** The Workspaces feature doesn't work with the Create React App framework.
-
-If you run into issues while using Workspaces with your framework of choice, or you can't get it working after a custom configuration, [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to exchange information with the rest of the DevTools community.
+If you run into issues while using workspaces with your framework of choice, or you can't get it working after a custom configuration, [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to exchange information with the rest of the DevTools community.
 
 
 <!-- ====================================================================== -->
-## Related feature: Local overrides
+#### Related feature: Overrides
 
-**Local Overrides** is a DevTools feature that's similar to Workspaces. Local Overrides lets you make changes to the webpage without changing any files on the web server. After you download the webpage source files you can test changes across webpage loads using the local copy of these files. To learn more about overrides, see [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md).
+**Overrides** is a DevTools feature that’s similar to a workspace. You can use an override when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you don't care about mapping your changes to the source code of the webpage. However, your changes aren’t saved when you refresh the webpage. **Overrides** let you store a local copy of the webpage files. When you refresh the page, Microsoft Edge loads the local copy of the server resource. To learn more about overrides, see [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md).
 
 <!--Todo: add section when content is ready  -->
 
 
 <!-- ====================================================================== -->
-## Step 1: Set up
 
-We'll set up the demo and then set up DevTools.
+## Set up the environment for the tutorial
+
+First, we’ll  set up the demo and then set up DevTools.
 
 #### Set up the demo
 
-1. [Open the demo source code page](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
+1. [Get the workspaces demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
 
-1. Create a `app` directory on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
+1. Create a `app` directory on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, this directory is referred to as `~/Desktop/app`.
 
-1. Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you can use whatever server you prefer.
+1. Install Node.js and npm. For more information, see [Install Node.js and Node Package Manager (npm)](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/install#step-4-install-nodejs-and-node-package-manager-npm)
+
+1. Start a local web server in `~/Desktop/app`. You can use the following commands to start up the web server.
 
    ```bash
    cd ~/Desktop/app
-   python -m SimpleHTTPServer # Python 2
+   npx http-server
    ```
    
-   ```bash
-   cd ~/Desktop/app
-   python -m http.server # Python 3
-   ```
-
-1. Open a tab in Microsoft Edge and navigate to the locally hosted version of the site.  You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
+1. Open a tab in Microsoft Edge and navigate to the locally hosted version of the site.  You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. <!-- I'm not sure what our policy is for linking out to Wikipedia: The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different. -->
 
    ![The DevTools Workspaces Demo](../media/workspaces-workspaces-demo.msft.png)
 
@@ -113,7 +109,9 @@ In the **Filesystem** tab, a green dot now appears next to `index.html`, `script
 
 
 <!-- ====================================================================== -->
-## Step 2: Save a CSS change to disk
+## Edit and save source code files
+
+#### Save a CSS change to disk
 
 1. Open `styles.css`.  The `color` property of `h1` elements is set to `fuchsia`.
 
@@ -135,30 +133,28 @@ The color of the `<h1>` element is still set to your favorite color.  The change
 
 
 <!-- ====================================================================== -->
-## Step 3: Save an HTML change to disk
+#### Save an HTML change to disk
 
-You can change HTML tagging using the Elements tool, but to be able to save the edits, we'll use the Sources tool.
+You can change HTML tagging using the **Elements** tool, but if you want to save your edits you need to use the **Sources** tool.
 
 
-#### Change HTML from the Elements Panel
+###### Try changing the HTML from the Elements panel
 
-You can make changes to the HTML content in the Element tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
-
-The DOM tree isn't the HTML source tagging.
-
-<!--### Try changing HTML from the Elements panel
+You can make changes to the HTML content using the **Elements** tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
 
 > [!WARNING]
 > The workflow that you are about to try doesn't work.  You are trying it now so that you don't waste time later trying to figure out why it isn't working.
 
 1. Select the **Elements** tool.
+
 1. Select and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.
 
    ![Attempt to change html from the DOM Tree of the Elements panel.](../media/workspaces-workspaces-demo-change-h1.msft.png)
 
 1. Open `~/Desktop/app/index.html` in a text editor.  The change that you just made doesn't appear.
-1. Refresh the page.  The page reverts to the original title.
 
+1. Refresh the page.  The page reverts to the original title.
+<!--
 #### Optional: Why it isn't working
 
 > [!NOTE]
@@ -174,9 +170,9 @@ The DOM tree isn't the HTML source tagging.
 In short, the **DOM Tree** `!==` HTML.
 -->
 
-#### Change HTML from the Sources tool
+###### Change HTML from the Sources tool
 
-If you want to save a change to the HTML of the webpage, use the **Sources** tool.
+If you want to save a change to the webpage HTML, use the **Sources** tool.
 
 1. Navigate to the **Sources** tool.
 
@@ -196,7 +192,7 @@ If you want to save a change to the HTML of the webpage, use the **Sources** too
 
 
 <!-- ====================================================================== -->
-## Step 4: Save a JavaScript change to disk
+#### Save a JavaScript change to disk
 
 The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console** panel, while editing files.  The **Quick source** tool gives you just the editor from the **Sources** tool, while any tool is open.
 
@@ -236,7 +232,7 @@ To open the DevTools code editor alongside other tools:
 <!-- ====================================================================== -->
 ## Next steps
 
-Use what you have learned in this tutorial to set up Workspaces in your own project.
+Use what you’ve  learned in this tutorial to set up and use DevTools workspaces in your own project.
 
 
 <!-- ====================================================================== -->
