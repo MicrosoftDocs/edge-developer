@@ -35,7 +35,7 @@ Before starting this tutorial, you can refresh your knowledge of the technologie
 
   * Using Node.js (used for this tutorial): [Set up a localhost server](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/install#step-6-set-up-a-localhost-server)
   
-  * Using Python: [Running a simple local HTTP server]( https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server#running_a_simple_local_http_server).
+  * Using Python: [Running a simple local HTTP server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server#running_a_simple_local_http_server).
 
 
 <!-- ====================================================================== -->
@@ -95,6 +95,8 @@ First, we’ll set up the demo files and then set up DevTools.
    ![The DevTools Workspaces Demo](../media/workspaces-workspaces-demo.msft.png)
 
 #### Set up DevTools
+
+1. 
 
 1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) to open the **Console** panel of DevTools.
 
