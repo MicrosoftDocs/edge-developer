@@ -26,9 +26,16 @@ This tutorial provides hands-on practice in setting up and using a workspace in 
 
 Before starting this tutorial, you can refresh your knowledge of the technologies used by reading the following articles.
 
-* [Use html, CSS, and JavaScript to build a web page](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web)
-* [Use DevTools to make basic changes to CSS](../css/index.md)
-* [Run a local HTTP web server](https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server)
+
+* Use html, CSS, and JavaScript to build a web page. See [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
+
+* Use DevTools to make basic changes to CSS. See [Get started viewing and changing CSS]( https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/)
+
+* Run a local HTTP web server. See: 
+
+  * Using Node.js (used for this tutorial): [Set up a localhost server](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/install#step-6-set-up-a-localhost-server)
+  
+  * Using Python: [Running a simple local HTTP server]( https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server#running_a_simple_local_http_server).
 
 
 <!-- ====================================================================== -->
@@ -47,7 +54,7 @@ A DevTools workspace lets you save a change that you make to a local copy of the
 #### Limitations
 
 If you’re  using a modern framework, it probably transforms your source code from a format that’s easy to maintain into a format that’s optimized to run as quickly as possible.
-A workspace is usually able to map the optimized code back to the original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS. However,  there’s  a lot of variation in how each framework uses source maps. **Note:** Devtools doesn't support all framework variations and the workspace feature doesn’t work with the Create React App framework.
+A workspace is usually able to map the optimized code back to the original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS. However, there’s a lot of variation in how each framework uses source maps. **Note:** Devtools doesn't support every framework variation and the workspace feature doesn’t work with the Create React App framework.
 
 If you run into issues while using workspaces with your framework of choice, or you can't get it working after a custom configuration, [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to exchange information with the rest of the DevTools community.
 
@@ -55,7 +62,9 @@ If you run into issues while using workspaces with your framework of choice, or 
 <!-- ====================================================================== -->
 #### Related feature: Overrides
 
-**Overrides** is a DevTools feature that’s similar to a workspace. You can use an override when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you don't care about mapping your changes to the source code of the webpage. However, your changes aren’t saved when you refresh the webpage. **Overrides** let you store a local copy of the webpage files. When you refresh the page, Microsoft Edge loads the local copy of the server resource. To learn more about overrides, see [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md).
+**Overrides** is a DevTools feature that’s similar to a workspace. You can use an override when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you don't care about mapping your changes to the source code of the webpage. However, your changes aren’t saved when you refresh the webpage. 
+
+The **Overrides** feature lets you store a local copy of the webpage files on the server. When you refresh the page, Microsoft Edge loads the local copy of files instead of the files on the server. To learn more about overrides, see [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md).
 
 <!--Todo: add section when content is ready  -->
 
@@ -70,7 +79,7 @@ First, we’ll set up the demo files and then set up DevTools.
 
 1. [Get the workspaces demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
 
-1. Create a `app` directory on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, this directory is referred to as `~/Desktop/app`.
+1. Create a `app` directory on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, this directory is referred to as `~/Desktop/app`. <!-- Michael: I don't know the rationale behind using the ~/Desktop/app construct.   --> 
 
 1. Install Node.js and npm. For more information, see [Install Node.js and Node Package Manager (npm)](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/install#step-4-install-nodejs-and-node-package-manager-npm)
 
@@ -81,7 +90,7 @@ First, we’ll set up the demo files and then set up DevTools.
    npx http-server
    ```
    
-1. Open a tab in Microsoft Edge and navigate to the locally hosted version of the site.  You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. <!-- I'm not sure what our policy is for linking out to Wikipedia: The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different. -->
+1. Open a tab in Microsoft Edge and go to the locally hosted version of the site. You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different. <!-- Michael: I'm not sure what our policy is for linking out to Wikipedia. -->
 
    ![The DevTools Workspaces Demo](../media/workspaces-workspaces-demo.msft.png)
 
