@@ -94,7 +94,7 @@ First, we’ll set up the demo files and then set up DevTools.
 
    ![The DevTools Workspaces Demo](../media/workspaces-workspaces-demo.msft.png)
 
-#### Set up DevTools
+#### Prepare DevTools for file editing
 
 1. 
 
