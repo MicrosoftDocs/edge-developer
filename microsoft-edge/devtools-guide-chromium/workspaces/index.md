@@ -64,7 +64,7 @@ If you run into issues while using workspaces with your framework of choice, or 
 
 ## Set up the environment for the tutorial
 
-First, we’ll  set up the demo and then set up DevTools.
+First, we’ll set up the demo files and then set up DevTools.
 
 #### Set up the demo
 
@@ -129,7 +129,7 @@ In the **Filesystem** tab, a green dot now appears next to `index.html`, `script
 
 1. Refresh the page.
 
-The color of the `<h1>` element is still set to your favorite color.  The change remains across a refresh, because when you made the change DevTools saved the change to disk.  And then, when you refreshed the page, your local server served the modified copy of the file from disk.
+The color of the `<h1>` element is still set to your favorite color.  The change remains across a refresh, because when you made the change DevTools saved the change to disk. When you refreshed the page, your local server served the modified copy of the file from disk.
 
 
 <!-- ====================================================================== -->
@@ -143,13 +143,13 @@ You can change HTML tagging using the **Elements** tool, but if you want to save
 You can make changes to the HTML content using the **Elements** tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
 
 > [!WARNING]
-> The workflow that you are about to try doesn't work.  You are trying it now so that you don't waste time later trying to figure out why it isn't working.
+> The workflow that you are about to try doesn't work. You are trying it now so that you don't waste time later trying to figure out why it isn't working.
 
 1. Select the **Elements** tool.
 
 1. Select and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.
 
-   ![Attempt to change html from the DOM Tree of the Elements panel.](../media/workspaces-workspaces-demo-change-h1.msft.png)
+   ![Attempt to change html from the DOM Tree of the Elements panel.](../media/workspaces-workspaces-demo-sources-page-h1.msft.png)
 
 1. Open `~/Desktop/app/index.html` in a text editor.  The change that you just made doesn't appear.
 
