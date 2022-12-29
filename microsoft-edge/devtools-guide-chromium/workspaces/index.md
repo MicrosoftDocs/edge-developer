@@ -149,7 +149,7 @@ The following steps show how to make a change in the CSS file and save it to dis
 
 1. Change the value of the `color` property of the `<h1>` element to your favorite color.  To do this, select the `<h1>` element in the **DOM Tree**. Select `fucshia`, type the new color, and then select it from the color list shown in the next screenshot.
 
-![Change the color property in styles.css.](../media/workspaces-workspaces-demo-elements-styles-css-pick-color.msft.png)
+   ![Change the color property in styles.css.](../media/workspaces-workspaces-demo-elements-styles-css-pick-color.msft.png)
 
 1. Open `styles.css` in a text editor.  The `color` property is now set to the new color, which is orange in this example.
 
