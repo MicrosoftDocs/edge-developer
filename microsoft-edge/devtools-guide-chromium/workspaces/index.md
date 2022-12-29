@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/12/2022
+ms.date: 12/29/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -103,7 +103,7 @@ Node.js option:
    python -m http.server # Python 3
    ```
 
-1. Open a tab in Microsoft Edge and go to the locally hosted version of the site. You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. Note: The default port number for the Python sever option is `8000`. The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different. <!-- Michael: I'm not sure what our policy is for linking out to Wikipedia. -->
+1. Open a tab in Microsoft Edge and go to the locally hosted version of the site. You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. **Note:** The default port number for the Python sever option is `8000`. The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different. <!-- Michael: I'm not sure what our policy is for linking out to Wikipedia. -->
 
    ![The DevTools Workspaces Demo](../media/workspaces-workspaces-demo.msft.png)
 
@@ -135,36 +135,37 @@ In the **Filesystem** tab, a green dot now appears next to the `index.html`, `sc
 
 #### Save a CSS change to disk
 
-1. Open `styles.css`.  The `color` property of `h1` elements is set to `fuchsia`.
+The following steps show how to make a change in the CSS file and save it to disk.
+
+1. Open `styles.css`.  The `color` property of the `h1` element is set to `fuchsia`.
 
    ![View styles.css in a text editor.](../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png)
 
 1. Select the **Elements** tool.
 
-1. Change the value of the `color` property of the `<h1>` element to your favorite color.  To do this, select the `<h1>` element in the **DOM Tree**.
-
-1. Click the fushia-colored swatch to open the color picker and pick a new color as your favorite.
-
-   ![Use color picker to change color property.](../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png)
-<!--- workspaces-workspaces-demo-elements-styles-css-pick-color.msft.png -->
-
-   The CSS rules that are applied to the `<h1>` element are shown in the **Styles** pane.  The dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.
+   The CSS rules that are applied to the `<h1>` element are shown in the **Styles** pane.  The page indicator next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.
 
    ![The indicator that the file is linked.](../media/workspaces-workspaces-demo-elements-styles-css.msft.png)
 
-1. Open `styles.css` in a text editor.  The `color` property is now set to your favorite color.
+1. Change the value of the `color` property of the `<h1>` element to your favorite color.  To do this, select the `<h1>` element in the **DOM Tree**. Select `fucshia`, type the new color, and then select it from the color list shown in the next screenshot.
+
+![Change the color property in styles.css.](../media/workspaces-workspaces-demo-elements-styles-css-pick-color.msft.png)
+
+1. Open `styles.css` in a text editor.  The `color` property is now set to the new color, which is orange in this example.
 
 1. Refresh the page.
 
-The color of the `<h1>` element is still set to your favorite color.  The change remains across a refresh, because when you made the change DevTools saved the change to disk. When you refreshed the page, your local server served the modified copy of the file from disk.
+The color of the `<h1>` element is still set to the new color.  The change remains across a refresh, because when you made the change DevTools saved the change to disk. When you refreshed the page, your local server served the modified copy of the file from disk.
 
+> [!TIP]
+> You can also change the color by clicking the fucshia-colored swatch to open the color picker to pick a new color. The HEX value for the color you pick is the color name.
 
 <!-- ====================================================================== -->
 #### Save an HTML change to disk
 
 You can change HTML tagging using the **Elements** tool, but if you want to save your edits you need to use the **Sources** tool.
 
-
+<!---  Michael: following section was commented out in first version of doc. I uncommented it.  --->
 ###### Try changing the HTML from the Elements panel
 
 You can make changes to the HTML content using the **Elements** tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
@@ -180,7 +181,7 @@ You can make changes to the HTML content using the **Elements** tool, but your c
 
 1. Open `~/Desktop/app/index.html` in a text editor.  The change that you just made doesn't appear.
 
-1. Refresh the page.  The page reverts to the original title.
+1. Refresh the page.  The page reverts to the original title. 
 <!--
 #### Optional: Why it isn't working
 
@@ -201,9 +202,9 @@ In short, the **DOM Tree** `!==` HTML.
 
 If you want to save a change to the webpage HTML, use the **Sources** tool.
 
-1. Navigate to the **Sources** tool.
+1. Click the **Sources** tab.
 
-1. In the **Navigator** pane (on the left), click the **Page** tab.
+1. In the **Navigator** pane click the **Page** tab beside **Filesystem**. If the **Page** tab isn't showing, click `>>` (More tabs) and then select **Page**.
 
 1. Click **(index)**.  The HTML for the page opens.
 
@@ -215,7 +216,7 @@ If you want to save a change to the webpage HTML, use the **Sources** tool.
 
    ![Change HTML from the Sources tool.](../media/workspaces-workspaces-demo-sources-page-h1.msft.png)
 
-1. Open `~/Desktop/app/index.html`.  The `<h1>` element contains the new text.
+1. Open `~/Desktop/app/index.html` in a text editor.  The `<h1>` element contains the new text.
 
 
 <!-- ====================================================================== -->
@@ -242,10 +243,9 @@ To open the DevTools code editor alongside other tools:
    > [!NOTE]
    > The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.
 
-1. Add the following code to the bottom of **script.js** using the **Quick source** tool.
+1. Use the **Quick source** tool to add the following code to the bottom of **script.js**.
 
     ```javascript
-    console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```
 
@@ -253,7 +253,7 @@ To open the DevTools code editor alongside other tools:
 
 1. Refresh the page.  The link on the page is now italicized.
 
-![The link on the page is now italicized.](../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png)
+   ![The link on the page is now italicized.](../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png)
 
 
 <!-- ====================================================================== -->
