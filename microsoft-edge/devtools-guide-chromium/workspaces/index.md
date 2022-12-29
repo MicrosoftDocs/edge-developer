@@ -29,7 +29,7 @@ Before starting this tutorial, you can refresh your knowledge of the technologie
 
 * Use html, CSS, and JavaScript to build a web page. See [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
 
-* Use DevTools to make basic changes to CSS. See [Get started viewing and changing CSS]( https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/)
+* Use DevTools to make basic changes to CSS. See [Get started viewing and changing CSS](/microsoft-edge/devtools-guide-chromium/css/)
 
 * Run a local HTTP web server. See: 
 
