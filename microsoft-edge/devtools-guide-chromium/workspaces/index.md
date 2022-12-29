@@ -45,7 +45,7 @@ A DevTools workspace lets you save a change that you make to a local copy of the
 
 * You have the source code for the demo website on your desktop.
 
-* You are running a local web server from the source code directory, so that the site is accessible at `localhost:8080`.
+* You are running a local web server from the source code directory, so that the site is accessible at `localhost:8080`. Note: If you use the Python server option, the default port number is `8000`.
 
 * You opened `localhost:8080` in Microsoft Edge, and you are using DevTools to change the website source code which includes the CSS, HTML, and JavaScript files. 
 
@@ -83,26 +83,37 @@ First, we’ll set up the demo files and then set up DevTools.
 
 1. Install Node.js and npm. For more information, see [Install Node.js and Node Package Manager (npm)](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/install#step-4-install-nodejs-and-node-package-manager-npm)
 
-1. Start a local web server in `~/Desktop/app`. You can use the following commands to start up the web server.
-
+1. Start a local web server in `~/Desktop/app`. Go to the `app` folder and then run one of the following commands from the command prompt to start up the web server.<br>
+Node.js option:
    ```bash
+   # Node.js option
    cd ~/Desktop/app
-   npx http-server
+   npx http-server # Node.js
    ```
-   
-1. Open a tab in Microsoft Edge and go to the locally hosted version of the site. You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different. <!-- Michael: I'm not sure what our policy is for linking out to Wikipedia. -->
+  
+   ``` bash
+   # Python option 1
+   cd ~/Desktop/app
+   python -m SimpleHTTPServer # Python 2
+   ```
+  
+   ``` bash
+   # Python option 2
+   cd ~/Desktop/app
+   python -m http.server # Python 3
+   ```
+
+1. Open a tab in Microsoft Edge and go to the locally hosted version of the site. You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. Note: The default port number for the Python sever option is `8000`. The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different. <!-- Michael: I'm not sure what our policy is for linking out to Wikipedia. -->
 
    ![The DevTools Workspaces Demo](../media/workspaces-workspaces-demo.msft.png)
 
 #### Prepare DevTools for file editing
 
-1. 
-
 1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) to open the **Console** panel of DevTools.
 
    ![The Console panel.](../media/workspaces-workspaces-demo-console.msft.png)
 
-1. Navigate to the **Sources** tool.
+1. Click the **Sources** tab.
 
 1. In the **Navigator** pane (on the left), click the **Filesystem** tab.
 
@@ -110,11 +121,11 @@ First, we’ll set up the demo files and then set up DevTools.
 
 1. Click **Add Folder To Workspace**.
 
-1. Type `~/Desktop/app`.
+1. When File Explorer opens, type `~/Desktop/app` in the **Folder:** prompt.
 
 1. Click **Allow** to give DevTools permission to read and write to the directory.
 
-In the **Filesystem** tab, a green dot now appears next to `index.html`, `script.js`, and `styles.css`.  A green dot indicates that DevTools has established a mapping between a network resource of the page, and the file in `~/Desktop/app`.
+In the **Filesystem** tab, a green dot now appears next to the `index.html`, `script.js`, and `styles.css` files.  A green dot indicates that DevTools has established a mapping between a network resource of the page, and the file in `~/Desktop/app`.
 
 ![The Filesystem tab now indicates a mapping between the local files and the network ones.](../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png)
 
@@ -132,11 +143,16 @@ In the **Filesystem** tab, a green dot now appears next to `index.html`, `script
 
 1. Change the value of the `color` property of the `<h1>` element to your favorite color.  To do this, select the `<h1>` element in the **DOM Tree**.
 
-   The CSS rules that are applied to the `<h1>` element are shown in the **Styles** pane.  The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.
+1. Click the fushia-colored swatch to open the color picker and pick a new color as your favorite.
 
-   ![The green indicator that the file is linked.](../media/workspaces-workspaces-demo-elements-styles-css.msft.png)
+   ![Use color picker to change color property.](../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png)
+<!--- workspaces-workspaces-demo-elements-styles-css-pick-color.msft.png -->
 
-1. Open `styles.css` in a text editor again.  The `color` property is now set to your favorite color.
+   The CSS rules that are applied to the `<h1>` element are shown in the **Styles** pane.  The dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.
+
+   ![The indicator that the file is linked.](../media/workspaces-workspaces-demo-elements-styles-css.msft.png)
+
+1. Open `styles.css` in a text editor.  The `color` property is now set to your favorite color.
 
 1. Refresh the page.
 
@@ -158,7 +174,7 @@ You can make changes to the HTML content using the **Elements** tool, but your c
 
 1. Select the **Elements** tool.
 
-1. Select and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.
+1. Select and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I Love Cake`.
 
    ![Attempt to change html from the DOM Tree of the Elements panel.](../media/workspaces-workspaces-demo-sources-page-h1.msft.png)
 
@@ -191,7 +207,7 @@ If you want to save a change to the webpage HTML, use the **Sources** tool.
 
 1. Click **(index)**.  The HTML for the page opens.
 
-1. Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  Review the following figure.
+1. Replace `<h1>Workspaces Demo</h1>` with `<h1>I Love Cake</h1>`.  The demo title changes.
 
 1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
 
@@ -209,17 +225,17 @@ The main place to use the code editor of DevTools is the **Sources** tool.  But 
 
 To open the DevTools code editor alongside other tools:
 
-1. Navigate to the **Elements** tool.
+1. Select the **Elements** tool.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The **Command Menu** opens.
+1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-1. Type `quick`, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
+1. Type `quick` at the **Run** prompt, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
 
    ![Open the 'Quick source' tool by using the Command Menu.](../media/workspaces-workspaces-demo-search-show-quick-source.msft.png)
 
-1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog, as shown below.
+1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog, shown in the next screenshot.
 
-1. Type `script`, then select **app/script.js**.
+1. Type `script` at the **Open** prompt, then select **app/script.js**.
 
    ![Open script.js using the Open File dialog.](../media/workspaces-workspaces-demo-search-script.msft.png)
 
