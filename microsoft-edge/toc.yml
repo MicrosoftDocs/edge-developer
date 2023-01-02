@@ -772,70 +772,87 @@
         - name: DevTools for Visual Studio Code
           items:
 
-            # was long article, now firstchild/landing page
             - name: DevTools extension for Visual Studio Code
               href: visual-studio-code/microsoft-edge-devtools-extension.md
               displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
 
-            - name: Installing the DevTools extension for Visual Studio Code
-              href: visual-studio-code/microsoft-edge-devtools-extension/install.md
-              displayName: installing, setup
+            - name: Get started
+              items:
+                - name: Installing the DevTools extension for Visual Studio Code
+                  href: visual-studio-code/microsoft-edge-devtools-extension/install.md
+                  displayName: installing, setup
 
-            - name: Get started using the DevTools extension for Visual Studio Code
-              href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
-              displayName: tutorial, demo to do
+                - name: Get started using the DevTools extension for Visual Studio Code
+                  href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
+                  displayName: tutorial, demo to do
 
-            - name: Opening DevTools and the DevTools browser
-              href: visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md
-              displayName: 
+                - name: Get started by right-clicking an HTML file
+                  href: visual-studio-code/microsoft-edge-devtools-extension/get-started-right-click-html.md
+                  displayName: 
 
-            - name: Integration with Visual Studio Code debugging
-              href: visual-studio-code/microsoft-edge-devtools-extension/debugging-a-webpage.md
-              displayName: 
+                - name: Get started by clicking the Launch Instance button
+                  href: visual-studio-code/microsoft-edge-devtools-extension/get-started-launch-instance.md
+                  displayName: 
 
-            - name: Opening source files from the Elements tool
-              href: visual-studio-code/microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md
-              displayName: 
+                - name: Get started by clicking the Launch Project button
+                  href: visual-studio-code/microsoft-edge-devtools-extension/get-started-launch-project.md
+                  displayName: 
 
-            - name: Inline and live issue analysis
-              href: visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
-              displayName: 
+                - name: Opening DevTools and the DevTools browser
+                  href: visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md
+                  displayName: 
 
-            - name: Device and state emulation
-              href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
-              displayName: 
+            - name: Tools and features
+              items:
+                - name: Integration with Visual Studio Code debugging
+                  href: visual-studio-code/microsoft-edge-devtools-extension/debugging-a-webpage.md
+                  displayName: 
 
-            - name: Update .css files from within the Styles tool (CSS mirror editing)
-              href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
-              displayName: Syncing live changes from the Styles tool by using CSS mirror editing # previous title
+                - name: Opening source files from the Elements tool
+                  href: visual-studio-code/microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md
+                  displayName: 
 
-            - name: Network tool integration
-              href: visual-studio-code/microsoft-edge-devtools-extension/network-tool-integration.md
-              displayName: 
+                - name: Inline and live issue analysis
+                  href: visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
+                  displayName: 
 
-            - name: Console integration
-              href: visual-studio-code/microsoft-edge-devtools-extension/console-integration.md
-              displayName: 
+                - name: Device and state emulation
+                  href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
+                  displayName: 
 
-            - name: Application tool integration
-              href: visual-studio-code/microsoft-edge-devtools-extension/application-tool-integration.md
-              displayName: 
+                - name: Update .css files from within the Styles tool (CSS mirror editing)
+                  href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
+                  displayName: Syncing live changes from the Styles tool by using CSS mirror editing # previous title
 
-            - name: Changing the extension settings
-              href: visual-studio-code/microsoft-edge-devtools-extension/change-extension-settings.md
-              displayName: 
+                - name: Network tool integration
+                  href: visual-studio-code/microsoft-edge-devtools-extension/network-tool-integration.md
+                  displayName: 
 
-            - name: The launch.json file for the DevTools extension
-              href: visual-studio-code/microsoft-edge-devtools-extension/launch-json.md
-              displayName: 
+                - name: Console integration
+                  href: visual-studio-code/microsoft-edge-devtools-extension/console-integration.md
+                  displayName: 
 
-            - name: Using an external browser window
-              href: visual-studio-code/microsoft-edge-devtools-extension/external-browser-window.md
-              displayName: 
+                - name: Application tool integration
+                  href: visual-studio-code/microsoft-edge-devtools-extension/application-tool-integration.md
+                  displayName: 
 
-            - name: Troubleshooting the DevTools extension
-              href: visual-studio-code/microsoft-edge-devtools-extension/troubleshooting.md
-              displayName: error messages
+            - name: Customize
+              items:
+                - name: Changing the extension settings
+                  href: visual-studio-code/microsoft-edge-devtools-extension/change-extension-settings.md
+                  displayName: 
+
+                - name: The launch.json file for the DevTools extension
+                  href: visual-studio-code/microsoft-edge-devtools-extension/launch-json.md
+                  displayName: 
+
+                - name: Using an external browser window
+                  href: visual-studio-code/microsoft-edge-devtools-extension/external-browser-window.md
+                  displayName: 
+
+                - name: Troubleshooting the DevTools extension
+                  href: visual-studio-code/microsoft-edge-devtools-extension/troubleshooting.md
+                  displayName: error messages
 
             - name: Getting in touch with the Microsoft Edge DevTools Extension team
               href: visual-studio-code/microsoft-edge-devtools-extension/contact-devtools-extension-team.md
@@ -1187,6 +1204,10 @@
                 - name: Call native-side WinRT code from web-side code
                   href: webview2/how-to/winrt-from-js.md
                   displayName: AddHostObjectToScript, host objects
+
+            - name: Using frames
+              href: webview2/concepts/frames.md
+              displayName: Using frames in WebView2 apps, iframe # full title
 
             # updated h2: Experimental APIs, added a 2nd, new h3:
             - name: Understand the different WebView2 SDK versions
