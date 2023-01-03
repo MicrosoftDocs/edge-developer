@@ -41,7 +41,7 @@ Before starting this tutorial, you can refresh your knowledge of the technologie
 <!-- ====================================================================== -->
 ## Introduction
 
-A DevTools workspace lets you save a change that you make to a local copy of the source code to the same file on   your computer. For this tutorial, you need to have  the following environment on your computer.
+A DevTools _workspace_ lets you save changes that you make to a local copy of the source code to the same file on your computer. For this tutorial, you need to have the following environment on your computer:
 
 * You have the source code for the demo website on your desktop.
 
