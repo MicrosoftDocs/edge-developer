@@ -54,7 +54,9 @@ A DevTools _workspace_ lets you save changes that you make to a local copy of th
 #### Limitations
 
 If you're  using a modern framework, it probably transforms your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.
-A workspace is usually able to map the optimized code back to the original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS. However, there’s a lot of variation in how each framework uses source maps. **Note:** Devtools doesn't support every framework variation and the workspace feature doesn’t work with the Create React App framework.
+A workspace is usually able to map the optimized code back to the original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS. However, there's a lot of variation in how each framework uses source maps.
+
+**Note:** DevTools doesn't support every framework variation, and the workspace feature doesn't work with the Create React App framework.
 
 If you run into issues while using workspaces with your framework of choice, or you can't get it working after a custom configuration, [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to exchange information with the rest of the DevTools community.
 
@@ -73,7 +75,7 @@ The **Overrides** feature lets you store a local copy of the webpage files on th
 
 ## Set up the environment for the tutorial
 
-First, we’ll set up the demo files and then set up DevTools.
+We'll set up the demo files, and then set up DevTools.
 
 #### Set up the demo
 
@@ -103,7 +105,7 @@ Node.js option:
    python -m http.server # Python 3
    ```
 
-1. Open a tab in Microsoft Edge and go to the locally hosted version of the site. You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. **Note:** The default port number for the Python sever option is `8000`. The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different. <!-- Michael: I'm not sure what our policy is for linking out to Wikipedia. -->
+1. Open a tab in Microsoft Edge and go to the locally hosted version of the site. You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. **Note:** The default port number for the Python server option is `8000`. The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
 
    ![The DevTools Workspaces Demo](../media/workspaces-workspaces-demo.msft.png)
 
@@ -121,7 +123,7 @@ Node.js option:
 
 1. Click **Add Folder To Workspace**.
 
-1. When File Explorer opens, type `~/Desktop/app` in the **Folder:** prompt.
+1. When File Explorer opens, type the path (such as `~/Desktop/app`) in the **Folder:** prompt.
 
 1. Click **Allow** to give DevTools permission to read and write to the directory.
 
@@ -143,7 +145,7 @@ The following steps show how to make a change in the CSS file and save it to dis
 
 1. Select the **Elements** tool.
 
-   The CSS rules that are applied to the `<h1>` element are shown in the **Styles** pane.  The page indicator next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.
+   The CSS rules that are applied to the `<h1>` element are shown in the **Styles** pane.  The page indicator next to `styles.css:1` means that any changes that you make are mapped to `~/Desktop/app/styles.css`.
 
    ![The indicator that the file is linked.](../media/workspaces-workspaces-demo-elements-styles-css.msft.png)
 
@@ -155,10 +157,9 @@ The following steps show how to make a change in the CSS file and save it to dis
 
 1. Refresh the page.
 
-The color of the `<h1>` element is still set to the new color.  The change remains across a refresh, because when you made the change DevTools saved the change to disk. When you refreshed the page, your local server served the modified copy of the file from disk.
+The color of the `<h1>` element is still set to the new color.  The change remains across a refresh, because when you made the change, DevTools saved the change to disk. When you refreshed the page, your local server served the modified copy of the file from disk.
 
-> [!TIP]
-> You can also change the color by clicking the fucshia-colored swatch to open the color picker to pick a new color. The HEX value for the color you pick is the color name.
+**Tip:** You can also change the color by clicking the fucshia-colored swatch to open the color picker to pick a new color. The HEX value for the color you pick is the color name.
 
 <!-- ====================================================================== -->
 #### Save an HTML change to disk
@@ -177,7 +178,7 @@ You can make changes to the HTML content using the **Elements** tool, but your c
 
 1. Select and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I Love Cake`.
 
-   ![Attempt to change html from the DOM Tree of the Elements panel.](../media/workspaces-workspaces-demo-sources-page-h1.msft.png)
+   ![Attempting to change HTML from the DOM tree in the Elements tool](../media/workspaces-workspaces-demo-sources-page-h1.msft.png)
 
 1. Open `~/Desktop/app/index.html` in a text editor.  The change that you just made doesn't appear.
 
@@ -204,7 +205,7 @@ If you want to save a change to the webpage HTML, use the **Sources** tool.
 
 1. Click the **Sources** tab.
 
-1. In the **Navigator** pane click the **Page** tab beside **Filesystem**. If the **Page** tab isn't showing, click `>>` (More tabs) and then select **Page**.
+1. In the **Navigator** pane, click the **Page** tab beside **Filesystem**. If the **Page** tab isn't showing, click `>>` (More tabs) and then select **Page**.
 
 1. Click **(index)**.  The HTML for the page opens.
 
@@ -253,13 +254,13 @@ To open the DevTools code editor alongside other tools:
 
 1. Refresh the page.  The link on the page is now italicized.
 
-   ![The link on the page is now italicized.](../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png)
+   ![The link on the page is now italicized](../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png)
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
-Use what you’ve  learned in this tutorial to set up and use DevTools workspaces in your own project.
+Use what you've learned in this tutorial to set up and use DevTools workspaces in your own project.
 
 
 <!-- ====================================================================== -->
