@@ -6,7 +6,80 @@ fullName: SharedBufferReceivedEvent
 summary: >-
   Event object for the `chrome.webview.sharedbufferreceived` event. This event is dispatched when
   `CoreWebView2.PostSharedBufferToScript` is successfully called.
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  If we want to send data to script for one time read only consumption.
+
+  /**
+   * For Example, if we want to send data to script for one time read only consumption,
+   * 
+   * In native host app code, set data into the shared memory.
+   */
+  wil::com_ptr<ICoreWebView2ExperimentalEnvironment10> environment;
+  CHECK_FAILURE(
+      m_appWindow->GetWebViewEnvironment()->QueryInterface(IID_PPV_ARGS(&environment)));
+
+  wil::com_ptr<ICoreWebView2ExperimentalSharedBuffer> sharedBuffer;
+  CHECK_FAILURE(environment->CreateSharedBuffer(bufferSize, &sharedBuffer));
+  // Set data into the shared memory via IStream.
+  wil::com_ptr<IStream> stream;
+  CHECK_FAILURE(sharedBuffer->OpenStream(&stream));
+  CHECK_FAILURE(stream->Write(data, sizeof(data), nullptr));
+  PCWSTR additionalDataAsJson = L"{\"myBufferType\":\"bufferType1\"}";
+  if (fromFrame)
+  {
+      m_webviewFrame4->PostSharedBufferToScript(
+          sharedBuffer.get(), COREWEBVIEW2_SHARED_BUFFER_ACCESS_READ_ONLY,
+          additionalDataAsJson);
+  }
+  else
+  {
+      m_webView18->PostSharedBufferToScript(
+          sharedBuffer.get(), COREWEBVIEW2_SHARED_BUFFER_ACCESS_READ_ONLY,
+          additionalDataAsJson);
+  }
+  // Explicitly close the one time shared buffer to ensure that the resource is released.
+  sharedBuffer->Close();
+
+  /**
+   * In the HTML document, subscribe to and handle sharedbufferreceived event.
+   */
+
+  window.chrome.webview.addEventListener("sharedbufferreceived", e => {
+      SharedBufferReceived(e);});
+
+  let readOnlySharedBuffer;
+  function ShowReadOnlySharedBuffer() {
+      if (readOnlySharedBuffer) {
+          DisplaySharedBufferData(readOnlySharedBuffer);
+      } else {
+          // Post a web message to ask host to share the one time read only buffer.
+          chrome.webview.postMessage("RequestOneTimeShareBuffer");
+      }
+  }
+
+  function DisplaySharedBufferData(buffer) {
+      document.getElementById("shared-buffer-data").value =
+          new TextDecoder().decode(new Uint8Array(buffer));
+  }
+
+  function SharedBufferReceived(e) {
+      if (e.additionalData && e.additionalData.myBufferType == "bufferType1") {
+          readOnlySharedBuffer = e.getBuffer();
+      } else {
+          sharedBuffer = e.getBuffer();
+      }
+      DisplaySharedBufferData(e.getBuffer());
+  }
+
+  function ReleaseBuffer(buffer) {
+      window.chrome.webview.releaseBuffer(buffer);
+  }
+  ```
 isPreview: false
 isDeprecated: false
 type: class
