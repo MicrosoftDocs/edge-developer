@@ -1,11 +1,11 @@
 ---
-title: Edit webpage files with a DevTools workspace
+title: Edit webpage files using a DevTools workspace
 description: How to save webpage file changes made in DevTools to disk.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/29/2022
+ms.date: 01/03/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -20,14 +20,13 @@ ms.date: 12/29/2022
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Edit webpage files with a DevTools workspace
+# Edit webpage files using a DevTools workspace
 
 This tutorial provides hands-on practice in setting up and using a workspace in DevTools. After you add files to a workspace changes that you make in your source code with DevTools are saved on your local computer. These changes are saved  after you refresh the webpage.
 
-Before starting this tutorial, you can refresh your knowledge of the technologies used by reading the following articles.
+To refresh your knowledge of the technologies used, see the following articles:
 
-
-* Use html, CSS, and JavaScript to build a web page. See [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
+* Use HTML, CSS, and JavaScript to build a web page. See [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
 
 * Use DevTools to make basic changes to CSS. See [Get started viewing and changing CSS](/microsoft-edge/devtools-guide-chromium/css/)
 
@@ -87,6 +86,7 @@ We'll set up the demo files, and then set up DevTools.
 
 1. Start a local web server in `~/Desktop/app`. Go to the `app` folder and then run one of the following commands from the command prompt to start up the web server.<br>
 Node.js option:
+
    ```bash
    # Node.js option
    cd ~/Desktop/app

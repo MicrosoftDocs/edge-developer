@@ -147,7 +147,7 @@ In contrast, when you use a Workspace, changes that you make to your front-end c
 
 Workspaces work well when the JavaScript code that's returned by the server is the same as your local JavaScript source code.  Workspaces don't work as well when your workflow involves transformations on your source code, such as minification or [TypeScript](https://www.typescriptlang.org) compilation.
 
-For more information, see the tutorial [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md).
+For more information, see the tutorial [Edit webpage files using a DevTools workspace](../workspaces/index.md).
 
 
 ### Using the Overrides tab to override server files with local files
@@ -276,7 +276,7 @@ If you change a file, an asterisk appears next to the file name.
 *  To save changes, press `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.
 *  To undo a change, press `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
 
-By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md).
+By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit webpage files using a DevTools workspace](../workspaces/index.md).
 
 
 #### Find and Replace
@@ -353,7 +353,7 @@ There are two ways to edit CSS in DevTools:
 *  In the **Elements** tool, you work with one CSS setting at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
 *  In the **Sources** tool, you use a text editor.
 
-The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
+The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit webpage files using a DevTools workspace](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 
 ```css
 h1 {
