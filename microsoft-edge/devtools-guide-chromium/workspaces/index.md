@@ -53,7 +53,7 @@ A DevTools _workspace_ lets you save changes that you make to a local copy of th
 <!-- ====================================================================== -->
 #### Limitations
 
-If you’re  using a modern framework, it probably transforms your source code from a format that’s easy to maintain into a format that’s optimized to run as quickly as possible.
+If you're  using a modern framework, it probably transforms your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.
 A workspace is usually able to map the optimized code back to the original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS. However, there’s a lot of variation in how each framework uses source maps. **Note:** Devtools doesn't support every framework variation and the workspace feature doesn’t work with the Create React App framework.
 
 If you run into issues while using workspaces with your framework of choice, or you can't get it working after a custom configuration, [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to exchange information with the rest of the DevTools community.
