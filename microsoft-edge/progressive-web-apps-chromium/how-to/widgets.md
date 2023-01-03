@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 10/20/2022
+ms.date: 01/03/2023
 ---
 # Build PWA-driven widgets
 
