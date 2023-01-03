@@ -1,5 +1,5 @@
 ---
-title: Edit webpage files using a DevTools workspace
+title: Edit files with Workspaces (Filesystem tab)
 description: How to save webpage file changes made in DevTools to disk.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,7 +20,7 @@ ms.date: 01/03/2023
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Edit webpage files using a DevTools workspace
+# Edit files with Workspaces (Filesystem tab)
 
 This tutorial provides hands-on practice in setting up and using a workspace in DevTools. After you add files to a workspace changes that you make in your source code with DevTools are saved on your local computer. These changes are saved  after you refresh the webpage.
 
