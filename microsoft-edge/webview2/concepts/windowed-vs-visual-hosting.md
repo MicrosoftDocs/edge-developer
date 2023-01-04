@@ -49,12 +49,6 @@ Key compatibility limitations include the operating system and rendering in fram
 
 
 <!-- ------------------------------ -->
-#### Operating systems
-
-Windows 7 and Windows 8 can only do windowed hosting, not visual hosting.
-
-
-<!-- ------------------------------ -->
 #### Rendering WebView2 in framework and non-framework apps
 
 If you're using a UI framework for your app, you should use the corresponding WebView2 element for that UI framework.  If you aren't using a UI framework for your app (such as Win32 or React Native) or your UI framework doesn't have a WebView2 element, you'll need to create `CoreWebView2Controller` and render it into the desired app.

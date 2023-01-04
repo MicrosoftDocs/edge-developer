@@ -87,6 +87,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     // ...
 ```
 
+<!-- todo: in this PR, remove "win 7" comment above?  Remove the below step & code listing?? -->
+
 1. If you want to build and run the browser in versions of Windows before Windows 10:  In `BrowserWindow.cpp`, remove or comment out the following call to `GetDpiForWindow`:
 
 ```cpp
