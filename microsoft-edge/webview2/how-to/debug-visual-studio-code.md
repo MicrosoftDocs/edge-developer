@@ -17,7 +17,7 @@ Visual Studio Code has a built-in [debugger](https://code.visualstudio.com/docs/
 <!-- ====================================================================== -->
 ## Create a launch.json file
 
-To debug your code, your project is required to have a `launch.json` file.  There are two request types, `launch` and `attach`. The following code demonstrates launching the app from VSCode. To do this, the app must have been built previously. If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project and paste the following code into it:
+To debug your code, your project is required to have a `launch.json` file.  There are two request types, `launch` and `attach`. The following code demonstrates launching the app from Visual Studio Code. To do this, the app must have been built previously. If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project and paste the following code into it:
 
 ```json
 "name": "Hello debug world",
