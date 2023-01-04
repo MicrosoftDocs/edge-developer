@@ -242,6 +242,8 @@ Activity reporting records information about the websites children visit. Record
 
 Safe search adds a safe keyword to the header request to search engines. Bing reads the safe keyword and filters search results returned to the child. Other search engines may return filtered results due to the keyword. All of the child's searches are collected and made available for the family organizer to view in activity reports or at [family.microsoft.com](https://account.microsoft.com/family). The data is collected with the child's Microsoft account so it may be properly managed.
 
+The child account’s health status is also monitored.  When a child needs to take action to log back into their account, such as when a password has changed or expired, their parent is informed.  This data is collected, encrypted in transit, and sent to Microsoft and stored on secure Microsoft storage servers. The account health status is stored on [family.microsoft.com](https://account.microsoft.com/family) for up to 30 days and then deleted after.
+
 The child's browsing data is stored on secure Microsoft servers and made available to parents for up to 30 days, then immediately deleted.  The data may be deleted at any time from the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/). To clear browsing data stored locally on a device, go to `edge://settings/clearBrowserData`.  Choose a **Time range**, select checkboxes as needed, then select **Clear now**.
 
 Collecting child browsing data and sharing it with the family group organizer requires two things. 1.\) The child must be signed in to Windows 10 and later with a Microsoft account. 2.\) The activity reporting setting must be turned on by the family organizer. The child does not need to be signed in to Microsoft Edge to collect browsing data. If family safety features aren't available on your version of Windows, update to the most recent version of Windows.
@@ -460,6 +462,8 @@ Microsoft Edge lets you save your payment information to your browser profile. M
 
 Microsoft Edge asks you if you want to store your payment information if payment autofill is turned on. The information is encrypted locally on your device. To manage payment information, go to `edge://settings/payments`.  When you delete saved payment information, it no longer appears as an autofill suggestion.
 
+Microsoft Edge also supports saving your payment information to your Microsoft account if you are signed in and syncing, which makes the information available across devices. To save payment information to your Microsoft account, CVV may be required depending on your current region. CVV is only used for authorization and will not be stored by Microsoft. 
+
 Microsoft Edge supports the PaymentRequest API. The API lets you pay for purchases with payment information you previously saved using autofill. The PaymentRequest API allows the merchant to request the following information: credit card number, credit card expiration, full name, billing address, email address, phone number, and shipping address. The API tells the merchant that you have credit card information saved, but does not share any information with the merchant unless you allow it. To turn off the Payments feature, go to `edge://settings/privacy`.
 
 If you previously saved payment information to your Microsoft account, it is also available for autofill in the browser. Payment information stored in your Microsoft account syncs across devices. If you previously made any Xbox or Microsoft Store purchases, you may already have payment information saved to your Microsoft account.  During payment autofill, a card from your Microsoft account is masked and is only fully revealed after two-factor authentication. The masking provides added security when retrieving your payment information.
@@ -664,6 +668,16 @@ To turn off speech translated to text, you may deny microphone access from any s
 ## Suggest similar sites
 
 To help resolve URL typos in the address bar that result in a website error, Microsoft Edge may recommend a corrected URL.  When a website navigation error occurs, Microsoft Edge sends the domain of the web address to the Microsoft service to suggest a corrected URL.  Microsoft Edge does not include identifiers or tokens with the domain.  If the service finds a suggestion, it returns the suggested URL.  Microsoft stores the incorrect domain, and suggested domain, to help improve the service.  To help you go to the correct sites, the feature is turned on by default.  To turn off the feature, go to `edge://settings/privacy` and under the **Services** turn off the **Suggest similar sites when a website can't be found** setting.
+
+<!-- ====================================================================== -->
+## Support nonprofits
+Microsoft Edge allows you to support nonprofit organizations using Microsoft Rewards points or cash while browsing. When you are signed in to Microsoft Edge with your Microsoft account and navigate to a nonprofit website, the support nonprofits icon will appear on the right-side of your address bar. You can then click this icon to donate to the nonprofit organization.
+
+![Image of support nonprofits icon in address bar.](./media/support-nonprofit.png)
+ 
+ To control this feature, go to `edge://settings/privacy` and turn on or off the **Show opportunities to support causes and nonprofits you are care about** setting.
+ 
+Supporting nonprofits is not available using **InPrivate** or **Guest** modes.
 
 
 <!-- ====================================================================== -->
