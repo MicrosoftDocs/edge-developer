@@ -129,7 +129,7 @@ Node.js option:
 
 1. Click **Allow** to give DevTools permission to read and write to the directory.
 
-In the **Filesystem** tab, the list of files (![Mapped files list](../media/mapped-files-list-icon.png)) shows a page icon with two-way arrows and a green dot beside the `index.html`, `script.js`, and `styles.css` files. (The two-way arrow colors are mapped to `.html`, `.js`, and `.css` files.) A green dot indicates that DevTools has established a mapping between a network resource of the page received from the web server, and the local source file in `~/Desktop/app`.
+In the **Filesystem** tab, the list of files (![Mapped files list](../media/mapped-files-list-icon.png)) shows a page icon with two-way arrows and a green dot beside the `index.html`, `script.js`, and `styles.css` files. (The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.) A green dot indicates that DevTools has established a mapping between a network resource of the page received from the web server, and the local source file in `~/Desktop/app`.
 
 ![The Filesystem tab has a green dot indicating a mapping between a resource received from the server and a local source file](../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png)
 
