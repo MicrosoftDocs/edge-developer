@@ -239,7 +239,6 @@ To open the DevTools code editor alongside other tools:
 
    ![Opening script.js using the Open File dialog](../media/workspaces-workspaces-demo-search-script.msft.png)
 
-   > [!NOTE]
    The **Edit files with Workspaces** link in the demo is styled regularly.
 
 1. Use the **Quick source** tool to add the following code to the bottom of **script.js**:
