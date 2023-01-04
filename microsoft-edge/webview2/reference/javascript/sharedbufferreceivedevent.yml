@@ -11,14 +11,11 @@ remarks: |-
 
   #### Examples
 
-  ```TypeScript
-  If we want to send data to script for one time read only consumption.
+  For Example, if we want to send data to script for one time read only consumption,
 
-  /**
-   * For Example, if we want to send data to script for one time read only consumption,
-   * 
-   * In native host app code, set data into the shared memory.
-   */
+  In native host app code, set data into the shared memory.
+
+  ```cpp
   wil::com_ptr<ICoreWebView2ExperimentalEnvironment10> environment;
   CHECK_FAILURE(
       m_appWindow->GetWebViewEnvironment()->QueryInterface(IID_PPV_ARGS(&environment)));
@@ -44,14 +41,16 @@ remarks: |-
   }
   // Explicitly close the one time shared buffer to ensure that the resource is released.
   sharedBuffer->Close();
+  ```
 
-  /**
-   * In the HTML document, subscribe to and handle sharedbufferreceived event.
-   */
+  In the HTML document, subscribe to and handle sharedbufferreceived event.
 
+  ```html
   window.chrome.webview.addEventListener("sharedbufferreceived", e => {
       SharedBufferReceived(e);});
+  ```
 
+  ```html
   let readOnlySharedBuffer;
   function ShowReadOnlySharedBuffer() {
       if (readOnlySharedBuffer) {

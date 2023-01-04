@@ -27,6 +27,171 @@ properties:
       content: 'hostObjects: HostObjectsAsyncRoot;'
       return:
         type: '<xref uid="WebView2Script!HostObjectsAsyncRoot:class" />'
+        description: >-
+
+
+          #### Examples
+
+
+
+          For example, suppose you have a COM object with the following interface.
+
+
+          ```
+
+          [uuid(3a14c9c0-bc3e-453f-a314-4ce4a0ec81d8), object, local]
+
+          interface IHostObjectSample : IUnknown
+
+          {
+              // Demonstrate basic method call with some parameters and a return value.
+              HRESULT MethodWithParametersAndReturnValue([in] BSTR stringParameter, [in] INT integerParameter, [out, retval] BSTR* stringResult);
+
+              // Demonstrate getting and setting a property.
+              [propget] HRESULT Property([out, retval] BSTR* stringResult);
+              [propput] HRESULT Property([in] BSTR stringValue);
+
+              [propget] HRESULT IndexedProperty(INT index, [out, retval] BSTR * stringResult);
+              [propput] HRESULT IndexedProperty(INT index, [in] BSTR stringValue);
+
+              // Demonstrate native calling back into JavaScript.
+              HRESULT CallCallbackAsynchronously([in] IDispatch* callbackParameter);
+
+              // Demonstrate a property which uses Date types
+              [propget] HRESULT DateProperty([out, retval] DATE * dateResult);
+              [propput] HRESULT DateProperty([in] DATE dateValue);
+
+              // Creates a date object on the native side and sets the DateProperty to it.
+              HRESULT CreateNativeDate();
+          };
+
+          ```
+
+
+          Add an instance of this interface into your JavaScript with `AddHostObjectToScript`. In this case, name it
+          `sample`.
+
+
+          In native host app code:
+
+
+          ```cpp
+
+          VARIANT remoteObjectAsVariant = {};
+
+          m_hostObject.query_to<IDispatch>(&remoteObjectAsVariant.pdispVal);
+
+          remoteObjectAsVariant.vt = VT_DISPATCH;
+
+
+          // We can call AddHostObjectToScript multiple times in a row without
+
+          // calling RemoveHostObject first. This will replace the previous object
+
+          // with the new object. In our case this is the same object and everything
+
+          // is fine.
+
+          CHECK_FAILURE(
+              m_webView->AddHostObjectToScript(L"sample", &remoteObjectAsVariant));
+          remoteObjectAsVariant.pdispVal->Release();
+
+          ```
+
+
+          In the HTML document, use the COM object using `chrome.webview.hostObjects.sample`.
+
+
+          ```html
+
+          document.getElementById("getPropertyAsyncButton").addEventListener("click", async () => {
+              const propertyValue = await chrome.webview.hostObjects.sample.property;
+              document.getElementById("getPropertyAsyncOutput").textContent = propertyValue;
+          });
+
+
+          document.getElementById("getPropertySyncButton").addEventListener("click", () => {
+              const propertyValue = chrome.webview.hostObjects.sync.sample.property;
+              document.getElementById("getPropertySyncOutput").textContent = propertyValue;
+          });
+
+
+          document.getElementById("setPropertyAsyncButton").addEventListener("click", async () => {
+              const propertyValue = document.getElementById("setPropertyAsyncInput").value;
+              // The following line will work but it will return immediately before the property value has actually been set.
+              // If you need to set the property and wait for the property to change value, use the setHostProperty function.
+              chrome.webview.hostObjects.sample.property = propertyValue;
+              document.getElementById("setPropertyAsyncOutput").textContent = "Set";
+          });
+
+
+          document.getElementById("setPropertyExplicitAsyncButton").addEventListener("click", async () => {
+              const propertyValue = document.getElementById("setPropertyExplicitAsyncInput").value;
+              // If you care about waiting until the property has actually changed value use the setHostProperty function.
+              await chrome.webview.hostObjects.sample.setHostProperty("property", propertyValue);
+              document.getElementById("setPropertyExplicitAsyncOutput").textContent = "Set";
+          });
+
+
+          document.getElementById("setPropertySyncButton").addEventListener("click", () => {
+              const propertyValue = document.getElementById("setPropertySyncInput").value;
+              chrome.webview.hostObjects.sync.sample.property = propertyValue;
+              document.getElementById("setPropertySyncOutput").textContent = "Set";
+          });
+
+
+          document.getElementById("getIndexedPropertyAsyncButton").addEventListener("click", async () => {
+              const index = parseInt(document.getElementById("getIndexedPropertyAsyncParam").value);
+              const resultValue = await chrome.webview.hostObjects.sample.IndexedProperty[index];
+              document.getElementById("getIndexedPropertyAsyncOutput").textContent = resultValue;
+          });
+
+          document.getElementById("setIndexedPropertyAsyncButton").addEventListener("click", async () => {
+              const index = parseInt(document.getElementById("setIndexedPropertyAsyncParam1").value);
+              const value = document.getElementById("setIndexedPropertyAsyncParam2").value;;
+              chrome.webview.hostObjects.sample.IndexedProperty[index] = value;
+              document.getElementById("setIndexedPropertyAsyncOutput").textContent = "Set";
+          });
+
+          document.getElementById("invokeMethodAsyncButton").addEventListener("click", async () => {
+              const paramValue1 = document.getElementById("invokeMethodAsyncParam1").value;
+              const paramValue2 = parseInt(document.getElementById("invokeMethodAsyncParam2").value);
+              const resultValue = await chrome.webview.hostObjects.sample.MethodWithParametersAndReturnValue(paramValue1, paramValue2);
+              document.getElementById("invokeMethodAsyncOutput").textContent = resultValue;
+          });
+
+
+          document.getElementById("invokeMethodSyncButton").addEventListener("click", () => {
+              const paramValue1 = document.getElementById("invokeMethodSyncParam1").value;
+              const paramValue2 = parseInt(document.getElementById("invokeMethodSyncParam2").value);
+              const resultValue = chrome.webview.hostObjects.sync.sample.MethodWithParametersAndReturnValue(paramValue1, paramValue2);
+              document.getElementById("invokeMethodSyncOutput").textContent = resultValue;
+          });
+
+
+          let callbackCount = 0;
+
+          document.getElementById("invokeCallbackButton").addEventListener("click", async () => {
+              chrome.webview.hostObjects.sample.CallCallbackAsynchronously(() => {
+                  document.getElementById("invokeCallbackOutput").textContent = "Native object called the callback " + (++callbackCount) + " time(s).";
+              });
+          });
+
+
+          // Date property
+
+          document.getElementById("setDateButton").addEventListener("click", () => {
+              chrome.webview.hostObjects.options.shouldSerializeDates = true;
+              chrome.webview.hostObjects.sync.sample.dateProperty = new Date();
+              document.getElementById("dateOutput").textContent = "sample.dateProperty: " + chrome.webview.hostObjects.sync.sample.dateProperty;
+          });
+
+          document.getElementById("createRemoteDateButton").addEventListener("click", () => {
+              chrome.webview.hostObjects.sync.sample.createNativeDate();
+              document.getElementById("dateOutput").textContent = "sample.dateProperty: " + chrome.webview.hostObjects.sync.sample.dateProperty;
+          });
+
+          ```
 methods:
   - name: 'addEventListener(type, listener, options)'
     uid: 'WebView2Script!WebView#addEventListener:member(1)'
@@ -100,7 +265,7 @@ methods:
 
         Post a message to the CoreWebView2:
 
-        ```TypeScript
+        ```javascript
         const inTopLevelFrame = (window === window.parent);
         if (inTopLevelFrame) {
             // The message can be any JSON serializable object.
