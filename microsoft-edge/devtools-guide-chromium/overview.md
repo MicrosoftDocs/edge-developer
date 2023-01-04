@@ -388,7 +388,7 @@ To open the DevTools **Settings** webpage, click the **Settings** (![Settings ic
 *  Preferences
 *  Workspace
 *  Experiments
-*  Library Code
+*  Ignore List
 *  Devices
 *  Throttling
 *  Locations
