@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/03/2023
+ms.date: 01/04/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -96,13 +96,13 @@ Node.js option:
    ```
   
    ``` bash
-   # Python option 1
+   # Python 2 option
    cd ~/Desktop/app
    python -m SimpleHTTPServer # Python 2
    ```
   
    ``` bash
-   # Python option 2
+   # Python 3 option
    cd ~/Desktop/app
    python -m http.server # Python 3
    ```
@@ -129,7 +129,7 @@ Node.js option:
 
 1. Click **Allow** to give DevTools permission to read and write to the directory.
 
-In the **Filesystem** tab, a green dot now appears next to the `index.html`, `script.js`, and `styles.css` files.  A green dot indicates that DevTools has established a mapping between a network resource of the page received from the web server, and the local source file in `~/Desktop/app`.
+In the **Filesystem** tab, the list of files (![Mapped files list](../media/mapped-files-list-icon.png)) shows a green dot on each page next to the `index.html`, `script.js`, and `styles.css` files.  A green dot indicates that DevTools has established a mapping between a network resource of the page received from the web server, and the local source file in `~/Desktop/app`.
 
 ![The Filesystem tab has a green dot indicating a mapping between a resource received from the server and a local source file](../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png)
 
@@ -141,13 +141,13 @@ The following steps show how to make a change in the CSS file and save it to dis
 
 1. Open `styles.css`.  The `color` property of the `h1` element is set to `fuchsia`.
 
-   ![View styles.css in a text editor.](../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png)
+   ![View styles.css in a text editor](../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png)
 
 1. Select the **Elements** tool.
 
-   The CSS rules that are applied to the `<h1>` element are shown in the **Styles** pane.  The **mapped file** (![Mapped file icon](index-images/mapped-file-icon.png)) icon next to `styles.css:1` is a page with a green dot and two-way arrows.  This icon means that any changes that you make are mapped to `~/Desktop/app/styles.css`.
+   The CSS rules that are applied to the `<h1>` element are shown in the **Styles** pane.  The **mapped file** (![Mapped file icon](../media/mapped-file-icon.png)) icon next to `styles.css:1` is a page with two-way arrows.  This icon means that any changes that you make are mapped to `~/Desktop/app/styles.css`.
 
-   ![The 'mapped file' icon, a page with green dot and two-way arrows](../media/workspaces-workspaces-demo-elements-styles-css.msft.png)
+   ![The 'mapped file' icon, a page with two-way arrows](../media/workspaces-workspaces-demo-elements-styles-css.msft.png)
 
 1. Change the value of the `color` property of the `<h1>` element to your favorite color.  To do this, select the `<h1>` element in the **DOM Tree**. Select `fucshia`, type the new color, and then select it from the color list:
 
