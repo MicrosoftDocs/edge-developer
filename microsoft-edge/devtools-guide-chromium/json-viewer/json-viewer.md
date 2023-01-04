@@ -42,3 +42,17 @@ To view a formatted JSON file stored on your device:
 1. Microsoft Edge detects that the file contains JSON and formats it automatically.
 
    ![JSON data stored in a local file, formatted and syntax-highlighted by the JSON viewer](./images/json-file.png)
+
+
+<!-- ====================================================================== -->
+## Detect invalid JSON data
+
+JSON data can sometimes be invalid. For example, if the keys aren't surrounded by double quotes, or if there's a comma after the last key/value pair, the JSON data will be invalid.
+
+When the **JSON viewer** detects invalid JSON, the syntax is still highlighted but the content isn't formatted and objects can't be collapsed or expanded.
+
+Additionally, an error is printed in the **Console** tool.
+
+As seen below, invalid JSON responses are shown unformatted but highlighted, and an error is printed in the **Console** to help diagnose the syntax error:
+
+![Highlighted JSON content, in a browser tab, with DevTools opened on the side, showing a JavaScript error indicating where the JSON syntax error is located](./images/invalid-json.png)
