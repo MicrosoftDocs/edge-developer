@@ -155,6 +155,34 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
 
 <!-- ====================================================================== -->
+## Debug WebView2 UWP Apps
+
+1. Install a WebView2 Runtime version past `106.0.1370.34`.
+
+1. Set the registry key “HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments” equal to “--remote-debugging-pipe”.  Verify the registry key is set in the editor and that it matches this:
+
+   ![Registry Key](./media/uwp-debugging-registry-key.png)
+
+1. Add a new configuration to your `launch.json` file.  Open the file and add the following code into `launch.json`.
+
+   ```json
+   "name": "Attach to WebView2 UWP",
+   "useWebView":{
+      "pipeName":"JSDebugPipe"
+   }
+   "request": "attach",
+   "type": "msedge",
+   "webRoot":"${workspaceFolder}"
+   ```
+
+1. Launch your app.
+
+1. Click the Start button to attach to the process and begin debugging.
+
+   ![Run and Debug](./media/attach-uwp.png)
+
+
+<!-- ====================================================================== -->
 ## Troubleshoot the debugger
 
 You might encounter these scenarios when using the debugger.
