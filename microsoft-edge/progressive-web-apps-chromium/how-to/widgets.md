@@ -488,7 +488,7 @@ For the `widgetinstall` and `widgetuninstall` event types, the `widgetEvent` obj
 | `widget` | The widget instance that triggered the event. | [widgetInstance](#widgetinstance-object) |
 | `instanceId` | The widget instance ID. | `String` |
 
-For the `widgetresume` type, the `widgetEvent` object has the following property:
+For the `widgetresume` event type, the `widgetEvent` object has the following property:
 
 | Property | Description | Type |
 |:--- |:--- |:--- |
