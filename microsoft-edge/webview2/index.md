@@ -88,13 +88,18 @@ WebView2 apps can run on the following versions of Windows:
 *  Windows Server 2019
 *  Windows Server 2016
 
-WebView2 SDK version 1.0.1519.0 and higher doesn't support the following versions of Windows:
+
+#### Windows 7 and 8
+
+WebView2 Runtime version 109 is the final version that supports the following versions of Windows:
 
 *  Windows 8/8.1
 *  Windows 7
 *  Windows Server 2012 R2
 *  Windows Server 2012
 *  Windows Server 2008 R2
+
+WebView2 SDK version 1.0.1519.0 and higher don't support those operating systems.
 
 See also:
 * [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems) - WebView2 support for Windows 7 and Windows Server 2008 R2 have the same support timeline as Microsoft Edge.
