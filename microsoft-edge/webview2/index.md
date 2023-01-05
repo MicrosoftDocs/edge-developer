@@ -91,7 +91,7 @@ WebView2 apps can run on the following versions of Windows:
 
 #### Windows 7 and 8
 
-WebView2 Runtime version 109 is the final version that supports the following versions of Windows.  WebView2 SDK version 1.0.1519.0 and higher doesn't support these operating systems.
+WebView2 Runtime version 109, and WebView2 SDK version 1.0.####.0, is the final version that supports the following versions of Windows.  WebView2 Runtime version 110.0.1519.0 and higher, and WebView2 SDK version 1.0.1519.0 and higher, doesn't support these operating systems.
 
 *  Windows 8/8.1
 *  Windows 7
