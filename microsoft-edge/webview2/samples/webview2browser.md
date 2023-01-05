@@ -78,27 +78,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
-    // Call SetProcessDPIAware() instead when using Windows 7 or any version
-    // below 1703 (Windows 10).
     SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2);
 
     BrowserWindow::RegisterClass(hInstance);
 
     // ...
-```
-
-<!-- todo: in this PR, remove "win 7" comment above?  Remove the below step & code listing?? -->
-
-1. If you want to build and run the browser in versions of Windows before Windows 10:  In `BrowserWindow.cpp`, remove or comment out the following call to `GetDpiForWindow`:
-
-```cpp
-int BrowserWindow::GetDPIAwareBound(int bound)
-{
-    // Remove the GetDpiForWindow call when using Windows 7 or any version
-    // below 1607 (Windows 10). You will also have to make sure the build
-    // directory is clean before building again.
-    return (bound * GetDpiForWindow(m_hWnd) / DEFAULT_DPI);
-}
 ```
 
 
