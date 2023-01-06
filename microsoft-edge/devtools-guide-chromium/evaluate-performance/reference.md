@@ -138,6 +138,8 @@ To save a recording, right-click the recording and then select **Save Profile**.
 
 ![Save Profile.](../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png)
 
+To learn more about exporting and importing performance recordings, see [Share performance and memory traces](./share-traces.md).
+
 
 <!-- ====================================================================== -->
 ## Load a recording
@@ -145,6 +147,8 @@ To save a recording, right-click the recording and then select **Save Profile**.
 To load a recording, right-click the recording and then select **Load Profile**.
 
 ![Load Profile.](../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png)
+
+To learn more about exporting and importing performance recordings, see [Share performance and memory traces](./share-traces.md).
 
 
 <!-- ====================================================================== -->
