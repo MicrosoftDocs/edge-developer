@@ -10,99 +10,6 @@ ms.date: 08/02/2022
 ---
 # Call native-side WinRT code from web-side code
 
-
-<!-- ====================================================================== -->
-## Setup differences for WinUI 3 vs. for WinUI 2 (UWP) for a WinRT project
-
-<!-- after installing "default" VS Community, in VS Installer, clicked .net card, then on right, elected cbox: "Windows App SDK C# Templates"
-
-couldn't find template, so in installer, clicked UWP card, then selected v143 C++ tools.  then click Modify again.
-
--->
-
-
-<!-- This is written with UWP/WinUI2 point of view, and we've gotten folks ask about WinUI3. The following section will list the differences in the setup between frameworks.  -->
-
-Steps 1-4: just change project name and sample app download link.
-
-The project adapter version doesn't have to match.
-
-STEP 5 in doc is not needed for WinUI 3. WinUI3 bundles the WebView2 SDK, so there is no need (or way) to download it separately.  WinUI 3 doesn't come with the ability to use prerelease WebView2 SDK.  
-
-* In major step 5: minor step 5: Change it to disinclude "This needs to be the same version as for the WinRTAdapter project."
-
-Before major Step 7, we need to do do a couple things specific to WinUI 3:
-
-1.  Update Target Framework
-
-    ![Warning 1](./winrt-from-js-images/warning-first.png)
-
-    To fix this, in the `.csproj` file, update the `<TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>` to be the same as the WinRT Adapter version.  If you don't, you'll get this error:  
-
-2.  Update OS Target.
-
-3.  Add CSWinRTReference (edit .csproj file)
-
-    Add WinRTAdapter to CsWinRTIncludesAdd the following Package reference within the item group:
-
-    ```xml
-    <ItemGroup>
-        <PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.6.4" />
-    ```
-
-    Also add the following property group reference  <PropertyGroup>    <CsWinRTIncludes>WinRTAdapter</CsWinRTIncludes>  </PropertyGroup> 
-
-    ![Warning 2](./winrt-from-js-images/warning-second.png)
-
-4.  Install Single-project MSIX Packaging Tools for VS 2022 - Visual Studio Marketplace, since without that it would build but not run.  If you don’t you will get the above error.  
-
-Optional Step: In a non-packaged app you have to do extra stuff described here Enhancing Non-packaged Desktop Apps using Windows Runtime Components - Windows Developer Blog.
-
-
-
-<!-- first draft, nuke: -->
-
-
-1.  In a non-packaged app you have to do extra stuff described here Enhancing Non-packaged Desktop Apps using Windows Runtime Components - Windows Developer Blog.
-
-1.  For WinUI3 apps: Add WinRTAdapter to CsWinRTIncludes for WinUI3 / WinAppSDK based apps, the main app project has a reference to WinAppSDK which directly includes its own copy of the webview2 SDK files, so you cannot include a reference to the webview2 SDK in the main app project without seeing the sorts of errors you see above. The project adapter version doesn't have to match. Everything should be the same up until step 5. 
-
-1.  Note: In WinUI 3, you don't need to do "Step 5: Install WebView2 prerelease SDK, for webview2_sample_uwp project".  WinUI 3 already comes with a default version of WebView2.  You will get the below warning if you try and build - in order to fix this, you will have to modify the `.csproj` file to use `cswinrt`.
-
-1.  Add the following Package reference within the item group:
-
-    ```xml
-    <ItemGroup>
-        <PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.6.4" />
-    ```
-
-1.  Add the following property group reference:
-
-    ```xml
-    <PropertyGroup>
-        <CsWinRTIncludes>WinRTAdapter</CsWinRTIncludes>
-    </PropertyGroup>
-    ```
-
-<!-- what is this image, not mentioned: 
-If you get this warning:-->
-![Warning 1](./winrt-from-js-images/warning-first.png)
-
-<!-- If you get the above warning,  -->
-you need to install:
-
-install Single-project MSIX Packaging Tools for VS 2022 - Visual Studio Marketplace, since without that it builds, but doesn't run.
-
-If you get a warning like: "MSB3851 This project targets "Windows, Version=10.0.19041.0", but it is attempting to reference "winmd... targeting "UAP,Version=10.0.22000.0" which is invalid."
-
-![Warning](./winrt-from-js-images/warning-second.png)
-
-To fix this warning: in the `.csproj` file, update the `<TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>` to be the same as the WinRT Adapter version.
-
-
-<!-- ====================================================================== -->
-## Intro
-
 Your web-side JavaScript code can access native-side WinRT methods and properties, with the help of the **wv2winrt** tool (the WebView2 WinRT JS Projection tool).  The **wv2winrt** tool generates needed code files for your JavaScript code, and enables using methods and properties of any WinRT APIs, including:
 
 *  Your WebView2 host app's WinRT APIs.
@@ -122,7 +29,35 @@ This article walks you through the following main steps:
 1. Call methods and properties on the host object from your web-side JavaScript code (or from the DevTools Console).
 
 
-##### Why WinRT and .NET use different approaches
+#### Overview of setup differences for WinUI 3 vs. for WinUI 2
+
+If your WinRT WebView2 app targets WinUI 3 (Windows App SDK) rather than WinUI 2 (UWP), here's an overview of the WinUI 3-specific steps we'll do below:
+
+*  In a non-packaged app, you have to do additional steps that are in the article "Enhancing Non-packaged Desktop Apps using Windows Runtime Components".
+
+*  Add `WinRTAdapter` to `CsWinRTIncludes`.
+
+*  For WinUI 3 (Windows App SDK) apps, the main app project has a reference to WinAppSDK which directly includes its own copy of the WebView2 SDK files, so you cannot include a reference to the WebView2 SDK in the main app project without producing error messages.
+
+*  The project adapter version doesn't have to match.
+
+<!-- add these steps? -->
+*  After installing "default" options for Visual Studio 2022 Community edition, in Visual Studio Installer, click the **.NET** card, then on the right, select the checkbox **Windows App SDK C# Templates**.
+
+*  If the correct project template still doesn't appear: in the Visual Studio Installer, click the **UWP** card to select it, select the **v143 C++ tools** checkbox on the right, and then click the **Modify** button.
+
+<!-- 
+For WinUI 3, up until step 5, no big changes are needed; just change the project name, and the sample app download link.
+-->
+<!-- 
+todo: For WinUI 3, use a different project name.
+-->
+<!-- 
+todo: For WinUI 3, use the correct sample app download link.
+-->
+
+
+#### Why WinRT and .NET use different approaches
 
 This article is for WinRT WebView2 APIs, not for .NET WebView2 APIs.  The C# code in this article will build, but not run, for .NET WebView2 APIs.  Calling `AddHostObjectToScript` using this article's C# code for .NET WebView2 APIs would produce an error message.
 
@@ -169,6 +104,8 @@ Let's get started!
 <!-- ====================================================================== -->
 ## Step 1: Clone the repo and build the WebView2 UWP sample
 
+##### [WinUI 2 (UWP)](#tab/winui2)
+
 1. If Visual Studio 2015 or later isn't already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) isn't already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
@@ -197,6 +134,45 @@ In case you need more information, see detailed steps in these pages, and then c
 * [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md) - setting up a basic WebView2 app.
 * [GitHub > WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
 * [Set up your Dev environment for WebView2](machine-setup.md) - details about setting up prerequisites.
+
+
+##### [WinUI 3 (Windows App SDK)](#tab/winui3)
+
+1. If Visual Studio 2015 or later isn't already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  For example, install Visual Studio 2022 Community edition.  Follow the steps in that section, and then return to this page and continue the steps below.
+
+1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) isn't already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+
+   If you have your own app code base already, you can open that project in Visual Studio, instead of starting with a project template as in the following steps.
+
+1. Start Visual Studio with no code, so that you have an empty Visual Studio window.
+
+1. Select **File** > **New** > **Project**.  In the **Create a new project** dialog box, in the text box, enter **WinUI 3**.  Select the project template **Blank App, Packaged (WinUI 3 in Desktop)**,<!-- which project template to pick? --> and then click the **Next** button.
+
+   ![The project template, Blank App, Packaged (WinUI 3 in Desktop)](./winrt-from-js-images/winui3-project-template.png)
+
+1. If that template doesn't appear, in Visual Studio Installer, click the **.NET** card, then on the right, select the checkbox **Windows App SDK C# Templates**.
+
+1. If the correct project template still doesn't appear: in the Visual Studio Installer, click the **UWP** card to select it, select the **v143 C++ tools** checkbox on the right, and then click the **Modify** button.
+
+   The **Configure your new project - Blank App, Packaged (WinUI 3 in Desktop)** dialog opens.
+
+1. In the **Project name** field, enter a project name, such as **WinUI3WinRTWebView2**:
+
+   ![Configure your new project - Blank App, Packaged (WinUI 3 in Desktop)](./winrt-from-js-images/winui3-config-new-project.png)
+
+1. In the **Location** field, enter a location.  Then click the **Create** button.  A new WinUI 3 project appears in Solution Explorer:
+
+   ![Fresh WinUI 3 project in Solution Explorer](./winrt-from-js-images/winui3-fresh-project.png)
+
+1. In Solution Explorer, right-click the project, and then select **Build**.
+
+1. Select **Debug** > **Start Debugging** (`F5`).  The initial WinUI3 app, **WinUI Desktop**, opens:
+
+   ![The initial WinUI3 app from the template, titled WinUI Desktop](./winrt-from-js-images/winui3-running-app-initial-empty.png)
+
+1. Close the app.
+
+---
 
 
 <!-- =============================================== -->
@@ -278,6 +254,8 @@ The WebView2 prerelease SDK is now installed for the **WinRTAdapter** project.
 <!-- =============================================== -->
 ## Step 5: Install WebView2 prerelease SDK, for webview2_sample_uwp project
 
+If your app targets WinUI 3, skip this Step 5 section.  WinUI 3 bundles the WebView2 SDK, so there isn't a need to download the WebView2 SDK separately.  (Also, WinUI 3 doesn't support prerelease WebView2 SDKs.)
+
 In the **webview2_sample_uwp** project, install the same prerelease version of the WebView2 SDK as you installed for the **WinRTAdapter** project, as follows:
 
 1. In Solution Explorer, right-click the **webview2_sample_uwp** project, and then select **Manage NuGet Packages**.  The NuGet Package Manager window opens.
@@ -288,7 +266,7 @@ In the **webview2_sample_uwp** project, install the same prerelease version of t
 
 1. Click the **Microsoft.Web.WebView2** card.  Detailed information appears in the middle area of the window.
 
-1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK.  The version must be 1.0.1243.0 or higher.  This needs to be the same version as for the **WinRTAdapter** project.
+1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK.  The version must be 1.0.1243.0 or higher.  If your WinRT WebView2 app targets WinUI 2 (UWP), this needs to be the same version as for the **WinRTAdapter** project (If your WinRT WebView2 app targets WinUI 3 (Windows App SDK), it doesn't need to be the same version.)
 
 1. Click the **Install** button.
 
@@ -378,8 +356,61 @@ Source code is generated for namespaces or classes that you specified in the **I
 > Replace `$(WebView2SDKPath)` with the directory where the WebView2 SDK was installed, with a `\` at the end. For example: `..\webview2_sample_uwp\packages\Microsoft.Web.WebView2.1.0.1264.42\`.
 
 
+<!-- ====================================================================== -->
+## Step 7 (WinUI 3 only): Update Target Framework
+
+If your app is for WinUI 2 (UWP), skip this section; skip to the next major Step section.
+
+If your app is for WinUI 3, do the steps in this section.
+
+
+#### Update the OS target
+
+1.  Update `TargetFramework`, as follows.
+
+    You might get the following error: "WinRTAdapter.winmd cannot be referenced.  Referencing a Windows Metadata NETSDK1component directly when targeting .NET 5 or higher is not supported."
+
+    ![Warning message: WinRTAdapter.winmd cannot be referenced](./winrt-from-js-images/warning-first.png)
+
+1.  To fix that warning: In Solution Explorer, below the files, right-click, and then select **Open Folder in File Explorer**.
+
+1.  Open the `.csproj` file, such as `WinUI3WinRTWebView2.csproj`.
+
+1.  in the `.csproj` file, update the `<TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>` to be the same as the WinRT Adapter version.
+
+
+#### Add CsWinRT and WinRTAdapter in the project file
+
+1.  If the project file isn't already open, in Solution Explorer, below the files, right-click, and then select **Open Folder in File Explorer**.
+
+1.  Open the `.csproj` file, such as `WinUI3WinRTWebView2.csproj`.
+
+1.  Add the following Package reference within the item group:
+
+    ```xml
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.6.4"/>
+    ```
+
+1.  Add the following property group reference:
+
+    ```xml
+    <PropertyGroup>
+        <CsWinRTIncludes>WinRTAdapter</CsWinRTIncludes>
+    </PropertyGroup> 
+    ```
+
+    You might get a warning like: "MSB3851 This project targets "Windows, Version=10.0.19041.0", but it is attempting to reference "winmd... targeting "UAP,Version=10.0.22000.0" which is invalid."
+
+    ![Warning about attempting to reference winmd UAP](./winrt-from-js-images/warning-second.png)
+
+1.  To fix that error, install [Single-project MSIX Packaging Tools for VS 2022](https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftSingleProjectMSIXPackagingToolsDev17).  Without these packaging tools, the project will build but not run.
+
+1.  If your app is non-packaged app, you must also do the steps in [Enhancing Non-packaged Desktop Apps using Windows Runtime Components](https://blogs.windows.com/windowsdeveloper/2019/04/30/enhancing-non-packaged-desktop-apps-using-windows-runtime-components/).
+
+
 <!-- =============================================== -->
-## Step 7: Add the host object in the webview2_sample_uwp project
+## Step 8: Add the host object in the webview2_sample_uwp project
 
 Next, pass the WinRT object from the native side of the host app to the web side of the host app.  To do this, add an `InitializeWebView2Async` method that calls `AddHostObjectToScript`, as follows:
 
@@ -426,7 +457,7 @@ The host app's web-side code (and the DevTools Console) can now call methods and
 
 
 <!-- =============================================== -->
-## Step 8: Call methods and properties on the host object from web-side JavaScript
+## Step 9: Call methods and properties on the host object from web-side JavaScript
 
 Next, use the DevTools Console to demonstrate that web-side code can call the included, specified host-side APIs.
 
@@ -496,7 +527,6 @@ For more information, see the `forceAsyncMethodMatches` row in [CoreWebView2.Add
 
 
 <!-- ====================================================================== -->
-
 ## Subscribing to WinRT events
 
 WinRT events are also exposed via the script proxies. You can add and remove event handlers of instance WinRT events and static WinRT events by using the `addEventListener(string eventName, function handler)` and `removeEventListener(string eventName, function handler)` methods. 
