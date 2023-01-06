@@ -17,22 +17,22 @@ Exporting performance and memory traces is useful when you want to share these f
 
 Traces can be exported in one of two ways: 
 
-* As a normal trace: a `.json`, `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file which contains minimal information about the runtime data from the traced web page.
-* As an enhanced trace: a `.devtools` file which contains more runtime data from the traced web page.
+* As a normal trace: a `.json`, `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file, which contains minimal information about the runtime data from the traced web page.
+* As an enhanced trace: a `.devtools` file, which contains more runtime data from the traced web page.
 
-In Microsoft Edge versions prior to 109, enhanced traces are not available. Starting with 109, the **Performance** and **Memory** tools can export normal and enhanced traces.
+In Microsoft Edge versions prior to 109, enhanced traces aren't available. Starting with 109, the **Performance** and **Memory** tools can export normal and enhanced traces.
 
 
 <!-- ====================================================================== -->
 ## Enhanced traces
 
-A normal trace only contains some of the information that's present in a web page. Much of the original code is lost and only the recorded performance or memory data of the web page is preserved in the trace. For example, when importing a `.heapsnapshot` memory trace that was recorded during another DevTools session or on another computer, there is no way to go from an object in the **Memory** tool to its constructor in the **Sources** tool.
+A normal trace only contains some of the information that's present in a web page. Much of the original code is lost and only the recorded performance or memory data of the web page is preserved in the trace. For example, when importing a `.heapsnapshot` memory trace that was recorded during another DevTools session or on another computer, there's no way to go from an object in the **Memory** tool to its constructor in the **Sources** tool.
 
 Similarly, in the **Performance** tool; when you import a performance trace recorded earlier, it needs to have been recorded on the same site and same configuration to be able to map from the performance report to the JavaScript that was running in the browser.
 
 An enhanced trace retains more information about the page. For example, an enhanced trace contains the execution context, the list of parsed scripts, and can optionally contain console messages, script sources, and a snapshot of the DOM tree.
 
-When a normal trace is imported in DevTools, the recorded data is used to populate the **Performance** or **Memory** tool. When an enhanced trace is imported in DevTools, a new DevTools window appears. This new window is not connected to the web page that's running in your browser, and instead re-creates the environment in which the trace was originally recorded. For example, if a snapshot of the DOM was recorded in the enhanced trace, the **Elements** tool displays this snapshot. If console messages were recorded, the **Console** tool prints these messages. The **Sources** tool displays the scripts that were present during the recording.
+When a normal trace is imported in DevTools, the recorded data is used to populate the **Performance** or **Memory** tool. When an enhanced trace is imported in DevTools, a new DevTools window appears. This new window isn't connected to the web page that's running in your browser, and instead re-creates the environment in which the trace was originally recorded. For example, if a snapshot of the DOM was recorded in the enhanced trace, the **Elements** tool displays this snapshot. If console messages were recorded, the **Console** tool prints these messages. The **Sources** tool displays the scripts that were present during the recording.
 
 Using enhanced traces makes it possible to reliably resolve source code references found in imported traces to the actual runtime code in the **Sources** tool. Additionally, if source maps were presents when a trace was recorded, it will also be possible to resolve code references to their original source code.
 
@@ -42,7 +42,7 @@ Enhanced traces can only be imported in Microsoft Edge, while normal traces are 
 <!-- ====================================================================== -->
 ## Set the default trace type
 
-By default, the **Performance** and **Memory** tools export data as normal traces, but it is possible to choose which type of traces are export.
+By default, the **Performance** and **Memory** tools export data as normal traces, but it's possible to choose which type of traces are export.
 
 To change the trace type:
 
@@ -82,7 +82,7 @@ To export memory information from the **Memory** tool:
 
 1. Open the **Memory** tool.
 
-1. Choose the type of memory recording you are interested in, for example **Heap Snapshot**. The instructions below are similar if you choose a different memory recording type. To learn more about the different memory recording types, see [Fix memory problems](../memory-problems/index.md).
+1. Choose the type of memory recording you're interested in, for example **Heap Snapshot**. The following instructions are similar if you choose a different memory recording type. To learn more about the different memory recording types, see [Fix memory problems](../memory-problems/index.md).
 
 1. Click **Take Snapshot**.
 
@@ -112,7 +112,7 @@ To import a trace in the **Performance** tool:
 
 1. Click **Load profile** (![Load profile button](../media/import-icon.png)).
 
-1. Locate the trace file on your disk. It is either a `.devtools` file (for enhanced traces) or a `.json` file (for normal traces).
+1. Locate the trace file on your disk. It's either a `.devtools` file (for enhanced traces) or a `.json` file (for normal traces).
 
 1. Open the file.
 
@@ -128,7 +128,7 @@ To import a trace in the **Memory** tool:
 
 1. Click **Load**.
 
-1. Locate the trace file on your disk. It is either a `.devtools` file (for enhanced traces) or a `.heapsnapshot`, `.heaptimeline`, or `.heapprofile` file (for normal traces).
+1. Locate the trace file on your disk. It's either a `.devtools` file (for enhanced traces) or a `.heapsnapshot`, `.heaptimeline`, or `.heapprofile` file (for normal traces).
 
 1. Open the file.
 
