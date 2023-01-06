@@ -138,6 +138,15 @@ In case you need more information, see detailed steps in these pages, and then c
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
 
+There are several options:
+
+* Use the Visual Studio project template to create a fresh new solution and project, per the steps below, in this section.  This approach is recommended.
+
+* From the WebView2Samples repo, open the **WebView2WinAppSDKSample** sample (for WinUI 3) in the temporary branch [jasteph](https://github.com/MicrosoftEdge/WebView2Samples/tree/user/jasteph/winappsdksample/SampleApps/WebView2WinAppSDKSample).
+
+* If you have your own app code base already, you can open that project in Visual Studio, and add an Adapter project as shown later in this article.
+
+
 1. If Visual Studio 2015 or later isn't already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  For example, install Visual Studio 2022 Community edition.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) isn't already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
@@ -376,7 +385,9 @@ If your app is for WinUI 3, do the steps in this section.
 
 1.  Open the `.csproj` file, such as `WinUI3WinRTWebView2.csproj`.
 
-1.  in the `.csproj` file, update the `<TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>` to be the same as the WinRT Adapter version.
+1.  If Visual Studio doesn't show line numbers in the code editor, turn on line numbers.  To do this, select **Tools** > **Options** > **Text Editor** > **All Languages** > **Line numbers**.  Then click **OK**.
+
+1.  In the `.csproj` file, update the `<TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>` to be the same as the WinRT Adapter version.
 
 
 #### Add CsWinRT and WinRTAdapter in the project file
