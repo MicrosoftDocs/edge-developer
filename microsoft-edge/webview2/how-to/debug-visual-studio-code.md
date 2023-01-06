@@ -17,7 +17,7 @@ Visual Studio Code has a built-in [debugger](https://code.visualstudio.com/docs/
 <!-- ====================================================================== -->
 ## Create a launch.json file
 
-To debug your code, your project is required to have a `launch.json` file.  There are two request types, `launch` and `attach`. The following code demonstrates launching the app from Visual Studio Code. To do this, the app must have been built previously. If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project and paste the following code into it:
+To debug your code, your project is required to have a `launch.json` file.  A `launch.json` file is a debugger configuration file to configure and customize the Visual Studio Code debugger. One of the properties needed to configure the debugger is the `request` property. There are two `request` types, `launch` and `attach`. The following code demonstrates launching the app from Visual Studio Code (rather than attaching the debugger to a running instance of the app). To do this, the app must have been built previously. If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project and paste the following code into it:
 
 ```json
 "name": "Hello debug world",
@@ -155,18 +155,22 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
 
 <!-- ====================================================================== -->
-## Debug WebView2 UWP Apps
+## Debug WebView2 WinUI 2(UWP) Apps
 
 1. Install a WebView2 Runtime version past `106.0.1370.34`.
 
-1. Set the registry key “HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments” equal to “--remote-debugging-pipe”.  Verify the registry key is set in the editor and that it matches this:
+1. Open the `Registry Editor` by clicking the **Windows Key** and searching for `Registry Editor`. Launch the `Registry Editor` application and select **Yes** to allow editing. Set the registry key “HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments” equal to “--remote-debugging-pipe”.  To do this, in the editor navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` by clicking on each subfolder under the path. If this path does not exist, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft\` in the editor and right click on the `Microsoft` folder and select **New** and then select **Key**.  Enter `Edge` for the name of the new key and continue to do this for each subfolder until you have the full path: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`. Right click on the `AdditionalBrowserArguments` folder and select **New** and then select **String Value**. Rename `New Value #1` to `*`. Right click on the **\*** value and select **Modify**.  Set the `Value Data` equal to `--remote-debugging-pipe`.  Verify the edit window matches the following:
+
+   ![Set Registry Key](./media/uwp-debugging-set-registry-key.png)
+
+1. Verify the registry key is set in the editor and matches the following:
 
    ![Registry Key](./media/uwp-debugging-registry-key.png)
 
-1. Add a new configuration to your `launch.json` file.  Open the file and add the following code into `launch.json`.
+1. Add a new configuration to your `launch.json` file.  Open the file and add the following code into `launch.json`:
 
    ```json
-   "name": "Attach to WebView2 UWP",
+   "name": "Attach to UWP App",
    "useWebView":{
       "pipeName":"JSDebugPipe"
    }
@@ -177,7 +181,7 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
 1. Launch your app.
 
-1. Click the Start button to attach to the process and begin debugging.
+1. Click the **Start Debugging** button to attach to the process and begin debugging.
 
    ![Run and Debug](./media/attach-uwp.png)
 
