@@ -27,8 +27,6 @@ This article covers general-purpose setup of your development environment for We
 ## Install a preview channel of Microsoft Edge
 
 1. Install any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
-   *  Windows 7
-   *  Windows 8.1
    *  Windows 10
    *  Windows 11
 

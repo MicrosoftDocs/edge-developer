@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/24/2022
+ms.date: 01/02/2023
 ---
 # Run commands via keyboard with Command Palette
 
@@ -31,7 +31,6 @@ By default, Command Palette isn't enabled. To enable the Command Palette experim
 
    ![Enabling the Command Palette flag in the edge://flags page](./media/command-palette-flag.png)
 
-The flags page for Microsoft Edge 107 or later shows the shortcut `Ctrl+Q`.
 
 <!-- ====================================================================== -->
 ## Open Command Palette
