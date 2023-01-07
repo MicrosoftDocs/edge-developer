@@ -94,19 +94,19 @@ For details, see [Get started using the DevTools extension for Visual Studio Cod
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
-TODO
+webView.CoreWebView2.Navigate("file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html");
 ```
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 ```csharp
-TODO
+webView.CoreWebView2.Navigate("file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html");
 ```
 
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
-TODO
+webView->Navigate(L"file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html");
 ```
 
 ---
@@ -184,19 +184,22 @@ To obtain the above string:
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
-TODO
+// Define htmlString with the string representation of HTML as above
+webView.CoreWebView2.NavigateToString(htmlString);
 ```
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 ```csharp
-TODO
+// Define htmlString with the string representation of HTML as above
+webView.CoreWebView2.NavigateToString(htmlString);
 ```
 
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
-TODO
+// Define htmlString with the string representation of HTML as above
+webView->NavigateToString(htmlString);
 ```
 
 ---
@@ -231,13 +234,6 @@ This approach lets you specify the cross-origin access, by using the `CoreWebVie
 
 ---
 
-
-<!-- ---------------------------------------- -->
-#### Example of a virtual host name
-
-TODO
-
-
 <!-- ---------------------------------------- -->
 #### Example of virtual host name mapping
 
@@ -246,19 +242,22 @@ TODO
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
-TODO
+webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo", "C:\Github\Demos\demo-to-do", CoreWebView2HostResourceAccessKind.DenyCors);
+webView.CoreWebView2.Navigate("https://demo/index.html");
 ```
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 ```csharp
-TODO
+webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo", "C:\Github\Demos\demo-to-do", CoreWebView2HostResourceAccessKind.DenyCors);
+webView.CoreWebView2.Navigate("https://demo/index.html");
 ```
 
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
-TODO
+webView->SetVirtualHostNameToFolderMapping("demo", "C:\\Github\\Demos\\demo-to-do", COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND_DENY_CORS);
+webView->Navigate("https://demo/index.html");
 ```
 
 ---
@@ -307,7 +306,74 @@ Another disadvantage of using the `WebResourceRequested` event is that it can be
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
-todo
+// Reading of response content stream happens asynchronously, and WebView2 does not directly
+// dispose the stream once it read. Therefore, use the following stream class which will
+// properly dispose when WebView2 has read all data.
+// Please see [CoreWebView2 does not close stream content](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2513)
+// for more details
+class ManagedStream : Stream {
+    public ManagedStream(Stream s)
+    {
+        s_ = s;
+    }
+
+    public override bool CanRead => s_.CanRead;
+
+    public override bool CanSeek => s_.CanSeek;
+
+    public override bool CanWrite => s_.CanWrite;
+
+    public override long Length => s_.Length;
+
+    public override long Position { get => s_.Position; set => s_.Position = value; }
+
+    public override void Flush()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override long Seek(long offset, SeekOrigin origin)
+    {
+        return s_.Seek(offset, origin);
+    }
+
+    public override void SetLength(long value)
+    {
+        throw new NotImplementedException();
+    }
+
+    public override int Read(byte[] buffer, int offset, int count)
+    {
+        int read = 0;
+        try
+        {
+            read = s_.Read(buffer, offset, count);
+            if (read == 0)
+            {
+                s_.Dispose();
+            }
+        } catch (Exception e)
+        {
+            s_.Dispose();
+            throw e;
+        }
+        return read;
+    }
+
+    public override void Write(byte[] buffer, int offset, int count)
+    {
+        throw new NotImplementedException();
+    }
+
+   private Stream s_;
+}
+
+webView.CoreWebView2.WebResourceRequested += delegate (object sender, CoreWebView2WebResourceRequestedEventArgs args)
+{
+   FileStream fs = File.OpenRead(path);
+   ManagedStream ms = new ManagedStream(fs);
+   args.Response.Content = ms;
+};
 ```
 
 ##### [WinRT/C#](#tab/winrtcsharp)
@@ -324,7 +390,30 @@ todo
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
-todo
+CHECK_FAILURE(m_webView->AddWebResourceRequestedFilter(
+                L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_ALL));
+CHECK_FAILURE(m_webView->add_WebResourceRequested(
+               Callback<ICoreWebView2WebResourceRequestedEventHandler>(
+                    this, &AppWindow::WebResourceRequestedEventHandler)
+                    .Get(),
+                &m_webResourceRequestedToken));
+
+HRESULT AppWindow::WebResourceRequestedEventHandler(
+    ICoreWebView2* webview, ICoreWebView2WebResourceRequestedEventArgs* args)
+{
+   wil::com_ptr<ICoreWebView2WebResourceRequest> request;
+   wil::com_ptr<ICoreWebView2WebResourceResponse> response;
+   wil::com_ptr<IStream> stream;
+   std::wstring assetsFilePath = L"C:\\Demo";
+   CHECK_FAILURE(args->get_Request(&request));
+   wil::unique_cotaskmem_string uri;
+   CHECK_FAILURE(request->get_Uri(&uri));
+   if (wcsncmp(uri.get(), L"https://demo", ARRAYSIZE(L"https://demo") - 1) == 0)
+   {
+      ur
+       assetsFilePath = L"assets\\";
+   }
+}
 ```
 
 ---
