@@ -15,21 +15,25 @@ ms.date: 01/12/2023
 <!-- ====================================================================== -->
 ## Import and export your DevTools instances with the new enhanced traces feature
 
-<!-- Subtitle: Use enhanced traces to preserve Console mesages, DOM snapshots, and the JavaScript running on the page when exporting a heap snapshot or performance trace. -->
+<!-- Subtitle: Use enhanced traces to preserve Console messages, DOM snapshots, and the JavaScript running on the page when exporting a heap snapshot or performance trace. -->
 
 In Microsoft Edge 109, you can turn on new settings to export enhanced traces from the **Memory** and **Performance** tools.  These enhanced traces include more information, such as messages logged to the Console, snapshots of the DOM, and the JavaScript that was running on the page at the time of recording.  When saving performance profiles, heap snapshots, allocation timelines, or allocation sampling, you can now export a new `.devtools` file format.
 
-When you then import the `.devtools` file, a new instance of DevTools will open with the state of your **Console**, **Sources**, and **Elements** tools preserved.  These enhanced traces offer a powerful new way to collaborate and share the information in your DevTools. To give this feature a try:
+When you then import the `.devtools` file, a new instance of DevTools opens, with the state of your **Console**, **Sources**, and **Elements** tools preserved.  These enhanced traces offer a powerful new way to collaborate and share the information in your DevTools. To give this feature a try:
 
-1. In DevTools, open **Settings**.<!-- copy tagging from Overview -->
+1. In DevTools, open **Settings**.<!-- todo: copy tagging from Overview -->
 
-1. Under **Persistence**, turn on the **Export enhanced performance and memory traces** setting.  If you want to preserve Console messages, JavaScript, or DOM snapshots, turn on the settings for each of those, respectively.
+1. Under **Persistence**, select the **Export enhanced performance and memory traces** checkbox:
+
+   ![Settings > Preferences > Persistence checkboxes](./devtools-109-images/enhanced-trace-settings.png)
+
+1. If you want to preserve Console messages, JavaScript, or DOM snapshots, select the corresponding checkboxes.
+
+1. Click the **Close** (**x**) button in **Settings**.
 
 1. In the **Memory** tool, take a heap snapshot.
 
-   Or, in the **Performance** tool, take a recording:
-
-   ![Settings > Preferences > Persistence checkboxes](./devtools-109-images/enhanced-trace-settings.png)
+   Or, in the **Performance** tool, take a recording.
 
 1. In the **Memory** tool, click the **Save** button.<!-- todo: test -->
 
@@ -111,6 +115,7 @@ See also:
 ## Track objects discarded by garbage collection when Allocation sampling in the Memory tool
 
 <!-- Subtitle: Use the new options under Allocation sampling to track how much garbage your website or app is generating. -->
+<!-- or: how much detached memory, memory leaks, unused allocated memory -->
 
 In Microsoft Edge 109, the **Allocation sampling** profiling type in the **Memory** tool now has two new options:
 
