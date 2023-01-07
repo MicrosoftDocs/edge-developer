@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 109)
-description: "Item.  Item.  And more."
+description: "Export DevTools instances with enhanced traces.  Debug Recalculate Styles events in Performance tool with selector stats.  Track GC'd objects when Allocation sampling in Memory tool.  Heap Snapshot Visualizer.  Quick View in Focus Mode has all tools.  Navigate directly to Styles in Elements tool.  And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -23,7 +23,7 @@ When you then import the `.devtools` file, a new instance of DevTools opens, wit
 
 1. In DevTools, open **Settings**.<!-- todo: copy tagging from Overview -->
 
-1. Under **Persistence**, select the **Export enhanced performance and memory traces** checkbox:
+1. In the **Persistence** section of the **Preferences** settings page, select the **Export enhanced performance and memory traces** checkbox:
 
    ![Settings > Preferences > Persistence checkboxes](./devtools-109-images/enhanced-trace-settings.png)
 
