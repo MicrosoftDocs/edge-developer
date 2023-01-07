@@ -316,16 +316,17 @@ To control Image Enhancement, go to `edge://settings/privacy` and turn on or off
 <!-- ====================================================================== -->
 ## Import browser data
 
-Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time.  You can import your browser data to Microsoft Edge from another browser.  During import, you can either keep your existing data, or delete it and start fresh.  The data includes your favorites, browsing history, autofill data, extensions, settings, and other browsing data.
+Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time. You can import your browser data to Microsoft Edge from another browser. The data includes your favorites, browsing history, cookies, autofill data, extensions, settings, and other browsing data.
 
-Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge.  With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you sign in and sync your browsing data.
+With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system. Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you sign in and sync your browsing data.
+
+You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`
 
 ![Import.](./media/migration.png)
 
-You can import extensions from a different browser such as Google Chrome. If the extension is not available on the Microsoft Edge Add-ons website, Microsoft Edge imports a local copy and asks for permission before starting. The permissions for some of the extensions may have changed. To review the extension permissions, go to `edge://extensions`.
+When importing extensions, if the extension is not available on the Microsoft Edge Add-ons website, Microsoft Edge imports a local copy and asks for permission before starting. The permissions for some of the extensions may have changed. To review the extension permissions, go to `edge://extensions`.
 
-To import data from another browser at any time, go to `edge://settings/importData`.
-
+Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge. 
 
 <!-- ====================================================================== -->
 ## Install and update
