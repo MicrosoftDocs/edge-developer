@@ -250,7 +250,27 @@ DevTools shows you a breakdown of memory allocation by function.  The default vi
 
 ![Allocation sampling.](../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png)
 
+## Use settings for Allocation sampling to reduce garbage
 
+By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are generated, garbage collected (GC'd), and then disappear aren't tracked by either **Allocation sampling** or **Allocation instrumentation on timeline**.
+
+You can configure the **Allocation sampling** profiling type to track objects that are discarded by GC with settings.
+
+1. Click the **Allocation sampling** radio button.
+
+1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
+
+    ![Allocation sampling GC settings.](../media/memory-problems-memory-allocation-sampling-gc-settings.png)
+
+1. Click the **Start** button.
+
+1. On the webpage, perform actions that you want to investigate.
+
+1. Click the **Stop** button when you have finished all of your actions.
+
+DevTools now tracks all of the objects that were GC'd during the recording.  Use these settings to understand how much garbage your website or app is generating.  The data reported by **Allocation sampling** will help you identify the functions that are generating the most garbage.  
+
+If you are investigating objects that were only GC'd during specific major or minor GC operations, configure the settings appropriately to track the operation you care about. To learn more about the differences between major and minor GC, read [Trash talk: the Orinoco garbage collector | V8 JavaScript engine developer blog](https://v8.dev/blog/trash-talk).
 <!-- ====================================================================== -->
 ## Spot frequent garbage collections
 
