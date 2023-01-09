@@ -283,4 +283,4 @@ Congratulations! You've successfully embedded web content into native applicatio
 <!-- ====================================================================== -->
 ## See also
 
-* [Web/Native Interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
+* [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
