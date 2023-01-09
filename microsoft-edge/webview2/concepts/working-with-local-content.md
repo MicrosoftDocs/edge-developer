@@ -256,8 +256,8 @@ webView.CoreWebView2.Navigate("https://demo/index.html");
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
-webView->SetVirtualHostNameToFolderMapping("demo", "C:\\Github\\Demos\\demo-to-do", COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND_DENY_CORS);
-webView->Navigate("https://demo/index.html");
+webView->SetVirtualHostNameToFolderMapping(L"demo", L"C:\\Github\\Demos\\demo-to-do", COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND_DENY_CORS);
+webView->Navigate(L"https://demo/index.html");
 ```
 
 ---
@@ -268,17 +268,7 @@ webView->Navigate("https://demo/index.html");
 
 Another way you can host local content in a WebView2 control is by relying on the `WebResourceRequested` event.  This event is triggered when the control attempts to load a resource.  You can use this event to intercept the request and provide the local content, as described in [Custom management of network requests](../how-to/webresourcerequested.md).
 
-#### Advantages
-
-The main advantage of using the `WebResourceRequested` event to load local content in a WebView2 control is that it allows the developer to customize the behavior on a per-request basis. This means that they can decide which requests to intercept and provide their own content for, and which requests to let the control handle normally. This can be useful for implementing features like offline mode, where only certain types of requests need to be handled differently.
-
-Another advantage of using the `WebResourceRequested` event is that it gives the developer more control over the content that is loaded into the WebView2 control. They can provide custom content for each request, which can be useful for loading content from a local source or for simulating a production environment.
-
-#### Disadvantages
-
-There are also some disadvantages to using the `WebResourceRequested` event. One disadvantage is that it requires more code and may be more difficult to implement than other methods, such as virtual host mapping and need knowledge of HTTP to be able to construct a proper response. From WebView2's perspective the resource will have come via the network and WebView2 will adhere to the headers that are set by the app as part of the response. 
-
-Another disadvantage of using the `WebResourceRequested` event is that it can be less efficient than other methods. Because the developer has to intercept each request and provide their own content, it can add an extra layer of overhead to the process of loading content into the WebView2 control. This can make the control slower to load content and may affect the overall performance of the application.
+`WebResourceRequested` allows the developer to customize the behavior of local content on a per-request basis. This means that they can decide which requests to intercept and provide their own content for, and which requests to let the control handle normally.  However, it requires more code, such as virtual host mapping and need knowledge of HTTP to be able to construct a proper response. From WebView2's perspective the resource will have come via the network and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event will also be slower than other approaches due to the needed cross-process communication and processing per each request.
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -367,31 +357,175 @@ class ManagedStream : Stream {
 
    private Stream s_;
 }
-
+webView.CoreWebView2.AddWebResourceRequestedFilter("https://demo/*", CoreWebView2WebResourceContext.All);
 webView.CoreWebView2.WebResourceRequested += delegate (object sender, CoreWebView2WebResourceRequestedEventArgs args)
 {
-   FileStream fs = File.OpenRead(path);
-   ManagedStream ms = new ManagedStream(fs);
-   args.Response.Content = ms;
+    string assetsFilePath = "C:\\Demo\\" + args.Request.Uri.Substring("https://demo/*".Length - 1);
+    try
+    {
+        FileStream fs = File.OpenRead(assetsFilePath);
+        ManagedStream ms = new ManagedStream(fs);
+        string headers = "";
+        if (assetsFilePath.EndsWith(".html"))
+        {
+            headers = "Content-Type: text/html";
+        }
+        else if (assetsFilePath.EndsWith(".jpg"))
+        {
+            headers = "Content-Type: image/jpeg";
+        } else if (assetsFilePath.EndsWith(".png"))
+        {
+            headers = "Content-Type: image/png";
+        }
+        else if (assetsFilePath.EndsWith(".css"))
+        {
+            headers = "Content-Type: text/css";
+        }
+        else if (assetsFilePath.EndsWith(".js"))
+        {
+            headers = "Content-Type: application/javascript";
+        }
+
+        args.Response = webView.CoreWebView2.Environment.CreateWebResourceResponse(ms, 200, "OK", headers);
+    }
+    catch (Exception)
+    {
+        args.Response = webView.CoreWebView2.Environment.CreateWebResourceResponse(null, 404, "Not found", "");
+    }
 };
 ```
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-See the .NET/C# example.
-<!-- or delete the above line and copy the same code listing into both tabs -->
-
-<!--
 ```csharp
-todo
+class ManagedStream : IRandomAccessStream
+{
+    public ManagedStream(IRandomAccessStream s)
+    {
+        s_ = s;
+    }
+
+    public override bool CanRead => s_.CanRead;
+
+    public override bool CanSeek => s_.CanSeek;
+
+    public override bool CanWrite => s_.CanWrite;
+
+
+
+    ulong IRandomAccessStream.Position => { get => s_.Position; set => s_.Position = value; }
+
+    public ulong Size => s_.Size;
+
+    public IInputStream GetInputStreamAt(ulong position)
+    {
+        throw new NotImplementedException();
+    }
+
+    public IOutputStream GetOutputStreamAt(ulong position)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Seek(ulong position)
+    {
+        return s_.Seek(position);
+    }
+
+    public IRandomAccessStream CloneStream()
+    {
+        throw new NotImplementedException();
+    }
+
+    public IAsyncOperationWithProgress<IBuffer, uint> ReadAsync(IBuffer buffer, uint count, InputStreamOptions options)
+    {
+        IAsyncOperationWithProgress<IBuffer, uint> result;
+        try
+        {
+            result = s_.ReadAsync(buffer, count, options);
+            // Once read is complete if no data was read, dispose the
+            // underlying stream
+            result.Completed += new AsyncOperationWithProgressCompletedHandler<IBuffer, uint>(delegate (IAsyncOperationWithProgress<IBuffer, uint> asyncInfo, AsyncStatus asyncStatus)
+            {
+                if (asyncInfo.GetResults().Length == 0)
+                {
+                    s_.Dispose();
+                }
+            });
+        }
+        catch (Exception e)
+        {
+            s_.Dispose();
+            throw e;
+        }
+        return result;
+    }
+
+    public IAsyncOperationWithProgress<uint, uint> WriteAsync(IBuffer buffer)
+    {
+        throw new NotImplementedException();
+    }
+
+    public IAsyncOperation<bool> FlushAsync()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Dispose()
+    {
+        throw new NotImplementedException();
+    }
+
+    private IRandomAccessStream s_;
+}
+
+WebView2.CoreWebView2.AddWebResourceRequestedFilter("https://demo/*", CoreWebView2WebResourceContext.All);
+WebView2.CoreWebView2.WebResourceRequested += async delegate (CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs args)
+{
+    string filename = args.Request.Uri.Substring("https://demo/*".Length - 1);
+    try
+    {
+        Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+        Windows.Storage.StorageFolder demo = await storageFolder.GetFolderAsync("Demo");
+        Windows.Storage.StorageFile asset = await demo.GetFileAsync(filename);
+        
+        ManagedStream ms = new ManagedStream(await asset.OpenReadAsync());
+        string headers = "";
+        if (filename.EndsWith(".html"))
+        {
+            headers = "Content-Type: text/html";
+        }
+        else if (filename.EndsWith(".jpg"))
+        {
+            headers = "Content-Type: image/jpeg";
+        }
+        else if (filename.EndsWith(".png"))
+        {
+            headers = "Content-Type: image/png";
+        }
+        else if (filename.EndsWith(".css"))
+        {
+            headers = "Content-Type: text/css";
+        }
+        else if (filename.EndsWith(".js"))
+        {
+            headers = "Content-Type: application/javascript";
+        }
+
+        args.Response = WebView2.CoreWebView2.Environment.CreateWebResourceResponse(ms, 200, "OK", headers);
+    }
+    catch (Exception)
+    {
+        args.Response = WebView2.CoreWebView2.Environment.CreateWebResourceResponse(null, 404, "Not found", "");
+    }
+};
 ```
--->
 
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
 CHECK_FAILURE(m_webView->AddWebResourceRequestedFilter(
-                L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_ALL));
+                L"https://demo/*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_ALL));
 CHECK_FAILURE(m_webView->add_WebResourceRequested(
                Callback<ICoreWebView2WebResourceRequestedEventHandler>(
                     this, &AppWindow::WebResourceRequestedEventHandler)
@@ -401,18 +535,64 @@ CHECK_FAILURE(m_webView->add_WebResourceRequested(
 HRESULT AppWindow::WebResourceRequestedEventHandler(
     ICoreWebView2* webview, ICoreWebView2WebResourceRequestedEventArgs* args)
 {
-   wil::com_ptr<ICoreWebView2WebResourceRequest> request;
-   wil::com_ptr<ICoreWebView2WebResourceResponse> response;
-   wil::com_ptr<IStream> stream;
-   std::wstring assetsFilePath = L"C:\\Demo";
-   CHECK_FAILURE(args->get_Request(&request));
-   wil::unique_cotaskmem_string uri;
-   CHECK_FAILURE(request->get_Uri(&uri));
-   if (wcsncmp(uri.get(), L"https://demo", ARRAYSIZE(L"https://demo") - 1) == 0)
-   {
-      ur
-       assetsFilePath = L"assets\\";
-   }
+    wil::com_ptr<ICoreWebView2WebResourceRequest> request;
+    wil::com_ptr<ICoreWebView2WebResourceResponse> response;
+    wil::com_ptr<IStream> stream;
+    
+    CHECK_FAILURE(args->get_Request(&request));
+    wil::unique_cotaskmem_string uri;
+    CHECK_FAILURE(request->get_Uri(&uri));
+    std::wstring assetsFilePath = L"C:\\Demo";
+    assetsFilePath += (uri.get() + ARRAYSIZE(L"https://demo"));
+    wil::com_ptr<IStream> stream;
+    SHCreateStreamOnFileEx(
+        assetsFilePath.c_str(), STGM_READ, FILE_ATTRIBUTE_NORMAL, FALSE,
+        nullptr, &stream);
+    if (stream)
+    {
+        std::wstring headers;
+        if (assetsFilePath.substr(assetsFilePath.find_last_of(L".") + 1) ==
+            L"html")
+        {
+            headers = L"Content-Type: text/html";
+        }
+        else if (
+            assetsFilePath.substr(assetsFilePath.find_last_of(L".") + 1) ==
+            L"jpg")
+        {
+            headers = L"Content-Type: image/jpeg";
+        }
+        else if (
+            assetsFilePath.substr(assetsFilePath.find_last_of(L".") + 1) ==
+            L"png")
+        {
+            headers = L"Content-Type: image/png";
+        }
+        else if (
+            assetsFilePath.substr(assetsFilePath.find_last_of(L".") + 1) ==
+            L"css")
+        {
+            headers = L"Content-Type: text/css";
+        }
+        else if (
+            assetsFilePath.substr(assetsFilePath.find_last_of(L".") + 1) ==
+            L"js")
+        {
+            headers = L"Content-Type: application/javascript";
+        }
+
+        CHECK_FAILURE(
+            webViewEnvironment->CreateWebResourceResponse(
+                stream.get(), 200, L"OK", headers.c_str(), &response));
+        CHECK_FAILURE(args->put_Response(response.get()));
+    }
+    else
+    {
+        CHECK_FAILURE(
+            webViewEnvironment->CreateWebResourceResponse(
+                nullptr, 404, L"Not Found", L"", &response));
+        CHECK_FAILURE(args->put_Response(response.get()));
+    }
 }
 ```
 
