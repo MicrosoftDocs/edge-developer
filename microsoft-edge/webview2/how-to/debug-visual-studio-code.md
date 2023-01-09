@@ -108,9 +108,15 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "useWebView": true
 ```
 
-Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger. 
+Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger.
 
-You will also need to add a new REGKEY `*=--remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port. Open the `Registry Editor` by clicking the **Windows Key** and searching for `Registry Editor`. Launch the `Registry Editor` application and select **Yes** to allow editing. Set the registry key “HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments” equal to “--remote-debugging-port=9222”.  To do this, in the editor navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` by clicking on each subfolder under the path. If this path does not exist, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft` in the editor and right click on the `Microsoft` folder and select **New** and then select **Key**.  Enter `Edge` for the name of the new key and continue to do this for each subfolder until you have the full path: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`. Right click on the `AdditionalBrowserArguments` folder and select **New** and then select **String Value**. Rename `New Value #1` to `*`. Right click on the **\*** value and select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify the edit window matches the following:
+You will also need to add a new REGKEY `*--remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port.
+
+Open the `Registry Editor` by clicking the **Windows Key** and searching for `Registry Editor`. Launch the `Registry Editor` application and select **Yes** to allow editing. Set the registry key “HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments” equal to “--remote-debugging-port=9222”.  
+
+To do this, in the editor navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` by clicking on each subfolder under the path. If this path does not exist, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft` in the editor and right click on the `Microsoft` folder and select **New** and then select **Key**.  Enter `Edge` for the name of the new key and continue to do this for each subfolder until you have the full path: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
+
+Right click on the `AdditionalBrowserArguments` folder and select **New** and then select **String Value**. Rename `New Value #1` to `*`. Right click on the **\*** value and select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify the edit window matches the following:
 
    ![Set Registry Key](./media/set-debugging-port.png)
 
