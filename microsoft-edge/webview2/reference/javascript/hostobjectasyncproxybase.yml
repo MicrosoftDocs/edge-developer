@@ -13,8 +13,9 @@ summary: >-
 
 
   Host object proxies are JavaScript Proxy objects that intercept all property get, property set, and method
-  invocations. Properties or methods that are a part of the `Function` or `Object` prototype are run locally. Additionally
-  any property or method in the `chrome.webview.hostObjects.options.forceLocalProperties` array are also run locally.
+  invocations. Properties or methods that are a part of the `Function` or `Object` prototype are run in the JavaScript engine of the current document. Additionally
+  any property or method in the `chrome.webview.hostObjects.options.forceLocalProperties` array are also run in the JavaScript engine of the current document.
+
   This defaults to including optional methods that have meaning in JavaScript like `toJSON` and `Symbol.toPrimitive`<!--
   -->. Add more to the array as required.
 remarks: ''

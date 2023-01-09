@@ -4,7 +4,7 @@ metadata:
   title: JavaScript APIs in WebView2
 name: WebView2Script
 type: package
-summary: '' # TODO: Add WebView2 JavaScript API overview. See ADO 41704272.
+summary: 'Web pages can use these JavaScript APIs to communicate with WebView2 objects.' # TODO: Add WebView2 JavaScript API overview. See ADO 41704272.
 classes:
   - 'WebView2Script!Chrome:class'
   - 'WebView2Script!HostObjectAsyncProxy:class'

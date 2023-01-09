@@ -3,7 +3,7 @@ name: WebView
 uid: 'WebView2Script!WebView:class'
 package: WebView2Script!
 fullName: WebView
-summary: WebView is the class to access the WebView2 specific APIs available to the script running within WebView2.
+summary: WebView is the class to access the WebView2-specific APIs that are available to the script running within a WebView2 app.
 remarks: ''
 isPreview: false
 isDeprecated: false

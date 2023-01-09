@@ -13,7 +13,8 @@ properties:
     uid: 'WebView2Script!Chrome#webview:member'
     package: WebView2Script!
     fullName: webview
-    summary: Exposes WebView2 specific JavaScript APIs.
+    summary: Makes the JavaScript APIs in WebView2 available to the webpage.
+
     remarks: ''
     isPreview: false
     isDeprecated: false
