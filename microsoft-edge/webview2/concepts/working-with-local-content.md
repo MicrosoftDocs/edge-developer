@@ -249,7 +249,9 @@ webView.CoreWebView2.Navigate("https://demo/index.html");
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 ```csharp
-webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo", "C:\Github\Demos\demo-to-do", CoreWebView2HostResourceAccessKind.DenyCors);
+Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+Windows.Storage.StorageFolder demo = await storageFolder.GetFolderAsync("Demo");
+webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo", demo.Path, CoreWebView2HostResourceAccessKind.DenyCors);
 webView.CoreWebView2.Navigate("https://demo/index.html");
 ```
 
