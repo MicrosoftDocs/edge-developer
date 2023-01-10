@@ -83,7 +83,7 @@ The DevTools extension for Visual Studio Code allows you to:
 | Emulate different devices and see your project in different display modes. | [Device emulation](./microsoft-edge-devtools-extension/device-state-emulation.md) |
 | View the runtime DOM structure and layout of your page using the **Elements** tool. | [Opening source files from the Elements tool](./microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md) |
 | Analyze and change CSS styles of your project with live preview and live changes to your project's source files. | [Update .css files from within the Styles tool (CSS mirror editing)](./microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md) |
-| Analyze site traffic using the **Network** tool. | [Network tool integration](./microsoft-edge-devtools-extension/network-tool-integration) |
+| Analyze site traffic using the **Network** tool. | [Network tool integration](./microsoft-edge-devtools-extension/network-tool-integration.md) |
 | Log information, try out JavaScript, and access the Window/DOM using the **Console** tool. | [Console integration](./microsoft-edge-devtools-extension/console-integration.md) |
 | Inspect storage and Service Workers using the **Application** tool. | [Application tool integration](./microsoft-edge-devtools-extension/application-tool-integration.md) |
 | Use the extension in the Visual Studio Code debugging workflow. | [Integration with Visual Studio Code debugging](./microsoft-edge-devtools-extension/debugging-a-webpage.md) |
