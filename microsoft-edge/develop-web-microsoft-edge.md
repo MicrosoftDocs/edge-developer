@@ -101,7 +101,7 @@ See [Test and automation in Microsoft Edge](test-and-automation/test-and-automat
 
 
 <!-- ====================================================================== -->
-## Web platform
+## Development tips for Microsoft Edge
 
 Considerations for developing websites and products for the web platform include the following:
 
@@ -112,7 +112,7 @@ Considerations for developing websites and products for the web platform include
 *  Customizing the Password Reveal button.
 *  Detecting Windows 11 by using User-Agent Client Hints.
 
-See [Web platform](web-platform/web-platform.md).
+See [Web platform overview](web-platform/web-platform.md).
 
 
 <!-- ====================================================================== -->
