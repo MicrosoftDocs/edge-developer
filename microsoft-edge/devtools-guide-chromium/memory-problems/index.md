@@ -250,6 +250,8 @@ DevTools shows you a breakdown of memory allocation by function.  The default vi
 
 ![Allocation sampling.](../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png)
 
+
+<!-- ====================================================================== -->
 ## Use settings for Allocation sampling to reduce garbage
 
 By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are generated, garbage collected (GC'd), and then disappear aren't tracked by either **Allocation sampling** or **Allocation instrumentation on timeline**.
