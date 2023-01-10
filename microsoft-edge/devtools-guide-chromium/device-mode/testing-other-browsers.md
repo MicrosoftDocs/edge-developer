@@ -122,7 +122,7 @@ The following list is a sample of cloud-based emulators and testing sites. Revie
 
 * [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
 
-* [Mobileum](https://www.sigos.com/app-experience/) doesn't use emulators, but real devices which you can control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
+* [Mobileum](https://www.mobileum.com/) doesn't use emulators, but real devices which you can control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
 
 * [HeadSpin](https://www.headspin.io/) helps you perform manual cross-browser testing on thousands of real devices, browsers, and operating systems.  You can record videos of complex bugs and share them through integration such as Slack, JIRA, and more.  Fast forward your go-to-market launch by testing in parallel.
 
