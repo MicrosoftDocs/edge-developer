@@ -91,7 +91,7 @@ By default, this sample app uses the latest Window 10 SDK version you have insta
 
 To install a Windows 10 SDK:
 
-1. Go to [Windows SDK and emulator archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/).
+1. Go to [Windows SDK and emulator archive](https://developer.microsoft.com/windows/downloads/sdk-archive/).
 
 1. On one of the following rows, click the **Install SDK** link:
    *  Windows 10 SDK version 2104 (10.0.20348.0) (or later)

@@ -28,7 +28,7 @@ An app can also use the `OpenDevToolsWindow` API to programmatically open a DevT
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.OpenDevToolsWindow Method](/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#opendevtoolswindow)
+* [CoreWebView2.OpenDevToolsWindow Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#opendevtoolswindow)
 
 ##### [Win32/C++](#tab/win32cpp)
 
