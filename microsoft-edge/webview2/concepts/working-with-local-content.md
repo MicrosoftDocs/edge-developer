@@ -69,8 +69,8 @@ file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html
 ```
 
 That path is from a clone of the following on Windows:
-* [Demo To Do rendered page](https://microsoftedge.github.io/Demos/demo-to-do/)
-* [Demo To Do source code](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
+* [Demo To Do - rendered page](https://microsoftedge.github.io/Demos/demo-to-do/)
+* [Demo To Do - source code](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
 
 To obtain the above string:
 
@@ -82,7 +82,7 @@ To obtain the above string:
 
 1. In the **Edge DevTools: Browser** tab, copy the string from the address bar.
 
-For details, see [Get started using the DevTools extension for Visual Studio Code](https://learn.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/get-started).
+For details about this approach, see [Get started using the DevTools extension for Visual Studio Code](../../visual-studio-code/microsoft-edge-devtools-extension/get-started.md).
 
 
 <!-- ------------------------------ -->
