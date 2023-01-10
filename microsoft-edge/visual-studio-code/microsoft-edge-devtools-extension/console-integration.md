@@ -11,7 +11,7 @@ ms.date: 10/06/2022
 
 In the **Edge DevTools** tab's **Console** tool in Visual Studio Code with this extension, you can do everything that you can do when using Microsoft Edge DevTools inside the browser.
 
-![The DevTools Console inside the extension as an own tab](./console-integration-images/console/console-full.png)
+![The DevTools Console inside the extension as an own tab](./console-integration-images/console-full.png)
 
 You can:
 *  View [log messages](/microsoft-edge/devtools-guide-chromium/console/console-log).
