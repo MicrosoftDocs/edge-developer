@@ -175,8 +175,7 @@ Use the **Content scripts** tab of the **Navigator** pane to view any content sc
 
 ![The Content scripts tab of the Navigator pane.](../media/content-scripts-tab.msft.png)
 
-When the debugger steps into code that you don't recognize, you might want to mark that code as **Ignore List**, to avoid stepping into that code.  See [Add content scripts to the Ignore List](../javascript/guides/mark-content-scripts-library-code.md).
-
+When the debugger steps into code that you don't recognize, you might want to add that code to the **Ignore List**, to avoid stepping into that code. See [Add content scripts to the Ignore List](../javascript/guides/mark-content-scripts-library-code.md).
 
 #### See also
 

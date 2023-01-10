@@ -1,6 +1,6 @@
 ---
 title: Add content scripts to the Ignore List
-description: Enable "Mark content scripts as Ignore List" from Settings > Ignore List.
+description: Enable "Add content scripts to ignore list" from Settings > Ignore List.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -22,13 +22,15 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Add content scripts to the Ignore List
 
-When you use the **Sources** tool to step through code, sometimes you pause on code that you don't recognize.  You're probably paused on code for one of the Microsoft Edge Extensions that you installed.  To avoid pausing on extension code:
+When you use the **Sources** tool to step through code, sometimes you pause on code that you don't recognize and don't want to step through, such as code for a Microsoft Edge extension that's installed.
+
+To avoid pausing on extension code:
 
 1. In DevTools, in the upper right, click the **Settings** (![Settings icon](../../media/settings-gear-icon-light-theme.png)) button.
 
-1. In the **Settings** > **Ignore List** page, select the **Mark content scripts as Ignore List** checkbox:
+1. In the **Settings** > **Ignore List** page, select the **Add content scripts to ignore list** checkbox:
 
-   ![Enabling the 'Mark content scripts as Ignore List' checkbox](../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png)
+   ![Enabling the 'Add content scripts to ignore list' checkbox](../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png)
 
 1. Click the **Close** DevTools (![Close DevTools icon](../../media/close-devtools-icon-light-theme.png)) button.
 

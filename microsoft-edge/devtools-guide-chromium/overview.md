@@ -412,7 +412,6 @@ The **Customize and control DevTools** (![Customize and control DevTools](media/
 
 ### Close DevTools button
 
-<!-- todo: add icon -->
 Click the **Close** DevTools (![Close DevTools icon.](media/close-devtools-icon-light-theme.png)) button in the upper right corner of DevTools to close DevTools and use the entire window to display the current webpage.
 
 
@@ -495,8 +494,7 @@ See also [Run commands with the Microsoft Edge DevTools Command menu](command-me
 <!-- ====================================================================== -->
 ## Customizing DevTools
 
-<!-- todo: add icon -->
-You can customize DevTools to meet your needs for the way you work.  To change settings, click **Settings** (the gear icon on the top right), or press `F1`.
+You can customize DevTools to meet your needs for the way you work.  To change settings, click the **Settings** (![Settings icon](media/settings-gear-icon-light-theme.png)) button, or press `F1`.
 
 In the **Settings** > **Preferences** page, you can change several parts of DevTools.  For example, you can use the **Match the browser language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
 
@@ -504,13 +502,13 @@ In the **Settings** > **Preferences** page, you can change several parts of DevT
 
 You can also change the settings of advanced features, such as:
 *  Add local files to a [Workspace](workspaces/index.md).
-*  Filter library code with the **Ignore List**.
+*  Filter library code by using the **Ignore List**.
 *  Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 *  Select a network **Throttling** profile.
 *  Define simulated **Locations**.
 *  Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
 
-![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code.](media/devtools-intro-match-keys.msft.png)
+![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code](media/devtools-intro-match-keys.msft.png)
 
 
 <!-- ====================================================================== -->
