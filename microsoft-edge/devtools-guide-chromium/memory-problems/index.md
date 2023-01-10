@@ -254,7 +254,7 @@ DevTools shows you a breakdown of memory allocation by function.  The default vi
 <!-- ====================================================================== -->
 ## Use settings for Allocation sampling to reduce garbage
 
-By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are generated, garbage collected (GC'd), and then disappear aren't tracked by either **Allocation sampling** or **Allocation instrumentation on timeline**.
+By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are created, removed, and then garbage collected (GC'd) aren't displayed in the **Memory** tool when profiling using the **Allocation sampling** or **Allocation instrumentation on timeline** types.
 
 You can configure the **Allocation sampling** profiling type to track objects that are discarded by GC with settings.
 
