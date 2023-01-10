@@ -23,7 +23,7 @@ To view a formatted JSON response from a web server:
 
 1. Open a new tab or window in Microsoft Edge.
 
-1. Type a URL that returns JSON data in the address bar. For example, use [this sample JSON response](https://codepo8.github.io/json-dummy-data/411k-min.json).
+1. Type a URL that returns JSON data in the address bar. For example, use [this sample JSON response](https://microsoftedge.github.io/Demos/json-dummy-data/411k-min.json).
 
 1. Microsoft Edge detects that the returned data is JSON and formats it automatically.
 
@@ -47,11 +47,11 @@ To view a formatted JSON file stored on your device:
 <!-- ====================================================================== -->
 ## Detect invalid JSON data
 
-JSON data can sometimes be invalid. For example, if the keys aren't surrounded by double quotes, or if there's a comma after the last key/value pair, the JSON data will be invalid.
+JSON data can sometimes be invalid. For example, not adding double quotes around keys or leaving a trailing comma after the last key/value pair is invalid in JSON.
 
-When the **JSON viewer** detects invalid JSON, the syntax is still highlighted but the content isn't formatted and objects can't be collapsed or expanded.
+The **JSON viewer** applies syntax highlighting to invalid JSON, but does not format the content and you can't collapse or expand objects.
 
-Additionally, an error is printed in the **Console** tool.
+You can find information about the invalid syntax in the **Console** tool, where the **JSON viewer** reports errors.
 
 As seen below, invalid JSON responses are shown unformatted but highlighted, and an error is printed in the **Console** to help diagnose the syntax error:
 
