@@ -12,6 +12,16 @@ ms.date: 01/12/2023
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- Todo:
+Items 1-4 (of 6): create final pngs.  
+Check flow/positioning of pngs vs text steps.
+Link to Chromium items when exist.
+Link See Also items to articles when blog posts or PRs are published.
+Final edit pass on text.
+-->
+
+
+
 <!-- ====================================================================== -->
 ## Import and export your DevTools instances with the new enhanced traces feature
 
@@ -21,7 +31,7 @@ In Microsoft Edge 109, you can turn on new settings to export enhanced traces fr
 
 When you then import the `.devtools` file, a new instance of DevTools opens, with the state of your **Console**, **Sources**, and **Elements** tools preserved.  These enhanced traces offer a powerful new way to collaborate and share the information in your DevTools. To give this feature a try:
 
-1. In DevTools, open **Settings**.<!-- todo: copy tagging from Overview -->
+1. In DevTools, click the **Settings** (![Settings icon](../../../media/settings-gear-icon-light-theme.png)) button.
 
 1. In the **Persistence** section of the **Preferences** settings page, select the **Export enhanced performance and memory traces** checkbox:
 
