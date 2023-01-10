@@ -258,7 +258,7 @@ By default, the **Allocation sampling** profiling type only reports allocations 
 
 You can trust the browser to clean up garbage from your code.  However, it is important to consider that GC itself is an expensive operation and multiple GCs can slow down your user's experience of your website or app.  When recording in the **Performance** tool with the **Memory** checkbox turned on, you can see the GC operation happen at the steep cliffs in the heap chart.  
 
-![Allocation sampling GC settings.](../media/memory-problems-gc-in-performance.png)
+![GC operation shown in the Performance tool.](../media/memory-problems-gc-in-performance.png)
 
 To reduce the amount of garbage your code is creating and reduce the cost or the number of times GC is run, you can configure the **Allocation sampling** profiling type to track objects that are discarded by GC with settings.
 
