@@ -11,7 +11,7 @@ ms.date: 10/06/2022
 
 In the **Edge DevTools** tab, the **Application** tool allows you to inspect the various parts of your application:
 
-![The Application tool inside the Edge DevTools for Visual Studio Code extension](../application-tool-integration-images/application-tool.png)
+![The Application tool inside the Edge DevTools for Visual Studio Code extension](./application-tool-integration-images/application-tool.png)
 
 
 Use the **Application** tool to:
@@ -22,11 +22,11 @@ Use the **Application** tool to:
 
 * Analyze services such as Notification, Payment handler, or background sync.
 
-For more information, see [Application tool, to manage storage](../../devtools-guide-chromium/storage/application-tool).
+For more information, see [Application tool, to manage storage](./../devtools-guide-chromium/storage/application-tool).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Get started using the DevTools extension for Visual Studio Code](../get-started)
-* [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension)
+* [Get started using the DevTools extension for Visual Studio Code](./get-started)
+* [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension)
