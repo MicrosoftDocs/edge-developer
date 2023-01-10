@@ -262,7 +262,7 @@ You can configure the **Allocation sampling** profiling type to track objects th
 
 1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
 
-    ![Allocation sampling GC settings.](../media/memory-problems-memory-allocation-sampling-gc-settings.png)
+   ![Allocation sampling GC settings.](../media/memory-problems-memory-allocation-sampling-gc-settings.png)
 
 1. Click the **Start** button.
 
