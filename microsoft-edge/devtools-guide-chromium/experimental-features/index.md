@@ -55,7 +55,7 @@ The following experimental features are turned on by default. You can use these 
 * [Display more precise changes in the Changes tab](#display-more-precise-changes-in-the-changes-tab)
 * [Enable CSS Authoring hints for inactive rules, deprecated properties, etc.](#enable-css-authoring-hints-for-inactive-rules-deprecated-properties-etc)
 * [Enable color picking outside the browser window](#enable-color-picking-outside-the-browser-window)
-* [Disable the deprecated 'Color format' setting (requires reloading DevTools)](#)
+* [Disable the deprecated 'Color format' setting (requires reloading DevTools)](#disable-the-deprecated-color-format-setting-requires-reloading-devtools)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
