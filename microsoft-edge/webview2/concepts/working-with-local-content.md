@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 12/08/2022
+ms.date: 01/10/2023
 ---
 # Working with local content in WebView2 apps
 
@@ -26,6 +26,8 @@ WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is 
 
 File URLs behave like they do in the browser.  For example, you can't make an `XMLHttpRequest` (XHR) in a file URL, because you're not working in the context of a webpage.  If the WebView2 control is loading local content, still came from a remote source (such as Bing.com), versus a file that came from local.
 
+
+<!-- ------------------------------ -->
 #### Offline (local) vs. online (remote) content
 
 You must specify the full path of the file, for every resource.  For example:
@@ -34,16 +36,13 @@ You must specify the full path of the file, for every resource.  For example:
 C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html
 ```
 
-<!-- TODO: Dev polish wording: -->
-For example, suppose you switch between online (remote, such as Bing.com) and offline (local path) content, you must specify the virtual domain.
-In contrast, if you navigate to a file URL, you have to replace it with the full path each time you switch between remote and local content.
+For example, if you switch between online (remote) content, such as Bing.com and offline (local) content, you must specify the virtual domain.
+
+In contrast, if you navigate to a file URL, you have to replace it with the full path each time you switch between remote and local content.  When specifying a file URL, the app navigates to a specific path; that's the only way the app can load local content.
+
+You can't use cross-origin resources for navigating to a file URL; `document.origin` is null.
 
 You can specify a folder each time you switch between online (remote) and offline (local) content.
-
-With a file URL, the app navigates to a specific path; that's the only way the app can load local content.
-
-You can't use cross-origin resources for navigating to a file URL.  `document.origin` is null.
-
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -86,10 +85,9 @@ To obtain the above string:
 For details, see [Get started using the DevTools extension for Visual Studio Code](https://learn.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/get-started).
 
 
-<!-- ---------------------------------------- -->
+<!-- ------------------------------ -->
 #### Example of navigating to a file URL
 
-<!-- expect short & basic -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -179,26 +177,25 @@ To obtain the above string:
 <!-- ------------------------------ -->
 #### Example of navigating to a string
 
-<!-- expect short, need example here b/c maybe isn't elsewhere -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
-
+allo
 ```csharp
-// Define htmlString with the string representation of HTML as above
+// Define htmlString with the string representation of HTML as above.
 webView.CoreWebView2.NavigateToString(htmlString);
 ```
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 ```csharp
-// Define htmlString with the string representation of HTML as above
+// Define htmlString with the string representation of HTML as above.
 webView.CoreWebView2.NavigateToString(htmlString);
 ```
 
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
-// Define htmlString with the string representation of HTML as above
+// Define htmlString with the string representation of HTML as above.
 webView->NavigateToString(htmlString);
 ```
 
@@ -234,10 +231,10 @@ This approach lets you specify the cross-origin access, by using the `CoreWebVie
 
 ---
 
-<!-- ---------------------------------------- -->
+
+<!-- ------------------------------ -->
 #### Example of virtual host name mapping
 
-<!-- expect nontrivial short listings -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -270,8 +267,9 @@ webView->Navigate(L"https://demo/index.html");
 
 Another way you can host local content in a WebView2 control is by relying on the `WebResourceRequested` event.  This event is triggered when the control attempts to load a resource.  You can use this event to intercept the request and provide the local content, as described in [Custom management of network requests](../how-to/webresourcerequested.md).
 
-`WebResourceRequested` allows the developer to customize the behavior of local content on a per-request basis. This means that they can decide which requests to intercept and provide their own content for, and which requests to let the control handle normally.  However, it requires more code, such as virtual host mapping and need knowledge of HTTP to be able to construct a proper response. From WebView2's perspective the resource will have come via the network and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event will also be slower than other approaches due to the needed cross-process communication and processing per each request.
+`WebResourceRequested` allows you to customize the behavior of local content on a per-request basis. This means you can decide which requests to intercept and provide your own content for, and which requests to let the WebView2 control handle normally.  However, customizing the behavior requires more code, such as virtual host mapping, and requires knowledge of HTTP, to be able to construct a proper response. 
 
+From WebView2's perspective, the resource will have come via the network, and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event is also slower than other approaches, due to the needed cross-process communication and processing per each request.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -290,19 +288,18 @@ Another way you can host local content in a WebView2 control is by relying on th
 
 ---
 
-<!-- ---------------------------------------- -->
+
+<!-- ------------------------------ -->
 #### Example of handling the WebResourceRequested event
 
-<!-- expect medium-length listings -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
-// Reading of response content stream happens asynchronously, and WebView2 does not directly
-// dispose the stream once it read. Therefore, use the following stream class which will
-// properly dispose when WebView2 has read all data.
-// Please see [CoreWebView2 does not close stream content](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2513)
-// for more details
+// Reading of response content stream happens asynchronously, and WebView2 does not 
+// directly dispose the stream once it read.  Therefore, use the following stream
+// class, which properly disposes when WebView2 has read all data.  For details, see
+// [CoreWebView2 does not close stream content](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2513).
 class ManagedStream : Stream {
     public ManagedStream(Stream s)
     {
@@ -445,8 +442,8 @@ class ManagedStream : IRandomAccessStream
         try
         {
             result = s_.ReadAsync(buffer, count, options);
-            // Once read is complete if no data was read, dispose the
-            // underlying stream
+            // Once read is complete if no data was read, dispose the underlying
+            // stream.
             result.Completed += new AsyncOperationWithProgressCompletedHandler<IBuffer, uint>(delegate (IAsyncOperationWithProgress<IBuffer, uint> asyncInfo, AsyncStatus asyncStatus)
             {
                 if (asyncInfo.GetResults().Length == 0)
