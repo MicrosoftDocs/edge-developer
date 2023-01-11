@@ -214,13 +214,12 @@ See also:
 
 Microsoft Edge 109 also includes the following updates from the Chromium project:
 
-<!-- 
-* []()
-* []()
-* []()
--->
-
-todo: links pending, check [Chrome 109 link](https://developer.chrome.com/blog/new-in-devtools-109).
+<!-- todo: remove some links -->
+* [Recorder: Copy as options for steps, in-page replay, step's context menu](https://developer.chrome.com/blog/new-in-devtools-109/#recorder)
+* [Show actual function names in performance's recordings](https://developer.chrome.com/blog/new-in-devtools-109/#performance)
+* [New keyboard shortcuts in the Console & Sources panel](https://developer.chrome.com/blog/new-in-devtools-109/#keyboard-shortcuts)
+* [Improved JavaScript debugging](https://developer.chrome.com/blog/new-in-devtools-109/#debugging)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-109/#misc)
 
 
 <!-- ====================================================================== -->
