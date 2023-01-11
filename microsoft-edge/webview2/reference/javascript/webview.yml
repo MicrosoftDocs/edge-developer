@@ -3,7 +3,9 @@ name: WebView
 uid: 'WebView2Script!WebView:class'
 package: WebView2Script!
 fullName: WebView
-summary: WebView is the class to access the WebView2-specific APIs that are available to the script running within a WebView2 app.
+summary: >-
+  WebView is the class to access the WebView2-specific APIs that are available to the script running within WebView2
+  Runtime.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -198,10 +200,18 @@ methods:
     package: WebView2Script!
     fullName: 'addEventListener(type, listener, options)'
     summary: >-
-      The standard EventTarget.addEventListener method. Use it to subscribe to the `message` event or
+      The standard `EventTarget.addEventListener` method. Use it to subscribe to the `message` event or
       `sharedbufferreceived` event. The `message` event receives messages posted from the WebView2 host via
       `CoreWebView2.PostWebMessageAsJson` or `CoreWebView2.PostWebMessageAsString`<!-- -->. The `sharedbufferreceived`
       event receives shared buffers posted from the WebView2 host via `CoreWebView2.PostSharedBufferToScript`<!-- -->.
+
+      See CoreWebView2.PostWebMessageAsJson (
+      [Win32/C++](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson)<!--
+      -->,
+      [.NET](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasjson)<!--
+      -->,
+      [WinRT](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postwebmessageasjson)<!--
+      -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -259,7 +269,19 @@ methods:
       When the page calls `postMessage`<!-- -->, the `message` parameter is converted to JSON and is posted
       asynchronously to the WebView2 host process. This will result in either the `CoreWebView2.WebMessageReceived`
       event or the `CoreWebView2Frame.WebMessageReceived` event being raised, depending on if `postMessage` is called
-      from the top-level document in the WebView2 or from a child frame.
+      from the top level document in the WebView2 or from a child frame. See CoreWebView2.WebMessageReceived (
+      [Win32/C++](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived)<!--
+      -->,
+      [.NET](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webmessagereceived)<!--
+      -->,
+      [WinRT](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webmessagereceived)<!--
+      -->). See CoreWebView2Frame.WebMessageReceived (
+      [Win32/C++](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_webmessagereceived)<!--
+      -->,
+      [.NET](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.webmessagereceived)<!--
+      -->,
+      [WinRT](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#webmessagereceived)<!--
+      -->).
     remarks: |-
         #### Examples
 

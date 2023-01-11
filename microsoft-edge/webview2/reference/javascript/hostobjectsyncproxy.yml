@@ -5,8 +5,7 @@ package: WebView2Script!
 fullName: HostObjectSyncProxy
 summary: >-
   A synchronous host object proxy. Host objects added via `CoreWebView2.AddHostObjectToScript` are exposed as host
-  object proxies using `window.chrome.webview.hostObjects.{name}`<!-- -->. Host object proxies represent a host object.
-
+  object proxies using `window.chrome.webview.hostObjects.{name}`<!-- -->. A host object proxy represent a host object.
 
   Host object proxies are JavaScript Proxy objects that intercept all property `get`, property `set`, and method
   invocations. Properties or methods that are a part of the `Function` or `Object` prototype are run locally. Additionally

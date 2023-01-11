@@ -14,7 +14,6 @@ properties:
     package: WebView2Script!
     fullName: webview
     summary: Makes the JavaScript APIs in WebView2 available to the webpage.
-
     remarks: ''
     isPreview: false
     isDeprecated: false
