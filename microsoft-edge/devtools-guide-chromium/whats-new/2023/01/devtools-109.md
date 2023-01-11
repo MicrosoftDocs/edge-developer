@@ -47,7 +47,7 @@ When you then import the `.devtools` file, a new instance of DevTools opens, wit
 
 1. In the **Memory** tool, click the **Save** button.<!-- todo: test -->
 
-   Or, in the **Performance** tool, right-click the **Export** button , and then select the `.devtools` file format:
+   Or, in the **Performance** tool, right-click the **Save profile** (![Save profile icon](./devtools-109-images/save-profile-icon.png)) button, and then select **.devtools (enhanced format for Microsoft Edge)**:
 
    ![Exporting a trace](./devtools-109-images/enhanced-trace-export.png)
 
@@ -56,28 +56,19 @@ When you then import the `.devtools` file, a new instance of DevTools opens, wit
 1. Import the `.devtools` file in either the **Memory** tool or the **Performance** tool:
 
    ![Importing a trace](./devtools-109-images/enhanced-trace-import.png)
+<!-- todo: Instructions for screenshot
+6.	Now clear the profile and select the import button. Load the attached .devtools file.
+7.	A new DevTools window opens and loads your trace. Take a screenshot. Refer to "enhanced-trace-import.png".
+-->
 
 1. A new DevTools window opens, containing a subset of the tools, including the **Memory** and **Performance** tools.  The **Elements**, **Console**, and **Sources** tools are pre-populated with the preserved state:
 
    ![Trace import console](./devtools-109-images/enhanced-trace-import-console.png)
+<!-- todo: Instructions for screenshot
+8.	Finally, in the new DevTools window, open the Console. You should see only one Console warning and a message that the Console is read only. Take a screenshot. Refer to "enhanced-trace-import-console.png".
+-->
 
 This is a new feature that the DevTools team is actively experimenting with, so please [send us your feedback in our GitHub repo](https://github.com/MicrosoftEdge/DevTools/issues)!
-
-<!--
-Instructions for screenshot
-1.	Open any of the Edge Insider channels. Navigate to edge://version and ensure you're on version 109+
-2.	Navigate to Microsoft Edge DevTools documentation - Microsoft Edge Development | Microsoft Learn
-3.	Open DevTools > Settings. Take a screenshot. Draw red highlight boxes around the new settings under **Persistence**. Refer to the attached enhanced-trace-settings.png
- 
-4.	Now turn on these settings. Go the Performance tool and take a trace. Right click the Export button
-5.	Take a screenshot. Draw a red highlight box around the context menu for the export button. Refer to enhanced-trace-export.png
- 
-6.	Now clear the profile and select the import button. Load the attached .devtools file
- 
-7.	A new DevTools window opens and loads your trace. Take a screenshot. Refer to enhanced-trace-import.png
- 
-8.	Finally, in the new DevTools window, open the Console. You should see only one Console warning and a message that the Console is read only. Take a screenshot. Refer to enhanced-trace-import-console.png
--->
 
 See also:
 * [Share performance and memory traces (PR 2388 draft)](https://github.com/MicrosoftDocs/edge-developer/blob/user/pabrosse/enhanced-traces/microsoft-edge/devtools-guide-chromium/evaluate-performance/share-traces.md)
