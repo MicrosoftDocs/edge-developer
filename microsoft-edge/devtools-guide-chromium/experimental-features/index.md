@@ -734,9 +734,7 @@ Displays `console.profile()` results in the **Performance** tool for Node.js.
 
 This is a programmatic way to record JavaScript execution, which can be useful in certain performance debugging situations.
 
-Also, DevTools can optionally be used to debug processes that are running in Node.js.  You need to start Node.js in a special way so that it exposes debugging info on a port.  Then you can start DevTools from `edge://inspect`, to target that port.
-
-This experiment makes whatever `console.profile` generates available to the **Performance** tool, when DevTools is connected to Node.js.
+When DevTools is used to debug processes that are running in Node.js, this experiment makes whatever `console.profile` generates available to the **Performance** Tool.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 111.
@@ -781,9 +779,11 @@ Status:
 
 _new as of Microsoft Edge 110_
 
-This checkbox is related to a new feature: pre-rendering pages for instant page navigations.  In certain cases (either when the browser decides, or if the page uses a special API), the next page that the user will visit is pre-rendered in the background, in order to speed up page navigation.
+In certain situations, for example when using the Speculation Rules API, Microsoft Edge prefetches and prerenders the next page that a user will visit, to display that page faster.
 
-This new panel will eventually display the list of pages that got pre-rendered by the browser and why.  This way, you can debug your code that uses this new pre-render special API.
+This experiment enables the **Prefetching & Prerendering** section in the **Application** Tool. The new section displays the list of pages that the browser prefetched and prerendered and why, which gives you a way to debug your code.
+
+To learn more about prerendering pages, see [Prerender pages in Chrome for instant page navigations](https://developer.chrome.com/blog/prerender-pages/).
 
 Selecting this experiment checkbox adds the **Preloading** section within the **Application** tool.  The **Preloading** section of the list of pages contains a **Prefetching & Prerendering** page, which contains columns:
 * **Started at**
@@ -802,6 +802,3 @@ todo: how select element, where?  that instruction is prominent in UI, so clarif
 Status:
 *  This checkbox is present in Microsoft Edge Canary 111.
 *  This checkbox is not present in Microsoft Edge Stable 108.
-
-See also:
-* [Prerender pages in Chrome for instant page navigations](https://developer.chrome.com/blog/prerender-pages/).
