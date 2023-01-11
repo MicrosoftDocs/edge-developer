@@ -44,28 +44,25 @@ When you then import the `.devtools` file, a new instance of DevTools opens, wit
 
    Or, in the **Performance** tool, take a recording.
 
-1. In the **Memory** tool, click the **Save** button.<!-- todo: test -->
-
-   Or, in the **Performance** tool, right-click the **Save profile** (![Save profile icon](./devtools-109-images/save-profile-icon.png)) button, and then select **.devtools (enhanced format for Microsoft Edge)**:
+1. In the **Performance** tool, right-click the **Save profile** (![Save profile icon](./devtools-109-images/save-profile-icon.png)) button, and then select **.devtools (enhanced format for Microsoft Edge)**:
 
    ![Exporting a trace](./devtools-109-images/enhanced-trace-export.png)
 
-1. Save the new `.devtools` file.
+1. In the **Save As** dialog, save the new `.devtools` file.
 
-1. Import the `.devtools` file in either the **Memory** tool or the **Performance** tool:
+   Or, instead of saving from within the **Performance** tool: in the **Memory** tool, click the **Save** link next to the heap snapshot.  In the **Save As** dialog, save the new `.devtools` file.
 
-   ![Importing a trace](./devtools-109-images/enhanced-trace-import.png)
-<!-- todo: Instructions for screenshot
-6.	Now clear the profile and select the import button. Load the attached .devtools file.
-7.	A new DevTools window opens and loads your trace. Take a screenshot. Refer to "enhanced-trace-import.png".
--->
+**Importing:**
+
+1. Import the `.devtools` file from within the **Performance** tool or **Memory** tool:
+
+   ![Importing a trace from within the Performance tool](./devtools-109-images/enhanced-trace-import.png)
+
+   If you use the the **Memory** tool, right-click the **Heap Snapshots** pane and then select **Load**.
 
 1. A new DevTools window opens, containing a subset of the tools, including the **Memory** and **Performance** tools.  The **Elements**, **Console**, and **Sources** tools are pre-populated with the preserved state:
 
    ![Trace import console](./devtools-109-images/enhanced-trace-import-console.png)
-<!-- todo: Instructions for screenshot
-8.	Finally, in the new DevTools window, open the Console. You should see only one Console warning and a message that the Console is read only. Take a screenshot. Refer to "enhanced-trace-import-console.png".
--->
 
 This is a new feature that the DevTools team is actively experimenting with, so please [send us your feedback in our GitHub repo](https://github.com/MicrosoftEdge/DevTools/issues)!
 
