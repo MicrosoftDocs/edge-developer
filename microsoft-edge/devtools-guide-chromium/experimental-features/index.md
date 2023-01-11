@@ -540,8 +540,14 @@ Status:
 
 _new as of Microsoft Edge 110_
 
-Disables the deprecated **Color format**<!-- string not found by FTS --> setting.
-<!-- todo: where in UI? -->
+In DevTools **Settings** > **Preferences**, when you hover over the **Information** (**i**) icon on the grayed-out **Color format** drop-down list, the tooltip reads: "This setting is deprecated because it is incompatible with modern color spaces.  To reenable it, you can disable the according experiment."
+
+The **Color format** drop-down list was previously enabled by default.  This control enables you to choose what color format you prefer to see in the **Styles** tab in the **Elements** tool by default. So, for example, if the CSS code specified `color: red;` but you had set the **hex** color format as your preference, then you would see `color: #f00;` in the **Styles** tab instead.
+
+Recently, CSS has gained new color formats that can be used to describe colors in color spaces that weren't available before.  This auto-switch of the color format can't work anymore, because if the source code contains a color in a new color space, then it isn't always possible to convert this color in one of the older color formats, because the color spaces don't match 1-to-1.
+
+In **Settings** > **Experiments**, this **Disable the deprecated 'Color format' setting** checkbox is selected by default, and its effect is to grey out the **Color format** drop-down list in the **Settings** > **Preferences** page.  After a while, this experiment checkbox and the **Color format** drop-down list in **Preferences** will be removed.
+For now, these controls enable you to disable the experiment and re-activate the **Color format** drop-down list.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 111.
@@ -723,11 +729,21 @@ Status:
 _new as of v109_
 
 Displays `console.profile()` results in the **Performance** tool for Node.js.
-<!-- todo: clarify -->
+
+`console.profile()` can be used in the DevTools **Console** (or in your code) to start a JavaScript profile, and then you can use `console.profileEnd()` to terminate it.  Once done, you can see your profile recording in the **JavaScript Profiler** tool.
+
+This is a programmatic way to record JavaScript execution, which can be useful in certain performance debugging situations.
+
+Also, DevTools can optionally be used to debug processes that are running in Node.js.  You need to start Node.js in a special way so that it exposes debugging info on a port.  Then you can start DevTools from `edge://inspect`, to target that port.
+
+This experiment makes whatever `console.profile` generates available to the **Performance** tool, when DevTools is connected to Node.js.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 111.
 *  This checkbox is not present in Microsoft Edge Stable 108.
+
+See also:
+* [JavaScript Profiler tool](../javascript-profiler/javascript-profiler-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -765,18 +781,27 @@ Status:
 
 _new as of Microsoft Edge 110_
 
-Adds the **Preloading** section within the **Application** tool.  The **Preloading** section of the list of pages contains a **Prefetching & Prerendering** page, which contains columns:
+This checkbox is related to a new feature: pre-rendering pages for instant page navigations.  In certain cases (either when the browser decides, or if the page uses a special API), the next page that the user will visit is pre-rendered in the background, in order to speed up page navigation.
+
+This new panel will eventually display the list of pages that got pre-rendered by the browser and why.  This way, you can debug your code that uses this new pre-render special API.
+
+Selecting this experiment checkbox adds the **Preloading** section within the **Application** tool.  The **Preloading** section of the list of pages contains a **Prefetching & Prerendering** page, which contains columns:
 * **Started at**
 * **Type**
 * **Trigger**
 * **URL**
 * **Status**
 
-Select an element for more details.
-<!-- todo: how select element, where? -->
-
 ![The Preloading page in the Application tool](./index-images/preloading-page-of-application-tool.png)
+
+<!--
+Select an element for more details.
+todo: how select element, where?  that instruction is prominent in UI, so clarify here
+-->
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 111.
 *  This checkbox is not present in Microsoft Edge Stable 108.
+
+See also:
+* [Prerender pages in Chrome for instant page navigations](https://developer.chrome.com/blog/prerender-pages/).
