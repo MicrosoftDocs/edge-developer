@@ -3,7 +3,7 @@ name: WebViewEventMap
 uid: 'WebView2Script!WebViewEventMap:class'
 package: WebView2Script!
 fullName: WebViewEventMap
-summary: ''
+summary: Events of the `WebView` class.
 remarks: ''
 isPreview: false
 isDeprecated: false

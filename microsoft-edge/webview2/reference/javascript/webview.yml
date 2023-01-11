@@ -4,8 +4,8 @@ uid: 'WebView2Script!WebView:class'
 package: WebView2Script!
 fullName: WebView
 summary: >-
-  WebView is the class to access the WebView2-specific APIs that are available to the script running within WebView2
-  Runtime.
+  `window.chrome.webview` is the class to access the WebView2-specific APIs that are available to the script running
+  within WebView2 Runtime.
 remarks: ''
 isPreview: false
 isDeprecated: false
