@@ -1415,8 +1415,6 @@
               uid: WebView2Script!
               displayName: 
               items:
-                - name: Chrome
-                  uid: 'WebView2Script!Chrome:class'
                 - name: HostObjectAsyncProxy
                   uid: 'WebView2Script!HostObjectAsyncProxy:class'
                 - name: HostObjectAsyncProxyBase
