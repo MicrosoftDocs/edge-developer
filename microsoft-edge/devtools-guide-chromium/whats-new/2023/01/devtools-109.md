@@ -189,7 +189,9 @@ See also:
 
 <!-- Subtitle: Use the Command Palette to directly navigate to the Styles section of the elements tool. -->
 
-We found an accessibility issue where it was impossible for voice-command users to navigate to the **Styles** and **Computed Styles** tabs in the **Elements** tool.  We now added two new commands **Show Styles** and **Show Computed Styles** to the Command Palette to give everyone easier access.
+There was an accessibility issue where voice-command users couldn't navigate to the **Styles** and **Computed Styles** tabs in the **Elements** tool.  You can now access these tabs through two new commands in the Command Palette:
+* **Show Styles**
+* **Show Computed Styles**
 
 ![Command Palette with 'Show Styles' and 'Show Computed Styles' commands](./devtools-109-images/show-styles.png)
 
