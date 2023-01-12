@@ -15,9 +15,9 @@ The **Performance** tool highlights long tasks with red triangles to indicate wo
 
 In your performance recordings, some of these long-running tasks may be **Recalculate Style** events.  These events track the time it takes for the browser to iterate through DOM elements on a page, find all of the CSS style rules that match a given element, and then compute the element's actual style based on these rules.  These styles need to be recalculated whenever the applicabiliy of CSS rules may have changed, like when:
 
-- Elements are added or removed from the DOM
-- An element's attributes, like `class` or `id`, were changed
-- User input, like mouse move or focus change, which can affect `:hover` rules
+- Elements are added to or removed from the DOM.
+- An element's attributes are changed, such as `class` or `id`.
+- User input occurs, such as a mouse move or focus change, which can affect `:hover` rules.
 
 When you have long running **Recalculate Style** events, you can use the **Selector Stats** feature to understand which of your CSS selectors are taking up the most time and resulting in the slow performance.
 
