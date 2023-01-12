@@ -44,6 +44,8 @@ The **Selector Stats** section of the **Performance** tool shows you:
 * The amount of time the browser spent calculating the style rules.
 * The number of elements the selector matched.
 
+
+<!-- ====================================================================== -->
 ## Analyze Selector Stats
 
 You can sort the data in the **Selector Stats** table in ascending or descending order for any of the columns by clicking the column header.  For example, sort the **Elapsed (µs)** column in descending order to see which selectors take up the most time in the **Recalculate Style** event you have selected.
