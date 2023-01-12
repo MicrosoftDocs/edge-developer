@@ -252,21 +252,21 @@ DevTools shows you a breakdown of memory allocation by function.  The default vi
 
 
 <!-- ====================================================================== -->
-## Reduce garbage with additional settings for Allocation sampling
+## Reduce garbage with additional settings for allocation sampling
 
 By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are created, removed, and then garbage collected (GC'd) aren't displayed in the **Memory** tool when profiling using the **Allocation sampling** or **Allocation instrumentation on timeline** types.
 
-You can trust the browser to clean up garbage from your code.  However, it is important to consider that GC itself is an expensive operation and multiple GCs can slow down your user's experience of your website or app.  When recording in the **Performance** tool with the **Memory** checkbox turned on, you can see the GC operation happen at the steep cliffs in the heap chart.  
+You can trust the browser to clean up garbage from your code.  However, it is important to consider that GC itself is an expensive operation and multiple GCs can slow down your user's experience of your website or app.  When recording in the **Performance** tool with the **Memory** checkbox turned on, you can see the GC operation happen at the steep cliffs (sudden decreases) in the heap chart.
 
-![GC operation shown in the Performance tool.](../media/memory-problems-gc-in-performance.png)
+![GC operation shown in the Performance tool](../media/memory-problems-gc-in-performance.png)
 
-To reduce the amount of garbage your code is creating and reduce the cost or the number of times GC is run, you can configure the **Allocation sampling** profiling type to track objects that are discarded by GC with settings.
+By reducing the amount of garbage your code is creating, you can reduce the cost of each individual GC and the number of GC operations.  To track objects that are discarded by GC, configure the **Allocation sampling** profiling type with settings.
 
-1. Click the **Allocation sampling** radio button.
+1. Click the **Allocation sampling** option button.
 
 1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
 
-   ![Allocation sampling GC settings.](../media/memory-problems-memory-allocation-sampling-gc-settings.png)
+   ![Allocation sampling GC settings](../media/memory-problems-memory-allocation-sampling-gc-settings.png)
 
 1. Click the **Start** button.
 
