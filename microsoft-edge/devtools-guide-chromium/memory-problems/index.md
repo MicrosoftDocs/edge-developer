@@ -266,7 +266,7 @@ To reduce the amount of garbage your code is creating and reduce the cost or the
 
 1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
 
-   ![Allocation sampling GC settings.](../media/memory-problems-memory-allocation-sampling-gc-settings.png)
+   ![Allocation sampling GC settings](../media/memory-problems-memory-allocation-sampling-gc-settings.png)
 
 1. Click the **Start** button.
 
