@@ -72,7 +72,7 @@ async function shareSomeContent(title, text, url) {
 
 On Windows, the above code will trigger the share dialog, allowing the user to pick an app to receive the shared content.  The share dialog is shown below:
 
-![The share dialog on Windows.](../media/windows-share-dialog.png)
+![The share dialog on Windows](../media/windows-share-dialog.png)
 
 Once the user has selected an app to receive the shared content, it is up to this app to handle it any way it chooses.  For example, an email app might use the `title` as the email subject, and use the `text` as the email body.
 
@@ -127,7 +127,7 @@ To test the feature:
 
 The Windows **Share** dialog is displayed.  The user picks an app in which to share the content:
 
-![The Windows Share dialog allows the user to pick which app should receive the shared content.](../media/devtools-tips-share.png)
+![The Windows Share dialog allows the user to pick which app should receive the shared content](../media/devtools-tips-share.png)
 
 You can find the [source code on GitHub](https://github.com/captainbrosset/devtools-tips/).  The app uses the Web Share API in the [share.js](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) source file.
 
