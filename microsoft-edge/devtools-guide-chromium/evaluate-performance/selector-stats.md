@@ -46,7 +46,7 @@ The **Selector Stats** section of the **Performance** tool shows you:
 
 You can sort the data in the **Selector Stats** table in ascending or descending order for any of the columns by clicking the column header.  For example, sort the **Elapsed (µs)** column in descending order to see which selectors take up the most time in the **Recalculate Style** event you have selected.
 
-As a general rule, if you find a selector that took the browser a long time to calculate and was matched many times, that would be a good candidate to try and improve.  Try simplifying the selector or making it more specific so that fewer elements match to it.  As a result of making these improvements, repeat the steps from the previous section, and you should observe the time the browser spends in the **Recalculate Style** event decrease.
+As a general rule, if you find a CSS selector that took the browser a long time to calculate and was matched many times, that's a good candidate to try and improve.  Try to change your selector so it requires less time to calculate and matches fewer elements on the page.  How to improve your CSS selectors depend on your particular use case. Repeat the steps from the previous section to confirm that your changes helped decrease the **Recalculate Style** event duration.
 
 <!-- ====================================================================== -->
 ## See also
