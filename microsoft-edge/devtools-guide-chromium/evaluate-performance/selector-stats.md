@@ -29,7 +29,7 @@ To see **Selector Stats** during **Recalculate Style** events:
 
 1. Click **Enable advanced rendering instrumentation (slow)** to turn the setting on. Note that this setting adds more overhead for performance recordings, so you should only leave it turned on when you need to record **Selector Stats** and other rendering information.
  
-1. Click **Record** and run the scenario you want to improve for your website or app.
+1. Click **Record** and run the scenario that you want to improve for your website or app.
 
 1. Click **Stop**.
 
