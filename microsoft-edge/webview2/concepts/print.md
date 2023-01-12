@@ -37,7 +37,7 @@ The ShowPrintUI show the WebView2 print preview dialog or OS print dialog for th
 
 <!-- end of tab-set -->
 
-## Example: ShowPrintUI
+### Example: ShowPrintUI
 
 This example shows the user a print dialog. If `printDialog` is `CoreWebView2PrintDialogKind.Browser`, opens a browser print preview dialog, `CoreWebView2PrintDialogKind.System` opens a system print dialog.
 
@@ -120,7 +120,7 @@ The Print method silently print the current top-level document in the WebView2 u
 
 <!-- end of tab-set -->
 
-## Example 1: Print to default printer
+### Example 1: Print to default printer
 
 This example prints the current web page without a print dialog to a default printer with the default print settings.
 
@@ -222,7 +222,7 @@ bool AppWindow::PrintToDefaultPrinter()
 
 <!-- end of tab-set -->
 
-## Example 2: Print to printer
+### Example 2: Print to printer
 
 This example prints the current web page to a specific printer with the settings.
 
@@ -466,7 +466,7 @@ Silently print the current top-level document in the WebView2 to a PDF file. To 
 
 <!-- end of tab-set -->
 
-## Example: PrintToPdf
+### Example: PrintToPdf
 
 This example Prints current page to PDF using the default path and settings.
 
@@ -601,7 +601,7 @@ Silently print the current top-level document in the WebView2 to a PDF stream. T
 
 <!-- end of tab-set -->
 
-## Example: PrintToPdfStream
+### Example: PrintToPdfStream
 
 This example prints the PDF data of the current web page to a stream.
 
