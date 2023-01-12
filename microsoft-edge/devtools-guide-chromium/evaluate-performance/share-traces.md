@@ -25,15 +25,21 @@ In Microsoft Edge versions prior to 109, enhanced traces aren't available. Start
 
 
 <!-- ====================================================================== -->
-## Enhanced traces
+## Normal traces
 
 A normal trace only contains some of the information that's present in a webpage. Much of the original code is lost and only the recorded performance or memory data of the webpage is preserved in the trace. For example, when importing a `.heapsnapshot` memory trace that was recorded during another DevTools session or on another computer, there's no way to go from an object in the **Memory** tool to its constructor in the **Sources** tool.
 
 Similarly, in the **Performance** tool; when you import a performance trace recorded earlier, it needs to have been recorded on the same site and same configuration to be able to map from the performance report to the JavaScript that was running in the browser.
 
+When a normal trace is imported in DevTools, the recorded data is used to populate the **Performance** or **Memory** tool.
+
+
+<!-- ====================================================================== -->
+## Enhanced traces
+
 An enhanced trace retains more information about the page. For example, an enhanced trace contains the execution context and the list of parsed scripts, and can optionally contain console messages, script sources, and a snapshot of the DOM tree.
 
-When a normal trace is imported in DevTools, the recorded data is used to populate the **Performance** or **Memory** tool. However, when an enhanced trace is imported in DevTools, a new DevTools window appears. This new window isn't connected to the webpage that's running in your browser, and instead re-creates the environment in which the trace was originally recorded.
+When an enhanced trace is imported in DevTools, a new DevTools window appears. This new window isn't connected to the webpage that's running in your browser, and instead re-creates the environment in which the trace was originally recorded.
 
 For example, if a snapshot of the DOM was recorded in the enhanced trace, the **Elements** tool displays this snapshot. If console messages were recorded, the **Console** tool prints these messages. The **Sources** tool displays the scripts that were present during the recording.
 
@@ -67,7 +73,7 @@ To change the trace type:
 
 
 <!-- ====================================================================== -->
-## Export a trace
+## Export a trace from the Performance tool
 
 To export a performance recording from the **Performance** tool:
 
@@ -77,11 +83,19 @@ To export a performance recording from the **Performance** tool:
 
 1. Press **Record**, execute the scenario you want to investigate the performance of by interacting with the webpage, and then press **Stop**.
 
-1. When the performance profile appears, click **Save profile** (![Save profile button](../media/export-icon.png)).
+1. When the performance profile appears, click **Save profile** (![Save profile button](../media/export-icon.png)):
 
-1. Choose a location to save the trace file on your disk.
+   ![Microsoft Edge with DevTools, showing the Performance tool, with the Save profile button](./share-traces-images/exporting-perf-trace.png)
 
-   ![Microsoft Edge with DevTools open, the Save profile button was clicked in the Performance tool, and an Explorer window is opened as a result, to save the exported file](./share-traces-images/exporting-perf-trace.png)
+1. Choose a location to save the trace file on your disk:
+
+   ![The Windows save dialog, showing the performance trace file being saved in a traces folder](./share-traces-images/saving-perf-trace.png)
+
+   The trace is a `.json` file if you set the default trace type to normal, and it is a `.devtools` file if you set the default trace type to enhanced.
+
+
+<!-- ====================================================================== -->
+## Export a trace from the Memory tool
 
 To export memory information from the **Memory** tool:
 
@@ -93,11 +107,18 @@ To export memory information from the **Memory** tool:
 
 1. Click **Take Snapshot**.
 
-1. When the snapshot is recorded, click the **Save** button in the **Memory** tool sidebar.
+1. When the snapshot is recorded, click the **Save** button in the **Memory** tool sidebar:
 
-1. Choose a location to save the trace file on your disk.
+   ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-traces-images/exporting-memory-trace.png)
 
-   ![Microsoft Edge with DevTools open, the Save button was clicked in the Memory tool, and an Explorer window is opened as a result, to save the exported file](./share-traces-images/exporting-memory-trace.png)
+1. Choose a location to save the trace file on your disk:
+
+   ![The Windows save dialog, showing the memory trace file being saved in a traces folder](./share-traces-images/saving-memory-trace.png)
+
+   The trace is a `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file if you set the default trace type to normal, and it is a `.devtools` file if you set the default trace type to enhanced.
+
+<!-- ====================================================================== -->
+## Choose a trace type when exporting
 
 Traces are exported as normal or enhanced traces, depending on the **Export Enhanced Performance and Memory Traces** option. To change the default trace type, see [Set the default trace type](#set-the-default-trace-type). You can also choose the type of trace you want when exporting.
 
@@ -111,23 +132,29 @@ To choose a different trace type when exporting:
 
 
 <!-- ====================================================================== -->
-## Import a trace
+## Import a trace in the Performance tool
 
 To import a trace in the **Performance** tool:
 
 1. Open the **Performance** tool.
 
-1. Click **Load profile** (![Load profile button](../media/import-icon.png)).
+1. Click **Load profile** (![Load profile button](../media/import-icon.png)):
 
-1. Locate the trace file on your disk. It's either a `.devtools` file (for enhanced traces) or a `.json` file (for normal traces).
+   ![Microsoft Edge, showing the Performance tool in DevTools, with the Load profile button](./share-traces-images/importing-perf-trace.png)
+
+1. Locate the trace file on your disk. It's either a `.devtools` file (for enhanced traces) or a `.json` file (for normal traces):
+
+   ![The Windows open dialog, showing a trace file](./share-traces-images/opening-perf-trace.png)
 
 1. Open the file.
-
-   ![Microsoft Edge with DevTools open, the Load profile button was clicked in the Performance tool, and an Explorer window is opened as a result, to select a file to be imported](./share-traces-images/importing-perf-trace.png)
 
    If the file is an enhanced trace, a new DevTools window appears, showing the performance profile and the extra runtime information that was recorded displayed in the **Sources**, **Console**, and **Elements** tools.
 
    If the file is a normal trace, the performance profile appears in the **Performance** tool, and the rest of the DevTools tabs continue to show information related to the current webpage.
+
+
+<!-- ====================================================================== -->
+## Import a trace in the Memory tool
 
 To import a trace in the **Memory** tool:
 
@@ -135,13 +162,14 @@ To import a trace in the **Memory** tool:
 
 1. Click **Load**.
 
+   ![Microsoft Edge, showing the Memory tool in DevTools, with the Load button](./share-traces-images/importing-memory-trace.png)
+
 1. Locate the trace file on your disk. It's either a `.devtools` file (for enhanced traces) or a `.heapsnapshot`, `.heaptimeline`, or `.heapprofile` file (for normal traces).
 
-1. Open the file.
+   ![The Windows open dialog, showing a trace file](./share-traces-images/opening-memory-trace.png)
 
-   ![Microsoft Edge with DevTools open, the Load button was clicked in the Memory tool, and an Explorer window is opened as a result, to select a file to be imported](./share-traces-images/importing-memory-trace.png)
+1. Open the file.
 
    If the file is an enhanced trace, a new DevTools window appears, showing the memory information and the extra runtime information that was recorded displayed in the **Sources**, **Console**, and **Elements** tools.
 
    If the file is a normal trace, the memory information appears in the **Memory** tool, and the rest of the DevTools tabs continue to show information related to the current webpage.
-
