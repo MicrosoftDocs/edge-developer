@@ -110,9 +110,9 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "useWebView": true
 ```
 
-Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger. To add this registry key: 
+Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger. To add this registry key:
 
-You will also need to add a new REGKEY `*--remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port.
+You will also need to add a new REGKEY `*--remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port. To add this registry key:
 
 1. Open the Registry Editor by clicking the `Windows logo key` and searching for **Registry Editor**. Open the Registry Editor application and select **Yes** to allow editing.
 
@@ -129,7 +129,7 @@ Rename `New Value #1` to `*`.
 
    ![Set Registry Key](./media/set-debugging-port.png)
 
-1. Click **OK**, and then verify that the registry key is set in the editor and matches the following
+1. Click **OK**, and then verify that the registry key is set in the editor and matches the following:
 
    ![Registry Key](./media/set-debugging-port-registry-key.png)
 
@@ -182,7 +182,7 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
 1. Install a WebView2 Runtime version past `106.0.1370.34`.
 
-1. Open the `Registry Editor` by clicking the **Windows Key** and searching for **Registry Editor**. Open the **Registry Editor** application and select **Yes** to allow editing.
+1. Open the Registry Editor by clicking the **Windows Key** and searching for **Registry Editor**. Open the **Registry Editor** application and select **Yes** to allow editing.
 
 1. Set the registry key `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` equal to `--remote-debugging-pipe`.  To do this, follow the steps outlined in the [Debug running processes](#debug-running-processes) section above.
 
