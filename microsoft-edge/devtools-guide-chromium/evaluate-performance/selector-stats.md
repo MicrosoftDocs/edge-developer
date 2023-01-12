@@ -13,7 +13,7 @@ The **Performance** tool highlights long tasks with red triangles to indicate wo
 
 ![Long Task indicators for events on the main thread with slow performance](../media/evaluate-performance-performance-animation-frame-fired.msft.png)
 
-In your performance recordings, some of these long-running tasks may be **Recalculate Style** events.  These events track the time it takes for the browser to iterate through DOM elements on a page, find all of the CSS style rules that match a given element, and then compute the element's actual style based on these rules.  These styles need to be recalculated whenever the applicabiliy of CSS rules may have changed, like when:
+In your performance recordings, some of these long-running tasks may be **Recalculate Style** events.  These events track the time it takes for the browser to iterate through DOM elements on a page, find all of the CSS style rules that match a given element, and then compute the element's actual style based on these rules.  These styles need to be recalculated whenever the applicability of CSS rules may have changed, such as when:
 
 - Elements are added to or removed from the DOM.
 - An element's attributes are changed, such as `class` or `id`.
