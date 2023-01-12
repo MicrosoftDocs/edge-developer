@@ -36,7 +36,7 @@ The first experience you have with the **Console** is likely to be errors in scr
 
 1. Click the `error.html:16` link on the right of the error message in the **Console**.  The **Sources** tool opens and highlights the line of code with the error:
 
-   ![The Sources tool highlights the line of code that causes the error](../media/console-debug-displays-in-sources.msft.png)
+   ![The Sources tool highlights the line of code that caused the error](../media/console-debug-displays-in-sources.msft.png)
 
    The script tries to get the first `h2` element in the document and paint a red border around it.  But no `h2` element exists, so the script fails.
 
