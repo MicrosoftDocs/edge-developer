@@ -25,7 +25,7 @@ When you have long running **Recalculate Style** events, you can use the **Selec
 
 To see **Selector Stats** during **Recalculate Style** events, complete the following steps.
 
-1. In the **Performance** tool, click **Capture settings** (![Capture settings.](../media/capture-settings-icon.msft.png)).
+1. In the **Performance** tool, click **Capture settings** (![Capture settings icon](../media/capture-settings-icon.msft.png)).
 
 1. Click **Enable advanced rendering instrumentation (slow)** to turn the setting on. Note that this setting adds more overhead for performance recordings so you should only leave it turned on if you need to record **Selector Stats** and other rendering information.
  
