@@ -35,7 +35,7 @@ To see **Selector Stats** during **Recalculate Style** events, complete the foll
 
 1. Now find a **Recalculate Style** event. In the bottom section of the **Performance** tool, select **Selector Stats**.
 
-   ![Selector Stats in the Performance tool.](images/performance-tool-selector-stats.png)
+   ![Selector Stats in the Performance tool](images/performance-tool-selector-stats.png)
  
 The **Selector Stats** section of the **Performance** tool shows you a table of selectors, the amount of time the browser spent calculating the style rules, and the number of elements the selector matched.
 
