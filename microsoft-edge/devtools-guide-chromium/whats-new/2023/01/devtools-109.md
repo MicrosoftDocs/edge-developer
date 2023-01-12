@@ -22,7 +22,7 @@ In Microsoft Edge 109, you can turn on new settings to export enhanced traces fr
 *  The JavaScript that was running on the page at the time of recording.
 *  Snapshots of the DOM.
 
-When saving performance profiles, heap snapshots, allocation timelines, or allocation sampling, you can now export a new `.devtools` file format.  When you then import the `.devtools` file, a new instance of DevTools opens, with the state of your **Console**, **Sources**, and **Elements** tools preserved.  These enhanced traces offer a powerful new way to collaborate and share the information in your DevTools.
+When saving performance profiles, heap snapshots, allocation timelines, or allocation sampling, you can now export a new `.devtools` file format.  When you then import the `.devtools` file, a new instance of DevTools opens, with the state of your **Elements**, **Console**, and **Sources** tools preserved.  These enhanced traces offer a powerful new way to collaborate and share the information in your DevTools.
 
 To try the enhanced traces feature:
 
@@ -48,7 +48,7 @@ To try the enhanced traces feature:
 
 **Importing:**
 
-1. Import the `.devtools` file from within the **Performance** tool or **Memory** tool.  If you use the **Performance** tool, click the the **Load profile** (![Load profile icon](./devtools-109-images/load-profile-icon.png)) button:
+1. Import the `.devtools` file from within the **Performance** tool or **Memory** tool.  If you use the **Performance** tool, click the **Load profile** (![Load profile icon](./devtools-109-images/load-profile-icon.png)) button:
 
    ![Importing a trace from within the Performance tool](./devtools-109-images/enhanced-trace-import.png)
 
