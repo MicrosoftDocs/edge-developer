@@ -33,7 +33,7 @@ To see **Selector Stats** during **Recalculate Style** events, complete the foll
 
 1. Click **Stop**.
 
-1. Now find a **Recalculate Style** event. In the bottom section of the **Performance** tool, select **Selector Stats**.
+1. Now find a **Recalculate Style** event. In the bottom section of the **Performance** tool, select **Selector Stats**:
 
    ![Selector Stats in the Performance tool](images/performance-tool-selector-stats.png)
  
