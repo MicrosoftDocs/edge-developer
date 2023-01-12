@@ -109,7 +109,7 @@ Once you have a recording of the page's performance, you can assess the page's p
 
 1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
 
-   ![The CPU chart and Summary panel.](../media/evaluate-performance-performance-cpu-chart.msft.png)
+   ![The CPU chart and Summary panel.](./selector-stats-images/evaluate-performance-performance-animation-frame-fired.msft.png)
 
 1. Hover over the **CPU** or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of the performance recording.
 
