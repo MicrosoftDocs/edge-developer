@@ -11,13 +11,13 @@ ms.date: 02/11/2022
 # Debug WebView2 apps with Visual Studio Code
 
 Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!-- Make sure you're using Visual Studio Code version [insert build here] or later. -->
-Visual Studio Code has a built-in [debugger](https://code.visualstudio.com/docs/nodejs/browser-debugging) for browser debugging.
+Visual Studio Code has a built-in debugger for browser debugging.  See [Browser debugging in VS Code](https://code.visualstudio.com/docs/nodejs/browser-debugging).
 
 
 <!-- ====================================================================== -->
 ## Create a launch.json file
 
-To debug your code, your project is required to have a `launch.json` file.  A `launch.json` file is a debugger configuration file to configure and customize the Visual Studio Code debugger. One of the properties needed to configure the debugger is the `request` property. There are two `request` types, `launch` and `attach`. 
+To debug your code, your project is required to have a `launch.json` file.  A `launch.json` file is a debugger configuration file to configure and customize the Visual Studio Code debugger. One of the properties that's needed to configure the debugger is the `request` property. There are two `request` types, `launch` and `attach`.
 
 The following code demonstrates launching the app from Visual Studio Code (rather than attaching the debugger to a running instance of the app). To do this, the app must have been built previously. If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project and paste the following code into it:
 
@@ -52,11 +52,11 @@ Visual Studio Code source path mapping now requires an URL, so your app now rece
 
 1. On the **Run** tab, select the launch configuration from the dropdown menu.
 
-1. Click **Start Debugging**, which is the green triangle next to the launch configuration dropdown.
+1. Click **Start Debugging**, which is the green triangle next to the launch configuration dropdown:
 
    ![The Run tab in Visual Studio Code](./media/run-vscode.png)
 
-1. To view the debug output and errors, open **Debug Console**.
+1. To view the debug output and errors, open **Debug Console**:
 
    ![The Debug Console in Visual Studio Code](./media/results-vs.png)
 
@@ -110,23 +110,28 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "useWebView": true
 ```
 
-Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger.
+Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger. To add this registry key: 
 
 You will also need to add a new REGKEY `*--remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port.
 
-Open the Registry Editor by clicking the `Windows logo key` and searching for **Registry Editor**. Open the Registry Editor application and select **Yes** to allow editing. Set the registry key `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` equal to `--remote-debugging-port=9222`.
+1. Open the Registry Editor by clicking the `Windows logo key` and searching for **Registry Editor**. Open the Registry Editor application and select **Yes** to allow editing.
 
-To do this, in the editor, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` by clicking on each subfolder under the path.
+1. Set the registry key `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` equal to `--remote-debugging-port=9222`.
 
-If this path doesn't exist, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft` in the editor, right-click the `Microsoft` folder, select **New**, and then select **Key**.  Enter `Edge` for the name of the new key.  Continue to do this for each subfolder until you have the full path: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
+   To do this, in the editor, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` by clicking on each subfolder under the path.
 
-Right click on the `AdditionalBrowserArguments` folder and select **New** and then select **String Value**. Rename `New Value #1` to `*`. Right click on the **\*** value and select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify that the edit window matches the following:
+   If this path doesn't exist, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft` in the editor, right-click the `Microsoft` folder, select **New**, and then select **Key**.  Enter `Edge` for the name of the new key.  Continue to do this for each subfolder until you have the full path: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
 
-![Set Registry Key](./media/set-debugging-port.png)
+1. Right-click the `AdditionalBrowserArguments` folder, select **New**, and then select **String Value**.
+Rename `New Value #1` to `*`.
 
-Click **OK**, and then verify that the registry key is set in the editor and matches the following:
+1. Right click the **\*** value, and then select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify that the edit window matches the following:
 
-![Registry Key](./media/set-debugging-port-registry-key.png)
+   ![Set Registry Key](./media/set-debugging-port.png)
+
+1. Click **OK**, and then verify that the registry key is set in the editor and matches the following
+
+   ![Registry Key](./media/set-debugging-port-registry-key.png)
 
 
 <!-- ====================================================================== -->
@@ -173,17 +178,19 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
 
 <!-- ====================================================================== -->
-## Debug WebView2 WinUI 2(UWP) Apps
+## Debug WebView2 WinUI 2 (UWP) Apps
 
 1. Install a WebView2 Runtime version past `106.0.1370.34`.
 
-1. Open the `Registry Editor` by clicking the **Windows Key** and searching for `Registry Editor`. Launch the `Registry Editor` application and select **Yes** to allow editing. Set the registry key “HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments” equal to “--remote-debugging-pipe”.  To do this, follow the steps outlined in the [Debug running processes](#debug-running-processes) section.
+1. Open the `Registry Editor` by clicking the **Windows Key** and searching for **Registry Editor**. Open the **Registry Editor** application and select **Yes** to allow editing.
 
-1. Verify the registry key is set in the editor and matches the following:
+1. Set the registry key `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` equal to `--remote-debugging-pipe`.  To do this, follow the steps outlined in the [Debug running processes](#debug-running-processes) section above.
+
+1. Verify that the registry key is set in the editor and matches the following:
 
    ![Registry Key](./media/uwp-debugging-registry-key.png)
 
-1. Add a new configuration to your `launch.json` file.  Open the file and add the following code into `launch.json`:
+1. Add a new configuration to your `launch.json` file.  Open `launch.json` and add the following code:
 
    ```json
    "name": "Attach to UWP App",
