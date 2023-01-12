@@ -54,7 +54,7 @@ To try the enhanced traces feature:
 
    If you use the **Memory** tool, right-click the **Heap Snapshots** pane and then select **Load**.
 
-1. A new DevTools window opens, containing a subset of the tools, including the **Memory** or **Performance** tool.  The **Elements**, **Console**, and **Sources** tools are pre-populated with the preserved state:
+1. A new DevTools window opens, containing a subset of the tools, including the **Performance** or **Memory** tool.  The **Elements**, **Console**, and **Sources** tools are pre-populated with the preserved state:
 
    ![Trace import console](./devtools-109-images/enhanced-trace-import-console.png)
 
