@@ -54,7 +54,7 @@ When you then import the `.devtools` file, a new instance of DevTools opens, wit
 
 **Importing:**
 
-1. Import the `.devtools` file from within the **Performance** tool or **Memory** tool:
+1. Import the `.devtools` file from within the **Performance** tool or **Memory** tool.  In the **Performance** tool, click the the **Load profile** (![Load profile icon](./devtools-109-images/load-profile-icon.png)) button:
 
    ![Importing a trace from within the Performance tool](./devtools-109-images/enhanced-trace-import.png)
 
