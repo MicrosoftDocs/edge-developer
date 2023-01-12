@@ -144,7 +144,7 @@ To import a trace in the **Performance** tool:
 
 1. Locate the trace file on your disk. It's either a `.devtools` file (for enhanced traces) or a `.json` file (for normal traces):
 
-   ![The Windows open dialog, showing a trace file](./share-traces-images/opening-perf-trace.png)
+   ![The Windows open dialog, showing a performance trace file](./share-traces-images/opening-perf-trace.png)
 
 1. Open the file.
 
@@ -166,7 +166,7 @@ To import a trace in the **Memory** tool:
 
 1. Locate the trace file on your disk. It's either a `.devtools` file (for enhanced traces) or a `.heapsnapshot`, `.heaptimeline`, or `.heapprofile` file (for normal traces).
 
-   ![The Windows open dialog, showing a trace file](./share-traces-images/opening-memory-trace.png)
+   ![The Windows open dialog, showing a memory trace file](./share-traces-images/opening-memory-trace.png)
 
 1. Open the file.
 
