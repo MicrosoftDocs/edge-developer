@@ -252,6 +252,33 @@ DevTools shows you a breakdown of memory allocation by function.  The default vi
 
 
 <!-- ====================================================================== -->
+## Reduce garbage with additional settings for allocation sampling
+
+By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are created, removed, and then garbage collected (GC'd) aren't displayed in the **Memory** tool when profiling using the **Allocation sampling** or **Allocation instrumentation on timeline** types.
+
+You can trust the browser to clean up garbage from your code.  However, it is important to consider that GC itself is an expensive operation and multiple GCs can slow down your user's experience of your website or app.  When recording in the **Performance** tool with the **Memory** checkbox turned on, you can see the GC operation happen at the steep cliffs (sudden decreases) in the heap chart.
+
+![GC operation shown in the Performance tool](../media/memory-problems-gc-in-performance.png)
+
+By reducing the amount of garbage your code is creating, you can reduce the cost of each individual GC and the number of GC operations.  To track objects that are discarded by GC, configure the **Allocation sampling** profiling type with settings.
+
+1. Click the **Allocation sampling** option button.
+
+1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
+
+   ![Allocation sampling GC settings](../media/memory-problems-memory-allocation-sampling-gc-settings.png)
+
+1. Click the **Start** button.
+
+1. On the webpage, perform actions that you want to investigate.
+
+1. Click the **Stop** button when you have finished all of your actions.
+
+DevTools now tracks all of the objects that were GC'd during the recording.  Use these settings to understand how much garbage your website or app is generating.  The data reported by **Allocation sampling** will help you identify the functions that are generating the most garbage.  
+
+If you are investigating objects that were only GC'd during specific major or minor GC operations, configure the settings appropriately to track the operation you care about. To learn more about the differences between major and minor GC, see [Trash talk: the Orinoco garbage collector | V8 JavaScript engine developer blog](https://v8.dev/blog/trash-talk).
+
+<!-- ====================================================================== -->
 ## Spot frequent garbage collections
 
 If your page appears to pause frequently, then you may have garbage collection issues.
