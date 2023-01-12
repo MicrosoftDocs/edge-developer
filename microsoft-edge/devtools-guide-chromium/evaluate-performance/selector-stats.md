@@ -9,7 +9,7 @@ ms.date: 01/09/2023
 ---
 # Analyze selector performance during Recalculate Style events
 
-The **Performance** tool highlights long tasks with red triangles to indicate work on the main thread that takes too long and has slow performance.  
+The **Performance** tool highlights long tasks with red triangles to indicate work on the main thread that takes too long and has slow performance:
 
 ![Long Task indicators for events on the main thread with slow performance](../media/evaluate-performance-performance-animation-frame-fired.msft.png)
 
