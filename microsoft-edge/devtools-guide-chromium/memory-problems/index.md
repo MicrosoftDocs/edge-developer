@@ -262,7 +262,7 @@ You can trust the browser to clean up garbage from your code.  However, it is im
 
 To reduce the amount of garbage your code is creating and reduce the cost or the number of times GC is run, you can configure the **Allocation sampling** profiling type to track objects that are discarded by GC with settings.
 
-1. Click the **Allocation sampling** radio button.
+1. Click the **Allocation sampling** option button.
 
 1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
 
