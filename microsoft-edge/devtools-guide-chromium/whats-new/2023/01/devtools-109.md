@@ -36,25 +36,22 @@ To try the enhanced traces feature:
 
 1. Click the **Close** (**x**) button in DevTools **Settings**.
 
-1. In the **Performance** tool, take a recording.  Or, in the **Memory** tool, take a heap snapshot.
+1. In the **Performance** tool, take a recording.
 
-1. If you use the **Performance** tool, right-click the **Save profile** (![Save profile icon](./devtools-109-images/save-profile-icon.png)) button, and then select **.devtools (enhanced format for Microsoft Edge)**:
+1. Right-click the **Save profile** (![Save profile icon](./devtools-109-images/save-profile-icon.png)) button, and then select **.devtools (enhanced format for Microsoft Edge)**:
 
    ![Exporting a trace](./devtools-109-images/enhanced-trace-export.png)
 
 1. In the **Save As** dialog, save the new `.devtools` file.
 
-   Or, in the **Memory** tool, click the **Save** link next to the heap snapshot.  In the **Save As** dialog, save the new `.devtools` file.
 
 **Importing:**
 
-1. Import the `.devtools` file from within the **Performance** tool or **Memory** tool.  If you use the **Performance** tool, click the **Load profile** (![Load profile icon](./devtools-109-images/load-profile-icon.png)) button:
+1. Import the `.devtools` file from within the **Performance** tool by clicking the **Load profile** (![Load profile icon](./devtools-109-images/load-profile-icon.png)) button:
 
    ![Importing a trace from within the Performance tool](./devtools-109-images/enhanced-trace-import.png)
 
-   If you use the **Memory** tool, right-click the **Heap Snapshots** pane and then select **Load**.
-
-1. A new DevTools window opens, containing a subset of the tools, including the **Performance** or **Memory** tool.  The **Elements**, **Console**, and **Sources** tools are pre-populated with the preserved state:
+1. A new DevTools window opens, containing a subset of the tools, including the **Performance** and/or **Memory** tool.  The **Elements**, **Console**, and **Sources** tools are pre-populated with the preserved state:
 
    ![Trace import console](./devtools-109-images/enhanced-trace-import-console.png)
 
@@ -64,6 +61,7 @@ See also:
 * [Share performance and memory traces (PR 2388 draft)](https://github.com/MicrosoftDocs/edge-developer/blob/user/pabrosse/enhanced-traces/microsoft-edge/devtools-guide-chromium/evaluate-performance/share-traces.md)
 <!-- todo: link to final article when PR is live, after merge main into present branch.  expect:
 * [Share performance and memory traces](../../../evaluate-performance/share-traces.md)
+https://github.com/MicrosoftDocs/edge-developer/pull/2388
 -->
 
 
@@ -76,7 +74,7 @@ In Microsoft Edge 109, in the **Performance** tool, you can turn on the **Enable
 
 With this setting turned on:
 
-1. Select **Record** and execute the scenario you want to improve on your website or app.
+1. Select **Record**, and then run the scenario that you want to improve on your website or app.
 
 1. Select **Stop**.
 
@@ -84,20 +82,23 @@ With this setting turned on:
 
    ![Performance tool Settings 'Enable advanced rendering instrumentation (slow)' checkbox, and 'Selector Stats' tab](./devtools-109-images/advanced-rendering-instrum.png)
 
-   The **Selector Stats** tab provides a list of all the CSS selectors that were calculated by the browser engine during the **Recalculate Style** event.  You can sort selectors by the **Elapsed** time they took to process, or by the number of elements they matched (the **Match Count** column).  Use this data to:
+The **Selector Stats** tab provides a list of all the CSS selectors that were calculated by the browser engine during the **Recalculate Style** event.  You can sort selectors by the **Elapsed** time they took to process, or by the number of elements they matched (the **Match Count** column).  Use this data to:
 
-   * Find selectors that take a long time for the browser to process, and simplify them.
-   * Make selectors more specific, to improve performance.
+* Find selectors that take a long time for the browser to process, and simplify them.
+* Make selectors more specific, to improve performance.
 
 See also:
 * [[Feedback] Selector Performance Tracing Explainer · Issue #98](https://github.com/MicrosoftEdge/DevTools/issues/98)
-
-<!-- todo: link
-* The truth about CSS selector performance - pending blog post
+* [Analyze selector performance during Recalculate Style events (PR 2399 draft)](https://github.com/MicrosoftDocs/edge-developer/blob/user/zoghadya/selector-stats/microsoft-edge/devtools-guide-chromium/evaluate-performance/selector-stats.md)
+<!-- todo: finalize link
+PR: https://github.com/MicrosoftDocs/edge-developer/pull/2399 "Selector Stats documentation"
+* [Analyze selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Analyze selector performance during Recalculate Style events](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/evaluate-performance/selector-stats)
 -->
 
+
 <!-- ====================================================================== -->
-## Track objects discarded by garbage collection when allocation sampling in the Memory tool
+## Track objects discarded by garbage collection when allocation sampling
 
 <!-- Subtitle: Use the new options under Allocation sampling to track how much garbage your website or app is generating. -->
 <!-- or: how much detached memory, memory leaks, unused allocated memory -->
