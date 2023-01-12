@@ -109,7 +109,7 @@ Once you have a recording of the page's performance, you can assess the page's p
 
 1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
 
-   ![The CPU chart and Summary panel.](./selector-stats-images/evaluate-performance-performance-animation-frame-fired.msft.png)
+   ![The CPU chart and Summary panel.](./index-images/evaluate-performance-performance-animation-frame-fired.msft.png)
 
 1. Hover over the **CPU** or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of the performance recording.
 
@@ -158,7 +158,7 @@ After you verified that the animation isn't performing well, the next step is to
 
 1. Click the **Animation Frame Fired** event.  The **Summary** panel now shows you information about that event.  Note the **Reveal** link.  After you click it, DevTools highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:96** link.  After you click it, the relevant line in the source code is displayed.
 
-   ![More information about the Animation Frame Fired event.](./selector-stats-images/evaluate-performance-performance-animation-frame-fired.msft.png)
+   ![More information about the Animation Frame Fired event.](./index-images/evaluate-performance-performance-animation-frame-fired.msft.png)
 
    After clicking an event, use the arrow keys to select the events next to it.
 
