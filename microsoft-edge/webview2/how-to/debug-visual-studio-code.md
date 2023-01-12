@@ -17,7 +17,9 @@ Visual Studio Code has a built-in [debugger](https://code.visualstudio.com/docs/
 <!-- ====================================================================== -->
 ## Create a launch.json file
 
-To debug your code, your project is required to have a `launch.json` file.  A `launch.json` file is a debugger configuration file to configure and customize the Visual Studio Code debugger. One of the properties needed to configure the debugger is the `request` property. There are two `request` types, `launch` and `attach`. The following code demonstrates launching the app from Visual Studio Code (rather than attaching the debugger to a running instance of the app). To do this, the app must have been built previously. If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project and paste the following code into it:
+To debug your code, your project is required to have a `launch.json` file.  A `launch.json` file is a debugger configuration file to configure and customize the Visual Studio Code debugger. One of the properties needed to configure the debugger is the `request` property. There are two `request` types, `launch` and `attach`. 
+
+The following code demonstrates launching the app from Visual Studio Code (rather than attaching the debugger to a running instance of the app). To do this, the app must have been built previously. If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project and paste the following code into it:
 
 ```json
 "name": "Hello debug world",
@@ -46,17 +48,17 @@ Visual Studio Code source path mapping now requires an URL, so your app now rece
 
 1. To set a breakpoint in your source code, click a line of code and then press `F9`:
 
-   ![A breakpoint that's set in Visual Studio Code.](./media/breakpoint-vs.png)
+   ![A breakpoint that's set in Visual Studio Code](./media/breakpoint-vs.png)
 
 1. On the **Run** tab, select the launch configuration from the dropdown menu.
 
 1. Click **Start Debugging**, which is the green triangle next to the launch configuration dropdown.
 
-   ![The Run tab in Visual Studio Code.](./media/run-vscode.png)
+   ![The Run tab in Visual Studio Code](./media/run-vscode.png)
 
 1. To view the debug output and errors, open **Debug Console**.
 
-   ![The Debug Console in Visual Studio Code.](./media/results-vs.png)
+   ![The Debug Console in Visual Studio Code](./media/results-vs.png)
 
 
 <!-- ====================================================================== -->
@@ -112,17 +114,19 @@ Your WebView2 control must open the CDP port to allow debugging of the WebView2 
 
 You will also need to add a new REGKEY `*--remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port.
 
-Open the `Registry Editor` by clicking the **Windows Key** and searching for `Registry Editor`. Launch the `Registry Editor` application and select **Yes** to allow editing. Set the registry key “HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments” equal to “--remote-debugging-port=9222”.  
+Open the Registry Editor by clicking the `Windows logo key` and searching for **Registry Editor**. Open the Registry Editor application and select **Yes** to allow editing. Set the registry key `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` equal to `--remote-debugging-port=9222`.
 
-To do this, in the editor navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` by clicking on each subfolder under the path. If this path does not exist, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft` in the editor and right click on the `Microsoft` folder and select **New** and then select **Key**.  Enter `Edge` for the name of the new key and continue to do this for each subfolder until you have the full path: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
+To do this, in the editor, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` by clicking on each subfolder under the path.
 
-Right click on the `AdditionalBrowserArguments` folder and select **New** and then select **String Value**. Rename `New Value #1` to `*`. Right click on the **\*** value and select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify the edit window matches the following:
+If this path doesn't exist, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft` in the editor, right-click the `Microsoft` folder, select **New**, and then select **Key**.  Enter `Edge` for the name of the new key.  Continue to do this for each subfolder until you have the full path: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
 
-   ![Set Registry Key](./media/set-debugging-port.png)
+Right click on the `AdditionalBrowserArguments` folder and select **New** and then select **String Value**. Rename `New Value #1` to `*`. Right click on the **\*** value and select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify that the edit window matches the following:
 
-Click **OK** and verify the registry key is set in the editor and matches the following:
+![Set Registry Key](./media/set-debugging-port.png)
 
-   ![Registry Key](./media/set-debugging-port-registry-key.png)
+Click **OK**, and then verify that the registry key is set in the editor and matches the following:
+
+![Registry Key](./media/set-debugging-port-registry-key.png)
 
 
 <!-- ====================================================================== -->
@@ -147,7 +151,7 @@ To enable debug tracing, add the `trace` parameter to `launch.json` , as follows
 
 Saving debug output to a log file:
 
-![ Save debug output to a log file.](./media/trace-log.png)
+![ Save debug output to a log file](./media/trace-log.png)
       
 ```json
 ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
@@ -155,7 +159,7 @@ Saving debug output to a log file:
 
 Visual Studio Code Debug Output with verbose tracing turned on:
 
-![Visual Studio Code Debug Output with verbose tracing turned on.](./media/verbose.png)
+![Visual Studio Code Debug Output with verbose tracing turned on](./media/verbose.png)
 
 
 <!-- ====================================================================== -->
