@@ -37,7 +37,7 @@ To see **Selector Stats** during **Recalculate Style** events:
 
 1. In the bottom section of the **Performance** tool, click **Selector Stats**:
 
-   ![Selector Stats in the Performance tool](images/performance-tool-selector-stats.png)
+   ![Selector Stats in the Performance tool](./selector-stats-images/performance-tool-selector-stats.png)
  
 The **Selector Stats** section of the **Performance** tool shows you:
 * A table of CSS selectors.
