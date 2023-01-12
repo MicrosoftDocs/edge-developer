@@ -84,29 +84,16 @@ With this setting turned on:
 
 1. Select **Record** and execute the scenario you want to improve on your website or app.
 
-2. Select **Stop**.
+1. Select **Stop**.
 
-3. Find a **Recalculate Style** event.  In the bottom section of the **Performance** tool, select the **Selector Stats** tab:
+1. Find a **Recalculate Style** event.  In the bottom section of the **Performance** tool, select the **Selector Stats** tab:
 
-   ![Settings: 'Enable advanced rendering instrumentation (slow)' checkbox and 'Selector Stats' section](./devtools-109-images/advanced-rendering-instrum.png)
+   ![Performance tool Settings 'Enable advanced rendering instrumentation (slow)' checkbox, and 'Selector Stats' tab](./devtools-109-images/advanced-rendering-instrum.png)
 
    The **Selector Stats** tab provides a list of all the CSS selectors that were calculated by the browser engine during the **Recalculate Style** event.  You can sort selectors by the **Elapsed** time they took to process, or by the number of elements they matched (the **Match Count** column).  Use this data to:
 
    * Find selectors that take a long time for the browser to process, and simplify them.
    * Make selectors more specific, to improve performance.
-
-<!-- todo
-Instructions for screenshot
-1.	Open any of the Insider channels and navigate to edge://version and ensure you're on version 109+
-2.	Open DevTools, load the .json file I attached in the Performance tool
- 
-3.	Zoom in to the purple section in the loaded performance trace
-4.	Under the **Main** section in the Performance tool, select a **Recalculate Style** event
-5.	In the bottom section of the Performance tool, select **Selector Stats**
-6.	Also open settings for the Performance tool with the gear icon and make sure "Enable advanced rendering instrumentation (slow)" is checked
-7.	Take a screenshot
-8.	Draw red highlight boxes around the "Enable advanced rendering instrumentation (slow)" checkbox and around the **Selector Stats** section. Refer to the attached screenshot.
--->
 
 See also:
 * The truth about CSS selector performance - pending blog post<!-- todo: incoming PR next week -->
