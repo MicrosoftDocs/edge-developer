@@ -52,5 +52,5 @@ As a general rule, if you find a CSS selector that took the browser a long time 
 ## See also
 
 * [Get started analyzing runtime performance](./index.md) - An introduction to analyzing runtime performance in DevTools.
-* [Performance features reference](reference.md), - A reference for many of the features offered in the Performance tool.
+* [Performance features reference](./reference.md) - Covers many of the features in the **Performance** tool.
 <!-- TO-DO, add link to Patrick's blog post -->
