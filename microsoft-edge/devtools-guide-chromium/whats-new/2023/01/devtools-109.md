@@ -131,23 +131,15 @@ See also:
 
 <!-- Subtitle: Visualize the data in your heap snapshot like you've never seen before, as a directed graph or a tree. -->
 
-Add the new **Heap Snapshot Visualizer** extension to Microsoft Edge to get new visualizations of the data in your heap snapshot files.  The extension adds a new tool to DevTools: **Heap Snapshot Visualizer**.  You can load your heap snapshot files to see them represented either as a directed graph or as a tree.  These new visualizations enable you to explore the retainers chain from the garbage-collection (GC) root to an individual node.
+Add the new **Heap Snapshot Visualizer** extension to Microsoft Edge to get new visualizations of the data that's in your heap snapshot files.  The extension adds a new tool to DevTools: **Heap Snapshot Visualizer**.  You can load your heap snapshot files to see them represented either as a directed graph or as a tree.  These new visualizations enable you to explore the retainers chain from the garbage-collection (GC) root to an individual node.
 
-![Heap Snapshot Visualizer 1](./devtools-109-images/heap-snapshot-visualizer-1.png)
-<!-- todo -->
+Graph view:
 
-![Heap Snapshot Visualizer 2](./devtools-109-images/heap-snapshot-visualizer-2.png)
-<!-- Instructions for screenshot - todo
-1. Get the heap snapshot visualizer extension from: Heap Snapshot visualizer - Microsoft Edge Addons
-2. With the extension installed, open DevTools.
-3. Go to the new Heap Snapshot Visualizer tool.
-4. Choose file and select the attached .heapsnapshot file that's attached.
-5. Select the Load button.
-6. The Heap Snapshot Visualizer should show the heap snapshot as a graph. Refer to the attached screenshot.
-7. Take a screenshot.
-8. Now select the Tree button. The extension should now show the heap snapshot as a tree. Refer to the attached screenshot.
-9. Take a screenshot.
--->
+![Heap Snapshot Visualizer in Graph mode](./devtools-109-images/heap-snapshot-visualizer-graph.png)
+
+Tree view:
+
+![Heap Snapshot Visualizer in Tree mode](./devtools-109-images/heap-snapshot-visualizer-tree.png)
 
 See also:
 * [Heap Snapshot Visualizer](https://microsoftedge.microsoft.com/addons/detail/heap-snapshot-visualizer/fceldlhognbemkgfacnffkdanocidgce) - Microsoft Edge Add-ons Store.
