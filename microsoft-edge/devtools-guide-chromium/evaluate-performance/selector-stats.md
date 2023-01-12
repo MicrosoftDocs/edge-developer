@@ -23,7 +23,7 @@ When you have long running **Recalculate Style** events, you can use the **Selec
 
 ## How to use Selector Stats
 
-To see **Selector Stats** during **Recalculate Style** events, complete the following steps.
+To see **Selector Stats** during **Recalculate Style** events:
 
 1. In the **Performance** tool, click **Capture settings** (![Capture settings icon](../media/capture-settings-icon.msft.png)).
 
