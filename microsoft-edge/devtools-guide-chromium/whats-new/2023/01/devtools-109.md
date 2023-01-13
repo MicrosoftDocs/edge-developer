@@ -38,11 +38,9 @@ To try the enhanced traces feature:
 
 1. In the **Performance** tool, take a recording.
 
-1. Click the **Save profile** (![Save profile icon](./devtools-109-images/save-profile-icon.png)) button:
+1. Click the **Save profile** (![Save profile icon](./devtools-109-images/save-profile-icon.png)) button.
 
-   ![Exporting a trace](./devtools-109-images/enhanced-trace-export.png)
-
-1. In the **Save As** dialog, save the new `.devtools` file.  The profile is saved with a new `.devtools` file format.
+1. In the **Save As** dialog, save the new `.devtools` file.
 
 
 **Importing:**
@@ -55,7 +53,7 @@ To try the enhanced traces feature:
 
    ![Trace import console](./devtools-109-images/enhanced-trace-import-console.png)
 
-You can also export from the **Memory** tool with the new `.devtools` file format.  This is a new feature that the DevTools team is actively experimenting with, so please send us your feedback in our GitHub repo!  Post comments in [[Feedback] Enhanced Traces experiment #122](https://github.com/MicrosoftEdge/DevTools/issues/122).
+You can also export from the **Memory** tool with the new `.devtools` file format.  This is a new feature that the DevTools team is actively experimenting with, so please send us your feedback in [[Feedback] Enhanced Traces experiment #122](https://github.com/MicrosoftEdge/DevTools/issues/122).
 
 See also:
 * [Share enhanced performance and memory traces](../../../experimental-features/share-traces.md)
