@@ -57,11 +57,14 @@ To try the enhanced traces feature:
 
 This is a new feature that the DevTools team is actively experimenting with, so please [send us your feedback in our GitHub repo](https://github.com/MicrosoftEdge/DevTools/issues)!
 
+<!-- todo: link to article when PR is live, after merge main into present branch
 See also:
-* [Share performance and memory traces (PR 2388 draft)](https://github.com/MicrosoftDocs/edge-developer/blob/user/pabrosse/enhanced-traces/microsoft-edge/devtools-guide-chromium/evaluate-performance/share-traces.md)
-<!-- todo: link to final article when PR is live, after merge main into present branch.  expect:
 * [Share performance and memory traces](../../../evaluate-performance/share-traces.md)
-https://github.com/MicrosoftDocs/edge-developer/pull/2388
+
+PR that adds that article:
+https://github.com/MicrosoftDocs/edge-developer/pull/2388 "Documentation for the DevTools enhanced traces feature"
+Rendered:
+https://github.com/MicrosoftDocs/edge-developer/blob/user/pabrosse/enhanced-traces/microsoft-edge/devtools-guide-chromium/evaluate-performance/share-traces.md
 -->
 
 
@@ -89,11 +92,14 @@ The **Selector Stats** tab provides a list of all the CSS selectors that were ca
 
 See also:
 * [[Feedback] Selector Performance Tracing Explainer · Issue #98](https://github.com/MicrosoftEdge/DevTools/issues/98)
-* [Analyze selector performance during Recalculate Style events (PR 2399 draft)](https://github.com/MicrosoftDocs/edge-developer/blob/user/zoghadya/selector-stats/microsoft-edge/devtools-guide-chromium/evaluate-performance/selector-stats.md)
-<!-- todo: finalize link
-PR: https://github.com/MicrosoftDocs/edge-developer/pull/2399 "Selector Stats documentation"
+
+<!-- todo: link to article when PR is live, after merge main into present branch
 * [Analyze selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
-* [Analyze selector performance during Recalculate Style events](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/evaluate-performance/selector-stats)
+
+PR that adds that article:
+https://github.com/MicrosoftDocs/edge-developer/pull/2399 "Selector Stats documentation"
+Rendered:
+https://github.com/MicrosoftDocs/edge-developer/blob/user/zoghadya/selector-stats/microsoft-edge/devtools-guide-chromium/evaluate-performance/selector-stats.md
 -->
 
 
