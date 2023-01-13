@@ -132,6 +132,10 @@
               href: devtools-guide-chromium/experimental-features/edge-command-palette.md
               displayName: Experimental features, Edge Command Palette
 
+            - name: Share enhanced performance and memory traces
+              href: devtools-guide-chromium/experimental-features/share-traces.md
+              displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
+
 # TOOLS =======================================================================
         - name: Tools
           items:
@@ -262,7 +266,7 @@
                   href: devtools-guide-chromium/javascript/overrides.md
                   displayName: Sources tool
 
-                - name: Mark content scripts as Library Code
+                - name: Add content scripts to the Ignore List
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
                   displayName: Sources tool
 
@@ -502,6 +506,10 @@
 
                 - name: Display original function names in performance profiles
                   href: devtools-guide-chromium/evaluate-performance/unminify.md
+                  displayName: Performance tool
+
+                - name: Analyze selector performance during Recalculate Style events
+                  href: devtools-guide-chromium/evaluate-performance/selector-stats.md
                   displayName: Performance tool
 
 # Performance monitor tool ----------------------------------------------------

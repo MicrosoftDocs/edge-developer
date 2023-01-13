@@ -508,7 +508,6 @@ Status:
 
 _new as of Microsoft Edge 106_
 
-Whether to hide or display code that's in the ignore list, in the **Sources** tool's tree view, such as the **Page** tab.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 109.

@@ -80,7 +80,9 @@ Line-of-code breakpoints may be inefficient to set, especially if you don't know
 
 After your code is paused at a breakpoint, step through the code, one line at a time, investigating control flow and property values along the way.
 
-### Step over line of code
+
+<!-- ------------------------------ -->
+#### Step over line of code
 
 When paused on a line of code containing a function that isn't relevant to the problem you are debugging, click the **Step over** (![Step over](../media/step-over-icon.msft.png)) button to run the function without stepping into it.
 
@@ -102,7 +104,9 @@ function getName() {
 
 You are paused on `A`.  After you click **Step over**, DevTools runs all the code in the function that you are stepping over, which is `B` and `C`.  DevTools then pauses on `D`.
 
-### Step into line of code
+
+<!-- ------------------------------ -->
+#### Step into line of code
 
 When paused on a line of code containing a function call that is related to the problem you are debugging, click the **Step into** (![Step into](../media/step-into-icon.msft.png)) button to investigate that function further.
 
@@ -124,7 +128,9 @@ function getName() {
 
 You are paused on `A`.  After you click **Step into**, DevTools runs this line of code, then pauses on `B`.
 
-### Step out of line of code
+
+<!-- ------------------------------ -->
+#### Step out of line of code
 
 When paused inside of a function that isn't related to the problem you are debugging, click the **Step out** (![Step out](../media/step-out-icon.msft.png)) button to run the rest of the code of the function.
 
@@ -146,7 +152,9 @@ function getName() {
 
 You are paused on `A`.  After you click **Step out**, DevTools runs the rest of the code in `getName()`, which is just `B` in this example, and then pauses on `C`.
 
-### Run all code up to a specific line
+
+<!-- ------------------------------ -->
+#### Run all code up to a specific line
 
 When debugging a long function, there may be a lot of code that isn't related to the problem you are debugging.
 
@@ -158,7 +166,9 @@ When debugging a long function, there may be a lot of code that isn't related to
 
 ![Selecting Continue to here](../media/javascript-source-page-continue-to-here.msft.png)
 
-### Restart the top function of the call stack
+
+<!-- ------------------------------ -->
+#### Restart the top function of the call stack
 
 To pause on the first line of the top function in your call stack, while paused on a line of code, right-click the **Call Stack** pane, and then select **Restart frame**.  The top function is the last function that was run.
 
@@ -178,19 +188,25 @@ You are paused on `A`.  After selecting **Restart frame**, you should be paused 
 
 ![Selecting Restart frame](../media/javascript-source-page-debugger-restart-frame.msft.png)
 
-### Resume script runtime
+
+<!-- ------------------------------ -->
+#### Resume script runtime
 
 To continue the runtime after a pause of your script, click the **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.msft.png)) button.  DevTools runs the script up until the next breakpoint, if any.
 
 ![Clicking the Resume script execution button](../media/javascript-sources-get-started-js-resume-script-runtime.msft.png)
 
+
+<!-- ------------------------------ -->
 #### Force script runtime
 
 To ignore all breakpoints and force your script to continue to run, click and hold the **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.msft.png)) button and then click the **Force script execution** (![Force script execution](../media/force-script-run-icon.msft.png)) button.
 
 ![Clicking the Force script execution button](../media/javascript-sources-get-started-js-force-script-runtime.msft.png)
 
-### Change thread context
+
+<!-- ------------------------------ -->
+#### Change thread context
 
 When working with web workers or service workers, click on a context listed in the **Threads** pane to switch to that context.  The blue arrow icon represents which context is currently selected.
 
@@ -238,7 +254,9 @@ Click an entry to jump to the line of code where that function was called.  The 
 > [!NOTE]
 > When not paused on a line of code, the **Call Stack** pane is empty.
 
-### Copy stack trace
+
+<!-- ------------------------------ -->
+#### Copy stack trace
 
 <!--
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there isn't right now, so it is here.
@@ -260,9 +278,9 @@ onClick (get-started.js:15)
 <!-- ====================================================================== -->
 ## Ignore a script or pattern of scripts
 
-Mark a script as Library code when you want to ignore that script while debugging.  When marked as Library code, a script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.
+To ignore a script while debugging, add the script to the **Ignore List**.  When a script is included in the **Ignore List**, the script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.
 
-For example, in the following code snippet, line `A` uses `lib`, which is a third-party library.  If you are confident that the problem you are debugging isn't related to that third-party library, then it makes sense to mark the script as **Library code**.
+For example, in the following code snippet, line `A` uses `lib`, which is a third-party library.  If you are confident that the problem you are debugging isn't related to that third-party library, then it makes sense to add the script to the **Ignore List**:
 
 ```javascript
 function animate() {
@@ -272,39 +290,45 @@ function animate() {
 }
 ```
 
-### Mark a script as Library code from the Editor pane
 
-To mark a script as **Library code** from the **Editor** pane:
+<!-- ------------------------------ -->
+#### Add a script to the **Ignore List** from the Editor pane
+
+To add a script to the **Ignore List** from the **Editor** pane:
 
 1. Open the file.
 
-1. Right-click anywhere in the file and then select **Add script to ignore list** (previously shown as **Mark as Library code**).
+1. Right-click anywhere in the file and then select **Add script to ignore list**:
 
-   ![Marking a script as Library code from the Editor pane](../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png)
+   ![Adding a script to the Ignore List from the Editor pane](../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png)
 
-### Mark a script as Library code from the Call Stack pane
 
-To mark a script as **Library code** from the **Call Stack** pane:
+<!-- ------------------------------ -->
+#### Add a script to the Ignore List from the Call Stack pane
 
-*  Right-click a function in the script and then select **Add script to ignore list** (previously shown as **Mark as Library code**).
+To add a script to the **Ignore List** from the **Call Stack** pane:
 
-   ![Marking a script as Library code from the Call Stack pane](../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png)
+*  Right-click a function in the script and then select **Add script to ignore list**:
 
-### Mark a script as Library code from Settings
+   ![Adding a script to the Ignore List from the Call Stack pane](../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png)
+
+
+<!-- ------------------------------ -->
+#### Add a script to the Ignore List from Settings
 
 To mark a single script or pattern of scripts from **Settings**:
 
 1. Open [Settings](../customize/index.md).
 
-1. Navigate to the **Library code** setting.
+1. Navigate to the **Ignore List** page of settings.
 
-1. Click **Add pattern**.
+   ![Adding a script to the Ignore List from Settings](../media/javascript-framework-library-code.msft.png)
 
-1. Enter the script name or a regex pattern of script names to mark as **Library code**.
+1. Click the **Add pattern** button.  A suggested pattern is shown: `/framework\.js$`
 
-1. Click **Add**.
+1. Enter the script name or a regex pattern of script names to add to the **Ignore List**.
 
-   ![Marking a script as Library code from Settings](../media/javascript-framework-library-code.msft.png)
+1. Click the **Add** button.
 
 
 <!-- ====================================================================== -->
