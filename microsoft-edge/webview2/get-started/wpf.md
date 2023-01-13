@@ -57,8 +57,6 @@ This tutorial also works with Visual Studio 2017.  See [Visual Studio older down
 ## Step 2 - Install a preview channel of Microsoft Edge
 
 1. Download any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
-   *  Windows 7
-   *  Windows 8.1
    *  Windows 10
    *  Windows 11
 
