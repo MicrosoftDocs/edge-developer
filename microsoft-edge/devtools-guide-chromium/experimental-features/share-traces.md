@@ -1,49 +1,46 @@
 ---
-title: Share performance and memory traces
-description: Learn to export and import performance and memory traces in DevTools to get help when investigating issues.
+title: Share enhanced performance and memory traces
+description: Learn to export and import enhanced performance and memory traces in DevTools to resolve low performance and high memory usage issues in your webpages
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/06/2023
 ---
-# Share performance and memory traces
+# Share enhanced performance and memory traces
 
 The **Performance** and **Memory** tools record runtime data about your webpage. Exploring the recorded data makes it possible to improve your webpage's memory usage or runtime performance.
 
 Additionally, the recorded data can be exported to files on disk. The exported files are called _traces_.
 
-Exporting performance and memory traces is useful when you want to share these files with other people to get help with investigating issues. An exported trace file can be imported in DevTools at any time.
+Exporting performance and memory traces is useful when you want to share these files with other people to get help with investigating issues. An exported trace is a `.json`, `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file which can be imported in DevTools at any time. By default, traces contain minimal information about the runtime data from the traced webpage.
 
-Traces can be exported in one of two ways: 
+Starting with Microsoft Edge 109, traces can be exported as _ enhanced traces_ as an experimental feature.
 
-* As a normal trace: a `.json`, `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file, which contains minimal information about the runtime data from the traced webpage.
+An enhanced trace is a `.devtools` file which contains much more runtime data from the traced webpage. Enhanced traces make it easier to resolve performance and memory issues by recreating the environment in which the trace was recorded and by providing original source files.
 
-* As an enhanced trace: a `.devtools` file, which contains more runtime data from the traced webpage.
-
-In Microsoft Edge versions prior to 109, enhanced traces aren't available. Starting with 109, the **Performance** and **Memory** tools can export normal and enhanced traces.
+Using enhanced traces makes it possible to reliably resolve source code references found in imported traces to the actual runtime code in the **Sources** tool. Additionally, if source maps were present when a trace was recorded, or if they are stored on the [Azure Artifacts Symbol Server](../javascript/consume-source-maps-from-azure.md), it will also be possible to resolve code references to their original source code.
 
 
 <!-- ====================================================================== -->
-## Normal traces
+## Differences between normal and enhanced traces
+
+#### Normal traces
 
 A normal trace only contains some of the information that's present in a webpage. Much of the original code is lost and only the recorded performance or memory data of the webpage is preserved in the trace. For example, when importing a `.heapsnapshot` memory trace that was recorded during another DevTools session or on another computer, there's no way to go from an object in the **Memory** tool to its constructor in the **Sources** tool.
 
-Similarly, in the **Performance** tool; when you import a performance trace recorded earlier, it needs to have been recorded on the same site and same configuration to be able to map from the performance report to the JavaScript that was running in the browser.
+Similarly, in the **Performance** tool, when you import a performance trace recorded earlier:
 
-When a normal trace is imported in DevTools, the recorded data is used to populate the **Performance** or **Memory** tool.
+*  The trace needs to have been recorded on the same site and same configuration to be able to map from the performance report to the JavaScript that was running in the browser.
+*  If file or function names have changed since the recording was taken, the mapping is prone to errors.
 
+#### Enhanced traces
 
-<!-- ====================================================================== -->
-## Enhanced traces
+An enhanced trace retains much more information about the webpage where the recording took place. For example, an enhanced trace contains the execution context and the list of parsed scripts, and can optionally contain console messages, script sources, and a snapshot of the DOM tree.
 
-An enhanced trace retains more information about the page. For example, an enhanced trace contains the execution context and the list of parsed scripts, and can optionally contain console messages, script sources, and a snapshot of the DOM tree.
-
-When an enhanced trace is imported in DevTools, a new DevTools window appears. This new window isn't connected to the webpage that's running in your browser, and instead re-creates the environment in which the trace was originally recorded.
+When an enhanced trace is imported in DevTools, a new DevTools window appears. This new window isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.
 
 For example, if a snapshot of the DOM was recorded in the enhanced trace, the **Elements** tool displays this snapshot. If console messages were recorded, the **Console** tool prints these messages. The **Sources** tool displays the scripts that were present during the recording.
-
-Using enhanced traces makes it possible to reliably resolve source code references found in imported traces to the actual runtime code in the **Sources** tool. Additionally, if source maps were presents when a trace was recorded, it will also be possible to resolve code references to their original source code.
 
 Enhanced traces can only be imported in Microsoft Edge, while normal traces are compatible with other browsers based on the Chromium engine.
 
@@ -51,7 +48,7 @@ Enhanced traces can only be imported in Microsoft Edge, while normal traces are 
 <!-- ====================================================================== -->
 ## Set the default trace type
 
-By default, the **Performance** and **Memory** tools export data as normal traces, but it's possible to choose which type of traces are exported.
+By default, the **Performance** and **Memory** tools export data as normal traces. Starting with Microsoft Edge 109, it's possible to set the default trace type to enhanced.
 
 To change the trace type:
 
@@ -59,7 +56,7 @@ To change the trace type:
 
 1. In DevTools, in the upper right, click **Settings** (![Settings button](../media/settings-button-icon.msft.png)).
 
-1. Under **Persistence**, if you want to record enhanced traces, check **Export Enhanced Performance and Memory Traces**. Otherwise clear the option.
+1. Under **Persistence**, check **Export Enhanced Performance and Memory Traces**:
 
    ![The Settings panel in DevTools, with the enhanced traces option checked](./share-traces-images/trace-type-setting.png)
 
@@ -77,11 +74,9 @@ To change the trace type:
 
 To export a performance recording from the **Performance** tool:
 
-1. Go to the website you want to record the performance of.
-
 1. Open the **Performance** tool.
 
-1. Press **Record**, execute the scenario you want to investigate the performance of by interacting with the webpage, and then press **Stop**.
+1. Click **Record** and run the scenario you want to investigate the performance of by interacting with the webpage, and then click **Stop**.
 
 1. When the performance profile appears, click **Save profile** (![Save profile button](../media/export-icon.png)):
 
@@ -99,8 +94,6 @@ To export a performance recording from the **Performance** tool:
 
 To export memory information from the **Memory** tool:
 
-1. Go to the website you want to export the memory data from.
-
 1. Open the **Memory** tool.
 
 1. Choose the type of memory recording you're interested in, such as **Heap Snapshot**. The following instructions are similar if you choose a different memory recording type. To learn more about the different memory recording types, see [Fix memory problems](../memory-problems/index.md).
@@ -116,6 +109,7 @@ To export memory information from the **Memory** tool:
    ![The Windows save dialog, showing the memory trace file being saved in a traces folder](./share-traces-images/saving-memory-trace.png)
 
    The trace is a `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file if you set the default trace type to normal, and it is a `.devtools` file if you set the default trace type to enhanced.
+
 
 <!-- ====================================================================== -->
 ## Choose a trace type when exporting
@@ -173,3 +167,11 @@ To import a trace in the **Memory** tool:
    If the file is an enhanced trace, a new DevTools window appears, showing the memory information and the extra runtime information that was recorded displayed in the **Sources**, **Console**, and **Elements** tools.
 
    If the file is a normal trace, the memory information appears in the **Memory** tool, and the rest of the DevTools tabs continue to show information related to the current webpage.
+
+
+<!-- ====================================================================== -->
+## Share feedback about enhanced traces
+
+Enhanced traces is an experimental feature which hopefully makes it easier to collaborate on resolving performance and memory issues by seeing unminified code.
+
+The Microsoft Edge DevTools team welcomes any feedback you may have about enhanced traces. If you've tried this new feature, please feel free to report any problems or ideas about it on our [GitHub repository](https://github.com/MicrosoftEdge/DevTools/issues/122).
