@@ -15,7 +15,7 @@ Additionally, the recorded data can be exported to files on disk. The exported f
 
 Exporting performance and memory traces is useful when you want to share these files with other people to get help with investigating issues. An exported trace is a `.json`, `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file which can be imported in DevTools at any time. By default, traces contain minimal information about the runtime data from the traced webpage.
 
-Starting with Microsoft Edge 109, traces can be exported as _ enhanced traces_ as an experimental feature.
+Starting with Microsoft Edge 109, traces can be exported as _enhanced traces_, as an experimental feature.
 
 An enhanced trace is a `.devtools` file which contains much more runtime data from the traced webpage. Enhanced traces make it easier to resolve performance and memory issues by recreating the environment in which the trace was recorded and by providing original source files.
 
