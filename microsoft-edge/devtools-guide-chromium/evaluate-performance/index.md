@@ -158,7 +158,7 @@ After you verified that the animation isn't performing well, the next step is to
 
 1. Click the **Animation Frame Fired** event.  The **Summary** panel now shows you information about that event.  Note the **Reveal** link.  After you click it, DevTools highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:96** link.  After you click it, the relevant line in the source code is displayed.
 
-   ![More information about the Animation Frame Fired event.](./index-images/evaluate-performance-performance-animation-frame-fired.msft.png)
+   ![More information about the Animation Frame Fired event.](../media/evaluate-performance-performance-animation-frame-fired.msft.png)
 
    After clicking an event, use the arrow keys to select the events next to it.
 
