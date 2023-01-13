@@ -38,11 +38,11 @@ To try the enhanced traces feature:
 
 1. In the **Performance** tool, take a recording.
 
-1. Right-click the **Save profile** (![Save profile icon](./devtools-109-images/save-profile-icon.png)) button, and then select **.devtools (enhanced format for Microsoft Edge)**:
+1. Click the **Save profile** (![Save profile icon](./devtools-109-images/save-profile-icon.png)) button:
 
    ![Exporting a trace](./devtools-109-images/enhanced-trace-export.png)
 
-1. In the **Save As** dialog, save the new `.devtools` file.
+1. In the **Save As** dialog, save the new `.devtools` file.  The profile is saved with a new `.devtools` file format.
 
 
 **Importing:**
@@ -51,15 +51,15 @@ To try the enhanced traces feature:
 
    ![Importing a trace from within the Performance tool](./devtools-109-images/enhanced-trace-import.png)
 
-1. A new DevTools window opens, containing a subset of the tools, including the **Performance** and/or **Memory** tool.  The **Elements**, **Console**, and **Sources** tools are pre-populated with the preserved state:
+1. A new DevTools window opens, containing a subset of the tools, including the **Performance** tool loaded with the profile that you just recorded.  The **Elements**, **Console**, and **Sources** tools are also pre-populated with their preserved state:
 
    ![Trace import console](./devtools-109-images/enhanced-trace-import-console.png)
 
-This is a new feature that the DevTools team is actively experimenting with, so please [send us your feedback in our GitHub repo](https://github.com/MicrosoftEdge/DevTools/issues)!
+You can also export from the **Memory** tool with the new `.devtools` file format.  This is a new feature that the DevTools team is actively experimenting with, so please send us your feedback in our GitHub repo!  Post comments in [[Feedback] Enhanced Traces experiment #122](https://github.com/MicrosoftEdge/DevTools/issues/122).
 
-<!-- todo: link to article when PR is live, after merge main into present branch
+<!-- todo
 See also:
-* [Share performance and memory traces](../../../evaluate-performance/share-traces.md)
+* [Share performance and memory traces](../../../experimental-features/share-traces.md)
 
 PR that adds that article:
 https://github.com/MicrosoftDocs/edge-developer/pull/2388 "Documentation for the DevTools enhanced traces feature"
@@ -69,7 +69,7 @@ https://github.com/MicrosoftDocs/edge-developer/blob/user/pabrosse/enhanced-trac
 
 
 <!-- ====================================================================== -->
-## Debug long-running Recalculate Styles events in the Performance tool with new selector stats
+## Debug long-running Recalculate Style events with new selector stats
 
 <!-- Subtitle: Understand which of your CSS selectors are contributing to slow performance of your website or app. -->
 
