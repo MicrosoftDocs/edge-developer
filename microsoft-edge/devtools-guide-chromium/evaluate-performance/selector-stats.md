@@ -19,7 +19,7 @@ In your performance recordings, some of these long-running tasks may be **Recalc
 - An element's attributes are changed, such as `class` or `id`.
 - User input occurs, such as a mouse move or focus change, which can affect `:hover` rules.
 
-When you have long running **Recalculate Style** events, you can use the **Selector Stats** feature to understand which of your CSS selectors are taking up the most time and resulting in slow performance.
+When you have long-running **Recalculate Style** events, you can use the **Selector Stats** feature to understand which of your CSS selectors are taking up the most time and resulting in slow performance.
 
 ## How to use Selector Stats
 
