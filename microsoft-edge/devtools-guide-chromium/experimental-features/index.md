@@ -725,7 +725,7 @@ Status:
 <!-- ====================================================================== -->
 ## View console.profile() results in the Performance panel for Node.js
 
-_new as of v109_
+_new as of Microsoft Edge 109_
 
 Displays `console.profile()` results in the **Performance** tool for Node.js.
 
