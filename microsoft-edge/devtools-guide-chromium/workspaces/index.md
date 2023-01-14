@@ -121,7 +121,7 @@ Node.js option:
 
 1. In the **Navigator** pane (on the left), click the **Filesystem** tab.
 
-   ![The Filesystem tab.](../media/workspaces-workspaces-demo-sources-filesystem.msft.png)
+   ![The Filesystem tab](../media/workspaces-workspaces-demo-sources-filesystem.msft.png)
 
 1. Click **Add Folder To Workspace**.
 
@@ -129,7 +129,7 @@ Node.js option:
 
 1. Click **Allow** to give DevTools permission to read and write to the directory.
 
-In the **Filesystem** tab, the list of files (![Mapped files list](../media/mapped-files-list-icon.png)) shows a page icon with two-way arrows and a green dot beside each of these files: `index.html`, `script.js`, and `styles.css`. (The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.) A green dot indicates that DevTools has established a mapping between a network resource of the page received from the web server, and the local source file in `~/Desktop/app`.
+In the **Filesystem** tab, the list of files (![Mapped files list](../media/mapped-files-list-icon.png)) shows a page icon with two-way arrows and a green dot beside each of these files: `index.html`, `script.js`, and `styles.css`. (The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.) A green dot indicates that DevTools has established a mapping between a network resource of the page received from the web server, and the local source file in `~/Desktop/app`:
 
 ![The Filesystem tab has a green dot indicating a mapping between a resource received from the server and a local source file](../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png)
 
@@ -137,7 +137,7 @@ In the **Filesystem** tab, the list of files (![Mapped files list](../media/mapp
 <!-- ====================================================================== -->
 ## Edit CSS and save changes to the source file
 
-The following steps show how to make a change in the CSS file and save it to disk.
+To make a change in the CSS file and save it to disk:
 
 1. Open `styles.css`.  The `color` property of the `h1` element is set to `fuchsia`.
 
@@ -213,7 +213,7 @@ If you want to save a change to the webpage HTML, edit the HTML in the **Sources
 
 1. Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed.
 
-   ![Change HTML from the Sources tool.](../media/workspaces-workspaces-demo-sources-page-h1.msft.png)
+   ![Change HTML from the Sources tool](../media/workspaces-workspaces-demo-sources-page-h1.msft.png)
 
 1. Open `~/Desktop/app/index.html` in a text editor.  The `<h1>` element contains the new text.
 
@@ -231,7 +231,7 @@ To open the DevTools code editor alongside other tools:
 
 1. Type `quick` at the **Run** prompt, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
 
-   ![Open the 'Quick source' tool by using the Command Menu.](../media/workspaces-workspaces-demo-search-show-quick-source.msft.png)
+   ![Open the 'Quick source' tool by using the Command Menu](../media/workspaces-workspaces-demo-search-show-quick-source.msft.png)
 
 1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog, shown in the next screenshot.
 
@@ -265,5 +265,5 @@ Use what you've learned in this tutorial to set up and use DevTools workspaces i
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/workspaces/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
