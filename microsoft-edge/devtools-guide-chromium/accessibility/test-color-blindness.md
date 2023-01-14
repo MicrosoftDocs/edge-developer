@@ -31,7 +31,7 @@ To check whether a webpage is usable by people with color blindness:
 
 1. In the **Emulate vision deficiencies** dropdown list, select **Protanopia**.  _Protanopia_ is reduced sensitivity to red light, making it hard to differentiate green, red, and yellow.
 
-   ![Showing the document as someone with protanopia would see it.](../media/a11y-testing-simulating-protanopia.msft.png)
+   ![Showing the document as someone with protanopia would see it](../media/a11y-testing-simulating-protanopia.msft.png)
 
 1. In the **Rendering** tool, below **Emulate vision deficiencies**, select **No emulation** to remove the simulation.
 

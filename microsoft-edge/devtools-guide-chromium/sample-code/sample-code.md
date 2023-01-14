@@ -25,7 +25,7 @@ This demo webpage is useful for exploring various DevTools features.
 
    <!-- Or, press `F12`, `Ctrl`+`Shift`+`I` (on Windows/Linux), or `Command`+`Option`+`I` (on macOS). -->
 
-![The 'Demo webpage with accessibility issues'.](../media/demo-page-with-accessibility-issues.png)
+![The 'Demo webpage with accessibility issues'](../media/demo-page-with-accessibility-issues.png)
 
 
 ### Articles
@@ -65,7 +65,7 @@ This demo webpage is useful for exploring the **Sources** tool, especially the J
 
    <!-- Or, press `F12`, `Ctrl`+`Shift`+`I` (on Windows/Linux), or `Command`+`Option`+`I` (on macOS). -->
 
-![The 'Get started Debugging JavaScript with DevTools' demo webpage.](../media/using-debug-js-demo-page.png)
+![The 'Get started Debugging JavaScript with DevTools' demo webpage](../media/using-debug-js-demo-page.png)
 
 
 ### Articles
