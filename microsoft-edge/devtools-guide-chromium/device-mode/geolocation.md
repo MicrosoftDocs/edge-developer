@@ -30,7 +30,7 @@ If you are building a UI that changes depending on where the user is located, yo
 
 1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-   ![The Command Menu.](../media/device-mode-console-command-menu.msft.png)
+   ![The Command Menu](../media/device-mode-console-command-menu.msft.png)
 
 1. Type `sensors`, select **Drawer: Show Sensors**, and then press `Enter`.  The **Sensors** tool opens at the bottom of the DevTools window.
 
@@ -39,7 +39,7 @@ If you are building a UI that changes depending on where the user is located, yo
    *  Click **Other** to enter custom longitude and latitude coordinates.
    *  Click **Location unavailable** to see how your site behaves when the user's location isn't available.
 
-   ![Selecting Tokyo from the Location list.](../media/device-mode-console-sensors-geolocation-tokyo.msft.png)
+   ![Selecting Tokyo from the Location list](../media/device-mode-console-sensors-geolocation-tokyo.msft.png)
 
 <!-- /web/fundamentals/native-hardware/user-location/index -->
 
@@ -49,5 +49,5 @@ If you are building a UI that changes depending on where the user is located, yo
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/device-mode/geolocation/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

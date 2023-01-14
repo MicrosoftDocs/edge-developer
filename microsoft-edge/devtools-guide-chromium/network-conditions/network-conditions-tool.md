@@ -15,7 +15,7 @@ Use the **Network conditions** tool to do the following:
 *  Set the user agent string.
 *  Set Content-Encodings such as deflate, gzip, and br.
 
-![The Network conditions tool.](media/network-conditions-tool.png)
+![The Network conditions tool](media/network-conditions-tool.png)
 
 
 <!-- ====================================================================== -->
