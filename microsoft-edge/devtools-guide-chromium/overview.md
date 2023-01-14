@@ -81,7 +81,9 @@ hit counts:
 `Command`+`Option`+`C`  3   (in 2)
  -->
 
-### Open DevTools by right-clicking an item in a webpage
+
+<!-- ------------------------------ -->
+#### Open DevTools by right-clicking an item in a webpage
 
 A good way to open DevTools is to right-click an item on a webpage, and then select **Inspect**:
 
@@ -92,14 +94,16 @@ DevTools opens, with the right-clicked element highlighted in the **DOM tree** i
 ![DevTools opens, with the right-clicked element highlighted in the Elements tool](media/devtools-intro-inspect-devtools-open.png)
 
 
-### Open DevTools by using the Microsoft Edge toolbar
+<!-- ------------------------------ -->
+#### Open DevTools by using the Microsoft Edge toolbar
 
 On the Microsoft Edge toolbar, you can select **Settings and more** (`...`) >  **More tools** >  **Developer tools**:
 
 ![On the Microsoft Edge toolbar, select 'Settings and more' > 'More tools' > 'Developer tools'](media/edge-settings-and-more-tools-developer-tools.png)
 
 
-### Have DevTools automatically open when you open a new tab
+<!-- ------------------------------ -->
+#### Have DevTools automatically open when you open a new tab
 
 To have DevTools automatically open whenever you open a new tab in the browser:
 
@@ -130,7 +134,8 @@ To have DevTools automatically open whenever you open a new tab in the browser:
    ```
    
 
-### Turning off the F12 keyboard shortcut
+<!-- ------------------------------ -->
+#### Turning off the F12 keyboard shortcut
 
 To prevent pressing `F12` from opening DevTools:
 
@@ -213,7 +218,8 @@ To turn off Tooltips, press `Esc`.
 DevTools gives you an amazing amount of power to inspect, debug, and change the website currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
 
 
-### Tabbed tool panels containing tabs and pages
+<!-- ------------------------------ -->
+#### Tabbed tool panels containing tabs and pages
 
 Other than a couple of icon tools (the **Inspect** tool and **Device Emulation**), DevTools is divided into and a set of tabbed tools, such as the **Elements** tool, the **Console** tool, and the **Sources** tool.  Within the **Command Menu**, tools are referred to as _panels_.  A tool's tab contains a panel which contains the tool's UI.
 
@@ -226,7 +232,8 @@ Tools are organized into a set of tabs on the main toolbar and on the drawer too
 Within the panel of some tools, there are one or more sets of tabs (tabbed panes).  For example, the **Elements** tool contains a set of tabs that includes **Styles**, **Event Listeners**, and **Accessibility** tabs.  For other tools, the tool's panel has pages listed along the left side.
 
 
-### The main toolbar and the Drawer toolbar
+<!-- ------------------------------ -->
+#### The main toolbar and the Drawer toolbar
 
 <!-- clarify: DevTools also allows you to change web-based third-party products on your computer.  extensions? -->
 
@@ -266,14 +273,16 @@ The main toolbar contains the following features:
 The toolbar features are described below.
 
 
-### Inspect tool
+<!-- ------------------------------ -->
+#### Inspect tool
 
 When you click the **Inspect tool** (![Inspect tool icon](media/inspect-tool-icon-light-theme.png)) button, you can select an element on the current webpage.  While the **Inspect** tool is active, you can move your mouse over different parts of the webpage to get detailed information about page elements, along with a multi-color overlay that shows the layout dimensions, padding, and margin of the page element.
 
 ![The Inspect tool while hovering over with the first headline of this article](media/devtools-intro-inspect-tool.msft.png)
 
 
-### Device Emulation
+<!-- ------------------------------ -->
+#### Device Emulation
 
 Click the **Device Emulation** (![Device Emulation icon](media/device-emulation-icon-light-theme.png)) button to display the current website in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
 
@@ -282,19 +291,22 @@ Click the **Device Emulation** (![Device Emulation icon](media/device-emulation-
 See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 
 
-### Welcome tool
+<!-- ------------------------------ -->
+#### Welcome tool
 
 Includes information about the new features of DevTools, how to contact the team, and provides information about certain features.
 
 
-### Elements tool
+<!-- ------------------------------ -->
+#### Elements tool
 
 Allows you to inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.
 
 The **Elements** tool is always present on the main toolbar.
 
 
-### Console tool
+<!-- ------------------------------ -->
+#### Console tool
 
 In the **Console** tool, you can:
 *  View and filter logged messages from network requests or from JavaScript log statements.
@@ -305,61 +317,74 @@ The **Console** tool is always present on the main toolbar and on the Drawer too
 See [Console](console/index.md).
 
 
-### Sources tool
+<!-- ------------------------------ -->
+#### Sources tool
 
 The [Sources](sources/index.md) tool is a code editor and JavaScript debugger.  You can edit projects, maintain snippets, and debug your current project.
 
 The **Sources** tool is always present on the main toolbar.
 
 
-### Network tool
+<!-- ------------------------------ -->
+#### Network tool
 
 The **Network** tool allows you to monitor and inspect requests or responses from the network and browser cache.  You can filter requests and responses to fit your needs and simulate different network conditions.
 
 See [Inspect network activity](network/index.md).
 
-### Performance tool
+
+<!-- ------------------------------ -->
+#### Performance tool
 
 See [Get started analyzing runtime performance](evaluate-performance/index.md).
 
 
-### Memory tool
+<!-- ------------------------------ -->
+#### Memory tool
 
 See [Fix memory problems](memory-problems/index.md).
 
 
-### Application tool
+<!-- ------------------------------ -->
+#### Application tool
 
 See [View, edit, and delete cookies](storage/cookies.md).
 
 
-### Security tool
+<!-- ------------------------------ -->
+#### Security tool
 
 See [Understand security issues using the Security tool](security/index.md).
 
 
-### Lighthouse tool
+<!-- ------------------------------ -->
+#### Lighthouse tool
 
 See [Lighthouse tool](lighthouse/lighthouse-tool.md).
 
 
-### CSS Overview tool
+<!-- ------------------------------ -->
+#### CSS Overview tool
 
 Identify potential CSS improvements.
 
 See [CSS Overview tool](css/css-overview-tool.md).
 
 
-### More tabs button
+<!-- ------------------------------ -->
+#### More tabs button
 
 To display a tool that's open but hidden because the window is too narrow, click the **More tabs** (![More tabs icon](media/more-tabs-icon-light-theme.png)) button.
 
 
-### More Tools button
+<!-- ------------------------------ -->
+#### More Tools button
 
 To add a tool to the toolbar, click the **More Tools** (![More Tools icon](media/more-tools-icon-light-theme.png)) button.
 
-### JavaScript errors counter
+
+<!-- ------------------------------ -->
+#### JavaScript errors counter
 
 The **JavaScript errors counter** (![JavaScript errors counter icon](media/javascript-counter-icon-light-theme.png)) button displays the following:
 
@@ -372,7 +397,8 @@ The tooltip for the **JavaScript counter** button is **Open Console to view # er
 Click the JavaScript errors counter to open the [Console](console/index.md) and learn about the error.
 
 
-### Issues counter
+<!-- ------------------------------ -->
+#### Issues counter
 
 The **Issues counter** (![Issues counter icon](media/issues-counter-icon-light-theme.png)) button shows the number of HTML or CSS issues that are automatically found on the current webpage.
 
@@ -381,7 +407,8 @@ The tooltip for the **Issues counter** is **Open Issues to view # issues**.  The
 Click the **Issues counter** to open the [Issues](issues/index.md) tool.
 
 
-### Settings button
+<!-- ------------------------------ -->
+#### Settings button
 
 To open the DevTools **Settings** webpage, click the **Settings** (![Settings icon](media/settings-gear-icon-light-theme.png)) button.  The **Settings** page contains the following sub-pages:
 
@@ -398,19 +425,22 @@ To open the DevTools **Settings** webpage, click the **Settings** (![Settings ic
 See [Settings](customize/index.md#settings) in _Customize DevTools_.
 
 
-### Send Feedback button
+<!-- ------------------------------ -->
+#### Send Feedback button
 
 To open the **Send Feedback** dialog, click the **Send Feedback** (![Send Feedback icon](media/send-feedback-icon-light-theme.png)) button.  The **Send Feedback** dialog opens.  Enter information to describe what happened and automatically includes a screenshot.  Use **Send Feedback** to connect with DevTools team to report problems, issues, or suggest ideas.
 
 See [Contact the Microsoft Edge DevTools team](contact.md).
 
 
-### Customize and control DevTools menu
+<!-- ------------------------------ -->
+#### Customize and control DevTools menu
 
 The **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button opens a dropdown menu that enables you to define where to dock DevTools, search, open different tools, and more.
 
 
-### Close DevTools button
+<!-- ------------------------------ -->
+#### Close DevTools button
 
 Click the **Close** DevTools (![Close DevTools icon](media/close-devtools-icon-light-theme.png)) button in the upper right corner of DevTools to close DevTools and use the entire window to display the current webpage.
 
@@ -455,7 +485,9 @@ In addition to Panel tools and Drawer tools, DevTools includes the following too
 *  The **Device Emulation** tool.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 *  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md).
 
-### See also
+
+<!-- ------------------------------ -->
+#### See also
 
 * [About the list of tools](about-tools.md)
 
@@ -557,7 +589,7 @@ don't need, if have the above step:
 1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
 
 
-### Clipboard entry for opening a specific Settings page:
+#### Clipboard entry for opening a specific Settings page:
 
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.

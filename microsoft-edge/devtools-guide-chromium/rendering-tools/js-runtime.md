@@ -40,7 +40,7 @@ If you notice jank (interruptions of rendering) in your JavaScript, collect a Sa
 
 1. In DevTools, go to the **Memory** tool.
 
-1. Click the **Allocation sampling** radio button.
+1. Click the **Allocation sampling** option button.
 
 1. Click **Start**.
 
