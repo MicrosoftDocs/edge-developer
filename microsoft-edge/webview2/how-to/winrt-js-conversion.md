@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 12/02/2022
+ms.date: 01/13/2023
 ---
 # How WinRT types and members are represented in JavaScript
 
@@ -30,30 +30,29 @@ The WebView2 WinRT JS Projection tool (**wv2winrt**) converts from WinRT to Java
 | `IMap<K,V>`, `IMapView<K,V>`, `IObservableMap<K,V>` | JavaScript object | If a `RuntimeClass` instance implements `map` interfaces, then it is represented in JavaScript as the usual object described below, but also has properties with name and values from the underlying WinRT map object.  Reads and writes are performed live on the underlying WinRT map object. |
 | `Enum` | JavaScript object | An enum type is represented as a JavaScript object.  Each enum value is a `Number` property on the JavaScript object. |
 | `Struct` | JavaScript object | A `Struct` type is converted to a JavaScript object that has property names which correspond to the `Struct` type member names.  This is a two-way conversion. |
-| `Namespace` | JavaScript object | A namespace is represented as a JavaScript object that has a property for each child namespace, enum type, and `RuntimeClass`. |
+| `Namespace` | JavaScript object | A namespace is represented as a JavaScript object that has a property for any child namespaces, enum types, or `RuntimeClass`.  The namespace may have 0, 1, or many child namespaces, enums, or runtimeclasses, and each individual child namespace, enum and runtimeclass gets its own property. |
 | `Class` | JavaScript object | A `RuntimeClass` class is converted to a JavaScript object that has the same methods, properties, and events. |
 | `Interface` | JavaScript object | A `RuntimeClass` interface is converted to a JavaScript object that has the same methods, properties, and events.  There is no support for implementing an interface in JavaScript. |
 | Class static member | JavaScript object property | See below. |
 | Class constructor | JavaScript constructor and function | See below. |
 
 See also:
-* [RuntimeClass class](https://learn.microsoft.com/en-us/cpp/cppcx/wrl/runtimeclass-class)
+* [Introduction to Microsoft Interface Definition Language 3.0](/uwp/midl-3/intro)
 
 
 <!-- ------------------------------ -->
 #### Class static members
 
-<!--
-original wording:
-Runtimeclasses with static methods, properties, or events, are represented as properties of their namespace with the static methods, properties, and events as properties on that JavaScript object.
+A runtime class that has static properties, static methods, or static events is represented as a property of the namespace. Each static property, static method, and static event is represented as a property on that JavaScript object of the runtimeclass.
 
-that might mean:
+For example, for the WinRT API static method `Windows.Foundation.Uri.EscapeComponent`:
+*  `Windows.Foundation` is the namespace.
+*  `Uri` is the runtimeclass.
+*  `EscapeComponent` is the static method.
 
-The runtime class that has static properties, methods, or events is a property of the namespace.  Each static property, method, or event is a property of the JavaScript Object.
-
-A `RuntimeClass` class that has static properties, methods, or events is represented as a property of the corresponding JavaScript namespace object.  The static methods, properties, and events are represented as properties on the JavaScript namespace object.
--->
-A runtime class that has static properties, static methods, or static events is represented as a property of the namespace.  Each static property, method, or event is represented as a property on that JavaScript object.
+In JavaScript, the representation looks similar: `chrome.webview.hostObjects.Windows.Foundation.Uri.EscapeComponent`:
+*  `EscapeComponent` is a JavaScript method that's a property on the JavaScript object for the `Uri` runtimeclass.
+*  The `Uri` runtimeclass is a property on the JavaScript object for the `Foundation` namespace.
 
 For example, to call the static method `Windows.Foundation.Uri.EscapeComponent`, call:
 
@@ -61,18 +60,15 @@ For example, to call the static method `Windows.Foundation.Uri.EscapeComponent`,
 `chrome.webview.hostObjects.Windows.Foundation.Uri.EscapeComponent("example");`
 ```
 
-The JavaScript namespace object here is `chrome.webview.hostObjects`.
+The JavaScript namespace object here is `chrome.webview.hostObjects.Windows.Foundation`.
 
 
 <!-- ------------------------------ -->
 #### Class constructors
 
-<!-- orig wording:
-Runtimeclasses with constructors are represented as a JavaScript constructor and function on the namespace object.
--->
-A constructor for a `RuntimeClass` class is represented as two members on a JavaScript object:
-*  A constructor on the JavaScript namespace object.
-*  A function on the JavaScript namespace object.
+A constructor for a `RuntimeClass` class is represented as a single property on a JavaScript object that can be called two ways:
+*  As a constructor on the JavaScript namespace object.
+*  As a function on the JavaScript namespace object.
 
 For example, to create a new `Windows.Foundation.Uri` object, you can either call it as a constructor, using `new`:
 
@@ -86,7 +82,7 @@ Or, call it as a function, without `new`:
 `let uri = chrome.webview.hostObjects.Windows.Foundation.Uri("https://example.com/");`
 ```
 
-The JavaScript namespace object here is `chrome.webview.hostObjects`.
+The JavaScript namespace object here is `chrome.webview.hostObjects.Windows.Foundation`.
 
 
 <!-- ====================================================================== -->
@@ -136,4 +132,4 @@ See also:
 ## See also
 
 * [Call native-side WinRT code from web-side code](./winrt-from-js.md)
-* [RuntimeClass class](https://learn.microsoft.com/en-us/cpp/cppcx/wrl/runtimeclass-class)
+* [Introduction to Microsoft Interface Definition Language 3.0](/uwp/midl-3/intro)
