@@ -35,7 +35,7 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
 <!-- ====================================================================== -->
-## 1.0.1462.37
+## 1.0.1518.46
 
 Release Date: January 17, 2023
 
