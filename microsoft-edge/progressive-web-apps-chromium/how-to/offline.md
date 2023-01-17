@@ -82,7 +82,7 @@ To learn more and view code examples, see [Using IndexedDB](https://developer.mo
 
 The Cache API is a system for storing and retrieving network requests and responses in your app's front-end code or service worker. It can be used to store assets, such as images and files, locally on the user's device. This can make your application work even when it's offline, or improve its performance by reducing the number of network requests that are needed to render the app.
 
-The following code snippet shows how to listen to the `fetch` event in a service worker, and storing the response from the server by using the Cache API:
+The following code snippet shows how to listen to the `fetch` event in a service worker, and store the response from the server by using the Cache API:
 
 ```javascript
 self.addEventListener("fetch", event => {
@@ -119,6 +119,8 @@ openFileButton.addEventListener("click", async () => {
 
 To learn more, see [Window.showOpenFilePicker()](https://developer.mozilla.org/docs/Web/API/Window/showOpenFilePicker) on MDN.
 
+The File System Access API can also be coupled with the PWA File Handling feature to register your app as a handler of specific file types, and therefore feel more native to users. To learn more, see [Handle files in Progressive Web Apps](./handle-files.md).
+
 The _origin-private_ File System Access API is a variation of the File System Access API that's intended to provide more privacy for users. It allows applications to access files on the user's device too, but only within a specific directory that's private to the app's origin. Also, this API is not intended to make it easy for users to access the private directory using their file explorer.
 
 To open a file from the origin-private file system, use the `navigator.storage` Promise-based API:
@@ -130,17 +132,19 @@ const root = await navigator.storage.getDirectory();
 const fileHandle = await root.getFileHandle("my-file.txt");
 ```
 
-The File System Access API can also be coupled with the PWA File Handling feature to register your app as a handler of specific file types, and therefore feel more native to users. To learn more, see [Handle files in Progressive Web Apps](./handle-files.md).
-
 
 <!-- ====================================================================== -->
 ## Storage quota
 
-In Microsoft Edge, local and session storage are limited to about 5MB each. Your app can also use up to 60% of the total disk space for storing IndexedDB, Cache API, and File System Access API data.
+In Microsoft Edge, local and session storage are limited to about 5MB each.
 
-You can use `navigator.storage.estimate()` to ask the Storage Manager API how much total space is available and how much the current app already uses. To learn more, see [StorageManager.estimate()](https://developer.mozilla.org/docs/Web/API/StorageManager/estimate) on MDN.
+Other types of data storage, such as IndexedDB, Cache API, or Origin Private File System Access API, can use up to 60% of the total disk space on the device. For example, if the device your app is running on has a 64GB disk, Microsoft Edge allows your app to store up to about 38GB of data.
 
-Trying to store more data than what is allowed results in a JavaScript error messages. Your code should catch these errors by using `try...catch` statements. The code snippet below shows how to catch an exceeded quota error when storing data in Web Storage:
+Note that the free space that's actually available on the device may be less than the 60% storage quota. For example, if the device your app is running on has a 64GB disk, but 50GB is already used by the operating system and other files, your app will only be able to store 14GB of data, even if the storage quota is still 38GB.
+
+You can use `navigator.storage.estimate()` to ask the Storage Manager API what the storage quota for your app's origin is, and how much from it is already used. To learn more, see [StorageManager.estimate()](https://developer.mozilla.org/docs/Web/API/StorageManager/estimate) on MDN.
+
+Trying to store more data than is available or allowed results in a JavaScript error. Your code should catch this error by using `try...catch` statements. The code snippet below shows how to catch an exceeded quota error when storing data using Web Storage:
 
 ```javascript
 try {
@@ -150,6 +154,12 @@ try {
 }
 ```
 
-When the user's device starts being low on available disk space, also known as _storage pressure_, the browser that's running your app may start evicting non-persistent data. This means that the data your app stored by using the Cache API, IndexedDB, the File System Access API, or Web Storage may get evicted.
 
-By default, the data you store is not considered persistent, which means that the browser might clear your data when there's storage pressure. If your app stores critical data, use the `navigator.storage.persist()` function to make your app's storage persistent. Persistent storage can only be cleared by the user. To learn more, see [StorageManager.persist()](https://developer.mozilla.org/docs/Web/API/StorageManager/persist) on MDN.
+<!-- ====================================================================== -->
+## Data eviction
+
+When the user's device starts being low on available disk space, also known as _storage pressure_, Microsoft Edge will start evicting non-persistent data.
+
+This means that the data your app stored by using the Cache API, IndexedDB, the Origin Private File System Access API, or Web Storage might get evicted.
+
+By default, the data your app stores is not considered persistent and can get evicted when there's storage pressure. If your app stores critical data, use the `navigator.storage.persist()` function to make your app's storage persistent. Persistent storage can only be cleared by the user. To learn more, see [StorageManager.persist()](https://developer.mozilla.org/docs/Web/API/StorageManager/persist) on MDN.
