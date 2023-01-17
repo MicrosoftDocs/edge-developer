@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 02/14/2022
+ms.date: 01/17/2023
 ---
 # Develop for the web with Microsoft Edge
 
