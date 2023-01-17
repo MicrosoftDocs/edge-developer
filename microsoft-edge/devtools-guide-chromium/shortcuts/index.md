@@ -164,7 +164,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Clear the **Console** | `Ctrl`+`L` | `Command`+`K` or `Option`+`L` |
 | Force a multi-line entry.  This shortcut is mostly unnecessary, because DevTools should detect multi-line scenarios by default | `Shift`+`Enter` | `Command`+`Return` |
 | Run | `Enter` | `Return` |
-| Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then click **Expand** (![Expand.](../media/expand-icon.msft.png)) | Hold `Alt`, then click **Expand** (![Expand.](../media/expand-icon.msft.png)). |
+| Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then click **Expand** (![Expand](../media/expand-icon.msft.png)) | Hold `Alt`, then click **Expand** (![Expand](../media/expand-icon.msft.png)). |
 
 
 <!-- ====================================================================== -->
@@ -180,5 +180,5 @@ The following keyboard shortcuts are available in most DevTools panels.
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/shortcuts/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
