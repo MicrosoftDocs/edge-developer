@@ -15,7 +15,7 @@ In the **Edge DevTools** tab's **Console** tool in Visual Studio Code with this 
 
 You can:
 *  View [log messages](/microsoft-edge/devtools-guide-chromium/console/console-log).
-*  Access the `window` object and use the [DOM interaction convenience methods](/microsoft-edge/devtools-guide-chromium/console/console-dom-interaction).
+*  Access the `window` object and use the [DOM interaction convenience methods](../../devtools-guide-chromium/console/console-dom-interaction.md).
 *  [Filter the Console](../../devtools-guide-chromium/console/console-filters) and set [live expressions](/microsoft-edge/devtools-guide-chromium/live-expressions.md).
 
 
