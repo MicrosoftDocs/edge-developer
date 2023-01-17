@@ -122,7 +122,6 @@ The following items are now stable:
 
 <!-- ====================================================================== -->
 
-## Prereleasae coming soon
 <!-- ## 1.0.1549-prerelease
 
 Release Date: December 12, 2022
