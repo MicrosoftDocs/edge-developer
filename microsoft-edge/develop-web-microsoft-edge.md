@@ -103,7 +103,7 @@ See [Test and automation in Microsoft Edge](test-and-automation/test-and-automat
 <!-- ====================================================================== -->
 ## Development tips for Microsoft Edge
 
-There are many tips and tricks to be aware of when building on the web platform, including:
+There are many tips and tricks to be aware of when building websites or web apps that work in Microsoft Edge, including:
 
 *  Testing for coming changes that could impact compatibility of your website with Microsoft Edge.
 *  Moving users to Microsoft Edge from Internet Explorer.

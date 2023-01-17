@@ -10,7 +10,7 @@ ms.date: 11/28/2022
 ---
 # Web platform overview
 
-The following are considerations for developing websites and products for the web platform, specifically for Microsoft Edge:
+There are many tips and tricks to be aware of when building websites or web apps that work in Microsoft Edge, including:
 
 *  Testing for coming changes that could impact compatibility of your website with Microsoft Edge.
 *  Moving users to Microsoft Edge from Internet Explorer.
