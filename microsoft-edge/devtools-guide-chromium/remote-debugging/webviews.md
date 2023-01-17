@@ -68,7 +68,7 @@ To display a list of the Android WebViews with debugging turned on that run on y
 To start debugging, under the Android WebView you want to debug, click **inspect**.  Use DevTools in the same way that you use a remote browser tab.
 
 <!--
-![Inspecting elements in an Android WebView.](.images/webview-debugging.msft.png)
+![Inspecting elements in an Android WebView](.images/webview-debugging.msft.png)
 
 The gray graphics listed with the Android WebView represent its size and position relative to the screen of the device.  If your Android WebViews have titles set, the titles are listed as well.
 -->
@@ -89,5 +89,5 @@ If your Android WebViews aren't displayed on the `edge://inspect` page:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/remote-debugging/webviews/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).

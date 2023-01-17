@@ -12,11 +12,11 @@ ms.date: 06/07/2021
 The **Inspect** tool displays information about individual elements as you hover over the rendered webpage, including accessibility information.
 In contrast, the **Issues** tool automatically reports issues for the entire webpage.
 
-The **Inspect** tool button (![Inspect.](../media/inspect-tool-icon-light-theme.png)) is in the upper-left corner of DevTools.  When you click the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
+The **Inspect** tool button (![Inspect](../media/inspect-tool-icon-light-theme.png)) is in the upper-left corner of DevTools.  When you click the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
 
 When the **Inspect** tool is active, hovering over any element on the rendered webpage displays the **Inspect** overlay. This overlay displays general information and accessibility information about that element.  The **Accessibility** section of the **Inspect** overlay displays information about text-color contrast, screen reader text, and keyboard support.
 
-![The Inspect tool, showing the element's area as a multicolor overlay, and showing the element's details as a large information overlay.](../media/a11y-testing-basics-inspector-overlay.msft.png)
+![The Inspect tool, showing the element's area as a multicolor overlay, and showing the element's details as a large information overlay](../media/a11y-testing-basics-inspector-overlay.msft.png)
 
 The main article about the Inspect tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md).
 
@@ -30,13 +30,13 @@ The main article about the Inspect tool is [Analyze HTML pages using the Inspect
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
-1. Click the **Inspect** (![Inspect.](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1. Click the **Inspect** (![Inspect](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
-   ![To turn on the Inspect tool, click the Inspect button.](../media/a11y-testing-basics-inspector.msft.png)
+   ![To turn on the Inspect tool, click the Inspect button](../media/a11y-testing-basics-inspector.msft.png)
 
 1. Hover over any element in the rendered demo webpage.  The **Inspect** tool shows an information overlay below the element within the rendered webpage.
 
-   ![The Inspect tool, showing the element's layout as a multicolor overlay, and showing the element's details as a large information overlay.](../media/a11y-testing-basics-inspector-overlay.msft.png)
+   ![The Inspect tool, showing the element's layout as a multicolor overlay, and showing the element's details as a large information overlay](../media/a11y-testing-basics-inspector-overlay.msft.png)
 
 The bottom part of the **Inspect** overlay has an **Accessibility** section that contains the following information:
 
@@ -58,7 +58,7 @@ The bottom part of the **Inspect** overlay has an **Accessibility** section that
 
 The top part of the **Inspect** overlay, which is above the **Accessibility** section, lists the following details of the element.
 
-*  Layout type. If the element is positioned using a flexbox or grid, an icon (![Grid layout icon.](../media/grid-icon.msft.png)) is displayed.
+*  Layout type. If the element is positioned using a flexbox or grid, an icon (![Grid layout icon](../media/grid-icon.msft.png)) is displayed.
 *  Name of the element, such as `h1`, `h2`, or `div`.
 *  The dimensions of the element in pixels.
 *  The color as a color swatch (or a small, colored square) and as a string (such as `#336699`).
@@ -77,7 +77,7 @@ In addition to the information overlay, the **Inspect** tool also provides regio
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
-1. Click the **Inspect** button (![Inspect tool icon.](../media/inspect-tool-icon-light-theme.png)) in the top-left corner of DevTools, so that the button is highlighted (blue).
+1. Click the **Inspect** button (![Inspect tool icon](../media/inspect-tool-icon-light-theme.png)) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
 1. Hover over different parts of the rendered demo webpage.
 
@@ -87,7 +87,7 @@ In addition to the information overlay, the **Inspect** tool also provides regio
 
    The **Inspect** tool highlights several rectangular portions of the **Cats** section with different colors, showing the layout that results from the CSS flexbox definitions on your webpage:
 
-   ![Multicolor flexbox overlay and information overlay when using the Inspect tool.](../media/inspect-tool-flexbox-overlay.msft.png)
+   ![Multicolor flexbox overlay and information overlay when using the Inspect tool](../media/inspect-tool-flexbox-overlay.msft.png)
 
 If you want to configure the grid overlay or flexbox overlay, in the **Elements** tool, select the **Layout** tab.  See [Inspect CSS Grid](..\css\grid.md).
 
@@ -101,7 +101,7 @@ If you want to configure the grid overlay or flexbox overlay, in the **Elements*
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
-1. In DevTools, click the **Inspect** button (![the Inspect tool.](../media/inspect-tool-icon-light-theme.png)) in the top-left corner, so that the button is highlighted (blue).
+1. In DevTools, click the **Inspect** button (![the Inspect tool](../media/inspect-tool-icon-light-theme.png)) in the top-left corner, so that the button is highlighted (blue).
 
 1. Select the **Elements** tool.
 
@@ -111,7 +111,7 @@ If you want to configure the grid overlay or flexbox overlay, in the **Elements*
 
    The **Elements** tool automatically opens and displays the HTML of the element in the DOM tree.  The **Elements** tool also displays the applied CSS on the element, in the **Styles** pane.  Clicking an element on the rendered webpage turns off the **Inspect** tool.
 
-   ![Details about the clicked element are displayed in the Elements tool.](../media/a11y-testing-basics-inspector-selected-element.msft.png)
+   ![Details about the clicked element are displayed in the Elements tool](../media/a11y-testing-basics-inspector-selected-element.msft.png)
 
 After clicking an element in the rendered webpage, you can then use the **Accessibility** tab (near the **Styles** tab) to view the **Accessibility Tree** and use the **Source Order Viewer**.
 
