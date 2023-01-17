@@ -242,7 +242,7 @@ Activity reporting records information about the websites children visit. Record
 
 Safe search adds a safe keyword to the header request to search engines. Bing reads the safe keyword and filters search results returned to the child. Other search engines may return filtered results due to the keyword. All of the child's searches are collected and made available for the family organizer to view in activity reports or at [family.microsoft.com](https://account.microsoft.com/family). The data is collected with the child's Microsoft account so it may be properly managed.
 
-The child account’s health status is also monitored.  When a child needs to take action to log back into their account, such as when a password has changed or expired, their parent is informed.  This data is collected, encrypted in transit, and sent to Microsoft and stored on secure Microsoft storage servers. The account health status is stored on [family.microsoft.com](https://account.microsoft.com/family) for up to 30 days and then deleted after.
+The child account's health status is also monitored.  When a child needs to take action to log back into their account, such as when a password has changed or expired, their parent is informed.  This data is collected, encrypted in transit, and sent to Microsoft and stored on secure Microsoft storage servers. The account health status is stored on [family.microsoft.com](https://account.microsoft.com/family) for up to 30 days and then is deleted afterwards.
 
 The child's browsing data is stored on secure Microsoft servers and made available to parents for up to 30 days, then immediately deleted.  The data may be deleted at any time from the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/). To clear browsing data stored locally on a device, go to `edge://settings/clearBrowserData`.  Choose a **Time range**, select checkboxes as needed, then select **Clear now**.
 
@@ -320,7 +320,7 @@ Microsoft Edge offers an interactive and seamless experience when you launch the
 
 With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system. Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you sign in and sync your browsing data.
 
-You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`
+You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`.
 
 ![Import.](./media/migration.png)
 
@@ -463,7 +463,7 @@ Microsoft Edge lets you save your payment information to your browser profile. M
 
 Microsoft Edge asks you if you want to store your payment information if payment autofill is turned on. The information is encrypted locally on your device. To manage payment information, go to `edge://settings/payments`.  When you delete saved payment information, it no longer appears as an autofill suggestion.
 
-Microsoft Edge also supports saving your payment information to your Microsoft account if you are signed in and syncing, which makes the information available across devices. To save payment information to your Microsoft account, CVV may be required depending on your current region. CVV is only used for authorization and will not be stored by Microsoft. 
+Microsoft Edge also supports saving your payment information to your Microsoft account if you are signed in and syncing, which makes the information available across devices. To save payment information to your Microsoft account, credit card verification (CVV) may be required, depending on your current region. CVV is only used for authorization and will not be stored by Microsoft. 
 
 Microsoft Edge supports the PaymentRequest API. The API lets you pay for purchases with payment information you previously saved using autofill. The PaymentRequest API allows the merchant to request the following information: credit card number, credit card expiration, full name, billing address, email address, phone number, and shipping address. The API tells the merchant that you have credit card information saved, but does not share any information with the merchant unless you allow it. To turn off the Payments feature, go to `edge://settings/privacy`.
 
@@ -672,13 +672,14 @@ To help resolve URL typos in the address bar that result in a website error, Mic
 
 <!-- ====================================================================== -->
 ## Support nonprofits
-Microsoft Edge allows you to support nonprofit organizations using Microsoft Rewards points or cash while browsing. When you are signed in to Microsoft Edge with your Microsoft account and navigate to a nonprofit website, the support nonprofits icon will appear on the right-side of your address bar. You can then click this icon to donate to the nonprofit organization.
 
-![Image of support nonprofits icon in address bar.](./media/support-nonprofit.png)
+Microsoft Edge allows you to support nonprofit organizations using Microsoft Rewards points or cash while browsing. When you are signed in to Microsoft Edge with your Microsoft account and navigate to a nonprofit website, the **Support nonprofits** icon appears on the right side of the Address bar. You can then click this icon to donate to the nonprofit organization.
+
+![The 'Support nonprofits' icon in the address bar](./media/support-nonprofit.png)
  
- To control this feature, go to `edge://settings/privacy` and turn on or off the **Show opportunities to support causes and nonprofits you are care about** setting.
+ To control this feature, go to `edge://settings/privacy` and turn on or off the **Show opportunities to support causes and nonprofits you care about** setting.
  
-Supporting nonprofits is not available using **InPrivate** or **Guest** modes.
+Supporting nonprofits is not available when using **InPrivate** or **Guest** modes.
 
 
 <!-- ====================================================================== -->
