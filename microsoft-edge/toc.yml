@@ -1209,6 +1209,10 @@
               href: webview2/concepts/frames.md
               displayName: Using frames in WebView2 apps, iframe # full title
 
+            - name: Printing
+              href: webview2/how-to/print.md
+              displayName: Printing from WebView2 apps # full title
+
             # updated h2: Experimental APIs, added a 2nd, new h3:
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md

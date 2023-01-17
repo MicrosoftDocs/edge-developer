@@ -1,6 +1,6 @@
 ---
-title: Printing in WebView2 apps
-description: How to print a web page in a WebView2 app.
+title: Printing from WebView2 apps
+description: How to print a webpage to a printer, PDF file, or PDF stream in a WebView2 app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,43 +8,60 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 01/12/2023
 ---
-# Print
+# Printing from WebView2 apps
 
-There are a few different ways to print a web page in WebView2 which give you varying levels of ease of use and control.
+There are several different ways to print a web page in WebView2, which give you various levels of ease of implementation and customizing.
 
-## ShowPrintUI
+| Method | Description |
+|---|---|
+| `ShowPrintUI` | Opens the WebView2 **Print Preview** dialog or the operating system's **Print** dialog. Easy to implement, minimal support for customizing. |
+| `Print` | Silently prints the current top-level document in the WebView2 using optional programmatically specified print settings to a printer. You can to build your own print preview dialog or print experience. |
+| `PrintToPdf` | Silently prints the current top-level document in the WebView2 to a PDF file. You can build your own code to print the PDF file. |
+| `PrintToPdfStream` | Silently prints the current top-level document in the WebView2 to a PDF stream. You can build your own code to print the PDF. |
 
-The ShowPrintUI show the WebView2 print preview dialog or OS print dialog for the current top-level document in the WebView2. With this mechanism you easily get a printing experience the user will be familiar with.
+
+## The ShowPrintUI method
+
+The `ShowPrintUI` method opens the WebView2 **Print Preview** dialog or the operating system's **Print** dialog, for the current top-level document in the WebView2 control. By using this approach, you can easily provide a familiar printing experience for users.
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
-[CoreWebView2.ShowPrintUI() Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showprintui#microsoft-web-webview2-core-corewebview2-showprintui)
-[CoreWebView2.ShowPrintUI(CoreWebView2PrintDialogKind) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showprintui#microsoft-web-webview2-core-corewebview2-showprintui(microsoft-web-webview2-core-corewebview2printdialogkind))
-[CoreWebView2PrintDialogKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2printdialogkind)
+* [CoreWebView2.ShowPrintUI Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showprintui#microsoft-web-webview2-core-corewebview2-showprintui)
+* [CoreWebView2.ShowPrintUI(printDialogKind) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showprintui#microsoft-web-webview2-core-corewebview2-showprintui(microsoft-web-webview2-core-corewebview2printdialogkind))
+* [CoreWebView2PrintDialogKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2printdialogkind)
+
+<!-- ------------------------------ -->
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.ShowPrintUI Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#showprintui)
+* [CoreWebView2PrintDialogKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printdialogkind)
 
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [Win32/C++](#tab/win32cpp)
 
-[ICoreWebView2_16::ShowPrintUI(printDialogKind) Method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#showprintui)
-[COREWEBVIEW2_PRINT_DIALOG_KIND Enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_dialog_kind)
+* [ICoreWebView2_16::ShowPrintUI method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#showprintui)
+* [COREWEBVIEW2_PRINT_DIALOG_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_dialog_kind)
 
 
 ---
 
 <!-- end of tab-set -->
 
-### Example: ShowPrintUI
+#### Example: The ShowPrintUI method
 
-This example shows the user a print dialog. If `printDialog` is `CoreWebView2PrintDialogKind.Browser`, opens a browser print preview dialog, `CoreWebView2PrintDialogKind.System` opens a system print dialog.
+This example shows the user a **Print** dialog.
+* If `printDialog` is `CoreWebView2PrintDialogKind.Browser`, opens a browser print preview dialog.
+* If `printDialog` is `CoreWebView2PrintDialogKind.System`, opens a system print dialog.
 
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
 void ShowPrintUI(object target, ExecutedRoutedEventArgs e)
@@ -65,14 +82,14 @@ void ShowPrintUI(object target, ExecutedRoutedEventArgs e)
 
 **APIs:**
 
-* [CoreWebView2.ShowPrintUI() Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showprintui#microsoft-web-webview2-core-corewebview2-showprintui)
-* [CoreWebView2.ShowPrintUI(CoreWebView2PrintDialogKind) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showprintui#microsoft-web-webview2-core-corewebview2-showprintui(microsoft-web-webview2-core-corewebview2printdialogkind))
+* [CoreWebView2.ShowPrintUI Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showprintui#microsoft-web-webview2-core-corewebview2-showprintui)
+* [CoreWebView2.ShowPrintUI(printDialogKind) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showprintui#microsoft-web-webview2-core-corewebview2-showprintui(microsoft-web-webview2-core-corewebview2printdialogkind))
 * [CoreWebView2PrintDialogKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2printdialogkind)
 
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
 bool AppWindow::ShowPrintUI(COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind)
@@ -86,8 +103,8 @@ bool AppWindow::ShowPrintUI(COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind)
 
 **APIs:**
 
-* [ICoreWebView2_16::ShowPrintUI(printDialogKind) Method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#showprintui)
-* [COREWEBVIEW2_PRINT_DIALOG_KIND Enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_dialog_kind)
+* [ICoreWebView2_16::ShowPrintUI method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#showprintui)
+* [COREWEBVIEW2_PRINT_DIALOG_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_dialog_kind)
 
 ---
 
@@ -95,39 +112,51 @@ bool AppWindow::ShowPrintUI(COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind)
 
 
 <!-- ====================================================================== -->
-## Print
+## The Print method
 
-The Print method silently print the current top-level document in the WebView2 using optional programmatically specified print settings. If you want to build your own print preview dialog or otherwise build your own print experience you can use this method. This API consists of an asynchronous Print method and a PrintSettings object.
-
-
-<!-- ------------------------------ -->
-
-# [C#](#tab/csharp)
-
-[CoreWebView2.PrintAsync() Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printasync#microsoft-web-webview2-core-corewebview2-printasync)
-[CoreWebView2PrintSettings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
+The `Print` method silently prints the current top-level document in the WebView2 control by using optional, programmatically specified print settings. If you want to build your own print preview dialog, or build your own print experience, you can use this method. This API consists of an asynchronous `Print` method and a `PrintSettings` object.
 
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
-[ICoreWebView2_16::Print() Method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#print)
-[ICoreWebView2PrintSettings2 Interface](microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
-[COREWEBVIEW2_PRINT_STATUS Enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_status)
+* [CoreWebView2.PrintAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printasync#microsoft-web-webview2-core-corewebview2-printasync)
+* [CoreWebView2Environment.CreatePrintSettings Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createprintsettings)
+* [CoreWebView2PrintSettings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
+* [CoreWebView2PrintStatus Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2printstatus)
+
+<!-- ------------------------------ -->
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.PrintAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#PrintAsync)
+* [CoreWebView2Environment.CreatePrintSettings Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createprintsettings)
+* [CoreWebView2PrintSettings Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings)
+* [CoreWebView2PrintStatus Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printstatus)
+
+
+<!-- ------------------------------ -->
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_16::Print method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#print)
+* [ICoreWebView2Environment6::CreatePrintSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
+* [ICoreWebView2PrintSettings2 interface](microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
+* [COREWEBVIEW2_PRINT_STATUS enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_status)
 
 ---
 
 <!-- end of tab-set -->
 
-### Example 1: Print to default printer
+#### Example 1: The Print method to print to the default printer
 
-This example prints the current web page without a print dialog to a default printer with the default print settings.
+This example prints the current web page to the default printer, using the default print settings, without opening a **Print** dialog.
 
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
 async void PrintToDefaultPrinter ()
@@ -161,12 +190,13 @@ async void PrintToDefaultPrinter ()
 
 **APIs:**
 
-* [CoreWebView2.PrintAsync() Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printasync#microsoft-web-webview2-core-corewebview2-printasync)
+* [CoreWebView2.PrintAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printasync#microsoft-web-webview2-core-corewebview2-printasync)
+* [CoreWebView2PrintStatus Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2printstatus)
 
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
 bool AppWindow::PrintToDefaultPrinter()
@@ -215,21 +245,21 @@ bool AppWindow::PrintToDefaultPrinter()
 
 **APIs:**
 
-* [ICoreWebView2_16::Print() method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#print)
-* [COREWEBVIEW2_PRINT_STATUS Enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_status)
+* [ICoreWebView2_16::Print method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#print)
+* [COREWEBVIEW2_PRINT_STATUS enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_status)
 
 ---
 
 <!-- end of tab-set -->
 
-### Example 2: Print to printer
+#### Example 2: The Print method to customize printing
 
-This example prints the current web page to a specific printer with the settings.
+This example prints the current webpage to a specific printer, using the specified settings.
 
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
 async void PrintToPrinter()
@@ -295,12 +325,14 @@ CoreWebView2PrintSettings GetSelectedPrinterPrintSettings(string printerName)
 
 **APIs:**
 
-* [CoreWebView2.PrintAsync() Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printasync#microsoft-web-webview2-core-corewebview2-printasync)
+* [CoreWebView2.PrintAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printasync#microsoft-web-webview2-core-corewebview2-printasync)
+* [CoreWebView2Environment.CreatePrintSettings Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createprintsettings)
 * [CoreWebView2PrintSettings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
+* [CoreWebView2PrintStatus Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2printstatus)
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
 struct SamplePrintSettings
@@ -343,9 +375,8 @@ SamplePrintSettings AppWindow::GetSelectedPrinterPrintSettings(std::wstring prin
 
   return samplePrintSettings;
 
-  // or
-  //
-  // Use win32 DeviceCapabilitiesA function to get the capabilities of the selected printer.
+  // Or
+  // Use the win32 DeviceCapabilitiesA function to get the capabilities of the selected printer.
   // Display the printer capabilities to the user along with the page settings.
   // Return the user selected settings.
 }
@@ -432,10 +463,11 @@ bool AppWindow::PrintToPrinter()
 
 **APIs:**
 
-* [ICoreWebView2_16::Print() method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#print)
-* [ICoreWebView2PrintSettings interace](microsoft-edge/webview2/reference/win32/icorewebview2printsettings1)
+* [ICoreWebView2_16::Print method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#print)
+* [ICoreWebView2Environment6::CreatePrintSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
+* [ICoreWebView2PrintSettings interace](microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
 * [ICoreWebView2PrintSettings2 interace](microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
-* [COREWEBVIEW2_PRINT_STATUS Enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_status)
+* [COREWEBVIEW2_PRINT_STATUS enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_status)
 
 ---
 
@@ -443,36 +475,48 @@ bool AppWindow::PrintToPrinter()
 
 
 <!-- ====================================================================== -->
-## PrintToPdf
+## The PrintToPdf method
 
-Silently print the current top-level document in the WebView2 to a PDF file. To completely control how printing is performed, you can print to a PDF and then build your own code to print the PDF. This API consists of an asynchronous PrintToPdf method and a PrintSettings object. The PrintToPdf method accepts a path that the PDF file should be saved to.
+Silently prints the current top-level document in the WebView2 control to a PDF file. To completely control how printing is performed, you can print to a PDF and then build your own code to print the PDF.
 
-<!-- ------------------------------ -->
-
-# [C#](#tab/csharp)
-
-[CoreWebView2.PrintToPdfAsync(resultFilePath, printSettings) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync#microsoft-web-webview2-core-corewebview2-printtopdfasync)
-[CoreWebView2PrintSettings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
-
+This API consists of an asynchronous `PrintToPdf` method and a `PrintSettings` object. The `PrintToPdf` method accepts a path that the PDF file will be saved to.
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
-[ICoreWebView2_7::PrintToPdf(resultFilePath, printSettings, handler) method](/microsoft-edge/webview2/reference/win32/icorewebview2_7#printtopdf)
-[ICoreWebView2PrintSettings interface](microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
+* [CoreWebView2.PrintToPdfAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync#microsoft-web-webview2-core-corewebview2-printtopdfasync)
+* [CoreWebView2Environment.CreatePrintSettings Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createprintsettings)
+* [CoreWebView2PrintSettings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
+
+<!-- ------------------------------ -->
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.PrintToPdfAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#PrintToPdfAsync)
+* [CoreWebView2Environment.CreatePrintSettings Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createprintsettings)
+* [CoreWebView2PrintSettings Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings)
+
+<!-- ------------------------------ -->
+
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_7::PrintToPdf method](/microsoft-edge/webview2/reference/win32/icorewebview2_7#printtopdf)
+* [ICoreWebView2Environment6::CreatePrintSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
+* [ICoreWebView2PrintSettings interface](microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
 
 ---
 
 <!-- end of tab-set -->
 
-### Example: PrintToPdf
+#### Example: The PrintToPdf method
 
-This example Prints current page to PDF using the default path and settings.
+This example prints the current webpage to a PDF file, using the default path and settings.
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
 async void PrintToPdfCmdExecuted(object target, ExecutedRoutedEventArgs e)
@@ -510,13 +554,14 @@ async void PrintToPdfCmdExecuted(object target, ExecutedRoutedEventArgs e)
 
 **APIs:**
 
-* [CoreWebView2.PrintToPdfAsync(resultFilePath, printSettings) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync#microsoft-web-webview2-core-corewebview2-printtopdfasync)
+* [CoreWebView2.PrintToPdfAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync#microsoft-web-webview2-core-corewebview2-printtopdfasync)
+* [CoreWebView2Environment.CreatePrintSettings Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createprintsettings)
 * [CoreWebView2PrintSettings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
 
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
 void FileComponent::PrintToPdf(bool enableLandscape)
@@ -568,8 +613,9 @@ void FileComponent::PrintToPdf(bool enableLandscape)
 
 **APIs:**
 
-* [ICoreWebView2_7::PrintToPdf(resultFilePath, printSettings, handler) method](/microsoft-edge/webview2/reference/win32/icorewebview2_7#printtopdf)
-* [ICoreWebView2PrintSettings interface](microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
+* [ICoreWebView2_7::PrintToPdf method](/microsoft-edge/webview2/reference/win32/icorewebview2_7#printtopdf)
+* [ICoreWebView2Environment6::CreatePrintSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
+* [ICoreWebView2PrintSettings interface](/microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
 
 ---
 
@@ -577,38 +623,48 @@ void FileComponent::PrintToPdf(bool enableLandscape)
 
 
 <!-- ====================================================================== -->
-## PrintToPdfStream
+## The PrintToPdfStream method
 
-Silently print the current top-level document in the WebView2 to a PDF stream. To completely control how printing is performed, you can print to a PDF and then build your own code to print the PDF. This API consists of an asynchronous PrintToPdfStream method and a PrintSettings object.
-
-
-<!-- ------------------------------ -->
-
-# [C#](#tab/csharp)
-
-[CoreWebView2.PrintToPdfStreamAsync(printSettings) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfstreamasync#microsoft-web-webview2-core-corewebview2-printtopdfstreamasync)
-[CoreWebView2PrintSettings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
+Silently prints the current top-level document in the WebView2 control to a PDF stream. To completely control how printing is performed, you can print to a PDF and then build your own code to print the PDF. This API consists of an asynchronous `PrintToPdfStream` method and a `PrintSettings` object.
 
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
-[ICoreWebView2_16::PrintToPdfStream(printSettings, handler) method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#printtopdfstream)
-[ICoreWebView2PrintSettings2 interface](microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
+* [CoreWebView2.PrintToPdfStreamAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfstreamasync#microsoft-web-webview2-core-corewebview2-printtopdfstreamasync)
+* [CoreWebView2Environment.CreatePrintSettings Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createprintsettings)
+* [CoreWebView2PrintSettings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
+
+<!-- ------------------------------ -->
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.PrintToPdfStreamAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#PrintToPdfStreamAsync)
+* [CoreWebView2Environment.CreatePrintSettings Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createprintsettings)
+* [CoreWebView2PrintSettings Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings)
+
+
+<!-- ------------------------------ -->
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_16::PrintToPdfStream method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#printtopdfstream)
+* [ICoreWebView2Environment6::CreatePrintSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
+* [ICoreWebView2PrintSettings2 interface](microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
 
 ---
 
 <!-- end of tab-set -->
 
-### Example: PrintToPdfStream
+#### Example: The PrintToPdfStream method
 
-This example prints the PDF data of the current web page to a stream.
+This example prints the PDF data of the current webpage to a stream.
 
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
 async void PrintToPdfStream()
@@ -638,12 +694,12 @@ void DisplayPdfDataInPrintDialog(Stream pdfData)
 
 **APIs:**
 
-* [CoreWebView2.PrintToPdfStreamAsync(printSettings) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfstreamasync#microsoft-web-webview2-core-corewebview2-printtopdfstreamasync)
+* [CoreWebView2.PrintToPdfStreamAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfstreamasync#microsoft-web-webview2-core-corewebview2-printtopdfstreamasync)
 
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
 static void DisplayPdfDataInPrintDialog(IStream* pdfData)
@@ -682,45 +738,7 @@ bool AppWindow::PrintToPdfStream()
 
 **APIs:**
 
-* [ICoreWebView2_16::PrintToPdfStream(printSettings, handler) method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#printtopdfstream)
-
----
-
-<!-- end of tab-set -->
-
-
-<!-- ====================================================================== -->
-## API Reference overview
-
-
-<!-- ------------------------------ -->
-
-# [C#](#tab/csharp)
-
-* [CoreWebView2.ShowPrintUI() Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showprintui#microsoft-web-webview2-core-corewebview2-showprintui)
-* [CoreWebView2.ShowPrintUI(CoreWebView2PrintDialogKind) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showprintui#microsoft-web-webview2-core-corewebview2-showprintui(microsoft-web-webview2-core-corewebview2printdialogkind))
-* [CoreWebView2.PrintAsync() Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printasync#microsoft-web-webview2-core-corewebview2-printasync)
-* [CoreWebView2.PrintToPdfAsync(resultFilePath, printSettings) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync#microsoft-web-webview2-core-corewebview2-printtopdfasync)
-* [CoreWebView2.PrintToPdfStreamAsync(printSettings) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfstreamasync#microsoft-web-webview2-core-corewebview2-printtopdfstreamasync)
-* [CoreWebView2PrintSettings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
-* [CoreWebView2PrintDialogKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2printdialogkind)
-* [CoreWebView2PrintStatus Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2printstatus)
-
-<!-- ------------------------------ -->
-
-# [C++](#tab/cpp)
-
-* [ICoreWebView2_16::ShowPrintUI(printDialogKind) method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#showprintui)
-* [ICoreWebView2_16::Print() method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#print)
-* [ICoreWebView2_7::PrintToPdf(resultFilePath, printSettings, handler) method](/microsoft-edge/webview2/reference/win32/icorewebview2_7#printtopdf)
-* [ICoreWebView2_16::PrintToPdfStream(printSettings, handler) method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#printtopdfstream)
-* [ICoreWebView2PrintSettings Class](microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
-* [ICoreWebView2PrintSettings2 Class](microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
-* [COREWEBVIEW2_PRINT_DIALOG_KIND Enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_dialog_kind)
-* [COREWEBVIEW2_PRINT_STATUS Enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_status)
-* [ICoreWebView2PrintCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2printcompletedhandler)
-* [ICoreWebView2PrintToPdfCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2printtopdfcompletedhandler)
-* [ICoreWebView2PrintToPdfStreamCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2printtopdfstreamcompletedhandler)
+* [ICoreWebView2_16::PrintToPdfStream method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#printtopdfstream)
 
 ---
 
@@ -730,6 +748,7 @@ bool AppWindow::PrintToPdfStream()
 <!-- ====================================================================== -->
 ## See also
 
+* [Printing](../how-to/overview-features-apis.md#printing) in _Overview of WebView2 features and APIs_.
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
