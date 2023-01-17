@@ -20,7 +20,7 @@ There are several different ways to print a web page in WebView2, which give you
 | `PrintToPdfStream` | Silently prints the current top-level document in the WebView2 to a PDF stream. You can build your own code to print the PDF. |
 
 
-## The ShowPrintUI method
+## The ShowPrintUI method to open a Print dialog
 
 The `ShowPrintUI` method opens the WebView2 **Print Preview** dialog or the operating system's **Print** dialog, for the current top-level document in the WebView2 control. By using this approach, you can easily provide a familiar printing experience for users.
 
@@ -52,7 +52,7 @@ The `ShowPrintUI` method opens the WebView2 **Print Preview** dialog or the oper
 
 <!-- end of tab-set -->
 
-#### Example: The ShowPrintUI method
+#### Example: The ShowPrintUI method to open a Print dialog
 
 This example shows the user a **Print** dialog.
 * If `printDialog` is `CoreWebView2PrintDialogKind.Browser`, opens a browser print preview dialog.
@@ -112,7 +112,7 @@ bool AppWindow::ShowPrintUI(COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind)
 
 
 <!-- ====================================================================== -->
-## The Print method
+## The Print method to customize printing
 
 The `Print` method silently prints the current top-level document in the WebView2 control by using optional, programmatically specified print settings. If you want to build your own print preview dialog, or build your own print experience, you can use this method. This API consists of an asynchronous `Print` method and a `PrintSettings` object.
 
@@ -149,7 +149,7 @@ The `Print` method silently prints the current top-level document in the WebView
 
 <!-- end of tab-set -->
 
-#### Example 1: The Print method to print to the default printer
+#### Example 1: The Print method to customize printing
 
 This example prints the current web page to the default printer, using the default print settings, without opening a **Print** dialog.
 
@@ -475,7 +475,7 @@ bool AppWindow::PrintToPrinter()
 
 
 <!-- ====================================================================== -->
-## The PrintToPdf method
+## The PrintToPdf method to customize printing to a PDF file
 
 Silently prints the current top-level document in the WebView2 control to a PDF file. To completely control how printing is performed, you can print to a PDF and then build your own code to print the PDF.
 
@@ -510,7 +510,7 @@ This API consists of an asynchronous `PrintToPdf` method and a `PrintSettings` o
 
 <!-- end of tab-set -->
 
-#### Example: The PrintToPdf method
+#### Example: The PrintToPdf method to customize printing to a PDF file
 
 This example prints the current webpage to a PDF file, using the default path and settings.
 
@@ -623,7 +623,7 @@ void FileComponent::PrintToPdf(bool enableLandscape)
 
 
 <!-- ====================================================================== -->
-## The PrintToPdfStream method
+## The PrintToPdfStream method to customize printing to a PDF stream
 
 Silently prints the current top-level document in the WebView2 control to a PDF stream. To completely control how printing is performed, you can print to a PDF and then build your own code to print the PDF. This API consists of an asynchronous `PrintToPdfStream` method and a `PrintSettings` object.
 
@@ -657,7 +657,7 @@ Silently prints the current top-level document in the WebView2 control to a PDF 
 
 <!-- end of tab-set -->
 
-#### Example: The PrintToPdfStream method
+#### Example: The PrintToPdfStream method to customize printing to a PDF stream
 
 This example prints the PDF data of the current webpage to a stream.
 
