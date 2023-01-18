@@ -305,7 +305,7 @@ conceptualContent:
               itemType: how-to-guide
               text: webhint extension for Visual Studio Code
         # Card
-        - title: Web platform
+        - title: Development tips for Microsoft Edge
           links:
             - text: Web platform overview
               url: /microsoft-edge/web-platform/web-platform  # new firstchild article

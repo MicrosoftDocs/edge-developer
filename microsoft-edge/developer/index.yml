@@ -175,7 +175,7 @@ landingContent:
             url: /microsoft-edge/webview2/webview2-api-reference
 # =============================================================================
 # Card r2c3
-  - title: Web platform
+  - title: Development tips for Microsoft Edge
     linkLists:
       - linkListType: how-to-guide
         links:
