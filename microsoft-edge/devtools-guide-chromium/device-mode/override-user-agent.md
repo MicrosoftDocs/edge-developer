@@ -26,13 +26,13 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
 
 1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-   ![The Command Menu.](../media/device-mode-console-command-menu.msft.png)
+   ![The Command Menu](../media/device-mode-console-command-menu.msft.png)
     
 1. Type `network conditions`, select **Show Network conditions**, and then press `Enter` to open the **Network conditions** tool.
 
 1. In the **User agent** section, clear the **Use browser default** checkbox.
 
-   ![Clearing the 'Use browser default' checkbox.](../media/clear-use-browser-default-checkbox.png)
+   ![Clearing the 'Use browser default' checkbox](../media/clear-use-browser-default-checkbox.png)
 
 1. Select a user agent from the dropdown list, or enter a custom user agent.
 
@@ -50,5 +50,5 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

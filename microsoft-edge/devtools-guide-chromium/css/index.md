@@ -36,7 +36,7 @@ Follow the interactive tutorial sections in this article to learn the basics of 
 
    In the **DOM Tree** panel under the **Elements tool**, the `Inspect Me!` element is highlighted.
 
-   ![The inspected element is highlighted in the DOM Tree.](../media/css-elements-inspect-me.msft.png)
+   ![The inspected element is highlighted in the DOM Tree](../media/css-elements-inspect-me.msft.png)
 
 1. In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.
 
@@ -50,7 +50,7 @@ Follow the interactive tutorial sections in this article to learn the basics of 
 
 1. In the `aloha` class, find the value for the `padding` style and copy it.
 
-   ![CSS class applied to the inspected element is highlighted in the Styles panel.](../media/css-elements-inspect-me-styles.msft.png)
+   ![CSS class applied to the inspected element is highlighted in the Styles panel](../media/css-elements-inspect-me-styles.msft.png)
 
 1. On the page view, paste the `padding` value in the **Value of padding:** text box.
 
@@ -74,7 +74,7 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 
     The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** panel:
 
-   ![Add a CSS declaration to the element using the Styles panel.](../media/css-elements-add-background-color-to-me-styles-p.msft.png)
+   ![Add a CSS declaration to the element using the Styles panel](../media/css-elements-add-background-color-to-me-styles-p.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -94,7 +94,7 @@ To display how an element looks when a CSS class is applied to or removed from a
 
    The `color_me` class is applied to the element using the **.cls** section of the **Styles** panel:
 
-   ![Apply the color_me class to the element.](../media/css-elements-add-a-class-to-me-styles-cls.msft.png)
+   ![Apply the color_me class to the element](../media/css-elements-add-a-class-to-me-styles-cls.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -116,7 +116,7 @@ Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  
 
    The next screenshot shows the result of toggling the `:hover` pseudostate on an element.
 
-   ![Toggling the hover pseudostate on an element.](../media/css-elements-hover-over-me-styles-hov-hover.msft.png)
+   ![Toggling the hover pseudostate on an element](../media/css-elements-hover-over-me-styles-hov-hover.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -140,11 +140,11 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
    Hovering over the element's padding:
 
-   ![Hovering over the element's padding.](../media/css-elements-change-my-margin-styles-padding.msft.png)
+   ![Hovering over the element's padding](../media/css-elements-change-my-margin-styles-padding.msft.png)
 
    Changing the element's left margin:
 
-   ![Changing the element's left margin.](../media/css-elements-change-my-margin-styles-margin-edit.msft.png)
+   ![Changing the element's left margin](../media/css-elements-change-my-margin-styles-margin-edit.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -158,25 +158,25 @@ Use the following steps to debug or test the Media Queries you defined in your C
 
 1. To open DevTools, you can right-click in a webpage and then select **Inspect**.
 
-1. Click the **Toggle device emulation** (![Device Emulation icon.](../media/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press `Ctrl`+`Shift`+`M` (Windows, Linux) or `Cmd`+`Shift`+`M` (macOS).
+1. Click the **Toggle device emulation** (![Device Emulation icon](../media/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press `Ctrl`+`Shift`+`M` (Windows, Linux) or `Cmd`+`Shift`+`M` (macOS).
 
    <!-- todo: update to show new tooltip: -->
 
-   ![Opening the device toolbar.](../media/css-elements-media-queries-open-device-toolbar.msft.png)
+   ![Opening the device toolbar](../media/css-elements-media-queries-open-device-toolbar.msft.png)
 
 1. With the device toolbar open, click the `...` menu on the top-right and then select **Show media queries**:
 
-   ![Showing Media Queries in the Device Toolbar.](../media/css-elements-media-queries-showing-mq.msft.png)
+   ![Showing Media Queries in the Device Toolbar](../media/css-elements-media-queries-showing-mq.msft.png)
 
    The colored bars above the webpage represent the different media queries.
        
 1. Hover on the boundaries in the bars to display the values of the different media queries.  Click each media query value to resize the web page to match.
 
-   ![Selecting a media query from the preview bar.](../media/css-elements-media-queries-select-bar.msft.png)
+   ![Selecting a media query from the preview bar](../media/css-elements-media-queries-select-bar.msft.png)
 
 1. To debug media queries and open the CSS file in the `Sources` editor, right-click a bar segment, and then select **Reveal in source code**:
 
-   ![Reveal Media Queries in Sources Editor.](../media/css-elements-media-queries-reveal-in-sources.msft.png)
+   ![Reveal Media Queries in Sources Editor](../media/css-elements-media-queries-reveal-in-sources.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -184,5 +184,5 @@ Use the following steps to debug or test the Media Queries you defined in your C
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/css/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

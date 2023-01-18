@@ -118,7 +118,7 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 ### Sequence for modifying requests
 
 <!-- wiki page that points to the Visio source file: Documentation > "Notes about specific image files" -->
-![Diagram of sequence for modifying requests.](webresourcerequested-images/sequence-for-modifying-requests.png)
+![Diagram of sequence for modifying requests](webresourcerequested-images/sequence-for-modifying-requests.png)
 
 1. The host app sets up a `WebResourceRequested` filter.
 1. The host app defines the event handlers for `WebResourceRequested` and `WebResourceResponseReceived`.
@@ -206,7 +206,7 @@ By default, the HTTP server sends responses to the WebView2 control.  Your host 
 ### Sequence for overriding responses
 
 <!-- wiki page that points to the Visio source file: Documentation > "Notes about specific image files" -->
-![Diagram of sequence for overriding responses.](webresourcerequested-images/sequence-for-overriding-responses.png)
+![Diagram of sequence for overriding responses](webresourcerequested-images/sequence-for-overriding-responses.png)
 
 1. The host app sets up a `WebResourceRequested` filter.
 1. The host app defines the event handlers for `WebResourceRequested` and `WebResourceResponseReceived`.

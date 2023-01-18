@@ -30,11 +30,11 @@ Use the **Security** panel to inspect the security of a page.
 
 1. To open DevTools, right-click a webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Security** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, click the **Security** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
 
    The **Security** tool (or _panel_) opens:
 
-![The Security panel.](../media/security-security-overview-secure.msft.png)
+![The Security panel](../media/security-security-overview-secure.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -44,7 +44,7 @@ Use the **Security** panel to inspect the security of a page.
 
 When the main origin of a page isn't secure, the **Security Overview** says **This page is not secure**.
 
-![A non-secure page.](../media/security-security-overview-non-secure.msft.png)
+![A non-secure page](../media/security-security-overview-non-secure.msft.png)
 
 This problem occurs when the URL that you visited was requested over HTTP.  To make it secure you need to request it over HTTPS.  For example, if you look at the URL in your address bar, it probably looks similar to `http://example.com`.  To make it secure the URL should be `https://example.com`.
 
@@ -59,11 +59,11 @@ If you haven't set up HTTPS on your server, [Let's Encrypt](https://letsencrypt.
 
 **Mixed content**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> means that the main origin of a page is secure, but the page requested resources from non-secure origins.  Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to man-in-the-middle attacks.
 
-![Mixed content.](../media/security-security-overview-mixed-secure.msft.png)
+![Mixed content](../media/security-security-overview-mixed-secure.msft.png)
 
 In the previous figure, select **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.
 
-![Mixed resources in the Network Log.](../media/security-network-filter.msft.png)
+![Mixed resources in the Network Log](../media/security-network-filter.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -73,13 +73,13 @@ In the previous figure, select **View 1 request in Network panel** to open the *
 
 From the **Security Overview**, click **View certificate** to quickly inspect the certificate for the main origin.
 
-![A main origin certificate.](../media/security-security-overview-secure-view-certificate.msft.png)
+![A main origin certificate](../media/security-security-overview-secure-view-certificate.msft.png)
 
 ### View origin details
 
 Click one of the entries in the left-hand nav to view the details of the origin.  From the details page you can view connection and certificate information.  Certificate transparency information is also shown when available.
 
-![Main origin details.](../media/security-security-overview-mixed-secure-main-origin.msft.png)
+![Main origin details](../media/security-security-overview-mixed-secure-main-origin.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -87,5 +87,5 @@ Click one of the entries in the left-hand nav to view the details of the origin.
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/security/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

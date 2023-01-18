@@ -43,7 +43,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 1. Go to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab or window.
 
-1. Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)) appears in the upper right corner of DevTools.
+1. Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) appears in the upper right corner of DevTools.
 
 1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
 
@@ -74,7 +74,7 @@ The **Issues** tool presents additional documentation and recommended fixes to a
 
 1. Open the [accessibility-testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab, and then open DevTools.
 
-1. Open the **Issues** tool by selecting the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)).
+1. Open the **Issues** tool by selecting the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)).
 
 1. Select an issue, to expand the issue.
 
@@ -146,7 +146,7 @@ By default, only errors and warnings are displayed. To display issues with other
 * Select any number of severity levels: **Tips**, **Info**, **Warnings**, **Errors**.
 * Select **Default** to revert back to just warnings and errors.
 
-![The Issues panel with the Severity dropdown expanded, showing the different levels that can be selected.](media/severity-filter.png)
+![The Issues panel with the Severity dropdown expanded, showing the different levels that can be selected](media/severity-filter.png)
 
 ### Filter by browser
 
@@ -167,13 +167,13 @@ To change the list of browsers that are tested for compatibility issues:
 * Or select any number of individual browsers from the list.
 * Click **Regenerate issues** to update the compatibility issues based on the selected browsers.
 
-![The Issues panel with the Browser dropdown expanded, showing the different browsers that can be selected.](media/browser-filter.png)
+![The Issues panel with the Browser dropdown expanded, showing the different browsers that can be selected](media/browser-filter.png)
 
 ### Filter by origin
 
 By default, the **Issues** tool only lists issues that pertain to the current web page's code. To include issues that are caused by third-party libraries or frameworks loaded by the web page too, select the **Include third-party issues** checkbox.
 
-![The Issues panel with the 'Include third-party issues' checkbox.](media/third-party-checkbox.png)
+![The Issues panel with the 'Include third-party issues' checkbox](media/third-party-checkbox.png)
 
 
 <!-- ====================================================================== -->
@@ -186,5 +186,5 @@ By default, the **Issues** tool only lists issues that pertain to the current we
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/issues/) and is authored by [Sam Dutton](https://developers.google.com/web/resources/contributors#sam-dutton) (Developer Advocate).
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
