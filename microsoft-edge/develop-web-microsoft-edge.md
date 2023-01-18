@@ -157,7 +157,7 @@ See [The Web We Want initiative](web-we-want/index.md).
 <!-- ============================================================================================================================================ -->
 ## How to use this documentation
 
-These are tips for using the documentation UI of Microsoft Learn.
+The following sections are tips for using the Microsoft Learn website.
 
 
 <!-- ====================================================================== -->
@@ -169,8 +169,8 @@ To see details of a screenshot or diagram:
 
 1. Close the image tab to return to the article.
 
-<!-- ====================================================================== -->
 
+<!-- ====================================================================== -->
 ## Look up key words and terms in "Filter by title" text box
 
 The multi-purpose **Filter by title** text box supports:
@@ -191,8 +191,8 @@ The full-text search page initially searches all _Microsoft Edge_ documentation.
 
 ![The full-text search page initially searches all Microsoft Edge documentation, or you can click the link 'View all results' for a broader search.](media/full-text-search-page.png)
 
-<!-- ====================================================================== -->
 
+<!-- ====================================================================== -->
 ## Provide feedback or report issues in the Microsoft Edge Developer documentation
 
 To provide feedback or enter issues:
