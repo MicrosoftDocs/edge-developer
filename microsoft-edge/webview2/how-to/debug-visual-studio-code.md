@@ -178,7 +178,7 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
 
 <!-- ====================================================================== -->
-## Debug WebView2 WinUI 2 (UWP) Apps
+## Debug WebView2 WinUI 2 (UWP) apps
 
 1. Install a WebView2 Runtime version past `106.0.1370.34`.
 
@@ -188,7 +188,7 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
 1. Verify that the registry key is set in the editor and matches the following:
 
-   ![Registry Key](./media/uwp-debugging-registry-key.png)
+   ![Setting the AdditionalBrowserArguments registry key to --remote-debugging-pipe](./media/uwp-debugging-registry-key.png)
 
 1. Add a new configuration to your `launch.json` file.  Open `launch.json` and add the following code:
 
