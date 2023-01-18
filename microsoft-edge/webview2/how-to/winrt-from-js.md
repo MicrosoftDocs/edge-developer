@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/02/2022
+ms.date: 01/17/2023
 ---
 # Call native-side WinRT code from web-side code
 
@@ -406,9 +406,9 @@ If your app is for WinUI 3, do the steps in this section.
 1.  Add the following property group reference:
 
     ```xml
-    <PropertyGroup>
-        <CsWinRTIncludes>WinRTAdapter</CsWinRTIncludes>
-    </PropertyGroup> 
+    <PropertyGroup>
+        <CsWinRTIncludes>WinRTAdapter</CsWinRTIncludes>
+    </PropertyGroup> 
     ```
 
     You might get a warning like: "MSB3851 This project targets "Windows, Version=10.0.19041.0", but it is attempting to reference "winmd... targeting "UAP,Version=10.0.22000.0" which is invalid."
