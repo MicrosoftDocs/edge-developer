@@ -134,7 +134,12 @@ To have DevTools automatically open whenever you open a new tab in the browser:
    ```
    
 
-<!-- ------------------------------ -->
+###### Disabling startup boost
+
+**Important:** There must be no running Microsoft Edge processes when launching via `auto-open-devtools-for-tabs`, so you may need to disable **Startup boost** in `edge://settings/system`.
+
+The startup boost feature keeps a minimal Microsoft Edge process running in the background.  This interferes with the `auto-open-devtools-for-tabs` feature and would need to be disabled to use it.  For more information, see [Get help with startup boost](https://support.microsoft.com/topic/get-help-with-startup-boost-ebef73ed-5c72-462f-8726-512782c5e442).
+
 #### Turning off the F12 keyboard shortcut
 
 To prevent pressing `F12` from opening DevTools:
