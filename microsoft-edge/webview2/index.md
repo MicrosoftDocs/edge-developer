@@ -49,7 +49,7 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 *  **Rapid innovation**.  Web development allows for faster deployment and iteration.
 
-*  **Windows 7, 8, 10, and 11 support**.  Support for a consistent user experience across Windows 7, Windows 8, Windows 10, and Windows 11.
+*  **Windows 10 and 11 support**.  Support for a consistent user experience across Windows 10 and Windows 11.
 
 *  **Native capabilities**.  Access the full set of Native APIs.
 
@@ -84,16 +84,24 @@ WebView2 apps can run on the following versions of Windows:
 *  Windows 10 IoT Enterprise LTSC x32 2019
 *  Windows 10 IoT Enterprise LTSC x64 2019
 *  Windows 10 IoT Enterprise 21h1 x64
-*  Windows 8.1
-*  Windows 7 \*\*
 *  Windows Server 2022
 *  Windows Server 2019
 *  Windows Server 2016
-*  Windows Server 2012
-*  Windows Server 2012 R2
-*  Windows Server 2008 R2 \*\*
 
-\*\*WebView2 support for Windows 7 and Windows Server 2008 R2 have the same support timeline as Microsoft Edge.  See [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems).
+
+#### Windows 7 and 8
+
+WebView2 Runtime version 109 is the final version that supports the following versions of Windows.  WebView2 Runtime and SDK version 110.0.1519.0 and higher don't support these operating systems.
+
+*  Windows 8/8.1
+*  Windows 7
+*  Windows Server 2012 R2
+*  Windows Server 2012
+*  Windows Server 2008 R2
+
+See also:
+* [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems) - WebView2 support for Windows 7 and Windows Server 2008 R2 have the same support timeline as Microsoft Edge.
+* [Microsoft Edge and WebView2 ending support for Windows 7 and Windows 8/8.1](https://blogs.windows.com/msedgedev/2022/12/09/microsoft-edge-and-webview2-ending-support-for-windows-7-and-windows-8-8-1/)
 
 
 <!-- ====================================================================== -->

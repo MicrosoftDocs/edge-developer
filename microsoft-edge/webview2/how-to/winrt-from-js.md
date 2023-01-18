@@ -83,7 +83,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
 The DevTools Console will then output `English (United States)`, or another language display name, demonstrating that you've called native-side WinRT code from web-side JavaScript code:
 
-![Use the DevTools Console to test calling native-side code from web-side code.](winrt-from-js-images/devtools-console-calling-native-side-code.png)
+![Use the DevTools Console to test calling native-side code from web-side code](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
 Similarly, in actual code rather than in the DevTools Console, you access the host object first by setup code for the script:
 
@@ -121,11 +121,11 @@ Let's get started!
 
    The sample solution opens in Visual Studio:
 
-   ![Adding a new project for the wv2winrt tool.](winrt-from-js-images/add-new-project-for-tool.png)
+   ![Adding a new project for the wv2winrt tool](winrt-from-js-images/add-new-project-for-tool.png)
 
 1. In Visual Studio, select **Debug** > **Start Debugging**.  This builds the **webview2_sample_uwp** or **WebView2WinAppSDKSample** project, and then runs the baseline version of the project.  The **WebView2 WinUI 2 UWP Sample** window opens:
 
-   ![The WebView2 WinUI 2 UWP Sample window.](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
+   ![The WebView2 WinUI 2 UWP Sample window](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
 
 1. Close the **WebView2 WinUI 2 UWP Sample** window.
 
@@ -199,7 +199,7 @@ Add a project for the wv2winrt tool, as follows:
 
 1. Select the **Windows Runtime Component (C++/WinRT)** card, and then click the **Next** button:
 
-   ![Selecting the Windows Runtime Component (C++/WinRT) card in the 'Add a new project' dialog.](winrt-from-js-images/add-proj-cpp-winrt.png)
+   ![Selecting the Windows Runtime Component (C++/WinRT) card in the 'Add a new project' dialog](winrt-from-js-images/add-proj-cpp-winrt.png)
 
    **Note:** Make sure the template includes C++/WinRT in its name. If you can't see this template, install the **Universal Windows Platform development** workload from within the Visual Studio Installer. If you are using Visual Studio 2019 and still can't find the template, install the **C++/WinRT templates and visualizer for VS2019** extension from **Visual Studio > Extensions > Manage Extensions**.
 
@@ -207,17 +207,17 @@ Add a project for the wv2winrt tool, as follows:
 
 1. In the **Project name** textbox, name the Project, specifically, **WinRTAdapter**.  **Note:** For now, you must use this specific project name:
 
-   ![In the 'Configure your new project' window, name the project 'WinRTAdapter'.](winrt-from-js-images/config-proj-name-winrtadapter.png)
+   ![In the 'Configure your new project' window, name the project 'WinRTAdapter'](winrt-from-js-images/config-proj-name-winrtadapter.png)
 
 1. Click the **Create** button.  The **New Universal Windows Platform Project** dialog opens:
 
-   ![The 'New UWP project' dialog.](winrt-from-js-images/new-uwpp.png)
+   ![The 'New UWP project' dialog](winrt-from-js-images/new-uwpp.png)
 
 1. Click the **OK** button.
 
    The **WinRTAdapter** project is created:
 
-   ![The newly created WinRTAdapter project.](winrt-from-js-images/fresh-winrtadapter-project.png)
+   ![The newly created WinRTAdapter project](winrt-from-js-images/fresh-winrtadapter-project.png)
 
 The wv2winrt tool (the WebView2 WinRT JS Projection tool) will run in this **WinRTAdapter** project.  In a below step, you'll generate code for selected classes in this project.
 
@@ -231,7 +231,7 @@ In the WinRTAdapter project, install the Windows Implementation Library (WIL), a
 
 1. In the **NuGet Package Manager** window, in the **Search** box, enter **Windows Implementation Library**, and then select the **Windows Implementation Library** card:
 
-   ![NuGet Package Manager, selecting the 'Windows Implementation Library' package.](winrt-from-js-images/pkg-mgr-wil.png)
+   ![NuGet Package Manager, selecting the 'Windows Implementation Library' package](winrt-from-js-images/pkg-mgr-wil.png)
 
 1. Click the **Install** button.
 
@@ -255,7 +255,7 @@ In the WinRTAdapter project, also install a prerelease version of the WebView2 S
 
 1. Click the **Install** button:
 
-   ![NuGet Package Manager, selecting the WebView2 SDK package, for the WinRTAdapter project.](winrt-from-js-images/pkg-mgr-wv2-sdk.png)
+   ![NuGet Package Manager, selecting the WebView2 SDK package, for the WinRTAdapter project](winrt-from-js-images/pkg-mgr-wv2-sdk.png)
 
 The WebView2 prerelease SDK is now installed for the **WinRTAdapter** project.
 
@@ -318,7 +318,7 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
    Windows.Globalization.Language
    ```
 
-   ![Include filters dialog box.](winrt-from-js-images/include-filters.png)
+   ![Include filters dialog box](winrt-from-js-images/include-filters.png)
 
    You need to specify the full name of the namespaces or classes, as shown above.
 
@@ -327,7 +327,7 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
 1. Make sure the **WinRTAdapter Property Pages** dialog looks like the following, for this walkthrough:
 
    <!-- 1st use of png: -->
-   ![The 'WinRTAdapter Property Pages' dialog, with 'Common Properties > WebView2' expanded.](winrt-from-js-images/winrtadapter-property-pages.png)
+   ![The 'WinRTAdapter Property Pages' dialog, with 'Common Properties > WebView2' expanded](winrt-from-js-images/winrtadapter-property-pages.png)
 
 1. Click the **OK** button to close the **Property Pages** dialog box.
 
@@ -339,7 +339,7 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
 
 1. In the tree on the left, select **Projects**.  Select the **WinRTAdapter** checkbox:
 
-   ![Adding a reference: The WinRTAdapter checkbox in the Reference Manager dialog for the webview2_uwp_sample project.](winrt-from-js-images/winrtadapter-checkbox-ref-mgr-uwp-proj.png)
+   ![Adding a reference: The WinRTAdapter checkbox in the Reference Manager dialog for the webview2_uwp_sample project](winrt-from-js-images/winrtadapter-checkbox-ref-mgr-uwp-proj.png)
 
 1. Click the **OK** button to close the **Reference Manager** dialog.
 
@@ -462,7 +462,7 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
 1. Press `F5` to run the sample app.  The **WebView2 WinUI 2 UWP Sample** window opens.
 
-   ![The WebView2 WinUI 2 UWP Sample window.](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
+   ![The WebView2 WinUI 2 UWP Sample window](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
 
 The host app's web-side code (and the DevTools Console) can now call methods and properties of the specified namespaces or classes of the host object.
 
@@ -485,7 +485,7 @@ Next, use the DevTools Console to demonstrate that web-side code can call the in
 
    The Console outputs a language name string, such as `English (United States)`, demonstrating that your app's host-side code can be called from web-side code:
 
-   ![Using the DevTools Console to test calling native-side code from web-side code.](winrt-from-js-images/devtools-console-calling-native-side-code.png)
+   ![Using the DevTools Console to test calling native-side code from web-side code](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
 Congratulations!  You've finished the sample demonstration of calling WinRT code from JavaScript code.
 
@@ -644,7 +644,7 @@ webView->CoreWebView2->AddScriptToExecuteOnDocumentCreatedAsync(
 This section is for reference.
 
 <!-- 2nd use of png: -->
-![Properties that are listed in the WinRTAdapter Property Pages.](winrt-from-js-images/winrtadapter-property-pages.png)
+![Properties that are listed in the WinRTAdapter Property Pages](winrt-from-js-images/winrtadapter-property-pages.png)
 
 For help about a property, click a property row.  Help is shown at the bottom of the dialog.
 

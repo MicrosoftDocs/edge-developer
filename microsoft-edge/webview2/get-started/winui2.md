@@ -27,6 +27,7 @@ The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  
 WinUI 2 supports UWP only.  These controls are backward-compatible.
 
 
+<!-- ------------------------------ -->
 #### Completed project
 
 Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
@@ -37,6 +38,20 @@ Unlike some of the other tutorials, there isn't a completed version of this Gett
 -->
 
 Follow the major Step sections in sequence, below.
+
+
+<!-- ------------------------------ -->
+#### About WinUI and WebView2
+
+In WinUI 2 (UWP) apps, WebView2 is exposed as a XAML control.  After you embed the XAML control in your app as a named control, you can then refer to that XAML control within C# files.
+
+Only a subset of WebView2 interfaces/functions are exposed in WinUI:
+
+* The `WebView2` XAML object exposes the `CoreWebView2` interface, along with the most important functionality.
+
+* Interfaces such as `CoreWebView2Controller` are hidden, because WinUI takes care of the environment and window creation behind the scenes.
+
+See also [Xbox, HoloLens, and XAML limitations](#xbox-hololens-and-xaml-limitations) below.
 
 
 <!-- ====================================================================== -->
@@ -356,6 +371,26 @@ This version of WebView 2 will only work on PC-class devices, offering the full 
 
 
 <!-- ------------------------------ -->
+#### Setting DefaultBackgroundColor
+
+On WinUI 2, the `DefaultBackgroundColor` property is not exposed directly.  You can set the default background color by setting an environment variable, as follows:
+
+```csharp
+Environment.SetVariable("WEBVIEW2_DEFAULT_BACKGROUND_COLOR", "FF000000");
+```
+
+See also:
+* .NET: [WebView2.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.winforms.webview2.defaultbackgroundcolor)
+* Win32: [ICoreWebView2Controller2::DefaultBackgroundColor property (get](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
+
+
+<!-- ------------------------------ -->
+#### Setting transparency
+
+On WinUI 2, transparency is achieved by setting the color to `00FFFFFF`.
+
+
+<!-- ------------------------------ -->
 #### API limitations
 
 The following interfaces aren't accessible in WinUI 2:
@@ -366,19 +401,9 @@ The following interfaces aren't accessible in WinUI 2:
 
 
 <!-- ====================================================================== -->
-## API Reference
-
-* [WinRT API Reference: Core (C#)](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
-* [WinRT API Reference: COM Interop (C++)](/microsoft-edge/webview2/reference/winrt/interop/index)
-
-All platforms/languages:
-* [WebView2 API Reference](../webview2-api-reference.md) - API Reference for each platform
-
-
-<!-- ====================================================================== -->
 ## See also
 
-Local pages:
+* [WebView2 API Reference](../webview2-api-reference.md)
 * [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - steps to download, update, build, and run the WinUI 2 WebView2 sample.
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
