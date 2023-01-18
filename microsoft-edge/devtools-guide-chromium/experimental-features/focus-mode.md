@@ -15,7 +15,7 @@ Focus Mode replaces the main row of tabs with an **Activity Bar**, which is a co
 
 Focus Mode also provides a **Quick View** list, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
 
-![DevTools undocked in its own window, with the Focus Mode experiment.](media/focus-mode.png)
+![DevTools undocked in its own window, with the Focus Mode experiment](media/focus-mode.png)
 
 
 <!-- ====================================================================== -->
@@ -31,7 +31,7 @@ To check if you have Focus Mode enabled already, or to enable or disable it:
 
    If the **Focus Mode** checkbox is selected, Focus Mode is already enabled. Select or clear the checkbox to enable or disable Focus Mode:
 
-   ![The Settings page in DevTools, showing the Experiments tab, scrolled down to the Focus Mode checkbox.](media/focus-mode-pref.png)
+   ![The Settings page in DevTools, showing the Experiments tab, scrolled down to the Focus Mode checkbox](media/focus-mode-pref.png)
 
 1. Close the **Settings** page. If you changed the Focus Mode experiment state, click the **Reload DevTools** button for the change to take effect.
 
@@ -49,21 +49,21 @@ By default, the position of the **Activity Bar** adapts to the location of the D
 
 The **Activity Bar** top-aligned in Focus Mode, with DevTools docked:
 
-![The Activity Bar top-aligned in Focus Mode, with DevTools docked.](media/focus-mode-docked.png)
+![The Activity Bar top-aligned in Focus Mode, with DevTools docked](media/focus-mode-docked.png)
 
 The **Activity Bar** top-aligned in Focus Mode, with DevTools popped out in a separate window:
 
-![The Activity Bar top-aligned in Focus Mode, with DevTools popped out in a separate window.](media/focus-mode-undocked.png)
+![The Activity Bar top-aligned in Focus Mode, with DevTools popped out in a separate window](media/focus-mode-undocked.png)
 
 ### Warning and error indicators
 
 In the default DevTools user interface, a counter appears in the main toolbar showing the number of messages such as **Issues** recommendations and **Console** warnings. The counter could grow large when many messages ae generated, taking up valuable space in DevTools.
 
-![The default DevTools toolbar Issues and Console message indicators.](media/devtools-toolbar-message-indicator.png)
+![The default DevTools toolbar Issues and Console message indicators](media/devtools-toolbar-message-indicator.png)
 
 In Focus Mode, this counter has been removed. Instead, small indicators overlay **Issues** and **Console** to display whether messages have been reported by the respective tools:
 
-![Focus Mode message overlays in Issues and Console.](media/focus-mode-message-indicator.png)
+![Focus Mode message overlays in Issues and Console](media/focus-mode-message-indicator.png)
 
 ### Quick View
 
@@ -71,7 +71,7 @@ The **Quick View** list contains all tools that can be displayed alongside the o
 
 **Quick View** replaces the drawer toolbar from the default user interface:
 
-![The Quick View list in Focus Mode with a tool selected and opened in the bottom pane.](media/focus-mode-quick-view.png)
+![The Quick View list in Focus Mode with a tool selected and opened in the bottom pane](media/focus-mode-quick-view.png)
 
 ### DevTools customization and settings
 
@@ -83,13 +83,13 @@ Several customization features and the DevTools settings are now grouped togethe
 * **Settings** provides access to the DevTools settings.
 * **Keyboard shortcuts** lets you review and change keyboard shortcuts.
 
-![The menu in Focus Mode.](media/focus-mode-menu.png)
+![The menu in Focus Mode](media/focus-mode-menu.png)
 
 ### Help links
 
 The **Help** menu contains links to the DevTools documentation and release notes and a button to send feedback to the team:
 
-![The Help menu in Focus Mode.](media/focus-mode-help.png)
+![The Help menu in Focus Mode](media/focus-mode-help.png)
 
 These links and buttons were previously nested under **Customize and control DevTools** > **Help** in the default user interface.
 
@@ -98,27 +98,27 @@ These links and buttons were previously nested under **Customize and control Dev
 
 By default, the **Activity Bar** contains the following modes and tools:
 
-*  **Inspect** mode (![Inspect tool icon.](../media/inspect-tool-icon-light-theme.png)) toggle button.
+*  **Inspect** mode (![Inspect tool icon](../media/inspect-tool-icon-light-theme.png)) toggle button.
 
-*  **Device Emulation** mode (![Device Emulation icon.](../media/device-emulation-icon-light-theme.png)) button.
+*  **Device Emulation** mode (![Device Emulation icon](../media/device-emulation-icon-light-theme.png)) button.
 
-*  **Welcome** tool (![Welcome tool icon.](media/focus-mode-welcome.png)).
+*  **Welcome** tool (![Welcome tool icon](media/focus-mode-welcome.png)).
 
-*  **Elements** tool (![Elements tool icon.](media/focus-mode-elements.png)).
+*  **Elements** tool (![Elements tool icon](media/focus-mode-elements.png)).
 
-*  **Console** tool (![Console tool icon.](media/focus-mode-console.png)).
+*  **Console** tool (![Console tool icon](media/focus-mode-console.png)).
 
-*  **Sources** tool (![Sources tool icon.](media/focus-mode-sources.png)).
+*  **Sources** tool (![Sources tool icon](media/focus-mode-sources.png)).
 
-*  **Network** tool (![Network tool icon.](media/focus-mode-network.png)).
+*  **Network** tool (![Network tool icon](media/focus-mode-network.png)).
 
-*  **Issues** tool (![Issues tool icon.](media/focus-mode-issues.png)).
+*  **Issues** tool (![Issues tool icon](media/focus-mode-issues.png)).
 
-*  **Performance** tool (![Performance tool icon.](media/focus-mode-performance.png)).
+*  **Performance** tool (![Performance tool icon](media/focus-mode-performance.png)).
 
-*  **Memory** tool (![Memory tool icon.](media/focus-mode-memory.png)).
+*  **Memory** tool (![Memory tool icon](media/focus-mode-memory.png)).
 
-*  **Application** tool (![Application tool icon.](media/focus-mode-application.png)).
+*  **Application** tool (![Application tool icon](media/focus-mode-application.png)).
 
 
 <!-- ====================================================================== -->
@@ -136,7 +136,7 @@ If there isn't enough space in the **Activity Bar** to display all pinned tools,
 
 To unpin a tool from the **Activity Bar**, right-click the tool and select **Remove from activity bar**:
 
-![The right-click menu to unpin tools from the Activity bar.](media/focus-mode-remove-tool.png)
+![The right-click menu to unpin tools from the Activity bar](media/focus-mode-remove-tool.png)
 
 Currently, the following tools cannot be unpinned from the **Activity Bar**:
 
@@ -156,7 +156,7 @@ Use the **Quick View** list to open a second tool next to the one already select
 
 The following screenshot shows the **Network** tool and the **Console** tool side-by-side:
 
-![Focus Mode with the Network tool at the top, and the Console tool at the bottom.](media/focus-mode-quick-view-tool.png)
+![Focus Mode with the Network tool at the top, and the Console tool at the bottom](media/focus-mode-quick-view-tool.png)
 
 You can hide or expand **Quick View** by clicking **Collapse Quick View** / **Expand Quick View** or pressing the **Escape** key. (![Quick view chevron toggle icon](media/focus-mode-chevron.png)).
 
@@ -168,7 +168,7 @@ The **Activity Bar** can be oriented vertically or horizontally to maximize usab
 
 To change the location of the **Activity Bar** click **Customize and control DevTools**, then **Activity bar location**, and then select one of the locations:
 
-![The 'Activity bar location' menu in Focus Mode.](media/focus-mode-activity-bar-location.png)
+![The 'Activity bar location' menu in Focus Mode](media/focus-mode-activity-bar-location.png)
 
 * **Adapt to dock location** (default): The **Activity Bar** will be in a horizontal or vertical orientation depending on where DevTools is docked.
 
@@ -184,7 +184,7 @@ When the **Activity Bar** is horizontal, tool names appear next to tool icons if
 
 When DevTools is undocked in its own window, the horizontal **Activity Bar** shows some tabs with tool icons and names, and some tabs with icons only:
 
-![Focus Mode with the horizontal Activity bar.](media/focus-mode-horizontal.png)
+![Focus Mode with the horizontal Activity bar](media/focus-mode-horizontal.png)
 
 
 <!-- ====================================================================== -->

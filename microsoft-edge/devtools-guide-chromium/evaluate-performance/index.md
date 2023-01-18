@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/18/2022
+ms.date: 11/22/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,23 +36,21 @@ See also [Optimize website speed using Lighthouse](../speed/get-started.md).
 
 In the following tutorial, you open DevTools on a "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
 
-1. Open Microsoft Edge in **InPrivate Mode**.  InPrivate Mode ensures that Microsoft Edge runs in a clean state.  For example, if you have a lot of extensions installed, the extensions may create noise in your performance measurements.
+1. Open the [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) demo page in your InPrivate tab or window.  To do that, right-click the link and then select **Open link in InPrivate window**.  You'll profile this page, which shows a variable number of icons moving up and down. For more information about InPrivate, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
+
+   Note: The source for this demo is at [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
+
 
    <!--TODO: replace section when updated for Chromium-based Edge  -->
 
-1. Load the following "Sluggish Animation" demo page in your InPrivate window.  You'll profile this page, which shows a variable number of icons moving up and down.
-
-   ```https
-   https://microsoftedge.github.io/Demos/devtools-performance-get-started/
-   ```
-
-    <!-- You can view the source files for the "Sluggish Animation" demo page at the [MicrosoftEdge/Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) repo folder. -->
+   <!-- You can view the source files for the "Sluggish Animation" demo page at the [MicrosoftEdge/Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) repo folder. -->
 
 1. Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS) to open DevTools.
 
    ![The demo on the left, and DevTools on the right](../media/evaluate-performance-get-started-side-by-side.msft.png)
 
-For the rest of the screenshots below, DevTools is [undocked to a separate window](../customize/placement.md) to better focus on the contents.
+
+For the rest of the following screenshots, DevTools is [undocked to a separate window](../customize/placement.md), to better focus on the contents.
 
 
 ### Simulate a mobile CPU
@@ -61,13 +59,13 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. In DevTools, open the **Performance** tool.
 
-1. Select the checkbox next to **Screenshots**.
+1. Select the **Screenshots** checkbox.
 
-1. Click **Capture settings** (![Capture settings.](../media/capture-settings-icon.msft.png)).  DevTools reveals settings related to how it captures performance metrics.
+1. Click **Capture settings** (![Capture settings](../media/capture-settings-icon.msft.png)).  DevTools reveals settings related to how it captures performance metrics.
 
-1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it is 4 times slower than usual.
+1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.
 
-   ![CPU throttle.](../media/evaluate-performance-performance-capture-settings.msft.png)
+   ![CPU throttle](../media/evaluate-performance-performance-capture-settings.msft.png)
 
    If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
 
@@ -80,24 +78,27 @@ The following section lets you customize the demo to make sure that your experie
 
 1. Click **Optimize**.  The blue icons should move faster and more smoothly.
 
-1. To better display a difference between the optimized and un-optimized versions, click the **Subtract 10** button a few times and try again.  If you add too many blue icons, you might max out the CPU, and then you might not observe a major difference in the results for the two versions.
+1. To better display a difference between the optimized and non-optimized versions, click the **Subtract 10** button a few times and try again.  If you add too many blue icons, you could max out the CPU, and then you might not observe a major difference in the results for the two versions.
 
 1. Click **Un-Optimize**.  The blue icons move slower and with more sluggishness again.
 
 
 ### Record runtime performance
 
-When you run the optimized version of the page, the blue icons move faster.  Why is that?  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the un-optimized version.
+When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the non-optimized version.
 
-1. In DevTools, click **Record** (![Record.](../media/record-icon.msft.png)).  DevTools captures performance metrics as the page runs.
+1. In DevTools, click **Record** (![Record](../media/record-icon.msft.png)).  DevTools captures performance metrics as the page runs.
 
-   ![Profile the page.](../media/evaluate-performance-performance-profiling.msft.png)
+   ![Profile the page](../media/evaluate-performance-performance-profiling.msft.png)
 
 1. Wait a few seconds.
 
 1. Click **Stop**.  DevTools stops recording, processes the data, then displays the results in the **Performance** tool.
 
-   ![The results of the profile.](../media/evaluate-performance-performance-capture-results.msft.png)
+   ![The results of the profile](../media/evaluate-performance-performance-capture-results.msft.png)
+
+
+These performance results show an overwhelming amount of data, but it will all make more sense shortly.
 
 
 
@@ -108,11 +109,11 @@ Once you have a recording of the page's performance, you can assess the page's p
 
 1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
 
-   ![The CPU chart and Summary panel.](../media/evaluate-performance-performance-cpu-chart.msft.png)
+   ![The CPU chart and Summary panel](../media/evaluate-performance-performance-cpu-chart.msft.png)
 
 1. Hover over the **CPU** or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of the performance recording.
 
-   ![Hover on a frame.](../media/evaluate-performance-performance-frame-hover.msft.png)
+   ![Hover on a frame](../media/evaluate-performance-performance-frame-hover.msft.png)
 
 
 
@@ -126,7 +127,7 @@ Another handy tool is the **Frame Rendering Stats** overlay, which provides real
 
 1. In the **Rendering** tool, turn on **Frame Rendering Stats**.  A new overlay appears in the top-left of your webpage.
 
-   ![The FPS overlay.](../media/evaluate-performance-fps-meter-overlay.msft.png)
+   ![The FPS overlay](../media/evaluate-performance-fps-meter-overlay.msft.png)
 
 1. When you are done reviewing the FPS data, clear the **Frame Rendering Stats** checkbox to hide the overlay.
 
@@ -137,15 +138,15 @@ After you verified that the animation isn't performing well, the next step is to
 
 1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
 
-   ![The Summary panel.](../media/evaluate-performance-performance-summary-tab.msft.png)
+   ![The Summary panel](../media/evaluate-performance-performance-summary-tab.msft.png)
 
 1. Expand the **Main** section.  DevTools shows you a flame chart of activity on the main thread, over time.  The x-axis represents the recording, over time.  Each bar represents an event.  A wider bar means that event took longer.  The y-axis represents the call stack.  When events are stacked on top of each other, it means the upper events caused the lower events.
 
-   ![The Main section.](../media/evaluate-performance-performance-main.msft.png)
+   ![The Main section](../media/evaluate-performance-performance-main.msft.png)
 
 1. There is a lot of data in the recording.  To zoom into a portion of the recording, click and drag in the **Overview** area toward the top of the **Performance** tool.  The **Overview** area includes the **CPU** and **NET** charts (indicated on the right).  The **Main** section and **Summary** panel only display information for the selected portion of the recording.
 
-   ![Zoom into a section.](../media/evaluate-performance-performance-main-zoomed.msft.png)
+   ![Zoom into a section](../media/evaluate-performance-performance-main-zoomed.msft.png)
 
    Another way to change the selected area is to put focus on the **Main** section, click the background or an event, and then press:
    * `W` to zoom in, `S` to zoom out.
@@ -157,30 +158,32 @@ After you verified that the animation isn't performing well, the next step is to
 
 1. Click the **Animation Frame Fired** event.  The **Summary** panel now shows you information about that event.  Note the **Reveal** link.  After you click it, DevTools highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:96** link.  After you click it, the relevant line in the source code is displayed.
 
-   ![More information about the Animation Frame Fired event.](../media/evaluate-performance-performance-animation-frame-fired.msft.png)
+   ![More information about the Animation Frame Fired event](../media/evaluate-performance-performance-animation-frame-fired.msft.png)
 
    After clicking an event, use the arrow keys to select the events next to it.
 
 1. Under the **app.update** event, there's a bunch of purple events, and they each have a red triangle.
 
-1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  Indeed, there is a warning about forced reflows (another word for _layout_).
+1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  There is a warning about forced reflows (another word for _layout_).
 
 1. In the **Summary** panel, click the **app.js:72** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.
 
-   ![The line of code that caused the forced layout.](../media/evaluate-performance-sources-app-update.msft.png)
+   ![The line of code that caused the forced layout](../media/evaluate-performance-sources-app-update.msft.png)
 
-   The problem with the code is that in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
+   The problem with the non-optimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
    <!--
    > To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts).
    -->
 
+
+This article gives you a lot to learn. But now you have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.
 
 
 ### Analyze the optimized version
 
 Using the workflows and tools that you just learned, click **Optimize** on the demo to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
-Even the optimized version isn't great, because it manipulates the `top` property of every icon.  A better approach is to stick to properties that only affect compositing.
+The optimized code uses a different sequence of actions to do less work. Note that this code could be made even faster by only using properties that only affect compositing, instead of manipulating the `top` property of every icon.
 <!--  > For more information, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations). todo: add rendering section when available -->
 
 
@@ -213,5 +216,5 @@ Last, there are many ways to improve runtime performance.  This article focused 
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). 
 > The original page is found [here](https://developer.chrome.com/docs/devtools/evaluate-performance/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
