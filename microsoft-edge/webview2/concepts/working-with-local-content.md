@@ -76,11 +76,17 @@ To obtain the above string:
 
 1. In Visual Studio Code, open the cloned folder: `C:\Users\username\Documents\GitHub\Demos\demo-to-do`
 
+   That path notation assumes you're on Windows.  Windows uses backslashes when in the context of the local filesystem (rather than Web tools).
+
 1. If you haven't already, on the Activity Bar, select **Extensions**, and then install the **Microsoft Edge Tools for VS Code** extension.
 
 1. On the Activity Bar, select **Explorer**, right-click `index.html`, select **Open with Edge**, and then select **Open Browser with DevTools**.
 
-1. In the **Edge DevTools: Browser** tab, copy the string from the address bar.
+1. In the **Edge DevTools: Browser** tab, copy the string from the address bar:
+
+   ![Forward slashes in file paths when in the context of Web development](./working-with-local-content-images/fwd-slashes-in-devtools-extension.png)
+
+   The above screenshot is from Visual Studio Code running on Windows.  The context is Web development, so the address bar in the built-in **Edge DevTools: Browser** tab automatically shows file path notation with forward slashes instead of Windows' file path backslashes.
 
 For details about this approach, see [Get started using the DevTools extension for Visual Studio Code](../../visual-studio-code/microsoft-edge-devtools-extension/get-started.md).
 
