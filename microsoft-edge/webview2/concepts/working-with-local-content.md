@@ -92,19 +92,22 @@ For details about this approach, see [Get started using the DevTools extension f
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
-webView.CoreWebView2.Navigate("file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html");
+webView.CoreWebView2.Navigate(
+          "file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html");
 ```
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 ```csharp
-webView.CoreWebView2.Navigate("file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html");
+webView.CoreWebView2.Navigate(
+          "file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html");
 ```
 
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
-webView->Navigate(L"file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html");
+webView->Navigate(
+         L"file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html");
 ```
 
 ---
@@ -239,23 +242,27 @@ This approach lets you specify the cross-origin access, by using the `CoreWebVie
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
-webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo", "C:\Github\Demos\demo-to-do", CoreWebView2HostResourceAccessKind.DenyCors);
+webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo", 
+         "C:\Github\Demos\demo-to-do", CoreWebView2HostResourceAccessKind.DenyCors);
 webView.CoreWebView2.Navigate("https://demo/index.html");
 ```
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 ```csharp
-Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+Windows.Storage.StorageFolder storageFolder = 
+                              Windows.Storage.ApplicationData.Current.LocalFolder;
 Windows.Storage.StorageFolder demo = await storageFolder.GetFolderAsync("Demo");
-webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo", demo.Path, CoreWebView2HostResourceAccessKind.DenyCors);
+webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo", demo.Path, 
+                                     CoreWebView2HostResourceAccessKind.DenyCors);
 webView.CoreWebView2.Navigate("https://demo/index.html");
 ```
 
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
-webView->SetVirtualHostNameToFolderMapping(L"demo", L"C:\\Github\\Demos\\demo-to-do", COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND_DENY_CORS);
+webView->SetVirtualHostNameToFolderMapping(L"demo", L"C:\\Github\\Demos\\demo-to-do", 
+                                  COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND_DENY_CORS);
 webView->Navigate(L"https://demo/index.html");
 ```
 
@@ -356,10 +363,13 @@ class ManagedStream : Stream {
 
    private Stream s_;
 }
-webView.CoreWebView2.AddWebResourceRequestedFilter("https://demo/*", CoreWebView2WebResourceContext.All);
-webView.CoreWebView2.WebResourceRequested += delegate (object sender, CoreWebView2WebResourceRequestedEventArgs args)
+webView.CoreWebView2.AddWebResourceRequestedFilter("https://demo/*", 
+                                                CoreWebView2WebResourceContext.All);
+webView.CoreWebView2.WebResourceRequested += delegate (object sender, 
+                                     CoreWebView2WebResourceRequestedEventArgs args)
 {
-    string assetsFilePath = "C:\\Demo\\" + args.Request.Uri.Substring("https://demo/*".Length - 1);
+    string assetsFilePath = "C:\\Demo\\" + 
+                            args.Request.Uri.Substring("https://demo/*".Length - 1);
     try
     {
         FileStream fs = File.OpenRead(assetsFilePath);
@@ -385,11 +395,13 @@ webView.CoreWebView2.WebResourceRequested += delegate (object sender, CoreWebVie
             headers = "Content-Type: application/javascript";
         }
 
-        args.Response = webView.CoreWebView2.Environment.CreateWebResourceResponse(ms, 200, "OK", headers);
+        args.Response = webView.CoreWebView2.Environment.CreateWebResourceResponse(
+                                                            ms, 200, "OK", headers);
     }
     catch (Exception)
     {
-        args.Response = webView.CoreWebView2.Environment.CreateWebResourceResponse(null, 404, "Not found", "");
+        args.Response = webView.CoreWebView2.Environment.CreateWebResourceResponse(
+                                                        null, 404, "Not found", "");
     }
 };
 ```
@@ -412,7 +424,8 @@ class ManagedStream : IRandomAccessStream
 
 
 
-    ulong IRandomAccessStream.Position => { get => s_.Position; set => s_.Position = value; }
+    ulong IRandomAccessStream.Position => 
+                                 { get => s_.Position; set => s_.Position = value; }
 
     public ulong Size => s_.Size;
 
@@ -436,7 +449,8 @@ class ManagedStream : IRandomAccessStream
         throw new NotImplementedException();
     }
 
-    public IAsyncOperationWithProgress<IBuffer, uint> ReadAsync(IBuffer buffer, uint count, InputStreamOptions options)
+    public IAsyncOperationWithProgress<IBuffer, uint> ReadAsync(IBuffer buffer, 
+                                             uint count, InputStreamOptions options)
     {
         IAsyncOperationWithProgress<IBuffer, uint> result;
         try
@@ -444,7 +458,9 @@ class ManagedStream : IRandomAccessStream
             result = s_.ReadAsync(buffer, count, options);
             // Once read is complete if no data was read, dispose the underlying
             // stream.
-            result.Completed += new AsyncOperationWithProgressCompletedHandler<IBuffer, uint>(delegate (IAsyncOperationWithProgress<IBuffer, uint> asyncInfo, AsyncStatus asyncStatus)
+            result.Completed += new AsyncOperationWithProgressCompletedHandler<IBuffer, uint>(
+                     delegate (IAsyncOperationWithProgress<IBuffer, uint> asyncInfo, 
+                               AsyncStatus asyncStatus)
             {
                 if (asyncInfo.GetResults().Length == 0)
                 {
@@ -478,13 +494,16 @@ class ManagedStream : IRandomAccessStream
     private IRandomAccessStream s_;
 }
 
-WebView2.CoreWebView2.AddWebResourceRequestedFilter("https://demo/*", CoreWebView2WebResourceContext.All);
-WebView2.CoreWebView2.WebResourceRequested += async delegate (CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs args)
+WebView2.CoreWebView2.AddWebResourceRequestedFilter("https://demo/*", 
+                                                CoreWebView2WebResourceContext.All);
+WebView2.CoreWebView2.WebResourceRequested += async delegate (CoreWebView2 sender, 
+                                     CoreWebView2WebResourceRequestedEventArgs args)
 {
     string filename = args.Request.Uri.Substring("https://demo/*".Length - 1);
     try
     {
-        Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+        Windows.Storage.StorageFolder storageFolder = 
+                                Windows.Storage.ApplicationData.Current.LocalFolder;
         Windows.Storage.StorageFolder demo = await storageFolder.GetFolderAsync("Demo");
         Windows.Storage.StorageFile asset = await demo.GetFileAsync(filename);
         
@@ -511,11 +530,13 @@ WebView2.CoreWebView2.WebResourceRequested += async delegate (CoreWebView2 sende
             headers = "Content-Type: application/javascript";
         }
 
-        args.Response = WebView2.CoreWebView2.Environment.CreateWebResourceResponse(ms, 200, "OK", headers);
+        args.Response = WebView2.CoreWebView2.Environment.CreateWebResourceResponse(ms, 
+                                                                200, "OK", headers);
     }
     catch (Exception)
     {
-        args.Response = WebView2.CoreWebView2.Environment.CreateWebResourceResponse(null, 404, "Not found", "");
+        args.Response = WebView2.CoreWebView2.Environment.CreateWebResourceResponse(null, 
+                                                              404, "Not found", "");
     }
 };
 ```
