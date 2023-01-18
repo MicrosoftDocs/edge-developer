@@ -10,7 +10,7 @@ ms.date: 01/10/2023
 ---
 # Working with local content in WebView2 apps
 
-In addition to loading remote content, content can also be loaded locally into WebView2.  There are several different approaches that can be used to load local content into a WebView2 control, including: 
+In addition to loading remote content, content can also be loaded locally into WebView2.  There are several approaches that can be used to load local content into a WebView2 control, including: 
 * Navigating to a file URL.
 * Navigating to an HTML string.
 * Virtual host name mapping.
@@ -22,7 +22,9 @@ These approaches are described below.
 <!-- ====================================================================== -->
 ## Navigate to a file URL
 
-WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is the most efficient and simples approach that satisfies the basic scenario.  However, it is less flexible than the other approaches.  This is the simplest approach to load local content.  However, like the browser, file URLs are limited in some capabilities. The document origin will be `null` for a file URL.  For each resource, the full path is needed to be specified.
+WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is the simplest and most efficient approach to loading local content.  However, it is less flexible than the other approaches.  Like in a web browser, file URLs are limited in some capabilities:
+*  The document origin will be `null` for a file URL.
+*  For each resource, the full path must be specified.
 
 File URLs behave like they do in the browser.  For example, you can't make an `XMLHttpRequest` (XHR) in a file URL, because you're not working in the context of a webpage.  If the WebView2 control is loading local content, still came from a remote source (such as Bing.com), versus a file that came from the local drive.
 
@@ -184,7 +186,7 @@ To obtain the above string:
 
 
 <!-- ------------------------------ -->
-#### Example of navigating to a string
+#### Example of navigating to an HTML string
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
