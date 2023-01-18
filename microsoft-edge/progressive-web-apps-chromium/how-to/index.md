@@ -68,7 +68,7 @@ You now have a simple, functional website running on a local web server.
 
 Now browse to `http://localhost:8080` to view your new website.
 
-![Running your new PWA on localhost.](../media/sample-pwa-app.png)
+![Running your new PWA on localhost](../media/sample-pwa-app.png)
 
 
 <!-- ====================================================================== -->
