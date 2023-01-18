@@ -74,7 +74,7 @@ That path is from a clone of the following on Windows:
 * [Demo To Do - rendered page](https://microsoftedge.github.io/Demos/demo-to-do/)
 * [Demo To Do - source code](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
 
-To obtain the above string:
+One possible way to obtain the above string:
 
 1. In Visual Studio Code, open the cloned folder: `C:\Users\username\Documents\GitHub\Demos\demo-to-do`
 
@@ -88,7 +88,7 @@ To obtain the above string:
 
    ![Forward slashes in file paths when in the context of Web development](./working-with-local-content-images/fwd-slashes-in-devtools-extension.png)
 
-   The above screenshot is from Visual Studio Code running on Windows.  The context is Web development, so the address bar in the built-in **Edge DevTools: Browser** tab automatically shows file path notation with forward slashes instead of Windows' file path backslashes.
+   The above screenshot is from Visual Studio Code running on Windows.  The context is Web development, so the address bar in the **Edge DevTools: Browser** tab automatically shows file path notation with forward slashes instead of Windows' file path backslashes.
 
 For details about this approach, see [Get started using the DevTools extension for Visual Studio Code](../../visual-studio-code/microsoft-edge-devtools-extension/get-started.md).
 
