@@ -35,13 +35,13 @@ In this section, you download and run the final state of the extension that the 
 
 1. Click **Load unpacked** and navigate to the folder where you extracted the zip file. In this folder, select **Demos-main** > **devtools-extension** > **sample 4**, and then click **Select Folder**.
 
-  ![The edge://extensions page in Microsoft Edge, showing the Developer mode and Load unpacked buttons.](./devtools-extensions-images/edge-extensions-page.png)
+  ![The edge://extensions page in Microsoft Edge, showing the Developer mode and Load unpacked buttons](./devtools-extensions-images/edge-extensions-page.png)
 
 Your DevTools extension should now be loaded. Open a new tab in Microsoft Edge, and then open DevTools by pressing `F12`.
 
 The extension creates a **Sample Panel** tab in the DevTools window:
 
-![Microsoft Edge, showing DevTools on the side, with the extension's Sample Panel selected.](./devtools-extensions-images/solution-sample-panel.png)
+![Microsoft Edge, showing DevTools on the side, with the extension's Sample Panel selected](./devtools-extensions-images/solution-sample-panel.png)
 
 
 <!-- ====================================================================== -->

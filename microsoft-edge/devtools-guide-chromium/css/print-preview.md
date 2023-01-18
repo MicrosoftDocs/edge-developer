@@ -36,7 +36,7 @@ The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries
 1. Under **Emulate CSS media type**, select **print**.
 
    > [!div class="mx-imgBorder"]
-   > ![The Rendering panel with the print CSS media type selected.](../media/print-preview-css-media-type.png)
+   > ![The Rendering panel with the print CSS media type selected](../media/print-preview-css-media-type.png)
 
 From here, you can display and change your CSS, like any other web page.  See [Get started viewing and changing CSS](index.md).
 
@@ -62,5 +62,5 @@ The Rendering tool is also used for the following:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/rendering/emulate-css/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

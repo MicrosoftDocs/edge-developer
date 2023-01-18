@@ -32,6 +32,9 @@
 
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
+            - name: Microsoft Edge 109
+              href: devtools-guide-chromium/whats-new/2023/01/devtools-109.md
+
             - name: Microsoft Edge 108
               href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
 
@@ -131,6 +134,10 @@
             - name: Run commands via keyboard with Command Palette
               href: devtools-guide-chromium/experimental-features/edge-command-palette.md
               displayName: Experimental features, Edge Command Palette
+
+            - name: Share enhanced performance and memory traces
+              href: devtools-guide-chromium/experimental-features/share-traces.md
+              displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
 
 # TOOLS =======================================================================
         - name: Tools
@@ -262,7 +269,7 @@
                   href: devtools-guide-chromium/javascript/overrides.md
                   displayName: Sources tool
 
-                - name: Mark content scripts as Library Code
+                - name: Add content scripts to the Ignore List
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
                   displayName: Sources tool
 
@@ -502,6 +509,10 @@
 
                 - name: Display original function names in performance profiles
                   href: devtools-guide-chromium/evaluate-performance/unminify.md
+                  displayName: Performance tool
+
+                - name: Analyze selector performance during Recalculate Style events
+                  href: devtools-guide-chromium/evaluate-performance/selector-stats.md
                   displayName: Performance tool
 
 # Performance monitor tool ----------------------------------------------------
@@ -1204,6 +1215,10 @@
                 - name: Call native-side WinRT code from web-side code
                   href: webview2/how-to/winrt-from-js.md
                   displayName: AddHostObjectToScript, host objects
+
+                - name: How WinRT types and members are represented in JavaScript
+                  href: webview2/how-to/winrt-js-conversion.md
+                  displayName: 
 
             - name: Using frames
               href: webview2/concepts/frames.md
