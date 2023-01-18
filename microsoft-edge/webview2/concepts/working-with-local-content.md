@@ -24,7 +24,7 @@ These approaches are described below.
 
 WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is the most efficient and simples approach that satisfies the basic scenario.  However, it is less flexible than the other approaches.  This is the simplest approach to load local content.  However, like the browser, file URLs are limited in some capabilities. The document origin will be `null` for a file URL.  For each resource, the full path is needed to be specified.
 
-File URLs behave like they do in the browser.  For example, you can't make an `XMLHttpRequest` (XHR) in a file URL, because you're not working in the context of a webpage.  If the WebView2 control is loading local content, still came from a remote source (such as Bing.com), versus a file that came from local.
+File URLs behave like they do in the browser.  For example, you can't make an `XMLHttpRequest` (XHR) in a file URL, because you're not working in the context of a webpage.  If the WebView2 control is loading local content, still came from a remote source (such as Bing.com), versus a file that came from the local drive.
 
 
 <!-- ------------------------------ -->
@@ -179,7 +179,7 @@ To obtain the above string:
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
-allo
+
 ```csharp
 // Define htmlString with the string representation of HTML as above.
 webView.CoreWebView2.NavigateToString(htmlString);
