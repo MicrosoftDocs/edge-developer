@@ -225,7 +225,8 @@ bool AppWindow::PrintToDefaultPrinter()
   // Prints current web page with the default page and printer settings.
   CHECK_FAILURE(webView2_16->Print(
       nullptr, Callback<ICoreWebView2PrintCompletedHandler>(
-          [title = std::move(title), this](HRESULT errorCode, COREWEBVIEW2_PRINT_STATUS printStatus) -> HRESULT
+          [title = std::move(title), this](HRESULT errorCode, 
+                                   COREWEBVIEW2_PRINT_STATUS printStatus) -> HRESULT
           {
             std::wstring message = L"";
             if (errorCode == S_OK && printStatus == COREWEBVIEW2_PRINT_STATUS_SUCCEEDED)
