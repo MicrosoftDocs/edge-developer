@@ -705,7 +705,8 @@ async void PrintToPdfStream()
     System.IO.Stream stream = await webView.CoreWebView2.PrintToPdfStreamAsync(null);
     DisplayPdfDataInPrintDialog(stream);
 
-    MessageBox.Show(this, "Printing " + title + " document to PDF Stream " + ((stream != null) ? "succedded" : "failed"), "Print To PDF Stream");
+    MessageBox.Show(this, "Printing " + title + " document to PDF Stream " + 
+                ((stream != null) ? "succedded" : "failed"), "Print To PDF Stream");
   }
   catch(Exception exception)
   {
