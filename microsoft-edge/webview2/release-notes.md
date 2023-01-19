@@ -138,11 +138,21 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* 
+* * CoreWebView2PermissionRequestedEventArgs Class
+   CoreWebView2PermissionRequestedEventArgs.SaveInProfile Property
+* ICoreWebView2PermissionSetting Class
+   ICoreWebView2PermissionSetting.PermissionKind Property
+   ICoreWebView2PermissionSetting.PermissionOrigin Property
+   ICoreWebView2PermissionSetting.PermissionState Property
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* 
+* CoreWebView2PermissionRequestedEventArgs Class
+   CoreWebView2PermissionRequestedEventArgs.SaveInProfile Property
+* ICoreWebView2PermissionSetting Class
+   ICoreWebView2PermissionSetting.PermissionKind Property
+   ICoreWebView2PermissionSetting.PermissionOrigin Property
+   ICoreWebView2PermissionSetting.PermissionState Property
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -168,11 +178,11 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* 
+* CoreWebView2NavigationStartingEventArgs
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* 
+* CoreWebView2NavigationStartingEventArgs
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -188,11 +198,15 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* 
+* CoreWebView2EnvironmentOptions Class
+   CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property
+* CoreWebView2CustomSchemeRegistration Class
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* 
+* CoreWebView2EnvironmentOptions Class
+   CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property
+* CoreWebView2CustomSchemeRegistration Class 
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -214,11 +228,17 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* 
+* CoreWebView2EnvironmentOptions Class
+   CoreWebView2EnvironmentOptions.EnableTrackingPrevention Property
+* CoreWebView2Profile Class
+   CoreWebView2Profile.PreferredTrackingPreventionLevel Property
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* 
+* CoreWebView2EnvironmentOptions Class
+   CoreWebView2EnvironmentOptions.EnableTrackingPrevention Property
+* CoreWebView2Profile Class
+   CoreWebView2Profile.PreferredTrackingPreventionLevel Property
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -233,7 +253,14 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 #### Bug fixes
  
-*  
+* Disable "Open link as Profile" in the WebView2 context menu.
+* Fix post data missing in form submit with control click. ([Issue #2652](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2652))
+* Fixed a bug where the user is not able to get the custom context menu on PDF Viewer. ([Issue #2607](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2607))
+* Fixed bug where the whole tool bar will be blank when hiding Bookmarks, Search, and PageSelector buttons simultaneously. ([Issue #2866](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2866))
+* Fixed a bug where the app crashes when trying to move focus to WebView2 when it is disabled.
+* Fix drag/drop within the WebView2 for composition hosted WebViews.
+* Remove read aloud icon in address bar in a WebView2 popup window.
+* Fix unexpected items in context menu of popup windows in WebView2.
 
 <!-- ====================================================================== -->
 ## 1.0.1462.37
