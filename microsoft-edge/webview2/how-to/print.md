@@ -142,7 +142,7 @@ The `Print` method silently prints the current top-level document in the WebView
 
 * [ICoreWebView2_16::Print method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#print)
 * [ICoreWebView2Environment6::CreatePrintSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
-* [ICoreWebView2PrintSettings2 interface](microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
+* [ICoreWebView2PrintSettings2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
 * [COREWEBVIEW2_PRINT_STATUS enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_status)
 
 ---
@@ -465,8 +465,8 @@ bool AppWindow::PrintToPrinter()
 
 * [ICoreWebView2_16::Print method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#print)
 * [ICoreWebView2Environment6::CreatePrintSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
-* [ICoreWebView2PrintSettings interace](microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
-* [ICoreWebView2PrintSettings2 interace](microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
+* [ICoreWebView2PrintSettings interace](/microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
+* [ICoreWebView2PrintSettings2 interace](/microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
 * [COREWEBVIEW2_PRINT_STATUS enum](/microsoft-edge/webview2/reference/win32/icorewebview2_16#corewebview2_print_status)
 
 ---
@@ -504,7 +504,7 @@ This API consists of an asynchronous `PrintToPdf` method and a `PrintSettings` o
 
 * [ICoreWebView2_7::PrintToPdf method](/microsoft-edge/webview2/reference/win32/icorewebview2_7#printtopdf)
 * [ICoreWebView2Environment6::CreatePrintSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
-* [ICoreWebView2PrintSettings interface](microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
+* [ICoreWebView2PrintSettings interface](/microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
 
 ---
 
@@ -651,7 +651,7 @@ Silently prints the current top-level document in the WebView2 control to a PDF 
 
 * [ICoreWebView2_16::PrintToPdfStream method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#printtopdfstream)
 * [ICoreWebView2Environment6::CreatePrintSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
-* [ICoreWebView2PrintSettings2 interface](microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
+* [ICoreWebView2PrintSettings2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2printsettings2)
 
 ---
 
@@ -748,7 +748,7 @@ bool AppWindow::PrintToPdfStream()
 <!-- ====================================================================== -->
 ## See also
 
-* [Printing](../how-to/overview-features-apis.md#printing) in _Overview of WebView2 features and APIs_.
+* [Printing](./overview-features-apis.md#printing) in _Overview of WebView2 features and APIs_.
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
