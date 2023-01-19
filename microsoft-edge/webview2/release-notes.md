@@ -122,19 +122,19 @@ The following items are now stable:
 
 <!-- ====================================================================== -->
 
-<!-- ## 1.0.1549-prerelease
+## 1.0.1619-prerelease
 
-Release Date: December 12, 2022
+Release Date: January 19, 2023
 
-[NuGet package for WebView2 SDK 1.0.1549-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1549-prerelease)
+[NuGet package for WebView2 SDK 1.0.1619-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1619-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 110.0.1549.0 or higher.
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 111.0.1619.0 or higher.
 
 ### General
 
 #### Experimental features 
 
-*  Added support for the Locale Region API:
+*  Added support for the Permission management API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -146,11 +146,25 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* 
+* ICoreWebView2ExperimentalPermissionRequestedEventArgs3
+   get_SavesInProfile
+   put_SavesInProfile
+* ICoreWebView2ExperimentalSetPermissionStateCompletedHandler
+* ICoreWebView2ExperimentalGetNonDefaultPermissionSettingsCompletedHandler
+* ICoreWebView2ExperimentalProfile6
+   SetPermissionState
+   GetNonDefaultPermissionSettings
+* ICoreWebView2ExperimentalPermissionSettingCollectionView
+   GetValueAtIndex
+   get_Count
+* ICoreWebView2ExperimentalPermissionSetting
+   get_PermissionKind
+   get_PermissionOrigin
+   get_PermissionState
 
 ---
 
-*  Added support for the tracking prevention API:
+*  Added support for API to disable back and forward navigation:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -162,15 +176,15 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* 
-        
+* ICoreWebView2ExperimentalNavigationStartingEventArgs2
+
 ---
 
 #### Promotions
 
 The following APIs are promoted to stable in this prerelease SDK:
 
-*  Added support for the Print API:
+*  The Custom Scheme Registration API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -182,11 +196,21 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* 
+* ICoreWebView2EnvironmentOptions4
+   GetCustomSchemeRegistrations
+   SetCustomSchemeRegistrations
+* ICoreWebView2CustomSchemeRegistration
+   get_SchemeName
+   get_TreatAsSecure
+   put_TreatAsSecure
+   GetAllowedOrigins
+   SetAllowedOrigins
+   get_HasAuthorityComponent
+   put_HasAuthorityComponent
 
 ---
 
-*  Added support for Custom Crash Reporting API:
+*  The Tracking Prevention API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -198,13 +222,18 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* 
+* ICoreWebView2EnvironmentOptions5
+   get_EnableTrackingPrevention
+   put_EnableTrackingPrevention
+* ICoreWebView2Profile3
+   get_PreferredTrackingPreventionLevel
+   put_PreferredTrackingPreventionLevel
 
 ---
 
 #### Bug fixes
  
-*   -->
+*  
 
 <!-- ====================================================================== -->
 ## 1.0.1462.37
