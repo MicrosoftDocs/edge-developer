@@ -89,6 +89,13 @@ void ShowPrintUI(object target, ExecutedRoutedEventArgs e)
 
 <!-- ------------------------------ -->
 
+##### [WinRT/C#](#tab/winrtcsharp)
+
+Pending.<!-- todo -->
+
+
+<!-- ------------------------------ -->
+
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
@@ -192,6 +199,13 @@ async void PrintToDefaultPrinter ()
 
 * [CoreWebView2.PrintAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printasync#microsoft-web-webview2-core-corewebview2-printasync)
 * [CoreWebView2PrintStatus Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2printstatus)
+
+
+<!-- ------------------------------ -->
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+Pending.<!-- todo -->
 
 
 <!-- ------------------------------ -->
@@ -329,6 +343,13 @@ CoreWebView2PrintSettings GetSelectedPrinterPrintSettings(string printerName)
 * [CoreWebView2Environment.CreatePrintSettings Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createprintsettings)
 * [CoreWebView2PrintSettings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
 * [CoreWebView2PrintStatus Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2printstatus)
+
+<!-- ------------------------------ -->
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+Pending.<!-- todo -->
+
 
 <!-- ------------------------------ -->
 
@@ -561,6 +582,13 @@ async void PrintToPdfCmdExecuted(object target, ExecutedRoutedEventArgs e)
 
 <!-- ------------------------------ -->
 
+##### [WinRT/C#](#tab/winrtcsharp)
+
+Pending.<!-- todo -->
+
+
+<!-- ------------------------------ -->
+
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
@@ -699,6 +727,14 @@ void DisplayPdfDataInPrintDialog(Stream pdfData)
 
 <!-- ------------------------------ -->
 
+##### [WinRT/C#](#tab/winrtcsharp)
+
+Pending.<!-- todo -->
+
+
+<!-- ------------------------------ -->
+
+
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
@@ -748,7 +784,7 @@ bool AppWindow::PrintToPdfStream()
 <!-- ====================================================================== -->
 ## See also
 
-* [Printing](./overview-features-apis.md#printing) in _Overview of WebView2 features and APIs_.
+* [Printing](../concepts/overview-features-apis.md#printing) in _Overview of WebView2 features and APIs_.
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
