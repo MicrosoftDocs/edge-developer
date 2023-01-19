@@ -112,7 +112,7 @@ There are many tips and tricks to be aware of when building websites or web apps
 *  Customizing the Password Reveal button.
 *  Detecting Windows 11 by using User-Agent Client Hints.
 
-See [Web platform overview](web-platform/web-platform.md).
+See [Development tips for Microsoft Edge](web-platform/web-platform.md).
 
 
 <!-- ====================================================================== -->

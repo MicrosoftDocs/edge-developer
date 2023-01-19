@@ -1,5 +1,5 @@
 ---
-title: Web platform overview
+title: Development tips for Microsoft Edge
 description: Testing for coming changes that could impact compatibility of your site with Microsoft Edge.  Moving users from Internet Explorer.  Setting up tracking prevention.  Detecting Microsoft Edge from your website. Detecting Windows 11 via User-Agent Client Hints.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 11/28/2022
 ---
-# Web platform overview
+# Development tips for Microsoft Edge
 
 There are many tips and tricks to be aware of when building websites or web apps that work in Microsoft Edge, including:
 
