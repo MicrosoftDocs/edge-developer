@@ -197,9 +197,9 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* CoreWebView2EnvironmentOptions Class
-   CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property
-* CoreWebView2CustomSchemeRegistration Class
+* [CoreWebView2EnvironmentOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true)
+   * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.customschemeregistrations?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true)
+* [CoreWebView2CustomSchemeRegistration Class](/dotnet/api/microsoft.web.webview2.core.corewebview2customschemeregistration?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
