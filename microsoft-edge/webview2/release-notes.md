@@ -252,7 +252,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 *  Fixed a bug where the user is not able to get the custom context menu on PDF Viewer. ([Issue #2607](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2607))
 *  Fixed a bug where the entire toolbar is blank when simultaneously hiding the **Bookmarks**, **Search**, and **PageSelector** buttons. ([Issue #2866](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2866))
 *  Fixed a bug where the app crashes when trying to move focus to WebView2 when it is disabled.
-* Fix drag/drop within the WebView2 for composition hosted WebViews.
+*  Fixed drag and drop within the WebView2 for composition-hosted WebViews.
 * Remove read aloud icon in address bar in a WebView2 popup window.
 * Fix unexpected items in context menu of popup windows in WebView2.
 
