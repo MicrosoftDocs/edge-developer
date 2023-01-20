@@ -138,12 +138,12 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* * CoreWebView2PermissionRequestedEventArgs Class
-   CoreWebView2PermissionRequestedEventArgs.SaveInProfile Property
-* ICoreWebView2PermissionSetting Class
-   ICoreWebView2PermissionSetting.PermissionKind Property
-   ICoreWebView2PermissionSetting.PermissionOrigin Property
-   ICoreWebView2PermissionSetting.PermissionState Property
+* [CoreWebView2PermissionRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true&preserve-view=true)
+   * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.savesinprofile?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true)
+* [CoreWebView2PermissionSetting Class](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionsetting?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true)
+   * [CoreWebView2PermissionSetting.PermissionKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionsetting.permissionkind?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true)
+   * [CoreWebView2PermissionSetting.PermissionOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionsetting.permissionorigin?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true)
+   * [CoreWebView2PermissionSetting.PermissionState Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionsetting.permissionstate?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
