@@ -35,10 +35,10 @@ File URLs behave like they do in the browser.  For example, you can't make an `X
 You must specify the full path of the file, for every resource.  For example:
 
 ```
-C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html
+file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html
 ```
 
-For example, if you switch between online (remote) content, such as Bing.com and offline (local) content, you must specify the virtual domain.
+If you switch between online (remote) content, such as Bing.com and offline (local) content, you must specify the virtual domain.
 
 In contrast, if you navigate to a file URL, you have to replace it with the full path each time you switch between remote and local content.  When specifying a file URL, the app navigates to a specific path; that's the only way the app can load local content.
 
