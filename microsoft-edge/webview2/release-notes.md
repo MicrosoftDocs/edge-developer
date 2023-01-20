@@ -254,7 +254,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 *  Fixed a bug where the app crashes when trying to move focus to WebView2 when it is disabled.
 *  Fixed drag and drop within the WebView2 for composition-hosted WebViews.
 *  Removed read-aloud icon in address bar in a WebView2 popup window.
-* Fix unexpected items in context menu of popup windows in WebView2.
+*  Fixed unexpected items in the context menu of popup windows in WebView2.
 
 <!-- ====================================================================== -->
 ## 1.0.1462.37
