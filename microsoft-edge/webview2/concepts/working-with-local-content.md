@@ -80,7 +80,7 @@ One possible way to obtain the above string:
 
    That path notation assumes you're on Windows.  Windows uses backslashes when in the context of the local filesystem (rather than Web tools).
 
-1. If you haven't already, on the Activity Bar, select **Extensions**, and then install the **Microsoft Edge Tools for VS Code** extension.
+1. On the Activity Bar, select **Extensions**, and then install the **Microsoft Edge Tools for VS Code** extension.
 
 1. On the Activity Bar, select **Explorer**, right-click `index.html`, select **Open with Edge**, and then select **Open Browser with DevTools**.
 
