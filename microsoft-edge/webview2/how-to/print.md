@@ -15,9 +15,9 @@ There are several different ways to print a web page in WebView2, which give you
 | Method | Description |
 |---|---|
 | `ShowPrintUI` | Opens the WebView2 **Print Preview** dialog or the operating system's **Print** dialog. Easy to implement, minimal support for customizing. |
-| `Print` | Silently prints the current top-level document in the WebView2 using optional programmatically specified print settings to a printer. You can to build your own print preview dialog or print experience. |
-| `PrintToPdf` | Silently prints the current top-level document in the WebView2 to a PDF file. You can build your own code to print the PDF file. |
-| `PrintToPdfStream` | Silently prints the current top-level document in the WebView2 to a PDF stream. You can build your own code to print the PDF. |
+| `Print` | Silently prints the current top-level document in the WebView2 using optional programmatically specified print settings to a printer. You can use this to build your own print preview dialog or print experience. |
+| `PrintToPdf` | Silently prints the current top-level document in the WebView2 to a PDF file. You can use this to build your own code to print the PDF file. |
+| `PrintToPdfStream` | Silently prints the current top-level document in the WebView2 to a PDF stream. You can use this to build your own code to print the PDF. |
 
 
 ## The ShowPrintUI method to open a Print dialog
