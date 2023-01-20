@@ -248,7 +248,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 #### Bug fixes
  
 *  Disabled **Open link as Profile** in the WebView2 context menu.
-* Fix post data missing in form submit with control click. ([Issue #2652](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2652))
+*  Fixed post data missing in form submit with Ctrl-click. ([Issue #2652](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2652))
 * Fixed a bug where the user is not able to get the custom context menu on PDF Viewer. ([Issue #2607](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2607))
 * Fixed bug where the whole tool bar will be blank when hiding Bookmarks, Search, and PageSelector buttons simultaneously. ([Issue #2866](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2866))
 * Fixed a bug where the app crashes when trying to move focus to WebView2 when it is disabled.
