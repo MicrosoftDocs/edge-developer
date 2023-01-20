@@ -85,7 +85,7 @@ void ShowPrintUI(object target, ExecutedRoutedEventArgs e)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-Pending.<!-- todo -->
+Coming soon.<!-- todo -->
 
 
 <!-- ------------------------------ -->
@@ -190,7 +190,7 @@ async void PrintToDefaultPrinter ()
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-Pending.<!-- todo -->
+Coming soon.<!-- todo -->
 
 
 <!-- ------------------------------ -->
@@ -324,7 +324,7 @@ CoreWebView2PrintSettings GetSelectedPrinterPrintSettings(string printerName)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-Pending.<!-- todo -->
+Coming soon.<!-- todo -->
 
 
 <!-- ------------------------------ -->
@@ -548,7 +548,7 @@ async void PrintToPdfCmdExecuted(object target, ExecutedRoutedEventArgs e)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-Pending.<!-- todo -->
+Coming soon.<!-- todo -->
 
 
 <!-- ------------------------------ -->
@@ -685,7 +685,7 @@ void DisplayPdfDataInPrintDialog(Stream pdfData)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-Pending.<!-- todo -->
+Coming soon.<!-- todo -->
 
 
 <!-- ------------------------------ -->
