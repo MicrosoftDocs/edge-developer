@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 02/14/2022
+ms.date: 01/17/2023
 ---
 # Develop for the web with Microsoft Edge
 
@@ -101,9 +101,9 @@ See [Test and automation in Microsoft Edge](test-and-automation/test-and-automat
 
 
 <!-- ====================================================================== -->
-## Web platform
+## Development tips for Microsoft Edge
 
-Considerations for developing websites and products for the web platform include the following:
+There are many tips and tricks to be aware of when building websites or web apps that work in Microsoft Edge, including:
 
 *  Testing for coming changes that could impact compatibility of your website with Microsoft Edge.
 *  Moving users to Microsoft Edge from Internet Explorer.
@@ -112,7 +112,7 @@ Considerations for developing websites and products for the web platform include
 *  Customizing the Password Reveal button.
 *  Detecting Windows 11 by using User-Agent Client Hints.
 
-See [Web platform](web-platform/web-platform.md).
+See [Development tips for Microsoft Edge](web-platform/web-platform.md).
 
 
 <!-- ====================================================================== -->
@@ -157,7 +157,7 @@ See [The Web We Want initiative](web-we-want/index.md).
 <!-- ============================================================================================================================================ -->
 ## How to use this documentation
 
-These are tips for using the documentation UI of Microsoft Learn.
+The following sections are tips for using the Microsoft Learn website.
 
 
 <!-- ====================================================================== -->
@@ -169,8 +169,8 @@ To see details of a screenshot or diagram:
 
 1. Close the image tab to return to the article.
 
-<!-- ====================================================================== -->
 
+<!-- ====================================================================== -->
 ## Look up key words and terms in "Filter by title" text box
 
 The multi-purpose **Filter by title** text box supports:
@@ -191,8 +191,8 @@ The full-text search page initially searches all _Microsoft Edge_ documentation.
 
 ![The full-text search page initially searches all Microsoft Edge documentation, or you can click the link 'View all results' for a broader search](media/full-text-search-page.png)
 
-<!-- ====================================================================== -->
 
+<!-- ====================================================================== -->
 ## Provide feedback or report issues in the Microsoft Edge Developer documentation
 
 To provide feedback or enter issues:
