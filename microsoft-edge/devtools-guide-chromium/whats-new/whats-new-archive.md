@@ -9,7 +9,7 @@ ms.date: 01/23/2023
 ---
 # What's new in Microsoft Edge DevTools Archives
 
-This page is an archive for all of the legacy [What's New in DevTools](whats-new.md) published after each release.
+This page is an archive for all of the legacy [What's New in DevTools](whats-new.md) published after each release. 
 
 <!-- add new pages to toc too -->
 
