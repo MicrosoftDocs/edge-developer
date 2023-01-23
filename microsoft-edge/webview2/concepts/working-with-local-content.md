@@ -38,8 +38,6 @@ You must specify the full path of the file, for every resource.  For example:
 file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html
 ```
 
-If you switch between online (remote) content, such as Bing.com and offline (local) content, you must specify the virtual domain.
-
 When specifying a file URL, the app navigates to a specific path, not a domain.  As a result, you can't use cross-origin resources for navigating to a file URL, because `document.origin` is null.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
