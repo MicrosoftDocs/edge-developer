@@ -26,11 +26,11 @@ WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is 
 *  The document origin will be `null` for a file URL.
 *  For each resource, the full path must be specified.
 
-File URLs behave like they do in the browser.  For example, you can't make an `XMLHttpRequest` (XHR) in a file URL, because you're not working in the context of a webpage.  If the WebView2 control is loading local content, still came from a remote source (such as Bing.com), versus a file that came from the local drive.
-
 
 <!-- ------------------------------ -->
-#### Offline (local) vs. online (remote) content
+#### Considerations for file URLs
+
+File URLs behave like they do in the browser.  For example, you can't make an `XMLHttpRequest` (XHR) in a file URL, because you're not working in the context of a webpage.
 
 You must specify the full path of the file, for every resource.  For example:
 
@@ -40,11 +40,7 @@ file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html
 
 If you switch between online (remote) content, such as Bing.com and offline (local) content, you must specify the virtual domain.
 
-In contrast, if you navigate to a file URL, you have to replace it with the full path each time you switch between remote and local content.  When specifying a file URL, the app navigates to a specific path; that's the only way the app can load local content.
-
-You can't use cross-origin resources for navigating to a file URL; `document.origin` is null.
-
-You can specify a folder each time you switch between online (remote) and offline (local) content.
+When specifying a file URL, the app navigates to a specific path, not a domain.  As a result, you can't use cross-origin resources for navigating to a file URL, because `document.origin` is null.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -64,38 +60,48 @@ You can specify a folder each time you switch between online (remote) and offlin
 <!-- ------------------------------ -->
 #### Example of a file URL
 
-Here's an example of a file URL, for a cloned repo copy of the Demo To Do webpage:
+This section shows what a file URL looks like for a local content file path in a platform-independent way.
+
+A WebView2 app needs to code local file URLs using a `file:///` prefix and forward slashes.  For example, for the Demo To Do example, the path would be:
 
 ```
 file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html
 ```
 
-That path is from a clone of the following on Windows:
+To copy the full path with "file" prefix for a local file:
+
+1. Optionally, clone the Demos repo so you have a local copy.  See [Step 5: Clone the Demos repo](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-5-clone-the-demos-repo) in _Installing the DevTools extension for Visual Studio Code_.
+
+1. In Microsoft Edge, press `Ctrl`+`O` to open a file.  Open a local `.html` file, such as the locally cloned file `Demos/demo-to-do/index.html`:
+
+   `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`
+
+   The Address bar doesn't initially show the `file:///` prefix, but starts with the drive letter:
+
+   ```
+   C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html
+   ```
+
+   ![Address bar of Microsoft Edge initially hiding the file:/// prefix](./working-with-local-content-images/address-bar-without-file-prefix.png)
+
+1. Click the Address bar and then press the `Home` key, or press `Ctrl`+`A` to select the entire path.
+
+   ![Address bar of Microsoft Edge now showing the file:/// prefix](./working-with-local-content-images/address-bar-with-file-prefix.png)
+
+   The entire file path including `file:///` is copied into the clipboard buffer, so you can paste the full path including the `file:///` prefix:
+
+   ```
+   file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html
+   ```
+
+See also:
 * [Demo To Do - rendered page](https://microsoftedge.github.io/Demos/demo-to-do/)
 * [Demo To Do - source code](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
-
-One possible way to obtain the above string:
-
-1. In Visual Studio Code, open the cloned folder: `C:\Users\username\Documents\GitHub\Demos\demo-to-do`
-
-   That path notation assumes you're on Windows.  Windows uses backslashes when in the context of the local filesystem (rather than Web tools).
-
-1. On the Activity Bar, select **Extensions**, and then install the **Microsoft Edge Tools for VS Code** extension.
-
-1. On the Activity Bar, select **Explorer**, right-click `index.html`, select **Open with Edge**, and then select **Open Browser with DevTools**.
-
-1. In the **Edge DevTools: Browser** tab, copy the string from the address bar:
-
-   ![Forward slashes in file paths when in the context of Web development](./working-with-local-content-images/fwd-slashes-in-devtools-extension.png)
-
-   The above screenshot is from Visual Studio Code running on Windows.  The context is Web development, so the address bar in the **Edge DevTools: Browser** tab automatically shows file path notation with forward slashes instead of Windows' file path backslashes.
-
-For details about this approach, see [Get started using the DevTools extension for Visual Studio Code](../../visual-studio-code/microsoft-edge-devtools-extension/get-started.md).
+* [Step 5: Clone the Demos repo](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-5-clone-the-demos-repo) in _Installing the DevTools extension for Visual Studio Code_.
 
 
 <!-- ------------------------------ -->
 #### Example of navigating to a file URL
-
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
