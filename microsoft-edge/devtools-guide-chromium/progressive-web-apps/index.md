@@ -36,7 +36,7 @@ See also [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps-ch
 
 *  View your service worker cache from the **Cache Storage** pane.
 
-*  Unregister a service worker and clear all storage and caches with a single button click from the **Clear storage** pane.
+*  Unregister a service worker and clear all storage and caches with a single button click from the **Storage** pane.
 
 
 <!-- ====================================================================== -->
@@ -118,7 +118,7 @@ The **Service Workers** pane in the **Application** panel is the main place in D
 
 *  The **Sync** button emulates a background sync event.
 
-*  The **Unregister** button unregisters the specified service worker.  Check out [Clear storage](#clear-storage) for a way to unregister a service worker and wipe storage and caches with a single button click.
+*  The **Unregister** button unregisters the specified service worker.  Check out [Storage](#storage) for a way to unregister a service worker and wipe storage and caches with a single button click.
 
 *  The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
 
@@ -175,9 +175,9 @@ Related Guides:
 
 
 <!-- ====================================================================== -->
-## Clear storage
+## Storage
 
-The **Clear Storage** pane is a very useful feature when developing progressive web apps.  This pane lets you unregister service workers and clear all caches and storage with a single button click.  <!--Check out the section below to learn more.  -->
+The **Storage** pane is a very useful feature when developing progressive web apps.  This pane lets you unregister service workers and clear all caches and storage with a single button click.  <!--Check out the section below to learn more.  -->
 
 <!--Related Guides:
 
