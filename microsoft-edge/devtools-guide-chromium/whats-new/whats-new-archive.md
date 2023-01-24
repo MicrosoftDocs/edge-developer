@@ -13,16 +13,6 @@ This page is an archive for all of the legacy [What's New in DevTools](whats-new
 
 <!-- add new pages to toc too -->
 
-* [What's New in DevTools (Microsoft Edge 109)](2023/01/devtools-109.md)
-* [What's New in DevTools (Microsoft Edge 108)](2022/12/devtools-108.md)
-* [What's New in DevTools (Microsoft Edge 107)](2022/10/devtools-107.md)
-* [What's New in DevTools (Microsoft Edge 106)](2022/09/devtools-106.md)
-* [What's New in DevTools (Microsoft Edge 105)](2022/09/devtools-105.md)
-* [What's New in DevTools (Microsoft Edge 104)](2022/08/devtools-104.md)
-* [What's New in DevTools (Microsoft Edge 103)](2022/06/devtools-103.md)
-* [What's New in DevTools (Microsoft Edge 102)](2022/05/devtools-102.md)
-* [What's New in DevTools (Microsoft Edge 101)](2022/04/devtools-101.md)
-* [What's New in DevTools (Microsoft Edge 100)](2022/03/devtools-100.md)
 * [What's New in DevTools (Microsoft Edge 99)](2022/03/devtools.md)
 * [What's New in DevTools (Microsoft Edge 98)](2022/02/devtools.md)
 * [What's New in DevTools (Microsoft Edge 97)](2022/01/devtools.md)
