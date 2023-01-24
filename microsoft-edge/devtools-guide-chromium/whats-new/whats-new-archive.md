@@ -11,7 +11,7 @@ ms.date: 01/23/2023
 
 This page is an archive for all of the legacy [What's New in DevTools](whats-new.md) entries published after each release.
 
-<!-- add new pages to toc too -->
+<!-- adjust placement and indent in toc.yml too -->
 
 * [What's New in DevTools (Microsoft Edge 99)](2022/03/devtools.md)
 * [What's New in DevTools (Microsoft Edge 98)](2022/02/devtools.md)
