@@ -274,7 +274,7 @@ This section covers known scenarios that previously worked with IEDriver and the
 
 If your test code creates a new browser window using one of these methods, you may need to add a short wait operation afterwards to ensure that IEDriver has detected the new window:
 
-- Opening a new window with [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) executed in page script.
+- Opening a new window with [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) ran in page script.
 - Opening a new window with the WebDriver [New Window](https://w3c.github.io/webdriver/#new-window) command.
 
 To ensure the new window has been created successfully and IEDriver has detected it, you must continuously check the result of the [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles) command until it contains a handle to the new window.

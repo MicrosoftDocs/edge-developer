@@ -67,7 +67,7 @@ A basic DevTools extension consists of two files, as shown in [Step 1 code](http
     | description | The description of the extension that will be displayed under the name of the extension. |
     | version | The version of the extension that will appear next to the name of the extension. |
     | manifest_version | Determines the set of features that the extension will be using such as Service workers or Network request modification. The current version is version `3`. To learn more about this version and the differences with version `2`, see [Overview and timelines for migrating to Manifest V3](./manifest-v3.md). |
-    | devtools_page | The path to an HTML file that will be executed every time the DevTools UI is opened. Though the page is not rendered in DevTools, it will be used to load the necessary JavaScript files for the extension. |
+    | devtools_page | The path to an HTML file that will be run every time the DevTools UI is opened. Though the page is not rendered in DevTools, it will be used to load the necessary JavaScript files for the extension. |
 
 1. An html file to match the `devtools_page` field in the manifest file.
 
@@ -220,7 +220,7 @@ The above code snippet does the following:
 
 1. When the panel is displayed (`panel.onShown` listener), the `availableMemoryCapacity` and `totalMemoryCapacity` elements are retrieved from the DOM.
 
-1. Next, a timer is set to execute code every second after the panel is shown.
+1. Next, a timer is set to run code every second after the panel is shown.
 
 1. When the timer fires, the `chrome.system.memory.getInfo` method is used to retrieve the available and total memory capacity of the device and these values are displayed in the corresponding DOM elements.
 
@@ -352,7 +352,7 @@ In this part of the tutorial, you will detect the user clicks on a webpage using
     });
     ```
 
-    When the user clicks the `sayHello` button, the DevTools extension will execute a code snippet of `alert("Hello from the DevTools Extension");` in the inspected window by invoking the `eval()` method of the inspected window `chrome.devtools.inspectedWindow`.
+    When the user clicks the `sayHello` button, the DevTools extension will run a code snippet of `alert("Hello from the DevTools Extension");` in the inspected window by invoking the `eval()` method of the inspected window `chrome.devtools.inspectedWindow`.
 
     When the user clicks anywhere in the inspected window, the DevTools extension will receive a message, from the background service worker, with `request.click == true` and the mouse position information.
 
