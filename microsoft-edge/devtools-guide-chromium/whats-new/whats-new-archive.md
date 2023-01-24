@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/23/2023
 ---
-# What's new in Microsoft Edge DevTools Archives
+# Archived What's New entries
 
 This page is an archive for all of the legacy [What's New in DevTools](whats-new.md) entries published after each release.
 
