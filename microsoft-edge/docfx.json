@@ -9,6 +9,7 @@
         "exclude": [
           "**/obj/**",
           "microsoft-edge/**",
+          "microsoft-edge/webview2/code/**",
           "**/includes/**"
         ]
       }
@@ -32,7 +33,6 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
-      "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/edge-developer",
       "searchScope": ["Microsoft Edge"],

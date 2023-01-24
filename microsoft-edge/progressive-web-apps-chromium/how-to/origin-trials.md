@@ -1,13 +1,12 @@
 ---
 title: Experimental features and origin trials
-description: Learn how to test experimental PWA features in Microsoft Edge and enroll your site in origin trials to use these features in production with your users.
+description: How to test experimental PWA features in Microsoft Edge and enroll your site in origin trials to use these features in production with your users.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Microsoft Edge, experimental, origin trials
+ms.date: 09/15/2021
 ---
 # Experimental features and origin trials
 
@@ -27,7 +26,7 @@ To turn experimental features on or off:
 1.  Navigate to the relevant experiment.
 1.  Select the dropdown menu next to the experiment description and select **Enabled** to turn on the feature or **Disabled** to turn it off.
 
-    :::image type="content" source="../media/turn-on-experimental-flag.png" alt-text="Select Enabled to turn on an experiment." lightbox="../media/turn-on-experimental-flag.png":::
+    ![Select Enabled to turn on an experiment](../media/turn-on-experimental-flag.png)
 
 
 <!-- ====================================================================== -->
@@ -45,9 +44,9 @@ The following list describes experimental web app features that are available to
 
 | Feature | Platform |
 |:--- |:--- |
-| [URI Protocol Handling](./handle-protocols.md) | Windows and Linux |
-| [URL Link Handling](./handle-urls.md) | Windows |
-| [Window Controls Overlay for Desktop Apps](./window-controls-overlay.md) | All |
-| [File Handling](./handle-files.md) | All Desktop |
+| [URI Protocol Handling](handle-protocols.md) | Windows and Linux |
+| [URL Link Handling](handle-urls.md) | Windows |
+| [Window Controls Overlay for Desktop Apps](window-controls-overlay.md) | All |
+| [File Handling](handle-files.md) | All Desktop |
 
 <!-- Links -->

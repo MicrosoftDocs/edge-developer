@@ -1,12 +1,11 @@
 ---
-description: Testing accessibility using Lighthouse from within DevTools.
 title: Test accessibility using Lighthouse
+description: Testing accessibility using Lighthouse from within DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -26,48 +25,43 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 You can use Lighthouse from within DevTools to audit the accessibility of a page and generate a report. You can use the Lighthouse tool to determine:
 
-*   Whether a page is properly marked up for screen readers.
-*   Whether the text elements on a page have sufficient contrast ratios using the Color Picker. For more information, navigate to [Test text-color contrast using the Color Picker](color-picker.md).
+*  Whether a page is properly marked up for screen readers.
 
-> [!NOTE]
-> The **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.
+*  Whether the text elements on a page have sufficient contrast ratios using the Color Picker. See [Test text-color contrast using the Color Picker](color-picker.md).
 
-To audit a page using the Lighthouse tool, perform the following steps.
+The **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.
 
-1.  Navigate to the URL that you want to audit.
-1.  In DevTools, select the **Lighthouse** tool.  Configuration options are displayed.
+To audit a page using the Lighthouse tool:
 
-    :::image type="complex" source="../media/accessibility-lighthouse.msft.png" alt-text="Lighthouse configuration options" lightbox="../media/accessibility-lighthouse.msft.png":::
-       Lighthouse configuration options
-    :::image-end:::
+1. Go to the URL that you want to audit.
 
-1.  For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  This option can affect the audit results.
-1.  In the **Categories** section, select **Accessibility**.
-1.  Select **Generate report**. After 10 to 30 seconds, DevTools displays a report.  The report gives tips on how to improve the accessibility of the page.
+1. In DevTools, select the **Lighthouse** tool.  Configuration options are displayed:
 
-    :::image type="complex" source="../media/accessibility-lighthouse-result.msft.png" alt-text="A Lighthouse report for the Accessibility category" lightbox="../media/accessibility-lighthouse-result.msft.png":::
-       A Lighthouse report for the **Accessibility** category
-    :::image-end:::
+   ![Lighthouse configuration options](../media/accessibility-lighthouse.msft.png)
 
-1.  Select an item in the report to learn more about it.
+1. For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  This option can affect the audit results.
 
-    :::image type="complex" source="../media/accessibility-lighthouse-result-issue-expanded.msft.png" alt-text="An expanded issue in a Lighthouse report" lightbox="../media/accessibility-lighthouse-result-issue-expanded.msft.png":::
-       An expanded issue in a Lighthouse report
-    :::image-end:::
+1. In the **Categories** section, select **Accessibility**.
 
-1.  Select the **Learn more** link to view the documentation of the issue.
+1. Click **Generate report**. After 10 to 30 seconds, DevTools displays a report.  The report gives tips on how to improve the accessibility of the page:
 
-    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="View the documentation of an issue" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
-       View the documentation of an issue
-    :::image-end:::
+   ![A Lighthouse report for the Accessibility category](../media/accessibility-lighthouse-result.msft.png)
 
-1.  To return to the configuration options, in DevTools, select **Perform an audit** (`+`).
+1. Select an item in the report to learn more about it.
+
+   ![An expanded issue in a Lighthouse report](../media/accessibility-lighthouse-result-issue-expanded.msft.png)
+
+1. Click the **Learn more** link to view the documentation of the issue:
+
+   ![View the documentation of an issue](../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png)
+
+1. To return to the configuration options, in DevTools, click **Perform an audit** (`+`).
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/accessibility/reference/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

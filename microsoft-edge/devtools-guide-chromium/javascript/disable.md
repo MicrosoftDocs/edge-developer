@@ -1,12 +1,11 @@
 ---
-description: Open the Command Menu and run the "Disable JavaScript" command.
-title: Disable JavaScript with Microsoft Edge DevTools
+title: Disable JavaScript
+description: To disable JavaScript in DevTools, open the Command Menu and run the "Disable JavaScript" command.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,45 +20,41 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Disable JavaScript with Microsoft Edge DevTools
+# Disable JavaScript
 
-To review how your webpage renders when a browser doesn't have JavaScript support, temporarily turn off JavaScript.
+To see how your webpage renders and behaves when a browser doesn't have JavaScript support, temporarily turn off JavaScript.
 
-Complete the following actions to examine how a webpage displays and behaves when you turn off JavaScript.
+To turn off JavaScript:
 
-1.  [Open Microsoft Edge DevTools](../open/index.md).
-1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="The Command Menu" lightbox="../media/javascript-console-command.msft.png":::
-       The **Command Menu**
-    :::image-end:::
+1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-1.  Start typing `javascript`, choose **Disable JavaScript**, and then select `Enter` to run the command.  JavaScript is now disabled.
+   ![The Command Menu](../media/javascript-console-command.msft.png)
 
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Choose Disable JavaScript in the Command Menu" lightbox="../media/javascript-console-command-javascript.msft.png":::
-       Choose **Disable JavaScript** in the **Command Menu**
-    :::image-end:::
+1. Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.  JavaScript is now disabled.
+
+   ![Select 'Disable JavaScript' in the Command Menu](../media/javascript-console-command-javascript.msft.png)
 
     The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.
 
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="The warning icon next to Sources" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
-       The warning icon next to **Sources**
-    :::image-end:::
+   ![The warning icon next to Sources](../media/javascript-console-javascript-disabled-warning.msft.png)
 
 JavaScript remains disabled in the tab for as long as you have DevTools open.
 
-You may want to refresh the page to review if and how the webpage depends on JavaScript while loading.
+To see whether the page depends on JavaScript while loading, refresh the page.
 
-To re-enable JavaScript, complete the following actions.
+To re-enable JavaScript:
 
-*   Open the **Command Menu** again and run the `Enable JavaScript` command.
-*   Close DevTools.
+1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+
+1. Select the **Enable JavaScript** command.
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/disable/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

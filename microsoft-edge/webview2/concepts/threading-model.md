@@ -1,17 +1,16 @@
 ---
+title: Threading model for WebView2 apps
 description: In the WebView2 threading model, the WebView2 must be created on a UI thread with a message pump.
-title: Threading model for WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.date: 09/21/2021
 ---
-# Threading model for WebView2
+# Threading model for WebView2 apps
 
-Supported platforms: Win32, Windows Forms, WinUi, WPF.
+Supported platforms: Win32, Windows Forms, WinUI, WPF.
 
 The WebView2 control is based on the [Component Object Model (COM)](/windows/win32/com/the-component-object-model) and must run on a [Single Threaded Apartments (STA)](/windows/win32/com/single-threaded-apartments) thread.
 
@@ -23,16 +22,15 @@ The WebView2 must be created on a UI thread that uses a message pump.  All callb
 
 The only exception is for the `Content` property of `CoreWebView2WebResourceRequest`.  The `Content` property stream is read from a background thread.  The stream should be agile or should be created from a background STA, to prevent performance degradation of the UI thread.
 
-> [!NOTE]
-> Object properties are single-threaded.  For example, calling `CoreWebView2CookieManager.GetCookiesAsync(null)` from a thread other than `Main` will succeed (that is, cookies are returned); however, attempting to access the cookies' properties (such as `c.Domain`) after such a call will throw an exception.
+Object properties are single-threaded.  For example, calling `CoreWebView2CookieManager.GetCookiesAsync(null)` from a thread other than `Main` will succeed (that is, cookies are returned); however, attempting to access the cookies' properties (such as `c.Domain`) after such a call will throw an exception.
 
 
 <!-- ====================================================================== -->
 ## Reentrancy
 
-Callbacks, including event handlers and completion handlers, run serially.  After you run an event handler and begin a message loop, an event handler or completion callback cannot be run in a re-entrant manner.  If a WebView2 app tries to create a nested message loop or modal UI synchronously within a WebView event handler, this approach leads to attempted reentrancy.  Such reentrancy isn't supported in WebView2 and would leave the event handler in the stack indefinitely.
+Callbacks, including event handlers and completion handlers, run serially.  After you run an event handler and begin a message loop, an event handler or completion callback cannot be run in a re-entrant manner.  If a WebView2 app tries to create a nested message loop or modal UI synchronously within a WebView2 event handler, this approach leads to attempted reentrancy.  Such reentrancy isn't supported in WebView2 and would leave the event handler in the stack indefinitely.
 
-For example, the following coding approach isn't supported.
+For example, the following coding approach isn't supported:
 
 ```csharp
 private void Btn_Click(object sender, EventArgs e)
@@ -46,13 +44,13 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
    string msg = e.TryGetWebMessageAsString();
    if (msg == "Open Dialog")
    {
-      Form1 form = new Form1(); // Create a new form that contains a new WebView when web message is received.
-      form.ShowDialog(); // This will cause a reentrancy issue and cause the newly created WebView inside the modal dialog to hang.
+      Form1 form = new Form1(); // Create a new form that contains a new WebView2 instance when web message is received.
+      form.ShowDialog(); // This will cause a reentrancy issue and cause the newly created WebView2 control inside the modal dialog to hang.
    }
 }
 ```
 
-Instead, schedule the appropriate work to take place after completion of the event handler, as shown in the following code.
+Instead, schedule the appropriate work to take place after completion of the event handler, as shown in the following code:
 
 ```csharp
 private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessageReceivedEventArgs e)
@@ -71,14 +69,12 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 ```
 
 > [!NOTE]
-> For WinForms and WPF apps, to get the full call stack for debugging purposes, you must turn on native code debugging for WebView2 apps, as follows.
-> 1.  Open your WebView2 project in Visual Studio.
-> 1.  In **Solution Explorer**, right-click the WebView2 project and then select **Properties**.
-> 1.  Select the **Debug** tab, and then select the **Enable native code debugging** checkbox, as shown below.
+> For WinForms and WPF apps, to get the full call stack for debugging purposes, you must turn on native code debugging for WebView2 apps, as follows:
+> 1. Open your WebView2 project in Visual Studio.
+> 1. In **Solution Explorer**, right-click the WebView2 project and then select **Properties**.
+> 1. Select the **Debug** tab, and then select the **Enable native code debugging** checkbox, as shown below.
 
-:::image type="complex" source="../media/webview-enable-native-debug.png" alt-text="Enabling native code debugging in Visual Studio" lightbox="../media/webview-enable-native-debug.png":::
-   Enabling native code debugging in Visual Studio
-:::image-end:::
+![Enabling native code debugging in Visual Studio](../media/webview-enable-native-debug.png)
 
 
 <!-- ====================================================================== -->
@@ -153,7 +149,7 @@ private async void Button_Click(object sender, EventArgs e)
 <!-- ====================================================================== -->
 ## See also
 
-*  [WebView2 Get Started Guides](../index.md#get-started)
-*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
-*  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-*  [See also](../index.md#see-also) - in _Introduction to Microsoft Edge WebView2_.
+* [Get started with WebView2](../get-started/get-started.md)
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+* [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+* [See also](../index.md#see-also) - in _Introduction to Microsoft Edge WebView2_.

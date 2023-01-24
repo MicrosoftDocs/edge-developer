@@ -1,17 +1,22 @@
 ---
-description: Resources for inclusive design tools and best practices.
 title: Designing accessible websites
+description: Resources for inclusive design tools and best practices.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2020
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
-keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
+ms.date: 10/27/2020
 ---
 # Designing accessible websites
 
-Creating an inclusive design makes technology usable by all people no matter their age, education, geographic location, language, or disability.  People using technology and browsing the web have a wide range of abilities and preferences.  As you design your website, keep in mind the following key accessibility scenarios.
+<!-- summary sentence -->
+
+Create a webpage design that's usable by all people, no matter their mouse or keyboard preference, age, education, geographic location, language, or disability.
+
+<!-- /summary sentence -->
+
+People using technology and browsing the web have a wide range of abilities and preferences.  As you design your website, keep in mind the following key accessibility scenarios.
 
 
 <!-- ====================================================================== -->
@@ -29,7 +34,7 @@ Many accessibility users rely on the keyboard to navigate and operate the UI by:
 
 *  Navigating in container elements such as lists, grids, and tree views by using the arrow keys.
 
-*  Invoking actions by pressing the `Enter` key or Spacebar.
+*  Invoking actions by pressing the `Enter` key or `Spacebar`.
 
 *  Using shortcut keys to efficiently access other app functionality.
 
@@ -39,7 +44,7 @@ Many accessibility users rely on the keyboard to navigate and operate the UI by:
 
 Users who have low vision need a sufficient text contrast ratio for text content, and a good visual experience with high contrast themes overall.  Users who are color blind need information to be conveyed in ways other than through color.
 
-Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20) documentation provides techniques and best practices to help you design more accessible dynamic web applications.  For more information, go to [Resources about building accessible websites](./build/index.md).
+Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20) documentation provides techniques and best practices to help you design more accessible dynamic web applications.  For more information, go to [Resources about building accessible websites](build/index.md).
 
 
 <!-- ====================================================================== -->

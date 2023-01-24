@@ -1,12 +1,11 @@
 ---
-description: Enable "Mark content scripts as Library code" from Settings > Framework Library Code.
-title: Mark content scripts as Library code
+title: Add content scripts to the Ignore List
+description: Enable "Add content scripts to ignore list" from Settings > Ignore List.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,17 +20,25 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Mark content scripts as Library code
+# Add content scripts to the Ignore List
 
-When you use the **Sources** tool to [step through code](../index.md#step-4-step-through-the-code), sometimes you pause on code that you don't recognize.  You probably paused on code for one of the Microsoft Edge Extensions that you installed.  To not pause on extension code, complete the following actions.
+When you use the **Sources** tool to step through code, sometimes you pause on code that you don't recognize and don't want to step through, such as code for a Microsoft Edge extension that's installed.
 
-1.  In DevTools, in the upper right, choose the gear icon (**Settings**).  The **Settings** page appears.
-1.  Below **Settings**, choose **Ignore List**.  The **Framework Library Code** section of **Settings** appears.
-1.  Turn on the **Mark content scripts as Library code** checkbox.
+To avoid pausing on extension code:
 
-    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Enable the Mark content scripts as Library code checkbox" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
-       Enable the **Mark content scripts as Library code** checkbox
-    :::image-end:::
+1. In DevTools, in the upper right, click the **Settings** (![Settings icon](../../media/settings-gear-icon-light-theme.png)) button.
+
+1. In the **Settings** > **Ignore List** page, select the **Add content scripts to ignore list** checkbox:
+
+   ![Enabling the 'Add content scripts to ignore list' checkbox](../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png)
+
+1. Click the **Close** DevTools (![Close DevTools icon](../../media/close-devtools-icon-light-theme.png)) button.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Step 4: Step through the code](../index.md#step-4-step-through-the-code) in _Get started debugging JavaScript_
 
 
 <!-- ====================================================================== -->
@@ -39,5 +46,5 @@ When you use the **Sources** tool to [step through code](../index.md#step-4-step
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/ignore-chrome-extension-scripts/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools & Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

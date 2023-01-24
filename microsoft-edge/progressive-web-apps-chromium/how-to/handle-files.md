@@ -1,13 +1,12 @@
 ---
 title: Handle files in Progressive Web Apps
-description: Learn how to register your PWA as a file handler to more deeply integrate it in the operating system.
+description: How to register your PWA as a file handler to more deeply integrate it in the operating system.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, JavaScript, files
+ms.date: 09/01/2021
 ---
 # Handle files in Progressive Web Apps
 
@@ -29,13 +28,13 @@ To enable the File Handling feature:
 1.  Select **Search flags** and type "file handling API".
 1.  Select **Default** > **Enabled** > **Restart**.
 
-    :::image type="content" source="../media/enable-file-handling-experiment.png" alt-text="Enable the 'File Handling API' experiment." lightbox="../media/enable-file-handling-experiment.png":::
+    ![Enable the 'File Handling API' experiment](../media/enable-file-handling-experiment.png)
 
 
 <!-- ====================================================================== -->
 ## Define which files your app handles
 
-The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file](./web-app-manifests.md), using the `file_handlers` array member.
+The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file](web-app-manifests.md), using the `file_handlers` array member.
 
 Each entry in the `file_handlers` array needs to have two properties:
 
@@ -87,13 +86,13 @@ Use the following JavaScript code to process the text content:
 
 ```javascript
 if ('launchQueue' in window) {
-    console.log('File handling API is supported!');
+    console.log('File Handling API is supported!');
 
     launchQueue.setConsumer(launchParams => {
         handleFiles(launchParams.files);
     });
 } else {
-    console.error('File handling API is not supported!');
+    console.error('File Handling API is not supported!');
 }
 
 async function handleFiles(files) {
@@ -122,11 +121,11 @@ My Tracks is a PWA demo app that uses the File Handling feature to handle `.gpx`
 
 Notice that the app launches automatically and that Microsoft Edge requests your permission to handle this file.
 
-:::image type="content" source="../media/my-tracks-allow-file-handling.png" alt-text="The 'Open file?' permission request dialog." lightbox="../media/my-tracks-allow-file-handling.png":::
+![The 'Open file?' permission request dialog](../media/my-tracks-allow-file-handling.png)
 
 If you allow the app to handle the file, a new entry appears in the app's sidebar, and you can click the checkbox next to it to visualize the corresponding GPS track.
 
-:::image type="content" source="../media/my-tracks-new-file.png" alt-text="The new GPS track handled by the My Tracks app." lightbox="../media/my-tracks-new-file.png":::
+![The new GPS track handled by the My Tracks app](../media/my-tracks-new-file.png)
 
 The source code for this app can be accessed on the [My Tracks GitHub repository](https://github.com/captainbrosset/mytracks).
 

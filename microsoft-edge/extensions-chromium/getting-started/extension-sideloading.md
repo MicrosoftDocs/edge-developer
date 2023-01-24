@@ -1,38 +1,54 @@
 ---
-description: Test your extension by sideloading it in the browser
-title: Sideload your extension
+title: Sideload an extension
+description: How to test an extension by sideloading it in the browser.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/24/2020
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, html, css, javascript, developer, extensions
+ms.date: 11/07/2022
 ---
-
 # Sideload an extension
 
-During development, you may use the Microsoft Edge browser to run and debug your extension safely. By sideloading your extension locally in your browser, you can run and test your extension. This article explains how to sideload extensions into Microsoft Edge.
+During development, you can use the Microsoft Edge browser to run and debug your extension safely.  By sideloading your extension locally in your browser, you can run and test your extension.
 
-To sideload your extension, follow these steps.
+To sideload an extension into Microsoft Edge:
 
-1.  Open the `edge://extensions` page by choosing the three dots at the top of your browser, and then selecting **Extensions**.
+1. In Microsoft Edge, select **Settings and more** (...) > **Extensions**.
 
-       :::image type="complex" source="./media/part1-threedots.png" alt-text="Open the edge://extensions page":::
-          Open the edge://extensions page
-       :::image-end:::
+   ![Opening the edge://extensions page](./media/part1-threedots.png)
 
-1.  On the extension management page at `edge://extensions`, turn on **Developer mode** using the toggle at the bottom left of the page.
+   The **Extensions** pop-up box opens.
 
-       :::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="Turn on Developer Mode":::
-          Turn on Developer Mode
-       :::image-end:::
+1. Click **Manage extensions**.  The **Extensions** page (`edge://extensions`) opens in a new tab:
 
-1.  When installing your extension for the first time, choose **Load Unpacked**.  You'll be prompted for the directory with your extension source files.  Your extension is installed in your browser, similar to extensions installed from the store.
+   ![Turning on Developer Mode](./media/part1-developermode-toggle.png)
 
-       :::image type="complex" source="./media/part1-installed-extension.png" alt-text="Installed extensions page showing a sideloaded extension":::
-          Installed extensions page showing a sideloaded extension
-       :::image-end:::
+1. Turn on the **Developer mode** toggle.
 
-During development, you may also need to do the following:
-* Update the extension.  Navigate to `edge://extensions`, and then select **Reload** to update your extension.
-* Remove the extension from your browser.  Navigate to `edge://extensions`, and then select `Remove` on your extension.
+1. When installing your extension for the first time, click the **Load unpacked** button.  The **Select the extension directory** dialog opens.
+
+1. Select the directory that contains your extension source files, and then click the **Select Folder** button.  Your extension is installed in your browser, similar to extensions that are installed from the store:
+
+   ![Installed extensions page, showing a sideloaded extension](./media/part1-installed-extension.png)
+
+
+<!-- ====================================================================== -->
+## Updating an extension
+
+To update a sideloaded extension:
+
+1. Make any required changes to the extension.
+
+1. Go to `edge://extensions`.
+
+1. Click the **Reload** button for the sideloaded extension.  The updated extension is reloaded.
+
+
+<!-- ====================================================================== -->
+## Removing an extension
+
+To remove the extension from your browser:
+
+1. Go to `edge://extensions`.
+
+1. On the extension, click **Remove**.

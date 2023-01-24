@@ -1,16 +1,18 @@
 const glob = require('glob');
 const fs = require('fs').promises;
 const path = require('path');
-const fetch = require('node-fetch');
 
 const FILES_TO_INCLUDE = '../microsoft-edge/**/*.md';
 const FILES_TO_IGNORE = [
+    // What's new/release notes articles are bound to always have version numbers in them. That's ok.
     '../microsoft-edge/devtools-guide-chromium/whats-new/**/*.md',
     '../microsoft-edge/webview2/release-notes.md',
-    '../microsoft-edge/progressive-web-apps-chromium/whats-new/*.md'
+    '../microsoft-edge/progressive-web-apps-chromium/whats-new/*.md',
+    // Experimental features also often have version numbers in them. Let's ignore them too.
+    '../microsoft-edge/devtools-guide-chromium/experimental-features/index.md'
 ];
 // This script attempts to find the current edge release version by looking at this page and finding the first version header occurrence.
-const RELEASE_NOTES_PAGE = 'https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel';
+const RELEASE_NOTES_PAGE = 'https://docs.microsoft.com/deployedge/microsoft-edge-relnote-stable-channel';
 
 // Parenthesis and g flag are important, please add them to all patterns.
 const PATTERNS_TO_LOOK_FOR = [
@@ -18,6 +20,8 @@ const PATTERNS_TO_LOOK_FOR = [
     /Edge ([0-9]{2,3}) /g,
     / ([0-9]{2,3}) or later/g,
 ];
+
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 function getAllSourceFiles() {
     return new Promise(resolve => {

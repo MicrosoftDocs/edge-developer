@@ -1,162 +1,418 @@
 ---
+title: Get started with WebView2 in WinUI 2 (UWP) apps
 description: Get started guide with WebView2 for WinUI 2 apps.
-title: Get started with WebView2 in WinUI 2 apps (public preview)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2021
-ms.topic: tutorial
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET
+ms.date: 07/14/2022
 ---
-# Get started with WebView2 in WinUI 2 apps (public preview)
+# Get started with WebView2 in WinUI 2 (UWP) apps
 
-In this article, get started creating your first WebView2 app in WinUI 2, and learn about the main features of WebView2. For more information about individual WebView2 APIs, navigate to [Microsoft Edge WebView2 API Reference](../webview2-api-reference.md) and then select the WinRT reference links.
+In this tutorial, you:
+*  Set up your development tools for creating UWP apps that use WebView2 to display web content.
+*  Create an initial WinUI 2 (UWP) app.
+*  Install the **Microsoft.UI.Xaml** package (WinUI 2) for the project.
+*  Add a WebView2 control that displays webpage content.
+*  Learn about WebView2 concepts along the way.
 
-> [!NOTE]
-> The WinUI 2 package depends on a prerelease WebView2 package. For full API compatibility, use a preview browser channel as your runtime such as the Beta, Dev, or Canary channel of Microsoft Edge.
+You use the **C# Blank App (Universal Windows)** project template, then install the **Microsoft.UI.Xaml** package (WinUI 2) for this project.  Installing that package installs the **Microsoft.Web.WebView2** package (the WebView2 SDK) as a dependency.
 
-## Step 0 - Prerequisites
+The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  This package provides Windows UI features, including:
+*  UWP XAML controls.
+*  Dense control styles.
+*  Fluent styles and materials.
 
-1.  Install [Microsoft Visual Studio 2019 version 16.9](/visualstudio/releases/2019/release-notes-v16.9) or later. Accept the defaults.
-
-1.  By default, Visual Studio doesn't show line numbers in the code editor. To turn on line numbers, select **Tools** > **Options** > **Text Editor** > **All Languages** > **Line numbers**.  Then select **OK**.
-
-
-## Step 1 - Install workloads
-
-1.  Open Microsoft Visual Studio.
- 
-1.  Click **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens.
-
-1.  On the **Workloads** tab, click **.NET Desktop Development**.
-
-1.  Click **Desktop development with C++**.
-
-1.  Click **Universal Windows Platform development**.
-
-1. On the right, expand **Installation Details** > **Universal Windows Platform development**, and then click **C++ (v142) Universal Windows Platform tools**.
-
-    :::image type="complex" source="media/winui2-getting-started-install-workloads.png" alt-text="The modifying visual studio 2019 dialog box displays cards and installation details." lightbox="media/winui2-getting-started-install-workloads.png":::
-       The modifying visual studio 2019 dialog box displays cards and installation details. Installation details for universal windows platform development  display included and optional items.
-    :::image-end:::
-
-1.  Click **Modify**. Visual Studio installs the selected features.
+WinUI 2 supports UWP only.  These controls are backward-compatible.
 
 
-## Step 2 - Create a UWP app
+<!-- ------------------------------ -->
+#### Completed project
 
-1.  In Visual Studio, click **File** > **New** > **Project**.  Or use the startup screen of Visual Studio, then select **Create a new project**.  The **Create a new project** dialog box displays.
+Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
+<!-- A completed version of this tutorial project is available in the **WebView2Samples** repo:
+*  Sample name: **__**
+*  Repo directory: [__](__)
+*  Solution file: **__.sln**
+-->
 
-1.  On the **All languages** dropdown list, click **C#**.
-
-1.  On the **All platforms** dropdown list, click **Windows**.
-
-1.  On the **All project types** dropdown list, click **UWP**.  As a result of your filter selections, several types of app templates are listed.
-
-1.  In the list of app templates, click **Blank App (Universal Windows)**.
-
-    :::image type="complex" source="media/winui2-getting-started-create-project.png" alt-text="The Create a new project dialog box displays the blank app (universal windows) card." lightbox="media/winui2-getting-started-create-project.png":::
-       The Create a new project dialog box displays. The filter criteria are highlighted in red. The blank app (universal windows) card is highlighted in red.
-    :::image-end:::
-
-1.  Click **Next**.
-
-    The **Configure your new project** dialog displays, for a **Blank App (Universal Windows)**.
-
-1.  In the **Project name** text box, enter a project name such as `UWPSampleProject`.
-
-    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="The Configure your new project dialog box displays text boxes for a Blank App (Universal Windows)." lightbox="media/winui2-getting-started-config-new-project.png":::
-       The Configure your new project dialog box displays text boxes for a Blank App (Universal Windows). Text boxes displayed are project name, location, solution, and solution name.
-    :::image-end:::
-
-1.  Click **Create**.  The **New Universal Windows Platform Project** dialog box displays.
-
-1.  Click **OK**.  The **Settings** window might open, if you haven't done the following couple of steps yet.
-
-1.  In the **Developer Mode** section, click **On**.  The **Use developer features** dialog box opens, to confirm turning on developer mode.
-
-1.  Click **Yes**, then close the **Settings** window.
-
-    Visual studio displays the solution and project.
-
-    :::image type="complex" source="media/new-project-created.msft.png" alt-text="The resulting project" lightbox="media/new-project-created.msft.png":::
-        The resulting project
-    :::image-end:::
-
-## Step 3 - Install the WinUI 2 NuGet package
-
-1.  Right-click the project in Solution Explorer, and then select **Manage NuGet Packages**.
-
-1.  Select the **Browse** tab.
-
-1.  Select the **Include prerelease** check box.
-
-1.  In the **Search** box, enter `Microsoft.UI.Xaml`, and then select **Microsoft.UI.Xaml**.  Make sure that the **Version** is the latest prerelease, and then select **Install**.
-
-    :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="The NuGet package manager" lightbox="media/winui2-nuget-package.msft.png":::
-       The NuGet package manager
-    :::image-end:::
-
-    The **Preview Changes** dialog box displays.
-
-1.  Click **OK**. The WebView2 SDK dependency is installed with WinUI 2.
-
-    <!-- "Microsoft.UI.Xaml" here is equiv to WinUI 2; same team -->
-
-1.  The **License Acceptance** dialog box displays. Click**I Accept**.  The `readme.txt` displays.
-
-<!-- note: install halted after only WinUI 2 component, it didn't seem to install WebView2 even though that was the 2nd item listed.  assume that's ok now on my machine. -->
+Follow the major Step sections in sequence, below.
 
 
-## Step 4 - Instantiate the WebView2 control in XAML code
+<!-- ------------------------------ -->
+#### About WinUI and WebView2
 
-### Add the project reference for the WebView2 control
+In WinUI 2 (UWP) apps, WebView2 is exposed as a XAML control.  After you embed the XAML control in your app as a named control, you can then refer to that XAML control within C# files.
 
-1.  In the `MainPage.xaml` file, in the `<Page>` element, add the following attribute below the other `xmlns:` attributes.
+Only a subset of WebView2 interfaces/functions are exposed in WinUI:
+
+* The `WebView2` XAML object exposes the `CoreWebView2` interface, along with the most important functionality.
+
+* Interfaces such as `CoreWebView2Controller` are hidden, because WinUI takes care of the environment and window creation behind the scenes.
+
+See also [Xbox, HoloLens, and XAML limitations](#xbox-hololens-and-xaml-limitations) below.
+
+
+<!-- ====================================================================== -->
+## Step 1 - Install Visual Studio
+
+Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual Studio 2022 is supported.  Visual Studio 2017 isn't supported.
+<!-- https://learn.microsoft.com/visualstudio/releases/2019/release-notes-v16.9 -->
+
+1. If a suitable version of Microsoft Visual Studio isn't installed already, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that page to do a basic default installation of Visual Studio.
+
+   Then return to this page and continue below.
+
+1. Relevant for Visual Studio 2019: If Visual Studio doesn't show line numbers in the code editor, turn on line numbers.  To do this, select **Tools** > **Options** > **Text Editor** > **All Languages** > **Line numbers**.  Then click **OK**.
+
+
+<!-- ====================================================================== -->
+## Step 2 - Install workloads for .NET desktop, C++ desktop, and UWP development tools
+
+1. Open Microsoft Visual Studio.  The opening option window appears:
+
+   ![Visual Studio 2022 opening option window](media/winui2-vs2022-opening-option-window.png)
+
+1. In the lower right, click **Continue without code**.  Visual Studio opens, empty:
+
+   ![Visual Studio 2022 empty](media/winui2-visual-studio-2022-empty.png)
+
+1. Select **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens, and then the **Modifying - Visual Studio** window opens over it:
+
+   ![The Modifying Visual Studio window, initial state](media/winui2-modifying-vs-window.png)
+
+  If the **Modifying Visual Studio** window isn't open, in the **Visual Studio Installer** window, click the **Modify** button.
+
+1. On the **Workloads** tab, scroll to and click the following cards, to select them; make sure a checkmark is on each of these cards:
+   * **.NET desktop development**
+   * **Desktop development with C++**
+   * **Universal Windows Platform development**
+
+1. On the right, in the **Installation details** section, expand **Universal Windows Platform development**, and then select **C++ (v143) Universal Windows Platform tools** or **C++ (v142) Universal Windows Platform tools**:
+
+   ![The 'Modifying Visual Studio 2019' dialog displays cards and installation details](media/winui2-getting-started-install-workloads.png)
+
+   If all of these components have already been installed, you can click the **Close** button, close the **Visual Studio Installer** window, and skip to the next major section of steps below.
+
+1. Click the **Modify** button.
+
+   A **User Account Control** window appears, asking "Do you want to allow this app to make changes to your device?  Visual Studio Installer.  Verified publisher: Microsoft Corporation.  File origin: Hard drive on this computer.  Show more details (button)".
+
+1. Click the **Yes** button.
+
+1. A dialog box appears, "Before we get started, close Visual Studio":
+
+   ![Dialog box: Before we get started, close Visual Studio](media/winui2-before-we-get-started.png)
+
+1. Click the **Continue** button.
+
+   Visual Studio downloads, verifies, and installs the selected packages:
+
+   ![Visual Studio Installer working](media/winui2-vs-installer-working.png)
+
+   This can take several minutes.  In a new window or tab, you can check out a top-level overview at [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - an initial introduction to WebView2 features at developer.microsoft.com.
+
+   When Visual Studio Installer is finished, return to this page and continue with the steps below.  Visual Studio appears, with an empty **Solution Explorer**.
+
+1. Press `Alt`+`Tab` to switch to the **Visual Studio Installer** window, and then close the **Visual Studio Installer** window.
+
+
+<!-- ====================================================================== -->
+## Step 3 - Create a UWP app
+
+1. If Visual Studio is open, select **File** > **New** > **Project**.  The **Create a new project** dialog box opens.
+
+   Or, if Visual Studio is closed, open it, and then in the startup screen of Visual Studio, click the **Create a new project** card:
+
+   ![The startup screen of Visual Studio: click the 'Create a new project' card](media/winui2-opening-win-create-new-project-card.png)
+
+1. In the **Search for templates** text box at the top, enter **C# Blank App (Universal Windows)**, and then select the **C# Blank App (Universal Windows)** card:
+
+   ![The 'Create a new project' dialog box displays the blank app (Universal Windows) card](media/winui2-getting-started-create-project.png)
+
+1. Click the **Next** button.
+
+   The **Configure your new project** dialog appears, for a **Blank App (Universal Windows)**:
+
+   ![The 'Configure your new project' dialog box displays text boxes for a Blank App (Universal Windows)](media/winui2-getting-started-config-new-project.png)
+
+1. In the **Project name** text box, enter a project name, such as `MyUWPGetStartApp`.
+
+1. In the **Location** text box, enter a path, such as `C:\Users\myusername\Documents\MyWebView2Projects`.
+
+1. Click the **Create** button.
+
+<!-- apparently old ui, doesn't appear in latest vs2022 july 11 2022, apparently got simplified later:
+   The **New Universal Windows Platform Project** dialog box appears:
+
+   ![The 'New Universal Windows Platform Project' dialog box](media/winui2-new-univ-win-plat-project.png)
+ -->
+
+   The **New Windows Project** dialog box appears:
+
+   ![The 'New Windows Project' dialog box](media/winui2-new-windows-project.png)
+
+1. Accept the defaults, and click the **OK** button.
+
+1. If the **Developer Mode** window section appears, in that section, click **On**.  If you haven't already set your machine to Developer Mode, the **Use developer features** dialog box opens, to confirm turning on developer mode.  
+   *  Click **Yes** to turn on Developer Mode for your machine, and then close the **Settings** window.
+
+   Visual Studio displays the newly created solution and project:
+
+   ![Visual Studio, containing the newly created WinUI 2 (UWP) project](media/winui2-vs-after-new-project-created.png)
+
+
+<!-- ====================================================================== -->
+## Step 4 - Build and run the empty project
+
+Before adding WebView2 code, confirm that the project works and see what the empty app looks like, as follows:
+
+1. Build and run the empty project.  To do this, select **Debug** > **Start Debugging** (`F5`).
+
+   ![The empty project before adding WebView2 code](winui2-images/initial-empty-project-running.png)
+
+1. Close the app.
+
+Next, you set up this new WinUI 2 (UWP) project to host the WebView2 control and use the WebView2 API.
+
+
+<!-- ====================================================================== -->
+## Step 5 - Install the WinUI 2 SDK (Microsoft.UI.Xaml)
+
+Next, you install the **Microsoft.UI.Xaml** package for this project.  Microsoft.UI.Xaml is WinUI 2.
+
+1. In Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
+
+   The **NuGet Package Manager** panel opens in Visual Studio.
+
+1. In the **NuGet Package Manager**, click the **Browse** tab.
+
+1. Clear the **Include prerelease** check box.
+
+1. In the **Search** box, enter **Microsoft.UI.Xaml**, and then select the **Microsoft.UI.Xaml** card below the search box:
+
+   ![The NuGet package manager to install Microsoft.UI.Xaml](media/winui2-nuget-package-ui-xaml.png)
+   <!-- TODO: update capture after 2.8 GA, show Microsoft.Web.WebView2 in Dependencies -->
+
+   The above image shows 2.7.1, but these instructions are actually written for 2.8 or later, for General Availability of WebView2 in the Microsoft.UI.Xaml NuGet package.
+   <!-- TODO: remove note after update image -->
+
+   For version 2.8.0 or later, in the **Dependencies** section, **Microsoft.Web.WebView2** might be<!-- TODO: confirm after GA, change to "is" --> listed.
+
+1. On the right, make sure that the **Version** is **Latest stable**, 2.8.0 or later.
+
+1. Click the  **Install** button.
+
+   The **Preview Changes** dialog box appears:
+
+   ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package](media/winui2-preview-changes-ui-xaml-pkg.png)
+   <!-- TODO: update capture after 2.8 GA, show 2.8.0 or later -->
+
+   The above image shows 2.7.1, but these instructions are actually written for 2.8.0 or later, for General Availability of WebView2 in the Microsoft.UI.Xaml NuGet package.
+   <!-- TODO: remove note after update image -->
+
+1. Click the **OK** button.
+
+1. The **License Acceptance** dialog box appears:
+
+   ![The 'License Acceptance' dialog box for installing the Microsoft.UI.Xaml package](media/winui2-license-acceptance-ui-xaml-pkg.png)
+
+1. Click the **I Accept** button.  In Visual Studio, the `readme.txt` file is displayed, saying that you've installed the WinUI package:
+
+   ![The readme.txt file after installing the Microsoft.UI.Xaml package, reports that you installed the WinUI NuGet package](media/winui2-readme-winui-pkg.png)
+
+   The readme lists some lines of code that are similar to what we'll add.
+
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+
+You've now installed the Microsoft.UI.Xaml package, which is WinUI 2, for your project.  The WinUI 2 SDK (Microsoft.UI.Xaml) includes the WebView2 SDK, so you don't need to separately install the NuGet package for WebView2 SDK.
+
+
+<!-- ====================================================================== -->
+## Step 6 - Instantiate the WebView2 control in XAML code
+
+Now you are ready to add WebView2 code to the project.  First, add a namespace reference for the WebView2 control, as follows:
+
+1.  In Solution Explorer, expand your project, and then double-click **MainPage.xaml**.
+
+    `MainPage.xaml` opens in a designer with a code editor below it:
+
+    ![MainPage.xaml code and Designer window](winui2-images/mainpage-designer-initial.png)
+
+1. In the code editor, in the `<Page>` element's open tag `<Page`, add the following attribute, below the other `xmlns:` attributes:
 
     ```xml
-    xmlns:control="using:Microsoft.UI.Xaml.Controls"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     ```
 
-### Add the WebView2 control to the grid
+    Add a WebView2 control to the XAML grid, as follows:
 
-1.  In the `MainPage.xaml` file, in the `<Grid>` element, add the following element:
+1.  In the `MainPage.xaml` file, in the `<Grid>` element (which contains no other elements yet), add the following element:
 
     ```xml
-    <control:WebView2 x:Name="wv2" Source="https://bing.com"/>
+    <controls:WebView2 x:Name="WebView2" Source="https://bing.com"/>
     ```
 
-1.  Save the file. Above the `MainPage.xaml` file in the code editor, a preview of the WebView2 content is displayed.
+1.  Press `Ctrl`+`S` to save the file.
 
-    :::image type="complex" source="media/winui2-getting-started-preview-webview2-content.png" alt-text="Preview of the WebView2 content" lightbox="media/winui2-getting-started-preview-webview2-content.png":::
-       Preview of the WebView2 content
-    :::image-end:::
+    Above the `MainPage.xaml` file in the code editor, a preview of the WebView2 content might be displayed, or it might remain blank (white) until you first build the app:
 
-### Build and test the WebView2 project
+    ![Preview of the WebView2 content](media/winui2-getting-started-preview-webview2-content.png)
 
-1.  Click **Debug** > **Start Debugging**.  The app window opens, briefly showing the WebView2 WebUI grid.
+    The above image shows "control" on two lines; we recommend using the word "controls" on those lines instead.
+    <!-- TODO: update capture after GA -->
 
-    :::image type="complex" source="media/winui2-getting-started-webview2-grid.png" alt-text="The grid displays briefly during debugging." lightbox="media/winui2-getting-started-webview2-grid.png":::
-       The grid displays briefly during debugging.
-    :::image-end:::
+<!--
+1. Resize the preview grid to make it bigger.
+-->
 
-1.  After a moment, the app window shows the Bing website in the WebView2 control for WebUI 2.
 
-    :::image type="complex" source="media/winui2-getting-started-webview2-with-content.png" alt-text="The sample app displays the Bing website." lightbox="media/winui2-getting-started-webview2-with-content.png":::
-       The sample app with WebView2 control displays the Bing website, http://www.bing.com.
-    :::image-end:::
+<!-- ====================================================================== -->
+## Step 7 - Build and run the project containing the WebView2 control
 
-1.  In Visual Studio, click **Debug** > **Stop Debugging** to close the app window.
+1. Click **Debug** > **Start Debugging**.  The app window opens, briefly showing the WebView2 WebUI grid:
+
+   ![During debugging, the WebView2 WebUI grid briefly appears](media/winui2-getting-started-webview2-grid.png)
+
+1. After a moment, the app window shows the Bing website in the WebView2 control for WebUI 2:
+
+   ![The sample app displays the Bing website](media/winui2-getting-started-webview2-with-content.png)
+
+1. In Visual Studio, click **Debug** > **Stop Debugging** to close the app window.
+
+Congratulations, you built your first WebView2 app!
 
 Now you can change the content of the WebView2 control to add your own content.
 
 
+<!--
+maintenance link (keep)
+* [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
+-->
 <!-- ====================================================================== -->
-## Next steps
+## Learn about navigation events
 
-*  [WebView2 development best practices](../concepts/developer-guide.md)
-*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
-*  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
-*  [WebView2 spec](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - detailed information about the WebView2 API.
-*  [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
+Next, learn about navigation events, which are essential for WebView2 apps.  The app initially navigates to `https://bing.com`.
+
+* In a new window or tab, read [Navigation events for WebView2 apps](../concepts/navigation-events.md), and then return to this page.
+
+
+<!-- ====================================================================== -->
+## Special considerations for WebView2 on WinUI 2 (UWP)
+
+The WebView2 WinUI 2 (UWP) control is in development.
+
+
+<!-- ------------------------------ -->
+#### Autofill UI
+
+Autofill UI is not implemented yet for WebView2 for UWP apps.
+
+See also:
+* [Autofill](../concepts/overview-features-apis.md#autofill) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ------------------------------ -->
+#### Print to PDF
+
+Print to PDF requires that the app have access to a writeable location in UWP, such as a local folder.  For a full list of UWP-accessible paths, see [File access permissions](/windows/uwp/files/file-access-permissions).
+
+See also:
+* [Printing](../concepts/overview-features-apis.md#printing) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ------------------------------ -->
+#### Default printing
+
+Default printing is disabled for WebView2 for UWP apps.  However, you can capture and print the current viewport, by calling `CapturePreview`.
+
+See also:
+* [Image capture](../concepts/overview-features-apis.md#image-capture) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ------------------------------ -->
+#### SmartScreen
+
+WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreoverview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
+
+* `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
+
+This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) is initially called.
+
+
+<!-- ------------------------------ -->
+#### Downloading files
+
+There are a couple of known limitations for current downloads behavior for WebView2 in UWP.
+
+###### Save As
+
+Saving files via **Save As** is working and is enabled for WebView2 for UWP apps.  The files will be saved in the folder that the user selects.
+
+###### Which folder the files are downloaded to
+
+If the host doesn't change the `ResultFilePath` of the downloaded file, the downloaded files will be downloaded to a subfolder with the app package's name in the `Downloads` folder.
+
+If the host changes the `ResultFilePath` of the downloaded file, the file will only be downloaded if the app has access to that file path by default.
+
+###### Downloads Hub
+
+Opening files and folders from the Downloads Hub is disabled.  Clicking on the file or folder icon won't open the respective file/folder.
+
+See also:
+* [Downloads](../concepts/overview-features-apis.md#downloads) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ------------------------------ -->
+#### Xbox, HoloLens, and XAML limitations
+
+This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered for future releases.
+
+
+<!-- ------------------------------ -->
+#### Setting DefaultBackgroundColor
+
+On WinUI 2, the `DefaultBackgroundColor` property is not exposed directly.  You can set the default background color by setting an environment variable, as follows:
+
+```csharp
+Environment.SetVariable("WEBVIEW2_DEFAULT_BACKGROUND_COLOR", "FF000000");
+```
+
+See also:
+* .NET: [WebView2.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.winforms.webview2.defaultbackgroundcolor)
+* Win32: [ICoreWebView2Controller2::DefaultBackgroundColor property (get](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
+
+
+<!-- ------------------------------ -->
+#### Setting transparency
+
+On WinUI 2, transparency is achieved by setting the color to `00FFFFFF`.
+
+
+<!-- ------------------------------ -->
+#### API limitations
+
+The following interfaces aren't accessible in WinUI 2:
+
+* `ICoreWebView2Environment`
+* `ICoreWebView2EnvironmentOptions` and `ICoreWebView2EnvironmentOptions2`
+* `ICoreWebView2ControllerOptions`
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [WebView2 API Reference](../webview2-api-reference.md)
+* [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - steps to download, update, build, and run the WinUI 2 WebView2 sample.
+* [Manage user data folders](../concepts/user-data-folder.md)
+* [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
+* [Development best practices for WebView2 apps](../concepts/developer-guide.md)
+* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - articles about building and deploying WebView2 apps.
+
+GitHub:
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
+* [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - the WinUI 2 (UWP) WebView2 sample.
+* [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
+*  Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
+* [Microsoft.UI.Xaml NuGet package](https://www.nuget.org/packages/Microsoft.UI.Xaml/)

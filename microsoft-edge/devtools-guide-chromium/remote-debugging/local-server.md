@@ -1,12 +1,11 @@
 ---
-description: Host a site on a development machine web server, and then access the content from an Android device.
 title: Access local servers
+description: How to host a site on a development machine web server, and then access the content from an Android device.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/11/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,34 +28,39 @@ With a USB cable and Microsoft Edge DevTools, run a site from a development mach
 
 ### Summary
 
-*   Port forwarding enables you to view content hosted by the web server running in your development machine on your Android device.
-*   If your web server is using a custom domain, set up your Android device to access the content at that domain with custom domain mapping.
+*  Port forwarding enables you to view content hosted by the web server running in your development machine on your Android device.
+
+*  If your web server is using a custom domain, set up your Android device to access the content at that domain with custom domain mapping.
 
 
 <!-- ====================================================================== -->
 ## Set up port forwarding
 
-Port forwarding enables your Android device to access content that is being hosted on the web server running in your development machine.  Port forwarding works by creating a listening TCP port on your Android device that maps to a TCP port on your development machine.  Traffic between the ports travel through the USB connection between your Android device and development machine, so the connection does not depend on your network configuration.
+Port forwarding enables your Android device to access content that is being hosted on the web server running in your development machine.  Port forwarding works by creating a listening TCP port on your Android device that maps to a TCP port on your development machine.
+
+Traffic between the ports travel through the USB connection between your Android device and development machine, so the connection doesn't depend on your network configuration.
 
 To enable port forwarding:
 
-1.  Set up [remote debugging](./index.md) between your development machine and your Android device.  When you are finished, your Android device should be displayed in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.
-1.  In the **Inspect Devices** dialog in DevTools, enable **Port forwarding**.
-1.  Choose **Add rule**.
+1. Set up [remote debugging](index.md) between your development machine and your Android device.  When you are finished, your Android device should be displayed in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.
 
-    :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="Adding a port forwarding rule" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
-       Adding a port forwarding rule
-    :::image-end:::
+1. In the **Inspect Devices** dialog in DevTools, enable **Port forwarding**.
 
-1.  In the **Device port** textbox on the left, enter the `localhost` port number from which you want to be able to access the site on your Android device.  For example, if you wanted to access the site from `localhost:5000` enter `5000`.
-1.  In the **Local address** textbox on the right, enter the IP address or hostname on which your site is hosted on the web server running in your development machine, followed by the port number.  For example, if your site is running on `localhost:7331` enter `localhost:7331`.
-1.  Choose **Add**.
+1. Click **Add rule**.
 
-Port forwarding is now set up.  Review the status indicator for the port forward on the tab on your device within the **Inspect Devices** dialog.
+   ![Adding a port forwarding rule](../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png)
 
-:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Port forwarding status" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
-   Port forwarding status
-:::image-end:::
+1. In the **Device port** text box on the left, enter the `localhost` port number from which you want to be able to access the site on your Android device.  For example, if you wanted to access the site from `localhost:5000` enter `5000`.
+
+1. In the **Local address** text box on the right, enter the IP address or hostname on which your site is hosted on the web server running in your development machine, followed by the port number.  For example, if your site is running on `localhost:7331` enter `localhost:7331`.
+
+1. Click **Add**.
+
+Port forwarding is now set up.
+
+You can see the status indicator for the port forward at the top, as well as beside the device name.  The indicator for the port forward is on the tab on your device within the **Inspect Devices** dialog.
+
+![Port forwarding status](../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png)
 
 To view the content, open up Microsoft Edge on your Android device and go to the `localhost` port that you specified in the **Device port** field.  For example, if you entered `5000` in the field, visit `localhost:5000`.
 
@@ -74,29 +78,35 @@ To map a custom domain you must run a proxy server on your development machine. 
 
 To set up port forwarding to a proxy:
 
-1.  Run the proxy server and record the port that it is using.
+1. Run the proxy server and record the port that it is using.
 
-    > [!NOTE]
-    > The proxy server and your web server must run on different ports.
+   > [!NOTE]
+   > The proxy server and your web server must run on different ports.
 
-1.  Set up [port forwarding](#set-up-port-forwarding) to your Android device.  For the **local address** field, enter `localhost:` followed by the port that your proxy server is running on.  For example, if it is running on port `8000`, navigate to `localhost:8000`.  In the **device port** field enter the number that you want your Android device to listen on, such as `3333`.
+1. Set up [port forwarding](#set-up-port-forwarding) to your Android device.  For the **local address** field, enter `localhost:` followed by the port that your proxy server is running on.  For example, if it is running on port `8000`, go to `localhost:8000`.  In the **device port** field enter the number that you want your Android device to listen on, such as `3333`.
 
 ### Configure proxy settings on your device
 
 Next, you need to configure your Android device to communicate with the proxy server.
 
-1.  On your Android device, navigate to **Settings** > **Wi-Fi**.
-1.  Long-press the name of the network to which you are currently connected.
+1. On your Android device, navigate to **Settings** > **Wi-Fi**.
+
+1. Long-press the name of the network to which you are currently connected.
 
     > [!NOTE]
     > Proxy settings apply per network.
 
-1.  Choose **Modify network**.
-1.  Choose **Advanced options**.  The proxy settings display.
-1.  Choose the **Proxy** menu and choose **Manual**.
-1.  For the **Proxy hostname** field, enter `localhost`.
-1.  For the **Proxy port** field, enter the port number that you entered for **device port** in the previous section.
-1.  Choose **Save**.
+1. Click **Modify network**.
+
+1. Click **Advanced options**.  The proxy settings display.
+
+1. Click the **Proxy** menu and then select **Manual**.
+
+1. For the **Proxy hostname** field, enter `localhost`.
+
+1. For the **Proxy port** field, enter the port number that you entered for **device port** in the previous section.
+
+1. Click **Save**.
 
 With these settings, your device forwards all of its requests to the proxy on your development machine.  The proxy makes requests on behalf of your device, so requests to your customized local domain are properly resolved.
 
@@ -111,7 +121,7 @@ If your web server is running off of a non-standard port, remember to specify th
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse) and [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/remote-debugging/local-server/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse) and [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

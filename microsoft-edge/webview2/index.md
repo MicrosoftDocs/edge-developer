@@ -1,150 +1,115 @@
 ---
-description: Host web content in your Win32, .NET, UWP apps with the Microsoft Edge WebView2 control
 title: Introduction to Microsoft Edge WebView2
+description: Host web content in your Win32, .NET, UWP apps with the Microsoft Edge WebView2 control.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
+ms.localizationpriority: high
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, browser control, edge html, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
+ms.date: 11/12/2021
 ---
 # Introduction to Microsoft Edge WebView2
 
-The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses [Microsoft Edge](https://www.microsoftedgeinsider.com) as the rendering engine to display the web content in native apps.  With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView instance.  For information on how to start building a WebView2 app, navigate to [Get Started](#get-started).
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses [Microsoft Edge](https://www.microsoftedgeinsider.com) as the rendering engine to display the web content in native apps.
 
-:::image type="complex" source="./media/WebView2/what-webview.png" alt-text="What is WebView?" lightbox="./media/WebView2/what-webview.png":::
-   What is WebView?
-:::image-end:::
+With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
+
+![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](media/webview2/what-webview.png)
+
+To start building a WebView2 app, see [Get started with WebView2](get-started/get-started.md).
 
 
 <!-- ====================================================================== -->
 ## Hybrid app approach
 
-Developers must often decide between building a web app or a native app.  This decision hinges on the tradeoff between reach and power.
+Developers must often decide between building a web app or a native app.  This decision hinges on the tradeoff between reach and power:
+
 *  Web apps allow for a broad reach.  As a Web developer, you can reuse most of your code across different platforms.
-*  To access all the capabilities of a native platform, use a native app.
 
-:::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web native" lightbox="./media/WebView2/web-native.png":::
-   Web native
-:::image-end:::
+*  To access all the powerful capabilities of a native platform, use a native app.
 
-Hybrid apps allow developers to enjoy the best of both worlds: the ubiquity and strength of the web platform, combined with the power and full capabilities of the native platform.
+The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
+
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](media/webview2/web-native.png)
+
+*  Wide **reach** includes websites and Progressive Web Apps.
+
+*  In the middle are hybrid apps, such as WebViews and Electron.
+
+*  Maximum **power** is native apps.
+
+Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both worlds: the ubiquity and strength of the web platform, combined with the power and full capabilities of the native platform.
 
 
 <!-- ====================================================================== -->
 ## WebView2 benefits
 
-<!--
-In the below table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated.
-Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps-chromium\index.md#characteristics-of-a-pwa)
--->
+*  **Web ecosystem and skill set**.  Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.
 
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-web-ecosystem-skillset-small.msft.png":::  
-        **Web ecosystem & skillset**  
-        Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-rapid-innovation-small.msft.png":::  
-        **Rapid innovation**  
-        Web development allows for faster deployment and iteration.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support-small.msft.png":::  
-        **Windows 7, 8, and 10 support**  
-        Support for a consistent user experience across Windows 7, Windows 8, and Windows 10.
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-native-capabilities-small.msft.png":::  
-        **Native capabilities**  
-        Access the full set of Native APIs.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-code-sharing-small.msft.png":::  
-        **Code-sharing**  
-        Add web code to your codebase allows for increased reuse across multiple platforms.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-microsoft-support-small.msft.png":::  
-        **Microsoft support**  
-        Microsoft provides support and adds new feature requests when WebView2 releases at Generally Availability (GA).
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-evergreen-small.msft.png":::  
-        **Evergreen distribution**  
-        Rely on an up-to-date version of Chromium with regular platform updates and security patches.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-fixed-small.msft.png":::  
-        **Fixed Version distribution**  
-        Optionally package a specific version of the Chromium bits in your app.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-incremental-adoption-small.msft.png":::  
-        **Incremental adoption**  
-        Add web components piece-by-piece to your app.
-    :::column-end:::
-:::row-end:::
+*  **Rapid innovation**.  Web development allows for faster deployment and iteration.
 
-<!-- In the above table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated. -->
+*  **Windows 10 and 11 support**.  Support for a consistent user experience across Windows 10 and Windows 11.
 
+*  **Native capabilities**.  Access the full set of Native APIs.
 
-<!-- ====================================================================== -->
-## Get started
+*  **Code-sharing**.  Add web code to your codebase allows for increased reuse across multiple platforms.
 
-To build and test your app using the WebView2 control, you need to have <!--both Microsoft Edge and -->the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) installed.  Select one of the following options to get started.
+*  **Microsoft support**.  Microsoft provides support and adds new feature requests on supported platforms.
 
-*   [Get started with WebView2 in Win32 apps](./get-started/win32.md)
-*   [Get started with WebView2 in WPF apps](./get-started/wpf.md)
-*   [Get started with WebView2 in WinForms apps](./get-started/winforms.md)
-*   [Get started with WebView2 in WinUI 2 apps (Preview)](./get-started/winui2.md)
-*   [Get started with WebView2 in WinUI 3 apps (Preview)](./get-started/winui.md)
+*  **Evergreen distribution**.  Rely on an up-to-date version of Chromium with regular platform updates and security patches.
 
-The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repository contains samples that demonstrate all of the WebView2 SDK features and API usage patterns.  As more features are added to the WebView2 SDK, the sample apps will be updated.
+*  **Fixed Version distribution**.  Optionally package a specific version of the Chromium bits in your app.
+
+*  **Incremental adoption**.  Add web components piece-by-piece to your app.
 
 
 <!-- ====================================================================== -->
 ## Supported platforms
 
-A General Availability (GA) or Preview version of WebView2 is available for the following programming environments.
+The following programming environments are supported:
 
-*   Win32 C/C++ (GA)
-*   .NET Framework 4.5 or later
-*   .NET Core 3.1 or later
-*   .NET 5
-*   .NET 6 (Preview)
-*   [WinUI 3.0](/uwp/toolkits/winui3/index)
+*  Win32 C/C++
+*  .NET Framework 4.5 or later
+*  .NET Core 3.1 or later
+*  .NET 5
+*  .NET 6
+*  [WinUI 2.0](/windows/apps/winui/winui2/)
+*  [WinUI 3.0](/windows/apps/winui/winui3/)
 
-WebView2 apps can run on the following versions of Windows.
+WebView2 apps can run on the following versions of Windows:
 
-*   Windows 10
-*   Windows 10 IoT Enterprise LTSC x32 2019
-*   Windows 10 IoT Enterprise LTSC x64 2019
-*   Windows 10 IoT Enterprise 21h1 x64
-*   Windows 8.1
-*   Windows 7 \*\*
-*   Windows Server 2019
-*   Windows Server 2016
-*   Windows Server 2012
-*   Windows Server 2012 R2
-*   Windows Server 2008 R2 \*\*
+*  Windows 11
+*  Windows 10
+*  Windows 10 IoT Enterprise LTSC x32 2019
+*  Windows 10 IoT Enterprise LTSC x64 2019
+*  Windows 10 IoT Enterprise 21h1 x64
+*  Windows Server 2022
+*  Windows Server 2019
+*  Windows Server 2016
 
-> [!IMPORTANT]
-> \*\* WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.  For more information, navigate to [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems).
+
+#### Windows 7 and 8
+
+WebView2 Runtime version 109 is the final version that supports the following versions of Windows.  WebView2 Runtime and SDK version 110.0.1519.0 and higher don't support these operating systems.
+
+*  Windows 8/8.1
+*  Windows 7
+*  Windows Server 2012 R2
+*  Windows Server 2012
+*  Windows Server 2008 R2
+
+See also:
+* [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems) - WebView2 support for Windows 7 and Windows Server 2008 R2 have the same support timeline as Microsoft Edge.
+* [Microsoft Edge and WebView2 ending support for Windows 7 and Windows 8/8.1](https://blogs.windows.com/msedgedev/2022/12/09/microsoft-edge-and-webview2-ending-support-for-windows-7-and-windows-8-8-1/)
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Understand WebView2 SDK versions](./concepts/versioning.md)
-*  [Distribute a WebView2 app and the WebView2 Runtime](./concepts/distribution.md)
-*  [Best practices for developing secure WebView2 apps](./concepts/security.md)
-*  [Manage User Data Folder in WebView2 apps](./concepts/user-data-folder.md)
-*  [How to Debug with WebView2](./how-to/debug.md)
-*  [Automating and testing WebView2 with Microsoft Edge Driver](./how-to/webdriver.md)
+* [Overview of WebView2 features and APIs](concepts/overview-features-apis.md)
+* [Getting Started tutorials](get-started/get-started.md)
+* [Distribute your app and the WebView2 Runtime](concepts/distribution.md)
+
+developer.microsoft.com:
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.

@@ -1,12 +1,11 @@
 ---
-description: You can debug Microsoft Edge from Visual Studio Code using the built in debugger
 title: Debug Microsoft Edge in Visual Studio Code
+description: You can debug Microsoft Edge from Visual Studio Code using the built-in debugger.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/10/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger
+ms.date: 11/10/2021
 ---
 # Debug Microsoft Edge in Visual Studio Code
 
