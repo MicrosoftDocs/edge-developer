@@ -1225,6 +1225,10 @@
                   href: webview2/how-to/winrt-from-js.md
                   displayName: AddHostObjectToScript, host objects
 
+                - name: How WinRT types and members are represented in JavaScript
+                  href: webview2/how-to/winrt-js-conversion.md
+                  displayName: 
+
             - name: Using frames
               href: webview2/concepts/frames.md
               displayName: Using frames in WebView2 apps, iframe # full title
@@ -1437,9 +1441,9 @@
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
-    - name: Web platform
+    - name: Development tips for Microsoft Edge
       items:
-        - name: Web platform overview # new firstchild article
+        - name: Development tips for Microsoft Edge
           href: web-platform/web-platform.md
           displayName: 
 
