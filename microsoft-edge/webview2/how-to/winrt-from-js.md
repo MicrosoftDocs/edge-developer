@@ -123,7 +123,7 @@ Let's get started!
 
    ![Adding a new project for the wv2winrt tool](winrt-from-js-images/add-new-project-for-tool.png)
 
-1. In Visual Studio, select **Debug** > **Start Debugging**.  This builds the **webview2_sample_uwp** or **WebView2WinAppSDKSample** project, and then runs the baseline version of the project.  The **WebView2 WinUI 2 UWP Sample** window opens:
+1. In Visual Studio, select **Debug** > **Start Debugging**.  This builds the **webview2_sample_uwp** project, and then runs the baseline version of the project.  The **WebView2 WinUI 2 UWP Sample** window opens:
 
    ![The WebView2 WinUI 2 UWP Sample window](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
 
@@ -191,7 +191,9 @@ Next, create a **WinRTAdapter** project for the **wv2winrt** tool (the WebView2 
 
 Add a project for the wv2winrt tool, as follows:
 
-1. Right-click the **webview2_sample_uwp** solution (not the project), and then select **Add** > **New project**.  The **Add a new project** dialog box opens.
+1. If you're targeting WinUI 2 (UWP): In Solution Explorer, right-click the **webview2_sample_uwp** solution (not the project), and then select **Add** > **New project**.  The **Add a new project** dialog box opens.
+
+   If you're targeting WinUI 3 (Windows App SDK): In Solution Explorer, right-click the solution (not the project), such as **WinUI3WinRTWebView2**, and then select **Add** > **New project**.  The **Add a new project** dialog box opens.
 
 1. In the **Search** textbox, enter **Windows Runtime Component (C++/WinRT)**.
 
@@ -209,15 +211,29 @@ Add a project for the wv2winrt tool, as follows:
 
    ![In the 'Configure your new project' window, name the project 'WinRTAdapter'](winrt-from-js-images/config-proj-name-winrtadapter.png)
 
-1. Click the **Create** button.  The **New Universal Windows Platform Project** dialog opens:
+1. Click the **Create** button.
+
+   If you're targeting WinUI 2 (UWP), the **New Universal Windows Platform Project** dialog opens:
 
    ![The 'New UWP project' dialog](winrt-from-js-images/new-uwpp.png)
+
+   If you're targeting WinUI 3 (Windows App SDK), the **New Windows Project** dialog opens:
+
+   ![The 'New Windows project' dialog](winrt-from-js-images/new-windows-project-dialog.png)
 
 1. Click the **OK** button.
 
    The **WinRTAdapter** project is created:
 
-   ![The newly created WinRTAdapter project](winrt-from-js-images/fresh-winrtadapter-project.png)
+   WinUI 2 (UWP) solution:
+
+   ![The newly created WinRTAdapter project (if a WinUI 2 solution)](winrt-from-js-images/fresh-winrtadapter-project.png)
+
+   WinUI 3 (Windows App SDK) solution:
+
+   ![The newly created WinRTAdapter project (if a WinUI 3 solution)](winrt-from-js-images/fresh-winrtadapter-project-winui3.png)
+
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
 The wv2winrt tool (the WebView2 WinRT JS Projection tool) will run in this **WinRTAdapter** project.  In a below step, you'll generate code for selected classes in this project.
 
@@ -229,11 +245,21 @@ In the WinRTAdapter project, install the Windows Implementation Library (WIL), a
 
 1. In **Solution Explorer**, right-click the **WinRTAdapter** project, and then select **Manage NuGet Packages**.  The **NuGet Package Manager** window opens in Visual Studio.
 
+1. In the **NuGet Package Manager** window, click the **Browse** tab.
+
 1. In the **NuGet Package Manager** window, in the **Search** box, enter **Windows Implementation Library**, and then select the **Windows Implementation Library** card:
+
+   WinUI 2 (UWP) solution:
 
    ![NuGet Package Manager, selecting the 'Windows Implementation Library' package](winrt-from-js-images/pkg-mgr-wil.png)
 
+   WinUI 3 (Windows App SDK) solution:
+
+   ![NuGet Package Manager, selecting the 'Windows Implementation Library' package (WinUI 3 solution)](winrt-from-js-images/pkg-mgr-wil-winui3.png)
+
 1. Click the **Install** button.
+
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
 WIL is now installed for the **WinRTAdapter** project.  Windows Implementation Library (WIL) is a header-only C++ library to make using COM coding for Windows easier.  It provides readable, type-safe C++ interfaces for Windows COM coding patterns.
 
@@ -241,9 +267,12 @@ WIL is now installed for the **WinRTAdapter** project.  Windows Implementation L
 <!-- =============================================== -->
 ## Step 4: Install WebView2 prerelease SDK, for WinRTAdapter project
 
+
 In the WinRTAdapter project, also install a prerelease version of the WebView2 SDK, as follows:
 
 1. In Solution Explorer, right-click the **WinRTAdapter** project, and then select **Manage NuGet Packages**.  The NuGet Package Manager window opens.
+
+1. In the **NuGet Package Manager** window, click the **Browse** tab.
 
 1. Select the **Include prerelease** checkbox.
 
@@ -251,11 +280,19 @@ In the WinRTAdapter project, also install a prerelease version of the WebView2 S
 
 1. Click the **Microsoft.Web.WebView2** card.  Detailed info appears in the middle area of the window.
 
-1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK.  The version must be 1.0.1243.0 or higher.  Note which version number you select.
+1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  The version must be 1.0.1243.0 or higher.  Note which version number you select.
 
 1. Click the **Install** button:
 
+   WinUI 2 (UWP) solution:
+
    ![NuGet Package Manager, selecting the WebView2 SDK package, for the WinRTAdapter project](winrt-from-js-images/pkg-mgr-wv2-sdk.png)
+
+   WinUI 3 (Windows App SDK) solution:
+
+   ![NuGet Package Manager, selecting the WebView2 SDK package, for the WinRTAdapter project (WinUI 3)](winrt-from-js-images/pkg-mgr-wv2-sdk-winui3.png)
+
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
 The WebView2 prerelease SDK is now installed for the **WinRTAdapter** project.
 
@@ -263,7 +300,7 @@ The WebView2 prerelease SDK is now installed for the **WinRTAdapter** project.
 <!-- =============================================== -->
 ## Step 5: Install WebView2 prerelease SDK, for webview2_sample_uwp project
 
-If your app targets WinUI 3, skip this Step 5 section.  WinUI 3 bundles the WebView2 SDK, so there isn't a need to download the WebView2 SDK separately.  (Also, WinUI 3 doesn't support prerelease WebView2 SDKs.)
+If your app targets WinUI 3, skip this section and proceed to the next section, [Generate source code for selected host APIs](#step-6-generate-source-code-for-selected-host-apis).  WinUI 3 bundles the WebView2 SDK, so there isn't a need to download the WebView2 SDK separately.  (Also, WinUI 3 doesn't support prerelease WebView2 SDKs.)
 
 In the **webview2_sample_uwp** project, install the same prerelease version of the WebView2 SDK as you installed for the **WinRTAdapter** project, as follows:
 
@@ -280,6 +317,8 @@ In the **webview2_sample_uwp** project, install the same prerelease version of t
 1. Click the **Install** button.
 
    The screen should look similar to the above section, except that now, **NuGet Package Manager** is open for the **webview2_sample_uwp** project instead of the **WinRTAdapter** project.
+
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
 The WebView2 prerelease SDK is now installed for the **webview2_sample_uwp** project.
 
@@ -299,7 +338,7 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
 
 1. In Solution Explorer, right-click the **WinRTAdapter** project, and then select **Properties**.  The **WinRTAdapter Property Pages** dialog opens.
 
-1. On the left, select **Common Properties** > **WebView2**.
+1. On the left, expand and select **Common Properties** > **WebView2**.
 
 1. Set **Use WebView2 WinRT APIs** to **No**.  This is so the WebView2 SDK doesn't copy the WebView2 WinRT component to the project's output.  This WinRTAdapter project isn't calling any WebView2 WinRT APIs, so it doesn't need the WinRT component.
 
@@ -307,11 +346,9 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
 
 1. Set **Use JavaScript case** to **Yes**.
 
-1. In the **Include filters** row, click the right-hand column, and then click **Edit**.  The **Include filters** dialog opens.
+1. In the **Include filters** row, click the drop-down menu in the right-hand column, and then click **Edit**.  The **Include filters** dialog opens.
 
-   <!-- true? In the same text box, below the previous value you entered, you'll also add a reference for the tool itself, such as params: **Windows.Globalization.Language**. -->
-
-1. In the topmost text box, paste the following lines:
+1. In the topmost text box, paste the following strings on separate lines, without leading or trailing whitespace:
 
    ```
    Windows.System.UserProfile
@@ -331,103 +368,209 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
 
 1. Click the **OK** button to close the **Property Pages** dialog box.
 
-   **Add a reference:**
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
-   In the **webview2_uwp_sample** project, add a reference that points to the **WinRTAdapter** project, as follows:
 
-1. In Solution Explorer, expand the **webview2_uwp_sample** project, right-click **References**, and then select **Add Reference**.  The **Reference Manager** dialog opens.
+<!-- ------------------------------ -->
+#### Adding a reference
+
+Next, add a reference in the main project, pointing to the adapter project.  In the **webview2_uwp_sample** project (if WinUI 2) or the non-Adapter main project such as **WinUI3WinRTWebView2** (if WinUI 3), add a reference that points to the **WinRTAdapter** project, as follows.
+
+1. If WinUI 2 (UWP): In Solution Explorer, expand the **webview2_uwp_sample** project (if WinUI 2), right-click **References**, and then select **Add Reference**.  The **Reference Manager** dialog opens.
+
+   If WinUI 3 (Windows App SDK): In Solution Explorer, select the non-Adapter main project, such as **WinUI3WinRTWebView2**.  Then select **Project** > **Add Project Reference**.  The **Reference Manager** dialog opens.
 
 1. In the tree on the left, select **Projects**.  Select the **WinRTAdapter** checkbox:
 
+   WinUI 2 (UWP) solution:
+
    ![Adding a reference: The WinRTAdapter checkbox in the Reference Manager dialog for the webview2_uwp_sample project](winrt-from-js-images/winrtadapter-checkbox-ref-mgr-uwp-proj.png)
+
+   WinUI 3 (Windows App SDK) solution:
+
+   ![Adding a reference: The WinRTAdapter checkbox in the Reference Manager dialog for the WinUI3WinRTWebView2 project](winrt-from-js-images/winrtadapter-checkbox-ref-mgr-winui3-proj.png)
 
 1. Click the **OK** button to close the **Reference Manager** dialog.
 
-   **Generate the API code:**
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+
+<!--  winui 3:
+Warning	MSB3851	This project targets "Windows, Version=10.0.19041.0", but it is attempting to reference "C:\Users\collabera\Documents\WinUI3WinRTWebView2\x64\Debug\WinRTAdapter\WinRTAdapter.winmd" targeting "UAP,Version=10.0.22000.0", which is invalid.	WinUI3WinRTWebView2	C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets	2677	
+
+The next step, building Adapter, worked nevertheless.
+-->
+
+
+<!-- ------------------------------ -->
+#### Generate the API code
+
+Next, generate the API code:
 
 1. Right-click the **WinRTAdapter** project, and then select **Build**.
 
-Source code is generated for namespaces or classes that you specified in the **Include filters** dialog.  That dialog populates the **Include filters** row of the **WinRTAdapter Property Pages** dialog for the **WinRTAdapter** project.
+   Source code is generated for namespaces or classes that you specified in the **Include filters** dialog.  That dialog populates the **Include filters** row of the **WinRTAdapter Property Pages** dialog for the **WinRTAdapter** project.
 
-> [!IMPORTANT]
-> If you installed a release version of the WebView2 SDK and your build fails with `error MIDL2011: [msg]unresolved type declaration [context]: Microsoft.Web.WebView2.Core.ICoreWebView2DispatchAdapter [ RuntimeClass 'WinRTAdapter.DispatchAdapter'  ]`, this is an issue in the release version of the WebView2 SDK and you will need to change **Use WebView2 WinRT APIs** to **Yes** in the steps above.
->
-> Alternatively, add the following after the last `</ItemGroup>` in the project file `WinRTAdapter.vcxproj`:
->
->```xml
-><ItemGroup Condition="'$(WebView2UseDispatchAdapter)' == 'true'">
->  <Reference Include="$(WebView2SDKPath)lib\Microsoft.Web.WebView2.Core.winmd">
->    <!-- wv2winrt needs Dispatch Adapter metadata to generate code -->
->  </Reference>
-></ItemGroup>
->```
->
-> Replace `$(WebView2SDKPath)` with the directory where the WebView2 SDK was installed, with a `\` at the end. For example: `..\webview2_sample_uwp\packages\Microsoft.Web.WebView2.1.0.1264.42\`.
+   <!-- the next issue didn't occur in WinUI 3 solution: -->
+
+   > [!IMPORTANT]
+   > If you installed a release version of the WebView2 SDK and your build fails with `error MIDL2011: [msg]unresolved type declaration [context]: Microsoft.Web.WebView2.Core.ICoreWebView2DispatchAdapter [ RuntimeClass 'WinRTAdapter.DispatchAdapter'  ]`, this is an issue in the release version of the WebView2 SDK and you will need to change **Use WebView2 WinRT APIs** to **Yes** in the steps above.
+   >
+   > Alternatively, add the following after the last `</ItemGroup>` in the project file `WinRTAdapter.vcxproj`:
+   >
+   >```xml
+   ><ItemGroup Condition="'$(WebView2UseDispatchAdapter)' == 'true'">
+   >  <Reference Include="$(WebView2SDKPath)lib\Microsoft.Web.WebView2.Core.winmd">
+   >    <!-- wv2winrt needs Dispatch Adapter metadata to generate code -->
+   >  </Reference>
+   ></ItemGroup>
+   >```
+   >
+   > Replace `$(WebView2SDKPath)` with the directory where the WebView2 SDK was installed, with a `\` at the end. For example: `..\webview2_sample_uwp\packages\Microsoft.Web.WebView2.1.0.1264.42\`.
+
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
 
 <!-- ====================================================================== -->
 ## Step 7 (WinUI 3 only): Update Target Framework
 
-If your app is for WinUI 2 (UWP), skip this section; skip to the next major Step section.
+If your app is for WinUI 2 (UWP), skip this section; skip to the next major Step section, [Add the host object in the webview2_sample_uwp project](#step-8-add-the-host-object-in-the-webview2_sample_uwp-project).
 
-If your app is for WinUI 3, do the steps in this section.
+If your app is for WinUI 3 (Windows App SDK), do the steps in the present section.
+
+<!--  winui 3 in previous step displayed:
+Warning	MSB3851	This project targets "Windows, Version=10.0.19041.0", but it is attempting to reference "C:\Users\collabera\Documents\WinUI3WinRTWebView2\x64\Debug\WinRTAdapter\WinRTAdapter.winmd" targeting "UAP,Version=10.0.22000.0", which is invalid.	WinUI3WinRTWebView2	C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets	2677
+
+Which version is Adapter project in WinUI 2 solution targeting?
+-->
+
+<!--targets 
+"Windows, Version=10.0.19041.0"
+, but it is attempting to reference 
+"C:\Users\collabera\Documents\WinUI3WinRTWebView2\x64\Debug\WinRTAdapter\WinRTAdapter.winmd"
+targeting 
+"UAP,Version=10.0.22000.0"
+
+which is invalid.	
+WinUI3WinRTWebView2	
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets	2677
+-->
 
 
+<!-- ------------------------------ -->
 #### Update the OS target
 
-1.  Update `TargetFramework`, as follows.
+If your app is for WinUI 3 (Windows App SDK), do the steps in the present section.
 
-    You might get the following error: "WinRTAdapter.winmd cannot be referenced.  Referencing a Windows Metadata NETSDK1component directly when targeting .NET 5 or higher is not supported."
+1. Update or inspect `TargetFramework`, as follows.
 
-    ![Warning message: WinRTAdapter.winmd cannot be referenced](./winrt-from-js-images/warning-first.png)
+   You might get the following error: "WinRTAdapter.winmd cannot be referenced.  Referencing a Windows Metadata NETSDK1component directly when targeting .NET 5 or higher is not supported."
 
-1.  To fix that warning: In Solution Explorer, below the files, right-click, and then select **Open Folder in File Explorer**.
+   ![Warning message: WinRTAdapter.winmd cannot be referenced](./winrt-from-js-images/warning-first.png)
 
-1.  Open the `.csproj` file, such as `WinUI3WinRTWebView2.csproj`.
+   Fix that warning or inspect the value as follows:
 
-1.  If Visual Studio doesn't show line numbers in the code editor, turn on line numbers.  To do this, select **Tools** > **Options** > **Text Editor** > **All Languages** > **Line numbers**.  Then click **OK**.
+1. In Visual Studio, select **File** > **Open** > **File**.  The **Open File** dialog opens. 
 
-1.  In the `.csproj` file, update the `<TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>` to be the same as the WinRT Adapter version.
+1. Open the `.csproj` file, such as `WinUI3WinRTWebView2.csproj`.
+
+1. If Visual Studio doesn't show line numbers in the code editor, optionally turn on line numbers.  To do this, select **Tools** > **Options** > **Text Editor** > **All Languages** > **Line numbers**.  Then click **OK**.
+
+1. In the `.csproj` file, update the `<TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>` to be the same as the WinRT Adapter version.<!--todo: how do you determine what version WinRT Adapter targets?  r-clk Adapter project > Retarget Projects shows Windows SDK version 10.0 (latest installed version), Windows SDK Min Version = 10.0.22621.0 -->
+
+   For example, change the line from: 
+
+   ```xml
+   <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+   ```
+
+   to:
+
+   ```xml
+   <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
+   ```
+   <!-- todo: is 22000 correct, for WinUI 3? -->
+
+   <!-- todo: how to retrieve version # other than from previous step's error message? -->
+
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+
+The OS target is now updated.
 
 
+<!-- ------------------------------ -->
 #### Add CsWinRT and WinRTAdapter in the project file
 
-1.  If the project file isn't already open, in Solution Explorer, below the files, right-click, and then select **Open Folder in File Explorer**.
+If your app is for WinUI 3 (Windows App SDK), do the steps in the present section.
 
-1.  Open the `.csproj` file, such as `WinUI3WinRTWebView2.csproj`.
+Next, add the CsWinRT and WinRTAdapter packages in the project file:
 
-1.  Add the following Package reference within the item group:
+1. In Visual Studio, select **File** > **Open** > **File**.  The **Open File** dialog opens. 
 
-    ```xml
-    <ItemGroup>
-        <PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.6.4"/>
-    ```
+1. Open the `.csproj` file, such as `WinUI3WinRTWebView2.csproj`.
 
-1.  Add the following property group reference:
+1. Add the following `<PackageReference>` element within the `<ItemGroup>` element that already contains some `<PackageReference>` elements:
 
-    ```xml
-    <PropertyGroup>
-        <CsWinRTIncludes>WinRTAdapter</CsWinRTIncludes>
-    </PropertyGroup> 
-    ```
+   ```xml
+   <ItemGroup>
+       <PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.6.4"/>
+   ```
 
-    You might get a warning like: "MSB3851 This project targets "Windows, Version=10.0.19041.0", but it is attempting to reference "winmd... targeting "UAP,Version=10.0.22000.0" which is invalid."
+1. In the `<PropertyGroup>` element, add the following property group reference:
 
-    ![Warning about attempting to reference winmd UAP](./winrt-from-js-images/warning-second.png)
+   ```xml
+   <PropertyGroup>
+       <CsWinRTIncludes>WinRTAdapter</CsWinRTIncludes>
+   </PropertyGroup> 
+   ```
 
-1.  To fix that error, install [Single-project MSIX Packaging Tools for VS 2022](https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftSingleProjectMSIXPackagingToolsDev17).  Without these packaging tools, the project will build but not run.
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
-1.  If your app is non-packaged app, you must also do the steps in [Enhancing Non-packaged Desktop Apps using Windows Runtime Components](https://blogs.windows.com/windowsdeveloper/2019/04/30/enhancing-non-packaged-desktop-apps-using-windows-runtime-components/).
+   You might get a warning like: "MSB3851 This project targets "Windows, Version=10.0.19041.0", but it is attempting to reference "winmd... targeting "UAP,Version=10.0.22000.0" which is invalid."
+   <!-- todo: When?  What triggers the display of this warning? got it about two major steps above (seemed non-blocking then) -->
+
+   ![Warning about attempting to reference winmd UAP](./winrt-from-js-images/warning-second.png)
+
+1. To fix that error, install [Single-project MSIX Packaging Tools for VS 2022](https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftSingleProjectMSIXPackagingToolsDev17).  Without these packaging tools, the project will build but not run.
+
+1. If your app is non-packaged app, you must also do the steps in [Enhancing Non-packaged Desktop Apps using Windows Runtime Components](https://blogs.windows.com/windowsdeveloper/2019/04/30/enhancing-non-packaged-desktop-apps-using-windows-runtime-components/).
+
+<!-- todo: isn't this the right time to build? -->
+
+1. In Solution Explorer, right-click the non-Adapter project, and then select **Build**.
+
+<!-- success:
+1>------ Build started: Project: WinUI3WinRTWebView2, Configuration: Debug x64 ------
+1>Saved patched .dll to C:\Users\collabera\Documents\WinUI3WinRTWebView2\WinUI3WinRTWebView2\obj\x64\Debug\net6.0-windows10.0.22000.0\win10-x64\IIDOptimizer\
+1>7 IID calculations/fetches patched
+1>WinUI3WinRTWebView2 -> C:\Users\collabera\Documents\WinUI3WinRTWebView2\WinUI3WinRTWebView2\bin\x64\Debug\net6.0-windows10.0.22000.0\win10-x64\WinUI3WinRTWebView2.dll
+========== Build: 1 succeeded, 0 failed, 1 up-to-date, 0 skipped ==========
+========== Elapsed 00:09.877 ==========
+-->
+
+1. Select **Debug** > **Start Debugging** (`F5`).
+
+   The WinUI 2 or WinUI 3 app opens, this time with additional setup in the project, but with same resulting app as before:
+
+   ![The WinUI 3 app after adding projects but not WebView2 code](./winrt-from-js-images/winui3-running-app-initial-empty.png)
+
+1. Close the app.
+
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
 
 <!-- =============================================== -->
 ## Step 8: Add the host object in the webview2_sample_uwp project
 
+This section applies only to both WinUI 2 (UWP).  For WinUI 3 (Windows App SDK), skip to the next major Step section.
+
 Next, pass the WinRT object from the native side of the host app to the web side of the host app.  To do this, add an `InitializeWebView2Async` method that calls `AddHostObjectToScript`, as follows:
 
-1. In Solution Explorer, expand the **webview2_sample_uwp** project, and then select **MainPage.xaml.cs**.
+1. For WinUI 2, in Solution Explorer, expand the main project (such as **webview2_sample_uwp**), and then select **MainPage.xaml.cs**.
 
-1. Below the `MainPage` constructor, add the following `InitializeWebView2Async` method:
+   <!-- For WinUI 3, in Solution Explorer, expand the main project (such as **WinUI3WinRTWebView2**), and then select **MainWindow.xaml.cs**. -->
+
+<!-- 1. Below the `MainPage` (WinUI 2) or `MainWindow` (WinUI 3) constructor, add the following `InitializeWebView2Async` method: -->
+1. WinUI 2 only: Below the `MainPage` constructor, add the following `InitializeWebView2Async` method:
 
    ```csharp
    private async void InitializeWebView2Async()
@@ -450,25 +593,32 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
    For full guidance on how to use custom WinRT components, see [Custom (3rd-party) WinRT components](#custom-3rd-party-winrt-components), below.
 
-1. In the `MainPage` constructor, above the `StatusUpdate("Ready");` line, add the following code:
+1. If WinUI 2 (UWP): In the `MainPage` constructor, above the `StatusUpdate("Ready");` line, add the following code:
 
    ```csharp
    InitializeWebView2Async();
    ```
 
-1. Right-click the **webview2_sample_uwp** project, and then select **Set as startup project**.
+   <!-- If WinUI 3 (Windows App SDK): In the `MainWindow` constructor, below `this.InitializeComponent();`, add the above line of code, `InitializeWebView2Async();`.-->
 
-1. Press `Shift+Ctrl+S` to save all files.
+1. Right-click the main, non-Adapter project (such as **webview2_sample_uwp** for WinUI 2, and then select **Set as startup project**.  That project node is formatted as bold, to indicate it's the default project.
+   <!--  or **WinUI3WinRTWebView2** for WinUI 3) -->
 
-1. Press `F5` to run the sample app.  The **WebView2 WinUI 2 UWP Sample** window opens.
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+
+1. Press `F5` to run the sample app.  The **WebView2 WinUI 2 UWP Sample** window opens:
 
    ![The WebView2 WinUI 2 UWP Sample window](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
+
+1. Close the app.
 
 The host app's web-side code (and the DevTools Console) can now call methods and properties of the specified namespaces or classes of the host object.
 
 
 <!-- =============================================== -->
 ## Step 9: Call methods and properties on the host object from web-side JavaScript
+
+<!-- resume here -->
 
 Next, use the DevTools Console to demonstrate that web-side code can call the included, specified host-side APIs.
 
