@@ -18,8 +18,9 @@ There are many tips and tricks to be aware of when building websites or web apps
 *  Detecting Microsoft Edge from your website.
 *  Detecting Windows 11 by using User-Agent Client Hints.
 *  Customizing the **password reveal** button.
+*  Viewing formatted JSON responses and files in browser tabs.
 
-These aspects of developing for the web platform are described below.
+These aspects of developing for, and with, Microsoft Edge are described below.
 
 
 <!-- ====================================================================== -->
@@ -90,3 +91,15 @@ See [Detect Windows 11 using User-Agent Client Hints](how-to-detect-win11.md).
 The `password` input control in Microsoft Edge includes a **password reveal** button.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press `Alt`+`F8`, to show the characters in the password field.  You can remove the **password reveal** control, or customize the control styling.
 
 See [Customize the password reveal button](password-reveal.md).
+
+
+<!-- ====================================================================== -->
+## View formatted JSON responses or files
+
+When your web server responds to HTTP requests with data encoded as JSON, this data isn't always easy to read and is sometimes returned as one line of text. The same can occur when opening a JSON file from disk.
+
+Microsoft Edge includes the **JSON viewer**, a tool that changes the JSON data shown in a browser tab to make it easier to read.
+
+The **JSON viewer** automatically formats and highlights JSON responses and files in browser tabs.
+
+See [View formatted JSON](../devtools-guide-chromium/json-viewer/json-viewer.md).
