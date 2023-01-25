@@ -1,15 +1,15 @@
 ---
-title: The user experience of PWAs
-description: An overview of the user experience of PWAs on Microsoft Edge and Windows.
+title: Use Progressive Web Apps in Microsoft Edge
+description: How to use Progressive Web Apps in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 09/15/2021
 ---
-# The user experience of PWAs
+# Use Progressive Web Apps in Microsoft Edge
 
-On Windows, Progressive Web Apps (PWAs) are just like other apps.  Any device running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps.
+Any device that's running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps.  On Windows, Progressive Web Apps (PWAs) are just like other apps.
 
 
 <!-- ====================================================================== -->
@@ -67,7 +67,7 @@ Learn more about [defining shortcuts](how-to/shortcuts.md).
 
 PWAs can also display notifications in the operating system's own notification service. This helps users re-engage with your app. Learn more about [using notifications, push messages, and badges](how-to/notifications-badges.md).
 
-### Starting PWAs when the user signs in
+#### Starting PWAs when the user signs in
 
 PWAs on Windows can launch automatically when the user signs in, so they can immediately engage with the app.
 
