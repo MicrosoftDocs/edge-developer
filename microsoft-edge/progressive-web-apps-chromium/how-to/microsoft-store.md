@@ -14,7 +14,7 @@ Publishing your Progressive Web App (PWA) to the [Microsoft Store](/windows/uwp/
 
 | Advantage | Description |
 |---|---|
-| **Discoverability** | Users naturally look for apps in the app store.  When you publish to the Microsoft Store, millions of Windows users can discover your PWA alongside other Windows apps.  The Store showcases apps through categories, curated collections, and more.  App discovery portals provide an easy browsing and shopping experience for potential users of your app.  You can even [enhance your Store listing](/windows/uwp/publish/app-screenshots-and-images) with screenshots, a hero image, and video trailers. |
+| **Discoverability** | Users naturally look for apps in the app store.  When you publish to the Microsoft Store, millions of Windows users can discover your PWA alongside other Windows apps.  The Store showcases apps through categories, curated collections, and more.  App discovery portals provide an easy browsing and shopping experience for potential users of your app.  You can even enhance your Store listing with screenshots, a hero image, and video trailers - see [App screenshots, images, and trailers](/windows/apps/publish/publish-your-app/screenshots-and-images). |
 | **Trustworthiness** | Windows customers know they can trust their Microsoft Store purchases and downloads, because they adhere to the rigorous Microsoft [quality and safety standards](/legal/windows/agreements/store-policies). |
 | **Easy install** | The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 or later apps](https://www.microsoft.com/store/apps/windows). |
 | **App analytics** | The [Windows Partner Center dashboard](/windows/uwp/publish/index) provides you with [detailed analytics](/windows/uwp/publish/analytics) about your app health, usage, and more. |
@@ -35,7 +35,7 @@ To create an app reservation:
         *   If **Windows & Xbox** is displayed, your app is already enrolled.
         *   If **Windows & Xbox** isn't displayed, select **Add program**.
 
-    ![Add a program in the Windows Partner Center dashboard.](../media/windows-partner-center-add-program.msft.png)
+    ![Add a program in the Windows Partner Center dashboard](../media/windows-partner-center-add-program.msft.png)
 
 1.  To enroll in the developer program:
     1.  Navigate to **Windows & Xbox**.
@@ -47,11 +47,11 @@ To create an app reservation:
     1.  Type the name of your app in the prompt.
     1.  Select `Reserve product name`.
 
-    ![Create an app reservation in Windows Partner Center.](../media/windows-partner-center-create-app.msft.png)
+    ![Create an app reservation in Windows Partner Center](../media/windows-partner-center-create-app.msft.png)
 
 1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, select **Product management** > **Product Identity**.
 
-    ![Copy your publisher information from Windows Partner Center.](../media/windows-partner-center-publisher-info.msft.png)
+    ![Copy your publisher information from Windows Partner Center](../media/windows-partner-center-publisher-info.msft.png)
     <!-- lightbox justified because large detailed image -->
 
 1.  Copy and save the following values.
@@ -76,7 +76,7 @@ To generate an app package:
     *   **Publisher ID**
     *   **Publisher Display Name**
 
-    ![Paste publisher information into PWABuilder.](../media/pwabuilder-windows-package-options.png)
+    ![Paste publisher information into PWABuilder](../media/pwabuilder-windows-package-options.png)
 
 1.  Select **Generate**.
 1.  To download your Windows app package, select **Download**.
@@ -92,7 +92,7 @@ To submit your app to the Microsoft Store:
 1.  Select your app.
 1.  Select **Start your Submission**.
 
-    ![Start a new app submission on Windows Partner Center.](../media/windows-partner-center-start-submission.msft.png)
+    ![Start a new app submission on Windows Partner Center](../media/windows-partner-center-start-submission.msft.png)
 
 1.  When you're prompted, provide information about your app, such as pricing and age rating.
 
@@ -122,7 +122,7 @@ By default, a PWA that's installed from the Microsoft Store displays an addition
 
 The following figure shows the UI that is introduced when a user moves outside the scope of a PWA. 
 
-![The additional UI with URL and page title when the app is redirected to another domain.](../media/locale-redirection-additional-ui.png)
+![The additional UI with URL and page title when the app is redirected to another domain](../media/locale-redirection-additional-ui.png)
 
 ### Domain redirection with browser-installed PWAs
 
