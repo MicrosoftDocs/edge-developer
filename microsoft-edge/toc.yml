@@ -1477,7 +1477,7 @@
 
         - name: View formatted JSON
           href: devtools-guide-chromium/json-viewer/json-viewer.md
-          displayName: JSON viewer, tool
+          displayName: JSON viewer
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords

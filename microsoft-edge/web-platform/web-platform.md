@@ -96,9 +96,9 @@ See [Customize the password reveal button](password-reveal.md).
 <!-- ====================================================================== -->
 ## View formatted JSON responses or files
 
-When your web server responds to HTTP requests with data encoded as JSON, this data isn't always easy to read and is sometimes returned as one line of text. The same can occur when opening a JSON file from disk.
+Sometimes a web server responds to HTTP requests by returning data encoded as JSON.  JSON data can be difficult to read when it's formatted as a single long, concatenated line of text. The same can occur when opening a JSON file from disk.
 
-Microsoft Edge includes the **JSON viewer**, a tool that changes the JSON data shown in a browser tab to make it easier to read.
+Microsoft Edge includes the **JSON viewer**, a tool that reformats the JSON data shown in a browser to make it easier to read.
 
 The **JSON viewer** automatically formats and highlights JSON responses and files in browser tabs.
 
