@@ -301,7 +301,7 @@ async function updateWidgets() {
   const template = await (await fetch(widget.definition.msAcTemplate)).text();
   const data = await (await fetch(widget.definition.data)).text();
 
-  // Render the widget with the template and data.run
+  // Render the widget with the template and data.
   await self.widgets.updateByTag(widget.definition.tag, {template, data});
 }
 ```
