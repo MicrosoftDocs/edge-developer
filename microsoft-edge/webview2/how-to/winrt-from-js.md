@@ -197,13 +197,21 @@ Add a project for the wv2winrt tool, as follows:
 
 1. Click the **Create** button.
 
-   If you're targeting WinUI 2 (UWP), the **New Universal Windows Platform Project** dialog opens:
+##### [WinUI 2 (UWP)](#tab/winui2)
+
+   <!-- If you're targeting WinUI 2 (UWP), -->
+   The **New Universal Windows Platform Project** dialog opens:
 
    ![The 'New UWP project' dialog](winrt-from-js-images/new-uwpp.png)
 
-   If you're targeting WinUI 3 (Windows App SDK), the **New Windows Project** dialog opens:
+##### [WinUI 3 (Windows App SDK)](#tab/winui3)
+
+   <!-- If you're targeting WinUI 3 (Windows App SDK), -->
+   The **New Windows Project** dialog opens:
 
    ![The 'New Windows project' dialog](winrt-from-js-images/new-windows-project-dialog.png)
+
+---
 
 1. Click the **OK** button.
 
