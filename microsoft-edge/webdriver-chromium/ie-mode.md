@@ -272,7 +272,7 @@ This section covers known scenarios that previously worked with IEDriver and the
 
 ### Opening new windows
 
-If your test code creates a new browser window using one of these methods, you may need to add a short wait operation afterwards to ensure that IEDriver has detected the new window:
+If your test code creates a new browser window using one of the following methods, you may need to add a short wait operation afterwards to ensure that IEDriver has detected the new window:
 
 - Opening a new window with [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) ran in page script.
 - Opening a new window with the WebDriver [New Window](https://w3c.github.io/webdriver/#new-window) command.
