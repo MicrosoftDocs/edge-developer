@@ -150,7 +150,7 @@ In case you need more information, see detailed steps in these pages, and then c
 
    And the **WinUI Desktop** app may look like the following:
 
-   ![Visual Studio after finishing Getting Started](./winrt-from-js-images/winui3-app-after-finish-getstart.png)
+   ![WinUI Desktop app after finishing Getting Started](./winrt-from-js-images/winui3-app-after-finish-getstart.png)
 
 1.  If the **WinUI Desktop** app is running, close the app.  The following Visual Studio dialog boxes might appear:
 
@@ -423,7 +423,7 @@ Next, generate the API code:
 <!-- ====================================================================== -->
 ## Step 7 (WinUI 3 only): Update Target Framework
 
-If your app is for WinUI 2 (UWP), skip this section; skip to the next major Step section, [Add the host object in the webview2_sample_uwp project](#step-8-add-the-host-object-in-the-webview2_sample_uwp-project).
+If your app is for WinUI 2 (UWP), skip this section; skip to the next major Step section, [Add the host object in the main project](#step-8-add-the-host-object-in-the-main-project).
 
 If your app is for WinUI 3 (Windows App SDK), do the steps in the present section.
 
@@ -538,7 +538,7 @@ Add the CsWinRT and WinRTAdapter packages in the project file:
 
    The **Install Complete** dialog:
 
-   ![VSIX installer dialog](./winrt-from-js-images/vsix-install-complete.png)
+   ![VSIX Install Complete dialog](./winrt-from-js-images/vsix-install-complete.png)
 
 1. If your app is non-packaged app, you must also do the steps in [Enhancing Non-packaged Desktop Apps using Windows Runtime Components](https://blogs.windows.com/windowsdeveloper/2019/04/30/enhancing-non-packaged-desktop-apps-using-windows-runtime-components/).
 
