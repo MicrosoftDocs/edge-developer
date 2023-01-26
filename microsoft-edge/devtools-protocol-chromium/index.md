@@ -141,9 +141,10 @@ The following Reference sections are for Remote Tools for Microsoft Edge.
 
 
 <!-- ====================================================================== -->
-## /msedge/json/list
 
-Provides a candidate list of all `msedge.exe` processes (including [PWAs](../progressive-web-apps-chromium/index.md) and all tabs in all instances of Microsoft Edge) on the Windows 10 or later device for debugging.
+## /msedge/json/deviceinfo
+
+Provides information about the Windows PC, Xbox, or HoloLens device connected for remote debugging.
 
 **Parameters**
 
@@ -152,17 +153,52 @@ None.
 **Return object**
 
 ```json
-[{
-   "description": "",
-    "devtoolsFrontendUrl": "http://172.17.75.195:80/msedge/7264/devtools/inspector.html?ws=172.17.75.195:80/msedge/7264/devtools/page/ED4FFDB4529723A0FAFCBDB9B45851BB",
-    "faviconUrl": "https://learn.microsoft.com/favicon.ico",
-    "id": "ED4FFDB4529723A0FAFCBDB9B45851BB",
-    "title": "Get Started with Remote Debugging Windows Devices - Microsoft Edge Development | Microsoft Docs",
-    "type": "page",
-    "url": "https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
-    "webSocketDebuggerUrl": "ws://172.17.75.195:80/msedge/7264/devtools/page/ED4FFDB4529723A0FAFCBDB9B45851BB",
-    "browserProcessId": 7264
-}, ...  ]
+{
+  "deviceName": "WINDOWS-10-DEV"
+}
+```
+
+<!-- ====================================================================== -->
+## /msedge/json/list
+
+Provides a candidate list of all Microsoft Edge and WebView2 Runtime processes running on the connected device (including [PWAs](../progressive-web-apps-chromium/index.md)) and all tabs or targets in each process available for debugging.
+
+**Parameters**
+
+None.
+
+**Return object**
+
+```json
+[
+  {
+    "version": {
+      "Browser": "Edg/110.0.1548.0",
+      "Protocol-Version": "1.3",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1548.0",
+      "V8-Version": "11.0.6",
+      "WebKit-Version": "537.36 (@d6d5aea402510697e05382293a4c6d3da0183736)",
+      "webSocketDebuggerUrl": "wss://172.17.75.195:50443/msedge/23416/devtools/browser/f02cc852-644a-48ce-932b-481aa43d8121"
+    },
+    "info": {
+      "browserProcessId": 23416
+    },
+    "targets": [
+      {
+        "description": "",
+        "devtoolsFrontendUrl": "https://devtools.azureedge.net/serve_file/@d6d5aea402510697e05382293a4c6d3da0183736/inspector.html?wss=172.17.75.195:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE",
+        "faviconUrl": "https://learn.microsoft.com/favicon.ico",
+        "id": "2AE2506D9FDB1C541FB36DD908ED51DE",
+        "title": "Remotely debug Windows devices - Microsoft Edge Development | Microsoft Learn",
+        "type": "page",
+        "url": "https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
+        "webSocketDebuggerUrl": "wss://172.17.75.195:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE"
+      },
+      ...
+    ]
+  },
+  ...
+]
 ```
 
 
@@ -184,16 +220,19 @@ None.
 **Return object**
 
 ```json
-[{
+[
+  {
     "description": "",
-    "devtoolsFrontendUrl": "http://172.17.75.195:80/msedge/7264/devtools/inspector.html?ws=172.17.75.195:80/msedge/7264/devtools/page/ED4FFDB4529723A0FAFCBDB9B45851BB",
+    "devtoolsFrontendUrl": "/msedge/23416/devtools/inspector.html?wss=localhost:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE",
     "faviconUrl": "https://learn.microsoft.com/favicon.ico",
-    "id": "ED4FFDB4529723A0FAFCBDB9B45851BB",
-    "title": "Get Started with Remote Debugging Windows Devices - Microsoft Edge Development | Microsoft Docs",
+    "id": "2AE2506D9FDB1C541FB36DD908ED51DE",
+    "title": "Remotely debug Windows devices - Microsoft Edge Development | Microsoft Learn",
     "type": "page",
-    "url": "https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
-    "webSocketDebuggerUrl": "ws://172.17.75.195:80/msedge/7264/devtools/page/ED4FFDB4529723A0FAFCBDB9B45851BB"
-}, ...  ]
+    "url": "https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
+    "webSocketDebuggerUrl": "wss://localhost:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE"
+  },
+  ...
+]
 ```
 
 
@@ -210,12 +249,12 @@ None.
 
 ```json
 {
-    "Browser": "Edg/82.0.452.0",
-    "Protocol-Version": "1.3",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.4080.0 Safari/537.36 Edg/82.0.452.0",
-    "V8-Version": "8.2.263",
-    "WebKit-Version": "537.36 (@fe0232051787ca94ac8edfc0084c3488b7d9bdb2)",
-    "webSocketDebuggerUrl": "172.17.75.195:80/msedge/7264/devtools/browser/7a67c8c4-138b-48e3-bfe0-cb7af34d559a"
+  "Browser": "Edg/110.0.1548.0",
+  "Protocol-Version": "1.3",
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1548.0",
+  "V8-Version": "11.0.6",
+  "WebKit-Version": "537.36 (@d6d5aea402510697e05382293a4c6d3da0183736)",
+  "webSocketDebuggerUrl": "wss://localhost:50443/msedge/23416/devtools/browser/f02cc852-644a-48ce-932b-481aa43d8121"
 }
 ```
 

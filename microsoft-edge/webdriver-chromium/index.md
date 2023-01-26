@@ -50,13 +50,13 @@ To begin writing automated tests, make sure the Edge WebDriver version you insta
 
 1.  Go to `edge://settings/help` and note your version of Microsoft Edge.
 
-    ![The build number for Microsoft Edge on April 15, 2021.](media/microsoft-edge-version.msft.png)
+    ![The build number for Microsoft Edge on April 15, 2021](media/microsoft-edge-version.msft.png)
 
 1.  Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver).
 
 1.  In the **Get the latest version** section of the page, select a platform in the channel that matches your version number of Microsoft Edge.
 
-    ![The `Get the latest version` section of the Microsoft Edge WebDriver webpage.](media/microsoft-edge-driver-install.msft.png)
+    ![The `Get the latest version` section of the Microsoft Edge WebDriver webpage](media/microsoft-edge-driver-install.msft.png)
 
 1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
 
@@ -71,7 +71,7 @@ This article provides instructions for using the Selenium framework, but you can
 
 ### Using Selenium 4
 
-Selenium WebDriver is an open-source testing framework that can be used on any platform, and provides language bindings for Java, Python, C#, Ruby, and JavaScript.
+Selenium WebDriver is an open-source testing framework that can be used on any platform, and provides language bindings for Java, Python, C#, Ruby, and JavaScript. Note: Python 3 is required to run Selenium 4 tests. (Python 2.7 is not supported.)
 
 To use WebDriver to automate Microsoft Edge, if you use Selenium, you must use Selenium 4, which has built-in support for Microsoft Edge (Chromium).
 

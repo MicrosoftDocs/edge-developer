@@ -21,7 +21,7 @@ ms.date: 09/20/2022
 
 You can apply various color themes to Microsoft Edge DevTools, including several themes from [Visual Studio Code](https://code.visualstudio.com), such as Monokai and Solarized Dark.  Themes affect the color of panes, buttons, and code syntax highlighting.
 
-![Various DevTools color themes.](./media/all-devtools-themes.png)
+![Various DevTools color themes](./media/all-devtools-themes.png)
 
 This article is about changing the appearance of DevTools.  To instead change how the webpage under development is displayed, see [Emulate dark or light schemes in the rendered page](../accessibility/preferred-color-scheme-simulation.md).
 
@@ -56,7 +56,7 @@ Dark themes:
 
 1. Select **Preferences**, and then in the **Appearance** section, select a theme from the **Theme** dropdown list.
 
-![Selecting a theme in Preferences.](./media/customize-theme-setting.png)
+![Selecting a theme in Preferences](./media/customize-theme-setting.png)
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ To use the Command Menu to change which color theme is applied to DevTools:
 
 1. Press `Enter`.
 
-![The list of themes in the Command Menu.](./media/customize-theme-command-menu.png)
+![The list of themes in the Command Menu](./media/customize-theme-command-menu.png)
 
 
 <!-- ====================================================================== -->
@@ -78,5 +78,5 @@ To use the Command Menu to change which color theme is applied to DevTools:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/customize/dark-theme/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -43,15 +43,15 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
 1. In the rendered webpage, under **Inspect a Node**, right-click **Michelangelo** and then select **Inspect**.
 
-   ![Inspecting a node.](../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png)
+   ![Inspecting a node](../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png)
 
    The **Elements** tool of DevTools opens.  `<p>Michelangelo</p>` node is highlighted in the **DOM Tree**.
 
-   ![Highlighting the Michelangelo node.](../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png)
+   ![Highlighting the Michelangelo node](../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png)
 
-1. Click the **Inspect** (![Inspect.](../media/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools.
+1. Click the **Inspect** (![Inspect](../media/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools.
 
-   ![The Inspect icon.](../media/dom-elements-highlighted-select-element-page-inspect.msft.png)
+   ![The Inspect icon](../media/dom-elements-highlighted-select-element-page-inspect.msft.png)
 
 1. Under **Inspect a Node**, click the **Tokyo** text.  Now, `<p>Tokyo</p>` node is highlighted in the DOM Tree.
 
@@ -66,11 +66,11 @@ Once you have selected a node in the DOM Tree, you can navigate the DOM Tree wit
 
 1. In the rendered webpage, under **Navigate the DOM Tree with a Keyboard**, right-click **Ringo** and then select **Inspect**.  `<p>Ringo</p>` is selected in the DOM Tree.
 
-   ![Inspecting the 'Ringo' node.](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png)
+   ![Inspecting the 'Ringo' node](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png)
 
 1. Press the `Up` arrow key 2 times.  `<div>` is selected.
 
-   ![Inspecting the 'div' node.](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png)
+   ![Inspecting the 'div' node](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png)
 
 1. Press the `Left` arrow key.  The `<div>` list collapses.
 
@@ -95,7 +95,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 
 1. Right-click the `<p>Magritte</p>` node, and then click **Scroll into view**.  Your viewport scrolls back up to display the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if the **Scroll into view** option isn't displayed.
 
-![Scroll into view.](../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png)
+![Scroll into view](../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png)
 
 ### Search for nodes
 
@@ -107,7 +107,7 @@ You can search the DOM Tree by string, CSS selector, or XPath selector.
 
 1. Type `The Moon is a Harsh Mistress`.  The last sentence is highlighted in the DOM Tree.
 
-![Highlighting the query in the Search bar.](../media/dom-elements-highlighted-search-nodes-highlight.msft.png)
+![Highlighting the query in the Search bar](../media/dom-elements-highlighted-search-nodes-highlight.msft.png)
 
 The Search bar also supports CSS and XPath selectors.
 
@@ -127,7 +127,7 @@ To edit the text content of a node, double-click the content in the DOM Tree.
 
 1. In the DOM Tree, double-click `Michelle`.  In other words, double-click the text between `<p>` and `</p>`.  The text is highlighted to indicate that it is selected.
 
-   ![Edit the text.](../media/dom-elements-highlighted-edit-content.msft.png)
+   ![Edit the text](../media/dom-elements-highlighted-edit-content.msft.png)
 
 1. Delete `Michelle`, type `Leela`, then press `Enter` to confirm the change.  The text in the DOM changes from **Michelle** to **Leela**.
 
@@ -141,11 +141,11 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
 1. Double-click `<p>`.  The text is highlighted to indicate that the node is selected.
 
-   ![Edit the node.](../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png)
+   ![Edit the node](../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png)
 
 1. Select the `Right` arrow key, add a space, type `style="background-color:gold"`, and then press `Enter`.  The background color of the node changes to gold.
 
-   ![Add a style attribute to the node.](../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png)
+   ![Add a style attribute to the node](../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png)
 
 ### Edit node tag name
 
@@ -159,7 +159,7 @@ To edit the tag name of a node, double-click the tag name and then type in the n
 
 1. Delete `p`, type `button`, then press `Enter`.  The `<p>` node changes to a `<button>` node.
 
-   ![Change the node type to button.](../media/dom-elements-highlighted-edit-node-type-button.msft.png)
+   ![Change the node type to button](../media/dom-elements-highlighted-edit-node-type-button.msft.png)
 
 ### Edit multiple nodes, text, and attributes 
 
@@ -173,7 +173,7 @@ To use the HTML editor:
 
 1. In the DOM Tree, right-click the `<section id="edit-as-html-1">` node and select **Edit as HTML**. The HTML editor appears.
 
-   ![The HTML editor.](../media/dom-elements-highlighted-edit-html-editor.png)
+   ![The HTML editor](../media/dom-elements-highlighted-edit-html-editor.png)
 
 1. Type the changes you want to make in the HTML editor, such as:
 
@@ -185,7 +185,7 @@ To use the HTML editor:
 
 1. Type `Ctrl`+`Enter` to apply the changes to the DOM tree and close the HTML editor.
 
-   ![The new DOM tree, with the an extra <p> node, after the HTML editor closed.](../media/dom-elements-highlighted-edit-html-editor-closed.png)
+   ![The new DOM tree, with the an extra <p> node, after the HTML editor closed](../media/dom-elements-highlighted-edit-html-editor-closed.png)
 
 ### Reorder DOM nodes
 
@@ -197,7 +197,7 @@ Drag nodes to reorder them.
 
 1. In the DOM Tree, drag `<p>Elvis Presley</p>` to the top of the list.
 
-![Drag the node to the top of the list.](../media/dom-elements-reorder-dom-nodes.msft.png)
+![Drag the node to the top of the list](../media/dom-elements-reorder-dom-nodes.msft.png)
 
 ### Force state
 
@@ -221,7 +221,7 @@ Press `H` to hide a node, as follows:
 
 1. Press the `H` key.  The node is hidden.
 
-   ![What the node looks like in the DOM Tree after it is hidden.](../media/dom-elements-highlighted-hide-a-node.msft.png)
+   ![What the node looks like in the DOM Tree after it is hidden](../media/dom-elements-highlighted-hide-a-node.msft.png)
 
 1. Press the `H` key again.  The node is shown again.
 
@@ -255,13 +255,13 @@ When you inspect a node, the `== $0` text next to the node means that you can re
 
 1. Type `$0` and press `Enter`.  The result of the expression shows that `$0` evaluates to `<p>The Left Hand of Darkness</p>`:
 
-   ![The result of the first $0 expression in the Console.](../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png)
+   ![The result of the first $0 expression in the Console](../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png)
 
 1. Hover on the result.  The node is highlighted in the viewport.
 
 1. Click `<p>Dune</p>` in the DOM Tree, type `$0` in the Console again, and then press `Enter` again.  Now, `$0` evaluates to `<p>Dune</p>`:
 
-![The result of the second $0 expression in the Console.](../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png)
+![The result of the second $0 expression in the Console](../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png)
 
 ### Store as global variable
 
@@ -275,7 +275,7 @@ If you need to refer back to a node many times, store it as a global variable.
 
 1. Type `temp1` in the Console and then press `Enter`.  The result of the expression shows that the variable evaluates to the node.
 
-![The result of the temp1 expression.](../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png)
+![The result of the temp1 expression](../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png)
 
 ### Copy JS path
 
@@ -293,7 +293,7 @@ Copy the JavaScript path to a node when you need to reference it in an automated
 
 The result of the **Copy JS Path** expression:
 
-![The result of the Copy JS Path expression.](../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png)
+![The result of the Copy JS Path expression](../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -311,13 +311,13 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
 1. In the DOM Tree, right-click `<p id="botm_target">Sauerkraut</p>`, and then select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
-   ![Break on attribute modifications.](../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png)
+   ![Break on attribute modifications](../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png)
 
 1. Click the **Set Background** button.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change.
 
-   ![The Sources tool showing the line of code that caused the attribute to change.](../media/dom-break-attribute-modifications-sources-paused-on.msft.png)
+   ![The Sources tool showing the line of code that caused the attribute to change](../media/dom-break-attribute-modifications-sources-paused-on.msft.png)
 
-1. Click **Resume Script** (![Resume Script.](../media/resume-script-icon.msft.png)) to resume the JavaScript execution.
+1. Click **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)) to resume the JavaScript execution.
 
 ### Break on node removal
 
@@ -331,7 +331,7 @@ If you want to pause when a particular node is removed, use node removal breakpo
 
 1. Click the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.
 
-1. Select **Resume Script** (![Resume Script.](../media/resume-script-icon.msft.png)).
+1. Select **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)).
 
 ### Break on subtree modifications
 
@@ -345,7 +345,7 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 
 1. Click **Add Child**.  The code pauses because a `<p>` node was added to the list.
 
-1. Select **Resume Script** (![Resume Script.](../media/resume-script-icon.msft.png)).
+1. Select **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)).
 
 
 <!-- ====================================================================== -->
@@ -423,7 +423,7 @@ See [Introduction to the DOM](https://developer.mozilla.org/docs/Web/API/Documen
 
 Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If you don't see the specified option in the context menu, try right-clicking away from the node text, or click the `...` button to the left of the node.
 
-![Where to click if all of the options aren't displayed.](../media/dom-elements-highlighted-right-click-right-side.msft.png)
+![Where to click if all of the options aren't displayed](../media/dom-elements-highlighted-right-click-right-side.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -431,5 +431,5 @@ Many of the instructions in this tutorial instruct you to right-click a node in 
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/dom/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -134,13 +134,13 @@ _Published on 20 May 2022._
 
 Every web product has issues. The Microsoft Edge DevTools **Issues** tool analyzes the current webpage and reports issues grouped by type including accessibility, compatibility, performance, and more.
 
-If you have VS Code, the Microsoft Edge DevTools extension for VS Code makes issues available in your source code directly.
+If you have Visual Studio Code, the Microsoft Edge DevTools extension for Visual Studio Code makes issues available in your source code directly.
 
 Released products can also have many issues. Based on your feedback, we added useful ways to filter issues. You can disable issues coming from third-party libraries for example, and choose which browsers to view issues about.
 
 To learn more about the Issues tool, see [Find and fix problems using the Issues tool](../devtools-guide-chromium/issues/index.md).
 
-To learn more about the Microsoft Edge DevTools extension for VS Code, see [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md).
+To learn more about the Microsoft Edge DevTools extension for Visual Studio Code, see [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md).
 
 
 <!-- ====================================================================== -->

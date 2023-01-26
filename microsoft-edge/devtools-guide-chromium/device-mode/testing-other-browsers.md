@@ -57,7 +57,7 @@ Device simulators and emulators simulate not just the browser environment but th
 ### Android emulator
 
 <!--
-![Stock Browser in Android Emulator.](../media/device-mode-android-emulator-stock-browser.msft.png)
+![Stock Browser in Android Emulator](../media/device-mode-android-emulator-stock-browser.msft.png)
 -->
 
 At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you can use the Android Browser, the Chromium Content Shell, and Firefox for Android, which we review later in this article.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without browser-specific features.
@@ -68,7 +68,7 @@ After your emulator is booted, select the **Browser** icon, and test your site o
 #### Chromium content shell on Android
 
 <!--
-![Android Emulator Content Shell.](../media/device-mode-android-avd-contentshell.msft.png)
+![Android Emulator Content Shell](../media/device-mode-android-avd-contentshell.msft.png)
 -->
 
 To install the Chromium Content Shell for Android, keep your emulator running and run the following command:
@@ -84,7 +84,7 @@ Now you can test your site with the Chromium Content Shell.
 #### Firefox on Android
 
 <!--
-![Firefox Icon on Android Emulator.](../media/device-mode-ff-on-android-emulator.msft.png)
+![Firefox Icon on Android Emulator](../media/device-mode-ff-on-android-emulator.msft.png)
 -->
 
 Similar to the Chromium Content Shell, you can get an APK to install Firefox onto the emulator.
@@ -108,7 +108,7 @@ When you are done, learn how to work with the simulator through [Apple Developer
 
 ### Microsoft Edge (EdgeHTML)
 
-![modern.IE VM.](../media/device-mode-modern-ie-vm.msft.png)
+![modern.IE VM](../media/device-mode-modern-ie-vm.msft.png)
 
 Microsoft Edge (EdgeHTML) Virtual Machines (VMs) enable you to access different versions of EdgeHTML and Internet Explorer on your computer through VirtualBox (or VMWare).  Select a [virtual machine on the download page](https://developer.microsoft.com/microsoft-edge/tools/vms).
 
@@ -122,7 +122,7 @@ The following list is a sample of cloud-based emulators and testing sites. Revie
 
 * [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
 
-* [Mobileum](https://www.sigos.com/app-experience/) doesn't use emulators, but real devices which you can control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
+* [Mobileum](https://www.mobileum.com/) doesn't use emulators, but real devices which you can control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
 
 * [HeadSpin](https://www.headspin.io/) helps you perform manual cross-browser testing on thousands of real devices, browsers, and operating systems.  You can record videos of complex bugs and share them through integration such as Slack, JIRA, and more.  Fast forward your go-to-market launch by testing in parallel.
 
@@ -138,5 +138,5 @@ The following list is a sample of cloud-based emulators and testing sites. Revie
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/device-mode/testing-other-browsers/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) and [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate at Google | Tools, Performance, Animation, UX).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

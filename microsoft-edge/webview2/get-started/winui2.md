@@ -27,6 +27,7 @@ The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  
 WinUI 2 supports UWP only.  These controls are backward-compatible.
 
 
+<!-- ------------------------------ -->
 #### Completed project
 
 Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
@@ -37,6 +38,20 @@ Unlike some of the other tutorials, there isn't a completed version of this Gett
 -->
 
 Follow the major Step sections in sequence, below.
+
+
+<!-- ------------------------------ -->
+#### About WinUI and WebView2
+
+In WinUI 2 (UWP) apps, WebView2 is exposed as a XAML control.  After you embed the XAML control in your app as a named control, you can then refer to that XAML control within C# files.
+
+Only a subset of WebView2 interfaces/functions are exposed in WinUI:
+
+* The `WebView2` XAML object exposes the `CoreWebView2` interface, along with the most important functionality.
+
+* Interfaces such as `CoreWebView2Controller` are hidden, because WinUI takes care of the environment and window creation behind the scenes.
+
+See also [Xbox, HoloLens, and XAML limitations](#xbox-hololens-and-xaml-limitations) below.
 
 
 <!-- ====================================================================== -->
@@ -284,27 +299,39 @@ Next, learn about navigation events, which are essential for WebView2 apps.  The
 
 
 <!-- ====================================================================== -->
-## Status of WebView2 functionality on WinUI 2 (UWP)
+## Special considerations for WebView2 on WinUI 2 (UWP)
 
-The WebView2 WinUI 2 (UWP) control is in development.  The following features haven't been implemented, or are disabled due to pending work:
-
-*  Downloads.
-   *  Downloading files is only available in preview via the Edge Dev channel until Edge 104; moreover, it is disabled by default. To enable, please use the command line switch `edge-webview-optional-enable-uwp-regular-downloads`. There are a couple of known limitations to the current downloads behavior for WebView2 in UWP:
-        * The downloads hub is currently disabled.
-        * Depending on the user's OS, downloaded files will be downloaded to different folders. For Windows 11, the downloaded files will appear in a subfolder with the app package's name in the Downloads folder. For OS's below Windows 11, the downloaded files will appear in a subfolder named WebView2Downloads within this app package's subfolder in the Downloads folder.
-        * Additionally, saving files via Save As is functional and enabled for UWP WebView2. The files will be saved in the respective folder the user selects.
-*  Autofill UI.
-*  Print to PDF.
-*  Default printing is disabled, however developers may work around this by using CapturePreviewAsync (though this only captures the current viewport).
-
-Package summary:
-* [Overview of the NuGet package for Microsoft.UI.Xaml](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
+The WebView2 WinUI 2 (UWP) control is in development.
 
 
-<!-- ====================================================================== -->
-## WinUI 2 WebView2 special considerations
+<!-- ------------------------------ -->
+#### Autofill UI
+
+Autofill UI is not implemented yet for WebView2 for UWP apps.
+
+See also:
+* [Autofill](../concepts/overview-features-apis.md#autofill) in _Overview of WebView2 features and APIs_.
 
 
+<!-- ------------------------------ -->
+#### Print to PDF
+
+Print to PDF requires that the app have access to a writeable location in UWP, such as a local folder.  For a full list of UWP-accessible paths, see [File access permissions](/windows/uwp/files/file-access-permissions).
+
+See also:
+* [Printing](../concepts/overview-features-apis.md#printing) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ------------------------------ -->
+#### Default printing
+
+Default printing is disabled for WebView2 for UWP apps.  However, you can capture and print the current viewport, by calling `CapturePreview`.
+
+See also:
+* [Image capture](../concepts/overview-features-apis.md#image-capture) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ------------------------------ -->
 #### SmartScreen
 
 WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreoverview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
@@ -313,10 +340,57 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) is initially called.
 
+
+<!-- ------------------------------ -->
+#### Downloading files
+
+There are a couple of known limitations for current downloads behavior for WebView2 in UWP.
+
+###### Save As
+
+Saving files via **Save As** is working and is enabled for WebView2 for UWP apps.  The files will be saved in the folder that the user selects.
+
+###### Which folder the files are downloaded to
+
+If the host doesn't change the `ResultFilePath` of the downloaded file, the downloaded files will be downloaded to a subfolder with the app package's name in the `Downloads` folder.
+
+If the host changes the `ResultFilePath` of the downloaded file, the file will only be downloaded if the app has access to that file path by default.
+
+###### Downloads Hub
+
+Opening files and folders from the Downloads Hub is disabled.  Clicking on the file or folder icon won't open the respective file/folder.
+
+See also:
+* [Downloads](../concepts/overview-features-apis.md#downloads) in _Overview of WebView2 features and APIs_.
+
+
+<!-- ------------------------------ -->
 #### Xbox, HoloLens, and XAML limitations
 
-This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered at a future point in time.
+This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered for future releases.
 
+
+<!-- ------------------------------ -->
+#### Setting DefaultBackgroundColor
+
+On WinUI 2, the `DefaultBackgroundColor` property is not exposed directly.  You can set the default background color by setting an environment variable, as follows:
+
+```csharp
+Environment.SetVariable("WEBVIEW2_DEFAULT_BACKGROUND_COLOR", "FF000000");
+```
+
+See also:
+* .NET: [WebView2.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.winforms.webview2.defaultbackgroundcolor)
+* Win32: [ICoreWebView2Controller2::DefaultBackgroundColor property (get](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
+
+
+<!-- ------------------------------ -->
+#### Setting transparency
+
+On WinUI 2, transparency is achieved by setting the color to `00FFFFFF`.
+
+
+<!-- ------------------------------ -->
 #### API limitations
 
 The following interfaces aren't accessible in WinUI 2:
@@ -327,19 +401,9 @@ The following interfaces aren't accessible in WinUI 2:
 
 
 <!-- ====================================================================== -->
-## API Reference
-
-* [WinRT API Reference: Core (C#)](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
-* [WinRT API Reference: COM Interop (C++)](/microsoft-edge/webview2/reference/winrt/interop/index)
-
-All platforms/languages:
-* [WebView2 API Reference](../webview2-api-reference.md) - API Reference for each platform
-
-
-<!-- ====================================================================== -->
 ## See also
 
-Local pages:
+* [WebView2 API Reference](../webview2-api-reference.md)
 * [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - steps to download, update, build, and run the WinUI 2 WebView2 sample.
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
@@ -351,3 +415,4 @@ GitHub:
 * [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - the WinUI 2 (UWP) WebView2 sample.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
 *  Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
+* [Microsoft.UI.Xaml NuGet package](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
