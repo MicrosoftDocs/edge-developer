@@ -999,25 +999,18 @@
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Progressive Web Apps
       items:
+
         - name: Overview of Progressive Web Apps (PWAs)  # existing firstchild article
           href: progressive-web-apps-chromium/index.md
 
-        - name: The user experience of PWAs
-          href: progressive-web-apps-chromium/ux.md
+        - name: Get started with PWAs
+          href: progressive-web-apps-chromium/how-to/index.md
+
+        - name: Best practices for PWAs
+          href: progressive-web-apps-chromium/how-to/best-practices.md
 
         - name: How to
           items:
-            - name: Get started with PWAs
-              href: progressive-web-apps-chromium/how-to/index.md
-
-            - name: Web app manifest
-              href: progressive-web-apps-chromium/how-to/web-app-manifests.md
-
-            - name: Service Workers
-              href: progressive-web-apps-chromium/how-to/service-workers.md
-
-            - name: Offline scenarios
-              href: progressive-web-apps-chromium/how-to/offline.md
 
             - name: Publish PWAs to the Microsoft Store
               href: progressive-web-apps-chromium/how-to/microsoft-store.md
@@ -1025,37 +1018,53 @@
             - name: Experimental features and origin trials
               href: progressive-web-apps-chromium/how-to/origin-trials.md
 
-            - name: Integrate PWAs on desktop
-              items:
-                - name: Define icons and a theme color
-                  href: progressive-web-apps-chromium/how-to/icon-theme-color.md
+            - name: Use Progressive Web Apps in Microsoft Edge
+              href: progressive-web-apps-chromium/ux.md
 
-                - name: Re-engage users with badges, notifications, and push messages
-                  href: progressive-web-apps-chromium/how-to/notifications-badges.md
+            - name: Debug Progressive Web Apps
+              href: progressive-web-apps-chromium/how-to/debug.md
 
-                - name: Handle files
-                  href: progressive-web-apps-chromium/how-to/handle-files.md
+        - name: Reference
+          items:
 
-                - name: Handle URLs
-                  href: progressive-web-apps-chromium/how-to/handle-urls.md
+            - name: Web app manifest
+              href: progressive-web-apps-chromium/how-to/web-app-manifests.md
 
-                - name: Handle protocols
-                  href: progressive-web-apps-chromium/how-to/handle-protocols.md
+            - name: Service Workers
+              href: progressive-web-apps-chromium/how-to/service-workers.md
 
-                - name: Display content in the title bar
-                  href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
+            - name: Store data on the device
+              href: progressive-web-apps-chromium/how-to/offline.md
 
-                - name: Share content with other apps
-                  href: progressive-web-apps-chromium/how-to/share.md
+            - name: Define icons and a theme color
+              href: progressive-web-apps-chromium/how-to/icon-theme-color.md
 
-                - name: Define app shortcuts
-                  href: progressive-web-apps-chromium/how-to/shortcuts.md
+            - name: Re-engage users with badges, notifications, and push messages
+              href: progressive-web-apps-chromium/how-to/notifications-badges.md
 
-                - name: Build operating system Widgets
-                  href: progressive-web-apps-chromium/how-to/widgets.md
+            - name: Handle files
+              href: progressive-web-apps-chromium/how-to/handle-files.md
 
-                - name: Synchronize and update in the background
-                  href: progressive-web-apps-chromium/how-to/background-syncs.md
+            - name: Handle URLs
+              href: progressive-web-apps-chromium/how-to/handle-urls.md
+
+            - name: Handle protocols
+              href: progressive-web-apps-chromium/how-to/handle-protocols.md
+
+            - name: Display content in the title bar
+              href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
+
+            - name: Share content with other apps
+              href: progressive-web-apps-chromium/how-to/share.md
+
+            - name: Define app shortcuts
+              href: progressive-web-apps-chromium/how-to/shortcuts.md
+
+            - name: Build operating system Widgets
+              href: progressive-web-apps-chromium/how-to/widgets.md
+
+            - name: Synchronize and update in the background
+              href: progressive-web-apps-chromium/how-to/background-syncs.md
 
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
@@ -1223,6 +1232,10 @@
             - name: Using frames
               href: webview2/concepts/frames.md
               displayName: Using frames in WebView2 apps, iframe # full title
+
+            - name: Printing
+              href: webview2/how-to/print.md
+              displayName: Printing from WebView2 apps # full title
 
             # updated h2: Experimental APIs, added a 2nd, new h3:
             - name: Understand the different WebView2 SDK versions
@@ -1436,9 +1449,9 @@
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
-    - name: Web platform
+    - name: Development tips for Microsoft Edge
       items:
-        - name: Web platform overview # new firstchild article
+        - name: Development tips for Microsoft Edge
           href: web-platform/web-platform.md
           displayName: 
 
