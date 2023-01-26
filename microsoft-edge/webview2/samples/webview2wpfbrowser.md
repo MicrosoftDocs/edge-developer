@@ -125,4 +125,5 @@ At the top of Visual Studio, set the build target, as follows:
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 API Reference](../webview2-api-reference.md)
 * [Get started with WebView2 in WPF apps](../get-started/wpf.md)
