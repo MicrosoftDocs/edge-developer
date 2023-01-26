@@ -17,7 +17,7 @@ ms.date: 02/01/2023
 
 <!-- Subtitle: . -->
 
-![Template](./devtools-110-images/template.png)
+![Template png](./devtools-110-images/template.png)
 
 See also:
 * [Overview of DevTools](../../../overview.md)
