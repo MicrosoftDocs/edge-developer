@@ -435,7 +435,6 @@ class ManagedStream : IRandomAccessStream
     public override bool CanWrite => s_.CanWrite;
 
 
-
     ulong IRandomAccessStream.Position => 
                                  { get => s_.Position; set => s_.Position = value; }
 
