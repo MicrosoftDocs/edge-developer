@@ -13,7 +13,7 @@ Use the **Elements** tool to inspect, edit, and debug your HTML and CSS.  You ca
 
 Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage.
 
-![The Elements tool.](../media/elements-tool.png)
+![The Elements tool](../media/elements-tool.png)
 
 
 <!-- ====================================================================== -->

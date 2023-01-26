@@ -14,7 +14,7 @@ Development of your webpages, web apps, and web-enabled products is robustly sup
 
 > "The impact of disability is radically changed on the Web because the Web removes barriers to communication and interaction that many people face in the physical world." - [W3C Standards for Web Design and Applications: Accessibility](https://w3.org/standards/webdesign/accessibility)
 
-The [World Health Organization](https://who.int/topics/disabilities) defines disability as "a mismatch in interaction between the features of a person's body and the features of the environment in which they live".  Disabilities range from situational disabilities, like limited mobility while holding a baby or bright sunlight on a phone, to other physical, auditory, visual, or age-related impairments.
+The [World Health Organization](https://www.who.int/) defines disability as "a mismatch in interaction between the features of a person's body and the features of the environment in which they live".  Disabilities range from situational disabilities, like limited mobility while holding a baby or bright sunlight on a phone, to other physical, auditory, visual, or age-related impairments.
 
 Designing websites and other technologies for inclusion creates an experience enjoyable by every person.  Inclusive design and web accessibility empowers and assists everyone to use the web.
 
@@ -50,7 +50,7 @@ The [Microsoft Windows UI Automation blog](/archive/blogs/winuiautomation/) has 
 
 The accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3.  The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation layer:
 
-![Content transformed to the engine model is projected into visual and accessibility views, presented as visual or accessible presentation.](media/accessibilityarchitecture.png)
+![Content transformed to the engine model is projected into visual and accessibility views, presented as visual or accessible presentation](media/accessibilityarchitecture.png)
 
 The Microsoft Edge team works with the W3C and other browser vendors on an ongoing basis to ensure that new web platform features have sufficient built-in accessibility.
 
