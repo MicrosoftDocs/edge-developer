@@ -359,7 +359,7 @@ Specify two `Windows` namespaces, as follows:
 
 
 <!-- ------------------------------ -->
-#### Adding a reference
+#### Adding a reference pointing to the adapter project
 
 Next, add a reference in the main project, pointing to the adapter project.  In the **webview2_uwp_sample** project (if WinUI 2) or the non-Adapter main project such as **MyWebView2WinUI3** (if WinUI 3), add a reference that points to the **WinRTAdapter** project, as follows.
 
@@ -622,7 +622,6 @@ The host app's web-side code (and the DevTools Console) can now call methods and
 
 Next, pass the WinRT object from the native side of the host app to the web side of the host app.  To do this, add an `InitializeWebView2Async` method that calls `AddHostObjectToScript`, as follows:
 
-<!-- resume here -->
 1. In Solution Explorer, expand the main project, such as **MyWebView2WinUI3**, and then select **MainWindow.xaml.cs**.
 
 1. Below the `MainWindow` constructor, add the following `InitializeWebView2Async` method:
