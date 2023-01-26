@@ -22,7 +22,7 @@ An overview of the changes involved, as described in [Overview of Manifest V3 - 
 
 * Network request modifications will be handled by the new `declarativeNetRequest` API.
 
-* Remotely hosted code will no longer be allowed. An extension will only be able to execute JavaScript that is included within its own package.
+* Remotely hosted code will no longer be allowed. An extension will only be able to run JavaScript that is included within its own package.
 
 * Promise support will be added to many methods. Callbacks will still be supported as an alternative.
 
