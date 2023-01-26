@@ -445,34 +445,18 @@ The following interfaces aren't accessible in WinUI 3:
 
 
 <!-- ====================================================================== -->
-## API Reference
-
-WinUI 3 API Reference (Windows App SDK):
-* [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2) - in API reference for Windows desktop apps > WinRT APIs.
-
-All platforms/languages:
-* [WebView2 API Reference](../webview2-api-reference.md) - API Reference for each platform.
-
-
-<!-- ====================================================================== -->
 ## See also
 
-developer.microsoft.com:
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
-
-Local pages:
+* [WebView2 API Reference](../webview2-api-reference.md)
 * [Introduction to Microsoft Edge WebView2](../index.md) - overview of features.
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 appsDevelopment best practices](../concepts/developer-guide.md)
+
+developer.microsoft.com:
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 GitHub:
 * [Getting Started with WebView2 in WinUI3](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted#readme)
 * [Spec: The WebView2 Xaml control](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - the WinUI 3.0 version of the WebView2 control.
 * [microsoft-ui-xaml repo > Issues](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
-
-<!--
-state why this link is in this tutorial page and what its relevance is, or else delete:
-* [Windows Update: FAQ](https://support.microsoft.com/help/12373).
--->

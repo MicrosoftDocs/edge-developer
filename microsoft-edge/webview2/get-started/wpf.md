@@ -562,6 +562,9 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 API Reference](../webview2-api-reference.md)
+   * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
+
 developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
@@ -570,11 +573,6 @@ Local pages:
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
-
-API Reference:
-* [API reference: WebView2 class in WebView2.Wpf namespace](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-* [API reference: WebView2.Wpf namespace](/dotnet/api/microsoft.web.webview2.wpf)
 
 GitHub:
 * [WebView2Samples repo > WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)
