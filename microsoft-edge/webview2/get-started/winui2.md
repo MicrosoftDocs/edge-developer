@@ -408,7 +408,6 @@ The following interfaces aren't accessible in WinUI 2:
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - articles about building and deploying WebView2 apps.
 
 GitHub:
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)

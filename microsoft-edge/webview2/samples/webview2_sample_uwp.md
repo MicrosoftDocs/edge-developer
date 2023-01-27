@@ -198,4 +198,5 @@ Now that the NuGet packages have been updated, build and run the project again:
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 API Reference](../webview2-api-reference.md)
 * [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md)

@@ -182,4 +182,5 @@ For more information, see [WebView2 CDP Extension](https://aka.ms/webviewcdpnuge
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 API Reference](../webview2-api-reference.md)
 * [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md)
