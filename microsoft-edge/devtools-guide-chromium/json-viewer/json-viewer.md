@@ -23,9 +23,9 @@ The **JSON viewer** tool is included in Microsoft Edge starting with version 110
 
 
 <!-- ====================================================================== -->
-## View JSON server responses reformatted for readability
+## View reformatted JSON server responses
 
-To view a formatted JSON response from a web server:
+To view a JSON response from a web server as reformatted JSON:
 
 1. Open a new tab or window in Microsoft Edge.
 
@@ -37,9 +37,9 @@ To view a formatted JSON response from a web server:
 
 
 <!-- ====================================================================== -->
-## View JSON files reformatted for readability
+## View reformatted JSON files
 
-To view a formatted JSON file stored on your device:
+To view a JSON file stored on your device as reformatted JSON:
 
 1. Open a new tab or window in Microsoft Edge.
 
