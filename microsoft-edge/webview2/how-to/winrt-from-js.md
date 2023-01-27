@@ -515,6 +515,8 @@ Add the CsWinRT and WinRTAdapter packages in the project file:
 <!-- ------------------------------ -->
 #### Install single-project MSIX packaging tools
 
+If your app is for WinUI 3 (Windows App SDK), do the steps in the present section.
+
 1. In Solution Explorer, right-click the **WinRTAdapter** project, and then select **Build**.
 
 1. Select **View** > **Error List**.
@@ -540,7 +542,7 @@ Add the CsWinRT and WinRTAdapter packages in the project file:
 
    ![VSIX Install Complete dialog](./winrt-from-js-images/vsix-install-complete.png)
 
-1. If your app is non-packaged app, you must also do the steps in [Enhancing Non-packaged Desktop Apps using Windows Runtime Components](https://blogs.windows.com/windowsdeveloper/2019/04/30/enhancing-non-packaged-desktop-apps-using-windows-runtime-components/).
+1. If your app is a non-packaged app, you must also do the steps in [Enhancing Non-packaged Desktop Apps using Windows Runtime Components](https://blogs.windows.com/windowsdeveloper/2019/04/30/enhancing-non-packaged-desktop-apps-using-windows-runtime-components/).
 
 1. In Solution Explorer, right-click the main project, and then select **Build**.
 
@@ -548,7 +550,7 @@ Add the CsWinRT and WinRTAdapter packages in the project file:
 
 1. Select **Debug** > **Start Debugging** (`F5`).
 
-   The WinUI 2 or WinUI 3 app opens:
+   The WinUI 3 app opens:
 
    ![The WinUI 3 app after adding projects but not WebView2 code](./winrt-from-js-images/winui3-running-app-initial-empty.png)
 
