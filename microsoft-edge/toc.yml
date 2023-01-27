@@ -995,6 +995,10 @@
                 - name: Microsoft Edge Add-ons API Reference
                   href: extensions-chromium/publish/api/addons-api-reference.md
 
+        - name: Samples
+          href: extensions-chromium/samples.md
+          displayName: Samples for Microsoft Edge extensions # full title
+
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Progressive Web Apps
@@ -1478,7 +1482,10 @@
         - name: Operating System Regional Data Display
           href: web-platform/os-regional-settings.md
           displayName: globalization, language, region, limited, intl, date, time, format
-          
+
+        - name: Samples
+          href: web-platform/samples.md
+          displayName: Samples for development tips for Microsoft Edge # full title
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords

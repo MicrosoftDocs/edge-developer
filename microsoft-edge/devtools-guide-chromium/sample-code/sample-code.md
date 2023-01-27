@@ -9,21 +9,78 @@ ms.date: 01/26/2023
 ---
 # Sample code for DevTools
 
-The sample code that's used by the DevTools documentation is in the [MicrosoftEdge/Demos](https://github.com/MicrosoftEdge/Demos) repo at GitHub.
-
+Use the demos in the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos#readme) repo to learn how to use Microsoft Edge to develop webpages and web apps.
 <!-- A few demos are or were at other locations, such as Glitch. -->
+
+The Readme pages at the repo have links to the **Code**, **Demo**, and documentation.
+
+In the repo's Readme pages, click a **Demo** link, right-click the webpage, and then select **Inspect** to open DevTools.
+
+
+<!-- ====================================================================== -->
+## List of samples
+
+<!-- Jan 27, 2023 snapshot -->
+The Demos repo includes the following samples.
+
+
+<!-- ------------------------------ -->
+#### Microsoft Edge DevTools
+
+* **Edge DevTools VS Code extension sourcemap support** -- Simple app to test the sourcemap support for CSS mirroring in the Microsoft Edge DevTools extension for Visual studio code.
+
+* **TODO app** -- A simple To Do app used in the Microsoft DevTools documentation.
+
+* **Detached Elements** -- A chat-like demo application with DOM memory leaks to demonstrate how to use the **Detached Elements** tool in DevTools.
+
+* **3D View** -- A sample web page used to demonstrate how to use the **3D View** tool in DevTools.
+
+* **Animal Shelter** -- A sample website with accessibility issues, used to demonstrate how to use the accessibility issues detection features of DevTools.
+
+* **DevTools Console demos** -- Multiple web pages to demonstrate various DevTools **Console** features.
+
+* **Contrast bug fix** -- Demo page used in a Microsoft Edge blog post about improving contrast in DevTools.
+
+* **DevTools CSS getting started docs** -- Source code for a demo page used in the DevTools CSS getting started docs.
+
+* **DevTools DOM getting started docs** -- Source code for a demo page used in the DevTools DOM getting started docs.
+
+* **DevTools Inspect tool docs** -- Source code for a demo page used in the DevTools **Inspect** tool docs.
+
+* **DevTools JS getting started docs** -- Source code for a demo page used in the DevTools JavaScript getting started docs.
+
+* **DevTools recording heap snapshots docs** -- Source code for a demo page used in the DevTools heap snapshot recording docs.
+
+* **DevTools perf activities tabs docs** -- Source code for a demo page used in the DevTools performance activities tabs docs.
+
+* **DevTools perf getting started docs** -- Source code for a demo page used in the DevTools performance getting started docs.
+
+* **DevTools `:target` pseudo docs** -- Source code for a demo page used in the DevTools `:target` pseudo-class feature docs.
+
+* **DevTools network inspection docs** -- Source code for a demo page used in the DevTools network inspection docs.
+
+* **DevTools workspaces docs** -- Source code for a demo page used in the DevTools workspaces docs.
+
+* **Heap snapshot visualizer** -- Source code for the Heap snapshot visualizer extension.
+
+* **JSON Dummy Data** -- JSON data files to use with the native JSON viewer in Microsoft Edge 110+.
+
+The Demos repo also contains other samples for development with Microsoft Edge:
+* [Samples for Microsoft Edge extensions](../../extensions-chromium/samples.md)
+* [Progressive Web App demos](../../progressive-web-apps-chromium/demo-pwas.md)
+* [Samples for development tips for Microsoft Edge](../../web-platform/samples.md)
 
 
 <!-- ====================================================================== -->
 ## To Do Demo
 
-Programming instructions often present a basic To Do list app, as one degree more complex than a Hello World program.  This To Do demo has a `.html`, `.css`, and `.js` file, and is useful for learning how to use DevTools to develop webpages and web apps.
+This demo To Do webpage has an `.html` file, a `.js` file, and `.css` files.
+
+![To Do demo and DevTools with the Sources tool selected](./sample-code-images/demo-to-do.png)
 
 * Rendered page: [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)
 
 * Source code: [Demos > /demo-to-do/ (Basic To Do App)](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
-
-![To Do demo and DevTools with the Sources tool selected](./sample-code-images/demo-to-do.png)
 
 
 <!-- ====================================================================== -->
@@ -105,32 +162,39 @@ This is the source code repo and its directory which stores the files for this d
 <!-- ====================================================================== -->
 ## Download or clone the Demos repo
 
-The Demos repo is useful for following the various DevTools documentation.  If you want, instead of cloning the repo, you can open an existing project directory if you have one.
-
-You can do any of the following:
-* Download the repo -- you get a static snapshot.
-   * Click the **Code** dropdown button, and then click **Download ZIP**.
-* Clone the repo -- enables updating your local copy when the repo is updated.
-   * Click the **Code** dropdown button, and then click the **Copy** button next to the URL **https://github.com/MicrosoftEdge/Demos.git**.  You can then paste the URL into git bash or a Visual Studio Code dialog, for example.
-   * Click the **Code** dropdown button, and then click **Open with Visual Studio** if it appears.  A list of **Handler Selector** items is offered, one per Visual Studio instance installed.  This option appears only if you're logged in.
-
-If you clone the repo, the GitHub UI and various tools support this cloning.  We'll show cloning by using Visual Studio Code, but you can use many other coding tools, such as GitHub Desktop, Visual Studio, or git bash shell.
-
-As another alternative, instead of cloning the entire directory, you can download only a single demo's directory.  For example, go to [https://download-directory.github.io/](https://download-directory.github.io/) and then paste the URL [https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do).  The `.zip` file is placed in your download directory.  Unzip these webpage source files into a suitable location.  The tutorial [Get started using the DevTools extension for Visual Studio Code](./get-started.md) uses the example location:
-
-`C:\Users\username\Documents\GitHub\Demos\demo-to-do\`
+The Demos repo is useful for following the various DevTools documentation.
 
 
-To clone the **Demos** repo:
+#### Download the Demos repo
 
-1. Go to [MicrosoftEdge/Demos repo](https://github.com/MicrosoftEdge/Demos/).
+To download the Demos repo:
+
+1. In a new window or tab, go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos#readme) repo.
+
+1. Click the **Code** dropdown button, and then click **Download ZIP**.
+
+   The `.zip` file is placed in your download directory.  Unzip these webpage source files into a suitable location.
+
+To download a single directory of the Demos repo:
+
+1. Go to [https://download-directory.github.io/](https://download-directory.github.io/) and then paste the URL [https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do).  
+
+   The `.zip` file is placed in your download directory.  Unzip these webpage source files into a suitable location.
+
+
+#### Clone the Demos repo
+
+Cloning a repo enables updating your local copy when the repo is updated.  The GitHub UI and various tools support cloning.  We'll show cloning by using Visual Studio Code, but you can use many other coding tools, such as GitHub Desktop, Visual Studio, or git bash shell.
+
+To clone the repo:
+
+1. In a new window or tab, go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos#readme) repo.
 
 1. If the green **Code** button isn't shown, click **Demos** in the path **Microsoft Edge** / **Demos** in the upper left to go to the main page of the repo.
 
-1. Click the green **Code** button, and then select the **Copy** button.  This article assumes you're using the **Source Control** features within Visual Studio Code.  Or, you can use one of the other methods that are provided, if you know that you want to use that approach instead:
-   *  **Open with GitHub Desktop**
-   *  **Open with Visual Studio**
-   *  **Download ZIP**
+1. Click the **Code** dropdown button, and then click the **Copy** button next to the URL **https://github.com/MicrosoftEdge/Demos.git**.  You can then paste the URL into git bash or a Visual Studio Code dialog, for example.
+
+   Or, click the **Code** dropdown button, and then click **Open with Visual Studio** if it appears.  A list of **Handler Selector** items is offered, one per Visual Studio instance installed.  This option appears only if you're logged in.
 
    ![Cloning the MicrosoftEdge/Demos repo](./sample-code-images/clone-repo.png)
 
