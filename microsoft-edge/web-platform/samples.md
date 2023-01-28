@@ -20,7 +20,7 @@ In the repo's Readme pages, click a **Demo** link, right-click the webpage, and 
 <!-- ====================================================================== -->
 ## List of samples
 
-| Webpage title or tab name | Description | Repo directory |
+| Name | Description | Repo directory |
 |---|---|---|
 | CSS Custom Highlight API demo | How to programmatically create and remove custom highlights on a web page. | [custom-highlight-api](https://github.com/MicrosoftEdge/Demos/tree/main/custom-highlight-api) |
 | EyeDropper API demos | How to use the EyeDropper API to create a color sampling tool from JavaScript. | [eyedropper](https://github.com/MicrosoftEdge/Demos/tree/main/eyedropper) |
