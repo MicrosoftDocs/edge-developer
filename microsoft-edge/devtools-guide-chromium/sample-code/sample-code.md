@@ -20,35 +20,33 @@ In the repo's Readme pages, click a **Demo** link, right-click the webpage, and 
 <!-- ====================================================================== -->
 ## List of samples
 
-The Demos repo includes the following samples.
-
-
-<!-- ------------------------------ -->
-#### Microsoft Edge DevTools
+The following samples in the Demos repo demonstrate DevTools features.
 
 <!-- Jan. 27, 2023 snapshot -->
 
-| Directory | Title in page, or tab name | Description |
+| Name | Description | Repo directory |
 |---|---|---|
-| `css-mirroring-sourcemaps-demo` | n/a | Sourcemap support for CSS mirroring in the Microsoft Edge DevTools extension for Visual Studio Code. |
-| `demo-to-do` | My tasks/TODO app | A simple To Do app used in DevTools documentation. |
-| `detached-elements` | (url) | A chat-like demo with DOM memory leaks showing how to use the **Detached Elements** tool. |
-| `devtools-3d` | 3D View demo | Demonstrates the **3D View** tool. |
-| `devtools-a11y-testing` | Animal shelter/Demo page with accessibility issues | Demonstrates features to detect accessibility issues. |
-| `devtools-console` | DevTools Console panel demo pages | 15 webpages demonstrating **Console** features. |
-| `devtools-contrast-bugfix` | Testing all badges in DevTools for contrast issues | For a blog post about improving contrast using DevTools. |
-| `devtools-css-get-started` | CSS Examples | Used in CSS getting started docs. |
-| `devtools-dom-get-started` | DOM Examples | Used in the DOM getting started docs. |
-| `devtools-inspect` | Inspector Demo | Used in **Inspect** tool docs. |
-| `devtools-js-get-started` | Demo: Get Started Debugging JavaScript | Used in JavaScript getting started docs. |
-| `devtools-memory-heap-snapshot` | n/a | Used in heap snapshot recording docs. |
-| `devtools-performance-activitytabs` | Activity Tabs Demo | For **Performance** tool docs about the **Call Tree**, **Bottom-Up**, and **Event Log** tabs. |
-| `devtools-performance-get-started` | Sluggish Animation |  For Performance getting started docs. |
-| `devtools-target-pseudo` | CSS :target demo | For `:target` pseudo-class feature docs. |
-| `heap-snapshot-visualizer` | n/a | For the **Heap Snapshot Visualizer** extension. |
-| `json-dummy-data` | JSON Dummy data files | For demonstrating the JSON viewer. |
-| `network-tutorial` | Inspect Network Activity Demo | For **Network** tool docs. |
-| `workspaces` | DevTools Workspaces Demo | For **Sources** tool workspaces (**Filesystem** tab) docs. |
+| CSS mirroring sourcemaps | Sourcemap support for CSS mirroring in the Microsoft Edge DevTools extension for Visual Studio Code. | [css-mirroring-sourcemaps-demo](https://github.com/MicrosoftEdge/Demos/tree/main/css-mirroring-sourcemaps-demo) |
+| My tasks/TODO app | A simple To Do app used in various DevTools documentation. | [demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) |
+| Detached elements | A chat-like demo with DOM memory leaks showing how to use the **Detached Elements** tool. | [detached-elements](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) |
+| 3D View demo | Demonstrates the **3D View** tool. | [devtools-3d](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-3d) |
+| Animal shelter/Accessibility issues | Demonstrates features to detect accessibility issues. | [devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) |
+| Console panel demo pages | 15 webpages demonstrating **Console** features. | [devtools-console](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-console) |
+| Testing all badges in DevTools for contrast issues | Used by a blog post about improving contrast using DevTools. | [devtools-contrast-bugfix](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-contrast-bugfix) |
+| CSS Examples | Used in CSS getting started docs. | [devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) |
+| DOM Examples | Used in the DOM getting started docs. | [devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) |
+| Inspector demo | Used in **Inspect** tool docs. | [devtools-inspect](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-inspect) |
+| Get Started Debugging JavaScript | Used in JavaScript getting started docs. | [devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) |
+| Memory heap snapshot | Used in heap snapshot recording docs. | [devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) |
+| Performance Activity Tabs demo | Used in **Performance** tool docs about the **Call Tree**, **Bottom-Up**, and **Event Log** tabs. | [devtools-performance-activitytabs](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) |
+| Performance: Sluggish Animation |  Used in Performance getting started docs. | [devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) |
+| CSS :target demo | Used in `:target` pseudo-class feature docs. | [devtools-target-pseudo](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-target-pseudo) |
+| Heap Snapshot Visualizer | Used in the **Heap Snapshot Visualizer** extension. | [heap-snapshot-visualizer](https://github.com/MicrosoftEdge/Demos/tree/main/heap-snapshot-visualizer) |
+| JSON Dummy data files | Used for demonstrating the JSON viewer. | [json-dummy-data](https://github.com/MicrosoftEdge/Demos/tree/main/json-dummy-data) |
+| Inspect Network Activity demo | Used in **Network** tool docs. | [network-tutorial](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) |
+| Workspaces Filesystem demo | Used in **Sources** tool workspaces (**Filesystem** tab) docs. | [workspaces](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces) |
+
+<!-- the **Name** column above shows the title of the demo webpage, or the tab name, or a descriptive name, then lowercased 'demo' -->
 
 
 The Demos repo also contains other samples for development with Microsoft Edge:

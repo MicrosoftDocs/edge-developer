@@ -20,12 +20,14 @@ In the repo's Readme pages, click a **Demo** link, right-click the webpage, and 
 <!-- ====================================================================== -->
 ## List of samples
 
-| Directory | Title in page, or tab name | Description |
+| Webpage title or tab name | Description | Repo directory |
 |---|---|---|
-| `custom-highlight-api` | CSS Custom Highlight API demo | How to programmatically create and remove custom highlights on a web page. |
-| `eyedropper` | EyeDropper API demos | How to use the EyeDropper API to create a color sampling tool from JavaScript. |
-| `reader` | Article Reader | An article reader app used to demonstrate how to use various web APIs such as CSS Custom Highlight, `<selectmenu>`, EyeDropper, CSS and JSON modules, Scroll animation timeline, Async Clipboard. |
-| `selectmenu` | Open UI's `<selectmenu>` demos | Shows how the Open UI's `<selectmenu>` element can be used. |
+| CSS Custom Highlight API demo | How to programmatically create and remove custom highlights on a web page. | [custom-highlight-api](https://github.com/MicrosoftEdge/Demos/tree/main/custom-highlight-api) |
+| EyeDropper API demos | How to use the EyeDropper API to create a color sampling tool from JavaScript. | [eyedropper](https://github.com/MicrosoftEdge/Demos/tree/main/eyedropper) |
+| Article Reader | An article reader app used to demonstrate how to use various web APIs, such as CSS Custom Highlight, `<selectmenu>`, EyeDropper, CSS and JSON modules, Scroll animation timeline, and Async Clipboard. | [reader](https://github.com/MicrosoftEdge/Demos/tree/main/reader) |
+| Open UI `<selectmenu>` demos | Shows how the Open UI's `<selectmenu>` element can be used. | [selectmenu](https://github.com/MicrosoftEdge/Demos/tree/main/selectmenu) |
+
+<!-- the **Name** column above shows the title of the demo webpage, or the tab name, or a descriptive name, then lowercased 'demo' -->
 
 
 <!-- ====================================================================== -->
