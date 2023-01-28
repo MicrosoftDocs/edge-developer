@@ -28,27 +28,27 @@ The Demos repo includes the following samples.
 
 <!-- Jan. 27, 2023 snapshot -->
 
-| Directory | Title in page | Tab name | Description |
-|---|---|---|---|
-| `css-mirroring-sourcemaps-demo` | n/a | n/a | Sourcemap support for CSS mirroring in the Microsoft Edge DevTools extension for Visual Studio Code. |
-| `demo-to-do` | **My tasks** | **TODO app** | A simple To Do app used in DevTools documentation. |
-| `detached-elements` | none | (url) | A chat-like demo with DOM memory leaks showing how to use the **Detached Elements** tool. |
-| `devtools-3d` | **Microsoft Edge DevTools 3D View tool demo** | **3D View demo** | Demonstrates the **3D View** tool. |
-| `devtools-a11y-testing` | **Animal shelter** | **Demo page with accessibility issues** | Demonstrates features to detect accessibility issues. |
-| `devtools-console` | **DevTools Console panel demo pages** | **DevTools Console panel demo pages** | 15 webpages demonstrating **Console** features. |
-| `devtools-contrast-bugfix` | **Light theme**/**Dark theme** | **Testing all badges in DevTools for contrast issues** | For a blog post about improving contrast using DevTools. |
-| `devtools-css-get-started` | **CSS Examples** | same as title | Used in CSS getting started docs. |
-| `devtools-dom-get-started` | **DOM Examples** | same as title | Used in the DOM getting started docs. |
-| `devtools-inspect` | **Inspect Demo** | **Inspector Demonstration** | Used in **Inspect** tool docs. |
-| `devtools-js-get-started` | **Demo: Get Started Debugging JavaScript** | same as title | Used in JavaScript getting started docs. |
-| `devtools-memory-heap-snapshot` | n/a | n/a | Used in heap snapshot recording docs. |
-| `devtools-performance-activitytabs` | **Activity Tabs Demo** | same as title | For **Performance** tool docs about the **Call Tree**, **Bottom-Up**, and **Event Log** tabs. |
-| `devtools-performance-get-started` | none | **Sluggish Animation** |  For Performance getting started docs. |
-| `devtools-target-pseudo` | none | **CSS :target demo** | For `:target` pseudo-class feature docs. |
-| `heap-snapshot-visualizer` | n/a | n/a | For the **Heap Snapshot Visualizer** extension. |
-| `json-dummy-data` | **JSON Dummy data files** | **JSON Dummy Data** | For demonstrating the JSON viewer. |
-| `network-tutorial` | **Inspect Network Activity Demo** | same as title | For **Network** tool docs. |
-| `workspaces` | **DevTools Workspaces Demo** | same as title | For **Sources** tool workspaces (**Filesystem** tab) docs. |
+| Directory | Title in page, or tab name | Description |
+|---|---|---|
+| `css-mirroring-sourcemaps-demo` | n/a | Sourcemap support for CSS mirroring in the Microsoft Edge DevTools extension for Visual Studio Code. |
+| `demo-to-do` | My tasks/TODO app | A simple To Do app used in DevTools documentation. |
+| `detached-elements` | (url) | A chat-like demo with DOM memory leaks showing how to use the **Detached Elements** tool. |
+| `devtools-3d` | 3D View demo | Demonstrates the **3D View** tool. |
+| `devtools-a11y-testing` | Animal shelter/Demo page with accessibility issues | Demonstrates features to detect accessibility issues. |
+| `devtools-console` | DevTools Console panel demo pages | 15 webpages demonstrating **Console** features. |
+| `devtools-contrast-bugfix` | Testing all badges in DevTools for contrast issues | For a blog post about improving contrast using DevTools. |
+| `devtools-css-get-started` | CSS Examples | Used in CSS getting started docs. |
+| `devtools-dom-get-started` | DOM Examples | Used in the DOM getting started docs. |
+| `devtools-inspect` | Inspector Demo | Used in **Inspect** tool docs. |
+| `devtools-js-get-started` | Demo: Get Started Debugging JavaScript | Used in JavaScript getting started docs. |
+| `devtools-memory-heap-snapshot` | n/a | Used in heap snapshot recording docs. |
+| `devtools-performance-activitytabs` | Activity Tabs Demo | For **Performance** tool docs about the **Call Tree**, **Bottom-Up**, and **Event Log** tabs. |
+| `devtools-performance-get-started` | Sluggish Animation |  For Performance getting started docs. |
+| `devtools-target-pseudo` | CSS :target demo | For `:target` pseudo-class feature docs. |
+| `heap-snapshot-visualizer` | n/a | For the **Heap Snapshot Visualizer** extension. |
+| `json-dummy-data` | JSON Dummy data files | For demonstrating the JSON viewer. |
+| `network-tutorial` | Inspect Network Activity Demo | For **Network** tool docs. |
+| `workspaces` | DevTools Workspaces Demo | For **Sources** tool workspaces (**Filesystem** tab) docs. |
 
 
 The Demos repo also contains other samples for development with Microsoft Edge:
