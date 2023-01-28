@@ -20,12 +20,12 @@ In the repo's Readme pages, click a **Demo** link, right-click the webpage, and 
 <!-- ====================================================================== -->
 ## List of samples
 
-| Demo | Description |
-|---|---|
-| **CSS Custom Highlight API** | How to programmatically create and remove custom highlights on a web page. |
-| **EyeDropper API** | How to use the EyeDropper API to create a color sampling tool from JavaScript. |
-| **Reader app** | An article reader app used to demonstrate how to use various web APIs such as CSS Custom Highlight, `<selectmenu>`, EyeDropper, CSS and JSON modules, Scroll animation timeline, Async Clipboard. |
-| **Selectmenu demos** | Demo page showing how the Open UI's `<selectmenu>` element can be used. |
+| Directory | Title in page | Tab name | Description |
+|---|---|---|---|
+| `custom-highlight-api` | **Custom Highlight API** | **CSS Custom Highlight API demo** | How to programmatically create and remove custom highlights on a web page. |
+| `eyedropper` | **EyeDropper API demos** | **EyeDropper API demos** | How to use the EyeDropper API to create a color sampling tool from JavaScript. |
+| `reader` | **Paste an article** | **Reader** | An article reader app used to demonstrate how to use various web APIs such as CSS Custom Highlight, `<selectmenu>`, EyeDropper, CSS and JSON modules, Scroll animation timeline, Async Clipboard. |
+| `selectmenu` | **Open UI's `<selectmenu>` demos** | **Open UI's selectmenu demos** | Shows how the Open UI's `<selectmenu>` element can be used. |
 
 
 <!-- ====================================================================== -->

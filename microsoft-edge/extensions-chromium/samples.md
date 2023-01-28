@@ -20,9 +20,13 @@ In the repo's Readme pages, click a **Demo** link, right-click the webpage, and 
 <!-- ====================================================================== -->
 ## List of samples
 
-| Demo | Description |
+| Directory | Description |
 |---|---|
-| **Create a DevTools extension** | Learn to build a Microsoft Edge extension that extends DevTools. |
+| `devtools-extension` | Learn to build a Microsoft Edge extension that extends DevTools. |
+
+<!-- 
+if add more items, use table header from [List of samples](../devtools-guide-chromium/sample-code/sample-code.md#list-of-samples) in _Sample code for DevTools_
+-->
 
 
 <!-- ====================================================================== -->
