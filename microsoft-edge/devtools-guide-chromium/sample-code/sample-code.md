@@ -48,6 +48,7 @@ The following samples in the Demos repo demonstrate DevTools features.
 
 <!-- the **Name** column above shows the title of the demo webpage, or the tab name, or a descriptive name, then lowercased 'demo' -->
 
+A few of these samples are shown below.
 
 The Demos repo also contains other samples for development with Microsoft Edge:
 * [Samples for Microsoft Edge extensions](../../extensions-chromium/samples.md)
@@ -56,21 +57,21 @@ The Demos repo also contains other samples for development with Microsoft Edge:
 
 
 <!-- ====================================================================== -->
-## To Do Demo
+## To Do demo
 
-This demo To Do webpage has an `.html` file, a `.js` file, and `.css` files.
+This simple To Do list webpage is used to demonstrate various DevTools features.  It has an `.html` file, a `.js` file, and `.css` files:
 
 ![To Do demo and DevTools with the Sources tool selected](./sample-code-images/demo-to-do.png)
 
 * Rendered page: [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)
 
-* Source code: [Demos > /demo-to-do/ (Basic To Do App)](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
+* Source code: [demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
 
 
 <!-- ====================================================================== -->
 ## Demo webpage with accessibility issues
 
-This demo webpage is useful for exploring various DevTools features.
+This Animal Shelter demo webpage is useful for exploring various DevTools features, including accessibility testing features.
 
 1. Open the [Demo webpage with accessibility issues](https://MicrosoftEdge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
