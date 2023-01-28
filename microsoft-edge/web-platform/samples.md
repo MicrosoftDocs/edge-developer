@@ -11,7 +11,6 @@ ms.date: 01/27/2023
 # Samples for development tips for Microsoft Edge
 
 Use the demos in the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos#readme) repo to learn how to use Microsoft Edge to develop webpages and web apps.
-<!-- A few demos are or were at other locations, such as Glitch. -->
 
 The Readme pages at the repo have links to the **Code**, **Demo**, and documentation.
 
@@ -21,13 +20,12 @@ In the repo's Readme pages, click a **Demo** link, right-click the webpage, and 
 <!-- ====================================================================== -->
 ## List of samples
 
-* **CSS Custom Highlight API** -- How to programmatically create and remove custom highlights on a web page.
-
-* **EyeDropper API** -- How to use the EyeDropper API to create a color sampling tool from JavaScript.
-
-* **Reader app** -- An article reader app used to demonstrate how to use various web APIs such as CSS Custom Highlight, `<selectmenu>`, EyeDropper, CSS and JSON modules, Scroll animation timeline, Async Clipboard.
-
-* **Selectmenu demos** -- Demo page showing how the Open UI's `<selectmenu>` element can be used.
+| Demo | Description |
+|---|---|
+| **CSS Custom Highlight API** | How to programmatically create and remove custom highlights on a web page. |
+| **EyeDropper API** | How to use the EyeDropper API to create a color sampling tool from JavaScript. |
+| **Reader app** | An article reader app used to demonstrate how to use various web APIs such as CSS Custom Highlight, `<selectmenu>`, EyeDropper, CSS and JSON modules, Scroll animation timeline, Async Clipboard. |
+| **Selectmenu demos** | Demo page showing how the Open UI's `<selectmenu>` element can be used. |
 
 
 <!-- ====================================================================== -->

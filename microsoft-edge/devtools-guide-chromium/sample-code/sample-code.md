@@ -27,43 +27,27 @@ The Demos repo includes the following samples.
 <!-- ------------------------------ -->
 #### Microsoft Edge DevTools
 
-* **Edge DevTools VS Code extension sourcemap support** -- Simple app to test the sourcemap support for CSS mirroring in the Microsoft Edge DevTools extension for Visual studio code.
-
-* **TODO app** -- A simple To Do app used in the Microsoft DevTools documentation.
-
-* **Detached Elements** -- A chat-like demo application with DOM memory leaks to demonstrate how to use the **Detached Elements** tool in DevTools.
-
-* **3D View** -- A sample web page used to demonstrate how to use the **3D View** tool in DevTools.
-
-* **Animal Shelter** -- A sample website with accessibility issues, used to demonstrate how to use the accessibility issues detection features of DevTools.
-
-* **DevTools Console demos** -- Multiple web pages to demonstrate various DevTools **Console** features.
-
-* **Contrast bug fix** -- Demo page used in a Microsoft Edge blog post about improving contrast in DevTools.
-
-* **DevTools CSS getting started docs** -- Source code for a demo page used in the DevTools CSS getting started docs.
-
-* **DevTools DOM getting started docs** -- Source code for a demo page used in the DevTools DOM getting started docs.
-
-* **DevTools Inspect tool docs** -- Source code for a demo page used in the DevTools **Inspect** tool docs.
-
-* **DevTools JS getting started docs** -- Source code for a demo page used in the DevTools JavaScript getting started docs.
-
-* **DevTools recording heap snapshots docs** -- Source code for a demo page used in the DevTools heap snapshot recording docs.
-
-* **DevTools perf activities tabs docs** -- Source code for a demo page used in the DevTools performance activities tabs docs.
-
-* **DevTools perf getting started docs** -- Source code for a demo page used in the DevTools performance getting started docs.
-
-* **DevTools `:target` pseudo docs** -- Source code for a demo page used in the DevTools `:target` pseudo-class feature docs.
-
-* **DevTools network inspection docs** -- Source code for a demo page used in the DevTools network inspection docs.
-
-* **DevTools workspaces docs** -- Source code for a demo page used in the DevTools workspaces docs.
-
-* **Heap snapshot visualizer** -- Source code for the Heap snapshot visualizer extension.
-
-* **JSON Dummy Data** -- JSON data files to use with the native JSON viewer in Microsoft Edge 110+.
+| Demo | Description |
+|---|---|
+| **Edge DevTools VS Code extension sourcemap support** | Simple app to test the sourcemap support for CSS mirroring in the Microsoft Edge DevTools extension for Visual studio code. |
+| **TODO app** | A simple To Do app used in the Microsoft DevTools documentation. |
+| **Detached Elements** | A chat-like demo application with DOM memory leaks to demonstrate how to use the **Detached Elements** tool in DevTools. |
+| **3D View** | A sample web page used to demonstrate how to use the **3D View** tool in DevTools. |
+| **Animal Shelter** | A sample website with accessibility issues, used to demonstrate how to use the accessibility issues detection features of DevTools. |
+| **DevTools Console demos** | Multiple web pages to demonstrate various DevTools **Console** features. |
+| **Contrast bug fix** | Demo page used in a Microsoft Edge blog post about improving contrast in DevTools. |
+| **DevTools CSS getting started docs** | Source code for a demo page used in the DevTools CSS getting started docs. |
+| **DevTools DOM getting started docs** | Source code for a demo page used in the DevTools DOM getting started docs. |
+| **DevTools Inspect tool docs** | Source code for a demo page used in the DevTools **Inspect** tool docs. |
+| **DevTools JS getting started docs** | Source code for a demo page used in the DevTools JavaScript getting started docs. |
+| **DevTools recording heap snapshots docs** | Source code for a demo page used in the DevTools heap snapshot recording docs. |
+| **DevTools perf activities tabs docs** | Source code for a demo page used in the DevTools performance activities tabs docs. |
+| **DevTools perf getting started docs** | Source code for a demo page used in the DevTools performance getting started docs. |
+| **DevTools `:target` pseudo docs** | Source code for a demo page used in the DevTools `:target` pseudo-class feature docs. |
+| **DevTools network inspection docs** | Source code for a demo page used in the DevTools network inspection docs. |
+| **DevTools workspaces docs** | Source code for a demo page used in the DevTools workspaces docs. |
+| **Heap snapshot visualizer** | Source code for the Heap snapshot visualizer extension. |
+| **JSON Dummy Data** | JSON data files to use with the native JSON viewer in Microsoft Edge 110+. |
 
 The Demos repo also contains other samples for development with Microsoft Edge:
 * [Samples for Microsoft Edge extensions](../../extensions-chromium/samples.md)
