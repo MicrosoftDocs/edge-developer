@@ -32,6 +32,7 @@
 
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
+            # move eleventh oldest into Archive bucket
             - name: What's New in DevTools Archive
               href: devtools-guide-chromium/whats-new/whats-new.md
 
