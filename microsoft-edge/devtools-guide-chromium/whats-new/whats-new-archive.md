@@ -9,7 +9,7 @@ ms.date: 01/23/2023
 ---
 # Archived What's New entries
 
-This page is an archive for all of the legacy [What's New in DevTools](whats-new.md) entries published after each release.
+The following What's New entries cover older releases.
 
 <!-- adjust placement and indent in toc.yml too -->
 
