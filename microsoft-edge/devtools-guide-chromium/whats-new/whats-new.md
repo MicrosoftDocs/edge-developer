@@ -1,5 +1,5 @@
 ---
-title: What's new in Microsoft Edge DevTools
+title: What's New in Microsoft Edge DevTools
 description: New features and fixes in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,11 +7,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/16/2022
 ---
-# What's new in Microsoft Edge DevTools
+# What's New in Microsoft Edge DevTools
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](includes/edge-whats-new-note.md)]
 
-<!-- add new pages to toc too -->
+<!-- maintenance notes:
+* add the new page to toc.yml
+* move eleventh oldest link into whats-new-archive.md
+-->
 
 * [What's New in DevTools (Microsoft Edge 109)](2023/01/devtools-109.md)
 * [What's New in DevTools (Microsoft Edge 108)](2022/12/devtools-108.md)
