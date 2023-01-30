@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/23/2023
+ms.date: 01/30/2023
 ---
 # What's New in DevTools archive
 
