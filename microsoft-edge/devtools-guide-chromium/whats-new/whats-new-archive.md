@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/23/2023
 ---
-# Archived What's New entries
+# What's New in DevTools archive
 
 The following What's New entries cover older releases.
 
