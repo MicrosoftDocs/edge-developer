@@ -23,4 +23,4 @@ ms.date: 05/16/2022
 * [What's New in DevTools (Microsoft Edge 102)](2022/05/devtools-102.md)
 * [What's New in DevTools (Microsoft Edge 101)](2022/04/devtools-101.md)
 * [What's New in DevTools (Microsoft Edge 100)](2022/03/devtools-100.md)
-* [What's New in DevTools Archive](./whats-new-archive.md)
+* [What's New in DevTools archive](./whats-new-archive.md)
