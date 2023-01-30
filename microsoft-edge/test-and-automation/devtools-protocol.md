@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/19/2021
+ms.date: 1/30/2023
 ---
 # DevTools Protocol
 
