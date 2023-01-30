@@ -11,7 +11,7 @@ ms.date: 01/30/2023
 
 The following What's New entries cover older releases.
 
-<!-- adjust placement and indent in toc.yml too -->
+<!-- maintenance notes: adjust placement and indent in toc.yml too -->
 
 * [What's New in DevTools (Microsoft Edge 99)](2022/03/devtools.md)
 * [What's New in DevTools (Microsoft Edge 98)](2022/02/devtools.md)
