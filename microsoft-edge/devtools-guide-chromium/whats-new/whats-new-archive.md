@@ -1,5 +1,5 @@
 ---
-title: What's new in Microsoft Edge DevTools Archives
+title: Archived What's New entries
 description: New features and fixes in Microsoft Edge DevTools Archives
 author: MSEdgeTeam
 ms.author: msedgedevrel
