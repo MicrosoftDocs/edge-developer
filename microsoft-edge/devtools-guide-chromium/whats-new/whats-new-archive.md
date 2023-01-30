@@ -32,3 +32,6 @@ The following What's New entries cover older releases.
 * [What's New in DevTools (Microsoft Edge 83)](2020/03/devtools.md)
 * [What's New in DevTools (Microsoft Edge 81)](2020/01/devtools.md)
 * [What's New in DevTools (Microsoft Edge 80)](2019/12/devtools.md)
+
+See also:
+* [What's New in Microsoft Edge DevTools](whats-new.md)
