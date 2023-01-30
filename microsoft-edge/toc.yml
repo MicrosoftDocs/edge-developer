@@ -69,9 +69,6 @@
             - name: Microsoft Edge 98
               href: devtools-guide-chromium/whats-new/2022/02/devtools.md
 
-            - name: Microsoft Edge 97
-              href: devtools-guide-chromium/whats-new/2022/01/devtools.md
-
             # keep 10 items above
             - name: Archive
               items:
