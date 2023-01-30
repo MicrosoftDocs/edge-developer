@@ -29,7 +29,7 @@ To view a JSON response from a web server as reformatted JSON:
 
 1. Open a new tab or window in Microsoft Edge.
 
-1. Type a URL that returns JSON data in the address bar. For example, use [this sample JSON response](https://microsoftedge.github.io/Demos/json-dummy-data/411k-min.json). You can find more samples JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://github.com/MicrosoftEdge/Demos/tree/main/json-dummy-data).
+1. Type a URL that returns JSON data in the address bar. For example, use [this sample JSON response](https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json). You can find more samples JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://github.com/MicrosoftEdge/Demos/tree/main/json-dummy-data).
 
 1. Microsoft Edge detects that the returned data is JSON and formats it automatically:
 
