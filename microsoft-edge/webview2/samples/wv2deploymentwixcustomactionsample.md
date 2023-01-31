@@ -138,7 +138,7 @@ If you want the app to download the Evergreen WebView2 Runtime Bootstrapper (`Mi
 
 1. Comment out other `<Binary>` and `<CustomAction>` elements under `Step 4`.
 
-1. Under `<!-- Step 5: Config run sequence of custom action -->`, uncomment the `<Custom Action='DownloadAndInvokeBootstrapper' ...>` element below `<!-- [Download Bootstrapper] ...-->`.
+1. Under `<!-- Step 5: Config execute sequence of custom action -->`, uncomment the `<Custom Action='DownloadAndInvokeBootstrapper' ...>` element below `<!-- [Download Bootstrapper] ...-->`.
 
 1. Comment out other `<Custom>` elements under `Step 5`.
 
