@@ -18,6 +18,7 @@ The **JSON viewer** improves readability of JSON data in several ways:
 *  The JSON syntax is highlighted with different colors.
 *  Object properties are displayed on their own lines and indented.
 *  Objects can be collapsed or expanded.
+*  The JSON viewer matches your operating system's dark or light theme.
 
 The **JSON viewer** tool is included in Microsoft Edge starting with version 110.
 
@@ -29,11 +30,11 @@ To view a JSON response from a web server as reformatted JSON:
 
 1. Open a new tab or window in Microsoft Edge.
 
-1. Type a URL that returns JSON data in the address bar. For example, use [this sample JSON response](https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json). You can find more samples JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://github.com/MicrosoftEdge/Demos/tree/main/json-dummy-data).
+1. Type a URL that returns JSON data in the address bar. For example, use [this sample JSON response](https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json). You can find more samples of JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://microsoftedge.github.io/Demos/json-dummy-data/).
 
 1. Microsoft Edge detects that the returned data is JSON and formats it automatically:
 
-   ![JSON data returned by a web server, formatted and syntax-highlighted by the JSON viewer](./images/json-response.png)
+   ![JSON data returned by a web server, formatted and syntax-highlighted by the JSON viewer](./json-viewer-images/json-response.png)
 
 
 <!-- ====================================================================== -->
@@ -43,17 +44,17 @@ To view a JSON file stored on your device as reformatted JSON:
 
 1. Open a new tab or window in Microsoft Edge.
 
-1. Press `Ctrl`+`O` on Windows and Linux, or `Cmd`+`O` on macOS and choose the JSON file you want to open.
+1. Press `Ctrl`+`O` on Windows and Linux, or `Command`+`O` on macOS, and then select a JSON file.
 
-1. Microsoft Edge detects that the file contains JSON and formats it automatically:
+1. Microsoft Edge detects that the file contains JSON data and formats it automatically:
 
-   ![JSON data stored in a local file, formatted and syntax-highlighted by the JSON viewer](./images/json-file.png)
+   ![JSON data stored in a local file, formatted and syntax-highlighted by the JSON viewer](./json-viewer-images/json-file.png)
 
 
 <!-- ====================================================================== -->
 ## Detect invalid JSON data
 
-JSON data can sometimes be invalid. For example, the following JSON is invalid:
+JSON data can sometimes be invalid. For example, the following patterns are invalid in JSON:
 
 *  Omitting double quotes around a key name.
 *  Having a trailing comma after the last key/value pair.
@@ -62,6 +63,16 @@ The **JSON viewer** applies syntax highlighting to invalid JSON. However, the **
 
 You can find information about the invalid syntax in the **Console** tool, where the **JSON viewer** reports errors.
 
-As seen below, invalid JSON responses are shown unformatted but highlighted, and an error is printed in the **Console** to help diagnose the syntax error:
+To view invalid JSON data:
 
-![Highlighted JSON content, in a browser tab, with DevTools opened on the side, showing a JavaScript error indicating where the JSON syntax error is located](./images/invalid-json.png)
+1. Open a new tab or window in Microsoft Edge.
+
+1. Type a URL that returns invalid JSON data in the address bar. For example, use [this sample invalid JSON response](https://microsoftedge.github.io/Demos/json-dummy-data/missing-colon.json). You can find other invalid samples of JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://microsoftedge.github.io/Demos/json-dummy-data/#invalid-json).
+
+1. Microsoft Edge detects that the file contains invalid JSON data, highlights it, but does not reformats it.
+
+1. Open the **Console** tool by pressing `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+
+1. A JavaScript error that indicates where the JSON syntax error is located is shown in the **Console** tool:
+
+   ![Invalid JSON, highlighted by not formatted, with a syntax error displayed in the Console tool](./json-viewer-images/invalid-json.png)
