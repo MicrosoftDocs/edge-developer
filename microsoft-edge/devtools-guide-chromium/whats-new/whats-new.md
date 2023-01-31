@@ -1,5 +1,5 @@
 ---
-title: What's new in Microsoft Edge DevTools
+title: What's New in Microsoft Edge DevTools
 description: New features and fixes in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
