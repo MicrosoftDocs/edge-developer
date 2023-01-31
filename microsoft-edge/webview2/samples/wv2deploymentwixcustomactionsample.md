@@ -151,7 +151,7 @@ If you want to package the Evergreen WebView2 Runtime Bootstrapper (`MicrosoftEd
 
 1. Comment out other `<Binary>` and `<CustomAction>` elements under `Step 4`.
         
-1. Under `<!-- Step 5: Config run sequence of custom action -->`, uncomment the `<Custom Action='InvokeBootstrapper' ...>` element below `<!-- [Package Bootstrapper] ...-->`.
+1. Under `<!-- Step 5: Config execute sequence of custom action -->`, uncomment the `<Custom Action='InvokeBootstrapper' ...>` element below `<!-- [Package Bootstrapper] ...-->`.
 
 1. Comment out other `<Custom>` elements under `Step 5`.
 
