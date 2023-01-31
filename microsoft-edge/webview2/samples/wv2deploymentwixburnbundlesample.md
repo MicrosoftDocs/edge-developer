@@ -141,7 +141,7 @@ Follow the steps in that section, and then return to this page and continue belo
 
 1. This sample is an extension to the [WV2DeploymentWiXCustomActionSample](./wv2deploymentwixcustomactionsample.md) sample.  In Solution Explorer, expand **WV2DeploymentWiXCustomActionSample** and then double-click `Product.wxs`.
 
-1. In `Product.wxs`, comment out all the `<Binary>`, `<CustomAction>`, and `<Custom>` elements under `<!-- Step 4: Config Custom Action to download/install Bootstrapper -->` and `<!-- Step 5: Config run sequence of custom action -->` so that Custom Action is not used.
+1. In `Product.wxs`, comment out all the `<Binary>`, `<CustomAction>`, and `<Custom>` elements under `<!-- Step 4: Config Custom Action to download/install Bootstrapper -->` and `<!-- Step 5: Config execute sequence of custom action -->` so that Custom Action is not used.
 
 1. Open `Bundle.wxs` under the `WV2DeploymentWiXBurnBundleSample` project.  Edit `Bundle.wxs` depending on which workflow you want to use:
 
