@@ -269,7 +269,7 @@ TODO: link when exists.
 
 A WebView2 app can run any JavaScript in a frame, by using `ExecuteScript`.
 
-In order for script to be run in an iframe, an execution context must be created.  An execution context is created after the `ContentLoading` event, that's why if `ExecuteScript` is called before the `ContentLoading` event is raised, the script will not be executed and the string `null` will be returned.
+In order for script to be run in an iframe, an execution context must be created.  An execution context is created after the `ContentLoading` event, that's why if `ExecuteScript` is called before the `ContentLoading` event is raised, the script will not be run and the string `null` will be returned.
 
 For information about the `ContentLoading` event, see [Navigation events for WebView2 apps](./navigation-events.md), which is valid for frames as well as webpages.
 
