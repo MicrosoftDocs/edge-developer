@@ -171,7 +171,7 @@ Make sure that you configure this task with the `indexableFileFormats` parameter
 
 ### Publish source maps using `symbol.exe`
 
-The Symbol Server team publishes a .NET Core application, `symbol.exe`, which [can be downloaded](/rest/api/azure/devops/symbol/client/get) automatically. After downloading `symbol.exe`, you can execute a command to publish your source maps to the Azure Artifacts symbol server:
+The Symbol Server team publishes a .NET Core application, `symbol.exe`, which [can be downloaded](/rest/api/azure/devops/symbol/client/get) automatically. After downloading `symbol.exe`, you can run a command to publish your source maps to the Azure Artifacts symbol server:
 
 ```cmd
 symbol publish
