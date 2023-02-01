@@ -70,7 +70,7 @@ To open the DevTools Device Emulation tool by using Command Palette:
 <!-- ====================================================================== -->
 ## Create and access snippets
 
-The DevTools [**Snippets**](../javascript/snippets.md) tool allows you to save JavaScript code and execute it on any webpage. If you run the same code repeatedly on webpages, create a snippet for that code, and then use Command Palette to quickly access your code snippet.
+The DevTools [**Snippets**](../javascript/snippets.md) tool allows you to save JavaScript code and run it on any webpage. If you run the same code repeatedly on webpages, create a snippet for that code, and then use Command Palette to quickly access your code snippet.
 
 To open the DevTools **Snippets** tab by using Command Palette:
 
