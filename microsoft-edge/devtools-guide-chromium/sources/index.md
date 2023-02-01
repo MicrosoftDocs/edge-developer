@@ -152,7 +152,7 @@ Workspaces work well when the JavaScript code that's returned by the server is t
 
 See also:
 * [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md)
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-demo-file) in _Sample code for DevTools_.
+* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 
 
 <!-- ------------------------------ -->
@@ -263,7 +263,7 @@ The following subsections cover the Editor pane:
 * [Displaying source files when using a different tool](#displaying-source-files-when-using-a-different-tool)
 
 See also:
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-demo-file) in _Sample code for DevTools_.
+* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 
 
 <!-- ------------------------------ -->
@@ -276,7 +276,7 @@ To edit a JavaScript file in DevTools, use the **Editor** pane, within the **Sou
 To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** (`...`) and then select **Open File**.
 
 See also:
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-demo-file) in _Sample code for DevTools_.
+* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 
 
 ###### Save and Undo
@@ -384,7 +384,7 @@ CSS changes take effect immediately; you don't need to manually save the changes
 See also:
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-demo-file) in _Sample code for DevTools_.
+* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 
 
 <!-- ------------------------------ -->
@@ -409,7 +409,7 @@ To undo an edit, press `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
 To view other commands while editing an HTML file, in the Editor pane, right-click the HTML file.
 
 See also:
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-demo-file) in _Sample code for DevTools_.
+* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 
 
 <!-- ------------------------------ -->
@@ -576,7 +576,7 @@ The following articles cover the **Debugger** pane and breakpoints:
 <!-- ====================================================================== -->
 ## See also
 
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-demo-file) in _Sample code for DevTools_.
+* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
 
 

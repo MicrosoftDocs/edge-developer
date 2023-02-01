@@ -257,7 +257,7 @@ To open the DevTools code editor alongside other tools:
 <!-- ====================================================================== -->
 ## See also
 
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-demo-file) in _Sample code for DevTools_.
+* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 
 
 <!-- ====================================================================== -->
