@@ -20,7 +20,23 @@ The **JSON viewer** improves readability of JSON data in several ways:
 *  Objects can be collapsed or expanded.
 *  The JSON viewer matches your operating system's dark or light theme.
 
-The **JSON viewer** tool is included in Microsoft Edge starting with version 110.
+The **JSON viewer** tool is included as an experiment in Microsoft Edge starting with version 110.
+
+
+<!-- ====================================================================== -->
+## Enable the JSON viewer
+
+By default, the **JSON viewer** isn't enabled. To enable the JSON viewer experiment:
+
+1. Go to `edge://flags`.
+
+1. In the **Search flags** text field, type **JSON viewer**.
+
+1. In the **JSON viewer** dropdown menu, select **Enabled**.
+
+1. Click the **Restart** button which appears in the lower right:
+
+   ![The edge://flags page showing the JSON viewer flag](./json-viewer-images/enable-flag.png)
 
 
 <!-- ====================================================================== -->
