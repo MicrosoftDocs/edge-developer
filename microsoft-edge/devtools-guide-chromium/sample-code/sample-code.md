@@ -5,16 +5,29 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/27/2023
+ms.date: 01/31/2023
 ---
 # Sample code for DevTools
 
-Use the demos in the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos#readme) repo to learn how to use Microsoft Edge to develop webpages and web apps.
+Use the [Demos](https://github.com/MicrosoftEdge/Demos#readme) repo to learn how to use Microsoft Edge to develop webpages and web apps.  There are various ways to view, download, and modify these demo webpages, including:
+*  DevTools in Microsoft Edge.
+*  Visual Studio Code.
+*  DevTools in Visual Studio Code.
+*  Visual Studio.
+*  DevTools in Visual Studio.
+
 <!-- A few demos are or were at other locations, such as Glitch. -->
 
-The Readme pages at the repo have links to the **Code**, **Demo**, and documentation.
+The Readme pages in the repo have links to:
+*  The source code at GitHub.com.
+*  The rendered demo webpage from the GitHub.io server.
+*  The Microsoft Edge Developer documentation or blog post that uses the demo.
 
-In the repo's Readme pages, click a **Demo** link, right-click the webpage, and then select **Inspect** to open DevTools.
+To view the source code for a rendered demo webpage in DevTools in Microsoft Edge:
+
+1. In a Readme page, click the **Demo** link.  The rendered page from the GitHub.io server opens in Microsoft Edge.
+
+1. Right-click the demo webpage, and then select **Inspect** to open DevTools.
 
 
 <!-- ====================================================================== -->
@@ -53,7 +66,6 @@ A few of these samples are shown below.
 The Demos repo also contains other samples for development with Microsoft Edge:
 * [Samples for Microsoft Edge extensions](../../extensions-chromium/samples.md)
 * [Progressive Web App demos](../../progressive-web-apps-chromium/demo-pwas.md)
-* [Samples for development tips for Microsoft Edge](../../web-platform/samples.md)
 
 
 <!-- ====================================================================== -->
@@ -166,6 +178,9 @@ To download a single directory of the Demos repo:
 
    The `.zip` file is placed in your download directory.  Unzip these webpage source files into a suitable location.
 
+See also:
+* [Download the WebView2Samples repo](../../webview2/how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
+
 
 #### Clone the Demos repo
 
@@ -199,54 +214,151 @@ To clone the repo:
 
    The **Explorer** tree lists many demos, including **demo-to-do**.
 
-1. In Visual Studio Code, select **File** > **Close Folder**.
+See also:
+* [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
+* [Clone the WebView2Samples repo](../../webview2/how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
-1. In the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./sample-code-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens.
 
-1. In the **Microsoft Edge Tools** > **Targets** pane, click the **Open Folder** button.  The **Open Folder** dialog box opens.  Navigate to the `demo-to-do` folder in the Demo repo that you cloned, select the folder or go into it, and then click the **Select Folder** button:
+<!-- ====================================================================== -->
+## Open a demo folder in the Sources tool and edit a demo file
 
-   ![Selecting the demo-to-do folder](./sample-code-images/select-demo-to-do-folder.png)
+To edit local files in the **Sources** tool, you might need to click the **Allow** button to grant read/write access by following the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) below.
 
-   An example of a repo location where the **Demos** repo has been cloned is shown above.  The `demo-to-do` folder of the cloned **Demos** repo opens in the Explorer of Visual Studio Code, and no `launch.json` file exists yet:
+See also:
+* [Approaches compared](../../visual-studio-code/microsoft-edge-devtools-extension.md#approaches-compared) in _Microsoft Edge DevTools extension for Visual Studio Code_.  Summarizes and compares several options for editing webpage files.
 
-   ![Opened the demo-to-do folder initially](./sample-code-images/opened-demo-to-do-folder-initially.png)
+
+#### Opening a folder from the Filesystem (Workspace) tab in the Sources tool
+
+After downloading or cloning the Demos repo:
+
+1. In Microsoft Edge, open a new tab.
+
+1. Right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
+
+1. In the **Sources** tab, on the left, select the **Filesystem** tab, which is grouped with the **Page** tab.  If the **Filesystem** tab isn't displayed, click the **More tabs** (![More tabs button](../media/more-tabs-icon-light-theme.png)) button.
+
+1. Click **+ Add folder to workspace**.  A folder selection dialog opens.
+
+1. Select a specific folder, such as **demo-to-do**, or select the **Demos** root folder:
+
+   ![Selecting the demo-to-do directory](./sample-code-images/select-demo-to-do-folder.png)
+
+1. Above DevTools, your're prompted "DevTools requests full access to (directory)".  Click the **Allow** button:
+
+   ![DevTools requests access to add a folder to a workspace in the Filesystem tab](./sample-code-images/devtools-requests-access.png)
+
+To edit the files, see the editing steps in the next section.
 
 
 See also:
-* [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
-* [Download the WebView2Samples repo](../../webview2/how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
-* [Clone the WebView2Samples repo](../../webview2/how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
+* [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
+* [Using the Filesystem tab to define a local Workspace](../sources/index.md#using-the-filesystem-tab-to-define-a-local-workspace) in _Sources tool overview_.
+
+
+#### Opening a local HTML file from the browser's File Open dialog and editing it from the Page tab of the Sources tool
+
+To edit files in the **Sources** tool, before doing the steps in this section, you might need to click the **Allow** button to grant read/write access by following the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) above.
+
+
+To open an `.html` file and edit it:
+
+1. In Microsoft Edge, open a new tab, and then press `Ctrl`+`O` (Windows/Linux) or `Command`+`O` (macOS).  A file selection dialog opens.
+
+1. Select an HTML file from the local copy of the **Demos** repo, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`.  The `.html` file is opened and rendered in Microsoft Edge.
+
+1. Right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![The More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
+
+1. In DevTools, on the left, select the **Page** tab, and then select the HTML file, such as `index.html` or **(index)**.
+
+1. Press `Esc` to open the **Drawer** at the bottom of DevTools.
+
+1. In the Drawer, click the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button, and then select the **Changes** tool.
+
+1. In the middle, editor pane of the **Sources** tool, edit the `.html` file.  For example, in `demo-to-do/index.html` folder, in the `<h1>` heading line, change **My tasks** to **My modified tasks**:
+
+   ```html
+   <h1>📋 My modified tasks</h1>
+   ```
+
+   If editing isn't enabled, click the **Allow** button to grant read/write access to the folder by doing the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) above.
+
+   The change is displayed in the **Changes** tool in the Drawer, and an asterisk is added to the filename in the **index.html** tab in the **Sources** tool:
+
+   ![The modified demo-to-do page before saving changes](./sample-code-images/modified-demo-to-do-before-save.png)
+
+1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.  The asterisk is removed from the **index.html** tab in the **Sources** tool.
+
+1. Refresh the page.  The change is displayed in the rendered webpage; for example, the word **modified** is added to the title:
+
+   ![The modified demo-to-do page after saving changes and refreshing](./sample-code-images/modified-demo-to-do-after-save-refresh.png)
+
+
+#### Opening a local HTML file from File Explorer and editing it in the browser
+
+1. In File Explorer on Windows, or Finder on macOS, select an HTML file from the local copy of the **Demos** repo, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`.  The `.html` file is opened and rendered in Microsoft Edge.
+
+1. Follow the steps in the sections above.
+
+
+<!-- ====================================================================== -->
+## Open a demo folder in Visual Studio Code
+
+After downloading or cloning the Demos repo:
+
+1. In Visual Studio Code, in the Activity Bar, click the **Explorer** (![Explorer icon](./sample-code-images/explorer-icon.png)) button.  The **Explorer** pane opens.
+
+1. In the **Explorer** pane, click the **Open Folder** button.  The **Open Folder** dialog box opens.  Navigate to the `demo-to-do` folder in the Demo repo that you cloned, select the folder or go into it, and then click the **Select Folder** button:
+
+   ![Selecting the demo-to-do folder](./sample-code-images/select-demo-to-do-folder.png)
+
+   An example of a repo location where the **Demos** repo has been cloned is shown above.  The `demo-to-do` folder of the cloned **Demos** repo opens in the Explorer of Visual Studio Code:
+
+   ![Opened the demo-to-do folder initially](./sample-code-images/opened-demo-to-do-folder-initially.png)
+
+Or, you can open the root folder of the Demos repo, to explore all of the demo folders in the **Explorer** pane.
+
+
+See also:
+* [Microsoft Edge DevTools extension for Visual Studio Code](../../visual-studio-code/microsoft-edge-devtools-extension.md) - to open a local folder in Visual Studio Code and use DevTools within Visual Studio Code.
 
 
 <!-- ====================================================================== -->
 ## URL patterns for rendered demo webpages and source code
 
-To convert between the URL for a rendered demo webpage and the URL for the source code at GitHub, the patterns are as follows.
+Most of the Readme files in the Demos repo have a link that opens the rendered `.html` file from the GitHub.io server.  Sometimes you have a URL for an HTML source file at GitHub.com, but instead you need to derive the **github.io** server URL to display the rendered file, rather than displaying the code listing of the `.html` source code in the GitHub directory.
 
+To convert from the URL for the source code directory at GitHub.com to the URL for a rendered demo webpage at GitHub.io, the pattern is as follows.
 
-#### Pattern
+Suppose the URL for the webpage's source code at GitHub.com is:
+* `https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do/`
 
-*  URL for the rendered demo webpage: `https://[org].github.io/[repo]/[path]`
+The key components of that GitHub.com URL are:
+* `https://github.com/[org]/[repo]/tree/main/[path]`
 
-*  URL for the webpage's source code: `https://github.com/[org]/[repo]/tree/main/[path]`
+In contrast, the desired GitHub.io URL pattern is:
+* `https://[org].github.io/[repo]/[path]`
 
-Not case-sensitive.
+To fill in that GitHub.io URL pattern, in this example:
+*  [org] is `MicrosoftEdge`.
+*  [repo] is `Demos`.
+*  [path] is `demo-to-do`.
 
+Therefore, the resulting GitHub.io server URL for the rendered demo webpage is:
+* `https://MicrosoftEdge.github.io/Demos/demo-to-do/`
 
-#### Example
-
-*  URL for the rendered demo webpage: `https://MicrosoftEdge.github.io/Demos/devtools-a11y-testing/`
-
-*  URL for the webpage's source code: `https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing/`
-
-*  Org = `MicrosoftEdge`
-*  Repo = `Demos`
-*  Path = `/devtools-a11y-testing/`
+These URLs aren't case-sensitive.
 
 
 <!-- ====================================================================== -->
 ## See also
 
+* [Approaches compared](../../visual-studio-code/microsoft-edge-devtools-extension.md#approaches-compared) in _Microsoft Edge DevTools extension for Visual Studio Code_.  Summarizes and compares several options for editing webpage files.
+* [Microsoft Edge IDE integration](../../visual-studio-code/ide-integration.md) - Webpage app development using Visual Studio Code or Visual Studio, including Microsoft Edge DevTools.
 * [Download the WebView2Samples repo](../../webview2/how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 * [Clone the WebView2Samples repo](../../webview2/how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 * [Step 5: Clone the Demos repo](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-5-clone-the-demos-repo) in _Installing the DevTools extension for Visual Studio Code_.
