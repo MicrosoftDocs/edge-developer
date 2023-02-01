@@ -27,7 +27,7 @@ These tools are described below.
 <!-- ====================================================================== -->
 ## DevTools Protocol
 
-Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.  The Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.
+Use the DevTools Protocol to instrument, inspect, debug, and profile browsers, including Microsoft Edge. Due to a collaboration, the Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.
 
 See [DevTools Protocol](devtools-protocol.md).
 
