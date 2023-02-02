@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 01/30/2023
+ms.date: 02/02/2023
 ---
 # Test and automation in Microsoft Edge
 
