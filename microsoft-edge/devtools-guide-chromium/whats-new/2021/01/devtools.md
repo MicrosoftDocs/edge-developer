@@ -97,8 +97,8 @@ MDN:
 For history, in the Chromium open-source project, see Issues [1136394](https://crbug.com/1136394) and [1139949](https://crbug.com/1139949).
 
 
-<!-- ====================================================================== -->
-### New Flexbox (flex) icon helps identify and display flex containers
+<!-- ------------------------------ -->
+#### New Flexbox (flex) icon helps identify and display flex containers
 
 <!--  Title: Display Flexbox containers with Flexbox (flex) icon  -->
 <!--  Subtitle: New Flexbox (flex) icon in the Elements tool help you identify Flexbox containers in your code.  When toggled, the adorner displays and hides outlines of the flex container to help you debug the layout -->
@@ -125,8 +125,8 @@ See also:
 * [Inspect CSS Grid](../../../css/grid.md).
 
 
-<!-- ====================================================================== -->
-### Display alignment icons and visual guides when Flexbox layouts change using CSS properties
+<!-- ------------------------------ -->
+#### Display alignment icons and visual guides when Flexbox layouts change using CSS properties
 
 <!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties -->
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you see the effect a property has on your Flexbox layout. -->
@@ -242,8 +242,8 @@ See also:
 The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
-<!-- ====================================================================== -->
-### Capture node screenshot beyond viewport
+<!-- ------------------------------ -->
+#### Capture node screenshot beyond viewport
 
 In Microsoft Edge version 89, node screenshots are more accurate, capturing the full node even if content from the node isn't visible in the viewport.  In the **Elements** tool, right-click an element, and then select **Capture node screenshot**.
 
@@ -255,12 +255,11 @@ See also:
 * [Capture node screenshots using the Elements tool context menu](../../2020/08/devtools.md#capture-node-screenshots-using-the-elements-tool-context-menu) in _What's new in DevTools (Microsoft Edge 86)_
 
 
-<!-- ====================================================================== -->
-### Elements tool updates
+<!-- ------------------------------ -->
+#### Elements tool updates
 
 
-<!-- ====================================================================== -->
-#### Support forcing the :target CSS state
+###### Support forcing the :target CSS state
 
 In the **Elements** tool, you can now force the [:target](https://developer.mozilla.org/docs/web/css/:target) CSS pseudo-class.  The `:target` pseudo-class is triggered when a unique element (the target element) has an `id` that matches a fragment of the URL.  For example, the `http://www.example.com/index.html#section1` URL triggers the `:target` pseudo-class on an HTML element with `id="section1"`.  To try a demo with section 1 highlighted, see [CSS :target demo](https://microsoftedge.github.io/Demos/devtools-target-pseudo/#section-1).
 
@@ -278,8 +277,7 @@ See also:
 * [Use state simulation to simulate the hover state of an animated menu item](../../../accessibility/test-inspect-states.md#use-state-simulation-to-simulate-the-hover-state-of-an-animated-menu-item) in _Verify accessibility of all states of elements_.
 
 
-<!-- ====================================================================== -->
-#### Use Duplicate elements to copy elements
+###### Use Duplicate elements to copy elements
 
 Use the new **Duplicate element** shortcut to clone an element.  In the **Elements** tool, right-click an element, and then select **Duplicate element**.  A new element is created under the selected element.  To duplicate the element by using the keyboard, press `Shift`+`Alt`+`Down Arrow` (Windows, Linux) or `Shift`+`Option`+`Down Arrow` (macOS).
 
@@ -291,8 +289,7 @@ See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
-<!-- ====================================================================== -->
-#### Color pickers for custom CSS properties
+###### Color pickers for custom CSS properties
 
 The **Styles** pane now displays color pickers for custom CSS properties.  To cycle through the RGBA, HSLA, and Hex formats of the color value, press and hold `Shift` and then click the color picker:
 
@@ -304,8 +301,7 @@ See also:
 * [Change colors with the Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_
 
 
-<!-- ====================================================================== -->
-#### Copy CSS classes and properties
+###### Copy CSS classes and properties
 
 You can now copy CSS properties quicker with a few new options in the right-click menu.  In the **Elements** tool, select an element.  To copy the value, in the **Styles** pane, right-click a CSS class or a CSS property, and then select a copy option.
 
@@ -335,12 +331,11 @@ See also:
 * [CSS features reference](../../../css/reference.md)
 
 
-<!-- ====================================================================== -->
-### Cookies updates
+<!-- ------------------------------ -->
+#### Cookies updates
 
 
-<!-- ====================================================================== -->
-#### New option to display URL-decoded cookies
+###### New option to display URL-decoded cookies
 
 You can now display the URL-decoded cookies value in the **Cookies** pane.  To display the decoded cookie, select **Application** > **Cookies**, click any cookie on the list, and then select the checkbox next to **Show URL decoded**:
 
@@ -352,8 +347,7 @@ See also:
 * [View, edit, and delete cookies](../../../storage/cookies.md)
 
 
-<!-- ====================================================================== -->
-#### Filter and clear visible cookies
+###### Filter and clear visible cookies
 
 In Microsoft Edge version 88 or earlier, the **Application** tool only provided a way to clear all cookies with the **Clear all cookies** button.  In Microsoft Edge version 89, you can now select **Clear filtered cookies** to delete only the filtered cookies.
 
@@ -367,8 +361,7 @@ See also:
 * [View, edit, and delete cookies](../../../storage/cookies.md)
 
 
-<!-- ====================================================================== -->
-#### New option to clear third-party cookies in the Storage pane
+###### New option to clear third-party cookies in the Storage pane
 
 DevTools now clears only first-party cookies by default.  To clear website data and first-party cookies only, in the **Application** tool, in the **Application** section in the upper left, click **Storage**, and then click the **Clear site data** button.
 
@@ -382,15 +375,14 @@ See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-### Network tool updates
+<!-- ------------------------------ -->
+#### Network tool updates
 
 See also:
 * [Network features reference](../../../network/reference.md)
 
 
-<!-- ====================================================================== -->
-#### Persist Record network log setting
+###### Persist Record network log setting
 
 In Microsoft Edge version 88 or earlier, DevTools reset the **Record network log** setting when a webpage refreshes.  In Microsoft Edge version 89, DevTools now persists the **Record network log** setting:
 
@@ -402,8 +394,7 @@ See also:
 * [Record network requests](../../../network/reference.md#record-network-requests) in _Network features reference_.
 
 
-<!-- ====================================================================== -->
-#### Online option is now No throttling option
+###### Online option is now No throttling option
 
 The network emulation option **Online** is now renamed to **No Throttling**.
 
@@ -416,12 +407,11 @@ See also:
 * [Emulate slow network connections](../../../network/reference.md#emulate-slow-network-connections) in _Network features reference_.
 
 
-<!-- ====================================================================== -->
-### New copy options in the Console tool, Sources tool, and Styles pane
+<!-- ------------------------------ -->
+#### New copy options in the Console tool, Sources tool, and Styles pane
 
 
-<!-- ====================================================================== -->
-#### Copy object in the Console and Sources tool
+###### Copy object in the Console and Sources tool
 
 You can now copy object values in the **Console** and **Sources** tools.  The ability to copy object values is useful when working with large objects.
 
@@ -441,8 +431,7 @@ See also:
 <!-- 0 hits on "Copy object" -->
 
 
-<!-- ====================================================================== -->
-#### Copy file name in the Sources tool and Styles pane
+###### Copy file name in the Sources tool and Styles pane
 
 You can now copy a file name by using the right-click menu.
 
@@ -462,14 +451,13 @@ See also:
 <!-- 0 hits on "Copy file name" -->
 
 
-<!-- ====================================================================== -->
-### Updates to Frame details
+<!-- ------------------------------ -->
+#### Updates to Frame details
 
 In the **Application** tool, the **Frames** page has the following updates.
 
 
-<!-- ====================================================================== -->
-#### Service Workers information in Frame details
+###### Service Workers information in Frame details
 
 The **Application** tool now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers** and then click a service worker.
 
@@ -481,8 +469,7 @@ See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-#### Measure Memory information in Frame details
+###### Measure Memory information in Frame details
 
 In the **Frames** page of the **Application** tool, the `performance.measureMemory()` API status is now displayed in the **API availability** section.  The new `performance.measureMemory()` API estimates the memory usage of the entire webpage.
 
@@ -494,8 +481,8 @@ See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-### Dropped frames in the Performance tool
+<!-- ------------------------------ -->
+#### Dropped frames in the Performance tool
 
 When you analyze load performance in the Performance tool, the **Frames** section now marks dropped frames as red.  To display the frame rate, hover on a dropped frame:
 
@@ -507,8 +494,7 @@ See also:
 * [Record load performance](../../../evaluate-performance/reference.md#record-load-performance) in _Performance features reference_
 
 
-<!-- ====================================================================== -->
-#### New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)
+###### New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)
 
 ![Experimental feature](../../../../media/experimental-tag.png)<!-- valid 05/13/2022 -->
 
