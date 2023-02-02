@@ -35,26 +35,20 @@ To view the source code for a rendered demo webpage in DevTools in Microsoft Edg
 
 The following samples in the Demos repo demonstrate DevTools features.
 
-
 <!-- 
 maintenance notes:
 
-keep the below table sync'd at:
+keep DevTools table sync'd:
 https://github.com/MicrosoftEdge/Demos#readme
 https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/sample-code/sample-code#sample-code-for-devtools
 last sync'd Feb. 1, 2023
 
-in the Demos repo, keep prefix https://learn.microsoft.com
-in the Docs repo (edge-developer), remove prefix https://learn.microsoft.com; start with: /microsoft-edge/
-
-to create a PR in Demos repo: https://github.com/MicrosoftEdge/Demos
-to create a PR in Docs repo: https://github.com/MicrosoftDocs/edge-developer
+in https://github.com/MicrosoftEdge/Demos, keep prefix https://learn.microsoft.com
+in https://github.com/MicrosoftDocs/edge-developer repo, remove prefix https://learn.microsoft.com
 -->
 
-<!-- start of table to keep sync'd: -->
-
 | Demo name | Description | Repo directory | Live demo page |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | CSS mirroring sourcemaps | Used for [Update .css files from within the Styles tab (CSS mirror editing)](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab) for the DevTools extension for Visual Studio Code. | [/css-mirroring-sourcemaps-demo/](https://github.com/MicrosoftEdge/Demos/tree/main/css-mirroring-sourcemaps-demo) | n/a |
 | TODO app | Simple To Do app with vanilla JavaScript.  Used for screenshots in the [Microsoft Edge DevTools documentation](/microsoft-edge/devtools-guide-chromium/), and for [Opening DevTools and the DevTools browser](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser) for the DevTools extension for Visual Studio Code. | [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) | [My tasks](https://microsoftedge.github.io/Demos/demo-to-do/) |
 | Detached elements | Chat-like demo.  Used for [Debug DOM memory leaks with the Detached Elements tool](/microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks). | [/detached-elements/](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) | [Simulate traffic](https://microsoftedge.github.io/Demos/detached-elements/) |
@@ -74,8 +68,6 @@ to create a PR in Docs repo: https://github.com/MicrosoftDocs/edge-developer
 | JSON dummy data | Simple JSON files.  Used for [View formatted JSON](/microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer.md). | [/json-dummy-data/](https://github.com/MicrosoftEdge/Demos/tree/main/json-dummy-data) | [JSON dummy data](https://microsoftedge.github.io/Demos/json-dummy-data/) |
 | Inspect Network Activity | Used for [Inspect network activity](/microsoft-edge/devtools-guide-chromium/network/). | [/network-tutorial/](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) | [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/) |
 | Workspaces demo | Use for [Edit files with Workspaces (Filesystem tab)](/microsoft-edge/devtools-guide-chromium/workspaces), in the **Sources** tool. | [/workspaces/](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces) | [DevTools Workspaces Demo](https://microsoftedge.github.io/Demos/workspaces/) |
-
-<!-- /end of table to keep sync'd -->
 
 
 A few of these samples are shown below.

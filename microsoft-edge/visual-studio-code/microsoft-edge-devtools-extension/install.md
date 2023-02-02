@@ -236,6 +236,4 @@ Next, see [Get started using the DevTools extension for Visual Studio Code](./ge
 * [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
 * [Sample code for DevTools](../../devtools-guide-chromium/sample-code/sample-code.md)
-* [Download the WebView2Samples repo](../../webview2/how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
-   * [Clone the WebView2Samples repo](../../webview2/how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
