@@ -27,15 +27,24 @@ To view the source code for a rendered demo webpage in DevTools in Microsoft Edg
 The following demos demonstrate DevTools features.
 
 <!-- 
-maintenance notes:
+maintenance notes for this table:
 
 keep DevTools table sync'd:
 https://github.com/MicrosoftEdge/Demos#readme
 https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/sample-code/sample-code#sample-code-for-devtools
-last sync'd Feb. 1, 2023
+last sync'd Feb. 2, 2023
 
-in https://github.com/MicrosoftEdge/Demos, keep prefix https://learn.microsoft.com
-in https://github.com/MicrosoftDocs/edge-developer repo, remove prefix https://learn.microsoft.com
+for the copy of this table that's in the Demos repo https://github.com/MicrosoftEdge/Demos, to link to articles at learn.microsoft.com:
+* keep prefix https://learn.microsoft.com
+* no /en-us/
+* no .md at end
+* test the link
+
+for the copy of this table that's in the Docs repo https://github.com/MicrosoftDocs/edge-developer, to link to articles at learn.microsoft.com:
+* remove prefix https://learn.microsoft.com; start with /
+* no /en-us/
+* no .md at end
+* test the link by manually adding prefix https://learn.microsoft.com in Address bar
 -->
 
 | Demo name | Description | Repo directory | Live demo page |
@@ -46,7 +55,7 @@ in https://github.com/MicrosoftDocs/edge-developer repo, remove prefix https://l
 | 3D View | Used for [Navigate webpage layers, z-index, and DOM using the 3D View tool](/microsoft-edge/devtools-guide-chromium/3d-view/). | [/devtools-3d/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-3d) | [Microsoft Edge DevTools 3D View tool demo](https://microsoftedge.github.io/Demos/devtools-3d/) |
 | Accessibility testing | Used for [Overview of accessibility testing using DevTools](/microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools). | [/devtools-a11y-testing/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) | [Animal shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) |
 | Console panel demo pages | Used for [Console overview](/microsoft-edge/devtools-guide-chromium/console/), [Log messages in the Console tool](/microsoft-edge/devtools-guide-chromium/console/console-log), and [Fix JavaScript errors that are reported in the Console](/microsoft-edge/devtools-guide-chromium/console/console-debug-javascript). | [/devtools-console/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-console) | [DevTools Console panel demo pages](https://microsoftedge.github.io/Demos/devtools-console/) |
-| Contrast bug fix | Tests color badges.  Used for [Improving contrast in Microsoft Edge DevTools: A bugfix case study](https://blogs.windows.com/msedgedev/2021/06/15/improving-contrast-in-microsoft-edge-devtools-a-bugfix-case-study/). | [/devtools-contrast-bugfix/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-contrast-bugfix) | [Testing all badges in DevTools for contrast issues](https://microsoftedge.github.io/Demos/devtools-contrast-bugfix/) |
+| Contrast bug fix | Used for [Improving contrast in Microsoft Edge DevTools: A bugfix case study](https://blogs.windows.com/msedgedev/2021/06/15/improving-contrast-in-microsoft-edge-devtools-a-bugfix-case-study/). | [/devtools-contrast-bugfix/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-contrast-bugfix) | [Testing all badges in DevTools for contrast issues](https://microsoftedge.github.io/Demos/devtools-contrast-bugfix/) |
 | CSS Examples | Used for [Get started viewing and changing CSS](/microsoft-edge/devtools-guide-chromium/css/). | [/devtools-css-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) | [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) |
 | DOM Examples | Used for [Get started viewing and changing the DOM](/microsoft-edge/devtools-guide-chromium/dom/). | [/devtools-dom-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) | [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) |
 | Inspect tool demo | Used for [Analyze pages using the Inspect tool](/microsoft-edge/devtools-guide-chromium/css/inspect). | [/devtools-inspect/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-inspect) | [Inspect Demo](https://microsoftedge.github.io/Demos/devtools-inspect/) |
@@ -56,8 +65,9 @@ in https://github.com/MicrosoftDocs/edge-developer repo, remove prefix https://l
 | Sluggish Animation | Used for [Get started analyzing runtime performance](/microsoft-edge/devtools-guide-chromium/evaluate-performance/). | [/devtools-performance-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) | [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) |
 | CSS :target pseudo-class | Used for [Support forcing the :target CSS state](/microsoft-edge/devtools-guide-chromium/whats-new/2021/01/devtools#support-forcing-the-target-css-state). | [/devtools-target-pseudo/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-target-pseudo) | [CSS :target pseudo-class demo](https://microsoftedge.github.io/Demos/devtools-target-pseudo/) |
 | Heap Snapshot Visualizer | Source code for the [Heap Snapshot Visualizer](https://microsoftedge.microsoft.com/addons/detail/heap-snapshot-visualizer/fceldlhognbemkgfacnffkdanocidgce) extension for DevTools. | [/heap-snapshot-visualizer/](https://github.com/MicrosoftEdge/Demos/tree/main/heap-snapshot-visualizer) | n/a |
-| JSON dummy data | Simple JSON files.  Used for [View formatted JSON](/microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer.md). | [/json-dummy-data/](https://github.com/MicrosoftEdge/Demos/tree/main/json-dummy-data) | [JSON dummy data](https://microsoftedge.github.io/Demos/json-dummy-data/) |
+| JSON dummy data | Simple JSON files.  Used for [View formatted JSON](/microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer). | [/json-dummy-data/](https://github.com/MicrosoftEdge/Demos/tree/main/json-dummy-data) | [JSON dummy data](https://microsoftedge.github.io/Demos/json-dummy-data/) |
 | Inspect Network Activity | Used for [Inspect network activity](/microsoft-edge/devtools-guide-chromium/network/). | [/network-tutorial/](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) | [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/) |
+| Photo gallery demo | Used for [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/). | [/photo-gallery/](https://github.com/MicrosoftEdge/Demos/tree/main/photo-gallery) | [Photo Gallery Demo](https://microsoftedge.github.io/Demos/photo-gallery/) |
 | Workspaces demo | Use for [Edit files with Workspaces (Filesystem tab)](/microsoft-edge/devtools-guide-chromium/workspaces), in the **Sources** tool. | [/workspaces/](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces) | [DevTools Workspaces Demo](https://microsoftedge.github.io/Demos/workspaces/) |
 
 
