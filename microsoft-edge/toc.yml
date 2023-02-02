@@ -831,7 +831,7 @@
                   href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
                   displayName: 
 
-                - name: Update .css files from within the Styles tool (CSS mirror editing)
+                - name: Update .css files from within the Styles tab (CSS mirror editing)
                   href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
                   displayName: Syncing live changes from the Styles tool by using CSS mirror editing # previous title
 
