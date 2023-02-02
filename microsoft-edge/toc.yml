@@ -1493,6 +1493,10 @@
           href: web-platform/os-regional-settings.md
           displayName: globalization, language, region, limited, intl, date, time, format
 
+        - name: View formatted JSON
+          href: devtools-guide-chromium/json-viewer/json-viewer.md
+          displayName: JSON viewer
+
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge IDE integration
