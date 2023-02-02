@@ -202,6 +202,8 @@ Select a resource to learn more information about it.
 
    Tip: When a file is minified, select the **Format** (![Format](../media/format-icon.msft.png)) button at the bottom of the **Response** panel to re-format the contents of the file for readability.
 
+   For example, if the response contains minified JSON data, click the **Format** button to re-format the JSON syntax so that each object property is on its own line. You can also use the **JSON viewer** to view formatted and highlighted JSON responses in a browser tab. See [View formatted JSON](../json-viewer/json-viewer.md).
+
 1. Select the **Timing** panel.  A breakdown of the network activity for the resource is displayed:
 
    ![The Timing panel](../media/network-glitch-network-resources-timing.msft.png)
