@@ -167,6 +167,11 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 
    You've cloned the repo to your local drive.
 
+See also:
+* [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
+* [Downloading or cloning the Demos repo](../../devtools-guide-chromium/sample-code/sample-code.md#download-or-clone-the-demos-repo) in _Sample code for DevTools_.
+* [Step 6: Set up a localhost server](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
+
 
 <!-- ====================================================================== -->
 ## Open a WebView2Samples .sln file in Visual Studio
@@ -274,4 +279,13 @@ Install the WebView2 SDK, as follows:
 
 The WebView2 SDK is now installed, so your development environment is now set up to add WebView2 features to WebView2 apps.
 
-See also [NuGet.org > Microsoft.Web.WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2).
+See also:
+* [NuGet.org > Microsoft.Web.WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
+* [Downloading or cloning the Demos repo](../../devtools-guide-chromium/sample-code/sample-code.md#download-or-clone-the-demos-repo) in _Sample code for DevTools_.
+* [Step 6: Set up a localhost server](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
