@@ -5,35 +5,26 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/31/2023
+ms.date: 02/01/2023
 ---
 # Sample code for DevTools
 
 Use the [Demos](https://github.com/MicrosoftEdge/Demos#readme) repo to learn how to use Microsoft Edge to develop webpages and web apps.  There are various ways to view, download, and modify these demo webpages, including:
 *  DevTools in Microsoft Edge.
-*  Visual Studio Code.
-*  DevTools in Visual Studio Code.
-*  Visual Studio.
-*  DevTools in Visual Studio.
-
-<!-- A few demos are or were at other locations, such as Glitch. -->
-
-The Readme pages in the repo have links to:
-*  The source code at GitHub.com.
-*  The rendered demo webpage from the GitHub.io server.
-*  The Microsoft Edge Developer documentation or blog post that uses the demo.
+*  Visual Studio Code, with optional DevTools.
+*  Visual Studio, with optional DevTools.
 
 To view the source code for a rendered demo webpage in DevTools in Microsoft Edge:
 
-1. In a Readme page, click the **Demo** link.  The rendered page from the GitHub.io server opens in Microsoft Edge.
+1. In a Readme page, click the **Demo** link.  The live page opens in Microsoft Edge.
 
 1. Right-click the demo webpage, and then select **Inspect** to open DevTools.
 
 
 <!-- ====================================================================== -->
-## List of samples
+## List of DevTools samples
 
-The following samples in the Demos repo demonstrate DevTools features.
+The following demos demonstrate DevTools features.
 
 <!-- 
 maintenance notes:
