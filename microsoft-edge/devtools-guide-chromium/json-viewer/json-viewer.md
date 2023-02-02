@@ -32,7 +32,7 @@ By default, the **JSON viewer** isn't enabled. To enable the JSON viewer experim
 
 1. In the **Search flags** text field, type **JSON viewer**.
 
-1. In the **JSON viewer** dropdown menu, select **Enabled**.
+1. In the **JSON Viewer** dropdown menu, select **Enabled**.
 
 1. Click the **Restart** button which appears in the lower right:
 
