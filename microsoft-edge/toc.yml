@@ -837,7 +837,7 @@
                   href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
                   displayName: 
 
-                - name: Update .css files from within the Styles tool (CSS mirror editing)
+                - name: Update .css files from within the Styles tab (CSS mirror editing)
                   href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
                   displayName: Syncing live changes from the Styles tool by using CSS mirror editing # previous title
 
@@ -1000,6 +1000,10 @@
 
                 - name: Microsoft Edge Add-ons API Reference
                   href: extensions-chromium/publish/api/addons-api-reference.md
+
+        - name: Samples
+          href: extensions-chromium/samples.md
+          displayName: Samples for Microsoft Edge extensions # full title
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
