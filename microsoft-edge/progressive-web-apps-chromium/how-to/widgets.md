@@ -308,9 +308,9 @@ async function updateWidgets() {
 
 #### Handle widget actions
 
-If the widget template contains actions, users can execute those actions by clicking buttons in the rendered widget. For information about how to define actions in a template, see [Define widget actions](#define-widget-actions).
+If the widget template contains actions, users can run those actions by clicking buttons in the rendered widget. For information about how to define actions in a template, see [Define widget actions](#define-widget-actions).
 
-When a user executes a widget action, a `widgetclick` event is triggered in the PWA service worker. To handle the user action, listen to the event:
+When a user runs a widget action, a `widgetclick` event is triggered in the PWA service worker. To handle the user action, listen to the event:
 
 ```javascript
 self.addEventListener('widgetclick', (event) => {
@@ -435,7 +435,7 @@ The service worker global object also defines the following events:
 * `widgetinstall`: fired when the widget host is installing a widget.
 * `widgetuninstall`: fired when the widget host is uninstalling a widget.
 * `widgetresume`: fired when the widget host resumes the rendering of installed widgets, which can happen after the host suspended the rendering of widgets to preserve resources.
-* `widgetclick`: fired when the user executes one of the widget actions.
+* `widgetclick`: fired when the user runs one of the widget actions.
 
 For more information about the objects that are provided with these events, see the [widgetEvent object](#widgetevent-object) and the [widgetClickEvent object](#widgetclickevent-object) definitions below.
 

@@ -22,16 +22,17 @@
           displayName: DevTools
 
 # What's New ------------------------------------------------------------------
-        - name: What's new
+        - name: What's New
           items:
 
 # What's New firstchild article
-            - name: What's new in Microsoft Edge DevTools
+            - name: What's New in Microsoft Edge DevTools
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: release notes, announcements
 
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
+            # move eleventh oldest into Archive bucket
             - name: Microsoft Edge 110
               href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
 
@@ -65,63 +66,68 @@
             - name: Microsoft Edge 100
               href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
 
-            - name: Microsoft Edge 99
-              href: devtools-guide-chromium/whats-new/2022/03/devtools.md
+            # keep 10 items above
+            - name: Archive
+              items:
+                - name: What's New in DevTools archive
+                  href: devtools-guide-chromium/whats-new/whats-new-archive.md
 
-            - name: Microsoft Edge 98
-              href: devtools-guide-chromium/whats-new/2022/02/devtools.md
+                - name: Microsoft Edge 99
+                  href: devtools-guide-chromium/whats-new/2022/03/devtools.md
 
-            - name: Microsoft Edge 97
-              href: devtools-guide-chromium/whats-new/2022/01/devtools.md
+                - name: Microsoft Edge 98
+                  href: devtools-guide-chromium/whats-new/2022/02/devtools.md
 
-            - name: Microsoft Edge 96
-              href: devtools-guide-chromium/whats-new/2021/11/devtools.md
+                - name: Microsoft Edge 97
+                  href: devtools-guide-chromium/whats-new/2022/01/devtools.md
 
-            - name: Microsoft Edge 95
-              href: devtools-guide-chromium/whats-new/2021/10/devtools.md
+                - name: Microsoft Edge 96
+                  href: devtools-guide-chromium/whats-new/2021/11/devtools.md
 
-            - name: Microsoft Edge 94
-              href: devtools-guide-chromium/whats-new/2021/09/devtools.md
+                - name: Microsoft Edge 95
+                  href: devtools-guide-chromium/whats-new/2021/10/devtools.md
 
-            - name: Microsoft Edge 93
-              href: devtools-guide-chromium/whats-new/2021/07/devtools.md
+                - name: Microsoft Edge 94
+                  href: devtools-guide-chromium/whats-new/2021/09/devtools.md
 
-            - name: Microsoft Edge 92
-              href: devtools-guide-chromium/whats-new/2021/05/devtools.md
+                - name: Microsoft Edge 93
+                  href: devtools-guide-chromium/whats-new/2021/07/devtools.md
 
-            - name: Microsoft Edge 91
-              href: devtools-guide-chromium/whats-new/2021/04/devtools.md
+                - name: Microsoft Edge 92
+                  href: devtools-guide-chromium/whats-new/2021/05/devtools.md
 
-            - name: Microsoft Edge 90
-              href: devtools-guide-chromium/whats-new/2021/02/devtools.md
+                - name: Microsoft Edge 91
+                  href: devtools-guide-chromium/whats-new/2021/04/devtools.md
 
-            - name: Microsoft Edge 89
-              href: devtools-guide-chromium/whats-new/2021/01/devtools.md
+                - name: Microsoft Edge 90
+                  href: devtools-guide-chromium/whats-new/2021/02/devtools.md
 
-            - name: Microsoft Edge 88
-              href: devtools-guide-chromium/whats-new/2020/11/devtools.md
+                - name: Microsoft Edge 89
+                  href: devtools-guide-chromium/whats-new/2021/01/devtools.md
 
-            - name: Microsoft Edge 87
-              href: devtools-guide-chromium/whats-new/2020/10/devtools.md
+                - name: Microsoft Edge 88
+                  href: devtools-guide-chromium/whats-new/2020/11/devtools.md
 
-            - name: Microsoft Edge 86
-              href: devtools-guide-chromium/whats-new/2020/08/devtools.md
+                - name: Microsoft Edge 87
+                  href: devtools-guide-chromium/whats-new/2020/10/devtools.md
 
-            - name: Microsoft Edge 85
-              href: devtools-guide-chromium/whats-new/2020/06/devtools.md
+                - name: Microsoft Edge 86
+                  href: devtools-guide-chromium/whats-new/2020/08/devtools.md
 
-            - name: Microsoft Edge 84
-              href: devtools-guide-chromium/whats-new/2020/05/devtools.md
+                - name: Microsoft Edge 85
+                  href: devtools-guide-chromium/whats-new/2020/06/devtools.md
 
-            - name: Microsoft Edge 83
-              href: devtools-guide-chromium/whats-new/2020/03/devtools.md
+                - name: Microsoft Edge 84
+                  href: devtools-guide-chromium/whats-new/2020/05/devtools.md
 
-            - name: Microsoft Edge 81
-              href: devtools-guide-chromium/whats-new/2020/01/devtools.md
+                - name: Microsoft Edge 83
+                  href: devtools-guide-chromium/whats-new/2020/03/devtools.md
 
-            - name: Microsoft Edge 80
-              href: devtools-guide-chromium/whats-new/2019/12/devtools.md
+                - name: Microsoft Edge 81
+                  href: devtools-guide-chromium/whats-new/2020/01/devtools.md
 
+                - name: Microsoft Edge 80
+                  href: devtools-guide-chromium/whats-new/2019/12/devtools.md
 # Experimental features ------------------------------------------------------------------
         - name: Experimental features
           items:
@@ -834,7 +840,7 @@
                   href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
                   displayName: 
 
-                - name: Update .css files from within the Styles tool (CSS mirror editing)
+                - name: Update .css files from within the Styles tab (CSS mirror editing)
                   href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
                   displayName: Syncing live changes from the Styles tool by using CSS mirror editing # previous title
 
@@ -997,6 +1003,10 @@
 
                 - name: Microsoft Edge Add-ons API Reference
                   href: extensions-chromium/publish/api/addons-api-reference.md
+
+        - name: Samples
+          href: extensions-chromium/samples.md
+          displayName: Samples for Microsoft Edge extensions # full title
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
@@ -1254,6 +1264,10 @@
               href: webview2/concepts/distribution.md
               displayName: 
 
+            - name: Working with local content in WebView2 apps
+              href: webview2/concepts/working-with-local-content.md
+              displayName: 
+
 # -----------------------------------------------------------------------------
         - name: Debug WebView2 apps
           items: 
@@ -1481,7 +1495,10 @@
         - name: Operating System Regional Data Display
           href: web-platform/os-regional-settings.md
           displayName: globalization, language, region, limited, intl, date, time, format
-          
+
+        - name: View formatted JSON
+          href: devtools-guide-chromium/json-viewer/json-viewer.md
+          displayName: JSON viewer
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords

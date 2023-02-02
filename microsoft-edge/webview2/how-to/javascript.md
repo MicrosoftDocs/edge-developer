@@ -150,5 +150,4 @@ To begin, explore the current functionality of the right-click menu:
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](../webview2-api-reference.md)
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 * [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
