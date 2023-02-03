@@ -95,4 +95,3 @@ The WebView2 [Sample apps](../code-samples-links.md) also demonstrate handling n
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.

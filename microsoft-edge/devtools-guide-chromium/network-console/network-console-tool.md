@@ -89,6 +89,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-<!-- ## See also -->
+## See also
 
+* [View formatted JSON](../json-viewer/json-viewer.md)
 <!-- * [edge-devtools-network-console repo](https://github.com/microsoft/edge-devtools-network-console) -->

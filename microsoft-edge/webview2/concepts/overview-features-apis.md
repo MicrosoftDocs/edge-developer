@@ -834,6 +834,9 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 *  Local content via virtual host name to local folder mapping.
 *  Content from a constructed network request.
 
+See also:
+* [Working with local content in WebView2 apps](./working-with-local-content.md)
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.Navigate Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigate)
@@ -843,6 +846,7 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 * [CoreWebView2.Reload Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.reload)
 * [CoreWebView2.SetVirtualHostNameToFolderMapping Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping)
 * [CoreWebView2.ClearVirtualHostNameToFolderMapping Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.clearvirtualhostnametofoldermapping)
+* [CoreWebView2.WebResourceRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
 * [CoreWebView2Settings.IsBuiltInErrorPageEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isbuiltinerrorpageenabled#microsoft-web-webview2-core-corewebview2settings-isbuiltinerrorpageenabled)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
@@ -854,6 +858,7 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 * [CoreWebView2.Reload Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#reload)
 * [CoreWebView2.SetVirtualHostNameToFolderMapping Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#setvirtualhostnametofoldermapping)
 * [CoreWebView2.ClearVirtualHostNameToFolderMapping Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#clearvirtualhostnametofoldermapping)
+* [CoreWebView2.WebResourceRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourcerequested)
 * [CoreWebView2Settings.IsBuiltInErrorPageEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isbuiltinerrorpageenabled)
 
 ##### [Win32/C++](#tab/win32cpp)
@@ -865,6 +870,7 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 * [ICoreWebView2::Reload method](/microsoft-edge/webview2/reference/win32/icorewebview2#reload)
 * [ICoreWebView2_3::SetVirtualHostNameToFolderMapping method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping)
 * [ICoreWebView2_3::ClearVirtualHostNameToFolderMapping method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#clearvirtualhostnametofoldermapping)
+* [ICoreWebView2::WebResourceRequested event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
 * [ICoreWebView2Settings::IsBuiltInErrorPageEnabled property (get](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isbuiltinerrorpageenabled), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isbuiltinerrorpageenabled)
 
 ---

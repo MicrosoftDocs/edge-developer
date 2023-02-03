@@ -93,7 +93,7 @@ self.addEventListener('sync', event => {
 
 In the example code above, a `sync` event listener is added in the service worker. When the listener is called, the code checks if the tag is the one registered in the frontend, and then calls `doTheWork`. This function is expected to return a Promise.
 
-Typically, the `doTheWork` function will send the information to the server that couldn't be sent when the user was offline. It may be useful to store this information in [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) storage from the frontend so that it can later be retrieved from the service worker when `doTheWork` is executed.
+Typically, the `doTheWork` function will send the information to the server that couldn't be sent when the user was offline. It may be useful to store this information in [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) storage from the frontend so that it can later be retrieved from the service worker when `doTheWork` runs.
 
 For more information about the `Sync` event, the `ServiceWorkerRegistration`, and the `SyncManager` interface, see the [Background Synchronization draft specification](https://wicg.github.io/background-sync/spec/) and the [Background Synchronization API documentation](https://developer.mozilla.org/docs/Web/API/Background_Synchronization_API).
 
