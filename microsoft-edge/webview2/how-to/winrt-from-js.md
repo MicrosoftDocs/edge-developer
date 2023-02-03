@@ -63,8 +63,8 @@ This article walks you through the following main steps:
 1. Create a **WinRTAdapter** project for the **wv2winrt** tool (the WebView2 WinRT JS Projection tool).
 
 1. For this example, specify the following host-side APIs for projection:
-   * `Windows.System.UserProfile`
-   * `Windows.Globalization.Language`
+   * [Windows.System.UserProfile Namespace](/uwp/api/windows.system.userprofile)
+   * [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language)
 
 1. Run the **wv2winrt** tool to generate C++/WinRT source code for the selected namespaces or classes.
 
@@ -76,21 +76,29 @@ This article walks you through the following main steps:
 <!-- ------------------------------ -->
 #### End goal
 
-First, we'll pick some WinRT APIs that we're interested in calling from JavaScript code.  For this example, we'll use the WinRT `Language` class, which is in the `Windows.Globalization` namespace, for Windows UWP applications.  The [Language Class](/uwp/api/windows.globalization.language) enables getting language information from the client's native OS.
+First, we'll pick some WinRT APIs that we're interested in calling from JavaScript code.  For this example, we'll use the WinRT `Language` class, which is in the `Windows.Globalization` namespace, for Windows UWP applications.  The [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language) enables getting language information from the client's native OS.
 
-In the WebView2 host app, the web-side JavaScript code can then access methods and properties on the `Language` object that's in the native-side code.  At the end of this example walkthrough, you'll use the **Console** of Microsoft Edge DevTools to test reading the host's `displayName` property of the `Language` class:
+In the WebView2 host app, the web-side JavaScript code can then access methods and properties on the `Language` object that's in the native-side code.
+
+
+###### Access projected APIs via DevTools Console
+
+At the end of this example walkthrough, you'll use the **Console** of Microsoft Edge DevTools to test reading the host's `displayName` property of the `Language` class:
 
 ```javascript
 const Windows = chrome.webview.hostObjects.sync.Windows;
 (new Windows.Globalization.Language("en-US")).displayName;
 ```
 
-You can similarly access `Windows.System.UserProfile` API members.
-<!-- todo: call Windows.System.UserProfile apis -->
-
 The DevTools Console will then output `English (United States)`, or another language display name, demonstrating that you've called native-side code from web-side JavaScript code:
 
 ![Use the DevTools Console to test calling native-side code from web-side code](winrt-from-js-images/devtools-console-calling-native-side-code.png)
+
+You can similarly access [Windows.System.UserProfile Namespace](/uwp/api/windows.system.userprofile) members.
+<!-- todo: call Windows.System.UserProfile apis -->
+
+
+###### Access projected APIs via source code files
 
 Similarly, in source code files rather than in the DevTools Console, you can access the projected host object.  First, you run setup code for the script:
 
@@ -105,7 +113,7 @@ Then in the main body of your code, you add calls to projected objects, like the
 (new Windows.Globalization.Language("en-US")).displayName;
 ```
 
-You can similarly access `Windows.System.UserProfile` API members.
+You can similarly access [Windows.System.UserProfile Namespace](/uwp/api/windows.system.userprofile) members.
 <!-- todo: call Windows.System.UserProfile apis -->
 
 
@@ -380,12 +388,12 @@ If your app targets WinUI 3 (Windows App SDK), skip this section, because:
 Next, configure the **wv2winrt** tool (the WebView2 WinRT JS Projection tool), to incorporate the WinRT classes that you want to use.  This generates source files that will then be compiled.  Generating code for these APIs enables your web-side JavaScript code to call these APIs.
 
 In the example steps below, we'll specify two `Windows` namespaces, and the **wv2winrt** tool will generate source code for only APIs under those namespaces:
-*  `Windows.System.UserProfile` <!-- todo: call its APIs in Console and JS code listing -->
-*  `Windows.Globalization.Language`
+* [Windows.System.UserProfile Namespace](/uwp/api/windows.system.userprofile)
+* [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language)
 
 Later, when the sample app is running, you'll call these APIs from the DevTools Console, to demonstrate that these specified host-side APIs can be called from web-side code.
 
-Specify two `Windows` namespaces, as follows:
+Specify the namespace and class as follows:
 
 1. In Solution Explorer, right-click the **WinRTAdapter** project, and then select **Properties**.  The **WinRTAdapter Property Pages** dialog opens.
 
@@ -468,8 +476,8 @@ Next, generate the API code:
 1. Right-click the **WinRTAdapter** project, and then select **Build**.
 
    Source code is generated for namespaces or classes that you specified in the **Include filters** dialog of the **wv2winrt** tool (the WebView2 WinRT JS Projection tool):
-   *  `Windows.System.UserProfile`
-   *  `Windows.Globalization.Language`
+   *  `Windows.System.UserProfile` namespace
+   *  `Windows.Globalization.Language` class
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
@@ -744,9 +752,12 @@ The host app's web-side code (and the DevTools Console) can now call methods and
 <!-- =============================================== -->
 ## Step 9: Call methods and properties on the host object from web-side JavaScript
 
+
+#### Access projected APIs via DevTools Console
+
 Next, use the DevTools Console to demonstrate that web-side code can call the host-side APIs that were specified in the **wv2winrt** tool (the WebView2 WinRT JS Projection tool): 
-* `Windows.System.UserProfile`
-* `Windows.Globalization.Language`
+* [Windows.System.UserProfile Namespace](/uwp/api/windows.system.userprofile)
+* [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language)
 
 1. If the app isn't running, in Visual Studio, press `F5` to run the sample app.
 
@@ -760,7 +771,7 @@ Next, use the DevTools Console to demonstrate that web-side code can call the ho
 
 1. Click the **Clear console** (![Clear console icon](./winrt-from-js-images/clear-console-icon.png)) button, or right-click in the **Console** and then select **Clear console**.  Messages might periodically appear in the Console.
 
-1. In the DevTools Console, paste the following code, and then press `Enter`:
+1. In the DevTools Console, paste the following [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language) code, and then press `Enter`:
 
    ```javascript
    const Windows = chrome.webview.hostObjects.sync.Windows;
@@ -771,7 +782,7 @@ Next, use the DevTools Console to demonstrate that web-side code can call the ho
 
    ![Using the DevTools Console to test calling native-side code from web-side code](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
-1. Try omitting parentheses and the `const Windows` statement above:
+1. Try omitting the parentheses.  In the DevTools **Console**, enter the following statement:
 
    ```javascript
    new Windows.Globalization.Language("en-US").displayName;
@@ -779,36 +790,32 @@ Next, use the DevTools Console to demonstrate that web-side code can call the ho
 
    The Console outputs a language name string, such as `English (United States)`.
 
-1. Start typing `new Windows.G`.  An autocomplete dialog opens, listing **new Windows.Globalization.Language**.
-
-   You can similarly access `Windows.System.UserProfile` API members:
-   <!-- todo: call Windows.System.UserProfile apis~~ -->
-
-1. Start typing `new Windows.S`.  An autocomplete dialog opens, offering **Windows.System.UserProfile**.
-
-
-   **From source code files:**
-
-   Similarly, in source code files rather than in the DevTools Console, you can access the projected host object.  First, you would run setup code for the script:
-   
-   ```javascript
-   // early in setup code:
-   const Windows = chrome.webview.hostObjects.sync.Windows;
-   ```
-   
-   Then in the main body of your code, add calls to projected objects, like the following:
-   
-   ```csharp
-   (new Windows.Globalization.Language("en-US")).displayName;
-   ```
-   
-   You can similarly access `Windows.System.UserProfile` API members.
+   You can similarly access [Windows.System.UserProfile Namespace](/uwp/api/windows.system.userprofile) members.
    <!-- todo: call Windows.System.UserProfile apis -->
-   
+
 1. Close the DevTools window.
 
 1. Close the app.
 
+
+#### Access projected APIs via source code files
+
+Similarly, in source code files rather than in the DevTools Console, you can access the projected host object.  First, you would run setup code for the script:
+
+```javascript
+// early in setup code:
+const Windows = chrome.webview.hostObjects.sync.Windows;
+```
+
+Then in the main body of your code, you would add calls to projected objects, like the following:
+
+```csharp
+(new Windows.Globalization.Language("en-US")).displayName;
+```
+
+You can similarly access `Windows.System.UserProfile` API members.
+<!-- todo: call Windows.System.UserProfile apis -->
+   
 
 ##### [WinUI 2 (UWP)](#tab/winui2)
 
