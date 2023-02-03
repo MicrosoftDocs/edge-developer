@@ -255,9 +255,9 @@ To open the DevTools code editor alongside other tools:
 
 
 <!-- ====================================================================== -->
-## Next steps
+## See also
 
-Use what you've learned in this tutorial to set up and use DevTools workspaces in your own project.
+* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 
 
 <!-- ====================================================================== -->
