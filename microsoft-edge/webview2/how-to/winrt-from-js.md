@@ -88,18 +88,18 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 You can similarly access `Windows.System.UserProfile` API members.
 <!-- todo: call Windows.System.UserProfile apis -->
 
-The DevTools Console will then output `English (United States)`, or another language display name, demonstrating that you've called native-side WinRT code from web-side JavaScript code:
+The DevTools Console will then output `English (United States)`, or another language display name, demonstrating that you've called native-side code from web-side JavaScript code:
 
 ![Use the DevTools Console to test calling native-side code from web-side code](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
-Similarly, in actual code rather than in the DevTools Console, you access the host object first by setup code for the script:
+Similarly, in source code files rather than in the DevTools Console, you can access the projected host object.  First, you run setup code for the script:
 
 ```javascript
 // early in setup code:
 const Windows = chrome.webview.hostObjects.sync.Windows;
 ```
 
-Then in the main body of your code, calls to projected objects look like the following:
+Then in the main body of your code, you add calls to projected objects, like the following:
 
 ```csharp
 (new Windows.Globalization.Language("en-US")).displayName;
@@ -107,6 +107,7 @@ Then in the main body of your code, calls to projected objects look like the fol
 
 You can similarly access `Windows.System.UserProfile` API members.
 <!-- todo: call Windows.System.UserProfile apis -->
+
 
 Let's get started!
 
@@ -749,9 +750,15 @@ Next, use the DevTools Console to demonstrate that web-side code can call the ho
 
 1. If the app isn't running, in Visual Studio, press `F5` to run the sample app.
 
-1. Click in the main part of the WebView2 sample app window to give it focus, and then press `Ctrl`+`Shift`+`I` to open Microsoft Edge DevTools.  Or, right-click the page, and then select **Inspect**.  The Microsoft Edge DevTools window opens.
+1. Click in the main part of the WebView2 sample app window to give it focus, and then press `Ctrl`+`Shift`+`I` to open Microsoft Edge DevTools.  Or, right-click the page, and then select **Inspect**.
 
-1. If the Microsoft Edge DevTools window isn't visible, press `Alt+Tab` to display the DevTools window.  If needed, move the DevTools window.
+   The Microsoft Edge DevTools window opens.
+
+1. If the Microsoft Edge DevTools window isn't displayed, press `Alt+Tab` to display it.
+
+1. In the **DevTools** window, select the **Console** tab.
+
+1. Click the **Clear console** (![Clear console icon](./winrt-from-js-images/clear-console-icon.png)) button, or right-click in the **Console** and then select **Clear console**.  Messages might periodically appear in the Console.
 
 1. In the DevTools Console, paste the following code, and then press `Enter`:
 
@@ -760,13 +767,44 @@ Next, use the DevTools Console to demonstrate that web-side code can call the ho
    (new Windows.Globalization.Language("en-US")).displayName;
    ```
 
-   You can similarly access `Windows.System.UserProfile` API members.
-   <!-- todo: call Windows.System.UserProfile apis -->
-
-   The Console outputs a language name string, such as `English (United States)`, demonstrating that your app's host-side code can be called from web-side code:
+   The Console outputs a language name string, such as `English (United States)`, demonstrating that your app's host-side (native-side) code can be called from web-side JavaScript code:
 
    ![Using the DevTools Console to test calling native-side code from web-side code](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
+1. Try omitting parentheses and the `const Windows` statement above:
+
+   ```javascript
+   new Windows.Globalization.Language("en-US").displayName;
+   ```
+
+   The Console outputs a language name string, such as `English (United States)`.
+
+1. Start typing `new Windows.G`.  An autocomplete dialog opens, listing **new Windows.Globalization.Language**.
+
+   You can similarly access `Windows.System.UserProfile` API members:
+   <!-- todo: call Windows.System.UserProfile apis~~ -->
+
+1. Start typing `new Windows.S`.  An autocomplete dialog opens, offering **Windows.System.UserProfile**.
+
+
+   **From source code files:**
+
+   Similarly, in source code files rather than in the DevTools Console, you can access the projected host object.  First, you would run setup code for the script:
+   
+   ```javascript
+   // early in setup code:
+   const Windows = chrome.webview.hostObjects.sync.Windows;
+   ```
+   
+   Then in the main body of your code, add calls to projected objects, like the following:
+   
+   ```csharp
+   (new Windows.Globalization.Language("en-US")).displayName;
+   ```
+   
+   You can similarly access `Windows.System.UserProfile` API members.
+   <!-- todo: call Windows.System.UserProfile apis -->
+   
 1. Close the DevTools window.
 
 1. Close the app.
