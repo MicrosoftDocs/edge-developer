@@ -252,11 +252,11 @@ When JS samples are disabled, only high-level events such as `Event: click` and 
 
 After recording a page, you don't need to rely solely on the **Main** section to analyze activities.  DevTools also provides three tabular views for analyzing activities.  Each view gives you a different perspective on the activities:
 
-*  To view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-panel) tab.
+*  To view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-tab) tab.
 
 *  To view the root activities that cause the most work, use the [Call Tree](#the-call-tree-tab) tab.
 
-*  To view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-panel) tab.
+*  To view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-tab) tab.
 
 
 ###### Root activities
