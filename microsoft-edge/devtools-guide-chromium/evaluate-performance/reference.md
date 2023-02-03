@@ -265,11 +265,11 @@ After recording a page, you don't need to rely solely on the **Main** section to
 [Bottom Up] [Call Tree] [Event Log]
 -->
 
-Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.  The _activity tabs_ are **Bottom-Up**, **Call Tree**, and **Event Log** tabs at the bottom of the **Performance** tool.  These tabs display root activities.
+Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.  The _activity tabs_ are the **Bottom-Up**, **Call Tree**, and **Event Log** tabs at the bottom of the **Performance** tool.  These tabs display root activities.
 
 <!-- You can view the source files for the Activity Tabs Demo in the [MicrosoftEdge/Demos > devtools-performance-activitytabs](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) repo folder. -->
 
-_Root activities_ are those which cause the browser to do some work.  For example, when you click a webpage, the browser runs an `Event` activity as the root activity.  That `Event` may cause a handler to run, and so on.
+_Root activities_ are activities that cause the browser to do some work.  For example, when you click a webpage, the browser runs an `Event` activity as the root activity.  That `Event` activity may cause other activities to run, such as a handler.
 
 In the flame chart of the **Main** section, root activities are at the top of the chart.  In the **Call Tree** and **Event Log** tabs, root activities are the top-level items.
 
