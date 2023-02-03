@@ -897,7 +897,7 @@ To ensure that the JavaScript that sets all this up is run before anything else,
 
 The following example demonstrates the above techniques:
 
-# [C#](#tab/csharp)
+##### [C#](#tab/csharp)
 
 ```csharp
 webview.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync(
@@ -912,7 +912,7 @@ webview.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync(
                 "})();");
 ```
 
-# [C++](#tab/cpp)
+##### [C++](#tab/cpp)
 
 ```cpp
 webView->CoreWebView2->AddScriptToExecuteOnDocumentCreatedAsync(
@@ -957,8 +957,6 @@ Command-line help contains similar information for the parameters of `wv2winrt.e
 <!-- ====================================================================== -->
 ## See also
 
-* [Call native-side code from web-side code](hostobject.md)
-
 Tutorial and sample:
 * [Get started with WinUI 2 (UWP) apps](../get-started/winui2.md) - Tutorial: Steps to create an app with WebView2 using a project template.
 * [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - Sample: Steps to download, build, run, and update the sample.
@@ -967,3 +965,6 @@ API Reference:
 * WinRT: [CoreWebView2.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
 * Win32: [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
 * .NET: [CoreWebView2.AddHostObjectToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
+
+.NET equivalent article:
+* [Call native-side code from web-side code](hostobject.md) - covers Win32/C++, and also covers some aspects of .NET/C# within frames.
