@@ -174,7 +174,7 @@ self.registration.showNotification("Your content is ready", {
 
 ![A notification with some text, an image, and two actions](../media/notification-with-actions.png)
 
-When the user clicks one of the action buttons, your PWA can handle the click by listening for the `notificationclick` event.  When a `notificationclick` event is received, close the notification and execute some code:
+When the user clicks one of the action buttons, your PWA can handle the click by listening for the `notificationclick` event.  When a `notificationclick` event is received, close the notification and run some code:
 
 ```javascript
 self.addEventListener('notificationclick', event => {

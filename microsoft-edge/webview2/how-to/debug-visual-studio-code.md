@@ -235,4 +235,3 @@ To solve the issue, confirm that the WebView2 control opened the CDP port.  Make
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](../webview2-api-reference.md)
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.

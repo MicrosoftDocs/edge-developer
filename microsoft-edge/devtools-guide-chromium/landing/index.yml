@@ -55,7 +55,7 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/console/index
       - linkListType: whats-new
         links:
-          - text: What's new in Microsoft Edge DevTools 
+          - text: What's New in Microsoft Edge DevTools 
             url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
 
           - text: Contact the Microsoft Edge DevTools team

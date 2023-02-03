@@ -818,7 +818,7 @@ To access root proxies where Chakra WinRT projection code would expect, you can 
 window.Windows = chrome.webview.hostObjects.sync.Windows;
 ```
 
-To ensure that the JavaScript that sets all this up is executed before anything else, you can either add the above statement to your JavaScript, or you can tell WebView2 to inject the above statement for you before running any other script, by using the `CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync` method.
+To ensure that the JavaScript that sets all this up is run before anything else, you can either add the above statement to your JavaScript, or you can tell WebView2 to inject the above statement for you before running any other script, by using the `CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync` method.
 
 The following example demonstrates the above techniques:
 

@@ -561,4 +561,5 @@ window.chrome.webview.addEventListener('message', arg => {
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 API Reference](../webview2-api-reference.md)
 * [Get started with WebView2 in Win32 apps](../get-started/win32.md)

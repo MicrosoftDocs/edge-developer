@@ -184,4 +184,4 @@ This step is optional.  The sample has preinstalled:
 ## See also
 
 * [Get started with WebView2 in Win32 apps](../get-started/win32.md)
-* [WebView2 Reference Documentation](/microsoft-edge/webview2/webview2-api-reference)
+* [WebView2 API Reference](../webview2-api-reference.md)
