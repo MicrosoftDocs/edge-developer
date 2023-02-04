@@ -1,5 +1,5 @@
 ---
-title: Detect Windows 11 and CPU Architecture using User-Agent Client Hints
+title: Detect Windows 11 and CPU architecture using User-Agent Client Hints
 description: How to differentiate Windows 10 and Windows 11 and CPU architecture using User-Agent Client Hints.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/22/2022
 ---
-# Detect Windows 11 and CPU Architecture using User-Agent Client Hints
+# Detect Windows 11 and CPU architecture using User-Agent Client Hints
 
 <!--
 Restrict the lexicon to these forms:
@@ -31,14 +31,14 @@ There are two approaches for sites to access user agent information:
 
 For details about these two approaches, see [Detecting Microsoft Edge from your website](user-agent-guidance.md).
 
-In Microsoft Edge (and also in Google Chrome), sites can differentiate between users on Windows 11 and Windows 10, and the CPU architecture of the device, via User-Agent Client Hints (UA-CH).  This information can be found in the following UA-CH request headers:
+In Microsoft Edge (and also in Google Chrome), sites can differentiate between users on Windows 11 and Windows 10, and can detect the CPU architecture of the device, via User-Agent Client Hints (UA-CH).  This information can be found in the following UA-CH request headers:
 
 | Header field | Values that indicate Windows 10 | Values that indicate Windows 11 |
 | --- | --- | --- |
 | `Sec-CH-UA-Platform` | `Windows` | `Windows` |
 | `Sec-CH-UA-Platform-Version` | values between `1.0.0` and `10.0.0` | `13.0.0` and above |
 
-User-Agent strings won't be updated to differentiate between Windows 11 and Windows 10 or between CPU architectures.  We don't recommend using User-Agent strings to retrieve user agent data.  Browsers that don't support User-Agent Client Hints won't be able to differentiate between Windows 11 and Windows 10, or between CPU architectures.
+User-Agent strings won't be updated to differentiate between Windows 11 and Windows 10, or to differentiate between CPU architectures.  We don't recommend using User-Agent strings to retrieve user agent data.  Browsers that don't support User-Agent Client Hints won't be able to differentiate between Windows 11 and Windows 10, or between CPU architectures.
 
 
 <!-- ====================================================================== -->
@@ -85,7 +85,9 @@ navigator.userAgentData.getHighEntropyValues(["platformVersion"])
 <!-- ====================================================================== -->
 ## Sample code for detecting ARM or x86
 
-Detection of CPU architecture is helpful for websites that wish to guide visitors to download applications built for the CPU in their system. This is particularly helpful for ARM-based devices so that customers download the native ARM version of an application, instead of inadvertently installing an app built for x86 and experiencing reduced performance from emulation.
+Use detection of CPU architecture to have your website automatically download the version of your app that's built specifically for the user's CPU.
+
+CPU detection is particularly helpful for ARM-based devices, so that a customer using an ARM device automatically downloads the native ARM version of an application.  This prevents the user from inadvertently installing an app that's built for x86, and then experiencing reduced performance due to emulation.
 
 The following code detects CPU architecture:
 
@@ -114,7 +116,6 @@ navigator.userAgentData.getHighEntropyValues(["architecture","bitness"])
      console.log("Not running on Windows");
    }
  });
-
 ```
 
 
