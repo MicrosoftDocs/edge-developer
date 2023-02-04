@@ -22,7 +22,7 @@ WebView2 changes may require an update to the Runtime, SDK, or both. Most new AP
 | **Runtime-only** | Only the Runtime needs to be updated. |
 | **SDK-only** | Only the SDK needs to be updated. |
 
-WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time. As a result, WebView2 Runtime releases generally also include Microsoft Edge updates. For Microsoft Edge updates, see [Stable Channel Release Notes](/deployedge/microsoft-edge-relnote-stable-channel) and [Beta Channel Release Notes](/deployedge/microsoft-edge-relnote-beta-channel).
+WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time. As a result, WebView2 Runtime releases generally also include Microsoft Edge updates. For Microsoft Edge updates, see [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel) and [Release notes for Microsoft Edge Beta Channel](/deployedge/microsoft-edge-relnote-beta-channel).
 
 
 #### Recommended browser channel and Runtime
