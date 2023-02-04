@@ -14,7 +14,9 @@ The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Micr
 
 Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](webview2-api-reference.md).
 
-WebView2 bug fixes, such as the fixes listed below, are either Runtime-specific or SDK-specific.
+WebView2 changes may require an update to the Runtime, SDK, or both. Most new APIs require both Runtime and SDK updates. Starting with our release in February 2023, all bug fixes will be marked as **Runtime-only** meaning only the Runtime needs to be updated, **SDK-only** meaning only the SDK needs to be updated, and no label means both need to be updated.
+
+WebView2 shares code and binaries with the Microsoft Edge browser and is released around the same time. As a result WebView2 Runtime releases generally also include Microsoft Edge updates. See [Stable Channel Release Notes](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel) and [Beta Channel Release Notes](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-beta-channel) for Microsoft Edge updates.
 
 
 #### Recommended browser channel and Runtime
