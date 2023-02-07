@@ -314,7 +314,7 @@ After downloading or cloning the Demos repo:
 
 1. In Visual Studio Code, in the Activity Bar, click the **Explorer** (![Explorer icon](./sample-code-images/explorer-icon.png)) button.  The **Explorer** pane opens.
 
-1. In the **Explorer** pane, click the **Open Folder** button.  The **Open Folder** dialog box opens.  Navigate to the `demo-to-do` folder in the Demo repo that you cloned, select the folder or go into it, and then click the **Select Folder** button:
+1. In the **Explorer** pane, click the **Open Folder** button.  The **Open Folder** dialog opens.  Navigate to the `demo-to-do` folder in the Demo repo that you cloned, select the folder or go into it, and then click the **Select Folder** button:
 
    ![Selecting the demo-to-do folder](./sample-code-images/select-demo-to-do-folder.png)
 

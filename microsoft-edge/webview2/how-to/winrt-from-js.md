@@ -113,7 +113,7 @@ Next, create a **WinRTAdapter** project for the **wv2winrt** tool (the WebView2 
 
 Add a project for the wv2winrt tool, as follows:
 
-1. Right-click the **webview2_sample_uwp** solution (not the project), and then select **Add** > **New project**.  The **Add a new project** dialog box opens.
+1. Right-click the **webview2_sample_uwp** solution (not the project), and then select **Add** > **New project**.  The **Add a new project** dialog opens.
 
 1. In the **Search** textbox, enter **Windows Runtime Component (C++/WinRT)**.
 
@@ -238,18 +238,18 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
    Windows.Globalization.Language
    ```
 
-   ![Include filters dialog box](winrt-from-js-images/include-filters.png)
+   ![Include filters dialog](winrt-from-js-images/include-filters.png)
 
    You need to specify the full name of the namespaces or classes, as shown above.
 
-1. Click the **OK** button to close the **Include filters** dialog box.
+1. Click the **OK** button to close the **Include filters** dialog.
 
 1. Make sure the **WinRTAdapter Property Pages** dialog looks like the following, for this walkthrough:
 
    <!-- 1st use of png: -->
    ![The 'WinRTAdapter Property Pages' dialog, with 'Common Properties > WebView2' expanded](winrt-from-js-images/winrtadapter-property-pages.png)
 
-1. Click the **OK** button to close the **Property Pages** dialog box.
+1. Click the **OK** button to close the **Property Pages** dialog.
 
    **Add a reference:**
 

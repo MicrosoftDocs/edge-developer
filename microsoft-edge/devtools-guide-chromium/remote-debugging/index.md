@@ -81,7 +81,7 @@ If the **Allow USB Debugging** prompt isn't displayed on your Android device, tr
 
 *  Disconnecting and then re-connecting the USB cable while DevTools is in focus on your development machine and your Android homescreen is showing.  Sometimes the prompt isn't displayed when your Android or development machine screens are locked.
 *  Updating the display settings for your Android device and development machine so that they never go to sleep.
-*  Setting the USB mode for Android to PTP.  See [Galaxy S4 does not show Authorize USB debugging dialog box](https://android.stackexchange.com/questions/101933).
+*  Setting the USB mode for Android to PTP.  See [Galaxy S4 does not show Authorize USB debugging dialog](https://android.stackexchange.com/questions/101933).
 *  Select **Revoke USB Debugging Authorizations** from the **Developer Options** screen on your Android device to reset it to a fresh state.
 
 If you find a solution that isn't mentioned on this page or in [DevTools Devices does not detect device when plugged in](https://stackoverflow.com/questions/21925992) on Stack Overflow, please add your solution to that Stack Overflow question<!--, or [open an issue in the webfundamentals repository](https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging]) -->.

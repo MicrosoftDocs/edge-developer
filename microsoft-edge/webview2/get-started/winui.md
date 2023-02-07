@@ -66,11 +66,11 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
 1.  If Visual Studio is not running, start Visual Studio (not Visual Studio Code).  In the Visual Studio startup window, click the **Create a new project** card.  The **Create a new project** window opens.
 
-    Or, if Visual Studio is running, select **File** > **New** > **Project**.  The **Create a new project** dialog box opens.
+    Or, if Visual Studio is running, select **File** > **New** > **Project**.  The **Create a new project** dialog opens.
 
     **Turning on Developer Mode:**  When Visual Studio opens at some point during the present article's steps, you might be prompted to turn on Developer Mode for your computer.  For more information, if needed, see [Enable your device for development](/windows/apps/get-started/enable-your-device-for-development), at _Build desktop apps for Windows_.
 
-1.  In the **Create a new project** dialog box, in the **Search for templates** field, enter **WinUI 3 in Desktop**:
+1.  In the **Create a new project** dialog, in the **Search for templates** field, enter **WinUI 3 in Desktop**:
 
     ![Searching on "WinUI 3 in Desktop" to create a new project](winui-images/create-project-winui3-desktop.png)
 
@@ -78,11 +78,11 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
     If **WinUI** templates aren't listed, you need to install project templates as mentioned above, from [Install tools for the Windows App SDK](/windows/apps/windows-app-sdk/set-up-your-development-environment).
 
-    The **Configure your new project** dialog box appears.
+    The **Configure your new project** dialog appears.
 
 1.  In the **Project name** text box, enter a project name, such as **MyWebView2WinUI3**:
 
-    ![The 'Configure your new project' dialog box](winui-images/config-new-proj.png)
+    ![The 'Configure your new project' dialog](winui-images/config-new-proj.png)
 
 1.  In the **Location** text box, enter or navigate to a location, such as `C:\Users\username\Documents\WebView2`.
 
@@ -262,11 +262,11 @@ To allow users to control which webpage is displayed in the WebView2 control, ad
 
     An `ArgumentException` exception is thrown,<!--and appears after you close the app--> because the URL doesn't start with `http://` or `https://`.
 
-1.  Close the sample app.  The following dialog boxes might appear:
+1.  Close the sample app.  The following dialogs might appear:
 
     ![Debugger not configured](winui-images/debugger-not-configd.png)
 
-1.  These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
+1.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialogs.
 
 <!--
 maintenance link (keep)
@@ -343,11 +343,11 @@ In this section, you add code to import the WebView2 Core library.
 
     Navigation is allowed for HTTPS sites.
 
-1.  Close the sample app.  The following dialog boxes might appear:
+1.  Close the sample app.  The following dialogs might appear:
 
     ![Debugger not configured](winui-images/debugger-not-configd.png)
 
-1.  These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
+1.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialogs.
 
 
 #### WinRT CoreWebView2 object availability

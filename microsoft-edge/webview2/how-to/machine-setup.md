@@ -123,7 +123,7 @@ If you want to use Visual Studio to clone the GitHub repo to your local drive:
 
 1. Enter the URL that you copied from the GitHub repo.
 
-1. From within the same dialog box, or in a file explorer utility, you can create a general-purpose root `git` or `GitHub` folder in a writeable location, then select that directory, so that the repo will be cloned there, as a new directory.
+1. From within the same dialog, or in a file explorer utility, you can create a general-purpose root `git` or `GitHub` folder in a writeable location, then select that directory, so that the repo will be cloned there, as a new directory.
 
    For example, you could create the repo in the parent folder: `C:\Users\myUserName\Documents\GitHub\`, so that the cloning operation will create the new directory `C:\Users\myUserName\Documents\GitHub\WebView2Samples`.
 
@@ -140,7 +140,7 @@ If you want to use GitHub Desktop to clone the GitHub repo to your local drive:
 
 1. In Visual Studio or GitHub Desktop, enter the URL that you copied from the GitHub repo.
 
-1. From within the same dialog box, or in a file explorer utility, you can create a general-purpose root `git` or `GitHub` folder in a writeable location, then select that directory, so that the repo will be cloned there, as a new directory.
+1. From within the same dialog, or in a file explorer utility, you can create a general-purpose root `git` or `GitHub` folder in a writeable location, then select that directory, so that the repo will be cloned there, as a new directory.
 
    For example, you could create the repo in the parent folder: `C:\Users\myUserName\Documents\GitHub\`, so that the cloning operation will create the new directory `C:\Users\myUserName\Documents\GitHub\WebView2Samples`.
 
@@ -199,7 +199,7 @@ For general, initial Dev environment setup, you can open any type of `.sln` file
 <!-- ====================================================================== -->
 ## Install Visual Studio workloads
 
-Install Visual Studio workloads if prompted.  When you open a `.sln` file from the cloned or downloaded `WebView2Samples` repo in Microsoft Visual Studio 2019 or 2022, you might see a "cannot open" dialog box.
+Install Visual Studio workloads if prompted.  When you open a `.sln` file from the cloned or downloaded `WebView2Samples` repo in Microsoft Visual Studio 2019 or 2022, you might see a "cannot open" dialog.
 
 <!-- For example, the Win32 tutorial tells how to install a particular workload if prompted to, upon opening a particular sample.  For example, see [Install the "Desktop development with C++" workload](../get-started/win32.md#install-workloads) in _Get started with WebView2 in Win32 apps_. -->
 
