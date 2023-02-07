@@ -567,7 +567,7 @@ If there's insufficient memory, or the Microsoft Edge runtime is unable to start
 
 Add code, such as `try/catch` code, to handle these errors.  These errors tend to be fatal errors that you can't recover from, so `try/catch` will prevent the app from crashing.  You'll then be able to detect the failure and close the app gracefully.  Some errors are unrecoverable, such as `Access Denied` when trying to use a user data folder that you don't have Write permissions to.
 
-Error message strings are displayed in a dialog box.
+Error message strings are displayed in a dialog.
 
 
 <!-- ====================================================================== -->
