@@ -75,7 +75,7 @@ Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsof
 
    You can only upload one package at a time. Your submission is blocked if the package upload isn't successful on the **Packages** webpage.
 
-1. To upload your package, drag and drop the zip file to the **Drag your package here (.zip)** section of the webpage. Or you can select **Browse your files** to open a dialog box to select the package to upload.
+1. To upload your package, drag and drop the zip file to the **Drag your package here (.zip)** section of the webpage. Or you can select **Browse your files** to open a dialog to select the package to upload.
 
    After your package is uploaded, it's validated. If there's a validation error, resolve the issue and try uploading your package again.
 

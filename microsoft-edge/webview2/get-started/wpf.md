@@ -98,7 +98,7 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
 1. Click the **Next** button.
 
-   The **Configure your new project: WPF Application** dialog box opens:
+   The **Configure your new project: WPF Application** dialog opens:
 
    ![The 'Configure your new project: WPF Application' dialog for a .NET Core/5/6 project](wpf-images/config-new-core-project-2022.png)
    <!-- ok to delete png media/wpf-getting-started-create-core.png -->
@@ -107,7 +107,7 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
 1. In the **Location** text box, select a path on your local drive, such as `C:\Users\myusername\Documents\MyProjects`, and then click the **Next** button.
 
-   The **Additional information** dialog box appears, with a **Target Framework** dropdown list:
+   The **Additional information** dialog appears, with a **Target Framework** dropdown list:
 
    ![The 'Additional information' dialog with a 'Target Framework' dropdown list](media/wpf-getting-started-create-core-add-info.png)
 
@@ -140,7 +140,7 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 
 1. Click the **Next** button.
 
-   The **Configure your new project: WPF App (.NET Framework)** dialog box opens:
+   The **Configure your new project: WPF App (.NET Framework)** dialog opens:
 
    ![The 'Configure your new project: WPF App (.NET Framework)' dialog](media/wpf-getting-started-create-fw.png)
 
@@ -207,13 +207,13 @@ In Visual Studio, use NuGet Package Manager to add the WebView2 SDK to the proje
 
 1. In the upper left, click the **Browse** tab.  In the search bar, type `Microsoft.Web.WebView2`, then click the **Microsoft.Web.WebView2** package.
 
-   The NuGet package manager dialog box displays search results, including a **Microsoft.Web.WebView2** package.  The dialog box has a version number and **Install** button.
+   The NuGet package manager dialog displays search results, including a **Microsoft.Web.WebView2** package.  The dialog has a version number and **Install** button.
    
-   ![NuGet package manager dialog box displays the Microsoft.Web.WebView2 package](media/install-nuget.png)
+   ![NuGet package manager dialog displays the Microsoft.Web.WebView2 package](media/install-nuget.png)
 
 1. Accept the default version, and then click the **Install** button.
 
-1. In the **Preview Changes** dialog box, click the **OK** button.
+1. In the **Preview Changes** dialog, click the **OK** button.
 
 1. Select **File** > **Save All** to save the project.
 
