@@ -169,11 +169,11 @@ In case you need more information, see detailed steps in these pages, and then c
 
    ![WinUI Desktop app after finishing Getting Started](./winrt-from-js-images/winui3-app-after-finish-getstart.png)
 
-1.  If the **WinUI Desktop** app is running, close the app.  The following Visual Studio dialog boxes might appear:
+1.  If the **WinUI Desktop** app is running, close the app.
+
+1.  The following Visual Studio dialogs might appear.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close these dialogs:
 
     ![Debugger not configured](./winrt-from-js-images/debugger-not-configd.png)
-
-1.  These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
 
 ---
 
@@ -373,7 +373,7 @@ The WebView2 prerelease SDK is now installed for the **webview2_sample_uwp** pro
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
 
-If your app targets WinUI 3 (Windows App SDK), skip this section, because:
+If your app targets WinUI 3 (Windows App SDK), skip this step, because:
 
 *  WinUI 3 bundles the WebView2 SDK, so there isn't a need to download the WebView2 SDK separately.
 
@@ -506,7 +506,7 @@ Next, generate the API code:
 
 ##### [WinUI 2 (UWP)](#tab/winui2)
 
-If your app is for WinUI 2 (UWP), skip this section.
+If your app is for WinUI 2 (UWP), skip this step.
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -640,11 +640,9 @@ This section is for WinUI 3 (Windows App SDK) only.
 
 1. Close the app.
 
-   For the WinUI 3 project, the following Visual Studio dialog boxes might appear:
+1. The following Visual Studio dialogs might appear.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close these dialogs:
 
    ![Debugger not configured](./winrt-from-js-images/debugger-not-configd.png)
-
-1. These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
@@ -798,25 +796,6 @@ Next, use the DevTools Console to demonstrate that web-side code can call the ho
 1. Close the app.
 
 
-#### Access projected APIs via source code files
-
-Similarly, in source code files rather than in the DevTools Console, you can access the projected host object.  First, you would run setup code for the script:
-
-```javascript
-// early in setup code:
-const Windows = chrome.webview.hostObjects.sync.Windows;
-```
-
-Then in the main body of your code, you would add calls to projected objects, like the following:
-
-```csharp
-(new Windows.Globalization.Language("en-US")).displayName;
-```
-
-You can similarly access `Windows.System.UserProfile` API members.
-<!-- todo: call Windows.System.UserProfile apis -->
-   
-
 ##### [WinUI 2 (UWP)](#tab/winui2)
 
 Congratulations!  You've finished the sample demonstration of calling WinRT code from JavaScript code.
@@ -824,15 +803,35 @@ Congratulations!  You've finished the sample demonstration of calling WinRT code
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
 
-When you close the WinUI 3 app, the following Visual Studio dialog boxes might appear:
+*  The following Visual Studio dialogs might appear.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close these dialogs:
 
    ![Debugger not configured](./winrt-from-js-images/debugger-not-configd.png)
-
-1. These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
 
 Congratulations!  You've finished the sample demonstration of calling WinRT code from JavaScript code.
 
 ---
+
+
+#### Access projected APIs via source code files
+
+Above, we used the DevTools console to run JavaScript statements that access the projected host object.  Similarly, you can access the projected host object from within source code files.  To do this, first you run setup code for the script:
+
+```javascript
+// early in setup code:
+const Windows = chrome.webview.hostObjects.sync.Windows;
+```
+
+Then in the main body of your code, you add calls to projected objects, like the following:
+
+```csharp
+(new Windows.Globalization.Language("en-US")).displayName;
+```
+
+You can similarly access `Windows.System.UserProfile` API members.
+<!-- todo: call Windows.System.UserProfile apis -->
+
+
+This is the end of the tutorial steps.  The following sections are general information about WebView2 WinRT apps.
 
 
 <!-- =============================================== -->
@@ -985,16 +984,25 @@ webView->CoreWebView2->AddScriptToExecuteOnDocumentCreatedAsync(
 
 
 <!-- ====================================================================== -->
-## WebView2 Properties available in the WinRTAdapter Property Pages
+## Get information about WebView2 properties
 
-This section is for reference.
+Information about WebView2 properties is available in two places:
+*  The WinRTAdapter project's Property Pages.
+*  `wv2winrt.exe` command-line help.  This is the **wv2winrt** tool (the WebView2 WinRT JS Projection tool).
 
+
+<!-- ------------------------------ -->
+#### WinRTAdapter project's Property Pages
+
+In the WinRTAdapter project's Property Pages, for help about a property, click a property row.  Help is shown at the bottom of the dialog:
 <!-- 2nd use of png: -->
 ![Properties that are listed in the WinRTAdapter Property Pages](winrt-from-js-images/winrtadapter-property-pages.png)
 
-For help about a property, click a property row.  Help is shown at the bottom of the dialog.
 
-Command-line help contains similar information for the parameters of `wv2winrt.exe`, which is the **wv2winrt** tool (the WebView2 WinRT JS Projection tool).  For example:
+<!-- ------------------------------ -->
+#### Command-line help for wv2winrt.exe properties
+
+Command-line help for `wv2winrt.exe` gives information about the parameters of the **wv2winrt** tool (the WebView2 WinRT JS Projection tool).  For example:
 
 | Parameter | Description |
 |---|---|
