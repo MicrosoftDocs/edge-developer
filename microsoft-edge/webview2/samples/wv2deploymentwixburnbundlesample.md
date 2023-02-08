@@ -68,7 +68,7 @@ If you haven't installed WiX tools, the WiX deployment projects in Solution Expl
 
 1. Click the **OK** button.  The WiX installer window closes.
 
-1. Press the **Windows** key ![Windows key logo](../../media/windows-keyboard-logo.png) on your keyboard, type **Windows Features**, and then press **Enter**.  The **Turn Windows features on or off** dialog box appears.
+1. Press the **Windows** key ![Windows key logo](../../media/windows-keyboard-logo.png) on your keyboard, type **Windows Features**, and then press **Enter**.  The **Turn Windows features on or off** dialog appears.
 
 1. Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box:
 
@@ -135,7 +135,7 @@ Follow the steps in that section, and then return to this page and continue belo
 
 1. In your local copy of the WebView2Samples repo, open `<repo-location>\WebView2Samples\SampleApps\WebView2Samples.sln` with Visual Studio (not Visual Studio Code).
 
-   If the **Unsupported ... .wixproj** dialog box appears, install the WiX Toolset and the WiX Toolset Extension, above:
+   If the **Unsupported ... .wixproj** dialog appears, install the WiX Toolset and the WiX Toolset Extension, above:
 
    ![Unsupported wix projects message](./media/unsupported-review-project-dialog.png)
 

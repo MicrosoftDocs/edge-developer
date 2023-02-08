@@ -102,7 +102,7 @@ The Installer closes.
 
 The Visual Studio **Review Solution Actions** dialog might appear, prompting you whether you want to **Retarget Projects**:
 
-![Visual Studio's 'Review Solution Actions' dialog box, prompting to Retarget Projects](../media/review-solution-actions-retarget-projects.png)
+![Visual Studio's 'Review Solution Actions' dialog, prompting to Retarget Projects](../media/review-solution-actions-retarget-projects.png)
 
 1. If that dialog appears, you can click **OK**.
 
@@ -440,9 +440,9 @@ Now to do the above, in the callback, you'll:
 
 1. Close the **WebView sample** app window.
 
-   Or, if you kept all of the WebView2 code, at this point, a pop-up WebView2 window with an alert dialog from Bing opens, over an empty WebView2 window.  Click the **OK** button to close the Bing dialog box.  Now the WebView2 control is filled by Bing page content:
+   Or, if you kept all of the WebView2 code, at this point, a pop-up WebView2 window with an alert dialog from Bing opens, over an empty WebView2 window.  Click the **OK** button to close the Bing dialog.  Now the WebView2 control is filled by Bing page content:
 
-   ![The sample app displays an initially empty window with a Bing dialog box](../media/empty-app-with-bing-dialog.png)
+   ![The sample app displays an initially empty window with a Bing dialog](../media/empty-app-with-bing-dialog.png)
 
 1. If the **WebView sample** app window is open, close it.
 
