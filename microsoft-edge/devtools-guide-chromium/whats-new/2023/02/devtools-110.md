@@ -34,18 +34,48 @@ See also:
 
 Microsoft Edge 110 contains various improvements to **Focus Mode** in DevTools.  The following changes make it easier to customize the Activity Bar and Quick View, to show only the tools that you're currently interested in.
 
+
+<!-- ------------------------------ -->
+#### Right-click menu shows the current location of the other toolbar to move a tool to
+
 The right-click menu for moving an optional tool between Quick View and the Activity Bar now includes the position of the Activity Bar, such as:
+* **Move to bottom Quick View**
+* **Move to side Quick View**
 * **Move to left Activity Bar**
 * **Move to top Activity Bar**
-<!-- todo: screenshot -->
 
-* The position of the context menu itself for moving tools no longer displays over the tool title in the toolbar.
-<!-- todo: screenshot -->
+![Right-click menu showing 'Move to bottom Quick View'](./devtools-110-images/move-to-bottom-quick-view.png)
 
-* For keyboard shortcut and assistive technology users, focus is preserved in the Activity Bar or Quick View when moving the currently selected tool from one to the other or removing it.
-<!-- todo: screenshot -->
+See also:
+* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
-![Moving the Network Conditions tool from Quick View to the Activity Bar](./devtools-110-images/focus-mode-moving-tools-context-menu.png)
+
+<!-- ------------------------------ -->
+#### Tool name remains visible when you right-click the tool icon
+
+The context menu for moving a tool between the Activity Bar and Quick View no longer obscures the tool's title in the toolbar:
+
+For example, the **Network Conditions** tool name remains visible when you right-click the tool's tab in Quick View:
+
+![The right-click menu in Quick View](./devtools-110-images/focus-mode-moving-tools-context-menu.png)
+
+As another example, the **Network** tool name remains visible when you right-click the tool's tab in the Activity Bar:
+
+![The right-click menu in the Activity Bar](./devtools-110-images/tool-name-remains-visible.png)
+
+See also:
+* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
+
+
+<!-- ------------------------------ -->
+#### Focus is preserved in Activity Bar or Quick View when moving a tool between them
+
+For keyboard shortcut and assistive technology users, focus is preserved in the Activity Bar or Quick View when moving the currently selected tool from one to the other or removing it.
+<!-- todo: is focus preserved within the tool, or within the toolbar? -->
+
+<!-- todo: screenshot?
+![alt text](./devtools-110-images/filename.png)
+-->
 
 See also:
 * [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
@@ -68,6 +98,9 @@ Screen readers now correctly report when the **More tools** (![Plus sign icon](.
 
 ![The 'More tools' menu in Focus Mode](./devtools-110-images/a11y-focus-mode-more-tools.png)
 
+See also:
+* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
+
 
 <!-- ------------------------------ -->
 #### Change Dock location and Activity Bar location by using the keyboard
@@ -78,6 +111,9 @@ In Focus Mode, you can now change the Dock location and the Activity Bar locatio
 
 ![Changing the Dock location in Focus Mode by pressing arrow keys](./devtools-110-images/a11y-focus-mode-dock-location.png)
 
+See also:
+* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
+
 
 <!-- ------------------------------ -->
 #### Screen readers announce which theme is currently selected when scrolling through themes
@@ -87,7 +123,6 @@ In previous versions of Microsoft Edge, when scrolling through the list of theme
 Screen readers now announce which theme is currently selected when scrolling through themes from the **Customize and control DevTools** (![The Ellipses icon](./devtools-110-images/customize-devtools-focus-mode-icon.png)) menu:
 
 ![Changing themes in Focus Mode](./devtools-110-images/a11y-focus-mode-themes-menu.png)
-
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
