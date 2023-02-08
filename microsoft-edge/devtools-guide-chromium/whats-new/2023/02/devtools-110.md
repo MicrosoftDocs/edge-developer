@@ -77,6 +77,11 @@ In the Network tool, with the **Desert** contrast theme applied in Windows, sele
 
 ![The Network tool with the Desert contrast theme applied](./devtools-110-images/hc-mode-network-tool.png)
 
+See also:
+* [Apply a color theme to DevTools](../../../customize/theme.md)
+* [Check for contrast issues with dark theme and light theme](../../../accessibility/test-dark-mode.md)
+* [Change color contrast in Windows](https://support.microsoft.com/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696)
+
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
