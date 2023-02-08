@@ -19,7 +19,7 @@ ms.date: 02/09/2023
 
 In previous versions of Microsoft Edge, generating large heap snapshots (over 1 GB) in the **Memory** tool could take anywhere from 2 to 15 minutes, depending on the size of your website or app, and how many elements were stored in memory.
 
-In Microsoft Edge 110, the **Memory** tool is now much faster at taking heap snapshots.  Taking a heap snapshot is now around 70% to 86% faster.  For larger heap snapshots, we're seeing the greatest improvement in speed.  If you have noticed that taking heap snapshots is much faster, please leave us feedback in [[Feedback] Heap Snapshot Visualizer #128](https://github.com/MicrosoftEdge/DevTools/issues/128).<!-- todo: change to the real link text and URL -->
+In Microsoft Edge 110, the **Memory** tool is now much faster at taking heap snapshots.  Taking a heap snapshot is now around 70% to 86% faster.  For larger heap snapshots, we're seeing the greatest improvement in speed.  If you have noticed that taking heap snapshots is much faster, please leave us feedback in [[Feedback] Taking heap snapshots in the Memory tool is now faster #131](https://github.com/MicrosoftEdge/DevTools/issues/131).
 
 ![Taking a heap snapshot in the Memory tool](./devtools-110-images/faster-heap-snapshot.png)
 
