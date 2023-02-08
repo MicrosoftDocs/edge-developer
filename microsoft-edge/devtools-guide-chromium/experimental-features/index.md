@@ -732,12 +732,18 @@ See also:
 <!-- ====================================================================== -->
 ## View system nodes of CPUProfile in the Performance panel
 
+_new as of Microsoft Edge 112_
+
 Whether to display system nodes of CPUProfile in the **Performance** tool.
 <!-- todo: need text -->
 
 See also:
 * [Performance features reference](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
 * [JavaScript: Tools](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/rendering-tools/#javascript-tools) in _Analyze runtime performance_.
+
+Status:
+*  This checkbox is present in Microsoft Edge Canary 112.
+*  This checkbox is not present in Microsoft Edge Stable 109.
 
 
 <!-- ====================================================================== -->
