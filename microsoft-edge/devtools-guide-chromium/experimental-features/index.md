@@ -48,14 +48,12 @@ The following experimental features are turned on by default. You can use these 
 
 <!-- listed in order of the Settings > Experiments pane -->
 
-**Turned on by default in Microsoft Edge Canary 111:**
-* [Automatically pretty print in the Sources Panel](#automatically-pretty-print-in-the-sources-panel)
+**Turned on by default in Microsoft Edge Canary 112:**
 * [Source order viewer](#source-order-viewer)
 * [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor)
 * [Display more precise changes in the Changes tab](#display-more-precise-changes-in-the-changes-tab)
 * [Enable CSS Authoring hints for inactive rules, deprecated properties, etc](#enable-css-authoring-hints-for-inactive-rules-deprecated-properties-etc)
 * [Enable color picking outside the browser window](#enable-color-picking-outside-the-browser-window)
-* [Disable the deprecated 'Color format' setting (requires reloading DevTools)](#disable-the-deprecated-color-format-setting-requires-reloading-devtools)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
@@ -434,20 +432,6 @@ This feature provides help when writing or inspecting CSS in the **Styles** pane
 Status:
 *  This checkbox is present in Microsoft Edge Canary 111.
 *  This checkbox is present in Microsoft Edge Stable 109.
-
-
-<!-- todo: delete after confirm not in Canary 112 -->
-<!-- ====================================================================== -->
-<!-- ## Use Lighthouse panel with timespan and snapshot modes
-
-Adds a selector to the Lighthouse tool to switch between different reporting modes.  At the moment, the Navigation and Snapshot modes are supported.
-
-See also:
-* [Lighthouse tool](../lighthouse/lighthouse-tool.md)
-
-Status:
-*  This checkbox is not present in Microsoft Edge Canary 111.
-*  This checkbox is not present in Microsoft Edge Stable 109. -->
 
 
 <!-- ====================================================================== -->
