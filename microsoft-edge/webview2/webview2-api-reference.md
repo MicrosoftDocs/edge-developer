@@ -38,10 +38,14 @@ WebView2 is available for the following frameworks or platforms:
 
 ---
 
+
 <!-- ------------------------------ -->
 #### JavaScript
+
 On the web side of a WebView2 app, WebView2 exposes JavaScript APIs to the HTML documents that are running within the WebView2 control.  These JavaScript APIs are mostly to support communication with the host application.
+
 * [JavaScript](/microsoft-edge/webview2/reference/javascript/)
+
 
 <!-- ====================================================================== -->
 ## See also
