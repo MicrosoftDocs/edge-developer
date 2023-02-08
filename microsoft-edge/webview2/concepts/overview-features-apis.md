@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 10/25/2022
+ms.date: 02/08/2023
 ---
 # Overview of WebView2 features and APIs
 

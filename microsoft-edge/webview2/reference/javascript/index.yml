@@ -4,7 +4,7 @@ metadata:
   title: JavaScript APIs in WebView2
 name: WebView2Script
 type: package
-summary: 'The Microsoft Edge WebView2 control lets you embed web content into native applications. You can use the following `window.chrome.webview` JavaScript APIs along with native WebView2 APIs to communicate between native code and web code. '
+summary: 'Use the Microsoft Edge WebView2 control to embed web content into native applications. You can use the following `window.chrome.webview` JavaScript APIs along with native WebView2 APIs to communicate between native code and web code.'
 classes:
   - 'WebView2Script!HostObjectAsyncProxy:class'
   - 'WebView2Script!HostObjectAsyncProxyBase:class'
