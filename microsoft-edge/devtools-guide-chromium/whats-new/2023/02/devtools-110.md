@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 110)
-description: "Entry 1. And more."
+description: "Faster heap snapshots in Memory tool. Move tools between Activity Bar and Quick View in Focus Mode. Screen readers report when More Tools is expanded. Change Dock and Activity Bar location via keyboard. Screen readers announce which theme is selected. Improved support for contrast themes. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -52,9 +52,15 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Screen readers correctly report when the More Tools menu is expanded
+## Accessibility improvements for themes, customizing locations, and the More Tools button
 
-<!-- Subtitle: Screen readers correctly report when the More Tools menu is expanded. -->
+<!-- Subtitle: Using assistive technology such as screen readers and keyboard shortcuts with DevTools is now easier. -->
+
+The following accessibility issues have been fixed, and using assistive technology such as screen readers and keyboard shortcuts with DevTools is now easier.
+
+
+<!-- ------------------------------ -->
+#### Screen readers correctly report when the More Tools menu is expanded
 
 In previous versions of Microsoft Edge, screen readers reported that the **More tools** (![Plus sign](./devtools-110-images/more-tools-focus-mode-icon.png)) button was collapsed, when the **More tools** menu was actually expanded.  In Microsoft Edge 110, this issue has been fixed.
 
@@ -62,14 +68,9 @@ Screen readers now correctly report when the **More tools** (![Plus sign icon](.
 
 ![The 'More tools' menu in Focus Mode](./devtools-110-images/a11y-focus-mode-more-tools.png)
 
-See also:
-* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
-
-<!-- ====================================================================== -->
-## Change Dock location and Activity Bar location by using the keyboard
-
-<!-- Subtitle: Change Dock location and Activity Bar location by using the keyboard. -->
+<!-- ------------------------------ -->
+#### Change Dock location and Activity Bar location by using the keyboard
 
 In previous versions of Microsoft Edge, in Focus Mode, it wasn't possible to change the **Dock location** or the **Activity Bar location** via the keyboard.  In Microsoft Edge 110, this issue has been fixed.
 
@@ -77,20 +78,16 @@ In Focus Mode, you can now change the Dock location and the Activity Bar locatio
 
 ![Changing the Dock location in Focus Mode by pressing arrow keys](./devtools-110-images/a11y-focus-mode-dock-location.png)
 
-See also:
-* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
-
-<!-- ====================================================================== -->
-## Screen readers announce which theme is currently selected when scrolling through themes
-
-<!-- Subtitle: Screen readers now announce which theme is currently selected when scrolling through themes. -->
+<!-- ------------------------------ -->
+#### Screen readers announce which theme is currently selected when scrolling through themes
 
 In previous versions of Microsoft Edge, when scrolling through the list of themes for DevTools, screen readers didn't report whether a theme was selected.  In Microsoft Edge 110, this issue has been fixed.
 
 Screen readers now announce which theme is currently selected when scrolling through themes from the **Customize and control DevTools** (![The Ellipses icon](./devtools-110-images/customize-devtools-focus-mode-icon.png)) menu:
 
 ![Changing themes in Focus Mode](./devtools-110-images/a11y-focus-mode-themes-menu.png)
+
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
