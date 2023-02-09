@@ -50,7 +50,7 @@ The right-click menu command for moving a tool between Quick View and the Activi
 <!-- ------------------------------ -->
 #### The right-click menu is no longer displayed over the tool's tab in the toolbar
 
-The right-click menu for moving a tool between the Activity Bar and Quick View no longer obscures the tool's name in the toolbar:
+The right-click menu for moving a tool between the Activity Bar and Quick View no longer obscures the tool's name in the toolbar.
 
 For example, the **Network Conditions** tool name remains visible when you right-click the tool's tab in Quick View:
 
