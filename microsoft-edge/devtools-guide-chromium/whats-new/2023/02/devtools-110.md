@@ -19,7 +19,7 @@ ms.date: 02/09/2023
 
 In previous versions of Microsoft Edge, generating large heap snapshots (over 1 GB) in the **Memory** tool could take anywhere from 2 to 15 minutes, depending on the size of your website or app, and how many elements were stored in memory.
 
-In Microsoft Edge 110, the **Memory** tool is now much faster at taking heap snapshots.  Taking a heap snapshot is now around 70% to 86% faster.  For larger heap snapshots, we're seeing the greatest improvement in speed.  If you have noticed that taking heap snapshots is much faster, please leave us feedback in [[Feedback] Heap Snapshot Visualizer #128](https://github.com/MicrosoftEdge/DevTools/issues/128).<!-- todo: change to the real link text and URL -->
+In Microsoft Edge 110, the **Memory** tool is now 70% to 86% faster at taking heap snapshots.  For larger heap snapshots, we're seeing the greatest improvement in speed.  If you've noticed that taking heap snapshots is much faster, please leave us feedback in [[Feedback] Taking heap snapshots in the Memory tool is now faster #131](https://github.com/MicrosoftEdge/DevTools/issues/131).
 
 ![Taking a heap snapshot in the Memory tool](./devtools-110-images/faster-heap-snapshot.png)
 
@@ -36,9 +36,9 @@ Microsoft Edge 110 contains various improvements to **Focus Mode** in DevTools. 
 
 
 <!-- ------------------------------ -->
-#### Right-click menu shows the current location of the other toolbar to move a tool to
+#### When moving a tool, the right-click menu shows the current placement of the destination toolbar
 
-The right-click menu for moving an optional tool between Quick View and the Activity Bar now includes the position of the Activity Bar, such as:
+The right-click menu command for moving a tool between Quick View and the Activity Bar now indicates the placement of the destination toolbar, such as:
 * **Move to bottom Quick View**
 * **Move to side Quick View**
 * **Move to left Activity Bar**
@@ -46,14 +46,11 @@ The right-click menu for moving an optional tool between Quick View and the Acti
 
 ![Right-click menu showing 'Move to bottom Quick View'](./devtools-110-images/move-to-bottom-quick-view.png)
 
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
-
 
 <!-- ------------------------------ -->
-#### Tool name remains visible when you right-click the tool icon
+#### The right-click menu is no longer displayed over the tool's tab in the toolbar
 
-The context menu for moving a tool between the Activity Bar and Quick View no longer obscures the tool's title in the toolbar:
+The right-click menu for moving a tool between the Activity Bar and Quick View no longer obscures the tool's name in the toolbar:
 
 For example, the **Network Conditions** tool name remains visible when you right-click the tool's tab in Quick View:
 
@@ -63,19 +60,20 @@ As another example, the **Network** tool name remains visible when you right-cli
 
 ![The right-click menu in the Activity Bar](./devtools-110-images/tool-name-remains-visible.png)
 
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
-
 
 <!-- ------------------------------ -->
 #### Focus is preserved in Activity Bar or Quick View when moving a tool between them
 
-For keyboard shortcut and assistive technology users, focus is preserved in the Activity Bar or Quick View when moving the currently selected tool from one to the other or removing it.
-<!-- todo: is focus preserved within the tool, or within the toolbar? -->
+For keyboard shortcut and assistive technology users, focus is preserved in the Activity Bar or Quick View when moving the currently selected tool from one toolbar to the other, or when removing a tool from the toolbar.
 
-<!-- todo: screenshot?
-![alt text](./devtools-110-images/filename.png)
--->
+For example, suppose the **Network** tool has been moved to Quick View at the bottom, and you right-click the **Network** tool:
+
+![Right-clicking the Network tool in Quick View](./devtools-110-images/right-click-network-tool-to-move.png)
+
+If you then select **Remove from Quick View**, focus stays in the Quick View toolbar and moves to the **Network conditions** tool, which is the next tool in Quick View:
+
+![Focus stays in Quick View and moves to another tool in Quick View](./devtools-110-images/focus-moves-to-other-tool-same-toolbar.png)
+
 
 See also:
 * [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
@@ -98,9 +96,6 @@ Screen readers now correctly report when the **More tools** (![Plus sign icon](.
 
 ![The 'More tools' menu in Focus Mode](./devtools-110-images/a11y-focus-mode-more-tools.png)
 
-See also:
-* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
-
 
 <!-- ------------------------------ -->
 #### Change Dock location and Activity Bar location by using the keyboard
@@ -111,18 +106,16 @@ In Focus Mode, you can now change the Dock location and the Activity Bar locatio
 
 ![Changing the Dock location in Focus Mode by pressing arrow keys](./devtools-110-images/a11y-focus-mode-dock-location.png)
 
-See also:
-* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
-
 
 <!-- ------------------------------ -->
 #### Screen readers announce which theme is currently selected when scrolling through themes
 
-In previous versions of Microsoft Edge, when scrolling through the list of themes for DevTools, screen readers didn't report whether a theme was selected.  In Microsoft Edge 110, this issue has been fixed.
+In previous versions of Microsoft Edge, when scrolling through the list of themes for DevTools, screen readers didn't announce whether or not a theme was selected.  In Microsoft Edge 110, this issue has been fixed.
 
 Screen readers now announce which theme is currently selected when scrolling through themes from the **Customize and control DevTools** (![The Ellipses icon](./devtools-110-images/customize-devtools-focus-mode-icon.png)) menu:
 
 ![Changing themes in Focus Mode](./devtools-110-images/a11y-focus-mode-themes-menu.png)
+
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
@@ -135,7 +128,7 @@ See also:
 
 DevTools in Microsoft Edge 110 now has better support for Windows contrast themes.  The **Network**, **Console**, **Issues**, and **Sources** tools have all been improved so that the tools render correctly with contrast themes.
 
-In the **Issues** tool, with the **Desert** contrast theme applied in Windows, focus on a particular issue was displayed with a solid background, which made the text hard to see.  In Microsoft Edge 110, this has been fixed, by using an outline instead of a solid background:
+In the **Issues** tool, with the **Desert** contrast theme applied in Windows, when you put focus on a particular issue, the details about the issue were displayed against a solid background, which made the text hard to read.  In Microsoft Edge 110, this has been fixed, by using an outline instead of a solid background:
 
 ![The Issues tool with the Desert contrast theme applied](./devtools-110-images/hc-mode-issues-tool.png)
 
