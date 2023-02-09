@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/28/2022
+ms.date: 02/27/2023
 ---
 # Create an extension tutorial, part 1
 
