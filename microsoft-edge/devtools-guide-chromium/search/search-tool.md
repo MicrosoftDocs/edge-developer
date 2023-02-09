@@ -74,9 +74,17 @@ To only find results that match a particular case (lowercase or uppercase charac
 <!-- ====================================================================== -->
 ## Search for regular expressions
 
-You can use regular expressions, including [JavaScript regular expressions](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions), to find matching results.  To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid regular expression in the search input field.
+You can use regular expressions to find matching results.  To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid [JavaScript regular expressions](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) in the search input field.
 
 ![Searching for a regular expression](../media/search-tool/search-tool-regexp.png)
+
+The slash characters that normally delimit regular expressions patterns in JavaScript aren't needed.
+
+When using regular expressions, the **Search** tool matches results by using the `g`, `i`, and `m` regular expression flags:
+
+* The `g` flag makes the search global, meaning that the tool will continue searching files even after a first match has been found.
+* The `i` flag makes the search case-insensitive. To disable this flag and only find results that match a particular case, click the **Match Case** (`Aa`) button in the search toolbar.
+* The `m` flag specifies that the search should be multiline, meaning that the tool treats each line in the source files independently and the `^` and `$` symbols match the start and end of any line, respectively.
 
 
 <!-- ====================================================================== -->
