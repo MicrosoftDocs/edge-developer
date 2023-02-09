@@ -20,8 +20,8 @@ properties:
       options to configure those proxies, and the container for synchronous proxies.
 
 
-      If you call `coreWebView2.AddHostObjectToScript("myObject", object);` in your host code then an asynchronous proxy
-      for `object` will be exposed in script as `chrome.webview.hostObjects.myObject`<!-- -->.
+      If you call `coreWebView2.AddHostObjectToScript("myObject", object);` in your host code, an asynchronous proxy
+      for `object` will be exposed in script as `chrome.webview.hostObjects.myObject`.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -36,7 +36,7 @@ properties:
 
 
 
-          For example, suppose you have a COM object with the following interface.
+          For example, suppose you have a COM object with the following interface:
 
 
           ```
@@ -74,7 +74,7 @@ properties:
           `sample`.
 
 
-          In native host app code:
+          In the native host app code:
 
 
           ```cpp
@@ -87,11 +87,8 @@ properties:
 
 
           // We can call AddHostObjectToScript multiple times in a row without
-
           // calling RemoveHostObject first. This will replace the previous object
-
-          // with the new object. In our case this is the same object and everything
-
+          // with the new object. In our case, this is the same object, and everything
           // is fine.
 
           CHECK_FAILURE(
@@ -129,7 +126,7 @@ properties:
 
           document.getElementById("setPropertyExplicitAsyncButton").addEventListener("click", async () => {
               const propertyValue = document.getElementById("setPropertyExplicitAsyncInput").value;
-              // If you care about waiting until the property has actually changed value use the setHostProperty function.
+              // If you care about waiting until the property has actually changed value, use the setHostProperty function.
               await chrome.webview.hostObjects.sample.setHostProperty("property", propertyValue);
               document.getElementById("setPropertyExplicitAsyncOutput").textContent = "Set";
           });
@@ -222,7 +219,7 @@ methods:
       parameters:
         - id: type
           description: >-
-            The name of the event to subscribe to. Valid values are `message`<!-- -->, and `sharedbufferreceived`<!--
+            The name of the event to subscribe to. Valid values are `message` and `sharedbufferreceived`<!--
             -->.
           type: K
         - id: listener
@@ -269,7 +266,7 @@ methods:
       When the page calls `postMessage`<!-- -->, the `message` parameter is converted to JSON and is posted
       asynchronously to the WebView2 host process. This will result in either the `CoreWebView2.WebMessageReceived`
       event or the `CoreWebView2Frame.WebMessageReceived` event being raised, depending on if `postMessage` is called
-      from the top level document in the WebView2 or from a child frame. See CoreWebView2.WebMessageReceived (
+      from the top-level document in the WebView2 or from a child frame. See CoreWebView2.WebMessageReceived (
       [Win32/C++](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived)<!--
       -->,
       [.NET](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webmessagereceived)<!--
@@ -285,7 +282,7 @@ methods:
     remarks: |-
         #### Examples
 
-        Post a message to the CoreWebView2:
+        Post a message to the `CoreWebView2`:
 
         ```javascript
         const inTopLevelFrame = (window === window.parent);

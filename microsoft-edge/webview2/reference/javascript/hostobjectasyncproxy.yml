@@ -5,7 +5,7 @@ package: WebView2Script!
 fullName: HostObjectAsyncProxy
 summary: >-
   An asynchronous host object proxy. Host objects added via `CoreWebView2.AddHostObjectToScript` are exposed as host
-  object proxies using `window.chrome.webview.hostObjects.{name}`<!-- -->. Host object proxies are promises and resolve
+  object proxies using `window.chrome.webview.hostObjects.{name}`<!-- -->. Host object proxies are promises, and resolve
   to an object representing the host object. The promise is rejected if the app has not added an object with the name.
   When JavaScript code access a property or method of the object, a promise is returned. The promise resolves to the
   value that's returned from the host for the property or method. The promise is rejected in case of error; for example,
