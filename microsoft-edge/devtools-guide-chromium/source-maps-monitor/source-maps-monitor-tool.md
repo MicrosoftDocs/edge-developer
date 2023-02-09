@@ -16,7 +16,7 @@ To try this feature:
 
 1. In a new tab or window, follow the instructions in [Map the processed code to your original source code, for debugging](../javascript/source-maps.md), and then continue below.
 
-1. Close the popup dialog box that the demo opens.
+1. Close the popup dialog that the demo opens.
 
 1. In the **Sources** tool, in the **Page** tab, select the file that the demo created for you, such as **Coffee2.js**.
 

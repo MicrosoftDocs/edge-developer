@@ -162,17 +162,17 @@ If you want to make your application use a Microsoft Edge preview channel by usi
 
    ![Local Group Policy Editor dialog](media/local-group-policy-editor.png)
 
-1. Select **Browser Executable Folder**.  The following screenshots apply to setting the **Browser Executable Folder**.  Alternatively, select **Release Channel Preference**, which uses similar dialog boxes.
+1. Select **Browser Executable Folder**.  The following screenshots apply to setting the **Browser Executable Folder**.  Alternatively, select **Release Channel Preference**, which uses similar dialogs.
 
    ![Setting the Browser Executable Folder](media/browser-executable-folder.png)
 
 1. Select the **Show** button.
 
-1. Fill-in the **Show Contents** dialog box.  In the **Value name** column, enter an asterisk to apply to all WebView2 apps, or a `.exe` filename to only affect the specified WebView2 app.  In the **Value** column, enter the path to your WebView2 app's executable file.
+1. Fill-in the **Show Contents** dialog.  In the **Value name** column, enter an asterisk to apply to all WebView2 apps, or a `.exe` filename to only affect the specified WebView2 app.  In the **Value** column, enter the path to your WebView2 app's executable file.
 
-   ![The Show Contents dialog box](media/show-contents.png)
+   ![The Show Contents dialog](media/show-contents.png)
 
-1. Select **OK** to close the dialog boxes.
+1. Select **OK** to close the dialogs.
 
 For more information, see [Configure Microsoft Edge policy settings](/deployedge/configure-microsoft-edge).
 
@@ -234,17 +234,17 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
    ![Using the Windows search bar to find where to edit environment variables](media/search-bar-edit-sys-env-vars.png)
 
-1. In the **System Properties** dialog box, select the **Advanced** tab, and then select the **Environment Variables** button.
+1. In the **System Properties** dialog, select the **Advanced** tab, and then select the **Environment Variables** button.
 
-   ![The Environment Variables button in the System Properties dialog box](media/system-properties-env-vars.png)
+   ![The Environment Variables button in the System Properties dialog](media/system-properties-env-vars.png)
 
-1. In the **User variables** section of the **Environment Variables** dialog box, select **New**.
+1. In the **User variables** section of the **Environment Variables** dialog, select **New**.
 
-1. In the **New User Variable** dialog box, set the **Variable name** to `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`, and set the **Variable value** to the path to your preferred browser channel or fixed version binaries.
+1. In the **New User Variable** dialog, set the **Variable name** to `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`, and set the **Variable value** to the path to your preferred browser channel or fixed version binaries.
 
    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1` to reverse the search order, to use preview channels (Beta, Dev, or Canary) first. Any value besides `1` indicates the default search order.
 
-1. Click **OK** to close the dialog boxes.
+1. Click **OK** to close the dialogs.
 
    ![Adding a new environment variable, as a user variable](media/env-vars-new-user-variable.png)
 
