@@ -64,7 +64,7 @@ For details, see [Map the processed code to your original source code, for debug
 
    ![The Unminify button in the Performance tool](images/perf-profile-unminify-button.msft.png)
 
-   In DevTools, a popup briefly appears, reading: **Status: creating unminfied file**.  Then the **Save As** dialog box opens.  The default filename is a pattern starting with date and time like `yymmddThhmmss`, such as: `Profile-20220307T164948-unminified.json`.  The default directory is the **Downloads** directory.
+   In DevTools, a popup briefly appears, reading: **Status: creating unminfied file**.  Then the **Save As** dialog opens.  The default filename is a pattern starting with date and time like `yymmddThhmmss`, such as: `Profile-20220307T164948-unminified.json`.  The default directory is the **Downloads** directory.
 
 1. Select a filename and directory and then click the **Save** button.
 
@@ -78,7 +78,7 @@ For details, see [Map the processed code to your original source code, for debug
 
    ![Load Profile](../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png)
 
-1. In the **Open** dialog box, select the unminified performance profile `.json` file that you just downloaded.  If needed, for details, see [Load a recording](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#load-a-recording) in _Performance features reference_, and then continue below.
+1. In the **Open** dialog, select the unminified performance profile `.json` file that you just downloaded.  If needed, for details, see [Load a recording](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#load-a-recording) in _Performance features reference_, and then continue below.
 
 
    Some function names are now unminified.  The unminified flame chart in the **Performance** tool now shows those functions labeled with more meaningful names taken from your source maps, such as **useObserver (d)**, **useQueuedForceUpdateBlock (o)**, **trackDerivedFunction (an)**, **initializeIconColorMap (c)**, **getExtraToolControls (co)**, and **isToggleEnabled (a)**.

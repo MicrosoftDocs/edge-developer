@@ -264,7 +264,7 @@ When a user selects the ellipses (**...**) button in the app's title bar, the **
    ![Content-related tools are now found in the More Tools menu](media/more-tools.png)
 
 
-#### Post-install flyout dialog box
+#### Post-install flyout dialog
 
 After a PWA is installed from the Microsoft Edge browser on Windows, users can now select from four options to easily launch their apps:
 *  **Pin to taskbar**
@@ -272,9 +272,9 @@ After a PWA is installed from the Microsoft Edge browser on Windows, users can n
 *  **Create Desktop shortcut**
 *  **Auto-start on device login**
 
-For convenience, this flyout dialog box is shown the first time the app is launched:
+For convenience, this flyout dialog is shown the first time the app is launched:
 
-![The post-install flyout dialog box with options for Pin to Taskbar, Pin to Start, Create Desktop Shortcut, and Auto-Start on Device Login](media/post-install-flyout.png)
+![The post-install flyout dialog with options for Pin to Taskbar, Pin to Start, Create Desktop Shortcut, and Auto-Start on Device Login](media/post-install-flyout.png)
 
 This feature is being rolled out gradually to all users.  In the meantime, if you'd like to use this feature, go to `edge://flags` and enable the flag **Web Apps Post Install Dialog**.
 
