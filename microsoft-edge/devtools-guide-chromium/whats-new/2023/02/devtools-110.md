@@ -66,7 +66,7 @@ As another example, the **Network** tool name remains visible when you right-cli
 
 For keyboard shortcut and assistive technology users, focus is preserved in the Activity Bar or Quick View when moving the currently selected tool from one toolbar to the other, or when removing a tool from the toolbar.
 
-For example, suppose the **Network** tool has been moved to Quick View at the bottom, and you right-click the **Network** tool:
+For example, suppose the **Network** tool has been moved to Quick View, and you right-click the **Network** tab on the Quick View toolbar:
 
 ![Right-clicking the Network tool in Quick View](./devtools-110-images/right-click-network-tool-to-move.png)
 
@@ -112,9 +112,9 @@ In Focus Mode, you can now change the Dock location and the Activity Bar locatio
 
 In previous versions of Microsoft Edge, when scrolling through the list of themes for DevTools, screen readers didn't announce whether or not a theme was selected.  In Microsoft Edge 110, this issue has been fixed.
 
-Screen readers now announce which theme is currently selected when scrolling through themes from the **Customize and control DevTools** (![The Ellipses icon](./devtools-110-images/customize-devtools-focus-mode-icon.png)) menu:
+Screen readers now announce which theme is currently selected when you are moving among the themes in the **Customize and control DevTools** (![The Ellipses icon](./devtools-110-images/customize-devtools-focus-mode-icon.png)) menu:
 
-![Changing themes in Focus Mode](./devtools-110-images/a11y-focus-mode-themes-menu.png)
+![Navigating among the themes in Focus Mode](./devtools-110-images/a11y-focus-mode-themes-menu.png)
 
 
 See also:
