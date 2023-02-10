@@ -19,7 +19,7 @@ There are many tools to automate your testing of Microsoft Edge:
 | Playwright | The Playwright library provides cross-browser automation through a single API. |
 | Puppeteer | The Puppeteer library provides a high-level API to control browsers, including Microsoft Edge, using the DevTools Protocol. |
 | WebDriver | Automates testing in Microsoft Edge by simulating user interaction.  Provides advantages over JavaScript unit tests. |
-| Webhint | Checks your code for best practices and common errors, to test and improve accessibility, performance, cross-browser and PWA compatibility, and security of your site. |
+| webhint | Checks your code for best practices and common errors, to test and improve accessibility, performance, cross-browser and PWA compatibility, and security of your site. |
 
 These tools are described below.
 
