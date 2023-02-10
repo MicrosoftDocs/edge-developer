@@ -32,7 +32,7 @@ See also:
 
 <!-- Subtitle: Customize both the Activity Bar and Quick View in Focus Mode to see only the tools you care about. -->
 
-Microsoft Edge 110 contains various improvements to **Focus Mode** in DevTools.  The following changes make it easier to customize the Activity Bar and Quick View, to show only the tools that you're currently interested in.
+Microsoft Edge 110 contains various improvements to [Focus Mode](../../../experimental-features/focus-mode.md) in DevTools.  The following changes make it easier to customize the Activity Bar and Quick View, to show only the tools that you're currently interested in.
 
 
 <!-- ------------------------------ -->
