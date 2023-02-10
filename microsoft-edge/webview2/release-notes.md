@@ -35,6 +35,225 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
 <!-- ====================================================================== -->
+## 1.0.1587.40
+
+Release Date: Feb 13, 2023  
+
+[NuGet package for WebView2 SDK 1.0.1587.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1587.40)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 110.1587.40 or higher. 
+
+### General
+
+#### Promotions
+
+The following items are now stable:
+
+*  Additional options used to create WebView2 Environment to manage custom scheme registration.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2EnvironmentOptions Class](#)
+   * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](#)
+* [CoreWebView2CustomSchemeRegistration Class](#)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2EnvironmentOptions Class](#)
+* [CoreWebView2CustomSchemeRegistration Class](#)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2EnvironmentOptions4 interface](#)
+   * [ICoreWebView2EnvironmentOptions4::GetCustomSchemeRegistrations method](#)
+   * [ICoreWebView2EnvironmentOptions4::SetCustomSchemeRegistrations method](#)
+* [ICoreWebView2CustomSchemeRegistration interface](#)
+   * [ICoreWebView2CustomSchemeRegistration::GetAllowedOrigins method](#)
+   * [ICoreWebView2CustomSchemeRegistration::SetAllowedOrigins method](#)
+   * [ICoreWebView2CustomSchemeRegistration::HasAuthorityComponent property (get](#), [put)](#)
+   * [ICoreWebView2CustomSchemeRegistration::SchemeName property (get)](#)<!--no put-->
+   * [ICoreWebView2CustomSchemeRegistration::TreatAsSecure property (get](#), [put)](#)
+
+---
+
+<!-- ====================================================================== -->
+
+## 1.0.1671-prerelease
+
+Release Date: Feb 13, 2023  
+
+[NuGet package for WebView2 SDK 1.0.1671](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1671-prerelease)  
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 112.0.1671.0 or higher. 
+
+### General
+
+#### Experimental features 
+
+*  Added support for the Experimental File API:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+* [CoreWebView2ExperimentalFile interface](#)
+   * [CoreWebView2ExperimentalFile::get_Path method](#)
+* [CoreWebView2ExperimentalWebMessageReceivedEventArgs interface](#)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+* [CoreWebView2ExperimentalFile interface](#)
+   * [CoreWebView2ExperimentalFile::get_Path method](#)
+* [CoreWebView2ExperimentalWebMessageReceivedEventArgs interface](#)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalFile interface](#)
+   * [ICoreWebView2ExperimentalFile::get_Path method](#)
+* [ICoreWebView2ExperimentalWebMessageReceivedEventArgs interface](#)
+
+---
+
+*  Added support for Experimental Object Collection View API
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2ExperimentalObjectCollectionView interface](#)
+	* [CoreWebView2ExperimentalObjectCollectionView::get_Count method](#)
+	* [CoreWebView2ExperimentalObjectCollectionView:: GetValueAtIndex method](#)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2ExperimentalObjectCollectionView interface](#)
+	* [CoreWebView2ExperimentalObjectCollectionView::get_Count method](#)
+	* [CoreWebView2ExperimentalObjectCollectionView:: GetValueAtIndex method](#)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalObjectCollectionView interface](#)
+	* [ICoreWebView2ExperimentalObjectCollectionView::get_Count method](#)
+	* [ICoreWebView2ExperimentalObjectCollectionView:: GetValueAtIndex method](#)
+
+---
+
+#### Promotions
+
+The following APIs are promoted to stable in this prerelease SDK:
+
+*  The SharedBuffer API:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2_17 interface](#)
+	* [CoreWebView2_17::PostSharedBufferToScript method](#)
+* [CoreWebView2Environment12 interface](#)
+	* [ICoreWebView2Environment12:: CreateSharedBuffer method](#)
+* [CoreWebView2Frame4 interface](#)
+	* [CoreWebView2Frame4:: PostSharedBufferToScript method](#)
+* [CoreWebView2SharedBuffer interface](#)
+	* [CoreWebView2SharedBuffer:: OpenStream method](#)
+	* [CoreWebView2SharedBuffer:: Close method](#)
+	* [CoreWebView2SharedBuffer:: get_Size method](#)
+	* [CoreWebView2SharedBuffer:: get_Buffer method](#)
+	* [CoreWebView2SharedBuffer:: get_FileMappingHandle method](#)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2_17 interface](#)
+	* [CoreWebView2_17::PostSharedBufferToScript method](#)
+* [CoreWebView2Environment12 interface](#)
+	* [CoreWebView2Environment12:: CreateSharedBuffer method](#)
+* [CoreWebView2Frame4 interface](#)
+	* [CoreWebView2Frame4:: PostSharedBufferToScript method](#)
+* [CoreWebView2SharedBuffer interface](#)
+	* [CoreWebView2SharedBuffer:: OpenStream method](#)
+	* [CoreWebView2SharedBuffer:: Close method](#)
+	* [CoreWebView2SharedBuffer:: get_Size method](#)
+	* [CoreWebView2SharedBuffer:: get_Buffer method](#)
+	* [CoreWebView2SharedBuffer:: get_FileMappingHandle method](#)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_17 interface](#)
+	* [ICoreWebView2_17::PostSharedBufferToScript method](#)
+* [ICoreWebView2Environment12 interface](#)
+	* [ICoreWebView2Environment12:: CreateSharedBuffer method](#)
+* [ICoreWebView2Frame4 interface](#)
+	* [ICoreWebView2Frame4:: PostSharedBufferToScript method](#)
+* [ICoreWebView2SharedBuffer interface](#)
+	* [ICoreWebView2SharedBuffer:: OpenStream method](#)
+	* [ICoreWebView2SharedBuffer:: Close method](#)
+	* [ICoreWebView2SharedBuffer:: get_Size method](#)
+	* [ICoreWebView2SharedBuffer:: get_Buffer method](#)
+	* [ICoreWebView2SharedBuffer:: get_FileMappingHandle method](#)
+---
+
+*  The Permission API:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Profile4 interface](#)
+	* [CoreWebView2Profile4::SetPermissionState method](#)
+	* [CoreWebView2Profile4::GetNonDefaultPermissionSettings method](#) 
+* [CoreWebView2PermissionSettingCollectionView interface](#)
+	* [CoreWebView2PermissionSettingCollectionView:: GetValueAtIndex method](#)
+	* [CoreWebView2PermissionSettingCollectionView:: get_Count method](#)
+* [CoreWebView2PermissionSetting interface](#)
+	* [CoreWebView2PermissionSettingCollectionView:: get_PermissionKind method](#)
+	* [CoreWebView2PermissionSettingCollectionView:: get_PermissionOrigin method](#)
+	* [CoreWebView2PermissionSettingCollectionView:: get_PermissionState method](#)
+* [CoreWebView2ControllerOptions2 interface](#)
+	* [CoreWebView2ControllerOptions2:: get_ScriptLocale method](#)
+	* [CoreWebView2ControllerOptions2:: put_ScriptLocale method](#)
+* [CoreWebView2SetPermissionStateCompletedHandler interface](#)
+* [CoreWebView2GetNonDefaultPermissionSettingsCompletedHandler interface](#)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Profile4 interface](#)
+	* [CoreWebView2Profile4::SetPermissionState method](#)
+	* [CoreWebView2Profile4::GetNonDefaultPermissionSettings method](#) 
+* [CoreWebView2PermissionSettingCollectionView interface](#)
+	* [CoreWebView2PermissionSettingCollectionView:: GetValueAtIndex method](#)
+	* [CoreWebView2PermissionSettingCollectionView:: get_Count method](#)
+* [CoreWebView2PermissionSetting interface](#)
+	* [CoreWebView2PermissionSettingCollectionView:: get_PermissionKind method](#)
+	* [CoreWebView2PermissionSettingCollectionView:: get_PermissionOrigin method](#)
+	* [CoreWebView2PermissionSettingCollectionView:: get_PermissionState method](#)
+* [CoreWebView2ControllerOptions2 interface](#)
+	* [CoreWebView2ControllerOptions2:: get_ScriptLocale method](#)
+	* [CoreWebView2ControllerOptions2:: put_ScriptLocale method](#)
+* [CoreWebView2SetPermissionStateCompletedHandler interface](#)
+* [CoreWebView2GetNonDefaultPermissionSettingsCompletedHandler interface](#)
+
+##### [Win32/C++](#tab/win32cpp)
+* [ICoreWebView2Profile4 interface](#)
+	* [ICoreWebView2Profile4::SetPermissionState method](#)
+	* [ICoreWebView2Profile4::GetNonDefaultPermissionSettings method](#) 
+* [ICoreWebView2PermissionSettingCollectionView interface](#)
+	* [ICoreWebView2PermissionSettingCollectionView:: GetValueAtIndex method](#)
+	* [ICoreWebView2PermissionSettingCollectionView:: get_Count method](#)
+* [ICoreWebView2PermissionSetting interface](#)
+	* [ICoreWebView2PermissionSettingCollectionView:: get_PermissionKind method](#)
+	* [ICoreWebView2PermissionSettingCollectionView:: get_PermissionOrigin method](#)
+	* [ICoreWebView2PermissionSettingCollectionView:: get_PermissionState method](#)
+* [ICoreWebView2ControllerOptions2 interface](#)
+	* [ICoreWebView2ControllerOptions2:: get_ScriptLocale method](#)
+	* [ICoreWebView2ControllerOptions2:: put_ScriptLocale method](#)
+* [ICoreWebView2SetPermissionStateCompletedHandler interface](#)
+* [ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler interface](#)
+---
+
+#### Bug fixes
+ 
+*   Fixed a bug where WebView2 was not closing properly when hitting a BeforeUnload event (Runtime) ([Issue #2677](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2677)) 
+*   In the DownloadStarting event, the ResultFilePath previously was not showing the correct download location for UWP applications when the DownloadStarting event handler was attached.This has been fixed and the correct ResultFilePath is shown.  
+*   Fixed bug of throwing System.ArgumentException after call HostObject method that returns non-generic task.([Issue #2787](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2787))   
+*   Fixed an issue in SharedBuffer API where the stream object does not work well with StreamWriter. (Runtime) ([Issue #3108](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3108)) 
+*   DOM speech synthesis APIs like `SpeechSynthesis.getVoices()` will now work in UWP apps. (Runtime)  
+*   Fixed a crash on frame destruction. (Runtime)([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))   
+*   Fixed a bug where the app crashes when trying to call CreateWebResourceResponse with null phrase reason. This is a runtime change.  
+*   The `CoreWebView2.AddHostObjectToScript` option `chrome.webview.hostObjects.options.ignoreMemberNotFoundError` now works in non-English locales. (Runtime)  
+*   Fully enabled Open file dialog support for elevated apps on Windows 7. 
+*   Fixed a bug where owned windows were not showing up for UWP.
+
+<!-- ====================================================================== -->
 ## 1.0.1518.46
 
 Release Date: January 17, 2023
