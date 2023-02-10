@@ -39,5 +39,5 @@ methods:
       content: 'sync(): Promise<HostObjectSyncProxy>;'
       return:
         type: 'Promise&lt;<xref uid="WebView2Script!HostObjectSyncProxy:class" />&gt;'
-        description: ''
+        description: A promise representing the synchronous host object proxy.
 extends: '<xref uid="WebView2Script!HostObjectAsyncProxyBase:class" />'

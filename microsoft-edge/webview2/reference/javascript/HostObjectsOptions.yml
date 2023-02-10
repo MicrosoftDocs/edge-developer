@@ -1,13 +1,13 @@
 ### YamlMime:TSType
 name: HostObjectsOptions
-uid: 'WebView2Script!HostObjectsOptions:class'
+uid: 'WebView2Script!HostObjectsOptions:interface'
 package: WebView2Script!
 fullName: HostObjectsOptions
 summary: Contains options applicable to `CoreWebView2.AddHostObjectToScript` added script proxies.
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
+type: interface
 properties:
   - name: defaultSyncProxy
     uid: 'WebView2Script!HostObjectsOptions#defaultSyncProxy:member'
@@ -16,8 +16,8 @@ properties:
     summary: >-
       When calling a method on a synchronous proxy, the result should also be a synchronous proxy. But in some cases,
       the sync or async context is lost (for example, when providing to native code a reference to a function, and then
-      calling that function in native code). In these cases, the proxy will be asynchronous if this option is `false`
-      and synchronous if this option is `true`<!-- -->.
+      calling that function in native code). In these cases, the proxy will be asynchronous if this option is
+      `false`<!-- -->, and synchronous if this option is `true`<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -32,7 +32,7 @@ properties:
     summary: >-
       This is an array of regular expressions. When calling a method on a synchronous proxy, the method call will be
       performed asynchronously if the method name matches a string or regular expression in this array. Setting this
-      value to `/Async$/` will make any method that ends with Async be an asynchronous method call. If an async method
+      value to `/Async$/` will make any method that ends with `Async` be an asynchronous method call. If an async method
       doesn't match here and isn't forced to be asynchronous, the method will be invoked synchronously, blocking
       execution of the calling JavaScript and then returning the resolution of the promise, rather than returning a
       promise.
@@ -84,7 +84,7 @@ properties:
       This is a callback delegate that will be called with debug information if non-null.
 
 
-      For example, you can set this to `console.log.bind(console)` to have it print debug information to the console to
+      For example, you can set this to `console.log.bind(console)` to have it print debug information to the console, to
       help when troubleshooting host object usage.
 
 

@@ -5,19 +5,19 @@ package: WebView2Script!
 fullName: HostObjectAsyncProxyBase
 summary: >-
   An asynchronous host object proxy. Host objects added via `CoreWebView2.AddHostObjectToScript` are exposed as host
-  object proxies using `window.chrome.webview.hostObjects.{name}`<!-- -->. Host object proxies are promises and resolve
+  object proxies using `window.chrome.webview.hostObjects.{name}`<!-- -->. Host object proxies are promises, and resolve
   to an object representing the host object. The promise is rejected if the app has not added an object with the name.
-  When JavaScript code access a property or method of the object, a promise is returned. The promise resolves to the value
-  that's returned from the host for the property or method. The promise is rejected in case of error; for example, no property or method on
-  the object, or parameters are not valid.
+  When JavaScript code access a property or method of the object, a promise is returned. The promise resolves to the
+  value that's returned from the host for the property or method. The promise is rejected in case of error; for example,
+  no property or method on the object, or parameters are not valid.
 
 
-  Host object proxies are JavaScript Proxy objects that intercept all property get, property set, and method
-  invocations. Properties or methods that are a part of the `Function` or `Object` prototype are run in the JavaScript engine of the current document. Additionally
-  any property or method in the `chrome.webview.hostObjects.options.forceLocalProperties` array are also run in the JavaScript engine of the current document.
-
-  This defaults to including optional methods that have meaning in JavaScript like `toJSON` and `Symbol.toPrimitive`<!--
-  -->. Add more to the array as required.
+  Host object proxies are JavaScript Proxy objects that intercept all property `get`<!-- -->, property `set`<!-- -->,
+  and method invocations. Properties or methods that are a part of the `Function` or `Object` prototype are run in the
+  JavaScript engine of the current document. Additionally any property or method in the
+  `chrome.webview.hostObjects.options.forceLocalProperties` array are also run in the JavaScript engine of the current
+  document. This defaults to including optional methods that have meaning in JavaScript like `toJSON` and
+  `Symbol.toPrimitive`<!-- -->. Add more to the array as required.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -38,7 +38,7 @@ methods:
       content: 'applyHostFunction(argArray?: any): Promise<any>;'
       parameters:
         - id: argArray
-          description: ''
+          description: An array of arguments to pass to the host object method invocation.
           type: any
       return:
         type: Promise&lt;any&gt;
@@ -48,9 +48,10 @@ methods:
     package: WebView2Script!
     fullName: getHostProperty(propertyName)
     summary: >-
-      Perform a property `get` on the host object. Use this method to explicitly force a property `get` to occur remotely if
-      a conflicting local method or property exists. For instance, `proxy.toString()` runs the local `toString` method
-      on the proxy object. But proxy.applyHostFunction('toString') runs toString on the host proxied object instead.
+      Perform a property `get` on the host object. Use this method to explicitly force a property get to occur remotely
+      if a conflicting local method or property exists. For instance, `proxy.toString()` runs the local `toString`
+      method on the proxy object. But proxy.applyHostFunction('toString') runs toString on the host proxied object
+      instead.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -68,10 +69,10 @@ methods:
     package: WebView2Script!
     fullName: getLocalProperty(propertyName)
     summary: >-
-      Perform a property `get` locally on the proxy object. Use the methods to force getting a property on the host object
-      proxy rather than on the host object it represents. For instance, `proxy.unknownProperty` gets the property named
-      `unknownProperty` from the host proxied object. But `proxy.getLocalProperty('unknownProperty')` gets the value of
-      the property `unknownProperty` on the proxy object.
+      Perform a property `get` locally on the proxy object. Use the methods to force getting a property on the host
+      object proxy rather than on the host object it represents. For instance, `proxy.unknownProperty` gets the property
+      named `unknownProperty` from the host proxied object. But `proxy.getLocalProperty('unknownProperty')` gets the
+      value of the property `unknownProperty` on the proxy object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -89,8 +90,8 @@ methods:
     package: WebView2Script!
     fullName: 'setHostProperty(propertyName, propertyValue)'
     summary: >-
-      Perform a property `set` on the host object. Use this method to explicitly force a property `set` to occur remotely if
-      a conflicting local method or property exists.
+      Perform a property `set` on the host object. Use this method to explicitly force a property `set` to occur
+      remotely if a conflicting local method or property exists.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -113,10 +114,10 @@ methods:
     package: WebView2Script!
     fullName: 'setLocalProperty(propertyName, propertyValue)'
     summary: >-
-      Perform a property `set` locally on the proxy object. Use the methods to force setting a property on the host object
-      proxy rather than on the host object it represents. For instance, `proxy.unknownProperty = 2` sets the property
-      named `unknownProperty` on the host proxied object. But `proxy.setLocalProperty('unknownProperty', 2)` sets the
-      value of the property `unknownProperty` on the proxy object.
+      Perform a property `set` locally on the proxy object. Use the methods to force setting a property on the host
+      object proxy rather than on the host object it represents. For instance, `proxy.unknownProperty = 2` sets the
+      property named `unknownProperty` on the host proxied object. But `proxy.setLocalProperty('unknownProperty', 2)`
+      sets the value of the property `unknownProperty` on the proxy object.
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -8,7 +8,7 @@ summary: >-
   to configure those proxies, and the container for synchronous proxies.
 
 
-  If you call `coreWebView2.AddHostObjectToScript("myObject", object);` in your host code then an asynchronous proxy for
+  If you call `coreWebView2.AddHostObjectToScript("myObject", object);` in your host code, an asynchronous proxy for
   `object` will be exposed in script as `chrome.webview.hostObjects.myObject`<!-- -->.
 remarks: ''
 isPreview: false
@@ -35,8 +35,8 @@ properties:
       Contains synchronous proxies for all host objects added via `CoreWebView2.AddHostObjectToScript`<!-- -->.
 
 
-      If you call `coreWebView2.AddHostObjectToScript("myObject", object);` in your host code then a synchronous proxy
-      for `object` will be exposed in script as `chrome.webview.hostObjects.sync.myObject`<!-- -->.
+      If you call `coreWebView2.AddHostObjectToScript("myObject", object);` in your host code, a synchronous proxy for
+      `object` will be exposed in script as `chrome.webview.hostObjects.sync.myObject`<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false

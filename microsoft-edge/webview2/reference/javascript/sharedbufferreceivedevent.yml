@@ -6,14 +6,14 @@ fullName: SharedBufferReceivedEvent
 summary: >-
   Event object for the `chrome.webview.sharedbufferreceived` event. This event is dispatched when
   `CoreWebView2.PostSharedBufferToScript` is successfully called.
-remarks: |-
+remarks: >-
 
 
   #### Examples
 
   The following example sends data to script for one-time, read-only consumption.
 
-  The following example sends data to script for one-time, read-only consumption.
+  First, in the native host app code, set data into the shared memory:
 
   ```cpp
   wil::com_ptr<ICoreWebView2ExperimentalEnvironment10> environment;
@@ -43,7 +43,8 @@ remarks: |-
   sharedBuffer->Close();
   ```
 
-  Next, in the HTML document, subscribe to and then handle the `sharedbufferreceived` event:
+  In the HTML document, subscribe to and handle sharedbufferreceived event.Next, in the HTML document, subscribe to and
+  then handle the `sharedbufferreceived` event:
 
   ```html
   window.chrome.webview.addEventListener("sharedbufferreceived", e => {
@@ -118,8 +119,9 @@ methods:
     summary: >-
       Returns an `ArrayBuffer` object with the backing content from the shared buffer passed to
       `CoreWebView2.PostSharedBufferToScript`<!-- -->. If `CoreWebView2.PostSharedBufferToScript` was called with the
-      buffer set to `ReadOnly`, then only read access is allowed to the buffer. If you try to modify the content in a
-      read-only buffer, it will cause an access violation in the WebView renderer process and crash the renderer process.
+      buffer set to `ReadOnly`<!-- -->, then only read access is allowed to the buffer. If you try to modify the content
+      in a read-only buffer, it will cause an access violation in the WebView renderer process and crash the renderer
+      process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -127,5 +129,5 @@ methods:
       content: 'getBuffer(): ArrayBuffer;'
       return:
         type: ArrayBuffer
-        description: An ArrayBuffer over the shared buffer passed to `CoreWebView2.PostSharedBufferToScript`.
+        description: An `ArrayBuffer` over the shared buffer passed to `CoreWebView2.PostSharedBufferToScript`.
 extends: <a href="https://developer.mozilla.org/docs/Web/API/Event">Event</a>
