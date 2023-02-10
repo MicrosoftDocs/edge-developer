@@ -9,7 +9,6 @@ ms.date: 02/02/2023
 ---
 # Use Origin Trials in Microsoft Edge
 
-Web content's origin is defined by the scheme (protocol), hostname (domain), and port of the URL used to access it. Two objects have the same origin only when the scheme, hostname, and port all match.  This hub,  Origin Trials provides space and access to test new origins.
 
 You can use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you don't need to go to `edge://flags` and turn on feature flags.
 
