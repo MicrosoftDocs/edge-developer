@@ -26,7 +26,9 @@ ms.date: 05/04/2021
 
 Users expect interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank (interruptions of rendering).  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.
 
-### Summary
+
+<!-- ------------------------------ -->
+#### Summary
 
 *  Don't write JavaScript that forces the browser to recalculate layout.  Separate read and write functions, and perform reads first.
 
@@ -42,7 +44,9 @@ Users expect interactive and smooth pages.  Each stage in the pixel pipeline rep
 
 JavaScript calculations, especially ones that trigger extensive visual changes, may stall application performance.  Don't let badly timed or long-running JavaScript interfere with user interactions.
 
-### JavaScript: Tools
+
+<!-- ------------------------------ -->
+#### JavaScript: Tools
 
 Take a recording in the **Performance** tool and look for suspiciously long `Evaluate Script` events.  <!--If you find any, you can enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->
 
@@ -51,7 +55,9 @@ Take a recording in the **Performance** tool and look for suspiciously long `Eva
 
 If you notice quite a bit of jank (interruptions of rendering) in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  CPU profiles show where runtime is spent within the functions of your page.  Learn how to create CPU profiles in [Speed up JavaScript runtime](js-runtime.md).
 
-### JavaScript: Problems
+
+<!-- ------------------------------ -->
+#### JavaScript: Problems
 
 The following table describes some common JavaScript problems and potential solutions.
 
@@ -77,7 +83,9 @@ Style changes are costly, especially if those changes affect more than one eleme
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->
 
-### Style: Tools
+
+<!-- ------------------------------ -->
+#### Style: Tools
 
 Take a recording in the **Performance** tool.  Check the recording for large `Recalculate Style` events (displayed in purple).
 
@@ -91,7 +99,9 @@ To reduce the impact of `Recalculate Style` events, minimize use of CSS properti
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->
 
-### Style: Problems
+
+<!-- ------------------------------ -->
+#### Style: Problems
 
 The following table describes some common style problems and potential solutions.
 
@@ -125,7 +135,9 @@ As a general rule of thumb, if you ask for a geometric value back from the DOM b
 <!--todo: add Avoid CSS that triggers layouts (Avoid Layout Thrashing) section when available -->
 <!--todo: add Diagnose Forced Synchronous Layouts section when available  -->
 
-### Layout: Tools
+
+<!-- ------------------------------ -->
+#### Layout: Tools
 
 The **Performance** pane identifies when a page causes forced synchronous layouts.  These `Layout` events are marked with red bars.
 
@@ -133,7 +145,9 @@ The **Performance** pane identifies when a page causes forced synchronous layout
 
 "Layout thrashing" is a repetition of forced synchronous layout conditions.  This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  See the previous figure.
 
-### Layout: Problems
+
+<!-- ------------------------------ -->
+#### Layout: Problems
 
 The following table describes some common layout problems and potential solutions.
 
@@ -154,7 +168,9 @@ Compositing is where the painted parts of the page are put together for displayi
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->
 
-### Paint and composite: Tools
+
+<!-- ------------------------------ -->
+#### Paint and composite: Tools
 
 Want to know how long painting takes or how often painting occurs?  Check the [Enable advanced paint instrumentation](../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation) setting in the **Performance** panel and then take a recording.  If most of your rendering time is spent painting, you have paint problems.
 
@@ -169,7 +185,8 @@ The Timeline Tool page is deprecated.
 -->
 
 
-### Paint and composite: Problems
+<!-- ------------------------------ -->
+#### Paint and composite: Problems
 
 The following table describes some common paint and composite problems and potential solutions.
 
