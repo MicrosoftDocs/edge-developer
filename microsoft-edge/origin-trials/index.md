@@ -14,7 +14,7 @@ You can use Origin Trials to try out experimental APIs on live sites for a limit
 
 Instead, you register the origin (for example, `https://www.example.com:443`) that you want to use the experimental feature on and you'll be issued a token that you add to the code of your website.
 
-See the [Microsft Edge Origin Trials Developer Console](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/) to see a list of the available origin trials and register your origin to give them a try.  You can also provide feedback on the design of the API, your use cases, or your experience using the APIs to browser engineers and the web standard community.
+See the [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/) to see a list of the available origin trials and register your origin to give them a try.  You can also provide feedback on the design of the API, your use cases, or your experience using the APIs to browser engineers and the web standard community.
 
 
 <!-- ====================================================================== -->
