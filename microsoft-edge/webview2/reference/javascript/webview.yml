@@ -380,4 +380,4 @@ methods:
       return:
         type: void
         description: ''
-extends: EventTarget
+extends: <a href="https://developer.mozilla.org/docs/Web/API/EventTarget">EventTarget</a>

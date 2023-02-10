@@ -128,4 +128,4 @@ methods:
       return:
         type: ArrayBuffer
         description: An ArrayBuffer over the shared buffer passed to `CoreWebView2.PostSharedBufferToScript`.
-extends: Event
+extends: <a href="https://developer.mozilla.org/docs/Web/API/Event">Event</a>
