@@ -193,7 +193,7 @@ properties:
           ```
 methods:
   - name: 'addEventListener(type, listener, options)'
-    uid: 'WebView2Script!WebView#addEventListener:member(1)'
+    uid: 'WebView2Script!WebView#addEventListener:member(2)'
     package: WebView2Script!
     fullName: 'addEventListener(type, listener, options)'
     summary: >-
@@ -202,7 +202,7 @@ methods:
       `CoreWebView2.PostWebMessageAsJson` or `CoreWebView2.PostWebMessageAsString`<!-- -->. The `sharedbufferreceived`
       event receives shared buffers posted from the WebView2 host via `CoreWebView2.PostSharedBufferToScript`<!-- -->.
 
-      See CoreWebView2.PostWebMessageAsJson (
+      See CoreWebView2.PostWebMessageAsJson(
       [Win32/C++](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson)<!--
       -->,
       [.NET](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasjson)<!--
@@ -214,46 +214,19 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addEventListener<K extends keyof WebViewEventMap>(type: K, listener: (this: WebView, ev: WebViewEventMap[K]) =>
-        any, options?: boolean | AddEventListenerOptions): void;
-      parameters:
-        - id: type
-          description: >-
-            The name of the event to subscribe to. Valid values are `message` and `sharedbufferreceived`<!--
-            -->.
-          type: K
-        - id: listener
-          description: ''
-          type: >-
-            (this: <xref uid="WebView2Script!WebView:class" />, ev: <xref uid="WebView2Script!WebViewEventMap:class"
-            />[K]) =&gt; any
-        - id: options
-          description: ''
-          type: boolean | AddEventListenerOptions
-      return:
-        type: void
-        description: ''
-  - name: 'addEventListener(type, listener, options)'
-    uid: 'WebView2Script!WebView#addEventListener:member(2)'
-    package: WebView2Script!
-    fullName: 'addEventListener(type, listener, options)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
         addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean |
         AddEventListenerOptions): void;
       parameters:
         - id: type
-          description: ''
+          description: >-
+            The name of the event to subscribe to. Valid values are `message`<!-- -->, and `sharedbufferreceived`<!--
+            -->.
           type: string
         - id: listener
-          description: ''
+          description: The callback to invoke when the event is raised.
           type: EventListenerOrEventListenerObject
         - id: options
-          description: ''
+          description: Options to control how the event is handled.
           type: boolean | AddEventListenerOptions
       return:
         type: void
@@ -266,13 +239,13 @@ methods:
       When the page calls `postMessage`<!-- -->, the `message` parameter is converted to JSON and is posted
       asynchronously to the WebView2 host process. This will result in either the `CoreWebView2.WebMessageReceived`
       event or the `CoreWebView2Frame.WebMessageReceived` event being raised, depending on if `postMessage` is called
-      from the top-level document in the WebView2 or from a child frame. See CoreWebView2.WebMessageReceived (
+      from the top-level document in the WebView2 or from a child frame. See CoreWebView2.WebMessageReceived(
       [Win32/C++](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived)<!--
       -->,
       [.NET](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webmessagereceived)<!--
       -->,
       [WinRT](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webmessagereceived)<!--
-      -->). See CoreWebView2Frame.WebMessageReceived (
+      -->). See CoreWebView2Frame.WebMessageReceived(
       [Win32/C++](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_webmessagereceived)<!--
       -->,
       [.NET](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.webmessagereceived)<!--
@@ -327,7 +300,7 @@ methods:
         type: void
         description: ''
   - name: 'removeEventListener(type, listener, options)'
-    uid: 'WebView2Script!WebView#removeEventListener:member(1)'
+    uid: 'WebView2Script!WebView#removeEventListener:member(2)'
     package: WebView2Script!
     fullName: 'removeEventListener(type, listener, options)'
     summary: >-
@@ -338,44 +311,17 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeEventListener<K extends keyof WebViewEventMap>(type: K, listener: (this: WebView, ev: WebViewEventMap[K])
-        => any, options?: boolean | EventListenerOptions): void;
-      parameters:
-        - id: type
-          description: The name of the event to unsubscribe from. Valid values are `message` and `sharedbufferreceived`<!-- -->.
-          type: K
-        - id: listener
-          description: ''
-          type: >-
-            (this: <xref uid="WebView2Script!WebView:class" />, ev: <xref uid="WebView2Script!WebViewEventMap:class"
-            />[K]) =&gt; any
-        - id: options
-          description: ''
-          type: boolean | EventListenerOptions
-      return:
-        type: void
-        description: ''
-  - name: 'removeEventListener(type, listener, options)'
-    uid: 'WebView2Script!WebView#removeEventListener:member(2)'
-    package: WebView2Script!
-    fullName: 'removeEventListener(type, listener, options)'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
         removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean |
         EventListenerOptions): void;
       parameters:
         - id: type
-          description: ''
+          description: The name of the event to unsubscribe from. Valid values are `message` and `sharedbufferreceived`<!-- -->.
           type: string
         - id: listener
-          description: ''
+          description: The callback to remove from the event.
           type: EventListenerOrEventListenerObject
         - id: options
-          description: ''
+          description: Options to control how the event is handled.
           type: boolean | EventListenerOptions
       return:
         type: void

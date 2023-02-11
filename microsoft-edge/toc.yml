@@ -1431,8 +1431,6 @@
                   uid: 'WebView2Script!SharedBufferReceivedEvent:class'
                 - name: WebView
                   uid: 'WebView2Script!WebView:class'
-                - name: WebViewEventMap
-                  uid: 'WebView2Script!WebViewEventMap:class'
 
         - name: Contact the WebView2 Team
           href: webview2/contact.md
