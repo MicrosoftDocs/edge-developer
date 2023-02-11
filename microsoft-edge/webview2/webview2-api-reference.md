@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/03/2022
+ms.date: 02/02/2023
 ---
 # WebView2 API Reference
 
@@ -15,26 +15,24 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 WebView2 is available for the following frameworks or platforms:
 
 
-##### [.NET](#tab/dotnet)
+##### [.NET/C#](#tab/dotnetcsharp)
 
-*  .NET
-   * [Core](/dotnet/api/microsoft.web.webview2.core)
-   * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
-   * [Windows Forms](/dotnet/api/microsoft.web.webview2.winforms)
-
-
-##### [WinRT](#tab/winrt)
-
-*  WinRT
-   * [Microsoft.Web.WebView2.Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index) - Common to all WinRT frameworks.
-   * [COM Interop/C++](/microsoft-edge/webview2/reference/winrt/interop/index) - Common to all WinRT frameworks.
-   *  WinUI 2 (UWP)
-      * [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/winui/api/microsoft.ui.xaml.controls.webview2)
-   *  WinUI 3 (Windows App SDK)
-      * [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2)
+* [Core](/dotnet/api/microsoft.web.webview2.core)
+* [WPF](/dotnet/api/microsoft.web.webview2.wpf)
+* [Windows Forms](/dotnet/api/microsoft.web.webview2.winforms)
 
 
-##### [Win32](#tab/win32)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [Microsoft.Web.WebView2.Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index) - Common to all WinRT frameworks.
+* [COM Interop/C++](/microsoft-edge/webview2/reference/winrt/interop/index) - Common to all WinRT frameworks.
+*  WinUI 2 (UWP)
+   * [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/winui/api/microsoft.ui.xaml.controls.webview2)
+*  WinUI 3 (Windows App SDK)
+   * [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2)
+
+
+##### [Win32/C++](#tab/win32cpp)
 
 * [API Reference for WebView2 Win32 C++](/microsoft-edge/webview2/reference/win32)
 

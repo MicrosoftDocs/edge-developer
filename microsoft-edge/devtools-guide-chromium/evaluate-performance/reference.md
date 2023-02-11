@@ -30,7 +30,9 @@ For a step-by-step tutorial on how to analyze the performance of a page using th
 <!-- ====================================================================== -->
 ## Record performance
 
-### Record runtime performance
+
+<!-- ------------------------------ -->
+#### Record runtime performance
 
 Record runtime performance when you want to analyze the performance of a page as it is running, as opposed to loading.
 
@@ -46,7 +48,9 @@ Record runtime performance when you want to analyze the performance of a page as
 
 1. Click **Record** again or click **Stop** to stop recording.
 
-### Record load performance
+
+<!-- ------------------------------ -->
+#### Record load performance
 
 Record load performance when you want to analyze the performance of a page as it is loading, as opposed to running.
 
@@ -62,7 +66,9 @@ DevTools automatically zooms in on the portion of the recording where most of th
 
 ![A page-load recording](../media/evaluate-performance-performance-refreshed.msft.png)
 
-### Capture screenshots while recording
+
+<!-- ------------------------------ -->
+#### Capture screenshots while recording
 
 To capture a screenshot of every frame while recording, select the **Screenshots** checkbox.
 
@@ -70,19 +76,25 @@ To capture a screenshot of every frame while recording, select the **Screenshots
 
 To learn how to interact with screenshots, see [View a screenshot](#view-a-screenshot).
 
-### Force garbage collection while recording
+
+<!-- ------------------------------ -->
+#### Force garbage collection while recording
 
 While you are recording a page, click **Collect garbage** (![Collect garbage icon](../media/collect-garbage-icon.msft.png)) to force garbage collection.
 
 ![Collect garbage](../media/evaluate-performance-performance-collect-garbage-button.msft.png)
 
-### Show recording settings
+
+<!-- ------------------------------ -->
+#### Show recording settings
 
 Click **Capture settings** (![Capture settings](../media/capture-settings-icon.msft.png)) to expose more settings related to how DevTools captures performance recordings.
 
 ![The Capture Settings section](../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png)
 
-### Disable JavaScript samples
+
+<!-- ------------------------------ -->
+#### Disable JavaScript samples
 
 By default, the **Main** section of a recording displays detailed call stacks of JavaScript functions that were called during the recording.  To disable these call stacks:
 
@@ -102,7 +114,9 @@ An example of a recording when JS samples are turned on:
 
 ![An example of a recording when JS samples are turned on.](../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png)
 
-### Throttle the network while recording
+
+<!-- ------------------------------ -->
+#### Throttle the network while recording
 
 To throttle the network while recording:
 
@@ -110,7 +124,9 @@ To throttle the network while recording:
 
 1. Set **Network** to the desired level of throttling.
 
-### Throttle the CPU while recording
+
+<!-- ------------------------------ -->
+#### Throttle the CPU while recording
 
 To throttle the CPU while recording:
 
@@ -120,7 +136,9 @@ To throttle the CPU while recording:
 
 Throttling is relative to the capabilities of your computer.  For example, the **2x slowdown** option makes your CPU operate 2 times slower than normal.  DevTools don't truly simulate the CPUs of mobile devices, because the architecture of mobile devices is very different from that of desktops and laptops.
 
-### Turn on advanced paint instrumentation
+
+<!-- ------------------------------ -->
+#### Turn on advanced paint instrumentation
 
 To view detailed paint instrumentation:
 
@@ -158,9 +176,11 @@ After making a recording, click **Clear recording** (![Clear recording icon](../
 <!-- ====================================================================== -->
 ## Analyze a performance recording
 
-After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** panel provides a lot of data for analyzing the performance of what just happened.
+After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** tool provides a lot of data for analyzing the performance of what just happened.
 
-### Select a portion of a recording
+
+<!-- ------------------------------ -->
+#### Select a portion of a recording
 
 Drag your mouse left or right across the **Overview** to select a portion of a recording.  The **Overview** is the section that contains the **FPS**, **CPU**, and **NET** charts.
 
@@ -180,9 +200,11 @@ To select a portion using a trackpad:
 
 To scroll a long flame chart in the **Main** section or any of the neighbors, click and hold while dragging up and down.  Drag left and right to move what portion of the recording is selected.
 
-### Search activities
 
-Press `Ctrl`+`F` (Windows, Linux) or `Command`+`F` (macOS) to open the search box at the bottom of the **Performance** panel.
+<!-- ------------------------------ -->
+#### Search activities
+
+Press `Ctrl`+`F` (Windows, Linux) or `Command`+`F` (macOS) to open the search box at the bottom of the **Performance** tool.
 
 ![The search box](../media/evaluate-performance-performance-search-regex.msft.png)
 
@@ -200,15 +222,17 @@ To modify query settings:
 
 To hide the search box, click **Cancel**.
 
-### View main thread activity
+
+<!-- ------------------------------ -->
+#### View main thread activity
 
 Use the **Main** section to view activity that occurred on the main thread of the page.
 
 ![The Main section](../media/evaluate-performance-performance-main-zoomed.msft.png)
 
-Select an event to view more information about it in the **Summary** panel.  DevTools outlines the selected event.
+Select an event to view more information about it in the **Summary** tab.  DevTools outlines the selected event.
 
-![More information about the anonymous function in the Summary panel](../media/evaluate-performance-performance-summary-me.msft.png)
+![More information about the anonymous function in the Summary tab](../media/evaluate-performance-performance-summary-me.msft.png)
 
 DevTools represents main thread activity with a flame chart.  The x-axis represents the recording over time.  The y-axis represents the call stack.  The events on top cause the events below it.
 
@@ -223,32 +247,57 @@ When JS samples are disabled, only high-level events such as `Event: click` and 
 <!--When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call` (script_foot_closure.js:53) from Figure 16.-->
 
 
-### View activities in a table
+<!-- ------------------------------ -->
+#### View activities in a table
 
 After recording a page, you don't need to rely solely on the **Main** section to analyze activities.  DevTools also provides three tabular views for analyzing activities.  Each view gives you a different perspective on the activities:
 
+*  To view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-tab) tab.
+
 *  To view the root activities that cause the most work, use the [Call Tree](#the-call-tree-tab) tab.
 
-*  To view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-panel) tab.
-
-*  To view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-panel) tab.
+*  To view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-tab) tab.
 
 
-#### Root activities
+###### Root activities
 
-Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
+<!-- tab order left to right:
+[Bottom Up] [Call Tree] [Event Log]
+-->
+
+Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.  The _activity tabs_ are the **Bottom-Up**, **Call Tree**, and **Event Log** tabs at the bottom of the **Performance** tool.  These tabs display root activities.
 
 <!-- You can view the source files for the Activity Tabs Demo in the [MicrosoftEdge/Demos > devtools-performance-activitytabs](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) repo folder. -->
 
-Here's an explanation of the **root activities** concept that is mentioned in the **Call Tree** panel, **Bottom-Up** panel, and **Event Log** panel.
+_Root activities_ are activities that cause the browser to do some work.  For example, when you click a webpage, the browser runs an `Event` activity as the root activity.  That `Event` activity may cause other activities to run, such as a handler.
 
-_Root activities_ are those which cause the browser to do some work.  For example, when you click a webpage, the browser runs an `Event` activity as the root activity.  That `Event` may cause a handler to run, and so on.
+In the flame chart of the **Main** section, root activities are at the top of the chart.  In the **Call Tree** and **Event Log** tabs, root activities are the top-level items.
 
-In the flame chart of the **Main** section, root activities are at the top of the chart.  In the **Call Tree** and **Event Log** panels, root activities are the top-level items.
+For an example of root activities, see [The Call Tree tab](#the-call-tree-tab), below.
 
-For an example of root activities, see the next section, "The Call Tree tab".
 
-#### The Call Tree tab
+<!-- tab order left to right:
+[Bottom Up] [Call Tree] [Event Log]
+-->
+
+###### The Bottom-Up tab
+
+Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
+
+Use the **Bottom-Up** tab to view which activities directly took up the most time in aggregate.
+
+The **Bottom-Up** tab only displays activities during the selected portion of the recording.  See [Select a portion of a recording](#select-a-portion-of-a-recording) to learn how to select portions.
+
+![The Bottom-Up tab](../media/evaluate-performance-performance-bottoms-up.msft.png)
+
+In the **Main** section flame chart of the previous figure, you can see that almost practically all of the time was spent running `Parse HTML`.  The top activity in the **Bottom-Up** tab of the previous figure is `Parse HTML`.  <!-- in orig article: In the flame chart of the previous figure, the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  -->  In the **Bottom-Up** tab, the next most expensive activity is `Layout`.
+
+The **Self Time** column represents the aggregated time spent directly in that activity, across all of the occurrences.
+
+The **Total Time** column represents aggregated time spent in that activity or any of the children.
+
+
+###### The Call Tree tab
 
 Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
 
@@ -256,7 +305,7 @@ Use the **Call Tree** tab to view which [root activities](#root-activities) caus
 
 The **Call Tree** tab only displays activities during the selected portion of the recording.  See [Select a portion of a recording](#select-a-portion-of-a-recording) to learn how to select portions.
 
-![The Call Tree panel](../media/evaluate-performance-performance-call-tree.msft.png)
+![The Call Tree tab](../media/evaluate-performance-performance-call-tree.msft.png)
 
 In the previous figure, the top-level of items in the **Activity** column, such as `Evaluate Script` and `Parse HTML` are root activities.  The nesting represents the call stack.  For example, in the previous figure, `Parse HTML` which caused `Evaluate Script` which caused `Compile Script` and `(anonymous)`.
 
@@ -270,29 +319,14 @@ By default the **Grouping** menu is set to **No Grouping**.  Use the **Grouping*
 
 Click **Show Heaviest Stack** (![Show Heaviest Stack](../media/show-heaviest-stack-icon.msft.png)) to reveal another table to the right of the **Activity** table.  Click on an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table displays which children of the selected activity took the longest time to run.
 
-#### The Bottom-Up panel
 
-Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
+###### The Event Log tab
 
-Use the **Bottom-Up** panel to view which activities directly took up the most time in aggregate.
+Use the **Event Log** tab to view activities in the order in which they occurred during the recording.
 
-The **Bottom-Up** panel only displays activities during the selected portion of the recording.  See [Select a portion of a recording](#select-a-portion-of-a-recording) to learn how to select portions.
+The **Event Log** tab only displays activities during the selected portion of the recording.  See [Select a portion of a recording](#select-a-portion-of-a-recording) to learn how to select portions.
 
-![The Bottom-Up panel](../media/evaluate-performance-performance-bottoms-up.msft.png)
-
-In the **Main** section flame chart of the previous figure, you can see that almost practically all of the time was spent running `Parse HTML`.  The top activity in the **Bottom-Up** panel of the previous figure is `Parse HTML`.  <!-- in orig article: In the flame chart of the previous figure, the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  -->  In the **Bottom-Up** tab, the next most expensive activity is `Layout`.
-
-The **Self Time** column represents the aggregated time spent directly in that activity, across all of the occurrences.
-
-The **Total Time** column represents aggregated time spent in that activity or any of the children.
-
-#### The Event Log panel
-
-Use the **Event Log** panel to view activities in the order in which they occurred during the recording.
-
-The **Event Log** panel only displays activities during the selected portion of the recording.  See [Select a portion of a recording](#select-a-portion-of-a-recording) to learn how to select portions.
-
-![The Event Log panel](../media/evaluate-performance-performance-event-log.msft.png)
+![The Event Log tab](../media/evaluate-performance-performance-event-log.msft.png)
 
 The **Start Time** column represents the point at which that activity started, relative to the start of the recording.  For example, the start time of `175.7 ms` for the selected item in the previous figure means that activity started 175.7 ms after the recording started.
 
@@ -308,19 +342,25 @@ Use the **Duration** menu to filter out any activities that took less than 1 ms 
 
 Disable the **Loading**, **Scripting**, **Rendering**, or **Painting** checkboxes to filter out all activities from those categories.
 
-### View GPU activity
+
+<!-- ------------------------------ -->
+#### View GPU activity
 
 View GPU activity in the **GPU** section.
 
 ![The GPU section](../media/evaluate-performance-performance-gpu-zoomed.msft.png)
 
-### View raster activity
+
+<!-- ------------------------------ -->
+#### View raster activity
 
 View raster activity in the **Raster** section.
 
 ![The Raster section](../media/evaluate-performance-performance-raster.msft.png)
 
-### View interactions
+
+<!-- ------------------------------ -->
+#### View interactions
 
 Use the **Interactions** section to find and analyze user interactions that happened during the recording.
 
@@ -328,9 +368,11 @@ Use the **Interactions** section to find and analyze user interactions that happ
 
 A red line at the bottom of an interaction represents time spent waiting for the main thread.
 
-Click an interaction to view more information about it in the **Summary** panel.
+Click an interaction to view more information about it in the **Summary** tab.
 
-### Analyze frames per second (FPS)
+
+<!-- ------------------------------ -->
+#### Analyze frames per second (FPS)
 
 DevTools provides numerous ways to analyze frames per second:
 
@@ -338,7 +380,8 @@ DevTools provides numerous ways to analyze frames per second:
 *  Use [the Frames section](#the-frames-section) to view how long a particular frame took.
 *  Use the **FPS meter** for a realtime estimate of FPS as the page runs.  See [View frames per second in realtime with the FPS meter](#view-frames-per-second-in-realtime-with-the-fps-meter).
 
-#### The FPS chart
+
+###### The FPS chart
 
 The **FPS** chart provides an overview of the frame rate across the duration of a recording.  In general, the higher the green bar, the better the frame
 rate.
@@ -347,7 +390,8 @@ A red bar above the **FPS** chart is a warning that the frame rate dropped so lo
 
 ![The FPS chart](../media/evaluate-performance-performance-fps-highlight.msft.png)
 
-#### The Frames section
+
+###### The Frames section
 
 The **Frames** section tells you exactly how long a particular frame took.
 
@@ -355,11 +399,13 @@ Hover over a frame to view a tooltip with more information about it.
 
 ![Hovering on a frame](../media/evaluate-performance-performance-frames-hover.msft.png)
 
-Select a frame to view more information about the frame in the **Summary** panel.  DevTools outlines the selected frame in blue.
+Select a frame to view more information about the frame in the **Summary** tab at the bottom of the **Performance** tool.  DevTools outlines the selected frame in blue.
 
-![View a frame in the Summary panel](../media/evaluate-performance-performance-frames-summary.msft.png)
+![View a frame in the Summary tab](../media/evaluate-performance-performance-frames-summary.msft.png)
 
-### View network requests
+
+<!-- ------------------------------ -->
+#### View network requests
 
 Expand the **Network** section to view a waterfall of network requests that occurred during the recording.
 
@@ -395,13 +441,15 @@ The **Network** tool:
 
 ![The Network tool](../media/evaluate-performance-bing-network-timing.msft.png)
 
-### View memory metrics
+
+<!-- ------------------------------ -->
+#### View memory metrics
 
 Turn on the **Memory** checkbox to view memory metrics from the last recording.
 
 ![The Memory checkbox](../media/evaluate-performance-performance-memory-highlight.msft.png)
 
-DevTools displays a new **Memory** chart, above the **Summary** panel.  There is also a new chart below the **NET** chart, called **HEAP**.  The **HEAP** chart provides the same information as the **JS Heap** line in the **Memory** chart.
+DevTools displays a new **Memory** chart, above the **Summary** tab.  There is also a new chart below the **NET** chart, called **HEAP**.  The **HEAP** chart provides the same information as the **JS Heap** line in the **Memory** chart.
 
 ![Memory metrics](../media/evaluate-performance-performance-memory-chart.msft.png)
 
@@ -409,13 +457,17 @@ The colored lines on the chart map to the colored checkboxes above the chart.  C
 
 The chart only displays the region of the recording that is currently selected.  For example, in the previous figure, the **Memory** chart is only showing memory usage from around the 400 ms mark to the 1750 ms mark.
 
-### View the duration of a portion of a recording
+
+<!-- ------------------------------ -->
+#### View the duration of a portion of a recording
 
 When analyzing a section like **Network** or **Main**, sometimes you need a more precise estimate of how long certain events took.  Hold `Shift`, click and hold, and drag left or right to select a portion of the recording.  At the bottom of your selection, DevTools shows how long that portion took.
 
 ![Viewing the duration of a portion of a recording](../media/evaluate-performance-performance-main-duration.msft.png)
 
-### View a screenshot
+
+<!-- ------------------------------ -->
+#### View a screenshot
 
 See [Capture screenshots while recording](#capture-screenshots-while-recording) to learn how to turn on screenshots.
 
@@ -423,15 +475,17 @@ Hover over the **Overview** to view a screenshot of how the page looked during t
 
 ![Viewing a screenshot](../media/evaluate-performance-performance-screenshots-hover.msft.png)
 
-You can also view screenshots by selecting a frame in the **Frames** section.  DevTools displays a small version of the screenshot in the **Summary** panel.
+You can also view screenshots by selecting a frame in the **Frames** section.  DevTools displays a small version of the screenshot in the **Summary** tab.
 
-![Viewing a screenshot in the Summary panel](../media/evaluate-performance-performance-summary-preview.msft.png)
+![Viewing a screenshot in the Summary tab](../media/evaluate-performance-performance-summary-preview.msft.png)
 
-Click the thumbnail in the **Summary** panel to zoom in on the screenshot.
+Click the thumbnail in the **Summary** tab to zoom in on the screenshot.
 
-![Zooming into a screenshot from the Summary panel](../media/evaluate-performance-performance-summary-preview-select.msft.png)
+![Zooming into a screenshot from the Summary tab](../media/evaluate-performance-performance-summary-preview-select.msft.png)
 
-### View layers information
+
+<!-- ------------------------------ -->
+#### View layers information
 
 To view advanced layers information about a frame:
 
@@ -453,7 +507,9 @@ To move the diagram:
 
 *  Select **Reset Transform** (![Reset Transform](../media/reset-transform-icon.msft.png)) to reset the diagram to the original position.
 
-### View paint profiler
+
+<!-- ------------------------------ -->
+#### View paint profiler
 
 To view advanced information about a paint event:
 
@@ -461,15 +517,15 @@ To view advanced information about a paint event:
 
 1. Select a **Paint** event in the **Main** section.
 
-The **Paint Profiler** panel:
+The **Paint Profiler** tab:
 
-![The Paint Profiler panel](../media/evaluate-performance-paint-profiler.msft.png)
+![The Paint Profiler tab](../media/evaluate-performance-paint-profiler.msft.png)
 
 
 <!-- ====================================================================== -->
 ## Analyze rendering performance with the Rendering tool
 
-Use the features of the **Rendering** panel to help visualize the rendering performance of your page.
+Use the features of the **Rendering** tool to help visualize the rendering performance of your page.
 
 To open the **Rendering** tool:
 
@@ -479,7 +535,9 @@ To open the **Rendering** tool:
 
 ![The Rendering tool](../media/evaluate-performance-console-drawer-rendering.msft.png)
 
-### View frames per second in realtime with the FPS meter
+
+<!-- ------------------------------ -->
+#### View frames per second in realtime with the FPS meter
 
 The **FPS meter** is an overlay that appears in the top-right corner of your viewport.  It provides a realtime estimate of FPS as the page runs.  To open the **FPS meter**:
 
@@ -489,7 +547,9 @@ The **FPS meter** is an overlay that appears in the top-right corner of your vie
 
 ![The FPS meter](../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png)
 
-### View painting events in realtime with Paint Flashing
+
+<!-- ------------------------------ -->
+#### View painting events in realtime with Paint Flashing
 
 Use Paint Flashing to get a realtime view of all paint events on the page.  Whenever a part of the page gets re-painted, DevTools outlines that section in green.
 
@@ -501,7 +561,9 @@ To turn on Paint Flashing:
 
    ![Paint Flashing](../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png)
 
-### View an overlay of layers with Layer Borders
+
+<!-- ------------------------------ -->
+#### View an overlay of layers with Layer Borders
 
 Use **Layer Borders** to view an overlay of layer borders and tiles on top of the page.
 
@@ -515,7 +577,9 @@ To turn on Layer Borders:
 
 See the comments in [debug_colors.cc](https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc) for an explanation of the color-codings.
 
-### Find scroll performance issues in realtime
+
+<!-- ------------------------------ -->
+#### Find scroll performance issues in realtime
 
 Use Scrolling Performance Issues to identify elements of the page that have event listeners related to scrolling that may harm the performance of the page.  DevTools outlines the potentially problematic elements in teal.
 

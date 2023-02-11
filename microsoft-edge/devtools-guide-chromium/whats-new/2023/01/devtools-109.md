@@ -119,9 +119,7 @@ Add the new **Heap Snapshot Visualizer** extension to Microsoft Edge to get new 
 
 Graph view:
 
-
 ![Heap Snapshot Visualizer in Graph mode](./devtools-109-images/heap-snapshot-visualizer-graph.png)
-
 
 Tree view:
 

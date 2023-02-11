@@ -129,15 +129,15 @@ Update the project's NuGet packages:
 
    ![The NuGet package manager to install Microsoft.UI.Xaml](media/webview2_sample_uwp-nuget-package-ui-xaml.png)
 
-   After getting the latest packages, which can take a few minutes, the **Preview Changes** dialog box opens.  **Microsoft.Web.WebView2** (the WebView2 SDK) is listed separately in the **Preview Changes** dialog box:
+   After getting the latest packages, which can take a few minutes, the **Preview Changes** dialog opens.  **Microsoft.Web.WebView2** (the WebView2 SDK) is listed separately in the **Preview Changes** dialog:
 
-   ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package](media/webview2_sample_uwp-preview-changes-ui-xaml-pkg.png)
+   ![The 'Preview Changes' dialog for installing the Microsoft.UI.Xaml package](media/webview2_sample_uwp-preview-changes-ui-xaml-pkg.png)
 
 1. Click the **OK** button.
 
-1. The **License Acceptance** dialog box appears:
+1. The **License Acceptance** dialog appears:
 
-   ![The 'License Acceptance' dialog box for installing the Microsoft.UI.Xaml package](media/webview2_sample_uwp-license-acceptance-ui-xaml-pkg.png)
+   ![The 'License Acceptance' dialog for installing the Microsoft.UI.Xaml package](media/webview2_sample_uwp-license-acceptance-ui-xaml-pkg.png)
 
 1. Click the **I Accept** button.  In Visual Studio, the `readme.txt` file is displayed, saying that you've installed the WinUI package:
 
@@ -147,9 +147,9 @@ Update the project's NuGet packages:
 
 1. Update the **Microsoft.NETCore.UniversalWindowsPlatform** NuGet package, using similar steps.
 
-   After getting the latest UWP packages, which can take a few minutes, the **Preview Changes** dialog box appears:
+   After getting the latest UWP packages, which can take a few minutes, the **Preview Changes** dialog appears:
 
-   ![The 'Preview Changes' dialog box for installing the UWP package](webview2-sample-uwp-images/preview-changes-uwp-pkg.png)
+   ![The 'Preview Changes' dialog for installing the UWP package](webview2-sample-uwp-images/preview-changes-uwp-pkg.png)
 
 1. Select **File** > **Save All**.
 
