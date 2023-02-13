@@ -9,7 +9,7 @@ ms.date: 02/03/2023
 ---
 # Sideload an extension
 
-During development, you can use Microsoft Edge browser to run and debug your extension safely.  By sideloading your extension locally in your browser, you can run and test your extension without changing ant settinga. This helps you test new extensions safely.
+During development, you can use Microsoft Edge browser to run and debug your extension safely.  By sideloading your extension locally in your browser, you can run and test your extension without changing any settinga. This helps you test new extensions safely.
 
 To sideload an extension into Microsoft Edge:
 
