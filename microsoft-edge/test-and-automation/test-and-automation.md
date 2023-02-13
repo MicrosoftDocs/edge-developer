@@ -27,7 +27,7 @@ These tools are described below.
 <!-- ====================================================================== -->
 ## DevTools Protocol
 
-Use the DevTools Protocol to instrument, inspect, debug, and profile browsers, including Microsoft Edge. By [building Microsoft Edge on the Chromium open-source project](https://github.com/MicrosoftEdge/MSEdge/blob/master/README.md), the Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.
+Use the DevTools Protocol to instrument, inspect, debug, and profile browsers, including Microsoft Edge.  By building Microsoft Edge on the Chromium open-source project, the Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.  For information about how Microsoft Edge uses the Chromium open-source project, see [Microsoft Edge and Chromium Open Source: Our Intent](https://github.com/MicrosoftEdge/MSEdge/blob/master/README.md).
 
 See [DevTools Protocol](devtools-protocol.md).
 
