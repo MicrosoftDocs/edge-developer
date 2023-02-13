@@ -27,7 +27,7 @@ To work directly with a specific part of the browser, such as a window or tab, y
 <!-- ====================================================================== -->
 ## Basic guidance
 
-Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  Some of the popular browsers to build extensions for include Safari, Firefox, Chrome, Opera, Brave, and Microsoft Edge. 
+Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  Some of the popular browsers to build extensions for include Microsoft Edge, Safari, Firefox, Chrome, Opera, and Brave. 
 
 The following table isn't exhaustive or definitive. It is just a starting point for your research.
 
