@@ -83,7 +83,7 @@ The forward slash (`/`) characters that normally delimit regular expressions pat
 Similarly, flags that optionally appear after the closing forward slash (`/`) in JavaScript regular expressions can't be used here. The **Search** tool matches results as if the `g`, `i`, and `m` regular expression flags had been provided:
 
 * The search is global, meaning that the tool will continue searching files even after a first match has been found, as if the regular expression `g` flag had been provided.
-* The search ignores casing by default, as if the `i` flag had been provided. To disable this flag and only find results that match a particular case, click the **Match Case** (`Aa`) button in the search toolbar.
+* The search ignores casing by default, as if the `i` flag had been provided. To disable this flag and only find results that match a particular case, click the **Match Case** (**Aa**) button in the search toolbar.
 * The search is multiline, meaning that the tool treats each line in the source files independently and the `^` and `$` symbols match the start and end of any line, respectively, as if the `m` flag had been provided.
 
 See also:
