@@ -11,7 +11,7 @@ ms.date: 02/07/2022
 
 This article introduces concepts about building a Microsoft Edge extension.  Follow along to understand how multi-tab browsers work.
 
-A Microsoft Edge *extension* is a small app that users may opt into that adds or modifies features of Microsoft Edge for a unique user experience.  For an introduction, see [Overview of Microsoft Edge extensions](../index.md).
+A Microsoft Edge *extension* is a small app that users may opt into that adds or modifies features of Microsoft Edge for a specialized user experience.  For an introduction, see [Overview of Microsoft Edge extensions](../index.md).
 
 
 <!-- ====================================================================== -->
