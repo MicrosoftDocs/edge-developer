@@ -33,6 +33,9 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 110
+              href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
+
             - name: Microsoft Edge 109
               href: devtools-guide-chromium/whats-new/2023/01/devtools-109.md
 
@@ -1115,19 +1118,19 @@
 
             - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
-              displayName: WinUI3_GettingStarted, Get started with WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
+              displayName: WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
 
             - name: WPF
               href: webview2/get-started/wpf.md
-              displayName: WPF_GettingStarted, Get started with WPF apps  # repo dir name  # top-of-page title
+              displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
 
             - name: WinForms
               href: webview2/get-started/winforms.md
-              displayName: WinForms_GettingStarted, Get started with WinForms apps  # repo dir name  # top-of-page title
+              displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
 
             - name: Win32
               href: webview2/get-started/win32.md
-              displayName: Win32_GettingStarted, Get started with Win32 apps  # repo dir name  # top-of-page title
+              displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
 
 # -----------------------------------------------------------------------------
 # Sample apps
