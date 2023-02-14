@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/07/2022
+ms.date: 02/06/2022
 ---
 # Extension concepts and architecture
 
