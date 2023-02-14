@@ -74,9 +74,22 @@ To only find results that match a particular case (lowercase or uppercase charac
 <!-- ====================================================================== -->
 ## Search for regular expressions
 
-You can use regular expressions, including [JavaScript regular expressions](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions), to find matching results.  To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid regular expression in the search input field.
+You can use regular expressions to find matching results.  To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid [JavaScript regular expression](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) in the search input field.
 
 ![Searching for a regular expression](../media/search-tool/search-tool-regexp.png)
+
+The forward slash (`/`) characters that normally delimit regular expressions patterns in JavaScript aren't needed.
+
+Similarly, flags that optionally appear after the closing forward slash (`/`) in JavaScript regular expressions can't be used here. The **Search** tool matches results as if the `g`, `i`, and `m` regular expression flags had been provided:
+
+| Flag | Name | Description |
+|---|---|---|
+| `g` | Global | The search is global: the tool will continue searching files even after a first match has been found, as if the regular expression `g` flag had been provided. |
+| `i` | Ignore case | The search ignores casing by default, as if the `i` flag had been provided. To disable this flag and only find results that match a particular case, click the **Match Case** (**Aa**) button in the search toolbar. |
+| `m` | Multiline | The search is multiline: the tool treats each line in the source files independently and the `^` and `$` symbols match the start and end of any line, respectively, as if the `m` flag had been provided. |
+
+See also:
+* [Regular expressions](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) at MDN.
 
 
 <!-- ====================================================================== -->
