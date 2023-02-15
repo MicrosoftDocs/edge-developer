@@ -34,10 +34,11 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
+
 <!-- ====================================================================== -->
 ## 1.0.1587.40
 
-Release Date: Feb 13, 2023  
+Release Date: February 14, 2023
 
 [NuGet package for WebView2 SDK 1.0.1587.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1587.40)
 
@@ -47,9 +48,9 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 #### Promotions
 
-The following items are now stable:
+The following items are now stable.
 
-*  Additional options used to create WebView2 Environment to manage custom scheme registration.
+*  Additional options used to create a WebView2 Environment to manage custom scheme registration:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -76,13 +77,13 @@ The following items are now stable:
 
 ---
 
-<!-- ====================================================================== -->
 
+<!-- ====================================================================== -->
 ## 1.0.1671-prerelease
 
-Release Date: Feb 13, 2023  
+Release Date: February 14, 2023
 
-[NuGet package for WebView2 SDK 1.0.1671](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1671-prerelease)  
+[NuGet package for WebView2 SDK 1.0.1671-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1671-prerelease)
 
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 112.0.1671.0 or higher. 
 
@@ -110,7 +111,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
-*  Added support for Experimental Object Collection View API
+*  Added support for Experimental Object Collection View API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -134,7 +135,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs are promoted to stable in this prerelease SDK.
 
 *  The SharedBuffer API:
 
@@ -182,7 +183,9 @@ The following APIs are promoted to stable in this prerelease SDK:
 	* [ICoreWebView2SharedBuffer:: get_Size method](#)
 	* [ICoreWebView2SharedBuffer:: get_Buffer method](#)
 	* [ICoreWebView2SharedBuffer:: get_FileMappingHandle method](#)
+
 ---
+
 
 *  The Permission API:
 
@@ -223,6 +226,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 * [CoreWebView2GetNonDefaultPermissionSettingsCompletedHandler interface](#)
 
 ##### [Win32/C++](#tab/win32cpp)
+
 * [ICoreWebView2Profile4 interface](#)
 	* [ICoreWebView2Profile4::SetPermissionState method](#)
 	* [ICoreWebView2Profile4::GetNonDefaultPermissionSettings method](#) 
@@ -238,20 +242,23 @@ The following APIs are promoted to stable in this prerelease SDK:
 	* [ICoreWebView2ControllerOptions2:: put_ScriptLocale method](#)
 * [ICoreWebView2SetPermissionStateCompletedHandler interface](#)
 * [ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler interface](#)
+
 ---
+
 
 #### Bug fixes
  
 *   Fixed a bug where WebView2 was not closing properly when hitting a BeforeUnload event (Runtime) ([Issue #2677](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2677)) 
-*   In the DownloadStarting event, the ResultFilePath previously was not showing the correct download location for UWP applications when the DownloadStarting event handler was attached.This has been fixed and the correct ResultFilePath is shown.  
+*  In the `DownloadStarting` event, the `ResultFilePath` previously wasn't showing the correct download location for UWP applications when the `DownloadStarting` event handler was attached.  This has been fixed; the correct `ResultFilePath` is now shown.
 *   Fixed bug of throwing System.ArgumentException after call HostObject method that returns non-generic task.([Issue #2787](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2787))   
 *   Fixed an issue in SharedBuffer API where the stream object does not work well with StreamWriter. (Runtime) ([Issue #3108](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3108)) 
-*   DOM speech synthesis APIs like `SpeechSynthesis.getVoices()` will now work in UWP apps. (Runtime)  
-*   Fixed a crash on frame destruction. (Runtime)([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))   
+*  DOM speech-synthesis APIs, such as `SpeechSynthesis.getVoices()`, will now work in UWP apps. (Runtime)
+*  Fixed a crash that occurred on frame destruction. (Runtime) ([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))   
 *   Fixed a bug where the app crashes when trying to call CreateWebResourceResponse with null phrase reason. This is a runtime change.  
-*   The `CoreWebView2.AddHostObjectToScript` option `chrome.webview.hostObjects.options.ignoreMemberNotFoundError` now works in non-English locales. (Runtime)  
+*  The `CoreWebView2.AddHostObjectToScript` option `chrome.webview.hostObjects.options.ignoreMemberNotFoundError` now works in non-English locales. (Runtime)
 *   Fully enabled Open file dialog support for elevated apps on Windows 7. 
-*   Fixed a bug where owned windows were not showing up for UWP.
+*  Fixed a bug where owned windows were not appearing for UWP.
+
 
 <!-- ====================================================================== -->
 ## 1.0.1518.46
