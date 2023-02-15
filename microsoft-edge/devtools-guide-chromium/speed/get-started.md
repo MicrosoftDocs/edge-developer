@@ -173,116 +173,53 @@ The **Passed audits** section shows you what the site is doing correctly.  Click
 
 The **Opportunities** section of your report gives you tips on how to improve the performance of the webpage.  In this section, you implement the recommended changes to the codebase, auditing the site again after each change to measure how it affects site speed.
 
-### Enable text compression
+#### Resize images
 
-Your report says that avoiding enormous network payloads is one of the top opportunities for improving the performance of the page.  Enabling text compression is an opportunity to improve the performance of the page.
+Your report indicates that serving appropriately sized images is one of the top opportunities for improving the performance of the page.  Resizing images helps reduce the size of the network payload.  If your user is viewing your images on a mobile device screen that is 500-pixels-wide, there is really no point in sending a 1500-pixel-wide image.  Ideally, you send a 500-pixel-wide image, at most.
 
-Text compression is when you reduce, or compress, the size of a text file before sending it over the network.  This compression is similar to how you can archive a directory before sending it, to reduce the size.
+In the **Opportunities** section of your report, click **Properly size images** to display which images should be resized. **Lighthouse** lists four `.png` files which can be resized to improve load time:
 
-Before you enable compression, here are a couple of ways to manually check whether text resources are compressed.
+![The Opportunities section showing four images to be optimized, along with the potential data savings](./images/resize-images.png)
 
-1. Click the **Network** tool.
+Before resizing these images, verify the amount of data the server must send to the browser for these images to be displayed:
 
-   ![The Network panel](../media/speed-glitch-tony-remix-network.msft.png)
+1. Open the **Network** tool.
 
-1. Click the **Network setting** icon.
+    If the tool is empty, refresh the page.
 
-1. Click the **Use Large Request Rows** checkbox.  The height of the rows in the table of network requests increases.
+1. In the **Filter** text box, type `.jpg` to filter the list of requests and only show the four images.
 
-   ![Large rows in the network requests table](../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png)
+    To learn more about filtering requests in the **Network** tool, see [Filter requests](../network/reference.md#filter-requests) in _Network features reference_.
 
-1. If the **Size** column in the table of network requests isn't displayed, click the table header > **Size**.
+1. Check the **Network** tool bottom toolbar to verify the amount of data transferred because of the images:
 
-Each **Size** cell shows two values.  The top value is the size of the downloaded resource.  The bottom value is the size of the uncompressed resource.  If the two values are the same, then the resource isn't being compressed when it is sent over the network.  For example, in the previous figure, the top and bottom values for `bundle.js` are `1.2 MB` and `1.2 MB`.
+    ![The Network tool, showing the four image requests, and the total amount of data transferred](./images/network-tool-images.png)
 
-Check for compression by inspecting the HTTP headers of a resource:
+    The bottom toolbar shows that the four images contribute 16.4MB of the total 17.3MB of data transferred for this webpage.
 
-1. Click `bundle.js`.
+Next, resize the images and run a new audit:
 
-1. Click the **Headers** panel.
+1. In Visual Studio Code, open the `/travel-site/assets/img/` folder in the **Explorer**, which contains all the images displayed on the webpage. Click one of the image files to open a preview and verify its dimensions in the status bar:
 
-   ![The Headers panel](../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png)
+    ![VS Code with an image opened, showing its dimensions in the status bar](./images/image-dimension-vscode.png)
 
-1. Search the **Response Headers** section for a `content-encoding` header.  A `content-encoding` heading isn't displayed, meaning that `bundle.js` wasn't compressed.  When a resource is compressed, this header is usually set to `gzip`, `deflate`, or `br`.  For an explanation of the values, see [Directives](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding#Directives).
+    The selected image is 4032 pixels wide, but the webpage's layout only displays it at 900 pixels or less.
 
-Enough with the explanations; it's time to make some changes.  Enable text compression by adding a couple of lines of code, as follows.
+1. Resize all images to 1000 pixels wide. Resizing images depends on your operating system. For example, to resize images on Windows, you can use **PowerToys**. To learn more, see [Image Resized utility](/windows/powertoys/image-resizer).
 
-1. In the editor tab, select **server.js**.
+1. In **Lighthouse**, click **Run an audit** (![Run an audit icon](./images/perform-icon.msft.png)) to go back to the main **Lighthouse** page without losing your baseline report.
 
-   ![Edit server.js](../media/speed-glitch-tony-remix-server-js.msft.png)
+1. Click **Analyze page load** again to see how the change affects load performance:
 
-1. Add the following code to **server.js**.  Make sure to put `app.use(compression())` before `app.use(express.static('build'))`.
+    ![An Audits report after resizing images](./images/report-after-image-resize.png)
 
-   ```javascript
-   const express = require('express');
-   const app = express();
-   const fs = require('fs');
-   const compression = require('compression');
-   app.use(compression());
-   app.use(express.static('build'));
-   const listener = app.listen(process.env.PORT || 1234, function () {
-      console.log(`Listening on port ${listener.address().port}`);
-   });
-   ```
+The change has an important effect on the overall performance score. To verify how much data was saved, use the **Network** tool like you did before:
 
-   > [!NOTE]
-   > Usually, you have to install the `compression` package via something like `npm i -S compression`, but this has already been done for you.
+![The Network tool, showing the four image requests again, and the lower total amount of data transferred](./images/network-tool-images-after.png)
 
-1. Wait for Glitch to deploy the new build of the site.  The fancy animation next to **Tools** means that the site is getting rebuilt and redeployed.  The change is ready when the animation next to **Tools** goes away.  Click **Show** and then select **In a New Window** again.
+Now, only 469KB of data needs to be transferred for the images to appear on the webpage.
 
-   <!--
-   ![The animation that indicates that the site is getting built](../media/speed-glitch-tony-remix-server-js-edited.msft.png)
-   -->
-
-Use the workflows that you learned earlier to manually check that the compression is working:
-
-1. Go back to the demo tab and refresh the page.  The **Size** column should now show 2 different values for text resources like `bundle.js`.  In the figure after the following, the top value of `256 KB` for `bundle.js` is the size of the file that was sent over the network, and the bottom value of `1.2 MB` is the uncompressed file size.
-
-   ![The Size column now shows two different values for text resources](../media/speed-glitch-tony-remix-network-main.msft.png)
-
-1. The **Response Headers** section for `bundle.js` now includes a `content-encoding: gzip` header:
-
-   ![The Response Headers section now contains a 'content-encoding' header](../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png)
-
-Audit the page again to measure what kind of impact text compression has on the load performance of the page:
-
-1. Select the **Lighthouse** tool (formerly called the Audits tool).
-
-1. Click **Perform an audit** (![Perform an audit](../media/perform-icon.msft.png)).
-
-1. Keep the settings the same as before.
-
-1. Click **Run audit**.
-
-   ![An Audits report after enabling text compression](../media/speed-glitch-tony-remix-updated-audits-performance.msft.png)
-
-Your overall performance score should have increased, meaning that the site is getting faster.
-
-#### Text compression in the real world
-
-Most servers have simple fixes like this for enabling compression.  Do a search on how to configure whatever server you use to compress text.
-
-### Resize images
-
-Your report indicates that avoiding enormous network payloads is one of the top opportunities for improving the performance of the page.  Resizing images helps reduce the size of the network payload.  If your user is viewing your images on a mobile device screen that is 500-pixels-wide, there is really no point in sending a 1500-pixel-wide image.  Ideally, you send a 500-pixel-wide image, at most.
-
-1. In your report, select **Avoid enormous network payloads** to display which images should be resized.  It looks like two of the `.jpg` files are over 2000 KB, which is bigger than necessary.
-
-   <!--
-   ![Details about the properly size images opportunity](../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png)
-   -->
-
-1. Back in the editor tab, open `src/model.js`.
-
-1. Replace `const dir = 'big'` with `const dir = 'small'`.  This directory contains copies of the same images which have been resized.
-
-1. Audit the page again, to see how the change affects load performance.
-
-   ![An Audits report after resizing images](../media/speed-glitch-compression-small-images-audits-performance.msft.png)
-
-The change only has a minor effect on the overall performance score.  However, one thing that the score doesn't show clearly is how much network data you're saving your users.  The total size of the old photos was around 5.3 megabytes, whereas now it's only about 0.18 megabytes.
-
-#### Resizing images in the real world
+###### Resizing images in the real world
 
 For a small app, doing a one-off resize like this might be good enough.  But for a large app, this isn't scalable.  Here are some strategies for managing images in large apps:
 
@@ -296,7 +233,13 @@ For a small app, doing a one-off resize like this might be good enough.  But for
 
 Optimization is when you run an image through a special program that reduces the size of the image file.  For more tips, see [Essential Image Optimization](https://images.guide).
 
-### Eliminate render-blocking resources
+
+
+TODO: CONTINUE FROM HERE.
+
+
+
+#### Eliminate render-blocking resources
 
 Your latest report says that eliminating render-blocking resources is now the biggest opportunity.
 
