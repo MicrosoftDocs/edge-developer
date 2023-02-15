@@ -1,11 +1,11 @@
 ---
 title: Optimize website speed using Lighthouse
-description: How to use Lighthouse in DevTools to find ways to make your websites load faster.
+description: How to use Lighthouse and other tools in DevTools to find ways to make your websites load faster.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 02/15/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,14 +22,9 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Optimize website speed using Lighthouse
 
-This tutorial teaches you how to use DevTools to find ways to make your websites load faster.
+This tutorial teaches you how to use Lighthouse, and other tools, in DevTools to find ways to make your websites load faster.
 
-<!-- terminology hit counts as of 1/26/2022:
-audit: 93 hits
-lighthouse: 9 -->
-This tutorial uses the **Lighthouse** tool.  The **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.
-
-The **Lighthouse** tool was previously called the **Audits** tool.  "Audits panel" means the same thing as "Lighthouse tool".
+Note that the **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.
 
 
 <!-- ====================================================================== -->
@@ -37,19 +32,45 @@ The **Lighthouse** tool was previously called the **Audits** tool.  "Audits pane
 
 *  You should have basic web development experience, similar to what is taught in this [Introduction to Web Development class](https://www.coursera.org/learn/web-development#syllabus).
 
+* Install [Visual Studio Code](https://code.visualstudio.com) to edit source code.
+
+* Install [Node.js](https://nodejs.org) to use it as a local web server.
+
 *  You don't need to know anything about load performance.  You learn about load performance in this tutorial.
 
 
 <!-- ====================================================================== -->
 ## Introduction
 
-This is Tony.  Tony is very famous in cat society.  He has built a website so that his fans can learn about his favorite foods.  His fans love the site, but Tony keeps hearing complaints that the site loads slowly.  Tony has asked you to help him speed the site up.
+In this tutorial, you will improve the performance of [Margie's travel](https://microsoftedge.github.io/Demos/travel-site/), a fictitious travel website that contains travel images, text descriptions, a few JavaScript-based user interactions, and an interactive map.
 
-![Tony the cat](../media/speed-tony.msft.png)
+The source files for the website are at [MicrosoftEdge / Demos > travel-site](https://github.com/MicrosoftEdge/Demos/tree/main/travel-site). 
 
 
 <!-- ====================================================================== -->
-## Step 1: Audit the site
+## Step 1: Setup the website locally
+
+First, set up the website locally so that you can make changes to it later:
+
+1. Get the website's source code locally: [Download or clone the Demos repo](../sample-code/sample-code.md#download-or-clone-the-demos-repo).
+
+1. Open the folder you just downloaded or cloned in Visual Studio Code.
+
+1. In Visual Studio Code, click **View** > **Terminal** or press `Ctrl` + `` ` ``.
+
+   Visual Studio Code displays the source files in the **Explorer** sidebar, and the **Terminal**:
+
+   ![VS Code, now setup with the source code](./images/vscode-setup.png)
+
+1. In the terminal, type `npx http-server` to start a local web server.
+
+1. In Microsoft Edge, go to http://localhost:8080/travel-site to open the website:
+
+   ![The travel website demo in Microsoft Edge](./images/travel-site.png)
+
+
+<!-- ====================================================================== -->
+## Step 2: Audit the site
 
 Whenever you set out to improve the load performance of a site, always start with an audit.
 
@@ -59,109 +80,98 @@ The audit has two important functions:
 
 *  It gives you **actionable tips** on what changes have the most impact.
 
-### Setup
-
-First, you must set up the site so that you can make changes to it later.
-
-1. [Open the source code for the site](https://glitch.com/edit/#!/tony).  This tab is referred to as the **editor tab**.
-
-   ![The editor tab](../media/speed-glitch-tony-server-js.msft.png)
-
-1. Click **tony**.  A menu appears.
-
-   ![The menu that appears after clicking 'tony'](../media/speed-glitch-tony-server-js-remix-project.msft.png)
-
-1. Click **Remix Project**.  The name of the project changes from **tony** to a randomly generated name.  You now have your own editable copy of the code.  Later on, you can make changes to this code.
-
-1. Click **Show** and then select **In a New Window**.  The demo opens in a new tab.  This tab is be referred to as the **demo tab**.  It may take a while for the site to load.
-
-   ![The demo tab](../media/speed-glitch-tony-show-live.msft.png)
-
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens alongside the rendered demo webpage.
-
-   ![DevTools and the demo](../media/speed-glitch-tony-show-live-console.msft.png)
-
-For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.  Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, type `Undock`, and then select **Undock into separate window**.
-
-![DevTools undocked into a separate window](../media/speed-console.msft.png)
-
-### Establish a baseline
+#### Establish a baseline
 
 The baseline is a record of how the site performed before you made any performance improvements.
 
-1. Select the **Lighthouse** tool.  It might be hidden behind the **More tools** (![More tools](../media/more-panels-icon.msft.png)) button.
+1. In Microsoft Edge, open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-   ![The Lighthouse tool](../media/speed-audits-performance.msft.png)
+1. Open the **Lighthouse** tool.  It might be hidden behind the **More tools** (![More tools](../media/more-tools-icon-light-theme.png)) button.
+
+   ![The Lighthouse tool](./images/lighthouse-tool.png)
 
    <!--todo: add link to Lighthouse when section is available  -->
    <!-- /web/tools/lighthouse  -->
 
-1. Match your audit configuration settings to those in the previous figure.  Here is an explanation of the different options:
+1. Only keep the **Performance** category selected and clear all other categories. And keep all other options set by default. Here is an explanation of the different options:
 
-   *  **Device**.  Set to **Mobile** changes the user agent string and simulates a mobile viewport.  Set to **Desktop** pretty much just turns off the **Mobile** changes.
+   *  **Mode**: set to **Navigation (default)** to run tests when the webpage loads, set to **Timespan** to run tests during a given period of time, or set to **Snapshot** to run tests on the webpage as it appears now.
 
-   *  **Audits**.  Turn off a category to prevent the **Audits** panel from running those audits, and excludes those audits from your report.  Leave the other categories Turned on, if you want to display the types of recommendations that are provided.  Turn off categories to slightly speed up the auditing process.
+   *  **Device**: set to **Mobile** to simulate a mobile user agent string and a mobile viewport, or set to **Desktop** to test the webpage without any simulation.
 
-   *  **Throttling**.  Set to **Simulated Slow 4G, 4x CPU Slowdown** simulates the typical conditions of browsing on a mobile device.  It is named "simulated" because the **Audits** panel doesn't actually throttle during the auditing process.  Instead, it just extrapolates how long the page takes to load under mobile conditions.  The **Applied...** setting, on the other hand, actually throttles your CPU and network, with the tradeoff of a longer auditing process.
+   *  **Categories**: allows to only run a subset of the tests available in **Lighthouse**.
 
-   *  **Clear Storage**.  Turn on the checkbox to clear all storage associated with the page before every audit.  Leave this setting on if you want to audit how first-time visitors experience your site.  Turn off this setting when you want the repeat-visit experience.
+1. Click **Analyze page load**.  After 10 to 30 seconds, a report of the performance of the site is displayed:
 
-1. Click **Run Audits**.  After 10 to 30 seconds, the **Audits** panel displays a report of the performance of the site.
-
-   ![The report for the Audits panel of the performance of the site](../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png)
+   ![The report for the Lighthouse tool about the performance of the site](./images/lighthouse-report.png)
 
 #### Handling report errors
 
-If you ever get an error in your Audits panel report, try running the demo tab from an **InPrivate** window with no other tabs open.  This ensures that you are running Microsoft Edge from a clean state.  Microsoft Edge Extensions in particular often interfere with the auditing process.
+If you ever get an error in your **Lighthouse** report, try running the tool again from an **InPrivate** window with no other tabs open.  This ensures that you are running Microsoft Edge from a clean state.  Microsoft Edge Extensions in particular often interfere with the auditing process.
 
-<!--todo: add screen capture for error in audit -->
-<!--
-![A report that errored out](../media/speed-.msft.png)
--->
+![An error at the top of the Lighthouse report](./images/lighthouse-error.png)
 
-### Understand your report
+To open an **InPrivate** window:
 
-The number at the top of your report is the overall performance score for the site.  Later, as you make changes to the code, the number displayed should rise.  A higher score means better performance.
+1. Click the **Settings and more** (**...**) button in the top toolbar of Microsoft Edge.
 
-![The overall performance score](../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png)
+1. Click **New InPrivate window**.
 
-The **Metrics** section provides quantitative measurements of the performance of the site.  Each metric provides insight into a different aspect of the performance.  For example, **First Contentful Paint** tells you when content is first painted to the screen, which is an important milestone in the user's perception of the page load, whereas **Time To Interactive** marks the point at which the page appears ready enough to handle user interactions.
+1. Establish a new baseline in **Lighthouse**:
 
-![The Metrics section](../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png)
+   ![The report for the Lighthouse tool about the performance of the site in a InPrivate window](./images/private-lighthouse-report.png)
 
-Click the highlighted toggle button in the following figure to display a description for each metric.  Then click **Learn More** to read documentation about it.
+#### Understand your report
 
-![Click the highlighted toggle button to expand the Metrics items](../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png)
+###### Overall performance score
 
-Below Metrics is a collection of screenshots that show you how the page looked as it loaded.
+The number at the top of your report is the overall performance score for the webpage.  Later, as you make changes to the code, the number displayed should rise.  A higher score means better performance.
 
-![How the page looked while loading](../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png)
+![The overall performance score](./images/overall-score.png)
 
-The **Opportunities** section provides specific tips on how to improve the load performance of this specific page.
+###### Metrics
 
-![The Opportunities section](../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png)
+The **Metrics** section provides quantitative measurements of the performance of the webpage.  Each metric provides insight into a different aspect of the performance.  For example, **First Contentful Paint** tells you when content is first painted to the screen, which is an important milestone in the user's perception of the page load, whereas **Time To Interactive** marks the point at which the page appears ready enough to handle user interactions.
 
-Click an opportunity to learn more about it.
+![The Metrics section](./images/metrics-section.png)
 
-![Eliminate render-blocking resources opportunity](../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png)
+Click **Expand view** to display a description for each metric.  Then click **Learn More** to read documentation about it.
 
-Click **Learn More** to display documentation about why an opportunity is important, and specific recommendations on how to fix it.
+![The expanded metrics section](./images/metrics-learn-more.png)
 
-![Documentation for the Eliminate render-blocking resources opportunity](../media/speed-web-dev-performance-audits.msft.png)
+###### Screenshots
 
-The **Diagnostics** section provides more information about factors that contribute to the load time of the page.
+Below the **Metrics** section is a collection of screenshots that show you how the page looked as it loaded.
 
-![The Diagnostics section](../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png)
+![Series of screenshots showing how the page looked while loading](./images/report-screenshots.png)
 
-The **Passed Audits** section shows you what the site is doing correctly.  Click to expand the section.
+###### Opportunities
 
-![The Passed Audits section](../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png)
+The **Opportunities** section provides specific tips on how to improve the load performance of this specific webpage:
+
+![The Opportunities section](./images/opportunities-section.png)
+
+Click an opportunity to display more information about it, and then click **Learn more** to read documentation about why an opportunity is important, and specific recommendations on how to fix it:
+
+![An expanded opportunity, with more information, and a learn more link](./images/expanded-opportunity.png)
+
+###### Diagnostics
+
+The **Diagnostics** section provides more information about factors that contribute to the load time of the page:
+
+![The Diagnostics section](./images/diagnostics-section.png)
+
+###### Passed audits
+
+The **Passed audits** section shows you what the site is doing correctly.  Click **Show** to expand the section:
+
+![The Passed Audits section](./images/passed-audits-section.png)
 
 
 <!-- ====================================================================== -->
-## Step 2: Experiment
+## Step 3: Experiment
 
-The Opportunities section of your audit report gives you tips on how to improve the performance of the page.  In this section, you implement the recommended changes to the codebase, auditing the site after each change to measure how it affects site speed.
+The **Opportunities** section of your report gives you tips on how to improve the performance of the webpage.  In this section, you implement the recommended changes to the codebase, auditing the site again after each change to measure how it affects site speed.
 
 ### Enable text compression
 
