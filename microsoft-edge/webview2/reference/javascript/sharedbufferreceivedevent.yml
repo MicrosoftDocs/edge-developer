@@ -13,7 +13,7 @@ remarks: >-
 
   The following example sends data to script for one-time, read-only consumption.
 
-  First, in the native host app code, set data into the shared memory:
+  "First, in the native host app code, set data into the shared memory:"
 
   ```cpp
   wil::com_ptr<ICoreWebView2ExperimentalEnvironment10> environment;
@@ -44,7 +44,7 @@ remarks: >-
   ```
 
   In the HTML document, subscribe to and handle sharedbufferreceived event.Next, in the HTML document, subscribe to and
-  then handle the `sharedbufferreceived` event:
+  "then handle the `sharedbufferreceived` event:"
 
   ```html
   window.chrome.webview.addEventListener("sharedbufferreceived", e => {
