@@ -1414,6 +1414,27 @@
                   href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
 
+            - name: JavaScript
+              uid: WebView2Script!
+              displayName: 
+              items:
+                - name: HostObjectAsyncProxy
+                  uid: 'WebView2Script!HostObjectAsyncProxy:class'
+                - name: HostObjectAsyncProxyBase
+                  uid: 'WebView2Script!HostObjectAsyncProxyBase:class'
+                - name: HostObjectsAsyncRoot
+                  uid: 'WebView2Script!HostObjectsAsyncRoot:class'
+                - name: HostObjectsOptions
+                  uid: 'WebView2Script!HostObjectsOptions:class'
+                - name: HostObjectsSyncRoot
+                  uid: 'WebView2Script!HostObjectsSyncRoot:class'
+                - name: HostObjectSyncProxy
+                  uid: 'WebView2Script!HostObjectSyncProxy:class'
+                - name: SharedBufferReceivedEvent
+                  uid: 'WebView2Script!SharedBufferReceivedEvent:class'
+                - name: WebView
+                  uid: 'WebView2Script!WebView:class'
+
         - name: Contact the WebView2 Team
           href: webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
