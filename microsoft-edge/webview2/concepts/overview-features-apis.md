@@ -1486,7 +1486,9 @@ Spatial input (mouse, touch, pen) is received by the application and must be sen
 <!-- ------------------------------ -->
 #### Drag and drop
 
-Dragging from WebView2 to another application is supported by default. However, dropping into WebView2 (Which includes drag/drop operations within WebView2 itself) requires forwarding IDropTarget events the host application receives from the system to WebView2 using the APIs below.
+Dragging from a WebView2 control to another application is supported by default. However, dragging _to_ a WebView2 control requires that when the host app receives an `IDropTarget` event from the system, the host app must forward the event to the WebView2 control.  Dragging to a WebView2 control includes drag-and-drop operations that are entirely within a WebView2 control.
+
+Use the following APIs to forward `IDropTarget` events from the system to the WebView2 control.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
