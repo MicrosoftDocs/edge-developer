@@ -6,8 +6,7 @@ fullName: SharedBufferReceivedEvent
 summary: >-
   Event object for the `chrome.webview.sharedbufferreceived` event. This event is dispatched when
   `CoreWebView2.PostSharedBufferToScript` is successfully called.
-remarks: >-
-
+remarks: |-
 
   #### Examples
 
@@ -43,8 +42,9 @@ remarks: >-
   sharedBuffer->Close();
   ```
 
-  In the HTML document, subscribe to and handle sharedbufferreceived event.Next, in the HTML document, subscribe to and
-  then handle the `sharedbufferreceived` event:
+  In the HTML document, subscribe to and handle sharedbufferreceived event.
+  
+  Next, in the HTML document, subscribe to and then handle the `sharedbufferreceived` event:
 
   ```html
   window.chrome.webview.addEventListener("sharedbufferreceived", e => {
