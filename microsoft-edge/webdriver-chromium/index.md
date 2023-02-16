@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 05/17/2022
+ms.date: 02/02/2023
 ---
 # Use WebDriver to automate Microsoft Edge
 
