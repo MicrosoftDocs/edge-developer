@@ -50,7 +50,7 @@ Release Date: February 15, 2023
 
 [NuGet package for WebView2 SDK 1.0.1587.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1587.40)
 
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 110.1587.40 or higher. 
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 110.1587.40 or higher.
 
 ### General
 
@@ -91,15 +91,15 @@ The following items are now stable.
 <!-- ====================================================================== -->
 ## 1.0.1671-prerelease
 
-Release Date: February 15, 2023  
+Release Date: February 15, 2023
 
 [NuGet package for WebView2 SDK 1.0.1671-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1671-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 112.0.1671.0 or higher. 
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 112.0.1671.0 or higher.
 
 ### General
 
-#### Experimental features 
+#### Experimental features
 
 *  Added support for the Experimental File API:
 
@@ -161,7 +161,7 @@ The following APIs are promoted to stable in this prerelease SDK.
    * [CoreWebView2Frame.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postsharedbuffertoscript?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
 * [CoreWebView2SharedBuffer Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
    * [CoreWebView2SharedBuffer.Buffer Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.buffer?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
-   * [CoreWebView2SharedBuffer.FileMappingHandle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.filemappinghandle?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)<!--todo: n/a, omit link?-->
+   * [CoreWebView2SharedBuffer.FileMappingHandle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.filemappinghandle?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
    * [CoreWebView2SharedBuffer.Size Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.size?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
    * [CoreWebView2SharedBuffer.Close Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.close?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
    * [CoreWebView2SharedBuffer.OpenStream Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.openstream?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
@@ -211,13 +211,6 @@ The following APIs are promoted to stable in this prerelease SDK.
    * [CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.getnondefaultpermissionsettingsasync?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
    * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
 
-<!-- todo: which non-win32 methods have "async"? -->
-
-<!-- todo: n/a for .net?
-* [CoreWebView2PermissionSettingCollectionView Class](#)
-   * [CoreWebView2PermissionSettingCollectionView.GetValueAtIndex Method](#)
-   * [CoreWebView2PermissionSettingCollectionView.Count Property](#) -->
-
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2ControllerOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.1671-prerelease&preserve-view=true)
@@ -257,7 +250,7 @@ The following APIs are promoted to stable in this prerelease SDK.
 *  Fixed a bug where `System.ArgumentException` was thrown when a call to the `HostObject` method returns a non-generic task.  ([Issue #2787](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2787))
 *  Fixed an issue in the `SharedBuffer` API where the stream object didn't work well with `StreamWriter`. (Runtime) ([Issue #3108](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3108))
 *  DOM speech-synthesis APIs, such as `SpeechSynthesis.getVoices()`, will now work in UWP apps. (Runtime)
-*  Fixed a crash that occurred on frame destruction. (Runtime) ([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))   
+*  Fixed a crash that occurred on frame destruction. (Runtime) ([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))
 *  Fixed a bug where the app crashes when trying to call `CreateWebResourceResponse` with a `null` `reason` phrase. (Runtime)
 *  The `CoreWebView2.AddHostObjectToScript` option `chrome.webview.hostObjects.options.ignoreMemberNotFoundError` now works in non-English locales. (Runtime)
 *  Fully enabled **Open file** dialog support for elevated apps on Windows 7.
@@ -361,7 +354,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ### General
 
-#### Experimental features 
+#### Experimental features
 
 *  Added support for the Permission management API:
 
@@ -499,7 +492,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 ---
 
 #### Bug fixes
- 
+
 *  Disabled **Open link as Profile** in the WebView2 context menu.
 *  Fixed post data missing in form submit with Ctrl-click. ([Issue #2652](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2652))
 *  Fixed a bug where the user is not able to get the custom context menu on PDF Viewer. ([Issue #2607](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2607))
