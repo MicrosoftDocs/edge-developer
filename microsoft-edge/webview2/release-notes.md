@@ -105,15 +105,15 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2ExperimentalFile Class](/dotnet/api/microsoft.web.webview2.core.corewebview2experimentalfile?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
-   * [CoreWebView2ExperimentalFile.Path Property](/dotnet/api/microsoft.web.webview2.core.corewebview2experimentalfile.path?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
-* [CoreWebView2ExperimentalWebMessageReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2experimentalwebmessagereceivedeventargs?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
+* [CoreWebView2File Class](/dotnet/api/microsoft.web.webview2.core.corewebview2file?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
+   * [CoreWebView2File.Path Property](/dotnet/api/microsoft.web.webview2.core.corewebview2file.path?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
+* [CoreWebView2WebMessageReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2ExperimentalFile Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2experimentalfile?view=webview2-winrt-1.0.1671-prerelease&preserve-view=true)
-   * [CoreWebView2ExperimentalFile.Path Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2experimentalfile?view=webview2-winrt-1.0.1671-prerelease&preserve-view=true#path)
-* [CoreWebView2ExperimentalWebMessageReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2experimentalwebmessagereceivedeventargs?view=webview2-winrt-1.0.1671-prerelease&preserve-view=true)
+* [CoreWebView2File Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file?view=webview2-winrt-1.0.1671-prerelease&preserve-view=true)
+   * [CoreWebView2File.Path Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file?view=webview2-winrt-1.0.1671-prerelease&preserve-view=true#path)
+* [CoreWebView2WebMessageReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webmessagereceivedeventargs?view=webview2-winrt-1.0.1671-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -127,15 +127,11 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2ExperimentalObjectCollectionView Class](/dotnet/api/microsoft.web.webview2.core.corewebview2experimentalobjectcollectionview?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
-   * [CoreWebView2ExperimentalObjectCollectionView.Count Property](/dotnet/api/microsoft.web.webview2.core.corewebview2experimentalobjectcollectionview.count?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
-   * [CoreWebView2ExperimentalObjectCollectionView.GetValueAtIndex Method](/dotnet/api/microsoft.web.webview2.core.corewebview2experimentalobjectcollectionview.getvalueatindex?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
+n/a
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2ExperimentalObjectCollectionView Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2experimentalobjectcollectionview?view=webview2-winrt-1.0.1671-prerelease&preserve-view=true)
-   * [CoreWebView2ExperimentalObjectCollectionView.Count Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2experimentalobjectcollectionview?view=webview2-winrt-1.0.1671-prerelease&preserve-view=true#count)
-   * [CoreWebView2ExperimentalObjectCollectionView.GetValueAtIndex Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2experimentalobjectcollectionview?view=webview2-winrt-1.0.1671-prerelease&preserve-view=true#getvalueatindex)
+n/a
 
 ##### [Win32/C++](#tab/win32cpp)
 
