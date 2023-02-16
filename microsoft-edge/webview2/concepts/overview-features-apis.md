@@ -1483,6 +1483,35 @@ Spatial input (mouse, touch, pen) is received by the application and must be sen
 
 ---
 
+
+<!-- ------------------------------ -->
+#### Drag and drop
+
+Dragging from a WebView2 control to another application is supported by default. However, dragging _to_ a WebView2 control requires that when the host app receives an `IDropTarget` event from the system, the host app must forward the event to the WebView2 control.  Dragging to a WebView2 control includes drag-and-drop operations that are entirely within a WebView2 control.
+
+Use the following APIs to forward `IDropTarget` events from the system to the WebView2 control.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2CompositionController.DragLeave Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.dragleave)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2CompositionController.DragLeave Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#dragleave)
+* [ICoreWebView2CompositionControllerInterop2.DragEnter Method](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2#dragenter)
+* [ICoreWebView2CompositionControllerInterop2.DragLeave Method](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2#dragleave)
+* [ICoreWebView2CompositionControllerInterop2.DragOver Method](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2#dragover)
+* [ICoreWebView2CompositionControllerInterop2.Drop Method](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2#drop)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionController3::DragEnter method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3#dragenter)
+* [ICoreWebView2CompositionController3::DragLeave method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3#dragleave)
+* [ICoreWebView2CompositionController3::DragOver method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3#dragover)
+* [ICoreWebView2CompositionController3::Drop method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3#drop)
+
+---
+
 <!-- ------------------------------ -->
 #### Accessibility
 
