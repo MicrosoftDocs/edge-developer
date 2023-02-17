@@ -203,7 +203,7 @@ async void PrintToDefaultPrinter(object sender, RoutedEventArgs e)
 
   try
   {
-    // Prints the current webpage by using the default printer settings and page settings.
+    // Prints the current webpage by using the default printer and page settings.
     // Passing null for PrintSettings causes the default print settings to be used.
     CoreWebView2PrintStatus printStatus = await WebView2.CoreWebView2.PrintAsync(null);
 
