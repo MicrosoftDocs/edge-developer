@@ -219,7 +219,7 @@ The change has an important effect on the overall performance score. To verify h
 
 Now, only 469KB of data needs to be transferred for the images to appear on the webpage.
 
-###### Resizing images in the real world
+###### Automatically resize images
 
 For a small app, doing a one-off resize like this might be good enough.  But for a large app, this isn't scalable.  Here are some strategies for managing images in large apps:
 
@@ -233,87 +233,145 @@ For a small app, doing a one-off resize like this might be good enough.  But for
 
 Optimization is when you run an image through a special program that reduces the size of the image file.  For more tips, see [Essential Image Optimization](https://images.guide).
 
+#### Reduce unused JavaScript
 
+Your latest **Lighthouse** report says that the webpage contains unused JavaScript code and that loading this code only when required would decrease the amount of data transferred when the page loads.
 
-TODO: CONTINUE FROM HERE.
+Click **Reduce unused JavaScript** to reveal the JavaScript files that contain the most unused code:
 
+![The Lighthouse opportunity section showing the unused JS message](./images/unused-javascript-opportunity.png)
 
+The reported JavaScript files are from the `www.bing.com` domain which means the unused code comes from the Bing Map component used on the webpage. Scroll down on the Margie's travel demo website to see the map:
+
+![The map component on the demo website](./images/travel-site-map-component.png)
+
+To confirm the amount of unused code and possibly find other resources that are unused, use the **Coverage** tool:
+
+1. In DevTools, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage** in the list.
+
+    ![The Command Menu in DevTools, showing the Show Coverage command](./images/command-menu-coverage.png)
+
+1. In the **Coverage** tool, click **Start instrumenting coverage and refresh the page** (![Refresh icon](../media/reload-icon.msft.png)). The **Coverage** tool provides an overview of how much of the JavaScript and CSS code loaded on the page is actually used.
+
+    ![The Coverage tool, in the Drawer panel, showing the report of how much code is unused](./images/coverage-report.png)
+
+The coverage report confirms that the Bing Map dependencies contain code that's unused when the page loads. The map on the demo website is not visible when the page first loads so it is a good opportunity to not load the Bing Map files until the map is visible to the user.
+
+To do this, you will use the Intersection Observer API which provides a way to observe changes in the intersection of a target element with the webpage's viewport. To learn more, see [Intersection Observer API](https://developer.mozilla.org/docs/Web/API/Intersection_Observer_API) at MDN.
+
+1. In Visual Studio Code, open the `travel-site/index.html` file and scroll down to the bottom of the file. The Bing Map API is loaded by using a `<script>` tag:
+
+    ![VS Code, showing the index.html code and the Bing map script tag](./images/bing-map-script.png)
+
+    Below this line is another line that's responsible for configuring and loading the map in the right place: `<script src="assets/map.js"></script>`
+
+1. Delete these two lines (183, and 184), and add this new line instead: `<script src="assets/map-on-demand.js"></script>`.
+
+    ![VS Code, showing the index.html code and the new on-demand map script tag](./images/bing-map-on-demand-script.png)
+
+1. Open the `/travel-site/assets/map-on-demand.js` file in Visual Studio Code and read through the code to understand how the Bing Map component is now loaded and initialized. Below is snippet from the code and it description:
+
+    ```javascript
+    const MAP_CONTAINER_EL = document.querySelector('.place-discover-map');
+
+    const mapElIntersectionObserver = new IntersectionObserver(loadMapOnDemand);
+    mapElIntersectionObserver.observe(MAP_CONTAINER_EL);
+ 
+    let map = null;
+   
+    function loadMapOnDemand(entries) {
+       if (map) {
+         return;
+       }
+   
+       if (!entries.some(entry => entry.isIntersecting)) {
+         return;
+       }
+   
+       const script = document.createElement('script');
+       script.type = 'text/javascript';
+       script.src = 'https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ap_eazGgpq5468v9MXr7Wu0zh30LQActgaT-tI_QxZQSm-Bd5qJxVKs_2B7NsqR4';
+       document.body.appendChild(script);
+    }
+
+    function GetMap() { /* ... */ }
+    ```
+
+    The code initializes the `mapElIntersectionObserver` variable to a new IntersectionObserver object. This observer is then set to observe the `MAP_CONTAINER_EL` element which is the element on the page that's meant to contain the map.
+
+    As the user scrolls, the observer's `loadMapOnDemand` callback function is executed. This function returns immediately if the map has already been initialized, or if the map container element does not intersect the current viewport.
+
+    If the user scrolls to a point where the map container element becomes visible in the viewport, and if the map has not been initialized yet, a new `script` element is created and inserted into the page. The script's `src` attribute is set to load the Bing Map API.
+
+    The rest of the `map-on-demand.js` file is the same as the `map.js` file. As soon as the Bing Map API is loaded, the `GetMap` function is called and the map is configured and displayed in the container element.
+
+1. Save your changes in Visual Studio Code, then refresh the webpage in Microsoft Edge, and run a new audit in the **Lighthouse** tool to see how your changes affect the load performance:
+
+    ![The Lighthouse tool report showing a better score after the changes](./images/lighthouse-report-without-map.png)
+
+    By resizing big images and removing unused JavaScript, your **Lighthouse** score went from 47 to 79.
 
 #### Eliminate render-blocking resources
 
-Your latest report says that eliminating render-blocking resources is now the biggest opportunity.
+The next opportunity displayed in the **Opportunities** section of the **Lighthouse** tool is related to eliminating render-blocking resources.
 
-A render-blocking resource is an external JavaScript or CSS file that the browser must download, parse, and run before it displays the page.  The goal is to only run the core CSS and JavaScript code that is required to display the page properly.
+A render-blocking resource is an external JavaScript or CSS file that the browser must download, parse, and run before it displays the page. The more render-resources need to be processed when a webpage loads, the longer it will take for this webpage to start appearing in the browser. The goal is, therefore, to only run the core CSS and JavaScript code that is required to display the initial state of the page properly.
 
 The first task, then, is to find code that you don't need to run on page load.
 
-1. Click **Eliminate render-blocking resources** to display the resources that are blocking: `lodash.js` and `jquery.js`.
+1. Click **Eliminate render-blocking resources** to display the resources that are blocking:
 
-   ![More information about the Eliminate render-blocking resources opportunity](../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png)
+   ![More information about the Eliminate render-blocking resources opportunity](./images/render-blocking-css.png)
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage**.
+    **Lighthouse** displays a list of the stylesheets that the demo webpage uses, such as: `base.css`, `home.css`, `map.css`, and `carousel.css`.
 
-   ![Open the Command Menu from the Audits panel](../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png)
+1. Open the **Coverage** tool again: press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS), type `Coverage`, and then select **Show Coverage**.
 
-   ![The Coverage tool](../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png)
+1. Click **Start instrumenting coverage and refresh the page** (![Refresh icon](../media/reload-icon.msft.png)) to display the coverage report, and then type `css` in the **URL filter** field to only display the CSS files:
 
-1. Click **Refresh** (![Refresh](../media/reload-icon.msft.png)).  The **Coverage** tool provides an overview of how much of the code in `bundle.js`, `jquery.js`, and `lodash.js` runs while the page loads.  In the figure after the following, about 76% and 30% of the jQuery and Lodash files aren't used, respectively.
+   ![The new Coverage report, now showing the CSS files](./images/coverage-report-css.png)
 
-   ![The Coverage report](../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png)
+    The report shows that the `contact-form.css` and `gallery.css` files are not used at all. They both have 100% of unused bytes.
 
-1. Click the `jquery.js` row.  DevTools opens the file in the **Sources** tool.  If a line of code ran, a blue bar appears next to it.  A red bar means the line of code was not run, and is definitely not needed on load of the webpage.
+1. Click the `contact-form.css` file in the report.  DevTools opens the file in the **Sources** tool.  If a line of code ran, a blue bar appears next to it.  A red bar means the line of code was not run, and is definitely not needed on load of the webpage.
 
-   ![Viewing the jQuery file in the Sources tool](../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png)
+   ![The contact-form.css file in the Sources tool, with red bars next to the unused lines](./images/unused-css-source.png)
 
-1. Scroll through the jQuery code.  Some of the lines that run are actually just comments.  To strip comments and reduce the size of the file, run the code through a minifier app or script.
+   Only red bars are displayed in this source file, which means that none of its lines of code are needed. 
 
-In short, when you're working with your own code, the **Coverage** tool helps you analyze your code, line-by-line, and only ship the code that's needed for page load.
+Now, remove the references to these files from the code:
 
-Are the `jquery.js` and `lodash.js` files even needed to load the page?  The **Request blocking** tool shows what happens when resources aren't available:
+1. In Visual Studio Code, open the `/travel-site/index.html` file.
 
-1. Select the **Network** tool.
+1. Near the top of the file, find the list of `<link>` tags that are used to load the stylesheets on the page.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu again.
+1. Delete the two lines of code that are used to load the `contact-form.css` and `gallery.css` files:
 
-1. Start typing `blocking`, and then select **Show Request Blocking**.
+    ![VS Code, with the index.html opened, showing where the two link tags are](./images/delete-unused-css.png)
 
-   ![The Request blocking tool](../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png)
+1. Save your changes in Visual Studio Code, then refresh the webpage in Microsoft Edge, and run a new audit in the **Lighthouse** tool again to see how your changes affect the load performance.
 
-1. Click **Add Pattern** (![Add Pattern](../media/add-pattern-icon.msft.png)), type `/libs/*`, and then press `Enter` to confirm.
+###### Automatically remove non-critical CSS
 
-   ![Add a pattern to block any request to the libs directory](../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png)
+In the previous step, your score improved a little bit but **Lighthouse** still flags other CSS files as blocking the initial render of the page.
 
-1. Refresh the page.  The jQuery and Lodash requests are red, meaning that the requests were blocked.   The page still loads and is interactive, so it looks like these resources aren't needed whatsoever!
+The remaining CSS files are used on the webpage and can't be removed, but it is possible to split them in two groups:
 
-   ![The Network panel shows that the requests have been blocked](../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png)
+* Critical CSS code that need to block the rendering of the webpage because they visually impact the style and layout of the part of the webpage that users see when it loads.
 
-1. Click **Remove all patterns** (![Remove all patterns](../media/remove-icon.msft.png)) to delete the `/libs/*` blocking pattern.
+    For example, the `header h1` CSS rule in the `/travel-site/assets/base.css` file is needed for the webpage's title to appear correctly.
 
-In general, the **Request blocking** tool is useful for simulating how your page behaves when any given resource isn't available.
+* Non-critical CSS code used to render parts of the page that are not visible when the page loads.
 
-Now, remove the references to these files from the code and audit the page again:
+    For example, the `/travel-site/assets/desktop.css` file is only needed when the viewport is larger than `665px`.
 
-1. Back in the editor tab, open `template.html`.
+To automatically split your CSS code this way, you can use the Critical tool. To learn more, see the [Critical project repository](https://github.com/addyosmani/critical) at GitHub.
 
-1. Delete `<script src="/libs/lodash.js">` and `<script src="/libs/jquery.js"></script>`.
+You can then load your non-critical CSS code in a way to doesn't block the initial render of the page. To learn more, see [Defer non-critical CSS](https://web.dev/defer-non-critical-css/) at web.dev.
 
-1. Wait for the site to re-build and re-deploy.
+It is also a good to minify your CSS code and remove unneeded whitespace characters and comments. To learn more, see [Minify CSS](https://web.dev/minify-css/) at web.dev.
 
-1. Audit the page again from the **Audits** tool.  Your overall score should have improved again.
-
-   ![An Audits report after removing the render-blocking resources](../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png)
-
-#### Optimizing the Critical Rendering Path in the real-world
-
-The **Critical Rendering Path** refers to the code that you need to load a page.  In general, speed up page load by only shipping critical code during the page load, and then lazy-loading everything else.
-
-<!-- [Critical Rendering Path](/web/fundamentals/performance/critical-rendering-path/) -->
-
-*  It's unlikely that you can find scripts that you can remove outright, but you might find many scripts that you don't need to request during the page load, which can instead be requested asynchronously.  <!-- See [Using async or defer](/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer). -->
-
-*  If you're using a framework, check whether it has a production mode.  This production mode might use a feature such as [tree shaking](https://webpack.js.org/guides/tree-shaking) in order to eliminate unnecessary code that's blocking the critical render.
-
-### Do less main thread work
+#### Do less main thread work
 
 Your latest report shows some minor potential savings in the Opportunities section, but if you look down in the Diagnostics section, it looks like the biggest bottleneck is too much main thread activity.
 
@@ -388,7 +446,7 @@ Looks like that last change caused a massive jump in performance!
 
 This section provided a rather brief introduction to the Performance tool.  To learn more about how to analyze page performance, see [Performance features reference)](../evaluate-performance/reference.md).
 
-#### Doing less main thread work in the real world
+###### Doing less main thread work in the real world
 
 The **Performance** tool is the most common way to understand what activity your site does as it loads, and to find ways to remove unnecessary activity.
 
