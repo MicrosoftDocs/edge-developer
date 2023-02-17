@@ -634,7 +634,7 @@ async void PrintToPdfCmdExecuted(object target, ExecutedRoutedEventArgs e)
     Microsoft.Win32.SaveFileDialog saveFileDialog =
         new Microsoft.Win32.SaveFileDialog();
     saveFileDialog.InitialDirectory = "C:\\";
-    saveFileDialog.Filter = "Pdf Files|*.pdf";
+    saveFileDialog.Filter = "PDF Files|*.pdf";
     Nullable<bool> result = saveFileDialog.ShowDialog();
     if (result == true) {
         _isPrintToPdfInProgress = true;
