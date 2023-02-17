@@ -166,7 +166,7 @@ async void PrintToDefaultPrinter ()
   string title = webView.CoreWebView2.DocumentTitle;
   try
   {
-    // Prints the current webpage, using the default printer settings and page settings.
+    // Prints the current webpage, using the default printer and page settings.
     // Passing null for PrintSettings causes the default print settings to be used.
     CoreWebView2PrintStatus printStatus = await webView.CoreWebView2.PrintAsync(null);
 
