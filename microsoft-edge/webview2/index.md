@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
-ms.date: 11/12/2021
+ms.date: 02/23/2023
 ---
 # Introduction to Microsoft Edge WebView2
 
@@ -62,6 +62,42 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 *  **Fixed Version distribution**.  Optionally package a specific version of the Chromium bits in your app.
 
 *  **Incremental adoption**.  Add web components piece-by-piece to your app.
+
+
+<!-- ====================================================================== -->
+## The WebView2 control, SDK, and Runtime
+
+The WebView2 control, WebView2 SDK, and WebView2 Runtime are related as follows.
+
+![Diagram: Relationship between the WebView2 control, SDK, and Runtime](wv2-control-sdk-runtime-diagram.png)
+
+Boundary: Dev machine vs. user machine.
+
+How the WebView2 SDK is laid out in relation to how the WebView2 RunTime is laid out.
+
+Note any differences for Runtime & SDK across the frameworks/platforms/languages.
+
+
+See also:
+* [Understanding the options at the Runtime download page](./concepts/distribution.md#understanding-the-options-at-the-runtime-download-page) in _Distribute your app and the WebView2 Runtime_.
+
+
+<!-- ====================================================================== -->
+## Setup for Dev machine
+
+<!-- todo -->
+
+See also:
+* [Set up your Dev environment for WebView2](./how-to/machine-setup.md)
+
+
+<!-- ====================================================================== -->
+## Setup for User machines
+
+<!-- todo -->
+
+See also:
+* [Set up your Dev environment for WebView2](./how-to/machine-setup.md)
 
 
 <!-- ====================================================================== -->
