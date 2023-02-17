@@ -74,7 +74,7 @@ void ShowPrintUI(object target, ExecutedRoutedEventArgs e)
   }
   else
   {
-    // Opens the system's Print dialog.
+    // Opens a system's Print dialog.
     webView.CoreWebView2.ShowPrintUI(CoreWebView2PrintDialogKind.System);
   }
 }
@@ -328,7 +328,7 @@ async void PrintToPrinter()
 }
 
 // Gets the printer name by displaying the list of installed printers to the user and
-// return the name of the user's selected printer.
+// returns the name of the user's selected printer.
 string GetPrinterName()
 {
   // Use GetPrintQueues() of LocalPrintServer from System.Printing to get the list of locally installed printers.
@@ -348,7 +348,7 @@ CoreWebView2PrintSettings GetSelectedPrinterPrintSettings(string printerName)
 
   return printSettings;
 
-  // or, you can do the following:
+  // or
   // Get PrintQueue for the selected printer and use GetPrintCapabilities() of PrintQueue from System.Printing
   // to get the capabilities of the selected printer.
   // Display the printer capabilities to the user along with the page settings.
@@ -408,7 +408,7 @@ string GetPrinterName()
   // Use DeviceInformation.FindAllAsync to get the list of local printers with AQS as:
   // System.Devices.HardwareIds:~~"PRINTENUM\LocalPrintQueue"
   // Display the list of printers to the user, and get the desired printer to use.
-  // Returns the name of the user's selected printer.
+  // Return the name of the user's selected printer.
 }
 
 // Gets print settings for the selected printer.
@@ -423,7 +423,7 @@ CoreWebView2PrintSettings GetSelectedPrinterPrintSettings(string printerName)
 
   return printSettings;
 
-  // or, you can do the following:
+  // or
   // Get the print ticket and use PrintTicketCapabilities from
   // Windows.Graphics.Printing.PrintTicket to get the capabilities of the selected printer.
   // Display the printer capabilities to the user, along with the page settings.
@@ -478,7 +478,7 @@ SamplePrintSettings AppWindow::GetSelectedPrinterPrintSettings(std::wstring prin
 
   return samplePrintSettings;
 
-  // Or, you can do the following:
+  // Or
   // Use the Win32 DeviceCapabilitiesA function to get the capabilities of the selected printer.
   // Display the printer capabilities to the user, along with the page settings.
   // Return the user-selected settings.
