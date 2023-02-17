@@ -209,7 +209,8 @@ async void PrintToDefaultPrinter(object sender, RoutedEventArgs e)
 
     if (printStatus == CoreWebView2PrintStatus.Succeeded)
     {
-      dialog = new MessageDialog("Printing " + title + " document to printer is succeeded", "Print");
+      dialog = new MessageDialog("Printing " + title +
+                                 " document to printer is succeeded", "Print");
     }
     else if (printStatus == CoreWebView2PrintStatus.PrinterUnavailable)
     {
@@ -217,12 +218,14 @@ async void PrintToDefaultPrinter(object sender, RoutedEventArgs e)
     }
     else
     {
-      dialog = new MessageDialog("Printing " + title + " document to printer is failed", "Print");
+      dialog = new MessageDialog("Printing " + title +
+                                    " document to printer is failed", "Print");
     }
   }
   catch (Exception)
   {
-    dialog = new MessageDialog("Printing " + title + " document already in progress", "Print");
+    dialog = new MessageDialog("Printing " + title +
+                                      " document already in progress", "Print");
   }
   await dialog.ShowAsync();
 }
@@ -369,20 +372,23 @@ async void PrintToPrinter(object sender, RoutedEventArgs e)
 
   try
   {
-    CoreWebView2PrintStatus printStatus = await WebView2.CoreWebView2.PrintAsync(printSettings);
+    CoreWebView2PrintStatus printStatus =
+                          await WebView2.CoreWebView2.PrintAsync(printSettings);
 
     if (printStatus == CoreWebView2PrintStatus.Succeeded)
     {
-      dialog = new MessageDialog("Printing " + title + " document to printer is succeeded", "Print to printer");
+      dialog = new MessageDialog("Printing " + title +
+                        " document to printer is succeeded", "Print to printer");
     }
     else if (printStatus == CoreWebView2PrintStatus.PrinterUnavailable)
     {
-      dialog = new MessageDialog("Selected printer is not found, not available, offline or error state",
-                                "Print to printer");
+      dialog = new MessageDialog("Selected printer is not found, not available, " +
+                                  "offline or error state", "Print to printer");
     }
     else
     {
-      dialog = new MessageDialog("Printing " + title + " document to printer is failed", "Print");
+      dialog = new MessageDialog("Printing " + title +
+                                     " document to printer is failed", "Print");
     }
   }
   catch (ArgumentException)
@@ -419,8 +425,8 @@ CoreWebView2PrintSettings GetSelectedPrinterPrintSettings(string printerName)
   return printSettings;
 
   // or
-  // Get the print ticket and use PrintTicketCapabilities from Windows.Graphics.Printing.PrintTicket
-  // to get the capabilities of the selected printer.
+  // Get the print ticket and use PrintTicketCapabilities from
+  // Windows.Graphics.Printing.PrintTicket to get the capabilities of the selected printer.
   // Display the printer capabilities to the user along with the page settings.
   // Return the user selected settings.
 }
@@ -826,7 +832,8 @@ async void PrintToPdfStream(object sender, RoutedEventArgs e)
     string title = WebView2.CoreWebView2.DocumentTitle;
 
     // Passing null for `PrintSettings` results in default print settings used.
-    Windows.Storage.Streams.IRandomAccessStream stream = await WebView2.CoreWebView2.PrintToPdfStreamAsync(null);
+    Windows.Storage.Streams.IRandomAccessStream stream =
+                        await WebView2.CoreWebView2.PrintToPdfStreamAsync(null);
     DisplayPdfDataInPrintDialog(stream);
     dialog = new MessageDialog("Printing" + title + " document to PDF Stream "
                            + ((stream != null) ? "succeeded" : "failed"), "Print To PDF Stream");
