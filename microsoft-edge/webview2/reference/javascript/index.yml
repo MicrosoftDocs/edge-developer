@@ -1,0 +1,16 @@
+### YamlMime:TSPackage
+uid: WebView2Script!
+metadata:
+  title: JavaScript APIs in WebView2
+name: WebView2Script
+type: package
+summary: 'Use the Microsoft Edge WebView2 control to embed web content into native applications. You can use the following `window.chrome.webview` JavaScript APIs along with native WebView2 APIs to communicate between native code and web code.'
+classes:
+  - 'WebView2Script!HostObjectAsyncProxy:class'
+  - 'WebView2Script!HostObjectAsyncProxyBase:class'
+  - 'WebView2Script!HostObjectsAsyncRoot:class'
+  - 'WebView2Script!HostObjectsOptions:class'
+  - 'WebView2Script!HostObjectsSyncRoot:class'
+  - 'WebView2Script!HostObjectSyncProxy:class'
+  - 'WebView2Script!SharedBufferReceivedEvent:class'
+  - 'WebView2Script!WebView:class'
