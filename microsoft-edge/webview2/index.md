@@ -69,9 +69,6 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 The WebView2 control, WebView2 SDK, and WebView2 Runtime are related as follows.
 
-* A Prerelease version of the WebView2 SDK uses a preview channel of Microsoft Edge.
-* A Release version of the WebView2 SDK uses the WebView2 Runtime.
-
 ![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./index-images/wv2-control-sdk-runtime-diagram.png)
 
 Boundary: Dev machine vs. user machine.
@@ -79,6 +76,30 @@ Boundary: Dev machine vs. user machine.
 How the WebView2 SDK is laid out in relation to how the WebView2 RunTime is laid out.
 
 Note any differences for Runtime & SDK across the frameworks/platforms/languages.
+
+
+<!-- ------------------------------ -->
+#### Roles of the control, SDK, and Runtime
+
+The WebView2 control, SDK, and Runtime have the following roles:
+
+| Component | Role |
+|:---|:---|
+| WebView2 SDK | text |
+| WebView2 control | text |
+| WebView2 Runtime | text |
+
+
+<!-- ------------------------------ -->
+#### Prerelease SDK with preview browser channel, or Release SDK with Runtime
+
+| Version | Renderer platform | Description |
+|:---|:---|:---|
+| Prerelease SDK | A preview channel of Microsoft Edge (Beta, Dev, or Canary) | For experimenting and testing your app against upcoming changes, on your Dev machines. |
+| Release SDK | The WebView2 Runtime | For shipping your app to end users. |
+
+* A Prerelease version of the WebView2 SDK uses a preview channel of Microsoft Edge (Beta, Dev, or Canary).
+* A Release version of the WebView2 SDK uses the WebView2 Runtime.
 
 
 See also:
