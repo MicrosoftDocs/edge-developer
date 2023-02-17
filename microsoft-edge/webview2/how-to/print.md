@@ -244,7 +244,7 @@ bool AppWindow::PrintToDefaultPrinter()
   wil::unique_cotaskmem_string title;
   CHECK_FAILURE(m_webView->get_DocumentTitle(&title));
 
-  // Prints the current webpage, using the default printer settings and page settings.
+  // Prints the current webpage, using the default printer and page settings.
   // Passing nullptr for ICoreWebView2PrintSettings causes the default print settings to be used.
   CHECK_FAILURE(webView2_16->Print(
       nullptr, Callback<ICoreWebView2PrintCompletedHandler>(
