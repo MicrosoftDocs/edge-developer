@@ -69,7 +69,10 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 The WebView2 control, WebView2 SDK, and WebView2 Runtime are related as follows.
 
-![Diagram: Relationship between the WebView2 control, SDK, and Runtime](wv2-control-sdk-runtime-diagram.png)
+* A Prerelease version of the WebView2 SDK uses a preview channel of Microsoft Edge.
+* A Release version of the WebView2 SDK uses the WebView2 Runtime.
+
+![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./index-images/wv2-control-sdk-runtime-diagram.png)
 
 Boundary: Dev machine vs. user machine.
 
@@ -80,6 +83,8 @@ Note any differences for Runtime & SDK across the frameworks/platforms/languages
 
 See also:
 * [Understanding the options at the Runtime download page](./concepts/distribution.md#understanding-the-options-at-the-runtime-download-page) in _Distribute your app and the WebView2 Runtime_.
+* [Understand the different WebView2 SDK versions](./concepts/versioning.md)
+* [Distribute your app and the WebView2 Runtime](./concepts/distribution.md)
 
 
 <!-- ====================================================================== -->
