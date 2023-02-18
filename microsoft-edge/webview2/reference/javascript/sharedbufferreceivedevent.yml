@@ -1,0 +1,133 @@
+### YamlMime:TSType
+name: SharedBufferReceivedEvent
+uid: 'WebView2Script!SharedBufferReceivedEvent:class'
+package: WebView2Script!
+fullName: SharedBufferReceivedEvent
+summary: >-
+  Event object for the `chrome.webview.sharedbufferreceived` event. This event is dispatched when
+  `CoreWebView2.PostSharedBufferToScript` is successfully called.
+remarks: |-
+
+  #### Examples
+
+  The following example sends data to script for one-time, read-only consumption.
+
+  First, in the native host app code, set data into the shared memory:
+
+  ```cpp
+  wil::com_ptr<ICoreWebView2ExperimentalEnvironment10> environment;
+  CHECK_FAILURE(
+      m_appWindow->GetWebViewEnvironment()->QueryInterface(IID_PPV_ARGS(&environment)));
+
+  wil::com_ptr<ICoreWebView2ExperimentalSharedBuffer> sharedBuffer;
+  CHECK_FAILURE(environment->CreateSharedBuffer(bufferSize, &sharedBuffer));
+  // Add data to shared memory via IStream.
+  wil::com_ptr<IStream> stream;
+  CHECK_FAILURE(sharedBuffer->OpenStream(&stream));
+  CHECK_FAILURE(stream->Write(data, sizeof(data), nullptr));
+  PCWSTR additionalDataAsJson = L"{\"myBufferType\":\"bufferType1\"}";
+  if (fromFrame)
+  {
+      m_webviewFrame4->PostSharedBufferToScript(
+          sharedBuffer.get(), COREWEBVIEW2_SHARED_BUFFER_ACCESS_READ_ONLY,
+          additionalDataAsJson);
+  }
+  else
+  {
+      m_webView18->PostSharedBufferToScript(
+          sharedBuffer.get(), COREWEBVIEW2_SHARED_BUFFER_ACCESS_READ_ONLY,
+          additionalDataAsJson);
+  }
+  // Close the one-time shared buffer, to release resources.
+  sharedBuffer->Close();
+  ```
+
+  In the HTML document, subscribe to and handle sharedbufferreceived event.
+  
+  Next, in the HTML document, subscribe to and then handle the `sharedbufferreceived` event:
+
+  ```html
+  window.chrome.webview.addEventListener("sharedbufferreceived", e => {
+      SharedBufferReceived(e);});
+  ```
+
+  ```html
+  let readOnlySharedBuffer;
+  function ShowReadOnlySharedBuffer() {
+      if (readOnlySharedBuffer) {
+          DisplaySharedBufferData(readOnlySharedBuffer);
+      } else {
+          // Post a web message to ask host to share the one time read only buffer.
+          chrome.webview.postMessage("RequestOneTimeShareBuffer");
+      }
+  }
+
+  function DisplaySharedBufferData(buffer) {
+      document.getElementById("shared-buffer-data").value =
+          new TextDecoder().decode(new Uint8Array(buffer));
+  }
+
+  function SharedBufferReceived(e) {
+      if (e.additionalData && e.additionalData.myBufferType == "bufferType1") {
+          readOnlySharedBuffer = e.getBuffer();
+      } else {
+          sharedBuffer = e.getBuffer();
+      }
+      DisplaySharedBufferData(e.getBuffer());
+  }
+
+  function ReleaseBuffer(buffer) {
+      window.chrome.webview.releaseBuffer(buffer);
+  }
+  ```
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: additionalData
+    uid: 'WebView2Script!SharedBufferReceivedEvent#additionalData:member'
+    package: WebView2Script!
+    fullName: additionalData
+    summary: >-
+      An object that is the result of parsing the `additionalDataAsJson` parameter to
+      `CoreWebView2.PostSharedBufferToScript` as a JSON string. This property will be `undefined` if
+      `additionalDataAsJson` is `nullptr` or the empty string.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'additionalData: any;'
+      return:
+        type: any
+  - name: source
+    uid: 'WebView2Script!SharedBufferReceivedEvent#source:member'
+    package: WebView2Script!
+    fullName: source
+    summary: The source of the event is the `chrome.webview` object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: WebView;'
+      return:
+        type: '<xref uid="WebView2Script!WebView:class" />'
+methods:
+  - name: getBuffer()
+    uid: 'WebView2Script!SharedBufferReceivedEvent#getBuffer:member(1)'
+    package: WebView2Script!
+    fullName: getBuffer()
+    summary: >-
+      Returns an `ArrayBuffer` object with the backing content from the shared buffer passed to
+      `CoreWebView2.PostSharedBufferToScript`<!-- -->. If `CoreWebView2.PostSharedBufferToScript` was called with the
+      buffer set to `ReadOnly`<!-- -->, then only read access is allowed to the buffer. If you try to modify the content
+      in a read-only buffer, it will cause an access violation in the WebView renderer process and crash the renderer
+      process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBuffer(): ArrayBuffer;'
+      return:
+        type: ArrayBuffer
+        description: An `ArrayBuffer` over the shared buffer passed to `CoreWebView2.PostSharedBufferToScript`.
+extends: <a href="https://developer.mozilla.org/docs/Web/API/Event">Event</a>
