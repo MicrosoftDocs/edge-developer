@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/14/2022
+ms.date: 02/17/2023
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps
 
@@ -30,7 +30,8 @@ WinUI 2 supports UWP only.  These controls are backward-compatible.
 <!-- ------------------------------ -->
 #### Completed project
 
-Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
+There's a completed version of this Getting Started tutorial in the WebView2Samples repo.  You can use the completed solution as a baseline to add more WebView2 code and other features.
+
 <!-- A completed version of this tutorial project is available in the **WebView2Samples** repo:
 *  Sample name: **__**
 *  Repo directory: [__](__)
