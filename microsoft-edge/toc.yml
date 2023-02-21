@@ -33,6 +33,9 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 110
+              href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
+
             - name: Microsoft Edge 109
               href: devtools-guide-chromium/whats-new/2023/01/devtools-109.md
 
@@ -1414,6 +1417,27 @@
                 - name: Win32 C++ API Reference
                   href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
+
+            - name: JavaScript
+              uid: WebView2Script!
+              displayName: 
+              items:
+                - name: HostObjectAsyncProxy
+                  uid: 'WebView2Script!HostObjectAsyncProxy:class'
+                - name: HostObjectAsyncProxyBase
+                  uid: 'WebView2Script!HostObjectAsyncProxyBase:class'
+                - name: HostObjectsAsyncRoot
+                  uid: 'WebView2Script!HostObjectsAsyncRoot:class'
+                - name: HostObjectsOptions
+                  uid: 'WebView2Script!HostObjectsOptions:class'
+                - name: HostObjectsSyncRoot
+                  uid: 'WebView2Script!HostObjectsSyncRoot:class'
+                - name: HostObjectSyncProxy
+                  uid: 'WebView2Script!HostObjectSyncProxy:class'
+                - name: SharedBufferReceivedEvent
+                  uid: 'WebView2Script!SharedBufferReceivedEvent:class'
+                - name: WebView
+                  uid: 'WebView2Script!WebView:class'
 
         - name: Contact the WebView2 Team
           href: webview2/contact.md
