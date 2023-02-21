@@ -24,31 +24,31 @@ ms.date: 02/15/2023
 
 This tutorial teaches you how to use Lighthouse, and other tools, in DevTools to find ways to make your websites load faster.
 
-Note that the **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.
+The **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft isn't responsible for and has no control over the content of these sites and any data that may be collected.
 
 
 <!-- ====================================================================== -->
 ## Prerequisites
 
-*  You should have basic web development experience, similar to what is taught in this [Introduction to Web Development class](https://www.coursera.org/learn/web-development#syllabus).
+* You should have some web development experience, similar to what is taught in this [Introduction to Web Development class](https://www.coursera.org/learn/web-development#syllabus).
 
 * Install [Visual Studio Code](https://code.visualstudio.com) to edit source code.
 
 * Install [Node.js](https://nodejs.org) to use it as a local web server.
 
-*  You don't need to know anything about load performance.  You learn about load performance in this tutorial.
+* You don't need to know anything about load performance.  You learn about load performance in this tutorial.
 
 
 <!-- ====================================================================== -->
 ## Introduction
 
-In this tutorial, you will improve the performance of [Margie's travel](https://microsoftedge.github.io/Demos/travel-site/), a fictitious travel website that contains travel images, text descriptions, a few JavaScript-based user interactions, and an interactive map.
+In this tutorial, you improve the performance of [Margie's travel](https://microsoftedge.github.io/Demos/travel-site/), a fictitious travel website that contains travel images, text descriptions, a few JavaScript-based user interactions, and an interactive map.
 
 The source files for the website are at [MicrosoftEdge / Demos > travel-site](https://github.com/MicrosoftEdge/Demos/tree/main/travel-site). 
 
 
 <!-- ====================================================================== -->
-## Step 1: Setup the website locally
+## Step 1: Set up the website locally
 
 First, set up the website locally so that you can make changes to it later:
 
@@ -78,7 +78,7 @@ The audit has two important functions:
 
 *  It creates a **baseline** for you to measure subsequent changes against.
 
-*  It gives you **actionable tips** on what changes have the most impact.
+*  It gives you **actionable tips** on what changes improve performance the most.
 
 #### Establish a baseline
 
@@ -86,28 +86,27 @@ The baseline is a record of how the site performed before you made any performan
 
 1. In Microsoft Edge, open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-1. Open the **Lighthouse** tool.  It might be hidden behind the **More tools** (![More tools](../media/more-tools-icon-light-theme.png)) button.
+1. Open the **Lighthouse** tool.  If you don't see the tool in the main toolbar, click the **More tools** (![More tools](../media/more-tools-icon-light-theme.png)) button.
 
-   ![The Lighthouse tool](./images/lighthouse-tool.png)
+1. Only keep the **Performance** category selected and clear all other categories. And keep all other options set by default. Here's an explanation of the different options:
 
-   <!--todo: add link to Lighthouse when section is available  -->
-   <!-- /web/tools/lighthouse  -->
+   *  **Mode**: set this option to **Navigation (default)** to run tests when the webpage loads, or set the option to **Timespan** to run tests during a given period of time, or set the option to **Snapshot** to run tests on the webpage as it appears now.
 
-1. Only keep the **Performance** category selected and clear all other categories. And keep all other options set by default. Here is an explanation of the different options:
+   *  **Device**: set this option to **Mobile** to simulate a mobile user agent string and a mobile viewport, or set the option to **Desktop** to test the webpage without any simulation.
 
-   *  **Mode**: set to **Navigation (default)** to run tests when the webpage loads, set to **Timespan** to run tests during a given period of time, or set to **Snapshot** to run tests on the webpage as it appears now.
+   *  **Categories**: this option allows you to only run a subset of the tests available in **Lighthouse**.
 
-   *  **Device**: set to **Mobile** to simulate a mobile user agent string and a mobile viewport, or set to **Desktop** to test the webpage without any simulation.
+1. Click **Analyze page load**:
 
-   *  **Categories**: allows to only run a subset of the tests available in **Lighthouse**.
+    ![The Lighthouse tool](./images/lighthouse-tool.png)
 
-1. Click **Analyze page load**.  After 10 to 30 seconds, a report of the performance of the site is displayed:
+1. After 10 to 30 seconds, a report of the performance of the site appears:
 
    ![The report for the Lighthouse tool about the performance of the site](./images/lighthouse-report.png)
 
 #### Handling report errors
 
-If you ever get an error in your **Lighthouse** report, try running the tool again from an **InPrivate** window with no other tabs open.  This ensures that you are running Microsoft Edge from a clean state.  Microsoft Edge Extensions in particular often interfere with the auditing process.
+If you ever get an error in your **Lighthouse** report, try running the tool again from an **InPrivate** window with no other tabs open. Running **Lighthouse** from an **InPrivate** window ensures that you're running Microsoft Edge from a clean state.  Microsoft Edge Extensions in particular often interfere with the auditing process.
 
 ![An error at the top of the Lighthouse report](./images/lighthouse-error.png)
 
@@ -131,7 +130,7 @@ The number at the top of your report is the overall performance score for the we
 
 ###### Metrics
 
-The **Metrics** section provides quantitative measurements of the performance of the webpage.  Each metric provides insight into a different aspect of the performance.  For example, **First Contentful Paint** tells you when content is first painted to the screen, which is an important milestone in the user's perception of the page load, whereas **Time To Interactive** marks the point at which the page appears ready enough to handle user interactions.
+The **Metrics** section provides quantitative measurements of the performance of the webpage.  Each metric provides insight into a different aspect of the performance.  For example, **First Contentful Paint** tells you when content first appears on the screen, which is an important milestone in the user's perception of the page load, whereas **Time To Interactive** marks the point at which the page appears ready enough to handle user interactions.
 
 ![The Metrics section](./images/metrics-section.png)
 
@@ -175,13 +174,13 @@ The **Opportunities** section of your report gives you tips on how to improve th
 
 #### Resize images
 
-Your report indicates that serving appropriately sized images is one of the top opportunities for improving the performance of the page.  Resizing images helps reduce the size of the network payload.  If your user is viewing your images on a mobile device screen that is 500-pixels-wide, there is really no point in sending a 1500-pixel-wide image.  Ideally, you send a 500-pixel-wide image, at most.
+Your report indicates that serving appropriately sized images is one of the top opportunities for improving the performance of the page.  Resizing images helps reduce the size of the network payload.  If your user is viewing your images on a mobile device screen that is 500-pixels-wide, there's really no point in sending a 1500-pixel-wide image.  Ideally, you send a 500-pixel-wide image, at most.
 
-In the **Opportunities** section of your report, click **Properly size images** to display which images should be resized. **Lighthouse** lists four `.png` files which can be resized to improve load time:
+In the **Opportunities** section of your report, click **Properly size images** to display which images to resize. **Lighthouse** lists four `.jpg` files you should resize to improve load time:
 
 ![The Opportunities section showing four images to be optimized, along with the potential data savings](./images/resize-images.png)
 
-Before resizing these images, verify the amount of data the server must send to the browser for these images to be displayed:
+Before resizing these images, verify the amount of data the server must send to the browser to display these images:
 
 1. Open the **Network** tool.
 
@@ -195,17 +194,19 @@ Before resizing these images, verify the amount of data the server must send to 
 
     ![The Network tool, showing the four image requests, and the total amount of data transferred](./images/network-tool-images.png)
 
-    The bottom toolbar shows that the four images contribute 16.4MB of the total 17.3MB of data transferred for this webpage.
+    The bottom toolbar shows that the four images contribute 16.4 MB of the total 17.3 MB of data transferred for this webpage.
 
 Next, resize the images and run a new audit:
 
-1. In Visual Studio Code, open the `/travel-site/assets/img/` folder in the **Explorer**, which contains all the images displayed on the webpage. Click one of the image files to open a preview and verify its dimensions in the status bar:
+1. In Visual Studio Code, open the `/travel-site/assets/img/optimized/` folder in the **Explorer**, which contains a copy of the four images displayed on the webpage, but already optimized for you. These images are 1000 pixels wide, and use the more optimized `.webp` format.
 
-    ![VS Code with an image opened, showing its dimensions in the status bar](./images/image-dimension-vscode.png)
+    Resizing images depends on your operating system. For example, to resize images on Windows, you can use **PowerToys**. To learn more, see [Image Resizer utility](/windows/powertoys/image-resizer).
 
-    The selected image is 4032 pixels wide, but the webpage's layout only displays it at 900 pixels or less.
+1. Open the `/travel-site/index.html` file and replace the four image paths as follows:
 
-1. Resize all images to 1000 pixels wide. Resizing images depends on your operating system. For example, to resize images on Windows, you can use **PowerToys**. To learn more, see [Image Resized utility](/windows/powertoys/image-resizer).
+    * Replace the four instances of `assets/img/` in the file with `assets/img/optimized`.
+
+    * Replace the four instances of `.jpg` in the file with `.webp`.
 
 1. In **Lighthouse**, click **Run an audit** (![Run an audit icon](./images/perform-icon.msft.png)) to go back to the main **Lighthouse** page without losing your baseline report.
 
@@ -213,23 +214,23 @@ Next, resize the images and run a new audit:
 
     ![An Audits report after resizing images](./images/report-after-image-resize.png)
 
-The change has an important effect on the overall performance score. To verify how much data was saved, use the **Network** tool like you did before:
+Your score increased from 18 to 26. To verify how much data you saved, use the **Network** tool like you did before:
 
 ![The Network tool, showing the four image requests again, and the lower total amount of data transferred](./images/network-tool-images-after.png)
 
-Now, only 469KB of data needs to be transferred for the images to appear on the webpage.
+Now, the images on the webpage only require to transfer 360 KB of data.
 
 ###### Automatically resize images
 
-For a small app, doing a one-off resize like this might be good enough.  But for a large app, this isn't scalable.  Here are some strategies for managing images in large apps:
+For a small app, doing a one-off resize like this might be good enough. But for a large app, consider these strategies for managing images:
 
-*  Resize images during your build process.
+*  Automatically resize images during your build process.
 
-*  Create multiple sizes of each image during the build process and then use `srcset` in your code.  At runtime, the browser takes care of choosing which size is best for the device.  <!-- See [Responsive images](https://web.dev/responsive-images/). -->
+*  Create multiple sizes of each image during the build process and then use `srcset` in your code. At runtime, the browser takes care of choosing which size is best for the device. To learn more, see [Responsive images](https://web.dev/responsive-images/) at web.dev.
 
 *  Use an image CDN that lets you dynamically resize an image when you request it.
 
-*  At the very least, optimize each image.  This can often create huge savings.
+*  At least, optimize each image.  can often create huge savings.
 
 Optimization is when you run an image through a special program that reduces the size of the image file.  For more tips, see [Essential Image Optimization](https://images.guide).
 
@@ -241,7 +242,7 @@ Click **Reduce unused JavaScript** to reveal the JavaScript files that contain t
 
 ![The Lighthouse opportunity section showing the unused JS message](./images/unused-javascript-opportunity.png)
 
-The reported JavaScript files are from the `www.bing.com` domain which means the unused code comes from the Bing Map component used on the webpage. Scroll down on the Margie's travel demo website to see the map:
+The reported JavaScript files are from the `www.bing.com` domain, which means the unused code comes from the Bing Map component used on the webpage. Scroll down on the Margie's travel demo website to see the map:
 
 ![The map component on the demo website](./images/travel-site-map-component.png)
 
@@ -251,25 +252,25 @@ To confirm the amount of unused code and possibly find other resources that are 
 
     ![The Command Menu in DevTools, showing the Show Coverage command](./images/command-menu-coverage.png)
 
-1. In the **Coverage** tool, click **Start instrumenting coverage and refresh the page** (![Refresh icon](../media/reload-icon.msft.png)). The **Coverage** tool provides an overview of how much of the JavaScript and CSS code loaded on the page is actually used.
+1. In the **Coverage** tool, click **Start instrumenting coverage and refresh the page** (![Refresh icon](../media/reload-icon.msft.png)). The **Coverage** tool provides an overview of how much of the JavaScript and CSS code loaded on the page runs.
 
     ![The Coverage tool, in the Drawer panel, showing the report of how much code is unused](./images/coverage-report.png)
 
-The coverage report confirms that the Bing Map dependencies contain code that's unused when the page loads. The map on the demo website is not visible when the page first loads so it is a good opportunity to not load the Bing Map files until the map is visible to the user.
+The coverage report confirms that the Bing Map dependencies contain code that's unused when the page loads. The map on the demo website isn't visible when the page first loads. Loading the Bing Map only when it becomes visible to users is a good opportunity to improve performance.
 
-To do this, you will use the Intersection Observer API which provides a way to observe changes in the intersection of a target element with the webpage's viewport. To learn more, see [Intersection Observer API](https://developer.mozilla.org/docs/Web/API/Intersection_Observer_API) at MDN.
+Use the Intersection Observer API to detect when the map becomes visible to the user. The Intersection Observer API provides a way to observe changes in the intersection of a target element, the map in this case, with the webpage's viewport. To learn more, see [Intersection Observer API](https://developer.mozilla.org/docs/Web/API/Intersection_Observer_API) at MDN.
 
-1. In Visual Studio Code, open the `travel-site/index.html` file and scroll down to the bottom of the file. The Bing Map API is loaded by using a `<script>` tag:
+1. In Visual Studio Code, open the `/travel-site/index.html` file and scroll down to the bottom of the file. The Bing Map API is loaded by using a `<script>` tag:
 
     ![VS Code, showing the index.html code and the Bing map script tag](./images/bing-map-script.png)
 
     Below this line is another line that's responsible for configuring and loading the map in the right place: `<script src="assets/map.js"></script>`
 
-1. Delete these two lines (183, and 184), and add this new line instead: `<script src="assets/map-on-demand.js"></script>`.
+1. Delete these two lines and add this new line instead: `<script src="assets/map-on-demand.js"></script>`.
 
     ![VS Code, showing the index.html code and the new on-demand map script tag](./images/bing-map-on-demand-script.png)
 
-1. Open the `/travel-site/assets/map-on-demand.js` file in Visual Studio Code and read through the code to understand how the Bing Map component is now loaded and initialized. Below is snippet from the code and it description:
+1. Open the `/travel-site/assets/map-on-demand.js` file in Visual Studio Code and read through the code to understand how it loads and initializes the Bing Map component. Here is a snippet from that code along with a description of how it works:
 
     ```javascript
     const MAP_CONTAINER_EL = document.querySelector('.place-discover-map');
@@ -297,25 +298,25 @@ To do this, you will use the Intersection Observer API which provides a way to o
     function GetMap() { /* ... */ }
     ```
 
-    The code initializes the `mapElIntersectionObserver` variable to a new IntersectionObserver object. This observer is then set to observe the `MAP_CONTAINER_EL` element which is the element on the page that's meant to contain the map.
+    The code initializes the `mapElIntersectionObserver` variable to a new IntersectionObserver object. This observer then starts observing the `MAP_CONTAINER_EL` element, which is the element on the page that's meant to contain the map.
 
-    As the user scrolls, the observer's `loadMapOnDemand` callback function is executed. This function returns immediately if the map has already been initialized, or if the map container element does not intersect the current viewport.
+    As the user scrolls, the observer's `loadMapOnDemand` callback function runs. This function doesn't do anything when the map already exists, or if the map container element doesn't intersect the current viewport.
 
-    If the user scrolls to a point where the map container element becomes visible in the viewport, and if the map has not been initialized yet, a new `script` element is created and inserted into the page. The script's `src` attribute is set to load the Bing Map API.
+    If the user scrolls to a point where the map container element becomes visible in the viewport, and if the map isn't initialized yet, the code creates a new `script` element, sets its `src` attribute to the Bing Map API, and inserts the `script` into the page.
 
-    The rest of the `map-on-demand.js` file is the same as the `map.js` file. As soon as the Bing Map API is loaded, the `GetMap` function is called and the map is configured and displayed in the container element.
+    The rest of the `map-on-demand.js` file is the same as the `map.js` file. As soon as the Bing Map API loads, the `GetMap` function runs. `GetMap` configures and displays the map in the container element.
 
 1. Save your changes in Visual Studio Code, then refresh the webpage in Microsoft Edge, and run a new audit in the **Lighthouse** tool to see how your changes affect the load performance:
 
     ![The Lighthouse tool report showing a better score after the changes](./images/lighthouse-report-without-map.png)
 
-    By resizing big images and removing unused JavaScript, your **Lighthouse** score went from 47 to 79.
+    Your **Lighthouse** score is now at 31, which is an improvement from before, but there are more things to optimize.
 
 #### Eliminate render-blocking resources
 
 The next opportunity displayed in the **Opportunities** section of the **Lighthouse** tool is related to eliminating render-blocking resources.
 
-A render-blocking resource is an external JavaScript or CSS file that the browser must download, parse, and run before it displays the page. The more render-resources need to be processed when a webpage loads, the longer it will take for this webpage to start appearing in the browser. The goal is, therefore, to only run the core CSS and JavaScript code that is required to display the initial state of the page properly.
+A render-blocking resource is an external JavaScript or CSS file that the browser must download, parse, and run before it displays the page. The more render-blocking resources need to be processed when a webpage loads, the longer the webpage needs to start appearing in the browser. Try to only run the core CSS and JavaScript code that's required to display the initial state of the page properly.
 
 The first task, then, is to find code that you don't need to run on page load.
 
@@ -323,7 +324,7 @@ The first task, then, is to find code that you don't need to run on page load.
 
    ![More information about the Eliminate render-blocking resources opportunity](./images/render-blocking-css.png)
 
-    **Lighthouse** displays a list of the stylesheets that the demo webpage uses, such as: `base.css`, `home.css`, `map.css`, and `carousel.css`.
+    **Lighthouse** displays a list of the stylesheets that the demo webpage uses, such as: `base.css`, `home.css`, `map.css`, and others.
 
 1. Open the **Coverage** tool again: press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS), type `Coverage`, and then select **Show Coverage**.
 
@@ -331,21 +332,21 @@ The first task, then, is to find code that you don't need to run on page load.
 
    ![The new Coverage report, now showing the CSS files](./images/coverage-report-css.png)
 
-    The report shows that the `contact-form.css` and `gallery.css` files are not used at all. They both have 100% of unused bytes.
+    The report shows that the `contact-form.css` and `gallery.css` files aren't used at all. They both have 100% of unused bytes.
 
-1. Click the `contact-form.css` file in the report.  DevTools opens the file in the **Sources** tool.  If a line of code ran, a blue bar appears next to it.  A red bar means the line of code was not run, and is definitely not needed on load of the webpage.
+1. Click the `contact-form.css` file in the report.  DevTools opens the file in the **Sources** tool.  If a line of code ran, a blue bar appears next to it.  A red bar means the line of code didn't run, and is definitely not needed on load of the webpage.
 
    ![The contact-form.css file in the Sources tool, with red bars next to the unused lines](./images/unused-css-source.png)
 
-   Only red bars are displayed in this source file, which means that none of its lines of code are needed. 
+   Only red bars are displayed in this source file, which means that the webpage does not need this file at all. 
 
 Now, remove the references to these files from the code:
 
 1. In Visual Studio Code, open the `/travel-site/index.html` file.
 
-1. Near the top of the file, find the list of `<link>` tags that are used to load the stylesheets on the page.
+1. Near the top of the file, find the list of `<link>` tags that load the stylesheets on the page.
 
-1. Delete the two lines of code that are used to load the `contact-form.css` and `gallery.css` files:
+1. Delete the two lines of code that load the `contact-form.css` and `gallery.css` files:
 
     ![VS Code, with the index.html opened, showing where the two link tags are](./images/delete-unused-css.png)
 
@@ -353,120 +354,148 @@ Now, remove the references to these files from the code:
 
 ###### Automatically remove non-critical CSS
 
-In the previous step, your score improved a little bit but **Lighthouse** still flags other CSS files as blocking the initial render of the page.
+In the previous step, your score improved slightly but **Lighthouse** still flags other CSS files as blocking the initial render of the page.
 
-The remaining CSS files are used on the webpage and can't be removed, but it is possible to split them in two groups:
+The webpage uses the remaining CSS files so you can't remove them. However, it's possible to split them in two groups:
 
-* Critical CSS code that need to block the rendering of the webpage because they visually impact the style and layout of the part of the webpage that users see when it loads.
+* Critical CSS code that needs to block the rendering of the webpage because it visually impacts the style and layout of the part of the webpage that users see when it loads.
 
-    For example, the `header h1` CSS rule in the `/travel-site/assets/base.css` file is needed for the webpage's title to appear correctly.
+    For example, the title on the webpage uses the `header h1` CSS rule in the `/travel-site/assets/base.css` file.
 
-* Non-critical CSS code used to render parts of the page that are not visible when the page loads.
+* Non-critical CSS code used to render parts of the page that aren't visible when the page loads.
 
     For example, the `/travel-site/assets/desktop.css` file is only needed when the viewport is larger than `665px`.
 
-To automatically split your CSS code this way, you can use the Critical tool. To learn more, see the [Critical project repository](https://github.com/addyosmani/critical) at GitHub.
+To automatically split your CSS code this way, you can use the _Critical_ tool. To learn more, see the [Critical project repository](https://github.com/addyosmani/critical) at GitHub.
 
 You can then load your non-critical CSS code in a way to doesn't block the initial render of the page. To learn more, see [Defer non-critical CSS](https://web.dev/defer-non-critical-css/) at web.dev.
 
-It is also a good to minify your CSS code and remove unneeded whitespace characters and comments. To learn more, see [Minify CSS](https://web.dev/minify-css/) at web.dev.
+It's also good to minify your CSS code and remove unneeded whitespace characters and comments. To learn more, see [Minify CSS](https://web.dev/minify-css/) at web.dev.
+
+#### Reduce layout shift by setting explicit width and height on images
+
+In your **Lighthouse** report, the **Diagnostics** section suggests defining explicit `width` and `height` for image elements. Click on **Image elements do not have explicit width and height**  to display more information:
+
+![The Lighthouse diagnostics section about setting explicit width and height to images](./images/explicit-image-size.png)
+
+The report says that the image at the top of the webpage doesn't have an explicit `width` and `height`, which can cause layout shifts.
+
+Layout shifts occur when portions of a webpage initially appear in one place but move to another position during the load of the page. For example, when an image loads, the browser doesn't know how much space to reserve for it until the image is fully loaded.
+
+To prevent layout shifts caused by loading images on a webpage:
+
+* Either define each image's `width` and `height` attributes in the HTML code.
+* Or reserve the space in CSS by using the `aspect-ratio` CSS property.
+
+To learn more, see [Images without dimensions](https://web.dev/optimize-cls/#images-without-dimensions) in _Optimize Cumulative Layout Shift_ at web.dev.
+
+In the following steps, you use the `aspect-ratio` CSS property to avoid layout shifts:
+
+1. In Visual Studio Code, open the `/travel-site/assets/home.css` file, and then search for the CSS rule that has the `.hero-image img` selector.
+
+1. Modify the CSS rule so it looks like this:
+
+    ```css
+    .hero-image img {
+      width: calc(100% + 2 * var(--main-margin));
+      position: relative;
+      left: calc(-1 * var(--main-margin));
+      aspect-ratio: 1.5;
+      object-fit: cover;
+    }
+    ```
+
+    Before this change, the CSS rule already contained a `width` property, so the browser knew how much horizontal space to reserve for the image. By adding the `aspect-ratio` property, you tell the browser how much vertical space to reserve too. By adding the `object-fit` property, you avoid distorting the image if its CSS dimensions don't match the actual image file's dimensions.
+
+1. Open the `/travel-site/assets/desktop.css` file, and then search for the CSS rule that has the same `.hero-image img` selector.
+
+    The `desktop.css` file is used only when the viewport is larger than `665px`, so when the webpage is displayed on a large screen, for example when used on a laptop computer.
+
+1. Modify the CSS rule so it looks like this:
+
+    ```css
+    .hero-image img {
+        width: 100%;
+        position: static;
+        aspect-ratio: 2.5;
+        object-fit: cover;
+    }
+    ```
+
+    This time, the CSS rule already had a `width` and `object-fit` defined. But instead of defining a `max-height` for the image, you use the `aspect-ratio` property to make sure the browser knows exactly how much space to reserve for the image on desktop devices.
+
+1. Save your changes in Visual Studio Code, then refresh the webpage in Microsoft Edge, and run a new audit in the **Lighthouse** tool to see how your changes affect the load performance:
+
+    Your score is now up to 37, but more importantly the **Cumulative Layout Shift** score is down to 0 indicating that there are no more shifts in the layout as the page loads.
+
+    ![The Lighthouse tool report showing a better score after the aspect-ratio changes](./images/lighthouse-report-with-aspect-ratio.png)
 
 #### Do less main thread work
 
-Your latest report shows some minor potential savings in the Opportunities section, but if you look down in the Diagnostics section, it looks like the biggest bottleneck is too much main thread activity.
+Your latest report shows high **Time to Interactive** and **Total Blocking Time** metric values, which means that there's still something on the webpage that takes a long time to run and prevents the page from being usable for several seconds.
 
-The main thread is where the browser does most of the work needed to display a page, such as parsing and running HTML, CSS, and JavaScript.
+Scroll down to the **Diagnostics** section which says to **Minimize main-thread work** and **Reduce JavaScript execution time**. The main-thread is where the browser does most of the work that's needed to display a page, such as:
 
-The goal is to use the Performance panel to analyze what work the main thread is doing while the page loads, and find ways to defer or remove unnecessary work.
+* Parsing and running HTML.
+* Parsing and applying CSS to DOM elements. 
+* Running JavaScript.
 
-1. Select the **Performance** tool.
+In this case, it looks like the biggest bottleneck is that the page runs too much JavaScript code on page load.
 
-1. Click **Capture Settings** (![Capture Settings](../media/capture-icon.msft.png)).
+Use the **Performance** tool to analyze what work the main thread is doing while the page loads, and find ways to defer or remove unnecessary work:
 
-1. Set **Network** to **Slow 3G** and **CPU** to **6x slowdown**.  Mobile devices typically have more hardware constraints than laptops or desktops, so these settings let you experience the page load as if you were using a less powerful device.
+1. Open the **Performance** tool.
 
-1. Click **Refresh** (![Refresh](../media/reload-icon.msft.png)).  DevTools refreshes the page and then produces a visualization of all the work performed in order to load the page.  This visualization is referred to as the **trace**.
+1. In the **Performance** tool, click **Start profiling and reload the page** (![Refresh](../media/reload-icon.msft.png)), and then click **Stop** once the page has fully loaded.
 
-   ![The Performance tool trace of the page load](../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png)
+    DevTools displays a visualization of all the work that the browser performed in order to load the page. This visualization is referred to as the **trace**:
 
-The trace shows activity chronologically, from left to right.  The FPS, CPU, and NET charts at the top give you an overview of frames per second, CPU activity, and network activity.  The block of yellow highlighted in the figure after the next, the CPU was completely busy with scripting activity.  This is a clue that you may be able to speed up page load by doing less JavaScript work.
+    ![The Performance tool trace of the page load](./images/performance-trace.png)
 
-![The Overview section of the trace](../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png)
+The trace shows activity chronologically, from left to right. The CPU and NET charts at the top give you an overview of CPU and network activity. The light brown area in the CPU chart corresponds to a period of time when the browser was busy with scripting activity. This area is a clue that you may be able to speed up page load by doing less JavaScript work.
 
-Investigate the trace to find ways to do less JavaScript work:
+![A long scripting activity in the CPU chart](./images/perf-busy-script.png)
 
-1. Click the **Timings** section to expand it.  Based on the fact that there may be a bunch of [Timing](https://developer.mozilla.org/docs/Web/API/User_Timing_API) measures from React, it seems like Tony's app is using the development mode of React.  Switching to the production mode of React may yield some easy performance wins.
+Investigate the trace to find ways to do less JavaScript work.
 
-   ![The Timings section](../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png)
+The **Main** section shows a chronological log of main thread activity, from left to right.  The y-axis (top to bottom) shows why events occurred. For example, in the following figure, the browser spends most of the time in a **Parse HTML** event. As long as this event runs, the webpage isn't entirely displayed. This event caused a long **Evaluate Script** event, which corresponds to when the browser executes JavaScript code. The **Evaluate Script** event caused an `(anonymous)` function to run, which caused the `initRatings` function to run:
 
-1. Click **Timings** again to collapse that section.
+![Events in the Main section of the Performance tool](./images/perf-main-events.png)
 
-1. Browse the **Main** section.  This section shows a chronological log of main thread activity, from left to right.  The y-axis (top to bottom) shows why events occurred.  For example, in the figyre after the following, the `Evaluate Script` event caused the `(anonymous)` function to run, which caused `(anonymous)` to run, which caused `__webpack__require__` to run, and so on.
+Optimize the `initRatings` function to make the page load faster:
 
-  ![The Main section](../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png)
+1. In Visual Studio Code, open the `/travel-site/assets/rating.js` file and read through the code.
 
-1. Scroll down to the bottom of the **Main** section.  When you use a framework, most of the upper activity is caused by the framework, which is usually out of your control.  The activity caused by your app is usually at the bottom.  In this app, it seems like a function named `App` is causing a lot of requests to a `mineBitcoin` function.  It sounds like Tony might be using the devices of his fans to mine cryptocurrency...
+    The code in this file is responsible for displaying five customer reviews on the webpage. Each review has a rating consisting of several stars, a quote, and an author. These reviews come from a server-side API used in the `getRatings` function, and the `initRatings` function creates DOM elements in the page for each review.
 
-   ![Hover on the mineBitcoin activity](../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png)
+1. In the `initRatings` function, find a way to make the JavaScript code faster.
 
-   > [!NOTE]
-   > Although the requests that your framework makes are usually out of your control, sometimes you might structure your app in a way that causes the framework to run inefficiently.  Restructuring your app to use the framework efficiently is a way to do less main thread work.  However, this requires a deep understanding of how your framework works, and what kind of changes you make in your own code in order to use the framework more efficiently.
+    This webpage is just a demo and a `for` loop was introduced to slow down the code. In practice, there are many ways for a JavaScript file like this one to cause slow page loads, such as: accessing the DOM too frequently, running heavy computation tasks, using large JavaScript libraries or frameworks.
 
-1. Expand the **Bottom-Up** section.  This tab breaks down what activities took up the most time.  If nothing is displayed in the **Bottom-Up** section, click the label for **Main** section.  The **Bottom-Up** section only shows information for whatever activity, or group of activity, you have currently selected.  For example, if you chose one of the `mineBitcoin` activities, the **Bottom-Up** section is only going to show information for that one activity.
+1. Delete the `for` loop at the beginning of the `initRatings` function, save your changes, and reload the page in Microsoft Edge.
 
-   ![The Bottom-Up tab](../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png)
+1. Run a new audit in the **Lighthouse** tool to see how your changes affect the load performance:
 
-The **Self Time** column shows you how much time was spent directly in each activity.  For example, in the following figure, about 63% of main thread time was spent on the `mineBitcoin` function.
+    ![Your new report, showing a much better score](./images/report-after-for-loop.png)
 
-It's time to see whether using production mode and reducing JavaScript activity may speed up the page load.  Start with production mode:
+    Your score went up to 92, and the **Time to interactive** and **Total Blocking Time** metrics are down to 1.3 seconds and 0 seconds respectively.
 
-1. In the editor tab, open `webpack.config.js`.
-
-1. Change `"mode":"development"` to `"mode":"production"`.
-
-1. Wait for the new build to deploy.
-
-1. Audit the page again.
-
-   ![An Audits report after configuring webpack to use production mode](../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png)
-
-Reduce JavaScript activity by removing the request to `mineBitcoin`:
-
-1. In the editor tab, open `src/App.jsx`.
-
-1. Comment out the request to `this.mineBitcoin(1500)` in the `constructor`.
-
-1. Wait for the new build to deploy.
-
-1. Audit the page again.
-
-   ![An Audits report after removing unnecessary JavaScript work](../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png)
-
-Looks like that last change caused a massive jump in performance!
-
-This section provided a rather brief introduction to the Performance tool.  To learn more about how to analyze page performance, see [Performance features reference)](../evaluate-performance/reference.md).
+To learn more about how to analyze page performance, see [Performance features reference)](../evaluate-performance/reference.md).
 
 ###### Doing less main thread work in the real world
 
-The **Performance** tool is the most common way to understand what activity your site does as it loads, and to find ways to remove unnecessary activity.
+The **Performance** tool is the most common way to understand what activity your webpage does as it loads, and to find ways to remove unnecessary activity.
 
 If you prefer an approach that feels more like `console.log()`, the [User Timing API](https://developer.mozilla.org/docs/Web/API/User_Timing_API) enables you to arbitrarily mark up certain phases of your app lifecycle, in order to track how long each of those phases takes.
+
+Webpages often load slowly when they use JavaScript for generating most of their user interfaces. Moving the code that creates your webpage's user interface to the server-side and delivering it as HTML and CSS to the browser can improve your webpage's performance.
 
 
 <!-- ====================================================================== -->
 ## Summary
 
-*  Whenever you set out to optimize the load performance of a site, always start with an audit.  The audit establishes a baseline, and gives you tips on how to improve.
+*  Whenever you set out to optimize the load performance of a site, always start with an audit. The audit establishes a baseline, and gives you tips on how to improve.
 *  Make one change at a time, and audit the webpage after each change in order to display how that isolated change affects performance.
-
-
-<!-- ====================================================================== -->
-<!--
-## Next steps
-
-*  Run audits on your own site!  If you need help interpreting your report, or finding ways to improve your load performance, check out [Feedback](#feedback) for ways to get help from the DevTools community.  Stack Overflow, the mailing list, or Twitter are probably best for these types of questions.
-*  Please leave [feedback](#feedback) on this tutorial.  The data is used to make better tutorials.
--->
 
 
 <!-- ====================================================================== -->
