@@ -10,6 +10,7 @@ ms.date: 01/06/2022
 # Network conditions tool
 
 Use the **Network conditions** tool to do the following:
+
 *  Disable the browser cache.
 *  Set network throttling.
 *  Set the user agent string.
@@ -31,9 +32,10 @@ See [Emulate slow network connections from the Network Conditions drawer](../net
 
 
 <!-- ====================================================================== -->
-## Set the user agent string
+## Simulate other user agents
 
 See:
+
 * [Set the user agent string](../device-mode/index.md#set-the-user-agent-string) in _Emulate mobile devices (Device Emulation)_.
 * [Override the user agent string](../device-mode/override-user-agent.md).
 * [Set user agent client hints](../network/reference.md#set-user-agent-client-hints) in _Network features reference_.
@@ -42,7 +44,9 @@ See:
 <!-- ====================================================================== -->
 ## Set Content-Encodings, such as deflate, gzip, and br
 
-See [Enable text compression](../speed/get-started.md#enable-text-compression) in _Optimize website speed using Lighthouse_.
+Use the **Accepted Content-Encodings** option to configure which `content-encoding` HTTP header values are supported by the browser.
+
+The `content-encoding` header informs the browser if and how a given HTTP response was compressed and is usually set to `gzip`, `deflate`, or `br`. Web servers usually set `content-encoding` headers when sending HTTP responses to a browser. To learn more about these values, see [Content-Encoding](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding) at MDN.
 
 
 <!-- ====================================================================== -->
