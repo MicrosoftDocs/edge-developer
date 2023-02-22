@@ -22,7 +22,7 @@ ms.date: 02/15/2023
    limitations under the License.  -->
 # Optimize website speed using Lighthouse
 
-This tutorial teaches you how to use Lighthouse and other tools in DevTools to find ways to make your websites load faster.
+This tutorial teaches you how to use **Lighthouse** and other tools in DevTools to find ways to make your websites load faster.
 
 The **Lighthouse** tool provides links to content that's hosted on third-party websites.  Microsoft isn't responsible for and has no control over the content of these sites and any data that may be collected.
 
