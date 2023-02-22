@@ -32,12 +32,10 @@ WinUI 2 supports UWP only.  These controls are backward-compatible.
 
 A completed version of this Getting Started project (solution) is in the WebView2Samples repo.  You can use the completed solution (from the repo or from doing the below steps) as a baseline to add more WebView2 code and other features.
 
-<!-- todo: uncomment after add/merge project eg https://github.com/MicrosoftEdge/WebView2Samples/pull/172 in Samples repo:
 A completed version of this tutorial project is available in the **WebView2Samples** repo:
 *  Sample name: **WinUI2_Sample**
 *  Repo directory: [WinUI2_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI2_GettingStarted)
 *  Solution file: **MyUWPGetStartApp.sln**
--->
 
 
 Follow the major Step sections in sequence, below.
