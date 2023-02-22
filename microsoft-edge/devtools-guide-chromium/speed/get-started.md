@@ -301,7 +301,7 @@ Use the Intersection Observer API to detect when the map becomes visible to the 
     function GetMap() { /* ... */ }
     ```
 
-    The code initializes the `mapElIntersectionObserver` variable to a new IntersectionObserver object. This observer then starts observing the `MAP_CONTAINER_EL` element, which is the element on the page that's meant to contain the map.
+    The code initializes the `mapElIntersectionObserver` variable to a new `IntersectionObserver` object. This observer then starts observing the `MAP_CONTAINER_EL` element, which is the element on the page that's meant to contain the map.
 
     As the user scrolls, the observer's `loadMapOnDemand` callback function runs. This function doesn't do anything when the map already exists, or if the map container element doesn't intersect the current viewport.
 
