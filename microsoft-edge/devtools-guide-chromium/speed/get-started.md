@@ -62,7 +62,7 @@ First, set up the website locally, so that you can make changes to it later:
 
     This local web server will be stopped when you close Visual Studio Code.
 
-1. In Microsoft Edge, go to http://localhost:8080/travel-site to open the website:
+1. In Microsoft Edge, go to `http://localhost:8080/travel-site` to open the website:
 
    ![The travel website demo in Microsoft Edge](./get-started-images/travel-site.png)
 
