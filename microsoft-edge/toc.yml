@@ -496,11 +496,11 @@
 # Performance tool ------------------------------------------------------------
             - name: Performance tool
               items:
-                - name: Get started analyzing runtime performance
+                - name: Introduction to the Performance tool
                   href: devtools-guide-chromium/evaluate-performance/index.md
                   displayName: Performance tool
 
-                - name: Analyze runtime performance
+                - name: Troubleshooting common performance issues
                   href: devtools-guide-chromium/rendering-tools/index.md
                   displayName: Performance tool
 

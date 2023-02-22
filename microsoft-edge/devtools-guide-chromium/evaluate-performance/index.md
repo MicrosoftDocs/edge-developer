@@ -1,11 +1,11 @@
 ---
-title: Get started analyzing runtime performance
+title: Introduction to the Performance tool
 description: Tutorial about how to evaluate runtime performance in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/22/2022
+ms.date: 2/22/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -20,16 +20,14 @@ ms.date: 11/22/2022
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Get started analyzing runtime performance
+# Introduction to the Performance tool
 
 _Runtime performance_ is how your page performs when it's running, as opposed to loading.  The following tutorial teaches you how to use the DevTools **Performance** tool to analyze runtime performance.
 
-In terms of the **RAIL** model, the skills you learn in this tutorial are useful for analyzing the Response, Animation, and Idle phases of your page.
+The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for [Core Web Vitals](https://web.dev/vitals/).  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the Performance tool.
 
-See also [Optimize website speed using Lighthouse](../speed/get-started.md).
-
-<!--todo: add rail link when section is ready -->
-
+See also:
+- [Optimize website speed using Lighthouse](../speed/get-started.md).
 
 <!-- ====================================================================== -->
 ## Get started
@@ -39,11 +37,6 @@ In the following tutorial, you open DevTools on a "Sluggish Animation" demo page
 1. Open the [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) demo page in your InPrivate tab or window.  To do that, right-click the link and then select **Open link in InPrivate window**.  You'll profile this page, which shows a variable number of icons moving up and down. For more information about InPrivate, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
 
    Note: The source for this demo is at [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
-
-
-   <!--TODO: replace section when updated for Chromium-based Edge  -->
-
-   <!-- You can view the source files for the "Sluggish Animation" demo page at the [MicrosoftEdge/Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) repo folder. -->
 
 1. Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS) to open DevTools.
 
@@ -183,21 +176,57 @@ This article gives you a lot to learn. But now you have a solid foundation in th
 
 Using the workflows and tools that you just learned, click **Optimize** on the demo to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
-The optimized code uses a different sequence of actions to do less work. Note that this code could be made even faster by only using properties that only affect compositing, instead of manipulating the `top` property of every icon.
-<!--  > For more information, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations). todo: add rendering section when available -->
+Compare this snippet of JavaScript from the unoptimized version of the app:
 
+```javascript
+var pos = m.classList.contains("down")
+  ? m.offsetTop + distance
+  : m.offsetTop - distance;
+if (pos < 0) pos = 0;
+if (pos > maxHeight) pos = maxHeight;
+m.style.top = pos + "px";
+if (m.offsetTop === 0) {
+  m.classList.remove("up");
+  m.classList.add("down");
+}
+if (m.offsetTop === maxHeight) {
+  m.classList.remove("down");
+  m.classList.add("up");
+}
+```
+
+`m` references each blue icon on the page. In the unoptimized version, we refer to `pos` as the new vertical position of the icon, calculated based on `m.offsetTop + distance` if the icon is moving down and where `distance` is a fixed increment.  If the icon is moving up instead, the new position is instead calculated with `m.offsetTop - distance`.
+
+We check if we've exceeded either `0` or `maxHeight` as the new position whether we're moving up or down, adjust accordingly, and then we finally set the new position for each icon in CSS with `m.style.top = pos + "px";`.
+
+The optimized code uses a different sequence of actions to do less work. Here is the same snippet of JavaScript from the optimized version of the app: 
+
+```javascript
+var pos = parseInt(m.style.top.slice(0, m.style.top.indexOf("px")));
+m.classList.contains("down") ? (pos += distance) : (pos -= distance);
+if (pos < 0) pos = 0;
+if (pos > maxHeight) pos = maxHeight;
+m.style.top = pos + "px";
+if (pos === 0) {
+  m.classList.remove("up");
+  m.classList.add("down");
+}
+if (pos === maxHeight) {
+  m.classList.remove("down");
+  m.classList.add("up");
+}
+```
+
+In the optimized version, `pos` is used instead of `m.offsetTop`. The remaining work is the same but this snippet is faster than the previous one because we are no longer querying the style of each icon while also changing it, which triggers the browser to re-layout each icon.  
+
+Note that this code could be made even faster by only using properties that only affect compositing, instead of manipulating the `top` property of every icon.  For example, we could get even better performance if instead of using `m.style.top = pos + "px";`, we used `m.style.transform = translateY(pos + "px,");`.  This is because `transform: translate(npx, npx)` is a CSS attribute that only affects the compositor layer and doesn't trigger re-layout for the browser.  For more information, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations).
 
 <!-- ====================================================================== -->
 ## Next steps
 
-<!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
-To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rail/). -->
-
 To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, press `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS), or [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).  Include screenshots or links to reproducible pages, if possible.
 
 ![The **Feedback** icon in the Microsoft Edge DevTools](../media/evaluate-performance-feedback-icon.msft.png)
-
-<!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance](https://web.dev/rendering-performance/).  [The Anatomy Of A Frame](https://aerotwist.com/blog/the-anatomy-of-a-frame/) dives into even more detail. -->
 
 Last, there are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour of the **Performance** tool, but it's only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
