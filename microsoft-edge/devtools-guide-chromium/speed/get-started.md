@@ -451,7 +451,7 @@ Use the **Performance** tool to analyze what work the main thread is doing while
 
 1. In the **Performance** tool, click **Start profiling and reload the page** (![Refresh](../media/reload-icon.msft.png)), and then click **Stop** once the page has fully loaded.
 
-    DevTools displays a visualization of all the work that the browser performed in order to load the page. This visualization is referred to as the **trace**:
+    DevTools displays a visualization of all the work that the browser performed in order to load the page. This visualization is referred to as the _trace_:
 
     ![The Performance tool trace of the page load](./get-started-images/performance-trace.png)
 
