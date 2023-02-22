@@ -46,7 +46,7 @@ See:
 
 Use the **Accepted Content-Encodings** option to configure which `content-encoding` HTTP header values are supported by the browser.
 
-The `content-encoding` header informs the browser if and how a given HTTP response was compressed and is usually set to `gzip`, `deflate`, or `br`. Web servers usually set `content-encoding` headers when sending HTTP responses to a browser. To learn more about these values, see [Content-Encoding](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding) at MDN.
+The `content-encoding` header informs the browser whether and how a given HTTP response was compressed. This `content-encoding` header is usually set to `gzip`, `deflate`, or `br`. Web servers usually set `content-encoding` headers when sending HTTP responses to a browser. To learn more about these values, see [Content-Encoding](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding) at MDN.
 
 
 <!-- ====================================================================== -->
