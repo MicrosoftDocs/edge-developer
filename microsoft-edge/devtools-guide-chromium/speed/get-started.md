@@ -60,13 +60,13 @@ First, set up the website locally so that you can make changes to it later:
 
    Visual Studio Code displays the source files in the **Explorer** sidebar, and the **Terminal**:
 
-   ![VS Code, now setup with the source code](./images/vscode-setup.png)
+   ![VS Code, now setup with the source code](./get-started-images/vscode-setup.png)
 
 1. In the terminal, type `npx http-server` to start a local web server.
 
 1. In Microsoft Edge, go to http://localhost:8080/travel-site to open the website:
 
-   ![The travel website demo in Microsoft Edge](./images/travel-site.png)
+   ![The travel website demo in Microsoft Edge](./get-started-images/travel-site.png)
 
 
 <!-- ====================================================================== -->
@@ -98,17 +98,17 @@ The baseline is a record of how the site performed before you made any performan
 
 1. Click **Analyze page load**:
 
-    ![The Lighthouse tool](./images/lighthouse-tool.png)
+    ![The Lighthouse tool](./get-started-images/lighthouse-tool.png)
 
 1. After 10 to 30 seconds, a report of the performance of the site appears:
 
-   ![The report for the Lighthouse tool about the performance of the site](./images/lighthouse-report.png)
+   ![The report for the Lighthouse tool about the performance of the site](./get-started-images/lighthouse-report.png)
 
 #### Handling report errors
 
 If you ever get an error in your **Lighthouse** report, try running the tool again from an **InPrivate** window with no other tabs open. Running **Lighthouse** from an **InPrivate** window ensures that you're running Microsoft Edge from a clean state.  Microsoft Edge Extensions in particular often interfere with the auditing process.
 
-![An error at the top of the Lighthouse report](./images/lighthouse-error.png)
+![An error at the top of the Lighthouse report](./get-started-images/lighthouse-error.png)
 
 To open an **InPrivate** window:
 
@@ -118,7 +118,7 @@ To open an **InPrivate** window:
 
 1. Establish a new baseline in **Lighthouse**:
 
-   ![The report for the Lighthouse tool about the performance of the site in a InPrivate window](./images/private-lighthouse-report.png)
+   ![The report for the Lighthouse tool about the performance of the site in a InPrivate window](./get-started-images/private-lighthouse-report.png)
 
 #### Understand your report
 
@@ -126,45 +126,45 @@ To open an **InPrivate** window:
 
 The number at the top of your report is the overall performance score for the webpage.  Later, as you make changes to the code, the number displayed should rise.  A higher score means better performance.
 
-![The overall performance score](./images/overall-score.png)
+![The overall performance score](./get-started-images/overall-score.png)
 
 ###### Metrics
 
 The **Metrics** section provides quantitative measurements of the performance of the webpage.  Each metric provides insight into a different aspect of the performance.  For example, **First Contentful Paint** tells you when content first appears on the screen, which is an important milestone in the user's perception of the page load, whereas **Time To Interactive** marks the point at which the page appears ready enough to handle user interactions.
 
-![The Metrics section](./images/metrics-section.png)
+![The Metrics section](./get-started-images/metrics-section.png)
 
 Click **Expand view** to display a description for each metric.  Then click **Learn More** to read documentation about it.
 
-![The expanded metrics section](./images/metrics-learn-more.png)
+![The expanded metrics section](./get-started-images/metrics-learn-more.png)
 
 ###### Screenshots
 
 Below the **Metrics** section is a collection of screenshots that show you how the page looked as it loaded.
 
-![Series of screenshots showing how the page looked while loading](./images/report-screenshots.png)
+![Series of screenshots showing how the page looked while loading](./get-started-images/report-screenshots.png)
 
 ###### Opportunities
 
 The **Opportunities** section provides specific tips on how to improve the load performance of this specific webpage:
 
-![The Opportunities section](./images/opportunities-section.png)
+![The Opportunities section](./get-started-images/opportunities-section.png)
 
 Click an opportunity to display more information about it, and then click **Learn more** to read documentation about why an opportunity is important, and specific recommendations on how to fix it:
 
-![An expanded opportunity, with more information, and a learn more link](./images/expanded-opportunity.png)
+![An expanded opportunity, with more information, and a learn more link](./get-started-images/expanded-opportunity.png)
 
 ###### Diagnostics
 
 The **Diagnostics** section provides more information about factors that contribute to the load time of the page:
 
-![The Diagnostics section](./images/diagnostics-section.png)
+![The Diagnostics section](./get-started-images/diagnostics-section.png)
 
 ###### Passed audits
 
 The **Passed audits** section shows you what the site is doing correctly.  Click **Show** to expand the section:
 
-![The Passed Audits section](./images/passed-audits-section.png)
+![The Passed Audits section](./get-started-images/passed-audits-section.png)
 
 
 <!-- ====================================================================== -->
@@ -178,7 +178,7 @@ Your report indicates that serving appropriately sized images is one of the top 
 
 In the **Opportunities** section of your report, click **Properly size images** to display which images to resize. **Lighthouse** lists four `.jpg` files you should resize to improve load time:
 
-![The Opportunities section showing four images to be optimized, along with the potential data savings](./images/resize-images.png)
+![The Opportunities section showing four images to be optimized, along with the potential data savings](./get-started-images/resize-images.png)
 
 Before resizing these images, verify the amount of data the server must send to the browser to display these images:
 
@@ -192,7 +192,7 @@ Before resizing these images, verify the amount of data the server must send to 
 
 1. Check the **Network** tool bottom toolbar to verify the amount of data transferred because of the images:
 
-    ![The Network tool, showing the four image requests, and the total amount of data transferred](./images/network-tool-images.png)
+    ![The Network tool, showing the four image requests, and the total amount of data transferred](./get-started-images/network-tool-images.png)
 
     The bottom toolbar shows that the four images contribute 16.4 MB of the total 17.3 MB of data transferred for this webpage.
 
@@ -208,15 +208,15 @@ Next, resize the images and run a new audit:
 
     * Replace the four instances of `.jpg` in the file with `.webp`.
 
-1. In **Lighthouse**, click **Run an audit** (![Run an audit icon](./images/perform-icon.msft.png)) to go back to the main **Lighthouse** page without losing your baseline report.
+1. In **Lighthouse**, click **Run an audit** (![Run an audit icon](./get-started-images/perform-icon.msft.png)) to go back to the main **Lighthouse** page without losing your baseline report.
 
 1. Click **Analyze page load** again to see how the change affects load performance:
 
-    ![An Audits report after resizing images](./images/report-after-image-resize.png)
+    ![An Audits report after resizing images](./get-started-images/report-after-image-resize.png)
 
 Your score increased from 18 to 26. To verify how much data you saved, use the **Network** tool like you did before:
 
-![The Network tool, showing the four image requests again, and the lower total amount of data transferred](./images/network-tool-images-after.png)
+![The Network tool, showing the four image requests again, and the lower total amount of data transferred](./get-started-images/network-tool-images-after.png)
 
 Now, the images on the webpage only require to transfer 360 KB of data.
 
@@ -240,21 +240,21 @@ Your latest **Lighthouse** report says that the webpage contains unused JavaScri
 
 Click **Reduce unused JavaScript** to reveal the JavaScript files that contain the most unused code:
 
-![The Lighthouse opportunity section showing the unused JS message](./images/unused-javascript-opportunity.png)
+![The Lighthouse opportunity section showing the unused JS message](./get-started-images/unused-javascript-opportunity.png)
 
 The reported JavaScript files are from the `www.bing.com` domain, which means the unused code comes from the Bing Map component used on the webpage. Scroll down on the Margie's travel demo website to see the map:
 
-![The map component on the demo website](./images/travel-site-map-component.png)
+![The map component on the demo website](./get-started-images/travel-site-map-component.png)
 
 To confirm the amount of unused code and possibly find other resources that are unused, use the **Coverage** tool:
 
 1. In DevTools, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage** in the list.
 
-    ![The Command Menu in DevTools, showing the Show Coverage command](./images/command-menu-coverage.png)
+    ![The Command Menu in DevTools, showing the Show Coverage command](./get-started-images/command-menu-coverage.png)
 
 1. In the **Coverage** tool, click **Start instrumenting coverage and refresh the page** (![Refresh icon](../media/reload-icon.msft.png)). The **Coverage** tool provides an overview of how much of the JavaScript and CSS code loaded on the page runs.
 
-    ![The Coverage tool, in the Drawer panel, showing the report of how much code is unused](./images/coverage-report.png)
+    ![The Coverage tool, in the Drawer panel, showing the report of how much code is unused](./get-started-images/coverage-report.png)
 
 The coverage report confirms that the Bing Map dependencies contain code that's unused when the page loads. The map on the demo website isn't visible when the page first loads. Loading the Bing Map only when it becomes visible to users is a good opportunity to improve performance.
 
@@ -262,13 +262,13 @@ Use the Intersection Observer API to detect when the map becomes visible to the 
 
 1. In Visual Studio Code, open the `/travel-site/index.html` file and scroll down to the bottom of the file. The Bing Map API is loaded by using a `<script>` tag:
 
-    ![VS Code, showing the index.html code and the Bing map script tag](./images/bing-map-script.png)
+    ![VS Code, showing the index.html code and the Bing map script tag](./get-started-images/bing-map-script.png)
 
     Below this line is another line that's responsible for configuring and loading the map in the right place: `<script src="assets/map.js"></script>`
 
 1. Delete these two lines and add this new line instead: `<script src="assets/map-on-demand.js"></script>`.
 
-    ![VS Code, showing the index.html code and the new on-demand map script tag](./images/bing-map-on-demand-script.png)
+    ![VS Code, showing the index.html code and the new on-demand map script tag](./get-started-images/bing-map-on-demand-script.png)
 
 1. Open the `/travel-site/assets/map-on-demand.js` file in Visual Studio Code and read through the code to understand how it loads and initializes the Bing Map component. Here is a snippet from that code along with a description of how it works:
 
@@ -308,7 +308,7 @@ Use the Intersection Observer API to detect when the map becomes visible to the 
 
 1. Save your changes in Visual Studio Code, then refresh the webpage in Microsoft Edge, and run a new audit in the **Lighthouse** tool to see how your changes affect the load performance:
 
-    ![The Lighthouse tool report showing a better score after the changes](./images/lighthouse-report-without-map.png)
+    ![The Lighthouse tool report showing a better score after the changes](./get-started-images/lighthouse-report-without-map.png)
 
     Your **Lighthouse** score is now at 31, which is an improvement from before, but there are more things to optimize.
 
@@ -322,7 +322,7 @@ The first task, then, is to find code that you don't need to run on page load.
 
 1. Click **Eliminate render-blocking resources** to display the resources that are blocking:
 
-   ![More information about the Eliminate render-blocking resources opportunity](./images/render-blocking-css.png)
+   ![More information about the Eliminate render-blocking resources opportunity](./get-started-images/render-blocking-css.png)
 
     **Lighthouse** displays a list of the stylesheets that the demo webpage uses, such as: `base.css`, `home.css`, `map.css`, and others.
 
@@ -330,13 +330,13 @@ The first task, then, is to find code that you don't need to run on page load.
 
 1. Click **Start instrumenting coverage and refresh the page** (![Refresh icon](../media/reload-icon.msft.png)) to display the coverage report, and then type `css` in the **URL filter** field to only display the CSS files:
 
-   ![The new Coverage report, now showing the CSS files](./images/coverage-report-css.png)
+   ![The new Coverage report, now showing the CSS files](./get-started-images/coverage-report-css.png)
 
     The report shows that the `contact-form.css` and `gallery.css` files aren't used at all. They both have 100% of unused bytes.
 
 1. Click the `contact-form.css` file in the report.  DevTools opens the file in the **Sources** tool.  If a line of code ran, a blue bar appears next to it.  A red bar means the line of code didn't run, and is definitely not needed on load of the webpage.
 
-   ![The contact-form.css file in the Sources tool, with red bars next to the unused lines](./images/unused-css-source.png)
+   ![The contact-form.css file in the Sources tool, with red bars next to the unused lines](./get-started-images/unused-css-source.png)
 
    Only red bars are displayed in this source file, which means that the webpage does not need this file at all. 
 
@@ -348,7 +348,7 @@ Now, remove the references to these files from the code:
 
 1. Delete the two lines of code that load the `contact-form.css` and `gallery.css` files:
 
-    ![VS Code, with the index.html opened, showing where the two link tags are](./images/delete-unused-css.png)
+    ![VS Code, with the index.html opened, showing where the two link tags are](./get-started-images/delete-unused-css.png)
 
 1. Save your changes in Visual Studio Code, then refresh the webpage in Microsoft Edge, and run a new audit in the **Lighthouse** tool again to see how your changes affect the load performance.
 
@@ -376,7 +376,7 @@ It's also good to minify your CSS code and remove unneeded whitespace characters
 
 In your **Lighthouse** report, the **Diagnostics** section suggests defining explicit `width` and `height` for image elements. Click on **Image elements do not have explicit width and height**  to display more information:
 
-![The Lighthouse diagnostics section about setting explicit width and height to images](./images/explicit-image-size.png)
+![The Lighthouse diagnostics section about setting explicit width and height to images](./get-started-images/explicit-image-size.png)
 
 The report says that the image at the top of the webpage doesn't have an explicit `width` and `height`, which can cause layout shifts.
 
@@ -428,7 +428,7 @@ In the following steps, you use the `aspect-ratio` CSS property to avoid layout 
 
     Your score is now up to 37, but more importantly the **Cumulative Layout Shift** score is down to 0 indicating that there are no more shifts in the layout as the page loads.
 
-    ![The Lighthouse tool report showing a better score after the aspect-ratio changes](./images/lighthouse-report-with-aspect-ratio.png)
+    ![The Lighthouse tool report showing a better score after the aspect-ratio changes](./get-started-images/lighthouse-report-with-aspect-ratio.png)
 
 #### Do less main thread work
 
@@ -450,17 +450,17 @@ Use the **Performance** tool to analyze what work the main thread is doing while
 
     DevTools displays a visualization of all the work that the browser performed in order to load the page. This visualization is referred to as the **trace**:
 
-    ![The Performance tool trace of the page load](./images/performance-trace.png)
+    ![The Performance tool trace of the page load](./get-started-images/performance-trace.png)
 
 The trace shows activity chronologically, from left to right. The CPU and NET charts at the top give you an overview of CPU and network activity. The light brown area in the CPU chart corresponds to a period of time when the browser was busy with scripting activity. This area is a clue that you may be able to speed up page load by doing less JavaScript work.
 
-![A long scripting activity in the CPU chart](./images/perf-busy-script.png)
+![A long scripting activity in the CPU chart](./get-started-images/perf-busy-script.png)
 
 Investigate the trace to find ways to do less JavaScript work.
 
 The **Main** section shows a chronological log of main thread activity, from left to right.  The y-axis (top to bottom) shows why events occurred. For example, in the following figure, the browser spends most of the time in a **Parse HTML** event. As long as this event runs, the webpage isn't entirely displayed. This event caused a long **Evaluate Script** event, which corresponds to when the browser executes JavaScript code. The **Evaluate Script** event caused an `(anonymous)` function to run, which caused the `initRatings` function to run:
 
-![Events in the Main section of the Performance tool](./images/perf-main-events.png)
+![Events in the Main section of the Performance tool](./get-started-images/perf-main-events.png)
 
 Optimize the `initRatings` function to make the page load faster:
 
@@ -476,7 +476,7 @@ Optimize the `initRatings` function to make the page load faster:
 
 1. Run a new audit in the **Lighthouse** tool to see how your changes affect the load performance:
 
-    ![Your new report, showing a much better score](./images/report-after-for-loop.png)
+    ![Your new report, showing a much better score](./get-started-images/report-after-for-loop.png)
 
     Your score went up to 92, and the **Time to interactive** and **Total Blocking Time** metrics are down to 1.3 seconds and 0 seconds respectively.
 
