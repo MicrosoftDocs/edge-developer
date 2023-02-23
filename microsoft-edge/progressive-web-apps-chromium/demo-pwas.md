@@ -31,6 +31,7 @@ PWAmp uses the following features:
 | Web Share | Songs can be shared with other apps through the operating system sharing dialog. | [Sharing content](how-to/share.md#sharing-content). |
 | Share Target | Other apps can share audio files with PWAmp, through the operating system sharing dialog. | [Receiving shared content](how-to/share.md#receiving-shared-content). |
 | Widget | A mini-player Widget can be installed in Windows 11 Widgets dashboard to see the current song. | [Build PWA-driven Widgets](how-to/widgets.md). |
+| Sidebar | PWAmp can be pinned to the sidebar in Microsoft Edge. | [Build Microsoft Edge sidebar PWAs](how-to/sidebar.md). |
 
 
 <!-- ====================================================================== -->
