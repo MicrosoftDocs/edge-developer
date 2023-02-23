@@ -1,6 +1,6 @@
 ---
-title: Understand the different WebView2 SDK versions
-description: Understand the different WebView2 SDK versions, and version models used for Microsoft Edge WebView2.
+title: Prerelease and release SDKs for WebView2
+description: Prerelease SDK, release SDK, using experimental APIs, and version models used for Microsoft Edge WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/03/2021
 ---
-# Understand the different WebView2 SDK versions
+# Prerelease and release SDKs for WebView2
 
 The NuGet package for the WebView2 SDK contains both a release and prerelease package.  Either use a prerelease SDK with a preview channel of Microsoft Edge, or use a release SDK with the WebView2 Runtime.
 
@@ -90,7 +90,8 @@ For full support for the latest APIs in a release version of the SDK, the Runtim
 To try out new forthcoming features that are in development, use experimental APIs.  Experimental APIs are contained in prerelease versions of the WebView2 SDK, but not in release versions of the WebView2 SDK.
 
 
-### Developing with experimental APIs and providing feedback
+<!-- ------------------------------ -->
+#### Developing with experimental APIs and providing feedback
 
 The experimental APIs in a WebView2 SDK _prerelease_ package aren't guaranteed to be forward-compatible and might be removed in future Runtime updates.  When a _prerelease_ version of the WebView2 SDK is initially made available, that SDK only works with Microsoft Edge Canary.  Soon after that, the prerelease SDK also works with the Beta and Dev channels.  Use a prerelease SDK to try out new APIs early and provide feedback before the new APIs are promoted to become stable, forward-compatible APIs.
 
@@ -101,7 +102,8 @@ The WebView2 team is seeking feedback on experimental WebView2 APIs that might b
 To help you evaluate the experimental APIs and share your feedback, use the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
 
-### Moving from experimental APIs to stable APIs
+<!-- ------------------------------ -->
+#### Moving from experimental APIs to stable APIs
 
 Once an API has been moved from experimental to stable APIs, you need to move your app's code to the stable API.  Using experimental APIs is not recommended for production apps.  Follow these practices when moving your app from using experimental APIs to using stable APIs:
 

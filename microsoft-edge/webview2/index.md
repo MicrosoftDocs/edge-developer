@@ -104,7 +104,7 @@ The WebView2 control, SDK, and Runtime have the following roles:
 
 See also:
 * [Understanding the options at the Runtime download page](./concepts/distribution.md#understanding-the-options-at-the-runtime-download-page) in _Distribute your app and the WebView2 Runtime_.
-* [Understand the different WebView2 SDK versions](./concepts/versioning.md)
+* [Prerelease and release SDKs for WebView2](./concepts/versioning.md)
 * [Distribute your app and the WebView2 Runtime](./concepts/distribution.md)
 
 
