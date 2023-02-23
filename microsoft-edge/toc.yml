@@ -1055,6 +1055,9 @@
             - name: Re-engage users with badges, notifications, and push messages
               href: progressive-web-apps-chromium/how-to/notifications-badges.md
 
+            - name: Synchronize and update in the background
+              href: progressive-web-apps-chromium/how-to/background-syncs.md
+
             - name: Handle files
               href: progressive-web-apps-chromium/how-to/handle-files.md
 
@@ -1076,8 +1079,8 @@
             - name: Build operating system Widgets
               href: progressive-web-apps-chromium/how-to/widgets.md
 
-            - name: Synchronize and update in the background
-              href: progressive-web-apps-chromium/how-to/background-syncs.md
+            - name: Build Microsoft Edge sidebar PWAs
+              href: progressive-web-apps-chromium/how-to/sidebar.md
 
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
