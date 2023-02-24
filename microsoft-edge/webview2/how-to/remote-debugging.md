@@ -1,6 +1,6 @@
 ---
-title: Remote Debugging for WebView2 apps with Remote Tools for Microsoft Edge
-description: How to remotely debug WebView2 apps with Remote Tools for Microsoft Edge. 
+title: Remote Debugging for WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge
+description: How to remotely debug WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge. 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,16 +8,16 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/23/2023
 ---
-# Remote Debugging WebView2 apps with Remote Tools for Microsoft Edge
+# Remote Debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge
 
 Use `Remote Tools for Microsoft Edge` to enable [Microsoft Edge DevTools](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/landing/) debugging.
 
 
 <!-- ====================================================================== -->
-## Debugging Desktop WebView2 UWP apps
+## Debugging Desktop WebView2 WinUI 2 (UWP) apps
 
-These steps can be used to attach `Edge DevTools` remotely to a WebView2 UWP app.
-Remote debugging is necessary as a current limitation to WebView2 UWP apps is the built-in `DevTools` cannot be launched directly inside a store signed WebView2 UWP app.
+These steps can be used to attach `Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app.
+Remote debugging is necessary as a current limitation to WebView2 WinUI 2 (UWP) apps is the built-in `DevTools` cannot be launched directly inside a store signed WebView2 WinUI 2 (UWP) app.
 
 1. Install [Edge Canary](https://www.microsoftedgeinsider.com/en-us/download/canary).
 
@@ -62,7 +62,7 @@ Remote debugging is necessary as a current limitation to WebView2 UWP apps is th
 
 1. Navigate to `http://<Device Portal URL>/msedge` and verify Remote Tools for Microsoft Edge are functioning. The page should load an empty list `[]`.
 
-1. Configure your WebView2 UWP app for remote debugging:
+1. Configure your WebView2 WinUI 2 (UWP) app for remote debugging:
 
     To enable remote debugging, two environment variables must be set in your project.
 
