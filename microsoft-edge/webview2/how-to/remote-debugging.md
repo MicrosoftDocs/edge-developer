@@ -10,7 +10,7 @@ ms.date: 02/23/2023
 ---
 # Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge
 
-Use `Remote Tools for Microsoft Edge` to enable [Microsoft Edge DevTools](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/landing/) debugging.
+Use `Remote Tools for Microsoft Edge` to enable [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium/landing/) debugging.
 
 
 <!-- ====================================================================== -->
@@ -20,7 +20,7 @@ To use Microsoft Edge DevTools to debug a desktop WebView2 WinUI 2 (UWP) app, us
 
 Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as follows:
 
-1.  Install [Microsoft Edge Canary Channel](https://www.microsoftedgeinsider.com/en-us/download/canary).
+1.  Install [Microsoft Edge Canary Channel](https://www.microsoftedgeinsider.com/download/canary).
 
 1.  In Microsoft Edge Canary, go to to `edge://inspect` and verify that the page is supported in your version of the browser.
 
