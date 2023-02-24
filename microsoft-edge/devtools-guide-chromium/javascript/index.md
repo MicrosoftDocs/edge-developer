@@ -30,7 +30,7 @@ This article teaches you the basic workflow for debugging any JavaScript issue u
 
 The first step in debugging is to find a sequence of actions that consistently reproduce a bug.
 
-1. Open the demo webpage [Get Started Debugging JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new window or tab.  To open the webpage, right-click the linK and select "Open link in new tab" or "Open link in new Window" on the popup window.  Alternatively you can press and hold `Ctrl` (for Windows, Linux) or `Command` (for macOS), and then click the link.
+1. Open the demo webpage [Get Started Debugging JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new window or tab.  To open the webpage, right-click the link and select "Open link in new tab" or "Open link in new Window" on the popup window.  Alternatively you can press and hold `Ctrl` (for Windows, Linux) or `Command` (for macOS), and then click the link.
 
    > [!TIP]
    > Open Microsoft Edge in InPrivate Mode. InPrivate Mode ensures that Microsoft Edge runs in a clean state. For more information, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
@@ -57,11 +57,11 @@ DevTools provides several tools for different tasks.  These tasks include changi
 
 1. Select the **Sources** tool. Select the **Page** tab, and then select the JavaScript file, `get-started.js`.
 
-   ![The Sources tool.](../media/javascript-sources-sections.msft.png)
+   ![The Sources tool](../media/javascript-sources-sections.msft.png)
 
 The **Sources** tool UI has three parts.
 
-![The 3 parts of the Sources tool UI.](../media/javascript-sources-sections-annotated.msft.png)
+![The 3 parts of the Sources tool UI](../media/javascript-sources-sections-annotated.msft.png)
 
 1. The **Navigator** pane (in the upper left corner).  Every file that the webpage requests is listed here.
 
@@ -104,11 +104,11 @@ If you step back and think about how the app works, you might make an educated g
 
 1. In the **Debugger** pane, click **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of event categories, such as **Animation** and **Clipboard**.
 
-1. Click **Expand** (![Expand icon.](../media/expand-icon.msft.png)) by the **Mouse** event open that category.  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.
+1. Click **Expand** (![Expand icon](../media/expand-icon.msft.png)) by the **Mouse** event open that category.  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.
 
 1. Select the checkbox next to **click**.  DevTools is now set up to automatically pause when any `click` event listener runs.
 
-   ![Select the checkbox next to click.](../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png)
+   ![Select the checkbox next to click](../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png)
 
 1. Back on the demo, click **Add Number 1 and Number 2** again.  DevTools pauses the demo and highlights a line of code in the **Sources** tool.  DevTools should pause on line 16 in `get-started.js`, shown in the next code snippet.
 
@@ -116,7 +116,7 @@ If you step back and think about how the app works, you might make an educated g
     if (inputsAreEmpty()) {
     ```
 
-    If you pause on a different line of code, click **Resume Script Execution** (![Resume Script Execution.](../media/resume-script-run-icon.msft.png)) until you pause on the correct line.
+    If you pause on a different line of code, click **Resume Script Execution** (![Resume Script Execution](../media/resume-script-run-icon.msft.png)) until you pause on the correct line.
 
     > [!NOTE]
     > If you paused on a different line, you have a browser extension that registers a `click` event listener on every webpage that you visit.  You are paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you might see that you pause on the desired line of code every time.
@@ -131,7 +131,7 @@ If you step back and think about how the app works, you might make an educated g
 
 One common cause of bugs is when a script runs in the wrong order.  Stepping through your code allows you to walk through the runtime of your code.  You walk through one line at a time to help you figure out exactly where your code is running in a different order than you expect.  Try it now:
 
-1. Click **Step over next function call** (![Step over next function call.](../media/step-over-icon.msft.png)).  DevTools runs the following code without stepping into it.
+1. Click **Step over next function call** (![Step over next function call](../media/step-over-icon.msft.png)).  DevTools runs the following code without stepping into it.
 
     ```javascript
     if (inputsAreEmpty()) {
@@ -140,7 +140,7 @@ One common cause of bugs is when a script runs in the wrong order.  Stepping thr
     > [!NOTE]
     > DevTools skips a few lines of code.  This is because `inputsAreEmpty()` evaluates as false, so the block of code for the `if` statement doesn't run.
 
-1. On the **Sources** tool of DevTools, click **Step into next function call** (![Step into next function call.](../media/step-into-icon.msft.png)) to step through the runtime of the `updateLabel()` function, one line at a time.
+1. On the **Sources** tool of DevTools, click **Step into next function call** (![Step into next function call](../media/step-into-icon.msft.png)) to step through the runtime of the `updateLabel()` function, one line at a time.
 
 That's the basic idea of stepping through code.  If you look at the code in `get-started.js`, you can see that the bug is probably somewhere in the `updateLabel()` function.  Rather than stepping through every line of code, you can use another type of breakpoint (a _line-of-code breakpoint_) to pause the code closer to the probable location of the bug.
 
@@ -158,13 +158,13 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
 
 1. The line number for `label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;` is **34**. Click line **34**.  DevTools displays a red circle to the left of **34**.  The red circle indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before this line of code is run.
 
-1. Click **Resume script execution** (![Resume script execution.](../media/resume-script-run-icon.msft.png)).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of each variable to the right of the semi-colon on each line. These values are:
+1. Click **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.msft.png)).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of each variable to the right of the semi-colon on each line. These values are:
 
    - `addend1` = "5"
    - `addend2` = "1"
    - `sum` = "51"
 
-   ![DevTools pauses on the line-of-code breakpoint on line 34.](../media/javascript-sources-breakpoint-paused.msft.png)
+   ![DevTools pauses on the line-of-code breakpoint on line 34](../media/javascript-sources-breakpoint-paused.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -176,7 +176,7 @@ The values of `addend1`, `addend2`, and `sum` look suspicious.  These values are
 
 If you pause on a line of code, the **Scope** pane displays the local and global variables that are currently defined, along with the value of each variable.  It also displays closure variables, as applicable.  Double-click a variable value to edit it.  If you don't pause on a line of code, the **Scope** pane is empty.
 
-![The Scope pane.](../media/javascript-sources-breakpoint-paused-scope.msft.png)
+![The Scope pane](../media/javascript-sources-breakpoint-paused-scope.msft.png)
 
 #### Method 2: Watch expressions
 
@@ -184,7 +184,7 @@ The **Watch** pane allows you to monitor the values of variables (such as `sum`)
 
 1. Select the **Watch** tab.
 
-1. Click **Add watch expression** (![Add watch expression.](../media/add-expression-icon.msft.png)).
+1. Click **Add watch expression** (![Add watch expression](../media/add-expression-icon.msft.png)).
 
 1. Type `typeof sum`.
 
@@ -193,7 +193,7 @@ The **Watch** pane allows you to monitor the values of variables (such as `sum`)
 > [!NOTE]
 > In the following screenshot, the watch expression `typeof sum` is displayed in the **Watch** pane.  If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.
 
-![The Watch pane.](../media/javascript-sources-breakpoint-paused-watch.msft.png)
+![The Watch pane](../media/javascript-sources-breakpoint-paused-watch.msft.png)
 
 As suspected, `sum` is being evaluated as a string, when it should be a number.  You now confirmed value type is the cause of the bug.
 
@@ -215,13 +215,13 @@ The **Console** allows you to view `console.log()` output.  You can also use the
 
 We've identified a possible fix for the bug.  Next, edit the JavaScript code directly within the DevTools UI and then rerun the demo to test the fix, as follows.
 
-1. Click **Resume script execution** (![Resume script execution.](../media/resume-script-run-icon.msft.png)).
+1. Click **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.msft.png)).
 
 1. In the **Editor** pane, replace the line `var sum = addend1 + addend2` with `var sum = parseInt(addend1) + parseInt(addend2)`.
 
 1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save your change.
 
-1. Click **Deactivate breakpoints** (![Deactivate breakpoints.](../media/deactivate-breakpoints-button-icon.msft.png)).  The breakpoint's icon changes to gray to indicate that the breakpoint is inactive.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
+1. Click **Deactivate breakpoints** (![Deactivate breakpoints](../media/deactivate-breakpoints-button-icon.msft.png)).  The breakpoint's icon changes to gray to indicate that the breakpoint is inactive.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
 
    ![Result of troubleshooting and fixing bug](../media/javascript-bug-fixed.msft.png)
 
@@ -260,5 +260,5 @@ A couple of code stepping controls aren't explained in this article.  For more i
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

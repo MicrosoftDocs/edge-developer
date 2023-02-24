@@ -1,11 +1,11 @@
 ---
-title: View page resources
-description: Organize resources by frame, domain, type, or other criteria.
+title: View the resource files that make up a webpage
+description: Browse and inspect the resource files that make up a webpage, and filter them by file type, frame, domain, or other criteria.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 12/19/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -20,145 +20,181 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# View page resources
+# View the resource files that make up a webpage
 
-Resources are the files that a page needs in order to display correctly.  Examples of resources include:
-*  CSS files.
-*  JavaScript files.
-*  HTML files.
-*  Image files.
+You can view the resources that make up a web page from within several tools (or _panels_) in Microsoft Edge DevTools, including:
+*  **Network** tool
+*  **Sources** tool
+*  **Application** tool
 
-You can view the resources that make up a web page from within several tools, or panels.
+Resources are the files that make up a webpage.  Examples of resources include:
+*  CSS files
+*  JavaScript files
+*  HTML files
+*  Image files
 
-This guide assumes that you are familiar with the basics of [web development](https://developer.mozilla.org/docs/Learn) and [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md).
-
-
-<!-- ====================================================================== -->
-## Open resources from the Command Menu
-
-When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.
-
-1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS).  The **Open File** dialog opens.
-
-   ![The Open File dialog.](../media/resources-command-menu-empty.msft.png)
-
-1. Select the file from the dropdown list, or start typing the filename and press `Enter` once the correct file is highlighted in the autocomplete box.
-
-   ![Type a filename in the Open File dialog.](../media/resources-command-menu-file-search.msft.png)
+See also:
+*  [Learn web development](https://developer.mozilla.org/docs/Learn) at Mozilla.org
+*  [Overview of DevTools](../../devtools-guide-chromium/overview.md)
 
 
 <!-- ====================================================================== -->
-## Open resources in the Network tool
+## Open resource files from the Command Menu
 
-See [Inspect the details of a resource](../network/index.md#inspect-the-details-of-the-resource) in _Inspect network activity_.
-<!--why?-->
+When you know the name of a webpage's resource file that you want to inspect, the **Command Menu** in DevTools provides a fast way of finding and opening that resource.
 
-<!-- need lead-in -->
+1. In a new window or tab, go to a webpage, such as the [Accessibility-testing features demo](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).  (The source files for that webpage are at [MicrosoftEdge / Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing).)
 
-![Inspect a resource in the Network tool.](../media/resources-network-response.msft.png)
+1. To open DevTools, right-click the webpage, and then select **Inspect**. Or press `Ctrl`+ `Shift`+ `I` (Windows, Linux) or `Command`+ `Option`+ `I` (macOS).
 
-### Reveal resources in the Network tool from other panels
+1. When DevTools has focus, press `Ctrl`+ `P` (Windows, Linux) or `Command`+`P` (macOS). Or, you can click the (![Customize icon](../media/customize-devtools-icon-light-theme.png)) menu button in DevTools and then select **Open file**.  The Command Menu opens, displaying the **Open File** list:
 
-The next section, [Browse resources in the Network panel](#browse-resources-in-the-network-panel), shows how to view resources from various parts of the DevTools UI.  To inspect a resource in the **Network** tool, right-click the resource and select **Reveal in Network panel**.
+   ![The Command Menu, displaying the Open File list](../media/resources-command-menu-empty.msft.png)
 
-![Revealing resources in the Network panel.](../media/resources-sources-page-reveal-in-network-panel.msft.png)
+1. If there's a greater-than (>) prompt, press `Backspace` to get to the **Open File** prompt.
 
+1. Start typing the filename, and then press `Enter` when the correct file is highlighted in the autocomplete box, or select the file from the dropdown list:
 
-<!-- ====================================================================== -->
-## Browse resources in the Network panel
-
-<!-- to do x, -->
-
-1. Open [Log network activity](../network/index.md#log-network-activity) (in the article  _Inspect network activity_) in a new tab or window.
-
-<!-- 1. Do the steps in that section, and then continue below. -->
-
- <!-- open [link] in a new tab or window, and then continue below.. -->
-<!--why?-->
-
-<!-- need lead-in -->
-
-![Page resources in the Network Log.](../media/resources-network-resources.msft.png)
+   ![Typing part of a filename in the Open File list of the Command Menu](../media/resources-command-menu-file-search.msft.png)
 
 
 <!-- ====================================================================== -->
-## Browse resources by directory in the Sources tool
+## Browse resource files in the Network tool
 
-To view the resources of a webpage organized by directory:
+In the **Network** tool, you can inspect the resource files that make up the current webpage, such as `.html`, `.css`, `.js`, and image files.  To learn how to get the details for a specific resource, see [Inspect the details of the resource](../network/index.md#inspect-the-details-of-the-resource) in _Inspect network activity_.
 
-1. Open DevTools.
+1. In a new window or tab, go to a webpage, such as the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/).  (The source files for that webpage are at [MicrosoftEdge / Demos > network-tutorial](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial).)
 
-1. Select the **Sources** tool, and then in the **Navigator** pane in the upper left, select the **Page** tab.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Click the **More options** (...) button to the right of the **Page** tab, and then select **Group by folder**.
+1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tabs** (![The 'More tabs' icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![The 'More Tools' icon](../media/more-tools-icon-light-theme.png)) button.
 
-   ![The Page tab in the Navigator pane of the Sources tool.](../media/resources-sources-page-empty.msft.png)
+1. Make sure the **Record network log** button in the upper left is selected (red).
 
-    Here is a breakdown of the non-obvious items in the previous figure.
+1. Refresh the page.  By default, the **All** filter button is selected, so all the webpage's resource files are listed in the **Network** tool, one row per resource file:
+
+   ![Webpage resource files listed in the Network Log, one resource file per row](../media/resources-network-resources.msft.png)
+
+1. Select a resource to view it.  For example, select the `network-tutorial` path to display `index.html`:
+
+   ![Inspect a resource in the Network tool](../media/resources-network-response.msft.png)
+
+To learn more about how to show the network activity that's generated by the page resources, see [Log network activity](../network/index.md#log-network-activity) in the article  _Inspect network activity_.
+
+
+<!-- ====================================================================== -->
+## Show resource files in the Network tool from other tools
+
+In various tools that list resource files for the webpage, to inspect a resource file in the **Network** tool, right-click the resource file and then select **Reveal in Network panel**.  You may need to first refresh the webpage while the **Network** tool is open.
+
+For example, to go from the **Page** tab's resource list in the **Sources** tool to the **Network** tool:
+
+1. In a new window or tab, go to a webpage, such as the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/).  (The source files for that webpage are at [MicrosoftEdge / Demos > network-tutorial](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial).)
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tabs** (![the More tabs button](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+
+1. Press `Ctrl`+`R` to refresh the page.  The received resource files that make up the webpage are now added as rows in the **Network** tab.  The **demo-to-do/** folder row represents the HTML page - in this case, [index.html](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do).
+
+1. In DevTools, click the **Sources** tab.
+
+1. In the **Page** tab in the upper left, right-click a resource file, and then select **Reveal in Network panel**:
+
+   ![The 'Reveal in Network panel' right-click menuitem on a resource file in the Page tab of the Sources tool](../media/resources-sources-page-reveal-in-network-panel.msft.png)
+
+   If the **Reveal in Network panel** menuitem isn't listed, go to the **Network** tool, make sure the **Record network log** button in the upper left is selected (red), and then refresh the page.
+
+
+<!-- ====================================================================== -->
+## Browse resource files by folder in the Page tab of the Sources tool
+
+You can use the **Sources** tool to view the webpage's resource files organized by directory, as follows:
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
+
+1. In the **Navigator** pane in the upper left, select the **Page** tab.
+
+1. By default, resource files are grouped by folder.  If the resources are all listed alphabetically by file name instead, click the **More options** (...) button to the right of the **Page** tab, and then select **Group by folder**:
+
+   ![The webpage's resource files grouped by folder in the Page tab of the Sources tool](../media/resources-sources-page-empty.msft.png)
+
+    The **Page** tab contains various node types, including:
 
     | Page item | Description |
-    |:--- |:--- |
-    | `top` | The main document [browsing context](https://developer.mozilla.org/docs/Web/HTML/Element/iframe). |
-    | `airhorner.com` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `comlink.global.js` file is probably `https://airhorner.com/scripts/comlink.global.js`. |
-    | `scripts` | A directory. |
+    |---|---|
+    | `top` | The main document _browsing context_, such as a browser tab, a browser window, or a frame. See [Browsing context](https://developer.mozilla.org/en-US/docs/Glossary/Browsing_context) or [\<iframe\>: The Inline Frame element](https://developer.mozilla.org/docs/Web/HTML/Element/iframe). |
+    | `microsoftedge.github.io` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `buttons.js` file is [https://microsoftedge.github.io/Demos/devtools-a11y-testing/buttons.js](https://microsoftedge.github.io/Demos/devtools-a11y-testing/buttons.js). |
+    | `css`, `photos` | Directories. |
     | `(index)` | The main HTML document. |
-    | `sw.js` | A service worker runtime context. |
+    | `buttons.js` | A script to handle button presses on the page. |
 
-1. Select a resource to view it in the **Editor**.
+1. Select a resource file to view it in the Editor of the **Sources** tool:
 
-   ![View a file in the Editor.](../media/resources-sources-page-resource.msft.png)
-
-
-<!-- ====================================================================== -->
-## Browse resources by filename in the Sources tool
-
-By default, the **Page** tab groups resources by directory.  To display the resources for each domain as a flat list, instead of grouping them by directory:
-
-1. Go to the **Sources** tool.
-
-1. In the **Navigator** pane (on the left), select the **Page** tab.
-
-1. Click **More options** `...` and then clear the **Group by folder** checkbox.
-
-   ![The Group by folder option.](../media/resources-sources-page-resource-group-by-folder.msft.png)
-
-    Resources are organized by file type.  Within each file type, the resources are organized alphabetically.
-
-   ![The Page tab after clearing the Group by folder check mark.](../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png)
+   ![Viewing a resource file in the Editor of the Sources tool](../media/resources-sources-page-resource.msft.png)
 
 
 <!-- ====================================================================== -->
-## Browse resources by file type in the **Application** tool
+## Browse resource files sorted by filename in the Page tab of the Sources tool
 
-To group resources together based on their file type:
+By default, the **Page** tab in the **Sources** tool groups resource files by folder.  To instead display all the resource files for each domain grouped together in a single alphabetized list:
 
-1. Select the **Application** tab.  The **Application** tool opens.  By default, the **Manifest** pane usually opens first.
+1. In a new window or tab, go to a webpage, such as the [Accessibility-testing features demo](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).  (The source files for that webpage are at [MicrosoftEdge / Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing).)
 
-   ![The Application tool.](../media/resources-application-mainfest-airhorner.msft.png)
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Scroll down to the **Frames** pane.
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![The More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
 
-   ![The Frames pane.](../media/resources-application-mainfest-airhorner-frames-expanded.msft.png)
+1. In the **Navigator** pane in the upper left, select the **Page** tab.
 
-1. Expand the sections you're interested in.
+1. Click **More options** (...) and then clear the **Group by folder** option:
 
-1. Select a resource to view it.
+   ![The Group by folder option in the Page tab of the Sources tool](../media/resources-sources-page-resource-group-by-folder.msft.png)
 
-   ![View a resource in the Application panel.](../media/resources-application-mainfest-airhorner-expanded-resources.msft.png)
+   All the resource files for each domain (such as **Top**) are grouped together in a single alphabetized list:
+
+   ![The Page tab in the Sources tool when the 'Group by folder' option is cleared](../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png)
 
 
 <!-- ====================================================================== -->
-## Browse files by type in the Network panel
+## Browse resource files by file type in the Frames tree in the Application tool
 
-See [Filter by resource type](../network/index.md#filter-by-resource-type).
+One way to view webpage resources grouped by file type is by using the **Frames** tree in the **Application** tool:
 
-![Filter for CSS in the Network Log.](../media/resources-network-resources-filter-css.msft.png)
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs button](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![The More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+
+1. Select the **Application** tab.  The **Application** tool opens and by default shows the **Manifest** pane first:
+   
+   ![The Application tool](../media/resources-application-mainfest-airhorner.msft.png)
+
+1. Scroll down to the **Frames** pane and then expand the folder that you're interested in:
+
+   ![The Frames tree in the Application tool](../media/resources-application-mainfest-airhorner-frames-expanded.msft.png)
+
+1. Select a resource to view it in the **Application** tool:
+
+   ![Viewing a resource in the Application tool](../media/resources-application-mainfest-airhorner-expanded-resources.msft.png)
+
+
+<!-- ====================================================================== -->
+## Browse resource files by file type by filtering in the Network tool
+
+In the **Network** tool, when you view the list of resource files that make up the current webpage, you can filter which type of resources to list, such as only showing `.css` or `.js` files.  For example, you can click **CSS** to filter and only display CSS files:
+
+![Filtering to only list CSS resource files in the Network Log](../media/resources-network-resources-filter-css.msft.png)
+
+The above screenshot shows `main.css`, which is part of the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/).  The source files for that page are at [MicrosoftEdge / Demos > network-tutorial](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial).
+
+For more information, see [Filter by resource type](../network/index.md#filter-by-resource-type) in _Inspect network activity_.
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/resources/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -29,15 +29,26 @@ On the web, such a policy is defined via an HTTP header or `meta` element.  Insi
 <!-- ====================================================================== -->
 ## Default Policy Restrictions
 
-Packages that don't define a `manifest_version` don't have a default content security policy.  Packages that use `manifest_version` 2 have the following default content security policy:
+Packages that don't define a `manifest_version` don't have a default content security policy.
+
+Packages that use `manifest_version` have the following default content security policy:
+
+#### [Manifest V2](#tab/v2)
 
 ```javascript
 script-src 'self'; object-src 'self'
 ```
 
+#### [Manifest V3](#tab/v3)
+
+```javascript
+script-src 'self'; object-src 'self'; worker-src 'self'
+```
+
 The policy adds security by limiting Extensions and applications in three ways:
 
-**Eval and related functions are disabled**
+
+#### Eval and related functions are disabled
 
 Code like the following doesn't work:
 
@@ -57,7 +68,8 @@ window.setInterval(function() { alert('hi'); }, 10);
 function() { return foo && foo.bar && foo.bar.baz };
 ```
 
-**Inline JavaScript aren't run**
+
+#### Inline JavaScript aren't run
 
 Inline JavaScript aren't run.  This restriction bans both inline `<script>` blocks and inline event handlers, such as `<button onclick="...">`.
 
@@ -148,7 +160,8 @@ document.addEventListener('DOMContentLoaded', function () {
 </html>
 ```
 
-**Only local script and object resources are loaded**
+
+#### Only local script and object resources are loaded
 
 Script and object resources are only able to be loaded from the Extension package, not from the web at large.  This ensures that your Extension only runs the code you specifically approved, preventing an active network attacker from maliciously redirecting your request for a resource.
 
@@ -186,7 +199,8 @@ Use the following approach instead.  Download the file, include it in your packa
 <!-- ====================================================================== -->
 ## Relaxing the default policy
 
-**Inline Script**
+
+#### Inline Script
 
 <!-- Up until Chrome 45, there was no mechanism for relaxing the restriction against running inline JavaScript.  In particular, setting a script policy that includes `'unsafe-inline'` has no effect.
 
@@ -194,7 +208,8 @@ As of Chrome 46, -->
 
 Inline scripts can be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm (sha256, sha384 or sha512).  For an example, see [W3C > Hash usage for \<script\> elements](https://www.w3.org/TR/CSP2#script-src-hash-usage).
 
-**Remote Script**
+
+#### Remote Script
 
 If you require some external JavaScript or object resources, you can relax the policy to a limited extent by allowlisting secure origins from which scripts should be accepted.  Verify that runtime resources loaded with with elevated permissions of an Extension are exactly the resources you expect, and aren't replaced by an active network attacker.  As [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) are both trivial and undetectable over HTTP, those origins aren't accepted.
 
@@ -216,7 +231,8 @@ A relaxed policy definition which allows script resources to be loaded from `exa
 
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample Extension, and a brief tutorial that goes into more detail.  -->
 
-**Evaluated JavaScript**
+
+#### Evaluated JavaScript
 
 The policy against `eval()` and related functions like `setTimeout(String)`, `setInterval(String)`, and `new Function(String)` can be relaxed by adding `unsafe-eval` to your policy:
 
@@ -293,5 +309,5 @@ Since content scripts aren't affected by the CSP of the page, this a great reaso
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/extensions/contentSecurityPolicy).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

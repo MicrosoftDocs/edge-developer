@@ -23,7 +23,7 @@ The `"name"` string of each debug configuration populates dropdown lists in seve
 
 1. Select **File** > **Close Folder**.
 
-1. Select **File** > **Open Recent** > `C:\Users\myusername\Documents\GitHub\Demos\demo-to-do\index.html`, cloned per [Step 5: Clone the Demos repo](./install.md#step-5-clone-the-demos-repo) in _Installing the DevTools extension for Visual Studio Code_.
+1. Select **File** > **Open Recent** > `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`, cloned per [Step 5: Clone the Demos repo](./install.md#step-5-clone-the-demos-repo) in _Installing the DevTools extension for Visual Studio Code_.
 
    Suppose no `launch.json` file exists in the `.vscode` directory.
 
@@ -152,7 +152,7 @@ This configuration name doesn't appear directly in the UI.  This configuration i
             "runtimeArgs": [
                 "--remote-debugging-port=9222"
             ],
-            "url": "c:\\Users\\myusername\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", // Provide your project's url to finish configuring
+            "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", // Provide your project's url to finish configuring
             "presentation": {
                 "hidden": true
             }
@@ -175,7 +175,7 @@ This configuration name **Launch Microsoft Edge in headless mode** appears in th
                 "--headless",
                 "--remote-debugging-port=9222"
             ],
-            "url": "c:\\Users\\myusername\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", // Provide your project's url to finish configuring
+            "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", // Provide your project's url to finish configuring
             "presentation": {
                 "hidden": true
             }
@@ -194,7 +194,7 @@ This configuration name doesn't appear directly in the UI.  This configuration i
             "type": "vscode-edge-devtools.debug",
             "name": "Open Edge DevTools",
             "request": "attach",
-            "url": "c:\\Users\\myusername\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", // Provide your project's url to finish configuring
+            "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", // Provide your project's url to finish configuring
             "presentation": {
                 "hidden": true
             }

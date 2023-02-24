@@ -23,7 +23,7 @@ Verification usually takes three to five business days. If more than five days h
 
 This section describes the types of verification, what is verified, and suggestions for meeting verification requirements.
 
-### Verify Email ownership
+#### Verify Email ownership
 
 Email ownership verifies that the primary contact (primary email) address is valid.
 
@@ -31,20 +31,20 @@ Email ownership verifies that the primary contact (primary email) address is val
 * Don't use a personal email address.  You must use an email address associated with a company domain, such as \<alias\>@contoso.com.
 * Don't use a tenant user credential that's not associated with email, such as \<alias\>@contoso on microsoft.com.
 
-#### Suggestions
+##### Suggestions
 
 Be sure to flag email from Microsoft.com as a **safe** domain, and check your junk email folders.
 
 If you don't receive the email ownership verification email message within one business day, you can ask us to send the email again. On to your Partner Center account, go to **Home > Account settings**. On the **Account settings | My profile** page, select **Resend verification email**.
 
-### Verify Employment
+#### Verify Employment
 
 Employment verification confirms that your primary contact is an employee of the enrolling company and that the domain entered in the registration form belongs to the enrolling company. The following information is used to verify employment:
 
 * The company's public website has the same domain that was entered in the registration form.
 * The contact has an active email address on an email domain owned by the company.
 
-#### Suggestions
+##### Suggestions
 
 For verification proof, you can submit a screenshot of the website showing the name, address, contact information, and domain of the organization.
 
@@ -54,11 +54,11 @@ If employment verification is rejected, or if the domain of the registered email
 * Domain ownership records, such as [whois](https://www.whois.com/whois).
 * Domain purchase invoices or registry confirmation records.
 
-### Verify Business
+#### Verify Business
 
 Business verification confirms that the enrolling company is a legitimate business entity and at the address in the application.
 
-#### Suggestions
+##### Suggestions
 
 Submit one of the following documents for business verification:
 

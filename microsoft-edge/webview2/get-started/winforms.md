@@ -128,9 +128,9 @@ Use NuGet to add the WebView2 SDK to the project, as follows:
 
    _To zoom, right-click > **Open image in new tab**._
 
-1. Click the **Install** (or **Update**) button.  The **Preview Changes** dialog box opens:
+1. Click the **Install** (or **Update**) button.  The **Preview Changes** dialog opens:
 
-   ![The Preview Changes dialog box](media/winforms-install-webview2-preview.png)
+   ![The Preview Changes dialog](media/winforms-install-webview2-preview.png)
 
 1. Click the **OK** button.
 
@@ -569,7 +569,7 @@ If you were to distribute the app that results from this tutorial, you would nee
 
 * [Distribute your app and the WebView2 Runtime](../concepts/distribution.md)
 * [WinForms sample app](../samples/webview2windowsformsbrowser.md) - Demonstrates more WebView2 APIs than the present tutorial.
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - Conceptual and how-to articles about building and deploying WebView2 apps.
-* [Microsoft.Web.WebView2.WinForms](/dotnet/api/microsoft.web.webview2.winforms) - API Reference.
-
-<!-- todo: remove "[see also]" link, replace by direct links -->
+* [WebView2 API Reference](../webview2-api-reference.md)
+   * [Core](/dotnet/api/microsoft.web.webview2.core)
+   * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
+   * [Windows Forms](/dotnet/api/microsoft.web.webview2.winforms)

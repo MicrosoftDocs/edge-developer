@@ -61,7 +61,7 @@ landingContent:
 
       - linkListType: whats-new
         links:
-          - text: What's new in Microsoft Edge DevTools
+          - text: What's New in Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
 
       - linkListType: how-to-guide
@@ -175,11 +175,11 @@ landingContent:
             url: /microsoft-edge/webview2/webview2-api-reference
 # =============================================================================
 # Card r2c3
-  - title: Web platform
+  - title: Development tips for Microsoft Edge
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Web platform overview  # new firstchild article
+          - text: Development tips for Microsoft Edge
             url: /microsoft-edge/web-platform/web-platform
 
           - text: Site compatibility-impacting changes

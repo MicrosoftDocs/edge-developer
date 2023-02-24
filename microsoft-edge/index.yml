@@ -93,6 +93,9 @@ conceptualContent:
             - itemType: reference
               text: Set Microsoft Edge as the default browser
               url: /deployedge/edge-default-browser
+            - itemType: reference
+              text: Manage Microsoft Edge on iOS and Android with Intune
+              url: /mem/intune/apps/manage-microsoft-edge
         # Card
         - title: Manage security and privacy
           links:
@@ -155,7 +158,7 @@ conceptualContent:
               url: /microsoft-edge/devtools-guide-chromium/overview
               itemType: overview
 
-            - text: What's new in Microsoft Edge DevTools
+            - text: What's New in Microsoft Edge DevTools
               url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
               itemType: whats-new
 
@@ -302,9 +305,9 @@ conceptualContent:
               itemType: how-to-guide
               text: webhint extension for Visual Studio Code
         # Card
-        - title: Web platform
+        - title: Development tips for Microsoft Edge
           links:
-            - text: Web platform overview
+            - text: Development tips for Microsoft Edge
               url: /microsoft-edge/web-platform/web-platform  # new firstchild article
               itemType: overview
 

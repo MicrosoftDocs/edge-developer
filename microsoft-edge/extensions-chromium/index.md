@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/03/2022
+ms.date: 02/02/2023
 ---
 # Overview of Microsoft Edge extensions
 
@@ -21,13 +21,13 @@ An extension should include at least the following features:
 
 To work directly with a specific part of the browser, such as a window or tab, you must send API requests and must often reference the browser by name.
 
-![A Microsoft Edge extension.](./media/example-extension-screenshot.png)
+![A Microsoft Edge extension](./media/example-extension-screenshot.png)
 
 
 <!-- ====================================================================== -->
 ## Basic guidance
 
-Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  Some of the most popular browsers to build extensions for include Safari, Firefox, Chrome, Opera, Brave, and Microsoft Edge. 
+Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  Some of the popular browsers to build extensions for include Microsoft Edge, Safari, Firefox, Chrome, Opera, and Brave. 
 
 The following table isn't exhaustive or definitive. It is just a starting point for your research.
 
@@ -81,13 +81,13 @@ Some stores allow you to download listed extensions from other browsers.  Howeve
 
 Users might need to install your extension in different browsers. In this scenario, you can migrate existing Chromium extensions from one browser to another.
 
-### Migrate an existing extension to Microsoft Edge
+#### Migrate an existing extension to Microsoft Edge
 
 If you've already developed an extension for another Chromium-based browser, you can submit it to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home). You don't need to rewrite your extension or verify that it works in Microsoft Edge.  However, when you migrate an existing Chromium extension to other Chromium browsers, make certain the same APIs or alternatives are available for your target browser.
 
 For more information on porting your Chrome extension to Microsoft Edge, see [Port Chrome extensions to Microsoft Edge](developer-guide/port-chrome-extension.md). After you port your extension to the target browser, the next step is to publish it.
 
-### Publish to the Microsoft Edge Add-ons website
+#### Publish to the Microsoft Edge Add-ons website
 
 To start publishing your extension to Microsoft Edge, you must [register for a developer account](https://developer.microsoft.com/registration) with a Microsoft account (MSA) email account to submit your extension listing to the store.  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or `@hotmail.com`.  When you choose an email address to register, consider whether you must transfer or share ownership of the Microsoft Edge extension with other people in your organization.  After registration is complete, you can create a new extension submission to the store.
 

@@ -14,7 +14,7 @@ This article covers how to set up your development tools and create an initial W
 
 In this tutorial, you use the **Blank App, Packaged (WinUI in Desktop)** Visual Studio project template to create a blank WinUI 3 project.  That project template uses the WindowsAppSDK, which includes the WebView2 SDK.  You add a WebView2 control.  You then add an address bar and logic to display a warning dialog when the user tries to navigate to a URL with an `http://` prefix.
 
-![Sample app displaying the Bing website](winui-images/getting-started-bing.png)
+![App displaying the Bing website](winui-images/getting-started-bing.png)
 
 
 #### Completed project
@@ -66,23 +66,27 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
 1.  If Visual Studio is not running, start Visual Studio (not Visual Studio Code).  In the Visual Studio startup window, click the **Create a new project** card.  The **Create a new project** window opens.
 
-    Or, if Visual Studio is running, select **File** > **New** > **Project**.  The **Create a new project** dialog box opens.
+    Or, if Visual Studio is running, select **File** > **New** > **Project**.  The **Create a new project** dialog opens.
 
     **Turning on Developer Mode:**  When Visual Studio opens at some point during the present article's steps, you might be prompted to turn on Developer Mode for your computer.  For more information, if needed, see [Enable your device for development](/windows/apps/get-started/enable-your-device-for-development), at _Build desktop apps for Windows_.
 
-1.  In the **Create a new project** dialog box, in the **Search for templates** field, enter **WinUI 3 in Desktop**:
+1.  In the **Create a new project** dialog, in the **Search for templates** field, enter **WinUI 3 in Desktop**:
 
     ![Searching on "WinUI 3 in Desktop" to create a new project](winui-images/create-project-winui3-desktop.png)
 
 1.  Click the **Blank App, Packaged (WinUI in Desktop)** card to select it, and then click the **Next** button.
 
-    If **WinUI** templates aren't listed, you need to install project templates as mentioned above, from [Install tools for the Windows App SDK](/windows/apps/windows-app-sdk/set-up-your-development-environment).
+    If **WinUI** templates aren't listed, you need to install project templates as mentioned above, from [Install tools for the Windows App SDK](/windows/apps/windows-app-sdk/set-up-your-development-environment).  Additional tips to get the template to appear:
 
-    The **Configure your new project** dialog box appears.
+    After installing "default" options for Visual Studio 2022 Community edition, in Visual Studio Installer, click the **.NET** card, then on the right, select the checkbox **Windows App SDK C# Templates**.
+
+    If the correct project template still doesn't appear: in the Visual Studio Installer, click the **UWP** card to select it, select the **v143 C++ tools** checkbox on the right, and then click the **Modify** button.
+
+    The **Configure your new project** dialog appears.
 
 1.  In the **Project name** text box, enter a project name, such as **MyWebView2WinUI3**:
 
-    ![The 'Configure your new project' dialog box](winui-images/config-new-proj.png)
+    ![The 'Configure your new project' dialog](winui-images/config-new-proj.png)
 
 1.  In the **Location** text box, enter or navigate to a location, such as `C:\Users\username\Documents\WebView2`.
 
@@ -96,7 +100,7 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
     *  The `MainWindow.xaml.cs` file defines a `MainWindow` class that represents the main window displayed by your app instance.  The classes derive from types in the `Microsoft.UI.Xaml` namespace of WinUI.
 
-1.  In the **Solution Configurations** dropdown list, select **Debug**.
+1.  In the **Solution Configurations** dropdown list (in the middle of the top of the window), select **Debug**.
 
 1.  In the **Solution Platforms** dropdown list, select a platform, such as **x64**.
 
@@ -106,7 +110,7 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
     ![The new blank WinUI 3 app](winui-images/blank-winui3-app.png)
 
-1.  Close the sample app.
+1.  Close the app.
 
 
 #### Updating target version numbers
@@ -128,9 +132,9 @@ The above values represent:
 
 This tutorial project is based on the project template **Blank App, Packaged (WinUI in Desktop)**.  This project template uses the WindowsAppSDK, which includes the WebView2 SDK.
 
-Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to a WebView2 control to the blank WinUI 3 sample app project, as follows.
+Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 control to the blank WinUI 3 app project, as follows:
 
-1.  In Visual Studio, in Solution Explorer, select `MainWindow.xaml` to open it in the code editor.
+1.  In Visual Studio, in Solution Explorer, double-click `MainWindow.xaml` to open it in the code editor.
 
 1.  Add the WebView2 XAML namespace by inserting the following attribute inside the `<Window>` start tag:
 
@@ -157,7 +161,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to a WebView2 control 
     </Window>
     ```
     
-1.  To add the WebView2 control, replace the `<StackPanel>` tags with the following `<Grid>` code.  The `Source` property, near the bottom, sets the initial URI that's displayed in the WebView2 control (`https://www.microsoft.com`):
+1.  To add the WebView2 control, replace the entire `<StackPanel>` element with the following `<Grid>` code.  The `Source` property, near the bottom, sets the initial URI that's displayed in the WebView2 control (`https://www.microsoft.com`):
 
     ```xml
     <Grid>
@@ -189,19 +193,19 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to a WebView2 control 
 
 1.  Press **F5**, to build and run the project.
 
-1.  The sample application is a WebView2 host app that includes the WebView2 control.  The WebView2 control displays the website `https://www.microsoft.com`:
+1.  The app is a WebView2 host app that includes the WebView2 control.  The WebView2 control displays the website `https://www.microsoft.com`:
 
     ![The WebView2 control displaying the microsoft.com webpage](winui-images/getting-started-part-3.png)
 
-1.  Close the sample app.
+1.  Close the app.
 
 
 <!-- ====================================================================== -->
 ## Step 5 - Add navigation controls
 
-To allow users to control which webpage is displayed in the WebView2 control, add an address bar to the sample app, as follows:
+To allow users to control which webpage is displayed in the WebView2 control, add an address bar to the app, as follows:
 
-1.  In `MainWindow.xaml`, paste the following code inside the `<Grid>` element that contains the `<controls.WebView2>` element:
+1.  In `MainWindow.xaml`, paste the following code inside the `<Grid>` element that contains the `<controls:WebView2>` element:
 
     ```xml
        <TextBox Name="addressBar" Grid.Column="0"/>
@@ -231,7 +235,7 @@ To allow users to control which webpage is displayed in the WebView2 control, ad
     </Grid>
     ```
     
-1.  In `MainWindow.xaml.cs`, copy the following code into `myButton_Click`.  This code navigates the WebView2 control to the URL entered in the address bar.
+1.  In `MainWindow.xaml.cs`, paste the following code into `myButton_Click`, overwriting the existing `myButton_Click` method (which is nearly empty).  This code navigates the WebView2 control to the URL entered in the address bar.
 
     ```csharp
     private void myButton_Click(object sender, RoutedEventArgs e)
@@ -254,19 +258,19 @@ To allow users to control which webpage is displayed in the WebView2 control, ad
 
 1.  Enter a new complete URL in the address bar, such as **https://www.bing.com**, and then click the **Go** button.
 
-    The WebView2 control in the sample app displays the Bing website.  The address bar displays the URL, such as `https://www.bing.com`:
+    The WebView2 control in the app displays the Bing website.  The address bar displays the URL, such as `https://www.bing.com`:
 
-    ![The sample app displays the Bing website](winui-images/getting-started-bing.png)
+    ![The app displays the Bing website](winui-images/getting-started-bing.png)
 
 1.  Enter an incomplete URL in the address bar, such as `bing.com`, and then click the **Go** button.
 
-    An `ArgumentException` exception is thrown,<!--and appears after you close the app--> because the URL doesn't start with `http://` or `https://`.
+    An `ArgumentException` exception is thrown, and appears after you close the app, because the URL doesn't start with `http://` or `https://`.
 
-1.  Close the sample app.  The following dialog boxes might appear:
+1.  Close the app.  The following Visual Studio dialogs might appear:
 
     ![Debugger not configured](winui-images/debugger-not-configd.png)
 
-1.  These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
+1.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialogs.
 
 <!--
 maintenance link (keep)
@@ -277,7 +281,7 @@ maintenance link (keep)
 
 In this section, you add code to import the WebView2 Core library.
 
-1.  In `MainWindow.xaml.cs`, add the following line at the top:
+1.  In `MainWindow.xaml.cs`, add the following line at the top, above the other `using` statements:
 
     ```csharp
     using Microsoft.Web.WebView2.Core;
@@ -304,7 +308,7 @@ In this section, you add code to import the WebView2 Core library.
 
     As an example of how to use the events, register a handler for `NavigationStarting` that cancels any non-HTTPS requests, as follows:
 
-1.  In `MainWindow.xaml.cs`, modify the constructor to register the `EnsureHttps` method:
+1.  In `MainWindow.xaml.cs`, in the constructor, add the following `NavigationStarting` line, to register the `EnsureHttps` method:
 
     ```csharp
     public MainWindow()
@@ -335,19 +339,19 @@ In this section, you add code to import the WebView2 Core library.
 
 1.  Press **F5** to build and run the project.
 
-1.  Enter an HTTP URL, such as `http://bing.com`.
+1.  In the app, in the Address bar, enter an HTTP URL, such as `http://bing.com`, and then click the **Go** button.
 
-    Navigation is blocked to HTTP sites. <!--need clearer instructions, results description, what if you get: -->
+    Nothing happens, because navigation is blocked to HTTP sites, and we haven't yet added a dialog to provide feedback.
 
-1.  Enter an HTTPS URL, such as `https://bing.com`.
+1.  Enter an HTTPS URL, such as `https://bing.com`, and then click the **Go** button.
 
-    Navigation is allowed for HTTPS sites.
+    The app navigates to the specified page, because navigation is allowed for HTTPS sites.
 
-1.  Close the sample app.  The following dialog boxes might appear:
+1.  Close the app.  The following Visual Studio dialogs might appear:
 
     ![Debugger not configured](winui-images/debugger-not-configd.png)
 
-1.  These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
+1.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialogs.
 
 
 #### WinRT CoreWebView2 object availability
@@ -371,7 +375,7 @@ As an example, next, you add scripts that send an alert when a user tries to ope
 <!-- todo: correct link? -->
 <!-- [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync). -->
 
-1.  Modify the `EnsureHttps` function as follows:
+1.  In the `EnsureHttps` method, add the following `ExecuteScriptAsync` line:
 
     ```csharp
     private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArgs args)
@@ -393,11 +397,17 @@ As an example, next, you add scripts that send an alert when a user tries to ope
 
 1.  Press **F5** to build and run the project.
 
-1.  Try to open a non-HTTPS URL, such as `http://www.bing.com`.
+1.  In the app's Address bar, enter a non-HTTPS URL, such as `http://www.bing.com`, and then click the **Go** button.
 
     The app's WebView2 control displays an alert dialog for non-HTTPS websites, saying that the non-HTTPS `uri` is not safe:
 
-    ![Sample app WebView2 control displays an alert dialog for non-HTTPS websites](winui-images/getting-started-script.png)
+    ![The app's WebView2 control displays an alert dialog for non-HTTPS websites](winui-images/getting-started-script.png)
+
+1.  Close the app.  The following Visual Studio dialog boxes might appear:
+
+    ![Debugger not configured](winui-images/debugger-not-configd.png)
+
+1.  These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
 
 Congratulations, you built your first WebView2 app!
 
@@ -414,6 +424,27 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.source#microsoft-ui-xaml-controls-webview2-source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async#microsoft-ui-xaml-controls-webview2-ensurecorewebview2async) is initially called.
 
 
+<!-- ------------------------------ -->
+#### Setting DefaultBackgroundColor
+
+In WebView2 for WinUI 3, the `DefaultBackgroundColor` setting exists on the WebView2 XAML object.  For example:
+
+```csharp
+public MainWindow()
+{
+    this.InitializeComponent();
+    MyWebView.DefaultBackgroundColor = Colors.LightBlue;
+}
+```
+
+
+<!-- ------------------------------ -->
+#### Transparency
+
+WinUI 3 doesn't support transparent backgrounds.  See [Transparent background support for WebView2? · Issue #2992](https://github.com/microsoft/microsoft-ui-xaml/issues/2992).
+
+
+<!-- ------------------------------ -->
 #### API limitations
 
 The following interfaces aren't accessible in WinUI 3:
@@ -424,34 +455,18 @@ The following interfaces aren't accessible in WinUI 3:
 
 
 <!-- ====================================================================== -->
-## API Reference
-
-WinUI 3 API Reference (Windows App SDK):
-* [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2) - in API reference for Windows desktop apps > WinRT APIs.
-
-All platforms/languages:
-* [WebView2 API Reference](../webview2-api-reference.md) - API Reference for each platform.
-
-
-<!-- ====================================================================== -->
 ## See also
 
-developer.microsoft.com:
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
-
-Local pages:
+* [WebView2 API Reference](../webview2-api-reference.md)
 * [Introduction to Microsoft Edge WebView2](../index.md) - overview of features.
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 appsDevelopment best practices](../concepts/developer-guide.md)
+
+developer.microsoft.com:
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 GitHub:
 * [Getting Started with WebView2 in WinUI3](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted#readme)
 * [Spec: The WebView2 Xaml control](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - the WinUI 3.0 version of the WebView2 control.
 * [microsoft-ui-xaml repo > Issues](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
-
-<!--
-state why this link is in this tutorial page and what its relevance is, or else delete:
-* [Windows Update: FAQ](https://support.microsoft.com/help/12373).
--->

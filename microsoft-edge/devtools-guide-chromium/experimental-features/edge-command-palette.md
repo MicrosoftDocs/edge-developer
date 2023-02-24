@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/24/2022
+ms.date: 01/02/2023
 ---
 # Run commands via keyboard with Command Palette
 
@@ -31,7 +31,6 @@ By default, Command Palette isn't enabled. To enable the Command Palette experim
 
    ![Enabling the Command Palette flag in the edge://flags page](./media/command-palette-flag.png)
 
-The flags page for Microsoft Edge 107 or later shows the shortcut `Ctrl+Q`.
 
 <!-- ====================================================================== -->
 ## Open Command Palette
@@ -71,7 +70,7 @@ To open the DevTools Device Emulation tool by using Command Palette:
 <!-- ====================================================================== -->
 ## Create and access snippets
 
-The DevTools [**Snippets**](../javascript/snippets.md) tool allows you to save JavaScript code and execute it on any webpage. If you run the same code repeatedly on webpages, create a snippet for that code, and then use Command Palette to quickly access your code snippet.
+The DevTools [**Snippets**](../javascript/snippets.md) tool allows you to save JavaScript code and run it on any webpage. If you run the same code repeatedly on webpages, create a snippet for that code, and then use Command Palette to quickly access your code snippet.
 
 To open the DevTools **Snippets** tab by using Command Palette:
 

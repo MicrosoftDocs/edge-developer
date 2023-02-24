@@ -103,10 +103,10 @@ If you build the **WebView2WindowsFormsBrowser** project and get error messages 
 
 1. In the `Downloads` folder, double-click the file, such as `ndp462-devpack-kb3151934-enu.exe`.
 
-   The **Microsoft .NET Framework Developer Pack** license agreement dialog box appears:
+   The **Microsoft .NET Framework Developer Pack** license agreement dialog appears:
 
-   ![The Microsoft .NET Framework Developer Pack license agreement dialog box](media/webview2windowsformsbrowser-net-fwk-license-462.png)
-   <!-- ![The Microsoft .NET Framework Developer Pack license agreement dialog box](media/webview2windowsformsbrowser-net-fwk-license.png) 4.8, keep as-in, in case needed -->
+   ![The Microsoft .NET Framework Developer Pack license agreement dialog](media/webview2windowsformsbrowser-net-fwk-license-462.png)
+   <!-- ![The Microsoft .NET Framework Developer Pack license agreement dialog](media/webview2windowsformsbrowser-net-fwk-license.png) 4.8, keep as-in, in case needed -->
 
 1. Select the **I agree to the license terms and conditions** checkbox, and then click the **Install** button.
 
@@ -114,10 +114,10 @@ If you build the **WebView2WindowsFormsBrowser** project and get error messages 
 
 1. Click the **Yes** button.
 
-   The Microsoft .NET Framework Developer Pack **Setup Successful** dialog box appears:
+   The Microsoft .NET Framework Developer Pack **Setup Successful** dialog appears:
 
-   ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog box](media/webview2windowsformsbrowser-net-dev-pak-success-462.png)
-   <!-- ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog box](media/webview2windowsformsbrowser-net-dev-pak-success.png) 4.8, keep as-in, in case needed -->
+   ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog](media/webview2windowsformsbrowser-net-dev-pak-success-462.png)
+   <!-- ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog](media/webview2windowsformsbrowser-net-dev-pak-success.png) 4.8, keep as-in, in case needed -->
 
 1. Click the **Close** button.
 
@@ -181,4 +181,5 @@ At the top of Visual Studio, set the build target, as follows:
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 API Reference](../webview2-api-reference.md)
 * [Get started with WebView2 in WinForms apps](../get-started/winforms.md)

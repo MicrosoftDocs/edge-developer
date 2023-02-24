@@ -75,7 +75,7 @@ Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsof
 
    You can only upload one package at a time. Your submission is blocked if the package upload isn't successful on the **Packages** webpage.
 
-1. To upload your package, drag and drop the zip file to the **Drag your package here (.zip)** section of the webpage. Or you can select **Browse your files** to open a dialog box to select the package to upload.
+1. To upload your package, drag and drop the zip file to the **Drag your package here (.zip)** section of the webpage. Or you can select **Browse your files** to open a dialog to select the package to upload.
 
    After your package is uploaded, it's validated. If there's a validation error, resolve the issue and try uploading your package again.
 
@@ -87,6 +87,7 @@ Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsof
 
 On the **Availability** webpage, enter the following information about the availability of your extension.
 
+
 #### Visibility
 
 Select one of the following visibility options to define whether your extension is discoverable in the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
@@ -96,6 +97,7 @@ Select one of the following visibility options to define whether your extension 
 *  `Hidden` - Removes extensions from search results or browsing in the Microsoft Edge Add-ons website.  To distribute hidden extensions in the Microsoft Edge Add-ons website, you must share the listing URL to the extension with your customers.
 
 You can change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to **Public** retain access to your extension and receive any updates you make available through the Microsoft Edge Add-ons website.
+
 
 #### Markets
 
@@ -152,6 +154,7 @@ The information provided in the following section is displayed to users who revi
 | YouTube video URL (optional) | You can include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing webpage of your extension.  |
 | Short description (required) | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it.  |
 | Search terms (optional) | `Search terms` are single words or phrases that help discover your extension when a user searches in the Microsoft Edge Add-ons website.  The search terms aren't displayed to users.  |
+
 
 #### YouTube video URL requirements
 

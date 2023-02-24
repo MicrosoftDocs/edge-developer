@@ -122,7 +122,7 @@ const playwright = require('playwright');
 })();
 ```
 
-![The example.png file produced by example.js.](../media/playwright-example.png)
+![The example.png file produced by example.js](../media/playwright-example.png)
 
 `example.js` is a simple demonstration of the automation and testing scenarios that are enabled by Playwright.  To take screenshots in other web browsers, change the above code from `await playwright.chromium.launch` to the following code:
 
