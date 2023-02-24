@@ -82,7 +82,7 @@ Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as fol
 
     ![Debuggable WebView2 Instance](./media/debuggable-webviews.png)
 
-1.  Go to `edge://inspect`.  In the box under **Connect to a remote Windows device**, enter `http://<Device Portal URL>`, and then click **Connect to Device**.
+1.  Go to `edge://inspect`.  In the **Connect to a remote Windows device** text box, enter `http://<Device Portal URL>`, and then click **Connect to Device**.
 
 1.  Verify that you can successfully connect, so that your debuggable WebView2 control is displayed:
 
