@@ -90,6 +90,10 @@ Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as fol
 
 1.  Click **inspect**.  Microsoft Edge DevTools opens for the WebView2 control.
 
+1.  Verify Microsoft Edge DevTools opens:
+
+    ![DevTools Inspect Window](./media/devtools-inspect.png)
+
 1.  Debug WebView2 in the **Microsoft Edge DevTools** tab.
 
 
