@@ -128,9 +128,9 @@ Use NuGet to add the WebView2 SDK to the project, as follows:
 
    _To zoom, right-click > **Open image in new tab**._
 
-1. Click the **Install** (or **Update**) button.  The **Preview Changes** dialog box opens:
+1. Click the **Install** (or **Update**) button.  The **Preview Changes** dialog opens:
 
-   ![The Preview Changes dialog box](media/winforms-install-webview2-preview.png)
+   ![The Preview Changes dialog](media/winforms-install-webview2-preview.png)
 
 1. Click the **OK** button.
 

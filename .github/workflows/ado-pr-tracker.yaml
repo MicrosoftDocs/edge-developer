@@ -18,6 +18,6 @@ jobs:
           ado_organization: 'microsoft'
           ado_project: 'Edge'
           ado_tags: 'edge-docs-github-pr'
-          ado_area_path: 'Edge\Dev Experience\Ecosystem\Content'
+          ado_area_path: 'Edge\Web Experience\Ecosystem\Content'
           ado_work_item_type: 'Deliverable'
           ado_dont_check_if_exist: true

@@ -101,9 +101,9 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 1. Click the **Yes** button.
 
-1. A dialog box appears, "Before we get started, close Visual Studio":
+1. A dialog appears, "Before we get started, close Visual Studio":
 
-   ![Dialog box: Before we get started, close Visual Studio](media/winui2-before-we-get-started.png)
+   ![dialog: Before we get started, close Visual Studio](media/winui2-before-we-get-started.png)
 
 1. Click the **Continue** button.
 
@@ -121,7 +121,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 <!-- ====================================================================== -->
 ## Step 3 - Create a UWP app
 
-1. If Visual Studio is open, select **File** > **New** > **Project**.  The **Create a new project** dialog box opens.
+1. If Visual Studio is open, select **File** > **New** > **Project**.  The **Create a new project** dialog opens.
 
    Or, if Visual Studio is closed, open it, and then in the startup screen of Visual Studio, click the **Create a new project** card:
 
@@ -129,13 +129,13 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 1. In the **Search for templates** text box at the top, enter **C# Blank App (Universal Windows)**, and then select the **C# Blank App (Universal Windows)** card:
 
-   ![The 'Create a new project' dialog box displays the blank app (Universal Windows) card](media/winui2-getting-started-create-project.png)
+   ![The 'Create a new project' dialog displays the blank app (Universal Windows) card](media/winui2-getting-started-create-project.png)
 
 1. Click the **Next** button.
 
    The **Configure your new project** dialog appears, for a **Blank App (Universal Windows)**:
 
-   ![The 'Configure your new project' dialog box displays text boxes for a Blank App (Universal Windows)](media/winui2-getting-started-config-new-project.png)
+   ![The 'Configure your new project' dialog displays text boxes for a Blank App (Universal Windows)](media/winui2-getting-started-config-new-project.png)
 
 1. In the **Project name** text box, enter a project name, such as `MyUWPGetStartApp`.
 
@@ -144,18 +144,18 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 1. Click the **Create** button.
 
 <!-- apparently old ui, doesn't appear in latest vs2022 july 11 2022, apparently got simplified later:
-   The **New Universal Windows Platform Project** dialog box appears:
+   The **New Universal Windows Platform Project** dialog appears:
 
-   ![The 'New Universal Windows Platform Project' dialog box](media/winui2-new-univ-win-plat-project.png)
+   ![The 'New Universal Windows Platform Project' dialog](media/winui2-new-univ-win-plat-project.png)
  -->
 
-   The **New Windows Project** dialog box appears:
+   The **New Windows Project** dialog appears:
 
-   ![The 'New Windows Project' dialog box](media/winui2-new-windows-project.png)
+   ![The 'New Windows Project' dialog](media/winui2-new-windows-project.png)
 
 1. Accept the defaults, and click the **OK** button.
 
-1. If the **Developer Mode** window section appears, in that section, click **On**.  If you haven't already set your machine to Developer Mode, the **Use developer features** dialog box opens, to confirm turning on developer mode.  
+1. If the **Developer Mode** window section appears, in that section, click **On**.  If you haven't already set your machine to Developer Mode, the **Use developer features** dialog opens, to confirm turning on developer mode.  
    *  Click **Yes** to turn on Developer Mode for your machine, and then close the **Settings** window.
 
    Visual Studio displays the newly created solution and project:
@@ -204,9 +204,9 @@ Next, you install the **Microsoft.UI.Xaml** package for this project.  Microsoft
 
 1. Click the  **Install** button.
 
-   The **Preview Changes** dialog box appears:
+   The **Preview Changes** dialog appears:
 
-   ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package](media/winui2-preview-changes-ui-xaml-pkg.png)
+   ![The 'Preview Changes' dialog for installing the Microsoft.UI.Xaml package](media/winui2-preview-changes-ui-xaml-pkg.png)
    <!-- TODO: update capture after 2.8 GA, show 2.8.0 or later -->
 
    The above image shows 2.7.1, but these instructions are actually written for 2.8.0 or later, for General Availability of WebView2 in the Microsoft.UI.Xaml NuGet package.
@@ -214,9 +214,9 @@ Next, you install the **Microsoft.UI.Xaml** package for this project.  Microsoft
 
 1. Click the **OK** button.
 
-1. The **License Acceptance** dialog box appears:
+1. The **License Acceptance** dialog appears:
 
-   ![The 'License Acceptance' dialog box for installing the Microsoft.UI.Xaml package](media/winui2-license-acceptance-ui-xaml-pkg.png)
+   ![The 'License Acceptance' dialog for installing the Microsoft.UI.Xaml package](media/winui2-license-acceptance-ui-xaml-pkg.png)
 
 1. Click the **I Accept** button.  In Visual Studio, the `readme.txt` file is displayed, saying that you've installed the WinUI package:
 

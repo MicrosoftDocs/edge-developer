@@ -73,9 +73,9 @@ The first step to build this sample is to get a local copy of the samples repo.
 
    * `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
-   A **Review Solution Actions** dialog box might open, prompting you for which installed Windows SDK to retarget the project to:
+   A **Review Solution Actions** dialog might open, prompting you for which installed Windows SDK to retarget the project to:
 
-   ![The 'Review Solution Actions' dialog box](webview2samplewincomp-images/review-solution-actions.png)
+   ![The 'Review Solution Actions' dialog](webview2samplewincomp-images/review-solution-actions.png)
 
 1. In the **Windows SDK Version** dropdown list, select **10.0.20348.0** or later, or **10.0.18362.0** or earlier; do not select **10.0.19041.0**.  Then click the **OK** button.  If those versions aren't available, do the steps in the "Install the Windows SDK" section below.  Otherwise, skip to the section below that.
 
