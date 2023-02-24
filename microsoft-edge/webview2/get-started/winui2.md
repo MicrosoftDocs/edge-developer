@@ -301,20 +301,6 @@ Next, learn about navigation events, which are essential for WebView2 apps.  The
 <!-- ====================================================================== -->
 ## Special considerations for WebView2 on WinUI 2 (UWP)
 
-The WebView2 WinUI 2 (UWP) control is in development.  The following features haven't been implemented, or are disabled due to pending work:
-
-*  Downloads.
-   *  Downloading files is only available in preview via the Edge Dev channel until Edge 104; moreover, it is disabled by default. To enable, please use the command line switch `edge-webview-optional-enable-uwp-regular-downloads`. There are a couple of known limitations to the current downloads behavior for WebView2 in UWP:
-        * The downloads hub is currently disabled.
-        * Depending on the user's OS, downloaded files will be downloaded to different folders. For Windows 11, the downloaded files will appear in a subfolder with the app package's name in the Downloads folder. For OS's below Windows 11, the downloaded files will appear in a subfolder named WebView2Downloads within this app package's subfolder in the Downloads folder.
-        * Additionally, saving files via Save As is functional and enabled for UWP WebView2. The files will be saved in the respective folder the user selects.
-*  Autofill UI.
-*  Print to PDF.
-*  Default printing is disabled, however developers may work around this by using CapturePreviewAsync (though this only captures the current viewport).
-* `Microsoft Edge Developer Tools` cannot be launched inside a store signed WebView2 WinUI 2 (UWP) app, however developers may work around this by using [Remote Debugging](../how-to/remote-debugging.md).
-
-Package summary:
-* [Overview of the NuGet package for Microsoft.UI.Xaml](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
 The WebView2 WinUI 2 (UWP) control is in development.
 
 
@@ -402,6 +388,12 @@ See also:
 #### Setting transparency
 
 On WinUI 2, transparency is achieved by setting the color to `00FFFFFF`.
+
+
+<!-- ------------------------------ -->
+#### Microsoft Edge Developer Tools
+
+On WinUI 2, `Microsoft Edge Developer Tools` cannot be launched inside a store signed WebView2 WinUI 2 (UWP) app, however developers may work around this by using [Remote Debugging](../how-to/remote-debugging.md).
 
 
 <!-- ------------------------------ -->
