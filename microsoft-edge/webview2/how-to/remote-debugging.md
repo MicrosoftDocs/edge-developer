@@ -16,8 +16,8 @@ Use `Remote Tools for Microsoft Edge` to enable [Microsoft Edge DevTools](https:
 <!-- ====================================================================== -->
 ## Debugging Desktop WebView2 WinUI 2 (UWP) apps
 
-These steps can be used to attach `Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app.
-Remote debugging is necessary as a current limitation to WebView2 WinUI 2 (UWP) apps is the built-in `DevTools` cannot be launched directly inside a store signed WebView2 WinUI 2 (UWP) app.
+These steps can be used to attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app.
+Remote debugging is necessary as a current limitation to WebView2 WinUI 2 (UWP) apps is the built-in `Microsoft Edge DevTools` cannot be launched inside a store signed WebView2 WinUI 2 (UWP) app.
 
 1. Install [Edge Canary](https://www.microsoftedgeinsider.com/en-us/download/canary).
 
@@ -66,7 +66,7 @@ Remote debugging is necessary as a current limitation to WebView2 WinUI 2 (UWP) 
 
     To enable remote debugging, two environment variables must be set in your project.
 
-    This variable must be set before the `CoreWebView2` creation before either the `WebView2.Source` property is set or the `WebView2.EnsureCoreWebView2Async` method is called.
+    These variables must be set before the `CoreWebView2` creation before either the `WebView2.Source` property is set or the `WebView2.EnsureCoreWebView2Async` method is called.
 
     Set the following variables:
 
@@ -90,9 +90,9 @@ Remote debugging is necessary as a current limitation to WebView2 WinUI 2 (UWP) 
 
     ![Connect to WebView2](./media/connect-to-webview2.png)
 
-1. Click **inspect** and `DevTools` for the WebView2 will open.
+1. Click **inspect** and `Microsoft Edge DevTools` for the WebView2 will open.
 
-1. Debug WebView2 in the `DevTools` tab as normal.
+1. Debug WebView2 in the `Microsoft Edge DevTools` tab as normal.
 
 <!-- ====================================================================== -->
 ## See also

@@ -296,6 +296,7 @@ The WebView2 WinUI 2 (UWP) control is in development.  The following features ha
 *  Autofill UI.
 *  Print to PDF.
 *  Default printing is disabled, however developers may work around this by using CapturePreviewAsync (though this only captures the current viewport).
+* `Edge Developer Tools` cannot be launched inside a store signed WebView2 WinUI 2 (UWP) app, however developers may work around this by using [Remote Debugging](../how-to/remote-debugging.md).
 
 Package summary:
 * [Overview of the NuGet package for Microsoft.UI.Xaml](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
