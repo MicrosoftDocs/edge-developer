@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 02/24/2023
 ---
 # Test upcoming APIs and features
 <!-- old title: # Switch to a preview channel to test upcoming APIs and features -->
