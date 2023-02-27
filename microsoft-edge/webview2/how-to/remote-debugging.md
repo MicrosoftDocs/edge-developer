@@ -22,17 +22,19 @@ Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as fol
 
 1.  Install [Microsoft Edge Canary Channel](https://www.microsoftedgeinsider.com/download/canary).
 
-1.  In Microsoft Edge Canary, go to to `edge://inspect` and verify that the page is supported in your version of the browser.
+1.  In Microsoft Edge Canary, go to to `edge://inspect` and verify that the **Inspect with Developer Tools** page exists in your version of the browser:
+
+    ![DevTools Inspect utility page](./remote-debugging-images/inspect-devtools-page-supported.png)
 
 1.  Enable Developer Mode: Open Windows **Settings**, select **Privacy & security** > **For developers**, and then turn on the **Developer Mode** toggle:
 
-    ![Enable Developer Mode](./media/enable-developer-mode.png)
+    ![Enable Developer Mode](./remote-debugging-images/enable-developer-mode.png)
 
 1.  Enable Device Portal: Open Windows **Settings**, select **Privacy & security** > For developers**, and then turn on the **Device Portal** toggle. If you are not able to enable Device Portal, you can update your system OS to the latest version and then try to enable Device Portal.
 
     When prompted to **Install Windows Developer Mode package**, click **Yes**:
 
-    ![Install Windows Developer Mode package](./media/install-developer-mode-package.png)
+    ![Install Windows Developer Mode package](./remote-debugging-images/install-developer-mode-package.png)
 
     After the installation is complete, note the URL that will be used for the remote debugging connection. To find this URL, expand the **Device Portal** dropdown.  In this case, the Device Portal URL that will be used is `http://localhost:50080`:
 
