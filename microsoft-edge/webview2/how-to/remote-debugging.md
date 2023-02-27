@@ -28,7 +28,7 @@ Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as fol
 
     ![Enable Developer Mode](./media/enable-developer-mode.png)
 
-1.  Enable Device Portal: Open Windows **Settings**, select **Privacy & security** > For developers**, and then turn on the **Device Portal** toggle.
+1.  Enable Device Portal: Open Windows **Settings**, select **Privacy & security** > For developers**, and then turn on the **Device Portal** toggle. If you are not able to enable Device Portal, you can update your system OS to the latest version and then try to enable Device Portal.
 
     When prompted to **Install Windows Developer Mode package**, click **Yes**:
 
