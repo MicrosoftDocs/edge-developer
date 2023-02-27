@@ -1036,7 +1036,14 @@ See also:
 * [ICoreWebView2_2::WebResourceResponseReceived event (add](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_webresourceresponsereceived)
    * [ICoreWebView2WebResourceResponseReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs)
 
-The `CustomSchemeRegistration` allows registration of custom schemes in WebView2 so that app can handle the `WebResourceRequested` event for requests to those custom scheme URLs and navigate the WebView2 to it.
+
+---
+
+
+<!-- ------------------------------ -->
+#### Custom scheme registration
+
+The `CustomSchemeRegistration` allows registration of custom schemes in WebView2 so that the app can handle the `WebResourceRequested` event for requests to those custom scheme URLs and navigate the WebView2 to such URLs.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
