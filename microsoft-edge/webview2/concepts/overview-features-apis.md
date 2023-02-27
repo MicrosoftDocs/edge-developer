@@ -1069,6 +1069,7 @@ The `CustomSchemeRegistration` allows registration of custom schemes in WebView2
 * [ICoreWebView2EnvironmentOptions4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4?view=webview2-1.0.1587.40&preserve-view=true)
    * [ICoreWebView2EnvironmentOptions4::GetCustomSchemeRegistrations method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4?view=webview2-1.0.1587.40&preserve-view=true#getcustomschemeregistrations)
    * [ICoreWebView2EnvironmentOptions4::SetCustomSchemeRegistrations method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4?view=webview2-1.0.1587.40&preserve-view=true#setcustomschemeregistrations)
+   
 ---
 
 
