@@ -71,7 +71,7 @@ Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as fol
     "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1"
     ```
     
-    For example, if you're using the [WebView2 Sample UWP app](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp), you can set those environment variables by adding the following lines in the `Browser.xaml.cs` file:
+    For example, if you're using the [WebView2 Sample UWP app](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp), you can set the environment variables by adding the following lines in the `Browser.xaml.cs` file:
     
     ```csharp
     Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--enable-features=msEdgeDevToolsWdpRemoteDebugging");
