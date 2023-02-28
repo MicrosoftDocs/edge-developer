@@ -16,25 +16,25 @@ Use `Remote Tools for Microsoft Edge` to enable [Microsoft Edge DevTools](/micro
 <!-- ====================================================================== -->
 ## Debugging desktop WebView2 WinUI 2 (UWP) apps
 
-To use Microsoft Edge DevTools to debug a desktop WebView2 WinUI 2 (UWP) app, use remote debugging.  Remote debugging is necessary because currently, the built-in DevTools in Microsoft Edge cannot be launched inside a store-signed WebView2 WinUI 2 (UWP) app.
+To use Microsoft Edge DevTools to debug a desktop WebView2 WinUI 2 (UWP) app, use remote debugging.  Remote debugging is necessary because currently, the built-in DevTools in Microsoft Edge can't be launched inside a store-signed WebView2 WinUI 2 (UWP) app.
 
 Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as follows:
 
 1.  Install [Microsoft Edge Canary Channel](https://www.microsoftedgeinsider.com/download/canary).
 
-1.  In Microsoft Edge Canary, go to to `edge://inspect` and verify that the **Inspect with Developer Tools** page exists in your version of the browser:
+1.  In Microsoft Edge Canary, go to to `edge://inspect` and verify that the **Inspect with Edge Developer Tools** page exists in your version of the browser:
 
     ![DevTools Inspect utility page](./remote-debugging-images/inspect-devtools-page-supported.png)
 
-1.  Enable Developer Mode: Open Windows **Settings**, select **Privacy & security** > **For developers**, and then turn on the **Developer Mode** toggle:
+1.  Enable Developer Mode: Open Windows **Settings**, select **Privacy & security** > **For developers**, and then turn on the **Developer Mode** toggle.
+
+1.  In the same **Settings** page, turn on the **Device Portal** toggle:
 
     ![Enable Developer Mode](./remote-debugging-images/enable-developer-mode.png)
 
-1.  Enable Device Portal: Open Windows **Settings**, select **Privacy & security** > For developers**, and then turn on the **Device Portal** toggle.
-
     If your operating system isn't up-to-date, you might get a message in the **Settings** window: "The Windows Developer Mode package couldn't be found in Windows Update, so remote deployment and Windows Device Portal are unavailable.  [Learn more](/windows/uwp/debug-test-perf/device-portal-desktop#failed-to-locate-the-package)."
 
-1.  If you get such a message, update your system OS to the latest version, and then turn on the **Device Portal** toggle.
+1.  If you get such a message, update your operating system (OS) to the latest version, and then turn on the **Device Portal** toggle.
 
 1.  When prompted to **Install Windows Developer Mode package**, click **Yes**:
 
@@ -46,19 +46,19 @@ Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as fol
 
 1.  Install [Remote Tools for Microsoft Edge](https://www.microsoft.com/store/productId/9P6CMFV44ZLT) from the Microsoft Store.
 
-1.  In Microsoft Edge Canary, go to the Device Portal URL that you previously noted.  Verify that the ***Confirm security settings** page is loaded (in the **Windows Device Portal** tab):
+1.  In Microsoft Edge Canary, go to the Device Portal URL that you previously noted.  Verify that the **Confirm security settings** page is loaded (in the **Windows Device Portal** tab):
 
     ![The 'Confirm security settings' page in the 'Windows Device Portal' tab](./remote-debugging-images/open-device-portal.png)
 
-1.  If you are only debugging apps that are running locally, you can select **Continue with an unsecured connection**.
+1.  If you are only debugging apps that are running locally, you can select the **Continue with an unsecured connection** button.
 
-    Or, if you aren't running the app locally, or if you need to connect over `HTTPS`, select **Configure a secure connection**, and then follow the steps in the page that you're redirected to.
+    Or, if you aren't running the app locally, or if you need to connect over `HTTPS`, select the **Configure a secure connection** link, and then follow the steps in the page that you're redirected to.
 
-1.  Verify that the page you're redirected to is as follows:
+1.  Verify that you're redirected to the **Apps manager: Windows Device Portal** page:
 
     ![Device Portal](./remote-debugging-images/device-portal.png)
 
-1.  Go to `http://<Device Portal URL>/msedge` and verify Remote Tools for Microsoft Edge are functioning. The page should load an empty list: `[]`.
+1.  Go to `http://<Device Portal URL>/msedge` and verify Remote Tools for Microsoft Edge are functioning. The page loads an empty list: `[]`, unless there's an application running that is debuggable by remote tools.
 
 1.  Configure your WebView2 WinUI 2 (UWP) app for remote debugging:
 
@@ -78,7 +78,7 @@ Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as fol
     Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1");
     ```
 
-    Those are lines 33 and 34 in this screenshot:
+    The lines are numbered 33 and 34 in this screenshot:
 
     ![Browser Arguments Remote Debugging](./remote-debugging-images/browser-arguments-remote-debugging.png)
 
@@ -94,7 +94,7 @@ Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as fol
 
     ![Connect to WebView2](./remote-debugging-images/connect-to-webview2.png)
 
-1.  Click **inspect**.  Microsoft Edge DevTools opens for the WebView2 control:
+1.  At the bottom of the **Edge** WebView2 control entry, click the **inspect** link.  Microsoft Edge DevTools opens for the WebView2 control:
 
     ![DevTools Inspect Window](./remote-debugging-images/devtools-inspect.png)
 
