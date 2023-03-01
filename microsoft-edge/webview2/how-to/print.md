@@ -6,16 +6,16 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 01/12/2023
+ms.date: 02/17/2023
 ---
 # Printing from WebView2 apps
 
-There are several different ways to print a web page in WebView2, which give you various levels of ease of implementation and customizing.
+There are several different ways to print a webpage in WebView2, which give you various levels of ease of implementation and customizing.
 
 | Method | Description |
 |---|---|
 | `ShowPrintUI` | Opens the WebView2 **Print Preview** dialog or the operating system's **Print** dialog. Easy to implement, minimal support for customizing. |
-| `Print` | Silently prints the current top-level document in the WebView2 using optional programmatically specified print settings to a printer. You can use this to build your own print preview dialog or print experience. |
+| `Print` | Silently prints the current top-level document in the WebView2 using optional programmatically specified print settings to a printer. You can use this to build your own Print Preview dialog or print experience. |
 | `PrintToPdf` | Silently prints the current top-level document in the WebView2 to a PDF file. You can use this to build your own code to print the PDF file. |
 | `PrintToPdfStream` | Silently prints the current top-level document in the WebView2 to a PDF stream. You can use this to build your own code to print the PDF. |
 
@@ -55,8 +55,8 @@ The `ShowPrintUI` method opens the WebView2 **Print Preview** dialog or the oper
 #### Example: The ShowPrintUI method to open a Print dialog
 
 This example shows the user a **Print** dialog.
-* If `printDialog` is `CoreWebView2PrintDialogKind.Browser`, opens a browser print preview dialog.
-* If `printDialog` is `CoreWebView2PrintDialogKind.System`, opens a system print dialog.
+* If `printDialog` is `CoreWebView2PrintDialogKind.Browser`, opens the browser's Print Preview dialog.
+* If `printDialog` is `CoreWebView2PrintDialogKind.System`, opens a system Print dialog.
 
 
 <!-- ------------------------------ -->
@@ -69,12 +69,12 @@ void ShowPrintUI(object target, ExecutedRoutedEventArgs e)
   string printDialog = e.Parameter.ToString();
   if (printDialog == "Browser")
   {
-    // Opens the browser print preview dialog.
+    // Opens the browser's Print Preview dialog.
     webView.CoreWebView2.ShowPrintUI();
   }
   else
   {
-    // Opens the system print dialog.
+    // Opens a system's Print dialog.
     webView.CoreWebView2.ShowPrintUI(CoreWebView2PrintDialogKind.System);
   }
 }
@@ -85,7 +85,12 @@ void ShowPrintUI(object target, ExecutedRoutedEventArgs e)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-Coming soon.<!-- todo -->
+```csharp
+void ShowPrintUI(CoreWebView2PrintDialogKind printDialogKind)
+{
+  WebView2.CoreWebView2.ShowPrintUI(printDialogKind);
+}
+```
 
 
 <!-- ------------------------------ -->
@@ -110,7 +115,7 @@ bool AppWindow::ShowPrintUI(COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind)
 <!-- ====================================================================== -->
 ## The Print method to customize printing
 
-The `Print` method silently prints the current top-level document in the WebView2 control by using optional, programmatically specified print settings. If you want to build your own print preview dialog, or build your own print experience, you can use this method. This API consists of an asynchronous `Print` method and a `PrintSettings` object.
+The `Print` method silently prints the current top-level document in the WebView2 control by using optional, programmatically specified print settings. If you want to build your own Print Preview dialog, or build your own print experience, you can use this method. This API consists of an asynchronous `Print` method and a `PrintSettings` object.
 
 
 <!-- ------------------------------ -->
@@ -148,7 +153,7 @@ The `Print` method silently prints the current top-level document in the WebView
 
 #### Example 1: The Print method without a dialog, using default print settings
 
-This example prints the current web page to the default printer, using the default print settings, without opening a **Print** dialog.
+This example prints the current webpage to the default printer, using the default print settings, without opening a **Print** dialog.
 
 
 <!-- ------------------------------ -->
@@ -161,13 +166,13 @@ async void PrintToDefaultPrinter ()
   string title = webView.CoreWebView2.DocumentTitle;
   try
   {
-    // Passing null for `PrintSettings` results in default print settings used.
-    // Prints current web page with the default page and printer settings.
+    // Prints the current webpage, using the default printer and page settings.
+    // Passing null for PrintSettings causes the default print settings to be used.
     CoreWebView2PrintStatus printStatus = await webView.CoreWebView2.PrintAsync(null);
 
     if (printStatus == CoreWebView2PrintStatus.Succeeded)
     {
-      MessageBox.Show(this, "Printing " + title + " document to printer is succeeded", "Print to default printer");
+      MessageBox.Show(this, "Printing " + title + " document to printer succeeded", "Print to default printer");
     }
     else if (printStatus == CoreWebView2PrintStatus.PrinterUnavailable)
     {
@@ -190,8 +195,41 @@ async void PrintToDefaultPrinter ()
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-Coming soon.<!-- todo -->
+```csharp
+async void PrintToDefaultPrinter(object sender, RoutedEventArgs e)
+{
+  string title = WebView2.CoreWebView2.DocumentTitle;
+  MessageDialog dialog = new MessageDialog("", "Print");
 
+  try
+  {
+    // Prints the current webpage by using the default printer and page settings.
+    // Passing null for PrintSettings causes the default print settings to be used.
+    CoreWebView2PrintStatus printStatus = await WebView2.CoreWebView2.PrintAsync(null);
+
+    if (printStatus == CoreWebView2PrintStatus.Succeeded)
+    {
+      dialog = new MessageDialog("Printing " + title +
+                                 " document to printer succeeded", "Print");
+    }
+    else if (printStatus == CoreWebView2PrintStatus.PrinterUnavailable)
+    {
+      dialog = new MessageDialog("Printer is not available, offline or error state", "Print");
+    }
+    else
+    {
+      dialog = new MessageDialog("Printing " + title +
+                                    " document to printer is failed", "Print");
+    }
+  }
+  catch (Exception)
+  {
+    dialog = new MessageDialog("Printing " + title +
+                                      " document already in progress", "Print");
+  }
+  await dialog.ShowAsync();
+}
+```
 
 <!-- ------------------------------ -->
 
@@ -206,8 +244,8 @@ bool AppWindow::PrintToDefaultPrinter()
   wil::unique_cotaskmem_string title;
   CHECK_FAILURE(m_webView->get_DocumentTitle(&title));
 
-  // Passing nullptr for `ICoreWebView2PrintSettings` results in default print settings used.
-  // Prints current web page with the default page and printer settings.
+  // Prints the current webpage, using the default printer and page settings.
+  // Passing nullptr for ICoreWebView2PrintSettings causes the default print settings to be used.
   CHECK_FAILURE(webView2_16->Print(
       nullptr, Callback<ICoreWebView2PrintCompletedHandler>(
           [title = std::move(title), this](HRESULT errorCode,
@@ -217,7 +255,7 @@ bool AppWindow::PrintToDefaultPrinter()
             if (errorCode == S_OK && printStatus == COREWEBVIEW2_PRINT_STATUS_SUCCEEDED)
             {
               message = L"Printing " + std::wstring(title.get()) +
-                              L" document to printer is succedded";
+                              L" document to printer succeeded";
             }
             else if (errorCode == S_OK && printStatus == COREWEBVIEW2_PRINT_STATUS_PRINTER_UNAVAILABLE)
             {
@@ -242,7 +280,6 @@ bool AppWindow::PrintToDefaultPrinter()
   return true;
 }
 ```
-
 
 ---
 
@@ -269,7 +306,7 @@ async void PrintToPrinter()
 
     if (printStatus == CoreWebView2PrintStatus.Succeeded)
     {
-      MessageBox.Show(this, "Printing " + title + " document to printer is succeeded", "Print to printer");
+      MessageBox.Show(this, "Printing " + title + " document to printer succeeded", "Print to printer");
     }
     else if (printStatus == CoreWebView2PrintStatus.PrinterUnavailable)
     {
@@ -290,18 +327,18 @@ async void PrintToPrinter()
   }
 }
 
-// Function to get printer name by displaying installed printers list to the user and
-// return user selected printer.
+// Gets the printer name by displaying the list of installed printers to the user and
+// returns the name of the user's selected printer.
 string GetPrinterName()
 {
-  // Use GetPrintQueues() of LocalPrintServer from System.Printing to get list of locally installed printers.
-  // Display the printer list to the user and get the desired printer to print.
-  // Return the user selected printer name.
+  // Use GetPrintQueues() of LocalPrintServer from System.Printing to get the list of locally installed printers.
+  // Display the list of printers to the user and get the desired printer to use.
+  // Return the name of the selected printer.
 }
 
-// Function to get print settings for the selected printer.
-// You may also choose get the capabilties from the native printer API, display to the user to get
-// the print settings for the current web page and for the selected printer.
+// Gets the print settings for the selected printer.
+// You can also get the capabilities from the native printer API, and display them 
+// to the user to get the print settings for the current webpage and for the selected printer.
 CoreWebView2PrintSettings GetSelectedPrinterPrintSettings(string printerName)
 {
   CoreWebView2PrintSettings printSettings = null;
@@ -324,7 +361,75 @@ CoreWebView2PrintSettings GetSelectedPrinterPrintSettings(string printerName)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-Coming soon.<!-- todo -->
+```csharp
+async void PrintToPrinter(object sender, RoutedEventArgs e)
+{
+  string printerName = GetPrinterName();
+  CoreWebView2PrintSettings printSettings = GetSelectedPrinterPrintSettings(printerName);
+  string title = WebView2.CoreWebView2.DocumentTitle;
+  MessageDialog dialog = new MessageDialog("", "Print");
+
+  try
+  {
+    CoreWebView2PrintStatus printStatus =
+                          await WebView2.CoreWebView2.PrintAsync(printSettings);
+
+    if (printStatus == CoreWebView2PrintStatus.Succeeded)
+    {
+      dialog = new MessageDialog("Printing " + title +
+                        " document to printer succeeded", "Print to printer");
+    }
+    else if (printStatus == CoreWebView2PrintStatus.PrinterUnavailable)
+    {
+      dialog = new MessageDialog("Selected printer is not found, not available, " +
+                                  "offline or error state", "Print to printer");
+    }
+    else
+    {
+      dialog = new MessageDialog("Printing " + title +
+                                     " document to printer is failed", "Print");
+    }
+  }
+  catch (ArgumentException)
+  {
+    dialog = new MessageDialog("Invalid settings provided for the specified printer", "Print");
+  }
+  catch (Exception)
+  {
+     dialog = new MessageDialog("Printing " + title + " document already in progress", "Print");
+  }
+  await dialog.ShowAsync();
+}
+
+// Gets the printer name by displaying the list of installed printers to the user, 
+// and returns the user-selected printer.
+string GetPrinterName()
+{
+  // Use DeviceInformation.FindAllAsync to get the list of local printers with AQS as:
+  // System.Devices.HardwareIds:~~"PRINTENUM\LocalPrintQueue"
+  // Display the list of printers to the user, and get the desired printer to use.
+  // Return the name of the user's selected printer.
+}
+
+// Gets print settings for the selected printer.
+// You can also get the capabilities from the printer APIs, and display them to the 
+// user to get the print settings for the current webpage and for the selected printer.
+CoreWebView2PrintSettings GetSelectedPrinterPrintSettings(string printerName)
+{
+  CoreWebView2PrintSettings printSettings = null;
+  printSettings = WebView2.CoreWebView2.Environment.CreatePrintSettings();
+  printSettings.ShouldPrintBackgrounds = true;
+  printSettings.ShouldPrintHeaderAndFooter = true;
+
+  return printSettings;
+
+  // or
+  // Get the print ticket and use PrintTicketCapabilities from
+  // Windows.Graphics.Printing.PrintTicket to get the capabilities of the selected printer.
+  // Display the printer capabilities to the user, along with the page settings.
+  // Return the user-selected settings.
+}
+```
 
 
 <!-- ------------------------------ -->
@@ -352,18 +457,19 @@ struct SamplePrintSettings
   std::wstring FooterUri = L"";
 };
 
-// Function to get printer name by displaying installed printers list to the user and
-// return user selected printer.
+// Gets the printer name by displaying the list of installed printers to the user, 
+// and returns the user-selected printer.
 std::wstring AppWindow::GetPrinterName()
 {
-  // Use win32 EnumPrinters function to get locally installed printers.
-  // Display the printer list to the user and get the user desired printer to print.
-  // Return the user selected printer name.
+  // Use the Win32 EnumPrinters function to get the list of locally installed printers.
+  // Display the list of printers to the user and get the user-selected printer to use.
+  // Return the user-selected printer name.
 }
 
-// Function to get print settings for the selected printer.
-// You may also choose get the capabilties from the native printer API, display to the user to get
-// the print settings for the current web page and for the selected printer.
+// Gets the print settings for the selected printer.
+// You can also get the capabilities from the native printer API, and display them 
+// to the user to get the print settings for the current webpage and for the 
+// selected printer.
 SamplePrintSettings AppWindow::GetSelectedPrinterPrintSettings(std::wstring printerName)
 {
   SamplePrintSettings samplePrintSettings;
@@ -373,15 +479,15 @@ SamplePrintSettings AppWindow::GetSelectedPrinterPrintSettings(std::wstring prin
   return samplePrintSettings;
 
   // Or
-  // Use the win32 DeviceCapabilitiesA function to get the capabilities of the selected printer.
-  // Display the printer capabilities to the user along with the page settings.
-  // Return the user selected settings.
+  // Use the Win32 DeviceCapabilitiesA function to get the capabilities of the selected printer.
+  // Display the printer capabilities to the user, along with the page settings.
+  // Return the user-selected settings.
 }
 
 bool AppWindow::PrintToPrinter()
 {
   std::wstring printerName = GetPrinterName();
-  // Host apps custom print settings based on the user selection.
+  // The host app's custom print settings, based on the user selection.
   SamplePrintSettings samplePrintSettings = GetSelectedPrinterPrintSettings(printerName);
 
   wil::com_ptr<ICoreWebView2_16> webView2_16;
@@ -428,7 +534,7 @@ bool AppWindow::PrintToPrinter()
             if (errorCode == S_OK && printStatus == COREWEBVIEW2_PRINT_STATUS_SUCCEEDED)
             {
               message = L"Printing " + std::wstring(title.get()) +
-                              L" document to printer is succedded";
+                              L" document to printer succeeded";
             }
             else if (errorCode == S_OK && printStatus == COREWEBVIEW2_PRINT_STATUS_PRINTER_UNAVAILABLE)
             {
@@ -458,7 +564,6 @@ bool AppWindow::PrintToPrinter()
   return true;
 }
 ```
-
 
 ---
 
@@ -529,7 +634,7 @@ async void PrintToPdfCmdExecuted(object target, ExecutedRoutedEventArgs e)
     Microsoft.Win32.SaveFileDialog saveFileDialog =
         new Microsoft.Win32.SaveFileDialog();
     saveFileDialog.InitialDirectory = "C:\\";
-    saveFileDialog.Filter = "Pdf Files|*.pdf";
+    saveFileDialog.Filter = "PDF Files|*.pdf";
     Nullable<bool> result = saveFileDialog.ShowDialog();
     if (result == true) {
         _isPrintToPdfInProgress = true;
@@ -548,7 +653,39 @@ async void PrintToPdfCmdExecuted(object target, ExecutedRoutedEventArgs e)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-Coming soon.<!-- todo -->
+```csharp
+async void PrintToPdf(bool enableLandscape)
+{
+  MessageDialog dialog = new MessageDialog("", "Print To PDF");
+  if (_isPrintToPdfInProgress)
+  {
+    dialog = new MessageDialog("Print to PDF in progress", "Print To PDF");
+    return;
+  }
+  CoreWebView2PrintSettings printSettings = null;
+  if (enableLandscape)
+  {
+    printSettings = WebView2.CoreWebView2.Environment.CreatePrintSettings();
+    printSettings.Orientation = CoreWebView2PrintOrientation.Landscape;
+  }
+
+  var savePicker = new Windows.Storage.Pickers.FileSavePicker();
+  savePicker.FileTypeChoices.Add("PDF Files", new List<string>() { ".pdf" });
+  savePicker.SuggestedFileName = "WebView2_PrintedPdf";
+
+  StorageFile file = await savePicker.PickSaveFileAsync();
+  if (file != null)
+  {
+    _isPrintToPdfInProgress = true;
+    bool isSuccessful = await WebView2.CoreWebView2.PrintToPdfAsync(file.Path, printSettings);
+    _isPrintToPdfInProgress = false;
+    string message = (isSuccessful) ? "Print to PDF succeeded" : "Print to PDF failed";
+    dialog = new MessageDialog(message, "Print To PDF");
+  }
+
+  await dialog.ShowAsync();
+}
+```
 
 
 <!-- ------------------------------ -->
@@ -602,7 +739,6 @@ void FileComponent::PrintToPdf(bool enableLandscape)
     }
 }
 ```
-
 
 ---
 
@@ -660,12 +796,12 @@ async void PrintToPdfStream()
   {
     string title = webView.CoreWebView2.DocumentTitle;
 
-    // Passing null for `PrintSettings` results in default print settings used.
+    // Passing null for PrintSettings causes the default print settings to be used.
     System.IO.Stream stream = await webView.CoreWebView2.PrintToPdfStreamAsync(null);
     DisplayPdfDataInPrintDialog(stream);
 
     MessageBox.Show(this, "Printing " + title + " document to PDF Stream " +
-                ((stream != null) ? "succedded" : "failed"), "Print To PDF Stream");
+                ((stream != null) ? "succeeded" : "failed"), "Print To PDF Stream");
   }
   catch(Exception exception)
   {
@@ -673,10 +809,10 @@ async void PrintToPdfStream()
   }
 }
 
-// Function to display current web page pdf data in a custom print preview dialog.
+// Function to display current webpage PDF data in a custom Print Preview dialog.
 void DisplayPdfDataInPrintDialog(Stream pdfData)
 {
-  // You can display the printable pdf data in a custom print preview dialog to the end user.
+  // You can display the printable PDF data to the user in a custom Print Preview dialog.
 }
 ```
 
@@ -685,7 +821,35 @@ void DisplayPdfDataInPrintDialog(Stream pdfData)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-Coming soon.<!-- todo -->
+```csharp
+async void PrintToPdfStream(object sender, RoutedEventArgs e)
+{
+  MessageDialog dialog = new MessageDialog("", "Print to PDF Stream");
+  try
+  {
+    string title = WebView2.CoreWebView2.DocumentTitle;
+
+    // Passing null for PrintSettings causes the default print settings to be used.
+    Windows.Storage.Streams.IRandomAccessStream stream =
+                        await WebView2.CoreWebView2.PrintToPdfStreamAsync(null);
+    DisplayPdfDataInPrintDialog(stream);
+    dialog = new MessageDialog("Printing" + title + " document to PDF Stream "
+                           + ((stream != null) ? "succeeded" : "failed"), "Print To PDF Stream");
+  }
+  catch (Exception exception)
+  {
+    dialog = new MessageDialog("Printing to PDF Stream failed: " + exception.Message,
+              "Print to PDF Stream");
+  }
+  await dialog.ShowAsync();
+}
+
+// Function to display the current page PDF data in a custom Print Preview dialog.
+void DisplayPdfDataInPrintDialog(Windows.Storage.Streams.IRandomAccessStream pdfData)
+{
+  // You can display the printable PDF data to the user in a custom Print Preview dialog.
+}
+```
 
 
 <!-- ------------------------------ -->
@@ -696,7 +860,7 @@ Coming soon.<!-- todo -->
 ```cpp
 static void DisplayPdfDataInPrintDialog(IStream* pdfData)
 {
-  // You can display the printable pdf data in a custom print preview dialog to the end user.
+  // You can display the printable PDF data to the user in a custom Print Preview dialog.
 }
 
 bool AppWindow::PrintToPdfStream()
@@ -707,7 +871,7 @@ bool AppWindow::PrintToPdfStream()
   wil::unique_cotaskmem_string title;
   CHECK_FAILURE(m_webView->get_DocumentTitle(&title));
 
-  // Passing nullptr for `ICoreWebView2PrintSettings` results in default print settings used.
+  // Passing nullptr for ICoreWebView2PrintSettings causes the default print settings to be used.
   CHECK_FAILURE(
       webView2_16->PrintToPdfStream(
           nullptr,
@@ -717,7 +881,7 @@ bool AppWindow::PrintToPdfStream()
                 DisplayPdfDataInPrintDialog(pdfData);
                 std::wstring message = L"Printing " + std::wstring(title.get()) +
                                        L" document to PDF Stream " +
-                                       ((errorCode == S_OK && pdfData != nullptr) ? L"succedded" : L"failed");
+                                       ((errorCode == S_OK && pdfData != nullptr) ? L"succeeded" : L"failed");
 
                 AsyncMessageBox(message, L"Print to PDF Stream");
 
@@ -727,7 +891,6 @@ bool AppWindow::PrintToPdfStream()
   return true;
 }
 ```
-
 
 ---
 
