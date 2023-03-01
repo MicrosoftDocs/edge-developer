@@ -104,8 +104,8 @@ In the above example, a music player application defines a mini player widget. A
 |:--- |:--- |:--- |
 | `name` | The title of the widget, presented to users. | Yes |
 | `short_name` | An alternative short version of the name. | No |
-| `description` | A description of what the widget does. | No |
-| `icons` | An array of icons to be used for the widget. | Yes |
+| `description` | A description of what the widget does. | Yes |
+| `icons` | An array of icons to be used for the widget. If missing, the `icons` manifest member is used instead. | No |
 | `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). Note that the `platform` field of a screenshot item currently supports the `Windows` and `any` values. | Yes |
 | `tag` | A string used to reference the widget in the PWA service worker. | Yes |
 | `template` | The template to use to display the widget in the operating system widgets dashboard. Note: this property is currently only informational and not used. See `ms_ac_template` below. | No |
