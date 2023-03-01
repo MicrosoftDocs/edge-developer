@@ -1,22 +1,22 @@
 ---
-title: Remote debugging for WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge
+title: Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge
 description: How to remotely debug WebView2 WinUI 2 (UWP) apps by using Remote Tools for Microsoft Edge. 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/23/2023
+ms.date: 02/28/2023
 ---
 # Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge
 
-Use `Remote Tools for Microsoft Edge` to enable [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium/landing/) debugging.
+To use [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium/landing/) to debug a desktop WebView2 WinUI 2 (UWP) app, use remote debugging.  To do this, install [Remote Tools for Microsoft Edge](https://www.microsoft.com/store/productId/9P6CMFV44ZLT), as follows.
+
+Remote debugging is necessary for this platform because currently, the built-in DevTools in Microsoft Edge can't be launched inside a store-signed WebView2 WinUI 2 (UWP) app.
 
 
 <!-- ====================================================================== -->
 ## Debugging desktop WebView2 WinUI 2 (UWP) apps
-
-To use Microsoft Edge DevTools to debug a desktop WebView2 WinUI 2 (UWP) app, use remote debugging.  Remote debugging is necessary because currently, the built-in DevTools in Microsoft Edge can't be launched inside a store-signed WebView2 WinUI 2 (UWP) app.
 
 Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as follows:
 
@@ -78,7 +78,7 @@ Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as fol
     Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1");
     ```
 
-    The lines are numbered 33 and 34 in this screenshot:
+    The lines are numbered 33 and 34 in this screenshot, in the `Browser()` constructor, below an `#endif` that wraps an existing `SetEnvironmentVariable` statement:
 
     ![Browser Arguments Remote Debugging](./remote-debugging-images/browser-arguments-remote-debugging.png)
 
