@@ -75,8 +75,8 @@ The default channel-search order is:
 If you set the release channel preference to `1` by using a group policy, registry override, or environment variable, that will use the reverse of the default search order.
 
 
-<!-- 1. Code ============================================================== -->
-## Using code
+<!-- 1. Calling a function ============================================================== -->
+## Calling a function
 
 If you want to make your application use a specific runtime by calling a function, complete the following steps.
 
