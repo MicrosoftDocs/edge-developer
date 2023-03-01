@@ -18,7 +18,7 @@ Remote debugging is necessary for this platform because currently, the built-in 
 <!-- ====================================================================== -->
 ## Debugging desktop WebView2 WinUI 2 (UWP) apps
 
-Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as follows:
+Attach Microsoft Edge DevTools remotely to a WebView2 WinUI 2 (UWP) app as follows:
 
 1.  Install [Microsoft Edge Canary Channel](https://www.microsoftedgeinsider.com/download/canary).
 
@@ -52,7 +52,7 @@ Attach `Microsoft Edge DevTools` remotely to a WebView2 WinUI 2 (UWP) app as fol
 
 1.  If you are only debugging apps that are running locally, you can select the **Continue with an unsecured connection** button.
 
-    Or, if you aren't running the app locally, or if you need to connect over `HTTPS`, select the **Configure a secure connection** link, and then follow the steps in the page that you're redirected to.
+    Or, if you aren't running the app locally, or if you need to connect over HTTPS, select the **Configure a secure connection** link, and then follow the steps in the page that you're redirected to.
 
 1.  Verify that you're redirected to the **Apps manager: Windows Device Portal** page:
 
