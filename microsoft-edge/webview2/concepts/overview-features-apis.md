@@ -1054,7 +1054,7 @@ The `CustomSchemeRegistration` allows registration of custom schemes in WebView2
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2CustomSchemeRegistration Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration)
-* [CoreWebView2EnvironmentOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1587.40&preserve-view=true)
+* [CoreWebView2EnvironmentOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions)
 
 ##### [Win32/C++](#tab/win32cpp)
 
