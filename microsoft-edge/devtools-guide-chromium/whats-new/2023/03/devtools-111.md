@@ -17,7 +17,7 @@ ms.date: 03/10/2023
 
 <!-- Subtitle: . -->
 
-![template](./devtools-111-images/template.png)
+![template 1](./devtools-111-images/template.png)
 
 <!-- See also:
 * []() -->
