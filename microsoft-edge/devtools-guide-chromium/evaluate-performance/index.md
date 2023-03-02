@@ -24,10 +24,10 @@ ms.date: 2/22/2023
 
 _Runtime performance_ is how your page performs when it's running, as opposed to loading.  The following tutorial teaches you how to use the DevTools **Performance** tool to analyze runtime performance.
 
-The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for [Core Web Vitals](https://web.dev/vitals/).  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the Performance tool.
+The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for [Core Web Vitals](https://web.dev/vitals/).  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the **Performance** tool.
 
 See also:
-- [Optimize website speed using Lighthouse](../speed/get-started.md).
+- [Optimize website speed using Lighthouse](../speed/get-started.md)
 
 <!-- ====================================================================== -->
 ## Get started
@@ -195,9 +195,13 @@ if (m.offsetTop === maxHeight) {
 }
 ```
 
-`m` references each blue icon on the page. In the unoptimized version, we refer to `pos` as the new vertical position of the icon, calculated based on `m.offsetTop + distance` if the icon is moving down and where `distance` is a fixed increment.  If the icon is moving up instead, the new position is instead calculated with `m.offsetTop - distance`.
+The above code snippet runs on every frame of the browser rendering loop, for each blue icon on the page.  The `m` variable references a single blue icon.
 
-We check if we've exceeded either `0` or `maxHeight` as the new position whether we're moving up or down, adjust accordingly, and then we finally set the new position for each icon in CSS with `m.style.top = pos + "px";`.
+In this unoptimized version, we create a `pos` variable that's set to the current position of the icon, to which we add some distance.  The current position of the icon is read by using `m.offsetTop`.
+
+After making sure that the icon is still within the bounds of the page, we set its new position by using `m.style.top`, which sets inline styles on the element.
+
+Finally, we read `m.offsetTop` again, to adjust the direction of the icon.
 
 The optimized code uses a different sequence of actions to do less work. Here is the same snippet of JavaScript from the optimized version of the app: 
 
@@ -217,9 +221,15 @@ if (pos === maxHeight) {
 }
 ```
 
-In the optimized version, `pos` is used instead of `m.offsetTop`. The remaining work is the same but this snippet is faster than the previous one because we are no longer querying the style of each icon while also changing it, which triggers the browser to re-layout each icon.  
+In the optimized version, we first set the value of the `pos` variable by reading `m.style.top` instead of using `m.offsetTop`.  Using the element's inline style is faster because reading `m.offsetTop` forces the browser engine to know where all the elements are on the page, which requires the engine to recalculate the styles and the layout.
 
-Note that this code could be made even faster by only using properties that only affect compositing, instead of manipulating the `top` property of every icon.  For example, we could get even better performance if instead of using `m.style.top = pos + "px";`, we used `m.style.transform = translateY(pos + "px,");`.  This is because `transform: translate(npx, npx)` is a CSS attribute that only affects the compositor layer and doesn't trigger re-layout for the browser.  For more information, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations).
+We then set the new position of the icon like the previous version, but we don't read `m.offsetTop` again like we did before to adjust the icon's direction.
+
+The unoptimized code reads and writes the position of the icon from two different places, forcing the browser to recalculate the style and layout on each frame. The optimized version, however, writes and reads the position of the icon in the inline styles only.
+
+Note that this code could be made even faster by using CSS properties that only require the browser to do compositing, rather than layout.  Instead of manipulating the `top` property which forces the browser to run its layout code again, using the `transform` property would allow the browser to consider each icon as individual layers and display these layers in the right positions by re-compositing the final image.  For example, instead of using `m.style.top = pos + "px";`, we can use `m.style.transform = translateY(pos + "px,");`.
+
+To learn more, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations).
 
 <!-- ====================================================================== -->
 ## Next steps

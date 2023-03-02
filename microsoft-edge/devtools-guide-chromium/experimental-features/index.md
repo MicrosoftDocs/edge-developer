@@ -739,7 +739,7 @@ Whether to display system nodes of CPUProfile in the **Performance** tool.
 
 See also:
 * [Performance features reference](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference.md)
-* [JavaScript: Tools](/microsoft-edge/devtools-guide-chromium/rendering-tools/index.md#javascript-tools) in _Analyze runtime performance_.
+* [JavaScript: Tools](/microsoft-edge/devtools-guide-chromium/rendering-tools/index.md#javascript-tools) in _Troubleshooting common performance issues_.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 112.
