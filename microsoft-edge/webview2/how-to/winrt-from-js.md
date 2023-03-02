@@ -679,7 +679,7 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
 1. In Solution Explorer, expand the main project, such as **MyUWPGetStartApp**, expand **MainPage.xaml**, and then select **MainPage.xaml.cs**.
 
-1. Below the `MainPage(){...}` constructor, add the following `InitializeWebView2Async` method:
+1. Below the `MainPage` constructor, add the following `InitializeWebView2Async` method:
 
    ```csharp
    private async void InitializeWebView2Async()
