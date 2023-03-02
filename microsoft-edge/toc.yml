@@ -33,6 +33,9 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 111
+              href: devtools-guide-chromium/whats-new/2023/03/devtools-111.md
+
             - name: Microsoft Edge 110
               href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
 
@@ -60,17 +63,17 @@
             - name: Microsoft Edge 102
               href: devtools-guide-chromium/whats-new/2022/05/devtools-102.md
 
-            - name: Microsoft Edge 101
-              href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
-
-            - name: Microsoft Edge 100
-              href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 101
+                  href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
+
+                - name: Microsoft Edge 100
+                  href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
 
                 - name: Microsoft Edge 99
                   href: devtools-guide-chromium/whats-new/2022/03/devtools.md
