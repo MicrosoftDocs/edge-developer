@@ -378,6 +378,12 @@ On WinUI 2, transparency is achieved by setting the color to `00FFFFFF`.
 
 
 <!-- ------------------------------ -->
+#### Microsoft Edge Developer Tools
+
+On WinUI 2, Microsoft Edge DevTools cannot be launched inside a store-signed WebView2 WinUI 2 (UWP) app.  However, you can work around this by using remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge](../how-to/remote-debugging.md).
+
+
+<!-- ------------------------------ -->
 #### API limitations
 
 The following interfaces aren't accessible in WinUI 2:
