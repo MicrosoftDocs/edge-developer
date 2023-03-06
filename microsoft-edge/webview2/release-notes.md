@@ -43,6 +43,17 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
 
+<!-- maintenance notes: version # patterns to check:
+## 1.0.####.##
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+
+## 1.0.####-prerelease
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
+-->
+
+
 <!-- ====================================================================== -->
 ## 1.0.1587.40
 
@@ -50,7 +61,7 @@ Release Date: February 15, 2023
 
 [NuGet package for WebView2 SDK 1.0.1587.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1587.40)
 
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 110.1587.40 or higher.
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 110.0.1587.40 or higher.
 
 ### General
 
