@@ -231,3 +231,9 @@ The parts of the PWAmp demo app source code that are relevant to the Microsoft E
 * The `isSidebarPWA` variable, which uses the `navigator.userAgentData` JavaScript API in the [app.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwamp/app.js#L14) file.
 
 You can find the entire PWAmp demo source code at [MicrosoftEdge / Demos > pwamp](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp). To download the source code locally, see [Download or clone the Demos repo](../../devtools-guide-chromium/sample-code/sample-code.md#download-or-clone-the-demos-repo) in _Sample code for DevTools_.
+
+
+<!-- ====================================================================== -->
+## Provide feedback
+
+The Microsoft Edge team welcomes your feedback about this feature. Read the [Side Panel explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/SidePanel/explainer.md) on the Microsoft Edge web platform explainer repo, and leave feedback by [creating a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new/) on the repo or [searching for existing issues](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues) and joining existing conversations.
