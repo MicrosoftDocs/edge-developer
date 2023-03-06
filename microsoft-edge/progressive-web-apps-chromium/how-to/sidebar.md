@@ -18,7 +18,7 @@ The sidebar in Microsoft Edge allows users to easily access popular websites and
 
 By signaling intent to be pinned to the sidebar, your PWA gets the following benefits:
 
-* Your PWA is promoted in the Microsoft Edge sidebar store.
+* Your PWA can be promoted in the Microsoft Edge sidebar store.
 * Your PWA can detect whether it is running in the Microsoft Edge sidebar or not.
 * Your PWA defines its own style and layout to provide a user-friendly sidebar experience.
 
@@ -109,7 +109,7 @@ If your app's layout can't support the 376 pixels minimum width, you can define 
 When you define a preferred width in your app's manifest, the following happens:
 
 * When your app is opened in the sidebar, the sidebar is automatically resized to your preferred width.
-* Users can still resize the sidebar to make it larger than your preferred width, but not smaller.
+* Users can resize the sidebar to make it larger your preferred width, or smaller, up to the 376 pixels minimum width.
 
 
 <!-- ====================================================================== -->
@@ -171,7 +171,7 @@ To detect when your app runs in the sidebar, do one of the following:
 
 You can also use the User Agent string to know whether your app runs in the sidebar or not.
 
-**Note**: we strongly recommend to use User Agent Client Hints instead. Using the User Agent string is an outdated mechanism for doing browser detection that has a long history of website compatibility issues.
+**Note**: we strongly recommend using User Agent Client Hints instead of the User Agent string. The User Agent string is an outdated mechanism for doing browser detection, and has website compatibility issues.
 
 If you can't use User Agent Client Hints in your app, look for `EdgeSidePanel` in the User Agent string. Here are some examples of User Agent strings containing the `EdgeSidePanel` value:
 
