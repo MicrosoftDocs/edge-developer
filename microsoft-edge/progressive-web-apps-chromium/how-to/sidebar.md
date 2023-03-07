@@ -26,7 +26,7 @@ By signaling intent to be pinned to the sidebar, your PWA gets the following ben
 <!-- ====================================================================== -->
 ## Enable sidebar support of PWAs in Microsoft Edge
 
-The ability to pin a PWA in Microsoft Edge's sidebar is experimentally supported starting with Microsoft Edge 112.
+Experimental support for pinning PWAs in the Microsoft Edge's sidebar starts with Microsoft Edge 112. Some parts of the feature are available starting with Microsoft Edge 113, such as the ability to detect if your PWA is running in the sidebar by using User Agent Client Hints.
 
 To locally enable PWA sidebar support in Microsoft Edge:
 
@@ -147,7 +147,7 @@ However, if you prefer to build an app that can only be pinned to the sidebar bu
 
 Detecting when your app runs in the sidebar can be useful to provide your users with the best possible experience when your app runs in this specific browser UI surface.
 
-You can detect when your app runs in the sidebar by using User-Agent Client Hints. To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from your website](../../web-platform/user-agent-guidance.md).
+Starting with Microsoft Edge 113, you can detect when your app runs in the sidebar by using User-Agent Client Hints. To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from your website](../../web-platform/user-agent-guidance.md).
 
 To detect when your app runs in the sidebar, do one of the following:
 
@@ -188,7 +188,7 @@ You might have created two variants of your app:
 * One variant when the app is used on a desktop device.
 * Another variant when the app is used on a mobile device.
 
-In this scenario, the desktop variant is used when your app is pinned to the sidebar. By default, apps in the sidebar receive the Microsoft Edge desktop User Agent Client Hint:
+In this scenario, the desktop variant is used when your app is pinned to the sidebar. By default, apps in the sidebar that use the `edge_side_panel` manifest member receive the Microsoft Edge desktop User Agent Client Hint:
 
 ```https
 Sec-CH-UA-Mobile: ?0
