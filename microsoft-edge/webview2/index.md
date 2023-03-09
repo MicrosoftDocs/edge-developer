@@ -105,7 +105,7 @@ The WebView2 control, WebView2 SDK, and WebView2 Runtime have the following role
 <!-- ------------------------------ -->
 #### Relationship between the WebView2 control, SDK, and Runtime
 
-![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./index-images/wv2-control-sdk-runtime.png)
+![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./index-images/control-sdk-runtime.png)
 
 Control:
 *  WebView2 control - in the app layout; hosts the Runtime.
@@ -162,7 +162,7 @@ The SDK includes the JavaScript API?  The JavaScript API is the [WebView2Script 
 * Native-side code calls platform APIs and WebView2 APIs
 * Web-side JavaScript code calls WebView2Script APIs & exposed native-side APIs
 
-![Design architecture of a WebView2 app](./index-images/wv2-app-design.png)
+![Design architecture of a WebView2 app](./index-images/app-design.png)
 
 
 <!-- ====================================================================== -->
@@ -233,9 +233,9 @@ There are several ways to distribute the WebView2 Runtime with your app:
 
 | Name of distribution approach | Description | Notes |
 |---|---|---|
-| Link to the Evergreen bootstrapper | In your app's installer, link to the Evergreen Runtime bootstrapper.  Have your app's installer use this link to programmatically download and install the Evergreen bootstrapper onto the user's machine.  Then invoke the bootstrapper to install the appropriate Runtime for the user's device. | For users who have an online connection.  The Evergreen bootstrapper is a tiny installer that installs the correct Runtime for the user's CPU, using an internet connection. |
-| Package the Evergreen bootstrapper | Download the Evergreen bootstrapper to your Dev machine.  Package and distribute the Evergreen bootstrapper with your app installer.  Then your app installer invokes the bootstrapper to install the Runtime on the user's machine. | For users who don't have a reliable connection to the bootstrapper CDN site. |
-| Package the Evergreen standalone installer | Download the Evergreen standalone installer to your Dev machine, and package it with your app.  Package the Evergreen standalone installer with your app's installer.  Your app's installer then invokes the Evergreen standalone installer to install the Runtime on the user's device. | For offline users.  A large, standalone Evergreen Runtime installer for offline users, that includes the Evergreen Runtime. |
+| Link to the Evergreen Runtime bootstrapper | In your app's installer, link to the Evergreen Runtime bootstrapper.  Have your app's installer use this link to programmatically download and install the Evergreen bootstrapper onto the user's machine.  Then invoke the bootstrapper to install the appropriate Runtime for the user's device. | For users who have an online connection.  The Evergreen bootstrapper is a tiny installer that installs the correct Runtime for the user's CPU, using an internet connection. |
+| Package the Evergreen Runtime bootstrapper | Download the Evergreen bootstrapper to your Dev machine.  Package and distribute the Evergreen bootstrapper with your app installer.  Then your app installer invokes the bootstrapper to install the Runtime on the user's machine. | For users who don't have a reliable connection to the bootstrapper CDN site. |
+| Package the Evergreen Runtime standalone installer | Download the Evergreen standalone installer to your Dev machine, and package it with your app.  Package the Evergreen standalone installer with your app's installer.  Your app's installer then invokes the Evergreen standalone installer to install the Runtime on the user's device. | For offline users.  A large, standalone Evergreen Runtime installer for offline users, that includes the Evergreen Runtime. |
 | Package a fixed-version Runtime | Download a version-specific, CPU-specific Runtime to your Dev machine.  Package and distribute the fixed-version Runtime with your app's installer.  Your app's installer installs the specific fixed-version Runtime on the user's machine. | Specialty case, for when you need specific version of the APIs; avoids testing whether latest APIs are available. |
 
 The above approaches are listed in the same sequence as in the [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) section of the **Microsoft Edge WebView2** page, from lightweight to heavyweight approaches.  Favor the lightweight approaches; use a heavyweight approach if required by a specialized scenario.
