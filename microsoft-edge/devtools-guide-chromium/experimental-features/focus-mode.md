@@ -139,7 +139,7 @@ If there isn't enough space in the **Activity Bar** to display all pinned tools,
 
 ![The More tools menu in Focus Mode when the window is shorter, causing some of the icons to be displayed in the menu rather than the activity bar](./focus-mode-images/overflow-tools.png)
 
-To unpin a tool from the **Activity Bar**, right-click the tool and select **Remove from Activity Bsar**:
+To unpin a tool from the **Activity Bar**, right-click the tool and select **Remove from Activity Bar**:
 
 ![The right-click menu to unpin tools from the Activity bar](./focus-mode-images/remove-tool.png)
 
