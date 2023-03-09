@@ -280,6 +280,53 @@ methods:
       return:
         type: void
         description: ''
+  - name: 'postMessageWithAdditionalObjects(message, additionalObjects)'
+    uid: 'WebView2Script!WebView#postMessageWithAdditionalObjects:member(1)'
+    package: WebView2Script!
+    fullName: 'postMessageWithAdditionalObjects(message, additionalObjects)'
+    summary: >-
+      When the page calls `postMessageWithAdditionalObjects`<!-- -->, the `message` parameter is sent to WebView2 in the
+      same fashion as 'postMessage'. Objects passed as 'additionalObjects' are converted to their native types and will
+      be available in the `CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects` property.
+    remarks: |-
+      #### Examples
+
+      Post a message with File objects from input element to the CoreWebView2:
+
+      ```javascript
+      const input = document.getElementById('files');
+      input.addEventListener('change', function() {
+          // Note that postMessageWithAdditionalObjects does not accept a single object,
+          // but only accepts an ArrayLike object.
+          // However, input.files is type FileList, which is already an ArrayLike object so
+          // no conversion to array is needed.
+          const currentFiles = input.files;
+          chrome.webview.postMessageWithAdditionalObjects("FilesDropped",
+              currentFiles);
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'postMessageWithAdditionalObjects(message: any, additionalObjects: ArrayLike<any>) : void;'
+      parameters:
+        - id: message
+          description: The message to send to the WebView2 host. This can be any object that can be serialized to JSON.
+          type: any
+        - id: additionalObjects
+          description: >-
+            A sequence of DOM objects that have native representations in WebView2. This parameter needs to be
+            ArrayLike. The following DOM types are mapped to native: DOM \| Win32 \| .NET \| WinRT \-\-\-\-\-\--- \|
+            \-\-\-\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\--\| \-\-\-\-\-\---
+            \[File\](https://developer.mozilla.org/docs/Web/API/File) \| ICoreWebView2File \|
+            \[System.IO.FileInfo\](https://learn.microsoft.com/dotnet/api/system.io.fileinfo) \|
+            \[Windows.Storage.StorageFile\](https://learn.microsoft.com/uwp/api/windows.storage.storagefile) `null` or
+            `undefined` entries will be passed as `null` type in WebView2. Otherwise if an invalid or unsupported object
+            is passed via this API, an exception will be thrown and the message will fail to post.
+          type: ArrayLike&lt;any&gt;
+      return:
+        type: void
+        description: ''
   - name: releaseBuffer(buffer)
     uid: 'WebView2Script!WebView#releaseBuffer:member(1)'
     package: WebView2Script!
