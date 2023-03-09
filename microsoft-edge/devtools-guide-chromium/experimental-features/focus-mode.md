@@ -54,7 +54,7 @@ By default, the position of the **Activity Bar** adapts to the location of the D
 
 The **Activity Bar** left-aligned in Focus Mode, with DevTools docked to the side:
 
-![The Activity Bar left-aligned in Focus Mode, with DevTools docked](./focus-mode-images/docked.png)
+![Activity Bar left-aligned, when DevTools is docked](./focus-mode-images/docked.png)
 
 The **Activity Bar** top-aligned in Focus Mode, with DevTools popped out in a separate window:
 
