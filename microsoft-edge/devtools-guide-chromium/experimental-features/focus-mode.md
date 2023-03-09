@@ -13,7 +13,7 @@ Focus Mode is a new user interface for DevTools.  Focus Mode is designed to simp
 
 Focus Mode replaces the main row of tabs with an **Activity Bar**, which is a compact toolbar with distinctive icons.  The **Activity Bar** makes it possible to pin, rearrange, and open your favorite tools, for quick access.  The **Activity Bar** also provides access to user settings, help, and other features.
 
-Focus Mode also provides a **Quick View** list, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
+Focus Mode also provides a **Quick View** toolbar, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
 
 ![DevTools undocked in its own window, in Focus Mode](./focus-mode-images/focus-mode.png)
 
@@ -54,11 +54,11 @@ By default, the position of the **Activity Bar** adapts to the location of the D
 
 The **Activity Bar** left-aligned in Focus Mode, with DevTools docked to the side:
 
-![Activity Bar left-aligned, when DevTools is docked](./focus-mode-images/docked.png)
+![The vertical Activity Bar, with tool icons only](./focus-mode-images/docked.png)
 
 The **Activity Bar** top-aligned in Focus Mode, with DevTools popped out in a separate window:
 
-![The Activity Bar top-aligned in Focus Mode, with DevTools popped out in a separate window](./focus-mode-images/undocked.png)
+![The horizontal Activity, with tool names and icons](./focus-mode-images/undocked.png)
 
 ### Warning and error indicators
 
@@ -72,11 +72,11 @@ In Focus Mode, this counter has been removed. Instead, small indicators overlay 
 
 ### Quick View
 
-The **Quick View** list contains all tools that can be displayed alongside the one already selected from the **Activity Bar**.
+The **Quick View** toolbar contains tools that can be displayed alongside the one already selected from the **Activity Bar**.
 
 **Quick View** replaces the drawer toolbar from the default user interface:
 
-![The Quick View list in Focus Mode with a tool selected and opened in the bottom pane](./focus-mode-images/quick-view.png)
+![Quick View, expanded, showing the list of tools that can be opened alongside the already selected tool in the Activity Bar](./focus-mode-images/quick-view.png)
 
 ### DevTools customization and settings
 
@@ -133,11 +133,11 @@ You can choose which tools appear in the **Activity Bar** by pinning or unpinnin
 
 Click **More tools** (**+**) to list all the available tools. Selecting a tool will pin it to the **Activity Bar**. It will be shown by default every time DevTools is opened.
 
-![The More tools menu in Focus Mode](./focus-mode-images/more-tools.png)
+![The More tools menu in Focus Mode, with the expanded list of all tools](./focus-mode-images/more-tools.png)
 
 If there isn't enough space in the **Activity Bar** to display all pinned tools, some tools may overflow into the **More tools** menu:
 
-![The More tools menu in Focus Mode when the window is shorter, causing some of the icons to be displayed in the menu rather than the activity bar](./focus-mode-images/overflow-tools.png)
+![The More tools menu, showing some pinned tools that couldn't fit in the Activity Bar](./focus-mode-images/overflow-tools.png)
 
 To unpin a tool from the **Activity Bar**, right-click the tool and select **Remove from Activity Bar**:
 
