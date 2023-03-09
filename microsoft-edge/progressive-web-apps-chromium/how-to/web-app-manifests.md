@@ -73,7 +73,8 @@ A PWA can be customized even further by using other manifest members, such as th
 | `categories` | The list of categories the app belongs to.  |
 | `icons` | Array of icon image objects that are used by the OS in different contexts. |
 | `screenshots` | Array of screenshot image objects, also used by the OS in different contexts.  |
-| `lang` | The primary language of the app. |
+| `lang` | The language used by other localized manifest members such as `name` and `short_name`. |
+| `dir` | The text direction used by other localized manifest members such as `name` and `short_name`. |
 | `start_url` | The preferred URL that should be navigated to when the operating system launches your app. |
 | `scope` | Defines the navigation scope for the app. Outside of this scope, the visited page reverts to a normal webpage, not a PWA. This defaults to `start_url`. |
 | `display` | What the app should look like. This changes how much of the browser UI is shown to the user. |
