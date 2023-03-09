@@ -62,7 +62,7 @@ The **Activity Bar** top-aligned in Focus Mode, with DevTools popped out in a se
 
 ### Warning and error indicators
 
-In the default DevTools user interface, a counter appears in the main toolbar showing the number of messages such as **Issues** recommendations and **Console** warnings. The counter could grow large when many messages ae generated, taking up valuable space in DevTools.
+In the default DevTools user interface, a counter appears in the main toolbar showing the number of messages such as **Issues** recommendations and **Console** warnings. The counter could grow large when many messages are generated, taking up valuable space in DevTools.
 
 ![The default DevTools toolbar Issues and Console message indicators](./focus-mode-images/devtools-toolbar-message-indicator.png)
 
