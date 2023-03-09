@@ -157,7 +157,7 @@ Use **Quick View** to open a second tool next to the one already selected from t
 
 1. Select a tool from the **Activity Bar**.
 
-1. Click **More tools** (**+**) in the **Quick View** and select a different tool from the list.
+1. In the **Quick View** toolbar, click **More tools** (**+**), and then select a different tool from the list.
 
 The following screenshot shows the **Network** tool and the **Console** tool side-by-side:
 
