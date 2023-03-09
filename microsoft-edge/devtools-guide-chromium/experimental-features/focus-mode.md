@@ -153,7 +153,7 @@ Currently, the following tools cannot be unpinned from the **Activity Bar**:
 <!-- ====================================================================== -->
 ## Open tools from Quick View
 
-Use the **Quick View** to open a second tool next to the one already selected from the **Activity Bar**:
+Use **Quick View** to open a second tool next to the one already selected from the **Activity Bar**:
 
 1. Select a tool from the **Activity Bar**.
 
