@@ -316,13 +316,15 @@ methods:
         - id: additionalObjects
           description: >-
             A sequence of DOM objects that have native representations in WebView2. This parameter needs to be
-            ArrayLike. The following DOM types are mapped to native: DOM \| Win32 \| .NET \| WinRT \-\-\-\-\-\--- \|
-            \-\-\-\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\--\| \-\-\-\-\-\---
-            \[File\](https://developer.mozilla.org/docs/Web/API/File) \| ICoreWebView2File \|
+            ArrayLike. The following DOM types are mapped to native:
+
+            DOM \| Win32 \| .NET \| WinRT \-\-\-\-\-\--- \| \-\-\-\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\--\|
+            \-\-\-\-\-\--- \[File\](https://developer.mozilla.org/docs/Web/API/File) \| ICoreWebView2File \|
             \[System.IO.FileInfo\](https://learn.microsoft.com/dotnet/api/system.io.fileinfo) \|
-            \[Windows.Storage.StorageFile\](https://learn.microsoft.com/uwp/api/windows.storage.storagefile) `null` or
-            `undefined` entries will be passed as `null` type in WebView2. Otherwise if an invalid or unsupported object
-            is passed via this API, an exception will be thrown and the message will fail to post.
+            \[Windows.Storage.StorageFile\](https://learn.microsoft.com/uwp/api/windows.storage.storagefile)
+
+            `null` or `undefined` entries will be passed as `null` type in WebView2. Otherwise if an invalid or
+            unsupported object is passed via this API, an exception will be thrown and the message will fail to post.
           type: ArrayLike&lt;any&gt;
       return:
         type: void
