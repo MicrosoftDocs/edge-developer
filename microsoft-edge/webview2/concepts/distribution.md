@@ -379,3 +379,9 @@ Example managed app folder structure:
         \win-x64\native\WebView2Loader.dll (x64)
         \win-x86\native\WebView2Loader.dll (x86)
 ```
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) - a section of the **Microsoft Edge WebView2** page, which links to the present article.

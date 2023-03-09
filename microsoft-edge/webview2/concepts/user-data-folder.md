@@ -28,6 +28,8 @@ WebView2 creates the UDF in the default location for the platform, or in the cus
 
 By default, WebView2 creates a UDF in the default location for the particular platform.  This works well on some platforms, but not others.  If your app has specific needs, you can specify a custom UDF location.
 
+
+<!-- ------------------------------ -->
 #### Suitable custom UDF locations
 
 If you specify a custom UDF location, it should meet the following requirements:
@@ -642,14 +644,16 @@ Your host app or the uninstaller can delete the user data folder (UDF).  You mig
 *  If you want to change the UDF location.  If you change the UDF location, the previous UDF will not be automatically cleaned up.
 
 
-### End the WebView2 session before deleting the UDF
+<!-- ------------------------------ -->
+#### End the WebView2 session before deleting the UDF
 
 To delete a user data folder (UDF), you must first end the WebView2 session.  You cannot delete a UDF if the WebView2 session is currently active.
 
 <!-- write a separate article about writing a WebView2 uninstaller -->
 
 
-### Wait for browser processes to exit before deleting the UDF
+<!-- ------------------------------ -->
+#### Wait for browser processes to exit before deleting the UDF
 
 If files are still in use after your WebView2 host app closes, wait for browser processes to exit before deleting the user data folder (UDF).
 

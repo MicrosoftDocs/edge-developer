@@ -394,7 +394,8 @@ As a part of navigation, the WebView2 control renders the corresponding page (th
 For more information, see [Navigation events for WebView2 apps](navigation-events.md).
 
 
-### Navigations for basic authentication
+<!-- ------------------------------ -->
+#### Navigations for basic authentication
 
 There are two kinds of navigations in the flow:
 *  A "server requested authentication" navigation.

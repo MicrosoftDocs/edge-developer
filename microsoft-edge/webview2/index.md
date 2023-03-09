@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
-ms.date: 02/23/2023
+ms.date: 03/08/2023
 ---
 # Introduction to Microsoft Edge WebView2
 
@@ -18,6 +18,32 @@ With WebView2, you can embed web code in different parts of your native app, or 
 ![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](media/webview2/what-webview.png)
 
 To start building a WebView2 app, see [Get started with WebView2](get-started/get-started.md).
+
+
+<!-- ====================================================================== -->
+## Full diagram of WebView2
+
+Developing a WebView2 app has the following high-level areas:
+*  Dev machine
+*  Distribute the app and Runtime
+*  User machine
+*  Resources
+
+![Full diagram of WebView2](./index-images/full-diagram.png)
+
+
+<!-- ====================================================================== -->
+## Abbreviated terminology for WebView2 components
+
+The WebView2 documentation uses the following shorthand terms.
+
+| Shorthand term | Complete term |
+|---|---|
+|  _App_ | Any app, for any framework or platform, that includes an instance of the WebView2 control.  An app can have areas that use a WebView2 control instance, and other areas that don't use the control. |
+|  _SDK_ | The WebView2 SDK. |
+|  _Control_ | An instance of the WebView2 control.  In an app, typically appears as a rectangular area than contains web content. |
+|  _Runtime_ | The WebView2 Runtime, which is a browser engine.  Installed on user machines, as well as Dev and test machines. |
+|  _Preview channel_ | A preview channel of Microsoft Edge, either Beta (near-stable), Dev, or Canary (the very latest build; daily).  For Dev and test machines only, not user machines. |
 
 
 <!-- ====================================================================== -->
@@ -35,7 +61,7 @@ The following diagram shows the spectrum of apps, from maximum reach, to maximum
 
 *  Wide **reach** includes websites and Progressive Web Apps.
 
-*  In the middle are hybrid apps, such as WebViews and Electron.
+*  In the middle are hybrid apps, such as WebViews and [Electron](https://en.wikipedia.org/wiki/Electron_(software_framework)).
 
 *  Maximum **power** is native apps.
 
@@ -67,31 +93,169 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 <!-- ====================================================================== -->
 ## The WebView2 control, SDK, and Runtime
 
-The WebView2 control, WebView2 SDK, and WebView2 Runtime are related as follows.
-
-![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./index-images/wv2-control-sdk-runtime-diagram.png)
-
-Boundary: Dev machine vs. user machine.
-
-How the WebView2 SDK is laid out in relation to how the WebView2 RunTime is laid out.
-
-Note any differences for Runtime & SDK across the frameworks/platforms/languages.
-
-
-<!-- ------------------------------ -->
-#### Roles of the control, SDK, and Runtime
-
-The WebView2 control, SDK, and Runtime have the following roles:
+The WebView2 control, WebView2 SDK, and WebView2 Runtime have the following roles:
 
 | Component | Role |
 |:---|:---|
-| WebView2 SDK | text |
-| WebView2 control | text |
-| WebView2 Runtime | text |
+| WebView2 SDK | Provides APIs for developers to use in an app's code.  Used by Dev locally while coding the app.  Two versions: Prerelease SDK for local Dev testing, and Release SDK for developing shippable code for users. |
+| WebView2 control | You embed the WebView2 control in the app.  Hosts the Runtime; serves as a visible area to display web content. |
+| WebView2 Runtime | On Dev's test machine and on user machines.  Or, instead of using the Runtime, Dev can use a preview channel of Microsoft Edge for local testing, when using the Prerelease SDK. |
 
 
 <!-- ------------------------------ -->
-#### Prerelease SDK with preview browser channel, or Release SDK with Runtime
+#### Relationship between the WebView2 control, SDK, and Runtime
+
+![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./index-images/wv2-control-sdk-runtime.png)
+
+Control:
+*  WebView2 control - in the app layout; hosts the Runtime.
+
+SDK:
+*  WebView2 SDK - used by Dev while coding.  Either:
+   *  Prerelease SDK (Dev only; includes experimental APIs for Dev testing).
+   *  Release SDK.
+
+Runtime:
+*  WebView2 Runtime - a browser for use as a component of an app; on user machines.  Either:
+   *  Preview channel of Microsoft Edge (Dev only)
+   *  Runtime
+
+
+<!-- ------------------------------ -->
+#### WebView2 control, Runtime, and SDK
+
+![WebView2 control, Runtime, and SDK](./index-images/control-runtime-sdk.png)
+
+This diagram has the following top-level items:
+* Control
+* Runtime
+* SDK
+
+
+*  WebView2 control - eg. add as an XML element
+
+*  WebView2 Runtime (a browser used as a component) - Required; runs the WebView2 control
+*  WebView2 Runtime - runs the WebView2 control
+*  Evergreen Runtime, or Fixed-version Runtime (a browser used as a component of an app)
+*  Evergreen Runtime, or Fixed-version Runtime
+
+WebView2 SDK
+*  Supported platforms: .NET, WinRT, Win32
+*  Preview channel of Microsoft Edge
+
+APIs
+*  Release SDK (to ship)
+*  Prerelease SDK with experimental APIs (to test locally)
+*  JavaScript API (to support communication between web-side code & the host application)
+
+You periodically download the latest SDK from NuGet.  NuGet links are in [Release Notes for the WebView2 SDK](./release-notes).
+
+The SDK includes the JavaScript API?  The JavaScript API is the [WebView2Script package](https://learn.microsoft.com/microsoft-edge/webview2/reference/javascript/).
+
+
+<!-- ====================================================================== -->
+## Design architecture of a WebView2 app
+
+* Host app
+* Native-side code calls platform APIs and WebVieww2 APIs
+* WebView2 control instance
+* Native-side code calls platform APIs and WebView2 APIs
+* Web-side JavaScript code calls WebView2Script APIs & exposed native-side APIs
+
+![Design architecture of a WebView2 app](./index-images/wv2-app-design.png)
+
+
+<!-- ====================================================================== -->
+## Development machine vs. user machine
+
+How the WebView2 SDK is laid out in relation to how the WebView2 RunTime is laid out.
+
+There are a few differences for the Runtime and for the SDK across the frameworks (platforms, languages); for example, for WinRT.
+
+
+<!-- ====================================================================== -->
+## App on the Development machine and user machine
+
+Here are the differences between the Dev machine and User machine, for which components are used.
+
+![App on the Development machine and user machine](./index-images/dev-side-user-side.png)
+
+| Component | Dev machine | User machine |
+|---|---|---|
+| Runtime | A Preview channel of Microsoft Edge, or the Runtime that's part of the SDK. | Runtime (downloaded via bootstrapper, or packaged with app); Microsoft Edge isn't used. |
+| Working environment | Visual Studio project that has the SDK package installed.  Layout designer includes WebView control areas & native, non-WebView control areas. | The App (including WebView control areas, and native, non-WebView control areas). |
+| Activity | Dev works with the APIs in code (experimental APIs or stable APIs). | User machine runs app.  The WebView2 parts of the app (instances of the WebView2 control) use the Runtime to display webpage functionality. |
+| User interface environment | Visual Studio (layout designer includes WebView control areas & native, non-WebView control areas). | The App (including WebView control areas, and native, non-WebView control areas). |
+| SDK | Prerelease SDK (experimental APIs) or Release SDK (stable APIs). | No SDK; just the Runtime containing the executable stable APIs. |
+| Control | Placed on layout designer in Visual Studio. | Areas (regions) of the app containing web content. |
+
+
+<!-- ====================================================================== -->
+## Prerelease SDK and preview channel, or Release SDK and Runtime
+
+Here's the relation between:
+* Prerelease version of wv2 SDK vs. Release version of wv2 SDK.
+* Preview channel of Microsoft Edge vs. the WebView2 Runtime.
+
+
+<!-- ------------------------------ -->
+#### For a prerelease version of your app
+
+To develop the prerelease version of your app:
+* On your Dev machine, in the Visual Studio project, install a **Prerelease** version of the `Microsoft.Web.WebView2` SDK NuGet package.  Write code that uses the **experimental** APIs (and stable APIs).
+* On your Dev machine, install and use a preview channel of Microsoft Edge.
+
+To distribute your prerelease app to your test machine:
+* On your test machine, install a preview channel of Microsoft Edge.
+
+
+<!-- ------------------------------ -->
+#### For a release version of your app
+
+To develop the release version of your app:
+* On your Dev machine, in the Visual Studio project, install a **Release** version of the `Microsoft.Web.WebView2` SDK NuGet package.  Write code that uses only the **stable** APIs.
+* On your Dev machine, use the WebView2 Runtime (part of the SDK package).
+
+To distribute your release app to users, do any of the following:
+* Use one of several approaches to install the Runtime on the user's machine.
+
+
+See also:
+* [Understand the different WebView2 SDK versions](./concepts/versioning.md) - Either use a prerelease SDK with a preview channel of Microsoft Edge, or use a release SDK with the WebView2 Runtime.
+
+
+<!-- ====================================================================== -->
+## Ways to distribute, install, and update the Runtime on the user's machine
+
+There are several ways to distribute the WebView2 Runtime with your app:
+
+![Diagram: Four approaches to distribute the WebView2 Runtime](./index-images/distribute-runtime.png)
+
+| Name of distribution approach | Description | Notes |
+|---|---|---|
+| Link to the Evergreen bootstrapper | In your app's installer, link to the Evergreen Runtime bootstrapper.  Have your app's installer use this link to programmatically download and install the Evergreen bootstrapper onto the user's machine.  Then invoke the bootstrapper to install the appropriate Runtime for the user's device. | For users who have an online connection.  The Evergreen bootstrapper is a tiny installer that installs the correct Runtime for the user's CPU, using an internet connection. |
+| Package the Evergreen bootstrapper | Download the Evergreen bootstrapper to your Dev machine.  Package and distribute the Evergreen bootstrapper with your app installer.  Then your app installer invokes the bootstrapper to install the Runtime on the user's machine. | For users who don't have a reliable connection to the bootstrapper CDN site. |
+| Package the Evergreen standalone installer | Download the Evergreen standalone installer to your Dev machine, and package it with your app.  Package the Evergreen standalone installer with your app's installer.  Your app's installer then invokes the Evergreen standalone installer to install the Runtime on the user's device. | For offline users.  A large, standalone Evergreen Runtime installer for offline users, that includes the Evergreen Runtime. |
+| Package a fixed-version Runtime | Download a version-specific, CPU-specific Runtime to your Dev machine.  Package and distribute the fixed-version Runtime with your app's installer.  Your app's installer installs the specific fixed-version Runtime on the user's machine. | Specialty case, for when you need specific version of the APIs; avoids testing whether latest APIs are available. |
+
+The above approaches are listed in the same sequence as in the [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) section of the **Microsoft Edge WebView2** page, from lightweight to heavyweight approaches.  Favor the lightweight approaches; use a heavyweight approach if required by a specialized scenario.
+
+_Your app's installer_ means your app's installer/updater, which can be separate from your app, or a part of your app.
+
+See also:
+* [Understanding the options at the Runtime download page](./concepts/distribution.md#understanding-the-options-at-the-runtime-download-page) in _Distribute your app and the WebView2 Runtime_.
+
+
+<!-- ====================================================================== -->
+## Host app, WebView2 control, and HTTP server
+
+The WebView2 control acts as an intermediary for communication between the host app and the HTTP server.
+
+![Host app, WebView2 control, and HTTP server](./index-images/hostapp-wv2ctrl-httpserver.png)
+
+
+<!-- ====================================================================== -->
+## Prerelease SDK with preview browser channel, or Release SDK with Runtime
 
 | Version | Renderer platform | Description |
 |:---|:---|:---|
@@ -106,24 +270,6 @@ See also:
 * [Understanding the options at the Runtime download page](./concepts/distribution.md#understanding-the-options-at-the-runtime-download-page) in _Distribute your app and the WebView2 Runtime_.
 * [Prerelease and release SDKs for WebView2](./concepts/versioning.md)
 * [Distribute your app and the WebView2 Runtime](./concepts/distribution.md)
-
-
-<!-- ====================================================================== -->
-## Setup for Dev machine
-
-<!-- todo -->
-
-See also:
-* [Set up your Dev environment for WebView2](./how-to/machine-setup.md)
-
-
-<!-- ====================================================================== -->
-## Setup for User machines
-
-<!-- todo -->
-
-See also:
-* [Set up your Dev environment for WebView2](./how-to/machine-setup.md)
 
 
 <!-- ====================================================================== -->
@@ -151,6 +297,7 @@ WebView2 apps can run on the following versions of Windows:
 *  Windows Server 2016
 
 
+<!-- ------------------------------ -->
 #### Windows 7 and 8
 
 WebView2 Runtime version 109 is the final version that supports the following versions of Windows.  WebView2 Runtime and SDK version 110.0.1519.0 and higher don't support these operating systems.
@@ -164,6 +311,21 @@ WebView2 Runtime version 109 is the final version that supports the following ve
 See also:
 * [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems) - WebView2 support for Windows 7 and Windows Server 2008 R2 have the same support timeline as Microsoft Edge.
 * [Microsoft Edge and WebView2 ending support for Windows 7 and Windows 8/8.1](https://blogs.windows.com/msedgedev/2022/12/09/microsoft-edge-and-webview2-ending-support-for-windows-7-and-windows-8-8-1/)
+
+
+<!-- ====================================================================== -->
+## Resources
+
+*  Docs - the present article is the main page for WebView2 docs. <!--[Introduction to Microsoft Edge WebView2](./index.md)-->
+*  Support - see [Contact the WebView2 Team](./contact.md).
+*  Runtime installer download page - see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section).
+*  NuGet SDK package download site - see [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) at NuGet.org.
+*  GitHub Repos
+   *  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - contains completed Getting Started article projects (minimal code) and code-rich Samples.
+   *  [WebView2Announcements repo](https://github.com/MicrosoftEdge/WebView2Announcements)
+   *  [WebView2Feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
+
+![Diagram: Resources](./index-images/resources.png)
 
 
 <!-- ====================================================================== -->

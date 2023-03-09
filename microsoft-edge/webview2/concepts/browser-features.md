@@ -109,20 +109,24 @@ The following Microsoft Edge and Google Chrome settings webpages aren't availabl
 Google has disabled Google Authentication in embedded webviews, which includes WebView2, due to a security policy they have set.  See [Upcoming security changes to Google's OAuth 2.0 authorization endpoint in embedded webviews](https://developers.googleblog.com/2021/06/upcoming-security-changes-to-googles-oauth-2.0-authorization-endpoint.html).
 
 To stay up-to-date on the latest discussion, in the WebView2Feedback repo, see [Google Auth Flows and WebView2](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1647).
+
+
 <!-- ====================================================================== -->
 ## Additional keyboard shortcuts information
 
 Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2.
 
 
-### Preventing shortcuts from changing during update
+<!-- ------------------------------ -->
+#### Preventing shortcuts from changing during update
 
 When Microsoft Edge is updated, the default key bindings might change.  Furthermore, a keyboard shortcut that is turned off by default might instead be turned on, if the feature is now supported in WebView2.
 
 To avoid such changes to your keyboard shortcuts, you can set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, which turns off all keys that access browser features, but keeps all basic text-editing and movement shortcuts turned on.
 
 
-### Shortcuts that are turned off
+<!-- ------------------------------ -->
+#### Shortcuts that are turned off
 
 The following shortcuts are always turned off in WebView2, or are effectively turned off.  An asterisk (`*`) indicates that the shortcut isn't turned off, but the feature that it accesses is turned off, or the feature doesn't apply to WebView2.
 
@@ -169,7 +173,8 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 | Show Collections `*` | `Ctrl`+`Shift`+`Y` |
 
 
-### Shortcuts turned off except when event not handled
+<!-- ------------------------------ -->
+#### Shortcuts turned off except when event not handled
 
 The following keyboard shortcuts are always turned off, except in windows that display when the `NewWindowRequested` event isn't handled:
 
@@ -180,7 +185,8 @@ The following keyboard shortcuts are always turned off, except in windows that d
 | Fullscreen | `F11` |
 
 
-### Shortcuts turned off if AcceleratorEnabled is False
+<!-- ------------------------------ -->
+#### Shortcuts turned off if AcceleratorEnabled is False
 
 If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following additional keyboard shortcuts are turned off:
 
@@ -206,6 +212,14 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Open DevTools Inspect | `Ctrl`+`Shift`+`C` |
 
 
-### Customizing an individual key
+<!-- ------------------------------ -->
+#### Customizing an individual key
 
 To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches)
+* [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event
