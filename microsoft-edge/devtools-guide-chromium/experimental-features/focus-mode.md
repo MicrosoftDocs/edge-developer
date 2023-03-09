@@ -49,7 +49,7 @@ The **Activity Bar** is the most visible difference from the default user interf
 
 By default, the position of the **Activity Bar** adapts to the location of the DevTools window:
 
-* If DevTools is undocked or docked to the bottom of the browser, the **Activity Bar** will be horizontal.
+* When DevTools is undocked or docked to the bottom of the browser, the **Activity Bar** is horizontal.
 * If DevTools is docked to the side of the browser, the **Activity Bar** will be vertical, and tool names will not be visible. This enables quicker tool access when screen width is limited.
 
 The **Activity Bar** left-aligned in Focus Mode, with DevTools docked to the side:
