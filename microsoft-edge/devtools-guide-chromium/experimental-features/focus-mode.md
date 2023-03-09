@@ -171,7 +171,7 @@ To hide or expand **Quick View**, click **Collapse Quick View** (![Collapse icon
 
 The **Activity Bar** can be oriented vertically or horizontally to maximize usable screen space in a variety of DevTools window locations.
 
-To change the location of the **Activity Bar** click **Customize and control DevTools**, then select one of the locations next to **Activity bar location**:
+To change the location of the **Activity Bar**, click **Customize and control DevTools**, then select one of the locations next to **Activity Bar location**:
 
 ![The 'Activity bar location' menu in Focus Mode](./focus-mode-images/activity-bar-location.png)
 
