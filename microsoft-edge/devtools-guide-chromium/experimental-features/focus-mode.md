@@ -15,7 +15,7 @@ Focus Mode replaces the main row of tabs with an **Activity Bar**, which is a co
 
 Focus Mode also provides a **Quick View** list, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
 
-![DevTools undocked in its own window, with the Focus Mode experiment](./focus-mode-images/focus-mode.png)
+![DevTools undocked in its own window, in Focus Mode](./focus-mode-images/focus-mode.png)
 
 
 <!-- ====================================================================== -->
