@@ -21,30 +21,6 @@ To start building a WebView2 app, see [Get started with WebView2](get-started/ge
 
 
 <!-- ====================================================================== -->
-## High-level view of app development that includes WebView2 control instances
-
-Developing a WebView2 app has the following high-level areas:
-*  Dev machine
-*  Distribute the app and Runtime
-*  User machine
-*  Resources
-
-![Full diagram of WebView2](./index-images/full-diagram.png)
-
-
-<!-- ====================================================================== -->
-## Top-level WebView2 components
-
-| Shorthand term | Complete term |
-|---|---|
-|  _App_ | Any app, for any framework or platform, that includes an instance of the WebView2 control.  An app can have areas that use a WebView2 control instance, and other areas that don't use the control. |
-|  _SDK_ | The WebView2 SDK.  When part of your app uses WebView2, that code can call these APIs in conjunction with instances of the WebView2 control.  The Release SDK ships to users, and contains only stable APIs.  The Prerelease SDK is only used by Devs, and contains some experimental APIs. |
-|  _Control_ | An instance of the WebView2 control.  In an app, typically appears as a rectangular area than contains web content. |
-|  _Runtime_ | The WebView2 Runtime, which is a browser engine.  Installed on user machines, as well as Dev and test machines. |
-|  _Preview channel_ | A preview channel of Microsoft Edge, either Beta (near-stable), Dev, or Canary (the very latest build; daily).  For Dev and test machines only, not user machines. |
-
-
-<!-- ====================================================================== -->
 ## Hybrid app approach
 
 Developers must often decide between building a web app or a native app.  This decision hinges on the tradeoff between reach and power:
@@ -86,6 +62,30 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 *  **Fixed Version distribution**.  Optionally package a specific version of the Chromium bits in your app.
 
 *  **Incremental adoption**.  Add web components piece-by-piece to your app.
+
+
+<!-- ====================================================================== -->
+## High-level view of app development that includes WebView2 control instances
+
+Developing a WebView2 app has the following high-level areas:
+*  Dev machine
+*  Distribute the app and Runtime
+*  User machine
+*  Resources
+
+![Full diagram of WebView2](./index-images/full-diagram.png)
+
+
+<!-- ====================================================================== -->
+## Top-level WebView2 components
+
+| Shorthand term | Complete term |
+|---|---|
+|  _App_ | Any app, for any framework or platform, that includes an instance of the WebView2 control.  An app can have areas that use a WebView2 control instance, and other areas that don't use the control. |
+|  _SDK_ | The WebView2 SDK.  When part of your app uses WebView2, that code can call these APIs in conjunction with instances of the WebView2 control.  The Release SDK ships to users, and contains only stable APIs.  The Prerelease SDK is only used by Devs, and contains some experimental APIs. |
+|  _Control_ | An instance of the WebView2 control.  In an app, typically appears as a rectangular area than contains web content. |
+|  _Runtime_ | The WebView2 Runtime, which is a browser engine.  Installed on user machines, as well as Dev and test machines. |
+|  _Preview channel_ | A preview channel of Microsoft Edge, either Beta (near-stable), Dev, or Canary (the very latest build; daily).  For Dev and test machines only, not user machines. |
 
 
 <!-- ====================================================================== -->
@@ -312,7 +312,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## How the WebView2 SDK is laid out in relation to how the WebView2 RunTime is laid out
+## How the WebView2 SDK is laid out in relation to how the WebView2 Runtime is laid out
 
 todo: what's the intention here?
 
