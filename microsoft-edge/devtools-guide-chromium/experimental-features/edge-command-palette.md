@@ -13,7 +13,7 @@ Use Command Palette to quickly access various Microsoft Edge browser commands an
 
 Using Command Palette, you can directly access productivity and developer features that normally require clicking through several menus or using a series of keyboard shortcuts.
 
-![A Microsoft Edge window showing the Command Palette input box in the center](./media/command-palette.png)
+![A Microsoft Edge window showing the Command Palette input box in the center](./edge-command-palette-images/command-palette.png)
 
 
 <!-- ====================================================================== -->
@@ -29,7 +29,7 @@ By default, Command Palette isn't enabled. To enable the Command Palette experim
 
 1. Click the **Restart** button which appears in the lower right:
 
-   ![Enabling the Command Palette flag in the edge://flags page](./media/command-palette-flag.png)
+   ![Enabling the Command Palette flag in the edge://flags page](./edge-command-palette-images/command-palette-flag.png)
 
 
 <!-- ====================================================================== -->
@@ -46,7 +46,7 @@ To open Command Palette:
    * Type **bookmark** to display commands about bookmarks (shown below).
    * Press `>` to list the available DevTools commands.
 
-   ![Command Palette with the word "bookmark" typed in, and a list of related commands](./media/command-palette-bookmark.png)
+   ![Command Palette with the word "bookmark" typed in, and a list of related commands](./edge-command-palette-images/command-palette-bookmark.png)
 
 1. Press `Down Arrow` or `Up Arrow` to select a command, or use the mouse wheel, and then press `Enter`.
 
