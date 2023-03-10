@@ -116,7 +116,6 @@ Runtime:
    *  Runtime
 
 
-
 ![WebView2 control, Runtime, and SDK](./index-images/control-runtime-sdk.png)
 
 This diagram has the following top-level items:
@@ -124,14 +123,15 @@ This diagram has the following top-level items:
 * Runtime
 * SDK
 
-
+Control:
 *  WebView2 control - eg. add as an XML element
 
+Runtime:
 *  WebView2 Runtime (a browser used as a component) - Required; runs the WebView2 control
 *  WebView2 Runtime - runs the WebView2 control
 *  Evergreen Runtime, or Fixed-version Runtime (a browser used as a component of an app)
 *  Evergreen Runtime, or Fixed-version Runtime
-
+    
 WebView2 SDK
 *  Supported platforms: .NET, WinRT, Win32
 *  Preview channel of Microsoft Edge
@@ -141,9 +141,12 @@ APIs
 *  Prerelease SDK with experimental APIs (to test locally)
 *  JavaScript API (to support communication between web-side code & the host application)
 
-You periodically download the latest SDK from NuGet.  NuGet links are in [Release Notes for the WebView2 SDK](./release-notes).
+You periodically download the latest SDK from NuGet.  NuGet links are in [Release Notes for the WebView2 SDK](./release-notes.md).
 
-The SDK includes the JavaScript API?  The JavaScript API is the [WebView2Script package](https://learn.microsoft.com/microsoft-edge/webview2/reference/javascript/).
+The SDK includes the JavaScript API, which is in the `WebView2Script` package.
+
+See also:
+* [WebView2 API Reference](./webview2-api-reference.md)
 
 
 <!-- ====================================================================== -->
@@ -218,7 +221,11 @@ The WebView2 control acts as an intermediary for communication between the host 
 
 
 <!-- ====================================================================== -->
-## Frameworks and coding languages supported
+## Supported platforms
+
+
+<!-- ------------------------------ -->
+#### Frameworks and coding languages supported
 
 The following programming environments are supported:
 
@@ -231,8 +238,8 @@ The following programming environments are supported:
 *  [WinUI 3.0](/windows/apps/winui/winui3/)
 
 
-<!-- ====================================================================== -->
-## Windows versions supported
+<!-- ------------------------------ -->
+#### Windows versions supported
 
 WebView2 apps can run on the following versions of Windows:
 
@@ -246,8 +253,7 @@ WebView2 apps can run on the following versions of Windows:
 *  Windows Server 2016
 
 
-<!-- ------------------------------ -->
-#### Windows 7 and 8
+###### Windows versions supported with limitations
 
 WebView2 Runtime version 109 is the final version that supports the following versions of Windows.  WebView2 Runtime and SDK version 110.0.1519.0 and higher don't support these operating systems.
 

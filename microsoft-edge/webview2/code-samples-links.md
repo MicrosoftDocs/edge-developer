@@ -10,7 +10,7 @@ ms.date: 08/29/2022
 ---
 # WebView2 Sample apps
 
-This page is specifically about the code-rich platform sample apps within the Samples repo.  For the finished Getting Started article projects (minimal code) which are also at the Samples repo, see [Getting Started tutorials](https://learn.microsoft.com/en-us/microsoft-edge/webview2/get-started/get-started).
+This page is specifically about the code-rich platform sample apps within the Samples repo.  For the finished Getting Started article projects (minimal code) which are also at the Samples repo, see [Getting Started tutorials](./get-started/get-started.md).
 
 
 Sample apps that use WebView2 are available in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps), for various frameworks or platforms.
