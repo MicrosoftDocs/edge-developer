@@ -23,7 +23,7 @@ This article assumes that you already have a working project. If you don't have 
 <!-- ====================================================================== -->
 ## Basic WebView2 functions
 
-Use the following functions to begin embedding JavaScript in your WebView2 app.
+Use the following functions to embed JavaScript in the native-side code of your WebView2 app:
 
 | API | Description |
 | --- | --- |
@@ -34,27 +34,27 @@ Use the following functions to begin embedding JavaScript in your WebView2 app.
 <!-- ====================================================================== -->
 ## Scenario: ExecuteScript JSON-encoded results
 
-Because the result of `ExecuteScriptAsync` is JSON-encoded, if the result of evaluating the JavaScript is a string, you will receive a JSON-encoded string and not the value of the string.
+Because the result of `ExecuteScriptAsync` is JSON-encoded, if the result of evaluating the JavaScript is a string, your native-side code will receive a JSON-encoded string, not the value of the string.
 
-For example, the following code executes script that results in a string.  The resulting string includes a quote at the start, a quote at the end, and escaping slashes:
+For example, the following native-side code executes script that results in a string.  The resulting string includes a quote at the start, a quote at the end, and escaping slashes:
 
 ```csharp
 string result = await coreWebView2.ExecuteScriptAsync(@"'example'");
 Debug.Assert(result == "\"example\"");
 ```
 
-The script returns a string that `ExecuteScript` JSON-encodes for you.  If you call `JSON.stringify` from your script, then the result is doubly encoded as a JSON string the value of which is a JSON string.
+The script returns a string that `ExecuteScript` JSON-encodes for you.  If you call `JSON.stringify` from your script (in your web-side code), then the result is doubly encoded, as a JSON string the value of which is a JSON string.
 
-Only the properties that are directly in the result are included in the JSON-encoded object; inherited properties aren't included in the JSON-encoded object.  Most DOM objects inherit all properties, so you'll need to explicitly copy their values into another object to return.  For example:
+Only the properties that are directly in the result are included in the JSON-encoded object; inherited properties aren't included in the JSON-encoded object.  Most DOM objects inherit all properties, so your web-side code must explicitly copy the properties' values into another object and return that object to your native-side code.  For example:
 
 Script              | Result
 ---                 | ---
 `performance.memory`  | `{}`
 `(() => { const {totalJSHeapSize, usedJSHeapSize} = performance.memory; return {totalJSHeapSize, usedJSHeapSize}; })();` |  `{"totalJSHeapSize":4434368,"usedJSHeapSize":2832912}`
 
-When we return just `performance.memory` we don't see any of its properties in the result because all properties are inherited.  If instead, we copy particular property values from `performance.memory` into our own new object to return, then we see those properties in the result.
+When we return just `performance.memory`, we don't see any of its properties in the result, because all properties are inherited.  If instead, the web-side code copies particular property values from `performance.memory` into a new object and returns that object, then the native-side code sees those properties in the result.
 
-When executing script via `ExecuteScriptAsync` that script is run in the global context.  It helps to have your script in an anonymous function so that any variables you define aren't polluting the global context.
+When executing script via `ExecuteScriptAsync`, that script is run in the global context.  It helps to have your script in an anonymous function, so that any variables you define aren't polluting the global context.
 
 For example:
 
@@ -67,11 +67,14 @@ For example:
 ## Scenario: Running a dedicated script file
 
 In this section, you access a dedicated JavaScript file from your WebView2 control.
+<!-- todo: clarify the scenario.  from native code? "from" is ambiguous.  is the file a web-side file?
+what does "dedicated" mean? -->
+
 
 > [!NOTE]
 > Although writing JavaScript inline may be efficient for quick JavaScript commands, you lose JavaScript color themes and line formatting that makes it difficult to write large sections of code in Visual Studio.
 
-To solve the problem, create a separate JavaScript file with your code, and then pass a reference to that file using the `ExecuteScriptAsync` parameters.
+To solve the problem, create a separate JavaScript file that contains your code, and then pass a reference to that file by using the `ExecuteScriptAsync` parameters.
 
 1. Create a `.js` file in your project, and add the JavaScript code that you want to run.  For example, create a file called `script.js`.
 

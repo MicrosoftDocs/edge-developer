@@ -1146,11 +1146,11 @@
 
             - name: Win32 sample app
               href: webview2/samples/webview2apissample.md
-              displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
+              displayName: WebView2APISample, SampleApps  # repo dir names
 
             - name: Win32 sample app with Visual Composition
               href: webview2/samples/webview2samplewincomp.md
-              displayName: WebView2SampleWinComp, Win32 sample app with Visual Composition  # repo dir name, top-of-page title
+              displayName: WebView2SampleWinComp  # repo dir name
 
             - name: Win32 sample WebView2Browser
               href: webview2/samples/webview2browser.md
@@ -1158,7 +1158,7 @@
 
             - name: WinUI 2 (UWP) sample app
               href: webview2/samples/webview2_sample_uwp.md
-              displayName: webview2_sample_uwp, WinUI 2 (UWP) sample app  # repo dir name, top-of-page title
+              displayName: webview2_sample_uwp  # repo dir name
 
 # pending, July 26 2022
 #            - name: WinUI 3 sample app
@@ -1167,11 +1167,11 @@
 
             - name: WPF sample app
               href: webview2/samples/webview2wpfbrowser.md
-              displayName: WebView2WpfBrowser, WPF sample app  # repo dir name, top-of-page title
+              displayName: WebView2WpfBrowser  # repo dir name
 
             - name: WPF sample app with CDP
               href: webview2/samples/wv2cdpextensionwpfsample.md
-              displayName: WV2CDPExtensionWPFSample, WPF sample app with CDP  # repo dir name, top-of-page title
+              displayName: WV2CDPExtensionWPFSample, WPF sample app with CDP extension  # repo dir name, top-of-page title
 
             - name: WinForms sample app
               href: webview2/samples/webview2windowsformsbrowser.md
