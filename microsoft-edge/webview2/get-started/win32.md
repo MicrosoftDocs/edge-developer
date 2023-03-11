@@ -25,6 +25,7 @@ This tutorial starts by opening an existing Win32 app project that has WebView2 
 This tutorial does not have you create a new project; you don't use a project template in Visual Studio to create a new project.  Instead, you start with the completed project that's in the repo.
 
 
+<!-- ------------------------------ -->
 #### Completed project
 
 The completed tutorial project is available in the **WebView2Samples** repo:
@@ -98,7 +99,8 @@ If Visual Studio Installer prompts you to install a Workload:
 The Installer closes.
 
 
-### Retarget Projects
+<!-- ------------------------------ -->
+#### Retarget Projects
 
 The Visual Studio **Review Solution Actions** dialog might appear, prompting you whether you want to **Retarget Projects**:
 
@@ -127,7 +129,8 @@ The above screenshot shows some WebView2 code (`#include "WebView2.h"`), that's 
 <!-- To confirm that the header lines are already already present in the repo: in a different window or tab, see [WebView2Samples/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp). -->
 
 
-### Set the solution to use the Win10 SDK and Visual Studio toolset
+<!-- ------------------------------ -->
+#### Set the solution to use the Win10 SDK and Visual Studio toolset
 
 This step is only needed for older versions of Visual Studio, so it's likely you can skip it.  But you can take a look at this UI in any case:
 
@@ -430,7 +433,8 @@ Now to do the above, in the callback, you'll:
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
 
-### Build your Bing sample app
+<!-- ------------------------------ -->
+#### Build your Bing sample app
 
 1. Press **F5** to build and run the project.
 
@@ -514,7 +518,8 @@ The injected JavaScript is run with specific timing:
 <!-- This accomplishes & demonstrates X.  This is interesting and relevant because X. -->
 
 
-### If code must be run in order, use callbacks
+<!-- ------------------------------ -->
+#### If code must be run in order, use callbacks
 
 The script injection APIs (and some other WebView2 APIs) are asynchronous.  So, if code must be run in a specific order, you should use callbacks.
 

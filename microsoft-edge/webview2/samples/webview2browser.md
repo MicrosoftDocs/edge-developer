@@ -63,6 +63,8 @@ The [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/)
 
 1. Make the changes listed below, if you're using a Windows version below Windows 10.
 
+
+<!-- ------------------------------ -->
 #### Using versions below Windows 10
 
 If you want to build and run the browser in versions of Windows before Windows 10, make the following changes.  This is required because of how DPI is handled in Windows 10 vs previous versions of Windows.
@@ -202,8 +204,8 @@ The sections below describe how some of the features in WebView2Browser were imp
 **Contents:**
 
 * [The basics](#the-basics)
-  * [Set up the environment, create a WebView](#set-up-the-environment-create-a-webview)
-  * [Navigate to web page](#navigate-to-web-page)
+  * [Setting up the environment and creating a WebView](#setting-up-the-environment-and-creating-a-webview)
+  * [Navigating to a web page](#navigating-to-a-web-page)
   * [Updating the address bar](#updating-the-address-bar)
   * [Going back, going forward](#going-back-going-forward)
 * [Some interesting features](#some-interesting-features)
@@ -217,7 +219,9 @@ The sections below describe how some of the features in WebView2Browser were imp
 <!-- ====================================================================== -->
 ## The basics
 
-### Set up the environment, create a WebView
+
+<!-- ------------------------------ -->
+#### Setting up the environment and creating a WebView
 
 WebView2 allows you to host web content in your Windows app. It exposes the globals [CreateCoreWebView2Environment](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) and [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions) from which we can create the two separate environments for the browser's UI and content.
 
@@ -316,9 +320,10 @@ HRESULT BrowserWindow::CreateBrowserControlsWebView()
 We're setting up a few things here. The [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings) interface is used to disable DevTools in the WebView powering the browser controls. We're also adding a handler for received web messages. This handler will enable us to do something when the user interacts with the controls in this WebView.
 
 
-#### Navigate to web page
+<!-- ------------------------------ -->
+#### Navigating to a webpage
 
-You can navigate to a web page by entering its URI in the address bar. When pressing Enter, the controls WebView will post a web message to the host app so it can navigate the active tab to the specified location. Code below shows how the host Win32 application will handle that message.
+You can navigate to a webpage by entering its URI in the address bar. When pressing Enter, the controls WebView will post a web message to the host app so it can navigate the active tab to the specified location. Code below shows how the host Win32 application will handle that message.
 
 ```cpp
         case MG_NAVIGATE:
@@ -356,6 +361,7 @@ You can navigate to a web page by entering its URI in the address bar. When pres
 WebView2Browser will check the URI against browser pages (i.e. favorites, settings, history) and navigate to the requested location or use the provided URI to search Bing as a fallback.
 
 
+<!-- ------------------------------ -->
 #### Updating the address bar
 
 The address bar is updated every time there is a change in the active tab's document source and along with other controls when switching tabs. Each WebView will fire an event when the state of the document changes, we can use this event to get the new source on updates and forward the change to the controls WebView (we'll also update the go back and go forward buttons).
@@ -433,6 +439,7 @@ We have sent the `MG_UPDATE_URI` message along with the URI to the controls WebV
 ```
 
 
+<!-- ------------------------------ -->
 #### Going back, going forward
 
 Each WebView will keep a history for the navigations it has performed so we only need to connect the browser UI with the corresponding methods. If the active tab's WebView can be navigated back/forward, the buttons will post a web message to the host application when clicked.
@@ -477,7 +484,8 @@ The host application side:
 ```
 
 
-#### Reloading, stop navigation
+<!-- ------------------------------ -->
+#### Reloading, stopping navigation
 
 We use the `NavigationStarting` event fired by a content WebView to update its associated tab loading state in the controls WebView. Similarly, when a WebView fires the `NavigationCompleted` event, we use that event to instruct the controls WebView to update the tab state. The active tab state in the controls WebView will determine whether to show the reload or the cancel button. Each of those will post a message back to the host application when clicked, so that the WebView for that tab can be reloaded or have its navigation canceled, accordingly.
 
@@ -523,11 +531,12 @@ function reloadActiveTabContent() {
 ## Some interesting features
 
 
+<!-- ------------------------------ -->
 #### Communicating the WebViews
 
-We need to communicate the WebViews that power the tabs and UI, so that user interactions in one tab's WebView have the desired effect in the other WebView.  WebView2Browser makes use of set of very useful WebView2 APIs for this purpose, including [PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson), [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) and [ICoreWebView2WebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventhandler).
+We need to communicate the WebViews that power the tabs and UI, so that user interactions in one tab's WebView have the desired effect in the other WebView.  To do this,  WebView2Browser uses WebView2 APIs, including [PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson), [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) and [ICoreWebView2WebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventhandler).
 
-On the JavaScript side, we're making use of the `window.chrome.webview` object exposed to call the `postMessage` method and add an event lister for received messages.
+On the JavaScript side, we use the exposed `window.chrome.webview` object to call the `postMessage` method and add an event lister for received messages.
 
 ```cpp
 HRESULT BrowserWindow::CreateBrowserControlsWebView()
@@ -588,9 +597,11 @@ function reloadActiveTabContent() {
 }
 ```
 
+
+<!-- ------------------------------ -->
 #### Tab handling
 
-A new tab will be created whenever the user clicks on the **new tab** button to the right of the open tabs. The control's WebView will post a message to the host application to create the WebView for that tab and create an object tracking its state.
+A new tab is created whenever the user clicks the **New tab** button to the right of the open tabs. The control's WebView will post a message to the host application to create the WebView for that tab and create an object tracking its state.
 
 ```javascript
 function createNewTab(shouldBeActive) {
@@ -740,6 +751,8 @@ HRESULT BrowserWindow::SwitchToTab(size_t tabId)
 }
 ```
 
+
+<!-- ------------------------------ -->
 #### Updating the security icon
 
 We use the [CallDevToolsProtocolMethod](/microsoft-edge/webview2/reference/win32/icorewebview2#calldevtoolsprotocolmethod) to enable listening for security events. Whenever a `securityStateChanged` event is fired, we will use the new state to update the security icon on the controls WebView.
@@ -789,6 +802,8 @@ HRESULT BrowserWindow::HandleTabSecurityUpdate(size_t tabId, ICoreWebView2* webv
             break;
 ```
 
+
+<!-- ------------------------------ -->
 #### Populating the history
 
 WebView2Browser uses IndexedDB in the controls WebView to store history items, just an example of how WebView2 enables you to access standard web technologies as you would in the browser. The item for a navigation will be created as soon as the URI is updated. These items are then retrieved by the history UI in a tab making use of `window.chrome.postMessage`.

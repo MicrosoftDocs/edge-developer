@@ -15,6 +15,7 @@ This article covers how to set up your development tools and create an initial W
 In this tutorial, you use the **WPF Application** or **WPF App (.NET Framework)** project template to create a WPF app, and then install the WebView2 SDK for the project to add WebView2.
 
 
+<!-- ------------------------------ -->
 #### Completed project
 
 A completed version<!--TODO: what date?--> of this tutorial project is available in the **WebView2Samples** repo:
@@ -386,7 +387,9 @@ During webpage navigation, the WebView2 control raises events. The app that host
 
 The above diagram shows the event sequence.  Navigation events start with a new document.
 
-### Success path
+
+<!-- ------------------------------ -->
+#### Success path
 
 A successful path includes the full sequence of events:
 1. Navigation starting.
@@ -398,7 +401,8 @@ A successful path includes the full sequence of events:
 For more information, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
 
-### Failure path
+<!-- ------------------------------ -->
+#### Failure path
 
 If theres a failure, the failure path proceeds directly from navigation starting, to navigation completed, skipping the intervening events.
 
@@ -409,12 +413,14 @@ When an error occurs, the following events are raised, and may depend on navigat
 * `HistoryChanged`
 
 
-### Redirection
+<!-- ------------------------------ -->
+#### Redirection
 
 If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
 
 
-### Example demonstrating navigation events
+<!-- ------------------------------ -->
+#### Example demonstrating navigation events
 
 To demonstrate how to use the events, register a handler for `NavigationStarting` that cancels any non-HTTPS requests, as follows.
 

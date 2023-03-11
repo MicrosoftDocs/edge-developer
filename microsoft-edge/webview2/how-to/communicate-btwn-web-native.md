@@ -31,7 +31,9 @@ For detailed steps about cloning the repo, see [WebView2 samples](../code-sample
 
 WebView2 controls let you exchange simple messages between web and native sides of an application.  You can use data types such as `JSON` or `String` to send messages between the host application and WebView2.
 
-### Send Messages from the host app to WebView2
+
+<!-- ------------------------------ -->
+#### Send Messages from the host app to WebView2
 
 This example shows how the sample app changes the color of text in the front end, based on a message from the host app.
 
@@ -124,7 +126,8 @@ To see messaging in action:
 That completes the example showing how WebView2 communicates through simple messages.
 
 
-### Receive message strings via postMessage
+<!-- ------------------------------ -->
+#### Receive message strings via postMessage
 
 This example follows the `Receiving Messages` section of the webpage, to change the text of the title bar.  The host app receives a message from WebView2 with the new title bar text.
 
@@ -191,7 +194,8 @@ The C++ file handles the title text and communicates it to the host app as a str
    }).Get(), &m_webMessageReceivedToken));
    ```
 
-### Round-trip messages
+<!-- ------------------------------ -->
+#### Round-trip messages
 
 This example follows the `<h2>Round trip</h2>` section of the WebMessage sample page, [ScenarioWebMessage.html](https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html). This example shows a round-trip message from WebView2 to the host app and back.  The host app receives a request from WebView2 and returns the bounds of the active window.
 

@@ -49,7 +49,9 @@ Instead of using the WebResourceRequested APIs, it's preferable to use these oth
 **Note:** For URLs with virtual hostnames, using the `WebResourceRequested` event isn't supported.  This is because the `WebResourceRequested` event isn't fired for the [SetVirtualHostNameToFolderMapping method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping).<!-- or ClearVirtualHostNameToFolderMapping. -->
 
 
-### How your host app, the WebView2 control, and the HTTP server interact
+
+<!-- ------------------------------ -->
+#### How your host app, the WebView2 control, and the HTTP server interact
 
 The WebView2 control sits in between your host app and the HTTP server.  When your host app navigates to a URI, the WebView2 control sends a request to the HTTP server.  The HTTP server then sends a response to the WebView2 control.
 
@@ -69,23 +71,27 @@ Intercepting the request allows you to customize the header content, URL, or the
 
 The host app can change the properties of a request by using this API:
 
-# [.NET](#tab/dotnet)
+##### [.NET](#tab/dotnet)
 
 * [CoreWebView2WebResourceRequest Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest)
 
-# [Win32](#tab/win32)
+##### [Win32](#tab/win32)
 
 * [ICoreWebView2WebResourceRequest](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest)
 
 ---
 
-### What you can do with headers
+
+<!-- ------------------------------ -->
+#### What you can do with headers
 
 A HTTP header provides important information and metadata about a request or response.  Changing [headers](https://developer.mozilla.org/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network. 
 
 A [request header](https://developer.mozilla.org/docs/Glossary/Request_header) can be used to indicate the format of the response (such as the `Accept-*` headers), set authentication tokens, read and write cookies (sensitive information), modify the user agent, and so on.  A [response header](https://developer.mozilla.org/docs/Glossary/Response_header) can be used to provide more context of the response.
 
-### Filtering the WebResourceRequested event based on URL and resource type
+
+<!-- ------------------------------ -->
+#### Filtering the WebResourceRequested event based on URL and resource type
 
 In order to receive `WebResourceRequested` events, specify filters for the requests that the host app is interested in, based on URL and resource type.
 
@@ -93,11 +99,11 @@ For example, suppose the host app is trying to replace images.  In this case, th
 
 Another example is if the host app is only interested in all requests that are under a site like `https://example.com`.  Then the app can specify a URL filter as `https://example.com/*` to get events that are associated with that site.
 
-# [.NET](#tab/dotnet)
+##### [.NET](#tab/dotnet)
 
 * [CoreWebView2.AddWebResourceRequestedFilter Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter)
 
-# [Win32](#tab/win32)
+##### [Win32](#tab/win32)
 
 * [AddWebResourceRequestedFilter method](/microsoft-edge/webview2/reference/win32/icorewebview2#addwebresourcerequestedfilter)
 
@@ -107,7 +113,9 @@ Another example is if the host app is only interested in all requests that are u
 For details about how the URL filter works, see [CoreWebView2.AddWebResourceRequestedFilter Method > Remarks](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter#remarks)
 
 
-### Why would you want to intercept requests that are sent from WebView2?  
+
+<!-- ------------------------------ -->
+#### Why would you want to intercept requests that are sent from WebView2?  
 
 Intercepting requests sent from WebView2 enables you to further configure your request. The host app might want to provide optional content as part of the request that the WebView2 control won't know on its own. Some scenarios include:
 *  You're logging into a page and the app has credentials so the app can provide authentication header without the user having to enter those credentials.  
@@ -115,7 +123,8 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 *  You want to upload local file content to the request server via a POST request.
 
 
-### Sequence for modifying requests
+<!-- ------------------------------ -->
+#### Sequence for modifying requests
 
 <!-- wiki page that points to the Visio source file: Documentation > "Notes about specific image files" -->
 ![Diagram of sequence for modifying requests](webresourcerequested-images/sequence-for-modifying-requests.png)
@@ -134,8 +143,8 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 1. The host app listens for the `WebResourceResponseReceived` event and handles it.<!-- todo: arrow: "The WebView2 control creates a request for a resource that's needed for the webpage." -->
 
 
-<!-- ====================================================================== -->
-### Example: Intercepting a request, to monitor or modify it
+<!-- ------------------------------ -->
+#### Example: Intercepting a request, to monitor or modify it
 <!-- ## Example: Header modification when making a request -->
 
 <!-- this example doesn't exist in the sample repo -->
@@ -143,7 +152,7 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 <!-- note: the below intro is based on copying the main h2's Sentence 1 from above: -->
 In the following example, the host app _intercepts_ the document request that is sent from the WebView2 control to the `http://www.example.com` HTTP server, adds a custom header value and sends the request.  
 
-# [.NET](#tab/dotnet)
+##### [.NET](#tab/dotnet)
 
 ```csharp
 // Add a filter to select all resource types under http://www.example.com
@@ -162,7 +171,7 @@ webView.CoreWebView2.WebResourceRequested += delegate (
 }
 ```
 
-# [Win32](#tab/win32)
+##### [Win32](#tab/win32)
 
 ```cpp
 // Add a filter to select all resource types under http://www.example.com
@@ -203,7 +212,8 @@ m_webView->add_WebResourceRequested(
 By default, the HTTP server sends responses to the WebView2 control.  Your host app can _override_ a response that's sent from the HTTP server to the WebView2 control, and send a custom response to the WebView2 control instead of the original response.
 
 
-### Sequence for overriding responses
+<!-- ------------------------------ -->
+#### Sequence for overriding responses
 
 <!-- wiki page that points to the Visio source file: Documentation > "Notes about specific image files" -->
 ![Diagram of sequence for overriding responses](webresourcerequested-images/sequence-for-overriding-responses.png)
@@ -219,9 +229,10 @@ By default, the HTTP server sends responses to the WebView2 control.  Your host 
 <!-- todo: remove "then" from diagram step 8 -->
 
 
-### Example: Overriding a response, to proactively replace it
+<!-- ------------------------------ -->
+#### Example: Overriding a response, to proactively replace it
 
-# [.NET](#tab/dotnet)
+##### [.NET](#tab/dotnet)
 
 ```csharp
 // Add a filter to select all image resources
@@ -238,7 +249,7 @@ webView.CoreWebView2.WebResourceRequested += delegate (
 };
 ```
 
-# [Win32](#tab/win32)
+##### [Win32](#tab/win32)
 
 ```cpp
 // Add a filter to select all image resources
@@ -283,18 +294,19 @@ m_webView->add_WebResourceRequested(
 
 The `NavigateWithWebResourceRequest` method allows your host app to navigate the WebView2 control using a custom `WebResourceRequest`.  You can use this API to create a GET or POST request that has custom headers and content.  Then the WebView2 control will navigate by using this custom request.
 
-# [.NET](#tab/dotnet)
+##### [.NET](#tab/dotnet)
 
 * [CoreWebView2.NavigateWithWebResourceRequest(CoreWebView2WebResourceRequest) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
 
-# [Win32](#tab/win32)
+##### [Win32](#tab/win32)
 
 * [interface ICoreWebView2_2::NavigateWithWebResourceRequest method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
 
 ---
 
-<!-- ====================================================================== -->
-### Example: Constructing a custom request and navigating using that request
+
+<!-- ------------------------------ -->
+#### Example: Constructing a custom request and navigating using that request
 
 <!-- This is an existing example in the Win32 sample app. -->
 
@@ -306,7 +318,7 @@ from https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateW
 
 <!-- -------------------------------------------------- -->
 
-# [.NET](#tab/dotnet)
+##### [.NET](#tab/dotnet)
 
 ```csharp
 // This code posts text input=Hello to the POST form page in W3Schools.
@@ -330,7 +342,7 @@ webView.CoreWebView2.NavigateWithWebResourceRequest(webResourceRequest);
 
 <!-- -------------------------------------------------- -->
 
-# [Win32](#tab/win32)
+##### [Win32](#tab/win32)
 
 ```cpp
 // This code posts text input=Hello to the POST form page in W3Schools.
@@ -366,7 +378,8 @@ webview->NavigateWithWebResourceRequest(webResourceRequest.get());
 You can monitor the requests and responses via the `WebResourceResponseReceived` event, to read any header value.
 
 
-### Example: Monitoring the requests and responses via the WebResourceResponseReceived event
+<!-- ------------------------------ -->
+#### Example: Monitoring the requests and responses via the WebResourceResponseReceived event
 
 This example shows how to read the authorization header value by monitoring the requests and responses via the `WebResourceResponseReceived` event.
 
@@ -376,7 +389,7 @@ The following code demonstrates how the `WebResourceResponseReceived` event can 
 
 <!-- -------------------------------------------------- -->
 
-# [.NET](#tab/dotnet)
+##### [.NET](#tab/dotnet)
 
 ```csharp
 WebView.WebResourceResponseReceived += WebView_WebResourceResponseReceived;
@@ -422,7 +435,7 @@ private async void WebView_WebResourceResponseReceived(object sender, CoreWebVie
 
 <!-- -------------------------------------------------- -->
 
-# [Win32](#tab/win32)
+##### [Win32](#tab/win32)
 
 COM example, uses `ICoreWebView2WebResourceRequest`.
 
@@ -471,8 +484,7 @@ m_webView->add_WebResourceResponseReceived(
 
 <!-- -------------------------------------------------- -->
 
-# [.NET](#tab/dotnet)
-
+##### [.NET](#tab/dotnet)
 
 **Request:**
 
@@ -513,7 +525,7 @@ m_webView->add_WebResourceResponseReceived(
 
 <!-- -------------------------------------------------- -->
 
-# [Win32](#tab/win32)
+##### [Win32](#tab/win32)
 
 **Request:**
 

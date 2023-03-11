@@ -265,34 +265,50 @@ Both of these parts of the Sample App are displayed in the image below:
 
 This section briefly explains some key files within the repository. The WebView2APISample is divided vertically into components, instead of horizontally into layers.  Each component implements the whole workflow of a category of example features, from listening for menu commands, to calling WebView API methods to implement them.
 
+
+<!-- ------------------------------ -->
 #### 1. App.cpp
 
 This is the top-level file that runs the Sample App. It reads command line options, sets up the process environment, and handles the app's threading model.
 
+
+<!-- ------------------------------ -->
 #### 2. AppWindow.cpp
 
 This file implements the application window. In this file, we first set up all the Win32 controls. Second, we initialize the WebView Environment and the WebView. Third, we add some event handlers to the WebView and create all the components that handle various features of the application. The `AppWindow` class itself handles commands from the application's Window menu.
 
+
+<!-- ------------------------------ -->
 #### 3. FileComponent.cpp
 
 This component handles commands from the File menu (except for Exit), as well as the `DocumentTitleChanged` event.
 
+
+<!-- ------------------------------ -->
 #### 4. ScriptComponent.cpp
 
 This component handles commands from the Script menu, which involve interacting with the WebView by injecting JavaScript, posting WebMessages, adding native objects to the webpage, or using the DevTools protocol to communicate with the webpage.
 
+
+<!-- ------------------------------ -->
 #### 5. ProcessComponent.cpp
 
 This component handles commands from the Process menu, which involve interaction with the browser's process. It also handles the ProcessFailed event, in case the browser process or one of its render process crashes or is unresponsive.
 
+
+<!-- ------------------------------ -->
 #### 6. SettingsComponent.cpp
 
 This component handles commands from the Settings menu, and is also in charge of copying settings from an old WebView when a new one is created. Most code that interacts with the `ICoreWebView2Settings` interface can be found here.
 
+
+<!-- ------------------------------ -->
 #### 7. ViewComponent.cpp
 
 This component handles commands from the View menu, and any functionality related to sizing and visibility of the WebView. When the app window is resized, minimized, or restored, `ViewComponent` will resize, hide, or show the WebView in response. It also responds to the `ZoomFactorChanged` event.
 
+
+<!-- ------------------------------ -->
 #### 8. ScenarioWebMessage.cpp and ScenarioWebMessage.html
 
 This component is created when you select the Scenario/Web Messaging menu item. It implements an example application with a C++ part and an HTML+JavaScript part, which communicate with each other by asynchronously posting and receiving messages.
@@ -301,6 +317,7 @@ This component is created when you select the Scenario/Web Messaging menu item. 
 <!-- todo: remove from PR 140: ![alt text](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Samples/master/SampleApps/WebView2APISample/documentation/screenshots/sample-app-webmessaging-screenshot.png) -->
 
 
+<!-- ------------------------------ -->
 #### 9. ScenarioAddHostObject.cpp and ScenarioAddHostObject.html
 
 This component is created when you select the Scenario/Host Objects menu item. It demonstrates communication between the native app and the HTML webpage by means of host object injection.  The interface of the host object is declared in `HostObjectSample.idl`, and the object itself is implemented in `HostObjectSampleImpl.cpp`.
@@ -312,8 +329,11 @@ This component is created when you select the Scenario/Host Objects menu item. I
 The section below briefly explains some of the key functions in the Sample App.
 
 
-### AppWindow.cpp
+<!-- ====================================================================== -->
+## AppWindow.cpp
 
+
+<!-- ------------------------------ -->
 #### InitializeWebView()
 
 In the AppWindow file, we use the InitializeWebView() function to create the WebView2 environment by using [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
@@ -346,6 +366,8 @@ if (!SUCCEEDED(hr))
 }
 ```
 
+
+<!-- ------------------------------ -->
 #### OnCreateEnvironmentCompleted()
 
 This callback function is passed to `CreateCoreWebView2EnvironmentWithOptions` in `InitializeWebView()`.  It stored the environment pointer and then uses it to create a new WebView.
@@ -366,10 +388,14 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 }
 ```
 
+
+<!-- ------------------------------ -->
 #### OnCreateCoreWebView2ControllerCompleted()
 
 This callback function is passed to `CreateCoreWebView2Controller` in `InitializeWebView()`. Here, we initialize the WebView-related state, register some event handlers, and create the app components.
 
+
+<!-- ------------------------------ -->
 #### RegisterEventHandlers()
 
 This function is called within `CreateCoreWebView2Controller`. It sets up some of the event handlers used by the application, and adds them to the WebView.
@@ -401,7 +427,9 @@ CHECK_FAILURE(m_webView->add_NewWindowRequested(
     nullptr));
 ```
 
-### ScenarioWebMessage
+
+<!-- ====================================================================== -->
+## ScenarioWebMessage
 
 The `ScenarioWebMessage` files show how the Win32 Host can modify the WebView, how the WebView can modify the Win32Host, and how the WebView can modify itself by accessing information from the Win32 Host. This is done asynchronously.
 
@@ -419,6 +447,8 @@ The WebView should display a simple webpage titled: "WebMessage sample page". Th
 
 To better understand ScenarioWebMessage functionality, you can either follow the instructions on the page or the steps detailed below.
 
+
+<!-- ------------------------------ -->
 #### 1. Posting Messages (Win32 Host to WebView)
 
 The following steps show how the Win32 Host can modify a WebView. In this example, you will turn the text blue:
@@ -463,6 +493,8 @@ window.chrome.webview.addEventListener('message', arg => {
 });
 ```
 
+
+<!-- ------------------------------ -->
 #### 2. Receiving Messages (WebView to Win32 Host)
 
 The following steps show how the WebView can modify the Win32 Host App by changing the title of the Win32 App:
@@ -513,6 +545,8 @@ CHECK_FAILURE(m_webview->add_WebMessageReceived(
 }).Get(), &m_webMessageReceivedToken));
 ```
 
+
+<!-- ------------------------------ -->
 #### 3. Roundtrip (WebView to WebView)
 
 The following steps show how the WebView can get information from the Win32 Host and modify itself by displaying the size of the Win32 App.

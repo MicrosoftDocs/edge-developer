@@ -94,12 +94,15 @@ You can download the repo as a `.zip` file, or clone the repo.
 
 To clone the `WebView2Samples` repo (or the `WebView2Browser` repo), you must first install git.  You can download the repo, as described above, or clone it.
 
-### Install git
+
+<!-- ------------------------------ -->
+#### Install git
 
 1. If you want to clone the `WebView2Samples` repo (instead of downloading it), and if git isn't not already installed, [download git](https://git-scm.com/downloads) and install it.
 
 
-### Obtain the URL for cloning the WebView2Samples repo
+<!-- ------------------------------ -->
+#### Obtain the URL for cloning the WebView2Samples repo
 
 1. Open the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) in a new window or tab.
 
@@ -115,7 +118,8 @@ To clone the `WebView2Samples` repo (or the `WebView2Browser` repo), you must fi
 Next, clone the GitHub repo to your local drive.  To do that, follow the appropriate steps below, for the tool you want to use.
 
 
-### Cloning the repo by using Visual Studio
+<!-- ------------------------------ -->
+#### Cloning the repo by using Visual Studio
 
 If you want to use Visual Studio to clone the GitHub repo to your local drive:
 
@@ -130,7 +134,8 @@ If you want to use Visual Studio to clone the GitHub repo to your local drive:
 You've cloned the repo to your local drive.  Skip to the next major section below.
 
 
-### Cloning the repo by using GitHub Desktop
+<!-- ------------------------------ -->
+#### Cloning the repo by using GitHub Desktop
 
 If you want to use GitHub Desktop to clone the GitHub repo to your local drive:
 
@@ -147,7 +152,8 @@ If you want to use GitHub Desktop to clone the GitHub repo to your local drive:
 You've cloned the repo to your local drive.  Skip to the next major section below.
 
 
-### Cloning the repo by using Git Bash shell or a command prompt
+<!-- ------------------------------ -->
+#### Cloning the repo by using Git Bash shell or a command prompt
 
 If you instead want to clone the repo by using a Git Bash shell or command prompt:
 

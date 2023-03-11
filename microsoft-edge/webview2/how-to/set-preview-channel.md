@@ -51,7 +51,9 @@ There are several ways to make your WebView2 app use a specified preview channel
 
 These approaches are described below.
 
-### Browser executable folder
+
+<!-- ------------------------------ -->
+#### Browser executable folder
 
 One approach is to use a browser executable folder.  In this approach, you specify a folder that contains runtime binaries. This folder can be any of the following locations:
 *  The installed location of the WebView2 Runtime.
@@ -60,7 +62,9 @@ One approach is to use a browser executable folder.  In this approach, you speci
 
 If you set the browser executable folder to a specific preview channel of Microsoft Edge, you will need to update the location when that preview channel updates to a newer version. This is because the location includes the version number as part of its path. Therefore, we recommend using this approach for local testing only.
 
-### Default channel-search order
+
+<!-- ------------------------------ -->
+#### Default channel-search order
 
 This section applies to using a group policy, registry override, or environment variable.
 
@@ -80,7 +84,9 @@ If you set the release channel preference to `1` by using a group policy, regist
 
 If you want to make your application use a specific runtime by calling a function, complete the following steps.
 
-### Win32\/C++
+
+<!-- ------------------------------ -->
+#### Win32\/C++
 
 We'll use the [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) to demonstrate this procedure.
 
@@ -112,7 +118,9 @@ We'll use the [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Sampl
            .Get());
    ```
 
-### WinForms
+
+<!-- ------------------------------ -->
+#### WinForms
 
 WinForms uses an approach similar to the Win32/C++ approach described above.
 
@@ -138,7 +146,9 @@ WinForms uses an approach similar to the Win32/C++ approach described above.
       }
    ```
 
-### WPF
+
+<!-- ------------------------------ -->
+#### WPF
 
 WPF uses an approach similar to the Win32/C++ approach described above.
 
@@ -154,7 +164,9 @@ When specifying a preview channel by using a registry override, there are two op
 
 These two approaches are described below.
 
-### Registry override: browser executable folder
+
+<!-- ------------------------------ -->
+#### Registry override: browser executable folder
 
 To make your application use a Microsoft Edge preview channel by using a registry override that sets the browser executable folder:
 
@@ -168,13 +180,17 @@ To make your application use a Microsoft Edge preview channel by using a registr
 
    Replace `C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0` by the path to the desired Microsoft Edge preview channel.
 
+
+<!-- ------------------------------ -->
 #### Resuming using the default, WebView2 Evergreen Runtime
 
 To undo the above setting, run the following command:
 
 `REG DELETE HKLM\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /f`
 
-### Registry override: release channel preference
+
+<!-- ------------------------------ -->
+#### Registry override: release channel preference
 
 To make your application use a Microsoft Edge preview channel by using a registry override that changes the release channel preference by changing the order of searching for a channel:
 
@@ -186,7 +202,8 @@ To make your application use a Microsoft Edge preview channel by using a registr
 
    Replace `WebView2APISample.exe` with the filename of your own app executable or the Application User Model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
 
-#### Resuming using the default, WebView2 Evergreen Runtime
+
+###### Resuming using the default, WebView2 Evergreen Runtime
 
 To delete the `ReleaseChannelPreference` registry override, run the command:
 
@@ -216,7 +233,9 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
    ![Adding a new environment variable, as a user variable](media/env-vars-new-user-variable.png)
 
-### Which app is affected
+
+<!-- ------------------------------ -->
+#### Which app is affected
 
 The above approach sets the environment variable for all WebView2 apps, not just the app you're testing.  To set this environment variable for only the WebView2 app which you are testing, if you're running your app from the command prompt, set the environment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1`.  That sets the environment variable just for the current `cmd.exe` command-prompt process and for any new child processes from that `cmd.exe` instance.  Then the environment variable only applies to the WebView2 app that you're testing.
 
@@ -227,7 +246,9 @@ If you use the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable, you c
 | `1` | Reverses the search order, to use [preview channels](https://www.microsoftedgeinsider.com/download) first, before the WebView2 Runtime. |
 | `0` or another value other than `1` | Uses the [default channel-search order](#default-channel-search-order), which is to use the WebView2 Runtime before the preview channels. |
 
-### Applying the new environment variable to running processes
+
+<!-- ------------------------------ -->
+#### Applying the new environment variable to running processes
 
 After setting an environment variable, the environment variable is applied to any new processes that are created.  The environment variable doesn't apply to processes which are already running.  To ensure that all processes use the new environment variable, you may need to restart Visual Studio, or log out of Windows and then log in again.
 
