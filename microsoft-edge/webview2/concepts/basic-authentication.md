@@ -111,7 +111,7 @@ For more realistic code, see the subsequent section.
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [C#](#tab/csharp)
 
 ```csharp
 // Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
@@ -132,7 +132,7 @@ For more realistic code, see the subsequent section.
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [C++](#tab/cpp)
 
 ```cpp
 // Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
@@ -186,7 +186,7 @@ This example builds upon the above sample, by adding the following features:
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [C#](#tab/csharp)
 
 ```csharp
 // Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
@@ -263,7 +263,7 @@ webView.CoreWebView2.BasicAuthenticationRequested += delegate (
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [C++](#tab/cpp)
 
 ```cpp
 // Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
@@ -423,7 +423,7 @@ Navigation `event args` has a property: the `NavigationId`.  The `NavigationId` 
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [C#](#tab/csharp)
 
 * [CoreWebView2BasicAuthenticationRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs)
 * [CoreWebView2.BasicAuthenticationRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
@@ -431,7 +431,7 @@ Navigation `event args` has a property: the `NavigationId`.  The `NavigationId` 
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [C++](#tab/cpp)
 
 * [ICoreWebView2BasicAuthenticationRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)
 * [add_BasicAuthenticationRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested)

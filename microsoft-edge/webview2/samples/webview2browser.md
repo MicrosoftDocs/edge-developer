@@ -205,7 +205,7 @@ The sections below describe how some of the features in WebView2Browser were imp
 
 * [The basics](#the-basics)
   * [Setting up the environment and creating a WebView](#setting-up-the-environment-and-creating-a-webview)
-  * [Navigating to a web page](#navigating-to-a-web-page)
+  * [Navigating to a webpage](#navigating-to-a-webpage)
   * [Updating the address bar](#updating-the-address-bar)
   * [Going back, going forward](#going-back-going-forward)
 * [Some interesting features](#some-interesting-features)
