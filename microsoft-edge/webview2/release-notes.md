@@ -8,7 +8,6 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 03/13/2023
 ---
-
 # Release Notes for the WebView2 SDK
 
 The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) on a four-week cadence. This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
