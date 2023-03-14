@@ -1332,6 +1332,10 @@
               href: webview2/how-to/debug-visual-studio.md
               displayName: Debug WebView2 apps with Visual Studio  # top-of-page title
 
+            - name: Remote debugging
+              href: webview2/how-to/remote-debugging.md
+              displayName: Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge  # top-of-page title
+
 # -----------------------------------------------------------------------------
         - name: Architecture
           items:
