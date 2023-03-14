@@ -360,10 +360,11 @@ class ManagedStream : Stream {
             {
                 s_.Dispose();
             }
-        } catch (Exception e)
+        } 
+        catch
         {
             s_.Dispose();
-            throw e;
+            throw;
         }
         return read;
     }
@@ -478,10 +479,10 @@ class ManagedStream : IRandomAccessStream
                 }
             });
         }
-        catch (Exception e)
+        catch
         {
             s_.Dispose();
-            throw e;
+            throw;
         }
         return result;
     }
