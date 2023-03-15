@@ -89,7 +89,7 @@ See also:
 <!-- Title: The Performance tool can now display unminified function names in the flame chart -->
 <!-- Subtitle: Use the new Unminify button in the Performance tool to download an unminified version of the performance profile you recorded. -->
 
-**Update:** In Microsoft Edge 111, this feature has been removed, because the **Performance** tool now automatically provides the original file and function names while profiling production code, as long as sourcemaps are hosted on Azure Artifacts Symbol Server.  See [The Performance tool now automatically unminifies file and function names while profiling production code](../../2023/03/devtools-111.md#the-performance-tool-now-automatically-unminifies-file-and-function-names-while-profiling-production-code) in _What's new in DevTools (Microsoft Edge 111)_.
+**Update:** In Microsoft Edge 111, this feature has been removed, because the **Performance** tool now automatically provides the original file and function names while profiling production code, as long as sourcemaps are hosted on Azure Artifacts Symbol Server.  See [Performance tool unminifies file and function names when profiling production code](../../2023/03/devtools-111.md#performance-tool-unminifies-file-and-function-names-when-profiling-production-code) in _What's new in DevTools (Microsoft Edge 111)_.
 
 
 #### Deprecated What's New entry

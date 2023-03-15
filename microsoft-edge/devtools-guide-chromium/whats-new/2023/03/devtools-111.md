@@ -56,6 +56,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Performance tool unminifies file and function names when profiling production code
+<!-- if change heading: update link in what's new item that links to here -->
 
 <!-- Subtitle: As long as the Performance tool can find sourcemaps from Symbol Server, the Performance tool automatically presents the original file and function names in the flame chart. -->
 
