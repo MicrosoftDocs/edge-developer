@@ -17,17 +17,18 @@ ms.date: 03/15/2023
 
 <!-- Subtitle: Get the Remote Tools for Microsoft Edge app from the Microsoft Store to set up remote debugging today! -->
 
-The **Remote Tools for Microsoft Edge** app is a plug-in for the **Windows Device Portal for Desktop** that enables remote debugging for tabs in Microsoft Edge, Progressive Web Apps (PWAs), and WebView2 controls.  By using remote debugging, you can run web content on a remote device and debug it right from your development machine.  In Microsoft Edge 111, the **Remote Tools for Microsoft Edge** app is now available on Xbox and HoloLens devices.
+In Microsoft Edge 111, the **Remote Tools for Microsoft Edge** app is now available on Xbox and HoloLens devices.  The **Remote Tools for Microsoft Edge** app is a plug-in for the **Windows Device Portal for Desktop** that enables remote debugging for tabs in Microsoft Edge, Progressive Web Apps (PWAs), and WebView2 controls.  By using remote debugging, you can run web content on a remote device and debug it right from your development machine.
 
 ![The Remote Tools for Microsoft Edge app in the Microsoft Store](./devtools-111-images/remote-tools-in-the-microsoft-store.png)
 
-With remote debugging enabled, you don't need to open DevTools on either HoloLens or Xbox devices any more.  Instead, you can connect to the remote Xbox or HoloLens device via Device portal and the `edge://inspect` page, and then select whichever **target:** tab, PWA, or WebView2 control you want to launch DevTools against.
+With remote debugging enabled, you don't need to open DevTools on either HoloLens or Xbox devices any more.  Instead, you can connect to the remote Xbox or HoloLens device via Device portal and the `edge://inspect` page, and then select whichever `target:` tab, PWA, or WebView2 control you want to launch DevTools against.
 
 To give us feedback on the remote debugging flow for Microsoft Edge, leave a comment in [Issue 136: Remote debugging Xbox and HoloLens devices is now available with the latest version of the Remote Tools for Microsoft Edge app](https://github.com/MicrosoftEdge/DevTools/issues/136).
 
 See also:
 * [Remotely debug Windows devices](../../../remote-debugging/windows.md)
 * [Windows Device Portal for Desktop](/windows/uwp/debug-test-perf/device-portal-desktop)
+* [Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge](../../../../webview2/how-to/remote-debugging.md)
 
 
 <!-- ====================================================================== -->
@@ -37,13 +38,13 @@ See also:
 
 In previous versions of Microsoft Edge, to emulate different themes or vision deficiencies, you would use the **Rendering** tool -- for example, to emulate Achromatopsia, which is when the user is unable to perceive any color, which reduces all color to a shade of grey.
 
-In Microsoft Edge 112, you can now access these themes and vision deficiencies emulation controls directly from the **Device Mode** toolbar, in addition to the **Rendering** tool.
+In Microsoft Edge 111, you can now access these themes and vision deficiencies emulation controls directly from the **Device Mode** toolbar, in addition to the **Rendering** tool.
 
-For example, to emulate high contrast mode and test how your web content responds, you can now select the Eyedropper<!--todo: tooltip name & icon screenshot--> icon next to the **No throttling** dropdown in the **Device Mode** toolbar, and then select `forced-colors: active`:
+For example, to emulate high contrast mode and test how your web content responds, in the **Device Mode** toolbar, to the right of the **Throttling** dropdown list, click **Emulate Media Features** (the Eyedropper icon, ![Eyedropper icon](./devtools-111-images/eyedropper-device-mode-icon.png)), and then select **forced-colors: active**:
 
 ![Emulating high contrast mode directly from the Device Mode toolbar](./devtools-111-images/new-emulation-options-hc-mode.png)
 
-You can also emulate vision deficiencies by clicking the Eye icon next to the Eyedropper icon.  For example, to emulate blurred vision, click the Eye<!--todo: tooltip name & icon screenshot--> icon and then select the `Blurred vision` entry:
+You can also emulate vision deficiencies by clicking the Eye icon next to the Eyedropper icon.  For example, to emulate blurred vision, click **Emulate Vision Deficiency** (the eye icon, ![Eye icon](./devtools-111-images/eye-device-mode-icon.png)), and then select **Blurred vision**:
 
 ![Emulating blurred vision directly from the Device Mode toolbar](./devtools-111-images/new-emulation-options-blurred-vision.png)
 
