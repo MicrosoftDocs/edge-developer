@@ -56,15 +56,19 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 -->
 
 ## 1.0.1661.34
-  
-Release Date: March 15, 2023  
-  
-[NuGet package for WebView2 SDK 1.0.1661.34](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1661.34)  
-  
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 111.1661.34 or higher.
 
+Release Date: March 15, 2023
+
+[NuGet package for WebView2 SDK 1.0.1661.34](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1661.34)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 111.0.1661.34 or higher.
+
+
+<!-- ------------------------------ -->
 #### General
 
+
+<!-- ---------- -->
 ###### Promotions
 
 The following items are now stable.
@@ -154,19 +158,24 @@ The following items are now stable.
    * [ICoreWebView2Profile4::GetNonDefaultPermissionSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2profile4?view=webview2-1.0.1661.34&preserve-view=true#getnondefaultpermissionsettings)
 * [ICoreWebView2SetPermissionStateCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2setpermissionstatecompletedhandler?view=webview2-1.0.1661.34&preserve-view=true)
 
-
 ---
+
+
 <!-- ====================================================================== -->
-## 1.0.1724.0-prerelease
-  
-Release Date: March 15, 2023  
-  
-[NuGet package for WebView2 SDK 1.0.1724.0](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1724.0-prerelease)  
+## 1.0.1724-prerelease
 
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 113.1724.0.0 or higher.  
+Release Date: March 15, 2023
 
+[NuGet package for WebView2 SDK 1.0.1724-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1724-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 113.0.1724.0 or higher.
+
+
+<!-- ------------------------------ -->
 #### General
 
+
+<!-- ---------- -->
 ###### Experimental Features
 
 *	Added support for texture streaming:
@@ -186,7 +195,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
    * [ICoreWebView2ExperimentalTextureStream::ErrorReceived (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_errorreceived)
    * [ICoreWebView2ExperimentalTextureStream::SetD3DDevice](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#set_d3ddevice)
    * [ICoreWebView2ExperimentalTextureStream::WebTextureReceived (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_webtexturereceived)
-   * [ICoreWebView2ExperimentalTextureStream::WebTextureStreamStopped (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_webtexturestreamstopped)  
+   * [ICoreWebView2ExperimentalTextureStream::WebTextureStreamStopped (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_webtexturestreamstopped)
 
 *	The environment interface that returns the texture stream interface:
 
@@ -265,7 +274,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ---
 
-<!-- ------------------------------ -->
+
+<!-- ---------- -->
 ###### Promotions
 
 The following APIs are promoted to stable in this prerelease SDK.
@@ -287,12 +297,16 @@ The following APIs are promoted to stable in this prerelease SDK.
 * [ICoreWebView2Settings8 interface](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1724-prerelease&preserve-view=true)
    * [ICoreWebView2Settings8::IsReputationCheckingRequired (get, put)](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1724-prerelease&preserve-view=true#get_isreputationcheckingrequired)
 
+
+<!-- ---------- -->
 ###### Bug Fixes
-    
-*   Fixed a bug in PrintAsync and PrintToPdfStreamAsync that throws exception when print settings are null.  
-*   Improved handling of apps running elevated. (Runtime)  
-*   Added support for window management permission kind (SDK and Runtime)  
-*   Reliability improvement (Runtime).
+
+*  Fixed a bug in `PrintAsync` and `PrintToPdfStreamAsync` that throws exception when print settings are null.
+*  Improved handling of apps running elevated.  (Runtime)
+*  Added support for window management permission kind.  (SDK and Runtime)
+*  Reliability improvement.  (Runtime)
+
+
 <!-- ====================================================================== -->
 ## 1.0.1587.40
 
@@ -834,7 +848,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 #### General
 
 <!-- ---------- -->
-###### Experimental features 
+###### Experimental features
 
 *  Added support for the Locale Region API:
 
@@ -871,7 +885,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
    * [ICoreWebView2ExperimentalEnvironmentOptions2::EnableTrackingPrevention property (get](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions2?view=webview2-1.0.1549-prerelease&preserve-view=true#get_enabletrackingprevention), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions2?view=webview2-1.0.1549-prerelease&preserve-view=true#put_enabletrackingprevention)
 * [ICoreWebView2ExperimentalProfile5 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalProfile5::PreferredTrackingPreventionLevel property (get](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease&preserve-view=true#get_preferredtrackingpreventionlevel), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile5?view=webview2-1.0.1549-prerelease&preserve-view=true#put_preferredtrackingpreventionlevel)
-        
+
 ---
 
 
@@ -954,8 +968,8 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 <!-- ---------- -->
 ###### Bug fixes
- 
-*  Fixed some nullptr issues where now some public APIs which take nullptr as input parameters do not crash the WebView2. 
+
+*  Fixed some nullptr issues where now some public APIs which take nullptr as input parameters do not crash the WebView2.
 *  Disabled "Open link as Profile" in the WebView2 context menu.
 *  Fixed bug where the whole tool bar will be blank when hiding Bookmarks, Search, and PageSelector buttons simultaneously. ([Issue #2866](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2866))
 *  Fix post data missing in form submit with control click. ([Issue #2652](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2652))
