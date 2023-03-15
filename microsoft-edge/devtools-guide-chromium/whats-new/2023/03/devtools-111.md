@@ -77,11 +77,11 @@ See also:
 
 <!-- Subtitle: In previous versions of Microsoft Edge, the Styles pane of the Elements tool didn't provide easy access to all of the sections within it. This issue has now been fixed in Microsoft Edge 111. -->
 
-In previous versions of Microsoft Edge, in **Focus Mode**, the **Elements** tool did not provide any easy way to access all of the sections within the **Styles** pane.  In Microsoft Edge 111, this issue has been fixed.  When the **Styles** pane has a narrow viewport and can't display all of its sections, select the **Expand** (&or;)<!-- todo: replace by icon --> icon.
+In previous versions of Microsoft Edge, in **Focus Mode**, the **Elements** tool didn't provide an easy way to access all of the sections within the **Styles** pane.  In Microsoft Edge 111, this issue has been fixed.  When the **Styles** pane has a narrow viewport and can't display all of its sections, click the **More tabs** (![More tabs expander icon](./devtools-111-images/more-tools-expand-icon.png)) expander icon.
 
 ![The collapsed menu of the Styles pane in Focus Mode](./devtools-111-images/collapsed-menu-for-styles-pane.png)
 
-To collapse the menu and only see a few of the sections in the **Styles** pane, select the **Collapse** (&and;)<!-- todo: replace by icon --> icon.
+To collapse the menu and only see a few of the sections in the **Styles** pane, click the **More tabs**  (![More tabs collapser icon](./devtools-111-images/more-tools-collapse-icon.png)) collapser icon.
 
 ![The expanded menu of the Styles pane in Focus Mode](./devtools-111-images/expanded-menu-for-styles-pane.png)
 
@@ -95,9 +95,9 @@ See also:
 
 <!-- Subtitle: In Microsoft Edge 111, you can copy and paste Selector Stats data from the Performance tool for aggregate selector performance analysis. -->
 
-In [Microsoft Edge 109](../../2023/01/devtools-109.mdmd#debug-long-running-recalculate-style-events-with-new-selector-stats), we introduced a feature to the **Performance** tool called **Selector Stats**.  With the **Enable advanced rendering instrumentation (slow)** setting turned on in the **Performance** tool, selecting any **Recalculate Styles** event from the flame chart will produce a new tab of **Selector Stats** in the bottom pane.
+Microsoft Edge 109 introduced the **Selector Stats** feature in the **Performance** tool.  With the **Enable advanced rendering instrumentation (slow)** setting turned on in the **Performance** tool, selecting any **Recalculate Styles** event in the flame chart adds a **Selector Stats** tab in the bottom pane.  See [Debug long-running Recalculate Style events with new selector stats](../../2023/01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's new in DevTools (Microsoft Edge 109)_.
 
-In Microsoft Edge 111, you can now export this **Selector Stats** table for each **Recalculate Styles** event to an Excel workbook.  Then you can use an Excel workbook to do aggregate selector performance analysis, and identify the costliest selectors over the lifetime of the profile.  To export the **Selector Stats** table, select the entire **Selector Stats** table, copy it, and then paste it into an Excel workbook:
+In Microsoft Edge 111, you can now export the **Selector Stats** table for each **Recalculate Styles** event to an Excel workbook.  Then you can use an Excel workbook to do aggregate selector performance analysis, and identify the costliest selectors over the lifetime of the profile.  To export the **Selector Stats** table, select the entire **Selector Stats** table, copy it, and then paste it into an Excel workbook:
 
 ![Selecting the entire Selector Stats table for copy-paste](./devtools-111-images/export-selector-stats-table.png)
 
