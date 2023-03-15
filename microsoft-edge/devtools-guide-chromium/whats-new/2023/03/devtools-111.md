@@ -98,7 +98,13 @@ See also:
 
 Microsoft Edge 109 introduced the **Selector Stats** feature in the **Performance** tool.  With the **Enable advanced rendering instrumentation (slow)** setting turned on in the **Performance** tool, selecting any **Recalculate Styles** event in the flame chart adds a **Selector Stats** tab in the bottom pane.  See [Debug long-running Recalculate Style events with new selector stats](../../2023/01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's new in DevTools (Microsoft Edge 109)_.
 
-In Microsoft Edge 111, you can now export the **Selector Stats** table for each **Recalculate Styles** event to an Excel workbook.  Then you can use an Excel workbook to do aggregate selector performance analysis, and identify the costliest selectors over the lifetime of the profile.  To export the **Selector Stats** table, select the entire **Selector Stats** table, copy it, and then paste it into an Excel workbook:
+In Microsoft Edge 111, you can now export the **Selector Stats** table for each **Recalculate Styles** event to a Microsoft Excel workbook.  You can then use Excel to do aggregate selector performance analysis, and identify the costliest selectors over the lifetime of the profile.
+
+To export the **Selector Stats** table:
+
+1. Click the upper left cell with the mouse, and then drag to select to the bottom right cell.  Or, click once or twice in a cell, and then press `Ctrl`+`A`.
+1. Right-click the table, and then select **Copy**.  Or, press `Ctrl`+`C` (Windows, Linux) or `Command`+`C` (macOS).
+1. Paste the table into Excel.
 
 ![Selecting the entire Selector Stats table for copy-paste](./devtools-111-images/export-selector-stats-table.png)
 
