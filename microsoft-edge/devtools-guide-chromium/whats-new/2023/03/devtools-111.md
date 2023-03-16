@@ -36,9 +36,9 @@ See also:
 
 <!-- Subtitle: Use the new Eyedropper and Eye icons from the Device Mode toolbar to test how your web content responds to light, dark, and high contrast themes and vision deficiencies like color blindness. -->
 
-In previous versions of Microsoft Edge, to emulate different themes or vision deficiencies, you would use the **Rendering** tool -- for example, to emulate Achromatopsia, which is when the user is unable to perceive any color, which reduces all color to a shade of grey.
+In previous versions of Microsoft Edge, to emulate different themes or vision deficiencies, you would use the **Rendering** tool — for example, to emulate Achromatopsia, which is when the user is unable to perceive any color, which reduces all color to a shade of grey.
 
-In Microsoft Edge 111, you can now access these themes and vision deficiencies emulation controls directly from the **Device Mode** toolbar, in addition to the **Rendering** tool.
+In Microsoft Edge 111, you can now access these themes and vision deficiencies emulation controls directly from the **Device Mode** toolbar, in addition to using the **Rendering** tool.
 
 For example, to emulate high contrast mode and test how your web content responds, in the **Device Mode** toolbar, to the right of the **Throttling** dropdown list, click **Emulate Media Features** (the Eyedropper icon, ![Eyedropper icon](./devtools-111-images/eyedropper-device-mode-icon.png)), and then select **forced-colors: active**:
 
@@ -75,13 +75,13 @@ See also:
 
 <!-- Subtitle: In previous versions of Microsoft Edge, the Styles pane of the Elements tool didn't provide easy access to all of the sections within it. This issue has now been fixed in Microsoft Edge 111. -->
 
-In previous versions of Microsoft Edge, in **Focus Mode**, the **Elements** tool didn't provide an easy way to access all of the sections within the **Styles** pane.  In Microsoft Edge 111, this issue has been fixed.  When the **Styles** pane has a narrow viewport and can't display all of its sections, click the **More tabs** (![More tabs expander icon](./devtools-111-images/more-tools-expand-icon.png)) expander icon.
+In previous versions of Microsoft Edge, in **Focus Mode**, the **Elements** tool didn't provide an easy way to access all of the tabs that are grouped with the **Styles** tab.  In Microsoft Edge 111, this issue has been fixed.  When the **Styles** pane has a narrow viewport and can't display all of the other available tabs, click the **More tabs** expander icon (![More tabs expander icon](./devtools-111-images/more-tools-expand-icon.png)).
 
-![The collapsed menu of the Styles pane in Focus Mode](./devtools-111-images/collapsed-menu-for-styles-pane.png)
+![The collapsed tab-set in the Styles pane in Focus Mode](./devtools-111-images/collapsed-menu-for-styles-pane.png)
 
-To collapse the menu and only see a few of the sections in the **Styles** pane, click the **More tabs**  (![More tabs collapser icon](./devtools-111-images/more-tools-collapse-icon.png)) collapser icon.
+To display only a few of the tabs that are grouped with the **Styles** tab, click the **More tabs** collapser icon (![More tabs collapser icon](./devtools-111-images/more-tools-collapse-icon.png)).
 
-![The expanded menu of the Styles pane in Focus Mode](./devtools-111-images/expanded-menu-for-styles-pane.png)
+![The expanded tab-set in the Styles pane in Focus Mode](./devtools-111-images/expanded-menu-for-styles-pane.png)
 
 See also:
 * [CSS features reference](../../../css/reference.md)
@@ -99,8 +99,8 @@ In Microsoft Edge 111, you can now export the **Selector Stats** table for each 
 
 To export the **Selector Stats** table:
 
-1. Click the upper left cell with the mouse, and then drag to select to the bottom right cell.  Or, click once or twice in a cell, and then press `Ctrl`+`A`.
-1. Right-click the table, and then select **Copy**.  Or, press `Ctrl`+`C` (Windows, Linux) or `Command`+`C` (macOS).
+1. Click the upper left cell with the mouse, and then drag to select to the bottom right cell.  Or, click once or twice in a cell, and then press **Ctrl+A**.
+1. Right-click the table, and then select **Copy**.  Or, press **Ctrl+C** (Windows, Linux) or **Command+C** (macOS).
 1. Paste the table into Excel.
 
 ![Selecting the entire Selector Stats table for copy-paste](./devtools-111-images/export-selector-stats-table.png)
