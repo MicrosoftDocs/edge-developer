@@ -17,11 +17,11 @@ ms.date: 03/15/2023
 
 <!-- Subtitle: Get the Remote Tools for Microsoft Edge app from the Microsoft Store to set up remote debugging today! -->
 
-In Microsoft Edge 111, the **Remote Tools for Microsoft Edge** app is now available on Xbox and HoloLens devices.  The **Remote Tools for Microsoft Edge** app is a plug-in for the **Windows Device Portal for Desktop** that enables remote debugging for tabs in Microsoft Edge, Progressive Web Apps (PWAs), and WebView2 controls.  By using remote debugging, you can run web content on a remote device and debug it right from your development machine.
+The **Remote Tools for Microsoft Edge** app is now available on Xbox and HoloLens devices.  The **Remote Tools for Microsoft Edge** app is a plug-in for the **Windows Device Portal for Desktop** that enables remote debugging for tabs in Microsoft Edge, Progressive Web Apps (PWAs), and WebView2 controls.  By using remote debugging, you can run web content on a remote device and debug it right from your development machine.
 
 ![The Remote Tools for Microsoft Edge app in the Microsoft Store](./devtools-111-images/remote-tools-in-the-microsoft-store.png)
 
-With remote debugging enabled, you don't need to open DevTools on either HoloLens or Xbox devices any more.  Instead, you can connect to the remote Xbox or HoloLens device via Device portal and the `edge://inspect` page, and then select whichever `target:` tab, PWA, or WebView2 control you want to launch DevTools against.
+With remote debugging enabled, you don't need to open DevTools on either HoloLens or Xbox devices any more.  Instead, you can connect to the remote Xbox or HoloLens device using the Device portal, open the `edge://inspect` page, and then select the `target:` (tab, PWA, or WebView2 control) that you want to use with DevTools.
 
 To give us feedback on the remote debugging flow for Microsoft Edge, leave a comment in [Issue 136: Remote debugging Xbox and HoloLens devices is now available with the latest version of the Remote Tools for Microsoft Edge app](https://github.com/MicrosoftEdge/DevTools/issues/136).
 
@@ -95,7 +95,7 @@ See also:
 
 Microsoft Edge 109 introduced the **Selector Stats** feature in the **Performance** tool.  With the **Enable advanced rendering instrumentation (slow)** setting turned on in the **Performance** tool, selecting any **Recalculate Styles** event in the flame chart adds a **Selector Stats** tab in the bottom pane.  See [Debug long-running Recalculate Style events with new selector stats](../../2023/01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's new in DevTools (Microsoft Edge 109)_.
 
-In Microsoft Edge 111, you can now export the **Selector Stats** table for each **Recalculate Styles** event to a Microsoft Excel workbook.  You can then use Excel to do aggregate selector performance analysis, and identify the costliest selectors over the lifetime of the profile.
+In Microsoft Edge 111, you can now export the **Selector Stats** table for each **Recalculate Styles** event to a Microsoft Excel workbook.  You can then use Excel to do aggregate selector performance analysis, and identify the most costly selectors over the lifetime of the profile.
 
 To export the **Selector Stats** table:
 
