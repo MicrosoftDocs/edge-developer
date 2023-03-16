@@ -64,9 +64,6 @@ Microsoft Edge 99 added a new feature to the **Performance** tool called **Unmin
 
 In Microsoft Edge 111, this feature has been removed, because the **Performance** tool now automatically provides the original file and function names while profiling production code, as long as sourcemaps are hosted on Azure Artifacts Symbol Server.
 
-![template 3](./devtools-111-images/template.png)
-<!-- @Zoher, to-do find image that shows value prop -->
-
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
