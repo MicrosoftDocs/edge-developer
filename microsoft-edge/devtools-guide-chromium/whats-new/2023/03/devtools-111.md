@@ -70,6 +70,14 @@ Microsoft Edge 99 added a new feature to the **Performance** tool called **Unmin
 
 In Microsoft Edge 111, this feature has been removed, because the **Performance** tool now automatically provides the original file and function names while profiling production code, as long as sourcemaps are hosted on Azure Artifacts Symbol Server.
 
+In the following image, you see minified function names in the flame chart when profiling production code.
+
+![Minified function names in the flame chart](./devtools-111-images/minified-flame-chart.png)
+
+Now in Microsoft Edge 111, the **Performance** tool automatically unminifies function names in the flame chart when profiling production code. 
+
+![Unminified function names in the flame chart](./devtools-111-images/unminified-flame-chart.png)
+
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
