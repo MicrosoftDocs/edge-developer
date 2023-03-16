@@ -68,7 +68,7 @@ See also:
 
 Microsoft Edge 99 added a new feature to the **Performance** tool called **Unminify**. This **Unminify** feature applied sourcemaps to a profile that was recorded with the **Performance** tool, and then downloaded the unminified profile to your machine. The **Unminify** feature is described in [Use your source maps to display original function names in performance profiles](../../2022/03/devtools.md#use-your-source-maps-to-display-original-function-names-in-performance-profiles) in _What's new in DevTools (Microsoft Edge 99)_.
 
-In Microsoft Edge 111, this feature has been removed, because the Performance tool now automatically provides the original file and function names while profiling production code, as long as source maps are loaded, which can be done reliably and securely with Azure Artifacts Symbol Server.
+In Microsoft Edge 111, this feature has been removed, because the Performance tool now automatically provides the original file and function names while profiling production code, as long as source maps are loaded.  Source maps can be loaded reliably and securely by hosting them on Azure Artifacts Symbol Server.
 
 In the following image, you see minified function names in the flame chart when profiling production code:
 
