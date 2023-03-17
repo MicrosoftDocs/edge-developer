@@ -55,6 +55,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
 -->
 
+
+<!-- ====================================================================== -->
 ## 1.0.1661.34
 
 Release Date: March 15, 2023
@@ -73,6 +75,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 The following items are now stable.
 
+
+<!-- ------------------------------ -->
 *  The SharedBuffer API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -121,6 +125,8 @@ The following items are now stable.
 
 ---
 
+
+<!-- ------------------------------ -->
 *  The Permission API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -174,61 +180,222 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 <!-- ------------------------------ -->
 #### General
 
-
-<!-- ---------- -->
+<!-- ------------------------------ -->
 ###### Experimental Features
 
-*	Added support for texture streaming:
+
+<!-- ------------------------------ -->
+*  Added AdditionalObjects for WebMessage received:
+
+<!-- todo: added this section/ entry / tab-set based on the .net version delta list
+
+what title of section, above?
+
+would this be in Experimental section?
+
+does Win32 cover this, add Win32 links?
+
+move this section to bottom of Experimental Features section?
+-->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs.additionalobjects?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+tbd
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ExperimentalTextureStream interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true)
-   * [ICoreWebView2ExperimentalTextureStream::get_Id](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#get_id)
-	* [ICoreWebView2ExperimentalTextureStream::AllowedOrigin (Add, Remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_allowedorigin)
-   * [ICoreWebView2ExperimentalTextureStream::StartRequested (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_startrequested)
-   * [ICoreWebView2ExperimentalTextureStream::Stopped (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_stopped)
-   * [ICoreWebView2ExperimentalTextureStream::CreateTexture](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#create_texture)
-   * [ICoreWebView2ExperimentalTextureStream::GetAvailableTexture](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#get_available_texture)
-   * [ICoreWebView2ExperimentalTextureStream::CloseTexture](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#close_texture)
-   * [ICoreWebView2ExperimentalTextureStream::PresentTexture](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#present_texture)
-   * [ICoreWebView2ExperimentalTextureStream::Stop](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#stop)
-   * [ICoreWebView2ExperimentalTextureStream::ErrorReceived (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_errorreceived)
-   * [ICoreWebView2ExperimentalTextureStream::SetD3DDevice](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#set_d3ddevice)
-   * [ICoreWebView2ExperimentalTextureStream::WebTextureReceived (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_webtexturereceived)
-   * [ICoreWebView2ExperimentalTextureStream::WebTextureStreamStopped (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_webtexturestreamstopped)
+<!-- todo: add Win32 link? -->
 
-*	The environment interface that returns the texture stream interface:
+---
 
+
+<!-- ------------------------------ -->
+*  Added Window Management permission kind enum value
+<!-- todo: added this section/ entry / tab-set based on the .net version delta list
+
+what title of section, above?
+
+would this be in Experimental section?
+
+does Win32 cover this, add Win32 links?
+
+move this section to bottom of Experimental Features section?
+-->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2PermissionKind.WindowManagement EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind.windowmanagement?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+tbd
+
+##### [Win32/C++](#tab/win32cpp)
+
+<!-- todo: add Win32 link? -->
+
+---
+
+
+<!-- ------------------------------ -->
+*  Added support for launching external URIs:
+<!-- todo: added this section/ entry / tab-set based on the .net version delta list
+
+would this be in Experimental section?
+
+does Win32 cover this, add Win32 links?
+
+move this section to bottom of Experimental Features section?
+-->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.LaunchingExternalUriScheme Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.launchingexternalurischeme?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+
+* [CoreWebView2LaunchingExternalUriSchemeEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Cancel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.cancel?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.GetDeferral Method](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.getdeferral?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.InitiatingOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.initiatingorigin?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.IsUserInitiated Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.isuserinitiated?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Uri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.uri?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+tbd
+
+##### [Win32/C++](#tab/win32cpp)
+
+
+<!-- todo: add Win32 links? -->
+
+---
+
+
+<!-- ------------------------------ -->
+*  Added support for texture streaming:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+The `Environment` interface that returns the `TextureStream` interface:
+* [CoreWebView2Environment.CreateTextureStream Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createtexturestream?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2Environment.RenderAdapterLUIDChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.renderadapterluidchanged?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2Environment.RenderAdapterLUID Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.renderadapterluid?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+
+The `TextureStream` interface:
+* [CoreWebView2TextureStream Class](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.AddAllowedOrigin Method](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.addallowedorigin?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.CloseTexture Method](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.closetexture?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.CreateTexture Method](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.createtexture?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.ErrorReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.errorreceived?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.GetAvailableTexture Method](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.getavailabletexture?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.Id Property](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.id?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.PresentTexture Method](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.presenttexture?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.RemoveAllowedOrigin Method](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.removeallowedorigin?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.SetD3DDevice Method](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.setd3ddevice?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.StartRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.startrequested?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.Stop Method](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.stop?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.Stopped Event](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.stopped?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.WebTextureReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.webtexturereceived?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+    * [CoreWebView2TextureStream.WebTextureStreamStopped Event](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.webtexturestreamstopped?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+
+Supplemental `TextureStream*` interfaces:
+* CoreWebView2TextureStreamStartRequestedEventHandler<!-- todo: is there such? not listed in version delta list.  found in Win32 -->
+* CoreWebView2TextureStreamStoppedEventHandler<!-- todo: is there such? not listed in version delta list.  found in Win32 -->
+* CoreWebView2TextureStreamErrorReceivedEventHandler<!-- todo: is there such? not listed in version delta list.  found in Win32 -->
+
+ErrorReceivedEventArgs:
+* [CoreWebView2TextureStreamErrorReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorreceivedeventargs?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2TextureStreamErrorReceivedEventArgs.Kind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorreceivedeventargs.kind?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2TextureStreamErrorReceivedEventArgs.texture Property](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorreceivedeventargs.texture?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)<!-- todo: uppercase "Texture"? -->
+
+* WebTextureReceivedEventHandler<!-- todo: is there such? not listed in version delta list.  found in Win32 -->
+
+WebTextureReceivedEventArgs:
+* [CoreWebView2TextureStreamWebTextureReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamwebtexturereceivedeventargs?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2TextureStreamWebTextureReceivedEventArgs.WebTexture Property](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamwebtexturereceivedeventargs.webtexture?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+
+Texture stream stopped:
+* WebTextureStreamStoppedEventHandler<!-- todo: is there such? not listed in version delta list.  found in Win32 -->
+
+<!-- not added yet in Win32: -->
+TextureStream error kind enum:
+* [CoreWebView2TextureStreamErrorKind Class](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2TextureStreamErrorKind.CoreWebView2TextureStreamErrorNoVideoTrackStarted EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind.corewebview2texturestreamerrornovideotrackstarted?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2TextureStreamErrorKind.CoreWebView2TextureStreamErrorTextureError EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind.corewebview2texturestreamerrortextureerror?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2TextureStreamErrorKind.CoreWebView2TextureStreamErrorTextureInUse EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind.corewebview2texturestreamerrortextureinuse?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+
+<!-- todo: add .net equiv here? was found in win32:
+* [ICoreWebView2ExperimentalRenderAdapterLUIDChangedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalrenderadapterluidchangedeventhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
+-->
+    
+The `Texture` interface that the host writes to so that the Renderer will render on it:
+* [CoreWebView2Texture Class](/dotnet/api/microsoft.web.webview2.core.corewebview2texture?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2Texture.Handle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2texture.handle?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2Texture.Resource Property](/dotnet/api/microsoft.web.webview2.core.corewebview2texture.resource?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2Texture.Timestamp Property](/dotnet/api/microsoft.web.webview2.core.corewebview2texture.timestamp?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+
+The received `WebTexture` interface that the Renderer writes to so that the host will read on it:
+* [CoreWebView2WebTexture Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webtexture?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2WebTexture.Handle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webtexture.handle?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2WebTexture.Resource Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webtexture.resource?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2WebTexture.Timestamp Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webtexture.timestamp?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+tbd
+
+##### [Win32/C++](#tab/win32cpp)
+
+The `Environment` interface that returns the `TextureStream` interface:
 * [ICoreWebView2ExperimentalEnvironment12 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment12?view=webview2-1.0.1724-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalEnvironment12::CreateTextureStream](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment12?view=webview2-1.0.1724-prerelease&preserve-view=true#create_texturestream)
    * [ICoreWebView2ExperimentalEnvironment12::RenderAdapterLUID (get)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment12?view=webview2-1.0.1724-prerelease&preserve-view=true#get_renderadapterluid)
    * [ICoreWebView2ExperimentalEnvironment12::RenderAdapterLUIDChanged (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment12?view=webview2-1.0.1724-prerelease&preserve-view=true#add_renderadapterluidchanged)
 
+The `TextureStream` interface:
+* [ICoreWebView2ExperimentalTextureStream interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true)
+    * [ICoreWebView2ExperimentalTextureStream::AllowedOrigin (Add, Remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_allowedorigin)
+    * [ICoreWebView2ExperimentalTextureStream::CloseTexture](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#close_texture)
+    * [ICoreWebView2ExperimentalTextureStream::CreateTexture](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#create_texture)
+    * [ICoreWebView2ExperimentalTextureStream::ErrorReceived (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_errorreceived)
+    * [ICoreWebView2ExperimentalTextureStream::GetAvailableTexture](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#get_available_texture)
+    * [ICoreWebView2ExperimentalTextureStream::Id (get)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#get_id)
+    * [ICoreWebView2ExperimentalTextureStream::PresentTexture](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#present_texture)
+    * [ICoreWebView2ExperimentalTextureStream::SetD3DDevice](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#set_d3ddevice)
+    * [ICoreWebView2ExperimentalTextureStream::StartRequested (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_startrequested)
+    * [ICoreWebView2ExperimentalTextureStream::Stop](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#stop)
+    * [ICoreWebView2ExperimentalTextureStream::Stopped (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_stopped)
+    * [ICoreWebView2ExperimentalTextureStream::WebTextureReceived (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_webtexturereceived)
+    * [ICoreWebView2ExperimentalTextureStream::WebTextureStreamStopped (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestream?view=webview2-1.0.1724-prerelease&preserve-view=true#add_webtexturestreamstopped)
+
+Supplemental `TextureStream*` interfaces:
 * [ICoreWebView2ExperimentalTextureStreamStartRequestedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestreamstartrequestedeventhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
-
 * [ICoreWebView2ExperimentalTextureStreamStoppedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestreamstoppedeventhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
-
 * [ICoreWebView2ExperimentalTextureStreamErrorReceivedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestreamerrorreceivedeventhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
-
 * [ICoreWebView2ExperimentalTextureStreamErrorReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestreamerrorreceivedeventargs?view=webview2-1.0.1724-prerelease&preserve-view=true)
-
-* [ICoreWebView2ExperimentalRenderAdapterLUIDChangedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalrenderadapterluidchangedeventhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
-
+   * kind property? todo: listed in .net delta
+   * texture property?  todo: listed in .net delta
 * [ICoreWebView2ExperimentalTextureStreamWebTextureReceivedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestreamwebtexturereceivedeventhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
-
 * [ICoreWebView2ExperimentalTextureStreamWebTextureReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestreamwebtexturereceivedeventargs?view=webview2-1.0.1724-prerelease&preserve-view=true)
-
+   * `ICoreWebView2ExperimentalTextureStreamWebTextureReceivedEventArgs.WebTexture` property<!-- todo: add link?  included in .net delta list -->
 * [ICoreWebView2ExperimentalTextureStreamWebTextureStreamStoppedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexturestreamwebtexturestreamstoppedeventhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
 
-*	The texture interface that the host writes to so that the Renderer will render on it:
+<!-- todo: add ERROR_KIND enum equiv of .net TextureStream error kind enum -->
 
+Other interfaces (`RenderAdapter`):
+* [ICoreWebView2ExperimentalRenderAdapterLUIDChangedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalrenderadapterluidchangedeventhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)<!-- todo: does this belong in this "ICoreWebView2ExperimentalTextureStream*" group? -->
+
+The `Texture` interface that the host writes to so that the Renderer will render on it:
 * [ICoreWebView2ExperimentalTexture interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexture?view=webview2-1.0.1724-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalTexture::Handle (get)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexture?view=webview2-1.0.1724-prerelease&preserve-view=true#get_handle)
    * [ICoreWebView2ExperimentalTexture::Resource (get)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexture?view=webview2-1.0.1724-prerelease&preserve-view=true#get_resource)
    * [ICoreWebView2ExperimentalTexture::Timestamp (get, put)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaltexture?view=webview2-1.0.1724-prerelease&preserve-view=true#get_timestamp)
 
-*	Received texture that the renderer writes to so that the host will read on it:
-
+The received `WebTexture` interface that the Renderer writes to so that the host will read on it:
 * [ICoreWebView2ExperimentalWebTexture interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebtexture?view=webview2-1.0.1724-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalWebTexture::Handle (get)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebtexture?view=webview2-1.0.1724-prerelease&preserve-view=true#get_handle)
    * [ICoreWebView2ExperimentalWebTexture::Resource (get)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebtexture?view=webview2-1.0.1724-prerelease&preserve-view=true#get_resource)
@@ -236,36 +403,57 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
-*	Added support for profile management: custom data partition, cookie manager and profile deletion
+
+<!-- ------------------------------ -->
+*  Added support for profile management: custom data partition, cookie manager and profile deletion:
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
-   * [CoreWebView2.Profile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.profile?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2.Profile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.profile?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)<!-- todo: not in version delta list.  Win32 doesn't list ::Profile -->
+
+Added support for custom data partition:
+* [CoreWebView2.CustomDataPartitionId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.customdatapartitionid?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)<!-- added from version delta list -->
+* [CoreWebView2Profile.ClearCustomDataPartitionAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearcustomdatapartitionasync?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+<!-- todo: does .net have equiv to this win32 item?
+* [ICoreWebView2ExperimentalClearCustomDataPartitionCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearcustomdatapartitioncompletedhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
+eg:
+* CoreWebView2ClearCustomDataPartitionCompletedHandler Class
+ -->
+
+Added support for cookie manager:
+* [CoreWebView2Profile.CookieManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.cookiemanager?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+
+Add support for managing profile deletion:
+* [CoreWebView2Profile.Delete Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.delete?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2Profile.Deleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.deleted?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+<!-- todo: is there equiv of win32 item
+* [ICoreWebView2ExperimentalProfileDeletedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofiledeletedeventhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
+eg:
+* CoreWebView2ProfileDeletedEventHandler Class
+-->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
+
+<!-- finish filling in .NET tab before filling in WinRT tab -->
 
 * [CoreWebView2 Class](/winrt/api/microsoft.web.webview2.core.corewebview2?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
    * [CoreWebView2.Profile Property](/winrt/api/microsoft.web.webview2.core.corewebview2.profile?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-*	Added support for custom data partition:
-
+Added support for custom data partition:
 * [ICoreWebView2Experimental20 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimental20?view=webview2-1.0.1724-prerelease&preserve-view=true)
    * [ICoreWebView2Experimental20::CustomDataPartitionId (get, put)](/microsoft-edge/webview2/reference/win32/icorewebview2experimental20?view=webview2-1.0.1724-prerelease&preserve-view=true#get_customdatapartitionid)
-
 * [ICoreWebView2ExperimentalProfile7 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile7?view=webview2-1.0.1724-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalProfile7::ClearCustomDataPartition](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile7?view=webview2-1.0.1724-prerelease&preserve-view=true#clearcustomdatapartition)
-
 * [ICoreWebView2ExperimentalClearCustomDataPartitionCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearcustomdatapartitioncompletedhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
 
-* Added support for cookie manager:
-
+Added support for cookie manager:
 * [ICoreWebView2ExperimentalProfile8 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile8?view=webview2-1.0.1724-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalProfile8::CookieManager (get)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile8?view=webview2-1.0.1724-prerelease&preserve-view=true#get_cookiemanager)
 
-* Add support for managing profile deletion:
-
+Add support for managing profile deletion:
 * [ICoreWebView2ExperimentalProfile10 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile10?view=webview2-1.0.1724-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalProfile10::Delete](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile10?view=webview2-1.0.1724-prerelease&preserve-view=true#delete)
    * [ICoreWebView2ExperimentalProfile10::Deleted (add, remove)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile10?view=webview2-1.0.1724-prerelease&preserve-view=true#add_deleted)
@@ -275,22 +463,24 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ---
 
 
-<!-- ---------- -->
+<!-- ------------------------------ -->
 ###### Promotions
 
 The following APIs are promoted to stable in this prerelease SDK.
 
-*	Managing smartscreen API:
+
+<!-- ------------------------------ -->
+*  Managing smartscreen API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
-	* [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2Settings Class](/winrt/api/microsoft.web.webview2.core.corewebview2settings?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
-	* [CoreWebView2Settings.IsReputationCheckingRequired Property](/winrt/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/winrt/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -298,10 +488,10 @@ The following APIs are promoted to stable in this prerelease SDK.
    * [ICoreWebView2Settings8::IsReputationCheckingRequired (get, put)](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1724-prerelease&preserve-view=true#get_isreputationcheckingrequired)
 
 
-<!-- ---------- -->
+<!-- ------------------------------ -->
 ###### Bug Fixes
 
-*  Fixed a bug in `PrintAsync` and `PrintToPdfStreamAsync` that throws exception when print settings are null.
+*  Fixed a bug in `PrintAsync` and `PrintToPdfStreamAsync` that throws an exception when print settings are null.
 *  Improved handling of apps running elevated.  (Runtime)
 *  Added support for window management permission kind.  (SDK and Runtime)
 *  Reliability improvement.  (Runtime)
