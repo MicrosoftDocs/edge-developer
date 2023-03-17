@@ -85,7 +85,7 @@ See also:
 * [Call web-side code from native-side code](../how-to/javascript.md)
 * [Call native-side code from web-side code](../how-to/hostobject.md)
 * [Call native-side WinRT code from web-side code](../how-to/winrt-from-js.md)
-* [JavaScript APIs in WebView2](/microsoft-edge/webview2/reference/) for `window.chrome.webview` JavaScript APIs
+* [JavaScript APIs in WebView2](/microsoft-edge/webview2/reference/javascript/) for `window.chrome.webview` JavaScript APIs
 
 The following are the main APIs for communicating between web and native code.
 
