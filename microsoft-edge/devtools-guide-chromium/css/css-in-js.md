@@ -52,7 +52,7 @@ This feature is available starting with Microsoft Edge version 93. <!-- delete s
 
 The **Styles** pane supports editing styles that were created with the [CSS Object Model (CSSOM)](https://developer.mozilla.org/docs/Web/API/CSS_Object_Model) APIs.  Many CSS-in-JS frameworks and libraries use the CSS Object Model APIs under the hood to construct styles.
 
-You can edit styles added in JavaScript using [Constructable Stylesheets](https://wicg.github.io/construct-stylesheets/).  Constructable Stylesheets are a way to create and distribute reusable styles when using [Shadow DOM](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM).
+You can edit styles added in JavaScript using [Constructable Stylesheets](https://web.dev/constructable-stylesheets/).<!-- todo: https://wicg.github.io/construct-stylesheets/ is 404 -->  Constructable Stylesheets are a way to create and distribute reusable styles when using [Shadow DOM](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM).
 
 ### Example
 
