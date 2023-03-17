@@ -52,9 +52,10 @@ This feature is available starting with Microsoft Edge version 93. <!-- delete s
 
 The **Styles** pane supports editing styles that were created with the [CSS Object Model (CSSOM)](https://developer.mozilla.org/docs/Web/API/CSS_Object_Model) APIs.  Many CSS-in-JS frameworks and libraries use the CSS Object Model APIs under the hood to construct styles.
 
-You can edit styles added in JavaScript using [Constructable Stylesheets](https://web.dev/constructable-stylesheets/).<!-- todo: https://wicg.github.io/construct-stylesheets/ is 404 -->  Constructable Stylesheets are a way to create and distribute reusable styles when using [Shadow DOM](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM).
+You can edit styles that were added in JavaScript using the `CSSStyleSheet` interface, which is a way to create and distribute reusable styles when using [Shadow DOM](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM).  See [The `CSSStyleSheet` Interface](https://www.w3.org/TR/cssom-1/#the-cssstylesheet-interface) in _CSS Object Model (CSSOM)_.
 
-### Example
+
+#### Example
 
 In this sample code, style rules are initially defined by calling a CSS Object Model (CSSOM) function, and then the style rules are edited using the **Styles** pane.  The `CSSStyleSheet` object contains the CSSOM APIs, such as `insertRule()`.  The `h1` styles that were initially added by a `CSSStyleSheet` function are then editable in the **Styles** pane.
 
@@ -115,7 +116,9 @@ stylesheet.insertRule('.some { color: green; }');
 document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
 ```
 
-### CSS support in DevTools
+
+<!-- ====================================================================== -->
+## CSS support in DevTools
 
 In DevTools, the most commonly used feature when dealing with CSS is the **Styles** pane.  In the **Styles** pane, you can view what CSS-in-JS rules apply to a particular element.  You can also edit the CSS-in-JS rules and see the changes on the page in real time.
 
