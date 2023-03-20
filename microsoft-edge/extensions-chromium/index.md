@@ -102,6 +102,17 @@ To submit your extension to the store, you need to provide the following items:
 
 After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners are notified of the outcome and given next steps as required.  If you submit an extension update to the store, it begins a new review process.
 
+### Featured badge in Edge Add-ons Store
+
+Featured extensions on Microsoft Edge Add-ons Store follow the Microsoft’s recommended best practices related to security, privacy, transparency, and user experience. Microsoft Edge Add-ons Store team reviews each extension for adherence to EAS best practices before granting it a “Featured” badge. 
+
+## Disclaimer
+
+Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences. 
+
+Developers cannot pay to receive “Featured” badges for their extensions. 
+
+Just because an extension is not “Featured”, it does not mean it’s not safe to use. It simply means that it does not currently meet Microsoft’s security and quality standards to be badged.
 
 <!-- ====================================================================== -->
 ## See also

@@ -847,7 +847,9 @@
 
             - name: Create an extension that customizes the DevTools UI
               href: extensions-chromium/developer-guide/devtools-extension.md
-
+              
+            - name: Best Practices
+              href: extensions-chromium/developer-guide/best-practices.md
         - name: Manifest
           items:
             - name: Overview and timelines for migrating to Manifest V3
