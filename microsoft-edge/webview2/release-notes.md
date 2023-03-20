@@ -59,7 +59,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 <!-- ====================================================================== -->
 ## 1.0.1661.34
 
-Release Date: March 15, 2023
+Release Date: March 20, 2023
 
 [NuGet package for WebView2 SDK 1.0.1661.34](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1661.34)
 
@@ -228,7 +228,7 @@ APIs for managing tracking prevention:
 <!-- ====================================================================== -->
 ## 1.0.1724-prerelease
 
-Release Date: March 15, 2023
+Release Date: March 20, 2023
 
 [NuGet package for WebView2 SDK 1.0.1724-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1724-prerelease)
 
