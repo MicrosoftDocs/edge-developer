@@ -262,7 +262,7 @@ move this section to bottom of Experimental Features section?
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-tbd
+todo
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -290,7 +290,7 @@ move this section to bottom of Experimental Features section?
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-tbd
+todo
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -323,7 +323,7 @@ move this section to bottom of Experimental Features section?
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-tbd
+todo
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -404,7 +404,7 @@ The received `WebTexture` interface that the Renderer writes to so that the host
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-tbd
+todo
 
 ##### [Win32/C++](#tab/win32cpp)
 
