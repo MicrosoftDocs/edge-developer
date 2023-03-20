@@ -92,11 +92,11 @@ The following items are now stable.
    * [CoreWebView2SharedBuffer.FileMappingHandle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.filemappinghandle?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2SharedBuffer.Size Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.size?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2SharedBuffer.Close Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.close?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
-   * [CoreWebView2SharedBuffer.Dispose Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.dispose)
+   * [CoreWebView2SharedBuffer.Dispose Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.dispose?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2SharedBuffer.OpenStream Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.openstream?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
-* [CoreWebView2SharedBufferAccess Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess)
-   * [CoreWebView2SharedBufferAccess.ReadOnly EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess.readonly)
-   * [CoreWebView2SharedBufferAccess.ReadWrite EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess.readwrite)
+* [CoreWebView2SharedBufferAccess Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2SharedBufferAccess.ReadOnly EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess.readonly?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2SharedBufferAccess.ReadWrite EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess.readwrite?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -142,10 +142,10 @@ The following items are now stable.
 * [CoreWebView2Profile Class](/dotnet/api/microsoft.web.webview2.core.corewebview2profile?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.getnondefaultpermissionsettingsasync?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
-* [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
-   * [CoreWebView2PermissionKind.MidiSystemExclusiveMessages EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind.midisystemexclusivemessages)
-* [CoreWebView2PermissionRequestedEventArgs Event](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs)
-   * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.savesinprofile)   
+* [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2PermissionKind.MidiSystemExclusiveMessages EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind.midisystemexclusivemessages?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+* [CoreWebView2PermissionRequestedEventArgs Event](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.savesinprofile?view=webview2-dotnet-1.0.1661.34&preserve-view=true)   
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -171,6 +171,56 @@ The following items are now stable.
    * [ICoreWebView2Profile4::SetPermissionState method](/microsoft-edge/webview2/reference/win32/icorewebview2profile4?view=webview2-1.0.1661.34&preserve-view=true#setpermissionstate)
    * [ICoreWebView2Profile4::GetNonDefaultPermissionSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2profile4?view=webview2-1.0.1661.34&preserve-view=true#getnondefaultpermissionsettings)
 * [ICoreWebView2SetPermissionStateCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2setpermissionstatecompletedhandler?view=webview2-1.0.1661.34&preserve-view=true)
+
+---
+
+APIs for managing tracking prevention:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2EnvironmentOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2EnvironmentOptions.EnableTrackingPrevention Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.enabletrackingprevention?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+* [CoreWebView2Profile Class](/dotnet/api/microsoft.web.webview2.core.corewebview2profile?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2Profile.PreferredTrackingPreventionLevel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.preferredtrackingpreventionlevel?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+* [CoreWebView2TrackingPreventionLevel Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+    * [CoreWebView2TrackingPreventionLevel.Balanced EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel.balanced?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+    * [CoreWebView2TrackingPreventionLevel.Basic EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel.basic?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+    * [CoreWebView2TrackingPreventionLevel.None EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel.none?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+    * [CoreWebView2TrackingPreventionLevel.Strict EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel.strict?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2EnvironmentOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2EnvironmentOptions.EnableTrackingPrevention Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1661.34&preserve-view=true#enabletrackingprevention)
+* [CoreWebView2Profile Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2Profile.PreferredTrackingPreventionLevel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1661.34&preserve-view=true#preferredtrackingpreventionlevel)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2EnvironmentOptions5 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions5?view=webview2-1.0.1661.34&preserve-view=true)
+   * [ICoreWebView2EnvironmentOptions5::EnableTrackingPrevention property (get](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions5?view=webview2-1.0.1661.34&preserve-view=true#get_enabletrackingprevention), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions5?view=webview2-1.0.1661.34&preserve-view=true#put_enabletrackingprevention)
+* [ICoreWebView2Profile3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile3?view=webview2-1.0.1661.34&preserve-view=true)
+   * [ICoreWebView2Profile3::PreferredTrackingPreventionLevel property (get](/microsoft-edge/webview2/reference/win32/icorewebview2profile3?view=webview2-1.0.1661.34&preserve-view=true#get_preferredtrackingpreventionlevel), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2profile3?view=webview2-1.0.1661.34&preserve-view=true#put_preferredtrackingpreventionlevel)
+
+---
+
+*  APIs to manage the value of the controller's script locale:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2ControllerOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2ControllerOptions.ScriptLocale Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.scriptlocale?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2ControllerOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2ControllerOptions.ScriptLocale Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.1661.34&preserve-view=true#scriptlocale)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ControllerOptions2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2?view=webview2-1.0.1661.34&preserve-view=true)
+   * [ICoreWebView2ControllerOptions2::get_ScriptLocale method](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2?view=webview2-1.0.1661.34&preserve-view=true#get_scriptlocale)
+   * [ICoreWebView2ControllerOptions2::put_ScriptLocale method](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2?view=webview2-1.0.1661.34&preserve-view=true#put_scriptlocale)
 
 ---
 
