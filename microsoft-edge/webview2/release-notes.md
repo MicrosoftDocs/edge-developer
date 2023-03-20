@@ -369,6 +369,7 @@ The `TextureStream` interface:
     * [CoreWebView2TextureStream.WebTextureReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.webtexturereceived?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
     * [CoreWebView2TextureStream.WebTextureStreamStopped Event](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestream.webtexturestreamstopped?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
 
+<!-- Events listed under CoreWebView2TextureStream.* Event -->
 Supplemental `TextureStream*` interfaces:
 * CoreWebView2TextureStreamStartRequestedEventHandler<!-- todo: is there such? not listed in version delta list.  found in Win32 -->
 * CoreWebView2TextureStreamStoppedEventHandler<!-- todo: is there such? not listed in version delta list.  found in Win32 -->
@@ -379,12 +380,14 @@ ErrorReceivedEventArgs:
    * [CoreWebView2TextureStreamErrorReceivedEventArgs.Kind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorreceivedeventargs.kind?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
    * [CoreWebView2TextureStreamErrorReceivedEventArgs.texture Property](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorreceivedeventargs.texture?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)<!-- todo: uppercase "Texture"? -->
 
+<!-- Events listed under CoreWebView2TextureStream.* Event -->
 * WebTextureReceivedEventHandler<!-- todo: is there such? not listed in version delta list.  found in Win32 -->
 
 WebTextureReceivedEventArgs:
 * [CoreWebView2TextureStreamWebTextureReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamwebtexturereceivedeventargs?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
 * [CoreWebView2TextureStreamWebTextureReceivedEventArgs.WebTexture Property](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamwebtexturereceivedeventargs.webtexture?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
 
+<!-- Events listed under CoreWebView2TextureStream.* Event -->
 Texture stream stopped:
 * WebTextureStreamStoppedEventHandler<!-- todo: is there such? not listed in version delta list.  found in Win32 -->
 
@@ -395,6 +398,7 @@ TextureStream error kind enum:
 * [CoreWebView2TextureStreamErrorKind.CoreWebView2TextureStreamErrorTextureError EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind.corewebview2texturestreamerrortextureerror?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
 * [CoreWebView2TextureStreamErrorKind.CoreWebView2TextureStreamErrorTextureInUse EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind.corewebview2texturestreamerrortextureinuse?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
 
+<!-- CoreWebView2Environment.RenderAdapterLUIDChanged Event has been listed above -->
 <!-- todo: add .net equiv here? was found in win32:
 * [ICoreWebView2ExperimentalRenderAdapterLUIDChangedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalrenderadapterluidchangedeventhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
 -->
@@ -413,7 +417,10 @@ The received `WebTexture` interface that the Renderer writes to so that the host
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-todo
+* [CoreWebView2WebTexture Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webtexture?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
+  * [CoreWebView2WebTexture.Handle Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webtexture#handle?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
+  * [CoreWebView2WebTexture.Resource Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webtexture#resource?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
+  * [CoreWebView2WebTexture.Timestamp Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webtexture#timestamp?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -482,6 +489,7 @@ The received `WebTexture` interface that the Renderer writes to so that the host
 Added support for custom data partition:
 * [CoreWebView2.CustomDataPartitionId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.customdatapartitionid?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)<!-- added from version delta list -->
 * [CoreWebView2Profile.ClearCustomDataPartitionAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearcustomdatapartitionasync?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+<!-- ans: no -->
 <!-- todo: does .net have equiv to this win32 item?
 * [ICoreWebView2ExperimentalClearCustomDataPartitionCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearcustomdatapartitioncompletedhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
 eg:
@@ -494,6 +502,7 @@ Added support for cookie manager:
 Add support for managing profile deletion:
 * [CoreWebView2Profile.Delete Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.delete?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
 * [CoreWebView2Profile.Deleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.deleted?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+<!-- ans: no -->
 <!-- todo: is there equiv of win32 item
 * [ICoreWebView2ExperimentalProfileDeletedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofiledeletedeventhandler?view=webview2-1.0.1724-prerelease&preserve-view=true)
 eg:
