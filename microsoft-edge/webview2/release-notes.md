@@ -495,8 +495,8 @@ eg:
 
 <!-- finish filling in .NET tab before filling in WinRT tab -->
 
-* [CoreWebView2 Class](/winrt/api/microsoft.web.webview2.core.corewebview2?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
-   * [CoreWebView2.Profile Property](/winrt/api/microsoft.web.webview2.core.corewebview2.profile?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2.Profile Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2.profile?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -537,8 +537,8 @@ The following APIs are promoted to stable in this prerelease SDK.
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Settings Class](/winrt/api/microsoft.web.webview2.core.corewebview2settings?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
-   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/winrt/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2Settings Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings.isreputationcheckingrequired?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
