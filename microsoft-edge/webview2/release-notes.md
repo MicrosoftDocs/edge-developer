@@ -95,8 +95,8 @@ The following items are now stable.
    * [CoreWebView2SharedBuffer.Dispose Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.dispose?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2SharedBuffer.OpenStream Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.openstream?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
 * [CoreWebView2SharedBufferAccess Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
-   * [CoreWebView2SharedBufferAccess.ReadOnly EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess.readonly?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
-   * [CoreWebView2SharedBufferAccess.ReadWrite EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess.readwrite?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2SharedBufferAccess.ReadOnly EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2SharedBufferAccess.ReadWrite EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -143,7 +143,7 @@ The following items are now stable.
    * [CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.getnondefaultpermissionsettingsasync?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
 * [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
-   * [CoreWebView2PermissionKind.MidiSystemExclusiveMessages EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind.midisystemexclusivemessages?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2PermissionKind.MidiSystemExclusiveMessages EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
 * [CoreWebView2PermissionRequestedEventArgs Event](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.savesinprofile?view=webview2-dotnet-1.0.1661.34&preserve-view=true)   
 
@@ -183,10 +183,10 @@ APIs for managing tracking prevention:
 * [CoreWebView2Profile Class](/dotnet/api/microsoft.web.webview2.core.corewebview2profile?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2Profile.PreferredTrackingPreventionLevel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.preferredtrackingpreventionlevel?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
 * [CoreWebView2TrackingPreventionLevel Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
-    * [CoreWebView2TrackingPreventionLevel.Balanced EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel.balanced?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
-    * [CoreWebView2TrackingPreventionLevel.Basic EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel.basic?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
-    * [CoreWebView2TrackingPreventionLevel.None EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel.none?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
-    * [CoreWebView2TrackingPreventionLevel.Strict EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel.strict?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+    * [CoreWebView2TrackingPreventionLevel.Balanced EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+    * [CoreWebView2TrackingPreventionLevel.Basic EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+    * [CoreWebView2TrackingPreventionLevel.None EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+    * [CoreWebView2TrackingPreventionLevel.Strict EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -286,7 +286,7 @@ move this section to bottom of Experimental Features section?
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2PermissionKind.WindowManagement EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind.windowmanagement?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2PermissionKind.WindowManagement EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -394,9 +394,9 @@ Texture stream stopped:
 <!-- not added yet in Win32: -->
 TextureStream error kind enum:
 * [CoreWebView2TextureStreamErrorKind Class](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
-* [CoreWebView2TextureStreamErrorKind.CoreWebView2TextureStreamErrorNoVideoTrackStarted EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind.corewebview2texturestreamerrornovideotrackstarted?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
-* [CoreWebView2TextureStreamErrorKind.CoreWebView2TextureStreamErrorTextureError EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind.corewebview2texturestreamerrortextureerror?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
-* [CoreWebView2TextureStreamErrorKind.CoreWebView2TextureStreamErrorTextureInUse EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind.corewebview2texturestreamerrortextureinuse?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2TextureStreamErrorKind.CoreWebView2TextureStreamErrorNoVideoTrackStarted EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2TextureStreamErrorKind.CoreWebView2TextureStreamErrorTextureError EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
+* [CoreWebView2TextureStreamErrorKind.CoreWebView2TextureStreamErrorTextureInUse EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true)
 
 <!-- CoreWebView2Environment.RenderAdapterLUIDChanged Event has been listed above -->
 <!-- todo: add .net equiv here? was found in win32:
