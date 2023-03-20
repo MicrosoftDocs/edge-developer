@@ -92,7 +92,11 @@ The following items are now stable.
    * [CoreWebView2SharedBuffer.FileMappingHandle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.filemappinghandle?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2SharedBuffer.Size Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.size?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2SharedBuffer.Close Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.close?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2SharedBuffer.Dispose Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.dispose)
    * [CoreWebView2SharedBuffer.OpenStream Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.openstream?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+* [CoreWebView2SharedBufferAccess Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess)
+   * [CoreWebView2SharedBufferAccess.ReadOnly EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess.readonly)
+   * [CoreWebView2SharedBufferAccess.ReadWrite EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess.readwrite)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -127,7 +131,7 @@ The following items are now stable.
 
 
 <!-- ------------------------------ -->
-*  The Permission API:
+*  APIs for managing permissions:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -138,6 +142,10 @@ The following items are now stable.
 * [CoreWebView2Profile Class](/dotnet/api/microsoft.web.webview2.core.corewebview2profile?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.getnondefaultpermissionsettingsasync?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
    * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync?view=webview2-dotnet-1.0.1661.34&preserve-view=true)
+* [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
+   * [CoreWebView2PermissionKind.MidiSystemExclusiveMessages EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind.midisystemexclusivemessages)
+* [CoreWebView2PermissionRequestedEventArgs Event](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs)
+   * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.savesinprofile)   
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
