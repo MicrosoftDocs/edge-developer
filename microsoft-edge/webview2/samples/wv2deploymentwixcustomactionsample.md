@@ -193,7 +193,7 @@ If you plan to package either the Bootstrapper (Approach 2) or the Standalone In
 ## See also
 
 * [Win32 sample app](./webview2apissample.md)
-* [Deploying the Evergreen WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution.md#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
+* [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
 * [Readme for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme).
 * [WiX Toolset](https://wixtoolset.org/)
 * [WiX > Adding a Custom Action](https://wixtoolset.org/documentation/manual/v3/wixdev/extensions/authoring_custom_actions.html)
