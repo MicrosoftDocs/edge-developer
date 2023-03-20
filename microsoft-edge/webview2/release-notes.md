@@ -249,9 +249,9 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 what title of section, above?
 
-would this be in Experimental section?
+would this be in Experimental section? Y
 
-does Win32 cover this, add Win32 links?
+does Win32 cover this, add Win32 links? Y
 
 move this section to bottom of Experimental Features section?
 -->
@@ -262,7 +262,7 @@ move this section to bottom of Experimental Features section?
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-todo
+* [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webmessagereceivedeventargs?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true#additionalobjects)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -290,7 +290,7 @@ move this section to bottom of Experimental Features section?
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-todo
+* [CoreWebView2PermissionKind.WindowManagement EnumValue](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -323,7 +323,16 @@ move this section to bottom of Experimental Features section?
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-todo
+* [CoreWebView2.LaunchingExternalUriScheme Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true#launchingexternalurischeme)
+
+* [CoreWebView2LaunchingExternalUriSchemeEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Cancel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true#cancel)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.GetDeferral Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true#getdeferral)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.InitiatingOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true#initiatingorigin)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.IsUserInitiated Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true#isuserinitiated)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Uri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true#uri)
+
+* [CoreWebView2.LaunchingExternalUriScheme Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true#launchingexternalurischeme)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -496,7 +505,7 @@ eg:
 <!-- finish filling in .NET tab before filling in WinRT tab -->
 
 * [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
-   * [CoreWebView2.Profile Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2.profile?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2.Profile Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2.?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true#profile)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -538,7 +547,7 @@ The following APIs are promoted to stable in this prerelease SDK.
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2Settings Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
-   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings.isreputationcheckingrequired?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true)
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1724-prerelease&preserve-view=true#isreputationcheckingrequired)
 
 ##### [Win32/C++](#tab/win32cpp)
 
