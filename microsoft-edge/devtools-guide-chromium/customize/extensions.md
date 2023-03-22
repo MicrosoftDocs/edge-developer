@@ -9,7 +9,7 @@ ms.date: 09/30/2022
 ---
 # Add custom UI to DevTools using extensions
 
-In addition to the tools available in Microsoft Edge DevTools you can add new tools by installing Microsoft EDge extensions, or build your own extensions for your specific use cases.
+In addition to the tools available in Microsoft Edge DevTools you can add new tools by installing Microsoft Edge extensions, or build your own extensions for your specific use cases.
 
 Microsoft Edge extensions can insert new tabs in the main toolbar of DevTools.
 
