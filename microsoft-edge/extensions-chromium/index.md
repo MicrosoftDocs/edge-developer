@@ -106,8 +106,6 @@ After you've successfully submitted your extension, your extension undergoes a r
 
 A **Featured extension** badge in the Microsoft Edge Add-ons Store indicates that the extension has been determined to follow Microsoft's recommended best practices related to security, privacy, transparency, and user experience. The Microsoft Edge Add-ons Store team reviews each extension for adherence to EAS best practices before granting it a **Featured** badge. 
 
-## Disclaimer
-
 Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences. 
 
 Developers cannot pay to receive “Featured” badges for their extensions. 
