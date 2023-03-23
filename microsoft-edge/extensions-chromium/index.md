@@ -102,7 +102,7 @@ To submit your extension to the store, you need to provide the following items:
 
 After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners are notified of the outcome and given next steps as required.  If you submit an extension update to the store, it begins a new review process.
 
-### Featured badge in Edge Add-ons Store
+### The Featured badge in Edge Add-ons Store
 
 Featured extensions on Microsoft Edge Add-ons Store follow the Microsoft’s recommended best practices related to security, privacy, transparency, and user experience. Microsoft Edge Add-ons Store team reviews each extension for adherence to EAS best practices before granting it a “Featured” badge. 
 
