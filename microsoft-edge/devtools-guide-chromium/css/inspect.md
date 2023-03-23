@@ -25,7 +25,7 @@ To try out the **Inspect** tool:
 
 1. Right-click anywhere in the demo webpage and then select **Inspect**, to open DevTools.
 
-1. In the upper left corner of DevTools, click the **Inspect tool** (![Inspect tool icon](../media/inspect-tool-icon-light-theme.png)) button.  Or, when DevTools has focus, press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS).
+1. In the upper left corner of DevTools, click the **Inspect tool** (![Inspect tool icon](../media/inspect-tool-icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+C** (Windows, Linux) or **Command+Shift+C** (macOS).
 
    ![The Inspect tool button in the upper left of DevTools](images/inspect-tool-button.msft.png)
 

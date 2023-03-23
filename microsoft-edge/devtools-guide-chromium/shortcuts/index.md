@@ -36,9 +36,9 @@ To open DevTools, press the following keyboard shortcuts while your cursor is fo
 
 | Action | Windows/Linux | macOS |
 |---|---|---|
-| Open whatever panel you used last | **F12** or `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |
-| Open the **Console** tool | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |
-| Open the **Elements** tool | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` or `Command`+`Option`+`C` |
+| Open whatever panel you used last | **F12** or **Ctrl+Shift+I** | **Command+Option+I** |
+| Open the **Console** tool | **Ctrl+Shift+J** | **Command+Option+J** |
+| Open the **Elements** tool | **Ctrl+Shift+C** | **Command+Shift+C** or **Command+Option+C** |
 
 
 <!-- ====================================================================== -->
@@ -51,17 +51,17 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Show **Settings** | `Shift`+`?` or `F1` | `Shift`+`?` or `Function`+`F1` |
 | Focus the next panel | `Ctrl`+`]` | `Command`+`]` |
 | Focus the previous panel | `Ctrl`+`[` | `Command`+`[` |
-| Switch back to whatever [docking position](../customize/placement.md) you last used.  If DevTools has been in the default position for the entire session, then this shortcut undocks DevTools into a separate window. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |
-| Toggle [Device emulation](../device-mode/index.md) | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |
-| Toggle **Inspect Element Mode** | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |
-| Open the [Command Menu](../command-menu/index.md) | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |
+| Switch back to whatever [docking position](../customize/placement.md) you last used.  If DevTools has been in the default position for the entire session, then this shortcut undocks DevTools into a separate window. | **Ctrl+Shift+D** | `Command`+`Shift`+`D` |
+| Toggle [Device emulation](../device-mode/index.md) | **Ctrl+Shift+M** | `Command`+`Shift`+`M` |
+| Toggle **Inspect Element Mode** | **Ctrl+Shift+C** | **Command+Shift+C** |
+| Open the [Command Menu](../command-menu/index.md) | **Ctrl+Shift+P** | **Command+Shift+P** |
 | Toggle the [Drawer](../customize/index.md#drawer) | `Escape` | `Escape` |
 | Normal refresh | **F5** or `Ctrl`+`R` | `Command`+`R` |
-| Hard refresh | **Ctrl+F5** or `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |
+| Hard refresh | **Ctrl+F5** or **Ctrl+Shift+R** | `Command`+`Shift`+`R` |
 | Search for text within the current panel.  Not supported in the **Audits**, **Application**, and **Security** tools | `Ctrl`+`F` | `Command`+`F` |
-| Opens the **Search** tab in the [Drawer](../customize/index.md#drawer), which lets you search for text across all loaded resources | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |
+| Opens the **Search** tab in the [Drawer](../customize/index.md#drawer), which lets you search for text across all loaded resources | **Ctrl+Shift+F** | `Command`+`Option`+`F` |
 | Open a file in the **Sources** tool | `Ctrl`+`O` or `Ctrl`+`P` | `Command`+`O` or `Command`+`P` |
-| Zoom in | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |
+| Zoom in | **Ctrl+Shift**+**+** | `Command`+`Shift`+`+` |
 | Zoom out | `Ctrl`+`-` | `Command`+`-` |
 | Restore default zoom level | `Ctrl`+`0` | `Command`+`0` |
 | Run snippet | Press `Ctrl`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then press **Enter** | Press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then press **Enter** |
@@ -111,15 +111,15 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Pause script runtime (if currently running) or resume (if currently paused) | `F8` or `Ctrl`+`\` | `F8` or `Command`+`\` |
 | Step over next function call | `F10` or `Ctrl`+`'` | `F10` or `Command`+`'` |
 | Step into next function call | `F11` or `Ctrl`+`;` | `F11` or `Command`+`;` |
-| Step out of current function | `Shift`+`F11` or `Ctrl`+`Shift`+`;` | `Shift`+`F11` or `Command`+`Shift`+`;` |
+| Step out of current function | `Shift`+`F11` or **Ctrl+Shift**+**;** | `Shift`+`F11` or `Command`+`Shift`+`;` |
 | Continue to a [specific line of code while paused](../javascript/breakpoints.md#line-of-code-breakpoints) | Hold `Ctrl`, then click the line of code | Hold `Command`, then click the line of code |
 | Select the call frame below / above the currently selected frame | `Ctrl`+`.` / `Ctrl`+`,` | `Ctrl`+`.` / `Ctrl`+`,` |
-| Save changes to local modifications | `Ctrl`+`S` | `Command`+`S` |
+| Save changes to local modifications | **Ctrl+S** | `Command`+`S` |
 | Save all changes | `Ctrl`+`Alt`+`S` | `Command`+`Option`+`S` |
 | Navigate to line | `Ctrl`+`G` | `Ctrl`+`G` |
 | Jump to a line number of the currently open file | Press `Ctrl`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then press **Enter** | Press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then press **Enter** |
 | Jump to a column of the currently open file (for example line 5, column 9) | Press `Ctrl`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then press **Enter** | Press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then press **Enter** |
-| Navigate to a function declaration, if the current file is HTML or a script.  <br />  Navigate to a rule set, if the current file is a stylesheet.  | Press `Ctrl`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | press `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |
+| Navigate to a function declaration, if the current file is HTML or a script.  <br />  Navigate to a rule set, if the current file is a stylesheet.  | Press **Ctrl+Shift+O**, then type in the name of the declaration / rule set, or select it from the list of options | press `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |
 | Close the active tab | `Alt`+`W` | `Option`+`W` |
 
 ### Code Editor keyboard shortcuts
@@ -139,7 +139,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Action | Windows/Linux | macOS |
 |---|---|---|
 | Start / stop recording | `Ctrl`+`E` | `Command`+`E` |
-| Save recording | `Ctrl`+`S` | `Command`+`S` |
+| Save recording | **Ctrl+S** | `Command`+`S` |
 | Load recording | `Ctrl`+`O` | `Command`+`O` |
 
 
@@ -161,7 +161,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Get previous statement | **Up Arrow** | **Up Arrow** |
 | Get next statement | **Down Arrow** | **Down Arrow** |
 | Focus the **Console** | `Ctrl`+ `` ` `` | `Ctrl`+`` ` `` |
-| Clear the **Console** | `Ctrl`+`L` | `Command`+`K` or `Option`+`L` |
+| Clear the **Console** | **Ctrl+L** | `Command`+`K` or `Option`+`L` |
 | Force a multi-line entry.  This shortcut is mostly unnecessary, because DevTools should detect multi-line scenarios by default | `Shift`+**Enter** | `Command`+`Return` |
 | Run | **Enter** | `Return` |
 | Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then click **Expand** (![Expand](../media/expand-icon.msft.png)) | Hold `Alt`, then click **Expand** (![Expand](../media/expand-icon.msft.png)). |

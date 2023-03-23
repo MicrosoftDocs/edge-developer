@@ -393,7 +393,7 @@ Now the app's web-side code can access the native-side APIs which are exposed by
 
 The web-side code of the Win32 sample app is now able to access the properties and methods of the native host object, to access the native APIs.  We'll use the sample app's webpage controls, in the **Scenario** > **Host Objects** webpage of the app, to demonstrate this.
 
-1.  In Microsoft Visual Studio, select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1.  In Microsoft Visual Studio, select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1.  In Solution Explorer, open **WebView2APISample** > [ScenarioAddHostObject.html](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/assets/ScenarioAddHostObject.html).  We'll compare this file to the corresponding webpage in the running Win32 sample app.
 

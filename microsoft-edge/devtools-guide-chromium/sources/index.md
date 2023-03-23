@@ -205,7 +205,7 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```
 
-Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS), DevTools saves the **Snippet** to your file system.
+Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press **Ctrl+S** (Windows, Linux) or `Command`+`S` (macOS), DevTools saves the **Snippet** to your file system.
 
 There are multiple ways to run a Snippet:
 *  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button](../media/run-snippet-icon.msft.png)).
@@ -281,10 +281,10 @@ See also:
 
 ###### Save and Undo
 
-For JavaScript changes to take effect, press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS).
+For JavaScript changes to take effect, press **Ctrl+S** (Windows, Linux) or `Command`+`S` (macOS).
 
 If you change a file, an asterisk appears next to the file name.
-*  To save changes, press `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.
+*  To save changes, press **Ctrl+S** on Windows/Linux or `Command`+`S` on macOS.
 *  To undo a change, press `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
 
 By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md).
@@ -400,7 +400,7 @@ Unlike a JavaScript or CSS file, an HTML file that is returned by the web server
 * [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
 * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 
-To save changes, press `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.  An edited file is marked by an asterisk.
+To save changes, press **Ctrl+S** on Windows/Linux or `Command`+`S` on macOS.  An edited file is marked by an asterisk.
 
 To find text, press `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS.
 
@@ -437,7 +437,7 @@ To use the **Quick source** tool:
 
 1. Select a tool other than the **Sources** tool, such as the **Elements** tool.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The Command Menu opens.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  The Command Menu opens.
 
 1. Type `quick`, and then select **Show Quick source**.
 
@@ -521,7 +521,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
     var sum = parseInt(addend1) + parseInt(addend2);
     ```
 
-1.  Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change in the local cached file.
+1.  Press **Ctrl+S** (Windows, Linux) or `Command`+`S` (macOS) to save the change in the local cached file.
 
 1.  Enter `5` and `1` into the webpage and then click the **Add** button.  Now **Scope** > **Local** > **sum:** is the number 6, instead of the string "51".
 

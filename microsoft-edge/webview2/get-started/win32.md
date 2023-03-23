@@ -326,7 +326,7 @@ Next, add WebView2 features to the app, as follows:
 
    *  `WebView2.h` - The WebView2 control is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 The source code file and project is ready to use and build against the WebView2 API.
 
@@ -427,7 +427,7 @@ Now to do the above, in the callback, you'll:
          }).Get());
    ```
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 
 ### Build your Bing sample app
@@ -507,7 +507,7 @@ The injected JavaScript is run with specific timing:
 
     :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="Scripting":::
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
    Now, WebView2 freezes the `Object` and returns the page document once.
 
@@ -550,7 +550,7 @@ Have the host app and web content communicate through `postMessage`, as follows:
 
     :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="CommunicationHostWeb":::
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1. Press **F5** to build and run the project.
 

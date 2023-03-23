@@ -381,7 +381,7 @@ To confirm that your service worker is running:
 
 1. In Microsoft Edge, go to `http://localhost:8080`.
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. Open the **Application** tool, then **Service Workers**.  If the service worker isn't displayed, refresh the page.
 

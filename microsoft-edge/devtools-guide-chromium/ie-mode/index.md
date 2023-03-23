@@ -40,7 +40,7 @@ If a tab uses IE mode, the tab has the following limitations:
 
 *  Right-clicking and then selecting **View Source** launches Notepad.
 
-*  Pressing **F12** or `Ctrl`+`Shift`+`I` opens a blank instance of the Microsoft Edge DevTools and displays the following message: **Developer Tools aren't available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**
+*  Pressing **F12** or **Ctrl+Shift+I** opens a blank instance of the Microsoft Edge DevTools and displays the following message: **Developer Tools aren't available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**
 
 ![DevTools launched in IE mode](../media/ie-mode-devtools.msft.png)
 

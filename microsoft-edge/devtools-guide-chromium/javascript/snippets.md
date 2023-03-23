@@ -68,7 +68,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 1. Select anything in DevTools, so that DevTools has focus.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
 
 1. Type `Snippets`, select **Show Snippets**, and then press **Enter** to run the command:
 
@@ -92,7 +92,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 1. Focus your cursor somewhere in DevTools.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
 
 1. Start typing `snippet`, select **Create new snippet**, and then press **Enter**:
 
@@ -112,7 +112,7 @@ To rename your new Snippet with a custom name, see [Rename Snippets](#rename-sni
 
 1. Use the **Code Editor** to add JavaScript to your Snippet.
 
-1. When an asterisk appears next to the name of your Snippet, it means you have unsaved code.  Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save:
+1. When an asterisk appears next to the name of your Snippet, it means you have unsaved code.  Press **Ctrl+S** (Windows, Linux) or `Command`+`S` (macOS) to save:
 
    ![An asterisk next to the Snippet name indicates unsaved code](../media/javascript-sources-snippets-editor-unsaved.msft.png)
 
@@ -132,7 +132,7 @@ To rename your new Snippet with a custom name, see [Rename Snippets](#rename-sni
 
 1. Focus your cursor somewhere in DevTools.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
 
 1. Delete the `>` character and type the `!` character followed by the name of the Snippet that you want to run:
 

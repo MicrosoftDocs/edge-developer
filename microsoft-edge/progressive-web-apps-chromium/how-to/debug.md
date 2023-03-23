@@ -22,7 +22,7 @@ PWAs can be installed locally and used in a standalone window, or used in a web 
 You can open DevTools on your PWA in the same way in both cases. To open DevTools, use one the following ways:
 
 * Right-click any item in the app user interface, and then select **Inspect**.
-* Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+* Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 * Press **F12**.
 
 To learn more, see [Open DevTools](../../devtools-guide-chromium/overview.md#open-devtools) in _Overview of DevTools_.

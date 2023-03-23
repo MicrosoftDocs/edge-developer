@@ -113,7 +113,7 @@ This section is in support of clicking the **Launch Project** button.
 
 1. Copy and paste the modified URL line to the other places in the `launch.json` file.
 
-   Tip: To modify all instances at the same time, you can copy an updated URL string, then select an instance of the initial URL string, press `Ctrl`+`Shift`+`L` to select all instances, and then paste the updated string.
+   Tip: To modify all instances at the same time, you can copy an updated URL string, then select an instance of the initial URL string, press **Ctrl+Shift+L** to select all instances, and then paste the updated string.
 
 1. Save the `launch.json` file.
 

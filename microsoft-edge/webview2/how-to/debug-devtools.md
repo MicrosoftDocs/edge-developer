@@ -17,7 +17,7 @@ Use Microsoft Edge Developer Tools to debug web content displayed in WebView2 co
 When you're using a WebView2 app, there are several ways to open DevTools:
 
 *  Press **F12**.
-*  Press `Ctrl`+`Shift`+`I`.
+*  Press **Ctrl+Shift+I**.
 *  Right-click the page and then select `Inspect`.
 
 An app can also use the `OpenDevToolsWindow` API to programmatically open a DevTools window.  For example, you can use this approach if the above hotkeys and the context menu items have been removed.

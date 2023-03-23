@@ -80,7 +80,7 @@ This Animal Shelter demo webpage is useful for exploring various DevTools featur
 
 1. Right-click anywhere in the rendered webpage and then select **Inspect**.  DevTools opens next to the demo webpage.
 
-   <!-- Or, press **F12**, `Ctrl`+`Shift`+`I` (on Windows/Linux), or `Command`+`Option`+`I` (on macOS). -->
+   <!-- Or, press **F12**, **Ctrl+Shift+I** (on Windows/Linux), or **Command+Option+I** (on macOS). -->
 
 ![The 'Demo webpage with accessibility issues'](../media/demo-page-with-accessibility-issues.png)
 
@@ -120,7 +120,7 @@ This demo webpage is useful for exploring the **Sources** tool, especially the J
 
 1. Right-click anywhere in the rendered webpage and then select **Inspect**.  DevTools opens next to the demo webpage.
 
-   <!-- Or, press **F12**, `Ctrl`+`Shift`+`I` (on Windows/Linux), or `Command`+`Option`+`I` (on macOS). -->
+   <!-- Or, press **F12**, **Ctrl+Shift+I** (on Windows/Linux), or **Command+Option+I** (on macOS). -->
 
 ![The 'Get started Debugging JavaScript with DevTools' demo webpage](../media/using-debug-js-demo-page.png)
 
@@ -227,7 +227,7 @@ After downloading or cloning the Demos repo:
 
 1. In Microsoft Edge, open a new tab.
 
-1. Right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
 
@@ -262,7 +262,7 @@ To open an `.html` file and edit it:
 
 1. Select an HTML file from the local copy of the **Demos** repo, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`.  The `.html` file is opened and rendered in Microsoft Edge.
 
-1. Right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![The More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
 
@@ -284,7 +284,7 @@ To open an `.html` file and edit it:
 
    ![The modified demo-to-do page before saving changes](./sample-code-images/modified-demo-to-do-before-save.png)
 
-1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.  The asterisk is removed from the **index.html** tab in the **Sources** tool.
+1. Press **Ctrl+S** (Windows, Linux) or `Command`+`S` (macOS) to save the change.  The asterisk is removed from the **index.html** tab in the **Sources** tool.
 
 1. Refresh the page.  The change is displayed in the rendered webpage; for example, the word **modified** is added to the title:
 

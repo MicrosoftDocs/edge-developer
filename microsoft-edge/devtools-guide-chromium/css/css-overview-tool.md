@@ -20,7 +20,7 @@ To open the **CSS Overview** tool:
 
 1. Navigate to the [TODO list demo app](https://microsoftedge.github.io/Demos/demo-to-do/) in Microsoft Edge, or to your own webpage.
 
-1. Open DevTools by pressing **F12** or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
 1. In the main toolbar, click **More Tools** and select **CSS Overview** from the list.
 
@@ -140,7 +140,7 @@ To find color contrast issues:
 
 1. Navigate to the [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo website, which has color contrast issues, in Microsoft Edge. Or navigate to your own website.
 
-1. Open DevTools by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+1. Open DevTools by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
 1. In the main toolbar, click **More Tools** and select **CSS Overview** from the list.
 

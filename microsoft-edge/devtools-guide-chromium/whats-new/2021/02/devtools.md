@@ -50,7 +50,7 @@ See [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mo
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
 
 *  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
-*  Press `Ctrl`+`Shift`+`H` (Windows, Linux) or `Cmd`+`Shift`+`H` (macOS).
+*  Press **Ctrl+Shift+H** (Windows, Linux) or `Cmd`+`Shift`+`H` (macOS).
 *  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type `tooltips`.
 
 Then hover over each outlined region of DevTools:
@@ -216,7 +216,7 @@ The [color-gamut](https://www.chromestatus.com/feature/5354410980933632) media q
 
 To emulate the CSS color-gamut media feature:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 1. In DevTools, on the main toolbar, select the **Rendering** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../../../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../../../media/more-tools-icon-light-theme.png)) button.  The **Rendering** tool opens.
 1. In the **Emulate CSS media feature color-gamut** dropdown, select a **color-gamut** option:
 

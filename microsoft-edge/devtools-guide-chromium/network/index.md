@@ -64,7 +64,7 @@ To get the most out of this tutorial, open the demo and try out the features on 
    ![The demo in one window and this tutorial in a different window](../media/network-tutorial/windows.msft.png)
    -->
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens.
 
 1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](../media/more-tools-icon-light-theme.png)) button:
 
@@ -286,7 +286,7 @@ For other filtering workflows, see [Filter requests](reference.md#filter-request
 
 How does a page look and behave when some of the page resources aren't available?  Does it fail completely, or is it still somewhat functional?  Block requests to find out:
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
 1. Type `block`, select **Show Request Blocking**, and then press **Enter**:
 

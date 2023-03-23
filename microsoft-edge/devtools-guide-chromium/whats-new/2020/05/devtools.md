@@ -36,7 +36,7 @@ Microsoft Edge DevTools is now displayed in high-contrast mode when Windows is i
 
 ![The Microsoft Edge DevTools in high-contrast mode](../../media/2020/05/high-contrast.msft.png)
 
-[Follow the instructions to turn on high-contrast mode in Windows](https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off).  To open DevTools in Microsoft Edge, select **F12** or `Ctrl`+`Shift`+`I`.  DevTools is displayed in high-contrast mode.
+[Follow the instructions to turn on high-contrast mode in Windows](https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off).  To open DevTools in Microsoft Edge, select **F12** or **Ctrl+Shift+I**.  DevTools is displayed in high-contrast mode.
 
 Note: DevTools currently supports high-contrast mode on Windows, but not on macOS.
 

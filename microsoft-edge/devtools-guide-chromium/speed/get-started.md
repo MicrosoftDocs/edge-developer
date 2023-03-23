@@ -82,7 +82,7 @@ The audit has two important functions:
 
 The baseline is a record of how the site performed before you made any performance improvements.
 
-1. In Microsoft Edge, open DevTools by right-clicking the webpage, and then selecting **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+1. In Microsoft Edge, open DevTools by right-clicking the webpage, and then selecting **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
 1. In DevTools, on the main toolbar, select the **Lighthouse** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
 
@@ -251,7 +251,7 @@ The reported JavaScript files are from the `www.bing.com` domain, which means th
 
 To confirm the amount of unused code and possibly find other resources that are unused, use the **Coverage** tool:
 
-1. In DevTools, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage** in the list.
+1. In DevTools, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage** in the list.
 
     ![The Command Menu in DevTools, showing the Show Coverage command](./get-started-images/command-menu-coverage.png)
 
@@ -329,7 +329,7 @@ The first task, then, is to find code that you don't need to run on page load.
 
     **Lighthouse** displays a list of the stylesheets that the demo webpage uses, such as: `base.css`, `home.css`, and `map.css`.
 
-1. Open the **Coverage** tool again: press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS), type **Coverage**, and then select **Show Coverage**.
+1. Open the **Coverage** tool again: press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS), type **Coverage**, and then select **Show Coverage**.
 
 1. Click **Start instrumenting coverage and refresh the page** (![Refresh icon](../media/reload-icon.msft.png)) to display the coverage report, and then type `css` in the **URL filter** field to only display the CSS files:
 

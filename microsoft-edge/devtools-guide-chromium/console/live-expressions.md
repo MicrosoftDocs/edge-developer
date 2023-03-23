@@ -83,7 +83,7 @@ To monitor the mouse movement in the current webpage:
 
 1. Open the demo webpage [Logging Mouse Movement demo](https://microsoftedge.github.io/Demos/devtools-console/mousemove.html) in a new window or tab.
 
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** tool opens in DevTools, next to the demo webpage.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the demo webpage.
 
 1. Move your mouse around over the rendered demo webpage.
 
@@ -102,7 +102,7 @@ To use Live Expressions to avoid excessive Console log messages:
 
 1. Open the demo webpage [Mouse movement without logging demo](https://microsoftedge.github.io/Demos/devtools-console/mousemove-no-log.html) in a new window or tab.
 
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** tool opens in DevTools, next to the demo webpage.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the demo webpage.
 
 1. Move your mouse around.  No log messages are output.
 

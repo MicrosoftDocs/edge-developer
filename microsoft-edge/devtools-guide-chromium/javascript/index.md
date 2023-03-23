@@ -51,7 +51,7 @@ The first step in debugging is to find a sequence of actions that consistently r
 
 DevTools provides several tools for different tasks.  These tasks include changing CSS, profiling page-load performance, and monitoring network requests.  The **Sources** tool is where you debug JavaScript.
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
    ![DevTools open on Elements](../media/javascript-console-empty.msft.png)
 
@@ -219,7 +219,7 @@ We've identified a possible fix for the bug.  Next, edit the JavaScript code dir
 
 1. In the **Editor** pane, replace the line `var sum = addend1 + addend2` with `var sum = parseInt(addend1) + parseInt(addend2)`.
 
-1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save your change.
+1. Press **Ctrl+S** (Windows, Linux) or `Command`+`S` (macOS) to save your change.
 
 1. Click **Deactivate breakpoints** (![Deactivate breakpoints](../media/deactivate-breakpoints-button-icon.msft.png)).  The breakpoint's icon changes to gray to indicate that the breakpoint is inactive.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
 

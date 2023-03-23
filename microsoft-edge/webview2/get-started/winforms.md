@@ -88,7 +88,7 @@ Start with a basic desktop project that contains a single main window.
 
    ![The Visual Studio window, showing the baseline WinForms project and a Forms Designer](media/vs2022-new-empty-winforms-gettingstarted-project.png)
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 1. Select **Debug** > **Start Debugging** (**F5**).
 
@@ -134,7 +134,7 @@ Use NuGet to add the WebView2 SDK to the project, as follows:
 
 1. Click the **OK** button.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1. Close the NuGet Package Manager window.
 
@@ -194,7 +194,7 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
 1. In the **Properties** panel, in the **Misc** section, set the **Source** property to `https://www.microsoft.com`.  The **Source** property sets the initial URL that will be displayed in the WebView2 control.  
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1. Press **F5** to build and run the project.
 
@@ -286,7 +286,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 
    ![Form_Resize code added](media/winforms-form-resize-code-added.png)
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1. Press **F5** to build and run the project.
 
@@ -332,7 +332,7 @@ Enable users to change the URL that the WebView2 control displays, by reading th
 
    Now the `goButton_Click` function will navigate the WebView2 control to the URL that's entered in the address bar text box.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1. Press **F5** to build and run the project.
 
@@ -407,7 +407,7 @@ To demonstrate how to use the events, start by registering a handler for `Naviga
 
    In the constructor, `EnsureHttps` is registered as the event handler on the `NavigationStarting` event on the WebView2 control.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1. Press **F5** to build and run the project.
 
@@ -536,7 +536,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
    }
    ```
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save changes.
+1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save changes.
 
 1. Press **F5** to build and run the project.
 

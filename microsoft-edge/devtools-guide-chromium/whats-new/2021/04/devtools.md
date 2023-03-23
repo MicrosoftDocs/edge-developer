@@ -60,7 +60,7 @@ See also:
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do any of the following: 
 
 *  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
-*  Press `Ctrl`+`Shift`+`H` (Windows, Linux) or `Cmd`+`Shift`+`H` (macOS).
+*  Press **Ctrl+Shift+H** (Windows, Linux) or `Cmd`+`Shift`+`H` (macOS).
 *  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type `tooltips`.
 
 Then hover over each outlined region of DevTools:
@@ -455,7 +455,7 @@ See also:
 <!-- ====================================================================== -->
 #### Improved outline of HTML files
 
-DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on (or off) the code outline, press `Ctrl`+`Shift`+`O` on Windows/Linux or `Cmd`+`Shift`+`O` on macOS.  Previously, DevTools only displayed some of the functions.  In the following figure, DevTools now correctly list all functions in the outline:
+DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on (or off) the code outline, press **Ctrl+Shift+O** on Windows/Linux or `Cmd`+`Shift`+`O` on macOS.  Previously, DevTools only displayed some of the functions.  In the following figure, DevTools now correctly list all functions in the outline:
 
 ![Improved outline of HTML files](../../media/2021/04/sources-page-jobobbx-at.msft.png)
 

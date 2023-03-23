@@ -25,7 +25,7 @@ The Microsoft Edge team is enabling Focus Mode to a subset of users to collect e
 
 To check if you have Focus Mode enabled already, or to enable or disable it:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. Press `F1` to open **Settings**.
 

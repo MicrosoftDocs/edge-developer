@@ -26,7 +26,7 @@ Simulate different device orientations from within DevTools.
 
 <!--todo: update device orientation section when available -->
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
    ![The Command Menu](../media/device-mode-console-command-menu.msft.png)
 

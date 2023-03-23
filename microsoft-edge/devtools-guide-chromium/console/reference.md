@@ -59,7 +59,7 @@ You can open the **Console** as a [tool in the upper pane](#open-the-console-too
 
 ### Open the Console tool
 
-Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
 ![The Console tool](../media/console-hello-console.msft.png)
 
@@ -268,7 +268,7 @@ To clear the Console, use any of the following approaches:
 
 *  Call `console.clear()` from your webpage's JavaScript.
 
-*  Press `Ctrl`+`L` while the Console is in focus.
+*  Press **Ctrl+L** while the Console is in focus.
 
 
 <!-- ====================================================================== -->

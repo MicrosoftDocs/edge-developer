@@ -232,7 +232,7 @@ Add a project for the **wv2winrt** tool, as follows:
 
    ![The newly created WinRTAdapter project](winrt-from-js-images/fresh-winrtadapter-project.png)
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -253,7 +253,7 @@ Add a project for the **wv2winrt** tool, as follows:
 
    ![The newly created WinRTAdapter project (if a WinUI 3 solution)](winrt-from-js-images/fresh-winrtadapter-project-winui3.png)
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 ---
 
@@ -282,7 +282,7 @@ In the WinRTAdapter project, install the Windows Implementation Library (WIL), a
 
 1. Click the **OK** button.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -297,7 +297,7 @@ In the WinRTAdapter project, install the Windows Implementation Library (WIL), a
 
 1. Click the **Install** button.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 ---
 
@@ -332,7 +332,7 @@ In the WinRTAdapter project, also install a prerelease version of the WebView2 S
 
 1. Click the **OK** button.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -353,7 +353,7 @@ In the WinRTAdapter project, also install a prerelease version of the WebView2 S
 
 1. Click the **Install** button.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 ---
 
@@ -386,7 +386,7 @@ In the main project, such as **MyUWPGetStartApp**, install the same prerelease v
 
    Visual Studio should look similar to the above Step section, except that now, **NuGet Package Manager** is open for the main project instead of the **WinRTAdapter** project.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 The WebView2 prerelease SDK is now installed for the main project.
 
@@ -447,7 +447,7 @@ Specify the namespace and class as follows:
 
 1. Click the **OK** button to close the **Property Pages** dialog.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 <!-- ------------------------------ -->
@@ -468,7 +468,7 @@ In the main project, such as **MyUWPGetStartApp**, add a reference that points t
 
 1. Click the **OK** button to close the **Reference Manager** dialog.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -483,7 +483,7 @@ In the non-Adapter main project, such as **MyWebView2WinUI3**, add a reference t
 
 1. Click the **OK** button to close the **Reference Manager** dialog.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 ---
 
@@ -499,7 +499,7 @@ Next, generate the API code:
    *  `Windows.System.UserProfile` namespace
    *  `Windows.Globalization.Language` class
 
-1. After building is complete, select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. After building is complete, select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 <!-- the next issue didn't occur in WinUI 3 solution: -->
@@ -578,7 +578,7 @@ This section is for WinUI 3 (Windows App SDK) only.
    <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
    ```
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 The OS target is now updated.
 
@@ -613,7 +613,7 @@ Add the CsWinRT and WinRTAdapter packages in the project file:
    </PropertyGroup> 
    ```
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 <!-- ------------------------------ -->
@@ -664,7 +664,7 @@ This section is for WinUI 3 (Windows App SDK) only.
 
    ![Debugger not configured](./winrt-from-js-images/debugger-not-configd.png)
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 ---
 
@@ -710,7 +710,7 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
 1. Right-click the main project, such as **MyUWPGetStartApp**, and then select **Set as startup project**.  Bold indicates startup project.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 1. Press **F5** to run the sample app.  The WebView2-enabled WinUI 2 (UWP) app opens:
 
@@ -757,7 +757,7 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
 1. Right-click the main project, such as **MyWebView2WinUI3**, and then select **Set as startup project**.  Bold indicates startup project.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 1. Press **F5** to run the sample app.  The **WinUI Desktop** window opens:
 
@@ -780,7 +780,7 @@ Next, use the DevTools Console to demonstrate that web-side code can call the ho
 
 1. If the app isn't running, in Visual Studio, press **F5** to run the sample app.
 
-1. Click in the main part of the WebView2 sample app window to give it focus, and then press `Ctrl`+`Shift`+`I` to open Microsoft Edge DevTools.  Or, right-click the page, and then select **Inspect**.
+1. Click in the main part of the WebView2 sample app window to give it focus, and then press **Ctrl+Shift+I** to open Microsoft Edge DevTools.  Or, right-click the page, and then select **Inspect**.
 
    The Microsoft Edge DevTools window opens.
 
