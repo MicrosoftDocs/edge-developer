@@ -22,16 +22,26 @@
           displayName: DevTools
 
 # What's New ------------------------------------------------------------------
-        - name: What's new
+        - name: What's New
           items:
 
 # What's New firstchild article
-            - name: What's new in Microsoft Edge DevTools
+            - name: What's New in Microsoft Edge DevTools
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: release notes, announcements
 
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
+            # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 111
+              href: devtools-guide-chromium/whats-new/2023/03/devtools-111.md
+
+            - name: Microsoft Edge 110
+              href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
+
+            - name: Microsoft Edge 109
+              href: devtools-guide-chromium/whats-new/2023/01/devtools-109.md
+
             - name: Microsoft Edge 108
               href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
 
@@ -53,69 +63,74 @@
             - name: Microsoft Edge 102
               href: devtools-guide-chromium/whats-new/2022/05/devtools-102.md
 
-            - name: Microsoft Edge 101
-              href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
+            # keep 10 items above
+            - name: Archive
+              items:
+                - name: What's New in DevTools archive
+                  href: devtools-guide-chromium/whats-new/whats-new-archive.md
 
-            - name: Microsoft Edge 100
-              href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
+                - name: Microsoft Edge 101
+                  href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
 
-            - name: Microsoft Edge 99
-              href: devtools-guide-chromium/whats-new/2022/03/devtools.md
+                - name: Microsoft Edge 100
+                  href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
 
-            - name: Microsoft Edge 98
-              href: devtools-guide-chromium/whats-new/2022/02/devtools.md
+                - name: Microsoft Edge 99
+                  href: devtools-guide-chromium/whats-new/2022/03/devtools.md
 
-            - name: Microsoft Edge 97
-              href: devtools-guide-chromium/whats-new/2022/01/devtools.md
+                - name: Microsoft Edge 98
+                  href: devtools-guide-chromium/whats-new/2022/02/devtools.md
 
-            - name: Microsoft Edge 96
-              href: devtools-guide-chromium/whats-new/2021/11/devtools.md
+                - name: Microsoft Edge 97
+                  href: devtools-guide-chromium/whats-new/2022/01/devtools.md
 
-            - name: Microsoft Edge 95
-              href: devtools-guide-chromium/whats-new/2021/10/devtools.md
+                - name: Microsoft Edge 96
+                  href: devtools-guide-chromium/whats-new/2021/11/devtools.md
 
-            - name: Microsoft Edge 94
-              href: devtools-guide-chromium/whats-new/2021/09/devtools.md
+                - name: Microsoft Edge 95
+                  href: devtools-guide-chromium/whats-new/2021/10/devtools.md
 
-            - name: Microsoft Edge 93
-              href: devtools-guide-chromium/whats-new/2021/07/devtools.md
+                - name: Microsoft Edge 94
+                  href: devtools-guide-chromium/whats-new/2021/09/devtools.md
 
-            - name: Microsoft Edge 92
-              href: devtools-guide-chromium/whats-new/2021/05/devtools.md
+                - name: Microsoft Edge 93
+                  href: devtools-guide-chromium/whats-new/2021/07/devtools.md
 
-            - name: Microsoft Edge 91
-              href: devtools-guide-chromium/whats-new/2021/04/devtools.md
+                - name: Microsoft Edge 92
+                  href: devtools-guide-chromium/whats-new/2021/05/devtools.md
 
-            - name: Microsoft Edge 90
-              href: devtools-guide-chromium/whats-new/2021/02/devtools.md
+                - name: Microsoft Edge 91
+                  href: devtools-guide-chromium/whats-new/2021/04/devtools.md
 
-            - name: Microsoft Edge 89
-              href: devtools-guide-chromium/whats-new/2021/01/devtools.md
+                - name: Microsoft Edge 90
+                  href: devtools-guide-chromium/whats-new/2021/02/devtools.md
 
-            - name: Microsoft Edge 88
-              href: devtools-guide-chromium/whats-new/2020/11/devtools.md
+                - name: Microsoft Edge 89
+                  href: devtools-guide-chromium/whats-new/2021/01/devtools.md
 
-            - name: Microsoft Edge 87
-              href: devtools-guide-chromium/whats-new/2020/10/devtools.md
+                - name: Microsoft Edge 88
+                  href: devtools-guide-chromium/whats-new/2020/11/devtools.md
 
-            - name: Microsoft Edge 86
-              href: devtools-guide-chromium/whats-new/2020/08/devtools.md
+                - name: Microsoft Edge 87
+                  href: devtools-guide-chromium/whats-new/2020/10/devtools.md
 
-            - name: Microsoft Edge 85
-              href: devtools-guide-chromium/whats-new/2020/06/devtools.md
+                - name: Microsoft Edge 86
+                  href: devtools-guide-chromium/whats-new/2020/08/devtools.md
 
-            - name: Microsoft Edge 84
-              href: devtools-guide-chromium/whats-new/2020/05/devtools.md
+                - name: Microsoft Edge 85
+                  href: devtools-guide-chromium/whats-new/2020/06/devtools.md
 
-            - name: Microsoft Edge 83
-              href: devtools-guide-chromium/whats-new/2020/03/devtools.md
+                - name: Microsoft Edge 84
+                  href: devtools-guide-chromium/whats-new/2020/05/devtools.md
 
-            - name: Microsoft Edge 81
-              href: devtools-guide-chromium/whats-new/2020/01/devtools.md
+                - name: Microsoft Edge 83
+                  href: devtools-guide-chromium/whats-new/2020/03/devtools.md
 
-            - name: Microsoft Edge 80
-              href: devtools-guide-chromium/whats-new/2019/12/devtools.md
+                - name: Microsoft Edge 81
+                  href: devtools-guide-chromium/whats-new/2020/01/devtools.md
 
+                - name: Microsoft Edge 80
+                  href: devtools-guide-chromium/whats-new/2019/12/devtools.md
 # Experimental features ------------------------------------------------------------------
         - name: Experimental features
           items:
@@ -131,6 +146,10 @@
             - name: Run commands via keyboard with Command Palette
               href: devtools-guide-chromium/experimental-features/edge-command-palette.md
               displayName: Experimental features, Edge Command Palette
+
+            - name: Share enhanced performance and memory traces
+              href: devtools-guide-chromium/experimental-features/share-traces.md
+              displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
 
 # TOOLS =======================================================================
         - name: Tools
@@ -262,7 +281,7 @@
                   href: devtools-guide-chromium/javascript/overrides.md
                   displayName: Sources tool
 
-                - name: Mark content scripts as Library Code
+                - name: Add content scripts to the Ignore List
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
                   displayName: Sources tool
 
@@ -502,6 +521,10 @@
 
                 - name: Display original function names in performance profiles
                   href: devtools-guide-chromium/evaluate-performance/unminify.md
+                  displayName: Performance tool
+
+                - name: Analyze selector performance during Recalculate Style events
+                  href: devtools-guide-chromium/evaluate-performance/selector-stats.md
                   displayName: Performance tool
 
 # Performance monitor tool ----------------------------------------------------
@@ -820,7 +843,7 @@
                   href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
                   displayName: 
 
-                - name: Update .css files from within the Styles tool (CSS mirror editing)
+                - name: Update .css files from within the Styles tab (CSS mirror editing)
                   href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
                   displayName: Syncing live changes from the Styles tool by using CSS mirror editing # previous title
 
@@ -984,29 +1007,26 @@
                 - name: Microsoft Edge Add-ons API Reference
                   href: extensions-chromium/publish/api/addons-api-reference.md
 
+        - name: Samples
+          href: extensions-chromium/samples.md
+          displayName: Samples for Microsoft Edge extensions # full title
+
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Progressive Web Apps
       items:
+
         - name: Overview of Progressive Web Apps (PWAs)  # existing firstchild article
           href: progressive-web-apps-chromium/index.md
 
-        - name: The user experience of PWAs
-          href: progressive-web-apps-chromium/ux.md
+        - name: Get started with PWAs
+          href: progressive-web-apps-chromium/how-to/index.md
+
+        - name: Best practices for PWAs
+          href: progressive-web-apps-chromium/how-to/best-practices.md
 
         - name: How to
           items:
-            - name: Get started with PWAs
-              href: progressive-web-apps-chromium/how-to/index.md
-
-            - name: Web app manifest
-              href: progressive-web-apps-chromium/how-to/web-app-manifests.md
-
-            - name: Service Workers
-              href: progressive-web-apps-chromium/how-to/service-workers.md
-
-            - name: Offline scenarios
-              href: progressive-web-apps-chromium/how-to/offline.md
 
             - name: Publish PWAs to the Microsoft Store
               href: progressive-web-apps-chromium/how-to/microsoft-store.md
@@ -1014,37 +1034,53 @@
             - name: Experimental features and origin trials
               href: progressive-web-apps-chromium/how-to/origin-trials.md
 
-            - name: Integrate PWAs on desktop
-              items:
-                - name: Define icons and a theme color
-                  href: progressive-web-apps-chromium/how-to/icon-theme-color.md
+            - name: Use Progressive Web Apps in Microsoft Edge
+              href: progressive-web-apps-chromium/ux.md
 
-                - name: Re-engage users with badges, notifications, and push messages
-                  href: progressive-web-apps-chromium/how-to/notifications-badges.md
+            - name: Debug Progressive Web Apps
+              href: progressive-web-apps-chromium/how-to/debug.md
 
-                - name: Handle files
-                  href: progressive-web-apps-chromium/how-to/handle-files.md
+        - name: Reference
+          items:
 
-                - name: Handle URLs
-                  href: progressive-web-apps-chromium/how-to/handle-urls.md
+            - name: Web app manifest
+              href: progressive-web-apps-chromium/how-to/web-app-manifests.md
 
-                - name: Handle protocols
-                  href: progressive-web-apps-chromium/how-to/handle-protocols.md
+            - name: Service Workers
+              href: progressive-web-apps-chromium/how-to/service-workers.md
 
-                - name: Display content in the title bar
-                  href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
+            - name: Store data on the device
+              href: progressive-web-apps-chromium/how-to/offline.md
 
-                - name: Share content with other apps
-                  href: progressive-web-apps-chromium/how-to/share.md
+            - name: Define icons and a theme color
+              href: progressive-web-apps-chromium/how-to/icon-theme-color.md
 
-                - name: Define app shortcuts
-                  href: progressive-web-apps-chromium/how-to/shortcuts.md
+            - name: Re-engage users with badges, notifications, and push messages
+              href: progressive-web-apps-chromium/how-to/notifications-badges.md
 
-                - name: Build operating system Widgets
-                  href: progressive-web-apps-chromium/how-to/widgets.md
+            - name: Handle files
+              href: progressive-web-apps-chromium/how-to/handle-files.md
 
-                - name: Synchronize and update in the background
-                  href: progressive-web-apps-chromium/how-to/background-syncs.md
+            - name: Handle URLs
+              href: progressive-web-apps-chromium/how-to/handle-urls.md
+
+            - name: Handle protocols
+              href: progressive-web-apps-chromium/how-to/handle-protocols.md
+
+            - name: Display content in the title bar
+              href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
+
+            - name: Share content with other apps
+              href: progressive-web-apps-chromium/how-to/share.md
+
+            - name: Define app shortcuts
+              href: progressive-web-apps-chromium/how-to/shortcuts.md
+
+            - name: Build operating system Widgets
+              href: progressive-web-apps-chromium/how-to/widgets.md
+
+            - name: Synchronize and update in the background
+              href: progressive-web-apps-chromium/how-to/background-syncs.md
 
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
@@ -1085,19 +1121,19 @@
 
             - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
-              displayName: WinUI3_GettingStarted, Get started with WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
+              displayName: WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
 
             - name: WPF
               href: webview2/get-started/wpf.md
-              displayName: WPF_GettingStarted, Get started with WPF apps  # repo dir name  # top-of-page title
+              displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
 
             - name: WinForms
               href: webview2/get-started/winforms.md
-              displayName: WinForms_GettingStarted, Get started with WinForms apps  # repo dir name  # top-of-page title
+              displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
 
             - name: Win32
               href: webview2/get-started/win32.md
-              displayName: Win32_GettingStarted, Get started with Win32 apps  # repo dir name  # top-of-page title
+              displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
 
 # -----------------------------------------------------------------------------
 # Sample apps
@@ -1205,9 +1241,17 @@
                   href: webview2/how-to/winrt-from-js.md
                   displayName: AddHostObjectToScript, host objects
 
+                - name: How WinRT types and members are represented in JavaScript
+                  href: webview2/how-to/winrt-js-conversion.md
+                  displayName: 
+
             - name: Using frames
               href: webview2/concepts/frames.md
               displayName: Using frames in WebView2 apps, iframe # full title
+
+            - name: Printing
+              href: webview2/how-to/print.md
+              displayName: Printing from WebView2 apps # full title
 
             # updated h2: Experimental APIs, added a 2nd, new h3:
             - name: Understand the different WebView2 SDK versions
@@ -1221,6 +1265,10 @@
 
             - name: Distribute your app and the WebView2 Runtime
               href: webview2/concepts/distribution.md
+              displayName: 
+
+            - name: Working with local content in WebView2 apps
+              href: webview2/concepts/working-with-local-content.md
               displayName: 
 
 # -----------------------------------------------------------------------------
@@ -1241,6 +1289,10 @@
             - name: Microsoft Visual Studio
               href: webview2/how-to/debug-visual-studio.md
               displayName: Debug WebView2 apps with Visual Studio  # top-of-page title
+
+            - name: Remote debugging
+              href: webview2/how-to/remote-debugging.md
+              displayName: Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge  # top-of-page title
 
 # -----------------------------------------------------------------------------
         - name: Architecture
@@ -1369,6 +1421,27 @@
                   href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
 
+            - name: JavaScript
+              uid: WebView2Script!
+              displayName: 
+              items:
+                - name: HostObjectAsyncProxy
+                  uid: 'WebView2Script!HostObjectAsyncProxy:class'
+                - name: HostObjectAsyncProxyBase
+                  uid: 'WebView2Script!HostObjectAsyncProxyBase:class'
+                - name: HostObjectsAsyncRoot
+                  uid: 'WebView2Script!HostObjectsAsyncRoot:class'
+                - name: HostObjectsOptions
+                  uid: 'WebView2Script!HostObjectsOptions:class'
+                - name: HostObjectsSyncRoot
+                  uid: 'WebView2Script!HostObjectsSyncRoot:class'
+                - name: HostObjectSyncProxy
+                  uid: 'WebView2Script!HostObjectSyncProxy:class'
+                - name: SharedBufferReceivedEvent
+                  uid: 'WebView2Script!SharedBufferReceivedEvent:class'
+                - name: WebView
+                  uid: 'WebView2Script!WebView:class'
+
         - name: Contact the WebView2 Team
           href: webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
@@ -1417,9 +1490,9 @@
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
-    - name: Web platform
+    - name: Development tips for Microsoft Edge
       items:
-        - name: Web platform overview # new firstchild article
+        - name: Development tips for Microsoft Edge
           href: web-platform/web-platform.md
           displayName: 
 
@@ -1450,7 +1523,10 @@
         - name: Operating System Regional Data Display
           href: web-platform/os-regional-settings.md
           displayName: globalization, language, region, limited, intl, date, time, format
-          
+
+        - name: View formatted JSON
+          href: devtools-guide-chromium/json-viewer/json-viewer.md
+          displayName: JSON viewer
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords

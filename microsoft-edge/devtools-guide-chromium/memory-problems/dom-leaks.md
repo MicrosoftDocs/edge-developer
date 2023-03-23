@@ -67,8 +67,6 @@ Next, trigger garbage collection (GC) in the browser:
 
 1. In the **Detached Elements** tool, click the **Collect garbage** (![The 'Collect garbage' icon](images/collect-garbage-icon-light-mode.png)) icon.
 
-   The browser runs garbage collection.
-
 1. Click the **Get Detached Elements** (![The Get Detached Elements icon](images/get-detached-elements-icon-light-mode.png)) icon.
 
    Now the **Detached Elements** tool displays all detached elements that cannot be garbage collected.  These remaining detached elements may be memory leaks, if they aren't going to be reused by the application.
@@ -83,7 +81,7 @@ Next, after you have found a detached element that cannot be garbage-collected, 
 
 To identify the JavaScript code that references a detached element:
 
-1. In the **Detached Elements** tool, click the **Analyze** (![The Analyze icon](images/analyze-icon-light-mode.png)) icon.  The **Id** column shows heap locations:
+1. In the **Detached Elements** tool, click the **Analyze** (![The Analyze icon](images/analyze-icon-light-mode.png)) icon.
 
    ![Analyze result: IDs are shown](./images/analyze-result-ids-shown.png)
 
@@ -114,7 +112,7 @@ Because the DOM is a fully connected graph, when one DOM node is retained in mem
 
 To identify the culprit node in a detached tree that is causing the entire tree to be retained:
 
-1. In the **Detached Elements** tool, click the **Detach Elements** (![The Detach Elements icon](images/detach-elements-icon-light-mode.png)) icon to destroy the parent-child links inside the detached tree:
+1. Click the **Detach Elements** (![The Detach Elements icon](images/detach-elements-icon-light-mode.png)) icon to destroy the parent-child links inside the detached tree:
 
    ![The Detach Elements button in the Detached Elements tool](images/detached-elements-remove-links.msft.png)
 
@@ -147,18 +145,7 @@ When looking for memory leaks, remember that leaks can depend on the context of 
 
 The following image shows detached elements in the form of messages that are reattached when a user navigates from **Room 2** back to **Room 1**:
 
-1. Assume you did the main steps above to view detached elements when the **Room 2** button of the demo page is selected.
-
-   The elements were loaded when **Room 1** button was selected, but became detached when **Room 2** was selected.
-
-1. Click the **Room 1** button to return to the room that created the elements.
-
-1. Click the **Get Detached Elements** (![Get Detached Elements icon](images/get-detached-elements-icon-light-mode.png)) icon.  Now there are no detached elements, because the elements became reattached when returning to Room 1:
-
-   ![The detached elements are reattached to the DOM when switching back to Room 1](images/detached-elements-reattached.msft.png)
-
-
-#### Detached doesn't necessarily mean leak
+![The detached elements are reattached to the DOM when switching back to Room 1](images/detached-elements-reattached.msft.png)
 
 Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up. Detached elements aren't always an indication of a memory leak, and memory leaks aren't always caused by detached elements.
 

@@ -29,7 +29,7 @@ To report a bug or request a feature while you are using DevTools:
 1. In the **Send feedback** window, describe your bug or feature request. You can also attach a screenshot to help the team understand the problem better and add your email address so we can follow-up with you.
 1. Press **Send** to create a tracked issue for the Microsoft Edge development team.
 
-![The Send feedback button and Send feedback window in Microsoft Edge DevTools.](media/devtools-send-feedback-window.png)
+![The Send feedback button and Send feedback window in Microsoft Edge DevTools](media/devtools-send-feedback-window.png)
 
 
 <!-- ====================================================================== -->

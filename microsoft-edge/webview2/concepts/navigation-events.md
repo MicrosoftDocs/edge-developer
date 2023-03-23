@@ -39,7 +39,7 @@ The following is the normal sequence of events that are fired during each step o
 
 | Sequence | Event | Description | API Reference overview |
 |---|---|---|---|
-| 1 | `NavigationStarting` |  WebView2 starts to navigate and the navigation results in a network request.  The host may disallow the request during the event. | [Block unwanted navigating](/microsoft-edge/webview2/concepts/overview-features-apis.md#block-unwanted-navigating) |
+| 1 | `NavigationStarting` |  WebView2 starts to navigate and the navigation results in a network request.  The host may disallow the request during the event. | [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating) |
 | 2 | `SourceChanged` |  The source of WebView2 changes to a new URL.<!--todo: clarify-->  The event may result from a navigation action that doesn't cause a network request, such as a fragment<!--todo: anchor?--> navigation. | [Navigation history](./overview-features-apis.md#navigation-history) |
 | 3 | `ContentLoading` |  WebView2 starts loading content for the new page. | [Navigation events](./overview-features-apis.md#navigation-events) |
 | 4 | `HistoryChanged` |  The navigation causes the history of WebView2 to update. | [Navigation history](./overview-features-apis.md#navigation-history) |
@@ -95,4 +95,3 @@ The WebView2 [Sample apps](../code-samples-links.md) also demonstrate handling n
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.

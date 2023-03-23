@@ -30,15 +30,19 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.
 
-   ![The Manifest pane.](../media/storage-application-manifest.msft.png)
+   ![The Manifest pane](../media/storage-application-manifest.msft.png)
 
-1. Expand the **Session Storage** menu and click a domain to view the key-value pairs.
+1. Expand the **Session Storage** menu.
 
-   ![The sessionStorage key-value pairs.](../media/storage-application-storage-session-storage-domain.msft.png)
+   ![The Session Storage Menu](../media/storage-application-storage-session-storage.msft.png)
+
+1. Click a domain to view the key-value pairs.
+
+   ![The sessionStorage key-value pairs](../media/storage-application-storage-session-storage-domain.msft.png)
 
 1. Click a row of the table to view the value in the viewer below the table.
 
-   ![View the value of the x-sid key.](../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png)
+   ![View the value of the x-sid key](../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -48,7 +52,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.
 
-   ![The empty part of the table to double-click in order to create a new key-value pair.](../media/storage-application-storage-session-storage-domain-key-value-new.msft.png)
+   ![The empty part of the table to double-click in order to create a new key-value pair](../media/storage-application-storage-session-storage-domain-key-value-new.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -58,7 +62,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. Double-click a cell in the **Key** or **Value** column to edit that key or value.
 
-   ![Edit a sessionStorage key.](../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png)
+   ![Edit a sessionStorage key](../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -68,7 +72,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. Click the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.
 
-1. Press `Delete` or click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)).
+1. Press `Delete` or click **Delete Selected** (![Delete Selected](../media/delete-icon.msft.png)).
 
 
 <!-- ====================================================================== -->
@@ -76,7 +80,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).
 
-1. Click **Clear All** (![Clear All.](../media/clear-icon.msft.png)).
+1. Click **Clear All** (![Clear All](../media/clear-icon.msft.png)).
 
 
 <!-- ====================================================================== -->
@@ -86,11 +90,11 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 1. Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `sessionStorage` key-value pairs of a domain other than the page you are on.
 
-   ![Change the JavaScript context of the Console.](../media/storage-console-domain-selection.msft.png)
+   ![Change the JavaScript context of the Console](../media/storage-console-domain-selection.msft.png)
 
 1. Run your `sessionStorage` expressions in the **Console**, the same as your JavaScript.
 
-   ![Interact with sessionStorage from the Console.](../media/storage-console-session-storage-keys.msft.png)
+   ![Interact with sessionStorage from the Console](../media/storage-console-session-storage-keys.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -98,5 +102,5 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/storage/sessionstorage/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

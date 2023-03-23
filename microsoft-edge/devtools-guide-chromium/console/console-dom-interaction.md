@@ -27,11 +27,11 @@ To reference an element of the webpage:
    document.querySelector('header')
    ```
 
-   ![To get a reference to the header in console, use 'document.querySelector'.](../media/console-dom-get-reference.msft.png)
+   ![To get a reference to the header in console, use 'document.querySelector'](../media/console-dom-get-reference.msft.png)
 
 1. In the **Console**, hover over the resulting HTML `<header>` element, or press `Shift`+`Tab`.  In the rendered webpage, DevTools highlights the header:
 
-   ![DevTools highlights the section you select in the Console.](../media/console-dom-highlight-element.msft.png)
+   ![DevTools highlights the section you select in the Console](../media/console-dom-highlight-element.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -51,14 +51,14 @@ You can manipulate the webpage from the **Console**, as follows.  In this exampl
 
    A green border appears around the header:
 
-   ![Adding a border to an element by using the Console.](../media/console-dom-add-border.msft.png)
+   ![Adding a border to an element by using the Console](../media/console-dom-add-border.msft.png)
 
 
 ### Get a direct reference an element
 
 Depending on the complexity of the webpage, it can be daunting to find the right element to manipulate.  But you can use the **Inspect** tool to help you.  Suppose you want to manipulate the site navigation toolbar on the [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo site.
 
-![Display the element that you inspect on the screen.](../media/console-dom-highlight-documentation.msft.png)
+![Display the element that you inspect on the screen](../media/console-dom-highlight-documentation.msft.png)
 
 
 To get a direct reference to the element that you want to manipulate:
@@ -71,11 +71,11 @@ To get a direct reference to the element that you want to manipulate:
 
 1. Click the `...` menu next to the element in the DOM tree:
 
-   ![The clicked element appears in the DOM tree of the Elements tool.  Click the overflow menu to get more features.](../media/console-dom-overflow-menu-in-elements.msft.png)
+   ![The clicked element appears in the DOM tree of the Elements tool.  Click the overflow menu to get more features](../media/console-dom-overflow-menu-in-elements.msft.png)
 
 1. Select **Copy** > **Copy JS Path**.
 
-   ![Copy the JavaScript path from an element in the DOM tree of the Elements tool.](../media/console-dom-copy-JS-path.msft.png)
+   ![Copy the JavaScript path from an element in the DOM tree of the Elements tool](../media/console-dom-copy-JS-path.msft.png)
 
    <!-- could be useful to have code listings.  test this:
    Here's the JS path you copied:
@@ -94,7 +94,7 @@ To get a direct reference to the element that you want to manipulate:
 
 1. Change the background color of the site navigation to red.  To do that, add `.style.backgroundColor = "red"` to the JavaScript path that you previously pasted, and press `Enter`:
 
-   ![Using the Console to change the content of an element.](../media/console-dom-change-content.msft.png)
+   ![Using the Console to change the content of an element](../media/console-dom-change-content.msft.png)
 
 Use any JavaScript DOM manipulations you want in the **Console**.  To make it more convenient, the **Console** comes with a few helper utility methods.
 
@@ -132,13 +132,13 @@ The `$` sign has special powers in the **Console**. Below is a list of predefine
    
    `$$('img')` is short for `document.querySelectorAll('a')`.
 
-   ![Get all images in the webpage and display the result as a table.](../media/console-dom-get-all-links.msft.png)
+   ![Get all links in the webpage and display the result as a table](../media/console-dom-get-all-links.msft.png)
 
    However, suppose you don't want to display all the information, but you want to grab it as data and then select only some of the data.
 
    The `$$('img')` shortcut helps with that: it selects the image elements and all of the properties for each of them.  But the problem is that you only want the image elements and their source, not all the properties of the image elements.
 
-   ![The $$ shortcut returns far too much information.](../media/console-dom-too-much-link-information.msft.png)
+   ![The $$ shortcut returns far too much information](../media/console-dom-too-much-link-information.msft.png)
 
    To solve that problem, the `$$` shortcut has an interesting extra feature: instead of returning a `NodeList` object like `document.querySelectorAll()` does, the `$$` shortcut returns an `Array`, which gives you access to `Array` methods like `map()`.
 
@@ -152,7 +152,7 @@ The `$` sign has special powers in the **Console**. Below is a list of predefine
 
    The above code returns an `Array` of all the images, as objects with the `src`, `width`, and `height` properties.
 
-   ![Use map on $$ to filter information down to the bare minimum.](../media/console-dom-filter-link-data.msft.png)
+   ![Use map on $$ to filter information down to the bare minimum](../media/console-dom-filter-link-data.msft.png)
 
 1. Use the `filter` method to filter the list of elements returned by `$$`.
 
@@ -164,9 +164,7 @@ The `$` sign has special powers in the **Console**. Below is a list of predefine
     });
    ```
 
-   The above code returns an `Array` of all the images that are wider than 1000 pixels.
-
-   ![Get the images that are wider than 1000px.](../media/console-dom-filter-out-empty-links.msft.png)
+   ![Get the links that aren't empty and are external](../media/console-dom-filter-out-empty-links.msft.png)
 
    By manipulating the DOM through issuing statements in the **Console**, you can change these elements in the rendered webpage.
 
@@ -176,7 +174,7 @@ The `$` sign has special powers in the **Console**. Below is a list of predefine
    $$('img:not([alt])').forEach(img => img.style.border = '5px solid red');
    ```
 
-   ![To highlight all images that do not have an alt text, add a red border around each.](../media/console-dom-highlight-links.msft.png)
+   ![To highlight all external links, add a green border around each](../media/console-dom-highlight-links.msft.png)
 
 Instead of writing complex JavaScript to filter results, use the power of CSS selectors.
 
@@ -195,7 +193,7 @@ To create a table of the `src` and `alt` information for all images on the webpa
    console.table($$('img:not([src^=data])'), ['src','alt'])
    ```
 
-   ![To programmatically select a set of elements, use a complex CSS selector.](../media/console-dom-complex-css-selector.msft.png)
+   ![To programmatically select a set of elements, use a complex CSS selector](../media/console-dom-complex-css-selector.msft.png)
 
 
 ### Example: Getting all page headings and anchor URLs
@@ -220,7 +218,7 @@ To list all of the anchor links in the demo page:
     
    The result is text that contains content for each heading followed by the full URL that points to it.
 
-   ![Getting all the headings and the generated URLs from the webpage.](../media/console-dom-get-generated-headings.msft.png)
+   ![Getting all the headings and the generated URLs from the webpage](../media/console-dom-get-generated-headings.msft.png)
 
 
 ### Clean up with clear and copy
@@ -252,7 +250,7 @@ To list all of the event listeners that are assigned to the donation form in the
    getEventListeners($('#donate'));
    ```
 
-   ![Get all events listeners for the first form in the webpage.](../media/console-dom-get-form-events.msft.png)
+   ![Get all events listeners for the first form in the webpage](../media/console-dom-get-form-events.msft.png)
 
 If you want to get a notification in the **Console** every time an event occurs on the specified element, use the `monitorEvents` utility. Define the element you want to monitor as the first parameter, and the events you want to listen to as a second parameter.  It's important for you to define the events that you want to monitor, otherwise any event happening to the element is reported.
 
@@ -264,11 +262,11 @@ To get a notification in the **Console** every time the donation form is clicked
    monitorEvents($('#donate'), 'click');
    ```
 
-1. Click in the donation form, in the webpage. For example, click the **50** donation amount, and the **Other** text field.
+   ![Console displays every scroll event that happens on the Window](../media/console-dom-monitor-events.msft.png)
 
    The click events are logged in the **Console**.
 
-   ![Console displays every click event that happens on the form.](../media/console-dom-monitor-events.msft.png)
+   ![Console displays 'keyup' events that occur on the form](../media/console-dom-monitor-key-events.msft.png)
 
 1. To stop logging, remove the monitoring you set, enter the following code into the **Console**:
 

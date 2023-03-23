@@ -28,11 +28,11 @@ To simulate the operating system's reduced motion setting, without having to cha
 
 1. Press `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS to open the **Command Menu**.
     
-   ![Opening the command menu.](../media/reduced-motion-open-command-menu.png)
+   ![Opening the command menu](../media/reduced-motion-open-command-menu.png)
 
 1. Type **reduced**, to turn the simulation on and off.  Select the **Emulate CSS prefers-reduced-motion** option, and then press `Enter`.
 
-   ![The Emulate CSS prefers-reduced-motion option in the Command menu.](../media/reduced-motion-command-menu-entry.png)
+   ![The Emulate CSS prefers-reduced-motion option in the Command menu](../media/reduced-motion-command-menu-entry.png)
 
 1. Refresh the webpage and check whether your animations run.
 

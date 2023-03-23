@@ -59,7 +59,7 @@ The following code outlines the basic information needed in your `manifest.json`
 
 Start by creating the `icons` directory in your project to store the icon image files.  The icons are used for the background image of the button that users select to launch the extension.
 
-![Icon on the toolbar to open your extension.](./media/part1-badge1.png)
+![Icon on the toolbar to open your extension](./media/part1-badge1.png)
 
 For icons:
 *  We recommend using `PNG` format, but you can also use `BMP`, `GIF`, `ICO` or `JPEG` formats.

@@ -24,10 +24,7 @@ ms.date: 05/04/2021
 
 Shipping unused JavaScript or CSS is a common problem in web development for the following reasons:
 
-*  The extra code slows down your page load.
-*  If a user accesses the page on a mobile device, the extra code uses up their cellular data.
-
-The **Coverage** tool can help you find unused JavaScript and CSS code.  Removing unused code can speed up your page load and save your mobile users cellular data.
+![Analyzing code coverage](../media/coverage-sources-resource-drawer-coverage.msft.png)
 
 Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs can be difficult.  This guide doesn't cover how to refactor a codebase to avoid unused code, because this refactoring depends on your technology stack.
 
@@ -47,7 +44,13 @@ You can also open the **Coverage** tool by click **More tools** (`+`) and select
 
 
 <!-- ====================================================================== -->
-## Record code coverage
+## Open the Coverage tool
+
+1. [Open the Command Menu](../command-menu/index.md).
+
+1. Start typing `coverage`, select the **Show Coverage** command, and then press `Enter`.  The **Coverage** tool opens in the **Drawer**.
+
+   ![The Coverage tool](../media/coverage-console-drawer-coverage-empty.msft.png)
 
 1. Navigate to the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) in a tab.
 
@@ -55,7 +58,7 @@ You can also open the **Coverage** tool by click **More tools** (`+`) and select
 
 1. Click one of the following buttons in the **Coverage** tool:
 
-   *  Click **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page.](../media/reload-icon.msft.png))<!--todo: check UI string--> if you want to see what code is needed to load the page.
+   *  Click **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page](../media/reload-icon.msft.png))<!--todo: check UI string--> if you want to see what code is needed to load the page.
 
    *  Click **Instrument Coverage** (![Instrument Coverage](../media/record-icon.msft.png)) if you want to see what code is used after interacting with the page.
 
@@ -69,7 +72,7 @@ You can also open the **Coverage** tool by click **More tools** (`+`) and select
 <!-- ====================================================================== -->
 ## Analyze code coverage
 
-The table in the **Coverage** tool displays the resources that were analyzed, and how much code is used within each resource.
+![A code coverage report](../media/coverage-sources-resource-drawer-coverage-selected.msft.png)
 
 Columns in the code coverage report:
 
@@ -93,5 +96,5 @@ Lines that contain code that was used during the recording are highlighted in bl
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/coverage/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

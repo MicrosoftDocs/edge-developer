@@ -83,11 +83,11 @@ To make sure that source maps are enabled:
 
 1. To open DevTools, in Microsoft Edge, right-click a webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-1. In DevTools, click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. In DevTools, click **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
 
 1. In the **Preferences** page, in the **Sources** section, make sure the **Enable JavaScript source maps** checkbox and the **Enable CSS source maps** checkbox are selected:
 
-   ![The Preferences page's Sources section with the 'Enable source maps' checkboxes selected.](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)
+   ![The Preferences page's Sources section with the 'Enable source maps' checkboxes selected](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)
 
 1. In the upper right of **Settings**, click the **Close** (**x**) button.
 
@@ -130,5 +130,5 @@ When loading JavaScript files and evaluating them using the `eval()` function, t
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/source-maps/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) and [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

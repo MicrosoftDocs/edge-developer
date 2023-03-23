@@ -21,6 +21,6 @@ To open the **WebAudio** tool:
 
    Data about the page is displayed:
 
-   ![The WebAudio tool.](../media/webaudio-tool.png)
+   ![The WebAudio tool](../media/webaudio-tool.png)
 
 <!-- https://webaudio.github.io/demo-list/ -->

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 10/20/2022
+ms.date: 01/03/2023
 ---
 # Build PWA-driven widgets
 
@@ -104,8 +104,8 @@ In the above example, a music player application defines a mini player widget. A
 |:--- |:--- |:--- |
 | `name` | The title of the widget, presented to users. | Yes |
 | `short_name` | An alternative short version of the name. | No |
-| `description` | A description of what the widget does. | No |
-| `icons` | An array of icons to be used for the widget. | Yes |
+| `description` | A description of what the widget does. | Yes |
+| `icons` | An array of icons to be used for the widget. If missing, the `icons` manifest member is used instead. | No |
 | `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). Note that the `platform` field of a screenshot item currently supports the `Windows` and `any` values. | Yes |
 | `tag` | A string used to reference the widget in the PWA service worker. | Yes |
 | `template` | The template to use to display the widget in the operating system widgets dashboard. Note: this property is currently only informational and not used. See `ms_ac_template` below. | No |
@@ -243,7 +243,7 @@ You can access widgets and update them from the PWA service worker code. Accessi
 * [Handling user actions on widgets](#handle-widget-actions).
 * [Updating widgets when the application changes](#update-widgets-on-application-changes).
 
-Service workers have access to the `self.widgets` object, and the `widgetclick` event which, together, constitute an API that you use to react to changes and access widgets at runtime.
+Service workers have access to the `self.widgets` object and several widget events which, together, constitute an API that you use to react to changes and access widgets at runtime.
 
 The following sections provide code examples. For a reference of the API, see the [service worker API reference](#service-worker-api-reference).
 
@@ -253,17 +253,14 @@ When a PWA is installed, the widgets that the app defines in its manifest are ad
 
 When a widget is installed, it is not automatically rendered using the `ms_ac_template` and `data` fields of the widget definition.
 
-To render the widget, listen to the `widgetclick` event in your service worker, and update the widget by using the `widgets.updateByTag` function:
+To render the widget, listen to the `widgetinstall` event in your service worker, and update the widget by using the `widgets.updateByTag` function:
 
 ```javascript
-// Listen to the widgetclick event.
-self.addEventListener("widgetclick", event => {
-  // Only listen to the "widget-install" action.
-  if (event.action === "widget-install") {
-    // The widget just got installed, render it using renderWidget.
-    // Pass the event.widget object to the function.
-    event.waitUntil(renderWidget(event.widget));
-  }
+// Listen to the widgetinstall event.
+self.addEventListener("widgetinstall", event => {
+  // The widget just got installed, render it using renderWidget.
+  // Pass the event.widget object to the function.
+  event.waitUntil(renderWidget(event.widget));
 });
 
 async function renderWidget(widget) {
@@ -311,9 +308,9 @@ async function updateWidgets() {
 
 #### Handle widget actions
 
-If the widget template contains actions, users can execute those actions by clicking buttons in the rendered widget. For information about how to define actions in a template, see [Define widget actions](#define-widget-actions).
+If the widget template contains actions, users can run those actions by clicking buttons in the rendered widget. For information about how to define actions in a template, see [Define widget actions](#define-widget-actions).
 
-When a user executes a widget action, a `widgetclick` event is triggered in the PWA service worker. To handle the user action, listen to the event:
+When a user runs a widget action, a `widgetclick` event is triggered in the PWA service worker. To handle the user action, listen to the event:
 
 ```javascript
 self.addEventListener('widgetclick', (event) => {
@@ -340,25 +337,17 @@ In previous sections, you learnt how to update widgets when specific widget even
 
 In this section, you'll learn to use the Periodic Background Sync API to update widgets periodically. For more information about the Periodic Background Sync API, see [Use the Periodic Background Sync API to regularly get fresh content](background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
 
-In the following code snippet, a listener for `widgetclick` is used to react to various lifecycle events of the application widget. When a widget installation is detected, a periodic sync is registered and when a widget removal is detected, the periodic sync is unregistered.
+In the following code snippet, an event listener is used to react to various lifecycle events of the application widget. When a widget installation is detected, a periodic sync is registered and when a widget removal is detected, the periodic sync is unregistered.
 
 When periodic sync events occur, widget instances are updated using the `widgets.updateByTag` function.
 
 ```javascript
-// Listen to the widgetclick event, to react to lifecycle
-// events of the widget.
-self.addEventListener("widgetclick", event => {
-  switch (event.action) {
-    // If a widget is being installed.
-    case "widget-install":
-      event.waitUntil(onWidgetInstall(event.widget));
-      break;
+self.addEventListener("widgetinstall", event => {
+  event.waitUntil(onWidgetInstall(event.widget));
+});
 
-    // If a widget is being uninstalled.
-    case "widget-uninstall":
-      event.waitUntil(onWidgetUninstall(event.widget));
-      break;
-  }
+self.addEventListener("widgetuninstall", event => {
+  event.waitUntil(onWidgetUninstall(event.widget));
 });
 
 async function onWidgetInstall(widget) {
@@ -441,7 +430,14 @@ The service worker global object (or [ServiceWorkerGlobalScope](https://develope
 | `updateByInstanceId(id, payload)` | Update a widget by instance ID  | The instance ID, and a [widgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`.
 | `updateByTag(tag, payload)` | Update a widget by tag | The widget tag, and a [widgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`.
 
-The service worker global object also defines the `widgetclick` event that's fired when the widget is interacted with. For more information, see the [widgetEvent object](#widgetevent-object) definition below.
+The service worker global object also defines the following events:
+
+* `widgetinstall`: fired when the widget host is installing a widget.
+* `widgetuninstall`: fired when the widget host is uninstalling a widget.
+* `widgetresume`: fired when the widget host resumes the rendering of installed widgets, which can happen after the host suspended the rendering of widgets to preserve resources.
+* `widgetclick`: fired when the user runs one of the widget actions.
+
+For more information about the objects that are provided with these events, see the [widgetEvent object](#widgetevent-object) and the [widgetClickEvent object](#widgetclickevent-object) definitions below.
 
 #### widget object
 
@@ -483,13 +479,30 @@ This object represents the original definition of the widget, found in the PWA m
 
 #### widgetEvent object
 
-This object is passed as an argument to service worker `widgetclick` event listeners when the widget is interacted with.
+This object is passed as an argument to listeners of service worker widget events of type `widgetinstall`, `widgetuninstall`, and `widgetresume`.
 
-The `widgetEvent` object has the following properties:
+For the `widgetinstall` and `widgetuninstall` event types, the `widgetEvent` object has the following properties:
 
 | Property | Description | Type |
 |:--- |:--- |:--- |
 | `widget` | The widget instance that triggered the event. | [widgetInstance](#widgetinstance-object) |
-| `action` | The action that triggered the event. One of `widget-install`, `widget-uninstall`, `widget-resume`, or a custom action defined in a `actions.verb` field of the widget template. See [Define widget actions](#define-widget-actions). | `String` |
+| `instanceId` | The widget instance ID. | `String` |
+
+For the `widgetresume` event type, the `widgetEvent` object has the following property:
+
+| Property | Description | Type |
+|:--- |:--- |:--- |
+| `hostId` | The widget host ID. | `String` |
+
+#### widgetClickEvent object
+
+This object is passed as an argument to listeners of service worker widget events of type `widgetclick`.
+
+The `widgetClickEvent` object has the following properties:
+
+| Property | Description | Type |
+|:--- |:--- |:--- |
+| `action` | The action that triggered the event, as defined in the `actions.verb` fields of the widget template. See [Define widget actions](#define-widget-actions). | `String` |
+| `widget` | The widget instance that triggered the event. | [widgetInstance](#widgetinstance-object) |
 | `hostId` | The widget host ID. | `String` |
 | `instanceId` | The widget instance ID. | `String` |

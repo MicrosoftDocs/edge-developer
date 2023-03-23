@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/24/2022
+ms.date: 01/02/2023
 ---
 # Run commands via keyboard with Command Palette
 
@@ -13,7 +13,7 @@ Use Command Palette to quickly access various Microsoft Edge browser commands an
 
 Using Command Palette, you can directly access productivity and developer features that normally require clicking through several menus or using a series of keyboard shortcuts.
 
-![A Microsoft Edge window showing the Command Palette input box in the center](./media/command-palette.png)
+![A Microsoft Edge window showing the Command Palette input box in the center](./edge-command-palette-images/command-palette.png)
 
 
 <!-- ====================================================================== -->
@@ -29,9 +29,8 @@ By default, Command Palette isn't enabled. To enable the Command Palette experim
 
 1. Click the **Restart** button which appears in the lower right:
 
-   ![Enabling the Command Palette flag in the edge://flags page](./media/command-palette-flag.png)
+   ![Enabling the Command Palette flag in the edge://flags page](./edge-command-palette-images/command-palette-flag.png)
 
-The flags page for Microsoft Edge 107 or later shows the shortcut `Ctrl+Q`.
 
 <!-- ====================================================================== -->
 ## Open Command Palette
@@ -47,7 +46,7 @@ To open Command Palette:
    * Type **bookmark** to display commands about bookmarks (shown below).
    * Press `>` to list the available DevTools commands.
 
-   ![Command Palette with the word "bookmark" typed in, and a list of related commands](./media/command-palette-bookmark.png)
+   ![Command Palette with the word "bookmark" typed in, and a list of related commands](./edge-command-palette-images/command-palette-bookmark.png)
 
 1. Press `Down Arrow` or `Up Arrow` to select a command, or use the mouse wheel, and then press `Enter`.
 
@@ -71,7 +70,7 @@ To open the DevTools Device Emulation tool by using Command Palette:
 <!-- ====================================================================== -->
 ## Create and access snippets
 
-The DevTools [**Snippets**](../javascript/snippets.md) tool allows you to save JavaScript code and execute it on any webpage. If you run the same code repeatedly on webpages, create a snippet for that code, and then use Command Palette to quickly access your code snippet.
+The DevTools [**Snippets**](../javascript/snippets.md) tool allows you to save JavaScript code and run it on any webpage. If you run the same code repeatedly on webpages, create a snippet for that code, and then use Command Palette to quickly access your code snippet.
 
 To open the DevTools **Snippets** tab by using Command Palette:
 

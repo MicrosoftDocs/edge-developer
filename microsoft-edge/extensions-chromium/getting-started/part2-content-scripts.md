@@ -58,7 +58,7 @@ Below is a sample updated HTML file:
 
 After updating and opening the extension, a pop-up opens with a display button.
 
-![popup.html display after selecting the Extension icon.](./media/part2-popupdialog.png)
+![popup.html display after selecting the Extension icon](./media/part2-popupdialog.png)
 
 <!--![popup.html display after selecting the Extension icon] -->
 
@@ -312,10 +312,10 @@ When an event is processed by the listener, the function that is the first param
 
 Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows:
 
-![popup.html display after selecting the Extension icon.](./media/part2-popupdialog.png)
+![popup.html display after selecting the Extension icon](./media/part2-popupdialog.png)
 
 When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses<!--todo: check "tab pages collapses"--> back to what was originally displayed:
 
-![The image showing in browser.](./media/part2-showingimage.png)
+![The image showing in browser](./media/part2-showingimage.png)
 
 Congratulations!  You've created an Extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars `.jpeg` file.

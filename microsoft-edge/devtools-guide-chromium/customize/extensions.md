@@ -9,7 +9,7 @@ ms.date: 09/30/2022
 ---
 # Add custom UI to DevTools using extensions
 
-In addition to the tools available in Microsoft Edge DevTools you can add new tools by installing Microsoft EDge extensions, or build your own extensions for your specific use cases.
+In addition to the tools available in Microsoft Edge DevTools you can add new tools by installing Microsoft Edge extensions, or build your own extensions for your specific use cases.
 
 Microsoft Edge extensions can insert new tabs in the main toolbar of DevTools.
 
@@ -33,7 +33,7 @@ To install a DevTools extension:
 
 1. Open a new tab and go to a page that uses React. For example, use the [TodoMVC React example page](https://todomvc.com/examples/react/#/).
 
-1. Open DevTools by pressing `F12`. Two new tabs are displayed in the main toolbar: **Components** and **Profiler**. If you don't see the new tabs, make the DevTools window wider, or click **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)).
+1. Open DevTools by pressing `F12`. Two new tabs are displayed in the main toolbar: **Components** and **Profiler**. If you don't see the new tabs, make the DevTools window wider, or click **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)).
 
     ![DevTools, showing the 2 new React extension panels](extensions-images/react-extensions-panels.png)
 

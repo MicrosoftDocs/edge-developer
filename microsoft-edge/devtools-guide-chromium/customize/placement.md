@@ -13,18 +13,11 @@ You can change where DevTools is docked in the browser.  By default, Microsoft E
 
 To change where DevTools is placed within the browser window:
 
-*  Click the **Customize and control DevTools** (![Customize and control DevTools icon](../media/customize-devtools-icon-light-theme.png)) menu button, and then in the **Dock location** section, select a layout option:
-   *  **Pop out window** (![The 'Pop out window' icon](../media/pop-out-window-icon.png))
-   *  **Left side** (![The 'Left side' icon](../media/left-side-icon.png))
-   *  **Bottom** (![The 'Bottom' icon](../media/bottom-icon.png))
-   *  **Right side** (![The 'Right side' icon](../media/right-side-icon.png))
-
-   <!--
+*  Click the **Customize and control DevTools** (![Customize and control DevTools icon](../media/customize-devtools-icon-light-theme.png)) menu button, and then in the **Dock side** section, select a layout option:
    *  **Undock into separate window** (![The 'Undock into separate window' icon](../media/undock-into-separate-window-icon.png))
    *  **Dock to left** (![The 'Dock to left' icon](../media/dock-to-left-icon.png))
    *  **Dock to bottom** (![The 'Dock to bottom' icon](../media/dock-to-bottom-icon.png))
-   *  **Dock to right** (![The 'Dock to right' icon](../media/dock-to-right-icon.png)) -->
-
+   *  **Dock to right** (![The 'Dock to right' icon](../media/dock-to-right-icon.png))
 
 ![the Dock side menu in DevTools](../media/devtools-intro-docking-menu.msft.png)
 

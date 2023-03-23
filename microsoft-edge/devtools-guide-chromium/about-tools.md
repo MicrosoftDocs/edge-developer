@@ -17,11 +17,11 @@ DevTools provides 35 tools:
 
 The default tools, including activity bar icons, activity bar tabs, and tools on the **More tabs** (![More tabs icon.](media/more-tools-icon-light-theme.png)) menu:
 
-![All of the default tools of DevTools, including 2 toolbar icons and 11 toolbar tabs on the toolbar or More tabs menu.](media/all-default-tools.png)
+![All of the default tools of DevTools, including 2 toolbar icons and 11 toolbar tabs on the toolbar or More tabs menu](media/all-default-tools.png)
 
-The optional tools that aren't open by default, on the **More Tools** (![More Tools icon.](media/more-tools-icon-light-theme.png)) menu:
+The optional tools that aren't open by default, on the **More Tools** (![More Tools icon](media/more-tools-icon-light-theme.png)) menu:
 
-![All of the optional tools of DevTools, on the More Tools menu, with 22 optional tools.](media/all-optional-tools.png)
+![All of the optional tools of DevTools, on the More Tools menu, with 22 optional tools](media/all-optional-tools.png)
 
 The following features are additional ways to access the tools:
 *  The **Drawer** is an additional toolbar and area to hold tool tabs.
@@ -82,7 +82,7 @@ https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-
 
 The **More Tools** (**+**) menu on the main toolbar and on the Drawer toolbar is dynamic: it omits any tab tools that are open on that toolbar.
 
-The **More tools** menu in the **Customize and control DevTools** (![Customize icon.](media/customize-devtools-icon-light-theme.png)) menu is static: it always lists all of the optional tools.  The selected tool opens in the main toolbar if it's a Panel tool, or on the Drawer if it's a Drawer tool.  You can right-click the tool's tab to move it to the other toolbar.
+The **More tools** menu in the **Customize and control DevTools** (![Customize icon](media/customize-devtools-icon-light-theme.png)) menu is static: it always lists all of the optional tools.  The selected tool opens in the main toolbar if it's a Panel tool, or on the Drawer if it's a Drawer tool.  You can right-click the tool's tab to move it to the other toolbar.
 
 
 <!-- ====================================================================== -->
@@ -96,11 +96,11 @@ In the **Command Menu**:
 
 The **Command Menu** first lists the Panel tools, and then the Drawer tools:
 
-![The Command Menu, showing the Panel tools grouped together, and then the Drawer tools.](media/command-menu-panel-vs-drawer-tools.png)
+![The Command Menu, showing the Panel tools grouped together, and then the Drawer tools](media/command-menu-panel-vs-drawer-tools.png)
 
 To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom** or **Move to top**.
 
-To open the **Command Menu**, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Or, click the **Customize and control DevTools** (![Customize icon.](media/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
+To open the **Command Menu**, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Or, click the **Customize and control DevTools** (![Customize icon](media/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
 
 
 <!-- ====================================================================== -->
@@ -127,7 +127,7 @@ To close all of the optional tabs at once:
 
 To restore all of the default tabs on the main toolbar:
 
-1. In DevTools, select **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. In DevTools, select **Settings** (![Settings icon](media/settings-gear-icon-light-theme.png)) > **Preferences**.
 
 1. Click the **Restore defaults and refresh** button.
 

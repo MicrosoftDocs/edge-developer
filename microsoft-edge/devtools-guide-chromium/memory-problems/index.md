@@ -63,11 +63,11 @@ Use the Microsoft Edge Browser Task Manager as a starting point to your memory i
 
 1. Press `Shift`+`Esc` or go to the Microsoft Edge main menu and select **More tools** > **Browser Task Manager** to open the Microsoft Edge Browser Task Manager.
 
-   ![Opening the Microsoft Edge Browser Task Manager.](../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png)
+   ![Opening the Microsoft Edge Browser Task Manager](../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png)
 
 1. Right-click the table header of the Microsoft Edge Browser Task Manager, and then enable **JavaScript memory**.
 
-   ![Enabling JavaScript memory.](../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png)
+   ![Enabling JavaScript memory](../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png)
 
 These two columns tell you different things about how your page is using memory:
 
@@ -91,7 +91,7 @@ You can also use the Performance panel as another starting point in your investi
 
 ![The Performance tool default screen, with the record button and the Memory checkbox](images/make-a-recording-with-memory-option.png)
 
-It's a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, click the **collect garbage** ![force garbage collection.](../media/collect-garbage-icon.msft.png) button while recording.
+It's a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, click the **collect garbage** ![force garbage collection](../media/collect-garbage-icon.msft.png) button while recording.
 
 To demonstrate memory recordings, consider the following code:
 
@@ -108,9 +108,13 @@ document.getElementById('grow').addEventListener('click', grow);
 
 Every time that the button referenced in the code is clicked, 10,000 `div` nodes are appended to the document body, and a string of 1,000,000 `x` characters is pushed onto the `x` array.  Running the previous code sample produces a recording in the **Performance** panel like the following figure:
 
-![Simple growth.](../media/memory-problems-glitch-example-1-performance-memory.msft.png)
+![Simple growth](../media/memory-problems-glitch-example-1-performance-memory.msft.png)
 
-The **HEAP** graph in the **Overview** pane (below **NET**) represents the JS heap.
+First, an explanation of the user interface.  The **HEAP** graph in the **Overview** pane (below **NET**) represents the JS heap.  Below the **Overview** pane is the **Counter** pane.  The memory usage is broken down by JS heap (same as **HEAP** graph in the **Overview** pane), documents, DOM nodes, listeners, and GPU memory.  Clear a checkbox to hide it from the graph.
+
+Now, an analysis of the code compared with the previous figure.  If you review the node counter (the green graph), it matches up cleanly with the code.  The node count increases in discrete steps.  You can presume that each increase in the node count is a call to `grow()`.
+
+The JS heap graph (the blue graph) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection (click the  **collect garbage** ![force garbage collection](../media/collect-garbage-icon.msft.png) button).
 
 As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected: the JavaScript code is creating the DOM nodes on every button you click, and is doing a lot of work when it creates the string of one million characters.
 
@@ -152,7 +156,7 @@ To create a snapshot:
 
 1. Click the **Heap snapshot** radio button, and then click the **Take snapshot** button at the bottom of the panel.
 
-   ![Taking a heap snapshot.](../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png)
+   ![Taking a heap snapshot](../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png)
 
    The snapshot may take some time to process and load.
 
@@ -160,11 +164,11 @@ To create a snapshot:
 
 1. In the **Class filter** text box, type `Detached`, to search for detached DOM trees:
 
-   ![Filtering for detached nodes.](../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png)
+   ![Filtering for detached nodes](../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png)
 
 1. Expand the carets to investigate a detached tree:
 
-   ![Investigating the detached tree.](../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png)
+   ![Investigating the detached tree](../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png)
 
    <!--
    Nodes that are highlighted yellow have direct references to them from the JavaScript code.  Nodes that are highlighted in red don't have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node isn't alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.
@@ -176,7 +180,7 @@ To create a snapshot:
 
 1. To fix the particular memory leak, study the code that uses the `detachedTree` variable and make sure that the reference to the node is removed when it is no longer needed.
 
-![Investigating a node.](../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png)
+![Investigating a node](../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png)
 
 <!--todo: the allocation timeline doesn't appear in the DevTools in Edge  -->
 
@@ -208,23 +212,23 @@ To record an Allocation instrumentation on timeline:
 
 1. Perform the action that you suspect is causing the memory leak.
 
-1. When you are done, click the **Stop recording heap profile** ![stop recording.](../media/stop-recording-icon.msft.png) button.
+1. When you are done, click the **Stop recording heap profile** ![stop recording](../media/stop-recording-icon.msft.png) button.
 
 1. As you are recording, notice whether any blue bars show up on the Allocation instrumentation on the timeline, like in the following figure:
 
-   ![New allocations.](../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png)
+   ![New allocations](../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png)
 
    Those blue bars represent new memory allocations.  Those new memory allocations are your candidates for memory leaks.
 
 1. Zoom on a bar to filter the **Constructor** pane to only show objects that were allocated during the specified timeframe.
 
-   ![Zoomed allocation timeline.](../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png)
+   ![Zoomed allocation timeline](../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png)
 
 1. Expand the object and select the value to view more details in the **Object** pane.
 
    For example, in the following figure, in the details of the newly allocated object indicates that it was allocated to the `x` variable in the `Window` scope:
 
-![Object details.](../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png)
+![Object details](../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -232,7 +236,7 @@ To record an Allocation instrumentation on timeline:
 
 Use the **Allocation sampling** profiling type to view memory allocation by JavaScript function.
 
-![Record Allocation sampling.](../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png)
+![Record Allocation sampling](../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png)
 
 1. Click the **Allocation sampling** radio button.
 
@@ -246,8 +250,35 @@ Use the **Allocation sampling** profiling type to view memory allocation by Java
 
 DevTools shows you a breakdown of memory allocation by function.  The default view is **Heavy (Bottom Up)**, which displays the functions that allocated the most memory at the top.
 
-![Allocation sampling.](../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png)
+![Allocation sampling](../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png)
 
+
+<!-- ====================================================================== -->
+## Reduce garbage with additional settings for allocation sampling
+
+By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are created, removed, and then garbage collected (GC'd) aren't displayed in the **Memory** tool when profiling using the **Allocation sampling** or **Allocation instrumentation on timeline** types.
+
+You can trust the browser to clean up garbage from your code.  However, it is important to consider that GC itself is an expensive operation and multiple GCs can slow down your user's experience of your website or app.  When recording in the **Performance** tool with the **Memory** checkbox turned on, you can see the GC operation happen at the steep cliffs (sudden decreases) in the heap chart.
+
+![GC operation shown in the Performance tool](../media/memory-problems-gc-in-performance.png)
+
+By reducing the amount of garbage your code is creating, you can reduce the cost of each individual GC and the number of GC operations.  To track objects that are discarded by GC, configure the **Allocation sampling** profiling type with settings.
+
+1. Click the **Allocation sampling** option button.
+
+1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
+
+   ![Allocation sampling GC settings](../media/memory-problems-memory-allocation-sampling-gc-settings.png)
+
+1. Click the **Start** button.
+
+1. On the webpage, perform actions that you want to investigate.
+
+1. Click the **Stop** button when you have finished all of your actions.
+
+DevTools now tracks all of the objects that were GC'd during the recording.  Use these settings to understand how much garbage your website or app is generating.  The data reported by **Allocation sampling** will help you identify the functions that are generating the most garbage.  
+
+If you are investigating objects that were only GC'd during specific major or minor GC operations, configure the settings appropriately to track the operation you care about. To learn more about the differences between major and minor GC, see [Trash talk: the Orinoco garbage collector | V8 JavaScript engine developer blog](https://v8.dev/blog/trash-talk).
 
 <!-- ====================================================================== -->
 ## Spot frequent garbage collections
@@ -268,7 +299,7 @@ After you have identified the problem, you can use an **Allocation instrumentati
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/memory-problems/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
 <!-- [recording](/profile/evaluate-performance/timeline-tool#make-a-recording) -->
