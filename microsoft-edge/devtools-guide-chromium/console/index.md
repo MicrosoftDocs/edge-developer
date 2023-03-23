@@ -27,7 +27,7 @@ The **Console** is shown here in the lower part of DevTools (the **Drawer**), wi
 
 ![The Console in the lower panel with the Elements tool open above it](../media/console-intro-console-panel.msft.png)
 
-The fastest way to directly open the **Console** is to press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+The fastest way to directly open the **Console** is to press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
 
 <!-- ====================================================================== -->
@@ -108,22 +108,22 @@ To log information to display in the Console:
 
 1. Open the demo webpage [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/Demos/devtools-console/logging-demo.html) in a new window or tab.
 
-1. To open the **Console**, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. To open the **Console**, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
    The **Console** displays the resulting messages that are caused by the demo code:
 
    ![Console full of messages caused by demo code](../media/console-intro-logging.msft.png)
 
-1. Paste the above code into the **Console**, and then press `Enter`.
+1. Paste the above code into the **Console**, and then press **Enter**.
 
 
    If you get a message: `Uncaught SyntaxError: Identifier 'technologies' has already been declared`:
 
 1. Open a new tab or window.
 
-1. To open the **Console**, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. To open the **Console**, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-1. Paste the above code into the **Console**, and then press `Enter`.
+1. Paste the above code into the **Console**, and then press **Enter**.
 
 Many useful methods are available when you work with the **Console**.  For more information, see [Log messages in the Console tool](console-log.md).
 
@@ -145,24 +145,24 @@ The **Console** displays the result of `2+2` live as you type it, displaying the
 
 This **Eager evaluation** feature is useful to debug and verify that you aren't making mistakes in your code.
 
-To run the JavaScript expression in the **Console** and optionally display a result, press `Enter`.  Then, you can write the next JavaScript code to run in the **Console**.
+To run the JavaScript expression in the **Console** and optionally display a result, press **Enter**.  Then, you can write the next JavaScript code to run in the **Console**.
 
 Running several lines of JavaScript code in succession:
 
 ![Run several lines of JavaScript code in succession](../media/console-javascript-several-expressions.msft.png)
 
-By default, you run JavaScript code on a single line.  To run a line, type your JavaScript and then press `Enter`.  To work around the single-line limitation, press `Shift`+`Enter` instead of `Enter`.
+By default, you run JavaScript code on a single line.  To run a line, type your JavaScript and then press **Enter**.  To work around the single-line limitation, press **Shift+Enter** instead of **Enter**.
 
-Similar to other command-line experiences, to access your previous JavaScript commands, press `Arrow-Up`.  The autocompletion feature of the **Console** is a great way to learn about unfamiliar methods.
+Similar to other command-line experiences, to access your previous JavaScript commands, press **Up Arrow**.  The autocompletion feature of the **Console** is a great way to learn about unfamiliar methods.
 
 To try autocompletion:
 
 1. Open the **Console**.
 1. Type `doc`.
 1. Select `document` from the dropdown menu.
-1. Press `Tab` to select `document`.
+1. Press **Tab** to select `document`.
 1. Type `.bo`.
-1. Press `Tab` to select `document.body`.
+1. Press **Tab** to select `document.body`.
 1. Type another `.` to display the complete list of properties and methods available on the body of the current webpage.
 
 For more information about all the ways to work with **Console**, see [Console as a JavaScript environment](console-javascript.md).
@@ -184,7 +184,7 @@ To use a JavaScript expression to read from the current page by reading a select
 
 1. Open the **Console**.
 
-1. Paste the following code into the **Console**, and then press `Enter`:
+1. Paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    document.querySelector('h1').innerHTML

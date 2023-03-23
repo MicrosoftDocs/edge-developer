@@ -17,9 +17,9 @@ The **Console** tool is a great way to interact with the webpage in the browser.
 
 To reference the header of the webpage:
 
-1. Open the DevTools **Console**.  To do this from a webpage, you can press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. Open the DevTools **Console**.  To do this from a webpage, you can press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-1. Type or paste the following code into the **Console**, and then press `Enter`:
+1. Type or paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    document.querySelector('header')
@@ -27,7 +27,7 @@ To reference the header of the webpage:
 
    ![To get a reference to the header in console, use 'document.querySelector'](../media/console-dom-get-reference.msft.png)
 
-1. In the **Console**, hover over the resulting HTML `<header>` element, or press `Shift`+`Tab`.  In the rendered webpage, DevTools highlights the header:
+1. In the **Console**, hover over the resulting HTML `<header>` element, or press **Shift+Tab**.  In the rendered webpage, DevTools highlights the header:
 
    ![DevTools highlights the section you select in the Console](../media/console-dom-highlight-element.msft.png)
 
@@ -37,7 +37,7 @@ To reference the header of the webpage:
 
 You can manipulate the webpage from the **Console**, as follows.  In this example, you set a value in the DOM by using the Console, to affect the webpage styling: you add a green border around the header.
 
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the present webpage.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The Console opens in DevTools, next to the present webpage.
 
 1. Paste the following code into the **Console**:
 
@@ -86,7 +86,7 @@ To get a direct reference to the element that you want to manipulate:
    document.querySelector("#headerAreaHolder > header > div:nth-child(1) > div.nav-bar-item.is-hidden-tablet > div > button > span").textContent = "My Playground"
    ``` -->
 
-1. In the **Console**, paste the JavaScript path that you copied, but don't press `Enter` yet.
+1. In the **Console**, paste the JavaScript path that you copied, but don't press **Enter** yet.
 
 1. Change the text of the link to `My Playground`.  To do that, add `.textContent = "My Playground"` to the JavaScript path that you previously pasted:
 
@@ -105,7 +105,7 @@ Many convenience methods and shortcuts are available to you as [Console Utilitie
 
 The `$` has special powers in **Console**, and you may remember that from jQuery.
 
-*  `$_` stores the result of the last command.  So, if you type `2+2` and press `Enter`, and then type `$_`, the **Console** displays `4`.
+*  `$_` stores the result of the last command.  So, if you type `2+2` and press **Enter**, and then type `$_`, the **Console** displays `4`.
 
 *  `$0` to `$4` is a stack of the last inspected elements.  `$0` is always the newest one.  So in the earlier example, you just select the element in the **Inspect** tool and type `$0.textContent = "My Playground"` to get the same effect.
 
