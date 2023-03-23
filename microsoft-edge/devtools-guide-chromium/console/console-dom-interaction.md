@@ -181,7 +181,7 @@ To create a table of the `src` and `alt` information for all images on the webpa
 
 1. Open the **Console**.
 
-1. Paste the following code into the **Console**, and then press `Enter`:
+1. Paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    console.table($$('img:not([src^=data])'), ['src','alt'])

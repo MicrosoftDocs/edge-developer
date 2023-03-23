@@ -67,7 +67,7 @@ Then hover over each outlined region of DevTools:
 
 ![DevTools Tooltips mode](../../media/2021/04/tooltips.png)
 
-To turn off Tooltips, press `Esc`.
+To turn off Tooltips, press **Esc**.
 
 Update: This feature has been released and is no longer experimental.<!-- valid. -->
 
@@ -154,9 +154,9 @@ For more information about the collaboration on this feature in the Chromium ope
 ## Use the keyboard to navigate to CSS variables
 
 <!--  Title: Navigate to CSS variables with the arrow keys  -->
-<!--  Subtitle: In the Styles pane, use the arrow keys to select CSS variables.  Press `Enter` to see the variable definition.  -->
+<!--  Subtitle: In the Styles pane, use the arrow keys to select CSS variables.  Press **Enter** to see the variable definition.  -->
 
-Starting in [Microsoft Edge version 88](../../2020/11/devtools.md#css-variable-definitions-in-styles-pane), the **Styles** pane displays CSS variables and provides a link directly to the definition of each variable.  In Microsoft Edge version 91 or later, you can use the arrow keys to easily navigate to CSS variables.  To open the definition in the **Styles** pane, hover on a variable, and then press `Enter`:
+Starting in [Microsoft Edge version 88](../../2020/11/devtools.md#css-variable-definitions-in-styles-pane), the **Styles** pane displays CSS variables and provides a link directly to the definition of each variable.  In Microsoft Edge version 91 or later, you can use the arrow keys to easily navigate to CSS variables.  To open the definition in the **Styles** pane, hover on a variable, and then press **Enter**:
 
 ![The '--theme-body-background' CSS variable highlighted in the Styles pane](../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png)
 

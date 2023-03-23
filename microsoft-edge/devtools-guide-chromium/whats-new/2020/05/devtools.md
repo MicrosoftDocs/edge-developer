@@ -36,7 +36,7 @@ Microsoft Edge DevTools is now displayed in high-contrast mode when Windows is i
 
 ![The Microsoft Edge DevTools in high-contrast mode](../../media/2020/05/high-contrast.msft.png)
 
-[Follow the instructions to turn on high-contrast mode in Windows](https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off).  To open DevTools in Microsoft Edge, select `F12` or `Ctrl`+`Shift`+`I`.  DevTools is displayed in high-contrast mode.
+[Follow the instructions to turn on high-contrast mode in Windows](https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off).  To open DevTools in Microsoft Edge, select **F12** or `Ctrl`+`Shift`+`I`.  DevTools is displayed in high-contrast mode.
 
 Note: DevTools currently supports high-contrast mode on Windows, but not on macOS.
 
@@ -68,7 +68,7 @@ To try the experiment:
 
 The keyboard shortcuts in DevTools now match the shortcuts for equivalent actions in Visual Studio Code.
 
-For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) is `F5`.  With the **DevTools (Default)** preset, that same shortcut in DevTools is `F8`, but with the **Visual Studio Code** preset, that shortcut is now also `F5`.
+For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) is **F5**.  With the **DevTools (Default)** preset, that same shortcut in DevTools is `F8`, but with the **Visual Studio Code** preset, that shortcut is now also **F5**.
 
 The feature is currently available in Microsoft Edge 84 as an experiment, so please share your [feedback](../../../contact.md) with the team!
 
@@ -113,7 +113,7 @@ Chromium issue [#1076112](https://crbug.com/1076112)
 
 When remote debugging an [Android device](../../../remote-debugging/index.md), a [Windows 10 or later device](../../../remote-debugging/windows.md), or a [Surface Duo emulator](../../../remote-debugging/surface-duo-emulator.md), you can toggle screencasting with the ![Toggle Screencast](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of DevTools.  With screencasting enabled, you can navigate the tab in Microsoft Edge on the remote device from the DevTools window.
 
-In Microsoft Edge 84, these navigation buttons are now also keyboard-accessible.  For example, pressing `Shift`+`Tab` from the screencasted URL bar puts focus on the **Refresh** button:
+In Microsoft Edge 84, these navigation buttons are now also keyboard-accessible.  For example, pressing **Shift+Tab** from the screencasted URL bar puts focus on the **Refresh** button:
 
 ![Pressing Shift+Tab from the screencasted URL bar puts focus on the Refresh button](../../media/2020/05/screencasting-nav.msft.png)
 

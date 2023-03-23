@@ -119,7 +119,7 @@ This article shows steps and screenshots for Visual Studio 2022 Community Editio
 
    Installation can take several minutes.  Visual Studio appears, with an empty **Solution Explorer**.
 
-1. Press `Alt`+`Tab` to switch to the **Visual Studio Installer** window, and then close the **Visual Studio Installer** window.
+1. Press `Alt`+**Tab** to switch to the **Visual Studio Installer** window, and then close the **Visual Studio Installer** window.
 
 
 <!-- ====================================================================== -->
@@ -166,7 +166,7 @@ This article shows steps and screenshots for Visual Studio 2022 Community Editio
 
 Before adding WebView2 code, confirm that the project works and see what the empty app looks like, as follows:
 
-1. Build and run the empty project.  To do this, select **Debug** > **Start Debugging** (`F5`).  The app's window opens, temporarily displays a grid, and then displays the app's content:
+1. Build and run the empty project.  To do this, select **Debug** > **Start Debugging** (**F5**).  The app's window opens, temporarily displays a grid, and then displays the app's content:
 
    ![The empty project before adding WebView2 code](winui2-images/initial-empty-project-running.png)
 
@@ -258,7 +258,7 @@ Now you are ready to add WebView2 code to the project.  First, add a namespace r
 <!-- ====================================================================== -->
 ## Step 7 - Build and run the project containing the WebView2 control
 
-1. Click **Debug** > **Start Debugging** (`F5`).  The app window opens, briefly showing the WebView2 WebUI grid:
+1. Click **Debug** > **Start Debugging** (**F5**).  The app window opens, briefly showing the WebView2 WebUI grid:
 
    ![During debugging, the WebView2 WebUI grid briefly appears](media/winui2-getting-started-webview2-grid.png)
 

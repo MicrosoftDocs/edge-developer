@@ -192,11 +192,11 @@ For detailed walkthrough steps, see [Use the Inspect tool to hover over the webp
 
 Not all people use pointer or touch devices, and some people may have low vision. To cater for these scenarios, ensure that UIs work with keyboards.
 
-You can test using a keyboard to navigate the page, by using `Tab` or `Shift+Tab` to jump from element to element.  If you press `Tab` on the demo page, the first thing that receives focus is the **Search** form in the page header.  Pressing `Enter` even allows you to submit the form, so that works, despite the label issue we discovered earlier when using the **Issues** tool.
+You can test using a keyboard to navigate the page, by using **Tab** or `Shift+Tab` to jump from element to element.  If you press **Tab** on the demo page, the first thing that receives focus is the **Search** form in the page header.  Pressing **Enter** even allows you to submit the form, so that works, despite the label issue we discovered earlier when using the **Issues** tool.
 
 For detailed walkthrough steps, see [Check for keyboard support by using the Tab and Enter keys](test-tab-enter-keys.md).
 
-When you press `Tab` instead of `Enter`, the next element that gets focus is the first **More** link in the content section of the page, as indicated by an outline:
+When you press **Tab** instead of **Enter**, the next element that gets focus is the first **More** link in the content section of the page, as indicated by an outline:
 
 ![Navigating the page by using the Tab key.  Focus is shown on a More link in the page](../media/a11y-testing-keyboard-focus-on-element.msft.png)
 
@@ -206,19 +206,19 @@ If you look to the bottom left of the screen or if you use a screen reader, you 
 
 ![Lack of focus styling makes it impossible to know where you are in page.  The only hint is the link target in bottom left](../media/a11y-testing-lack-of-focus-style.msft.png)
 
-Pressing `Tab` again takes you to the input text box of the donation form.  However, you can't reach the **50**, **100** or **200** buttons above the input text box.  Also, when focus is on that input text box, pressing `Enter` doesn't submit the form:
+Pressing **Tab** again takes you to the input text box of the donation form.  However, you can't reach the **50**, **100** or **200** buttons above the input text box.  Also, when focus is on that input text box, pressing **Enter** doesn't submit the form:
 
 ![The only keyboard-accessible element in the donation form is the entry text field](../media/a11y-testing-form-field-with-outline.msft.png)
 
-Pressing `Tab` again puts focus on the top navigation bar, where you can press `Enter` to go to a different section of the page or a different page of the site.  You know which element you are on, because there's a focus outline.  To click a link in the top navigation bar, use `Tab` or `Shift+Tab` to put focus on a link, and then press `Enter`:
+Pressing **Tab** again puts focus on the top navigation bar, where you can press **Enter** to go to a different section of the page or a different page of the site.  You know which element you are on, because there's a focus outline.  To click a link in the top navigation bar, use **Tab** or `Shift+Tab` to put focus on a link, and then press **Enter**:
 
 ![The top navigation bar has a highlight and a focus outline, and thus is keyboard-accessible](../media/a11y-testing-menu-with-outline.msft.png)
 
 We found some issues here to fix:
 
-* The sidebar navigation menu doesn't show users where the `Tab` focus is, when using keyboards to move around on the page.
+* The sidebar navigation menu doesn't show users where the **Tab** focus is, when using keyboards to move around on the page.
 * On the donation form, the **50, 100, ** and **200** buttons and form submit functionality doesn't work when using the keyboard.
-* The keyboard tab order is incorrect. The `Tab` key navigates through all the **More** links on the page before the sidebar navigation menu.  This `Tab` order isn't helpful because the sidebar navigation is intended to take you to the different sections of that page.
+* The keyboard tab order is incorrect. The **Tab** key navigates through all the **More** links on the page before the sidebar navigation menu.  This **Tab** order isn't helpful because the sidebar navigation is intended to take you to the different sections of that page.
 
 Let's analyze these problems using DevTools.
 
@@ -301,7 +301,7 @@ For detailed walkthrough steps, see [Check the Accessibility Tree for keyboard a
 
 Another issue is the unclear tab order on the page.  Keyboard users reach the sidebar navigation menu only after tabbing through all the **More** links throughout the entire page.  In this example, the sidebar navigation menu is intended to be a shortcut to different sections of that page.  This tab order leads to a poor user experience.
 
-The reason for the confusing `Tab` order is that it is determined by the source order of the document.  The tab order can also be modified by using the `tabindex` attribute on an element which takes that element out of the default source order.
+The reason for the confusing **Tab** order is that it is determined by the source order of the document.  The tab order can also be modified by using the `tabindex` attribute on an element which takes that element out of the default source order.
 
 In the source code of the document, the sidebar navigation menu appears after the main content of the page.  The sidebar navigation menu appears above the main content of the page only because the sidebar navigation menu has been positioned using CSS.
 

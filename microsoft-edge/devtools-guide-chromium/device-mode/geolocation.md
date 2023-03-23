@@ -32,7 +32,7 @@ If you are building a UI that changes depending on where the user is located, yo
 
    ![The Command Menu](../media/device-mode-console-command-menu.msft.png)
 
-1. Type `sensors`, select **Drawer: Show Sensors**, and then press `Enter`.  The **Sensors** tool opens at the bottom of the DevTools window.
+1. Type `sensors`, select **Drawer: Show Sensors**, and then press **Enter**.  The **Sensors** tool opens at the bottom of the DevTools window.
 
 1. Click the **Location** dropdown list, and then:
    *  Select a city, such as `Tokyo`.

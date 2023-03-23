@@ -279,7 +279,7 @@ See also:
 
 ###### Use Duplicate elements to copy elements
 
-Use the new **Duplicate element** shortcut to clone an element.  In the **Elements** tool, right-click an element, and then select **Duplicate element**.  A new element is created under the selected element.  To duplicate the element by using the keyboard, press `Shift`+`Alt`+`Down Arrow` (Windows, Linux) or `Shift`+`Option`+`Down Arrow` (macOS).
+Use the new **Duplicate element** shortcut to clone an element.  In the **Elements** tool, right-click an element, and then select **Duplicate element**.  A new element is created under the selected element.  To duplicate the element by using the keyboard, press `Shift`+`Alt`+**Down Arrow** (Windows, Linux) or `Shift`+`Option`+**Down Arrow** (macOS).
 
 ![The Duplicate element is highlighted in the context menu on an element in the Elements tool](../../media/2021/01/elements-duplicate-element.msft.png)
 

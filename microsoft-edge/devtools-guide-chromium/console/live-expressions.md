@@ -22,7 +22,7 @@ To add a live expression:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. In DevTools, open the **Console**.
 
@@ -34,7 +34,7 @@ To add a live expression:
 
 1. Enter the JavaScript expression `document.activeElement` into the text box.  A Live Expression can be any valid JavaScript expression.
 
-1. To save the expression, press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS).  Or, click outside of the **Live Expression** text box.
+1. To save the expression, press `Ctrl`+**Enter** (Windows, Linux) or `Command`+**Enter** (macOS).  Or, click outside of the **Live Expression** text box.
 
    The expression is now live, and displays `body` as the result:
 
@@ -42,9 +42,9 @@ To add a live expression:
 
    ![The Live Expression for document.activeElement displays 'body' as the result](../media/console-live-expressions-document-active-element.msft.png)
 
-1. Click different parts of the webpage, or press `Tab` and `Shift`+`Tab` to move around in the webpage, the `document.activeElement` Live Expression value changes.
+1. Click different parts of the webpage, or press **Tab** and **Shift+Tab** to move around in the webpage, the `document.activeElement` Live Expression value changes.
 
-   In the accessibility-testing demo webpage, when you `Tab` to put focus on the **Other** text box in the **Donation** section, the Live Expression value reads `input#freedonation.smallinput`.
+   In the accessibility-testing demo webpage, when you **Tab** to put focus on the **Other** text box in the **Donation** section, the Live Expression value reads `input#freedonation.smallinput`.
 
    <!-- revise the step & the capture after it: -->
 

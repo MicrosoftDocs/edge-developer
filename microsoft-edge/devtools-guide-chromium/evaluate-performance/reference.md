@@ -212,7 +212,7 @@ To navigate activities that match your query:
 
 1. Click the **Previous** (![Previous](../media/previous-icon.msft.png)) and **Next** (![Next](../media/next-icon.msft.png)) buttons.
 
-1. To select the next activity, press `Enter`.  To select the previous activity, press `Shift`+`Enter`.
+1. To select the next activity, press **Enter**.  To select the previous activity, press `Shift`+**Enter**.
 
 To modify query settings:
 

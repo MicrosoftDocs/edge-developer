@@ -188,7 +188,7 @@ The **Watch** pane allows you to monitor the values of variables (such as `sum`)
 
 1. Type `typeof sum`.
 
-1. Press `Enter`.  DevTools displays `typeof sum: "string"`.  The value to the right of the colon is the result of your watch expression.
+1. Press **Enter**.  DevTools displays `typeof sum: "string"`.  The value to the right of the colon is the result of your watch expression.
 
 > [!NOTE]
 > In the following screenshot, the watch expression `typeof sum` is displayed in the **Watch** pane.  If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.
@@ -201,11 +201,11 @@ As suspected, `sum` is being evaluated as a string, when it should be a number. 
 
 The **Console** allows you to view `console.log()` output.  You can also use the **Console** to evaluate arbitrary JavaScript statements while the debugger is paused at a code statement.  For debugging, you can use the **Console** to test potential fixes for bugs.
 
-1. If the **Console** tool is closed, press `Esc` to open it.  The **Console** tool opens in the lower pane of the DevTools window.
+1. If the **Console** tool is closed, press **Esc** to open it.  The **Console** tool opens in the lower pane of the DevTools window.
 
 1. In the **Console**, type `parseInt(addend1) + parseInt(addend2)`.  The statement the tool is paused on a line of code where `addend1` and `addend2` are in scope.
 
-1. Press `Enter`.  DevTools evaluates the statement and prints `6`, which is the result you expect the demo to produce.
+1. Press **Enter**.  DevTools evaluates the statement and prints `6`, which is the result you expect the demo to produce.
 
    ![The Console tool, after evaluating parseInt(addend1) + parseInt(addend2)](../media/javascript-sources-breakpoint-paused-console.msft.png)
 

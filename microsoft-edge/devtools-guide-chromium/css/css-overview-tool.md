@@ -20,7 +20,7 @@ To open the **CSS Overview** tool:
 
 1. Navigate to the [TODO list demo app](https://microsoftedge.github.io/Demos/demo-to-do/) in Microsoft Edge, or to your own webpage.
 
-1. Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+1. Open DevTools by pressing **F12** or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
 1. In the main toolbar, click **More Tools** and select **CSS Overview** from the list.
 

@@ -53,7 +53,7 @@ When you know the name of a webpage's resource file that you want to inspect, th
 
 1. If there's a greater-than (>) prompt, press `Backspace` to get to the **Open File** prompt.
 
-1. Start typing the filename, and then press `Enter` when the correct file is highlighted in the autocomplete box, or select the file from the dropdown list:
+1. Start typing the filename, and then press **Enter** when the correct file is highlighted in the autocomplete box, or select the file from the dropdown list:
 
    ![Typing part of a filename in the Open File list of the Command Menu](../media/resources-command-menu-file-search.msft.png)
 

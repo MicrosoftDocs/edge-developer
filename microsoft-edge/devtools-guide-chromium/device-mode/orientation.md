@@ -30,7 +30,7 @@ Simulate different device orientations from within DevTools.
 
    ![The Command Menu](../media/device-mode-console-command-menu.msft.png)
 
-1. Type `sensors`, select **Show Sensors**, and then press `Enter`.  The **Sensors** tool opens in the bottom of the DevTools window.
+1. Type `sensors`, select **Show Sensors**, and then press **Enter**.  The **Sensors** tool opens in the bottom of the DevTools window.
 
 1. From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or select **Custom orientation** to provide your own exact orientation.
 

@@ -109,7 +109,7 @@ See also:
 
 The **Changes tool** tracks any changes you have made to CSS or JavaScript in DevTools.  You can use the **Changes tool** to quickly display all your changes and take those back to your editor/IDE.
 
-To open the **Changes tool**, press `Ctrl`+`Shift`+`P` in DevTools to open the [Command Menu](../../../command-menu/index.md), and then type `changes`.  Select the **Show Changes** command and then press `Enter`.  The **Changes tool** opens in the Drawer.
+To open the **Changes tool**, press `Ctrl`+`Shift`+`P` in DevTools to open the [Command Menu](../../../command-menu/index.md), and then type `changes`.  Select the **Show Changes** command and then press **Enter**.  The **Changes tool** opens in the Drawer.
 
 When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.  Starting in Microsoft Edge 83, you can now scroll horizontally using the arrow keys on your keyboard.
 

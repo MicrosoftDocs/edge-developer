@@ -652,7 +652,7 @@ This section is for WinUI 3 (Windows App SDK) only.
 
 1. Select **View** > **Error List**.
 
-1. Select **Debug** > **Start Debugging** (`F5`).
+1. Select **Debug** > **Start Debugging** (**F5**).
 
    The WinUI 3 app opens:
 
@@ -712,7 +712,7 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
-1. Press `F5` to run the sample app.  The WebView2-enabled WinUI 2 (UWP) app opens:
+1. Press **F5** to run the sample app.  The WebView2-enabled WinUI 2 (UWP) app opens:
 
    ![The WebView2 WinUI 2 UWP app](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
    <!-- 2nd use of this png in this article -->
@@ -759,7 +759,7 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
 1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
 
-1. Press `F5` to run the sample app.  The **WinUI Desktop** window opens:
+1. Press **F5** to run the sample app.  The **WinUI Desktop** window opens:
 
    ![The WinUI Desktop (WinUI 3) app running](winrt-from-js-images/webview2-winui-3-app-after-addhost.png)
 
@@ -778,7 +778,7 @@ Next, use the DevTools Console to demonstrate that web-side code can call the ho
 * [Windows.System.UserProfile Namespace](/uwp/api/windows.system.userprofile)
 * [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language)
 
-1. If the app isn't running, in Visual Studio, press `F5` to run the sample app.
+1. If the app isn't running, in Visual Studio, press **F5** to run the sample app.
 
 1. Click in the main part of the WebView2 sample app window to give it focus, and then press `Ctrl`+`Shift`+`I` to open Microsoft Edge DevTools.  Or, right-click the page, and then select **Inspect**.
 
@@ -790,7 +790,7 @@ Next, use the DevTools Console to demonstrate that web-side code can call the ho
 
 1. Click the **Clear console** (![Clear console icon](./winrt-from-js-images/clear-console-icon.png)) button, or right-click in the **Console** and then select **Clear console**.  Messages might periodically appear in the Console.
 
-1. In the DevTools Console, paste the following [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language) code, and then press `Enter`:
+1. In the DevTools Console, paste the following [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language) code, and then press **Enter**:
 
    ```javascript
    const Windows = chrome.webview.hostObjects.sync.Windows;

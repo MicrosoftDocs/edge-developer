@@ -141,7 +141,7 @@ At this point, you could work with CSS edits or step through code in the debugge
 
 To end debugging and close the **Edge DevTools** tabs:
 
-1. In the Debug toolbar, click the **Stop** (`Shift`+`F5`) button:
+1. In the Debug toolbar, click the **Stop** (`Shift`+**F5**) button:
 
    ![Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
 

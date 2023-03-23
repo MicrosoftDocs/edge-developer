@@ -72,7 +72,7 @@ To enable screenshots:
 
 To capture a screenshot:
 
-1. While the **Network** tool has focus, press `Ctrl`+`F5` refresh the page.  Screenshot are captured and thumbnails are shown below the row of checkboxes.
+1. While the **Network** tool has focus, press **Ctrl+F5** refresh the page.  Screenshot are captured and thumbnails are shown below the row of checkboxes.
 
    You can interact with the screenshots as follows.
 
@@ -84,7 +84,7 @@ To capture a screenshot:
 
 1. Double-click a screenshot thumbnail to zoom-in and view the screenshot.
  
-1. Press `Esc` to close the screenshot viewer.
+1. Press **Esc** to close the screenshot viewer.
 
 <!--  ### Replay XHR request  -->
 

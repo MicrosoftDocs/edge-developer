@@ -29,7 +29,7 @@ The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries
    > [!div class="mx-imgBorder"]
    > ![Opening the command menu](../media/print-preview-open-command-menu.png)
 
-1. Type `rendering`, select **Show Rendering**, and then press `Enter`.
+1. Type `rendering`, select **Show Rendering**, and then press **Enter**.
 
    The **Rendering** panel opens in the **Drawer**.
 

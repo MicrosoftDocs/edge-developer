@@ -32,7 +32,7 @@ To turn off JavaScript:
 
    ![The Command Menu](../media/javascript-console-command.msft.png)
 
-1. Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.  JavaScript is now disabled.
+1. Start typing `javascript`, select **Disable JavaScript**, and then press **Enter** to run the command.  JavaScript is now disabled.
 
    ![Select 'Disable JavaScript' in the Command Menu](../media/javascript-console-command-javascript.msft.png)
 

@@ -68,9 +68,9 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 
 1. Click `element.style` near the top of the **Styles** panel.
 
-1. Type `background-color` or select it from the drop-down list and then press `Enter`.
+1. Type `background-color` or select it from the drop-down list and then press **Enter**.
 
-1. Type `honeydew` or select it from the drop-down list of colors and then press `Enter`.  After you pick a color, an inline style declaration that's applied to the element is displayed In the **DOM Tree**, 
+1. Type `honeydew` or select it from the drop-down list of colors and then press **Enter**.  After you pick a color, an inline style declaration that's applied to the element is displayed In the **DOM Tree**, 
 
     The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** panel:
 
@@ -90,7 +90,7 @@ To display how an element looks when a CSS class is applied to or removed from a
 
 1. Click **.cls**.  DevTools shows a text box where you can add CSS classes to the page element that you're inspecting.
 
-1. Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you can also  toggle each class from here.
+1. Type `color_me` in the **Add new class** text box and then press **Enter**.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you can also  toggle each class from here.
 
    The `color_me` class is applied to the element using the **.cls** section of the **Styles** panel:
 
@@ -136,7 +136,7 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
 1. Double-click the left margin in the **Box Model**, which currently has a value of `-`. The `-` means that the element doesn't have a value for `margin-left`.
 
-1. Type `100px` and press `Enter`.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.
+1. Type `100px` and press **Enter**.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.
 
    Hovering over the element's padding:
 

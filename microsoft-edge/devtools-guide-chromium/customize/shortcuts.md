@@ -29,7 +29,7 @@ To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent 
 
    ![Matching keyboard shortcuts in DevTools to Visual Studio Code](../media/match-keyboard-shortcuts-visual-studio-code.msft.png)
 
-For example, to pause or continue running a script in Visual Studio Code, you press `F5`.  But with the **DevTools (Default)** preset, to pause or continue running a script, you press `F8`.  When you change the preset to **Visual Studio Code**, you now also press `F5` in DevTools, just like in Visual Studio Code.
+For example, to pause or continue running a script in Visual Studio Code, you press **F5**.  But with the **DevTools (Default)** preset, to pause or continue running a script, you press `F8`.  When you change the preset to **Visual Studio Code**, you now also press **F5** in DevTools, just like in Visual Studio Code.
 
 ### See also
 

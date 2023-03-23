@@ -19,7 +19,7 @@ To check whether the page is usable with animations turned off:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. At the top of DevTools, select the **Sources** tool, and then in the **Navigation** pane on the left, select `styles.css`.  The CSS file appears in the **Editor** pane.
 

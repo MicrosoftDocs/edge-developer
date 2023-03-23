@@ -215,9 +215,9 @@ To add an inline declaration:
 
 1. In the **Styles** pane, click between the brackets of the **element.style** section.  The cursor focuses, allowing you to enter text.
 
-1. Enter a property name and press `Enter`.
+1. Enter a property name and press **Enter**.
 
-1. Enter a valid value for that property and press `Enter`.  In the **DOM Tree**, a `style` attribute has been added to the element.
+1. Enter a valid value for that property and press **Enter**.  In the **DOM Tree**, a `style` attribute has been added to the element.
 
 In the following figure, the `margin-top` and `background-color` properties have been applied to the selected element.  In the **DOM Tree**, the declarations are reflected in the element's `style` attribute.
 
@@ -235,9 +235,9 @@ To add a declaration to an existing style rule:
 
 1. In the **Styles** pane, click between the brackets of the style rule to which you want to add the declaration.  The cursor focuses, allowing you to enter text.
 
-1. Enter a property name and press `Enter`.
+1. Enter a property name and press **Enter**.
 
-1. Enter a valid value for that property and press `Enter`.
+1. Enter a valid value for that property and press **Enter**.
 
 ![Adding a declaration to a style rule](../media/css-elements-styles-border-bottom-style.msft.png)
 
@@ -276,7 +276,7 @@ To add a class to an element:
 
 1. Enter the name of the class in the **Add new class** text box.
 
-1. Press `Enter`.
+1. Press **Enter**.
 
    ![The Element Classes pane](../media/css-elements-styles-filter-classes.msft.png)
 

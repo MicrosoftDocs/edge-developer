@@ -48,7 +48,7 @@ To open Command Palette:
 
    ![Command Palette with the word "bookmark" typed in, and a list of related commands](./edge-command-palette-images/command-palette-bookmark.png)
 
-1. Press `Down Arrow` or `Up Arrow` to select a command, or use the mouse wheel, and then press `Enter`.
+1. Press **Down Arrow** or **Up Arrow** to select a command, or use the mouse wheel, and then press **Enter**.
 
 Examples of several useful commands are shown below.
 
@@ -64,7 +64,7 @@ To open the DevTools Device Emulation tool by using Command Palette:
 
 1. Press `>`.
 
-1. Type **device**, press `Down Arrow` to select **Mobile: Toggle device emulation**, and then press `Enter`.
+1. Type **device**, press **Down Arrow** to select **Mobile: Toggle device emulation**, and then press **Enter**.
 
 
 <!-- ====================================================================== -->
@@ -78,7 +78,7 @@ To open the DevTools **Snippets** tab by using Command Palette:
 
 1. Press `>`.
 
-1. Type **snippets**, press `Down Arrow` to select **Sources: Show Snippets**, and then press `Enter`.
+1. Type **snippets**, press **Down Arrow** to select **Sources: Show Snippets**, and then press **Enter**.
 
 
 <!-- ====================================================================== -->
@@ -92,7 +92,7 @@ Many useful tab-related commands are available in Command Palette, such as:
 
 1. Press `Ctrl`+`Q`. Command Palette opens.
 
-1. Type the word **tab**, press `Down Arrow` or `Up Arrow` to select a command, and then press `Enter`.
+1. Type the word **tab**, press **Down Arrow** or **Up Arrow** to select a command, and then press **Enter**.
 
 
 <!-- ====================================================================== -->

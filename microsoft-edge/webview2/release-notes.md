@@ -2558,7 +2558,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 *  Fixed a bug where WebView2 creation fails when exe files for apps sharing the same user data folder have inconsistent version info.
 *  Fixed a bug where special browser keys such as `Refresh`, `Home`, and `Back` can't be disabled by `AreBrowserAcceleratorKeysEnabled`. This change is Runtime-specific.
 *  Fixed a bug in WebView2 .NET controls, where WebView2 windows are blank when created in the background. ([Issue #1077](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1077)).
-*  Dismissing a file picker dialog by pressing `Enter` or `Esc` no longer crashes WPF applications using WebView2 control. ([Issue #1099](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1099)).
+*  Dismissing a file picker dialog by pressing **Enter** or **Esc** no longer crashes WPF applications using WebView2 control. ([Issue #1099](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1099)).
 *  Fixed a bug that [AllowSingleSignOnUsingOSPrimaryAccount](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_allowsinglesignonusingosprimaryaccount) doesn't work properly with WebView2 when a `WebResourceRequested` event handler is attached. This change is Runtime-specific. ([Issue #1183](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1183)).
 *  Downloading a file no longer breaks WebView2 `DefaultBackgroundColor` transparency. This change is Runtime-specific. ([Issue #1108](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1108)).
 *  Removed screen sharing media picker message that contains Microsoft branding. ([Issue #940](https://github.com/MicrosoftEdge/WebViewFeedback/issues/940)).
@@ -2653,7 +2653,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 ###### Bug fixes
 
 *  Improved COM Exception descriptions by wrapping each in a more detailed .NET exception.  ([Issue #338](https://github.com/MicrosoftEdge/WebViewFeedback/issues/338)).  This change is Runtime-specific.
-*  Fixed bug caused when you select `Tab` to shift focus caused WebView2 control to crash in Microsoft Visual Studio Tools for Office.  ([Issue #589](https://github.com/MicrosoftEdge/WebViewFeedback/issues/589) and [Issue #933](https://github.com/MicrosoftEdge/WebViewFeedback/issues/933)).  This change is Runtime-specific.
+*  Fixed bug caused when you select **Tab** to shift focus caused WebView2 control to crash in Microsoft Visual Studio Tools for Office.  ([Issue #589](https://github.com/MicrosoftEdge/WebViewFeedback/issues/589) and [Issue #933](https://github.com/MicrosoftEdge/WebViewFeedback/issues/933)).  This change is Runtime-specific.
 *  Improved .NET framework loader down level to be more robust.  ([Issue #946](https://github.com/MicrosoftEdge/WebViewFeedback/issues/946)).
 *  Fixed bug that caused crash when you try to refresh before first navigation completed.  ([Issue #1011](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1011)).
 *  Fixed initialization so navigation occurs during `CoreWebView2InitializationCompleted`.  ([Issue #1050](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1050)).

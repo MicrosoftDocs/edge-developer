@@ -93,7 +93,7 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 
 1. In the **Elements** tool, in the **Styles** tab, click a CSS value, such as the body font size.
 
-1. Change the CSS value, such as using mouse wheel or pressing `Up Arrow` and `Down Arrow`.  The associated `.css` file opens, such as `to-do-styles.css` and scrolls to the line that defines the CSS value, and automatically edits the `.css` file but doesn't save changes:
+1. Change the CSS value, such as using mouse wheel or pressing **Up Arrow** and **Down Arrow**.  The associated `.css` file opens, such as `to-do-styles.css` and scrolls to the line that defines the CSS value, and automatically edits the `.css` file but doesn't save changes:
 
    ![CSS mirror editing](./get-started-images/css-mirror.png)
 
@@ -127,7 +127,7 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 
 To end debugging and close the **Edge DevTools** tabs:
 
-1. In the Debug toolbar, click the **Stop** (`Shift`+`F5`) button.  Or, on the **Run** menu, select **Stop Debugging**:
+1. In the Debug toolbar, click the **Stop** (`Shift`+**F5**) button.  Or, on the **Run** menu, select **Stop Debugging**:
 
    ![The Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
 

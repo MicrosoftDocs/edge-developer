@@ -16,7 +16,7 @@ Microsoft Visual Studio provides various debugging tools for web and native code
 <!-- ====================================================================== -->
 ## Open DevTools using an approach other than F12
 
-When you debug your app in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  To avoid that situation, press `Ctrl`+`Shift`+`I`.  Or, right-click the page, and then select `Inspect`.
+When you debug your app in Visual Studio with the native debugger attached, pressing **F12** may trigger the native debugger instead of Developer Tools.  To avoid that situation, press `Ctrl`+`Shift`+`I`.  Or, right-click the page, and then select `Inspect`.
 
 
 <!-- ====================================================================== -->

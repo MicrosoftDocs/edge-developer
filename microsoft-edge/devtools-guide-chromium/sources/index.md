@@ -483,7 +483,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
    <!-- You can view the source code for the demo page at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
-1. Right-click anywhere in the webpage, and then select **Inspect**.  Or, press `F12`.  The **DevTools** window opens, next to the demo webpage.
+1. Right-click anywhere in the webpage, and then select **Inspect**.  Or, press **F12**.  The **DevTools** window opens, next to the demo webpage.
 
 1. In DevTools, select the **Sources** tab.
 
@@ -503,7 +503,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
    At this point, you could add expressions in the **Watch** pane.  These expressions are the same expressions that you would write within a `console.log` statement to debug your code.
 
-   To run JavaScript commands to manipulate data in the current context, you use the **Console**.  If you want to open the console in the Drawer at the bottom of DevTools, press `Esc`.
+   To run JavaScript commands to manipulate data in the current context, you use the **Console**.  If you want to open the console in the Drawer at the bottom of DevTools, press **Esc**.
 
 1. Step through the code by using the controls at the top of the **Debugger** pane, such as **Step** (`F9`).
 
@@ -544,7 +544,7 @@ These three approaches are equivalent:
 
 When the variable `sum` is in-scope, `sum` and its value are automatically shown in the **Scope** section of the **Debugger** pane, and are also overlaid in the Editor pane where `sum` is calculated.  So you probably wouldn't need to define a Watch expression for `sum`.
 
-The debugger gives a richer, more flexible display and environment than a `console.log` statement.  For example, in the debugger, as you step through the code, you can display and change the values of all currently defined properties and variables.  You can also issue JavaScript statements in the **Console**, such as to change values in an array that's in-scope.  (To show the Console, press `Esc`.)
+The debugger gives a richer, more flexible display and environment than a `console.log` statement.  For example, in the debugger, as you step through the code, you can display and change the values of all currently defined properties and variables.  You can also issue JavaScript statements in the **Console**, such as to change values in an array that's in-scope.  (To show the Console, press **Esc**.)
 
 Breakpoints and Watch expressions are preserved when you refresh the webpage.
 

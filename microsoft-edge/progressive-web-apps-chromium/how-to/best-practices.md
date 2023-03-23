@@ -43,7 +43,7 @@ To learn how to use PWA Builder and publish to the Microsoft Store, see [Publish
 
 Many users find apps on their devices by their icons. To help users find your app more easily, choose a recognizable icon, make sure it stands out, and make sure that it adapts to the devices your app is installed on.
 
-On Windows, your app icon appears in many places such as the taskbar, the Start menu, or the `Alt`+`Tab` task switcher. Provide multiple image sizes to ensure your app icon is easily recognizable in these places.
+On Windows, your app icon appears in many places such as the taskbar, the Start menu, or the `Alt`+**Tab** task switcher. Provide multiple image sizes to ensure your app icon is easily recognizable in these places.
 
 To learn which image size are needed on Windows, see [Icon image sizes](./icon-theme-color.md#icon-image-sizes) in _Define icons and a theme color_.
 

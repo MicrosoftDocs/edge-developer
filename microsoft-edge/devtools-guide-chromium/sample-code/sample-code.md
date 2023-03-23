@@ -80,7 +80,7 @@ This Animal Shelter demo webpage is useful for exploring various DevTools featur
 
 1. Right-click anywhere in the rendered webpage and then select **Inspect**.  DevTools opens next to the demo webpage.
 
-   <!-- Or, press `F12`, `Ctrl`+`Shift`+`I` (on Windows/Linux), or `Command`+`Option`+`I` (on macOS). -->
+   <!-- Or, press **F12**, `Ctrl`+`Shift`+`I` (on Windows/Linux), or `Command`+`Option`+`I` (on macOS). -->
 
 ![The 'Demo webpage with accessibility issues'](../media/demo-page-with-accessibility-issues.png)
 
@@ -120,7 +120,7 @@ This demo webpage is useful for exploring the **Sources** tool, especially the J
 
 1. Right-click anywhere in the rendered webpage and then select **Inspect**.  DevTools opens next to the demo webpage.
 
-   <!-- Or, press `F12`, `Ctrl`+`Shift`+`I` (on Windows/Linux), or `Command`+`Option`+`I` (on macOS). -->
+   <!-- Or, press **F12**, `Ctrl`+`Shift`+`I` (on Windows/Linux), or `Command`+`Option`+`I` (on macOS). -->
 
 ![The 'Get started Debugging JavaScript with DevTools' demo webpage](../media/using-debug-js-demo-page.png)
 
@@ -191,7 +191,7 @@ To clone the repo:
 
 1. In Visual Studio Code, in the Activity Bar, click the **Source Control** (![Source Control icon](./sample-code-images/source-control-icon.png)) button, and then click the **Clone Repository** button.
 
-1. In the **Provide repository URL** text box, paste the copied URL: **https://github.com/MicrosoftEdge/Demos.git** and then press `Enter`.  A folder selection dialog opens.
+1. In the **Provide repository URL** text box, paste the copied URL: **https://github.com/MicrosoftEdge/Demos.git** and then press **Enter**.  A folder selection dialog opens.
 
    ![The Clone Repository button in Visual Studio Code](./sample-code-images/clone-repository-button.png)
 
@@ -268,7 +268,7 @@ To open an `.html` file and edit it:
 
 1. In DevTools, on the left, select the **Page** tab, and then select the HTML file, such as `index.html` or **(index)**.
 
-1. Press `Esc` to open the **Drawer** at the bottom of DevTools.
+1. Press **Esc** to open the **Drawer** at the bottom of DevTools.
 
 1. In the Drawer, click the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button, and then select the **Changes** tool.
 

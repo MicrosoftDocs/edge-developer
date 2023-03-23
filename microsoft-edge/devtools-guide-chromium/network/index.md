@@ -226,7 +226,7 @@ For example, suppose you want to verify that your resources are using reasonable
 
    ![The Search pane](../media/network-glitch-network-search-empty.msft.png)
 
-1. Type `no-cache` and press `Enter`.  The Search pane lists all instances of `no-cache` that it finds in resource headers or content:
+1. Type `no-cache` and press **Enter**.  The Search pane lists all instances of `no-cache` that it finds in resource headers or content:
 
    ![Search results for no-cache](../media/network-glitch-network-search-cache-control.msft.png)
 
@@ -288,7 +288,7 @@ How does a page look and behave when some of the page resources aren't available
 
 1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-1. Type `block`, select **Show Request Blocking**, and then press `Enter`:
+1. Type `block`, select **Show Request Blocking**, and then press **Enter**:
 
    ![Show Request Blocking](../media/network-glitch-network-cli-block.msft.png)
 

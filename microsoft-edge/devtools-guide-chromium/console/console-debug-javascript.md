@@ -22,7 +22,7 @@ The first experience you have with the **Console** is likely to be errors in scr
 
 1. Open the demo webpage [JavaScript error reported in the Console tool](https://microsoftedge.github.io/Demos/devtools-console/error.html) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
    In the top right of DevTools, the **Open Console to view errors** button displays an error about the webpage.
 
@@ -51,7 +51,7 @@ The **Console** also reports network errors.
 
 1. Open the demo webpage [Network error reported in Console](https://microsoftedge.github.io/Demos/devtools-console/network-error.html) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
    ![Console displays a Network and a JavaScript error](../media/console-debug-network-error.msft.png)
 
@@ -114,7 +114,7 @@ Use defensive coding techniques to avoid the previous user experiences.  Make su
 
 1. Open the demo webpage [Network error reporting in Console and UI](https://microsoftedge.github.io/Demos/devtools-console/network-error-reported.html) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
    The example webpage demonstrates these practices:
 
@@ -154,7 +154,7 @@ To display two created error messages in the **Console**:
 
 1. Open the demo page [Creating error reports and assertions in Console](https://microsoftedge.github.io/Demos/devtools-console/error-assert.html) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
    Error messages appear in the **Console**:
 
@@ -218,7 +218,7 @@ To display the trace in the **Console**:
 
 1. Open the demo page [Creating traces in Console](https://microsoftedge.github.io/Demos/devtools-console/trace.html) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
    The page uses this code:
 

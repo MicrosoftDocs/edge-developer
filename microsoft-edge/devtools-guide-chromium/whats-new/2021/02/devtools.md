@@ -57,7 +57,7 @@ Then hover over each outlined region of DevTools:
 
 ![DevTools Tooltips mode](../../media/2021/02/tooltips.png)
 
-To turn off Tooltips, press `Esc`.  
+To turn off Tooltips, press **Esc**.  
 
 Update: This feature has been released and is no longer experimental.<!-- valid. -->
 <!-- To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the following checkboxes:

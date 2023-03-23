@@ -121,7 +121,7 @@ To attach the Visual Studio debugger to an instance of Microsoft Edge that's alr
 
 1. In the **Attach to Process** dialog, set **Connection type** to **Chrome devtools protocol websocket (no authentication)**.
 
-1. In the **Connecting target** text box, type `http://localhost:9222/` and then press `Enter`.
+1. In the **Connecting target** text box, type `http://localhost:9222/` and then press **Enter**.
 
 1. Review the list of open tabs you have in Microsoft Edge listed out in the **Available processes** section.
 

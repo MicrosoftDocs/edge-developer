@@ -138,8 +138,8 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 | Sidebar | `Ctrl`+`Shift`+`E` |
 | Save Page | `Ctrl`+`S` |
 | Select Last Tab | `Ctrl`+`9` |
-| Select Next Tab | `Ctrl`+`Tab` |
-| Select Previous Tab | `Ctrl`+`Shift`+`Tab` |
+| Select Next Tab | `Ctrl`+**Tab** |
+| Select Previous Tab | `Ctrl`+**Shift+Tab** |
 | Select Tab (1 - 8) | `Ctrl`+`(1-8)` |
 | Show Favorites Bar `*` | `Ctrl`+`Shift`+`B` |
 | Help | `F1` |
@@ -191,8 +191,8 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Find Next | `Ctrl`+`G` |
 | Find Previous | `Ctrl`+`Shift`+`G` |
 | Print | `Ctrl`+`P` |
-| Refresh | `Ctrl`+`R`, `F5`, `Reload Key` |
-| Refresh Without Cache | `Ctrl`+`Shift`+`R`, `Ctrl`+`F5`, `Shift`+`F5`, `Ctrl`+`Refresh`, `Shift`+`Refresh` |
+| Refresh | `Ctrl`+`R`, **F5**, `Reload Key` |
+| Refresh Without Cache | `Ctrl`+`Shift`+`R`, **Ctrl+F5**, `Shift`+**F5**, `Ctrl`+`Refresh`, `Shift`+`Refresh` |
 | Zoom Out | `Ctrl`+`-` |
 | Zoom In | `Ctrl`+`+` |
 | Reset Zoom | `Ctrl`+`0` |

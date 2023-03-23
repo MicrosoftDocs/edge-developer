@@ -205,7 +205,7 @@ To change the rendered webpage:
 
 1. Open the **Console**.
 
-1. Paste the following code into the **Console**, and then press `Enter`:
+1. Paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    document.querySelector('h1').innerHTML = 'Rocking the Console';
@@ -226,7 +226,7 @@ For example, to add a green border around all the links in the current webpage:
 
 1. Open the **Console**.
 
-1. Paste the following code into the **Console**, and then press `Enter`:
+1. Paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    $$('a').forEach(a => a.style.border='1px solid lime');

@@ -118,7 +118,7 @@ To display an issue for elements with wavy underlines in the DOM tree:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. In DevTools, select the **Elements** tab.
 

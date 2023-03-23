@@ -23,7 +23,7 @@ To quickly open the **Search** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. In DevTools, press `Esc` to open the Drawer, and then on the Drawer toolbar, select the **Search** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, press **Esc** to open the Drawer, and then on the Drawer toolbar, select the **Search** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
 
    Or, press `Ctrl`+`Shift`+`F` (Windows, Linux) or `Command`+`Option`+`F` (macOS).
 
@@ -43,7 +43,7 @@ To open the **Search** tool from the **Command Menu**:
 
 1. Open the [Command Menu](../command-menu/index.md), by pressing `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
 
-1. Type `search`, and then press `Enter`.
+1. Type `search`, and then press **Enter**.
 
 ![The Command Menu with the Show Search item selected](../media/search-tool/open-search-tool.png)
 
@@ -54,7 +54,7 @@ To open the **Search** tool from the **Command Menu**:
 To search for text in the current webpage and its resource files:
 
 1. Put focus the search input field.
-1. Enter the text that you want to search for, and then press `Enter`.
+1. Enter the text that you want to search for, and then press **Enter**.
 
 The **Search** tool shows the list of matching resources, and highlights the corresponding lines of text.  The number of matching files and lines is also indicated at the bottom of the tool.
 
