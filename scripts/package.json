@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "glob": "^7.1.7",
+    "marked": "^4.3.0",
     "node-fetch": "3.2.10"
   }
 }
