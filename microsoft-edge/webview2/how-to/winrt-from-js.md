@@ -784,7 +784,7 @@ Next, use the DevTools Console to demonstrate that web-side code can call the ho
 
    The Microsoft Edge DevTools window opens.
 
-1. If the Microsoft Edge DevTools window isn't displayed, press `Alt+Tab` to display it.
+1. If the Microsoft Edge DevTools window isn't displayed, press **Alt+Tab** to display it.
 
 1. In the **DevTools** window, select the **Console** tab.
 

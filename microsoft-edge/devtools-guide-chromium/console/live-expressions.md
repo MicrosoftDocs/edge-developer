@@ -34,7 +34,7 @@ To add a live expression:
 
 1. Enter the JavaScript expression `document.activeElement` into the text box.  A Live Expression can be any valid JavaScript expression.
 
-1. To save the expression, press `Ctrl`+**Enter** (Windows, Linux) or `Command`+**Enter** (macOS).  Or, click outside of the **Live Expression** text box.
+1. To save the expression, press **Ctrl+Enter** (Windows, Linux) or **Command+Enter** (macOS).  Or, click outside of the **Live Expression** text box.
 
    The expression is now live, and displays `body` as the result:
 

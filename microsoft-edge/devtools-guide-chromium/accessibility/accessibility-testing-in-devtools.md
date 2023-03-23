@@ -192,7 +192,7 @@ For detailed walkthrough steps, see [Use the Inspect tool to hover over the webp
 
 Not all people use pointer or touch devices, and some people may have low vision. To cater for these scenarios, ensure that UIs work with keyboards.
 
-You can test using a keyboard to navigate the page, by using **Tab** or `Shift+Tab` to jump from element to element.  If you press **Tab** on the demo page, the first thing that receives focus is the **Search** form in the page header.  Pressing **Enter** even allows you to submit the form, so that works, despite the label issue we discovered earlier when using the **Issues** tool.
+You can test using a keyboard to navigate the page, by using **Tab** or **Shift+Tab** to jump from element to element.  If you press **Tab** on the demo page, the first thing that receives focus is the **Search** form in the page header.  Pressing **Enter** even allows you to submit the form, so that works, despite the label issue we discovered earlier when using the **Issues** tool.
 
 For detailed walkthrough steps, see [Check for keyboard support by using the Tab and Enter keys](test-tab-enter-keys.md).
 
@@ -210,7 +210,7 @@ Pressing **Tab** again takes you to the input text box of the donation form.  Ho
 
 ![The only keyboard-accessible element in the donation form is the entry text field](../media/a11y-testing-form-field-with-outline.msft.png)
 
-Pressing **Tab** again puts focus on the top navigation bar, where you can press **Enter** to go to a different section of the page or a different page of the site.  You know which element you are on, because there's a focus outline.  To click a link in the top navigation bar, use **Tab** or `Shift+Tab` to put focus on a link, and then press **Enter**:
+Pressing **Tab** again puts focus on the top navigation bar, where you can press **Enter** to go to a different section of the page or a different page of the site.  You know which element you are on, because there's a focus outline.  To click a link in the top navigation bar, use **Tab** or **Shift+Tab** to put focus on a link, and then press **Enter**:
 
 ![The top navigation bar has a highlight and a focus outline, and thus is keyboard-accessible](../media/a11y-testing-menu-with-outline.msft.png)
 

@@ -27,7 +27,7 @@ To check if you have Focus Mode enabled already, or to enable or disable it:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. Press `F1` to open **Settings**.
+1. Press **F1** to open **Settings**.
 
 1. Click **Experiments** and scroll down to the **Focus Mode** checkbox.
 

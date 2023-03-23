@@ -60,7 +60,7 @@ To view a JSON file stored on your device as reformatted JSON:
 
 1. Open a new tab or window in Microsoft Edge.
 
-1. Press `Ctrl`+`O` on Windows and Linux, or `Command`+`O` on macOS, and then select a JSON file.
+1. Press **Ctrl+O** on Windows and Linux, or **Command+O** on macOS, and then select a JSON file.
 
 1. Microsoft Edge detects that the file contains JSON data and formats it automatically:
 

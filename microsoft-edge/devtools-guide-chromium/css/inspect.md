@@ -77,7 +77,7 @@ Elements that have the CSS property of `pointer-events: none` aren't available t
 
 ![An element that has a CSS property of 'pointer events: none' can't be selected](images/inspect-tool-element-element-without-pointer-events.msft.png)
 
-To inspect elements that have the CSS property of `pointer-events: none`, press `Shift` while hovering over the element.  There's also a color overlay on page layout regions, indicating that you are in an advanced selection mode.
+To inspect elements that have the CSS property of `pointer-events: none`, press **Shift** while hovering over the element.  There's also a color overlay on page layout regions, indicating that you are in an advanced selection mode.
 
 ![Pressing the Shift key while selecting elements on the page allows you to select elements that have a CSS style property of 'pointer-events: none'](images/inspect-tool-with-shift.msft.png)
 
@@ -99,13 +99,13 @@ When you click an element in the rendered page:
 <!-- keep sync'd:
 * [Persisting the Inspect tool's tooltip and grid color overlay](../accessibility/navigation.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Navigate DevTools with assistive technology_ -->
 
-When using the **Inspect** tool and moving around the rendered webpage, you can keep the current **Inspect** overlay displayed.  Press and hold `Ctrl`+`Alt` (Windows, Linux) or `Ctrl`+`Option` (macOS) while you move around in the rendered webpage.  The existing tooltip and grid color overlay for the **Inspect** tool remains displayed while you hover over different parts of the rendered webpage.
+When using the **Inspect** tool and moving around the rendered webpage, you can keep the current **Inspect** overlay displayed.  Press and hold **Ctrl+Alt** (Windows, Linux) or **Ctrl+Option** (macOS) while you move around in the rendered webpage.  The existing tooltip and grid color overlay for the **Inspect** tool remains displayed while you hover over different parts of the rendered webpage.
 
 
 <!-- ====================================================================== -->
 ## Temporarily hiding the Inspect element tooltip
 
-To hide the **Inspect** tool's overlay while you move the mouse pointer over the rendered webpage, press and hold `Ctrl`.
+To hide the **Inspect** tool's overlay while you move the mouse pointer over the rendered webpage, press and hold **Ctrl**.
 
 
 <!-- ====================================================================== -->

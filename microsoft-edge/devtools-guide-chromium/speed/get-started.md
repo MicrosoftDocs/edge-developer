@@ -52,7 +52,7 @@ First, set up the website locally, so that you can make changes to it later:
 
 1. Open the folder you just downloaded or cloned in Visual Studio Code.
 
-1. In Visual Studio Code, click **View** > **Terminal** or press `Ctrl` + `` ` ``.
+1. In Visual Studio Code, click **View** > **Terminal** or press **Ctrl+`**.
 
    Visual Studio Code displays the source files in the **Explorer** sidebar, and displays the **Terminal**:
 

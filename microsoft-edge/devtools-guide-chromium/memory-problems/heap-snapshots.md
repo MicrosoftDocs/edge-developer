@@ -52,7 +52,7 @@ This article uses five demo webpages, all sourced at https://github.com/Microsof
 
 1. In the **Select profiling type** section, select the **Heap snapshot** option button.
 
-1. Click the **Take snapshot** button, and then click **Start**.  Or, press `Ctrl`+`E` (Windows, Linux) or `Cmd`+`E` (macOS).
+1. Click the **Take snapshot** button, and then click **Start**.  Or, press **Ctrl+E** (Windows, Linux) or **Command+E** (macOS).
 
 ![Selecting the 'Heap snapshot' profiling type in the Memory tool](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png)
 
@@ -254,7 +254,7 @@ Objects designated as `System` don't have a corresponding JavaScript type.  Each
 <!-- ====================================================================== -->
 ## Find a specific object
 
-To find an object in the collected heap, you can search using `Ctrl`+`F` and give the object ID.
+To find an object in the collected heap, you can search using **Ctrl+F** and give the object ID.
 
 
 <!-- ====================================================================== -->

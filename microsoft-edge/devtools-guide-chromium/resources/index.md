@@ -45,13 +45,13 @@ When you know the name of a webpage's resource file that you want to inspect, th
 
 1. In a new window or tab, go to a webpage, such as the [Accessibility-testing features demo](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).  (The source files for that webpage are at [MicrosoftEdge / Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing).)
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**. Or press `Ctrl`+ `Shift`+ `I` (Windows, Linux) or `Command`+ `Option`+ `I` (macOS).
+1. To open DevTools, right-click the webpage, and then select **Inspect**. Or press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. When DevTools has focus, press `Ctrl`+ `P` (Windows, Linux) or `Command`+`P` (macOS). Or, you can click the (![Customize icon](../media/customize-devtools-icon-light-theme.png)) menu button in DevTools and then select **Open file**.  The Command Menu opens, displaying the **Open File** list:
+1. When DevTools has focus, press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS). Or, you can click the (![Customize icon](../media/customize-devtools-icon-light-theme.png)) menu button in DevTools and then select **Open file**.  The Command Menu opens, displaying the **Open File** list:
 
    ![The Command Menu, displaying the Open File list](../media/resources-command-menu-empty.msft.png)
 
-1. If there's a greater-than (>) prompt, press `Backspace` to get to the **Open File** prompt.
+1. If there's a greater-than (>) prompt, press **Backspace** to get to the **Open File** prompt.
 
 1. Start typing the filename, and then press **Enter** when the correct file is highlighted in the autocomplete box, or select the file from the dropdown list:
 
@@ -95,7 +95,7 @@ For example, to go from the **Page** tab's resource list in the **Sources** tool
 
 1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tabs** (![the More tabs button](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
 
-1. Press `Ctrl`+`R` to refresh the page.  The received resource files that make up the webpage are now added as rows in the **Network** tab.  The **demo-to-do/** folder row represents the HTML page - in this case, [index.html](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do).
+1. Press **Ctrl+R** to refresh the page.  The received resource files that make up the webpage are now added as rows in the **Network** tab.  The **demo-to-do/** folder row represents the HTML page - in this case, [index.html](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do).
 
 1. In DevTools, click the **Sources** tab.
 

@@ -1263,7 +1263,7 @@ WebView2 gives your app access to window-specific attributes, such as positionin
 <!-- ------------------------------ -->
 #### Zooming
 
-WebView2 `ZoomFactor` is used to scale just the web content of the window.  UI scaling is also updated when the user zooms the content by pressing `Ctrl` while rotating the mouse wheel.
+WebView2 `ZoomFactor` is used to scale just the web content of the window.  UI scaling is also updated when the user zooms the content by pressing **Ctrl** while rotating the mouse wheel.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

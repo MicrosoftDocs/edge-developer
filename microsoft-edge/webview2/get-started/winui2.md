@@ -119,7 +119,7 @@ This article shows steps and screenshots for Visual Studio 2022 Community Editio
 
    Installation can take several minutes.  Visual Studio appears, with an empty **Solution Explorer**.
 
-1. Press `Alt`+**Tab** to switch to the **Visual Studio Installer** window, and then close the **Visual Studio Installer** window.
+1. Press **Alt+Tab** to switch to the **Visual Studio Installer** window, and then close the **Visual Studio Installer** window.
 
 
 <!-- ====================================================================== -->

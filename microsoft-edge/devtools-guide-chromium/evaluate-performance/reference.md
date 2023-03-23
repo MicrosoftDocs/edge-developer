@@ -204,7 +204,7 @@ To scroll a long flame chart in the **Main** section or any of the neighbors, cl
 <!-- ------------------------------ -->
 #### Search activities
 
-Press `Ctrl`+`F` (Windows, Linux) or `Command`+`F` (macOS) to open the search box at the bottom of the **Performance** tool.
+Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS) to open the search box at the bottom of the **Performance** tool.
 
 ![The search box](../media/evaluate-performance-performance-search-regex.msft.png)
 
@@ -212,7 +212,7 @@ To navigate activities that match your query:
 
 1. Click the **Previous** (![Previous](../media/previous-icon.msft.png)) and **Next** (![Next](../media/next-icon.msft.png)) buttons.
 
-1. To select the next activity, press **Enter**.  To select the previous activity, press `Shift`+**Enter**.
+1. To select the next activity, press **Enter**.  To select the previous activity, press **Shift+Enter**.
 
 To modify query settings:
 
@@ -461,7 +461,7 @@ The chart only displays the region of the recording that is currently selected. 
 <!-- ------------------------------ -->
 #### View the duration of a portion of a recording
 
-When analyzing a section like **Network** or **Main**, sometimes you need a more precise estimate of how long certain events took.  Hold `Shift`, click and hold, and drag left or right to select a portion of the recording.  At the bottom of your selection, DevTools shows how long that portion took.
+When analyzing a section like **Network** or **Main**, sometimes you need a more precise estimate of how long certain events took.  Hold **Shift**, click and hold, and drag left or right to select a portion of the recording.  At the bottom of your selection, DevTools shows how long that portion took.
 
 ![Viewing the duration of a portion of a recording](../media/evaluate-performance-performance-main-duration.msft.png)
 
@@ -531,7 +531,7 @@ To open the **Rendering** tool:
 
 1. [Open the Command Menu](../command-menu/index.md#open-the-command-menu).
 
-1. Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tool at the bottom of your DevTools window.
+1. Start typing **Rendering**, and then select **Show Rendering**.  DevTools displays the **Rendering** tool at the bottom of your DevTools window.
 
 ![The Rendering tool](../media/evaluate-performance-console-drawer-rendering.msft.png)
 
@@ -600,7 +600,7 @@ See also:
 
 In **Rendering** tool, use the **Disable local fonts** checkbox to emulate missing `local()` sources in `@font-face` rules.
 
-For example, when the `Rubik` font is installed on your device and the `@font-face src` rule uses it as a `local()` font, Microsoft Edge uses the local font file from your device.
+For example, when the **Rubik** font is installed on your device and the `@font-face src` rule uses it as a `local()` font, Microsoft Edge uses the local font file from your device.
 
 When **Disable local fonts** is selected, DevTools ignores the `local()` fonts and fetches each font from the network:
 

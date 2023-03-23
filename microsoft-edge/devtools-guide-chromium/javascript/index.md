@@ -30,18 +30,18 @@ This article teaches you the basic workflow for debugging any JavaScript issue u
 
 The first step in debugging is to find a sequence of actions that consistently reproduce a bug.
 
-1. Open the demo webpage [Get Started Debugging JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new window or tab.  To open the webpage, right-click the link and select "Open link in new tab" or "Open link in new Window" on the popup window.  Alternatively you can press and hold `Ctrl` (for Windows, Linux) or `Command` (for macOS), and then click the link.
+1. Open the demo webpage [Get Started Debugging JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new window or tab.  To open the webpage, right-click the link and select "Open link in new tab" or "Open link in new Window" on the popup window.  Alternatively you can press and hold **Ctrl** (for Windows, Linux) or **Command** (for macOS), and then click the link.
 
    > [!TIP]
    > Open Microsoft Edge in InPrivate Mode. InPrivate Mode ensures that Microsoft Edge runs in a clean state. For more information, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
 
    <!-- You can view the source files for the Debugging demo at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
-1. Enter `5` in the **Number 1** text box.
+1. Enter **5** in the **Number 1** text box.
 
-1. Enter `1` in the **Number 2** text box.
+1. Enter **1** in the **Number 2** text box.
 
-1. Click **Add Number 1 and Number 2**.  The label below the button says `5 + 1 = 51`.  The result should be `6`.  Next, go to [Step 2: Get familiar with the Sources tool UI](#step-2-get-familiar-with-the-sources-tool-ui) to start fixing the addition error that's the bug.
+1. Click **Add Number 1 and Number 2**.  The label below the button says **5 + 1 = 51**.  The result should be **6**.  Next, go to [Step 2: Get familiar with the Sources tool UI](#step-2-get-familiar-with-the-sources-tool-ui) to start fixing the addition error that's the bug.
 
    ![5 + 1 results in 51, but should be 6](../media/javascript-js-demo-bad.msft.png)
 
@@ -219,7 +219,7 @@ We've identified a possible fix for the bug.  Next, edit the JavaScript code dir
 
 1. In the **Editor** pane, replace the line `var sum = addend1 + addend2` with `var sum = parseInt(addend1) + parseInt(addend2)`.
 
-1. Press **Ctrl+S** (Windows, Linux) or `Command`+`S` (macOS) to save your change.
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save your change.
 
 1. Click **Deactivate breakpoints** (![Deactivate breakpoints](../media/deactivate-breakpoints-button-icon.msft.png)).  The breakpoint's icon changes to gray to indicate that the breakpoint is inactive.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
 

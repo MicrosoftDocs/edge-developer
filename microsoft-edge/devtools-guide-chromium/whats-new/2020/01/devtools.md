@@ -79,7 +79,7 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 
 The DevTools automatically match the language you use for Microsoft Edge in `edge://settings/languages`.
 
-If you want Microsoft Edge to be in one language and your DevTools to remain in English, select `F1` in the DevTools to open [Settings](../../../customize/index.md#settings) and disable **Match browser language**.
+If you want Microsoft Edge to be in one language and your DevTools to remain in English, press **F1** in DevTools to open [Settings](../../../customize/index.md#settings) and disable **Match browser language**.
 
 ![The DevTools in German](../../images/2020/01/localized-devtools.msft.png)
 

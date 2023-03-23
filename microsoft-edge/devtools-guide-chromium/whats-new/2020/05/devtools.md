@@ -56,7 +56,7 @@ From your [feedback](../../../contact.md) and the [Chromium public issue tracker
 
 To try the experiment:
 
-1. In DevTools, open **Settings** by selecting `?` or choosing the ![Devtools Settings icon](../../../media/settings-icon.msft.png) icon in the top-right corner of DevTools.
+1. In DevTools, open **Settings** by pressing **?** or clicking the **Settings** (![Devtools Settings icon](../../../media/settings-icon.msft.png)) icon in DevTools.
 
 1. In the **Experiments** section, select the checkbox **Enable custom keyboard shortcuts settings tab (requires reload)**.
 
@@ -68,7 +68,7 @@ To try the experiment:
 
 The keyboard shortcuts in DevTools now match the shortcuts for equivalent actions in Visual Studio Code.
 
-For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) is **F5**.  With the **DevTools (Default)** preset, that same shortcut in DevTools is `F8`, but with the **Visual Studio Code** preset, that shortcut is now also **F5**.
+For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) is **F5**.  With the **DevTools (Default)** preset, that same shortcut in DevTools is **F8**, but with the **Visual Studio Code** preset, that shortcut is now also **F5**.
 
 The feature is currently available in Microsoft Edge 84 as an experiment, so please share your [feedback](../../../contact.md) with the team!
 
@@ -271,7 +271,7 @@ See also:
 [CSS Color Module Level 4](https://drafts.csswg.org/css-color#changes-from-3) specifies that color functions, such as `rgb()`, should support space-separated
 arguments.  For example, `rgb(0, 0, 0)` is equivalent to `rbg(0 0 0)`.
 
-When you select colors with the [Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) or alternate between color representations in the **Styles** pane by holding `Shift` and selecting the `background-color` value, the space-separated argument syntax is displayed.
+When you select colors with the [Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) or alternate between color representations in the **Styles** pane by holding **Shift** and selecting the **background-color** value, the space-separated argument syntax is displayed.
 
 ![Using space-separated arguments in the Styles pane](../../media/2020/05/color.msft.png)
 

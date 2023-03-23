@@ -290,8 +290,10 @@ Here's the result.  `$$()` selects all images that appear after the specified `<
 
 ![Using $$() to select all images that appear after the specified <div> element in the webpage and display the sources](../media/console-element-selector-image-filter-all.msft.png)
 
-> [!NOTE]
-> Press `Shift`+**Enter** in the **Console** to start a new line without running the script.
+
+###### Entering a newline character 
+
+In the **Console**, to start a new line without running the script, press **Shift+Enter**.
 
 <br/><br/>
 

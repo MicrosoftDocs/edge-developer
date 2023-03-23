@@ -193,7 +193,7 @@ The optimized code uses a different sequence of actions to do less work. Note th
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
 To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rail/). -->
 
-To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, press **Alt+Shift+I** (Windows, Linux) or `Option`+`Shift`+`I` (macOS), or [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).  Include screenshots or links to reproducible pages, if possible.
+To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS), or [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).  Include screenshots or links to reproducible pages, if possible.
 
 ![The **Feedback** icon in the Microsoft Edge DevTools](../media/evaluate-performance-feedback-icon.msft.png)
 

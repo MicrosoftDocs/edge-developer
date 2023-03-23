@@ -40,7 +40,7 @@ To view and edit a JavaScript file:
 
 1. In the **Editor** pane, edit your file.
 
-1. Press **Ctrl+S** (Windows, Linux) or `Command`+`S` (macOS) to save.  DevTools then loads the JavaScript file into the JavaScript engine of Microsoft Edge.
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save.  DevTools then loads the JavaScript file into the JavaScript engine of Microsoft Edge.
 
    ![The Editor pane](../media/javascript-sources-html-minified.msft.png)
 

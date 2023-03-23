@@ -40,7 +40,7 @@ To stop recording requests:
 
 1. On the **Network** tool, click **Stop recording network log** (![Stop recording network log](../media/record-on-icon.msft.png)).  It turns grey to indicate that DevTools is no longer recording requests.
 
-1. Press `Ctrl`+`E` (Windows, Linux) or `Command`+`E` (macOS) while the **Network** tool is in focus.
+1. Press **Ctrl+E** (Windows, Linux) or **Command+E** (macOS) while the **Network** tool is in focus.
 
 ### Clear requests
 
@@ -262,7 +262,7 @@ To filter requests by request type, click the buttons on the **Network** panel:
 
 If the buttons don't appear, the **Filters** pane might be hidden.  See [Hide the Filters pane](#hide-the-filters-pane).
 
-To enable multiple type filters simultaneously, press and hold `Ctrl` (Windows, Linux) or `Command` (macOS) and then click the filters.
+To enable multiple type filters simultaneously, press and hold **Ctrl** (Windows, Linux) or **Command** (macOS) and then click the filters.
 
 Use the **Type** filters to display JS, CSS, and Document resources:
 
@@ -527,7 +527,7 @@ Each of these phases may appear in the **Timing** tab:
 
 ### Display initiators and dependencies
 
-To display the initiators and dependencies of a request, hold `Shift` and hover on the request in the **Requests** table.
+To display the initiators and dependencies of a request, hold **Shift** and hover on the request in the **Requests** table.
 
 DevTools colors: 
 *  Initiators are shown in green.

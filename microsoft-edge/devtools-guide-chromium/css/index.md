@@ -28,7 +28,7 @@ Follow the interactive tutorial sections in this article to learn the basics of 
 <!-- ====================================================================== -->
 ## View the CSS for an element
 
-1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.  To open the examples, right-click the link, or press and hold `Ctrl` (for Windows, Linux) or `Command` (for macOS) and then click the link.
+1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.  To open the examples, right-click the link, or press and hold **Ctrl** (for Windows, Linux) or **Command** (for macOS) and then click the link.
 
    <!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
 
@@ -158,13 +158,13 @@ Use the following steps to debug or test the Media Queries you defined in your C
 
 1. To open DevTools, you can right-click in a webpage and then select **Inspect**.
 
-1. Click the **Toggle device emulation** (![Device Emulation icon](../media/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+M** (Windows, Linux) or `Cmd`+`Shift`+`M` (macOS).
+1. Click the **Toggle device emulation** (![Device Emulation icon](../media/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+M** (Windows, Linux) or **Command+Shift+M** (macOS).
 
    <!-- todo: update to show new tooltip: -->
 
    ![Opening the device toolbar](../media/css-elements-media-queries-open-device-toolbar.msft.png)
 
-1. With the device toolbar open, click the `...` menu on the top-right and then select **Show media queries**:
+1. With the device toolbar open, click the **...** menu on the top-right and then select **Show media queries**:
 
    ![Showing Media Queries in the Device Toolbar](../media/css-elements-media-queries-showing-mq.msft.png)
 
@@ -174,7 +174,7 @@ Use the following steps to debug or test the Media Queries you defined in your C
 
    ![Selecting a media query from the preview bar](../media/css-elements-media-queries-select-bar.msft.png)
 
-1. To debug media queries and open the CSS file in the `Sources` editor, right-click a bar segment, and then select **Reveal in source code**:
+1. To debug media queries and open the CSS file in the **Sources** editor, right-click a bar segment, and then select **Reveal in source code**:
 
    ![Reveal Media Queries in Sources Editor](../media/css-elements-media-queries-reveal-in-sources.msft.png)
 

@@ -127,7 +127,7 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 
 To end debugging and close the **Edge DevTools** tabs:
 
-1. In the Debug toolbar, click the **Stop** (`Shift`+**F5**) button.  Or, on the **Run** menu, select **Stop Debugging**:
+1. In the Debug toolbar, click the **Stop** (**Shift+F5**) button.  Or, on the **Run** menu, select **Stop Debugging**:
 
    ![The Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
 

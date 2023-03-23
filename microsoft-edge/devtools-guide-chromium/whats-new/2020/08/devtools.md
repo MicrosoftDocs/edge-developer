@@ -38,7 +38,7 @@ In Microsoft Edge 86, you can match keyboard shortcuts in the DevTools to your s
 
 To activate this feature, see [Customize keyboard shortcuts in DevTools](../../../customize/shortcuts.md).
 
-For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) is **F5**.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you select the **Visual Studio Code** preset, that shortcut is now also **F5**.
+For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) is **F5**.  With the **DevTools (Default)** preset, that same shortcut in DevTools is **F8**, but when you select the **Visual Studio Code** preset, that shortcut is now also **F5**.
 
 Chromium issue [#174309](https://crbug.com/174309)
 

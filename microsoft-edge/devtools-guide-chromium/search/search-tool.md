@@ -25,7 +25,7 @@ To quickly open the **Search** tool:
 
 1. In DevTools, press **Esc** to open the Drawer, and then on the Drawer toolbar, select the **Search** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
 
-   Or, press **Ctrl+Shift+F** (Windows, Linux) or `Command`+`Option`+`F` (macOS).
+   Or, press **Ctrl+Shift+F** (Windows, Linux) or **Command+Option+F** (macOS).
 
 The **Search** tool appears in the **Drawer**, with a search toolbar:
 
@@ -43,7 +43,7 @@ To open the **Search** tool from the **Command Menu**:
 
 1. Open the [Command Menu](../command-menu/index.md), by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
-1. Type `search`, and then press **Enter**.
+1. Type **search**, and then press **Enter**.
 
 ![The Command Menu with the Show Search item selected](../media/search-tool/open-search-tool.png)
 
@@ -68,13 +68,13 @@ The **Search** tool shows the list of matching resources, and highlights the cor
 
 By default, the **Search** tool isn't case-sensitive.  A search for a term matches occurrences of that term, regardless of lowercase or uppercase characters.
 
-To only find results that match a particular case (lowercase or uppercase characters), click the **Match Case** (`Aa`) button in the search toolbar.
+To only find results that match a particular case (lowercase or uppercase characters), click the **Match Case** (**Aa**) button in the search toolbar.
 
 
 <!-- ====================================================================== -->
 ## Search for regular expressions
 
-You can use regular expressions to find matching results.  To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid [JavaScript regular expression](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) in the search input field.
+You can use regular expressions to find matching results.  To use a regular expression, click the **Use Regular Expression** (**.\***) button in the toolbar and enter a valid [JavaScript regular expression](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) in the search input field.
 
 ![Searching for a regular expression](../media/search-tool/search-tool-regexp.png)
 

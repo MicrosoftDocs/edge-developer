@@ -95,7 +95,7 @@ So far, there is no content available on your web server. Start by creating the 
 
 1. Open Visual Studio Code, select **File** > **Open Folder** and then select the `MySamplePWA` directory you created in the previous step.
 
-1. Create a new file in the project by pressing `Ctrl+N`, add the following content, and save the file as `index.html`:
+1. Create a new file in the project by pressing **Ctrl+N**, add the following content, and save the file as `index.html`:
 
    ```html
    <!DOCTYPE html>
@@ -126,7 +126,7 @@ A [Web App Manifest](web-app-manifests.md) is a JSON file containing metadata ab
 
 To add an app manifest to your app:
 
-1.  In Visual Studio Code, press `Ctrl`+`N` to create a new file with the following content, and save the file as `manifest.json`.
+1.  In Visual Studio Code, press **Ctrl+N** to create a new file with the following content, and save the file as `manifest.json`.
 
     ```json
     {
@@ -322,7 +322,7 @@ For Microsoft Edge to be able to install the app, your app must have a service w
 
 A service worker is defined in a JavaScript file that's loaded by your app. To add a service worker to your project:
 
-1. In Visual Studio Code, create a new file (`Ctrl`+`N`), add the following content, and save the file as `sw.js`:
+1. In Visual Studio Code, create a new file (**Ctrl+N**), add the following content, and save the file as `sw.js`:
 
     ```javascript
     const CACHE_NAME = `temperature-converter-v1`;

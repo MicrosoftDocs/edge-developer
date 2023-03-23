@@ -207,7 +207,7 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
 
 *  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
-*  Press **Ctrl+Shift+H** (Windows, Linux) or **Cmd+Shift+H** (macOS).
+*  Press **Ctrl+Shift+H** (Windows, Linux) or **Command+Shift+H** (macOS).
 *  [Open the Command Menu](command-menu/index.md#open-the-command-menu) and then type **tooltips**.
 
 Then hover over each outlined region of DevTools:

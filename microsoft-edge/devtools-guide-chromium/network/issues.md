@@ -104,7 +104,7 @@ In the following figure, the long, blue bar in the **Waterfall** next to the png
 Do you have a network issue that should be added to this guide?
 
 *  Send a tweet to [@EdgeDevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]).
-*  Click **Send Feedback** (![Send Feedback](../media/smile-icon.msft.png)) in the DevTools or press **Alt+Shift+I** (Windows, Linux) or `Option`+`Shift`+`I` (macOS) to provide feedback or feature requests.
+*  Click **Send Feedback** (![Send Feedback](../media/smile-icon.msft.png)) in the DevTools or press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS) to provide feedback or feature requests.
 *  [Open an issue](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D) on the docs repo.  -->
 
 

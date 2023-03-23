@@ -258,7 +258,7 @@ To edit files in the **Sources** tool, before doing the steps in this section, y
 
 To open an `.html` file and edit it:
 
-1. In Microsoft Edge, open a new tab, and then press `Ctrl`+`O` (Windows/Linux) or `Command`+`O` (macOS).  A file selection dialog opens.
+1. In Microsoft Edge, open a new tab, and then press **Ctrl+O** (Windows/Linux) or **Command+O** (macOS).  A file selection dialog opens.
 
 1. Select an HTML file from the local copy of the **Demos** repo, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`.  The `.html` file is opened and rendered in Microsoft Edge.
 
@@ -284,7 +284,7 @@ To open an `.html` file and edit it:
 
    ![The modified demo-to-do page before saving changes](./sample-code-images/modified-demo-to-do-before-save.png)
 
-1. Press **Ctrl+S** (Windows, Linux) or `Command`+`S` (macOS) to save the change.  The asterisk is removed from the **index.html** tab in the **Sources** tool.
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change.  The asterisk is removed from the **index.html** tab in the **Sources** tool.
 
 1. Refresh the page.  The change is displayed in the rendered webpage; for example, the word **modified** is added to the title:
 

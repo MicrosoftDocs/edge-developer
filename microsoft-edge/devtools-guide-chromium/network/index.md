@@ -274,7 +274,7 @@ To focus in on a certain type of file, such as stylesheets:
 
    ![Show CSS files only](../media/network-glitch-network-filter-file-type-css.msft.png)
 
-1. To also display scripts, press and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then click **JS**.
+1. To also display scripts, press and hold **Ctrl** (Windows, Linux) or **Command** (macOS), and then click **JS**.
 
 1. To remove the filters and display all resources again, select **All**.
 

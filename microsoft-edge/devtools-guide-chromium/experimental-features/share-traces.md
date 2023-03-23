@@ -118,7 +118,7 @@ Traces are exported as normal or enhanced traces, depending on the **Export Enha
 
 To choose a different trace type when exporting:
 
-1. Right-click (or hold the `Ctrl` key and click) the **Save profile** (![Save profile button](../media/export-icon.png)) in the **Performance** tool or the **Save** button in the **Memory** tool.
+1. Right-click (or hold the **Ctrl** key and click) the **Save profile** (![Save profile button](../media/export-icon.png)) in the **Performance** tool or the **Save** button in the **Memory** tool.
 
 1. Click either **.devtools (enhanced format for Microsoft Edge)** if you want to export an enhanced trace, or click **.json (works with Microsoft Edge and Chromium browsers)** if you want a normal trace.
 
