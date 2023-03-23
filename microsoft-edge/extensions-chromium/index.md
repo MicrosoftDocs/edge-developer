@@ -108,7 +108,7 @@ A **Featured extension** badge in the Microsoft Edge Add-ons Store indicates tha
 
 Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences. 
 
-Developers cannot pay to receive “Featured” badges for their extensions. 
+Developers cannot pay to receive a **Featured** badge for an extension. 
 
 Just because an extension is not “Featured”, it does not mean it’s not safe to use. It simply means that it does not currently meet Microsoft’s security and quality standards to be badged.
 
