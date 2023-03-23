@@ -211,7 +211,7 @@ For reference information about each field, see [Manifest file format (V2)](http
 | `"page_action": {...},` | `"action": {...},` |
 | `"persistent": false,` | removed |
 | If `background` is included, `service_ worker` is optional | If `background` is included, `service_ worker` is required |
-| `"host_permissions": ...,` | `"host_permissions": [...],` |
+| `"host_permissions": ...,` | Seperated into two different keys: `"permissions": [...],` `"host_permissions": [...],` |
 | `"version_name": ...,` | `"version_name": "aString",` |
 
 
