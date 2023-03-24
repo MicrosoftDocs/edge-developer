@@ -1757,6 +1757,17 @@ Receiver:
 <!-- ====================================================================== -->
 ## todo: Shared buffer
 
+<!-- todo: 
+overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
+-->
+
+<!-- todo: 
+See also:
+* []()
+-->
+
+<!-- todo: link from dedicated topical page to this h2 section -->
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2` Class
@@ -1829,6 +1840,17 @@ Receiver:
 <!-- ====================================================================== -->
 ## todo: Managing permissions
 
+<!-- todo: 
+overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
+-->
+
+<!-- todo: 
+See also:
+* []()
+-->
+
+<!-- todo: link from dedicated topical page to this h2 section -->
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2PermissionKind` Enum
@@ -1895,6 +1917,17 @@ Receiver:
 <!-- ====================================================================== -->
 ## todo: Tracking prevention
 
+<!-- todo: 
+overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
+-->
+
+<!-- todo: 
+See also:
+* []()
+-->
+
+<!-- todo: link from dedicated topical page to this h2 section -->
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2EnvironmentOptions` Class
@@ -1942,6 +1975,17 @@ Receiver:
 
 <!-- ====================================================================== -->
 ## todo: Controller's script locale
+
+<!-- todo: 
+overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
+-->
+
+<!-- todo: 
+See also:
+* []()
+-->
+
+<!-- todo: link from dedicated topical page to this h2 section -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
