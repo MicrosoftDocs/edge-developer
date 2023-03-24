@@ -61,7 +61,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Search for text within the current panel.  Not supported in the **Audits**, **Application**, and **Security** tools | **Ctrl+F** | **Command+F** |
 | Opens the **Search** tab in the [Drawer](../customize/index.md#drawer), which lets you search for text across all loaded resources | **Ctrl+Shift+F** | **Command+Option+F** |
 | Open a file in the **Sources** tool | **Ctrl+O** or **Ctrl+P** | **Command+O** or **Command+P** |
-| Zoom in | **Ctrl+Shift**+**+** | **Command+Shift**+**+** |
+| Zoom in | **Ctrl**+**+** | **Command**+**+** |
 | Zoom out | **Ctrl**+**-** | **Command**+**-** |
 | Restore default zoom level | **Ctrl+0** | **Command+0** |
 | Run snippet | Press **Ctrl+O** to open the [Command Menu](../command-menu/index.md), type **!** followed by the name of the script, then press **Enter** | Press **Command+O** to open the [Command Menu](../command-menu/index.md), type **!** followed by the name of the script, then press **Enter** |
