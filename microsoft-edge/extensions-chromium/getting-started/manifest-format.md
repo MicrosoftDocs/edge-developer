@@ -201,7 +201,7 @@ For reference information about each field, see [Manifest file format (V2)](http
 
 
 <!-- ====================================================================== -->
-## Changes in manifest.json from V2 to V3
+## Changes in manifest.json V3 vs. V2
 
 | V3 | V2 |
 |---|---|
@@ -210,7 +210,7 @@ For reference information about each field, see [Manifest file format (V2)](http
 | `"action": {...},` | `"page_action": {...},` |
 | removed | `"persistent": false,` |
 | If `background` is included, `service_ worker` is required | If `background` is included, `service_ worker` is optional |
-| `"host_permissions": [...],` | Separated into two different keys: `"permissions": [...], "host_permissions": [...]` |
+| Separated into two different keys: `"permissions": [...], "host_permissions": [...],` | `"host_permissions": [...],` |
 
 
 <!-- ====================================================================== -->
