@@ -29,6 +29,7 @@ When hosting the WebView2 control, your app has access to the following features
 | [Performance and debugging](#performance-and-debugging) | Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app. |
 | [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
 
+<!-- todo: add table rows for incoming h2s -->
 
 <!-- ====================================================================== -->
 ## Main classes: Environment, Controller, and Core
