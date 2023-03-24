@@ -110,7 +110,7 @@ Badged extensions are curated solely for the purpose of providing Microsoft Edge
 
 Developers cannot pay to receive a **Featured** badge for an extension. 
 
-Just because an extension is not “Featured”, it does not mean it’s not safe to use. It simply means that it does not currently meet Microsoft’s security and quality standards to be badged.
+Just because an extension doesn't have a **Featured** badge, doesn't mean the extension is unsafe. It simply means that the extension doesn't meet Microsoft's security and quality standards to be badged as **Featured**.
 
 <!-- ====================================================================== -->
 ## See also
