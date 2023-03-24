@@ -245,24 +245,28 @@ To add a declaration to an existing style rule:
 <!-- ====================================================================== -->
 ## Change a declaration name or value
 
-Double-click a declaration's name or value to change it.  See [Change declaration values with keyboard shortcuts](#change-declaration-values-with-keyboard-shortcuts) for shortcuts for quickly incrementing or decrementing a value by 0.1, 1, 10, or 100 units.
+To change the name of a CSS declaration, double-click the declaration's name.
+
+To change the value of a CSS declaration, double-click the declaration's value.  The following screenshot shows selecting a value from a list:
 
 ![Changing the value of a declaration](../media/css-elements-styles-border-bottom-style-dropdown.msft.png)
 
+To change a numerical value, type in the value, or use the arrow keys, per the next section.
+
 
 <!-- ====================================================================== -->
-## Change declaration values with keyboard shortcuts
+## Increment numerical declaration values
 
-While editing the value of a declaration, you can use the following keyboard shortcuts to increment the value by a specific amount:
+To change a numerical value of a CSS declaration, type in the value, or use the arrow keys to increment the value by a specific amount:
 
 | Keyboard shortcut | Increments by |
 |---|---|
 | **Alt+Up Arrow** (Windows, Linux) or **Option+Up Arrow** (macOS) | 0.1 |
 | **Up Arrow** | 1 (or 0.1, if the current value is between -1 and 1) |
 | **Shift+Up Arrow** | 10 |
-| **Shift+Page Up** (Windows, Linux) or **Shift+Command+Page Up** (macOS) | 100 |
+| **Shift+Page Up** (Windows, Linux) or **Shift+Command+Up Arrow** (macOS) | 100 |
 
-To decrement, press the **Down Arrow** key instead of the **Up Arrow** key.
+To decrement, press the **Down Arrow** (or **Page Down**) key instead of the **Up Arrow** (or **Page Up**) key.
 
 
 <!-- ====================================================================== -->
