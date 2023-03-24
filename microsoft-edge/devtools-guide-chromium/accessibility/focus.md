@@ -59,7 +59,7 @@ To track the **Tab**-focused element in the **Console** in DevTools by using a L
 
 1. In the DevTools **Console**, right-click the result of the Live Expression (below the `document.activeElement` Live Expression), and then select **Reveal in Elements panel**. 
 
-   In the **Elements** tool, the DOM tree automatically expands and selects the active element (DOM tree node).  The _active element_ is the DOM tree representation of the webpage item that you navigated to by pressing **Tab** and **Shift+Tab**.
+   In the **Elements** tool, the DOM tree automatically expands and selects the active element (DOM tree node).  The _active element_ is the DOM tree representation of the webpage item that you navigated to by pressing **Tab** or **Shift+Tab**.
 
    <!-- Another right-click command on the Live Expression result is **Store outerHTML as global variable**, which is different than the command discussed below.  If you select that command, an expandable element such as `<input id="freedonation" class="smallinput">` is output in the **Console**. -->
 
