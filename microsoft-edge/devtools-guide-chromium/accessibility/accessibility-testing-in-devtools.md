@@ -105,7 +105,7 @@ To learn more about the **Device Emulation** tool, see [Emulate mobile devices (
 
 ### Wavy underlines in the DOM tree indicate automatically detected issues
 
-The DOM tree in the **Elements** tool automatically flags issues directly in the HTML by adding a wavy underline.  If you **Shift+click** any element that has a wavy underline, the **Issues** tool opens:
+The DOM tree in the **Elements** tool automatically flags issues directly in the HTML by adding a wavy underline.  If you **Shift+click** an element that has a wavy underline, the **Issues** tool opens:
 
 ![An element that is shown with wavy underlining in the DOM tree has issues.  Shift+click the element to get directly to the issue](../media/a11y-testing-wavy-underlines.msft.png)
 

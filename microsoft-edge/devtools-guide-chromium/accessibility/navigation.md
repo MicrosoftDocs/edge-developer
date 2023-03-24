@@ -74,7 +74,7 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 | Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS). | The **Console** tool. |
 | Press **Ctrl+Shift+C** (Windows, Linux) or **Command+Option+C** (macOS). | The **Elements** tool, with the DOM tree expanded to show the `<body>` element. |
 | Press **Shift+F10** to open the right-click menu.  To select the **Inspect** command, press **Up Arrow** and then **Enter**. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |
-| Press **Tab** and **Shift+Tab** to put focus on a page element.  Then press **Shift+F10** to open the right-click menu.  To select the **Inspect** command, press **Up Arrow** and then **Enter**. | The **Elements** tool, with the DOM tree expanded to show the focused page element. |
+| Press **Tab** or **Shift+Tab** to put focus on a page element.  Then press **Shift+F10** to open the right-click menu.  To select the **Inspect** command, press **Up Arrow** and then **Enter**. | The **Elements** tool, with the DOM tree expanded to show the focused page element. |
 
 <!-- /keep sync'd -->
 
@@ -145,7 +145,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 ### Modify the attributes of an element in the DOM Tree
 
-*  With focus on a node in the **DOM Tree**, press **Enter** to make it editable.
+*  When focus is on a node of the DOM Tree, press **Enter** to edit the node.
 
 *  Press **Tab** to move between attribute values.  When you hear "space", you're inside of an empty text input, and can type a new attribute value.
 
@@ -158,7 +158,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 ### Edit the HTML of an element in the DOM Tree
 
-*  With focus on a node in the **DOM Tree**, press **Enter** to make it editable.
+*  When focus is on a node of the DOM Tree, press **Enter** to edit the node.
 
 *  Press **Tab** to move between attribute values.  When you hear the name of the element, for instance, `h2`, you're inside of a text input, and you can change the type of the element.
 
@@ -170,9 +170,9 @@ For example, when you type **h3** and then press **Ctrl+Enter** (Windows, Linux)
 <!-- ====================================================================== -->
 ## Tabs in the Elements tool
 
-The **Elements** tool contains additional tabs for inspecting things like the CSS applied to an element or the relevant place in the accessibility tree.
+The **Elements** tool contains additional tabs for inspecting things like the CSS applied to an element, or the relevant place in the accessibility tree.
 
-*  With focus on a node in the **DOM Tree**, press **Tab** until you hear that the **Styles** pane is selected.
+*  When focus is on the DOM Tree, press **Tab** until you hear that the **Styles** pane is selected.
 
 *  Press **Right Arrow** to explore other available tabs.
 
@@ -218,7 +218,7 @@ For additional shortcuts, see [Styles pane keyboard reference](../shortcuts/inde
 
 To toggle the state of an element, such as `:active` or `:focus`:
 
-1. Go to the **Styles** pane and press **Tab** until the **Toggle Element State** button has focus.
+1. Go to the **Styles** pane, and then press **Tab** until the **Toggle Element State** button has focus.
 
 1. Press **Enter** to display the **Force element state** section, which contains checkboxes.
 
@@ -230,7 +230,7 @@ To toggle the state of an element, such as `:active` or `:focus`:
 
 #### Add an existing class
 
-The **Element Classes** button is next to the **Toggle Element State** button.  To move the focus to the **Element Classes** button, press **Tab** and then press **Enter**.  Focus moves into an edit text field labeled **Add new class**.
+The **Element Classes** button is next to the **Toggle Element State** button.  To move the focus to the **Element Classes** button, press **Tab**, and then press **Enter**.  Focus moves into an edit text field labeled **Add new class**.
 
 The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix`, you can press `.` inside of the edit text field to display a suggestion list of classes and use the **Down Arrow** to find the `.clearfix` suggestion.  Or type the class name out yourself and press **Enter** to apply it.
 

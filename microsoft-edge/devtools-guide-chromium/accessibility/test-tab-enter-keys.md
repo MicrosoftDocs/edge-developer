@@ -22,7 +22,7 @@ To check the demo page for accessibility issues by using a keyboard rather than 
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. Use a keyboard to navigate the demo document, using the **Tab** and **Shift+Tab** keys to jump from element to element.  On the demo webpage, the **Tab** key first moves focus to the search form in the `header` section.
+1. Use a keyboard to navigate the demo document, using the **Tab** or **Shift+Tab** keys to jump from element to element.  On the demo webpage, the **Tab** key first moves focus to the search form in the `header` section.
 
 1. Press **Tab** to put focus on a button, and then press **Enter** to click the focused button.  For example, in the demo page, press **Tab** to put focus on the **Search** field, and then press **Enter** to submit the search.  This approach produces the same result as selecting the **go** button.  Selecting **Enter** to send the **Search** form works correctly.
 

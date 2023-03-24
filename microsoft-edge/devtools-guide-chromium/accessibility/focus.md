@@ -22,7 +22,7 @@ ms.date: 06/07/2021
    limitations under the License.  -->
 # Track which element has focus
 
-Suppose that you're testing the keyboard navigation accessibility of a page.  When you navigate the rendered webpage by pressing **Tab** and **Shift+Tab**, the focus ring indicator in the webpage sometimes disappears, because the element that has focus is hidden.  The solution is to create a Live Expression in the DevTools **Console**, and watch that, and right-click it to expand the DOM tree in the **Elements** tool.
+Suppose that you're testing the keyboard navigation accessibility of a page.  When you navigate the rendered webpage by pressing **Tab** or **Shift+Tab**, the focus ring indicator in the webpage sometimes disappears, because the element that has focus is hidden.  The solution is to create a Live Expression in the DevTools **Console**, and watch that, and right-click it to expand the DOM tree in the **Elements** tool.
 
 That's how you can determine which item in the page you have navigated to using the **Tab** key, even when the element that has focus is hidden and not displayed on the rendered page.
 
@@ -49,9 +49,9 @@ To track the **Tab**-focused element in the **Console** in DevTools by using a L
 
 1. Click in the rendered webpage to put focus on it, and then press **Tab** or **Shift+Tab** to move focus around in the rendered webpage.
 
-   The value that's displayed below `document.activeElement` is the result of the expression.  It doesn't visibly change every time you **Tab** to a new UI item in the webpage; it visibly changes when you move to a new type of page element.
+   The value that's displayed below `document.activeElement` is the result of the expression.  As you press **Tab** to move among UI items in the webpage, the `activeElement` value changes when you move to a new type of page element.
 
-   Since that expression `document.activeElement` is updated live in realtime, so that its output result always represents the currently focused element, you now have a way to always keep track of which element has focus, in the DevTools **Console**.  You need to right-click the Live Expression output, as follows:
+   The expression `document.activeElement` is updated live in realtime, so that its output result always represents the currently focused element.  This way, you can keep track of which element has focus, in the DevTools **Console**.  You need to right-click the Live Expression output, as follows:
 
 1. In the DevTools **Console**, hover on the result of the Live Expression (below the `document.activeElement` Live Expression).
 

@@ -42,7 +42,7 @@ To add a live expression:
 
    ![The Live Expression for document.activeElement displays 'body' as the result](../media/console-live-expressions-document-active-element.msft.png)
 
-1. Click different parts of the webpage, or press **Tab** and **Shift+Tab** to move around in the webpage, the `document.activeElement` Live Expression value changes.
+1. Click different parts of the webpage, or press **Tab** or **Shift+Tab** to move around in the webpage, the `document.activeElement` Live Expression value changes.
 
    In the accessibility-testing demo webpage, when you **Tab** to put focus on the **Other** text box in the **Donation** section, the Live Expression value reads `input#freedonation.smallinput`.
 
