@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/08/2023
+ms.date: 03/24/2023
 ---
 # Overview of WebView2 features and APIs
 
@@ -1752,6 +1752,215 @@ Receiver:
    * [ICoreWebView2DevToolsProtocolEventReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceivedeventargs)
 
 ---
+
+
+<!-- ====================================================================== -->
+## todo: Shared buffer
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class
+   * [CoreWebView2.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postsharedbuffertoscript)
+
+* `CoreWebView2Environment` Class
+   * [ICoreWebView2Environment.CreateSharedBuffer Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createsharedbuffer)
+
+* `CoreWebView2Frame` Class
+   * [CoreWebView2Frame.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postsharedbuffertoscript)
+
+* [CoreWebView2SharedBuffer Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer)
+   * [CoreWebView2SharedBuffer.Buffer Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.buffer)
+   * [CoreWebView2SharedBuffer.FileMappingHandle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.filemappinghandle)
+   * [CoreWebView2SharedBuffer.Size Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.size)
+   * [CoreWebView2SharedBuffer.Close Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.close)
+   * [CoreWebView2SharedBuffer.Dispose Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.dispose)
+   * [CoreWebView2SharedBuffer.OpenStream Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer.openstream)
+
+* [CoreWebView2SharedBufferAccess Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbufferaccess)
+   * `ReadOnly`
+   * `ReadWrite`
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class
+   * [CoreWebView2.PostSharedBufferToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postsharedbuffertoscript)
+
+* `CoreWebView2Environment` Class
+   * [ICoreWebView2Environment.CreateSharedBuffer Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createsharedbuffer)
+
+* `CoreWebView2Frame` Class
+   * [CoreWebView2Frame.PostSharedBufferToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#postsharedbuffertoscript)
+
+* [CoreWebView2SharedBuffer Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer)
+   * [CoreWebView2SharedBuffer.Buffer Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer#buffer)
+   * [CoreWebView2SharedBuffer.Size Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer#size)
+   * [CoreWebView2SharedBuffer.Close Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer#close)
+   * [CoreWebView2SharedBuffer.OpenStream Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer#openstream)
+
+* [CoreWebView2SharedBufferAccess Enum](/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbufferaccess)
+   * `ReadOnly`
+   * `ReadWrite`
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_17 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_17)
+   * [ICoreWebView2_17::PostSharedBufferToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2_17#postsharedbuffertoscript)
+
+* [ICoreWebView2Environment12 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environment12)
+   * [ICoreWebView2Environment12::CreateSharedBuffer method](/microsoft-edge/webview2/reference/win32/icorewebview2environment12#createsharedbuffer)
+
+* [ICoreWebView2Frame4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2frame4)
+   * [ICoreWebView2Frame4::PostSharedBufferToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2frame4#postsharedbuffertoscript)
+
+* [ICoreWebView2SharedBuffer interface](/microsoft-edge/webview2/reference/win32/icorewebview2sharedbuffer)
+   * [ICoreWebView2SharedBuffer::OpenStream method](/microsoft-edge/webview2/reference/win32/icorewebview2sharedbuffer#openstream)
+   * [ICoreWebView2SharedBuffer::Close method](/microsoft-edge/webview2/reference/win32/icorewebview2sharedbuffer#close)
+   * [ICoreWebView2SharedBuffer::get_Size method](/microsoft-edge/webview2/reference/win32/icorewebview2sharedbuffer#get_size)
+   * [ICoreWebView2SharedBuffer::get_Buffer method](/microsoft-edge/webview2/reference/win32/icorewebview2sharedbuffer#get_buffer)
+   * [ICoreWebView2SharedBuffer::get_FileMappingHandle method](/microsoft-edge/webview2/reference/win32/icorewebview2sharedbuffer#get_filemappinghandle)
+
+* [COREWEBVIEW2_SHARED_BUFFER_ACCESS](/en-us/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_shared_buffer_access)
+   * `COREWEBVIEW2_SHARED_BUFFER_ACCESS_READ_ONLY`
+   * `COREWEBVIEW2_SHARED_BUFFER_ACCESS_READ_WRITE`
+
+---
+
+
+<!-- ====================================================================== -->
+## todo: Managing permissions
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2PermissionKind` Enum
+   * [CoreWebView2PermissionKind.MidiSystemExclusiveMessages Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
+
+* `CoreWebView2PermissionRequestedEventArgs` Event
+   * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.savesinprofile)   
+
+* [CoreWebView2PermissionSetting Class](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionsetting)
+   * [CoreWebView2PermissionSetting.PermissionKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionsetting.permissionkind)
+   * [CoreWebView2PermissionSetting.PermissionOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionsetting.permissionorigin)
+   * [CoreWebView2PermissionSetting.PermissionState Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionsetting.permissionstate)
+
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.getnondefaultpermissionsettingsasync)
+   * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2PermissionKind` Enum
+   * [CoreWebView2PermissionKind.MidiSystemExclusiveMessages Enum Value](/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind)
+
+* `CoreWebView2PermissionRequestedEventArgs` Event
+   * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionrequestedeventargs#savesinprofile)
+
+* [CoreWebView2PermissionSetting Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionsetting)
+   * [CoreWebView2PermissionSetting.PermissionKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionsetting#permissionkind)
+   * [CoreWebView2PermissionSetting.PermissionOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionsetting#permissionorigin)
+   * [CoreWebView2PermissionSetting.PermissionState Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionsetting#permissionstate)
+
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#getnondefaultpermissionsettingsasync)
+   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setpermissionstateasync)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2getnondefaultpermissionsettingscompletedhandler)
+
+* [ICoreWebView2PermissionRequestedEventArgs3 interface](/en-us/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3)
+   * [ICoreWebView2PermissionRequestedEventArgs3::get_SavesInProfile](/en-us/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3#get_savesinprofile)
+   * [ICoreWebView2PermissionRequestedEventArgs3::put_SavesInProfile](/en-us/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3#put_savesinprofile)
+
+* [ICoreWebView2PermissionSetting interface](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsetting)
+   * [ICoreWebView2PermissionSetting::get_PermissionKind method](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsetting#get_permissionkind)
+   * [ICoreWebView2PermissionSetting::get_PermissionOrigin method](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsetting#get_permissionorigin)
+   * [ICoreWebView2PermissionSetting::get_PermissionState method](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsetting#get_permissionstate)
+
+* [ICoreWebView2PermissionSettingCollectionView interface](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsettingcollectionview)
+   * [ICoreWebView2PermissionSettingCollectionView::GetValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsettingcollectionview#getvalueatindex)
+   * [ICoreWebView2PermissionSettingCollectionView::get_Count method](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsettingcollectionview#get_count)
+
+* [ICoreWebView2Profile4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile4)
+   * [ICoreWebView2Profile4::GetNonDefaultPermissionSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2profile4#getnondefaultpermissionsettings)
+   * [ICoreWebView2Profile4::SetPermissionState method](/microsoft-edge/webview2/reference/win32/icorewebview2profile4#setpermissionstate)
+
+* [ICoreWebView2SetPermissionStateCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2setpermissionstatecompletedhandler)
+
+* `COREWEBVIEW2_PERMISSION_KIND` Enum
+   * [COREWEBVIEW2_PERMISSION_KIND_MIDI_SYSTEM_EXCLUSIVE_MESSAGES enum value](/en-us/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_permission_kind)
+
+---
+
+
+<!-- ====================================================================== -->
+## todo: Tracking prevention
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class
+   * [CoreWebView2EnvironmentOptions.EnableTrackingPrevention Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.enabletrackingprevention)
+
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.PreferredTrackingPreventionLevel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.preferredtrackingpreventionlevel)
+
+* [CoreWebView2TrackingPreventionLevel Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2trackingpreventionlevel)
+    * `None`
+    * `Basic`
+    * `Balanced`
+    * `Strict`
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class
+   * [CoreWebView2EnvironmentOptions.EnableTrackingPrevention Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#enabletrackingprevention)
+
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.PreferredTrackingPreventionLevel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#preferredtrackingpreventionlevel)
+
+* [CoreWebView2TrackingPreventionLevel Enum](/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2trackingpreventionlevel)
+    * `None`
+    * `Basic`
+    * `Balanced`
+    * `Strict`
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2EnvironmentOptions5 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions5)
+   * [ICoreWebView2EnvironmentOptions5::EnableTrackingPrevention property (get](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions5#get_enabletrackingprevention), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions5#put_enabletrackingprevention)
+
+* [ICoreWebView2Profile3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile3)
+   * [ICoreWebView2Profile3::PreferredTrackingPreventionLevel property (get](/microsoft-edge/webview2/reference/win32/icorewebview2profile3#get_preferredtrackingpreventionlevel), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2profile3#put_preferredtrackingpreventionlevel)
+
+* [COREWEBVIEW2_TRACKING_PREVENTION_LEVEL enum](/en-us/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_tracking_prevention_level)
+  * `COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_NONE`
+  * `COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_BASIC`
+  * `COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_BALANCED`
+  * `COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_STRICT`
+
+---
+
+
+<!-- ====================================================================== -->
+## todo: Controller's script locale
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2ControllerOptions` Class
+   * [CoreWebView2ControllerOptions.ScriptLocale Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.scriptlocale)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2ControllerOptions` Class
+   * [CoreWebView2ControllerOptions.ScriptLocale Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions#scriptlocale)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ControllerOptions2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2)
+   * [ICoreWebView2ControllerOptions2::get_ScriptLocale method](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2#get_scriptlocale)
+   * [ICoreWebView2ControllerOptions2::put_ScriptLocale method](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2#put_scriptlocale)
+
+---
+
 
 <!-- ====================================================================== -->
 ## See also
