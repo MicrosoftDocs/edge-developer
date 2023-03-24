@@ -260,7 +260,7 @@ While editing the value of a declaration, you can use the following keyboard sho
 | **Alt+Up Arrow** (Windows, Linux) or **Option+Up Arrow** (macOS) | 0.1 |
 | **Up Arrow** | 1 (or 0.1, if the current value is between -1 and 1) |
 | **Shift+Up Arrow** | 10 |
-| **Shift+Page Up** (Windows, Linux) or **Shift+Command+Up** (macOS) | 100 |
+| **Shift+Page Up** (Windows, Linux) or **Shift+Command+Page Up** (macOS) | 100 |
 
 To decrement, press the **Down Arrow** key instead of the **Up Arrow** key.
 
