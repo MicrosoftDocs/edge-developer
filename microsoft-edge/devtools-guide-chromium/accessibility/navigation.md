@@ -113,7 +113,7 @@ To open the **Elements** tool:
 
 1. Open the **Command Menu**.
 
-1. Start typing `elements`, select the **Panel > Show Elements** command, and then press **Enter**.
+1. Start typing **elements**, select the **Panel > Show Elements** command, and then press **Enter**.
 
 Opening a tool this way puts focus in the content area of the tool.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.
 
