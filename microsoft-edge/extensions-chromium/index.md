@@ -107,13 +107,17 @@ After you've successfully submitted your extension, your extension undergoes a r
 <!-- ====================================================================== -->
 ## The Featured badge
 
-A **Featured** badge in the Microsoft Edge Add-ons Store indicates that the extension has been determined to follow Microsoft's recommended best practices related to security, privacy, transparency, and user experience.
+A **Featured** badge in the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) indicates that the extension has been determined to follow Microsoft's recommended best practices related to security, privacy, transparency, and user experience.
 
 ![The Featured badge to the right of the extension name](./index-images/featured-badge.png)
 
 When you hover on a **Featured** badge, the tooltip reads: **This extension follows all of Microsoft's recommended practices and has been verified**.
 
-The Microsoft Edge Add-ons Store team reviews each extension for adherence to EAS best practices before granting it a **Featured** badge.  Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences.  Developers cannot pay to receive a **Featured** badge for an extension. 
+<!-- todo: uncomment after Featured badge appears:
+For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh) extension has a **Featured** badge at the Microsoft Edge Add-ons website.
+-->
+
+The Microsoft Edge Add-ons team reviews each extension for adherence to EAS best practices before granting it a **Featured** badge.  Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences.  Developers cannot pay to receive a **Featured** badge for an extension. 
 
 Just because an extension doesn't have a **Featured** badge, doesn't mean the extension is unsafe. It simply means that the extension doesn't meet Microsoft's security and quality standards to be badged as **Featured**.
 
