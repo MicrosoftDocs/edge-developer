@@ -12,6 +12,8 @@ ms.date: 3/20/2023
 
 Follow these Best Practices to implement your extension and list it on the Microsoft Edge Add-ons Store.
 
+
+<!-- ====================================================================== -->
 ## Design a high-quality extension
 
 Build extensions that conform to Microsoft's standards for security, privacy, transparency, and user experience.
