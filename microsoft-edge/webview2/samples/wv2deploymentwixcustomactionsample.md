@@ -59,7 +59,7 @@ If not done yet, install WiX Toolset:
 
 1. Click the **OK** button.  The WiX installer window closes.
 
-1. Press the **Windows** key ![Windows key logo](../../media/windows-keyboard-logo.png) on your keyboard, type **Windows Features**, and then press **Enter**.  The **Turn Windows features on or off** dialog box appears.
+1. Press the **Windows** key ![Windows key logo](../../media/windows-keyboard-logo.png) on your keyboard, type **Windows Features**, and then press **Enter**.  The **Turn Windows features on or off** dialog appears.
 
 1. Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box:
 
@@ -193,7 +193,7 @@ If you plan to package either the Bootstrapper (Approach 2) or the Standalone In
 ## See also
 
 * [Win32 sample app](./webview2apissample.md)
-* [Deploying the Evergreen WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution.md#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
+* [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
 * [Readme for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme).
 * [WiX Toolset](https://wixtoolset.org/)
 * [WiX > Adding a Custom Action](https://wixtoolset.org/documentation/manual/v3/wixdev/extensions/authoring_custom_actions.html)

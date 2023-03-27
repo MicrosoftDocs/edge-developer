@@ -73,9 +73,9 @@ The first step to build this sample is to get a local copy of the samples repo.
 
    * `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
-   A **Review Solution Actions** dialog box might open, prompting you for which installed Windows SDK to retarget the project to:
+   A **Review Solution Actions** dialog might open, prompting you for which installed Windows SDK to retarget the project to:
 
-   ![The 'Review Solution Actions' dialog box](webview2samplewincomp-images/review-solution-actions.png)
+   ![The 'Review Solution Actions' dialog](webview2samplewincomp-images/review-solution-actions.png)
 
 1. In the **Windows SDK Version** dropdown list, select **10.0.20348.0** or later, or **10.0.18362.0** or earlier; do not select **10.0.19041.0**.  Then click the **OK** button.  If those versions aren't available, do the steps in the "Install the Windows SDK" section below.  Otherwise, skip to the section below that.
 
@@ -91,7 +91,7 @@ By default, this sample app uses the latest Window 10 SDK version you have insta
 
 To install a Windows 10 SDK:
 
-1. Go to [Windows SDK and emulator archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/).
+1. Go to [Windows SDK and emulator archive](https://developer.microsoft.com/windows/downloads/sdk-archive/).
 
 1. On one of the following rows, click the **Install SDK** link:
    *  Windows 10 SDK version 2104 (10.0.20348.0) (or later)
@@ -184,4 +184,4 @@ This step is optional.  The sample has preinstalled:
 ## See also
 
 * [Get started with WebView2 in Win32 apps](../get-started/win32.md)
-* [WebView2 Reference Documentation](/microsoft-edge/webview2/webview2-api-reference)
+* [WebView2 API Reference](../webview2-api-reference.md)

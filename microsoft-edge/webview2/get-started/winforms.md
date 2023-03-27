@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 10/26/2022
 ---
 # Get started with WebView2 in WinForms apps
 
@@ -22,23 +22,19 @@ This tutorial helps you:
 *  Learn about WebView2 concepts along the way.
 
 
-#### Completed project
-
-A completed version<!--TODO: what date?--> of this tutorial project is available in the **WebView2Samples** repo:
-
-*  Sample name: **Win32_GettingStarted**
-*  Repo directory: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)
-*  Solution file: **WebView2GettingStarted.sln**
-
-
 <!-- ====================================================================== -->
 ## Step 1 - Optionally clone or download the WebView2Samples repo
 
 Do either of the following:
 
-*  Create a new project in Visual Studio starting from a project template, using the steps below.
+*  Create a new project in Visual Studio starting from a project template, using the steps in the sections below.  This will give you the latest code and project structure.
 
 *  Clone or download the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.  See [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  A completed version of this tutorial project is available in the WebView2Samples repo directory [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted).
+   *  Sample name: **Win32_GettingStarted**
+   *  Repo directory: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)
+   *  Solution file: **WebView2GettingStarted.sln**
+
+The sample in the repo might not be as up-to-date as a project that you create by using the latest Visual Studio project templates.
 
 
 <!-- ====================================================================== -->
@@ -52,37 +48,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install a preview channel of Microsoft Edge
-
-<!-- TODO: delete this major step? -->
-
-1. Install any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
-   *  Windows 7
-   *  Windows 8.1
-   *  Windows 10
-   *  Windows 11
-
-   We recommend using the Canary channel.  The minimum required version is 82.0.488.0.
-
-
-<!-- ====================================================================== -->
-## Step 4 - Install the WebView2 Runtime (optional)
-
-<!-- TODO: delete this major step? -->
-
-1. Optionally, install the WebView2 <!--Fixed Version--> Runtime.  Go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2), click the **Download Now** link.  In the **Fixed Version** section, select a version and architecture, and then click the **Download** button.  A file such as `Microsoft.WebView2.FixedVersionRuntime.103.0.1264.71.x64.cab` is placed in your **Downloads** directory.  
-
-   If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
-  
-   If you want more information now, see [Understand the different WebView2 SDK versions](../concepts/versioning.md).
-
-In a later step, you'll install the WebView2 SDK on your machine, if it's not installed already.
-
-Continue with the steps below.
-
-
-<!-- ====================================================================== -->
-## Step 5 - Create a single-window app
+## Step 3 - Create a single-window app
 
 Start with a basic desktop project that contains a single main window.
 
@@ -140,7 +106,7 @@ You now have an empty WinForms project that runs.  Next, set up the project to a
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
-## Step 6 - Install the WebView2 SDK
+## Step 4 - Install the WebView2 SDK
 
 For every WebView2 project, you use the NuGet package manager within Visual Studio to add the WebView2 SDK to the project.  You install the **Microsoft.Web.WebView2** SDK NuGet package for use by the current project.
 
@@ -162,9 +128,9 @@ Use NuGet to add the WebView2 SDK to the project, as follows:
 
    _To zoom, right-click > **Open image in new tab**._
 
-1. Click the **Install** (or **Update**) button.  The **Preview Changes** dialog box opens:
+1. Click the **Install** (or **Update**) button.  The **Preview Changes** dialog opens:
 
-   ![The Preview Changes dialog box](media/winforms-install-webview2-preview.png)
+   ![The Preview Changes dialog](media/winforms-install-webview2-preview.png)
 
 1. Click the **OK** button.
 
@@ -188,7 +154,7 @@ You've added the WebView2 SDK to the project, but haven't added any WebView2 cod
 
 
 <!-- ====================================================================== -->
-## Step 7 - Create a single WebView2 control
+## Step 5 - Create a single WebView2 control
 
 Now that the WebView2 SDK is installed for the WinForms project, add a WebView2 control to the app, as follows:
 
@@ -248,7 +214,7 @@ If you're working on a high-resolution monitor, you may need to [configure your 
 
 
 <!-- ====================================================================== -->
-## Step 8 - Add controls and process window resize events
+## Step 6 - Add controls and process window resize events
 
 Add more controls to your Windows Forms form from the toolbox, and then process window resize events, as follows.
 
@@ -338,7 +304,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 
 
 <!-- ====================================================================== -->
-## Step 9 - Navigation
+## Step 7 - Navigation
 
 Enable users to change the URL that the WebView2 control displays, by reading the text entered in the text box, to serve as an address bar.
 
@@ -386,7 +352,7 @@ Enable users to change the URL that the WebView2 control displays, by reading th
 
 
 <!-- ====================================================================== -->
-## Step 10 - Navigation events
+## Step 8 - Navigation events
 
 <!--
 maintenance link (keep)
@@ -459,7 +425,7 @@ To demonstrate how to use the events, start by registering a handler for `Naviga
 
 
 <!-- ====================================================================== -->
-## Step 11 - Scripting
+## Step 9 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript runs with specific timing.
 
@@ -501,7 +467,7 @@ For example, add a script that sends an alert when a user navigates to a non-HTT
 
 
 <!-- ====================================================================== -->
-## Step 12 - Communication between host and web content
+## Step 10 - Communication between host and web content
 
 The host and web content can use `postMessage` to communicate with each other as follows:
 
@@ -553,7 +519,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
    Next, for WebView2 to send and respond to the web message, after `CoreWebView2` is initialized, the host will inject a script in the web content to:
  
-  *  Send the URL to the host using `postMessage`.
+   *  Send the URL to the host using `postMessage`.
 
    *  Register an event handler to display a message sent from the host, in an alert box, before displaying webpage content.
 
@@ -593,9 +559,17 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 Congratulations, you built your first WebView2 app!
 
 
+#### Distributing a WebView2 app
+
+If you were to distribute the app that results from this tutorial, you would need to distribute the WebView2 Runtime along with your app.  The WebView2 Runtime would then be automatically installed onto user machines.  For more information, see [Distribute your app and the WebView2 Runtime](../concepts/distribution.md).
+
+
 <!-- ====================================================================== -->
 ## See also
 
+* [Distribute your app and the WebView2 Runtime](../concepts/distribution.md)
 * [WinForms sample app](../samples/webview2windowsformsbrowser.md) - Demonstrates more WebView2 APIs than the present tutorial.
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - Conceptual and how-to articles about building and deploying WebView2 apps.
-* [Microsoft.Web.WebView2.WinForms](/dotnet/api/microsoft.web.webview2.winforms) - API Reference.
+* [WebView2 API Reference](../webview2-api-reference.md)
+   * [Core](/dotnet/api/microsoft.web.webview2.core)
+   * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
+   * [Windows Forms](/dotnet/api/microsoft.web.webview2.winforms)

@@ -20,7 +20,7 @@ Support for the following technologies is included in IE mode:
 
 In IE mode, the rendering process is based on Internet Explorer 11. The Microsoft Edge process manager handles the lifetime of the rendering process.  The rendering process is constrained to the lifetime of the tab for a specific site (or app).  When a tab renders in IE mode, the IE mode indicator icon appears in the address bar for the specific tab.
 
-![The IE mode indicator icon in the address bar.](../media/ie-mode-badge.msft.png)
+![The IE mode indicator icon in the address bar](../media/ie-mode-badge.msft.png)
 
 IE mode is available on Windows 10 Version 1903 (May 2019 Update), and is coming to all supported Windows platforms.
 
@@ -30,7 +30,7 @@ IE mode is available on Windows 10 Version 1903 (May 2019 Update), and is coming
 
 The IE mode indicator icon appears in the address bar if the Enterprise admin has configured the website to appear in IE mode.  To view the document mode of a website in IE mode, select the IE mode indicator icon in the address bar.
 
-![View document mode using the IE mode indicator icon.](../media/ie-mode-badge-doc-mode.msft.png)
+![View document mode using the IE mode indicator icon](../media/ie-mode-badge-doc-mode.msft.png)
 
 If a tab uses IE mode, the tab has the following limitations:
 
@@ -42,11 +42,11 @@ If a tab uses IE mode, the tab has the following limitations:
 
 *  Pressing `F12` or `Ctrl`+`Shift`+`I` opens a blank instance of the Microsoft Edge DevTools and displays the following message: **Developer Tools aren't available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**
 
-![DevTools launched in IE mode.](../media/ie-mode-devtools.msft.png)
+![DevTools launched in IE mode](../media/ie-mode-devtools.msft.png)
 
 If Internet Explorer isn't available on your computer, to debug the content of an IE mode tab, use IEChooser to open Internet Explorer DevTools, as follows:
 
-1. In Windows, open the **Run** dialog box.  For example, press the `Windows logo key` + `R`.
+1. In Windows, open the **Run** dialog.  For example, press the `Windows logo key` + `R`.
 
 1. Enter `%systemroot%\system32\f12\IEChooser.exe`, and then click **OK**.
 

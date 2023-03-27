@@ -76,7 +76,7 @@ To access the **Quick Fix** options:
 1. Select whichever **Quick Fix** you want to use to resolve the issue or to stop reporting it as an issue.  Selecting to ignore the issue automatically creates a `.hintrc` file which tells the extension to ignore this issue type and not report it again.
 
 See also:
-* [Automated Quick Fixes and issue filtering](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#automated-quick-fixes-and-issue-filtering) in _Microsoft Edge DevTools extension for Visual Studio Code_
+* [Automated Quick Fixes and issue filtering](../../../../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md#automated-quick-fixes-and-issue-filtering) in _Inline and live issue analysis_
 
 
 <!-- ====================================================================== -->

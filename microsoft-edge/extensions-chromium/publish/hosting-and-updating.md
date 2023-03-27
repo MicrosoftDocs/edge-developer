@@ -1,11 +1,11 @@
 ---
 title: Extension hosting
-description: Host and publish extensions in the enterprise for Microsoft Edge.
+description: Host and publish Microsoft Edge extensions in the enterprise.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/10/2021
+ms.date: 11/04/2022
 ---
 # Extension hosting
 
@@ -30,5 +30,5 @@ In both cases, Microsoft Edge periodically checks extension hosts for new versio
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/extensions/hosting).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
