@@ -93,7 +93,7 @@ The `.heapsnapshot` JSON data contains a root object that has the following prop
 | `trace_function_infos` | _Not documented yet_ | `Array` |
 | `trace_tree` | _Not documented yet_ | `Array` |
 | `samples` | _Not documented yet_ | `Array` |
-| `locations` | Contains information about the location of nodes. To parse this data, use `snapshot.meta.location_fields` with the `nodes` Array | `Array` |
+| `locations` | Contains information about the location of nodes. To parse this data, use `snapshot.meta.location_fields` with the `nodes` array. | `Array` |
 | `strings` | An array of all of the strings that are held in memory. These can be any strings, such as user-defined strings or code. | `Array` |
 
 #### Snapshot
