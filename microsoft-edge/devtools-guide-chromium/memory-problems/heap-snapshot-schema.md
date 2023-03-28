@@ -313,7 +313,7 @@ To use this array, the following information is needed:
 * `snapshot.nodes`, to link a location group back to a node.
 
 The current `snapshot.meta.location_fields` has the information for each location group:
-| Index in location_fields | Name | Description |
+| Index in `location_fields` | Name | Description |
 | --- | --- | --- |
 | `0` | `object_index` | The index of the associated node in `snapshot.nodes` array. |
 | `1` | `script_id` | The id of the script that creates the node which `object_index` is pointing to. |
