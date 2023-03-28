@@ -367,4 +367,6 @@ The first location group in the `locations` array `7,9,0,0,` is associated with 
 <!-- ====================================================================== -->
 ## See also
 
-* To learn more about the `.heapsnapshot` file format, see the code that generates the file, which is  [the `HeapSnapshotGenerator` class in `heap-snapshot-generator.h`](https://chromium.googlesource.com/external/v8/+/master/src/heap-snapshot-generator.h#142).
+To learn more about the `.heapsnapshot` file format, see the code that generates the file, which is the `HeapSnapshotGenerator` class in `heap-snapshot-generator.h`.
+*  [HeapSnapshot class (line 142)](https://chromium.googlesource.com/external/v8/+/master/src/heap-snapshot-generator.h#142)
+*  [HeapSnapshotGenerator class (line 522)](https://chromium.googlesource.com/external/v8/+/master/src/heap-snapshot-generator.h#522)
