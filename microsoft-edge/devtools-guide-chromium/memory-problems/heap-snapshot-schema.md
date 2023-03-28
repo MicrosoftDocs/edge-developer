@@ -320,7 +320,7 @@ The current `snapshot.meta.location_fields` has the information for each locatio
 | `2` | `line` | The line number in the script of the node creation. |
 | `3` | `column` | The column number in the script of the node creation. |
 
-The following code example shows how to link the `snapshot.locations` array to the `snapshot.nodes` array.
+The following code example shows how to link the `snapshot.locations` array to the `snapshot.nodes` array:
 
 ```json
 {
