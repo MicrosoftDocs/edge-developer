@@ -93,7 +93,7 @@ The `.heapsnapshot` JSON data contains a root object that has the following prop
 | `trace_function_infos` | _Not documented yet_ | `Array` |
 | `trace_tree` | _Not documented yet_ | `Array` |
 | `samples` | _Not documented yet_ | `Array` |
-| `locations` | _Not documented yet_ | `Array` |
+| `locations` | Contains information about the location of nodes. To parse this data, use `snapshot.meta.location_fields` with the `nodes` Array | `Array` |
 | `strings` | An array of all of the strings that are held in memory. These can be any strings, such as user-defined strings or code. | `Array` |
 
 #### Snapshot
@@ -303,6 +303,66 @@ The first number in the group of numbers for an edge in the `edges` array corres
 | Shortcut | An easier-to-read representation of some other path. This type is rarely used. For example, if you use `Function.prototype.bind` to create a bound function with some bound arguments, V8 creates a `JSBoundFunction`, which points to a `FixedArray` (an internal type), which points to each bound argument. When producing a snapshot, V8 adds a shortcut edge from the bound function directly to each bound argument, bypassing the `FixedArray`. |
 | Element | Object properties where the key is a number. |
 
+#### locations
+
+The `locations` array, which is at the top level of the `.heapsnapshot` data, contains information about the location of HeapSnapshot nodes.
+
+To use this array, the following information is needed:
+
+* `snapshot.meta.location_fields`, to know how many fields each location group has.
+* `snapshot.nodes`, to link a location group back to a node.
+
+The current `snapshot.meta.location_fields` has the information for each location group:
+| Index in location_fields | Name | Description |
+| --- | --- | --- |
+| `0` | `object_index` | The index of the associated node in `snapshot.nodes` array. |
+| `1` | `script_id` | The id of the script that creates the node which `object_index` is pointing to. |
+| `2` | `line` | The line number in the script of the node creation. |
+| `3` | `column` | The column number in the script of the node creation. |
+
+The following code example shows how to link the `snapshot.locations` Array to `snapshot.nodes` Array.
+
+```json
+{
+    "snapshot": {
+        "meta": {
+            "location_fields": [
+                "object_index",
+                "script_id",
+                "line",
+                "column"
+            ]
+            ...
+        }
+        ...
+    },
+    "nodes": [
+        9,1,1,0,10,0,0,
+        2,1,79,12,1,0,0,
+        ...
+    ],
+    "locations":[
+        7,9,0,0,
+        113792,3,25,21,
+        ...
+    ],
+    ...
+}
+```
+
+The fisrt location group in the `locations` array `7,9,0,0,` is associated with the node info group started at index 7 in the `nodes` array. Therefore, the node has these info: 
+```
+"type": 2,
+"name": 1,
+"id": 79,
+"self_size": 12,
+"edge_count": 1,
+"trace_node_id": 0,
+"detachedness": 0,
+"script_id": 9,
+"line" 0,
+"column": 0,
+```
 
 <!-- ====================================================================== -->
 ## See also
