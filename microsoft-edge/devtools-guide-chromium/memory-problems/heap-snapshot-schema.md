@@ -350,7 +350,7 @@ The following code example shows how to link the `snapshot.locations` Array to `
 }
 ```
 
-The fisrt location group in the `locations` array `7,9,0,0,` is associated with the node info group started at index 7 in the `nodes` array. Therefore, the node has these info: 
+The fisrt location group in the `locations` array `7,9,0,0,` is associated with the node info group that starts at index 7 in the `nodes` array. Therefore, the node contains the following key/value pairs:
 ```
 "type": 2,
 "name": 1,
