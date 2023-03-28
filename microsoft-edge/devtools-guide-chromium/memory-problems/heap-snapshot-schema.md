@@ -312,7 +312,8 @@ To use this array, the following information is needed:
 * `snapshot.meta.location_fields`, to know how many fields each location group has.
 * `snapshot.nodes`, to link a location group back to a node.
 
-The current `snapshot.meta.location_fields` has the information for each location group:
+`snapshot.meta.location_fields` contains the information for each location group:
+
 | Index in `location_fields` | Name | Description |
 | --- | --- | --- |
 | `0` | `object_index` | The index of the associated node in the `snapshot.nodes` array. |
