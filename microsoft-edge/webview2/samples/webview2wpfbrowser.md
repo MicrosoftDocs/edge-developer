@@ -91,7 +91,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    This builds the project file `WebView2WpfBrowser.csproj`.
 
-1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
+1. In Visual Studio, select **Debug** > **Start Debugging** (**F5**).
 
    The sample app window opens:
 

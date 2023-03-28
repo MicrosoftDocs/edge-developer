@@ -115,13 +115,13 @@ To attach the Visual Studio debugger to an instance of Microsoft Edge that's alr
    start msedge --remote-debugging-port=9222
    ```
     
-1. In Visual Studio, select **Debug** > **Attach to Process** or `Ctrl`+`Alt`+`P`.
+1. In Visual Studio, select **Debug** > **Attach to Process** or **Ctrl+Alt+P**.
 
    ![Selecting 'Debug > Attach to Process' in Visual Studio](media/attach-to-process.png)
 
 1. In the **Attach to Process** dialog, set **Connection type** to **Chrome devtools protocol websocket (no authentication)**.
 
-1. In the **Connecting target** text box, type `http://localhost:9222/` and then press `Enter`.
+1. In the **Connecting target** text box, type `http://localhost:9222/` and then press **Enter**.
 
 1. Review the list of open tabs you have in Microsoft Edge listed out in the **Available processes** section.
 

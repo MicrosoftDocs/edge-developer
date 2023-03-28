@@ -1263,7 +1263,7 @@ WebView2 gives your app access to window-specific attributes, such as positionin
 <!-- ------------------------------ -->
 #### Zooming
 
-WebView2 `ZoomFactor` is used to scale just the web content of the window.  UI scaling is also updated when the user zooms the content by pressing `Ctrl` while rotating the mouse wheel.
+WebView2 `ZoomFactor` is used to scale just the web content of the window.  UI scaling is also updated when the user zooms the content by pressing **Ctrl** while rotating the mouse wheel.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1330,7 +1330,7 @@ The RasterizationScale API scales all WebView2 UI including context menus, toolt
 <!-- ------------------------------ -->
 #### Focus and tabbing
 
-The WebView2 control raises events to let the app know when the control gains focus or loses focus. For tabbing (pressing the `Tab` key), there's an API to move focus into WebView2 and an event for WebView2 to request the app to take focus back.
+The WebView2 control raises events to let the app know when the control gains focus or loses focus. For tabbing (pressing the **Tab** key), there's an API to move focus into WebView2 and an event for WebView2 to request the app to take focus back.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

@@ -24,11 +24,11 @@ ms.date: 07/19/2021
 
 To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_agent) string from Microsoft Edge DevTools:
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
    ![The Command Menu](../media/device-mode-console-command-menu.msft.png)
     
-1. Type `network conditions`, select **Show Network conditions**, and then press `Enter` to open the **Network conditions** tool.
+1. Type `network conditions`, select **Show Network conditions**, and then press **Enter** to open the **Network conditions** tool.
 
 1. In the **User agent** section, clear the **Use browser default** checkbox.
 

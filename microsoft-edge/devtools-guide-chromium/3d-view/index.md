@@ -47,8 +47,8 @@ To pan around the DOM, right-click and drag in the direction you want the DOM to
 To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
 
 To rotate the page by using the keyboard, click in the 3D canvas to put focus on it so that a black border appears, and then press the arrow keys.
-*  To rotate the page horizontally, press the `left arrow` and `right arrow` keys.
-*  To rotate the page vertically, press the `up arrow` and `down arrow` keys.
+*  To rotate the page horizontally, press the **Left Arrow** or **Right Arrow** key.
+*  To rotate the page vertically, press the **Up Arrow** or **Down Arrow** key.
 
 The keys rotate the page, regardless of whether the **Pan view** or **Rotate view** button is selected in the toolbar.
 
@@ -219,8 +219,8 @@ To pan around the DOM, right-click and drag in the direction you want the DOM to
 To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
 
 To rotate the page by using the keyboard, click in the 3D canvas to put focus on it so that a black border appears, and then press the arrow keys.
-*  To rotate the page horizontally, press the `left arrow` and `right arrow` keys.
-*  To rotate the page vertically, press the `up arrow` and `down arrow` keys.
+*  To rotate the page horizontally, press the **Left Arrow** or **Right Arrow** key.
+*  To rotate the page vertically, press the **Up Arrow** or **Down Arrow** key.
 
 The keys rotate the page, regardless of whether the **Pan view** or **Rotate view** button is selected in the toolbar.
 

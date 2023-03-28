@@ -150,7 +150,7 @@ For the history of this feature, see Chromium issue: [1243976](https://crbug.com
 
 <!-- Chromium What's New entry: [Improved UI for DevTools command menu](https://developer.chrome.com/blog/new-in-devtools-95/#command-menu) at _What's New in DevTools (Chrome 95)_. -->
 
-The **Command Menu** has been enhanced to make it easier to search for a file.  When you press `Ctrl`+`P` in Windows and Linux or `Command+P` in macOS, the **Command Menu** now displays filenames in bold, along with an icon indicating the file type:
+The **Command Menu** has been enhanced to make it easier to search for a file.  When you press **Ctrl+P** in Windows and Linux or **Command+P** in macOS, the **Command Menu** now displays filenames in bold, along with an icon indicating the file type:
 
 ![Command Menu showing filenames in bold with an icon indicating the file type](../../media/2021/10/command-menu-filenames-bold-icons.png)
 

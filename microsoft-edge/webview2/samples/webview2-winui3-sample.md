@@ -34,7 +34,7 @@ This sample was created using Visual Studio 2022.  To build and run this sample,
 
    ![Initial solution opened](./webview2-3winui3-sample-images/initial-solution-opened.png) 
 
-1. Press `F5`.  A dialog might open, saying "There were deployment errors.  Continue?"  Click the **No** button.
+1. Press **F5**.  A dialog might open, saying "There were deployment errors.  Continue?"  Click the **No** button.
 
 1. Right-click the **WebView2_WinUI3_Sample** project, and then select **Debug > Start New Instance**. -->
 

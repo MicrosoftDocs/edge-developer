@@ -28,7 +28,7 @@ Follow the interactive tutorial sections in this article to learn the basics of 
 <!-- ====================================================================== -->
 ## View the CSS for an element
 
-1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.  To open the examples, right-click the link, or press and hold `Ctrl` (for Windows, Linux) or `Command` (for macOS) and then click the link.
+1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.  To open the examples, right-click the link, or press and hold **Ctrl** (for Windows, Linux) or **Command** (for macOS) and then click the link.
 
    <!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
 
@@ -68,9 +68,9 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 
 1. Click `element.style` near the top of the **Styles** panel.
 
-1. Type `background-color` or select it from the drop-down list and then press `Enter`.
+1. Type `background-color` or select it from the drop-down list and then press **Enter**.
 
-1. Type `honeydew` or select it from the drop-down list of colors and then press `Enter`.  After you pick a color, an inline style declaration that's applied to the element is displayed In the **DOM Tree**, 
+1. Type `honeydew` or select it from the drop-down list of colors and then press **Enter**.  After you pick a color, an inline style declaration that's applied to the element is displayed In the **DOM Tree**, 
 
     The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** panel:
 
@@ -90,7 +90,7 @@ To display how an element looks when a CSS class is applied to or removed from a
 
 1. Click **.cls**.  DevTools shows a text box where you can add CSS classes to the page element that you're inspecting.
 
-1. Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you can also  toggle each class from here.
+1. Type `color_me` in the **Add new class** text box and then press **Enter**.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you can also  toggle each class from here.
 
    The `color_me` class is applied to the element using the **.cls** section of the **Styles** panel:
 
@@ -136,7 +136,7 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
 1. Double-click the left margin in the **Box Model**, which currently has a value of `-`. The `-` means that the element doesn't have a value for `margin-left`.
 
-1. Type `100px` and press `Enter`.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.
+1. Type `100px` and press **Enter**.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.
 
    Hovering over the element's padding:
 
@@ -158,13 +158,13 @@ Use the following steps to debug or test the Media Queries you defined in your C
 
 1. To open DevTools, you can right-click in a webpage and then select **Inspect**.
 
-1. Click the **Toggle device emulation** (![Device Emulation icon](../media/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press `Ctrl`+`Shift`+`M` (Windows, Linux) or `Cmd`+`Shift`+`M` (macOS).
+1. Click the **Toggle device emulation** (![Device Emulation icon](../media/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+M** (Windows, Linux) or **Command+Shift+M** (macOS).
 
    <!-- todo: update to show new tooltip: -->
 
    ![Opening the device toolbar](../media/css-elements-media-queries-open-device-toolbar.msft.png)
 
-1. With the device toolbar open, click the `...` menu on the top-right and then select **Show media queries**:
+1. With the device toolbar open, click the **...** menu on the top-right and then select **Show media queries**:
 
    ![Showing Media Queries in the Device Toolbar](../media/css-elements-media-queries-showing-mq.msft.png)
 
@@ -174,7 +174,7 @@ Use the following steps to debug or test the Media Queries you defined in your C
 
    ![Selecting a media query from the preview bar](../media/css-elements-media-queries-select-bar.msft.png)
 
-1. To debug media queries and open the CSS file in the `Sources` editor, right-click a bar segment, and then select **Reveal in source code**:
+1. To debug media queries and open the CSS file in the **Sources** editor, right-click a bar segment, and then select **Reveal in source code**:
 
    ![Reveal Media Queries in Sources Editor](../media/css-elements-media-queries-reveal-in-sources.msft.png)
 

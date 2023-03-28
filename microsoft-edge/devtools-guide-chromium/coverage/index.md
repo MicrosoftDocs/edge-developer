@@ -56,7 +56,7 @@ This extra CSS is a problem for the following reasons:
 
 1. [Open the Command Menu](../command-menu/index.md).
 
-1. Start typing `coverage`, select the **Show Coverage** command, and then press `Enter`.  The **Coverage** tool opens in the **Drawer**.
+1. Start typing `coverage`, select the **Show Coverage** command, and then press **Enter**.  The **Coverage** tool opens in the **Drawer**.
 
    ![The Coverage tool](../media/coverage-console-drawer-coverage-empty.msft.png)
 
