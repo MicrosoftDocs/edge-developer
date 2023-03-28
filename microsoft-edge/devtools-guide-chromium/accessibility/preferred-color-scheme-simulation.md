@@ -43,7 +43,7 @@ This article is about changing the appearance of the webpage under development. 
 <!-- ====================================================================== -->
 ## Emulating dark or light mode using the Command Menu
 
-1. When DevTools has focus, open the **Command Menu** by selecting `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
+1. When DevTools has focus, open the **Command Menu** by selecting **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
 1. Type **dark**, **light**, or **emulate**, select **Rendering: Emulate CSS prefers-color-scheme: dark** or **Rendering: Emulate CSS prefers-color-scheme: light**, and then press **Enter**.
 

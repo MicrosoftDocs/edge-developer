@@ -40,7 +40,7 @@ There are many ways to select an element:
 
 *  In a rendered webpage, right-click a page element, and then click **Inspect**.
 
-*  In DevTools, click **Select an element** (![Select an element](../media/select-an-element-icon.msft.png)) or press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS), and then click the element in the viewport.
+*  In DevTools, click **Select an element** (![Select an element](../media/select-an-element-icon.msft.png)) or press **Ctrl+Shift+C** (Windows, Linux) or **Command+Shift+C** (macOS), and then click the element in the viewport.
 
 *  In DevTools, click the element in the **DOM Tree**.
 
@@ -160,7 +160,7 @@ To view a page in print mode:
 
 The **Coverage** tool shows you what CSS a page actually uses.
 
-1. Open the [Command Menu](../command-menu/index.md) by pressing `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS), while DevTools has focus.
+1. Open the [Command Menu](../command-menu/index.md) by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS), while DevTools has focus.
 
 1. Start typing `coverage`, and then select **Show Coverage**.  The **Coverage** tool appears.
 
@@ -215,9 +215,9 @@ To add an inline declaration:
 
 1. In the **Styles** pane, click between the brackets of the **element.style** section.  The cursor focuses, allowing you to enter text.
 
-1. Enter a property name and press `Enter`.
+1. Enter a property name and press **Enter**.
 
-1. Enter a valid value for that property and press `Enter`.  In the **DOM Tree**, a `style` attribute has been added to the element.
+1. Enter a valid value for that property and press **Enter**.  In the **DOM Tree**, a `style` attribute has been added to the element.
 
 In the following figure, the `margin-top` and `background-color` properties have been applied to the selected element.  In the **DOM Tree**, the declarations are reflected in the element's `style` attribute.
 
@@ -235,9 +235,9 @@ To add a declaration to an existing style rule:
 
 1. In the **Styles** pane, click between the brackets of the style rule to which you want to add the declaration.  The cursor focuses, allowing you to enter text.
 
-1. Enter a property name and press `Enter`.
+1. Enter a property name and press **Enter**.
 
-1. Enter a valid value for that property and press `Enter`.
+1. Enter a valid value for that property and press **Enter**.
 
 ![Adding a declaration to a style rule](../media/css-elements-styles-border-bottom-style.msft.png)
 
@@ -245,24 +245,28 @@ To add a declaration to an existing style rule:
 <!-- ====================================================================== -->
 ## Change a declaration name or value
 
-Double-click a declaration's name or value to change it.  See [Change declaration values with keyboard shortcuts](#change-declaration-values-with-keyboard-shortcuts) for shortcuts for quickly incrementing or decrementing a value by 0.1, 1, 10, or 100 units.
+To change the name of a CSS declaration, double-click the declaration's name.
+
+To change the value of a CSS declaration, double-click the declaration's value.  The following screenshot shows selecting a value from a list:
 
 ![Changing the value of a declaration](../media/css-elements-styles-border-bottom-style-dropdown.msft.png)
 
+To change a numerical value, type in the value, or use the arrow keys, per the next section.
+
 
 <!-- ====================================================================== -->
-## Change declaration values with keyboard shortcuts
+## Increment numerical declaration values
 
-While editing the value of a declaration, you can use the following keyboard shortcuts to increment the value by a specific amount:
+To change a numerical value of a CSS declaration, type in the value, or use the arrow keys to increment the value by a specific amount:
 
 | Keyboard shortcut | Increments by |
 |---|---|
-| `Alt`+`Up` (Windows, Linux) or `Option`+`Up` (macOS) | 0.1 |
-| `Up` | 1 (or 0.1, if the current value is between -1 and 1) |
-| `Shift`+`Up` | 10 |
-| `Shift`+`Page Up` (Windows, Linux) or `Shift`+`Command`+`Up` (macOS) | 100 |
+| **Alt+Up Arrow** (Windows, Linux) or **Option+Up Arrow** (macOS) | 0.1 |
+| **Up Arrow** | 1 (or 0.1, if the current value is between -1 and 1) |
+| **Shift+Up Arrow** | 10 |
+| **Shift+Page Up** (Windows, Linux) or **Shift+Command+Up Arrow** (macOS) | 100 |
 
-To decrement, press the `Down` key instead of the `Up` key.
+To decrement, press the **Down Arrow** (or **Page Down**) key instead of the **Up Arrow** (or **Page Up**) key.
 
 
 <!-- ====================================================================== -->
@@ -276,7 +280,7 @@ To add a class to an element:
 
 1. Enter the name of the class in the **Add new class** text box.
 
-1. Press `Enter`.
+1. Press **Enter**.
 
    ![The Element Classes pane](../media/css-elements-styles-filter-classes.msft.png)
 

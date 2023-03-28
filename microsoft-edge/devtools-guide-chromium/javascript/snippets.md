@@ -44,7 +44,7 @@ p.textContent = 'Hello, Snippets!';
 document.body.appendChild(p);
 ```
 
-In the following figure, the webpage appears after running the Snippet.  The **Console Drawer** pops up to display the `Hello, Snippets!` message that the Snippet logs, and the content of the webpage changes completely:
+In the following figure, the webpage appears after running the Snippet.  The **Console Drawer** pops up to display the **Hello, Snippets!** message that the Snippet logs, and the content of the webpage changes completely:
 
 ![The webpage after running the Snippet](../media/javascript-sources-snippets-split-screen-after.msft.png)
 
@@ -68,9 +68,9 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 1. Select anything in DevTools, so that DevTools has focus.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
 
-1. Type `Snippets`, select **Show Snippets**, and then press `Enter` to run the command:
+1. Type **Snippets**, select **Show Snippets**, and then press **Enter** to run the command:
 
    ![The Show Snippets command](../media/javascript-search-show-snippets.msft.png)
 
@@ -84,7 +84,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 1. Click **New snippet**.
 
-1. Enter a name for your Snippet, and then press `Enter`:
+1. Enter a name for your Snippet, and then press **Enter**:
 
    ![Name a Snippet](../media/javascript-sources-snippets-naming.msft.png)
 
@@ -92,9 +92,9 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 1. Focus your cursor somewhere in DevTools.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
 
-1. Start typing `snippet`, select **Create new snippet**, and then press `Enter`:
+1. Start typing **snippet**, select **Create new snippet**, and then press **Enter**:
 
    ![The command for creating a new Snippet](../media/javascript-search-create-new-snippet.msft.png)
 
@@ -112,7 +112,7 @@ To rename your new Snippet with a custom name, see [Rename Snippets](#rename-sni
 
 1. Use the **Code Editor** to add JavaScript to your Snippet.
 
-1. When an asterisk appears next to the name of your Snippet, it means you have unsaved code.  Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save:
+1. When an asterisk appears next to the name of your Snippet, it means you have unsaved code.  Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save:
 
    ![An asterisk next to the Snippet name indicates unsaved code](../media/javascript-sources-snippets-editor-unsaved.msft.png)
 
@@ -132,13 +132,13 @@ To rename your new Snippet with a custom name, see [Rename Snippets](#rename-sni
 
 1. Focus your cursor somewhere in DevTools.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
 
-1. Delete the `>` character and type the `!` character followed by the name of the Snippet that you want to run:
+1. Delete the **>** character and type the **!** character followed by the name of the Snippet that you want to run:
 
    ![Running a Snippet from the Command Menu](../media/javascript-search-run-command.msft.png)
 
-1. Press `Enter` to run the Snippet.
+1. Press **Enter** to run the Snippet.
 
 
 <!-- ====================================================================== -->

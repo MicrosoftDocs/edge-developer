@@ -30,7 +30,7 @@ This page lists the ways to customize Microsoft Edge DevTools.
 
 **Settings** > **Preferences** contains many options for customizing DevTools.
 
-To open Settings, in DevTools, click the **Settings** icon (![Settings icon](../media/settings-icon-dark.msft.png)).  Or, while DevTools has focus, press `F1`.
+To open Settings, in DevTools, click the **Settings** icon (![Settings icon](../media/settings-icon-dark.msft.png)).  Or, while DevTools has focus, press **F1**.
 
 ![Settings](../media/customize-settings-preferences.msft.png)
 
@@ -40,7 +40,7 @@ To open Settings, in DevTools, click the **Settings** icon (![Settings icon](../
 
 In the **Drawer** toolbar in the bottom of DevTools, you can select which tools to display.
 
-To open (or close) the **Drawer**, press `Escape`.
+To open (or close) the **Drawer**, press **Esc**.
 
 ![The Drawer](../media/customize-drawer-open.msft.png)
 

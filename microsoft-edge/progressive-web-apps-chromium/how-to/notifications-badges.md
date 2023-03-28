@@ -325,7 +325,7 @@ To test push notifications for your PWA:
 
     ![Permission dialog for enabling notifications](../media/notification-permission.png)
 
-1.  Simulate a server-side push notification, as follows.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.
+1.  Simulate a server-side push notification, as follows.  With your PWA opened at `http://localhost:3000` in your browser, select **F12** to open DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.
 
     The push notification is displayed near the taskbar.
 

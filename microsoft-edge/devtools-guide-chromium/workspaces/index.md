@@ -113,7 +113,7 @@ Node.js option:
 
 ## Define a workspace in DevTools
 
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) to open the DevTools **Console**.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS) to open the DevTools **Console**.
 
    ![The DevTools Console](../media/workspaces-workspaces-demo-console.msft.png)
 
@@ -209,7 +209,7 @@ If you want to save a change to the webpage HTML, edit the HTML in the **Sources
 
 1. Replace `<h1>Workspaces Demo</h1>` with `<h1>I Love Cake</h1>`.  The demo title changes.
 
-1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change.
 
 1. Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed.
 
@@ -227,15 +227,15 @@ To open the DevTools code editor alongside other tools:
 
 1. Select the **Elements** tool.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-1. Type `quick` at the **Run** prompt, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
+1. Type **quick** at the **Run** prompt, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
 
    ![Open the 'Quick source' tool by using the Command Menu](../media/workspaces-workspaces-demo-search-show-quick-source.msft.png)
 
-1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog, shown in the next screenshot.
+1. Press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the **Open File** dialog, shown in the next screenshot.
 
-1. Type `script` at the **Open** prompt, then select **app/script.js**.
+1. Type **script** at the **Open** prompt, then select **app/script.js**.
 
    ![Opening script.js using the Open File dialog](../media/workspaces-workspaces-demo-search-script.msft.png)
 
@@ -247,7 +247,7 @@ To open the DevTools code editor alongside other tools:
     document.querySelector('a').style = 'font-style:italic';
     ```
 
-1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change.
 
 1. Refresh the page.  The link on the page is now italicized.
 
