@@ -37,8 +37,13 @@ In most cases, extra memory or CPU usage is due to how WebView2 is being used, n
 You can also use Microsoft's [Process Explorer](/sysinternals/downloads/process-explorer) tool. If you find that an app is consistently causing heavy resource usage, you can contact Support for that app to report the resource usage.
 
 
+<!-- ====================================================================== -->
 ## Is WebView2 a virus?
-WebView2 is not a virus. It is a Microsoft product that is updated automatically to ensure that your applications have the latest security fixes. Most people will see it used by Widgets, Teams, Office, Outlook, Weather, and many more applications. Any application can *use* WebView2 though, so it's possible for a malicious application to use WebView2, just like it can use any other Windows API or feature.
+
+WebView2 is not a virus.  WebView2 is a Microsoft product that is updated automatically (by using the _Evergreen_ distribution method) to ensure that your applications have the latest feature support and security fixes. 
+
+Most people will see WebView2 used by Widgets, Teams, Office, Outlook, Weather, and many more applications. Any application can _use_ WebView2 though, so it's possible for a malicious application to use WebView2, just like it can use any other Windows API or feature.
+
 
 ## Will uninstalling Edge break WebView2?
 No, Edge can be uninstalled without causing a problem for WebView2's evergreen distribution method. When both Edge and WebView2 are installed, Edge's installer will link the applications together so that one doesn't use extra disk space.
