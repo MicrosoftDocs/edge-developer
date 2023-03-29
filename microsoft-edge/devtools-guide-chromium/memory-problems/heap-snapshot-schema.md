@@ -319,7 +319,7 @@ To use this array, the following information is needed:
 | `0` | `object_index` | The index of the associated node in the `snapshot.nodes` array. |
 | `1` | `script_id` | The ID of the script that creates the node which `object_index` is pointing to. |
 | `2` | `line` | The line number where the node was created, within the script that created the node. |
-| `3` | `column` | The column number in the script of the node creation. |
+| `3` | `column` | The column number where the node was created, within the script that created the node. |
 
 The following code example shows how to link the `snapshot.locations` array to the `snapshot.nodes` array:
 
