@@ -127,7 +127,7 @@ You can interact with the screencast in multiple ways:
 
 *  Clicks are translated into taps, firing proper touch events on the device.
 *  Keystrokes on your computer are sent to the device.
-*  To simulate a pinch gesture, hold `Shift` while dragging.
+*  To simulate a pinch gesture, hold **Shift** while dragging.
 *  To scroll, use your trackpad or mouse wheel, or fling with your mouse pointer.
 
 Use the following tips to help you screencast:

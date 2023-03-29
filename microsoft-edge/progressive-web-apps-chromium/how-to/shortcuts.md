@@ -72,7 +72,7 @@ To test that your shortcuts are configured correctly:
 
 1. In Microsoft Edge, go to your app.
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../../devtools-guide-chromium/media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../../devtools-guide-chromium/media/more-tools-icon-light-theme.png)) button.
 

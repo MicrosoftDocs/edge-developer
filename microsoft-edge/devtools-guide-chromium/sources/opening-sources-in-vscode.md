@@ -52,18 +52,16 @@ Any changes that you make to the file in DevTools will now be synced to Visual S
 <!-- ====================================================================== -->
 ## Changing the workspace settings
 
-If you go to the DevTools **Settings** page by selecting **Settings** (the gear icon or `Shift + ?`), you can change the behavior of the experiment.  When you select the **Workspace** page in **Settings**, you have a few options.
+To change the behavior of the **Open source files in Visual Studio Code** experiment, go to the DevTools **Settings** page by clicking **Settings** (the gear icon) or pressing **Shift+?**, and then select the **Workspace** page:
 
 ![The settings pane of the workspace showing several options](../media/experiment-sources-in-code-workspace-settings.msft.png)
 
-The **Settings** > **Workspace** page lists your workspaces, along with configuration options.
+The **Settings** > **Workspace** page lists your workspaces, along with the following configuration options:
 
-*  To set whether to open source files in Visual Studio Code, select the **Open source files in Visual Studio Code** checkbox.
-
-*  To automatically save DevTools changes to disk, select the **Save DevTools changes to disk** checkbox.
-
-*  To automatically exclude folders from a workspace folder, use the **Folder exclude pattern** text box.
-
-*  To exclude a folder from a specific workspace, next to **Excluded folders**, select the **Add** button.
-
-*  To add an additional workspace, select the **Add folder** button.
+| UI control | Description |
+|---|---|
+| **Open source files in Visual Studio Code** checkbox | Sets whether to open source files in Visual Studio Code. |
+| **Save DevTools changes to disk** checkbox | Automatically saves DevTools changes to disk. |
+| **Folder exclude pattern** text box | Automatically excludes folders from a workspace folder. |
+| **Add** button next to **Excluded folders** | Excludes a folder from a specific workspace. |
+| **Add folder** button | Adds an additional workspace. |

@@ -128,45 +128,45 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 
 | Action | Shortcut |
 |:--- |:--- |
-| Add to Favorites | `Ctrl`+`D` |
-| Add All Tabs to Favorites | `Ctrl`+`Shift`+`D` |
-| Focus Location | `Ctrl`+`L, Alt`+`D` |
-| Paste and Go | `Ctrl`+`Shift`+`L` |
-| Open File | `Ctrl`+`O` |
-| Read Aloud `*` | `Ctrl`+`Shift`+`U` |
-| Web Capture `*` | `Ctrl`+`Shift`+`S` |
-| Sidebar | `Ctrl`+`Shift`+`E` |
-| Save Page | `Ctrl`+`S` |
-| Select Last Tab | `Ctrl`+`9` |
-| Select Next Tab | `Ctrl`+`Tab` |
-| Select Previous Tab | `Ctrl`+`Shift`+`Tab` |
-| Select Tab (1 - 8) | `Ctrl`+`(1-8)` |
-| Show Favorites Bar `*` | `Ctrl`+`Shift`+`B` |
-| Help | `F1` |
-| Focus Next Pane `*` | `F6`.  Supported in windowed hosting mode, but not in visual hosting mode.  Visual hosting mode is used for [WinUI 2 (UWP) apps](../samples/webview2_sample_uwp.md), and for [Win32 C++ apps with Visual Composition](../samples/webview2samplewincomp.md). |
-| Focus Previous Pane `*` | `Shift`+`F6`.  Same as `F6` support, above. |
-| Reading View `*` | `F9` |
-| Focus Menu Bar | `F10` |
-| Show Identity Menu `*` | `Ctrl`+`Shift`+`M` |
-| Browser Task Manager `*` | `Shift`+`Escape` |
-| Edge Feedback `*` | `Shift`+`Alt`+`I` |
-| Mute Tab `*` | `Ctrl`+`M` |
-| New Incognito Window | `Ctrl`+`Shift`+`N` |
-| New Tab | `Ctrl`+`T` |
-| New Window | `Ctrl`+`N` |
-| Restore Last Closed Tab | `Ctrl`+`Shift`+`T` |
-| Focus Favorites | `Alt`+`Shift`+`B` |
-| Focus Inactive Popup | `Alt`+`Shift`+`A` |
-| Focus Search | `Ctrl`+`E`, `Ctrl`+`K`, `Search Key` |
-| Duplicate Tab | `Ctrl`+`Shift`+`K` |
-| Focus Toolbar `*` | `Alt`+`Shift`+`T` |
-| Home | `Alt`+`Home`, `Browser Home Key` |
-| Show App Menu | `Alt`+`E, Alt`+`F` |
-| Show Favorites | `Ctrl`+`Shift`+`O` |
-| Show Downloads | `Ctrl`+`J` |
-| Show History | `Ctrl`+`H` |
-| Show Reading Mode Bar `*` | `Shift`+`Alt`+`R` |
-| Show Collections `*` | `Ctrl`+`Shift`+`Y` |
+| Add to Favorites | **Ctrl+D** |
+| Add All Tabs to Favorites | **Ctrl+Shift+D** |
+| Focus Location | **Ctrl+L**, **Alt+D** |
+| Paste and Go | **Ctrl+Shift+L** |
+| Open File | **Ctrl+O** |
+| Read Aloud `*` | **Ctrl+Shift+U** |
+| Web Capture `*` | **Ctrl+Shift+S** |
+| Sidebar | **Ctrl+Shift+E** |
+| Save Page | **Ctrl+S** |
+| Select Last Tab | **Ctrl+9** |
+| Select Next Tab | **Ctrl+Tab** |
+| Select Previous Tab | **Ctrl+Shift+Tab** |
+| Select Tab (1 - 8) | **Ctrl+(1-8)** |
+| Show Favorites Bar `*` | **Ctrl+Shift+B** |
+| Help | **F1** |
+| Focus Next Pane `*` | **F6**.  Supported in windowed hosting mode, but not in visual hosting mode.  Visual hosting mode is used for [WinUI 2 (UWP) apps](../samples/webview2_sample_uwp.md), and for [Win32 C++ apps with Visual Composition](../samples/webview2samplewincomp.md). |
+| Focus Previous Pane `*` | **Shift+F6**.  Same as **F6** support, above. |
+| Reading View `*` | **F9** |
+| Focus Menu Bar | **F10** |
+| Show Identity Menu `*` | **Ctrl+Shift+M** |
+| Browser Task Manager `*` | **Shift+Escape** |
+| Edge Feedback `*` | **Shift+Alt+I** |
+| Mute Tab `*` | **Ctrl+M** |
+| New Incognito Window | **Ctrl+Shift+N** |
+| New Tab | **Ctrl+T** |
+| New Window | **Ctrl+N** |
+| Restore Last Closed Tab | **Ctrl+Shift+T** |
+| Focus Favorites | **Alt+Shift+B** |
+| Focus Inactive Popup | **Alt+Shift+A** |
+| Focus Search | **Ctrl+E**, **Ctrl+K**, **Search Key** |
+| Duplicate Tab | **Ctrl+Shift+K** |
+| Focus Toolbar `*` | **Alt+Shift+T** |
+| Home | **Alt+Home**, **Browser Home Key** |
+| Show App Menu | **Alt+E**, **Alt+F** |
+| Show Favorites | **Ctrl+Shift+O** |
+| Show Downloads | **Ctrl+J** |
+| Show History | **Ctrl+H** |
+| Show Reading Mode Bar `*` | **Shift+Alt+R** |
+| Show Collections `*` | **Ctrl+Shift+Y** |
 
 
 ### Shortcuts turned off except when event not handled
@@ -175,9 +175,9 @@ The following keyboard shortcuts are always turned off, except in windows that d
 
 | Action | Shortcut |
 |:--- |:--- |
-| Close Tab | `Ctrl`+`W, Ctrl`+`F4` |
-| Close Window | `Ctrl`+`Shift`+`W` |
-| Fullscreen | `F11` |
+| Close Tab | **Ctrl+W**, **Ctrl+F4** |
+| Close Window | **Ctrl+Shift+W** |
+| Fullscreen | **F11** |
 
 
 ### Shortcuts turned off if AcceleratorEnabled is False
@@ -186,24 +186,24 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 
 | Action | Shortcut |
 |:--- |:--- |
-| Stop | `Escape` |
-| Find on Page | `Ctrl`+`F` |
-| Find Next | `Ctrl`+`G` |
-| Find Previous | `Ctrl`+`Shift`+`G` |
-| Print | `Ctrl`+`P` |
-| Refresh | `Ctrl`+`R`, `F5`, `Reload Key` |
-| Refresh Without Cache | `Ctrl`+`Shift`+`R`, `Ctrl`+`F5`, `Shift`+`F5`, `Ctrl`+`Refresh`, `Shift`+`Refresh` |
-| Zoom Out | `Ctrl`+`-` |
-| Zoom In | `Ctrl`+`+` |
-| Reset Zoom | `Ctrl`+`0` |
-| Find Next | `F3` |
-| Find Previous | `Shift`+`F3` |
-| Back | `Alt`+`Left, Browser Back Key` |
-| Forward | `Alt`+`Right`, `Browser Forward Key` |
-| Print | `Ctrl`+`P` |
-| Open / Close DevTools | `Ctrl`+`Shift`+`I` |
-| Open DevTools Console | `Ctrl`+`Shift`+`J` |
-| Open DevTools Inspect | `Ctrl`+`Shift`+`C` |
+| Stop | **Esc** |
+| Find on Page | **Ctrl+F** |
+| Find Next | **Ctrl+G** |
+| Find Previous | **Ctrl+Shift+G** |
+| Print | **Ctrl+P** |
+| Refresh | **Ctrl+R**, **F5**, **Reload Key** |
+| Refresh Without Cache | **Ctrl+Shift+R**, **Ctrl+F5**, **Shift+F5**, **Ctrl+Refresh**, **Shift+Refresh** |
+| Zoom Out | **Ctrl**+**-** |
+| Zoom In | **Ctrl**+**+** |
+| Reset Zoom | **Ctrl+0** |
+| Find Next | **F3** |
+| Find Previous | **Shift+F3** |
+| Back | **Alt+Left Arrow**, **Browser Back Button Key** |
+| Forward | **Alt+Right Arrow**, **Browser Forward Key** |
+| Print | **Ctrl+P** |
+| Open / Close DevTools | **Ctrl+Shift+I** |
+| Open DevTools Console | **Ctrl+Shift+J** |
+| Open DevTools Inspect | **Ctrl+Shift+C** |
 
 
 ### Customizing an individual key

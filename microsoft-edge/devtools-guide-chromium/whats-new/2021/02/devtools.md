@@ -50,14 +50,14 @@ See [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mo
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
 
 *  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
-*  Press `Ctrl`+`Shift`+`H` (Windows, Linux) or `Cmd`+`Shift`+`H` (macOS).
-*  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type `tooltips`.
+*  Press **Ctrl+Shift+H** (Windows, Linux) or **Command+Shift+H** (macOS).
+*  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type **tooltips**.
 
 Then hover over each outlined region of DevTools:
 
 ![DevTools Tooltips mode](../../media/2021/02/tooltips.png)
 
-To turn off Tooltips, press `Esc`.  
+To turn off Tooltips, press **Esc**.  
 
 Update: This feature has been released and is no longer experimental.<!-- valid. -->
 <!-- To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the following checkboxes:
@@ -67,7 +67,7 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 -->
 
 Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in [Focus Mode](../../../experimental-features/focus-mode.md).
-<!--Click the Help (`?`) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.-->
+<!--Click the Help (**?**) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.-->
 <!-- ![Click the Help (?) icon in the Activity Bar to display tooltips](../../media/2021/02/focus-mode-and-tooltips-help.msft.png) -->
 <!--
 See also:
@@ -130,7 +130,7 @@ See also:
 <!-- Title: Try different CSS flexbox layouts with the visual flexbox editor  -->
 <!-- Subtitle: In the Styles pane, click the icon that appears next to display: flex to try different layout properties for flex containers.  -->
 
-DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon appears next to that element in the **Elements** tool.  To display (or hide) a flex overlay on the webpage, click the `flex` icon.
+DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a **flex** icon appears next to that element in the **Elements** tool.  To display (or hide) a flex overlay on the webpage, click the **flex** icon.
 
 To open the **Flexbox** editor, in the **Elements** tool, go to the **Styles** tab and then click the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties:
 
@@ -199,7 +199,7 @@ The following sections announce additional features available in Microsoft Edge 
 <!-- ====================================================================== -->
 ### The Console now escapes double-quote characters
 
-Previously, the **Console** did not output valid double-quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double-quote (`"`) characters:
+Previously, the **Console** didn't output valid double-quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double-quote (`"`) characters:
 
 ![The Console outputs JavaScript strings using escaped double quote (&#0022;) characters](../../media/2021/02/console-string-formatted-double-quotes.msft.png)
 
@@ -216,7 +216,7 @@ The [color-gamut](https://www.chromestatus.com/feature/5354410980933632) media q
 
 To emulate the CSS color-gamut media feature:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 1. In DevTools, on the main toolbar, select the **Rendering** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../../../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../../../media/more-tools-icon-light-theme.png)) button.  The **Rendering** tool opens.
 1. In the **Emulate CSS media feature color-gamut** dropdown, select a **color-gamut** option:
 

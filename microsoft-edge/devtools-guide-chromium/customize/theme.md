@@ -68,7 +68,7 @@ To use the Command Menu to change which color theme is applied to DevTools:
 
 1. Type `theme`, and then select an **Appearance** command, such as **Appearance: Switch to Abyss theme** or **Appearance: Switch to Light+ (Default) theme**.
 
-1. Press `Enter`.
+1. Press **Enter**.
 
 ![The list of themes in the Command Menu](./media/customize-theme-command-menu.png)
 

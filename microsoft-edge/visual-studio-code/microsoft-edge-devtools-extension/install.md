@@ -43,7 +43,7 @@ Install the Microsoft Edge DevTools extension for Visual Studio Code, as follows
 
 1. Open Visual Studio Code.
 
-1. In the Activity Bar on the left, click the **Extensions** (![Extensions icon](./install-images/extensions-icon.png)) button.  Or, press `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS.  The **Extensions** Marketplace pane opens.
+1. In the Activity Bar on the left, click the **Extensions** (![Extensions icon](./install-images/extensions-icon.png)) button.  Or, press **Ctrl+Shift+X** on Windows/Linux or **Command+Shift+X** on macOS.  The **Extensions** Marketplace pane opens.
 
 1. In the **Search Extensions in Marketplace** text box, enter **Microsoft Edge Tools for VS Code**.
 
@@ -111,7 +111,7 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 
 1. In Visual Studio Code, in the Activity Bar, click the **Source Control** (![Source Control icon](./install-images/source-control-icon.png)) button, and then click the **Clone Repository** button.
 
-1. In the **Provide repository URL** text box, paste the copied URL: **https://github.com/MicrosoftEdge/Demos.git** and then press `Enter`.  A folder selection dialog opens.
+1. In the **Provide repository URL** text box, paste the copied URL: **https://github.com/MicrosoftEdge/Demos.git** and then press **Enter**.  A folder selection dialog opens.
 
    ![The Clone Repository button in Visual Studio Code](./install-images/clone-repository-button.png)
 

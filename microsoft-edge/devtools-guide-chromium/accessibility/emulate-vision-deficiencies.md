@@ -50,9 +50,9 @@ To simulate how a person with a vision deficiency would see your web page, open 
 
 As an alternative approach, you can use the **Command Menu** to access the different simulations.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-1. Type **emulate**, select the type of vision deficiency you want to simulate, and then press `Enter`.
+1. Type **emulate**, select the type of vision deficiency you want to simulate, and then press **Enter**.
 
    > [!div class="mx-imgBorder"]
    > ![The command menu showing the different types of vision deficiencies](../media/accessibility-emulation-command-menu-results.msft.png)

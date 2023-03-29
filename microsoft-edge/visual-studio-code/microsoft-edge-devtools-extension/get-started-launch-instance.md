@@ -97,7 +97,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 
 1. In the **Styles** tab of the **Elements** tool in the **Edge DevTools** tab, in the non-italic h2 declaration section, click to the right of the `margin-bottom` rule.
 
-1. Enter a new CSS rule, `font-size: 5em`, and then press `Enter`.  The spelling is similar to the rule shown in the italic h2 section from the user agent stylesheet below it.
+1. Enter a new CSS rule, `font-size: 5em`, and then press **Enter**.  The spelling is similar to the rule shown in the italic h2 section from the user agent stylesheet below it.
 
    `index.html` opens, automatically edited by CSS mirror editing to add the line `font-size: 5em;`.  Scroll to that line, in the h2 section.
 
@@ -105,7 +105,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 <!-- ====================================================================== -->
 ## Step 5: Arrange tabs
 
-1. In the **Edge DevTools** tab, in the non-italic h2 section, click the `font-size` CSS rule that you entered, and then press `Up Arrow` and `Down Arrow`.  The value in `index.html` is automatically edited, by CSS mirror editing.
+1. In the **Edge DevTools** tab, in the non-italic h2 section, click the `font-size` CSS rule that you entered, and then press **Up Arrow** and **Down Arrow**.  The value in `index.html` is automatically edited, by CSS mirror editing.
 
 1. In the **Edge DevTools** tab, click the **Toggle screencast** button a couple times.  The **Edge DevTools: Browser** tab opens and closes, saving space.
 
