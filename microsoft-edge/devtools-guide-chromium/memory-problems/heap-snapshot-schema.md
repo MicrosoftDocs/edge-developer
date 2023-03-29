@@ -305,7 +305,8 @@ The first number in the group of numbers for an edge in the `edges` array corres
 
 #### locations
 
-The `locations` array, which is at the top level of the `.heapsnapshot` data, contains information about the location of `HeapSnapshot` nodes.
+The `locations` array, which is at the top level of the `.heapsnapshot` data, contains information about the location of `HeapSnapshot` nodes. This array consists of a series of numbers meant to be read by groups of size `snapshot.meta.location_fields.length`.
+
 
 To use this array, the following information is needed:
 
