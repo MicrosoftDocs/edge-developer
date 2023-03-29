@@ -156,9 +156,9 @@ At the top of Visual Studio, set the build target, as follows:
 <!-- ====================================================================== -->
 ## Step 8 - Run (debug) the project
 
-1. Select **Debug** > **Start Debugging** (`F5`).  
+1. Select **Debug** > **Start Debugging** (**F5**).  
 
-   Troubleshooting: if you skip the build step and immediately select **Debug** > **Start Debugging** (`F5`), a dialog might appear, "Unable to start program: Cannot find the path specified":
+   Troubleshooting: if you skip the build step and immediately select **Debug** > **Start Debugging** (**F5**), a dialog might appear, "Unable to start program: Cannot find the path specified":
 
    ![dialog: Unable to start program: Cannot find the path specified](./webview2apissample-images/webview2apisample-unable-to-start-program-cannot-find-path.png)
 
@@ -223,7 +223,7 @@ The latest version of the WebView2 SDK is now installed for this project.
 
    ![WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)
 
-1. Select **Debug** > **Start Debugging** (`F5`).  
+1. Select **Debug** > **Start Debugging** (**F5**).  
 
    The **WebView2APISample** app window opens:
 

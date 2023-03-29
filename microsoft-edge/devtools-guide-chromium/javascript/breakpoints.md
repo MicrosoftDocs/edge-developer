@@ -90,7 +90,7 @@ To set a conditional line-of-code breakpoint:
 
 1. Enter your condition in the dialog.
 
-1. Press `Enter` to activate the breakpoint.  A red diamond (or more recently, an orange icon) appears on top of the line number column:
+1. Press **Enter** to activate the breakpoint.  A red diamond (or more recently, an orange icon) appears on top of the line number column:
 
    ![A conditional line-of-code breakpoint](../media/javascript-sources-page-js-conditional-breakpoint.msft.png)
 
@@ -153,7 +153,7 @@ To set an XHR breakpoint:
 
 1. Enter the string which you want to break on.  DevTools pauses when this string is present anywhere in an XHR request URL.
 
-1. Press `Enter` to confirm.
+1. Press **Enter** to confirm.
 
 ![Create an XHR breakpoint](../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png)
 
@@ -248,7 +248,7 @@ To set a logpoint:
 
 1. Enter a message or a JavaScript expression that will get evaluated when the logpoint is hit.
 
-1. Press `Enter` to activate the logpoint. A red diamond (or more recently, an orange icon) appears on top of the line number column.
+1. Press **Enter** to activate the logpoint. A red diamond (or more recently, an orange icon) appears on top of the line number column.
 
 For more information, see [Log messages in the Console tool](/microsoft-edge/devtools-guide-chromium/console/console-log).
 

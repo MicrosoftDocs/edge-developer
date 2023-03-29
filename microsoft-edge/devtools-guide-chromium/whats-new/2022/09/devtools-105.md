@@ -88,7 +88,7 @@ To return **Quick View** to the horizontal orientation, click the **Dock Quick V
 
 ![Docking Quick View to the bottom](./devtools-105-images/dock-quick-view-bottom.png)
 
-To minimize **Quick View** in either orientation, click the **Collapse Quick View** button, or press `Esc`:
+To minimize **Quick View** in either orientation, click the **Collapse Quick View** button, or press **Esc**:
 
 ![Minimizing Quick View](./devtools-105-images/focus-mode-improved-location-controls.png)
 
