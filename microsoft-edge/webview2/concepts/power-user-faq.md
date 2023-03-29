@@ -45,8 +45,11 @@ WebView2 is not a virus.  WebView2 is a Microsoft product that is updated automa
 Most people will see WebView2 used by Widgets, Teams, Office, Outlook, Weather, and many more applications. Any application can _use_ WebView2 though, so it's possible for a malicious application to use WebView2, just like it can use any other Windows API or feature.
 
 
-## Will uninstalling Edge break WebView2?
-No, Edge can be uninstalled without causing a problem for WebView2's evergreen distribution method. When both Edge and WebView2 are installed, Edge's installer will link the applications together so that one doesn't use extra disk space.
+<!-- ====================================================================== -->
+## Will uninstalling Microsoft Edge make WebView2 stop working?
+
+No. Microsoft Edge can be uninstalled without causing a problem for WebView2.  When both Microsoft Edge and WebView2 are installed, the Microsoft Edge installer links the applications together, to avoid using extra disk space.
+
 
 ## I uninstalled WebView2, why is it back again?
 WebView2 is pre-installed on Windows 11 and optimistically installed on most Windows 10 devices ([details here](https://blogs.windows.com/msedgedev/2022/06/27/delivering-the-microsoft-edge-webview2-runtime-to-windows-10-consumers/)). Many apps built on WebView2 also perform checks to re-install WebView2 when being installed or launched. Enterprises may also push WebView2 to devices they manage.
