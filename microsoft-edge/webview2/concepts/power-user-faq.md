@@ -14,8 +14,19 @@ Most of our documentation is intended for developers who want to use WebView2 in
 ## What is WebView2?
 WebView2 is a way for any Windows app developer to embed web content in their application. This can let them write code for a website or web app, then re-use it in their Windows application, saving time and effort.
 
+
+<!-- ====================================================================== -->
 ## Why are there so many WebView2 processes running?
-WebView2 follows Microsoft Edge and [Chromium's process model](https://chromium.googlesource.com/chromium/src/+/main/docs/process_model_and_site_isolation.md). Having functionality broken up into multiple processes help reliability, security, and performance - Each process performs a certain responsibility, and can do that uninterrupted, even if one of the others hits a problem. There are normally a few processes - WebView2 manager, a GPU process, some utility processes (one for network, audio, etc. depending on the content), and some "renderer" processes. You'll have one set of processes per app using WebView2, and roughly one renderer process per WebView2 in the app, similar to how you have one renderer process per tab in a browser. See our [process model documentation]( https://learn.microsoft.com/microsoft-edge/webview2/concepts/process-model) for more details.
+
+WebView2 follows the process model that's used in the Chromium browser engine of Microsoft Edge, described in [Process Model and Site Isolation](https://chromium.googlesource.com/chromium/src/+/main/docs/process_model_and_site_isolation.md).  Having functionality broken up into multiple processes help reliability, security, and performance.  Each process performs a certain responsibility, and can do that work uninterrupted, even if one of the other processes hits a problem.
+
+There are normally a few processes:
+*  The WebView2 manager.
+*  A GPU process.
+*  Utility processes, such as network or audio, depending on the content.
+*  Renderer processes.
+
+Your machine will have one set of processes for each app that uses WebView2, and typically one renderer process for each WebView2 control that's in the app, similar to how you have one renderer process per tab in a browser.  For details, see [Process model for WebView2 apps](/microsoft-edge/webview2/concepts/process-model).
 
 
 ## Why is WebView2 using so much memory, CPU, etc.?
