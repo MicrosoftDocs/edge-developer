@@ -205,11 +205,11 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```
 
-Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS), DevTools saves the **Snippet** to your file system.
+Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS), DevTools saves the **Snippet** to your file system.
 
 There are multiple ways to run a Snippet:
 *  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button](../media/run-snippet-icon.msft.png)).
-*  When DevTools has focus, press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the [Command Menu](../command-menu/index.md), and then type `!`.
+*  When DevTools has focus, press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the [Command Menu](../command-menu/index.md), and then type **!**.
 
 Snippets are similar to bookmarklets.
 
@@ -222,14 +222,14 @@ See also:
 
 To open a file, in addition to using the **Navigator** pane within the **Sources** tool, you can use the Command Menu from anywhere within DevTools.
 
-*  From anywhere in DevTools, press `Ctrl`+`P` on Windows/Linux or `Command`+`P` on macOS.  The Command Menu appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.
+*  From anywhere in DevTools, press **Ctrl+P** on Windows/Linux or **Command+P** on macOS.  The Command Menu appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.
 *  Or, next to the tabs of the **Navigator** pane in the **Sources** tool, select the **...** (**More options**) button, and then select **Open File**.
 
-To display and pick from a list of all .js files, type `.js`.
+To display and pick from a list of all .js files, type **.js**.
 
 ![Opening a file by using the Command Menu](../media/sources-command-menu-to-open-file.msft.png)
 
-If you type `?`, the Command Menu shows several commands, including **... Open file**.  If you select `Backspace` to clear the Command Menu, a list of files is shown.
+If you type **?**, the Command Menu shows several commands, including **... Open file**.  If you press **Backspace** to clear the Command Menu, a list of files is shown.
 
 For more information, see [Run commands with the Microsoft Edge DevTools Command Menu](../command-menu/index.md).
 
@@ -273,7 +273,7 @@ To edit a JavaScript file in DevTools, use the **Editor** pane, within the **Sou
 
 ![Editing JavaScript in the Editor pane](../media/editing-js-in-editor-pane.msft.png)
 
-To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** (`...`) and then select **Open File**.
+To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** (**...**) and then select **Open File**.
 
 See also:
 * [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
@@ -281,18 +281,18 @@ See also:
 
 ###### Save and Undo
 
-For JavaScript changes to take effect, press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS).
+For JavaScript changes to take effect, press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS).
 
 If you change a file, an asterisk appears next to the file name.
-*  To save changes, press `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.
-*  To undo a change, press `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
+*  To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.
+*  To undo a change, press **Ctrl+Z** on Windows/Linux or **Command+Z** on macOS.
 
 By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md).
 
 
 ###### Find and Replace
 
-To find text in the current file, select the **Editor** pane to give it focus, and then press `Ctrl`+`F` on Windows/Linux, or `Command`+`F` on macOS.
+To find text in the current file, select the **Editor** pane to give it focus, and then press **Ctrl+F** on Windows/Linux, or **Command+F** on macOS.
 
 ![Find and Replace, in the Editor pane of the Sources tool](../media/find-replace.msft.png)
 
@@ -400,11 +400,11 @@ Unlike a JavaScript or CSS file, an HTML file that is returned by the web server
 * [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
 * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 
-To save changes, press `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.  An edited file is marked by an asterisk.
+To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.  An edited file is marked by an asterisk.
 
-To find text, press `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS.
+To find text, press **Ctrl+F** on Windows/Linux or **Command+F** on macOS.
 
-To undo an edit, press `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
+To undo an edit, press **Ctrl+Z** on Windows/Linux or **Command+Z** on macOS.
 
 To view other commands while editing an HTML file, in the Editor pane, right-click the HTML file.
 
@@ -423,7 +423,7 @@ To go to a line number or symbol (such as a function name) in the file which is 
 | Character | Command name | Purpose |
 |---|---|---|
 | \: | **Go to line** | Go to a line number. |
-| \@ | **Go to symbol** | Go to a function.  When you type `@`, the Command Menu lists the functions that are found in the JavaScript file which is open in the Editor pane. |
+| \@ | **Go to symbol** | Go to a function.  When you type **@**, the Command Menu lists the functions that are found in the JavaScript file which is open in the Editor pane. |
 
 For more information, see [Run commands with the Microsoft Edge DevTools Command Menu](../command-menu/index.md).
 
@@ -437,13 +437,13 @@ To use the **Quick source** tool:
 
 1. Select a tool other than the **Sources** tool, such as the **Elements** tool.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The Command Menu opens.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  The Command Menu opens.
 
-1. Type `quick`, and then select **Show Quick source**.
+1. Type **quick**, and then select **Show Quick source**.
 
     At the bottom of the DevTools window, the Drawer appears, with the **Quick source** tool selected.  The **Quick source** tool contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
 
-1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog.
+1. Press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the **Open File** dialog.
 
 
 <!-- ====================================================================== -->
@@ -483,7 +483,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
    <!-- You can view the source code for the demo page at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
-1. Right-click anywhere in the webpage, and then select **Inspect**.  Or, press `F12`.  The **DevTools** window opens, next to the demo webpage.
+1. Right-click anywhere in the webpage, and then select **Inspect**.  Or, press **F12**.  The **DevTools** window opens, next to the demo webpage.
 
 1. In DevTools, select the **Sources** tab.
 
@@ -491,7 +491,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
 1. In the **Editor** pane, select a line number near a suspect line of code, to set a breakpoint on that line.  In the figure below, a breakpoint is set on the line `var sum = addend1 + addend2;`.  (Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead of a red circle.)
 
-1. In the webpage, enter values and submit the form.  For example, enter numbers, such as `5` and `1`, then select the button **Add Number 1 and Number 2**.
+1. In the webpage, enter values and submit the form.  For example, enter numbers, such as **5** and **1**, then select the button **Add Number 1 and Number 2**.
 
     The debugger runs the JavaScript code and then pauses at the breakpoint.  The debugger is now in Paused mode, so you can inspect the values of the properties that are in-scope, and step through the code.
 
@@ -503,9 +503,9 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
    At this point, you could add expressions in the **Watch** pane.  These expressions are the same expressions that you would write within a `console.log` statement to debug your code.
 
-   To run JavaScript commands to manipulate data in the current context, you use the **Console**.  If you want to open the console in the Drawer at the bottom of DevTools, press `Esc`.
+   To run JavaScript commands to manipulate data in the current context, you use the **Console**.  If you want to open the console in the Drawer at the bottom of DevTools, press **Esc**.
 
-1. Step through the code by using the controls at the top of the **Debugger** pane, such as **Step** (`F9`).
+1. Step through the code by using the controls at the top of the **Debugger** pane, such as **Step** (**F9**).
 
     The bug in this demo is that you need to first convert the input data from strings to numbers.
 
@@ -521,9 +521,9 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
     var sum = parseInt(addend1) + parseInt(addend2);
     ```
 
-1.  Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change in the local cached file.
+1.  Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change in the local cached file.
 
-1.  Enter `5` and `1` into the webpage and then click the **Add** button.  Now **Scope** > **Local** > **sum:** is the number 6, instead of the string "51".
+1.  Enter **5** and **1** into the webpage and then click the **Add** button.  Now **Scope** > **Local** > **sum:** is the number 6, instead of the string "51".
 
 
 See also:
@@ -544,7 +544,7 @@ These three approaches are equivalent:
 
 When the variable `sum` is in-scope, `sum` and its value are automatically shown in the **Scope** section of the **Debugger** pane, and are also overlaid in the Editor pane where `sum` is calculated.  So you probably wouldn't need to define a Watch expression for `sum`.
 
-The debugger gives a richer, more flexible display and environment than a `console.log` statement.  For example, in the debugger, as you step through the code, you can display and change the values of all currently defined properties and variables.  You can also issue JavaScript statements in the **Console**, such as to change values in an array that's in-scope.  (To show the Console, press `Esc`.)
+The debugger gives a richer, more flexible display and environment than a `console.log` statement.  For example, in the debugger, as you step through the code, you can display and change the values of all currently defined properties and variables.  You can also issue JavaScript statements in the **Console**, such as to change values in an array that's in-scope.  (To show the Console, press **Esc**.)
 
 Breakpoints and Watch expressions are preserved when you refresh the webpage.
 

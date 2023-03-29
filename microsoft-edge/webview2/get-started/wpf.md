@@ -189,7 +189,7 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 
 1. Open Visual Studio, and open the solution you created.
 
-1. Press `F5` to run the initial app (shown above), not yet including the WebView2 SDK.
+1. Press **F5** to run the initial app (shown above), not yet including the WebView2 SDK.
 
 1. Close the initial app.
 

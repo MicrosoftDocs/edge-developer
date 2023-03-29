@@ -23,7 +23,7 @@ To export a `.heapsnapshot` file, first you need to record a heap snapshot in th
 
 1. In Microsoft Edge, navigate to the website you want to export the data from.
 
-1. Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS) to open Devtools.
+1. Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS) to open Devtools.
 
 1. Open the **Memory** tool.
 

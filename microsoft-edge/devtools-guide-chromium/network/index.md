@@ -64,7 +64,7 @@ To get the most out of this tutorial, open the demo and try out the features on 
    ![The demo in one window and this tutorial in a different window](../media/network-tutorial/windows.msft.png)
    -->
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens.
 
 1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](../media/more-tools-icon-light-theme.png)) button:
 
@@ -226,7 +226,7 @@ For example, suppose you want to verify that your resources are using reasonable
 
    ![The Search pane](../media/network-glitch-network-search-empty.msft.png)
 
-1. Type `no-cache` and press `Enter`.  The Search pane lists all instances of `no-cache` that it finds in resource headers or content:
+1. Type `no-cache` and press **Enter**.  The Search pane lists all instances of `no-cache` that it finds in resource headers or content:
 
    ![Search results for no-cache](../media/network-glitch-network-search-cache-control.msft.png)
 
@@ -274,7 +274,7 @@ To focus in on a certain type of file, such as stylesheets:
 
    ![Show CSS files only](../media/network-glitch-network-filter-file-type-css.msft.png)
 
-1. To also display scripts, press and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then click **JS**.
+1. To also display scripts, press and hold **Ctrl** (Windows, Linux) or **Command** (macOS), and then click **JS**.
 
 1. To remove the filters and display all resources again, select **All**.
 
@@ -286,9 +286,9 @@ For other filtering workflows, see [Filter requests](reference.md#filter-request
 
 How does a page look and behave when some of the page resources aren't available?  Does it fail completely, or is it still somewhat functional?  Block requests to find out:
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-1. Type `block`, select **Show Request Blocking**, and then press `Enter`:
+1. Type `block`, select **Show Request Blocking**, and then press **Enter**:
 
    ![Show Request Blocking](../media/network-glitch-network-cli-block.msft.png)
 
