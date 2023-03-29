@@ -59,7 +59,7 @@ You can open the **Console** as a [tool in the upper pane](#open-the-console-too
 
 ### Open the Console tool
 
-Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
 ![The Console tool](../media/console-hello-console.msft.png)
 
@@ -70,7 +70,7 @@ To open the **Console** tool from the [Command Menu](../command-menu/index.md), 
 
 ### Open the Console tool in the Drawer
 
-Press `Esc`.  Or, click **Customize and control DevTools** (`...`) and then select **Show console drawer**.
+Press **Esc**.  Or, click **Customize and control DevTools** (`...`) and then select **Show console drawer**.
 
 ![Show console drawer](../media/console-elements-customize-control-devtools-show-console-drawer.msft.png)
 
@@ -219,7 +219,7 @@ This section contains features related to running JavaScript in the **Console**.
 
 ### Rerun expressions from history
 
-Press `Up Arrow` to cycle through the history of JavaScript expressions that you ran earlier in the **Console**.  Press `Enter` to run that expression again.
+Press **Up Arrow** to cycle through the history of JavaScript expressions that you ran earlier in the **Console**.  Press **Enter** to run that expression again.
 
 
 ### Watch the value of an expression in real time with Live Expressions
@@ -264,11 +264,11 @@ To clear the Console, use any of the following approaches:
 
 *  Right-click a message and then select **Clear Console**.
 
-*  Type `clear()` in the Console and then press `Enter`.
+*  Type `clear()` in the Console and then press **Enter**.
 
 *  Call `console.clear()` from your webpage's JavaScript.
 
-*  Press `Ctrl`+`L` while the Console is in focus.
+*  Press **Ctrl+L** while the Console is in focus.
 
 
 <!-- ====================================================================== -->

@@ -37,7 +37,7 @@ In this section, you download and run the final state of the extension that the 
 
   ![The edge://extensions page in Microsoft Edge, showing the Developer mode and Load unpacked buttons](./devtools-extensions-images/edge-extensions-page.png)
 
-Your DevTools extension should now be loaded. Open a new tab in Microsoft Edge, and then open DevTools by pressing `F12`.
+Your DevTools extension should now be loaded. Open a new tab in Microsoft Edge, and then open DevTools by pressing **F12**.
 
 The extension creates a **Sample Panel** tab in the DevTools window:
 
@@ -91,7 +91,7 @@ To load and test your DevTools extension in Microsoft Edge, use the **Developer 
 
 1. Click **Load unpacked**, navigate to the folder where you wrote the code for your extension, and click **Select folder**.
 
-Your DevTools extension is now loaded. Open a new tab and then open DevTools (`F12`).
+Your DevTools extension is now loaded. Open a new tab and then open DevTools (**F12**).
 
 Your  extension is loaded, but isn't displayed in DevTools yet, because you haven't created a panel for the extension.
 
@@ -157,7 +157,7 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
 
    ![The Microsoft Edge extensions page showing where the Reload button is](./devtools-extensions-images/edge-extensions-page-reload-button.png)
 
-Your DevTools extension should now be reloaded. Open a new tab in Microsoft Edge and then open DevTools (`F12`). Your DevTools extension panel should be displayed in DevTools:
+Your DevTools extension should now be reloaded. Open a new tab in Microsoft Edge and then open DevTools (**F12**). Your DevTools extension panel should be displayed in DevTools:
 
 ![Microsoft Edge, with DevTools on the side, showing the new  extension panel](./devtools-extensions-images/devtools-extension-with-panel.png)
 
@@ -232,7 +232,7 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
 
 1. Click **Reload**.
 
-Your DevTools extension should now be reloaded. Open a new tab and then open DevTools (`F12`). Your DevTools extension panel should now show the available and total memory capacities.
+Your DevTools extension should now be reloaded. Open a new tab and then open DevTools (**F12**). Your DevTools extension panel should now show the available and total memory capacities.
 
 ![The new  extension panel in DevTools, showing memory information](./devtools-extensions-images/devtools-extension-with-memory-info.png)
 
@@ -394,7 +394,7 @@ To test the new `sayHello` button:
 
 1. Click the **Reload** button.
 
-1. Open a new browser tab, open DevTools (`F12`), and click the **Sample Panel** tab.
+1. Open a new browser tab, open DevTools (**F12**), and click the **Sample Panel** tab.
 
 1. Click the `"Say Hello to The Inspected Page!"` button in your panel. You should see an alert in the inspected page, as shown below.
 

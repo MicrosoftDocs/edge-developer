@@ -60,7 +60,7 @@ To view a JSON file stored on your device as reformatted JSON:
 
 1. Open a new tab or window in Microsoft Edge.
 
-1. Press `Ctrl`+`O` on Windows and Linux, or `Command`+`O` on macOS, and then select a JSON file.
+1. Press **Ctrl+O** on Windows and Linux, or **Command+O** on macOS, and then select a JSON file.
 
 1. Microsoft Edge detects that the file contains JSON data and formats it automatically:
 
@@ -87,7 +87,7 @@ To view invalid JSON data:
 
 1. Microsoft Edge detects that the file contains invalid JSON data, highlights it, but does not reformats it.
 
-1. Open the **Console** tool by pressing `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. Open the **Console** tool by pressing **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
 1. A JavaScript error that indicates where the JSON syntax error is located is shown in the **Console** tool:
 

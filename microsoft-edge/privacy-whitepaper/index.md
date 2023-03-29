@@ -767,7 +767,7 @@ When you add a new language to Microsoft Edge, the browser downloads the diction
  
 #### Text prediction 
 
-Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press `Tab` or the `Right arrow` key to accept them. Password fields will not offer text predictions.
+Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press **Tab** or the **Right Arrow** key to accept them. Password fields will not offer text predictions.
 
 To turn off text predictions in Microsoft Edge: 
 

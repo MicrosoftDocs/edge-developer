@@ -46,7 +46,7 @@ Visual Studio Code source path mapping now requires an URL, so your app now rece
 <!-- ====================================================================== -->
 ## Debug your code
 
-1. To set a breakpoint in your source code, click a line of code and then press `F9`:
+1. To set a breakpoint in your source code, click a line of code and then press **F9**:
 
    ![A breakpoint that's set in Visual Studio Code](./media/breakpoint-vs.png)
 

@@ -11,7 +11,7 @@ ms.date: 10/06/2022
 
 Visual Studio Code uses a `launch.json` file to define debug configurations.  To use the DevTools extension, a `launch.json` file is only needed if you want to use the debugger and your webpage requires running on a web server, not just a local file system.  In most cases, the only thing you need to know about the content of the DevTools-generated `launch.json` file (if you choose to use it) is that you need to enter your desired URL in the `"url"` string in several places.  Read this article if you want to use custom, advanced debug configurations.
 
-If you want to use Visual Studio Code's UI such as `F5` to start the **DevTools** tabs along with Debug mode, your opened folder (workspace) must contain a DevTools-generated (DevTools-compatible) `launch.json` file in the `.vscode` directory.
+If you want to use Visual Studio Code's UI such as **F5** to start the **DevTools** tabs along with Debug mode, your opened folder (workspace) must contain a DevTools-generated (DevTools-compatible) `launch.json` file in the `.vscode` directory.
 
 Details about the `launch.json` file format are below.  You normally don't need to change anything in the file except to replace several instances of the URL string, as explained in [Opening DevTools by clicking the Launch Project button](./open-devtools-and-embedded-browser.md#opening-devtools-by-clicking-the-launch-project-button) in _Opening DevTools and the DevTools browser_.
 

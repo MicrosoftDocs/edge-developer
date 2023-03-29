@@ -85,7 +85,7 @@ See also:
 * [Call web-side code from native-side code](../how-to/javascript.md)
 * [Call native-side code from web-side code](../how-to/hostobject.md)
 * [Call native-side WinRT code from web-side code](../how-to/winrt-from-js.md)
-* [JavaScript APIs in WebView2](/microsoft-edge/webview2/reference/index.yml) for `window.chrome.webview` JavaScript APIs
+* [JavaScript APIs in WebView2](/microsoft-edge/webview2/reference/javascript/) for `window.chrome.webview` JavaScript APIs
 
 The following are the main APIs for communicating between web and native code.
 
@@ -1263,7 +1263,7 @@ WebView2 gives your app access to window-specific attributes, such as positionin
 <!-- ------------------------------ -->
 #### Zooming
 
-WebView2 `ZoomFactor` is used to scale just the web content of the window.  UI scaling is also updated when the user zooms the content by pressing `Ctrl` while rotating the mouse wheel.
+WebView2 `ZoomFactor` is used to scale just the web content of the window.  UI scaling is also updated when the user zooms the content by pressing **Ctrl** while rotating the mouse wheel.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1330,7 +1330,7 @@ The RasterizationScale API scales all WebView2 UI including context menus, toolt
 <!-- ------------------------------ -->
 #### Focus and tabbing
 
-The WebView2 control raises events to let the app know when the control gains focus or loses focus. For tabbing (pressing the `Tab` key), there's an API to move focus into WebView2 and an event for WebView2 to request the app to take focus back.
+The WebView2 control raises events to let the app know when the control gains focus or loses focus. For tabbing (pressing the **Tab** key), there's an API to move focus into WebView2 and an event for WebView2 to request the app to take focus back.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

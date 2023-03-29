@@ -57,7 +57,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 There are several additional ways to open the **Issues** tool:
 *  Click the **More Tools** (**+**) menu in the main panel or the **Drawer**, and then select **Issues**.
 *  Select **Customize and control DevTools** > **More tools** > **Issues**.
-*  In the DOM tree in the **Elements** tool, press `Shift` and then click a wavy-underlined element name.  Or, open the context menu on a wavy-underlined element and then select **View issues**.
+*  In the DOM tree in the **Elements** tool, press **Shift** and then click a wavy-underlined element name.  Or, open the context menu on a wavy-underlined element and then select **View issues**.
 
 
 ### Issues are automatically ordered by severity
@@ -112,13 +112,13 @@ To open a linked tool from the **Issues** tool:
 <!-- ====================================================================== -->
 ## Open issues from the DOM tree
 
-If an element has an associated issue, the DOM tree in the **Elements** tool shows a wavy underline under the element name.  Right-click the element and then select **View issues**.  Or, press and hold `Shift` and then click the element with the wavy underline.
+If an element has an associated issue, the DOM tree in the **Elements** tool shows a wavy underline under the element name.  Right-click the element and then select **View issues**.  Or, press and hold **Shift** and then click the element with the wavy underline.
 
 To display an issue for elements with wavy underlines in the DOM tree:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. In DevTools, select the **Elements** tab.
 

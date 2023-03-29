@@ -87,7 +87,7 @@ Build and run the project, using the versions of the NuGet packages that were in
 
    The project builds.
 
-1. Select **Debug** > **Start Debugging** (`F5`).
+1. Select **Debug** > **Start Debugging** (**F5**).
 
    An empty grid window initially appears for a moment:
 
@@ -174,7 +174,7 @@ Now that the NuGet packages have been updated, build and run the project again:
 
    The project builds.
 
-1. Select **Debug** > **Start Debugging** (`F5`).
+1. Select **Debug** > **Start Debugging** (**F5**).
 
    An empty grid window initially appears for a moment:
 

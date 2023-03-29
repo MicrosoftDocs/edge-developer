@@ -17,7 +17,7 @@ The **Accessibility Tree** is a subset of the DOM tree, which contains elements 
 
 To explore using the Accessibility Tree:
 
-1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab.  Then press `F12` to open DevTools.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab.  Then press **F12** to open DevTools.
 
 1. Select the **Inspect** (![the Inspect icon](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 

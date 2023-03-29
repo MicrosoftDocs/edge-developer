@@ -88,7 +88,7 @@ See [Detect Windows 11 using User-Agent Client Hints](how-to-detect-win11.md).
 <!-- ====================================================================== -->
 ## Customize the password reveal button
 
-The `password` input control in Microsoft Edge includes a **password reveal** button.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press `Alt`+`F8`, to show the characters in the password field.  You can remove the **password reveal** control, or customize the control styling.
+The `password` input control in Microsoft Edge includes a **password reveal** button.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press **Alt+F8**, to show the characters in the password field.  You can remove the **password reveal** control, or customize the control styling.
 
 See [Customize the password reveal button](password-reveal.md).
 

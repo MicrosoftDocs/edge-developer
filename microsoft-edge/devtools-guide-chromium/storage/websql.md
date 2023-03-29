@@ -55,7 +55,7 @@ You can't edit Web SQL data when viewing a Web SQL table, such as in the previou
 
 1. Click a database to open a console for that database.
 
-1. Type a Web SQL statement, then press `Enter` to run it.
+1. Type a Web SQL statement, then press **Enter** to run it.
 
 ![Use the Web SQL Console to delete a row from a table](../media/storage-application-storage-web-sql-html5meetup-commands.msft.png)
 
