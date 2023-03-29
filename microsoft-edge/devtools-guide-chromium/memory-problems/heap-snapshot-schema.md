@@ -305,15 +305,9 @@ The first number in the group of numbers for an edge in the `edges` array corres
 
 #### locations
 
-The `locations` array, which is at the top level of the `.heapsnapshot` data, contains information about the location of `HeapSnapshot` nodes. This array consists of a series of numbers meant to be read by groups of size `snapshot.meta.location_fields.length`.
+The `locations` array, which is at the top level of the `.heapsnapshot` data, contains information about where some of the nodes in the snapshot were created. This array consists of a series of numbers meant to be read by groups of size `snapshot.meta.location_fields.length`. Therefore, we would go to `snapshot.meta.location_fields` to know how many fields each location in the `locations` array has, and what those fields are. For example, if `location_fields` contains 4 items, then the `locations` array should be read by groups of 4.
 
-
-To use this array, the following information is needed:
-
-* `snapshot.meta.location_fields`, to know how many fields each location in the `locations` array has, and what those fields are. For example, if `location_fields` contains 4 items, then the `locations` array should be read by groups of 4.
-* `snapshot.nodes`, to link a location group back to a node.
-
-`snapshot.meta.location_fields` contains the information for each location group:
+`snapshot.meta.location_fields` contains the information for each location:
 
 | Index in `location_fields` | Name | Description |
 | --- | --- | --- |
@@ -352,7 +346,7 @@ The following code example shows how to link the `snapshot.locations` array to t
 }
 ```
 
-The first location group in the `locations` array is `7,9,0,0,`. This location group is associated with the node info group that starts at index 7 in the `nodes` array. Therefore, the node contains the following key/value pairs:
+The first location in the `locations` array is `7,9,0,0,`. This location is associated with the node info group that starts at index 7 in the `nodes` array. Therefore, the node contains the following key/value pairs:
 
 ```
 "type": 2,
