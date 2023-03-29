@@ -29,8 +29,13 @@ There are normally a few processes:
 Your machine will have one set of processes for each app that uses WebView2, and typically one renderer process for each WebView2 control that's in the app, similar to how you have one renderer process per tab in a browser.  For details, see [Process model for WebView2 apps](/microsoft-edge/webview2/concepts/process-model).
 
 
-## Why is WebView2 using so much memory, CPU, etc.?
-In most cases this is related to how WebView2 is being used, not WebView2 itself. If the application is rendering poorly optimized web content, then it may consume more resources. Task Manager will normally show the processes parented, but can be incorrect at times or if you sort by a column other than "Name". You can also use Microsoft’s [Process Explorer](https://learn.microsoft.com/sysinternals/downloads/process-explorer) tool. If there's an app consistently causing heavy resource usage you can follow up with the support for that app.
+<!-- ====================================================================== -->
+## Why is WebView2 using so much memory or CPU resources?
+
+In most cases, extra memory or CPU usage is due to how WebView2 is being used, not WebView2 itself. If the application is rendering non-optimized web content, then the WebView2 control might consume more resources. Task Manager will normally show the processes parented, but can be incorrect at times or if you sort by a column other than **Name**. 
+
+You can also use Microsoft's [Process Explorer](/sysinternals/downloads/process-explorer) tool. If you find that an app is consistently causing heavy resource usage, you can contact Support for that app to report the resource usage.
+
 
 ## Is WebView2 a virus?
 WebView2 is not a virus. It is a Microsoft product that is updated automatically to ensure that your applications have the latest security fixes. Most people will see it used by Widgets, Teams, Office, Outlook, Weather, and many more applications. Any application can *use* WebView2 though, so it's possible for a malicious application to use WebView2, just like it can use any other Windows API or feature.
