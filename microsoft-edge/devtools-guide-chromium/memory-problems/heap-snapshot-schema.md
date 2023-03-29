@@ -352,6 +352,7 @@ The following code example shows how to link the `snapshot.locations` array to t
 ```
 
 The first location group in the `locations` array is `7,9,0,0,`. This location group is associated with the node info group that starts at index 7 in the `nodes` array. Therefore, the node contains the following key/value pairs:
+
 ```
 "type": 2,
 "name": 1,
