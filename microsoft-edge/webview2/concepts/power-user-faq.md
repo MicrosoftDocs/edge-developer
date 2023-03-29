@@ -51,7 +51,17 @@ Most people will see WebView2 used by Widgets, Teams, Office, Outlook, Weather, 
 No. Microsoft Edge can be uninstalled without causing a problem for WebView2.  When both Microsoft Edge and WebView2 are installed, the Microsoft Edge installer links the applications together, to avoid using extra disk space.
 
 
-## I uninstalled WebView2, why is it back again?
-WebView2 is pre-installed on Windows 11 and optimistically installed on most Windows 10 devices ([details here](https://blogs.windows.com/msedgedev/2022/06/27/delivering-the-microsoft-edge-webview2-runtime-to-windows-10-consumers/)). Many apps built on WebView2 also perform checks to re-install WebView2 when being installed or launched. Enterprises may also push WebView2 to devices they manage.
+<!-- ====================================================================== -->
+## Why was WebView2 re-installed after I uninstalled it?
 
+WebView2 is pre-installed on Windows 11 and is installed on most Windows 10 devices.  See [Delivering the Microsoft Edge WebView2 Runtime to Windows 10 Consumers](https://blogs.windows.com/msedgedev/2022/06/27/delivering-the-microsoft-edge-webview2-runtime-to-windows-10-consumers/).
+
+Many apps that are built on WebView2 perform checks to re-install WebView2 when the app is installed or launched. Enterprises can also push WebView2 to devices that they manage.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Introduction to Microsoft Edge WebView2](../index.md)
+* [Contact the WebView2 Team](../contact.md)
 
