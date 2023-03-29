@@ -11,8 +11,12 @@ ms.date: 03/29/2023
 # WebView2 Power User FAQ
 Most of our documentation is intended for developers who want to use WebView2 in their applications. This FAQ is intended for a normal person looking to understand what this `msedgewebview2.exe` application is on your computer. If we don't have your question here, feel free to hit "Feedback" in the top-right corner, or open a specific issue [on our GitHub](https://github.com/MicrosoftDocs/edge-developer/issues) and we'll see if we can add it.
 
+
+<!-- ====================================================================== -->
 ## What is WebView2?
-WebView2 is a way for any Windows app developer to embed web content in their application. This can let them write code for a website or web app, then re-use it in their Windows application, saving time and effort.
+
+WebView2 is a way for app developers to embed web content (such as HTML, JavaScript, and CSS) in Windows applications. By including the WebView2 control in an app, a developer can write code for a website or web app, and then re-use that web code in their Windows application, saving time and effort.  See [Introduction to Microsoft Edge WebView2](../index.md).
+
 
 
 <!-- ====================================================================== -->
