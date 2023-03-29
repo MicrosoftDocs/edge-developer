@@ -52,33 +52,33 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 | Action | Resulting tool |
 |---|---|
 | Right-click any item on a webpage, and then select **Inspect**. | The **Elements** tool, with the DOM tree expanded to show the right-clicked page element. |
-| Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).| The previously used tool, or the **Welcome** tool. |
-| Press `F12`. | The previously used tool, or the **Welcome** tool. |
+| Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).| The previously used tool, or the **Welcome** tool. |
+| Press **F12**. | The previously used tool, or the **Welcome** tool. |
 
 **Additional ways:**
 
 | Action | Resulting tool |
 |---|---|
 | On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon](media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools**. | The previously used tool, or the **Welcome** tool. |
-| Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS). | The **Console** tool. |
-| Press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS). | The **Elements** tool, with the DOM tree expanded to show the `<body>` element. |
-| Press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |
-| Press `Tab` and `Shift`+`Tab` to put focus on a page element.  Then press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the focused page element. |
+| Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS). | The **Console** tool. |
+| Press **Ctrl+Shift+C** (Windows, Linux) or **Command+Option+C** (macOS). | The **Elements** tool, with the DOM tree expanded to show the `<body>` element. |
+| Press **Shift+F10** to open the right-click menu.  To select the **Inspect** command, press **Up Arrow** and then **Enter**. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |
+| Press **Tab** or **Shift+Tab** to put focus on a page element.  Then press **Shift+F10** to open the right-click menu.  To select the **Inspect** command, press **Up Arrow** and then **Enter**. | The **Elements** tool, with the DOM tree expanded to show the focused page element. |
 
 <!-- /keep sync'd -->
 
 <!--
 hit counts:
 
-`F12` 45 (in 30)
+**F12** 45 (in 30)
 
-`Ctrl`+`Shift`+`J` 22 (in 14)
-`Ctrl`+`Shift`+`I` 21 (in 11)
-`Ctrl`+`Shift`+`C` 7 (in 6)
+**Ctrl+Shift+J** 22 (in 14)
+**Ctrl+Shift+I** 21 (in 11)
+**Ctrl+Shift+C** 7 (in 6)
 
-`Command`+`Option`+`J`  21  (in 12)
-`Command`+`Option`+`I` 15    (in 6)
-`Command`+`Option`+`C`  3   (in 2)
+**Command+Option+J**  21  (in 12)
+**Command+Option+I** 15    (in 6)
+**Command+Option+C**  3   (in 2)
  -->
 
 
@@ -142,7 +142,7 @@ The startup boost feature keeps a minimal Microsoft Edge process running in the 
 
 #### Turning off the F12 keyboard shortcut
 
-To prevent pressing `F12` from opening DevTools:
+To prevent pressing **F12** from opening DevTools:
 
 1. In Microsoft Edge, go to `edge://settings/system`.
 
@@ -173,7 +173,7 @@ The DevTools UI is implemented using HTML and CSS, like web pages, so you can zo
 **To zoom the DevTools portion of the browser:**
 
 1. If focus isn't already on DevTools, click somewhere in DevTools.
-1. Press `Ctrl`+`+` or `Ctrl`+`-` (Windows or Linux).  Or, press `Command`+`+` or `Command`+`-` (macOS).
+1. Press **Ctrl**+**+** or **Ctrl**+**-** (Windows or Linux).  Or, press **Command**+**+** or **Command**+**-** (macOS).
 
 ![DevTools zoomed out](overview-images/zoom-devtools.png)
 
@@ -184,7 +184,7 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 **To restore zoom to 100%:**
 
 1. Make sure focus is on the desired part of the browser, either DevTools or the rendered page.
-1. Press `Ctrl`+`0` or `Ctrl`+`NumPad0` (Windows or Linux), or `Command`+`0` (macOS).
+1. Press **Ctrl+0** or **Ctrl+NumPad0** (Windows or Linux), or **Command+0** (macOS).
 
 **To zoom DevTools Settings:**
 
@@ -207,14 +207,14 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
 
 *  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
-*  Press `Ctrl`+`Shift`+`H` (Windows, Linux) or `Cmd`+`Shift`+`H` (macOS).
-*  [Open the Command Menu](command-menu/index.md#open-the-command-menu) and then type `tooltips`.
+*  Press **Ctrl+Shift+H** (Windows, Linux) or **Command+Shift+H** (macOS).
+*  [Open the Command Menu](command-menu/index.md#open-the-command-menu) and then type **tooltips**.
 
 Then hover over each outlined region of DevTools:
 
 ![DevTools Tooltips](overview-images/tooltips.png)
 
-To turn off Tooltips, press `Esc`.  
+To turn off Tooltips, press **Esc**.  
 
 
 <!-- ====================================================================== -->
@@ -242,7 +242,7 @@ Within the panel of some tools, there are one or more sets of tabs (tabbed panes
 
 <!-- clarify: DevTools also allows you to change web-based third-party products on your computer.  extensions? -->
 
-There are two toolbars: the main toolbar at the top of DevTools, and the **Drawer** at the bottom when you press `Esc`.
+There are two toolbars: the main toolbar at the top of DevTools, and the **Drawer** at the bottom when you press **Esc**.
 
 The main toolbar contains the following features:
 
@@ -393,7 +393,7 @@ To add a tool to the toolbar, click the **More Tools** (![More Tools icon](media
 
 The **JavaScript errors counter** (![JavaScript errors counter icon](media/javascript-counter-icon-light-theme.png)) button displays the following:
 
-*  A red circle containing an `X`, followed by the number of JavaScript errors that were automatically detected on the current webpage.
+*  A red circle containing an **X**, followed by the number of JavaScript errors that were automatically detected on the current webpage.
 
 *  A yellow triangle containing an exclamation mark, followed by the number of JavaScript warnings that were automatically detected on the current webpage.
 
@@ -483,7 +483,7 @@ Use the **More Tools** (**+**) menu to select any of the Panel tools or Drawer t
 | Open a tool on the Drawer toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, click **More Tools** (**+**) and then select a tool. |
 | Move a tool from the Drawer toolbar to the main Toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, right-click the tool's tab, and then select **Move to top**. |
 | Move a tool from the main toolbar to the drawer Toolbar | On the main toolbar, right-click the tool's tab, and then select **Move to bottom**. |
-| Open a tool in its default toolbar | When DevTools has focus, open the **Command Menu** by pressing `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type the name of the tool, and then select the tool. |
+| Open a tool in its default toolbar | When DevTools has focus, open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type the name of the tool, and then select the tool. |
 
 In addition to Panel tools and Drawer tools, DevTools includes the following tools:
 *  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
@@ -510,7 +510,7 @@ To open the Command Menu, do either of the following:
 
 *  Click the **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
 
-*  Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
+*  Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
 
 The Command Menu allows you to type commands to display, hide, or run features in DevTools.  With the Command Menu open, enter the word **changes**, and then select **Drawer: Show Changes**.
@@ -521,7 +521,7 @@ After you type **cha**, the Command Menu displays the options:
 
 ![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'](media/devtools-intro-command-menu-show-changes.msft.png)
 
-Press `Enter`, and then the **Changes** tool opens:
+Press **Enter**, and then the **Changes** tool opens:
 
 ![DevTools with the Changes tool open](media/devtools-intro-showing-changes.msft.png)
 
@@ -531,7 +531,7 @@ See also [Run commands with the Microsoft Edge DevTools Command menu](command-me
 <!-- ====================================================================== -->
 ## Customizing DevTools
 
-You can customize DevTools to meet your needs for the way you work.  To change settings, click the **Settings** (![Settings icon](media/settings-gear-icon-light-theme.png)) button, or press `F1`.
+You can customize DevTools to meet your needs for the way you work.  To change settings, click the **Settings** (![Settings icon](media/settings-gear-icon-light-theme.png)) button, or press **F1**.
 
 In the **Settings** > **Preferences** page, you can change several parts of DevTools.  For example, you can use the **Match the browser language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
 
@@ -583,7 +583,7 @@ To preview the [latest features coming to DevTools](whats-new/2021/02/devtools.m
 <!-- ====================================================================== -->
 <!-- ## Clipboard: How to open DevTools and any specific tool tab
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. In DevTools, on the main toolbar, select the **__** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
 
@@ -597,9 +597,9 @@ don't need, if have the above step:
 #### Clipboard entry for opening a specific Settings page:
 
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
 
 1. On the left side of the **Settings** panel, select the **__** page.
 -->

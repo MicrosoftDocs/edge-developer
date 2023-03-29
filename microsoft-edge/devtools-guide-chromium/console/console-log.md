@@ -49,7 +49,7 @@ To try using the logging functions in the Console:
 
 1. Open the demo webpage [Console messages examples: log, info, error, and warn](https://microsoftedge.github.io/Demos/devtools-console/logging-examples.html) in a new window or tab.
 
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in main toolbar.
 
    The demo page has already sent the above log messages to the **Console**:
 
@@ -59,7 +59,7 @@ To try using the logging functions in the Console:
   
    The `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace](https://en.wikipedia.org/wiki/Stack_trace) of the message.
 
-1. Copy and paste any of the examples into the **Console**, and then press `Enter`.
+1. Copy and paste any of the examples into the **Console**, and then press **Enter**.
 
    Output is displayed in the **Console**, below the code that you entered.
 
@@ -101,7 +101,7 @@ To use the `log` function to display different variable types:
 
 1. Open the demo webpage [Console messages examples: Logging different types](https://microsoftedge.github.io/Demos/devtools-console/logging-types.html) in a new window or tab.
 
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in main toolbar.
 
    Each type of result is displayed in a different way.
 
@@ -117,7 +117,7 @@ To use the `log` function to display different variable types:
 
    ![Log variables of different types in the console with expanded extra information](../media/console-log-types-expanded.msft.png)
 
-1. Copy and paste any of the examples into the **Console**, and then press `Enter`.
+1. Copy and paste any of the examples into the **Console**, and then press **Enter**.
 
    Output is displayed in the **Console**, below the code that you entered.
 
@@ -163,7 +163,7 @@ console.log('%cImportant message follows','color:red;font-size:40px')
 
 1. Open the demo page [Console messages examples: Logging with specifiers](https://microsoftedge.github.io/Demos/devtools-console/logging-with-specifiers.html) in a new tab or window.
 
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in main toolbar.
 
    The webpage has already populated the **Console** with output.
 
@@ -175,7 +175,7 @@ console.log('%cImportant message follows','color:red;font-size:40px')
    
 1. Click the expander triangles in the output results, to expand and see the data that's output by the above `log` statements that are in the webpage.
 
-1. If necessary, press `F5` to reload the page and re-populate the **Console** output.
+1. If necessary, press **F5** to reload the page and re-populate the **Console** output.
 
    Specifiers are used to log, format, and convert values:
 
@@ -187,7 +187,7 @@ console.log('%cImportant message follows','color:red;font-size:40px')
 
    ![Expand the results displays the difference between the %O and %o specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the webpage body](../media/console-log-specifiers-expanded.msft.png)
 
-1. Copy and paste the above example code listing into the **Console**, and then press `Enter`.
+1. Copy and paste the above example code listing into the **Console**, and then press **Enter**.
 
    Output is displayed in the **Console**, below the code that you entered.
 
@@ -233,7 +233,7 @@ In this example, the group names are optionally generated.
 
 1. Open the demo page [Console messages examples: Grouping logs](https://microsoftedge.github.io/Demos/devtools-console/logging-with-groups.html) in a new tab or window.
 
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in main toolbar.
 
    The webpage has already populated the **Console** with output.
 
@@ -245,7 +245,7 @@ In this example, the group names are optionally generated.
 
    ![Each group can be expanded and collapsed](../media/console-log-groups-expanded.msft.png)
 
-1. Copy and paste the above example code listing into the **Console**, and then press `Enter`.
+1. Copy and paste the above example code listing into the **Console**, and then press **Enter**.
 
    Output is displayed in the **Console**, below the code that you entered.
 
@@ -287,7 +287,7 @@ To show complex data as tables:
 
 1. Open the demo page [Console messages examples: Using table](https://microsoftedge.github.io/Demos/devtools-console/logging-with-table.html) in a new window or tab.
 
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in main toolbar.
 
    The webpage has already populated the **Console** with output.
 
@@ -297,7 +297,7 @@ To show complex data as tables:
 
    ![Display data with console.table to make it easier to read](../media/console-log-table.msft.png)
 
-1. Copy and paste the above code listing into the **Console**, and then press `Enter`.
+1. Copy and paste the above code listing into the **Console**, and then press **Enter**.
 
    Output is displayed in the **Console**, below the code that you entered.
 
@@ -328,7 +328,7 @@ The code provides an array of properties to display, as a second parameter:
 
 ![Filtering information that 'console.table' displays, and providing an array of properties to display, as a second parameter](../media/console-log-table-filtered.msft.png)
 
-1. Copy and paste the above code listing into the **Console**, and then press `Enter`.
+1. Copy and paste the above code listing into the **Console**, and then press **Enter**.
 
    Output is displayed in the **Console**, below the code that you entered.
 

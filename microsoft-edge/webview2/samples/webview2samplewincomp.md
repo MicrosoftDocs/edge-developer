@@ -137,7 +137,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    This builds the project file `SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.vcxproj`.
 
-1. Select **Debug** > **Start Debugging** (`F5`).
+1. Select **Debug** > **Start Debugging** (**F5**).
 
    The sample app window opens:
 

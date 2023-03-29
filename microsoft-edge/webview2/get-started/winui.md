@@ -104,7 +104,7 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
 1.  In the **Solution Platforms** dropdown list, select a platform, such as **x64**.
 
-1.  Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1.  Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1.  Press **F5** to build and run the project.  The blank WinUI Desktop app opens, with no WebView2 control added yet:
 
@@ -189,7 +189,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 cont
         // myButton.Content = "Clicked";
     ```
     
-1.  Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1.  Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1.  Press **F5**, to build and run the project.
 
@@ -252,7 +252,7 @@ To allow users to control which webpage is displayed in the WebView2 control, ad
     }
     ```
     
-1.  Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1.  Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1.  Press **F5** to build and run the project.
 
@@ -335,7 +335,7 @@ In this section, you add code to import the WebView2 Core library.
     }
     ```
 
-1.  Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1.  Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1.  Press **F5** to build and run the project.
 
@@ -393,7 +393,7 @@ As an example, next, you add scripts that send an alert when a user tries to ope
     }
     ```
     
-1.  Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
+1.  Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1.  Press **F5** to build and run the project.
 

@@ -37,7 +37,7 @@ The DOM Tree of the Elements panel is where you do all DOM-related activities in
 
 When you are interested in a particular DOM node, **Inspect** is a fast way to open DevTools and investigate that node.
 
-1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.  To do this, right-click the link, or press and hold `Ctrl` (Windows, Linux) or `Command` (macOS) and then click the link.
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.  To do this, right-click the link, or press and hold **Ctrl** (Windows, Linux) or **Command** (macOS) and then click the link.
 
 <!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
@@ -68,17 +68,19 @@ Once you have selected a node in the DOM Tree, you can navigate the DOM Tree wit
 
    ![Inspecting the 'Ringo' node](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png)
 
-1. Press the `Up` arrow key 2 times.  `<div>` is selected.
+1. Press the **Up Arrow** key two times.  `<div>` is selected.
 
    ![Inspecting the 'div' node](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png)
 
-1. Press the `Left` arrow key.  The `<div>` list collapses.
+1. Press the **Left Arrow** key.  The `<div>` list collapses.
 
-1. Press the `Left` arrow key again.  The parent of the `<div>` node is selected.  In this case it is the `<section>` with the ID `navigate-the-dom-tree-with-a-keyboard-1`.
+1. Press the **Left Arrow** key again.  The parent of the `<div>` node is selected.  In this case, it's the `<section>` that has the ID `navigate-the-dom-tree-with-a-keyboard-1`.
 
-1. Press the `Down` arrow key 2 times so that you have re-selected the `<div>` list that you just collapsed.  It should look like this: `<div>... </div>`
+1. Press the **Down Arrow** key two times, so that you have re-selected the `<div>` list that you just collapsed.
 
-1. Press the `Right` arrow key.  The list expands.
+   It should look like this: `<div>... </div>`
+
+1. Press the **Right Arrow** key.  The list expands.
 
 
 ### Scroll into view
@@ -103,9 +105,9 @@ You can search the DOM Tree by string, CSS selector, or XPath selector.
 
 1. Focus your cursor on the **Elements** tool.
 
-1. Press `Ctrl`+`F` (Windows, Linux) or `Command`+`F` (macOS).  The Search bar opens at the bottom of the DOM Tree.
+1. Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  The Search bar opens at the bottom of the DOM Tree.
 
-1. Type `The Moon is a Harsh Mistress`.  The last sentence is highlighted in the DOM Tree.
+1. Type **The Moon is a Harsh Mistress**.  The last sentence is highlighted in the DOM Tree.
 
 ![Highlighting the query in the Search bar](../media/dom-elements-highlighted-search-nodes-highlight.msft.png)
 
@@ -129,7 +131,7 @@ To edit the text content of a node, double-click the content in the DOM Tree.
 
    ![Edit the text](../media/dom-elements-highlighted-edit-content.msft.png)
 
-1. Delete `Michelle`, type `Leela`, then press `Enter` to confirm the change.  The text in the DOM changes from **Michelle** to **Leela**.
+1. Delete `Michelle`, type `Leela`, then press **Enter** to confirm the change.  The text in the DOM changes from **Michelle** to **Leela**.
 
 ### Edit attributes
 
@@ -143,7 +145,7 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
    ![Edit the node](../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png)
 
-1. Select the `Right` arrow key, add a space, type `style="background-color:gold"`, and then press `Enter`.  The background color of the node changes to gold.
+1. Press the **Right Arrow** key, add a space, type `style="background-color:gold"`, and then press **Enter**.  The background color of the node changes to gold.
 
    ![Add a style attribute to the node](../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png)
 
@@ -157,7 +159,7 @@ To edit the tag name of a node, double-click the tag name and then type in the n
 
 1. Double-click `<p>`.  The text `p` is highlighted.
 
-1. Delete `p`, type `button`, then press `Enter`.  The `<p>` node changes to a `<button>` node.
+1. Delete `p`, type `button`, then press **Enter**.  The `<p>` node changes to a `<button>` node.
 
    ![Change the node type to button](../media/dom-elements-highlighted-edit-node-type-button.msft.png)
 
@@ -183,7 +185,7 @@ To use the HTML editor:
 
    For example, try adding `<p>Dijon</p>` after the `<p>Marseille</p>` line.
 
-1. Type `Ctrl`+`Enter` to apply the changes to the DOM tree and close the HTML editor.
+1. Type **Ctrl+Enter** to apply the changes to the DOM tree and close the HTML editor.
 
    ![The new DOM tree, with the an extra <p> node, after the HTML editor closed](../media/dom-elements-highlighted-edit-html-editor-closed.png)
 
@@ -235,7 +237,7 @@ Press `Delete` to delete a node, as follows:
 
 1. Press `Delete`.  The node is deleted.
 
-1. Press `Ctrl`+`Z` (Windows, Linux) or `Command`+`Z` (macOS).  The last action is undone and the node reappears.
+1. Press **Ctrl+Z** (Windows, Linux) or **Command+Z** (macOS).  The last action is undone and the node reappears.
 
 
 <!-- ====================================================================== -->
@@ -251,15 +253,15 @@ When you inspect a node, the `== $0` text next to the node means that you can re
 
 1. In the rendered webpage, under **Reference the currently-selected node with $0**, right-click **The Left Hand of Darkness** and then select **Inspect**.
 
-1. Select the `Escape` key to open the Console Drawer.
+1. Press the **Esc** key to open the Console Drawer.
 
-1. Type `$0` and press `Enter`.  The result of the expression shows that `$0` evaluates to `<p>The Left Hand of Darkness</p>`:
+1. Type `$0` and press **Enter**.  The result of the expression shows that `$0` evaluates to `<p>The Left Hand of Darkness</p>`:
 
    ![The result of the first $0 expression in the Console](../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png)
 
 1. Hover on the result.  The node is highlighted in the viewport.
 
-1. Click `<p>Dune</p>` in the DOM Tree, type `$0` in the Console again, and then press `Enter` again.  Now, `$0` evaluates to `<p>Dune</p>`:
+1. Click `<p>Dune</p>` in the DOM Tree, type `$0` in the Console again, and then press **Enter** again.  Now, `$0` evaluates to `<p>Dune</p>`:
 
 ![The result of the second $0 expression in the Console](../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png)
 
@@ -273,7 +275,7 @@ If you need to refer back to a node many times, store it as a global variable.
 
 1. Right-click `<p>The Big Sleep</p>` in the DOM Tree, and then select **Store as global variable**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
-1. Type `temp1` in the Console and then press `Enter`.  The result of the expression shows that the variable evaluates to the node.
+1. Type `temp1` in the Console and then press **Enter**.  The result of the expression shows that the variable evaluates to the node.
 
 ![The result of the temp1 expression](../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png)
 
@@ -287,9 +289,9 @@ Copy the JavaScript path to a node when you need to reference it in an automated
 
 1. Right-click `<p>The Brothers Karamazov</p>` in the DOM Tree, and then select **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.
 
-1. Press `Ctrl`+`V` (Windows, Linux) or `Command`+`V` (macOS) to paste the expression into the Console.
+1. Press **Ctrl+V** (Windows, Linux) or **Command+V** (macOS) to paste the expression into the Console.
 
-1. Press `Enter` to evaluate the expression.
+1. Press **Enter** to evaluate the expression.
 
 The result of the **Copy JS Path** expression:
 

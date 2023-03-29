@@ -61,7 +61,7 @@ The key here is to use the RAIL model and focus on your users.  Find out what de
 
 Use the Microsoft Edge Browser Task Manager as a starting point to your memory issue investigation.  The Microsoft Edge Browser Task Manager is a realtime monitor that tells you how much memory a page is currently using.
 
-1. Press `Shift`+`Esc` or go to the Microsoft Edge main menu and select **More tools** > **Browser Task Manager** to open the Microsoft Edge Browser Task Manager.
+1. Press **Shift+Esc** or go to the Microsoft Edge main menu and select **More tools** > **Browser Task Manager** to open the Microsoft Edge Browser Task Manager.
 
    ![Opening the Microsoft Edge Browser Task Manager](../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png)
 
