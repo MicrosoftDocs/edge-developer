@@ -35,7 +35,7 @@ In most modern IDEs, wavy underlines under text indicate syntax errors.   In Mic
 
 To open the **Issues** tool and learn more about the issue and how to fix it:
 
-* Press and hold `Shift`, and then click a wavy underline.
+* Press and hold **Shift**, and then click a wavy underline.
 
 * Or, right-click a wavy underline, and then select **Show in Issues**.
 
@@ -60,19 +60,19 @@ See also:
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do any of the following: 
 
 *  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
-*  Press `Ctrl`+`Shift`+`H` (Windows, Linux) or `Cmd`+`Shift`+`H` (macOS).
-*  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type `tooltips`.
+*  Press **Ctrl+Shift+H** (Windows, Linux) or **Command+Shift+H** (macOS).
+*  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type **tooltips**.
 
 Then hover over each outlined region of DevTools:
 
 ![DevTools Tooltips mode](../../media/2021/04/tooltips.png)
 
-To turn off Tooltips, press `Esc`.
+To turn off Tooltips, press **Esc**.
 
 Update: This feature has been released and is no longer experimental.<!-- valid. -->
 
 Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in [Focus Mode](../../../experimental-features/focus-mode.md).
-<!-- Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#group-tools-together-in-focus-mode) experiment, you can also click the **Toggle the DevTools Tooltips** (`?`) button at the bottom of the **Activity Bar**. -->
+<!-- Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#group-tools-together-in-focus-mode) experiment, you can also click the **Toggle the DevTools Tooltips** (**?**) button at the bottom of the **Activity Bar**. -->
 <!-- ![Hover on anywhere in the highlighted region of the Issues tool to display more details](../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png) -->
 
 See also:
@@ -154,9 +154,9 @@ For more information about the collaboration on this feature in the Chromium ope
 ## Use the keyboard to navigate to CSS variables
 
 <!--  Title: Navigate to CSS variables with the arrow keys  -->
-<!--  Subtitle: In the Styles pane, use the arrow keys to select CSS variables.  Press `Enter` to see the variable definition.  -->
+<!--  Subtitle: In the Styles pane, use the arrow keys to select CSS variables.  Press **Enter** to see the variable definition.  -->
 
-Starting in [Microsoft Edge version 88](../../2020/11/devtools.md#css-variable-definitions-in-styles-pane), the **Styles** pane displays CSS variables and provides a link directly to the definition of each variable.  In Microsoft Edge version 91 or later, you can use the arrow keys to easily navigate to CSS variables.  To open the definition in the **Styles** pane, hover on a variable, and then press `Enter`:
+Starting in [Microsoft Edge version 88](../../2020/11/devtools.md#css-variable-definitions-in-styles-pane), the **Styles** pane displays CSS variables and provides a link directly to the definition of each variable.  In Microsoft Edge version 91 or later, you can use the arrow keys to easily navigate to CSS variables.  To open the definition in the **Styles** pane, hover on a variable, and then press **Enter**:
 
 ![The '--theme-body-background' CSS variable highlighted in the Styles pane](../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png)
 
@@ -455,7 +455,7 @@ See also:
 <!-- ====================================================================== -->
 #### Improved outline of HTML files
 
-DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on (or off) the code outline, press `Ctrl`+`Shift`+`O` on Windows/Linux or `Cmd`+`Shift`+`O` on macOS.  Previously, DevTools only displayed some of the functions.  In the following figure, DevTools now correctly list all functions in the outline:
+DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on (or off) the code outline, press **Ctrl+Shift+O** on Windows/Linux or **Command+Shift+O** on macOS.  Previously, DevTools only displayed some of the functions.  In the following figure, DevTools now correctly list all functions in the outline:
 
 ![Improved outline of HTML files](../../media/2021/04/sources-page-jobobbx-at.msft.png)
 
