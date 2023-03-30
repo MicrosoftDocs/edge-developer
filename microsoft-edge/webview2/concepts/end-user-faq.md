@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/29/2023
+ms.date: 03/30/2023
 ---
 # WebView2 end-user FAQ
 
@@ -20,7 +20,15 @@ WebView2 is a way for app developers to embed web content (such as HTML, JavaScr
 
 
 <!-- ====================================================================== -->
-## Why are there so many WebView2 processes running?
+## What's the purpose of the WebView2 executable?
+
+WebView2 is a Microsoft product that is updated automatically (by using the _Evergreen_ distribution method) to ensure that your applications have the latest feature support and security fixes. 
+
+Most people will see WebView2 used by Widgets, Teams, Office, Outlook, Weather, and many more applications. Any application can use WebView2.
+
+
+<!-- ====================================================================== -->
+## What are the WebView2 processes that are running?
 
 WebView2 follows the process model that's used in the Chromium browser engine of Microsoft Edge, described in [Process Model and Site Isolation](https://chromium.googlesource.com/chromium/src/+/main/docs/process_model_and_site_isolation.md).  Having functionality broken up into multiple processes help reliability, security, and performance.  Each process performs a certain responsibility, and can do that work uninterrupted, even if one of the other processes hits a problem.
 
@@ -34,19 +42,11 @@ Your machine will have one set of processes for each app that uses WebView2, and
 
 
 <!-- ====================================================================== -->
-## Why is WebView2 using so much memory or CPU resources?
+## What memory and CPU resources does WebView2 use?
 
-In most cases, extra memory or CPU usage is due to how WebView2 is being used, not WebView2 itself. If the application is rendering non-optimized web content, then the WebView2 control might consume more resources. Task Manager will normally show the processes parented, but can be incorrect at times or if you sort by a column other than **Name**. 
+In most cases, any extra memory or CPU usage is due to how WebView2 is being used, not WebView2 itself. If the application is rendering non-optimized web content, then the WebView2 control might consume more resources. Task Manager will normally show the processes grouped by parent, but that view is sometimes incorrect if you sort by a column other than **Name**. 
 
 You can also use Microsoft's [Process Explorer](/sysinternals/downloads/process-explorer) tool. If you find that an app is consistently causing heavy resource usage, you can contact Support for that app to report the resource usage.
-
-
-<!-- ====================================================================== -->
-## Is WebView2 a virus?
-
-WebView2 is not a virus.  WebView2 is a Microsoft product that is updated automatically (by using the _Evergreen_ distribution method) to ensure that your applications have the latest feature support and security fixes. 
-
-Most people will see WebView2 used by Widgets, Teams, Office, Outlook, Weather, and many more applications. Any application can _use_ WebView2 though, so it's possible for a malicious application to use WebView2, just like it can use any other Windows API or feature.
 
 
 <!-- ====================================================================== -->
@@ -68,4 +68,3 @@ Many apps that are built on WebView2 perform checks to re-install WebView2 when 
 
 * [Introduction to Microsoft Edge WebView2](../index.md)
 * [Contact the WebView2 Team](../contact.md)
-
