@@ -41,14 +41,10 @@ Cons:
 *  Your WebView2 app cannot specify that a particular version of the WebView2 Runtime is required.
 
 
-<!-- -------------------------- -->
-<!-- #### Which devices already have WebView2 Runtime installed and how to distribution -->
+<!-- ------------------------------ -->
+<!-- #### Which devices already have WebView2 Runtime installed and how to distribute for edge cases -->
 
-The Evergreen Runtime is preinstalled onto all Windows 11 devices as a part of the Windows 11 OS.
-
-Microsoft installed the WebView2 Runtime to all _eligible_ Windows 10 devices, as described in [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).
-
-If your app uses the Evergreen distribution mode, we still recommend that you distribute the WebView2 Runtime to cover edge cases where the Runtime wasn't already installed.  See [Details about the Evergreen Runtime distribution mode](#details-about-the-evergreen-runtime-distribution-mode) below.
+The Evergreen Runtime is preinstalled onto all Windows 11 devices as a part of the Windows 11 operating system.  Microsoft installed the WebView2 Runtime to all _eligible_ Windows 10 devices, as described in [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).  Even if your app uses the Evergreen distribution mode, we recommend that you distribute the WebView2 Runtime, to cover edge cases where the Runtime wasn't already installed.  See [Details about the Evergreen Runtime distribution mode](#details-about-the-evergreen-runtime-distribution-mode) below.
 
 
 <!-- ====================================================================== -->
@@ -138,12 +134,10 @@ The Evergreen distribution mode ensures that your WebView2 app is taking advanta
 When you use the Evergreen distribution mode of the WebView2 Runtime, your WebView2 app assumes that clients have the latest Runtime.  Your app cannot require a particular version of the WebView2 Runtime for all apps on the client.  By the time a new WebView2 SDK package is released, a compatible version of the WebView2 Runtime has already been distributed to clients.  Therefore it's OK for your WebView2 app to use the APIs that are in the latest version of the WebView2 SDK.
 
 
-<!-- --------------- -->
+<!-- ------------------------------ -->
 <!-- #### Evergreen WebView2 Runtime is preinstalled on Win11 devices and most Win10 devices -->
 
-The vast majority of Windows 10 devices have the WebView2 Runtime installed already.  See [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).
-
-A small number of Windows 10 devices don't have the WebView2 Runtime installed.  We recommend that you handle this edge case as follows, using either approach:
+The vast majority of Windows 10 devices have the WebView2 Runtime installed already, as described in [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).  A small number of Windows 10 devices don't have the WebView2 Runtime installed.  We recommend that you handle this edge case, by using either of the following approaches:
 
 *  Programmatically deploy the Evergreen Runtime with your app.  See [Deploying the Evergreen WebView2 Runtime](#deploying-the-evergreen-webview2-runtime) below.
 
