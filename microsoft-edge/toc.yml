@@ -1102,7 +1102,11 @@
 
         - name: Overview of WebView2 features and APIs
           href: webview2/concepts/overview-features-apis.md
-          displayName: 
+          displayName:
+
+        - name: WebView2 end-user FAQ
+          href: webview2/concepts/end-user-faq.md
+          displayName:
 
 # -----------------------------------------------------------------------------
 # machine setup
