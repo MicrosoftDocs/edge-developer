@@ -10,7 +10,7 @@ ms.date: 03/30/2023
 ---
 # WebView2 end-user FAQ
 
-This Frequently Asked Questions (FAQ) page is for end users, to explain the `msedgewebview2.exe` application on your computer.  See also [Contact the WebView2 Team](../contact.md).
+This Frequently Asked Questions (FAQ) page is for end users, to explain the **WebView2** or **msedgewebview2.exe** processes that are listed in Task Manager.  See also [Contact the WebView2 Team](../contact.md).
 
 
 <!-- ====================================================================== -->
@@ -46,7 +46,7 @@ Your machine will have one set of processes for each app that uses WebView2, and
 
 In most cases, any extra memory or CPU usage is due to how WebView2 is being used, not WebView2 itself. If the application is rendering non-optimized web content, then the WebView2 control might consume more resources. Task Manager will normally show the processes grouped by parent, but that view is sometimes incorrect if you sort by a column other than **Name**.
 
-For example, the WebView2 app from [Get started with WebView2 in Win32 apps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) is listed in Task Manager as follows:
+WebView2 processes are displayed in Task Manager's **Processes** tab as **WebView2**, grouped by parent app.  For example, the WebView2 app from [Get started with WebView2 in Win32 apps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) is listed in Task Manager's **Processes** tab as follows:
 
 In earlier Windows 11 versions:
 
@@ -55,6 +55,10 @@ In earlier Windows 11 versions:
 In the latest Windows 11 versions:
 
 ![Task Manager showing an app that uses WebView2, with latest Windows](./end-user-faq-images/task-manager-latest-windows.png)
+
+In the **Details** tab, the WebView2 processes are listed as **msedgewebview2.exe**, and are grouped together rather than grouped by parent app:
+
+![Task Manager's Details tab, listing instances of the msedgewebview2.exe process](./end-user-faq-images/task-manager-details-view.png)
 
 You can also use Microsoft's [Process Explorer](/sysinternals/downloads/process-explorer) tool. If you find that an app is consistently causing heavy resource usage, contact the support for that app to report the resource usage.
 
