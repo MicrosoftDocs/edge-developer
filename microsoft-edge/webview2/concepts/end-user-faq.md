@@ -46,7 +46,7 @@ Your machine will have one set of processes for each app that uses WebView2, and
 
 In most cases, any extra memory or CPU usage is due to how WebView2 is being used, not WebView2 itself. If the application is rendering non-optimized web content, then the WebView2 control might consume more resources. Task Manager will normally show the processes grouped by parent, but that view is sometimes incorrect if you sort by a column other than **Name**.
 
-WebView2 processes are displayed in Task Manager's **Processes** tab as **WebView2**, grouped by parent app.  For example, the WebView2 app from [Get started with WebView2 in Win32 apps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) is listed in Task Manager's **Processes** tab as follows:
+WebView2 processes are displayed in Task Manager's **Processes** tab as **WebView2**, grouped by parent app.  For example, the WebView2 app from [Get started with WebView2 in Win32 apps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) is listed in Task Manager's **Processes** tab as follows.
 
 In Windows 10 and early versions of Windows 11, the **Processes** tab only lists the name of the app that uses WebView2:
 
