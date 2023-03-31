@@ -1104,10 +1104,6 @@
           href: webview2/concepts/overview-features-apis.md
           displayName:
 
-        - name: WebView2 end-user FAQ
-          href: webview2/concepts/end-user-faq.md
-          displayName:
-
 # -----------------------------------------------------------------------------
 # machine setup
         - name: Set up your Dev environment for WebView2
@@ -1448,6 +1444,10 @@
                   uid: 'WebView2Script!SharedBufferReceivedEvent:class'
                 - name: WebView
                   uid: 'WebView2Script!WebView:class'
+
+        - name: WebView2 end-user FAQ
+          href: webview2/concepts/end-user-faq.md
+          displayName:
 
         - name: Contact the WebView2 Team
           href: webview2/contact.md
