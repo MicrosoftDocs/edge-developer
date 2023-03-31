@@ -73,6 +73,10 @@ Developing a WebView2 app has the following high-level areas:
 *  User machine
 *  Resources
 
+
+<!-- ------------------------------ -->
+#### Diagram: Full diagram of WebView2 (full-diagram.png)
+
 ![Full diagram of WebView2](./index-images/full-diagram.png)
 
 
@@ -100,6 +104,9 @@ The WebView2 control, WebView2 SDK, and WebView2 Runtime have the following role
 | WebView2 Runtime | On Dev's test machine and on user machines.  Or, instead of using the Runtime, Dev can use a preview channel of Microsoft Edge for local testing, when using the Prerelease SDK. |
 
 
+<!-- ------------------------------ -->
+#### Diagram: Relationship between the WebView2 control, SDK, and Runtime (control-sdk-runtime.png)
+
 ![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./index-images/control-sdk-runtime.png)
 
 Control:
@@ -116,7 +123,33 @@ Runtime:
    *  Runtime
 
 
+<!-- ------------------------------ -->
+#### Diagram: WebView2 control, Runtime, and SDK (control-runtime-sdk.png)
+
 ![WebView2 control, Runtime, and SDK](./index-images/control-runtime-sdk.png)
+
+
+###### Draft 2
+
+This diagram shows the following outline:
+
+<!-- todo: revise diagram as follows: -->
+
+Release SDK, includes:
+* .NET/C# APIs (are these on the Control?  on the Runtime?)
+* WinRT/C#
+* Win32/C++
+
+Prerelease SDK, includes:
+* .NET/C# APIs including experimental APIs (are these on the Control?  on the Runtime?)
+* WinRT/C#  APIs including experimental APIs
+* Win32/C++ APIs including experimental APIs
+
+Runtime (for release) or Browser (for Prerelease)
+* WebView2Script package (JavaScript APIs for WebView2)
+
+
+###### Draft 1
 
 This diagram has the following top-level items:
 * Control
@@ -158,6 +191,10 @@ A host app contains the following categories of code and components:
 *  Native-side code calls platform APIs and WebView2 APIs
 *  Web-side JavaScript code calls WebView2Script APIs & exposed native-side APIs
 
+
+<!-- ------------------------------ -->
+#### Diagram: Design architecture of a WebView2 app (app-design.png)
+
 ![Design architecture of a WebView2 app](./index-images/app-design.png)
 
 <!-- todo: diagram -->
@@ -178,6 +215,10 @@ Categories of code:
 
 Here are the differences between the Dev machine and User machine, for which components are used.
 
+
+<!-- ------------------------------ -->
+#### Diagram: App on the Development machine and user machine (dev-side-user-side.png)
+
 ![App on the Development machine and user machine](./index-images/dev-side-user-side.png)
 
 | Component | Dev machine | User machine |
@@ -194,6 +235,10 @@ Here are the differences between the Dev machine and User machine, for which com
 ## Ways to distribute, install, and update the Runtime on the user's machine
 
 There are several ways to distribute the WebView2 Runtime with your app:
+
+
+<!-- ------------------------------ -->
+#### Diagram: Four approaches to distribute the WebView2 Runtime (distribute-runtime.png)
 
 ![Diagram: Four approaches to distribute the WebView2 Runtime](./index-images/distribute-runtime.png)
 
@@ -216,6 +261,10 @@ See also:
 ## Host app, WebView2 control, and HTTP server
 
 The WebView2 control acts as an intermediary for communication between the host app and the HTTP server.
+
+
+<!-- ------------------------------ -->
+#### Diagram: Host app, WebView2 control, and HTTP server (hostapp-wv2ctrl-httpserver.png)
 
 ![Host app, WebView2 control, and HTTP server](./index-images/hostapp-wv2ctrl-httpserver.png)
 
@@ -340,6 +389,10 @@ todo
    *  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - contains completed Getting Started article projects (minimal code) and code-rich Samples.
    *  [WebView2Announcements repo](https://github.com/MicrosoftEdge/WebView2Announcements)
    *  [WebView2Feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
+
+
+<!-- ------------------------------ -->
+#### Diagram: Resources (resources.png)
 
 ![Diagram: Resources](./index-images/resources.png)
 
