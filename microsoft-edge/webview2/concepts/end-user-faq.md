@@ -10,7 +10,7 @@ ms.date: 03/30/2023
 ---
 # WebView2 end-user FAQ
 
-This FAQ is for end users, to explain the `msedgewebview2.exe` application on your computer.  If your question isn't listed here, you can click the **Feedback** button in the top-right corner, to enter a question as an [Issue in the edge-developer Docs repo](https://github.com/MicrosoftDocs/edge-developer/issues), and your question might be added to this article.  See also [Contact the WebView2 Team](../contact.md).
+This Frequently Asked Questions (FAQ) page is for end users, to explain the `msedgewebview2.exe` application on your computer.  See also [Contact the WebView2 Team](../contact.md).
 
 
 <!-- ====================================================================== -->
@@ -44,9 +44,19 @@ Your machine will have one set of processes for each app that uses WebView2, and
 <!-- ====================================================================== -->
 ## What memory and CPU resources does WebView2 use?
 
-In most cases, any extra memory or CPU usage is due to how WebView2 is being used, not WebView2 itself. If the application is rendering non-optimized web content, then the WebView2 control might consume more resources. Task Manager will normally show the processes grouped by parent, but that view is sometimes incorrect if you sort by a column other than **Name**. 
+In most cases, any extra memory or CPU usage is due to how WebView2 is being used, not WebView2 itself. If the application is rendering non-optimized web content, then the WebView2 control might consume more resources. Task Manager will normally show the processes grouped by parent, but that view is sometimes incorrect if you sort by a column other than **Name**.
 
-You can also use Microsoft's [Process Explorer](/sysinternals/downloads/process-explorer) tool. If you find that an app is consistently causing heavy resource usage, you can contact Support for that app to report the resource usage.
+For example, the WebView2 app from [Get started with WebView2 in Win32 apps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) is listed in Task Manager as follows:
+
+In earlier Windows 11 versions:
+
+![Task Manager showing an app that uses WebView2, with an older Windows version](./end-user-faq-images/task-manager.png)
+
+In the latest Windows 11 versions:
+
+![Task Manager showing an app that uses WebView2, with latest Windows](./end-user-faq-images/task-manager-latest-windows.png)
+
+You can also use Microsoft's [Process Explorer](/sysinternals/downloads/process-explorer) tool. If you find that an app is consistently causing heavy resource usage, contact the support for that app to report the resource usage.
 
 
 <!-- ====================================================================== -->
