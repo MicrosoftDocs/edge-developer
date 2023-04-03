@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/27/2023
+ms.date: 04/03/2023
 ---
 # Overview of Microsoft Edge extensions
 
