@@ -168,11 +168,9 @@ To submit the YouTube video URL of your video:
 
 1. On YouTube, locate the video that you want to add to your store listing webpage.
 
-1. Under the video, select **Share** > Click **Copy**.
+1. Under the video, click the **Share** button, and then click the **Copy** button to copy the URL for the video.
 
-1. Copy the URL that is displayed.
-
-1. On the store listing details webpage, paste the URL in the `YouTube video URL` field.
+1. On the store listing details webpage, paste the URL in the **YouTube video URL** field.
 
 
 #### Search terms requirements

@@ -117,7 +117,7 @@ When you hover on a **Featured** badge, the tooltip reads: **This extension foll
 For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh) extension has a **Featured** badge at the Microsoft Edge Add-ons website.
 -->
 
-The Microsoft Edge Add-ons team reviews each extension for adherence to [EAS best practices](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/developer-guide/best-practices) before granting it a **Featured** badge.  Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences.  Developers cannot pay to receive a **Featured** badge for an extension. 
+The Microsoft Edge Add-ons team reviews each extension for adherence to [Best Practices for extensions](./developer-guide/best-practices.md) before granting the extension a **Featured** badge.  Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences.  Developers cannot pay to receive a **Featured** badge for an extension.
 
 Just because an extension doesn't have a **Featured** badge, doesn't mean the extension is unsafe. It simply means that the extension doesn't meet Microsoft's security and quality standards to be badged as **Featured**.
 
