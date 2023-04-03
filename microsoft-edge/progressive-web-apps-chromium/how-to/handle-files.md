@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 09/01/2021
+ms.date: 04/03/2023
 ---
 # Handle files in Progressive Web Apps
 
@@ -15,21 +15,6 @@ Progressive Web Apps that can handle files feel more native to users and better 
 Websites can already let users upload files by [using the `<input type="file">` or drag and drop](https://developer.mozilla.org/docs/Web/API/File/Using_files_from_web_applications), but PWAs go one step further and can register as file handlers on the operating system.
 
 When a PWA is registered as a file handler for certain file types, the operating system can automatically launch the app when those files are opened by the user, similar to how Microsoft Word handles `.docx` files.
-
-
-<!-- ====================================================================== -->
-## Enable the File Handling API
-
-The File Handling feature is experimental.
-
-To enable the File Handling feature:
-
-1.  Go to `edge://flags` in Microsoft Edge.
-1.  Select **Search flags** and type "file handling API".
-1.  Select **Default** > **Enabled** > **Restart**.
-
-    ![Enable the 'File Handling API' experiment](../media/enable-file-handling-experiment.png)
-
 
 <!-- ====================================================================== -->
 ## Define which files your app handles
