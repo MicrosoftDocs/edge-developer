@@ -99,7 +99,6 @@ The `launchQueue` object queues all the launched files until a consumer is set w
 
 My Tracks is a PWA demo app that uses the File Handling feature to handle `.gpx` files. To try the feature with this demo app:
 
-*  [Enable the feature](#enable-the-file-handling-api) in Microsoft Edge.
 *  Go to [My Tracks](https://captainbrosset.github.io/mytracks/) and install the app.
 *  Download a GPX file on your computer. You can use this [test GPX file](https://www.visugpx.com/download.php?id=okB1eM4fzj).
 *  Open the downloaded GPX file.
