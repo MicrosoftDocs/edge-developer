@@ -129,50 +129,27 @@ Runtime:
 ![WebView2 control, Runtime, and SDK](./index-images/control-runtime-sdk.png)
 
 
-###### Draft 2
-
 This diagram shows the following outline:
 
-<!-- todo: revise diagram as follows: -->
-
-Release SDK, includes:
-* .NET/C# APIs (are these on the Control?  on the Runtime?)
+Release SDK:
+* .NET/C# APIs
 * WinRT/C#
 * Win32/C++
+* WebView2Script package (JavaScript APIs)
 
-Prerelease SDK, includes:
-* .NET/C# APIs including experimental APIs (are these on the Control?  on the Runtime?)
-* WinRT/C#  APIs including experimental APIs
-* Win32/C++ APIs including experimental APIs
+Prerelease SDK:
+* .NET/C# APIs, including experimental APIs
+* WinRT/C#  APIs, including experimental APIs
+* Win32/C++ APIs, including experimental APIs
+* WebView2Script package (JavaScript APIs)
 
 Runtime (for release) or Browser (for Prerelease)
-* WebView2Script package (JavaScript APIs for WebView2)
+* WebView2Script package (JavaScript APIs)
 
 
-###### Draft 1
+Runtime (for Release SDK) - WebView2Script package (JavaScript APIs)
+Browser (for Prerelease SDK) - WebView2Script package (JavaScript APIs)
 
-This diagram has the following top-level items:
-* Control
-* Runtime
-* SDK
-
-Control:
-*  WebView2 control - eg. add as an XML element
-
-Runtime:
-*  WebView2 Runtime (a browser used as a component) - Required; runs the WebView2 control
-*  WebView2 Runtime - runs the WebView2 control
-*  Evergreen Runtime, or Fixed-version Runtime (a browser used as a component of an app)
-*  Evergreen Runtime, or Fixed-version Runtime
-    
-WebView2 SDK
-*  Supported platforms: .NET, WinRT, Win32
-*  Preview channel of Microsoft Edge
-
-APIs
-*  Release SDK (to ship)
-*  Prerelease SDK with experimental APIs (to test locally)
-*  JavaScript API (to support communication between web-side code & the host application)
 
 You periodically download the latest SDK from NuGet.  NuGet links are in [Release Notes for the WebView2 SDK](./release-notes.md).
 
@@ -197,17 +174,15 @@ A host app contains the following categories of code and components:
 
 ![Design architecture of a WebView2 app](./index-images/app-design.png)
 
-<!-- todo: diagram -->
+Categories of code:
+*  Native-side WebView2 code, calls WebView2 APIs and platform APIs.
+*  Web-side code (JavaScript), calls WebView2Script APIs & exposed native-side APIs.
+*  Native-side non-WebView2 code, calls platform APIs and native controls.
+*  Web-side non-WebView2 code.
+
 Two-way code:
 *  Call web-side code from native-side code
 *  Call native-side code from web-side code
-
-<!-- todo: diagram -->
-Categories of code:
-*  Native-side app code that isn't WebView2-related.
-*  Native-side app code that's WebView2-related.
-*  Web-side code that isn't WebView2-related.
-*  Web-side code that's WebView2-related.
 
 
 <!-- ====================================================================== -->
