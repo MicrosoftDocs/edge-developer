@@ -1102,7 +1102,7 @@
 
         - name: Overview of WebView2 features and APIs
           href: webview2/concepts/overview-features-apis.md
-          displayName: 
+          displayName:
 
 # -----------------------------------------------------------------------------
 # machine setup
@@ -1444,6 +1444,10 @@
                   uid: 'WebView2Script!SharedBufferReceivedEvent:class'
                 - name: WebView
                   uid: 'WebView2Script!WebView:class'
+
+        - name: WebView2 end-user FAQ
+          href: webview2/concepts/end-user-faq.md
+          displayName:
 
         - name: Contact the WebView2 Team
           href: webview2/contact.md
