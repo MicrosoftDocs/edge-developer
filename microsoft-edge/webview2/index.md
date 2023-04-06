@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
-ms.date: 03/08/2023
+ms.date: 04/06/2023
 ---
 # Introduction to Microsoft Edge WebView2
 
@@ -15,7 +15,7 @@ The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, 
 
 With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
 
-![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](media/webview2/what-webview.png)
+![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](./index-images/what-webview.png)
 
 To start building a WebView2 app, see [Get started with WebView2](get-started/get-started.md).
 
@@ -31,7 +31,7 @@ Developers must often decide between building a web app or a native app.  This d
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
-![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](media/webview2/web-native.png)
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./index-images/web-native.png)
 
 *  Wide **reach** includes websites and Progressive Web Apps.
 
@@ -75,9 +75,50 @@ Developing a WebView2 app has the following high-level areas:
 
 
 <!-- ------------------------------ -->
-#### Diagram: Full diagram of WebView2 (full-diagram.png)
+#### Diagram: Full diagram of WebView2
 
 ![Full diagram of WebView2](./index-images/full-diagram.png)
+
+Main boxes in the full diagram of WebView2:
+*  Dev machine
+*  Distribute the Runtime
+*  User machine
+*  Resources
+
+Details of the Dev machine:
+*  Visual Studio project
+   *  Layout designer
+      *  WebView2 control instances
+      *  Native control instances
+   *  SDK
+      *  Platform APIs
+      *  `AddHostObjectToScript`
+      *  JavaScript APIs (WebView2Script package)
+*  Runtime
+
+Details of Distribute the Runtime:
+*  Evergreen
+   *  Link to the Evergreen Runtime bootstrapper
+   *  Package the Evergreen Runtime bootstrapper
+   *  Package the Evergreen Runtime standalone installer
+*  Package a fixed-version Runtime
+
+Details of the User machine:
+*  Host app
+   *  WebView2 native-side code
+   *  WebView2 web-side code
+   *  WebView2 control instances
+   *  Non-WebView2 native-side code
+   *  Non-WebView2 web-side code
+   *  Native control instances
+*  Runtime
+
+Resources include:
+*  Docs
+*  Support 
+*  Samples repo
+*  Announcements repo
+*  Feedback repo
 
 
 <!-- ====================================================================== -->
@@ -105,7 +146,7 @@ The WebView2 control, WebView2 SDK, and WebView2 Runtime have the following role
 
 
 <!-- ------------------------------ -->
-#### Diagram: Relationship between the WebView2 control, SDK, and Runtime (control-sdk-runtime.png)
+#### Diagram: Relationship between the WebView2 control, SDK, and Runtime
 
 ![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./index-images/control-sdk-runtime.png)
 
@@ -124,7 +165,7 @@ Runtime:
 
 
 <!-- ------------------------------ -->
-#### Diagram: WebView2 control, Runtime, and SDK (control-runtime-sdk.png)
+#### Diagram: WebView2 control, Runtime, and SDK
 
 ![WebView2 control, Runtime, and SDK](./index-images/control-runtime-sdk.png)
 
@@ -170,7 +211,7 @@ A host app contains the following categories of code and components:
 
 
 <!-- ------------------------------ -->
-#### Diagram: Design architecture of a WebView2 app (app-design.png)
+#### Diagram: Design architecture of a WebView2 app
 
 ![Design architecture of a WebView2 app](./index-images/app-design.png)
 
@@ -192,7 +233,7 @@ Here are the differences between the Dev machine and User machine, for which com
 
 
 <!-- ------------------------------ -->
-#### Diagram: App on the Development machine and user machine (dev-side-user-side.png)
+#### Diagram: App on the Development machine and user machine
 
 ![App on the Development machine and user machine](./index-images/dev-side-user-side.png)
 
@@ -213,7 +254,7 @@ There are several ways to distribute the WebView2 Runtime with your app:
 
 
 <!-- ------------------------------ -->
-#### Diagram: Four approaches to distribute the WebView2 Runtime (distribute-runtime.png)
+#### Diagram: Four approaches to distribute the WebView2 Runtime
 
 ![Diagram: Four approaches to distribute the WebView2 Runtime](./index-images/distribute-runtime.png)
 
@@ -239,7 +280,7 @@ The WebView2 control acts as an intermediary for communication between the host 
 
 
 <!-- ------------------------------ -->
-#### Diagram: Host app, WebView2 control, and HTTP server (hostapp-wv2ctrl-httpserver.png)
+#### Diagram: Host app, WebView2 control, and HTTP server
 
 ![Host app, WebView2 control, and HTTP server](./index-images/hostapp-wv2ctrl-httpserver.png)
 
@@ -367,7 +408,7 @@ todo
 
 
 <!-- ------------------------------ -->
-#### Diagram: Resources (resources.png)
+#### Diagram: Resources
 
 ![Diagram: Resources](./index-images/resources.png)
 
