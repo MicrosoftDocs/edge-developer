@@ -25,7 +25,7 @@ To publish your PWA to the Microsoft Store, no code changes are required.  Inste
 <!-- ====================================================================== -->
 ## Create an app reservation
 
-[Microsoft Partner Center](https://partner.microsoft.com/dashboard/windows/overview) is the hub for you to submit your app to the Microsoft Store. 
+To submit your app to the Microsoft Store, you use [Microsoft Partner Center](https://partner.microsoft.com/dashboard/windows/overview).
 
 To create an app reservation:
 
