@@ -80,7 +80,7 @@ Your download is a `.zip` archive that contains an `.msixbundle` file and a `.cl
 
 To submit your app to the Microsoft Store:
 
-1.  Go to [Microsoft Partner Center](https://partner.microsoft.com/dashboard/windows/overview)
+1.  Go to [Microsoft Partner Center](https://partner.microsoft.com/dashboard/windows/overview).
 1.  Select your app.
 1.  Select **Start your Submission**.
 
