@@ -31,7 +31,7 @@ To create an app reservation:
 
 1.  Before you can create an app reservation, you must have a **personal** Microsoft account that is enrolled in the Windows Developer Program.
     1.  If you don't already have one, create a Personal Microsoft Account [here.](https://account.microsoft.com/)
-    1.  Follow [this guidance](https://learn.microsoft.com/en-us/windows/apps/publish/partner-center/open-a-developer-account) on how to enroll in the Windows Developer program.
+    1.  Enroll in the Windows Developer program, by following the steps in [Open a developer account in Partner Center](/windows/apps/publish/partner-center/open-a-developer-account).
 
 1.  Once your account is enrolled in the app developer program, follow these steps to create an app reservation:
     1.  Open up the [Partner Center Dashboard](https://partner.microsoft.com/dashboard/home). Sign in with the account you enrolled.
