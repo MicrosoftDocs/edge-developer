@@ -49,7 +49,7 @@ To create an app reservation:
 1.  Copy and save the following values.
     *   **Package ID**
     *   **Publisher ID**
-    *   **Publisher Display Name**
+    *   **Publisher display name**
 
 
 <!-- ====================================================================== -->
@@ -73,7 +73,7 @@ To generate an app package:
 1.  Select **Generate**.
 1.  To download your Windows app package, select **Download**.
 
-Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.  For more information, see [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md).<!-- changing master to main doesn't work 5/19/2022 -->
+Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.  For more information, see [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)<!-- changing master to main doesn't work 5/19/2022 -->
 
 
 ### Submit your app package to the Store
