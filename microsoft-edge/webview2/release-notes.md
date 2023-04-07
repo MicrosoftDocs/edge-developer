@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/15/2023
+ms.date: 04/07/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -44,7 +44,6 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
-
 <!-- maintenance notes: version # patterns to check:
 ## 1.0.####.##
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
@@ -53,6 +52,20 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 ## 1.0.####-prerelease
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
+-->
+
+<!--
+Cross-framework API conventions
+
+Events:
+No EventHandler or CompletedHandler in .NET or WinRT.
+General event pattern:
+- Win32: add/remove_XYZ + XYZEventHandler
+- .NET/WinRT: XYZ event
+
+Async methods:
+- Win32: XYZ method + XYZCompletedHandler
+- .NET/WinRT: XYZAsync
 -->
 
 
@@ -71,14 +84,49 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
+The following items are now stable.
 
-* [ICoreWebView2Settings8](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true)
-* [ICoreWebView2Settings8](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true)
-* [ICoreWebView2Settings8](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true)
+<!-- ------------------------------ -->
+* The `IsReputationCheckingRequired` property:<!-- todo: real API section heading, and introduce for student audience -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Settings`
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-dotnet-1.0.1722.32&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Settings`
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1722.32#isreputationcheckingrequired)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Settings8](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true)
+   * [ICoreWebView2Settings8::get_IsReputationCheckingRequired method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true#get_isreputationcheckingrequired)
+   * [ICoreWebView2Settings8::put_IsReputationCheckingRequired method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true#put_isreputationcheckingrequired)
+
+---
 
 
-* [CoreWebView2PermissionKind.WindowManagement EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.NNNN&preserve-view=true)
-* [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-dotnet-1.0.NNNN&preserve-view=true)
+<!-- ------------------------------ -->
+* The `PermissionKind.WindowManagement` API:<!-- todo: real API section heading, and introduce for student audience -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2PermissionKind` Enum
+   * [CoreWebView2PermissionKind.WindowManagement Enum Value](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.1722.32&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2PermissionKind` Enum
+   * [CoreWebView2PermissionKind.WindowManagement Enum Value](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.1722.32&preserve-view=true)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `COREWEBVIEW2_PERMISSION_KIND` Enum
+   * [COREWEBVIEW2_PERMISSION_KIND_WINDOW_MANAGEMENT enum value](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1722.32&preserve-view=true#corewebview2_permission_kind)
+
+---
 
 
 <!-- ====================================================================== -->
@@ -88,7 +136,7 @@ Release Date: April 07, 2023
 
 [NuGet package for WebView2 SDK 1.0.1777-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1777-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 114.0.1777.0 or higher.
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 114.0.1777.0 or higher.
 
 
 #### General
@@ -96,35 +144,79 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Experimental features
 
+<!-- ------------------------------ -->
+* The File API:<!-- todo: real API section heading, and introduce for student audience -->
 
-* [ICoreWebView2File](/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1777-prerelease&preserve-view=true)
-* [ICoreWebView2File](/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1777-prerelease&preserve-view=true)
-* [ICoreWebView2ObjectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
-* [ICoreWebView2ObjectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
-* [ICoreWebView2ObjectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
-* [ICoreWebView2WebMessageReceivedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true)
-* [ICoreWebView2WebMessageReceivedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true)
-* [ICoreWebView2Profile5](/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1777-prerelease&preserve-view=true)
-* [ICoreWebView2Profile5](/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1777-prerelease&preserve-view=true)
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2File]
+   * [CoreWebView2File.todo member]
+
+* `CoreWebView2WebMessageReceivedEventArgs`
+   * [CoreWebView2WebMessageReceivedEventArgs.todo member]
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2File]
+   * [CoreWebView2File.todo member]
+
+* `CoreWebView2WebMessageReceivedEventArgs`
+   * [CoreWebView2WebMessageReceivedEventArgs.todo member]
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2File](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1777-prerelease&preserve-view=true)
+   * [ICoreWebView2File::todo member](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1777-prerelease&preserve-view=true)
+
+* [ICoreWebView2ObjectCollectionView](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
+   * [ICoreWebView2ObjectCollectionView::todo member](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
+   * [ICoreWebView2ObjectCollectionView::todo member](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
+
+* [ICoreWebView2WebMessageReceivedEventArgs2](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true)
+   * [ICoreWebView2WebMessageReceivedEventArgs2::todo member](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true)
+
+---
+
+
+<!-- ------------------------------ -->
+* The Profile Todo API:<!-- todo: real API section heading, and introduce for student audience -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Profile`
+   * [CoreWebView2Profile.Todo member]
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile`
+   * [CoreWebView2Profile.Todo member]
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Profile5](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1777-prerelease&preserve-view=true)
+   * [ICoreWebView2Profile5::Todo member](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1777-prerelease&preserve-view=true)
+
+---
 
 ###### Promotions
+<!-- todo: delete Promotions section?  wouldn't such a list be same as/dup of "see Release section 1.0.1722.32"?  check past releases below to see if that's the case. -->
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs are promoted to stable in this prerelease SDK: todo
+
 
 ###### Bug fixes
 
-* Disable "Open link as Profile" in the WebView context menu
-* Fix post data missing in form submit with control click
-* Fixed a bug where the user is not able to get the custom context menu on PDF Viewer
-* Fixed bug that he whole tool bar will be blank when hiding Bookmarks, Search, and PageSelector buttons simultaneously.
+* Disable **Open link as Profile** in the WebView context menu.
+* Fix post data missing in forms that are submitted by using **Control+click**.
+* Fixed a bug where the user is not able to get the custom context menu on PDF Viewer.
+* Fixed bug where the whole toolbar will be blank when hiding the **Bookmarks**, **Search**, and **PageSelector** buttons simultaneously.
 * General bug fixes.
-* Fixed a bug that the app crashes when trying to move focus to WebView when it is disabled.
-* Fix drag/drop within the WebView2 for composition hosted WebViews
-* Remove read aloud icon in address bar in a WebView2 popup window
-* NA
-* Fix context menu shows unexpected items in WebView2 popup window
-* Fix clang check issue
-* Fix a flaky test in arm64
+* Fixed a bug where the app crashes when trying to move focus to a WebView2 control when the control is disabled.
+* Fix drag and drop within the WebView2 for composition-hosted WebView2 controls.
+* Removed the **read aloud** icon from the Address bar in a WebView2 popup window.
+* Fixed context menu showing unexpected items in a WebView2 popup window.
+* Fix a Clang compiler check issue.
+* Fix an unreliable test in arm64.
 
 
 <!-- ====================================================================== -->
