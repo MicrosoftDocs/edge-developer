@@ -36,7 +36,7 @@ To create an app reservation:
 1.  Once your account is enrolled in the app developer program, follow these steps to create an app reservation:
     1.  Open up the [Partner Center Dashboard](https://partner.microsoft.com/dashboard/home). Sign in with the account you enrolled.
     1.  Under **Workspaces**, select **Apps and games**.
-    1.  Under overview, select **New product** > **MSIX or PWA app**.
+    1.  Select **New product** > **MSIX or PWA app**.
     1.  When prompted, enter a name for your reservation and select **Reserve product name**.
 
     ![Create an app reservation on Microsoft Partner Center](../media/windows-partner-center-new-product.png)
