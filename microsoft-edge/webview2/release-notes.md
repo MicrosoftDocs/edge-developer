@@ -57,6 +57,77 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ====================================================================== -->
+## 1.0.1722.32
+
+Release Date: April 07, 2023
+
+[NuGet package for WebView2 SDK 1.0.1722.32](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1722.32)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 112.0.1722.32 or higher.
+
+
+#### General
+
+
+###### Promotions
+
+
+* [ICoreWebView2Settings8](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true)
+* [ICoreWebView2Settings8](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true)
+* [ICoreWebView2Settings8](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true)
+
+
+* [CoreWebView2PermissionKind.WindowManagement EnumValue](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.NNNN&preserve-view=true)
+* [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-dotnet-1.0.NNNN&preserve-view=true)
+
+
+<!-- ====================================================================== -->
+## 1.0.1777-prerelease
+
+Release Date: April 07, 2023
+
+[NuGet package for WebView2 SDK 1.0.1777-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1777-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 114.0.1777.0 or higher.
+
+
+#### General
+
+
+###### Experimental features
+
+
+* [ICoreWebView2File](/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1777-prerelease&preserve-view=true)
+* [ICoreWebView2File](/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1777-prerelease&preserve-view=true)
+* [ICoreWebView2ObjectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
+* [ICoreWebView2ObjectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
+* [ICoreWebView2ObjectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
+* [ICoreWebView2WebMessageReceivedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true)
+* [ICoreWebView2WebMessageReceivedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true)
+* [ICoreWebView2Profile5](/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1777-prerelease&preserve-view=true)
+* [ICoreWebView2Profile5](/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1777-prerelease&preserve-view=true)
+
+###### Promotions
+
+The following APIs are promoted to stable in this prerelease SDK:
+
+###### Bug fixes
+
+* Disable "Open link as Profile" in the WebView context menu
+* Fix post data missing in form submit with control click
+* Fixed a bug where the user is not able to get the custom context menu on PDF Viewer
+* Fixed bug that he whole tool bar will be blank when hiding Bookmarks, Search, and PageSelector buttons simultaneously.
+* General bug fixes.
+* Fixed a bug that the app crashes when trying to move focus to WebView when it is disabled.
+* Fix drag/drop within the WebView2 for composition hosted WebViews
+* Remove read aloud icon in address bar in a WebView2 popup window
+* NA
+* Fix context menu shows unexpected items in WebView2 popup window
+* Fix clang check issue
+* Fix a flaky test in arm64
+
+
+<!-- ====================================================================== -->
 ## 1.0.1661.34
 
 Release Date: March 20, 2023
