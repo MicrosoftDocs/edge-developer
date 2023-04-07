@@ -29,7 +29,7 @@ To publish your PWA to the Microsoft Store, no code changes are required.  Inste
 
 To create an app reservation:
 
-1.  Before you can create an app reservation, you must have a **personal** Microsoft account that is enrolled in the Windows Developer Program.
+1.  Before you can create an app reservation, you must have a **personal** Microsoft account (not a work Microsoft account or a school Microsoft account) that is enrolled in the Windows Developer Program.
     1.  If you don't already have one, create a personal Microsoft account at [account.microsoft.com](https://account.microsoft.com/).
     1.  Enroll in the Windows Developer program, by following the steps in [Open a developer account in Partner Center](/windows/apps/publish/partner-center/open-a-developer-account).
 
