@@ -113,7 +113,7 @@ When DevTools detects that a Node server is running, the Node icon is displayed 
 
 In **Focus Mode**, when the **Activity Bar** is in the vertical orientation, a label is displayed when you hover over an icon or select an icon with the keyboard of the tool name.  These labels help you learn the icon for each tool in the **Activity Bar**.  Previously, selecting an icon with the keyboard and hovering over an icon with the mouse would display two labels simultaneously.  This issue has now been fixed and only one label will be displayed, depending on which tool you are hovering over with the mouse or selecting with the keyboard.
 
-![A label is displayed when hovering over an icon in the Activity Bar](./devtools-112-images/focus-mode-lable-vertical-activity-bar.png)
+![A label is displayed when hovering over an icon in the Activity Bar](./devtools-112-images/focus-mode-label-vertical-activity-bar.png)
 
 See also:
 * [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
