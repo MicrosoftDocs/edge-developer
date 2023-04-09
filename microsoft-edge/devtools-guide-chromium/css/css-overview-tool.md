@@ -130,6 +130,24 @@ When a CSS codebase becomes complex, keeping track of all the CSS media queries 
 
    ![Microsoft Edge, with the TODO list demo app and DevTools, showing the Sources tool, with the file that contains a media query opened, at the right line](images/css-overview-tool-sources-tool.png)
 
+### Non-simple selectors
+
+The **Non-simple selectors** section lists the CSS non-simple selectors found on the webpage.
+
+In CSS, simple selectors are selectors with only a single component (for example, a single id selector or type selector).  These selectors are not combined with other selector components or combinators.  All basic selectors, attributes, and single pseudo-classes and pseudo-elements are siple selectors.
+
+Non-simple selectors are more complicated and tend to match more elements, potentially resulting in long-running **Recalculate Styles** events in the **Performance** tool.  You can try to change these selectors so that they are more specific and match fewer elements, reducing the amount of time the browser takes to calculate styles when:
+
+- Elements are added to or removed from the DOM.
+- An element's attributes are changed, such as `class` or `id`.
+- User input occurs, such as a mouse move or focus change, which can affect `:hover` rules.
+
+To see the list of non-simple selectors, on the overview report, click **Non-simple selectors** in the sidebar to scroll to the relevant section of the report.  From here, you can further analyze the impact of your changes and individual selector performance with the **Selector Stats** feature in the **Performance** tool.
+
+#### See also
+
+* [CSS selectors | MDN web docs](https://developer.mozilla.org/docs/Web/CSS/CSS_Selectors#structure_of_a_selector)
+* [Analyze selector performance during Recalculate Style events](../evaluate-performance/selector-stats.md)
 
 <!-- ====================================================================== -->
 ## View elements with color contrast issues
@@ -159,3 +177,4 @@ To find color contrast issues:
    ![Microsoft Edge, with the TODO list demo app and DevTools, showing the Elements tool, with the color-contrast issue element selected](images/css-overview-tool-contrast-issues-elements-tool.png)
 
 To help fix contrast issues, check out the [Text contrast](../accessibility/reference.md#text-contrast) section of the accessibility-testing DevTools features.
+
