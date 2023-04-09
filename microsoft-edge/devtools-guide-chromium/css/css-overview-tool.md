@@ -142,7 +142,12 @@ Non-simple selectors are more complicated and tend to match more elements, poten
 - An element's attributes are changed, such as `class` or `id`.
 - User input occurs, such as a mouse move or focus change, which can affect `:hover` rules.
 
-To see the list of non-simple selectors, on the overview report, click **Non-simple selectors** in the sidebar to scroll to the relevant section of the report.  From here, you can further analyze the impact of your changes and individual selector performance with the **Selector Stats** feature in the **Performance** tool.
+To see the list of non-simple selectors, on the overview report, click **Non-simple selectors** in the sidebar to scroll to the relevant section of the report.  
+
+![The Non-simple selectors list in the CSS Overview tool](./images/non-simple-selectors-in-css-overview.png)
+
+
+From here, you can further analyze the impact of your changes and individual selector performance with the **Selector Stats** feature in the **Performance** tool.
 
 #### See also
 
