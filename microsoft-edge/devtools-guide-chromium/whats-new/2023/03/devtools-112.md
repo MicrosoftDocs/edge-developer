@@ -58,19 +58,65 @@ See also:
 * [Analyze selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
 
 <!-- ====================================================================== -->
-## Item 3
+## The JSON Viewer in Microsoft Edge supports code folding
 
-<!-- Subtitle: . -->
+<!-- Subtitle: Use code folding when looking at JSON to collapse and expand objects and arrays. -->
+Starting with Microsoft Edge 110, you have access to an experimental feature for viewing JSON directly in the browser: the **JSON Viewer**.  Previously, you may have used browser extensions or text editors for viewing JSON but now you can inspect JSON payloads from the network or from disk directly in Microsoft Edge.
 
+![The code folding setting in Microsoft Edge's JSON Viewer](./devtools-112-images/json-viewer-code-folding-setting.png)
 
+Starting in Microsoft Edge 112, the **JSON Viewer** now support code folding.  To access code folding, select the gear icon in the top right corner and turn on the **Code folding** setting.  With code folding turned on, you can now expand and collapse objects and arrays within the JSON you are inspecting.
 
-![todo 3](./devtools-112-images/template.png)
+![Code folding in Microsoft Edge's JSON Viewer](./devtools-112-images/json-viewer-code-folding.png)
 
-<!-- 
+**JSON Viewer** is an experimental feature so enable it by completing the following steps:
+
+1. Go to `edge://flags`.
+
+1. In the **Search flags** text field, type **JSON viewer**.
+
+1. In the **JSON Viewer** dropdown menu, select **Enabled**.
+
+1. Click the **Restart** button 
+
+and please send us your [feedback](../../../contact.md)!
+
 See also:
-* []()
--->
+* [View formatted JSON](../../../json-viewer/json-viewer.md)
 
+<!-- ====================================================================== -->
+## Focus Mode improvements
+
+<!-- Subtitle: Pressing Esc now hides or shows the Quick View, the Node icon for dedicated DevTools no longer overlaps with the first icon in the Activity Bar, and more. -->
+
+**Focus Mode** is a new, experimental user interface for DevTools.  Focus Mode is designed to simplify and streamline the DevTools UI, providing you maximum customizability without compromising on the robust set of features in the tools.  In Microsoft Edge 112, Focus Mode received the following improvements.
+
+### Pressing Esc now hides or shows Quick View
+
+In previous versions of Microsoft Edge, in **Focus Mode**, **Quick View** was always displayed. Pressing `Esc` maximized **Quick View** if it was minimized and vice versa.  However, when the **Console** tool was selected in the **Activity Bar**, pressing `Esc` when the **Quick View** was minimized would display a blank view.  In Microsoft Edge 112, this issue has been fixed.
+
+Pressing `Esc` now hides or shows **Quick View**.  If **Quick View** is hidden, then pressing `Esc` shows **Quick View**.
+
+![Pressing Esc when Quick View is hidden](./devtools-112-images/focus-mode-esc-shows-quick-view.png)
+
+If **Quick View** is shown, then pressing `Esc` hides **Quick View**.
+
+![Pressing Esc when Quick View is shown](./devtools-112-images/focus-mode-esc-hides-quick-view.png)
+
+### The Node icon for dedicated DevTools no longer overlaps with the first icon in the Activity Bar
+
+When DevTools detects that a Node server is running, the Node icon is displayed in Focus Mode.  Clicking this icon will open the dedicated DevTools for Node.  Before Microsoft Edge 112, the Node icon would overlap with the first tool icon when the **Activity Bar** is in the vertical orientation, making it harder to select the first tool.  This issue has now been fixed and there is no overlap between the Node icon and the first tool icon when the **Activity Bar** is in the vertical orientation.
+
+![The Node icon no longer overlaps with the first tool icon in the Activity Bar](./devtools-112-images/focus-mode-node-icon-vertical-activity-bar.png)
+
+### With the vertical Activity Bar, only one label is shown for each tool icon when hovering with the mouse or selecting with the keyboard
+
+In **Focus Mode**, when the **Activity Bar** is in the vertical orientation, a label is displayed when you hover over an icon or select an icon with the keyboard of the tool name.  These labels help you learn the icon for each tool in the **Activity Bar**.  Previously, selecting an icon with the keyboard and hovering over an icon with the mouse would display two labels simultaneously.  This issue has now been fixed and only one label will be displayed, depending on which tool you are hovering over with the mouse or selecting with the keyboard.
+
+![A label is displayed when hovering over an icon in the Activity Bar](./devtools-112-images/focus-mode-lable-vertical-activity-bar.png)
+
+See also:
+* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
@@ -78,15 +124,11 @@ See also:
 Microsoft Edge 112 also includes the following updates from the Chromium project:
 
 * [Elements > Styles updates](https://developer.chrome.com/blog/new-in-devtools-112/#elements-styles)
-   * [CSS documentation](https://developer.chrome.com/blog/new-in-devtools-112/#css)
-   * [CSS nesting support](https://developer.chrome.com/blog/new-in-devtools-112/#nesting)
 * [Marking logpoints and conditional breakpoints in the Console](https://developer.chrome.com/blog/new-in-devtools-112/#logpoint)
 * [Ignore irrelevant scripts during debugging](https://developer.chrome.com/blog/new-in-devtools-112/#ignore-list)
 * [JavaScript Profiler deprecation started](https://developer.chrome.com/blog/new-in-devtools-112/#js-profiler-deprecation)
 * [Emulate reduced contrast](https://developer.chrome.com/blog/new-in-devtools-112/#reduced-contrast)
 * [Lighthouse 10](https://developer.chrome.com/blog/new-in-devtools-112/#lighthouse)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-112/#misc)
-
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
