@@ -32,12 +32,6 @@ See also:
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
 * [Record performance](../../../evaluate-performance/reference.md#record-performance) in _Performance features reference_.
 
-<!-- For our reference
-- https://dev.azure.com/microsoft/Edge/_git/chromium.devtools-frontend/pullrequest/8414709
-- https://dev.azure.com/microsoft/Edge/_workitems/edit/43100332/
-- https://microsoft.visualstudio.com/Edge/_workitems/edit/43100279
- -->
-
 <!-- ====================================================================== -->
 ## The CSS Overview tool displays a list of non-simple selectors for quick performance wins
 
