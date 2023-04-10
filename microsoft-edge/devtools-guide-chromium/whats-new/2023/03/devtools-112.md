@@ -23,7 +23,7 @@ In previous versions of Microsoft Edge, JavaScript execution in an out-of-proces
 
 In Microsoft Edge 112, the Performance tool now loads and applies sourcemaps to the performance events tracked in OOPIFs.  As a result, you can now see unminified file and function names for the JavaScript execution within an OOPIF when recording a profile in the Performance tool.
 
-![To-do, Zoher get from Rob: The unminified call stack from a profile recorded in the Performance tool](./devtools-112-images/template.png)
+![The unminified call stack from a profile recorded in the Performance tool](./devtools-112-images/unminification-in-oopifs-after.png)
 
 See also:
 * [Performance tool unminifies file and function names when profiling production code
