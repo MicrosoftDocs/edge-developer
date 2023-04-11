@@ -192,7 +192,7 @@ The following APIs are promoted to stable in this prerelease SDK.
 
 
 <!-- ------------------------------ -->
-* The Profile Cookie Manager API enables the host app to get the cookie manager for the profile.  The Profile Cookie Manager API supports profile management, including custom data partition, cookie manager and profile deletion.
+* The Profile Cookie Manager API supports profile management.  The `CookieManager` property enables the host app to get the cookie manager for the profile.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
