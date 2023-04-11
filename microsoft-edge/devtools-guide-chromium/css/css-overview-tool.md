@@ -46,35 +46,41 @@ If you make changes to your webpage and want to view a new report, click **Clear
 <!-- ====================================================================== -->
 ## Understand the report
 
-The overview report contains information organized in several sections:
+The CSS overview report contains information organized into several sections:
 
-* **Summary**: statistics about key CSS rules, selectors, and media queries on the page.
-* **Colors**: colors used on the page.
-* **Font info**: list of fonts on the page.
-* **Unused declarations**: list of unused CSS declarations.
-* **Media queries**: list of media queries.
+* **Overview summary**: Statistics about key CSS rules, selectors, and media queries on the page.
+* **Colors**: Colors used on the page.
+* **Font info**: List of fonts on the page.
+* **Unused declarations**: List of unused CSS declarations.
+* **Media queries**: List of media queries.
 
-To review the above sections, scroll through the report, or use the table of content sidebar.
+To view the sections of the report, use the scrollbar or click the sections in the sidebar:
 
-![Microsoft Edge, with the TODO list demo app and DevTools, showing the table of content and scrollbar in the CSS Overview report](images/css-overview-tool-scroll.png)
+![TODO demo app on the left, DevTools CSS Overview report on the right with a clickable list of sections and scrollbar](images/css-overview-tool-scroll.png)
 
-### Summary
 
-The **Summary** section is useful to get a quick overview of your CSS code. It provides the number of external and inline stylesheets, the number of CSS rules, the number of selectors and their various types, and the number of media queries.
+<!-- ------------------------------ -->
+#### Overview summary
+
+The **Overview summary** section of the CSS overview report is useful to get a quick overview of your CSS code. It provides the number of external and inline stylesheets, the number of CSS rules, the number of selectors and their various types, and the number of media queries.
 
 This can be used to assess the volume and consistency of your CSS codebase on a given webpage. For example, if you decided to only use class selectors, the **Summary** section will make it quick to detect other types of selectors like ID or attribute.
 
-### Colors
 
-The **Colors** section lists all the colors used on the webpage, and groups them by background, text, fill, and border categories.
+<!-- ------------------------------ -->
+#### Colors section
 
-This can be useful to discover cases when several similar colors are used instead of one common color. CSS custom properties (also known as CSS variables) can be used to avoid repeating colors throughout a CSS file and therefore avoid this problem. Learn more about CSS variables on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)).
+The **Colors** section of the CSS overview report lists all the colors used on the webpage, and groups them by background, text, fill, and border categories.
 
-The **Colors** section also contains a list of color contrast issues on the page. To learn more, see [View elements with color contrast issues](#view-elements-with-color-contrast-issues).
+This can be useful to discover cases when several similar colors are used instead of one common color. CSS custom properties (also known as CSS variables) can be used to avoid repeating colors throughout a CSS file and therefore avoid this problem. Learn more about CSS variables on [MDN](https://developer.mozilla.org/docs/Web/CSS/--*).
 
-### Font info
+The **Colors** section also contains a list of color contrast issues on the page.  See [View elements with color contrast issues](#view-elements-with-color-contrast-issues), below.
 
-The **Font info** section lists all the font families used on the webpage and provides details about which sizes, weights, and line heights are used for each.
+
+<!-- ------------------------------ -->
+#### Font info section
+
+The **Font info** section of the CSS overview report lists all the font families used on the webpage and provides details about which sizes, weights, and line heights are used for each.
 
 When designing a webpage, using consistent typography settings can help reach a more aesthetically-pleasing result. The **Font info** section can be useful to detect when too many different fonts or font styles are used.
 
@@ -94,9 +100,11 @@ Each font in the **Font info** section contains links to the DOM elements they a
 
    ![Microsoft Edge, with the TODO list demo app and DevTools, showing Elements tool, with the right node selected](images/css-overview-tool-elements-tool.png)
 
-### Unused declarations
 
-The **Unused declarations** section lists some of the CSS declarations that don't have an effect on their target elements.
+<!-- ------------------------------ -->
+#### Unused declarations
+
+The **Unused declarations** section of the CSS overview report lists some of the CSS declarations that don't have an effect on their target elements.
 
 CSS declarations are key/value pairs such as `top: 42px`. CSS declarations are contained in CSS rules, and rules target specific elements on the webpage. Depending on other styles applied to an element, a CSS declaration may not have any effect.
 
@@ -110,9 +118,11 @@ So this list will need to be updated then. -->
 * When the `width` or `height` properties are used on inline elements.
 * When the `vertical-align` property is used on elements that are not inline or table cells.
 
-### Media queries
 
-The **Media queries** section lists the CSS media queries found on the webpage.
+<!-- ------------------------------ -->
+#### Media queries
+
+The **Media queries** section of the CSS overview report lists the CSS media queries found on the webpage.
 
 CSS media queries can be used to apply specific styles depending on the media type (for example `print` or `screen`) or depending on the viewport size. This is often used to make webpages respond to the available space.
 
@@ -130,9 +140,11 @@ When a CSS codebase becomes complex, keeping track of all the CSS media queries 
 
    ![Microsoft Edge, with the TODO list demo app and DevTools, showing the Sources tool, with the file that contains a media query opened, at the right line](images/css-overview-tool-sources-tool.png)
 
-### Non-simple selectors
 
-The **Non-simple selectors** section lists the CSS non-simple selectors found on the webpage.
+<!-- ------------------------------ -->
+#### Non-simple selectors
+
+The **Non-simple selectors** section of the CSS overview report lists the CSS non-simple selectors found on the webpage.
 
 In CSS, simple selectors are selectors with only a single component (for example, a single id selector or type selector).  These selectors are not combined with other selector components or combinators.  All basic selectors, attributes, and single pseudo-classes and pseudo-elements are siple selectors.
 
@@ -142,17 +154,17 @@ Non-simple selectors are more complicated and tend to match more elements, poten
 - An element's attributes are changed, such as `class` or `id`.
 - User input occurs, such as a mouse move or focus change, which can affect `:hover` rules.
 
-To see the list of non-simple selectors, on the overview report, click **Non-simple selectors** in the sidebar to scroll to the relevant section of the report.  
+To see the list of non-simple selectors, on the overview report, click **Non-simple selectors** in the sidebar to scroll to the relevant section of the report:
 
 ![The Non-simple selectors list in the CSS Overview tool](./images/non-simple-selectors-in-css-overview.png)
 
-
 From here, you can further analyze the impact of your changes and individual selector performance with the **Selector Stats** feature in the **Performance** tool.
 
-#### See also
+###### See also
 
 * [CSS selectors | MDN web docs](https://developer.mozilla.org/docs/Web/CSS/CSS_Selectors#structure_of_a_selector)
 * [Analyze selector performance during Recalculate Style events](../evaluate-performance/selector-stats.md)
+
 
 <!-- ====================================================================== -->
 ## View elements with color contrast issues
@@ -183,3 +195,9 @@ To find color contrast issues:
 
 To help fix contrast issues, check out the [Text contrast](../accessibility/reference.md#text-contrast) section of the accessibility-testing DevTools features.
 
+
+<!-- ====================================================================== -->
+## See also
+
+* [CSS selectors | MDN web docs](https://developer.mozilla.org/docs/Web/CSS/CSS_Selectors#structure_of_a_selector)
+* [Analyze selector performance during Recalculate Style events](../evaluate-performance/selector-stats.md)
