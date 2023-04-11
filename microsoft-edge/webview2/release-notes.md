@@ -86,6 +86,10 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 The following items are now stable.
 
+ICoreWebView2Settings8 (ADDED)
+        get_IsReputationCheckingRequired
+        put_IsReputationCheckingRequired
+
 <!-- ------------------------------ -->
 * The `IsReputationCheckingRequired` property:<!-- todo: real API section heading, and introduce for student audience -->
 
@@ -203,6 +207,16 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 The following APIs are promoted to stable in this prerelease SDK: todo
 
+
+ICoreWebView2File (ADDED)
+        get_Path
+ICoreWebView2ObjectCollectionView (ADDED)
+        get_Count
+        GetValueAtIndex
+ICoreWebView2WebMessageReceivedEventArgs2 (ADDED)
+        get_AdditionalObjects
+ICoreWebView2Profile5 (ADDED)
+        get_CookieManager
 
 ###### Bug fixes
 
