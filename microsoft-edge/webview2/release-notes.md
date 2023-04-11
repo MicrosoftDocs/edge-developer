@@ -86,49 +86,45 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 The following items are now stable.
 
-ICoreWebView2Settings8 (ADDED)
-        get_IsReputationCheckingRequired
-        put_IsReputationCheckingRequired
-
 <!-- ------------------------------ -->
-* The `IsReputationCheckingRequired` property:<!-- todo: real API section heading, and introduce for student audience -->
+* The `IsReputationCheckingRequired` property: used to control whether SmartScreen is enabled or not. <!-- todo-done: real API section heading, and introduce for student audience -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2Settings`
-   * [CoreWebView2Settings.IsReputationCheckingRequired Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-dotnet-1.0.1722.32&preserve-view=true)
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-dotnet-1.0.1722.32&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Settings`
-   * [CoreWebView2Settings.IsReputationCheckingRequired Property](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1722.32#isreputationcheckingrequired)
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1722.32#isreputationcheckingrequired)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Settings8](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true)
-   * [ICoreWebView2Settings8::get_IsReputationCheckingRequired method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true#get_isreputationcheckingrequired)
-   * [ICoreWebView2Settings8::put_IsReputationCheckingRequired method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true#put_isreputationcheckingrequired)
+* [ICoreWebView2Settings8](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true)
+   * [ICoreWebView2Settings8::get_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true#get_isreputationcheckingrequired)
+   * [ICoreWebView2Settings8::put_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.1722.32&preserve-view=true#put_isreputationcheckingrequired)
 
 ---
 
 
 <!-- ------------------------------ -->
-* The `PermissionKind.WindowManagement` API:<!-- todo: real API section heading, and introduce for student audience -->
+* The `PermissionKind.WindowManagement` API: indicates the kind of a permission request. <!-- todo-done: real API section heading, and introduce for student audience -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2PermissionKind` Enum
-   * [CoreWebView2PermissionKind.WindowManagement Enum Value](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.1722.32&preserve-view=true)
+   * [CoreWebView2PermissionKind.WindowManagement Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.1722.32&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2PermissionKind` Enum
-   * [CoreWebView2PermissionKind.WindowManagement Enum Value](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.1722.32&preserve-view=true)
+   * [CoreWebView2PermissionKind.WindowManagement Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.1722.32&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * `COREWEBVIEW2_PERMISSION_KIND` Enum
-   * [COREWEBVIEW2_PERMISSION_KIND_WINDOW_MANAGEMENT enum value](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1722.32&preserve-view=true#corewebview2_permission_kind)
+   * [COREWEBVIEW2_PERMISSION_KIND_WINDOW_MANAGEMENT enum value](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1722.32&preserve-view=true#corewebview2_permission_kind)
 
 ---
 
@@ -148,89 +144,84 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ###### Experimental features
 
-<!-- ------------------------------ -->
-* The File API:<!-- todo: real API section heading, and introduce for student audience -->
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2File]
-   * [CoreWebView2File.todo member]
-
-* `CoreWebView2WebMessageReceivedEventArgs`
-   * [CoreWebView2WebMessageReceivedEventArgs.todo member]
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2File]
-   * [CoreWebView2File.todo member]
-
-* `CoreWebView2WebMessageReceivedEventArgs`
-   * [CoreWebView2WebMessageReceivedEventArgs.todo member]
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2File](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1777-prerelease&preserve-view=true)
-   * [ICoreWebView2File::todo member](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1777-prerelease&preserve-view=true)
-
-* [ICoreWebView2ObjectCollectionView](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
-   * [ICoreWebView2ObjectCollectionView::todo member](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
-   * [ICoreWebView2ObjectCollectionView::todo member](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
-
-* [ICoreWebView2WebMessageReceivedEventArgs2](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true)
-   * [ICoreWebView2WebMessageReceivedEventArgs2::todo member](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true)
-
----
-
-
-<!-- ------------------------------ -->
-* The Profile Todo API:<!-- todo: real API section heading, and introduce for student audience -->
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Profile`
-   * [CoreWebView2Profile.Todo member]
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Profile`
-   * [CoreWebView2Profile.Todo member]
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2Profile5](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1777-prerelease&preserve-view=true)
-   * [ICoreWebView2Profile5::Todo member](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1777-prerelease&preserve-view=true)
-
+<!-- todo: to confirm whether we have experimental features in this prerelease------------------------------ -->
 ---
 
 ###### Promotions
-<!-- todo: delete Promotions section?  wouldn't such a list be same as/dup of "see Release section 1.0.1722.32"?  check past releases below to see if that's the case. -->
+<!-- todo-done: delete Promotions section?  wouldn't such a list be same as/dup of "see Release section 1.0.1722.32"?  check past releases below to see if that's the case. comment: this is promotion to prerelease stable. -->
 
-The following APIs are promoted to stable in this prerelease SDK: todo
+* The File API: allows accessing a DOM File object passed via WebMessage. <!-- todo-done: real API section heading, and introduce for student audience -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2File](/dotnet/api/microsoft.web.webview2.core.corewebview2file?view=webview2-dotnet-1.0.1777-prerelease)
+   * [CoreWebView2File.path property](/dotnet/api/microsoft.web.webview2.core.corewebview2file.path?view=webview2-dotnet-1.0.1777-prerelease#microsoft-web-webview2-core-corewebview2file-path)
+
+* `CoreWebView2WebMessageReceivedEventArgs`
+   * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects property](/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs.additionalobjects?view=webview2-dotnet-1.0.1777-prerelease#microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs-additionalobjects)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2File](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file?view=webview2-winrt-1.0.1777-prerelease)
+   * [CoreWebView2File.path property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file?view=webview2-winrt-1.0.1777-prerelease#path)
+
+* `CoreWebView2WebMessageReceivedEventArgs`
+   * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webmessagereceivedeventargs?view=webview2-winrt-1.0.1777-prerelease#additionalobjects)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2File](/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1777-prerelease&preserve-view=true)
+   * [ICoreWebView2File::get_path](/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1777-prerelease&preserve-view=true#get_path)
+* [ICoreWebView2WebMessageReceivedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true)
+   * [ICoreWebView2WebMessageReceivedEventArgs2::get_AdditionalObjects](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true#get_AdditionalObjects)
+
+* ObjectCollectionView API: read-only collection of generic objects.
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2]
+   * [CoreWebView2.todo member]
+<!-- Didn't find ObjectCollectionView in .NET and WinRT -->
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2]
+   * [CoreWebView2.todo member]
+<!-- Didn't find ObjectCollectionView in .NET and WinRT -->
+
+##### [Win32/C++](#tab/win32cpp)
+* [ICoreWebView2ObjectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
+   * [ICoreWebView2ObjectCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true#get_Count)
+   * [ICoreWebView2ObjectCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true#GetValueAtIndex)
 
 
-ICoreWebView2File (ADDED)
-        get_Path
-ICoreWebView2ObjectCollectionView (ADDED)
-        get_Count
-        GetValueAtIndex
-ICoreWebView2WebMessageReceivedEventArgs2 (ADDED)
-        get_AdditionalObjects
-ICoreWebView2Profile5 (ADDED)
-        get_CookieManager
+<!-- ------------------------------ -->
+* The Profile Cookie Manager API: enable the host app to get the cookie manager for the profile. <!-- todo-done: real API section heading, and introduce for student audience -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Profile`
+   * [CoreWebView2Profile.CookieManager property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.cookiemanager?view=webview2-dotnet-1.0.1777-prerelease#microsoft-web-webview2-core-corewebview2profile-cookiemanager)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile`
+   * [CoreWebView2Profile.CookieManager property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1777-prerelease#cookiemanager)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Profile5](/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1777-prerelease&preserve-view=true)
+   * [ICoreWebView2Profile5::get_CookieManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1777-prerelease&preserve-view=true#get_cookiemanager)
+
+---
 
 ###### Bug fixes
 
-* Disable **Open link as Profile** in the WebView context menu.
-* Fix post data missing in forms that are submitted by using **Control+click**.
-* Fixed a bug where the user is not able to get the custom context menu on PDF Viewer.
-* Fixed bug where the whole toolbar will be blank when hiding the **Bookmarks**, **Search**, and **PageSelector** buttons simultaneously.
-* General bug fixes.
-* Fixed a bug where the app crashes when trying to move focus to a WebView2 control when the control is disabled.
-* Fix drag and drop within the WebView2 for composition-hosted WebView2 controls.
-* Removed the **read aloud** icon from the Address bar in a WebView2 popup window.
-* Fixed context menu showing unexpected items in a WebView2 popup window.
-* Fix a Clang compiler check issue.
-* Fix an unreliable test in arm64.
+* Fixed a crash when releasing the WebView from a different thread (Runtime). ([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))
+* Fixed a bug where focus was trapped inside webview2 when wrapped in a ContainerControl. ([Issue #2835](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2835))
+* Fixed the issue by disabling the editable pdf temp cached data recovery function in WebView2. ([Issue #3274](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3274))
+* Disabled the Chrome Web Store info banner that displays the option to allow extensions installation. ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
+* Fixed issue with new download items not getting called out by screen readers.
+* Fixed a bug where visual hosted owned windows did not map pointer input correctly.
+* Fixed a bug where DownloadStarting was getting raised for canceled Save As dialog. (Runtime)
 
 
 <!-- ====================================================================== -->
@@ -296,7 +287,7 @@ The following items are now stable.
    * [CoreWebView2SharedBuffer.Close Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer?view=webview2-winrt-1.0.1661.34&preserve-view=true#close)
    * [CoreWebView2SharedBuffer.OpenStream Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer?view=webview2-winrt-1.0.1661.34&preserve-view=true#openstream)
 
-* [CoreWebView2SharedBufferAccess Enum](/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbufferaccess?view=webview2-winrt-1.0.1661.34&preserve-view=true)
+* [CoreWebView2SharedBufferAccess Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbufferaccess?view=webview2-winrt-1.0.1661.34&preserve-view=true)
    * `ReadOnly`
    * `ReadWrite`
 
@@ -318,7 +309,7 @@ The following items are now stable.
    * [ICoreWebView2SharedBuffer::get_Buffer method](/microsoft-edge/webview2/reference/win32/icorewebview2sharedbuffer?view=webview2-1.0.1661.34&preserve-view=true#get_buffer)
    * [ICoreWebView2SharedBuffer::get_FileMappingHandle method](/microsoft-edge/webview2/reference/win32/icorewebview2sharedbuffer?view=webview2-1.0.1661.34&preserve-view=true#get_filemappinghandle)
 
-* [COREWEBVIEW2_SHARED_BUFFER_ACCESS](/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1661.34&preserve-view=true#corewebview2_shared_buffer_access)
+* [COREWEBVIEW2_SHARED_BUFFER_ACCESS](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1661.34&preserve-view=true#corewebview2_shared_buffer_access)
    * `COREWEBVIEW2_SHARED_BUFFER_ACCESS_READ_ONLY`
    * `COREWEBVIEW2_SHARED_BUFFER_ACCESS_READ_WRITE`
 
@@ -348,10 +339,10 @@ The following items are now stable.
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2PermissionKind` Enum
-   * [CoreWebView2PermissionKind.MidiSystemExclusiveMessages Enum Value](/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.1661.34&preserve-view=true)
+   * [CoreWebView2PermissionKind.MidiSystemExclusiveMessages Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.1661.34&preserve-view=true)
 
 * `CoreWebView2PermissionRequestedEventArgs` Event
-   * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionrequestedeventargs?view=webview2-winrt-1.0.1661.34&preserve-view=true#savesinprofile)
+   * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionrequestedeventargs?view=webview2-winrt-1.0.1661.34&preserve-view=true#savesinprofile)
 
 * [CoreWebView2PermissionSetting Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionsetting?view=webview2-winrt-1.0.1661.34&preserve-view=true)
    * [CoreWebView2PermissionSetting.PermissionKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionsetting?view=webview2-winrt-1.0.1661.34&preserve-view=true#permissionkind)
@@ -366,9 +357,9 @@ The following items are now stable.
 
 * [ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2getnondefaultpermissionsettingscompletedhandler?view=webview2-1.0.1661.34&preserve-view=true)
 
-* [ICoreWebView2PermissionRequestedEventArgs3 interface](/en-us/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3?view=webview2-1.0.1661.34&preserve-view=true)
-   * [ICoreWebView2PermissionRequestedEventArgs3::get_SavesInProfile](/en-us/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3?view=webview2-1.0.1661.34&preserve-view=true#get_savesinprofile)
-   * [ICoreWebView2PermissionRequestedEventArgs3::put_SavesInProfile](/en-us/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3?view=webview2-1.0.1661.34&preserve-view=true#put_savesinprofile)
+* [ICoreWebView2PermissionRequestedEventArgs3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3?view=webview2-1.0.1661.34&preserve-view=true)
+   * [ICoreWebView2PermissionRequestedEventArgs3::get_SavesInProfile](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3?view=webview2-1.0.1661.34&preserve-view=true#get_savesinprofile)
+   * [ICoreWebView2PermissionRequestedEventArgs3::put_SavesInProfile](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3?view=webview2-1.0.1661.34&preserve-view=true#put_savesinprofile)
 
 * [ICoreWebView2PermissionSetting interface](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsetting?view=webview2-1.0.1661.34&preserve-view=true)
    * [ICoreWebView2PermissionSetting::get_PermissionKind method](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsetting?view=webview2-1.0.1661.34&preserve-view=true#get_permissionkind)
@@ -386,7 +377,7 @@ The following items are now stable.
 * [ICoreWebView2SetPermissionStateCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2setpermissionstatecompletedhandler?view=webview2-1.0.1661.34&preserve-view=true)
 
 * `COREWEBVIEW2_PERMISSION_KIND` Enum
-   * [COREWEBVIEW2_PERMISSION_KIND_MIDI_SYSTEM_EXCLUSIVE_MESSAGES enum value](/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1661.34&preserve-view=true#corewebview2_permission_kind)
+   * [COREWEBVIEW2_PERMISSION_KIND_MIDI_SYSTEM_EXCLUSIVE_MESSAGES enum value](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1661.34&preserve-view=true#corewebview2_permission_kind)
 
 ---
 
@@ -414,7 +405,7 @@ APIs for managing tracking prevention:
 * `CoreWebView2Profile` Class
    * [CoreWebView2Profile.PreferredTrackingPreventionLevel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1661.34&preserve-view=true#preferredtrackingpreventionlevel)
 
-* [CoreWebView2TrackingPreventionLevel Enum](/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2trackingpreventionlevel?view=webview2-winrt-1.0.1661.34&preserve-view=true)
+* [CoreWebView2TrackingPreventionLevel Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2trackingpreventionlevel?view=webview2-winrt-1.0.1661.34&preserve-view=true)
     * `None`
     * `Basic`
     * `Balanced`
@@ -428,7 +419,7 @@ APIs for managing tracking prevention:
 * [ICoreWebView2Profile3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile3?view=webview2-1.0.1661.34&preserve-view=true)
    * [ICoreWebView2Profile3::PreferredTrackingPreventionLevel property (get](/microsoft-edge/webview2/reference/win32/icorewebview2profile3?view=webview2-1.0.1661.34&preserve-view=true#get_preferredtrackingpreventionlevel), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2profile3?view=webview2-1.0.1661.34&preserve-view=true#put_preferredtrackingpreventionlevel)
 
-* [COREWEBVIEW2_TRACKING_PREVENTION_LEVEL enum](/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1661.34&preserve-view=true#corewebview2_tracking_prevention_level)
+* [COREWEBVIEW2_TRACKING_PREVENTION_LEVEL enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1661.34&preserve-view=true#corewebview2_tracking_prevention_level)
   * `COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_NONE`
   * `COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_BASIC`
   * `COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_BALANCED`
