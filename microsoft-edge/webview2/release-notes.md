@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/07/2023
+ms.date: 04/10/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -72,22 +72,25 @@ Async methods:
 <!-- ====================================================================== -->
 ## 1.0.1722.32
 
-Release Date: April 07, 2023
+Release Date: April 10, 2023
 
 [NuGet package for WebView2 SDK 1.0.1722.32](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1722.32)
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 112.0.1722.32 or higher.
 
 
+<!-- ------------------------------ -->
 #### General
 
 
+<!-- ------------------------------ -->
 ###### Promotions
 
 The following items are now stable.
 
+
 <!-- ------------------------------ -->
-* The `IsReputationCheckingRequired` property: used to control whether SmartScreen is enabled or not. <!-- todo-done: real API section heading, and introduce for student audience -->
+* The Managing SmartScreen API controls whether SmartScreen is enabled.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -109,7 +112,7 @@ The following items are now stable.
 
 
 <!-- ------------------------------ -->
-* The `PermissionKind.WindowManagement` API: indicates the kind of a permission request. <!-- todo-done: real API section heading, and introduce for student audience -->
+* The `PermissionKind.WindowManagement` API indicates the kind of a permission request.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -132,25 +135,31 @@ The following items are now stable.
 <!-- ====================================================================== -->
 ## 1.0.1777-prerelease
 
-Release Date: April 07, 2023
+Release Date: April 10, 2023
 
 [NuGet package for WebView2 SDK 1.0.1777-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1777-prerelease)
 
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 114.0.1777.0 or higher.
 
 
+<!-- ------------------------------ -->
 #### General
 
 
+<!-- ------------------------------ -->
 ###### Experimental features
 
-<!-- todo: to confirm whether we have experimental features in this prerelease------------------------------ -->
----
+No experimental features are added in this prerelease.
 
+
+<!-- ------------------------------ -->
 ###### Promotions
-<!-- todo-done: delete Promotions section?  wouldn't such a list be same as/dup of "see Release section 1.0.1722.32"?  check past releases below to see if that's the case. comment: this is promotion to prerelease stable. -->
 
-* The File API: allows accessing a DOM File object passed via WebMessage. <!-- todo-done: real API section heading, and introduce for student audience -->
+The following APIs are promoted to stable in this prerelease SDK.
+
+
+<!-- ------------------------------ -->
+* The File API allows accessing a DOM `File` object passed via `WebMessage`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -175,26 +184,15 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 * [ICoreWebView2WebMessageReceivedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true)
    * [ICoreWebView2WebMessageReceivedEventArgs2::get_AdditionalObjects](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1777-prerelease&preserve-view=true#get_AdditionalObjects)
 
-* ObjectCollectionView API: read-only collection of generic objects.
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2]
-   * [CoreWebView2.todo member]
-<!-- Didn't find ObjectCollectionView in .NET and WinRT -->
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2]
-   * [CoreWebView2.todo member]
-<!-- Didn't find ObjectCollectionView in .NET and WinRT -->
-
-##### [Win32/C++](#tab/win32cpp)
 * [ICoreWebView2ObjectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true)
    * [ICoreWebView2ObjectCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true#get_Count)
    * [ICoreWebView2ObjectCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1777-prerelease&preserve-view=true#GetValueAtIndex)
 
+---
+
 
 <!-- ------------------------------ -->
-* The Profile Cookie Manager API: enable the host app to get the cookie manager for the profile. <!-- todo-done: real API section heading, and introduce for student audience -->
+* The Profile Cookie Manager API enables the host app to get the cookie manager for the profile.  The Profile Cookie Manager API supports profile management, including custom data partition, cookie manager and profile deletion.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -213,15 +211,17 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
+
+<!-- ------------------------------ -->
 ###### Bug fixes
 
-* Fixed a crash when releasing the WebView from a different thread (Runtime). ([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))
-* Fixed a bug where focus was trapped inside webview2 when wrapped in a ContainerControl. ([Issue #2835](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2835))
-* Fixed the issue by disabling the editable pdf temp cached data recovery function in WebView2. ([Issue #3274](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3274))
-* Disabled the Chrome Web Store info banner that displays the option to allow extensions installation. ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
-* Fixed issue with new download items not getting called out by screen readers.
-* Fixed a bug where visual hosted owned windows did not map pointer input correctly.
-* Fixed a bug where DownloadStarting was getting raised for canceled Save As dialog. (Runtime)
+* Fixed a crash when releasing the WebView from a different thread.  (Runtime)  ([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))
+* Fixed a bug where focus was trapped inside the WebView2 control when wrapped in a `ContainerControl`.  ([Issue #2835](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2835))
+* Fixed the issue by disabling the editable `.pdf` temporary cached data recovery function in WebView2.  ([Issue #3274](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3274))
+* Disabled the Chrome Web Store info banner that displays the option to allow extensions installation.  ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
+* Fixed an issue with new download items not getting called out by screen readers.
+* Fixed a bug where visually hosted owned windows didn't map mouse pointer input correctly.
+* Fixed a bug where `DownloadStarting` was getting raised for a canceled **Save As** dialog.  (Runtime)
 
 
 <!-- ====================================================================== -->
@@ -484,7 +484,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ------------------------------ -->
-*  Added Window Management permission type
+*  Added Window Management permission type:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
