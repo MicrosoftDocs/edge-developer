@@ -49,27 +49,7 @@ You can try to change these selectors so that they are more specific and match f
 - When an element's attributes are changed, such as `class` or `id`.
 - When user input occurs, such as a mouse move or a change of focus, which can affect `:hover` rules.
 
-To analyze individual CSS selector performance and analyze the impact of your changes, use the **Selector Stats** feature in the **Performance** tool, as follows:
-
-1. In DevTools, go to the **CSS Overview** tool.
-
-1. If the **Capture overview** button is shown instead of report sections, click it.
-
-1. On the left side, click the **Non-simple selectors** section, or use the scrollbar to scroll down to it:
-
-   ![The Performance button in the 'Non-simple selectors' section](./devtools-112-images/performance-button.png)
-
-1. Examine the list of non-simple selectors.
-
-1. Click the **Performance** button.  The **Performance** tool opens.
-
-1. Click the **Capture settings** (![Capture settings icon](./devtools-112-images/capture-settings-icon.png)) icon.
-
-1. Select the **Enable advanced rendering instrumentation (slow)** checkbox:
-
-   ![The 'Enable advanced rendering instrumentation' checkbox](./devtools-112-images/enable-advanced-rendering.png)
-
-1. Record a performance profile, and then examine the **Selector Stats**.
+To analyze individual CSS selector performance and analyze the impact of your changes, use the **Selector Stats** feature in the **Performance** tool.
 
 See also:
 * [Optimize CSS styles with the CSS Overview tool](../../../css/css-overview-tool.md)
@@ -137,6 +117,11 @@ In Focus Mode, when DevTools detects that a Node.js server is running, the Node 
 Before Microsoft Edge 112, the Node icon overlaps the first tool icon when the **Activity Bar** is in vertical orientation, making it harder to select the first tool.  This issue has now been fixed; there's no overlapping of the Node icon and the first tool icon when the **Activity Bar** is vertical:
 
 ![The Node icon no longer overlaps the first tool icon in the Activity Bar](./devtools-112-images/focus-mode-node-icon-vertical-activity-bar.png)
+<!-- screenshot:
+https://nodejs.org/en/docs/guides/getting-started-guide
+$ cd C:/Users/username/GitHub/node-test/
+$ node --inspect app.js
+-->
 
 
 <!-- ------------------------------ -->
