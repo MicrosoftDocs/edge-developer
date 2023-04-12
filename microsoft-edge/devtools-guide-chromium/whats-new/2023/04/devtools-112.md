@@ -20,10 +20,21 @@ ms.date: 04/11/2023
 In previous versions of Microsoft Edge, JavaScript execution in an out-of-process iframe (OOPIF) was isolated from DevTools.  As a result, the **Performance** tool was not able to apply sourcemaps to performance events that are from an OOPIF.  When recording a profile in the **Performance** tool, the tool can only display the minified file and function names in the flame chart, not the unminified names:
 
 ![The unminified call stack from a profile recorded in the Performance tool still showing minified names](./devtools-112-images/unminification-in-oopifs-before.png)
+<!-- maint:
+1. Go to https://word.new/
+2. Open the Performance tool.
+3. Click the Refresh button in the tool to start profiling and refresh the page.
+4. After the profile loads after some 15 seconds, navigate underneath the Main section of the flame chart to find a frame and then zoom in on a call stack to show that the function names are minified.
+-->
 
 In Microsoft Edge 112, the **Performance** tool now loads sourcemaps and applies them to the performance events that are tracked in OOPIFs.  As a result, after recording a profile in the **Performance** tool, you can now see unminified file and function names for the JavaScript execution that occurs within an OOPIF:
 
 ![The unminified call stack from a profile recorded in the Performance tool](./devtools-112-images/unminification-in-oopifs-after.png)
+
+<!-- maint:
+1. Connect Symbol Server via a PAT to the Office org. https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/consume-source-maps-from-azure
+2. Repeat the above steps to show the original file and function names in the flame chart.
+-->
 
 See also:
 * [Performance tool unminifies file and function names when profiling production code](../03/devtools-111.md#performance-tool-unminifies-file-and-function-names-when-profiling-production-code) in _What's new in DevTools (Microsoft Edge 111)_.
