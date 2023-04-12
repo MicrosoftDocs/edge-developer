@@ -20,7 +20,7 @@ When hosting the WebView2 control, your app has access to the following features
 | [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
 | [Browser features](#browser-features) | The WebView2 control gives your app access to many browser features.  You can modify these browser features and turn them on or off. |
 | [Process management](#process-management) | Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly. |
-| [Shared buffer](#shared-buffer) | todo <!-- copy intro sentence from below the h2 heading --> |
+| [Shared buffer](#shared-buffer) | Support sharing buffers between the WebView2 host app process and WebView2 renderer process, based on shared memory from the OS. <!-- copy intro sentence from below the h2 heading --> |
 | [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content) | Manage navigation to webpages and manage content that's loaded in the webpages. |
 | [iframes](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
 | [Authentication](#authentication) | Your app can handle basic authentication using the WebView2 control.  _Basic authentication_ is a specific authentication approach that's part of the HTTP protocol. |
@@ -926,10 +926,11 @@ In WebView2 you can you can set a [Favicon](https://developer.mozilla.org/docs/G
 <!-- ------------------------------ -->
 #### Tracking prevention
 
+Enables the host app to control the level of tracking prevention of the WebView2 associated with user profile.
+
 <!-- from RelNotes 111 -->
 
-<!-- todo: 
-overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
+<!-- overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
 -->
 
 <!-- todo: 
@@ -987,10 +988,11 @@ See also:
 <!-- ------------------------------ -->
 #### Controller's script locale
 
+Allows the host app to set the default locale for all Intl JavaScript APIs and other JavaScript APIs that depend on it, namely Intl.DateTimeFormat() which affects string formatting like in the time/date formats. 
+
 <!-- from RelNotes 111 -->
 
-<!-- todo: 
-overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
+<!-- Overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
 -->
 
 <!-- todo: 
@@ -1081,9 +1083,7 @@ Failed:
 
 <!-- from RelNotes 111 -->
 
-<!-- todo: 
-overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
--->
+The SharedBuffer API supports sharing buffers between the WebView2 host app process and WebView2 renderer process, based on shared memory from the OS.
 
 <!-- todo: 
 See also:
