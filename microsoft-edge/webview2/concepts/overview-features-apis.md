@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/24/2023
+ms.date: 04/12/2023
 ---
 # Overview of WebView2 features and APIs
 
@@ -20,7 +20,7 @@ When hosting the WebView2 control, your app has access to the following features
 | [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
 | [Browser features](#browser-features) | The WebView2 control gives your app access to many browser features.  You can modify these browser features and turn them on or off. |
 | [Process management](#process-management) | Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly. |
-| [Shared buffer](#shared-buffer) | Support sharing buffers between the WebView2 host app process and WebView2 renderer process, based on shared memory from the OS. <!-- copy intro sentence from below the h2 heading --> |
+| [Shared buffer](#shared-buffer) | Supports sharing buffers between the WebView2 host app process and WebView2 renderer process, based on shared memory from the OS. |
 | [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content) | Manage navigation to webpages and manage content that's loaded in the webpages. |
 | [iframes](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
 | [Authentication](#authentication) | Your app can handle basic authentication using the WebView2 control.  _Basic authentication_ is a specific authentication approach that's part of the HTTP protocol. |
@@ -30,7 +30,12 @@ When hosting the WebView2 control, your app has access to the following features
 | [Performance and debugging](#performance-and-debugging) | Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app. |
 | [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
 
-<!-- todo: add table rows for incoming h2s -->
+<!-- maintenance notes: add table rows for any new h2 sections -->
+
+<!-- todo: if "Managing SmartScreen" is an h2 section, add a row for it above
+| [Managing SmartScreen](#managing-smartscreen) | Controls whether SmartScreen is enabled. |
+-->
+
 
 <!-- ====================================================================== -->
 ## Main classes: Environment, Controller, and Core
@@ -329,6 +334,7 @@ See also:
 * [CoreWebView2Cookie Class](/dotnet/api/microsoft.web.webview2.core.corewebview2cookie)
 
 * [CoreWebView2CookieList Class](/dotnet/api/microsoft.web.webview2.core.corewebview2cookielist)
+<!-- todo: delete link?  goes to 674 prerelease: https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2cookielist?view=webview2-dotnet-1.0.674-prerelease -->
 
 * [CoreWebView2CookieManager Class](/dotnet/api/microsoft.web.webview2.core.corewebview2cookiemanager)
 
@@ -450,16 +456,11 @@ Custom Download Experience:
 
 Different webpages may ask you for permissions to access some privileged resources, such as geolocation sensor, camera, and microphone.  Your host app can programmatically respond to permissions requests and can replace the default permissions UI with its own UI.
 
-<!-- todo: 
-overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
--->
-
-<!-- todo: 
+<!--
+there's not a regular article about Permissions, to cross-link
 See also:
 * []()
 -->
-
-<!-- todo: link from dedicated topical page (if any) to this h2 section -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -542,6 +543,33 @@ See also:
 
 * `COREWEBVIEW2_PERMISSION_KIND` Enum
    * [COREWEBVIEW2_PERMISSION_KIND_MIDI_SYSTEM_EXCLUSIVE_MESSAGES enum value](/en-us/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_permission_kind)
+
+---
+
+
+<!-- ====================================================================== -->
+###### PermissionKind.WindowManagement
+
+<!-- todo: merge/coordinate this section w/ the above -->
+
+<!-- this section is from RelNotes 112 -->
+
+The `PermissionKind.WindowManagement` API indicates the kind of a permission request.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2PermissionKind` Enum
+   * [CoreWebView2PermissionKind.WindowManagement Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2PermissionKind` Enum
+   * [CoreWebView2PermissionKind.WindowManagement Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `COREWEBVIEW2_PERMISSION_KIND` Enum
+   * [COREWEBVIEW2_PERMISSION_KIND_WINDOW_MANAGEMENT enum value](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_permission_kind)
 
 ---
 
@@ -926,19 +954,15 @@ In WebView2 you can you can set a [Favicon](https://developer.mozilla.org/docs/G
 <!-- ------------------------------ -->
 #### Tracking prevention
 
-Enables the host app to control the level of tracking prevention of the WebView2 associated with user profile.
+Enables the host app to control the level of tracking prevention of the WebView2 control that's associated with the user profile.
 
 <!-- from RelNotes 111 -->
 
-<!-- overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
--->
-
-<!-- todo: 
+<!-- 
+there's not a regular article about tracking prevention, to cross-link
 See also:
 * []()
 -->
-
-<!-- todo: link from dedicated topical page (if any) to this h2 section -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -987,20 +1011,23 @@ See also:
 
 <!-- ------------------------------ -->
 #### Controller's script locale
+<!-- 
+#### Controller's JavaScript locale
+#### Locale for JavaScript for controller
+#### Controller's default locale
+#### Locale for controller
 
-Allows the host app to set the default locale for all Intl JavaScript APIs and other JavaScript APIs that depend on it, namely Intl.DateTimeFormat() which affects string formatting like in the time/date formats. 
-
-<!-- from RelNotes 111 -->
-
-<!-- Overview sentence or two: what should a student-level Dev mentally picture & think of?  what's the concrete UX/ feature/ benefit/ functionality that user sees?
+todo: better wording of heading?  check wording in API Ref docs, is "script locale" a good sequence of words for in sentence?
 -->
 
-<!-- todo: 
+Allows the host app to set the default locale for all `Intl` JavaScript APIs and other JavaScript APIs that depend on it, such as `Intl.DateTimeFormat()`, which affects string formatting in time/date formats. 
+
+<!-- this section is from RelNotes 111 -->
+
+<!-- todo: Is there an article to cross-link? 
 See also:
 * []()
 -->
-
-<!-- todo: link from dedicated topical page (if any) to this h2 section -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1081,16 +1108,16 @@ Failed:
 <!-- ====================================================================== -->
 ## Shared buffer
 
-<!-- from RelNotes 111 -->
+<!-- section from RelNotes 111 -->
 
 The SharedBuffer API supports sharing buffers between the WebView2 host app process and WebView2 renderer process, based on shared memory from the OS.
 
-<!-- todo: 
+<!-- todo: link to JavaScript Ref?  is there an article to cross-link?
 See also:
 * []()
+* [SharedBufferReceivedEvent class](/microsoft-edge/webview2/reference/javascript/sharedbufferreceivedevent)
+       = https://learn.microsoft.com/microsoft-edge/webview2/reference/javascript/sharedbufferreceivedevent
 -->
-
-<!-- todo: link from dedicated topical page (if any) to this h2 section -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1816,36 +1843,47 @@ WebView2 can connect its composition tree to an [IDCompositionVisual](/windows/w
 
 Spatial input (mouse, touch, pen) is received by the application and must be sent to WebView2.  WebView2 notifies the app when the cursor should be updated based on the mouse position.
 
+<!-- .RootVisualTarget is listed above -->
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2CompositionController.Cursor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursor)
-* [CoreWebView2CompositionController.CursorChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursorchanged)
-* [CoreWebView2CompositionController.SystemCursorId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.systemcursorid)
-* [CoreWebView2CompositionController.SendMouseInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendmouseinput)
-* [CoreWebView2CompositionController.SendPointerInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendpointerinput)
+* `CoreWebView2CompositionController` Class
+   * [CoreWebView2CompositionController.Cursor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursor)
+   * [CoreWebView2CompositionController.CursorChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursorchanged)
+   * [CoreWebView2CompositionController.SystemCursorId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.systemcursorid)
+   * [CoreWebView2CompositionController.SendMouseInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendmouseinput)
+   * [CoreWebView2CompositionController.SendPointerInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendpointerinput)
+   
 * [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2pointerinfo)
    * [CoreWebView2PointerInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2pointerinfo)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2CompositionController.Cursor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#cursor)
-* [CoreWebView2CompositionController.CursorChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#cursorchanged)
-* [CoreWebView2CompositionController.SendMouseInput Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#sendmouseinput)
-* [CoreWebView2CompositionController.SendPointerInput Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#sendpointerinput)
+* `CoreWebView2CompositionController` Class
+   * [CoreWebView2CompositionController.Cursor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#cursor)
+   * [CoreWebView2CompositionController.CursorChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#cursorchanged)
+   * [CoreWebView2CompositionController.SendMouseInput Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#sendmouseinput)
+   * [CoreWebView2CompositionController.SendPointerInput Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#sendpointerinput)
+
 * [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2pointerinfo)
    * [CoreWebView2PointerInfo Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2pointerinfo)
 
-<!--TODO - not found, omit?
-* `CoreWebView2CompositionController.SystemCursorId` Property
+<!--
+.NET has CompositionController.SystemCursorId member:
+https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.systemcursorid
+WinRT lacks CompositionController.SystemCursorId member:
+https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller
 -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2CompositionController::Cursor property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_cursor)<!--no put-->
-* [ICoreWebView2CompositionController::CursorChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#add_cursorchanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#remove_cursorchanged)
-* [ICoreWebView2CompositionController::SystemCursorId property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_systemcursorid)<!--no put-->
-* [ICoreWebView2CompositionController::SendMouseInput method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#sendmouseinput)
-* [ICoreWebView2CompositionController::SendPointerInput method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#sendpointerinput)
+* `CoreWebView2CompositionController` interface
+   * [ICoreWebView2CompositionController::Cursor property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_cursor)<!--no put-->
+   * [ICoreWebView2CompositionController::CursorChanged event (add](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#add_cursorchanged), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#remove_cursorchanged)
+   * [ICoreWebView2CompositionController::SystemCursorId property (get)](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_systemcursorid)<!--no put-->
+   * [ICoreWebView2CompositionController::SendMouseInput method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#sendmouseinput)
+   * [ICoreWebView2CompositionController::SendPointerInput method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#sendpointerinput)
+    
 * [ICoreWebView2Environment3::CreateCoreWebView2PointerInfo method](/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2pointerinfo)
    * [ICoreWebView2PointerInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2pointerinfo)
 
@@ -2091,6 +2129,34 @@ Receiver:
 * [ICoreWebView2::GetDevToolsProtocolEventReceiver method](/microsoft-edge/webview2/reference/win32/icorewebview2#getdevtoolsprotocoleventreceiver)
    * [ICoreWebView2DevToolsProtocolEventReceiver interface](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver)
    * [ICoreWebView2DevToolsProtocolEventReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceivedeventargs)
+
+---
+
+
+<!-- ====================================================================== -->
+## Managing SmartScreen
+
+<!-- todo: move this section into the above outline structure.  if this is h2, add a "Managing SmartScreen" row to the nav table at top. -->
+
+<!-- this section is from RelNotes 112 -->
+
+The Managing SmartScreen API controls whether SmartScreen is enabled.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Settings`
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Settings`
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isreputationcheckingrequired)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Settings8](/microsoft-edge/webview2/reference/win32/icorewebview2settings8)
+   * [ICoreWebView2Settings8::get_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#get_isreputationcheckingrequired)
+   * [ICoreWebView2Settings8::put_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#put_isreputationcheckingrequired)
 
 ---
 
