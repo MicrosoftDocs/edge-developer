@@ -14,7 +14,6 @@ ms.date: 04/11/2023
 
 <!-- ====================================================================== -->
 ## Performance tool unminifies JavaScript running in out-of-process iframes
-<!-- ## The Performance tool can now unminify JavaScript running in out-of-process iframes -->
 
 <!-- Subtitle: As long as DevTools can load your sourcemaps, you now have unparalleled insight into JavaScript execution within an iframe. -->
 
@@ -35,7 +34,6 @@ See also:
 
 <!-- ====================================================================== -->
 ## CSS Overview tool displays non-simple selectors for quick performance gains
-<!-- ## The CSS Overview tool displays a list of non-simple selectors for quick performance wins -->
 
 <!-- Subtitle: Non-simple selectors can be common culprits for long-running Recalculate Styles events in the Performance tool. Take a quick snapshot in the CSS Overview tool to see your non-simple selectors. -->
 
@@ -50,9 +48,6 @@ You can try to change these selectors so that they are more specific and match f
 - When elements are added to or removed from the DOM.
 - When an element's attributes are changed, such as `class` or `id`.
 - When user input occurs, such as a mouse move or a change of focus, which can affect `:hover` rules.
-
-<!-- terse version:
-To analyze individual CSS selector performance and analyze the impact of your changes, use the **Selector Stats** feature in the **Performance** tool.  To quickly jump from the **Non-simple selectors** section of the **CSS Overview** tool to the **Performance** tool, click the **Performance** button.  In the **Performance** tool, make sure the **Enable advanced rendering instrumentation (slow)** setting is turned on before recording a performance profile. -->
 
 To analyze individual CSS selector performance and analyze the impact of your changes, use the **Selector Stats** feature in the **Performance** tool, as follows:
 
@@ -70,7 +65,7 @@ To analyze individual CSS selector performance and analyze the impact of your ch
 
 1. Click the **Capture settings** (![Capture settings icon](./devtools-112-images/capture-settings-icon.png)) icon.
 
-1. Select the **Enable advanced rendering instrumentation (slow)** checkbox.
+1. Select the **Enable advanced rendering instrumentation (slow)** checkbox:
 
    ![The 'Enable advanced rendering instrumentation' checkbox](./devtools-112-images/enable-advanced-rendering.png)
 
@@ -149,7 +144,7 @@ Before Microsoft Edge 112, the Node icon overlaps the first tool icon when the *
 
 In **Focus Mode**, when the **Activity Bar** is in the vertical orientation, a tool name label is displayed when you hover over an icon or select an icon with the keyboard.  These labels help you learn the icon for each tool in the **Activity Bar**.
 
-Previously, selecting an icon with the keyboard or hovering over an icon with the mouse displayed two labels simultaneously.  This issue has now been fixed; only one label is displayed, depending on which tool you are hovering over with the mouse or selecting with the keyboard:
+Previously, selecting an icon with the keyboard or hovering over an icon with the mouse displayed two labels simultaneously.  This issue has now been fixed; only one label is displayed:
 
 ![A label is displayed when hovering over an icon in the Activity Bar](./devtools-112-images/focus-mode-label-vertical-activity-bar.png)
 
