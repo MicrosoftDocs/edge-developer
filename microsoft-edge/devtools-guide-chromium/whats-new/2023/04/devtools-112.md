@@ -97,7 +97,7 @@ Starting in Microsoft Edge 112, the JSON Viewer now supports code folding.  The 
 
 1. Click the gear<!--no tooltip--> (![JSON Viewer's gear icon](./devtools-112-images/json-viewer-gear-icon.png)) icon in the top right corner, and then select the **Code folding** checkbox.
 
-With code folding turned on, you can now expand and collapse objects and arrays within the JSON you are inspecting:
+With code folding turned on, you can now expand and collapse objects and arrays within the JSON you're inspecting:
 
 ![Code folding in Microsoft Edge's JSON Viewer](./devtools-112-images/json-viewer-code-folding.png)
 
@@ -116,17 +116,17 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Pressing Esc shows or hides Quick View
+#### Pressing Esc shows or entirely hides Quick View
 
-In previous versions of Microsoft Edge, in **Focus Mode**, **Quick View** was always displayed, as either minimized (like clicking the **Collapse** icon) or maximized (like clicking the **Expand** icon).  Pressing **Esc** expanded **Quick View** if it was collapsed, and vice versa.  However, when the **Console** tool was selected in the **Activity Bar**, pressing **Esc** when the **Quick View** was minimized would display a blank view.  In Microsoft Edge 112, this issue has been fixed.
+In previous versions of Microsoft Edge, in **Focus Mode**, **Quick View** was always displayed, as either collapsed or expanded.  Pressing **Esc** expanded **Quick View** if it was collapsed, and vice versa.  However, when the **Console** tool was selected in the **Activity Bar**, pressing **Esc** when the **Quick View** was collapsed displayed a blank view.  In Microsoft Edge 112, this issue has been fixed.
 
-Pressing **Esc** now entirely hides or shows **Quick View**.  If **Quick View** is currently hidden, pressing **Esc** shows **Quick View**, expanded:
+Pressing **Esc** now shows or entirely hides **Quick View**.  If **Quick View** is currently hidden, pressing **Esc** shows **Quick View**, expanded:
 
-![Pressing Esc when Quick View is hidden](./devtools-112-images/focus-mode-esc-shows-quick-view.png)
+![Quick View expanded, by pressing Esc](./devtools-112-images/focus-mode-esc-shows-quick-view.png)
 
 If **Quick View** is currently shown (whether collapsed or expanded), pressing **Esc** entirely hides **Quick View**:
 
-![Pressing Esc when Quick View is shown](./devtools-112-images/focus-mode-esc-hides-quick-view.png)
+![Quick View entirely hidden by pressing Esc, not just collapsed](./devtools-112-images/focus-mode-esc-hides-quick-view.png)
 
 
 <!-- ------------------------------ -->
