@@ -82,8 +82,11 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
-> [!IMPORTANT]
-> WebView2 release package 1.0.1722.32 is deprecated, and has been removed from the listing at NuGet.  Discontinue development with package 1.0.1722.32.  If your WebView2 app uses that package, we recommend that you move to a newer package, such as 1.0.1722.45 or later.
+
+<!-- ------------------------------ -->
+###### SDK 1.0.1722.32 is deprecated
+
+WebView2 SDK 1.0.1722.32 is deprecated, and that package has been removed from the listing at NuGet.  Discontinue development with package 1.0.1722.32.  If your WebView2 app uses that package, we recommend that you move to a newer package, such as WebView2 SDK 1.0.1722.45 or later.
 
 
 <!-- ------------------------------ -->
