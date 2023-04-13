@@ -32,7 +32,7 @@ When hosting the WebView2 control, your app has access to the following features
 
 <!-- maintenance notes: add table rows for any new h2 sections -->
 
-<!-- todo: if "Managing SmartScreen" is an h2 section, add a row for it above
+<!-- 112 todo: if "Managing SmartScreen" is an h2 section, add a row for it above
 | [Managing SmartScreen](#managing-smartscreen) | Controls whether SmartScreen is enabled. |
 -->
 
@@ -333,8 +333,7 @@ See also:
 
 * [CoreWebView2Cookie Class](/dotnet/api/microsoft.web.webview2.core.corewebview2cookie)
 
-* [CoreWebView2CookieList Class](/dotnet/api/microsoft.web.webview2.core.corewebview2cookielist)
-<!-- todo: delete link?  goes to 674 prerelease: https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2cookielist?view=webview2-dotnet-1.0.674-prerelease -->
+<!-- link deleted for CookieList Class. Goes to 674 prerelease: https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2cookielist?view=webview2-dotnet-1.0.674-prerelease -->
 
 * [CoreWebView2CookieManager Class](/dotnet/api/microsoft.web.webview2.core.corewebview2cookiemanager)
 
@@ -346,8 +345,7 @@ See also:
 
 * [CoreWebView2CookieManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2cookiemanager)
 
-<!-- TODO: not found, omit?
-* [CoreWebView2CookieList Class]()
+<!-- Link deleted for [CoreWebView2CookieList Class]()
 GetCookies returns Vector of CoreWebView2Cookie:
 https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2cookiemanager#getcookiesasync
 -->
@@ -550,11 +548,11 @@ See also:
 <!-- ====================================================================== -->
 ###### PermissionKind.WindowManagement
 
-<!-- todo: merge/coordinate this section w/ the above -->
+<!-- 112 todo: merge/coordinate this section w/ the above -->
 
 <!-- this section is from RelNotes 112 -->
 
-The `PermissionKind.WindowManagement` API indicates the kind of a permission request.
+<!-- The `PermissionKind.WindowManagement` API indicates the kind of a permission request.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -572,7 +570,7 @@ The `PermissionKind.WindowManagement` API indicates the kind of a permission req
    * [COREWEBVIEW2_PERMISSION_KIND_WINDOW_MANAGEMENT enum value](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_permission_kind)
 
 ---
-
+-->
 
 <!-- ------------------------------ -->
 #### Context menus
@@ -1010,21 +1008,21 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Controller's script locale
+#### Locale for Javascript
 <!-- 
 #### Controller's JavaScript locale
 #### Locale for JavaScript for controller
 #### Controller's default locale
 #### Locale for controller
 
-todo: better wording of heading?  check wording in API Ref docs, is "script locale" a good sequence of words for in sentence?
+Edited heading
 -->
 
 Allows the host app to set the default locale for all `Intl` JavaScript APIs and other JavaScript APIs that depend on it, such as `Intl.DateTimeFormat()`, which affects string formatting in time/date formats. 
 
 <!-- this section is from RelNotes 111 -->
 
-<!-- todo: Is there an article to cross-link? 
+<!-- Article to cross-link if available
 See also:
 * []()
 -->
@@ -1112,7 +1110,7 @@ Failed:
 
 The SharedBuffer API supports sharing buffers between the WebView2 host app process and WebView2 renderer process, based on shared memory from the OS.
 
-<!-- todo: link to JavaScript Ref?  is there an article to cross-link?
+<!-- Article to cross-link if available
 See also:
 * []()
 * [SharedBufferReceivedEvent class](/microsoft-edge/webview2/reference/javascript/sharedbufferreceivedevent)
@@ -2136,7 +2134,7 @@ Receiver:
 <!-- ====================================================================== -->
 ## Managing SmartScreen
 
-<!-- todo: move this section into the above outline structure.  if this is h2, add a "Managing SmartScreen" row to the nav table at top. -->
+<!-- 112 todo: move this section into the above outline structure.  if this is h2, add a "Managing SmartScreen" row to the nav table at top. -->
 
 <!-- this section is from RelNotes 112 -->
 
