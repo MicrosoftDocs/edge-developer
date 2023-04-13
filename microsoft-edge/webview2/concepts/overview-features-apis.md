@@ -32,10 +32,6 @@ When hosting the WebView2 control, your app has access to the following features
 
 <!-- maintenance notes: add table rows for any new h2 sections -->
 
-<!-- 112 todo: if "Managing SmartScreen" is an h2 section, add a row for it above
-| [Managing SmartScreen](#managing-smartscreen) | Controls whether SmartScreen is enabled. |
--->
-
 
 <!-- ====================================================================== -->
 ## Main classes: Environment, Controller, and Core
@@ -544,33 +540,6 @@ See also:
 
 ---
 
-
-<!-- ====================================================================== -->
-###### PermissionKind.WindowManagement
-
-<!-- 112 todo: merge/coordinate this section w/ the above -->
-
-<!-- this section is from RelNotes 112 -->
-
-<!-- The `PermissionKind.WindowManagement` API indicates the kind of a permission request.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2PermissionKind` Enum
-   * [CoreWebView2PermissionKind.WindowManagement Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2PermissionKind` Enum
-   * [CoreWebView2PermissionKind.WindowManagement Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `COREWEBVIEW2_PERMISSION_KIND` Enum
-   * [COREWEBVIEW2_PERMISSION_KIND_WINDOW_MANAGEMENT enum value](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_permission_kind)
-
----
--->
 
 <!-- ------------------------------ -->
 #### Context menus
@@ -2127,34 +2096,6 @@ Receiver:
 * [ICoreWebView2::GetDevToolsProtocolEventReceiver method](/microsoft-edge/webview2/reference/win32/icorewebview2#getdevtoolsprotocoleventreceiver)
    * [ICoreWebView2DevToolsProtocolEventReceiver interface](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver)
    * [ICoreWebView2DevToolsProtocolEventReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceivedeventargs)
-
----
-
-
-<!-- ====================================================================== -->
-## Managing SmartScreen
-
-<!-- 112 todo: move this section into the above outline structure.  if this is h2, add a "Managing SmartScreen" row to the nav table at top. -->
-
-<!-- this section is from RelNotes 112 -->
-
-The Managing SmartScreen API controls whether SmartScreen is enabled.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Settings`
-   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Settings`
-   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isreputationcheckingrequired)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2Settings8](/microsoft-edge/webview2/reference/win32/icorewebview2settings8)
-   * [ICoreWebView2Settings8::get_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#get_isreputationcheckingrequired)
-   * [ICoreWebView2Settings8::put_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#put_isreputationcheckingrequired)
 
 ---
 
