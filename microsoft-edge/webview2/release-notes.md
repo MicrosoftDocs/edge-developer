@@ -82,6 +82,9 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
+> [!IMPORTANT]
+> **Breaking Change**: WebView2 release package 1.0.1722.32 is deprecated, and is removed with the next release.  Discontinue development with package 1.0.1722.32.  If your WebView2 app uses the package, we recommend that you move to a newer package.
+
 
 <!-- ------------------------------ -->
 ###### Promotions
@@ -2896,6 +2899,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 *  Visual Hosting APIs are now Generally Available.
 
 ###### Promotions
+
+<!-- todo: change version number in links to match heading? -->
 
 *  The following experimental APIs are now promoted to Stable.
    *  [DPI support](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived) related APIs
