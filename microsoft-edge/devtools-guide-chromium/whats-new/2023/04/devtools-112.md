@@ -52,7 +52,7 @@ The **CSS Overview** tool has a new **Non-simple selectors** section, which disp
 
 ![The new, Non-simple selectors list in the CSS Overview tool](./devtools-112-images/non-simple-selectors-in-css-overview.png)
 
-This is a list of selectors that could possibly reduce performance.  Use the **Performance** tool's Selector Stats feature to determine whether these selectors are actually reducing performance.
+This is a list of selectors that could possibly reduce performance.  To determine whether these selectors are actually reducing performance, use the **Selector Stats** feature in the **Performance** tool.
 
 You can try to change these selectors so that they are more specific and match fewer elements, reducing the amount of time the browser takes to calculate styles in the following cases:
 
