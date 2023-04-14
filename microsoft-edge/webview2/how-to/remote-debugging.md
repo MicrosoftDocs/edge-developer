@@ -20,9 +20,7 @@ Remote debugging is necessary for this platform because currently, the built-in 
 
 Attach Microsoft Edge DevTools remotely to a WebView2 WinUI 2 (UWP) app as follows:
 
-1.  Install [Microsoft Edge Canary Channel](https://www.microsoftedgeinsider.com/download/canary).
-
-1.  In Microsoft Edge Canary, go to to `edge://inspect` and verify that the **Inspect with Edge Developer Tools** page exists in your version of the browser:
+1.  In Microsoft Edge, go to `edge://inspect`.  The **Inspect with Edge Developer Tools** page opens:
 
     ![DevTools Inspect utility page](./remote-debugging-images/inspect-devtools-page-supported.png)
 
@@ -46,7 +44,7 @@ Attach Microsoft Edge DevTools remotely to a WebView2 WinUI 2 (UWP) app as follo
 
 1.  Install [Remote Tools for Microsoft Edge](https://www.microsoft.com/store/productId/9P6CMFV44ZLT) from the Microsoft Store.
 
-1.  In Microsoft Edge Canary, go to the Device Portal URL that you previously noted.  Verify that the **Confirm security settings** page is loaded (in the **Windows Device Portal** tab):
+1.  In Microsoft Edge, go to the Device Portal URL that you previously noted.  Verify that the **Confirm security settings** page is loaded (in the **Windows Device Portal** tab):
 
     ![The 'Confirm security settings' page in the 'Windows Device Portal' tab](./remote-debugging-images/open-device-portal.png)
 
