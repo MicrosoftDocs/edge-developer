@@ -1103,6 +1103,10 @@
           href: webview2/index.md
           displayName: 
 
+        - name: Intro diagrams about WebView2
+          href: webview2/concepts/intro-diagrams.md
+          displayName:
+
         - name: Overview of WebView2 features and APIs
           href: webview2/concepts/overview-features-apis.md
           displayName:
