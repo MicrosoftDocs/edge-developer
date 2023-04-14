@@ -17,7 +17,7 @@ Publishing your Progressive Web App (PWA) to the [Microsoft Store](/windows/uwp/
 | **Discoverability** | Users naturally look for apps in the app store.  When you publish to the Microsoft Store, millions of Windows users can discover your PWA alongside other Windows apps.  The Store showcases apps through categories, curated collections, and more.  App discovery portals provide an easy browsing and shopping experience for potential users of your app.  You can even enhance your Store listing with screenshots, a hero image, and video trailers - see [App screenshots, images, and trailers](/windows/apps/publish/publish-your-app/screenshots-and-images). |
 | **Trustworthiness** | Windows customers know they can trust their Microsoft Store purchases and downloads, because they adhere to the rigorous Microsoft [quality and safety standards](/legal/windows/agreements/store-policies). |
 | **Easy install** | The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 or later apps](https://www.microsoft.com/store/apps/windows). |
-| **App analytics** | The [Windows Partner Center dashboard](/windows/uwp/publish/index) provides you with [detailed analytics](/windows/uwp/publish/analytics) about your app health, usage, and more. |
+| **App analytics** | The [Microsoft Partner Center dashboard](/windows/uwp/publish/index) provides [detailed analytics](/windows/uwp/publish/analytics) about your app's health, usage, and more. |
 
 To publish your PWA to the Microsoft Store, no code changes are required.  Instead, you create an app reservation, package your PWA, and submit your package to the Store.  The following sections explain the steps.
 
@@ -25,39 +25,31 @@ To publish your PWA to the Microsoft Store, no code changes are required.  Inste
 <!-- ====================================================================== -->
 ## Create an app reservation
 
-[Windows Partner Center](https://partner.microsoft.com/dashboard/windows/overview) is the hub for you to submit your app to the Microsoft Store.
+To submit your app to the Microsoft Store, you use [Microsoft Partner Center](https://partner.microsoft.com/dashboard/windows/overview).
 
 To create an app reservation:
 
-1.  To display your enrolled programs:
-    1.  Sign into Windows Partner Center with your Microsoft account and go to the [Partner Center Dashboard](https://partner.microsoft.com/dashboard/home).
-    1.  Navigate to **Windows & Xbox**.
-        *   If **Windows & Xbox** is displayed, your app is already enrolled.
-        *   If **Windows & Xbox** isn't displayed, select **Add program**.
+1.  Before you can create an app reservation, you must have a **personal** Microsoft account (not a work Microsoft account or a school Microsoft account) that is enrolled in the Windows Developer Program.
+    1.  If you don't already have one, create a personal Microsoft account at [account.microsoft.com](https://account.microsoft.com/).
+    1.  Enroll in the Windows Developer program, by following the steps in [Open a developer account in Partner Center](/windows/apps/publish/partner-center/open-a-developer-account).
 
-    ![Add a program in the Windows Partner Center dashboard](../media/windows-partner-center-add-program.msft.png)
+1.  Once your account is enrolled in the app developer program, follow these steps to create an app reservation:
+    1.  Go to the [Partner Center Dashboard](https://partner.microsoft.com/dashboard/home). Sign in with the account you enrolled.
+    1.  Under **Workspaces**, select **Apps and games**.  The **Apps and games | Overview** page appears.
+    1.  Select **New product** > **MSIX or PWA app**.
+    1.  When prompted, enter a name for your reservation, and then select **Reserve product name**.
 
-1.  To enroll in the developer program:
-    1.  Navigate to **Windows & Xbox**.
-    1.  Select **Get started**.
-    1.  Follow the prompts.
-1.  Now, your account is enrolled in the app developer program. To create an app reservation:
-    1.  Navigate to **Windows & Xbox**.
-    1.  Select **Overview** > **Create a new app**.
-    1.  Type the name of your app in the prompt.
-    1.  Select `Reserve product name`.
-
-    ![Create an app reservation in Windows Partner Center](../media/windows-partner-center-create-app.msft.png)
+    ![Create an app reservation on Microsoft Partner Center](../media/windows-partner-center-new-product.png)
 
 1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, select **Product management** > **Product Identity**.
 
-    ![Copy your publisher information from Windows Partner Center](../media/windows-partner-center-publisher-info.msft.png)
+    ![Copy your publisher information from Microsoft Partner Center](../media/windows-partner-center-publisher-info.msft.png)
     <!-- lightbox justified because large detailed image -->
 
 1.  Copy and save the following values.
     *   **Package ID**
     *   **Publisher ID**
-    *   **Publisher Display Name**
+    *   **Publisher display name**
 
 
 <!-- ====================================================================== -->
@@ -81,18 +73,18 @@ To generate an app package:
 1.  Select **Generate**.
 1.  To download your Windows app package, select **Download**.
 
-Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.  For more information, see [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md).<!-- changing master to main doesn't work 5/19/2022 -->
+Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.  For more information, see [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)<!-- changing master to main doesn't work 5/19/2022 -->
 
 
 ### Submit your app package to the Store
 
 To submit your app to the Microsoft Store:
 
-1.  Go to [Windows Partner Center](https://partner.microsoft.com/dashboard/windows/overview)
+1.  Go to [Microsoft Partner Center](https://partner.microsoft.com/dashboard/windows/overview).
 1.  Select your app.
-1.  Select **Start your Submission**.
+1.  Click the **Start your submission** button.
 
-    ![Start a new app submission on Windows Partner Center](../media/windows-partner-center-start-submission.msft.png)
+    ![Start a new app submission on Microsoft Partner Center](../media/windows-partner-center-start-submission.msft.png)
 
 1.  When you're prompted, provide information about your app, such as pricing and age rating.
 

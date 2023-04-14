@@ -57,4 +57,4 @@ As a general rule, if you find a CSS selector that took the browser a long time 
 
 * [Get started analyzing runtime performance](./index.md) - An introduction to analyzing runtime performance in DevTools.
 * [Performance features reference](./reference.md) - Covers many of the features in the **Performance** tool.
-<!-- TO-DO, add link to Patrick's blog post -->
+* [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/)
