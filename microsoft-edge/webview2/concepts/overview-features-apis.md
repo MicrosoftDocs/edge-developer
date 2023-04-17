@@ -545,10 +545,7 @@ See also:
 
 * [CoreWebView2Frame.PermissionRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.permissionrequested)
 
-<!-- from RelNotes 111: -->
-
 * [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
-   <!-- * [CoreWebView2PermissionKind.WindowManagement Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind) -->
 
 * `CoreWebView2PermissionRequestedEventArgs` Event
    * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.savesinprofile)   
@@ -1014,11 +1011,12 @@ In WebView2 you can you can set a [Favicon](https://developer.mozilla.org/docs/G
 
 
 <!-- ------------------------------ -->
-#### Tracking prevention
+#### Security and privacy
 
-Enables the host app to control the level of tracking prevention of the WebView2 control that's associated with the user profile.
 
+<!-- ------------------------------ -->
 <!-- from RelNotes 111 -->
+Tracking prevention enables the host app to control the level of tracking prevention of the WebView2 control that's associated with the user profile.
 
 <!-- 
 there's not a regular article about tracking prevention, to cross-link
@@ -1068,6 +1066,34 @@ See also:
   * `COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_BALANCED`
   * `COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_STRICT`
 
+---
+
+
+<!-- ------------------------------ -->
+<!-- from RelNotes 112 -->
+The Managing SmartScreen API includes the `IsReputationCheckingRequired` property, which controls whether SmartScreen is enabled.
+
+<!-- 
+todo: is there a regular article about Managing Smartscreen, to cross-link?
+See also:
+* []()
+-->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Settings`
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Settings`
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isreputationcheckingrequired)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Settings8](/microsoft-edge/webview2/reference/win32/icorewebview2settings8)
+   * [ICoreWebView2Settings8::get_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#get_isreputationcheckingrequired)
+   * [ICoreWebView2Settings8::put_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#put_isreputationcheckingrequired)
 ---
 
 
@@ -2070,32 +2096,6 @@ Receiver:
    * [ICoreWebView2DevToolsProtocolEventReceiver interface](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver)
    * [ICoreWebView2DevToolsProtocolEventReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceivedeventargs)
 
----
-
-
-<!-- ====================================================================== -->
-## Managing SmartScreen
-
-<!-- 112 todo: move this section into the above outline structure.  if this is h2, add a "Managing SmartScreen" row to the nav table at top. -->
-
-<!-- this section is from RelNotes 112 -->
-The Managing SmartScreen API controls whether SmartScreen is enabled.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Settings`
-   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Settings`
-   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isreputationcheckingrequired)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2Settings8](/microsoft-edge/webview2/reference/win32/icorewebview2settings8)
-   * [ICoreWebView2Settings8::get_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#get_isreputationcheckingrequired)
-   * [ICoreWebView2Settings8::put_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#put_isreputationcheckingrequired)
 ---
 
 
