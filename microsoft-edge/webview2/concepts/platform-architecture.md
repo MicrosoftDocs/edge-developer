@@ -1,6 +1,6 @@
 ---
 title: Architecture of the WebView2 platform
-description: Host web content in your Win32, .NET, UWP apps with the Microsoft Edge WebView2 control.
+description: Which parts of WebView2 reside on the Dev and user machine.  How native code and controls interact with web code and the WebView2 control.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -48,11 +48,11 @@ Details of Distribute the Runtime:
 
 Details of the User machine:
 *  Host app
-   *  WebView2 native-side code
-   *  WebView2 web-side code
+   *  WebView2 native code
+   *  WebView2 web code
    *  WebView2 control instances
-   *  Non-WebView2 native-side code
-   *  Non-WebView2 web-side code
+   *  Non-WebView2 native code
+   *  Non-WebView2 web code
    *  Native control instances
 *  Runtime
 
@@ -134,22 +134,22 @@ Runtime (for Release SDK) - WebView2Script package (JavaScript APIs)
 Browser (for Prerelease SDK) - WebView2Script package (JavaScript APIs)
 
 
-You periodically download the latest SDK from NuGet.  NuGet links are in [Release Notes for the WebView2 SDK](./release-notes.md).
+You periodically download the latest SDK from NuGet.  NuGet links are in [Release Notes for the WebView2 SDK](../release-notes.md).
 
 The SDK includes the JavaScript API, which is in the `WebView2Script` package.
 
 See also:
-* [WebView2 API Reference](./webview2-api-reference.md)
+* [WebView2 API Reference](../webview2-api-reference.md)
 
 
 <!-- ====================================================================== -->
 ## Design architecture of a WebView2 app
 
 A host app contains the following categories of code and components:
-*  Native-side code calls platform APIs and WebView2 APIs
-*  WebView2 control instance
-*  Native-side code calls platform APIs and WebView2 APIs
-*  Web-side JavaScript code calls WebView2Script APIs & exposed native-side APIs
+*  Native code calls platform APIs and WebView2 APIs.
+*  WebView2 control instance.
+*  Native code calls platform APIs and WebView2 APIs.
+*  Web (JavaScript) code calls WebView2Script APIs & exposed native APIs.
 
 
 <!-- ------------------------------ -->
@@ -158,14 +158,14 @@ A host app contains the following categories of code and components:
 ![Design architecture of a WebView2 app](./platform-architecture-images/app-design.png)
 
 Categories of code:
-*  Native-side WebView2 code, calls WebView2 APIs and platform APIs.
-*  Web-side code (JavaScript), calls WebView2Script APIs & exposed native-side APIs.
-*  Native-side non-WebView2 code, calls platform APIs and native controls.
-*  Web-side non-WebView2 code.
+*  Native WebView2 code, calls WebView2 APIs and platform APIs.
+*  Web code (JavaScript), calls WebView2Script APIs & exposed native APIs.
+*  Native non-WebView2 code, calls platform APIs and native controls.
+*  Non-WebView2 web code (JavaScript).
 
 Two-way code:
-*  Call web-side code from native-side code
-*  Call native-side code from web-side code
+*  Call web code (JavaScript) from native code.
+*  Call native code from web code (JavaScript).
 
 
 <!-- ====================================================================== -->
@@ -212,7 +212,7 @@ The above approaches are listed in the same sequence as in the [Download the Web
 _Your app's installer_ means your app's installer/updater, which can be separate from your app, or a part of your app.
 
 See also:
-* [Understanding the options at the Runtime download page](./concepts/distribution.md#understanding-the-options-at-the-runtime-download-page) in _Distribute your app and the WebView2 Runtime_.
+* [Understanding the options at the Runtime download page](./distribution.md#understanding-the-options-at-the-runtime-download-page) in _Distribute your app and the WebView2 Runtime_.
 
 
 <!-- ====================================================================== -->
@@ -240,9 +240,9 @@ The WebView2 control acts as an intermediary for communication between the host 
 
 
 See also:
-* [Understanding the options at the Runtime download page](./concepts/distribution.md#understanding-the-options-at-the-runtime-download-page) in _Distribute your app and the WebView2 Runtime_.
-* [Prerelease and release SDKs for WebView2](./concepts/versioning.md)
-* [Distribute your app and the WebView2 Runtime](./concepts/distribution.md)
+* [Understanding the options at the Runtime download page](./distribution.md#understanding-the-options-at-the-runtime-download-page) in _Distribute your app and the WebView2 Runtime_.
+* [Prerelease and release SDKs for WebView2](./versioning.md)
+* [Distribute your app and the WebView2 Runtime](./distribution.md)
 
 
 <!-- ====================================================================== -->
@@ -257,7 +257,7 @@ To distribute your prerelease app to your test machine:
 * On your test machine, install a preview channel of Microsoft Edge.
 
 See also:
-* [Understand the different WebView2 SDK versions](./concepts/versioning.md) - Either use a prerelease SDK with a preview channel of Microsoft Edge, or use a release SDK with the WebView2 Runtime.
+* [Understand the different WebView2 SDK versions](./versioning.md) - Either use a prerelease SDK with a preview channel of Microsoft Edge, or use a release SDK with the WebView2 Runtime.
 
 
 <!-- ====================================================================== -->
@@ -273,7 +273,7 @@ There are several ways to distribute your app and the Runtime to users.  See [Wa
 
 
 See also:
-* [Understand the different WebView2 SDK versions](./concepts/versioning.md) - Either use a prerelease SDK with a preview channel of Microsoft Edge, or use a release SDK with the WebView2 Runtime.
+* [Understand the different WebView2 SDK versions](./versioning.md) - Either use a prerelease SDK with a preview channel of Microsoft Edge, or use a release SDK with the WebView2 Runtime.
 
 
 <!-- ====================================================================== -->
@@ -294,7 +294,7 @@ todo
 *  Docs - the present article is the main page for WebView2 docs. <!--[Introduction to Microsoft Edge WebView2](./index.md)-->
 *  Runtime installer download page - see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section).
 *  NuGet SDK package download site - see [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) at NuGet.org.
-*  GitHub Repos and support - see [Contact the WebView2 Team](./contact.md).  Direct links:
+*  GitHub Repos and support - see [Contact the WebView2 Team](../contact.md).  Direct links:
    *  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - contains completed Getting Started article projects (minimal code) and code-rich Samples.
    *  [WebView2Announcements repo](https://github.com/MicrosoftEdge/WebView2Announcements)
    *  [WebView2Feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
@@ -309,9 +309,9 @@ todo
 <!-- ====================================================================== -->
 ## See also
 
-* [Overview of WebView2 features and APIs](concepts/overview-features-apis.md)
-* [Getting Started tutorials](get-started/get-started.md)
-* [Distribute your app and the WebView2 Runtime](concepts/distribution.md)
+* [Overview of WebView2 features and APIs](./overview-features-apis.md)
+* [Getting Started tutorials](../get-started/get-started.md)
+* [Distribute your app and the WebView2 Runtime](./distribution.md)
 
 developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
