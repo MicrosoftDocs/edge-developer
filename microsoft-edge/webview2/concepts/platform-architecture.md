@@ -1,5 +1,5 @@
 ---
-title: Intro diagrams about WebView2
+title: Architecture of the WebView2 platform
 description: Host web content in your Win32, .NET, UWP apps with the Microsoft Edge WebView2 control.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,31 +7,26 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
-ms.date: 04/06/2023
+ms.date: 04/17/2023
 ---
-# Intro diagrams about WebView2
+# Architecture of the WebView2 platform
+
+To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.  The following diagram shows the high-level WebView2 components on your development machine and user machines.
+
+![Full diagram of WebView2](../index-images/full-diagram.png)
+<!-- caution: shared png; owned by index.md, also linked to by platform-architecture.md -->
+
+Developing a WebView2 app involves software residing in the following places:
+
+| Location | Description |
+|---|---|
+| Dev machine | You use a Visual Studio project that includes the WebView2 SDK.  The SDK includes the WebView2 Runtime, which is an embedded web browser component used for the WebView2 control instances in your host app. |
+| Distributing the app and Runtime | There are several ways to deliver the always up-to-date Evergreen version of the WebView2 Runtime to user machines, with several levels of Internet connectivity supported.  Some scenarios benefit from distributing a specific, fixed-version WebView2 Runtime. |
+| User machine | Your host app on user machines includes instances of the WebView2 control, which uses the WebView2 Runtime. |
+| Resources | The present documentation; the WebView2Samples repo including basic Getting Started WebView2 projects and more full-featured Sample projects; the WebView2Announcements repo; and the WebView2Feedback repo. |
 
 
-<!-- ====================================================================== -->
-## High-level view of app development that includes WebView2 control instances
-
-Developing a WebView2 app has the following high-level areas:
-*  Dev machine
-*  Distribute the app and Runtime
-*  User machine
-*  Resources
-
-
-<!-- ------------------------------ -->
-#### Diagram: Full diagram of WebView2
-
-![Full diagram of WebView2](./index-images/full-diagram.png)
-
-Main boxes in the full diagram of WebView2:
-*  Dev machine
-*  Distribute the Runtime
-*  User machine
-*  Resources
+todo: like the above table, talk through each box of the full diagram:
 
 Details of the Dev machine:
 *  Visual Studio project
@@ -63,7 +58,6 @@ Details of the User machine:
 
 Resources include:
 *  Docs
-*  Support 
 *  Samples repo
 *  Announcements repo
 *  Feedback repo
@@ -96,7 +90,7 @@ The WebView2 control, WebView2 SDK, and WebView2 Runtime have the following role
 <!-- ------------------------------ -->
 #### Diagram: Relationship between the WebView2 control, SDK, and Runtime
 
-![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./index-images/control-sdk-runtime.png)
+![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./platform-architecture-images/control-sdk-runtime.png)
 
 Control:
 *  WebView2 control - in the app layout; hosts the Runtime.
@@ -115,7 +109,7 @@ Runtime:
 <!-- ------------------------------ -->
 #### Diagram: WebView2 control, Runtime, and SDK
 
-![WebView2 control, Runtime, and SDK](./index-images/control-runtime-sdk.png)
+![WebView2 control, Runtime, and SDK](./platform-architecture-images/control-runtime-sdk.png)
 
 
 This diagram shows the following outline:
@@ -161,7 +155,7 @@ A host app contains the following categories of code and components:
 <!-- ------------------------------ -->
 #### Diagram: Design architecture of a WebView2 app
 
-![Design architecture of a WebView2 app](./index-images/app-design.png)
+![Design architecture of a WebView2 app](./platform-architecture-images/app-design.png)
 
 Categories of code:
 *  Native-side WebView2 code, calls WebView2 APIs and platform APIs.
@@ -183,7 +177,7 @@ Here are the differences between the Dev machine and User machine, for which com
 <!-- ------------------------------ -->
 #### Diagram: App on the Development machine and user machine
 
-![App on the Development machine and user machine](./index-images/dev-side-user-side.png)
+![App on the Development machine and user machine](./platform-architecture-images/dev-side-user-side.png)
 
 | Component | Dev machine | User machine |
 |---|---|---|
@@ -204,7 +198,7 @@ There are several ways to distribute the WebView2 Runtime with your app:
 <!-- ------------------------------ -->
 #### Diagram: Four approaches to distribute the WebView2 Runtime
 
-![Diagram: Four approaches to distribute the WebView2 Runtime](./index-images/distribute-runtime.png)
+![Diagram: Four approaches to distribute the WebView2 Runtime](./platform-architecture-images/distribute-runtime.png)
 
 | Name of distribution approach | Description | Notes |
 |---|---|---|
@@ -230,7 +224,7 @@ The WebView2 control acts as an intermediary for communication between the host 
 <!-- ------------------------------ -->
 #### Diagram: Host app, WebView2 control, and HTTP server
 
-![Host app, WebView2 control, and HTTP server](./index-images/hostapp-wv2ctrl-httpserver.png)
+![Host app, WebView2 control, and HTTP server](./platform-architecture-images/hostapp-wv2ctrl-httpserver.png)
 
 
 <!-- ====================================================================== -->
@@ -298,10 +292,9 @@ todo
 ## Resources
 
 *  Docs - the present article is the main page for WebView2 docs. <!--[Introduction to Microsoft Edge WebView2](./index.md)-->
-*  Support - see [Contact the WebView2 Team](./contact.md).
 *  Runtime installer download page - see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section).
 *  NuGet SDK package download site - see [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) at NuGet.org.
-*  GitHub Repos
+*  GitHub Repos and support - see [Contact the WebView2 Team](./contact.md).  Direct links:
    *  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - contains completed Getting Started article projects (minimal code) and code-rich Samples.
    *  [WebView2Announcements repo](https://github.com/MicrosoftEdge/WebView2Announcements)
    *  [WebView2Feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
@@ -310,7 +303,7 @@ todo
 <!-- ------------------------------ -->
 #### Diagram: Resources
 
-![Diagram: Resources](./index-images/resources.png)
+![Diagram: Resources](./platform-architecture-images/resources.png)
 
 
 <!-- ====================================================================== -->

@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
-ms.date: 04/06/2023
+ms.date: 04/17/2023
 ---
 # Introduction to Microsoft Edge WebView2
 
@@ -65,60 +65,23 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 
 <!-- ====================================================================== -->
-## High-level view of app development that includes WebView2 control instances
+## Architecture of the WebView2 platform
 
-Developing a WebView2 app has the following high-level areas:
-*  Dev machine
-*  Distribute the app and Runtime
-*  User machine
-*  Resources
-
-
-<!-- ------------------------------ -->
-#### Diagram: Full diagram of WebView2
+To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.  The following diagram shows the high-level WebView2 components on your development machine and user machines.
 
 ![Full diagram of WebView2](./index-images/full-diagram.png)
+<!-- caution: shared png; owned by index.md, also linked to by platform-architecture.md -->
 
-Main boxes in the full diagram of WebView2:
-*  Dev machine
-*  Distribute the Runtime
-*  User machine
-*  Resources
+Developing a WebView2 app involves software residing in the following places:
 
-Details of the Dev machine:
-*  Visual Studio project
-   *  Layout designer
-      *  WebView2 control instances
-      *  Native control instances
-   *  SDK
-      *  Platform APIs
-      *  `AddHostObjectToScript`
-      *  JavaScript APIs (WebView2Script package)
-*  Runtime
+| Location | Description |
+|---|---|
+| Dev machine | You use a Visual Studio project that includes the WebView2 SDK.  The SDK includes the WebView2 Runtime, which is an embedded web browser component used for the WebView2 control instances in your host app. |
+| Distributing the app and Runtime | There are several ways to deliver the always up-to-date Evergreen version of the WebView2 Runtime to user machines, with several levels of Internet connectivity supported.  Some scenarios benefit from distributing a specific, fixed-version WebView2 Runtime. |
+| User machine | Your host app on user machines includes instances of the WebView2 control, which uses the WebView2 Runtime. |
+| Resources | The present documentation; the WebView2Samples repo including basic Getting Started WebView2 projects and more full-featured Sample projects; the WebView2Announcements repo; and the WebView2Feedback repo. |
 
-Details of Distribute the Runtime:
-*  Evergreen
-   *  Link to the Evergreen Runtime bootstrapper
-   *  Package the Evergreen Runtime bootstrapper
-   *  Package the Evergreen Runtime standalone installer
-*  Package a fixed-version Runtime
-
-Details of the User machine:
-*  Host app
-   *  WebView2 native-side code
-   *  WebView2 web-side code
-   *  WebView2 control instances
-   *  Non-WebView2 native-side code
-   *  Non-WebView2 web-side code
-   *  Native control instances
-*  Runtime
-
-Resources include:
-*  Docs
-*  Support 
-*  Samples repo
-*  Announcements repo
-*  Feedback repo
+For details, see [Architecture of the WebView2 platform](./concepts/platform-architecture.md).
 
 
 <!-- ====================================================================== -->
