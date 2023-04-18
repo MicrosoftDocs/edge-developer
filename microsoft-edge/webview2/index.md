@@ -135,7 +135,7 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
-* [Intro diagrams about WebView2](./concepts/intro-diagrams.md)
+* [Architecture of the WebView2 platform](./concepts/platform-architecture.md)
 * [Overview of WebView2 features and APIs](./concepts/overview-features-apis.md)
 * [Getting Started tutorials](get-started/get-started.md)
 * [Distribute your app and the WebView2 Runtime](concepts/distribution.md)
