@@ -1107,8 +1107,8 @@
           href: webview2/concepts/overview-features-apis.md
           displayName:
 
-        - name: Architecture of the WebView2 platform
-          href: webview2/concepts/platform-architecture.md
+        - name: Overview of the components of the WebView2 platform
+          href: webview2/concepts/platform-components.md
           displayName:
 
         - name: Differences between Microsoft Edge and WebView2

@@ -1,5 +1,5 @@
 ---
-title: Architecture of the WebView2 platform
+title: Overview of the components of the WebView2 platform
 description: Which parts of WebView2 reside on the Dev and user machine.  How native code and controls interact with web code and the WebView2 control.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,12 +9,14 @@ ms.localizationpriority: high
 ms.technology: webview
 ms.date: 04/17/2023
 ---
-# Architecture of the WebView2 platform
+# Overview of the components of the WebView2 platform
+<!-- todo: propagate the title.   rename filename to platform-components.md -->
 
 To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.  The following diagram shows the high-level WebView2 components on your development machine and user machines.
 
 ![Full diagram of WebView2](../index-images/full-diagram.png)
 <!-- caution: shared png; owned by index.md, also linked to by platform-architecture.md -->
+<!-- todo: ask a.l. about "-side" term'y in industry like in TOC addHost -->
 
 Developing a WebView2 app involves software residing in the following places:
 
@@ -90,7 +92,7 @@ The WebView2 control, WebView2 SDK, and WebView2 Runtime have the following role
 <!-- ------------------------------ -->
 #### Diagram: Relationship between the WebView2 control, SDK, and Runtime
 
-![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./platform-architecture-images/control-sdk-runtime.png)
+![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./platform-components-images/control-sdk-runtime.png)
 
 Control:
 *  WebView2 control - in the app layout; hosts the Runtime.
@@ -109,7 +111,7 @@ Runtime:
 <!-- ------------------------------ -->
 #### Diagram: WebView2 control, Runtime, and SDK
 
-![WebView2 control, Runtime, and SDK](./platform-architecture-images/control-runtime-sdk.png)
+![WebView2 control, Runtime, and SDK](./platform-components-images/control-runtime-sdk.png)
 
 
 This diagram shows the following outline:
@@ -155,7 +157,7 @@ A host app contains the following categories of code and components:
 <!-- ------------------------------ -->
 #### Diagram: Design architecture of a WebView2 app
 
-![Design architecture of a WebView2 app](./platform-architecture-images/app-design.png)
+![Design architecture of a WebView2 app](./platform-components-images/app-design.png)
 
 Categories of code:
 *  Native WebView2 code, calls WebView2 APIs and platform APIs.
@@ -177,7 +179,7 @@ Here are the differences between the Dev machine and User machine, for which com
 <!-- ------------------------------ -->
 #### Diagram: App on the Development machine and user machine
 
-![App on the Development machine and user machine](./platform-architecture-images/dev-side-user-side.png)
+![App on the Development machine and user machine](./platform-components-images/dev-side-user-side.png)
 
 | Component | Dev machine | User machine |
 |---|---|---|
@@ -198,7 +200,7 @@ There are several ways to distribute the WebView2 Runtime with your app:
 <!-- ------------------------------ -->
 #### Diagram: Four approaches to distribute the WebView2 Runtime
 
-![Diagram: Four approaches to distribute the WebView2 Runtime](./platform-architecture-images/distribute-runtime.png)
+![Diagram: Four approaches to distribute the WebView2 Runtime](./platform-components-images/distribute-runtime.png)
 
 | Name of distribution approach | Description | Notes |
 |---|---|---|
@@ -224,7 +226,7 @@ The WebView2 control acts as an intermediary for communication between the host 
 <!-- ------------------------------ -->
 #### Diagram: Host app, WebView2 control, and HTTP server
 
-![Host app, WebView2 control, and HTTP server](./platform-architecture-images/hostapp-wv2ctrl-httpserver.png)
+![Host app, WebView2 control, and HTTP server](./platform-components-images/hostapp-wv2ctrl-httpserver.png)
 
 
 <!-- ====================================================================== -->
@@ -303,7 +305,7 @@ todo
 <!-- ------------------------------ -->
 #### Diagram: Resources
 
-![Diagram: Resources](./platform-architecture-images/resources.png)
+![Diagram: Resources](./platform-components-images/resources.png)
 
 
 <!-- ====================================================================== -->
