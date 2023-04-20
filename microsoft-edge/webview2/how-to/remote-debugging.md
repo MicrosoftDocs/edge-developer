@@ -124,7 +124,7 @@ Attach Microsoft Edge DevTools remotely to a Hololens 2 WebView2 WinUI 2 (UWP) a
 
 1. Verify that you can successfully connect, so that your debuggable WebView2 control, named **Edge**, is listed under your machine name:
 
-    ![Connect to WebView2](./remote-debugging-images/connect-to-webview2-hololens.png)
+    ![Connect to WebView2 on Hololens 2](./remote-debugging-images/connect-to-webview2-hololens.png)
 
 1. Follow step 17 under [Debugging desktop WebView2 WinUI 2 (UWP) apps](#debugging-desktop-webview2-winui-2-uwp-apps).
 
