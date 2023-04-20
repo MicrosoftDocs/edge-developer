@@ -20,9 +20,7 @@ Remote debugging is necessary for this platform because currently, the built-in 
 
 Attach Microsoft Edge DevTools remotely to a desktop WebView2 WinUI 2 (UWP) app as follows:
 
-1.  Install [Microsoft Edge Canary Channel](https://www.microsoftedgeinsider.com/download/canary).
-
-1.  In Microsoft Edge Canary, go to to `edge://inspect` and verify that the **Inspect with Edge Developer Tools** page exists in your version of the browser:
+1.  In Microsoft Edge, go to `edge://inspect`.  The **Inspect with Edge Developer Tools** page opens:
 
     ![DevTools Inspect utility page](./remote-debugging-images/inspect-devtools-page-supported.png)
 
@@ -46,7 +44,7 @@ Attach Microsoft Edge DevTools remotely to a desktop WebView2 WinUI 2 (UWP) app 
 
 1.  Install [Remote Tools for Microsoft Edge](https://www.microsoft.com/store/productId/9P6CMFV44ZLT) from the Microsoft Store.
 
-1.  In Microsoft Edge Canary, go to the Device Portal URL that you previously noted.  Verify that the **Confirm security settings** page is loaded (in the **Windows Device Portal** tab):
+1.  In Microsoft Edge, go to the Device Portal URL that you previously noted.  Verify that the **Confirm security settings** page is loaded (in the **Windows Device Portal** tab):
 
     ![The 'Confirm security settings' page in the 'Windows Device Portal' tab](./remote-debugging-images/open-device-portal.png)
 
@@ -64,21 +62,19 @@ Attach Microsoft Edge DevTools remotely to a desktop WebView2 WinUI 2 (UWP) app 
 
     To enable remote debugging, two environment variables must be set in your project.  These variables must be set before creating the `CoreWebView2` instance, and before either setting the `WebView2.Source` property or calling the `WebView2.EnsureCoreWebView2Async` method.
 
-    Set the following variables:
+    Set the following variable:
 
     ```
     "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--enable-features=msEdgeDevToolsWdpRemoteDebugging"
-    "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1"
     ```
     
-    For example, if you're using the [WebView2 Sample UWP app](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp), you can set the environment variables by adding the following lines in the `Browser.xaml.cs` file:
+    For example, if you're using the [WebView2 Sample UWP app](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp), you can set the environment variables by adding the following line in the `Browser.xaml.cs` file:
     
     ```csharp
     Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--enable-features=msEdgeDevToolsWdpRemoteDebugging");
-    Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1");
     ```
 
-    The lines are numbered 33 and 34 in this screenshot, in the `Browser()` constructor, below an `#endif` that wraps an existing `SetEnvironmentVariable` statement:
+    The line is numbered 33 in this screenshot, in the `Browser()` constructor, below an `#endif` that wraps an existing `SetEnvironmentVariable` statement:
 
     ![Browser Arguments Remote Debugging](./remote-debugging-images/browser-arguments-remote-debugging.png)
 
