@@ -32,9 +32,9 @@ New APIs are introduced in phases as follows:
 
 | API status | Description |
 |---|---|
-| _Experimental APIs_ | Experimental APIs in a Prerelease SDK. |
-| _Stable APIs_ | _Promoted to Stable_ means promoted from Experimental APIs to to Stable APIs in a Prerelease SDK.  Capital 'S' means Stable status in a Prerelease SDK. |
-| _Release APIs_ | _Promoted to Release_ means promoted from Stable APIs in a Prerelease SDK to stable APIs in a Release SDK. |
+| _Experimental_ | Experimental APIs in a Prerelease SDK. |
+| _Stable_ | _Promoted to Stable_ means promoted from Experimental APIs to to Stable APIs in a Prerelease SDK.  Capital 'S' means Stable status in a Prerelease SDK. |
+| _Release_ | _Promoted to Release_ means promoted from Stable APIs in a Prerelease SDK to stable APIs in a Release SDK. |
 
 
 <!-- ------------------------------ -->

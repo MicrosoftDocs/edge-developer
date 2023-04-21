@@ -16,9 +16,9 @@ New APIs are introduced in phases as follows:
 
 | API status | Description |
 |---|---|
-| _Experimental APIs_ | Experimental APIs in a Prerelease SDK. |
-| _Stable APIs_ | _Promoted to Stable_ means promoted from Experimental APIs to to Stable APIs in a Prerelease SDK.  Capital 'S' means Stable status in a Prerelease SDK. |
-| _Release APIs_ | _Promoted to Release_ means promoted from Stable APIs in a Prerelease SDK to stable APIs in a Release SDK. |
+| _Experimental_ | Experimental APIs in a Prerelease SDK. |
+| _Stable_ | _Promoted to Stable_ means promoted from Experimental APIs to to Stable APIs in a Prerelease SDK.  Capital 'S' means Stable status in a Prerelease SDK. |
+| _Release_ | _Promoted to Release_ means promoted from Stable APIs in a Prerelease SDK to stable APIs in a Release SDK. |
 
 _Prerelease_ SDK packages are for use during development if you want to test the latest WebView2 APIs, including the experimental APIs, before support for those APIs is added to the Runtime.  The Canary channel is recommended, because it has the implementations of the latest APIs.  When you want to test and use experimental WebView2 APIs, use the following combination:
 *  A _Prerelease_ version of the WebView2 SDK.
@@ -101,9 +101,9 @@ As mentioned above, new APIs are introduced in phases as follows:
 
 | API status | Description |
 |---|---|
-| _Experimental APIs_ | Experimental APIs in a Prerelease SDK. |
-| _Stable APIs_ | _Promoted to Stable_ means promoted from Experimental APIs to to Stable APIs in a Prerelease SDK.  Capital 'S' means Stable status in a Prerelease SDK. |
-| _Release APIs_ | _Promoted to Release_ means promoted from Stable APIs in a Prerelease SDK to stable APIs in a Release SDK. |
+| _Experimental_ | Experimental APIs in a Prerelease SDK. |
+| _Stable_ | _Promoted to Stable_ means promoted from Experimental APIs to to Stable APIs in a Prerelease SDK.  Capital 'S' means Stable status in a Prerelease SDK. |
+| _Release_ | _Promoted to Release_ means promoted from Stable APIs in a Prerelease SDK to stable APIs in a Release SDK. |
 
 
 ### Developing with Experimental APIs and providing feedback

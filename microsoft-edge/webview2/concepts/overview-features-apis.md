@@ -125,8 +125,8 @@ Host objects can be projected into JavaScript, so that you can call native objec
    * [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
    * [ICoreWebView2::RemoveHostObjectFromScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#removehostobjectfromscript)
 * `ICoreWebView2Settings` interface:
-   * [ICoreWebView2Settings::get_AreHostObjectsAllowed property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_arehostobjectsallowed)
-   * [ICoreWebView2Settings::put_AreHostObjectsAllowed property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_arehostobjectsallowed)
+   * [ICoreWebView2Settings::get_AreHostObjectsAllowed method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_arehostobjectsallowed)
+   * [ICoreWebView2Settings::put_AreHostObjectsAllowed method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_arehostobjectsallowed)
 * `ICoreWebView2Frame` interface:
    * [ICoreWebView2Frame::AddHostObjectToScriptWithOrigins method](/microsoft-edge/webview2/reference/win32/icorewebview2frame#addhostobjecttoscriptwithorigins)
 
@@ -167,8 +167,8 @@ Allows host app to add JavaScript in the web content within the WebView2 control
    * [ICoreWebView2::ExecuteScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#executescript)
    * [ICoreWebView2::RemoveScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#removescripttoexecuteondocumentcreated)
 * `ICoreWebView2Settings` interface:
-   * [ICoreWebView2Settings::get_IsScriptEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isscriptenabled)
-   * [ICoreWebView2Settings::put_IsScriptEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isscriptenabled)
+   * [ICoreWebView2Settings::get_IsScriptEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isscriptenabled)
+   * [ICoreWebView2Settings::put_IsScriptEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isscriptenabled)
 * `ICoreWebView2Frame2` interface:
    * [ICoreWebView2Frame2::ExecuteScript method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#executescript)
 
@@ -248,8 +248,8 @@ When hosting WebView2, your app can manage different JavaScript dialogs, to supp
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::add_ScriptDialogOpening event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_scriptdialogopening)
-   * [ICoreWebView2::remove_ScriptDialogOpening event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_scriptdialogopening)
+   * [ICoreWebView2::add_ScriptDialogOpening method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_scriptdialogopening)
+   * [ICoreWebView2::remove_ScriptDialogOpening method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_scriptdialogopening)
 * [ICoreWebView2ScriptDialogOpeningEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2scriptdialogopeningeventargs)
 
 ---
@@ -307,11 +307,11 @@ See also:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2_17 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_17)
+* `ICoreWebView2_17` interface:
    * [ICoreWebView2_17::PostSharedBufferToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2_17#postsharedbuffertoscript)
-* [ICoreWebView2Environment12 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environment12)
+* `ICoreWebView2Environment12` interface:
    * [ICoreWebView2Environment12::CreateSharedBuffer method](/microsoft-edge/webview2/reference/win32/icorewebview2environment12#createsharedbuffer)
-* [ICoreWebView2Frame4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2frame4)
+* `ICoreWebView2Frame4` interface:
    * [ICoreWebView2Frame4::PostSharedBufferToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2frame4#postsharedbuffertoscript)
 * [ICoreWebView2SharedBuffer interface](/microsoft-edge/webview2/reference/win32/icorewebview2sharedbuffer)
    * [ICoreWebView2SharedBuffer::OpenStream method](/microsoft-edge/webview2/reference/win32/icorewebview2sharedbuffer#openstream)
@@ -368,13 +368,13 @@ See also:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2_7 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_7)
+* `ICoreWebView2_7` interface:
    * [ICoreWebView2_7::PrintToPdf method](/microsoft-edge/webview2/reference/win32/icorewebview2_7#printtopdf)
-* [ICoreWebView2_16 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_16)
+* `ICoreWebView2_16` interface:
    * [ICoreWebView2_16::ShowPrintUI method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#showprintui)
    * [ICoreWebView2_16::Print method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#print)
    * [ICoreWebView2_16::PrintToPdfStream method](/microsoft-edge/webview2/reference/win32/icorewebview2_16#printtopdfstream)
-* [ICoreWebView2Environment6 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environment6)
+* `ICoreWebView2Environment6` interface:
    * [ICoreWebView2Environment6::CreatePrintSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
 * [ICoreWebView2PrintCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2printcompletedhandler)
 * [ICoreWebView2PrintSettings interface](/microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
@@ -419,7 +419,7 @@ https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_we
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2_2` interface:
-   * [ICoreWebView2_2.get_CookieManager property method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#get_cookiemanager)<!--no put-->
+   * [ICoreWebView2_2.get_CookieManager method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#get_cookiemanager)<!--no put-->
 * [ICoreWebView2Cookie interface](/microsoft-edge/webview2/reference/win32/icorewebview2cookie)
 * [ICoreWebView2CookieList interface](/microsoft-edge/webview2/reference/win32/icorewebview2cookielist)
 * [ICoreWebView2CookieManager interface](/microsoft-edge/webview2/reference/win32/icorewebview2cookiemanager)
@@ -507,26 +507,26 @@ Custom Download Experience:
 
 General:
 * `ICoreWebView2_9` interface:
-   * [ICoreWebView2_9::get_IsDefaultDownloadDialogOpen property method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_isdefaultdownloaddialogopen)<!--no put-->
+   * [ICoreWebView2_9::get_IsDefaultDownloadDialogOpen method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_isdefaultdownloaddialogopen)<!--no put-->
    * [ICoreWebView2_9::OpenDefaultDownloadDialog method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#opendefaultdownloaddialog)
-   * [ICoreWebView2_9::add_IsDefaultDownloadDialogOpenChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#add_isdefaultdownloaddialogopenchanged)
-   * [ICoreWebView2_9::remove_IsDefaultDownloadDialogOpenChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#remove_isdefaultdownloaddialogopenchanged)
+   * [ICoreWebView2_9::add_IsDefaultDownloadDialogOpenChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#add_isdefaultdownloaddialogopenchanged)
+   * [ICoreWebView2_9::remove_IsDefaultDownloadDialogOpenChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#remove_isdefaultdownloaddialogopenchanged)
    * [ICoreWebView2_9::CloseDefaultDownloadDialog method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#closedefaultdownloaddialog)
 
 Modify Default Experience:
 * `ICoreWebView2_9` interface:
-   * [ICoreWebView2_9::get_DefaultDownloadDialogCornerAlignment property method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_defaultdownloaddialogcorneralignment)
-   * [ICoreWebView2_9::put_DefaultDownloadDialogCornerAlignment property method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#put_defaultdownloaddialogcorneralignment)
-   * [ICoreWebView2_9::get_DefaultDownloadDialogMargin property method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_defaultdownloaddialogmargin)
-   * [ICoreWebView2_9::put_DefaultDownloadDialogMargin property method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#put_defaultdownloaddialogmargin)
+   * [ICoreWebView2_9::get_DefaultDownloadDialogCornerAlignment method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_defaultdownloaddialogcorneralignment)
+   * [ICoreWebView2_9::put_DefaultDownloadDialogCornerAlignment method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#put_defaultdownloaddialogcorneralignment)
+   * [ICoreWebView2_9::get_DefaultDownloadDialogMargin method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_defaultdownloaddialogmargin)
+   * [ICoreWebView2_9::put_DefaultDownloadDialogMargin method](/microsoft-edge/webview2/reference/win32/icorewebview2_9#put_defaultdownloaddialogmargin)
 * `ICoreWebView2Profile` interface:
-   * [ICoreWebView2Profile::get_DefaultDownloadFolderPath property method](/microsoft-edge/webview2/reference/win32/icorewebview2profile#get_defaultdownloadfolderpath)
-   * [ICoreWebView2Profile::put_DefaultDownloadFolderPath property method](/microsoft-edge/webview2/reference/win32/icorewebview2profile#put_defaultdownloadfolderpath)
+   * [ICoreWebView2Profile::get_DefaultDownloadFolderPath method](/microsoft-edge/webview2/reference/win32/icorewebview2profile#get_defaultdownloadfolderpath)
+   * [ICoreWebView2Profile::put_DefaultDownloadFolderPath method](/microsoft-edge/webview2/reference/win32/icorewebview2profile#put_defaultdownloadfolderpath)
 
 Custom Download Experience:
 * `ICoreWebView2_4` interface:
-   * [ICoreWebView2_4::add_DownloadStarting event method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_downloadstarting)
-   * [ICoreWebView2_4::remove_DownloadStarting event method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_downloadstarting)
+   * [ICoreWebView2_4::add_DownloadStarting method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_downloadstarting)
+   * [ICoreWebView2_4::remove_DownloadStarting method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_downloadstarting)
 * [ICoreWebView2DownloadStartingEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2downloadstartingeventargs)
 * [ICoreWebView2DownloadOperation interface](/microsoft-edge/webview2/reference/win32/icorewebview2downloadoperation)
 
@@ -586,11 +586,11 @@ See also:
    * [ICoreWebView2::add_PermissionRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_permissionrequested)
    * [ICoreWebView2::remove_PermissionRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_permissionrequested)
 * [ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2getnondefaultpermissionsettingscompletedhandler)
-* [ICoreWebView2Frame3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2frame3)
+* `ICoreWebView2Frame3` interface:
    * [ICoreWebView2Frame3::add_PermissionRequested](/microsoft-edge/webview2/reference/win32/icorewebview2frame3#add_permissionrequested)
    * [ICoreWebView2Frame3::remove_PermissionRequested](/microsoft-edge/webview2/reference/win32/icorewebview2frame3#remove_permissionrequested)
 * [ICoreWebView2PermissionRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs)
-* [ICoreWebView2PermissionRequestedEventArgs3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3)
+* `ICoreWebView2PermissionRequestedEventArgs3` interface:
    * [ICoreWebView2PermissionRequestedEventArgs3::get_SavesInProfile](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3#get_savesinprofile)
    * [ICoreWebView2PermissionRequestedEventArgs3::put_SavesInProfile](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs3#put_savesinprofile)
 * [ICoreWebView2PermissionSetting interface](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsetting)
@@ -600,7 +600,7 @@ See also:
 * [ICoreWebView2PermissionSettingCollectionView interface](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsettingcollectionview)
    * [ICoreWebView2PermissionSettingCollectionView::GetValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsettingcollectionview#getvalueatindex)
    * [ICoreWebView2PermissionSettingCollectionView::get_Count method](/microsoft-edge/webview2/reference/win32/icorewebview2permissionsettingcollectionview#get_count)
-* [ICoreWebView2Profile4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile4)
+* `ICoreWebView2Profile4` interface:
    * [ICoreWebView2Profile4::GetNonDefaultPermissionSettings method](/microsoft-edge/webview2/reference/win32/icorewebview2profile4#getnondefaultpermissionsettings)
    * [ICoreWebView2Profile4::SetPermissionState method](/microsoft-edge/webview2/reference/win32/icorewebview2profile4#setpermissionstate)
 * [ICoreWebView2SetPermissionStateCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2setpermissionstatecompletedhandler)
@@ -648,13 +648,13 @@ See also:
    * [ICoreWebView2_11::remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_11#remove_contextmenurequested)
 * [ICoreWebView2ContextMenuRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs)
 * [ICoreWebView2ContextMenuItem interface](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem)
-   * [ICoreWebView2ContextMenuItemCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection)
+* [ICoreWebView2ContextMenuItemCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection)
 * [ICoreWebView2ContextMenuTarget interface](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenutarget)
 * `ICoreWebView2Environment9` interface:
    * [ICoreWebView2Environment9::CreateContextMenuItem method](/microsoft-edge/webview2/reference/win32/icorewebview2environment9#createcontextmenuitem)
 * `ICoreWebView2Settings` interface:
-   * [ICoreWebView2Settings::get_AreDefaultContextMenusEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)
-   * [ICoreWebView2Settings::put_AreDefaultContextMenusEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)
+   * [ICoreWebView2Settings::get_AreDefaultContextMenusEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)
+   * [ICoreWebView2Settings::put_AreDefaultContextMenusEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)
 
 ---
 
@@ -686,7 +686,7 @@ See also:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2_12 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_12)
+* `ICoreWebView2_12` interface:
    * [ICoreWebView2_12::add_StatusBarTextChanged](/microsoft-edge/webview2/reference/win32/icorewebview2_12#add_statusbartextchanged)
    * [ICoreWebView2_12::get_StatusBarText](/microsoft-edge/webview2/reference/win32/icorewebview2_12#get_statusbartext)
    * [ICoreWebView2_12::remove_StatusBarTextChanged](/microsoft-edge/webview2/reference/win32/icorewebview2_12#remove_statusbartextchanged)
@@ -746,11 +746,11 @@ Your app can independently control whether the browser's autofill functionality 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Settings4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2settings4)
-   * [ICoreWebView2Settings4::get_IsGeneralAutofillEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#get_isgeneralautofillenabled)
-   * [ICoreWebView2Settings4::get_IsPasswordAutosaveEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#get_ispasswordautosaveenabled)
-   * [ICoreWebView2Settings4::put_IsGeneralAutofillEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#put_isgeneralautofillenabled)
-   * [ICoreWebView2Settings4::put_IsPasswordAutosaveEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#put_ispasswordautosaveenabled)
+* `ICoreWebView2Settings4` interface:
+   * [ICoreWebView2Settings4::get_IsGeneralAutofillEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#get_isgeneralautofillenabled)
+   * [ICoreWebView2Settings4::get_IsPasswordAutosaveEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#get_ispasswordautosaveenabled)
+   * [ICoreWebView2Settings4::put_IsGeneralAutofillEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#put_isgeneralautofillenabled)
+   * [ICoreWebView2Settings4::put_IsPasswordAutosaveEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#put_ispasswordautosaveenabled)
 
 ---
 
@@ -778,14 +778,14 @@ Your app can mute and unmute all audio, and find out when audio is playing.
    
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2_8 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_8)
-   * [ICoreWebView2_8::add_IsDocumentPlayingAudioChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#add_isdocumentplayingaudiochanged)
-   * [ICoreWebView2_8::add_IsMutedChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#add_ismutedchanged)
-   * [ICoreWebView2_8::get_IsDocumentPlayingAudio property method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#get_isdocumentplayingaudio)
-   * [ICoreWebView2_8::get_IsMuted property method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#get_ismuted)
-   * [ICoreWebView2_8::put_IsMuted property method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#put_ismuted)
-   * [ICoreWebView2_8::remove_IsDocumentPlayingAudioChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#remove_isdocumentplayingaudiochanged)
-   * [ICoreWebView2_8::remove_IsMutedChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#remove_ismutedchanged)
+* `ICoreWebView2_8` interface:
+   * [ICoreWebView2_8::add_IsDocumentPlayingAudioChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#add_isdocumentplayingaudiochanged)
+   * [ICoreWebView2_8::add_IsMutedChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#add_ismutedchanged)
+   * [ICoreWebView2_8::get_IsDocumentPlayingAudio method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#get_isdocumentplayingaudio)
+   * [ICoreWebView2_8::get_IsMuted method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#get_ismuted)
+   * [ICoreWebView2_8::put_IsMuted method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#put_ismuted)
+   * [ICoreWebView2_8::remove_IsDocumentPlayingAudioChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#remove_isdocumentplayingaudiochanged)
+   * [ICoreWebView2_8::remove_IsMutedChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#remove_ismutedchanged)
 
 ---
 
@@ -816,11 +816,11 @@ This feature is currently disabled by default in the browser.  To enable this fe
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2Settings6` interface:
-   * [ICoreWebView2Settings6::get_IsSwipeNavigationEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings6#get_isswipenavigationenabled)
-   * [ICoreWebView2Settings6::put_IsSwipeNavigationEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings6#put_isswipenavigationenabled)
+   * [ICoreWebView2Settings6::get_IsSwipeNavigationEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings6#get_isswipenavigationenabled)
+   * [ICoreWebView2Settings6::put_IsSwipeNavigationEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings6#put_isswipenavigationenabled)
 * `ICoreWebView2EnvironmentOptions` interface:
-   * [ICoreWebView2EnvironmentOptions::get_AdditionalBrowserArguments property method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_additionalbrowserarguments)
-   * [ICoreWebView2EnvironmentOptions::put_AdditionalBrowserArguments property method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_additionalbrowserarguments)
+   * [ICoreWebView2EnvironmentOptions::get_AdditionalBrowserArguments method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_additionalbrowserarguments)
+   * [ICoreWebView2EnvironmentOptions::put_AdditionalBrowserArguments method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_additionalbrowserarguments)
 
 ---
 
@@ -844,9 +844,9 @@ In WebView2, you can find out when an HTML element enters or leaves full-screen 
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::get_ContainsFullScreenElement property method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_containsfullscreenelement)<!--no put-->
-   * [ICoreWebView2::add_ContainsFullScreenElementChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_containsfullscreenelementchanged)
-   * [ICoreWebView2::remove_ContainsFullScreenElementChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_containsfullscreenelementchanged)
+   * [ICoreWebView2::get_ContainsFullScreenElement method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_containsfullscreenelement)<!--no put-->
+   * [ICoreWebView2::add_ContainsFullScreenElementChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_containsfullscreenelementchanged)
+   * [ICoreWebView2::remove_ContainsFullScreenElementChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_containsfullscreenelementchanged)
 
 ---
 
@@ -867,9 +867,9 @@ In the browser PDF viewer, there's a PDF-specific toolbar along the top.  In Web
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Settings7 interface](/microsoft-edge/webview2/reference/win32/icorewebview2settings7)
-   * [ICoreWebView2Settings7::get_HiddenPdfToolbarItems property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings7#get_hiddenpdftoolbaritems)
-   * [ICoreWebView2Settings7::put_HiddenPdfToolbarItems property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings7#put_hiddenpdftoolbaritems)
+* `ICoreWebView2Settings7` interface:
+   * [ICoreWebView2Settings7::get_HiddenPdfToolbarItems method](/microsoft-edge/webview2/reference/win32/icorewebview2settings7#get_hiddenpdftoolbaritems)
+   * [ICoreWebView2Settings7::put_HiddenPdfToolbarItems method](/microsoft-edge/webview2/reference/win32/icorewebview2settings7#put_hiddenpdftoolbaritems)
 
 ---
 
@@ -891,8 +891,8 @@ In WebView2, you can customize the color theme as system, light, or dark.
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2Profile` interface:
-   * [ICoreWebView2Profile::get_PreferredColorScheme property method](/microsoft-edge/webview2/reference/win32/icorewebview2profile#get_preferredcolorscheme)
-   * [ICoreWebView2Profile::put_PreferredColorScheme property method](/microsoft-edge/webview2/reference/win32/icorewebview2profile#put_preferredcolorscheme)
+   * [ICoreWebView2Profile::get_PreferredColorScheme method](/microsoft-edge/webview2/reference/win32/icorewebview2profile#get_preferredcolorscheme)
+   * [ICoreWebView2Profile::put_PreferredColorScheme method](/microsoft-edge/webview2/reference/win32/icorewebview2profile#put_preferredcolorscheme)
 
 ---
 
@@ -920,11 +920,11 @@ The `ScriptLocale` property allows the host app to set the default locale for al
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2EnvironmentOptions` interface:
-   * [ICoreWebView2EnvironmentOptions::get_Language property method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_language)
-   * [ICoreWebView2EnvironmentOptions::put_Language property method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_language)
-* [ICoreWebView2ControllerOptions2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2)
-   * [ICoreWebView2ControllerOptions2::get_ScriptLocale property method](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2#get_scriptlocale)
-   * [ICoreWebView2ControllerOptions2::put_ScriptLocale property method](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2#put_scriptlocale)
+   * [ICoreWebView2EnvironmentOptions::get_Language method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_language)
+   * [ICoreWebView2EnvironmentOptions::put_Language method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_language)
+* `ICoreWebView2ControllerOptions2` interface:
+   * [ICoreWebView2ControllerOptions2::get_ScriptLocale method](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2#get_scriptlocale)
+   * [ICoreWebView2ControllerOptions2::put_ScriptLocale method](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2#put_scriptlocale)
 
 ---
 
@@ -951,8 +951,8 @@ WebView2 provides functionality to handle the JavaScript function `window.open()
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::add_NewWindowRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_newwindowrequested)
-   * [ICoreWebView2::remove_NewWindowRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_newwindowrequested)
+   * [ICoreWebView2::add_NewWindowRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_newwindowrequested)
+   * [ICoreWebView2::remove_NewWindowRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_newwindowrequested)
 * [ICoreWebView2NewWindowRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs)
 * [ICoreWebView2WindowFeatures interface](/microsoft-edge/webview2/reference/win32/icorewebview2windowfeatures)
 
@@ -980,8 +980,8 @@ WebView2 provides functionality to handle the JavaScript function `window.close(
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::add_WindowCloseRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_windowcloserequested)
-   * [ICoreWebView2::remove_WindowCloseRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_windowcloserequested)
+   * [ICoreWebView2::add_WindowCloseRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_windowcloserequested)
+   * [ICoreWebView2::remove_WindowCloseRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_windowcloserequested)
 * `ICoreWebView2Controller` interface:
    * [ICoreWebView2Controller::Close method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)
 
@@ -1007,9 +1007,9 @@ Your app can detect when the title of the current top-level document has changed
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::get_DocumentTitle property method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_documenttitle)<!--no put-->
-   * [ICoreWebView2::add_DocumentTitleChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_documenttitlechanged)
-   * [ICoreWebView2::remove_DocumentTitleChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_documenttitlechanged)
+   * [ICoreWebView2::get_DocumentTitle method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_documenttitle)<!--no put-->
+   * [ICoreWebView2::add_DocumentTitleChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_documenttitlechanged)
+   * [ICoreWebView2::remove_DocumentTitleChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_documenttitlechanged)
 
 ---
 
@@ -1033,9 +1033,9 @@ In WebView2, you can set a [Favicon](https://developer.mozilla.org/docs/Glossary
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2_15` interface:
-   * [ICoreWebView2_15::add_FaviconChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2_15#add_faviconchanged)
-   * [ICoreWebView2_15::remove_FaviconChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2_15#remove_faviconchanged)
-   * [ICoreWebView2_15::get_FaviconUri property method](/microsoft-edge/webview2/reference/win32/icorewebview2_15#get_faviconuri)<!--no put-->
+   * [ICoreWebView2_15::add_FaviconChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2_15#add_faviconchanged)
+   * [ICoreWebView2_15::remove_FaviconChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2_15#remove_faviconchanged)
+   * [ICoreWebView2_15::get_FaviconUri method](/microsoft-edge/webview2/reference/win32/icorewebview2_15#get_faviconuri)<!--no put-->
 
 ---
 
@@ -1080,12 +1080,12 @@ See also:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2EnvironmentOptions5 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions5)
-   * [ICoreWebView2EnvironmentOptions5::get_EnableTrackingPrevention property method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions5#get_enabletrackingprevention)
-   * [ICoreWebView2EnvironmentOptions5::put_EnableTrackingPrevention property method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions5#put_enabletrackingprevention)
-* [ICoreWebView2Profile3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile3)
-   * [ICoreWebView2Profile3::get_PreferredTrackingPreventionLevel property method](/microsoft-edge/webview2/reference/win32/icorewebview2profile3#get_preferredtrackingpreventionlevel)
-   * [ICoreWebView2Profile3::put_PreferredTrackingPreventionLevel property method](/microsoft-edge/webview2/reference/win32/icorewebview2profile3#put_preferredtrackingpreventionlevel)
+* `ICoreWebView2EnvironmentOptions5` interface:
+   * [ICoreWebView2EnvironmentOptions5::get_EnableTrackingPrevention method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions5#get_enabletrackingprevention)
+   * [ICoreWebView2EnvironmentOptions5::put_EnableTrackingPrevention method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions5#put_enabletrackingprevention)
+* `ICoreWebView2Profile3` interface:
+   * [ICoreWebView2Profile3::get_PreferredTrackingPreventionLevel method](/microsoft-edge/webview2/reference/win32/icorewebview2profile3#get_preferredtrackingpreventionlevel)
+   * [ICoreWebView2Profile3::put_PreferredTrackingPreventionLevel method](/microsoft-edge/webview2/reference/win32/icorewebview2profile3#put_preferredtrackingpreventionlevel)
 * [COREWEBVIEW2_TRACKING_PREVENTION_LEVEL enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_tracking_prevention_level)
   * `COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_NONE`
   * `COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_BASIC`
@@ -1117,9 +1117,9 @@ See also:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Settings8 interface](/microsoft-edge/webview2/reference/win32/icorewebview2settings8)
-   * [ICoreWebView2Settings8::get_IsReputationCheckingRequired property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#get_isreputationcheckingrequired)
-   * [ICoreWebView2Settings8::put_IsReputationCheckingRequired property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#put_isreputationcheckingrequired)
+* `ICoreWebView2Settings8` interface:
+   * [ICoreWebView2Settings8::get_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#get_isreputationcheckingrequired)
+   * [ICoreWebView2Settings8::put_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#put_isreputationcheckingrequired)
 ---
 
 
@@ -1158,17 +1158,17 @@ Get information about running WebView2 processes, exiting processes, and failed 
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::get_BrowserProcessId property method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_browserprocessid)<!--no put-->
-   * [ICoreWebView2::add_ProcessFailed event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)
-   * [ICoreWebView2::remove_ProcessFailed event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
+   * [ICoreWebView2::get_BrowserProcessId method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_browserprocessid)<!--no put-->
+   * [ICoreWebView2::add_ProcessFailed method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)
+   * [ICoreWebView2::remove_ProcessFailed method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
 * [ICoreWebView2BrowserProcessExitedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs)
-* [ICoreWebView2Environment8 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environment8)
+* `ICoreWebView2Environment8` interface:
    * [ICoreWebView2Environment8::GetProcessInfos method](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#getprocessinfos)
-   * [ICoreWebView2Environment8::add_ProcessInfosChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#add_processinfoschanged)
-   * [ICoreWebView2Environment8::remove_ProcessInfosChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#remove_processinfoschanged)
-* [ICoreWebView2Environment5 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environment5)
-   * [ICoreWebView2Environment5::add_BrowserProcessExited event method](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
-   * [ICoreWebView2Environment5::remove_BrowserProcessExited event method](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
+   * [ICoreWebView2Environment8::add_ProcessInfosChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#add_processinfoschanged)
+   * [ICoreWebView2Environment8::remove_ProcessInfosChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#remove_processinfoschanged)
+* `ICoreWebView2Environment5` interface:
+   * [ICoreWebView2Environment5::add_BrowserProcessExited method](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
+   * [ICoreWebView2Environment5::remove_BrowserProcessExited method](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
 * [ICoreWebView2ProcessFailedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs)
 * [ICoreWebView2ProcessInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2processinfo)
 * [ICoreWebView2ProcessInfoCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2processinfocollection)
@@ -1225,8 +1225,8 @@ See also:
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::add_WebResourceRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested)
-   * [ICoreWebView2::remove_WebResourceRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
+   * [ICoreWebView2::add_WebResourceRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested)
+   * [ICoreWebView2::remove_WebResourceRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
    * [ICoreWebView2::Navigate method](/microsoft-edge/webview2/reference/win32/icorewebview2#navigate)
    * [ICoreWebView2::NavigateToString method](/microsoft-edge/webview2/reference/win32/icorewebview2#navigatetostring)
    * [ICoreWebView2::Reload method](/microsoft-edge/webview2/reference/win32/icorewebview2#reload)
@@ -1237,8 +1237,8 @@ See also:
    * [ICoreWebView2_3::ClearVirtualHostNameToFolderMapping method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#clearvirtualhostnametofoldermapping)
    * [ICoreWebView2_3::SetVirtualHostNameToFolderMapping method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping)
 * `ICoreWebView2Settings` interface:
-   * [ICoreWebView2Settings::get_IsBuiltInErrorPageEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isbuiltinerrorpageenabled)
-   * [ICoreWebView2Settings::put_IsBuiltInErrorPageEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isbuiltinerrorpageenabled)
+   * [ICoreWebView2Settings::get_IsBuiltInErrorPageEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isbuiltinerrorpageenabled)
+   * [ICoreWebView2Settings::put_IsBuiltInErrorPageEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isbuiltinerrorpageenabled)
 
 ---
 
@@ -1275,15 +1275,15 @@ The history methods allow back and forward navigation in WebView2, and the histo
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::add_HistoryChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_historychanged)
-   * [ICoreWebView2::add_SourceChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_sourcechanged)
-   * [ICoreWebView2::get_CanGoBack property method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_cangoback)<!--no put-->
-   * [ICoreWebView2::get_CanGoForward property method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_cangoforward)<!--no put-->
-   * [ICoreWebView2::get_Source property method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_source)<!--no put-->
+   * [ICoreWebView2::add_HistoryChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_historychanged)
+   * [ICoreWebView2::add_SourceChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_sourcechanged)
+   * [ICoreWebView2::get_CanGoBack method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_cangoback)<!--no put-->
+   * [ICoreWebView2::get_CanGoForward method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_cangoforward)<!--no put-->
+   * [ICoreWebView2::get_Source method](/microsoft-edge/webview2/reference/win32/icorewebview2#get_source)<!--no put-->
    * [ICoreWebView2::GoBack method](/microsoft-edge/webview2/reference/win32/icorewebview2#goback)
    * [ICoreWebView2::GoForward method](/microsoft-edge/webview2/reference/win32/icorewebview2#goforward)
-   * [ICoreWebView2::remove_HistoryChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_historychanged)
-   * [ICoreWebView2::remove_SourceChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_sourcechanged)
+   * [ICoreWebView2::remove_HistoryChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_historychanged)
+   * [ICoreWebView2::remove_SourceChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_sourcechanged)
 * [ICoreWebView2SourceChangedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2sourcechangedeventargs)
 
 ---
@@ -1315,13 +1315,13 @@ The `NavigationStarting` event allows the app to cancel navigating to specified 
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::add_NavigationStarting event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationstarting)
-   * [ICoreWebView2::remove_NavigationStarting event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationstarting)
-   * [ICoreWebView2::add_FrameNavigationStarting event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationstarting) - superseded; use `ICoreWebView2Frame.add_NavigationStarting` instead
-   * [ICoreWebView2::remove_FrameNavigationStarting event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationstarting) - superseded; use `ICoreWebView2Frame.remove_NavigationStarting` instead
+   * [ICoreWebView2::add_NavigationStarting method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationstarting)
+   * [ICoreWebView2::remove_NavigationStarting method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationstarting)
+   * [ICoreWebView2::add_FrameNavigationStarting method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationstarting) - superseded; use `ICoreWebView2Frame.add_NavigationStarting` instead
+   * [ICoreWebView2::remove_FrameNavigationStarting method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationstarting) - superseded; use `ICoreWebView2Frame.remove_NavigationStarting` instead
 * `ICoreWebView2Frame2` interface:
-   * [ICoreWebView2Frame2::add_NavigationStarting event method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationstarting)
-   * [ICoreWebView2Frame2::remove_NavigationStarting event method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationstarting)
+   * [ICoreWebView2Frame2::add_NavigationStarting method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationstarting)
+   * [ICoreWebView2Frame2::remove_NavigationStarting method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationstarting)
 * [ICoreWebView2NavigationStartingEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs2)<!--v2-->
 
 ---
@@ -1368,22 +1368,22 @@ See also:
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::add_ContentLoading event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_contentloading)
-   * [ICoreWebView2::add_FrameNavigationCompleted event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted) - superseded; use `ICoreWebView2Frame::add_NavigationCompleted` instead<!--todo: tech review this added note; confirm this API is superseded-->
-   * [ICoreWebView2::add_NavigationCompleted event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationcompleted)
-   * [ICoreWebView2::remove_ContentLoading event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_contentloading)
-   * [ICoreWebView2::remove_FrameNavigationCompleted event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted) - superseded; use `ICoreWebView2Frame::remove_NavigationCompleted` instead<!--todo: tech review this added note; confirm this API is superseded-->
-   * [ICoreWebView2::remove_NavigationCompleted event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationcompleted)
+   * [ICoreWebView2::add_ContentLoading method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_contentloading)
+   * [ICoreWebView2::add_FrameNavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted) - superseded; use `ICoreWebView2Frame::add_NavigationCompleted` instead<!--todo: tech review this added note; confirm this API is superseded-->
+   * [ICoreWebView2::add_NavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationcompleted)
+   * [ICoreWebView2::remove_ContentLoading method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_contentloading)
+   * [ICoreWebView2::remove_FrameNavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted) - superseded; use `ICoreWebView2Frame::remove_NavigationCompleted` instead<!--todo: tech review this added note; confirm this API is superseded-->
+   * [ICoreWebView2::remove_NavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationcompleted)
 * `ICoreWebView2_2` interface:
-   * [ICoreWebView2_2::add_DOMContentLoaded event method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_domcontentloaded)
-   * [ICoreWebView2_2::remove_DOMContentLoaded event method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_domcontentloaded)
+   * [ICoreWebView2_2::add_DOMContentLoaded method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_domcontentloaded)
+   * [ICoreWebView2_2::remove_DOMContentLoaded method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_domcontentloaded)
 * `ICoreWebView2Frame2` interface:
-   * [ICoreWebView2Frame2::add_ContentLoading event method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_contentloading)
-   * [ICoreWebView2Frame2::add_DOMContentLoaded event method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_domcontentloaded)
-   * [ICoreWebView2Frame2::add_NavigationCompleted event method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationcompleted)
-   * [ICoreWebView2Frame2::remove_ContentLoading event method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_contentloading)
-   * [ICoreWebView2Frame2::remove_DOMContentLoaded event method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_domcontentloaded)
-   * [ICoreWebView2Frame2::remove_NavigationCompleted event method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationcompleted)
+   * [ICoreWebView2Frame2::add_ContentLoading method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_contentloading)
+   * [ICoreWebView2Frame2::add_DOMContentLoaded method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_domcontentloaded)
+   * [ICoreWebView2Frame2::add_NavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationcompleted)
+   * [ICoreWebView2Frame2::remove_ContentLoading method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_contentloading)
+   * [ICoreWebView2Frame2::remove_DOMContentLoaded method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_domcontentloaded)
+   * [ICoreWebView2Frame2::remove_NavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationcompleted)
 * [ICoreWebView2ContentLoadingEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2contentloadingeventargs)
 * [ICoreWebView2DOMContentLoadedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2domcontentloadedeventargs)
 * [ICoreWebView2NavigationCompletedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs)
@@ -1419,11 +1419,11 @@ See also:
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::add_WebResourceRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested)
-   * [ICoreWebView2::remove_WebResourceRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
+   * [ICoreWebView2::add_WebResourceRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested)
+   * [ICoreWebView2::remove_WebResourceRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
 * `ICoreWebView2_2` interface:
-   * [ICoreWebView2_2::add_WebResourceResponseReceived event method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived)
-   * [ICoreWebView2_2::remove_WebResourceResponseReceived event method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_webresourceresponsereceived)
+   * [ICoreWebView2_2::add_WebResourceResponseReceived method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived)
+   * [ICoreWebView2_2::remove_WebResourceResponseReceived method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_webresourceresponsereceived)
 * [ICoreWebView2WebResourceRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)
 * [ICoreWebView2WebResourceResponseReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs)
 
@@ -1449,7 +1449,7 @@ The `CustomSchemeRegistration` allows registration of custom schemes in WebView2
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2CustomSchemeRegistration interface](/microsoft-edge/webview2/reference/win32/icorewebview2customschemeregistration)
-* [ICoreWebView2EnvironmentOptions4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4)
+* `ICoreWebView2EnvironmentOptions4` interface:
    * [ICoreWebView2EnvironmentOptions4::GetCustomSchemeRegistrations method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4#getcustomschemeregistrations)
    * [ICoreWebView2EnvironmentOptions4::SetCustomSchemeRegistrations method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4#setcustomschemeregistrations)
    
@@ -1481,9 +1481,9 @@ In WebView2, you can use the Client Certificate API to select the client certifi
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2_5 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_5)
-   * [ICoreWebView2_5::add_ClientCertificateRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2_5#add_clientcertificaterequested)
-   * [ICoreWebView2_5::remove_ClientCertificateRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2_5#remove_clientcertificaterequested)
+* `ICoreWebView2_5` interface:
+   * [ICoreWebView2_5::add_ClientCertificateRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2_5#add_clientcertificaterequested)
+   * [ICoreWebView2_5::remove_ClientCertificateRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2_5#remove_clientcertificaterequested)
 * [ICoreWebView2ClientCertificate interface](/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate)
 * [ICoreWebView2ClientCertificateCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificatecollection)<!--n/a for c#-->
 * [ICoreWebView2ClientCertificateRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificaterequestedeventargs)
@@ -1509,9 +1509,9 @@ In WebView2, you can use the Server Certificate API to trust the server's TLS ce
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2_14 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_14)
-   * [ICoreWebView2_14::add_ServerCertificateErrorDetected event method](/microsoft-edge/webview2/reference/win32/icorewebview2_14#add_servercertificateerrordetected)
-   * [ICoreWebView2_14::remove_ServerCertificateErrorDetected event method](/microsoft-edge/webview2/reference/win32/icorewebview2_14#remove_servercertificateerrordetected)
+* `ICoreWebView2_14` interface:
+   * [ICoreWebView2_14::add_ServerCertificateErrorDetected method](/microsoft-edge/webview2/reference/win32/icorewebview2_14#add_servercertificateerrordetected)
+   * [ICoreWebView2_14::remove_ServerCertificateErrorDetected method](/microsoft-edge/webview2/reference/win32/icorewebview2_14#remove_servercertificateerrordetected)
    * [ICoreWebView2_14::ClearServerCertificateErrorActions method](/microsoft-edge/webview2/reference/win32/icorewebview2_14#clearservercertificateerroractions)
 
 ---
@@ -1551,8 +1551,8 @@ See also:
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2_4` interface:
-   * [ICoreWebView2_4::add_FrameCreated event method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated)
-   * [ICoreWebView2_4::remove_FrameCreated event method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_framecreated)
+   * [ICoreWebView2_4::add_FrameCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated)
+   * [ICoreWebView2_4::remove_FrameCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_framecreated)
 * [ICoreWebView2Frame interface](/microsoft-edge/webview2/reference/win32/icorewebview2frame)
 * [ICoreWebView2FrameCreatedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)
 * [ICoreWebView2FrameInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)
@@ -1596,9 +1596,9 @@ See also:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2_10 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_10)
-   * [ICoreWebView2_10::add_BasicAuthenticationRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested)
-   * [ICoreWebView2_10::remove_BasicAuthenticationRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2_10#remove_basicauthenticationrequested)
+* `ICoreWebView2_10` interface:
+   * [ICoreWebView2_10::add_BasicAuthenticationRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested)
+   * [ICoreWebView2_10::remove_BasicAuthenticationRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2_10#remove_basicauthenticationrequested)
 * [ICoreWebView2BasicAuthenticationRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)
 * [ICoreWebView2BasicAuthenticationResponse interface](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationresponse)
 * [ICoreWebView2HttpHeadersCollectionIterator interface](/microsoft-edge/webview2/reference/win32/icorewebview2httpheaderscollectioniterator)
@@ -1638,7 +1638,7 @@ Use these APIs to set up the WebView2 rendering system if your host app doesn't 
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2Controller` interface:
-   * [ICoreWebView2Controller::get_CoreWebView2 property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_corewebview2)<!--no put-->
+   * [ICoreWebView2Controller::get_CoreWebView2 method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_corewebview2)<!--no put-->
    * [ICoreWebView2Controller::Close method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)
 * `CoreWebView2Environment` Class:
    * [ICoreWebView2Environment::CreateCoreWebView2Controller method](/microsoft-edge/webview2/reference/win32/icorewebview2environment#createcorewebview2controller)
@@ -1669,10 +1669,10 @@ WebView2 gives your app access to window-specific attributes, such as positionin
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2Controller` interface:
-   * [ICoreWebView2Controller::get_Bounds property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_bounds)
-   * [ICoreWebView2Controller::put_Bounds property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_bounds)
-   * [ICoreWebView2Controller::get_IsVisible property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)
-   * [ICoreWebView2Controller::put_IsVisible property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)
+   * [ICoreWebView2Controller::get_Bounds method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_bounds)
+   * [ICoreWebView2Controller::put_Bounds method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_bounds)
+   * [ICoreWebView2Controller::get_IsVisible method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)
+   * [ICoreWebView2Controller::put_IsVisible method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)
 
 ---
 
@@ -1705,17 +1705,17 @@ WebView2 `ZoomFactor` is used to scale just the web content of the window.  UI s
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2Controller` interface:
-   * [ICoreWebView2Controller::get_ZoomFactor property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_zoomfactor)
-   * [ICoreWebView2Controller::put_ZoomFactor property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_zoomfactor)
-   * [ICoreWebView2Controller::add_ZoomFactorChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_zoomfactorchanged)
-   * [ICoreWebView2Controller::remove_ZoomFactorChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_zoomfactorchanged)
+   * [ICoreWebView2Controller::get_ZoomFactor method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_zoomfactor)
+   * [ICoreWebView2Controller::put_ZoomFactor method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_zoomfactor)
+   * [ICoreWebView2Controller::add_ZoomFactorChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_zoomfactorchanged)
+   * [ICoreWebView2Controller::remove_ZoomFactorChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_zoomfactorchanged)
    * [ICoreWebView2Controller::SetBoundsAndZoomFactor method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#setboundsandzoomfactor)
 * `ICoreWebView2Settings` interface:
-   * [ICoreWebView2Settings::get_IsZoomControlEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_iszoomcontrolenabled)
-   * [ICoreWebView2Settings::put_IsZoomControlEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_iszoomcontrolenabled)
-* [ICoreWebView2Settings5 interface](/microsoft-edge/webview2/reference/win32/icorewebview2settings5)
-   * [ICoreWebView2Settings5::get_IsPinchZoomEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings5#get_ispinchzoomenabled)
-   * [ICoreWebView2Settings5::put_IsPinchZoomEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings5#put_ispinchzoomenabled)
+   * [ICoreWebView2Settings::get_IsZoomControlEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_iszoomcontrolenabled)
+   * [ICoreWebView2Settings::put_IsZoomControlEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_iszoomcontrolenabled)
+* `ICoreWebView2Settings5` interface:
+   * [ICoreWebView2Settings5::get_IsPinchZoomEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings5#get_ispinchzoomenabled)
+   * [ICoreWebView2Settings5::put_IsPinchZoomEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings5#put_ispinchzoomenabled)
 
 ---
 
@@ -1743,15 +1743,15 @@ The RasterizationScale API scales all WebView2 UI including context menus, toolt
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2controller3)
-   * [ICoreWebView2Controller3::add_RasterizationScaleChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#add_rasterizationscalechanged)
-   * [ICoreWebView2Controller3::get_BoundsMode property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_boundsmode)
-   * [ICoreWebView2Controller3::get_RasterizationScale property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_rasterizationscale)
-   * [ICoreWebView2Controller3::get_ShouldDetectMonitorScaleChanges property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_shoulddetectmonitorscalechanges)
-   * [ICoreWebView2Controller3::put_BoundsMode property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_boundsmode)
-   * [ICoreWebView2Controller3::put_RasterizationScale property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_rasterizationscale)
-   * [ICoreWebView2Controller3::put_ShouldDetectMonitorScaleChanges property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_shoulddetectmonitorscalechanges)
-   * [ICoreWebView2Controller3::remove_RasterizationScaleChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#remove_rasterizationscalechanged)
+* `ICoreWebView2Controller3` interface:
+   * [ICoreWebView2Controller3::add_RasterizationScaleChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#add_rasterizationscalechanged)
+   * [ICoreWebView2Controller3::get_BoundsMode method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_boundsmode)
+   * [ICoreWebView2Controller3::get_RasterizationScale method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_rasterizationscale)
+   * [ICoreWebView2Controller3::get_ShouldDetectMonitorScaleChanges method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_shoulddetectmonitorscalechanges)
+   * [ICoreWebView2Controller3::put_BoundsMode method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_boundsmode)
+   * [ICoreWebView2Controller3::put_RasterizationScale method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_rasterizationscale)
+   * [ICoreWebView2Controller3::put_ShouldDetectMonitorScaleChanges method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_shoulddetectmonitorscalechanges)
+   * [ICoreWebView2Controller3::remove_RasterizationScaleChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#remove_rasterizationscalechanged)
 
 ---
 
@@ -1782,13 +1782,13 @@ The WebView2 control raises events to let the app know when the control gains fo
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebview2Controller` interface:
-   * [ICoreWebview2Controller::add_GotFocus event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_gotfocus)
-   * [ICoreWebview2Controller::add_LostFocus event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_lostfocus)
-   * [ICoreWebview2Controller::add_MoveFocusRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_movefocusrequested)
+   * [ICoreWebview2Controller::add_GotFocus method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_gotfocus)
+   * [ICoreWebview2Controller::add_LostFocus method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_lostfocus)
+   * [ICoreWebview2Controller::add_MoveFocusRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_movefocusrequested)
    * [ICoreWebview2Controller::MoveFocus method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#movefocus)
-   * [ICoreWebview2Controller::remove_GotFocus event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_gotfocus)
-   * [ICoreWebview2Controller::remove_LostFocus event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_lostfocus)
-   * [ICoreWebview2Controller::remove_MoveFocusRequested event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_movefocusrequested)
+   * [ICoreWebview2Controller::remove_GotFocus method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_gotfocus)
+   * [ICoreWebview2Controller::remove_LostFocus method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_lostfocus)
+   * [ICoreWebview2Controller::remove_MoveFocusRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_movefocusrequested)
 * [ICoreWebView2MoveFocusRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2movefocusrequestedeventargs)
 
 ---
@@ -1814,9 +1814,9 @@ WebView2 can be reparented to a different parent window handle (`HWND`).  WebVie
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebview2Controller` interface:
-   * [ICoreWebview2Controller::get_ParentWindow property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_parentwindow)
+   * [ICoreWebview2Controller::get_ParentWindow method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_parentwindow)
    * [ICoreWebview2Controller::NotifyParentWindowPositionChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#notifyparentwindowpositionchanged)
-   * [ICoreWebview2Controller::put_ParentWindow property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_parentwindow)
+   * [ICoreWebview2Controller::put_ParentWindow method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_parentwindow)
 
 ---
 
@@ -1846,11 +1846,11 @@ When WebView2 has focus, it directly receives input from the user. An app may wa
 
 * [ICoreWebView2AcceleratorKeyPressedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs)
 * `ICoreWebView2Controller` interface:
-   * [ICoreWebView2Controller::add_AcceleratorKeyPressed event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_acceleratorkeypressed)
-   * [ICoreWebView2Controller::remove_AcceleratorKeyPressed event method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_acceleratorkeypressed)
-* [ICoreWebView2Settings3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2settings3)
-   * [ICoreWebView2Settings3::get_AreBrowserAcceleratorKeysEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings3#get_arebrowseracceleratorkeysenabled)
-   * [ICoreWebView2Settings3::put_AreBrowserAcceleratorKeysEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings3#put_arebrowseracceleratorkeysenabled)
+   * [ICoreWebView2Controller::add_AcceleratorKeyPressed method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_acceleratorkeypressed)
+   * [ICoreWebView2Controller::remove_AcceleratorKeyPressed method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_acceleratorkeypressed)
+* `ICoreWebView2Settings3` interface:
+   * [ICoreWebView2Settings3::get_AreBrowserAcceleratorKeysEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings3#get_arebrowseracceleratorkeysenabled)
+   * [ICoreWebView2Settings3::put_AreBrowserAcceleratorKeysEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings3#put_arebrowseracceleratorkeysenabled)
 
 ---
 
@@ -1872,9 +1872,9 @@ WebView2 can specify a default background color.  The color can be any opaque co
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Controller2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2controller2)
-   * [ICoreWebView2Controller2::get_DefaultBackgroundColor property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor)
-   * [ICoreWebView2Controller2::put_DefaultBackgroundColor property method](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
+* `ICoreWebView2Controller2` interface:
+   * [ICoreWebView2Controller2::get_DefaultBackgroundColor method](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor)
+   * [ICoreWebView2Controller2::put_DefaultBackgroundColor method](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
 
 ---
 
@@ -1923,8 +1923,8 @@ WebView2 can connect its composition tree to an [IDCompositionVisual](/windows/w
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2CompositionController` interface:
-   * [ICoreWebView2CompositionController::get_RootVisualTarget property method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_rootvisualtarget)
-   * [ICoreWebView2CompositionController::put_RootVisualTarget property method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#put_rootvisualtarget)
+   * [ICoreWebView2CompositionController::get_RootVisualTarget method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_rootvisualtarget)
+   * [ICoreWebView2CompositionController::put_RootVisualTarget method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#put_rootvisualtarget)
 
 ---
 
@@ -1968,10 +1968,10 @@ https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_we
 ##### [Win32/C++](#tab/win32cpp)
 
 * `CoreWebView2CompositionController` interface:
-   * [ICoreWebView2CompositionController::get_Cursor property method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_cursor)<!--no put-->
-   * [ICoreWebView2CompositionController::add_CursorChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#add_cursorchanged)
-   * [ICoreWebView2CompositionController::remove_CursorChanged event method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#remove_cursorchanged)
-   * [ICoreWebView2CompositionController::get_SystemCursorId property method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_systemcursorid)<!--no put-->
+   * [ICoreWebView2CompositionController::get_Cursor method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_cursor)<!--no put-->
+   * [ICoreWebView2CompositionController::add_CursorChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#add_cursorchanged)
+   * [ICoreWebView2CompositionController::remove_CursorChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#remove_cursorchanged)
+   * [ICoreWebView2CompositionController::get_SystemCursorId method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_systemcursorid)<!--no put-->
    * [ICoreWebView2CompositionController::SendMouseInput method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#sendmouseinput)
    * [ICoreWebView2CompositionController::SendPointerInput method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#sendpointerinput)
 * `ICoreWebView2Environment3` interface:
@@ -2005,7 +2005,7 @@ Use the following APIs to forward `IDropTarget` events from the system to the We
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2CompositionController3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3)
+* `ICoreWebView2CompositionController3` interface:
    * [ICoreWebView2CompositionController3::DragEnter method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3#dragenter)
    * [ICoreWebView2CompositionController3::DragLeave method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3#dragleave)
    * [ICoreWebView2CompositionController3::DragOver method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3#dragover)
@@ -2029,8 +2029,8 @@ Not applicable.
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2CompositionController2` interface:
-   * [ICoreWebView2CompositionController2::get_AutomationProvider property method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller2#get_automationprovider)<!--no put-->
-* [ICoreWebView2Environment4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environment4)
+   * [ICoreWebView2CompositionController2::get_AutomationProvider method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller2#get_automationprovider)<!--no put-->
+* `ICoreWebView2Environment4` interface:
    * [ICoreWebView2Environment4::GetAutomationProviderForWindow method](/microsoft-edge/webview2/reference/win32/icorewebview2environment4#getautomationproviderforwindow)<!--C++ only-->
 
 ---
@@ -2070,16 +2070,16 @@ See also:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Environment7 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environment7)
-   * [ICoreWebView2Environment7::get_UserDataFolder property method](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!--no put-->
-* [ICoreWebView2Environment10 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environment10)
+* `ICoreWebView2Environment7` interface:
+   * [ICoreWebView2Environment7::get_UserDataFolder method](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!--no put-->
+* `ICoreWebView2Environment10` interface:
    * [ICoreWebView2Environment10::CreateCoreWebView2CompositionControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)<!-- c#: might ~=CreateCoreWebView2CompositionControllerAsync -->
    * [ICoreWebView2Environment10::CreateCoreWebView2ControllerOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controlleroptions)
    * [ICoreWebView2Environment10::CreateCoreWebView2ControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controllerwithoptions)
-* [ICoreWebView2EnvironmentOptions2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2)
-   * [ICoreWebView2EnvironmentOptions2::get_ExclusiveUserDataFolderAccess property method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#get_exclusiveuserdatafolderaccess)
-   * [ICoreWebView2EnvironmentOptions2::put_ExclusiveUserDataFolderAccess property method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#put_exclusiveuserdatafolderaccess)
-* [ICoreWebView2Profile2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile2)
+* `ICoreWebView2EnvironmentOptions2` interface:
+   * [ICoreWebView2EnvironmentOptions2::get_ExclusiveUserDataFolderAccess method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#get_exclusiveuserdatafolderaccess)
+   * [ICoreWebView2EnvironmentOptions2::put_ExclusiveUserDataFolderAccess method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#put_exclusiveuserdatafolderaccess)
+* `ICoreWebView2Profile2` interface:
    * [ICoreWebView2Profile2::ClearBrowsingData method](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdata)
    * [ICoreWebView2Profile2::ClearBrowsingDataAll method](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataall)
    * [ICoreWebView2Profile2::ClearBrowsingDataInTimeRange method](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataintimerange)
@@ -2146,13 +2146,13 @@ Create an options object that defines a profile:
 
 <!-- Ref topic breakout: small dedicated iface.  link to iface to bring up overview, and link to methods to show method names -->
 Create a WebView2 control that uses the profile:
-* [ICoreWebView2Environment10 interface](/microsoft-edge/webview2/reference/win32/icorewebview2environment10)
+* `ICoreWebView2Environment10` interface:
    * [ICoreWebView2Environment10::CreateCoreWebView2ControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controllerwithoptions)
    * [ICoreWebView2Environment10::CreateCoreWebView2CompositionControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)
 
 Access and manipulate the profile:
-* [ICoreWebView2_13 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_13)
-   * [ICoreWebView2_13::get_Profile property method](/microsoft-edge/webview2/reference/win32/icorewebview2_13#get_profile)<!--no put-->
+* `ICoreWebView2_13` interface:
+   * [ICoreWebView2_13::get_Profile method](/microsoft-edge/webview2/reference/win32/icorewebview2_13#get_profile)<!--no put-->
 * [ICoreWebView2Profile interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile)
 * [ICoreWebView2Profile2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile2) - Methods to clear browsing data.<!--keep text-->
 
@@ -2184,7 +2184,7 @@ Analyze and debug performance, handle performance-related events, and manage mem
 
 * `ICoreWebView2_3` interface:
    * [ICoreWebView2_3::TrySuspend method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)
-   * [ICoreWebView2_3::get_IsSuspended property method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!--no put-->
+   * [ICoreWebView2_3::get_IsSuspended method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!--no put-->
    * [ICoreWebView2_3::Resume method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)
 * `ICoreWebView2_6` interface:
    * [ICoreWebView2_6::OpenTaskManagerWindow method](/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)
@@ -2244,8 +2244,8 @@ Receiver:
 
 Open:
 * `ICoreWebView2Settings` interface:
-   * [ICoreWebView2Settings::get_AreDevToolsEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredevtoolsenabled)
-   * [ICoreWebView2Settings::put_AreDevToolsEnabled property method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredevtoolsenabled)
+   * [ICoreWebView2Settings::get_AreDevToolsEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredevtoolsenabled)
+   * [ICoreWebView2Settings::put_AreDevToolsEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredevtoolsenabled)
 * `ICoreWebView2` interface:
    * [ICoreWebView2::OpenDevToolsWindow method](/microsoft-edge/webview2/reference/win32/icorewebview2#opendevtoolswindow)
 
