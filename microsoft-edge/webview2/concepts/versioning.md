@@ -127,7 +127,7 @@ To help you evaluate the Experimental APIs and share your feedback, use the [Web
 
 ### Moving from Experimental APIs to Stable APIs
 
-Once an API has been moved from Experimental to Stable status, you need to move your app's code to the Stable API.  Using Experimental APIs is not recommended for production apps, but it's okay to use Stable APIs (in a Prerelease SDK) in production apps.  Follow these practices when moving your app from using Experimental APIs to using Stable APIs:
+Once an API has been moved from Experimental to Stable status, you need to move your app's code to the Stable API.  Using Experimental APIs or a Prerelease SDK is not recommended for production apps.  Follow these practices when moving your app from using Experimental APIs to using Stable APIs:
 
 *  In your project in Visual Studio, update your WebView2 SDK package version to a newer Prerelease SDK or Release SDK.  See [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
 
