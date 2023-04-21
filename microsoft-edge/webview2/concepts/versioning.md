@@ -112,30 +112,30 @@ The Experimental APIs in a WebView2 Prerelease SDK package aren't guaranteed to 
 
 For full support of Experimental APIs, use a Microsoft Edge preview channel, not the WebView2 Evergreen Runtime.  When a _prerelease_ version of the WebView2 SDK is initially made available, that SDK only works with Microsoft Edge Canary.  Soon after that, the Prerelease SDK also works with the Beta and Dev channels.
 
-Use a Prerelease SDK to try out new APIs early and provide feedback before the Experimental APIs are promoted to become Stable, forward-compatible APIs (first in the Prerelease SDK and then in the Release SDK).
+Use a Prerelease SDK to try out new, Experimental APIs early and provide feedback before the Experimental APIs are promoted to become Stable, forward-compatible APIs.
 
-*  The Experimental APIs that are in a Prerelease SDK aren't guaranteed to be forward-compatible.
-*  The Stable APIs that are in a Prerelease SDK are forward-compatible.
-*  The Release APIs, in a Release SDK, are forward-compatible.
+*  The Experimental APIs (in a Prerelease SDK) aren't guaranteed to be forward-compatible.
+*  The Stable APIs (in a Prerelease SDK) are forward-compatible.
+*  The Release APIs (in a Release SDK) are also forward-compatible.
 
 For more information, see [Forward compatibility of APIs](#forward-compatibility-of-apis), above.
 
-The WebView2 team is seeking feedback on Experimental WebView2 APIs that might be promoted to Stable in future Prerelease SDKs and then Release SDKs.  The Experimental APIs are indicated as "experimental" in the WebView2 SDK Reference documentation.
+The WebView2 team is seeking feedback on Experimental WebView2 APIs that might be promoted to Stable in future Prerelease SDKs (and then promoted to Release in Release SDKs).  The Experimental APIs are indicated as "experimental" in the WebView2 SDK Reference documentation.
 
 To help you evaluate the Experimental APIs and share your feedback, use the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
 
 ### Moving from Experimental APIs to Stable APIs
 
-Once an API has been moved from Experimental to Stable status, you need to move your app's code to the Stable API.  Using Experimental APIs is not recommended for production apps.  Follow these practices when moving your app from using Experimental APIs to using Stable APIs (possibly in a Release SDK, and then in Release SDKs):
+Once an API has been moved from Experimental to Stable status, you need to move your app's code to the Stable API.  Using Experimental APIs is not recommended for production apps, but it's okay to use Stable APIs (in a Prerelease SDK) in production apps.  Follow these practices when moving your app from using Experimental APIs to using Stable APIs:
 
-*  In your project in Visual Studio, update your WebView2 SDK package version.  See [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
+*  In your project in Visual Studio, update your WebView2 SDK package version to a newer Prerelease SDK or Release SDK.  See [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
 
-*  Update your app's code to use Stable APIs instead of Experimental APIs (for COM).  The Stable API will be supported with bug fixes, but the Experimental API will be deprecated, and not available in the newer (Prerelease or Release) SDK.  After the promotion of an API to Stable, the Experimental version of that API is supported for two releases, in a deprecated state.  In subsequent versions of the Prerelease SDK, Experimental APIs might be modified, removed, or added.
+*  Update your app's code to use Stable APIs instead of Experimental APIs (for COM).  The Stable API will be supported with bug fixes, but the Experimental API will be deprecated, and not available in the newer (Prerelease or Release) SDK.  After an API is promoted to Stable, the Experimental version of that API is supported for two releases of the Prerelease SDK, in a deprecated state.  In subsequent versions of the Prerelease SDK, Experimental APIs might be modified, removed, or added.
 
 *  Always use feature detection, to ensure that the Stable API is implemented in the user's version of the WebView2 Runtime.  See [Feature-detecting to test whether the installed Runtime supports recently added APIs](#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis), below.
 
-*  Note for .NET only: In a Prerelease WebView2 SDK, the .NET Stable APIs will fallback to the corresponding experimental APIs, if the user's WebView2 Runtime has only the Experimental API implementation and doesn't have the Stable API implementation.
+*  Note for .NET only: In a Prerelease WebView2 SDK, the .NET Stable APIs will fallback to the corresponding Experimental APIs, if the user's WebView2 Runtime has only the Experimental API implementation and doesn't have the Stable API implementation.
 
 
 <!-- ====================================================================== -->
