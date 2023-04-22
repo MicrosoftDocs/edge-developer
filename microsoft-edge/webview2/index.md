@@ -70,7 +70,7 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.  The following diagram shows the high-level WebView2 components on your development machine and user machines.
 
 ![Full diagram of WebView2](./index-images/full-diagram.png)
-<!-- caution: shared png; owned by index.md, also linked to by platform-architecture.md -->
+<!-- .png is owned by index.md, also linked to by platform-components.md -->
 
 Developing a WebView2 app involves software residing in the following places:
 

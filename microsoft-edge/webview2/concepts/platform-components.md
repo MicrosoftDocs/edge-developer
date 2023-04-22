@@ -7,16 +7,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
-ms.date: 04/17/2023
+ms.date: 04/21/2023
 ---
 # Overview of the components of the WebView2 platform
-<!-- todo: propagate the title.   rename filename to platform-components.md -->
 
 To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.  The following diagram shows the high-level WebView2 components on your development machine and user machines.
 
 ![Full diagram of WebView2](../index-images/full-diagram.png)
-<!-- caution: shared png; owned by index.md, also linked to by platform-architecture.md -->
-<!-- todo: ask a.l. about "-side" term'y in industry like in TOC addHost -->
+<!-- .png is owned by index.md, also linked to by platform-components.md -->
 
 Developing a WebView2 app involves software residing in the following places:
 
@@ -28,31 +26,35 @@ Developing a WebView2 app involves software residing in the following places:
 | Resources | The present documentation; the WebView2Samples repo including basic Getting Started WebView2 projects and more full-featured Sample projects; the WebView2Announcements repo; and the WebView2Feedback repo. |
 
 
-todo: like the above table, talk through each box of the full diagram:
+<!-- todo: like the above table, talk through each box of the full diagram: -->
 
 Details of the Dev machine:
-*  Visual Studio project
-   *  Layout designer
-      *  WebView2 control instances
-      *  Native control instances
-   *  SDK
-      *  Platform APIs
-      *  `AddHostObjectToScript`
-      *  JavaScript APIs (WebView2Script package)
-*  Runtime
+*  Visual Studio project -- Use a Visual Studio project template to create a standard platform app, and then add the WebView2 SDK to the project as a NuGet package.
+   *  Layout designer -- lay out your controls in Visual Studio.
+      *  WebView2 control instances -- web content areas of your app.  The app's web-side code runs in this control.
+      *  Native control instances -- native controls and panes of your app.
+   *  WebView2 SDK
+      *  Per-platform WebView2 APIs <!-- todo: add to diagram --> including CoreWebView2, CoreWebView2Controller, CoreWebView2Environment.  Primarily called by native-side code.
+      *  `AddHostObjectToScript` -- enables exposing platform APIs and WebView2 APIs to JavaScript code.
+      *  [JavaScript APIs](/microsoft-edge/webview2/webview2-api-reference#javascript) (WebView2Script package) -- called by web-side code to communicate with the host application.
+   *  Platform APIs -- non-WebView2 APIs provided by the platform; can be exposed to web-side code. <!-- todo: add to diagram -->
+*  Runtime -- browser component that contains WebView2 APIs.
 
-Details of Distribute the Runtime:
-*  Evergreen
-   *  Link to the Evergreen Runtime bootstrapper
-   *  Package the Evergreen Runtime bootstrapper
-   *  Package the Evergreen Runtime standalone installer
-*  Package a fixed-version Runtime
+There are three ways to distribute the Evergreen Runtime to user machines, as well as a fixed-version Runtime option:
+*  Evergreen Runtime -- The WebView2 Evergreen Runtime is automatically updated to the latest version, on user machines, any of several ways with different degrees of relying on an Internet connection:
+   *  Link to the Evergreen Runtime bootstrapper from your app installer.  Maximally relies on an internet connection.
+   *  Package the Evergreen Runtime bootstrapper into your app installer.  Moderately relies on an internet connection.
+   *  Package the Evergreen Runtime standalone installer.  Minimally relies on an internet connection.
+*  Package a fixed-version Runtime.  Gives fully determinate control of which version of which APIs are present.
+
+For more information, see [Approaches for distributing the WebView2 Runtime](#approaches-for-distributing-the-webview2-runtime) below.
+
 
 Details of the User machine:
 *  Host app
    *  WebView2 native code
-   *  WebView2 web code
-   *  WebView2 control instances
+   *  WebView2 web code -- the WebView2 APIs are mostly called by native-side code|web-side code.
+   *  WebView2 control instances -- your app's web-side code runs in a WebView2 control.
    *  Non-WebView2 native code
    *  Non-WebView2 web code
    *  Native control instances
@@ -63,6 +65,8 @@ Resources include:
 *  Samples repo
 *  Announcements repo
 *  Feedback repo
+
+See [Resources](#resources) below.
 
 
 <!-- ====================================================================== -->
@@ -198,7 +202,7 @@ There are several ways to distribute the WebView2 Runtime with your app:
 
 
 <!-- ------------------------------ -->
-#### Diagram: Four approaches to distribute the WebView2 Runtime
+#### Approaches for distributing the WebView2 Runtime
 
 ![Diagram: Four approaches to distribute the WebView2 Runtime](./platform-components-images/distribute-runtime.png)
 
