@@ -28,7 +28,7 @@ The main article about the Inspect tool is [Analyze HTML pages using the Inspect
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. Click the **Inspect** (![Inspect](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -75,7 +75,7 @@ In addition to the information overlay, the **Inspect** tool also provides regio
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. Click the **Inspect** button (![Inspect tool icon](../media/inspect-tool-icon-light-theme.png)) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
@@ -99,7 +99,7 @@ If you want to configure the grid overlay or flexbox overlay, in the **Elements*
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. In DevTools, click the **Inspect** button (![the Inspect tool](../media/inspect-tool-icon-light-theme.png)) in the top-left corner, so that the button is highlighted (blue).
 

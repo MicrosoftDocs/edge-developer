@@ -127,7 +127,7 @@ The following table lists the currently available permission strings to use in y
 | `system.storage` | Gives your extension access to the `chrome.system.storage` API. |
 | `tabCapture` | Gives your extension access to the `chrome.tabCapture` API. |
 | `tabGroups` | Gives your extension access to the `chrome.tabGroups` API. |
-| `tabs` | Gives your extension access to privileged fields of the `Tab` objects that can be used by several APIs, including `chrome.tabs` and `chrome.windows`.  In many circumstances, your extension doesn't need to declare the `tabs` permission, to make use of these APIs. |
+| `tabs` | Gives your extension access to privileged fields of the **Tab** objects that can be used by several APIs, including `chrome.tabs` and `chrome.windows`.  In many circumstances, your extension doesn't need to declare the `tabs` permission, to make use of these APIs. |
 | `topSites` | Gives your extension access to the `chrome.topSites` API. |
 | `tts` | Gives your extension access to the `chrome.tts` API. |
 | `ttsEngine` | Gives your extension access to the `chrome.ttsEngine` API. |

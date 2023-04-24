@@ -85,7 +85,7 @@ $_
 
 1. To open the **Console** tool: In Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tab.
 
-1. Click in the **Console**, type the expression `2+2`, and then press `Enter`:
+1. Click in the **Console**, type the expression `2+2`, and then press **Enter**:
 
    In the following figure, a simple expression (`2+2`) is evaluated.  The `$_` property is then evaluated, which contains the same value:
 
@@ -97,7 +97,7 @@ $_
    
    The simple expression (`2+2`) is evaluated as you type, and the Console outputs the number `4`.  The `$_` property takes on the value `4`.
 
-1. Type the expression `$_`, and then press `Enter`:
+1. Type the expression `$_`, and then press **Enter**:
 
    ```javascript
    $_
@@ -112,7 +112,7 @@ $_
 
 1. To open the **Console** tool: In Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tab.
 
-1. Paste the following code into the **Console**, and then press `Enter`:
+1. Paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    ["john", "paul", "george", "ringo"]
@@ -120,7 +120,7 @@ $_
    
    The evaluated expression is an array of names.
 
-1. Type the following code into the **Console**, and then press `Enter`:
+1. Type the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    $_
@@ -129,7 +129,7 @@ $_
    `$_` represents the previously evaluated expression, which is an array of names.
 
    
-1. Type the following code into the **Console**, and then press `Enter`:
+1. Type the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    $_.length
@@ -137,7 +137,7 @@ $_
 
    The expression `$_.length` is evaluated to find the length of the array, which is the number 4.  `$_` now takes on the value 4, instead of an array of names.
    
-1. Type the following code into the **Console**, and then press `Enter`:
+1. Type the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    $_
@@ -290,8 +290,10 @@ Here's the result.  `$$()` selects all images that appear after the specified `<
 
 ![Using $$() to select all images that appear after the specified <div> element in the webpage and display the sources](../media/console-element-selector-image-filter-all.msft.png)
 
-> [!NOTE]
-> Press `Shift`+`Enter` in the **Console** to start a new line without running the script.
+
+###### Entering a newline character 
+
+In the **Console**, to start a new line without running the script, press **Shift+Enter**.
 
 <br/><br/>
 

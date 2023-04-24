@@ -22,8 +22,8 @@ PWAs can be installed locally and used in a standalone window, or used in a web 
 You can open DevTools on your PWA in the same way in both cases. To open DevTools, use one the following ways:
 
 * Right-click any item in the app user interface, and then select **Inspect**.
-* Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
-* Press `F12`.
+* Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
+* Press **F12**.
 
 To learn more, see [Open DevTools](../../devtools-guide-chromium/overview.md#open-devtools) in _Overview of DevTools_.
 
@@ -35,9 +35,9 @@ When developing your PWA, you make changes to your source code and then test the
 
 The fastest way to test your changes is to load your PWA in a web browser by using its local development URL, for example `http://localhost:8080`. Testing in a browser is faster because you don't need to install the PWA locally first.
 
-To test your changes, refresh the browser tab where the PWA is loaded by pressing `F5`.
+To test your changes, refresh the browser tab where the PWA is loaded by pressing **F5**.
 
-Once you have a service worker which caches static files, pressing `F5` might not always reload your latest changes in the browser. To force the browser to reload your changes, use one of the following ways:
+Once you have a service worker which caches static files, pressing **F5** might not always reload your latest changes in the browser. To force the browser to reload your changes, use one of the following ways:
 
 * Open DevTools, right-click **Refresh** in the browser toolbar, and click **Empty cache and hard refresh**.
 * Open DevTools, open the **Application** Tool, click **Service Workers**, and then select the **Bypass for network** checkbox.

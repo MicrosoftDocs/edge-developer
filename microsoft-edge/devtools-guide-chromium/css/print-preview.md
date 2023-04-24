@@ -24,12 +24,12 @@ ms.date: 05/04/2021
 
 The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) controls how a page looks when printed.  To force a page into print preview mode:
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
    > [!div class="mx-imgBorder"]
    > ![Opening the command menu](../media/print-preview-open-command-menu.png)
 
-1. Type `rendering`, select **Show Rendering**, and then press `Enter`.
+1. Type `rendering`, select **Show Rendering**, and then press **Enter**.
 
    The **Rendering** panel opens in the **Drawer**.
 

@@ -481,7 +481,7 @@ Your browsing history is collected and used for personalization only if all four
 * Your group policies managed by an organization (employer, school, and so on) allow personalization.
 * You not using the browser in **Guest** or **InPrivate** modes.
 
-Your browsing history and other data are transferred over HTTPS and attached to your Microsoft account information.  Your browsing history is stored on secure Microsoft servers.  You may view and delete previously shared browsing history by going to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).  Your browsing history is stored on secure Microsoft servers for up to 45 days.  After 45 days, the data is deleted and not used for personalization.
+Your browsing history and other data are transferred over HTTPS and attached to your Microsoft account information.  Your browsing history is stored on secure Microsoft servers.  You may view and delete previously shared browsing history by going to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).  Your browsing history is stored on secure Microsoft servers for up to 180 days.  After 180 days, the data is deleted and not used for personalization.
 
 You may modify your interests or opt-out of personalized ads from the [Ad settings](https://account.microsoft.com/privacy/ad-settings) on the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
 
@@ -767,7 +767,7 @@ When you add a new language to Microsoft Edge, the browser downloads the diction
  
 #### Text prediction 
 
-Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press `Tab` or the `Right arrow` key to accept them. Password fields will not offer text predictions.
+Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press **Tab** or the **Right Arrow** key to accept them. Password fields will not offer text predictions.
 
 To turn off text predictions in Microsoft Edge: 
 

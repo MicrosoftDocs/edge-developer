@@ -28,11 +28,11 @@ Many websites take advantage of user location in order to provide a more relevan
 
 If you are building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.  To override your geolocation in Microsoft Edge DevTools:
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
    ![The Command Menu](../media/device-mode-console-command-menu.msft.png)
 
-1. Type `sensors`, select **Drawer: Show Sensors**, and then press `Enter`.  The **Sensors** tool opens at the bottom of the DevTools window.
+1. Type `sensors`, select **Drawer: Show Sensors**, and then press **Enter**.  The **Sensors** tool opens at the bottom of the DevTools window.
 
 1. Click the **Location** dropdown list, and then:
    *  Select a city, such as `Tokyo`.

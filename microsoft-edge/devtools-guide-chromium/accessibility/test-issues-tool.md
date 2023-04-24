@@ -15,9 +15,9 @@ There are several ways to open the **Issues** tool, such as:
 
 *  Click the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) in the upper right of DevTools.
 
-*  In the **Elements** tool, in the DOM tree, press `Shift` while clicking a wavy underline on an element.
+*  In the **Elements** tool, in the DOM tree, press **Shift** while clicking a wavy underline on an element.
 
-*  In the **Command Menu**, type **issues**, select **Show Issues**, and then press `Enter`.
+*  In the **Command Menu**, type **issues**, select **Show Issues**, and then press **Enter**.
 
 
 <!-- ====================================================================== -->
@@ -25,7 +25,7 @@ There are several ways to open the **Issues** tool, such as:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
    In the upper right, the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) appears.  The **Issues counter** is a speech-bubble icon along with the number of automatically detected issues.
 
@@ -47,7 +47,7 @@ To check whether input fields have labels connected to them, use the **Issues** 
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. In the upper right, click the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)).  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
 
@@ -85,7 +85,7 @@ There's also another way to test for lack of connections between elements:
 
    A focus-indicator box correctly appears on the input text box next to the **Other** label, because there are matching `for` and `id` attribute values.
 
-1. In the **Issues tool**, click the **Further reading** to learn more about the issue.  To open the link in a new tab, press `Ctrl` (Windows, Linux) or `Command` (macOS) while clicking the link.
+1. In the **Issues tool**, click the **Further reading** to learn more about the issue.  To open the link in a new tab, press **Ctrl** (Windows, Linux) or **Command** (macOS) while clicking the link:
 
    ![Link on the Issues tab pointing to more in-depth information about the issue](../media/a11y-testing-more-information-links.msft.png)
 
@@ -99,7 +99,7 @@ To automatically check whether alt text is provided for images, use the **Issues
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. In the upper right of DevTools, click the **Issues** counter.  The **Issues** tool opens.
 
@@ -117,7 +117,7 @@ To automatically check whether text colors have enough contrast, use the **Issue
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. In the upper right of DevTools, click the **Issues** counter.  The **Issues** tool opens.
 
@@ -134,9 +134,9 @@ To automatically check whether text colors have enough contrast, use the **Issue
 
 ### Wavy underlines in the DOM tree indicate automatically detected issues
 
-The DOM tree in the **Elements** tool flags issues directly in the HTML with wavy underlines.  These issues are reported by the **Issues** tool.  When you press `Shift` while clicking any element with a wavy underline, the **Issues tool** opens.
+The DOM tree in the **Elements** tool flags issues directly in the HTML with wavy underlines.  These issues are reported by the **Issues** tool.  When you press **Shift** while clicking any element with a wavy underline, the **Issues tool** opens.
 
-1. In the **Elements** tool, in the DOM tree, press `Shift` while clicking the element `<input type="search">`, which has a wavy line under `input`.  The **Issues tool** is displayed, and shows the issue for that element.
+1. In the **Elements** tool, in the DOM tree, press **Shift** while clicking the element `<input type="search">`, which has a wavy line under `input`.  The **Issues tool** is displayed, and shows the issue for that element.
 
    ![An element that has a wavy underline in the DOM view has an issue](../media/a11y-testing-wavy-underlines.msft.png)
 

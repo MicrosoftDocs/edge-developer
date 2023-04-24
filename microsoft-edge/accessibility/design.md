@@ -30,11 +30,11 @@ Users who are blind or who have low vision rely on screen readers to interpret a
 
 Many accessibility users rely on the keyboard to navigate and operate the UI by:
 
-*  Moving focus among elements by using the `Tab` key.
+*  Moving focus among elements by pressing the **Tab** key or **Shift+Tab** keys.
 
 *  Navigating in container elements such as lists, grids, and tree views by using the arrow keys.
 
-*  Invoking actions by pressing the `Enter` key or `Spacebar`.
+*  Invoking actions by pressing the **Enter** key or **Spacebar**.
 
 *  Using shortcut keys to efficiently access other app functionality.
 

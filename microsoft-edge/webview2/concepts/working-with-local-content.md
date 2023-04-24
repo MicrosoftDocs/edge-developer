@@ -70,7 +70,7 @@ To copy the full path with "file" prefix for a local file:
 
 1. Optionally, clone the Demos repo so you have a local copy.  See [Step 5: Clone the Demos repo](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-5-clone-the-demos-repo) in _Installing the DevTools extension for Visual Studio Code_.
 
-1. In Microsoft Edge, press `Ctrl`+`O` to open a file.  Open a local `.html` file, such as the locally cloned file `Demos/demo-to-do/index.html`:
+1. In Microsoft Edge, press **Ctrl+O** to open a file.  Open a local `.html` file, such as the locally cloned file `Demos/demo-to-do/index.html`:
 
    `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`
 
@@ -82,7 +82,7 @@ To copy the full path with "file" prefix for a local file:
 
    ![Address bar of Microsoft Edge initially hiding the file:/// prefix](./working-with-local-content-images/address-bar-without-file-prefix.png)
 
-1. Click the Address bar and then press the `Home` key, or press `Ctrl`+`A` to select the entire path.
+1. Click the Address bar and then press the **Home** key, or press **Ctrl+A** to select the entire path.
 
    ![Address bar of Microsoft Edge now showing the file:/// prefix](./working-with-local-content-images/address-bar-with-file-prefix.png)
 
@@ -360,10 +360,11 @@ class ManagedStream : Stream {
             {
                 s_.Dispose();
             }
-        } catch (Exception e)
+        } 
+        catch
         {
             s_.Dispose();
-            throw e;
+            throw;
         }
         return read;
     }
@@ -478,10 +479,10 @@ class ManagedStream : IRandomAccessStream
                 }
             });
         }
-        catch (Exception e)
+        catch
         {
             s_.Dispose();
-            throw e;
+            throw;
         }
         return result;
     }

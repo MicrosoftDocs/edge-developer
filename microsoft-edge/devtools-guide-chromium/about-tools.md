@@ -91,7 +91,7 @@ In the **Command Menu**:
 
 * _Panel tools_ are tools which open in the main toolbar by default.
 
-* _Drawer tools_ are tools which open in the Drawer toolbar by default, at the bottom of DevTools.  Press `Esc` to show or hide the Drawer.
+* _Drawer tools_ are tools which open in the Drawer toolbar by default, at the bottom of DevTools.  Press **Esc** to show or hide the Drawer.
 
 The **Command Menu** first lists the Panel tools, and then the Drawer tools:
 
@@ -99,7 +99,7 @@ The **Command Menu** first lists the Panel tools, and then the Drawer tools:
 
 To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom** or **Move to top**.
 
-To open the **Command Menu**, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Or, click the **Customize and control DevTools** (![Customize icon](media/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
+To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Or, click the **Customize and control DevTools** (![Customize icon](media/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
 
 
 <!-- ====================================================================== -->

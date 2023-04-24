@@ -17,7 +17,7 @@ CSS mirror editing provides two-way interaction so that you can change the CSS e
 
 CSS mirror editing is enabled by default in the extension.  As a result, in the DevTools extension, in the **Styles** tab in the **Elements** tool, when you change CSS selectors, rules, or values, the local `.css` file is automatically edited as you change values.
 
-For example, when you select a point size value for the body element and then press `Up Arrow` or `Down Arrow`, if you have the `.css` file opened, you can see the value automatically change in the `.css` file in realtime while you change the value in the **Styles** tab:
+For example, when you select a point size value for the body element and then press **Up Arrow** or **Down Arrow**, if you have the `.css` file opened, you can see the value automatically change in the `.css` file in realtime while you change the value in the **Styles** tab:
 
 ![Live editing of the .css file when you change values in the Styles tab](./css-mirror-editing-styles-tab-images/live-mirror-editing.png)
 

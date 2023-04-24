@@ -36,7 +36,7 @@ To open the Command Menu:
 
    ![The Run Command](../media/command-menu-options-run-command.msft.png)
 
-   Or, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
+   Or, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
 
 

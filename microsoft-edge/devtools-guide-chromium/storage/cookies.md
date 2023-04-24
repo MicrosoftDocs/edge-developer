@@ -30,7 +30,7 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 <!-- ====================================================================== -->
 ## Open the Cookies pane
 
-1. Open DevTools on the webpage you want to edit.  For example, right-click the page and then select **Inspect**, or press `F12`.  For additional ways, see [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
+1. Open DevTools on the webpage you want to edit.  For example, right-click the page and then select **Inspect**, or press **F12**.  For additional ways, see [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
 
 2. Click the **Application** tab to open the **Application** tool. The **Manifest** pane opens:
 

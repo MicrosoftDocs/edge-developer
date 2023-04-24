@@ -79,7 +79,7 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 
 The DevTools automatically match the language you use for Microsoft Edge in `edge://settings/languages`.
 
-If you want Microsoft Edge to be in one language and your DevTools to remain in English, select `F1` in the DevTools to open [Settings](../../../customize/index.md#settings) and disable **Match browser language**.
+If you want Microsoft Edge to be in one language and your DevTools to remain in English, press **F1** in DevTools to open [Settings](../../../customize/index.md#settings) and disable **Match browser language**.
 
 ![The DevTools in German](../../images/2020/01/localized-devtools.msft.png)
 
@@ -117,7 +117,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 ![The 3D View in the DevTools](../../images/2020/01/3dview.msft.png)
 
-To access the 3D View, press `Ctrl`+`Shift`+`P` to open the Command Menu, start typing `3d view`, and then select **Show 3D View**.
+To access the 3D View, press **Ctrl+Shift+P** to open the Command Menu, start typing `3d view`, and then select **Show 3D View**.
 
 The Microsoft Edge team is working with the Chromium team on the UI and adding more functionality to the 3D View, so please use the **Send Feedback** icon!
 

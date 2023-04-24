@@ -77,7 +77,7 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 | Russian – русский | Spanish - español |
 -->
 
-Go to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Select `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.
+Go to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Press **F1** in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.
 
 ![The DevTools in German](../../images/2019/12/localized-devtools.msft.png)
 
@@ -113,7 +113,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 ![The 3D View in DevTools](../../images/2019/12/3dview.msft.png)
 
-To access the 3D View, go to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.
+To access the 3D View, go to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press **F1** in DevTools, or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, press **Ctrl+Shift+P**, type in **3D View** and select **Show 3D View**.
 
 We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](../../../contact.md).
 
@@ -260,7 +260,7 @@ After [logging network activity in the Network panel](../../../network/index.md)
 *  The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.
 *  The resources below the inspected resource are the **dependencies**.  In the screenshot above, `https://dc.services.visualstudio.com/v2/track` is a dependency of `ai.2.min.js`.  In other words, `ai.2.min.js` caused the network request for `https://dc.services.visualstudio.com/v2/track`.
 
-Initiator and dependency information can also be accessed by holding `Shift` and then hovering over network resources.  See [Display initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies) in _Network features reference_.
+Initiator and dependency information can also be accessed by holding **Shift** and then hovering over network resources.  See [Display initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies) in _Network features reference_.
 
 Chromium issue [#842488](https://crbug.com/842488)
 
