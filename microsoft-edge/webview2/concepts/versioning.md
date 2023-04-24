@@ -6,19 +6,19 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/21/2023
+ms.date: 04/24/2023
 ---
 # Understand the different WebView2 SDK versions
 
 The NuGet package for the WebView2 SDK contains both a release and prerelease package.  Either use a prerelease SDK with a preview channel of Microsoft Edge, or use a release SDK with the WebView2 Runtime.
 
-New APIs are introduced in phases as follows:
+New APIs are introduced in three phases, as follows:
 
 | API status | Description |
 |---|---|
-| _Experimental_ | Experimental APIs in a Prerelease SDK. |
-| _Stable_ | _Promoted to Stable_ means promoted from Experimental APIs to to Stable APIs in a Prerelease SDK.  Capital 'S' means Stable status in a Prerelease SDK. |
-| _Release_ | _Promoted to Release_ means promoted from Stable APIs in a Prerelease SDK to stable APIs in a Release SDK. |
+| _Experimental_ | 1. First an API is Experimental in a Prerelease SDK.  You can test these APIs and provide feedback.  The API isn't in a Release SDK yet. |
+| _Stable_ | 2. Then the API is promoted to Stable in the Prerelease SDK.  The API isn't in a Release SDK yet. |
+| _Release_ | 3. Then the API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK.  |
 
 _Prerelease_ SDK packages are for use during development if you want to test the latest WebView2 APIs, including the experimental APIs, before support for those APIs is added to the Runtime.  The Canary channel is recommended, because it has the implementations of the latest APIs.  When you want to test and use experimental WebView2 APIs, use the following combination:
 *  A _Prerelease_ version of the WebView2 SDK.
@@ -97,16 +97,17 @@ For full support for the latest APIs in a release version of the SDK, the Runtim
 
 To try out new forthcoming features that are in development, use _Experimental_ APIs.  Experimental APIs are contained in Prerelease versions of the WebView2 SDK, but not in Release versions of the WebView2 SDK.
 
-As mentioned above, new APIs are introduced in phases as follows:
+As mentioned above, new APIs are introduced in three phases, as follows:
 
 | API status | Description |
 |---|---|
-| _Experimental_ | Experimental APIs in a Prerelease SDK. |
-| _Stable_ | _Promoted to Stable_ means promoted from Experimental APIs to to Stable APIs in a Prerelease SDK.  Capital 'S' means Stable status in a Prerelease SDK. |
-| _Release_ | _Promoted to Release_ means promoted from Stable APIs in a Prerelease SDK to stable APIs in a Release SDK. |
+| _Experimental_ | 1. First an API is Experimental in a Prerelease SDK.  You can test these APIs and provide feedback.  The API isn't in a Release SDK yet. |
+| _Stable_ | 2. Then the API is promoted to Stable in the Prerelease SDK.  The API isn't in a Release SDK yet. |
+| _Release_ | 3. Then the API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK.  |
 
 
-### Developing with Experimental APIs and providing feedback
+<!-- ------------------------------ -->
+#### Developing with Experimental APIs and providing feedback
 
 The Experimental APIs in a WebView2 Prerelease SDK package aren't guaranteed to be forward-compatible, and might be removed in future Runtime updates.
 
@@ -121,11 +122,17 @@ Use a Prerelease SDK to try out new, Experimental APIs early and provide feedbac
 For more information, see [Forward compatibility of APIs](#forward-compatibility-of-apis), above.
 
 The WebView2 team is seeking feedback on Experimental WebView2 APIs that might be promoted to Stable in future Prerelease SDKs (and then promoted to Release in Release SDKs).  The Experimental APIs are indicated as "experimental" in the WebView2 SDK Reference documentation.
+<!-- todo: "experimental" is missing from .NET API Ref:
+https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs.additionalobjects?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true
+Win32:
+https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebmessagereceivedeventargs?view=webview2-1.0.1724-prerelease&preserve-view=true#get_additionalobjects
+-->
 
 To help you evaluate the Experimental APIs and share your feedback, use the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
 
-### Moving from Experimental APIs to Stable APIs
+<!-- ------------------------------ -->
+#### Moving from Experimental APIs to Stable APIs
 
 Once an API has been moved from Experimental to Stable status, you need to move your app's code to the Stable API.  Using Experimental APIs or a Prerelease SDK is not recommended for production apps.  Follow these practices when moving your app from using Experimental APIs to using Stable APIs:
 
