@@ -143,7 +143,7 @@ However, if you prefer to build an app that can only be pinned to the sidebar bu
 
 
 <!-- ====================================================================== -->
-## Detect when your app runs in the sidebar
+## Detect usage in the sidebar
 
 Detecting when your app runs in the sidebar can be useful to provide your users with the best possible experience when your app runs in this specific browser UI surface.
 
