@@ -18,12 +18,21 @@ In addition to loading remote content, content can also be loaded locally into W
 
 These approaches are described below.
 
+| Consideration | Navigating to a file URL | Navigating to an HTML string | Virtual host name mapping | `WebResourceRequested` |
+| --- | --- | --- | --- | --- |
+| Origin based DOM APIs | ✔️ | ❌ | ✔️ | ✔️ |
+| DOM APIs requiring secure context | ❌ | ❌ | ✔️ | ✔️ |
+| Dynamic content | ❌ | ✔️ | ❌ | ✔️ |
+| Additional web resources | ✔️ | ❌ | ✔️  | ✔️ |
+| Additional web resources resolved in WebView2 process | ✔️ | ❌ | ✔️ | ❌ |
+
 
 <!-- ====================================================================== -->
 ## Navigate to a file URL
 
 WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is the simplest and most efficient approach to loading local content.  However, it is less flexible than the other approaches.  Like in a web browser, file URLs are limited in some capabilities:
-*  The document origin will be `null` for a file URL.
+*  The document has an origin that is unique to each file just like in the browser. So APIs that require an origin such as `localStorage`, `indexedDB`, and others will work, but different file URL documents are not considered same origin.
+*  Some newer browser features are limited to https URLs and are not available to file URLs. This includes webcam APIs, geolocation APIs, and notification APIs, among others.
 *  For each resource, the full path must be specified.
 
 
@@ -38,7 +47,7 @@ You must specify the full path of the file, for every resource.  For example:
 file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html
 ```
 
-When specifying a file URL, the app navigates to a specific path, not a domain.  As a result, you can't use cross-origin resources for navigating to a file URL, because `document.origin` is null.
+When specifying a file URL, the app navigates to a specific path, not a domain.  As a result, you can't use cross-origin resources for navigating to a file URL, because `location.origin` is `file://` and cross-origin rules are different for file URLs.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -131,6 +140,12 @@ webView->Navigate(
 Another method to load local content is the `NavigateToString` method.  This approach loads the content into WebView2 directly from a string.  This can be useful if you will be packaging the content via the app code, or if you'd like to dynamically create the content.
 
 Another scenario where navigating to a string might be useful is if you want to load content that is not accessible via a URL. For example, if you have an in-memory representation of an HTML document, you could use the `NavigateToString` method to load that content into the WebView2 control.  This can be useful if you want to avoid the need to write the content to a file or server before loading it into the control.
+
+`NavigateToString` has the drawback that you can only specify the string content of the HTML document and there is no way to represent additional web resources like CSS, images, script and so on. Instead, if you want to reference additional web resources from your HTML document you will need to use one of the other mechanisms described in this document, or represent those additional web resources inline in the HTML document.
+
+Additionally, `NavigateToString` has as its document URI `about:blank` and `null` as its origin. This means you cannot use any DOM API that depends on the origin like `localStorage`, or `indexedDB`.
+
+Just like for file URLs described above, some newer browser features are limited to https URLs and are not available to NavigateToString documents. This includes webcam APIs, geolocation APIs, and notification APIs, among others.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -289,6 +304,8 @@ Another way you can host local content in a WebView2 control is by relying on th
 `WebResourceRequested` allows you to customize the behavior of local content on a per-request basis. This means you can decide which requests to intercept and provide your own content for, and which requests to let the WebView2 control handle normally.  However, customizing the behavior requires more code, such as virtual host mapping, and requires knowledge of HTTP, to be able to construct a proper response. 
 
 From WebView2's perspective, the resource will have come via the network, and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event is also slower than other approaches, due to the needed cross-process communication and processing per each request.
+
+Unlike file URLs and virtual host name mappings, which are resolved in the WebView2 networking process, the `WebResourceRequested` event has to be raised on your WebView2's UI thread in your host app process. This means the WebView2 will pause loading a web page to wait for the event to be sent to your host app process, and then wait for your UI thread to be available, and then wait for your app code to handle the event. This can take some time so make sure that your calls to `AddWebResourceRequestedFilter` are appropriately limited to only the web resources that must raise the `WebResourceRequested` event.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
