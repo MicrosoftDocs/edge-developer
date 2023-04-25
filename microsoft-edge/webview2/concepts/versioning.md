@@ -144,11 +144,6 @@ Use a Prerelease SDK to try out new, Experimental APIs early and provide feedbac
 For more information, see [Forward compatibility of APIs](#forward-compatibility-of-apis), above.
 
 The WebView2 team is seeking feedback on Experimental WebView2 APIs that might be promoted to Stable in future releases.  The Experimental APIs are indicated as "experimental" in the WebView2 SDK Reference documentation, such as: "Note: This an experimental API that is shipped with our prerelease SDK."
-<!-- todo: "experimental" is missing from .NET API Ref:
-https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs.additionalobjects?view=webview2-dotnet-1.0.1724-prerelease&preserve-view=true
-Win32:
-https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebmessagereceivedeventargs?view=webview2-1.0.1724-prerelease&preserve-view=true#get_additionalobjects
--->
 
 To help you evaluate the Experimental APIs and share your feedback, use the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
@@ -172,7 +167,7 @@ Once an API has been moved from Experimental to Stable status, you need to move 
 
 In the Evergreen distribution approach, the client's WebView2 Runtime automatically updates to the latest version available.  However, a user or IT admin might choose to prevent automatic updating of the WebView2 Runtime.  The resulting outdated Runtime on the client might cause compatibility issues with your updated WebView2 app that uses new APIs from a recent SDK.
 
-In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the WebView2 Runtime that is required by your app.  See [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/).  The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.  The latest Runtime supports all APIs that are in the latest Release SDK.
+In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the WebView2 Runtime that is required by your app.  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.  The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.  The latest Runtime supports all APIs that are in the latest Release SDK.
 
 To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, see [Release Notes for the WebView2 SDK](../release-notes.md).
 
