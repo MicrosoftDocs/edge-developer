@@ -305,7 +305,7 @@ Another way you can host local content in a WebView2 control is by relying on th
 
 From WebView2's perspective, the resource will have come via the network, and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event is also slower than other approaches, due to the needed cross-process communication and processing per each request.
 
-Unlike file URLs and virtual host name mappings, which are resolved in the WebView2 networking process, the `WebResourceRequested` event has to be raised on your WebView2's UI thread in your host app process. This means the WebView2 will pause loading a web page to wait for the event to be sent to your host app process, and then wait for your UI thread to be available, and then wait for your app code to handle the event. This can take some time so make sure that your calls to `AddWebResourceRequestedFilter` are appropriately limited to only the web resources that must raise the `WebResourceRequested` event.
+Unlike file URLs and virtual host name mappings, which are resolved in the WebView2 networking process, the `WebResourceRequested` event is raised on your WebView2's UI thread in your host app process. This means the WebView2 will first pause loading a web page to wait for the event to be sent to your host app process, and then wait for your UI thread to be available, and then wait for your app code to handle the event. This can take some time, so make sure that your calls to `AddWebResourceRequestedFilter` are appropriately limited to only the web resources that must raise the `WebResourceRequested` event.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
