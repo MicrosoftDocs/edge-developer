@@ -6,24 +6,11 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/24/2023
+ms.date: 04/25/2023
 ---
 # Understand the different WebView2 SDK versions
 
-The NuGet package for the WebView2 SDK contains both a Prerelease package and a Release package.<!--todo: true?  actually two separate NuGet packages?-->  Either use a Prerelease SDK with a preview channel of Microsoft Edge, or use a Release SDK with the WebView2 Runtime.
-
-<!-- terminology:
-APIs are Experimental or Stable
-SDKs/packages are Prerelease or Release
--->
-
-New APIs are introduced in phases as follows:
-
-| API status | Description |
-|---|---|
-| _Experimental_ | 1. First an API is Experimental in a Prerelease SDK.  You can test these APIs and provide feedback.  The API isn't in a Release SDK yet. |
-| _Stable in a Prerelease SDK_ | 2. Then the API is promoted to Stable in the Prerelease SDK.  The API isn't in a Release SDK yet. |
-| _Stable in a Release SDK_ | 3. Then the Stable API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK. |
+The WebView2 SDK is provided as a Prerelease or Release version of the **Microsoft.Web.WebView2** NuGet package.  Either use a Prerelease SDK with a preview channel of Microsoft Edge, or use a Release SDK with the WebView2 Runtime.
 
 _Prerelease_ SDK packages are for use during development if you want to test the latest WebView2 APIs, including the Experimental APIs, before support for those APIs is added to the Runtime.  The Canary channel is recommended, because it has the implementations of the latest APIs.  When you want to test and use Experimental WebView2 APIs, use the following combination:
 *  A _Prerelease_ version of the WebView2 SDK.
@@ -33,7 +20,32 @@ _Release_ SDK packages only contain Stable APIs, not Experimental APIs.  When yo
 *  A _Release_ version of the WebView2 SDK.
 *  The WebView2 _Runtime_ on your development client.
 
-More detail about the Prerelease and Release SDK packages is provided below.
+More details about the Prerelease and Release SDK packages are provided below.
+
+
+<!-- ------------------------------ -->
+#### Phases of introducing APIs
+
+New APIs are introduced in phases as follows:
+
+| API status | Description |
+|---|---|
+| _Experimental_ | 1. First an API is Experimental in a Prerelease SDK.  You can test these APIs and provide feedback.  The API isn't in a Release SDK yet. |
+| _Stable in a Prerelease SDK_ | 2. Then the API is promoted to Stable in the Prerelease SDK.  The API isn't in a Release SDK yet. |
+| _Stable in a Release SDK_ | 3. Then the Stable API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK. |
+
+<!-- terminology:
+APIs are Experimental or Stable
+SDKs/packages are Prerelease or Release
+-->
+
+
+<!-- ------------------------------ -->
+#### Selecting which type of SDK to use
+
+To select which version of WebView2 SDK NuGet package a Visual Studio project uses, in Visual Studio, right-click a project, select **Manage NuGet Packages**, select or clear the **Include prerelease** checkbox, select the **Microsoft.Web.WebView2** package, and then in the **Version** dropdown list, select a version of the **Microsoft.Web.WebView2** NuGet package.
+
+For details, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  You can also view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 
 
 <!-- ====================================================================== -->

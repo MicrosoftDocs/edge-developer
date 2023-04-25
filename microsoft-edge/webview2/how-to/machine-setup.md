@@ -284,6 +284,12 @@ See also:
 
 
 <!-- ====================================================================== -->
+## Updating the WebView2 Runtime
+
+To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](./concepts/distribution.md).
+
+
+<!-- ====================================================================== -->
 ## See also
 
 * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.

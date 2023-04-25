@@ -6,18 +6,19 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/24/2023
+ms.date: 04/25/2023
 ---
 # Release Notes for the WebView2 SDK
 
-The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) on a four-week cadence.  This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
+The WebView2 team updates the WebView2 SDK on a four-week cadence.  This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
+
+You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 
 Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](webview2-api-reference.md).
 
-<!-- terminology:
-APIs are Experimental or Stable
-SDKs/packages are Prerelease or Release
--->
+
+<!-- ------------------------------ -->
+#### Updating the Runtime and SDK
 
 WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.  Starting with the February 2023 release, the update requirement for each bug fix is indicated as follows:
 
@@ -27,19 +28,21 @@ WebView2 changes may require an update to the Runtime, SDK, or both.  Most new A
 | **Runtime-only** | Only the Runtime needs to be updated. |
 | **SDK-only** | Only the SDK needs to be updated. |
 
-WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time.  As a result, WebView2 Runtime releases generally also include Microsoft Edge updates.  For Microsoft Edge updates, see [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel) and [Release notes for Microsoft Edge Beta Channel](/deployedge/microsoft-edge-relnote-beta-channel).
+WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time.  As a result, WebView2 Runtime releases generally also include Microsoft Edge updates.
+
+*  For Microsoft Edge updates, see [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel) and [Release notes for Microsoft Edge Beta Channel](/deployedge/microsoft-edge-relnote-beta-channel).
+
+*  To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](./concepts/distribution.md).
+
+*  To update the WebView2 SDK, see [Selecting which type of SDK to use](#selecting-which-type-of-sdk-to-use), below.
 
 
 <!-- ------------------------------ -->
-#### Phases of introducing APIs
+#### Selecting which type of SDK to use
 
-New APIs are introduced in phases as follows:
+To select which version of WebView2 SDK NuGet package a Visual Studio project uses, in Visual Studio, right-click a project, select **Manage NuGet Packages**, select or clear the **Include prerelease** checkbox, select the **Microsoft.Web.WebView2** package, and then in the **Version** dropdown list, select a version of the **Microsoft.Web.WebView2** NuGet package.
 
-| API status | Description |
-|---|---|
-| _Experimental_ | 1. First an API is Experimental in a Prerelease SDK.  You can test these APIs and provide feedback.  The API isn't in a Release SDK yet. |
-| _Stable in a Prerelease SDK_ | 2. Then the API is promoted to Stable in the Prerelease SDK.  The API isn't in a Release SDK yet. |
-| _Stable in a Release SDK_ | 3. Then the Stable API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK. |
+For details, see [Install the WebView2 SDK](./how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  You can also view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 
 
 <!-- ------------------------------ -->
@@ -83,6 +86,23 @@ General event pattern:
 Async methods:
 - Win32: XYZ method + XYZCompletedHandler
 - .NET/WinRT: XYZAsync
+-->
+
+
+<!-- ------------------------------ -->
+#### Phases of introducing APIs
+
+New APIs are introduced in phases as follows:
+
+| API status | Description |
+|---|---|
+| _Experimental_ | 1. First an API is Experimental in a Prerelease SDK.  You can test these APIs and provide feedback.  The API isn't in a Release SDK yet. |
+| _Stable in a Prerelease SDK_ | 2. Then the API is promoted to Stable in the Prerelease SDK.  The API isn't in a Release SDK yet. |
+| _Stable in a Release SDK_ | 3. Then the Stable API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK. |
+
+<!-- terminology:
+APIs are Experimental or Stable
+SDKs/packages are Prerelease or Release
 -->
 
 
