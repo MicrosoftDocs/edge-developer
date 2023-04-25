@@ -353,7 +353,7 @@ additionalContent:
         # Card
         - summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft helps you fix your apps and websites at no additional cost.  See offer details for eligibility requirements.
           title: Get no-cost help using App Assure
-          url: https://fasttrack.microsoft.com/portal
+          url: /fasttrack/products-and-capabilities#app-assure
         # Card
         - summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available using a variety of plans to help you get your required level of support.
           title: Microsoft Support for Business

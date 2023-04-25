@@ -129,7 +129,7 @@ The Windows **Share** dialog is displayed.  The user picks an app in which to sh
 
 ![The Windows Share dialog allows the user to pick which app should receive the shared content](../media/devtools-tips-share.png)
 
-You can find the [source code on GitHub](https://github.com/captainbrosset/devtools-tips/).  The app uses the Web Share API in the [share.js](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) source file.
+You can find the [source code on GitHub](https://github.com/captainbrosset/devtools-tips/).  <!-- The app uses the Web Share API in the [share.js](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) source file.  todo: 404; fix destination or update this link -->
 
 
 <!-- ====================================================================== -->
