@@ -143,7 +143,7 @@ Another scenario where navigating to a string might be useful is if you want to 
 
 `NavigateToString` has the drawback that you can only specify the string content of the HTML document; there is no way to represent additional web resources, such as CSS, images, or script. Instead, to reference additional web resources from your HTML document, you must use one of the other mechanisms described in this article, or represent those additional web resources inline in the HTML document.
 
-Additionally, `NavigateToString` has as its document URI `about:blank` and `null` as its origin. This means you cannot use any DOM API that depends on the origin like `localStorage`, or `indexedDB`.
+Additionally, `NavigateToString` has as its document URI `about:blank` and `null` as its origin. This means you cannot use any DOM API that depends on the origin, such as `localStorage` or `indexedDB`.
 
 Just like for file URLs described above, some newer browser features are limited to https URLs and are not available to NavigateToString documents. This includes webcam APIs, geolocation APIs, and notification APIs, among others.
 
