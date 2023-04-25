@@ -26,7 +26,7 @@ The approaches for loading local content into a WebView2 control support the fol
 
 | Scenario | Navigating to a file URL | Navigating to an HTML string | Virtual host name mapping | `WebResourceRequested` |
 | --- | --- | --- | --- | --- |
-| Origin based DOM APIs | ✔️ | ❌ | ✔️ | ✔️ |
+| Origin-based DOM APIs | ✔️ | ❌ | ✔️ | ✔️ |
 | DOM APIs requiring secure context | ❌ | ❌ | ✔️ | ✔️ |
 | Dynamic content | ❌ | ✔️ | ❌ | ✔️ |
 | Additional web resources | ✔️ | ❌ | ✔️  | ✔️ |
