@@ -43,7 +43,12 @@ When developing an Evergreen WebView2 app, regularly test the app against the la
 
 When you use a WebView2 _Prerelease_ SDK package, use a Microsoft Edge preview channel on your development client.  Preview channels are also called _Insiders_ channels.  The Canary preview channel is recommended rather than Beta or Dev, because Canary is most recent and has implementations of the latest Experimental APIs.
 
-The _Prerelease_ SDK package is a superset of the _Release_ SDK package, with method signatures for additional, [Experimental APIs](#experimental-apis) and Stable APIs, which are no longer Experimental, but haven't been included in a Release SDK yet.  Preview channels of Microsoft Edge provide the implementations of the Experimental WebView2 APIs, and of Stable APIs.  The Experimental APIs are subject to change based on your feedback.  Avoid using a Prerelease SDK package to build production apps.
+The Prerelease SDK package is a superset of the Release SDK package.  A Prerelease SDK contains method signatures for:
+*  [Experimental APIs](#experimental-apis).
+*  Stable APIs that are no longer Experimental, but haven't been included in a Release SDK yet.
+*  Stable APIs that have been added to Release SDKs.
+
+Preview channels of Microsoft Edge provide the implementations of Experimental WebView2 APIs and of Stable APIs.  The Experimental APIs are subject to change based on feedback.  Avoid using a Prerelease SDK package to build production apps.
 
 For information about temporarily pointing your app to a preview channel instead of defaulting to the WebView2 Runtime, see [Test upcoming APIs and features](../how-to/set-preview-channel.md).
 
@@ -51,9 +56,9 @@ For information about temporarily pointing your app to a preview channel instead
 <!-- ====================================================================== -->
 ## Use a release version of the SDK along with the Runtime
 
-When you use a WebView2 SDK _release_ package, use the WebView2 Evergreen _Runtime_ on your development client, rather than a Microsoft Edge preview channel.  By default, a WebView2 app targets the Runtime rather than Microsoft Edge.  By design, the Microsoft Edge Stable channel doesn't support WebView2.
+When you use a WebView2 Release SDK package, use the WebView2 Evergreen _Runtime_ on your development client, rather than a Microsoft Edge preview channel.  By default, a WebView2 app targets the Runtime rather than Microsoft Edge.  By design, the Microsoft Edge Stable channel doesn't support WebView2.
 
-The SDK _release_ package contains all of the Stable Win32 C/C++ and .NET APIs, and doesn't include method signatures for Experimental APIs.  All of the APIs that are in a Release SDK package are fully supported, in an equal or higher build number of the WebView2 Runtime.
+The Release SDK package contains all of the Stable Win32 C/C++ and .NET APIs that are in production release, and doesn't include method signatures for Experimental APIs.  All of the APIs that are in a Release SDK package are fully supported, in an equal or higher build number of the WebView2 Runtime.
 
 The Release SDK package contains the following components:
 *  [Win32 C/C++ APIs](/microsoft-edge/webview2/reference/win32).
@@ -100,7 +105,7 @@ For full support for the latest APIs in a release version of the SDK, the Runtim
 <!-- ====================================================================== -->
 ## Experimental APIs
 
-To try out new forthcoming features that are in development, use _Experimental_ APIs.  Experimental APIs are contained in Prerelease versions of the WebView2 SDK, but not in Release versions of the WebView2 SDK.
+To try out new forthcoming features that are in development, use _Experimental_ APIs.  Experimental APIs are contained in Prerelease SDKs, but not in Release SDKs.
 
 As mentioned above, new APIs are introduced in phases as follows:
 
@@ -155,7 +160,7 @@ Once an API has been moved from Experimental to Stable status, you need to move 
 
 In the Evergreen distribution approach, the client's WebView2 Runtime automatically updates to the latest version available.  However, a user or IT admin might choose to prevent automatic updating of the WebView2 Runtime.  The resulting outdated Runtime on the client might cause compatibility issues with your updated WebView2 app that uses new APIs from a recent SDK.
 
-In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the WebView2 Runtime that is required by your app.  See [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/).  The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.  The latest Runtime supports all APIs that are in the latest SDK release build.
+In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the WebView2 Runtime that is required by your app.  See [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/).  The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.  The latest Runtime supports all APIs that are in the latest Release SDK.
 
 To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, see [Release Notes for the WebView2 SDK](../release-notes.md).
 
