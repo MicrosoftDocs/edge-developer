@@ -119,14 +119,6 @@ For full support for the latest APIs in a release version of the SDK, the Runtim
 
 To try out new forthcoming features that are in development, use _Experimental_ APIs.  Experimental APIs are contained in Prerelease SDKs, but not in Release SDKs.
 
-As mentioned above, new APIs are introduced in phases as follows:
-
-| API status | Description |
-|---|---|
-| _Experimental_ | 1. First an API is Experimental in a Prerelease SDK.  You can test these APIs and provide feedback.  The API isn't in a Release SDK yet. |
-| _Stable in a Prerelease SDK_ | 2. Then the API is promoted to Stable in the Prerelease SDK.  The API isn't in a Release SDK yet. |
-| _Stable in a Release SDK_ | 3. Then the Stable API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK. |
-
 
 <!-- ------------------------------ -->
 #### Developing with Experimental APIs and providing feedback
