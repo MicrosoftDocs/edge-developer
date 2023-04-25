@@ -141,7 +141,7 @@ Another method to load local content is the `NavigateToString` method.  This app
 
 Another scenario where navigating to a string might be useful is if you want to load content that is not accessible via a URL. For example, if you have an in-memory representation of an HTML document, you could use the `NavigateToString` method to load that content into the WebView2 control.  This can be useful if you want to avoid the need to write the content to a file or server before loading it into the control.
 
-`NavigateToString` has the drawback that you can only specify the string content of the HTML document and there is no way to represent additional web resources like CSS, images, script and so on. Instead, if you want to reference additional web resources from your HTML document you will need to use one of the other mechanisms described in this document, or represent those additional web resources inline in the HTML document.
+`NavigateToString` has the drawback that you can only specify the string content of the HTML document; there is no way to represent additional web resources, such as CSS, images, or script. Instead, to reference additional web resources from your HTML document, you must use one of the other mechanisms described in this article, or represent those additional web resources inline in the HTML document.
 
 Additionally, `NavigateToString` has as its document URI `about:blank` and `null` as its origin. This means you cannot use any DOM API that depends on the origin like `localStorage`, or `indexedDB`.
 
