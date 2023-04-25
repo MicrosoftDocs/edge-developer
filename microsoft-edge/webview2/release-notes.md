@@ -14,6 +14,11 @@ The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Micr
 
 Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](webview2-api-reference.md).
 
+<!-- terminology:
+APIs are Experimental or Stable
+SDKs/packages are Prerelease or Release
+-->
+
 WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.  Starting with the February 2023 release, the update requirement for each bug fix is indicated as follows:
 
 | Indicator | Meaning |
@@ -28,13 +33,13 @@ WebView2 shares code and binaries with the Microsoft Edge browser, and is releas
 <!-- ------------------------------ -->
 #### Phases of introducing APIs
 
-New APIs are introduced in three phases, as follows:
+New APIs are introduced in phases as follows:
 
 | API status | Description |
 |---|---|
 | _Experimental_ | 1. First an API is Experimental in a Prerelease SDK.  You can test these APIs and provide feedback.  The API isn't in a Release SDK yet. |
-| _Stable_ | 2. Then the API is promoted to Stable in the Prerelease SDK.  The API isn't in a Release SDK yet. |
-| _Release_ | 3. Then the API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK.  |
+| _Stable in a Prerelease SDK_ | 2. Then the API is promoted to Stable in the Prerelease SDK.  The API isn't in a Release SDK yet. |
+| _Stable in a Release SDK_ | 3. Then the Stable API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK. |
 
 
 <!-- ------------------------------ -->
@@ -104,7 +109,7 @@ WebView2 SDK 1.0.1722.32 is deprecated, and that package has been removed from t
 <!-- ------------------------------ -->
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -260,7 +265,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ---------- -->
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -838,7 +843,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ---------- -->
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -1083,7 +1088,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ---------- -->
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -1641,7 +1646,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ---------- -->
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -1871,7 +1876,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 * The Favicon API:
@@ -1986,7 +1991,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 *  Added `ContextMenuRequested`API to enable host app to create or modify their own context menu.
@@ -2077,7 +2082,7 @@ There is no corresponding prerelease package.
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 * The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1245.22&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level. It renders the page without prompting the user about TLS or providing the ability to cancel the web request.
@@ -2112,7 +2117,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 * Support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1210.39&preserve-view=true) in WebView2.
 
@@ -2173,7 +2178,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 * The [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1185.39&preserve-view=true#calldevtoolsprotocolmethodforsession) that supports `sessionId` for CDP method calls.
 
@@ -2250,7 +2255,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *   The [BasicAuthentication API](/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38&preserve-view=true) that enables developers to handle Basic HTTP Authentication request and response.
 
@@ -2304,7 +2309,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *  The [AdditionalAllowedFrameAncestors API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs2?view=webview2-1.0.1108.44&preserve-view=true) that enable developers to provide additional allowed frame ancestors.
 
@@ -2372,7 +2377,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2_8?view=webview2-1.0.1072.54&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
 
@@ -2533,7 +2538,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *  [PrintToPdf API](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30&preserve-view=true#printtopdf).
 
@@ -2555,7 +2560,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *  [OpenTaskManagerWindow API](/microsoft-edge/webview2/reference/win32/icorewebview2_6?view=webview2-1.0.992.28&preserve-view=true#summary).
 *  [isSwipeNavigationEnabled property](/microsoft-edge/webview2/reference/win32/icorewebview2settings6?view=webview2-1.0.992.28&preserve-view=true#summary).
@@ -2658,7 +2663,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *  [Client Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.961.33&preserve-view=true#add_clientcertificaterequested).
 
@@ -2732,7 +2737,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *  [add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902.49&preserve-view=true#add_framecreated).
 *  [get_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902.49&preserve-view=true#get_isgeneralautofillenabled).
@@ -2817,7 +2822,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *  [UserAgent API](/microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_useragent)
 *  [AreBrowserkeysenabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.864.35&preserve-view=true#get_arebrowseracceleratorkeysenabled)
@@ -2949,7 +2954,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
    *  [DPI support](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.774.44&preserve-view=true#add_webresourceresponsereceived) related APIs
    *  Visual hosting APIs
@@ -3031,7 +3036,7 @@ This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or
 
 ###### Promotions
 
-The following APIs have been promoted to Release.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
    *  [WebResourceResponseReceived API](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived)
    *  [NavigateWithWebResourceRequest API](/microsoft-edge/webview2/reference/win32/icorewebview2environment2?view=webview2-1.0.721-prerelease&preserve-view=true#createwebresourcerequest)
@@ -3300,11 +3305,9 @@ This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or h
 *  > [!IMPORTANT]
    > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView2 no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded Evergreen WebView2 Runtime, that you can chain-install through an installer that the WebView2 team is currently developing.  See [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
 
-<!-- todo: review: -->
-
 *  > [!IMPORTANT]
    > **Announcement**:  Moving forward, the WebView2 team releases two packages:
-   > * A Prerelease SDK package containing Experimental APIs (for you to try out) and also APIs that have been promoted to Stable status.
+   > * A Prerelease SDK package containing Experimental APIs (for you to try out), and also APIs that have been promoted to Stable status.
    > * A Release SDK package that consists entirely of APIs that have reached Stable status (for your confidence).
    >
    > To learn about the differences, see [Understanding browser versions and WebView2](concepts/versioning.md).
