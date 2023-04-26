@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/28/2023
+ms.date: 04/26/2023
 ---
 # Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge
 
