@@ -322,7 +322,7 @@ With your confirmation, Microsoft Edge imports browser data from other browsers 
 
 You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`.
 
-![Import.](./media/migration.png)
+![Dialog that prompts you to import browser data from another browser](./media/migration.png)
 
 When importing extensions, if the extension is not available on the Microsoft Edge Add-ons website, Microsoft Edge imports a local copy and asks for permission before starting. The permissions for some of the extensions may have changed. To review the extension permissions, go to `edge://extensions`.
 
