@@ -37,7 +37,7 @@ The approaches for loading local content into a WebView2 control support the fol
 ## Navigate to a file URL
 
 WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is the simplest and most efficient approach to loading local content.  However, it is less flexible than the other approaches.  Like in a web browser, file URLs are limited in some capabilities:
-*  The document has an origin that is unique to each file, just like in the browser. So APIs that require an origin such as `localStorage`, `indexedDB`, and others will work, but different file URL documents are not considered same origin.
+*  The document has an origin that is unique to each file, just like in the browser. So APIs that require an origin such as `localStorage` or `indexedDB` will work, but different file URL documents are not considered "same-origin".
 *  Some newer browser features are limited to https URLs and are not available to file URLs. This includes webcam APIs, geolocation APIs, and notification APIs, among others.
 *  For each resource, the full path must be specified.
 
