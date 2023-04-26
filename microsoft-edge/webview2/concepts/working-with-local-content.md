@@ -22,11 +22,11 @@ These approaches are described below.
 <!-- ====================================================================== -->
 ## Selecting an approach
 
-The approaches for loading local content into a WebView2 control support the following scenarios.
+The approaches for loading local content into a WebView2 control support the following scenarios:
 
 | Scenario | Navigating to a file URL | Navigating to an HTML string | Virtual host name mapping | `WebResourceRequested` |
 | --- | --- | --- | --- | --- |
-| Origin based DOM APIs | ✔️ | ❌ | ✔️ | ✔️ |
+| Origin-based DOM APIs | ✔️ | ❌ | ✔️ | ✔️ |
 | DOM APIs requiring secure context | ❌ | ❌ | ✔️ | ✔️ |
 | Dynamic content | ❌ | ✔️ | ❌ | ✔️ |
 | Additional web resources | ✔️ | ❌ | ✔️  | ✔️ |
@@ -37,7 +37,7 @@ The approaches for loading local content into a WebView2 control support the fol
 ## Loading local content by navigating to a file URL
 
 WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is the simplest and most efficient approach to loading local content.  However, it is less flexible than the other approaches.  Like in a web browser, file URLs are limited in some capabilities:
-*  The document has an origin that is unique to each file, just like in the browser. So APIs that require an origin such as `localStorage`, `indexedDB`, and others will work, but different file URL documents are not considered same origin.
+*  The document has an origin that is unique to each file, just like in the browser. So APIs that require an origin such as `localStorage` or `indexedDB` will work, but different file URL documents are not considered "same-origin".
 *  Some newer browser features are limited to https URLs and are not available to file URLs. This includes webcam APIs, geolocation APIs, and notification APIs, among others.
 *  For each resource, the full path must be specified.
 
@@ -199,9 +199,9 @@ todo
 todo
 
 
-###### Additional web resources<!--need clarification-->
+###### Additional web resources
 
-`NavigateToString` has the drawback that you can only specify the string content of the HTML document and there is no way to represent additional web resources like CSS, images, script and so on. Instead, if you want to reference additional web resources from your HTML document, you will need to use one of the other mechanisms described in this document, or represent those additional web resources inline in the HTML document.
+`NavigateToString` has the drawback that you can only specify the string content of the HTML document; there is no way to represent additional web resources, such as CSS, images, or script. Instead, to reference additional web resources from your HTML document, you must use one of the other mechanisms described in this article, or represent those additional web resources inline in the HTML document.
 
 
 ###### Additional web resources resolved in WebView2 process
@@ -404,7 +404,7 @@ Another way you can host local content in a WebView2 control is by relying on th
 
 From WebView2's perspective, the resource will have come via the network, and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event is also slower than other approaches, due to the needed cross-process communication and processing per each request.
 
-Unlike file URLs and virtual host name mappings, which are resolved in the WebView2 networking process, the `WebResourceRequested` event has to be raised on your WebView2's UI thread in your host app process. This means the WebView2 will pause loading a web page to wait for the event to be sent to your host app process, and then wait for your UI thread to be available, and then wait for your app code to handle the event. This can take some time so make sure that your calls to `AddWebResourceRequestedFilter` are appropriately limited to only the web resources that must raise the `WebResourceRequested` event.
+Unlike file URLs and virtual host name mappings, which are resolved in the WebView2 networking process, the `WebResourceRequested` event is raised on your WebView2's UI thread in your host app process. This means the WebView2 will first pause loading a web page to wait for the event to be sent to your host app process, and then wait for your UI thread to be available, and then wait for your app code to handle the event. This can take some time, so make sure that your calls to `AddWebResourceRequestedFilter` are appropriately limited to only the web resources that must raise the `WebResourceRequested` event.
 
 
 <!-- ------------------------------ -->
