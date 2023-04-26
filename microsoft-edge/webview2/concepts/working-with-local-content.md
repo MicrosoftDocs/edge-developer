@@ -76,12 +76,12 @@ Loading local content via file URLs is getting content from static files on the 
 
 ###### Additional web resources
 
-file URLs support relative URL resolution and so an HTML document served via file URL can have CSS, script, image, and so on references that are also served via file URLs.
+File URLs support relative URL resolution.  So, an HTML document served via file URL can have references such as CSS, script, and image that are also served via file URLs.
 
 
 ###### Additional web resources resolved in WebView2 process
 
-file URLs are resolved in WebView2 processes. This is the faster option compared to `WebResourceRequested` which resolves in the host app process UI thread.
+File URLs are resolved in WebView2 processes. This is a faster option than `WebResourceRequested`, which resolves in the host app process UI thread.
 
 
 <!-- ------------------------------ -->
@@ -196,7 +196,7 @@ Some newer browser features are limited to https URLs and are not available to t
 
 ###### Dynamic content
 
-When loading local content via `NavigateToString` you are directly providing the local content as the method parameter. This means you are totally in control of the local content at runtime and you can dynamically produce whatever local content you like.
+When loading local content via `NavigateToString`, you are directly providing the local content as the method parameter. This means you are totally in control of the local content at runtime, and you can dynamically produce whatever local content you like.
 
 
 ###### Additional web resources
@@ -206,7 +206,7 @@ When loading local content via `NavigateToString` you are directly providing the
 
 ###### Additional web resources resolved in WebView2 process
 
-`NavigateToString` does not support additional web resources as mentioned above.
+`NavigateToString` does not support additional web resources, as mentioned above.
 
 
 <!-- ------------------------------ -->
@@ -318,22 +318,22 @@ Local content loaded via virtual host name mapping has an http or https URL and 
 
 ###### DOM APIs requiring secure context
 
-Some newer browser features are limited to https URLs and using virtual host name mapping essentially provides https URLs for your local content. This means webcam APIs, geolocation APIs, and notification APIs, among others are all available. See [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) for more information.
+Some newer browser features are limited to https URLs. Using virtual host name mapping essentially provides https URLs for your local content. This means APIs such as webcam APIs, geolocation APIs, and notification APIs are all available. For more information, see [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
 
 
 ###### Dynamic content
 
-When loading local content via a virtual host name mapping you are mapping a virtual host name to a local folder of static files. Just like file URLs, there is no opportunity to dynamically modify the local content while it is loaded by the virtual host name.
+When loading local content via a virtual host name mapping, you are mapping a virtual host name to a local folder of static files. Just like file URLs, there is no opportunity to dynamically modify the local content while it is loaded by the virtual host name.
 
 
 ###### Additional web resources
 
-Local content loaded via virtual host names have http and https URLs. These URLs support relative URL resolution and so an HTML document served via virtual host names can have CSS, script, image, and so on references that are also served via virtual host names.
+Local content loaded via virtual host names have http and https URLs. These URLs support relative URL resolution, and so an HTML document served via virtual host names can have references such as CSS, script, and image references that are also served via virtual host names.
 
 
 ###### Additional web resources resolved in WebView2 process
 
-Virtual host name URLs are resolved in WebView2 processes. This is the faster option compared to `WebResourceRequested` which resolves in the host app process UI thread.
+Virtual host name URLs are resolved in WebView2 processes. This is a faster option than `WebResourceRequested`, which resolves in the host app process UI thread.
 
 
 <!-- ------------------------------ -->
