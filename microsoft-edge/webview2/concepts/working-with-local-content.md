@@ -412,22 +412,22 @@ From WebView2's perspective, the resource will have come via the network, and We
 
 ###### Origin-based DOM APIs
 
-Local content loaded via WebResourceRequested an http or https URL and a corresponding origin. So APIs that require an origin such as `localStorage` or `indexedDB` will work, and the usual ["same-origin" rules](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) apply.
+Local content loaded via `WebResourceRequested` has an http or https URL and a corresponding origin. So APIs that require an origin such as `localStorage` or `indexedDB` will work, and the usual ["same-origin" rules](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) apply.
 
 
 ###### DOM APIs requiring secure context
 
-Some newer browser features are limited to https URLs and using WebResourceRequested allows you to replace https URL web resource requests with your own local content and so these browser features are available. This means webcam APIs, geolocation APIs, and notification APIs, among others are all available. See [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) for more information.
+Some newer browser features are limited to https URLs. Using `WebResourceRequested` allows you to replace https URL web resource requests with your own local content, and so these browser features are available. This means APIs such as webcam APIs, geolocation APIs, and notification APIs are all available. For more information, see [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
 
 
 ###### Dynamic content
 
-When loading local content via `WebResourceRequested` you specify the local content to load in your event handler. Since you are directly providing the local content you can dynamically modify it in any manner.
+When loading local content via `WebResourceRequested`, you specify the local content to load in your event handler. Since you are directly providing the local content, you can dynamically modify it in any manner.
 
 
 ###### Additional web resources
 
-Local content loaded via `WebResourceRequested` modifies content loaded via http and https URLs. These URLs support relative URL resolution and so an HTML document served via `WebResourceRequested` can have CSS, script, image, and so on references that are also served via `WebResourceRequested`.
+Local content that's loaded via `WebResourceRequested` modifies content that's loaded via http and https URLs. These URLs support relative URL resolution, and so an HTML document that's served via `WebResourceRequested` can have references such as CSS, script, and image references that are also served via `WebResourceRequested`.
 
 
 ###### Additional web resources resolved in WebView2 process
