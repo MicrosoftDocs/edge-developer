@@ -191,7 +191,7 @@ Another scenario where navigating to a string might be useful is if you want to 
 
 ###### DOM APIs requiring secure context
 
-todo
+Some newer browser features are limited to https URLs and are not available to the `about:blank` URI that `NavigateToString` uses. This includes webcam APIs, geolocation APIs, and notification APIs, among others. See [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) for more information.
 
 
 ###### Dynamic content
