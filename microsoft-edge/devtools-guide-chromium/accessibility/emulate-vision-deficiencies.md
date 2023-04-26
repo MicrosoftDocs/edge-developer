@@ -32,17 +32,17 @@ To simulate how a person with a vision deficiency would see your web page, open 
 1. Go to **More tools** > **Rendering** to open the **Rendering** panel in the drawer.
 
    > [!div class="mx-imgBorder"]
-   > ![Opening the Rendering panel from the More tools menu.](../media/getting-to-the-rendering-tools.msft.png)
+   > ![Opening the Rendering panel from the More tools menu](../media/getting-to-the-rendering-tools.msft.png)
 
 1. Scroll down to the **Emulate vision deficiencies** section, click the **No emulation** dropdown list, and then select an option.
 
    > [!div class="mx-imgBorder"]
-   > ![The Emulate vision deficiencies section in the Rendering panel.](../media/accessibility-emulate-vision-menu-options.msft.png)
+   > ![The Emulate vision deficiencies section in the Rendering panel](../media/accessibility-emulate-vision-menu-options.msft.png)
 
 1. The browser window simulates the selected vision deficiency on the current page.
 
    > [!div class="mx-imgBorder"]
-   > ![The browser window, with modified colors in the web page to simulate the selected color vision deficiency.](../media/accessibility-blurred-vision-emulation.msft.png)
+   > ![The browser window, with modified colors in the web page to simulate the selected color vision deficiency](../media/accessibility-blurred-vision-emulation.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -50,12 +50,12 @@ To simulate how a person with a vision deficiency would see your web page, open 
 
 As an alternative approach, you can use the **Command Menu** to access the different simulations.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-1. Type **emulate**, select the type of vision deficiency you want to simulate, and then press `Enter`.
+1. Type **emulate**, select the type of vision deficiency you want to simulate, and then press **Enter**.
 
    > [!div class="mx-imgBorder"]
-   > ![The command menu showing the different types of vision deficiencies.](../media/accessibility-emulation-command-menu-results.msft.png)
+   > ![The command menu showing the different types of vision deficiencies](../media/accessibility-emulation-command-menu-results.msft.png)
 
 
 <!-- ====================================================================== -->

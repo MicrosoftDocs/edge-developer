@@ -17,13 +17,13 @@ To check whether a webpage is usable with blurred vision:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. Press **Esc** to open the Drawer at the bottom of DevTools.  Click the **+** icon at the top of the Drawer to display the list of tools, and then select **Rendering**.
 
 1. In the **Emulate vision deficiencies** dropdown list, select **Blurred vision**.
 
-   ![Simulating a blurred page.](../media/a11y-testing-simulating-blur.msft.png)
+   ![Simulating a blurred page](../media/a11y-testing-simulating-blur.msft.png)
 
     Notice that the `text-shadow` CSS property makes the text of the menu items difficult to read on the upper menu. For example, see the **Home**, **Adopt a Pet**, and other menu items.
 

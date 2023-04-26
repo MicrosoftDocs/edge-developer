@@ -19,11 +19,11 @@ To check whether the page is usable with animations turned off:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. At the top of DevTools, select the **Sources** tool, and then in the **Navigation** pane on the left, select `styles.css`.  The CSS file appears in the **Editor** pane.
 
-1. Press `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS, and then enter `@media`.  The following CSS media query is displayed, which confirms that it is used on the webpage.
+1. Press **Ctrl+F** on Windows/Linux or **Command+F** on macOS, and then enter `@media`.  The following CSS media query is displayed, which confirms that it is used on the webpage.
 
     ```css
     @media (prefers-reduced-motion: no-preference) {
@@ -35,11 +35,11 @@ To check whether the page is usable with animations turned off:
 
     Next, emulate the operating system setting to reduce animation, as follows.
 
-1. Press `Esc` to open the Drawer at the bottom of DevTools.  Click the **More tools** (**+**) button at the top of the Drawer to see the list of tools, and then select **Rendering**.
+1. Press **Esc** to open the Drawer at the bottom of DevTools.  Click the **More tools** (**+**) button at the top of the Drawer to see the list of tools, and then select **Rendering**.
 
 1. In the **Emulate CSS media feature prefers-reduced-motion** dropdown list, select **prefers-reduced-motion: reduced**.
 
-   ![Simulating reduced motion and the CSS that makes sure that smooth scrolling only happens when the user wants it.](../media/a11y-testing-simulating-reduced-motion.msft.png)
+   ![Simulating reduced motion and the CSS that makes sure that smooth scrolling only happens when the user wants it](../media/a11y-testing-simulating-reduced-motion.msft.png)
 
 1. In the webpage, click the blue menu items, such as **Horses** or **Alpacas**.  Now the webpage instantly scrolls to the selected section, rather than using the smooth-scrolling animation.
 

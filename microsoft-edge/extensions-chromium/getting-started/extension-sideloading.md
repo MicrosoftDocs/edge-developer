@@ -9,19 +9,19 @@ ms.date: 11/07/2022
 ---
 # Sideload an extension
 
-During development, you can use the Microsoft Edge browser to run and debug your extension safely.  By sideloading your extension locally in your browser, you can run and test your extension.
+During development, you can use Microsoft Edge browser to run and debug your extension safely.  By sideloading your extension locally in your browser, you can run and test your extension without changing any settings. This helps you test new extensions safely.
 
 To sideload an extension into Microsoft Edge:
 
 1. In Microsoft Edge, select **Settings and more** (...) > **Extensions**.
 
-   ![Opening the edge://extensions page.](./media/part1-threedots.png)
+   ![Opening the edge://extensions page](./media/part1-threedots.png)
 
    The **Extensions** pop-up box opens.
 
 1. Click **Manage extensions**.  The **Extensions** page (`edge://extensions`) opens in a new tab:
 
-   ![Turning on Developer Mode.](./media/part1-developermode-toggle.png)
+   ![Turning on Developer Mode](./media/part1-developermode-toggle.png)
 
 1. Turn on the **Developer mode** toggle.
 
@@ -29,7 +29,7 @@ To sideload an extension into Microsoft Edge:
 
 1. Select the directory that contains your extension source files, and then click the **Select Folder** button.  Your extension is installed in your browser, similar to extensions that are installed from the store:
 
-   ![Installed extensions page, showing a sideloaded extension.](./media/part1-installed-extension.png)
+   ![Installed extensions page, showing a sideloaded extension](./media/part1-installed-extension.png)
 
 
 <!-- ====================================================================== -->

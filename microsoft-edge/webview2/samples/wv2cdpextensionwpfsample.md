@@ -102,7 +102,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 <!--This builds the project file `WV2CDPExtensionWPFSample.csproj`.readme was missing "WPF" there, vs dir listing; readme said: Build the project file: _WV2CDPExtensionSample.csproj_ -->
 
-1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
+1. In Visual Studio, select **Debug** > **Start Debugging** (**F5**).
 
    The sample app window opens:
 
@@ -154,7 +154,7 @@ For more information, see [WebView2 CDP Extension](https://aka.ms/webviewcdpnuge
 <!-- ====================================================================== -->
 ## Step 9 - Build and run the project with updated packages
 
-1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
+1. In Visual Studio, select **Debug** > **Start Debugging** (**F5**).
 
    The sample app window opens:
 
@@ -182,4 +182,5 @@ For more information, see [WebView2 CDP Extension](https://aka.ms/webviewcdpnuge
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 API Reference](../webview2-api-reference.md)
 * [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md)

@@ -47,7 +47,7 @@ Click **Customize and control DevTools** (`...`), point to **More tools**, and t
 <!-- ====================================================================== -->
 ## Open the Changes tool by using the Command Menu
 
-Open the [Command Menu](../command-menu/index.md) by pressing `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on Mac, and then type **changes**.  The **Show Changes** command is highlighted; press `Enter`.
+Open the [Command Menu](../command-menu/index.md) by pressing **Ctrl+Shift+P** on Windows/Linux or **Command+Shift+P** on Mac, and then type **changes**.  The **Show Changes** command is highlighted; press **Enter**.
 
 ![In the Command Menu, start typing 'changes', and then select the 'Show Changes' command](changes-tool-images/changes-tool-command-menu.png)
 
@@ -79,7 +79,7 @@ Clicking a modified line in the **Changes** tool opens the file in the [Sources]
 <!-- ====================================================================== -->
 ## Undo all changes
 
-To undo all changes, click the `Revert all changes to the current file` button, shown as a circular arrow.
+To undo all changes, click the **Revert all changes to the current file** button, shown as a looped arrow:
 
 ![Reverting changes](changes-tool-images/changes-tool-undo-all.png)
 

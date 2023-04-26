@@ -179,7 +179,7 @@ Consider, for example, how your app icon might show different content depending 
 
 * Larger surface: Medium tile (150x150) in start menu, showing the full logo of the app:  
 
-![The medium size icon.](../media/windows-image-small-tile.png) 
+![The medium size icon](../media/windows-image-small-tile.png) 
 
 * Wide surface: Wide tile in start menu, showing a more articulated app icon: 
 
@@ -294,7 +294,7 @@ The web content created by the PWA fills the entire surface area of the window, 
 
 The following image shows what a PWA's title bar looks like when not using a theme color, and when using a theme color that matches the main color of the app:
 
-![The difference between not using and using a theme color.](../media/app-theme-color-before-after.png)
+![The difference between not using and using a theme color](../media/app-theme-color-before-after.png)
 
 To define a theme color, use the `theme_color` web app manifest member:
 

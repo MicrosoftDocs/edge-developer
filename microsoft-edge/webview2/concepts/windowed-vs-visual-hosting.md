@@ -53,6 +53,8 @@ Key compatibility limitations include the operating system and rendering in fram
 
 Windows 7 and Windows 8 can only do windowed hosting, not visual hosting.
 
+See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
+
 
 <!-- ------------------------------ -->
 #### Rendering WebView2 in framework and non-framework apps
@@ -93,7 +95,7 @@ Benefits for Windowed hosting include:
 
 * Zooming and rasterization scales (for example, menus, context menus, and so on) will also automatically scale to the app's parent `HWND`. It also handles how the WebView manages being focused and tabbing in/out of itself when it reaches the final element.
 
-* The app handles keyboard accelerators and keyboard shortcuts when in the WebView. For example, `Ctrl+C` in a WebView will know that you are trying to copy content in the WebView, and not pressing `Ctrl` and `C` separately.
+* The app handles keyboard accelerators and keyboard shortcuts when in the WebView. For example, **Ctrl+C** in a WebView will know that you are trying to copy content in the WebView, and not pressing **Ctrl** and **C** separately.
 
 * You don't have to manage the various composition-based rendering (for example, Inputs, Outputs, and Accessibility controls) if you don't want to.
 
@@ -132,7 +134,7 @@ The following aspects of window management are handled in a windowed hosting env
 <!-- ---------- -->
 ###### Zooming
 
-WebView2 `ZoomFactor` is used to scale just the web content.  This is also updated when the user zooms the content through `Ctrl` + Mouse Wheel.
+WebView2 `ZoomFactor` is used to scale just the web content.  This is also updated when the user zooms the content through **Ctrl**+Mouse Wheel.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

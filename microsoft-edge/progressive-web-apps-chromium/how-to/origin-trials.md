@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 09/15/2021
+ms.date: 11/25/2022
 ---
 # Experimental features and origin trials
 
@@ -26,7 +26,7 @@ To turn experimental features on or off:
 1.  Navigate to the relevant experiment.
 1.  Select the dropdown menu next to the experiment description and select **Enabled** to turn on the feature or **Disabled** to turn it off.
 
-    ![Select Enabled to turn on an experiment.](../media/turn-on-experimental-flag.png)
+    ![Select Enabled to turn on an experiment](../media/turn-on-experimental-flag.png)
 
 
 <!-- ====================================================================== -->
@@ -35,18 +35,3 @@ To turn experimental features on or off:
 Microsoft Edge sometimes uses origin trials to test features for specific domains or websites. You may want to use an origin trial for your website to apply a specific feature. If you're a website owner, you can enroll in an origin trial. An origin trial provides features to a percentage of Microsoft Edge users who visit your website.
 
 For more information about Origin Trials, see [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).
-
-
-<!-- ====================================================================== -->
-## Features that are available to test
-
-The following list describes experimental web app features that are available to test and validate on Microsoft Edge. To enable them, go to [Toggle experimental features](#toggle-experimental-features).
-
-| Feature | Platform |
-|:--- |:--- |
-| [URI Protocol Handling](handle-protocols.md) | Windows and Linux |
-| [URL Link Handling](handle-urls.md) | Windows |
-| [Window Controls Overlay for Desktop Apps](window-controls-overlay.md) | All |
-| [File Handling](handle-files.md) | All Desktop |
-
-<!-- Links -->

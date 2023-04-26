@@ -16,7 +16,7 @@ Microsoft Visual Studio provides various debugging tools for web and native code
 <!-- ====================================================================== -->
 ## Open DevTools using an approach other than F12
 
-When you debug your app in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  To avoid that situation, press `Ctrl`+`Shift`+`I`.  Or, right-click the page, and then select `Inspect`.
+When you debug your app in Visual Studio with the native debugger attached, pressing **F12** may trigger the native debugger instead of Developer Tools.  To avoid that situation, press **Ctrl+Shift+I**.  Or, right-click the page, and then select `Inspect`.
 
 
 <!-- ====================================================================== -->
@@ -45,7 +45,7 @@ First, install the **JavaScript diagnostics** component in **Desktop development
 
 1. In Visual Studio, under **Workloads**, select the **Desktop Development with C++** setting:
 
-   ![Visual Studio Modifying Workloads Screen.](./media/workloads.png)
+   ![Visual Studio Modifying Workloads Screen](./media/workloads.png)
 
 1. Select **Individual components**, at the top.
 
@@ -55,7 +55,7 @@ First, install the **JavaScript diagnostics** component in **Desktop development
 
 1. Click **Modify**.
 
-   ![Visual Studio: Modifying values in the 'Individual components' tab.](./media/indiv-comp.png)
+   ![Visual Studio: Modifying values in the 'Individual components' tab](./media/indiv-comp.png)
 
 
 <!-- ====================================================================== -->
@@ -69,7 +69,7 @@ Second, enable script debugging for WebView2 apps, as follows.
 
 1. Under the **Debugger Type**, select **JavaScript (WebView2)**.
 
-   ![The 'Debugging' configuration property in Visual Studio.](./media/enb-js.png)
+   ![The 'Debugging' configuration property in Visual Studio](./media/enb-js.png)
 
 
 <!-- ====================================================================== -->
@@ -79,15 +79,15 @@ After doing the above setup, debug your WebView2 app, as follows.
 
 1. To set a breakpoint in your source code, hover to the left of the line number, and click to set a breakpoint.  The JS/TS debug adapter doesn't perform source path mapping.  You must open the exact same path associated with your WebView2.
 
-   ![Adding a breakpoint in Visual Studio.](./media/breakpoint.png)
+   ![Adding a breakpoint in Visual Studio](./media/breakpoint.png)
 
 1. To run the debugger, select the bit size of the platform, and then click the green Play button next to **Local Windows Debugger**.  The app runs and the debugger connects to the first WebView2 process that is created.
 
-   ![The Local Windows Debugger in Visual Studio.](./media/run.png)
+   ![The Local Windows Debugger in Visual Studio](./media/run.png)
 
 1. In the **Debug Console**, find the output from the debugger.
 
-   ![Debug Console in Visual Studio.](./media/console.png)
+   ![Debug Console in Visual Studio](./media/console.png)
 
 
 <!-- ====================================================================== -->
@@ -106,4 +106,3 @@ Virtual source path mapping works when you use the debugger in <!-- Visual Studi
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](../webview2-api-reference.md)
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.

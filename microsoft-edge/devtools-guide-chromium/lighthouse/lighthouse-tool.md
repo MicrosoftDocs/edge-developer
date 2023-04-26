@@ -14,5 +14,5 @@ Use the Lighthouse tool to identify and fix common problems that affect your sit
 The Lighthouse tool was previously called the _Audits_ tool.
 
 See:
+* [Optimize website speed using Lighthouse](../speed/get-started.md)
 * [Test accessibility using Lighthouse](../accessibility/lighthouse.md)
-* [Establish a baseline](../speed/get-started.md#establish-a-baseline) in _Optimize website speed using Lighthouse_

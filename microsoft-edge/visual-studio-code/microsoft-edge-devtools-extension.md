@@ -42,9 +42,9 @@ The DevTools extension for Visual Studio Code is one of several different ways t
 
 | Approach | Pros and Cons | Article |
 |---|---|---|
-| Browser > DevTools > **Elements** tool | You have to manually copy changes from DevTools into your source files. | [Inspect, edit, and debug HTML and CSS with the Elements tool](/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool.md) |
-| Browser > DevTools > **Sources** tool > **Filesystem** tab to define a **Workspace** | Always saves the changes, which could discourage experimenting | [Using the Filesystem tab to define a local Workspace](/microsoft-edge/devtools-guide-chromium/sources/index.md#using-the-filesystem-tab-to-define-a-local-workspace) in _Sources tool overview_ |
-| Browser > DevTools > **Settings** > **Experiments** > **Open source files in Visual Studio Code** | Always saves the changes, which could discourage experimenting | Experiments > [Opening source files in Visual Studio Code](/microsoft-edge/devtools-guide-chromium/sources/opening-sources-in-vscode.md). |
+| Browser > DevTools > **Elements** tool | You have to manually copy changes from DevTools into your source files. | [Inspect, edit, and debug HTML and CSS with the Elements tool](../devtools-guide-chromium/elements-tool/elements-tool.md)| 
+| Browser > DevTools > **Sources** tool > **Filesystem** tab to define a **Workspace** | Always saves the changes, which could discourage experimenting | [Using the Filesystem tab to define a local Workspace](../devtools-guide-chromium/sources/index.md) in _Sources tool overview_ |
+| Browser > DevTools > **Settings** > **Experiments** > **Open source files in Visual Studio Code** | Always saves the changes, which could discourage experimenting | Experiments > [Opening source files in Visual Studio Code](../devtools-guide-chromium/sources/opening-sources-in-vscode.md). |
 | Microsoft Edge DevTools extension for Visual Studio Code | Automatically opens and edits the CSS source file but doesn't automatically save the file, so you get to choose whether to save the edits. | The present article. |
 
 
@@ -63,7 +63,7 @@ You can change CSS in the `.css` or `.html` source file, save the change, and th
 
 #### HTML
 
-You can edit the DOM tree in the **Edge DevTools** tab (such as changing `<h2>Success!</h2>` to `<h2>CSS Success!</h2>`), then press `Enter`, then refresh the **Edge DevTools: Browser** tab to see the change.  (This doesn't automatically edit the `.html` source file.)
+You can edit the DOM tree in the **Edge DevTools** tab (such as changing `<h2>Success!</h2>` to `<h2>CSS Success!</h2>`), then press **Enter**, then refresh the **Edge DevTools: Browser** tab to see the change.  (This doesn't automatically edit the `.html` source file.)
 
 You can change HTML in the `.html` source file, save the change, and then reload the webpage in the **Edge DevTools: Browser** tab, which also updates the **Edge DevTools** tab.
 

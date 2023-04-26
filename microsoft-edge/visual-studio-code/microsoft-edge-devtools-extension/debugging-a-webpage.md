@@ -23,7 +23,7 @@ ms.date: 10/06/2022
 ## If you see the Success page but want your own webpage instead
 -->
 
-To open DevTools in Visual Studio Code in Debug mode by using the DevTools UI, right-click an `.html` file or click the **Launch Project** button, as described in [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).  You can also use the Visual Studio Code UI for launching the Debugger, such as `F5`, to open the **DevTools** tabs as well, if you define a DevTools-compatible `launch.json` file by clicking the **Generate launch.json** button in the **Microsoft Edge Tools** Side Bar.
+To open DevTools in Visual Studio Code in Debug mode by using the DevTools UI, right-click an `.html` file or click the **Launch Project** button, as described in [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).  You can also use the Visual Studio Code UI for launching the Debugger, such as **F5**, to open the **DevTools** tabs as well, if you define a DevTools-compatible `launch.json` file by clicking the **Generate launch.json** button in the **Microsoft Edge Tools** Side Bar.
 
 ![Tabs opened from right-clicking an .html file in Explorer](./debugging-a-webpage-images/tabs-from-right-click-html-explorer.png)
 
@@ -52,7 +52,7 @@ Most of these approaches require a DevTools-generated `launch.json` file that co
 
 #### Visual Studio Code UI features to open DevTools in Debug mode
 
-*  Press `F5`.
+*  Press **F5**.
 
 *  On the Activity Bar, click the **Run and Debug** icon (![Run and Debug button](./debugging-a-webpage-images/run-and-debug-icon.png)), and then in the **Run and Debug** Side Bar, click the **Run and Debug** button.
 
@@ -116,13 +116,13 @@ Continue below.
 
 Assuming that the opened folder doesn't contain a `.vscode` folder that contains a `launch.json` file already:
 
-1. Select Activity Bar > **Microsoft Edge Tools** > click the **Generate launch.json** button, and then press `F5`.  Or, see [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
+1. Select Activity Bar > **Microsoft Edge Tools** > click the **Generate launch.json** button, and then press **F5**.  Or, see [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
 
    After the DevTools extension is installed, when you open an `.html` file and then click the **Inspect** button on the Debug toolbar, the **Edge DevTools** tabs open inside of Visual Studio Code:
 
    ![The Inspect button opens Microsoft Edge DevTools inside Visual Studio Code](./debugging-a-webpage-images/tools-inside.png)
 
-   In the above screenshot, there's a `launch.json` file in **Explorer** in the `.vscode` folder, and a string from that file, **Launch Edge Headless and attach DevTools**, at the bottom of the window, because DevTools was opened by a Visual Studio Code feature such as `F5`, which used the DevTools-generated `launch.json` file.
+   In the above screenshot, there's a `launch.json` file in **Explorer** in the `.vscode` folder, and a string from that file, **Launch Edge Headless and attach DevTools**, at the bottom of the window, because DevTools was opened by a Visual Studio Code feature such as **F5**, which used the DevTools-generated `launch.json` file.
 
 1. If needed, in the upper left of the **Edge DevTools** tab, click the **Toggle screencast** button:
 
@@ -177,11 +177,11 @@ When you choose to debug your project in Visual Studio Code, whether you use Dev
 <!-- ====================================================================== -->
 ## If you see the Success page but want your own webpage instead
 
-Which webpage opens is in DevTools is set by `launch.json` if that file exists in your workspace (your open folder).  Thus you might press `F5` while your own `.html` file is open, and yet see the default, **Success** page in the **DevTools** tabs.  Options in that case are:
+Which webpage opens is in DevTools is set by `launch.json` if that file exists in your workspace (your open folder).  Thus you might press **F5** while your own `.html` file is open, and yet see the default, **Success** page in the **DevTools** tabs.  Options in that case are:
 
-*  Edit `launch.json` in your open folder to point to a URL (normally), or possibly a file path.  Then you can use the Visual Studio Code debugger workflow/UI, such as `F5`.
+*  Edit `launch.json` in your open folder to point to a URL (normally), or possibly a file path.  Then you can use the Visual Studio Code debugger workflow/UI, such as **F5**.
 
-*  Or, delete `launch.json`, then Activity Bar > **Explorer** > right-click your `.html` file > select **Open with Edge**.  This approach doesn't use the Visual Studio Code Debugger workflow/UI, such as `F5`.
+*  Or, delete `launch.json`, then Activity Bar > **Explorer** > right-click your `.html` file > select **Open with Edge**.  This approach doesn't use the Visual Studio Code Debugger workflow/UI, such as **F5**.
 
 
 <!-- ====================================================================== -->

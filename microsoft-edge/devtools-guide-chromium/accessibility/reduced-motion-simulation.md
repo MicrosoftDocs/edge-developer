@@ -26,15 +26,15 @@ Then test your code, as follows.
 
 To simulate the operating system's reduced motion setting, without having to change your operating system setting:
 
-1. Press `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** on Windows/Linux or **Command+Shift+P** on macOS to open the **Command Menu**.
     
     > [!div class="mx-imgBorder"]
-    > ![Opening the command menu.](../media/reduced-motion-open-command-menu.png)
+    > ![Opening the command menu](../media/reduced-motion-open-command-menu.png)
 
-1. Type **reduced**, to turn the simulation on and off.  Select the **Emulate CSS prefers-reduced-motion** option, and then press `Enter`.
+1. Type **reduced**, to turn the simulation on or off.  Select the **Emulate CSS prefers-reduced-motion** option, and then press **Enter**.
 
     > [!div class="mx-imgBorder"]
-    > ![The Emulate CSS prefers-reduced-motion option in the Command menu.](../media/reduced-motion-command-menu-entry.png)
+    > ![The Emulate CSS prefers-reduced-motion option in the Command menu](../media/reduced-motion-command-menu-entry.png)
 
 1. Refresh the webpage and check whether your animations run.
 
