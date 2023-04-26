@@ -66,22 +66,22 @@ Documents loaded via file URL has an origin that is unique to each file, just li
 
 ###### DOM APIs requiring secure context
 
-todo
+Some newer browser features are limited to https URLs and are not available to file URLs. This includes webcam APIs, geolocation APIs, and notification APIs, among others. See [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) for more information.
 
 
 ###### Dynamic content
 
-todo
+Loading local content via file URLs is getting content from static files on the disk. There is no opportunity to dynamically modify the local content while it is loaded by the file URL.
 
 
 ###### Additional web resources
 
-todo
+file URLs support relative URL resolution and so an HTML document served via file URL can have CSS, script, image, and so on references that are also served via file URLs.
 
 
 ###### Additional web resources resolved in WebView2 process
 
-todo
+file URLs are resolved in WebView2 processes. This is the faster option compared to `WebResourceRequested` which resolves in the host app process UI thread.
 
 
 <!-- ------------------------------ -->
@@ -196,7 +196,7 @@ Some newer browser features are limited to https URLs and are not available to t
 
 ###### Dynamic content
 
-todo
+When loading local content via `NavigateToString` you are directly providing the local content as the method parameter. This means you are totally in control of the local content at runtime and you can dynamically produce whatever local content you like.
 
 
 ###### Additional web resources
@@ -206,7 +206,7 @@ todo
 
 ###### Additional web resources resolved in WebView2 process
 
-Just like for file URLs described above, some newer browser features are limited to https URLs and are not available to `NavigateToString` documents. This includes webcam APIs, geolocation APIs, and notification APIs, among others.
+`NavigateToString` does not support additional web resources as mentioned above.
 
 
 <!-- ------------------------------ -->
@@ -313,27 +313,27 @@ This approach lets you specify the cross-origin access, by using the `CoreWebVie
 
 ###### Origin-based DOM APIs
 
-todo
+Local content loaded via virtual host name mapping has an http or https URL and a corresponding origin. So APIs that require an origin such as `localStorage` or `indexedDB` will work, and the usual ["same-origin" rules](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) apply.
 
 
 ###### DOM APIs requiring secure context
 
-todo
+Some newer browser features are limited to https URLs and using virtual host name mapping essentially provides https URLs for your local content. This means webcam APIs, geolocation APIs, and notification APIs, among others are all available. See [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) for more information.
 
 
 ###### Dynamic content
 
-todo
+When loading local content via a virtual host name mapping you are mapping a virtual host name to a local folder of static files. Just like file URLs, there is no opportunity to dynamically modify the local content while it is loaded by the virtual host name.
 
 
 ###### Additional web resources
 
-todo
+Local content loaded via virtual host names have http and https URLs. These URLs support relative URL resolution and so an HTML document served via virtual host names can have CSS, script, image, and so on references that are also served via virtual host names.
 
 
 ###### Additional web resources resolved in WebView2 process
 
-todo
+Virtual host name URLs are resolved in WebView2 processes. This is the faster option compared to `WebResourceRequested` which resolves in the host app process UI thread.
 
 
 <!-- ------------------------------ -->
@@ -404,7 +404,6 @@ Another way you can host local content in a WebView2 control is by relying on th
 
 From WebView2's perspective, the resource will have come via the network, and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event is also slower than other approaches, due to the needed cross-process communication and processing per each request.
 
-Unlike file URLs and virtual host name mappings, which are resolved in the WebView2 networking process, the `WebResourceRequested` event is raised on your WebView2's UI thread in your host app process. This means the WebView2 will first pause loading a web page to wait for the event to be sent to your host app process, and then wait for your UI thread to be available, and then wait for your app code to handle the event. This can take some time, so make sure that your calls to `AddWebResourceRequestedFilter` are appropriately limited to only the web resources that must raise the `WebResourceRequested` event.
 
 
 <!-- ------------------------------ -->
@@ -413,27 +412,27 @@ Unlike file URLs and virtual host name mappings, which are resolved in the WebVi
 
 ###### Origin-based DOM APIs
 
-todo
+Local content loaded via WebResourceRequested an http or https URL and a corresponding origin. So APIs that require an origin such as `localStorage` or `indexedDB` will work, and the usual ["same-origin" rules](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) apply.
 
 
 ###### DOM APIs requiring secure context
 
-todo
+Some newer browser features are limited to https URLs and using WebResourceRequested allows you to replace https URL web resource requests with your own local content and so these browser features are available. This means webcam APIs, geolocation APIs, and notification APIs, among others are all available. See [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) for more information.
 
 
 ###### Dynamic content
 
-todo
+When loading local content via `WebResourceRequested` you specify the local content to load in your event handler. Since you are directly providing the local content you can dynamically modify it in any manner.
 
 
 ###### Additional web resources
 
-todo
+Local content loaded via `WebResourceRequested` modifies content loaded via http and https URLs. These URLs support relative URL resolution and so an HTML document served via `WebResourceRequested` can have CSS, script, image, and so on references that are also served via `WebResourceRequested`.
 
 
 ###### Additional web resources resolved in WebView2 process
 
-todo
+Unlike file URLs and virtual host name mappings, which are resolved in WebView2 processes, the `WebResourceRequested` event is raised on your WebView2's UI thread in your host app process. This means the WebView2 will first pause loading a web page to wait for the event to be sent to your host app process, and then wait for your UI thread to be available, and then wait for your app code to handle the event. This can take some time, so make sure that your calls to `AddWebResourceRequestedFilter` are appropriately limited to only the web resources that must raise the `WebResourceRequested` event.
 
 
 <!-- ------------------------------ -->
