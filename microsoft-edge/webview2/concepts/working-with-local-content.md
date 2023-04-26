@@ -61,7 +61,7 @@ When specifying a file URL, the app navigates to a specific path, not a domain. 
 
 ###### Origin-based DOM APIs
 
-todo
+Documents loaded via file URL has an origin that is unique to each file, just like in the browser. So APIs that require an origin such as `localStorage` or `indexedDB` will work, but different file URL documents are not considered "same-origin".
 
 
 ###### DOM APIs requiring secure context
