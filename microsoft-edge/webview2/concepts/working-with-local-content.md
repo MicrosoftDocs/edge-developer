@@ -22,9 +22,9 @@ These approaches are described below.
 <!-- ====================================================================== -->
 ## Selecting an approach
 
-The approaches for loading local content into a WebView2 control support the following scenarios:
+The various ways of loading local content into a WebView2 control support the following scenarios:
 
-| Scenario | Navigating to a file URL | Navigating to an HTML string | Virtual host name mapping | `WebResourceRequested` |
+| Scenario | By navigating to a file URL | By navigating to an HTML string | By using virtual host name mapping | By using `WebResourceRequested` |
 | --- |:---:|:---:|:---:|:---:|
 | Origin-based DOM APIs | ✔️ | ❌ | ✔️ | ✔️ |
 | DOM APIs requiring secure context | ❌ | ❌ | ✔️ | ✔️ |
@@ -32,13 +32,14 @@ The approaches for loading local content into a WebView2 control support the fol
 | Additional web resources | ✔️ | ❌ | ✔️  | ✔️ |
 | Additional web resources resolved in WebView2 process | ✔️ | ❌ | ✔️ | ❌ |
 
+These scenarios are described in more detail below.
 
 <!-- ====================================================================== -->
 ## Loading local content by navigating to a file URL
 
 WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is the simplest and most efficient approach to loading local content.  However, it is less flexible than the other approaches.  Like in a web browser, file URLs are limited in some capabilities:
 *  The document has an origin that is unique to each file, just like in the browser. So APIs that require an origin such as `localStorage` or `indexedDB` will work, but different file URL documents are not considered "same-origin".
-*  Some newer browser features are limited to https URLs and are not available to file URLs. This includes webcam APIs, geolocation APIs, and notification APIs, among others.
+*  Some newer browser features are limited to https URLs and are not available to file URLs. This includes features such as webcam APIs, geolocation APIs, and notification APIs.
 *  For each resource, the full path must be specified.
 
 
@@ -66,7 +67,7 @@ Documents loaded via file URL has an origin that is unique to each file, just li
 
 ###### DOM APIs requiring secure context
 
-Some newer browser features are limited to https URLs and are not available to file URLs. This includes webcam APIs, geolocation APIs, and notification APIs, among others. See [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) for more information.
+Some newer browser features are limited to https URLs, and are not available to file URLs. This includes features such as webcam APIs, geolocation APIs, and notification APIs. See [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) for more information.
 
 
 ###### Dynamic content
@@ -76,7 +77,7 @@ Loading local content via file URLs is getting content from static files on the 
 
 ###### Additional web resources
 
-File URLs support relative URL resolution.  So, an HTML document served via file URL can have references such as CSS, script, and image that are also served via file URLs.
+File URLs support relative URL resolution.  So, an HTML document that's served via file URL can have references such as CSS, script, and image that are also served via file URLs.
 
 
 ###### Additional web resources resolved in WebView2 process
@@ -186,12 +187,12 @@ Another scenario where navigating to a string might be useful is if you want to 
 
 ###### Origin-based DOM APIs
 
-`NavigateToString` has as its document URI `about:blank` and `null` as its origin. This means you cannot use any DOM API that depends on the origin, such as `localStorage` or `indexedDB`.
+`NavigateToString` has `about:blank` as its document URI, and `null` as its origin. This means you cannot use any DOM API that depends on the origin, such as `localStorage` or `indexedDB`.
 
 
 ###### DOM APIs requiring secure context
 
-Some newer browser features are limited to https URLs and are not available to the `about:blank` URI that `NavigateToString` uses. This includes webcam APIs, geolocation APIs, and notification APIs, among others. See [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) for more information.
+Some newer browser features are limited to https URLs and are not available to the `about:blank` URI that `NavigateToString` uses. This includes features such as webcam APIs, geolocation APIs, and notification APIs. For more information, see [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
 
 
 ###### Dynamic content
@@ -201,7 +202,7 @@ When loading local content via `NavigateToString`, you are directly providing th
 
 ###### Additional web resources
 
-`NavigateToString` has the drawback that you can only specify the string content of the HTML document; there is no way to represent additional web resources, such as CSS, images, or script. Instead, to reference additional web resources from your HTML document, you must use one of the other mechanisms described in this article, or represent those additional web resources inline in the HTML document.
+`NavigateToString` has the drawback that you can only specify the string content of the HTML document; there's no way to represent additional web resources, such as CSS, images, or script. Instead, to reference additional web resources from your HTML document, you must use one of the other approaches described in this article, or represent those additional web resources inline in the HTML document.
 
 
 ###### Additional web resources resolved in WebView2 process
@@ -302,9 +303,9 @@ webView->NavigateToString(htmlString);
 
 Another way to load local content in a WebView2 control is to use virtual host name mapping.  This involves mapping a local domain name to a local folder, so that when the WebView2 control attempts to load a resource for that domain, it will load the content from the specified local folder location instead. The origin of the document will also be the virtual host name. 
 
-Due to a current limitation, media files that are accessed using a virtual host name can be slow to load.<!-- when limitation is fixed, remove sentence -->
-
 This approach lets you specify the cross-origin access, by using the `CoreWebView2HostResourceAccessKind` enum.
+
+Due to a current limitation, media files that are accessed using a virtual host name can be slow to load.<!-- when limitation is fixed, remove sentence -->
 
 
 <!-- ------------------------------ -->
@@ -328,7 +329,7 @@ When loading local content via a virtual host name mapping, you are mapping a vi
 
 ###### Additional web resources
 
-Local content loaded via virtual host names have http and https URLs. These URLs support relative URL resolution, and so an HTML document served via virtual host names can have references such as CSS, script, and image references that are also served via virtual host names.
+Local content that's loaded via virtual host names has http or https URLs. These URLs support relative URL resolution, and so an HTML document that's served via virtual host names can have references such as CSS, script, and image references that are also served via virtual host names.
 
 
 ###### Additional web resources resolved in WebView2 process
@@ -402,7 +403,7 @@ Another way you can host local content in a WebView2 control is by relying on th
 
 `WebResourceRequested` allows you to customize the behavior of local content on a per-request basis. This means you can decide which requests to intercept and provide your own content for, and which requests to let the WebView2 control handle normally.  However, customizing the behavior requires more code, such as virtual host mapping, and requires knowledge of HTTP, to be able to construct a proper response. 
 
-From WebView2's perspective, the resource will have come via the network, and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event is also slower than other approaches, due to the needed cross-process communication and processing per each request.
+From WebView2's perspective, the resource will have come via the network, and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event is also slower than other approaches, due to the cross-process communication and processing that's needed for each request.
 
 
 
@@ -432,7 +433,7 @@ Local content that's loaded via `WebResourceRequested` modifies content that's l
 
 ###### Additional web resources resolved in WebView2 process
 
-Unlike file URLs and virtual host name mappings, which are resolved in WebView2 processes, the `WebResourceRequested` event is raised on your WebView2's UI thread in your host app process. This means the WebView2 will first pause loading a web page to wait for the event to be sent to your host app process, and then wait for your UI thread to be available, and then wait for your app code to handle the event. This can take some time, so make sure that your calls to `AddWebResourceRequestedFilter` are appropriately limited to only the web resources that must raise the `WebResourceRequested` event.
+Unlike file URLs and virtual host name mappings, which are resolved in WebView2 processes, the `WebResourceRequested` event is raised on your WebView2's UI thread in your host app process. This means the WebView2 will first pause loading a web page to wait for the event to be sent to your host app process, and then wait for your UI thread to be available, and then wait for your app code to handle the event. This can take some time, so make sure that your calls to `AddWebResourceRequestedFilter` are limited to only the web resources that must raise the `WebResourceRequested` event.
 
 
 <!-- ------------------------------ -->
