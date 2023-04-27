@@ -129,7 +129,7 @@ Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
 
 <!-- a checkin comment at repo says "Update projects to use latest WebView2 SDK 1.0.781-prerelease (#74)" -->
 
-1. **WebView2 SDK** - Update or install the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. **WebView2 SDK** - Update or install the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
    <!-- this same png is used multiple times in this file -->
    ![The WebView2WindowsFormsBrowser project in Visual Studio](media/webview2windowsformsbrowser-in-visual-studio.png)

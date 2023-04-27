@@ -229,16 +229,22 @@ Install Visual Studio workloads if prompted.  When you open a `.sln` file from t
 <!--
 maintenance links; keep:
 Main, central copy:
-[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+[Install or update the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 Secondary copies:
-[Install the WebView2 SDK](../get-started/win32.md#step-6---install-the-webview2-sdk) in _Get started with WebView2 in Win32 apps_
-[Install the WebView2 SDK](../get-started/winforms.md#step-3---install-the-webview2-sdk) in _Get started with WebView2 in WinForms apps_
-[Install the WebView2 SDK](../get-started/wpf.md#step-3---install-the-webview2-sdk) in _Get started with WebView2 in WPF apps_
-[Install the WebView2 SDK](../get-started/winui2.md#step-6---install-the-webview2-sdk) in _Get started with WebView2 in WinUI 2 (UWP) apps_
-[Install the WebView2 SDK](../get-started/winui.md#step-4---install-the-webview2-sdk) in _Get started with WebView2 in WinUI 3 (Windows App SDK) apps_
+[Install or update the WebView2 SDK](../get-started/win32.md#step-6---install-the-webview2-sdk) in _Get started with WebView2 in Win32 apps_
+[Install or update the WebView2 SDK](../get-started/winforms.md#step-3---install-the-webview2-sdk) in _Get started with WebView2 in WinForms apps_
+[Install or update the WebView2 SDK](../get-started/wpf.md#step-3---install-the-webview2-sdk) in _Get started with WebView2 in WPF apps_
+[Install or update the WebView2 SDK](../get-started/winui2.md#step-6---install-the-webview2-sdk) in _Get started with WebView2 in WinUI 2 (UWP) apps_
+[Install or update the WebView2 SDK](../get-started/winui.md#step-4---install-the-webview2-sdk) in _Get started with WebView2 in WinUI 3 (Windows App SDK) apps_
 -->
 <!-- ====================================================================== -->
-## Install the WebView2 SDK
+## Install or update the WebView2 SDK
+
+<!--
+condensed summary to possibly use elsewhere:
+To select which version of WebView2 SDK NuGet package a Visual Studio project uses, in Visual Studio, right-click a project, select **Manage NuGet Packages**, select or clear the **Include prerelease** checkbox, select the **Microsoft.Web.WebView2** package, and then in the **Version** dropdown list, select a version of the **Microsoft.Web.WebView2** NuGet package.
+-->
+
 
 The WebView2 SDK includes the WebView2 control, which is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
 
@@ -249,7 +255,7 @@ Instead of downloading the `Microsoft.Web.WebView2` SDK NuGet package from nuget
 The `Microsoft.Web.WebView2` SDK is available in Release and Prerelease versions.  To get started, a Release version is recommended.
 
 
-Install the WebView2 SDK, as follows:
+Install or update the Release or Prerelease WebView2 SDK, as follows:
 
 1. Open a `.sln` file in Visual Studio.  For example, open your local copy of [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln).  This repo's solution files require Visual Studio, not Visual Studio Code.
 
@@ -263,7 +269,7 @@ Install the WebView2 SDK, as follows:
 
 1. In the **NuGet** window, click the **Browse** tab.
 
-1. On the right of the search bar, clear the **Include prerelease** checkbox (unless you know that you want a prerelease version of the SDK).
+1. On the right of the search bar, clear the **Include prerelease** checkbox, or set it if you want a prerelease version of the SDK, which includes experimental APIs.
 
 1. In the search bar in the upper left, type **Microsoft.Web.WebView2**.
 

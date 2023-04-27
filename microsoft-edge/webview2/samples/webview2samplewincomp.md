@@ -161,7 +161,7 @@ This step is optional.  The sample has preinstalled:
 
 1. Click the **Updates** tab.
 
-1. If a newer prerelease of the **Microsoft.Web.WebView2** SDK is listed, you can optionally click the **Update** button.  A prerelease has a "-prerelease" suffix, such as **1.0.1248-prerelease**.  If you want to see details about this step, in a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If a newer prerelease of the **Microsoft.Web.WebView2** SDK is listed, you can optionally click the **Update** button.  A prerelease has a "-prerelease" suffix, such as **1.0.1248-prerelease**.  If you want to see details about this step, in a separate window or tab, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
    ![The Updates tab of NuGet Package Manager after initially opening the WebView2SampleWinComp solution](webview2samplewincomp-images/updates-tab-initial-state.png)
 

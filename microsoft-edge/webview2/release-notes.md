@@ -34,15 +34,7 @@ WebView2 shares code and binaries with the Microsoft Edge browser, and is releas
 
 *  To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](./concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
 
-*  To update the WebView2 SDK, see [Selecting which type of SDK to use](#selecting-which-type-of-sdk-to-use), below.
-
-
-<!-- ------------------------------ -->
-#### Selecting which type of SDK to use
-
-To select which version of WebView2 SDK NuGet package a Visual Studio project uses, in Visual Studio, right-click a project, select **Manage NuGet Packages**, select or clear the **Include prerelease** checkbox, select the **Microsoft.Web.WebView2** package, and then in the **Version** dropdown list, select a version of the **Microsoft.Web.WebView2** NuGet package.
-
-For details, see [Install the WebView2 SDK](./how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  You can also view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
+*  To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](./how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
 
 
 <!-- ------------------------------ -->
@@ -91,6 +83,11 @@ Async methods:
 
 <!-- ------------------------------ -->
 #### Phases of introducing APIs
+
+<!-- todo: duplicated information across various pages:
+experimental/stable in prerelease/stable in release table
+selecting what SDK to use
+-->
 
 New APIs are introduced in phases as follows:
 
