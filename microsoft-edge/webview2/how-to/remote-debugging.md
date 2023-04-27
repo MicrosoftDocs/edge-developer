@@ -101,12 +101,10 @@ Now you can use Microsoft Edge DevTools to inspect and debug the WebView2 contro
 ## Debugging Hololens 2 WebView2 WinUI 2 (UWP) apps
 
 Attach Microsoft Edge DevTools remotely to a Hololens 2 WebView2 WinUI 2 (UWP) app as follows:
-<!-- steps 1 & 2: -->
 
 1.  In Microsoft Edge, go to `edge://inspect`.  The **Inspect with Edge Developer Tools** page opens:
 
     ![DevTools Inspect utility page](./remote-debugging-images/inspect-devtools-page-supported.png)
-    <!-- / steps 1 & 2 -->
 
 1.  Enable Device Portal: Open Windows **Settings**, select **Update & Security** > **For developers**, and then turn on the **Device Portal** toggle:
 
@@ -116,7 +114,6 @@ Attach Microsoft Edge DevTools remotely to a Hololens 2 WebView2 WinUI 2 (UWP) a
 
 1.  Install [Remote Tools for Microsoft Edge](https://www.microsoft.com/store/productId/9P6CMFV44ZLT) from the Microsoft Store on your Hololens 2 device.
 
-    <!-- steps 8-12: -->
 1.  In Microsoft Edge, go to the Device Portal URL that you previously noted.  Verify that the **Confirm security settings** page is loaded (in the **Windows Device Portal** tab):
 
     ![The 'Confirm security settings' page in the 'Windows Device Portal' tab](./remote-debugging-images/open-device-portal.png)
@@ -150,27 +147,22 @@ Attach Microsoft Edge DevTools remotely to a Hololens 2 WebView2 WinUI 2 (UWP) a
     The line is numbered 33 in this screenshot, in the `Browser()` constructor, below an `#endif` that wraps an existing `SetEnvironmentVariable` statement:
 
     ![Browser Arguments Remote Debugging](./remote-debugging-images/browser-arguments-remote-debugging.png)
-    <!-- / steps 8-12 -->
 
 1.  Launch your app on your Hololens 2 device.
 
-    <!-- steps 14-15: -->
 1.  Go to `http://<Device Portal URL>/msedge`, such as `http://localhost:50080/msedge`, and make sure your WebView2 instance appears in the list:
 
     ![Debuggable WebView2 Instance](./remote-debugging-images/debuggable-webviews.png)
 
 1.  Go to `edge://inspect`.  In the **Connect to a remote Windows device** text box, enter `http://<Device Portal URL>`, such as `http://localhost:50080`, and then click **Connect to Device**.
-    <!-- / steps 14-15 -->
 
 1.  Verify that you can successfully connect, so that your debuggable WebView2 control, named **Edge**, is listed under your machine name:
 
     ![Connect to WebView2 on Hololens 2](./remote-debugging-images/connect-to-webview2-hololens.png)
 
-    <!-- step 17: -->
 1.  At the bottom of the **Edge** WebView2 control entry, click the **inspect** link.  Microsoft Edge DevTools opens for the WebView2 control:
 
     ![DevTools Inspect Window](./remote-debugging-images/devtools-inspect.png)
-    <!-- / step 17 -->
 
 Now you can use Microsoft Edge DevTools to inspect and debug the WebView2 control in your Hololens 2 WebView2 WinUI 2 (UWP) app.
 
