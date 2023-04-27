@@ -1176,7 +1176,7 @@
 
             - name: WPF sample app with CDP
               href: webview2/samples/wv2cdpextensionwpfsample.md
-              displayName: WV2CDPExtensionWPFSample, WPF sample app with CDP  # repo dir name, top-of-page title
+              displayName: WV2CDPExtensionWPFSample, WPF sample app with CDP extension  # repo dir name, top-of-page title
 
             - name: WinForms sample app
               href: webview2/samples/webview2windowsformsbrowser.md
