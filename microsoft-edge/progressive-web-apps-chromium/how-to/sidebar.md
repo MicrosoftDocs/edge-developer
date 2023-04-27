@@ -1,5 +1,5 @@
 ---
-title: Build Microsoft Edge sidebar PWAs
+title: Build PWAs for the sidebar in Microsoft Edge
 description: How to build your PWA for installation in the Microsoft Edge Sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 04/27/2023
 ---
-# Build Microsoft Edge sidebar PWAs
+# Build PWAs for the sidebar in Microsoft Edge
 
 ![Experimental feature](../../media/experimental-tag.png)
 
@@ -26,7 +26,7 @@ By signaling intent to be pinned to the sidebar, your PWA gets the following ben
 <!-- ====================================================================== -->
 ## Enable sidebar support of PWAs in Microsoft Edge
 
-Experimental support for pinning PWAs in the Microsoft Edge's sidebar starts with Microsoft Edge 112. Some parts of the feature are available starting with Microsoft Edge 114, such as the ability to detect if your PWA is running in the sidebar by using User Agent Client Hints.
+Experimental support for PWAs that can target the sidebar in Microsoft Edge starts with Microsoft Edge 112. Some parts of the feature are available starting with Microsoft Edge 114, such as the ability to detect if your PWA is running in the sidebar by using User Agent Client Hints.
 
 To locally enable PWA sidebar support in Microsoft Edge:
 
@@ -50,13 +50,13 @@ To locally enable PWA sidebar support in Microsoft Edge:
 <!-- ====================================================================== -->
 ## Enable sidebar support in your PWA
 
-To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `edge_sidebar_panel` manifest member:
+To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `edge_side_panel` manifest member:
 
 1. Make sure your PWA has a web app manifest file that contains at least the `name`, `short_name`, `description`, and `icons` members.
 
     To learn more, see [Use a web app manifest to integrate a Progressive Web App into the operating system](./web-app-manifests.md).
 
-1. Add the `edge_sidebar_panel` member to your web app manifest. For example:
+1. Add the `edge_side_panel` member to your web app manifest. For example:
 
     ```json
     {

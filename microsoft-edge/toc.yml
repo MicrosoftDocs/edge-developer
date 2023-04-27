@@ -1088,7 +1088,7 @@
             - name: Build operating system Widgets
               href: progressive-web-apps-chromium/how-to/widgets.md
 
-            - name: Build Microsoft Edge sidebar PWAs
+            - name: Build PWAs for the sidebar in Microsoft Edge
               href: progressive-web-apps-chromium/how-to/sidebar.md
 
         - name: What's new
