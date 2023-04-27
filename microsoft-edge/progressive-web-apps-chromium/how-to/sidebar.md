@@ -1,6 +1,6 @@
 ---
 title: Build PWAs for the sidebar in Microsoft Edge
-description: How to build your PWA for installation in the Microsoft Edge Sidebar.
+description: How to build your PWA for installation in the Microsoft Edge sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -64,7 +64,7 @@ To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `ed
       "lang": "en-US",
       "start_url": "/",
       "short_name": "PWAmp",
-      "description": "A skinable music player app to play your favorite mp3 files",
+      "description": "A skinnable music player app to play your favorite mp3 files",
       "display": "standalone",
       "icons": [
         {
@@ -92,7 +92,7 @@ If your app's layout can't support the 376 pixels minimum width, you can define 
   "lang": "en-US",
   "start_url": "/",
   "short_name": "PWAmp",
-  "description": "A skinable music player app to play your favorite mp3 files",
+  "description": "A skinnable music player app to play your favorite mp3 files",
   "display": "standalone",
   "icons": [
     {
@@ -127,7 +127,7 @@ However, if you prefer to build an app that can only be pinned to the sidebar bu
   "lang": "en-US",
   "start_url": "/",
   "short_name": "PWAmp",
-  "description": "A skinable music player app to play your favorite mp3 files",
+  "description": "A skinnable music player app to play your favorite mp3 files",
   "display": "browser",
   "icons": [
     {
