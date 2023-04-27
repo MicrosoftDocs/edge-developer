@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/25/2023
+ms.date: 04/27/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -14,7 +14,7 @@ The WebView2 team updates the WebView2 SDK on a four-week cadence.  This article
 
 You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 
-Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](webview2-api-reference.md).
+Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 features and APIs](./concepts/overview-features-apis.md).
 
 
 <!-- ------------------------------ -->
@@ -82,25 +82,16 @@ Async methods:
 
 
 <!-- ------------------------------ -->
-#### Phases of introducing APIs
+#### Experimental APIs, Prerelease SDKs, and Release SDKs
 
-<!-- todo: duplicated information across various pages:
-experimental/stable in prerelease/stable in release table
-selecting what SDK to use
--->
-
-New APIs are introduced in phases as follows:
-
-| API status | Description |
-|---|---|
-| _Experimental_ | 1. First an API is Experimental in a Prerelease SDK.  You can test these APIs and provide feedback.  The API isn't in a Release SDK yet. |
-| _Stable in a Prerelease SDK_ | 2. Then the API is promoted to Stable in the Prerelease SDK.  The API isn't in a Release SDK yet. |
-| _Stable in a Release SDK_ | 3. Then the Stable API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK. |
+APIs are initially introduced as Experimental APIs.  Then they become Stable APIs in a Prerelease SDK package, and soon after, they become Stable APIs in a Release SDK package.  For more information, see [Phases of introducing APIs](./concepts/versioning.md) in _Understand the different WebView2 SDK versions_.
 
 <!-- terminology:
 APIs are Experimental or Stable
 SDKs/packages are Prerelease or Release
 -->
+
+The following sections cover either a Release SDK package (1.0.####.##) or a Prerelease SDK package (1.0.####-prerelease).
 
 
 <!-- ====================================================================== -->
@@ -3504,4 +3495,5 @@ Initial developer preview release.
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge WebView2 team](contact.md)
+* [Overview of WebView2 features and APIs](./concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
+* [Contacting the Microsoft Edge WebView2 team](contact.md)
