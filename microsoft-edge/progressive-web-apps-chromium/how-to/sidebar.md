@@ -109,7 +109,7 @@ If your app's layout can't support the 376 pixels minimum width, you can define 
 When you define a preferred width in your app's manifest, the following happens:
 
 * When your app is opened in the sidebar, the sidebar is automatically resized to your preferred width.
-* Users can resize the sidebar to make it larger your preferred width, or smaller, up to the 376 pixels minimum width.
+* Users can resize the sidebar to make it larger than your preferred width, or smaller, up to the 376 pixels minimum width.
 
 
 <!-- ====================================================================== -->
