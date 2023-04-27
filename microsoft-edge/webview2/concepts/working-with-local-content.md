@@ -329,7 +329,7 @@ When loading local content via a virtual host name mapping, you are mapping a vi
 
 ###### Additional web resources
 
-Local content that's loaded via virtual host name mapping has an HTTP or HTTPS URL which supports relative URL resolution This means that the loaded document can have references to additional web resources such as CSS, script, or image files which are also served via virtual host name mapping.
+Local content that's loaded via virtual host name mapping has an HTTP or HTTPS URL which supports relative URL resolution. This means that the loaded document can have references to additional web resources such as CSS, script, or image files which are also served via virtual host name mapping.
 
 
 ###### Additional web resources resolved in WebView2 process
