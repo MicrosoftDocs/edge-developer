@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/06/2021
+ms.date: 04/27/2023
 ---
 # Use the Chrome DevTools Protocol (CDP) in WebView2 apps
 
@@ -14,7 +14,7 @@ The [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protoco
 
 To use the Chrome DevTools Protocol API in a WebView2 app, do either of the following:
 
-*  Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet package (.NET).
+*  Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet package (.NET).
 
 *  Or, run one of the following methods:
 
@@ -26,14 +26,9 @@ To use the Chrome DevTools Protocol API in a WebView2 app, do either of the foll
 <!-- ====================================================================== -->
 ## Use DevToolsProtocolHelper
 
-The `DevToolsProtocolExtension` includes a `DevToolsProtocolHelper` object.<!-- TODO: global: clarify/change naming?  Helper vs. Extension -->
+The `DevToolsProtocolExtension` includes a `DevToolsProtocolHelper` object.
 
 `Microsoft.Web.WebView2.DevToolsProtocolExtension` is a NuGet package created by the WebView2 team that provides easy access to Chrome DevTools Protocol features.  The following examples describe how to use the geolocation functionality in Chrome DevTools Protocol in your WebView2 control.  To use other Chrome DevTools Protocol features, you can follow a similar pattern.
-
-
-### Don't use the preview package in production apps
-
-The `Microsoft.Web.WebView2.DevToolsProtocolExtension` NuGet package is currently in technical preview.  While in preview, refrain from using this NuGet package in production apps.
 
 
 <!-- ====================================================================== -->
