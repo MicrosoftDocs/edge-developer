@@ -23,7 +23,7 @@ To export a `.heapsnapshot` file, first you need to record a heap snapshot in th
 
 1. In Microsoft Edge, navigate to the website you want to export the data from.
 
-1. Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS) to open Devtools.
+1. Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS) to open Devtools.
 
 1. Open the **Memory** tool.
 
@@ -93,7 +93,7 @@ The `.heapsnapshot` JSON data contains a root object that has the following prop
 | `trace_function_infos` | _Not documented yet_ | `Array` |
 | `trace_tree` | _Not documented yet_ | `Array` |
 | `samples` | _Not documented yet_ | `Array` |
-| `locations` | _Not documented yet_ | `Array` |
+| `locations` | Contains information about the script location of nodes. To parse this data, use `snapshot.meta.location_fields` with the `nodes` array. | `Array` |
 | `strings` | An array of all of the strings that are held in memory. These can be any strings, such as user-defined strings or code. | `Array` |
 
 #### Snapshot
@@ -303,8 +303,67 @@ The first number in the group of numbers for an edge in the `edges` array corres
 | Shortcut | An easier-to-read representation of some other path. This type is rarely used. For example, if you use `Function.prototype.bind` to create a bound function with some bound arguments, V8 creates a `JSBoundFunction`, which points to a `FixedArray` (an internal type), which points to each bound argument. When producing a snapshot, V8 adds a shortcut edge from the bound function directly to each bound argument, bypassing the `FixedArray`. |
 | Element | Object properties where the key is a number. |
 
+#### locations
+
+The `locations` array, which is at the top level of the `.heapsnapshot` data, contains information about where some of the nodes in the snapshot were created. This array consists of a series of numbers meant to be read by groups of size `snapshot.meta.location_fields.length`. Therefore, we would go to `snapshot.meta.location_fields` to know how many fields each location in the `locations` array has, and what those fields are. For example, if `location_fields` contains 4 items, then the `locations` array should be read by groups of 4.
+
+`snapshot.meta.location_fields` contains the information for each location:
+
+| Index in `location_fields` | Name | Description |
+| --- | --- | --- |
+| `0` | `object_index` | The index of the node in the `snapshot.nodes` array that's associated with this location. |
+| `1` | `script_id` | The ID of the script that creates the associated node. |
+| `2` | `line` | The line number where the node was created, within the script that created the node. |
+| `3` | `column` | The column number where the node was created, within the script that created the node. |
+
+The following code example shows how to link the `snapshot.locations` array to the `snapshot.nodes` array:
+
+```json
+{
+    "snapshot": {
+        "meta": {
+            "location_fields": [
+                "object_index",
+                "script_id",
+                "line",
+                "column"
+            ]
+            ...
+        }
+        ...
+    },
+    "nodes": [
+        9,1,1,0,10,0,0,
+        2,1,79,12,1,0,0,
+        ...
+    ],
+    "locations":[
+        7,9,0,0,
+        113792,3,25,21,
+        ...
+    ],
+    ...
+}
+```
+
+The first location in the `locations` array is `7,9,0,0,`. This location is associated with the node info group that starts at index 7 in the `nodes` array. Therefore, the node contains the following key/value pairs:
+
+```
+"type": 2,
+"name": 1,
+"id": 79,
+"self_size": 12,
+"edge_count": 1,
+"trace_node_id": 0,
+"detachedness": 0,
+"script_id": 9,
+"line" 0,
+"column": 0,
+```
 
 <!-- ====================================================================== -->
 ## See also
 
-* To learn more about the `.heapsnapshot` file format, see the code that generates the file, which is  [the `HeapSnapshotGenerator` class in `heap-snapshot-generator.h`](https://chromium.googlesource.com/external/v8/+/master/src/heap-snapshot-generator.h#142).
+To learn more about the `.heapsnapshot` file format, see the code that generates the file, which is the `HeapSnapshotGenerator` class in `heap-snapshot-generator.h`.
+*  [HeapSnapshot class (line 142)](https://chromium.googlesource.com/external/v8/+/master/src/heap-snapshot-generator.h#142)
+*  [HeapSnapshotGenerator class (line 522)](https://chromium.googlesource.com/external/v8/+/master/src/heap-snapshot-generator.h#522)

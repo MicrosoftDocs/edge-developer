@@ -21,27 +21,27 @@ To emulate a user's selection of preferred color theme:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. Press **Esc** to open the Drawer at the bottom of DevTools.  Click the **+** icon at the top of the Drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
 
 1. In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: light**.  The webpage is re-rendered using `light-theme.css`.
 
-   ![Using the Rendering tool to simulate a light mode and triggering the other theme of the document.](../media/a11y-testing-simulating-light-mode.msft.png)
+   ![Using the Rendering tool to simulate a light mode and triggering the other theme of the document](../media/a11y-testing-simulating-light-mode.msft.png)
 
 1. Select the **Issues** tool, and then expand the **Accessibility** section.  Depending on various factors, you might get `Insufficient color contrast` warnings. Notice in **AFFECTED RESOURCES** there are 6 elements with insufficient color contrast.
 
-   ![New contrast issues detected because of the change to light theme.](../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png)
+   ![New contrast issues detected because of the change to light theme](../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png)
 
     On our demo page, the **Donation status** section of the page is unreadable in light mode, and needs to change:
 
-   ![The Donation Status section has contrast issues in light mode.](../media/a11y-testing-donation-state-light-contrast.msft.png)
+   ![The Donation Status section has contrast issues in light mode](../media/a11y-testing-donation-state-light-contrast.msft.png)
 
-1. In DevTools, select the **Elements** tool, and then press `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS.  The **Find** text box appears, to search within the HTML DOM tree.
+1. In DevTools, select the **Elements** tool, and then press **Ctrl+F** on Windows/Linux or **Command+F** on macOS.  The **Find** text box appears, to search within the HTML DOM tree.
 
-   ![The Find text box for the DOM tree in the Elements tool.](../media/find-in-dom-tree.png)
+   ![The Find text box for the DOM tree in the Elements tool](../media/find-in-dom-tree.png)
 
-1. Enter `scheme`.  The following CSS media queries are found, and the corresponding CSS files can now be updated.
+1. Enter **scheme**.  The following CSS media queries are found, and the corresponding CSS files can now be updated.
 
     ```html
     <link rel="stylesheet" href="css/light-theme.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">

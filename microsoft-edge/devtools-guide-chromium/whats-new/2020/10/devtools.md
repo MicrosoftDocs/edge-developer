@@ -37,7 +37,7 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 
 [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object) is now available in the [Console](../../../console/index.md) for users on localized versions of the DevTools.   Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](../../../contact.md) to improve support for DevTools in all locales.  For real-time updates on this feature in the Chromium open-source project, see Issue [#1136655](https://crbug.com/1136655).
 
-![Network tool with non-localized filters.](../../media/2020/10/bing-network-japanese.msft.png)
+![Network tool with non-localized filters](../../media/2020/10/bing-network-japanese.msft.png)
 
 See also:
 * [Change DevTools language settings](../../../customize/localization.md)
@@ -50,11 +50,11 @@ DevTools now supports moving tools between the top and bottom panels.  Customize
 
 To move any top tool to the bottom, right-click a tab and then select **Move to bottom**:
 
-![Move to bottom.](../../media/2020/10/move-to-bottom.msft.png)
+![Move to bottom](../../media/2020/10/move-to-bottom.msft.png)
 
 To move any bottom tool to the top, right-click a tab and then select **Move to top**:
 
-![Move to top.](../../media/2020/10/move-to-top.msft.png)
+![Move to top](../../media/2020/10/move-to-top.msft.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [#1075732](https://crbug.com/1075732).
 
@@ -76,11 +76,11 @@ The **Network Console** tool now supports the following actions:
 
 Entering a name for the new environment:
 
-![Entering a name for the new environment.](../../media/2020/10/network-console-environments-new-name.msft.png)
+![Entering a name for the new environment](../../media/2020/10/network-console-environments-new-name.msft.png)
 
 Selecting the format for the new environment:
 
-![Selecting the format for the new environment.](../../media/2020/10/network-console-environments-new-format.msft.png)
+![Selecting the format for the new environment](../../media/2020/10/network-console-environments-new-format.msft.png)
 
 Update: This feature has been released and is no longer experimental.<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**. -->
 
@@ -105,7 +105,7 @@ The Microsoft Edge DevTools now support the following features for inspecting, v
 
 The features are turned on by default.
 
-![Layout tool with grids.](../../media/2020/10/grid-layout-pane.msft.png)
+![Layout tool with grids](../../media/2020/10/grid-layout-pane.msft.png)
 
 Update: This feature has been released and is no longer experimental.<!-- valid. -->
 
@@ -122,7 +122,7 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 
 You can now customize the keyboard shortcut for any action in the DevTools.  Since Microsoft Edge version 84, you can choose between **Visual Studio Code** and **DevTools (default)** presets for keyboard shortcuts.  Starting in Microsoft Edge version 87, you can further customize keyboard shortcuts.
 
-![Custom shortcut for pausing a script.](../../media/2020/10/custom-shortcut-pause-script.msft.png)
+![Custom shortcut for pausing a script](../../media/2020/10/custom-shortcut-pause-script.msft.png)
 
 Update: This feature has been released and is no longer experimental.<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable keyboard shortcut editor**. -->
 
@@ -145,11 +145,11 @@ With the extension, launch Microsoft Edge, connect to an existing instance of th
 
 Using the extension in full browser mode:
 
-![Using the extension in full browser mode.](../../media/2020/10/microsoft-edge-tools-full-browser.msft.png)
+![Using the extension in full browser mode](../../media/2020/10/microsoft-edge-tools-full-browser.msft.png)
 
 Using the extension in headless mode:
 
-![Using the extension in headless mode.](../../media/2020/10/microsoft-edge-tools-headless.msft.png)
+![Using the extension in headless mode](../../media/2020/10/microsoft-edge-tools-headless.msft.png)
 
 For more information, see [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
 
@@ -173,11 +173,11 @@ You can emulate authenticators and debug the [Web Authentication API](https://w3
 
 Opening the **WebAuthn** tool:
 
-![Opening the WebAuthn tool.](../../media/2020/10/more-tools-webauthn.msft.png)
+![Opening the WebAuthn tool](../../media/2020/10/more-tools-webauthn.msft.png)
 
 The **WebAuthn** tool:
 
-![The WebAuthn tool.](../../media/2020/10/webauthn-enable-virtual-auth.msft.png)
+![The WebAuthn tool](../../media/2020/10/webauthn-enable-virtual-auth.msft.png)
 
 For more information, see [Emulate authenticators and debug WebAuthn](../../../webauthn/index.md).
 
@@ -192,15 +192,15 @@ See also:
 <!-- ====================================================================== -->
 #### View the Computed sidebar pane in the Styles pane
 
-Toggle the **Computed** pane in the **Styles** pane.  The **Computed** pane in the **Styles** pane is collapsed by default.  To display or hide the **Computed** pane within the **Styles** pane, click the **Show Computed Styles sidebar** (!['Show Computed Styles sidebar' icon.](../../media/2020/10/show-computed-styles-sidebar-icon.png)) button.
+Toggle the **Computed** pane in the **Styles** pane.  The **Computed** pane in the **Styles** pane is collapsed by default.  To display or hide the **Computed** pane within the **Styles** pane, click the **Show Computed Styles sidebar** (!['Show Computed Styles sidebar' icon](../../media/2020/10/show-computed-styles-sidebar-icon.png)) button.
 
 Opening the **Computed sidebar** pane:
 
-![Opening the Computed sidebar pane.](../../media/2020/10/computed-sidebar-pane.msft.png)
+![Opening the Computed sidebar pane](../../media/2020/10/computed-sidebar-pane.msft.png)
 
 The **Computed sidebar** pane:
 
-![Computed sidebar pane.](../../media/2020/10/computed-sidebar-pane-open.msft.png)
+![Computed sidebar pane](../../media/2020/10/computed-sidebar-pane-open.msft.png)
 
 For real-time updates on this feature in the Chromium open-source project, see Issue [#1073899](https://crbug.com/1073899).
 
@@ -214,7 +214,7 @@ See also:
 
 To view your applied CSS with less scrolling, group the CSS properties by categories in the **Computed** pane.  You can also selectively focus on a set of related properties while you inspect your CSS.  From the **Elements** tool, select an element.  To group (or ungroup) the CSS properties, toggle the **Group** checkbox.
 
-![Grouping CSS properties.](../../media/2020/10/grouping-css-prop.msft.png)
+![Grouping CSS properties](../../media/2020/10/grouping-css-prop.msft.png)
 
 For real-time updates on this feature in the Chromium open-source project, see Issues [#1096230](https://crbug.com/1096230), [#1084673](https://crbug.com/1084673), and [#1106251](https://crbug.com/1106251).
 
@@ -249,7 +249,7 @@ performance.mark('end');
 
 Then, open the [Performance](../../../evaluate-performance/reference.md) tool and see the **Timings section** to record your JavaScript code.  The `performance.mark()` events you added are now displayed in the recording.
 
-![performance.mark events.](../../media/2020/10/perf-mark.msft.png)
+![performance.mark events](../../media/2020/10/perf-mark.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -257,7 +257,7 @@ Then, open the [Performance](../../../evaluate-performance/reference.md) tool an
 
 Use the new `resource-type` and `url` keywords in the **Network** tool to filter network requests.  For example, use `resource-type:image` to focus on the network requests that are images:
 
-![The filter set to 'resource-type:image', to focus on the network requests that are images.](../../media/2020/10/network-resource-type-filter.msft.png)
+![The filter set to 'resource-type:image', to focus on the network requests that are images](../../media/2020/10/network-resource-type-filter.msft.png)
 
 To discover more special keywords such as `resource-type` and `url`, see [filter requests by properties](../../../network/reference.md#filter-requests-by-properties).
 
@@ -277,7 +277,7 @@ In the **Application** tool, in the list of pages on the left, the bottom page i
 
 In the **Security & Isolation** section of the frame detail page, view the Cross-Origin Embedder Policy (COEP) and Cross-Origin Opener Policy (COOP) `reporting to` endpoint.  The [Reporting API](https://developer.mozilla.org/docs/Web/API/Reporting_API) defines `Report-To`, which is a new HTTP header that gives you a way to specify the server endpoints for the browser to send warnings and errors.
 
-![The 'reporting to' endpoint.](../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png)
+![The 'reporting to' endpoint](../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png)
 
 For real-time updates on this feature in the Chromium open-source project, see Issue [#1051466](https://crbug.com/1051466).
 
@@ -293,7 +293,7 @@ In the **Application** tool, in the list of pages on the left, the bottom page i
 
 The **Security & Isolation** section of the frame detail page now displays the `report-only` label for COEP and COOP that are set to `report-only` mode.
 
-![The 'report-only' mode label.](../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png)
+![The 'report-only' mode label](../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png)
 
 For real-time updates on this feature in the Chromium open-source project, see Issue [#1051466](https://crbug.com/1051466).
 
@@ -309,7 +309,7 @@ The **CSS Overview** tool now displays a list of elements on your page that have
 
 To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  To open the element in the **Elements** tool, click an element in the list.  To help fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane).
 
-![Color contrast issues.](../../media/2020/10/css-overview.msft.png)
+![Color contrast issues](../../media/2020/10/css-overview.msft.png)
 
 Update: This feature has been released and is no longer experimental.<!-- To enable this experiment, under **Settings** > **Experiments**, select the **CSS Overview** checkbox. -->
 
@@ -324,5 +324,5 @@ For history, in the Chromium open-source project, see Issue [#1120316](https://c
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-87) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

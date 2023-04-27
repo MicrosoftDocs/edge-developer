@@ -201,7 +201,7 @@ For reference information about each field, see [Manifest file format (V2)](http
 
 
 <!-- ====================================================================== -->
-## Changes in manifest.json from V2 to V3
+## Changes in manifest.json V3 vs. V2
 
 | V3 | V2 |
 |---|---|
@@ -210,7 +210,7 @@ For reference information about each field, see [Manifest file format (V2)](http
 | `"action": {...},` | `"page_action": {...},` |
 | removed | `"persistent": false,` |
 | If `background` is included, `service_ worker` is required | If `background` is included, `service_ worker` is optional |
-| `"host_permissions": [...],` | Separated into two different keys: `"permissions": [...], "host_permissions": [...]` |
+| Separated into two different keys: `"permissions": [...], "host_permissions": [...],` | `"permissions": [...],` |
 
 
 <!-- ====================================================================== -->
@@ -218,5 +218,5 @@ For reference information about each field, see [Manifest file format (V2)](http
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/extensions/mv3/manifest/).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

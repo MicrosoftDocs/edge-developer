@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 12/01/2022
+ms.date: 03/17/2023
 ---
 # Experimental features
 
@@ -48,29 +48,32 @@ The following experimental features are turned on by default. You can use these 
 
 <!-- listed in order of the Settings > Experiments pane -->
 
-**Turned on by default in Microsoft Edge Canary 109:**
+**Turned on by default in Microsoft Edge Canary 113:**
+* [Automatically pretty print in the Sources Panel](#automatically-pretty-print-in-the-sources-panel)
+* [Source order viewer](#source-order-viewer)
+* [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor)
+* [Display more precise changes in the Changes tab](#display-more-precise-changes-in-the-changes-tab)
+* [Enable CSS Authoring hints for inactive rules, deprecated properties, etc](#enable-css-authoring-hints-for-inactive-rules-deprecated-properties-etc)
+* [Enable color picking outside the browser window](#enable-color-picking-outside-the-browser-window)
+* [Disable the deprecated 'Color format' setting (requires reloading DevTools)](#disable-the-deprecated-color-format-setting-requires-reloading-devtools)
+* [Enable webhint](#enable-webhint)
+* [Show issues in Elements](#show-issues-in-elements)
+* [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
+* [View console.profile() results in the Performance panel for Node.js](#view-consoleprofile-results-in-the-performance-panel-for-nodejs)
+* [Enable re-designed Breakpoint Sidebar Pane in the Sources Panel](#enable-re-designed-breakpoint-sidebar-pane-in-the-sources-panel)
+
+**Turned on by default in Microsoft Edge Stable 111:**
 * [Automatically pretty print in the Sources Panel](#automatically-pretty-print-in-the-sources-panel)
 * [Source order viewer](#source-order-viewer)
 * [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor)
 * [Display more precise changes in the Changes tab](#display-more-precise-changes-in-the-changes-tab)
 * [Enable CSS Authoring hints for inactive rules, deprecated properties, etc.](#enable-css-authoring-hints-for-inactive-rules-deprecated-properties-etc)
 * [Enable color picking outside the browser window](#enable-color-picking-outside-the-browser-window)
-* [Enable webhint](#enable-webhint)
-* [Show issues in Elements](#show-issues-in-elements)
-* [Focus Mode](#focus-mode)
-* [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
-
-**Turned on by default in Microsoft Edge Stable 107:**
-* [Source order viewer](#source-order-viewer)
-* [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor)
-* [Enable Reporting API panel in the Application panel](#enable-reporting-api-panel-in-the-application-panel)
-* [Display more precise changes in the Changes tab](#display-more-precise-changes-in-the-changes-tab)
-* [Use Lighthouse panel with timespan and snapshot modes](#use-lighthouse-panel-with-timespan-and-snapshot-modes)
-* [Tooling for CSS layers in the Styles pane](#tooling-for-css-layers-in-the-styles-pane)
-* [Enable color picking outside the browser window](#enable-color-picking-outside-the-browser-window)
+* [Disable the deprecated 'Color format' setting (requires reloading DevTools)](#disable-the-deprecated-color-format-setting-requires-reloading-devtools)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
+* [Enable re-designed Breakpoint Sidebar Pane in the Sources Panel](#enable-re-designed-breakpoint-sidebar-pane-in-the-sources-panel)
 
 
 <!-- ====================================================================== -->
@@ -80,17 +83,17 @@ Experimental features are constantly being updated and might cause performance i
 
 To turn an experiment on or off in Microsoft Edge:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
 
 1. On the left side of the **Settings** panel, select the **Experiments** page.
 
-   ![The Experiments page in Settings.](../media/experiments-devtools.msft.png)
+   ![The Experiments page in Settings](../media/experiments-devtools.msft.png)
 
 1. On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
 
-1. Click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
+1. Click **Close** (![The Close icon in DevTools > Settings](../media/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
 
 1. Click the **Reload DevTools** button.
 
@@ -100,11 +103,11 @@ To turn an experiment on or off in Microsoft Edge:
 
 To restore the default settings for which experimental features are turned on:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
 
-1. At the bottom of the **Preferences** page, click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)).
+1. At the bottom of the **Preferences** page, click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings](../media/settings-close-icon-light-theme.png)).
 
 <!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
@@ -114,9 +117,9 @@ To restore the default settings for which experimental features are turned on:
 
 You can filter the experimental features by text included in the title.
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
 
 1. On the left side of the **Settings** panel, select the **Experiments** page.
 
@@ -130,7 +133,7 @@ You can filter the experimental features by text included in the title.
 
 We're eager to hear your feedback about experimental features.  To share feedback with us, [Contact the Microsoft Edge DevTools team](../contact.md).
 
-One of the UI experiments adds a new way to provide feedback: when the **Focus Mode** experiment is turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode.](../media/help-icon-of-focus-mode.png)) > **Feedback**.
+One of the UI experiments adds a new way to provide feedback: when the **Focus Mode** experiment is turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](../media/help-icon-of-focus-mode.png)) > **Feedback**.
 
 
 <!-- ====================================================================== -->
@@ -150,8 +153,8 @@ The experiments checkboxes that appear in the latest version of the Canary previ
 Some Microsoft Edge Add-ons can define custom color themes for DevTools. If you install an add-on with a theme, you need to enable the **Allow extensions to load custom stylesheets** experiment to view the add-on themes.
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -160,8 +163,8 @@ Status:
 To capture JavaScript stack traces when DOM nodes are added to the DOM at runtime, enable this experiment. The captured stack traces are displayed in the **Stack Trace** pane of the **Elements** panel.
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -175,8 +178,8 @@ When this experiment is turned off, a UI prompt with a button asks you whether t
 *  In contrast, _pretty print_ presents the contents of a file in an indented, more human-readable format.
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -186,15 +189,15 @@ DevTools communicates with the inspected page using the DevTools protocol.
 
 To monitor the messages sent and received by DevTools to debug the inspected page:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
 
 1. On the left side of the **Settings** panel, select the **Experiments** page.
 
-1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) to close **Settings**.
+1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings](../media/settings-close-icon-light-theme.png)) to close **Settings**.
 
-1. Open the **Command Menu** (`Ctrl`+`Shift`+`P`), and then type **protocol** in the text box.
+1. Open the **Command Menu** (**Ctrl+Shift+P**), and then type **protocol** in the text box.
 
 1. Select **Show Protocol monitor**.  The message appears: "One or more settings have changed which requires a reload to take effect."
 
@@ -203,8 +206,8 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 1. The **Protocol monitor** tool is displayed in the **Drawer** at the bottom of DevTools.
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -212,11 +215,11 @@ Status:
 
 Adds the **CSP Violations** tool, which displays any Content Security Policy (CSP) violations that are detected on the inspected webpage.
 
-![The CSP Violations tool.](index-images/csp-violations-tool.png)
+![The CSP Violations tool](index-images/csp-violations-tool.png)
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -226,8 +229,8 @@ Records coverage while performance tracing.
 <!-- todo: need text -->
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -242,8 +245,8 @@ See also:
 * [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -255,8 +258,8 @@ See also:
 * [Test keyboard support using the Source Order Viewer](../accessibility/test-tab-key-source-order-viewer.md)
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -268,8 +271,8 @@ See also:
 * [Customize keyboard shortcuts](../customize/shortcuts.md)
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -279,8 +282,8 @@ Whether to include event initiators in the Timeline.
 <!-- todo: need text -->
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -290,8 +293,8 @@ Enables DWARF support for WebAssembly debugging.  See [Improved WebAssembly debu
 <!-- todo: need text -->
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -302,8 +305,8 @@ Uses source maps to automatically map original variable names to minified variab
 See [Map the processed code to your original source code, for debugging](../javascript/source-maps.md).
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -323,8 +326,8 @@ See also:
 * [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -333,8 +336,8 @@ Status:
 Adds a button in the **Elements** tool which toggles between the DOM tree and the accessibility tree.
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -351,13 +354,13 @@ You can use the visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fo
 
 To use the visual **Font Editor**:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Elements** tab.  If the **Elements** tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Elements** tab.  If the **Elements** tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
 
 1. In the **Styles** tab, select the **Font Editor** icon.
 
-   ![The visual Font Editor pane is highlighted.](../media/font-editor-open.msft.png)
+   ![The visual Font Editor pane is highlighted](../media/font-editor-open.msft.png)
 
 Some browser channels have the checkbox label **Enable new Font Editor tool within the Styles pane.**
 
@@ -365,8 +368,8 @@ See also:
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -376,8 +379,8 @@ Enables automatic contrast issue reporting in the **Issues** tool.
 <!-- todo: need text -->
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -387,18 +390,8 @@ Enables experimental cookie features.
 <!-- todo: need text -->
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
-
-
-<!-- ====================================================================== -->
-## Enable Reporting API panel in the Application panel
-
-Use the Reporting API to catch certain errors such as security violations or deprecated API calls. These errors happen when users visit your site and are sent to a server endpoint. Enable this experiment to add the **Reporting API** section in the **Application** panel, which lists all of the reports sent to the endpoint.
-
-Status:
-*  This checkbox is not present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -407,8 +400,8 @@ Status:
 See [More precise changes in the Changes tab](https://developer.chrome.com/blog/new-in-devtools-98/#changes).
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -418,8 +411,8 @@ Whether to sync CSS changes in the **Styles** tab in the **Elements** tool.
 <!-- todo: need text -->
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -429,8 +422,8 @@ Whether to use local overrides for response headers.
 <!-- todo: need text -->
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -444,31 +437,8 @@ Whether to enable CSS authoring hints in the **Styles** panel of the **Elements*
 This feature provides help when writing or inspecting CSS in the **Styles** panel.  Small information icons appear next to CSS properties that are inactive or deprecated.  An inactive property is one that applies correctly to an element but has no effect on it (for example, `width:100px` applied to an inline element has no effect).
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
-
-
-<!-- ====================================================================== -->
-## Use Lighthouse panel with timespan and snapshot modes
-
-Adds a selector to the Lighthouse tool to switch between different reporting modes.  At the moment, the Navigation and Snapshot modes are supported.
-
-See also:
-* [Lighthouse tool](../lighthouse/lighthouse-tool.md)
-
-Status:
-*  This checkbox is not present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
-
-
-<!-- ====================================================================== -->
-## Tooling for CSS layers in the Styles pane
-
-Adds increased support for the `@layer` CSS rule in the **Styles** pane.  CSS rules in the **Styles** pane are grouped by the layers they belong to.  A layer overview widget is displayed, which shows the layer tree for the currently inspected element.
-
-Status:
-*  This checkbox is not present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -476,7 +446,7 @@ Status:
 
 Allows you to move the mouse cursor when it's an eyedropper tool, over anywhere on your screen, not just within the Microsoft Edge window.
 
-In the **Elements** tool, in the **Styles** tab, click on any color preview.  The Color Picker opens.  Click the **Toggle color picker** (![Eyedropper icon button.](index-images/eyedropper-color-picker-icon.png)) button.  The mouse cursor becomes an eyedropper.  Click anywhere on your monitor to select a color.
+In the **Elements** tool, in the **Styles** tab, click on any color preview.  The Color Picker opens.  Click the **Toggle color picker** (![Eyedropper icon button](index-images/eyedropper-color-picker-icon.png)) button.  The mouse cursor becomes an eyedropper.  Click anywhere on your monitor to select a color.
 
 <!-- https://developer.chrome.com/blog/new-in-devtools-102/#color-picker -->
 
@@ -484,8 +454,8 @@ See also:
 * [Change colors with the Color Picker](../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -499,8 +469,8 @@ Controls whether to group resources into separate **Authored** and **Deployed** 
 *  Production files (deployed files that are on the web server after compiling and bundling the source files).
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -508,11 +478,10 @@ Status:
 
 _new as of Microsoft Edge 106_
 
-Whether to hide or display code that's in the ignore list, in the **Sources** tool's tree view, such as the **Page** tab.
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -552,8 +521,27 @@ To see the Object Properties viewer in the **Sources** tool:
 
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
+
+
+<!-- ====================================================================== -->
+## Disable the deprecated 'Color format' setting (requires reloading DevTools)
+
+_new as of Microsoft Edge 110_
+
+In DevTools **Settings** > **Preferences**, when you hover over the **Information** (**i**) icon on the grayed-out **Color format** drop-down list, the tooltip reads: "This setting is deprecated because it is incompatible with modern color spaces.  To reenable it, you can disable the according experiment."
+
+The **Color format** drop-down list was previously enabled by default.  This control enables you to choose what color format you prefer to see in the **Styles** tab in the **Elements** tool by default. So, for example, if the CSS code specified `color: red;` but you had set the **hex** color format as your preference, then you would see `color: #f00;` in the **Styles** tab instead.
+
+Recently, CSS has gained new color formats that can be used to describe colors in color spaces that weren't available before.  This auto-switch of the color format can't work anymore, because if the source code contains a color in a new color space, then it isn't always possible to convert this color in one of the older color formats, because the color spaces don't match 1-to-1.
+
+In **Settings** > **Experiments**, this **Disable the deprecated 'Color format' setting** checkbox is selected by default, and its effect is to grey out the **Color format** drop-down list in the **Settings** > **Preferences** page.  After a while, this experiment checkbox and the **Color format** drop-down list in **Preferences** will be removed.
+For now, these controls enable you to disable the experiment and re-activate the **Color format** drop-down list.
+
+Status:
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -563,8 +551,8 @@ Controls whether to log DevTools uncaught exceptions in the **Console** tool.
 <!-- todo: need text -->
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -581,11 +569,11 @@ Status:
 
 The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
 
-![webhint feedback in the Issues panel.](../media/experiments-webhint.msft.png)
+![webhint feedback in the Issues panel](../media/experiments-webhint.msft.png)
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -594,8 +582,8 @@ Status:
 Enable this experiment to view syntax errors under HTML in the **DOM** view of the **Elements** tool. For more information, see [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool).
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -610,8 +598,8 @@ Focus Mode also provides a **Quick View** list, to open a second tool alongside 
 See [Reduce the complexity of DevTools with Focus Mode](focus-mode.md).
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -621,13 +609,13 @@ The **Open source files in Visual Studio Code** experiment replaces the code edi
 
 When you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code.  In previous versions of Microsoft Edge, this action opened the file in the code editor of the Sources tool in DevTools.
 
-![Selecting a file link in the Styles tool opens the file in Visual Studio Code.](../media/experiment-sources-in-code-editor-open.msft.png)
+![Selecting a file link in the Styles tool opens the file in Visual Studio Code](../media/experiment-sources-in-code-editor-open.msft.png)
 
 Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code. You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ============================================================================================================================================ -->
@@ -642,8 +630,8 @@ Whether to include the Ignore list for JavaScript frames on the Timeline.
 <!-- todo: need text -->
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -653,8 +641,8 @@ Controls whether to include Input events on the Timeline overview.
 <!-- todo: need text -->
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -667,8 +655,8 @@ See also:
 * [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -681,8 +669,8 @@ See also:
 * [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -691,8 +679,8 @@ Status:
 Controls whether to show invalidation tracking on the Timeline.
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -701,8 +689,8 @@ Status:
 Controls whether to show all events on the Timeline.
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -711,8 +699,8 @@ Status:
 Controls whether to show v8 runtime call stats on the Timeline.
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -721,8 +709,46 @@ Status:
 Controls whether to replay input events on the Timeline.
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
+
+
+<!-- ====================================================================== -->
+## View console.profile() results in the Performance panel for Node.js
+
+_new as of Microsoft Edge 109_
+
+Displays `console.profile()` results in the **Performance** tool for Node.js.
+
+`console.profile()` can be used in the DevTools **Console** (or in your code) to start a JavaScript profile, and then you can use `console.profileEnd()` to terminate it.  Once done, you can see your profile recording in the **JavaScript Profiler** tool.
+
+This is a programmatic way to record JavaScript execution, which can be useful in certain performance debugging situations.
+
+When DevTools is used to debug processes that are running in Node.js, this experiment makes whatever `console.profile` generates available to the **Performance** Tool.
+
+Status:
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
+
+See also:
+* [JavaScript Profiler tool](../javascript-profiler/javascript-profiler-tool.md)
+
+
+<!-- ====================================================================== -->
+## View system nodes of CPUProfile in the Performance panel
+
+_new as of Microsoft Edge 112_
+
+Whether to display system nodes of CPUProfile in the **Performance** tool.
+<!-- todo: need text -->
+
+See also:
+* [Performance features reference](../evaluate-performance/reference.md)
+* [JavaScript: Tools](../rendering-tools/index.md#javascript-tools) in _Analyze runtime performance_.
+
+Status:
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -735,8 +761,8 @@ See also:
 * [The first time source files are loaded, breakpoints might not trigger](https://bugs.chromium.org/p/chromium/issues/detail?id=1133307&q=%22instrumentation%20breakpoints%22&can=2)
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
 
 
 <!-- ====================================================================== -->
@@ -751,5 +777,35 @@ See also:
 * [Pause code with breakpoints](../javascript/breakpoints.md)
 
 Status:
-*  This checkbox is present in Microsoft Edge Canary 109.
-*  This checkbox is present in Microsoft Edge Stable 107.
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.
+
+
+<!-- ====================================================================== -->
+## Enable Preloading Status Panel in Application panel
+
+_new as of Microsoft Edge 110_
+
+In certain situations, for example when using the Speculation Rules API, Microsoft Edge prefetches and prerenders the next page that a user will visit, to display that page faster.
+
+This experiment enables the **Prefetching & Prerendering** section in the **Application** Tool. The new section displays the list of pages that the browser prefetched and prerendered and why, which gives you a way to debug your code.
+
+To learn more about prerendering pages, see [Prerender pages in Chrome for instant page navigations](https://developer.chrome.com/blog/prerender-pages/).
+
+Selecting this experiment checkbox adds the **Preloading** section within the **Application** tool.  The **Preloading** section of the list of pages contains a **Prefetching & Prerendering** page, which contains columns:
+* **Started at**
+* **Type**
+* **Trigger**
+* **URL**
+* **Status**
+
+![The Preloading page in the Application tool](./index-images/preloading-page-of-application-tool.png)
+
+<!--
+Select an element for more details.
+todo: how select element, where?  that instruction is prominent in UI, so clarify here
+-->
+
+Status:
+*  This checkbox is present in Microsoft Edge Canary 113.
+*  This checkbox is present in Microsoft Edge Stable 111.

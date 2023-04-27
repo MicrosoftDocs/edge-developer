@@ -23,7 +23,7 @@ This whitepaper focuses on the desktop version of Microsoft Edge. Parts of the d
 
 The address bar allows you to enter website URLs and search the web.  By default, the address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.
 
-![Address bar.](./media/address-bar.png)
+![Address bar](./media/address-bar.png)
 
 To speed up browsing and searching, characters you type into the address bar are sent to your default search provider. The search provider returns suggested search queries.
 
@@ -109,7 +109,7 @@ Collections aren't available when using **InPrivate** or **Guest** modes.
 
 If optional diagnostic data, including crash reports, are turned on, diagnostic data is collected when Microsoft Edge crashes or closes unexpectedly. The diagnostic data is used to diagnose and fix problems with Microsoft Edge and other Microsoft products and services.
 
-![Crashes.](./media/crashes2.png)
+![Crashes](./media/crashes2.png)
 
 Collected diagnostic data is in the form of crash dumps, which contain device and software state captured at the time Microsoft Edge crashed or closed. The crash dump contains information about what was happening at the time of the problem. Information such as the website you were visiting at the time of the crash or your CPU usage may be included in the diagnostic data. If crash reporting is turned on, the crash dump is stored locally on the device and sent to Microsoft using an encrypted link.
 
@@ -135,7 +135,7 @@ Microsoft uses diagnostic data to improve products and services. Diagnostic da
 
 Microsoft Edge collects a set of required diagnostic data needed to keep the product secure, up to date, and performing properly. The required diagnostic data includes device connectivity, configuration information, software setup, and inventory. Microsoft uses this diagnostic data to troubleshoot issues and keep Microsoft products and services reliable, secure, and operating normally. For more information about diagnostic data on managed devices, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) and [Microsoft Edge diagnostic data group policy](/deployedge/microsoft-edge-enterprise-privacy-settings).
 
-![Diagnostic data.](./media/diagnostic-data2.png)
+![Diagnostic data](./media/diagnostic-data2.png)
 
 You may also choose to share optional diagnostic data. As you use Microsoft Edge features and services, or other applications that use the Microsoft Edge web platform, Microsoft Edge sends optional diagnostic data about how you use those features and the websites you visit. With your permission, this optional diagnostic data is sent to Microsoft to improve products and services for everyone. This data is not collected or stored with your Microsoft account.
 
@@ -280,7 +280,7 @@ Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api)
 
 Microsoft Edge indicates when your precise location is being shared on the right side of the address bar. 
 
-![Location.](./media/geolocation2.png)
+![Location](./media/geolocation2.png)
 
 You can allow Microsoft Edge to provide the requesting site with a precise location on Windows 10 and Windows 11. Open **Start** > **Settings** > **Privacy** > **Location** and turn on the **Allow access to location on this device** and **Allow apps to access your location** settings. These settings enable the Windows location service. When enabled, Microsoft services may also estimate your imprecise location via the Windows location service to provide locally relevant browsing experiences.
 
@@ -346,7 +346,7 @@ Automatic updates are turned on by default for all Microsoft Edge users.  On all
 Microsoft Edge offers a simplified experience with the integration of Internet Explorer (IE).  Microsoft Edge only supports IE 11, and IE mode is only available on Windows.  The IE mode feature is available for organizations through group policies.  The administrator chooses to open certain sites in IE mode in Microsoft Edge.
 
 > [!div class="mx-imgBorder"]
-> ![IE mode.](./media/ie-mode.png)
+> ![IE mode](./media/ie-mode.png)
 
 Microsoft Edge downloads the list of sites from a location defined by the administrator through a policy, and caches the file that determines which sites must be opened in IE mode.  Depending on your Windows or IE 11 settings, Microsoft Edge collects diagnostic data about the use of IE mode. Collected data includes which sites users visit, performance data, reliability data, and feature usage data.  On Windows 10 and later, the diagnostic data is collected according to your Windows Diagnostic data setting.  On Windows 8.1, website information is collected if the user has opted into the Flip Ahead or Suggested Sites feature in IE.  IE mode may not follow the same data collection settings in the Microsoft Edge Privacy settings.
 
@@ -376,7 +376,7 @@ You can clear or change the display of your recently closed tabs in the jump lis
 
 Kids Mode is a convenient browsing mode designed for kids inside Microsoft Edge.  With the kid-friendly features and safety guardrails in place, Kids Mode is a great place for children to safely explore the web.  Kids Mode includes features like custom browser themes, kid-friendly content, browsing based on an allowlist, Bing SafeSearch set to strict, and a password requirement to exit.  Kids Mode doesn't require a child account or profile, therefore you aren't able to sign into Kids Mode.
 
-![Kids Mode.](./media/kids-mode.png)
+![Kids Mode](./media/kids-mode.png)
 
 Browsing in Kids Mode is limited to a default list of kid-friendly websites.  Upon navigation, the website is compared to a local list of allowed websites.  The websites visited in Kids Mode are not viewable on [family.microsoft.com](https://account.microsoft.com/family) since the browsing in Kids Mode is not associated with any account.  Allowed website exceptions may be added through the profile in which Kids Mode was launched.  Those exceptions are synced to the profile in which Kids Mode was launched, if that user is signed in.
 
@@ -407,7 +407,7 @@ Microsoft Edge provides an engaging and user-centric new tab page with a search 
 
 To speed up load times for the Microsoft Edge new tab page, the page may be loaded in the background. The content that is loaded might include cookies, if you allow cookies. You can turn off background loading for the Microsoft new tab page. Go to `edge://settings/newTabPage` and turn off the **Preload the new tab page for a faster experience** setting.
 
-![New tab page.](./media/n-t-p1.png)
+![New tab page](./media/n-t-p1.png)
 
 #### Microsoft News
 
@@ -486,7 +486,7 @@ Your browsing history is collected and used for personalization only if all four
 * Your group policies managed by an organization (employer, school, and so on) allow personalization.
 * You not using the browser in **Guest** or **InPrivate** modes.
 
-Your browsing history and other data are transferred over HTTPS and attached to your Microsoft account information.  Your browsing history is stored on secure Microsoft servers.  You may view and delete previously shared browsing history by going to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).  Your browsing history is stored on secure Microsoft servers for up to 45 days.  After 45 days, the data is deleted and not used for personalization.
+Your browsing history and other data are transferred over HTTPS and attached to your Microsoft account information.  Your browsing history is stored on secure Microsoft servers.  You may view and delete previously shared browsing history by going to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).  Your browsing history is stored on secure Microsoft servers for up to 180 days.  After 180 days, the data is deleted and not used for personalization.
 
 You may modify your interests or opt-out of personalized ads from the [Ad settings](https://account.microsoft.com/privacy/ad-settings) on the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
 
@@ -605,7 +605,7 @@ When you're applying coupons, cookies are stored on your device to correctly att
 
 Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier that changes per coupon lookup. Microsoft Edge partners with Bing Shopping to provide coupons relevant to the user's query. In some instances, Microsoft may receive revenue for use of the coupons. Whether a revenue share payment may be received is not factored into the ranking of coupons shown to users.
 
-![Shopping and coupons.](./media/shopping.png)
+![Shopping and coupons](./media/shopping.png)
 
 If you visit a shopping domain and you are an existing Bing Rebates user, Microsoft Edge sends the domain along with cookies to the Microsoft shopping service to retrieve your Bing Rebates profile and cash back offers for the domain.  If you choose to activate cash back, Microsoft Edge sends your URL to the Microsoft shopping service to receive an affiliate URL.  Cookies may be stored on your device to correctly attribute the rebates provider.
 
@@ -639,7 +639,7 @@ You aren't able to sign into Microsoft Edge when using **Guest** mode or **InPri
 
 SmartScreen is designed to help you safely browse the web.  When you go to websites or download files, SmartScreen checks the reputation of the URL or file.  If SmartScreen determines that the site or file is malicious, it blocks you from going to the site or downloading the file.
 
-![SmartScreen.](./media/smart-screen.png)
+![SmartScreen](./media/smart-screen.png)
 
 As you browse the web, SmartScreen categorizes websites and downloads as top traffic, dangerous, or unknown.  Top traffic is popular sites that SmartScreen has determined are trustworthy.  If you go to a site marked as dangerous, SmartScreen immediately blocks you from accessing the site.  When you go to an unknown site, SmartScreen checks the reputation to determine if you should access the site.
 
@@ -689,7 +689,7 @@ Signing into Microsoft Edge with a Microsoft account will enable syncing your br
 
 Favorites include any tabs you previously set aside in previous versions of Microsoft Edge, which sync along with the rest of your favorites. Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  To manage sync configurations, go to `edge://settings/profiles/sync`.  Your sync settings may be managed by your organization.
 
-![Image of sync setting being set to on.](./media/sync.png)
+![Image of sync setting being set to on](./media/sync.png)
 
 For sync to function, all device connectivity and configuration data needed to provide the sync experience is sent to Microsoft. Sync data includes the name of your device, make, and model. To delete sync data, see [Microsoft device dashboard](https://account.microsoft.com/devices). To manage your synced favorites, go to `edge://favorites`. To manage all other data types, go to `edge://settings/profiles`.
 
@@ -715,7 +715,7 @@ Microsoft Edge is designed to detect and block known trackers.  Users may choose
 
 You may turn off list updates using the following group policy, [Enable component updates in Microsoft Edge](/deployedge/microsoft-edge-policies#componentupdatesenabled).
 
-![Tracking prevention.](./media/tracking-prevention.png)
+![Tracking prevention](./media/tracking-prevention.png)
 
 
 <!-- ====================================================================== -->
@@ -783,7 +783,7 @@ When you add a new language to Microsoft Edge, the browser downloads the diction
  
 #### Text prediction 
 
-Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press `Tab` or the `Right arrow` key to accept them. Password fields will not offer text predictions.
+Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press **Tab** or the **Right Arrow** key to accept them. Password fields will not offer text predictions.
 
 To turn off text predictions in Microsoft Edge: 
 

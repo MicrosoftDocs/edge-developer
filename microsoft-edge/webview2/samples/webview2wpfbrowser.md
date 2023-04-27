@@ -40,6 +40,8 @@ For more information about events and API Handlers in WebView2, see [WebView2 AP
 
 1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
+1. To test the experimental APIs ahead of time and ensure your WebView2 app's forward-compatibility, see [Approaches to making your app use a specific browser channel](../how-to/set-preview-channel.md#approaches-to-making-your-app-use-a-specific-browser-channel) in _Test upcoming APIs and features_. Follow the steps in that section, and then return to this page and continue the steps below.
+
 
 <!-- ====================================================================== -->
 ## Step 2 - Install Visual Studio 2019 with .NET support
@@ -91,7 +93,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    This builds the project file `WebView2WpfBrowser.csproj`.
 
-1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
+1. In Visual Studio, select **Debug** > **Start Debugging** (**F5**).
 
    The sample app window opens:
 
@@ -125,4 +127,5 @@ At the top of Visual Studio, set the build target, as follows:
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 API Reference](../webview2-api-reference.md)
 * [Get started with WebView2 in WPF apps](../get-started/wpf.md)

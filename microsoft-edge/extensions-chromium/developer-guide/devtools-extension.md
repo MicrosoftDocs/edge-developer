@@ -35,13 +35,13 @@ In this section, you download and run the final state of the extension that the 
 
 1. Click **Load unpacked** and navigate to the folder where you extracted the zip file. In this folder, select **Demos-main** > **devtools-extension** > **sample 4**, and then click **Select Folder**.
 
-  ![The edge://extensions page in Microsoft Edge, showing the Developer mode and Load unpacked buttons.](./devtools-extensions-images/edge-extensions-page.png)
+  ![The edge://extensions page in Microsoft Edge, showing the Developer mode and Load unpacked buttons](./devtools-extensions-images/edge-extensions-page.png)
 
-Your DevTools extension should now be loaded. Open a new tab in Microsoft Edge, and then open DevTools by pressing `F12`.
+Your DevTools extension should now be loaded. Open a new tab in Microsoft Edge, and then open DevTools by pressing **F12**.
 
 The extension creates a **Sample Panel** tab in the DevTools window:
 
-![Microsoft Edge, showing DevTools on the side, with the extension's Sample Panel selected.](./devtools-extensions-images/solution-sample-panel.png)
+![Microsoft Edge, showing DevTools on the side, with the extension's Sample Panel selected](./devtools-extensions-images/solution-sample-panel.png)
 
 
 <!-- ====================================================================== -->
@@ -67,7 +67,7 @@ A basic DevTools extension consists of two files, as shown in [Step 1 code](http
     | description | The description of the extension that will be displayed under the name of the extension. |
     | version | The version of the extension that will appear next to the name of the extension. |
     | manifest_version | Determines the set of features that the extension will be using such as Service workers or Network request modification. The current version is version `3`. To learn more about this version and the differences with version `2`, see [Overview and timelines for migrating to Manifest V3](./manifest-v3.md). |
-    | devtools_page | The path to an HTML file that will be executed every time the DevTools UI is opened. Though the page is not rendered in DevTools, it will be used to load the necessary JavaScript files for the extension. |
+    | devtools_page | The path to an HTML file that will be run every time the DevTools UI is opened. Though the page is not rendered in DevTools, it will be used to load the necessary JavaScript files for the extension. |
 
 1. An html file to match the `devtools_page` field in the manifest file.
 
@@ -91,7 +91,7 @@ To load and test your DevTools extension in Microsoft Edge, use the **Developer 
 
 1. Click **Load unpacked**, navigate to the folder where you wrote the code for your extension, and click **Select folder**.
 
-Your DevTools extension is now loaded. Open a new tab and then open DevTools (`F12`).
+Your DevTools extension is now loaded. Open a new tab and then open DevTools (**F12**).
 
 Your  extension is loaded, but isn't displayed in DevTools yet, because you haven't created a panel for the extension.
 
@@ -157,7 +157,7 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
 
    ![The Microsoft Edge extensions page showing where the Reload button is](./devtools-extensions-images/edge-extensions-page-reload-button.png)
 
-Your DevTools extension should now be reloaded. Open a new tab in Microsoft Edge and then open DevTools (`F12`). Your DevTools extension panel should be displayed in DevTools:
+Your DevTools extension should now be reloaded. Open a new tab in Microsoft Edge and then open DevTools (**F12**). Your DevTools extension panel should be displayed in DevTools:
 
 ![Microsoft Edge, with DevTools on the side, showing the new  extension panel](./devtools-extensions-images/devtools-extension-with-panel.png)
 
@@ -220,7 +220,7 @@ The above code snippet does the following:
 
 1. When the panel is displayed (`panel.onShown` listener), the `availableMemoryCapacity` and `totalMemoryCapacity` elements are retrieved from the DOM.
 
-1. Next, a timer is set to execute code every second after the panel is shown.
+1. Next, a timer is set to run code every second after the panel is shown.
 
 1. When the timer fires, the `chrome.system.memory.getInfo` method is used to retrieve the available and total memory capacity of the device and these values are displayed in the corresponding DOM elements.
 
@@ -232,7 +232,7 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
 
 1. Click **Reload**.
 
-Your DevTools extension should now be reloaded. Open a new tab and then open DevTools (`F12`). Your DevTools extension panel should now show the available and total memory capacities.
+Your DevTools extension should now be reloaded. Open a new tab and then open DevTools (**F12**). Your DevTools extension panel should now show the available and total memory capacities.
 
 ![The new  extension panel in DevTools, showing memory information](./devtools-extensions-images/devtools-extension-with-memory-info.png)
 
@@ -352,7 +352,7 @@ In this part of the tutorial, you will detect the user clicks on a webpage using
     });
     ```
 
-    When the user clicks the `sayHello` button, the DevTools extension will execute a code snippet of `alert("Hello from the DevTools Extension");` in the inspected window by invoking the `eval()` method of the inspected window `chrome.devtools.inspectedWindow`.
+    When the user clicks the `sayHello` button, the DevTools extension will run a code snippet of `alert("Hello from the DevTools Extension");` in the inspected window by invoking the `eval()` method of the inspected window `chrome.devtools.inspectedWindow`.
 
     When the user clicks anywhere in the inspected window, the DevTools extension will receive a message, from the background service worker, with `request.click == true` and the mouse position information.
 
@@ -394,7 +394,7 @@ To test the new `sayHello` button:
 
 1. Click the **Reload** button.
 
-1. Open a new browser tab, open DevTools (`F12`), and click the **Sample Panel** tab.
+1. Open a new browser tab, open DevTools (**F12**), and click the **Sample Panel** tab.
 
 1. Click the `"Say Hello to The Inspected Page!"` button in your panel. You should see an alert in the inspected page, as shown below.
 

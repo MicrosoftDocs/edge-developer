@@ -52,7 +52,7 @@ https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/202
 
 1. Open the test site [Inspect ArrayBuffers in JS (Memory in JS)](http://memory-inspector.glitch.me/demo-js.html). <!-- To do item: copy to Microsoft Repo and reference there -->
 
-1. Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
 1. Click **Sources** and open the `demo-js.js` file.
 
@@ -173,7 +173,7 @@ For WebAssembly (Wasm) memory inspection, the process is similar to inspecting J
 
 1. Open the Wasm test site [Inspect Wasm memories (Memory in Wasm)](http://memory-inspector.glitch.me/demo-wasm.html). <!-- To do item: copy to Microsoft Repo and reference there -->
 
-1. Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
 1. Click **Sources** and open the `memory-write.wasm` file.
 
@@ -197,5 +197,5 @@ For WebAssembly (Wasm) memory inspection, the process is similar to inspecting J
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/memory-inspector/) and is authored by [Kim-Anh Tran](https://developer.chrome.com/authors/kimanh/) (Chrome DevTools).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

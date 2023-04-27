@@ -82,13 +82,13 @@ Users can disable the sharing of OS regional information by selecting **Never**.
 <!-- ====================================================================== -->
 ## Policy Controls
 
-A related new policy in Microsoft Edge, **ShareOSRegionThroughJavaScriptLocale**, provides a setting for corporate or enterprise-level default configurations.  This setting accepts an integer with the following potential values:
+A related new policy in Microsoft Edge, [DefaultShareAdditionalOSRegionSetting](/DeployEdge/microsoft-edge-policies#defaultshareadditionalosregionsetting), provides a setting for corporate or enterprise-level default configurations.  This setting accepts an integer with the following potential values:
 
 |Number| Description |
 |--------|-------------------------|
-| 1 | Limited |
-| 2 | Always |
-| 3 | Never |
+| 0 | Limited |
+| 1 | Always |
+| 2 | Never |
 
 In addition, an older policy, [ApplicationLocaleValue](/DeployEdge/microsoft-edge-policies#applicationlocalevalue), sets the Microsoft Edge locale and locks it to prevent users from changing it.
 

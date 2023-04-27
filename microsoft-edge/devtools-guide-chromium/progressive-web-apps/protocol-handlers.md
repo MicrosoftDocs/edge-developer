@@ -25,18 +25,18 @@ If you have defined protocols correctly in your web app manifest, the **Applicat
 To verify that you have correctly defined protocol handlers:
 
 1. Navigate to your PWA in Microsoft Edge. You can use [the PWAmp demo application](https://microsoftedge.github.io/Demos/pwamp/).
-1. Open DevTools (`F12`).
+1. Open DevTools (**F12**).
 1. Open the **Application** tool.
 1. Click **Manifest** to expand the dropdown list.
 1. Click **Protocol Handlers**.
 
 If protocol handlers haven't been defined in the web app manifest, or have been defined incorrectly, the following message will be displayed:
 
-![The Protocol Handlers section of the Manifest pane without protocols defined.](./images/protocol-handlers-not-defined.png)
+![The Protocol Handlers section of the Manifest pane without protocols defined](./images/protocol-handlers-not-defined.png)
 
 If protocol handlers have been defined successfully in the web app manifest, the following message will be displayed:
 
-![The Protocol Handlers section of the Manifest pane with protocols defined.](./images/protocol-handlers-defined.png)
+![The Protocol Handlers section of the Manifest pane with protocols defined](./images/protocol-handlers-defined.png)
 
 The **Protocol Handlers** section also makes it possible to test the protocol handlers you've defined.
 
@@ -48,14 +48,14 @@ To test your protocol handlers from the **Application** tool, you must have alre
 
 The **Application** tool detects all the protocol handlers from your web app manifest. To test a handler:
 
-1. Navigate to your PWA in Microsoft Edge and open DevTools (`F12`). You can use [the PWAmp demo application](https://microsoftedge.github.io/Demos/pwamp/).
+1. Navigate to your PWA in Microsoft Edge and open DevTools (**F12**). You can use [the PWAmp demo application](https://microsoftedge.github.io/Demos/pwamp/).
 1. Open the **Application** tool and click **Manifest** > **Protocol Handlers**.
 1. Select the protocol you want to test by choosing from the dropdown list.
 1. Enter the rest of the URI in the text and click **Test protocol**. This will launch your PWA. Depending on your operating system (OS), you may need to allow Microsoft Edge to open your PWA and accept any OS-level permissions for registering your app as a handler for your protocol.
 
 In the following screenshot, the `web+amp://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Jazz_Sampler/Kevin_MacLeod_-_AcidJazz.mp3` URI is being tested.
 
-![Testing the custom web+amp protocol from the Application tool.](./images/test-protocol-handlers.png)
+![Testing the custom web+amp protocol from the Application tool](./images/test-protocol-handlers.png)
 
 
 <!-- ====================================================================== -->

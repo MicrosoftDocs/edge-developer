@@ -23,11 +23,11 @@ ms.date: 05/24/2022
 <!-- Title: New browser preview and sourcemap support in Visual Studio Code -->
 <!-- Subtitle: Emulate devices and different rendering modes and debug Sass/React. -->
 
-The Microsoft Edge DevTools extension for Visual Studio Code now has a browser preview that allows you to emulate different devices.  Click the new **Emulate CSS media features** (![Emulate CSS media features.](devtools-102-images/emulate-css-media-features-button.png)) button, to preview the current project in different modes, such as Dark, Light, Print, and High Contrast:
+The Microsoft Edge DevTools extension for Visual Studio Code now has a browser preview that allows you to emulate different devices.  Click the new **Emulate CSS media features** (![Emulate CSS media features](devtools-102-images/emulate-css-media-features-button.png)) button, to preview the current project in different modes, such as Dark, Light, Print, and High Contrast:
 
-![DevTools extension: New browser with device and mode emulation and sourcemap support.](devtools-102-images/devtools-ext-new-browser.png)
+![DevTools extension: New browser with device and mode emulation and sourcemap support](devtools-102-images/devtools-ext-new-browser.png)
 
-Click the new **Emulate vision deficiencies** (![The Emulate vision deficiencies button.](devtools-102-images/emulate-vision-deficiencies-button.png)) button to easily test accessibility, such as showing what the webpage looks like with blurred vision or color vision deficiencies.
+Click the new **Emulate vision deficiencies** (![The Emulate vision deficiencies button](devtools-102-images/emulate-vision-deficiencies-button.png)) button to easily test accessibility, such as showing what the webpage looks like with blurred vision or color vision deficiencies.
 
 Other new features include a simpler way to toggle CSS mirroring, which now also supports sourcemaps.  This means that you can debug and modify CSS created by Sass, React, and other abstractions live in the browser and see the changes in the source files.
 
@@ -45,11 +45,11 @@ See also:
 
 In Microsoft Edge 102, when taking a heap snapshot in the **Memory** tool, you can now export all string objects from the snapshot to a JSON file.  In the **Memory** tool, in the **Constructor** section, click the new **Save all to file** button next to the `(string)` entry.
 
-![Save all strings from a heap snapshot to JSON.](devtools-102-images/save-heap-snapshot-strings-json.png)
+![Save all strings from a heap snapshot to JSON](devtools-102-images/save-heap-snapshot-strings-json.png)
 
 The **Memory** tool exports a JSON file that contains all of the string objects from the heap snapshot:
 
-![Strings from the heap snapshot, in the JSON file.](devtools-102-images/heap-snapshot-strings-json-file.png)
+![Strings from the heap snapshot, in the JSON file](devtools-102-images/heap-snapshot-strings-json-file.png)
 
 See also:
 * [Save and export strings from a heap snapshot to JSON](../../../memory-problems/heap-snapshots.md#save-and-export-strings-from-a-heap-snapshot-to-json) in _Record heap snapshots using the Memory tool_.
@@ -68,11 +68,11 @@ In the **Retainers** section, a cycled node is indicated by being grayed out.
 
 In the following image, in the **Filter edges** dropdown menu, **Hide cycled** is not selected, so a cycled node (grayed out) is displayed:
 
-![In the 'Filter edges' dropdown menu, 'Hide cycled' is not selected.](devtools-102-images/filters-retainers-memory-tool-no-hide-cycled.png)
+![In the 'Filter edges' dropdown menu, 'Hide cycled' is not selected](devtools-102-images/filters-retainers-memory-tool-no-hide-cycled.png)
 
 In the following image, in the **Filter edges** dropdown menu, **Hide cycled** is selected, so the cycled node is not displayed:
 
-![In the 'Filter edges' dropdown menu, 'Hide cycled' is selected.](devtools-102-images/filters-retainers-memory-tool-hide-cycled.png)
+![In the 'Filter edges' dropdown menu, 'Hide cycled' is selected](devtools-102-images/filters-retainers-memory-tool-hide-cycled.png)
 
 _Cycles_ are nodes that appear at least twice in a retainer path.
 One appearance of a node is earlier in the retainer path, and other appearances of that node are later in the retainer path.
@@ -91,13 +91,13 @@ See also:
 <!-- Title: Improving the Inspect element tooltip -->
 <!-- Subtitle: The Inspect element tooltip now persists until you dismiss it, improving accessibility and ease of use. -->
 
-Previously, in the **Elements** tool, the overlay for the node that you selected only displayed on hover when you used the **Inspect tool** (![Inspect tool icon.](../../../media/inspect-tool-icon-light-theme.png)).  The previous design was difficult to use with a screen magnifier or other assistive technologies.
+Previously, in the **Elements** tool, the overlay for the node that you selected only displayed on hover when you used the **Inspect tool** (![Inspect tool icon](../../../media/inspect-tool-icon-light-theme.png)).  The previous design was difficult to use with a screen magnifier or other assistive technologies.
 
-In Microsoft Edge 102, when using the **Inspect** tool and moving around the rendered webpage, you can keep the current **Inspect** overlay displayed.  Press and hold `Ctrl`+`Alt` (Windows, Linux) or `Ctrl`+`Option` (macOS) while you move around in the rendered webpage.  The existing tooltip and grid color overlay for the **Inspect** tool remains displayed while you hover over different parts of the rendered webpage:
+In Microsoft Edge 102, when using the **Inspect** tool and moving around the rendered webpage, you can keep the current **Inspect** overlay displayed.  Press and hold **Ctrl+Alt** (Windows, Linux) or **Ctrl+Option** (macOS) while you move around in the rendered webpage.  The existing tooltip and grid color overlay for the **Inspect** tool remains displayed while you hover over different parts of the rendered webpage:
 
-![The Inspect element tooltip.](devtools-102-images/inspect-element-tooltip-persists.png)
+![The Inspect element tooltip](devtools-102-images/inspect-element-tooltip-persists.png)
 
-Also, you can now press `Ctrl` to hide the Inspect tool's overlay while you move the mouse pointer over the rendered webpage.
+Also, you can now press **Ctrl** to hide the Inspect tool's overlay while you move the mouse pointer over the rendered webpage.
 
 For the history of this feature in the Chromium open-source project, see Issue [1316208](https://crbug.com/1316208).
 
@@ -121,15 +121,15 @@ In Microsoft Edge 102, these issues have been fixed.
 
 The **Issues** tool's menus are displayed correctly in high-contrast mode:
 
-![Issues tool's menus in high-contrast mode.](devtools-102-images/high-contrast-issues-menus.png)
+![Issues tool's menus in high-contrast mode](devtools-102-images/high-contrast-issues-menus.png)
 
 The **Detached Elements** tool's UI is displayed correctly in high-contrast mode:
 
-![Detached Elements tool in high-contrast mode.](devtools-102-images/high-contrast-detached-elements.png)
+![Detached Elements tool in high-contrast mode](devtools-102-images/high-contrast-detached-elements.png)
 
 The **Activity Bar** and **Quick View** (of Focus Mode) are displayed correctly in high-contrast mode:
 
-![Activity Bar in Focus Mode.](devtools-102-images/high-contrast-activity-bar.png)
+![Activity Bar in Focus Mode](devtools-102-images/high-contrast-activity-bar.png)
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
@@ -145,9 +145,9 @@ See also:
 
 In the **Settings** > **Experiments** page, each experiment now has a **Help** (![Help icon](devtools-102-images/settings-experiments-help-icon.png)) button:
 
-![Help icons for Settings > Experiments checkboxes.](devtools-102-images/settings-experiments-help-icons.png)
+![Help icons for Settings > Experiments checkboxes](devtools-102-images/settings-experiments-help-icons.png)
 
-To get more information about an experimental feature, click the corresponding **Help** (![Help icon.](devtools-102-images/settings-experiments-help-icon.png)) button.  The **Help** button displays the relevant section of the [Experimental features](../../../experimental-features/index.md) article.
+To get more information about an experimental feature, click the corresponding **Help** (![Help icon](devtools-102-images/settings-experiments-help-icon.png)) button.  The **Help** button displays the relevant section of the [Experimental features](../../../experimental-features/index.md) article.
 
 
 <!-- ====================================================================== -->
@@ -158,11 +158,11 @@ To get more information about an experimental feature, click the corresponding *
 
 In previous versions of Microsoft Edge, opening **Network settings** with the gear icon in the **Network** tool would overlap when the DevTools were very narrow:
 
-![Overlap of Network settings when narrow.](devtools-102-images/network-settings-narrow-overlap.png)
+![Overlap of Network settings when narrow](devtools-102-images/network-settings-narrow-overlap.png)
 
 In Microsoft Edge 102, this issue has been fixed.  The individual settings now display better in narrow layouts:
 
-![Better layout of Network settings when narrow.](devtools-102-images/network-settings-narrow-no-overlap.png)
+![Better layout of Network settings when narrow](devtools-102-images/network-settings-narrow-no-overlap.png)
 
 See also:
 * [Capture screenshots during page load](../../../network/reference.md#capture-screenshots-during-page-load) in _Network features reference_, about configurable settings of the Network tool.
@@ -195,5 +195,5 @@ Microsoft Edge 102 also includes the following updates from the Chromium project
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
-<!-- [![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+<!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->

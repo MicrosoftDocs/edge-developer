@@ -26,19 +26,19 @@ To see how your webpage renders and behaves when a browser doesn't have JavaScri
 
 To turn off JavaScript:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-   ![The Command Menu.](../media/javascript-console-command.msft.png)
+   ![The Command Menu](../media/javascript-console-command.msft.png)
 
-1. Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.  JavaScript is now disabled.
+1. Start typing `javascript`, select **Disable JavaScript**, and then press **Enter** to run the command.  JavaScript is now disabled.
 
-   ![Select 'Disable JavaScript' in the Command Menu.](../media/javascript-console-command-javascript.msft.png)
+   ![Select 'Disable JavaScript' in the Command Menu](../media/javascript-console-command-javascript.msft.png)
 
     The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.
 
-   ![The warning icon next to Sources.](../media/javascript-console-javascript-disabled-warning.msft.png)
+   ![The warning icon next to Sources](../media/javascript-console-javascript-disabled-warning.msft.png)
 
 JavaScript remains disabled in the tab for as long as you have DevTools open.
 
@@ -46,7 +46,7 @@ To see whether the page depends on JavaScript while loading, refresh the page.
 
 To re-enable JavaScript:
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
 1. Select the **Enable JavaScript** command.
 
@@ -56,5 +56,5 @@ To re-enable JavaScript:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/disable/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

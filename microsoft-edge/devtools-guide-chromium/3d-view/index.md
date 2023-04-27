@@ -11,7 +11,7 @@ ms.date: 04/27/2022
 
 Use the **3D View** tool to debug your web app by rotating your page in 3D space to get a perspective on your webpage, represented as layers.  3D visualization helps you understand the DOM hierarchy for your webpage in terms of z-index layers.
 
-![The 3D View tool.](index-images/composited-layers-tab-galaxy.png)
+![The 3D View tool](index-images/composited-layers-tab-galaxy.png)
 
 On the left, the **3D View** tool has 3 tabs:
 
@@ -34,7 +34,7 @@ To zoom the webpage in or out on the 3D canvas, use the mouse scroll wheel, or u
 <!-- instance 1 of this section, keep synd'c -->
 ### Pan view (button)
 
-To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon.](index-images/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
+To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon](index-images/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
 
 <!-- no right-click
 To pan around the DOM, right-click and drag in the direction you want the DOM to move.
@@ -44,11 +44,11 @@ To pan around the DOM, right-click and drag in the direction you want the DOM to
 <!-- instance 1 of this section, keep synd'c -->
 ### Rotate view (button)
 
-To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon.](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
+To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
 
 To rotate the page by using the keyboard, click in the 3D canvas to put focus on it so that a black border appears, and then press the arrow keys.
-*  To rotate the page horizontally, press the `left arrow` and `right arrow` keys.
-*  To rotate the page vertically, press the `up arrow` and `down arrow` keys.
+*  To rotate the page horizontally, press the **Left Arrow** or **Right Arrow** key.
+*  To rotate the page vertically, press the **Up Arrow** or **Down Arrow** key.
 
 The keys rotate the page, regardless of whether the **Pan view** or **Rotate view** button is selected in the toolbar.
 
@@ -67,7 +67,7 @@ Use the Composited Layers view to analyze how many layers are created by your CS
 
 On the 3D canvas on the right, select an element of the webpage.  In the **Composited Layers** tab, the layers tree expands automatically, and the **Details** tab below the layers tree shows information about the selected layer.
 
-![The Composited Layers tab.](index-images/composited-layers-tab.png)
+![The Composited Layers tab](index-images/composited-layers-tab.png)
 
 
 <!-- == checkboxes == -->
@@ -127,7 +127,7 @@ How many times the selected layer was painted by the rendering engine.
 
 The **Z-index** tab contains some of the same features as the **DOM** tab, but adds z-index labels on the 3D canvas.
 
-![The Z-index tab.](index-images/z-index-tab.png)
+![The Z-index tab](index-images/z-index-tab.png)
 
 
 For background information, see [MDN > CSS Reference > z-index](https://developer.mozilla.org/docs/Web/CSS/z-index).
@@ -159,7 +159,7 @@ These radio buttons allow you to toggle through the options and pick the color t
 
 The **DOM** tab provides a general debugging view, rather than focusing on z-index.  The DOM is stacked more closely and cleanly than in the **Z-index** tab, because there aren't z-index context labels on the 3D canvas.
 
-![The DOM tab.](index-images/dom-tab.png)
+![The DOM tab](index-images/dom-tab.png)
 
 
 ### Nesting level for page (slider)
@@ -193,20 +193,20 @@ In the **DOM** tab, You can choose from the following color schemes visualize th
 
 ### Retake snapshot (button)
 
-Click the **Retake snapshot** (![The 'Retake snapshot' icon.](index-images/retake-snapshot-icon.png)) button to re-load the DOM to match the latest webpage viewport.  For example, after you make the viewport narrower or when you switch to a Device Emulation view, per [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
+Click the **Retake snapshot** (![The 'Retake snapshot' icon](index-images/retake-snapshot-icon.png)) button to re-load the DOM to match the latest webpage viewport.  For example, after you make the viewport narrower or when you switch to a Device Emulation view, per [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
 
 When the **Composited Layers** tab is selected, this button is omitted, because retaking the snapshot happens automatically when you resize the viewport.
 
 
 ### Reset view (button)
 
-Click the **Reset view** button (![The 'Reset view' icon.](index-images/reset-view-icon.png)) to reset the panning and rotation of the page.
+Click the **Reset view** button (![The 'Reset view' icon](index-images/reset-view-icon.png)) to reset the panning and rotation of the page.
 
 
 <!-- instance 2 of this section, keep synd'c -->
 ### Pan view (button)
 
-To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon.](index-images/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
+To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon](index-images/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
 
 <!-- no right-click
 To pan around the DOM, right-click and drag in the direction you want the DOM to move.
@@ -216,11 +216,11 @@ To pan around the DOM, right-click and drag in the direction you want the DOM to
 <!-- instance 2 of this section, keep synd'c -->
 ### Rotate view (button)
 
-To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon.](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
+To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
 
 To rotate the page by using the keyboard, click in the 3D canvas to put focus on it so that a black border appears, and then press the arrow keys.
-*  To rotate the page horizontally, press the `left arrow` and `right arrow` keys.
-*  To rotate the page vertically, press the `up arrow` and `down arrow` keys.
+*  To rotate the page horizontally, press the **Left Arrow** or **Right Arrow** key.
+*  To rotate the page vertically, press the **Up Arrow** or **Down Arrow** key.
 
 The keys rotate the page, regardless of whether the **Pan view** or **Rotate view** button is selected in the toolbar.
 
@@ -266,7 +266,7 @@ To display only the DOM element that you selected, without its parent or child e
 <!-- ====================================================================== -->
 ## Movement controls in lower right
 
-![Lower right controls.](index-images/lower-right-controls.png)
+![Lower right controls](index-images/lower-right-controls.png)
 
 The controls in the lower right of the 3D canvas work the same, regardless of which tab you select.
 

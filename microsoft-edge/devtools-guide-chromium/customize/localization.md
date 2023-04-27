@@ -28,7 +28,7 @@ Your Developer Tools matches your browser language by default, if it is one of t
 
 The DevTools UI in Chinese:
 
-![The DevTools UI in Chinese.](../media/localization-zh.msft.png)
+![The DevTools UI in Chinese](../media/localization-zh.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -36,7 +36,7 @@ The DevTools UI in Chinese:
 
 To revert the UI text of DevTools to English:
 
-1. In DevTools, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button, or press `F1`.
+1. In DevTools, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button, or press **F1**.
 
 1. On the left, make sure the **Preferences** page is selected.
 
@@ -46,17 +46,17 @@ To revert the UI text of DevTools to English:
 
    What the dropdown list looks like if your DevTools UI is currently English:
 
-   ![The use 'Browser UI language' setting in the Preferences page of Settings.](media/browser-ui-language-setting.png)
+   ![The use 'Browser UI language' setting in the Preferences page of Settings](media/browser-ui-language-setting.png)
 
    What the dropdown list looks like if your DevTools UI is currently Japanese:
 
-   ![The use 'Browser UI language' setting in the Preferences page of Settings, changing from Japanese UI strings.](media/browser-ui-language-setting-from-ja-jp.png)
+   ![The use 'Browser UI language' setting in the Preferences page of Settings, changing from Japanese UI strings](media/browser-ui-language-setting-from-ja-jp.png)
 
 1. Click the **Close** (x) button in the upper right of the **Settings** panel, and then click the **Reload DevTools** button that temporarily appears at the top of DevTools.
 
    What the **Reload DevTools** button looks like when changing the DevTools UI from Japanese to English:
 
-   ![The 'Reload DevTools' button in Japanese after indicating you want to change the DevTools UI from Japanese to English.](media/browser-ui-language-ja-jp-reload-devtools-button.png)
+   ![The 'Reload DevTools' button in Japanese after indicating you want to change the DevTools UI from Japanese to English](media/browser-ui-language-ja-jp-reload-devtools-button.png)
 
 
 <!-- ====================================================================== -->
@@ -66,7 +66,7 @@ Caution: This removes all of your customizations of DevTools.
 
 To revert all DevTools settings to the defaults, including the UI language:
 
-1. In DevTools, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button, or press `F1`.
+1. In DevTools, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button, or press **F1**.
 
 1. On the left, make sure the **Preferences** page is selected.
 

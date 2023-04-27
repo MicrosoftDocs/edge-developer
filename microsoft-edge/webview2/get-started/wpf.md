@@ -57,8 +57,6 @@ This tutorial also works with Visual Studio 2017.  See [Visual Studio older down
 ## Step 2 - Install a preview channel of Microsoft Edge
 
 1. Download any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
-   *  Windows 7
-   *  Windows 8.1
    *  Windows 10
    *  Windows 11
 
@@ -100,7 +98,7 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
 1. Click the **Next** button.
 
-   The **Configure your new project: WPF Application** dialog box opens:
+   The **Configure your new project: WPF Application** dialog opens:
 
    ![The 'Configure your new project: WPF Application' dialog for a .NET Core/5/6 project](wpf-images/config-new-core-project-2022.png)
    <!-- ok to delete png media/wpf-getting-started-create-core.png -->
@@ -109,7 +107,7 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
 1. In the **Location** text box, select a path on your local drive, such as `C:\Users\myusername\Documents\MyProjects`, and then click the **Next** button.
 
-   The **Additional information** dialog box appears, with a **Target Framework** dropdown list:
+   The **Additional information** dialog appears, with a **Target Framework** dropdown list:
 
    ![The 'Additional information' dialog with a 'Target Framework' dropdown list](media/wpf-getting-started-create-core-add-info.png)
 
@@ -142,7 +140,7 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 
 1. Click the **Next** button.
 
-   The **Configure your new project: WPF App (.NET Framework)** dialog box opens:
+   The **Configure your new project: WPF App (.NET Framework)** dialog opens:
 
    ![The 'Configure your new project: WPF App (.NET Framework)' dialog](media/wpf-getting-started-create-fw.png)
 
@@ -190,7 +188,7 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 
 1. Open Visual Studio, and open the solution you created.
 
-1. Press `F5` to run the initial app (shown above), not yet including the WebView2 SDK.
+1. Press **F5** to run the initial app (shown above), not yet including the WebView2 SDK.
 
 1. Close the initial app.
 
@@ -209,13 +207,13 @@ In Visual Studio, use NuGet Package Manager to add the WebView2 SDK to the proje
 
 1. In the upper left, click the **Browse** tab.  In the search bar, type `Microsoft.Web.WebView2`, then click the **Microsoft.Web.WebView2** package.
 
-   The NuGet package manager dialog box displays search results, including a **Microsoft.Web.WebView2** package.  The dialog box has a version number and **Install** button.
+   The NuGet package manager dialog displays search results, including a **Microsoft.Web.WebView2** package.  The dialog has a version number and **Install** button.
    
-   ![NuGet package manager dialog box displays the Microsoft.Web.WebView2 package](media/install-nuget.png)
+   ![NuGet package manager dialog displays the Microsoft.Web.WebView2 package](media/install-nuget.png)
 
 1. Accept the default version, and then click the **Install** button.
 
-1. In the **Preview Changes** dialog box, click the **OK** button.
+1. In the **Preview Changes** dialog, click the **OK** button.
 
 1. Select **File** > **Save All** to save the project.
 
@@ -564,6 +562,9 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 API Reference](../webview2-api-reference.md)
+   * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
+
 developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
@@ -572,11 +573,6 @@ Local pages:
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
-
-API Reference:
-* [API reference: WebView2 class in WebView2.Wpf namespace](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-* [API reference: WebView2.Wpf namespace](/dotnet/api/microsoft.web.webview2.wpf)
 
 GitHub:
 * [WebView2Samples repo > WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)

@@ -43,7 +43,7 @@ Install the Microsoft Edge DevTools extension for Visual Studio Code, as follows
 
 1. Open Visual Studio Code.
 
-1. In the Activity Bar on the left, click the **Extensions** (![Extensions icon](./install-images/extensions-icon.png)) button.  Or, press `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS.  The **Extensions** Marketplace pane opens.
+1. In the Activity Bar on the left, click the **Extensions** (![Extensions icon](./install-images/extensions-icon.png)) button.  Or, press **Ctrl+Shift+X** on Windows/Linux or **Command+Shift+X** on macOS.  The **Extensions** Marketplace pane opens.
 
 1. In the **Search Extensions in Marketplace** text box, enter **Microsoft Edge Tools for VS Code**.
 
@@ -111,7 +111,7 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 
 1. In Visual Studio Code, in the Activity Bar, click the **Source Control** (![Source Control icon](./install-images/source-control-icon.png)) button, and then click the **Clone Repository** button.
 
-1. In the **Provide repository URL** text box, paste the copied URL: **https://github.com/MicrosoftEdge/Demos.git** and then press `Enter`.  A folder selection dialog opens.
+1. In the **Provide repository URL** text box, paste the copied URL: **https://github.com/MicrosoftEdge/Demos.git** and then press **Enter**.  A folder selection dialog opens.
 
    ![The Clone Repository button in Visual Studio Code](./install-images/clone-repository-button.png)
 
@@ -129,7 +129,7 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 
 1. In the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./install-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens.
 
-1. In the **Microsoft Edge Tools** > **Targets** pane, click the **Open Folder** button.  The **Open Folder** dialog box opens.  Navigate to the `demo-to-do` folder in the Demo repo that you cloned, select the folder or go into it, and then click the **Select Folder** button:
+1. In the **Microsoft Edge Tools** > **Targets** pane, click the **Open Folder** button.  The **Open Folder** dialog opens.  Navigate to the `demo-to-do` folder in the Demo repo that you cloned, select the folder or go into it, and then click the **Select Folder** button:
 
    ![Selecting the demo-to-do folder](./install-images/select-demo-to-do-folder.png)
 
@@ -235,3 +235,5 @@ Next, see [Get started using the DevTools extension for Visual Studio Code](./ge
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
 * [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Sample code for DevTools](../../devtools-guide-chromium/sample-code/sample-code.md)
+* [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.

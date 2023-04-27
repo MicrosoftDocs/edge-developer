@@ -75,7 +75,7 @@ Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsof
 
    You can only upload one package at a time. Your submission is blocked if the package upload isn't successful on the **Packages** webpage.
 
-1. To upload your package, drag and drop the zip file to the **Drag your package here (.zip)** section of the webpage. Or you can select **Browse your files** to open a dialog box to select the package to upload.
+1. To upload your package, drag and drop the zip file to the **Drag your package here (.zip)** section of the webpage. Or you can select **Browse your files** to open a dialog to select the package to upload.
 
    After your package is uploaded, it's validated. If there's a validation error, resolve the issue and try uploading your package again.
 
@@ -164,17 +164,13 @@ Make sure your video meets the following requirements.
 
 *  Turn off advertisements on your video.  For more information, see [Set your default ad formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
 
-*  Turn on embedding for your videos.  For more information, see [Embed videos & playlists](https://support.google.com/youtube/answer/171780).
-
 To submit the YouTube video URL of your video:
 
 1. On YouTube, locate the video that you want to add to your store listing webpage.
 
-1. Under the video, select **Share** > **Embed**.
+1. Under the video, click the **Share** button, and then click the **Copy** button to copy the URL for the video.
 
-1. Copy the HTML code that is displayed.
-
-1. On the store listing details webpage, paste the HTML code in the `YouTube video URL` field.
+1. On the store listing details webpage, paste the URL in the **YouTube video URL** field.
 
 
 #### Search terms requirements
