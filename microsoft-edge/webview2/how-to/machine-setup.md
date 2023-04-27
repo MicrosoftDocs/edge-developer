@@ -229,7 +229,7 @@ Install Visual Studio workloads if prompted.  When you open a `.sln` file from t
 <!--
 maintenance links; keep:
 Main, central copy:
-[Install or update the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+[Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 Secondary copies:
 [Install or update the WebView2 SDK](../get-started/win32.md#step-6---install-the-webview2-sdk) in _Get started with WebView2 in Win32 apps_
 [Install or update the WebView2 SDK](../get-started/winforms.md#step-3---install-the-webview2-sdk) in _Get started with WebView2 in WinForms apps_
@@ -292,7 +292,7 @@ See also:
 <!-- ====================================================================== -->
 ## Updating the WebView2 Runtime
 
-To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](./concepts/distribution.md).
+To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](../concepts/distribution.md).
 
 
 <!-- ====================================================================== -->

@@ -45,7 +45,7 @@ SDKs/packages are Prerelease or Release
 
 To select which version of WebView2 SDK NuGet package a Visual Studio project uses, in Visual Studio, right-click a project, select **Manage NuGet Packages**, select or clear the **Include prerelease** checkbox, select the **Microsoft.Web.WebView2** package, and then in the **Version** dropdown list, select a version of the **Microsoft.Web.WebView2** NuGet package.
 
-For details, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  You can also view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
+For details, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  You can also view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 
 
 <!-- ====================================================================== -->
@@ -145,7 +145,7 @@ To help you evaluate the Experimental APIs and share your feedback, use the [Web
 
 Once an API has been moved from Experimental to Stable status, you need to move your app's code to the Stable API.  Using Experimental APIs or a Prerelease SDK is not recommended for production apps.  Follow these practices when moving your app from using Experimental APIs to using Stable APIs:
 
-*  In your project in Visual Studio, update your WebView2 SDK package version to a newer Prerelease SDK or Release SDK.  See [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
+*  In your project in Visual Studio, update your WebView2 SDK package version to a newer Prerelease SDK or Release SDK.  See [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
 
 *  Update your app's code to use Stable APIs instead of Experimental APIs (for COM).  The Stable API will be supported with bug fixes, but the Experimental API will be deprecated, and not available in the newer (Prerelease or Release) SDK.  After an API is promoted to Stable, the Experimental version of that API is supported for two releases of the Prerelease SDK, in a deprecated state.  In subsequent versions of the Prerelease SDK, Experimental APIs might be modified, removed, or added.
 

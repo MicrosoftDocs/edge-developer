@@ -226,7 +226,7 @@ Continue with the steps below.
 
 
 <!-- maintenance link; keep: main copy:
-[Install or update the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+[Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
 ## Step 9 - Update or install the WebView2 SDK
