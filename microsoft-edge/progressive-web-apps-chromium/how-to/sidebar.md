@@ -119,7 +119,7 @@ One of the most important benefits of building an app as a PWA is that, from one
 
 The `edge_side_panel` manifest member makes your app installable as a standalone app and enables your app to be pinned to the sidebar in Microsoft Edge.
 
-However, if you prefer to build an app that can only be pinned to the sidebar but not installed as a standalone app, omit the `display` member from your web app manifest, or set its value to `browser`:
+However, if you prefer to build an app that can only be pinned to the sidebar but cannot be installed as a standalone app, omit the `display` member from your web app manifest, or set its value to `browser`:
 
 ```json
 {
