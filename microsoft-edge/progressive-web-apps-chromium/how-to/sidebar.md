@@ -32,19 +32,19 @@ To locally enable PWA sidebar support in Microsoft Edge:
 
 1. Download and install the Canary channel of Microsoft Edge from the [Microsoft Edge Insider website](https://www.microsoftedgeinsider.com/download).
 
-1. Depending on your operating system, do either of the following to start Microsoft Edge with sidebar support for PWAs:
+1. Start Microsoft Edge with sidebar support for PWAs, as follows:
 
     * On Windows:
         
-        * Find the path where Microsoft Edge Canary is installed on your device. For example: `C:\Users\your_name\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe`.
-        * Enter **cmd** in the Windows search text box and select the **Command Prompt** app.
-        * Enter `"C:\Users\your_name\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe" --enable-features=msWebAppManifestSidePanel,msAddEdgeSidePaneBrandUA`.
+        1. Find the path where Microsoft Edge Canary is installed on your device. For example: `C:\Users\your_name\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe`.
+        1. Enter **cmd** in the Windows search text box, and then select the **Command Prompt** app.
+        1. Enter the following command: `"C:\Users\your_name\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe" --enable-features=msWebAppManifestSidePanel,msAddEdgeSidePaneBrandUA`
 
     * On macOS:
 
-        * Find the path where Microsoft Edge Canary is installed on your device. For example: `/Applications/Microsoft Edge Canary.app`.
-        * Open the **Terminal** app.
-        * Enter `/Applications/Microsoft Edge Canary.app --enable-features=msWebAppManifestSidePanel,msAddEdgeSidePaneBrandUA`.
+        1. Find the path where Microsoft Edge Canary is installed on your device. For example: `/Applications/Microsoft Edge Canary.app`.
+        1. Open the **Terminal** app.
+        1. Enter the following command: `/Applications/Microsoft Edge Canary.app --enable-features=msWebAppManifestSidePanel,msAddEdgeSidePaneBrandUA`
 
 
 <!-- ====================================================================== -->
@@ -80,9 +80,9 @@ To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `ed
 <!-- ====================================================================== -->
 ## Adapt your app to the minimum sidebar width
 
-The sidebar in Microsoft Edge has a default minimum width of 376 pixels and can be resized by users. Therefore, your app's layout should support the 376 pixels minimum width and be responsive.
+The sidebar in Microsoft Edge has a default minimum width of 376 pixels and can be resized by users. Therefore, your app's layout should support the 376 pixels minimum width, and should be responsive.
 
-While building your app, you can test if the app's layout is usable when narrow, and responsive, by using the **Device Emulation** tool in Microsoft Edge DevTools. To learn more, see [Verify that the webpage layout is usable when narrow](../../devtools-guide-chromium/accessibility/narrow.md).
+While building your app, you can test whether the app's layout is usable when narrow, and make sure the design is responsive at different widths, by using the **Device Emulation** tool in Microsoft Edge DevTools. To learn more, see [Verify that the webpage layout is usable when narrow](../../devtools-guide-chromium/accessibility/narrow.md).
 
 If your app's layout can't support the 376 pixels minimum width, you can define your preferred width by using the `preferred_width` property in your web app manifest. For example:
 
@@ -117,7 +117,7 @@ When you define a preferred width in your app's manifest, the following happens:
 
 One of the most important benefits of building an app as a PWA is that, from one code base, your app adapts to all devices and operating systems, whatever their capabilities and screen sizes.
 
-By using the `edge_side_panel` manifest member, you can also make your app installable as a standalone app, or pinned to the sidebar in Microsoft Edge.
+The `edge_side_panel` manifest member makes your app installable as a standalone app and enables your app to be pinned to the sidebar in Microsoft Edge.
 
 However, if you prefer to build an app that can only be pinned to the sidebar but not installed as a standalone app, omit the `display` member from your web app manifest, or set its value to `browser`:
 
@@ -145,7 +145,7 @@ However, if you prefer to build an app that can only be pinned to the sidebar bu
 <!-- ====================================================================== -->
 ## Detect usage in the sidebar
 
-Detecting when your app runs in the sidebar can be useful to provide your users with the best possible experience when your app runs in this specific browser UI surface.
+Detecting when your app is running in the sidebar can be useful to provide your users with the best possible experience when your app runs in this browser panel.
 
 Starting with Microsoft Edge 114, you can detect when your app runs in the sidebar by using User-Agent Client Hints. To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from your website](../../web-platform/user-agent-guidance.md).
 
@@ -169,7 +169,7 @@ To detect when your app runs in the sidebar, do one of the following:
     }
     ```
 
-You can also use the User Agent string to know whether your app runs in the sidebar or not.
+To detect whether your app is running in the sidebar, you can also use the User Agent string.
 
 **Note**: we strongly recommend using User Agent Client Hints instead of the User Agent string. The User Agent string is an outdated mechanism for doing browser detection, and has website compatibility issues.
 
@@ -183,12 +183,7 @@ User-Agent: ... (Edge Side Panel, ...)...
 
 #### Relationship with your mobile app
 
-You might have created two variants of your app:
-
-* One variant when the app is used on a desktop device.
-* Another variant when the app is used on a mobile device.
-
-In this scenario, the desktop variant is used when your app is pinned to the sidebar. By default, apps in the sidebar that use the `edge_side_panel` manifest member receive the Microsoft Edge desktop User Agent Client Hint:
+Suppose you create a desktop variant of your app and a mobile variant of your app. In this scenario, the desktop variant is used when your app is pinned to the sidebar. By default, apps in the sidebar that use the `edge_side_panel` manifest member receive the Microsoft Edge desktop User Agent Client Hint:
 
 ```https
 Sec-CH-UA-Mobile: ?0
@@ -211,7 +206,7 @@ PWAmp is a music player PWA demo application that can be pinned to the sidebar i
 
 1. Enable sidebar support as described in [Enable sidebar support of PWAs in Microsoft Edge](#enable-sidebar-support-of-pwas-in-microsoft-edge).
 
-1. Open Microsoft Edge and make sure the sidebar is displayed. If the sidebar is not displayed, go to `edge://settings/sidebar` and then enable **Always show sidebar**:
+1. Open Microsoft Edge and make sure the sidebar is displayed. If the sidebar is not displayed, go to `edge://settings/sidebar` and then turn on the **Always show sidebar** toggle:
 
     ![The Edge Settings page with the "Always show sidebar" setting](../media/always-show-sidebar.png)
 
