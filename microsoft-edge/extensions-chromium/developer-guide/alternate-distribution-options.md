@@ -151,19 +151,6 @@ See also:
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
 
 
-<!-- ====================================================================== -->
-## Blocking of extensions
-
-Question:
-It is not clear if `BlockExternalExtensions` has to be set to `disabled` or `unconfigured` as a prerequisite.  Or if extensions and their origin configured in `ExtensionInstallForcelist`, `ExtensionInstallSources`, or `ExtensionSettings` take precedence over `BlockExternalExtensions=Disabled`.
-
-Answer: 
-Setting the `BlockExternalExtensions` policy to `Not Configured` or `Disabled` won't have any effect.  If the `BlockExternalExtensions` policy is set to `enabled`, external extension installation (by third party software) won't be allowed. The policies for force install list, block list, and extension settings are used when enterprises want to install or block specific extensions on the client machines.
-
-See [BlockExternalExtensions](/deployedge/microsoft-edge-policies#blockexternalextensions) in _Microsoft Edge - Policies_.
-<!-- todo: check spelling of option names etc. -->
-<!-- https://learn.microsoft.com/deployedge/microsoft-edge-policies#blockexternalextensions -->
-
 
 <!-- ====================================================================== -->
 > [!NOTE]
