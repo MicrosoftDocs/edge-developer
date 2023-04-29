@@ -52,7 +52,7 @@ Only a subset of WebView2 interfaces/functions are exposed in WinUI:
 
 * Interfaces such as `CoreWebView2Controller` are hidden, because WinUI takes care of the environment and window creation behind the scenes.
 
-See also [Xbox, HoloLens, and XAML limitations](#xbox-hololens-and-xaml-limitations) below.
+See also [Xbox and XAML limitations](#xbox-and-xaml-limitations) below.
 
 
 <!-- ====================================================================== -->
@@ -153,7 +153,7 @@ This article shows steps and screenshots for Visual Studio 2022 Community Editio
 
 1. Accept the defaults, and click the **OK** button.
 
-1. If the **Developer Mode** window section appears, in that section, click **On**.  If you haven't already set your machine to Developer Mode, the **Use developer features** dialog opens, to confirm turning on developer mode.  
+1. If the **Developer Mode** window section appears, in that section, click **On**.  If you haven't already set your machine to Developer Mode, the **Use developer features** dialog opens, to confirm turning on developer mode.
    *  Click **Yes** to turn on Developer Mode for your machine, and then close the **Settings** window.
 
    Visual Studio displays the newly created solution and project:
@@ -352,9 +352,9 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Xbox, HoloLens, and XAML limitations
+#### Xbox and XAML limitations
 
-This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered for future releases.
+This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox and XAML Island support requires additional work, and these devices and scenarios may be considered for future releases.
 
 
 <!-- ------------------------------ -->
