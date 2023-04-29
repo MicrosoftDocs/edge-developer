@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/11/2022
+ms.date: 04/28/2023
 ---
 # Alternative ways to distribute extensions
 
@@ -154,7 +154,7 @@ See also:
 <!-- ====================================================================== -->
 ## Blocking of extensions
 
-The policies for `ExtensionInstallForcelist`, block list, and `ExtensionSettings` are used when enterprises want to install or block specific extensions on the client machines.  Extensions and their origin that are configured in [ExtensionInstallForcelist](/deployedge/microsoft-edge-policies#extensioninstallforcelist), [ExtensionInstallSources](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#extensioninstallsources), or [ExtensionSettings](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#extensionsettings) take precedence over [BlockExternalExtensions](/deployedge/microsoft-edge-policies#blockexternalextensions).
+The policies for `ExtensionInstallForcelist`, block list, and `ExtensionSettings` are used when enterprises want to install or block specific extensions on the client machines.  Extensions and their origin that are configured in [ExtensionInstallForcelist](/deployedge/microsoft-edge-policies#extensioninstallforcelist), [ExtensionInstallSources](/deployedge/microsoft-edge-policies#extensioninstallsources), or [ExtensionSettings](/deployedge/microsoft-edge-policies#extensionsettings) take precedence over [BlockExternalExtensions](/deployedge/microsoft-edge-policies#blockexternalextensions).
 
 If the `BlockExternalExtensions` policy is set to `Not Configured` or `Disabled`, that doesn't have any effect.  If the `BlockExternalExtensions` policy is set to `Enabled`, external extension installation (by third party software) is prevented.
 
