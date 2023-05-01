@@ -20,7 +20,6 @@ The WebView2 team is planning the following major efforts for future updates:
 
 * MacOS Preview
 * Xbox Preview
-* HoloLens 2 Preview
 * Linux Preview
 
 
@@ -57,6 +56,15 @@ You can access WebView2 controls in your UWP applications using [Windows UI Libr
 
 You can access WebView2 controls in your applications using [Windows UI Library 3 (WinUI 3)](/uwp/toolkits/winui3/index) with the Windows App SDK.  This has reached GA.
 
-#### Xbox, HoloLens, and XAML limitations
+#### Xbox and XAML limitations
 
-This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered at a future point in time.
+This version of WebView 2 will only work on PC-class and HoloLens 2 devices, offering the full range of capability found in the WinUI 3 variant. Xbox and XAML Island support requires additional work, and these devices and scenarios may be considered at a future point in time.
+
+
+<!-- ====================================================================== -->
+## Preview Availability
+
+The following technologies are now available in a Preview release.
+
+### HoloLens 2
+Starting with the Windows 11 update for HoloLens 2, a WebView2 preview is now available on HoloLens 2 devices. See [this page](https://learn.microsoft.com/en-us/hololens/hololens-update-hololens) for more information on the update's availability.
