@@ -67,4 +67,4 @@ This version of WebView 2 will only work on PC-class and HoloLens 2 devices, off
 The following technologies are now available in a Preview release.
 
 ### HoloLens 2
-Starting with the Windows 11 update for HoloLens 2, a WebView2 preview is now available on HoloLens 2 devices. See [this page](https://learn.microsoft.com/en-us/hololens/hololens-update-hololens) for more information on the update's availability.
+Starting with the Windows 11 update for HoloLens 2, a WebView2 preview is now available on HoloLens 2 devices. See [this page](../../../hololens/hololens-update-hololens) for more information on the update's availability.
