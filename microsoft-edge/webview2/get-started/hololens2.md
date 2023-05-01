@@ -68,7 +68,7 @@ This tutorial assumes you have Unity 2020.3 LTS or later and Visual Studio 2019 
 
 Follow the [Mixed Reality tools installation guide](/windows/mixed-reality/develop/install-the-tools?tabs=unity) to set up your Unity and Visual Studio environment for HoloLens 2 development. These resources will guide you through the process of installing and configuring the necessary tools, including Visual Studio and the Universal Windows Platform development workload.
 
-Additionally, ensure that your development environment is set up for WebView2 by following the steps in [Set up your Dev environment for WebView2](../how-to/machine-setup.md).
+Also set up your development environment for WebView2, by following the steps in [Set up your Dev environment for WebView2](../how-to/machine-setup.md).
 
 Once you have completed the setup, return to this page and continue with the next steps.
 
@@ -76,9 +76,13 @@ Once you have completed the setup, return to this page and continue with the nex
 <!-- ====================================================================== -->
 ## Step 2 - Install MRTK and Mixed Reality Feature Tool
 
-1. To install the Mixed Reality Toolkit (MRTK) and the Mixed Reality Feature Tool, first [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center. The Mixed Reality Feature Tool<!--todo: and MRTK? --> simplifies the process of discovering, installing, and managing Mixed Reality features and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
+1. To install the Mixed Reality Toolkit (MRTK) and the Mixed Reality Feature Tool, first [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center.
 
-1. Run the downloaded Mixed Reality Feature Tool executable and follow the prompts to install the MRTK and any additional required packages for HoloLens 2 development. The Mixed Reality Feature Tool allows you to select and install the appropriate versions of MRTK, along with other Mixed Reality features, directly into your Unity project.
+   The Mixed Reality Feature Tool<!--todo: and MRTK? --> simplifies the process of discovering, installing, and managing Mixed Reality features and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
+
+1. Run the downloaded Mixed Reality Feature Tool executable and follow the prompts to install the MRTK and any additional required packages for HoloLens 2 development.
+
+   The Mixed Reality Feature Tool allows you to select and install the appropriate versions of MRTK, along with other Mixed Reality features, directly into your Unity project.
 
 Proceed to the next step to set up your Unity project for HoloLens 2 development.
 
@@ -86,11 +90,11 @@ Proceed to the next step to set up your Unity project for HoloLens 2 development
 <!-- ====================================================================== -->
 ## Step 3 - Set up Unity project for HoloLens 2 development
 
-Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. To prepare your project for mixed reality development, follow the steps in [Unity development for HoloLens 2 - Mixed Reality](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2).
+Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. To prepare your project for mixed reality development, follow the steps in [Unity development for HoloLens 2](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2) in the Mixed Reality documentation.
 
-Once you have your Unity project ready for HoloLens 2 development, you'll need to configure MRTK in your project. Follow the instructions from the [MRTK documentation](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) to set up the Mixed Reality Toolkit in your Unity project.
+Once you have your Unity project ready for HoloLens 2 development, you'll need to configure MRTK in your project.  To set up the Mixed Reality Toolkit in your Unity project, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
 
-After you've installed the MRTK and Mixed Reality Feature Tool, you should see the MRTK assets and prefabs in your Unity project, ready for use.
+After you've installed the MRTK and Mixed Reality Feature Tool, the MRTK assets and prefabs appear in your Unity project, ready for use.
 
 
 <!-- ====================================================================== -->
@@ -98,45 +102,57 @@ After you've installed the MRTK and Mixed Reality Feature Tool, you should see t
 
 In this step, you'll use the Mixed Reality Feature Tool to install the "Microsoft Mixed Reality WebView" plugin that contains a specific version of the WebView2 NuGet package, which is compatible with HoloLens 2.
 
-1. Launch the Mixed Reality Feature Tool you installed in Step 2. You should see the start page with options to configure settings, view documentation, and select the gear button to show the **Settings** pane.
+1. Launch the Mixed Reality Feature Tool (which you installed above). The start page of the Mixed Reality Feature Tool opens, containing options to configure settings, and view documentation:
 
    ![Mixed Reality Feature Tool start page](./hololens2-images/screenshot_mrtk_feature_tool_start_page.png)
 
-1. From the **Settings** pane, select the **Feature** tab, then select the **Show preview releases** checkbox to enable it. Then click **Ok** to return to the starting page. **Note:** In the latest version of Mixed Reality Feature Tool, this option might be pre-selected.
+1. Click the gear button.  The **Settings** pane opens.
+
+1. Click the **Feature** tab, and then make sure the **Show preview releases** checkbox is selected:
 
    ![Mixed Reality Feature Tool settings](./hololens2-images/screenshot_feature_enable_preview_releases.png)
 
+1. Click the **Ok** button to return to the starting page.
+
 1. Click the **Start** button to begin discovering feature packages.
 
-1. Point Mixed Reality Feature Tool to your Unity project by clicking the **ellipsis** button to the right of the project path field. Select your Unity project folder and click **Open**.
+1. Point the Mixed Reality Feature Tool to your Unity project.  To do this, click the **Edit**<!--todo: change "Edit" to string from tooltip--> (**...**) button to the right of the project path field:
 
    ![Select the Unity project](./hololens2-images/screenshot_feature_tool_select_unity_project.png)
 
-1. Click the **Discover Features** button to proceed to the next page.
+1. In the file selection dialog, select your Unity project folder, and then click the **Open** button.
 
-1. In the **Discover Features** pane, expand the **Other features** section. From the expanded list, locate **Microsoft Mixed Reality WebView** plugin. Check the box next to the plugin to mark it for installation. (By default the latest version will be selected.)
+1. In the **Select project** dialog, click the **Discover Features** button.
+
+1. In the **Discover Features** page, expand the **Other features** section, and then select the **Microsoft Mixed Reality WebView** checkbox:
 
    ![Mixed Reality Feature Tool with Microsoft Mixed Reality WebView plugin selected](./hololens2-images/screenshot_mrtk_webview2_selected.png)
 
-1. Click **Get Features** to download the required packages.
+   This marks this plugin for installation. In the version dropdown, by default, the latest version of the plugin is selected.
 
-1. Once the packages are downloaded, click the **Import** button to import to make a final review of the changes.
+1. Click the **Get Features** button.  This downloads the required packages.
+
+1. Once the packages are downloaded, click the **Import** button:
 
    ![Mixed Reality Feature Tool with import features](./hololens2-images/screenshot_feature_tool_import_features.png)
 
-1. On the **Review and Approve** pane you'll see the packages that will be copied into your project, and the modifications to your project manifest.json file. Click **Approve** to finalize the changes.
+1. On the **Review and Approve** page, inspect the modifications that will be made to your project `manifest.json` file, and inspect the list of files (such as `.tgz` packages) that will be copied into your project:
 
    ![Mixed Reality Feature Tool with review & approve](./hololens2-images/screenshot_feature_tool_review.png)
 
-1. Return to your Unity project, and you should see the WebView2 prefab in your project's **Assets** folder.
+1. Click the **Approve** button to finalize the changes.
 
-Now that the Microsoft Mixed Reality WebView plugin is installed and imported, you're ready to set up the WebView2 prefab in your Unity scene. Proceed to Step 5 for instructions on how to do this.
+1. In your Unity project, in your project's **Assets** folder, inspect the WebView2 prefab.
+
+The Microsoft Mixed Reality WebView plugin is now installed and imported.  Continue with the next Step below.
 
 For more information, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
 
 
 <!-- ====================================================================== -->
 ## Step 5 - Set up the WebView2 prefab in Unity scene
+
+Now that the Microsoft Mixed Reality WebView plugin is installed and imported, set up the WebView2 prefab in your Unity scene, as follows:
 
 1. In the Unity Editor, navigate to the **Project** window and find the WebView2 prefab by going to `Packages > Microsoft Mixed Reality WebView > Runtime > Prefab`.
 
@@ -299,7 +315,7 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
 
 1. In Unity, open the **Build Settings** dialog (**File > Build Settings**).
 
-1. Ensure that **Universal Windows Platform** is the selected platform.
+1. Make sure that the selected platform is **Universal Windows Platform**.
 
 1. Click **Add Open Scene** to add our sample scene to the list of scenes in the build.
 
@@ -323,7 +339,7 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
 
 ![Visual Studio Solution Config & Platform](./hololens2-images/screenshot_visualstudio_buildconfig.png)
 
-1. Ensure that **Developer Mode** is enabled on your PC and HoloLens 2 device. See the following documentation for information on [Enabling Developer Mode](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#enabling-developer-mode).
+1. Make sure **Developer Mode** is enabled on your PC and on your HoloLens 2 device. See [Enabling Developer Mode](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#enabling-developer-mode) in _Using Visual Studio to deploy and debug_ in the Mixed Reality documentation.
 
 1. Click the deployment target drop-down and then do one of the following:
 
@@ -342,7 +358,9 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
 To set up your remote connection:
 
 1. On the menu bar, select **Project > Properties > Configuration Properties > Debugging**.
+
 1. Click the **Debugger to launch** drop-down and then select **Remote Machine**.
+
 1. In the **Machine Name** field, enter the IP address of your device.
     * You can find the IP address on your HoloLens 2 under **Settings > Network & Internet > Advanced Options**.
     * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
@@ -350,6 +368,7 @@ To set up your remote connection:
     ![Remote connection dialog in Visual Studio](./hololens2-images/screenshot_visualstudio_remote_ip.png)
 
 1. Set the **Authentication Mode** to **Universal (Unencrypted protocol)**.
+
 1. Build, deploy, and debug your app based on your needs:
     * To build, deploy, and start debugging, select **Debug > Start debugging**.
     * To build and deploy without debugging, select **Build > Deploy Solution**.
@@ -412,7 +431,7 @@ When developing a HoloLens 2 Unity app with WebView2, be aware of some limitatio
 
 * **User interactions**: Unlike native HoloLens 2 slates, WebView2 is best interacted with using far-interaction hand rays. Touch-to-swipe and scroll interactions might not be supported.
 
-* **Performance**: Complex websites with heavy use of JavaScript or advanced rendering may impact system performance or the host application's framerate. For general performance-related limitations and recommendations, see [Understanding performance for mixed reality](/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality). Also see [Performance optimization](#performance-optimization), below.
+* **Performance**: Complex websites with heavy use of JavaScript or advanced rendering may impact system performance or the host application's framerate. For general performance-related limitations and recommendations, see [Understanding performance for mixed reality](/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality) in the Mixed Reality documentation. Also see [Performance optimization](#performance-optimization), below.
 
 
 <!-- ------------------------------ -->
@@ -497,8 +516,8 @@ public class WebViewExample : MonoBehaviour
 
 There are various ways to handle input in Unity for Mixed Reality applications.
 
-* [MRTK 2.8 - Input Overview](/windows/mixed-reality/mrtk-unity/mrtk2/features/input/overview) - recommended for MRTK 2.8 applications.
-* [MRTK 3.0 - Input Overview](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) - recommended for MRTK 3 applications.
+* [Input overview — MRTK2](/windows/mixed-reality/mrtk-unity/mrtk2/features/input/overview) - recommended for MRTK 2.8 applications.
+* [Input — MRTK3](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) - recommended for MRTK 3 applications.
 * [Unity Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/index.html)
 
 Regardless of the input system used within your Unity application, interop code between the various application input events and the WebView plugin is required. This means translating those events (such as Pointer events) into a `WebViewMouseEventData` object and then forwarding those events to the plugin via the `IWithMouseEvent` interface:
@@ -556,9 +575,9 @@ Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial f
 
 * **Limit the number of WebView2 instances**: We suggest using only one instance of WebView2 within a Unity app. Reuse the same instance or tear down and create a new one as needed. Keep in mind that removing the WebView prefab from the scene may not destroy the underlying WebView2 instance. You must call the `Destroy()` method on the game object to destroy it properly.
 
-* **Use TrySuspendAsync API**: When the WebView2 is not being presented to the user, use the `TrySuspendAsync` API to reduce memory usage. Note that you will need to get the native WebView2 instance to call this API (⚠️ this is TBD, and we will update this section accordingly ⚠️).
+* **Use TrySuspendAsync API**: When the WebView2 is not being presented to the user, use the `TrySuspendAsync` API to reduce memory usage. Note that you will need to get the native WebView2 instance, to call this API (⚠️ this is TBD, and we will update this section accordingly ⚠️).
 
-* **Apply general Unity optimization techniques**: Utilize standard Unity optimization methods, such as occlusion culling or limiting the update rate, to improve WebView2 performance. For more information, refer to the [Performance recommendations for Unity in Mixed Reality](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity?tabs=openxr).
+* **Apply general Unity optimization techniques**: Utilize standard Unity optimization methods, such as occlusion culling or limiting the update rate, to improve WebView2 performance. For more information, see [Performance recommendations for Unity](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity?tabs=openxr) in the Mixed Reality documentation.
 
 * **Profile and monitor WebView2 performance**: There are several ways to profile the performance of a HoloLens 2 Unity application:
 
