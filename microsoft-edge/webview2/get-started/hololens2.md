@@ -30,7 +30,7 @@ You use the Unity game engine and Visual Studio to create your HoloLens 2 projec
 The MRTK is a Microsoft-driven open source project that accelerates the development of mixed reality applications in Unity. This toolkit provides a collection of scripts, components, and prefabs designed to help you create performant and intuitive mixed reality experiences for HoloLens 2 devices.
 
 > [!IMPORTANT]
-> WebView2 is only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens.md).
+> WebView2 is only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
 
 
 <!-- ------------------------------ -->
@@ -394,7 +394,10 @@ public class WebViewExample : MonoBehaviour, IWithPostMessage
 
 <!-- ====================================================================== -->
 ## Additional considerations for WebView2 on HoloLens 2
-
+<!-- 
+if move this section to a separate .md (new article), can promote h4s to h2s to make appear in In This Article nav
+it might be possible to flatten outline of this section by promoting h6s to h4s, or h4s to h2s
+-->
 
 <!-- ------------------------------ -->
 #### Limitations and known issues
@@ -402,17 +405,18 @@ public class WebViewExample : MonoBehaviour, IWithPostMessage
 When developing a HoloLens 2 Unity app with WebView2, be aware of some limitations and known issues:
 
 * **Pop-ups**: Pop-ups don't work well within WebView2 inside Unity apps on HoloLens 2, but they work fine in 2D XAML apps on the device. Avoid pop-ups and use alternative techniques or UI designs, such as custom pop-up-like elements within the WebView using HTML, CSS, and JavaScript.
+
 * **New windows**: WebView2 instances on HoloLens 2 navigate within the same window by default, unlike on Desktop. Follow this default behavior for a better user experience.
+
 * **Enterprise authentication**: Automatic Single Sign-On (SSO) leveraging OS-level tokens is currently not supported in WebView2 on HoloLens 2. Users can still sign in by providing credentials, except for cases requiring device-level authentication. Cookie storage works as expected.
+
 * **User interactions**: Unlike native HoloLens 2 slates, WebView2 is best interacted with using far-interaction hand rays. Touch-to-swipe and scroll interactions might not be supported.
-* **Performance**: Complex websites with heavy use of JavaScript or advanced rendering may impact system performance or the host application's framerate. For general performance-related limitations and recommendations, refer to the [performance guidelines for Mixed Reality](https://learn.microsoft.com/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality). Also, please see the [Performance optimization](#performance-optimization) section below.
+
+* **Performance**: Complex websites with heavy use of JavaScript or advanced rendering may impact system performance or the host application's framerate. For general performance-related limitations and recommendations, see [Understanding performance for mixed reality](/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality). Also see [Performance optimization](#performance-optimization), below.
 
 
 <!-- ------------------------------ -->
-#### Navigation and Input
-
-
-###### Navigation
+#### Navigation
 
 In step 6, we touched on some navigation methods. In this section, we'll expand on what we learned.
 
@@ -487,15 +491,17 @@ public class WebViewExample : MonoBehaviour
 }
 ```
 
-###### Input
+
+<!-- ------------------------------ -->
+#### Input
 
 There are various ways to handle input in Unity for Mixed Reality applications.
 
-* [MRTK 2.8 - Input Overview](/windows/mixed-reality/mrtk-unity/mrtk2/features/input/overview?view=mrtkunity-2022-05) (Recommended for MRTK 2.8 applications)
-* [MRTK 3.0 - Input Overview](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) (Recommended for MRTK 3 applications)
+* [MRTK 2.8 - Input Overview](/windows/mixed-reality/mrtk-unity/mrtk2/features/input/overview) - recommended for MRTK 2.8 applications.
+* [MRTK 3.0 - Input Overview](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) - recommended for MRTK 3 applications.
 * [Unity Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/index.html)
 
-Regardless of the input system used within your Unity application, interop code between the various application input events and the WebView plugin is required. This means translating those events (e.g., Pointer event) into a `WebViewMouseEventData` object and then forwarding those events to the plugin via the `IWithMouseEvent` interface:
+Regardless of the input system used within your Unity application, interop code between the various application input events and the WebView plugin is required. This means translating those events (such as Pointer events) into a `WebViewMouseEventData` object and then forwarding those events to the plugin via the `IWithMouseEvent` interface:
 
 ```C#
 public interface IWithMouseEvents : IWithInputEvents
