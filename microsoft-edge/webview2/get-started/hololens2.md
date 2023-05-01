@@ -40,9 +40,9 @@ A completed version of this Getting Started project is (⚠️ NOT YET ⚠️) a
 
 A completed version of this tutorial project is available in the **WebView2Samples** repo:
 
-* Sample name: **HoloLens2_Sample**
+* Sample name: **HoloLens2_GettingStarted**
 * Repo directory: [HoloLens2_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/HoloLens2_GettingStarted)
-* Unity project folder: **HoloLens2GetStartApp**
+* Unity project folder: **HoloLens2GetStartedApp**
 
 Follow the major Step sections in sequence, below.
 
