@@ -208,7 +208,7 @@ public class WebViewBrowser: MonoBehaviour
 
 1. Modify the scene hierarchy as follows:
    1. Under MixedRealitySceneContent, add a new input component (right-click menu > UI > Input Field - TextMeshPro). Note: this will automatically add a parent Canvas for the component.
-   1. Under the new Canvas, add a **two** new Button component (right-click menu > UI > Button - TextMeshPro).
+   1. Under the new Canvas, add **two** new Button components (right-click menu > UI > Button - TextMeshPro).
    1. Reorder the WebView component so that it is a child of the Canvas component.
 
 ![Add Components to Scene](hololens2-images/screenshot_unity_scene_hierarchy.png)
@@ -238,13 +238,13 @@ public class WebViewBrowser: MonoBehaviour
    1. Change **PosX**, **PosY**, **PosZ** to 242, 178, -5, respectively.
    1. Change **Width** & **Height** to 75, 30 respectively.
 
-![Update Back Button Properties](hololens2-images/screenshot_unity_gobutton_inspector.png)
+![Update Go Button Properties](hololens2-images/screenshot_unity_gobutton_inspector.png)
 
 1. Update the WebView's properties by selecting it in the Hierarchy pane, then making the following changes in the Inspector pane:
    1. Change **PosX**, **PosY**, **PosZ** to 0, -16, -5, respectively.
    1. Change **Scale** for X, Y, Z to 570, 340, 1 respectively.
 
-![Update Back Button Properties](hololens2-images/screenshot_unity_webview_transform_inspector.png)
+![Update WebView Properties](hololens2-images/screenshot_unity_webview_transform_inspector.png)
 
 1. Add background image to Canvas.
    1. Select the Canvas in the Hierarchy pane.
