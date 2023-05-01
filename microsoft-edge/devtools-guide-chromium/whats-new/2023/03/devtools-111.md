@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 111)
-description: "Remote debugging of Microsoft Edge, PWAs, and WebView2 controls on Xbox and HoloLens devices. Device Mode toolbar has emulation controls for themes and vision deficiencies. Performance tool unminifies file and function names while profiling. Styles tab easier to use in Focus Mode. Copy Selector Stats table from Performance tool. In Focus Mode, assistive tech announces tool moved to Quick View. And more."
+description: "Remote debugging of Microsoft Edge, PWAs, and WebView2 controls on Xbox and HoloLens 2 devices. Device Mode toolbar has emulation controls for themes and vision deficiencies. Performance tool unminifies file and function names while profiling. Styles tab easier to use in Focus Mode. Copy Selector Stats table from Performance tool. In Focus Mode, assistive tech announces tool moved to Quick View. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -13,17 +13,17 @@ ms.date: 03/15/2023
 
 
 <!-- ====================================================================== -->
-## Remote debugging of Microsoft Edge, PWAs, and WebView2 controls on Xbox and HoloLens devices
+## Remote debugging of Microsoft Edge, PWAs, and WebView2 controls on Xbox and HoloLens 2 devices
 
 <!-- Subtitle: Get the Remote Tools for Microsoft Edge app from the Microsoft Store to set up remote debugging today! -->
 
-The **Remote Tools for Microsoft Edge** app is now available on Xbox and HoloLens devices.  The **Remote Tools for Microsoft Edge** app is a plug-in for the **Windows Device Portal for Desktop** that enables remote debugging for tabs in Microsoft Edge, Progressive Web Apps (PWAs), and WebView2 controls.  By using remote debugging, you can run web content on a remote device and debug it right from your development machine.
+The **Remote Tools for Microsoft Edge** app is now available on Xbox and HoloLens 2 devices.  The **Remote Tools for Microsoft Edge** app is a plug-in for the **Windows Device Portal for Desktop** that enables remote debugging for tabs in Microsoft Edge, Progressive Web Apps (PWAs), and WebView2 controls.  By using remote debugging, you can run web content on a remote device and debug it right from your development machine.
 
 ![The Remote Tools for Microsoft Edge app in the Microsoft Store](./devtools-111-images/remote-tools-in-the-microsoft-store.png)
 
-With remote debugging enabled, you don't need to open DevTools on either HoloLens or Xbox devices any more.  Instead, you can connect to the remote Xbox or HoloLens device using the Device portal, open the `edge://inspect` page, and then select the target (tab, PWA, or WebView2 control) that you want to use with DevTools.
+With remote debugging enabled, you don't need to open DevTools on either HoloLens 2 or Xbox devices any more.  Instead, you can connect to the remote Xbox or HoloLens 2 device using the Device portal, open the `edge://inspect` page, and then select the target (tab, PWA, or WebView2 control) that you want to use with DevTools.
 
-To give us feedback on the remote debugging flow for Microsoft Edge, leave a comment in [Issue 136: Remote debugging Xbox and HoloLens devices is now available with the latest version of the Remote Tools for Microsoft Edge app](https://github.com/MicrosoftEdge/DevTools/issues/136).
+To give us feedback on the remote debugging flow for Microsoft Edge, leave a comment in [Issue 136: Remote debugging Xbox and HoloLens 2 devices is now available with the latest version of the Remote Tools for Microsoft Edge app](https://github.com/MicrosoftEdge/DevTools/issues/136).
 
 See also:
 * [Remotely debug Windows devices](../../../remote-debugging/windows.md)

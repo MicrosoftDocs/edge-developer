@@ -20,7 +20,7 @@ The WebView2 team is planning the following major efforts for future updates:
 
 * MacOS Preview
 * Xbox Preview
-* HoloLens Preview
+* HoloLens 2 Preview
 * Linux Preview
 
 

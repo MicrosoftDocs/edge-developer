@@ -83,7 +83,7 @@ Proceed to the next step to set up your Unity project for HoloLens 2 development
 <!-- ====================================================================== -->
 ## Step 3 - Set up Unity project for HoloLens 2 development
 
-Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. Follow the steps in the [Unity development for HoloLens - Mixed Reality](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2) guide to prepare your project for mixed reality development.
+Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. Follow the steps in the [Unity development for HoloLens 2 - Mixed Reality](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2) guide to prepare your project for mixed reality development.
 
 Once you have your Unity project ready for HoloLens 2 development, you'll need to configure MRTK in your project. Follow the instructions from the [MRTK documentation](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) to set up the Mixed Reality Toolkit in your Unity project.
 
@@ -319,7 +319,7 @@ To set up your remote connection:
 1. On the menu bar, select **Project > Properties > Configuration Properties > Debugging**.
 1. Click the **Debugger to launch** drop-down and then select **Remote Machine**.
 1. In the **Machine Name** field, enter the IP address of your device.
-    * You can find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**.
+    * You can find the IP address on your HoloLens 2 under **Settings > Network & Internet > Advanced Options**.
     * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
 
     ![Remote connection dialog in Visual Studio](hololens2-images/screenshot_visualstudio_remote_ip.png)
@@ -329,7 +329,7 @@ To set up your remote connection:
     * To build, deploy, and start debugging, select **Debug > Start debugging**.
     * To build and deploy without debugging, select **Build > Deploy Solution**.
 
-1. The first time you deploy an app to your HoloLens from your PC, you'll be prompted for a PIN. Follow the Pairing your device instructions below.
+1. The first time you deploy an app to your HoloLens 2 from your PC, you'll be prompted for a PIN. Follow the Pairing your device instructions below.
 
 ## Learn about WebView2 events and interactions in Unity
 
