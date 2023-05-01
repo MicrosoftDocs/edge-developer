@@ -1,12 +1,12 @@
 ---
 title: Get started with WebView2 in HoloLens 2 Unity apps
 description: Get started with WebView2 in HoloLens 2 Unity apps.
-author: MixedRealityTeam
-ms.author: tdb
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/17/2023
+ms.date: 05/01/2023
 ---
 # Get started with WebView2 in HoloLens 2 Unity apps (Preview)
 
@@ -16,24 +16,24 @@ ms.date: 04/17/2023
 In this tutorial, you:
 
 * Set up your development tools for creating HoloLens 2 Unity apps that use WebView2 to display web content.
-* Install the Mixed Reality Toolkit (MRTK) using the MRTK Feature Tool.
+* Install the Mixed Reality Toolkit (MRTK) using the Mixed Reality Feature Tool.
 * Create an initial Unity project for HoloLens 2 development.
 * Add the Microsoft Mixed Reality WebView plugin.
 * Configure a WebView2 prefab that displays webpage content in your HoloLens 2 app.
 * Learn about WebView2 concepts and interactions in Unity.
 
 > [!NOTE]
-> *This tutorial is for developers using WebView2 in immersive HoloLens 2 Unity applications. For WebView2-enabled 2D applications on HoloLens 2, refer to the [WinUI 2 (UWP) tutorial](winui2).*
+> *This tutorial is for developers using WebView2 in immersive HoloLens 2 Unity applications. For WebView2-enabled 2D applications on HoloLens 2, see [Get started with WebView2 in WinUI 2 (UWP) apps](./winui2.md).*
 
 You use the Unity game engine and Visual Studio to create your HoloLens 2 project. The Mixed Reality Toolkit (MRTK) provides essential components and features for developing mixed reality experiences, while the Microsoft Mixed Reality WebView plugin enables the integration of WebView2 functionality into your HoloLens 2 app.
 
 The MRTK is a Microsoft-driven open source project that accelerates the development of mixed reality applications in Unity. This toolkit provides a collection of scripts, components, and prefabs designed to help you create performant and intuitive mixed reality experiences for HoloLens 2 devices.
 
 > [!IMPORTANT]
-> WebView2 is only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](../../../hololens/hololens-update-hololens).
+> WebView2 is only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens.md).
+
 
 <!-- ------------------------------ -->
-
 #### Completed project
 
 A completed version of this Getting Started project is (⚠️ NOT YET ⚠️) available in the **WebView2Samples** repo. You can use the completed project (from the repo or from following the steps below) as a baseline to add more WebView2 functionality and other features to your HoloLens 2 Unity app.
@@ -46,8 +46,8 @@ A completed version of this tutorial project is available in the **WebView2Sampl
 
 Follow the major Step sections in sequence, below.
 
-<!-- ------------------------------ -->
 
+<!-- ------------------------------ -->
 #### About HoloLens 2, Unity, MRTK, and WebView2
 
 **HoloLens 2** is a groundbreaking, untethered holographic device, offering a hands-free and immersive mixed reality experience. It seamlessly overlays digital information onto the real world, rendering high-definition holograms that stay in place and respond naturally to interaction.
@@ -56,71 +56,84 @@ Follow the major Step sections in sequence, below.
 
 The **Mixed Reality Toolkit (MRTK)** is a Microsoft-driven open source project designed to accelerate the development of mixed reality applications in Unity. MRTK provides a collection of scripts, components, and prefabs specifically designed for building performant and intuitive mixed reality experiences on HoloLens 2 devices.
 
-In Unity, the **Microsoft Mixed Reality WebView** plugin can be installed via the **MRTK Feature Tool**. The WebView plugin for Unity simplifies the integration of WebView2 functionality into your HoloLens 2 app by wrapping the WebView2 control and automatically handling rendering and directing input to the WebView2 control. The plugin also manages interop between Unity and WebView2, enabling communication between JavaScript and Unity via messages and events.
+In Unity, the **Microsoft Mixed Reality WebView** plugin can be installed via the **Mixed Reality Feature Tool**. The WebView plugin for Unity simplifies the integration of WebView2 functionality into your HoloLens 2 app by wrapping the WebView2 control and automatically handling rendering and directing input to the WebView2 control. The plugin also manages interop between Unity and WebView2, enabling communication between JavaScript and Unity via messages and events.
 
 By combining HoloLens 2, Unity, MRTK, and WebView2, you can create immersive mixed reality experiences that seamlessly integrate web content.
+
 
 <!-- ====================================================================== -->
 ## Step 1 - Install Unity and Visual Studio
 
 This tutorial assumes you have Unity 2020.3 LTS or later and Visual Studio 2019 version 16.9 or later installed. Visual Studio 2017 isn't supported.
 
-Follow the [Mixed Reality tools installation guide](../../../windows/mixed-reality/develop/install-the-tools?tabs=unity) to set up your Unity and Visual Studio environment for HoloLens 2 development. These resources will guide you through the process of installing and configuring the necessary tools, including Visual Studio and the Universal Windows Platform development workload.
+Follow the [Mixed Reality tools installation guide](/windows/mixed-reality/develop/install-the-tools?tabs=unity) to set up your Unity and Visual Studio environment for HoloLens 2 development. These resources will guide you through the process of installing and configuring the necessary tools, including Visual Studio and the Universal Windows Platform development workload.
 
-Additionally, ensure that your development environment is set up for WebView2 by following the instructions on [Set up your Dev environment for WebView2](../how-to/machine-setup).
+Additionally, ensure that your development environment is set up for WebView2 by following the steps in [Set up your Dev environment for WebView2](../how-to/machine-setup.md).
 
 Once you have completed the setup, return to this page and continue with the next steps.
 
+
 <!-- ====================================================================== -->
-## Step 2 - Install MRTK and MRTK Feature Tool
+## Step 2 - Install MRTK and Mixed Reality Feature Tool
 
-1. To install the Mixed Reality Toolkit (MRTK) and the MRTK Feature Tool, first [Download the Mixed Reality Feature Tool](../../../windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) from the Microsoft Download Center. The MRTK Feature Tool simplifies the process of discovering, installing, and managing Mixed Reality features and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, refer to [this page](../../../windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) for more information.
+1. To install the Mixed Reality Toolkit (MRTK) and the Mixed Reality Feature Tool, first [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center. The Mixed Reality Feature Tool<!--todo: and MRTK? --> simplifies the process of discovering, installing, and managing Mixed Reality features and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
 
-1. Run the downloaded MRTK Feature Tool executable and follow the prompts to install the MRTK and any additional required packages for HoloLens 2 development. The Feature Tool allows you to select and install the appropriate versions of MRTK, along with other Mixed Reality features, directly into your Unity project.
+1. Run the downloaded Mixed Reality Feature Tool executable and follow the prompts to install the MRTK and any additional required packages for HoloLens 2 development. The Mixed Reality Feature Tool allows you to select and install the appropriate versions of MRTK, along with other Mixed Reality features, directly into your Unity project.
 
 Proceed to the next step to set up your Unity project for HoloLens 2 development.
+
 
 <!-- ====================================================================== -->
 ## Step 3 - Set up Unity project for HoloLens 2 development
 
-Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. Follow the steps in the [Unity development for HoloLens 2 - Mixed Reality](../../../windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2) guide to prepare your project for mixed reality development.
+Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. To prepare your project for mixed reality development, follow the steps in [Unity development for HoloLens 2 - Mixed Reality](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2).
 
-Once you have your Unity project ready for HoloLens 2 development, you'll need to configure MRTK in your project. Follow the instructions from the [MRTK documentation](../../../windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) to set up the Mixed Reality Toolkit in your Unity project.
+Once you have your Unity project ready for HoloLens 2 development, you'll need to configure MRTK in your project. Follow the instructions from the [MRTK documentation](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) to set up the Mixed Reality Toolkit in your Unity project.
 
-After you've installed the MRTK and MRTK Feature Tool, you should see the MRTK assets and prefabs in your Unity project, ready for use.
+After you've installed the MRTK and Mixed Reality Feature Tool, you should see the MRTK assets and prefabs in your Unity project, ready for use.
+
 
 <!-- ====================================================================== -->
-## Step 4 - Install Unity WebView plugin via MRTK Feature Tool
+## Step 4 - Install Unity WebView plugin via Mixed Reality Feature Tool
 
-In this step, you'll use the MRTK Feature Tool to install the "Microsoft Mixed Reality WebView" plugin that contains a specific version of the WebView2 NuGet package, which is compatible with HoloLens 2.
+In this step, you'll use the Mixed Reality Feature Tool to install the "Microsoft Mixed Reality WebView" plugin that contains a specific version of the WebView2 NuGet package, which is compatible with HoloLens 2.
 
-1. Launch the MRTK Feature Tool you installed in Step 2. You should see the start page with options to configure settings, view documentation, and select the gear button to show the **Settings** pane.
+1. Launch the Mixed Reality Feature Tool you installed in Step 2. You should see the start page with options to configure settings, view documentation, and select the gear button to show the **Settings** pane.
 
-    ![MRTK Feature Tool start page](hololens2-images/screenshot_mrtk_feature_tool_start_page.png)
-1. From the **Settings** pane, select the **Feature** tab, then select the **Show preview releases** checkbox to enable it. Then click **Ok** to return to the starting page. **Note:** In the latest version of MRTK Feature Tool, the this option may be pre-selected.
+   ![Mixed Reality Feature Tool start page](./hololens2-images/screenshot_mrtk_feature_tool_start_page.png)
 
-    ![MRTK Feature Tool settings](hololens2-images/screenshot_feature_enable_preview_releases.png)
+1. From the **Settings** pane, select the **Feature** tab, then select the **Show preview releases** checkbox to enable it. Then click **Ok** to return to the starting page. **Note:** In the latest version of Mixed Reality Feature Tool, this option might be pre-selected.
+
+   ![Mixed Reality Feature Tool settings](./hololens2-images/screenshot_feature_enable_preview_releases.png)
+
 1. Click the **Start** button to begin discovering feature packages.
 
-1. Point MRTK Feature Tool to your Unity project by clicking the **ellipsis** button to the right of the project path field. Select your Unity project folder and click **Open**.
+1. Point Mixed Reality Feature Tool to your Unity project by clicking the **ellipsis** button to the right of the project path field. Select your Unity project folder and click **Open**.
 
-   ![Select the Unity project](hololens2-images/screenshot_feature_tool_select_unity_project.png)
+   ![Select the Unity project](./hololens2-images/screenshot_feature_tool_select_unity_project.png)
+
 1. Click the **Discover Features** button to proceed to the next page.
 
 1. In the **Discover Features** pane, expand the **Other features** section. From the expanded list, locate **Microsoft Mixed Reality WebView** plugin. Check the box next to the plugin to mark it for installation. (By default the latest version will be selected.)
 
-   ![MRTK Feature Tool with Microsoft Mixed Reality WebView plugin selected](hololens2-images/screenshot_mrtk_webview2_selected.png)
+   ![Mixed Reality Feature Tool with Microsoft Mixed Reality WebView plugin selected](./hololens2-images/screenshot_mrtk_webview2_selected.png)
+
 1. Click **Get Features** to download the required packages.
+
 1. Once the packages are downloaded, click the **Import** button to import to make a final review of the changes.
 
-   ![MRTK Feature Tool with import features](hololens2-images/screenshot_feature_tool_import_features.png)
+   ![Mixed Reality Feature Tool with import features](./hololens2-images/screenshot_feature_tool_import_features.png)
+
 1. On the **Review and Approve** pane you'll see the packages that will be copied into your project, and the modifications to your project manifest.json file. Click **Approve** to finalize the changes.
 
-   ![MRTK Feature Tool with review & approve](hololens2-images/screenshot_feature_tool_review.png)
+   ![Mixed Reality Feature Tool with review & approve](./hololens2-images/screenshot_feature_tool_review.png)
+
 1. Return to your Unity project, and you should see the WebView2 prefab in your project's **Assets** folder.
+
 Now that the Microsoft Mixed Reality WebView plugin is installed and imported, you're ready to set up the WebView2 prefab in your Unity scene. Proceed to Step 5 for instructions on how to do this.
 
-See the [MRTK setup page](../../../windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) for more information.
+For more information, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
+
 
 <!-- ====================================================================== -->
 ## Step 5 - Set up the WebView2 prefab in Unity scene
@@ -133,7 +146,8 @@ See the [MRTK setup page](../../../windows/mixed-reality/develop/unity/welcome-t
 
 1. In the **Inspector** window, you can change the initial URL loaded by the WebView2 prefab. To do this, locate the "Current URL" property and enter the desired URL. By default, the prefab loads `https://www.microsoft.com`.
 
-![Edit Current URL for WebView prefab](hololens2-images/screenshot_unity_inspector_change_url.png)
+![Edit Current URL for WebView prefab](./hololens2-images/screenshot_unity_inspector_change_url.png)
+
 
 <!-- ====================================================================== -->
 ## Step 6 - Configure WebView2 settings and properties
@@ -145,7 +159,9 @@ To view the `WebView` script you can double-click on it in the Inspector window.
 Now that you've reviewed the `WebView` code, let's extend the functionality of our sample. To do that, we'll create a new script that derives from `WebView`.
 
 1. In the Inspector window for WebView, click **Add Component**, select **New script**, and type `WebViewBrowser`, click **Create and add**. You new component will be added to the Inspector window.
+
 1. Double-click on the `WebViewBrowser` script in the Inspect window to edit the script.
+
 1. Replace the contents of that file with the code below.
 
 ```C#
@@ -211,40 +227,40 @@ public class WebViewBrowser: MonoBehaviour
    1. Under the new Canvas, add **two** new Button components (right-click menu > UI > Button - TextMeshPro).
    1. Reorder the WebView component so that it is a child of the Canvas component.
 
-![Add Components to Scene](hololens2-images/screenshot_unity_scene_hierarchy.png)
+   ![Add Components to Scene](./hololens2-images/screenshot_unity_scene_hierarchy.png)
 
 1. Update the Canvas properties by selecting it in the Hierarchy pane, then making the following changes in the Inspector pane:
    1. Change **Width** & **Height** to 600, 400 respectively.
    1. Change **Scale** for X, Y, Z to 0.001, 0.001, 0.001.
 
-![Update Canvas Properties](hololens2-images/screenshot_unity_canvas_inspector.png)
+   ![Update Canvas Properties](./hololens2-images/screenshot_unity_canvas_inspector.png)
 
 1. Update the input field's properties by selecting it in the Hierarchy pane, then making the following changes in the Inspector pane:
    1. Change **Name** to "AddressWell (TMP)"
    1. Change **PosX**, **PosY**, **PosZ** to -2, 178, -5, respectively.
    1. Change **Width** & **Height** to 390, 300 respectively.
 
-![Update Input Field Properties](hololens2-images/screenshot_unity_addresswell_inspector.png)
+   ![Update Input Field Properties](./hololens2-images/screenshot_unity_addresswell_inspector.png)
 
 1. Update the first button's properties by selecting it in the Hierarchy pane, then making the following changes in the Inspector pane:
    1. Change **Name** to "Back Button"
    1. Change **PosX**, **PosY**, **PosZ** to -248, 178, -5, respectively.
    1. Change **Width** & **Height** to 75, 30 respectively.
 
-![Update Back Button Properties](hololens2-images/screenshot_unity_backbutton_inspector.png)
+   ![Update Back Button Properties](./hololens2-images/screenshot_unity_backbutton_inspector.png)
 
 1. Update the second button's properties by selecting it in the Hierarchy pane, then making the following changes in the Inspector pane:
    1. Change **Name** to "Go Button"
    1. Change **PosX**, **PosY**, **PosZ** to 242, 178, -5, respectively.
    1. Change **Width** & **Height** to 75, 30 respectively.
 
-![Update Go Button Properties](hololens2-images/screenshot_unity_gobutton_inspector.png)
+   ![Update Go Button Properties](./hololens2-images/screenshot_unity_gobutton_inspector.png)
 
 1. Update the WebView's properties by selecting it in the Hierarchy pane, then making the following changes in the Inspector pane:
    1. Change **PosX**, **PosY**, **PosZ** to 0, -16, -5, respectively.
    1. Change **Scale** for X, Y, Z to 570, 340, 1 respectively.
 
-![Update WebView Properties](hololens2-images/screenshot_unity_webview_transform_inspector.png)
+   ![Update WebView Properties](./hololens2-images/screenshot_unity_webview_transform_inspector.png)
 
 1. Add background image to Canvas.
    1. Select the Canvas in the Hierarchy pane.
@@ -252,28 +268,29 @@ public class WebViewBrowser: MonoBehaviour
    1. Type 'Image' and select the top result in the list.
    1. Click on the **Color** well for the image and choose a background color. In our example, we chose a gray color. (This is simply to show some contrast between the different controls in the canvas.)
 
-![Change Back Button Text](hololens2-images/screenshot_unity_canvasimage_inspector.png)
+   ![Change Back Button Text](./hololens2-images/screenshot_unity_canvasimage_inspector.png)
 
 1. Select **Text (TMP)** under **Back Button** in the Hierarchy pane and change the **Text Input** to *Back* in the Inspector pane.
 
-![Change Go Button Text](hololens2-images/screenshot_unity_backbutton_text.png)
+   ![Change Go Button Text](./hololens2-images/screenshot_unity_backbutton_text.png)
 
 1. Repeat the above process for **Go Button**, substituting *Go* as the text.
 
-You should now have a scene which looks similar to the follow:
+   You should now have a scene which looks similar to the follow:
 
-![Current Scene](hololens2-images/screenshot_unity_completed_scene.png)
+   ![Current Scene](./hololens2-images/screenshot_unity_completed_scene.png)
 
 1. Connect WebViewBrowser prefabs.
     1. Select the WebViewBrowser.
     1. Drag **Back Button** from the Hierarchy pane into the **Back Button** variable field for the WebView Browser in the Inspector.
     1. Drag **Go Button** from the Hierarchy pane into the **Go Button** variable field for the WebView Browser in the Inspector.
 
-![Connect WebView Browser Prefabs](hololens2-images/screenshot_unity_webview_connect_prefabs.png)
+   ![Connect WebView Browser Prefabs](./hololens2-images/screenshot_unity_webview_connect_prefabs.png)
 
 1. Test is out in the Editor. Now that everything is wired up in your scene, you should be able to play the scene inside Unity. Try testing out the scene by entering a new URL into the field (must be a complete URL), then pressing the **Go** button. The **Back** button should work, as well.
 
 > Note: input within the WebView itself will not work without additional changes. This is a topic discussed later in the document.
+
 
 <!-- ====================================================================== -->
 ## Step 7 - Build and deploy the HoloLens 2 app with WebView2
@@ -281,8 +298,11 @@ You should now have a scene which looks similar to the follow:
 Now that we have a basic web browser working in Unity, we can build and deploy it to a HoloLens 2 device.
 
 1. In Unity, open the **Build Settings** dialog (**File > Build Settings**).
+
 1. Ensure that **Universal Windows Platform** is the selected platform.
+
 1. Click **Add Open Scene** to add our sample scene to the list of scenes in the build.
+
 1. Under Universal Windows Platform, configure the build settings:
     * **Architecture**: Intel 64-bit
     * **Build Type**: D3D Project
@@ -291,28 +311,33 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
     * **Build and Run on**: Local Machine
     * **Build configuration**: Release
 
-![Unity Build Settings](hololens2-images/screenshot_unity_build_settings.png)
+   ![Unity Build Settings](./hololens2-images/screenshot_unity_build_settings.png)
 
 1. Click **Build** to generate the IL2CPP build. This will open a file dialog to select the folder for the build files. We recommend you create a new folder (e.g., 'Build') under your project directory for this purpose. Once you select your build folder in the file dialog, Unity will begin generating the build. This will take several minutes.
 
 1. When this operation completes, Unity should launch a new File Explorer with the output folder selected. If not, you can navigate to it manually.
+
 1. Under your build folder, you will find a Visual Studio solution file (.sln). Double-click this file to open it in Visual Studio.
+
 1. In Visual Studio, select the Solution Configuration (e.g., **Release**). Then set the Platform to **ARM64**.
 
-![Visual Studio Solution Config & Platform](hololens2-images/screenshot_visualstudio_buildconfig.png)
+![Visual Studio Solution Config & Platform](./hololens2-images/screenshot_visualstudio_buildconfig.png)
 
-1. Ensure that **Developer Mode** is enabled on your PC and HoloLens 2 device. See the following documentation for information on [Enabling Developer Mode](../../../windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#enabling-developer-mode).
+1. Ensure that **Developer Mode** is enabled on your PC and HoloLens 2 device. See the following documentation for information on [Enabling Developer Mode](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#enabling-developer-mode).
+
 1. Click the deployment target drop-down and then do one of the following:
 
     * If you're building and deploying via Wi-Fi, select **Remote Machine**.
 
-      ![Visual Studio Select Remote Machine](hololens2-images/screenshot_visualstudio_select_remote.png)
+      ![Visual Studio Select Remote Machine](./hololens2-images/screenshot_visualstudio_select_remote.png)
 
     * If you're building and deploying via USB, select **Device**.
 
-      ![Visual Studio Select Device](hololens2-images/screenshot_visualstudio_select_device.png)
+      ![Visual Studio Select Device](./hololens2-images/screenshot_visualstudio_select_device.png)
 
-### Remote Connection
+
+<!-- ------------------------------ -->
+#### Remote Connection
 
 To set up your remote connection:
 
@@ -322,7 +347,7 @@ To set up your remote connection:
     * You can find the IP address on your HoloLens 2 under **Settings > Network & Internet > Advanced Options**.
     * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
 
-    ![Remote connection dialog in Visual Studio](hololens2-images/screenshot_visualstudio_remote_ip.png)
+    ![Remote connection dialog in Visual Studio](./hololens2-images/screenshot_visualstudio_remote_ip.png)
 
 1. Set the **Authentication Mode** to **Universal (Unencrypted protocol)**.
 1. Build, deploy, and debug your app based on your needs:
@@ -367,9 +392,12 @@ public class WebViewExample : MonoBehaviour, IWithPostMessage
 }
 ```
 
+<!-- ====================================================================== -->
 ## Additional considerations for WebView2 on HoloLens 2
 
-### Limitations and known issues
+
+<!-- ------------------------------ -->
+#### Limitations and known issues
 
 When developing a HoloLens 2 Unity app with WebView2, be aware of some limitations and known issues:
 
@@ -379,14 +407,17 @@ When developing a HoloLens 2 Unity app with WebView2, be aware of some limitatio
 * **User interactions**: Unlike native HoloLens 2 slates, WebView2 is best interacted with using far-interaction hand rays. Touch-to-swipe and scroll interactions might not be supported.
 * **Performance**: Complex websites with heavy use of JavaScript or advanced rendering may impact system performance or the host application's framerate. For general performance-related limitations and recommendations, refer to the [performance guidelines for Mixed Reality](https://learn.microsoft.com/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality). Also, please see the [Performance optimization](#performance-optimization) section below.
 
-### Navigation and Input
 
-#### Navigation
+<!-- ------------------------------ -->
+#### Navigation and Input
+
+
+###### Navigation
 
 In step 6, we touched on some navigation methods. In this section, we'll expand on what we learned.
 
 **`IWebView` Interface**
-The `IWebView` interface exposes a few methods, events, and properties related to page navigation. The main functionality exposed here is the ability for developers to navigate to a given URL (i.e., `Load(Uri url)`).
+The `IWebView` interface exposes a few methods, events, and properties related to page navigation. The main functionality exposed here is the ability for developers to navigate to a given URL, by using `Load(Uri url)`:
 
 ```C#
 public interface IWebView
@@ -404,7 +435,7 @@ public interface IWebView
 ```
 
 **`IWithBrowserHistory` Interface**
-The `IWithBrowserHistory` interface exposes a few methods and events related to page navigation. This mainly allows developers to navigate forward and backward, as you would expect with a typical web-browsing experience.
+The `IWithBrowserHistory` interface exposes a few methods and events related to page navigation. This mainly allows developers to navigate forward and backward, as you would expect with a typical web-browsing experience:
 
 ```C#
 public interface IWithBrowserHistory : IWebView
@@ -423,7 +454,7 @@ public interface IWithBrowserHistory : IWebView
 
 The `SetVirtualHostNameToFolderMapping` method in WebView2 enables mapping between a virtual host name and a folder path, making it accessible to websites using that host name. This method maps a local domain name to a local folder so that the WebView2 control loads content from the specified local folder when attempting to access a resource for that domain.
 
-The WebView plugin exposes this functionality through the `IWithVirtualHost` interface, which has a single method, `SetVirtualHostMapping(string hostName, string folderPath)`.
+The WebView plugin exposes this functionality through the `IWithVirtualHost` interface, which has a single method, `SetVirtualHostMapping(string hostName, string folderPath)`:
 
 ```C#
 public interface IWithVirtualHost: IWebView
@@ -434,7 +465,7 @@ public interface IWithVirtualHost: IWebView
 
 To use this method, set `hostName` to any valid URL conforming string, such as `webview2.sample`. `folderPath` can be an absolute path or a path relative to the application's working directory, like `Assets\Html`.
 
-Assuming we have an HTML file called `demo.html` under `Assets\Html`, the following code snippet demonstrates loading `demo.html` with the WebView plugin.
+Assuming we have an HTML file called `demo.html` under `Assets\Html`, the following code snippet demonstrates loading `demo.html` with the WebView plugin:
 
 ```C#
 using Microsoft.MixedReality.WebView;
@@ -456,15 +487,15 @@ public class WebViewExample : MonoBehaviour
 }
 ```
 
-#### Input
+###### Input
 
 There are various ways to handle input in Unity for Mixed Reality applications.
 
-* [MRTK 2.8 - Input Overview](../../../windows/mixed-reality/mrtk-unity/mrtk2/features/input/overview?view=mrtkunity-2022-05) (Recommended for MRTK 2.8 applications)
-* [MRTK 3.0 - Input Overview](../../../windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) (Recommended for MRTK 3 applications)
+* [MRTK 2.8 - Input Overview](/windows/mixed-reality/mrtk-unity/mrtk2/features/input/overview?view=mrtkunity-2022-05) (Recommended for MRTK 2.8 applications)
+* [MRTK 3.0 - Input Overview](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) (Recommended for MRTK 3 applications)
 * [Unity Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/index.html)
 
-Regardless of the input system used within your Unity application, interop code between the various application input events and the WebView plugin is required. This means translating those events (e.g., Pointer event) into a `WebViewMouseEventData` object and then forwarding those events to the plugin via the `IWithMouseEvent` interface.
+Regardless of the input system used within your Unity application, interop code between the various application input events and the WebView plugin is required. This means translating those events (e.g., Pointer event) into a `WebViewMouseEventData` object and then forwarding those events to the plugin via the `IWithMouseEvent` interface:
 
 ```C#
 public interface IWithMouseEvents : IWithInputEvents
@@ -511,18 +542,28 @@ In the above example, pointer-down events are converted into `WebViewMouseEventD
 > [!NOTE]
 > In the example above, `ConvertToWebViewSpace` is intentionally not implemented.
 
-### Performance optimization
+
+<!-- ------------------------------ -->
+#### Performance optimization
 
 Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial for a smooth user experience. Here are some recommendations:
 
 * **Limit the number of WebView2 instances**: We suggest using only one instance of WebView2 within a Unity app. Reuse the same instance or tear down and create a new one as needed. Keep in mind that removing the WebView prefab from the scene may not destroy the underlying WebView2 instance. You must call the `Destroy()` method on the game object to destroy it properly.
+
 * **Use TrySuspendAsync API**: When the WebView2 is not being presented to the user, use the `TrySuspendAsync` API to reduce memory usage. Note that you will need to get the native WebView2 instance to call this API (⚠️ this is TBD, and we will update this section accordingly ⚠️).
-* **Apply general Unity optimization techniques**: Utilize standard Unity optimization methods, such as occlusion culling or limiting the update rate, to improve WebView2 performance. For more information, refer to the [Performance recommendations for Unity in Mixed Reality](../../../windows/mixed-reality/develop/unity/performance-recommendations-for-unity?tabs=openxr).
+
+* **Apply general Unity optimization techniques**: Utilize standard Unity optimization methods, such as occlusion culling or limiting the update rate, to improve WebView2 performance. For more information, refer to the [Performance recommendations for Unity in Mixed Reality](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity?tabs=openxr).
+
 * **Profile and monitor WebView2 performance**: There are several ways to profile the performance of a HoloLens 2 Unity application:
+
   * **Unity Profiler**: A built-in tool in Unity that allows you to measure and optimize the performance of your application on various platforms, including HoloLens 2.
+
   * **Visual Profiler**: A feature of the Mixed Reality Toolkit (MRTK) that provides an in-application view of your application's performance.
+
   * **PIX**: A performance tuning and debugging tool for Windows and Xbox that can also be used to profile Unity applications on HoloLens 2.
 
+
+<!-- ====================================================================== -->
 ## See also
 
-* [Get started with WebView2 in WinUI 2 (UWP) apps](winui2)
+* [Get started with WebView2 in WinUI 2 (UWP) apps](./winui2.md)
