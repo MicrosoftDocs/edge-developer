@@ -354,7 +354,7 @@ See also:
 <!-- ------------------------------ -->
 #### Xbox, HoloLens, and XAML limitations
 
-This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered for future releases.
+This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in WinUI 3. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered for future releases.
 
 
 <!-- ------------------------------ -->
