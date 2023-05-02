@@ -258,7 +258,7 @@ Now you are ready to add WebView2 code to the project.  First, add a namespace r
 <!-- ====================================================================== -->
 ## Step 7 - Build and run the project containing the WebView2 control
 
-1. Click **Debug** > **Start Debugging** (**F5**).  The app window opens, briefly showing the WebView2 WebUI grid:
+1. Click **Debug** > **Start Debugging** (**F5**).  (If building for HoloLens 2, see [Using Visual Studio to deploy and debug](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2)). The app window opens, briefly showing the WebView2 WebUI grid:
 
    ![During debugging, the WebView2 WebUI grid briefly appears](media/winui2-getting-started-webview2-grid.png)
 
