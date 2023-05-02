@@ -74,7 +74,7 @@ Once you have completed the setup, return to this page and continue with the nex
 <!-- ====================================================================== -->
 ## Step 2 - Set up Unity project for HoloLens 2 development
 
-Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. To prepare your project for mixed reality development, follow the steps in [Unity development for HoloLens 2](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2) in the Mixed Reality documentation.
+Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. To prepare your project for mixed reality development, follow the steps in [Unity development for HoloLens 2](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2) in the Mixed Reality documentation. For a step-by-step walkthrough of configuring a Unity project refer to [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk)
 
 Once you have your Unity project ready for HoloLens 2 development, you'll need to configure MRTK in your project.  To set up the Mixed Reality Toolkit in your Unity project, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
 
