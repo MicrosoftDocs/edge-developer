@@ -36,7 +36,7 @@ The MRTK is a Microsoft-driven open source project that accelerates the developm
 <!-- ------------------------------ -->
 #### Completed project
 
-A completed version of this Getting Started project is (⚠️ NOT YET ⚠️) available in the **WebView2Samples** repo. You can use the completed project (from the repo or from following the steps below) as a baseline to add more WebView2 functionality and other features to your HoloLens 2 Unity app.
+A completed version of this Getting Started project is available in the **WebView2Samples** repo. You can use the completed project (from the repo or from following the steps below) as a baseline to add more WebView2 functionality and other features to your HoloLens 2 Unity app.
 
 A completed version of this tutorial project is available in the **WebView2Samples** repo:
 
