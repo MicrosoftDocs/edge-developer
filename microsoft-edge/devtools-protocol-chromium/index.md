@@ -144,7 +144,7 @@ The following Reference sections are for Remote Tools for Microsoft Edge.
 
 ## /msedge/json/deviceinfo
 
-Provides information about the Windows PC or HoloLens device connected for remote debugging.
+Provides information about the Windows PC or HoloLens 2 device connected for remote debugging.
 
 **Parameters**
 
