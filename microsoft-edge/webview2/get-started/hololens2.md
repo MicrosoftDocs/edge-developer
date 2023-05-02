@@ -582,7 +582,7 @@ Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial f
 
   * **Visual Profiler**: A feature of the Mixed Reality Toolkit (MRTK) that provides an in-application view of your application's performance.
 
-  * **PIX**: A performance tuning and debugging tool for Windows and Xbox that can also be used to profile Unity applications on HoloLens 2.
+  * **PIX**: A performance tuning and debugging tool for Windows that can also be used to profile Unity applications on HoloLens 2.
 
 
 <!-- ====================================================================== -->
