@@ -10,8 +10,12 @@ ms.date: 05/01/2023
 ---
 # Get started with WebView2 in HoloLens 2 Unity apps (Preview)
 
-> [!NOTE]
-> WebView2 on HoloLens 2 and the WebView Unity plugin are both in Preview and are subject to change before general availability.
+This tutorial is for developers using WebView2 in immersive HoloLens 2 Unity applications.  WebView2 on HoloLens 2 and the WebView Unity plugin are both in Preview and are subject to change before general availability.
+
+WebView2 is only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
+
+For WebView2-enabled 2D applications on HoloLens 2, see [Get started with WebView2 in WinUI 2 (UWP) apps](./winui2.md).
+
 
 In this tutorial, you:
 
@@ -21,16 +25,6 @@ In this tutorial, you:
 * Add the Microsoft Mixed Reality WebView plugin.
 * Configure a WebView2 prefab that displays webpage content in your HoloLens 2 app.
 * Learn about WebView2 concepts and interactions in Unity.
-
-> [!NOTE]
-> *This tutorial is for developers using WebView2 in immersive HoloLens 2 Unity applications. For WebView2-enabled 2D applications on HoloLens 2, see [Get started with WebView2 in WinUI 2 (UWP) apps](./winui2.md).*
-
-You use the Unity game engine and Visual Studio to create your HoloLens 2 project. The Mixed Reality Toolkit (MRTK) provides essential components and features for developing mixed reality experiences, while the Microsoft Mixed Reality WebView plugin enables the integration of WebView2 functionality into your HoloLens 2 app.
-
-The MRTK is a Microsoft-driven open source project that accelerates the development of mixed reality applications in Unity. This toolkit provides a collection of scripts, components, and prefabs designed to help you create performant and intuitive mixed reality experiences for HoloLens 2 devices.
-
-> [!IMPORTANT]
-> WebView2 is only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
 
 
 <!-- ------------------------------ -->
@@ -51,6 +45,10 @@ Follow the major Step sections in sequence, below.
 #### About HoloLens 2, Unity, MRTK, and WebView2
 
 **HoloLens 2** is a groundbreaking, untethered holographic device, offering a hands-free and immersive mixed reality experience. It seamlessly overlays digital information onto the real world, rendering high-definition holograms that stay in place and respond naturally to interaction.
+
+You use the Unity game engine and Visual Studio to create your HoloLens 2 project. The Mixed Reality Toolkit (MRTK) provides essential components and features for developing mixed reality experiences, while the Microsoft Mixed Reality WebView plugin enables the integration of WebView2 functionality into your HoloLens 2 app.
+
+The MRTK is a Microsoft-driven open source project that accelerates the development of mixed reality applications in Unity. This toolkit provides a collection of scripts, components, and prefabs designed to help you create performant and intuitive mixed reality experiences for HoloLens 2 devices.
 
 **Unity**, a versatile game engine, is a popular choice for creating 3D applications, including mixed reality experiences for HoloLens 2 devices, due to its extensive features and robust capabilities for AR/VR/MR.
 
@@ -104,21 +102,21 @@ In this step, you'll use the Mixed Reality Feature Tool to install the "Microsof
 
 1. Launch the Mixed Reality Feature Tool (which you installed above). The start page of the Mixed Reality Feature Tool opens, containing options to configure settings, and view documentation:
 
-   ![The Configure Settings button in the Mixed Reality Feature Tool](./hololens2-images/screenshot_mrtk_feature_tool_start_page.png)
+   ![The Configure Settings button in the Mixed Reality Feature Tool](./hololens2-images/mrtk_feature_tool_start_page.png)
 
 2. Click the gear button.  The **Settings** pane opens.
 
 3. Click the **Feature** tab, and then make sure the **Show preview releases** checkbox is selected:
 
-   ![the Feature tab in Settings for the Mixed Reality Feature Tool](./hololens2-images/screenshot_feature_enable_preview_releases.png)
+   ![the Feature tab in Settings for the Mixed Reality Feature Tool](./hololens2-images/feature_enable_preview_releases.png)
 
 4. Click the **Ok** button to return to the starting page.
 
 5. Click the **Start** button to begin discovering feature packages.
 
-6. Point the Mixed Reality Feature Tool to your Unity project.  To do this, click the **Browse for the project folder** (**...**) button to the right of the project path field:
+6. Point the Mixed Reality Feature Tool to your Unity project.  To do this, click the **Browse for the project folder** (**...**) button to the right of the **Project Path** field:
 
-   ![Select the Unity project in the Mixed Reality Feature Tool](./hololens2-images/screenshot_feature_tool_select_unity_project.png)
+   ![Select the Unity project in the Mixed Reality Feature Tool](./hololens2-images/feature_tool_select_unity_project.png)
 
 7. In the file selection dialog, select your Unity project folder, and then click the **Open** button.
 
@@ -126,7 +124,7 @@ In this step, you'll use the Mixed Reality Feature Tool to install the "Microsof
 
 9. In the **Discover Features** page, expand the **Other features** section, and then select the **Microsoft Mixed Reality WebView** checkbox:
 
-   ![The Discover Features pane in the Microsoft Mixed Reality WebView feature](./hololens2-images/screenshot_mrtk_webview2_selected.png)
+   ![The Discover Features pane in the Microsoft Mixed Reality WebView feature](./hololens2-images/mrtk_webview2_selected.png)
 
    This marks this plugin for installation. In the version dropdown, by default, the latest version of the plugin is selected.
 
@@ -134,11 +132,11 @@ In this step, you'll use the Mixed Reality Feature Tool to install the "Microsof
 
 11. Once the packages are downloaded, click the **Import** button:
 
-   ![The Import Features pane in the Mixed Reality Feature Tool](./hololens2-images/screenshot_feature_tool_import_features.png)
+   ![The Import Features pane in the Mixed Reality Feature Tool](./hololens2-images/feature_tool_import_features.png)
 
 12. On the **Review and Approve** page, inspect the modifications that will be made to your project `manifest.json` file, and inspect the list of files (such as `.tgz` packages) that will be copied into your project:
 
-   ![The Reivew and Approve pane in the Mixed Reality Feature Tool](./hololens2-images/screenshot_feature_tool_review.png)
+   ![The Review and Approve pane in the Mixed Reality Feature Tool](./hololens2-images/feature_tool_review.png)
 
 13. Click the **Approve** button to finalize the changes.
 
@@ -162,7 +160,7 @@ Now that the Microsoft Mixed Reality WebView plugin is installed and imported, s
 
 1. In the **Inspector** window, you can change the initial URL loaded by the WebView2 prefab. To do this, locate the "Current URL" property and enter the desired URL. By default, the prefab loads `https://www.microsoft.com`.
 
-![The Current URL input field for WebView prefab in Unity's Inspector](./hololens2-images/screenshot_unity_inspector_change_url.png)
+![The Current URL input field for WebView prefab in Unity's Inspector](./hololens2-images/unity_inspector_change_url.png)
 
 
 <!-- ====================================================================== -->
@@ -239,44 +237,44 @@ public class WebViewBrowser: MonoBehaviour
 ```
 
 1. Modify the scene hierarchy as follows:
-   1. Under MixedRealitySceneContent, add a new input component (right-click menu > UI > Input Field - TextMeshPro). Note: this will automatically add a parent Canvas for the component.
+   1. Under MixedRealitySceneContent, add a new input component (right-click menu > UI > Input Field - TextMeshPro). This will automatically add a parent Canvas for the component.
    1. Under the new Canvas, add **two** new Button components (right-click menu > UI > Button - TextMeshPro).
    1. Reorder the WebView component so that it is a child of the Canvas component.
 
-   ![Updated scene hiearchy with new components in Unity](./hololens2-images/screenshot_unity_scene_hierarchy.png)
+   ![Updated scene hiearchy with new components in Unity](./hololens2-images/unity_scene_hierarchy.png)
 
 1. Update the Canvas properties by selecting it in the Hierarchy pane, then making the following changes in the Inspector pane:
    1. Change **Width** & **Height** to 600, 400 respectively.
    1. Change **Scale** for X, Y, Z to 0.001, 0.001, 0.001.
 
-   ![Updated Canvas properties in Unity's Inspector](./hololens2-images/screenshot_unity_canvas_inspector.png)
+   ![Updated Canvas properties in Unity's Inspector](./hololens2-images/unity_canvas_inspector.png)
 
 1. Update the input field's properties by selecting it in the Hierarchy pane, then making the following changes in the Inspector pane:
    1. Change **Name** to "AddressWell (TMP)"
    1. Change **PosX**, **PosY**, **PosZ** to -2, 178, -5, respectively.
    1. Change **Width** & **Height** to 390, 300 respectively.
 
-   ![Updated Input Field properties in Unity's Inspector](./hololens2-images/screenshot_unity_addresswell_inspector.png)
+   ![Updated Input Field properties in Unity's Inspector](./hololens2-images/unity_addresswell_inspector.png)
 
 1. Update the first button's properties by selecting it in the Hierarchy pane, then making the following changes in the Inspector pane:
    1. Change **Name** to "Back Button"
    1. Change **PosX**, **PosY**, **PosZ** to -248, 178, -5, respectively.
    1. Change **Width** & **Height** to 75, 30 respectively.
 
-   ![Updated Back Button properties in Unity's Inspector](./hololens2-images/screenshot_unity_backbutton_inspector.png)
+   ![Updated Back Button properties in Unity's Inspector](./hololens2-images/unity_backbutton_inspector.png)
 
 1. Update the second button's properties by selecting it in the Hierarchy pane, then making the following changes in the Inspector pane:
    1. Change **Name** to "Go Button"
    1. Change **PosX**, **PosY**, **PosZ** to 242, 178, -5, respectively.
    1. Change **Width** & **Height** to 75, 30 respectively.
 
-   ![Updated Go Button Properties in Unity's Inspector](./hololens2-images/screenshot_unity_gobutton_inspector.png)
+   ![Updated Go Button Properties in Unity's Inspector](./hololens2-images/unity_gobutton_inspector.png)
 
 1. Update the WebView's properties by selecting it in the Hierarchy pane, then making the following changes in the Inspector pane:
    1. Change **PosX**, **PosY**, **PosZ** to 0, -16, -5, respectively.
    1. Change **Scale** for X, Y, Z to 570, 340, 1 respectively.
 
-   ![Updated WebView Properties in Unity's Inspector](./hololens2-images/screenshot_unity_webview_transform_inspector.png)
+   ![Updated WebView Properties in Unity's Inspector](./hololens2-images/unity_webview_transform_inspector.png)
 
 1. Add background image to Canvas.
    1. Select the Canvas in the Hierarchy pane.
@@ -284,28 +282,28 @@ public class WebViewBrowser: MonoBehaviour
    1. Type 'Image' and select the top result in the list.
    1. Click on the **Color** well for the image and choose a background color. In our example, we chose a gray color. (This is simply to show some contrast between the different controls in the canvas.)
 
-   ![Change Back Button text in Unity's Inspector](./hololens2-images/screenshot_unity_canvasimage_inspector.png)
+   ![Change Back Button text in Unity's Inspector](./hololens2-images/unity_canvasimage_inspector.png)
 
 1. Select **Text (TMP)** under **Back Button** in the Hierarchy pane and change the **Text Input** to *Back* in the Inspector pane.
 
-   ![Change Go Button text in Unity's Inspector](./hololens2-images/screenshot_unity_backbutton_text.png)
+   ![Change Go Button text in Unity's Inspector](./hololens2-images/unity_backbutton_text.png)
 
 1. Repeat the above process for **Go Button**, substituting *Go* as the text.
 
    You should now have a scene which looks similar to the follow:
 
-   ![The current scene in Unity's Scene view](./hololens2-images/screenshot_unity_completed_scene.png)
+   ![The current scene in Unity's Scene view](./hololens2-images/unity_completed_scene.png)
 
 1. Connect WebViewBrowser prefabs.
-    1. Select the WebViewBrowser.
-    1. Drag **Back Button** from the Hierarchy pane into the **Back Button** variable field for the WebView Browser in the Inspector.
-    1. Drag **Go Button** from the Hierarchy pane into the **Go Button** variable field for the WebView Browser in the Inspector.
+   1. Select the WebViewBrowser.
+   1. Drag **Back Button** from the Hierarchy pane into the **Back Button** variable field for the WebView Browser in the Inspector.
+   1. Drag **Go Button** from the Hierarchy pane into the **Go Button** variable field for the WebView Browser in the Inspector.
 
-   ![The WebView Browser Prefab with assigned variables in Unity's Inspector](./hololens2-images/screenshot_unity_webview_connect_prefabs.png)
+   ![The WebView Browser Prefab with assigned variables in Unity's Inspector](./hololens2-images/unity_webview_connect_prefabs.png)
 
-2. Test is out in the Editor. Now that everything is wired up in your scene, you should be able to play the scene inside Unity. Try testing out the scene by entering a new URL into the field (must be a complete URL), then pressing the **Go** button. The **Back** button should work, as well.
+1. Test is out in the Editor. Now that everything is wired up in your scene, you should be able to play the scene inside Unity. Try testing out the scene by entering a new URL into the field (must be a complete URL), then pressing the **Go** button. The **Back** button should work, as well.
 
-> Note: input within the WebView itself will not work without additional changes. This is a topic discussed later in the document.
+Input within the WebView itself will not work without additional changes, as discussed below.
 
 
 <!-- ====================================================================== -->
@@ -327,7 +325,7 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
     * **Build and Run on**: Local Machine
     * **Build configuration**: Release
 
-   ![Unity's Build Settings dialog with Universal Windows Platform seetings](./hololens2-images/screenshot_unity_build_settings.png)
+   ![Unity's Build Settings dialog with Universal Windows Platform seetings](./hololens2-images/unity_build_settings.png)
 
 1. Click **Build** to generate the IL2CPP build. This will open a file dialog to select the folder for the build files. We recommend you create a new folder (e.g., 'Build') under your project directory for this purpose. Once you select your build folder in the file dialog, Unity will begin generating the build. This will take several minutes.
 
@@ -337,7 +335,7 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
 
 1. In Visual Studio, select the Solution Configuration (e.g., **Release**). Then set the Platform to **ARM64**.
 
-![The Config & Platform settings in Visual Studio Solution toolbar](./hololens2-images/screenshot_visualstudio_buildconfig.png)
+![The Config & Platform settings in Visual Studio Solution toolbar](./hololens2-images/visualstudio_buildconfig.png)
 
 1. Make sure **Developer Mode** is enabled on your PC and on your HoloLens 2 device. See [Enabling Developer Mode](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#enabling-developer-mode) in _Using Visual Studio to deploy and debug_ in the Mixed Reality documentation.
 
@@ -345,11 +343,11 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
 
     * If you're building and deploying via Wi-Fi, select **Remote Machine**.
 
-      ![The Remote Machine selected from drop-down menu in Visual Studio toolbar](./hololens2-images/screenshot_visualstudio_select_remote.png)
+      ![The Remote Machine selected from drop-down menu in Visual Studio toolbar](./hololens2-images/visualstudio_select_remote.png)
 
     * If you're building and deploying via USB, select **Device**.
 
-      ![The Device select from drop-down menu in Visual Studio toolbar](./hololens2-images/screenshot_visualstudio_select_device.png)
+      ![The Device select from drop-down menu in Visual Studio toolbar](./hololens2-images/visualstudio_select_device.png)
 
 
 <!-- ------------------------------ -->
@@ -365,7 +363,7 @@ To set up your remote connection:
     * You can find the IP address on your HoloLens 2 under **Settings > Network & Internet > Advanced Options**.
     * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
 
-    ![The Debugging settings in Project Settings dialog with Machine Name set](./hololens2-images/screenshot_visualstudio_remote_ip.png)
+    ![The Debugging settings in Project Settings dialog with Machine Name set](./hololens2-images/visualstudio_remote_ip.png)
 
 2. Set the **Authentication Mode** to **Universal (Unencrypted protocol)**.
 
@@ -445,7 +443,7 @@ The `IWebView` interface exposes a few methods, events, and properties related t
 ```C#
 public interface IWebView
 {
-    // NOTE: non-navigation methods removed for clarity
+    // Non-navigation methods are removed for clarity.
 
     event WebView_OnNavigated Navigated;
 
@@ -463,7 +461,7 @@ The `IWithBrowserHistory` interface exposes a few methods and events related to 
 ```C#
 public interface IWithBrowserHistory : IWebView
 {
-    // NOTE: non-navigation methods removed for clarity
+    // Non-navigation methods are removed for clarity.
 
     event WebView_OnCanGoForwardUpdated CanGoForwardUpdated;
 
@@ -564,8 +562,7 @@ public class WebViewExample : MonoBehaviour, IPointerDownHandler
 
 In the above example, pointer-down events are converted into `WebViewMouseEventData` objects and forwarded to the WebView plugin. It is essentially converted into a mouse-down event. In order to effect mouse click events, the pointer-up would need to be handled in a similar fashion.
 
-> [!NOTE]
-> In the example above, `ConvertToWebViewSpace` is intentionally not implemented.
+In the example above, `ConvertToWebViewSpace` is intentionally not implemented.
 
 
 <!-- ------------------------------ -->
@@ -575,7 +572,7 @@ Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial f
 
 * **Limit the number of WebView2 instances**: We suggest using only one instance of WebView2 within a Unity app. Reuse the same instance or tear down and create a new one as needed. Keep in mind that removing the WebView prefab from the scene may not destroy the underlying WebView2 instance. You must call the `Destroy()` method on the game object to destroy it properly.
 
-* **Use TrySuspendAsync API**: When the WebView2 is not being presented to the user, use the `TrySuspendAsync` API to reduce memory usage. Note that you will need to get the native WebView2 instance, to call this API (⚠️ this is TBD, and we will update this section accordingly ⚠️).
+* **Use TrySuspendAsync API**: When the WebView2 is not being presented to the user, use the `TrySuspendAsync` API to reduce memory usage. You will need to get the native WebView2 instance, to call this API (⚠️ this is TBD, and we will update this section<!--todo--> accordingly ⚠️).
 
 * **Apply general Unity optimization techniques**: Utilize standard Unity optimization methods, such as occlusion culling or limiting the update rate, to improve WebView2 performance. For more information, see [Performance recommendations for Unity](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity?tabs=openxr) in the Mixed Reality documentation.
 
