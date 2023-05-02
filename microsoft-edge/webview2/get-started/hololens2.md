@@ -74,7 +74,17 @@ Once you have completed the setup, return to this page and continue with the nex
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install MRTK and Mixed Reality Feature Tool
+## Step 2 - Set up Unity project for HoloLens 2 development
+
+Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. To prepare your project for mixed reality development, follow the steps in [Unity development for HoloLens 2](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2) in the Mixed Reality documentation.
+
+Once you have your Unity project ready for HoloLens 2 development, you'll need to configure MRTK in your project.  To set up the Mixed Reality Toolkit in your Unity project, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
+
+After you've installed the MRTK and Mixed Reality Feature Tool, the MRTK assets and prefabs appear in your Unity project, ready for use.
+
+
+<!-- ====================================================================== -->
+## Step 3 - Install MRTK and Mixed Reality Feature Tool
 
 1. To install the Mixed Reality Toolkit (MRTK) and the Mixed Reality Feature Tool, first [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center.
 
@@ -85,16 +95,6 @@ Once you have completed the setup, return to this page and continue with the nex
    The Mixed Reality Feature Tool allows you to select and install the appropriate versions of MRTK, along with other Mixed Reality features, directly into your Unity project.
 
 Proceed to the next step to set up your Unity project for HoloLens 2 development.
-
-
-<!-- ====================================================================== -->
-## Step 3 - Set up Unity project for HoloLens 2 development
-
-Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. To prepare your project for mixed reality development, follow the steps in [Unity development for HoloLens 2](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2) in the Mixed Reality documentation.
-
-Once you have your Unity project ready for HoloLens 2 development, you'll need to configure MRTK in your project.  To set up the Mixed Reality Toolkit in your Unity project, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
-
-After you've installed the MRTK and Mixed Reality Feature Tool, the MRTK assets and prefabs appear in your Unity project, ready for use.
 
 
 <!-- ====================================================================== -->
