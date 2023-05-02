@@ -178,63 +178,63 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of o
 
 1. Replace the contents of that file with the code below.
 
-```C#
-using Microsoft.MixedReality.WebView;
-using UnityEngine.UI;
-using UnityEngine;
-using TMPro;
-using System;
+   ```C#
+   using Microsoft.MixedReality.WebView;
+   using UnityEngine.UI;
+   using UnityEngine;
+   using TMPro;
+   using System;
 
-public class WebViewBrowser: MonoBehaviour
-{
-    // Declare UI elements: back button, go button, and URL input field
-    public Button BackButton;
-    public Button GoButton;
-    public TMP_InputField URLField;
+   public class WebViewBrowser: MonoBehaviour
+   {
+      // Declare UI elements: back button, go button, and URL input field
+      public Button BackButton;
+      public Button GoButton;
+      public TMP_InputField URLField;
 
-    private void Start()
-    {
-        // Get the WebView component attached to the game object
-        var webViewComponent = gameObject.GetComponent<WebView>();
-        webViewComponent.GetWebViewWhenReady((IWebView webView) =>
-        {
-            // If the WebView supports browser history, enable the back button
-            if (webView is IWithBrowserHistory history)
-            {
-                // Add an event listener for the back button to navigate back in history
-                BackButton.onClick.AddListener(() => history.GoBack());
+      private void Start()
+      {
+         // Get the WebView component attached to the game object
+         var webViewComponent = gameObject.GetComponent<WebView>();
+         webViewComponent.GetWebViewWhenReady((IWebView webView) =>
+         {
+               // If the WebView supports browser history, enable the back button
+               if (webView is IWithBrowserHistory history)
+               {
+                  // Add an event listener for the back button to navigate back in history
+                  BackButton.onClick.AddListener(() => history.GoBack());
 
-                // Update the back button's enabled state based on whether there's any history to go back to
-                history.CanGoBackUpdated += CanGoBack;
-            }
+                  // Update the back button's enabled state based on whether there's any history to go back to
+                  history.CanGoBackUpdated += CanGoBack;
+               }
 
-            // Add an event listener for the go button to load the URL entered in the input field
-            GoButton.onClick.AddListener(() => webView.Load(new Uri(URLField.text)));
+               // Add an event listener for the go button to load the URL entered in the input field
+               GoButton.onClick.AddListener(() => webView.Load(new Uri(URLField.text)));
 
-            // Subscribe to the Navigated event to update the URL input field whenever a navigation occurs
-            webView.Navigated += OnNavigated;
+               // Subscribe to the Navigated event to update the URL input field whenever a navigation occurs
+               webView.Navigated += OnNavigated;
 
-            // Set the initial value of the URL input field to the current URL of the WebView
-            if (webView.Page != null)
-            {
-                URLField.text = webView.Page.AbsoluteUri;
-            }
-        });
-    }
+               // Set the initial value of the URL input field to the current URL of the WebView
+               if (webView.Page != null)
+               {
+                  URLField.text = webView.Page.AbsoluteUri;
+               }
+         });
+      }
 
-    // Update the URL input field with the new path after navigation
-    private void OnNavigated(string path)
-    {
-        URLField.text = path;
-    }
+      // Update the URL input field with the new path after navigation
+      private void OnNavigated(string path)
+      {
+         URLField.text = path;
+      }
 
-    // Enable or disable the back button based on whether there's any history to go back to
-    private void CanGoBack(bool value)
-    {
-        BackButton.enabled = value;
-    }
-}
-```
+      // Enable or disable the back button based on whether there's any history to go back to
+      private void CanGoBack(bool value)
+      {
+         BackButton.enabled = value;
+      }
+   }
+   ```
 
 1. Modify the scene hierarchy as follows:
    1. Under MixedRealitySceneContent, add a new input component (right-click menu > UI > Input Field - TextMeshPro). This will automatically add a parent Canvas for the component.
@@ -373,6 +373,8 @@ To set up your remote connection:
 
 4. The first time you deploy an app to your HoloLens 2 from your PC, you'll be prompted for a PIN. Follow the Pairing your device instructions below.
 
+
+<!-- ====================================================================== -->
 ## Learn about WebView2 events and interactions in Unity
 
 The Microsoft Mixed Reality WebView plugin provides events for working with the webview. One important event is `IWithPostMessage.MessageReceived`, which is raised when a message is sent from the webview to the Unity app. The `MessageReceived` event is defined in the `Microsoft.MixedReality.WebView.IWithPostMessage` interface. The interface also defines the `PostMessage()` method, which can be used to send a message from the Unity app to the webview.
