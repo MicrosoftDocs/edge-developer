@@ -311,17 +311,14 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
 
 1. In Unity, open the **Build Settings** dialog (**File > Build Settings**).
 
-1. Make sure that the selected platform is **Universal Windows Platform**.
+1. Make sure that the selected platform is **Universal Windows Platform**. If not, click **Switch Platform**.
 
 1. Click **Add Open Scene** to add our sample scene to the list of scenes in the build.
 
 1. Under Universal Windows Platform, configure the build settings:
-    * **Architecture**: Intel 64-bit
+    * **Target Device**: HoloLens
+    * **Architecture**: ARM64
     * **Build Type**: D3D Project
-    * **Target SDK Version**: Latest installed
-    * **Visual Studio Version**: Latest version
-    * **Build and Run on**: Local Machine
-    * **Build configuration**: Release
 
    ![Unity's Build Settings dialog with Universal Windows Platform seetings](./hololens2-images/unity_build_settings.png)
 
