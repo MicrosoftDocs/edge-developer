@@ -52,7 +52,7 @@ Only a subset of WebView2 interfaces/functions are exposed in WinUI:
 
 * Interfaces such as `CoreWebView2Controller` are hidden, because WinUI takes care of the environment and window creation behind the scenes.
 
-See also [Xbox, HoloLens, and XAML limitations](#xbox-hololens-and-xaml-limitations) below.
+See also [XAML limitation](#xaml-limitation) below.
 
 
 <!-- ====================================================================== -->
@@ -352,9 +352,9 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Xbox, HoloLens, and XAML limitations
+#### XAML limitation
 
-This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant.<!--todo: reword--> Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered for future releases.
+XAML Island support requires additional work and may be considered for future releases.
 
 
 <!-- ------------------------------ -->
