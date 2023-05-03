@@ -299,7 +299,7 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of o
 
    ![The WebView Browser Prefab with assigned variables in Unity's Inspector](./hololens2-images/unity_webview_connect_prefabs.png)
 
-1. Test the scene in the Editor. Now that everything is wired up in your scene, you should be able to play the scene inside Unity. Try testing out the scene by entering a new URL into the Address field (must be a complete URL), and then clicking the **Go** button. Make sure the **Back** button works, as well.
+1. Test the scene in the Editor. Now that everything is wired up in your scene, you should be able to play the scene inside Unity. Try testing out the scene by entering a new URL into the `AddressField` text box (must be a complete URL), then pressing the **Go** button. Make sure the **Back** button works, as well.
 
 To support input within the WebView itself, we'll make the additional changes discussed below.
 
