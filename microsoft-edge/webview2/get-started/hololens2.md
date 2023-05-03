@@ -358,7 +358,7 @@ To set up your remote connection:
     * You can find the IP address on your HoloLens 2 under **Settings > Network & Internet > Advanced Options**.
     * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
 
-1. Set the **Authentication Mode** to **Universal (Unencrypted Protocol)**:
+1. Set the **Authentication Type** to **Universal (Unencrypted Protocol)**:
 
     ![The Debugging settings in Project Settings dialog with Machine Name set](./hololens2-images/visualstudio_remote_ip.png)
 
