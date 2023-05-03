@@ -122,7 +122,7 @@ In this step, you'll use the Mixed Reality Feature Tool to install the Microsoft
 
 1. In the **Discover Features** page, expand the **Other features** section, and then select the **Microsoft Mixed Reality WebView** checkbox:
 
-   ![The Discover Features pane in the Microsoft Mixed Reality WebView feature](./hololens2-images/mrtk_webview2_selected.png)
+   ![The Discover Features pane in the Mixed Reality Feature Tool](./hololens2-images/mrtk_webview2_selected.png)
 
    This marks the WebView plugin for Unity for installation. In the version dropdown, by default, the latest version of the plugin is selected.
 
@@ -266,13 +266,13 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of o
    1. Change **PosX**, **PosY**, **PosZ** to 242, 178, -5, respectively.
    1. Change **Width** & **Height** to 75, 30 respectively:
 
-   ![Updated Go Button Properties in Unity's Inspector](./hololens2-images/unity_gobutton_inspector.png)
+   ![Updated Go Button properties in Unity's Inspector](./hololens2-images/unity_gobutton_inspector.png)
 
 1. Update the WebView's properties by selecting it in the **Hierarchy** pane, then making the following changes in the **Inspector** pane:
    1. Change **PosX**, **PosY**, **PosZ** to 0, -16, -5, respectively.
    1. Change **Scale** for X, Y, Z to 570, 340, 1 respectively:
 
-   ![Updated WebView Properties in Unity's Inspector](./hololens2-images/unity_webview_transform_inspector.png)
+   ![Updated WebView properties in Unity's Inspector](./hololens2-images/unity_webview_transform_inspector.png)
 
 1. Add a background image to the **Canvas**:
    1. Select the Canvas in the **Hierarchy** pane.
@@ -280,13 +280,13 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of o
    1. Type **Image** and then select the top result in the list.
    1. Click the **Color** well for the image and then choose a background color. In our example, we chose a gray color. (This is simply to show some contrast between the different controls in the canvas.)
 
-   ![Change Back Button text in Unity's Inspector](./hololens2-images/unity_canvasimage_inspector.png)
+   ![Set the background color of the Canvas in Unity's Inspector](./hololens2-images/unity_canvasimage_inspector.png)
 
 1. In the **Hierarchy** pane, under **Back Button**, select **Text (TMP)**.  Then in the **Inspector** pane, change the **Text Input** to **Back**:
 
-   ![Change Go Button text in Unity's Inspector](./hololens2-images/unity_backbutton_text.png)
+   ![Change button's text to 'Back' in Unity's Inspector](./hololens2-images/unity_backbutton_text.png)
 
-1. Repeat the above process for **Go Button**, substituting **Go** as the text.
+1. Repeat the above process for the **Go Button**, substituting **Go** as the text.
 
    You should now have a scene which looks similar to the following:
 
@@ -320,7 +320,7 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
     * **Architecture**: ARM64
     * **Build Type**: D3D Project
 
-   ![Unity's Build Settings dialog with Universal Windows Platform seetings](./hololens2-images/unity_build_settings.png)
+   ![Unity's Build Settings dialog with Universal Windows Platform settings](./hololens2-images/unity_build_settings.png)
 
 1. Click **Build** to generate the IL2CPP build. This will open a file dialog to select the folder for the build files. We recommend you create a new folder (such as **Build**) under your project directory for this purpose. Once you select your build folder in the file dialog, Unity will begin generating the build. This can take a few minutes.
 
@@ -330,19 +330,19 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
 
 1. In Visual Studio, select the **Solution Configuration** (such as **Release**). Then set the **Platform** to **ARM64**:
 
-![The Solution Configuration and Platform settings in the Visual Studio Solution toolbar](./hololens2-images/visualstudio_buildconfig.png)
+![The Solution Configuration and Platform settings dropdown lists in Visual Studio's toolbar](./hololens2-images/visualstudio_buildconfig.png)
 
 1. Make sure **Developer Mode** is enabled on your PC and on your HoloLens 2 device. See [Enabling Developer Mode](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#enabling-developer-mode) in _Using Visual Studio to deploy and debug_ in the Mixed Reality documentation.
 
-1. Click the deployment target drop-down and then do one of the following:
+1. Click the **deployment target** drop-down and then do one of the following:
 
-    * If you're building and deploying via Wi-Fi, select **Remote Machine**:
+    * If you're building and deploying via Wi-Fi, select **Remote Machine** as the deployment target:
 
-      ![The Remote Machine selected from drop-down menu in Visual Studio toolbar](./hololens2-images/visualstudio_select_remote.png)
+      !['Remote Machine' selected in the 'deployment target' dropdown menu in Visual Studio's toolbar](./hololens2-images/visualstudio_select_remote.png)
 
-    * If you're building and deploying via USB, select **Device**:
+    * If you're building and deploying via USB, select **Device** as the deployment target:
 
-      ![The Device select from drop-down menu in Visual Studio toolbar](./hololens2-images/visualstudio_select_device.png)
+      !['Device' selected in the 'deployment target' dropdown menu in Visual Studio's toolbar](./hololens2-images/visualstudio_select_device.png)
 
 
 <!-- ------------------------------ -->
