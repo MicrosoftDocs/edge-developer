@@ -82,17 +82,17 @@ After you've installed the MRTK and Mixed Reality Feature Tool, the MRTK assets 
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install MRTK and Mixed Reality Feature Tool
+## Step 3 - Install Mixed Reality Feature Tool and Mixed Reality Toolkit (MRTK)
 
-1. To install the Mixed Reality Toolkit (MRTK) and the Mixed Reality Feature Tool, first [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center.
+1. First, [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center.
 
-   The Mixed Reality Feature Tool<!--todo: and MRTK? --> simplifies the process of discovering, installing, and managing Mixed Reality features and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
+   The Mixed Reality Feature Tool simplifies the process of discovering, installing, and managing Mixed Reality features and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
 
-1. Run the downloaded Mixed Reality Feature Tool executable and follow the prompts to install the MRTK and any additional required packages for HoloLens 2 development.
+1. Run the downloaded Mixed Reality Feature Tool executable, and follow the prompts to install the Mixed Reality Toolkit (MRTK) and any additional required packages for HoloLens 2 development.
 
-   The Mixed Reality Feature Tool allows you to select and install the appropriate versions of MRTK, along with other Mixed Reality features, directly into your Unity project.
+   The Mixed Reality Feature Tool allows you to select and install the appropriate versions of the Mixed Reality Toolkit (MRTK), along with other Mixed Reality features, directly into your Unity project.
 
-Proceed to the next step to set up your Unity project for HoloLens 2 development.
+Continue to the next step.
 
 
 <!-- ====================================================================== -->
