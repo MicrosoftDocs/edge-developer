@@ -274,7 +274,7 @@ Use [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icoreweb
 
 ```cpp
 std::wstring m_userDataFolder;
-m_userDataFolder = L"C:\\MyAppUserDataFolder"
+m_userDataFolder = L"C:\\MyAppUserDataFolder";
 auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
 
 HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
