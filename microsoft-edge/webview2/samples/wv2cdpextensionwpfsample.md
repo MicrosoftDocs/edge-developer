@@ -127,7 +127,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 1. If a newer release of the **Microsoft.Web.WebView2** SDK is listed, click the **Update** button.  A prerelease has a "-prerelease" suffix, such as **1.0.1248-prerelease**.  Prerelease SDKs allow you to try the latest WebView2 features and APIs.
 
-If you want to see details about this step, in a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+If you want to see details about this step, in a separate window or tab, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 For more information, see [WebView2 SDK NuGet package](https://aka.ms/webviewnuget).
 
