@@ -185,7 +185,7 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of o
 
    public class WebViewBrowser: MonoBehaviour
    {
-      // Declare UI elements: back button, go button, and URL input field
+      // Declare UI elements: Back button, Go button, and URL input field
       public Button BackButton;
       public Button GoButton;
       public TMP_InputField URLField;
@@ -196,17 +196,17 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of o
          var webViewComponent = gameObject.GetComponent<WebView>();
          webViewComponent.GetWebViewWhenReady((IWebView webView) =>
          {
-               // If the WebView supports browser history, enable the back button
+               // If the WebView supports browser history, enable the Back button
                if (webView is IWithBrowserHistory history)
                {
-                  // Add an event listener for the back button to navigate back in history
+                  // Add an event listener for the Back button to navigate back in history
                   BackButton.onClick.AddListener(() => history.GoBack());
 
-                  // Update the back button's enabled state based on whether there's any history to go back to
+                  // Update the Back button's enabled state based on whether there's any history to go back to
                   history.CanGoBackUpdated += CanGoBack;
                }
 
-               // Add an event listener for the go button to load the URL entered in the input field
+               // Add an event listener for the Go button to load the URL that was entered in the input field
                GoButton.onClick.AddListener(() => webView.Load(new Uri(URLField.text)));
 
                // Subscribe to the Navigated event to update the URL input field whenever a navigation occurs
@@ -226,7 +226,7 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of o
          URLField.text = path;
       }
 
-      // Enable or disable the back button based on whether there's any history to go back to
+      // Enable or disable the Back button based on whether there's any history to go back to
       private void CanGoBack(bool value)
       {
          BackButton.enabled = value;
@@ -237,40 +237,40 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of o
 1. Modify the scene hierarchy as follows:
    1. Under `MixedRealitySceneContent`, add a new input component (right-click > **UI** > **Input Field - TextMeshPro**). This automatically adds a parent `Canvas` for the component.
    1. Under the new `Canvas`, add **two** new `Button` components (right-click > **UI** > **Button - TextMeshPro**).
-   1. Reorder the `WebView` component so that it is a child of the `Canvas` component:
+   1. Reorder the `WebView` component to make it a child of the `Canvas` component:
 
    ![Updated scene hierarchy with new components in Unity](./hololens2-images/unity_scene_hierarchy.png)
 
 1. Update the Canvas properties by selecting the Canvas in the **Hierarchy** pane, then making the following changes in the **Inspector** pane:
-   1. Change **Width** & **Height** to 600, 400 respectively.
-   1. Change **Scale** for X, Y, Z to 0.001, 0.001, 0.001:
+   1. Change **Width** and **Height** to 600, 400 respectively.
+   1. Change **Scale** for **X**, **Y**, and **Z** to 0.001, 0.001, 0.001:
 
    ![Updated Canvas properties in Unity's Inspector](./hololens2-images/unity_canvas_inspector.png)
 
 1. Update the input field's properties by selecting it in the **Hierarchy** pane, then making the following changes in the **Inspector** pane:
-   1. Change **Name** to "AddressWell (TMP)"
-   1. Change **PosX**, **PosY**, **PosZ** to -2, 178, -5, respectively.
-   1. Change **Width** & **Height** to 390, 300 respectively:
+   1. Change **Name** to "AddressField (TMP)"
+   1. Change **Pos X**, **Pos Y**, **Pos Z** to -2, 178, -5, respectively.
+   1. Change **Width** and **Height** to 390, 30 respectively:
 
    ![Updated Input Field properties in Unity's Inspector](./hololens2-images/unity_addresswell_inspector.png)
 
 1. Update the first button's properties by selecting it in the **Hierarchy** pane, then making the following changes in the **Inspector** pane:
    1. Change **Name** to "Back Button"
-   1. Change **PosX**, **PosY**, **PosZ** to -248, 178, -5, respectively.
-   1. Change **Width** & **Height** to 75, 30 respectively:
+   1. Change **Pos X**, **Pos Y**, **Pos Z** to -248, 178, -5, respectively.
+   1. Change **Width** and **Height** to 75, 30 respectively:
 
    ![Updated Back Button properties in Unity's Inspector](./hololens2-images/unity_backbutton_inspector.png)
 
 1. Update the second button's properties by selecting it in the **Hierarchy** pane, then making the following changes in the **Inspector** pane:
    1. Change **Name** to "Go Button"
-   1. Change **PosX**, **PosY**, **PosZ** to 242, 178, -5, respectively.
-   1. Change **Width** & **Height** to 75, 30 respectively:
+   1. Change **Pos X**, **Pos Y**, **Pos Z** to 242, 178, -5, respectively.
+   1. Change **Width** and **Height** to 75, 30 respectively:
 
    ![Updated Go Button properties in Unity's Inspector](./hololens2-images/unity_gobutton_inspector.png)
 
 1. Update the WebView's properties by selecting it in the **Hierarchy** pane, then making the following changes in the **Inspector** pane:
-   1. Change **PosX**, **PosY**, **PosZ** to 0, -16, -5, respectively.
-   1. Change **Scale** for X, Y, Z to 570, 340, 1 respectively:
+   1. Change **Position** > **X**, **Y**, **Z** to 0, -16, -5, respectively.
+   1. Change **Scale** > **X**, **Y**, **Z** to 570, 340, 1 respectively:
 
    ![Updated WebView properties in Unity's Inspector](./hololens2-images/unity_webview_transform_inspector.png)
 
@@ -354,19 +354,21 @@ To set up your remote connection:
 
 1. Click the **Debugger to launch** drop-down and then select **Remote Machine**.
 
-1. In the **Machine Name** field, enter the IP address of your device.
+1. In the **Machine Name** field, enter the IP address of your device, as shown below.
     * You can find the IP address on your HoloLens 2 under **Settings > Network & Internet > Advanced Options**.
-    * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature:
+    * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
+
+1. Set the **Authentication Mode** to **Universal (Unencrypted Protocol)**:
 
     ![The Debugging settings in Project Settings dialog with Machine Name set](./hololens2-images/visualstudio_remote_ip.png)
 
-1. Set the **Authentication Mode** to **Universal (Unencrypted protocol)**.
+1. Click the **OK** button.
 
 1. Build, deploy, and debug your app based on your needs:
     * To build, deploy, and start debugging, select **Debug > Start debugging**.
     * To build and deploy without debugging, select **Build > Deploy Solution**.
 
-1. The first time you deploy an app to your HoloLens 2 from your PC, you'll be prompted for a PIN. Follow the Pairing your device instructions below.
+1. The first time you deploy an app to your HoloLens 2 from your PC, you'll be prompted for a PIN. Follow the **Pairing your device**<!--todo--> instructions below.
 
 
 <!-- ====================================================================== -->
@@ -412,10 +414,7 @@ public class WebViewExample : MonoBehaviour, IWithPostMessage
 
 <!-- ====================================================================== -->
 ## Additional considerations for WebView2 on HoloLens 2
-<!-- 
-if move this section to a separate .md (new article), can promote h4s to h2s to make appear in In This Article nav
-it might be possible to flatten outline of this section by promoting h6s to h4s, or h4s to h2s
--->
+
 
 <!-- ------------------------------ -->
 #### Limitations and known issues
@@ -442,7 +441,7 @@ In Step 6, we touched on some navigation methods. In this section, we'll expand 
 <!-- ---------- -->
 ###### IWebView interface
 
-<!-- possible later to do: link to API Ref [IWebView::Load method]()-->
+<!-- [IWebView::Load method]()-->
 
 The `IWebView` interface exposes a few methods, events, and properties related to page navigation. The main functionality exposed here is the ability to navigate to a given URL, by using `Load(Uri url)`:
 
