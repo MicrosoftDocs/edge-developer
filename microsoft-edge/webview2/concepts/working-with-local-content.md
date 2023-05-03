@@ -41,7 +41,7 @@ WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is 
 *  The document has an origin that is unique to its file path. This means that web APIs that require an origin such as `localStorage` or `indexedDB` will work, but the stored data will not be available to other local documents loaded from other file paths.
 *  Some web APIs are limited to secure HTTPS URLs only and are not available to documents loaded by file URLs. This includes APIs such as `navigator.mediaDevices.getUserMedia()` to acquire video or sound, `navigator.geolocation.getCurrentPosition()` to access the device's location, or `Notification.requestPermission()` to request the user's permission to display notifications.
 *  For each resource, the full path must be specified.
-
+*  To allow references to other local files from file URIs, or to display XML files with XSL transformations applied, you can set the `--allow-file-access-from-files` browser argument.  See [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments).
 
 <!-- ------------------------------ -->
 #### Considerations for loading local content by navigating to a file URL
