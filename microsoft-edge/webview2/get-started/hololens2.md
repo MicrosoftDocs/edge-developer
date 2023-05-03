@@ -172,7 +172,7 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of o
 
 1. In the **Inspector** window for WebView, click **Add Component**, select **New script**, type **WebViewBrowser**, and then click **Create and add**. Your new component is added to the **Inspector** window.
 
-1. In the **Inspect**<!--todo: Inspector?--> window, double-click the `WebViewBrowser` script, to edit the script.
+1. In the **Inspector** window, double-click the `WebViewBrowser` script, to edit the script.
 
 1. Replace the contents of that file with the following code:
 
