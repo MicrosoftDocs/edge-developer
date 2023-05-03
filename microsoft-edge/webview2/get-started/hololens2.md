@@ -299,7 +299,7 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of o
 
    ![The WebView Browser Prefab with assigned variables in Unity's Inspector](./hololens2-images/unity_webview_connect_prefabs.png)
 
-1. Test the scene in the Editor. Now that everything is wired up in your scene, you should be able to play the scene inside Unity. Try testing out the scene by entering a new URL into the field<!--todo: what field?  give name of field/UI control label, or some description/location in window; the Address bar?--> (must be a complete URL), then pressing the **Go** button. Make sure the **Back** button works, as well.
+1. Test the scene in the Editor. Now that everything is wired up in your scene, you should be able to play the scene inside Unity. Try testing out the scene by entering a new URL into the Address field (must be a complete URL), and then clicking the **Go** button. Make sure the **Back** button works, as well.
 
 To support input within the WebView itself, we'll make the additional changes discussed below.
 
@@ -442,9 +442,7 @@ In Step 6, we touched on some navigation methods. In this section, we'll expand 
 <!-- ---------- -->
 ###### IWebView interface
 
-<!-- todo: link to API Ref for IWebView
-* [IWebView::Load method]()
--->
+<!-- possible later to do: link to API Ref [IWebView::Load method]()-->
 
 The `IWebView` interface exposes a few methods, events, and properties related to page navigation. The main functionality exposed here is the ability to navigate to a given URL, by using `Load(Uri url)`:
 
@@ -488,9 +486,7 @@ public interface IWithBrowserHistory : IWebView
 <!-- ---------- -->
 ###### SetVirtualHostNameToFolderMapping and SetVirtualHostMapping
 
-The `CoreWebView2.SetVirtualHostNameToFolderMapping` method enables mapping between a virtual host name and a folder path, making it accessible to websites using that host name. This method maps a local domain name to a local folder, so that the WebView2 control loads content from the specified local folder when attempting to access a resource for that domain.
-
-* [CoreWebView2.SetVirtualHostNameToFolderMapping Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping)
+The [CoreWebView2.SetVirtualHostNameToFolderMapping Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping) enables mapping between a virtual host name and a folder path, making it accessible to websites using that host name. This method maps a local domain name to a local folder, so that the WebView2 control loads content from the specified local folder when attempting to access a resource for that domain.
 
 The WebView plugin for Unity exposes this functionality through the `IWithVirtualHost` interface, which has a single method, `SetVirtualHostMapping(string hostName, string folderPath)`:
 
