@@ -601,22 +601,6 @@ Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial f
 
 * **Limit the number of WebView2 instances**: We suggest using only one instance of WebView2 within a Unity app. Reuse the same instance or tear down and create a new one as needed. Keep in mind that removing the WebView prefab from the scene may not destroy the underlying WebView2 instance. You must call the `Destroy()` method on the game object to destroy it properly.
 
-* **Use TrySuspendAsync API**: When the WebView2 is not being presented to the user, use the `TrySuspendAsync` API to reduce memory usage. You will need to get the native WebView2 instance, to call this API (⚠️ this is TBD, and we will update this section<!--todo--> accordingly ⚠️).
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2.TrySuspendAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2.TrySuspendAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#trysuspendasync)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2_3::TrySuspend method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)
-
----
-
 * **Apply general Unity optimization techniques**: Utilize standard Unity optimization methods, such as occlusion culling or limiting the update rate, to improve WebView2 performance. For more information, see [Performance recommendations for Unity](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity?tabs=openxr) in the Mixed Reality documentation.
 
 * **Profile and monitor WebView2 performance**: There are several ways to profile the performance of a HoloLens 2 Unity application:
