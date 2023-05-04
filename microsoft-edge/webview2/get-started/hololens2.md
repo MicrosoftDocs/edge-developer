@@ -490,7 +490,7 @@ The [CoreWebView2.SetVirtualHostNameToFolderMapping Method](/dotnet/api/microsof
 The WebView plugin for Unity exposes this functionality through the `IWithVirtualHost` interface, which has a single method, `SetVirtualHostMapping(string hostName, string folderPath)`:
 
 ```C#
-public interface IWithVirtualHost: IWebView
+public interface IWithVirtualHost : IWebView
 {
     void SetVirtualHostMapping(string hostName, string folderPath);
 }
