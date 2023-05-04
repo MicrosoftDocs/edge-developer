@@ -23,7 +23,7 @@ The **Remote Tools for Microsoft Edge** app is now available on HoloLens 2 devic
 
 With remote debugging enabled, you don't need to open DevTools on HoloLens 2 devices any more.  Instead, you can connect to the remote HoloLens 2 device using the Device portal, open the `edge://inspect` page, and then select the target (tab, PWA, or WebView2 control) that you want to use with DevTools.
 
-To give us feedback on the remote debugging flow for Microsoft Edge, leave a comment in [Issue 136: Remote debugging HoloLens devices is now available with the latest version of the Remote Tools for Microsoft Edge app](https://github.com/MicrosoftEdge/DevTools/issues/136).
+To give us feedback on the remote debugging flow for Microsoft Edge, leave a comment in [Issue 136: Remote debugging HoloLens 2 devices is now available with the latest version of the Remote Tools for Microsoft Edge app](https://github.com/MicrosoftEdge/DevTools/issues/136).
 
 See also:
 * [Remotely debug Windows devices](../../../remote-debugging/windows.md)
