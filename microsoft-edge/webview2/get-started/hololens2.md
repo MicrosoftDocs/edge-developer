@@ -74,13 +74,11 @@ Once you have completed the setup, return to this page and continue with the nex
 
 Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. To prepare your project for mixed reality development, follow the steps in [Unity development for HoloLens 2](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2) in the Mixed Reality documentation. For a step-by-step walkthrough of configuring a Unity project, see [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk).
 
-Once you have your Unity project ready for HoloLens 2 development, you'll need to configure the Mixed Reality Toolkit (MRTK) in your project.  To set up the Mixed Reality Toolkit (MRTK) in your Unity project, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
-
-After you've installed the Mixed Reality Feature Tool and the Mixed Reality Toolkit (MRTK), the MRTK assets and prefabs appear in your Unity project, ready for use.
-
 
 <!-- ====================================================================== -->
 ## Step 3 - Install Mixed Reality Feature Tool and Mixed Reality Toolkit (MRTK)
+
+Once you have your Unity project ready for HoloLens 2 development, you'll need to configure the Mixed Reality Toolkit (MRTK) in your project.
 
 1. First, [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center.
 
@@ -89,6 +87,8 @@ After you've installed the Mixed Reality Feature Tool and the Mixed Reality Tool
 1. Run the downloaded Mixed Reality Feature Tool executable, and follow the prompts to install the Mixed Reality Toolkit (MRTK) and any additional required packages for HoloLens 2 development.
 
    The Mixed Reality Feature Tool allows you to select and install the appropriate versions of the Mixed Reality Toolkit (MRTK), along with other Mixed Reality features, directly into your Unity project.
+
+After you've installed the Mixed Reality Feature Tool and the Mixed Reality Toolkit (MRTK), the MRTK assets and prefabs appear in your Unity project, ready for use.
 
 Continue to the next step.
 
