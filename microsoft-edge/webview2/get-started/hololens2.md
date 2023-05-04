@@ -368,7 +368,7 @@ To set up your remote connection:
     * To build, deploy, and start debugging, select **Debug > Start debugging**.
     * To build and deploy without debugging, select **Build > Deploy Solution**.
 
-1. The first time you deploy an app to your HoloLens 2 from your PC, you'll be prompted for a PIN. Follow the **Pairing your device**<!--todo--> instructions below.
+2. The first time you deploy an app to your HoloLens 2 from your PC, you'll be prompted for a PIN. Follow the [Pairing your device](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#pairing-your-device) instructions.
 
 
 <!-- ====================================================================== -->
