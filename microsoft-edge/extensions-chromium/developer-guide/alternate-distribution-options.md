@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/28/2023
+ms.date: 05/05/2023
 ---
 # Alternative ways to distribute extensions
 
@@ -157,17 +157,6 @@ See also:
 The policies for `ExtensionInstallForcelist`, block list, and `ExtensionSettings` are used when enterprises want to install or block specific extensions on the client machines.  Extensions and their origin that are configured in [ExtensionInstallForcelist](/deployedge/microsoft-edge-policies#extensioninstallforcelist), [ExtensionInstallSources](/deployedge/microsoft-edge-policies#extensioninstallsources), or [ExtensionSettings](/deployedge/microsoft-edge-policies#extensionsettings) take precedence over [BlockExternalExtensions](/deployedge/microsoft-edge-policies#blockexternalextensions).
 
 If the `BlockExternalExtensions` policy is set to `Not Configured` or `Disabled`, that doesn't have any effect.  If the `BlockExternalExtensions` policy is set to `Enabled`, external extension installation (by third party software) is prevented.
-
-<!-- orig wording: 
-
-Question:
-It is not clear if `BlockExternalExtensions` has to be set to `disabled` or `unconfigured` as a prerequisite.  Or if extensions and their origin configured in `ExtensionInstallForcelist`, `ExtensionInstallSources`, or `ExtensionSettings` take precedence over `BlockExternalExtensions=Disabled`.
-
-Answer: 
-Setting the `BlockExternalExtensions` policy to `Not Configured` or `Disabled` won't have any effect.  If the `BlockExternalExtensions` policy is set to `enabled`, external extension installation (by third party software) won't be allowed. The policies for force install list, block list, and extension settings are used when enterprises want to install or block specific extensions on the client machines.
-
-See [BlockExternalExtensions](https://learn.microsoft.com/deployedge/microsoft-edge-policies#blockexternalextensions) in _Microsoft Edge - Policies_.
--->
 
 
 <!-- ====================================================================== -->
