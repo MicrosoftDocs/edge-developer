@@ -131,7 +131,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 * [CoreWebView2File Class](/dotnet/api/microsoft.web.webview2.core.corewebview2file?view=webview2-dotnet-1.0.1774.30&preserve-view=true)
    * [CoreWebView2File.Path Property](/dotnet/api/microsoft.web.webview2.core.corewebview2file.path?view=webview2-dotnet-1.0.1774.30&preserve-view=true#microsoft-web-webview2-core-corewebview2file-path)
 
-* `CoreWebView2WebMessageReceivedEventArgs` Class
+* `CoreWebView2WebMessageReceivedEventArgs` Class:
    * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs.additionalobjects?view=webview2-dotnet-1.0.1774.30&preserve-view=true#microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs-additionalobjects)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
@@ -139,7 +139,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 * [CoreWebView2File Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file?view=webview2-winrt-1.0.1774.30&preserve-view=true)
    * [CoreWebView2File.Path Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file?view=webview2-winrt-1.0.1774.30&preserve-view=true#path)
 
-* `CoreWebView2WebMessageReceivedEventArgs` Class
+* `CoreWebView2WebMessageReceivedEventArgs` Class:
    * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webmessagereceivedeventargs?view=webview2-winrt-1.0.1774.30&preserve-view=true#additionalobjects)
    
 ##### [Win32/C++](#tab/win32cpp)
@@ -162,27 +162,48 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* `CoreWebView2Profile` Class
+* `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.CookieManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.cookiemanager?view=webview2-dotnet-1.0.1774.30&preserve-view=true#microsoft-web-webview2-core-corewebview2profile-cookiemanager)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* `CoreWebView2Profile` Class
+* `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.CookieManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1774.30&preserve-view=true#cookiemanager)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* `ICoreWebView2Profile5` interface
+* `ICoreWebView2Profile5` interface:
    * [ICoreWebView2Profile5::get_CookieManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1774.30&preserve-view=true#get_cookiemanager)
 
 ---
+
+
 <!-- ------------------------------ -->
 ###### Bug fixes
 
-* Fixed an issue to allow app to inject initial scripts by calling AddScriptToExecuteOnDocumentCreated before new window is created.  ([Issue #2491](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2491))
-* (Runtime) Fixed an issue that was causing the X-Edge-Shopping-Flag header to be added to web requests coming from WebView2. ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
+* Fixed an issue to allow an app to inject initial scripts by calling `AddScriptToExecuteOnDocumentCreated` before a new window is created.  ([Issue #2491](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2491))
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2` interface:
+   * [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated)
 
 ---
+
+* (Runtime) Fixed an issue that was causing the `X-Edge-Shopping-Flag` header to be added to web requests that are coming from WebView2. ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
+
+---
+
 
 <!-- ====================================================================== -->
 ## 1.0.1829-prerelease
@@ -205,21 +226,21 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* `CoreWebView2Profile` Class
+* `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.isgeneralautofillenabled?view=webview2-dotnet-1.0.1829-prerelease&preserve-view=true)
    * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.ispasswordautosaveenabled?view=webview2-dotnet-1.0.1829-prerelease&preserve-view=true)
 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* `CoreWebView2Profile` Class
+* `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#isgeneralautofillenabled?view=webview2-winrt-1.0.1829-prerelease&preserve-view=true)
    * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#ispasswordautosaveenabled?view=webview2-winrt-1.0.1829-prerelease&preserve-view=true)
 
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* `ICoreWebView2Profile6` interface
+* `ICoreWebView2Profile6` interface:
    * [ICoreWebView2Profile6::get_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#get_ispasswordautosaveenabled)
    * [ICoreWebView2Profile6::put_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#put_ispasswordautosaveenabled)
    * [ICoreWebView2Profile6::put_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#put_ispasswordautosaveenabled)
@@ -232,12 +253,30 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ###### Bug fixes
 
 * Disabled the Chrome Web Store info banner that displays the option to allow extensions installation. ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
-* Fixed an issue that custom menu item was not firing. ([Issue #3300](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3300))
+* Fixed an issue where a custom menu item wasn't firing. ([Issue #3300](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3300))
 * Fixed a crash during initialization when creating a WebView2 using WPF and SDK version 1.0.1722.32, which is now deprecated. ([Issue #3375](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3375))
-* (Runtime) Fixed a bug in PostSharedBufferToScript that stops after about 32000x1MB buffers are posted. ([Issue #3360] (https://github.com/MicrosoftEdge/WebView2Feedback/issues/3360)). 
-* (Runtime) Fixed the issue where navigation will always take place within ScriptDialogOpening event callback.  ([Issue #3355](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3355))
-* (Runtime) Fixed an issue to support 'BackForwardCache' flag.
-* Fixed visual hosted owned windows issue where clicking into find bar from outside window did not activate find bar.
+* (Runtime) Fixed a bug in `PostSharedBufferToScript` that stops after about 32000x1MB buffers are posted. ([Issue #3360] (https://github.com/MicrosoftEdge/WebView2Feedback/issues/3360)). 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postsharedbuffertoscript)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.PostSharedBufferToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postsharedbuffertoscript)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2_17` interface:
+   * [ICoreWebView2_17::PostSharedBufferToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2_17#postsharedbuffertoscript)
+
+---
+
+* (Runtime) Fixed an issue where navigation will always take place within a `ScriptDialogOpening` event callback.  ([Issue #3355](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3355))
+* (Runtime) Fixed an issue to support the `BackForwardCache` flag.
+* Fixed an issue with visual hosted owned windows, where clicking into the Find bar from outside the window didn't activate the Find bar.
 
 
 <!-- ====================================================================== -->
@@ -398,7 +437,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 * Fixed the issue by disabling the editable `.pdf` temporary cached data recovery function in WebView2.  ([Issue #3274](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3274))
 * Disabled the Chrome Web Store info banner that displays the option to allow extensions installation.  ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
 * Fixed an issue with new download items not getting called out by screen readers.
-* Fixed a bug where visually hosted owned windows didn't map mouse pointer input correctly.
+* Fixed a bug where visual hosted owned windows didn't map mouse pointer input correctly.
 * Fixed a bug where `DownloadStarting` was getting raised for a canceled **Save As** dialog.  (Runtime)
 
 
