@@ -176,7 +176,13 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * [ICoreWebView2Profile5::get_CookieManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1774.30&preserve-view=true#get_cookiemanager)
 
 ---
+<!-- ------------------------------ -->
+###### Bug fixes
 
+* Fixed an issue to allow app to inject initial scripts by calling AddScriptToExecuteOnDocumentCreated before new window is created.  ([Issue #2491](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2491))
+* (Runtime) Fixed an issue that was causing the X-Edge-Shopping-Flag header to be added to web requests coming from WebView2. ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
+
+---
 
 <!-- ====================================================================== -->
 ## 1.0.1829-prerelease
@@ -225,13 +231,12 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 <!-- ------------------------------ -->
 ###### Bug fixes
 
-* Disable the Chrome Web Store info banner that displays the option to allow extensions installation. ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
-* [TODO: Add description here] ([Issue #3300](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3300))
-* [TODO: Add description here] ([Issue #3375](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3375))
-* Fixed a bug in PostSharedBufferToScript ([Issue #3360] (https://github.com/MicrosoftEdge/WebView2Feedback/issues/3360)). Runtime only.
-* [TODO: Add description here] ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
-* [TODO: Add description here] ([Issue #3355](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3355))
-* [TODO: Add description here] ([Issue #3025](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3025))
+* Disabled the Chrome Web Store info banner that displays the option to allow extensions installation. ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
+* Fixed an issue that custom menu item was not firing. ([Issue #3300](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3300))
+* Fixed a crash during initialization when creating a WebView2 using WPF and SDK version 1.0.1722.32, which is now deprecated. ([Issue #3375](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3375))
+* (Runtime) Fixed a bug in PostSharedBufferToScript that stops after about 32000x1MB buffers are posted. ([Issue #3360] (https://github.com/MicrosoftEdge/WebView2Feedback/issues/3360)). 
+* (Runtime) Fixed the issue where navigation will always take place within ScriptDialogOpening event callback.  ([Issue #3355](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3355))
+* (Runtime) Fixed an issue to support 'BackForwardCache' flag.
 * Fixed visual hosted owned windows issue where clicking into find bar from outside window did not activate find bar.
 
 
