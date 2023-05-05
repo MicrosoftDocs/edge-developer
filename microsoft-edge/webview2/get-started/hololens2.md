@@ -182,7 +182,7 @@ Now that the WebView plugin for Unity is installed and imported, set up the WebV
 
 1. In the **Inspector** window, you can change the initial URL that's loaded by the WebView2 prefab. To do this, locate the **Current URL** text box, and then enter the desired URL. By default, the prefab loads `https://www.microsoft.com`:
 
-![The Current URL input field for WebView prefab in Unity's Inspector](./hololens2-images/unity_inspector_change_url.png)
+   ![The Current URL input field for WebView prefab in Unity's Inspector](./hololens2-images/unity_inspector_change_url.png)
 
 
 <!-- ====================================================================== -->
@@ -340,9 +340,9 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
 1. Click **Add Open Scene** to add our sample scene to the list of scenes in the build.
 
 1. Under Universal Windows Platform, configure the build settings:
-    * **Target Device**: HoloLens
-    * **Architecture**: ARM64
-    * **Build Type**: D3D Project
+   * **Target Device**: HoloLens
+   * **Architecture**: ARM64
+   * **Build Type**: D3D Project
 
    ![Unity's Build Settings dialog with Universal Windows Platform settings](./hololens2-images/unity_build_settings.png)
 
@@ -354,19 +354,19 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
 
 1. In Visual Studio, select the **Solution Configuration** (such as **Release**). Then set the **Platform** to **ARM64**:
 
-![The Solution Configuration and Platform settings dropdown lists in Visual Studio's toolbar](./hololens2-images/visualstudio_buildconfig.png)
+   ![The Solution Configuration and Platform settings dropdown lists in Visual Studio's toolbar](./hololens2-images/visualstudio_buildconfig.png)
 
 1. Make sure **Developer Mode** is enabled on your PC and on your HoloLens 2 device. See [Enabling Developer Mode](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#enabling-developer-mode) in _Using Visual Studio to deploy and debug_ in the Mixed Reality documentation.
 
 1. Click the **deployment target** drop-down and then do one of the following:
 
-    * If you're building and deploying via Wi-Fi, select **Remote Machine** as the deployment target:
+   * If you're building and deploying via Wi-Fi, select **Remote Machine** as the deployment target:
 
-      !['Remote Machine' selected in the 'deployment target' dropdown menu in Visual Studio's toolbar](./hololens2-images/visualstudio_select_remote.png)
+     !['Remote Machine' selected in the 'deployment target' dropdown menu in Visual Studio's toolbar](./hololens2-images/visualstudio_select_remote.png)
 
-    * If you're building and deploying via USB, select **Device** as the deployment target:
+   * If you're building and deploying via USB, select **Device** as the deployment target:
 
-      !['Device' selected in the 'deployment target' dropdown menu in Visual Studio's toolbar](./hololens2-images/visualstudio_select_device.png)
+     !['Device' selected in the 'deployment target' dropdown menu in Visual Studio's toolbar](./hololens2-images/visualstudio_select_device.png)
 
 
 <!-- ------------------------------ -->
@@ -379,20 +379,20 @@ To set up your remote connection:
 1. Click the **Debugger to launch** drop-down and then select **Remote Machine**.
 
 1. In the **Machine Name** field, enter the IP address of your device, as shown below.
-    * You can find the IP address on your HoloLens 2 under **Settings > Network & Internet > Advanced Options**.
-    * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
+   * You can find the IP address on your HoloLens 2 under **Settings > Network & Internet > Advanced Options**.
+   * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
 
 1. Set the **Authentication Type** to **Universal (Unencrypted Protocol)**:
 
-    ![The Debugging settings in Project Settings dialog with Machine Name set](./hololens2-images/visualstudio_remote_ip.png)
+   ![The Debugging settings in Project Settings dialog with Machine Name set](./hololens2-images/visualstudio_remote_ip.png)
 
 1. Click the **OK** button.
 
 1. Build, deploy, and debug your app based on your needs:
-    * To build, deploy, and start debugging, select **Debug > Start debugging**.
-    * To build and deploy without debugging, select **Build > Deploy Solution**.
+   * To build, deploy, and start debugging, select **Debug > Start debugging**.
+   * To build and deploy without debugging, select **Build > Deploy Solution**.
 
-2. The first time you deploy an app to your HoloLens 2 from your PC, you'll be prompted for a PIN. Follow the [Pairing your device](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#pairing-your-device) instructions.
+1. The first time you deploy an app to your HoloLens 2 from your PC, you'll be prompted for a PIN. Follow the [Pairing your device](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#pairing-your-device) instructions.
 
 
 <!-- ====================================================================== -->
