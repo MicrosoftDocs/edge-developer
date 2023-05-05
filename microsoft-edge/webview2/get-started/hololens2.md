@@ -99,13 +99,11 @@ Once you have completed the setup, return to this page and continue with the nex
 
 Before you can start developing a HoloLens 2 app with WebView2, you'll need to set up your Unity project for HoloLens 2 development. To prepare your project for mixed reality development, follow the steps in [Unity development for HoloLens 2](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr,D365,hl2) in the Mixed Reality documentation. For a step-by-step walkthrough of configuring a Unity project, see [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk).
 
-Once you have your Unity project ready for HoloLens 2 development, you'll need to configure the Mixed Reality Toolkit (MRTK) in your project.  To set up the Mixed Reality Toolkit (MRTK) in your Unity project, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
-
-After you've installed the Mixed Reality Feature Tool and the Mixed Reality Toolkit (MRTK), the MRTK assets and prefabs appear in your Unity project, ready for use.
-
 
 <!-- ====================================================================== -->
 ## Step 3 - Install Mixed Reality Feature Tool and Mixed Reality Toolkit (MRTK)
+
+Once you have your Unity project ready for HoloLens 2 development, you'll need to configure the Mixed Reality Toolkit (MRTK) in your project.
 
 1. First, [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center.
 
@@ -114,6 +112,8 @@ After you've installed the Mixed Reality Feature Tool and the Mixed Reality Tool
 1. Run the downloaded Mixed Reality Feature Tool executable, and follow the prompts to install the Mixed Reality Toolkit (MRTK) and any additional required packages for HoloLens 2 development.
 
    The Mixed Reality Feature Tool allows you to select and install the appropriate versions of the Mixed Reality Toolkit (MRTK), along with other Mixed Reality features, directly into your Unity project.
+
+After you've installed the Mixed Reality Feature Tool and the Mixed Reality Toolkit (MRTK), the MRTK assets and prefabs appear in your Unity project, ready for use.
 
 Continue to the next step.
 
@@ -393,7 +393,7 @@ To set up your remote connection:
     * To build, deploy, and start debugging, select **Debug > Start debugging**.
     * To build and deploy without debugging, select **Build > Deploy Solution**.
 
-1. The first time you deploy an app to your HoloLens 2 from your PC, you'll be prompted for a PIN. Follow the **Pairing your device**<!--todo--> instructions below.
+2. The first time you deploy an app to your HoloLens 2 from your PC, you'll be prompted for a PIN. Follow the [Pairing your device](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#pairing-your-device) instructions.
 
 
 <!-- ====================================================================== -->
@@ -448,7 +448,7 @@ When developing a HoloLens 2 Unity app with WebView2, be aware of some limitatio
 
 * **Pop-ups**: Pop-ups don't work well within WebView2 inside Unity apps on HoloLens 2, but they work fine in 2D XAML apps on the device. Avoid pop-ups and use alternative techniques or UI designs, such as custom pop-up-like elements within the WebView using HTML, CSS, and JavaScript.
 
-* **New windows**: WebView2 instances on HoloLens 2 navigate within the same window by default, unlike on Desktop. Follow this default behavior for a better user experience.
+* **New windows**: WebView2 instances on HoloLens 2 navigate within the same window by default, unlike on Desktop. Follow this default behavior for a better user experience. Additionally, the DevTools window cannot be launched.
 
 * **Enterprise authentication**: Automatic Single Sign-On (SSO) leveraging OS-level tokens is currently not supported in WebView2 on HoloLens 2. Users can still sign in by providing credentials, except for cases requiring device-level authentication. Cookie storage works as expected.
 
