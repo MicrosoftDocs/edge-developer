@@ -202,8 +202,6 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 * (Runtime) Fixed an issue that was causing the `X-Edge-Shopping-Flag` header to be added to web requests that are coming from WebView2. ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
 
----
-
 
 <!-- ====================================================================== -->
 ## 1.0.1829-prerelease
@@ -246,6 +244,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
    * [ICoreWebView2Profile6::put_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#put_ispasswordautosaveenabled)
    * [ICoreWebView2Profile6::get_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#get_isgeneralautofillenabled)
    * [ICoreWebView2Profile6::put_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#put_isgeneralautofillenabled)
+
 ---
 
 
@@ -598,6 +597,8 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ---
 
+
+<!-- ------------------------------ -->
 APIs for managing tracking prevention:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -644,6 +645,8 @@ APIs for managing tracking prevention:
 
 ---
 
+
+<!-- ------------------------------ -->
 *  APIs to manage the value of the controller's script locale:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -1440,6 +1443,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
+
 <!-- ------------------------------ -->
 *  Added support for API to disable back and forward navigation:
 
@@ -1519,6 +1523,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ---
 
+
 <!-- ---------- -->
 ###### Bug fixes
 
@@ -1580,6 +1585,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
    * [ICoreWebView2ExperimentalControllerOptions::LocaleRegion property (get](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontrolleroptions?view=webview2-1.0.1549-prerelease&preserve-view=true#get_localeregion), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontrolleroptions?view=webview2-1.0.1549-prerelease&preserve-view=true#put_localeregion)
 
 ---
+
 
 *  Added support for the tracking prevention API:
 
