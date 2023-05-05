@@ -1506,7 +1506,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
-This WebView2 SDK release has the same [bug fixes](#bug-fixes-1466-prerelease) that are in WebView2 SDK 1.0.1466-prerelease.
+This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1466-prerelease](#bug-fixes-for-101466-prerelease).
 
 
 <!-- ====================================================================== -->
@@ -1670,7 +1670,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
-This WebView2 SDK release has the same [bug fixes](#bug-fixes-1414-prerelease) that are in WebView2 SDK 1.0.1414-prerelease.
+This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1414-prerelease](#bug-fixes-for-101414-prerelease).
 
 
 <!-- ====================================================================== -->
@@ -1772,8 +1772,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ---
 
 
-<!-- ---------- -->
-###### <a id="bug-fixes-1466-prerelease"/>Bug fixes
+<!-- another section links to here -->
+###### Bug fixes for 1.0.1466-prerelease
 
 *   Fixed a bug in which the custom header title in print settings could be wrong. ([Issue #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093))
 *   Display `AllowedCertificateAuthorities` in `add_ClientCertificateRequested` event as a `Base64` string. (Runtime) ([Issue #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346))
@@ -1934,8 +1934,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ---
 
 
-<!-- ---------- -->
-###### <a id="bug-fixes-1414-prerelease"/>Bug fixes
+<!-- another section links to here -->
+###### Bug fixes for 1.0.1414-prerelease
 
 *   Removed three-dot menu with a broken link from the downloads page. (Runtime)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
 *   Fixed a bug in the WebView2 WinRT JS Projection tool (wv2winrt) where C++20 projects failed to compile.  ([Issue #2768](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2768))
