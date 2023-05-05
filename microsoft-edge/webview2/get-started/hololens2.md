@@ -62,13 +62,13 @@ You use the Unity game engine and Visual Studio to create your HoloLens 2 projec
 <!-- ------------------------------ -->
 ###### Mixed Reality Toolkit (MRTK)
 
+The **Mixed Reality Toolkit (MRTK)** is a Microsoft-driven open-source project that accelerates the development of mixed reality applications in Unity by providing essential components and features for developing mixed reality experiences.  The Mixed Reality Toolkit (MRTK) provides a collection of scripts, components, and prefabs specifically designed to help you create performant and intuitive mixed reality experiences on HoloLens 2 devices.
+
 | Component | Description |
 |---|---|
-| Mixed Reality Feature Tool | Installs the **Microsoft Mixed Reality WebView** plugin for Unity. |
-| Mixed Reality Toolkit (MRTK) | Scripts, components, and prefabs specifically designed for building performant and intuitive mixed reality experiences on HoloLens 2 devices in Unity. |
-| Microsoft Mixed Reality WebView plugin for Unity | Enables the integration of WebView2 functionality into your HoloLens 2 app, within Unity. |
-
-The **Mixed Reality Toolkit (MRTK)** is a Microsoft-driven open-source project that accelerates the development of mixed reality applications in Unity by providing essential components and features for developing mixed reality experiences.  The Mixed Reality Toolkit (MRTK) provides a collection of scripts, components, and prefabs specifically designed to help you create performant and intuitive mixed reality experiences on HoloLens 2 devices.
+| Mixed Reality Feature Tool | Installs the Mixed Reality Toolkit (MRTK) and the **Microsoft Mixed Reality WebView** plugin for Unity. |
+| Mixed Reality Toolkit (MRTK) | Scripts, components, and prefabs specifically designed for building performant and intuitive mixed reality experiences on **HoloLens 2** devices in Unity. |
+| Microsoft Mixed Reality WebView plugin for Unity | Integrates **WebView2** functionality into your HoloLens 2 app, within Unity.  Wraps the WebView2 control, handles rendering, and directs input to the WebView2 control. Enables communication between JavaScript and Unity via messages and events. |
 
 
 <!-- ------------------------------ -->
