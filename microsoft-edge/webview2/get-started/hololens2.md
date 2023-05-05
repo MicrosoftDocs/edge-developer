@@ -44,17 +44,42 @@ Follow the major Step sections in sequence, below.
 <!-- ------------------------------ -->
 #### About HoloLens 2, Unity, Mixed Reality Toolkit, and WebView2
 
-**HoloLens 2** is a groundbreaking, untethered holographic device, offering a hands-free and immersive mixed reality experience. It seamlessly overlays digital information onto the real world, rendering high-definition holograms that stay in place and respond naturally to interaction.
 
-You use the Unity game engine and Visual Studio to create your HoloLens 2 project. The Mixed Reality Toolkit (MRTK) provides essential components and features for developing mixed reality experiences. The Microsoft Mixed Reality WebView plugin for Unity enables the integration of WebView2 functionality into your HoloLens 2 app.
+<!-- ------------------------------ -->
+###### HoloLens 2
 
-The Mixed Reality Toolkit (MRTK) is a Microsoft-driven open source project that accelerates the development of mixed reality applications in Unity. This toolkit provides a collection of scripts, components, and prefabs designed to help you create performant and intuitive mixed reality experiences for HoloLens 2 devices.
+**HoloLens 2** is a groundbreaking, untethered holographic device, offering a hands-free and immersive mixed reality experience. HoloLens 2 seamlessly overlays digital information onto the real world, rendering high-definition holograms that stay in place and respond naturally to interaction.
+
+You use the Unity game engine and Visual Studio to create your HoloLens 2 project.
+
+
+<!-- ------------------------------ -->
+###### Unity
 
 **Unity**, a versatile game engine, is a popular choice for creating 3D applications, including mixed reality experiences for HoloLens 2 devices, due to its extensive features and robust capabilities for augmented reality (AR), virtual reality (VR), and mixed reality (MR).
 
-The **Mixed Reality Toolkit (MRTK)** is a Microsoft-driven open source project designed to accelerate the development of mixed reality applications in Unity. The Mixed Reality Toolkit (MRTK) provides a collection of scripts, components, and prefabs specifically designed for building performant and intuitive mixed reality experiences on HoloLens 2 devices.
 
-In Unity, the **Microsoft Mixed Reality WebView** plugin can be installed by using the **Mixed Reality Feature Tool**. The WebView plugin for Unity simplifies the integration of WebView2 functionality into your HoloLens 2 app by wrapping the WebView2 control, automatically handling rendering, and automatically directing input to the WebView2 control. This plugin also manages interop between Unity and WebView2, enabling communication between JavaScript and Unity via messages and events.
+<!-- ------------------------------ -->
+###### Mixed Reality Toolkit (MRTK)
+
+| Component | Description |
+|---|---|
+| Mixed Reality Feature Tool | Installs the **Microsoft Mixed Reality WebView** plugin for Unity. |
+| Mixed Reality Toolkit (MRTK) | Scripts, components, and prefabs specifically designed for building performant and intuitive mixed reality experiences on HoloLens 2 devices in Unity. |
+| Microsoft Mixed Reality WebView plugin for Unity | Enables the integration of WebView2 functionality into your HoloLens 2 app, within Unity. |
+
+The **Mixed Reality Toolkit (MRTK)** is a Microsoft-driven open-source project that accelerates the development of mixed reality applications in Unity by providing essential components and features for developing mixed reality experiences.  The Mixed Reality Toolkit (MRTK) provides a collection of scripts, components, and prefabs specifically designed to help you create performant and intuitive mixed reality experiences on HoloLens 2 devices.
+
+
+<!-- ------------------------------ -->
+###### The Microsoft Mixed Reality WebView plugin for Unity
+
+The Microsoft Mixed Reality WebView plugin for Unity enables the integration of WebView2 functionality into your HoloLens 2 app.  This WebView plugin for Unity simplifies the integration of WebView2 functionality into your HoloLens 2 app by wrapping the WebView2 control, automatically handling rendering, and automatically directing input to the WebView2 control.
+
+This plugin also manages interop between Unity and WebView2, enabling communication between JavaScript and Unity via messages and events.
+
+In Unity, the **Microsoft Mixed Reality WebView** plugin for Unity can be installed by using the **Mixed Reality Feature Tool**.
+
 
 By combining HoloLens 2, Unity, the Mixed Reality Toolkit, and WebView2, you can create immersive mixed-reality experiences that seamlessly integrate web content.
 
