@@ -10,7 +10,9 @@ ms.date: 05/02/2023
 ---
 # Get started with WebView2 in HoloLens 2 Unity apps (Preview)
 
-This tutorial is for developers using WebView2 in immersive HoloLens 2 Unity applications.  WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability.
+This tutorial is for developers using WebView2 in immersive HoloLens 2 Unity applications.
+
+WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability.  The WebView2 Preview is available in the Insider preview for Microsoft HoloLens.  To access this Preview, you must be enrolled in the Windows Insider Program; see [Start receiving Insider builds](/hololens/hololens-insider#start-receiving-insider-builds) in _Insider preview for Microsoft HoloLens_.
 
 WebView2 is only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
 
@@ -25,12 +27,6 @@ In this tutorial, you:
 * Add the Microsoft Mixed Reality WebView plugin for Unity, by using the Mixed Reality Feature Tool.
 * Configure a WebView2 prefab that displays webpage content in your HoloLens 2 app.
 * Learn about WebView2 concepts and interactions in Unity.
-
-
-<!-- ------------------------------ -->
-#### Insider preview for Microsoft HoloLens 2
-
-WebView2 Preview is available in HoloLens 2 Insider Preview.  To access the HoloLens 2 Insider Preview, you must be enrolled in the Windows Insider Program > Insider preview for Microsoft HoloLens.  See [Start receiving Insider builds](/hololens/hololens-insider#start-receiving-insider-builds) in _Insider preview for Microsoft HoloLens_.
 
 
 <!-- ------------------------------ -->
