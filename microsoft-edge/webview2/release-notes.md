@@ -174,31 +174,6 @@ The following APIs have been promoted to Stable and are now included in this Rel
 ---
 
 
-<!-- ------------------------------ -->
-###### Bug fixes
-
-* Fixed an issue to allow an app to inject initial scripts by calling `AddScriptToExecuteOnDocumentCreated` before a new window is created.  ([Issue #2491](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2491))
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `ICoreWebView2` interface:
-   * [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated)
-
----
-
-* (Runtime) Fixed an issue that was causing the `X-Edge-Shopping-Flag` header to be added to web requests that are coming from WebView2. ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
-
-
 <!-- ====================================================================== -->
 ## 1.0.1829-prerelease
 
@@ -250,6 +225,26 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ------------------------------ -->
 ###### Bug fixes
 
+* Fixed an issue to allow an app to inject initial scripts by calling `AddScriptToExecuteOnDocumentCreated` before a new window is created.  ([Issue #2491](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2491))
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2` interface:
+   * [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated)
+
+---
+
+* (Runtime) Fixed an issue that was causing the `X-Edge-Shopping-Flag` header to be added to web requests that are coming from WebView2. ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
 * Disabled the Chrome Web Store info banner that displays the option to allow extensions installation. ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
 * Fixed an issue where a custom menu item wasn't firing. ([Issue #3300](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3300))
 * Fixed a crash during initialization when creating a WebView2 using WPF and SDK version 1.0.1722.32, which is now deprecated.  (See [SDK 1.0.1722.32 is deprecated](#sdk-10172232-is-deprecated) below.)  ([Issue #3375](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3375))
@@ -1013,7 +1008,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ------------------------------ -->
-###### Bug Fixes
+###### Bug fixes
 
 *  Fixed a bug in `PrintAsync` and `PrintToPdfStreamAsync` that throws an exception when print settings are null.
 *  Improved handling of apps running elevated.  (Runtime)
