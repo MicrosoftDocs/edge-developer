@@ -214,8 +214,12 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ------------------------------ -->
-###### Promotions <!-- Seems we don't have experimental features, only pre-release stable this time.-->
+###### Promotions
 
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
 * Enhancing multiple profiles support: allows to configure General Autofill and Password Autosave settings for different profiles.  
 
 ##### [.NET/C#](#tab/dotnetcsharp)
