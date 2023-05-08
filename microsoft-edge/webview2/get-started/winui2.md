@@ -196,6 +196,8 @@ Next, you install the **Microsoft.UI.Xaml** package for this project.  Microsoft
 
    For version 2.8.0 or later, in the **Dependencies** section at the bottom, **Microsoft.Web.WebView2** is listed.
 
+   Note that for HoloLens 2 development, the **Microsoft.Web.WebView2** package must be version 1.0.1722.45 or higher, which may be higher than the default.
+
 1. In the middle panel, in the **Version** drop-down, make sure **Latest stable** is selected, version 2.8.0 or later.
 
 1. Click the  **Install** button.
