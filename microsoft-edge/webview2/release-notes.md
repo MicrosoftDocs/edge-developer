@@ -220,7 +220,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 <!-- ------------------------------ -->
 ###### Experimental features
 
-* The `IsPasswordAutosaveEnabled` API to tbd<!--todo-->
+* The `IsPasswordAutosaveEnabled` API allows setting up whether the browser can automatically save passwords input by end users. 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
