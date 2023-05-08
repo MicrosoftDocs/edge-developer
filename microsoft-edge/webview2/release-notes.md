@@ -218,9 +218,9 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ------------------------------ -->
-###### Experimental features
+###### Promotions <!-- Seems we don't have experimental features, only pre-release stable this time.-->
 
-* The `IsPasswordAutosaveEnabled` API allows setting up whether the browser can automatically save passwords input by end users. 
+* Enhancing multiple profiles support: allows to configure General Autofill and Password Autosave settings for different profiles.  
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
