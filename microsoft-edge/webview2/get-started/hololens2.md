@@ -28,6 +28,12 @@ In this tutorial, you:
 
 
 <!-- ------------------------------ -->
+#### Insider preview for Microsoft HoloLens 2
+
+WebView2 Preview is available in HoloLens 2 Insider Preview.  To access the HoloLens 2 Insider Preview, you must be enrolled in the Windows Insider Program > Insider preview for Microsoft HoloLens.  See [Start receiving Insider builds](/hololens/hololens-insider#start-receiving-insider-builds) in _Insider preview for Microsoft HoloLens_.
+
+
+<!-- ------------------------------ -->
 #### Completed project
 
 A completed version of this Getting Started project is available in the **WebView2Samples** repo. You can use the completed project (from the repo or from following the steps below) as a baseline to add more WebView2 functionality and other features to your HoloLens 2 Unity app.
