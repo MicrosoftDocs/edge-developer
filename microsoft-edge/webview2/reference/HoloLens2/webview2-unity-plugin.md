@@ -1,5 +1,5 @@
 ---
-title: WebView plugin for Unity
+title: WebView plugin for Unity API Reference (Preview)
 description: API Reference for Microsoft Mixed Reality WebView plugin for Unity.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/08/2023
 ---
-# Mixed Reality WebView Plugin for Unity
+# Mixed Reality WebView Plugin for Unity API Reference (Preview)
 The **Microsoft Mixed Reality WebView plugin for Unity** enables the integration of WebView2 functionality into your HoloLens 2 app.  This WebView plugin for Unity simplifies the integration of WebView2 functionality into your HoloLens 2 app by wrapping the WebView2 control, automatically handling rendering, and automatically directing input to the WebView2 control.
 
 This plugin also manages interop between Unity and WebView2, enabling communication between JavaScript and Unity via messages and events.
