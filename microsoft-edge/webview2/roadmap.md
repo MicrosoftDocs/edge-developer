@@ -64,9 +64,10 @@ You can access WebView2 controls in your UWP applications using [Windows UI Libr
 
 You can access WebView2 controls in your applications using [Windows UI Library 3 (WinUI 3)](/uwp/toolkits/winui3/index) with the Windows App SDK.  This has reached GA.
 
-###### Xbox and XAML limitations
+###### XAML limitation
 
-This version of WebView 2 will only work on PC-class and HoloLens 2 devices, offering the full range of capability found in the WinUI 3 variant. Xbox and XAML Island support requires additional work, and these devices and scenarios may be considered at a future point in time.
+This version of WebView 2 will only work on PC-class and HoloLens 2 devices, offering the full range of capability found in the WinUI 3 variant.
+XAML Island support requires additional work and may be considered for future releases.
 
 
 <!-- ====================================================================== -->
