@@ -66,7 +66,6 @@ You can access WebView2 controls in your applications using [Windows UI Library 
 
 ###### XAML limitation
 
-This version of WebView 2 will only work on PC-class and HoloLens 2 devices, offering the full range of capability found in the WinUI 3 variant.
 XAML Island support requires additional work and may be considered for future releases.
 
 
@@ -79,4 +78,4 @@ The following technologies are now available in a Preview release.
 <!-- ------------------------------ -->
 #### HoloLens 2
 
-Starting with the Windows 11 update for HoloLens 2, a WebView2 preview is now available on HoloLens 2 devices.  For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
+Starting with the Windows 11 update for HoloLens 2, a WebView2 Preview is now available on HoloLens 2 devices.  The WebView2 Preview is available in the Insider Preview for Microsoft HoloLens.  To access this preview, you must be enrolled in the Windows Insider Program; see [Start receiving Insider builds](/hololens/hololens-insider#start-receiving-insider-builds) in _Insider preview for Microsoft HoloLens_.  See also [Update HoloLens 2](/hololens/hololens-update-hololens).
