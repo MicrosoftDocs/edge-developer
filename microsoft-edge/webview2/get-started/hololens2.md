@@ -114,9 +114,9 @@ The Mixed Reality Feature Tool simplifies the process of discovering, installing
 
    The Mixed Reality Feature Tool allows you to select and install the appropriate versions of the Mixed Reality Toolkit (MRTK), along with other Mixed Reality features, directly into your Unity project.
 
-For a detailed step-by-step walkthrough of configuring the Unity project, see [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk).
-
 After you've used the Mixed Reality Feature Tool to install the Mixed Reality Toolkit (MRTK), the MRTK assets and prefabs will appear in your Unity project and the MRTK will guide you through configuring the Open XR plugin for your project.
+
+For a detailed step-by-step walkthrough of configuring the Unity project, see [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk).
 
 
 <!-- ====================================================================== -->
