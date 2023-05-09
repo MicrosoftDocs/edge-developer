@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2023
+ms.date: 05/08/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -56,16 +56,6 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
-<!-- maintenance notes: version # patterns to check:
-## 1.0.####.##
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-
-## 1.0.####-prerelease
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
--->
-
 <!--
 Cross-framework API conventions
 
@@ -84,7 +74,18 @@ Async methods:
 <!-- ------------------------------ -->
 #### Experimental APIs, Prerelease SDKs, and Release SDKs
 
-APIs are initially introduced as Experimental APIs.  Then they become Stable APIs in a Prerelease SDK package, and soon after, they become Stable APIs in a Release SDK package.  For more information, see [Phases of introducing APIs](./concepts/versioning.md) in _Understand the different WebView2 SDK versions_.
+New APIs are added in phases, as follows:
+
+1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.
+
+1. Then they become Stable APIs in a Prerelease SDK package.
+
+1. Soon after, they become Stable APIs in a Release SDK package.
+
+![Diagram of phases of introducing new APIs](./release-notes-images/phases-of-adding-apis.png)
+<!-- .png is used by webview2/release-notes.md and webview2/concepts/versioning.md -->
+
+For more information, see [Phases of introducing APIs](./concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
 
 <!-- terminology:
 APIs are Experimental or Stable
@@ -92,6 +93,188 @@ SDKs/packages are Prerelease or Release
 -->
 
 The following sections cover either a Release SDK package (1.0.####.##) or a Prerelease SDK package (1.0.####-prerelease).
+
+<!-- maintenance notes: version # patterns to check:
+## 1.0.####.##
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+
+## 1.0.####-prerelease
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
+-->
+
+
+<!-- ====================================================================== -->
+## 1.0.1774.30
+
+Release Date: May 8, 2023
+
+[NuGet package for WebView2 SDK 1.0.1774.30](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1774.30)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 113.0.1774.30 or higher.
+
+
+<!-- ------------------------------ -->
+#### General
+
+###### Promotions
+
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
+
+<!-- ------------------------------ -->
+* The File API allows accessing a DOM `File` object passed via `WebMessage`.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2File Class](/dotnet/api/microsoft.web.webview2.core.corewebview2file?view=webview2-dotnet-1.0.1774.30&preserve-view=true)
+   * [CoreWebView2File.Path Property](/dotnet/api/microsoft.web.webview2.core.corewebview2file.path?view=webview2-dotnet-1.0.1774.30&preserve-view=true)
+* `CoreWebView2WebMessageReceivedEventArgs` Class:
+   * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs.additionalobjects?view=webview2-dotnet-1.0.1774.30&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2File Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file?view=webview2-winrt-1.0.1774.30&preserve-view=true)
+   * [CoreWebView2File.Path Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file?view=webview2-winrt-1.0.1774.30&preserve-view=true#path)
+* `CoreWebView2WebMessageReceivedEventArgs` Class:
+   * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webmessagereceivedeventargs?view=webview2-winrt-1.0.1774.30&preserve-view=true#additionalobjects)
+   
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2File interface](/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1774.30&preserve-view=true)
+   * [ICoreWebView2File::get_Path](/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1774.30&preserve-view=true#get_path)<!--no put-->
+* [ICoreWebView2ObjectCollectionView interface](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1774.30&preserve-view=true)
+   * [ICoreWebView2ObjectCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1774.30&preserve-view=true#get_count)<!--no put-->
+   * [ICoreWebView2ObjectCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1774.30&preserve-view=true#getvalueatindex)
+* [ICoreWebView2WebMessageReceivedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1774.30&preserve-view=true)
+   * [ICoreWebView2WebMessageReceivedEventArgs2::get_AdditionalObjects](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1774.30&preserve-view=true#get_additionalobjects)<!--no put-->
+
+---
+
+
+<!-- ------------------------------ -->
+* The Profile Cookie Manager API supports profile management.  The `CookieManager` property enables the host app to get the cookie manager for the profile.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.CookieManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.cookiemanager?view=webview2-dotnet-1.0.1774.30&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.CookieManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1774.30&preserve-view=true#cookiemanager)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2Profile5` interface:
+   * [ICoreWebView2Profile5::get_CookieManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1774.30&preserve-view=true#get_cookiemanager)<!--no put-->
+
+---
+
+
+<!-- ------------------------------ -->
+###### Bug fixes
+
+* Fixed an issue to allow an app to inject initial scripts by calling `AddScriptToExecuteOnDocumentCreated` before a new window is created.  ([Issue #2491](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2491))
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2` interface:
+   * [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated)
+
+---
+
+* (Runtime) Fixed an issue that was causing the `X-Edge-Shopping-Flag` header to be added to web requests that are coming from WebView2. ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
+
+
+<!-- ====================================================================== -->
+## 1.0.1829-prerelease
+
+Release Date: May 8, 2023
+
+[NuGet package for WebView2 SDK 1.0.1829-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1829-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 115.0.1829.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### General
+
+
+<!-- ------------------------------ -->
+###### Promotions
+
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+* Enhancing multiple profiles support: allows to configure General Autofill and Password Autosave settings for different profiles.  
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.isgeneralautofillenabled?view=webview2-dotnet-1.0.1829-prerelease&preserve-view=true)
+   * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.ispasswordautosaveenabled?view=webview2-dotnet-1.0.1829-prerelease&preserve-view=true)
+
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1829-prerelease&preserve-view=true#isgeneralautofillenabled)
+   * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1829-prerelease&preserve-view=true#ispasswordautosaveenabled)
+
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2Profile6` interface:
+   * [ICoreWebView2Profile6::get_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#get_ispasswordautosaveenabled)
+   * [ICoreWebView2Profile6::put_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#put_ispasswordautosaveenabled)
+   * [ICoreWebView2Profile6::get_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#get_isgeneralautofillenabled)
+   * [ICoreWebView2Profile6::put_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#put_isgeneralautofillenabled)
+
+---
+
+
+<!-- ------------------------------ -->
+###### Bug fixes
+
+* Disabled the Chrome Web Store info banner that displays the option to allow extensions installation. ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
+* Fixed an issue where a custom menu item wasn't firing. ([Issue #3300](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3300))
+* Fixed a crash during initialization when creating a WebView2 using WPF and SDK version 1.0.1722.32, which is now deprecated.  (See [SDK 1.0.1722.32 is deprecated](#sdk-10172232-is-deprecated) below.)  ([Issue #3375](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3375))
+* (Runtime) Fixed a bug in `PostSharedBufferToScript` that stops after about 32000x1MB buffers are posted. ([Issue #3360](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3360))
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postsharedbuffertoscript)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.PostSharedBufferToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postsharedbuffertoscript)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2_17` interface:
+   * [ICoreWebView2_17::PostSharedBufferToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2_17#postsharedbuffertoscript)
+
+---
+
+* (Runtime) Fixed an issue where navigation will always take place within a `ScriptDialogOpening` event callback.  ([Issue #3355](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3355))
+* (Runtime) Fixed an issue to support the `BackForwardCache` flag.
+* Fixed an issue with visual hosted owned windows, where clicking into the Find bar from outside the window didn't activate the Find bar.
 
 
 <!-- ====================================================================== -->
@@ -252,7 +435,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 * Fixed the issue by disabling the editable `.pdf` temporary cached data recovery function in WebView2.  ([Issue #3274](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3274))
 * Disabled the Chrome Web Store info banner that displays the option to allow extensions installation.  ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
 * Fixed an issue with new download items not getting called out by screen readers.
-* Fixed a bug where visually hosted owned windows didn't map mouse pointer input correctly.
+* Fixed a bug where visual hosted owned windows didn't map mouse pointer input correctly.
 * Fixed a bug where `DownloadStarting` was getting raised for a canceled **Save As** dialog.  (Runtime)
 
 
@@ -413,6 +596,8 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ---
 
+
+<!-- ------------------------------ -->
 APIs for managing tracking prevention:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -459,6 +644,8 @@ APIs for managing tracking prevention:
 
 ---
 
+
+<!-- ------------------------------ -->
 *  APIs to manage the value of the controller's script locale:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -826,7 +1013,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ------------------------------ -->
-###### Bug Fixes
+###### Bug fixes
 
 *  Fixed a bug in `PrintAsync` and `PrintToPdfStreamAsync` that throws an exception when print settings are null.
 *  Improved handling of apps running elevated.  (Runtime)
@@ -1255,6 +1442,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
+
 <!-- ------------------------------ -->
 *  Added support for API to disable back and forward navigation:
 
@@ -1334,6 +1522,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ---
 
+
 <!-- ---------- -->
 ###### Bug fixes
 
@@ -1360,7 +1549,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
-This WebView2 SDK release has the same [bug fixes](#bug-fixes-1466-prerelease) that are in WebView2 SDK 1.0.1466-prerelease.
+This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1466-prerelease](#bug-fixes-for-101466-prerelease).
 
 
 <!-- ====================================================================== -->
@@ -1395,6 +1584,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
    * [ICoreWebView2ExperimentalControllerOptions::LocaleRegion property (get](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontrolleroptions?view=webview2-1.0.1549-prerelease&preserve-view=true#get_localeregion), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontrolleroptions?view=webview2-1.0.1549-prerelease&preserve-view=true#put_localeregion)
 
 ---
+
 
 *  Added support for the tracking prevention API:
 
@@ -1524,7 +1714,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
-This WebView2 SDK release has the same [bug fixes](#bug-fixes-1414-prerelease) that are in WebView2 SDK 1.0.1414-prerelease.
+This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1414-prerelease](#bug-fixes-for-101414-prerelease).
 
 
 <!-- ====================================================================== -->
@@ -1626,8 +1816,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ---
 
 
-<!-- ---------- -->
-###### <a id="bug-fixes-1466-prerelease"/>Bug fixes
+<!-- another section links to here -->
+###### Bug fixes for 1.0.1466-prerelease
 
 *   Fixed a bug in which the custom header title in print settings could be wrong. ([Issue #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093))
 *   Display `AllowedCertificateAuthorities` in `add_ClientCertificateRequested` event as a `Base64` string. (Runtime) ([Issue #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346))
@@ -1788,8 +1978,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ---
 
 
-<!-- ---------- -->
-###### <a id="bug-fixes-1414-prerelease"/>Bug fixes
+<!-- another section links to here -->
+###### Bug fixes for 1.0.1414-prerelease
 
 *   Removed three-dot menu with a broken link from the downloads page. (Runtime)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
 *   Fixed a bug in the WebView2 WinRT JS Projection tool (wv2winrt) where C++20 projects failed to compile.  ([Issue #2768](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2768))
@@ -1810,7 +2000,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
-This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1369-prerelease.  See **Bug fixes** in the following section.
+This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1369-prerelease](#bug-fixes-for-101369-prerelease).
 
 
 <!-- ====================================================================== -->
@@ -1857,8 +2047,8 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ---
 
 
-<!-- ---------- -->
-###### Bug fixes
+<!-- another section links to here -->
+###### Bug fixes for 1.0.1369-prerelease
 
 *  Fixed a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
 
