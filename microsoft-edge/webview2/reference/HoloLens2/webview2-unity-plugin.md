@@ -15,6 +15,10 @@ This plugin also manages interop between Unity and WebView2, enabling communicat
 
 This plugin exposes a subset of the functionality available via [CoreWebView2](/dotnet/api/microsoft.web.webview2.core.corewebview2).
 
+WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability.  The WebView2 Preview is available in the Insider Preview for Microsoft HoloLens.  To access this preview, you must be enrolled in the Windows Insider Program; see [Start receiving Insider builds](/hololens/hololens-insider#start-receiving-insider-builds) in _Insider preview for Microsoft HoloLens_.
+
+WebView2 is only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
+
 For information on getting started with the plugin, see [Get started with WebView2 in HoloLens 2 Unity apps](/microsoft-edge/webview2/get-started/hololens2.md).
 
 ### IWebView Interface
