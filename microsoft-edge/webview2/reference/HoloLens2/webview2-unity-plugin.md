@@ -47,6 +47,13 @@ public interface IWebView
 }
 ```
 
+### IWebView Delegates
+```c#
+public delegate void WebView_OnNavigated(string path);
+
+public delegate void WebView_OnCanGoForwardUpdated(bool value);
+```
+
 #### IWebView Events
 ##### IWebView.Navigated Event
 Event triggered when [CoreWebView2.SourceChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.SourceChanged) is raised by WebView.
@@ -200,6 +207,12 @@ public interface IWithPostMessage : IWebView
 }
 ```
 
+### IWithPostMessage Delegates
+
+```c#
+public delegate void WebView_OnPostMessage(string message);
+```
+
 #### IWithPostMessage Events
 
 ##### IWithPostMessage.MessageReceived Method
@@ -243,8 +256,15 @@ public interface IWithBrowserHistory : IWebView
 }
 ```
 
-#### IWithBrowserHistory Events
+### IWithBrowserHistory Delegates
 
+```c#
+public delegate void WebView_OnCanGoBackUpdated(bool value);
+
+public delegate void WebView_OnCloseRequested();
+```
+
+#### IWithBrowserHistory Events
 
 ##### IWithBrowserHistory.CanGoForwardUpdated Event
 Event triggered when a navigation occurs. The event delegate with provide a true value if [CoreWebView2.CanGoForward Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cangoforward) is true.
