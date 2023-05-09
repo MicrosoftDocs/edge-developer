@@ -57,7 +57,7 @@ webView.Navigated += OnNavigated;
 
 private void OnNavigated(string uri)
 {
-    Debug.Log("Navigated!");
+    UrlField.text = uri;
 }
 ```
 
@@ -93,7 +93,7 @@ The height of the WebView texture and the WebView control. Note that the rendere
 The URI currently loaded or being navigated to by the WebView control. **Readonly**
 
 ##### IWebView.OnceCreated Property
-Task executes when the WebView control has been fully initiated and ready to use. **Readonly**
+Task executes when the WebView control has been fully instantiated and ready to use. **Readonly**
 
 ###### Example
 ```c#
@@ -112,7 +112,9 @@ webView.OnceCreated.ContinueWith((task) => {
 
 ##### IWebView.Resize Method
 
-Changes the size of the WebView2 control and the `Texture`. For additional details, see the underlying [CoreWebView2Controller.Bounds property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.bounds).
+Changes the size of the WebView2 control and the `Texture`. For additional details, see the underlying [CoreWebView2Controller.Bounds Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.bounds).
+
+Note that the rendered dimensions of the IWebView instance in the Unity scene is controlled by the GameObject.
 
 ###### Example
 ```c#
@@ -141,15 +143,16 @@ Invoke this method when you are done with a particular IWebView instance to ensu
 ```c#
 void OnDestroy()
 {
-    this.webView.Dispose();
+    webView.Dispose();
 }
 
 ```
 
 ### IWithMouseEvents Interface
+Interface for enable mouse/pointer input for the plugin.
 
 ```c#
-public interface IWithMouseEvents : IWithInputEvents
+public interface IWithMouseEvents
 {
     void MouseEvent(WebViewMouseEventData mouseEvent);
 }
@@ -159,7 +162,7 @@ public interface IWithMouseEvents : IWithInputEvents
 
 ##### IWithMouseEvents.MouseEvent Method
 
-Propagates a `WebViewMouseEventData` event to the WebView control. Depending internal logict, the event results in the [CoreWebView2Controller.SendMouseInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendmouseinput) or the [CoreWebView2Controller.SendPointerInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendpointerinput).
+Propagates a `WebViewMouseEventData` event to the WebView control. Depending internal logic, the event results in the [CoreWebView2Controller.SendMouseInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendmouseinput) or the [CoreWebView2Controller.SendPointerInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendpointerinput).
 
 ###### Example
 ```c#
@@ -184,6 +187,9 @@ public void OnPointerDown(PointerEventData eventData)
 ```
 
 ### IWithPostMessage Interface
+Interface for interop communication between Unity code and hosted WebView code.
+
+To learn more about interop in WebView2 see [Interop of native-side and web-side code](/microsoft-edge/webview2/how-to/communicate-btwn-web-native).
 
 ```c#
 public interface IWithPostMessage : IWebView
@@ -222,6 +228,7 @@ var msg = new MyMessage("updateText", "Updated from Unity!");
 ```
 
 ### IWithBrowserHistory
+Interface for handling browser-history related functionality. For example, navigating to a previous page.
 
 ```c#
 public interface IWithBrowserHistory : IWebView
@@ -237,7 +244,7 @@ public interface IWithBrowserHistory : IWebView
 ```
 
 #### IWithBrowserHistory Events
-Plugin interface for handling browser-history related functionality. For example, navigating to a previous page.
+
 
 ##### IWithBrowserHistory.CanGoForwardUpdated Event
 Event triggered when a navigation occurs. The event delegate with provide a true value if [CoreWebView2.CanGoForward Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cangoforward) is true.
