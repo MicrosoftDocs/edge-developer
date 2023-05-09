@@ -20,6 +20,7 @@ WebView2 is available for the following frameworks or platforms:
 * [Core](/dotnet/api/microsoft.web.webview2.core)
 * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
 * [Windows Forms](/dotnet/api/microsoft.web.webview2.winforms)
+* [Unity/HoloLens2](reference/HoloLens2/webview2-unity-plugin.md)
 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
