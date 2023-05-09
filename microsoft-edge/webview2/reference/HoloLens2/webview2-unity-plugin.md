@@ -13,9 +13,9 @@ The **Microsoft Mixed Reality WebView plugin for Unity** enables the integration
 
 This plugin also manages interop between Unity and WebView2, enabling communication between JavaScript and Unity via messages and events.
 
-This plugin exposes a subset of the functionality available via [CoreWebView2](dotnet/api/microsoft.web.webview2.core.corewebview2?view=webview2-dotnet-1.0.1774.30).
+This plugin exposes a subset of the functionality available via [CoreWebView2](/dotnet/api/microsoft.web.webview2.core.corewebview2).
 
-For information on getting started with the plugin, see [Get started with WebView2 in HoloLens 2 Unity apps](get-started/hololens2.md).
+For information on getting started with the plugin, see [Get started with WebView2 in HoloLens 2 Unity apps](/microsoft-edge/webview2/get-started/hololens2.md).
 
 ### IWebView Interface
 The `IWebView` interface provide the primary interface for the plugin.
@@ -159,7 +159,7 @@ public interface IWithMouseEvents : IWithInputEvents
 
 ##### IWithMouseEvents.MouseEvent Method
 
-Propagates a `WebViewMouseEventData` event to the WebView control. Depending internal logict, the event results in the [CoreWebView2Controller.SendMouseInput Method](dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendmouseinput) or the [CoreWebView2Controller.SendPointerInput Method](dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendpointerinput).
+Propagates a `WebViewMouseEventData` event to the WebView control. Depending internal logict, the event results in the [CoreWebView2Controller.SendMouseInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendmouseinput) or the [CoreWebView2Controller.SendPointerInput Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendpointerinput).
 
 ###### Example
 ```c#

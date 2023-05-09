@@ -1451,7 +1451,7 @@
                 - name: WebView
                   uid: 'WebView2Script!WebView:class'
 
-            - name: HoloLens
+            - name: HoloLens 2
               items:
                 - name: Unity Plugin API Reference
                   href: webview2/reference/HoloLens2/webview2-unity-plugin.md
