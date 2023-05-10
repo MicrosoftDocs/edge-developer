@@ -98,13 +98,13 @@ Once you have completed the setup, return to this page and continue with the nex
 <!-- ====================================================================== -->
 ## Step 2 - Set up Unity for HoloLens 2 development
 
-Before you can start developing a HoloLens 2 app with WebView2, you will need to install Unity.  Follow the steps in [Choosing a Unity version and XR plugin](/windows/mixed-reality/develop/unity/choosing-unity-version) to complete installation of the toolset needed to build Mixed Reality applications.
+Before you can start developing a HoloLens 2 app with WebView2, you will need to install Unity.  Follow the steps in [Choosing a Unity version and XR plugin](/windows/mixed-reality/develop/unity/choosing-unity-version) to complete installation of the toolset that's needed to build mixed reality applications.
 
 
 <!-- ====================================================================== -->
 ## Step 3 - Configure the Unity project for Mixed Reality development
 
-Once you have your tools installed, you're ready to create and configure your project.   The easiest way to get started with HoloLens 2 development is to use the the Mixed Reality Toolkit (MRTK) in your project.  
+Once you have your tools installed, you're ready to create and configure your project.  The easiest way to get started with HoloLens 2 development is to use the Mixed Reality Toolkit (MRTK) in your project.  
 
 The Mixed Reality Feature Tool simplifies the process of discovering, installing, and managing Mixed Reality features, including the Mixed Reality Toolkit, and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
 
@@ -190,17 +190,17 @@ Now that the WebView plugin for Unity is installed and imported, set up the WebV
 <!-- ====================================================================== -->
 ## Step 6 - Test the project
 
-Now that you have added the WebView plugin to the scene, it would be a good time to test your project.   You can test the project directly in the editor, or you can follow these steps to [Build and deploy to the HoloLens](/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens)
+Now that you have added the WebView plugin to the scene, it would be a good time to test your project.  You can test the project directly in the editor, or you can follow these steps to [Build and deploy to the HoloLens](/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens).
 
 <!-- ====================================================================== -->
 ## Step 7 - Extending WebView2 functionality
 
-While the prefab exposes just a single property, there is more functionality exposed on the `WebView` script. Let's take a look at exposing some of this functionality in our project.  First, we recommend reviewing the `WebView` script to get an idea of what's available.  
+Although the prefab exposes just a single property, there's additional functionality exposed on the `WebView` script. Let's take a look at exposing some of this functionality in our project.  First, inspect the `WebView` script to get an idea of what's available.  
 
 > [!TIP]
-> To view the contents of a script in your default code editor, double click the name of the script in the **Inspector** window.
+> To view the contents of a script in your default code editor, double-click the name of the script in the **Inspector** window.
 
-Now that you've reviewed the `WebView` code, let's extend the functionality of our sample. In the remainder of this step, we will add some basic functionality so that the user will have a back button, a go button, and a text field to navigate to a custom URL.  
+Now that you've reviewed the `WebView` code, let's extend the functionality of the sample. In the rest of this step, we'll add some basic functionality so that the user will have a **Back** button, a **Go** button, and a text field to navigate to a custom URL.
 
 1. Modify the scene hierarchy as follows:
    1. Under `MixedRealitySceneContent`, add a new input component (right-click > **UI** > **Input Field - TextMeshPro**). This automatically adds a parent `Canvas` for the component.
@@ -260,7 +260,7 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of o
 
    ![The current scene in Unity's Scene view](./hololens2-images/unity_completed_scene.png)
 
-Now that we have our UI designed, we will now create the code to hook up the buttons.  To do that, we'll create a new script that derives from `WebView`.
+Now that we have our UI designed, we will now create the code to hook up the buttons.  To do that, we'll create a new script that derives from `Microsoft.MixedReality.WebView`.
 
 1. In the **Inspector** window for WebView, click **Add Component**, select **New script**, type **WebViewBrowser**, and then click **Create and add**. Your new component is added to the **Inspector** window.
 
@@ -327,8 +327,8 @@ Now that we have our UI designed, we will now create the code to hook up the but
    ```
 
 
-1. Connect the UI GameObjects to the WebViewBrowser code that we just wrote:
-   1. Select the WebViewBrowser.
+1. Connect the UI `GameObjects` to the `WebViewBrowser` code that we just wrote:
+   1. Select the **WebViewBrowser**.
    1. Drag **Back Button** from the Hierarchy pane into the **Back Button** variable field for the WebView Browser in the Inspector.
    1. Drag **Go Button** from the Hierarchy pane into the **Go Button** variable field for the WebView Browser in the Inspector:
 
@@ -336,7 +336,7 @@ Now that we have our UI designed, we will now create the code to hook up the but
 
 1. You can now test the scene in the Unity Editor. With everything wired up in your scene, you should be able to verify that everything is working as expected. Try testing out the scene by entering a new URL into the `AddressField` text box (must be a full URL including the protocol), then pressing the **Go** button. Make sure the **Back** button works as well.
     
-    It can sometimes be helpful to debug your application running on your HoloLens, and the steps to do so are slightly different than standard debugging within Visual Studio.   Look at the [Managed debugging with Unity](/windows/mixed-reality/develop/unity/managed-debugging-with-unity-il2cpp) article for more information on how to setup and connect to your application running on the HoloLens or inside of the Unity editor.
+   It can sometimes be helpful to debug your application running on your HoloLens, and the steps to do so are slightly different than standard debugging within Visual Studio.  For more information on how to set up and connect to your application running on the HoloLens or inside of the Unity editor, see [Managed debugging with Unity](/windows/mixed-reality/develop/unity/managed-debugging-with-unity-il2cpp).
 
 
 <!-- ====================================================================== -->
@@ -408,7 +408,7 @@ Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial f
 
 * **Limit the number of WebView2 instances**: We suggest using only one instance of WebView2 within a Unity app. Reuse the same instance or tear down and create a new one as needed. Keep in mind that removing the WebView prefab from the scene might not destroy the underlying WebView2 instance. You must call the `Destroy()` method on the game object to destroy it properly.
 
-* **Apply general Unity optimization techniques**: Utilize standard Unity optimization methods, such as occlusion culling or limiting the update rate, to improve WebView2 performance. For more information, see [Performance recommendations for Unity](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity?tabs=openxr) in the Mixed Reality documentation.
+* **Apply general Unity optimization techniques**: To optimize WebView2 performance, use the standard Unity optimization approaches, such as occlusion culling or limiting the update rate. For more information, see [Performance recommendations for Unity](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity?tabs=openxr) in the Mixed Reality documentation.
 
 * **Profile and monitor WebView2 performance**: There are several ways to profile the performance of a HoloLens 2 Unity application:
 
@@ -511,7 +511,7 @@ public class WebViewExample : MonoBehaviour
 <!-- ------------------------------ -->
 #### Input
 
-There are various ways to handle input in Unity for Mixed Reality applications.
+There are various ways to handle input in Unity for mixed reality applications.
 
 * [Input overview — MRTK2](/windows/mixed-reality/mrtk-unity/mrtk2/features/input/overview) - recommended for Mixed Reality Toolkit 2.8 applications.
 * [Input — MRTK3](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) - recommended for Mixed Reality Toolkit 3 applications.
