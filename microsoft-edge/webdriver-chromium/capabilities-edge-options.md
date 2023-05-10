@@ -63,6 +63,7 @@ Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` 
 | `wdpAddress` | string | An address of a Windows Device Portal server to connect to, in the form of `hostname/ip:port`, for example  `127.0.0.1:50080`.  For more information, see [Remote Debugging - Windows 10 devices](../devtools-guide-chromium/remote-debugging/windows.md). |
 | `wdpPassword` | string | Optional password to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled. |
 | `wdpUsername` | string | Optional user name to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled. |
+| `wdpProcessId` | integer | Required processId to use if attaching to a running WebView2 UWP app, for example `36590`. This information can be found in `browserProcessId` on `http://<Device Portal URL>/msedge`. |
 | `webviewOptions` | dictionary | An optional dictionary that can be used to configure the WebView2 environment when launching a WebView2 app. For more information, see [webviewOptions object](#webviewoptions-object). |
 | `windowsApp` | string | Application user model ID of a Microsoft Edge app package to launch, for example `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE`.  Use `windowsApp` instead of `binary` when connecting to a Windows 10X device or emulator using Windows Device Portal. |
 | `windowTypes` | list of strings | A list of window types that are displayed in the list of window handles.  For access to Android webview elements, include `webview` in the list. |
