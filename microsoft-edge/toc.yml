@@ -1410,9 +1410,11 @@
                   href: /dotnet/api/microsoft.web.webview2.winforms
                   displayName: functions, methods
 
-                - name: Unity Plugin
-                  href: /windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin
-                  displayName: functions, methods
+                - name: HoloLens 2
+                  items:
+                    - name: Unity Plugin
+                      href: /windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin
+                      displayName: functions, methods
 
             - name: WinRT
               items:
@@ -1454,12 +1456,6 @@
                   uid: 'WebView2Script!SharedBufferReceivedEvent:class'
                 - name: WebView
                   uid: 'WebView2Script!WebView:class'
-
-            - name: HoloLens 2
-              items:
-                - name: Unity Plugin
-                  href: /windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin
-                  displayName: API Reference for Mixed Reality WebView plugin (Preview)  # top-of-page title
 
         - name: WebView2 end-user FAQ
           href: webview2/concepts/end-user-faq.md
