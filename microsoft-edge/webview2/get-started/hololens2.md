@@ -66,7 +66,7 @@ You can use the Unity game engine and Visual Studio to create your HoloLens 2 pr
 <!-- ------------------------------ -->
 ###### Mixed Reality Feature Tool (MRFT)
 
-The **Mixed Reality Feature Tool (MRTK)** is a new way for developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. A manifest file is a JSON file defining all of your project's packages. Once you've validated the packages to be included, the Mixed Reality Feature tool will automatically download them into your selected Unity project.
+The **Mixed Reality Feature Tool (MRFT)** is a new way for developers to discover, update, and add mixed reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. A manifest file is a JSON file defining all of your project's packages. Once you've validated the packages to be included, the Mixed Reality Feature tool will automatically download them into your selected Unity project.  This guide will use the MRFT to install the **Mixed Reality Toolkit (MRTK)** and the **Microsoft Mixed Reality WebView plugin for Unity**.
 
 
 <!-- ------------------------------ -->
@@ -106,13 +106,13 @@ Before you can start developing a HoloLens 2 app with WebView2, you will need to
 
 Once you have your tools installed, you're ready to create and configure your project.  The easiest way to get started with HoloLens 2 development is to use the Mixed Reality Toolkit (MRTK) in your project.  
 
-The Mixed Reality Feature Tool simplifies the process of discovering, installing, and managing Mixed Reality features, including the Mixed Reality Toolkit, and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
+The Mixed Reality Feature Tool simplifies the process of discovering, installing, and managing mixed reality features, including the Mixed Reality Toolkit, and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
 
 1. First, [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center.   
 
 1. Run the downloaded Mixed Reality Feature Tool executable, and follow the prompts to install the Mixed Reality Toolkit (MRTK) and any additional required packages for HoloLens 2 development.
 
-   The Mixed Reality Feature Tool allows you to select and install the appropriate versions of the Mixed Reality Toolkit (MRTK), along with other Mixed Reality features, directly into your Unity project.
+   The Mixed Reality Feature Tool allows you to select and install the appropriate versions of the Mixed Reality Toolkit (MRTK), along with other mixed reality features, directly into your Unity project.
 
 After you've used the Mixed Reality Feature Tool to install the Mixed Reality Toolkit (MRTK), the MRTK assets and prefabs will appear in your Unity project.  The MRTK will guide you through configuring the Open XR plugin for your project.
 
@@ -398,7 +398,7 @@ When developing a HoloLens 2 Unity app with WebView2, be aware of some limitatio
 
 * **User interactions**: Unlike native HoloLens 2 slates, WebView2 is best interacted with using far-interaction hand rays. Touch-to-swipe and scroll interactions might not be supported.
 
-* **Performance**: Complex websites with heavy use of JavaScript or advanced rendering may impact system performance or the host application's framerate. For general performance-related limitations and recommendations, see [Understanding performance for mixed reality](/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality) in the Mixed Reality documentation. Also see [Performance optimization](#performance-optimization), below.
+* **Performance**: Complex websites with heavy use of JavaScript or advanced rendering may impact system performance or the host application's framerate. For general performance-related limitations and recommendations, see [Understanding performance for mixed reality](/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality) in the mixed reality documentation. Also see [Performance optimization](#performance-optimization), below.
 
 
 <!-- ------------------------------ -->
@@ -408,7 +408,7 @@ Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial f
 
 * **Limit the number of WebView2 instances**: We suggest using only one instance of WebView2 within a Unity app. Reuse the same instance or tear down and create a new one as needed. Keep in mind that removing the WebView prefab from the scene might not destroy the underlying WebView2 instance. You must call the `Destroy()` method on the game object to destroy it properly.
 
-* **Apply general Unity optimization techniques**: To optimize WebView2 performance, use the standard Unity optimization approaches, such as occlusion culling or limiting the update rate. For more information, see [Performance recommendations for Unity](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity?tabs=openxr) in the Mixed Reality documentation.
+* **Apply general Unity optimization techniques**: To optimize WebView2 performance, use the standard Unity optimization approaches, such as occlusion culling or limiting the update rate. For more information, see [Performance recommendations for Unity](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity?tabs=openxr) in the mixed reality documentation.
 
 * **Profile and monitor WebView2 performance**: There are several ways to profile the performance of a HoloLens 2 Unity application:
 
