@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/25/2023
+ms.date: 05/10/2023
 ---
 # Overview of WebView2 features and APIs
 
@@ -2260,6 +2260,69 @@ Receiver:
    * [ICoreWebView2::GetDevToolsProtocolEventReceiver method](/microsoft-edge/webview2/reference/win32/icorewebview2#getdevtoolsprotocoleventreceiver)
 * [ICoreWebView2DevToolsProtocolEventReceiver interface](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver)
 * [ICoreWebView2DevToolsProtocolEventReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceivedeventargs)
+
+---
+
+
+<!-- ====================================================================== -->
+## Incoming from RelNotes 113 (todo)
+
+
+<!-- ------------------------------ -->
+#### File API (todo)
+
+<!-- todo: move up -->
+
+The File API allows accessing a DOM `File` object passed via `WebMessage`.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2File Class](/dotnet/api/microsoft.web.webview2.core.corewebview2file)
+   * [CoreWebView2File.Path Property](/dotnet/api/microsoft.web.webview2.core.corewebview2file.path)
+* `CoreWebView2WebMessageReceivedEventArgs` Class:
+   * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs.additionalobjects)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2File Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file)
+   * [CoreWebView2File.Path Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file#path)
+* `CoreWebView2WebMessageReceivedEventArgs` Class:
+   * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webmessagereceivedeventargs#additionalobjects)
+   
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2File interface](/microsoft-edge/webview2/reference/win32/icorewebview2file)
+   * [ICoreWebView2File::get_Path](/microsoft-edge/webview2/reference/win32/icorewebview2file#get_path)<!--no put-->
+* [ICoreWebView2ObjectCollectionView interface](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview)
+   * [ICoreWebView2ObjectCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview#get_count)<!--no put-->
+   * [ICoreWebView2ObjectCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview#getvalueatindex)
+* [ICoreWebView2WebMessageReceivedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2)
+   * [ICoreWebView2WebMessageReceivedEventArgs2::get_AdditionalObjects](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2#get_additionalobjects)<!--no put-->
+
+---
+
+
+<!-- ------------------------------ -->
+#### Profile Cookie Manager API (todo)
+
+<!-- todo: move up -->
+
+The Profile Cookie Manager API supports profile management.  The `CookieManager` property enables the host app to get the cookie manager for the profile.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.CookieManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.cookiemanager)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.CookieManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#cookiemanager)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2Profile5` interface:
+   * [ICoreWebView2Profile5::get_CookieManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile5#get_cookiemanager)<!--no put-->
 
 ---
 
