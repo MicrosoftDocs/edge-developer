@@ -250,7 +250,7 @@ public void OnPointerDown(PointerEventData eventData)
 
 Interface for interop communication between Unity code and hosted WebView code.
 
-To learn more about interop in WebView2 see [Interop of native-side and web-side code](../../how-to/communicate-btwn-web-native.md).
+To learn more about interop in WebView2, see [Interop of native-side and web-side code](../../how-to/communicate-btwn-web-native.md).
 
 ```c#
 public interface IWithPostMessage : IWebView
