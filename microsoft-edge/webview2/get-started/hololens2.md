@@ -422,7 +422,7 @@ Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial f
 <!-- ------------------------------ -->
 #### Navigation
 
-In the [Step 7 - Extending WebView2 functionality](#step-7---extending-webview2-functionality) step, we touched on some navigation methods. In this section, we'll expand on what we learned.
+In [Step 7 - Extending WebView2 functionality](#step-7---extending-webview2-functionality), we touched on some navigation methods. In this section, we'll expand on what we learned.
 
 
 <!-- ---------- -->
