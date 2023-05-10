@@ -1454,7 +1454,7 @@
             - name: HoloLens 2
               items:
                 - name: Unity Plugin
-                  href: webview2/reference/hololens2/webview2-unity-plugin.md
+                  href: /windows/mixed-reality/develop/advanced-concepts/webview2/webview2-unity-plugin
                   displayName: API Reference for Mixed Reality WebView plugin (Preview)  # top-of-page title
 
         - name: WebView2 end-user FAQ
