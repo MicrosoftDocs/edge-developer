@@ -75,11 +75,8 @@ Async methods:
 #### Experimental APIs, Prerelease SDKs, and Release SDKs
 
 New APIs are added in phases, as follows:
-
 1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.
-
 1. Then they become Stable APIs in a Prerelease SDK package.
-
 1. Soon after, they become Stable APIs in a Release SDK package.
 
 ![Diagram of phases of introducing new APIs](./release-notes-images/phases-of-adding-apis.png)
