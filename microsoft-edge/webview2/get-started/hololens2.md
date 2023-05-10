@@ -104,7 +104,7 @@ Before you can start developing a HoloLens 2 app with WebView2, you will need to
 <!-- ====================================================================== -->
 ## Step 3 - Configure the Unity project for Mixed Reality development
 
-Once you have your tools installed, you are ready to create and configure your project.   The easiest way to get started with HoloLens 2 development is to utilize the the Mixed Reality Toolkit (MRTK) in your project.  
+Once you have your tools installed, you're ready to create and configure your project.   The easiest way to get started with HoloLens 2 development is to use the the Mixed Reality Toolkit (MRTK) in your project.  
 
 The Mixed Reality Feature Tool simplifies the process of discovering, installing, and managing Mixed Reality features, including the Mixed Reality Toolkit, and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
 
@@ -114,7 +114,7 @@ The Mixed Reality Feature Tool simplifies the process of discovering, installing
 
    The Mixed Reality Feature Tool allows you to select and install the appropriate versions of the Mixed Reality Toolkit (MRTK), along with other Mixed Reality features, directly into your Unity project.
 
-After you've used the Mixed Reality Feature Tool to install the Mixed Reality Toolkit (MRTK), the MRTK assets and prefabs will appear in your Unity project and the MRTK will guide you through configuring the Open XR plugin for your project.
+After you've used the Mixed Reality Feature Tool to install the Mixed Reality Toolkit (MRTK), the MRTK assets and prefabs will appear in your Unity project.  The MRTK will guide you through configuring the Open XR plugin for your project.
 
 For a detailed step-by-step walkthrough of configuring the Unity project, see [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk).
 
@@ -340,7 +340,7 @@ Now that we have our UI designed, we will now create the code to hook up the but
 
 
 <!-- ====================================================================== -->
-## STEP 8 - Learn about WebView2 events and interactions in Unity
+## Step 8 - Learn about WebView2 events and interactions in Unity
 
 The Microsoft Mixed Reality WebView plugin for Unity provides events for working with the webview. 
 
@@ -422,7 +422,7 @@ Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial f
 <!-- ------------------------------ -->
 #### Navigation
 
-In Step 7, we touched on some navigation methods. In this section, we'll expand on what we learned.
+In the [Step 7 - Extending WebView2 functionality](#step-7---extending-webview2-functionality) step, we touched on some navigation methods. In this section, we'll expand on what we learned.
 
 
 <!-- ---------- -->
