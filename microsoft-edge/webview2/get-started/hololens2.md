@@ -22,7 +22,7 @@ For WebView2-enabled 2D applications on HoloLens 2, see [Get started with WebVie
 In this tutorial, you:
 
 * Set up your development tools for creating HoloLens 2 Unity apps that use WebView2 to display web content.
-* Install the Mixed Reality Toolkit (MRTK), by using the Mixed Reality Feature Tool.
+* Install the Mixed Reality Toolkit, by using the Mixed Reality Feature Tool.
 * Create an initial Unity project for HoloLens 2 development.
 * Add the Microsoft Mixed Reality WebView plugin for Unity, by using the Mixed Reality Feature Tool.
 * Configure a WebView2 prefab that displays webpage content in your HoloLens 2 app.
@@ -66,13 +66,13 @@ You can use the Unity game engine and Visual Studio to create your HoloLens 2 pr
 <!-- ------------------------------ -->
 ###### Mixed Reality Feature Tool (MRFT)
 
-The **Mixed Reality Feature Tool (MRFT)** is a new way for developers to discover, update, and add mixed reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. A manifest file is a JSON file defining all of your project's packages. Once you've validated the packages to be included, the Mixed Reality Feature tool will automatically download them into your selected Unity project.  This guide will use the MRFT to install the **Mixed Reality Toolkit (MRTK)** and the **Microsoft Mixed Reality WebView plugin for Unity**.
+The **Mixed Reality Feature Tool (MRFT)** is a new way for developers to discover, update, and add mixed reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. A manifest file is a JSON file defining all of your project's packages. Once you've validated the packages to be included, the Mixed Reality Feature tool will automatically download them into your selected Unity project.  This guide will use the MRFT to install the **Mixed Reality Toolkit** and the **Microsoft Mixed Reality WebView plugin for Unity**.
 
 
 <!-- ------------------------------ -->
 ###### Mixed Reality Toolkit (MRTK)
 
-The **Mixed Reality Toolkit (MRTK)** is a Microsoft-driven open-source project that accelerates the development of mixed reality applications in Unity by providing essential components and features for developing mixed reality experiences.  The Mixed Reality Toolkit (MRTK) provides a collection of scripts, components, and prefabs specifically designed to help you create performant and intuitive mixed reality experiences on HoloLens 2 devices.
+The **Mixed Reality Toolkit (MRTK)** is a Microsoft-driven open-source project that accelerates the development of mixed reality applications in Unity by providing essential components and features for developing mixed reality experiences.  The MRTK provides a collection of scripts, components, and prefabs specifically designed to help you create performant and intuitive mixed reality experiences on HoloLens 2 devices.
 
 
 <!-- ------------------------------ -->
@@ -104,17 +104,17 @@ Before you can start developing a HoloLens 2 app with WebView2, you will need to
 <!-- ====================================================================== -->
 ## Step 3 - Configure the Unity project for Mixed Reality development
 
-Once you have your tools installed, you're ready to create and configure your project.  The easiest way to get started with HoloLens 2 development is to use the Mixed Reality Toolkit (MRTK) in your project.  
+Once you have your tools installed, you're ready to create and configure your project.  The easiest way to get started with HoloLens 2 development is to use the Mixed Reality Toolkit in your project.  
 
 The Mixed Reality Feature Tool simplifies the process of discovering, installing, and managing mixed reality features, including the Mixed Reality Toolkit, and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
 
 1. First, [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center.   
 
-1. Run the downloaded Mixed Reality Feature Tool executable, and follow the prompts to install the Mixed Reality Toolkit (MRTK) and any additional required packages for HoloLens 2 development.
+1. Run the downloaded Mixed Reality Feature Tool executable, and follow the prompts to install the Mixed Reality Toolkit and any additional required packages for HoloLens 2 development.
 
-   The Mixed Reality Feature Tool allows you to select and install the appropriate versions of the Mixed Reality Toolkit (MRTK), along with other mixed reality features, directly into your Unity project.
+   The Mixed Reality Feature Tool allows you to select and install the appropriate versions of the Mixed Reality Toolkit, along with other mixed reality features, directly into your Unity project.
 
-After you've used the Mixed Reality Feature Tool to install the Mixed Reality Toolkit (MRTK), the MRTK assets and prefabs will appear in your Unity project.  The MRTK will guide you through configuring the Open XR plugin for your project.
+After you've used the Mixed Reality Feature Tool to install the Mixed Reality Toolkit, the toolkit's assets and prefabs will appear in your Unity project.  The Mixed Reality Toolkit will guide you through configuring the Open XR plugin for your project.
 
 For a detailed step-by-step walkthrough of configuring the Unity project, see [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk).
 
@@ -414,7 +414,7 @@ Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial f
 
   * **Unity Profiler**: A built-in tool in Unity that allows you to measure and optimize the performance of your application on various platforms, including HoloLens 2.
 
-  * **Visual Profiler**: A feature of the Mixed Reality Toolkit (MRTK) that provides an in-application view of your application's performance.
+  * **Visual Profiler**: A feature of the Mixed Reality Toolkit that provides an in-application view of your application's performance.
 
   * **PIX**: A performance tuning and debugging tool for Windows that can also be used to profile Unity applications on HoloLens 2.
 
