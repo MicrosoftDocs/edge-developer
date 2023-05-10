@@ -275,7 +275,7 @@ Now that we have our UI designed, we will now create the code to hook up the but
    using TMPro;
    using System;
 
-   public class WebViewBrowser: MonoBehaviour
+   public class WebViewBrowser : MonoBehaviour
    {
       // Declare UI elements: Back button, Go button, and URL input field
       public Button BackButton;
