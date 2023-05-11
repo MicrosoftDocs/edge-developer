@@ -342,25 +342,24 @@ Now that we have a basic web browser working in Unity, we can build and deploy i
 1. Click **Add Open Scene** to add our sample scene to the list of scenes in the build.
 
 1. Under Universal Windows Platform, configure the build settings:
-   * **Target Device**: HoloLens
    * **Architecture**: ARM64
    * **Build Type**: D3D Project
 
    ![Unity's Build Settings dialog with Universal Windows Platform settings](./hololens2-images/unity_build_settings.png)
 
-1. Click **Build** to generate the IL2CPP build. This will open a file dialog to select the folder for the build files. We recommend you create a new folder (such as **Build**) under your project directory for this purpose. Once you select your build folder in the file dialog, Unity will begin generating the build. This can take a few minutes.
+2. Click **Build** to generate the IL2CPP build. This will open a file dialog to select the folder for the build files. We recommend you create a new folder (such as **Build**) under your project directory for this purpose. Once you select your build folder in the file dialog, Unity will begin generating the build. This can take a few minutes.
 
-1. When this operation completes, Unity should launch a new File Explorer with the output folder selected. Otherwise, navigate to the output folder manually.
+3. When this operation completes, Unity should launch a new File Explorer with the output folder selected. Otherwise, navigate to the output folder manually.
 
-1. Under your build folder, you will find a Visual Studio solution file (.sln). Double-click this file to open it in Visual Studio.
+4. Under your build folder, you will find a Visual Studio solution file (.sln). Double-click this file to open it in Visual Studio.
 
-1. In Visual Studio, select the **Solution Configuration** (such as **Release**). Then set the **Platform** to **ARM64**:
+5. In Visual Studio, select the **Solution Configuration** (such as **Release**). Then set the **Platform** to **ARM64**:
 
    ![The Solution Configuration and Platform settings dropdown lists in Visual Studio's toolbar](./hololens2-images/visualstudio_buildconfig.png)
 
-1. Make sure **Developer Mode** is enabled on your PC and on your HoloLens 2 device. See [Enabling Developer Mode](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#enabling-developer-mode) in _Using Visual Studio to deploy and debug_ in the Mixed Reality documentation.
+6. Make sure **Developer Mode** is enabled on your PC and on your HoloLens 2 device. See [Enabling Developer Mode](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2#enabling-developer-mode) in _Using Visual Studio to deploy and debug_ in the Mixed Reality documentation.
 
-1. Click the **deployment target** drop-down and then do one of the following:
+7. Click the **deployment target** drop-down and then do one of the following:
 
    * If you're building and deploying via Wi-Fi, select **Remote Machine** as the deployment target:
 
