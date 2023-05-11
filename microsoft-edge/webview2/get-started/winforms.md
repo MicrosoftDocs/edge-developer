@@ -103,7 +103,7 @@ You now have an empty WinForms project that runs.  Next, set up the project to a
 
 
 <!-- maintenance link; keep: main copy:
-[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+[Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
 ## Step 4 - Install the WebView2 SDK

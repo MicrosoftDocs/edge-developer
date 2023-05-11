@@ -447,11 +447,10 @@ WinUI 3 doesn't support transparent backgrounds.  See [Transparent background su
 <!-- ------------------------------ -->
 #### API limitations
 
-The following interfaces aren't accessible in WinUI 3:
+The following classes aren't accessible in WinUI 3:
 
-* `ICoreWebView2Environment`
-* `ICoreWebView2EnvironmentOptions` and `ICoreWebView2EnvironmentOptions2`
-* `ICoreWebView2ControllerOptions`
+* `CoreWebView2EnvironmentOptions`
+* `CoreWebView2ControllerOptions`
 
 
 <!-- ====================================================================== -->
