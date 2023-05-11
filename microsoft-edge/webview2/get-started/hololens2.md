@@ -1,5 +1,5 @@
 ---
-title: Get started with WebView2 in HoloLens 2 Unity apps
+title: Get started with WebView2 in HoloLens 2 Unity apps (Preview)
 description: Get started with WebView2 in HoloLens 2 Unity apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -150,7 +150,7 @@ In this step, as above, you'll use the Mixed Reality Feature Tool to install the
 
    ![The Discover Features pane in the Mixed Reality Feature Tool](./hololens2-images/mrtk_webview2_selected.png)
 
-   This marks the WebView plugin for Unity for installation. In the version dropdown, by default, the latest version of the plugin is selected.
+   This marks the WebView plugin for Unity for installation. In the **Version** dropdown, by default, the latest version of the plugin is selected.
 
 1. Click the **Get Features** button.  This downloads the required packages.
 
@@ -413,7 +413,7 @@ When developing a HoloLens 2 Unity app with WebView2, be aware of some limitatio
 
 * **Enterprise authentication**: Automatic Single Sign-On (SSO) leveraging OS-level tokens is currently not supported in WebView2 on HoloLens 2. Users can still sign in by providing credentials, except for cases requiring device-level authentication. Cookie storage works as expected.
 
-* **User interactions**: Unlike native HoloLens 2 slates, WebView2 is best interacted with using far-interaction hand rays. Touch-to-swipe and scroll interactions might not be supported.
+* **User interactions**: Unlike native HoloLens 2 slates, WebView2 is best interacted with by using far-interaction hand rays. Touch-to-swipe and scroll interactions might not be supported.
 
 * **Performance**: Complex websites with heavy use of JavaScript or advanced rendering may impact system performance or the host application's framerate. For general performance-related limitations and recommendations, see [Understanding performance for mixed reality](/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality) in the mixed reality documentation. Also see [Performance optimization](#performance-optimization), below.
 
