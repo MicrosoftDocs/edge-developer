@@ -40,6 +40,8 @@ For more information about events and API Handlers in WebView2, see [WebView2 AP
 
 1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
+1. To test the experimental APIs ahead of time and ensure your WebView2 app's forward-compatibility, see [Approaches to making your app use a specific browser channel](../how-to/set-preview-channel.md#approaches-to-making-your-app-use-a-specific-browser-channel) in _Test upcoming APIs and features_. Follow the steps in that section, and then return to this page and continue the steps below.
+
 
 <!-- ====================================================================== -->
 ## Step 2 - Install Visual Studio 2019 with .NET support
@@ -103,7 +105,7 @@ At the top of Visual Studio, set the build target, as follows:
 <!-- ====================================================================== -->
 ## Step 7 - Update the WebView2 SDK
 
-1. Update the prerelease WebView2 SDK on the project node (not the solution node) in Solution Explorer.  Install the latest prerelease of the WebView2 SDK, so that you can try the latest features.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. Update the prerelease WebView2 SDK on the project node (not the solution node) in Solution Explorer.  Install the latest prerelease of the WebView2 SDK, so that you can try the latest features.  In a separate window or tab, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 1. Build and run the project again.
 
