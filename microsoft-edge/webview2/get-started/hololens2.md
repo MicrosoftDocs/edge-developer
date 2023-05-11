@@ -190,9 +190,16 @@ Now that the WebView plugin for Unity is installed and imported, set up the WebV
 <!-- ====================================================================== -->
 ## Step 6 - Test the project
 
-Now that you've added the WebView plugin to the scene, it's a good time to test your project.  Either test the project directly in the editor, or you can follow these steps to [Build and deploy to the HoloLens](/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens).
+Now that you've added the WebView plugin to the scene, it's a good time to test your project.
 
-<!-- TODO: MichaelH Add Photo of starting editor playmode -->
+1. To test the project directly in the Unity editor, click the **Play** button:
+
+   ![Starting editor play mode](./hololens2-images/unity-playmode-testing.png)
+
+1. To test the project on the actual device, follow the steps in [Build and deploy to the HoloLens](/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens).
+
+Then continue with the next steps below.
+
 
 <!-- ====================================================================== -->
 ## Step 7 - Extending WebView2 functionality
