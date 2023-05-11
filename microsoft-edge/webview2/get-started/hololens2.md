@@ -88,15 +88,15 @@ In Unity, the Microsoft Mixed Reality WebView plugin for Unity can be installed 
 <!-- ====================================================================== -->
 ## Step 1 - Install Visual Studio
 
-This tutorial assumes you have Unity 2020.3 LTS or later and Visual Studio 2019 version 16.9 or later installed. Visual Studio 2017 isn't supported. To set up your Unity and Visual Studio environment for HoloLens 2 development, follow the [Mixed Reality tools installation guide](/windows/mixed-reality/develop/install-the-tools?tabs=unity). That article guides you through installing and configuring the necessary tools, including Visual Studio and the Universal Windows Platform development workload.
+This tutorial assumes you have Unity 2020.3 LTS or later and Visual Studio 2019 version 16.9 or later installed. Visual Studio 2017 isn't supported.  In this step we will start by setting up your Visual Studio environment for HoloLens 2 development, follow the [Mixed Reality tools installation guide](/windows/mixed-reality/develop/install-the-tools?tabs=unity). That article guides you through installing and configuring the necessary tools, including Visual Studio and the Universal Windows Platform development workload.
 
 Also set up your development environment for WebView2, by following the steps in [Set up your Dev environment for WebView2](../how-to/machine-setup.md).
 
-Once you have completed the setup, return to this page and continue with the next steps.
+Once you have completed the setup, return to this page and continue with the next steps to get Unity installed.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Set up Unity for HoloLens 2 development
+## Step 2 - Install Unity for HoloLens 2 development
 
 Before you can start developing a HoloLens 2 app with WebView2, you will need to install Unity.  Follow the steps in [Choosing a Unity version and XR plugin](/windows/mixed-reality/develop/unity/choosing-unity-version) to complete installation of the toolset that's needed to build mixed reality applications.
 
