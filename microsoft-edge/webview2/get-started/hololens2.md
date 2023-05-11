@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/09/2023
+ms.date: 05/11/2023
 ---
 # Get started with WebView2 in HoloLens 2 Unity apps (Preview)
 
@@ -355,6 +355,15 @@ Now that we have our UI designed, we will now create the code to hook up the but
    It can sometimes be helpful to debug your application running on your HoloLens, and the steps to do so are slightly different than standard debugging within Visual Studio.  For more information on how to set up and connect to your application running on the HoloLens or inside of the Unity editor, see [Managed debugging with Unity](/windows/mixed-reality/develop/unity/managed-debugging-with-unity-il2cpp).
 
 
+See also:
+* [WebView2 API Reference](../webview2-api-reference.md)
+<!-- todo: un-comment when http://learn.microsoft.com/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin exists
+* [API Reference for HoloLens 2 in Unity](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin)
+-->
+
+Continue with the next steps below.
+
+
 <!-- ====================================================================== -->
 ## Step 8 - Learn about WebView2 events and interactions in Unity
 
@@ -439,6 +448,12 @@ Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial f
 #### Navigation
 
 In [Step 7 - Extending WebView2 functionality](#step-7---extending-webview2-functionality), we touched on some navigation methods. In this section, we'll expand on what we learned.
+
+See also:
+* [WebView2 API Reference](../webview2-api-reference.md)
+<!-- todo: un-comment when http://learn.microsoft.com/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin exists
+* [API Reference for HoloLens 2 in Unity](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin)
+-->
 
 
 <!-- ---------- -->
@@ -584,3 +599,7 @@ In the example above, `ConvertToWebViewSpace` is intentionally not implemented.
 ## See also
 
 * [Get started with WebView2 in WinUI 2 (UWP) apps](./winui2.md)
+* [WebView2 API Reference](../webview2-api-reference.md)
+<!-- todo: un-comment when http://learn.microsoft.com/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin exists
+* [API Reference for HoloLens 2 in Unity](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin)
+-->
