@@ -211,6 +211,10 @@ Although the prefab exposes just a single property, there's additional functiona
 
 Now that you've reviewed the `WebView` code, let's extend the functionality of the sample. In the rest of this step, we'll add some basic functionality so that the user will have a **Back** button, a **Go** button, and a text field to navigate to a custom URL.
 
+
+<!-- ------------------------------ -->
+#### Add the input field and buttons
+
 1. Modify the scene hierarchy as follows:
    1. Under `MixedRealitySceneContent`, add a new input component (right-click > **UI** > **Input Field - TextMeshPro**). This automatically adds a parent `Canvas` for the component.
    1. Under the new `Canvas`, add **two** new `Button` components (right-click > **UI** > **Button - TextMeshPro**).
@@ -268,6 +272,10 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of t
    You should now have a scene which looks similar to the following:
 
    ![The current scene in Unity's Scene view](./hololens2-images/unity_completed_scene.png)
+
+
+<!-- ------------------------------ -->
+#### Add code to hook up the buttons
 
 Now that we have our UI designed, we will now create the code to hook up the buttons.  To do that, we'll create a new script that derives from `Microsoft.MixedReality.WebView`.
 
