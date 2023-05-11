@@ -1146,7 +1146,7 @@
 
             - name: HoloLens 2
               href: webview2/get-started/hololens2.md
-              displayName: Get started with WebView2 in HoloLens 2 Unity apps (Preview)  # repo dir name  # top-of-page title
+              displayName: HoloLens2_GettingStarted, Get started with WebView2 in HoloLens 2 Unity apps (Preview)  # repo dir name  # top-of-page title
 
 # -----------------------------------------------------------------------------
 # Sample apps
