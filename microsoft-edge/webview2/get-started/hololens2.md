@@ -150,7 +150,7 @@ In this step, as above, you'll use the Mixed Reality Feature Tool to install the
 
    ![The Discover Features pane in the Mixed Reality Feature Tool](./hololens2-images/mrtk_webview2_selected.png)
 
-   This marks the WebView plugin for Unity for installation. In the **Version** dropdown, by default, the latest version of the plugin is selected.
+   This marks the WebView plugin for Unity for installation. In the **Version** dropdown list, by default, the latest version of the plugin is selected.
 
 1. Click the **Get Features** button.  This downloads the required packages.
 
@@ -343,7 +343,6 @@ Now that we have our UI designed, we will now create the code to hook up the but
    }
    ```
 
-
 1. Connect the UI `GameObjects` to the `WebViewBrowser` code that we just wrote:
    1. Select the **WebViewBrowser**.
    1. Drag **Back Button** from the Hierarchy pane into the **Back Button** variable field for the WebView Browser in the Inspector.
@@ -352,7 +351,7 @@ Now that we have our UI designed, we will now create the code to hook up the but
    ![The WebView Browser Prefab with assigned variables in Unity's Inspector](./hololens2-images/unity_webview_connect_prefabs.png)
 
 1. You can now test the scene in the Unity Editor. With everything wired up in your scene, you should be able to verify that everything is working as expected. Try testing out the scene by entering a new URL into the `AddressField` text box (must be a full URL including the protocol), then pressing the **Go** button. Make sure the **Back** button works as well.
-    
+
    It can sometimes be helpful to debug your application running on your HoloLens, and the steps to do so are slightly different than standard debugging within Visual Studio.  For more information on how to set up and connect to your application running on the HoloLens or inside of the Unity editor, see [Managed debugging with Unity](/windows/mixed-reality/develop/unity/managed-debugging-with-unity-il2cpp).
 
 
