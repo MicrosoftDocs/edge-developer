@@ -21,10 +21,10 @@ Any WebView2 data collection complies with the laws, regulations, and best pract
 ## Optional diagnostic data
 
 WebView2 is considered a Windows component, and the data collection consent is governed by the Windows **Settings > Privacy & security > Diagnostics & feedback > Diagnostic data** setting on Windows 10 and 11 as a centralized switch.
-End users can control the data collection of WebView2 through the **Diagnostic data** setting on Windows 10 and 11. As a developer, you are welcome to convey this to end users and invite them to use the **Diagnostic data** setting to fit their preference.
+End users can control the data collection of WebView2 through the Windows **Diagnostic data** setting on Windows 10 and 11. As a developer, you are welcome to convey this to your users and invite them to use the Windows **Diagnostic data** setting to fit their preference.
 WebView2 developers have no control over the Windows **Diagnostic data** setting. This is similar to the Windows APIs.
 
-When the Windows **Diagnostic data** setting is turned **On**, WebView2-related data including API usage, SDK usage, and creation failure is collected. When this setting is **On**, browser diagnostic data is collected; however, personalization data is not collected. Only browser events that are relevant to WebView2 are collected. Regardless of the Windows Diagnostic data setting, WebView2 collects [Required data](https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319) which is necessary to maintain performance and reliability.
+When the Windows **Diagnostic data** setting is turned **On**, WebView2-related data including API usage, SDK usage, and creation failure is collected. When this setting is **On**, browser diagnostic data is collected; however, personalization data is not collected. Only browser events that are relevant to WebView2 are collected. Regardless of the Windows **Diagnostic data** setting, WebView2 collects [Required data](https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319) which is necessary to maintain performance and reliability.
 
 There are two APIs that exist to give developers more control over data collection: [Disable SmartScreen](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/IsSmartScreenRequired.md) and [Custom Crash Reports](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/DisableCrashReporting.md). See [Security and privacy](../concepts/overview-features-apis.md#security-and-privacy) in _Overview of WebView2 features and APIs_.
 
@@ -32,7 +32,7 @@ There are two APIs that exist to give developers more control over data collecti
 <!-- ====================================================================== -->
 ## SmartScreen
 
-Microsoft Defender SmartScreen ("SmartScreen") is enabled by default. If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen and collects and sends the end user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md#smartscreen). All other services in `edge://settings/privacy` are turned off.
+Microsoft Defender SmartScreen ("SmartScreen") is enabled by default. If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen and collects and sends the end user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md#smartscreen). All other services in `edge://settings/privacy` should be turned off.
 
 See [Security and privacy](../concepts/overview-features-apis.md#security-and-privacy) in _Overview of WebView2 features and APIs_.
 
