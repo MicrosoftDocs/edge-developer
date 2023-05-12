@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/28/2023
+ms.date: 04/03/2023
 ---
 # Overview of Microsoft Edge extensions
 
@@ -118,6 +118,8 @@ For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsof
 -->
 
 The Microsoft Edge Add-ons team reviews each extension for adherence to [Best Practices for extensions](./developer-guide/best-practices.md) before granting the extension a **Featured** badge.  Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences.  Developers cannot pay to receive a **Featured** badge for an extension.
+
+To help protect your browser settings, extensions that don't comply with Edge Add-Ons Store best practices are not badged.
 
 Just because an extension doesn't have a **Featured** badge, doesn't mean the extension is unsafe. It simply means that the extension doesn't meet Microsoft's security and quality standards to be badged as **Featured**.
 
