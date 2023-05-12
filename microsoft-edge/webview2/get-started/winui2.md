@@ -52,7 +52,7 @@ Only a subset of WebView2 interfaces/functions are exposed in WinUI:
 
 * Interfaces such as `CoreWebView2Controller` are hidden, because WinUI takes care of the environment and window creation behind the scenes.
 
-See also [Xbox, HoloLens, and XAML limitations](#xbox-hololens-and-xaml-limitations) below.
+See also [XAML limitation](#xaml-limitation) below.
 
 
 <!-- ====================================================================== -->
@@ -352,9 +352,9 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Xbox, HoloLens, and XAML limitations
+#### XAML limitation
 
-This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered for future releases.
+XAML Island support requires additional work and may be considered for future releases.
 
 
 <!-- ------------------------------ -->
@@ -378,6 +378,12 @@ On WinUI 2, transparency is achieved by setting the color to `00FFFFFF`.
 
 
 <!-- ------------------------------ -->
+#### Custom cursors
+
+On WinUI 2, you cannot use [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor) by specifying a URL of an image as the cursor. You can use CSS cursors to change the cursor to a predefined cursor, such as `cursor: wait;` or `cursor: crosshair;`, but not to an image URL, such as `cursor: url(https://contoso.com/cursor.png), pointer;`. See [CSS - cursor loaded from URL doesn't work](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1925).
+
+
+<!-- ------------------------------ -->
 #### Microsoft Edge Developer Tools
 
 On WinUI 2, Microsoft Edge DevTools cannot be launched inside a store-signed WebView2 WinUI 2 (UWP) app.  However, you can work around this by using remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge](../how-to/remote-debugging.md).
@@ -386,11 +392,10 @@ On WinUI 2, Microsoft Edge DevTools cannot be launched inside a store-signed Web
 <!-- ------------------------------ -->
 #### API limitations
 
-The following interfaces aren't accessible in WinUI 2:
+The following classes aren't accessible in WinUI 2:
 
-* `ICoreWebView2Environment`
-* `ICoreWebView2EnvironmentOptions` and `ICoreWebView2EnvironmentOptions2`
-* `ICoreWebView2ControllerOptions`
+* `CoreWebView2EnvironmentOptions`
+* `CoreWebView2ControllerOptions`
 
 
 <!-- ====================================================================== -->

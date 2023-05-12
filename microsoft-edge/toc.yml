@@ -33,6 +33,9 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 112
+              href: devtools-guide-chromium/whats-new/2023/04/devtools-112.md
+
             - name: Microsoft Edge 111
               href: devtools-guide-chromium/whats-new/2023/03/devtools-111.md
 
@@ -60,14 +63,14 @@
             - name: Microsoft Edge 103
               href: devtools-guide-chromium/whats-new/2022/06/devtools-103.md
 
-            - name: Microsoft Edge 102
-              href: devtools-guide-chromium/whats-new/2022/05/devtools-102.md
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 102
+                  href: devtools-guide-chromium/whats-new/2022/05/devtools-102.md
 
                 - name: Microsoft Edge 101
                   href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
@@ -1061,6 +1064,9 @@
             - name: Re-engage users with badges, notifications, and push messages
               href: progressive-web-apps-chromium/how-to/notifications-badges.md
 
+            - name: Synchronize and update in the background
+              href: progressive-web-apps-chromium/how-to/background-syncs.md
+
             - name: Handle files
               href: progressive-web-apps-chromium/how-to/handle-files.md
 
@@ -1082,8 +1088,8 @@
             - name: Build operating system Widgets
               href: progressive-web-apps-chromium/how-to/widgets.md
 
-            - name: Synchronize and update in the background
-              href: progressive-web-apps-chromium/how-to/background-syncs.md
+            - name: Build PWAs for the sidebar in Microsoft Edge
+              href: progressive-web-apps-chromium/how-to/sidebar.md
 
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md

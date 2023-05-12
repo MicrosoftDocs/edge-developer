@@ -16,6 +16,7 @@ ms.date: 03/02/2023
 * move eleventh oldest link into whats-new-archive.md
 -->
 
+* [What's New in DevTools (Microsoft Edge 112)](2023/04/devtools-112.md)
 * [What's New in DevTools (Microsoft Edge 111)](2023/03/devtools-111.md)
 * [What's New in DevTools (Microsoft Edge 110)](2023/02/devtools-110.md)
 * [What's New in DevTools (Microsoft Edge 109)](2023/01/devtools-109.md)
@@ -25,5 +26,4 @@ ms.date: 03/02/2023
 * [What's New in DevTools (Microsoft Edge 105)](2022/09/devtools-105.md)
 * [What's New in DevTools (Microsoft Edge 104)](2022/08/devtools-104.md)
 * [What's New in DevTools (Microsoft Edge 103)](2022/06/devtools-103.md)
-* [What's New in DevTools (Microsoft Edge 102)](2022/05/devtools-102.md)
 * [What's New in DevTools archive](./whats-new-archive.md)
