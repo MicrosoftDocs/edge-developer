@@ -596,4 +596,4 @@ In the example above, `ConvertToWebViewSpace` is intentionally not implemented.
 
 * [Get started with WebView2 in WinUI 2 (UWP) apps](./winui2.md)
 * [WebView2 API Reference](../webview2-api-reference.md)
-   * [API Reference for HoloLens 2 in Unity](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin)
+* [API Reference for HoloLens 2 in Unity](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin)
