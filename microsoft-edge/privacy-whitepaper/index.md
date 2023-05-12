@@ -596,6 +596,26 @@ Microsoft also sends the product price, product image, product name, ratings, an
 
 The Microsoft Edge shopping feature requires sharing of cookie information with Bing.  For example, the cookies may be used for debugging, fraud detection, and analytics.  The Microsoft shopping service returns prices from other retailers, historical price trends, and any available coupons for that website.
 
+![Shopping and coupons](./media/inboxcoupons.png)
+
+To help you find and keep track of coupons in your inbox, Microsoft Edge may optionally scan your connected email account for coupons in promotional emails. The Microsoft shopping service extracts coupons from promotional emails sent by supported retailers. The extracted coupons are stored and managed by the Microsoft shopping service and is accessible to you. Inbox coupons will not appear when using **Guest mode** or **InPrivate**.
+
+![Shopping and coupons](./media/inboxcoupons-settings.png)
+
+To control which retailers' emails get scanned by Microsoft Edge, complete the following actions: 
+
+1.  Click on the **“Your Shopping”** tab on the shopping sidebar 
+1.  Go to the Inbox coupons card and click on the “...” button 
+1.  Click on the **“Settings”** link and view retailers in your inbox 
+1.  Control retailer email preferences via toggles 
+
+To turn off Inbox coupons, completing the following actions: 
+
+1.  Click on the **“Your Shopping”** tab on the shopping sidebar 
+1.  Go to the Inbox coupons card and click on the “...” button 
+1.  Select the email account you wish to disconnect and click on the **“Settings”** link 
+1.  **“Disconnect email”**
+
 When you're applying coupons, cookies are stored on your device to correctly attribute the coupon provider.  Cookies are saved by Microsoft-trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, information about the success of the coupons is sent back to the Microsoft shopping service to help understand which coupons succeeded or failed.
 
 Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier that changes per coupon lookup. Microsoft Edge partners with Bing Shopping to provide coupons relevant to the user's query. In some instances, Microsoft may receive revenue for use of the coupons. Whether a revenue share payment may be received is not factored into the ranking of coupons shown to users.
