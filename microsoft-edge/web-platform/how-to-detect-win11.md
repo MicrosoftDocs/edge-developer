@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/22/2022
+ms.date: 05/11/2023
 ---
 # Detect Windows 11 and CPU architecture using User-Agent Client Hints
 
@@ -92,7 +92,7 @@ CPU detection is particularly helpful for ARM-based devices, so that a customer 
 The following code detects CPU architecture:
 
 ```javascript
-navigator.userAgentData.getHighEntropyValues(["architecture","bitness"])
+navigator.userAgentData.getHighEntropyValues(["architecture", "bitness"])
  .then(ua => {
    if (navigator.userAgentData.platform === "Windows") {
      if (ua.architecture === 'x86') {
@@ -141,11 +141,12 @@ Remember that `Critical-CH` and `Accept-CH` preferences persist until session co
 
 <!-- ====================================================================== -->
 ## Detecting specific Windows versions
+The definition of the platform versions returned by the `navigator.userAgentData.getHighEntropyValues` API for the `"platformVersion"` hint (and via the `Sec-CH-UA-Platform-Version` header) is specified in the [User-Agent Client Hints Draft Community Group Report](https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform-version). On Windows 10 and higher, the value is based on the [**Windows.Foundation.UniversalApiContract** version](/windows/uwp/debug-test-perf/version-adaptive-apps#api-contracts).
 
 To detect specific versions of Windows, use the following values for `platformVersion` in User-Agent Client Hints:
 
-| Version | `platformVersion` |
-| --- | --- | --- |
+| Version | First version component of the `platformVersion` |
+| --- | --- |
 | Win7/8/8.1 | 0 |
 | Win10 1507 | 1 |
 | Win10 1511 | 2 |
