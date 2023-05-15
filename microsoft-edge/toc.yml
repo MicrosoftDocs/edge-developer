@@ -1414,6 +1414,12 @@
                   href: /dotnet/api/microsoft.web.webview2.winforms
                   displayName: functions, methods
 
+                - name: HoloLens 2
+                  items:
+                    - name: Unity Plugin
+                      href: /windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin
+                      displayName: functions, methods
+
             - name: WinRT
               items:
                 - name: Microsoft.Web.WebView2.Core
