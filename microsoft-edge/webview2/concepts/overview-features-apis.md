@@ -1094,7 +1094,7 @@ See also:
 
 ---
 
-
+###### SmartScreen
 <!-- ------------------------------ -->
 <!-- from RelNotes 112 -->
 The Managing SmartScreen API includes the `IsReputationCheckingRequired` property, which controls whether SmartScreen is enabled.
