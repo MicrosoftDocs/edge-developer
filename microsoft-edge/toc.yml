@@ -1144,6 +1144,10 @@
               href: webview2/get-started/win32.md
               displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
 
+            - name: HoloLens 2
+              href: webview2/get-started/hololens2.md
+              displayName: HoloLens2_GettingStarted, Get started with WebView2 in HoloLens 2 Unity apps (Preview)  # repo dir name  # top-of-page title
+
 # -----------------------------------------------------------------------------
 # Sample apps
         - name: Sample apps

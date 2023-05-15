@@ -26,13 +26,13 @@ The WebView2 team is planning the following major efforts for future updates:
 <!-- ====================================================================== -->
 ## WebView2 Runtime and Installer
 
-Evergreen distribution mode allows you to target or chain-install the WebView2 Runtime onto your users' machines.  The Evergreen WebView2 Runtime and installer has reached General Availability (GA).  For more information, see [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
+Evergreen distribution mode allows you to target or chain-install the WebView2 Runtime onto your users' machines.  The Evergreen WebView2 Runtime and installer has reached General Availability (GA).  For more information, see [Distribute your app and the WebView2 Runtime](./concepts/distribution.md).
 
 
 <!-- ====================================================================== -->
 ## Fixed version
 
-Fixed version distribution mode allows you to package the Microsoft Edge binaries <!--(a specific version of the WebView2 Runtime)--> inside your native application.  The Fixed Version has reached General Availability (GA).  For more information, see [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
+Fixed version distribution mode allows you to package the Microsoft Edge binaries <!--(a specific version of the WebView2 Runtime)--> inside your native application.  The Fixed Version has reached General Availability (GA).  For more information, see [Distribute your app and the WebView2 Runtime](./concepts/distribution.md).
 
 
 <!-- ====================================================================== -->
@@ -40,22 +40,42 @@ Fixed version distribution mode allows you to package the Microsoft Edge binarie
 
 The following technologies have reached General Availability (GA).
 
-### Win32 C/C++
+
+<!-- ------------------------------ -->
+#### Win32 C/C++
 
 The Win32 C/C++ SDK has reached GA.
 
-### .NET
+
+<!-- ------------------------------ -->
+#### .NET
 
 The .NET SDK has reached GA.
 
-### Windows UI Library 2
 
-You can access WebView2 controls in your UWP applications using [Windows UI Library 2 (WinUI 2)](get-started/winui2.md). This has reached GA.
+<!-- ------------------------------ -->
+#### Windows UI Library 2
 
-### Windows UI Library 3
+You can access WebView2 controls in your UWP applications using [Windows UI Library 2 (WinUI 2)](./get-started/winui2.md). This has reached GA.
+
+
+<!-- ------------------------------ -->
+#### Windows UI Library 3
 
 You can access WebView2 controls in your applications using [Windows UI Library 3 (WinUI 3)](/uwp/toolkits/winui3/index) with the Windows App SDK.  This has reached GA.
 
-#### XAML limitation
+###### XAML limitation
 
 XAML Island support requires additional work and may be considered for future releases.
+
+
+<!-- ====================================================================== -->
+## Preview Availability
+
+The following technologies are now available in a Preview release.
+
+
+<!-- ------------------------------ -->
+#### HoloLens 2
+
+Starting with the Windows 11 update for HoloLens 2, a WebView2 Preview is now available on HoloLens 2 devices. The WebView2 Preview is available in the Insider Preview for Microsoft HoloLens.  For more information, see [Get started with WebView2 in HoloLens 2 Unity apps (Preview)](./get-started/hololens2.md).
