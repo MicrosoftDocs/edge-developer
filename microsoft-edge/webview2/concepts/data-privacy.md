@@ -32,7 +32,7 @@ There are two APIs that exist to give developers more control over data collecti
 <!-- ====================================================================== -->
 ## SmartScreen
 
-Microsoft Defender SmartScreen ("SmartScreen") is enabled by default. If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen and collects and sends the end user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md#smartscreen). All other services in `edge://settings/privacy` should be turned off.
+Microsoft Defender SmartScreen ("SmartScreen") is enabled by default. If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen and collects and sends the end user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md#smartscreen). Generally, all other services in `edge://settings/privacy` are turned off, for WebView2.
 
 See [Security and privacy](../concepts/overview-features-apis.md#security-and-privacy) in _Overview of WebView2 features and APIs_.
 
