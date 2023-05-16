@@ -606,12 +606,15 @@ To control which retailers' emails get scanned by Microsoft Edge, complete the f
 1.  Click on the **“Settings”** link and view retailers in your inbox 
 1.  Control retailer email preferences via toggles 
 
-To turn off Inbox coupons, completing the following actions: 
+To turn off Inbox coupons:
 
-1.  Click on the **“Your Shopping”** tab on the shopping sidebar 
-1.  Go to the Inbox coupons card and click on the “...” button 
-1.  Select the email account you wish to disconnect and click on the **“Settings”** link 
-1.  **“Disconnect email”**
+1.  On the **Shopping** sidebar, click the **Your Shopping** tab.
+
+1.  In the **Inbox coupons** card, click the **Settings** (**...**) button.
+
+1.  Select an email account, and then click the **Settings** link.
+
+1.  Click the **Disconnect email** button.
 
 When you're applying coupons, cookies are stored on your device to correctly attribute the coupon provider.  Cookies are saved by Microsoft-trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, information about the success of the coupons is sent back to the Microsoft shopping service to help understand which coupons succeeded or failed.
 
