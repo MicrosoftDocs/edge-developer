@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/25/2023
+ms.date: 05/16/2023
 ---
 # Overview of WebView2 features and APIs
 
@@ -531,8 +531,6 @@ Custom Download Experience:
 * [ICoreWebView2DownloadOperation interface](/microsoft-edge/webview2/reference/win32/icorewebview2downloadoperation)
 
 ---
-
-<!-- todo: decide whether to re-add blank lines above (lines 1-533) -->
 
 
 <!-- ------------------------------ -->
@@ -1100,11 +1098,15 @@ See also:
 
 <!-- ---------- -->
 ###### SmartScreen
+<!-- todo: link from data-privacy.md to here -->
 
 <!-- from RelNotes 112 -->
-The Managing SmartScreen API includes the `IsReputationCheckingRequired` property, which controls whether SmartScreen is enabled.
+This is the Managing SmartScreen API, which controls whether SmartScreen is enabled.
+<!-- todo: clarify: need intro for Dev students -->
+<!-- controls the behavior of specific features that generate diagnostic data -->
 
-<!-- See also:
+<!-- todo: uncomment after other PR merged:
+See also:
 * [Data and privacy in WebView2](./data-privacy.md) -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -1128,11 +1130,15 @@ The Managing SmartScreen API includes the `IsReputationCheckingRequired` propert
 
 <!-- ---------- -->
 ###### Custom crash reporting
+<!-- todo: link from data-privacy.md to here -->
 
 <!-- todo: first-time intro for Dev students: -->
 Custom crash reporting.
 
-<!-- See also:
+<!-- controls the behavior of specific features that generate diagnostic data -->
+
+<!-- todo: uncomment after other PR merged:
+See also:
 * [Data and privacy in WebView2](./data-privacy.md) -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -1141,12 +1147,14 @@ Custom crash reporting.
    * [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled)
 * `CoreWebView2Environment` Class:
    * [CoreWebView2Environment.FailureReportFolderPath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.failurereportfolderpath)
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2EnvironmentOptions` Class:
    * [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#iscustomcrashreportingenabled)
 * `CoreWebView2Environment` Class:
    * [CoreWebView2Environment.FailureReportFolderPath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#failurereportfolderpath)
+
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2EnvironmentOptions3` interface:
