@@ -595,9 +595,6 @@ When you go to a website, or save an item to your Collections, Microsoft Edge lo
 Microsoft also sends the product price, product image, product name, ratings, and reviews, along with information about Microsoft Edge and your operating system version to the service.  The data is sent over HTTPS with a randomly generated identifier and cookies if cookies are allowed.
 
 The Microsoft Edge shopping feature requires sharing of cookie information with Bing.  For example, the cookies may be used for debugging, fraud detection, and analytics.  The Microsoft shopping service returns prices from other retailers, historical price trends, and any available coupons for that website.
-
-![Shopping and coupons](./media/inboxcoupons.png)
-
 To help you find and keep track of coupons in your inbox, Microsoft Edge may optionally scan your connected email account for coupons in promotional emails. The Microsoft shopping service extracts coupons from promotional emails sent by supported retailers. The extracted coupons are stored and managed by the Microsoft shopping service and is accessible to you. Inbox coupons will not appear when using **Guest mode** or **InPrivate**.
 
 ![Shopping and coupons](./media/inboxcoupons-settings.png)
