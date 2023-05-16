@@ -597,14 +597,19 @@ Microsoft also sends the product price, product image, product name, ratings, an
 The Microsoft Edge shopping feature requires sharing of cookie information with Bing.  For example, the cookies may be used for debugging, fraud detection, and analytics.  The Microsoft shopping service returns prices from other retailers, historical price trends, and any available coupons for that website.
 To help you find and keep track of coupons in your inbox, Microsoft Edge may optionally scan your connected email account for coupons in promotional emails. The Microsoft shopping service extracts coupons from promotional emails that are sent by supported retailers. The extracted coupons are stored and managed by the Microsoft shopping service and are accessible to you. Inbox coupons don't appear when using **Guest mode** or **InPrivate**.
 
-![Shopping and coupons](./media/inboxcoupons-settings.png)
+To control which retailers' emails are scanned by Microsoft Edge:
 
-To control which retailers' emails get scanned by Microsoft Edge, complete the following actions: 
+1. In Microsoft Edge, click the **Settings and more** (**...**) button, and then select **Shopping**.  The **Shopping** sidebar appears.
 
-1.  Click on the **“Your Shopping”** tab on the shopping sidebar 
-1.  Go to the Inbox coupons card and click on the “...” button 
-1.  Click on the **“Settings”** link and view retailers in your inbox 
-1.  Control retailer email preferences via toggles 
+1.  Click the **Your Shopping** tab.
+
+1.  In the **Inbox coupons** card, click the **Settings** (**...**) button:
+
+    ![Coupons for various websites](./media/inboxcoupons.png)
+
+1.  In the **Retailers in your inbox** section, expand the section for a retailer, and then turn the toggle on or off:
+
+    ![The toggle to turn coupon email scanning on or off for a retailer](./media/inboxcoupons-settings.png)
 
 To turn off Inbox coupons:
 
