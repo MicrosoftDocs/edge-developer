@@ -1044,6 +1044,9 @@ In WebView2, you can set a [Favicon](https://developer.mozilla.org/docs/Glossary
 #### Security and privacy
 
 
+<!-- ---------- -->
+###### Tracking prevention
+
 <!-- ------------------------------ -->
 <!-- from RelNotes 111 -->
 Tracking prevention enables the host app to control the level of tracking prevention of the WebView2 control that's associated with the user profile.
@@ -1095,15 +1098,14 @@ See also:
 ---
 
 
-<!-- ------------------------------ -->
+<!-- ---------- -->
+###### SmartScreen
+
 <!-- from RelNotes 112 -->
 The Managing SmartScreen API includes the `IsReputationCheckingRequired` property, which controls whether SmartScreen is enabled.
 
-<!-- 
-todo: is there a regular article about Managing Smartscreen, to cross-link?
-See also:
-* []()
--->
+<!-- See also:
+* [Data and privacy in WebView2](./data-privacy.md) -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1120,6 +1122,38 @@ See also:
 * `ICoreWebView2Settings8` interface:
    * [ICoreWebView2Settings8::get_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#get_isreputationcheckingrequired)
    * [ICoreWebView2Settings8::put_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#put_isreputationcheckingrequired)
+
+---
+
+
+<!-- ---------- -->
+###### Custom crash reporting
+
+<!-- todo: first-time intro for Dev students: -->
+Custom crash reporting.
+
+<!-- See also:
+* [Data and privacy in WebView2](./data-privacy.md) -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled)
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.FailureReportFolderPath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.failurereportfolderpath)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#iscustomcrashreportingenabled)
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.FailureReportFolderPath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#failurereportfolderpath)
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2EnvironmentOptions3` interface:
+   * [ICoreWebView2EnvironmentOptions3::get_IsCustomCrashReportingEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3#get_iscustomcrashreportingenabled)
+* `ICoreWebView2Environment11` interface:
+   * [ICoreWebView2Environment11::get_FailureReportFolderPath](/microsoft-edge/webview2/reference/win32/icorewebview2environment11#get_failurereportfolderpath)
+
 ---
 
 
