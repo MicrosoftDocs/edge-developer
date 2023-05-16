@@ -63,7 +63,7 @@ While developers do not have control over the overall diagnostic data collection
 
 Microsoft Defender SmartScreen ("SmartScreen") is enabled by default. If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md#smartscreen). Generally, all other services in `edge://settings/privacy` are turned off, for WebView2.
 
-The managing SmartScreen API includes the `IsReputationCheckingRequired` property, which controls whether SmartScreen is enabled.  See [Smartscreen](../concepts/overview-features-apis.md#smartscreen) in _Overview of WebView2 features and APIs_.
+The managing SmartScreen API includes the `IsReputationCheckingRequired` property, which controls whether SmartScreen is enabled.  See [Security and privacy](../concepts/overview-features-apis.md#security-and-privacy)<!--todo in next PR: link specifically to #smartscreen instead--> in _Overview of WebView2 features and APIs_.
 
 
 <!-- ====================================================================== -->
