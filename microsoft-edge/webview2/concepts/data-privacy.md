@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/03/2023
+ms.date: 05/16/2023
 ---
 # Data and privacy in WebView2
 
@@ -27,21 +27,27 @@ WebView2 developers have no control over the Windows **Diagnostic data** setting
 When the Windows **Diagnostic data** setting is turned **On**, WebView2-related data including API usage, SDK usage, and creation failure is collected. When this setting is **On**, browser diagnostic data is collected; however, personalization data is not collected. Only browser events that are relevant to WebView2 are collected. Regardless of the Windows **Diagnostic data** setting, WebView2 collects required data that's necessary to maintain performance and reliability; see [Diagnostics, feedback, and privacy in Windows](https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319).
 
 The following APIs control data collection:
+
 ##### [.NET/C#](#tab/dotnetcsharp)
+
 * `CoreWebView2Settings` Class:
    * [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired)
 * `CoreWebView2EnvironmentOptions` Class:
    * [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled)
 * `CoreWebView2Environment` Class:
    * [CoreWebView2Environment.FailureReportFolderPath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.failurereportfolderpath)
+
 ##### [WinRT/C#](#tab/winrtcsharp)
+
 * `CoreWebView2Settings` Class:
    * [CoreWebView2Settings.IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isreputationcheckingrequired)
 * `CoreWebView2EnvironmentOptions` Class:
    * [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#iscustomcrashreportingenabled)
 * `CoreWebView2Environment` Class:
    * [CoreWebView2Environment.FailureReportFolderPath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#failurereportfolderpath)
+
 ##### [Win32/C++](#tab/win32cpp)
+
 * `ICoreWebView2Settings` interface:
    * [ICoreWebView2Settings::get_IsReputationCheckingRequired](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#get_isreputationcheckingrequired)
    * [ICoreWebView2Settings::put_IsReputationCheckingRequired](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#put_isreputationcheckingrequired)
@@ -50,6 +56,7 @@ The following APIs control data collection:
 * `ICoreWebView2Environment11` interface:
    * [ICoreWebView2Environment11::get_FailureReportFolderPath](/microsoft-edge/webview2/reference/win32/icorewebview2environment11#get_failurereportfolderpath)
 
+---
 
 <!-- ====================================================================== -->
 ## SmartScreen

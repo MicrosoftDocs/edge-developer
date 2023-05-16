@@ -1094,6 +1094,37 @@ See also:
 
 ---
 
+<!-- ------------------------------ -->
+###### Data collection
+
+The following APIs control data collection:
+
+See also:
+* [Data and privacy in WebView2](./data-privacy.md)
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled)
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.FailureReportFolderPath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.failurereportfolderpath)
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#iscustomcrashreportingenabled)
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.FailureReportFolderPath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#failurereportfolderpath)
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2EnvironmentOptions3` interface:
+   * [ICoreWebView2EnvironmentOptions3::get_IsCustomCrashReportingEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3#get_iscustomcrashreportingenabled)
+* `ICoreWebView2Environment11` interface:
+   * [ICoreWebView2Environment11::get_FailureReportFolderPath](/microsoft-edge/webview2/reference/win32/icorewebview2environment11#get_failurereportfolderpath)
+
+---
+
+
+<!-- ------------------------------ -->
 ###### SmartScreen
 <!-- ------------------------------ -->
 <!-- from RelNotes 112 -->
