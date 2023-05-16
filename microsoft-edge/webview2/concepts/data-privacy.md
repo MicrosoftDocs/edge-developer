@@ -26,7 +26,7 @@ WebView2 developers have no control over the Windows **Diagnostic data** setting
 
 When the Windows **Diagnostic data** setting is turned **On**, WebView2-related data including API usage, SDK usage, and creation failure is collected. When this setting is **On**, browser diagnostic data is collected; however, personalization data is not collected. Only browser events that are relevant to WebView2 are collected. Regardless of the Windows **Diagnostic data** setting, WebView2 collects required data that's necessary to maintain performance and reliability; see [Diagnostics, feedback, and privacy in Windows](https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319).
 
-The following APIs control data collection:
+While developers do not have control over the overall diagnostic data collection, WebView2 offers the following APIs to control the behavior of specific features that generate data:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
