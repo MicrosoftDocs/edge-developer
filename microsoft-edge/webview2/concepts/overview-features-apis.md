@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/10/2023
+ms.date: 05/17/2023
 ---
 # Overview of WebView2 features and APIs
 
@@ -193,6 +193,8 @@ Your app can send messages to the web content that's within the WebView2 control
    * [CoreWebView2Frame.PostWebMessageAsJson Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postwebmessageasjson)
    * [CoreWebView2Frame.PostWebMessageAsString Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.postwebmessageasstring)
    * [CoreWebView2Frame.WebMessageReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.webmessagereceived)
+* [CoreWebView2File Class](/dotnet/api/microsoft.web.webview2.core.corewebview2file)
+   * [CoreWebView2File.Path Property](/dotnet/api/microsoft.web.webview2.core.corewebview2file.path)<!--allows accessing a DOM `File` object that's passed via `WebMessage`-->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -207,6 +209,8 @@ Your app can send messages to the web content that's within the WebView2 control
    * [CoreWebView2Frame.PostWebMessageAsJson Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#postwebmessageasjson)
    * [CoreWebView2Frame.PostWebMessageAsString Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#postwebmessageasstring)
    * [CoreWebView2Frame.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#webmessagereceived)
+* [CoreWebView2File Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file)
+   * [CoreWebView2File.Path Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file#path)<!--allows accessing a DOM `File` object that's passed via `WebMessage`-->
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -216,6 +220,7 @@ Your app can send messages to the web content that's within the WebView2 control
    * [ICoreWebView2::add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived)
    * [ICoreWebView2::remove_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webmessagereceived)
 * [ICoreWebView2WebMessageReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs)
+* [ICoreWebView2WebMessageReceivedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2)<!--members: AdditionalObjects-->
 * `ICoreWebView2Settings` interface:
    * [ICoreWebView2Settings::get_IsWebMessageEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_iswebmessageenabled)
    * [ICoreWebView2Settings::put_IsWebMessageEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_iswebmessageenabled)
@@ -224,38 +229,11 @@ Your app can send messages to the web content that's within the WebView2 control
    * [ICoreWebView2Frame2::PostWebMessageAsString method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#postwebmessageasstring)
    * [ICoreWebView2Frame2::add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_webmessagereceived)
    * [ICoreWebView2Frame2::remove_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_webmessagereceived)
-
----
-
-
-<!-- ---------- -->
-###### File API
-
-The File API allows accessing a DOM `File` object that's passed via `WebMessage`.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2File Class](/dotnet/api/microsoft.web.webview2.core.corewebview2file)
-   * [CoreWebView2File.Path Property](/dotnet/api/microsoft.web.webview2.core.corewebview2file.path)
-* `CoreWebView2WebMessageReceivedEventArgs` Class:
-   * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs.additionalobjects)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2File Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file)
-   * [CoreWebView2File.Path Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file#path)
-* `CoreWebView2WebMessageReceivedEventArgs` Class:
-   * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webmessagereceivedeventargs#additionalobjects)
-   
-##### [Win32/C++](#tab/win32cpp)
-
 * [ICoreWebView2File interface](/microsoft-edge/webview2/reference/win32/icorewebview2file)
-   * [ICoreWebView2File::get_Path](/microsoft-edge/webview2/reference/win32/icorewebview2file#get_path)<!--no put-->
-* [ICoreWebView2ObjectCollectionView interface](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview)
+   * [ICoreWebView2File::get_Path](/microsoft-edge/webview2/reference/win32/icorewebview2file#get_path)<!--no put--><!--allows accessing a DOM `File` object that's passed via `WebMessage`-->
+* [ICoreWebView2ObjectCollectionView interface](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview)<!--for ICoreWebView2File (C++ only)-->
    * [ICoreWebView2ObjectCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview#get_count)<!--no put-->
    * [ICoreWebView2ObjectCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview#getvalueatindex)
-* [ICoreWebView2WebMessageReceivedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2)
-   * [ICoreWebView2WebMessageReceivedEventArgs2::get_AdditionalObjects](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2#get_additionalobjects)<!--no put-->
 
 ---
 
@@ -433,6 +411,8 @@ See also:
    * [CoreWebView2.CookieManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cookiemanager#microsoft-web-webview2-core-corewebview2-cookiemanager)
 * [CoreWebView2Cookie Class](/dotnet/api/microsoft.web.webview2.core.corewebview2cookie)
 * [CoreWebView2CookieManager Class](/dotnet/api/microsoft.web.webview2.core.corewebview2cookiemanager)
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.CookieManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.cookiemanager)
 
 <!-- link deleted for CookieList Class. Goes to 674 prerelease: https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2cookielist?view=webview2-dotnet-1.0.674-prerelease -->
 
@@ -442,6 +422,8 @@ See also:
    * [CoreWebView2.CookieManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#cookiemanager)
 * [CoreWebView2Cookie Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2cookie)
 * [CoreWebView2CookieManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2cookiemanager)
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.CookieManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#cookiemanager)
 
 <!-- Link deleted for [CoreWebView2CookieList Class]()
 GetCookies returns Vector of CoreWebView2Cookie:
@@ -455,27 +437,6 @@ https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_we
 * [ICoreWebView2Cookie interface](/microsoft-edge/webview2/reference/win32/icorewebview2cookie)
 * [ICoreWebView2CookieList interface](/microsoft-edge/webview2/reference/win32/icorewebview2cookielist)
 * [ICoreWebView2CookieManager interface](/microsoft-edge/webview2/reference/win32/icorewebview2cookiemanager)
-
----
-
-
-<!-- ---------- -->
-###### Profile Cookie Manager API
-
-The Profile Cookie Manager API supports profile management.  The `CookieManager` property enables the host app to get the cookie manager for the profile.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.CookieManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.cookiemanager)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.CookieManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#cookiemanager)
-
-##### [Win32/C++](#tab/win32cpp)
-
 * `ICoreWebView2Profile5` interface:
    * [ICoreWebView2Profile5::get_CookieManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile5#get_cookiemanager)<!--no put-->
 
