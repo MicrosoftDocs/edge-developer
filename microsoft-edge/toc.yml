@@ -1366,6 +1366,10 @@
             - name: Automate and test with Microsoft Edge WebDriver
               href: webview2/how-to/webdriver.md
               displayName: Automate and test WebView2 apps with Microsoft Edge WebDriver  # top-of-page title
+            
+            - name: Data and privacy
+              href: webview2/concepts/data-privacy.md
+              displayName: Data and privacy in WebView2  # top-of-page title
 
 # -----------------------------------------------------------------------------
         - name: Deployment and distribution
