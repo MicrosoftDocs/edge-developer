@@ -357,7 +357,9 @@ Now that we have our UI designed, we will now create the code to hook up the but
 
 See also:
 * [WebView2 API Reference](../webview2-api-reference.md)
-* [API Reference for HoloLens 2 in Unity](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin)
+* [API Reference for Mixed Reality WebView plugin](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin) - for HoloLens 2 in the WebView2 Unity plugin.
+<!-- dest. TOC title:
+   WebView2 Unity Plugin API -->
 
 Continue with the next steps below.
 
@@ -449,7 +451,9 @@ In [Step 7 - Extending WebView2 functionality](#step-7---extending-webview2-func
 
 See also:
 * [WebView2 API Reference](../webview2-api-reference.md)
-* [API Reference for HoloLens 2 in Unity](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin)
+* [API Reference for Mixed Reality WebView plugin](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin) - for HoloLens 2 in the WebView2 Unity plugin.
+<!-- dest. TOC title:
+   WebView2 Unity Plugin API -->
 
 
 <!-- ---------- -->
@@ -596,4 +600,6 @@ In the example above, `ConvertToWebViewSpace` is intentionally not implemented.
 
 * [Get started with WebView2 in WinUI 2 (UWP) apps](./winui2.md)
 * [WebView2 API Reference](../webview2-api-reference.md)
-* [API Reference for HoloLens 2 in Unity](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin)
+* [API Reference for Mixed Reality WebView plugin](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin) - for HoloLens 2 in the WebView2 Unity plugin.
+<!-- dest. TOC title:
+   WebView2 Unity Plugin API -->
