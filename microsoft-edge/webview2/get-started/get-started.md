@@ -19,6 +19,7 @@ These articles cover how to set up your development tools and create an initial 
 | [Get started with WebView2 in WPF apps](wpf.md) | [WPF_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted) | Use the **WPF Application** or **WPF App (.NET Framework)** project template to create a WPF app, and then install the WebView2 SDK for the project to add WebView2. |
 | [Get started with WebView2 in WinForms apps](winforms.md) | [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) | Use the **C# Windows Forms App (.NET Framework)** project template to create a WinForms project, then install the **Microsoft.Web.WebView2** SDK package for the WinForms project. |
 | [Get started with WebView2 in Win32 apps](win32.md) | [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) | Starts by opening an existing Win32 app project that has the WebView2 SDK and code already added. |
+| [Get started with WebView2 in HoloLens 2 Unity apps](hololens2.md) | [Hololens2_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/HoloLens2_GettingStarted) | Starts by opening an existing Unity project that has the WebView2 SDK package and sample code added. |
 
 
 <!-- ====================================================================== -->
