@@ -1147,6 +1147,10 @@
               href: webview2/get-started/win32.md
               displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
 
+            - name: HoloLens 2
+              href: webview2/get-started/hololens2.md
+              displayName: HoloLens2_GettingStarted, Get started with WebView2 in HoloLens 2 Unity apps (Preview)  # repo dir name  # top-of-page title
+
 # -----------------------------------------------------------------------------
 # Sample apps
         - name: Sample apps
@@ -1365,6 +1369,10 @@
             - name: Automate and test with Microsoft Edge WebDriver
               href: webview2/how-to/webdriver.md
               displayName: Automate and test WebView2 apps with Microsoft Edge WebDriver  # top-of-page title
+            
+            - name: Data and privacy
+              href: webview2/concepts/data-privacy.md
+              displayName: Data and privacy in WebView2  # top-of-page title
 
 # -----------------------------------------------------------------------------
         - name: Deployment and distribution
@@ -1412,6 +1420,12 @@
                 - name: Microsoft.Web.WebView2.WinForms
                   href: /dotnet/api/microsoft.web.webview2.winforms
                   displayName: functions, methods
+
+                - name: HoloLens 2
+                  items:
+                    - name: Unity Plugin
+                      href: /windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin
+                      displayName: functions, methods
 
             - name: WinRT
               items:
