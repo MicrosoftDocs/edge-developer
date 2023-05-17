@@ -19,7 +19,7 @@ This WebView2 sample demonstrates how to use the WebView2 CDP extension to use t
 *  Repo directory: [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample)
 *  Solution file: **WV2CDPExtensionWPFSample.sln**
 
-This sample, **WV2CDPExtensionWPFSample**, is built with the WebView2 CDP Extension (the **Microsoft.Web.WebView.DevToolsProtocolExtension** NuGet package).  This sample calls Chrome DevTools Protocol methods on a `DevToolsProtocolHelper` object in WebView2.
+This sample, **WV2CDPExtensionWPFSample**, is built with the WebView2 CDP Extension (the **Microsoft.Web.WebView2.DevToolsProtocolExtension** NuGet package).  This sample calls Chrome DevTools Protocol methods on a `DevToolsProtocolHelper` object in WebView2.
 
 This sample is built as a WPF Visual Studio 2019 project.  It uses C# in the WebView2 environment.
 
@@ -129,13 +129,11 @@ At the top of Visual Studio, set the build target, as follows:
 
 If you want to see details about this step, in a separate window or tab, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
-For more information, see [WebView2 SDK NuGet package](https://aka.ms/webviewnuget).
-
 
 <!-- ====================================================================== -->
 ## Step 8 - Update the WebView2 CDP Extension
 
-A prerequisite for this sample is the latest release version of the WebView2 CDP Extension (**Microsoft.Web.WebView.DevToolsProtocolExtension**), which is included in this project.  The **Microsoft.Web.WebView.DevToolsProtocolExtension** package adds support for the Chrome DevTools Protocol (CDP) API.
+A prerequisite for this sample is the latest release version of the WebView2 CDP Extension (**Microsoft.Web.WebView2.DevToolsProtocolExtension**), which is included in this project.  That package adds support for the Chrome DevTools Protocol (CDP) API.
 
 <!-- readme said "Prerequisites: Latest release version of our WebView2 CDP Extension, which is included in this project." -->
 1. In Solution Explorer, right-click the project and then select **Manage NuGet Packages**.  **NuGet Package Manager** opens.
@@ -146,10 +144,12 @@ A prerequisite for this sample is the latest release version of the WebView2 CDP
 
    ![Checking for updates of the CDP Extension package](./wv2cdpextensionwpfsample-images/cdp-extension-package.png)
 
-1. If a newer release version of the **Microsoft.Web.WebView.DevToolsProtocolExtension** SDK is listed, click the **Update** button.
+1. If a newer release version of the **Microsoft.Web.WebView2.DevToolsProtocolExtension** SDK is listed, click the **Update** button.
 
 <!-- For more information, see [WebView2 CDP Extension](https://aka.ms/webviewcdpnuget).  todo: 404, ie: defaults to bing -->
-For more information about the WebView2 CDP Extension, see [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../how-to/chromium-devtools-protocol.md)
+
+See also:
+* [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../how-to/chromium-devtools-protocol.md)
 
 
 <!-- ====================================================================== -->
@@ -185,3 +185,4 @@ For more information about the WebView2 CDP Extension, see [Use the Chrome DevTo
 
 * [WebView2 API Reference](../webview2-api-reference.md)
 * [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md)
+* [Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) at NuGet.
