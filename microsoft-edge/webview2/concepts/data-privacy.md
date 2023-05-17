@@ -57,7 +57,7 @@ If you don't disable SmartScreen, you must provide notice to all users that your
 ---
 
 See also:
-* [SmartScreen](../concepts/overview-features-apis.md#smartscreen) in _Overview of WebView2 features and APIs_, about `IsReputationCheckingRequired`.
+* [SmartScreen](../concepts/overview-features-apis.md#smartscreen) in _Overview of WebView2 features and APIs_.
 * [Spec: Disable SmartScreen](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/IsSmartScreenRequired.md)
 
 
@@ -92,7 +92,7 @@ If any WebView2 process crashes, one or more minidump files are created and sent
 ---
 
 See also:
-* [Custom crash reporting](../concepts/overview-features-apis.md#custom-crash-reporting) in _Overview of WebView2 features and APIs_, about `IsCustomCrashReportingEnabled` and `FailureReportFolderPath`.
+* [Custom crash reporting](../concepts/overview-features-apis.md#custom-crash-reporting) in _Overview of WebView2 features and APIs_.
 * [Spec: Custom Crash Reports](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/DisableCrashReporting.md)
 * [Minidump Files](/windows/win32/debug/minidump-files)
 
