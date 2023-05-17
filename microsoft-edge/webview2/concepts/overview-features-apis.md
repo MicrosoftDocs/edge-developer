@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/16/2023
+ms.date: 05/17/2023
 ---
 # Overview of WebView2 features and APIs
 
@@ -1098,16 +1098,14 @@ See also:
 
 <!-- ---------- -->
 ###### SmartScreen
-<!-- todo: link from data-privacy.md to here -->
-
 <!-- from RelNotes 112 -->
-This is the Managing SmartScreen API, which controls whether SmartScreen is enabled.
-<!-- todo: clarify: need intro for Dev students -->
-<!-- controls the behavior of specific features that generate diagnostic data -->
 
-<!-- todo: uncomment after other PR merged:
+Microsoft Defender SmartScreen ("SmartScreen") is enabled by default.  The `IsReputationCheckingRequired` property controls whether SmartScreen is enabled.
+
+If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md#smartscreen).  Generally, all other services in `edge://settings/privacy` are turned off, for WebView2.
+
 See also:
-* [Data and privacy in WebView2](./data-privacy.md) -->
+* [SmartScreen](./data-privacy.md#smartscreen) in _Data and privacy in WebView2_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1130,16 +1128,14 @@ See also:
 
 <!-- ---------- -->
 ###### Custom crash reporting
-<!-- todo: link from data-privacy.md to here -->
 
-<!-- todo: first-time intro for Dev students: -->
-Custom crash reporting.
+If any WebView2 process crashes, one or more minidump files are created and sent to Microsoft for diagnosis.  Use this API to customize crash reporting when running diagnostics and doing analysis.
+*  To prevent crash dumps from being sent to Microsoft, set the `IsCustomCrashReportingEnabled` property to `false`.
+*  To locate crash dumps and do customization with them, use the `CrashDumpFolderPath` property.
 
-<!-- controls the behavior of specific features that generate diagnostic data -->
-
-<!-- todo: uncomment after other PR merged:
 See also:
-* [Data and privacy in WebView2](./data-privacy.md) -->
+* [Custom crash reporting](./data-privacy.md#custom-crash-reporting) in _Data and privacy in WebView2_.
+* [Minidump Files](/windows/win32/debug/minidump-files)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
