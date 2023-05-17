@@ -1356,7 +1356,7 @@ See also:
 * `CoreWebView2` Class:
    * [CoreWebView2.ContentLoading Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contentloading)
    * [CoreWebView2.DOMContentLoaded Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.domcontentloaded)
-   * [CoreWebView2.FrameNavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationcompleted) - superseded; use `CoreWebView2Frame.NavigationCompleted` instead<!--todo: tech review this added note; confirm this API is superseded-->
+   * [CoreWebView2.FrameNavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationcompleted) - superseded; use `CoreWebView2Frame.NavigationCompleted` instead<!-- todo: tech review this added note; confirm this API is superseded-->
    * [CoreWebView2.NavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted)
 * [CoreWebView2ContentLoadingEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contentloadingeventargs)
 * [CoreWebView2DOMContentLoadedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2domcontentloadedeventargs)
@@ -1371,7 +1371,7 @@ See also:
 * `CoreWebView2` Class:
    * [CoreWebView2.ContentLoading Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#contentloading)
    * [CoreWebView2.DOMContentLoaded Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#domcontentloaded)
-   * [CoreWebView2.FrameNavigationCompleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationcompleted) - superseded; use `CoreWebView2Frame.NavigationCompleted` instead<!--todo: tech review this added note; confirm this API is superseded-->
+   * [CoreWebView2.FrameNavigationCompleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationcompleted) - superseded; use `CoreWebView2Frame.NavigationCompleted` instead<!-- todo: tech review this added note; confirm this API is superseded-->
    * [CoreWebView2.NavigationCompleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigationcompleted)
 * [CoreWebView2ContentLoadingEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contentloadingeventargs)
 * [CoreWebView2DOMContentLoadedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2domcontentloadedeventargs)
@@ -1385,10 +1385,10 @@ See also:
 
 * `ICoreWebView2` interface:
    * [ICoreWebView2::add_ContentLoading method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_contentloading)
-   * [ICoreWebView2::add_FrameNavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted) - superseded; use `ICoreWebView2Frame::add_NavigationCompleted` instead<!--todo: tech review this added note; confirm this API is superseded-->
+   * [ICoreWebView2::add_FrameNavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted) - superseded; use `ICoreWebView2Frame::add_NavigationCompleted` instead<!-- todo: tech review this added note; confirm this API is superseded-->
    * [ICoreWebView2::add_NavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationcompleted)
    * [ICoreWebView2::remove_ContentLoading method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_contentloading)
-   * [ICoreWebView2::remove_FrameNavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted) - superseded; use `ICoreWebView2Frame::remove_NavigationCompleted` instead<!--todo: tech review this added note; confirm this API is superseded-->
+   * [ICoreWebView2::remove_FrameNavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted) - superseded; use `ICoreWebView2Frame::remove_NavigationCompleted` instead<!-- todo: tech review this added note; confirm this API is superseded-->
    * [ICoreWebView2::remove_NavigationCompleted method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationcompleted)
 * `ICoreWebView2_2` interface:
    * [ICoreWebView2_2::add_DOMContentLoaded method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_domcontentloaded)
@@ -1460,7 +1460,7 @@ The `CustomSchemeRegistration` allows registration of custom schemes in WebView2
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2CustomSchemeRegistration Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration)
-* [CoreWebView2EnvironmentOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions)<!-- todo: remove or comment-out this item?  no CustomSchemeRegistrations property: https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions -->
+* [CoreWebView2EnvironmentOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions)<!--todo: remove or comment-out this item?  no CustomSchemeRegistrations property: https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
