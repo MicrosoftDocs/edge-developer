@@ -232,8 +232,6 @@ Your app can send messages to the web content that's within the WebView2 control
 * [ICoreWebView2File interface](/microsoft-edge/webview2/reference/win32/icorewebview2file)
    * [ICoreWebView2File::get_Path](/microsoft-edge/webview2/reference/win32/icorewebview2file#get_path)<!--no put--><!--allows accessing a DOM `File` object that's passed via `WebMessage`-->
 * [ICoreWebView2ObjectCollectionView interface](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview)<!--for ICoreWebView2File (C++ only)-->
-   * [ICoreWebView2ObjectCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview#get_count)<!--no put-->
-   * [ICoreWebView2ObjectCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview#getvalueatindex)
 
 ---
 
