@@ -598,7 +598,7 @@ The Microsoft Edge shopping feature requires sharing of cookie information with 
 
 To help you find and keep track of coupons in your inbox, Microsoft Edge may optionally scan your connected email account for coupons in promotional emails. The Microsoft shopping service extracts coupons from promotional emails that are sent by supported retailers. The extracted coupons are stored and managed by the Microsoft shopping service and are accessible to you. Inbox coupons don't appear when using **Guest mode** or **InPrivate**.
 
-The following steps assume that you have already signed up for coupons.
+The following steps assume that you have already connected your inbox.
 
 To control which retailers' emails are scanned by Microsoft Edge:
 
