@@ -227,6 +227,27 @@ At `localhost:9222` above, the port number given on this line should match the p
 
 For more info about the `DebuggerAddress` property of the `EdgeOptions` object, see [EdgeOptions object](../../webdriver-chromium/capabilities-edge-options.md#edgeoptions-object).
 
+### Attaching Microsoft Edge WebDriver to the launched WebView2 UWP app with Remote Tools
+
+1. Use the `wdpAddress` and `wdpProcessId` properties to tell Microsoft Edge WebDriver to connect to the remote tool and the specific running process.
+
+```csharp
+EdgeOptions eo = new EdgeOptions();
+eo.AddAdditionalEdgeOption("wdpAddress", "localhost:50080");
+eo.AddAdditionalEdgeOption("wdpProcessId", 47860);
+// Optional user name and password to use when connecting to a Windows Device Portal server.
+// Required if the server has authentication enabled.
+// eo.AddAdditionalEdgeOption("wdpUsername", "username");
+// eo.AddAdditionalEdgeOption("wdpPassword", "password");
+EdgeDriver e = new EdgeDriver(eo);
+```
+
+2. You can find the `wdpProcessId` for use in the `http://<Device Portal URL>/msedge`, in this case is `localhost:50080/msedge` as `browserProcessId` after you've launched the WV2 UWP app.
+
+![ProcessId_of running UWP_app](../media/webdriver/sample-processId.png)
+
+For more info about launching WV2 UWP app with remote tools, see [Remote debugging UWP apps with Remote Tools for Microsoft Edge](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/remote-debugging).
+
 Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge WebDriver, by attaching Microsoft Edge WebDriver to a running WebView2 app.
 
 ### UWP projects and debugging
