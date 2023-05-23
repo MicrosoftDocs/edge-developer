@@ -246,7 +246,7 @@ EdgeDriver e = new EdgeDriver(eo);
 
 ![ProcessId_of running UWP_app](../media/webdriver/sample-processId.png)
 
-For more info about launching WV2 UWP app with remote tools, see [Remote debugging UWP apps with Remote Tools for Microsoft Edge](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/remote-debugging).
+For more info about launching WV2 UWP app with remote tools, see [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
 
 Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge WebDriver, by attaching Microsoft Edge WebDriver to a running WebView2 app.
 
