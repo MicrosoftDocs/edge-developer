@@ -20,7 +20,13 @@ WebView2 is available for the following frameworks or platforms:
 * [Core](/dotnet/api/microsoft.web.webview2.core)
 * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
 * [Windows Forms](/dotnet/api/microsoft.web.webview2.winforms)
-
+* [Unity/HoloLens 2](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin)
+<!--
+dest. title:
+   API Reference for Mixed Reality WebView plugin
+dest. TOC title:
+   WebView2 Unity Plugin API
+-->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
