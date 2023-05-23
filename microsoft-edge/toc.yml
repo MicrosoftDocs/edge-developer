@@ -1330,7 +1330,7 @@
 
             - name: Use the Chrome DevTools Protocol
               href: webview2/how-to/chromium-devtools-protocol.md
-              displayName: Use the Chrome DevTools Protocol in WebView2  # old title
+              displayName: Use the Chrome DevTools Protocol (CDP) in WebView2 apps  # top-of-page title
 
             - name: Automate and test with Microsoft Edge WebDriver
               href: webview2/how-to/webdriver.md
