@@ -227,9 +227,13 @@ At `localhost:9222` above, the port number given on this line should match the p
 
 For more info about the `DebuggerAddress` property of the `EdgeOptions` object, see [EdgeOptions object](../../webdriver-chromium/capabilities-edge-options.md#edgeoptions-object).
 
-### Attaching Microsoft Edge WebDriver to the launched WebView2 UWP app with Remote Tools
+### For UWP apps, attach Microsoft Edge WebDriver to WebView2 with Remote Tools
 
-1. Use the `wdpAddress` and `wdpProcessId` properties to tell Microsoft Edge WebDriver to connect to the remote tool and the specific running process.
+1. Once you have launched the UWP WebView2 app, navigate to `http://<Device Portal URL>/msedge` and identify the `browserProcessId` for the WebView2 process that you want to attach Microsoft Edge WebDriver to.  For example, in the following screenshot, navigating to `localhost:50080/msedge` displays the `browserProcessId` as `47860`.
+
+![ProcessId_of running UWP_app](../media/webdriver/sample-processId.png)
+
+1. Now, use the `wdpAddress` and `wdpProcessId` properties to tell Microsoft Edge WebDriver to connect to the the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/store/detail/9P6CMFV44ZLT) and the specific WebView2 process. `wdpAddress` is defined as the Device Portal URL and `wdpProcessId` is the `browserProcessId` you identified in the previous step.
 
 ```csharp
 EdgeOptions eo = new EdgeOptions();
@@ -242,13 +246,9 @@ eo.AddAdditionalEdgeOption("wdpProcessId", 47860);
 EdgeDriver e = new EdgeDriver(eo);
 ```
 
-2. You can find the `wdpProcessId` for use in the `http://<Device Portal URL>/msedge`, in this case is `localhost:50080/msedge` as `browserProcessId` after you've launched the WV2 UWP app.
+For more info about launching WV2 UWP app with Remote Tools, see [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
 
-![ProcessId_of running UWP_app](../media/webdriver/sample-processId.png)
-
-For more info about launching WV2 UWP app with remote tools, see [Remote debugging UWP apps with Remote Tools for Microsoft Edge](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/remote-debugging).
-
-Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge WebDriver, by attaching Microsoft Edge WebDriver to a running WebView2 app.
+Congratulations!  You've successfully attached Microsoft Edge WebDriver to a running WebView2 app.
 
 ### UWP projects and debugging
 
