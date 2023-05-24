@@ -229,9 +229,11 @@ For more info about the `DebuggerAddress` property of the `EdgeOptions` object, 
 
 ### For UWP apps, attach Microsoft Edge WebDriver to WebView2 with Remote Tools
 
-1. Once you have launched the UWP WebView2 app, navigate to `http://<Device Portal URL>/msedge` and identify the `browserProcessId` for the WebView2 process that you want to attach Microsoft Edge WebDriver to.  For example, in the following screenshot, navigating to `localhost:50080/msedge` displays the `browserProcessId` as `47860`.
+1. After you've launched the UWP WebView2 app, go to `http://<Device Portal URL>/msedge`.  For example, the following screenshot shows `localhost:50080/msedge`:
 
-![ProcessId_of running UWP_app](../media/webdriver/sample-processId.png)
+   ![Process ID of a running UWP app](../media/webdriver/sample-processid.png)
+
+1. Note the `browserProcessId` for the WebView2 process that you want to attach Microsoft Edge WebDriver to.  For example, the above screenshot shows the `browserProcessId` as `47860`.
 
 1. Now, use the `wdpAddress` and `wdpProcessId` properties to tell Microsoft Edge WebDriver to connect to the the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/store/detail/9P6CMFV44ZLT) and the specific WebView2 process. `wdpAddress` is defined as the Device Portal URL and `wdpProcessId` is the `browserProcessId` you identified in the previous step.
 
