@@ -73,7 +73,7 @@ In previous versions of Microsoft Edge, changing the **Severity** or **Browser**
 ![Navigating the Issues tool with the keyboard no longer causes the Close button to disappear](./devtools-113-images/issues-tool-regenerate-infobar-close-button.png)
 
 See also:
-* [Filter issues](../../../issues/index.md##filter-issues) in _Find and fix problems using the Issues tool_
+* [Filter issues](../../../issues/index.md#filter-issues) in _Find and fix problems using the Issues tool_
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 <!-- ====================================================================== -->
