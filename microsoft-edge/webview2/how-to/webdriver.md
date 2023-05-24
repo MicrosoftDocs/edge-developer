@@ -239,16 +239,15 @@ For more info about the `DebuggerAddress` property of the `EdgeOptions` object, 
    * `wdpAddress` is defined as the Device Portal URL.
    * `wdpProcessId` is defined as the `browserProcessId` value that you noted in the previous step:
 
-```csharp
-EdgeOptions eo = new EdgeOptions();
-eo.AddAdditionalEdgeOption("wdpAddress", "localhost:50080");
-eo.AddAdditionalEdgeOption("wdpProcessId", 47860);
-// Optional user name and password to use when connecting to a Windows Device Portal server.
-// Required if the server has authentication enabled.
-// eo.AddAdditionalEdgeOption("wdpUsername", "username");
-// eo.AddAdditionalEdgeOption("wdpPassword", "password");
-EdgeDriver e = new EdgeDriver(eo);
-```
+   ```csharp
+   EdgeOptions eo = new EdgeOptions();
+   eo.AddAdditionalEdgeOption("wdpAddress", "localhost:50080");
+   eo.AddAdditionalEdgeOption("wdpProcessId", 47860);
+   // Optional user name and password to use when connecting to a Windows Device Portal
+   // server.  Required if the server has authentication enabled.
+   // eo.AddAdditionalEdgeOption("wdpUsername", "username");
+   // eo.AddAdditionalEdgeOption("wdpPassword", "password");
+   EdgeDriver e = new EdgeDriver(eo);
 
 For more info about launching WV2 UWP app with Remote Tools, see [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
 
