@@ -249,7 +249,7 @@ For more info about the `DebuggerAddress` property of the `EdgeOptions` object, 
    // eo.AddAdditionalEdgeOption("wdpPassword", "password");
    EdgeDriver e = new EdgeDriver(eo);
 
-For more info about launching WV2 UWP app with Remote Tools, see [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
+For more information about launching a WebView2 UWP app with Remote Tools, see [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
 
 Congratulations!  You've successfully attached Microsoft Edge WebDriver to a running WebView2 app.
 
