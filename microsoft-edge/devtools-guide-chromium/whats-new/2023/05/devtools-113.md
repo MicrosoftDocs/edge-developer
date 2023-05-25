@@ -28,7 +28,7 @@ The new **Crash analyzer** tool is available as an experiment in Microsoft Edge 
 
 With the **Enable Crash Analyzer** experiment turned on, you can now access the **Crash analyzer** tool.  In the **Crash analyzer** tool, you can input a JavaScript stack trace, such as for non-fatal JavaScript exceptions, and then have your sourcemaps applied to the stack trace so that you can debug faster.
 
-You can report non-fatal JavaScript exceptions or similar data to tools like [Azure Application Insights](https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview?tabs=net):
+You can report non-fatal JavaScript exceptions or similar data to tools such as Azure Application Insights:
 
 1. You can copy the stack trace from one of these exceptions out of Application Insights, and then paste the stack trace into the left pane of the **Crash analyzer** tool.
 
@@ -48,7 +48,7 @@ This screenshot shows using the Crash analyzer tool to debug a non-fatal JavaScr
 
 See also:
 * [throw - JavaScript | MDN Web Docs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)
-* [Application Insights overview](https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview?tabs=net)
+* [Application Insights overview](/azure/azure-monitor/app/app-insights-overview)
 * [Crash Analyzer Support | npm](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support)
 
 
