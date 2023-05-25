@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/24/2023
+ms.date: 05/25/2023
 ---
 # What's New in DevTools (Microsoft Edge 113)
 
@@ -115,7 +115,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## The Node types filter in the Memory tool now only displays in the Summary view of a heap snapshot
+## The Node Types filter in the Memory tool now only displays in the Summary view of a heap snapshot
 
 <!-- Subtitle: todo. -->
 
