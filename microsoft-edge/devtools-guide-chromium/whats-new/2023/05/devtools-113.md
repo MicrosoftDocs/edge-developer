@@ -36,15 +36,13 @@ You can report non-fatal JavaScript exceptions or similar data to tools such as 
 
 1. To produce the stack traces that are needed by the **Crash analyzer** tool, you can use the [Crash Analyzer Support](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support) npm package.
 
-1. Select the **Analyze** button in the **Crash analyzer** tool and the right pane of the tool will populate with the original file and function names that make up the stack trace.
+1. In the **Crash analyzer** tool, click the **Analyze** button.  The right-hand pane shows the original file and function names that make up the stack trace:
+
+   ![Using the Crash analyzer tool to debug a non-fatal JavaScript exception](./devtools-113-images/crash-analyzer-tool.png)
 
 1. Click through the individual stack frames to see the lines in your original code that caused the error.
 
 <!-- todo: For more information, see [Crash Analyzer](../../../crash-analyzer/index.md). -->
-
-This screenshot shows using the Crash analyzer tool to debug a non-fatal JavaScript exception:
-
-![Using the Crash analyzer tool to debug a non-fatal JavaScript exception](./devtools-113-images/crash-analyzer-tool.png)
 
 See also:
 * [throw - JavaScript | MDN Web Docs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)
