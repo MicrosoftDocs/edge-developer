@@ -30,13 +30,13 @@ With the **Enable Crash Analyzer** experiment turned on, you can now access the 
 
 You can report non-fatal JavaScript exceptions or similar data to tools such as Azure Application Insights:
 
-1. You can copy the stack trace from one of these exceptions out of Application Insights, and then paste the stack trace into the left pane of the **Crash analyzer** tool.
+1. First, in order to use the **Crash analyzer** tool, you need specially-formatted stack traces that include a section called `Source modules`.  This section contains the sourcemap references to the JavaScript functions that were part of the error stack trace.  You can produce these stack traces by using the [Crash Analyzer Support](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support) npm package.
 
-1. You will also need to include a custom section called `Source modules`, which contains the sourcemap references to the JavaScript functions that were part of the error stack trace.
+1. Then you need a way to actually receive the stack traces from the browsers that are running your code.  One such way is to use Azure Application Insights; see [Application Insights overview](/azure/azure-monitor/app/app-insights-overview).
 
-1. To produce the stack traces that are needed by the **Crash analyzer** tool, you can use the [Crash Analyzer Support](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support) npm package.
+1. Once you have a stack trace, paste it into the left pane of the **Crash analyzer** tool.
 
-1. In the **Crash analyzer** tool, click the **Analyze** button.  The right-hand pane shows the original file and function names that make up the stack trace:
+1. In the **Crash analyzer** tool, click the **Analyze** button (or press **Ctrl+Enter**).  The right-hand pane shows the original file and function names that make up the stack trace:
 
    ![Using the Crash analyzer tool to debug a non-fatal JavaScript exception](./devtools-113-images/crash-analyzer-tool.png)
 
