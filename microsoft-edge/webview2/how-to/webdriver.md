@@ -230,6 +230,10 @@ For more info about the `DebuggerAddress` property of the `EdgeOptions` object, 
 ### For UWP apps, attach Microsoft Edge WebDriver to WebView2 with Remote Tools
 
 1. Complete the steps described in [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
+
+   As for now, Canary is the only supported version to test, please set the enviroment variable      `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1` to make sure the Webview2 version is Canary.
+
+   ![Settings for UWP app](../media/webdriver/sample-uwp-settings.png)
  
 1. After you've launched the UWP WebView2 app, go to `http://<Device Portal URL>/msedge`.  For example, the following screenshot shows `localhost:50080/msedge`:
 
