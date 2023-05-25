@@ -99,14 +99,14 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Context menus in DevTools better support themes from VS Code
+## The Customize DevTools menu has better support for VS Code themes
 
 <!-- Subtitle: Customize DevTools to match VS Code with themes like Solarized Light, Kimbie Dark, Monokai, or Tomorrow Night Blue. -->
 <!-- Reviewer: Irene Cho -->
 
-In previous versions of Microsoft Edge, applying themes from Microsoft Visual Studio Code such as Solarized Light or Kimbie Dark caused low-contrast issues when hovering over an item in a context menu or popup menu.  In Microsoft Edge 113, this issue has been fixed.  Context menus and popup menus are now displayed better, with sufficient color contrast, when using themes in DevTools:
+In previous versions of Microsoft Edge, applying themes from Microsoft Visual Studio Code such as Solarized Light or Kimbie Dark caused low-contrast issues when hovering over items in the **Customize and control DevTools** menu.  In Microsoft Edge 113, this issue has been fixed.  Items in the **Customize and control DevTools** menu are now displayed with sufficient color contrast:
 
-![Sufficient color contrast in a popup menu in DevTools with the Solarized Light theme](./devtools-113-images/themes-contrast-in-context-menu.png)
+![Sufficient color contrast in the Customize DevTools menu with the Solarized Light theme](./devtools-113-images/themes-contrast-in-context-menu.png)
 
 See also:
 * [Apply a color theme to DevTools](../../../customize/theme.md)
