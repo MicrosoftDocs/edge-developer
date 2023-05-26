@@ -20,7 +20,7 @@ ms.date: 05/25/2023
 
 
 <!-- ====================================================================== -->
-## Debug JavaScript error stack traces with the experimental Crash Analyzer tool
+## Debug JavaScript error stack traces by using the Crash Analyzer tool
 
 <!-- Subtitle: Turn on the "Enable Crash Analyzer" experiment and paste in your error stack trace with source map references for faster debugging. -->
 
