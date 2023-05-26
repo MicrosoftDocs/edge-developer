@@ -64,6 +64,14 @@ In the following image, the minified object name `e` is shown in a heap snapshot
 Now in Microsoft Edge 113, the **Memory** tool automatically unminifies object names in the heap snapshot:
 
 ![A heap snapshot in the Memory tool displays unminified object names](./devtools-113-images/unminified-object-name-memory-tool.png)
+<!-- todo
+1. Open Edge Stable.
+2. Go to: https://outlook-sdf.office.com/mail/
+3. Don't show the Outlook UI - undock DevTools.
+4. Open DevTools > Memory.
+5. Take a heap snapshot.
+6. Expand Window, expand Window, find stylesheet e and draw a red box around e.
+-->
 
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
@@ -117,7 +125,7 @@ See also:
 <!-- ====================================================================== -->
 ## The Node Types filter in the Memory tool now only displays in the Summary view of a heap snapshot
 
-<!-- Subtitle: todo. -->
+<!-- Subtitle: The Containment and Statistics views for heap snapshots no longer display the Node Types filter, since the filter doesn't apply to those views. -->
 
 In [Microsoft Edge 100](../../2022/03/devtools-100.md#filter-heap-snapshots-summary-by-node-type), we added a **Node Types** filter to the **Memory** tool so you can focus only on specific types of objects, such as `Array` or `String`, when looking at a heap snapshot.  This **Node Types** filter only applies to objects that are displayed in the **Summary** view of a heap snapshot.
 
