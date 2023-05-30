@@ -50,11 +50,11 @@ Next, make sure a preview channel of Microsoft Edge in installed, on a supported
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install Visual Studio 2019
+## Step 2 - Install Visual Studio
 
-Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.
+Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.  The sample can also be opened using Visual Studio 2022.
 
-1. If Visual Studio 2019 (minimum required version) is not already installed with C++ support, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio 2019 with C++ support, and then return to this page and continue the steps below.
+1. If Visual Studio is not already installed with C++ support, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio with C++ support, and then return to this page and continue the steps below.
 
 If you want to use Visual Studio 2017, after you open the solution in Visual Studio 2017, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.
 
@@ -106,7 +106,7 @@ Continue the steps below.
 <!-- ====================================================================== -->
 ## Step 6 - View the opened project
 
-1. On your local drive, open again the **WebView2Samples** solution in the same version of Visual Studio that you set up, such as Visual Studio 2019:
+1. On your local drive, open again the **WebView2Samples** solution in the same version of Visual Studio that you set up:
 
    *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2Samples.sln`
 
