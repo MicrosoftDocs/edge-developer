@@ -380,9 +380,68 @@ On WinUI 2, transparency is achieved by setting the color to `00FFFFFF`.
 
 
 <!-- ------------------------------ -->
-#### Custom cursors
+#### CSS cursors
 
-On WinUI 2, you cannot use [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor) by specifying a URL of an image as the cursor. You can use CSS cursors to change the cursor to a predefined cursor, such as `cursor: wait;` or `cursor: crosshair;`, but not to an image URL, such as `cursor: url(https://contoso.com/cursor.png), pointer;`. See [CSS - cursor loaded from URL doesn't work](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1925).
+On WinUI 2 (UWP), CSS cursors have the following limitations.
+
+
+###### Image URLs
+
+The CSS cursor cannot be an image URL, such as `cursor: url(https://contoso.com/cursor.png), pointer;`.  See [CSS - cursor loaded from URL doesn't work](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1925).
+
+
+###### Predefined CSS cursors
+
+On WinUI 2 (UWP), some of the predefined CSS cursors are not supported.  You can use CSS cursors to change the cursor to some of the predefined cursors, such as `cursor: wait;` or `cursor: crosshair;`, but not to others, such as `cursor: progress` or `cursor: none`.
+
+| Keyword | Supported? |
+|---|:---:|
+| **General** |  |
+| auto | ✔️ |
+| default | ✔️ |
+| none | ❌ |
+| **Links & status** |  |
+| context-menu | ✔️ |
+| help | ✔️ |
+| pointer | ✔️ |
+| progress | ❌ |
+| wait | ✔️ |
+| **Selection** |  |
+| cell | ❌ |
+| crosshair | ✔️ |
+| text | ✔️ |
+| vertical-text | ❌ |
+| **Drag & drop** |  |
+| alias | ❌ |
+| copy | ❌ |
+| move | ✔️ |
+| no-drop | ✔️ |
+| not-allowed | ✔️ |
+| grab | ❌ |
+| grabbing | ❌ |
+| **Resizing & scrolling** |  |
+| all-scroll | ✔️ |
+| col-resize | ❌ |
+| row-resize | ❌ |
+| n-resize | ✔️ |
+| e-resize | ✔️ |
+| s-resize | ✔️ |
+| w-resize | ✔️ |
+| ne-resize | ✔️ |
+| nw-resize | ✔️ |
+| se-resize | ✔️ |
+| sw-resize | ✔️ |
+| ew-resize | ✔️ |
+| ns-resize | ✔️ |
+| nesw-resize | ✔️ |
+| nwse-resize | ✔️ |
+| **Zooming** |  |
+| zoom-in | ❌ |
+| zoom-out | ❌ |
+
+See also:
+* [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor#values) - the **Values** section describes the above keyword values.
+<!-- known limitation: destination page doesn't scroll to anchor -->
 
 
 <!-- ------------------------------ -->
