@@ -251,7 +251,6 @@ This hybrid approach allows you to create and iterate faster using web technolog
 Both of these parts of the **WebView2APISample** sample app are displayed in the image below:
 
 ![Hybrid app](./webview2apissample-images/sample-app-layout-diagram.png)
-<!-- todo: update png -->
 
 1. Section One: The top part of the **WebView2APISample** sample app is a Win32 component written in C++. This part of the application takes in UI inputs from the user and uses them to control the WebView.
 
@@ -311,9 +310,7 @@ This component handles commands from the View menu, and any functionality relate
 <!-- ------------------------------ -->
 #### ScenarioWebMessage.cpp and ScenarioWebMessage.html (Scenario menu)
 
-This component is created when you select the **Scenario** > **Web Messaging** menu item.  It implements an example application with a C++ part and an HTML+JavaScript part, which communicate with each other by asynchronously posting and receiving messages:
-
-![Web Messaging: Posting and receiving messages](./webview2apissample-images/sample-app-webmessaging-screenshot.png)
+The `ScenarioWebMessage` component is created when you select the **Scenario** > **Web Messaging** menu item.  This component implements an example application with a C++ part and an HTML + JavaScript part, which communicate with each other by asynchronously posting and receiving messages.
 
 This component is described in [ScenarioWebMessage (.html, .cpp, and .h)](#scenariowebmessage-html-cpp-and-h), below.
 
@@ -430,11 +427,17 @@ CHECK_FAILURE(m_webView->add_NewWindowRequested(
 
 The `ScenarioWebMessage` files show how the Win32 host can modify the WebView, how the WebView can modify the Win32 host, and how the WebView can modify itself by accessing information from the Win32 host.  This is done asynchronously.
 
-The following sections demonstrate how each discrete function works using the Sample App, and then explains how to implement this functionality.
+The `ScenarioWebMessage` component is created when you select the **Scenario** > **Web Messaging** menu item.  It implements an example application with a C++ part and an HTML+JavaScript part, which communicate with each other by asynchronously posting and receiving messages:
 
-First, go to the **ScenarioWebMessage** application within the Sample App:
+![Web Messaging: Posting and receiving messages](./webview2apissample-images/sample-app-webmessaging-screenshot.png)
+
+
+The following sections demonstrate how each discrete function works using the **WebView2APISample** sample app, and then explains how to implement this functionality.
+
+First, go to the **ScenarioWebMessage** application within the sample app:
 
 1. Open (run) the **WebView2APISample** sample app.
+
 1. In the **Scenario** menu, select **Web Messaging**.
 
    The WebView displays a webpage titled **WebMessage sample page** (`ScenarioWebMessage.html`):
@@ -496,13 +499,13 @@ The following steps show how the Win32 Host can modify a WebView. In this exampl
 
 The following steps show how the WebView can modify the Win32 Host App by changing the title of the Win32 App:
 
-1. Note the title of the Sample App, displayed in the top left of the window next to the icon.  It's initially **WebView2APISample - Microsoft Edge WebView2**.
+1. Note the title of the **WebView2APISample** sample app, displayed in the top left of the window next to the icon.  It's initially **WebView2APISample - Microsoft Edge WebView2**.
 
 1. Under the **Receiving Message** section, fill out the form with the new title of your choice.
 
 1. Click **Send**.
 
-Note the new title displayed in the titlebar of the Sample App.
+Note the new title displayed in the titlebar of the **WebView2APISample** sample app.
 
 
 <!-- ---------- -->
