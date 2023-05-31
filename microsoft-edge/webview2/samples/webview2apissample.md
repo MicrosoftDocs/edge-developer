@@ -270,11 +270,19 @@ This is the top-level file that runs the **WebView2APISample** sample app. It re
 
 
 <!-- ------------------------------ -->
-#### AppWindow.cpp
+#### AppWindow.cpp (Window menu)
 
-This file implements the application window. In this file, we first set up all the Win32 controls. Second, we initialize the WebView Environment and the WebView. Third, we add some event handlers to the WebView and create all the components that handle various features of the application. The `AppWindow` class itself handles commands from the application's Window menu.
+This file implements the application window, by doing the following:
 
-This file is described in [Key functions in AppWindow.cpp](#key-functions-in-appwindowcpp), below.
+1. Set up all the Win32 controls.
+
+1. Initialize the WebView Environment and the WebView.
+
+1. Add event handlers to the WebView and create all the components that handle various features of the application.
+
+The `AppWindow` class handles commands from the sample app's **Window** menu.
+
+This file is described in more detail in [Key functions in AppWindow.cpp](#key-functions-in-appwindowcpp), below.
 
 
 <!-- ------------------------------ -->
@@ -312,7 +320,7 @@ This component handles commands from the View menu, and any functionality relate
 
 The `ScenarioWebMessage` component is created when you select the **Scenario** > **Web Messaging** menu item.  This component implements an example application with a C++ part and an HTML + JavaScript part, which communicate with each other by asynchronously posting and receiving messages.
 
-This component is described in [ScenarioWebMessage (.html, .cpp, and .h)](#scenariowebmessage-html-cpp-and-h), below.
+This component is described in more detail in [ScenarioWebMessage (.html, .cpp, and .h)](#scenariowebmessage-html-cpp-and-h), below.
 
 
 <!-- ------------------------------ -->
@@ -324,7 +332,17 @@ This component is created when you select the **Scenario** > **Host Objects** me
 <!-- ====================================================================== -->
 ## Key functions in AppWindow.cpp
 
-The following are some of the key functions in the main file of the **WebView2APISample** sample app.
+`AppWindow.cpp` implements the application window, by doing the following:
+
+1. Set up all the Win32 controls.
+
+1. Initialize the WebView Environment and the WebView.
+
+1. Add event handlers to the WebView and create all the components that handle various features of the application.
+
+The `AppWindow` class handles commands from the sample app's **Window** menu.
+
+The following are some of the key functions in `AppWindow.cpp`.
 
 
 <!-- ------------------------------ -->
