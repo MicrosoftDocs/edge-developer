@@ -25,7 +25,7 @@ This article is for WebView2 developers.
 <!-- ====================================================================== -->
 ## Optional diagnostic data
 
-WebView2 is a Windows component.  The data collection consent for WebView2 is governed by the Windows **Settings > Privacy & security > Diagnostics & feedback > Diagnostic data** setting on Windows 10 and Windows 11 as a centralized switch.  Similar to the Windows APIs, WebView2 developers have no control over the Windows **Diagnostic data** setting.
+WebView2 is a Windows component.  The data collection consent for WebView2 is governed by the **Settings > Privacy & security > Diagnostics & feedback > Diagnostic data** setting on Windows 10 and Windows 11 as a centralized switch.  Similar to the Windows APIs, WebView2 developers have no control over the Windows **Diagnostic data** setting.
 
 Users can control WebView2 data collection through the Windows **Diagnostic data** setting on Windows 10 and Windows 11, as shown below.  As a developer, consider conveying this to your WebView2 app users and inviting them to use the Windows **Diagnostic data** setting to fit their preference.
 <!-- todo: give a specific example of how/where to convey and what to say, eg:
@@ -53,9 +53,9 @@ These features are described below.
 <!-- ====================================================================== -->
 ## SmartScreen
 
-Microsoft Defender SmartScreen ("SmartScreen") is enabled by default.  The `IsReputationCheckingRequired` property controls whether SmartScreen is enabled.
+Microsoft Defender SmartScreen ("SmartScreen") is enabled by default.  The `IsReputationCheckingRequired` property controls whether SmartScreen is enabled.  Generally, all other services in `edge://settings/privacy` are turned off, for WebView2.
 
-If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md#smartscreen).  Generally, all other services in `edge://settings/privacy` are turned off, for WebView2.
+If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen, and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md#smartscreen).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
