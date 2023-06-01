@@ -112,15 +112,21 @@ Release Date: June 04, 2023
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 114.0.1823.32 or higher.
 
 
-
+<!-- ------------------------------ -->
 #### General
 
+
+<!-- ------------------------------ -->
 ###### Promotions
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
 
+<!-- todo: test links -->
+<!-- todo: unlink type if type has add'l members -->
+
+
 <!-- ------------------------------ -->
-* Added support for LaunchingExternalUriScheme event: the event will be raised when an attempt to launch a URI scheme that is registered with the OS (external URI scheme) is made. 
+* Support for the `LaunchingExternalUriScheme` event.  This event is raised when there's an attempt to launch a URI scheme that is registered with the OS (external URI scheme).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -156,9 +162,10 @@ The following APIs have been promoted to Stable and are now included in this Rel
     * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1823.32&preserve-view=true#getdeferral)
 
 ---
-<!-- ------------------------------ -->
 
-* Added MemoryUsageTargetLevel which allows developers to specify memory consumption levels, such as low, or normal.
+
+<!-- ------------------------------ -->
+* `MemoryUsageTargetLevel` allows specifying memory consumption levels, such as `low` or `normal`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -180,7 +187,9 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ---
 
-* Enhancing multiple profiles support: allows to configure General Autofill and Password Autosave settings for different profiles.  
+
+<!-- ------------------------------ -->
+* Enhanced support for multiple profiles, to allow configuring General Autofill and Password Autosave settings for different profiles.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -188,13 +197,11 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.isgeneralautofillenabled?view=webview2-dotnet-1.0.1829-prerelease&preserve-view=true)
    * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.ispasswordautosaveenabled?view=webview2-dotnet-1.0.1829-prerelease&preserve-view=true)
 
-
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1829-prerelease&preserve-view=true#isgeneralautofillenabled)
    * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1829-prerelease&preserve-view=true#ispasswordautosaveenabled)
-
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -206,6 +213,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ---
 
+
 <!-- ====================================================================== -->
 ## 1.0.1889-prerelease 
 <!-- todo: update the prerelease version number------------------------------ -->
@@ -216,115 +224,138 @@ Release Date: June 04, 2023
 
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 116.0.1889.0 or higher.
 
+
+<!-- ------------------------------ -->
 #### General
 
+
+<!-- ------------------------------ -->
 <!-- ###### Experimental features -->
 
-<!-- no experimental features this time  ------------------------------ -->
+<!-- no added experimental features this time  ------------------------------ -->
 
+
+<!-- ------------------------------ -->
 ###### Promotions
 
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
+
 <!-- ------------------------------ -->
-* Added support to get the navigation kind of each navigation, such as back/forward, reload, or to new document. 
+* Gets the navigation kind of each navigation, such as Back/Forward, Reload, or navigation to a new document. 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2NavigationStartingEventArgs` Class
-    * [CoreWebView2NavigationKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2navigationkind?view=webview2-dotnet-1.0.1889.0-prerelease&preserve-view=true)
+    * [CoreWebView2NavigationKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2navigationkind?view=webview2-dotnet-1.0.1889-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2NavigationStartingEventArgs` Class
-    * [CoreWebView2NavigationKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargscorewebview2navigationkind?view=webview2-winrt-1.0.1889.0-prerelease&preserve-view=true)
+    * [CoreWebView2NavigationKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargscorewebview2navigationkind?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2NavigationStartingEventArgs3](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs3?view=webview2-1.0.1889-prerelease&preserve-view=true)
     * [ICoreWebView2NavigationStartingEventArgs3::get_NavigationKind](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs3?view=webview2-1.0.1889-prerelease&preserve-view=true#get_navigationkind)
 
-
-<!-- ------------------------------ -->
 ---
 
-<!-- todo: need finish on data kind API------------------------------ -->
-* Datakind
+
+<!-- ------------------------------ -->
+* Data kind
+<!-- todo: finish section -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2BrowsingDataKinds.ServiceWorkers Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds?view=webview2-dotnet-1.0.1889.0-prerelease&preserve-view=true)
+* [CoreWebView2BrowsingDataKinds.ServiceWorkers Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds?view=webview2-dotnet-1.0.1889-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+<!-- todo -->
+
 ##### [Win32/C++](#tab/win32cpp)
 
+<!-- todo -->
+
 ---
+
+
 <!-- ------------------------------ -->
-* Added support for LaunchingExternalUriScheme event: the event will be raised when an attempt to launch a URI scheme that is registered with the OS (external URI scheme) is made. 
+* Support for the `LaunchingExternalUriScheme` event.  This event is raised when there's an attempt to launch a URI scheme that is registered with the OS (external URI scheme).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2LaunchingExternalUriSchemeEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs?view=webview2-dotnet-1.0.1823.32&preserve-view=true)
-    * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Cancel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.cancel?view=webview2-dotnet-1.0.1823.32&preserve-view=true)
-    * [CoreWebView2LaunchingExternalUriSchemeEventArgs.GetDeferral Method](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.getdeferral?view=webview2-dotnet-1.0.1823.32&preserve-view=true)
-    * [CoreWebView2LaunchingExternalUriSchemeEventArgs.InitiatingOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.initiatingorigin?view=webview2-dotnet-1.0.1823.32&preserve-view=true)
-    * [CoreWebView2LaunchingExternalUriSchemeEventArgs.IsUserInitiated Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.isuserinitiated?view=webview2-dotnet-1.0.1823.32&preserve-view=true)
-    * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Uri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.uri?view=webview2-dotnet-1.0.1823.32&preserve-view=true)
+<!-- todo: add "-prerelease"
+.net: change from:
+?view=webview2-dotnet-1.0.1823.32
+to:
+?view=webview2-dotnet-1.0.1889-prerelease
+-->
+* [CoreWebView2LaunchingExternalUriSchemeEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs?view=webview2-dotnet-1.0.1889-prerelease&preserve-view=true)
+    * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Cancel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.cancel?view=webview2-dotnet-1.0.1889-prerelease&preserve-view=true)
+    * [CoreWebView2LaunchingExternalUriSchemeEventArgs.GetDeferral Method](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.getdeferral?view=webview2-dotnet-1.0.1889-prerelease&preserve-view=true)
+    * [CoreWebView2LaunchingExternalUriSchemeEventArgs.InitiatingOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.initiatingorigin?view=webview2-dotnet-1.0.1889-prerelease&preserve-view=true)
+    * [CoreWebView2LaunchingExternalUriSchemeEventArgs.IsUserInitiated Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.isuserinitiated?view=webview2-dotnet-1.0.1889-prerelease&preserve-view=true)
+    * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Uri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.uri?view=webview2-dotnet-1.0.1889-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.LaunchingExternalUriScheme Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#launchingexternalurischeme?view=webview2-winrt-1.0.1823.32&preserve-view=true)
-* [CoreWebView2LaunchingExternalUriSchemeEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.1823.32&preserve-view=true)
-   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Cancel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs#cancel?view=webview2-winrt-1.0.1823.32&preserve-view=true)
-   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.GetDeferral Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs#getdeferral?view=webview2-winrt-1.0.1823.32&preserve-view=true)
-   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.InitiatingOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs#initiatingorigin?view=webview2-winrt-1.0.1823.32&preserve-view=true)
-   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.IsUserInitiated Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs#isuserinitiated?view=webview2-winrt-1.0.1823.32&preserve-view=true)
-   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Uri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs#uri?view=webview2-winrt-1.0.1823.32&preserve-view=true)
+* [CoreWebView2.LaunchingExternalUriScheme Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#launchingexternalurischeme?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
+* [CoreWebView2LaunchingExternalUriSchemeEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Cancel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs#cancel?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.GetDeferral Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs#getdeferral?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.InitiatingOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs#initiatingorigin?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.IsUserInitiated Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs#isuserinitiated?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Uri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs#uri?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2_18](/microsoft-edge/webview2/reference/win32/icorewebview2_18?view=webview2-1.0.1823.32&preserve-view=true)
-    * [ICoreWebView2_18::add_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2_18?view=webview2-1.0.1823.32&preserve-view=true#add_launchingexternalurischeme)
-    * [ICoreWebView2_18::remove_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2_18?view=webview2-1.0.1823.32&preserve-view=true#remove_launchingexternalurischeme)
-* [ICoreWebView2LaunchingExternalUriSchemeEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventhandler?view=webview2-1.0.1823.32&preserve-view=true)
-* [ICoreWebView2LaunchingExternalUriSchemeEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1823.32&preserve-view=true)
-    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::get_Uri](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1823.32&preserve-view=true#get_uri)
-    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::get_InitiatingOrigin](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1823.32&preserve-view=true#get_initiatingorigin)
-    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::get_IsUserInitiated](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1823.32&preserve-view=true#get_isuserinitiated)
-    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::get_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1823.32&preserve-view=true#get_cancel)
-    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::put_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1823.32&preserve-view=true#put_cancel)
-    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1823.32&preserve-view=true#getdeferral)
+* [ICoreWebView2_18](/microsoft-edge/webview2/reference/win32/icorewebview2_18?view=webview2-1.0.1889-prerelease&preserve-view=true)
+    * [ICoreWebView2_18::add_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2_18?view=webview2-1.0.1889-prerelease&preserve-view=true#add_launchingexternalurischeme)
+    * [ICoreWebView2_18::remove_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2_18?view=webview2-1.0.1889-prerelease&preserve-view=true#remove_launchingexternalurischeme)
+* [ICoreWebView2LaunchingExternalUriSchemeEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventhandler?view=webview2-1.0.1889-prerelease&preserve-view=true)
+* [ICoreWebView2LaunchingExternalUriSchemeEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1889-prerelease&preserve-view=true)
+    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::get_Uri](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1889-prerelease&preserve-view=true#get_uri)
+    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::get_InitiatingOrigin](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1889-prerelease&preserve-view=true#get_initiatingorigin)
+    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::get_IsUserInitiated](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1889-prerelease&preserve-view=true#get_isuserinitiated)
+    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::get_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1889-prerelease&preserve-view=true#get_cancel)
+    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::put_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1889-prerelease&preserve-view=true#put_cancel)
+    * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.1889-prerelease&preserve-view=true#getdeferral)
 
 ---
-<!-- ------------------------------ -->
 
-* Added MemoryUsageTargetLevel which allows developers to specify memory consumption levels, such as low, or normal.
+
+<!-- ------------------------------ -->
+* `MemoryUsageTargetLevel` allows specifying memory consumption levels, such as `low` or `normal`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2.MemoryUsageTargetLevel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel?view=webview2-dotnet-1.0.1823.32&preserve-view=true)
+* [CoreWebView2.MemoryUsageTargetLevel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel?view=webview2-dotnet-1.0.1889-prerelease&preserve-view=true)
 * `CoreWebView2MemoryUsageTargetLevel` Enum
-    * [CoreWebView2MemoryUsageTargetLevel Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2memoryusagetargetlevel?view=webview2-dotnet-1.0.1823.32&preserve-view=true)
+    * [CoreWebView2MemoryUsageTargetLevel Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2memoryusagetargetlevel?view=webview2-dotnet-1.0.1889-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.MemoryUsageTargetLevel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#memoryusagetargetlevel?view=webview2-winrt-1.0.1823.32&preserve-view=true)
+* [CoreWebView2.MemoryUsageTargetLevel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#memoryusagetargetlevel?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
 * `CoreWebView2MemoryUsageTargetLevel` Enum
-    * [CoreWebView2MemoryUsageTargetLevel Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2memoryusagetargetlevel?view=webview2-winrt-1.0.1823.32&preserve-view=true)
+    * [CoreWebView2MemoryUsageTargetLevel Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2memoryusagetargetlevel?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2_19](/microsoft-edge/webview2/reference/win32/icorewebview2_19?view=webview2-1.0.1823.32&preserve-view=true)
-    * [ICoreWebView2_19::get_MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2_19?view=webview2-1.0.1823.32&preserve-view=true#get_memoryusagetargetlevel)
-    * [ICoreWebView2_19::put_MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2_19?view=webview2-1.0.1823.32&preserve-view=true#put_memoryusagetargetlevel)
+* [ICoreWebView2_19](/microsoft-edge/webview2/reference/win32/icorewebview2_19?view=webview2-1.0.1889-prerelease&preserve-view=true)
+    * [ICoreWebView2_19::get_MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2_19?view=webview2-1.0.1889-prerelease&preserve-view=true#get_memoryusagetargetlevel)
+    * [ICoreWebView2_19::put_MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2_19?view=webview2-1.0.1889-prerelease&preserve-view=true#put_memoryusagetargetlevel)
 
 ---
 
+
+<!-- ------------------------------ -->
 ###### Bug fixes
 
-* Using wv2winrt webhosthidden could have had an infinite loop enumerating some webhosthidden types which is now fixed (SDK only).
-* In wv2winrt generated code, when calling an async method, if it succeeded but returned null instead of an IAsyncAction, it will now no longer crash (SDK only). 
+* Using `wv2winrt webhosthidden` entered an infinite loop when enumerating some `webhosthidden` types.  (SDK-only)
+* In code that's generated by the **wv2winrt** tool, when calling an async method, it would crash if it succeeded but returned `null` instead of an `IAsyncAction`.  (SDK-only)
+
 
 <!-- ====================================================================== -->
 ## 1.0.1774.30
@@ -417,7 +448,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ---
 
-* (Runtime) Fixed an issue that was causing the `X-Edge-Shopping-Flag` header to be added to web requests that are coming from WebView2. ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
+* (Runtime-only)  Fixed an issue that was causing the `X-Edge-Shopping-Flag` header to be added to web requests that are coming from WebView2.  ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
 
 
 <!-- ====================================================================== -->
@@ -441,7 +472,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ------------------------------ -->
-* Enhancing multiple profiles support: allows to configure General Autofill and Password Autosave settings for different profiles.  
+* Enhanced support for multiple profiles, to allow configuring General Autofill and Password Autosave settings for different profiles.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -474,7 +505,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 * Disabled the Chrome Web Store info banner that displays the option to allow extensions installation. ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
 * Fixed an issue where a custom menu item wasn't firing. ([Issue #3300](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3300))
 * Fixed a crash during initialization when creating a WebView2 using WPF and SDK version 1.0.1722.32, which is now deprecated.  (See [SDK 1.0.1722.32 is deprecated](#sdk-10172232-is-deprecated) below.)  ([Issue #3375](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3375))
-* (Runtime) Fixed a bug in `PostSharedBufferToScript` that stops after about 32000x1MB buffers are posted. ([Issue #3360](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3360))
+* (Runtime-only)  Fixed a bug in `PostSharedBufferToScript` that stops after about 32000x1MB buffers are posted.  ([Issue #3360](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3360))
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -493,8 +524,8 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ---
 
-* (Runtime) Fixed an issue where navigation will always take place within a `ScriptDialogOpening` event callback.  ([Issue #3355](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3355))
-* (Runtime) Fixed an issue to support the `BackForwardCache` flag.
+* (Runtime-only)  Fixed an issue where navigation will always take place within a `ScriptDialogOpening` event callback.  ([Issue #3355](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3355))
+* (Runtime-only)  Fixed an issue to support the `BackForwardCache` flag.
 * Fixed an issue with visual hosted owned windows, where clicking into the Find bar from outside the window didn't activate the Find bar.
 
 
@@ -651,13 +682,13 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ------------------------------ -->
 ###### Bug fixes
 
-* Fixed a crash when releasing the WebView from a different thread.  (Runtime)  ([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))
+* Fixed a crash when releasing the WebView from a different thread.  (Runtime-only)  ([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))
 * Fixed a bug where focus was trapped inside the WebView2 control when wrapped in a `ContainerControl`.  ([Issue #2835](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2835))
 * Fixed the issue by disabling the editable `.pdf` temporary cached data recovery function in WebView2.  ([Issue #3274](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3274))
 * Disabled the Chrome Web Store info banner that displays the option to allow extensions installation.  ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
 * Fixed an issue with new download items not getting called out by screen readers.
 * Fixed a bug where visual hosted owned windows didn't map mouse pointer input correctly.
-* Fixed a bug where `DownloadStarting` was getting raised for a canceled **Save As** dialog.  (Runtime)
+* Fixed a bug where `DownloadStarting` was getting raised for a canceled **Save As** dialog.  (Runtime-only)
 
 
 <!-- ====================================================================== -->
@@ -1237,9 +1268,9 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ###### Bug fixes
 
 *  Fixed a bug in `PrintAsync` and `PrintToPdfStreamAsync` that throws an exception when print settings are null.
-*  Improved handling of apps running elevated.  (Runtime)
+*  Improved handling of apps running elevated.  (Runtime-only)
 *  Added support for window management permission kind.  (SDK and Runtime)
-*  Reliability improvement.  (Runtime)
+*  Reliability improvement.  (Runtime-only)
 
 
 <!-- ====================================================================== -->
@@ -1475,14 +1506,14 @@ Previous name in 1619-prerelease:
 <!-- ---------- -->
 ###### Bug fixes
 
-*  Fixed a bug where WebView2 was not closing properly when a `BeforeUnload` event was received. (Runtime) ([Issue #2677](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2677))
+*  Fixed a bug where WebView2 was not closing properly when a `BeforeUnload` event was received.  (Runtime-only)  ([Issue #2677](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2677))
 *  In the `DownloadStarting` event, the `ResultFilePath` previously wasn't showing the correct download location for UWP applications when the `DownloadStarting` event handler was attached.  This has been fixed; the correct `ResultFilePath` is now shown.
 *  Fixed a bug where `System.ArgumentException` was thrown when a call to the `HostObject` method returns a non-generic task.  ([Issue #2787](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2787))
-*  Fixed an issue in the `SharedBuffer` API where the stream object didn't work well with `StreamWriter`. (Runtime) ([Issue #3108](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3108))
-*  DOM speech-synthesis APIs, such as `SpeechSynthesis.getVoices()`, will now work in UWP apps. (Runtime)
-*  Fixed a crash that occurred on frame destruction. (Runtime) ([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))
-*  Fixed a bug where the app crashes when trying to call `CreateWebResourceResponse` with a `null` `reason` phrase. (Runtime)
-*  The `CoreWebView2.AddHostObjectToScript` option `chrome.webview.hostObjects.options.ignoreMemberNotFoundError` now works in non-English locales. (Runtime)
+*  Fixed an issue in the `SharedBuffer` API where the stream object didn't work well with `StreamWriter`.  (Runtime-only)  ([Issue #3108](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3108))
+*  DOM speech-synthesis APIs, such as `SpeechSynthesis.getVoices()`, will now work in UWP apps.  (Runtime-only)
+*  Fixed a crash that occurred on frame destruction.  (Runtime-only)  ([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))
+*  Fixed a bug where the app crashes when trying to call `CreateWebResourceResponse` with a `null` `reason` phrase.  (Runtime-only)
+*  The `CoreWebView2.AddHostObjectToScript` option `chrome.webview.hostObjects.options.ignoreMemberNotFoundError` now works in non-English locales.  (Runtime-only)
 *  Fully enabled **Open file** dialog support for elevated apps on Windows 7.
 *  Fixed a bug where owned windows were not appearing for UWP.
 
@@ -2041,10 +2072,10 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ###### Bug fixes for 1.0.1466-prerelease
 
 *   Fixed a bug in which the custom header title in print settings could be wrong. ([Issue #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093))
-*   Display `AllowedCertificateAuthorities` in `add_ClientCertificateRequested` event as a `Base64` string. (Runtime) ([Issue #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346))
+*   Display `AllowedCertificateAuthorities` in `add_ClientCertificateRequested` event as a `Base64` string.  (Runtime-only)  ([Issue #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346))
 *   Fixed a bug in which the default footer URI in print settings is missing. ([Issue #2851](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2851))
-*   Fixed a bug that produces a null pointer exception that's related to print settings. (Runtime) ([Issue #2858](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2858))
-*   Fixed a bug that reports navigation failure when redirecting to a server that has been configured with Client Certificate Authentication and when the `WebResourceRequested` event is subscribed to. (Runtime)
+*   Fixed a bug that produces a null pointer exception that's related to print settings.  (Runtime-only)  ([Issue #2858](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2858))
+*   Fixed a bug that reports navigation failure when redirecting to a server that has been configured with Client Certificate Authentication and when the `WebResourceRequested` event is subscribed to.  (Runtime-only)
 *   Fixed an `AddHostObjectToScript` bug in which, when JavaScript calls an async method and then a synchronous method, the async method call might fail.
 
 
@@ -2202,10 +2233,10 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 <!-- another section links to here -->
 ###### Bug fixes for 1.0.1414-prerelease
 
-*   Removed three-dot menu with a broken link from the downloads page. (Runtime)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
+*   Removed three-dot menu with a broken link from the downloads page.  (Runtime-only)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
 *   Fixed a bug in the WebView2 WinRT JS Projection tool (wv2winrt) where C++20 projects failed to compile.  ([Issue #2768](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2768))
-*   Fixed a crash which could occur with the WebView2 WinRT API while closing down WebView2 if you subscribed to any events, especially the `CoreWebView2.GetDevToolsEventReceiver` event. This is an SDK-only change.
-*   Fixed a bug where it wasn't possible to dismiss the download popup after minimizing the window. (Runtime)
+*   Fixed a crash which could occur with the WebView2 WinRT API while closing down WebView2 if you subscribed to any events, especially the `CoreWebView2.GetDevToolsEventReceiver` event.  (SDK-only)
+*   Fixed a bug where it wasn't possible to dismiss the download popup after minimizing the window.  (Runtime-only)
 
 
 <!-- ====================================================================== -->
@@ -2273,9 +2304,9 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 *  Fixed a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
 
-*  Fixed a bug that produced simultaneous WebView creation failure (Runtime). [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
+*  Fixed a bug that produced simultaneous WebView creation failure.  (Runtime-only)  [Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
 
-*  Fixed print settings paper size to support dimensions as small as 0.01 inches (Runtime).
+*  Fixed print settings paper size to support dimensions as small as 0.01 inches.  (Runtime-only)
 
 *  Fixed a bug where the WebView2 print dialog reset the **Scale** setting to **Fit to printable area** every time. ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
 
