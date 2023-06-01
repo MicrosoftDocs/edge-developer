@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/17/2023
+ms.date: 05/31/2023
 ---
 # Data and privacy in WebView2
 
-The WebView2 team tracks data to keep WebView2 secure and up to date, diagnose issues, and improve WebView2.  WebView2 developers consent to this data collection in the WebView2 Runtime Terms and Conditions License.
+The WebView2 team tracks data in order to keep WebView2 secure and up to date, diagnose issues, and improve WebView2.  WebView2 developers consent to this data collection in the WebView2 Runtime Terms and Conditions License.
 
-Additionally, WebView2 follows the standards outlined in the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md).  WebView2 has mechanisms to ensure privacy.  Any WebView2 data collection complies with the laws, regulations, and best practices for privacy.
+Additionally, WebView2 follows the standards that are outlined in the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md).  WebView2 has mechanisms to ensure privacy.  Any WebView2 data collection complies with the laws, regulations, and best practices for privacy.
 
 WebView2 data collection adheres to the same strict standards as Microsoft Edge data collection.  The main telemetry sources are:
 *  Chromium and Microsoft Edge telemetry infrastructure.
@@ -25,9 +25,13 @@ This article is for WebView2 developers.
 <!-- ====================================================================== -->
 ## Optional diagnostic data
 
-WebView2 is considered a Windows component, and the data collection consent is governed by the Windows **Settings > Privacy & security > Diagnostics & feedback > Diagnostic data** setting on Windows 10 and Windows 11 as a centralized switch.  Similar to the Windows APIs, WebView2 developers have no control over the Windows **Diagnostic data** setting.
+WebView2 is a Windows component.  The data collection consent for WebView2 is governed by the Windows **Settings > Privacy & security > Diagnostics & feedback > Diagnostic data** setting on Windows 10 and Windows 11 as a centralized switch.  Similar to the Windows APIs, WebView2 developers have no control over the Windows **Diagnostic data** setting.
 
-Users can control the data collection of WebView2 through the Windows **Diagnostic data** setting on Windows 10 and Windows 11, as shown below.  As a developer, you are welcome to convey this to users and invite them to use the Windows **Diagnostic data** setting to fit their preference.
+Users can control WebView2 data collection through the Windows **Diagnostic data** setting on Windows 10 and Windows 11, as shown below.  As a developer, consider conveying this to your WebView2 app users and inviting them to use the Windows **Diagnostic data** setting to fit their preference.
+<!-- todo: give a specific example of how/where to convey and what to say, eg:
+During installing and initially running the app, your app can present a dialog box and an instruction page about the app, saying:
+"You can control WebView2 data collection through the Windows **Diagnostic data** setting on Windows 10 and Windows 11.  You can use the Windows **Diagnostic data** setting to fit your preference."
+-->
 
 Here's an example of diagnostic data settings, for a Windows 11 machine that has some settings managed by an organization:
 
@@ -35,13 +39,15 @@ Here's an example of diagnostic data settings, for a Windows 11 machine that has
 
 When the Windows **Diagnostic data** setting is on:
 *  WebView2-related data is collected, including API usage, SDK usage, and creation failure.
-*  Browser diagnostic data is collected; however, personalization data is not collected.  Only browser events that are relevant to WebView2 are collected.
+*  Browser diagnostic data is collected; however, personalization data isn't collected.  Only browser events that are relevant to WebView2 are collected.
 
 Regardless of the Windows **Diagnostic data** setting, WebView2 collects required data that's necessary to maintain performance and reliability; see [Diagnostics, feedback, and privacy in Windows](https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319).
 
 Although you don't have control of overall diagnostic data collection, WebView2 offers APIs to control the behavior of the following features that generate data:
 *  SmartScreen.
 *  Custom crash reporting.
+
+These features are described below.
 
 
 <!-- ====================================================================== -->
