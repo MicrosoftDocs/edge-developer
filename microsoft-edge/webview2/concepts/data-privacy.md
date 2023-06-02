@@ -10,9 +10,7 @@ ms.date: 06/02/2023
 ---
 # Data and privacy in WebView2
 
-The WebView2 team tracks data in order to keep WebView2 secure and up to date, diagnose issues, and improve WebView2.  WebView2 developers consent to this data collection in the WebView2 Runtime Terms and Conditions License.
-
-To view the WebView2 Runtime Terms and Conditions License, go to the [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) NuGet package page, and then click the **License Info** link.  For example, [WebView2/1.0.1774.30/License](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1774.30/License).
+The WebView2 team tracks data in order to keep WebView2 secure and up to date, diagnose issues, and improve WebView2.  WebView2 developers consent to this data collection in the WebView2 Runtime Terms and Conditions License.  To view the WebView2 Runtime Terms and Conditions License, go to [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), and then click a button, such as **Get the Link**, **Download**, or **x64**.  A dialog contains the Microsoft Software License Terms: Microsoft Edge WebView2 Runtime.
 
 Additionally, WebView2 follows the standards that are outlined in the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md).  WebView2 has mechanisms to ensure privacy.  Any WebView2 data collection complies with the laws, regulations, and best practices for privacy.
 
