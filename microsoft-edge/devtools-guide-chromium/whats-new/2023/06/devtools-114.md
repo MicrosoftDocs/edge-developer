@@ -1,11 +1,11 @@
 ---
 title: What's new in DevTools (Microsoft Edge 114)
-description: "Entry 1. Entry 2. Entry 3. Entry 4. Entry 5. And more."
+description: "ADD THIS"
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/06/2023
+ms.date: 05/31/2023
 ---
 # What's New in DevTools (Microsoft Edge 114)
 
@@ -20,75 +20,125 @@ ms.date: 06/06/2023
 
 
 <!-- ====================================================================== -->
-## Entry 1
+## Aggregate Selector Stats in the Performance tool 
 
-<!-- Subtitle: . -->
+<!-- Subtitle:  -->
 
-![Template 1](./devtools-114-images/template.png)
+The selector stats are used to see which CSS selectors are slowing down performance. The **Selector Stats** are in the **Performance tool** and show the table of selectors. In this update the selector stats are always shown when styles are recalculated. Users can see and link the style sheet and copy the table of selector stats data.
 
-See also:
-* todo
+![Image](./devtools-114-images/1.1.png)
+![Image](./devtools-114-images/1.2.png)
+
+<!-- todo
+1. Open Devtools and navigate to the performance tool
+2. Hit the capture settings button
+3. Check the box at the top that says "Enable advanced rendering instrumentation (slow)"
+4. Click on a purple "Recalculate style" box
+5. Click on the Selector stats button on the bar below
+-->
+
+<!-- ====================================================================== -->
+## The Issues tool now warns you when CSS properties trigger reflow 
+
+<!-- Subtitle: -->
+
+This update, located in the styles panel, raises a warning using squiggles to alert the developer which CSS properties in their code trigger reflow, or the re-calculating of the positions of different elements in a document. This helps users recognize methods they can use to improve their code performance.
+
+![Image](./devtools-114-images/2.png)
+
+<!-- todo
+1. 
+-->
+
+<!-- ====================================================================== -->
+## You can now load Enhanced Traces larger than 1 GB in DevTools 
+
+<!-- Subtitle: -->
+
+An enhanced trace is a file that contains more information about a webpage than a normal trace. With more information and runtime data from the webpage, the user can more easily recreate the webpage’s environment. Now Enhanced Traces larger than 1 GB can be loaded into DevTools.
+
+![Image](./devtools-114-images/3.png)
+
+<!-- todo
+Steps from What's New in Edge 109
+
+1. Import the .devtools file from within the Performance tool by clicking the load profile button
+
+2. A new DevTools window opens, containing a subset of the tools, including the Performance tool loaded with the profile that you just recorded.  The Elements Console, and Sources tools are also pre-populated with their preserved state:
+-->
+
+<!-- ====================================================================== -->
+## The Detached Elements tool now displays properly 
+
+<!-- Subtitle:  -->
+
+The Detached Elements tool helps examine DOM memory leaks. This version updates the icons in the Detach Element tool, including the refresh, trash bin, and search icons. 
+
+![Image](./devtools-114-images/4.png)
+
+
+<!-- todo
+1. Open the Detached Elements demo application
+2. Open DevTools
+3. On the main toolbar click the More Tools + button
+4. Click on the Detached Elements button
+
+-->
 
 
 <!-- ====================================================================== -->
-## Entry 2
+## Accessibility improvements for the CSS Overview tool 
 
-<!-- Subtitle: . -->
+<!-- Subtitle:  -->
 
-![Template 2](./devtools-114-images/template.png)
+In this update, multiple changes were made to improve accessibility. An aria alert message was added, allowing the screen reader to announce status information when clicking on a ‘Copy CSS selector button’ in the ‘Non-simple selector’ group. Also, the label is now updated to accurately define list items inside the ‘Non-simple selector’ group.
 
-See also:
-* todo
+Keyboard navigation was also updated. The user can access items in the non-simple selector list using the up and down arrow keys. They can use the tab key to exit the list.
 
+![Image](./devtools-114-images/5.png)
 
-<!-- ====================================================================== -->
-## Entry 3
+<!-- todo
+1. Open the Edge Canary browser.
+2. Open Devtools using 'Ctrl+Shift+ I' or (Settings and more -> More tools -> Developer tools).
+3. Navigate to 'CSS selector overview' tab item and invoke it.
+4. Navigate to ‘capture overview’ button and invoke it. 
+5. Navigate and invoke the ‘Non-simple selectors’ menu item in the left navigation. 
+6. Navigate to the list items present under ‘Non-simple selectors’ heading and hit enter and listen to the Screen reader announcement.  
+-->
 
-<!-- Subtitle: . -->
-
-![Template 3](./devtools-114-images/template.png)
-
-See also:
-* todo
-
-
-<!-- ====================================================================== -->
-## Entry 4
-
-<!-- Subtitle: . -->
-
-![Template 4](./devtools-114-images/template.png)
-
-See also:
-* todo
+<!-- todo
+1. Open Edge Canary browser.
+2. Open Devtools using 'Ctrl+Shift+ I' or (Settings and more -> More tools -> Developer tools).
+3. Navigate to 'CSS selector overview' tab item and invoke it.
+4. Navigate to ‘capture overview’ button and invoke it. 
+5. Navigate and invoke the ‘Non-simple selectors’ menu item 
+6. Now navigate to the list items using keyboard using tab & Arrow keys and observe the behavior.
+-->
 
 
 <!-- ====================================================================== -->
-## Entry 5
+## Debugging Microsoft Edge in VS Code has better support for high contrast mode 
 
-<!-- Subtitle: . -->
+<!-- Subtitle: -->
 
-![Template 5](./devtools-114-images/template.png)
+This update improves the high contrast toolbar. Specifically, the ‘Toggle Element State’ button is now visible in High Contrast mode using the Aquatic theme. The button appears with a black background and white icon when not highlighted. This improves the experience of low vision users. 
 
-See also:
-* todo
+![Image](./devtools-114-images/6.png)
 
+<!-- todo
 
-<!-- ====================================================================== -->
-## Announcements from the Chromium project
+Prerequisites:
+ 1. Install 'Visual Studio Code' application.
+ 2. Add 'Microsoft edge' file in vs code.
+ 3. Turn on Windows High contrast theme (Settings->Accessibility->High Contrast->Turn on High 4. Contrast->Select High Contrast Aquatic)
 
-Microsoft Edge 114 also includes the following updates from the Chromium project:
+Steps: 
+1. Launch VS code application and launch an instance.
+2. Navigate and invoke 'Elements' tab item and invoke it.
+3. Navigate to 'Styles' tab item and invoke it.
+4. Tab to navigate to  'Toggle Element State' button and apply High Contrast mode of Aquatic theme and observe.
+-->
 
-* [WebAssembly debugging support](https://developer.chrome.com/blog/new-in-devtools-114/#wasm)
-   * [Improved stepping behavior in Wasm apps](https://developer.chrome.com/blog/new-in-devtools-114/#wasm-step)
-* [Debug Autofill using the Elements panel and Issues tab](https://developer.chrome.com/blog/new-in-devtools-114/#autofill)
-* [Lighthouse 10.1.1](https://developer.chrome.com/blog/new-in-devtools-114/#lighthouse)
-* [Performance enhancements](https://developer.chrome.com/blog/new-in-devtools-114/#performance)
-   * [performance.mark() shows timing on hover in Performance > Timings](https://developer.chrome.com/blog/new-in-devtools-114/#mark)
-   * [profile() command populates Performance > Main](https://developer.chrome.com/blog/new-in-devtools-114/#profile)
-   * [Warning for slow user interactions](https://developer.chrome.com/blog/new-in-devtools-114/#slow-interaction-warning)
-* [JavaScript Profiler deprecation: Phase three](https://developer.chrome.com/blog/new-in-devtools-114/#js-profiler)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-114/#misc)
 
 
 <!-- ====================================================================== -->
