@@ -27,7 +27,7 @@ ms.date: 05/31/2023
 The selector stats are used to see which CSS selectors are slowing down performance. The **Selector Stats** are in the **Performance tool** and show the table of selectors. In this update the selector stats are always shown when styles are recalculated. Users can see and link the style sheet and copy the table of selector stats data.
 
 ![Image](./devtools-114-images/1.1.png)
-![Image](microsoft-edge\devtools-guide-chromium\whats-new\2023\06\devtools-114-images\1.2.png)
+![Image](./devtools-114-images/1.2.png)
 
 <!-- todo
 1. Open Devtools and navigate to the performance tool
@@ -44,7 +44,7 @@ The selector stats are used to see which CSS selectors are slowing down performa
 
 This update, located in the styles panel, raises a warning using squiggles to alert the developer which CSS properties in their code trigger reflow, or the re-calculating of the positions of different elements in a document. This helps users recognize methods they can use to improve their code performance.
 
-![Image](microsoft-edge\devtools-guide-chromium\whats-new\2023\06\devtools-114-images\2.png)
+![Image](./devtools-114-images/2.png)
 
 <!-- todo
 1. 
@@ -57,10 +57,14 @@ This update, located in the styles panel, raises a warning using squiggles to al
 
 An enhanced trace is a file that contains more information about a webpage than a normal trace. With more information and runtime data from the webpage, the user can more easily recreate the webpage’s environment. Now Enhanced Traces larger than 1 GB can be loaded into DevTools.
 
-![Image](microsoft-edge\devtools-guide-chromium\whats-new\2023\06\devtools-114-images\3.png)
+![Image](./devtools-114-images/3.png)
 
 <!-- todo
-1. 
+Steps from What's New in Edge 109
+
+1. Import the .devtools file from within the Performance tool by clicking the load profile button
+
+2. A new DevTools window opens, containing a subset of the tools, including the Performance tool loaded with the profile that you just recorded.  The Elements Console, and Sources tools are also pre-populated with their preserved state:
 -->
 
 <!-- ====================================================================== -->
@@ -70,7 +74,7 @@ An enhanced trace is a file that contains more information about a webpage than 
 
 The Detached Elements tool helps examine DOM memory leaks. This version updates the icons in the Detach Element tool, including the refresh, trash bin, and search icons. 
 
-![Image](microsoft-edge\devtools-guide-chromium\whats-new\2023\06\devtools-114-images\4.png)
+![Image](./devtools-114-images/4.png)
 
 
 <!-- todo
@@ -91,7 +95,7 @@ In this update, multiple changes were made to improve accessibility. An aria ale
 
 Keyboard navigation was also updated. The user can access items in the non-simple selector list using the up and down arrow keys. They can use the tab key to exit the list.
 
-![Image](microsoft-edge\devtools-guide-chromium\whats-new\2023\06\devtools-114-images\5.png)
+![Image](./devtools-114-images/5.png)
 
 <!-- todo
 1. Open the Edge Canary browser.
@@ -119,7 +123,7 @@ Keyboard navigation was also updated. The user can access items in the non-simpl
 
 This update improves the high contrast toolbar. Specifically, the ‘Toggle Element State’ button is now visible in High Contrast mode using the Aquatic theme. The button appears with a black background and white icon when not highlighted. This improves the experience of low vision users. 
 
-![Image](microsoft-edge\devtools-guide-chromium\whats-new\2023\06\devtools-114-images\6.png)
+![Image](./devtools-114-images/6.png)
 
 <!-- todo
 
