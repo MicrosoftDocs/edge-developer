@@ -10,7 +10,7 @@ ms.date: 06/01/2023
 ---
 # Win32 sample app
 
-This sample, **WebView2APISample**, demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
+The **WebView2APISample** app demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
 
 *  Sample name: **WebView2APISample**
 *  Repo directory: [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)
@@ -170,7 +170,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    _To zoom, right-click > **Open image in new tab**._
 
-1. Briefly explore the **WebView2APISample** sample app; for example, select a menuitem.  A later section, below, will provide more details.
+1. Briefly explore the **WebView2APISample** app; for example, select a menuitem.  A later section, below, will provide more details.
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
@@ -180,7 +180,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 Next, you'll update the WebView2 SDK and then re-build the project.
 
-If you want to quickly see which version of the WebView2 SDK is installed in the repo's copy of the **WebView2APISample** sample app at GitHub, see [packages.config](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/packages.config).
+If you want to quickly see which version of the WebView2 SDK is installed in the repo's copy of the **WebView2APISample** app at GitHub, see [packages.config](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/packages.config).
 
 The repo version of this sample has a pre-release version of the WebView2 SDK installed.  Below, you'll update it to the latest pre-release version of the WebView2 SDK, or confirm that the latest SDK is installed.  Using a pre-release SDK gives you access to the latest functionality.
 
@@ -228,7 +228,7 @@ The latest version of the WebView2 SDK is now installed for this project.
 
    ![The WebView2APISample app window](./webview2apissample-images/webview2apisample-app-window.png)
 
-1. Use the **WebView2APISample** sample app.
+1. Use the **WebView2APISample** app.
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
@@ -240,33 +240,33 @@ The latest version of the WebView2 SDK is now installed for this project.
 
 
 <!-- ====================================================================== -->
-## Application architecture
+## Hybrid app architecture
 
 The **WebView2APISample** app is an example of a hybrid application, with a Win32 native part and a WebView part.
-*  The Win32 part can access native Windows APIs.
+*  The Win32 part can directly access native Windows APIs.
 *  The WebView is a container for standard web technologies (HTML, CSS, and JavaScript).
-
-This hybrid approach allows you to create and iterate faster using web technologies, while still being able to take advantage of native functionalities.  The **WebView2APISample** sample app specifically demonstrates how both components can interact with each other.
-
-Both of these parts of the **WebView2APISample** sample app are displayed in the image below:
 
 ![Hybrid app](./webview2apissample-images/sample-app-layout-diagram.png)
 
-1. Section One: The top part of the **WebView2APISample** sample app is a Win32 component written in C++. This part of the application takes in UI inputs from the user and uses them to control the WebView.
+* Section 1: The top part of the **WebView2APISample** app is a Win32 component written in C++. This part of the application takes in UI inputs from the user and uses them to control the WebView.
 
-2. Section Two: The main part of the **WebView2APISample** sample app is a WebView that can be repurposed using standard web technologies (HTML/CSS/JavaScript). It can be navigated to websites or local content.
+* Section 2: The main part of the **WebView2APISample** app is a WebView that can be repurposed using standard web technologies (HTML/CSS/JavaScript).  It can be navigated to websites or local content.
+
+This hybrid approach allows you to create and iterate faster using web technologies, while still being able to take advantage of native functionality.  The **WebView2APISample** app demonstrates how the Win32 component and the WebView component can interact with each other.
+
+This wide-ranging sample app has grown to include 170 menuitems, demonstrating many WebView2 APIs in the Win32/C++ framework.  The present section focuses on basics of hybrid app implementation.
 
 
 <!-- ====================================================================== -->
 ## Project Files
 
-This section briefly explains some key files within the repository.  The **WebView2APISample** sample app is divided vertically into components, instead of horizontally into layers.  Each component implements the whole workflow of a category of example features, from listening for menu commands, to calling WebView API methods to implement them.
+This section briefly explains some key files within the repository.  The **WebView2APISample** app is divided vertically into components, instead of horizontally into layers.  Each component implements the whole workflow of a category of example features, from listening for menu commands, to calling WebView API methods to implement them.
 
 
 <!-- ------------------------------ -->
 #### App.cpp
 
-This is the top-level file that runs the **WebView2APISample** sample app. It reads command line options, sets up the process environment, and handles the app's threading model.
+This is the top-level file that runs the **WebView2APISample** app. It reads command-line options, sets up the process environment, and handles the app's threading model.
 
 
 <!-- ------------------------------ -->
@@ -327,6 +327,9 @@ This component is described in more detail in [ScenarioWebMessage (.html, .cpp, 
 #### ScenarioAddHostObject.cpp and ScenarioAddHostObject.html (Scenario menu)
 
 This component is created when you select the **Scenario** > **Host Objects** menu item.  It demonstrates communication between the native app and the HTML webpage by means of host object injection.  The interface of the host object is declared in `HostObjectSample.idl`, and the object itself is implemented in `HostObjectSampleImpl.cpp`.
+
+See also:
+* [Call native-side code from web-side code](../how-to/hostobject.md)
 
 
 <!-- ====================================================================== -->
@@ -451,11 +454,11 @@ The `ScenarioWebMessage` component is created when you select the **Scenario** >
 ![Web Messaging: Posting and receiving messages](./webview2apissample-images/sample-app-webmessaging-screenshot.png)
 
 
-The following sections demonstrate how each discrete function works using the **WebView2APISample** sample app, and then explains how to implement this functionality.
+The following sections demonstrate how each discrete function works using the **WebView2APISample** app, and then explains how to implement this functionality.
 
 First, go to the **ScenarioWebMessage** web app within the sample app:
 
-1. Open (run) the **WebView2APISample** sample app.
+1. Open (run) the **WebView2APISample** app.
 
 1. In the **Scenario** menu, select **Web Messaging**.
 
@@ -522,11 +525,11 @@ The following steps show how the WebView can modify the Win32 Host App by changi
 
 1. Open the **WebMessage sample page** (`ScenarioWebMessage.html`) as described above.
 
-1. Note the title of the **WebView2APISample** sample app, displayed in the top left of the window next to the icon.  It's initially **WebView2APISample - Microsoft Edge WebView2**.
+1. Note the title of the **WebView2APISample** app, displayed in the top left of the window next to the icon.  It's initially **WebView2APISample - Microsoft Edge WebView2**.
 
 1. In the **Receiving Messages** section of the page, enter a new title, and then click the **Send** button.
 
-1. Note the new title that's displayed in the titlebar of the **WebView2APISample** sample app.
+1. Note the new title that's displayed in the titlebar of the **WebView2APISample** app.
 
 
 <!-- ---------- -->
@@ -580,7 +583,7 @@ The following steps show how the WebView can get information from the Win32 Host
 
 1. In the **Round trip** section of the page, click the **GetWindowBounds** button.
 
-   The text box below the button displays the bounds for the **WebView2APISample** sample app.
+   The text box below the button displays the bounds for the **WebView2APISample** app.
 
 
 <!-- ---------- -->
