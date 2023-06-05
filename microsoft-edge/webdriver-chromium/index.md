@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 02/02/2023
+ms.date: 06/05/2023
 ---
 # Use WebDriver to automate Microsoft Edge
 
@@ -19,6 +19,37 @@ WebDriver allows you to automate Microsoft Edge by simulating user interaction. 
 *   WebDriver manages multiple windows, tabs, and webpages in a single test session.
 
 *   WebDriver runs multiple sessions of Microsoft Edge on a specific machine.
+
+
+<!-- ====================================================================== -->
+## Removing Selenium 3 instructions
+
+<!-- todo: 
+update per https://github.com/MicrosoftDocs/edge-developer/issues/2613
+Remove the references to Selenium 3.
+-->
+
+One source of confusion is the choice between Selenium 3 and Selenium 4.
+Selenium 3 is out of support.  All new projects considering Selenium should use Selenium 4.
+This article was initially written a few years ago when Selenium 4 was newly released; this article provided additional context to help migrate away from Selenium 3.
+Now that Selenium 4 has been released for a while, this article is about to remove references to Selenium 3, to avoid confusion.
+
+As noted in the present article, you must install both a browser driver (Microsoft Edge WebDriver), and a WebDriver framework (in this case, Selenium).
+These are separate components. 
+The steps for installing Microsoft Edge WebDriver are listed under https://learn.microsoft.com/en-us/microsoft-edge/webdriver-chromium/#download-microsoft-edge-webdriver.
+
+If you're using the Microsoft Edge WebDriver template that's provided with Visual Studio, which creates a simple test project:
+After Microsoft Edge WebDriver is downloaded and available on the PATH, and the Selenium 4 NuGet package has been added to the project, then the example test that navigates to Bing should complete successfully.
+
+
+<!-- ------------------------------ -->
+#### Level of detail for code samples of tests in this article
+
+This article provided raw code samples and not complete tests.
+The purpose of this article is not to provide a complete how-to for getting started with Selenium, but to assist with the Microsoft Edge-specific portions of the process.
+This includes obtaining the Edge WebDriver and setting Edge-specific options in code.
+
+Selenium is a cross-browser automation library and is also language and test-framework agnostic.  Also, Selenium is just one popular implementation of a WebDriver framework, and Edge WebDriver can be used with any.  This article uses Selenium only as an illustrative example, and because it is ideal for most users' needs.
 
 
 <!-- ====================================================================== -->
