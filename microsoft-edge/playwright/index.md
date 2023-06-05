@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 11/24/2020
+ms.date: 06/05/2023
 ---
 # Use Playwright to automate and test in Microsoft Edge
 
@@ -139,3 +139,9 @@ WebKit:
 ```
 
 For more information about Playwright and Playwright Test, go to the [Playwright website](https://playwright.dev/docs/intro).  Check out the [Playwright repo](https://github.com/microsoft/playwright) on GitHub.  To share your feedback on automating and testing your website or app with Playwright, [file an issue](https://github.com/microsoft/playwright/issues/new/choose).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Playwright and WebView2](../webview2/how-to/playwright.md)
