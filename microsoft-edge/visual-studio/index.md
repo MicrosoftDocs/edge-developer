@@ -67,7 +67,7 @@ Next, run and debug the ASP.NET Core web app project in Visual Studio, as follow
 
    ![Turn on script debugging in Visual Studio](media/enable-script-debugging.png)
 
-1. In the same dropdown list, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.  If you aren't already using one of the Microsoft Edge preview channels, go to [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download) to download one.
+1. In the same dropdown list, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.  If you aren't already using one of the Microsoft Edge preview channels, go to [Download Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider) to download one.
 
    ![Select the preview channel of Microsoft Edge that you want Visual Studio to launch](media/set-web-browser.png)
 

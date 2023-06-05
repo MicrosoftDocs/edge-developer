@@ -30,7 +30,7 @@ Experimental support for PWAs that can target the sidebar in Microsoft Edge star
 
 To locally enable PWA sidebar support in Microsoft Edge:
 
-1. Download and install the Canary channel of Microsoft Edge from the [Microsoft Edge Insider website](https://www.microsoftedgeinsider.com/download).
+1. Download and install the Canary channel of Microsoft Edge from the [Microsoft Edge Insider website](https://www.microsoft.com/edge/download/insider).
 
 1. Start Microsoft Edge with sidebar support for PWAs, as follows:
 
