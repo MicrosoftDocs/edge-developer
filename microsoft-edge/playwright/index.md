@@ -144,4 +144,4 @@ For more information about Playwright and Playwright Test, go to the [Playwright
 <!-- ====================================================================== -->
 ## See also
 
-* [Playwright and WebView2](../webview2/how-to/playwright.md)
+* [Use Playwright to automate and test in WebView2](../webview2/how-to/playwright.md)
