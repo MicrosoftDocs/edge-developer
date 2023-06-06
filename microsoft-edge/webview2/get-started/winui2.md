@@ -52,7 +52,7 @@ Only a subset of WebView2 interfaces/functions are exposed in WinUI:
 
 * Interfaces such as `CoreWebView2Controller` are hidden, because WinUI takes care of the environment and window creation behind the scenes.
 
-See also [Xbox, HoloLens, and XAML limitations](#xbox-hololens-and-xaml-limitations) below.
+See also [XAML limitation](#xaml-limitation) below.
 
 
 <!-- ====================================================================== -->
@@ -153,7 +153,7 @@ This article shows steps and screenshots for Visual Studio 2022 Community Editio
 
 1. Accept the defaults, and click the **OK** button.
 
-1. If the **Developer Mode** window section appears, in that section, click **On**.  If you haven't already set your machine to Developer Mode, the **Use developer features** dialog opens, to confirm turning on developer mode.  
+1. If the **Developer Mode** window section appears, in that section, click **On**.  If you haven't already set your machine to Developer Mode, the **Use developer features** dialog opens, to confirm turning on developer mode.
    *  Click **Yes** to turn on Developer Mode for your machine, and then close the **Settings** window.
 
    Visual Studio displays the newly created solution and project:
@@ -195,6 +195,8 @@ Next, you install the **Microsoft.UI.Xaml** package for this project.  Microsoft
    ![The NuGet package manager to install Microsoft.UI.Xaml](media/winui2-nuget-package-ui-xaml.png)
 
    For version 2.8.0 or later, in the **Dependencies** section at the bottom, **Microsoft.Web.WebView2** is listed.
+
+   For HoloLens 2 development, the **Microsoft.Web.WebView2** package must be version 1.0.1722.45 or higher, which may be higher than the default.  The WebView2 Preview is available in the Insider Preview for Microsoft HoloLens.  To access this preview, you must be enrolled in the Windows Insider Program; see [Start receiving Insider builds](/hololens/hololens-insider#start-receiving-insider-builds) in _Insider preview for Microsoft HoloLens_.  See also [Update HoloLens 2](/hololens/hololens-update-hololens).
 
 1. In the middle panel, in the **Version** drop-down, make sure **Latest stable** is selected, version 2.8.0 or later.
 
@@ -258,7 +260,7 @@ Now you are ready to add WebView2 code to the project.  First, add a namespace r
 <!-- ====================================================================== -->
 ## Step 7 - Build and run the project containing the WebView2 control
 
-1. Click **Debug** > **Start Debugging** (**F5**).  The app window opens, briefly showing the WebView2 WebUI grid:
+1. Click **Debug** > **Start Debugging** (**F5**).  (If building for HoloLens 2, see [Using Visual Studio to deploy and debug](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2)). The app window opens, briefly showing the WebView2 WebUI grid:
 
    ![During debugging, the WebView2 WebUI grid briefly appears](media/winui2-getting-started-webview2-grid.png)
 
@@ -352,9 +354,9 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Xbox, HoloLens, and XAML limitations
+#### XAML limitation
 
-This version of WebView 2 will only work on PC-class devices, offering the full range of capability found in the WinUI 3 variant. Xbox, HoloLens, and XAML Island support requires additional work, and these devices and scenarios may be considered for future releases.
+XAML Island support requires additional work and may be considered for future releases.
 
 
 <!-- ------------------------------ -->
@@ -378,9 +380,68 @@ On WinUI 2, transparency is achieved by setting the color to `00FFFFFF`.
 
 
 <!-- ------------------------------ -->
-#### Custom cursors
+#### CSS cursors
 
-On WinUI 2, you cannot use [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor) by specifying a URL of an image as the cursor. You can use CSS cursors to change the cursor to a predefined cursor, such as `cursor: wait;` or `cursor: crosshair;`, but not to an image URL, such as `cursor: url(https://contoso.com/cursor.png), pointer;`. See [CSS - cursor loaded from URL doesn't work](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1925).
+On WinUI 2 (UWP), CSS cursors have the following limitations.
+
+
+###### Image URLs
+
+The CSS cursor cannot be an image URL, such as `cursor: url(https://contoso.com/cursor.png), pointer;`.  See [CSS - cursor loaded from URL doesn't work](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1925).
+
+
+###### Predefined CSS cursors
+
+On WinUI 2 (UWP), some of the predefined CSS cursors are not supported.  You can use CSS cursors to change the cursor to some of the predefined cursors, such as `cursor: wait;` or `cursor: crosshair;`, but not to others, such as `cursor: progress` or `cursor: none`.
+
+| Keyword | Supported? |
+|---|:---:|
+| **General** |  |
+| auto | ✔️ |
+| default | ✔️ |
+| none | ❌ |
+| **Links & status** |  |
+| context-menu | ✔️ |
+| help | ✔️ |
+| pointer | ✔️ |
+| progress | ❌ |
+| wait | ✔️ |
+| **Selection** |  |
+| cell | ❌ |
+| crosshair | ✔️ |
+| text | ✔️ |
+| vertical-text | ❌ |
+| **Drag & drop** |  |
+| alias | ❌ |
+| copy | ❌ |
+| move | ✔️ |
+| no-drop | ✔️ |
+| not-allowed | ✔️ |
+| grab | ❌ |
+| grabbing | ❌ |
+| **Resizing & scrolling** |  |
+| all-scroll | ✔️ |
+| col-resize | ❌ |
+| row-resize | ❌ |
+| n-resize | ✔️ |
+| e-resize | ✔️ |
+| s-resize | ✔️ |
+| w-resize | ✔️ |
+| ne-resize | ✔️ |
+| nw-resize | ✔️ |
+| se-resize | ✔️ |
+| sw-resize | ✔️ |
+| ew-resize | ✔️ |
+| ns-resize | ✔️ |
+| nesw-resize | ✔️ |
+| nwse-resize | ✔️ |
+| **Zooming** |  |
+| zoom-in | ❌ |
+| zoom-out | ❌ |
+
+See also:
+* [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor#values) - the **Values** section describes the above keyword values.
+<!-- known limitation: destination page doesn't scroll to anchor -->
 
 
 <!-- ------------------------------ -->

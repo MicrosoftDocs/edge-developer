@@ -200,7 +200,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Find Previous | **Shift+F3** |
 | Back | **Alt+Left Arrow**, **Browser Back Button Key** |
 | Forward | **Alt+Right Arrow**, **Browser Forward Key** |
-| Print | **Ctrl+P** |
+| [Caret browsing](https://support.microsoft.com/microsoft-edge/accessibility-features-in-microsoft-edge-4c696192-338e-9465-b2cd-bd9b698ad19a#caret_browsing) | **F7** |
 | Open / Close DevTools | **Ctrl+Shift+I** |
 | Open DevTools Console | **Ctrl+Shift+J** |
 | Open DevTools Inspect | **Ctrl+Shift+C** |

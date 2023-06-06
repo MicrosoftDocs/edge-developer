@@ -59,10 +59,10 @@ The tutorial steps below walk you through this environment setup.
 If you're  using a modern framework, it probably transforms your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.
 A workspace is usually able to map the optimized code back to the original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS. However, there's a lot of variation in how each framework uses source maps.
 
-**Note:** DevTools doesn't support every framework variation, and the workspace feature doesn't work with the Create React App framework.
+**Note:** DevTools doesn't support every framework variation, and the Workspaces feature (**Filesystem** tab) doesn't work with the Create React App framework.
 
-If you run into issues while using workspaces with your framework of choice, or you identify framework-specific steps that are needed, [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to exchange information with the rest of the DevTools community.
-
+If you run into issues while using workspaces with your framework of choice, or you identify framework-specific steps that are needed, [start a thread in the Chrome DevTools mailing list](https://groups.google.com/forum/#!forum/google-chrome-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=google-chrome-devtools) to exchange information with the rest of the DevTools community.
+                                                                     
 
 <!-- ====================================================================== -->
 #### Related feature: Overrides

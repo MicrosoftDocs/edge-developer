@@ -6,15 +6,21 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/13/2023
+ms.date: 05/08/2023
 ---
 # Release Notes for the WebView2 SDK
 
-The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) on a four-week cadence. This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
+The WebView2 team updates the WebView2 SDK on a four-week cadence.  This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
-Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](webview2-api-reference.md).
+You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 
-WebView2 changes may require an update to the Runtime, SDK, or both. Most new APIs require both Runtime and SDK updates. Starting with the February 2023 release, the update requirement for each bug fix is indicated as follows:
+Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 features and APIs](./concepts/overview-features-apis.md).
+
+
+<!-- ------------------------------ -->
+#### Updating the Runtime and SDK
+
+WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.  Starting with the February 2023 release, the update requirement for each bug fix is indicated as follows:
 
 | Indicator | Meaning |
 |---|---|
@@ -22,7 +28,13 @@ WebView2 changes may require an update to the Runtime, SDK, or both. Most new AP
 | **Runtime-only** | Only the Runtime needs to be updated. |
 | **SDK-only** | Only the SDK needs to be updated. |
 
-WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time. As a result, WebView2 Runtime releases generally also include Microsoft Edge updates. For Microsoft Edge updates, see [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel) and [Release notes for Microsoft Edge Beta Channel](/deployedge/microsoft-edge-relnote-beta-channel).
+WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time.  As a result, WebView2 Runtime releases generally also include Microsoft Edge updates.
+
+*  For Microsoft Edge updates, see [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel) and [Release notes for Microsoft Edge Beta Channel](/deployedge/microsoft-edge-relnote-beta-channel).
+
+*  To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](./concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
+
+*  To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](./how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
 
 
 <!-- ------------------------------ -->
@@ -30,7 +42,7 @@ WebView2 shares code and binaries with the Microsoft Edge browser, and is releas
 
 Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView2 team recommends the following:
 
-* Use the Canary preview channel of Microsoft Edge when you develop using a prerelease version of the WebView2 SDK package.  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
+* Use the Canary preview channel of Microsoft Edge when you develop using a Prerelease version of the WebView2 SDK package.  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
 
 * Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
 
@@ -42,17 +54,7 @@ For more information, see [Matching the Runtime version with the SDK version](co
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
-
-<!-- maintenance notes: version # patterns to check:
-## 1.0.####.##
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-
-## 1.0.####-prerelease
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
--->
+To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
 <!--
 Cross-framework API conventions
@@ -67,6 +69,209 @@ Async methods:
 - Win32: XYZ method + XYZCompletedHandler
 - .NET/WinRT: XYZAsync
 -->
+
+
+<!-- ------------------------------ -->
+#### Experimental APIs, Prerelease SDKs, and Release SDKs
+
+New APIs are added in phases, as follows:
+1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.
+1. Then they become Stable APIs in a Prerelease SDK package.
+1. Soon after, they become Stable APIs in a Release SDK package.
+
+![Diagram of phases of introducing new APIs](./release-notes-images/phases-of-adding-apis.png)
+<!-- .png is used by webview2/release-notes.md and webview2/concepts/versioning.md -->
+
+For more information, see [Phases of introducing APIs](./concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
+
+<!-- terminology:
+APIs are Experimental or Stable
+SDKs/packages are Prerelease or Release
+-->
+
+The following sections cover either a Release SDK package (1.0.####.##) or a Prerelease SDK package (1.0.####-prerelease).
+
+<!-- maintenance notes: version # patterns to check:
+## 1.0.####.##
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+
+## 1.0.####-prerelease
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
+-->
+
+
+<!-- ====================================================================== -->
+## 1.0.1774.30
+
+Release Date: May 8, 2023
+
+[NuGet package for WebView2 SDK 1.0.1774.30](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1774.30)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 113.0.1774.30 or higher.
+
+
+<!-- ------------------------------ -->
+#### General
+
+###### Promotions
+
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
+
+<!-- ------------------------------ -->
+* The File API allows accessing a DOM `File` object passed via `WebMessage`.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2File Class](/dotnet/api/microsoft.web.webview2.core.corewebview2file?view=webview2-dotnet-1.0.1774.30&preserve-view=true)
+   * [CoreWebView2File.Path Property](/dotnet/api/microsoft.web.webview2.core.corewebview2file.path?view=webview2-dotnet-1.0.1774.30&preserve-view=true)
+* `CoreWebView2WebMessageReceivedEventArgs` Class:
+   * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs.additionalobjects?view=webview2-dotnet-1.0.1774.30&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2File Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file?view=webview2-winrt-1.0.1774.30&preserve-view=true)
+   * [CoreWebView2File.Path Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2file?view=webview2-winrt-1.0.1774.30&preserve-view=true#path)
+* `CoreWebView2WebMessageReceivedEventArgs` Class:
+   * [CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webmessagereceivedeventargs?view=webview2-winrt-1.0.1774.30&preserve-view=true#additionalobjects)
+   
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2File interface](/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1774.30&preserve-view=true)
+   * [ICoreWebView2File::get_Path](/microsoft-edge/webview2/reference/win32/icorewebview2file?view=webview2-1.0.1774.30&preserve-view=true#get_path)<!--no put-->
+* [ICoreWebView2ObjectCollectionView interface](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1774.30&preserve-view=true)
+   * [ICoreWebView2ObjectCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1774.30&preserve-view=true#get_count)<!--no put-->
+   * [ICoreWebView2ObjectCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollectionview?view=webview2-1.0.1774.30&preserve-view=true#getvalueatindex)
+* [ICoreWebView2WebMessageReceivedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1774.30&preserve-view=true)
+   * [ICoreWebView2WebMessageReceivedEventArgs2::get_AdditionalObjects](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs2?view=webview2-1.0.1774.30&preserve-view=true#get_additionalobjects)<!--no put-->
+
+---
+
+
+<!-- ------------------------------ -->
+* The Profile Cookie Manager API supports profile management.  The `CookieManager` property enables the host app to get the cookie manager for the profile.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.CookieManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.cookiemanager?view=webview2-dotnet-1.0.1774.30&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.CookieManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1774.30&preserve-view=true#cookiemanager)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2Profile5` interface:
+   * [ICoreWebView2Profile5::get_CookieManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile5?view=webview2-1.0.1774.30&preserve-view=true#get_cookiemanager)<!--no put-->
+
+---
+
+
+<!-- ------------------------------ -->
+###### Bug fixes
+
+* Fixed an issue to allow an app to inject initial scripts by calling `AddScriptToExecuteOnDocumentCreated` before a new window is created.  ([Issue #2491](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2491))
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2` interface:
+   * [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated)
+
+---
+
+* (Runtime) Fixed an issue that was causing the `X-Edge-Shopping-Flag` header to be added to web requests that are coming from WebView2. ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
+
+
+<!-- ====================================================================== -->
+## 1.0.1829-prerelease
+
+Release Date: May 8, 2023
+
+[NuGet package for WebView2 SDK 1.0.1829-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1829-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 115.0.1829.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### General
+
+
+<!-- ------------------------------ -->
+###### Promotions
+
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+* Enhancing multiple profiles support: allows to configure General Autofill and Password Autosave settings for different profiles.  
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.isgeneralautofillenabled?view=webview2-dotnet-1.0.1829-prerelease&preserve-view=true)
+   * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.ispasswordautosaveenabled?view=webview2-dotnet-1.0.1829-prerelease&preserve-view=true)
+
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1829-prerelease&preserve-view=true#isgeneralautofillenabled)
+   * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1829-prerelease&preserve-view=true#ispasswordautosaveenabled)
+
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2Profile6` interface:
+   * [ICoreWebView2Profile6::get_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#get_ispasswordautosaveenabled)
+   * [ICoreWebView2Profile6::put_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#put_ispasswordautosaveenabled)
+   * [ICoreWebView2Profile6::get_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#get_isgeneralautofillenabled)
+   * [ICoreWebView2Profile6::put_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6?view=webview2-1.0.1829-prerelease&preserve-view=true#put_isgeneralautofillenabled)
+
+---
+
+
+<!-- ------------------------------ -->
+###### Bug fixes
+
+* Disabled the Chrome Web Store info banner that displays the option to allow extensions installation. ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
+* Fixed an issue where a custom menu item wasn't firing. ([Issue #3300](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3300))
+* Fixed a crash during initialization when creating a WebView2 using WPF and SDK version 1.0.1722.32, which is now deprecated.  (See [SDK 1.0.1722.32 is deprecated](#sdk-10172232-is-deprecated) below.)  ([Issue #3375](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3375))
+* (Runtime) Fixed a bug in `PostSharedBufferToScript` that stops after about 32000x1MB buffers are posted. ([Issue #3360](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3360))
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postsharedbuffertoscript)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.PostSharedBufferToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postsharedbuffertoscript)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2_17` interface:
+   * [ICoreWebView2_17::PostSharedBufferToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2_17#postsharedbuffertoscript)
+
+---
+
+* (Runtime) Fixed an issue where navigation will always take place within a `ScriptDialogOpening` event callback.  ([Issue #3355](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3355))
+* (Runtime) Fixed an issue to support the `BackForwardCache` flag.
+* Fixed an issue with visual hosted owned windows, where clicking into the Find bar from outside the window didn't activate the Find bar.
 
 
 <!-- ====================================================================== -->
@@ -92,7 +297,7 @@ WebView2 SDK 1.0.1722.32 is deprecated, and that package has been removed from t
 <!-- ------------------------------ -->
 ###### Promotions
 
-The following items are now stable.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -155,13 +360,13 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 <!-- ------------------------------ -->
 ###### Experimental features
 
-No experimental features are added in this prerelease.
+No experimental features are added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK.
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -227,7 +432,7 @@ The following APIs are promoted to stable in this prerelease SDK.
 * Fixed the issue by disabling the editable `.pdf` temporary cached data recovery function in WebView2.  ([Issue #3274](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3274))
 * Disabled the Chrome Web Store info banner that displays the option to allow extensions installation.  ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
 * Fixed an issue with new download items not getting called out by screen readers.
-* Fixed a bug where visually hosted owned windows didn't map mouse pointer input correctly.
+* Fixed a bug where visual hosted owned windows didn't map mouse pointer input correctly.
 * Fixed a bug where `DownloadStarting` was getting raised for a canceled **Save As** dialog.  (Runtime)
 
 
@@ -248,7 +453,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ---------- -->
 ###### Promotions
 
-The following items are now stable.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -388,6 +593,8 @@ The following items are now stable.
 
 ---
 
+
+<!-- ------------------------------ -->
 APIs for managing tracking prevention:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -434,6 +641,8 @@ APIs for managing tracking prevention:
 
 ---
 
+
+<!-- ------------------------------ -->
 *  APIs to manage the value of the controller's script locale:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -775,7 +984,7 @@ Add support for managing profile deletion:
 <!-- ------------------------------ -->
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK.
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -801,7 +1010,7 @@ The following APIs are promoted to stable in this prerelease SDK.
 
 
 <!-- ------------------------------ -->
-###### Bug Fixes
+###### Bug fixes
 
 *  Fixed a bug in `PrintAsync` and `PrintToPdfStreamAsync` that throws an exception when print settings are null.
 *  Improved handling of apps running elevated.  (Runtime)
@@ -826,8 +1035,10 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ---------- -->
 ###### Promotions
 
-The following items are now stable.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
+
+<!-- ------------------------------ -->
 *  Additional options used to create a WebView2 Environment to manage custom scheme registration:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -911,7 +1122,7 @@ The above interface is currently being used for:
 <!-- ---------- -->
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK.
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -1014,7 +1225,7 @@ The following APIs are promoted to stable in this prerelease SDK.
    * [CoreWebView2ControllerOptions.ScriptLocale Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.scriptlocale?view=webview2-dotnet-1.0.1671-prerelease&preserve-view=true)
 
 Previous name in 1619-prerelease:
-* [CoreWebView2ControllerOptions.LocaleRegion Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.localeregion?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true)
+* [CoreWebView2ControllerOptions.LocaleRegion Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.localeregion?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true)<!--keep 1619-->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -1022,7 +1233,7 @@ Previous name in 1619-prerelease:
    * [CoreWebView2ControllerOptions.ScriptLocale Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.1671-prerelease&preserve-view=true#scriptlocale)
 
 Previous name in 1619-prerelease:
-* [CoreWebView2ControllerOptions.LocaleRegion Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.1619-prerelease&preserve-view=true#localeregion)
+* [CoreWebView2ControllerOptions.LocaleRegion Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.1619-prerelease&preserve-view=true#localeregion)<!--keep 1619-->
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1031,8 +1242,8 @@ Previous name in 1619-prerelease:
    * [ICoreWebView2ControllerOptions2::put_ScriptLocale method](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions2?view=webview2-1.0.1671-prerelease&preserve-view=true#put_scriptlocale)
 
 Previous name in 1619-prerelease:
-* [ICoreWebView2ExperimentalControllerOptions::get_LocaleRegion method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontrolleroptions?view=webview2-1.0.1619-prerelease&preserve-view=true#get_localeregion)
-* [ICoreWebView2ExperimentalControllerOptions::put_LocaleRegion method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontrolleroptions?view=webview2-1.0.1619-prerelease&preserve-view=true#put_localeregion)
+* [ICoreWebView2ExperimentalControllerOptions::get_LocaleRegion method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontrolleroptions?view=webview2-1.0.1619-prerelease&preserve-view=true#get_localeregion)<!--keep 1619-->
+* [ICoreWebView2ExperimentalControllerOptions::put_LocaleRegion method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontrolleroptions?view=webview2-1.0.1619-prerelease&preserve-view=true#put_localeregion)<!--keep 1619-->
 
 ---
 
@@ -1069,7 +1280,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ---------- -->
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -1228,6 +1439,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
+
 <!-- ------------------------------ -->
 *  Added support for API to disable back and forward navigation:
 
@@ -1249,7 +1461,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 <!-- ---------- -->
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -1307,6 +1519,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 ---
 
+
 <!-- ---------- -->
 ###### Bug fixes
 
@@ -1333,7 +1546,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
-This WebView2 SDK release has the same [bug fixes](#bug-fixes-1466-prerelease) that are in WebView2 SDK 1.0.1466-prerelease.
+This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1466-prerelease](#bug-fixes-for-101466-prerelease).
 
 
 <!-- ====================================================================== -->
@@ -1369,6 +1582,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ---
 
+
 *  Added support for the tracking prevention API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -1394,8 +1608,10 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 <!-- ---------- -->
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
+
+<!-- ------------------------------ -->
 *  Added support for the Print API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -1495,7 +1711,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
-This WebView2 SDK release has the same [bug fixes](#bug-fixes-1414-prerelease) that are in WebView2 SDK 1.0.1414-prerelease.
+This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1414-prerelease](#bug-fixes-for-101414-prerelease).
 
 
 <!-- ====================================================================== -->
@@ -1597,8 +1813,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ---
 
 
-<!-- ---------- -->
-###### <a id="bug-fixes-1466-prerelease"/>Bug fixes
+<!-- another section links to here -->
+###### Bug fixes for 1.0.1466-prerelease
 
 *   Fixed a bug in which the custom header title in print settings could be wrong. ([Issue #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093))
 *   Display `AllowedCertificateAuthorities` in `add_ClientCertificateRequested` event as a `Base64` string. (Runtime) ([Issue #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346))
@@ -1625,8 +1841,10 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ---------- -->
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
+
+<!-- ------------------------------ -->
 *  The drag and drop API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -1757,8 +1975,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ---
 
 
-<!-- ---------- -->
-###### <a id="bug-fixes-1414-prerelease"/>Bug fixes
+<!-- another section links to here -->
+###### Bug fixes for 1.0.1414-prerelease
 
 *   Removed three-dot menu with a broken link from the downloads page. (Runtime)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
 *   Fixed a bug in the WebView2 WinRT JS Projection tool (wv2winrt) where C++20 projects failed to compile.  ([Issue #2768](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2768))
@@ -1779,7 +1997,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
-This WebView2 SDK release has the same bug fixes that are in WebView2 SDK 1.0.1369-prerelease.  See **Bug fixes** in the following section.
+This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1369-prerelease](#bug-fixes-for-101369-prerelease).
 
 
 <!-- ====================================================================== -->
@@ -1799,7 +2017,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 <!-- ---------- -->
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
 
 *  The drag and drop API:
 
@@ -1817,16 +2036,16 @@ The following items are now stable:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2CompositionController3.DragEnter method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragenter)
-* [ICoreWebView2CompositionController3.DragLeave method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragleave)
-* [ICoreWebView2CompositionController3.DragOver method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragover)
-* [ICoreWebView2CompositionController3.Drop method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#drop)
+* [ICoreWebView2CompositionController3::DragEnter method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragenter)
+* [ICoreWebView2CompositionController3::DragLeave method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragleave)
+* [ICoreWebView2CompositionController3::DragOver method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragover)
+* [ICoreWebView2CompositionController3::Drop method](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#drop)
 
 ---
 
 
-<!-- ---------- -->
-###### Bug fixes
+<!-- another section links to here -->
+###### Bug fixes for 1.0.1369-prerelease
 
 *  Fixed a bug where WPF apps would crash when windows with WebView2 were closed. ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
 
@@ -1852,7 +2071,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
 
 * The Favicon API:
 
@@ -1966,7 +2186,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
 
 *  Added `ContextMenuRequested`API to enable host app to create or modify their own context menu.
 
@@ -1998,7 +2219,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
 
 * The Favicon API:
 
@@ -2055,7 +2277,8 @@ There is no corresponding prerelease package.
 
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
 
 * The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1245.22&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level. It renders the page without prompting the user about TLS or providing the ability to cancel the web request.
 
@@ -2089,7 +2312,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 * Support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1210.39&preserve-view=true) in WebView2.
 
@@ -2112,7 +2335,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 * The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1248-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
 
@@ -2150,7 +2373,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 * The [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1185.39&preserve-view=true#calldevtoolsprotocolmethodforsession) that supports `sessionId` for CDP method calls.
 
@@ -2189,7 +2412,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 * Support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1222-prerelease&preserve-view=true) in WebView2.
 
@@ -2227,7 +2450,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *   The [BasicAuthentication API](/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38&preserve-view=true) that enables developers to handle Basic HTTP Authentication request and response.
 
@@ -2249,7 +2472,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 *    The [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true#calldevtoolsprotocolmethodforsession) that supports sessionId for CDP method calls.
 *   The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1189-prerelease&preserve-view=true):
@@ -2281,10 +2504,12 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *  The [AdditionalAllowedFrameAncestors API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs2?view=webview2-1.0.1108.44&preserve-view=true) that enable developers to provide additional allowed frame ancestors.
+
 *  The [ProcessInfo APIs](/microsoft-edge/webview2/reference/win32/icorewebview2processinfo?view=webview2-1.0.1108.44&preserve-view=true) provide more information about WebView2 processes and process collections.
+
 *  New [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame2?view=webview2-1.0.1108.44&preserve-view=true&preserve-view=true):
    *  `add_NavigationStarting`
    *  `remove_NavigationStarting`
@@ -2319,7 +2544,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 *  Rename ICoreWebView2ClientCertificate to [ICoreWebView2Certificate](/microsoft-edge/webview2/reference/win32/icorewebview2certificate?view=webview2-1.0.1158-prerelease&preserve-view=true).
 *  New [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1158-prerelease&preserve-view=true):
@@ -2347,9 +2572,10 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2_8?view=webview2-1.0.1072.54&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
+
 *  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2_9?view=webview2-1.0.1072.54&preserve-view=true) enables:
    *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
    *  Programmatically open and close the default download dialog.
@@ -2376,7 +2602,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 *  New [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe2?view=webview2-1.0.1133-prerelease&preserve-view=true):
    *  `PostWebMessageAsJson`
@@ -2421,7 +2647,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 *  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1083-prerelease&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
 *  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental11?view=webview2-1.0.1083-prerelease&preserve-view=true).  This API enables:
@@ -2507,7 +2733,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
 *  [PrintToPdf API](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30&preserve-view=true#printtopdf).
 
 
@@ -2528,7 +2755,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
 *  [OpenTaskManagerWindow API](/microsoft-edge/webview2/reference/win32/icorewebview2_6?view=webview2-1.0.992.28&preserve-view=true#summary).
 *  [isSwipeNavigationEnabled property](/microsoft-edge/webview2/reference/win32/icorewebview2settings6?view=webview2-1.0.992.28&preserve-view=true#summary).
 *  [BrowserProcessExited API](/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs?view=webview2-1.0.992.28&preserve-view=true#summary).
@@ -2602,7 +2830,8 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 ###### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
 *  `IsSwipeNavigationEnabled`
 *  `BrowserProcessExited`
 *  `OpenBrowserTaskManager`
@@ -2629,7 +2858,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following items are now stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
 *  [Client Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.961.33&preserve-view=true#add_clientcertificaterequested).
 
 
@@ -2669,7 +2899,10 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 *  Fixed bug where the title bar on the default pop-up wasn't displayed completely. This change is Runtime-specific. ([Issue #1016](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1016))
 
 ###### Promotions
-*  [add_ClientCertificateRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.955-prerelease&preserve-view=true#add_clientcertificaterequested) was promoted to stable.
+
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+*  [add_ClientCertificateRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.955-prerelease&preserve-view=true#add_clientcertificaterequested)
 
 #### .NET
 
@@ -2699,7 +2932,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-The following items are now in stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *  [add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902.49&preserve-view=true#add_framecreated).
 *  [get_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902.49&preserve-view=true#get_isgeneralautofillenabled).
@@ -2745,11 +2978,13 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 ###### Promotions
 
-*  [Download API](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting) is now promoted to stable.
-*  [PinchZoom API](/microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_ispinchzoomenabled) is now promoted to stable.
-*  [AddFrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_framecreated) is now promoted to stable.
-*  [AddHostObjectToScriptWithOrigins](/microsoft-edge/webview2/reference/win32/icorewebview2frame?view=webview2-1.0.902-prerelease&preserve-view=true#addhostobjecttoscriptwithorigins) API promoted to stable with iframe element support.
-*  [Autofill API](/microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902-prerelease&preserve-view=true#get_isgeneralautofillenabled) is now promoted to stable.
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+*  [Download API](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting).
+*  [PinchZoom API](/microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_ispinchzoomenabled).
+*  [AddFrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_framecreated).
+*  [AddHostObjectToScriptWithOrigins](/microsoft-edge/webview2/reference/win32/icorewebview2frame?view=webview2-1.0.902-prerelease&preserve-view=true#addhostobjecttoscriptwithorigins) API promoted to Stable with iframe element support.
+*  [Autofill API](/microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902-prerelease&preserve-view=true#get_isgeneralautofillenabled).
    > [!NOTE]
    > There is no current API to delete the locally stored general autofill and password autosave information.  Please provide a control to delete the data, which will involve deleting the entire user data folder.
 
@@ -2781,12 +3016,16 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 *  Improve `NewWindowRequested` documentation. ([Issue #448](https://github.com/MicrosoftEdge/WebViewFeedback/issues/448)).
 
 ###### Promotions
-*  [UserAgent API](/microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_useragent) is now stable.
-*  [AreBrowserkeysenabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.864.35&preserve-view=true#get_arebrowseracceleratorkeysenabled) is now stable.
+
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
+*  [UserAgent API](/microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_useragent)
+*  [AreBrowserkeysenabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.864.35&preserve-view=true#get_arebrowseracceleratorkeysenabled)
 
 #### .NET
 
 ###### Bug fixes
+
 *  Fixed a bug in WebView2 .NET controls that first header is missing when iterating `CoreWebView2WebResourceRequest` headers collection. ([Issue #1123](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1123)).
 
 
@@ -2871,10 +3110,17 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 *  Added experimental [AreBrowserAcceleratorKeysEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings2?view=webview2-1.0.824&preserve-view=true#get_arebrowseracceleratorkeysenabled) setting.  You can prevent the browser from responding to keyboard shortcuts related to navigation, printing, saving, and other browser-specific functions.
 *  Added `iframe` element support for `AddScriptToExecuteOnDocumentCreated`.
 
-###### Promotion
+###### Promotions
 
-*  [UserAgent](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived) API is now promoted to Stable.
-*  Rasterization Scale APIs ([RasterizationScale](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.721-prerelease&preserve-view=true#get_rasterizationscale) property,  [RasterizationScaleChanged](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.721-prerelease&preserve-view=true#add_rasterizationscalechanged) event, [BoundsMode property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.721-prerelease&preserve-view=true#get_boundsmode), and [ShouldDetectMonitorScaleChanges](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.721-prerelease&preserve-view=true#get_shoulddetectmonitorscalechanges) property) are now promoted to Stable.
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+*  [UserAgent](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived).
+
+*  Rasterization Scale APIs:
+   *  [RasterizationScale property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.721-prerelease&preserve-view=true#get_rasterizationscale)
+   *  [RasterizationScaleChanged event](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.721-prerelease&preserve-view=true#add_rasterizationscalechanged)
+   *  [BoundsMode property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.721-prerelease&preserve-view=true#get_boundsmode)
+   *  [ShouldDetectMonitorScaleChanges property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.721-prerelease&preserve-view=true#get_shoulddetectmonitorscalechanges)
 
 ###### Bug fixes
 
@@ -2903,14 +3149,13 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Promotions
 
-<!-- todo: change version number in links to match heading? -->
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
-*  The following experimental APIs are now promoted to Stable.
-   *  [DPI support](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived) related APIs
+   *  [DPI support](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.774.44&preserve-view=true#add_webresourceresponsereceived) related APIs
    *  Visual hosting APIs
-   *  [SetVirtualHostNameToFolderMapping](/microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.790-prerelease&preserve-view=true#setvirtualhostnametofoldermapping)
-   *  [TrySuspend and Resume](/microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.790-prerelease&preserve-view=true#trysuspend)
-   *  [DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.790-prerelease&preserve-view=true#get_defaultbackgroundcolor)
+   *  [SetVirtualHostNameToFolderMapping](/microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.774.44&preserve-view=true#setvirtualhostnametofoldermapping)
+   *  [TrySuspend and Resume](/microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.774.44&preserve-view=true#trysuspend)
+   *  [DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.774.44&preserve-view=true#get_defaultbackgroundcolor)
 
 ###### Bug fixes
 
@@ -2960,9 +3205,10 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0
 
 ###### Promotions
 
-*  The following experimental APIs are now promoted to Stable:
-   *  Visual Hosting APIs
-   *  [SetVirtualHostNameToFolderMapping](/microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.790-prerelease&preserve-view=true#setvirtualhostnametofoldermapping)
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+*  Visual Hosting APIs
+*  [SetVirtualHostNameToFolderMapping](/microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.790-prerelease&preserve-view=true#setvirtualhostnametofoldermapping)
 
 #### .NET
 
@@ -2985,7 +3231,8 @@ This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or
 
 ###### Promotions
 
-*  The following experimental APIs are now promoted to Stable:
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
    *  [WebResourceResponseReceived API](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived)
    *  [NavigateWithWebResourceRequest API](/microsoft-edge/webview2/reference/win32/icorewebview2environment2?view=webview2-1.0.721-prerelease&preserve-view=true#createwebresourcerequest)
    *  [Cookie management API](/microsoft-edge/webview2/reference/win32/icorewebview2cookiemanager?view=webview2-1.0.721-prerelease&preserve-view=true)
@@ -3023,12 +3270,16 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0
    *  Added [ShouldDetectMonitorScaleChanges](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.721-prerelease&preserve-view=true#get_shoulddetectmonitorscalechanges) property to automatically update `RasterizationScale` property if needed.
    *  Added [BoundsMode property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.721-prerelease&preserve-view=true#get_boundsmode) to specify that the bounds are logic pixels and allow WebView2 to use `RasterizationScale` for WebView2 pixel display, and WebView2 use the `RasterizationScale` with the `Bounds` to get the physical size.
 *  Updated `NewWindowRequested` event to handle **Ctrl+click** and **Shift+click**.  ([Issue #168](https://github.com/MicrosoftEdge/WebViewFeedback/issues/168) and [Issue #371](https://github.com/MicrosoftEdge/WebViewFeedback/issues/371)).
-*  The following experimental APIs are now promoted to Stable.
-   *  [WebResourceResponseReceived API](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived)
-   *  [NavigateWithWebResourceRequest API](/microsoft-edge/webview2/reference/win32/icorewebview2environment2?view=webview2-1.0.721-prerelease&preserve-view=true#createwebresourcerequest)
-   *  [Cookie management API](/microsoft-edge/webview2/reference/win32/icorewebview2cookiemanager?view=webview2-1.0.721-prerelease&preserve-view=true)
-   *  [DOMContentLoaded API](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_domcontentloaded)
-   *  [Environment property](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#get_environment)
+
+###### Promotions
+
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+*  [WebResourceResponseReceived API](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived)
+*  [NavigateWithWebResourceRequest API](/microsoft-edge/webview2/reference/win32/icorewebview2environment2?view=webview2-1.0.721-prerelease&preserve-view=true#createwebresourcerequest)
+*  [Cookie management API](/microsoft-edge/webview2/reference/win32/icorewebview2cookiemanager?view=webview2-1.0.721-prerelease&preserve-view=true)
+*  [DOMContentLoaded API](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_domcontentloaded)
+*  [Environment property](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#get_environment)
 
 #### .NET
 
@@ -3250,7 +3501,11 @@ This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or h
    > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView2 no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded Evergreen WebView2 Runtime, that you can chain-install through an installer that the WebView2 team is currently developing.  See [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
 
 *  > [!IMPORTANT]
-   > **Announcement**:  Moving forward, the WebView2 team releases two packages:  a prerelease package with experimental APIs (for you to try out) and a stable release package with stable APIs (for your confidence).  To learn about the differences, see [Understanding browser versions and WebView2](concepts/versioning.md).
+   > **Announcement**:  Moving forward, the WebView2 team releases two packages:
+   > * A Prerelease SDK package containing Experimental APIs (for you to try out), and also APIs that have been promoted to Stable status.
+   > * A Release SDK package that consists entirely of APIs that have reached Stable status (for your confidence).
+   >
+   > To learn about the differences, see [Understanding browser versions and WebView2](concepts/versioning.md).
 
 *  > [!IMPORTANT]
    > **Breaking Change**:  In order to ensure the WebView2 API aligns with the Windows API naming conventions, the WebView2 team updated the names of the following interfaces.
@@ -3427,4 +3682,5 @@ Initial developer preview release.
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge WebView2 team](contact.md)
+* [Overview of WebView2 features and APIs](./concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
+* [Contacting the Microsoft Edge WebView2 team](contact.md)
