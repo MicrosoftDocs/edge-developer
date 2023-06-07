@@ -546,8 +546,6 @@ Custom Download Experience:
 
 ---
 
-<!-- todo: decide whether to re-add blank lines above (lines 1-533) -->
-
 
 <!-- ------------------------------ -->
 #### Permissions
@@ -1058,6 +1056,9 @@ In WebView2, you can set a [Favicon](https://developer.mozilla.org/docs/Glossary
 #### Security and privacy
 
 
+<!-- ---------- -->
+###### Tracking prevention
+
 <!-- ------------------------------ -->
 <!-- from RelNotes 111 -->
 Tracking prevention enables the host app to control the level of tracking prevention of the WebView2 control that's associated with the user profile.
@@ -1109,15 +1110,16 @@ See also:
 ---
 
 
-<!-- ------------------------------ -->
+<!-- ---------- -->
+###### SmartScreen
 <!-- from RelNotes 112 -->
-The Managing SmartScreen API includes the `IsReputationCheckingRequired` property, which controls whether SmartScreen is enabled.
 
-<!-- 
-todo: is there a regular article about Managing Smartscreen, to cross-link?
+Microsoft Defender SmartScreen ("SmartScreen") is enabled by default.  The `IsReputationCheckingRequired` property controls whether SmartScreen is enabled.
+
+If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen, and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md#smartscreen).
+
 See also:
-* []()
--->
+* [SmartScreen](./data-privacy.md#smartscreen) in _Data and privacy in WebView2_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1134,6 +1136,42 @@ See also:
 * `ICoreWebView2Settings8` interface:
    * [ICoreWebView2Settings8::get_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#get_isreputationcheckingrequired)
    * [ICoreWebView2Settings8::put_IsReputationCheckingRequired method](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#put_isreputationcheckingrequired)
+
+---
+
+
+<!-- ---------- -->
+###### Custom crash reporting
+
+If any WebView2 process crashes, one or more minidump files are created and sent to Microsoft for diagnosis.  Use this API to customize crash reporting when running diagnostics and doing analysis.
+*  To prevent crash dumps from being sent to Microsoft, set the `IsCustomCrashReportingEnabled` property to `false`.
+*  To locate crash dumps and do customization with them, use the `CrashDumpFolderPath` property.
+
+See also:
+* [Custom crash reporting](./data-privacy.md#custom-crash-reporting) in _Data and privacy in WebView2_.
+* [Minidump Files](/windows/win32/debug/minidump-files)
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled)
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.FailureReportFolderPath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.failurereportfolderpath)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#iscustomcrashreportingenabled)
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.FailureReportFolderPath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#failurereportfolderpath)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2EnvironmentOptions3` interface:
+   * [ICoreWebView2EnvironmentOptions3::get_IsCustomCrashReportingEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3#get_iscustomcrashreportingenabled)
+* `ICoreWebView2Environment11` interface:
+   * [ICoreWebView2Environment11::get_FailureReportFolderPath](/microsoft-edge/webview2/reference/win32/icorewebview2environment11#get_failurereportfolderpath)
+
 ---
 
 
