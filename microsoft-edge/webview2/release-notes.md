@@ -289,7 +289,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ##### [Win32/C++](#tab/win32cpp)
 
 * `COREWEBVIEW2_BROWSING_DATA_KINDS` enum:
-   * [COREWEBVIEW2_BROWSING_DATA_KINDS_SERVICE_WORKERS enum value](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1829-prerelease#corewebview2_browsing_data_kinds)
+   * [COREWEBVIEW2_BROWSING_DATA_KINDS_SERVICE_WORKERS enum value](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1829-prerelease&preserve-view=true#corewebview2_browsing_data_kinds)
 
 ---
 
