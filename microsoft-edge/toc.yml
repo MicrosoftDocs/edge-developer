@@ -1359,6 +1359,10 @@
               href: webview2/how-to/remote-debugging.md
               displayName: Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge  # top-of-page title
 
+            - name: Use Playwright to automate in WebView2
+              href: webview2/how-to/playwright.md
+              displayName: Use Playwright to automate and test in WebView2  # top-of-page title
+
 # -----------------------------------------------------------------------------
         - name: Architecture
           items:
