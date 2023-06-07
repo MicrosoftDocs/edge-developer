@@ -260,7 +260,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 * `CoreWebView2NavigationStartingEventArgs` Class:
    * [CoreWebView2NavigationStartingEventArgs.NavigationKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true#navigationkind)
-* [CoreWebView2NavigationKind Enum](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationkind?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
+* [CoreWebView2NavigationKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationkind?view=webview2-winrt-1.0.1889-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
