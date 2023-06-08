@@ -1569,11 +1569,10 @@ In WebView2, you can use the Server Certificate API to trust the server's TLS ce
 
 
 <!-- ------------------------------ -->
-#### LaunchingExternalUriScheme event
+#### Launch an external URI scheme
 
-Support for the `LaunchingExternalUriScheme` event.  This event is raised when there's an attempt to launch a URI scheme that is registered with the OS (external URI scheme).
-
-<!-- todo: from 114, June 2023 -->
+Launch a URI scheme that is registered with the OS.
+<!--from v114-->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2210,9 +2209,6 @@ Access and manipulate the profile:
 * `CoreWebView2` Class:
    * [CoreWebView2.Profile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.profile#microsoft-web-webview2-core-corewebview2-profile)
 * [CoreWebView2Profile Class](/dotnet/api/microsoft.web.webview2.core.corewebview2profile)
-<!-- todo: from 114, June 2023.  Enhanced support for multiple profiles, to allow configuring General Autofill and Password Autosave settings for different profiles.
-   * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.isgeneralautofillenabled)
-   * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.ispasswordautosaveenabled) -->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -2234,9 +2230,6 @@ Access and manipulate the profile:
 * `CoreWebView2` Class:
    * [CoreWebView2.Profile Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#profile)
 * [CoreWebView2Profile Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile)
-<!-- todo: from 114, June 2023.  Enhanced support for multiple profiles, to allow configuring General Autofill and Password Autosave settings for different profiles.
-   * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#isgeneralautofillenabled)
-   * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#ispasswordautosaveenabled) -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -2255,12 +2248,8 @@ Access and manipulate the profile:
 * `ICoreWebView2_13` interface:
    * [ICoreWebView2_13::get_Profile method](/microsoft-edge/webview2/reference/win32/icorewebview2_13#get_profile)<!--no put-->
 * [ICoreWebView2Profile interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile)
-* [ICoreWebView2Profile2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile2) - Methods to clear browsing data.<!--keep text-->
-<!-- todo: from 114, June 2023.  Enhanced support for multiple profiles, to allow configuring General Autofill and Password Autosave settings for different profiles.
-   * [ICoreWebView2Profile6::get_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6#get_isgeneralautofillenabled)
-   * [ICoreWebView2Profile6::get_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6#get_ispasswordautosaveenabled)
-   * [ICoreWebView2Profile6::put_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6#put_isgeneralautofillenabled)
-   * [ICoreWebView2Profile6::put_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2profile6#put_ispasswordautosaveenabled) -->
+* [ICoreWebView2Profile2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile2) - Clears browsing data.
+* [ICoreWebView2Profile6 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile6) - Autofill and password autosave.<!--from v114-->
 
 ---
 
@@ -2299,10 +2288,10 @@ Analyze and debug performance, handle performance-related events, and manage mem
 
 
 <!-- ------------------------------ -->
-#### MemoryUsageTargetLevel
+#### Memory usage target
 
-`MemoryUsageTargetLevel` allows specifying memory consumption levels, such as `low` or `normal`.
-<!-- todo: from 114, June 2023 -->
+Specifies memory consumption levels, such as `low` or `normal`.
+<!--from v114-->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
