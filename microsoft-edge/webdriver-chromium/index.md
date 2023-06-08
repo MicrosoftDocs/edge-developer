@@ -431,6 +431,12 @@ These are troubleshooting considerations when using WebDriver to automate Micros
 If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy to `2`, Microsoft Edge WebDriver is blocked from driving Microsoft Edge, because the driver uses [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md).  To automate Microsoft Edge, make sure the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy is set to `0` or `1`.
 
 
+<!-- ------------------------------ -->
+#### Error due to Selenium Tools for Microsoft Edge
+
+If you get the following error when you try to create a new `EdgeDriver` instance: `System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`, see [Upgrading from Selenium 3 to Selenium 4](#upgrading-from-selenium-3-to-selenium-4) below.
+
+
 <!-- ====================================================================== -->
 ## Upgrading from Selenium 3 to Selenium 4
 
