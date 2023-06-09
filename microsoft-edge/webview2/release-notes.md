@@ -269,7 +269,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ------------------------------ -->
-* Service workers enum value in the data kinds enum:
+* Added Service workers enum value in the data kinds enum:
 
 <!-- todo: finish section; test links -->
 
