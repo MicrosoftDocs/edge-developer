@@ -63,7 +63,7 @@ The following experimental features are turned on by default. You can use these 
 * [View console.profile() results in the Performance panel for Node.js](#view-consoleprofile-results-in-the-performance-panel-for-nodejs)
 
 **Turned on by default in Microsoft Edge Stable 114:**
-* [Automatically pretty print in the Sources Panel](#automatically-pretty-print-in-the-sources-panel)
+* [Automatically pretty print minified sources](#automatically-pretty-print-minified-sources)
 * [Source order viewer](#source-order-viewer)
 * [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor)
 * [WebAssembly Debugging: Enable DWARF support](#webassembly-debugging-enable-dwarf-support)
