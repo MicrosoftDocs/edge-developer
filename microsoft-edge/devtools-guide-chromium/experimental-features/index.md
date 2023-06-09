@@ -313,9 +313,13 @@ Status:
 ## Console: Resolve variable names in expressions using source maps
 
 Uses source maps to automatically map original variable names to minified variable names when evaluating expressions.
-<!-- todo: Which tools are affected?  Does this affect other tools besides Console? -->
+<!-- todo: Which tools are affected?  Does this affect other tools besides Console?
+This checkbox affects the **Console** and **Sources** tool.
+-->
 
-See [Map the processed code to your original source code, for debugging](../javascript/source-maps.md).
+See also:
+* [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
+* [Mapping minified code to your source code to show readable code](../sources/index.md#mapping-minified-code-to-your-source-code-to-show-readable-code) in _Sources tool overview_.<!-- todo: delete link if Sources tool isn't affected by this checkbox -->
 
 In Microsoft Edge Canary 116, the checkbox label omits the **Console:** prefix.
 
@@ -816,6 +820,9 @@ Status:
 ## Set all breakpoints eagerly at startup
 
 Sets all possible defined breakpoints at startup.
+
+See also:
+* [Pause code with breakpoints](../javascript/breakpoints.md)
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 116.
