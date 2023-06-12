@@ -50,6 +50,7 @@ async function main() {
 
     // Read the file content.
     const content = await readFile(file);
+    let newContent = content;
     
     // Find image tags that have the msft suffix.
     const msftImages = content.match(MSFT_IMG_REGEX);
@@ -78,10 +79,11 @@ async function main() {
         }
 
         // Replace the image path in the markdown file.
-        const newContent = content.replace(imagePath, newImagePath);
-        await fs.writeFile(file, newContent);
+        newContent = newContent.replace(imagePath, newImagePath);
       }
     }
+   
+    await fs.writeFile(file, newContent);
   }
 }
 

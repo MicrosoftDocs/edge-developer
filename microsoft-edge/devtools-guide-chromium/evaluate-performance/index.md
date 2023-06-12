@@ -47,7 +47,7 @@ In the following tutorial, you open DevTools on a "Sluggish Animation" demo page
 
 1. Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS) to open DevTools.
 
-   ![The demo on the left, and DevTools on the right](../media/evaluate-performance-get-started-side-by-side.msft.png)
+   ![The demo on the left, and DevTools on the right](../media/evaluate-performance-get-started-side-by-side.png)
 
 
 For the rest of the following screenshots, DevTools is [undocked to a separate window](../customize/placement.md), to better focus on the contents.
@@ -61,11 +61,11 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. Select the **Screenshots** checkbox.
 
-1. Click **Capture settings** (![Capture settings](../media/capture-settings-icon.msft.png)).  DevTools reveals settings related to how it captures performance metrics.
+1. Click **Capture settings** (![Capture settings](../media/capture-settings-icon.png)).  DevTools reveals settings related to how it captures performance metrics.
 
 1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.
 
-   ![CPU throttle](../media/evaluate-performance-performance-capture-settings.msft.png)
+   ![CPU throttle](../media/evaluate-performance-performance-capture-settings.png)
 
    If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
 
@@ -87,15 +87,15 @@ The following section lets you customize the demo to make sure that your experie
 
 When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the non-optimized version.
 
-1. In DevTools, click **Record** (![Record](../media/record-icon.msft.png)).  DevTools captures performance metrics as the page runs.
+1. In DevTools, click **Record** (![Record](../media/record-icon.png)).  DevTools captures performance metrics as the page runs.
 
-   ![Profile the page](../media/evaluate-performance-performance-profiling.msft.png)
+   ![Profile the page](../media/evaluate-performance-performance-profiling.png)
 
 1. Wait a few seconds.
 
 1. Click **Stop**.  DevTools stops recording, processes the data, then displays the results in the **Performance** tool.
 
-   ![The results of the profile](../media/evaluate-performance-performance-capture-results.msft.png)
+   ![The results of the profile](../media/evaluate-performance-performance-capture-results.png)
 
 
 These performance results show an overwhelming amount of data, but it will all make more sense shortly.
@@ -109,11 +109,11 @@ Once you have a recording of the page's performance, you can assess the page's p
 
 1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
 
-   ![The CPU chart and Summary panel](../media/evaluate-performance-performance-cpu-chart.msft.png)
+   ![The CPU chart and Summary panel](../media/evaluate-performance-performance-cpu-chart.png)
 
 1. Hover over the **CPU** or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of the performance recording.
 
-   ![Hover on a frame](../media/evaluate-performance-performance-frame-hover.msft.png)
+   ![Hover on a frame](../media/evaluate-performance-performance-frame-hover.png)
 
 
 
@@ -127,7 +127,7 @@ Another handy tool is the **Frame Rendering Stats** overlay, which provides real
 
 1. In the **Rendering** tool, turn on **Frame Rendering Stats**.  A new overlay appears in the top-left of your webpage.
 
-   ![The FPS overlay](../media/evaluate-performance-fps-meter-overlay.msft.png)
+   ![The FPS overlay](../media/evaluate-performance-fps-meter-overlay.png)
 
 1. When you are done reviewing the FPS data, clear the **Frame Rendering Stats** checkbox to hide the overlay.
 
@@ -138,15 +138,15 @@ After you verified that the animation isn't performing well, the next step is to
 
 1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
 
-   ![The Summary panel](../media/evaluate-performance-performance-summary-tab.msft.png)
+   ![The Summary panel](../media/evaluate-performance-performance-summary-tab.png)
 
 1. Expand the **Main** section.  DevTools shows you a flame chart of activity on the main thread, over time.  The x-axis represents the recording, over time.  Each bar represents an event.  A wider bar means that event took longer.  The y-axis represents the call stack.  When events are stacked on top of each other, it means the upper events caused the lower events.
 
-   ![The Main section](../media/evaluate-performance-performance-main.msft.png)
+   ![The Main section](../media/evaluate-performance-performance-main.png)
 
 1. There is a lot of data in the recording.  To zoom into a portion of the recording, click and drag in the **Overview** area toward the top of the **Performance** tool.  The **Overview** area includes the **CPU** and **NET** charts (indicated on the right).  The **Main** section and **Summary** panel only display information for the selected portion of the recording.
 
-   ![Zoom into a section](../media/evaluate-performance-performance-main-zoomed.msft.png)
+   ![Zoom into a section](../media/evaluate-performance-performance-main-zoomed.png)
 
    Another way to change the selected area is to put focus on the **Main** section, click the background or an event, and then press:
    * `W` to zoom in, `S` to zoom out.
@@ -158,7 +158,7 @@ After you verified that the animation isn't performing well, the next step is to
 
 1. Click the **Animation Frame Fired** event.  The **Summary** panel now shows you information about that event.  Note the **Reveal** link.  After you click it, DevTools highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:96** link.  After you click it, the relevant line in the source code is displayed.
 
-   ![More information about the Animation Frame Fired event](../media/evaluate-performance-performance-animation-frame-fired.msft.png)
+   ![More information about the Animation Frame Fired event](../media/evaluate-performance-performance-animation-frame-fired.png)
 
    After clicking an event, use the arrow keys to select the events next to it.
 
@@ -168,7 +168,7 @@ After you verified that the animation isn't performing well, the next step is to
 
 1. In the **Summary** panel, click the **app.js:72** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.
 
-   ![The line of code that caused the forced layout](../media/evaluate-performance-sources-app-update.msft.png)
+   ![The line of code that caused the forced layout](../media/evaluate-performance-sources-app-update.png)
 
    The problem with the non-optimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
    <!--

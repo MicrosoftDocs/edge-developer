@@ -63,7 +63,7 @@ To use the **Network Console** starting from the **Network** tool:
 
    <!-- Another screenshot (used by Experimental Features article)
 
-   ![The Network Console tool in the main toolbar](../media/network-network-console.msft.png) -->
+   ![The Network Console tool in the main toolbar](../media/network-network-console.png) -->
 
 
 <!-- ====================================================================== -->
@@ -76,7 +76,7 @@ You can:
 
 Entering a name for the new environment:
 
-![Entering a name for the new environment](images/network-console-environments-new-name.msft.png)
+![Entering a name for the new environment](images/network-console-environments-new-name.png)
 
 Selecting the format for the new environment:
 

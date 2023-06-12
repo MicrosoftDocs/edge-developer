@@ -44,7 +44,7 @@ You can test the order of page elements by using the **Source Order Viewer** in 
 
 To turn on the Source Order Viewer:
 
-1. In DevTools, in the upper right, select the **Settings** (![Settings button](../media/settings-button-icon.msft.png)) button.
+1. In DevTools, in the upper right, select the **Settings** (![Settings button](../media/settings-button-icon.png)) button.
 
 1. Below **Settings**, select **Experiments**.
 

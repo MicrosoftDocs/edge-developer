@@ -34,7 +34,7 @@ ms.date: 05/04/2021
 
 In Microsoft Edge 86, you can match keyboard shortcuts in the DevTools to your shortcuts in [Microsoft Visual Studio Code](https://code.visualstudio.com).
 
-![Match keyboard shortcuts in the DevTools to Visual Studio Code](../../media/2020/08/keyboard-shortcut.msft.png)
+![Match keyboard shortcuts in the DevTools to Visual Studio Code](../../media/2020/08/keyboard-shortcut.png)
 
 To activate this feature, see [Customize keyboard shortcuts in DevTools](../../../customize/shortcuts.md).
 
@@ -56,7 +56,7 @@ To help enhance your website or app for the dual-screen and foldable devices, us
 
 *  Enabling experimental Web Platform APIs to access the new [CSS media screen-spanning feature](/dual-screen/web/css-media-spanning) and [JavaScript getWindowSegments API](/dual-screen/web/javascript-getwindowsegments).
 
-![Device emulation for Surface Duo](../../media/2020/08/surface-duo-device-emulation.msft.png)
+![Device emulation for Surface Duo](../../media/2020/08/surface-duo-device-emulation.png)
 
 Update: This feature has been released and is no longer experimental.<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Emulation: Support dual screen mode**. -->
 
@@ -71,7 +71,7 @@ Chromium issue: [#1054281](https://crbug.com/1054281)
 
 The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.  The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** tool:
 
-![CSS grid overlay for article element](../../media/2020/08/css-grid-overlay-article.msft.png)
+![CSS grid overlay for article element](../../media/2020/08/css-grid-overlay-article.png)
 
 Update: This feature has been released and is no longer experimental.<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**. -->
 
@@ -89,21 +89,21 @@ In Microsoft Edge 85 or earlier, in the **Console**, the formatting of a copied 
 
 `table` Console API output in Microsoft Edge 85 or earlier:
 
-![table Console API output in Microsoft Edge 85 or earlier](../../media/2020/08/console-table-beta.msft.png)
+![table Console API output in Microsoft Edge 85 or earlier](../../media/2020/08/console-table-beta.png)
 
 `table` Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code:
 
-![table Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code](../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png)
+![table Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code](../../media/2020/08/console-table-beta-paste-visual-studio-code.png)
 
 In Microsoft Edge 86 or later, when you copy a table from the **Console**, the formatting is now preserved.
 
 `table` Console API output in Microsoft Edge 86 or later:
 
-![table Console API output in Microsoft Edge 86 or later](../../media/2020/08/console-table-canary.msft.png)
+![table Console API output in Microsoft Edge 86 or later](../../media/2020/08/console-table-canary.png)
 
 `table` Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code:
 
-![table Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code](../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png)
+![table Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code](../../media/2020/08/console-table-canary-paste-visual-studio-code.png)
 
 Chromium issue: [#1115011](https://crbug.com/1115011)
 
@@ -116,7 +116,7 @@ See also:
 
 The new accessibility helper displays the order in which elements reside in the source file:
 
-![Selecting the 'Show source order' checkbox](../../media/2020/08/source-order-viewer.msft.png)
+![Selecting the 'Show source order' checkbox](../../media/2020/08/source-order-viewer.png)
 
 This feature makes it easier to test the way screen reader and keyboard users experience your website or app.  Screen readers and keyboard navigation depend on content being placed in a particular order in the source code of your website or app, so that it matches the rendered page.  The Source Order Viewer displays potential differences in order between the rendered page and the source code.
 
@@ -136,11 +136,11 @@ Your feedback and internal discoveries uncovered which text strings used in the 
 
 Microsoft Edge DevTools 85 and earlier in Traditional Chinese:
 
-![Microsoft Edge DevTools in Traditional Chinese](../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png)
+![Microsoft Edge DevTools in Traditional Chinese](../../media/2020/08/localization-improvements-chinese-complex-stable.png)
 
 Microsoft Edge DevTools 86 or later in Traditional Chinese:
 
-![Microsoft Edge DevTools in Japanese](../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png)
+![Microsoft Edge DevTools in Japanese](../../media/2020/08/localization-improvements-chinese-complex-canary.png)
 
 To meet your translation needs, the Microsoft Edge DevTools team is focused on improving translation quality.
 
@@ -158,7 +158,7 @@ In Microsoft Edge 84 and 85, the first search result in the **Elements** tool di
 
 Thank you for sending your feedback and helping improve Chromium.  Your feedback uncovered Issue [#1103316](https://crbug.com/1103316) in the open-source Chromium project.
 
-![Highlighted first search result on Elements panel in Microsoft Edge 84 or later](../../media/2020/08/elements-search-highlight-fixed.msft.png)
+![Highlighted first search result on Elements panel in Microsoft Edge 84 or later](../../media/2020/08/elements-search-highlight-fixed.png)
 
 The issue is now fixed in all versions of Microsoft Edge.
 
@@ -181,7 +181,7 @@ DevTools now displays media players information in the [Media](../../../media-pa
 
 To open the new **Media** tool, select **Customize and control DevTools** (`...`) > **More tools** > **Media**.
 
-![New Media tool](../../media/2020/08/media-panel.msft.png)
+![New Media tool](../../media/2020/08/media-panel.png)
 
 Before the new **Media** tool in DevTools, the logging and debug information about video players was located under the **Recent Players** setting.  To open the **Recent Players** setting, go to `edge://media-internals` and then select the **Players** tool.
 
@@ -197,7 +197,7 @@ You can now capture node screenshots using the right-click menu in the **Element
 
 For example, to take a screenshot of the table of contents, right-click the element, and then select **Capture node screenshot**.
 
-![Capture node screenshots](../../media/2020/08/capture-node-screenshot.msft.png)
+![Capture node screenshots](../../media/2020/08/capture-node-screenshot.png)
 
 Chromium issue: [#1100253](https://crbug.com/1100253)
 
@@ -212,7 +212,7 @@ The Issues warning bar on the **Console** tool is now replaced with a regular me
 
 <!--todo: update this figure -->
 
-![Issues in console message](../../media/2020/08/issue-console-msg.msft.png)
+![Issues in console message](../../media/2020/08/issue-console-msg.png)
 
 See also:
 * [Find and fix problems using the Issues tool](../../../issues/index.md)
@@ -221,7 +221,7 @@ See also:
 
 Third-party issues are now hidden by default in the **Issues** tool.  Select the new **Include third-party issues** checkbox to view the issues.
 
-![The 'Include third-party issues' checkbox](../../media/2020/08/third-party-cookies.msft.png)
+![The 'Include third-party issues' checkbox](../../media/2020/08/third-party-cookies.png)
 
 Chromium issues: [1096481](https://crbug.com/1096481), [1068116](https://crbug.com/1068116), [1080589](https://crbug.com/1080589)
 
@@ -239,7 +239,7 @@ For example, when the `Rubik` font is installed on your device and the `@font-fa
 
 When **Disable local fonts** is selected, DevTools ignores the `local()` fonts and fetches each font from the network:
 
-![Emulate missing local fonts](../../media/2020/08/disable-font.msft.png)
+![Emulate missing local fonts](../../media/2020/08/disable-font.png)
 
 This feature is useful if you use two different copies of the same font during development, such as:
 *  A local font for your design tools.
@@ -262,7 +262,7 @@ See also [Analyze rendering performance with the Rendering tool](../../../evalua
 
 The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool from the [Drawer](../../../customize/index.md#drawer).
 
-![Emulate inactive users](../../media/2020/08/emulate-idle.msft.png)
+![Emulate inactive users](../../media/2020/08/emulate-idle.png)
 
 Chromium issue: [#1090802](https://crbug.com/1090802)
 
@@ -280,7 +280,7 @@ The [prefers-reduced-data](https://drafts.csswg.org/mediaqueries-5#descdef-media
 
 You can now use DevTools to emulate the `prefers-reduced-data` media query, in the **Rendering** tool:
 
-![Emulate prefers-reduced-data](../../media/2020/08/emulate-prefers-reduced-data.msft.png)
+![Emulate prefers-reduced-data](../../media/2020/08/emulate-prefers-reduced-data.png)
 
 Chromium issue: [#1096068](https://crbug.com/1096068)
 
@@ -322,7 +322,7 @@ The **Application** tool now provides a link from the **Service workers** pane t
 
 Previously DevTools displayed a list nested under the **Application** tool > **Service workers** pane.
 
-![Link to other origins](../../media/2020/08/sw-other-origins.msft.png)
+![Link to other origins](../../media/2020/08/sw-other-origins.png)
 
 Chromium issue: [#807440](https://crbug.com/807440)
 
@@ -338,11 +338,11 @@ DevTools now recalculates and displays a summary of coverage information dynamic
 
 In the following example, the Coverage summary initially shows `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.`:
 
-![Coverage summary](../../media/2020/08/coverage-compare.msft.png)
+![Coverage summary](../../media/2020/08/coverage-compare.png)
 
 After CSS filtering is applied, the Coverage summary shows `26.8 kB of 408 kB (7%) used so far.  381 kB unused.`:
 
-![Coverage summary for filtered items](../../media/2020/08/coverage-compare-css-filter.msft.png)
+![Coverage summary for filtered items](../../media/2020/08/coverage-compare-css-filter.png)
 
 Chromium issue: [#1061385](https://crbug.com/1090802)
 
@@ -352,7 +352,7 @@ Chromium issue: [#1061385](https://crbug.com/1090802)
 
 In the **Application** tool, there's now a **Frames** section that provides a detailed view for each frame.  To access the detailed view, click a frame under the **Frames** menu in the **Application** tool.
 
-![New detailed view for a frame in Application panel](../../media/2020/08/frame-details.msft.png)
+![New detailed view for a frame in Application panel](../../media/2020/08/frame-details.png)
 
 Chromium issue: [#1093247](https://crbug.com/1093247)
 
@@ -365,7 +365,7 @@ See also:
 
 Open windows and pop-up windows now display under the frame tree as well.  The detailed view of the opened windows includes additional security information.
 
-![New frame detailed view for opened windows](../../media/2020/08/window-opener.msft.png)
+![New frame detailed view for opened windows](../../media/2020/08/window-opener.png)
 
 Chromium issue: [#1107766](https://crbug.com/1107766)
 
@@ -378,7 +378,7 @@ See also:
 
 Secure context, [Cross-Origin-Embedder-Policy (COEP)](https://web.dev/coop-coep), and [Cross-Origin-Opener-Policy (COOP)](https://web.dev/coop-coep) are now displayed in the frame details.
 
-![Security and isolation information](../../media/2020/08/coep-coop.msft.png)
+![Security and isolation information](../../media/2020/08/coep-coop.png)
 
 The Chromium project plans to add more security information to the frame details.
 
@@ -404,7 +404,7 @@ DevTools now provides color suggestions for low color contrast text.
 
 In the example below, `h1` has low-contrast text.  To fix the contrast, open the color picker of the `color` property in the **Styles** pane.  After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.  Select the suggested color, to apply the color.
 
-![Color picker suggests AA and AAA color suggestions](../../media/2020/08/contrast-color-suggestion.msft.png)
+![Color picker suggests AA and AAA color suggestions](../../media/2020/08/contrast-color-suggestion.png)
 
 Chromium issue: [#1093227](https://crbug.com/1093227)
 
@@ -418,7 +418,7 @@ See also:
 
 In the **Elements** tool, the **Properties** pane is back.  The **Properties** pane was [deprecated in Microsoft Edge 84](../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel).  The Microsoft Edge DevTools team and the Chrome DevTools team are planning improvements for inspecting properties of elements.
 
-![Properties pane in the Elements panel](../../media/2020/08/properties-pane.msft.png)
+![Properties pane in the Elements panel](../../media/2020/08/properties-pane.png)
 
 Chromium issue: <!-- [#1105205](https://crbug.com/1105205), --> [#1116085](https://crbug.com/1116085)
 
@@ -434,7 +434,7 @@ When inspecting a network resource in the Network panel, DevTools now formats an
 
 The `X-Client-Data` HTTP header contains a list of experiment IDs and Microsoft Edge flags that are enabled in your browser.  The raw header values look like opaque strings since the values are `base-64-encoded`, serialized [protocol buffers](https://developers.google.com/protocol-buffers).  To make the contents more transparent to developers, DevTools now shows the decoded values.
 
-![Human-readable `X-Client-Data` header values](../../media/2020/08/x-client-data.msft.png)
+![Human-readable `X-Client-Data` header values](../../media/2020/08/x-client-data.png)
 
 Chromium issue: [#1103854](https://crbug.com/1103854)
 
@@ -450,7 +450,7 @@ Imported font faces are now added to the list of CSS autocompletion when editing
 
 For example, if `monospace` is a custom font installed on the local machine, it appears in the CSS completion list.  In previous versions of Microsoft Edge, the font was not displayed.
 
-![Autocomplete custom fonts](../../media/2020/08/font-auto-complete.msft.png)
+![Autocomplete custom fonts](../../media/2020/08/font-auto-complete.png)
 
 Chromium issue: [#1106221](https://crbug.com/1106221)
 
@@ -466,7 +466,7 @@ In the **Network** tool, DevTools now consistently displays the same resource ty
 
 Previously, DevTools sometimes changed the value in the **Type** column to **Other**.
 
-![Display redirect resource type](../../media/2020/08/network-redirect.msft.png)
+![Display redirect resource type](../../media/2020/08/network-redirect.png)
 
 Chromium issue: [#997694](https://crbug.com/997694)
 
@@ -486,7 +486,7 @@ Click the **Clear** button to remove any inputted text.
 
 **Clear** buttons in the **Elements** tools:
 
-![Clear buttons in the Elements panels](../../media/2020/08/clear-button-elements.msft.png)
+![Clear buttons in the Elements panels](../../media/2020/08/clear-button-elements.png)
 
 **Clear** buttons in the  **Network** tools:
 

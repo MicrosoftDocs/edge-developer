@@ -48,7 +48,7 @@ To enable port forwarding:
 
 1. Click **Add rule**.
 
-   ![Adding a port forwarding rule](../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png)
+   ![Adding a port forwarding rule](../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.png)
 
 1. In the **Device port** text box on the left, enter the `localhost` port number from which you want to be able to access the site on your Android device.  For example, if you wanted to access the site from `localhost:5000` enter `5000`.
 

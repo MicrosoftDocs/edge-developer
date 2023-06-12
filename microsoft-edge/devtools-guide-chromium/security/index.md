@@ -34,7 +34,7 @@ Use the **Security** panel to inspect the security of a page.
 
    The **Security** tool (or _panel_) opens:
 
-![The Security panel](../media/security-security-overview-secure.msft.png)
+![The Security panel](../media/security-security-overview-secure.png)
 
 
 <!-- ====================================================================== -->
@@ -44,7 +44,7 @@ Use the **Security** panel to inspect the security of a page.
 
 When the main origin of a page isn't secure, the **Security Overview** says **This page is not secure**.
 
-![A non-secure page](../media/security-security-overview-non-secure.msft.png)
+![A non-secure page](../media/security-security-overview-non-secure.png)
 
 This problem occurs when the URL that you visited was requested over HTTP.  To make it secure you need to request it over HTTPS.  For example, if you look at the URL in your address bar, it probably looks similar to `http://example.com`.  To make it secure the URL should be `https://example.com`.
 
@@ -59,11 +59,11 @@ If you haven't set up HTTPS on your server, [Let's Encrypt](https://letsencrypt.
 
 **Mixed content**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> means that the main origin of a page is secure, but the page requested resources from non-secure origins.  Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to man-in-the-middle attacks.
 
-![Mixed content](../media/security-security-overview-mixed-secure.msft.png)
+![Mixed content](../media/security-security-overview-mixed-secure.png)
 
 In the previous figure, select **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.
 
-![Mixed resources in the Network Log](../media/security-network-filter.msft.png)
+![Mixed resources in the Network Log](../media/security-network-filter.png)
 
 
 <!-- ====================================================================== -->
@@ -73,7 +73,7 @@ In the previous figure, select **View 1 request in Network panel** to open the *
 
 From the **Security Overview**, click **View certificate** to quickly inspect the certificate for the main origin.
 
-![A main origin certificate](../media/security-security-overview-secure-view-certificate.msft.png)
+![A main origin certificate](../media/security-security-overview-secure-view-certificate.png)
 
 ### View origin details
 

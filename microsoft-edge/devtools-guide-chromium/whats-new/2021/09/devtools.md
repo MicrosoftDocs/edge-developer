@@ -20,7 +20,7 @@ ms.date: 09/03/2021
 
 Search the web for your **Console** errors, from within DevTools.  In the **Console**, many errors now have a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error:
 
-![The 'Search for this message on the Web' button on an error in the Console](../../media/2021/09/search-console-icon.msft.png)
+![The 'Search for this message on the Web' button on an error in the Console](../../media/2021/09/search-console-icon.png)
 
 See [Search the web for a Console error message string](../../../console/index.md#search-the-web-for-a-console-error-message-string).
 
@@ -40,11 +40,11 @@ In the latest version of the Microsoft Edge DevTools extension for Visual Studio
 
 The extension running inside Visual Studio Code, matching the dark theme of Visual Studio Code, and a new Helpful Links sidebar:
 
-![The extension, matching the dark theme](../../media/2021/09/devtools-extension-dark-theme.msft.png)
+![The extension, matching the dark theme](../../media/2021/09/devtools-extension-dark-theme.png)
 
 Light themes from Visual Studio Code are also supported:
 
-![The extension running inside Visual Studio Code, matching the light theme of Visual Studio Code, and a new Helpful Links sidebar](../../media/2021/09/devtools-extension-light-theme.msft.png)
+![The extension running inside Visual Studio Code, matching the light theme of Visual Studio Code, and a new Helpful Links sidebar](../../media/2021/09/devtools-extension-light-theme.png)
 
 See also:
 * [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
@@ -60,7 +60,7 @@ In Microsoft Edge version 93, you can apply themes used in Visual Studio Code to
 
 Previously, when using a theme from Visual Studio Code in DevTools, breakpoint icons on the left margin of the code in the **Sources** tool weren't displayed.  Starting in Microsoft Edge 94, breakpoint icons are now displayed as expected:
 
-![Breakpoint icons are now displayed when using Visual Studio Code themes](../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png)
+![Breakpoint icons are now displayed when using Visual Studio Code themes](../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.png)
 
 See also:
 * [Pause your code with breakpoints](../../../javascript/breakpoints.md)

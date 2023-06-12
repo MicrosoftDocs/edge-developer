@@ -33,7 +33,7 @@ The improved experiences span three different developer tools:
 <!-- ====================================================================== -->
 ## Network
 
-![Service worker timeline in the Network tool](../media/sw-network-timeline.msft.png)
+![Service worker timeline in the Network tool](../media/sw-network-timeline.png)
 
 You can access the service worker debugging features in the **Network** tool in either of the following ways:
 
@@ -55,7 +55,7 @@ To learn more about the `respondWith` fetch events, click the dropdown arrow to 
 <!-- ====================================================================== -->
 ## Application
 
-![Application view](../media/sw-application-timeline.msft.png)
+![Application view](../media/sw-application-timeline.png)
 
 ### Service worker update timeline
 

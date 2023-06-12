@@ -74,7 +74,7 @@ The **Issues** tool presents additional documentation and recommended fixes to a
 
 1. Open the [accessibility-testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab, and then open DevTools.
 
-1. Open the **Issues** tool by selecting the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)).
+1. Open the **Issues** tool by selecting the **Issues counter** (![Issues counter](../media/issues-counter-icon.png)).
 
 1. Select an issue, to expand the issue.
 

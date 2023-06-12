@@ -35,15 +35,15 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
 
 1. In the **DOM Tree**, select the text element that you want to inspect.
 
-   ![Inspecting a paragraph in the DOM Tree](../media/accessibility-elements-paragraph-highlight.msft.png)
+   ![Inspecting a paragraph in the DOM Tree](../media/accessibility-elements-paragraph-highlight.png)
 
 1. On the **Styles** tab, locate the **color** property that's applied to the element, and then select the color square next to the **color** property.
 
-   ![The 'color' property of the element](../media/accessibility-elements-styles-paragraph-highlight-color.msft.png)
+   ![The 'color' property of the element](../media/accessibility-elements-styles-paragraph-highlight-color.png)
 
 1. Examine the **Contrast Ratio** section of the Color Picker.  One check mark means that the element meets the [minimum recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum).  Two check marks means that it meets the [enhanced recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced).
 
-   ![The 'Contrast Ratio' section of the Color Picker shows two check marks and a value of 13.97](../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png)
+   ![The 'Contrast Ratio' section of the Color Picker shows two check marks and a value of 13.97](../media/accessibility-elements-styles-paragraph-highlight-color-picker.png)
 
 1. For more information, select the **Contrast ratio** section to expand it.  In the visual picker at the top of the Color Picker, two lines appear, running across the visual picker, along with a circle for the current color.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color doesn't meet recommendations, then anything on the same side also doesn't meet recommendations.
 

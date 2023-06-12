@@ -27,11 +27,11 @@ To emulate a user's selection of preferred color theme:
 
 1. In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: light**.  The webpage is re-rendered using `light-theme.css`.
 
-   ![Using the Rendering tool to simulate a light mode and triggering the other theme of the document](../media/a11y-testing-simulating-light-mode.msft.png)
+   ![Using the Rendering tool to simulate a light mode and triggering the other theme of the document](../media/a11y-testing-simulating-light-mode.png)
 
 1. Select the **Issues** tool, and then expand the **Accessibility** section.  Depending on various factors, you might get `Insufficient color contrast` warnings. Notice in **AFFECTED RESOURCES** there are 6 elements with insufficient color contrast.
 
-   ![New contrast issues detected because of the change to light theme](../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png)
+   ![New contrast issues detected because of the change to light theme](../media/a11y-testing-new-contrast-issues-in-light-mode.png)
 
     On our demo page, the **Donation status** section of the page is unreadable in light mode, and needs to change:
 

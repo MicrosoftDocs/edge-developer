@@ -34,7 +34,7 @@ ms.date: 05/04/2021
 
 The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  You can now display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.
 
-![CSS grid debugging features](../../media/2020/06/experiments-grid.msft.png)
+![CSS grid debugging features](../../media/2020/06/experiments-grid.png)
 
 Update: This feature has been released and is no longer experimental.<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features**. -->
 
@@ -51,13 +51,13 @@ See also:
 
 You can now use **Edit and Replay** on requests in the [Network Log](../../../network/index.md#log-network-activity) using the **Network Console**.  Open the [Network Log](../../../network/index.md#log-network-activity), right-click, and then select **Edit and Replay**:
 
-![Edit and Replay a request in the NetworkLog with the Network Console](../../media/2020/06/experiments-network-console-edit-and-replay.msft.png)
+![Edit and Replay a request in the NetworkLog with the Network Console](../../media/2020/06/experiments-network-console-edit-and-replay.png)
 
 A new panel, the **Network Console** opens in the [DevTools Drawer](../../../customize/index.md#drawer) and automatically populates with information for the HTTP request.  To display the response returned from the server, edit the request (if needed) and select **Send**.
 
 You can also use the **Network Console** to create and send HTTP requests directly from the DevTools.
 
-![The Network Console panel](../../media/2020/06/experiments-network-console.msft.png)
+![The Network Console panel](../../media/2020/06/experiments-network-console.png)
 
 Tip: To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#drawer), see [moving tools between panels](#move-tools-between-panels).
 
@@ -71,11 +71,11 @@ Chromium issue [#1093687](https://crbug.com/1093687)
 
 The **Timing** tab of the **Network** tool now includes `respondWith` service worker events.  The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.
 
-![The respondWith service worker event in the Timing tab of the Network panel](../../media/2020/06/timing-tab.msft.png)
+![The respondWith service worker event in the Timing tab of the Network panel](../../media/2020/06/timing-tab.png)
 
 Expand **Response received** to display additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.
 
-![Expand Response received to display additional information from the fetch response](../../media/2020/06/timing-tab2.msft.png)
+![Expand Response received to display additional information from the fetch response](../../media/2020/06/timing-tab2.png)
 
 Chromium issue [#1066579](https://crbug.com/1066579)
 
@@ -91,7 +91,7 @@ See also:
 
 [webhint](https://webhint.io) is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  You can view webhint feedback in the [Issues](../../../issues/index.md) panel.
 
-![webhint feedback in the Issues panel](../../media/2020/06/experiments-webhint.msft.png)
+![webhint feedback in the Issues panel](../../media/2020/06/experiments-webhint.png)
 
 To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable webhint**.  Open the [Issues](../../../issues/index.md) panel to display feedback from webhint.
 
@@ -107,7 +107,7 @@ See also:
 
 Normally, tools such as **Elements** and **Network** may only be opened in the main (top) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer (bottom) panel of DevTools.  You can now customize your DevTools layout by moving tools between the top and bottom panels.
 
-![Move tools between panels](../../media/2020/06/experiments-move-panels.msft.png)
+![Move tools between panels](../../media/2020/06/experiments-move-panels.png)
 
 Update: This feature has been released and is no longer experimental.<!-- Note: To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable support to move tabs between panels**. -->
 
@@ -122,11 +122,11 @@ See also:
 
 In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log](../../../network/index.md#log-network-activity) displayed with a horizontal scrollbar.  You were only able to display the call stack that initiated the request by scrolling horizontally in the tooltip.
 
-![The Initiator tooltip in Microsoft Edge 84](../../media/2020/06/initiator-tooltip-84.msft.png)
+![The Initiator tooltip in Microsoft Edge 84](../../media/2020/06/initiator-tooltip-84.png)
 
 Starting with Microsoft Edge 85, you can now display the Initiator call stack in the tooltip without scrolling horizontally.
 
-![The Initiator tooltip in Microsoft Edge 85](../../media/2020/06/initiator-tooltip-85.msft.png)
+![The Initiator tooltip in Microsoft Edge 85](../../media/2020/06/initiator-tooltip-85.png)
 
 Chromium issue [#1069404](https://crbug.com/1069404)
 
@@ -146,7 +146,7 @@ You can now edit styles that were added in JavaScript using the `CSSStyleSheet` 
 
 For example, the `h1` styles added with `CSSStyleSheet` (CSSOM APIs) were not editable previously.  The styles are editable now in the **Styles** panel.
 
-![Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue](../../media/2020/06/css-in-js.msft.png)
+![Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue](../../media/2020/06/css-in-js.png)
 
 Give this feature a try with a [sample that uses CSS-in-JS](https://codepen.io/zoherghadyali/full/abdGrPZ).  See [Style editing for CSS-in-JS frameworks](../../../css/css-in-js.md).
 
@@ -211,7 +211,7 @@ In the **Application** tool, the **Manifest** pane now shows warnings for the fo
 *  When the app shortcut icons are smaller than 96x96 pixels.
 *  When the app shortcut icons and manifest icons aren't square (since the icons are ignored).
 
-![App shortcut warnings](../../media/2020/06/app-shortcut-warnings.msft.png)
+![App shortcut warnings](../../media/2020/06/app-shortcut-warnings.png)
 
 Chromium issue [#955497](https://crbug.com/955497)
 
@@ -224,7 +224,7 @@ See also:
 
 The **Computed** pane in the **Elements** tool is now displayed consistently as a pane across all viewport sizes.  Previously, the **Computed** pane merged inside of the **Styles** pane when DevTools was narrow.
 
-![The Computed pane is consistently displayed as a separate pane, even when DevTools is narrow](../../media/2020/06/computed-pane.msft.png)
+![The Computed pane is consistently displayed as a separate pane, even when DevTools is narrow](../../media/2020/06/computed-pane.png)
 
 Chromium issue [#1073899](https://crbug.com/1073899)
 
@@ -249,7 +249,7 @@ See also:
 
 When performing copy or cut with no selection in the [Sources panel editor](../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files), DevTools copies or cuts the current line of content.
 
-![With the cursor at the end of Line 5, copying the whole line from pen.js in the DevTools and pasting in Visual Studio Code](../../media/2020/06/line-wise-cut.msft.png)
+![With the cursor at the end of Line 5, copying the whole line from pen.js in the DevTools and pasting in Visual Studio Code](../../media/2020/06/line-wise-cut.png)
 
 Chromium issue [#800028](https://crbug.com/800028)
 
@@ -263,7 +263,7 @@ The **Group similar** toggle in Console Settings now applies to duplicate messag
 
 For example, previously, DevTools did not ungroup the `hello` messages even though **Group similar** is unchecked.  Now, the `hello` messages are ungrouped.
 
-![When Group similar is unchecked, the hello messages are ungrouped](../../media/2020/06/ungroup-similar.msft.png)
+![When Group similar is unchecked, the hello messages are ungrouped](../../media/2020/06/ungroup-similar.png)
 
 Give this feature a try with a [sample that sends duplicate messages to the Console](https://codepen.io/zoherghadyali/full/zYrjgdJ).
 
@@ -278,7 +278,7 @@ See also:
 
 The **Selected context only** settings in Console Settings is now persisted.  Previously the settings were reset every time you closed and reopened DevTools.  The change makes the setting behavior consistent with other Console Settings options.
 
-![Selected context only setting](../../media/2020/06/selected-context.msft.png)
+![Selected context only setting](../../media/2020/06/selected-context.png)
 
 Chromium issue [#1055875](https://crbug.com/1055875)
 
@@ -293,7 +293,7 @@ See also:
 
 [JavaScript compilation cache information](https://v8.dev/blog/code-caching-for-devs) is now always displayed in the **Summary** panel of the **Performance** tool.  Previously, DevTools did not show anything related to code caching if code caching did not happen.
 
-![JavaScript compilation cache information](../../media/2020/06/js-compilation-cache.msft.png)
+![JavaScript compilation cache information](../../media/2020/06/js-compilation-cache.png)
 
 Chromium issue [#912581](https://crbug.com/912581)
 
@@ -306,7 +306,7 @@ See also:
 
 Previously, the **Performance** panel showed times in the rulers based on when the recording started.  The timing has now changed for recordings where the user navigates.  DevTools now shows ruler times relative to the navigation, instead of when the recording started.
 
-![Align navigation timing in Performance tool](../../media/2020/06/nav-timing.msft.png)
+![Align navigation timing in Performance tool](../../media/2020/06/nav-timing.png)
 
 The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Largest Contentful Paint events are updated to be relative to the start of the navigation, which means the timing matches the timings reported by `PerformanceObserver`.
 

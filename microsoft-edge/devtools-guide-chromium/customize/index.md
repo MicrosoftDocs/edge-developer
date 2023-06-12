@@ -30,9 +30,9 @@ This page lists the ways to customize Microsoft Edge DevTools.
 
 **Settings** > **Preferences** contains many options for customizing DevTools.
 
-To open Settings, in DevTools, click the **Settings** icon (![Settings icon](../media/settings-icon-dark.msft.png)).  Or, while DevTools has focus, press **F1**.
+To open Settings, in DevTools, click the **Settings** icon (![Settings icon](../media/settings-icon-dark.png)).  Or, while DevTools has focus, press **F1**.
 
-![Settings](../media/customize-settings-preferences.msft.png)
+![Settings](../media/customize-settings-preferences.png)
 
 
 <!-- ====================================================================== -->
@@ -42,17 +42,17 @@ In the **Drawer** toolbar in the bottom of DevTools, you can select which tools 
 
 To open (or close) the **Drawer**, press **Esc**.
 
-![The Drawer](../media/customize-drawer-open.msft.png)
+![The Drawer](../media/customize-drawer-open.png)
 
 You can move tools between the main panel and the drawer.
 
 *  To move a tool from the drawer to the main panel, right-click a tool, and then select **Move to top**.
 
-   ![Moving a tool from the Drawer to the main toolbar](../media/move-from-drawer.msft.png)
+   ![Moving a tool from the Drawer to the main toolbar](../media/move-from-drawer.png)
 
 *  To move a tool from the main panel to the drawer, right-click a tool, and then select **Move to bottom**.
 
-   ![Moving a tool from the main toolbar to the Drawer](../media/move-to-drawer.msft.png)
+   ![Moving a tool from the main toolbar to the Drawer](../media/move-to-drawer.png)
 
 
 <!-- ====================================================================== -->
@@ -62,7 +62,7 @@ Click and drag a tool to change the ordering.  Your custom tool order persists a
 
 By default, the **Network** tool is usually the fifth tab on the main toolbar.  In the following figure, the **Network** tool is being moved to become the first tab in the main toolbar.
 
-![Custom order of DevTools in a toolbar](../media/customize-network-first-position.msft.png)
+![Custom order of DevTools in a toolbar](../media/customize-network-first-position.png)
 
 
 <!-- ====================================================================== -->

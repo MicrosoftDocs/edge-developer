@@ -27,15 +27,15 @@ CSS Grid is a powerful layout paradigm for the web.  A great place to get starte
 
 When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a `grid` badge is displayed next to it in the **Elements** tool:
 
-![Discover grid](../media/grid-discover-grid.msft.png)
+![Discover grid](../media/grid-discover-grid.png)
 
 Click the badge to toggle the display of a grid overlay on the page.  The overlay appears over the element, laid out like a grid to display the position of the grid lines and tracks:
 
-![Toggle grid badge](../media/grid-highlight-grid.msft.png)
+![Toggle grid badge](../media/grid-highlight-grid.png)
 
 Open the **Layout** pane.  When grids are included on a page, the **Layout** pane includes a **Grid** section containing a number of options for viewing the grids.
 
-![Layout pane](../media/grid-layout-pane.msft.png)
+![Layout pane](../media/grid-layout-pane.png)
 
 The **Grid** section in the **Layout** pane contains the following 2 sub-sections:
 
@@ -66,7 +66,7 @@ The following sections explain the **Overlay display settings** dropdown list co
 
 In the dropdown list, select **Hide line labels** to hide the labels of the lines for each grid overlay.
 
-![Hide line labels](../media/grid-hide-line-labels.msft.png)
+![Hide line labels](../media/grid-hide-line-labels.png)
 
 #### Show line numbers
 
@@ -76,7 +76,7 @@ By default, the positive and negative line numbers are displayed on the grid ove
 
 For more information about negative numbers in the grid overlay, see [Line-based placement with CSS Grid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid).
 
-![Display line numbers](../media/grid-show-line-numbers.msft.png)
+![Display line numbers](../media/grid-show-line-numbers.png)
 
 #### Show line names
 
@@ -86,7 +86,7 @@ For more information about line names in the grid overlay, see [Layout using nam
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->
 
-![Show line names](../media/grid-show-line-names.msft.png)
+![Show line names](../media/grid-show-line-names.png)
 
 ### Checkboxes
 
@@ -125,19 +125,19 @@ The row line labels display only computed sizes, since there are no row sizes de
 | **80px** | &nbsp;| 80px |
 | **80px** | &nbsp;| 80px |
 
-![Show track sizes](../media/grid-show-track-sizes.msft.png)
+![Show track sizes](../media/grid-show-track-sizes.png)
 
 #### Show area names
 
 To view the area names, select the **Show area names** checkbox.  In the example, there are 3 areas in the grid: **top**, **bottom1** and **bottom2**.
 
-![Show area names](../media/grid-show-area-names.msft.png)
+![Show area names](../media/grid-show-area-names.png)
 
 #### Extend grid lines
 
 Select the **Extend grid lines** checkbox to extend the grid lines to the edge of the viewport along each axis.
 
-![Extend grid lines](../media/grid-extend-grid-lines.msft.png)
+![Extend grid lines](../media/grid-extend-grid-lines.png)
 
 
 <!-- ====================================================================== -->
@@ -152,17 +152,17 @@ To display the overlay grid for multiple grids, select the checkbox next to each
 *  `main`
 *  `div.snack-box`
 
-![Enable overlay views of multiple grids](../media/grid-grid-overlays.msft.png)
+![Enable overlay views of multiple grids](../media/grid-grid-overlays.png)
 
 ### Customize the grid overlay color
 
 To open the color picker and customize the grid overlay color, click the box next to the name of the grid overlay:
 
-![Customize the grid overlay color](../media/grid-grid-overlays-color.msft.png)
+![Customize the grid overlay color](../media/grid-grid-overlays-color.png)
 
 ### Highlight the grid
 
-To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](../media/show-element-in-element-panel-icon.msft.png)) icon.
+To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](../media/show-element-in-element-panel-icon.png)) icon.
 
 ![Highlight the grid](../media/grid-grid-overlays-highlight.png)
 

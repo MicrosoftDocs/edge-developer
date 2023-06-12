@@ -81,7 +81,7 @@ The DevTools automatically match the language you use for Microsoft Edge in `edg
 
 If you want Microsoft Edge to be in one language and your DevTools to remain in English, press **F1** in DevTools to open [Settings](../../../customize/index.md#settings) and disable **Match browser language**.
 
-![The DevTools in German](../../images/2020/01/localized-devtools.msft.png)
+![The DevTools in German](../../images/2020/01/localized-devtools.png)
 
 **Console** messages aren't localized.  Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.
 
@@ -100,7 +100,7 @@ See also:
 
 The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io](https://webhint.io).
 
-![The Hints tool in the DevTools when the webhint browser extension is installed](../../images/2020/01/webhint-browser-extension.msft.png)
+![The Hints tool in the DevTools when the webhint browser extension is installed](../../images/2020/01/webhint-browser-extension.png)
 
 [Try the webhint browser extension in Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/webhint/mlgfbihcfnkaenjpdcngdnhcpkdmcdee).  Once you install the extension, open the DevTools and select the **Hints** tool.  From here, run a customizable site scan.  Head over to [webhint.io](https://webhint.io/docs/user-guide/extensions/extension-browser) to learn more.
 
@@ -115,7 +115,7 @@ See also:
 
 Use the **3D View** to debug your web application by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.
 
-![The 3D View in the DevTools](../../images/2020/01/3dview.msft.png)
+![The 3D View in the DevTools](../../images/2020/01/3dview.png)
 
 To access the 3D View, press **Ctrl+Shift+P** to open the Command Menu, start typing `3d view`, and then select **Show 3D View**.
 
@@ -144,7 +144,7 @@ See also:
 
 Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) Visual Studio Code extension.
 
-![The Elements tool in Visual Studio Code using the Elements for Microsoft Edge extension](../../images/2020/01/elements-for-edge.msft.png)
+![The Elements tool in Visual Studio Code using the Elements for Microsoft Edge extension](../../images/2020/01/elements-for-edge.png)
 
 Update: As of 2022, the **Elements for Microsoft Edge** extension is now the **Microsoft Edge DevTools extension for Visual Studio Code**.
 
@@ -160,7 +160,7 @@ With the Debugger for Microsoft Edge Visual Studio Code extension, debug JavaScr
 <!-- old url: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge -->
 <!-- todo: consult w SME on desired presentation here -->
 
-![The Debugger for Microsoft Edge Extension in Visual Studio Code](../../images/2020/01/vscode-debugger.msft.png)
+![The Debugger for Microsoft Edge Extension in Visual Studio Code](../../images/2020/01/vscode-debugger.png)
 
 Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extension** has been replaced by a built-in debugger for Microsoft Edge in Visual Studio Code.  See [Debug Microsoft Edge in Visual Studio Code](../../../../visual-studio-code/debugger-for-edge.md).
 
@@ -172,7 +172,7 @@ Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extensi
 
 The [webhint](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint) Visual Studio Code extension uses `webhint` to improve your web page while you are writing it.  This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.
 
-![The webhint Visual Studio Code extension analyzing a .tsx file in Visual Studio Code](../../images/2020/01/webhint-vscode-extension.msft.png)
+![The webhint Visual Studio Code extension analyzing a .tsx file in Visual Studio Code](../../images/2020/01/webhint-vscode-extension.png)
 
 [Learn more about the Visual Studio Code webhint extension](https://webhint.io/docs/user-guide/extensions/vscode-webhint).
 
@@ -188,7 +188,7 @@ See also:
 
 In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge.  [Download Visual Studio 2019](https://visualstudio.microsoft.com/downloads) to try this feature out!
 
-![Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta](../../images/2020/01/vs.msft.png)
+![Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta](../../images/2020/01/vs.png)
 
 To learn more about debugging Microsoft Edge from Visual Studio, see [Visual Studio for web development](../../../../visual-studio/index.md).
 
@@ -200,7 +200,7 @@ To learn more about debugging Microsoft Edge from Visual Studio, see [Visual Stu
 
 Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you have not visited before.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, warning messages were added in the **Console** when a tracker is blocked.
 
-![Messages in the Console when tracking prevention blocks access to storage for a tracker](../../images/2020/01/tracking-prevention.msft.png)
+![Messages in the Console when tracking prevention blocks access to storage for a tracker](../../images/2020/01/tracking-prevention.png)
 
 [Read more about tracking prevention and the balance between privacy and web compatibility](https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79).
 
@@ -220,11 +220,11 @@ The following sections announce additional features available in Microsoft Edge 
 
 After [enabling the Device Toolbar](../../../device-mode/index.md#simulate-a-mobile-viewport), simulate the dimensions of a Moto G4 viewport from the **Device** list.
 
-![Simulating a Moto G4 viewport](../../images/2020/01/motog4.msft.png)
+![Simulating a Moto G4 viewport](../../images/2020/01/motog4.png)
 
 Click [Show Device Frame](../../../device-mode/index.md#show-device-frame) to show the Moto G4 hardware around the viewport.
 
-![Showing the Moto G4 hardware](../../images/2020/01/motog4frame.msft.png)
+![Showing the Moto G4 hardware](../../images/2020/01/motog4frame.png)
 
 Related features:
 
@@ -247,7 +247,7 @@ See also:
 
 The **Cookies** pane in the **Application** panel now displays blocked cookies with a yellow background.
 
-![Blocked cookies in the Cookies pane of the Application panel](../../images/2020/01/blockedcookies.msft.png)
+![Blocked cookies in the Cookies pane of the Application panel](../../images/2020/01/blockedcookies.png)
 
 Chromium issue [#1030258](https://crbug.com/1030258)  <!-- inaccessible  -->
 
@@ -267,7 +267,7 @@ Chromium issue [#1026879](https://crbug.com/1026879)
 
 All cells in the Cookie tables are editable now, except cells in the **Size** column because that column represents the network size of the cookie, in bytes.  For an explanation of each column, see [Fields](../../../storage/cookies.md#fields)in _View, edit, and delete cookies_.
 
-![Editing a cookie value](../../images/2020/01/editcookie.msft.png)
+![Editing a cookie value](../../images/2020/01/editcookie.png)
 
 
 <!-- ====================================================================== -->
@@ -275,7 +275,7 @@ All cells in the Cookie tables are editable now, except cells in the **Size** co
 
 To get a `fetch` expression that includes cookie data, right-click a network request, and then select **Copy** > **Copy as Node.js fetch**.
 
-![Copy as Node.js fetch](../../images/2020/01/fetchcookies.msft.png)
+![Copy as Node.js fetch](../../images/2020/01/fetchcookies.png)
 
 Chromium issue [#1029826](https://crbug.com/1029826)
 
@@ -285,7 +285,7 @@ Chromium issue [#1029826](https://crbug.com/1029826)
 
 Previously, the **Manifest** pane in the **Application** panel sent its own requests in order to display web app manifest icons.  DevTools now shows the exact same manifest icon that Microsoft Edge uses.
 
-![Icons in the Manifest pane](../../images/2020/01/manifesticons.msft.png)
+![Icons in the Manifest pane](../../images/2020/01/manifesticons.png)
 
 Chromium issue [#985402](https://crbug.com/985402)
 
@@ -300,11 +300,11 @@ In the **Styles** pane of the **Elements** tool, to display the unescaped versio
 
 For example, in this [demo](https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html) when you inspect the `p::after` pseudo-element an escaped string is displayed in the **Styles** pane:
 
-![The escaped string](../../images/2020/01/escapedstring.msft.png)
+![The escaped string](../../images/2020/01/escapedstring.png)
 
 When you hover on the `content` value, the unescaped value is displayed.
 
-![The unescaped value](../../images/2020/01/unescapedstring.msft.png)
+![The unescaped value](../../images/2020/01/unescapedstring.png)
 
 See also:
 * [CSS features reference](../../../../devtools-guide-chromium/css/reference.md)
@@ -315,7 +315,7 @@ See also:
 
 The Console now provides more detail on why a source map failed to load or parse.  Previously it just provided an error without explaining what went wrong.
 
-![A source map loading error in the Console](../../images/2020/01/sourcemap.msft.png)
+![A source map loading error in the Console](../../images/2020/01/sourcemap.png)
 
 See also:
 * [Console overview](../../../../devtools-guide-chromium/console/index.md)
@@ -327,7 +327,7 @@ See also:
 
 To prevent the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel, open [Settings](../../../customize/index.md#settings) and then clear the checkbox **Preferences** > **Sources** > **Allow scrolling past end of file**.
 
-![Disabling Allow scrolling past end of file](../../images/2020/01/settings.msft.png)
+![Disabling Allow scrolling past end of file](../../images/2020/01/settings.png)
 
 ![Scrolling past the end of a file is now disabled in the Sources panel](../../images/2020/01/scrollingsources.png)
 

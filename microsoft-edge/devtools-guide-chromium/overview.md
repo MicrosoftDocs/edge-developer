@@ -87,7 +87,7 @@ hit counts:
 
 A good way to open DevTools is to right-click an item on a webpage, and then select **Inspect**:
 
-![To open DevTools, right-click any item on a webpage and then select Inspect](media/devtools-intro-inspect.msft.png)
+![To open DevTools, right-click any item on a webpage and then select Inspect](media/devtools-intro-inspect.png)
 
 DevTools opens, with the right-clicked element highlighted in the **DOM tree** in the **Elements** tool:
 
@@ -273,7 +273,7 @@ The main toolbar contains the following features:
    *  **Customize and control DevTools** (![Customize icon](media/customize-devtools-icon-light-theme.png)) menu button.
    *  **Close** DevTools (![Close DevTools icon](media/close-devtools-icon-light-theme.png)) button.
 
-![The main toolbar, with labels that identify its features](media/devtools-intro-menu-bar.msft.png)
+![The main toolbar, with labels that identify its features](media/devtools-intro-menu-bar.png)
 
 The toolbar features are described below.
 
@@ -283,7 +283,7 @@ The toolbar features are described below.
 
 When you click the **Inspect tool** (![Inspect tool icon](media/inspect-tool-icon-light-theme.png)) button, you can select an element on the current webpage.  While the **Inspect** tool is active, you can move your mouse over different parts of the webpage to get detailed information about page elements, along with a multi-color overlay that shows the layout dimensions, padding, and margin of the page element.
 
-![The Inspect tool while hovering over with the first headline of this article](media/devtools-intro-inspect-tool.msft.png)
+![The Inspect tool while hovering over with the first headline of this article](media/devtools-intro-inspect-tool.png)
 
 
 <!-- ------------------------------ -->
@@ -291,7 +291,7 @@ When you click the **Inspect tool** (![Inspect tool icon](media/inspect-tool-ico
 
 Click the **Device Emulation** (![Device Emulation icon](media/device-emulation-icon-light-theme.png)) button to display the current website in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
 
-![DevTools display of this article in an emulated mobile phone](media/devtools-intro-device-emulation.msft.png)
+![DevTools display of this article in an emulated mobile phone](media/devtools-intro-device-emulation.png)
 
 See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 
@@ -502,7 +502,7 @@ In addition to Panel tools and Drawer tools, DevTools includes the following too
 
 DevTools provides lots of features and functionality to use with your website.  You can access the different parts of DevTools in many ways, but often a fast way is to use the Command Menu.
 
-![the Command Menu in DevTools](media/devtools-intro-command-menu.msft.png)
+![the Command Menu in DevTools](media/devtools-intro-command-menu.png)
 
 In the Command Menu, the tools are called "panels"; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.
 
@@ -519,11 +519,11 @@ The **Changes** tool opens, which is useful when you edit CSS.  In this case, th
 
 After you type **cha**, the Command Menu displays the options:
 
-![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'](media/devtools-intro-command-menu-show-changes.msft.png)
+![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'](media/devtools-intro-command-menu-show-changes.png)
 
 Press **Enter**, and then the **Changes** tool opens:
 
-![DevTools with the Changes tool open](media/devtools-intro-showing-changes.msft.png)
+![DevTools with the Changes tool open](media/devtools-intro-showing-changes.png)
 
 See also [Run commands with the Microsoft Edge DevTools Command menu](command-menu/index.md).
 
@@ -535,7 +535,7 @@ You can customize DevTools to meet your needs for the way you work.  To change s
 
 In the **Settings** > **Preferences** page, you can change several parts of DevTools.  For example, you can use the **Match the browser language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
 
-![all the settings in DevTools](media/devtools-intro-all-settings.msft.png)
+![all the settings in DevTools](media/devtools-intro-all-settings.png)
 
 You can also change the settings of advanced features, such as:
 *  Add local files to a [Workspace](workspaces/index.md).

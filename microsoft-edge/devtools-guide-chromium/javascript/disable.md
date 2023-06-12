@@ -30,11 +30,11 @@ To turn off JavaScript:
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-   ![The Command Menu](../media/javascript-console-command.msft.png)
+   ![The Command Menu](../media/javascript-console-command.png)
 
 1. Start typing `javascript`, select **Disable JavaScript**, and then press **Enter** to run the command.  JavaScript is now disabled.
 
-   ![Select 'Disable JavaScript' in the Command Menu](../media/javascript-console-command-javascript.msft.png)
+   ![Select 'Disable JavaScript' in the Command Menu](../media/javascript-console-command-javascript.png)
 
     The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.
 

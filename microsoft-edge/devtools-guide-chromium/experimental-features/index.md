@@ -89,7 +89,7 @@ To turn an experiment on or off in Microsoft Edge:
 
 1. On the left side of the **Settings** panel, select the **Experiments** page.
 
-   ![The Experiments page in Settings](../media/experiments-devtools.msft.png)
+   ![The Experiments page in Settings](../media/experiments-devtools.png)
 
 1. On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
 
@@ -392,7 +392,7 @@ To use the visual **Font Editor**:
 
 1. In the **Styles** tab, select the **Font Editor** icon.
 
-   ![The visual Font Editor pane is highlighted](../media/font-editor-open.msft.png)
+   ![The visual Font Editor pane is highlighted](../media/font-editor-open.png)
 
 Some browser channels have the checkbox label **Enable new Font Editor tool within the Styles pane.**
 
@@ -629,7 +629,7 @@ Status:
 
 The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
 
-![webhint feedback in the Issues panel](../media/experiments-webhint.msft.png)
+![webhint feedback in the Issues panel](../media/experiments-webhint.png)
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 115.

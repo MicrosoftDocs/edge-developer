@@ -33,7 +33,7 @@ To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link 
 
 1. In DevTools, select the **Styles** tab.  The CSS rule `#sidebar nav li a` appears, along with a link to a line number in `styles.css`.
 
-   ![Inspecting the source code and the applied styles of a link in the menu](../media/a11y-testing-menu-link.msft.png)
+   ![Inspecting the source code and the applied styles of a link in the menu](../media/a11y-testing-menu-link.png)
 
 1. Click the `styles.css` link.  The CSS file opens within the **Sources** tool.
 

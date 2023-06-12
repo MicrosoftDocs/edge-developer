@@ -34,7 +34,7 @@ The **Media** tool is the main place in DevTools for inspecting the media player
 
 1. In DevTools, on the main toolbar, select the **Media** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
 
-   ![Media panel](../media/media-panel-empty.msft.png)
+   ![Media panel](../media/media-panel-empty.png)
 
 
 <!-- ====================================================================== -->
@@ -48,19 +48,19 @@ The **Media** tool is the main place in DevTools for inspecting the media player
 
 1. Click the player.  The **Properties** panel displays the properties of the media player.
 
-   ![Media properties](../media/media-panel-view.msft.png)
+   ![Media properties](../media/media-panel-view.png)
 
 1. To view all the media player events, click the **Events** panel.
 
-   ![Media events](../media/media-panel-events.msft.png)
+   ![Media events](../media/media-panel-events.png)
 
 1. To view the media player message logs, click the **Messages** panel.  You can filter the messages by log level or string.
 
-   ![Media messages](../media/media-panel-messages.msft.png)
+   ![Media messages](../media/media-panel-messages.png)
 
 1. On the **Timeline** panel, the media playback and buffer status is displayed live.
 
-   ![Media timeline](../media/media-panel-timeline.msft.png)
+   ![Media timeline](../media/media-panel-timeline.png)
 
 ### Remote debugging
 
@@ -72,7 +72,7 @@ View the media players information on an Android device from your Windows or mac
 
     <!-- TODO: recreate image using an Android device -->
     <!--
-   ![Remote debugging](../media/media-panel-remote-debug.msft.png)
+   ![Remote debugging](../media/media-panel-remote-debug.png)
     -->
 
 
@@ -89,7 +89,7 @@ You can hide (or show) each media player, for an easier debugging experience:
     *  To hide a single media player, right-click a media player, and then select **Hide player**.
     *  To hide all of the other media players, right-click a media player, and then select **Hide all others**.
 
-![Hide media players](../media/media-panel-hide-show.msft.png)
+![Hide media players](../media/media-panel-hide-show.png)
 
 
 <!-- ====================================================================== -->

@@ -33,7 +33,7 @@ The following browsing data is imported:
 
 Browsing notification and prompt to import data and preferences:
 
-![Browsing notification and prompt to import data and preferences](../media/neededge-dialog1.msft.png)
+![Browsing notification and prompt to import data and preferences](../media/neededge-dialog1.png)
 
 If the user doesn't consent by selecting the **Always bring over my browsing data and preferences from Internet Explorer** checkbox, the user may choose **Continue browsing** to continue the browsing session.
 

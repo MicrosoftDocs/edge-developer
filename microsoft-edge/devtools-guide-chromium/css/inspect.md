@@ -27,7 +27,7 @@ To try out the **Inspect** tool:
 
 1. In the upper left corner of DevTools, click the **Inspect tool** (![Inspect tool icon](../media/inspect-tool-icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+C** (Windows, Linux) or **Command+Shift+C** (macOS).
 
-   ![The Inspect tool button in the upper left of DevTools](images/inspect-tool-button.msft.png)
+   ![The Inspect tool button in the upper left of DevTools](images/inspect-tool-button.png)
 
    The button icon turns blue (![The Inspect icon](../media/inspect-tool-icon-blue-light-theme.png)), indicating that the **Inspect** tool is active.
 
@@ -43,7 +43,7 @@ To try out the **Inspect** tool:
 
 When the **Inspect** tool is active, hovering over any element on the rendered webpage displays the **Inspect** overlay.  The **Inspect** overlay displays general and accessibility information about that element.
 
-![The Inspect tool overlay on a rendered page, showing information about an `h1` heading element](images/inspect-tool-padding-margin.msft.png)
+![The Inspect tool overlay on a rendered page, showing information about an `h1` heading element](images/inspect-tool-padding-margin.png)
 
 When you hover over a page element on the rendered page, the DOM tree automatically expands to highlight the element that you are hovering over.
 
@@ -57,7 +57,7 @@ The **Inspect** overlay shows the following information about the element:
 
 Which information is shown depends on the type of element and the styles applied to it.  If the element is positioned using CSS grid or CSS flexbox, a different icon appears next to the element's name in the Inspect overlay:
 
-![An element that uses CSS flexbox has an extra icon next to its name in the Inspect overlay](images/inspect-tool-flexbox-element.msft.png)
+![An element that uses CSS flexbox has an extra icon next to its name in the Inspect overlay](images/inspect-tool-flexbox-element.png)
 
 The **Accessibility** section of the **Inspect** overlay displays information about:
 
@@ -67,7 +67,7 @@ The **Accessibility** section of the **Inspect** overlay displays information ab
 
 For example, in the [Inspect Demo](https://microsoftedge.github.io/Demos/devtools-inspect) page, for the `Bad Contrast` button, the **Inspect** overlay has a warning icon next to the contrast value of 1.77.  The **Inspect** overlay also shows that the button isn't focusable via keyboard.  The button can't be navigated to via keyboard, because the button is implemented as a `<div>` element with a class of `button`, instead of being implemented as a `<button>` element.
 
-![Elements that lack sufficient contrast have a warning icon](images/inspect-tool-bad-contrast.msft.png)
+![Elements that lack sufficient contrast have a warning icon](images/inspect-tool-bad-contrast.png)
 
 
 <!-- ====================================================================== -->
@@ -75,11 +75,11 @@ For example, in the [Inspect Demo](https://microsoftedge.github.io/Demos/devtool
 
 Elements that have the CSS property of `pointer-events: none` aren't available to the **Inspect** tool.  In the [Inspect Demo](https://microsoftedge.github.io/Demos/devtools-inspect) page, hover over the `Overlay Button` and you will see that the parent element (`div.wrapper`) is shown instead of the `Overlay Button`.
 
-![An element that has a CSS property of 'pointer events: none' can't be selected](images/inspect-tool-element-element-without-pointer-events.msft.png)
+![An element that has a CSS property of 'pointer events: none' can't be selected](images/inspect-tool-element-element-without-pointer-events.png)
 
 To inspect elements that have the CSS property of `pointer-events: none`, press **Shift** while hovering over the element.  There's also a color overlay on page layout regions, indicating that you are in an advanced selection mode.
 
-![Pressing the Shift key while selecting elements on the page allows you to select elements that have a CSS style property of 'pointer-events: none'](images/inspect-tool-with-shift.msft.png)
+![Pressing the Shift key while selecting elements on the page allows you to select elements that have a CSS style property of 'pointer-events: none'](images/inspect-tool-with-shift.png)
 
 
 <!-- ====================================================================== -->

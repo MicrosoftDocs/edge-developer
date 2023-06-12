@@ -39,7 +39,7 @@ To track the **Tab**-focused element in the **Console** in DevTools by using a L
 
 1. In DevTools, open the **Console**.
 
-1. Click **Create live expression** (![Create live expression](../media/create-live-expression-icon.msft.png)).
+1. Click **Create live expression** (![Create live expression](../media/create-live-expression-icon.png)).
 
    ![Create a Live Expression](../media/accessibility-console-create-live-expression-empty.png)
 

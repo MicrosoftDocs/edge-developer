@@ -16,7 +16,7 @@ The **Inspect** tool button (![Inspect](../media/inspect-tool-icon-light-theme.p
 
 When the **Inspect** tool is active, hovering over any element on the rendered webpage displays the **Inspect** overlay. This overlay displays general information and accessibility information about that element.  The **Accessibility** section of the **Inspect** overlay displays information about text-color contrast, screen reader text, and keyboard support.
 
-![The Inspect tool, showing the element's area as a multicolor overlay, and showing the element's details as a large information overlay](../media/a11y-testing-basics-inspector-overlay.msft.png)
+![The Inspect tool, showing the element's area as a multicolor overlay, and showing the element's details as a large information overlay](../media/a11y-testing-basics-inspector-overlay.png)
 
 The main article about the Inspect tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md).
 
@@ -32,11 +32,11 @@ The main article about the Inspect tool is [Analyze HTML pages using the Inspect
 
 1. Click the **Inspect** (![Inspect](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
-   ![To turn on the Inspect tool, click the Inspect button](../media/a11y-testing-basics-inspector.msft.png)
+   ![To turn on the Inspect tool, click the Inspect button](../media/a11y-testing-basics-inspector.png)
 
 1. Hover over any element in the rendered demo webpage.  The **Inspect** tool shows an information overlay below the element within the rendered webpage.
 
-   ![The Inspect tool, showing the element's layout as a multicolor overlay, and showing the element's details as a large information overlay](../media/a11y-testing-basics-inspector-overlay.msft.png)
+   ![The Inspect tool, showing the element's layout as a multicolor overlay, and showing the element's details as a large information overlay](../media/a11y-testing-basics-inspector-overlay.png)
 
 The bottom part of the **Inspect** overlay has an **Accessibility** section that contains the following information:
 
@@ -58,7 +58,7 @@ The bottom part of the **Inspect** overlay has an **Accessibility** section that
 
 The top part of the **Inspect** overlay, which is above the **Accessibility** section, lists the following details of the element.
 
-*  Layout type. If the element is positioned using a flexbox or grid, an icon (![Grid layout icon](../media/grid-icon.msft.png)) is displayed.
+*  Layout type. If the element is positioned using a flexbox or grid, an icon (![Grid layout icon](../media/grid-icon.png)) is displayed.
 *  Name of the element, such as `h1`, `h2`, or `div`.
 *  The dimensions of the element in pixels.
 *  The color as a color swatch (or a small, colored square) and as a string (such as `#336699`).
@@ -87,7 +87,7 @@ In addition to the information overlay, the **Inspect** tool also provides regio
 
    The **Inspect** tool highlights several rectangular portions of the **Cats** section with different colors, showing the layout that results from the CSS flexbox definitions on your webpage:
 
-   ![Multicolor flexbox overlay and information overlay when using the Inspect tool](../media/inspect-tool-flexbox-overlay.msft.png)
+   ![Multicolor flexbox overlay and information overlay when using the Inspect tool](../media/inspect-tool-flexbox-overlay.png)
 
 If you want to configure the grid overlay or flexbox overlay, in the **Elements** tool, select the **Layout** tab.  See [Inspect CSS Grid](..\css\grid.md).
 
