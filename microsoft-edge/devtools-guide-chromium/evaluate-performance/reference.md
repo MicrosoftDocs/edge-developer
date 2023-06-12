@@ -210,7 +210,7 @@ Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS) to open the search bo
 
 To navigate activities that match your query:
 
-1. Click the **Previous** (![Previous](../media/previous-icon.msft.png)) and **Next** (![Next](../media/next-icon.png)) buttons.
+1. Click the **Previous** (![Previous](../media/previous-icon.png)) and **Next** (![Next](../media/next-icon.png)) buttons.
 
 1. To select the next activity, press **Enter**.  To select the previous activity, press **Shift+Enter**.
 

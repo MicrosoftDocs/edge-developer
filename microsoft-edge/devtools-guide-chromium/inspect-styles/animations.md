@@ -97,7 +97,7 @@ To capture an animation, just perform the interaction that triggers the animatio
 After you capture an animation, there are a few ways to replay it:
 
 *  Hover on the thumbnail in the **Overview** pane to view a preview of it.
-*  Select the Animation Group from the **Overview** pane (so that it is displayed in the **Details** pane), and then click the **replay** (![replay icon](../media/replay-button-icon.msft.png)) icon.  The animation is replayed in the viewport.  Click the **animation speed** (![animation speed icons](../media/animation-speed-buttons-icon.png)) icons to change the preview speed of the currently selected Animation Group.  You can use the red vertical bar to change your current position.
+*  Select the Animation Group from the **Overview** pane (so that it is displayed in the **Details** pane), and then click the **replay** (![replay icon](../media/replay-button-icon.png)) icon.  The animation is replayed in the viewport.  Click the **animation speed** (![animation speed icons](../media/animation-speed-buttons-icon.png)) icons to change the preview speed of the currently selected Animation Group.  You can use the red vertical bar to change your current position.
 *  Click and drag the red vertical bar to scrub the viewport animation.
 
 ### View animation details

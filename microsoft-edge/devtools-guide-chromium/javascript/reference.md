@@ -200,7 +200,7 @@ To continue the runtime after a pause of your script, click the **Resume script 
 <!-- ------------------------------ -->
 #### Force script runtime
 
-To ignore all breakpoints and force your script to continue to run, click and hold the **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.msft.png)) button and then click the **Force script execution** (![Force script execution](../media/force-script-run-icon.png)) button.
+To ignore all breakpoints and force your script to continue to run, click and hold the **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.png)) button and then click the **Force script execution** (![Force script execution](../media/force-script-run-icon.png)) button.
 
 ![Clicking the Force script execution button](../media/javascript-sources-get-started-js-force-script-runtime.png)
 
