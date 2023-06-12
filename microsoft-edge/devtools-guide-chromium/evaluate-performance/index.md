@@ -195,7 +195,7 @@ To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rai
 
 To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS), or [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).  Include screenshots or links to reproducible pages, if possible.
 
-![The **Feedback** icon in the Microsoft Edge DevTools](../media/evaluate-performance-feedback-icon.msft.png)
+![The **Feedback** icon in the Microsoft Edge DevTools](../media/evaluate-performance-feedback-icon.png)
 
 <!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance](https://web.dev/rendering-performance/).  [The Anatomy Of A Frame](https://aerotwist.com/blog/the-anatomy-of-a-frame/) dives into even more detail. -->
 

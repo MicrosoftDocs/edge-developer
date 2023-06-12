@@ -82,7 +82,7 @@ To close a tool, select the **Close** (![Close Tool](../media/close-tab-icon.png
 
 See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](placement.md).
 
-![Undocked DevTools](../media/customize-dev-tools-dock-side.msft.png)
+![Undocked DevTools](../media/customize-dev-tools-dock-side.png)
 
 
 <!-- ====================================================================== -->

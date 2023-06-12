@@ -37,7 +37,7 @@ To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link 
 
 1. Click the `styles.css` link.  The CSS file opens within the **Sources** tool.
 
-   ![The styles applied to the link in the Sources tool](../media/a11y-testing-menu-link-styles.msft.png)
+   ![The styles applied to the link in the Sources tool](../media/a11y-testing-menu-link-styles.png)
 
    The styles of the page have a CSS pseudo-class rule for the `hover` state that indicates which menu item you're on when you use a mouse: `#sidebar nav li a:hover`.  However, there is no CSS pseudo-class rule for the `focus` state to visually indicate which menu item you're on when you use a keyboard, such as `#sidebar nav li a:focus`.
 

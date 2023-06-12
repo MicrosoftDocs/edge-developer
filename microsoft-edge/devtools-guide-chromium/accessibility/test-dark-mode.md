@@ -35,7 +35,7 @@ To emulate a user's selection of preferred color theme:
 
     On our demo page, the **Donation status** section of the page is unreadable in light mode, and needs to change:
 
-   ![The Donation Status section has contrast issues in light mode](../media/a11y-testing-donation-state-light-contrast.msft.png)
+   ![The Donation Status section has contrast issues in light mode](../media/a11y-testing-donation-state-light-contrast.png)
 
 1. In DevTools, select the **Elements** tool, and then press **Ctrl+F** on Windows/Linux or **Command+F** on macOS.  The **Find** text box appears, to search within the HTML DOM tree.
 

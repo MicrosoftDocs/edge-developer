@@ -89,4 +89,4 @@ The CSS Properties editor also includes preset keywords.  To use the preset keyw
 
 Opening the preset keyword interface:
 
-![Opening the preset keyword interface](../media/font-editor-preset-font-sizes.msft.png)
+![Opening the preset keyword interface](../media/font-editor-preset-font-sizes.png)

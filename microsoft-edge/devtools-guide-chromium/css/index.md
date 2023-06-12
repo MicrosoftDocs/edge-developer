@@ -176,7 +176,7 @@ Use the following steps to debug or test the Media Queries you defined in your C
 
 1. To debug media queries and open the CSS file in the **Sources** editor, right-click a bar segment, and then select **Reveal in source code**:
 
-   ![Reveal Media Queries in Sources Editor](../media/css-elements-media-queries-reveal-in-sources.msft.png)
+   ![Reveal Media Queries in Sources Editor](../media/css-elements-media-queries-reveal-in-sources.png)
 
 
 <!-- ====================================================================== -->

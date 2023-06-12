@@ -35,7 +35,7 @@ As an example, on the demo page, the blue links of the sidebar navigation menu h
 
 1. In the rendered webpage, in the **Donation Status** section, hover over the **Dogs** link.  The **Inspect** tool's information overlay shows an orange exclamation point on the **Contrast** row, indicating that this element doesn't have enough contrast of text versus background colors.
 
-   ![An element that doesn't have enough contrast, as shown by the warning in the Inspect tool](../media/a11y-testing-not-enough-contrast.msft.png)
+   ![An element that doesn't have enough contrast, as shown by the warning in the Inspect tool](../media/a11y-testing-not-enough-contrast.png)
 
 
 <!-- ====================================================================== -->

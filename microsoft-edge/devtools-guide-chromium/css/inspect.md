@@ -91,7 +91,7 @@ When you click an element in the rendered page:
 *  The corresponding DOM node is highlighted.
 *  The **Styles** tool shows the CSS that's applied to the element.
 
-![When you click an element in the rendered page, the Styles tool shows the styles that are applied to the element](images/inspect-tool-highlighted-styles.msft.png)
+![When you click an element in the rendered page, the Styles tool shows the styles that are applied to the element](images/inspect-tool-highlighted-styles.png)
 
 
 <!-- ====================================================================== -->

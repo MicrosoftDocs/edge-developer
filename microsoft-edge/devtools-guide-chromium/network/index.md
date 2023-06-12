@@ -300,7 +300,7 @@ How does a page look and behave when some of the page resources aren't available
 
    In the `main.css` row in the Network Log, the red text means that the resource was blocked:
 
-   ![main.css has been blocked](../media/network-glitch-network-cli-block-main-css.msft.png)
+   ![main.css has been blocked](../media/network-glitch-network-cli-block-main-css.png)
 
 1. Clear the **Enable request blocking** checkbox.
 

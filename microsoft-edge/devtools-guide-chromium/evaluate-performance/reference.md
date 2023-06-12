@@ -589,7 +589,7 @@ To view scroll performance issues:
 
 1. Select the **Scrolling Performance Issues** checkbox.
 
-![Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance](../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png)
+![Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance](../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.png)
 
 See also:
 * [Slow scroll rects (checkbox)](../3d-view/index.md#slow-scroll-rects-checkbox) in _Navigate webpage layers, z-index, and DOM using the 3D View tool_.

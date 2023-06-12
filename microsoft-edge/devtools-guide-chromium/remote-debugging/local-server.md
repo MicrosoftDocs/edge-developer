@@ -60,7 +60,7 @@ Port forwarding is now set up.
 
 You can see the status indicator for the port forward at the top, as well as beside the device name.  The indicator for the port forward is on the tab on your device within the **Inspect Devices** dialog.
 
-![Port forwarding status](../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png)
+![Port forwarding status](../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.png)
 
 To view the content, open up Microsoft Edge on your Android device and go to the `localhost` port that you specified in the **Device port** field.  For example, if you entered `5000` in the field, visit `localhost:5000`.
 

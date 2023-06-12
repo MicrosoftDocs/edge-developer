@@ -545,7 +545,7 @@ You can also change the settings of advanced features, such as:
 *  Define simulated **Locations**.
 *  Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
 
-![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code](media/devtools-intro-match-keys.msft.png)
+![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code](media/devtools-intro-match-keys.png)
 
 
 <!-- ====================================================================== -->

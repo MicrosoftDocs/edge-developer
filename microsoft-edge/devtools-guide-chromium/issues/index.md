@@ -43,7 +43,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 1. Go to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab or window.
 
-1. Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) appears in the upper right corner of DevTools.
+1. Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter](../media/issues-counter-icon.png)) appears in the upper right corner of DevTools.
 
 1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
 

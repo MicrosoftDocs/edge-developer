@@ -131,7 +131,7 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 
 1. Click **Clear site data**.
 
-   ![The Clear storage pane](../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png)
+   ![The Clear storage pane](../media/storage-application-clear-storage-indexeddb-clear-site-data.png)
 
 
 <!-- ====================================================================== -->

@@ -145,7 +145,7 @@ When looking for memory leaks, remember that leaks can depend on the context of 
 
 The following image shows detached elements in the form of messages that are reattached when a user navigates from **Room 2** back to **Room 1**:
 
-![The detached elements are reattached to the DOM when switching back to Room 1](images/detached-elements-reattached.msft.png)
+![The detached elements are reattached to the DOM when switching back to Room 1](images/detached-elements-reattached.png)
 
 Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up. Detached elements aren't always an indication of a memory leak, and memory leaks aren't always caused by detached elements.
 

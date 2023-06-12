@@ -84,7 +84,7 @@ To submit your app to the Microsoft Store:
 1.  Select your app.
 1.  Click the **Start your submission** button.
 
-    ![Start a new app submission on Microsoft Partner Center](../media/windows-partner-center-start-submission.msft.png)
+    ![Start a new app submission on Microsoft Partner Center](../media/windows-partner-center-start-submission.png)
 
 1.  When you're prompted, provide information about your app, such as pricing and age rating.
 

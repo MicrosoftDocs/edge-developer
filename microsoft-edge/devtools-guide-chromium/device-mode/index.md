@@ -285,7 +285,7 @@ If your site employs [user-agent client hints](../../web-platform/user-agent-gui
 
 1. In the Emulated Devices panel, select **Add custom device** and expand **user-agent client hints**.
 
-   ![Setting user-agent client hints](images/emulated-devices-user-agent-client-hints.msft.png)
+   ![Setting user-agent client hints](images/emulated-devices-user-agent-client-hints.png)
 
 1. Type a unique name in the **Device Name** text box such as `Test101`.
 

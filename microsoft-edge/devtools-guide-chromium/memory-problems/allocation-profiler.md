@@ -76,7 +76,7 @@ The height of each bar corresponds to the size of the recently allocated objects
 
 You can use the sliders in the timeline above to zoom into that particular snapshot and review the objects that were recently allocated at that point:
 
-![Zoom into snapshot](../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png)
+![Zoom into snapshot](../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.png)
 
 Clicking on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.
 

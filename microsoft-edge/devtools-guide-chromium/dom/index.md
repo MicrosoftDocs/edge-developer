@@ -425,7 +425,7 @@ See [Introduction to the DOM](https://developer.mozilla.org/docs/Web/API/Documen
 
 Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If you don't see the specified option in the context menu, try right-clicking away from the node text, or click the `...` button to the left of the node.
 
-![Where to click if all of the options aren't displayed](../media/dom-elements-highlighted-right-click-right-side.msft.png)
+![Where to click if all of the options aren't displayed](../media/dom-elements-highlighted-right-click-right-side.png)
 
 
 <!-- ====================================================================== -->

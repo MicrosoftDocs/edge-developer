@@ -92,7 +92,7 @@ Now you can test your site with the Chromium Content Shell.
 ###### Firefox on Android
 
 <!--
-![Firefox Icon on Android Emulator](../media/device-mode-ff-on-android-emulator.msft.png)
+![Firefox Icon on Android Emulator](../media/device-mode-ff-on-android-emulator.png)
 -->
 
 Similar to the Chromium Content Shell, you can get an APK to install Firefox onto the emulator.

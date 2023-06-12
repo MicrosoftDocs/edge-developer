@@ -385,7 +385,7 @@ See also:
 
 In the **Sources** tool, use this feature to see the value of a WebAssembly (Wasm) variable when your code is paused.  To display the current value of a variable, hover on a variable:
 
-![Preview Wasm variable on mouseover](../../media/2020/11/wasm-mouseover.msft.png)
+![Preview Wasm variable on mouseover](../../media/2020/11/wasm-mouseover.png)
 
 For real-time updates on this feature in the Chromium open-source project, see Issues [1058836](https://crbug.com/1058836) and [1071432](https://crbug.com/1071432).
 

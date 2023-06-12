@@ -80,7 +80,7 @@ Entering a name for the new environment:
 
 Selecting the format for the new environment:
 
-![Selecting the format for the new environment](images/network-console-environments-new-format.msft.png)
+![Selecting the format for the new environment](images/network-console-environments-new-format.png)
 
 The **Network Console** tool is compatible with the [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) and [OpenAPI v2](https://swagger.io/specification/v2) schemas.
 

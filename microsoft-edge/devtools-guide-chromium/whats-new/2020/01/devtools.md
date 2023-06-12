@@ -329,7 +329,7 @@ To prevent the default UI behavior that allows you to scroll well past the end o
 
 ![Disabling Allow scrolling past end of file](../../images/2020/01/settings.msft.png)
 
-![Scrolling past the end of a file is now disabled in the Sources panel](../../images/2020/01/scrollingsources.msft.png)
+![Scrolling past the end of a file is now disabled in the Sources panel](../../images/2020/01/scrollingsources.png)
 
 See also:
 * [Using the Editor pane to view or edit files](../../../../devtools-guide-chromium/sources/index.md#using-the-editor-pane-to-view-or-edit-files) in _Sources tool overview_.

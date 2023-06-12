@@ -77,7 +77,7 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
 *  To save a modified or added keyboard shortcut while you are editing the keyboard shortcuts for an action, click the checkmark (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)) icon.
 
-*  To discard your changes while you are editing the keyboard shortcuts for an action, click the X (![XKeyboardShortcut](../media/discard-changes-keyboard-shortcut-icon.msft.png)) icon.
+*  To discard your changes while you are editing the keyboard shortcuts for an action, click the X (![XKeyboardShortcut](../media/discard-changes-keyboard-shortcut-icon.png)) icon.
 
 *  To reset all shortcuts, click the **Restore default shortcuts** button.
 

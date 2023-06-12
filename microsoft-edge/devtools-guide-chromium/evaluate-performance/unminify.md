@@ -23,7 +23,7 @@ An example of a performance profile flame chart, with hard-to-read function name
 
 An example of a performance profile flame chart, with some more meaningful function names restored:
 
-![The unminified flame chart in the performance profile, with meaningful function names restored](images/unminified-perf-profile.msft.png)
+![The unminified flame chart in the performance profile, with meaningful function names restored](images/unminified-perf-profile.png)
 
 When recording a performance profile in the **Performance** tool, the **Main** section of the profile displays detailed flame charts of JavaScript functions that were called during the recording.  
 

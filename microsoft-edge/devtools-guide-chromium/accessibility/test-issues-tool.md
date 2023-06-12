@@ -138,7 +138,7 @@ The DOM tree in the **Elements** tool flags issues directly in the HTML with wav
 
 1. In the **Elements** tool, in the DOM tree, press **Shift** while clicking the element `<input type="search">`, which has a wavy line under `input`.  The **Issues tool** is displayed, and shows the issue for that element.
 
-   ![An element that has a wavy underline in the DOM view has an issue](../media/a11y-testing-wavy-underlines.msft.png)
+   ![An element that has a wavy underline in the DOM view has an issue](../media/a11y-testing-wavy-underlines.png)
 
 
 <!-- ====================================================================== -->

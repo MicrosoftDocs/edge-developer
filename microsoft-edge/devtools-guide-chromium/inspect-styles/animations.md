@@ -142,7 +142,7 @@ If the animation defines any keyframe rules, then these are represented as white
 
 To add a delay to an animation, click the animation anywhere except the circles, and drag it:
 
-![Modified delay](../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png)
+![Modified delay](../media/inspect-styles-glitch-spin-animations-console-animations-delay.png)
 
 
 <!-- ====================================================================== -->

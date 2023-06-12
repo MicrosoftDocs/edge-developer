@@ -283,7 +283,7 @@ leafRef = null;
 
 The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when `leafRef` is nullified is the WHOLE tree under `#tree` a candidate for garbage-collection (GC).
 
-![DOM subtrees](../media/memory-problems-tree-gc.msft.png)
+![DOM subtrees](../media/memory-problems-tree-gc.png)
 
 
 ### Demo webpage: Example 6: Leaking DOM nodes

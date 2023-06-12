@@ -309,7 +309,7 @@ The **CSS Overview** tool now displays a list of elements on your page that have
 
 To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  To open the element in the **Elements** tool, click an element in the list.  To help fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane).
 
-![Color contrast issues](../../media/2020/10/css-overview.msft.png)
+![Color contrast issues](../../media/2020/10/css-overview.png)
 
 Update: This feature has been released and is no longer experimental.<!-- To enable this experiment, under **Settings** > **Experiments**, select the **CSS Overview** checkbox. -->
 

@@ -186,7 +186,7 @@ Previously, in the **Network** tool, the **Copy** > **Copy as PowerShell** conte
 
 Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option correctly sets the User-Agent string and cookies that were observed by DevTools.  The generated PowerShell command can now successfully make the same network request that was observed by DevTools, even to servers that depend on cookies.
 
-![The Copy as PowerShell command](../../media/2021/07/copy-as-powershell.msft.png)
+![The Copy as PowerShell command](../../media/2021/07/copy-as-powershell.png)
 
 For more information about the Network Activity Log, see [Network features reference](../../../network/reference.md).
 

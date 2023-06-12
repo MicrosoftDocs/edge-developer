@@ -79,7 +79,7 @@ See also [Application tool, to manage storage](../storage/application-tool.md).
 <!-- ====================================================================== -->
 ## Sources
 
-![The DOM tree](../media/sw-sources.msft.png)
+![The DOM tree](../media/sw-sources.png)
 
 To find more stack information, set a break point in the fetch handler.  The details lead to where the resource is requested in the page script.
 

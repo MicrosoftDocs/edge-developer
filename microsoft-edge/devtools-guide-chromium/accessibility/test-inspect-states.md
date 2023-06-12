@@ -97,7 +97,7 @@ To turn on the hover state while using the Inspect tool:
 
 1. Hover over the blue **Cats** link in the sidebar navigation menu.  The link is now light blue, because of the simulated hover animation.  The **Inspect** tool's information overlay appears, showing an orange exclamation point in the **Contrast** row, indicating that the contrast isn't high enough.
 
-   ![Testing the contrast of an element in a simulated hover state](../media/a11y-testing-hover-contrast-testing.msft.png)
+   ![Testing the contrast of an element in a simulated hover state](../media/a11y-testing-hover-contrast-testing.png)
 
 State simulation is also a good way to check whether you considered different user needs, such as the needs of keyboard users.  By using the **Force element state** checkboxes, you can simulate the `:focus` state to discover that the UI remains unchanged when it has focus. This lack of an indicator when an element has focus is a problem.
 

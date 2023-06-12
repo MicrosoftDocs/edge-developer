@@ -41,7 +41,7 @@ If you select **Custom orientation**, the **alpha**, **beta**, and **gamma** rot
 <!-- todo: link to a local copy of that article section when available; see "original page" below -->
 You can also set a custom orientation by dragging the **Orientation Model**.  For example, to rotate along the **alpha** axis, press and hold **Shift** before dragging:
 
-![The Orientation Model](../media/device-mode-console-sensors-orientation-custom.msft.png)
+![The Orientation Model](../media/device-mode-console-sensors-orientation-custom.png)
 
 
 <!-- ====================================================================== -->

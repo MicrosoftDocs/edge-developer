@@ -669,7 +669,7 @@ The **Open source files in Visual Studio Code** experiment replaces the code edi
 
 When you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code.  In previous versions of Microsoft Edge, this action opened the file in the code editor of the Sources tool in DevTools.
 
-![Selecting a file link in the Styles tool opens the file in Visual Studio Code](../media/experiment-sources-in-code-editor-open.msft.png)
+![Selecting a file link in the Styles tool opens the file in Visual Studio Code](../media/experiment-sources-in-code-editor-open.png)
 
 Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code. You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
 

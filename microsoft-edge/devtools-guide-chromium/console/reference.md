@@ -260,7 +260,7 @@ Suppose you have an ad on your webpage embedded in an `<iframe>`, and you want t
 
 To clear the Console, use any of the following approaches:
 
-*  Click **Clear Console** (![Clear Console](../media/clear-console-button-icon.msft.png)).
+*  Click **Clear Console** (![Clear Console](../media/clear-console-button-icon.png)).
 
 *  Right-click a message and then select **Clear Console**.
 

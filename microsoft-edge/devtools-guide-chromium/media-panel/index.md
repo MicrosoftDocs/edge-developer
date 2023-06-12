@@ -97,7 +97,7 @@ You can hide (or show) each media player, for an easier debugging experience:
 
 *  To download the media player info as a JSON file, right-click a media player, and then select **Save player info**.
 
-![Export media information](../media/media-panel-save.msft.png)
+![Export media information](../media/media-panel-save.png)
 
 
 <!-- ====================================================================== -->

@@ -116,7 +116,7 @@ To use Live Expressions to avoid excessive Console log messages:
 
    Now in the DevTools Console, the Live Expression value is updated, below the Live Expression, showing the `x` and `y` coordinates of the mouse:
 
-   ![Displaying the 'x' and 'y' coordinates of the mouse as Live Expressions](../media/console-live-expressions-x-and-y.msft.png)
+   ![Displaying the 'x' and 'y' coordinates of the mouse as Live Expressions](../media/console-live-expressions-x-and-y.png)
 
 When you use **Live Expressions**, you always get the information on the same part of your screen, and keep **Console** logs for values that don't change as much.
 

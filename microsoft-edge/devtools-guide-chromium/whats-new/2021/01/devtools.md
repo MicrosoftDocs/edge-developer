@@ -508,7 +508,7 @@ APCA is a new way to compute contrast.  It is based on modern research on color 
 
 To turn on this experiment, select **Settings** > **Experiments** and then select the checkbox next to **Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines**.  To view the history of this feature in the Chromium open-source project, see Issue [1121900](https://crbug.com/1121900).
 
-![APCA in the Color Picker](../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png)
+![APCA in the Color Picker](../../media/2021/01/advanced-perceptual-contrast-algorithm.png)
 
 See also:
 * [Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines](../../../experimental-features/index.md#enable-new-advanced-perceptual-contrast-algorithm-apca-replacing-previous-contrast-ratio-and-aaaaa-guidelines) in _Experimental features_.

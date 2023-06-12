@@ -148,7 +148,7 @@ The **Cache Storage** pane provides a read-only list of resources that have been
 
 If you have two or more caches open, the caches are displayed under the **Cache Storage** dropdown list, as shown in the following screenshot.
 
-![The Cache Storage dropdown list](../media/cache-pane-cache-storage.msft.png)
+![The Cache Storage dropdown list](../media/cache-pane-cache-storage.png)
 
 
 <!-- ====================================================================== -->

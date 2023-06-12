@@ -104,7 +104,7 @@ To get the last 50 issues that were filed on the [Microsoft Edge Developer Tools
 
 1. Optionally, use the `console.table()` log method to only receive the information in which you're interested:
 
-   ![Displaying the last result in a human-readable format using 'console.table'](../media/console-javascript-filtered-with-table.msft.png)
+   ![Displaying the last result in a human-readable format using 'console.table'](../media/console-javascript-filtered-with-table.png)
 
    To reuse the data returned from an expression, use the `copy()` utility method of the **Console**.
 

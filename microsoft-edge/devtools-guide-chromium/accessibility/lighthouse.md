@@ -53,7 +53,7 @@ To audit a page using the Lighthouse tool:
 
 1. Click the **Learn more** link to view the documentation of the issue:
 
-   ![View the documentation of an issue](../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png)
+   ![View the documentation of an issue](../media/accessibility-web-dev-accessibility-audits-learn-more.png)
 
 1. To return to the configuration options, in DevTools, click **Perform an audit** (`+`).
 

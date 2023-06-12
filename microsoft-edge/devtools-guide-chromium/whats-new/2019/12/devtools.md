@@ -337,7 +337,7 @@ The **Coverage** tool has a new dropdown menu that lets you specify whether code
 > [!CAUTION]
 > You may notice large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.  When using **per function** mode, inline scripts in HTML files are treated as functions.  If the script runs at all, DevTools marks the entire script as used code.  If the script doesn't run at all, DevTools marks the script as unused code.
 
-![The coverage mode dropdown menu](../../images/2019/12/modes.msft.png)
+![The coverage mode dropdown menu](../../images/2019/12/modes.png)
 
 #### Coverage must now be initiated by a page refresh
 

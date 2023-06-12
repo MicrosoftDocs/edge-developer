@@ -111,7 +111,7 @@ If you want to configure the grid overlay or flexbox overlay, in the **Elements*
 
    The **Elements** tool automatically opens and displays the HTML of the element in the DOM tree.  The **Elements** tool also displays the applied CSS on the element, in the **Styles** pane.  Clicking an element on the rendered webpage turns off the **Inspect** tool.
 
-   ![Details about the clicked element are displayed in the Elements tool](../media/a11y-testing-basics-inspector-selected-element.msft.png)
+   ![Details about the clicked element are displayed in the Elements tool](../media/a11y-testing-basics-inspector-selected-element.png)
 
 After clicking an element in the rendered webpage, you can then use the **Accessibility** tab (near the **Styles** tab) to view the **Accessibility Tree** and use the **Source Order Viewer**.
 

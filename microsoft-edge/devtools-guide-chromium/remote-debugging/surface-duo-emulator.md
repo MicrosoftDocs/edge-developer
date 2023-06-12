@@ -64,7 +64,7 @@ If the `edge://inspect` page doesn't recognize the [Surface Duo emulator](/dual-
 
 You can now use the Microsoft Edge DevTools to debug your web content on the [Surface Duo emulator](/dual-screen/android/use-emulator):
 
-![Using the Microsoft Edge DevTools to debug Bing in the Microsoft Edge app on the Surface Duo emulator](../media/remote-debugging-surface-duo-devtools.msft.png)
+![Using the Microsoft Edge DevTools to debug Bing in the Microsoft Edge app on the Surface Duo emulator](../media/remote-debugging-surface-duo-devtools.png)
 
 
 ### Troubleshooting

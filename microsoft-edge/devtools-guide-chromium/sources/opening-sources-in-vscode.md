@@ -54,7 +54,7 @@ Any changes that you make to the file in DevTools will now be synced to Visual S
 
 To change the behavior of the **Open source files in Visual Studio Code** experiment, go to the DevTools **Settings** page by clicking **Settings** (the gear icon) or pressing **Shift+?**, and then select the **Workspace** page:
 
-![The settings pane of the workspace showing several options](../media/experiment-sources-in-code-workspace-settings.msft.png)
+![The settings pane of the workspace showing several options](../media/experiment-sources-in-code-workspace-settings.png)
 
 The **Settings** > **Workspace** page lists your workspaces, along with the following configuration options:
 

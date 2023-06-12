@@ -55,7 +55,7 @@ As an alternative approach, you can use the **Command Menu** to access the diffe
 1. Type **emulate**, select the type of vision deficiency you want to simulate, and then press **Enter**.
 
    > [!div class="mx-imgBorder"]
-   > ![The command menu showing the different types of vision deficiencies](../media/accessibility-emulation-command-menu-results.msft.png)
+   > ![The command menu showing the different types of vision deficiencies](../media/accessibility-emulation-command-menu-results.png)
 
 
 <!-- ====================================================================== -->

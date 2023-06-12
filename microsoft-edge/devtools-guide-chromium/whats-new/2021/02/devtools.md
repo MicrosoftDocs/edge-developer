@@ -345,7 +345,7 @@ To display the DOM tree view, click the **Switch to DOM Tree view** button area 
 
 To display the full accessibility tree, click the **Switch to Accessibility Tree view** button area at the top:
 
-![Displaying the full accessibility tree view](../../media/2021/02/elements-switch-to-dom-tree-view.msft.png)
+![Displaying the full accessibility tree view](../../media/2021/02/elements-switch-to-dom-tree-view.png)
 <!-- todo: redo capture showing Accessibility tab (instead of Styles tab) for comparison and to clarify its behavior -->
 
 To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable full accessibility tree view in the Elements panel**.

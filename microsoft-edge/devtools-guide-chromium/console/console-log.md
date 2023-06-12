@@ -326,7 +326,7 @@ This code filters the information that the `console.table()` method displays.
 
 The code provides an array of properties to display, as a second parameter:
 
-![Filtering information that 'console.table' displays, and providing an array of properties to display, as a second parameter](../media/console-log-table-filtered.msft.png)
+![Filtering information that 'console.table' displays, and providing an array of properties to display, as a second parameter](../media/console-log-table-filtered.png)
 
 1. Copy and paste the above code listing into the **Console**, and then press **Enter**.
 

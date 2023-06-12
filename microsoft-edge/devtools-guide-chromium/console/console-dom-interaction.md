@@ -267,7 +267,7 @@ To get a notification in the **Console** every time you scroll, resize the windo
 
 1. To log any key action on the currently selected element, focus on the search form in the header and press some keys.
 
-   ![Console displays 'keyup' events that occur on the form](../media/console-dom-monitor-key-events.msft.png)
+   ![Console displays 'keyup' events that occur on the form](../media/console-dom-monitor-key-events.png)
 
 1. To stop logging, remove the monitoring you set, enter the following code into the **Console**:
 

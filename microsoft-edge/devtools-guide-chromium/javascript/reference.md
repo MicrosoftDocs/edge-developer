@@ -322,7 +322,7 @@ To mark a single script or pattern of scripts from **Settings**:
 
 1. Navigate to the **Ignore List** page of settings.
 
-   ![Adding a script to the Ignore List from Settings](../media/javascript-framework-library-code.msft.png)
+   ![Adding a script to the Ignore List from Settings](../media/javascript-framework-library-code.png)
 
 1. Click the **Add pattern** button.  A suggested pattern is shown: `/framework\.js$`
 

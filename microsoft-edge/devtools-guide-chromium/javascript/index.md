@@ -223,7 +223,7 @@ We've identified a possible fix for the bug.  Next, edit the JavaScript code dir
 
 1. Click **Deactivate breakpoints** (![Deactivate breakpoints](../media/deactivate-breakpoints-button-icon.msft.png)).  The breakpoint's icon changes to gray to indicate that the breakpoint is inactive.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
 
-   ![Result of troubleshooting and fixing bug](../media/javascript-bug-fixed.msft.png)
+   ![Result of troubleshooting and fixing bug](../media/javascript-bug-fixed.png)
 
 
 1. Try out the demo with different values.  The demo now calculates correctly.

@@ -148,7 +148,7 @@ You can also tap an element on your host device screen to select it in the **Ele
 
 By default, the DevTools instance on the client have screencasting turned on, which allows you to view the content on the host device in your DevTools instance on your client device.  Click **Toggle Screencast** to turn this feature on or off.
 
-![The Toggle Screencast button in the Microsoft Edge DevTools on the client](../media/remote-debugging-windows-media-toggle-screencast.msft.png)
+![The Toggle Screencast button in the Microsoft Edge DevTools on the client](../media/remote-debugging-windows-media-toggle-screencast.png)
 
 You can interact with the screencast in multiple ways:
 *  Clicks are translated into taps, firing proper touch events on the device.

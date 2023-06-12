@@ -306,7 +306,7 @@ In the **Application** tool, the **Manifest** page now shows app shortcuts.  App
 
 <!--todo: add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->
 
-![App shortcuts in the Manifest pane of the Application tool](../../media/2020/05/app-shortcuts.msft.png)
+![App shortcuts in the Manifest pane of the Application tool](../../media/2020/05/app-shortcuts.png)
 
 See also:
 * [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps-chromium/index.md)

@@ -255,7 +255,7 @@ To confirm the amount of unused code and possibly find other resources that are 
 
     ![The Command Menu in DevTools, showing the Show Coverage command](./get-started-images/command-menu-coverage.png)
 
-1. In the **Coverage** tool, click **Start instrumenting coverage and refresh the page** (![Refresh icon](../media/reload-icon.msft.png)). The **Coverage** tool provides an overview of how much of the JavaScript and CSS code that's loaded on the page was actually run.
+1. In the **Coverage** tool, click **Start instrumenting coverage and refresh the page** (![Refresh icon](../media/reload-icon.png)). The **Coverage** tool provides an overview of how much of the JavaScript and CSS code that's loaded on the page was actually run.
 
     ![The Coverage tool, in the Drawer panel, showing the report of how much code is unused](./get-started-images/coverage-report.png)
 

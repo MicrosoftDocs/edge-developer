@@ -479,7 +479,7 @@ In Microsoft Edge version 90 and earlier, the source location isn't displayed in
 
 In Microsoft Edge version 91 and later, the source location is displayed in the Error stack traces.  Proper error stack traces for Wasm debugging:
 
-![Proper error stack traces for Wasm debugging](../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png)
+![Proper error stack traces for Wasm debugging](../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1189161](https://crbug.com/1189161).
 

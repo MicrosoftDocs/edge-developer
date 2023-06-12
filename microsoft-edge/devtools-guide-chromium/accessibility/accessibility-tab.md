@@ -68,7 +68,7 @@ View the computed accessibility properties of an element in the **Accessibility*
 > [!NOTE]
 > For computed CSS properties, use the [Computed](../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) tab.
 
-![The 'Computed Properties' section of the Accessibility tab](../media/accessibility-elements-accessibility-computed-properties.msft.png)
+![The 'Computed Properties' section of the Accessibility tab](../media/accessibility-elements-accessibility-computed-properties.png)
 
 
 <!-- ====================================================================== -->

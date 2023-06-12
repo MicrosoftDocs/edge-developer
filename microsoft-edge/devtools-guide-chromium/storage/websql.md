@@ -91,7 +91,7 @@ DevTools doesn't update tables in real-time.  To update the data in a table:
 
 1. Click **Clear site data**.
 
-   ![The Clear Site Data button](../media/storage-application-clear-storage-clear-site-data-button.msft.png)
+   ![The Clear Site Data button](../media/storage-application-clear-storage-clear-site-data-button.png)
 
 
 <!-- ====================================================================== -->

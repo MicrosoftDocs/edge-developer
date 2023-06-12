@@ -60,7 +60,7 @@ The following image shows DevTools docked in the left side of the browser window
 
 The following image shows DevTools in the right side the browser window, which is the default location:
 
-![DevTools docked to the right](../media/devtools-intro-docking-right.msft.png)
+![DevTools docked to the right](../media/devtools-intro-docking-right.png)
 
 
 <!-- ====================================================================== -->

@@ -42,7 +42,7 @@ To check the demo page for accessibility issues by using a keyboard rather than 
 
 1. Selecting **Tab** again puts focus on the top navigation bar of the page, with menu buttons for **Home**, **Adopt a Pet**, **Donate**, **Jobs**, and **About Us**.  Press **Tab** or **Shift+Tab** to put focus on a menu button, as indicated by a focus outline.  Then press **Enter** to access that section of the webpage.
 
-   ![The main menu has a highlight and a focus outline, and thus is keyboard-accessible](../media/a11y-testing-menu-with-outline.msft.png)
+   ![The main menu has a highlight and a focus outline, and thus is keyboard-accessible](../media/a11y-testing-menu-with-outline.png)
 
 Based on the above walkthrough, we found the following issues that need to be fixed.
 

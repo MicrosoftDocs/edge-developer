@@ -468,7 +468,7 @@ console.warn('warn');
 
 #### Output
 
-![The result of the console.warn() example](../media/console-demo-warn-button.msft.png)
+![The result of the console.warn() example](../media/console-demo-warn-button.png)
 
 <br/><br/>
 

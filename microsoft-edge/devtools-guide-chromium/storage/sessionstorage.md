@@ -94,7 +94,7 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 1. Run your `sessionStorage` expressions in the **Console**, the same as your JavaScript.
 
-   ![Interact with sessionStorage from the Console](../media/storage-console-session-storage-keys.msft.png)
+   ![Interact with sessionStorage from the Console](../media/storage-console-session-storage-keys.png)
 
 
 <!-- ====================================================================== -->

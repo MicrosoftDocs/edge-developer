@@ -490,7 +490,7 @@ Click the **Clear** button to remove any inputted text.
 
 **Clear** buttons in the  **Network** tools:
 
-![Clear buttons in the Network panels](../../media/2020/08/clear-button-network.msft.png)
+![Clear buttons in the Network panels](../../media/2020/08/clear-button-network.png)
 
 Chromium issue: [#1067184](https://crbug.com/1067184)
 

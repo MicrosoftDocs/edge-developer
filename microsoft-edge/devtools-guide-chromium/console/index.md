@@ -234,7 +234,7 @@ For example, to add a green border around all the links in the current webpage:
 
    The `$$(selector)` console utility function is "Query selector all".  This DOM query selector function returns an array of all the elements that match the specified CSS selector, like the JavaScript function `document.querySelectorAll()`.  In this example, we select all the `<a>` hyperlink elements and then apply a green box around them:
 
-   ![Manipulate a selection of elements using the Console](../media/console-intro-changing-styles.msft.png)
+   ![Manipulate a selection of elements using the Console](../media/console-intro-changing-styles.png)
 
 For more information, see [Console tool utility functions and selectors](utilities.md).
 

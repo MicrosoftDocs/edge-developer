@@ -236,7 +236,7 @@ To display the trace in the **Console**:
 
    Here's the trace that's produced, in the **Console**:
 
-   ![The trace, displayed in the Console](../media/console-debug-trace.msft.png)
+   ![The trace, displayed in the Console](../media/console-debug-trace.png)
 
 
 <!-- ====================================================================== -->

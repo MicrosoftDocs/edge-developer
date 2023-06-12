@@ -125,7 +125,7 @@ Hover on a function to display the name and timing data:
 <!--*  **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->
 <!--*  **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->
 
-![View functions details in the profiles chart](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png)
+![View functions details in the profiles chart](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.png)
 
 
 <!-- ====================================================================== -->

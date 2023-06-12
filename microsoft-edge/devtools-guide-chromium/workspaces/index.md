@@ -251,7 +251,7 @@ To open the DevTools code editor alongside other tools:
 
 1. Refresh the page.  The link on the page is now italicized.
 
-   ![The link on the page is now italicized](../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png)
+   ![The link on the page is now italicized](../media/workspaces-workspaces-demo-elements-styles-quick-source-script.png)
 
 
 <!-- ====================================================================== -->

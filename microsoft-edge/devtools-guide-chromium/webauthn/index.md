@@ -114,7 +114,7 @@ DevTools supports only one active virtual authenticator at any point of time.  I
 
 To remove a virtual authenticator, next to the authenticator, click the **Remove** button.
 
-![Removing an authenticator](../media/webauthn-remove-authenticator.msft.png)
+![Removing an authenticator](../media/webauthn-remove-authenticator.png)
 
 
 <!--todo: remove this notice, or add notice at top?-->

@@ -687,7 +687,7 @@ To enable large rows, select the **Use large request rows** checkbox.  An exampl
 
 By default, DevTools displays the **Overview** pane.  To hide the **Overview** pane, clear the **Show Overview** checkbox.
 
-![The Show Overview checkbox](../media/network-network-requests-show-overview-off.msft.png)
+![The Show Overview checkbox](../media/network-network-requests-show-overview-off.png)
 
 
 <!-- ====================================================================== -->

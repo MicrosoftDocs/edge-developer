@@ -38,7 +38,7 @@ To turn off JavaScript:
 
     The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.
 
-   ![The warning icon next to Sources](../media/javascript-console-javascript-disabled-warning.msft.png)
+   ![The warning icon next to Sources](../media/javascript-console-javascript-disabled-warning.png)
 
 JavaScript remains disabled in the tab for as long as you have DevTools open.
 

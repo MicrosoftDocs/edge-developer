@@ -97,7 +97,7 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 
 1. Click the **Clear site data** button.
 
-   ![The 'Clear site data' button](../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png)
+   ![The 'Clear site data' button](../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.png)
 
 
 <!-- ====================================================================== -->

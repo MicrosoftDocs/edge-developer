@@ -297,7 +297,7 @@ Android Oreo introduced adaptive icons, which display app icons in a variety of 
 
 To check that your maskable icon looks good on Android Oreo devices, in the **Manifest** pane of the **Application** tool, select the new checkbox **Show only the minimum safe area for maskable icons**:
 
-![The checkbox, Show only the minimum safe area for maskable icons](../../media/2020/03/maskable-icons.msft.png)
+![The checkbox, Show only the minimum safe area for maskable icons](../../media/2020/03/maskable-icons.png)
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->
 

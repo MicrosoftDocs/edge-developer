@@ -185,7 +185,7 @@ Use exception breakpoints when you want to pause on the line of code that is thr
 
 1. **Optional:** Check the **Pause On Caught Exceptions** checkbox if you also want to pause on caught exceptions, in addition to uncaught ones.
 
-   ![Paused on an uncaught exception](../media/javascript-sources-page-js-paused-on-exception.msft.png)
+   ![Paused on an uncaught exception](../media/javascript-sources-page-js-paused-on-exception.png)
 
 
 <!-- ====================================================================== -->

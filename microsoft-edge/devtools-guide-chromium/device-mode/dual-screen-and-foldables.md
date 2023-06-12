@@ -33,7 +33,7 @@ The [Device Toolbar](../device-mode/index.md#simulate-a-mobile-viewport) has add
 
 ![Matrix of postures and orientations for dual-screen and foldable devices](../media/experiments-dual-screen-emulation-rotate-span.msft.png)
 
-The **Experimental Web Platform features** (![ExperimentalApis](../media/experimental-apis-dark-icon.msft.png)) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon isn't highlighted.  To turn on (or off) the flag, either click the icon or go to `edge://flags` and toggle the flag.
+The **Experimental Web Platform features** (![ExperimentalApis](../media/experimental-apis-dark-icon.png)) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon isn't highlighted.  To turn on (or off) the flag, either click the icon or go to `edge://flags` and toggle the flag.
 
 ### Known issues
 

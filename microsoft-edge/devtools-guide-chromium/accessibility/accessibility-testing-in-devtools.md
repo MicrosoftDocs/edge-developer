@@ -434,4 +434,4 @@ None of these tools can replace a proper round of testing your products with peo
 
 Another way to find out what to do to improve your webpage is to use the [webhint extension for Visual Studio Code](https://aka.ms/webhint4code).  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them:
 
-![Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem](../media/a11y-testing-webhint-in-vs-code.msft.png)
+![Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem](../media/a11y-testing-webhint-in-vs-code.png)

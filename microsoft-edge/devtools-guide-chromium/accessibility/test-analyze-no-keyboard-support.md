@@ -56,7 +56,7 @@ To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard 
 
 1. Select the `buttons.js:18` link.  The **Sources** tool opens, showing the applied JavaScript.
 
-   ![The JavaScript responsible for the donation form's functionality, shown in the Sources tool](../media/a11y-testing-form-handling-javascript.msft.png)
+   ![The JavaScript responsible for the donation form's functionality, shown in the Sources tool](../media/a11y-testing-form-handling-javascript.png)
 
    Here's a code listing of the applied JavaScript:
 

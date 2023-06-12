@@ -79,7 +79,7 @@ From the **Security Overview**, click **View certificate** to quickly inspect th
 
 Click one of the entries in the left-hand nav to view the details of the origin.  From the details page you can view connection and certificate information.  Certificate transparency information is also shown when available.
 
-![Main origin details](../media/security-security-overview-mixed-secure-main-origin.msft.png)
+![Main origin details](../media/security-security-overview-mixed-secure-main-origin.png)
 
 
 <!-- ====================================================================== -->

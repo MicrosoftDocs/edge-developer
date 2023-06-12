@@ -142,7 +142,7 @@ Node `#10` is dominated by node `#7` and doesn't dominate any nodes:
  
 Node `#11` is dominated by node `#1` and doesn't dominate any nodes:
 
-![Node #11 is dominated by node #1 and doesn't dominate any nodes](../media/memory-problems-dominators-05.msft.png)
+![Node #11 is dominated by node #1 and doesn't dominate any nodes](../media/memory-problems-dominators-05.png)
 
 
 <!-- ====================================================================== -->

@@ -271,7 +271,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 
 In the **Performance** tool, DevTools now displays **Compute Intersections** in the flame chart. These changes help you identify intersection observers events and debug the potential performance overhead of intersection observers.
 
-![Compute Intersections in the Performance tool](../../media/2021/05/compute-intersections-in-perf-tool.msft.png)
+![Compute Intersections in the Performance tool](../../media/2021/05/compute-intersections-in-perf-tool.png)
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
 See also:

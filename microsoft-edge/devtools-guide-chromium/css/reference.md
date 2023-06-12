@@ -420,7 +420,7 @@ To open the **Angle Clock**:
 
 1. Click the preview to open the **Angle Clock**:
 
-   ![Angle preview](images/css-angle.msft.png)
+   ![Angle preview](images/css-angle.png)
 
 1. Change the angle value by clicking on the **Angle Clock** circle, or scroll your mouse to increase or decrease the angle value by 1.
 

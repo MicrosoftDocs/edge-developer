@@ -24,7 +24,7 @@ For more information, see [Update .css files from within the Styles tab (CSS mir
 
 To provide feedback, in Visual Studio Code, in the **Activity Bar**, click **Microsoft Edge Tools**, and then in the **CSS Mirror Editing** section, click the **leaving feedback here** link.
 
-![Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code](../../media/2021/10/css-mirror-editing-button.msft.png)
+![Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code](../../media/2021/10/css-mirror-editing-button.png)
 
 
 <!-- ====================================================================== -->

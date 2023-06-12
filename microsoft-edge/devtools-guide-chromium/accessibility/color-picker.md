@@ -47,7 +47,7 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
 
 1. For more information, select the **Contrast ratio** section to expand it.  In the visual picker at the top of the Color Picker, two lines appear, running across the visual picker, along with a circle for the current color.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color doesn't meet recommendations, then anything on the same side also doesn't meet recommendations.
 
-   ![The 'Contrast Ratio' Line in the visual picker](../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png)
+   ![The 'Contrast Ratio' Line in the visual picker](../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.png)
 
 1. To try different colors, click within the visual picker, or select a color swatch at the bottom of the Color Picker.
 

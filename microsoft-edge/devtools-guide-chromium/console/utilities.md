@@ -846,7 +846,7 @@ table(names);
 
 Result:
 
-![The result of the table() function](../media/console-table-display.msft.png)
+![The result of the table() function](../media/console-table-display.png)
 
 <br/><br/>
 

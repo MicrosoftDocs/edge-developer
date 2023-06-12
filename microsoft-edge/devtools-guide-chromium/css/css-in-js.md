@@ -74,7 +74,7 @@ function addStyle() {
 
 This sample demonstrates changing the `background` property of the `h1` styles that are added by the CSS Object Model function `insertRule()`.  The `background` color is initially set by calling a CSS Object Model function, and then can be changed from `pink` to `lightblue` by using the **Styles** pane.
 
-![Changing the background property of the h1 styles added with 'CSSStyleSheet' from 'pink' to 'lightblue'](../media/css-in-js.msft.png)
+![Changing the background property of the h1 styles added with 'CSSStyleSheet' from 'pink' to 'lightblue'](../media/css-in-js.png)
 
 Give this feature a try with a [sample that uses CSS-in-JS](https://codepen.io/zoherghadyali/full/abdGrPZ).
 

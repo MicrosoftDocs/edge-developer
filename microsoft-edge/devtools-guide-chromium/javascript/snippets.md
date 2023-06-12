@@ -136,7 +136,7 @@ To rename your new Snippet with a custom name, see [Rename Snippets](#rename-sni
 
 1. Delete the **>** character and type the **!** character followed by the name of the Snippet that you want to run:
 
-   ![Running a Snippet from the Command Menu](../media/javascript-search-run-command.msft.png)
+   ![Running a Snippet from the Command Menu](../media/javascript-search-run-command.png)
 
 1. Press **Enter** to run the Snippet.
 

@@ -80,7 +80,7 @@ The table in the **Coverage** tool displays the resources that were analyzed, an
 
 A code coverage report:
 
-![A code coverage report](../media/coverage-sources-resource-drawer-coverage-selected.msft.png)
+![A code coverage report](../media/coverage-sources-resource-drawer-coverage-selected.png)
 
 Columns in the code coverage report:
 

@@ -185,7 +185,7 @@ One way to view webpage resources grouped by file type is by using the **Frames*
 
 In the **Network** tool, when you view the list of resource files that make up the current webpage, you can filter which type of resources to list, such as only showing `.css` or `.js` files.  For example, you can click **CSS** to filter and only display CSS files:
 
-![Filtering to only list CSS resource files in the Network Log](../media/resources-network-resources-filter-css.msft.png)
+![Filtering to only list CSS resource files in the Network Log](../media/resources-network-resources-filter-css.png)
 
 The above screenshot shows `main.css`, which is part of the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/).  The source files for that page are at [MicrosoftEdge / Demos > network-tutorial](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial).
 

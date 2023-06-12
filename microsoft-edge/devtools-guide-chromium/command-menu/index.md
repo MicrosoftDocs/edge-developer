@@ -49,7 +49,7 @@ The Command Menu initially opens with a `>` character prepended to its text box:
 
 To show other actions that are available from the Command Menu, delete the `>` character and then type **?**:
 
-![Other available actions](../media/command-menu-help.msft.png)
+![Other available actions](../media/command-menu-help.png)
 
 
 <!-- ====================================================================== -->

@@ -88,7 +88,7 @@ Alternatively, on the **Network** tool, right-click a file and then add it to ov
 
 Selecting a file from the **Network** tool for overrides:
 
-![Selecting a file from the Network tool for overrides](../media/javascript-overrides-network.msft.png)
+![Selecting a file from the Network tool for overrides](../media/javascript-overrides-network.png)
 
 
 <!-- ====================================================================== -->

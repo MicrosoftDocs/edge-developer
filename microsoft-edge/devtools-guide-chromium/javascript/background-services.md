@@ -51,7 +51,7 @@ The **Background Fetch API** enables the **service worker** of a Progressive Web
 
    ![The Background Fetch panel](./images/application-background-fetch-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.msft.png)).
+1. Click **Record** (![Record](../media/record-icon.png)).
    After triggering some Background Fetch activity, DevTools logs the events to the table.
 
    ![A log of events in the Background Fetch panel](./images/application-background-fetch-events.png)

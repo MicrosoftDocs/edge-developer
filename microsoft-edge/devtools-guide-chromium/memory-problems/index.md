@@ -248,7 +248,7 @@ Use the **Allocation sampling** profiling type to view memory allocation by Java
 
 DevTools shows you a breakdown of memory allocation by function.  The default view is **Heavy (Bottom Up)**, which displays the functions that allocated the most memory at the top.
 
-![Allocation sampling](../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png)
+![Allocation sampling](../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.png)
 
 
 <!-- ====================================================================== -->

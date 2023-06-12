@@ -554,7 +554,7 @@ Breakpoints and Watch expressions are preserved when you refresh the webpage.
 
 To use the more full-featured debugger of Visual Studio Code instead of the DevTools debugger, use the **Microsoft Edge DevTools** extension for Visual Studio Code.
 
-![The Microsoft Edge DevTools extension for Visual Studio Code](../media/microsoft-edge-tools-for-vs-code-extension.msft.png)
+![The Microsoft Edge DevTools extension for Visual Studio Code](../media/microsoft-edge-tools-for-vs-code-extension.png)
 
 This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools, from within Microsoft Visual Studio Code.
 
