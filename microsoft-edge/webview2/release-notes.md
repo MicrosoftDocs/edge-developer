@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/05/2023
+ms.date: 07/01/2023
 ---
 # Release Notes for the WebView2 SDK
 
