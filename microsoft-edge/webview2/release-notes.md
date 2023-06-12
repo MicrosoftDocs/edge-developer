@@ -123,7 +123,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 
 <!-- ------------------------------ -->
-* Support for the `LaunchingExternalUriScheme` event.  This event is raised when there's an attempt to launch a URI scheme that is registered with the OS (external URI scheme).
+* Support for the `LaunchingExternalUriScheme` event.  This event is raised when there's an attempt to launch a URI scheme that is registered with the OS (an external URI scheme).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
