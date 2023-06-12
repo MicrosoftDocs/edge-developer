@@ -266,9 +266,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ------------------------------ -->
-* Added Service workers enum value in the data kinds enum:
-
-<!-- todo: finish section -->
+* Added `ServiceWorkers` enum value in the `BrowsingDataKinds` enum.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
