@@ -287,7 +287,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ------------------------------ -->
-* The `LaunchingExternalUriScheme` event is raised when there's an attempt to launch a URI scheme that is registered with the OS (external URI scheme).
+* The `LaunchingExternalUriScheme` event is raised when there's an attempt to launch a URI scheme that is registered with the OS (an external URI scheme).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
