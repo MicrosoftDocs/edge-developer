@@ -242,7 +242,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ------------------------------ -->
-* Gets the navigation kind of each navigation, such as Back/Forward, Reload, or navigation to a new document. 
+* `NavigationKind` gets the navigation kind of each navigation, such as Back/Forward, Reload, or navigation to a new document. 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -266,7 +266,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ------------------------------ -->
-* Added `ServiceWorkers` enum value in the `BrowsingDataKinds` enum.
+* The `ServiceWorkers` enum value in the `BrowsingDataKinds` enum specifies service workers that are registered for an origin.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -287,7 +287,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ------------------------------ -->
-* Support for the `LaunchingExternalUriScheme` event.  This event is raised when there's an attempt to launch a URI scheme that is registered with the OS (external URI scheme).
+* The `LaunchingExternalUriScheme` event is raised when there's an attempt to launch a URI scheme that is registered with the OS (external URI scheme).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -329,7 +329,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ------------------------------ -->
-* `MemoryUsageTargetLevel` allows specifying memory consumption levels, such as `low` or `normal`.
+* `MemoryUsageTargetLevel` specifies memory consumption levels, such as `low` or `normal`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
