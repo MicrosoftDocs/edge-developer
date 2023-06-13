@@ -138,7 +138,7 @@ By entering a file path in the address bar of the **Edge DevTools: Browser** tab
 
 1. If the **Edge DevTools** tabs aren't open already, in the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)), and then click the **Launch Instance** button:
 
-   ![The Launch Instance button with no folder open](./get-started-images/launch-instance-button-no-folder.png)
+   ![The Launch Instance button with no folder open](./get-started-launch-instance-images/launch-instance-button-no-folder.png)
 
 1. In the Activity Bar, select **Explorer**, and then right-click `\demo-to-do\index.html` > **Copy Path**.
 

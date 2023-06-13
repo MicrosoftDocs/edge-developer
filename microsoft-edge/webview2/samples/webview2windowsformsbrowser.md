@@ -83,7 +83,7 @@ The **WebView2WindowsFormsBrowser** project is now open in Visual Studio, from d
 
    The sample app window opens:
 
-   ![The WebView2WindowsFormsBrowser app window](media/webview2windowsformsbrowser-app-window.png)
+   ![The WebView2WindowsFormsBrowser app window](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-app-window.png)
 
 1. Use the sample app; see [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser#readme).
 
@@ -162,7 +162,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    The sample app window opens:
 
-   ![The WebView2WindowsFormsBrowser app window](media/webview2windowsformsbrowser-app-window.png)
+   ![The WebView2WindowsFormsBrowser app window](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-app-window.png)
 
    *  The **Control** menu has toggle menuitems for **Accelerator Keys** and **Allow External Drop**.
    *  The **View** menu has **Zoom** and **Background Color** submenus.
@@ -177,7 +177,7 @@ At the top of Visual Studio, set the build target, as follows:
 1. In the Visual Studio code editor, inspect the code:
 
    <!-- this same png is used multiple times in this file -->
-   ![The WebView2WindowsFormsBrowser project in Visual Studio](media/webview2windowsformsbrowser-in-visual-studio.png)
+   ![The WebView2WindowsFormsBrowser project in Visual Studio](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-in-visual-studio.png)
 
 
 <!-- ====================================================================== -->

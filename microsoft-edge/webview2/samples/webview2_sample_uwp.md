@@ -178,11 +178,11 @@ Now that the NuGet packages have been updated, build and run the project again:
 
    An empty grid window initially appears for a moment:
 
-   ![The webview2_sample_uwp project running, with initial empty grid](media/webview2_sample_uwp-empty-grid.png)
+   ![The webview2_sample_uwp project running, with initial empty grid](./webview2_sample_uwp-images/webview2_sample_uwp-empty-grid.png)
 
    The sample app window then displays webpage content:
 
-   ![The webview2_sample_uwp project running, displaying webpage content](media/webview2_sample_uwp-webpage-content.png)
+   ![The webview2_sample_uwp project running, displaying webpage content](./webview2_sample_uwp-images/webview2_sample_uwp-webpage-content.png)
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 

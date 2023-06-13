@@ -97,7 +97,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    The sample app window opens:
 
-   ![The WebView2WpfBrowser sample app](media/webview2wpfbrowser-sample-app.png)
+   ![The WebView2WpfBrowser sample app](./webview2wpfbrowser-images/webview2wpfbrowser-sample-app.png)
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 

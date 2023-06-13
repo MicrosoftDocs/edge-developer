@@ -143,7 +143,7 @@ Use NuGet to add the WebView2 SDK to the project, as follows:
    The running project displays the same empty window as before:
 
    <!-- used at end of 2 sections: -->
-   ![The empty Form1 window from the fresh WinForms project](media/form1-empty-window-fresh-winforms-project.png)
+   ![The empty Form1 window from the fresh WinForms project](./winforms-images/form1-empty-window-fresh-winforms-project.png)
 
    <!-- what's the toolbar?
    ![Sample app displays an empty window](./winforms-images/winforms-empty-app.png) -->

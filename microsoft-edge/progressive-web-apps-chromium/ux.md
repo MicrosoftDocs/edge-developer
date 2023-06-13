@@ -17,7 +17,7 @@ Any device that's running Microsoft Edge gets full access to the technologies an
 
 When Microsoft Edge determines that a website is an installable Progressive Web App (PWA), the **App available** (![The "App available" icon](./ux-images/app-available-icon.png)) icon appears in the address bar.
 
-1.  Click the **App available** (![The "App available" icon](media/app-available-icon.png)) icon to install the PWA.
+1.  Click the **App available** (![The "App available" icon](./ux-images/app-available-icon.png)) icon to install the PWA.
 
     ![The installation prompt in Microsoft Edge](./ux-images/edge-app-install-flyout.png)
 
@@ -61,7 +61,7 @@ PWAs and native apps are displayed when switching between windows with **Alt+Tab
 
 PWAs can also expose common tasks to users as shortcuts that appear in the app's right-click menu:
 
-![Common tasks are listed in the Taskbar's right-click menu](./media/pwa-shortcuts-in-taskbar.png)
+![Common tasks are listed in the Taskbar's right-click menu](./ux-images/pwa-shortcuts-in-taskbar.png)
 
 Learn more about [defining shortcuts](how-to/shortcuts.md).
 

@@ -508,7 +508,7 @@ In the Command Menu, the tools are called "panels"; for example, the **Elements*
 
 To open the Command Menu, do either of the following:
 
-*  Click the **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
+*  Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
 
 *  Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 

@@ -106,7 +106,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    The sample app window opens:
 
-   ![The WV2CDPExtensionWPFSample sample app](media/wv2cdpextensionwpfsample-app-running.png)
+   ![The WV2CDPExtensionWPFSample sample app](./wv2cdpextensionwpfsample-images/wv2cdpextensionwpfsample-app-running.png)
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
@@ -159,7 +159,7 @@ See also:
 
    The sample app window opens:
 
-   ![The WV2CDPExtensionWPFSample app](media/wv2cdpextensionwpfsample-app-running.png)
+   ![The WV2CDPExtensionWPFSample app](./wv2cdpextensionwpfsample-images/wv2cdpextensionwpfsample-app-running.png)
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
