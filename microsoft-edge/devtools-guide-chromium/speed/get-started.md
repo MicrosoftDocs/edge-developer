@@ -211,7 +211,7 @@ Next, resize the images and run a new audit:
 
     * Replace the four instances of `.jpg` in the file with `.webp`.
 
-1. In **Lighthouse**, click **Run an audit** (![Run an audit icon](./get-started-images/perform-icon.png)) to go back to the main **Lighthouse** page without losing your baseline report.
+1. In **Lighthouse**, click **Run an audit** (![Run an audit icon](../icons/perform-icon.png)) to go back to the main **Lighthouse** page without losing your baseline report.
 
 1. Click **Analyze page load** again to see how the change affects load performance:
 

@@ -208,7 +208,7 @@ Select a resource to learn more information about it.
 
    ![The Timing panel](./index-images/network-glitch-network-resources-timing.png)
 
-1. Click **Close** (![Close](./index-images/close-icon.png)) to view the Network Log again:
+1. Click **Close** (![Close](../icons/close-icon.png)) to view the Network Log again:
 
    ![The Close button](./index-images/network-glitch-network-resources-close-tabs.png)
 
@@ -222,7 +222,7 @@ For example, suppose you want to verify that your resources are using reasonable
 
 <!--TODO: add cache policies section when available  -->
 
-1. Select **Search** (![Search](./index-images/search-icon.png)).  The Search pane opens to the left of the Network log:
+1. Select **Search** (![Search](../icons/search-icon.png)).  The Search pane opens to the left of the Network log:
 
    ![The Search pane](./index-images/network-glitch-network-search-empty.png)
 
@@ -292,7 +292,7 @@ How does a page look and behave when some of the page resources aren't available
 
    ![Show Request Blocking](./index-images/network-glitch-network-cli-block.png)
 
-1. Click **Add Pattern** (![Add Pattern](./index-images/add-icon.png)), then type `main.css`, and then click **Add**:
+1. Click **Add Pattern** (![Add Pattern](../icons/add-icon.png)), then type `main.css`, and then click **Add**:
 
    ![Blocking 'main.css'](./index-images/network-glitch-network-cli-block-add-pattern.png)
 

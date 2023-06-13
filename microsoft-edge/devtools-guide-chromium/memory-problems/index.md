@@ -210,7 +210,7 @@ To record an Allocation instrumentation on timeline:
 
 1. Perform the action that you suspect is causing the memory leak.
 
-1. When you are done, click the **Stop recording heap profile** ![stop recording](./index-images/stop-recording-icon.png) button.
+1. When you are done, click the **Stop recording heap profile** ![stop recording](../icons/stop-recording-icon.png) button.
 
 1. As you are recording, notice whether any blue bars show up on the Allocation instrumentation on the timeline, like in the following figure:
 

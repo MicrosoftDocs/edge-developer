@@ -168,7 +168,7 @@ To load a recording, right-click the recording and then select **Load Profile**.
 <!-- ====================================================================== -->
 ## Clear the previous recording
 
-After making a recording, click **Clear recording** (![Clear recording icon](./reference-images/clear-recording-icon.png)) to clear that recording from the **Performance** tool.
+After making a recording, click **Clear recording** (![Clear recording icon](../icons/clear-recording-icon.png)) to clear that recording from the **Performance** tool.
 
 ![Clear recording](./reference-images/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.png)
 
@@ -210,15 +210,15 @@ Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS) to open the search bo
 
 To navigate activities that match your query:
 
-1. Click the **Previous** (![Previous](../icons/previous-icon.png)) and **Next** (![Next](./reference-images/next-icon.png)) buttons.
+1. Click the **Previous** (![Previous](../icons/previous-icon.png)) and **Next** (![Next](../icons/next-icon.png)) buttons.
 
 1. To select the next activity, press **Enter**.  To select the previous activity, press **Shift+Enter**.
 
 To modify query settings:
 
-*  To make the query case-sensitive, click the **Case sensitive** (![Case sensitive](./reference-images/search-case-icon.png)) button.
+*  To make the query case-sensitive, click the **Case sensitive** (![Case sensitive](../icons/search-case-icon.png)) button.
 
-*  To use a regular expression in your query, click the **Regex** (![Regex](./reference-images/search-regex-icon.png)) button.
+*  To use a regular expression in your query, click the **Regex** (![Regex](../icons/search-regex-icon.png)) button.
 
 To hide the search box, click **Cancel**.
 
@@ -317,7 +317,7 @@ Use the **Filter** text box to filter events by activity name.
 
 By default the **Grouping** menu is set to **No Grouping**.  Use the **Grouping** menu to sort the activity table based on various criteria.
 
-Click **Show Heaviest Stack** (![Show Heaviest Stack](./reference-images/show-heaviest-stack-icon.png)) to reveal another table to the right of the **Activity** table.  Click on an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table displays which children of the selected activity took the longest time to run.
+Click **Show Heaviest Stack** (![Show Heaviest Stack](../icons/show-heaviest-stack-icon.png)) to reveal another table to the right of the **Activity** table.  Click on an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table displays which children of the selected activity took the longest time to run.
 
 
 ###### The Event Log tab
@@ -501,11 +501,11 @@ Hover over a layer to highlight it in the diagram.
 
 To move the diagram:
 
-*  Select **Pan Mode** (![Pan Mode](./reference-images/pan-mode-icon.png)) to move along the X and Y axes.
+*  Select **Pan Mode** (![Pan Mode](../icons/pan-mode-icon.png)) to move along the X and Y axes.
 
-*  Select **Rotate Mode** (![Rotate Mode](./reference-images/rotate-mode-icon.png)) to rotate along the Z axis.
+*  Select **Rotate Mode** (![Rotate Mode](../icons/rotate-mode-icon.png)) to rotate along the Z axis.
 
-*  Select **Reset Transform** (![Reset Transform](./reference-images/reset-transform-icon.png)) to reset the diagram to the original position.
+*  Select **Reset Transform** (![Reset Transform](../icons/reset-transform-icon.png)) to reset the diagram to the original position.
 
 
 <!-- ------------------------------ -->

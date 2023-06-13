@@ -38,13 +38,13 @@ By default, DevTools records all network requests in the **Network** tool, so lo
 
 To stop recording requests:
 
-1. On the **Network** tool, click **Stop recording network log** (![Stop recording network log](./reference-images/record-on-icon.png)).  It turns grey to indicate that DevTools is no longer recording requests.
+1. On the **Network** tool, click **Stop recording network log** (![Stop recording network log](../icons/record-on-icon.png)).  It turns grey to indicate that DevTools is no longer recording requests.
 
 1. Press **Ctrl+E** (Windows, Linux) or **Command+E** (macOS) while the **Network** tool is in focus.
 
 ### Clear requests
 
-Click the **Clear** (![Clear](./reference-images/clear-requests-icon.png)) button on the **Network** tool to clear all requests from the Requests table.
+Click the **Clear** (![Clear](../icons/clear-requests-icon.png)) button on the **Network** tool to clear all requests from the Requests table.
 
 ![The Clear button](./reference-images/network-network-clear-button.png)
 

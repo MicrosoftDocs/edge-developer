@@ -40,7 +40,7 @@ There are many ways to select an element:
 
 *  In a rendered webpage, right-click a page element, and then click **Inspect**.
 
-*  In DevTools, click **Select an element** (![Select an element](./reference-images/select-an-element-icon.png)) or press **Ctrl+Shift+C** (Windows, Linux) or **Command+Shift+C** (macOS), and then click the element in the viewport.
+*  In DevTools, click **Select an element** (![Select an element](../icons/select-an-element-icon.png)) or press **Ctrl+Shift+C** (Windows, Linux) or **Command+Shift+C** (macOS), and then click the element in the viewport.
 
 *  In DevTools, click the element in the **DOM Tree**.
 
@@ -304,7 +304,7 @@ To add a new style rule:
 
 1. [Select an element](#select-an-element).
 
-1. Click **New Style Rule** (![New Style Rule](./reference-images/new-style-rule-icon.png)).  DevTools inserts a new rule beneath the **element.style** rule.
+1. Click **New Style Rule** (![New Style Rule](../icons/new-style-rule-icon.png)).  DevTools inserts a new rule beneath the **element.style** rule.
 
    In the following figure, DevTools adds the `h1.devsite-page-title` style rule after you click **New Style Rule**.
 
@@ -317,7 +317,7 @@ By default, when adding a style rule, DevTools creates a new stylesheet named `i
 
 To instead add the rule in an existing stylesheet:
 
-*  Click and hold **New Style Rule** (![New Style Rule](./reference-images/new-style-rule-icon.png)) and then select a stylesheet from the list to add the style rule to.
+*  Click and hold **New Style Rule** (![New Style Rule](../icons/new-style-rule-icon.png)) and then select a stylesheet from the list to add the style rule to.
 
 ![Selecting a stylesheet](./reference-images/css-elements-styles-style-new-select-existing.png)
 
@@ -330,7 +330,7 @@ To add a style rule in a specific location of the **Styles** panel instead:
 
 1. Hover on the style rule that is directly above where you want to add your new style rule.
 
-1. Click **Insert Style Rule Below** (![Insert Style Rule Below icon](./reference-images/new-style-rule-icon.png)).
+1. Click **Insert Style Rule Below** (![Insert Style Rule Below icon](../icons/new-style-rule-icon.png)).
 
 ![Insert Style Rule Below](./reference-images/css-elements-styles-insert-style-rule-below.png)
 
@@ -391,7 +391,7 @@ The following figure and list describes of each of the UI elements of the **Colo
 
 To change the selected color to some other color on the page:
 
-1. Click the **Eyedropper** icon (![Eyedropper](./reference-images/eyedropper-icon.png)). Your cursor changes to a magnifying glass.
+1. Click the **Eyedropper** icon (![Eyedropper](../icons/eyedropper-icon.png)). Your cursor changes to a magnifying glass.
 
 1. Hover on the pixel that has the color you want to sample, anywhere on your screen.
 

@@ -13,7 +13,7 @@ If your build process compiles and minifies your code and combines it into a sin
    
 To learn more about how DevTools uses source maps, see [Map the processed code to your original source code, for debugging](../javascript/source-maps.md).
    
-To see your original function names in the flame chart in the **Performance** tool, use the **Unminify** (![The Unminify button icon](./unminify-images/unminify-icon.png)) button.
+To see your original function names in the flame chart in the **Performance** tool, use the **Unminify** (![The Unminify button icon](../icons/unminify-icon.png)) button.
 
 Source mapping is used in DevTools to keep your client-side code readable and debuggable.  By clicking the **Unminify** button in the Performance tool, you can use source maps to create an unminified version of the performance profile you recorded.
 
@@ -60,7 +60,7 @@ For details, see [Map the processed code to your original source code, for debug
 <!-- ====================================================================== -->
 ## Step 3 - Unminify the code
 
-1. Click the **Unminify** (![The Unminify button icon](./unminify-images/unminify-icon.png)) button:
+1. Click the **Unminify** (![The Unminify button icon](../icons/unminify-icon.png)) button:
 
    ![The Unminify button in the Performance tool](./unminify-images/perf-profile-unminify-button.png)
 
@@ -74,7 +74,7 @@ For details, see [Map the processed code to your original source code, for debug
 <!-- ====================================================================== -->
 ## Step 4 - Load the unminified profile
 
-1. In the **Performance** tool, click the **Load profile** (![The 'Load profile` icon button in the Performance tool](./unminify-images/load-profile-icon.png)) icon button.  Or, right-click a blank area of the **Performance** tool, and then select **Load profile**.
+1. In the **Performance** tool, click the **Load profile** (![The 'Load profile` icon button in the Performance tool](../icons/load-profile-icon.png)) icon button.  Or, right-click a blank area of the **Performance** tool, and then select **Load profile**.
 
    ![Load Profile](./unminify-images/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.png)
 

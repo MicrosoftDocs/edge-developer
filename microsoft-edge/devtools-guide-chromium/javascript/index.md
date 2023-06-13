@@ -221,7 +221,7 @@ We've identified a possible fix for the bug.  Next, edit the JavaScript code dir
 
 1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save your change.
 
-1. Click **Deactivate breakpoints** (![Deactivate breakpoints](./index-images/deactivate-breakpoints-button-icon.png)).  The breakpoint's icon changes to gray to indicate that the breakpoint is inactive.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
+1. Click **Deactivate breakpoints** (![Deactivate breakpoints](../icons/deactivate-breakpoints-button-icon.png)).  The breakpoint's icon changes to gray to indicate that the breakpoint is inactive.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
 
    ![Result of troubleshooting and fixing bug](./index-images/javascript-bug-fixed.png)
 

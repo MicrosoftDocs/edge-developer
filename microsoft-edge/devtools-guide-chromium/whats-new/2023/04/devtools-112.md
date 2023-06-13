@@ -86,7 +86,7 @@ Starting in Microsoft Edge 112, the JSON Viewer now supports code folding.  The 
 
 1. Go to a JSON file, such as https://microsoftedge.github.io/Demos/json-dummy-data/256KB.json.  Line numbers appear on the left.
 
-1. Click the gear<!--no tooltip--> (![JSON Viewer's gear icon](./devtools-112-images/json-viewer-gear-icon.png)) icon in the top right corner, and then select the **Code folding** checkbox.
+1. Click the gear<!--no tooltip--> (![JSON Viewer's gear icon](../../../icons/json-viewer-gear-icon.png)) icon in the top right corner, and then select the **Code folding** checkbox.
 
 With code folding turned on, you can now expand and collapse objects and arrays within the JSON you're inspecting:
 

@@ -93,7 +93,7 @@ To turn an experiment on or off in Microsoft Edge:
 
 1. On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
 
-1. Click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
+1. Click **Close** (![The Close icon in DevTools > Settings](../icons/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
 
 1. Click the **Reload DevTools** button.
 
@@ -107,7 +107,7 @@ To restore the default settings for which experimental features are turned on:
 
 1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../icons/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
 
-1. At the bottom of the **Preferences** page, click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)).
+1. At the bottom of the **Preferences** page, click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings](../icons/settings-close-icon-light-theme.png)).
 
 <!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
@@ -222,7 +222,7 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 1. On the left side of the **Settings** panel, select the **Experiments** page.
 
-1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) to close **Settings**.
+1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings](../icons/settings-close-icon-light-theme.png)) to close **Settings**.
 
 1. Open the **Command Menu** (**Ctrl+Shift+P**), and then type **protocol** in the text box.
 
@@ -490,7 +490,7 @@ Status:
 
 Allows you to move the mouse cursor when it's an eyedropper tool, over anywhere on your screen, not just within the Microsoft Edge window.
 
-In the **Elements** tool, in the **Styles** tab, click on any color preview.  The Color Picker opens.  Click the **Toggle color picker** (![Eyedropper icon button](index-images/eyedropper-color-picker-icon.png)) button.  The mouse cursor becomes an eyedropper.  Click anywhere on your monitor to select a color.
+In the **Elements** tool, in the **Styles** tab, click on any color preview.  The Color Picker opens.  Click the **Toggle color picker** (![Eyedropper icon button](../icons/eyedropper-color-picker-icon.png)) button.  The mouse cursor becomes an eyedropper.  Click anywhere on your monitor to select a color.
 
 <!-- https://developer.chrome.com/blog/new-in-devtools-102/#color-picker -->
 

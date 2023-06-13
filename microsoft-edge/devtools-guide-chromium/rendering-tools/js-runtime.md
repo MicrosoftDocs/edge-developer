@@ -60,7 +60,7 @@ The default view is **Heavy (Bottom Up)**.  This view allows you to review which
 
 ### Change sort order
 
-To change the sorting order, select the dropdown menu next to the **focus selected function** (![focus selected function](./js-runtime-images/focus-icon.png)) icon and then select one of the following options:
+To change the sorting order, select the dropdown menu next to the **focus selected function** (![focus selected function](../icons/focus-icon.png)) icon and then select one of the following options:
 
 **Chart**.  Displays a chronological chart of the recording.
 
@@ -76,9 +76,9 @@ To change the sorting order, select the dropdown menu next to the **focus select
 
 ### Exclude functions
 
-To exclude a function from your Sampling Profile, select it and then click the **exclude selected function** (![exclude selected function](./js-runtime-images/exclude-icon.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
+To exclude a function from your Sampling Profile, select it and then click the **exclude selected function** (![exclude selected function](../icons/exclude-icon.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
 
-Click the **restore all functions** (![restore all functions](./js-runtime-images/restore-icon.png)) button to restore all excluded functions back into the recording.
+Click the **restore all functions** (![restore all functions](../icons/restore-icon.png)) button to restore all excluded functions back into the recording.
 
 
 <!-- ====================================================================== -->

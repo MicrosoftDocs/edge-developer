@@ -66,7 +66,7 @@ https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/202
 
 1. From the `buffer` line you can open Memory Inspector using one of the following methods:
 
-    * Click on the **Reveal in Memory Inspector panel** icon (![Reveal in Memory Inspector panel icon](./memory-inspector-tool-images/memory-inspector-open-from-buffer-icon.png)) at the end of the `buffer` property line, or
+    * Click on the **Reveal in Memory Inspector panel** icon (![Reveal in Memory Inspector panel icon](../icons/memory-inspector-open-from-buffer-icon.png)) at the end of the `buffer` property line, or
  
     * From the context menu. Right click the `buffer` property and select **Reveal in Memory Inspector panel**.
 
@@ -185,7 +185,7 @@ For WebAssembly (Wasm) memory inspection, the process is similar to inspecting J
 
     ![Memory Inspector set breakpoint in Wasm file](./memory-inspector-tool-images/memory-inspector-wasm-breakpoint.png)
 
-1. Click on the **Reveal in Memory Inspector panel** icon (![Reveal in Memory Inspector panel icon](./memory-inspector-tool-images/memory-inspector-open-from-buffer-icon.png)) at the end of the `$imports.memory` property line. 
+1. Click on the **Reveal in Memory Inspector panel** icon (![Reveal in Memory Inspector panel icon](../icons/memory-inspector-open-from-buffer-icon.png)) at the end of the `$imports.memory` property line. 
 
     The Wasm ArrayBuffer opens in **Memory Inspector**.
     

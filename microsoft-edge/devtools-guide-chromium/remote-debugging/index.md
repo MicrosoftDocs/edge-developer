@@ -114,7 +114,7 @@ Select **focus tab**, **reload**, or **close** next to the tab that you want to 
 
 Go to the **Elements** tool of your DevTools instance, and hover over an element to highlight it in the viewport of your Android device.
 
-You can also tap an element on your Android device screen to select it in the **Elements** tool.  Click **Select Element** (![Select Element](./index-images/select-element-icon.png)) icon on your DevTools instance, and then select the element on your Android device screen.
+You can also tap an element on your Android device screen to select it in the **Elements** tool.  Click **Select Element** (![Select Element](../icons/select-element-icon.png)) icon on your DevTools instance, and then select the element on your Android device screen.
 
 > [!NOTE]
 > **Select Element** is disabled after the first selection, so you need to re-enable it every time you want to use this feature.

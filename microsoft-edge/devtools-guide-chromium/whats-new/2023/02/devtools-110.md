@@ -90,9 +90,9 @@ The following accessibility issues have been fixed, and using assistive technolo
 <!-- ------------------------------ -->
 #### Screen readers correctly report when the More Tools menu is expanded
 
-In previous versions of Microsoft Edge, screen readers reported that the **More tools** (![Plus sign](./devtools-110-images/more-tools-focus-mode-icon.png)) button was collapsed, when the **More tools** menu was actually expanded.  In Microsoft Edge 110, this issue has been fixed.
+In previous versions of Microsoft Edge, screen readers reported that the **More tools** (![Plus sign](../../../icons/more-tools-focus-mode-icon.png)) button was collapsed, when the **More tools** menu was actually expanded.  In Microsoft Edge 110, this issue has been fixed.
 
-Screen readers now correctly report when the **More tools** (![Plus sign icon](./devtools-110-images/more-tools-focus-mode-icon.png)) menu is expanded:
+Screen readers now correctly report when the **More tools** (![Plus sign icon](../../../icons/more-tools-focus-mode-icon.png)) menu is expanded:
 
 ![The 'More tools' menu in Focus Mode](./devtools-110-images/a11y-focus-mode-more-tools.png)
 
@@ -102,7 +102,7 @@ Screen readers now correctly report when the **More tools** (![Plus sign icon](.
 
 In previous versions of Microsoft Edge, in Focus Mode, it wasn't possible to change the **Dock location** or the **Activity Bar location** via the keyboard.  In Microsoft Edge 110, this issue has been fixed.
 
-In Focus Mode, you can now change the Dock location and the Activity Bar location from the **Customize and control DevTools** (![Ellipses icon](./devtools-110-images/customize-devtools-focus-mode-icon.png)) menu by using the arrow keys:
+In Focus Mode, you can now change the Dock location and the Activity Bar location from the **Customize and control DevTools** (![Ellipses icon](../../../icons/customize-devtools-focus-mode-icon.png)) menu by using the arrow keys:
 
 ![Changing the Dock location in Focus Mode by pressing arrow keys](./devtools-110-images/a11y-focus-mode-dock-location.png)
 
@@ -112,7 +112,7 @@ In Focus Mode, you can now change the Dock location and the Activity Bar locatio
 
 In previous versions of Microsoft Edge, when scrolling through the list of themes for DevTools, screen readers didn't announce whether or not a theme was selected.  In Microsoft Edge 110, this issue has been fixed.
 
-Screen readers now announce which theme is currently selected when you are moving among the themes in the **Customize and control DevTools** (![The Ellipses icon](./devtools-110-images/customize-devtools-focus-mode-icon.png)) menu:
+Screen readers now announce which theme is currently selected when you are moving among the themes in the **Customize and control DevTools** (![The Ellipses icon](../../../icons/customize-devtools-focus-mode-icon.png)) menu:
 
 ![Navigating among the themes in Focus Mode](./devtools-110-images/a11y-focus-mode-themes-menu.png)
 

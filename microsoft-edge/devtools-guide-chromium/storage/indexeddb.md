@@ -36,9 +36,9 @@ To view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/Indexe
 
    ![The IndexedDB menu](./indexeddb-images/storage-application-storage-indexeddb.png)
 
-   * (![Database icon](./indexeddb-images/database-icon.png)) `notes - https://mdn.github.io` represents a database, where `notes` is the name of the database and `https://mdn.github.io` is the origin that accesses the database.
+   * (![Database icon](../icons/database-icon.png)) `notes - https://mdn.github.io` represents a database, where `notes` is the name of the database and `https://mdn.github.io` is the origin that accesses the database.
 
-   * (![Object Store icon](./indexeddb-images/object-store-icon.png)) `notes` is an object store.
+   * (![Object Store icon](../icons/object-store-icon.png)) `notes` is an object store.
 
    *  **title** and **body** are [indexes](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index).
 

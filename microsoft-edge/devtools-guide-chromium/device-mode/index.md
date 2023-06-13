@@ -48,7 +48,7 @@ Use [Remote Debugging](../remote-debugging/index.md) to interact with the code o
 <!-- ====================================================================== -->
 ## Simulate a mobile viewport
 
-Select **Toggle device emulation** (![Toggle Device Toolbar](./index-images/toggle-device-toolbar-dark-icon.png)) or select **Customize and control DevTools** (`...`) > **Device Emulation** to open the UI that enables you to simulate a mobile viewport.
+Select **Toggle device emulation** (![Toggle Device Toolbar](../icons/toggle-device-toolbar-dark-icon.png)) or select **Customize and control DevTools** (`...`) > **Device Emulation** to open the UI that enables you to simulate a mobile viewport.
 
 ![The Device Toolbar](./index-images/device-mode-toggle-device-toolbar-highlighted.png)
 
@@ -103,7 +103,7 @@ To simulate the dimensions of a specific mobile device, select the device from t
 
 Test your webpage in landscape orientation.
 
-1. To rotate the viewport to landscape orientation, select **Rotate** (![Rotate](./index-images/rotate-dark-icon.png)):
+1. To rotate the viewport to landscape orientation, select **Rotate** (![Rotate](../icons/rotate-dark-icon.png)):
 
    ![Page displayed in landscape orientation](./index-images/device-mode-toggle-device-toolbar-landscape.png)
 

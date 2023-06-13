@@ -179,7 +179,7 @@ Use exception breakpoints when you want to pause on the line of code that is thr
 
 1. Select the **Sources** tool.
 
-1. Click **Pause on exceptions** (![Pause on exceptions](./breakpoints-images/pause-on-exceptions-icon.png)).  The icon turns blue when enabled.
+1. Click **Pause on exceptions** (![Pause on exceptions](../icons/pause-on-exceptions-icon.png)).  The icon turns blue when enabled.
 
    ![The Pause on exceptions button](./breakpoints-images/javascript-sources-page-js-pause-on-exceptions.png)
 

@@ -70,7 +70,7 @@ This extra CSS is a problem for the following reasons:
 
    *  Click **Instrument Coverage** (![Instrument Coverage](../icons/record-icon.png)) if you want to see what code is used after interacting with the page.
 
-1. Click **Stop Instrumenting Coverage And Show Results** (![Stop Instrumenting Coverage And Show Results](./index-images/stop-icon.png))<!--todo: check UI string--> when you want to stop recording code coverage.
+1. Click **Stop Instrumenting Coverage And Show Results** (![Stop Instrumenting Coverage And Show Results](../icons/stop-icon.png))<!--todo: check UI string--> when you want to stop recording code coverage.
 
 
 <!-- ====================================================================== -->

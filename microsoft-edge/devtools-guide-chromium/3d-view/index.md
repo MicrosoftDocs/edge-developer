@@ -34,7 +34,7 @@ To zoom the webpage in or out on the 3D canvas, use the mouse scroll wheel, or u
 <!-- instance 1 of this section, keep synd'c -->
 ### Pan view (button)
 
-To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon](index-images/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
+To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon](../icons/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
 
 <!-- no right-click
 To pan around the DOM, right-click and drag in the direction you want the DOM to move.
@@ -44,7 +44,7 @@ To pan around the DOM, right-click and drag in the direction you want the DOM to
 <!-- instance 1 of this section, keep synd'c -->
 ### Rotate view (button)
 
-To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
+To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon](../icons/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
 
 To rotate the page by using the keyboard, click in the 3D canvas to put focus on it so that a black border appears, and then press the arrow keys.
 *  To rotate the page horizontally, press the **Left Arrow** or **Right Arrow** key.
@@ -193,20 +193,20 @@ In the **DOM** tab, You can choose from the following color schemes visualize th
 
 ### Retake snapshot (button)
 
-Click the **Retake snapshot** (![The 'Retake snapshot' icon](index-images/retake-snapshot-icon.png)) button to re-load the DOM to match the latest webpage viewport.  For example, after you make the viewport narrower or when you switch to a Device Emulation view, per [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
+Click the **Retake snapshot** (![The 'Retake snapshot' icon](../icons/retake-snapshot-icon.png)) button to re-load the DOM to match the latest webpage viewport.  For example, after you make the viewport narrower or when you switch to a Device Emulation view, per [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
 
 When the **Composited Layers** tab is selected, this button is omitted, because retaking the snapshot happens automatically when you resize the viewport.
 
 
 ### Reset view (button)
 
-Click the **Reset view** button (![The 'Reset view' icon](index-images/reset-view-icon.png)) to reset the panning and rotation of the page.
+Click the **Reset view** button (![The 'Reset view' icon](../icons/reset-view-icon.png)) to reset the panning and rotation of the page.
 
 
 <!-- instance 2 of this section, keep synd'c -->
 ### Pan view (button)
 
-To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon](index-images/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
+To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon](../icons/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
 
 <!-- no right-click
 To pan around the DOM, right-click and drag in the direction you want the DOM to move.
@@ -216,7 +216,7 @@ To pan around the DOM, right-click and drag in the direction you want the DOM to
 <!-- instance 2 of this section, keep synd'c -->
 ### Rotate view (button)
 
-To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
+To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon](../icons/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
 
 To rotate the page by using the keyboard, click in the 3D canvas to put focus on it so that a black border appears, and then press the arrow keys.
 *  To rotate the page horizontally, press the **Left Arrow** or **Right Arrow** key.

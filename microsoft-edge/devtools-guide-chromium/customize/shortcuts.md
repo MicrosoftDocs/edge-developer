@@ -48,7 +48,7 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
 1. Select the action you want to customize.  For example, in the **Debugger** section, select the **Pause script execution** action.
 
-1. Click the **Edit** (![EditKeyboardShortcut](./shortcuts-images/edit-keyboard-shortcut-icon.png)) icon.
+1. Click the **Edit** (![EditKeyboardShortcut](../icons/edit-keyboard-shortcut-icon.png)) icon.
 
    ![Select the action to customize from the Shortcuts page in Settings](./shortcuts-images/experiments-custom-keyboard-shortcuts-select-action.png)
 
@@ -58,7 +58,7 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
    ![Select the keys you want to assign to the action](./shortcuts-images/experiments-custom-keyboard-shortcuts-enter-key.png)
 
-1. To save your new keyboard shortcut, select the checkmark (![CheckmarkKeyboardShortcut](./shortcuts-images/checkmark-keyboard-shortcut-icon.png)) icon.
+1. To save your new keyboard shortcut, select the checkmark (![CheckmarkKeyboardShortcut](../icons/checkmark-keyboard-shortcut-icon.png)) icon.
 
    ![Select the checkmark icon to save your new keyboard shortcut](./shortcuts-images/experiments-custom-keyboard-shortcuts-save-shortcut.png)
 
@@ -71,13 +71,13 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
 *  If there's a **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](../icons/custom-keyboard-shortcut-icon.png)) icon displayed next to a checkbox, it indicates that you have customized the keyboard shortcut.
 
-*  To remove a keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, click the **Delete shortcut** (![DeleteKeyboardShortcut](./shortcuts-images/delete-keyboard-shortcut-icon.png)) icon.
+*  To remove a keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, click the **Delete shortcut** (![DeleteKeyboardShortcut](../icons/delete-keyboard-shortcut-icon.png)) icon.
 
 *  To add an additional keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, click the **Add a shortcut** link, or click the **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](../icons/custom-keyboard-shortcut-icon.png)) icon.
 
-*  To save a modified or added keyboard shortcut while you are editing the keyboard shortcuts for an action, click the checkmark (![CheckmarkKeyboardShortcut](./shortcuts-images/checkmark-keyboard-shortcut-icon.png)) icon.
+*  To save a modified or added keyboard shortcut while you are editing the keyboard shortcuts for an action, click the checkmark (![CheckmarkKeyboardShortcut](../icons/checkmark-keyboard-shortcut-icon.png)) icon.
 
-*  To discard your changes while you are editing the keyboard shortcuts for an action, click the X (![XKeyboardShortcut](./shortcuts-images/discard-changes-keyboard-shortcut-icon.png)) icon.
+*  To discard your changes while you are editing the keyboard shortcuts for an action, click the X (![XKeyboardShortcut](../icons/discard-changes-keyboard-shortcut-icon.png)) icon.
 
 *  To reset all shortcuts, click the **Restore default shortcuts** button.
 

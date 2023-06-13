@@ -58,7 +58,7 @@ The **Network** tool is also available by default:
 
 ![Microsoft Edge Developer Tools for Visual Studio: Network tool of DevTools](./devtools-images/devtools-extension-visual-studio-network.png)
 
-The **Inspect tool** (![Inspect tool icon](../../media/2022/03/v-s-edge-devtools-inspect-tool-icon.png)) and **Toggle screencast** (![Toggle screencast icon](../../media/2022/03/v-s-edge-devtools-toggle-screencast-icon.png)) are available, and the **More Tools** (![More Tools icon](./devtools-images/more-tools-v-s-icon.png)) menu offers the [Issues](../../../issues/index.md), [Network conditions](../../../network-conditions/network-conditions-tool.md), and [Network request blocking](../../../network-request-blocking/network-request-blocking-tool.md) tools.
+The **Inspect tool** (![Inspect tool icon](../../../icons/v-s-edge-devtools-inspect-tool-icon.png)) and **Toggle screencast** (![Toggle screencast icon](../../../icons/v-s-edge-devtools-toggle-screencast-icon.png)) are available, and the **More Tools** (![More Tools icon](../../../icons/more-tools-v-s-icon.png)) menu offers the [Issues](../../../issues/index.md), [Network conditions](../../../network-conditions/network-conditions-tool.md), and [Network request blocking](../../../network-request-blocking/network-request-blocking-tool.md) tools.
 
 See also:
 
@@ -98,8 +98,8 @@ Recording a performance profile in the Performance tool produces a minified flam
 
 Starting in Microsoft Edge version 99, you can display your original function names in a performance profile, as follows:
 1. Record a profile, in the **Performance** tool.
-1. Click the new **Unminify** (![The Unminify icon](./devtools-images/unminify-icon.png)) button to create and download the unminified performance profile.
-1. Load (import) (![The Load profile icon](./devtools-images/load-profile-icon.png)) the unminified performance profile into the **Performance** tool.
+1. Click the new **Unminify** (![The Unminify icon](../../../icons/unminify-icon.png)) button to create and download the unminified performance profile.
+1. Load (import) (![The Load profile icon](../../../icons/load-profile-icon.png)) the unminified performance profile into the **Performance** tool.
 
 The **Unminify** button will use source maps, provided that they are hosted side-by-side with your production code, to unminify function names in the flame chart in the **Performance** tool.
 
@@ -107,7 +107,7 @@ The flame chart in the **Performance** tool initially shows function names as **
 
 ![Minified function names in the flame chart in the Performance tool](./devtools-images/minified-call-stack-performance-tool.png)
 
-After clicking **Unminify** (![Unminify icon](./devtools-images/unminify-icon.png)) and then **Load profile** (![Load profile icon](./devtools-images/load-profile-icon.png)), the flame chart in the **Performance** tool now shows those functions labeled with meaningful names: **invokeFunc (b)**, **executeAction (O)**, **endBatch (Xt)**, and **runReactions (bn)**, retrieved from your source maps:
+After clicking **Unminify** (![Unminify icon](../../../icons/unminify-icon.png)) and then **Load profile** (![Load profile icon](../../../icons/load-profile-icon.png)), the flame chart in the **Performance** tool now shows those functions labeled with meaningful names: **invokeFunc (b)**, **executeAction (O)**, **endBatch (Xt)**, and **runReactions (bn)**, retrieved from your source maps:
 
 ![Unminified function names in the flame chart in the Performance tool](./devtools-images/unminified-call-stack-performance-tool.png)
 

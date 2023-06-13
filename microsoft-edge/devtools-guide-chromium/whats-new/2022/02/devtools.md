@@ -108,7 +108,7 @@ See also:
 <!-- Title: Fix: Icons and tags in the DevTools are now aligned -->
 <!-- Subtitle: Icons for service workers and script tags in the Elements tool now appear as expected. -->
 
-In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse triangle icon](./devtools-images/expand-collapse-triangle-icon.png)) icons in the **Service Workers** section of the **Application** tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icons.  In Microsoft Edge 98, this issue has been fixed:
+In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse triangle icon](../../../icons/expand-collapse-triangle-icon.png)) icons in the **Service Workers** section of the **Application** tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icons.  In Microsoft Edge 98, this issue has been fixed:
 
 ![The icons in the Service Workers section of the Application tool are now aligned, so the Expand/Collapse icons are now fully visible](./devtools-images/service-worker-icons-aligned-expand-icon-visible.png)
 

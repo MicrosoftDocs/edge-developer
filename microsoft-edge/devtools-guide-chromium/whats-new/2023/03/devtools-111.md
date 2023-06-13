@@ -42,14 +42,14 @@ In Microsoft Edge 111, you can now access these theme and vision deficiency emul
 
 For example, to emulate high contrast mode and test how your web content responds:
 
-1. In the **Device Mode** toolbar, to the right of the **Throttling** dropdown list, click **Emulate Media Features** (the Eyedropper icon, ![Eyedropper icon](./devtools-111-images/eyedropper-device-mode-icon.png)).
+1. In the **Device Mode** toolbar, to the right of the **Throttling** dropdown list, click **Emulate Media Features** (the Eyedropper icon, ![Eyedropper icon](../../../icons/eyedropper-device-mode-icon.png)).
 1. Select **forced-colors: active**:
 
 ![Emulating high contrast mode directly from the Device Mode toolbar](./devtools-111-images/new-emulation-options-hc-mode.png)
 
 You can also emulate vision deficiencies by clicking the Eye icon next to the Eyedropper icon.  For example, to emulate blurred vision:
 
-1. Click **Emulate Vision Deficiency** (the eye icon, ![Eye icon](./devtools-111-images/eye-device-mode-icon.png)).
+1. Click **Emulate Vision Deficiency** (the eye icon, ![Eye icon](../../../icons/eye-device-mode-icon.png)).
 1. Select **Blurred vision**:
 
 ![Emulating blurred vision directly from the Device Mode toolbar](./devtools-111-images/new-emulation-options-blurred-vision.png)
@@ -89,11 +89,11 @@ See also:
 
 <!-- Subtitle: In previous versions of Microsoft Edge, the Styles pane of the Elements tool didn't provide easy access to all of the sections within it. This issue has now been fixed in Microsoft Edge 111. -->
 
-In previous versions of Microsoft Edge, in **Focus Mode**, the **Elements** tool didn't provide an easy way to access all of the tabs within the **Styles** pane.  In Microsoft Edge 111, this issue has been fixed. When the **Styles** pane has a narrow viewport and can't display all of the other available tabs, click the **More tabs** expander icon (![More tabs expander icon](./devtools-111-images/more-tools-expand-icon.png)):
+In previous versions of Microsoft Edge, in **Focus Mode**, the **Elements** tool didn't provide an easy way to access all of the tabs within the **Styles** pane.  In Microsoft Edge 111, this issue has been fixed. When the **Styles** pane has a narrow viewport and can't display all of the other available tabs, click the **More tabs** expander icon (![More tabs expander icon](../../../icons/more-tools-expand-icon.png)):
 
 ![The collapsed tab-set in the Styles pane in Focus Mode](./devtools-111-images/collapsed-menu-for-styles-pane.png)
 
-To display only a few of the tabs within the **Styles** pane, click the **More tabs** collapser icon (![More tabs collapser icon](./devtools-111-images/more-tools-collapse-icon.png)):
+To display only a few of the tabs within the **Styles** pane, click the **More tabs** collapser icon (![More tabs collapser icon](../../../icons/more-tools-collapse-icon.png)):
 
 ![The expanded tab-set in the Styles pane in Focus Mode](./devtools-111-images/expanded-menu-for-styles-pane.png)
 

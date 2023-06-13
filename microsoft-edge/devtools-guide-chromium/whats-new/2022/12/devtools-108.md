@@ -85,7 +85,7 @@ See also:
 
 <!-- Subtitle: The Sources tool in Focus Mode will warn you when you disable JavaScript in the DevTools. -->
 
-In previous versions of Microsoft Edge, in Focus Mode, disabling JavaScript in the DevTools didn't produce a visual indication in the **Sources** tool.  In Microsoft Edge version 107, this issue has been fixed.  Disabling JavaScript will now produce a warning icon (![JavaScript Disabled warning icon](./devtools-108-images/javascript-disabled-warning-icon.png)) next to the **Sources** tool icon on the Activity Bar.
+In previous versions of Microsoft Edge, in Focus Mode, disabling JavaScript in the DevTools didn't produce a visual indication in the **Sources** tool.  In Microsoft Edge version 107, this issue has been fixed.  Disabling JavaScript will now produce a warning icon (![JavaScript Disabled warning icon](../../../icons/javascript-disabled-warning-icon.png)) next to the **Sources** tool icon on the Activity Bar.
 
 1. Open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 

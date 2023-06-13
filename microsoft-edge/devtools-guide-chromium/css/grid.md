@@ -162,7 +162,7 @@ To open the color picker and customize the grid overlay color, click the box nex
 
 ### Highlight the grid
 
-To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](./grid-images/show-element-in-element-panel-icon.png)) icon.
+To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](../icons/show-element-in-element-panel-icon.png)) icon.
 
 ![Highlight the grid](./grid-images/grid-grid-overlays-highlight.png)
 

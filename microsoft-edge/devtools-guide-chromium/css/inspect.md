@@ -29,7 +29,7 @@ To try out the **Inspect** tool:
 
    ![The Inspect tool button in the upper left of DevTools](./inspect-images/inspect-tool-button.png)
 
-   The button icon turns blue (![The Inspect icon](./inspect-images/inspect-tool-icon-blue-light-theme.png)), indicating that the **Inspect** tool is active.
+   The button icon turns blue (![The Inspect icon](../icons/inspect-tool-icon-blue-light-theme.png)), indicating that the **Inspect** tool is active.
 
 1. In the rendered webpage, hover over items and watch the information overlay and grid highlighting.
 

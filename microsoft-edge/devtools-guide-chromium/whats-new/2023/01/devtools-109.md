@@ -38,14 +38,14 @@ To try the enhanced traces feature:
 
 1. In the **Performance** tool, take a recording.
 
-1. Click the **Save profile** (![Save profile icon](./devtools-109-images/save-profile-icon.png)) button.
+1. Click the **Save profile** (![Save profile icon](../../../icons/save-profile-icon.png)) button.
 
 1. In the **Save As** dialog, save the new `.devtools` file.
 
 
 **Importing:**
 
-1. Import the `.devtools` file from within the **Performance** tool by clicking the **Load profile** (![Load profile icon](./devtools-109-images/load-profile-icon.png)) button:
+1. Import the `.devtools` file from within the **Performance** tool by clicking the **Load profile** (![Load profile icon](../../../icons/load-profile-icon.png)) button:
 
    ![Importing a trace from within the Performance tool](./devtools-109-images/enhanced-trace-import.png)
 

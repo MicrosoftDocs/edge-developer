@@ -192,7 +192,7 @@ See also:
 <!-- ====================================================================== -->
 #### View the Computed sidebar pane in the Styles pane
 
-Toggle the **Computed** pane in the **Styles** pane.  The **Computed** pane in the **Styles** pane is collapsed by default.  To display or hide the **Computed** pane within the **Styles** pane, click the **Show Computed Styles sidebar** (!['Show Computed Styles sidebar' icon](./devtools-images/show-computed-styles-sidebar-icon.png)) button.
+Toggle the **Computed** pane in the **Styles** pane.  The **Computed** pane in the **Styles** pane is collapsed by default.  To display or hide the **Computed** pane within the **Styles** pane, click the **Show Computed Styles sidebar** (!['Show Computed Styles sidebar' icon](../../../icons/show-computed-styles-sidebar-icon.png)) button.
 
 Opening the **Computed sidebar** pane:
 

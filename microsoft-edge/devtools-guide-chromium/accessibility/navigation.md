@@ -70,7 +70,7 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 
 | Action | Resulting tool |
 |---|---|
-| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon](./navigation-images/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools**. | The previously used tool, or the **Welcome** tool. |
+| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon](../icons/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools**. | The previously used tool, or the **Welcome** tool. |
 | Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS). | The **Console** tool. |
 | Press **Ctrl+Shift+C** (Windows, Linux) or **Command+Option+C** (macOS). | The **Elements** tool, with the DOM tree expanded to show the `<body>` element. |
 | Press **Shift+F10** to open the right-click menu.  To select the **Inspect** command, press **Up Arrow** and then **Enter**. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |

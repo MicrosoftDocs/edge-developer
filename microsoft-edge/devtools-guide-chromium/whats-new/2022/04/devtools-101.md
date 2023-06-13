@@ -77,7 +77,7 @@ To learn more about the available columns in the request log, see [Network featu
 <!-- Title: Improvements to the 3D View tool -->
 <!-- Subtitle: Check out 3D View for updates to the UI and smoother camera controls. -->
 
-In Microsoft Edge 101, the **3D View** tool has two new buttons: **Pan view** (![The 'Pan view' icon](devtools-101-images/pan-view-icon.png)) and **Rotate view** (![The 'Rotate view' icon](devtools-101-images/rotate-view-icon.png)).  Use these buttons to switch between panning around the canvas or rotating the canvas.  Click the **Pan view** or **Rotate view** button, and then drag in the desired direction with your mouse, or use the arrow keys.
+In Microsoft Edge 101, the **3D View** tool has two new buttons: **Pan view** (![The 'Pan view' icon](../../../icons/pan-view-icon.png)) and **Rotate view** (![The 'Rotate view' icon](../../../icons/rotate-view-icon.png)).  Use these buttons to switch between panning around the canvas or rotating the canvas.  Click the **Pan view** or **Rotate view** button, and then drag in the desired direction with your mouse, or use the arrow keys.
 
 The UI now provides a more uniform and intuitive experience.  The panes are organized more clearly, and accessibility issues have been fixed.
 

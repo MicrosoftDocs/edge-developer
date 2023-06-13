@@ -92,7 +92,7 @@ Click the **Console Settings** (![Console Settings icon](../icons/settings-butto
 
 ### Open the Console Sidebar
 
-To display the **Sidebar**, click **Show console sidebar** (![Show console sidebar](./reference-images/show-console-sidebar-icon.png)).  The **Sidebar** helps you filter.
+To display the **Sidebar**, click **Show console sidebar** (![Show console sidebar](../icons/show-console-sidebar-icon.png)).  The **Sidebar** helps you filter.
 
 ![Console Sidebar](./reference-images/console-sidebar-drawer-empty.png)
 
@@ -260,7 +260,7 @@ Suppose you have an ad on your webpage embedded in an `<iframe>`, and you want t
 
 To clear the Console, use any of the following approaches:
 
-*  Click **Clear Console** (![Clear Console](./reference-images/clear-console-button-icon.png)).
+*  Click **Clear Console** (![Clear Console](../icons/clear-console-button-icon.png)).
 
 *  Right-click a message and then select **Clear Console**.
 

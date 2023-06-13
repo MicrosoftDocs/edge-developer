@@ -30,7 +30,7 @@ This page lists the ways to customize Microsoft Edge DevTools.
 
 **Settings** > **Preferences** contains many options for customizing DevTools.
 
-To open Settings, in DevTools, click the **Settings** icon (![Settings icon](./index-images/settings-icon-dark.png)).  Or, while DevTools has focus, press **F1**.
+To open Settings, in DevTools, click the **Settings** icon (![Settings icon](../icons/settings-icon-dark.png)).  Or, while DevTools has focus, press **F1**.
 
 ![Settings](./index-images/customize-settings-preferences.png)
 
@@ -68,11 +68,11 @@ By default, the **Network** tool is usually the fifth tab on the main toolbar.  
 <!-- ====================================================================== -->
 ## Open and close tools
 
-To keep the DevTools interface streamlined, many of the tools aren't opened by default.  To open a tool in the main panel or the **Drawer**, click the **More Tools** (![More Tools](./index-images/open-tab-icon.png)) button to the right of the tabs, and then select a tool from the list.
+To keep the DevTools interface streamlined, many of the tools aren't opened by default.  To open a tool in the main panel or the **Drawer**, click the **More Tools** (![More Tools](../icons/open-tab-icon.png)) button to the right of the tabs, and then select a tool from the list.
 
 ![The More Tools (+) button to open a new tool](./index-images/open-tool-in-main-panel-or-drawer.png)
 
-To close a tool, select the **Close** (![Close Tool](./index-images/close-tab-icon.png)) button in the tool's tab.
+To close a tool, select the **Close** (![Close Tool](../icons/close-tab-icon.png)) button in the tool's tab.
 
 ![The tab's Close button](./index-images/close-tool-in-main-panel-or-drawer.png)
 

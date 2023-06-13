@@ -132,7 +132,7 @@ You are paused on `A`.  After you click **Step into**, DevTools runs this line o
 <!-- ------------------------------ -->
 #### Step out of line of code
 
-When paused inside of a function that isn't related to the problem you are debugging, click the **Step out** (![Step out](./reference-images/step-out-icon.png)) button to run the rest of the code of the function.
+When paused inside of a function that isn't related to the problem you are debugging, click the **Step out** (![Step out](../icons/step-out-icon.png)) button to run the rest of the code of the function.
 
 ![Clicking Step out](./reference-images/javascript-source-page-debugger-step-out-of-current-function.png)
 
@@ -200,7 +200,7 @@ To continue the runtime after a pause of your script, click the **Resume script 
 <!-- ------------------------------ -->
 #### Force script runtime
 
-To ignore all breakpoints and force your script to continue to run, click and hold the **Resume script execution** (![Resume script execution](../icons/resume-script-run-icon.png)) button and then click the **Force script execution** (![Force script execution](./reference-images/force-script-run-icon.png)) button.
+To ignore all breakpoints and force your script to continue to run, click and hold the **Resume script execution** (![Resume script execution](../icons/resume-script-run-icon.png)) button and then click the **Force script execution** (![Force script execution](../icons/force-script-run-icon.png)) button.
 
 ![Clicking the Force script execution button](./reference-images/javascript-sources-get-started-js-force-script-runtime.png)
 
@@ -237,7 +237,7 @@ Use the **Watch** pane to watch the values of custom expressions.  You can watch
 
 *  To refresh the values of all existing expressions, click the **Refresh** (![Refresh](../icons/refresh-icon.png)) button.  Values automatically refresh while stepping through code.
 
-*  To delete a watch expression, right-click the expression and then select **Delete watch expression** (![Delete watch expression](./reference-images/delete-expression-icon.png)).
+*  To delete a watch expression, right-click the expression and then select **Delete watch expression** (![Delete watch expression](../icons/delete-expression-icon.png)).
 
 
 <!-- ====================================================================== -->

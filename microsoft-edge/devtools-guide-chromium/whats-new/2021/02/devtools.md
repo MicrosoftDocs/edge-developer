@@ -93,11 +93,11 @@ To edit a keyboard shortcut:
 
 1. Select the action you want to customize.
 
-1. Click the **Edit** (![Edit icon](./devtools-images/edit-keyboard-shortcut-icon.png)) icon.
+1. Click the **Edit** (![Edit icon](../../../icons/edit-keyboard-shortcut-icon.png)) icon.
 
 1. Press the keys you want to bind to the action.
 
-1. Click the checkmark (![Checkmark icon](./devtools-images/checkmark-keyboard-shortcut-icon.png)) icon.
+1. Click the checkmark (![Checkmark icon](../../../icons/checkmark-keyboard-shortcut-icon.png)) icon.
 
 For more information about customizing and editing shortcuts, see [Customize keyboard shortcuts in DevTools](../../../customize/shortcuts.md).  For real-time updates on this feature in the Chromium open-source project, see Issue [174309](https://crbug.com/174309).
 

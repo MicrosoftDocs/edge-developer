@@ -163,7 +163,7 @@ The following screenshot shows the **Network** tool and the **Console** tool sid
 
 ![Focus Mode with the Network tool at the top, and the Console tool at the bottom](./focus-mode-images/quick-view-tool.png)
 
-To hide or expand **Quick View**, click **Collapse Quick View** (![Collapse icon](./focus-mode-images/collapse-quick-view-icon.png)) or **Expand Quick View** (![Expand icon](./focus-mode-images/expand-quick-view-icon.png)), or press the **Escape** key.
+To hide or expand **Quick View**, click **Collapse Quick View** (![Collapse icon](../icons/collapse-quick-view-icon.png)) or **Expand Quick View** (![Expand icon](../icons/expand-quick-view-icon.png)), or press the **Escape** key.
 
 
 <!-- ====================================================================== -->

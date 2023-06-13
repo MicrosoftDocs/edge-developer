@@ -89,11 +89,11 @@ The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields 
 <!-- ====================================================================== -->
 ## Delete cookies
 
-To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected](cookies-images/delete-cookie-icon.png)):
+To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected](../icons/delete-cookie-icon.png)):
 
 ![Deleting a specific cookie](cookies-images/delete-selected-cookie.png)
 
-To delete all cookies, click **Clear all cookies** (![Clear all cookies icon](cookies-images/clear-all-cookies-icon.png)):
+To delete all cookies, click **Clear all cookies** (![Clear all cookies icon](../icons/clear-all-cookies-icon.png)):
 
 ![Clearing all cookies](cookies-images/clear-all-cookies.png)
 
