@@ -59,11 +59,11 @@ In other words, a set of animations that are all triggered in the same script bl
 
 To open the Animation Inspector, use any of these approaches, in DevTools:
 
-*  From the **main toolbar** or on the **Drawer**: click the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button, and then select **Animations**.
+*  From the **main toolbar** or on the **Drawer**: click the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button, and then select **Animations**.
 
    ![Animations using Main Menu](./animations-images/inspect-styles-elements-styles-more-tools-animations.png)
 
-*  From the **Customize** menu: Click the **Customize and control DevTools** (![Customize icon](../media/customize-devtools-icon-light-theme.png)) menu button, point to the **More tools** sub-menu, and then select **Animations**.
+*  From the **Customize** menu: Click the **Customize and control DevTools** (![Customize icon](../icons/customize-devtools-icon-light-theme.png)) menu button, point to the **More tools** sub-menu, and then select **Animations**.
 
 *  From the **Command Menu**:  When DevTools has focus, press **Shift+Ctrl+P** on Windows/Linux or **Command+Shift+P** on macOS to open the **Command Menu**, start typing `animations`, and then select **Drawer: Show Animations**.
 
@@ -97,7 +97,7 @@ To capture an animation, just perform the interaction that triggers the animatio
 After you capture an animation, there are a few ways to replay it:
 
 *  Hover on the thumbnail in the **Overview** pane to view a preview of it.
-*  Select the Animation Group from the **Overview** pane (so that it is displayed in the **Details** pane), and then click the **replay** (![replay icon](../media/replay-button-icon.png)) icon.  The animation is replayed in the viewport.  Click the **animation speed** (![animation speed icons](./animations-images/animation-speed-buttons-icon.png)) icons to change the preview speed of the currently selected Animation Group.  You can use the red vertical bar to change your current position.
+*  Select the Animation Group from the **Overview** pane (so that it is displayed in the **Details** pane), and then click the **replay** (![replay icon](../icons/replay-button-icon.png)) icon.  The animation is replayed in the viewport.  Click the **animation speed** (![animation speed icons](./animations-images/animation-speed-buttons-icon.png)) icons to change the preview speed of the currently selected Animation Group.  You can use the red vertical bar to change your current position.
 *  Click and drag the red vertical bar to scrub the viewport animation.
 
 ### View animation details

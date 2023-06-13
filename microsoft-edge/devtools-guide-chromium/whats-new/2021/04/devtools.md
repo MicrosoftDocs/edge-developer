@@ -376,7 +376,7 @@ To view the history of this feature in the Chromium open-source project, see Iss
 
 Find experiments quicker with the new experiment filter.  For example, to turn on new experiments for code issues:
 
-1. In DevTools, select **Settings** (![Settings icon](../../../media/settings-gear-icon-light-theme.png)) > **Experiments**.
+1. In DevTools, select **Settings** (![Settings icon](../../../icons/settings-gear-icon-light-theme.png)) > **Experiments**.
 
 1. In the **Filter** text box, start typing **issues**:
 

@@ -61,7 +61,7 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 
    ![Selecting a resource to refresh](./cache-images/storage-application-cache-storage-domain-refresh.png)
 
-1. Click **Refresh** (![Refresh](../media/refresh-icon.png)).
+1. Click **Refresh** (![Refresh](../icons/refresh-icon.png)).
 
 
 <!-- ====================================================================== -->
@@ -83,7 +83,7 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 
    ![Selecting a resource to delete](./cache-images/storage-application-cache-storage-delete-selected.png)
 
-1. Click **Delete Selected** (![Delete Selected](../media/delete-icon.png)).
+1. Click **Delete Selected** (![Delete Selected](../icons/delete-icon.png)).
 
 
 <!-- ====================================================================== -->

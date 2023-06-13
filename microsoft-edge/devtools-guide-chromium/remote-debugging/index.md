@@ -31,7 +31,7 @@ Remote debug live content on an Android device from your Windows or macOS comput
 *  Screencast content from your Android device onto a DevTools instance on your development machine.
 
 <!--
-![Remote Debugging lets you inspect a page running on an Android device from your development machine](../media/remote-debugging--remote-debugging.png)
+![Remote Debugging lets you inspect a page running on an Android device from your development machine](../icons/remote-debugging--remote-debugging.png)
 -->
 
 > [!NOTE]
@@ -61,7 +61,7 @@ The workflow below works for most users.  For more help, see [Troubleshooting: D
 1. If the model name of your Android device is displayed, then Microsoft Edge has successfully established the connection to your device.  Continue to the [Step 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) section.
 
    <!--
-   ![The Remote Devices tab has successfully detected an unknown device that is pending authorization](../media/remote-debugging--unknown-device.png)
+   ![The Remote Devices tab has successfully detected an unknown device that is pending authorization](../icons/remote-debugging--unknown-device.png)
    -->
 
 ### Troubleshooting: DevTools isn't detecting the Android device
@@ -121,7 +121,7 @@ You can also tap an element on your Android device screen to select it in the **
 
 ### Screencast your Android screen to your development machine
 
-Click the **Toggle Screencast** (![Toggle Screencast](../media/toggle-screencast-icon.png)) icon to view the content of your Android device in your DevTools instance.
+Click the **Toggle Screencast** (![Toggle Screencast](../icons/toggle-screencast-icon.png)) icon to view the content of your Android device in your DevTools instance.
 
 You can interact with the screencast in multiple ways:
 

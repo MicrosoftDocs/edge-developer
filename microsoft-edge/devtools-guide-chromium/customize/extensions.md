@@ -33,7 +33,7 @@ To install a DevTools extension:
 
 1. Open a new tab and go to a page that uses React. For example, use the [TodoMVC React example page](https://todomvc.com/examples/react/#/).
 
-1. Open DevTools by pressing **F12**. Two new tabs are displayed in the main toolbar: **Components** and **Profiler**. If you don't see the new tabs, make the DevTools window wider, or click **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)).
+1. Open DevTools by pressing **F12**. Two new tabs are displayed in the main toolbar: **Components** and **Profiler**. If you don't see the new tabs, make the DevTools window wider, or click **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)).
 
     ![DevTools, showing the 2 new React extension panels](extensions-images/react-extensions-panels.png)
 

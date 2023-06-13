@@ -40,7 +40,7 @@ Record runtime performance when you want to analyze the performance of a page as
 
 1. Click the **Performance** tool in DevTools.
 
-1. Click the **Record** (![Record icon](../media/record-icon.png)) button.
+1. Click the **Record** (![Record icon](../icons/record-icon.png)) button.
 
    ![Record](./reference-images/evaluate-performance-performance-record-highlight.png)
 
@@ -58,7 +58,7 @@ Record load performance when you want to analyze the performance of a page as it
 
 1. In DevTools, open the **Performance** tool.
 
-1. Click the **Refresh page** (![Refresh Page](../media/refresh-page-icon.png)) button.  DevTools records performance metrics while the page refreshes and then automatically stops the recording a couple seconds after the load finishes.
+1. Click the **Refresh page** (![Refresh Page](../icons/refresh-page-icon.png)) button.  DevTools records performance metrics while the page refreshes and then automatically stops the recording a couple seconds after the load finishes.
 
 ![Refresh page](./reference-images/evaluate-performance-performance-refresh-button.png)
 
@@ -80,7 +80,7 @@ To learn how to interact with screenshots, see [View a screenshot](#view-a-scree
 <!-- ------------------------------ -->
 #### Force garbage collection while recording
 
-While you are recording a page, click **Collect garbage** (![Collect garbage icon](../media/collect-garbage-icon.png)) to force garbage collection.
+While you are recording a page, click **Collect garbage** (![Collect garbage icon](../icons/collect-garbage-icon.png)) to force garbage collection.
 
 ![Collect garbage](./reference-images/evaluate-performance-performance-collect-garbage-button.png)
 
@@ -88,7 +88,7 @@ While you are recording a page, click **Collect garbage** (![Collect garbage ico
 <!-- ------------------------------ -->
 #### Show recording settings
 
-Click **Capture settings** (![Capture settings](../media/capture-settings-icon.png)) to expose more settings related to how DevTools captures performance recordings.
+Click **Capture settings** (![Capture settings](../icons/capture-settings-icon.png)) to expose more settings related to how DevTools captures performance recordings.
 
 ![The Capture Settings section](./reference-images/evaluate-performance-performance-capture-settings-button-open-drawer.png)
 
@@ -210,7 +210,7 @@ Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS) to open the search bo
 
 To navigate activities that match your query:
 
-1. Click the **Previous** (![Previous](../media/previous-icon.png)) and **Next** (![Next](./reference-images/next-icon.png)) buttons.
+1. Click the **Previous** (![Previous](../icons/previous-icon.png)) and **Next** (![Next](./reference-images/next-icon.png)) buttons.
 
 1. To select the next activity, press **Enter**.  To select the previous activity, press **Shift+Enter**.
 

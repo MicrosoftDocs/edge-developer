@@ -585,13 +585,13 @@ To preview the [latest features coming to DevTools](whats-new/2021/02/devtools.m
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **__** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **__** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button.
 
 
 don't need, if have the above step:
-1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button, and then select **(toolname)**.
+1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button, and then select **(toolname)**.
 
-1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
+1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button.
 
 
 #### Clipboard entry for opening a specific Settings page:
@@ -599,7 +599,7 @@ don't need, if have the above step:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../icons/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
 
 1. On the left side of the **Settings** panel, select the **__** page.
 -->

@@ -49,7 +49,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
    ![Highlighting the Michelangelo node](./index-images/dom-glitch-dom-examples-michelangelo-elements-highlighted.png)
 
-1. Click the **Inspect** (![Inspect](../media/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools.
+1. Click the **Inspect** (![Inspect](../icons/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools.
 
    ![The Inspect icon](./index-images/dom-elements-highlighted-select-element-page-inspect.png)
 
@@ -319,7 +319,7 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
    ![The Sources tool showing the line of code that caused the attribute to change](./index-images/dom-break-attribute-modifications-sources-paused-on.png)
 
-1. Click **Resume Script** (![Resume Script](../media/resume-script-icon.png)) to resume the JavaScript execution.
+1. Click **Resume Script** (![Resume Script](../icons/resume-script-icon.png)) to resume the JavaScript execution.
 
 ### Break on node removal
 
@@ -333,7 +333,7 @@ If you want to pause when a particular node is removed, use node removal breakpo
 
 1. Click the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.
 
-1. Select **Resume Script** (![Resume Script](../media/resume-script-icon.png)).
+1. Select **Resume Script** (![Resume Script](../icons/resume-script-icon.png)).
 
 ### Break on subtree modifications
 
@@ -347,7 +347,7 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 
 1. Click **Add Child**.  The code pauses because a `<p>` node was added to the list.
 
-1. Select **Resume Script** (![Resume Script](../media/resume-script-icon.png)).
+1. Select **Resume Script** (![Resume Script](../icons/resume-script-icon.png)).
 
 
 <!-- ====================================================================== -->

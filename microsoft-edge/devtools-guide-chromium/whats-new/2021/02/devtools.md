@@ -217,7 +217,7 @@ The [color-gamut](https://www.chromestatus.com/feature/5354410980933632) media q
 To emulate the CSS color-gamut media feature:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
-1. In DevTools, on the main toolbar, select the **Rendering** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../../../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../../../media/more-tools-icon-light-theme.png)) button.  The **Rendering** tool opens.
+1. In DevTools, on the main toolbar, select the **Rendering** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../../../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../../../icons/more-tools-icon-light-theme.png)) button.  The **Rendering** tool opens.
 1. In the **Emulate CSS media feature color-gamut** dropdown, select a **color-gamut** option:
 
 ![Emulate the CSS color-gamut media feature](./devtools-images/rendering-css-color-gamut.png)

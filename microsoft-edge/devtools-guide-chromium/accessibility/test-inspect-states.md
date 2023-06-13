@@ -49,7 +49,7 @@ First, confirm that your animations run when not using the Inspect tool:
 
 Next, confirm that your animations don't run when using the Inspect tool:
 
-1. Click the **Inspect** tool (![Inspect tool icon](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools.
+1. Click the **Inspect** tool (![Inspect tool icon](../icons/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools.
 
    The **Inspect** tool icon is highlighted; for example, it changes from gray to blue.
 
@@ -73,7 +73,7 @@ To turn on the hover state while using the Inspect tool:
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. Click the **Inspect** (![Inspect tool button](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1. Click the **Inspect** (![Inspect tool button](../icons/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1. In the rendered webpage, select the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the element `<a href="#cats">Cats</a>` selected.
 
@@ -93,7 +93,7 @@ To turn on the hover state while using the Inspect tool:
 
     After the simulated state is applied, you can use the **Inspect** tool again to check the contrast of the element when the user hovers over it, as follows.
 
-1. Select the **Inspect** (![Inspector icon](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1. Select the **Inspect** (![Inspector icon](../icons/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1. Hover over the blue **Cats** link in the sidebar navigation menu.  The link is now light blue, because of the simulated hover animation.  The **Inspect** tool's information overlay appears, showing an orange exclamation point in the **Contrast** row, indicating that the contrast isn't high enough.
 

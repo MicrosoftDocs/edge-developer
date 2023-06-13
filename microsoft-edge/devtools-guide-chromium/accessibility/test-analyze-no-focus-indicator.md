@@ -23,7 +23,7 @@ To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link 
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. Click the **Inspect** (![Inspect icon](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
+1. Click the **Inspect** (![Inspect icon](../icons/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
 1. Hover over the blue **Cats** link in the page's sidebar navigation menu.  The Inspect overlay appears, showing that the `a` element is keyboard-focusable.  But the overlay doesn't show that there's no visual indication when the link has focus.
 

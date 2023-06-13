@@ -13,7 +13,7 @@ The **Issues** tool includes an **Accessibility** section that automatically rep
 
 There are several ways to open the **Issues** tool, such as:
 
-*  Click the **Issues counter** (![Issues counter](../media/issues-counter-icon.png)) in the upper right of DevTools.
+*  Click the **Issues counter** (![Issues counter](../icons/issues-counter-icon.png)) in the upper right of DevTools.
 
 *  In the **Elements** tool, in the DOM tree, press **Shift** while clicking a wavy underline on an element.
 
@@ -27,7 +27,7 @@ There are several ways to open the **Issues** tool, such as:
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-   In the upper right, the **Issues counter** (![Issues counter](../media/issues-counter-icon.png)) appears.  The **Issues counter** is a speech-bubble icon along with the number of automatically detected issues.
+   In the upper right, the **Issues counter** (![Issues counter](../icons/issues-counter-icon.png)) appears.  The **Issues counter** is a speech-bubble icon along with the number of automatically detected issues.
 
    ![The Issues counter in DevTools, indicating how many problems there are in the current document](./test-issues-tool-images/a11y-testing-issues-tracker.png)
 
@@ -49,7 +49,7 @@ To check whether input fields have labels connected to them, use the **Issues** 
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. In the upper right, click the **Issues counter** (![Issues counter](../media/issues-counter-icon.png)).  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
+1. In the upper right, click the **Issues counter** (![Issues counter](../icons/issues-counter-icon.png)).  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
 
 1. On the **Issues** tab, expand the **Accessibility** section.
 

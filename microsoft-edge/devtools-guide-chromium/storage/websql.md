@@ -67,7 +67,7 @@ DevTools doesn't update tables in real-time.  To update the data in a table:
 
 1. [View the data in a Web SQL table](#view-web-sql-data).
 
-1. Click **Refresh** (![Refresh](../media/refresh-icon.png)).
+1. Click **Refresh** (![Refresh](../icons/refresh-icon.png)).
 
 
 <!-- ====================================================================== -->

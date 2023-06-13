@@ -72,7 +72,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. Click the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
 
-1. Press `Delete` or click **Delete Selected** (![Delete Selected](../media/delete-icon.png)).
+1. Press `Delete` or click **Delete Selected** (![Delete Selected](../icons/delete-icon.png)).
 
 
 <!-- ====================================================================== -->
@@ -80,7 +80,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).
 
-1. Click **Clear All** (![Clear All](../media/clear-icon.png)).
+1. Click **Clear All** (![Clear All](../icons/clear-icon.png)).
 
 
 <!-- ====================================================================== -->

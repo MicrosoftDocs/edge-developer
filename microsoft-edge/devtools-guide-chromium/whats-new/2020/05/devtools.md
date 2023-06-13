@@ -56,7 +56,7 @@ From your [feedback](../../../contact.md) and the [Chromium public issue tracker
 
 To try the experiment:
 
-1. In DevTools, open **Settings** by pressing **?** or clicking the **Settings** (![Devtools Settings icon](../../../media/settings-icon.png)) icon in DevTools.
+1. In DevTools, open **Settings** by pressing **?** or clicking the **Settings** (![Devtools Settings icon](../../../icons/settings-icon.png)) icon in DevTools.
 
 1. In the **Experiments** section, select the checkbox **Enable custom keyboard shortcuts settings tab (requires reload)**.
 

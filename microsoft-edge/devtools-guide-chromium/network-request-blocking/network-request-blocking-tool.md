@@ -25,7 +25,7 @@ To block a network request:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, on the main toolbar, click the **Network request blocking** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, click the **Network request blocking** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button.
 
 1. Click the **Add pattern** (![Add pattern icon](./network-request-blocking-tool-images/add-pattern-icon.png)) button.  The **Enable network request blocking** checkbox is automatically selected.
 
@@ -93,7 +93,7 @@ To block network requests by using the **Network** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Network** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, click the **Network** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button.
 
 1. In the table of network requests in the bottom pane, find the network request that you want to block.
 
@@ -111,13 +111,13 @@ To try the **Network request blocking** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Network request blocking** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Network request blocking** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button.
 
    The page content is displayed:
 
    ![The Network request blocking tool, not blocking any URL patterns, showing webpage content](./network-request-blocking-tool-images/network-request-blocking-tool-not-blocked.png)
 
-1. In the the **Network request blocking** panel, click the **Add pattern** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) icon or the **Add pattern** button, if it's displayed.
+1. In the the **Network request blocking** panel, click the **Add pattern** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) icon or the **Add pattern** button, if it's displayed.
 
 1. In the **Text pattern to block matching requests** text box, paste the following URL path, and then click the **Add** button:
 

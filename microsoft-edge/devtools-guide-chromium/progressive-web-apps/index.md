@@ -70,7 +70,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Choosing on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
 <!--
-![Add to desktop shelf](../media/io.png)
+![Add to desktop shelf](../icons/io.png)
 -->
 
 <!--
@@ -129,7 +129,7 @@ The **Service Workers** pane in the **Application** panel is the main place in D
 If the service worker causes any errors, a new label called **Errors** shows up.
 
 <!--
-![Service worker with errors](../media/sw-error.png)
+![Service worker with errors](../icons/sw-error.png)
 -->
 
 <!--TODO:  Capture Service Worker Errors sample when available. -->

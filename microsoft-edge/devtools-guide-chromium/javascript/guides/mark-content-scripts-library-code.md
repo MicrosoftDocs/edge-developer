@@ -26,7 +26,7 @@ When you use the **Sources** tool to step through code, sometimes you pause on c
 
 To avoid pausing on extension code:
 
-1. In DevTools, in the upper right, click the **Settings** (![Settings icon](../../media/settings-gear-icon-light-theme.png)) button.
+1. In DevTools, in the upper right, click the **Settings** (![Settings icon](../../icons/settings-gear-icon-light-theme.png)) button.
 
 1. In the **Settings** > **Ignore List** page, select the **Add content scripts to ignore list** checkbox:
 

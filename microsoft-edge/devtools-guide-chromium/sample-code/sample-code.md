@@ -229,9 +229,9 @@ After downloading or cloning the Demos repo:
 
 1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button.
 
-1. In the **Sources** tab, on the left, select the **Filesystem** tab, which is grouped with the **Page** tab.  If the **Filesystem** tab isn't displayed, click the **More tabs** (![More tabs button](../media/more-tabs-icon-light-theme.png)) button.
+1. In the **Sources** tab, on the left, select the **Filesystem** tab, which is grouped with the **Page** tab.  If the **Filesystem** tab isn't displayed, click the **More tabs** (![More tabs button](../icons/more-tabs-icon-light-theme.png)) button.
 
 1. Click **+ Add folder to workspace**.  A folder selection dialog opens.
 
@@ -264,13 +264,13 @@ To open an `.html` file and edit it:
 
 1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![The More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![The More tabs icon](../icons/more-tabs-icon-light-theme.png)) button.
 
 1. In DevTools, on the left, select the **Page** tab, and then select the HTML file, such as `index.html` or **(index)**.
 
 1. Press **Esc** to open the **Drawer** at the bottom of DevTools.
 
-1. In the Drawer, click the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button, and then select the **Changes** tool.
+1. In the Drawer, click the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button, and then select the **Changes** tool.
 
 1. In the middle, editor pane of the **Sources** tool, edit the `.html` file.  For example, in `demo-to-do/index.html` folder, in the `<h1>` heading line, change **My tasks** to **My modified tasks**:
 

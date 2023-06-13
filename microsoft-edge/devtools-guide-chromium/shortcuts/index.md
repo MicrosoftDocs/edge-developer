@@ -164,7 +164,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Clear the **Console** | **Ctrl+L** | **Command+K** or **Option+L** |
 | Force a multi-line entry.  This shortcut is mostly unnecessary, because DevTools should detect multi-line scenarios by default | **Shift+Enter** | **Command+Return** |
 | Run | **Enter** | **Return** |
-| Expand all subproperties of an object that are logged to the Console | Hold **Alt**, then click **Expand** (![Expand](../media/expand-icon.png)) | Hold **Alt**, then click **Expand** (![Expand](../media/expand-icon.png)). |
+| Expand all subproperties of an object that are logged to the Console | Hold **Alt**, then click **Expand** (![Expand](../icons/expand-icon.png)) | Hold **Alt**, then click **Expand** (![Expand](../icons/expand-icon.png)). |
 
 
 <!-- ====================================================================== -->

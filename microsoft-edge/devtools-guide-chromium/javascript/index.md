@@ -104,7 +104,7 @@ If you step back and think about how the app works, you might make an educated g
 
 1. In the **Debugger** pane, click **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of event categories, such as **Animation** and **Clipboard**.
 
-1. Click **Expand** (![Expand icon](../media/expand-icon.png)) by the **Mouse** event open that category.  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.
+1. Click **Expand** (![Expand icon](../icons/expand-icon.png)) by the **Mouse** event open that category.  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.
 
 1. Select the checkbox next to **click**.  DevTools is now set up to automatically pause when any `click` event listener runs.
 
@@ -116,7 +116,7 @@ If you step back and think about how the app works, you might make an educated g
     if (inputsAreEmpty()) {
     ```
 
-    If you pause on a different line of code, click **Resume Script Execution** (![Resume Script Execution](../media/resume-script-run-icon.png)) until you pause on the correct line.
+    If you pause on a different line of code, click **Resume Script Execution** (![Resume Script Execution](../icons/resume-script-run-icon.png)) until you pause on the correct line.
 
     > [!NOTE]
     > If you paused on a different line, you have a browser extension that registers a `click` event listener on every webpage that you visit.  You are paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you might see that you pause on the desired line of code every time.
@@ -131,7 +131,7 @@ If you step back and think about how the app works, you might make an educated g
 
 One common cause of bugs is when a script runs in the wrong order.  Stepping through your code allows you to walk through the runtime of your code.  You walk through one line at a time to help you figure out exactly where your code is running in a different order than you expect.  Try it now:
 
-1. Click **Step over next function call** (![Step over next function call](../media/step-over-icon.png)).  DevTools runs the following code without stepping into it.
+1. Click **Step over next function call** (![Step over next function call](../icons/step-over-icon.png)).  DevTools runs the following code without stepping into it.
 
     ```javascript
     if (inputsAreEmpty()) {
@@ -140,7 +140,7 @@ One common cause of bugs is when a script runs in the wrong order.  Stepping thr
     > [!NOTE]
     > DevTools skips a few lines of code.  This is because `inputsAreEmpty()` evaluates as false, so the block of code for the `if` statement doesn't run.
 
-1. On the **Sources** tool of DevTools, click **Step into next function call** (![Step into next function call](../media/step-into-icon.png)) to step through the runtime of the `updateLabel()` function, one line at a time.
+1. On the **Sources** tool of DevTools, click **Step into next function call** (![Step into next function call](../icons/step-into-icon.png)) to step through the runtime of the `updateLabel()` function, one line at a time.
 
 That's the basic idea of stepping through code.  If you look at the code in `get-started.js`, you can see that the bug is probably somewhere in the `updateLabel()` function.  Rather than stepping through every line of code, you can use another type of breakpoint (a _line-of-code breakpoint_) to pause the code closer to the probable location of the bug.
 
@@ -158,7 +158,7 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
 
 1. The line number for `label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;` is **34**. Click line **34**.  DevTools displays a red circle to the left of **34**.  The red circle indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before this line of code is run.
 
-1. Click **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.png)).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of each variable to the right of the semi-colon on each line. These values are:
+1. Click **Resume script execution** (![Resume script execution](../icons/resume-script-run-icon.png)).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of each variable to the right of the semi-colon on each line. These values are:
 
    - `addend1` = "5"
    - `addend2` = "1"
@@ -184,7 +184,7 @@ The **Watch** pane allows you to monitor the values of variables (such as `sum`)
 
 1. Select the **Watch** tab.
 
-1. Click **Add watch expression** (![Add watch expression](../media/add-expression-icon.png)).
+1. Click **Add watch expression** (![Add watch expression](../icons/add-expression-icon.png)).
 
 1. Type `typeof sum`.
 
@@ -215,7 +215,7 @@ The **Console** allows you to view `console.log()` output.  You can also use the
 
 We've identified a possible fix for the bug.  Next, edit the JavaScript code directly within the DevTools UI and then rerun the demo to test the fix, as follows.
 
-1. Click **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.png)).
+1. Click **Resume script execution** (![Resume script execution](../icons/resume-script-run-icon.png)).
 
 1. In the **Editor** pane, replace the line `var sum = addend1 + addend2` with `var sum = parseInt(addend1) + parseInt(addend2)`.
 

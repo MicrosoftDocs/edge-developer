@@ -60,7 +60,7 @@ If the `edge://inspect` page doesn't recognize the [Surface Duo emulator](/dual-
 
 1. From the list of open tabs running on the emulator, click **inspect** on the tab that has the web content to be debugged.  [DevTools](../index.md) opens in a new window.
 
-1. Click **Toggle Screencast** (![Toggle Screencast](../media/toggle-screencast-icon.png)) to view the web content from your [Surface Duo emulator](/dual-screen/android/use-emulator) in the DevTools window.
+1. Click **Toggle Screencast** (![Toggle Screencast](../icons/toggle-screencast-icon.png)) to view the web content from your [Surface Duo emulator](/dual-screen/android/use-emulator) in the DevTools window.
 
 You can now use the Microsoft Edge DevTools to debug your web content on the [Surface Duo emulator](/dual-screen/android/use-emulator):
 

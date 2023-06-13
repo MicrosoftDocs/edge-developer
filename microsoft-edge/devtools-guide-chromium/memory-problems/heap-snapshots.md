@@ -222,7 +222,7 @@ You may also be interested in following up the above demo with this example that
 <!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 <!--
-![Name functions to distinguish between closures](../media/memory-problems-domleaks.png)
+![Name functions to distinguish between closures](../icons/memory-problems-domleaks.png)
 -->
 
 

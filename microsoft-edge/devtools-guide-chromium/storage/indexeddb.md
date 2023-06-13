@@ -74,7 +74,7 @@ To view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/Indexe
 
 IndexedDB values in the **Application** tool don't update in real-time.
 
-*  To refresh the data, view an object store and then click **Refresh** (![Refresh](../media/reload-icon.png)).
+*  To refresh the data, view an object store and then click **Refresh** (![Refresh](../icons/reload-icon.png)).
 *  To refresh all data, view a database and click **Refresh database**.
 
 ![View a database](./indexeddb-images/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.png)
@@ -103,7 +103,7 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 
    ![Click a key-value pair in order to delete it](./indexeddb-images/storage-application-storage-indexeddb-notes_db-notes_os2.png)
 
-1. Press `Delete` or click **Delete Selected** (![Delete Selected](../media/delete-icon.png)).
+1. Press `Delete` or click **Delete Selected** (![Delete Selected](../icons/delete-icon.png)).
 
    ![How the object store looks after the key-value pair has been deleted](./indexeddb-images/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.png)
 
@@ -113,7 +113,7 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 
    ![View an object store](./indexeddb-images/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.png)
 
-1. Click **Clear object store** (![Clear object store](../media/clear-icon.png)).
+1. Click **Clear object store** (![Clear object store](../icons/clear-icon.png)).
 
 ### Delete an IndexedDB database
 

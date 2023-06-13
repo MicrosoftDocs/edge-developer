@@ -21,7 +21,7 @@ To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent 
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../icons/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
 
 1. In the **Settings** panel, select the **Shortcuts** page.
 
@@ -42,7 +42,7 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../icons/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
 
 1. In the **Settings** panel, select the **Shortcuts** page.
 
@@ -69,11 +69,11 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
 <!-- keep in same order as screenshot: -->
 
-*  If there's a **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.png)) icon displayed next to a checkbox, it indicates that you have customized the keyboard shortcut.
+*  If there's a **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](../icons/custom-keyboard-shortcut-icon.png)) icon displayed next to a checkbox, it indicates that you have customized the keyboard shortcut.
 
 *  To remove a keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, click the **Delete shortcut** (![DeleteKeyboardShortcut](./shortcuts-images/delete-keyboard-shortcut-icon.png)) icon.
 
-*  To add an additional keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, click the **Add a shortcut** link, or click the **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.png)) icon.
+*  To add an additional keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, click the **Add a shortcut** link, or click the **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](../icons/custom-keyboard-shortcut-icon.png)) icon.
 
 *  To save a modified or added keyboard shortcut while you are editing the keyboard shortcuts for an action, click the checkmark (![CheckmarkKeyboardShortcut](./shortcuts-images/checkmark-keyboard-shortcut-icon.png)) icon.
 

@@ -74,7 +74,7 @@ To configure DevTools:
 
 1. To open DevTools, in Microsoft Edge, right-click a webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, click **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. In DevTools, click **Settings** (![Settings icon](../icons/settings-gear-icon-light-theme.png)) > **Preferences**.
 
 1. Make sure the **Enable JavaScript source maps** checkbox and the **Enable CSS source maps** checkbox are selected:
 

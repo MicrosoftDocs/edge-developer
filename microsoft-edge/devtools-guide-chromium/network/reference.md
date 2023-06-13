@@ -91,7 +91,7 @@ To capture a screenshot:
 <!--  To replay an XHR request, right-click the request in the Requests table, and then click **Replay XHR**.  -->
 
 <!--
-![Click Replay XHR](../media/network-replay-xhr.png)
+![Click Replay XHR](../icons/network-replay-xhr.png)
 -->
 
 
@@ -374,7 +374,7 @@ The Waterfall column of the **Requests** pane:
 To refresh the table, re-select the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
 <!--
-![The Frames panel](../media/network-frames.png)
+![The Frames panel](../icons/network-frames.png)
 -->
 
 <!--The table contains the following three columns.
@@ -671,7 +671,7 @@ You can expand or collapse sections of the **Network** tool UI to focus importan
 
 ### Hide the Filters pane
 
-By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, select **Filter** (![Filter](../media/filter-icon.png)).
+By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, select **Filter** (![Filter](../icons/filter-icon.png)).
 
 ![The Hide Filters button](./reference-images/network-network-resources-hide-filters-button.png)
 

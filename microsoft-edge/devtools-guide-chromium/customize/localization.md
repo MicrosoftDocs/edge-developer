@@ -36,7 +36,7 @@ The DevTools UI in Chinese:
 
 To revert the UI text of DevTools to English:
 
-1. In DevTools, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button, or press **F1**.
+1. In DevTools, click the **Settings** (![Settings icon](../icons/settings-gear-icon-light-theme.png)) button, or press **F1**.
 
 1. On the left, make sure the **Preferences** page is selected.
 
@@ -66,7 +66,7 @@ Caution: This removes all of your customizations of DevTools.
 
 To revert all DevTools settings to the defaults, including the UI language:
 
-1. In DevTools, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button, or press **F1**.
+1. In DevTools, click the **Settings** (![Settings icon](../icons/settings-gear-icon-light-theme.png)) button, or press **F1**.
 
 1. On the left, make sure the **Preferences** page is selected.
 

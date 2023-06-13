@@ -45,13 +45,13 @@ The **Background Fetch API** enables the **service worker** of a Progressive Web
 
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button.
 
 1. On the left, in the **Background Services** section, select **Background Fetch**.  The **Background Fetch** page opens.
 
    ![The Background Fetch panel](./background-services-images/application-background-fetch-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.png)).
+1. Click **Record** (![Record](../icons/record-icon.png)).
    After triggering some Background Fetch activity, DevTools logs the events to the table.
 
    ![A log of events in the Background Fetch panel](./background-services-images/application-background-fetch-events.png)
@@ -68,13 +68,13 @@ The **Background Sync API** enables the offline **service worker** of a Progress
 
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button.
 
 1. On the left, in the **Background Services** section, select **Background Sync**.  The **Background Sync** page opens.
 
    ![The Background Sync pane](./background-services-images/application-background-sync-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Background Sync activity, DevTools logs the events to the table.
+1. Click **Record** (![Record](../icons/record-icon.png)).  After triggering some Background Sync activity, DevTools logs the events to the table.
 
    ![A log of events in the Background Sync pane](./background-services-images/application-background-sync-events.png)
 
@@ -90,13 +90,13 @@ After a **service worker** has received a [Push Message](https://developer.mozil
 
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button.
 
 1. On the left, in the **Background Services** section, select **Notifications**.  The **Notifications** page opens.
 
    ![The Notifications pane](./background-services-images/application-notifications-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Notifications activity, DevTools logs the events to the table.
+1. Click **Record** (![Record](../icons/record-icon.png)).  After triggering some Notifications activity, DevTools logs the events to the table.
 
    ![A log of events in the Notifications pane](./background-services-images/application-notifications-events.png)
 
@@ -112,13 +112,13 @@ The [Payment Handler API](https://web.dev/web-based-payment-apps-overview/) allo
 
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button.
 
 1. On the left, in the **Background Services** section, select **Payment Handler**.  The **Payment Handler** page opens.
 
    ![The Payment Handler pane](./background-services-images/application-payment-handler-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some payment requests, DevTools logs the events to the table.
+1. Click **Record** (![Record](../icons/record-icon.png)).  After triggering some payment requests, DevTools logs the events to the table.
 
    ![A log of events in the Payment Handler pane](./background-services-images/application-payment-handler-events.png)
 
@@ -136,13 +136,13 @@ To log Periodic Background Sync events for 3 days, even when DevTools isn't open
 
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button.
 
 1. On the left, in the **Background Services** section, select **Periodic Background Sync**.  The **Periodic Background Sync** page opens.
 
    ![The Periodic Background Sync pane](./background-services-images/application-periodic-background-sync-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Periodic Background Sync activity, DevTools logs the events to the table.
+1. Click **Record** (![Record](../icons/record-icon.png)).  After triggering some Periodic Background Sync activity, DevTools logs the events to the table.
 
    ![A log of events in the Periodic Background Sync pane](./background-services-images/application-periodic-background-sync-events.png)
 
@@ -154,13 +154,13 @@ To display a push notification to a user, the **service worker** of a Progressiv
 
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button.
 
 1. On the left, in the **Background Services** section, select **Push Messaging**.  The **Push Messaging** page opens.
 
    ![Open the Push Messaging pane](./background-services-images/application-push-messaging-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Push Message activity, DevTools logs the events to the table.
+1. Click **Record** (![Record](../icons/record-icon.png)).  After triggering some Push Message activity, DevTools logs the events to the table.
 
    ![A log of events in the Push Messaging pane](./background-services-images/application-push-messaging-events.png)
 
@@ -178,7 +178,7 @@ To see reports that have been sent by the browser using the **Reporting API**:
 
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../icons/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../icons/more-tools-icon-light-theme.png)) button.
 
 1. On the left, in the **Background Services** section, select **Reporting API**.  The **Reporting API** page opens.
 

@@ -65,7 +65,7 @@ Device simulators and emulators simulate not just the browser environment but th
 #### Android emulator
 
 <!--
-![Stock Browser in Android Emulator](../media/device-mode-android-emulator-stock-browser.png)
+![Stock Browser in Android Emulator](../icons/device-mode-android-emulator-stock-browser.png)
 -->
 
 At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you can use the Android Browser, the Chromium Content Shell, and Firefox for Android, which we review later in this article.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without browser-specific features.
@@ -76,7 +76,7 @@ After your emulator is booted, select the **Browser** icon, and test your site o
 ###### Chromium content shell on Android
 
 <!--
-![Android Emulator Content Shell](../media/device-mode-android-avd-contentshell.png)
+![Android Emulator Content Shell](../icons/device-mode-android-avd-contentshell.png)
 -->
 
 To install the Chromium Content Shell for Android, keep your emulator running and run the following command:
@@ -92,7 +92,7 @@ Now you can test your site with the Chromium Content Shell.
 ###### Firefox on Android
 
 <!--
-![Firefox Icon on Android Emulator](../media/device-mode-ff-on-android-emulator.png)
+![Firefox Icon on Android Emulator](../icons/device-mode-ff-on-android-emulator.png)
 -->
 
 Similar to the Chromium Content Shell, you can get an APK to install Firefox onto the emulator.

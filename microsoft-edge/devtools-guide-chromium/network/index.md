@@ -61,12 +61,12 @@ To get the most out of this tutorial, open the demo and try out the features on 
    <!-- You can view the source files for this demo in the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) repo folder: -->
 
    <!--
-   ![The demo in one window and this tutorial in a different window](../media/network-tutorial/windows.png)
+   ![The demo in one window and this tutorial in a different window](../icons/network-tutorial/windows.png)
    -->
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](../media/more-tools-icon-light-theme.png)) button:
+1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](../icons/more-tools-icon-light-theme.png)) button:
 
    You might prefer to [dock DevTools to the bottom of your window](../customize/placement.md):
 
@@ -146,7 +146,7 @@ The network connection of the computer that you use to build sites is probably f
 
    ![Select Slow 3G](./index-images/network-glitch-network-throttling-slow-3g.png)
 
-1. Long-press **Reload** (![Reload](../media/refresh-icon.png)) (or right-click **Refresh**) and then select **Empty cache and hard refresh**:
+1. Long-press **Reload** (![Reload](../icons/refresh-icon.png)) (or right-click **Refresh**) and then select **Empty cache and hard refresh**:
 
    ![Empty cache and hard refresh](./index-images/network-glitch-empty-cache-and-hard-reset.png)
 
@@ -162,7 +162,7 @@ See also [Emulate slow network connections](../network/reference.md#emulate-slow
 
 Screenshots display how a webpage looks over time while it loads.
 
-1. Click the (![Network settings](../media/settings-icon.png)) button and then select the **Capture screenshots** checkbox:
+1. Click the (![Network settings](../icons/settings-icon.png)) button and then select the **Capture screenshots** checkbox:
 
    ![The Capture Screenshot checkbox in the Network settings](./index-images/network-glitch-network-screenshots-setting.png)
 
@@ -176,7 +176,7 @@ Screenshots display how a webpage looks over time while it loads.
 
    ![The network activity that was happening during the first screenshot](./index-images/network-glitch-network-screenshots-first.png)
 
-1. Click (![Network settings](../media/settings-icon.png)) again and turn off the **Capture screenshots** checkbox to close the **Screenshots** pane.
+1. Click (![Network settings](../icons/settings-icon.png)) again and turn off the **Capture screenshots** checkbox to close the **Screenshots** pane.
 
 1. Refresh the page again.
 
@@ -200,7 +200,7 @@ Select a resource to learn more information about it.
 
    ![The Response panel](./index-images/network-glitch-network-resources-response.png)
 
-   Tip: When a file is minified, select the **Format** (![Format](../media/format-icon.png)) button at the bottom of the **Response** panel to re-format the contents of the file for readability.
+   Tip: When a file is minified, select the **Format** (![Format](../icons/format-icon.png)) button at the bottom of the **Response** panel to re-format the contents of the file for readability.
 
    For example, if the response contains minified JSON data, click the **Format** button to re-format the JSON syntax so that each object property is on its own line. You can also use the **JSON viewer** to view formatted and highlighted JSON responses in a browser tab. See [View formatted JSON](../json-viewer/json-viewer.md).
 
@@ -242,7 +242,7 @@ For example, suppose you want to verify that your resources are using reasonable
 
 DevTools provides numerous workflows for filtering out resources that aren't relevant to the task at hand.
 
-The **Filters** toolbar should be turned on by default.  If the **Filters** toolbar isn't on, click **Filter** (![Filter](../media/filter-icon.png)) to show it:
+The **Filters** toolbar should be turned on by default.  If the **Filters** toolbar isn't on, click **Filter** (![Filter](../icons/filter-icon.png)) to show it:
 
 ![The Filters toolbar](./index-images/network-glitch-network-filter-empty.png)
 
