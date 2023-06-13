@@ -121,7 +121,7 @@ For example, notice how in the above screenshot, the comparison view is reportin
 -->
 
 See also:
-* [View snapshots](../../../memory-problems/heap-snapshots.md#view-snapshots) from _Record heap snapshots using the Memory tool_
+* [View snapshots](../../../memory-problems/heap-snapshots.md#view-snapshots) in _Record heap snapshots using the Memory tool_.
 * [Change List 4278992: Produce consistent IDs for Oilpan objects in heap snapshots](https://chromium-review.googlesource.com/c/v8/v8/+/4278992)
 * [Issue 1286500: Heap snapshot comparison incorrectly reports large numbers of new and deleted objects](https://bugs.chromium.org/p/chromium/issues/detail?id=1286500)
 
@@ -129,27 +129,19 @@ See also:
 <!-- ====================================================================== -->
 ## Accessibility improvements for the CSS Overview tool
 
-<!-- Subtitle: The CSS Overview tool is now easier to use with assistive technology, like screen readers. -->
+<!-- Subtitle: The CSS Overview tool is now easier to use with assistive technology such as screen readers. -->
 
 <!-- Reviewer: Yanling Wang -->
 
-In [Microsoft Edge 112](../04/devtools-112.md#css-overview-tool-displays-non-simple-selectors-for-quick-performance-gains), the **CSS Overview** tool was updated to display a list of non-simple selectors when taking an overview snapshot of your webpage's CSS.  In Microsoft Edge 114, this section of the **CSS Overview** tool is now easier to use with assistive technology, like screen readers.
+In Microsoft Edge 112, the **CSS Overview** tool was updated to display a list of non-simple selectors when taking an overview snapshot of your webpage's CSS.  In Microsoft Edge 114, the **Non-simple selectors** section of the **CSS Overview** tool is now easier to use with assistive technology, such as screen readers.
 
-When you navigate to a selector in the **Non-simple selectors** section of the **CSS Overview** tool and press `Enter` or click, screen readers will now announce "Copied CSS Selector."
+When you click a selector, or navigate to a selector and then press `Enter`, screen readers now announce "Copied CSS selector":
 
 ![Navigating the CSS Overview tool with the keyboard](./devtools-114-images/non-simple-selectors-css-overview-a11y.png)
-<!-- todo
-1. Open the Edge Canary browser.
-2. Open Devtools using 'Ctrl+Shift+ I' or (Settings and more -> More tools -> Developer tools).
-3. Navigate to 'CSS selector overview' tab item and invoke it.
-4. Navigate to ‘capture overview’ button and invoke it.
-5. Navigate and invoke the ‘Non-simple selectors’ menu item in the left navigation.
-6. Navigate to the list items present under ‘Non-simple selectors’ heading and hit enter and listen to the Screen reader announcement.
--->
 
 See also:
-* [CSS Overview tool displays non-simple selectors for quick performance gains](../04/devtools-112.md#css-overview-tool-displays-non-simple-selectors-for-quick-performance-gains) from _What's New in DevTools (Microsoft Edge 112)_
-* [Non-simple selectors](../../../css/css-overview-tool.md#non-simple-selectors) from _Optimize CSS styles with the CSS Overview tool_
+* [CSS Overview tool displays non-simple selectors for quick performance gains](../04/devtools-112.md#css-overview-tool-displays-non-simple-selectors-for-quick-performance-gains) in _What's New in DevTools (Microsoft Edge 112)_.
+* [Non-simple selectors](../../../css/css-overview-tool.md#non-simple-selectors) in _Optimize CSS styles with the CSS Overview tool_.
 
 
 <!-- ====================================================================== -->
