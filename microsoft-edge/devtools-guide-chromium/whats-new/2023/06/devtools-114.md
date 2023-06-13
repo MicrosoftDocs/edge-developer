@@ -104,21 +104,11 @@ See also:
 
 <!-- Reviewer: Seth Brenith -->
 
-In the **Memory** tool, you can take multiple heap snapshots and compare them to find differences in the objects in the heap.  In previous versions of Microsoft Edge, the **Memory** tool incorrectly reported large numbers of new and deleted objects when comparing heap snapshots because object IDs were not being tracked consistently by the tool.
+In the **Memory** tool, you can take multiple heap snapshots and compare them to find differences in the objects in the heap.  In previous versions of Microsoft Edge, the **Memory** tool reported too many new and deleted objects when comparing heap snapshots, because object IDs weren't being tracked consistently by the tool.  Actually, many of these are likely the same objects.
 
-![Comparing two heap snapshots in Microsoft Edge 113 or earlier](./devtools-114-images/snapshot-comparison-113.png)
-
-For example, notice how in the above screenshot, the comparison view is reporting `1966` new `(concatenated string)` objects and `1989` deleted `(concatenated string)` objects when really, many of these are likely the same objects.  In Microsoft Edge 114, this issue has now been fixed by ensuring consistent object IDs are tracked across multiple snapshots.
+In Microsoft Edge 114, this issue has been fixed, by ensuring that consistent object IDs are tracked across multiple snapshots:
 
 ![Comparing two heap snapshots in Microsoft Edge 114](./devtools-114-images/snapshot-comparison-114.png)
-<!-- todo
-1. Go to https://www.youtube.com
-1. Open DevTools > Memory tool.
-1. Take a heap snapshot.
-1. Refresh the page.
-1. Take another heap snapshot.
-1. Select the Summary dropdown and select comparison and now compare the two heap snapshots you took.
--->
 
 See also:
 * [View snapshots](../../../memory-problems/heap-snapshots.md#view-snapshots) in _Record heap snapshots using the Memory tool_.
