@@ -111,7 +111,7 @@ Test your webpage in landscape orientation.
 
 1. If needed, to access the **Rotate** button, increase the width of the **Device Toolbar**.
 
-   ![The Device Toolbar](../media/device-mode-toggle-device-toolbar-highlighted.png)
+   ![The Device Toolbar](./index-images/device-mode-toggle-device-toolbar-highlighted.png)
 
 See also [Set orientation](#set-orientation), below.
 
@@ -176,7 +176,7 @@ Mobile devices often have network and CPU constraints.  Test how quickly your pa
 
 1. If needed, to access the **Throttle list**, increase the width of the **Device Toolbar**.
 
-   ![The Device Toolbar](../media/device-mode-toggle-device-toolbar-highlighted.png)
+   ![The Device Toolbar](./index-images/device-mode-toggle-device-toolbar-highlighted.png)
 
 
 ### Throttle the CPU only
@@ -234,11 +234,11 @@ If your page depends on orientation information from a mobile device to render p
 
 1. Select **Customize and control DevTools** (`...`) > **More tools** > **Sensors**.
 
-   ![The Sensors command on the More tools menu](../media/device-mode-toggle-device-toolbar-more-tools-sensors.png)
+   ![The Sensors command on the More tools menu](./index-images/device-mode-toggle-device-toolbar-more-tools-sensors.png)
 
    Or, open the Command Menu by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type `Sensors`, and then select **Show Sensors**.
 
-   ![Show Sensors for orientation](../media/device-mode-toggle-device-toolbar-command-menu-sensors.png)
+   ![Show Sensors for orientation](./index-images/device-mode-toggle-device-toolbar-command-menu-sensors.png)
 
    On the **Sensors** panel, you can select a preset orientation from the **Orientation** dropdown menu.
 

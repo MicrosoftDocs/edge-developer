@@ -80,7 +80,7 @@ The Drawer pops up in the bottom of the DevTools window, with the **Console** to
 
 To open the **Console** tool from the [Command Menu](../command-menu/index.md), type **Console** and then run the **Show Console** command that has the **Drawer** badge next to it.
 
-![Run the command to display the **Console** tool in the Drawer](../media/console-command-menu-show-console.png)
+![Run the command to display the **Console** tool in the Drawer](./reference-images//console-command-menu-show-console.png)
 
 
 ### Open Console Settings

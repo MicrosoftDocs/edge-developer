@@ -245,7 +245,7 @@ Update (or install) the WebView2 SDK, as follows:
 
    The **NuGet Package Manager** tab and panel opens in Visual Studio.
 
-   ![Manage NuGet packages](../media/manage-nuget-packages.png)
+   ![Manage NuGet packages](./win32-images/manage-nuget-packages.png)
 
 1. If the WebView2 SDK is already installed for the project, as is the case with the repo project, in the **NuGet** window, click the **Installed** tab or the **Update** tab.
 
@@ -436,7 +436,7 @@ Now to do the above, in the callback, you'll:
 
    If you started by deleting all of the WebView2 code, at this point, you now have a Win32 window that's filled with a WebView2 control that's filled with webpage content:
 
-   ![Bing window](../media/bing-window.png)
+   ![Bing window](./win32-images/bing-window.png)
 
 1. Close the **WebView sample** app window.
 
@@ -556,14 +556,14 @@ Have the host app and web content communicate through `postMessage`, as follows:
 
    The sample app first opens a pop-up window, which displays the URL that will be loaded, along with an **OK** button:
 
-   ![The sample app displays a pop-up window with URL and OK button over an empty WebView2 window](../media/show-url.png)
+   ![The sample app displays a pop-up window with URL and OK button over an empty WebView2 window](./win32-images/show-url.png)
 
 1. Click the **OK** button to dismiss the pop-window and continue to the URL:
 
    The WebView2 window now displays webpage content: the Bing website, `http://www.bing.com`.
 
    <!-- instance 2 of bing-window.png -->
-   ![The sample app now displays the Bing website](../media/bing-window.png)
+   ![The sample app now displays the Bing website](./win32-images/bing-window.png)
 
 1. When you are ready, close the **WebView sample** window.
 

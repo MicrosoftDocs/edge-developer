@@ -36,7 +36,7 @@ The main article about the Inspect tool is [Analyze HTML pages using the Inspect
 
 1. Hover over any element in the rendered demo webpage.  The **Inspect** tool shows an information overlay below the element within the rendered webpage.
 
-   ![The Inspect tool, showing the element's layout as a multicolor overlay, and showing the element's details as a large information overlay](../media/a11y-testing-basics-inspector-overlay.png)
+   ![The Inspect tool, showing the element's layout as a multicolor overlay, and showing the element's details as a large information overlay](./test-inspect-tool-images/a11y-testing-basics-inspector-overlay.png)
 
 The bottom part of the **Inspect** overlay has an **Accessibility** section that contains the following information:
 

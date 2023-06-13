@@ -108,7 +108,7 @@ To use Live Expressions to avoid excessive Console log messages:
 
    Enter two Live Expressions: the expression `x`, and the expression `y`, as follows:
 
-1. In the **Console** tool, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** text box.
+1. In the **Console** tool, click the **Create live expression** (![The 'Create live expression' icon](./live-expressions-images/create-live-expression-light-mode.png)) icon next to the **Filter** text box.
 
 1. Enter the JavaScript expression `x` into the text box, and then click outside of the **Live Expression** text box.  Repeat for `y`.  If needed, see [Add a new live expression](#add-a-new-live-expression), above.
 

@@ -193,7 +193,7 @@ Below you'll find a description of each app icon and where they show up in Windo
 
 The normal app icon that's shown in the start menu, task bar, or task manager.
 
-![App Icon](../media/windows-image-app-icon.png) 
+![App Icon](./icon-theme-color-images/windows-image-app-icon.png) 
 
 * 44x44
 * 55x55 (1.25x scale)
@@ -203,7 +203,7 @@ The normal app icon that's shown in the start menu, task bar, or task manager.
 
 The small tile is shown in the start menu when the user set your app's tile to small size.
 
-![Small tile](../media/windows-image-small-tile.png) 
+![Small tile](./icon-theme-color-images/windows-image-small-tile.png) 
 
 * 71x71
 * 89x89 (1.25x scale)
@@ -223,7 +223,7 @@ The medium tile icon is shown in the start menu when the user sets your app's ti
 
 The wide tile icon is shown in the start menu when the user sets your app's tile to wide size.
 
-![Wide tile](../media/windows-image-wide-tile.png)
+![Wide tile](./icon-theme-color-images/windows-image-wide-tile.png)
 
 * 310x150
 * 388x188 (1.25x scale)

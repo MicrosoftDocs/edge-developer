@@ -68,7 +68,7 @@ To change the sorting order, select the dropdown menu next to the **focus select
 
 **Heavy (Bottom Up)**.  Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view.
 
-![Heavy chart](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.png)
+![Heavy chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.png)
 
 **Tree (Top Down)**.  Shows an overall picture of the calling structure, starting at the top of the call stack.
 

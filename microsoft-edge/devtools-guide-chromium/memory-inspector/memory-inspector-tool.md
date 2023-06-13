@@ -74,7 +74,7 @@ https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/202
 
     The JavaScript ArrayBuffer opens in Memory Inspector.
 
-    ![ArrayBuffer open in the Memory Inspector panel](../media/memory-inspector-panel.png)
+    ![ArrayBuffer open in the Memory Inspector panel](./memory-inspector-tool-images/memory-inspector-panel.png)
 
 ### Inspect multiple objects
 
@@ -103,7 +103,7 @@ The **Enter address** text box shows the current byte address in hex format. You
 
 Memory buffers may be longer than one page. Use the left and right arrow buttons to navigate **Previous page** (**<**) and **Next page** (**>**), respectively. If there is only one page of memory buffer data, the arrows take you to the beginning and ending of the page.
 
-Use the far-left history arrows to **Go back in address history** (![Go back in address history](../media/memory-inspector-go-back-address-history.png)) and **Go forward in address history** (![Go forward in address history](./memory-inspector-tool-images/memory-inspector-go-forward-address-history.png)).
+Use the far-left history arrows to **Go back in address history** (![Go back in address history](./memory-inspector-tool-images/memory-inspector-go-back-address-history.png)) and **Go forward in address history** (![Go forward in address history](./memory-inspector-tool-images/memory-inspector-go-forward-address-history.png)).
 
 If the Memory buffer does not automatically update when stepping through values, click **Refresh** (![Memory buffer refresh](./memory-inspector-tool-images/memory-inspector-refresh.png)).
 
@@ -149,9 +149,9 @@ Complete the following steps to debug a webpage in Memory Inspector.
     
     ![Memory Inspector address values updated](./memory-inspector-tool-images/memory-inspector-address-values-updated.png)
 
-1. Click the **Jump to address** button (![Jump to address button](../media/memory-inspector-jump-to-address.png)) for **Pointer 32-bit** or **Pointer 64-bit** as needed to jump to the next active memory address. If next memory address is not available, the button is turned off (![Address out of memory range](./memory-inspector-tool-images/memory-inspector-address-out-of-range.png)) with the tooltip **Address out of memory range**.
+1. Click the **Jump to address** button (![Jump to address button](./memory-inspector-tool-images/memory-inspector-jump-to-address.png)) for **Pointer 32-bit** or **Pointer 64-bit** as needed to jump to the next active memory address. If next memory address is not available, the button is turned off (![Address out of memory range](./memory-inspector-tool-images/memory-inspector-address-out-of-range.png)) with the tooltip **Address out of memory range**.
 
-1. Customize the **Value inspector** to show only floating point values. Click **Toggle value type settings** (![Toggle value type settings gray](../media/memory-inspector-value-type-settings-toggle.png)) and clear all checkboxes except the two **Floating point** values.
+1. Customize the **Value inspector** to show only floating point values. Click **Toggle value type settings** (![Toggle value type settings gray](./memory-inspector-tool-images/memory-inspector-value-type-settings-toggle.png)) and clear all checkboxes except the two **Floating point** values.
     
     ![Value type settings float](./memory-inspector-tool-images/memory-inspector-panel-value-type-settings-float.png)
 

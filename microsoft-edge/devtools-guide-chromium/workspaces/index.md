@@ -213,7 +213,7 @@ If you want to save a change to the webpage HTML, edit the HTML in the **Sources
 
 1. Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed.
 
-   ![Change HTML from the Sources tool](../media/workspaces-workspaces-demo-sources-page-h1.png)
+   ![Change HTML from the Sources tool](./index-images/workspaces-workspaces-demo-sources-page-h1.png)
 
 1. Open `~/Desktop/app/index.html` in a text editor.  The `<h1>` element contains the new text.
 

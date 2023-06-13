@@ -105,7 +105,7 @@ $_
 
    The value of the `$_` property is the value of the previously evaluated expression; the number 4.
 
-   ![$_ represents the most recently evaluated expression, which is the number 4 from the previously entered statement](../media/console-arithmatic.png)
+   ![$_ represents the most recently evaluated expression, which is the number 4 from the previously entered statement](./utilities-images/console-arithmatic.png)
 
 
 ### Example 2
@@ -148,7 +148,7 @@ $_
 
    ![The value of $_ changes to the value of the previously evaluated expression](./utilities-images/console-array-length.png)
 
-![$_ changes when new commands are evaluated](../media/console-array-length.png)
+![$_ changes when new commands are evaluated](./utilities-images/console-array-length.png)
 
 <br/><br/>
 
