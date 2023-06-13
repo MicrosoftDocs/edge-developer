@@ -75,7 +75,7 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
 *  To add an additional keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, click the **Add a shortcut** link, or click the **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.png)) icon.
 
-*  To save a modified or added keyboard shortcut while you are editing the keyboard shortcuts for an action, click the checkmark (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.png)) icon.
+*  To save a modified or added keyboard shortcut while you are editing the keyboard shortcuts for an action, click the checkmark (![CheckmarkKeyboardShortcut](./shortcuts-images/checkmark-keyboard-shortcut-icon.png)) icon.
 
 *  To discard your changes while you are editing the keyboard shortcuts for an action, click the X (![XKeyboardShortcut](./shortcuts-images/discard-changes-keyboard-shortcut-icon.png)) icon.
 

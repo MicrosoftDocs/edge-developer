@@ -185,7 +185,7 @@ For WebAssembly (Wasm) memory inspection, the process is similar to inspecting J
 
     ![Memory Inspector set breakpoint in Wasm file](./memory-inspector-tool-images/memory-inspector-wasm-breakpoint.png)
 
-1. Click on the **Reveal in Memory Inspector panel** icon (![Reveal in Memory Inspector panel icon](../media/memory-inspector-open-from-buffer-icon.png)) at the end of the `$imports.memory` property line. 
+1. Click on the **Reveal in Memory Inspector panel** icon (![Reveal in Memory Inspector panel icon](./memory-inspector-tool-images/memory-inspector-open-from-buffer-icon.png)) at the end of the `$imports.memory` property line. 
 
     The Wasm ArrayBuffer opens in **Memory Inspector**.
     

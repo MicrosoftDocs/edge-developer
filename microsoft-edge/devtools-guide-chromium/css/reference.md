@@ -317,7 +317,7 @@ By default, when adding a style rule, DevTools creates a new stylesheet named `i
 
 To instead add the rule in an existing stylesheet:
 
-*  Click and hold **New Style Rule** (![New Style Rule](../media/new-style-rule-icon.png)) and then select a stylesheet from the list to add the style rule to.
+*  Click and hold **New Style Rule** (![New Style Rule](./reference-images/new-style-rule-icon.png)) and then select a stylesheet from the list to add the style rule to.
 
 ![Selecting a stylesheet](./reference-images/css-elements-styles-style-new-select-existing.png)
 
@@ -330,7 +330,7 @@ To add a style rule in a specific location of the **Styles** panel instead:
 
 1. Hover on the style rule that is directly above where you want to add your new style rule.
 
-1. Click **Insert Style Rule Below** (![Insert Style Rule Below icon](../media/new-style-rule-icon.png)).
+1. Click **Insert Style Rule Below** (![Insert Style Rule Below icon](./reference-images/new-style-rule-icon.png)).
 
 ![Insert Style Rule Below](./reference-images/css-elements-styles-insert-style-rule-below.png)
 
