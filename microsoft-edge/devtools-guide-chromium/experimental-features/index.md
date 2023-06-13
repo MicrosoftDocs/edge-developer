@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 06/02/2023
+ms.date: 06/13/2023
 ---
 # Experimental features
 
@@ -313,13 +313,12 @@ Status:
 ## Console: Resolve variable names in expressions using source maps
 
 Uses source maps to automatically map original variable names to minified variable names when evaluating expressions.
-<!-- todo: Which tools are affected?  Does this affect other tools besides Console?
-This checkbox affects the **Console** and **Sources** tool.
--->
+
+This checkbox affects the **Console**, and the **Watch** sidebar tab in the **Sources** tool.
 
 See also:
 * [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
-* [Mapping minified code to your source code to show readable code](../sources/index.md#mapping-minified-code-to-your-source-code-to-show-readable-code) in _Sources tool overview_.<!-- todo: delete link if Sources tool isn't affected by this checkbox -->
+* [Mapping minified code to your source code to show readable code](../sources/index.md#mapping-minified-code-to-your-source-code-to-show-readable-code) in _Sources tool overview_.
 
 In Microsoft Edge Canary 116, the checkbox label omits the **Console:** prefix.
 
