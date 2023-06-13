@@ -16,11 +16,11 @@ DevTools provides 35 tools:
 
 The default tools, including toolbar icons, toolbar tabs, and tools on the **More tabs** (![More tabs icon](media/more-tabs-icon-light-theme.png)) menu:
 
-![All of the default tools of DevTools, including 2 toolbar icons and 11 toolbar tabs on the toolbar or More tabs menu](media/all-default-tools.png)
+![All of the default tools of DevTools, including 2 toolbar icons and 11 toolbar tabs on the toolbar or More tabs menu](./about-tools-images/all-default-tools.png)
 
 The optional tools that aren't open by default, on the **More Tools** (![More Tools icon](media/more-tools-icon-light-theme.png)) menu:
 
-![All of the optional tools of DevTools, on the More Tools menu, with 22 optional tools](media/all-optional-tools.png)
+![All of the optional tools of DevTools, on the More Tools menu, with 22 optional tools](./about-tools-images/all-optional-tools.png)
 
 The following features are additional ways to access the tools:
 *  The **Drawer** is an additional toolbar and area to hold tool tabs.
@@ -95,7 +95,7 @@ In the **Command Menu**:
 
 The **Command Menu** first lists the Panel tools, and then the Drawer tools:
 
-![The Command Menu, showing the Panel tools grouped together, and then the Drawer tools](media/command-menu-panel-vs-drawer-tools.png)
+![The Command Menu, showing the Panel tools grouped together, and then the Drawer tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
 
 To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom** or **Move to top**.
 

@@ -49,16 +49,16 @@ The **Background Fetch API** enables the **service worker** of a Progressive Web
 
 1. On the left, in the **Background Services** section, select **Background Fetch**.  The **Background Fetch** page opens.
 
-   ![The Background Fetch panel](./images/application-background-fetch-empty.png)
+   ![The Background Fetch panel](./background-services-images/application-background-fetch-empty.png)
 
 1. Click **Record** (![Record](../media/record-icon.png)).
    After triggering some Background Fetch activity, DevTools logs the events to the table.
 
-   ![A log of events in the Background Fetch panel](./images/application-background-fetch-events.png)
+   ![A log of events in the Background Fetch panel](./background-services-images/application-background-fetch-events.png)
 
 1. Click an event to view its details in the space below the table.
 
-   ![View the details of an event in the Background Fetch pane](./images/application-background-fetch-details.png)
+   ![View the details of an event in the Background Fetch pane](./background-services-images/application-background-fetch-details.png)
 
 
 <!-- ====================================================================== -->
@@ -72,15 +72,15 @@ The **Background Sync API** enables the offline **service worker** of a Progress
 
 1. On the left, in the **Background Services** section, select **Background Sync**.  The **Background Sync** page opens.
 
-   ![The Background Sync pane](./images/application-background-sync-empty.png)
+   ![The Background Sync pane](./background-services-images/application-background-sync-empty.png)
 
 1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Background Sync activity, DevTools logs the events to the table.
 
-   ![A log of events in the Background Sync pane](./images/application-background-sync-events.png)
+   ![A log of events in the Background Sync pane](./background-services-images/application-background-sync-events.png)
 
 1. Select an event to view its details in the space below the table.
 
-   ![View the details of an event in the Background Sync pane](./images/application-background-sync-details.png)
+   ![View the details of an event in the Background Sync pane](./background-services-images/application-background-sync-details.png)
 
 
 <!-- ====================================================================== -->
@@ -94,15 +94,15 @@ After a **service worker** has received a [Push Message](https://developer.mozil
 
 1. On the left, in the **Background Services** section, select **Notifications**.  The **Notifications** page opens.
 
-   ![The Notifications pane](./images/application-notifications-empty.png)
+   ![The Notifications pane](./background-services-images/application-notifications-empty.png)
 
 1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Notifications activity, DevTools logs the events to the table.
 
-   ![A log of events in the Notifications pane](./images/application-notifications-events.png)
+   ![A log of events in the Notifications pane](./background-services-images/application-notifications-events.png)
 
 1. Click an event to view its details in the space below the table.
 
-   ![View the details of an event in the Notifications pane](./images/application-notifications-details.png)
+   ![View the details of an event in the Notifications pane](./background-services-images/application-notifications-details.png)
 
 
 <!-- ====================================================================== -->
@@ -116,15 +116,15 @@ The [Payment Handler API](https://web.dev/web-based-payment-apps-overview/) allo
 
 1. On the left, in the **Background Services** section, select **Payment Handler**.  The **Payment Handler** page opens.
 
-   ![The Payment Handler pane](./images/application-payment-handler-empty.png)
+   ![The Payment Handler pane](./background-services-images/application-payment-handler-empty.png)
 
 1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some payment requests, DevTools logs the events to the table.
 
-   ![A log of events in the Payment Handler pane](./images/application-payment-handler-events.png)
+   ![A log of events in the Payment Handler pane](./background-services-images/application-payment-handler-events.png)
 
 1. Click an event to view its details in the space below the table.
 
-   ![View the details of an event in the Payment Handler pane](./images/application-payment-handler-details.png)
+   ![View the details of an event in the Payment Handler pane](./background-services-images/application-payment-handler-details.png)
 
 
 <!-- ====================================================================== -->
@@ -140,11 +140,11 @@ To log Periodic Background Sync events for 3 days, even when DevTools isn't open
 
 1. On the left, in the **Background Services** section, select **Periodic Background Sync**.  The **Periodic Background Sync** page opens.
 
-   ![The Periodic Background Sync pane](./images/application-periodic-background-sync-empty.png)
+   ![The Periodic Background Sync pane](./background-services-images/application-periodic-background-sync-empty.png)
 
 1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Periodic Background Sync activity, DevTools logs the events to the table.
 
-   ![A log of events in the Periodic Background Sync pane](./images/application-periodic-background-sync-events.png)
+   ![A log of events in the Periodic Background Sync pane](./background-services-images/application-periodic-background-sync-events.png)
 
 
 <!-- ====================================================================== -->
@@ -158,15 +158,15 @@ To display a push notification to a user, the **service worker** of a Progressiv
 
 1. On the left, in the **Background Services** section, select **Push Messaging**.  The **Push Messaging** page opens.
 
-   ![Open the Push Messaging pane](./images/application-push-messaging-empty.png)
+   ![Open the Push Messaging pane](./background-services-images/application-push-messaging-empty.png)
 
 1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Push Message activity, DevTools logs the events to the table.
 
-   ![A log of events in the Push Messaging pane](./images/application-push-messaging-events.png)
+   ![A log of events in the Push Messaging pane](./background-services-images/application-push-messaging-events.png)
 
 1. Click an event to view the details in the space below the table.
 
-   ![View the details of an event in the Push Messaging pane](./images/application-push-messaging-details.png)
+   ![View the details of an event in the Push Messaging pane](./background-services-images/application-push-messaging-details.png)
 
 
 <!-- ====================================================================== -->
@@ -182,19 +182,19 @@ To see reports that have been sent by the browser using the **Reporting API**:
 
 1. On the left, in the **Background Services** section, select **Reporting API**.  The **Reporting API** page opens.
 
-   ![Open the Reporting API pane](./images/application-reporting-api.png)
+   ![Open the Reporting API pane](./background-services-images/application-reporting-api.png)
 
 1. The **Reporting API** page displays the reports sent in the table at the top.
 
-   ![List of reports in the Reporting API pane](./images/application-reporting-api-reports.png)
+   ![List of reports in the Reporting API pane](./background-services-images/application-reporting-api-reports.png)
 
 1. Click a report to view the details in the space below the table.
 
-   ![View the details of a report in the Reporting API pane](./images/application-reporting-api-details.png)
+   ![View the details of a report in the Reporting API pane](./background-services-images/application-reporting-api-details.png)
 
 1. The **Reporting API** page also displays the list of reporting endpoints configured via the `Reporting-Endpoints` HTTP header in the table at the bottom.
 
-   ![View the list of reporting endpoints in the Reporting API pane](./images/application-reporting-api-endpoints.png)
+   ![View the list of reporting endpoints in the Reporting API pane](./background-services-images/application-reporting-api-endpoints.png)
 
 
 <!-- ====================================================================== -->

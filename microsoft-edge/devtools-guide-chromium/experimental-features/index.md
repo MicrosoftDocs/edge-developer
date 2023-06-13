@@ -89,11 +89,11 @@ To turn an experiment on or off in Microsoft Edge:
 
 1. On the left side of the **Settings** panel, select the **Experiments** page.
 
-   ![The Experiments page in Settings](../media/experiments-devtools.png)
+   ![The Experiments page in Settings](./index-images/experiments-devtools.png)
 
 1. On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
 
-1. Click **Close** (![The Close icon in DevTools > Settings](../media/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
+1. Click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
 
 1. Click the **Reload DevTools** button.
 
@@ -629,7 +629,7 @@ Status:
 
 The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
 
-![webhint feedback in the Issues panel](../media/experiments-webhint.png)
+![webhint feedback in the Issues panel](./index-images/experiments-webhint.png)
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 115.

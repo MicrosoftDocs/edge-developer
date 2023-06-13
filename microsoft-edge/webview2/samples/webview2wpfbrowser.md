@@ -22,7 +22,7 @@ This sample is built as a WPF Visual Studio 2019 project.  It uses C# and HTML/C
 
 This sample showcases a selection of WebView2's event handlers and API methods that allow a WPF application to directly interact with a WebView and vice versa.
 
-![WebView2WpfBrowser sample app](media/webview2wpfbrowser-sample-app.png)
+![WebView2WpfBrowser sample app](./webview2wpfbrowser-images/webview2wpfbrowser-sample-app.png)
 
 The **WebView2WpfBrowser** sample app has the following menus, containing many useful menuitems:
 *  **File**
@@ -77,7 +77,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    The **WebView2WpfBrowser** project opens in Visual Studio:
 
-   ![The WebView2WpfBrowser project in Visual Studio](media/webview2wpfbrowser-project-opened.png)
+   ![The WebView2WpfBrowser project in Visual Studio](./webview2wpfbrowser-images/webview2wpfbrowser-project-opened.png)
 
 
 <!-- ====================================================================== -->
@@ -121,7 +121,7 @@ At the top of Visual Studio, set the build target, as follows:
    
 1. In the Visual Studio code editor, inspect the code:
 
-   ![WebView2WpfBrowser project's code in Visual Studio](media/webview2wpfbrowser-code.png)
+   ![WebView2WpfBrowser project's code in Visual Studio](./webview2wpfbrowser-images/webview2wpfbrowser-code.png)
 
 
 <!-- ====================================================================== -->

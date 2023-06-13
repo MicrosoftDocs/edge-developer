@@ -19,7 +19,7 @@ To test a URL:
 
    The Network Console tool opens:
 
-   ![The Network Console tool](images/network-console-tool.png)
+   ![The Network Console tool](./network-console-tool-images/network-console-tool.png)
 
 1. In the main pane of the Network Console tool, click **Create a request**.
 
@@ -29,7 +29,7 @@ To test a URL:
 
 1. Optionally, in the **Query** section, click the **Key** and **Value** text boxes and enter key/value pairs:
 
-   ![Entering key/value pairs to construct a URL in the Network Console tool](images/entering-key-value-pairs.png)
+   ![Entering key/value pairs to construct a URL in the Network Console tool](./network-console-tool-images/entering-key-value-pairs.png)
 
    The **Computed URL** is updated as you enter key/value pairs.
 
@@ -53,17 +53,17 @@ To use the **Network Console** starting from the **Network** tool:
 
 1. Right-click the network request that you want to change and resend, and then select **Edit and Resend**:
 
-   ![Right-clicking a resource for the webpage to select 'Edit and resend' in the Network tool](images/edit-and-resend.png)
+   ![Right-clicking a resource for the webpage to select 'Edit and resend' in the Network tool](./network-console-tool-images/edit-and-resend.png)
 
    The resource opens in the **Network Console** tool in the Drawer at the bottom of DevTools.
 
 1. In the **Network Console**, edit the network request information, and then click the **Send** button:
 
-   ![Editing the network request and then clicking Send, in the Network Console tool](images/edit-then-send.png)
+   ![Editing the network request and then clicking Send, in the Network Console tool](./network-console-tool-images/edit-then-send.png)
 
    <!-- Another screenshot (used by Experimental Features article)
 
-   ![The Network Console tool in the main toolbar](../media/network-network-console.png) -->
+   ![The Network Console tool in the main toolbar](./network-console-tool-images/network-network-console.png) -->
 
 
 <!-- ====================================================================== -->
@@ -76,11 +76,11 @@ You can:
 
 Entering a name for the new environment:
 
-![Entering a name for the new environment](images/network-console-environments-new-name.png)
+![Entering a name for the new environment](./network-console-tool-images/network-console-environments-new-name.png)
 
 Selecting the format for the new environment:
 
-![Selecting the format for the new environment](images/network-console-environments-new-format.png)
+![Selecting the format for the new environment](./network-console-tool-images/network-console-environments-new-format.png)
 
 The **Network Console** tool is compatible with the [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) and [OpenAPI v2](https://swagger.io/specification/v2) schemas.
 

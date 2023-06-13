@@ -16,7 +16,7 @@ On mobile devices, shortcuts can usually be accessed by long-pressing an app ico
 
 The next figure shows shortcuts on Microsoft Edge, on iOS:
 
-![Shortcuts on Microsoft Edge on iOS](../media/edge-ios-shortcuts.png)
+![Shortcuts on Microsoft Edge on iOS](./shortcuts-images/edge-ios-shortcuts.png)
 
 The next figure shows a Jumplist on the Webboard app, on Windows:
 
@@ -81,6 +81,6 @@ To test that your shortcuts are configured correctly:
 1. Scroll down to reveal the list of shortcuts.
 
    > [!div class="mx-imgBorder"]
-   > ![Shortcuts are listed in the Application panel](../media/devtools-debug-shortcuts.png)
+   > ![Shortcuts are listed in the Application panel](./shortcuts-images/devtools-debug-shortcuts.png)
 
 To learn more about using the Application panel to debug PWAs, see [Debug Progressive Web Apps (PWAs)](../../devtools-guide-chromium/progressive-web-apps/index.md).

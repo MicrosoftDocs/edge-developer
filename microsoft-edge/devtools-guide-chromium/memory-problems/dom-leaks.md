@@ -36,13 +36,13 @@ To open the **Detached Elements** tool and load the demo page:
 1. In DevTools, on the main toolbar, select the **Detached Elements** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button:
 
    > [!div class="mx-imgBorder"]
-   > ![Open the Detached Elements tool](images/open-detached-elements.png)
+   > ![Open the Detached Elements tool](./dom-leaks-images/open-detached-elements.png)
 
 
 <!-- ====================================================================== -->
 ## Get detached elements
 
-The **Get Detached Elements** (![The Get Detached Elements icon](images/get-detached-elements-icon-light-mode.png)) button in the **Detached Elements** tool finds and displays all of the detached elements on a web page.
+The **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon-light-mode.png)) button in the **Detached Elements** tool finds and displays all of the detached elements on a web page.
 
 To find detached elements:
 
@@ -52,13 +52,13 @@ To find detached elements:
 
 1. After some messages are generated and displayed in the demo application, click the demo's **Stop** button:
 
-   ![Generating some messages in the demo application](images/detached-elements-demo-app.png)
+   ![Generating some messages in the demo application](./dom-leaks-images/detached-elements-demo-app.png)
 
 1. Click the **Room 2** button:
 
 1. In the **Detached Elements** tool, click the **Get Detached Elements** (![The Get Detached Elements icon](images/get-detached-elements-icon-light-mode.png)) icon:
 
-   ![Get Detached Elements using the Detached Elements tool](images/get-detached-elements.png)
+   ![Get Detached Elements using the Detached Elements tool](./dom-leaks-images/get-detached-elements.png)
 
 The **Detached Elements** tool displays all of the detached elements of the page.  When you switch to **Room 2** in the demo application, the messages that were generated in **Room 1** are no longer attached to the DOM, but they are still referenced by JavaScript.
 
@@ -68,7 +68,7 @@ The **Detached Elements** tool displays all of the detached elements of the page
 
 Next, trigger garbage collection (GC) in the browser:
 
-1. In the **Detached Elements** tool, click the **Collect garbage** (![The 'Collect garbage' icon](images/collect-garbage-icon-light-mode.png)) icon.
+1. In the **Detached Elements** tool, click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon-light-mode.png)) icon.
 
 1. Click the **Get Detached Elements** (![The Get Detached Elements icon](images/get-detached-elements-icon-light-mode.png)) icon.
 
@@ -81,13 +81,13 @@ When you select **Collect garbage**, the browser runs garbage collection. When y
 Once you have found a detached element that cannot be garbage-collected, you can use the **Analyze** button in the **Detached Elements** tool to identify the JavaScript code running on the page that is still referencing the detached element. The **Analyze** button takes a heap snapshot and populates the **ID** of the detached element with its location in the heap:
 
 > [!div class="mx-imgBorder"]
-> ![Analyze Detached Elements in the Detached Elements tool](images/analyze-detached-elements.png)
+> ![Analyze Detached Elements in the Detached Elements tool](./dom-leaks-images/analyze-detached-elements.png)
 
 For more information about heap snapshots, read [Record heap snapshots using the Memory tool](heap-snapshots.md).
 
 To identify the JavaScript code that references a detached element:
 
-1. In the **Detached Elements** tool, click the **Analyze** (![The Analyze icon](images/analyze-icon-light-mode.png)) icon.
+1. In the **Detached Elements** tool, click the **Analyze** (![The Analyze icon](./dom-leaks-images/analyze-icon-light-mode.png)) icon.
 
    The **Memory** tool opens in the bottom panel of DevTools.
 
@@ -95,7 +95,7 @@ To identify the JavaScript code that references a detached element:
 
    The **Memory** tool in the bottom panel automatically selects the object in the heap that is referencing the detached element. We call these objects **Retainers**:
 
-   ![Referencing a heap snapshot from the Detached Elements tool](images/detached-elements-heap-snapshot.png)
+   ![Referencing a heap snapshot from the Detached Elements tool](./dom-leaks-images/detached-elements-heap-snapshot.png)
 
 1. In the **Memory** tool in the bottom panel, select the link **room.js:13**.
 
@@ -103,7 +103,7 @@ To identify the JavaScript code that references a detached element:
 
 1. In the `hide()` function of **room.js**, the JavaScript code of the demo application adds each message in the room to an `unmounted` array. The `unmounted` array is the object that is referencing the detached element:
 
-   ![Identifying the JavaScript that is retaining the detached element](images/detached-elements-javascript-retainers.png)
+   ![Identifying the JavaScript that is retaining the detached element](./dom-leaks-images/detached-elements-javascript-retainers.png)
 
 You have now identified the retainer that is preventing the detached element from being garbage-collected by the browser!
 
@@ -115,9 +115,9 @@ Because the DOM is a fully connected graph, when one DOM node is retained in mem
 
 To identify the culprit node in a detached tree that is causing the entire tree to be retained:
 
-1. Click the **Detach Elements** (![The Detach Elements icon](images/detach-elements-icon-light-mode.png)) icon to destroy the parent-child links inside the detached tree:
+1. Click the **Detach Elements** (![The Detach Elements icon](./dom-leaks-images/detach-elements-icon-light-mode.png)) icon to destroy the parent-child links inside the detached tree:
 
-   ![The Detach Elements button in the Detached Elements tool](images/detached-elements-remove-links.png)
+   ![The Detach Elements button in the Detached Elements tool](./dom-leaks-images/detached-elements-remove-links.png)
 
 1. Click the **Collect garbage** (![The 'Collect garbage' icon](images/collect-garbage-icon-light-mode.png)) icon.
 
@@ -131,7 +131,7 @@ You can check for detached elements from different origins or frames using the *
 
 1. Click the **Selected target** dropdown list:
 
-   ![The 'Selected target' dropdown list lets you select different origins](images/detached-elements-target-dropdown.png)
+   ![The 'Selected target' dropdown list lets you select different origins](./dom-leaks-images/detached-elements-target-dropdown.png)
 
 1. Select a different origin.
 
@@ -145,7 +145,7 @@ When looking for memory leaks, remember that leaks can depend on the context of 
 
 The following image shows detached elements in the form of messages that are reattached when a user navigates from **Room 2** back to **Room 1**:
 
-![The detached elements are reattached to the DOM when switching back to Room 1](images/detached-elements-reattached.png)
+![The detached elements are reattached to the DOM when switching back to Room 1](./dom-leaks-images/detached-elements-reattached.png)
 
 Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up. Detached elements aren't always an indication of a memory leak, and memory leaks aren't always caused by detached elements.
 

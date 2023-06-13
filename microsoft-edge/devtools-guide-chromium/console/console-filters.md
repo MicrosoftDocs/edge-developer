@@ -27,15 +27,15 @@ Each method of the `console` object has a severity level attached to it.  The se
 
 To filter messages in the **Console**, use the **Log Level** dropdown menu.  You may toggle the state of each level.  To turn off each level, remove the checkmark next to each.
 
-![The dropdown menu filters Console messages using the log level](../media/console-filter-dropdown.png)
+![The dropdown menu filters Console messages using the log level](./console-filters-images/console-filter-dropdown.png)
 
 Since no filter is applied, the following figure displays dozens of messages.  Next, reduce and manage the number of messages.
 
-![No filter set means that you can display many console messages](../media/console-filter-displays-all.png)
+![No filter set means that you can display many console messages](./console-filters-images/console-filter-displays-all.png)
 
 To hide all the Warning-level messages to cut down on the noise, click the **Log Levels** dropdown and then clear the `Warnings` level.
 
-![Hiding all the warning level messages in the Console to filter much of the noise](../media/console-filter-hide-warning.png)
+![Hiding all the warning level messages in the Console to filter much of the noise](./console-filters-images/console-filter-hide-warning.png)
 
 
 <!-- ====================================================================== -->
@@ -61,20 +61,20 @@ You can define what kind of messages you want to display, and where each message
 
 1. Click the **Show console sidebar** button:
 
-   ![To open the Sidebar, click the 'Show console sidebar' icon](../media/console-filter-sidebar-icon.png)
+   ![To open the Sidebar, click the 'Show console sidebar' icon](./console-filters-images/console-filter-sidebar-icon.png)
 
    When the **Sidebar** is open, you can display the overall number of messages and where each originated.  The options are `All messages`, `User Messages`, `Errors`, `Warnings`, `Info`, and `Verbose`.
 
-   ![The Console Sidebar displays the different sources where messages originated from](../media/console-filter-sidebar-open.png)
+   ![The Console Sidebar displays the different sources where messages originated from](./console-filters-images/console-filter-sidebar-open.png)
 
 1. Select any of the options to display only the messages of that type.  For example, to display user messages, click the user messages option to display less noise.
 
-   ![Displaying only user messages in the Console, by using the filter in the Sidebar](../media/console-filter-select-user-messages.png)
+   ![Displaying only user messages in the Console, by using the filter in the Sidebar](./console-filters-images/console-filter-select-user-messages.png)
 
 1. To filter more and expand the message category, click the triangle icon next to the message category.
 
-   ![Click the arrow icon to expand a message category](../media/console-filter-sidebar-open-arrow.png)
+   ![Click the arrow icon to expand a message category](./console-filters-images/console-filter-sidebar-open-arrow.png)
 
 1. Individual sources are revealed and listed.  Select a source, to display only messages that originate from that source:
 
-   ![Select any of the revealed options to filter messages by message type and source](../media/console-filter-user-message-by-source.png)
+   ![Select any of the revealed options to filter messages by message type and source](./console-filters-images/console-filter-user-message-by-source.png)

@@ -43,15 +43,15 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
 1. In the rendered webpage, under **Inspect a Node**, right-click **Michelangelo** and then select **Inspect**.
 
-   ![Inspecting a node](../media/dom-glitch-dom-examples-michelangelo-inspect.png)
+   ![Inspecting a node](./index-images/dom-glitch-dom-examples-michelangelo-inspect.png)
 
    The **Elements** tool of DevTools opens.  `<p>Michelangelo</p>` node is highlighted in the **DOM Tree**.
 
-   ![Highlighting the Michelangelo node](../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.png)
+   ![Highlighting the Michelangelo node](./index-images/dom-glitch-dom-examples-michelangelo-elements-highlighted.png)
 
 1. Click the **Inspect** (![Inspect](../media/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools.
 
-   ![The Inspect icon](../media/dom-elements-highlighted-select-element-page-inspect.png)
+   ![The Inspect icon](./index-images/dom-elements-highlighted-select-element-page-inspect.png)
 
 1. Under **Inspect a Node**, click the **Tokyo** text.  Now, `<p>Tokyo</p>` node is highlighted in the DOM Tree.
 
@@ -66,11 +66,11 @@ Once you have selected a node in the DOM Tree, you can navigate the DOM Tree wit
 
 1. In the rendered webpage, under **Navigate the DOM Tree with a Keyboard**, right-click **Ringo** and then select **Inspect**.  `<p>Ringo</p>` is selected in the DOM Tree.
 
-   ![Inspecting the 'Ringo' node](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.png)
+   ![Inspecting the 'Ringo' node](./index-images/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.png)
 
 1. Press the **Up Arrow** key two times.  `<div>` is selected.
 
-   ![Inspecting the 'div' node](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.png)
+   ![Inspecting the 'div' node](./index-images/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.png)
 
 1. Press the **Left Arrow** key.  The `<div>` list collapses.
 
@@ -97,7 +97,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 
 1. Right-click the `<p>Magritte</p>` node, and then click **Scroll into view**.  Your viewport scrolls back up to display the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if the **Scroll into view** option isn't displayed.
 
-![Scroll into view](../media/dom-elements-highlighted-scroll-into-view-dropdown.png)
+![Scroll into view](./index-images/dom-elements-highlighted-scroll-into-view-dropdown.png)
 
 ### Search for nodes
 
@@ -109,7 +109,7 @@ You can search the DOM Tree by string, CSS selector, or XPath selector.
 
 1. Type **The Moon is a Harsh Mistress**.  The last sentence is highlighted in the DOM Tree.
 
-![Highlighting the query in the Search bar](../media/dom-elements-highlighted-search-nodes-highlight.png)
+![Highlighting the query in the Search bar](./index-images/dom-elements-highlighted-search-nodes-highlight.png)
 
 The Search bar also supports CSS and XPath selectors.
 
@@ -129,7 +129,7 @@ To edit the text content of a node, double-click the content in the DOM Tree.
 
 1. In the DOM Tree, double-click `Michelle`.  In other words, double-click the text between `<p>` and `</p>`.  The text is highlighted to indicate that it is selected.
 
-   ![Edit the text](../media/dom-elements-highlighted-edit-content.png)
+   ![Edit the text](./index-images/dom-elements-highlighted-edit-content.png)
 
 1. Delete `Michelle`, type `Leela`, then press **Enter** to confirm the change.  The text in the DOM changes from **Michelle** to **Leela**.
 
@@ -143,11 +143,11 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
 1. Double-click `<p>`.  The text is highlighted to indicate that the node is selected.
 
-   ![Edit the node](../media/dom-elements-highlighted-edit-attributes-highlighted.png)
+   ![Edit the node](./index-images/dom-elements-highlighted-edit-attributes-highlighted.png)
 
 1. Press the **Right Arrow** key, add a space, type `style="background-color:gold"`, and then press **Enter**.  The background color of the node changes to gold.
 
-   ![Add a style attribute to the node](../media/dom-elements-highlighted-edit-attributes-inline-css.png)
+   ![Add a style attribute to the node](./index-images/dom-elements-highlighted-edit-attributes-inline-css.png)
 
 ### Edit node tag name
 
@@ -161,7 +161,7 @@ To edit the tag name of a node, double-click the tag name and then type in the n
 
 1. Delete `p`, type `button`, then press **Enter**.  The `<p>` node changes to a `<button>` node.
 
-   ![Change the node type to button](../media/dom-elements-highlighted-edit-node-type-button.png)
+   ![Change the node type to button](./index-images/dom-elements-highlighted-edit-node-type-button.png)
 
 ### Edit multiple nodes, text, and attributes 
 
@@ -175,7 +175,7 @@ To use the HTML editor:
 
 1. In the DOM Tree, right-click the `<section id="edit-as-html-1">` node and select **Edit as HTML**. The HTML editor appears.
 
-   ![The HTML editor](../media/dom-elements-highlighted-edit-html-editor.png)
+   ![The HTML editor](./index-images/dom-elements-highlighted-edit-html-editor.png)
 
 1. Type the changes you want to make in the HTML editor, such as:
 
@@ -187,7 +187,7 @@ To use the HTML editor:
 
 1. Type **Ctrl+Enter** to apply the changes to the DOM tree and close the HTML editor.
 
-   ![The new DOM tree, with the an extra <p> node, after the HTML editor closed](../media/dom-elements-highlighted-edit-html-editor-closed.png)
+   ![The new DOM tree, with the an extra <p> node, after the HTML editor closed](./index-images/dom-elements-highlighted-edit-html-editor-closed.png)
 
 ### Reorder DOM nodes
 
@@ -199,7 +199,7 @@ Drag nodes to reorder them.
 
 1. In the DOM Tree, drag `<p>Elvis Presley</p>` to the top of the list.
 
-![Drag the node to the top of the list](../media/dom-elements-reorder-dom-nodes.png)
+![Drag the node to the top of the list](./index-images/dom-elements-reorder-dom-nodes.png)
 
 ### Force state
 
@@ -223,7 +223,7 @@ Press `H` to hide a node, as follows:
 
 1. Press the `H` key.  The node is hidden.
 
-   ![What the node looks like in the DOM Tree after it is hidden](../media/dom-elements-highlighted-hide-a-node.png)
+   ![What the node looks like in the DOM Tree after it is hidden](./index-images/dom-elements-highlighted-hide-a-node.png)
 
 1. Press the `H` key again.  The node is shown again.
 
@@ -257,13 +257,13 @@ When you inspect a node, the `== $0` text next to the node means that you can re
 
 1. Type `$0` and press **Enter**.  The result of the expression shows that `$0` evaluates to `<p>The Left Hand of Darkness</p>`:
 
-   ![The result of the first $0 expression in the Console](../media/dom-elements-highlighted-reference-currently-selected-node-console-1.png)
+   ![The result of the first $0 expression in the Console](./index-images/dom-elements-highlighted-reference-currently-selected-node-console-1.png)
 
 1. Hover on the result.  The node is highlighted in the viewport.
 
 1. Click `<p>Dune</p>` in the DOM Tree, type `$0` in the Console again, and then press **Enter** again.  Now, `$0` evaluates to `<p>Dune</p>`:
 
-![The result of the second $0 expression in the Console](../media/dom-elements-highlighted-reference-currently-selected-node-console-2.png)
+![The result of the second $0 expression in the Console](./index-images/dom-elements-highlighted-reference-currently-selected-node-console-2.png)
 
 ### Store as global variable
 
@@ -277,7 +277,7 @@ If you need to refer back to a node many times, store it as a global variable.
 
 1. Type `temp1` in the Console and then press **Enter**.  The result of the expression shows that the variable evaluates to the node.
 
-![The result of the temp1 expression](../media/dom-elements-highlighted-store-global-variable-console-temp1.png)
+![The result of the temp1 expression](./index-images/dom-elements-highlighted-store-global-variable-console-temp1.png)
 
 ### Copy JS path
 
@@ -295,7 +295,7 @@ Copy the JavaScript path to a node when you need to reference it in an automated
 
 The result of the **Copy JS Path** expression:
 
-![The result of the Copy JS Path expression](../media/dom-elements-highlighted-copy-js-path-console-query-selector.png)
+![The result of the Copy JS Path expression](./index-images/dom-elements-highlighted-copy-js-path-console-query-selector.png)
 
 
 <!-- ====================================================================== -->
@@ -313,13 +313,13 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
 1. In the DOM Tree, right-click `<p id="botm_target">Sauerkraut</p>`, and then select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
-   ![Break on attribute modifications](../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.png)
+   ![Break on attribute modifications](./index-images/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.png)
 
 1. Click the **Set Background** button.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change.
 
-   ![The Sources tool showing the line of code that caused the attribute to change](../media/dom-break-attribute-modifications-sources-paused-on.png)
+   ![The Sources tool showing the line of code that caused the attribute to change](./index-images/dom-break-attribute-modifications-sources-paused-on.png)
 
-1. Click **Resume Script** (![Resume Script](../media/resume-script-icon.png)) to resume the JavaScript execution.
+1. Click **Resume Script** (![Resume Script](./index-images/resume-script-icon.png)) to resume the JavaScript execution.
 
 ### Break on node removal
 
@@ -425,7 +425,7 @@ See [Introduction to the DOM](https://developer.mozilla.org/docs/Web/API/Documen
 
 Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If you don't see the specified option in the context menu, try right-clicking away from the node text, or click the `...` button to the left of the node.
 
-![Where to click if all of the options aren't displayed](../media/dom-elements-highlighted-right-click-right-side.png)
+![Where to click if all of the options aren't displayed](./index-images/dom-elements-highlighted-right-click-right-side.png)
 
 
 <!-- ====================================================================== -->

@@ -46,7 +46,7 @@ To generate a PAT in Azure DevOps:
 
 1. Click **New Token**.  The **Create a new personal access token** dialog opens:
 
-   ![The 'Create a new personal access token' dialog, with 'Read' scope for Symbols selected](images/ado-pat-config-read.png)
+   ![The 'Create a new personal access token' dialog, with 'Read' scope for Symbols selected](./consume-source-maps-from-azure-images/ado-pat-config-read.png)
 
 1. In the **Name** text box, enter a name for the PAT, such as "devtool source maps".
 
@@ -78,7 +78,7 @@ To configure DevTools:
 
 1. Make sure the **Enable JavaScript source maps** checkbox and the **Enable CSS source maps** checkbox are selected:
 
-    ![The Preferences configuration screen in DevTools settings](images/ado-preferences-source-maps-devtools.png)
+    ![The Preferences configuration screen in DevTools settings](./consume-source-maps-from-azure-images/ado-preferences-source-maps-devtools.png)
 
 1. In the sidebar of the **Settings** page, click **Symbol Server**.
 
@@ -86,7 +86,7 @@ To configure DevTools:
 
 1. In the **Azure DevOps personal access token** text box, paste your personal access token (PAT).
 
-   ![The Symbol Server configuration screen in DevTools settings](images/ado-pat-devtools.png)
+   ![The Symbol Server configuration screen in DevTools settings](./consume-source-maps-from-azure-images/ado-pat-devtools.png)
 
 1. Click **x** in the upper right to close the **Settings** panel, and then click the **Reload DevTools** button.
 

@@ -18,7 +18,7 @@ This sample, **WebView2WindowsFormsBrowser**, demonstrates how to use the WebVie
 *  Repo directory: [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser)
 *  Solution file: **WebView2WindowsFormsBrowser.sln**
 
-![WebView2WindowsFormsBrowser app window](media/webview2windowsformsbrowser-app-window.png)
+![WebView2WindowsFormsBrowser app window](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-app-window.png)
 
 *  The **Control** menu has toggle menuitems for **Accelerator Keys** and **Allow External Drop**.
 *  The **View** menu has **Zoom** and **Background Color** submenus.
@@ -97,18 +97,18 @@ If you build the **WebView2WindowsFormsBrowser** project and get error messages 
 
 1. Go to [Download .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework/), select v4.6.2, and then click the **Download .NET Framework 4.6.2 Developer Pack** button:
 
-   ![Downloading .NET Framework 4.6.2 Developer Pack](media/webview2windowsformsbrowser-dl-net-fwk.png)
+   ![Downloading .NET Framework 4.6.2 Developer Pack](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-dl-net-fwk.png)
 
 1. In Microsoft Edge, select **Settings and more** > **Downloads** > **Show in folder** icon:
 
-   ![Downloading .NET Framework Developer Pack](media/webview2windowsformsbrowser-thx-dl-net-fwk.png)
+   ![Downloading .NET Framework Developer Pack](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-thx-dl-net-fwk.png)
 
 1. In the `Downloads` folder, double-click the file, such as `ndp462-devpack-kb3151934-enu.exe`.
 
    The **Microsoft .NET Framework Developer Pack** license agreement dialog appears:
 
-   ![The Microsoft .NET Framework Developer Pack license agreement dialog](media/webview2windowsformsbrowser-net-fwk-license-462.png)
-   <!-- ![The Microsoft .NET Framework Developer Pack license agreement dialog](media/webview2windowsformsbrowser-net-fwk-license.png) 4.8, keep as-in, in case needed -->
+   ![The Microsoft .NET Framework Developer Pack license agreement dialog](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-net-fwk-license-462.png)
+   <!-- ![The Microsoft .NET Framework Developer Pack license agreement dialog](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-net-fwk-license.png) 4.8, keep as-in, in case needed -->
 
 1. Select the **I agree to the license terms and conditions** checkbox, and then click the **Install** button.
 
@@ -118,8 +118,8 @@ If you build the **WebView2WindowsFormsBrowser** project and get error messages 
 
    The Microsoft .NET Framework Developer Pack **Setup Successful** dialog appears:
 
-   ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog](media/webview2windowsformsbrowser-net-dev-pak-success-462.png)
-   <!-- ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog](media/webview2windowsformsbrowser-net-dev-pak-success.png) 4.8, keep as-in, in case needed -->
+   ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-net-dev-pak-success-462.png)
+   <!-- ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-net-dev-pak-success.png) 4.8, keep as-in, in case needed -->
 
 1. Click the **Close** button.
 
@@ -134,7 +134,7 @@ Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
 1. **WebView2 SDK** - Update or install the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
    <!-- this same png is used multiple times in this file -->
-   ![The WebView2WindowsFormsBrowser project in Visual Studio](media/webview2windowsformsbrowser-in-visual-studio.png)
+   ![The WebView2WindowsFormsBrowser project in Visual Studio](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-in-visual-studio.png)
 
 
 <!-- ====================================================================== -->

@@ -30,7 +30,7 @@ For an overview of the network-related DevTools features, see [Network features 
 
 For a video version of this tutorial, view the following video:
 
-[![Thumbnail image for the DevTools Network tool video](./images/network-tool-intro-video.png)](https://www.youtube.com/watch?v=niG_Ck6E5L8)
+[![Thumbnail image for the DevTools Network tool video](./index-images/network-tool-intro-video.png)](https://www.youtube.com/watch?v=niG_Ck6E5L8)
 
 <!-- TODO: entire section needs a Microsoft Edge DevTools rewrite  -->
 
@@ -56,7 +56,7 @@ To get the most out of this tutorial, open the demo and try out the features on 
 
 1. Open the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/) in a new tab or window:
 
-   ![The demo](../media/network-glitch-inspect-network-activity-demo.png)
+   ![The demo](./index-images/network-glitch-inspect-network-activity-demo.png)
 
    <!-- You can view the source files for this demo in the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) repo folder: -->
 
@@ -70,7 +70,7 @@ To get the most out of this tutorial, open the demo and try out the features on 
 
    You might prefer to [dock DevTools to the bottom of your window](../customize/placement.md):
 
-   ![Network tool in DevTools, with DevTools docked to the bottom of the window](../media/network-glitch-network-bottom.png)
+   ![Network tool in DevTools, with DevTools docked to the bottom of the window](./index-images/network-glitch-network-bottom.png)
 
 The **Network** tool is initially empty.  DevTools only logs network activity after you open it, and no network activity has occurred since you opened DevTools.
 
@@ -84,7 +84,7 @@ The Network tool is divided in three main parts:
 * Below the top toolbar, the **Overview** graph provides a high-level overview of the network traffic over time and allows to filter network requests.
 * Below the **Overview** graph, the **Network Log** section shows the network activity and allows to inspect individual requests.
 
-![The three main parts of the Network tool](./images/network-ui-sections.png)
+![The three main parts of the Network tool](./index-images/network-ui-sections.png)
 
 
 <!-- ====================================================================== -->
@@ -94,7 +94,7 @@ To view the network activity that a page causes:
 
 1. Refresh the webpage.  The **Network** tool logs all network activity in the **Network Log**:
 
-   ![The Network Log](../media/network-glitch-network.png)
+   ![The Network Log](./index-images/network-glitch-network.png)
 
    Each row of the **Network Log** represents a resource.  By default the resources are listed chronologically.  The top resource is usually the main HTML document.  The bottom resource is whatever was requested last.
 
@@ -120,7 +120,7 @@ To view the network activity that a page causes:
 
 1. Look at the bottom of the **Network Log** again.  A new resource named `getstarted.json` is displayed:
 
-   ![A new resource in the Network Log](../media/network-glitch-network-new-resource.png)
+   ![A new resource in the Network Log](./index-images/network-glitch-network-new-resource.png)
 
 
 <!-- ====================================================================== -->
@@ -130,7 +130,7 @@ The columns of the Network Log are configurable.  You can hide columns that you 
 
 1. Right-click the header of the Network Log table, and then select **Domain**.  The domain of each resource is now shown:
 
-   ![Enable the Domain column](../media/network-glitch-network-edit-column.png)
+   ![Enable the Domain column](./index-images/network-glitch-network-edit-column.png)
 
 1. To see the full URL of a resource, hover over its cell in the **Name** column.
 
@@ -144,11 +144,11 @@ The network connection of the computer that you use to build sites is probably f
 
 1. Select **Slow 3G**:
 
-   ![Select Slow 3G](../media/network-glitch-network-throttling-slow-3g.png)
+   ![Select Slow 3G](./index-images/network-glitch-network-throttling-slow-3g.png)
 
 1. Long-press **Reload** (![Reload](../media/refresh-icon.png)) (or right-click **Refresh**) and then select **Empty cache and hard refresh**:
 
-   ![Empty cache and hard refresh](../media/network-glitch-empty-cache-and-hard-reset.png)
+   ![Empty cache and hard refresh](./index-images/network-glitch-empty-cache-and-hard-reset.png)
 
 On repeat visits, the browser usually serves some files from the [cache](https://developer.mozilla.org/docs/Web/HTTP/Caching), which speeds up the page load.  **Empty cache and hard refresh** forces the browser to go the network for all resources.  Use it to display how a first-time visitor experiences a page load.
 
@@ -164,17 +164,17 @@ Screenshots display how a webpage looks over time while it loads.
 
 1. Click the (![Network settings](../media/settings-icon.png)) button and then select the **Capture screenshots** checkbox:
 
-   ![The Capture Screenshot checkbox in the Network settings](../media/network-glitch-network-screenshots-setting.png)
+   ![The Capture Screenshot checkbox in the Network settings](./index-images/network-glitch-network-screenshots-setting.png)
 
 1. Refresh the page again using the **Empty cache and hard refresh** workflow.  See [Simulate a slower connection](#simulate-a-slower-network-connection) above if you need a reminder on how to do this.
 
    The **Screenshots** panel provides thumbnails of how the page looked at various points during the loading process:
 
-   ![Screenshots of the page load](../media/network-glitch-network-screenshots.png)
+   ![Screenshots of the page load](./index-images/network-glitch-network-screenshots.png)
 
 1. Click the first thumbnail.  DevTools shows you what network activity was occurring at that moment in time:
 
-   ![The network activity that was happening during the first screenshot](../media/network-glitch-network-screenshots-first.png)
+   ![The network activity that was happening during the first screenshot](./index-images/network-glitch-network-screenshots-first.png)
 
 1. Click (![Network settings](../media/settings-icon.png)) again and turn off the **Capture screenshots** checkbox to close the **Screenshots** pane.
 
@@ -188,17 +188,17 @@ Select a resource to learn more information about it.
 
 1. Select `network-tutorial/`.  The **Headers** panel is shown.  Use this panel to inspect HTTP headers:
 
-   ![The Headers panel](../media/network-glitch-network-resources-headers.png)
+   ![The Headers panel](./index-images/network-glitch-network-resources-headers.png)
 
 1. Select the **Preview** panel.  A basic rendering of the HTML is shown:
 
-   ![The Preview panel](../media/network-glitch-network-resources-preview.png)
+   ![The Preview panel](./index-images/network-glitch-network-resources-preview.png)
 
     The panel is helpful when an API returns an error code in HTML.  You might find it easier to read the rendered HTML than the HTML source code, or when you inspect images.
 
 1. Select the **Response** panel.  The HTML source code is shown:
 
-   ![The Response panel](../media/network-glitch-network-resources-response.png)
+   ![The Response panel](./index-images/network-glitch-network-resources-response.png)
 
    Tip: When a file is minified, select the **Format** (![Format](../media/format-icon.png)) button at the bottom of the **Response** panel to re-format the contents of the file for readability.
 
@@ -206,11 +206,11 @@ Select a resource to learn more information about it.
 
 1. Select the **Timing** panel.  A breakdown of the network activity for the resource is displayed:
 
-   ![The Timing panel](../media/network-glitch-network-resources-timing.png)
+   ![The Timing panel](./index-images/network-glitch-network-resources-timing.png)
 
-1. Click **Close** (![Close](../media/close-icon.png)) to view the Network Log again:
+1. Click **Close** (![Close](./index-images/close-icon.png)) to view the Network Log again:
 
-   ![The Close button](../media/network-glitch-network-resources-close-tabs.png)
+   ![The Close button](./index-images/network-glitch-network-resources-close-tabs.png)
 
 
 <!-- ====================================================================== -->
@@ -222,17 +222,17 @@ For example, suppose you want to verify that your resources are using reasonable
 
 <!--TODO: add cache policies section when available  -->
 
-1. Select **Search** (![Search](../media/search-icon.png)).  The Search pane opens to the left of the Network log:
+1. Select **Search** (![Search](./index-images/search-icon.png)).  The Search pane opens to the left of the Network log:
 
-   ![The Search pane](../media/network-glitch-network-search-empty.png)
+   ![The Search pane](./index-images/network-glitch-network-search-empty.png)
 
 1. Type `no-cache` and press **Enter**.  The Search pane lists all instances of `no-cache` that it finds in resource headers or content:
 
-   ![Search results for no-cache](../media/network-glitch-network-search-cache-control.png)
+   ![Search results for no-cache](./index-images/network-glitch-network-search-cache-control.png)
 
 1. Click a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the **Headers** panel opens.   If the query was found in content, the **Response** panel opens:
 
-   ![A search result highlighted in the Headers panel](../media/network-glitch-network-search-cache-control-headers-response-headers.png)
+   ![A search result highlighted in the Headers panel](./index-images/network-glitch-network-search-cache-control-headers-response-headers.png)
 
 1. Close the Search pane and the **Headers** panel.
 
@@ -244,14 +244,14 @@ DevTools provides numerous workflows for filtering out resources that aren't rel
 
 The **Filters** toolbar should be turned on by default.  If the **Filters** toolbar isn't on, click **Filter** (![Filter](../media/filter-icon.png)) to show it:
 
-![The Filters toolbar](../media/network-glitch-network-filter-empty.png)
+![The Filters toolbar](./index-images/network-glitch-network-filter-empty.png)
 
 
 ### Filter by string, regular expression, or property
 
 The **Filter** text box supports many different types of filtering.
 
-![The filter text box of the Network tool](images/network-tool-filter-textbox.png)
+![The filter text box of the Network tool](./index-images/network-tool-filter-textbox.png)
 
 1. Type `png` into the **Filter** text box.  Only the files that contain the text `png` are shown.  In this case the only files that match the filter are the PNG images.
 
@@ -272,7 +272,7 @@ To focus in on a certain type of file, such as stylesheets:
 
 1. Select **CSS**.  All other file types are filtered out:
 
-   ![Show CSS files only](../media/network-glitch-network-filter-file-type-css.png)
+   ![Show CSS files only](./index-images/network-glitch-network-filter-file-type-css.png)
 
 1. To also display scripts, press and hold **Ctrl** (Windows, Linux) or **Command** (macOS), and then click **JS**.
 
@@ -290,17 +290,17 @@ How does a page look and behave when some of the page resources aren't available
 
 1. Type `block`, select **Show Request Blocking**, and then press **Enter**:
 
-   ![Show Request Blocking](../media/network-glitch-network-cli-block.png)
+   ![Show Request Blocking](./index-images/network-glitch-network-cli-block.png)
 
-1. Click **Add Pattern** (![Add Pattern](../media/add-icon.png)), then type `main.css`, and then click **Add**:
+1. Click **Add Pattern** (![Add Pattern](./index-images/add-icon.png)), then type `main.css`, and then click **Add**:
 
-   ![Blocking 'main.css'](../media/network-glitch-network-cli-block-add-pattern.png)
+   ![Blocking 'main.css'](./index-images/network-glitch-network-cli-block-add-pattern.png)
 
 1. Refresh the page.  As expected, the styling of the page is slightly messed up, because the main stylesheet has been blocked.
 
    In the `main.css` row in the Network Log, the red text means that the resource was blocked:
 
-   ![main.css has been blocked](../media/network-glitch-network-cli-block-main-css.png)
+   ![main.css has been blocked](./index-images/network-glitch-network-cli-block-main-css.png)
 
 1. Clear the **Enable request blocking** checkbox.
 

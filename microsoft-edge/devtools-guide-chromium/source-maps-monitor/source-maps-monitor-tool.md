@@ -22,7 +22,7 @@ To try this feature:
 
 1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button, and then select the **Source Maps Monitor** tool.
 
-   ![The Source Maps Monitor tool](../media/source-maps-monitor-tool.png)
+   ![The Source Maps Monitor tool](./source-maps-monitor-tool-images/source-maps-monitor-tool.png)
 
 
 <!-- ====================================================================== -->

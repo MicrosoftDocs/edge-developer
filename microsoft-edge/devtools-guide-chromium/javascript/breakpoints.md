@@ -92,13 +92,13 @@ To set a conditional line-of-code breakpoint:
 
 1. Press **Enter** to activate the breakpoint.  A red diamond (or more recently, an orange icon) appears on top of the line number column:
 
-   ![A conditional line-of-code breakpoint](../media/javascript-sources-page-js-conditional-breakpoint.png)
+   ![A conditional line-of-code breakpoint](./breakpoints-images/javascript-sources-page-js-conditional-breakpoint.png)
 
 ### Manage line-of-code breakpoints
 
 Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from a single location.
 
-![The Breakpoints panel](../media/javascript-sources-page-js-breakpoints-16-33.png)
+![The Breakpoints panel](./breakpoints-images/javascript-sources-page-js-breakpoints-16-33.png)
 
 *  Select the checkbox next to an entry to disable that breakpoint.
 
@@ -106,7 +106,7 @@ Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from 
 
 *  Right-click anywhere in the **Breakpoints** pane to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.
 
-![Deactivated breakpoints in the Breakpoints pane](../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.png)
+![Deactivated breakpoints in the Breakpoints pane](./breakpoints-images/javascript-sources-page-js-breakpoints-deactivate-breakpoints.png)
 
 
 <!-- ====================================================================== -->
@@ -122,7 +122,7 @@ To set a DOM change breakpoint:
 
 1. Right-click the element, point to **Break on**, then select **Subtree modifications**, **Attribute modifications**, or **Node removal**.
 
-   ![The context menu for creating a DOM change breakpoint](../media/javascript-elements-break-on-subtree-modifications.png)
+   ![The context menu for creating a DOM change breakpoint](./breakpoints-images/javascript-elements-break-on-subtree-modifications.png)
 
 ### Types of DOM change breakpoints
 
@@ -155,7 +155,7 @@ To set an XHR breakpoint:
 
 1. Press **Enter** to confirm.
 
-![Create an XHR breakpoint](../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.png)
+![Create an XHR breakpoint](./breakpoints-images/javascript-sources-page-js-xhr-fetch-breakpoints-org.png)
 
 
 <!-- ====================================================================== -->
@@ -169,7 +169,7 @@ Use event listener breakpoints when you want to pause on the event listener code
 
 1. Check one of these categories to pause whenever any event from that category is fired, or expand the category and check a specific event.
 
-![Create an event listener breakpoint](../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.png)
+![Create an event listener breakpoint](./breakpoints-images/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.png)
 
 
 <!-- ====================================================================== -->
@@ -179,13 +179,13 @@ Use exception breakpoints when you want to pause on the line of code that is thr
 
 1. Select the **Sources** tool.
 
-1. Click **Pause on exceptions** (![Pause on exceptions](../media/pause-on-exceptions-icon.png)).  The icon turns blue when enabled.
+1. Click **Pause on exceptions** (![Pause on exceptions](./breakpoints-images/pause-on-exceptions-icon.png)).  The icon turns blue when enabled.
 
-   ![The Pause on exceptions button](../media/javascript-sources-page-js-pause-on-exceptions.png)
+   ![The Pause on exceptions button](./breakpoints-images/javascript-sources-page-js-pause-on-exceptions.png)
 
 1. **Optional:** Check the **Pause On Caught Exceptions** checkbox if you also want to pause on caught exceptions, in addition to uncaught ones.
 
-   ![Paused on an uncaught exception](../media/javascript-sources-page-js-paused-on-exception.png)
+   ![Paused on an uncaught exception](./breakpoints-images/javascript-sources-page-js-paused-on-exception.png)
 
 
 <!-- ====================================================================== -->

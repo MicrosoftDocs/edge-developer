@@ -45,11 +45,11 @@ This way of opening DevTools is useful for these simple scenarios:
 
 1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens:
 
-   ![The Launch Instance button with no folder open](./get-started-images/launch-instance-button-no-folder.png)
+   ![The Launch Instance button with no folder open](./get-started-launch-instance-images/launch-instance-button-no-folder.png)
 
 1. Click the **Launch Instance** button.  The **Edge DevTools** tab opens, and the **Edge DevTools: Browser** tab opens, displaying the default, Success page:
 
-   ![The default result of Launch Instance: the 'Edge DevTools' tabs](./get-started-images/launch-instance-result.png)
+   ![The default result of Launch Instance: the 'Edge DevTools' tabs](./get-started-launch-instance-images/launch-instance-result.png)
 
    The Success page source file is a self-contained `.html` file in a directory on your drive.  This is a single `.html` file that includes CSS rules (in a `<style>` element).  It also includes a JavaScript `console` statement (in a `<script>` element).
 
@@ -73,7 +73,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 
    The first time you open a folder, you must confirm that you trust the authors of files in this folder:
 
-   ![Do you trust the authors in the files of this folder?](./get-started-images/trust.png)
+   ![Do you trust the authors in the files of this folder?](./get-started-launch-instance-images/trust.png)
 
 1. Click the **Yes, I trust the authors** button.
 
@@ -89,7 +89,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 <!-- ====================================================================== -->
 ## Step 4: Edit CSS
 
-1. In the **Edge DevTools** tab, click the **Select an element in the page to inspect it** (![Inspect tool icon](./get-started-images/inspect-tool-icon.png)) button, sometimes called the **Inspect** button.
+1. In the **Edge DevTools** tab, click the **Select an element in the page to inspect it** (![Inspect tool icon](./get-started-launch-instance-images/inspect-tool-icon.png)) button, sometimes called the **Inspect** button.
 
 1. In the **Edge DevTools: Browser** tab, hover over different parts of the page, while you watch the **Elements** tool's DOM tree expand and update.
 
@@ -118,7 +118,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
    *  The **Edge DevTools** tab.
    *  The **Edge DevTools: Browser** tab.
 
-   ![Success page editing h2 CSS size](./get-started-images/success-page-edit-h2-css.png)
+   ![Success page editing h2 CSS size](./get-started-launch-instance-images/success-page-edit-h2-css.png)
 
 
 <!-- ====================================================================== -->
@@ -170,7 +170,7 @@ The address bar that results from the **Launch Instance** button can be used to 
 
 1. Select Activity Bar > **Microsoft Edge Tools**.  If the **Targets** section lists any targets, hover on the right side of the target instance and then click **Close instance** (**x**).  The **Launch Instance** button appears, indicating that all DevTools instances are closed.
 
-   ![Closing DevTools opened via Launch Instance](./get-started-images/launch-instance-close-devtools.png)
+   ![Closing DevTools opened via Launch Instance](./get-started-launch-instance-images/launch-instance-close-devtools.png)
 
    Note that in the above screenshot, Visual Studio Code isn't in Debug mode; for example, there's no Debug toolbar.  If there were a Debug toolbar, you could close DevTools by clicking the **Stop** button.
 

@@ -14,11 +14,11 @@ A PWA can define how it should be displayed on mobile platforms, by using the [d
 
 By default, a PWA installed on desktop can display content in an area that starts immediately below the reserved title bar area:
 
-![A PWA app on Windows showing that the app content is displayed below the reserved title bar area](../media/wco-reserved-titlebar.png)
+![A PWA app on Windows showing that the app content is displayed below the reserved title bar area](./window-controls-overlay-images/wco-reserved-titlebar.png)
 
 Displaying content where the title bar normally is can help PWAs feel more native.  Many desktop applications, such as Visual Studio Code, Microsoft Teams, and Microsoft Edge already do this:
 
-![Visual Studio Code displays content in the title bar area](../media/vscode-titlebar.png)
+![Visual Studio Code displays content in the title bar area](./window-controls-overlay-images/vscode-titlebar.png)
 
 The Window Controls Overlay API does the following:
 *  Allows you to display web content over the entire surface area of the app.
@@ -43,7 +43,7 @@ The first thing to do is to enable the Window Controls Overlay feature in your a
 
 When the Window Controls Overlay feature is enabled, the user can choose to have the title bar or not, by clicking the title bar toggle button:
 
-![Select the title bar toggle button](../media/wco-toggle-button.png)
+![Select the title bar toggle button](./window-controls-overlay-images/wco-toggle-button.png)
 
 Your code can't assume that the window controls overlay is displayed, because:
 *  The user can choose whether to display the title bar.
@@ -151,7 +151,7 @@ if ('windowControlsOverlay' in navigator) {
 
    The app now displays content all the way to the top of the window frame, where the title bar used to be.  The top area of the app is a drag handler, to let users move the window.
 
-   ![The top area of the map can be used to move the window](../media/wco-draggable-titlebar.png)
+   ![The top area of the map can be used to move the window](./window-controls-overlay-images/wco-draggable-titlebar.png)
 
 The source code for this demo app is in the [1DIV](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV) repo.
 

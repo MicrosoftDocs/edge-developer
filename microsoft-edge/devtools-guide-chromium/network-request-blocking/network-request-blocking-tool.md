@@ -27,7 +27,7 @@ To block a network request:
 
 1. In DevTools, on the main toolbar, click the **Network request blocking** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
 
-1. Click the **Add pattern** (![Add pattern icon](media/add-pattern-icon.png)) button.  The **Enable network request blocking** checkbox is automatically selected.
+1. Click the **Add pattern** (![Add pattern icon](./network-request-blocking-tool-images/add-pattern-icon.png)) button.  The **Enable network request blocking** checkbox is automatically selected.
 
 1. In the **Text pattern to block network requests** text box, type the URL of a network request that you want to block.  You can either type the full URL, just the domain name to block all requests from this domain, or replace parts of it with `*` for wildcard pattern matching.
    
@@ -44,7 +44,7 @@ To block a network request:
 
 1. Click the **Add** button:
 
-   ![Blocking the https://*.contoso.com/* URL pattern in the network request blocking tool](media/block-network-request.png)
+   ![Blocking the https://*.contoso.com/* URL pattern in the network request blocking tool](./network-request-blocking-tool-images/block-network-request.png)
 
 
 <!-- ====================================================================== -->
@@ -52,14 +52,14 @@ To block a network request:
 
 To delete a specific network blocking request:
 
-*  In the **Network request blocking** table, hover over the network blocking request, and then click the **Remove** (![Remove blocked request icon](media/remove-blocked-request-icon.png)) button:
+*  In the **Network request blocking** table, hover over the network blocking request, and then click the **Remove** (![Remove blocked request icon](./network-request-blocking-tool-images/remove-blocked-request-icon.png)) button:
 
-   ![Removing a blocked request](media/remove-blocked-request.png)
+   ![Removing a blocked request](./network-request-blocking-tool-images/remove-blocked-request.png)
 
 
 To delete all network blocking requests at once:
 
-*  In the toolbar, click the **Remove all patterns** (![Remove all blocked requests icon](media/remove-all-blocked-requests-icon.png)) button.
+*  In the toolbar, click the **Remove all patterns** (![Remove all blocked requests icon](./network-request-blocking-tool-images/remove-all-blocked-requests-icon.png)) button.
 
 
 <!-- ====================================================================== -->
@@ -67,9 +67,9 @@ To delete all network blocking requests at once:
 
 To change an existing blocked network request:
 
-*  In the **Network request blocking** table, hover over the blocked network request, and then click **Edit** (![edit blocked request icon](media/edit-blocked-request-icon.png)):
+*  In the **Network request blocking** table, hover over the blocked network request, and then click **Edit** (![edit blocked request icon](./network-request-blocking-tool-images/edit-blocked-request-icon.png)):
 
-   ![Editing a blocked request](media/edit-blocked-request.png)
+   ![Editing a blocked request](./network-request-blocking-tool-images/edit-blocked-request.png)
 
 
 <!-- ====================================================================== -->
@@ -79,7 +79,7 @@ To toggle network request blocking without having to delete and re-create all of
 
 *  In the toolbar, select or clear the **Enable network request blocking** checkbox:
 
-   ![Toggling network request blocking](media/toggle-request-blocking.png)
+   ![Toggling network request blocking](./network-request-blocking-tool-images/toggle-request-blocking.png)
 
 
 <!-- ====================================================================== -->
@@ -99,7 +99,7 @@ To block network requests by using the **Network** tool:
 
 1. Right-click the network request, and then click **Block request URL** to block this specific resource, or **Block request domain** to block all resources from the same domain:
 
-   ![Blocking from the network tool](media/block-request-from-network-tool.png)
+   ![Blocking from the network tool](./network-request-blocking-tool-images/block-request-from-network-tool.png)
 
 
 <!-- ====================================================================== -->
@@ -115,7 +115,7 @@ To try the **Network request blocking** tool:
 
    The page content is displayed:
 
-   ![The Network request blocking tool, not blocking any URL patterns, showing webpage content](../media/network-request-blocking-tool-not-blocked.png)
+   ![The Network request blocking tool, not blocking any URL patterns, showing webpage content](./network-request-blocking-tool-images/network-request-blocking-tool-not-blocked.png)
 
 1. In the the **Network request blocking** panel, click the **Add pattern** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) icon or the **Add pattern** button, if it's displayed.
 
@@ -127,6 +127,6 @@ To try the **Network request blocking** tool:
    
 1.  Refresh the page.  Now most elements of the page aren't displayed, and a number of network requests are indicated as blocked:
 
-    ![The Network request blocking tool, blocking the DevTools GitHub Demos server](../media/network-request-blocking-tool.png)
+    ![The Network request blocking tool, blocking the DevTools GitHub Demos server](./network-request-blocking-tool-images/network-request-blocking-tool.png)
 
-1. Click the **Remove all patterns** (![Remove all patterns icon](../media/network-request-blocking-tool-remove-all-patterns-icon.png)) icon, and then click **Refresh**.  The page content re-appears.
+1. Click the **Remove all patterns** (![Remove all patterns icon](./network-request-blocking-tool-images/network-request-blocking-tool-remove-all-patterns-icon.png)) icon, and then click **Refresh**.  The page content re-appears.

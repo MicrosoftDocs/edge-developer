@@ -30,7 +30,7 @@ To avoid pausing on extension code:
 
 1. In the **Settings** > **Ignore List** page, select the **Add content scripts to ignore list** checkbox:
 
-   ![Enabling the 'Add content scripts to ignore list' checkbox](../../media/javascript-settings-library-code-mark-content-scripts-library-code.png)
+   ![Enabling the 'Add content scripts to ignore list' checkbox](./mark-content-scripts-library-code-images/javascript-settings-library-code-mark-content-scripts-library-code.png)
 
 1. Click the **Close** DevTools (![Close DevTools icon](../../media/close-devtools-icon-light-theme.png)) button.
 

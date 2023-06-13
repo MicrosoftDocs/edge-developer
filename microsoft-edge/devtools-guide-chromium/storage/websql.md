@@ -37,11 +37,11 @@ This article shows how to use DevTools to inspect Web SQL data.
 
 1. Expand the **Web SQL** section to view databases and tables.  In the following figure, below **html5meetup** is a database and **rooms** is a table.
 
-   ![The Web SQL pane](../media/storage-application-storage-web-sql.png)
+   ![The Web SQL pane](./websql-images/storage-application-storage-web-sql.png)
 
 1. Click a table to view the data for that table.
 
-![View the data of a Web SQL table](../media/storage-application-storage-web-sql-html5meetup-rooms-1.png)
+![View the data of a Web SQL table](./websql-images/storage-application-storage-web-sql-html5meetup-rooms-1.png)
 
 
 <!-- ====================================================================== -->
@@ -57,7 +57,7 @@ You can't edit Web SQL data when viewing a Web SQL table, such as in the previou
 
 1. Type a Web SQL statement, then press **Enter** to run it.
 
-![Use the Web SQL Console to delete a row from a table](../media/storage-application-storage-web-sql-html5meetup-commands.png)
+![Use the Web SQL Console to delete a row from a table](./websql-images/storage-application-storage-web-sql-html5meetup-commands.png)
 
 
 <!-- ====================================================================== -->
@@ -77,7 +77,7 @@ DevTools doesn't update tables in real-time.  To update the data in a table:
 
 1. Use the **Visible columns** text box to specify what columns you want to show.  Provide the column names as a CSV list.
 
-   ![Use the Visible Columns text box to reduce the number of columns shown](../media/storage-application-storage-web-sql-html5meetup-rooms-2.png)
+   ![Use the Visible Columns text box to reduce the number of columns shown](./websql-images/storage-application-storage-web-sql-html5meetup-rooms-2.png)
 
 
 <!-- ====================================================================== -->
@@ -87,11 +87,11 @@ DevTools doesn't update tables in real-time.  To update the data in a table:
 
 1. Make sure that the **Web SQL** checkbox is turned on.
 
-   ![The Web SQL checkbox](../media/storage-application-clear-storage-web-sql.png)
+   ![The Web SQL checkbox](./websql-images/storage-application-clear-storage-web-sql.png)
 
 1. Click **Clear site data**.
 
-   ![The Clear Site Data button](../media/storage-application-clear-storage-clear-site-data-button.png)
+   ![The Clear Site Data button](./websql-images/storage-application-clear-storage-clear-site-data-button.png)
 
 
 <!-- ====================================================================== -->

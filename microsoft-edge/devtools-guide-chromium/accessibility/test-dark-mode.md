@@ -27,7 +27,7 @@ To emulate a user's selection of preferred color theme:
 
 1. In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: light**.  The webpage is re-rendered using `light-theme.css`.
 
-   ![Using the Rendering tool to simulate a light mode and triggering the other theme of the document](../media/a11y-testing-simulating-light-mode.png)
+   ![Using the Rendering tool to simulate a light mode and triggering the other theme of the document](./test-dark-mode-images/a11y-testing-simulating-light-mode.png)
 
 1. Select the **Issues** tool, and then expand the **Accessibility** section.  Depending on various factors, you might get `Insufficient color contrast` warnings. Notice in **AFFECTED RESOURCES** there are 6 elements with insufficient color contrast.
 
@@ -39,7 +39,7 @@ To emulate a user's selection of preferred color theme:
 
 1. In DevTools, select the **Elements** tool, and then press **Ctrl+F** on Windows/Linux or **Command+F** on macOS.  The **Find** text box appears, to search within the HTML DOM tree.
 
-   ![The Find text box for the DOM tree in the Elements tool](../media/find-in-dom-tree.png)
+   ![The Find text box for the DOM tree in the Elements tool](./test-dark-mode-images/find-in-dom-tree.png)
 
 1. Enter **scheme**.  The following CSS media queries are found, and the corresponding CSS files can now be updated.
 

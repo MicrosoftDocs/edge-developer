@@ -41,11 +41,11 @@ To open the **Issues** tool and learn more about the issue and how to fix it:
 
 Selecting the underlined error in the **Elements** tool:
 
-![Selecting the underlined error in the Elements tool](../../media/2021/04/elements-iframe-highlight-issues.png)
+![Selecting the underlined error in the Elements tool](./devtools-images/elements-iframe-highlight-issues.png)
 
 Displaying error details in the **Issues** tool:
 
-![Displaying error details in the Issues tool](../../media/2021/04/elements-iframe-highlight-issues-focus.png)
+![Displaying error details in the Issues tool](./devtools-images/elements-iframe-highlight-issues-focus.png)
 
 See also:
 * [Find and fix problems using the Issues tool](../../../issues/index.md)
@@ -65,7 +65,7 @@ The DevTools Tooltips feature helps you learn about all the different tools and 
 
 Then hover over each outlined region of DevTools:
 
-![DevTools Tooltips mode](../../media/2021/04/tooltips.png)
+![DevTools Tooltips mode](./devtools-images/tooltips.png)
 
 To turn off Tooltips, press **Esc**.
 
@@ -73,7 +73,7 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 
 Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in [Focus Mode](../../../experimental-features/focus-mode.md).
 <!-- Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#group-tools-together-in-focus-mode) experiment, you can also click the **Toggle the DevTools Tooltips** (**?**) button at the bottom of the **Activity Bar**. -->
-<!-- ![Hover on anywhere in the highlighted region of the Issues tool to display more details](../../media/2021/04/elements-issues-focus-mode-tooltips.png) -->
+<!-- ![Hover on anywhere in the highlighted region of the Issues tool to display more details](./devtools-images/elements-issues-focus-mode-tooltips.png) -->
 
 See also:
 * [Display DevTools Tooltips](../../../overview.md#display-devtools-tooltips) in _Overview of DevTools_.
@@ -97,7 +97,7 @@ In Microsoft Edge version 91 or later, if you're a Progressive Web App or Servic
 *  **Wait**
 *  **Activate**
 
-![View the Timeline in the Update Cycle for your Service Worker](../../media/2021/04/application-service-workers-update-cycle-version-73-focus.png)
+![View the Timeline in the Update Cycle for your Service Worker](./devtools-images/application-service-workers-update-cycle-version-73-focus.png)
 
 For real-time updates on this feature in the Chromium open-source project, see Issue [1066604](https://crbug.com/1066604).
 
@@ -120,11 +120,11 @@ Most operating systems require square icons.  Please include at least one square
 
 In Microsoft Edge version 90 or earlier, an error is displayed for each icon that is non-square:
 
-![In Microsoft Edge version 90 or earlier, an error is displayed for each icon that is non-square](../../media/2021/04/edge89-application-manifest-errors-and-warnings.png)
+![In Microsoft Edge version 90 or earlier, an error is displayed for each icon that is non-square](./devtools-images/edge89-application-manifest-errors-and-warnings.png)
 
 In Microsoft Edge version 91 or later, no error is displayed when you provide at least one square icon:
 
-![In Microsoft Edge version 91 or later, no error is displayed when you provide at least one square icon](../../media/2021/04/edge91-application-manifest-errors-and-warnings.png)
+![In Microsoft Edge version 91 or later, no error is displayed when you provide at least one square icon](./devtools-images/edge91-application-manifest-errors-and-warnings.png)
 
 To view errors and warnings in your Web App Manifest, select **Application** tool > **Application** section > **Manifest**.  Errors and warnings are listed under the **Errors and Warnings** heading.
 
@@ -143,7 +143,7 @@ See also:
 
 Starting in [Microsoft Edge version 81](../../2020/01/devtools.md#using-the-devtools-in-other-languages), the Microsoft Edge DevTools UI is displayed in your own language.  Many developers use developer tools such as StackOverflow and Visual Studio Code in their native language.  To provide similar flexibility of UI language, the Microsoft Edge DevTools team, Chrome DevTools team, and the Google Lighthouse team collaborated to provide the same experience in all Chromium-based browsers.
 
-![Microsoft Edge browser and DevTools set to Japanese](../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.png)
+![Microsoft Edge browser and DevTools set to Japanese](./devtools-images/japanese-browser-japanese-navigation-elements-3d-view.png)
 
 See [Change DevTools language settings](../../../customize/localization.md).
 
@@ -158,7 +158,7 @@ For more information about the collaboration on this feature in the Chromium ope
 
 Starting in [Microsoft Edge version 88](../../2020/11/devtools.md#css-variable-definitions-in-styles-pane), the **Styles** pane displays CSS variables and provides a link directly to the definition of each variable.  In Microsoft Edge version 91 or later, you can use the arrow keys to easily navigate to CSS variables.  To open the definition in the **Styles** pane, hover on a variable, and then press **Enter**:
 
-![The '--theme-body-background' CSS variable highlighted in the Styles pane](../../media/2021/04/elements-styles-body-background-color-theme-body-background.png)
+![The '--theme-body-background' CSS variable highlighted in the Styles pane](./devtools-images/elements-styles-body-background-color-theme-body-background.png)
 
 For real-time updates on this feature in the Chromium open-source project, see Issue [1187735](https://crbug.com/1187735).
 
@@ -176,7 +176,7 @@ See also:
 
 The **Issues** tool displays recommendations to improve your website, including accessibility, performance, security, and so on.  Based on user feedback, issues are now automatically sorted by severity.  In each feedback category, each issue that's marked as an **Error** appears first, followed each issue marked as a **Warning**, then each issue marked as a **Tip**:
 
-![The Issues tool displays issues sorted by severity](../../media/2021/04/elements-issues-ordered-issues.png)
+![The Issues tool displays issues sorted by severity](./devtools-images/elements-issues-ordered-issues.png)
 
 See also:
 * [Find and fix problems using the Issues tool](../../../issues/index.md)
@@ -221,7 +221,7 @@ In the **Elements** tool, you can now toggle the `scroll-snap` badge to inspect 
 
 For an example webpage, see [Scroll Snap Demo](https://mathiasbynens.github.io/css-dbg-stories/css-scroll-snap.html).  In the example, dots appear on snap edges.  The scroll port has a solid outline, while the snap items have dashed outlines.  The scroll padding is filled-in green, while the scroll margin is filled-in orange:
 
-![CSS scroll-snap](../../media/2021/04/elements-scroll-snap-highlight.png)
+![CSS scroll-snap](./devtools-images/elements-scroll-snap-highlight.png)
 
 <!-- You can view the source files for the Scroll Snap demo at the [mathiasbynens/css-dbg-stories](https://github.com/mathiasbynens/css-dbg-stories) repo. -->
 
@@ -238,7 +238,7 @@ See also:
 
 Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript and Wasm memory:
 
-![The Memory Inspector tool](../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.png)
+![The Memory Inspector tool](./devtools-images/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.png)
 
 See:
 * [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](../../../memory-inspector/memory-inspector-tool.md)
@@ -254,7 +254,7 @@ Now, use the **Badge settings** in the **Elements** tool to turn on (or off) ind
 
 1. Right-click an element and then click **Badge settings**.  The badge settings pane opens at the top of the **Elements** tool:
 
-   ![Badge settings pane in the Elements tool](../../media/2021/04/elements-contextual-menu-badge-settings.png)
+   ![Badge settings pane in the Elements tool](./devtools-images/elements-contextual-menu-badge-settings.png)
 
 1. To display (or hide) the badges, select (or clear) the checkbox next to the badge name.
 
@@ -278,11 +278,11 @@ In the **Elements** tool, image previews have been enhanced to display more info
 *  Intrinsic aspect ratio
 *  File size
 
-![Image preview with aspect ratio information in the Element tool](../../media/2021/04/elements-inspect-image-src-hover-preview.png)
+![Image preview with aspect ratio information in the Element tool](./devtools-images/elements-inspect-image-src-hover-preview.png)
 
 This information helps you better understand your images and apply optimization.  The image aspect ratio information is also available in the **Network** tool, when you click a page resource that's an image:
 
-![Image aspect ratio information in the Network tool](../../media/2021/04/network-img-name-filters-preview.png)
+![Image aspect ratio information in the Network tool](./devtools-images/network-img-name-filters-preview.png)
 
 For the history of this feature in the Chromium open-source project, see Issues [1149832](https://crbug.com/1149832) and [1170656](https://crbug.com/1170656).
 
@@ -302,7 +302,7 @@ In the **Network** tool, click the new **More network conditions...** button nex
 
 1. Clear the checkbox next to the `Content-Encoding` you want to test.
 
-![The Network tool's 'More network conditions' button opens the 'Network Conditions' tool to configure 'Content-Encoding'](../../media/2021/04/network-more-network-conditions-accepted-content-encodings.png)
+![The Network tool's 'More network conditions' button opens the 'Network Conditions' tool to configure 'Content-Encoding'](./devtools-images/network-more-network-conditions-accepted-content-encodings.png)
 
 See also:
 * [Network conditions tool](../../../network-conditions/network-conditions-tool.md)
@@ -321,7 +321,7 @@ Now, to display the computed CSS value in the **Styles** tab in the **Elements**
 
 1. Right-click a CSS property, and then select **View computed value**:
 
-   ![New shortcut to display computed value](../../media/2021/04/elements-styles-highlight-view-computed-value.png)
+   ![New shortcut to display computed value](./devtools-images/elements-styles-highlight-view-computed-value.png)
 
 See also:
 * [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_.
@@ -336,7 +336,7 @@ To view the history of this feature in the Chromium open-source project, see Iss
 
 The autocomplete UI of the **Styles** pane now detects the `accent-color` CSS keyword, which allows you to specify the accent color for UI controls generated by the element.  Examples of UI controls that are generated by an element include checkboxes or radio buttons.
 
-![The 'accent-color' CSS keyword](../../media/2021/04/elements-styles-accent-color.png)
+![The 'accent-color' CSS keyword](./devtools-images/elements-styles-accent-color.png)
 
 For more information about the status of the Chromium implementation, see [Feature: accent-color CSS property](https://chromestatus.com/feature/4752739957473280).  To turn on this feature, go to `edge://flags#enable-experimental-web-platform-features` and set the checkbox to **Enabled**.
 
@@ -361,7 +361,7 @@ To display the details on why a feature is blocked:
 1. Click **Show details**.
 1. Click the icon next to each policy to go to the `iframe` or network request that blocked the feature.
 
-![Blocked features in the Frame details view](../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.png)
+![Blocked features in the Frame details view](./devtools-images/application-frames-top-permission-policy-disabled-features-show-details-highlight.png)
 
 See also:
 * [Permissions Policy Explainer](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)
@@ -380,7 +380,7 @@ Find experiments quicker with the new experiment filter.  For example, to turn o
 
 1. In the **Filter** text box, start typing **issues**:
 
-![Filter experiments in the Experiments setting](../../media/2021/04/settings-experiments-filter-by-issues.png)
+![Filter experiments in the Experiments setting](./devtools-images/settings-experiments-filter-by-issues.png)
 
 See also:
 * [Experimental features](../../../experimental-features/index.md)
@@ -391,7 +391,7 @@ See also:
 
 In the **Application** tool's **Cache Storage** pane, use the new `Vary Header` column to display the `Vary` HTTP response header values:
 
-![Vary Header column](../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.png)
+![Vary Header column](./devtools-images/application-cache-cache-storage-highlighted-vary-header.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1186049](https://crbug.com/1186049).
 
@@ -414,7 +414,7 @@ To inspect the private fields:
 1. In the **Sources** tool, go to the **debugger** pane.
 1. Expand the **Scope** section:
 
-![JavaScript private brand checks](../../media/2021/04/sources-page-pen-js-breakpoint-scope-script-dog.png)
+![JavaScript private brand checks](./devtools-images/sources-page-pen-js-breakpoint-scope-script-dog.png)
 
 See also:
 * [Private brand checks a.k.a. `#foo in obj`](https://v8.dev/features/private-brand-checks) at v8.dev.
@@ -444,7 +444,7 @@ See also:
 
 The **Sources** tool now supports **hover preview** on JavaScript member expressions that use the `[]` notation:
 
-![Support hover preview with [] notation](../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.png)
+![Support hover preview with [] notation](./devtools-images/sources-page-pen.js-breakpoint-arr-i-a.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1178305](https://crbug.com/1178305).
 
@@ -457,7 +457,7 @@ See also:
 
 DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on (or off) the code outline, press **Ctrl+Shift+O** on Windows/Linux or **Command+Shift+O** on macOS.  Previously, DevTools only displayed some of the functions.  In the following figure, DevTools now correctly list all functions in the outline:
 
-![Improved outline of HTML files](../../media/2021/04/sources-page-jobobbx-at.png)
+![Improved outline of HTML files](./devtools-images/sources-page-jobobbx-at.png)
 
 For the history of this feature in the Chromium open-source project, see Issues [761019](https://crbug.com/761019) and [1191465](https://crbug.com/1191465).
 
@@ -475,11 +475,11 @@ In Microsoft Edge version 91 or later, DevTools resolves inline function request
 
 In Microsoft Edge version 90 and earlier, the source location isn't displayed in the Error stack traces.  Source locations include `dsquare`.  Previous error stack traces for Wasm debugging:
 
-![Previous error stack traces for Wasm debugging](../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.png)
+![Previous error stack traces for Wasm debugging](./devtools-images/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.png)
 
 In Microsoft Edge version 91 and later, the source location is displayed in the Error stack traces.  Proper error stack traces for Wasm debugging:
 
-![Proper error stack traces for Wasm debugging](../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.png)
+![Proper error stack traces for Wasm debugging](./devtools-images/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1189161](https://crbug.com/1189161).
 

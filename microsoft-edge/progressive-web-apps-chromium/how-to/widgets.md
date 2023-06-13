@@ -18,7 +18,7 @@ Various operating systems have widgets dashboards that let users read content an
 
 On Windows 11, widgets appear in the widgets board which you open from the left corner of your taskbar:
 
-![The widgets board in Windows 11](../media/windows11-widgets.png) 
+![The widgets board in Windows 11](./widgets-images/windows11-widgets.png) 
 
 In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and handle user interactions within them.
 
@@ -40,7 +40,7 @@ To enable widget support in Microsoft Edge for your website:
 
 1. Click the **Restart** button which appears in the lower right:
 
-   ![Enabling the Web App widgets flag in the edge://flags page](../media/widgets-flag.png)
+   ![Enabling the Web App widgets flag in the edge://flags page](./widgets-images/widgets-flag.png)
 
 
 <!-- ====================================================================== -->
@@ -411,7 +411,7 @@ PWAmp is a music player PWA demo application that defines a widget. The PWAmp wi
 
 The PWAmp widget displays the current song and buttons to play the previous or next song.
 
-![Windows widgets board, next to the PWAmp demo app. The widgets board contains the PWAmp mini player widget, showing the current song playing in the PWAmp app](../media/pwamp-widget.png)
+![Windows widgets board, next to the PWAmp demo app. The widgets board contains the PWAmp mini player widget, showing the current song playing in the PWAmp app](./widgets-images/pwamp-widget.png)
 
 
 <!-- ====================================================================== -->

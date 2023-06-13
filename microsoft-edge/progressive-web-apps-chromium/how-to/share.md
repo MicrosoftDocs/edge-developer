@@ -72,7 +72,7 @@ async function shareSomeContent(title, text, url) {
 
 On Windows, the above code will trigger the share dialog, allowing the user to pick an app to receive the shared content.  The share dialog is shown below:
 
-![The share dialog on Windows](../media/windows-share-dialog.png)
+![The share dialog on Windows](./share-images/windows-share-dialog.png)
 
 Once the user has selected an app to receive the shared content, it is up to this app to handle it any way it chooses.  For example, an email app might use the `title` as the email subject, and use the `text` as the email body.
 

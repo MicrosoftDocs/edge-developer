@@ -37,11 +37,11 @@ You can emulate authenticators and debug the [Web Authentication API](https://w3
 
    The **WebAuthn** tool opens:
 
-   ![WebAuthn tool](../media/webauthn-webauthn-tab.png)
+   ![WebAuthn tool](./index-images/webauthn-webauthn-tab.png)
 
 1. In the **WebAuthn** tool, select the **Enable virtual authenticator environment** checkbox.  A new section named **New authenticator** is displayed:
 
-   ![Enable virtual authenticator environment](../media/webauthn-enable-virtual-auth.png)
+   ![Enable virtual authenticator environment](./index-images/webauthn-enable-virtual-auth.png)
 
 1. In the **New authenticator** section, configure the following options:
 
@@ -56,11 +56,11 @@ You can emulate authenticators and debug the [Web Authentication API](https://w3
 
 1. A new section of your newly created authenticator is displayed:
 
-   ![Authenticator](../media/webauthn-authenticator.png)
+   ![Authenticator](./index-images/webauthn-authenticator.png)
 
 The **Authenticator** section includes a **Credentials** table.  The table is empty until a credential is registered to the authenticator:
 
-![No credentials](../media/webauthn-no-cred.png)
+![No credentials](./index-images/webauthn-no-cred.png)
 
 
 <!-- ====================================================================== -->
@@ -72,7 +72,7 @@ To register a new credential:
 
 1. A new credential is now added to the **Credentials** table in the WebAuthn tool:
 
-   ![View credentials](../media/webauthn-view-cred.png)
+   ![View credentials](./index-images/webauthn-view-cred.png)
 
 On the demo website, click the **Authenticate** button.  Verify that the [Sign Count](https://w3c.github.io/webauthn/#sctn-sign-counter) of the credential in the **Credentials** table increased by 1, which marks a successful [authenticatorGetAssertion](https://w3c.github.io/webauthn#authenticatorgetassertion) operation.
 
@@ -84,7 +84,7 @@ For more information about what the [Web Authentication API](https://w3c.github.
 
 To export or remove a credential, click the **Export** or **Remove** button.
 
-![Export or remove a credential](../media/webauthn-export-remove.png)
+![Export or remove a credential](./index-images/webauthn-export-remove.png)
 
 
 <!-- ====================================================================== -->
@@ -96,7 +96,7 @@ To rename an authenticator:
 
 1. Edit the name, then press **Enter** to save the changes.
 
-![Renaming an authenticator](../media/webauthn-rename.png)
+![Renaming an authenticator](./index-images/webauthn-rename.png)
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ A newly created authenticator is automatically activated.  To use another virtua
 
 DevTools supports only one active virtual authenticator at any point of time.  If you remove the active authenticator, another authenticator isn't automatically activated.
 
-![Setting the active authenticator](../media/webauthn-set-active.png)
+![Setting the active authenticator](./index-images/webauthn-set-active.png)
 
 
 <!-- ====================================================================== -->
@@ -114,7 +114,7 @@ DevTools supports only one active virtual authenticator at any point of time.  I
 
 To remove a virtual authenticator, next to the authenticator, click the **Remove** button.
 
-![Removing an authenticator](../media/webauthn-remove-authenticator.png)
+![Removing an authenticator](./index-images/webauthn-remove-authenticator.png)
 
 
 <!--todo: remove this notice, or add notice at top?-->
