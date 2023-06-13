@@ -26,26 +26,20 @@ ms.date: 06/13/2023
 
 <!-- Reviewer: Gavin Xu -->
 
-In [Microsoft Edge 109](../01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats), we added the **Selector Stats** feature to the **Performance** tool.  You can use the data from **Selector Stats** to understand which CSS selectors are taking the most time during **Recalculate Style** events in the **Performance** tool and contributing to slow performance.
+Microsoft Edge 109 added the **Selector Stats** feature to the **Performance** tool.  You can use the data from **Selector Stats** to understand which CSS selectors are taking the most time during **Recalculate Style** events in the **Performance** tool and are contributing to slow performance.
 
-Now in Microsoft Edge 114, you no longer need to select an individual **Recalculate Style** event to see the selectors that were recalculated during that event.  Rather, the **Selector Stats** tab in the bottom pane of the **Performance** tool automatically aggregates the data across all of the **Recalculate Style** events in the recorded profile.  As you zoom into specific parts of the profile, the **Selector Stats** tab updates to only show data from the portion of the profile that you are currently analyzing.
+In Microsoft Edge 114, you no longer need to select an individual **Recalculate Style** event to see the selectors that were recalculated during that event.  Instead, the **Selector Stats** tab in the bottom pane of the **Performance** tool automatically aggregates the data across all of the **Recalculate Style** events in the recorded profile.  As you zoom into specific parts of the profile, the **Selector Stats** tab updates to only show data from the portion of the profile that you are currently analyzing.
 
-Also, a new column called **Style sheet** has been added to the **Selector Stats** tab and contains links for each selector back to the stylesheet where the selectors are defined:
+Also, a new **Style Sheet** column has been added to the **Selector Stats** tab.  The **Style Sheet** column contains links for each selector back to the stylesheet where the selectors are defined.
 
 ![Selector Stats are now aggregated across Recalculate Style events within the currently displayed section of the recorded profile](./devtools-114-images/aggregate-selector-stats.png)
-<!-- todo
-1. Open Devtools and navigate to the Performance tool.
-2. Click the capture settings button.
-3. Check the box at the top that says "Enable advanced rendering instrumentation (slow)".
-4. Click a purple "Recalculate style" box.
-5. Click the Selector stats button on the bar below.
--->
 
 Thank you for using the **Selector Stats** feature and sharing your feedback with us in [GitHub Issue #98: \[Feedback\] Selector Performance Tracing Explainer](https://github.com/MicrosoftEdge/DevTools/issues/98)!
 
 See also:
 * [Analyze selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
 * [GitHub Issue #98: \[Feedback\] Selector Performance Tracing Explainer](https://github.com/MicrosoftEdge/DevTools/issues/98)
+* [Debug long-running Recalculate Style events with new selector stats](../01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's new in DevTools (Microsoft Edge 109)_.
 
 
 <!-- ====================================================================== -->
