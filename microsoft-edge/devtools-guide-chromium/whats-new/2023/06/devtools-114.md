@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 114)
-description: "Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger reflow. Can load Enhanced Traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS Overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more."
+description: "Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger reflow. Memory tool loads enhanced traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS Overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -75,22 +75,21 @@ See also:
 
 
 <!-- ====================================================================== -->
-## You can load Enhanced Traces larger than 1 GB in DevTools
+## The Memory tool can load enhanced traces larger than 1 GB
 
 <!-- Subtitle: In previous versions of Microsoft Edge, loading enhanced traces larger than 1 GB produced an error. In Microsoft Edge 114, this issue has been fixed. -->
 
 <!-- Reviewer: Rob Paveza -->
 
-Enhanced traces are an experimental feature in Microsoft Edge that allow you to export and import entire DevTools instances, saved as `.devtools` files, with as much state preserved as possible across the **Memory**, **Performance**, **Elements**, **Console**, and **Sources** tools.  These files open in a separate DevTools instance and load DOM snapshots, Console messages, heap snapshots, and performance profiles, retaining references to source code.
-
 In previous versions of Microsoft Edge, loading an enhanced trace larger than 1 GB failed.  In Microsoft Edge 114, this issue has been fixed.  You can now successfully load enhanced traces of any size.
 
+Enhanced traces are an experimental feature in Microsoft Edge that allow you to export and import entire DevTools instances, saved as `.devtools` files, with as much state as possible preserved across the **Memory**, **Performance**, **Elements**, **Console**, and **Sources** tools.  A `.devtools` file opens in a separate DevTools instance, and loads the following trace information, while retaining references to source code:
+* DOM snapshots.
+* Console messages.
+* Heap snapshots.
+* Performance profiles.
+
 ![An enhanced trace](./devtools-114-images/enhanced-trace-1gb.png)
-<!-- todo
-1. Import the .devtools file I sent you when we were working on the last What's New in the Memory tool.
-1. Expand some object until you get a more full retaining path in the bottom pane.
-1. Take a screenshot.
--->
 
 See also:
 * [Share enhanced performance and memory traces](../../../experimental-features/share-traces.md)
