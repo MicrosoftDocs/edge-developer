@@ -71,7 +71,7 @@ To open the issue in the **Issues** tool, **Shift**+click the wavy underline, or
 
 See also:
 * [Minimizing browser reflow | PageSpeed Insights](https://developers.google.com/speed/docs/insights/browser-reflow)
-* [Open issues from the DOM tree](../../../issues/index.md#open-issues-from-the-dom-tree) from *Find and fix problems using the Issues tool*
+* [Open issues from the DOM tree](../../../issues/index.md#open-issues-from-the-dom-tree) in _Find and fix problems using the Issues tool_.
 
 
 <!-- ====================================================================== -->
@@ -155,11 +155,11 @@ See also:
 <!-- ====================================================================== -->
 ## Debugging Microsoft Edge in VS Code has better support for high contrast mode
 
-<!-- Subtitle: Hovering over icons in high contrast mode in the VS Code extension now renders with sufficient contrast.-->
+<!-- Subtitle: Hovering over icons in high contrast mode in the VS Code extension now renders with sufficient contrast. -->
 
 <!-- Reviewer: Vidal Guillermo Diazleal Ortega -->
 
-In previous versions of the Microsoft Edge DevTools extension for Visual Studio Code, in high contrast mode, hovering over icons within the tools did not render with sufficient contrast.  In the latest version of the Microsoft Edge DevTools extension, this issue has been fixed.
+In previous versions of the Microsoft Edge DevTools extension for Visual Studio Code, in high contrast mode, hovering over icons within the tools didn't render the UI controls with sufficient contrast.  This issue has been fixed.
 
 In the **Styles** pane in the **Elements** tool, checkboxes for applying styles to elements now render correctly in high contrast mode:
 
@@ -168,19 +168,6 @@ In the **Styles** pane in the **Elements** tool, checkboxes for applying styles 
 In the **Console** tool, icons such as **Show console sidebar** now render correctly in high contrast mode:
 
 ![Hovering over the Show console sidebar button in high contrast mode in the VS Code extension](./devtools-114-images/vs-code-hc-mode-console-tool.png)
-<!-- todo
-Prerequisites:
- 1. Install 'Visual Studio Code' application.
- 2. Add 'Microsoft edge' file in vs code.
- 3. Turn on Windows High contrast theme (Settings->Accessibility->High Contrast->Turn on High 4. Contrast->Select High Contrast Aquatic)
-
-Steps:
-1. Launch VS code application and launch an instance.
-2. Navigate and invoke 'Elements' tab item and invoke it.
-3. Navigate to 'Styles' tab item and invoke it.
-4. Hover over the checkboxes for individual style rules
-1. Switch to the Console and hover over the Show console sidebar icon
--->
 
 See also:
 * [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
