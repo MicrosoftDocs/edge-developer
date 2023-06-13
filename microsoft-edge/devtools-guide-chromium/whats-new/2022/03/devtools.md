@@ -107,7 +107,7 @@ The flame chart in the **Performance** tool initially shows function names as **
 
 ![Minified function names in the flame chart in the Performance tool](./devtools-images/minified-call-stack-performance-tool.png)
 
-After clicking **Unminify** (![Unminify icon](../../media/2022/03/unminify-icon.png)) and then **Load profile** (![Load profile icon](../../media/2022/03/load-profile-icon.png)), the flame chart in the **Performance** tool now shows those functions labeled with meaningful names: **invokeFunc (b)**, **executeAction (O)**, **endBatch (Xt)**, and **runReactions (bn)**, retrieved from your source maps:
+After clicking **Unminify** (![Unminify icon](./devtools-images/unminify-icon.png)) and then **Load profile** (![Load profile icon](./devtools-images/load-profile-icon.png)), the flame chart in the **Performance** tool now shows those functions labeled with meaningful names: **invokeFunc (b)**, **executeAction (O)**, **endBatch (Xt)**, and **runReactions (bn)**, retrieved from your source maps:
 
 ![Unminified function names in the flame chart in the Performance tool](./devtools-images/unminified-call-stack-performance-tool.png)
 

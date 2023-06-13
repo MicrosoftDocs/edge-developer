@@ -88,7 +88,7 @@ The **Chart** view provides a visual representation of the Sampling Profile over
 
 After you [record a Sampling Profile](#record-a-sampling-profile), view the recording as a flame chart by [changing the sort order](#change-sort-order) to **Chart**.
 
-![Flame chart view](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.png)
+![Flame chart view](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.png)
 
 The flame chart is split into two parts:
 

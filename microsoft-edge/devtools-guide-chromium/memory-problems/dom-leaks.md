@@ -56,7 +56,7 @@ To find detached elements:
 
 1. Click the **Room 2** button:
 
-1. In the **Detached Elements** tool, click the **Get Detached Elements** (![The Get Detached Elements icon](images/get-detached-elements-icon-light-mode.png)) icon:
+1. In the **Detached Elements** tool, click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon-light-mode.png)) icon:
 
    ![Get Detached Elements using the Detached Elements tool](./dom-leaks-images/get-detached-elements.png)
 
@@ -70,7 +70,7 @@ Next, trigger garbage collection (GC) in the browser:
 
 1. In the **Detached Elements** tool, click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon-light-mode.png)) icon.
 
-1. Click the **Get Detached Elements** (![The Get Detached Elements icon](images/get-detached-elements-icon-light-mode.png)) icon.
+1. Click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon-light-mode.png)) icon.
 
 When you select **Collect garbage**, the browser runs garbage collection. When you select **Get Detached Elements**, the **Detached Elements** tool displays all detached elements that cannot be garbage collected. These detached elements may be memory leaks if they aren't going to be reused by the application.
 
@@ -119,7 +119,7 @@ To identify the culprit node in a detached tree that is causing the entire tree 
 
    ![The Detach Elements button in the Detached Elements tool](./dom-leaks-images/detached-elements-remove-links.png)
 
-1. Click the **Collect garbage** (![The 'Collect garbage' icon](images/collect-garbage-icon-light-mode.png)) icon.
+1. Click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon-light-mode.png)) icon.
 
 Parent-child links are removed inside the detached tree.
 

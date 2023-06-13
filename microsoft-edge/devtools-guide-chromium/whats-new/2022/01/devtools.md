@@ -27,7 +27,7 @@ The **Detached Elements** tool was initially available as an experiment in [Micr
 <!-- ![The Detached Elements tool](./devtools-images/detached-elements-tool.png) -->
 <!-- image too wide to be crisp inline; solution would be undock devtools then 1 or 2 images in series (DevTools then browser).  right-click works, but reverting to lightbox for now -->
 
-![The Detached Elements tool](../../media/2022/01/detached-elements-tool.png)
+![The Detached Elements tool](./devtools-images/detached-elements-tool.png)
 
 See also:
 * [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)

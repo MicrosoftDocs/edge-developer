@@ -312,7 +312,7 @@ When an event is processed by the listener, the function that is the first param
 
 Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows:
 
-![popup.html display after selecting the Extension icon](./media/part2-popupdialog.png)
+![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
 
 When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses<!--todo: check "tab pages collapses"--> back to what was originally displayed:
 

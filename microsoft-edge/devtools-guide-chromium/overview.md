@@ -391,7 +391,7 @@ To add a tool to the toolbar, click the **More Tools** (![More Tools icon](media
 <!-- ------------------------------ -->
 #### JavaScript errors counter
 
-The **JavaScript errors counter** (![JavaScript errors counter icon](media/javascript-counter-icon-light-theme.png)) button displays the following:
+The **JavaScript errors counter** (![JavaScript errors counter icon](./overview-images/javascript-counter-icon-light-theme.png)) button displays the following:
 
 *  A red circle containing an **X**, followed by the number of JavaScript errors that were automatically detected on the current webpage.
 
@@ -405,7 +405,7 @@ Click the JavaScript errors counter to open the [Console](console/index.md) and 
 <!-- ------------------------------ -->
 #### Issues counter
 
-The **Issues counter** (![Issues counter icon](media/issues-counter-icon-light-theme.png)) button shows the number of HTML or CSS issues that are automatically found on the current webpage.
+The **Issues counter** (![Issues counter icon](./overview-images/issues-counter-icon-light-theme.png)) button shows the number of HTML or CSS issues that are automatically found on the current webpage.
 
 The tooltip for the **Issues counter** is **Open Issues to view # issues**.  The button's icon is a blue speech bubble icon followed by the number of HTML or CSS issues.
 
@@ -471,7 +471,7 @@ The tools that are listed in the **More Tools** (**+**) can be displayed either 
 
 Use the **More Tools** (**+**) menu to select any of the Panel tools or Drawer tools.  A **More Tools** menu appears in multiple places:
 
-*  In the upper right of DevTools, on the main toolbar, click the **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button, hover over the **More tools** command, and then select a tool.
+*  In the upper right of DevTools, on the main toolbar, click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, hover over the **More tools** command, and then select a tool.
 
 *  On the main toolbar at the top of DevTools (where _Panel_ tools usually go).
 
