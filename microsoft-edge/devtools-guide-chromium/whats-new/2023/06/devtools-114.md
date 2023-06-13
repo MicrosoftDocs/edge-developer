@@ -140,6 +140,22 @@ Steps:
 -->
 
 
+<!-- ====================================================================== -->
+## Announcements from the Chromium project
+
+Microsoft Edge 114 also includes the following updates from the Chromium project:
+
+* [WebAssembly debugging support](https://developer.chrome.com/blog/new-in-devtools-114/#wasm)
+   * [Improved stepping behavior in Wasm apps](https://developer.chrome.com/blog/new-in-devtools-114/#wasm-step)
+* [Debug Autofill using the Elements panel and Issues tab](https://developer.chrome.com/blog/new-in-devtools-114/#autofill)
+* [Lighthouse 10.1.1](https://developer.chrome.com/blog/new-in-devtools-114/#lighthouse)
+* [Performance enhancements](https://developer.chrome.com/blog/new-in-devtools-114/#performance)
+   * [performance.mark() shows timing on hover in Performance > Timings](https://developer.chrome.com/blog/new-in-devtools-114/#mark)
+   * [profile() command populates Performance > Main](https://developer.chrome.com/blog/new-in-devtools-114/#profile)
+   * [Warning for slow user interactions](https://developer.chrome.com/blog/new-in-devtools-114/#slow-interaction-warning)
+* [JavaScript Profiler deprecation: Phase three](https://developer.chrome.com/blog/new-in-devtools-114/#js-profiler)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-114/#misc)
+
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
