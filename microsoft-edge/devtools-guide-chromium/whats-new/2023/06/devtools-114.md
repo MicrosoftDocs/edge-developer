@@ -72,7 +72,7 @@ Now, the **Styles** pane in the **Elements** tool adds a wavy underline on CSS p
 1. Ensure that in the Issues tool, Tips are also being displayed.
 -->
 
-To open the issue in the **Issues** tool, **Shift**+click the wavy underline, or right-click the wavy underline and then select **View issues**:
+To open the issue in the **Issues** tool, **Shift**+click the wavy underline, or right-click the wavy underline and then select **View issues**.  The **Issues** tool opens in the Drawer at the bottom of DevTools:
 
 ![CSS reflow issue in the Issues tool](./devtools-114-images/css-reflow-issue-issues-tool.png)
 
