@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/12/2023
+ms.date: 06/13/2023
 ---
 # What's New in DevTools (Microsoft Edge 114)
 
@@ -30,7 +30,7 @@ In [Microsoft Edge 109](../01/devtools-109.md#debug-long-running-recalculate-sty
 
 Now in Microsoft Edge 114, you no longer need to select an individual **Recalculate Style** event to see the selectors that were recalculated during that event.  Rather, the **Selector Stats** tab in the bottom pane of the **Performance** tool automatically aggregates the data across all of the **Recalculate Style** events in the recorded profile.  As you zoom into specific parts of the profile, the **Selector Stats** tab updates to only show data from the portion of the profile that you are currently analyzing.
 
-Additionally, a new column called **Style sheet** has been added to the **Selector Stats** tab and contains links for each selector back to the stylesheet where the selectors are defined:
+Also, a new column called **Style sheet** has been added to the **Selector Stats** tab and contains links for each selector back to the stylesheet where the selectors are defined:
 
 ![Selector Stats are now aggregated across Recalculate Style events within the currently displayed section of the recorded profile](./devtools-114-images/aggregate-selector-stats.png)
 <!-- todo
@@ -50,28 +50,31 @@ See also:
 
 <!-- ====================================================================== -->
 ## The Issues tool warns you when CSS properties trigger reflow
+<!-- todo: is this a change to the Issues tool, Styles pane, or both? -->
 
-<!-- Subtitle: Reflow is when the browser re-calculates the positions and geometries of elements in the page and is user-blocking so limit reflow as much as possible for better performance.-->
+<!-- Subtitle: The Styles pane shows a wavy underline on CSS properties that trigger reflow, to help you limit reflow and avoid blocking user interaction.  Reflow is when the browser re-calculates the positions and geometries of elements in the page. -->
 
-<!-- Reviewer: Vidal Guillermo, Diazleal Ortega -->
+<!-- Reviewer: Vidal Guillermo Diazleal Ortega -->
 
-Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document.  Because reflow is a user-blocking operation in the browser, from a performance perspective, we recommend limiting reflow as much as possible to keep your web content smooth and interactable.  Some CSS properties don't trigger reflow, because they run on the compositor thread in the browser - for example, the [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity) properties.
+Reflow is the web browser process for recalculating the positions and geometries of elements in the document, to re-render part or all of the document.  Because reflow is a user-blocking operation in the browser, for performance, we recommend limiting reflow as much as possible, to keep your web content smooth and responsive to interaction.
 
-Now, the **Styles** pane in the **Elements** tool adds a wavy underline for CSS properties that trigger reflow.  Hover over the wavy underline to show the issue in a tooltip:
+Some CSS properties don't trigger reflow, because they run on the compositor thread in the browser - for example, the [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity) properties.
+
+Now, the **Styles** pane in the **Elements** tool adds a wavy underline on CSS properties that trigger reflow.  To view the issue in a tooltip, hover over the wavy underline:
 
 ![CSS reflow issue in the Styles pane](./devtools-114-images/css-reflow-issue-styles-pane.png)
-
-To open the issue in the **Issues** tool, **Shift**+click the wavy underline:
-
-![CSS reflow issue in the Issues tool](./devtools-114-images/css-reflow-issue-issues-tool.png)
-<!-- todo
+<!-- done:
 1. Go to https://www.w3schools.com/css/css3_animations.asp
-1. Select the animated div in the Elements tool.
-1. Scroll down in the Styles pane until you see the animation CSS: 0%
-1. Hover over the wavy underline to see the issue tooltip.
+1. Select the animated div in the Elements tool.  To do this, in DOM tree, Find animated_div (2nd hit).
+1. Scroll down in the Styles pane until you see the animation CSS: 0%, in the @keyframes animated_div section.
+1. Hover over the yellow/green wavy underline of "left" to see the issue tooltip.
 1. Right click and select "View issues" to open the Issues tool.
 1. Ensure that in the Issues tool, Tips are also being displayed.
 -->
+
+To open the issue in the **Issues** tool, **Shift**+click the wavy underline, or right-click the wavy underline and then select **View issues**:
+
+![CSS reflow issue in the Issues tool](./devtools-114-images/css-reflow-issue-issues-tool.png)
 
 See also:
 * [Minimizing browser reflow | PageSpeed Insights](https://developers.google.com/speed/docs/insights/browser-reflow)
@@ -161,7 +164,7 @@ See also:
 
 <!-- Subtitle: Hovering over icons in high contrast mode in the VS Code extension now renders with sufficient contrast.-->
 
-<!-- Reviewer: Vidal Guillermo, Diazleal Ortega -->
+<!-- Reviewer: Vidal Guillermo Diazleal Ortega -->
 
 In previous versions of the Microsoft Edge DevTools extension for Visual Studio Code, in high contrast mode, hovering over icons within the tools did not render with sufficient contrast.  In the latest version of the Microsoft Edge DevTools extension, this issue has been fixed.
 
