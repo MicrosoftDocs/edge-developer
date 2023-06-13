@@ -69,7 +69,7 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
 <!-- keep in same order as screenshot: -->
 
-*  If there's a **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](./shortcuts-images/custom-keyboard-shortcut-icon.png)) icon displayed next to a checkbox, it indicates that you have customized the keyboard shortcut.
+*  If there's a **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.png)) icon displayed next to a checkbox, it indicates that you have customized the keyboard shortcut.
 
 *  To remove a keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, click the **Delete shortcut** (![DeleteKeyboardShortcut](./shortcuts-images/delete-keyboard-shortcut-icon.png)) icon.
 

@@ -319,7 +319,7 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
    ![The Sources tool showing the line of code that caused the attribute to change](./index-images/dom-break-attribute-modifications-sources-paused-on.png)
 
-1. Click **Resume Script** (![Resume Script](./index-images/resume-script-icon.png)) to resume the JavaScript execution.
+1. Click **Resume Script** (![Resume Script](../media/resume-script-icon.png)) to resume the JavaScript execution.
 
 ### Break on node removal
 

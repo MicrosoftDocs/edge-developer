@@ -54,13 +54,13 @@ For details, see [Map the processed code to your original source code, for debug
 
    The flame chart in the **Performance** tool shows minified function names, such as **XI**, **Gi**, **d**, **o**, **an**, **c**, **co**, and **a** from your production code:
 
-   ![The minified flame chart in the performance profile](images/minified-perf-profile.png)
+   ![The minified flame chart in the performance profile](./unminify-images/minified-perf-profile.png)
 
 
 <!-- ====================================================================== -->
 ## Step 3 - Unminify the code
 
-1. Click the **Unminify** (![The Unminify button icon](images/unminify-icon.png)) button:
+1. Click the **Unminify** (![The Unminify button icon](./unminify-images/unminify-icon.png)) button:
 
    ![The Unminify button in the Performance tool](./unminify-images/perf-profile-unminify-button.png)
 
