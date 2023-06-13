@@ -24,6 +24,8 @@ ms.date: 05/31/2023
 
 <!-- Subtitle: Instead of selecting individual Recalculate Style events when recording a profile, the Selector Stats tab now aggregates data across all Recalculate Style events-->
 
+<!-- Reviewer: Gavin Xu -->
+
 In [Microsoft Edge 109](../01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats), we added the **Selector Stats** feature to the **Performance** tool. You can use the data from **Selector Stats** to understand which CSS selectors are taking the most time during **Recalculate Style** events in the **Performance** tool and contributing to slow performance.
 
 Now in Microsoft Edge 114, you no longer need to select an individual **Recalculate Style** event to see the selectors that were recalculated during that event. Rather, the **Selector Stats** tab in the bottom pane of the **Performance** tool automatically aggregates the data across all of the **Recalculate Style** events in the recorded profile. As you zoom into specific parts of the profile, the **Selector Stats** tab updates to only show data from the portion of the profile that you are currently analyzing. 
@@ -50,6 +52,8 @@ See also:
 ## The Issues tool warns you when CSS properties trigger reflow 
 
 <!-- Subtitle: Reflow is when the browser re-calculates the positions and geometries of elements in the page and is user-blocking so limit reflow as much as possible for better performance.-->
+
+<!-- Reviewer: Vidal Guillermo Diazleal Ortega -->
 
 Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document. Because reflow is a user-blocking operation in the browser, from a performance perspective, we recommend limiting reflow as much as possible to keep your web content smooth and interactable. Some CSS properties don't trigger reflow because they run on the compositor thread in the browser, like [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity).
 
@@ -79,6 +83,8 @@ See also:
 
 <!-- Subtitle: In previous versions of Microsoft Edge, loading enhanced traces larger than 1 GB would produce an error. In Microsoft Edge 114, this issue has been fixed. -->
 
+<!-- Reviewer: Rob Paveza -->
+
 Enhanced traces are an experimental feature in Microsoft Edge that allow you to export and import entire DevTools instances, saved as `.devtools` files, with as much state preserved across the **Memory**, **Performance**, **Elements**, **Console**, and **Sources** tools as possible.  These files open in a separate DevTools instance and load DOM snapshots, Console messages, heap snapshots, performance profiles, and retain references to source code.
 
 In previous versions of Microsoft Edge, loading an enhanced trace larger than 1 GB would fail. In Microsoft Edge 114, this issue has been fixed and you can now successfully load enhanced traces of any size.
@@ -99,6 +105,8 @@ See also:
 ## The Memory tool more accurately compares 2 heap snapshots
 
 <!-- Subtitle: In previous versions of Microsoft Edge, the Memory tool incorrectly reported lots of new and deleted objects when comparing 2 heap snapshots. This issue has now been fixed.-->
+
+<!-- Reviewer: Seth Brenith -->
 
 In the **Memory** tool, you can take multiple heap snapshots and compare them to find differences in the objects in the heap.  In previous versions of Microsoft Edge, the **Memory** tool incorrectly reported large numbers of new and deleted objects when comparing heap snapshots because object IDs were not being tracked consistently by the tool.
 
@@ -127,6 +135,8 @@ See also:
 
 <!-- Subtitle: The CSS Overview tool is now easier to use with assistive technology, like screen readers. -->
 
+<!-- Reviewer: Yanling Wang -->
+
 In [Microsoft Edge 112](../04/devtools-112.md#css-overview-tool-displays-non-simple-selectors-for-quick-performance-gains), the **CSS Overview** tool was updated to display a list of non-simple selectors when taking an overview snapshot of your webpage's CSS.  In Microsoft Edge 114, this section of the **CSS Overview** tool is now easier to use with assistive technology, like screen readers.
 
 When you navigate to a selector in the **Non-simple selectors** section of the **CSS Overview** tool and press `Enter` or click, screen readers will now announce "Copied CSS Selector."
@@ -150,6 +160,8 @@ See also:
 ## Debugging Microsoft Edge in VS Code has better support for high contrast mode 
 
 <!-- Subtitle: Hovering over icons in high contrast mode in the VS Code extension now renders with sufficient contrast.-->
+
+<!-- Reviewer: Vidal Guillermo Diazleal Ortega -->
 
 In previous versions of the Microsoft Edge DevTools extension for Visual Studio Code, in high contrast mode, hovering over icons within the tools did not render with sufficient contrast.  In the latest version of the Microsoft Edge DevTools extension, this issue has been fixed.
 
