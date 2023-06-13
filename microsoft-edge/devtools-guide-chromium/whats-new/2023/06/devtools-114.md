@@ -50,27 +50,20 @@ See also:
 
 <!-- ====================================================================== -->
 ## The Issues tool warns you when CSS properties trigger reflow
-<!-- todo: is this a change to the Issues tool, Styles pane, or both? -->
 
 <!-- Subtitle: The Styles pane shows a wavy underline on CSS properties that trigger reflow, to help you limit reflow and avoid blocking user interaction.  Reflow is when the browser re-calculates the positions and geometries of elements in the page. -->
 
 <!-- Reviewer: Vidal Guillermo Diazleal Ortega -->
 
-Reflow is the web browser process for recalculating the positions and geometries of elements in the document, to re-render part or all of the document.  Because reflow is a user-blocking operation in the browser, for performance, we recommend limiting reflow as much as possible, to keep your web content smooth and responsive to interaction.
+DevTools now detects and warns about properties that can cause performance issues when animated.
+*  In the **Styles** pane in the **Elements** tool, a wavy underline and tooltip has been added on CSS properties that trigger reflow.
+*  In the **Issues** tool, in the **Performance** category, a new kind of issue is reported, such as "Changes to this property will trigger: 'Layout', which can impact performance when used inside @Keyframes."
 
-Some CSS properties don't trigger reflow, because they run on the compositor thread in the browser - for example, the [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity) properties.
+Because reflow is a user-blocking operation in the browser, for performance, we recommend limiting reflow as much as possible, to keep your web content smooth and responsive to interaction.  Reflow is the web browser process for recalculating the positions and geometries of elements in the document, to re-render part or all of the document.  Some CSS properties don't trigger reflow, because they run on the compositor thread in the browser - for example, the [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity) properties.
 
-Now, the **Styles** pane in the **Elements** tool adds a wavy underline on CSS properties that trigger reflow.  To view the issue in a tooltip, hover over the wavy underline:
+In the **Styles** pane, to view the issue in a tooltip, hover over the wavy underline:
 
 ![CSS reflow issue in the Styles pane](./devtools-114-images/css-reflow-issue-styles-pane.png)
-<!-- done:
-1. Go to https://www.w3schools.com/css/css3_animations.asp
-1. Select the animated div in the Elements tool.  To do this, in DOM tree, Find animated_div (2nd hit).
-1. Scroll down in the Styles pane until you see the animation CSS: 0%, in the @keyframes animated_div section.
-1. Hover over the yellow/green wavy underline of "left" to see the issue tooltip.
-1. Right click and select "View issues" to open the Issues tool.
-1. Ensure that in the Issues tool, Tips are also being displayed.
--->
 
 To open the issue in the **Issues** tool, **Shift**+click the wavy underline, or right-click the wavy underline and then select **View issues**.  The **Issues** tool opens in the Drawer at the bottom of DevTools:
 
@@ -84,7 +77,7 @@ See also:
 <!-- ====================================================================== -->
 ## You can load Enhanced Traces larger than 1 GB in DevTools
 
-<!-- Subtitle: In previous versions of Microsoft Edge, loading enhanced traces larger than 1 GB would produce an error. In Microsoft Edge 114, this issue has been fixed. -->
+<!-- Subtitle: In previous versions of Microsoft Edge, loading enhanced traces larger than 1 GB produced an error. In Microsoft Edge 114, this issue has been fixed. -->
 
 <!-- Reviewer: Rob Paveza -->
 
