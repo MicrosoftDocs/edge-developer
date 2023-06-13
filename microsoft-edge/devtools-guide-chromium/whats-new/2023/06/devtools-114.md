@@ -153,7 +153,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Debugging Microsoft Edge in VS Code has better support for high contrast mode
+## DevTools extension for VS Code has better support for high contrast mode
 
 <!-- Subtitle: Hovering over icons in high contrast mode in the VS Code extension now renders with sufficient contrast. -->
 
