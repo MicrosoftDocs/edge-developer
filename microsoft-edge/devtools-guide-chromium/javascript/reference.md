@@ -70,7 +70,7 @@ To set a line-of-code breakpoint:
 
    A red circle (or more recently, a blue rectangle) then appears next to the line number, indicating a breakpoint.
 
-   ![A line-of-code breakpoint](../media/javascript-sources-page-js-breakpoint-30.png)
+   ![A line-of-code breakpoint](./reference-images/javascript-sources-page-js-breakpoint-30.png)
 
 Line-of-code breakpoints may be inefficient to set, especially if you don't know exactly where to look, or if your codebase is large.  To save time when debugging, learn how and when to use the other types of breakpoints.  See [Pause your code with breakpoints](breakpoints.md).
 

@@ -30,7 +30,7 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 
 1. Click the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.
 
-   ![The Manifest pane](../media/storage-application-manifest.png)
+   ![The Manifest pane](./localstorage-images/storage-application-manifest.png)
 
 1. Expand the **Local Storage** menu.
 

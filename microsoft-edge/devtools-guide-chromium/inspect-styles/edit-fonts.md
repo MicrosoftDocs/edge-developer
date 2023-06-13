@@ -31,7 +31,7 @@ Any CSS in the **Styles** pane, either font definitions or inline styles, has a 
 
 The **Font Editor** opens on top of the **Styles** pane:
 
-![The Font Editor opens on top of the Styles pane](../media/font-editor-open.png)
+![The Font Editor opens on top of the Styles pane](./edit-fonts-images/font-editor-open.png)
 
 All fields in the visual **Font Editor** are populated from the values in the CSS in the **Styles** pane.  For example, the `line-height` definition is set to `160%` in the **Styles** pane, so the line height text field displays `160`, and the unit dropdown list displays `%`.  Also, the slider is automatically set to match the values of the text field.
 

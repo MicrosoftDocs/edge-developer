@@ -146,7 +146,7 @@ After you verified that the animation isn't performing well, the next step is to
 
 1. There is a lot of data in the recording.  To zoom into a portion of the recording, click and drag in the **Overview** area toward the top of the **Performance** tool.  The **Overview** area includes the **CPU** and **NET** charts (indicated on the right).  The **Main** section and **Summary** panel only display information for the selected portion of the recording.
 
-   ![Zoom into a section](../media/evaluate-performance-performance-main-zoomed.png)
+   ![Zoom into a section](./index-images/evaluate-performance-performance-main-zoomed.png)
 
    Another way to change the selected area is to put focus on the **Main** section, click the background or an event, and then press:
    * `W` to zoom in, `S` to zoom out.

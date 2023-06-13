@@ -42,7 +42,7 @@ After you grant permission, the folder you select is added as a Workspace in Dev
 
 DevTools opens an instance of Visual Studio Code and shows all the files in the root folder.  DevTools also opens the file you've selected, scrolled to the correct line of the CSS selector.
 
-![Visual Studio Code open with the root folder files and the selected file open](../media/experiment-sources-in-code-editor-open.png)
+![Visual Studio Code open with the root folder files and the selected file open](./opening-sources-in-vscode-images/experiment-sources-in-code-editor-open.png)
 
 Any changes that you make to the file in DevTools will now be synced to Visual Studio Code.  For example, if you add a `background: green` rule to the styles of the body, the same CSS rule will automatically be added to the `base.css` file in the code editor of Visual Studio Code.
 

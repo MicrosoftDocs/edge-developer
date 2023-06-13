@@ -28,11 +28,11 @@ To enter JavaScript statements and expressions interactively in the **Console**:
 
    The **Console** immediately displays the result `4` on the next line while you type.  The `Eager evaluation` feature helps you write valid JavaScript.  The **Console** displays the result while you type, regardless of whether your JavaScript is correct, and regardless of whether a valid result exists.
 
-   ![Console displays the result of the expression '2+2', interactively as you type it](../media/console-javascript-eager-evaluation.png)
+   ![Console displays the result of the expression '2+2', interactively as you type it](./console-javascript-images/console-javascript-eager-evaluation.png)
 
 1. When you press **Enter**, the **Console** runs the JavaScript command (expression or statement), displays the result, and then moves the cursor down to allow you to enter the next JavaScript command.
 
-   ![Run several JavaScript expressions in succession](../media/console-javascript-several-expressions.png)
+   ![Run several JavaScript expressions in succession](./console-javascript-images/console-javascript-several-expressions.png)
 
 
 <!-- ====================================================================== -->
@@ -54,7 +54,7 @@ To try autocompletion while writing multi-part expressions:
 
 1. Type another `.` to get a large list of possible properties and methods available on the body of the current webpage.
 
-   ![Console autocompletion of JavaScript expressions](../media/console-javascript-autocomplete.png)
+   ![Console autocompletion of JavaScript expressions](./console-javascript-images/console-javascript-autocomplete.png)
 
 
 <!-- ====================================================================== -->

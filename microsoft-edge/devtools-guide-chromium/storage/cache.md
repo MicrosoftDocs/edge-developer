@@ -32,7 +32,7 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 
 1. Click the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.
 
-   ![The Manifest pane](../media/storage-application-manifest.png)
+   ![The Manifest pane](./cache-images/storage-application-manifest.png)
 
 1. Expand the **Cache Storage** section to view available caches.
 

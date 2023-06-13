@@ -67,7 +67,7 @@ To activate and use the Source Order Viewer, with the demo page:
 
 1. In the DOM tree in the **Elements** tool, select a major layout element, such as the `header` element.  Numeric overlays are now displayed on sections of the rendered page, which indicate the source order of the different elements.
 
-   ![Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page](../media/a11y-testing-source-order-viewer.png)
+   ![Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page](./test-tab-key-source-order-viewer-images/a11y-testing-source-order-viewer.png)
 
 1. Scroll the page to see all of the numeric overlays, including on the page footer section.
 

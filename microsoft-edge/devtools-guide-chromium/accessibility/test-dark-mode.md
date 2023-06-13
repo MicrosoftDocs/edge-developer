@@ -31,11 +31,11 @@ To emulate a user's selection of preferred color theme:
 
 1. Select the **Issues** tool, and then expand the **Accessibility** section.  Depending on various factors, you might get `Insufficient color contrast` warnings. Notice in **AFFECTED RESOURCES** there are 6 elements with insufficient color contrast.
 
-   ![New contrast issues detected because of the change to light theme](../media/a11y-testing-new-contrast-issues-in-light-mode.png)
+   ![New contrast issues detected because of the change to light theme](./test-dark-mode-images/a11y-testing-new-contrast-issues-in-light-mode.png)
 
     On our demo page, the **Donation status** section of the page is unreadable in light mode, and needs to change:
 
-   ![The Donation Status section has contrast issues in light mode](../media/a11y-testing-donation-state-light-contrast.png)
+   ![The Donation Status section has contrast issues in light mode](./test-dark-mode-images/a11y-testing-donation-state-light-contrast.png)
 
 1. In DevTools, select the **Elements** tool, and then press **Ctrl+F** on Windows/Linux or **Command+F** on macOS.  The **Find** text box appears, to search within the HTML DOM tree.
 

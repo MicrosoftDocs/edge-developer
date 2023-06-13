@@ -30,7 +30,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.
 
-   ![The Manifest pane](../media/storage-application-manifest.png)
+   ![The Manifest pane](./sessionstorage-images/storage-application-manifest.png)
 
 1. Expand the **Session Storage** menu.
 

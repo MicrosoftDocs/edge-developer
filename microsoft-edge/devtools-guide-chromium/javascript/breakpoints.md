@@ -59,7 +59,7 @@ To set a line-of-code breakpoint in DevTools:
 
 1. To the left of the line of code is the line number column.  Click it.  A red icon (or more recently, a blue rectangle arrow) appears next to the line number column:
 
-   ![A line-of-code breakpoint](../media/javascript-sources-page-js-breakpoint-30.png)
+   ![A line-of-code breakpoint](./breakpoints-images/javascript-sources-page-js-breakpoint-30.png)
 
 ### Line-of-code breakpoints in your code
 

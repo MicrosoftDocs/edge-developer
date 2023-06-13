@@ -59,7 +59,7 @@ These steps explain how to start http-server by using the cross-platform git bas
    npx http-server
    ```
    
-   ![Starting the server](./install-images/git-bash-starting-server-2nd-time.png)
+   ![Starting the server](./get-started-launch-project-images/git-bash-starting-server-2nd-time.png)
 
    Information about the server and localhost URL is displayed, such as:
 
@@ -143,7 +143,7 @@ To end debugging and close the **Edge DevTools** tabs:
 
 1. In the Debug toolbar, click the **Stop** (**Shift+F5**) button:
 
-   ![Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
+   ![Stop button in the Debug toolbar](./get-started-launch-project-images/stop-button-debug-toolbar.png)
 
    Or, on the **Run** menu, select **Stop Debugging**.  Or, close the two DevTools tabs.  The Debug toolbar closes.
 

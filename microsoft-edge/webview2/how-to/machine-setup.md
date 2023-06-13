@@ -263,7 +263,7 @@ Install or update the Release or Prerelease WebView2 SDK, as follows:
 
    The following image shows a particular .sln file and project; use whichever project you want to install the SDK to:
 
-   ![Manage NuGet packages](../media/manage-nuget-packages.png)
+   ![Manage NuGet packages](./machine-setup-images/manage-nuget-packages.png)
 
    The **NuGet Package Manager** tab opens in Visual Studio.
 
@@ -277,7 +277,7 @@ Install or update the Release or Prerelease WebView2 SDK, as follows:
 
 1. In the right-hand pane, click the **Install** (or **Update**) button.  NuGet downloads the WebView2 SDK to your machine, for use by this project.
 
-   ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio](../media/nuget.png)
+   ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio](./machine-setup-images/nuget.png)
 
    _To zoom, right-click > **Open image in new tab**._
 

@@ -20,7 +20,7 @@ The next figure shows shortcuts on Microsoft Edge, on iOS:
 
 The next figure shows a Jumplist on the Webboard app, on Windows:
 
-![A Jumplist on the Webboard app on Windows](../media/pwa-shortcuts-in-taskbar.png)
+![A Jumplist on the Webboard app on Windows](./shortcuts-images/pwa-shortcuts-in-taskbar.png)
 
 Progressive Web Apps (PWAs) can also define common tasks as shortcuts in the [Web App Manifest](web-app-manifests.md).
 

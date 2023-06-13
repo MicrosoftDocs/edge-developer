@@ -182,7 +182,7 @@ To use the log level to filter, [open the Console Sidebar](#open-the-console-sid
 
 Type `url:` followed by a URL to only view messages that came from that URL.  After you type `url:`, DevTools displays all relevant URLs.  Domains also work.  For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:https://example.com` allows you to focus on the messages from these two scripts.
 
-![A URL filter](../media/console-filter-text.png)
+![A URL filter](./reference-images/console-filter-text.png)
 
 To hide messages from a URL, type `-url:`.  It's a negative URL filter.
 
@@ -208,7 +208,7 @@ Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded
 
 Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to filter out any messages that don't match that pattern.  DevTools checks whether the pattern is found in the message text or in the script that caused the message to be logged.
 
-![Filtering out any messages that don't match the regex expression](../media/console-filter-regex.png)
+![Filtering out any messages that don't match the regex expression](./reference-images/console-filter-regex.png)
 
 
 <!-- ====================================================================== -->

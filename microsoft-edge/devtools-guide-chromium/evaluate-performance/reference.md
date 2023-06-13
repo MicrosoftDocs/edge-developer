@@ -42,7 +42,7 @@ Record runtime performance when you want to analyze the performance of a page as
 
 1. Click the **Record** (![Record icon](../media/record-icon.png)) button.
 
-   ![Record](../media/evaluate-performance-performance-record-highlight.png)
+   ![Record](./reference-images/evaluate-performance-performance-record-highlight.png)
 
 1. Interact with the page.  DevTools records all page activity that occurs as a result of your interactions.
 
@@ -162,7 +162,7 @@ To save a recording, right-click the recording and then select **Save Profile**.
 
 To load a recording, right-click the recording and then select **Load Profile**.
 
-![Load Profile](../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.png)
+![Load Profile](./reference-images/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.png)
 
 
 <!-- ====================================================================== -->
@@ -228,7 +228,7 @@ To hide the search box, click **Cancel**.
 
 Use the **Main** section to view activity that occurred on the main thread of the page.
 
-![The Main section](../media/evaluate-performance-performance-main-zoomed.png)
+![The Main section](./reference-images/evaluate-performance-performance-main-zoomed.png)
 
 Select an event to view more information about it in the **Summary** tab.  DevTools outlines the selected event.
 

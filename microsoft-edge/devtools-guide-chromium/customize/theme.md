@@ -56,7 +56,7 @@ Dark themes:
 
 1. Select **Preferences**, and then in the **Appearance** section, select a theme from the **Theme** dropdown list.
 
-![Selecting a theme in Preferences](./media/customize-theme-setting.png)
+![Selecting a theme in Preferences](./theme-images/customize-theme-setting.png)
 
 
 <!-- ====================================================================== -->

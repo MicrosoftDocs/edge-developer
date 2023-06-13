@@ -194,7 +194,7 @@ Install the Windows Implementation Libraries (WIL) from within Visual Studio, as
 
 1. In **Solution Explorer**, right-click the **WebView2GettingStarted** project node (not the solution node) and then select **Manage NuGet Packages**.
 
-   ![Manage NuGet packages](../media/manage-nuget-packages.png)
+   ![Manage NuGet packages](./win32-images/manage-nuget-packages.png)
 
 1. In the **NuGet** window, click the **Browse** tab.
 
@@ -261,7 +261,7 @@ Update (or install) the WebView2 SDK, as follows:
 
 1. In the right-hand side window, click **Update** (or **Install**).  NuGet downloads the WebView2 SDK to your machine.
 
-   ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio](../media/nuget.png)
+   ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio](./win32-images/nuget.png)
 
 1. Close the **NuGet Package Manager** tab.
 
@@ -466,7 +466,7 @@ In the previous step, we discussed navigating to URL by using the `ICoreWebView2
 
    If you want more information now, in a new window or tab, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
-![Navigation events](../media/navigation-events.png)
+![Navigation events](./win32-images/navigation-events.png)
 
 In error cases, one or more of the following events may occur, depending on whether the navigation continued to an error webpage:
 

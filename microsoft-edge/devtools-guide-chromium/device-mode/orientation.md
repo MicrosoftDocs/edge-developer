@@ -28,7 +28,7 @@ Simulate different device orientations from within DevTools.
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-   ![The Command Menu](../media/device-mode-console-command-menu.png)
+   ![The Command Menu](./orientation-images/device-mode-console-command-menu.png)
 
 1. Type **sensors**, select **Show Sensors**, and then press **Enter**.  The **Sensors** tool opens in the bottom of the DevTools window.
 

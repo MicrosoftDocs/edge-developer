@@ -46,7 +46,7 @@ For details, see [Map the processed code to your original source code, for debug
 
 1. In the **Performance** tool, click the **Record** button, to record a performance profile for the page you want to analyze.  For details, see [Record runtime performance](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference).
 
-   ![Recording a performance profile](../media/evaluate-performance-performance-record-highlight.png)
+   ![Recording a performance profile](./unminify-images/evaluate-performance-performance-record-highlight.png)
 
    A performance profile is recorded, in the **Performance** tool.
 
@@ -76,7 +76,7 @@ For details, see [Map the processed code to your original source code, for debug
 
 1. In the **Performance** tool, click the **Load profile** (![The 'Load profile` icon button in the Performance tool](./unminify-images/load-profile-icon.png)) icon button.  Or, right-click a blank area of the **Performance** tool, and then select **Load profile**.
 
-   ![Load Profile](../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.png)
+   ![Load Profile](./unminify-images/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.png)
 
 1. In the **Open** dialog, select the unminified performance profile `.json` file that you just downloaded.  If needed, for details, see [Load a recording](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#load-a-recording) in _Performance features reference_, and then continue below.
 
