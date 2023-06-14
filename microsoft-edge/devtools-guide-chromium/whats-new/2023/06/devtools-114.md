@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/13/2023
+ms.date: 06/14/2023
 ---
 # What's New in DevTools (Microsoft Edge 114)
 
@@ -49,23 +49,23 @@ See also:
 
 <!-- Reviewer: Vidal Guillermo Diazleal Ortega -->
 
-DevTools now detects and warns about properties that can cause performance issues when animated.
-*  In the **Styles** pane in the **Elements** tool, a wavy underline and tooltip has been added on CSS properties that trigger reflow.
-*  In the **Issues** tool, in the **Performance** category, a new kind of issue is reported, such as "Changes to this property will trigger: 'Layout', which can impact performance when used inside @Keyframes."
+DevTools now detects and warns about CSS properties that can cause reflow-based performance issues when using CSS animation in the webpage, such as moving text.  _Reflow_ is the web browser process for recalculating the positions and geometries of elements in the document, to re-render part or all of the document.  Because reflow is a user-blocking operation in the browser, we recommend limiting reflow as much as possible, to keep your web content smooth and responsive to interaction.
 
-Because reflow is a user-blocking operation in the browser, for performance, we recommend limiting reflow as much as possible, to keep your web content smooth and responsive to interaction.  _Reflow_ is the web browser process for recalculating the positions and geometries of elements in the document, to re-render part or all of the document.  Some CSS properties don't trigger reflow, because they run on the compositor thread in the browser - for example, the [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity) properties.
+Some CSS properties don't trigger reflow, because they run on the compositor thread in the browser - for example, the [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity) properties.
 
-In the **Styles** pane, to view the issue in a tooltip, hover over the wavy underline:
+In the **Styles** pane in the **Elements** tool, a wavy underline and tooltip has been added on CSS properties that trigger reflow.  To view the issue in a tooltip, hover over the wavy underline:
 
 ![CSS reflow issue in the Styles pane](./devtools-114-images/css-reflow-issue-styles-pane.png)
 
-To open the issue in the **Issues** tool, **Shift**+click the wavy underline, or right-click the wavy underline and then select **View issues**.  The **Issues** tool opens in the Drawer at the bottom of DevTools:
+In the **Issues** tool, in the **Performance** category, a new kind of issue is reported, such as "Changes to this property will trigger: 'Layout', which can impact performance when used inside @Keyframes."  When you're using the **Styles** pane, to open the issue in the **Issues** tool, **Shift**+click the wavy underline on such a property, or right-click the wavy underline and then select **View issues**.  The **Issues** tool opens in the Drawer at the bottom of DevTools:
 
 ![CSS reflow issue in the Issues tool](./devtools-114-images/css-reflow-issue-issues-tool.png)
 
 See also:
 * [Minimizing browser reflow | PageSpeed Insights](https://developers.google.com/speed/docs/insights/browser-reflow)
 * [Open issues from the DOM tree](../../../issues/index.md#open-issues-from-the-dom-tree) in _Find and fix problems using the Issues tool_.
+* [Using CSS animations](https://developer.mozilla.org/docs/Web/CSS/CSS_Animations/Using_CSS_animations), at MDN.
+* [Inspect and modify CSS animation effects](../../../inspect-styles/animations.md)
 
 
 <!-- ====================================================================== -->
