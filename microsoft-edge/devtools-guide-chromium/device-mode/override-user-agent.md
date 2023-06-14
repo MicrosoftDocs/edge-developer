@@ -32,7 +32,7 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
 
 1. In the **User agent** section, clear the **Use browser default** checkbox.
 
-   ![Clearing the 'Use browser default' checkbox](../media/clear-use-browser-default-checkbox.png)
+   ![Clearing the 'Use browser default' checkbox](./override-user-agent-images/clear-use-browser-default-checkbox.png)
 
 1. Select a user agent from the dropdown list, or enter a custom user agent.
 

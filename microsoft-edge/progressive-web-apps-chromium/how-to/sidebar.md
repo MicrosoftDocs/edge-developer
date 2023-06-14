@@ -208,17 +208,17 @@ PWAmp is a music player PWA demo application that can be pinned to the sidebar i
 
 1. Open Microsoft Edge and make sure the sidebar is displayed. If the sidebar is not displayed, go to `edge://settings/sidebar` and then turn on the **Always show sidebar** toggle:
 
-    ![The Edge Settings page with the "Always show sidebar" setting](../media/always-show-sidebar.png)
+    ![The Edge Settings page with the "Always show sidebar" setting](./sidebar-images/always-show-sidebar.png)
 
 1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/).
 
 1. In the sidebar, click **Customize sidebar**, and then click **Add current page**:
 
-    ![The "Customize sidebar" panel, with the "Add current page" button](../media/add-pwamp-to-sidebar.png)
+    ![The "Customize sidebar" panel, with the "Add current page" button](./sidebar-images/add-pwamp-to-sidebar.png)
 
 1. The PWAmp music player app now appears in the sidebar. Click the PWAmp icon in the sidebar to open the app and use it alongside your other tabs:
 
-    ![Microsoft Edge with one tab opened on a TODO list app, and PWAmp in the sidebar](../media/using-pwamp-in-sidebar.png)
+    ![Microsoft Edge with one tab opened on a TODO list app, and PWAmp in the sidebar](./sidebar-images/using-pwamp-in-sidebar.png)
 
 The parts of the PWAmp demo app source code that are relevant to the Microsoft Edge sidebar support are:
 

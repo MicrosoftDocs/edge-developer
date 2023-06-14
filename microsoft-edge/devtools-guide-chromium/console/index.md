@@ -21,11 +21,11 @@ The **Console** tool helps with several tasks, which are covered in more detail 
 
 You can open the **Console** tool in the top or bottom of DevTools; it's shown here in upper part, on the main toolbar:
 
-![The Console tool open in the upper panel](../media/console-intro-console-main.png)
+![The Console tool open in the upper panel](./index-images/console-intro-console-main.png)
 
 The **Console** is shown here in the lower part of DevTools (the **Drawer**), with the **Elements** tool open above it:
 
-![The Console in the lower panel with the Elements tool open above it](../media/console-intro-console-panel.png)
+![The Console in the lower panel with the Elements tool open above it](./index-images/console-intro-console-panel.png)
 
 The fastest way to directly open the **Console** is to press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
@@ -45,14 +45,14 @@ DevTools gives detailed information about the error in the **Console**:
 
 Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass:
 
-![The 'Search for this message on the Web' button on an error message in the Console](../media/search-console-icon.png)
+![The 'Search for this message on the Web' button on an error message in the Console](./index-images/search-console-icon.png)
 <!-- to set up screenshot, went to 
 https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/console/console-debug-javascript to get a good page that has an error: 
 https://microsoftedge.github.io/Demos/devtools-console/error.html -->
 
 When you click the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message:
 
-![The search results page in a new tab](../media/search-console-new-tab.png)
+![The search results page in a new tab](./index-images/search-console-new-tab.png)
 
 
 <!-- ====================================================================== -->
@@ -64,7 +64,7 @@ Issues are gradually being moved from the **Console** to the **Issues** tool.  H
 
 DevTools with a **Console** full of messages:
 
-![DevTools with a Console full of messages](../media/console-intro-noise.png)
+![DevTools with a Console full of messages](./index-images/console-intro-noise.png)
 
 
 <!-- ====================================================================== -->
@@ -112,7 +112,7 @@ To log information to display in the Console:
 
    The **Console** displays the resulting messages that are caused by the demo code:
 
-   ![Console full of messages caused by demo code](../media/console-intro-logging.png)
+   ![Console full of messages caused by demo code](./index-images/console-intro-logging.png)
 
 1. Paste the above code into the **Console**, and then press **Enter**.
 
@@ -192,7 +192,7 @@ To use a JavaScript expression to read from the current page by reading a select
 
    This expression selects the first heading-level 1 from the DOM and then selects the HTML content that's contained between the `<h1>` start and end tags.  The **Console** displays the output of the expression, which is the text of the heading:
 
-   ![The Console displays the output of the expression, which is the text of the heading](../media/console-intro-reading-DOM.png)
+   ![The Console displays the output of the expression, which is the text of the heading](./index-images/console-intro-reading-DOM.png)
 
 You have read from the DOM representation of the webpage, by entering a JavaScript expression in the **Console** and displaying the output in the **Console**.
 
@@ -213,7 +213,7 @@ To change the rendered webpage:
 
    The above JavaScript expression uses the `=` sign to assign a value to the selected DOM item.  The evaluated value of the expression is a string for a heading, in this example.  The expression's value (the heading string) is shown both in the **Console** and in the rendered webpage:
 
-   ![Write text to the DOM in the Console](../media/console-intro-wrtiting-DOM.png)
+   ![Write text to the DOM in the Console](./index-images/console-intro-wrtiting-DOM.png)
 
    You changed the main heading of the webpage to **Rocking the Console**.
 
@@ -234,7 +234,7 @@ For example, to add a green border around all the links in the current webpage:
 
    The `$$(selector)` console utility function is "Query selector all".  This DOM query selector function returns an array of all the elements that match the specified CSS selector, like the JavaScript function `document.querySelectorAll()`.  In this example, we select all the `<a>` hyperlink elements and then apply a green box around them:
 
-   ![Manipulate a selection of elements using the Console](../media/console-intro-changing-styles.png)
+   ![Manipulate a selection of elements using the Console](./index-images/console-intro-changing-styles.png)
 
 For more information, see [Console tool utility functions and selectors](utilities.md).
 

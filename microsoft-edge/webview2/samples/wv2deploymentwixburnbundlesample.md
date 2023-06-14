@@ -137,7 +137,7 @@ Follow the steps in that section, and then return to this page and continue belo
 
    If the **Unsupported ... .wixproj** dialog appears, install the WiX Toolset and the WiX Toolset Extension, above:
 
-   ![Unsupported wix projects message](./media/unsupported-review-project-dialog.png)
+   ![Unsupported wix projects message](./wv2deploymentwixburnbundlesample-images/unsupported-review-project-dialog.png)
 
 1. This sample is an extension to the [WV2DeploymentWiXCustomActionSample](./wv2deploymentwixcustomactionsample.md) sample.  In Solution Explorer, expand **WV2DeploymentWiXCustomActionSample** and then double-click `Product.wxs`.
 

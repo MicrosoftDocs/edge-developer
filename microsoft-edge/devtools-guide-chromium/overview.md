@@ -59,7 +59,7 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 
 | Action | Resulting tool |
 |---|---|
-| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon](media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools**. | The previously used tool, or the **Welcome** tool. |
+| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon](./overview-images/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools**. | The previously used tool, or the **Welcome** tool. |
 | Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS). | The **Console** tool. |
 | Press **Ctrl+Shift+C** (Windows, Linux) or **Command+Option+C** (macOS). | The **Elements** tool, with the DOM tree expanded to show the `<body>` element. |
 | Press **Shift+F10** to open the right-click menu.  To select the **Inspect** command, press **Up Arrow** and then **Enter**. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |
@@ -87,11 +87,11 @@ hit counts:
 
 A good way to open DevTools is to right-click an item on a webpage, and then select **Inspect**:
 
-![To open DevTools, right-click any item on a webpage and then select Inspect](media/devtools-intro-inspect.png)
+![To open DevTools, right-click any item on a webpage and then select Inspect](./overview-images/devtools-intro-inspect.png)
 
 DevTools opens, with the right-clicked element highlighted in the **DOM tree** in the **Elements** tool:
 
-![DevTools opens, with the right-clicked element highlighted in the Elements tool](media/devtools-intro-inspect-devtools-open.png)
+![DevTools opens, with the right-clicked element highlighted in the Elements tool](./overview-images/devtools-intro-inspect-devtools-open.png)
 
 
 <!-- ------------------------------ -->
@@ -99,7 +99,7 @@ DevTools opens, with the right-clicked element highlighted in the **DOM tree** i
 
 On the Microsoft Edge toolbar, you can select **Settings and more** (`...`) >  **More tools** >  **Developer tools**:
 
-![On the Microsoft Edge toolbar, select 'Settings and more' > 'More tools' > 'Developer tools'](media/edge-settings-and-more-tools-developer-tools.png)
+![On the Microsoft Edge toolbar, select 'Settings and more' > 'More tools' > 'Developer tools'](./overview-images/edge-settings-and-more-tools-developer-tools.png)
 
 
 <!-- ------------------------------ -->
@@ -148,7 +148,7 @@ To prevent pressing **F12** from opening DevTools:
 
 1. In the **Developer Tools** section, turn off the **Open the DevTools when the F12 key is pressed** toggle.
 
-   ![In Edge Settings, disabling the F12 key for opening DevTools](media/disable-f12.png)
+   ![In Edge Settings, disabling the F12 key for opening DevTools](./overview-images/disable-f12.png)
 
 
 <!-- ====================================================================== -->
@@ -266,14 +266,14 @@ The main toolbar contains the following features:
 * Icons:
    *  **More tabs** (![More tabs icon](media/more-tabs-icon-light-theme.png)) button.
    *  **More Tools** (![More Tools icon](media/more-tools-icon-light-theme.png)) button.
-   *  **JavaScript errors counter** (![JavaScript errors counter icon](media/javascript-counter-icon-light-theme.png)) button.
-   *  **Issues counter** (![Issues counter icon](media/issues-counter-icon-light-theme.png)) button.
+   *  **JavaScript errors counter** (![JavaScript errors counter icon](./overview-images/javascript-counter-icon-light-theme.png)) button.
+   *  **Issues counter** (![Issues counter icon](./overview-images/issues-counter-icon-light-theme.png)) button.
    *  **Settings** (![Settings icon](media/settings-gear-icon-light-theme.png)) button.
    *  **Send Feedback** (![Send Feedback icon](media/send-feedback-icon-light-theme.png)) button.
    *  **Customize and control DevTools** (![Customize icon](media/customize-devtools-icon-light-theme.png)) menu button.
    *  **Close** DevTools (![Close DevTools icon](media/close-devtools-icon-light-theme.png)) button.
 
-![The main toolbar, with labels that identify its features](media/devtools-intro-menu-bar.png)
+![The main toolbar, with labels that identify its features](./overview-images/devtools-intro-menu-bar.png)
 
 The toolbar features are described below.
 
@@ -283,7 +283,7 @@ The toolbar features are described below.
 
 When you click the **Inspect tool** (![Inspect tool icon](media/inspect-tool-icon-light-theme.png)) button, you can select an element on the current webpage.  While the **Inspect** tool is active, you can move your mouse over different parts of the webpage to get detailed information about page elements, along with a multi-color overlay that shows the layout dimensions, padding, and margin of the page element.
 
-![The Inspect tool while hovering over with the first headline of this article](media/devtools-intro-inspect-tool.png)
+![The Inspect tool while hovering over with the first headline of this article](./overview-images/devtools-intro-inspect-tool.png)
 
 
 <!-- ------------------------------ -->
@@ -291,7 +291,7 @@ When you click the **Inspect tool** (![Inspect tool icon](media/inspect-tool-ico
 
 Click the **Device Emulation** (![Device Emulation icon](media/device-emulation-icon-light-theme.png)) button to display the current website in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
 
-![DevTools display of this article in an emulated mobile phone](media/devtools-intro-device-emulation.png)
+![DevTools display of this article in an emulated mobile phone](./overview-images/devtools-intro-device-emulation.png)
 
 See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 
@@ -391,7 +391,7 @@ To add a tool to the toolbar, click the **More Tools** (![More Tools icon](media
 <!-- ------------------------------ -->
 #### JavaScript errors counter
 
-The **JavaScript errors counter** (![JavaScript errors counter icon](media/javascript-counter-icon-light-theme.png)) button displays the following:
+The **JavaScript errors counter** (![JavaScript errors counter icon](./overview-images/javascript-counter-icon-light-theme.png)) button displays the following:
 
 *  A red circle containing an **X**, followed by the number of JavaScript errors that were automatically detected on the current webpage.
 
@@ -405,7 +405,7 @@ Click the JavaScript errors counter to open the [Console](console/index.md) and 
 <!-- ------------------------------ -->
 #### Issues counter
 
-The **Issues counter** (![Issues counter icon](media/issues-counter-icon-light-theme.png)) button shows the number of HTML or CSS issues that are automatically found on the current webpage.
+The **Issues counter** (![Issues counter icon](./overview-images/issues-counter-icon-light-theme.png)) button shows the number of HTML or CSS issues that are automatically found on the current webpage.
 
 The tooltip for the **Issues counter** is **Open Issues to view # issues**.  The button's icon is a blue speech bubble icon followed by the number of HTML or CSS issues.
 
@@ -441,7 +441,7 @@ See [Contact the Microsoft Edge DevTools team](contact.md).
 <!-- ------------------------------ -->
 #### Customize and control DevTools menu
 
-The **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button opens a dropdown menu that enables you to define where to dock DevTools, search, open different tools, and more.
+The **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button opens a dropdown menu that enables you to define where to dock DevTools, search, open different tools, and more.
 
 
 <!-- ------------------------------ -->
@@ -471,7 +471,7 @@ The tools that are listed in the **More Tools** (**+**) can be displayed either 
 
 Use the **More Tools** (**+**) menu to select any of the Panel tools or Drawer tools.  A **More Tools** menu appears in multiple places:
 
-*  In the upper right of DevTools, on the main toolbar, click the **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button, hover over the **More tools** command, and then select a tool.
+*  In the upper right of DevTools, on the main toolbar, click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, hover over the **More tools** command, and then select a tool.
 
 *  On the main toolbar at the top of DevTools (where _Panel_ tools usually go).
 
@@ -502,13 +502,13 @@ In addition to Panel tools and Drawer tools, DevTools includes the following too
 
 DevTools provides lots of features and functionality to use with your website.  You can access the different parts of DevTools in many ways, but often a fast way is to use the Command Menu.
 
-![the Command Menu in DevTools](media/devtools-intro-command-menu.png)
+![the Command Menu in DevTools](./overview-images/devtools-intro-command-menu.png)
 
 In the Command Menu, the tools are called "panels"; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.
 
 To open the Command Menu, do either of the following:
 
-*  Click the **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
+*  Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
 
 *  Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
@@ -519,11 +519,11 @@ The **Changes** tool opens, which is useful when you edit CSS.  In this case, th
 
 After you type **cha**, the Command Menu displays the options:
 
-![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'](media/devtools-intro-command-menu-show-changes.png)
+![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'](./overview-images/devtools-intro-command-menu-show-changes.png)
 
 Press **Enter**, and then the **Changes** tool opens:
 
-![DevTools with the Changes tool open](media/devtools-intro-showing-changes.png)
+![DevTools with the Changes tool open](./overview-images/devtools-intro-showing-changes.png)
 
 See also [Run commands with the Microsoft Edge DevTools Command menu](command-menu/index.md).
 
@@ -535,7 +535,7 @@ You can customize DevTools to meet your needs for the way you work.  To change s
 
 In the **Settings** > **Preferences** page, you can change several parts of DevTools.  For example, you can use the **Match the browser language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
 
-![all the settings in DevTools](media/devtools-intro-all-settings.png)
+![all the settings in DevTools](./overview-images/devtools-intro-all-settings.png)
 
 You can also change the settings of advanced features, such as:
 *  Add local files to a [Workspace](workspaces/index.md).
@@ -545,7 +545,7 @@ You can also change the settings of advanced features, such as:
 *  Define simulated **Locations**.
 *  Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
 
-![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code](media/devtools-intro-match-keys.png)
+![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code](./overview-images/devtools-intro-match-keys.png)
 
 
 <!-- ====================================================================== -->
@@ -614,10 +614,10 @@ click the **Inspect tool** (![Inspect tool icon](media/inspect-tool-icon-light-t
 click the **Device Emulation** (![Device Emulation icon](media/device-emulation-icon-light-theme.png)) button.
 click the **More tabs** (![More tabs icon](media/more-tabs-icon-light-theme.png)) button.
 click the **More Tools** (![More Tools icon](media/more-tools-icon-light-theme.png)) button.
-click the **JavaScript errors counter** (![JavaScript errors counter icon](media/javascript-counter-icon-light-theme.png)) button.
-click the **Issues counter** (![Issues counter icon](media/issues-counter-icon-light-theme.png)) button.
+click the **JavaScript errors counter** (![JavaScript errors counter icon](./overview-images/javascript-counter-icon-light-theme.png)) button.
+click the **Issues counter** (![Issues counter icon](./overview-images/issues-counter-icon-light-theme.png)) button.
 click the **Settings** (![Settings icon](media/settings-gear-icon-light-theme.png)) button.
-select **Settings and more** (![The 'Settings and more' icon](media/edge-settings-and-more-icon.png))
+select **Settings and more** (![The 'Settings and more' icon](./overview-images/edge-settings-and-more-icon.png))
 click the **Send Feedback** (![Send Feedback icon](media/send-feedback-icon-light-theme.png)) button.
 click the **Customize and control DevTools** (![Customize icon](media/customize-devtools-icon-light-theme.png)) menu button.
 click the **Close** DevTools (![Close DevTools icon](media/close-devtools-icon-light-theme.png)) button.

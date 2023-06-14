@@ -45,11 +45,11 @@ We'll demonstrate by opening the **demo-to-do** web app:
 
 1. Go to the directory where you cloned the Demos repo, open the specific directory for the **demo-to-do** app, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\`, and then click the **Select Folder** button:
 
-   ![Open Folder: demo-to-do](./get-started-images/open-folder-demo-todo.png)
+   ![Open Folder: demo-to-do](./get-started-right-click-html-images/open-folder-demo-todo.png)
 
-1. Select **Activity Bar** > **Explorer** (![Explorer icon](./get-started-images/explorer-icon.png)) > right-click `index.html` and then select **Open with Edge** > **Open Browser with DevTools**:
+1. Select **Activity Bar** > **Explorer** (![Explorer icon](./get-started-right-click-html-images/explorer-icon.png)) > right-click `index.html` and then select **Open with Edge** > **Open Browser with DevTools**:
 
-   ![Right-click > Open Browser with DevTools](./get-started-images/open-browser-with-devtools.png)
+   ![Right-click > Open Browser with DevTools](./get-started-right-click-html-images/open-browser-with-devtools.png)
 
    *  The **Edge DevTools** tab opens.
 
@@ -57,7 +57,7 @@ We'll demonstrate by opening the **demo-to-do** web app:
 
    *  The Debug toolbar of Visual Studio Code opens, the **Debug Console** opens at the bottom, and the **Run** pane opens.  These features indicate that Visual Studio Code is in Debug mode:
 
-   ![The two Edge DevTools tabs and the Debug toolbar](./get-started-images/devtools-extension-v211.png)
+   ![The two Edge DevTools tabs and the Debug toolbar](./get-started-right-click-html-images/devtools-extension-v211.png)
 
 
 <!-- ====================================================================== -->
@@ -67,7 +67,7 @@ To save space, use the **Close DevTools** or **Open DevTools** button and the **
 
 1. Toward the upper left corner of the **Edge DevTools** tab, click the **Toggle screencast** button:
 
-   ![The 'Toggle screencast' button in the 'Edge DevTools' tab](./get-started-images/toggle-screencast-button.png)
+   ![The 'Toggle screencast' button in the 'Edge DevTools' tab](./get-started-right-click-html-images/toggle-screencast-button.png)
 
    The **Edge DevTools: Browser** tab closes.
 
@@ -77,7 +77,7 @@ To save space, use the **Close DevTools** or **Open DevTools** button and the **
 
 1. In the top right of the **Edge DevTools: Browser** tab, click the **Close DevTools** button:
 
-   ![The 'Close DevTools' button in the 'Edge DevTools: Browser' tab](./get-started-images/close-devtools-button.png)
+   ![The 'Close DevTools' button in the 'Edge DevTools: Browser' tab](./get-started-right-click-html-images/close-devtools-button.png)
 
 1. In the top right of the **Edge DevTools: Browser** tab, click the **Open DevTools** button.
 
@@ -95,7 +95,7 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 
 1. Change the CSS value, such as using mouse wheel or pressing **Up Arrow** and **Down Arrow**.  The associated `.css` file opens, such as `to-do-styles.css` and scrolls to the line that defines the CSS value, and automatically edits the `.css` file but doesn't save changes:
 
-   ![CSS mirror editing](./get-started-images/css-mirror.png)
+   ![CSS mirror editing](./get-started-right-click-html-images/css-mirror.png)
 
 1. Close the `.css` file.  Visual Studio Code prompts you whether to save changes.
 
@@ -105,17 +105,17 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 <!-- ====================================================================== -->
 ## Step 5: Step through JavaScript code in the Debugger
 
-1. Select Activity Bar > Explorer (![Explorer icon in Activity Bar](./get-started-images/explorer-icon.png)).
+1. Select Activity Bar > Explorer (![Explorer icon in Activity Bar](./get-started-right-click-html-images/explorer-icon.png)).
 
 1. In the **demo-to-do** directory, click **to-do.js** to open it.  Scroll down to the `changeTask` function and then click to the left of a line number to set a breakpoint:
 
-   ![Debugging the demo app](./get-started-images/debugging-the-demo-app.png)
+   ![Debugging the demo app](./get-started-right-click-html-images/debugging-the-demo-app.png)
 
 1. If the **Run and Debug** Side Bar isn't displayed, select **View** > **Run**.  The **Run and Debug** Side Bar includes the **Watch** pane and other debugger panes.
 
 1. In the demo app rendered in the **Edge DevTools: Browser** tab, enter a task, such as **test**.  The debugger of Visual Studio Code pauses at the breakpoint in the `to-do.js` file:
 
-   ![Stepping through JavaScript in the demo app](./get-started-images/debugging-the-demo-app.png)
+   ![Stepping through JavaScript in the demo app](./get-started-right-click-html-images/debugging-the-demo-app.png)
 
 1. In the Debug toolbar, or using the **Run** menu or by pressing keys, step through a couple lines of code in `to-do.js`.
 

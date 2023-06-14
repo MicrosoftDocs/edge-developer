@@ -13,7 +13,7 @@ In this article, we cover some of the features you can use in DevTools to test f
 
 1. Open the [accessibility testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab:
 
-   ![The demo page used in this article with a few accessibility issues](../media/a11y-testing-basics-demopage.png)
+   ![The demo page used in this article with a few accessibility issues](./accessibility-testing-in-devtools-images/a11y-testing-basics-demopage.png)
 
 1. Right-click anywhere in the demo webpage and then select **Inspect**.  DevTools opens next to the webpage.
 
@@ -126,7 +126,7 @@ On the demo page, there are additional issues that automated testing can't detec
 
 One of those issues is the donation form.  When you use a mouse, you can click the different options to donate money.  But when you try to use the keyboard to access the donation form, nothing happens. To solve this issue, you need to use the **Inspect** tool:
 
-![The Donation form highighted on the demo page](../media/a11y-testing-basics-donation-form-issue.png)
+![The Donation form highighted on the demo page](./accessibility-testing-in-devtools-images/a11y-testing-basics-donation-form-issue.png)
 
 
 <!-- ====================================================================== -->
@@ -434,4 +434,4 @@ None of these tools can replace a proper round of testing your products with peo
 
 Another way to find out what to do to improve your webpage is to use the [webhint extension for Visual Studio Code](https://aka.ms/webhint4code).  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them:
 
-![Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem](../media/a11y-testing-webhint-in-vs-code.png)
+![Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem](./accessibility-testing-in-devtools-images/a11y-testing-webhint-in-vs-code.png)

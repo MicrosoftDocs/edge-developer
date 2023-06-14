@@ -43,7 +43,7 @@ The first step in debugging is to find a sequence of actions that consistently r
 
 1. Click **Add Number 1 and Number 2**.  The label below the button says **5 + 1 = 51**.  The result should be **6**.  Next, go to [Step 2: Get familiar with the Sources tool UI](#step-2-get-familiar-with-the-sources-tool-ui) to start fixing the addition error that's the bug.
 
-   ![5 + 1 results in 51, but should be 6](../media/javascript-js-demo-bad.png)
+   ![5 + 1 results in 51, but should be 6](./index-images/javascript-js-demo-bad.png)
 
 
 <!-- ====================================================================== -->
@@ -53,15 +53,15 @@ DevTools provides several tools for different tasks.  These tasks include changi
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-   ![DevTools open on Elements](../media/javascript-console-empty.png)
+   ![DevTools open on Elements](./index-images/javascript-console-empty.png)
 
 1. Select the **Sources** tool. Select the **Page** tab, and then select the JavaScript file, `get-started.js`.
 
-   ![The Sources tool](../media/javascript-sources-sections.png)
+   ![The Sources tool](./index-images/javascript-sources-sections.png)
 
 The **Sources** tool UI has three parts.
 
-![The 3 parts of the Sources tool UI](../media/javascript-sources-sections-annotated.png)
+![The 3 parts of the Sources tool UI](./index-images/javascript-sources-sections-annotated.png)
 
 1. The **Navigator** pane (in the upper left corner).  Every file that the webpage requests is listed here.
 
@@ -108,7 +108,7 @@ If you step back and think about how the app works, you might make an educated g
 
 1. Select the checkbox next to **click**.  DevTools is now set up to automatically pause when any `click` event listener runs.
 
-   ![Select the checkbox next to click](../media/javascript-sources-event-listener-breakpoint-mouse-click.png)
+   ![Select the checkbox next to click](./index-images/javascript-sources-event-listener-breakpoint-mouse-click.png)
 
 1. Back on the demo, click **Add Number 1 and Number 2** again.  DevTools pauses the demo and highlights a line of code in the **Sources** tool.  DevTools should pause on line 16 in `get-started.js`, shown in the next code snippet.
 
@@ -164,7 +164,7 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
    - `addend2` = "1"
    - `sum` = "51"
 
-   ![DevTools pauses on the line-of-code breakpoint on line 34](../media/javascript-sources-breakpoint-paused.png)
+   ![DevTools pauses on the line-of-code breakpoint on line 34](./index-images/javascript-sources-breakpoint-paused.png)
 
 
 <!-- ====================================================================== -->
@@ -176,7 +176,7 @@ The values of `addend1`, `addend2`, and `sum` look suspicious.  These values are
 
 If you pause on a line of code, the **Scope** pane displays the local and global variables that are currently defined, along with the value of each variable.  It also displays closure variables, as applicable.  Double-click a variable value to edit it.  If you don't pause on a line of code, the **Scope** pane is empty.
 
-![The Scope pane](../media/javascript-sources-breakpoint-paused-scope.png)
+![The Scope pane](./index-images/javascript-sources-breakpoint-paused-scope.png)
 
 #### Method 2: Watch expressions
 
@@ -193,7 +193,7 @@ The **Watch** pane allows you to monitor the values of variables (such as `sum`)
 > [!NOTE]
 > In the following screenshot, the watch expression `typeof sum` is displayed in the **Watch** pane.  If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.
 
-![The Watch pane](../media/javascript-sources-breakpoint-paused-watch.png)
+![The Watch pane](./index-images/javascript-sources-breakpoint-paused-watch.png)
 
 As suspected, `sum` is being evaluated as a string, when it should be a number.  You now confirmed value type is the cause of the bug.
 
@@ -207,7 +207,7 @@ The **Console** allows you to view `console.log()` output.  You can also use the
 
 1. Press **Enter**.  DevTools evaluates the statement and prints `6`, which is the result you expect the demo to produce.
 
-   ![The Console tool, after evaluating parseInt(addend1) + parseInt(addend2)](../media/javascript-sources-breakpoint-paused-console.png)
+   ![The Console tool, after evaluating parseInt(addend1) + parseInt(addend2)](./index-images/javascript-sources-breakpoint-paused-console.png)
 
 
 <!-- ====================================================================== -->
@@ -221,9 +221,9 @@ We've identified a possible fix for the bug.  Next, edit the JavaScript code dir
 
 1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save your change.
 
-1. Click **Deactivate breakpoints** (![Deactivate breakpoints](../media/deactivate-breakpoints-button-icon.png)).  The breakpoint's icon changes to gray to indicate that the breakpoint is inactive.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
+1. Click **Deactivate breakpoints** (![Deactivate breakpoints](./index-images/deactivate-breakpoints-button-icon.png)).  The breakpoint's icon changes to gray to indicate that the breakpoint is inactive.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set. The next screenshot shows the results of the demo where the bug is fixed after updating `var sum` and deactivating the breakpoints.
 
-   ![Result of troubleshooting and fixing bug](../media/javascript-bug-fixed.png)
+   ![Result of troubleshooting and fixing bug](./index-images/javascript-bug-fixed.png)
 
 
 1. Try out the demo with different values.  The demo now calculates correctly.

@@ -66,7 +66,7 @@ Similarly, autocompletion keeps a history of the commands you previously typed. 
 
 Also, the **Console** also offers quite a few [utility methods](utilities.md) that make your life easier.  For example, `$_` always contains the result of the last expression you ran in the **Console**.
 
-![The $_ expression in the Console always contains the last result](../media/console-javascript-console-history.png)
+![The $_ expression in the Console always contains the last result](./console-javascript-images/console-javascript-console-history.png)
 
 
 <!-- ====================================================================== -->
@@ -74,11 +74,11 @@ Also, the **Console** also offers quite a few [utility methods](utilities.md) th
 
 By default, the **Console** only gives you one line to write your JavaScript expression.  You code runs when you press **Enter**. The one line limitation may frustrate you.  To work around the 1-line limitation, press **Shift+Enter** instead of **Enter**.  In the following example, the value displayed is the result of all the lines (statements) run in order:
 
-![Press Shift+Enter to write several lines of JavaScript.  The resulting value is output](../media/console-javascript-multiline.png)
+![Press Shift+Enter to write several lines of JavaScript.  The resulting value is output](./console-javascript-images/console-javascript-multiline.png)
 
 If you start a multi-line statement in the **Console**, the code block is automatically recognized and indented.  For example, if you start a block statement, by entering a curly brace, the next line is automatically indented:
 
-![The Console recognizes multiline expressions using curly braces and indents](../media/console-javascript-automatic-lineindent.png)
+![The Console recognizes multiline expressions using curly braces and indents](./console-javascript-images/console-javascript-automatic-lineindent.png)
 
 
 <!-- ====================================================================== -->
@@ -98,13 +98,13 @@ To get the last 50 issues that were filed on the [Microsoft Edge Developer Tools
    )).json();
    ```
 
-   ![Console displays the result of a top-level async fetch request](../media/console-javascript-top-level-await.png)
+   ![Console displays the result of a top-level async fetch request](./console-javascript-images/console-javascript-top-level-await.png)
 
    The 10 entries are hard to recognize, since a lot of information is displayed.
 
 1. Optionally, use the `console.table()` log method to only receive the information in which you're interested:
 
-   ![Displaying the last result in a human-readable format using 'console.table'](../media/console-javascript-filtered-with-table.png)
+   ![Displaying the last result in a human-readable format using 'console.table'](./console-javascript-images/console-javascript-filtered-with-table.png)
 
    To reuse the data returned from an expression, use the `copy()` utility method of the **Console**.
 

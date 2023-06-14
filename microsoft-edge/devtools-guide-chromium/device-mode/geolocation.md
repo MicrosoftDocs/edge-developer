@@ -39,7 +39,7 @@ If you are building a UI that changes depending on where the user is located, yo
    *  Click **Other** to enter custom longitude and latitude coordinates.
    *  Click **Location unavailable** to see how your site behaves when the user's location isn't available.
 
-   ![Selecting Tokyo from the Location list](../media/device-mode-console-sensors-geolocation-tokyo.png)
+   ![Selecting Tokyo from the Location list](./geolocation-images/device-mode-console-sensors-geolocation-tokyo.png)
 
 <!-- /web/fundamentals/native-hardware/user-location/index -->
 
