@@ -39,7 +39,7 @@ To check whether the page is usable with animations turned off:
 
 1. In the **Emulate CSS media feature prefers-reduced-motion** dropdown list, select **prefers-reduced-motion: reduced**.
 
-   ![Simulating reduced motion and the CSS that makes sure that smooth scrolling only happens when the user wants it](../media/a11y-testing-simulating-reduced-motion.msft.png)
+   ![Simulating reduced motion and the CSS that makes sure that smooth scrolling only happens when the user wants it](../media/a11y-testing-simulating-reduced-motion.png)
 
 1. In the webpage, click the blue menu items, such as **Horses** or **Alpacas**.  Now the webpage instantly scrolls to the selected section, rather than using the smooth-scrolling animation.
 

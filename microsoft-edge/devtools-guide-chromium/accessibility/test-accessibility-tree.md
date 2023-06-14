@@ -27,7 +27,7 @@ To explore using the Accessibility Tree:
 
 1. To the right of the **Styles** tab, select the **Accessibility** tab.  The **Accessibility Tree** for the element is displayed, and is expanded.
 
-   ![Donation form button in the Accessibility Tree tool](../media/a11y-testing-accessibility-tree.msft.png)
+   ![Donation form button in the Accessibility Tree tool](../media/a11y-testing-accessibility-tree.png)
 
 Any element in the tree that doesn't have a name, or has a role of `generic` (such as the `div` element) is a problem, because that element won't be available to keyboard users, or to users who are using assistive technology.
 
