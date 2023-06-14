@@ -287,11 +287,10 @@ Status:
 
 _new as of Microsoft Edge 114_
 
-Temporarily enables the JavaScript Profiler.
-<!-- todo: need text -->
+Temporarily enables the **JavaScript Profiler** tool (tab) in DevTools.  The **JavaScript Profiler** tool will be deprecated.  To record JavaScript CPU profiles, use the **Performance** tool instead.
 
 See also:
-* todo
+* [Get started analyzing runtime performance](../evaluate-performance/index.md) - **Performance** tool.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 116.
@@ -573,11 +572,12 @@ Status:
 
 _new as of Microsoft Edge 114_
 
-Enables the background page selector (e.g. for prerendering debugging).
+Enables the background page selector, such as for prerendering debugging.
 <!-- todo: need text -->
 
 See also:
-* todo
+* [Overview and timelines for migrating to Manifest V3](../../extensions-chromium/developer-guide/manifest-v3.md) - service workers instead of background pages, for Microsoft Edge extensions.
+* [chrome.runtime](https://developer.chrome.com/extensions/runtime) - retrieves the background page.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 116.
@@ -667,7 +667,7 @@ Emulates Microsoft-recommended hardware and network performance presets.
 <!-- todo: need text -->
 
 See also:
-*  todo
+* [Analyze runtime performance](../rendering-tools/index.md)
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 116.
@@ -679,11 +679,11 @@ Status:
 
 _new as of Microsoft Edge 114_
 
-Enables Crash Analyzer.
+Enables the **Crash Analyzer** tool.
 <!-- todo: need text -->
 
 See also:
-*  todo
+* [Debug JavaScript error stack traces by using the Crash Analyzer tool](../whats-new/2023/05/devtools-113.md#debug-javascript-error-stack-traces-by-using-the-crash-analyzer-tool) in _What's New in DevTools (Microsoft Edge 113)_.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 116.
@@ -699,7 +699,7 @@ Enables Adaptive CPU throttling.
 <!-- todo: need text -->
 
 See also:
-*  todo
+*  [Throttle the CPU while recording](../evaluate-performance/reference.md#throttle-the-cpu-while-recording) in _Performance features reference_.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 116.
