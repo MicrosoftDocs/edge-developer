@@ -27,15 +27,15 @@ Each method of the `console` object has a severity level attached to it.  The se
 
 To filter messages in the **Console**, use the **Log Level** dropdown menu.  You may toggle the state of each level.  To turn off each level, remove the checkmark next to each.
 
-![The dropdown menu filters Console messages using the log level](../media/console-filter-dropdown.msft.png)
+![The dropdown menu filters Console messages using the log level](../media/console-filter-dropdown.png)
 
 Since no filter is applied, the following figure displays dozens of messages.  Next, reduce and manage the number of messages.
 
-![No filter set means that you can display many console messages](../media/console-filter-displays-all.msft.png)
+![No filter set means that you can display many console messages](../media/console-filter-displays-all.png)
 
 To hide all the Warning-level messages to cut down on the noise, click the **Log Levels** dropdown and then clear the `Warnings` level.
 
-![Hiding all the warning level messages in the Console to filter much of the noise](../media/console-filter-hide-warning.msft.png)
+![Hiding all the warning level messages in the Console to filter much of the noise](../media/console-filter-hide-warning.png)
 
 
 <!-- ====================================================================== -->
@@ -43,7 +43,7 @@ To hide all the Warning-level messages to cut down on the noise, click the **Log
 
 To see more detail, to filter messages using text, type a string into the **Filter** text box.  For example, type **block** into the box to only display your messages about the browser blocking resources from loading.
 
-![Displays the messages that contain the word 'block'](../media/console-filter-text.msft.png)
+![Displays the messages that contain the word 'block'](../media/console-filter-text.png)
 
 
 <!-- ====================================================================== -->
@@ -51,7 +51,7 @@ To see more detail, to filter messages using text, type a string into the **Filt
 
 [Regular expressions](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) are a powerful way to filter messages.  For example, type `/^Tracking/` into the **Filter** text box to only display messages that start with the term `Tracking`.  If you're unfamiliar with regular expressions, [RegExr.com](https://regexr.com) is a great resource to learn about using regular expressions.
 
-![Displaying the messages that start with the word 'filter', by using a regular expression in the Filter text box](../media/console-filter-regex.msft.png)
+![Displaying the messages that start with the word 'filter', by using a regular expression in the Filter text box](../media/console-filter-regex.png)
 
 
 <!-- ====================================================================== -->
@@ -61,20 +61,20 @@ You can define what kind of messages you want to display, and where each message
 
 1. Click the **Show console sidebar** button:
 
-   ![To open the Sidebar, click the 'Show console sidebar' icon](../media/console-filter-sidebar-icon.msft.png)
+   ![To open the Sidebar, click the 'Show console sidebar' icon](../media/console-filter-sidebar-icon.png)
 
    When the **Sidebar** is open, you can display the overall number of messages and where each originated.  The options are `All messages`, `User Messages`, `Errors`, `Warnings`, `Info`, and `Verbose`.
 
-   ![The Console Sidebar displays the different sources where messages originated from](../media/console-filter-sidebar-open.msft.png)
+   ![The Console Sidebar displays the different sources where messages originated from](../media/console-filter-sidebar-open.png)
 
 1. Select any of the options to display only the messages of that type.  For example, to display user messages, click the user messages option to display less noise.
 
-   ![Displaying only user messages in the Console, by using the filter in the Sidebar](../media/console-filter-select-user-messages.msft.png)
+   ![Displaying only user messages in the Console, by using the filter in the Sidebar](../media/console-filter-select-user-messages.png)
 
 1. To filter more and expand the message category, click the triangle icon next to the message category.
 
-   ![Click the arrow icon to expand a message category](../media/console-filter-sidebar-open-arrow.msft.png)
+   ![Click the arrow icon to expand a message category](../media/console-filter-sidebar-open-arrow.png)
 
 1. Individual sources are revealed and listed.  Select a source, to display only messages that originate from that source:
 
-   ![Select any of the revealed options to filter messages by message type and source](../media/console-filter-user-message-by-source.msft.png)
+   ![Select any of the revealed options to filter messages by message type and source](../media/console-filter-user-message-by-source.png)

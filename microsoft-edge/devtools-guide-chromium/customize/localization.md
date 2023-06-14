@@ -28,7 +28,7 @@ Your Developer Tools matches your browser language by default, if it is one of t
 
 The DevTools UI in Chinese:
 
-![The DevTools UI in Chinese](../media/localization-zh.msft.png)
+![The DevTools UI in Chinese](../media/localization-zh.png)
 
 
 <!-- ====================================================================== -->

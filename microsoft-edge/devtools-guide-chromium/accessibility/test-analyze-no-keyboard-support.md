@@ -25,7 +25,7 @@ To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard 
 
 1. Hover over the **50**, **100**, and **200** donation buttons.  The Inspect tool appears on the webpage, as an overlay.  The **keyboard-focusable** row of the Inspect overlay shows that none of the donation amount buttons are keyboard-accessible, as indicated by a gray circle with diagonal line.  The buttons have no name, and have a role of `generic` because they are `div` elements, which means that the buttons aren't accessible to assistive technology.
 
-   ![Inspecting the buttons of the form shows that they aren't keyboard-accessible](../media/a11y-testing-donation-button-info.msft.png)
+   ![Inspecting the buttons of the form shows that they aren't keyboard-accessible](../media/a11y-testing-donation-button-info.png)
 
 1. When the **Inspect** tool is active, on the webpage, select the **Other** input text box, above the **Donate** button.  The **Elements** tool opens, showing the DOM tree for the webpage.  The element `<input id="freedonation" class="smallinput">` is selected.
 
@@ -52,11 +52,11 @@ To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard 
 
 1. With the element `<input id="freedonation" class="smallinput">` still selected in the DOM tree, select the **Event Listeners** tab to the right of the **Styles** tab, and then expand the `click` event listener.
 
-   ![The Event listeners tool showing you where the JavaScript is that makes the form work](../media/a11y-testing-event-handlers-on-button.msft.png)
+   ![The Event listeners tool showing you where the JavaScript is that makes the form work](../media/a11y-testing-event-handlers-on-button.png)
 
 1. Select the `buttons.js:18` link.  The **Sources** tool opens, showing the applied JavaScript.
 
-   ![The JavaScript responsible for the donation form's functionality, shown in the Sources tool](../media/a11y-testing-form-handling-javascript.msft.png)
+   ![The JavaScript responsible for the donation form's functionality, shown in the Sources tool](../media/a11y-testing-form-handling-javascript.png)
 
    Here's a code listing of the applied JavaScript:
 

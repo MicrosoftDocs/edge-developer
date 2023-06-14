@@ -33,13 +33,13 @@ The following browsing data is imported:
 
 Browsing notification and prompt to import data and preferences:
 
-![Browsing notification and prompt to import data and preferences](../media/neededge-dialog1.msft.png)
+![Browsing notification and prompt to import data and preferences](../media/neededge-dialog1.png)
 
 If the user doesn't consent by selecting the **Always bring over my browsing data and preferences from Internet Explorer** checkbox, the user may choose **Continue browsing** to continue the browsing session.
 
 Finally, a website incompatibility banner is displayed under the address bar for each redirection.  An example of a website incompatibility banner is displayed in following figure.
 
-![Notification about modern sites and prompt to set Microsoft Edge as default browser or explore Microsoft Edge](../media/neededge-banner.msft.png)
+![Notification about modern sites and prompt to set Microsoft Edge as default browser or explore Microsoft Edge](../media/neededge-banner.png)
 
 The website incompatibility banner provides the following details to the user.
 
