@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 06/02/2023
+ms.date: 06/14/2023
 ---
 # Build PWA-driven widgets
 
@@ -32,7 +32,7 @@ Widgets are experimentally supported starting with Microsoft Edge 108.
 
 To enable local development of widgets:
 
-1. Install WinAppSDK 1.2 to enable local development of widgets.
+1. Install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
 
 1. In Microsoft Edge, go to `edge://flags`.
 
