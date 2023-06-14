@@ -43,9 +43,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## The Issues tool warns you when CSS properties trigger reflow
+## The Issues tool and Styles pane warn about CSS properties that trigger reflow
 
-<!-- Subtitle: The Styles pane shows a wavy underline on CSS properties that trigger reflow, to help you limit reflow and avoid blocking user interaction.  Reflow is when the browser re-calculates the positions and geometries of elements in the page. -->
+<!-- Subtitle: The Styles pane shows a wavy underline on CSS properties that trigger reflow, and the Issues tool warns about such properties. This notification helps limit re-calculating positions and geometries of elements, to avoid blocking user interaction. -->
 
 <!-- Reviewer: Vidal Guillermo Diazleal Ortega -->
 
