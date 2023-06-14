@@ -43,26 +43,27 @@ See also:
 
 
 <!-- ====================================================================== -->
-## The Issues tool and Styles pane warn about CSS properties that trigger reflow
+## The Issues tool and Styles pane warn about CSS properties that trigger Layout
 
-<!-- Subtitle: The Styles pane shows a wavy underline on CSS properties that trigger reflow, and the Issues tool warns about such properties. This notification helps limit re-calculating positions and geometries of elements, to avoid blocking user interaction. -->
+<!-- Subtitle: The Styles pane shows a wavy underline on CSS properties that trigger Layout, and the Issues tool warns about such properties. This warning helps limit re-calculating positions and geometries of elements, to avoid blocking user interaction. -->
 
 <!-- Reviewer: Vidal Guillermo Diazleal Ortega -->
 
-DevTools now detects and warns about CSS properties that can cause reflow-based performance issues when using CSS animation in the webpage, such as moving text.  _Reflow_ is the web browser process for recalculating the positions and geometries of elements in the document, to re-render part or all of the document.  Because reflow is a user-blocking operation in the browser, we recommend limiting reflow as much as possible, to keep your web content smooth and responsive to interaction.
+DevTools now detects and warns about CSS properties that can cause Layout-based performance issues when using CSS animation in the webpage, such as moving text.  _Layout_ is the web browser process for recalculating the positions and geometries of elements in the document, to re-render part or all of the document.  Because Layout is a user-blocking operation in the browser, we recommend limiting Layout as much as possible, to keep your web content smooth and responsive to interaction.
 
-Some CSS properties don't trigger reflow, because they run on the compositor thread in the browser - for example, the [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity) properties.
+Some CSS properties don't trigger a Layout operation, because they run on the compositor thread in the browser, such as [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity).  However, even CSS properties that don't trigger Layout can trigger a Paint operation which, when used in combination with CSS animations, can lead to a negative performance impact.
 
-In the **Styles** pane in the **Elements** tool, a wavy underline and tooltip has been added on CSS properties that trigger reflow.  To view the issue in a tooltip, hover over the wavy underline:
 
-![CSS reflow issue in the Styles pane](./devtools-114-images/css-reflow-issue-styles-pane.png)
+In the **Styles** pane in the **Elements** tool, a wavy underline and tooltip has been added on CSS properties that trigger Layout or Paint operations.  To view the issue in a tooltip, hover over the wavy underline:
+
+![CSS Layout issue in the Styles pane](./devtools-114-images/css-reflow-issue-styles-pane.png)
 
 In the **Issues** tool, in the **Performance** category, a new kind of issue is reported, such as "Changes to this property will trigger: 'Layout', which can impact performance when used inside @Keyframes."  When you're using the **Styles** pane, to open the issue in the **Issues** tool, **Shift**+click the wavy underline on such a property, or right-click the wavy underline and then select **View issues**.  The **Issues** tool opens in the Drawer at the bottom of DevTools:
 
-![CSS reflow issue in the Issues tool](./devtools-114-images/css-reflow-issue-issues-tool.png)
+![CSS Layout issue in the Issues tool](./devtools-114-images/css-reflow-issue-issues-tool.png)
 
 See also:
-* [Minimizing browser reflow | PageSpeed Insights](https://developers.google.com/speed/docs/insights/browser-reflow)
+* [Minimizing browser reflow | PageSpeed Insights](https://developers.google.com/speed/docs/insights/browser-reflow) - _reflow_ includes Paint, Composite, and Layout operations.
 * [Open issues from the DOM tree](../../../issues/index.md#open-issues-from-the-dom-tree) in _Find and fix problems using the Issues tool_.
 * [Using CSS animations](https://developer.mozilla.org/docs/Web/CSS/CSS_Animations/Using_CSS_animations), at MDN.
 * [Inspect and modify CSS animation effects](../../../inspect-styles/animations.md)
