@@ -53,12 +53,23 @@ Some CSS properties don't trigger a Layout operation, because they run on the co
 In the **Styles** pane in the **Elements** tool, a wavy underline and tooltip has been added on CSS properties that trigger Layout or Paint operations.  To view the issue in a tooltip, hover over the wavy underline:
 
 ![CSS Layout issue in the Styles pane](./devtools-114-images/css-reflow-issue-styles-pane.png)
-<!-- todo: re-create -->
+
+
+<!-- todo: remove old -->
+old png, to remove:
+
+![CSS Layout issue in the Styles pane](./devtools-114-images/css-reflow-issue-styles-pane-old.png)
+<!-- todo: remove old -->
 
 In the **Issues** tool, in the **Performance** category, a new kind of issue is reported, such as "Changes to this property will trigger: 'Layout', which can impact performance when used inside @Keyframes."  When you're using the **Styles** pane, to open the issue in the **Issues** tool, **Shift**+click the wavy underline on such a property, or right-click the wavy underline and then select **View issues**.  The **Issues** tool opens in the Drawer at the bottom of DevTools:
 
-![CSS Layout issue in the Issues tool](./devtools-114-images/css-reflow-issue-issues-tool.png)
-<!-- todo: re-create -->
+![old - CSS Layout issue in the Issues tool](./devtools-114-images/css-reflow-issue-issues-tool.png)
+
+<!-- todo: remove old -->
+old png, to remove:
+
+![old - CSS Layout issue in the Issues tool](./devtools-114-images/css-reflow-issue-issues-tool-old.png)
+<!-- todo: remove old -->
 
 See also:
 * [Minimizing browser reflow | PageSpeed Insights](https://developers.google.com/speed/docs/insights/browser-reflow) - _reflow_ includes Paint, Composite, and Layout operations.
