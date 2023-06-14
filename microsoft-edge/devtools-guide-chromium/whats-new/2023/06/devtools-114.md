@@ -53,7 +53,7 @@ DevTools now detects and warns about properties that can cause performance issue
 *  In the **Styles** pane in the **Elements** tool, a wavy underline and tooltip has been added on CSS properties that trigger reflow.
 *  In the **Issues** tool, in the **Performance** category, a new kind of issue is reported, such as "Changes to this property will trigger: 'Layout', which can impact performance when used inside @Keyframes."
 
-Because reflow is a user-blocking operation in the browser, for performance, we recommend limiting reflow as much as possible, to keep your web content smooth and responsive to interaction.  Reflow is the web browser process for recalculating the positions and geometries of elements in the document, to re-render part or all of the document.  Some CSS properties don't trigger reflow, because they run on the compositor thread in the browser - for example, the [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity) properties.
+Because reflow is a user-blocking operation in the browser, for performance, we recommend limiting reflow as much as possible, to keep your web content smooth and responsive to interaction.  _Reflow_ is the web browser process for recalculating the positions and geometries of elements in the document, to re-render part or all of the document.  Some CSS properties don't trigger reflow, because they run on the compositor thread in the browser - for example, the [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity) properties.
 
 In the **Styles** pane, to view the issue in a tooltip, hover over the wavy underline:
 
