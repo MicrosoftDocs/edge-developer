@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 114)
-description: "Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger reflow. Memory tool loads enhanced traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS Overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more."
+description: "Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger Layout. Memory tool loads enhanced traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS Overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -24,13 +24,11 @@ ms.date: 06/14/2023
 
 <!-- Subtitle: Instead of selecting individual Recalculate Style events when recording a profile, the Selector Stats tab now aggregates data across all Recalculate Style events-->
 
-<!-- Reviewer: Gavin Xu -->
-
 Microsoft Edge 109 added the **Selector Stats** feature to the **Performance** tool.  You can use the data from **Selector Stats** to understand which CSS selectors are taking the most time during **Recalculate Style** events in the **Performance** tool and are contributing to slow performance.
 
 In Microsoft Edge 114, you no longer need to select an individual **Recalculate Style** event to see the selectors that were recalculated during that event.  Instead, the **Selector Stats** tab in the bottom pane of the **Performance** tool automatically aggregates the data across all of the **Recalculate Style** events in the recorded profile.  As you zoom into specific parts of the profile, the **Selector Stats** tab updates to only show data from the portion of the profile that you are currently analyzing.
 
-Also, a new **Style Sheet** column has been added to the **Selector Stats** tab.  The **Style Sheet** column contains links for each selector back to the stylesheet where the selectors are defined.
+Also, a new **Style Sheet** column has been added to the **Selector Stats** tab.  The **Style Sheet** column contains a link for each selector back to the stylesheet where the selector is defined.
 
 ![Selector Stats are now aggregated across Recalculate Style events within the currently displayed section of the recorded profile](./devtools-114-images/aggregate-selector-stats.png)
 
@@ -47,8 +45,6 @@ See also:
 
 <!-- Subtitle: The Styles pane shows a wavy underline on CSS properties that trigger Layout, and the Issues tool warns about such properties. This warning helps limit re-calculating positions and geometries of elements, to avoid blocking user interaction. -->
 
-<!-- Reviewer: Vidal Guillermo Diazleal Ortega -->
-
 DevTools now detects and warns about CSS properties that can cause Layout-based performance issues when using CSS animation in the webpage, such as moving text.  _Layout_ is the web browser process for recalculating the positions and geometries of elements in the document, to re-render part or all of the document.  Because Layout is a user-blocking operation in the browser, we recommend limiting Layout as much as possible, to keep your web content smooth and responsive to interaction.
 
 Some CSS properties don't trigger a Layout operation, because they run on the compositor thread in the browser, such as [transform](https://developer.mozilla.org/docs/Web/CSS/transform) and [opacity](https://developer.mozilla.org/docs/Web/CSS/opacity).  However, even CSS properties that don't trigger Layout can trigger a Paint operation which, when used in combination with CSS animations, can lead to a negative performance impact.
@@ -57,10 +53,12 @@ Some CSS properties don't trigger a Layout operation, because they run on the co
 In the **Styles** pane in the **Elements** tool, a wavy underline and tooltip has been added on CSS properties that trigger Layout or Paint operations.  To view the issue in a tooltip, hover over the wavy underline:
 
 ![CSS Layout issue in the Styles pane](./devtools-114-images/css-reflow-issue-styles-pane.png)
+<!-- todo: re-create -->
 
 In the **Issues** tool, in the **Performance** category, a new kind of issue is reported, such as "Changes to this property will trigger: 'Layout', which can impact performance when used inside @Keyframes."  When you're using the **Styles** pane, to open the issue in the **Issues** tool, **Shift**+click the wavy underline on such a property, or right-click the wavy underline and then select **View issues**.  The **Issues** tool opens in the Drawer at the bottom of DevTools:
 
 ![CSS Layout issue in the Issues tool](./devtools-114-images/css-reflow-issue-issues-tool.png)
+<!-- todo: re-create -->
 
 See also:
 * [Minimizing browser reflow | PageSpeed Insights](https://developers.google.com/speed/docs/insights/browser-reflow) - _reflow_ includes Paint, Composite, and Layout operations.
@@ -75,11 +73,9 @@ See also:
 
 <!-- Subtitle: In previous versions of Microsoft Edge, loading enhanced traces larger than 1 GB produced an error. In Microsoft Edge 114, this issue has been fixed. -->
 
-<!-- Reviewer: Rob Paveza -->
-
 In previous versions of Microsoft Edge, loading an enhanced trace larger than 1 GB failed.  In Microsoft Edge 114, this issue has been fixed.  You can now successfully load enhanced traces of any size.
 
-Enhanced traces are an experimental feature in Microsoft Edge that allow you to export and import entire DevTools instances, saved as `.devtools` files, with as much state as possible preserved across the **Memory**, **Performance**, **Elements**, **Console**, and **Sources** tools.  A `.devtools` file opens in a separate DevTools instance, and loads the following trace information, while retaining references to source code:
+Enhanced traces is an experimental feature in Microsoft Edge that allows you to export and import entire DevTools instances, saved as `.devtools` files, with as much state as possible preserved across the **Memory**, **Performance**, **Elements**, **Console**, and **Sources** tools.  A `.devtools` file opens in a separate DevTools instance, and loads the following trace information, while retaining references to source code:
 * DOM snapshots.
 * Console messages.
 * Heap snapshots.
@@ -97,11 +93,9 @@ See also:
 
 <!-- Subtitle: In previous versions of Microsoft Edge, the Memory tool incorrectly reported lots of new and deleted objects when comparing two heap snapshots. This issue has now been fixed.-->
 
-<!-- Reviewer: Seth Brenith -->
-
 In the **Memory** tool, you can take multiple heap snapshots and compare them to find differences in the objects in the heap.  In previous versions of Microsoft Edge, the **Memory** tool reported too many new and deleted objects when comparing heap snapshots, because object IDs weren't being tracked consistently by the tool.  Actually, many of these are likely the same objects.
 
-In Microsoft Edge 114, this issue has been fixed, by ensuring that consistent object IDs are tracked across multiple snapshots:
+In Microsoft Edge 114, this issue has been fixed, by ensuring that consistent object IDs are tracked across multiple snapshots.
 
 ![Comparing two heap snapshots in Microsoft Edge 114](./devtools-114-images/snapshot-comparison-114.png)
 
@@ -116,11 +110,9 @@ See also:
 
 <!-- Subtitle: The CSS Overview tool is now easier to use with assistive technology such as screen readers. -->
 
-<!-- Reviewer: Yanling Wang -->
+In Microsoft Edge 112, the **CSS Overview** tool was updated to display a list of non-simple selectors when taking an overview snapshot of a webpage's CSS.  In Microsoft Edge 114, the **Non-simple selectors** section of the **CSS Overview** tool is now easier to use with assistive technology, such as screen readers.
 
-In Microsoft Edge 112, the **CSS Overview** tool was updated to display a list of non-simple selectors when taking an overview snapshot of your webpage's CSS.  In Microsoft Edge 114, the **Non-simple selectors** section of the **CSS Overview** tool is now easier to use with assistive technology, such as screen readers.
-
-When you click a selector, or navigate to a selector and then press `Enter`, screen readers now announce "Copied CSS selector":
+When you click a selector, or navigate to a selector and then press **Enter**, screen readers now announce "Copied CSS selector":
 
 ![Navigating the CSS Overview tool with the keyboard](./devtools-114-images/non-simple-selectors-css-overview-a11y.png)
 
@@ -134,15 +126,13 @@ See also:
 
 <!-- Subtitle: Hovering over icons in high contrast mode in the VS Code extension now renders with sufficient contrast. -->
 
-<!-- Reviewer: Vidal Guillermo Diazleal Ortega -->
-
 In previous versions of the Microsoft Edge DevTools extension for Visual Studio Code, in high contrast mode, hovering over icons within the tools didn't render the UI controls with sufficient contrast.  This issue has been fixed.
 
-In the **Styles** pane in the **Elements** tool, checkboxes for applying styles to elements now render correctly in high contrast mode:
+For example, in the **Styles** pane in the **Elements** tool, checkboxes for applying styles to elements now render correctly in high contrast mode:
 
 ![Hovering over checkboxes in the Styles pane in high contrast mode in the VS Code extension](./devtools-114-images/vs-code-hc-mode-styles-pane.png)
 
-In the **Console** tool, icons such as **Show console sidebar** now render correctly in high contrast mode:
+Also, in the **Console** tool, icons such as **Show console sidebar** now render correctly in high contrast mode:
 
 ![Hovering over the Show console sidebar button in high contrast mode in the VS Code extension](./devtools-114-images/vs-code-hc-mode-console-tool.png)
 
