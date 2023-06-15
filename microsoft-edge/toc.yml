@@ -984,6 +984,10 @@
               href: extensions-chromium/publish/reply-user-reviews.md
               displayName: Respond to user reviews
 
+            - name: Sidebar Extensions
+              href: extensions-chromium/publish/side-bar.md
+              displayName: Sidebar Extensions
+
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
 
