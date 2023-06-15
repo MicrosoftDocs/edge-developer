@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/14/2023
+ms.date: 06/15/2023
 ---
 # What's New in DevTools (Microsoft Edge 114)
 
@@ -116,6 +116,7 @@ When you click a selector, or navigate to a selector and then press **Enter**, s
 See also:
 * [CSS Overview tool displays non-simple selectors for quick performance gains](../04/devtools-112.md#css-overview-tool-displays-non-simple-selectors-for-quick-performance-gains) in _What's New in DevTools (Microsoft Edge 112)_.
 * [Non-simple selectors](../../../css/css-overview-tool.md#non-simple-selectors) in _Optimize CSS styles with the CSS Overview tool_.
+* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
 <!-- ====================================================================== -->
