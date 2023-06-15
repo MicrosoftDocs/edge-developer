@@ -31,11 +31,11 @@ As an example, on the demo page, the blue links of the sidebar navigation menu h
 
 1. In the rendered webpage, hover over the blue **Cats** link of the sidebar navigation menu.  The **Inspect** tool's information overlay appears.  In the **Accessibility** section of the information overlay, a green checkmark appears on the **Contrast** row, indicating that this element has enough contrast of text color versus background color.
 
-   ![The menu items have enough contrast, as shown in the Inspect tool](../media/a11y-testing-enough-contrast.msft.png)
+   ![The menu items have enough contrast, as shown in the Inspect tool](../media/a11y-testing-enough-contrast.png)
 
 1. In the rendered webpage, in the **Donation Status** section, hover over the **Dogs** link.  The **Inspect** tool's information overlay shows an orange exclamation point on the **Contrast** row, indicating that this element doesn't have enough contrast of text versus background colors.
 
-   ![An element that doesn't have enough contrast, as shown by the warning in the Inspect tool](../media/a11y-testing-not-enough-contrast.msft.png)
+   ![An element that doesn't have enough contrast, as shown by the warning in the Inspect tool](../media/a11y-testing-not-enough-contrast.png)
 
 
 <!-- ====================================================================== -->

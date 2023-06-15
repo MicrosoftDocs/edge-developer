@@ -19,7 +19,7 @@ To change where DevTools is placed within the browser window:
    *  **Dock to bottom** (![The 'Dock to bottom' icon](../media/dock-to-bottom-icon.png))
    *  **Dock to right** (![The 'Dock to right' icon](../media/dock-to-right-icon.png))
 
-![the Dock side menu in DevTools](../media/devtools-intro-docking-menu.msft.png)
+![the Dock side menu in DevTools](../media/devtools-intro-docking-menu.png)
 
 **Dock to left** or **Dock to right** keeps DevTools side-by-side with your webpage, and is excellent when you [Emulate mobile devices (Device Emulation)](../device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
 
@@ -29,7 +29,7 @@ To change where DevTools is placed within the browser window:
 
 Undock DevTools into its own, separate window, when you want to work with several monitors, or if you need to work on a full-screen app and want a lot of space for the DevTools UI.  The following image shows DevTools undocked into its own, dedicated window:
 
-![DevTools undocked into a separate window](../media/devtools-intro-docking-own-window.msft.png)
+![DevTools undocked into a separate window](../media/devtools-intro-docking-own-window.png)
 
 Since WebTools now has its own dedicated window, the WebPage that's being designed now occupies an entire browser window:
 
@@ -44,7 +44,7 @@ See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](plac
 
 The following image shows DevTools docked in the left side of the browser window:
 
-![DevTools docked to the left](../media/devtools-intro-docking-left.msft.png)
+![DevTools docked to the left](../media/devtools-intro-docking-left.png)
 
 
 <!-- ====================================================================== -->
@@ -52,7 +52,7 @@ The following image shows DevTools docked in the left side of the browser window
 
 **Dock to bottom** helps you when you don't have enough horizontal display space, or you want to debug long text in the DOM or **Console**.  The following image shows DevTools in the bottom of the browser window:
 
-![DevTools docked to the bottom](../media/devtools-intro-docking-bottom.msft.png)
+![DevTools docked to the bottom](../media/devtools-intro-docking-bottom.png)
 
 
 <!-- ====================================================================== -->
@@ -60,7 +60,7 @@ The following image shows DevTools docked in the left side of the browser window
 
 The following image shows DevTools in the right side the browser window, which is the default location:
 
-![DevTools docked to the right](../media/devtools-intro-docking-right.msft.png)
+![DevTools docked to the right](../media/devtools-intro-docking-right.png)
 
 
 <!-- ====================================================================== -->

@@ -43,7 +43,7 @@ To create an app reservation:
 
 1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, select **Product management** > **Product Identity**.
 
-    ![Copy your publisher information from Microsoft Partner Center](../media/windows-partner-center-publisher-info.msft.png)
+    ![Copy your publisher information from Microsoft Partner Center](../media/windows-partner-center-publisher-info.png)
     <!-- lightbox justified because large detailed image -->
 
 1.  Copy and save the following values.
@@ -84,7 +84,7 @@ To submit your app to the Microsoft Store:
 1.  Select your app.
 1.  Click the **Start your submission** button.
 
-    ![Start a new app submission on Microsoft Partner Center](../media/windows-partner-center-start-submission.msft.png)
+    ![Start a new app submission on Microsoft Partner Center](../media/windows-partner-center-start-submission.png)
 
 1.  When you're prompted, provide information about your app, such as pricing and age rating.
 
