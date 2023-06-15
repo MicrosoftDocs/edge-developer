@@ -18,6 +18,10 @@ The sidebar API enables developers to display their own UI on the web. Hence, de
 
 ![Sidebar Screenshot](./side-bar-images/sidebar-screenshot.png)
 
+
+![Sidebar Screenshot](./
+
+
 ## Features of Sidebar API
 * Sidebar will have access to all the Microsoft Edge Extension APIs.
 
@@ -27,8 +31,8 @@ The sidebar API enables developers to display their own UI on the web. Hence, de
 
 This article contains details of enabling sidebar for your extension. However, for complete details of how to create an extension, see:
 
-* [Create an extension tutorial, part 1](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension?tabs=v3)
-* [Create an extension tutorial, part 2](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/part2-content-scripts?tabs=v3)
+* [Create an extension tutorial, part 1](../getting-started/part1-simple-extension.md)
+* [Create an extension tutorial, part 2](../getting-started/part2-content-scripts.md)
 
 Already existing extensions can also enable sidebar in their code by using this article.
 
