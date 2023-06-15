@@ -5,9 +5,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/07/2021
+ms.date: 06/15/2023
 ---
 # Supported APIs for Microsoft Edge extensions
+
+<!-- todo: add the API -->
 
 When building extensions for the Microsoft Edge browser, you can use the following APIs.
 

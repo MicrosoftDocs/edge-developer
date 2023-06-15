@@ -5,9 +5,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/19/2021
+ms.date: 06/15/2023
 ---
 # Released features for Microsoft Edge Add-ons
+
+<!-- todo: add Sidebar -->
 
 The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
 

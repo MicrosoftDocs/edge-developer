@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/17/2021
+ms.date: 06/15/2023
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -21,6 +21,8 @@ ms.date: 03/17/2021
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Declare API permissions in extension manifests
+
+<!-- todo: Add the permission -->
 
 To use most of the `chrome.*` APIs, your extension must declare its intent in the `permissions` fields of the manifest.  An extension can declare permissions using a permission string from the table that follows, or use a pattern to match similar strings.  Permissions help to constrain your extension if it gets compromised by malware.  Some permissions are displayed to users for their consent before installation of the extension, or at runtime, as needed; these are Permission Warnings.
 
