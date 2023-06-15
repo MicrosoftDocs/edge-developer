@@ -54,7 +54,7 @@ To change the trace type:
 
 1. Open DevTools by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, in the upper right, click **Settings** (![Settings button](../media/settings-button-icon.msft.png)).  **Settings** opens, with the **Preferences** page selected.
+1. In DevTools, in the upper right, click **Settings** (![Settings button](../media/settings-button-icon.png)).  **Settings** opens, with the **Preferences** page selected.
 
 1. In the **Persistence** section of the **Preferences** page, select the **Export enhanced performance and memory traces** checkbox:
 
