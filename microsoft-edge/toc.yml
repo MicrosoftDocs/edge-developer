@@ -1067,8 +1067,11 @@
             - name: Define icons and a theme color
               href: progressive-web-apps-chromium/how-to/icon-theme-color.md
 
-            - name: Re-engage users with badges, notifications, and push messages
+            - name: Re-engage users with badges and notifications
               href: progressive-web-apps-chromium/how-to/notifications-badges.md
+
+            - name: Re-engage users with push messages
+              href: progressive-web-apps-chromium/how-to/push.md
 
             - name: Synchronize and update in the background
               href: progressive-web-apps-chromium/how-to/background-syncs.md
