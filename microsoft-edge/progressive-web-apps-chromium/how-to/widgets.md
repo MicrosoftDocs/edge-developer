@@ -36,21 +36,21 @@ To enable local development of widgets:
 
 1. In Microsoft Edge, go to `edge://flags`.
 
-1. In the **Search flags** text field, type **Web App widgets**, and in the **Web App widgets** dropdown menu, select **Enabled**.
+1. In the **Search flags** text box, type **Web App widgets**, and then in the **Web App widgets** dropdown menu, select **Enabled**:
 
    ![Enabling the Web App widgets flag in the edge://flags page](../media/widgets-flag.png)
 
-1. Next, use the **Search flags** text field again, type **Experimental Web Platform Features**, and in the **Experimental Web Platform Features** dropdown menu, select **Enabled**.
+1. In the **Search flags** text box, this time type **Experimental Web Platform Features**, and then in the **Experimental Web Platform Features** dropdown menu, select **Enabled**:
 
    ![Enabling the Experimental Web Platform Features flag in the edge://flags page](../media/experimental-features-flag.png)
 
-1. Click the **Restart** button which appears in the lower right.
+1. Click the **Restart** button, which appears in the lower right.
 
 #### Enable widgets for your users
 
 To enable widget support in Microsoft Edge for users of your production PWA, enroll your site in the [Web App Widgets](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-widgets/registration/) origin trial.
 
-To learn more about origin trials, see [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
+To learn more about origin trials, see [Enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial) in _Experimental features and origin trials_.
 
 
 <!-- ====================================================================== -->
