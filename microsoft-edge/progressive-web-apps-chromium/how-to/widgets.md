@@ -30,7 +30,7 @@ Widgets are experimentally supported starting with Microsoft Edge 108.
 
 #### Enable local development of widgets
 
-To enable local development of widgets:
+To enable developing widgets on your local machine:
 
 1. Install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
 
