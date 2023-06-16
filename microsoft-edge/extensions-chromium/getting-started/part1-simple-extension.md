@@ -69,7 +69,7 @@ The directories of your project should be similar to the following structure:
 
 ```shell
 └── part1
-    ├── _manifest.json
+    ├── manifest.json
     └── icons
         ├── nasapod16x16.png
         ├── nasapod32x32.png
@@ -141,7 +141,7 @@ Ensure that you add the image file `images/stars.jpeg` to the images folder.  Th
 
 ```shell
 └── part1
-    ├── _manifest.json
+    ├── manifest.json
     ├── icons
     │   ├── nasapod16x16.png
     │   ├── nasapod32x32.png
