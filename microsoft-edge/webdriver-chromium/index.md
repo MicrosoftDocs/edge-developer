@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 06/08/2023
+ms.date: 06/15/2023
 ---
 # Use WebDriver to automate Microsoft Edge
 
@@ -46,29 +46,23 @@ The following sections describe how to get started with WebDriver for Microsoft 
 
 
 <!-- ====================================================================== -->
-## Install both a browser driver and a WebDriver framework
-
-You must install both a browser driver (Microsoft Edge WebDriver), and a WebDriver framework (such as Selenium WebDriver).  These are separate components.
-
-If you're using the Microsoft Edge WebDriver template that's provided with Visual Studio, which creates a simple test project:  After Microsoft Edge WebDriver is downloaded and available on the PATH, and the WebDriver framework (such as the Selenium.WebDriver NuGet package) has been added to the project, then the example test that navigates to Bing should complete successfully.
-
-
-<!-- ====================================================================== -->
 ## Download Microsoft Edge WebDriver
 
 To begin writing automated tests, make sure the Microsoft Edge WebDriver version you install matches your browser version, as follows:
 
-1.  Go to `edge://settings/help` and note your version of Microsoft Edge.
+1.  Go to `edge://settings/help` and note your version of Microsoft Edge:
 
     ![The build number for Microsoft Edge on April 15, 2021](media/microsoft-edge-version.msft.png)
 
 1.  Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/).
 
-1.  In the **Get the latest version** section of the page, select a platform in the channel that matches your version number of Microsoft Edge.
+1.  In the **Get the latest version** section of the page, select a platform in the channel that matches your version number of Microsoft Edge:
 
     ![The `Get the latest version` section of the Microsoft Edge WebDriver webpage](media/microsoft-edge-driver-install.msft.png)
 
 1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
+
+You must install both a browser driver (Microsoft Edge WebDriver), and a WebDriver testing framework (such as Selenium WebDriver), as described in [Choose a WebDriver testing framework](#choose-a-webdriver-testing-framework) below.  These are separate components.
 
 
 <!-- ====================================================================== -->
@@ -78,7 +72,7 @@ After downloading Microsoft Edge WebDriver, the last component you must download
 
 Microsoft Edge WebDriver can be used with any WebDriver framework.  This article provides instructions for using the Selenium WebDriver framework, but you can use any library, framework, and programming language that supports WebDriver.
 
-Selenium WebDriver is one popular implementation of a WebDriver framework.  Selenium is a cross-browser automation library that's language-agnostic and test-framework agnostic.  This article uses Selenium WebDriver only as an illustrative example, and because it fulfills most users' needs.  If you use Selenium, you must use Selenium 4; Selenium 3 is no longer supported.
+Selenium WebDriver is one popular implementation of a WebDriver framework.  Selenium is a cross-browser automation library that's language-agnostic and test-framework agnostic.  This article uses Selenium WebDriver only as an illustrative example, and because it fulfills most users' needs.  If you use Selenium to automate Microsoft Edge, you must use Selenium 4; Selenium 3 is no longer supported.
 
 To accomplish the same tasks using a WebDriver testing framework other than Selenium WebDriver, consult the official documentation for your framework of choice.
 
@@ -86,13 +80,11 @@ To accomplish the same tasks using a WebDriver testing framework other than Sele
 <!-- ------------------------------ -->
 #### Using Selenium WebDriver
 
-One possible WebDriver framework you can use is Selenium WebDriver, which is part of the Selenium suite of tools.
+One possible WebDriver framework you can use is Selenium WebDriver, which is part of the Selenium suite of tools.  Selenium WebDriver is an open-source testing framework that can be used on any platform, and provides language bindings for Java, Python 3, C#, Ruby, and JavaScript.
 
-Selenium WebDriver is an open-source testing framework that can be used on any platform, and provides language bindings for Java, Python, C#, Ruby, and JavaScript.  To run Selenium 4 tests, Python 3 is required (Python 2.7 is not supported).
+If you use Selenium to automate Microsoft Edge, you must use Selenium 4; Selenium 3 is no longer supported.
 
-To use WebDriver to automate Microsoft Edge, if you use Selenium, you must use Selenium 4, which has built-in support for Microsoft Edge (Chromium).
-
-To install Selenium 4, see [Install a Selenium library](https://www.selenium.dev/documentation/webdriver/getting_started/install_library/).  In case you need it, the NuGet packages page is [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver).
+For detailed instructions on installing Selenium for your preferred language and development environment, see Selenium's documentation about [Installing a Selenium library](https://www.selenium.dev/documentation/webdriver/getting_started/install_library/).
 
 
 <!-- ====================================================================== -->
@@ -432,6 +424,17 @@ If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-
 
 
 <!-- ------------------------------ -->
+#### Using the Visual Studio template
+
+If you're using the Microsoft Edge WebDriver template that's provided with Visual Studio, which creates a simple test project, make sure you've done the following:
+
+*  Download Microsoft Edge WebDriver and make sure it's available in the PATH.
+*  Add the WebDriver framework (such as the **Selenium.WebDriver** NuGet package) to the project.
+
+After you do these steps, the example test that navigates to Bing should complete successfully.
+
+
+<!-- ------------------------------ -->
 #### Error due to Selenium Tools for Microsoft Edge
 
 If you get the following error when you try to create a new `EdgeDriver` instance: `System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`, see [Upgrading from Selenium 3 to Selenium 4](#upgrading-from-selenium-3-to-selenium-4) below.
@@ -439,10 +442,6 @@ If you get the following error when you try to create a new `EdgeDriver` instanc
 
 <!-- ====================================================================== -->
 ## Upgrading from Selenium 3 to Selenium 4
-
-<!-- todo: 
-update per https://github.com/MicrosoftDocs/edge-developer/issues/2613
--->
 
 If you used [Selenium Tools for Microsoft Edge](https://github.com/microsoft/edge-selenium-tools) to add Microsoft Edge support to Selenium 3 browser tests, update your tests to Selenium 4, as follows:
 
