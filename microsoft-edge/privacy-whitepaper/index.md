@@ -420,9 +420,9 @@ Microsoft Edge collects diagnostic data about how you use the new tab page, such
 
 The new tab page also lets you set a custom image as the background. The image is stored locally on the device and may be deleted by removing the image or uploading a new image. No information about the image is sent to Microsoft.
 
-#### Office 365
+#### Microsoft 365
 
-If you are signed in to Microsoft Edge with a work or school account, your organization may turn on Office 365 as an option for page content on the new tab page. The feature is currently available only for commercial customers, under the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products). For more information about privacy for Office 365, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls).
+If you are signed in to Microsoft Edge with a work or school account, your organization may turn on Microsoft 365 as an option for page content on the new tab page. The feature is currently available only for commercial customers under the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products). For more information about privacy for Office 365, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls).
 
 **InPrivate** browsing and **Guest** mode offer alternative new tab page experiences.
 
