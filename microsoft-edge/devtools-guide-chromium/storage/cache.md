@@ -32,7 +32,7 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 
 1. Click the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.
 
-   ![The Manifest pane](../media/storage-application-manifest.png)
+   ![The Manifest pane](./cache-images/storage-application-manifest.png)
 
 1. Expand the **Cache Storage** section to view available caches.
 
@@ -61,7 +61,7 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 
    ![Selecting a resource to refresh](./cache-images/storage-application-cache-storage-domain-refresh.png)
 
-1. Click **Refresh** (![Refresh](../media/refresh-icon.png)).
+1. Click **Refresh** (![Refresh](./cache-images/refresh-icon.png)).
 
 
 <!-- ====================================================================== -->
@@ -83,7 +83,7 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 
    ![Selecting a resource to delete](./cache-images/storage-application-cache-storage-delete-selected.png)
 
-1. Click **Delete Selected** (![Delete Selected](../media/delete-icon.png)).
+1. Click **Delete Selected** (![Delete Selected](./cache-images/delete-icon.png)).
 
 
 <!-- ====================================================================== -->

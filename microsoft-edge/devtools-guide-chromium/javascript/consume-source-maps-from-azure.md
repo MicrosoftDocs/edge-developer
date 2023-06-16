@@ -38,11 +38,11 @@ To generate a PAT in Azure DevOps:
 
 1. In Azure DevOps, go to **User settings** > **Personal access tokens**:
     
-   ![The 'User settings' menu in Azure DevOps, with the 'Personal access tokens' command](images/ado-pat-settings.png)
+   ![The 'User settings' menu in Azure DevOps, with the 'Personal access tokens' command](./consume-source-maps-from-azure-images/ado-pat-settings.png)
 
    The **Personal Access Tokens** page appears:
 
-   ![The 'Personal Access Tokens' page in Azure DevOps](images/ado-pat-page.png)
+   ![The 'Personal Access Tokens' page in Azure DevOps](./consume-source-maps-from-azure-images/ado-pat-page.png)
 
 1. Click **New Token**.  The **Create a new personal access token** dialog opens:
 
@@ -58,7 +58,7 @@ To generate a PAT in Azure DevOps:
 
 1. Click the **Create** button.  The **Success!** dialog appears:
 
-   ![The 'Success!' dialog with the PAT to copy](images/ado-pat-success-copy-clipboard.png)
+   ![The 'Success!' dialog with the PAT to copy](./consume-source-maps-from-azure-images/ado-pat-success-copy-clipboard.png)
 
 1. Click the **Copy to clipboard** button to copy the PAT.  Make sure to copy the token and store it in a secure location. For your security, it won't be shown again.
 
@@ -74,7 +74,7 @@ To configure DevTools:
 
 1. To open DevTools, in Microsoft Edge, right-click a webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, click **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. In DevTools, click **Settings** (![Settings icon](./consume-source-maps-from-azure-images/settings-gear-icon-light-theme.png)) > **Preferences**.
 
 1. Make sure the **Enable JavaScript source maps** checkbox and the **Enable CSS source maps** checkbox are selected:
 

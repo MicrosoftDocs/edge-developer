@@ -52,7 +52,7 @@ There are many ways to select an element:
 
 In the **Styles** pane, click the link next to a CSS rule to open the external stylesheet that defines the rule.  The stylesheet opens in the **Editor** pane of the **Sources** tool.
 
-If the stylesheet is minified, click the **Format** (![Format](../media/format-icon.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
+If the stylesheet is minified, click the **Format** (![Format](./reference-images/format-icon.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
 
 <!-- todo: delete /en-us ? 2x -->
 In the following figure, after you click
@@ -172,7 +172,7 @@ The **Coverage** tool shows you what CSS a page actually uses.
 
    ![The Coverage tab](./reference-images/css-console-qs-coverage-empty.png)
 
-1. Click **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page](../media/refresh-icon.png)).  The page refreshes and the **Coverage** tab provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
+1. Click **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page](./reference-images/refresh-icon.png)).  The page refreshes and the **Coverage** tab provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
 
    An overview of how much CSS (and JavaScript) is used and unused:
 

@@ -59,11 +59,11 @@ In other words, a set of animations that are all triggered in the same script bl
 
 To open the Animation Inspector, use any of these approaches, in DevTools:
 
-*  From the **main toolbar** or on the **Drawer**: click the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button, and then select **Animations**.
+*  From the **main toolbar** or on the **Drawer**: click the **More Tools** (![More Tools icon](./animations-images/more-tools-icon-light-theme.png)) button, and then select **Animations**.
 
    ![Animations using Main Menu](./animations-images/inspect-styles-elements-styles-more-tools-animations.png)
 
-*  From the **Customize** menu: Click the **Customize and control DevTools** (![Customize icon](../media/customize-devtools-icon-light-theme.png)) menu button, point to the **More tools** sub-menu, and then select **Animations**.
+*  From the **Customize** menu: Click the **Customize and control DevTools** (![Customize icon](./animations-images/customize-devtools-icon-light-theme.png)) menu button, point to the **More tools** sub-menu, and then select **Animations**.
 
 *  From the **Command Menu**:  When DevTools has focus, press **Shift+Ctrl+P** on Windows/Linux or **Command+Shift+P** on macOS to open the **Command Menu**, start typing `animations`, and then select **Drawer: Show Animations**.
 

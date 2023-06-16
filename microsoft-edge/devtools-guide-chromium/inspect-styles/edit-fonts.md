@@ -10,7 +10,7 @@ ms.date: 03/11/2021
 ---
 # Edit CSS font styles and settings in the Styles pane
 
-![This feature is experimental](../../media/experimental-tag.png)
+![This feature is experimental](./edit-fonts-images/experimental-tag.png)
 
 To make it easier when working with typography, a visual **Font Editor** is now available in the **Styles** pane.  Using the **Font Editor**, you can change your font settings, and the changes are rendered immediately in the browser - all without in-depth knowledge of CSS.  The **Elements** tool > **Styles** tab > **Font Editor** icon opens the **Font Editor**, which consists of two parts:
 
@@ -31,7 +31,7 @@ Any CSS in the **Styles** pane, either font definitions or inline styles, has a 
 
 The **Font Editor** opens on top of the **Styles** pane:
 
-![The Font Editor opens on top of the Styles pane](../media/font-editor-open.png)
+![The Font Editor opens on top of the Styles pane](./edit-fonts-images/font-editor-open.png)
 
 All fields in the visual **Font Editor** are populated from the values in the CSS in the **Styles** pane.  For example, the `line-height` definition is set to `160%` in the **Styles** pane, so the line height text field displays `160`, and the unit dropdown list displays `%`.  Also, the slider is automatically set to match the values of the text field.
 
@@ -58,7 +58,7 @@ The **Font Editor** open on top of the **Styles** pane with the **Font Family** 
 
 After you select a font, another dropdown menu is displayed for you to select fallback fonts.  You can select up to eight fallback fonts.  To remove a font, click the **Delete Font Family** icon.
 
-<!--![The font editor with a defined list of fonts and fallback fonts](../media/font-editor-defining-fonts.png)-->
+<!--![The font editor with a defined list of fonts and fallback fonts](./edit-fonts-images/font-editor-defining-fonts.png)-->
 
 > [!NOTE]
 > If you select a global value for font family, you don't get another dropdown menu, since there is no fallback for it in CSS.

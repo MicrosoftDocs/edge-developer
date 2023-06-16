@@ -43,7 +43,7 @@ This way of opening DevTools is useful for these simple scenarios:
 
 1. In Visual Studio Code, select **File** > **New Window**.  Initially, no folder is opened.
 
-1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens:
+1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens:
 
    ![The Launch Instance button with no folder open](./get-started-launch-instance-images/launch-instance-button-no-folder.png)
 
@@ -81,7 +81,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 
 <!-- if Trust requires re-trying these two steps: -->
 
-1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools button](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens.
+1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools button](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens.
 
 1. Click the **Launch Instance** button.  The **Edge DevTools** tab opens, and the **Edge DevTools: Browser** tab opens, displaying the default, Success page.
 
@@ -136,7 +136,7 @@ By entering a file path in the address bar of the **Edge DevTools: Browser** tab
 
 1. If prompted, click the **Yes, I trust the authors** button.  Aside from granting trust, the **Launch Instance** approach doesn't actually require opening a folder, if you specify a file path rather than a URL in the DevTools browser.
 
-1. If the **Edge DevTools** tabs aren't open already, in the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)), and then click the **Launch Instance** button:
+1. If the **Edge DevTools** tabs aren't open already, in the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)), and then click the **Launch Instance** button:
 
    ![The Launch Instance button with no folder open](./get-started-launch-instance-images/launch-instance-button-no-folder.png)
 

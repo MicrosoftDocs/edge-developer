@@ -56,7 +56,7 @@ From your [feedback](../../../contact.md) and the [Chromium public issue tracker
 
 To try the experiment:
 
-1. In DevTools, open **Settings** by pressing **?** or clicking the **Settings** (![Devtools Settings icon](../../../media/settings-icon.png)) icon in DevTools.
+1. In DevTools, open **Settings** by pressing **?** or clicking the **Settings** (![Devtools Settings icon](./devtools-images/settings-icon.png)) icon in DevTools.
 
 1. In the **Experiments** section, select the checkbox **Enable custom keyboard shortcuts settings tab (requires reload)**.
 
@@ -111,7 +111,7 @@ Chromium issue [#1076112](https://crbug.com/1076112)
 <!-- ====================================================================== -->
 ### Screencasting navigation buttons display focus
 
-When remote debugging an [Android device](../../../remote-debugging/index.md), a [Windows 10 or later device](../../../remote-debugging/windows.md), or a [Surface Duo emulator](../../../remote-debugging/surface-duo-emulator.md), you can toggle screencasting with the ![Toggle Screencast](../../../media/toggle-screencast-icon.png) icon in the top-left corner of DevTools.  With screencasting enabled, you can navigate the tab in Microsoft Edge on the remote device from the DevTools window.
+When remote debugging an [Android device](../../../remote-debugging/index.md), a [Windows 10 or later device](../../../remote-debugging/windows.md), or a [Surface Duo emulator](../../../remote-debugging/surface-duo-emulator.md), you can toggle screencasting with the ![Toggle Screencast](./devtools-images/toggle-screencast-icon.png) icon in the top-left corner of DevTools.  With screencasting enabled, you can navigate the tab in Microsoft Edge on the remote device from the DevTools window.
 
 In Microsoft Edge 84, these navigation buttons are now also keyboard-accessible.  For example, pressing **Shift+Tab** from the screencasted URL bar puts focus on the **Refresh** button:
 
@@ -185,9 +185,9 @@ After recording your load performance, the **Performance** panel now shows Total
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->
 
-To get Total Blocking Time information, don't use the **Refresh Page** ![Refresh page icon](../../../media/refresh-page-icon.png) workflow for recording page load performance.
+To get Total Blocking Time information, don't use the **Refresh Page** ![Refresh page icon](./devtools-images/refresh-page-icon.png) workflow for recording page load performance.
 
-Instead, select **Record** ![Record icon](../../../media/record-icon.png), manually reload the page, wait for the page to load, and then stop recording.
+Instead, select **Record** ![Record icon](./devtools-images/record-icon.png), manually reload the page, wait for the page to load, and then stop recording.
 
 If `Total Blocking Time: Unavailable` is displayed, Microsoft Edge DevTools did not get the required information from the internal profiling data in Microsoft Edge.
 

@@ -382,7 +382,7 @@ During webpage navigation, the WebView2 control raises events. The app that host
 *  `HistoryChanged`
 *  `NavigationCompleted`
 
-![Navigation events, from new document, to navigation starting, through navigation completed](../media/navigation-events.png)
+![Navigation events, from new document, to navigation starting, through navigation completed](./wpf-images/navigation-events.png)
 
 The above diagram shows the event sequence.  Navigation events start with a new document.
 

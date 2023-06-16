@@ -66,9 +66,9 @@ This extra CSS is a problem for the following reasons:
 
 1. Click one of the following buttons in the **Coverage** tool:
 
-   *  Click **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page](../media/reload-icon.png))<!--todo: check UI string--> if you want to see what code is needed to load the page.
+   *  Click **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page](./index-images/reload-icon.png))<!--todo: check UI string--> if you want to see what code is needed to load the page.
 
-   *  Click **Instrument Coverage** (![Instrument Coverage](../media/record-icon.png)) if you want to see what code is used after interacting with the page.
+   *  Click **Instrument Coverage** (![Instrument Coverage](./index-images/record-icon.png)) if you want to see what code is used after interacting with the page.
 
 1. Click **Stop Instrumenting Coverage And Show Results** (![Stop Instrumenting Coverage And Show Results](./index-images/stop-icon.png))<!--todo: check UI string--> when you want to stop recording code coverage.
 

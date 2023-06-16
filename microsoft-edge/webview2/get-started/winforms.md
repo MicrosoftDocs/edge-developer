@@ -370,7 +370,7 @@ During webpage navigation, the WebView2 control raises events. The app that host
 
 For more information, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
-![Navigation events](../media/navigation-events.png)
+![Navigation events](./winforms-images/navigation-events.png)
 
 When an error occurs, the following events are raised and may depend on navigation to an error webpage:
 

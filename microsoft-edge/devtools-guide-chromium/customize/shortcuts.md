@@ -21,7 +21,7 @@ To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent 
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./shortcuts-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
 
 1. In the **Settings** panel, select the **Shortcuts** page.
 
@@ -42,7 +42,7 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./shortcuts-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
 
 1. In the **Settings** panel, select the **Shortcuts** page.
 

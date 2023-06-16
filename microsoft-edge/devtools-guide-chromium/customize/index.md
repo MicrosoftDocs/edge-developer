@@ -96,7 +96,7 @@ See [Zoom DevTools in or out](../overview.md#zoom-devtools-in-or-out) in _Overvi
 
 See [Apply a color theme to DevTools](theme.md).
 
-![Selecting a different color theme](./media/customize-theme-setting.png)
+![Selecting a different color theme](./index-images/customize-theme-setting.png)
 
 
 <!-- ====================================================================== -->

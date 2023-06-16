@@ -28,7 +28,7 @@ The first experience you have with the **Console** is likely to be errors in scr
 
 1. Click the **Open Console to view errors** button on the top right.  In DevTools, the **Console** gives you more information about the error:
 
-   ![DevTools gives detailed information about the error in the Console](../media/console-debug-displays-error.png)
+   ![DevTools gives detailed information about the error in the Console](./console-debug-javascript-images/console-debug-displays-error.png)
 
    Many error messages in the **Console** have a **Search for this message on the Web** button, shown as a magnifying glass.  This feature was introduced in Microsoft Edge version 94.  (For more information, see [Search the web for a Console error message string](index.md#search-the-web-for-a-console-error-message-string).)
 

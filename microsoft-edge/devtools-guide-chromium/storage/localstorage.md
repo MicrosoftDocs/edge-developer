@@ -30,7 +30,7 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 
 1. Click the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.
 
-   ![The Manifest pane](../media/storage-application-manifest.png)
+   ![The Manifest pane](./localstorage-images/storage-application-manifest.png)
 
 1. Expand the **Local Storage** menu.
 
@@ -72,7 +72,7 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 
 1. Click the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
 
-1. Press `Delete`, or click **Delete Selected** (![Delete Selected](../media/delete-icon.png)).
+1. Press `Delete`, or click **Delete Selected** (![Delete Selected](./localstorage-images/delete-icon.png)).
 
 
 <!-- ====================================================================== -->
@@ -80,7 +80,7 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 
 1. [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).
 
-1. Click **Clear All** (![Clear All](../media/clear-icon.png)).
+1. Click **Clear All** (![Clear All](./localstorage-images/clear-icon.png)).
 
 
 <!-- ====================================================================== -->

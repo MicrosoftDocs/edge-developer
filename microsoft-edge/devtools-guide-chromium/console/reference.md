@@ -85,7 +85,7 @@ To open the **Console** tool from the [Command Menu](../command-menu/index.md), 
 
 ### Open Console Settings
 
-Click the **Console Settings** (![Console Settings icon](../media/settings-button-icon.png)) button.
+Click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button.
 
 ![Console Settings](./reference-images/console-settings-group-similar-empty.png)
 
@@ -105,12 +105,12 @@ This section contains features that change how messages are presented in the Con
 
 ### Turn off message grouping
 
-To turn off the default message grouping behavior of the **Console**, click the **Console Settings** (![Console Settings icon](../media/settings-button-icon.png)) button and then select the checkbox next to **Group similar**.  For an example, see [Log XHR and Fetch requests](#log-xhr-and-fetch-requests).
+To turn off the default message grouping behavior of the **Console**, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the checkbox next to **Group similar**.  For an example, see [Log XHR and Fetch requests](#log-xhr-and-fetch-requests).
 
 
 ### Log XHR and Fetch requests
 
-To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens, click the **Console Settings** (![Console Settings icon](../media/settings-button-icon.png)) button and then select the checkbox next to **Log XMLHttpRequests**.
+To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the checkbox next to **Log XMLHttpRequests**.
 
 ![Logging XMLHttpRequest and Fetch requests](./reference-images/console-xhr-fetch.png)
 
@@ -119,7 +119,7 @@ The top message in previous figure displays the default grouping behavior of the
 <!--
 > ##### Old Figure 9
 > How the logged `XMLHttpRequest` and `Fetch` requests look after ungrouping
-> ![How the logged XMLHttpRequest and Fetch requests look after ungrouping](../media/console-xhr-fetch-all.png)
+> ![How the logged XMLHttpRequest and Fetch requests look after ungrouping](./reference-images/console-xhr-fetch-all.png)
 -->
 
 <!--todo: add example for ungrouping console items  -->
@@ -127,7 +127,7 @@ The top message in previous figure displays the default grouping behavior of the
 
 ### Persist messages across page loads
 
-When you load a new webpage, the default action clears the **Console**.  To persist messages across page loads, click the **Console Settings** (![Console Settings icon](../media/settings-button-icon.png)) button and then select the checkbox next to **Preserve Log**.
+When you load a new webpage, the default action clears the **Console**.  To persist messages across page loads, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the checkbox next to **Preserve Log**.
 
 
 ### Hide network messages
@@ -138,7 +138,7 @@ The default action for Microsoft Edge is to logs network messages to the **Conso
 
 To hide network messages:
 
-1. Click the **Console Settings** (![Console Settings icon](../media/settings-button-icon.png)) button.
+1. Click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button.
 
 1. Select the checkbox next to **Hide Network**.
 
@@ -182,7 +182,7 @@ To use the log level to filter, [open the Console Sidebar](#open-the-console-sid
 
 Type `url:` followed by a URL to only view messages that came from that URL.  After you type `url:`, DevTools displays all relevant URLs.  Domains also work.  For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:https://example.com` allows you to focus on the messages from these two scripts.
 
-![A URL filter](../media/console-filter-text.png)
+![A URL filter](./reference-images/console-filter-text.png)
 
 To hide messages from a URL, type `-url:`.  It's a negative URL filter.
 
@@ -201,14 +201,14 @@ To display messages from a single URL:
 
 ### Filter out messages from different contexts
 
-Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to click the **Console Settings** (![Console Settings icon](../media/settings-button-icon.png)) button and then select the checkbox next to **Selected Context Only**.
+Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the checkbox next to **Selected Context Only**.
 
 
 ### Filter out messages that don't match a regular expression pattern
 
 Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to filter out any messages that don't match that pattern.  DevTools checks whether the pattern is found in the message text or in the script that caused the message to be logged.
 
-![Filtering out any messages that don't match the regex expression](../media/console-filter-regex.png)
+![Filtering out any messages that don't match the regex expression](./reference-images/console-filter-regex.png)
 
 
 <!-- ====================================================================== -->
@@ -231,13 +231,13 @@ If you find yourself typing the same JavaScript expression in the **Console** re
 
 **Eager Evaluation** displays a preview of the return value as you type JavaScript expressions in the **Console**.  To turn off the return value previews:
 
-1. Click the **Console Settings** (![Console Settings icon](../media/settings-button-icon.png)) button.
+1. Click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button.
 1. Clear the checkbox next to **Eager Evaluation**.
 
 
 ### Turn off autocomplete from history
 
-As you type out an expression, the autocomplete popup window for the **Console** displays expressions that you ran earlier.  The expressions are pre-pended with the `>` character.  To stop displaying expressions from your history, click the **Console Settings** (![Console Settings icon](../media/settings-button-icon.png)) button and then clear the checkbox next to **Autocomplete From History** checkbox.
+As you type out an expression, the autocomplete popup window for the **Console** displays expressions that you ran earlier.  The expressions are pre-pended with the `>` character.  To stop displaying expressions from your history, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then clear the checkbox next to **Autocomplete From History** checkbox.
 
 In the following figure, `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.
 

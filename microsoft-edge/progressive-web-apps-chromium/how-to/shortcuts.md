@@ -20,7 +20,7 @@ The next figure shows shortcuts on Microsoft Edge, on iOS:
 
 The next figure shows a Jumplist on the Webboard app, on Windows:
 
-![A Jumplist on the Webboard app on Windows](../media/pwa-shortcuts-in-taskbar.png)
+![A Jumplist on the Webboard app on Windows](./shortcuts-images/pwa-shortcuts-in-taskbar.png)
 
 Progressive Web Apps (PWAs) can also define common tasks as shortcuts in the [Web App Manifest](web-app-manifests.md).
 
@@ -74,7 +74,7 @@ To test that your shortcuts are configured correctly:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../../devtools-guide-chromium/media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../../devtools-guide-chromium/media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../../devtools-guide-chromium/./shortcuts-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../../devtools-guide-chromium/./shortcuts-images/more-tools-icon-light-theme.png)) button.
 
 1. In the **Application** tool, select **Manifest**.
 

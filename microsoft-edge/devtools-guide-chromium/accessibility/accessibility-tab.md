@@ -33,7 +33,7 @@ To open the **Accessibility** tab:
 
 1. In the **DOM Tree**, click the element that you want to inspect.  You can use the arrow keys to move through the DOM tree.
 
-1. Click the **Accessibility** tab, to the right of the **Styles** tab.  You might need to first click the **More tabs** (![the More tabs button](../media/more-tabs-icon.png)) button to the right of the **Styles** tab.
+1. Click the **Accessibility** tab, to the right of the **Styles** tab.  You might need to first click the **More tabs** (![the More tabs button](./accessibility-tab-images/more-tabs-icon.png)) button to the right of the **Styles** tab.
 
 ![Inspect the h1 element of the DevTools homepage in the Accessibility tab](./accessibility-tab-images/accessibility-elements-accessibility.png)
 

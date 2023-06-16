@@ -671,7 +671,7 @@ You can expand or collapse sections of the **Network** tool UI to focus importan
 
 ### Hide the Filters pane
 
-By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, select **Filter** (![Filter](../media/filter-icon.png)).
+By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, select **Filter** (![Filter](./reference-images/filter-icon.png)).
 
 ![The Hide Filters button](./reference-images/network-network-resources-hide-filters-button.png)
 

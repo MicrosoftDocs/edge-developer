@@ -48,7 +48,7 @@ To view and edit a JavaScript file:
 <!-- ====================================================================== -->
 ## Reformat a minified JavaScript file with pretty-print
 
-To make a minified file human-readable, click the **Format** (![Format](../media/format-icon.png)) button at the bottom of the **Editor** pane.
+To make a minified file human-readable, click the **Format** (![Format](./reference-images/format-icon.png)) button at the bottom of the **Editor** pane.
 
 ![The Format button](./reference-images/javascript-sources-html-non-minified.png)
 
@@ -70,7 +70,7 @@ To set a line-of-code breakpoint:
 
    A red circle (or more recently, a blue rectangle) then appears next to the line number, indicating a breakpoint.
 
-   ![A line-of-code breakpoint](../media/javascript-sources-page-js-breakpoint-30.png)
+   ![A line-of-code breakpoint](./reference-images/javascript-sources-page-js-breakpoint-30.png)
 
 Line-of-code breakpoints may be inefficient to set, especially if you don't know exactly where to look, or if your codebase is large.  To save time when debugging, learn how and when to use the other types of breakpoints.  See [Pause your code with breakpoints](breakpoints.md).
 
@@ -84,7 +84,7 @@ After your code is paused at a breakpoint, step through the code, one line at a 
 <!-- ------------------------------ -->
 #### Step over line of code
 
-When paused on a line of code containing a function that isn't relevant to the problem you are debugging, click the **Step over** (![Step over](../media/step-over-icon.png)) button to run the function without stepping into it.
+When paused on a line of code containing a function that isn't relevant to the problem you are debugging, click the **Step over** (![Step over](./reference-images/step-over-icon.png)) button to run the function without stepping into it.
 
 ![Clicking Step over](./reference-images/javascript-source-page-debugger-step-over-next-function-call.png)
 
@@ -108,7 +108,7 @@ You are paused on `A`.  After you click **Step over**, DevTools runs all the cod
 <!-- ------------------------------ -->
 #### Step into line of code
 
-When paused on a line of code containing a function call that is related to the problem you are debugging, click the **Step into** (![Step into](../media/step-into-icon.png)) button to investigate that function further.
+When paused on a line of code containing a function call that is related to the problem you are debugging, click the **Step into** (![Step into](./reference-images/step-into-icon.png)) button to investigate that function further.
 
 ![Clicking Step into](./reference-images/javascript-source-page-debugger-step-into-next-function-call.png)
 
@@ -160,7 +160,7 @@ When debugging a long function, there may be a lot of code that isn't related to
 
 *  You can step through all the lines, but that's tedious.
 
-*  Slightly better, you can set a line-of-code breakpoint on the line in which you are interested and then click the **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.png)) button.
+*  Slightly better, you can set a line-of-code breakpoint on the line in which you are interested and then click the **Resume script execution** (![Resume script execution](./reference-images/resume-script-run-icon.png)) button.
 
 *  But there's a faster way: Right-click a the line of code, and then select **Continue to here**.  DevTools runs all of the code up to that point, and then pauses on that line.
 
@@ -192,7 +192,7 @@ You are paused on `A`.  After selecting **Restart frame**, you should be paused 
 <!-- ------------------------------ -->
 #### Resume script runtime
 
-To continue the runtime after a pause of your script, click the **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.png)) button.  DevTools runs the script up until the next breakpoint, if any.
+To continue the runtime after a pause of your script, click the **Resume script execution** (![Resume script execution](./reference-images/resume-script-run-icon.png)) button.  DevTools runs the script up until the next breakpoint, if any.
 
 ![Clicking the Resume script execution button](./reference-images/javascript-sources-get-started-js-resume-script-runtime.png)
 
@@ -200,7 +200,7 @@ To continue the runtime after a pause of your script, click the **Resume script 
 <!-- ------------------------------ -->
 #### Force script runtime
 
-To ignore all breakpoints and force your script to continue to run, click and hold the **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.png)) button and then click the **Force script execution** (![Force script execution](./reference-images/force-script-run-icon.png)) button.
+To ignore all breakpoints and force your script to continue to run, click and hold the **Resume script execution** (![Resume script execution](./reference-images/resume-script-run-icon.png)) button and then click the **Force script execution** (![Force script execution](./reference-images/force-script-run-icon.png)) button.
 
 ![Clicking the Force script execution button](./reference-images/javascript-sources-get-started-js-force-script-runtime.png)
 
@@ -233,9 +233,9 @@ Use the **Watch** pane to watch the values of custom expressions.  You can watch
 
 ![The Watch pane](./reference-images/javascript-sources-get-started-js-watch.png)
 
-*  To create a new watch expression, click the **Add watch expression** (![Add watch expression](../media/add-expression-icon.png)) button.
+*  To create a new watch expression, click the **Add watch expression** (![Add watch expression](./reference-images/add-expression-icon.png)) button.
 
-*  To refresh the values of all existing expressions, click the **Refresh** (![Refresh](../media/refresh-icon.png)) button.  Values automatically refresh while stepping through code.
+*  To refresh the values of all existing expressions, click the **Refresh** (![Refresh](./reference-images/refresh-icon.png)) button.  Values automatically refresh while stepping through code.
 
 *  To delete a watch expression, right-click the expression and then select **Delete watch expression** (![Delete watch expression](./reference-images/delete-expression-icon.png)).
 

@@ -121,7 +121,7 @@ You can also tap an element on your Android device screen to select it in the **
 
 ### Screencast your Android screen to your development machine
 
-Click the **Toggle Screencast** (![Toggle Screencast](../media/toggle-screencast-icon.png)) icon to view the content of your Android device in your DevTools instance.
+Click the **Toggle Screencast** (![Toggle Screencast](./index-images/toggle-screencast-icon.png)) icon to view the content of your Android device in your DevTools instance.
 
 You can interact with the screencast in multiple ways:
 

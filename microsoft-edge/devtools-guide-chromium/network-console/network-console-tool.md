@@ -15,7 +15,7 @@ To test a URL:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar or the Drawer toolbar at the bottom, select the **Network Console** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar or the Drawer toolbar at the bottom, select the **Network Console** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./network-console-tool-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./network-console-tool-images/more-tools-icon-light-theme.png)) button.
 
    The Network Console tool opens:
 
@@ -45,7 +45,7 @@ To use the **Network Console** starting from the **Network** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./network-console-tool-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./network-console-tool-images/more-tools-icon-light-theme.png)) button.
 
 1. Refresh the webpage.
 

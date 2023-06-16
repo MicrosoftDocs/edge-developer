@@ -62,7 +62,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
    ![The Sources tool with the Page tab open on the left](./snippets-images/javascript-sources-page-pane.png)
 
-1. In the **Navigator** pane (on the left), select the **Snippets** tab.  To access the **Snippets** option, you might need to click the **More tabs** (![More tabs](../media/more-tabs-icon.png)) button.
+1. In the **Navigator** pane (on the left), select the **Snippets** tab.  To access the **Snippets** option, you might need to click the **More tabs** (![More tabs](./snippets-images/more-tabs-icon.png)) button.
 
 ### Open the Snippets tab with the Command Menu
 
@@ -126,7 +126,7 @@ To rename your new Snippet with a custom name, see [Rename Snippets](#rename-sni
 
 1. Click the name of the Snippet that you want to run.  The Snippet opens in the **Code Editor**:
 
-1. Click **Run snippet** (![Run Snippet](../media/run-snippet-icon.png)).
+1. Click **Run snippet** (![Run Snippet](./snippets-images/run-snippet-icon.png)).
 
 ### Run a Snippet with the Command Menu
 

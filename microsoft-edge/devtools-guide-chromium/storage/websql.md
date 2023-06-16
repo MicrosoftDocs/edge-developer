@@ -33,7 +33,7 @@ This article shows how to use DevTools to inspect Web SQL data.
 
 1. In DevTools, open the **Application** tool.  The **Manifest** pane usually opens by default.
 
-   ![The Manifest pane](../media/storage-application-manifest.png)
+   ![The Manifest pane](./websql-images/storage-application-manifest.png)
 
 1. Expand the **Web SQL** section to view databases and tables.  In the following figure, below **html5meetup** is a database and **rooms** is a table.
 
@@ -67,7 +67,7 @@ DevTools doesn't update tables in real-time.  To update the data in a table:
 
 1. [View the data in a Web SQL table](#view-web-sql-data).
 
-1. Click **Refresh** (![Refresh](../media/refresh-icon.png)).
+1. Click **Refresh** (![Refresh](./websql-images/refresh-icon.png)).
 
 
 <!-- ====================================================================== -->

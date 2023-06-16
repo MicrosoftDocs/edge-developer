@@ -61,7 +61,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. Select the **Screenshots** checkbox.
 
-1. Click **Capture settings** (![Capture settings](../media/capture-settings-icon.png)).  DevTools reveals settings related to how it captures performance metrics.
+1. Click **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)).  DevTools reveals settings related to how it captures performance metrics.
 
 1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.
 
@@ -87,7 +87,7 @@ The following section lets you customize the demo to make sure that your experie
 
 When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the non-optimized version.
 
-1. In DevTools, click **Record** (![Record](../media/record-icon.png)).  DevTools captures performance metrics as the page runs.
+1. In DevTools, click **Record** (![Record](./index-images/record-icon.png)).  DevTools captures performance metrics as the page runs.
 
    ![Profile the page](./index-images/evaluate-performance-performance-profiling.png)
 
@@ -146,7 +146,7 @@ After you verified that the animation isn't performing well, the next step is to
 
 1. There is a lot of data in the recording.  To zoom into a portion of the recording, click and drag in the **Overview** area toward the top of the **Performance** tool.  The **Overview** area includes the **CPU** and **NET** charts (indicated on the right).  The **Main** section and **Summary** panel only display information for the selected portion of the recording.
 
-   ![Zoom into a section](../media/evaluate-performance-performance-main-zoomed.png)
+   ![Zoom into a section](./index-images/evaluate-performance-performance-main-zoomed.png)
 
    Another way to change the selected area is to put focus on the **Main** section, click the background or an event, and then press:
    * `W` to zoom in, `S` to zoom out.

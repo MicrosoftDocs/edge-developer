@@ -10,7 +10,7 @@ ms.date: 01/03/2023
 ---
 # Build PWA-driven widgets
 
-![Experimental feature](../../media/experimental-tag.png)
+![Experimental feature](./widgets-images/experimental-tag.png)
 
 **Note:** Support for the `widgets` manifest member and associated JavaScript APIs, documented below, is experimental and depends on Microsoft Windows functionality that's not widely available yet.
 

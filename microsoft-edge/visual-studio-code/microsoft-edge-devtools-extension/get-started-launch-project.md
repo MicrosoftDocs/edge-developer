@@ -59,7 +59,7 @@ These steps explain how to start http-server by using the cross-platform git bas
    npx http-server
    ```
    
-   ![Starting the server](./install-images/git-bash-starting-server-2nd-time.png)
+   ![Starting the server](./get-started-launch-project-images/git-bash-starting-server-2nd-time.png)
 
    Information about the server and localhost URL is displayed, such as:
 
@@ -86,7 +86,7 @@ This section is in support of clicking the **Launch Project** button.
 
    Just like in the repo's [demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) folder, initially there's no `.vscode` folder, and no `launch.json` file in that folder.
 
-1. In the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
+1. In the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-project-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
 
 1. Click the **Generate launch.json** button:
 
@@ -121,7 +121,7 @@ This section is in support of clicking the **Launch Project** button.
 <!-- ====================================================================== -->
 ## Step 4: Click the Launch Project button
 
-1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens, now containing a **Launch Project** button but not a **Generate launch.json file** button:
+1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-project-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens, now containing a **Launch Project** button but not a **Generate launch.json file** button:
 
    ![Targets pane when a launch.json file exists](./get-started-launch-project-images/targets-pane-when-launch-json-exists.png)
 
@@ -143,7 +143,7 @@ To end debugging and close the **Edge DevTools** tabs:
 
 1. In the Debug toolbar, click the **Stop** (**Shift+F5**) button:
 
-   ![Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
+   ![Stop button in the Debug toolbar](./get-started-launch-project-images/stop-button-debug-toolbar.png)
 
    Or, on the **Run** menu, select **Stop Debugging**.  Or, close the two DevTools tabs.  The Debug toolbar closes.
 

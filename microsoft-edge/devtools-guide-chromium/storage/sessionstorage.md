@@ -30,7 +30,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.
 
-   ![The Manifest pane](../media/storage-application-manifest.png)
+   ![The Manifest pane](./sessionstorage-images/storage-application-manifest.png)
 
 1. Expand the **Session Storage** menu.
 
@@ -72,7 +72,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. Click the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
 
-1. Press `Delete` or click **Delete Selected** (![Delete Selected](../media/delete-icon.png)).
+1. Press `Delete` or click **Delete Selected** (![Delete Selected](./sessionstorage-images/delete-icon.png)).
 
 
 <!-- ====================================================================== -->
@@ -80,7 +80,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).
 
-1. Click **Clear All** (![Clear All](../media/clear-icon.png)).
+1. Click **Clear All** (![Clear All](./sessionstorage-images/clear-icon.png)).
 
 
 <!-- ====================================================================== -->

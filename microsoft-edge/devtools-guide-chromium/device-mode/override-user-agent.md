@@ -26,7 +26,7 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-   ![The Command Menu](../media/device-mode-console-command-menu.png)
+   ![The Command Menu](./override-user-agent-images/device-mode-console-command-menu.png)
     
 1. Type `network conditions`, select **Show Network conditions**, and then press **Enter** to open the **Network conditions** tool.
 

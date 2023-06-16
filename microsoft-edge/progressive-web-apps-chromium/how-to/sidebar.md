@@ -10,7 +10,7 @@ ms.date: 04/27/2023
 ---
 # Build PWAs for the sidebar in Microsoft Edge
 
-![Experimental feature](../../media/experimental-tag.png)
+![Experimental feature](./sidebar-images/experimental-tag.png)
 
 Progressive Web Apps (PWAs) can opt-in to be pinned to the sidebar in Microsoft Edge.
 

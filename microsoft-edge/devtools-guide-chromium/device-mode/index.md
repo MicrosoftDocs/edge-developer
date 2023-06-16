@@ -103,7 +103,7 @@ To simulate the dimensions of a specific mobile device, select the device from t
 
 Test your webpage in landscape orientation.
 
-1. To rotate the viewport to landscape orientation, select **Rotate** (![Rotate](../media/rotate-dark-icon.png)):
+1. To rotate the viewport to landscape orientation, select **Rotate** (![Rotate](./index-images/rotate-dark-icon.png)):
 
    ![Page displayed in landscape orientation](./index-images/device-mode-toggle-device-toolbar-landscape.png)
 
@@ -183,7 +183,7 @@ Mobile devices often have network and CPU constraints.  Test how quickly your pa
 
 To throttle the CPU only and not the network:
 
-1. Select the **Performance** panel, and select **Capture Settings** (![Capture Settings](../media/capture-settings-icon.png)).
+1. Select the **Performance** panel, and select **Capture Settings** (![Capture Settings](./index-images/capture-settings-icon.png)).
 
 1. Select **CPU** > **4x slowdown** or **6x slowdown**.
 
@@ -204,7 +204,7 @@ To throttle the network only and not the CPU:
 
 You can also set network throttling from the **Performance** panel:
 
-1. Select **Capture Settings** (![Capture Settings](../media/capture-settings-icon.png)) and select the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.
+1. Select **Capture Settings** (![Capture Settings](./index-images/capture-settings-icon.png)) and select the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.
 
    ![Setting network throttling from the Performance panel](./index-images/device-mode-performance-network-throttle.png)
 

@@ -40,9 +40,9 @@ Record runtime performance when you want to analyze the performance of a page as
 
 1. Click the **Performance** tool in DevTools.
 
-1. Click the **Record** (![Record icon](../media/record-icon.png)) button.
+1. Click the **Record** (![Record icon](./reference-images/record-icon.png)) button.
 
-   ![Record](../media/evaluate-performance-performance-record-highlight.png)
+   ![Record](./reference-images/evaluate-performance-performance-record-highlight.png)
 
 1. Interact with the page.  DevTools records all page activity that occurs as a result of your interactions.
 
@@ -58,7 +58,7 @@ Record load performance when you want to analyze the performance of a page as it
 
 1. In DevTools, open the **Performance** tool.
 
-1. Click the **Refresh page** (![Refresh Page](../media/refresh-page-icon.png)) button.  DevTools records performance metrics while the page refreshes and then automatically stops the recording a couple seconds after the load finishes.
+1. Click the **Refresh page** (![Refresh Page](./reference-images/refresh-page-icon.png)) button.  DevTools records performance metrics while the page refreshes and then automatically stops the recording a couple seconds after the load finishes.
 
 ![Refresh page](./reference-images/evaluate-performance-performance-refresh-button.png)
 
@@ -80,7 +80,7 @@ To learn how to interact with screenshots, see [View a screenshot](#view-a-scree
 <!-- ------------------------------ -->
 #### Force garbage collection while recording
 
-While you are recording a page, click **Collect garbage** (![Collect garbage icon](../media/collect-garbage-icon.png)) to force garbage collection.
+While you are recording a page, click **Collect garbage** (![Collect garbage icon](./reference-images/collect-garbage-icon.png)) to force garbage collection.
 
 ![Collect garbage](./reference-images/evaluate-performance-performance-collect-garbage-button.png)
 
@@ -88,7 +88,7 @@ While you are recording a page, click **Collect garbage** (![Collect garbage ico
 <!-- ------------------------------ -->
 #### Show recording settings
 
-Click **Capture settings** (![Capture settings](../media/capture-settings-icon.png)) to expose more settings related to how DevTools captures performance recordings.
+Click **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) to expose more settings related to how DevTools captures performance recordings.
 
 ![The Capture Settings section](./reference-images/evaluate-performance-performance-capture-settings-button-open-drawer.png)
 
@@ -162,7 +162,7 @@ To save a recording, right-click the recording and then select **Save Profile**.
 
 To load a recording, right-click the recording and then select **Load Profile**.
 
-![Load Profile](../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.png)
+![Load Profile](./reference-images/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.png)
 
 
 <!-- ====================================================================== -->
@@ -228,7 +228,7 @@ To hide the search box, click **Cancel**.
 
 Use the **Main** section to view activity that occurred on the main thread of the page.
 
-![The Main section](../media/evaluate-performance-performance-main-zoomed.png)
+![The Main section](./reference-images/evaluate-performance-performance-main-zoomed.png)
 
 Select an event to view more information about it in the **Summary** tab.  DevTools outlines the selected event.
 

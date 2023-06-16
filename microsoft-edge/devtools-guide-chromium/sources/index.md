@@ -91,7 +91,7 @@ Use the **Navigator** pane (on the left) to navigate among the resources that ar
 
 ![The Navigator pane](./index-images/navigator-pane.png)
 
-To access any hidden tabs of the Navigator pane, select ![More tabs](../media/more-tabs-icon.png) (**More tabs**).
+To access any hidden tabs of the Navigator pane, select ![More tabs](./index-images/more-tabs-icon.png) (**More tabs**).
 
 The following subsections cover the Navigator pane:
 * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
@@ -208,7 +208,7 @@ document.head.appendChild(script);
 Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS), DevTools saves the **Snippet** to your file system.
 
 There are multiple ways to run a Snippet:
-*  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button](../media/run-snippet-icon.png)).
+*  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button](./index-images/run-snippet-icon.png)).
 *  When DevTools has focus, press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the [Command Menu](../command-menu/index.md), and then type **!**.
 
 Snippets are similar to bookmarklets.
@@ -323,7 +323,7 @@ After submitting the form, `console.log('A')`, which is at global scope, doesn't
 <!-- ------------------------------ -->
 #### Reformatting a minified JavaScript file with pretty-print
 
-To use pretty-print to reformat a file to make it readable, select the **Pretty print** button (![Format](../media/format-icon.png)), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.
+To use pretty-print to reformat a file to make it readable, select the **Pretty print** button (![Format](./index-images/format-icon.png)), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.
 
 ![The Pretty print button](./index-images/minified.png)
 

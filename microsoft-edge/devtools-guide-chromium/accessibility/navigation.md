@@ -289,7 +289,7 @@ The **Accessibility Tree** is presented as an [ARIA tree](https://www.w3.org/TR/
 
 When you click the **Inspect** tool button and move around in the rendered webpage, the Inspect tooltip changes.  To keep the current tooltip and grid color overlay displayed, press and hold **Ctrl+Alt** (Windows, Linux) or **Ctrl+Option** (macOS) while you move around in the rendered webpage.
 
-This technique can be helpful when using a screen magnifier or other assistive technologies.  If you don't make the Inspect tool's tooltip persist, the hover overlay constantly changes when you use the **Inspect tool** (![Inspect tool button](../media/inspect-tool-icon-light-theme.png)).
+This technique can be helpful when using a screen magnifier or other assistive technologies.  If you don't make the Inspect tool's tooltip persist, the hover overlay constantly changes when you use the **Inspect tool** (![Inspect tool button](./navigation-images/inspect-tool-icon-light-theme.png)).
 
 See [Analyze pages using the Inspect tool](../css/inspect.md).
 

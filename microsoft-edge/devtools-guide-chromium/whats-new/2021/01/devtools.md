@@ -50,7 +50,7 @@ See also:
 <!--  Title: Visual font editor in the Styles pane  -->
 <!--  Subtitle: Visual font editor in the Styles pane -->
 
-![Experimental feature](../../../../media/experimental-tag.png)<!-- valid 05/13/2022 -->
+![Experimental feature](./devtools-images/experimental-tag.png)<!-- valid 05/13/2022 -->
 
 When you work with fonts in CSS, use the new visual Font Editor.  You can define fallback fonts, and use sliders to define font weight, size, line-height, and spacing:
 
@@ -496,7 +496,7 @@ See also:
 
 ###### New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)
 
-![Experimental feature](../../../../media/experimental-tag.png)<!-- valid 05/13/2022 -->
+![Experimental feature](./devtools-images/experimental-tag.png)<!-- valid 05/13/2022 -->
 
 The [Advanced Perceptual Contrast Algorithm (APCA)](https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html) replaces the [AA](https://www.w3.org/WAI/WCAG21/quickref#contrast-minimum)/[AAA](https://www.w3.org/WAI/WCAG21/quickref#contrast-enhanced) guidelines contrast ratio in the Color Picker.  The Color Picker is used in the **Styles** tab in the **Elements** tool.
 

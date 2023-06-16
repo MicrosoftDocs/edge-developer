@@ -158,7 +158,7 @@ Use the following steps to debug or test the Media Queries you defined in your C
 
 1. To open DevTools, you can right-click in a webpage and then select **Inspect**.
 
-1. Click the **Toggle device emulation** (![Device Emulation icon](../media/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+M** (Windows, Linux) or **Command+Shift+M** (macOS).
+1. Click the **Toggle device emulation** (![Device Emulation icon](./index-images/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+M** (Windows, Linux) or **Command+Shift+M** (macOS).
 
    <!-- todo: update to show new tooltip: -->
 

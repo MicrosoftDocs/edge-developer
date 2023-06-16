@@ -20,7 +20,7 @@ To try this feature:
 
 1. In the **Sources** tool, in the **Page** tab, select the file that the demo created for you, such as **Coffee2.js**.
 
-1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button, and then select the **Source Maps Monitor** tool.
+1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon](./source-maps-monitor-tool-images/more-tools-icon-light-theme.png)) button, and then select the **Source Maps Monitor** tool.
 
    ![The Source Maps Monitor tool](./source-maps-monitor-tool-images/source-maps-monitor-tool.png)
 

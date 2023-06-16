@@ -32,7 +32,7 @@ The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI 
 
 To open the Command Menu:
 
-*  Click the **Customize and control DevTools** (![Customize icon](../media/customize-devtools-icon-light-theme.png)) menu button, and then select **Run command**:
+*  Click the **Customize and control DevTools** (![Customize icon](./index-images/customize-devtools-icon-light-theme.png)) menu button, and then select **Run command**:
 
    ![The Run Command](./index-images/command-menu-options-run-command.png)
 

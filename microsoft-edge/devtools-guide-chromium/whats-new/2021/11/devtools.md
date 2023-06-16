@@ -24,7 +24,7 @@ To give this new UI a try in Microsoft Edge version 96, select **Settings** (![t
 
 Starting with Microsoft Edge version 96, the experiment's checkbox is labeled **Focus Mode** rather than **Focus Mode and DevTools Tooltips**.
 
-This UI is still in development and may change in future versions of Microsoft Edge.  We're eager to hear your feedback about this new DevTools UI.  Send us your feedback by tweeting [@EdgeDevTools](https://twitter.com/edgedevtools).  Or, with the **Focus Mode** experiment turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](../../../media/help-icon-of-focus-mode.png)) > **Feedback**, to show the **Send feedback** window.
+This UI is still in development and may change in future versions of Microsoft Edge.  We're eager to hear your feedback about this new DevTools UI.  Send us your feedback by tweeting [@EdgeDevTools](https://twitter.com/edgedevtools).  Or, with the **Focus Mode** experiment turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](./devtools-images/help-icon-of-focus-mode.png)) > **Feedback**, to show the **Send feedback** window.
 
 ![Focus Mode, including the Activity Bar](./devtools-images/focus-mode.png)
 

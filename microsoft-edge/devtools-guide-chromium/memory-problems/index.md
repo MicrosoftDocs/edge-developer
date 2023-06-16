@@ -89,7 +89,7 @@ You can also use the Performance panel as another starting point in your investi
 
 1. [Make a recording](../evaluate-performance/reference.md#record-performance).
 
-It's a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, click the **collect garbage** ![force garbage collection](../media/collect-garbage-icon.png) button while recording.
+It's a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, click the **collect garbage** ![force garbage collection](./index-images/collect-garbage-icon.png) button while recording.
 
 To demonstrate memory recordings, consider the following code:
 
@@ -112,7 +112,7 @@ First, an explanation of the user interface.  The **HEAP** graph in the **Overvi
 
 Now, an analysis of the code compared with the previous figure.  If you review the node counter (the green graph), it matches up cleanly with the code.  The node count increases in discrete steps.  You can presume that each increase in the node count is a call to `grow()`.
 
-The JS heap graph (the blue graph) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection (click the  **collect garbage** ![force garbage collection](../media/collect-garbage-icon.png) button).
+The JS heap graph (the blue graph) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection (click the  **collect garbage** ![force garbage collection](./index-images/collect-garbage-icon.png) button).
 
 As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected: the JavaScript code is creating the DOM nodes on every button you click, and is doing a lot of work when it creates the string of one million characters.
 
