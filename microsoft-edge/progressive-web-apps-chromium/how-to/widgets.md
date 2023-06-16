@@ -42,7 +42,7 @@ To enable developing widgets on your local machine:
 
 1. In the **Search flags** text box, this time type **Experimental Web Platform Features**, and then in the **Experimental Web Platform Features** dropdown menu, select **Enabled**:
 
-   ![Enabling the Experimental Web Platform Features flag in the edge://flags page](../media/experimental-features-flag.png)
+   ![Enabling the Experimental Web Platform Features flag in the edge://flags page](./widgets-images/experimental-features-flag.png)
 
 1. Click the **Restart** button, which appears in the lower right.
 
