@@ -53,7 +53,9 @@ Every extension for Microsoft Edge has a JSON-formatted manifest file, named `ma
 <!-- ------------------------------ -->
 #### Permissions and supported API
 
-A new supported API field, `side_panel`, should be included in the extension manifest file along with the permission `sidePanel`.
+The permission sidePanel should be included in the extension manifest file.
+
+Developers can use the supported API field, side_panel, to set the sidepanel option in their extension. 
 
 `manifest.json`:
 ```json
@@ -85,7 +87,7 @@ A sidebar can be set as the default, to show the same extension throughout all t
 
 ```json
 {
-  "name": "My side panel extension",
+  "name": "My sidebar extension",
   ...
   "side_panel": {
     "default_path": "sidepanel.html"
@@ -166,7 +168,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
 });
 ```
 
-When a user temporarily switches to a tab where the sidebar is not enabled, the sidebar will be hidden.
+When a user switches to a tab where the sidebar is not enabled, the sidebar will be hidden.
 
 
 <!-- ------------------------------ -->
@@ -178,7 +180,7 @@ By declaring the `action` key in the manifest, you can allow users to open the s
 
 ```json
 {
-  "name": "My side panel extension",
+  "name": "My sidebar extension",
   ...
    "action": {
     "default_title": "Click to open panel"
