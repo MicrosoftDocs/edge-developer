@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 01/03/2023
+ms.date: 06/14/2023
 ---
 # Build PWA-driven widgets
 
@@ -28,19 +28,29 @@ In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and 
 
 Widgets are experimentally supported starting with Microsoft Edge 108.
 
-To enable widget support in Microsoft Edge for your website:
+#### Enable local development of widgets
 
-1. Enroll your site in the [Web App Widgets](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-widgets/registration/) origin trial. To learn more about origin trials, see [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
+To enable developing widgets on your local machine:
+
+1. Install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
 
 1. In Microsoft Edge, go to `edge://flags`.
 
-1. In the **Search flags** text field, type **Web App widgets**.
-
-1. In the **Web App widgets** dropdown menu, select **Enabled**.
-
-1. Click the **Restart** button which appears in the lower right:
+1. In the **Search flags** text box, type **Web App widgets**, and then in the **Web App widgets** dropdown menu, select **Enabled**:
 
    ![Enabling the Web App widgets flag in the edge://flags page](./widgets-images/widgets-flag.png)
+
+1. In the **Search flags** text box, this time type **Experimental Web Platform Features**, and then in the **Experimental Web Platform Features** dropdown menu, select **Enabled**:
+
+   ![Enabling the Experimental Web Platform Features flag in the edge://flags page](../media/experimental-features-flag.png)
+
+1. Click the **Restart** button, which appears in the lower right.
+
+#### Enable widgets for your users
+
+To enable widget support in Microsoft Edge for users of your production PWA, enroll your site in the [Web App Widgets](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-widgets/registration/) origin trial.
+
+To learn more about origin trials, see [Enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial) in _Experimental features and origin trials_.
 
 
 <!-- ====================================================================== -->
