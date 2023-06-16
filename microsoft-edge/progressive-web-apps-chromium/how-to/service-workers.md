@@ -335,7 +335,7 @@ To learn more, see [Use the Background Fetch API to fetch large files when the a
 
 Push messages can be sent to your users without them having to be using the app at the time. A Service Worker can listen to push messages that are sent by your server even if the app isn't running, and display a notification in the operating system's notification center.
 
-To learn more, see [Add push notifications to your PWA](notifications-badges.md#add-push-notifications-to-your-pwa).
+To learn more, see [Re-engage users with push messages](push.md).
 
 
 <!-- ====================================================================== -->
