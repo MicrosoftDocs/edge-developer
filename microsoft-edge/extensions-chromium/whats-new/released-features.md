@@ -9,15 +9,13 @@ ms.date: 06/19/2023
 ---
 # Released features for Microsoft Edge Add-ons
 
-<!-- todo: add Sidebar -->
-
 The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
 
 
 <!-- ====================================================================== -->
 ## Sidebar
 
-<!-- todo: add Sidebar summary sentence, link -->
+The sidebar feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.  See [Add a sidebar UI to an extension](../publish/sidebar.md).
 
 *Released June 2023*
 
@@ -131,4 +129,4 @@ By clicking the extension certification report link, you can view and download t
 <!-- ====================================================================== -->
 ## See also
 
-* For upcoming Partner Center features or updates, see [Roadmap for Microsoft Edge Add-ons](roadmap.md).
+* [Roadmap for Microsoft Edge Add-ons](roadmap.md) - upcoming Partner Center features or updates.

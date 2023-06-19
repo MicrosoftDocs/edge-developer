@@ -1,13 +1,13 @@
 ---
-title: Sidebar Feature
-description: A new sidebar feature is being added to the Microsoft Edge Browser where extensions can be displayed with their own UI.
+title: Add a sidebar UI to an extension
+description: The sidebar (or side panel) feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/19/2023
 ---
-# Sidebar Feature
+# Add a sidebar UI to an extension
 
 The sidebar feature of Microsoft Edge Add-Ons (extensions) enables users of your extension to view more information alongside the main content of a webpage.
 
@@ -240,8 +240,6 @@ Extensions can also be opened in the sidebar by right-clicking an extension's sh
 <!-- ====================================================================== -->
 ## See also
 
-* [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)<!-- todo: add the `sidebar` API -->
-* [Declare API permissions in extension manifests](../developer-guide/declare-permissions.md)<!-- todo: Add the `sidebar` permission -->
-* [Manifest file format for extensions](../getting-started/manifest-format.md)<!-- todo: add manifest code -->
-* [Released features for Microsoft Edge Add-ons](../whats-new/released-features.md)<!-- todo: add Sidebar -->
-* [Roadmap for Microsoft Edge Add-ons](../whats-new/roadmap.md)<!-- todo: add new things that will be coming -->
+* [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
+* [Declare API permissions in extension manifests](../developer-guide/declare-permissions.md)
+* [Manifest file format for extensions](../getting-started/manifest-format.md)

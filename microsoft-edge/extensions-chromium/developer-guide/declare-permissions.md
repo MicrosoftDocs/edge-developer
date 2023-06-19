@@ -22,8 +22,6 @@ ms.date: 06/19/2023
    limitations under the License.  -->
 # Declare API permissions in extension manifests
 
-<!-- todo: Add the permission -->
-
 To use most of the `chrome.*` APIs, your extension must declare its intent in the `permissions` fields of the manifest.  An extension can declare permissions using a permission string from the table that follows, or use a pattern to match similar strings.  Permissions help to constrain your extension if it gets compromised by malware.  Some permissions are displayed to users for their consent before installation of the extension, or at runtime, as needed; these are Permission Warnings.
 
 If an API requires you to declare permissions in the manifest, see the documentation for that API to understand the needed permissions.  For example, the Storage API page describes how to declare the `storage` permission.
@@ -91,7 +89,7 @@ The following table lists the currently available permission strings to use in y
 | `scripting` | Gives your extension access to the `chrome.scripting` API. |
 | `search` | Gives your extension access to the `chrome.search` API. |
 | `sessions` | Gives your extension access to the `chrome.sessions` API. |
-| `sidePanel` | Gives your extension access to the `chrome.sidePanel` API. |
+| `sidePanel` | Gives your extension access to the `chrome.sidePanel` API.  See [Add a sidebar UI to an extension](../publish/sidebar.md). |
 | `signedInDevices` | Gives your extension access to the `chrome.signedInDevices` API. |
 | `storage` | Gives your extension access to the `chrome.storage` API. |
 | `system.cpu` | Gives your extension access to the `chrome.system.cpu` API. |
@@ -122,4 +120,6 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 
 <!-- ====================================================================== -->
-<!-- ## See also -->
+## See also
+
+* [Overview of Microsoft Edge extensions](../index.md)
