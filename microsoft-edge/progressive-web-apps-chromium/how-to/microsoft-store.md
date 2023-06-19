@@ -39,11 +39,11 @@ To create an app reservation:
     1.  Select **New product** > **MSIX or PWA app**.
     1.  When prompted, enter a name for your reservation, and then select **Reserve product name**.
 
-    ![Create an app reservation on Microsoft Partner Center](../media/windows-partner-center-new-product.png)
+    ![Create an app reservation on Microsoft Partner Center](./microsoft-store-images/windows-partner-center-new-product.png)
 
 1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, select **Product management** > **Product Identity**.
 
-    ![Copy your publisher information from Microsoft Partner Center](../media/windows-partner-center-publisher-info.png)
+    ![Copy your publisher information from Microsoft Partner Center](./microsoft-store-images/windows-partner-center-publisher-info.png)
     <!-- lightbox justified because large detailed image -->
 
 1.  Copy and save the following values.
@@ -68,7 +68,7 @@ To generate an app package:
     *   **Publisher ID**
     *   **Publisher Display Name**
 
-    ![Paste publisher information into PWABuilder](../media/pwabuilder-windows-package-options.png)
+    ![Paste publisher information into PWABuilder](./microsoft-store-images/pwabuilder-windows-package-options.png)
 
 1.  Select **Generate**.
 1.  To download your Windows app package, select **Download**.
@@ -84,7 +84,7 @@ To submit your app to the Microsoft Store:
 1.  Select your app.
 1.  Click the **Start your submission** button.
 
-    ![Start a new app submission on Microsoft Partner Center](../media/windows-partner-center-start-submission.png)
+    ![Start a new app submission on Microsoft Partner Center](./microsoft-store-images/windows-partner-center-start-submission.png)
 
 1.  When you're prompted, provide information about your app, such as pricing and age rating.
 
@@ -114,7 +114,7 @@ By default, a PWA that's installed from the Microsoft Store displays an addition
 
 The following figure shows the UI that is introduced when a user moves outside the scope of a PWA. 
 
-![The additional UI with URL and page title when the app is redirected to another domain](../media/locale-redirection-additional-ui.png)
+![The additional UI with URL and page title when the app is redirected to another domain](./microsoft-store-images/locale-redirection-additional-ui.png)
 
 ### Domain redirection with browser-installed PWAs
 

@@ -24,7 +24,7 @@ For more information, see [Update .css files from within the Styles tab (CSS mir
 
 To provide feedback, in Visual Studio Code, in the **Activity Bar**, click **Microsoft Edge Tools**, and then in the **CSS Mirror Editing** section, click the **leaving feedback here** link.
 
-![Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code](../../media/2021/10/css-mirror-editing-button.png)
+![Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code](./devtools-images/css-mirror-editing-button.png)
 
 
 <!-- ====================================================================== -->
@@ -38,7 +38,7 @@ The **Search for this message on the Web** icon is now available for all errors 
 For more information, see [Search for Console errors on the web](../09/devtools.md#search-for-console-errors-on-the-web).
 <!-- todo: cover in regular doc -->
 
-![All error and warning messages in the Console now have a Search Web icon](../../media/2021/10/console-message-search-web-button.png)
+![All error and warning messages in the Console now have a Search Web icon](./devtools-images/console-message-search-web-button.png)
 
 See also:
 * [Search the web for a Console error message string](../../../console/index.md#search-the-web-for-a-console-error-message-string) in _Console overview_.
@@ -61,7 +61,7 @@ In Microsoft Edge version 95, this issue has been fixed.  Selecting the **User a
 
 To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from your website](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints).
 
-![Settings > Devices > Setting User-Agent Client Hints](../../media/2021/10/keyboard-define-ua-client-hints.png)
+![Settings > Devices > Setting User-Agent Client Hints](./devtools-images/keyboard-define-ua-client-hints.png)
 
 To view the history of this feature in the Chromium open-source project, see [Issue 1243827: User agent client hints form accessibility](https://bugs.chromium.org/p/chromium/issues/detail?id=1243827).
 
@@ -78,11 +78,11 @@ In Microsoft Edge version 95, these problems have been fixed.  Filtering to a la
 
 When the filter string matches a group label, the group and its members are displayed:
 
-![When the filter string matches a group label, the group and its members are displayed](../../media/2021/10/filter-matches-group-label.png)
+![When the filter string matches a group label, the group and its members are displayed](./devtools-images/filter-matches-group-label.png)
 
 When the filter string doesn't match a group label, neither the group nor its members are displayed:
 
-![When the filter string doesn't match a group label, neither the group nor its members are displayed](../../media/2021/10/filter-matches-group-label-asdf.png)
+![When the filter string doesn't match a group label, neither the group nor its members are displayed](./devtools-images/filter-matches-group-label-asdf.png)
 
 See also:
 * [group](../../../../devtools-guide-chromium/console/api.md#group) in _Console object API Reference_.
@@ -116,11 +116,11 @@ link.search = `?access=${link.access}`;
 
 After entering the above code in the **Console**, try logging `link`.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/docs/Web/API) (such as `URL`) that have many inherited properties:
 
-![Own properties are bold and sorted first](../../media/2021/10/improved-display-properties.png)
+![Own properties are bold and sorted first](./devtools-images/improved-display-properties.png)
 
 In the **Properties** pane of the **Elements** tool, the list of properties is now flattened for a better experience when debugging DOM properties, especially for [Web components](https://www.webcomponents.org/introduction):
 
-![Flattened list of properties](../../media/2021/10/flattened-list-of-properties.png)
+![Flattened list of properties](./devtools-images/flattened-list-of-properties.png)
 
 See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
@@ -136,7 +136,7 @@ For the history of this feature, see Chromium issues [1076820](https://crbug.com
 
 In the **Snippets** tab of the **Sources** tool, previously, the snippets weren't sorted.  Snippets are now sorted alphabetically:
 
-![Sorted snippets in the Sources panel](../../media/2021/10/snippets-sorted-alphbetically.png)
+![Sorted snippets in the Sources panel](./devtools-images/snippets-sorted-alphbetically.png)
 
 See also:
 * [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md)
@@ -152,7 +152,7 @@ For the history of this feature, see Chromium issue: [1243976](https://crbug.com
 
 The **Command Menu** has been enhanced to make it easier to search for a file.  When you press **Ctrl+P** in Windows and Linux or **Command+P** in macOS, the **Command Menu** now displays filenames in bold, along with an icon indicating the file type:
 
-![Command Menu showing filenames in bold with an icon indicating the file type](../../media/2021/10/command-menu-filenames-bold-icons.png)
+![Command Menu showing filenames in bold with an icon indicating the file type](./devtools-images/command-menu-filenames-bold-icons.png)
 
 See also:
 * [Command Menu](../../../command-menu/index.md)

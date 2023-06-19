@@ -53,7 +53,7 @@ If you want your users to be able to add your app to their mobile homescreens, y
 
 After you have your manifest set up, you can use the **Manifest** pane of the **Application** panel to inspect it.
 
-![The Manifest Pane](../media/manifest-pane.png)
+![The Manifest Pane](./index-images/manifest-pane.png)
 
 *  To look at the manifest source, click the link below **App Manifest** label (`https://airhorner.com/manifest.json` in the previous figure).
 <!-- *  Click the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
@@ -102,7 +102,7 @@ Service workers are a fundamental technology in the future web platform.  They a
 
 The **Service Workers** pane in the **Application** panel is the main place in DevTools to inspect and debug service workers.
 
-![The Service Workers pane](../media/service-workers-pane.png)
+![The Service Workers pane](./index-images/service-workers-pane.png)
 
 *  If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.
 
@@ -141,14 +141,14 @@ If the service worker causes any errors, a new label called **Errors** shows up.
 
 The **Cache Storage** pane provides a read-only list of resources that have been cached using the (service worker) [Cache API](https://developer.mozilla.org/docs/Web/API/Cache).
 
-![The Cache Storage Pane](../media/cache-pane-cache-storage-resources.png)
+![The Cache Storage Pane](./index-images/cache-pane-cache-storage-resources.png)
 
 > [!NOTE]
 > The first time you open a cache and add a resource to it, DevTools may not detect the change.  Refresh the page and to display the cache.
 
 If you have two or more caches open, the caches are displayed under the **Cache Storage** dropdown list, as shown in the following screenshot.
 
-![The Cache Storage dropdown list](../media/cache-pane-cache-storage.png)
+![The Cache Storage dropdown list](./index-images/cache-pane-cache-storage.png)
 
 
 <!-- ====================================================================== -->

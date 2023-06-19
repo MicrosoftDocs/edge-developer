@@ -18,7 +18,7 @@ The first time a user accesses your PWA, its Service Worker is installed. The Se
 
 Service Workers are responsible for intercepting, modifying, and responding to network requests. They can be alerted when the app tries to load a resource from the server, or sends a request to get data from the server. When this happens, a Service Worker can decide to let the request go to the server, or intercept it and return a response from the cache instead.
 
-![High-level architecture diagram showing that the Service Worker is in between the app and the network and cache storage](../media/sw-architecture.png)
+![High-level architecture diagram showing that the Service Worker is in between the app and the network and cache storage](./service-workers-images/sw-architecture.png)
 
 
 <!-- ====================================================================== -->

@@ -24,11 +24,11 @@ To open the **CSS Overview** tool:
 
 1. In the main toolbar, click **More Tools** and select **CSS Overview** from the list.
 
-   ![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing the list of tools from the More Tools button](images/css-overview-tool-open.png)
+   ![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing the list of tools from the More Tools button](./css-overview-tool-images/css-overview-tool-open.png)
 
 1. The **CSS Overview** tool opens and shows a welcome screen.
 
-   ![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing the CSS Overview welcome screen](images/css-overview-tool-welcome.png)
+   ![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing the CSS Overview welcome screen](./css-overview-tool-images/css-overview-tool-welcome.png)
 
 
 <!-- ====================================================================== -->
@@ -36,11 +36,11 @@ To open the **CSS Overview** tool:
 
 Start using the tool by capturing a new report. Click **Capture overview**, the overview report appears.
 
-![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing the CSS Overview report for that site](images/css-overview-tool-report.png)
+![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing the CSS Overview report for that site](./css-overview-tool-images/css-overview-tool-report.png)
 
 If you make changes to your webpage and want to view a new report, click **Clear overview** and then capture a new overview.
 
-![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing a CSS Overview report with the Clear overview button at the top](images/css-overview-tool-clear.png)
+![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing a CSS Overview report with the Clear overview button at the top](./css-overview-tool-images/css-overview-tool-clear.png)
 
 
 <!-- ====================================================================== -->
@@ -56,7 +56,7 @@ The CSS overview report contains information organized into several sections:
 
 To view the sections of the report, use the scrollbar or click the sections in the sidebar:
 
-![TODO demo app on the left, DevTools CSS Overview report on the right with a clickable list of sections and scrollbar](images/css-overview-tool-scroll.png)
+![TODO demo app on the left, DevTools CSS Overview report on the right with a clickable list of sections and scrollbar](./css-overview-tool-images/css-overview-tool-scroll.png)
 
 
 <!-- ------------------------------ -->
@@ -94,11 +94,11 @@ Each font in the **Font info** section contains links to the DOM elements they a
 
 1. Move your mouse over the elements in the list to highlight them in the rendered page.
 
-   ![Microsoft Edge, with the TODO list demo app and DevTools, showing the list of elements for a given font-size, and a highlighted element on hover](images/css-overview-tool-font-element.png)
+   ![Microsoft Edge, with the TODO list demo app and DevTools, showing the list of elements for a given font-size, and a highlighted element on hover](./css-overview-tool-images/css-overview-tool-font-element.png)
 
 1. Click an element to automatically open the **Elements** tool with that element selected.
 
-   ![Microsoft Edge, with the TODO list demo app and DevTools, showing Elements tool, with the right node selected](images/css-overview-tool-elements-tool.png)
+   ![Microsoft Edge, with the TODO list demo app and DevTools, showing Elements tool, with the right node selected](./css-overview-tool-images/css-overview-tool-elements-tool.png)
 
 
 <!-- ------------------------------ -->
@@ -134,11 +134,11 @@ When a CSS codebase becomes complex, keeping track of all the CSS media queries 
 
 1. Click the **X occurrences** link next to it to reveal the corresponding files.
 
-   ![Microsoft Edge, with the TODO list demo app and DevTools, showing the media queries section of the Overview tool, and the list of files that contain a given media query](images/css-overview-tool-media-query.png)
+   ![Microsoft Edge, with the TODO list demo app and DevTools, showing the media queries section of the Overview tool, and the list of files that contain a given media query](./css-overview-tool-images/css-overview-tool-media-query.png)
 
 1. Click one of the files to automatically open the **Sources** tool with that file opened.
 
-   ![Microsoft Edge, with the TODO list demo app and DevTools, showing the Sources tool, with the file that contains a media query opened, at the right line](images/css-overview-tool-sources-tool.png)
+   ![Microsoft Edge, with the TODO list demo app and DevTools, showing the Sources tool, with the file that contains a media query opened, at the right line](./css-overview-tool-images/css-overview-tool-sources-tool.png)
 
 
 <!-- ------------------------------ -->
@@ -156,7 +156,7 @@ Non-simple selectors are more complicated and tend to match more elements, poten
 
 To see the list of non-simple selectors, on the overview report, click **Non-simple selectors** in the sidebar to scroll to the relevant section of the report:
 
-![The Non-simple selectors list in the CSS Overview tool](./images/non-simple-selectors-in-css-overview.png)
+![The Non-simple selectors list in the CSS Overview tool](./css-overview-tool-images/non-simple-selectors-in-css-overview.png)
 
 From here, you can further analyze the impact of your changes and individual selector performance by using the **Selector Stats** feature in the **Performance** tool.
 
@@ -183,15 +183,15 @@ To find color contrast issues:
 
 1. Scroll down to the **Contrast issues** sub-section to view all issues.
 
-   ![Microsoft Edge, with the TODO list demo app and DevTools, showing a list of contrast issues in the CSS Overview report](images/css-overview-tool-contrast-issues.png)
+   ![Microsoft Edge, with the TODO list demo app and DevTools, showing a list of contrast issues in the CSS Overview report](./css-overview-tool-images/css-overview-tool-contrast-issues.png)
 
 1. To view the elements that have a particular color contrast issue, choose the issue you want to fix and click **Text**. The corresponding elements are listed.
 
-   ![Microsoft Edge, with the TODO list demo app and DevTools, showing a list of elements with a color contrast issue](images/css-overview-tool-contrast-issues-elements.png)
+   ![Microsoft Edge, with the TODO list demo app and DevTools, showing a list of elements with a color contrast issue](./css-overview-tool-images/css-overview-tool-contrast-issues-elements.png)
 
 1. To open the corresponding element in the **Elements** tool, click an element in the list.
   
-   ![Microsoft Edge, with the TODO list demo app and DevTools, showing the Elements tool, with the color-contrast issue element selected](images/css-overview-tool-contrast-issues-elements-tool.png)
+   ![Microsoft Edge, with the TODO list demo app and DevTools, showing the Elements tool, with the color-contrast issue element selected](./css-overview-tool-images/css-overview-tool-contrast-issues-elements-tool.png)
 
 To help fix contrast issues, check out the [Text contrast](../accessibility/reference.md#text-contrast) section of the accessibility-testing DevTools features.
 

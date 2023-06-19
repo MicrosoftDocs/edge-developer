@@ -29,7 +29,7 @@ If you don't have an existing WebView2 project, clone the WebView2Samples repo i
 
 Once you've cloned the repo, build the project in Visual Studio.  It should look like the following figure.
 
-![WebView2API Sample app](../media/webdriver/sample-app.png)
+![WebView2API Sample app](./webdriver-images/sample-app.png)
 
 
 <!-- ====================================================================== -->
@@ -51,21 +51,21 @@ By this point, you've installed the WebView2 Runtime, built a WebView2 project, 
 
 1. Start by creating a new **C# .NET Framework** project in **Visual Studio**.  Select **Next** on the bottom right-hand corner to continue.
 
-   ![Create a new project](../media/webdriver/new-project.png)
+   ![Create a new project](./webdriver-images/new-project.png)
 
 1. Give your project a **Project name**, save it to your preferred **Location**, and then select **Create**.
 
-   ![Configure your new project](../media/webdriver/app-create.png)
+   ![Configure your new project](./webdriver-images/app-create.png)
 
    A new project is created, with all the code placed in the `Program.cs` file.
 
-   ![New project](../media/webdriver/start-app.png)
+   ![New project](./webdriver-images/start-app.png)
 
 1. Next, add Selenium to the project; install Selenium by using the Selenium.WebDriver NuGet package as follows.  To download the Selenium.WebDriver NuGet package, in **Visual Studio**, select **Project** > **Manage NuGet Packages**.
 
 1. Select the **Browse** tab.  The following screen appears.
 
-   ![Download NuGet package](../media/webdriver/download-nuget.png)
+   ![Download NuGet package](./webdriver-images/download-nuget.png)
 
 1. In the **Package source** dropdown list, select **nuget.org**.
 
@@ -75,7 +75,7 @@ By this point, you've installed the WebView2 Runtime, built a WebView2 project, 
 
 1. In the detail window on the right, make sure the **Version** is set to **4.0.0** or later, and then select **Install**.  NuGet downloads Selenium to your machine.
 
-   ![Manage NuGet package](../media/webdriver/nuget.png)
+   ![Manage NuGet package](./webdriver-images/nuget.png)
 
    To learn more about the Selenium.WebDriver NuGet package, see [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver).
 
@@ -175,7 +175,7 @@ To drive WebView2 with Selenium and Microsoft Edge WebDriver:
    }
    ```
 
-   ![Selenium running WebView2](../media/webdriver/microsoft.png)
+   ![Selenium running WebView2](./webdriver-images/microsoft.png)
 
 Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge WebDriver, per the "launch" approach.
 
@@ -233,11 +233,11 @@ For more info about the `DebuggerAddress` property of the `EdgeOptions` object, 
 
    This WebView2 feature is currently only supported in the Canary preview channel of Microsoft Edge.  Set the enviroment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1`, to ensure that the WebView2 version is Canary.  For more information, see [Using an environment variable](./set-preview-channel.md#using-an-environment-variable) in _Test upcoming APIs and features_.
 
-   ![Settings for UWP app](../media/webdriver/sample-uwp-settings.png)
+   ![Settings for UWP app](./webdriver-images/sample-uwp-settings.png)
  
 1. After you've launched the UWP WebView2 app, go to `http://<Device Portal URL>/msedge`.  For example, the following screenshot shows `localhost:50080/msedge`:
 
-   ![Process ID of a running UWP app](../media/webdriver/sample-process-id.png)
+   ![Process ID of a running UWP app](./webdriver-images/sample-process-id.png)
 
 1. Note the `browserProcessId` for the WebView2 process that you want to attach Microsoft Edge WebDriver to.  For example, the above screenshot shows the `browserProcessId` as `47860`.
 
