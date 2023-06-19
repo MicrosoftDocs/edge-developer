@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/15/2023
+ms.date: 06/19/2023
 ---
 # Sidebar Feature
 
@@ -53,9 +53,7 @@ Every extension for Microsoft Edge has a JSON-formatted manifest file, named `ma
 <!-- ------------------------------ -->
 #### Permissions and supported API
 
-The permission sidePanel should be included in the extension manifest file.
-
-Developers can use the supported API field, side_panel, to set the sidepanel option in their extension. 
+Use the `side_panel` API field to set the side panel option in your extension.  Include the `sidePanel` permission in the extension manifest file:
 
 `manifest.json`:
 ```json
