@@ -53,7 +53,7 @@ navigator.setAppBadge();
 navigator.setAppBadge(42);
 ```
 
-![A PWA icon in the Windows Taskbar, with a badge showing the number 42](../media/app-badge-in-taskbar.png)
+![A PWA icon in the Windows Taskbar, with a badge showing the number 42](./notifications-badges-images/app-badge-in-taskbar.png)
 
 The `setAppBadge` function returns a Promise, which can be used to know when the badge was added, and to catch potential errors, as follows:
 
@@ -129,7 +129,7 @@ Once you know that the API is supported and the user has accepted notifications,
 const notification = new Notification("Hello World!");
 ```
 
-![A text-only notification](../media/notification-text-only.png)
+![A text-only notification](./notifications-badges-images/notification-text-only.png)
 
 The above code displays a text-only notification message, but you can also customize the message by including additional `body` and `icon` properties:
 
@@ -140,7 +140,7 @@ const notification = new Notification("Hello World!", {
 });
 ```
 
-![A notification with some text and an image](../media/notification-with-image.png)
+![A notification with some text and an image](./notifications-badges-images/notification-with-image.png)
 
 You can also display notifications from your app's service worker. This is useful because the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function:
 
@@ -171,7 +171,7 @@ self.registration.showNotification("Your content is ready", {
 });
 ```
 
-![A notification with some text, an image, and two actions](../media/notification-with-actions.png)
+![A notification with some text, an image, and two actions](./notifications-badges-images/notification-with-actions.png)
 
 When the user clicks one of the action buttons, your PWA can handle the click by listening for the `notificationclick` event.  When a `notificationclick` event is received, close the notification and run some code:
 

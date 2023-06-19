@@ -11,6 +11,6 @@ ms.date: 05/10/2022
 
 Use the Rendering tool to see what your webpage looks like with different display options or vision deficiencies:
 
-![The Rendering tool, with the 'Layer borders' checkbox selected](images/rendering-tool.png)
+![The Rendering tool, with the 'Layer borders' checkbox selected](./rendering-tool-images/rendering-tool.png)
 
 See [Emulate dark or light schemes in the rendered page](../accessibility/preferred-color-scheme-simulation.md).
