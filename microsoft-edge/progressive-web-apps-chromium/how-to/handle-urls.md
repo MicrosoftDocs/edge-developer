@@ -18,7 +18,7 @@ Progressive Web Apps (PWAs) can also handle links in a similar way.
 <!-- ====================================================================== -->
 ## Automatic link handling
 
-When Microsoft Edge is your default browser and you install a PWA using Microsoft Edge, all the links that refer to content that's within the scope of this PWA will automatically launch it instead of the web browser.
+When Microsoft Edge is your default browser and you install a PWA by using Microsoft Edge, all the links that refer to content that's within the scope of this PWA will automatically launch the PWA instead of launching the web browser.
 
 No code is required for automatic link handling to work, but end users can opt-out of automatic link handling. To opt-out of automatic link handling:
 
