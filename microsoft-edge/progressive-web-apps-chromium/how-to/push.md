@@ -141,17 +141,17 @@ To test push notifications for your PWA:
 
 1.  Go to your PWA at `http://localhost:3000`.  When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow your PWA to show notifications.  Select **Allow**.
 
-    ![Permission dialog for enabling notifications](../media/notification-permission.png)
+    ![Permission dialog for enabling notifications](./push-images/notification-permission.png)
 
 1.  Simulate a server-side push notification, as follows.  With your PWA opened at `http://localhost:3000` in your browser, select **F12** to open DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.
 
     The push notification is displayed near the taskbar.
 
-    ![Push a notification from DevTools](../media/devtools-push.png)
+    ![Push a notification from DevTools](./push-images/devtools-push.png)
 
     If you don't select (or _activate_) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.
 
-    ![Notifications in Windows Action Center](../media/windows-action-center.png)
+    ![Notifications in Windows Action Center](./push-images/windows-action-center.png)
 
 
 <!-- ====================================================================== -->
