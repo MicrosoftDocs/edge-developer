@@ -848,7 +848,7 @@
             - name: Create an extension that customizes the DevTools UI
               href: extensions-chromium/developer-guide/devtools-extension.md
 
-            - name: Add a sidebar UI to an extension
+            - name: Add an extension to the sidebar
               href: extensions-chromium/developer-guide/sidebar.md
               displayName: Sidebar extensions
 

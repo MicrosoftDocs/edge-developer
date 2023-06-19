@@ -1,5 +1,5 @@
 ---
-title: Add a sidebar UI to an extension
+title: Add an extension to the sidebar
 description: The sidebar (or side panel) feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/19/2023
 ---
-# Add a sidebar UI to an extension
+# Add an extension to the sidebar
 
 The sidebar feature of Microsoft Edge Add-Ons (extensions) enables users of your extension to view more information alongside the main content of a webpage.
 

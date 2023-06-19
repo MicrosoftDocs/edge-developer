@@ -89,7 +89,7 @@ The following table lists the currently available permission strings to use in y
 | `scripting` | Gives your extension access to the `chrome.scripting` API. |
 | `search` | Gives your extension access to the `chrome.search` API. |
 | `sessions` | Gives your extension access to the `chrome.sessions` API. |
-| `sidePanel` | Gives your extension access to the `chrome.sidePanel` API.  See [Add a sidebar UI to an extension](../developer-guide/sidebar.md). |
+| `sidePanel` | Gives your extension access to the `chrome.sidePanel` API.  See [Add an extension to the sidebar](../developer-guide/sidebar.md). |
 | `signedInDevices` | Gives your extension access to the `chrome.signedInDevices` API. |
 | `storage` | Gives your extension access to the `chrome.storage` API. |
 | `system.cpu` | Gives your extension access to the `chrome.system.cpu` API. |

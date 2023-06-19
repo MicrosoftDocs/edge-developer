@@ -15,7 +15,7 @@ The following features or updates have been launched on [Partner Center](https:/
 <!-- ====================================================================== -->
 ## Sidebar
 
-The sidebar feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.  See [Add a sidebar UI to an extension](../developer-guide/sidebar.md).
+The sidebar feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.  See [Add an extension to the sidebar](../developer-guide/sidebar.md).
 
 *Released June 2023*
 
