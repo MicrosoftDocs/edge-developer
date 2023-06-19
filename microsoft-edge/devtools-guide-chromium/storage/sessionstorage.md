@@ -30,19 +30,19 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.
 
-   ![The Manifest pane](../media/storage-application-manifest.png)
+   ![The Manifest pane](./sessionstorage-images/storage-application-manifest.png)
 
 1. Expand the **Session Storage** menu.
 
-   ![The Session Storage Menu](../media/storage-application-storage-session-storage.png)
+   ![The Session Storage Menu](./sessionstorage-images/storage-application-storage-session-storage.png)
 
 1. Click a domain to view the key-value pairs.
 
-   ![The sessionStorage key-value pairs](../media/storage-application-storage-session-storage-domain.png)
+   ![The sessionStorage key-value pairs](./sessionstorage-images/storage-application-storage-session-storage-domain.png)
 
 1. Click a row of the table to view the value in the viewer below the table.
 
-   ![View the value of the x-sid key](../media/storage-application-storage-session-storage-domain-key-value-selected.png)
+   ![View the value of the x-sid key](./sessionstorage-images/storage-application-storage-session-storage-domain-key-value-selected.png)
 
 
 <!-- ====================================================================== -->
@@ -52,7 +52,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.
 
-   ![The empty part of the table to double-click in order to create a new key-value pair](../media/storage-application-storage-session-storage-domain-key-value-new.png)
+   ![The empty part of the table to double-click in order to create a new key-value pair](./sessionstorage-images/storage-application-storage-session-storage-domain-key-value-new.png)
 
 
 <!-- ====================================================================== -->
@@ -62,7 +62,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. Double-click a cell in the **Key** or **Value** column to edit that key or value.
 
-   ![Edit a sessionStorage key](../media/storage-application-storage-session-storage-domain-key-value-edit.png)
+   ![Edit a sessionStorage key](./sessionstorage-images/storage-application-storage-session-storage-domain-key-value-edit.png)
 
 
 <!-- ====================================================================== -->
@@ -72,7 +72,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. Click the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
 
-1. Press `Delete` or click **Delete Selected** (![Delete Selected](../media/delete-icon.png)).
+1. Press `Delete` or click **Delete Selected** (![Delete Selected](./sessionstorage-images/delete-icon.png)).
 
 
 <!-- ====================================================================== -->
@@ -80,7 +80,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).
 
-1. Click **Clear All** (![Clear All](../media/clear-icon.png)).
+1. Click **Clear All** (![Clear All](./sessionstorage-images/clear-icon.png)).
 
 
 <!-- ====================================================================== -->
@@ -90,11 +90,11 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 1. Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `sessionStorage` key-value pairs of a domain other than the page you are on.
 
-   ![Change the JavaScript context of the Console](../media/storage-console-domain-selection.png)
+   ![Change the JavaScript context of the Console](./sessionstorage-images/storage-console-domain-selection.png)
 
 1. Run your `sessionStorage` expressions in the **Console**, the same as your JavaScript.
 
-   ![Interact with sessionStorage from the Console](../media/storage-console-session-storage-keys.png)
+   ![Interact with sessionStorage from the Console](./sessionstorage-images/storage-console-session-storage-keys.png)
 
 
 <!-- ====================================================================== -->

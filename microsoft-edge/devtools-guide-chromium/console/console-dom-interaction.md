@@ -25,11 +25,11 @@ To reference the header of the webpage:
    document.querySelector('header')
    ```
 
-   ![To get a reference to the header in console, use 'document.querySelector'](../media/console-dom-get-reference.png)
+   ![To get a reference to the header in console, use 'document.querySelector'](./console-dom-interaction-images/console-dom-get-reference.png)
 
 1. In the **Console**, hover over the resulting HTML `<header>` element, or press **Shift+Tab**.  In the rendered webpage, DevTools highlights the header:
 
-   ![DevTools highlights the section you select in the Console](../media/console-dom-highlight-element.png)
+   ![DevTools highlights the section you select in the Console](./console-dom-interaction-images/console-dom-highlight-element.png)
 
 
 <!-- ====================================================================== -->
@@ -47,31 +47,31 @@ You can manipulate the webpage from the **Console**, as follows.  In this exampl
 
    A green border appears around the header:
 
-   ![Adding a border to an element by using the Console](../media/console-dom-add-border.png)
+   ![Adding a border to an element by using the Console](./console-dom-interaction-images/console-dom-add-border.png)
 
 
 ### Get a direct reference an element
 
 Depending on the complexity of the webpage, it can be daunting to find the right element to manipulate.  But you can use the **Inspect** tool to help you.  Suppose you want to manipulate the **Documentation** region within the header of the rendered page:
 
-![Display the element that you inspect on the screen](../media/console-dom-highlight-documentation.png)
+![Display the element that you inspect on the screen](./console-dom-interaction-images/console-dom-highlight-documentation.png)
 
 
 To get a direct reference to the element that you want to manipulate:
 
 1. In DevTools, click the **Inspect** tool, and then in the rendered webpage, hover over the element:
 
-   ![To select an element, use the Inspect tool](../media/console-dom-use-inspector-to-get-element.png)
+   ![To select an element, use the Inspect tool](./console-dom-interaction-images/console-dom-use-inspector-to-get-element.png)
 
 1. Click the element on the page, and DevTools jumps to the **Elements** tool.
 
 1. Click the `...` menu next to the element in the DOM tree:
 
-   ![The clicked element appears in the DOM tree of the Elements tool.  Click the overflow menu to get more features](../media/console-dom-overflow-menu-in-elements.png)
+   ![The clicked element appears in the DOM tree of the Elements tool.  Click the overflow menu to get more features](./console-dom-interaction-images/console-dom-overflow-menu-in-elements.png)
 
 1. Right-click the element in the DOM tree and then select **Copy** > **Copy JS Path**.
 
-   ![Copy the JavaScript path from an element in the DOM tree of the Elements tool](../media/console-dom-copy-JS-path.png)
+   ![Copy the JavaScript path from an element in the DOM tree of the Elements tool](./console-dom-interaction-images/console-dom-copy-JS-path.png)
 
    <!-- could be useful to have code listings.  test this:
    Here's the JS path you copied:
@@ -90,7 +90,7 @@ To get a direct reference to the element that you want to manipulate:
 
 1. Change the text of the link to `My Playground`.  To do that, add `.textContent = "My Playground"` to the JavaScript path that you previously pasted:
 
-   ![Using the Console to change the content of an element](../media/console-dom-change-content.png)
+   ![Using the Console to change the content of an element](./console-dom-interaction-images/console-dom-change-content.png)
 
 Use any JavaScript DOM manipulations you want in the **Console**.  To make it more convenient, the **Console** comes with a few helper utility methods.
 
@@ -124,13 +124,13 @@ The `$` has special powers in **Console**, and you may remember that from jQuery
    
    `$$('a')` is short for `document.querySelectorAll('a')`.
 
-   ![Get all links in the webpage and display the result as a table](../media/console-dom-get-all-links.png)
+   ![Get all links in the webpage and display the result as a table](./console-dom-interaction-images/console-dom-get-all-links.png)
 
    However, suppose you don't want to display all the information, but you want to grab it as data and then select only some of the data.
 
    The `$$('a')` shortcut helps with that: it selects the anchor links and all of the properties for each anchor link.  But the problem is that you only want the anchor links and the related text, not all the properties of the anchor links.
 
-   ![The $$ shortcut returns far too much information](../media/console-dom-too-much-link-information.png)
+   ![The $$ shortcut returns far too much information](./console-dom-interaction-images/console-dom-too-much-link-information.png)
 
    To solve that problem, the `$$` shortcut has an interesting extra feature: instead of returning a pure `NodeList` like `document.querySelectorAll()`, the `$$` shortcut gives you all of the `Array` methods, including `map()`.
 
@@ -144,7 +144,7 @@ The `$` has special powers in **Console**, and you may remember that from jQuery
 
    The above code returns an `Array` of all the links, as objects with `url` and `text` properties.
 
-   ![Use map on $$ to filter information down to the bare minimum](../media/console-dom-filter-link-data.png)
+   ![Use map on $$ to filter information down to the bare minimum](./console-dom-interaction-images/console-dom-filter-link-data.png)
 
    You aren't done yet; several links are internal links to the webpage or have empty text.
 
@@ -158,7 +158,7 @@ The `$` has special powers in **Console**, and you may remember that from jQuery
    })
    ```
 
-   ![Get the links that aren't empty and are external](../media/console-dom-filter-out-empty-links.png)
+   ![Get the links that aren't empty and are external](./console-dom-interaction-images/console-dom-filter-out-empty-links.png)
 
    By manipulating the DOM through issuing statements in the **Console**, you can change these elements in the rendered webpage.
 
@@ -170,7 +170,7 @@ The `$` has special powers in **Console**, and you may remember that from jQuery
    )
    ```
 
-   ![To highlight all external links, add a green border around each](../media/console-dom-highlight-links.png)
+   ![To highlight all external links, add a green border around each](./console-dom-interaction-images/console-dom-highlight-links.png)
 
 Instead of writing complex JavaScript to filter results, use the power of CSS selectors.
 
@@ -187,7 +187,7 @@ To create a table of the `src` and `alt` information for all images on the webpa
    console.table($$('img:not([src^=data])'), ['src','alt'])
    ```
 
-   ![To programmatically select a set of elements, use a complex CSS selector](../media/console-dom-complex-css-selector.png)
+   ![To programmatically select a set of elements, use a complex CSS selector](./console-dom-interaction-images/console-dom-complex-css-selector.png)
 
 <!-- mystery wiggly line preventer -->
 
@@ -216,7 +216,7 @@ To list all of the automatic headings to copy and paste:
     
    The result is text that contains content for each heading followed by the full URL that points to it.
 
-   ![Getting all the headings and the generated URLs from the webpage](../media/console-dom-get-generated-headings.png)
+   ![Getting all the headings and the generated URLs from the webpage](./console-dom-interaction-images/console-dom-get-generated-headings.png)
 
 
 ### Clean up with clear and copy
@@ -247,7 +247,7 @@ To list all of the event listeners that are assigned to the first form in the we
    getEventListeners($('form'));
    ```
 
-   ![Get all events listeners for the first form in the webpage](../media/console-dom-get-form-events.png)
+   ![Get all events listeners for the first form in the webpage](./console-dom-interaction-images/console-dom-get-form-events.png)
 
 When you monitor, you to get a notification in the **Console** every time something changes to the specified elements.  You define the events you want to listen to as a second parameter.  It's important for you to define the events that you want to monitor, otherwise any event happening to the element is reported.
 
@@ -263,11 +263,11 @@ To get a notification in the **Console** every time you scroll, resize the windo
    monitorEvents($0, 'keyup');
    ```
 
-   ![Console displays every scroll event that happens on the Window](../media/console-dom-monitor-events.png)
+   ![Console displays every scroll event that happens on the Window](./console-dom-interaction-images/console-dom-monitor-events.png)
 
 1. To log any key action on the currently selected element, focus on the search form in the header and press some keys.
 
-   ![Console displays 'keyup' events that occur on the form](../media/console-dom-monitor-key-events.png)
+   ![Console displays 'keyup' events that occur on the form](./console-dom-interaction-images/console-dom-monitor-key-events.png)
 
 1. To stop logging, remove the monitoring you set, enter the following code into the **Console**:
 

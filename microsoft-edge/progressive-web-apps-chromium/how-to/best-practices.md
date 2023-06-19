@@ -103,7 +103,7 @@ See [Handle links to your Progressive Web Apps](./handle-urls.md) and [Handle pr
 
 #### Widgets
 
-![Experimental feature](../../media/experimental-tag.png)
+![Experimental feature](./best-practices-images/experimental-tag.png)
 
 Create your own app widgets to display in the operating system widget dashboard such as the Windows 11 widgets board.
 

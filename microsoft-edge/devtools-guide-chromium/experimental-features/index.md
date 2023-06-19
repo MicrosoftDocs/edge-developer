@@ -86,15 +86,15 @@ To turn an experiment on or off in Microsoft Edge:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./index-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
 
 1. On the left side of the **Settings** panel, select the **Experiments** page.
 
-   ![The Experiments page in Settings](../media/experiments-devtools.png)
+   ![The Experiments page in Settings](./index-images/experiments-devtools.png)
 
 1. On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
 
-1. Click **Close** (![The Close icon in DevTools > Settings](../media/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
+1. Click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
 
 1. Click the **Reload DevTools** button.
 
@@ -106,9 +106,9 @@ To restore the default settings for which experimental features are turned on:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./index-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
 
-1. At the bottom of the **Preferences** page, click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings](../media/settings-close-icon-light-theme.png)).
+1. At the bottom of the **Preferences** page, click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)).
 
 <!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
@@ -120,7 +120,7 @@ You can filter the experimental features by text included in the title.
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./index-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
 
 1. On the left side of the **Settings** panel, select the **Experiments** page.
 
@@ -134,7 +134,7 @@ You can filter the experimental features by text included in the title.
 
 We're eager to hear your feedback about experimental features.  To share feedback with us, [Contact the Microsoft Edge DevTools team](../contact.md).
 
-One of the UI experiments adds a new way to provide feedback: when the **Focus Mode** experiment is turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](../media/help-icon-of-focus-mode.png)) > **Feedback**.
+One of the UI experiments adds a new way to provide feedback: when the **Focus Mode** experiment is turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](./index-images/help-icon-of-focus-mode.png)) > **Feedback**.
 
 
 <!-- ====================================================================== -->
@@ -198,11 +198,11 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./index-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
 
 1. On the left side of the **Settings** panel, select the **Experiments** page.
 
-1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings](../media/settings-close-icon-light-theme.png)) to close **Settings**.
+1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) to close **Settings**.
 
 1. Open the **Command Menu** (**Ctrl+Shift+P**), and then type **protocol** in the text box.
 
@@ -383,11 +383,11 @@ To use the visual **Font Editor**:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Elements** tab.  If the **Elements** tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Elements** tab.  If the **Elements** tab isn't visible, click the **More tabs** (![More tabs icon](./index-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
 
 1. In the **Styles** tab, select the **Font Editor** icon.
 
-   ![The visual Font Editor pane is highlighted](../media/font-editor-open.png)
+   ![The visual Font Editor pane is highlighted](./index-images/font-editor-open.png)
 
 Some browser channels have the checkbox label **Enable new Font Editor tool within the Styles pane.**
 
@@ -609,7 +609,7 @@ Status:
 
 The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
 
-![webhint feedback in the Issues panel](../media/experiments-webhint.png)
+![webhint feedback in the Issues panel](./index-images/experiments-webhint.png)
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 116.
@@ -649,7 +649,7 @@ The **Open source files in Visual Studio Code** experiment replaces the code edi
 
 When you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code.  In previous versions of Microsoft Edge, this action opened the file in the code editor of the Sources tool in DevTools.
 
-![Selecting a file link in the Styles tool opens the file in Visual Studio Code](../media/experiment-sources-in-code-editor-open.png)
+![Selecting a file link in the Styles tool opens the file in Visual Studio Code](./index-images/experiment-sources-in-code-editor-open.png)
 
 Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code. You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
 

@@ -54,7 +54,7 @@ To change the trace type:
 
 1. Open DevTools by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, in the upper right, click **Settings** (![Settings button](../media/settings-button-icon.png)).  **Settings** opens, with the **Preferences** page selected.
+1. In DevTools, in the upper right, click **Settings** (![Settings button](./share-traces-images/settings-button-icon.png)).  **Settings** opens, with the **Preferences** page selected.
 
 1. In the **Persistence** section of the **Preferences** page, select the **Export enhanced performance and memory traces** checkbox:
 
@@ -78,7 +78,7 @@ To export a performance recording from the **Performance** tool:
 
 1. Click **Record** and run the scenario you want to investigate the performance of by interacting with the webpage, and then click **Stop**.
 
-1. When the performance profile appears, click **Save profile** (![Save profile button](../media/export-icon.png)):
+1. When the performance profile appears, click **Save profile** (![Save profile button](./share-traces-images/export-icon.png)):
 
    ![Microsoft Edge with DevTools, showing the Performance tool, with the Save profile button](./share-traces-images/exporting-perf-trace.png)
 
@@ -118,7 +118,7 @@ Traces are exported as normal or enhanced traces, depending on the **Export Enha
 
 To choose a different trace type when exporting:
 
-1. Right-click (or hold the **Ctrl** key and click) the **Save profile** (![Save profile button](../media/export-icon.png)) in the **Performance** tool or the **Save** button in the **Memory** tool.
+1. Right-click (or hold the **Ctrl** key and click) the **Save profile** (![Save profile button](./share-traces-images/export-icon.png)) in the **Performance** tool or the **Save** button in the **Memory** tool.
 
 1. Click either **.devtools (enhanced format for Microsoft Edge)** if you want to export an enhanced trace, or click **.json (works with Microsoft Edge and Chromium browsers)** if you want a normal trace.
 
@@ -132,7 +132,7 @@ To import a trace in the **Performance** tool:
 
 1. Open the **Performance** tool.
 
-1. Click **Load profile** (![Load profile button](../media/import-icon.png)):
+1. Click **Load profile** (![Load profile button](./share-traces-images/import-icon.png)):
 
    ![Microsoft Edge, showing the Performance tool in DevTools, with the Load profile button](./share-traces-images/importing-perf-trace.png)
 
