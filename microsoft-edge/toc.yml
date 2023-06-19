@@ -895,8 +895,8 @@
               href: extensions-chromium/publish/reply-user-reviews.md
               displayName: Respond to user reviews
 
-            - name: Sidebar Extensions
-              href: extensions-chromium/publish/side-bar.md
+            - name: Add a sidebar UI to an extension
+              href: extensions-chromium/publish/sidebar.md
               displayName: Sidebar Extensions
 
             - name: Manage account settings
