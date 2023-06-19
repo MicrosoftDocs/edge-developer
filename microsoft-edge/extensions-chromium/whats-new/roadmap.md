@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/15/2023
+ms.date: 06/19/2023
 ---
 # Roadmap for Microsoft Edge Add-ons
 

@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/15/2023
+ms.date: 06/19/2023
 ---
 # Supported APIs for Microsoft Edge extensions
 
@@ -51,6 +51,7 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [proxy](https://developer.chrome.com/extensions/proxy) | Manage proxy settings for Microsoft Edge. This API depends on the `EdgeSetting` prototype of the `types` API to get and set the proxy configuration of Microsoft Edge. |
 | [runtime](https://developer.chrome.com/extensions/runtime) | Retrieve the background page, return details about the manifest, and listen for and respond to events in the app or extension lifecycle. You can also convert the relative path of URLs to fully qualified URLs. |
 | [sessions](https://developer.chrome.com/extensions/sessions) | Query and restore tabs and windows from a browsing session. |
+| [sidePanel](https://developer.chrome.com/extensions/sidePanel) | Host custom content in the browser's side panel alongside the main content of a webpage. |
 | [storage](https://developer.chrome.com/extensions/storage) | Store, retrieve, and track changes to user data. |
 | [system.memory](https://developer.chrome.com/extensions/system_memory) | The `system.memory` API. |
 | [system.storage](https://developer.chrome.com/extensions/system_storage) | Query information about storage devices. You can also receive notifications when storage devices are attached or detached. |
@@ -63,7 +64,6 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [webNavigation](https://developer.chrome.com/extensions/webNavigation) | Receive notifications about the status of navigation requests. |
 | [webRequest](https://developer.chrome.com/extensions/webRequest) | Observe and analyze traffic. Intercept, block, or modify requests. |
 | [windows](https://developer.chrome.com/extensions/windows) | Interact with browser windows to create, modify, and rearrange windows in the browser. |
-
 
 
 <!-- ====================================================================== -->
@@ -87,11 +87,14 @@ Microsoft Edge doesn't support the following Extension APIs:
 *  Microsoft Edge doesn't support extensions that use Chrome Web Store payments because it uses `identity.getAuthtoken` to request tokens for signed-in users.  These tokens are sent to the REST-based licensing API.
 
 
-
-
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/apps/external_extensions).
 
 [![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+<!-- ## See also -->
