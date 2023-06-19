@@ -87,7 +87,7 @@ To make sure that source maps are enabled:
 
 1. In the **Preferences** page, in the **Sources** section, make sure the **Enable JavaScript source maps** checkbox and the **Enable CSS source maps** checkbox are selected:
 
-   ![The Preferences page's Sources section with the 'Enable source maps' checkboxes selected](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)
+   ![The Preferences page's Sources section with the 'Enable source maps' checkboxes selected](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.png)
 
 1. In the upper right of **Settings**, click the **Close** (**x**) button.
 

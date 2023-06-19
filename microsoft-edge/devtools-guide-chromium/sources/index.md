@@ -73,11 +73,11 @@ The **Sources** tool has three panes:
 
 The following figure shows the **Navigator** pane highlighted with a red box in the upper left corner of DevTools, the **Editor** pane highlighted in the upper right, and the **Debugger** pane highlighted on the bottom.  On the far left side is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint:
 
-![The panes of the Sources tool, in narrow layout](../media/sources-panes-narrow-layout.msft.png)
+![The panes of the Sources tool, in narrow layout](../media/sources-panes-narrow-layout.png)
 
 When DevTools is wide, the **Debugger** pane is placed on the right, and includes **Scope** and **Watch**:
 
-![Navigate, view, edit, and debug JavaScript returned by the server](../media/sources-panes-wide-layout.msft.png)
+![Navigate, view, edit, and debug JavaScript returned by the server](../media/sources-panes-wide-layout.png)
 
 To maximize the size of the Sources tool, undock DevTools into a separate window, and optionally move the DevTools window to a separate monitor.  See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](../customize/placement.md).
 
@@ -89,9 +89,9 @@ To load the debugging demo webpage that's shown above, see [The basic approach t
 
 Use the **Navigator** pane (on the left) to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.
 
-![The Navigator pane](../media/navigator-pane.msft.png)
+![The Navigator pane](../media/navigator-pane.png)
 
-To access any hidden tabs of the Navigator pane, select ![More tabs](../media/more-tabs-icon.msft.png) (**More tabs**).
+To access any hidden tabs of the Navigator pane, select ![More tabs](../media/more-tabs-icon.png) (**More tabs**).
 
 The following subsections cover the Navigator pane:
 * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
@@ -107,7 +107,7 @@ The following subsections cover the Navigator pane:
 
 Use the **Page** tab of the **Navigator** pane to explore the file system that's returned from the server to construct the current webpage.  Select a JavaScript file to view, edit, and debug it.  The **Page** tab lists all of the resources that the page has loaded.
 
-![The Page tab in the Navigator pane of the Sources tool](../media/sources-page-tab.msft.png)
+![The Page tab in the Navigator pane of the Sources tool](../media/sources-page-tab.png)
 
 To display a file in the **Editor** pane, select a file in the **Page** tab.  For an image, a preview of the image is displayed.
 
@@ -142,7 +142,7 @@ Use the **Filesystem** tab of the **Navigator** pane to add files to a Workspace
 
 A file that's in a Workspace is indicated by a green dot next to the file name, throughout DevTools.
 
-![The Filesystem tab, for a Workspace](../media/sources-filesystem-tab.msft.png)
+![The Filesystem tab, for a Workspace](../media/sources-filesystem-tab.png)
 
 By default, when you edit a file in the **Sources** tool, your changes are discarded when you refresh the webpage.  The **Sources** tool works with a copy of the front-end resources that are returned by the web server.  When you modify these front-end files that are returned by the server, the changes don't persist, because you didn't change the source files.  You need to also apply your edits in your actual source code, and then re-deploy to the server.
 
@@ -162,7 +162,7 @@ Use the **Overrides** tab of the **Navigator** pane to override page assets (suc
 
 Items in this tab override what the server sends to the browser, even after the server has sent the assets.
 
-![The Overrides tab of the Navigator pane](../media/overrides-tab.msft.png)
+![The Overrides tab of the Navigator pane](../media/overrides-tab.png)
 
 The **Overrides** feature is similar to Workspaces.  Use Overrides when you want to experiment with changes to a webpage, and you need to keep the changes after you refresh the webpage, but you don't care about mapping your changes to the source code of the webpage.
 
@@ -179,7 +179,7 @@ See also:
 
 Use the **Content scripts** tab of the **Navigator** pane to view any content scripts that were loaded by a Microsoft Edge extension that you installed.
 
-![The Content scripts tab of the Navigator pane](../media/content-scripts-tab.msft.png)
+![The Content scripts tab of the Navigator pane](../media/content-scripts-tab.png)
 
 When the debugger steps into code that you don't recognize, you might want to add that code to the **Ignore List**, to avoid stepping into that code. See [Add content scripts to the Ignore List](../javascript/guides/mark-content-scripts-library-code.md).
 
@@ -193,7 +193,7 @@ See also:
 
 Use the **Snippets** tab of the **Navigator** pane to create and save JavaScript code snippets, so that you can easily run these snippets on any webpage.
 
-![A Snippet that inserts the jQuery library into a webpage](../media/snippet.msft.png)
+![A Snippet that inserts the jQuery library into a webpage](../media/snippet.png)
 
 For example, suppose you frequently enter the following code in the **Console**, to insert the jQuery library into a page so that you can run jQuery commands from the **Console**:
 
@@ -208,7 +208,7 @@ document.head.appendChild(script);
 Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS), DevTools saves the **Snippet** to your file system.
 
 There are multiple ways to run a Snippet:
-*  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button](../media/run-snippet-icon.msft.png)).
+*  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button](../media/run-snippet-icon.png)).
 *  When DevTools has focus, press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the [Command Menu](../command-menu/index.md), and then type **!**.
 
 Snippets are similar to bookmarklets.
@@ -227,7 +227,7 @@ To open a file, in addition to using the **Navigator** pane within the **Sources
 
 To display and pick from a list of all .js files, type **.js**.
 
-![Opening a file by using the Command Menu](../media/sources-command-menu-to-open-file.msft.png)
+![Opening a file by using the Command Menu](../media/sources-command-menu-to-open-file.png)
 
 If you type **?**, the Command Menu shows several commands, including **... Open file**.  If you press **Backspace** to clear the Command Menu, a list of files is shown.
 
@@ -239,7 +239,7 @@ For more information, see [Run commands with the Microsoft Edge DevTools Command
 
 Use the **Editor** pane to view the front-end files that are returned from the server to compose the current webpage, including JavaScript, HTML, CSS, and image files.  When you edit the front-end files in the **Editor** pane, DevTools updates the webpage to run the modified code.
 
-![The Editor pane in the Sources tool](../media/editor-pane.msft.png)
+![The Editor pane in the Sources tool](../media/editor-pane.png)
 
 The **Editor** pane has the following level of support for various file types:
 
@@ -271,7 +271,7 @@ See also:
 
 To edit a JavaScript file in DevTools, use the **Editor** pane, within the **Sources** tool.
 
-![Editing JavaScript in the Editor pane](../media/editing-js-in-editor-pane.msft.png)
+![Editing JavaScript in the Editor pane](../media/editing-js-in-editor-pane.png)
 
 To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** (**...**) and then select **Open File**.
 
@@ -294,7 +294,7 @@ By default, your edits are discarded when you refresh the webpage.  For more inf
 
 To find text in the current file, select the **Editor** pane to give it focus, and then press **Ctrl+F** on Windows/Linux, or **Command+F** on macOS.
 
-![Find and Replace, in the Editor pane of the Sources tool](../media/find-replace.msft.png)
+![Find and Replace, in the Editor pane of the Sources tool](../media/find-replace.png)
 
 To find and replace text, select the **Replace** (**A-\>B**) button to the left of the **Find** text box. The **Replace** (**A-\>B**) button appears when viewing an editable file.
 
@@ -305,7 +305,7 @@ To review the changes you made to a file, right-click in the **Editor** pane and
 
 The **Drawer** opens at the bottom of DevTools, showing your changes within the **Changes** tab.
 
-![Showing Local Modifications, in the Changes tab of the Drawer](../media/local-modifications.msft.png)
+![Showing Local Modifications, in the Changes tab of the Drawer](../media/local-modifications.png)
 
 
 ###### Changes inside a function take effect
@@ -317,19 +317,19 @@ We then saved the changes, entered numbers into the form, and then selected the 
 
 After submitting the form, `console.log('A')`, which is at global scope, doesn't run, but `console.log('B')`, inside an `onClick` function, does run, outputting `B` to the Console:
 
-![Global-scope JavaScript isn't re-run](../media/edit-js.msft.png)
+![Global-scope JavaScript isn't re-run](../media/edit-js.png)
 
 
 <!-- ------------------------------ -->
 #### Reformatting a minified JavaScript file with pretty-print
 
-To use pretty-print to reformat a file to make it readable, select the **Pretty print** button (![Format](../media/format-icon.msft.png)), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.
+To use pretty-print to reformat a file to make it readable, select the **Pretty print** button (![Format](../media/format-icon.png)), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.
 
-![The Pretty print button](../media/minified.msft.png)
+![The Pretty print button](../media/minified.png)
 
 The reformatted file appears in a new tab, with `:formatted` appended to the file name.  The reformatted code is read-only.
 
-![A pretty-printed (reformatted) JavaScript file](../media/pretty-printed.msft.png)
+![A pretty-printed (reformatted) JavaScript file](../media/pretty-printed.png)
 
 To make the reformatted file scroll to the code that you select in the minified file:
 1.  If the reformatted file tab is open, close it.
@@ -376,7 +376,7 @@ h1 {
 }
 ```
 
-![Edit CSS in the Editor pane to change the text color of the H1 heading to green](../media/edit-css.msft.png)
+![Edit CSS in the Editor pane to change the text color of the H1 heading to green](../media/edit-css.png)
 
 CSS changes take effect immediately; you don't need to manually save the changes.
 
@@ -394,7 +394,7 @@ There are two ways to edit HTML in DevTools:
 *  In the **Elements** tool, you work with one HTML element at a time, through user interface controls.
 *  In the **Sources** tool, you use a text editor.
 
-![The HTML editor of the Sources tool](../media/sources-html-editor.msft.png)
+![The HTML editor of the Sources tool](../media/sources-html-editor.png)
 
 Unlike a JavaScript or CSS file, an HTML file that is returned by the web server cannot be directly edited in the Sources tool.  To edit an HTML file using the Editor of the Sources tool, the HTML file must be in a Workspace or on the **Overrides** tab.  See these subsections of the current article:
 * [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
@@ -454,7 +454,7 @@ The debugger includes the **Debugger** pane, along with breakpoints that you set
 
 With the debugger, you step through the code, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are in-scope for the current statement.
 
-![The Debugger pane of the Sources tool  ](../media/sources-paused-breakpoint-highlight-debug-pane.msft.png)
+![The Debugger pane of the Sources tool  ](../media/sources-paused-breakpoint-highlight-debug-pane.png)
 
 The debugger supports standard debugging actions, such as:
 *  Setting breakpoints, to pause code.
@@ -495,7 +495,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
     The debugger runs the JavaScript code and then pauses at the breakpoint.  The debugger is now in Paused mode, so you can inspect the values of the properties that are in-scope, and step through the code.
 
-   ![Entering Paused mode of the debugger](../media/sources-paused-breakpoint-highlights.msft.png)
+   ![Entering Paused mode of the debugger](../media/sources-paused-breakpoint-highlights.png)
 
     In the above figure, we added the Watch expressions `sum` and `typeof sum`, and stepped two lines past the breakpoint.
 
@@ -554,7 +554,7 @@ Breakpoints and Watch expressions are preserved when you refresh the webpage.
 
 To use the more full-featured debugger of Visual Studio Code instead of the DevTools debugger, use the **Microsoft Edge DevTools** extension for Visual Studio Code.
 
-![The Microsoft Edge DevTools extension for Visual Studio Code](../media/microsoft-edge-tools-for-vs-code-extension.msft.png)
+![The Microsoft Edge DevTools extension for Visual Studio Code](../media/microsoft-edge-tools-for-vs-code-extension.png)
 
 This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools, from within Microsoft Visual Studio Code.
 

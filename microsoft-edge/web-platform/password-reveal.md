@@ -13,11 +13,11 @@ The `password` input type in Microsoft Edge includes a **password reveal** butto
 
 By default, the **password reveal** button is turned off, so that in the **password** field, dots replace the characters entered by the user.  The **password reveal** button appears to the right of the **password** field, as an eye-shaped icon:
 
-![The eye-shaped icon appears next to the dots that hide the password text](media/mdn-demo-password-reveal-off.msft.png)
+![The eye-shaped icon appears next to the dots that hide the password text](media/mdn-demo-password-reveal-off.png)
 
 When the user clicks the **password reveal** button to turn it on, the password text is revealed, and the eye icon changes to have a slash over it:
 
-![The original password text is revealed, and the eye icon has a slash over it](media/mdn-demo-password-reveal-on.msft.png)
+![The original password text is revealed, and the eye icon has a slash over it](media/mdn-demo-password-reveal-on.png)
 
 By default, the **password reveal** button is inserted into the Shadow DOM of all HTML `input` elements that have the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises](/deployedge/microsoft-edge-policies#passwordrevealenabled) can disable this feature globally.  Web designers and developers should expect most Microsoft Edge users to have the default experience.
 

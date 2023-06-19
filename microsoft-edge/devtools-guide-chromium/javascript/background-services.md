@@ -51,7 +51,7 @@ The **Background Fetch API** enables the **service worker** of a Progressive Web
 
    ![The Background Fetch panel](./images/application-background-fetch-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.msft.png)).
+1. Click **Record** (![Record](../media/record-icon.png)).
    After triggering some Background Fetch activity, DevTools logs the events to the table.
 
    ![A log of events in the Background Fetch panel](./images/application-background-fetch-events.png)
@@ -74,7 +74,7 @@ The **Background Sync API** enables the offline **service worker** of a Progress
 
    ![The Background Sync pane](./images/application-background-sync-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.msft.png)).  After triggering some Background Sync activity, DevTools logs the events to the table.
+1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Background Sync activity, DevTools logs the events to the table.
 
    ![A log of events in the Background Sync pane](./images/application-background-sync-events.png)
 
@@ -96,7 +96,7 @@ After a **service worker** has received a [Push Message](https://developer.mozil
 
    ![The Notifications pane](./images/application-notifications-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.msft.png)).  After triggering some Notifications activity, DevTools logs the events to the table.
+1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Notifications activity, DevTools logs the events to the table.
 
    ![A log of events in the Notifications pane](./images/application-notifications-events.png)
 
@@ -118,7 +118,7 @@ The [Payment Handler API](https://web.dev/web-based-payment-apps-overview/) allo
 
    ![The Payment Handler pane](./images/application-payment-handler-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.msft.png)).  After triggering some payment requests, DevTools logs the events to the table.
+1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some payment requests, DevTools logs the events to the table.
 
    ![A log of events in the Payment Handler pane](./images/application-payment-handler-events.png)
 
@@ -142,7 +142,7 @@ To log Periodic Background Sync events for 3 days, even when DevTools isn't open
 
    ![The Periodic Background Sync pane](./images/application-periodic-background-sync-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.msft.png)).  After triggering some Periodic Background Sync activity, DevTools logs the events to the table.
+1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Periodic Background Sync activity, DevTools logs the events to the table.
 
    ![A log of events in the Periodic Background Sync pane](./images/application-periodic-background-sync-events.png)
 
@@ -160,7 +160,7 @@ To display a push notification to a user, the **service worker** of a Progressiv
 
    ![Open the Push Messaging pane](./images/application-push-messaging-empty.png)
 
-1. Click **Record** (![Record](../media/record-icon.msft.png)).  After triggering some Push Message activity, DevTools logs the events to the table.
+1. Click **Record** (![Record](../media/record-icon.png)).  After triggering some Push Message activity, DevTools logs the events to the table.
 
    ![A log of events in the Push Messaging pane](./images/application-push-messaging-events.png)
 
