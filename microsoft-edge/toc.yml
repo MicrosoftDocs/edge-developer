@@ -1069,6 +1069,7 @@
 
             - name: Re-engage users with badges and notifications
               href: progressive-web-apps-chromium/how-to/notifications-badges.md
+              displayName: Re-engage users with badges, notifications, and push messages  # old top-of-page title
 
             - name: Re-engage users with push messages
               href: progressive-web-apps-chromium/how-to/push.md
