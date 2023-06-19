@@ -12,7 +12,7 @@ ms.date: 07/07/2022
 
 Use Microsoft Edge Developer Tools to debug web content displayed in WebView2 controls, in the same way that you can debug another webpage that's displayed in Microsoft Edge.
 
-![DevTools debugging in a WebView2 control](media/f12.png)
+![DevTools debugging in a WebView2 control](./debug-devtools-images/f12.png)
 
 When you're using a WebView2 app, there are several ways to open DevTools:
 

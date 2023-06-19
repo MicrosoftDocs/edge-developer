@@ -50,13 +50,13 @@ To begin writing automated tests, make sure the Edge WebDriver version you insta
 
 1.  Go to `edge://settings/help` and note your version of Microsoft Edge.
 
-    ![The build number for Microsoft Edge on April 15, 2021](media/microsoft-edge-version.png)
+    ![The build number for Microsoft Edge on April 15, 2021](./index-images/microsoft-edge-version.png)
 
 1.  Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver).
 
 1.  In the **Get the latest version** section of the page, select a platform in the channel that matches your version number of Microsoft Edge.
 
-    ![The `Get the latest version` section of the Microsoft Edge WebDriver webpage](media/microsoft-edge-driver-install.png)
+    ![The `Get the latest version` section of the Microsoft Edge WebDriver webpage](./index-images/microsoft-edge-driver-install.png)
 
 1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
 

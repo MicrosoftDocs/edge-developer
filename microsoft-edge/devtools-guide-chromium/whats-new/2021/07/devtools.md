@@ -18,9 +18,9 @@ ms.date: 07/30/2021
 <!-- Title: Apply themes from Visual Studio Code to DevTools -->
 <!-- Subtitle: You can now use some of the most popular color themes from Visual Studio Code, such as Monokai and Solarized Dark, in Microsoft Edge DevTools. -->
 
-In addition to the existing light and dark themes, Microsoft Edge DevTools now supports some of the most popular color themes from Visual Studio Code.  To select a color theme, click the DevTools **Settings** (![Settings icon](../../../media/settings-gear-icon-light-theme.png)) button, and then select a theme from the **Theme** dropdown list.
+In addition to the existing light and dark themes, Microsoft Edge DevTools now supports some of the most popular color themes from Visual Studio Code.  To select a color theme, click the DevTools **Settings** (![Settings icon](./devtools-images/settings-gear-icon-light-theme.png)) button, and then select a theme from the **Theme** dropdown list.
 
-![Color themes for DevTools](../../media/2021/07/all-devtools-themes.png)
+![Color themes for DevTools](./devtools-images/all-devtools-themes.png)
 
 The supported Visual Studio Code themes are:
 
@@ -50,7 +50,7 @@ A DOM node is considered "detached" when it is no longer attached to any element
 
 The new **Detached Elements** tool finds all of the detached elements on your page and displays them. You can expand and collapse a detached element to see the parent and child nodes that are also being retained. You can trigger the browser's garbage collection by selecting **Collect garbage** and validate that you have a memory leak when a detached element cannot be garbage-collected. Finally, you can jump into JavaScript that's referencing the detached element by taking a heap snapshot with the **Analyze** button.
 
-![The Detached Elements tool](../../media/2021/07/detached-elements-tool.png)
+![The Detached Elements tool](./devtools-images/detached-elements-tool.png)
 
 Update: This feature has been released and is no longer experimental.<!-- To turn on this experiment, go to **Settings** > **Experiments** and select the checkbox next to **Detached Elements**. -->
 
@@ -66,7 +66,7 @@ See also:
 
 If you use JavaScript debugging in Visual Studio Code, you can now launch the **Microsoft Edge Developer Tools for Visual Studio Code** extension by selecting the **Inspect** button.
 
-![The Inspect button in Visual Studio Code to launch the DevTools extension](../../media/2021/07/inspect-button.png)
+![The Inspect button in Visual Studio Code to launch the DevTools extension](./devtools-images/inspect-button.png)
 
 This feature integrates DOM and CSS debugging with JavaScript debugging in Visual Studio Code. If you don't have the DevTools extension installed, when you select the **Inspect** button, Visual Studio Code prompts you to install the extension.
 
@@ -77,7 +77,7 @@ Other new features are:
 
 For more details about improvements and fixes, check the [changelog file](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md) in the `vscode-edge-devtools` repo.
 
-![DevTools extension integrated with Visual Studio Code Debugger workflow](../../media/2021/07/extension-integrated-debugger.png)
+![DevTools extension integrated with Visual Studio Code Debugger workflow](./devtools-images/extension-integrated-debugger.png)
 
 See also:
 * [Integration with Visual Studio Code debugging](../../../../visual-studio-code/microsoft-edge-devtools-extension/debugging-a-webpage.md).
@@ -95,7 +95,7 @@ You can file issues and contribute to the extension on the [vscode-edge-devtools
 
 Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/fluentui), giving buttons and menus a more modern look that better aligns with the rest of the Microsoft Edge browser.
 
-![DevTools implemented with Fluent UI design](../../media/2021/07/fluent-ui.png)
+![DevTools implemented with Fluent UI design](./devtools-images/fluent-ui.png)
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/
 
 Previously, to change the display language in DevTools, you had to change the browser language.  Now you can easily switch the display language in DevTools **Settings**, without having to change your browser settings.  To do this, open **Settings**, and then in **Preferences**, select a language from the **Language** dropdown list.
 
-![Changing the DevTools display language directly from the DevTools Settings page](../../media/2021/07/settings-browser-ui-language.png)
+![Changing the DevTools display language directly from the DevTools Settings page](./devtools-images/settings-browser-ui-language.png)
 
 By default, DevTools matches your browser's display language.  See [Change DevTools language settings](../../../customize/localization.md).
 
@@ -129,7 +129,7 @@ Now in Microsoft Edge version 93, you can copy a single CSS declaration or all t
 
 1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.  For example: `'--more-link': 'lime'`.
 
-![Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands](../../media/2021/07/copy-declaration-as-js.png)
+![Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands](./devtools-images/copy-declaration-as-js.png)
 
 To learn more about viewing and changing CSS, see [CSS features reference](../../../css/reference.md).
 
@@ -144,13 +144,13 @@ User-Agent Client Hints makes browser information more accessible than a semicol
 
 In this release, we redesigned the debugging experience so you can easily modify User-Agent Client Hints through a UI with multiple separate fields and controls.  Also, you can now test your custom User-Agent Client Hints and a User-Agent string simultaneously.  You can now define User-Agent Client Hints for a custom device in **Settings** or in the **Network conditions** tool.
 
-![Defining User-Agent Client Hints for a custom device in Settings](../../media/2021/07/ua-client-hints-in-settings.png)
+![Defining User-Agent Client Hints for a custom device in Settings](./devtools-images/ua-client-hints-in-settings.png)
 
 For more information about defining hints in **Settings**, see [Set user agent client hints](../../../device-mode/index.md#set-user-agent-client-hints).
 
 You can also override User-Agent Client Hints for the current page by using the **Network conditions** tool.
 
-![Defining User-Agent Client Hints for a custom device in the Network conditions tool](../../media/2021/07/ua-client-hints-in-network-conditions.png)
+![Defining User-Agent Client Hints for a custom device in the Network conditions tool](./devtools-images/ua-client-hints-in-network-conditions.png)
 
 For more information about defining hints in the **Network conditions** tool, see [Set user agent client hints](../../../network/reference.md#set-user-agent-client-hints).
 
@@ -167,7 +167,7 @@ Previously, users of screen readers would only hear the number of errors, warnin
 
 Now in Microsoft Edge version 93, screen readers correctly announce the type and number of notifications; errors, warnings, or issues.  For example, if DevTools reports 3 errors and 5 warnings, screen readers now announce "3 errors, 5 warnings".  This fix has been applied to both the notifications in the DevTools toolbar and in the Console.
 
-![The errors, warnings, and issues UI in the toolbar and Console](../../media/2021/07/screen-reader-errors-warnings-issues.png)
+![The errors, warnings, and issues UI in the toolbar and Console](./devtools-images/screen-reader-errors-warnings-issues.png)
 
 <!-- It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
 
@@ -186,7 +186,7 @@ Previously, in the **Network** tool, the **Copy** > **Copy as PowerShell** conte
 
 Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option correctly sets the User-Agent string and cookies that were observed by DevTools.  The generated PowerShell command can now successfully make the same network request that was observed by DevTools, even to servers that depend on cookies.
 
-![The Copy as PowerShell command](../../media/2021/07/copy-as-powershell.png)
+![The Copy as PowerShell command](./devtools-images/copy-as-powershell.png)
 
 For more information about the Network Activity Log, see [Network features reference](../../../network/reference.md).
 

@@ -103,9 +103,9 @@ These links and buttons were previously nested under **Customize and control Dev
 
 By default, the **Activity Bar** contains the following modes and tools:
 
-*  **Inspect** mode (![Inspect tool icon](../media/inspect-tool-icon-light-theme.png)) toggle button.
+*  **Inspect** mode (![Inspect tool icon](./focus-mode-images/inspect-tool-icon-light-theme.png)) toggle button.
 
-*  **Device Emulation** mode (![Device Emulation icon](../media/device-emulation-icon-light-theme.png)) button.
+*  **Device Emulation** mode (![Device Emulation icon](./focus-mode-images/device-emulation-icon-light-theme.png)) button.
 
 *  **Welcome** tool (![Welcome tool icon](./focus-mode-images/welcome.png)).
 
