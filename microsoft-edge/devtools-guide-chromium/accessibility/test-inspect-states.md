@@ -25,11 +25,11 @@ In addition to the automatic color-contrast tests in the **Issues** tool, you ca
 
 For example, the links in the sidebar navigation menu have enough contrast, as shown in the **Inspect** overlay:
 
-![The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay.](../media/a11y-testing-enough-contrast.msft.png)
+![The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay](./test-inspect-states-images/a11y-testing-enough-contrast.png)
 
 The green **Dogs** list item in the **Donation status** section doesn't have enough contrast, and so is flagged by a warning in the **Inspect** overlay:
 
-![An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay](../media/a11y-testing-not-enough-contrast.msft.png)
+![An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay](./test-inspect-states-images/a11y-testing-not-enough-contrast.png)
 
 
 <!-- ====================================================================== -->
@@ -41,15 +41,15 @@ First, confirm that your animations run when not using the Inspect tool:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. In the rendered webpage, hover over the blue menu items in the sidebar navigation menu.  Notice that each item has an animation.
 
-   ![The menu item showing different colors when the mouse pointer is over it.](../media/a11y-testing-hover.msft.png)
+   ![The menu item showing different colors when the mouse pointer is over it](./test-inspect-states-images/a11y-testing-hover.png)
 
 Next, confirm that your animations don't run when using the Inspect tool:
 
-1. Click the **Inspect** tool (![Inspect tool icon.](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools.
+1. Click the **Inspect** tool (![Inspect tool icon](./test-inspect-states-images/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools.
 
    The **Inspect** tool icon is highlighted; for example, it changes from gray to blue.
 
@@ -71,13 +71,13 @@ To turn on the hover state while using the Inspect tool:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. Click the **Inspect** (![Inspect tool button.](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1. Click the **Inspect** (![Inspect tool button](./test-inspect-states-images/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1. In the rendered webpage, select the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the element `<a href="#cats">Cats</a>` selected.
 
-   ![Inspecting the element that has a hover state in the Elements tool.](../media/a11y-testing-inspecting-link-to-hover.msft.png)
+   ![Inspecting the element that has a hover state in the Elements tool](./test-inspect-states-images/a11y-testing-inspecting-link-to-hover.png)
 
 1. Select the **Styles** tab.  The selected `a` element has a `hover` state in the CSS that is applied to it, but that's not visible in the **Styles** pane.
 
@@ -85,19 +85,19 @@ To turn on the hover state while using the Inspect tool:
 
 1. Select the **Elements** tool.  Then in the **Styles** pane, select the **:hov** (**Toggle Element State**) button.  The **Force element state** checkboxes section is displayed.
 
-   ![The state simulation tool showing all the options.](../media/a11y-testing-state-simulation.msft.png)
+   ![The state simulation tool showing all the options](./test-inspect-states-images/a11y-testing-state-simulation.png)
 
 1. Click the **:hover** checkbox.  In the DOM, to the left of the element `<a href="#cats">Cats</a>`, a yellow dot appears, indicating that the element has a simulated state.  The **Cats** menu item now appears in the webpage as if the pointer were hovering over it.  The animation on the menu item might run.
 
-   ![DevTools simulating a hover state.](../media/a11y-testing-hover-simulated.msft.png)
+   ![DevTools simulating a hover state](./test-inspect-states-images/a11y-testing-hover-simulated.png)
 
     After the simulated state is applied, you can use the **Inspect** tool again to check the contrast of the element when the user hovers over it, as follows.
 
-1. Select the **Inspect** (![Inspector icon.](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1. Select the **Inspect** (![Inspector icon](./test-inspect-states-images/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1. Hover over the blue **Cats** link in the sidebar navigation menu.  The link is now light blue, because of the simulated hover animation.  The **Inspect** tool's information overlay appears, showing an orange exclamation point in the **Contrast** row, indicating that the contrast isn't high enough.
 
-   ![Testing the contrast of an element in a simulated hover state.](../media/a11y-testing-hover-contrast-testing.msft.png)
+   ![Testing the contrast of an element in a simulated hover state](./test-inspect-states-images/a11y-testing-hover-contrast-testing.png)
 
 State simulation is also a good way to check whether you considered different user needs, such as the needs of keyboard users.  By using the **Force element state** checkboxes, you can simulate the `:focus` state to discover that the UI remains unchanged when it has focus. This lack of an indicator when an element has focus is a problem.
 

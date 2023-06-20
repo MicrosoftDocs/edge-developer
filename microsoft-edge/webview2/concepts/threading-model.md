@@ -74,7 +74,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 > 1. In **Solution Explorer**, right-click the WebView2 project and then select **Properties**.
 > 1. Select the **Debug** tab, and then select the **Enable native code debugging** checkbox, as shown below.
 
-![Enabling native code debugging in Visual Studio](../media/webview-enable-native-debug.png)
+![Enabling native code debugging in Visual Studio](./threading-model-images/webview-enable-native-debug.png)
 
 
 <!-- ====================================================================== -->
@@ -152,4 +152,3 @@ private async void Button_Click(object sender, EventArgs e)
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-* [See also](../index.md#see-also) - in _Introduction to Microsoft Edge WebView2_.

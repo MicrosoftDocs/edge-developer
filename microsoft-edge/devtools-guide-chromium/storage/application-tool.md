@@ -11,7 +11,7 @@ ms.date: 04/15/2022
 
 Use the **Application** tool to manage storage for web app pages, including manifest, service workers, local storage, cookies, cache storage, and background services.
 
-![The Application tool.](images/application-tool.png)
+![The Application tool](./application-tool-images/application-tool.png)
 
 The Application tool has the following pages:
 

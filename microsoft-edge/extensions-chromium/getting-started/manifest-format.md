@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/19/2023
+ms.date: 06/20/2023
 ---
 # Manifest file format for extensions
 
@@ -17,13 +17,18 @@ Every extension for Microsoft Edge has a JSON-formatted manifest file, named `ma
 *  The title of the extension.
 *  The permissions that are needed for the extension to run.
 
-The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, see [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
+
+#### Manifest V2 is deprecated
+
+Use Manifest V3 for new code.  The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, see [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
 
 
 <!-- ====================================================================== -->
-## Format of manifest\.json for extensions using Manifest V3
+## Format of manifest.json for extensions
 
-The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V3 package.
+The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V3 or V2 package.
+
+##### [Manifest V3](#tab/v3)
 
 For reference information about each field, see [Manifest file format (V3)](https://developer.chrome.com/docs/extensions/mv3/manifest) and then select the links on the fields.
 
@@ -106,11 +111,7 @@ For reference information about each field, see [Manifest file format (V3)](http
 }
 ```
 
-
-<!-- ====================================================================== -->
-## Format of manifest\.json for extensions using Manifest V2
-
-The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V2 package.
+##### [Manifest V2](#tab/v2)
 
 For reference information about each field, see [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) and then select the links on the fields.
 
@@ -198,13 +199,28 @@ For reference information about each field, see [Manifest file format (V2)](http
 }
 ```
 
+---
+
+
+<!-- ====================================================================== -->
+## Changes in manifest.json V3 vs. V2
+
+| V3 | V2 |
+|---|---|
+| `"manifest_version": 3,` | `"manifest_version": 2,` |
+| `"action": {...},` | `"browser_action": {...},` |
+| `"action": {...},` | `"page_action": {...},` |
+| removed | `"persistent": false,` |
+| If `background` is included, `service_ worker` is required | If `background` is included, `service_ worker` is optional |
+| Separated into two different keys: `"permissions": [...], "host_permissions": [...],` | `"permissions": [...],` |
+
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/extensions/mv3/manifest/).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
 

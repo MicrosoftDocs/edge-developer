@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 02/14/2022
+ms.date: 01/17/2023
 ---
 # Develop for the web with Microsoft Edge
 
@@ -73,11 +73,11 @@ See [Overview of Progressive Web Apps (PWAs)](progressive-web-apps-chromium/inde
 
 The WebView2 control is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.  Combine the ubiquity of the web platform, with the full capabilities of native platforms.
 
-![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom.](media/webview-panels.png)
+![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](./develop-web-microsoft-edge-images/webview-panels.png)
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
-![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach.](media/web-hybrid-native.png)
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./develop-web-microsoft-edge-images/web-hybrid-native.png)
 <!-- png copy used in main article is named "web-native.png" -->
 
 Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both worlds: the ubiquity and strength of the web platform, combined with the power and full capabilities of the native platform.
@@ -101,9 +101,9 @@ See [Test and automation in Microsoft Edge](test-and-automation/test-and-automat
 
 
 <!-- ====================================================================== -->
-## Web platform
+## Development tips for Microsoft Edge
 
-Considerations for developing websites and products for the web platform include the following:
+There are many tips and tricks to be aware of when building websites or web apps that work in Microsoft Edge, including:
 
 *  Testing for coming changes that could impact compatibility of your website with Microsoft Edge.
 *  Moving users to Microsoft Edge from Internet Explorer.
@@ -112,7 +112,7 @@ Considerations for developing websites and products for the web platform include
 *  Customizing the Password Reveal button.
 *  Detecting Windows 11 by using User-Agent Client Hints.
 
-See [Web platform](web-platform/web-platform.md).
+See [Development tips for Microsoft Edge](web-platform/web-platform.md).
 
 
 <!-- ====================================================================== -->
@@ -157,7 +157,7 @@ See [The Web We Want initiative](web-we-want/index.md).
 <!-- ============================================================================================================================================ -->
 ## How to use this documentation
 
-These are tips for using the documentation UI of Microsoft Learn.
+The following sections are tips for using the Microsoft Learn website.
 
 
 <!-- ====================================================================== -->
@@ -169,8 +169,8 @@ To see details of a screenshot or diagram:
 
 1. Close the image tab to return to the article.
 
-<!-- ====================================================================== -->
 
+<!-- ====================================================================== -->
 ## Look up key words and terms in "Filter by title" text box
 
 The multi-purpose **Filter by title** text box supports:
@@ -181,18 +181,18 @@ The multi-purpose **Filter by title** text box supports:
 
 In the **Filter by title** box in the upper left, enter a term or key word to find:
 
-![The multi-purpose "Filter by title" text box for navigating the table of contents, searching the documentation, and index term lookup of key words.](media/filter-by-title-ui.png)
+![The multi-purpose "Filter by title" text box for navigating the table of contents, searching the documentation, and index term lookup of key words](./develop-web-microsoft-edge-images/filter-by-title-ui.png)
 
 If the desired article isn't found, select **Search for "_search-term_" in all Microsoft Edge documentation**:
 
-![If title word or index term isn't found, an option is provided to full-text search all Microsoft Edge documentation.](media/full-text-search-fallback.png)
+![If title word or index term isn't found, an option is provided to full-text search all Microsoft Edge documentation](./develop-web-microsoft-edge-images/full-text-search-fallback.png)
 
 The full-text search page initially searches all _Microsoft Edge_ documentation.  Or, click the **View all results** link for a broader search:
 
-![The full-text search page initially searches all Microsoft Edge documentation, or you can click the link 'View all results' for a broader search.](media/full-text-search-page.png)
+![The full-text search page initially searches all Microsoft Edge documentation, or you can click the link 'View all results' for a broader search](./develop-web-microsoft-edge-images/full-text-search-page.png)
+
 
 <!-- ====================================================================== -->
-
 ## Provide feedback or report issues in the Microsoft Edge Developer documentation
 
 To provide feedback or enter issues:

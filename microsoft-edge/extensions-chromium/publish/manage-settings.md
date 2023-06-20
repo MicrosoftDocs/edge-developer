@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/17/2021
+ms.date: 11/07/2022
 ---
 # Manage account settings
 
@@ -15,23 +15,23 @@ Manage your account settings and profile details for your Microsoft Edge Develop
 <!-- ====================================================================== -->
 ## Account settings
 
-To display your account settings, select the gear icon in the upper right-hand corner of [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) > **Developer settings**.  In **Developer settings**, review and update the following information.
+To display your account settings, select the gear icon (Settings) in the upper right-hand corner of [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Developer settings**.  In **Developer settings**, you can review and update the following information.
 
 *   Review information about your account.
 *   Links to other pages to review information.
 *   Edit your account information.
 
-In the **Account details** section, review the status and type of your account.  Your Seller ID and other publisher ID info are also displayed in the **Account details** section.  The values are assigned by Microsoft to uniquely identify your developer account and are read-only.
+In the **Account details** section, review the type of your account and its status.  Your Seller ID and other publisher ID information is also displayed in the **Account details** section.  These values are assigned by Microsoft to uniquely identify your developer account and are read-only.
 
 
 <!-- ====================================================================== -->
 ## Contact Details
 
-The **Contact info** section displays the details you provided when you created your account.  The Microsoft Edge extension team uses the contact details information to contact you about your account.  The publisher display name displayed in the Microsoft Edge Add-ons website is also displayed is the **Contact info** section.
+The **Contact info** section displays the details you provided when you created your account.  The Microsoft Edge extension team uses the contact details information to contact you about your account. The publisher name displayed in the Microsoft Edge Add-ons website is also displayed in the **Contact info** section.
 
-If your contact information changes edit the **Contact info** section.  Select **Update**, make your changes, and then select **Save**.  You can also select **Contact info** in the left navigation menu to open the **Contact info** section.
+If your contact information changes you can edit the **Contact info** section.  Select **Update**, make your changes, and then select **Save**.  You can also select **Contact info** in the left navigation menu to open the **Contact info** section.
 
-If you need to change any of your contact details, the Microsoft Edge extension team might verify your account again, especially if you have a company account.  Your verification status returns to `Pending` while the review is in process.  The verification process ranges from a few days to a couple of weeks, and your company might receive a phone call from our verification partner.
+If you change any of your contact details, the Microsoft Edge extension team might verify your account again, especially if you have a company account.  Your extension verification status returns to `Pending` while the review is in process.  The verification process ranges from a few days to a couple of weeks, and your company might receive a phone call from our verification partner.
 
 
 <!-- ====================================================================== -->

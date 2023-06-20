@@ -133,10 +133,6 @@ These are blogs about accessibility.
 
 [TPGi, LLC](https://www.tpgi.com/blog) provides consulting and technology solutions to organizations around the world to ensure that their clients reach all audiences effectively and efficiently, while meeting governmental and international standards.  Their blog covers topics like web accessibility best practices, accessibility tools, and accessibility trends.
 
-### Simply Accessible
-
-[Simply Accessible](http://simplyaccessible.com/articles) is a team of accessibility specialists providing accessibility training, consulting and more to change the perception of accessibility on the web.  Their [Articles](http://simplyaccessible.com/articles) section discusses best practices for web accessibility, accessible design, and more.
-
 ### Level Access
 
 [Level Access](https://www.levelaccess.com/blog) is a digital accessibility firm supporting their clients in developing and deploying accessible products and services.  Their blog addresses topics like ARIA best practices, accessibility trends, webinars, and more.

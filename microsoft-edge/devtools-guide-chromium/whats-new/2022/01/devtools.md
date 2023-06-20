@@ -24,10 +24,10 @@ The new **Detached Elements** tool finds all of the detached elements on your pa
 
 The **Detached Elements** tool was initially available as an experiment in [Microsoft Edge version 93](../../2021/07/devtools.md#debug-dom-node-memory-leaks-with-the-new-detached-elements-tool).  The tool is now available by default in Microsoft Edge version 97.
 
-<!-- ![The Detached Elements tool.](../../media/2022/01/detached-elements-tool.png) -->
+<!-- ![The Detached Elements tool](./devtools-images/detached-elements-tool.png) -->
 <!-- image too wide to be crisp inline; solution would be undock devtools then 1 or 2 images in series (DevTools then browser).  right-click works, but reverting to lightbox for now -->
 
-![The Detached Elements tool.](../../media/2022/01/detached-elements-tool.png)
+![The Detached Elements tool](./devtools-images/detached-elements-tool.png)
 
 See also:
 * [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
@@ -56,7 +56,7 @@ The current version of the Microsoft Edge DevTools extension for Visual Studio C
 
 *  You can now provide arguments for the launched browser instance, in case you need to have a special setup:
 
-![Extension settings to specify launch arguments for Microsoft Edge.](../../media/2022/01/extension-settings-launch-arguments.png)
+![Extension settings to specify launch arguments for Microsoft Edge](./devtools-images/extension-settings-launch-arguments.png)
 
 <!-- no See also needed -->
 
@@ -69,7 +69,7 @@ The current version of the Microsoft Edge DevTools extension for Visual Studio C
 
 Thanks to your early feedback, we've continued to make improvements and bug fixes on the new Focus Mode interface for Microsoft Edge DevTools.  Focus Mode is a new UI option that allows you to dock tools at the top or side of the DevTools window, and removes clutter from the toolbar:
 
-![The Focus Mode UI.](../../media/2022/01/focus-mode.png)
+![The Focus Mode UI](./devtools-images/focus-mode.png)
 
 When using Focus Mode, all the same tools and custom themes are available as in the existing DevTools UI.  Try Focus Mode for yourself by enabling the **Focus Mode** experiment in DevTools **Settings** > **Experiments**.
 
@@ -87,7 +87,7 @@ See also:
 
 In previous versions of Microsoft Edge, changing the theme in DevTools and then opening the 3D View tool resulted in a blank panel.  This issue has now been fixed, in Microsoft Edge 97:
 
-![The 3D View tool now supports changing color themes.](../../media/2022/01/3d-view-with-color-theme.png)
+![The 3D View tool now supports changing color themes](./devtools-images/3d-view-with-color-theme.png)
 
 See also:
 * [Apply a color theme to DevTools](../../../customize/theme.md)
@@ -108,5 +108,5 @@ Microsoft Edge version 97 also includes the following updates from the Chromium 
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
 
-[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->

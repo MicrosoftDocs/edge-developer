@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: extensions
-ms.date: 5/09/2022
+ms.date: 11/29/2022
 ---
 # Overview and timelines for migrating to Manifest V3
 
@@ -14,7 +14,7 @@ A manifest file is the blueprint of an extension. It includes information such a
 
 In October 2020, Microsoft announced the [decision to embrace Manifest V3](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/) to help reduce fragmentation of the web for all developers and enhance privacy, security, and performance for end users.
 
-Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/Home/). Manifest V2 support ends in June of 2023 for all Chromium-based browsers.
+Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/Home/).
 
 An overview of the changes involved, as described in [Overview of Manifest V3 - Chrome Developers](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/):
 
@@ -22,7 +22,7 @@ An overview of the changes involved, as described in [Overview of Manifest V3 - 
 
 * Network request modifications will be handled by the new `declarativeNetRequest` API.
 
-* Remotely hosted code will no longer be allowed. An extension will only be able to execute JavaScript that is included within its own package.
+* Remotely hosted code will no longer be allowed. An extension will only be able to run JavaScript that is included within its own package.
 
 * Promise support will be added to many methods. Callbacks will still be supported as an alternative.
 
@@ -30,15 +30,18 @@ An overview of the changes involved, as described in [Overview of Manifest V3 - 
 
 To help you plan, consider the following schedule for Microsoft Partner Center and Microsoft Edge changes.
 
-We are currently in the process of updating our MV3 migration timelines.
+**We are currently in the process of updating our MV3 migration timelines.**
 
-As of now, we will continue to follow Chromium’s MV3 timelines. While we fundamentally align with these timelines, we will continue to analyze the concerns raised by extension developers and explore the right path for Microsoft Edge Addons ecosystem as a whole. We will independently decide on MV3 migration timelines for Microsoft Edge Addons, and share an update here once they are available.
+We are aware that Chromium has revised the timelines for Manifest V2 sunset. We will independently decide on MV3 migration timelines for Microsoft Edge Add-ons and share an update here. We continue to analyze the concerns raised by the extension developers and explore the optimal path for Microsoft Edge Add-ons ecosystem. Meanwhile, please refer to the [Chromium timelines](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/) for planning your extension's migration.
 
-| Timeframe	| Microsoft Partner Center changes | Microsoft Edge changes |
+
+| Timeframe | Microsoft Partner Center changes | Microsoft Edge changes |
 |--- |--- |--- |
-| July 2022	| Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
-| January 2023 | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. | Microsoft Edge stops running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge using Enterprise policies. |
-| June 2023 | No change. | Manifest V2 extensions will no longer function in Microsoft Edge even with the use of Enterprise policy. |
+| July 2022 (already in effect) | Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
+| TBD - See note above | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. | Microsoft Edge stops running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge using Enterprise policies. |
+| TBD - See note above | No change. | Manifest V2 extensions will no longer function in Microsoft Edge even with the use of Enterprise policies. |
+
+Manifest V2 extensions will continue to be supported through Enterprise policies at least until Chromium Manifest V2 support timeline (which is currently January 2024). 
 
 Microsoft continues to iteratively improve the platform and address the feedback shared by extension developers.
 

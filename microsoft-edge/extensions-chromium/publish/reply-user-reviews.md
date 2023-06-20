@@ -5,27 +5,27 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/27/2021
+ms.date: 11/07/2022
 ---
 # Reply to user reviews about your Microsoft Edge extension
 
-Respond to user reviews that are posted on the Microsoft Edge Add-ons product page.  To view your extension's reviews and ratings and engage with user reviews, use the Partner Center dashboard.
+You can view and respond to user reviews that are posted on the Microsoft Edge Add-ons product page.  To view your extension's reviews and ratings and engage with the user who did the review, use the Partner Center dashboard.
 
 To view your extension's **Reviews** page:
 
 1. Go to your Partner Center account.
 
-1. Select an extension, and then click **Extension overview** > **Reviews**.
+1. Select an extension, and then go to **Extension overview** > **Reviews**.
 
-   Or, on the **Home** > **Edge** breadcrumb path, in the **Overview** page, click the star rating of an extension.
+   Or, on the **Home** > **Edge** breadcrumb path, click the star rating of an extension on the **Overview** page.
 
-![Microsoft Partner Center reviews feature.](media/user-reviews.png) 
+![Microsoft Partner Center reviews feature](./reply-user-reviews-images/user-reviews.png) 
 
 
 <!-- ====================================================================== -->
 ## Features of the Reviews page
 
-From the Reviews page, you can do the following:
+From the Reviews page, you have access to the following information and actions for an extension:
 
 * View your extension's Average Rating.
 
@@ -45,9 +45,9 @@ From the Reviews page, you can do the following:
 
 To reply to a user review:
 
-1. At Partner Center, go to the extension's **Review** page, as described above.
+1. At Partner Center, go to the extension's **Review** page, as described earlier.
 
-1. On a review, click the **Reply** link.
+1. Pick the review you want to respond to and then click the **Reply** link.
 
 A response must be between one and one thousand (1-1000) characters long.
 

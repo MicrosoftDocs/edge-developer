@@ -1,0 +1,23 @@
+# This workflow is used to auto-create ADO work items when issues are labeled with ADO.
+
+name: Track newly labeled issues on ADO
+on:
+  issues:
+    types:
+      [labeled]
+jobs:
+  create_ado_item:
+    name: Create an ADO work item for labeled issues
+    runs-on: ubuntu-latest
+    steps:
+      - uses: captainbrosset/github-actions-issue-to-work-item@simple-sync
+        env:
+          ado_token: "${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}"
+          github_token: "${{ secrets.GITHUB_TOKEN }}"
+        with:
+          label: 'ADO'
+          ado_organization: 'microsoft'
+          ado_project: 'Edge'
+          ado_tags: 'edge-docs-github-issue'
+          ado_area_path: 'Edge\Web Experience\Ecosystem\Content'
+          ado_work_item_type: 'Deliverable'

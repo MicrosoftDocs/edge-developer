@@ -9,22 +9,22 @@ ms.date: 02/23/2022
 ---
 # Customize the password reveal button
 
-The `password` input type in Microsoft Edge includes a **password reveal** button.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press `Alt`+`F8`, to show the characters in the password field.  You can remove the password reveal control, or customize the control styling.
+The `password` input type in Microsoft Edge includes a **password reveal** button.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press **Alt+F8**, to show the characters in the password field.  You can remove the password reveal control, or customize the control styling.
 
 By default, the **password reveal** button is turned off, so that in the **password** field, dots replace the characters entered by the user.  The **password reveal** button appears to the right of the **password** field, as an eye-shaped icon:
 
-![The eye-shaped icon appears next to the dots that hide the password text.](media/mdn-demo-password-reveal-off.msft.png)
+![The eye-shaped icon appears next to the dots that hide the password text](./password-reveal-images/mdn-demo-password-reveal-off.png)
 
 When the user clicks the **password reveal** button to turn it on, the password text is revealed, and the eye icon changes to have a slash over it:
 
-![The original password text is revealed, and the eye icon has a slash over it.](media/mdn-demo-password-reveal-on.msft.png)
+![The original password text is revealed, and the eye icon has a slash over it](./password-reveal-images/mdn-demo-password-reveal-on.png)
 
 By default, the **password reveal** button is inserted into the Shadow DOM of all HTML `input` elements that have the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises](/deployedge/microsoft-edge-policies#passwordrevealenabled) can disable this feature globally.  Web designers and developers should expect most Microsoft Edge users to have the default experience.
 
 <!--
 these might be outdated style: not used in .md files:
-![The password field hidden, with the default look.](../media/web-platform/password-reveal/password-eye.png)
-![The password field revealed, with the default look.](../media/web-platform/password-reveal/password-toggled.png)
+![The password field hidden, with the default look](../media/web-platform/password-reveal/password-eye.png)
+![The password field revealed, with the default look](../media/web-platform/password-reveal/password-toggled.png)
 -->
 
 

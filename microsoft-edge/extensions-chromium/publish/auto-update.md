@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.date: 11/04/2022
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -25,19 +25,20 @@ ms.date: 04/13/2021
 > [!NOTE]
 > This article doesn't apply to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You can use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, see [Update a Microsoft Edge extension](../publish/update-extension.md).
 
-When you set your extension to automatically update on users' machines, your extension shares the following benefits with Microsoft Edge when set to automatically update:
+When you set your extension to automatically update on users' machines, your extension shares the following benefits with Microsoft Edge: 
 
 *   Incorporate bug and security fixes.
 *   Add new features or performance enhancements.
 *   Improve the user interface.
 
-Previously, non-store based extensions were supported.  Also, previously, you updated the native binaries and the extension at the same time.  Now, the Microsoft Edge Add-ons website hosts your extensions and you update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism.  Be careful when you update extensions that have a dependency on native binaries.
-
+Previously, non-store based extensions were supported.  Also, previously, you updated the native binaries and the extension at the same time.  Now, the Microsoft Edge Add-ons website hosts your extensions and you can update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism. 
+> [!IMPORTANT]
+> Be careful when you update extensions that have a dependency on native binaries.
 
 <!-- ====================================================================== -->
 ## Overview
 
-Every few hours, Microsoft Edge checks whether each installed extension or app has an update URL.  To specify an update URL for your extension, use the `update_url` field in the manifest.  The `update_url` field in the manifest points to a location to complete an update check.  For each `update_url`, it sends requests for updated manifest XML files.  If the update manifest XML file lists a newer version than that installed, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.
+Every few hours, Microsoft Edge checks whether each installed extension or app has an update URL.  To specify an update URL for your extension, use the `update_url` field in the manifest.  The `update_url` field in the manifest points to a location that can complete an update check.  For each `update_url`, this URL sends requests for updated manifest XML files.  If the update manifest XML file lists a newer extension or app version, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.
 
 > [!NOTE]
 > In order to maintain user privacy, Microsoft Edge doesn't send any `Cookie` headers with auto-update manifest requests, and ignores any `Set-Cookie` headers in the responses to those requests.
@@ -46,7 +47,7 @@ Every few hours, Microsoft Edge checks whether each installed extension or app h
 <!-- ====================================================================== -->
 ## Update URL
 
-If you host your own extension or app, you must add the `update_url` field to your `manifest.json` file.  Review the following code snippet for an example of the `update_url`.
+If you host your own extension or app, you must add the `update_url` field to your `manifest.json` file.  The following code snippet shows an example of the `update_url` field:
 
 ```json
 {
@@ -86,13 +87,13 @@ The update manifest XML file can contain information about multiple extensions, 
 <!-- ====================================================================== -->
 ## Testing
 
-The default update check frequency is several hours.  To force an update, see `edge://extensions` and choose the **Update extensions now** button.
+Microsoft Edge automatically checks for updates of extensions every few hours.  To update extensions immediately, go to `edge://extensions`, turn on the **Developer mode** toggle, and then click the **Update** button.
 
 
 <!-- ====================================================================== -->
 ## Advanced usage: request parameters
 
-The basic mechanism is simple.  To automatically update your extension:
+The basic mechanism to update using parameters is simple.  To automatically update your extension:
 
 1.  Upload your static XML file on your web server, such as Apache.
 1.  Update the XML file as you release new versions of your extensions.
@@ -123,7 +124,7 @@ For example, the following two extensions both point to the same update URL `htt
     *   Version: `0.4`
 
 
-The following are the requests to update each extension.
+The following examples are requests to update each extension.
 
 ```https
 http://contoso.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%26v%3D1.1
@@ -169,5 +170,5 @@ For example, in the following code, the `prodversionmin` attribute value of `3.0
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/apps/autoupdate).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

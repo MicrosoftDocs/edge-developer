@@ -37,7 +37,7 @@ To audit a page using the Lighthouse tool:
 
 1. In DevTools, select the **Lighthouse** tool.  Configuration options are displayed:
 
-   ![Lighthouse configuration options.](../media/accessibility-lighthouse.msft.png)
+   ![Lighthouse configuration options](./lighthouse-images/accessibility-lighthouse.png)
 
 1. For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  This option can affect the audit results.
 
@@ -45,15 +45,15 @@ To audit a page using the Lighthouse tool:
 
 1. Click **Generate report**. After 10 to 30 seconds, DevTools displays a report.  The report gives tips on how to improve the accessibility of the page:
 
-   ![A Lighthouse report for the Accessibility category.](../media/accessibility-lighthouse-result.msft.png)
+   ![A Lighthouse report for the Accessibility category](./lighthouse-images/accessibility-lighthouse-result.png)
 
 1. Select an item in the report to learn more about it.
 
-   ![An expanded issue in a Lighthouse report.](../media/accessibility-lighthouse-result-issue-expanded.msft.png)
+   ![An expanded issue in a Lighthouse report](./lighthouse-images/accessibility-lighthouse-result-issue-expanded.png)
 
 1. Click the **Learn more** link to view the documentation of the issue:
 
-   ![View the documentation of an issue.](../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png)
+   ![View the documentation of an issue](./lighthouse-images/accessibility-web-dev-accessibility-audits-learn-more.png)
 
 1. To return to the configuration options, in DevTools, click **Perform an audit** (`+`).
 
@@ -63,5 +63,5 @@ To audit a page using the Lighthouse tool:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/accessibility/reference/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

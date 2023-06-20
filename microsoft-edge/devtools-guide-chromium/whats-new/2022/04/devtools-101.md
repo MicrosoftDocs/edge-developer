@@ -28,13 +28,13 @@ You can use the Console as the main tool, or use it together with the **Elements
 
 The Console tool in the main toolbar of the Microsoft Edge DevTools extension for Visual Studio Code:
 
-![The Console tool in the main toolbar of the Microsoft Edge DevTools extension for Visual Studio Code.](devtools-101-images/console-tool-vsc-1.png)
+![The Console tool in the main toolbar of the Microsoft Edge DevTools extension for Visual Studio Code](devtools-101-images/console-tool-vsc-1.png)
 
 The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visual Studio Code:
 
-![The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visual Studio Code.](devtools-101-images/console-tool-vsc-2.png)
+![The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visual Studio Code](devtools-101-images/console-tool-vsc-2.png)
 
-For more information, see [Microsoft Edge DevTools extension for Visual Studio Code > Console integration](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#console-integration).
+For more information, see [Console integration](../../../../visual-studio-code/microsoft-edge-devtools-extension/console-integration.md).
 
 
 <!-- ====================================================================== -->
@@ -49,11 +49,11 @@ In Microsoft Edge 101, DevTools caches source maps by using IndexedDB.  When you
 
 When you first load the webpage, the **Source Maps Monitor** tool shows that the source maps aren't cached yet:
 
-![Source Maps Monitor tool, upon first load.](devtools-101-images/source-maps-indexeddb-first-load.png)
+![Source Maps Monitor tool, upon first load](devtools-101-images/source-maps-indexeddb-first-load.png)
 
 When you reload the webpage, the **Source Maps Monitor** tool shows that the cached source maps are used:
 
-![Source Maps Monitor tool, upon second load.](devtools-101-images/source-maps-indexeddb-second-load.png)
+![Source Maps Monitor tool, upon second load](devtools-101-images/source-maps-indexeddb-second-load.png)
 
 
 <!-- ====================================================================== -->
@@ -66,7 +66,7 @@ In Microsoft Edge 101, the new **Status text** column has been added to the **Ne
 
 In addition, a new setting has been added to the Network tool: **Include pending requests in HAR file**.  If you need to record **Pending** network requests when exporting a HAR file in the Network tool, turn on the **Include pending requests in HAR file** setting.  The **Status text** column will now include the **(pending)** state for any pending network requests.
 
-![The "Status text" column in the Network tool.](devtools-101-images/status-text-column-network-tool.png)
+![The "Status text" column in the Network tool](devtools-101-images/status-text-column-network-tool.png)
 
 To learn more about the available columns in the request log, see [Network features reference > Add or remove columns](../../../network/reference.md#add-or-remove-columns).
 
@@ -77,11 +77,11 @@ To learn more about the available columns in the request log, see [Network featu
 <!-- Title: Improvements to the 3D View tool -->
 <!-- Subtitle: Check out 3D View for updates to the UI and smoother camera controls. -->
 
-In Microsoft Edge 101, the **3D View** tool has two new buttons: **Pan view** (![The 'Pan view' icon.](devtools-101-images/pan-view-icon.png)) and **Rotate view** (![The 'Rotate view' icon.](devtools-101-images/rotate-view-icon.png)).  Use these buttons to switch between panning around the canvas or rotating the canvas.  Click the **Pan view** or **Rotate view** button, and then drag in the desired direction with your mouse, or use the arrow keys.
+In Microsoft Edge 101, the **3D View** tool has two new buttons: **Pan view** (![The 'Pan view' icon](devtools-101-images/pan-view-icon.png)) and **Rotate view** (![The 'Rotate view' icon](devtools-101-images/rotate-view-icon.png)).  Use these buttons to switch between panning around the canvas or rotating the canvas.  Click the **Pan view** or **Rotate view** button, and then drag in the desired direction with your mouse, or use the arrow keys.
 
 The UI now provides a more uniform and intuitive experience.  The panes are organized more clearly, and accessibility issues have been fixed.
 
-![Updated UI and camera controls in 3D View.](devtools-101-images/3d-view-ui-camera-ctrls.png)
+![Updated UI and camera controls in 3D View](devtools-101-images/3d-view-ui-camera-ctrls.png)
 
 See [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md).
 
@@ -94,7 +94,7 @@ See [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../
 
 In previous versions of Microsoft Edge, switching themes in DevTools required reloading DevTools to apply the new theme.  In Microsoft Edge 101, you can quickly try different themes without having to reload DevTools.
 
-![Switching themes without reloading DevTools.](devtools-101-images/switching-theme.png)
+![Switching themes without reloading DevTools](devtools-101-images/switching-theme.png)
 
 For more information about using themes from Visual Studio Code in DevTools, see [Apply a color theme to DevTools](../../../customize/theme.md).
 
@@ -120,5 +120,5 @@ Microsoft Edge 101 also includes the following updates from the Chromium project
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
-<!-- [![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+<!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->

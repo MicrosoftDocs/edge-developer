@@ -1,4 +1,7 @@
-name: Run checks
+# This workflow looks for references to old Edge versions in the docs.
+# When outdated versions are found, an issue is created.
+
+name: Find outdated versions
 
 on:
   workflow_dispatch:

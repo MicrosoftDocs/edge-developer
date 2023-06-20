@@ -17,7 +17,7 @@ ms.date: 09/29/2022
 
 <!-- Subtitle: Your favorite browser management and DevTools commands in one place. -->
 
-In Microsoft Edge 106, you can now enable and use the Command Palette experiment.  Command Palette makes it possible to access browser management and developer tools commands with just one keyboard shortcut: `Ctrl`+`Shift`+`Spacebar`.
+In Microsoft Edge 106, you can now enable and use the Command Palette experiment.  Command Palette makes it possible to access browser management and developer tools commands with just one keyboard shortcut: **Ctrl+Shift+Spacebar**.
 
 
 To enable the Command Palette experiment:
@@ -31,8 +31,8 @@ To enable the Command Palette experiment:
 
    Note the keyboard shortcut, which is shown in the **Command Palette** section on the `edge://flags` page.
    <!--
-   *  In Microsoft Edge 106 and most releases of 107, the keyboard shortcut is `Ctrl`+`Shift`+`Spacebar`.
-   *  In Microsoft Edge 108 and later, the shortcut is `Ctrl`+`Q`. -->
+   *  In Microsoft Edge 106 and most releases of 107, the keyboard shortcut is **Ctrl+Shift+Spacebar**.
+   *  In Microsoft Edge 108 and later, the shortcut is **Ctrl+Q**. -->
 
 1. Click the **Restart** button, which appears in the lower right when you select **Enabled**.
 
@@ -41,7 +41,7 @@ To enable the Command Palette experiment:
 
 To quickly access the available browser management commands and DevTools commands, after you've enabled the experiment:
 
-1. In Microsoft Edge (with or without DevTools open), press `Ctrl`+`Shift`+`Spacebar`.
+1. In Microsoft Edge (with or without DevTools open), press **Ctrl+Shift+Spacebar**.
 
 1. Start typing.  The commands are filtered based on your input characters, and are grouped into categories such as **Suggestions**, **History**, and **DevTools**:
 
@@ -76,7 +76,7 @@ To access the **Quick Fix** options:
 1. Select whichever **Quick Fix** you want to use to resolve the issue or to stop reporting it as an issue.  Selecting to ignore the issue automatically creates a `.hintrc` file which tells the extension to ignore this issue type and not report it again.
 
 See also:
-* [Automated Quick Fixes and issue filtering](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#automated-quick-fixes-and-issue-filtering) in _Microsoft Edge DevTools extension for Visual Studio Code_
+* [Automated Quick Fixes and issue filtering](../../../../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md#automated-quick-fixes-and-issue-filtering) in _Inline and live issue analysis_
 
 
 <!-- ====================================================================== -->
@@ -119,7 +119,7 @@ DevTools in **Dark+** theme:
 
 ![DevTools in Dark+ theme](./devtools-106-images/dark-plus-theme.png)
 
-There are many DevTools color themes to choose from, such as **Monokai** and **Solarized**.  To change the color theme in DevTools, click the **Settings** (![Settings icon](../../../media/settings-gear-icon-light-theme.png)) button, and then in the **Preferences** page, in the **Theme** dropdown menu, select a theme:
+There are many DevTools color themes to choose from, such as **Monokai** and **Solarized**.  To change the color theme in DevTools, click the **Settings** (![Settings icon](./devtools-106-images/settings-gear-icon-light-theme.png)) button, and then in the **Preferences** page, in the **Theme** dropdown menu, select a theme:
 
 ![Setting the DevTools theme to Monokai](./devtools-106-images/set-theme-monokai.png)
 

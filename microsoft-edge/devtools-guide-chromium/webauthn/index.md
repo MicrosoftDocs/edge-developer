@@ -31,17 +31,17 @@ You can emulate authenticators and debug the [Web Authentication API](https://w3
 
 1. Sign into the website.
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **WebAuthn** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **WebAuthn** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./index-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
 
    The **WebAuthn** tool opens:
 
-   ![WebAuthn tool.](../media/webauthn-webauthn-tab.msft.png)
+   ![WebAuthn tool](./index-images/webauthn-webauthn-tab.png)
 
 1. In the **WebAuthn** tool, select the **Enable virtual authenticator environment** checkbox.  A new section named **New authenticator** is displayed:
 
-   ![Enable virtual authenticator environment.](../media/webauthn-enable-virtual-auth.msft.png)
+   ![Enable virtual authenticator environment](./index-images/webauthn-enable-virtual-auth.png)
 
 1. In the **New authenticator** section, configure the following options:
 
@@ -56,11 +56,11 @@ You can emulate authenticators and debug the [Web Authentication API](https://w3
 
 1. A new section of your newly created authenticator is displayed:
 
-   ![Authenticator.](../media/webauthn-authenticator.msft.png)
+   ![Authenticator](./index-images/webauthn-authenticator.png)
 
 The **Authenticator** section includes a **Credentials** table.  The table is empty until a credential is registered to the authenticator:
 
-![No credentials.](../media/webauthn-no-cred.msft.png)
+![No credentials](./index-images/webauthn-no-cred.png)
 
 
 <!-- ====================================================================== -->
@@ -72,7 +72,7 @@ To register a new credential:
 
 1. A new credential is now added to the **Credentials** table in the WebAuthn tool:
 
-   ![View credentials.](../media/webauthn-view-cred.msft.png)
+   ![View credentials](./index-images/webauthn-view-cred.png)
 
 On the demo website, click the **Authenticate** button.  Verify that the [Sign Count](https://w3c.github.io/webauthn/#sctn-sign-counter) of the credential in the **Credentials** table increased by 1, which marks a successful [authenticatorGetAssertion](https://w3c.github.io/webauthn#authenticatorgetassertion) operation.
 
@@ -84,7 +84,7 @@ For more information about what the [Web Authentication API](https://w3c.github.
 
 To export or remove a credential, click the **Export** or **Remove** button.
 
-![Export or remove a credential.](../media/webauthn-export-remove.msft.png)
+![Export or remove a credential](./index-images/webauthn-export-remove.png)
 
 
 <!-- ====================================================================== -->
@@ -96,7 +96,7 @@ To rename an authenticator:
 
 1. Edit the name, then press **Enter** to save the changes.
 
-![Renaming an authenticator.](../media/webauthn-rename.msft.png)
+![Renaming an authenticator](./index-images/webauthn-rename.png)
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ A newly created authenticator is automatically activated.  To use another virtua
 
 DevTools supports only one active virtual authenticator at any point of time.  If you remove the active authenticator, another authenticator isn't automatically activated.
 
-![Setting the active authenticator.](../media/webauthn-set-active.msft.png)
+![Setting the active authenticator](./index-images/webauthn-set-active.png)
 
 
 <!-- ====================================================================== -->
@@ -114,7 +114,7 @@ DevTools supports only one active virtual authenticator at any point of time.  I
 
 To remove a virtual authenticator, next to the authenticator, click the **Remove** button.
 
-![Removing an authenticator.](../media/webauthn-remove-authenticator.msft.png)
+![Removing an authenticator](./index-images/webauthn-remove-authenticator.png)
 
 
 <!--todo: remove this notice, or add notice at top?-->
@@ -124,5 +124,5 @@ To remove a virtual authenticator, next to the authenticator, click the **Remove
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/webauthn/) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

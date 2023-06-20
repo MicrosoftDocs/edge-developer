@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/25/2021
+ms.date: 11/03/2022
 ---
 # Publish a Microsoft Edge extension
 
@@ -21,7 +21,7 @@ You should have a working prototype of your extension ready.  For information on
 
 To publish your extension to the Microsoft Edge Add-ons website, use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge add-ons program, see [Developer registration](create-dev-account.md).
 
-Create a zip file that represents your extension package.  Your extension package must include the following files:
+Create a zip file for your extension package.  Your extension package must include the following files:
 
 *  The extension manifest that specifies details such as the name of the extension, short description, permissions, and default language.
 
@@ -75,9 +75,9 @@ Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsof
 
    You can only upload one package at a time. Your submission is blocked if the package upload isn't successful on the **Packages** webpage.
 
-1. To upload your package, drag and drop the zip file to the **Drag your package here (.zip)** section of the webpage. Or you can select **Browse your files** to open a dialog box to select the package to upload.
+1. To upload your package, drag and drop the zip file to the **Drag your package here (.zip)** section of the webpage. Or you can select **Browse your files** to open a dialog to select the package to upload.
 
-   After your package is uploaded, it is validated. If there is a validation error, resolve the issue and try uploading your package again.
+   After your package is uploaded, it's validated. If there's a validation error, resolve the issue and try uploading your package again.
 
 1. When validation succeeds, review the extension details, and then select **Continue** to proceed.  
 
@@ -87,7 +87,8 @@ Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsof
 
 On the **Availability** webpage, enter the following information about the availability of your extension.
 
-### Visibility
+
+#### Visibility
 
 Select one of the following visibility options to define whether your extension is discoverable in the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
@@ -95,9 +96,10 @@ Select one of the following visibility options to define whether your extension 
 
 *  `Hidden` - Removes extensions from search results or browsing in the Microsoft Edge Add-ons website.  To distribute hidden extensions in the Microsoft Edge Add-ons website, you must share the listing URL to the extension with your customers.
 
-You can change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to public retain access to your extension and receive any updates you make available through the Microsoft Edge Add-ons website.
+You can change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to **Public** retain access to your extension and receive any updates you make available through the Microsoft Edge Add-ons website.
 
-### Markets
+
+#### Markets
 
 Define the specific markets in which you plan to offer your extension.  The default setting for markets is all markets and that includes any future markets that are added later.
 
@@ -105,7 +107,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 1. Toggle individual markets to exclude each one or select **Unselect all** and then add individual markets of your choice.
 
-   You can change the markets where your extension is offered. A user who installs your extension while it is available in the user's market retains access to your extension. However, the user doesn't have access to any future updates that are submitted to the Microsoft Edge Add-ons website.
+   You can change the markets where your extension is offered. A user who installs your extension while it's available in the user's market retains access to your extension. However, the user doesn't have access to any future updates that are submitted to the Microsoft Edge Add-ons website.
 
 1. Click **Save & Continue** to continue to the **Properties** section.
 
@@ -126,7 +128,7 @@ On the **Properties** webpage, enter the following information to specify proper
 
 Select **Save & Continue** to continue to the **Store listings** section.
 
-> [!Important]
+> [!IMPORTANT]
 > Your developer/organization name, website URL, and support contact details that you submitted during registration are displayed to users on the Microsoft Edge Add-ons website.
 
 
@@ -147,13 +149,14 @@ The information provided in the following section is displayed to users who revi
 | Description (required) | The `description` field focuses on explaining what your extension does, why users should install it, or other relevant information that users need to know.  It should be less than 10,000 characters.  |
 | Extension Store logo (required) | An image that represents your company or `extension logo` with an aspect ratio of 1, and recommended size of 300 x 300 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  This button is found following the field after you upload your logo for the language.  |
 | Small promotional tile (optional) | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |
-| Screenshots (optional) | You can submit a maximum of 10 `screenshots` describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload at least one for the language.|
 | Large promotional tile (optional) | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge Add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |
+| Screenshots (optional) | You can submit a maximum of 10 `screenshots` describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload at least one for the language.|
 | YouTube video URL (optional) | You can include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing webpage of your extension.  |
-| Short description (required) | To edit the `short description`, you must update the description field in your manifest file of your extension package and re-upload it.  |
+| Short description (required) | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it.  |
 | Search terms (optional) | `Search terms` are single words or phrases that help discover your extension when a user searches in the Microsoft Edge Add-ons website.  The search terms aren't displayed to users.  |
 
-### YouTube video URL requirements
+
+#### YouTube video URL requirements
 
 Make sure your video meets the following requirements.
 
@@ -161,20 +164,16 @@ Make sure your video meets the following requirements.
 
 *  Turn off advertisements on your video.  For more information, see [Set your default ad formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
 
-*  Turn on embedding for your videos.  For more information, see [Embed videos & playlists](https://support.google.com/youtube/answer/171780).
-
 To submit the YouTube video URL of your video:
 
 1. On YouTube, locate the video that you want to add to your store listing webpage.
 
-1. Under the video, select **Share** > **Embed**.
+1. Under the video, click the **Share** button, and then click the **Copy** button to copy the URL for the video.
 
-1. Copy the HTML code that is displayed.
-
-1. On the store listing details webpage, paste the HTML code in the `YouTube video URL` field.
+1. On the store listing details webpage, paste the URL in the **YouTube video URL** field.
 
 
-### Search terms requirements
+#### Search terms requirements
 
 Search terms must meet the following requirements:
 
@@ -189,7 +188,7 @@ Search terms must meet the following requirements:
 On the **Submit your extension** webpage, add notes for certification to help test your extension.
 
 
-### Notes for certification (optional)
+#### Notes for certification (optional)
 
 When you submit your extension, use the **Notes for certification** webpage to provide additional information to the certification testers.  The additional information helps ensure that your extension is tested correctly.  If your extension isn't fully tested, it might fail certification.
 

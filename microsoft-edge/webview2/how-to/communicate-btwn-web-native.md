@@ -41,11 +41,11 @@ To see messaging in action:
 
    The following screen appears:
 
-   ![The Web Messaging sample page, which demonstrates basic interaction between the host app and the WebView2 instance by using Web Messages.](../media/ScenarioWebMessaging.png)
+   ![The Web Messaging sample page, which demonstrates basic interaction between the host app and the WebView2 instance by using Web Messages](./communicate-btwn-web-native-images/ScenarioWebMessaging.png)
 
 1. Notice the first section, titled `Posting Messages`.  Follow the instruction and select **Script** > **Post Message JSON**.  Then click  **OK**. The message turns blue:
 
-   ![The 'Post Web Message JSON' demo.](../media/postmessagejson.png)
+   ![The 'Post Web Message JSON' demo](./communicate-btwn-web-native-images/postmessagejson.png)
 
    How were we able to change text color?  The sample starts by creating a button, on the native side.  Then the sample adds the following code to post the web message when the button is clicked.  This code changes the color of the web text to blue.
 
@@ -283,4 +283,4 @@ Congratulations! You've successfully embedded web content into native applicatio
 <!-- ====================================================================== -->
 ## See also
 
-* [Web/Native Interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
+* [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
