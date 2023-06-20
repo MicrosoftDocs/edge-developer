@@ -15,13 +15,12 @@ With Sidebar API feature for extensions, developers can enhance the browsing exp
 
 The sidebar refers to a persistent column located on the side of the browser, which coexists with the primary content. By enabling side-by-side browsing, users can reduce the need to constantly switch between tabs, resulting in a more productive browsing experience.
 
-
 <!-- ------------------------------ -->
-#### Availability
+## Features of Sidebar API
 
-* It is available for the Edge 115 versions or later.
-* Extensions in Manifest V3 (MV3) can access the API.
-
+* Extensions in Sidebar have access to all the Edge Extension APIs  .
+* The sidebar remains open while navigating between tabs.
+* Extensions in sidebar can be available for specific sites.   
 
 <!-- ------------------------------ -->
 #### Terminology
@@ -35,11 +34,6 @@ The sidebar refers to a persistent column located on the side of the browser, wh
 
 
 <!-- ====================================================================== -->
-## Features of Sidebar API
-
-* The sidebar has access to all the Microsoft Edge Extension APIs.
-* The sidebar remains open while navigating between tabs.
-* The sidebar is available on specific sites.
 
 Use this article to enable the sidebar for your new or existing extension.
 
@@ -59,15 +53,16 @@ To add a sidebar to your extension, follow the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 1: Modify the manifest file
+## Modify the manifest file
 
-Every extension for Microsoft Edge has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.
-
+Every extension for Microsoft Edge has a JSON-formatted manifest file, named `manifest.json`. The manifest file is the blueprint of your extension.
 
 <!-- ------------------------------ -->
 #### Permissions and supported API
 
-Use the `side_panel` API field to set the side panel option in your extension.  Include the `sidePanel` permission in the extension manifest file:
+The permission sidePanel should be included in the extension manifest file.
+
+Developers can use the supported API field, side_panel, to set the sidepanel option in their extension. 
 
 `manifest.json`:
 ```json
@@ -85,7 +80,7 @@ Use the `side_panel` API field to set the side panel option in your extension.  
 
 
 <!-- ====================================================================== -->
-## Step 2: Adding functionality to the sidebar
+## Sidebar API use cases
 
 
 <!-- ------------------------------ -->
@@ -125,35 +120,10 @@ A sidebar can be set as the default, to show the same extension throughout all t
 
 
 <!-- ------------------------------ -->
-#### Example 2: Switching to a different sidebar
 
-Users can switch to a different sidebar when they switch tabs.
+#### Example 2: Enable an extension for sidebar of a specific site
 
-The following example sets a welcome sidebar on `runtime.OnInstalled()`, when the user navigates to a different tab, it replaces the welcome page sidebar with the main sidebar.
-
-`service-worker.js`:
-
-```js
-const welcomePage = 'sidepanels/welcome-sp.html';
-const mainPage = 'sidepanels/main-sp.html';
-
-chrome.runtime.onInstalled.addListener(() => {
-  chrome.sidePanel.setOptions({ path: welcomePage });
-});
-
-chrome.tabs.onActivated.addListener(async ({ tabId }) => {
-  const { path } = await chrome.sidePanel.getOptions({ tabId });
-  if (path === welcomePage) {
-    chrome.sidePanel.setOptions({ path: mainPage });
-  }
-});
-```
-
-
-<!-- ------------------------------ -->
-#### Example 3: Enabling sidebar on a specific site
-
-An extension can use`sidepanel.setOptions()` to enable a sidebar on a specific site. This can be a particular website a user is using and would want the same extension to open in the sidebar, once this website is opened.
+An extension can use `sidepanel.setOptions()` to enable a sidebar on a specific tab. This can be a particular website a user is using and would want the same extension to open in the sidebar, once this website is opened.
 
 `service-worker.js`:
 
@@ -180,11 +150,11 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
 });
 ```
 
-When a user switches to a tab where the sidebar is not enabled, the sidebar will be hidden.
-
+When a user  switches to a tab or site where the sidebar is not enabled, the sidebar will be hidden. It will show again when the user switches to a tab where it was previously open.
 
 <!-- ------------------------------ -->
-#### Example 4: Enabling the action icon to open the sidebar
+
+#### Example 3: Enabling the extension’s shortcut icon to open the sidebar
 
 By declaring the `action` key in the manifest, you can allow users to open the side panel when they click on the action toolbar icon with `sidePanel.setPanelBehavior()`.
 
@@ -212,14 +182,39 @@ chrome.sidePanel
   .catch((error) => console.error(error));
 ...
 ```
+<!-- ------------------------------ -->
 
+#### Example 4: Switching to a different sidebar
+
+An extension can enable different sidebar for a specific tab.  
+
+The following example sets a sidebar with welcome message on runtime.OnInstalled(). When the user navigates to a different tab, the sidebar is replaced with the browser level sidebar.
+
+`service-worker.js`:
+
+```js
+const welcomePage = 'sidebar/welcome-sp.html';
+const mainPage = 'sidebar/main-sp.html';
+
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.sidePanel.setOptions({ path: welcomePage });
+});
+
+chrome.tabs.onActivated.addListener(async ({ tabId }) => {
+  const { path } = await chrome.sidePanel.getOptions({ tabId });
+  if (path === welcomePage) {
+    chrome.sidePanel.setOptions({ path: mainPage });
+  }
+});
+```
+<!-- ------------------------------ -->
 
 <!-- ====================================================================== -->
-## Sidebar user experience
+## User experience for extensions in Edge sidebar 
 
 
 <!-- ------------------------------ -->
-#### Sidebar icon next to the extension's name
+#### Identifying   Extensions with Sidebar support
 
 * The sidebar icon is displayed next to the extension name in the hub in the toolbar:
 
@@ -231,7 +226,7 @@ chrome.sidePanel
 
 
 <!-- ------------------------------ -->
-#### Opening a extension in the sidebar
+#### Opening Extensions in the Sidebar
 
 To open an extension in the sidebar, the user can do either of the following:
 
@@ -241,15 +236,22 @@ To open an extension in the sidebar, the user can do either of the following:
 
 
 <!-- ====================================================================== -->
-## Properties for sidebars
+## Properties for extensions in Sidebar   
 
+#### GetPanelOptions
+
+| Property | Description |
+|---|---|
+| `tabId`  
+`number optional` | If specified, the side panel options for the given tab will be returned. Otherwise, returns the default side panel options (used for any tab that doesn't have specific settings).|
 
 <!-- ------------------------------ -->
 #### Panel behavior
 
 | Property | Description |
 |---|---|
-| `openPanelOnActionClick` | Whether clicking the extension's icon toggles showing the extension's entry in the sidebar.  The default value is `false`. |
+| `openPanelOnActionClick` 
+`boolean optional` | Whether clicking the extension's icon toggles showing the extension's entry in the sidebar.  The default value is `false`. |
 
 
 <!-- ------------------------------ -->
@@ -257,8 +259,12 @@ To open an extension in the sidebar, the user can do either of the following:
 
 | Property | Description |
 |---|---|
-| `tabId` | If specified, the sidebar options only apply to the tab that has this ID.  If not specified, these options set the default behavior enabled.  Whether the sidebar is enabled.  The default value is `true`.<!--todo: delete "Whether the sidebar is enabled.  The default value is `true`."? --> |
-| `path` | The path to the side panel HTML file to use.  This needs to be a local resource within the extension package. |
+| `enabled`
+`boolean optional`
+| `tabId`
+`number optional`| If specified, the sidebar options only apply to the tab that has this ID.  If not specified, these options set the default behavior enabled.  Whether the sidebar is enabled.  The default value is `true`.<!--todo: delete "Whether the sidebar is enabled.  The default value is `true`."? --> |
+| `path` 
+`string optional`| The path to the side panel HTML file to use.  This needs to be a local resource within the extension package. |
 
 
 <!-- ------------------------------ -->
@@ -267,7 +273,8 @@ To open an extension in the sidebar, the user can do either of the following:
 
 | Property | Description |
 |---|---|
-| `default_path` | The developer-specified path for sidebar display.|
+| `default_path`
+'string'| The developer-specified path for sidebar display.|
 
 
 <!-- ====================================================================== -->
