@@ -71,7 +71,7 @@ Use the `side_panel` API field to set the side panel option in your extension.  
 
 
 <!-- ====================================================================== -->
-## Step 2: Adding functionalities to the sidebar
+## Step 2: Adding functionality to the sidebar
 
 
 <!-- ------------------------------ -->
@@ -219,11 +219,11 @@ chrome.sidePanel
 <!-- ------------------------------ -->
 #### Opening a extension in the sidebar
 
-Your extension can be accessed in the sidebar by clicking the sidebar icon in the hub in the toolbar.
-<!-- todo: accessed from the sidebar, or loaded into the sidebar? -->
+To open an extension in the sidebar, the user can do either of the following:
 
-Extensions can also be opened in the sidebar by right-clicking an extension's shortcut in the toolbar.
-<!-- todo: opened into the sidebar; loaded into the sidebar? -->
+* Click the sidebar icon in the hub in the toolbar.
+
+* Right-click the extension's shortcut in the toolbar.
 
 
 <!-- ====================================================================== -->
@@ -232,9 +232,9 @@ Extensions can also be opened in the sidebar by right-clicking an extension's sh
 | Property | Description | Optional? |
 |---|---|---|
 | `openPanelOnActionClick` | Whether clicking the extension's icon toggles showing the extension's entry in the side panel.  The default value is `false`. | No<!-- contradiction?  the fact that there's a default value implies that this property is optional --> |
-| `enabled` | Whether the side panel <!--sidebar?--> should be enabled.  The default value is `true`. | Yes |
-| `path` |The path for the side panel HTML file.  This needs to be a local resource within the extension package. | No |
-| `default_path` | The developer-specified path for the side-panel <!--sidebar?--> display. | No |
+| `enabled` | Whether the sidebar is enabled.  The default value is `true`. | Yes |
+| `path` |The path for the sidebar HTML file.  This must be a local resource within the extension package. | No |
+| `default_path` | The developer-specified path for the sidebar display. | No |
 
 
 <!-- ====================================================================== -->
