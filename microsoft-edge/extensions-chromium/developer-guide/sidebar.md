@@ -257,8 +257,10 @@ To open an extension in the sidebar, the user can do either of the following:
 
 | Property | Description |
 |---|---|
-| `tabId` | If specified, the sidebar options only apply to the tab that has this ID.  If not specified, these options set the default behavior enabled.  Whether the sidebar is enabled.  The default value is `true`.<!--todo: delete "Whether the sidebar is enabled.  The default value is `true`."? --> |
+| `tabId` | If specified, the sidebar options only apply to the tab that has this ID.  If not specified, these options set the default behavior enabled.  Whether the sidebar is enabled.  The default value is `true`. |
 | `path` | The path to the side panel HTML file to use.  This needs to be a local resource within the extension package. |
+
+<!--todo: row 1 col 2: maybe delete "Whether the sidebar is enabled.  The default value is `true`." -->
 
 
 <!-- ------------------------------ -->
@@ -267,7 +269,7 @@ To open an extension in the sidebar, the user can do either of the following:
 
 | Property | Description |
 |---|---|
-| `default_path` | The developer-specified path for sidebar display.|
+| `default_path` | The developer-specified path for sidebar display. |
 
 
 <!-- ====================================================================== -->
