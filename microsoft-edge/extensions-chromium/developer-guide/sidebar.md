@@ -5,27 +5,31 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/19/2023
+ms.date: 06/20/2023
 ---
 # Add an extension to the sidebar
 
-The Microsoft Edge Add-ons API provides an API to enable your extension as sidebar extension. You can use this API to convert your extension to sidebar and your extension will have the access to Microsoft Edge Sidebar. You can use this *Sidebar* API by giving permissions in your manifest.json file.
+The Microsoft Edge Add-ons API provides an API to enable your extension as sidebar extension. You can use this API to convert your extension to sidebar and your extension will have the access to Microsoft Edge Sidebar. You can use this *Sidebar* API by giving permissions in your `manifest.json` file.
 
 With Sidebar API feature for extensions, developers can enhance the browsing experience by enabling users to view additional information alongside the main content of a webpage.
 
 The sidebar refers to a persistent column located on the side of the browser, which coexists with the primary content. By enabling side-by-side browsing, users can reduce the need to constantly switch between tabs, resulting in a more productive browsing experience.
 
-**Availability**
 
-•	It is available for the Edge 115 versions or later
-•	Extensions in MV3 can access the API
+<!-- ------------------------------ -->
+#### Availability
 
-**Terminology**
+* It is available for the Edge 115 versions or later.
+* Extensions in Manifest V3 (MV3) can access the API.
+
+
+<!-- ------------------------------ -->
+#### Terminology
 
 | Term | Definition |
 |---|---|
-| Sidebar API | Name of feature that can be utilised by the extension developer in their extensions |
-| sidepanel | Name of the API & permission to unable any extension as Sidebar extension as derived from Chromium. |
+| Sidebar API | Name of feature that can be utilised by the extension developer in their extensions. |
+| `sidepanel` | Name of the API and permission to enable any extension as a Sidebar extension, as derived from Chromium. |
 
 ![The sidebar for a Microsoft Edge extension](./sidebar-images/sidebar-screenshot.png)
 
@@ -239,22 +243,31 @@ To open an extension in the sidebar, the user can do either of the following:
 <!-- ====================================================================== -->
 ## Properties for sidebars
 
-**PanelBehaviour**
-| Property | Description |
-|---|---|
-| openPanelOnActionClick | Property shows if clicking the extension's icon will toggle showing the extension's entry in the sidebar. Default value is false. |
 
-**PanelOptions**
-| Property | Description |
-|---|---|
-| tabId |	If it is specified, the sidebar options will only apply to the tab with this id. If not specified, these options set the default behavior enabled	If the sidebar should be enabled or not. Default value is true. |
-| path | The path to the side panel HTML file to use. This needs to be a local resource within the extension package. |
-
-**SidePanel**
+<!-- ------------------------------ -->
+#### Panel behavior
 
 | Property | Description |
 |---|---|
-| default_path | Developer specified path for sidebar display.|
+| `openPanelOnActionClick` | Whether clicking the extension's icon toggles showing the extension's entry in the sidebar.  The default value is `false`. |
+
+
+<!-- ------------------------------ -->
+#### Panel options
+
+| Property | Description |
+|---|---|
+| `tabId` | If specified, the sidebar options only apply to the tab that has this ID.  If not specified, these options set the default behavior enabled.  Whether the sidebar is enabled.  The default value is `true`.<!--todo: delete "Whether the sidebar is enabled.  The default value is `true`."? --> |
+| `path` | The path to the side panel HTML file to use.  This needs to be a local resource within the extension package. |
+
+
+<!-- ------------------------------ -->
+#### SidePanel
+<!-- todo: improve heading -->
+
+| Property | Description |
+|---|---|
+| `default_path` | The developer-specified path for sidebar display.|
 
 
 <!-- ====================================================================== -->
