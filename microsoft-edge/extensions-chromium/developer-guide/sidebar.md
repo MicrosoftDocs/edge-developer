@@ -9,13 +9,23 @@ ms.date: 06/19/2023
 ---
 # Add an extension to the sidebar
 
-The sidebar feature of Microsoft Edge Add-Ons (extensions) enables users of your extension to view more information alongside the main content of a webpage.
+The Microsoft Edge Add-ons API provides an API to enable your extension as sidebar extension. You can use this API to convert your extension to sidebar and your extension will have the access to Microsoft Edge Sidebar. You can use this *Sidebar* API by giving permissions in your manifest.json file.
 
-The _sidebar_ is a persistent column on the side of the browser, which exists alongside the primary content.  By enabling side-by-side browsing, the need to constantly switch tabs is reduced, and the user will have a more productive browsing experience.
+With Sidebar API feature for extensions, developers can enhance the browsing experience by enabling users to view additional information alongside the main content of a webpage.
 
-In the API, the sidebar is called a _side panel_.  In the UI, it's called a _sidebar_.
+The sidebar refers to a persistent column located on the side of the browser, which coexists with the primary content. By enabling side-by-side browsing, users can reduce the need to constantly switch between tabs, resulting in a more productive browsing experience.
 
-As a developer, the sidebar API enables you to display your own UI on the web.  You can use the extension's content in the sidebar to supplement the user's primary task.
+**Availability**
+
+•	It is available for the Edge 115 versions or later
+•	Extensions in MV3 can access the API
+
+**Terminology**
+
+| Term | Definition |
+|---|---|
+| Sidebar API | Name of feature that can be utilised by the extension developer in their extensions |
+| sidepanel | Name of the API & permission to unable any extension as Sidebar extension as derived from Chromium. |
 
 ![The sidebar for a Microsoft Edge extension](./sidebar-images/sidebar-screenshot.png)
 
@@ -60,7 +70,7 @@ Use the `side_panel` API field to set the side panel option in your extension.  
 {
   ...
   "side_panel": {
-    "default_path": "sidepanel.html"
+    "default_path": "sidebar.html"
   },
   "permissions": [
     "sidePanel"
@@ -88,13 +98,13 @@ A sidebar can be set as the default, to show the same extension throughout all t
   "name": "My sidebar extension",
   ...
   "side_panel": {
-    "default_path": "sidepanel.html"
+    "default_path": "sidebar.html"
   }
   ...
 }
 ```
 
-`sidepanel.html`:
+`sidebar.html`:
 
 ```html
 <!DOCTYPE html>
@@ -103,8 +113,8 @@ A sidebar can be set as the default, to show the same extension throughout all t
     <title>My Side Panel</title>
   </head>
   <body>
-    <h1>Side panel extension for all sites</h1>
-    <p>This side panel is enabled on all sites</p>
+    <h1>Sidebar extension for all sites</h1>
+    <p>This sidebar is enabled on all sites</p>
   </body>
 </html>
 ```
@@ -229,12 +239,22 @@ To open an extension in the sidebar, the user can do either of the following:
 <!-- ====================================================================== -->
 ## Properties for sidebars
 
-| Property | Description | Optional? |
-|---|---|---|
-| `openPanelOnActionClick` | Whether clicking the extension's icon toggles showing the extension's entry in the side panel.  The default value is `false`. | No<!-- contradiction?  the fact that there's a default value implies that this property is optional --> |
-| `enabled` | Whether the sidebar is enabled.  The default value is `true`. | Yes |
-| `path` |The path for the sidebar HTML file.  This must be a local resource within the extension package. | No |
-| `default_path` | The developer-specified path for the sidebar display. | No |
+**PanelBehaviour**
+| Property | Description |
+|---|---|
+| openPanelOnActionClick | Property shows if clicking the extension's icon will toggle showing the extension's entry in the sidebar. Default value is false. |
+
+**PanelOptions**
+| Property | Description |
+|---|---|
+| tabId |	If it is specified, the sidebar options will only apply to the tab with this id. If not specified, these options set the default behavior enabled	If the sidebar should be enabled or not. Default value is true. |
+| path | The path to the side panel HTML file to use. This needs to be a local resource within the extension package. |
+
+**SidePanel**
+
+| Property | Description |
+|---|---|
+| default_path | Developer specified path for sidebar display.|
 
 
 <!-- ====================================================================== -->
