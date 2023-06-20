@@ -26,7 +26,7 @@ When saving performance profiles, heap snapshots, allocation timelines, or alloc
 
 To try the enhanced traces feature:
 
-1. In DevTools, click the **Settings** (![Settings icon](../../../media/settings-gear-icon-light-theme.png)) button.
+1. In DevTools, click the **Settings** (![Settings icon](./devtools-109-images/settings-gear-icon-light-theme.png)) button.
 
 1. In the **Persistence** section of the **Preferences** settings page, select the **Export enhanced performance and memory traces** checkbox:
 
@@ -134,7 +134,7 @@ See also:
 
 <!-- Subtitle: Quick View now allows you to pick any tool, show several tools at once and persists across sessions. -->
 
-We listened to your feedback and improved the **Quick View** options in Focus Mode.  Instead of offering only a subset of the tools in a **Quick View** drop-down list, you can now select any DevTools tool by clicking the **More Tools** (![More Tools icon](../../../media/more-tools-icon-light-theme.png)) button, like in the main toolbar of DevTools.  Load any tool in the **Quick View** pane of DevTools, to show multiple tools at the same time.
+We listened to your feedback and improved the **Quick View** options in Focus Mode.  Instead of offering only a subset of the tools in a **Quick View** drop-down list, you can now select any DevTools tool by clicking the **More Tools** (![More Tools icon](./devtools-109-images/more-tools-icon-light-theme.png)) button, like in the main toolbar of DevTools.  Load any tool in the **Quick View** pane of DevTools, to show multiple tools at the same time.
 
 The state of your **Quick View** persists across DevTools sessions.  The **Quick View** pane automatically collapses if you open the same tool in the upper pane of DevTools.
 

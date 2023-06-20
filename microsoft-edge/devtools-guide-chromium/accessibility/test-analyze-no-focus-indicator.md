@@ -23,7 +23,7 @@ To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link 
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. Click the **Inspect** (![Inspect icon](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
+1. Click the **Inspect** (![Inspect icon](./test-analyze-no-focus-indicator-images/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
 1. Hover over the blue **Cats** link in the page's sidebar navigation menu.  The Inspect overlay appears, showing that the `a` element is keyboard-focusable.  But the overlay doesn't show that there's no visual indication when the link has focus.
 
@@ -33,11 +33,11 @@ To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link 
 
 1. In DevTools, select the **Styles** tab.  The CSS rule `#sidebar nav li a` appears, along with a link to a line number in `styles.css`.
 
-   ![Inspecting the source code and the applied styles of a link in the menu](../media/a11y-testing-menu-link.msft.png)
+   ![Inspecting the source code and the applied styles of a link in the menu](./test-analyze-no-focus-indicator-images/a11y-testing-menu-link.png)
 
 1. Click the `styles.css` link.  The CSS file opens within the **Sources** tool.
 
-   ![The styles applied to the link in the Sources tool](../media/a11y-testing-menu-link-styles.msft.png)
+   ![The styles applied to the link in the Sources tool](./test-analyze-no-focus-indicator-images/a11y-testing-menu-link-styles.png)
 
    The styles of the page have a CSS pseudo-class rule for the `hover` state that indicates which menu item you're on when you use a mouse: `#sidebar nav li a:hover`.  However, there is no CSS pseudo-class rule for the `focus` state to visually indicate which menu item you're on when you use a keyboard, such as `#sidebar nav li a:focus`.
 

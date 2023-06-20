@@ -21,7 +21,7 @@ ms.date: 09/20/2022
 
 You can apply various color themes to Microsoft Edge DevTools, including several themes from [Visual Studio Code](https://code.visualstudio.com), such as Monokai and Solarized Dark.  Themes affect the color of panes, buttons, and code syntax highlighting.
 
-![Various DevTools color themes](./media/all-devtools-themes.png)
+![Various DevTools color themes](./theme-images/all-devtools-themes.png)
 
 This article is about changing the appearance of DevTools.  To instead change how the webpage under development is displayed, see [Emulate dark or light schemes in the rendered page](../accessibility/preferred-color-scheme-simulation.md).
 
@@ -52,11 +52,11 @@ Dark themes:
 
 1. Open DevTools, and then select **Settings** (the gear icon).
 
-   ![The Settings (gear) icon](./media/setting-button.png)
+   ![The Settings (gear) icon](./theme-images/setting-button.png)
 
 1. Select **Preferences**, and then in the **Appearance** section, select a theme from the **Theme** dropdown list.
 
-![Selecting a theme in Preferences](./media/customize-theme-setting.png)
+![Selecting a theme in Preferences](./theme-images/customize-theme-setting.png)
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ To use the Command Menu to change which color theme is applied to DevTools:
 
 1. Press **Enter**.
 
-![The list of themes in the Command Menu](./media/customize-theme-command-menu.png)
+![The list of themes in the Command Menu](./theme-images/customize-theme-command-menu.png)
 
 
 <!-- ====================================================================== -->
