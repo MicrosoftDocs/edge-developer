@@ -367,7 +367,7 @@ A service worker is defined in a JavaScript file that's loaded by your app. To a
     
     The code also intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy. The service worker returns cached resources so your app can work offline, and if that fails attempts to download from the server.
 
-1.  Open `index.html` and add the following code at the end of the `<body>` tag to register your server worker:
+1.  Open `index.html` and add the following code at the end of the `<body>` tag to register your service worker:
 
     ```html
     <script>
