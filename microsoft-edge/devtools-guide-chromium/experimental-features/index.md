@@ -658,13 +658,13 @@ Status:
 *  This checkbox is present in Microsoft Edge Stable 114.
 
 
-<!-- ====================================================================== -->
+<!-- ======================================================================
+This feature is Microsoft-internal only and shouldn't appear on the public documentation site.
 ## Emulate Microsoft-recommended hardware and network performance presets
 
 _new as of Microsoft Edge 114_
 
 Emulates Microsoft-recommended hardware and network performance presets.
-<!-- todo: need text -->
 
 See also:
 * [Analyze runtime performance](../rendering-tools/index.md)
@@ -672,7 +672,7 @@ See also:
 Status:
 *  This checkbox is present in Microsoft Edge Canary 116.
 *  This checkbox is present in Microsoft Edge Stable 114.
-
+-->
 
 <!-- ====================================================================== -->
 ## Enable Crash Analyzer
