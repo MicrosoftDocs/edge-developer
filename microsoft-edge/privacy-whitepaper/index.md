@@ -705,7 +705,7 @@ Microsoft Edge allows you to support nonprofit organizations using Microsoft Rew
 
 ![The 'Support nonprofits' icon in the address bar](./index-images/support-nonprofit.png)
  
- To control this feature, go to `edge://settings/privacy` and turn on or off the **Show opportunities to support causes and nonprofits you care about** setting.
+To control this feature, go to `edge://settings/privacy` and turn on or off the **Show opportunities to support causes and nonprofits you care about** setting.
  
 Supporting nonprofits is not available when using **InPrivate** or **Guest** modes.
 
