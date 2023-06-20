@@ -93,7 +93,7 @@ Take a recording in the **Performance** tool.  Check the recording for large `Re
 
 Select a `Recalculate Style` event to view more information about it in the **Details** pane.  If the style changes are taking a long time, that is a performance hit.  If the style calculations are affecting a large number of elements, that is another area with room for improvement.
 
-![Long recalculate style](../media/rendering-tools-performance-recalculate-style-summary.png)
+![Long recalculate style](./index-images/rendering-tools-performance-recalculate-style-summary.png)
 
 To reduce the impact of `Recalculate Style` events, minimize use of CSS properties that trigger layout, paint, and composite.  These properties have the greatest impact on rendering performance.  For more information, see [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/)
 
@@ -141,7 +141,7 @@ As a general rule of thumb, if you ask for a geometric value back from the DOM b
 
 The **Performance** pane identifies when a page causes forced synchronous layouts.  These `Layout` events are marked with red bars.
 
-![Forced synchronous layout](../media/rendering-tools-jank-performance-recalculate-style-summary.png)
+![Forced synchronous layout](./index-images/rendering-tools-jank-performance-recalculate-style-summary.png)
 
 "Layout thrashing" is a repetition of forced synchronous layout conditions.  This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  See the previous figure.
 

@@ -19,7 +19,7 @@ To explore using the Accessibility Tree:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab.  Then press **F12** to open DevTools.
 
-1. Select the **Inspect** (![the Inspect icon](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
+1. Select the **Inspect** (![the Inspect icon](./test-accessibility-tree-images/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
 1. In the rendered webpage, in the **Donation** section, hover over the **100** button.  The **Inspect** tool overlay appears.
 
@@ -27,7 +27,7 @@ To explore using the Accessibility Tree:
 
 1. To the right of the **Styles** tab, select the **Accessibility** tab.  The **Accessibility Tree** for the element is displayed, and is expanded.
 
-   ![Donation form button in the Accessibility Tree tool](../media/a11y-testing-accessibility-tree.png)
+   ![Donation form button in the Accessibility Tree tool](./test-accessibility-tree-images/a11y-testing-accessibility-tree.png)
 
 Any element in the tree that doesn't have a name, or has a role of `generic` (such as the `div` element) is a problem, because that element won't be available to keyboard users, or to users who are using assistive technology.
 

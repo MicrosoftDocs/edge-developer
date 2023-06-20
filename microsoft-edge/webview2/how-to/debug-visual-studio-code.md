@@ -50,17 +50,17 @@ Visual Studio Code source path mapping now requires an URL, so your app now rece
 
 1. To set a breakpoint in your source code, click a line of code and then press **F9**:
 
-   ![A breakpoint that's set in Visual Studio Code](./media/breakpoint-vs.png)
+   ![A breakpoint that's set in Visual Studio Code](./debug-visual-studio-code-images/breakpoint-vs.png)
 
 1. On the **Run** tab, select the launch configuration from the dropdown menu.
 
 1. Click **Start Debugging**, which is the green triangle next to the launch configuration dropdown:
 
-   ![The Run tab in Visual Studio Code](./media/run-vscode.png)
+   ![The Run tab in Visual Studio Code](./debug-visual-studio-code-images/run-vscode.png)
 
 1. To view the debug output and errors, open **Debug Console**:
 
-   ![The Debug Console in Visual Studio Code](./media/results-vs.png)
+   ![The Debug Console in Visual Studio Code](./debug-visual-studio-code-images/results-vs.png)
 
 
 <!-- ====================================================================== -->
@@ -130,11 +130,11 @@ Rename `New Value #1` to `*`.
 
 1. Right click the **\*** value, and then select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify that the edit window matches the following:
 
-   ![Set Registry Key](./media/set-debugging-port.png)
+   ![Set Registry Key](./debug-visual-studio-code-images/set-debugging-port.png)
 
 1. Click **OK**, and then verify that the registry key is set in the editor and matches the following:
 
-   ![Registry Key](./media/set-debugging-port-registry-key.png)
+   ![Registry Key](./debug-visual-studio-code-images/set-debugging-port-registry-key.png)
 
 
 <!-- ====================================================================== -->
@@ -159,7 +159,7 @@ To enable debug tracing, add the `trace` parameter to `launch.json` , as follows
 
 Saving debug output to a log file:
 
-![ Save debug output to a log file](./media/trace-log.png)
+![ Save debug output to a log file](./debug-visual-studio-code-images/trace-log.png)
       
 ```json
 ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
@@ -167,7 +167,7 @@ Saving debug output to a log file:
 
 Visual Studio Code Debug Output with verbose tracing turned on:
 
-![Visual Studio Code Debug Output with verbose tracing turned on](./media/verbose.png)
+![Visual Studio Code Debug Output with verbose tracing turned on](./debug-visual-studio-code-images/verbose.png)
 
 
 <!-- ====================================================================== -->
@@ -191,7 +191,7 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
 1. Verify that the registry key is set in the editor and matches the following:
 
-   ![Setting the AdditionalBrowserArguments registry key to --remote-debugging-pipe](./media/uwp-debugging-registry-key.png)
+   ![Setting the AdditionalBrowserArguments registry key to --remote-debugging-pipe](./debug-visual-studio-code-images/uwp-debugging-registry-key.png)
 
 1. Add a new configuration to your `launch.json` file.  Open `launch.json` and add the following code:
 
@@ -209,7 +209,7 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
 1. Click the **Start Debugging** button to attach to the process and begin debugging.
 
-   ![Run and Debug](./media/attach-uwp.png)
+   ![Run and Debug](./debug-visual-studio-code-images/attach-uwp.png)
 
 
 <!-- ====================================================================== -->

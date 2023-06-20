@@ -43,13 +43,13 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 1. Go to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab or window.
 
-1. Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter](../media/issues-counter-icon.png)) appears in the upper right corner of DevTools.
+1. Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter](./index-images/issues-counter-icon.png)) appears in the upper right corner of DevTools.
 
 1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
 
 1. Select the **Issues counter**.  The **Issues** tool opens with issues grouped into different categories.
 
-   ![Categories of issues in the Issues tool on the demo page](media/categories.png)
+   ![Categories of issues in the Issues tool on the demo page](./index-images/categories.png)
 
 
 ### Other ways to open the Issues tool
@@ -64,7 +64,7 @@ There are several additional ways to open the **Issues** tool:
 
 Within each category of issues, first the errors are listed, then warnings, and then tips.
 
-![The Issues tool displays Performance issues sorted by severity](media/ordered-by-severity.png)
+![The Issues tool displays Performance issues sorted by severity](./index-images/ordered-by-severity.png)
 
 
 <!-- ====================================================================== -->
@@ -74,11 +74,11 @@ The **Issues** tool presents additional documentation and recommended fixes to a
 
 1. Open the [accessibility-testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab, and then open DevTools.
 
-1. Open the **Issues** tool by selecting the **Issues counter** (![Issues counter](../media/issues-counter-icon.png)).
+1. Open the **Issues** tool by selecting the **Issues counter** (![Issues counter](./index-images/issues-counter-icon.png)).
 
 1. Select an issue, to expand the issue.
 
-   ![The Issues tool, displaying additional information on how to fix the issue](media/initial-view-accessibility-page.png)
+   ![The Issues tool, displaying additional information on how to fix the issue](./index-images/initial-view-accessibility-page.png)
 
 Each displayed issue has the following components:
 
@@ -102,11 +102,11 @@ To open a linked tool from the **Issues** tool:
 
 1. In **AFFECTED RESOURCES** > **Open in**, select the tool name.  The affected resource is displayed in the selected tool:
 
-   ![Select a tool, to open an affected resource from within the Issues tool](media/affected-resource-opens-elements-tool.png)
+   ![Select a tool, to open an affected resource from within the Issues tool](./index-images/affected-resource-opens-elements-tool.png)
 
     An expanded issue may have a **Network** link, to display the affected resource in the **Network** tool:
 
-   ![The Network tool opens when you select a Network resource link](media/view-issue-in-network.png)
+   ![The Network tool opens when you select a Network resource link](./index-images/view-issue-in-network.png)
 
 
 <!-- ====================================================================== -->
@@ -124,13 +124,13 @@ To display an issue for elements with wavy underlines in the DOM tree:
 
 1. In the DOM tree, expand `<body>` > `<section>` > `<main>` > `<article id="cats">`.  Notice that the `<img>` element has a wavy underline.
 
-   ![Wavy-underlined issues in the DOM tree in the Elements tool](media/wavy-underlines-dom-tree.png)
+   ![Wavy-underlined issues in the DOM tree in the Elements tool](./index-images/wavy-underlines-dom-tree.png)
 
 1. Hover over the `<img>` element.  A tooltip displays information about the issue.
 
 1. Open the context menu on the element with the wavy underline, and then select **View issues**.  The **Issues** tool opens and displays the issue that's associated with that element.
 
-   ![Details about issues on a wavy-underlined element in the DOM tree](media/opened-from-dom-tree-wavy-underline.png)
+   ![Details about issues on a wavy-underlined element in the DOM tree](./index-images/opened-from-dom-tree-wavy-underline.png)
 
 
 <!-- ====================================================================== -->
@@ -146,7 +146,7 @@ By default, only errors and warnings are displayed. To display issues with other
 * Select any number of severity levels: **Tips**, **Info**, **Warnings**, **Errors**.
 * Select **Default** to revert back to just warnings and errors.
 
-![The Issues panel with the Severity dropdown expanded, showing the different levels that can be selected](media/severity-filter.png)
+![The Issues panel with the Severity dropdown expanded, showing the different levels that can be selected](./index-images/severity-filter.png)
 
 ### Filter by browser
 
@@ -167,13 +167,13 @@ To change the list of browsers that are tested for compatibility issues:
 * Or select any number of individual browsers from the list.
 * Click **Regenerate issues** to update the compatibility issues based on the selected browsers.
 
-![The Issues panel with the Browser dropdown expanded, showing the different browsers that can be selected](media/browser-filter.png)
+![The Issues panel with the Browser dropdown expanded, showing the different browsers that can be selected](./index-images/browser-filter.png)
 
 ### Filter by origin
 
 By default, the **Issues** tool only lists issues that pertain to the current web page's code. To include issues that are caused by third-party libraries or frameworks loaded by the web page too, select the **Include third-party issues** checkbox.
 
-![The Issues panel with the 'Include third-party issues' checkbox](media/third-party-checkbox.png)
+![The Issues panel with the 'Include third-party issues' checkbox](./index-images/third-party-checkbox.png)
 
 
 <!-- ====================================================================== -->

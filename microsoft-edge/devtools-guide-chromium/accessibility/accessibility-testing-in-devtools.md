@@ -13,7 +13,7 @@ In this article, we cover some of the features you can use in DevTools to test f
 
 1. Open the [accessibility testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab:
 
-   ![The demo page used in this article with a few accessibility issues](../media/a11y-testing-basics-demopage.png)
+   ![The demo page used in this article with a few accessibility issues](./accessibility-testing-in-devtools-images/a11y-testing-basics-demopage.png)
 
 1. Right-click anywhere in the demo webpage and then select **Inspect**.  DevTools opens next to the webpage.
 
@@ -21,13 +21,13 @@ In this article, we cover some of the features you can use in DevTools to test f
 <!-- ====================================================================== -->
 ## Automated testing by using the Issues tool
 
-When you open the demo page in the browser and open DevTools, notice that some issues are automatically detected in the **Issues counter**.  Click the **Issues counter** (![Issues counter](../media/issues-counter-icon.png)) to open the **Issues** tool to view the issues and more information:
+When you open the demo page in the browser and open DevTools, notice that some issues are automatically detected in the **Issues counter**.  Click the **Issues counter** (![Issues counter](./accessibility-testing-in-devtools-images/issues-counter-icon.png)) to open the **Issues** tool to view the issues and more information:
 
-![The Issues counter shows how many problems there are in the current webpage, and opens the Issues tool](../media/a11y-testing-issues-tracker.png)
+![The Issues counter shows how many problems there are in the current webpage, and opens the Issues tool](./accessibility-testing-in-devtools-images/a11y-testing-issues-tracker.png)
 
 For this article, we'll focus on the **Accessibility** section of the **Issues** tool:
 
-![Accessibility warnings displayed in the Issues tool](../media/a11y-testing-accessibility-issues.png)
+![Accessibility warnings displayed in the Issues tool](./accessibility-testing-in-devtools-images/a11y-testing-accessibility-issues.png)
 
 For detailed walkthrough steps, see [View the Accessibility section of the Issues tool](test-issues-tool.md#view-the-accessibility-section-of-the-issues-tool).
 
@@ -38,7 +38,7 @@ The first warning displayed is `Form elements must have labels: Element has no t
 
 For detailed walkthrough steps, see [Verify that input fields have labels](test-issues-tool.md#verify-that-input-fields-have-labels):
 
-![Elements tool showing the problematic HTML after clicking the link in the Issues tool](../media/a11y-testing-inspect-problematic-element.png)
+![Elements tool showing the problematic HTML after clicking the link in the Issues tool](./accessibility-testing-in-devtools-images/a11y-testing-inspect-problematic-element.png)
 
 In this case, the HTML has a `label` element that doesn't work.
 
@@ -54,14 +54,14 @@ You can solve this problem by either nesting the `input` element in a `label` el
 
 You can also click the explanatory links in the **Issues** tool to get this information:
 
-![Links in the Issues tool pointing to more in-depth information about the issue](../media/a11y-testing-more-information-links.png)
+![Links in the Issues tool pointing to more in-depth information about the issue](./accessibility-testing-in-devtools-images/a11y-testing-more-information-links.png)
 
 
 ### Automatically checking that images have alt text
 
 The other automatically detected problem is that many of the images in the page don't have any alternative text.  If you expand the `Images must have alternate text: Element has no title attribute` warning, you get four instances of images with that problem:
 
-![The Issues tool, reporting images with missing alternative text](../media/a11y-testing-images-without-alt.png)
+![The Issues tool, reporting images with missing alternative text](./accessibility-testing-in-devtools-images/a11y-testing-images-without-alt.png)
 
 For detailed walkthrough steps, see [Verify that images have alt text](test-issues-tool.md#verify-that-images-have-alt-text).
 
@@ -70,11 +70,11 @@ For detailed walkthrough steps, see [Verify that images have alt text](test-issu
 
 The **Issues** tool also reports when two elements on the page don't have enough contrast:
 
-![Contrast problems reported in the Issues tool](../media/a11y-testing-contrast-issues.png)
+![Contrast problems reported in the Issues tool](./accessibility-testing-in-devtools-images/a11y-testing-contrast-issues.png)
 
 The **Issues** tool provides detailed explanations of the warning.  When you drill down, you get a list of the elements that have this issue.  In the **Issues** tool, clicking a link that points to an element highlights that element on the rendered page:
 
-![Element in the page highlighted after clicking the link to it](../media/a11y-testing-element-with-contrast-issues.png)
+![Element in the page highlighted after clicking the link to it](./accessibility-testing-in-devtools-images/a11y-testing-element-with-contrast-issues.png)
 
 For detailed walkthrough steps, see [Verify that text colors have enough contrast](test-issues-tool.md#verify-that-text-colors-have-enough-contrast).
 
@@ -107,7 +107,7 @@ To learn more about the **Device Emulation** tool, see [Emulate mobile devices (
 
 The DOM tree in the **Elements** tool automatically flags issues directly in the HTML by adding a wavy underline.  If you **Shift+click** an element that has a wavy underline, the **Issues** tool opens:
 
-![An element that is shown with wavy underlining in the DOM tree has issues.  Shift+click the element to get directly to the issue](../media/a11y-testing-wavy-underlines.png)
+![An element that is shown with wavy underlining in the DOM tree has issues.  Shift+click the element to get directly to the issue](./accessibility-testing-in-devtools-images/a11y-testing-wavy-underlines.png)
 
 These issues that were found by the **Issues** tool are some relatively obvious accessibility problems that can be avoided.  Using the **Issues** tool and its guided explanations to fix them sets you on the way towards an accessible product.
 
@@ -126,29 +126,29 @@ On the demo page, there are additional issues that automated testing can't detec
 
 One of those issues is the donation form.  When you use a mouse, you can click the different options to donate money.  But when you try to use the keyboard to access the donation form, nothing happens. To solve this issue, you need to use the **Inspect** tool:
 
-![The Donation form highighted on the demo page](../media/a11y-testing-basics-donation-form-issue.png)
+![The Donation form highighted on the demo page](./accessibility-testing-in-devtools-images/a11y-testing-basics-donation-form-issue.png)
 
 
 <!-- ====================================================================== -->
 ## Using the Inspect tool to detect accessibility issues
 
-Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** (![Inspect](../media/inspect-tool-icon-light-theme.png)) tool is in the top-left corner of DevTools.  Turn on the Inspect tool by clicking the **Inspect** tool button:
+Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** (![Inspect](./accessibility-testing-in-devtools-images/inspect-tool-icon-light-theme.png)) tool is in the top-left corner of DevTools.  Turn on the Inspect tool by clicking the **Inspect** tool button:
 
-![Turn on the Inspect tool by clicking the Inspect tool button](../media/a11y-testing-basics-inspector.png)
+![Turn on the Inspect tool by clicking the Inspect tool button](./accessibility-testing-in-devtools-images/a11y-testing-basics-inspector.png)
 
 After you click the **Inspect** tool button, you can move your pointer over any element on the rendered page.  The Inspect tool shows the element's layout as a multicolored flexbox overlay, and shows element details as an information overlay similar to a tooltip:
 
-![Multicolor flexbox overlay and information overlay when using the Inspect tool](../media/inspect-tool-flexbox-overlay.png)
+![Multicolor flexbox overlay and information overlay when using the Inspect tool](./accessibility-testing-in-devtools-images/inspect-tool-flexbox-overlay.png)
 
 The Inspect tool's **Accessibility** section includes a **Contrast** line, when applicable:
 
-![The Inspect tool's Accessibility section includes a Contrast line, when applicable](../media/a11y-testing-basics-inspector-overlay.png)
+![The Inspect tool's Accessibility section includes a Contrast line, when applicable](./accessibility-testing-in-devtools-images/a11y-testing-basics-inspector-overlay.png)
 
 For detailed walkthrough steps, see [Identify nested regions using color highlighting](test-inspect-tool.md#identify-nested-regions-using-color-highlighting).<!-- = test-inspect-tool.md##identify-nested-regions-using-color-highlighting -->  The main article about the Inspect tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md).
 
 The upper section of the **Inspect** tool's information overlay displays the following information:
 
-* Layout type; if the element is positioned using a flexbox or grid, you see an appropriate icon (![Grid layout icon](../media/grid-icon.png)).
+* Layout type; if the element is positioned using a flexbox or grid, you see an appropriate icon (![Grid layout icon](./accessibility-testing-in-devtools-images/grid-icon.png)).
 * The name of the element, such as **a**, **h1**, or **div**.
 * The dimensions of the element, in pixels.
 * The color, as a color swatch (a small, colored square) and as a formatted value (such as `#336699`).
@@ -180,7 +180,7 @@ For detailed walkthrough steps, see [Check individual elements for text contrast
 
 When using the **Inspect** tool, clicking an element on the rendered page opens the **Elements** tool.  The DOM tree shows the HTML of the element, and **Styles** shows the CSS properties that are applied to the element:
 
-![Details about the clicked element displayed in the Elements tool](../media/a11y-testing-basics-inspector-selected-element.png)
+![Details about the clicked element displayed in the Elements tool](./accessibility-testing-in-devtools-images/a11y-testing-basics-inspector-selected-element.png)
 
 When using the **Inspect** tool, as you hover over different parts of the rendered page with **Elements** open, you'll notice that the DOM tree automatically refreshes.
 
@@ -198,21 +198,21 @@ For detailed walkthrough steps, see [Check for keyboard support by using the Tab
 
 When you press **Tab** instead of **Enter**, the next element that gets focus is the first **More** link in the content section of the page, as indicated by an outline:
 
-![Navigating the page by using the Tab key.  Focus is shown on a More link in the page](../media/a11y-testing-keyboard-focus-on-element.png)
+![Navigating the page by using the Tab key.  Focus is shown on a More link in the page](./accessibility-testing-in-devtools-images/a11y-testing-keyboard-focus-on-element.png)
 
 After you go past the last **More** link, the page scrolls up, and it's unclear which element has focus.
 
 If you look to the bottom left of the screen or if you use a screen reader, you can tell that the blue **Cats** link in the sidebar navigation menu has focus, because the browser shows the URL `#cats`:
 
-![Lack of focus styling makes it impossible to know where you are in page.  The only hint is the link target in bottom left](../media/a11y-testing-lack-of-focus-style.png)
+![Lack of focus styling makes it impossible to know where you are in page.  The only hint is the link target in bottom left](./accessibility-testing-in-devtools-images/a11y-testing-lack-of-focus-style.png)
 
 Pressing **Tab** again takes you to the input text box of the donation form.  However, you can't reach the **50**, **100** or **200** buttons above the input text box.  Also, when focus is on that input text box, pressing **Enter** doesn't submit the form:
 
-![The only keyboard-accessible element in the donation form is the entry text field](../media/a11y-testing-form-field-with-outline.png)
+![The only keyboard-accessible element in the donation form is the entry text field](./accessibility-testing-in-devtools-images/a11y-testing-form-field-with-outline.png)
 
 Pressing **Tab** again puts focus on the top navigation bar, where you can press **Enter** to go to a different section of the page or a different page of the site.  You know which element you are on, because there's a focus outline.  To click a link in the top navigation bar, use **Tab** or **Shift+Tab** to put focus on a link, and then press **Enter**:
 
-![The top navigation bar has a highlight and a focus outline, and thus is keyboard-accessible](../media/a11y-testing-menu-with-outline.png)
+![The top navigation bar has a highlight and a focus outline, and thus is keyboard-accessible](./accessibility-testing-in-devtools-images/a11y-testing-menu-with-outline.png)
 
 We found some issues here to fix:
 
@@ -231,11 +231,11 @@ Let's analyze these problems using DevTools.
 
 To find out why the sidebar navigation isn't optimized as expected for use with keyboards, start by using the **Inspect** tool to highlight a link in the sidebar navigation menu, and then drill down in the DOM tree to the `a` element:
 
-![Inspecting the source code and the applied styles of a link in the sidebar navigation menu](../media/a11y-testing-menu-link.png)
+![Inspecting the source code and the applied styles of a link in the sidebar navigation menu](./accessibility-testing-in-devtools-images/a11y-testing-menu-link.png)
 
 In the **Styles** tab, you can see the CSS that's applied to the link, and if you click the link to `styles.css`, the file opens in the **Sources** tool:
 
-![The styles that are applied to the link, shown in the Sources tool](../media/a11y-testing-menu-link-styles.png)
+![The styles that are applied to the link, shown in the Sources tool](./accessibility-testing-in-devtools-images/a11y-testing-menu-link-styles.png)
 
 In the above example, the styles of the page include a `hover` state on the menu item when you use a mouse, but there's no `focus` state in the CSS for keyboard users.
 
@@ -250,7 +250,7 @@ The buttons on the donation form are implemented using the `div` element, which 
 
 To investigate this, you can use the **Inspect** tool to hover over the donation form's buttons.  The result is that none of them are keyboard-accessible, as indicated by the gray ring on the **Keyboard-focusable** line of the information overlay.  As shown in the **Name** and **Role** lines of the information overlay, the buttons of the donation form also have no name, and have a role of `generic` (representing `div` or `span` elements), which means they aren't accessible to assistive technology:
 
-![Inspecting the buttons of the form shows that they aren't keyboard-accessible](../media/a11y-testing-donation-button-info.png)
+![Inspecting the buttons of the form shows that they aren't keyboard-accessible](./accessibility-testing-in-devtools-images/a11y-testing-donation-button-info.png)
 
 For detailed walkthrough steps, see [Analyze the lack of keyboard support in a form](test-analyze-no-keyboard-support.md).
 
@@ -275,11 +275,11 @@ The use of the `label` and `input` elements are valid, which result in the label
 
 Next, let's analyze the form's JavaScript functionality. In **Elements**, click the **Event Listeners** tab to analyze the form's JavaScript:
 
-![The Event Listeners tab, with a link to the JavaScript for the form](../media/a11y-testing-event-handlers-on-button.png)
+![The Event Listeners tab, with a link to the JavaScript for the form](./accessibility-testing-in-devtools-images/a11y-testing-event-handlers-on-button.png)
 
 On the **Event Listeners** tab, click the `buttons.js:18` link to open the **Sources** tool, and then inspect the JavaScript that's responsible for the form's functionality:
 
-![The JavaScript that's responsible for the donation form's functionality, shown in the Sources tool](../media/a11y-testing-form-handling-javascript.png)
+![The JavaScript that's responsible for the donation form's functionality, shown in the Sources tool](./accessibility-testing-in-devtools-images/a11y-testing-form-handling-javascript.png)
 
 Using `click` events with buttons is recommended because `click` events work with both mouse pointers and keyboards.  However, because a `div` element isn't keyboard-accessible, and the **Donate** button is implemented as a `div` element, this JavaScript only runs when a mouse is used.
 
@@ -290,7 +290,7 @@ Using a `div` as a button is a classic example where extra JavaScript is needed 
 
 Using the **Inspect** tool to individually check each element on the page is time-consuming.  Instead, use the **Accessibility** tab to navigate the page's **Accessibility Tree**.  The Accessibility Tree indicates what information the page provides to assistive technology such as screen readers:
 
-![Donation form button in the Accessibility Tree](../media/a11y-testing-accessibility-tree.png)
+![Donation form button in the Accessibility Tree](./accessibility-testing-in-devtools-images/a11y-testing-accessibility-tree.png)
 
 Any element in the tree that doesn't have a name, or that has a role of `generic`, is a problem, because that element won't be available to keyboard users or to people using assistive technology.
 
@@ -309,7 +309,7 @@ The source order of a document is important for assistive technology, and can be
 
 You can test the order of page elements by using the **Source Order Viewer** in the **Accessibility** tab.  Scroll down all the way and select the **Show Source Order** checkbox.  Now, when you navigate the DOM tree in the **Elements** tool, such as clicking the `header` element, numeric overlays are displayed on sections of the rendered page which represent the source order:
 
-![Turning on the Source Order Viewer shows the order of the elements in the source code as numeric overlays on the page](../media/a11y-testing-source-order-viewer.png)
+![Turning on the Source Order Viewer shows the order of the elements in the source code as numeric overlays on the page](./accessibility-testing-in-devtools-images/a11y-testing-source-order-viewer.png)
 
 For detailed walkthrough steps, see [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
 
@@ -325,15 +325,15 @@ In addition to the automatic color-contrast tests in the **Issues** tool, you ca
 
 A green check mark icon indicates there's enough contrast, and an orange alert icon indicates not enough contrast.  For example, the links in the sidebar navigation menu have enough contrast, as indicated by a green check mark icon:
 
-![The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay](../media/a11y-testing-enough-contrast.png)
+![The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay](./accessibility-testing-in-devtools-images/a11y-testing-enough-contrast.png)
 
 An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay.  For example, the green **Dogs** list item in the **Donation status** section doesn't have enough contrast, as indicated in the **Inspect** overlay.  The overlay shows an orange circled exclamation mark:
 
-![An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay](../media/a11y-testing-not-enough-contrast.png)
+![An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay](./accessibility-testing-in-devtools-images/a11y-testing-not-enough-contrast.png)
 
 Using the **Inspect** tool in this way doesn't fully test your elements. Elements on the page may have different states, all of which need to be tested. For example, if you hover the mouse over the sidebar navigation menu, notice the animation which changes the color of the links:
 
-![The menu item showing different colors when the mouse pointer is over it](../media/a11y-testing-hover.png)
+![The menu item showing different colors when the mouse pointer is over it](./accessibility-testing-in-devtools-images/a11y-testing-hover.png)
 
 ### Verify accessibility of all states of elements, such as the contrast on hover
 
@@ -345,19 +345,19 @@ For detailed walkthrough steps, see [Verify accessibility of all states of eleme
 
 Turn on the **Inspect** tool and then in the rendered page, click the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the `a` element selected in the DOM tree.  If needed, in the DOM tree, navigate to the element that has a `hover` state in the CSS.  In this case, the `a` element has a `hover` state:
 
-![Inspecting the element that has a hover state in the Elements tool](../media/a11y-testing-inspecting-link-to-hover.png)
+![Inspecting the element that has a hover state in the Elements tool](./accessibility-testing-in-devtools-images/a11y-testing-inspecting-link-to-hover.png)
 
 On the **Styles** tab, click the **\:hov (Toggle Element State)** button.  Then use the **Force element state** checkboxes to select which state to simulate:
 
-![The state simulation feature showing all the options](../media/a11y-testing-state-simulation.png)
+![The state simulation feature showing all the options](./accessibility-testing-in-devtools-images/a11y-testing-state-simulation.png)
 
 Select the **\:hover** checkbox.  A yellow dot now appears next to the DOM element, indicating that the DOM element has a simulated state.  Also, the **Cats** link in the sidebar navigation menu is now highlighted in the page, as if the mouse pointer were hovering over it:
 
-![DevTools simulating a hover state](../media/a11y-testing-hover-simulated.png)
+![DevTools simulating a hover state](./accessibility-testing-in-devtools-images/a11y-testing-hover-simulated.png)
 
 After the simulated state is applied, you can use the **Inspect** tool again to check the contrast of the element when the user hovers over it.  In this case, the contrast isn't high enough:
 
-![Testing the contrast of an element in a simulated hover state](../media/a11y-testing-hover-contrast-testing.png)
+![Testing the contrast of an element in a simulated hover state](./accessibility-testing-in-devtools-images/a11y-testing-hover-contrast-testing.png)
 
 State simulation is also a good way to check whether you considered different user needs.  For the sidebar navigation menu, you can detect that the `:focus` state has a contrast issue.
 
@@ -377,18 +377,18 @@ When switching to a light theme in the **Rendering** tool, the following issues 
 
 *  New contrast issues are detected because of the change to light theme:
 
-   ![New contrast issues detected because of the change to light theme](../media/a11y-testing-new-contrast-issues-in-light-mode.png)
+   ![New contrast issues detected because of the change to light theme](./accessibility-testing-in-devtools-images/a11y-testing-new-contrast-issues-in-light-mode.png)
 
 *  The **Donation Status** section of the page is unreadable in light mode, due to contrast issues:
 
-   ![The donation status items flagged as contrast issues when in light mode](../media/a11y-testing-donation-state-light-contrast.png)
+   ![The donation status items flagged as contrast issues when in light mode](./accessibility-testing-in-devtools-images/a11y-testing-donation-state-light-contrast.png)
 
 
 ### Verify that the webpage is usable by people with color blindness
 
 The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation](emulate-vision-deficiencies.md) feature of DevTools, you can find out that this isn't good enough, by simulating how people with different vision would perceive your design.  For detailed walkthrough steps, see [Verify that a page is usable by people with color blindness](test-color-blindness.md):
 
-![Showing the page as someone with protanopia (red color blindness) would see it](../media/a11y-testing-simulating-protanopia.png)
+![Showing the page as someone with protanopia (red color blindness) would see it](./accessibility-testing-in-devtools-images/a11y-testing-simulating-protanopia.png)
 
 
 ### Verify that the webpage is usable with blurred vision
@@ -396,7 +396,7 @@ The different donation states use color (red, green, yellow) as the only means t
 Another interesting feature of the **Rendering** tool is that you can simulate blurred vision.  If we select the **Blurred vision** option from the **Emulate vision deficiencies** dropdown list, we can see that the drop shadow on the text in the upper menu makes it hard to read the menu items.
 For detailed walkthrough steps, see [Verify that a page is usable with blurred vision](test-blurred-vision.md):
 
-![Simulating a blurred page can reveal accessibility issues](../media/a11y-testing-simulating-blur.png)
+![Simulating a blurred page can reveal accessibility issues](./accessibility-testing-in-devtools-images/a11y-testing-simulating-blur.png)
 
 
 ### Verify that the page is usable with UI animation turned off (reduced motion)
@@ -405,7 +405,7 @@ Another setting that operating systems come with these days are a way to turn of
 
 In the demo page here, turning off animations will stop the smooth scrolling of the page when you click different parts of the sidebar navigation menu.  This is achieved by wrapping the smooth scrolling setting in CSS in a media query:
 
-![Simulating reduced motion and the CSS that makes sure that smooth scrolling only happens when the user wants it](../media/a11y-testing-simulating-reduced-motion.png)
+![Simulating reduced motion and the CSS that makes sure that smooth scrolling only happens when the user wants it](./accessibility-testing-in-devtools-images/a11y-testing-simulating-reduced-motion.png)
 
 ```css
 @media (prefers-reduced-motion: no-preference) {
@@ -434,4 +434,4 @@ None of these tools can replace a proper round of testing your products with peo
 
 Another way to find out what to do to improve your webpage is to use the [webhint extension for Visual Studio Code](https://aka.ms/webhint4code).  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them:
 
-![Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem](../media/a11y-testing-webhint-in-vs-code.png)
+![Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem](./accessibility-testing-in-devtools-images/a11y-testing-webhint-in-vs-code.png)

@@ -10,7 +10,7 @@ ms.date: 06/14/2023
 ---
 # Build PWA-driven widgets
 
-![Experimental feature](../../media/experimental-tag.png)
+![Experimental feature](./widgets-images/experimental-tag.png)
 
 **Note:** Support for the `widgets` manifest member and associated JavaScript APIs, documented below, is experimental and depends on Microsoft Windows functionality that's not widely available yet.
 
@@ -18,7 +18,7 @@ Various operating systems have widgets dashboards that let users read content an
 
 On Windows 11, widgets appear in the widgets board which you open from the left corner of your taskbar:
 
-![The widgets board in Windows 11](../media/windows11-widgets.png) 
+![The widgets board in Windows 11](./widgets-images/windows11-widgets.png) 
 
 In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and handle user interactions within them.
 
@@ -38,11 +38,11 @@ To enable developing widgets on your local machine:
 
 1. In the **Search flags** text box, type **Web App widgets**, and then in the **Web App widgets** dropdown menu, select **Enabled**:
 
-   ![Enabling the Web App widgets flag in the edge://flags page](../media/widgets-flag.png)
+   ![Enabling the Web App widgets flag in the edge://flags page](./widgets-images/widgets-flag.png)
 
 1. In the **Search flags** text box, this time type **Experimental Web Platform Features**, and then in the **Experimental Web Platform Features** dropdown menu, select **Enabled**:
 
-   ![Enabling the Experimental Web Platform Features flag in the edge://flags page](../media/experimental-features-flag.png)
+   ![Enabling the Experimental Web Platform Features flag in the edge://flags page](./widgets-images/experimental-features-flag.png)
 
 1. Click the **Restart** button, which appears in the lower right.
 
@@ -421,7 +421,7 @@ PWAmp is a music player PWA demo application that defines a widget. The PWAmp wi
 
 The PWAmp widget displays the current song and buttons to play the previous or next song.
 
-![Windows widgets board, next to the PWAmp demo app. The widgets board contains the PWAmp mini player widget, showing the current song playing in the PWAmp app](../media/pwamp-widget.png)
+![Windows widgets board, next to the PWAmp demo app. The widgets board contains the PWAmp mini player widget, showing the current song playing in the PWAmp app](./widgets-images/pwamp-widget.png)
 
 
 <!-- ====================================================================== -->
