@@ -38,15 +38,15 @@ To generate a PAT in Azure DevOps:
 
 1. In Azure DevOps, go to **User settings** > **Personal access tokens**:
     
-   ![The 'User settings' menu in Azure DevOps, with the 'Personal access tokens' command](images/ado-pat-settings.png)
+   ![The 'User settings' menu in Azure DevOps, with the 'Personal access tokens' command](./publish-source-maps-to-azure-images/ado-pat-settings.png)
 
    The **Personal Access Tokens** page appears:
 
-   ![The 'Personal Access Tokens' page in Azure DevOps](images/ado-pat-page.png)
+   ![The 'Personal Access Tokens' page in Azure DevOps](./publish-source-maps-to-azure-images/ado-pat-page.png)
 
 1. Click **New Token**.  The **Create a new personal access token** dialog opens:
 
-   ![The 'Create a new personal access token' dialog, with 'Read & write' scope for Symbols selected](images/ado-pat-config-write.png)
+   ![The 'Create a new personal access token' dialog, with 'Read & write' scope for Symbols selected](./publish-source-maps-to-azure-images/ado-pat-config-write.png)
 
 1. In the **Name** text box, enter a name for the PAT, such as "publish source maps".
 
@@ -58,7 +58,7 @@ To generate a PAT in Azure DevOps:
 
 1. Click the **Create** button.  The **Success!** dialog appears:
 
-   ![The 'Success!' dialog with the PAT to copy](images/ado-pat-success-copy-clipboard.png)
+   ![The 'Success!' dialog with the PAT to copy](./publish-source-maps-to-azure-images/ado-pat-success-copy-clipboard.png)
 
 1. Click the **Copy to clipboard** button to copy the PAT.  Make sure to copy the token and store it in a secure location. For your security, it won't be shown again.
 

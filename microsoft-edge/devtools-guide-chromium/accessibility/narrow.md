@@ -23,7 +23,7 @@ When there isn't enough space, your multi-column layout should turn into a singl
 
    The top navigation bar of the webpage has some accessibility issues.  The top navigation bar overlaps the **Search** form, and that issue needs to be fixed:
 
-   ![Element in the page highlighted after clicking the link to it](../media/a11y-testing-element-with-contrast-issues.png)
+   ![Element in the page highlighted after clicking the link to it](./narrow-images/a11y-testing-element-with-contrast-issues.png)
 
 
 <!-- ====================================================================== -->

@@ -175,15 +175,15 @@ Consider, for example, how your app icon might show different content depending 
 
 * Small surface: App icon (44x44) in taskbar, showing a small, abbreviated logo: 
 
-![The small size icon](../media/windows-image-app-icon.png) 
+![The small size icon](./icon-theme-color-images/windows-image-app-icon.png) 
 
 * Larger surface: Medium tile (150x150) in start menu, showing the full logo of the app:  
 
-![The medium size icon](../media/windows-image-small-tile.png) 
+![The medium size icon](./icon-theme-color-images/windows-image-small-tile.png) 
 
 * Wide surface: Wide tile in start menu, showing a more articulated app icon: 
 
-![The wide size icon](../media/windows-image-wide-tile.png) 
+![The wide size icon](./icon-theme-color-images/windows-image-wide-tile.png) 
 
 Notice how the content of the icon changed. This is possible only through the use of higher levels of icon support. We recommend developers choose higher levels to give the best experience for your Windows users.  
 
@@ -193,7 +193,7 @@ Below you'll find a description of each app icon and where they show up in Windo
 
 The normal app icon that's shown in the start menu, task bar, or task manager.
 
-![App Icon](../media/windows-image-app-icon.png) 
+![App Icon](./icon-theme-color-images/windows-image-app-icon.png) 
 
 * 44x44
 * 55x55 (1.25x scale)
@@ -203,7 +203,7 @@ The normal app icon that's shown in the start menu, task bar, or task manager.
 
 The small tile is shown in the start menu when the user set your app's tile to small size.
 
-![Small tile](../media/windows-image-small-tile.png) 
+![Small tile](./icon-theme-color-images/windows-image-small-tile.png) 
 
 * 71x71
 * 89x89 (1.25x scale)
@@ -213,7 +213,7 @@ The small tile is shown in the start menu when the user set your app's tile to s
 
 The medium tile icon is shown in the start menu when the user sets your app's tile to medium size.
 
-![Medium tile](../media/windows-image-medium-tile.png)
+![Medium tile](./icon-theme-color-images/windows-image-medium-tile.png)
 
 * 150x150
 * 188x188 (1.25x scale)
@@ -223,7 +223,7 @@ The medium tile icon is shown in the start menu when the user sets your app's ti
 
 The wide tile icon is shown in the start menu when the user sets your app's tile to wide size.
 
-![Wide tile](../media/windows-image-wide-tile.png)
+![Wide tile](./icon-theme-color-images/windows-image-wide-tile.png)
 
 * 310x150
 * 388x188 (1.25x scale)
@@ -233,7 +233,7 @@ The wide tile icon is shown in the start menu when the user sets your app's tile
 
 The large tile icon is in the start menu when the user sets your app's tile to large size.
 
-![Large tile](../media/windows-image-large-tile.png)
+![Large tile](./icon-theme-color-images/windows-image-large-tile.png)
 
 * 310x310
 * 388x388 (1.25x scale)  
@@ -243,7 +243,7 @@ The large tile icon is in the start menu when the user sets your app's tile to l
 
 The store logo icon is shown in app installer, Windows Partner Center, the "Report an app" option in the Store, and the "Write a review" option in the Store.
 
-![Store Logo](../media/windows-image-store-logo.png)
+![Store Logo](./icon-theme-color-images/windows-image-store-logo.png)
 
 * 50x50
 * 63x63 (1.25x scale)
@@ -253,7 +253,7 @@ The store logo icon is shown in app installer, Windows Partner Center, the "Repo
 
 The splash screen asset is shown as the splash screen for your app. Currently supported only in classic package. In the future, we may add support for the modern hosted app package as well.
 
-![Splash Screen](../media/windows-image-splash.png)
+![Splash Screen](./icon-theme-color-images/windows-image-splash.png)
 
 * 620x300
 * 775x375 (1.25x scale)
@@ -267,7 +267,7 @@ In addition to the standard scale factor sizes described above, we also recommen
 
 For example, the **Apps & features** Windows setting uses app icons with specific sizes
 
-![Shown in start jump list, shortcuts, control panel:](../media/windows-image-target-size.png)
+![Shown in start jump list, shortcuts, control panel:](./icon-theme-color-images/windows-image-target-size.png)
 
 * 16x16 (recommended)
 * 20x20
@@ -294,7 +294,7 @@ The web content created by the PWA fills the entire surface area of the window, 
 
 The following image shows what a PWA's title bar looks like when not using a theme color, and when using a theme color that matches the main color of the app:
 
-![The difference between not using and using a theme color](../media/app-theme-color-before-after.png)
+![The difference between not using and using a theme color](./icon-theme-color-images/app-theme-color-before-after.png)
 
 To define a theme color, use the `theme_color` web app manifest member:
 

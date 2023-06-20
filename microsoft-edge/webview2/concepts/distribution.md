@@ -69,7 +69,7 @@ Cons:
 
 The [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) section of the **Microsoft Edge WebView2** page provides several options for distributing the WebView2 Runtime onto client machines.  Understanding the options at this page provides a good introduction, to help decide which approach you want to use.
 
-![Options for distributing and updating the WebView2 Runtime](../media/runtime-distrib-options.png)
+![Options for distributing and updating the WebView2 Runtime](./distribution-images/runtime-distrib-options.png)
 
 The Evergreen distribution mode is recommended for most apps.
 
@@ -350,7 +350,7 @@ To use the Fixed Version distribution mode:
 
    1. To confirm that PlayReady is installed correctly, in the **Security** tab of the **Fixed Version** folder, make sure permissions are granted for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`, as shown below:
 
-      ![Permission for PlayReady](../media/play-ready-permission.png)
+      ![Permission for PlayReady](./distribution-images/play-ready-permission.png)
 
 
 <!-- ====================================================================== -->

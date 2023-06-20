@@ -23,7 +23,7 @@ This sample, **WV2CDPExtensionWPFSample**, is built with the WebView2 CDP Extens
 
 This sample is built as a WPF Visual Studio 2019 project.  It uses C# in the WebView2 environment.
 
-![WV2CDPExtensionWPFSample sample app](media/wv2cdpextensionwpfsample-app-running.png)
+![WV2CDPExtensionWPFSample sample app](./wv2cdpextensionwpfsample-images/wv2cdpextensionwpfsample-app-running.png)
 
 The **DevTools Commands** menu:
 
@@ -84,7 +84,7 @@ To use Visual Studio 2017, you might also need to install a recent Windows SDK.
 
    The **WV2CDPExtensionWPFSample** project opens in Visual Studio:
 
-   ![The WV2CDPExtensionWPFSample sample opened in Visual Studio in Solution Explorer](media/wv2cdpextensionwpfsample-opened.png)
+   ![The WV2CDPExtensionWPFSample sample opened in Visual Studio in Solution Explorer](./wv2cdpextensionwpfsample-images/wv2cdpextensionwpfsample-opened.png)
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    The sample app window opens:
 
-   ![The WV2CDPExtensionWPFSample sample app](media/wv2cdpextensionwpfsample-app-running.png)
+   ![The WV2CDPExtensionWPFSample sample app](./wv2cdpextensionwpfsample-images/wv2cdpextensionwpfsample-app-running.png)
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
@@ -159,7 +159,7 @@ See also:
 
    The sample app window opens:
 
-   ![The WV2CDPExtensionWPFSample app](media/wv2cdpextensionwpfsample-app-running.png)
+   ![The WV2CDPExtensionWPFSample app](./wv2cdpextensionwpfsample-images/wv2cdpextensionwpfsample-app-running.png)
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
@@ -169,7 +169,7 @@ See also:
 
 1. In the Visual Studio code editor, inspect the code:
 
-   ![WV2CDPExtensionWPFSample project's code in Visual Studio](media/wv2cdpextensionwpfsample-code.png)
+   ![WV2CDPExtensionWPFSample project's code in Visual Studio](./wv2cdpextensionwpfsample-images/wv2cdpextensionwpfsample-code.png)
 
    The **DevTools Commands** menu:
 
