@@ -35,7 +35,7 @@ Supported platforms: Win32, Windows Forms, WinUI, WPF.
 
 The following is the normal sequence of events that are fired during each step of a navigation:
 
-![WebView2 Navigation Events](../media/navigation-graph.png)
+![WebView2 Navigation Events](./navigation-events-images/navigation-graph.png)
 
 | Sequence | Event | Description | API Reference overview |
 |---|---|---|---|

@@ -95,7 +95,7 @@ To use `puppeteer-core` to launch Microsoft Edge:
 
      The following `example.png` file is produced by `example.js`:
 
-     ![The example.png file produced by example.js](./media/puppeteer-example.png)
+     ![The example.png file produced by example.js](./index-images/puppeteer-example.png)
 
 The preceding example demonstrates basic automation and testing scenarios that you can cover using Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, check out [Puppeteer](https://pptr.dev).
 

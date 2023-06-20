@@ -15,7 +15,7 @@ The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, 
 
 With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
 
-![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](media/webview2/what-webview.png)
+![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](./index-images/what-webview.png)
 
 To start building a WebView2 app, see [Get started with WebView2](get-started/get-started.md).
 
@@ -31,7 +31,7 @@ Developers must often decide between building a web app or a native app.  This d
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
-![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](media/webview2/web-native.png)
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./index-images/web-native.png)
 
 *  Wide **reach** includes websites and Progressive Web Apps.
 
