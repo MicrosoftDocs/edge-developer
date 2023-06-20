@@ -36,7 +36,7 @@ Following the updated Chromium schedule, we are adjusting our schedule for upcom
 
 The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) app is now available in the [Microsoft Store](https://www.microsoft.com/store/apps/windows). This app extends the [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal).  You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets.  This list of targets includes all tabs in Microsoft Edge and [PWAs](../../../../progressive-web-apps-chromium/index.md) open on the Windows device.  Use DevTools on your development machine against a target running on the remote Windows device.
 
-![The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store](../../media/2020/03/remote-tools.msft.png)
+![The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store](./devtools-images/remote-tools.png)
 
 Read our guide for setting up your Windows 10 device and your development machine for remote debugging: [Remotely debug Windows devices](../../../remote-debugging/windows.md).
 
@@ -48,11 +48,11 @@ Let us know about your remote debugging experience by [tweeting](https://twitter
 
 There are tons of settings for DevTools that you can customize to make DevTools look, feel, and work the way you need. In Microsoft Edge 83, accessing [Settings](../../../customize/index.md#settings) in DevTools is now much easier.  Open **Settings** by clicking the gear icon next to Console alerts and the main menu.
 
-![The gear icon opens Settings in DevTools](../../media/2020/03/settings.msft.png)
+![The gear icon opens Settings in DevTools](./devtools-images/settings.png)
 
 You can also open **Settings** from the **Main Menu** under **More tools**.
 
-![Main Menu > More tools > Settings](../../media/2020/03/settings2.msft.png)
+![Main Menu > More tools > Settings](./devtools-images/settings2.png)
 
 Chromium issue [#1050855](https://crbug.com/1050855)
 
@@ -65,7 +65,7 @@ See also:
 
 Informational notification bars (infobars) in DevTools now have an improved look and more functionality. In Microsoft Edge 83, infobars are easier to read and provide buttons so you can take the relevant action right away.
 
-![Infobar for pretty-printing a minified file in Microsoft Edge 83](../../media/2020/03/infobar.msft.png)
+![Infobar for pretty-printing a minified file in Microsoft Edge 83](./devtools-images/infobar.png)
 
 Chromium issue [#1056348](https://crbug.com/1056348)
 
@@ -79,7 +79,7 @@ In previous versions of Microsoft Edge, you couldn't navigate the **Shades** sec
 
 The Color Picker is a GUI in the **Elements** panel for changing `color` and `background-color` declarations:
 
-![You can now use your keyboard to move the selector in the Shades section of the Color Picker](../../media/2020/03/color-picker.msft.png)
+![You can now use your keyboard to move the selector in the Shades section of the Color Picker](./devtools-images/color-picker.png)
 
 Chromium issue [#963183](https://crbug.com/963183)
 
@@ -92,11 +92,11 @@ See also:
 
 In Microsoft Edge 81 and earlier, the **Properties tab** in the **Elements** panel was broken by page refreshes.  When you refreshed the page, the **Properties tab** didn't populate the properties of the currently selected element:
 
-![In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh](../../media/2020/03/properties-in-81.msft.png)
+![In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh](./devtools-images/properties-in-81.png)
 
 In Microsoft Edge 83, you can now display the properties of the currently selected element after a page refresh in the **Properties tab**:
 
-![In Microsoft Edge 83, the Properties tab displays the properties of the currently selected element after a page refresh](../../media/2020/03/properties-in-82.msft.png)
+![In Microsoft Edge 83, the Properties tab displays the properties of the currently selected element after a page refresh](./devtools-images/properties-in-82.png)
 
 Chromium issue [#1050999](https://crbug.com/1050999)
 
@@ -113,7 +113,7 @@ To open the **Changes tool**, press **Ctrl+Shift+P** in DevTools to open the [Co
 
 When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.  Starting in Microsoft Edge 83, you can now scroll horizontally using the arrow keys on your keyboard.
 
-![In Microsoft Edge 83, you can scroll horizontally with the arrow keys to display your minified code in the Changes tool](../../media/2020/03/changes.msft.png)
+![In Microsoft Edge 83, you can scroll horizontally with the arrow keys to display your minified code in the Changes tool](./devtools-images/changes.png)
 
 If you use screen readers or the keyboard to navigate around DevTools, send us your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) at us or clicking the [Send Feedback](../../../contact.md) icon.
 
@@ -135,7 +135,7 @@ The following sections announce additional features available in Microsoft Edge 
 
 In the **Rendering** tool, use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site:
 
-![Emulating blurred vision](../../media/2020/03/vision.msft.png)
+![Emulating blurred vision](./devtools-images/vision.png)
 
 DevTools can emulate blurred vision and the following types of color vision deficiencies:
 
@@ -173,7 +173,7 @@ To emulate locales, in the **Sensors** tool, select a location from the **Locati
 > [!NOTE]
 > Updates to `navigator.language` and `navigator.languages` aren't visible immediately, but only after the next navigation or page refresh.  Changes to the `Accept-Language` HTTP header are only reflected for subsequent requests.
 
-![Emulating a locale](../../media/2020/03/locale.msft.png)
+![Emulating a locale](./devtools-images/locale.png)
 
 To try a demo, see [Locale-dependent code example](https://mathiasbynens.be/demo/locale).
 
@@ -190,11 +190,11 @@ The **Network** panel now provides [Cross-Origin Embedder Policy](https://docs.g
 
 The **Status** column now provides a quick explanation of why a request was blocked as well as a link to view the headers of that request for further debugging:
 
-![Blocked requests in the Status column](../../media/2020/03/status.msft.png)
+![Blocked requests in the Status column](./devtools-images/status.png)
 
 The **Response Headers** section of the **Headers** tab provides more guidance on how to resolve the issues:
 
-![More guidance in the Response Headers section](../../media/2020/03/guidance.msft.png)
+![More guidance in the Response Headers section](./devtools-images/guidance.png)
 
 Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or clicking the [Send Feedback](../../../contact.md) icon.
 
@@ -211,9 +211,9 @@ Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead o
 
 The **Sources** panel has new icons for breakpoints, conditional breakpoints, and logpoints:
 
-*  Breakpoints (![Breakpoint](../../media/2020/03/breakpoint.msft.png)) are represented by red circles.
-*  Conditional Breakpoints (![Conditional Breakpoint](../../media/2020/03/conditional.msft.png)) are represented by half-red half-white circles.
-*  Logpoints (![Logpoint](../../media/2020/03/logpoint.msft.png)) are represented by red circles with Console icons.
+*  Breakpoints (![Breakpoint](./devtools-images/breakpoint.png)) are represented by red circles.
+*  Conditional Breakpoints (![Conditional Breakpoint](./devtools-images/conditional.png)) are represented by half-red half-white circles.
+*  Logpoints (![Logpoint](./devtools-images/logpoint.png)) are represented by red circles with Console icons.
 
 The motivation for the new icons was to make the UI more consistent with other GUI debugging tools (which usually color breakpoints red) and to make it easier to distinguish between the 3 features at a glance.
 
@@ -236,7 +236,7 @@ To discover more keywords like `cookie-path`, see [Filter requests by properties
 
 To move DevTools to the left of the viewport (rendered webpage), open the [Command Menu](../../../command-menu/index.md) and run the `Dock to left` command.  The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the main menu.  You can now access the **Dock to left** feature from the Command Menu, as well.
 
-![DevTools docked to the left of the viewport](../../media/2020/03/dock-to-left.msft.png)"
+![DevTools docked to the left of the viewport](./devtools-images/dock-to-left.png)"
 
 Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or clicking the [Send Feedback](../../../contact.md) icon.
 
@@ -251,7 +251,7 @@ See also:
 
 The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse](https://github.com/GoogleChrome/lighthouse) from DevTools, when they tried it out, they couldn't find a "Lighthouse" panel.  So, the **Audits** panel is now called the **Lighthouse** panel.
 
-![The Lighthouse panel](../../media/2020/03/lighthouse.msft.png)
+![The Lighthouse panel](./devtools-images/lighthouse.png)
 
 Note: The **Lighthouse** panel provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data they may collect.
 
@@ -264,7 +264,7 @@ See also:
 
 After setting up **Local Overrides**, you can right-click a directory and then select the new **Delete all overrides** option to delete all Local Overrides in that folder.
 
-![Delete all overrides](../../media/2020/03/overrides.msft.png)
+![Delete all overrides](./devtools-images/overrides.png)
 
 Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or clicking the [Send Feedback](../../../contact.md) icon.
 
@@ -281,7 +281,7 @@ A **Long Task** is JavaScript code that monopolizes the main thread for a long t
 
 You've been able to [visualize Long Tasks in the Performance panel](../../../evaluate-performance/reference.md#view-main-thread-activity) for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the **Performance** panel has been updated.  The Long Task portion of a task is now colored with a striped red background:
 
-![The new Long Task UI](../../media/2020/03/long-task.msft.png)
+![The new Long Task UI](./devtools-images/long-task.png)
 
 Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or clicking the [Send Feedback](../../../contact.md) icon.
 
@@ -297,7 +297,7 @@ Android Oreo introduced adaptive icons, which display app icons in a variety of 
 
 To check that your maskable icon looks good on Android Oreo devices, in the **Manifest** pane of the **Application** tool, select the new checkbox **Show only the minimum safe area for maskable icons**:
 
-![The checkbox, Show only the minimum safe area for maskable icons](../../media/2020/03/maskable-icons.msft.png)
+![The checkbox, Show only the minimum safe area for maskable icons](./devtools-images/maskable-icons.png)
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->
 

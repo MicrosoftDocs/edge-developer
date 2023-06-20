@@ -308,7 +308,7 @@ Image Descriptions can be turned on for the current web page without enabling fo
 <!-- ====================================================================== -->
 ## Image Enhancement
 
-To provide a better browsing experience, Microsoft Edge offers Image Enhancement by improving color, lighting, contrast, and sharpness of images. When Image Enhancement is turned on, Microsoft Edge encrypts and transmits images to Microsoft servers to perform image enhancement. No user identifiers are included in the requests to the servers. The images are cached for 30 days to improve performance. 
+To provide a better browsing experience, Microsoft Edge offers Image Enhancement by improving color, lighting, contrast, and sharpness of images. When Image Enhancement is turned on, Microsoft Edge encrypts and transmits image URLs to Microsoft servers to perform image enhancement. No user identifiers are included in the requests to the servers. The image URL and enhanced image are cached for 7 days solely to improve performance. 
 
 To control Image Enhancement, go to `edge://settings/privacy` and turn on or off the **Enhance images in Microsoft Edge** setting. 
 

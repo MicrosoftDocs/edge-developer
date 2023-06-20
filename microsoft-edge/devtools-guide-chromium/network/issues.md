@@ -37,7 +37,7 @@ Six requests are downloading simultaneously.  After that, a series of requests a
 
 In the **Waterfall** in the following figure, the first six requests for the `edge-iconx1024.msft.png` asset start simultaneously.  The subsequent requests are stalled until one of the original six finishes.
 
-![An example of a queued or stalled series in the Network panel](../media/network-network-disabled-cache-resources-queue.msft.png)
+![An example of a queued or stalled series in the Network panel](./issues-images/network-network-disabled-cache-resources-queue.png)
 
 **Causes**
 
@@ -61,7 +61,7 @@ A request spends a long time waiting to receive the first byte from the server.
 
 In the following figure, the long, green bar in the **Waterfall** indicates that the request was waiting a long time.  This was simulated using a profile to restrict network speed and add a delay.
 
-![An example of a request with a slow Time To First Byte](../media/network-network-resources-using-dial-up-profile.msft.png)
+![An example of a request with a slow Time To First Byte](./issues-images/network-network-resources-using-dial-up-profile.png)
 
 **Causes**
 
@@ -85,7 +85,7 @@ A request takes a long time to download.
 
 In the following figure, the long, blue bar in the **Waterfall** next to the png means it took a long time to download.
 
-![An example of a request that takes a long time to download](../media/network-network-resources-edge-devtools.msft.png)
+![An example of a request that takes a long time to download](./issues-images/network-network-resources-edge-devtools.png)
 
 **Causes**
 
@@ -104,7 +104,7 @@ In the following figure, the long, blue bar in the **Waterfall** next to the png
 Do you have a network issue that should be added to this guide?
 
 *  Send a tweet to [@EdgeDevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]).
-*  Click **Send Feedback** (![Send Feedback](../media/smile-icon.msft.png)) in the DevTools or press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS) to provide feedback or feature requests.
+*  Click **Send Feedback** (![Send Feedback](../media/smile-icon.png)) in the DevTools or press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS) to provide feedback or feature requests.
 *  [Open an issue](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D) on the docs repo.  -->
 
 
