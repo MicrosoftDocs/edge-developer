@@ -57,6 +57,8 @@ This tutorial also works with Visual Studio 2017.  See [Visual Studio older down
 ## Step 2 - Install a preview channel of Microsoft Edge
 
 1. Download any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
+   *  Windows 7
+   *  Windows 8.1
    *  Windows 10
    *  Windows 11
 
@@ -91,14 +93,14 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
    If you're using Visual Studio 2019, click a project template that has the title **WPF Application** and the description text **A project for creating a .NET Core WPF Application**:
 
-   ![Selecting the template 'WPF Application: .NET Core WPF Application' in the 2019 'Create a new project' dialog](./wpf-images/wpf-getting-started-wpf-core.png)
+   ![Selecting the template 'WPF Application: .NET Core WPF Application' in the 2019 'Create a new project' dialog](media/wpf-getting-started-wpf-core.png)
    <!--todo: after move png to article's dedicated images dir, change filename like for vs2022 above -->
 
    If the above project template isn't listed, see [Step 1 - Install Visual Studio with .NET support](#step-1---install-visual-studio-with-net-support) above, to install **.NET desktop development tools**.
 
 1. Click the **Next** button.
 
-   The **Configure your new project: WPF Application** dialog opens:
+   The **Configure your new project: WPF Application** dialog box opens:
 
    ![The 'Configure your new project: WPF Application' dialog for a .NET Core/5/6 project](wpf-images/config-new-core-project-2022.png)
    <!-- ok to delete png media/wpf-getting-started-create-core.png -->
@@ -107,9 +109,9 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
 1. In the **Location** text box, select a path on your local drive, such as `C:\Users\myusername\Documents\MyProjects`, and then click the **Next** button.
 
-   The **Additional information** dialog appears, with a **Target Framework** dropdown list:
+   The **Additional information** dialog box appears, with a **Target Framework** dropdown list:
 
-   ![The 'Additional information' dialog with a 'Target Framework' dropdown list](./wpf-images/wpf-getting-started-create-core-add-info.png)
+   ![The 'Additional information' dialog with a 'Target Framework' dropdown list](media/wpf-getting-started-create-core-add-info.png)
 
 1. Select **.NET Core 3.1** or later, such as **.NET 6.0**.  (Don't select **.NET Core 3.0**.)  Then click the **Create** button.
 
@@ -140,9 +142,9 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 
 1. Click the **Next** button.
 
-   The **Configure your new project: WPF App (.NET Framework)** dialog opens:
+   The **Configure your new project: WPF App (.NET Framework)** dialog box opens:
 
-   ![The 'Configure your new project: WPF App (.NET Framework)' dialog](./wpf-images/wpf-getting-started-create-fw.png)
+   ![The 'Configure your new project: WPF App (.NET Framework)' dialog](media/wpf-getting-started-create-fw.png)
 
 1. In the **Project name** text box, enter a project name, such as **MyWpfDotnetFwkWv2App**.
 
@@ -188,13 +190,13 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 
 1. Open Visual Studio, and open the solution you created.
 
-1. Press **F5** to run the initial app (shown above), not yet including the WebView2 SDK.
+1. Press `F5` to run the initial app (shown above), not yet including the WebView2 SDK.
 
 1. Close the initial app.
 
 
 <!-- maintenance link; keep: main copy:
-[Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
 ## Step 5 - Install the WebView2 SDK
@@ -207,13 +209,13 @@ In Visual Studio, use NuGet Package Manager to add the WebView2 SDK to the proje
 
 1. In the upper left, click the **Browse** tab.  In the search bar, type `Microsoft.Web.WebView2`, then click the **Microsoft.Web.WebView2** package.
 
-   The NuGet package manager dialog displays search results, including a **Microsoft.Web.WebView2** package.  The dialog has a version number and **Install** button.
+   The NuGet package manager dialog box displays search results, including a **Microsoft.Web.WebView2** package.  The dialog box has a version number and **Install** button.
    
-   ![NuGet package manager dialog displays the Microsoft.Web.WebView2 package](./wpf-images/install-nuget.png)
+   ![NuGet package manager dialog box displays the Microsoft.Web.WebView2 package](media/install-nuget.png)
 
 1. Accept the default version, and then click the **Install** button.
 
-1. In the **Preview Changes** dialog, click the **OK** button.
+1. In the **Preview Changes** dialog box, click the **OK** button.
 
 1. Select **File** > **Save All** to save the project.
 
@@ -274,7 +276,7 @@ Add a WebView2 control to your app.
 
 1. Make sure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com):
 
-   ![The WebView2 control, displaying webpage content from microsoft.com](./wpf-images/wpf-getting-started-microsoft.png)
+   ![The WebView2 control, displaying webpage content from microsoft.com](media/wpf-getting-started-microsoft.png)
 
 
 <!-- ====================================================================== -->
@@ -364,7 +366,7 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
 
    The sample app displays the Bing website with the URL `https://www.bing.com` in the address bar:
 
-   ![The app displays the Bing website](./wpf-images/wpf-getting-started-bing.png)
+   ![The app displays the Bing website](media/wpf-getting-started-bing.png)
 
 
 <!--
@@ -382,7 +384,7 @@ During webpage navigation, the WebView2 control raises events. The app that host
 *  `HistoryChanged`
 *  `NavigationCompleted`
 
-![Navigation events, from new document, to navigation starting, through navigation completed](./wpf-images/navigation-events.png)
+![Navigation events, from new document, to navigation starting, through navigation completed](../media/navigation-events.png)
 
 The above diagram shows the event sequence.  Navigation events start with a new document.
 
@@ -480,7 +482,7 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
 
 1. Make sure the app displays an alert when you navigate to a website that doesn't use HTTPS.
 
-   ![Message showing that an http: URL is not safe, and recommending trying an https: URL instead](./wpf-images/wpf-getting-started-https.png)
+   ![Message showing that an http: URL is not safe, and recommending trying an https: URL instead](media/wpf-getting-started-https.png)
 
 
 <!-- ====================================================================== -->
@@ -554,16 +556,13 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
    The sample app displays the URI in the address bar and the Microsoft website, https://www.microsoft.com:
 
-   ![The sample app displays the URI in the address bar and the Microsoft website](./wpf-images/wpf-getting-started-searchbar.png)
+   ![The sample app displays the URI in the address bar and the Microsoft website](media/wpf-getting-started-searchbar.png)
 
 Congratulations, you built your first WebView2 app!
 
 
 <!-- ====================================================================== -->
 ## See also
-
-* [WebView2 API Reference](../webview2-api-reference.md)
-   * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
 
 developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
@@ -573,6 +572,11 @@ Local pages:
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
+* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
+
+API Reference:
+* [API reference: WebView2 class in WebView2.Wpf namespace](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+* [API reference: WebView2.Wpf namespace](/dotnet/api/microsoft.web.webview2.wpf)
 
 GitHub:
 * [WebView2Samples repo > WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)

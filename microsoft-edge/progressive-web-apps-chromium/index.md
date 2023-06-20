@@ -1,75 +1,84 @@
 ---
 title: Overview of Progressive Web Apps (PWAs)
-description: Progressive Web Apps (PWAs) run natively on Windows 10 or later.  Here's everything you need to know about PWAs, as a web developer.
+description: Progressive Web Apps (PWAs) runs natively on Windows 10 or later.  Here's everything you need to know about PWAs, as a web developer.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 11/24/2022
+ms.date: 11/17/2021
 ---
 # Overview of Progressive Web Apps (PWAs)
 
-Progressive Web Apps (PWAs) are applications that you build by using web technologies, and that can be installed and can run on all devices, from one codebase.
+Progressive Web Apps (PWAs) provide access to open web technologies, to provide cross-platform interoperability.  PWAs provide your users with an app-like experience that's customized for their devices.
 
-PWAs provide native-like experiences to your users on supporting devices. They adapt to the capabilities supported by each device and they can also run in web browsers, like websites.
+PWAs are websites that are **[progressively enhanced](https://alistapart.com/article/understandingprogressiveenhancement)** to function like installed, native apps on supporting platforms, while functioning like regular websites on other browsers.
 
-To start building a PWA, see [Get started with Progressive Web Apps](./how-to/index.md).
-
-
-<!-- ====================================================================== -->
-## PWA benefits
-
-#### Native-like experiences
-
-When installed on a device, PWAs function just like other apps. For example:
-
-*  PWAs have their own application icons that can be added to a device's home screen or task bar.
-*  PWAs can be launched automatically when an associated file type is opened.
-*  PWAs can run when the user signs in.
-*  PWAs can be submitted to application stores, such as the Microsoft Store.
-
-#### Advanced capabilities
-
-PWAs also have access to advanced capabilities. For example:
-
-*  PWAs can continue working when the device is offline.
-*  PWAs support push notifications.
-*  PWAs can perform periodic updates even when the application is not running.
+The qualities of a PWA combine **the best of the web and compiled apps**. PWAs run in browsers, like websites.  But PWAs also have access to app features; for example:
+*  A PWA can still work when the device is offline.
+*  PWAs can be installed on the operating system.
+*  PWAs support push notifications and periodic updates.
 *  PWAs can access hardware features.
 
-#### Web-related advantages
+When installed, PWAs are **just like other apps on Windows**.  For example:
+*  A PWA can be added to the Start menu.
+*  A PWA can be pinned to the Taskbar.
+*  PWAs can handle files.
+*  PWAs can run when the user signs in.
+*  PWAs **can be submitted to the Microsoft Store** where millions of Windows users can discover and easily install them alongside other Windows apps.
 
-Finally, PWAs can run in web browsers, just like websites. Running like websites gives PWAs with advantages, such as:
-
+PWAs have the **same reach as websites**:
 *  PWAs can be indexed by search engines.
-*  PWAs can be shared and launched from a standard web link.
-*  PWAs are safe for users because they use secure HTTPS endpoints and other user safeguards.
-*  PWAs adapt to the user's screen size or orientation, and input method.
-*  PWAs can use advanced web APIs such as WebBluetooth, WebUSB, WebPayment, WebAuthn, or WebAssembly.
+*  A PWA can be linked to.
+*  A PWA can work on all devices, from a single codebase.
 
-#### Lower development cost
-
-PWAs have a **much lower cross-platform development cost** than compiled apps that require a specific, separate codebase for each platform, such as Android, iOS, and each desktop operating system.
-
-With a PWA, you can use a single codebase that's shared between your website, mobile app, and desktop app (across operating systems).
+PWAs have a **much lower cross-platform development cost** than compiled apps that require a specific codebase for each platform, such as a separate codebase for Android, for iOS, and for each desktop operating system.
 
 
 <!-- ====================================================================== -->
-## Cross-device compatibility
+## Characteristics of a Progressive Web App (PWA)
 
-Progressive Web Apps (PWAs) are built using HTML, CSS, and JavaScript code that's hosted on web servers and that runs in web browser engines. They can either be used directly in a web browser, like a website, or installed on a device from an app store, or by using the app installation feature of a supporting browser. To learn more about installing PWAs in Microsoft Edge, see [Installing a PWA](./ux.md#installing-a-pwa).
+A fully capable Progressive Web App provides the following advantages to the user.
 
-The user experience of a PWA scales up or down with device capabilities. In particular, on Windows with Microsoft Edge, you can build immersive experiences that deeply integrate with the operating system. Using only web technologies ensures that your app will work on other browsers, operating systems, and devices.
-
-Desktop computing continues to be the primary productivity environment for many users.  PWAs can provide fully tailored, installable experiences on a desktop operating system that inherit the benefits of that environment.  Yet PWAs can also be installed on mobile devices, or used directly in web browsers.
+| Characteristic | Description |
+| --- | --- |
+| [Discoverable](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Discoverable) | The app is discoverable from web search results and supporting app stores. |
+| [Installable](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Installable) | Pin and launch the app from the home screen, Start menu, and Taskbar. |
+| [Re-engageable](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Re-engageable) | The app can receive push notifications, even when the app isn't active. |
+| [Network-independent](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Network_independent) | The app works offline and in low-network conditions. |
+| [Progressive](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Progressive) | The user experience of the app scales up or down with device capabilities. |
+| [Safe](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Safe) | The app provides a secure HTTPS endpoint and other user safeguards. |
+| [Responsive](https://developer.mozilla.org/Apps/Progressive/Advantages#Responsive) | The app adapts to the user's screen size or orientation and input method. |
+| [Linkable](https://developer.mozilla.org/Apps/Progressive/Advantages#Linkable) | Share and launch the app from a standard link. |
 
 
 <!-- ====================================================================== -->
-## Bridging the gap between web and native
+## PWAs on desktop
 
-There isn't much you can't do today with web technologies. Many features that were once only possible by using device-specific languages can now be achieved by using standard web technologies. For example:
+Progressive Web Apps (PWAs) aren't limited to displaying websites on mobile home screens. PWAs are based on standard, cross-browser, web technologies that allow them to be installed and to run in many different environments.
 
+In recent years, desktop browsing has grown, and desktop computing continues to be the primary productivity environment for many users.  PWAs can provide fully tailored, installable experiences on a desktop operating system that inherit the benefits of that environment.  Yet PWAs still work across platform from the same code and servers that power your in-browser and mobile experiences.
+
+Microsoft Edge and Windows have added many new web capabilities and features.  These new web development capabilities provide great opportunities to build immersive experiences that deeply integrate with the desktop operating system.  Using only web technologies ensures that your app will work on other browsers, operating systems, and devices.
+
+You might not have to use proprietary technologies at all, because the web has developed capabilities to deal with many aspects of apps, such as:
+*  File systems
+*  Video
+*  Audio
+*  High-performance code
+*  Databases
+*  USB
+*  Bluetooth
+
+With a PWA, you can use a single codebase that's shared between your website, mobile app, and desktop app (across operating systems).  By using a single codebase that's shared across platforms, you cut down on development costs.  Your app can also be published on the Microsoft Store, making it more familiar and trustworthy for Windows users to discover and install.
+
+Learn more about [how PWAs integrate on Windows](ux.md).
+
+
+<!-- ====================================================================== -->
+## Bridging the gap between web and desktop apps
+
+Microsoft Edge has many new capabilities built in that can make your web app feel more integrated on desktop platforms.  These capabilities provide more engaging experiences across web and desktop platforms.  With Progressive Web Apps (PWAs), you can:
 *   Handle files.
 *   Share content with other apps.
 *   Access the clipboard.
@@ -80,9 +89,9 @@ There isn't much you can't do today with web technologies. Many features that we
 *   Use CSS layouts, animations, and filters to create advanced designs.
 *   Run near-compiled performance code with WebAssembly.
 
-Thanks to Microsoft Edge, PWAs on desktop can take full advantage of these capabilities to deliver what users expect desktop apps to be able to do.  These capabilities provide more engaging experiences across web and desktop platforms.
+There isn't much you can't do today with web technologies.  Thanks to Microsoft Edge, PWAs on desktop can take full advantage of web technologies to deliver what users expect desktop apps to do.
 
-To find examples of what PWAs can do, see [Myth Busting PWAs](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition).
+Check out [Myth Busting PWAs](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition) for more information about what PWAs can do.
 
 
 <!-- ====================================================================== -->
@@ -90,7 +99,7 @@ To find examples of what PWAs can do, see [Myth Busting PWAs](https://www.davrou
 
 Because Progressive Web Apps (PWAs) are just like other apps in the [Microsoft Store](https://www.microsoft.com/store/apps/windows), users can fully engage with them—from discovery, to installation, to execution—without<!-- em dashes--> ever opening the browser.
 
-The Microsoft Store provides a trustworthy and familiar experience for users to install your app.  Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
+The Microsoft Store app is the most used app on PCs.  The Microsoft Store provides a trustworthy and familiar experience for your users to install your app.  Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
 
 Learn how to [publish your PWA to the Microsoft Store](how-to/microsoft-store.md).
 
@@ -110,7 +119,15 @@ Read more success stories on the [PWA Stats](https://www.pwastats.com/) website.
 <!-- ====================================================================== -->
 ## See also
 
-*  [Progressive Web Apps](https://developer.mozilla.org/docs/Web/Progressive_web_apps) at MDN Web Docs.
-*  [Progressive Web Apps](https://web.dev/progressive-web-apps/) at web.dev.
-*  [Progressive Web Apps](https://en.wikipedia.org/wiki/Progressive_web_app) at Wikipedia.
+*  [Progressive Web Apps](https://developer.mozilla.org/Apps/Progressive) at MDN Web Docs.
+*  [Microsoft Build 2020 PWA session](https://www.youtube.com/watch?v=y4p_QHZtMKM)
+*  [Myth Busting PWAs](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition)
+*  [A Progressive Roadmap for your Progressive Web App](https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app)
+*  [Offline POSTs with Progressive Web Apps](https://medium.com/web-on-the-edge/offline-posts-with-progressive-web-apps-fc2dc4ad895)
 *  [PWA Q&A](https://www.aaron-gustafson.com/notebook/pwa-qa)
+*  [Betting on the Web](https://joreteg.com/blog/betting-on-the-web)
+*  [Naming Progressive Web Apps](https://fberriman.com/2017/06/26/naming-progressive-web-apps)
+*  [Designing And Building A Progressive Web App Without A Framework (Part 1)](https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1)
+*  [Designing And Building A Progressive Web App Without A Framework (Part 2)](https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2)
+*  [Designing And Building A Progressive Web App Without A Framework (Part 3)](https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3)
+*  [What makes a good Progressive Web App?](https://web.dev/pwa-checklist)

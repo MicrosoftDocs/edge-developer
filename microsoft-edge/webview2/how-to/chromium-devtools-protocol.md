@@ -1,20 +1,20 @@
 ---
-title: Use the Chrome DevTools Protocol (CDP) in WebView2 apps
+title: Use the Chrome DevTools Protocol in WebView2 apps
 description: How to use the Chrome DevTools Protocol in your WebView2 app by using the Microsoft Edge WebView2 Chrome DevTools Protocol NuGet package.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2023
+ms.date: 05/06/2021
 ---
-# Use the Chrome DevTools Protocol (CDP) in WebView2 apps
+# Use the Chrome DevTools Protocol in WebView2 apps
 
 The [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol) provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform.
 
 To use the Chrome DevTools Protocol API in a WebView2 app, do either of the following:
 
-*  Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet package (.NET).
+*  Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet package (.NET).
 
 *  Or, run one of the following methods:
 
@@ -26,9 +26,11 @@ To use the Chrome DevTools Protocol API in a WebView2 app, do either of the foll
 <!-- ====================================================================== -->
 ## Use DevToolsProtocolHelper
 
-The `DevToolsProtocolExtension` includes a `DevToolsProtocolHelper` object.
+[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) is a NuGet package created by the WebView2 team that provides easy access to Chrome DevTools Protocol features.  The following examples describe how to use the geolocation functionality in Chrome DevTools Protocol in your WebView2 control.  To use other Chrome DevTools Protocol features, you can follow a similar pattern.
 
-`Microsoft.Web.WebView2.DevToolsProtocolExtension` is a NuGet package created by the WebView2 team that provides easy access to Chrome DevTools Protocol features.  The following examples describe how to use the geolocation functionality in Chrome DevTools Protocol in your WebView2 control.  To use other Chrome DevTools Protocol features, you can follow a similar pattern.
+### Don't use the preview package in production apps
+
+The [Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet package is currently in technical preview.  While in preview, refrain from using this NuGet package in production apps.
 
 
 <!-- ====================================================================== -->
@@ -81,7 +83,7 @@ To create an `HTML file` to find your geolocation, complete following the action
 
 1. To display your latitude and longitude coordinates, click the **Display Location** button.  To verify and compare your geolocation, copy and paste your coordinates in [https://www.bing.com/maps](https://www.bing.com/maps).
 
-   ![Displaying the user's geolocation coordinates in Microsoft Edge](./chromium-devtools-protocol-images/geolocater-browser.png)
+   ![Displaying the user's geolocation coordinates in Microsoft Edge](./media/geolocater-browser.png)
 
 
 <!-- ====================================================================== -->
@@ -101,7 +103,7 @@ To create an `HTML file` to find your geolocation, complete following the action
 
 1. Make sure the `geolocation.html` file is displayed in your WebView2 control app:
 
-   ![The geolocation.html file, displayed in your WebView2 control app](./chromium-devtools-protocol-images/initial-geolocate.png)
+   ![The geolocation.html file, displayed in your WebView2 control app](./media/initial-geolocate.png)
 
 
 <!-- ====================================================================== -->
@@ -117,7 +119,7 @@ To install the package:
 
 1. Make sure **Microsoft.Web.WebView2.DevToolsProtocolExtension** is displayed in the Visual Studio NuGet Package Manager:
 
-   ![Making sure Microsoft.Web.WebView2.DevToolsProtocolExtension is displayed in the Visual Studio NuGet Package Manager](./chromium-devtools-protocol-images/cdp-nuget.png)
+   ![Making sure Microsoft.Web.WebView2.DevToolsProtocolExtension is displayed in the Visual Studio NuGet Package Manager](./media/cdp-nuget.png)
 
 
 <!-- ====================================================================== -->
@@ -164,7 +166,7 @@ To install the package:
 
 1. To display the coordinates of Paris, France, click the **Display Location** button:
 
-   ![Display the .html file in a WebView2 control with the coordinates for Paris](./chromium-devtools-protocol-images/final-location-cdp.png)
+   ![Display the .html file in a WebView2 control with the coordinates for Paris](./media/final-location-cdp.png)
 
 
 <!-- ====================================================================== -->
@@ -182,4 +184,3 @@ The Chrome DevTools Protocol is maintained by the open source Chromium project, 
 
 * [Microsoft Edge DevTools Protocol overview](../../devtools-protocol-chromium/index.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
-* [Chrome DevTools Protocol (CDP)](../concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 features and APIs_

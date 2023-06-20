@@ -101,7 +101,7 @@ To begin, explore the current drag-and-drop functionality:
 
 1. Drag-and-drop the `contoso.txt` file into the WebView2 control.  A new window opens, which is the result of the code in your sample project:
 
-   ![Result of dragging and dropping contoso.txt](./javascript-images/drag-text.png)
+   ![Result of dragging and dropping contoso.txt.](./media/drag-text.png)
 
 1. Next, add code to remove the drag-and-drop functionality from the WebView2 control.  Paste the following code after the CoreWebView2 object is initialized in your code:
 
@@ -131,7 +131,7 @@ To begin, explore the current functionality of the right-click menu:
 
 1. Right-click anywhere on the WebView2 control.  The context menu displays the default right-click menu commands:
 
-   ![The right-click menu, showing the default commands](./javascript-images/context-menu.png)
+   ![The right-click menu, showing the default commands.](./media/context-menu.png)
 
    Next, add code to remove the right-click menu functionality from the WebView2 control.
 
@@ -150,4 +150,5 @@ To begin, explore the current functionality of the right-click menu:
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](../webview2-api-reference.md)
-* [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
+* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
+* [Web/Native Interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.

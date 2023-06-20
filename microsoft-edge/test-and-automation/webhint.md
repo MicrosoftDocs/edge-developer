@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/02/2023
+ms.date: 04/25/2022
 ---
 # webhint extension for Visual Studio Code
 <!-- keep in sync:

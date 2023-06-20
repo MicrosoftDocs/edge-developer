@@ -272,7 +272,7 @@ Use [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icoreweb
 
 ```cpp
 std::wstring m_userDataFolder;
-m_userDataFolder = L"C:\\MyAppUserDataFolder";
+m_userDataFolder = L"C:\\MyAppUserDataFolder"
 auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
 
 HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
@@ -536,7 +536,7 @@ private void OnGetUDFClick(object sender, RoutedEventArgs e)
 }
 ```
 
-<!-- For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample). -->
+For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample).
 
 
 ---
@@ -567,7 +567,7 @@ If there's insufficient memory, or the Microsoft Edge runtime is unable to start
 
 Add code, such as `try/catch` code, to handle these errors.  These errors tend to be fatal errors that you can't recover from, so `try/catch` will prevent the app from crashing.  You'll then be able to detect the failure and close the app gracefully.  Some errors are unrecoverable, such as `Access Denied` when trying to use a user data folder that you don't have Write permissions to.
 
-Error message strings are displayed in a dialog.
+Error message strings are displayed in a dialog box.
 
 
 <!-- ====================================================================== -->
@@ -663,7 +663,8 @@ WebView2 control instances can share the same user data folders (UDFs), to do th
 
 *  Optimize system resources by running in one browser process.  See [Process model for WebView2 apps](../concepts/process-model.md).
 
-*  Have WebView2 controls with different profiles, to separate browser data storage such as cookies, permissions, and cached resources under the same UDF.  See [Support multiple profiles under a single user data folder](../concepts/multi-profile-support.md).
+*  Share browser history and cached resources.
+
 
 Consider the following when sharing UDFs:
 
@@ -677,14 +678,13 @@ To isolate different parts of your app, or when sharing data between WebView2 co
 
 Each WebView2 browser process consumes additional memory and disk space.  Therefore, avoid running a WebView2 control with too many different UDFs at the same time.
 
-Rather than multiple UDFs, you can use multiple profiles to achieve browser data storage separation for different WebView2 controls.  Each profile saves browser data in a dedicated folder under the same, shared UDF.  See [Support multiple profiles under a single user data folder](../concepts/multi-profile-support.md).
-
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Support multiple profiles under a single user data folder](multi-profile-support.md)
 * [Clear browsing data from the user data folder](clear-browsing-data.md)
 * [Package and deploy](/windows/apps/package-and-deploy/) in _Windows App Development_ docs (Build desktop apps for Windows).
 * [ClickOnce security and deployment](/visualstudio/deployment/clickonce-security-and-deployment) - Visual Studio deployment documentation.
 * [Understand the ClickOnce and DirectInvoke features in Microsoft Edge](/deployedge/edge-learn-more-co-di) - in Microsoft Edge Enterprise documentation.
+
+<!-- clickable: https://learn.microsoft.com/windows/apps/package-and-deploy/ -->

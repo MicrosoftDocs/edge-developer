@@ -33,9 +33,9 @@ To open the **Accessibility** tab:
 
 1. In the **DOM Tree**, click the element that you want to inspect.  You can use the arrow keys to move through the DOM tree.
 
-1. Click the **Accessibility** tab, to the right of the **Styles** tab.  You might need to first click the **More tabs** (![the More tabs button](./accessibility-tab-images/more-tabs-icon.png)) button to the right of the **Styles** tab.
+1. Click the **Accessibility** tab, to the right of the **Styles** tab.  You might need to first click the **More tabs** (![the More tabs button.](../media/more-tabs-icon.msft.png)) button to the right of the **Styles** tab.
 
-![Inspect the h1 element of the DevTools homepage in the Accessibility tab](./accessibility-tab-images/accessibility-elements-accessibility.png)
+![Inspect the h1 element of the DevTools homepage in the Accessibility tab.](../media/accessibility-elements-accessibility.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -45,7 +45,7 @@ The [accessibility tree](https://developer.mozilla.org/docs/Glossary/AOM) is a s
 
 Inspect the position of an element in the accessibility tree from the **Accessibility** tab.
 
-![The Accessibility Tree section](./accessibility-tab-images/accessibility-elements-accessibility-tree.png)
+![The Accessibility Tree section.](../media/accessibility-elements-accessibility-tree.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -55,7 +55,7 @@ ARIA attributes ensure that assistive technologies such as screen readers have a
 
 View the ARIA attributes of an element in the **Accessibility** tab.
 
-![The ARIA Attributes section](./accessibility-tab-images/accessibility-elements-accessibility-aria-attributes.png)
+![The ARIA Attributes section.](../media/accessibility-elements-accessibility-aria-attributes.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ View the computed accessibility properties of an element in the **Accessibility*
 > [!NOTE]
 > For computed CSS properties, use the [Computed](../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) tab.
 
-![The 'Computed Properties' section of the Accessibility tab](./accessibility-tab-images/accessibility-elements-accessibility-computed-properties.png)
+![The 'Computed Properties' section of the Accessibility tab.](../media/accessibility-elements-accessibility-computed-properties.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -76,5 +76,5 @@ View the computed accessibility properties of an element in the **Accessibility*
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/accessibility/reference/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

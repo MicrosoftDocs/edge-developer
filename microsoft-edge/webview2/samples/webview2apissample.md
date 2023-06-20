@@ -156,11 +156,11 @@ At the top of Visual Studio, set the build target, as follows:
 <!-- ====================================================================== -->
 ## Step 8 - Run (debug) the project
 
-1. Select **Debug** > **Start Debugging** (**F5**).  
+1. Select **Debug** > **Start Debugging** (`F5`).  
 
-   Troubleshooting: if you skip the build step and immediately select **Debug** > **Start Debugging** (**F5**), a dialog might appear, "Unable to start program: Cannot find the path specified":
+   Troubleshooting: if you skip the build step and immediately select **Debug** > **Start Debugging** (`F5`), a dialog box might appear, "Unable to start program: Cannot find the path specified":
 
-   ![dialog: Unable to start program: Cannot find the path specified](./webview2apissample-images/webview2apisample-unable-to-start-program-cannot-find-path.png)
+   ![Dialog box: Unable to start program: Cannot find the path specified](./webview2apissample-images/webview2apisample-unable-to-start-program-cannot-find-path.png)
 
    To fix this problem: in **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
@@ -204,9 +204,9 @@ Examine and possibly update the installed NuGet packages, as follows:
 
 1. Click the **Update** button.
 
-   The **Preview Changes** dialog appears:
+   The **Preview Changes** dialog box appears:
 
-   ![The Preview Changes dialog for the WebView2 NugGet package](./webview2apissample-images/webview2apisample-webview2-pkg-preview-changes.png)
+   ![The Preview Changes dialog box for the WebView2 NugGet package](./webview2apissample-images/webview2apisample-webview2-pkg-preview-changes.png)
 
    _The above image is from another project, but is similar._
 
@@ -223,7 +223,7 @@ The latest version of the WebView2 SDK is now installed for this project.
 
    ![WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)
 
-1. Select **Debug** > **Start Debugging** (**F5**).  
+1. Select **Debug** > **Start Debugging** (`F5`).  
 
    The **WebView2APISample** app window opens:
 
@@ -426,7 +426,7 @@ The following steps show how the Win32 Host can modify a WebView. In this exampl
 1. Click on Script in the Toolbar
 2. Click on Post Web Message JSON
 
-A dialog with the pre-written code `{"SetColor":"blue"}` should appear.
+A dialog box with the pre-written code `{"SetColor":"blue"}` should appear.
 
 3. Click OK
 
@@ -561,5 +561,4 @@ window.chrome.webview.addEventListener('message', arg => {
 <!-- ====================================================================== -->
 ## See also
 
-* [WebView2 API Reference](../webview2-api-reference.md)
 * [Get started with WebView2 in Win32 apps](../get-started/win32.md)

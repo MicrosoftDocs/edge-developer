@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/26/2022
+ms.date: 08/05/2022
 ---
 # Create an extension tutorial, part 2
 
@@ -21,13 +21,9 @@ This tutorial covers the following extension technologies:
 
 You'll learn to update your pop-up menu to replace your static stars image with a title and a standard HTML button.  That button, when selected, passes that image of stars to the content page.  This image is now embedded in the extension and inserted into the active browser tab. Here are the steps.
 
-These steps require that you complete the steps for initial extension package steps. For the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part1](/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension?tabs=v3).  
+## Step 1: Remove the image from the pop-up and replace it with a button.
 
-## Step 1: Update pop-up.html to include a button
-
-In the popup folder where you created the `popup.html` file [from the initial part of the tutorial](/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension?tabs=v3), you'll add tagging that displays a title with a button.  You'll later program that button in a different step, but for now include a reference to an empty JavaScript file `popup.js`.   
-
-Below is a sample updated HTML file:
+Update your `popup.html` file with some straightforward markup that displays a title and a button.  You'll later program that button in a different step, but for now include a reference to an empty JavaScript file `popup.js`.  Below is a sample updated HTML:
 
 ```html
 <html>
@@ -58,11 +54,11 @@ Below is a sample updated HTML file:
 
 After updating and opening the extension, a pop-up opens with a display button.
 
-![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
+![popup.html display after selecting the Extension icon.](./media/part2-popupdialog.png)
 
 <!--![popup.html display after selecting the Extension icon] -->
 
-## Step 2: Update popup.html to display image at the top of the browser tab
+## Step 2: Update strategy to display image at the top of the browser tab
 
 After adding the button, the next task is to make it bring up the `images/stars.jpeg` image file at the top of the active tab page.
 
@@ -85,7 +81,7 @@ if (sendMessageId) {
 
 In the `onclick` event, find the current browser tab.  Then, use the `chrome.tabs.sendmessage` Extension API to send a message to that tab.
 
-In that message, you must include the URL to the image you want to display.  Make sure that you send a unique ID to assign to the inserted image.
+In that message, you must include the URL to the image you want to display.  Also, make sure that you send a unique ID to assign to the inserted image.
 
 To send a unique ID to assign to the inserted image, a couple different approaches are possible:
 *  Approach 1: Let the content insertion JavaScript generate that image ID.  We won't use that approach here, for reasons that become apparent later.
@@ -153,12 +149,15 @@ if (sendMessageId) {
 
 ---
 
+
 <!-- ====================================================================== -->
 ## Step 4: Make your `stars.jpeg` available from any browser tab
 
-To make `images/stars.jpeg` available from any browser tab, you must use the `chrome.runtime.getURL` API.
+When you pass the `images/stars.jpeg`, you must use the `chrome.runtime.getURL` API (or `chrome.extension.getURL` if using Manifest V2) instead of just passing in the relative URL without the extra prefix like in the previous section.  That extra prefix is returned by `getUrl` with the image attached, and looks something like the following:
 
-Note: If you are using Manifest V2, then instead use `chrome.extension.getURL`.  That extra prefix is returned by `getURL` with the image attached, and looks something like the following: ```httpextension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg```
+```http
+extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
+```
 
 The reason is that you're injecting the image using the `src` attribute of the `img` element into the content page.  The content page is running on a unique thread that isn't the same as the thread running the Extension.  You must expose the static image file as a web asset for it to work correctly.
 
@@ -184,11 +183,12 @@ Add another entry in the `manifest.json` file to declare that the image is avail
 ```
 
 ---
+
 You've now written the code in your `popup.js` file to send a message to the content page that is embedded on the current active tab page, but you haven't created and injected that content page.  Do that now.
 
 
 <!-- ====================================================================== -->
-## Step 5: Update your `manifest.json` for new content and web access
+## Step 5: Update your `manifest.json` for content and web access
 
 The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows:
 
@@ -312,10 +312,10 @@ When an event is processed by the listener, the function that is the first param
 
 Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows:
 
-![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
+![popup.html display after selecting the Extension icon.](./media/part2-popupdialog.png)
 
 When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses<!--todo: check "tab pages collapses"--> back to what was originally displayed:
 
-![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
+![The image showing in browser.](./media/part2-showingimage.png)
 
 Congratulations!  You've created an Extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars `.jpeg` file.

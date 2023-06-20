@@ -28,7 +28,7 @@ No code is required for automatic link handling to work, but end users can opt-o
 
 1. On the PWA details page, under the **Link handling** section, click the toggle button.
 
-![The edge://apps details page for the PWAmp music player app, showing where the link handling toggle button is](./handle-urls-images/link-handling-opt-out.png)
+![The edge://apps details page for the PWAmp music player app, showing where the link handling toggle button is](../media/link-handling-opt-out.png)
 
 
 <!-- ====================================================================== -->

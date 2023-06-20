@@ -875,9 +875,3 @@ function addHistoryItem(item, callback) {
 ## Handling JSON and URIs
 
 WebView2Browser uses Microsoft's [cpprestsdk (Casablanca)](https://github.com/Microsoft/cpprestsdk) to handle all JSON in the C++ side of things. IUri and CreateUri are also used to parse file paths into URIs and can be used to for other URIs as well.
-
-
-<!-- ====================================================================== -->
-## See also
-
-* [WebView2 API Reference](../webview2-api-reference.md)

@@ -20,4 +20,4 @@ The **Welcome** tool opens automatically after each update to Microsoft Edge.
 
 To prevent the display of the **Welcome** tool after each update, clear the checkbox next to **Open tab after each update** under the **Welcome** tool title.
 
-![The Welcome tool in Microsoft Edge DevTools](./welcome-tool-images/welcome-tool.png)
+![The Welcome tool in Microsoft Edge DevTools.](../media/welcome-tool.png)

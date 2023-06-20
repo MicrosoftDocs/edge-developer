@@ -95,7 +95,7 @@ To use `puppeteer-core` to launch Microsoft Edge:
 
      The following `example.png` file is produced by `example.js`:
 
-     ![The example.png file produced by example.js](./index-images/puppeteer-example.png)
+     ![The example.png file produced by example.js.](./media/puppeteer-example.png)
 
 The preceding example demonstrates basic automation and testing scenarios that you can cover using Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, check out [Puppeteer](https://pptr.dev).
 
@@ -103,36 +103,15 @@ The preceding example demonstrates basic automation and testing scenarios that y
 <!-- ====================================================================== -->
 ## See also
 
-<!-- TODO: thin out? -->
-
-#### Local articles
-
-* [WebDriver](../webdriver-chromium/index.md)
-* [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using Puppeteer, puppeteer-core, and Microsoft Edge.
-* [Chrome DevTools Protocol (CDP)](../webview2/concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 features and APIs_
-* [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../webview2/how-to/chromium-devtools-protocol.md)
-
-#### Archive
-
-* [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/index)
-
-#### Blog posts
-
-* [Microsoft Edge:  Making the web better through more open source collaboration on Microsoft Experience Blog](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)
-
-#### Tools
-
-* [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download)
-* [Chromium on The Chromium Projects](https://www.chromium.org/Home)
-* [Node.js](https://nodejs.org)
-* [Puppeteer](https://pptr.dev)
-* [puppeteer vs. puppeteer-core](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core)
-* [page.setViewport() on Puppeteer](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagesetviewportviewport)
-
-#### Protocols
-
-* [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol)
-
-#### Info
-
-* [Headless browser on Wikipedia](https://en.wikipedia.org/wiki/Headless_browser)
+*  [WebDriver](../webdriver-chromium/index.md)
+*  [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/index)
+*  [Chrome DevTools Protocol Viewer on GitHub](https://chromedevtools.github.io/devtools-protocol)
+*  [Microsoft Edge:  Making the web better through more open source collaboration on Microsoft Experience Blog](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)
+*  [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download)
+*  [Chromium on The Chromium Projects](https://www.chromium.org/Home)
+*  [Node.js](https://nodejs.org)
+*  [Puppeteer](https://pptr.dev)
+*  [puppeteer vs. puppeteer-core](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core)
+*  [page.setViewport() on Puppeteer](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagesetviewportviewport)
+*  [Headless browser on Wikipedia](https://en.wikipedia.org/wiki/Headless_browser)
+*  [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using Puppeteer, puppeteer-core, and Microsoft Edge.

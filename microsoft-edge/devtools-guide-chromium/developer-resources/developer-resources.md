@@ -11,4 +11,4 @@ ms.date: 02/15/2022
 
 Use the **Developer Resources** tool to view resource URLs for the webpage.
 
-![The Developer Resources tool](./developer-resources-images/developer-resources-tool.png)
+![The Developer Resources tool.](../media/developer-resources-tool.png)

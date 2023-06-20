@@ -5,11 +5,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/29/2022
+ms.date: 03/17/2022
 ---
 # Using the Microsoft Edge Add-ons API 
 
-The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons to the Microsoft Edge Add-ons website.  You'll use the **Publish API** page at Partner Center to work with these endpoints.
+The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.  Use the **Publish API** page at Partner Center.
 
 To submit suggestions and feedback, enter an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
 
@@ -19,7 +19,7 @@ To submit suggestions and feedback, enter an [Issue about the Add-ons API](https
 
 | Language | Package | Source code | Notes |
 | --- | --- | --- | --- |
-| Node.js | [Edge Webstore Upload](https://www.npmjs.com/package/@plasmo-corp/ewu) | [GitHub](https://github.com/plasmo-corp/edge-webstore-upload)| This is a third party library. Microsoft makes no warranties, express or implied, with respect to the information provided here. |
+| Node.js | [Edge Webstore Upload](https://www.npmjs.com/package/@plasmo-corp/ewu) | [Github](https://github.com/plasmo-corp/edge-webstore-upload)| This is a 3rd party library. Microsoft makes no warranties, express or implied, with respect to the information provided here. |
 
 
 <!-- ====================================================================== -->
@@ -38,28 +38,28 @@ To submit suggestions and feedback, enter an [Issue about the Add-ons API](https
 <!-- ====================================================================== -->
 ## Before you begin
 
-To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center, by creating API credentials. Use the following steps to create API credentials.
+To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center, by creating API credentials, as follows:
 
-1. Visit Microsoft Partner Center and sign in to the account that you used to publish an add-on.
+1. Visit Microsoft Partner Center and sign in to the account from which you have already published an add-on.
 
 1. Under the **Microsoft Edge** program, select **Publish API**.
 
-1. On the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes to finish.
+1. In the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes.
 
-   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)
-
- > [!IMPORTANT]
-> You can generate multiple client secrets for your client ID.  For example, you can create multiple secrets for multiple projects.
+   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL.](../../media/create-api-credentials-button.png)
 
    The API credentials have now been created; you've enabled or renewed the API.  The **Client ID**, **Client secret**, **Expiry date**, and **Access token URL** are now displayed on the Publish APIs page.
 
 1. Write down the **Client ID**, **Client secret** and the **Access token URL**.  You'll use these values in the next step, to get an access token.
 
 > [!IMPORTANT]
-> Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials). This particular secret isn't shown again.
+> Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials).
+
 
 <!-- ====================================================================== -->
 ## Retrieving the access token
+
+
 
 After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the **Before you begin** steps above.
 
@@ -69,7 +69,7 @@ Type: POST
 Header Parameters: Content-Type: application/x-www-form-urlencoded
 ```
 
-#### Sample request
+### Sample request
 
 ```console
 > curl \
@@ -83,7 +83,7 @@ Header Parameters: Content-Type: application/x-www-form-urlencoded
 https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2.0/token
 ```
 
-#### Sample response
+### Sample response
 
 ```json
 {
@@ -99,10 +99,10 @@ For more information, see [OAuth 2.0 client credentials flow on the Microsoft id
 <!-- ====================================================================== -->
 ## Using the API endpoints
 
-After you have an access token, you can use the Microsoft Edge Add-ons API.  This API exposes endpoints for getting a list of products, updating products, and publishing products.
+Once you have an access token, you can use the Microsoft Edge Add-ons API.  This API exposes endpoints for getting a list of products, updating products, and publishing products.
 
 > [!NOTE]
-> There's no API for creating a new product or updating a product's metadata. For example, the description.  You must complete these tasks manually in Microsoft Partner Center.
+> There is no API for creating a new product or updating a product's metadata, such as a description.  You must complete these tasks manually in Microsoft Partner Center.
 
 The API is available at the endpoint `https://api.addons.microsoftedge.microsoft.com`
 
@@ -121,7 +121,7 @@ Body content: the package file to upload
 
 `$productID` is the product ID of the Microsoft Edge Add-on that you want to update. 
 
-Follow these steps to get the product ID:
+To get the product ID:
 
 1. Sign in to Microsoft Partner Center.
 
@@ -133,7 +133,7 @@ Follow these steps to get the product ID:
  
 1. In the **Extension identity** section (or from the Address bar), select and copy the **Product ID**.
 
-#### Sample request
+### Sample request
 
 ```console
 > curl \
@@ -145,10 +145,10 @@ Follow these steps to get the product ID:
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package
 ```
 
-If the request succeeds and the update process begins, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` that's required for checking the status of the update operation.
+If the request succeeds and the update process begins, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` which is required for checking the status of the update operation.
 
+### See also
 
-See also:
 *  API Reference: [Upload a package to update an existing submission](addons-api-reference.md#upload-a-package-to-update-an-existing-submission)
 
 
@@ -163,7 +163,7 @@ Type: GET
 Header Parameters: Authorization: Bearer $TOKEN
 ```
 
-#### Sample request
+### Sample request
 
 ```console
 > curl \
@@ -173,8 +173,8 @@ Header Parameters: Authorization: Bearer $TOKEN
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package/operations/$operationID
 ```
 
+### See also
 
-See also:
 *  API Reference: [Check the status of a package upload](addons-api-reference.md#check-the-status-of-a-package-upload)
 
 
@@ -190,7 +190,7 @@ Header Parameters: Authorization: Bearer $TOKEN
 Body content: Notes for certification, in JSON format
 ```
 
-#### Sample request
+### Sample request
 
 ```console
 > curl \
@@ -201,10 +201,10 @@ Body content: Notes for certification, in JSON format
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions
 ```
 
-If the request succeeds and the publishing process begins, you'll receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` that's required for checking the status of the publish operation.
+If the request succeeds and the publishing process begins, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` which is required for checking the status of the publish operation.
 
+### See also
 
-See also:
 *  API Reference: [Publish the product draft submission](addons-api-reference.md#publish-the-product-draft-submission)
 
 
@@ -219,7 +219,7 @@ Type: GET
 Header Parameters: Authorization: Bearer $TOKEN
 ```
 
-#### Sample request
+### Sample request
 
 ```console
 > curl \
@@ -229,6 +229,6 @@ Header Parameters: Authorization: Bearer $TOKEN
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
 ```
 
+### See also
 
-See also:
 *  [Using the Microsoft Edge Add-ons API: Check the publishing status](addons-api-reference.md#check-the-publishing-status)

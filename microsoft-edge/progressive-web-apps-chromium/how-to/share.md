@@ -72,13 +72,12 @@ async function shareSomeContent(title, text, url) {
 
 On Windows, the above code will trigger the share dialog, allowing the user to pick an app to receive the shared content.  The share dialog is shown below:
 
-![The share dialog on Windows](./share-images/windows-share-dialog.png)
+![The share dialog on Windows.](../media/windows-share-dialog.png)
 
 Once the user has selected an app to receive the shared content, it is up to this app to handle it any way it chooses.  For example, an email app might use the `title` as the email subject, and use the `text` as the email body.
 
 
-<!-- ------------------------------ -->
-#### Sharing files
+### Sharing files
 
 The `navigator.share` function also accepts a `files` array to share files with other apps.
 
@@ -116,26 +115,21 @@ In the above code:
 1. The code creates a `File` object by using the BLOB.
 
 
-<!-- ------------------------------ -->
-#### Demo of sharing content
+### Demo of sharing content
 
-PWAmp is a demo PWA that uses the `navigator.share` function to share text and links.
+[DevTools Tips](https://devtoolstips.org/) is a PWA that uses the `navigator.share` function to share text and links.
 
-To test the Sharing feature:
+To test the feature:
 
-1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/).
+1. Go to [DevTools Tips](https://devtoolstips.org/).
+2. Select a tip.
+3. Click **Share tip**.
 
-1. In the right side of the Address bar, click the **App available. Install** (![PWA 'App available, Install' icon](./share-images/app-available-install-icon.png)) button to install PWAmp as a PWA.
+The Windows **Share** dialog is displayed.  The user picks an app in which to share the content:
 
-1. In the installed PWAmp PWA, import a local audio file (by dragging it onto the app window). For example, if you've cloned the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo, you have a local copy of `.mp3` files in the ([Demos repo > pwamp/songs directory](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp/songs)), such as `C:\Users\username\GitHub\Demos\pwamp\songs`.
+![The Windows Share dialog allows the user to pick which app should receive the shared content.](../media/devtools-tips-share.png)
 
-1. Next to the newly imported song, click the **Song actions** (**...**) button, and then select **Share**.  The Windows **Share** dialog is displayed:
-
-   ![The Windows Share dialog, to pick which app receives the shared content](./share-images/share-pwamp.png)
-
-1. Pick an app in which to share the content.
-
-You can find the [PWAmp source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp) on GitHub.  The PWAmp app uses the Web Share API in the [app.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwamp/app.js#L328-L341) source file.
+You can find the [source code on GitHub](https://github.com/captainbrosset/devtools-tips/).  The app uses the Web Share API in the [share.js](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) source file.
 
 
 <!-- ====================================================================== -->
@@ -146,9 +140,7 @@ By using the [Web Share Target](https://w3c.github.io/web-share-target/level-2/)
 > [!NOTE]
 > Only installed PWAs can register as share targets.
 
-
-<!-- ------------------------------ -->
-#### Register as a target
+### Register as a target
 
 To receive shared content, the first thing to do is register your PWA as a share target.  To register, use the `share_target` manifest member.  Upon installation of your app, the operating system uses the `share_target` member to include your app in the system share dialog.  The operating system knows what to do when your app is picked by the user, to share the content.
 
@@ -186,9 +178,7 @@ If you have existing code that uses other query parameter names, you can map the
 }
 ```
 
-
-<!-- ------------------------------ -->
-#### Handle GET shared data
+### Handle GET shared data
 
 To handle the data shared over the GET request in your PWA code, use the `URL` constructor to extract the query parameters:
 
@@ -202,9 +192,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-
-<!-- ------------------------------ -->
-#### Handle POST shared data
+### Handle POST shared data
 
 If the shared data is meant to change your app in any way, such as by updating some of the content that's stored in the app, you must use the `POST` method and define an encoding type with `enctype`:
 
@@ -253,9 +241,7 @@ In the above code:
 
 1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or can send the content to the server later, when connectivity is restored (such as by using [Background Sync](background-syncs.md)).
 
-
-<!-- ------------------------------ -->
-#### Handle shared files
+### Handle shared files
 
 Apps can also handle shared files. To handle files in your PWA, you must use the `POST` method and the `multipart/form-data` encoding type. Additionally, you must declare the types of files that your app can handle.
 

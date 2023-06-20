@@ -32,7 +32,7 @@ The terms and notions described here refer to the [Memory panel](heap-snapshots.
 
 Think of memory as a graph with primitive types (like numbers and strings) and objects (associative arrays).  Memory can be visually represented as a graph with a number of interconnected points, as follows:
 
-![Visual representation of memory](./memory-101-images/memory-problems-thinkgraph.png)
+![Visual representation of memory.](../media/memory-problems-thinkgraph.msft.png)
 
 An object can hold memory in two ways:
 
@@ -44,7 +44,7 @@ The [Memory](heap-snapshots.md) panel in DevTools is a tool for investigating me
 
 When working with the Memory panel, you will likely find yourself looking at a few different columns of information.  Two columns that stand out are **Shallow Size** and **Retained Size**:
 
-![Shallow and Retained Size](./memory-101-images/memory-problems-shallow-retained.png)
+![Shallow and Retained Size.](../media/memory-problems-shallow-retained.msft.png)
 
 ### Shallow size
 
@@ -77,7 +77,7 @@ There are many internal GC roots, most of which aren't interesting for the users
 
 The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You don't control how the root object is garbage-collected.
 
-![You can't control how the root object is garbage-collected](./memory-101-images/memory-problems-dontcontrol.png)
+![You can't control how the root object is garbage-collected.](../media/memory-problems-dontcontrol.msft.png)
 
 Whatever isn't reachable from the root gets garbage-collected.
 
@@ -100,7 +100,7 @@ Learn [how to record a profile using the Heap Profiler](heap-snapshots.md).  In 
 
 Distance from root:
 
-![Distance from root](./memory-101-images/memory-problems-root.png)
+![Distance from root.](../media/memory-problems-root.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -116,33 +116,33 @@ In the following figure:
 *  Node 5 dominates node 8.
 *  Node 6 dominates node 7.
 
-![Dominator tree structure](./memory-101-images/memory-problems-dominatorsspanning.png)
+![Dominator tree structure.](../media/memory-problems-dominatorsspanning.msft.png)
 
 In the following figure, node `#3` is the dominator of node `#10`.  But node `#7` also exists in every simple path from the garbage collection root **GC** to node `#10`. Therefore, an object `B` is a dominator of an object `A` if object `B` exists in every simple path from the root to the object `A`.
 
 Node `GC` dominates nodes `#1`, `#3`, and `#11`:
 
-![Node GC dominates nodes #1, #3, and #11](./memory-101-images/memory-problems-dominators-00.png)
+![Node GC dominates nodes #1, #3, and #11.](../media/memory-problems-dominators-00.msft.png)
  
 Node `#3` is dominated by node `GC` and dominates node `#7`:
 
-![Node #3 is dominated by node GC and dominates node #7](./memory-101-images/memory-problems-dominators-01.png)
+![Node #3 is dominated by node GC and dominates node #7.](../media/memory-problems-dominators-01.msft.png)
  
 Node `#7` is dominated by node `#3` and dominates nodes `#8`, `#9`, and `#10`:
 
-![Node #7 is dominated by node #3 and dominates nodes #8, #9, and #10](./memory-101-images/memory-problems-dominators-02.png)
+![Node #7 is dominated by node #3 and dominates nodes #8, #9, and #10.](../media/memory-problems-dominators-02.msft.png)
  
 Node `#8` is dominated by node `#7` and doesn't dominate any nodes:
 
-![Node #8 is dominated by node #7 and doesn't dominate any nodes](./memory-101-images/memory-problems-dominators-03.png)
+![Node #8 is dominated by node #7 and doesn't dominate any nodes.](../media/memory-problems-dominators-03.msft.png)
  
 Node `#10` is dominated by node `#7` and doesn't dominate any nodes:
 
-![Node #10 is dominated by node #7 and doesn't dominate any nodes](./memory-101-images/memory-problems-dominators-04.png)
+![Node #10 is dominated by node #7 and doesn't dominate any nodes.](../media/memory-problems-dominators-04.msft.png)
  
 Node `#11` is dominated by node `#1` and doesn't dominate any nodes:
 
-![Node #11 is dominated by node #1 and doesn't dominate any nodes](./memory-101-images/memory-problems-dominators-05.png)
+![Node #11 is dominated by node #1 and doesn't dominate any nodes.](../media/memory-problems-dominators-05.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -221,11 +221,11 @@ In the **Retainers** section, a cycled node is indicated by being grayed out.
 
 In the following image, in the **Filter edges** dropdown menu, **Hide cycled** is not selected, so a cycled node (grayed out) is displayed:
 
-![In the 'Filter edges' dropdown menu, 'Hide cycled' is not selected](memory-101-images/filters-retainers-memory-tool-no-hide-cycled.png)
+![In the 'Filter edges' dropdown menu, 'Hide cycled' is not selected.](memory-101-images/filters-retainers-memory-tool-no-hide-cycled.png)
 
 In the **Filter edges** dropdown menu, **Hide cycled** is selected, so the cycled node is not displayed:
 
-![In the 'Filter edges' dropdown menu, 'Hide cycled' is selected](memory-101-images/filters-retainers-memory-tool-hide-cycled.png)
+![In the 'Filter edges' dropdown menu, 'Hide cycled' is selected.](memory-101-images/filters-retainers-memory-tool-hide-cycled.png)
 
 
 ### Using filters to hide internal nodes
@@ -239,5 +239,5 @@ _Internal nodes_ are objects that are specific to V8 (the JavaScript engine in M
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/memory-problems/memory-101/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/24/2023
+ms.date: 04/27/2022
 ---
 # Test upcoming APIs and features
 <!-- old title: # Switch to a preview channel to test upcoming APIs and features -->
@@ -45,9 +45,9 @@ When a WebView2 is initialized, it will attempt to find a valid runtime on the m
 
 There are several ways to make your WebView2 app use a specified preview channel of Microsoft Edge:
 *  By calling a function.
+*  By using a group policy.
 *  By using a registry override.
 *  By using an environment variable.
-*  By using a group policy.
 
 These approaches are described below.
 
@@ -75,8 +75,8 @@ The default channel-search order is:
 If you set the release channel preference to `1` by using a group policy, registry override, or environment variable, that will use the reverse of the default search order.
 
 
-<!-- 1. Calling a function ============================================================== -->
-## Calling a function
+<!-- 1. Code ============================================================== -->
+## Using code
 
 If you want to make your application use a specific runtime by calling a function, complete the following steps.
 
@@ -145,7 +145,39 @@ WPF uses an approach similar to the Win32/C++ approach described above.
 Refer to [CoreWebView2CreationProperties.BrowserExecutableFolder Property](/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties.browserexecutablefolder#Microsoft_Web_WebView2_Wpf_CoreWebView2CreationProperties_BrowserExecutableFolder).
 
 
-<!-- 2. Registry Override ================================================= -->
+<!-- 2. Group Policy ====================================================== -->
+## Using a group policy
+
+If you want to make your application use a Microsoft Edge preview channel by using a group policy, copy ADMX and ADML files to the `PolicyDefinitions` folder, as follows.
+
+1. Download the policy files from [Download and deploy Microsoft Edge for business](https://www.microsoft.com/edge/business/download).
+
+1. Copy the ADMX file into a Policy Definitions template folder, such as `C:\Windows\PolicyDefinitions`.
+
+1. Copy the ADML file into a matching locale folder within the `Policy Definitions` folder, such as a `C:\Windows\PolicyDefinitions\en-us`<!--keep /en-us here--> folder.
+
+1. Open the **Local Group Policy Editor**.  To do this, in the Windows search bar, type "group policy", and then select **Edit group policy**.
+
+1. Expand **Local Computer Policy**, then **Computer Configuration** or **User Configuration**.  Then expand **Administrative Templates** > **Microsoft Edge WebView2**.
+
+   ![Local Group Policy Editor dialog.](media/local-group-policy-editor.png)
+
+1. Select **Browser Executable Folder**.  The following screenshots apply to setting the **Browser Executable Folder**.  Alternatively, select **Release Channel Preference**, which uses similar dialog boxes.
+
+   ![Setting the Browser Executable Folder.](media/browser-executable-folder.png)
+
+1. Select the **Show** button.
+
+1. Fill-in the **Show Contents** dialog box.  In the **Value name** column, enter an asterisk to apply to all WebView2 apps, or a `.exe` filename to only affect the specified WebView2 app.  In the **Value** column, enter the path to your WebView2 app's executable file.
+
+   ![The Show Contents dialog box.](media/show-contents.png)
+
+1. Select **OK** to close the dialog boxes.
+
+For more information, see [Configure Microsoft Edge policy settings](/deployedge/configure-microsoft-edge).
+
+
+<!-- 3. Registry Override ================================================= -->
 ## Using a registry override
 
 When specifying a preview channel by using a registry override, there are two options:
@@ -162,9 +194,9 @@ To make your application use a Microsoft Edge preview channel by using a registr
 
 1. Modify and then run the following command:
 
-   `REG ADD HKLM\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /v WebView2APISample.exe /t REG_SZ /d "C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0"`
+   `REG ADD HKLM\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /v * /t REG_SZ /d "C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0"`
 
-   Replace `WebView2APISample.exe` with the filename of your own app executable or the Application User Model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
+   The asterisk (*) as the value name makes this override apply to all WebView2 apps.  If you want to only apply this override to a particular WebView2 app, replace the asterisk by the filename of the app's executable.
 
    Replace `C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0` by the path to the desired Microsoft Edge preview channel.
 
@@ -182,9 +214,9 @@ To make your application use a Microsoft Edge preview channel by using a registr
 
 1. Modify and then run the following command:
 
-   `REG ADD HKLM\Software\Policies\Microsoft\Edge\WebView2\ReleaseChannelPreference /v WebView2APISample.exe /t REG_SZ /d "1"`
+   `REG ADD HKLM\Software\Policies\Microsoft\Edge\WebView2\ReleaseChannelPreference /v * /t REG_SZ /d "1"`
 
-   Replace `WebView2APISample.exe` with the filename of your own app executable or the Application User Model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
+   The asterisk (*) as the value name makes this override apply to all WebView2 apps.  If you want to only apply this override to a particular WebView2 app, replace the asterisk by the filename of the app's executable.
 
 #### Resuming using the default, WebView2 Evergreen Runtime
 
@@ -193,28 +225,28 @@ To delete the `ReleaseChannelPreference` registry override, run the command:
 `REG DELETE HKLM\Software\Policies\Microsoft\Edge\WebView2\ReleaseChannelPreference /f`
 
 
-<!-- 3. Environment Variable ============================================== -->
+<!-- 4. Environment Variable ============================================== -->
 ## Using an environment variable
 
 To make your application use a Microsoft Edge preview channel by using an environment variable:
 
 1. In the Windows search bar, enter "environment", and then select **Edit the system environment variables**.
 
-   ![Using the Windows search bar to find where to edit environment variables](./set-preview-channel-images/search-bar-edit-sys-env-vars.png)
+   ![Using the Windows search bar to find where to edit environment variables.](media/search-bar-edit-sys-env-vars.png)
 
-1. In the **System Properties** dialog, select the **Advanced** tab, and then select the **Environment Variables** button.
+1. In the **System Properties** dialog box, select the **Advanced** tab, and then select the **Environment Variables** button.
 
-   ![The Environment Variables button in the System Properties dialog](./set-preview-channel-images/system-properties-env-vars.png)
+   ![The Environment Variables button in the System Properties dialog box.](media/system-properties-env-vars.png)
 
-1. In the **User variables** section of the **Environment Variables** dialog, select **New**.
+1. In the **User variables** section of the **Environment Variables** dialog box, select **New**.
 
-1. In the **New User Variable** dialog, set the **Variable name** to `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`, and set the **Variable value** to the path to your preferred browser channel or fixed version binaries.
+1. In the **New User Variable** dialog box, set the **Variable name** to `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`, and set the **Variable value** to the path to your preferred browser channel or fixed version binaries.
 
    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1` to reverse the search order, to use preview channels (Beta, Dev, or Canary) first. Any value besides `1` indicates the default search order.
 
-1. Click **OK** to close the dialogs.
+1. Click **OK** to close the dialog boxes.
 
-   ![Adding a new environment variable, as a user variable](./set-preview-channel-images/env-vars-new-user-variable.png)
+   ![Adding a new environment variable, as a user variable.](media/env-vars-new-user-variable.png)
 
 ### Which app is affected
 
@@ -230,35 +262,3 @@ If you use the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable, you c
 ### Applying the new environment variable to running processes
 
 After setting an environment variable, the environment variable is applied to any new processes that are created.  The environment variable doesn't apply to processes which are already running.  To ensure that all processes use the new environment variable, you may need to restart Visual Studio, or log out of Windows and then log in again.
-
-
-<!-- 4. Group Policy ====================================================== -->
-## Using a group policy
-
-If you want to make your application use a Microsoft Edge preview channel by using a group policy, copy ADMX and ADML files to the `PolicyDefinitions` folder, as follows.
-
-1. Download the policy files from [Download and deploy Microsoft Edge for business](https://www.microsoft.com/edge/business/download).
-
-1. Copy the ADMX file into a Policy Definitions template folder, such as `C:\Windows\PolicyDefinitions`.
-
-1. Copy the ADML file into a matching locale folder within the `Policy Definitions` folder, such as a `C:\Windows\PolicyDefinitions\en-us`<!--keep /en-us here--> folder.
-
-1. Open the **Local Group Policy Editor**.  To do this, in the Windows search bar, type "group policy", and then select **Edit group policy**.
-
-1. Expand **Local Computer Policy**, then **Computer Configuration** or **User Configuration**.  Then expand **Administrative Templates** > **Microsoft Edge WebView2**.
-
-   ![Local Group Policy Editor dialog](./set-preview-channel-images/local-group-policy-editor.png)
-
-1. Select **Browser Executable Folder**.  The following screenshots apply to setting the **Browser Executable Folder**.  Alternatively, select **Release Channel Preference**, which uses similar dialogs.
-
-   ![Setting the Browser Executable Folder](./set-preview-channel-images/browser-executable-folder.png)
-
-1. Select the **Show** button.
-
-1. Fill-in the **Show Contents** dialog.  In the **Value name** column, enter your app's `.exe` filename or Application User Model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
-
-   ![The Show Contents dialog](./set-preview-channel-images/show-contents.png)
-
-1. Select **OK** to close the dialogs.
-
-For more information, see [Configure Microsoft Edge policy settings](/deployedge/configure-microsoft-edge).

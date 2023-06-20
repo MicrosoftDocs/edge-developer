@@ -26,10 +26,10 @@ To test your webpages for accessibility, first make a checklist of accessibility
 | Accessibility aspect to check | Feature of DevTools | Article or subheading |
 |---|---|---|
 | Verify keyboard support | **Inspect** tool > **Accessibility** section of overlay | [Use the Inspect tool to detect accessibility issues by hovering over the webpage](test-inspect-tool.md) and [Analyze HTML pages using the Inspect tool](../css/inspect.md) |
-| Verify keyboard support | **Tab**, **Shift+Tab**, and **Enter** keys | [Check for keyboard support by using the Tab and Enter keys](test-tab-enter-keys.md) |
+| Verify keyboard support | `Tab`, `Shift+Tab`, and `Enter` keys | [Check for keyboard support by using the Tab and Enter keys](test-tab-enter-keys.md) |
 | Verify keyboard support: verify that focus is indicated | **Inspect** tool, **Styles** tab, and **Sources** tool | [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md) |
 | Verify keyboard support: verify that form buttons can be used with the keyboard | **Inspect** tool, **DOM tree** in the **Elements** tool, and **Event Listeners** tab | [Analyze the lack of keyboard support in a form](test-analyze-no-keyboard-support.md) |
-| Verify keyboard support: verify **Tab** key order | **Elements** tool > **Accessibility** tab > **Source Order Viewer** | [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md) |
+| Verify keyboard support: verify `Tab` key order | **Elements** tool > **Accessibility** tab > **Source Order Viewer** | [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md) |
 
 
 <!-- ====================================================================== -->

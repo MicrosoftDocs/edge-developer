@@ -25,13 +25,13 @@ To check whether a webpage is usable by people with color blindness:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
 1. Press **Esc** to open the Drawer at the bottom of DevTools.  Click the **+** icon at the top of the Drawer to see the list of tools, and then select **Rendering**.
 
 1. In the **Emulate vision deficiencies** dropdown list, select **Protanopia**.  _Protanopia_ is reduced sensitivity to red light, making it hard to differentiate green, red, and yellow.
 
-   ![Showing the document as someone with protanopia would see it](./test-color-blindness-images/a11y-testing-simulating-protanopia.png)
+   ![Showing the document as someone with protanopia would see it.](../media/a11y-testing-simulating-protanopia.msft.png)
 
 1. In the **Rendering** tool, below **Emulate vision deficiencies**, select **No emulation** to remove the simulation.
 

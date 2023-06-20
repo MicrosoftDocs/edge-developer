@@ -29,7 +29,7 @@ The [WebView2 control](../index.md) allows developers to host web content in the
 
    *  Set `IsScriptEnabled` to `false`, if you don't expect the web content to run scripts (for example, when showing static HTML content).
 
-   *  Set `AreDefaultScriptDialogsEnabled` to `false`, if you don't expect the web content to show `alert` or `prompt` dialogs.
+   *  Set `AreDefaultScriptDialogsEnabled` to `false`, if you don't expect the web content to show `alert` or `prompt` dialog boxes.
 
 *  Update settings based on the origin of the new page:
 

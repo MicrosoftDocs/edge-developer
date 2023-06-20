@@ -181,7 +181,7 @@ else
 This example demonstrates a host app prompting the user for credentials (user name and password), and uses async code.
 
 This example builds upon the above sample, by adding the following features:
-*  Displays a dialog to prompt the user for their username and password.
+*  Displays a dialog box to prompt the user for their username and password.
 *  Calls the `GetDeferral` method on the `event` argument.
 
 <!-- ------------------------------ -->

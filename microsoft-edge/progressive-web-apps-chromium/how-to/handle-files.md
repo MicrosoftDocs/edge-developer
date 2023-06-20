@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 04/03/2023
+ms.date: 09/01/2021
 ---
 # Handle files in Progressive Web Apps
 
@@ -15,6 +15,21 @@ Progressive Web Apps that can handle files feel more native to users and better 
 Websites can already let users upload files by [using the `<input type="file">` or drag and drop](https://developer.mozilla.org/docs/Web/API/File/Using_files_from_web_applications), but PWAs go one step further and can register as file handlers on the operating system.
 
 When a PWA is registered as a file handler for certain file types, the operating system can automatically launch the app when those files are opened by the user, similar to how Microsoft Word handles `.docx` files.
+
+
+<!-- ====================================================================== -->
+## Enable the File Handling API
+
+The File Handling feature is experimental.
+
+To enable the File Handling feature:
+
+1.  Go to `edge://flags` in Microsoft Edge.
+1.  Select **Search flags** and type "file handling API".
+1.  Select **Default** > **Enabled** > **Restart**.
+
+    ![Enable the 'File Handling API' experiment.](../media/enable-file-handling-experiment.png)
+
 
 <!-- ====================================================================== -->
 ## Define which files your app handles
@@ -99,17 +114,18 @@ The `launchQueue` object queues all the launched files until a consumer is set w
 
 My Tracks is a PWA demo app that uses the File Handling feature to handle `.gpx` files. To try the feature with this demo app:
 
+*  [Enable the feature](#enable-the-file-handling-api) in Microsoft Edge.
 *  Go to [My Tracks](https://captainbrosset.github.io/mytracks/) and install the app.
 *  Download a GPX file on your computer. You can use this [test GPX file](https://www.visugpx.com/download.php?id=okB1eM4fzj).
 *  Open the downloaded GPX file.
 
 Notice that the app launches automatically and that Microsoft Edge requests your permission to handle this file.
 
-![The 'Open file?' permission request dialog](./handle-files-images/my-tracks-allow-file-handling.png)
+![The 'Open file?' permission request dialog.](../media/my-tracks-allow-file-handling.png)
 
 If you allow the app to handle the file, a new entry appears in the app's sidebar, and you can click the checkbox next to it to visualize the corresponding GPS track.
 
-![The new GPS track handled by the My Tracks app](./handle-files-images/my-tracks-new-file.png)
+![The new GPS track handled by the My Tracks app.](../media/my-tracks-new-file.png)
 
 The source code for this app can be accessed on the [My Tracks GitHub repository](https://github.com/captainbrosset/mytracks).
 

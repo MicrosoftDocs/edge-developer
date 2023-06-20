@@ -29,7 +29,7 @@ If you don't have an existing WebView2 project, clone the WebView2Samples repo i
 
 Once you've cloned the repo, build the project in Visual Studio.  It should look like the following figure.
 
-![WebView2API Sample app](./webdriver-images/sample-app.png)
+![WebView2API Sample app.](../media/webdriver/sample-app.png)
 
 
 <!-- ====================================================================== -->
@@ -51,21 +51,21 @@ By this point, you've installed the WebView2 Runtime, built a WebView2 project, 
 
 1. Start by creating a new **C# .NET Framework** project in **Visual Studio**.  Select **Next** on the bottom right-hand corner to continue.
 
-   ![Create a new project](./webdriver-images/new-project.png)
+   ![Create a new project.](../media/webdriver/new-project.png)
 
 1. Give your project a **Project name**, save it to your preferred **Location**, and then select **Create**.
 
-   ![Configure your new project](./webdriver-images/app-create.png)
+   ![Configure your new project.](../media/webdriver/app-create.png)
 
    A new project is created, with all the code placed in the `Program.cs` file.
 
-   ![New project](./webdriver-images/start-app.png)
+   ![New project.](../media/webdriver/start-app.png)
 
 1. Next, add Selenium to the project; install Selenium by using the Selenium.WebDriver NuGet package as follows.  To download the Selenium.WebDriver NuGet package, in **Visual Studio**, select **Project** > **Manage NuGet Packages**.
 
 1. Select the **Browse** tab.  The following screen appears.
 
-   ![Download NuGet package](./webdriver-images/download-nuget.png)
+   ![Download NuGet package.](../media/webdriver/download-nuget.png)
 
 1. In the **Package source** dropdown list, select **nuget.org**.
 
@@ -75,7 +75,7 @@ By this point, you've installed the WebView2 Runtime, built a WebView2 project, 
 
 1. In the detail window on the right, make sure the **Version** is set to **4.0.0** or later, and then select **Install**.  NuGet downloads Selenium to your machine.
 
-   ![Manage NuGet package](./webdriver-images/nuget.png)
+   ![Manage NuGet package.](../media/webdriver/nuget.png)
 
    To learn more about the Selenium.WebDriver NuGet package, see [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver).
 
@@ -175,7 +175,7 @@ To drive WebView2 with Selenium and Microsoft Edge WebDriver:
    }
    ```
 
-   ![Selenium running WebView2](./webdriver-images/microsoft.png)
+   ![Selenium running WebView2.](../media/webdriver/microsoft.png)
 
 Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge WebDriver, per the "launch" approach.
 
@@ -227,44 +227,7 @@ At `localhost:9222` above, the port number given on this line should match the p
 
 For more info about the `DebuggerAddress` property of the `EdgeOptions` object, see [EdgeOptions object](../../webdriver-chromium/capabilities-edge-options.md#edgeoptions-object).
 
-### For UWP apps, attach Microsoft Edge WebDriver to WebView2 with Remote Tools
-
-1. Complete the steps described in [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
-
-   This WebView2 feature is currently only supported in the Canary preview channel of Microsoft Edge.  Set the enviroment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1`, to ensure that the WebView2 version is Canary.  For more information, see [Using an environment variable](./set-preview-channel.md#using-an-environment-variable) in _Test upcoming APIs and features_.
-
-   ![Settings for UWP app](./webdriver-images/sample-uwp-settings.png)
- 
-1. After you've launched the UWP WebView2 app, go to `http://<Device Portal URL>/msedge`.  For example, the following screenshot shows `localhost:50080/msedge`:
-
-   ![Process ID of a running UWP app](./webdriver-images/sample-process-id.png)
-
-1. Note the `browserProcessId` for the WebView2 process that you want to attach Microsoft Edge WebDriver to.  For example, the above screenshot shows the `browserProcessId` as `47860`.
-
-1. In your code, use the `wdpAddress` and `wdpProcessId` properties to tell Microsoft Edge WebDriver to connect to the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/store/detail/9P6CMFV44ZLT) and the specific WebView2 process.
-   * `wdpAddress` is defined as the Device Portal URL.
-   * `wdpProcessId` is defined as the `browserProcessId` value that you noted in the previous step:
-
-   ```csharp
-   EdgeOptions eo = new EdgeOptions();
-   eo.AddAdditionalEdgeOption("wdpAddress", "localhost:50080");
-   eo.AddAdditionalEdgeOption("wdpProcessId", 47860);
-   // Optional user name and password to use when connecting to a Windows Device Portal
-   // server.  Required if the server has authentication enabled.
-   // eo.AddAdditionalEdgeOption("wdpUsername", "username");
-   // eo.AddAdditionalEdgeOption("wdpPassword", "password");
-   EdgeDriver e = new EdgeDriver(eo);
-   ```
-
-For more information about launching a WebView2 UWP app with Remote Tools, see [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
-
-Congratulations!  You've successfully attached Microsoft Edge WebDriver to a running WebView2 app.
-
-### UWP projects and debugging
-
-To configure the debug settings on launch, you must use the registry to enable debugging for all WebView2 processes on startup. Because of the way that UWP projects are launched, the WebDriver2 control is unable to automatically configure the debug settings on launch. Note that setting this registry key enables debugging support for all launched WebView2 processes while this environment variable is configured.
-
-You can override parameters by values that are specified in the WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS registry key. For information about the WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS registry key (and equivalent environment variable), see [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl?#createcorewebview2environmentwithoptions) in _Globals_. The WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS registry key (which is also an environment variable name) lets you add to the command-line arguments that will be passed to the WebView2 Runtime browser process when it is started.
+Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge WebDriver, by attaching Microsoft Edge WebDriver to a running WebView2 app.
 
 
 <!-- ====================================================================== -->

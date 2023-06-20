@@ -52,15 +52,15 @@ This article uses five demo webpages, all sourced at https://github.com/Microsof
 
 1. In the **Select profiling type** section, select the **Heap snapshot** option button.
 
-1. Click the **Take snapshot** button, and then click **Start**.  Or, press **Ctrl+E** (Windows, Linux) or **Command+E** (macOS).
+1. Click the **Take snapshot** button, and then click **Start**.  Or, press `Ctrl`+`E` (Windows, Linux) or `Cmd`+`E` (macOS).
 
-![Selecting the 'Heap snapshot' profiling type in the Memory tool](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.png)
+![Selecting the 'Heap snapshot' profiling type in the Memory tool.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png)
 
 **Snapshots** are initially stored in the renderer process memory.  Snapshots are transferred to the DevTools on demand, when you click the snapshot icon to view it.
 
 After the snapshot has been loaded into DevTools and has been parsed, the number below the snapshot title appears and shows the [total size of the reachable JavaScript objects](memory-101.md#object-sizes).
 
-![Total size of reachable objects](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.png)
+![Total size of reachable objects.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png)
 
 > [!NOTE]
 > Only reachable objects are included in snapshots.  Also, taking a snapshot always starts with a garbage collection.
@@ -71,7 +71,7 @@ After the snapshot has been loaded into DevTools and has been parsed, the number
 
 Click the **Clear all profiles** icon to remove snapshots (both from DevTools and any memory associated with the renderer process).
 
-![Remove snapshots](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.png)
+![Remove snapshots.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png)
 
 Closing the DevTools window doesn't delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
 
@@ -98,7 +98,7 @@ View snapshots from different perspectives for different tasks.
 
 To switch between views, use the selector at the top of the view.
 
-![Switch views selector](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.png)
+![Switch views selector.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png)
 
 > [!NOTE]
 > Not all properties are stored on the JavaScript heap.  Properties implemented using getters that run native code aren't captured.  Also, non-string values such as numbers aren't captured.
@@ -107,7 +107,7 @@ To switch between views, use the selector at the top of the view.
 
 Initially, a snapshot opens in the Summary view, displaying object totals, which can be expanded to show instances:
 
-![Summary view](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.png)
+![Summary view.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png)
 
 Top-level entries are "total" lines.
 
@@ -129,7 +129,7 @@ After expanding a total line in the upper view, all of the instances are display
 
 The various constructor (group) entries in the heap profiler correspond to the following types of objects.
 
-![Constructor groups](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.png)
+![Constructor groups.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png)
 
 | Constructor (group) entry | Description |
 |:--- |:--- |
@@ -165,7 +165,7 @@ To verify that a certain application operation doesn't create leaks:
 
 In the **Comparison** view, the difference between two snapshots is displayed.  When expanding a total entry, added and deleted object instances are shown.
 
-![Comparison view](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.png)
+![Comparison view.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png)
 
 <!--todo: add HeapProfilingComparison section when available  -->
 
@@ -179,7 +179,7 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 | **GC roots** | The actual GC roots used by the garbage of the VM.  GC roots are comprised of built-in object maps, symbol tables, VM thread stacks, compilation caches, handle scopes, and global handles.  |
 | **Native objects** | Browser objects "pushed" inside the JavaScript virtual machine (JavaScript VM) to allow automation, for example, DOM nodes, CSS rules.  |
 
-![Containment view](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.png)
+![Containment view.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png)
 
 <!--todo: add heap profiling containment section when available  -->
 
@@ -222,7 +222,7 @@ You may also be interested in following up the above demo with this example that
 <!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 <!--
-![Name functions to distinguish between closures](../media/memory-problems-domleaks.png)
+![Name functions to distinguish between closures.](../media/memory-problems-domleaks.msft.png)
 -->
 
 
@@ -233,7 +233,7 @@ Use filters to focus on specific parts of a heap snapshot.  You can filter by no
 
 When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.  Use the **Node Types** filter when looking at a heap snapshot, to focus on only specific types of nodes.  For example, to see only the arrays and string objects that are in the heap, select the **Array** and **String** entries in the **Node Types** filter.
 
-![Node Types in a heap snapshot in the Memory tool](heap-snapshots-images/node-types-heap-snapshot.png)
+![Node Types in a heap snapshot in the Memory tool.](heap-snapshots-images/node-types-heap-snapshot.png)
 
 
 <!-- ====================================================================== -->
@@ -254,7 +254,7 @@ Objects designated as `System` don't have a corresponding JavaScript type.  Each
 <!-- ====================================================================== -->
 ## Find a specific object
 
-To find an object in the collected heap, you can search using **Ctrl+F** and give the object ID.
+To find an object in the collected heap, you can search using `Ctrl`+`F` and give the object ID.
 
 
 <!-- ====================================================================== -->
@@ -283,7 +283,7 @@ leafRef = null;
 
 The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when `leafRef` is nullified is the WHOLE tree under `#tree` a candidate for garbage-collection (GC).
 
-![DOM subtrees](./heap-snapshots-images/memory-problems-tree-gc.png)
+![DOM subtrees.](../media/memory-problems-tree-gc.msft.png)
 
 
 ### Demo webpage: Example 6: Leaking DOM nodes
@@ -320,11 +320,11 @@ To read more about DOM leaks and memory analysis fundamentals, check out [Findin
 
 When taking a heap snapshot in the **Memory** tool, you can export all string objects from the snapshot to a JSON file.  In the **Memory** tool, in the **Constructor** section, click the **Save all to file** button next to the `(string)` entry:
 
-![Save all strings from a heap snapshot to JSON](heap-snapshots-images/save-heap-snapshot-strings-json.png)
+![Save all strings from a heap snapshot to JSON.](heap-snapshots-images/save-heap-snapshot-strings-json.png)
 
 The **Memory** tool exports a JSON file that contains all of the string objects from the heap snapshot:
 
-![Strings from the heap snapshot, in the JSON file](heap-snapshots-images/heap-snapshot-strings-json-file.png)
+![Strings from the heap snapshot, in the JSON file.](heap-snapshots-images/heap-snapshot-strings-json-file.png)
 
 
 <!-- ====================================================================== -->
@@ -332,5 +332,5 @@ The **Memory** tool exports a JSON file that contains all of the string objects 
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

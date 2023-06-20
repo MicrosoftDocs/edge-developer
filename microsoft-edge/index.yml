@@ -93,9 +93,6 @@ conceptualContent:
             - itemType: reference
               text: Set Microsoft Edge as the default browser
               url: /deployedge/edge-default-browser
-            - itemType: reference
-              text: Manage Microsoft Edge on iOS and Android with Intune
-              url: /mem/intune/apps/manage-microsoft-edge
         # Card
         - title: Manage security and privacy
           links:
@@ -158,7 +155,7 @@ conceptualContent:
               url: /microsoft-edge/devtools-guide-chromium/overview
               itemType: overview
 
-            - text: What's New in Microsoft Edge DevTools
+            - text: What's new in Microsoft Edge DevTools
               url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
               itemType: whats-new
 
@@ -305,9 +302,9 @@ conceptualContent:
               itemType: how-to-guide
               text: webhint extension for Visual Studio Code
         # Card
-        - title: Development tips for Microsoft Edge
+        - title: Web platform
           links:
-            - text: Development tips for Microsoft Edge
+            - text: Web platform overview
               url: /microsoft-edge/web-platform/web-platform  # new firstchild article
               itemType: overview
 
@@ -350,6 +347,10 @@ additionalContent:
         - summary: Get advice and answers from community experts.
           title: Community Support on Microsoft Q&A
           url: /answers/topics/ms-edge.html
+        # Card
+        - summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft helps you fix your apps and websites at no additional cost.  See offer details for eligibility requirements.
+          title: Get no-cost help using App Assure
+          url: https://fasttrack.microsoft.com/portal
         # Card
         - summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available using a variety of plans to help you get your required level of support.
           title: Microsoft Support for Business

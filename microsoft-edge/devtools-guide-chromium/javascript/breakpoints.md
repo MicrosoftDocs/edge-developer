@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/10/2022
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -41,7 +41,6 @@ The most well-known type of breakpoint is line-of-code.  But line-of-code breakp
 | [Event listener](#event-listener-breakpoints) | On the code that runs after an event, such as `click`, runs.  |
 | [Exception](#exception-breakpoints) | On the line of code that is throwing a caught or uncaught exception.  |
 | [Function](#function-breakpoints) | Whenever a specific command, function, or method is run.  |
-| [Logpoints](#logpoints) | A variant that does not "break" into the debugger but instead logs a message to the console.  |
 
 
 <!-- ====================================================================== -->
@@ -59,7 +58,7 @@ To set a line-of-code breakpoint in DevTools:
 
 1. To the left of the line of code is the line number column.  Click it.  A red icon (or more recently, a blue rectangle arrow) appears next to the line number column:
 
-   ![A line-of-code breakpoint](./breakpoints-images/javascript-sources-page-js-breakpoint-30.png)
+   ![A line-of-code breakpoint.](../media/javascript-sources-page-js-breakpoint-30.msft.png)
 
 ### Line-of-code breakpoints in your code
 
@@ -90,15 +89,15 @@ To set a conditional line-of-code breakpoint:
 
 1. Enter your condition in the dialog.
 
-1. Press **Enter** to activate the breakpoint.  A red diamond (or more recently, an orange icon) appears on top of the line number column:
+1. Press `Enter` to activate the breakpoint.  A red diamond (or more recently, an orange icon) appears on top of the line number column:
 
-   ![A conditional line-of-code breakpoint](./breakpoints-images/javascript-sources-page-js-conditional-breakpoint.png)
+   ![A conditional line-of-code breakpoint.](../media/javascript-sources-page-js-conditional-breakpoint.msft.png)
 
 ### Manage line-of-code breakpoints
 
 Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from a single location.
 
-![The Breakpoints panel](./breakpoints-images/javascript-sources-page-js-breakpoints-16-33.png)
+![The Breakpoints panel.](../media/javascript-sources-page-js-breakpoints-16-33.msft.png)
 
 *  Select the checkbox next to an entry to disable that breakpoint.
 
@@ -106,7 +105,7 @@ Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from 
 
 *  Right-click anywhere in the **Breakpoints** pane to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.
 
-![Deactivated breakpoints in the Breakpoints pane](./breakpoints-images/javascript-sources-page-js-breakpoints-deactivate-breakpoints.png)
+![Deactivated breakpoints in the Breakpoints pane.](../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -122,7 +121,7 @@ To set a DOM change breakpoint:
 
 1. Right-click the element, point to **Break on**, then select **Subtree modifications**, **Attribute modifications**, or **Node removal**.
 
-   ![The context menu for creating a DOM change breakpoint](./breakpoints-images/javascript-elements-break-on-subtree-modifications.png)
+   ![The context menu for creating a DOM change breakpoint.](../media/javascript-elements-break-on-subtree-modifications.msft.png)
 
 ### Types of DOM change breakpoints
 
@@ -153,9 +152,9 @@ To set an XHR breakpoint:
 
 1. Enter the string which you want to break on.  DevTools pauses when this string is present anywhere in an XHR request URL.
 
-1. Press **Enter** to confirm.
+1. Press `Enter` to confirm.
 
-![Create an XHR breakpoint](./breakpoints-images/javascript-sources-page-js-xhr-fetch-breakpoints-org.png)
+![Create an XHR breakpoint.](../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -169,7 +168,7 @@ Use event listener breakpoints when you want to pause on the event listener code
 
 1. Check one of these categories to pause whenever any event from that category is fired, or expand the category and check a specific event.
 
-![Create an event listener breakpoint](./breakpoints-images/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.png)
+![Create an event listener breakpoint.](../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -179,13 +178,13 @@ Use exception breakpoints when you want to pause on the line of code that is thr
 
 1. Select the **Sources** tool.
 
-1. Click **Pause on exceptions** (![Pause on exceptions](./breakpoints-images/pause-on-exceptions-icon.png)).  The icon turns blue when enabled.
+1. Click **Pause on exceptions** (![Pause on exceptions.](../media/pause-on-exceptions-icon.msft.png)).  The icon turns blue when enabled.
 
-   ![The Pause on exceptions button](./breakpoints-images/javascript-sources-page-js-pause-on-exceptions.png)
+   ![The Pause on exceptions button.](../media/javascript-sources-page-js-pause-on-exceptions.msft.png)
 
 1. **Optional:** Check the **Pause On Caught Exceptions** checkbox if you also want to pause on caught exceptions, in addition to uncaught ones.
 
-   ![Paused on an uncaught exception](./breakpoints-images/javascript-sources-page-js-paused-on-exception.png)
+   ![Paused on an uncaught exception.](../media/javascript-sources-page-js-paused-on-exception.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -232,27 +231,6 @@ When you're calling `debug()` from the DevTools Console, here's a technique to e
 
 
 <!-- ====================================================================== -->
-## Logpoints
-
-A Logpoint is a breakpoint variant that does not "break" in the debugger, but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint. 
-
-To set a logpoint:
-
-1. Select the Sources tool.
-
-1. Open the file that contains the line of code where you want to insert a logpoint.
-
-1. Right-click on the left of the line of code, in the line number column.
-
-1. Select **Add Logpoint**. A dialog is displayed underneath the line of code.
-
-1. Enter a message or a JavaScript expression that will get evaluated when the logpoint is hit.
-
-1. Press **Enter** to activate the logpoint. A red diamond (or more recently, an orange icon) appears on top of the line number column.
-
-For more information, see [Log messages in the Console tool](/microsoft-edge/devtools-guide-chromium/console/console-log).
-
-<!-- ====================================================================== -->
 ## See also
 
 *  [JavaScript debugging features](reference.md) - Using the UI of the debugger in the **Sources** tool.
@@ -265,5 +243,5 @@ For more information, see [Log messages in the Console tool](/microsoft-edge/dev
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/breakpoints/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

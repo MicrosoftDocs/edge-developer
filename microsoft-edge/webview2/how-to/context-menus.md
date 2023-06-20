@@ -649,7 +649,7 @@ The [CoreWebView2ContextMenuRequestedEventArgs](/dotnet/api/microsoft.web.webvie
    *  The internal name of the menu item.
    *  The UI label of the menu item, displayed to the user in the UI.
    *  The kind of menu item.
-   *  A keyboard shortcut Description, if any, such as **Alt+C**.
+   *  A keyboard shortcut Description, if any, such as `Alt+C`.
    *  Any other properties of the custom menu item.
 
 *  The coordinates where the context menu was requested, so your app can detect which UI item the user right-clicked.  The coordinates are defined in relation to the upper left corner of the WebView2 control.

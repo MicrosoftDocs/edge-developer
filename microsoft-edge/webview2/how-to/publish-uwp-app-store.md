@@ -44,11 +44,9 @@ The Microsoft Store requires submitting a packaged app.  Package your app as fol
 
 1. Associate the application with the reserved name, by selecting **Project** > **Publish** > **Associate App with the Store**.
 
-1. Create the app package, by selecting **Project** > **Publish** > **Create App Packages**.  Select the target configurations:
+1. Create the app package, by selecting **Project** > **Publish** > **Create App Packages**.  Select the target configurations.  Only 64-bit versions of the WebView2 Runtime will work in UWP:
 
-   ![Selecting target configurations](publish-uwp-app-store-images/package-selection.png)
-
-   32-bit and 64-bit versions of the WebView2 Runtime will work in UWP on non-ARM platforms. 32-bit is not supported for ARM, due to dependencies on Microsoft Edge.  64-Bit is supported on ARM.
+   ![Package Selection](publish-uwp-app-store-images/package-selection.png)
 
 1. Once the app package has been created for your configurations, the **Create App Packages** window displays the **Finished creating package** dialog:
 

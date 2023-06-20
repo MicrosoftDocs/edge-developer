@@ -68,6 +68,9 @@ Use webhint, a customizable linting tool, to improve the functionality of your s
 
 webhint checks your code for best practices and common errors.  Identify and fix problems in your files, including HTML, CSS, JavaScript, and TypeScript.  Hints appear as wavy underlines in the text editor, and are summarized in the **Problems** pane.
 
+<!-- todo: don't have png files in this nav page.  delete png (only used here) -->
+<!-- ![The webhint extension for Visual Studio Code.](media/webhint-extension.png) -->
+
 **Note:** As of April 2022, the webhint extension for Visual Studio Code is no longer being maintained.  See [Microsoft Edge DevTools extension for Visual Studio Code](microsoft-edge-devtools-extension.md).
 
 

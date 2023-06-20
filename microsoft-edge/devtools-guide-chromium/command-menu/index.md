@@ -24,7 +24,7 @@ ms.date: 05/04/2021
 
 The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks.  The Command Menu is similar to the [Command Palette in Visual Studio Code](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette):
 
-![Using the Command Menu to disable JavaScript](./index-images/command-menu-run-command-java.png)
+![Using the Command Menu to disable JavaScript.](../media/command-menu-run-command-java.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -32,11 +32,11 @@ The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI 
 
 To open the Command Menu:
 
-*  Click the **Customize and control DevTools** (![Customize icon](./index-images/customize-devtools-icon-light-theme.png)) menu button, and then select **Run command**:
+*  Click the **Customize and control DevTools** (![Customize icon.](../media/customize-devtools-icon-light-theme.png)) menu button, and then select **Run command**:
 
-   ![The Run Command](./index-images/command-menu-options-run-command.png)
+   ![The Run Command.](../media/command-menu-options-run-command.msft.png)
 
-   Or, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
+   Or, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
 
 
 
@@ -45,11 +45,11 @@ To open the Command Menu:
 
 The Command Menu initially opens with a `>` character prepended to its text box:
 
-![The command character](./index-images/command-menu-run-command.png)
+![The command character.](../media/command-menu-run-command.msft.png)
 
 To show other actions that are available from the Command Menu, delete the `>` character and then type **?**:
 
-![Other available actions](./index-images/command-menu-help.png)
+![Other available actions.](../media/command-menu-help.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -65,5 +65,5 @@ To show other actions that are available from the Command Menu, delete the `>` c
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/command-menu/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools & Lighthouse).
 
-[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

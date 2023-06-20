@@ -33,7 +33,7 @@ The improved experiences span three different developer tools:
 <!-- ====================================================================== -->
 ## Network
 
-![Service worker timeline in the Network tool](./index-images/sw-network-timeline.png)
+![Service worker timeline in the Network tool.](../media/sw-network-timeline.msft.png)
 
 You can access the service worker debugging features in the **Network** tool in either of the following ways:
 
@@ -55,7 +55,7 @@ To learn more about the `respondWith` fetch events, click the dropdown arrow to 
 <!-- ====================================================================== -->
 ## Application
 
-![Application view](./index-images/sw-application-timeline.png)
+![Application view.](../media/sw-application-timeline.msft.png)
 
 ### Service worker update timeline
 
@@ -79,7 +79,7 @@ See also [Application tool, to manage storage](../storage/application-tool.md).
 <!-- ====================================================================== -->
 ## Sources
 
-![The DOM tree](./index-images/sw-sources.png)
+![The DOM tree.](../media/sw-sources.msft.png)
 
 To find more stack information, set a break point in the fetch handler.  The details lead to where the resource is requested in the page script.
 

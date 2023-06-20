@@ -88,7 +88,7 @@ To return **Quick View** to the horizontal orientation, click the **Dock Quick V
 
 ![Docking Quick View to the bottom](./devtools-105-images/dock-quick-view-bottom.png)
 
-To minimize **Quick View** in either orientation, click the **Collapse Quick View** button, or press **Esc**:
+To minimize **Quick View** in either orientation, click the **Collapse Quick View** button, or press `Esc`:
 
 ![Minimizing Quick View](./devtools-105-images/focus-mode-improved-location-controls.png)
 
@@ -153,5 +153,5 @@ Microsoft Edge 105 also includes the following updates from the Chromium project
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
-<!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+<!-- [![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->

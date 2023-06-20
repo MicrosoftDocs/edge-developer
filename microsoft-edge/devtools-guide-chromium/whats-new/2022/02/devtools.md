@@ -23,7 +23,7 @@ In 2021, developer tooling for Microsoft Edge has taken a massive leap forward. 
 
 Catch up on all of this news and more in our year-in-review blog post, [Looking back at Microsoft Edge for developers in 2021](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/).
 
-[![Screenshot of the blog post: Looking back at Microsoft Edge for developers in 2021](./devtools-images/blog-post-edge-devs-2021.png)](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/)
+[![Screenshot of the blog post: Looking back at Microsoft Edge for developers in 2021.](../../media/2022/02/blog-post-edge-devs-2021.png)](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/)
 
 
 <!-- ====================================================================== -->
@@ -50,11 +50,11 @@ To turn on forced-colors emulation, in DevTools, open the **Rendering** tool, an
 
 Without forced-colors emulation turned on, the following webpage has several different colors of text against different background colors:
 
-![A webpage without forced-colors emulation turned on in the Rendering tool](./devtools-images/emulate-forced-colors-not-applied.png)
+![A webpage without forced-colors emulation turned on in the Rendering tool.](../../media/2022/02/emulate-forced-colors-not-applied.png)
 
 With forced-colors emulation turned on in the **Rendering** tool, the webpage changes to black text on a white background:
 
-![A webpage with forced-colors emulation turned on in the Rendering tool.  Text changed to black text on a white background](./devtools-images/emulate-forced-colors-applied.png)
+![A webpage with forced-colors emulation turned on in the Rendering tool.  Text changed to black text on a white background.](../../media/2022/02/emulate-forced-colors-applied.png)
 
 See also:
 * [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../../../rendering-tools/rendering-tool.md)
@@ -68,7 +68,7 @@ See also:
 
 In previous versions of Microsoft Edge, the **Event Log** tab in the **Performance** tool displays color-coded icons representing the type of activity for each event.  However, the Event Log doesn't display information about what type of activity is represented by each color.  In Microsoft Edge 98, tooltips have been added to the activity events in the **Event Log** tab, indicating **Scripting**, **Rendering**, **Painting**, **System**, and **Idle time**, for each event.
 
-![In the Event Log, the selected Activity event has a green box that represents a Painting event, and now a tooltip explicitly says "Painting"](./devtools-images/activity-event-tooltip.png)
+![In the Event Log, the selected Activity event has a green box that represents a Painting event, and now a tooltip explicitly says "Painting".](../../media/2022/02/activity-event-tooltip.png)
 
 See also:
 * [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance)
@@ -82,7 +82,7 @@ See also:
 
 In previous versions of Microsoft Edge, the shallow size in a heap snapshot in the Memory tool is commonly reported as 0%, because the shallow size is so small, relative to the total size of the heap.  In Microsoft Edge 98, shallow size is now reported as a decimal value, if the size is between 0% and 1% of the heap.
 
-![In a heap snapshot, the Shallow Size column values between 0% and 1% of the heap are now shown as decimal values with one or two decimal places](./devtools-images/shallow-size-decimal-values.png)
+![In a heap snapshot, the Shallow Size column values between 0% and 1% of the heap are now shown as decimal values with one or two decimal places.](../../media/2022/02/shallow-size-decimal-values.png)
 
 See also:
 * [Record heap snapshots](../../../memory-problems/heap-snapshots.md)
@@ -96,7 +96,7 @@ See also:
 
 In previous versions of Microsoft Edge, in the **Network** tool, the **Search** text box doesn't resize when you change the width of the pane.  When the pane is narrow, the **Refresh** and **Clear** buttons aren't displayed.  In Microsoft Edge 98, this issue has been fixed.
 
-![In the Network tool, the Search text box now resizes to display the Refresh and Clear buttons, even when the pane is narrow](./devtools-images/network-tool-search-text-box-resizes.png)
+![In the Network tool, the Search text box now resizes to display the Refresh and Clear buttons, even when the pane is narrow.](../../media/2022/02/network-tool-search-text-box-resizes.png)
 
 See also:
 * [Search network headers and responses](../../../network/index.md#search-network-headers-and-responses) in _Inspect network activity_.
@@ -108,13 +108,13 @@ See also:
 <!-- Title: Fix: Icons and tags in the DevTools are now aligned -->
 <!-- Subtitle: Icons for service workers and script tags in the Elements tool now appear as expected. -->
 
-In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse triangle icon](./devtools-images/expand-collapse-triangle-icon.png)) icons in the **Service Workers** section of the **Application** tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icons.  In Microsoft Edge 98, this issue has been fixed:
+In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse triangle icon.](../../media/2022/02/expand-collapse-triangle-icon.png)) icons in the **Service Workers** section of the **Application** tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icons.  In Microsoft Edge 98, this issue has been fixed:
 
-![The icons in the Service Workers section of the Application tool are now aligned, so the Expand/Collapse icons are now fully visible](./devtools-images/service-worker-icons-aligned-expand-icon-visible.png)
+![The icons in the Service Workers section of the Application tool are now aligned, so the Expand/Collapse icons are now fully visible.](../../media/2022/02/service-worker-icons-aligned-expand-icon-visible.png)
 
-Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon](./devtools-images/elements-dom-expand-icon-light-mode.png)) icon for `<script>` tags was misaligned.  In Microsoft Edge 98, this issue has been fixed:
+Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon.](../../media/2022/02/elements-dom-expand-icon-light-mode.png)) icon for `<script>` tags was misaligned.  In Microsoft Edge 98, this issue has been fixed:
 
-![In the Elements tool, the Expand icon for \<script\> tags is now correctly aligned](./devtools-images/elements-script-tag-expand-icons-aligned.png)
+![In the Elements tool, the Expand icon for \<script\> tags is now correctly aligned.](../../media/2022/02/elements-script-tag-expand-icons-aligned.png)
 
 See also:
 * [Service workers](../../../progressive-web-apps/index.md#service-workers) in _Debug Progressive Web Apps (PWAs)_ - debugging service workers in DevTools.
@@ -156,6 +156,6 @@ Microsoft Edge version 98 also includes the following updates from the Chromium 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 <!--
-[![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 -->

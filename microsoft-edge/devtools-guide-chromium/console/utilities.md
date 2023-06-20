@@ -85,11 +85,11 @@ $_
 
 1. To open the **Console** tool: In Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tab.
 
-1. Click in the **Console**, type the expression `2+2`, and then press **Enter**:
+1. Click in the **Console**, type the expression `2+2`, and then press `Enter`:
 
    In the following figure, a simple expression (`2+2`) is evaluated.  The `$_` property is then evaluated, which contains the same value:
 
-   ![$_ is the most recently evaluated expression](./utilities-images/console-arithmatic.png)
+   ![$_ is the most recently evaluated expression.](../media/console-arithmatic.msft.png)
 
    ```javascript
    2+2
@@ -97,7 +97,7 @@ $_
    
    The simple expression (`2+2`) is evaluated as you type, and the Console outputs the number `4`.  The `$_` property takes on the value `4`.
 
-1. Type the expression `$_`, and then press **Enter**:
+1. Type the expression `$_`, and then press `Enter`:
 
    ```javascript
    $_
@@ -105,14 +105,14 @@ $_
 
    The value of the `$_` property is the value of the previously evaluated expression; the number 4.
 
-   ![$_ represents the most recently evaluated expression, which is the number 4 from the previously entered statement](./utilities-images/console-arithmatic.png)
+   ![$_ represents the most recently evaluated expression, which is the number 4 from the previously entered statement.](../media/console-arithmatic.msft.png)
 
 
 ### Example 2
 
 1. To open the **Console** tool: In Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tab.
 
-1. Paste the following code into the **Console**, and then press **Enter**:
+1. Paste the following code into the **Console**, and then press `Enter`:
 
    ```javascript
    ["john", "paul", "george", "ringo"]
@@ -120,7 +120,7 @@ $_
    
    The evaluated expression is an array of names.
 
-1. Type the following code into the **Console**, and then press **Enter**:
+1. Type the following code into the **Console**, and then press `Enter`:
 
    ```javascript
    $_
@@ -129,7 +129,7 @@ $_
    `$_` represents the previously evaluated expression, which is an array of names.
 
    
-1. Type the following code into the **Console**, and then press **Enter**:
+1. Type the following code into the **Console**, and then press `Enter`:
 
    ```javascript
    $_.length
@@ -137,7 +137,7 @@ $_
 
    The expression `$_.length` is evaluated to find the length of the array, which is the number 4.  `$_` now takes on the value 4, instead of an array of names.
    
-1. Type the following code into the **Console**, and then press **Enter**:
+1. Type the following code into the **Console**, and then press `Enter`:
 
    ```javascript
    $_
@@ -146,9 +146,9 @@ $_
    `$_` represents the previously evaluated expression, which is now the number 4.
 
 
-   ![The value of $_ changes to the value of the previously evaluated expression](./utilities-images/console-array-length.png)
+   ![The value of $_ changes to the value of the previously evaluated expression.](../media/console-array-length.msft.png)
 
-![$_ changes when new commands are evaluated](./utilities-images/console-array-length.png)
+![$_ changes when new commands are evaluated.](../media/console-array-length.msft.png)
 
 <br/><br/>
 
@@ -175,11 +175,11 @@ $0
 
 In the following figure, an `img` element is selected in the **Elements** tool.  In the **Console** drawer, `$0` has been evaluated and displays the same element:
 
-![The $0 command](./utilities-images/console-image-highlighted-$0.png)
+![The $0 command.](../media/console-image-highlighted-$0.msft.png)
 
 The following image shows a different element selected in the same webpage.  The `$0` now refers to the newly selected element, while `$1` returns the previously selected element:
 
-![The $1 command](./utilities-images/console-image-highlighted-$1.png)
+![The $1 command.](../media/console-image-highlighted-$1.msft.png)
 
 <br/><br/>
 
@@ -206,7 +206,7 @@ $(selector, [startNode])
 
 In the following figure, `$('img')` returns a reference to the first `<img>` element in the webpage:
 
-![$('img') returns a reference to the first <img> element in the webpage](./utilities-images/console-element-selector-image.png)
+![$('img') returns a reference to the first <img> element in the webpage.](../media/console-element-selector-image.msft.png)
 
 Right-click the returned result and then select **Reveal in Elements Panel** to find it in the DOM, or **Scroll in to View** to show it on the page.
 
@@ -220,7 +220,7 @@ $('img').src
 
 Result:
 
-![The result of $('img').src](./utilities-images/console-element-selector-image-source.png)
+![The result of $('img').src.](../media/console-element-selector-image-source.msft.png)
 
 This function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
 
@@ -232,7 +232,7 @@ $('img', document.querySelector('title--image')).src
 
 Result: the first `img` element after the `title--image` element is found, and the `src` property of the `img` element is returned:
 
-![The result of $('img', document.querySelector('title--image')).src](./utilities-images/console-element-selector-image-filter-source.png)
+![The result of $('img', document.querySelector('title--image')).src.](../media/console-element-selector-image-filter-source.msft.png)
 
 > [!NOTE]
 > If you are using a library such as jQuery that uses `$`, the functionality is overwritten, and `$` corresponds to the implementation from that library.
@@ -271,7 +271,7 @@ for (each in images) {
 
 Result:
 
-![Using $$() to select all images in the webpage and display the sources](./utilities-images/console-element-selector-image-all.png)
+![Using $$() to select all images in the webpage and display the sources.](../media/console-element-selector-image-all.msft.png)
 
 This query selector function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
 
@@ -288,12 +288,10 @@ for (each in images) {
 
 Here's the result.  `$$()` selects all images that appear after the specified `<div>` element in the webpage, and displays the sources:
 
-![Using $$() to select all images that appear after the specified <div> element in the webpage and display the sources](./utilities-images/console-element-selector-image-filter-all.png)
+![Using $$() to select all images that appear after the specified <div> element in the webpage and display the sources.](../media/console-element-selector-image-filter-all.msft.png)
 
-
-###### Entering a newline character 
-
-In the **Console**, to start a new line without running the script, press **Shift+Enter**.
+> [!NOTE]
+> Press `Shift`+`Enter` in the **Console** to start a new line without running the script.
 
 <br/><br/>
 
@@ -325,7 +323,7 @@ $x("//p")
 
 Result:
 
-![Using an XPath selector](./utilities-images/console-array-xpath.png)
+![Using an XPath selector.](../media/console-array-xpath.msft.png)
 
 ### Example
 
@@ -337,11 +335,11 @@ $x("//p[a]")
 
 Result:
 
-![Using a more complicated XPath selector](./utilities-images/console-array-xpath-sub-element.png)
+![Using a more complicated XPath selector.](../media/console-array-xpath-sub-element.msft.png)
 
 Similar to the other selector commands, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or node from which to search for elements:
 
-![Using an XPath selector with startNode](./utilities-images/console-array-xpath-startnode.png)
+![Using an XPath selector with startNode.](../media/console-array-xpath-startnode.msft.png)
 
 <br/><br/>
 
@@ -425,7 +423,7 @@ debug("debug");
 
 Result:
 
-![Breaking inside a function with debug()](./utilities-images/console-debug-text.png)
+![Breaking inside a function with debug().](../media/console-debug-text.msft.png)
 
 Use `undebug(function)` to stop breaking on the function, or use the UI to turn off all breakpoints.
 
@@ -464,7 +462,7 @@ dir(document.head);
 
 Result:
 
-![Logging 'document.head' with the 'dir()' function](./utilities-images/console-dir-document-head-expanded.png)
+![Logging 'document.head' with the 'dir()' function.](../media/console-dir-document-head-expanded.msft.png)
 
 For more information, see [console.dir()](api.md#dir) in the Console API.
 
@@ -519,7 +517,7 @@ inspect(document.body);
 
 Result:
 
-![Inspecting an element with inspect()](./utilities-images/console-inspect-document-body.png)
+![Inspecting an element with inspect().](../media/console-inspect-document-body.msft.png)
 
 When passing a function to inspect, the function opens the webpage in the **Sources** tool for you to inspect.
 
@@ -553,15 +551,15 @@ getEventListeners(document);
 
 Result:
 
-![Output of using getEventListeners(document)](./utilities-images/console-elements-event-listeners-console-get-event-listeners-document.png)
+![Output of using getEventListeners(document).](../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png)
 
 If more than one listener is registered on the specified object, then the array contains a member for each listener.  In the following figure, two event listeners are registered on the `document` element for the `click` event:
 
-![Multiple event listeners registered on the 'document' element for the 'click' event](./utilities-images/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.png)
+![Multiple event listeners registered on the 'document' element for the 'click' event.](../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png)
 
 You can further expand each of the following objects to explore their properties.  Here's an expanded view of the listener object:
 
-![Expanded view of listener object](./utilities-images/console-elements-event-listeners-console-get-event-listeners-document-2.png)
+![Expanded view of listener object.](../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png)
 
 <br/><br/>
 
@@ -601,7 +599,7 @@ values(player1)
 
 Result:
 
-![The keys() and values() commands](./utilities-images/console-keys-values.png)
+![The keys() and values() commands.](../media/console-keys-values.msft.png)
 
 <br/><br/>
 
@@ -633,7 +631,7 @@ monitor(sum);
 
 Result:
 
-![Result of the monitor() function](./utilities-images/console-function-monitor-sum.png)
+![Result of the monitor() function.](../media/console-function-monitor-sum.msft.png)
 
 To end monitoring, use `unmonitor(function)`.
 
@@ -667,7 +665,7 @@ monitorEvents(window, "resize");
 
 Result:
 
-![Monitoring window resize events](./utilities-images/console-monitor-events-resize-window.png)
+![Monitoring window resize events.](../media/console-monitor-events-resize-window.msft.png)
 
 ### Example
 
@@ -698,7 +696,7 @@ monitorEvents($0, "key");
 
 Here's the sample output after typing a character in the text field:
 
-![Monitoring key events](./utilities-images/console-monitor-events-type-t-y.png)
+![Monitoring key events.](../media/console-monitor-events-type-t-y.msft.png)
 
 <br/><br/>
 
@@ -741,7 +739,7 @@ profileEnd('B');
 
 The result is the same, regardless of the order.  The result appears as a Heap Snapshot in the **Memory** tool, with grouped profiles:
 
-![Grouped profiles](./utilities-images/console-memory-multiple-cpu-profiles.png)
+![Grouped profiles.](../media/console-memory-multiple-cpu-profiles.msft.png)
 
 > [!NOTE]
 > Multiple CPU profiles can operate at the same time, and you aren't required to close-out each profile in creation order.
@@ -846,7 +844,7 @@ table(names);
 
 Result:
 
-![The result of the table() function](./utilities-images/console-table-display.png)
+![The result of the table() function.](../media/console-table-display.msft.png)
 
 <br/><br/>
 
@@ -975,5 +973,5 @@ values(object);
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/console/utilities/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

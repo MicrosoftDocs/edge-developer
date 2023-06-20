@@ -22,7 +22,7 @@ Starting **June 15, 2022**, Internet Explorer 11 will no longer be supported on 
 
 To begin automating tests in IE mode in Microsoft Edge, [download IEDriver](https://www.selenium.dev/downloads/).  Make sure that the version of IEDriver that you download is `4.0.0.0` or greater.
 
-![The IEDriver section of the Downloads page for Selenium](./ie-mode-images/iedriver-install.png)
+![The IEDriver section of the Downloads page for Selenium.](media/iedriver-install.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -272,10 +272,10 @@ This section covers known scenarios that previously worked with IEDriver and the
 
 ### Opening new windows
 
-If your test code creates a new browser window using one of the following methods, you may need to add a short wait operation afterwards to ensure that IEDriver has detected the new window:
+If your test code creates a new browser window using one of these methods, you may need to add a short wait operation afterwards to ensure that IEDriver has detected the new window:
 
-- Opening a new window by calling [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) from `<script>` in the page.
-- Opening a new window by using the WebDriver [New Window](https://w3c.github.io/webdriver/#new-window) command.
+- Opening a new window with [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) executed in page script.
+- Opening a new window with the WebDriver [New Window](https://w3c.github.io/webdriver/#new-window) command.
 
 To ensure the new window has been created successfully and IEDriver has detected it, you must continuously check the result of the [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles) command until it contains a handle to the new window.
 

@@ -19,7 +19,7 @@ Users want to see dates, times, numbers, and other formatting printed according 
 
 To reflect a user's regional preferences for how data is displayed (such as the date), Microsoft Edge has a new option in the **Language** section of **Settings**: the **Share additional OS regional format** menu.
 
-![The 'Share additional OS regional format' menu with the Limited (default) option selected](./os-regional-settings-images/os-regional-setting.png)
+![The 'Share additional OS regional format' menu with the Limited (default) option selected](media/os-regional-setting.png)
 
 Granting access to this setting allows websites to have visibility into more user's specific regional preferences than was previously possible.  Users that change their OS regional preferences may now see their preferences reflected automatically in more websites.
 
@@ -37,7 +37,7 @@ A regional code is a two-letter language code followed by a hyphen and a two-let
 
 To set the user's language preferences, Microsoft Edge gets the default values from the OS when it is first installed. The user can then change the language preferences in `edge://settings/languages` and sort them in priority order.
 
-![The 'Preferred languages' section of the Settings > Languages page](./os-regional-settings-images/preferred-languages.png)
+![The 'Preferred languages' section of the Settings > Languages page](media/preferred-languages.png)
 
 The UI, HTTP header, and API interact as follows:
 
@@ -82,13 +82,13 @@ Users can disable the sharing of OS regional information by selecting **Never**.
 <!-- ====================================================================== -->
 ## Policy Controls
 
-A related new policy in Microsoft Edge, [DefaultShareAdditionalOSRegionSetting](/DeployEdge/microsoft-edge-policies#defaultshareadditionalosregionsetting), provides a setting for corporate or enterprise-level default configurations.  This setting accepts an integer with the following potential values:
+A related new policy in Microsoft Edge, **ShareOSRegionThroughJavaScriptLocale**, provides a setting for corporate or enterprise-level default configurations.  This setting accepts an integer with the following potential values:
 
 |Number| Description |
 |--------|-------------------------|
-| 0 | Limited |
-| 1 | Always |
-| 2 | Never |
+| 1 | Limited |
+| 2 | Always |
+| 3 | Never |
 
 In addition, an older policy, [ApplicationLocaleValue](/DeployEdge/microsoft-edge-policies#applicationlocalevalue), sets the Microsoft Edge locale and locks it to prevent users from changing it.
 
