@@ -36,7 +36,7 @@ The **Weekly users** metric tracks the number of users that have your extension 
 
 The following screenshot shows the **Weekly users** from the date the extension was published until the day the report was run on February 18.
 
-![Weekly users from the date the extension was published until February 18](../media/extensions-analytics-weekly-users.png)
+![Weekly users from the date the extension was published until February 18](./extensions-analytics-images/extensions-analytics-weekly-users.png)
 
 
 <!-- ------------------------------ -->
@@ -47,7 +47,7 @@ The **Enabled vs Disabled** report shows the number of instances of the extensio
 The following screenshot shows the **Weekly users** who have enabled and disabled the extension over the same period. You can choose from **Select all** / **Unselect all**, **Disabled**, and **Enabled** views.
 
 > [!div class="mx-imgBorder"]
-> ![Weekly users who have enabled and disabled the extension over the selected time period](../media/extensions-analytics-enabled-disabled.png)
+> ![Weekly users who have enabled and disabled the extension over the selected time period](./extensions-analytics-images/extensions-analytics-enabled-disabled.png)
 
 
 <!-- ------------------------------ -->
@@ -57,7 +57,7 @@ The **Installs** metric displays the total number of successful installs of your
 
 The following screenshot shows daily successful installations for the last month.
 
-![Installs for your extension over the last month](../media/extensions-analytics-weekly-users-installs.png)
+![Installs for your extension over the last month](./extensions-analytics-images/extensions-analytics-weekly-users-installs.png)
 
 
 <!-- ------------------------------ -->
@@ -67,7 +67,7 @@ The **Impressions** metric captures the total number of page views and user visi
 
 The following screenshot shows **Impressions** for an extension page over a three month period.
 
-![Impressions for your extension over the past 3 months](../media/extensions-analytics-weekly-users-impressions.png)
+![Impressions for your extension over the past 3 months](./extensions-analytics-images/extensions-analytics-weekly-users-impressions.png)
 
 
 
@@ -84,7 +84,7 @@ The Region filter covers the geographical distribution of users for your extensi
 
 The following screenshot shows total user visits.
 
-![Geographic distribution by Region for your extension](../media/extensions-analytics-filter-region.png)
+![Geographic distribution by Region for your extension](./extensions-analytics-images/extensions-analytics-filter-region.png)
 
 
 <!-- ------------------------------ -->
@@ -95,7 +95,7 @@ The OS (operating system) filter highlights the OS usage distribution of all the
 The following screenshot shows Weekly Users by Operating System over 30 days.
 
 > [!div class="mx-imgBorder"]
-> ![Operation System usage distribution for your extension](../media/extension-analytics-weekly-users-filter-os-30-days.png)
+> ![Operation System usage distribution for your extension](./extensions-analytics-images/extension-analytics-weekly-users-filter-os-30-days.png)
 
 
 <!-- ------------------------------ -->
@@ -106,7 +106,7 @@ The Language filter shows the language distribution for users of your extension.
 The following screenshot shows Installs per Language over a six month period.
 
 > [!div class="mx-imgBorder"]
-> ![Language distribution for your extension](../media/extension-analytics-installs-filter-language-6-months.png)
+> ![Language distribution for your extension](./extensions-analytics-images/extension-analytics-installs-filter-language-6-months.png)
 
 The Analytics Dashboard helps you better understand and engage with your extension users. For information about other 
 features launched on Partner Center, see [Released features for Microsoft Edge Add-ons - Microsoft Edge Development | Microsoft Docs](/microsoft-edge/extensions-chromium/whats-new/released-features).

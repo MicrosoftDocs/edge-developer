@@ -26,7 +26,7 @@ To try this feature:
 1. [Publish your source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md).
 1. Open DevTools > **Settings** > **Symbol Server** and connect DevTools to Azure Artifacts Symbol Server, by entering your Azure DevOps organization and personal access token.
 
-![The 'Symbol Server' page in DevTools Settings, where you enter your Azure DevOps personal access token](../../media/2022/03/ado-pat-devtools.png)
+![The 'Symbol Server' page in DevTools Settings, where you enter your Azure DevOps personal access token](./devtools-images/ado-pat-devtools.png)
 
 See also:
 *  [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md)
@@ -46,19 +46,19 @@ To try this feature:
 1. Make sure Visual Studio 2022 and the ASP.NET workload are installed.
 1. Set up Web Live Preview as the default Web Forms Designer, as described at [Microsoft Edge Developer Tools for Visual Studio](https://aka.ms/edgetools-for-vs).
 1. In an ASP.NET project, open a webpage of the project in the **Design** window.
-1. In the upper left of the **Design** window, click the **Open Edge DevTools** (![Open Edge DevTools icon](../../media/2022/03/open-edge-dev-tools-v-s-icon.png)) button:
+1. In the upper left of the **Design** window, click the **Open Edge DevTools** (![Open Edge DevTools icon](./devtools-images/open-edge-dev-tools-v-s-icon.png)) button:
 
-![An ASP.NET project, opening Edge DevTools](../../media/2022/03/devtools-extension-v-s-web-forms-designer.png)
+![An ASP.NET project, opening Edge DevTools](./devtools-images/devtools-extension-v-s-web-forms-designer.png)
 
 Edge DevTools for Visual Studio opens, with the **Elements** tool selected:
 
-![Microsoft Edge Developer Tools for Visual Studio: Elements tool of DevTools](../../media/2022/03/devtools-extension-visual-studio-elements.png)
+![Microsoft Edge Developer Tools for Visual Studio: Elements tool of DevTools](./devtools-images/devtools-extension-visual-studio-elements.png)
 
 The **Network** tool is also available by default:
 
-![Microsoft Edge Developer Tools for Visual Studio: Network tool of DevTools](../../media/2022/03/devtools-extension-visual-studio-network.png)
+![Microsoft Edge Developer Tools for Visual Studio: Network tool of DevTools](./devtools-images/devtools-extension-visual-studio-network.png)
 
-The **Inspect tool** (![Inspect tool icon](../../media/2022/03/v-s-edge-devtools-inspect-tool-icon.png)) and **Toggle screencast** (![Toggle screencast icon](../../media/2022/03/v-s-edge-devtools-toggle-screencast-icon.png)) are available, and the **More Tools** (![More Tools icon](../../media/2022/03/more-tools-v-s-icon.png)) menu offers the [Issues](../../../issues/index.md), [Network conditions](../../../network-conditions/network-conditions-tool.md), and [Network request blocking](../../../network-request-blocking/network-request-blocking-tool.md) tools.
+The **Inspect tool** (![Inspect tool icon](./devtools-images/v-s-edge-devtools-inspect-tool-icon.png)) and **Toggle screencast** (![Toggle screencast icon](./devtools-images/v-s-edge-devtools-toggle-screencast-icon.png)) are available, and the **More Tools** (![More Tools icon](./devtools-images/more-tools-v-s-icon.png)) menu offers the [Issues](../../../issues/index.md), [Network conditions](../../../network-conditions/network-conditions-tool.md), and [Network request blocking](../../../network-request-blocking/network-request-blocking-tool.md) tools.
 
 See also:
 
@@ -76,7 +76,7 @@ Since [Microsoft Edge 88](../../2020/11/devtools.md#composited-layers-are-now-in
 
 Update: the **Layers** tool has now been removed.
 
-![The Layers tool now links to the 3D View tool](../../media/2022/03/layers-3d-view-tool.png)
+![The Layers tool now links to the 3D View tool](./devtools-images/layers-3d-view-tool.png)
 <!-- work item > layersmove.gif -->
 
 See also:
@@ -98,18 +98,18 @@ Recording a performance profile in the Performance tool produces a minified flam
 
 Starting in Microsoft Edge version 99, you can display your original function names in a performance profile, as follows:
 1. Record a profile, in the **Performance** tool.
-1. Click the new **Unminify** (![The Unminify icon](../../media/2022/03/unminify-icon.png)) button to create and download the unminified performance profile.
-1. Load (import) (![The Load profile icon](../../media/2022/03/load-profile-icon.png)) the unminified performance profile into the **Performance** tool.
+1. Click the new **Unminify** (![The Unminify icon](./devtools-images/unminify-icon.png)) button to create and download the unminified performance profile.
+1. Load (import) (![The Load profile icon](./devtools-images/load-profile-icon.png)) the unminified performance profile into the **Performance** tool.
 
 The **Unminify** button will use source maps, provided that they are hosted side-by-side with your production code, to unminify function names in the flame chart in the **Performance** tool.
 
 The flame chart in the **Performance** tool initially shows function names as **b**, **O**, **Xt**, and **bn**, taken from the minified production code returned by the web server:
 
-![Minified function names in the flame chart in the Performance tool](../../media/2022/03/minified-call-stack-performance-tool.png)
+![Minified function names in the flame chart in the Performance tool](./devtools-images/minified-call-stack-performance-tool.png)
 
-After clicking **Unminify** (![Unminify icon](../../media/2022/03/unminify-icon.png)) and then **Load profile** (![Load profile icon](../../media/2022/03/load-profile-icon.png)), the flame chart in the **Performance** tool now shows those functions labeled with meaningful names: **invokeFunc (b)**, **executeAction (O)**, **endBatch (Xt)**, and **runReactions (bn)**, retrieved from your source maps:
+After clicking **Unminify** (![Unminify icon](./devtools-images/unminify-icon.png)) and then **Load profile** (![Load profile icon](./devtools-images/load-profile-icon.png)), the flame chart in the **Performance** tool now shows those functions labeled with meaningful names: **invokeFunc (b)**, **executeAction (O)**, **endBatch (Xt)**, and **runReactions (bn)**, retrieved from your source maps:
 
-![Unminified function names in the flame chart in the Performance tool](../../media/2022/03/unminified-call-stack-performance-tool.png)
+![Unminified function names in the flame chart in the Performance tool](./devtools-images/unminified-call-stack-performance-tool.png)
 
 See also:
 * [Unminifying function names in DevTools performance profiles](https://blogs.windows.com/msedgedev/2022/02/03/unminifying-function-names-in-devtools-performance-profiles/) at the Microsoft Edge Blog.
@@ -124,11 +124,11 @@ See also:
 
 In previous versions of Microsoft Edge, assistive technology announced incorrect information when providing a custom bearer token in the Network Console tool.  In Microsoft Edge version 99, this issue has been fixed.  When selecting the text box for providing a custom bearer token, assistive technology now announces "Token edit text Request View group".
 
-![The Network Console tool](../../media/2022/03/network-console-tool.png)
+![The Network Console tool](./devtools-images/network-console-tool.png)
 
 In previous versions of Microsoft Edge, assistive technology would only announce the radio button text in the 3D View tool, without announcing the group name that the button belongs to.  In Microsoft Edge version 99, this has been fixed.  For example, when focus is on the **Use screen texture** radio button, assistive technology will now announce: "Color type radio group, Use screen texture, radio button, selected".
 
-![The 3D View tool](../../media/2022/03/3d-view-tool.png)
+![The 3D View tool](./devtools-images/3d-view-tool.png)
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
@@ -139,7 +139,7 @@ See also:
 
 In the **Page** tab of the **Sources** tool, the tree of source folders is now improved, with less clutter in the naming and outline of folders.  Unneeded path prefixes such as `../` and `./` have been removed.  The tree structure has been simplified by merging equivalent duplicate folders.
 
-![Cleaner folder outline in the Page tab of the Sources tool](../../media/2022/03/folders-page-tab-sources-tool.png)
+![Cleaner folder outline in the Page tab of the Sources tool](./devtools-images/folders-page-tab-sources-tool.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1284737](https://crbug.com/1284737).
 

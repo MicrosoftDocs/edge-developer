@@ -23,7 +23,7 @@ To check whether a webpage is usable with blurred vision:
 
 1. In the **Emulate vision deficiencies** dropdown list, select **Blurred vision**.
 
-   ![Simulating a blurred page](../media/a11y-testing-simulating-blur.msft.png)
+   ![Simulating a blurred page](./test-blurred-vision-images/a11y-testing-simulating-blur.png)
 
     Notice that the `text-shadow` CSS property makes the text of the menu items difficult to read on the upper menu. For example, see the **Home**, **Adopt a Pet**, and other menu items.
 

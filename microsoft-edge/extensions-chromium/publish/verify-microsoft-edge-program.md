@@ -113,7 +113,7 @@ Use the following steps to appeal a rejected application:
 
 The amount of time required to review an appeal varies. You can return to **[Account Settings | Legal Info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)** to check verification status at any time. Verification status is **Pending** during the review.
 
-![Account Settings | Legal Info](media/account-settings-legal-info-microsoft-edge-partner-center.png)
+![Account Settings | Legal Info](./verify-microsoft-edge-program-images/account-settings-legal-info-microsoft-edge-partner-center.png)
 
 
 > [!NOTE]

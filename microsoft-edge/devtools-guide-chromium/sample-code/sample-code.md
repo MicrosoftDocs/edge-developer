@@ -82,7 +82,7 @@ This Animal Shelter demo webpage is useful for exploring various DevTools featur
 
    <!-- Or, press **F12**, **Ctrl+Shift+I** (on Windows/Linux), or **Command+Option+I** (on macOS). -->
 
-![The 'Demo webpage with accessibility issues'](../media/demo-page-with-accessibility-issues.png)
+![The 'Demo webpage with accessibility issues'](./sample-code-images/demo-page-with-accessibility-issues.png)
 
 
 #### Articles
@@ -122,7 +122,7 @@ This demo webpage is useful for exploring the **Sources** tool, especially the J
 
    <!-- Or, press **F12**, **Ctrl+Shift+I** (on Windows/Linux), or **Command+Option+I** (on macOS). -->
 
-![The 'Get started Debugging JavaScript with DevTools' demo webpage](../media/using-debug-js-demo-page.png)
+![The 'Get started Debugging JavaScript with DevTools' demo webpage](./sample-code-images/using-debug-js-demo-page.png)
 
 
 #### Articles
@@ -229,9 +229,9 @@ After downloading or cloning the Demos repo:
 
 1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./sample-code-images/more-tabs-icon-light-theme.png)) button.
 
-1. In the **Sources** tab, on the left, select the **Filesystem** tab, which is grouped with the **Page** tab.  If the **Filesystem** tab isn't displayed, click the **More tabs** (![More tabs button](../media/more-tabs-icon-light-theme.png)) button.
+1. In the **Sources** tab, on the left, select the **Filesystem** tab, which is grouped with the **Page** tab.  If the **Filesystem** tab isn't displayed, click the **More tabs** (![More tabs button](./sample-code-images/more-tabs-icon-light-theme.png)) button.
 
 1. Click **+ Add folder to workspace**.  A folder selection dialog opens.
 
@@ -264,13 +264,13 @@ To open an `.html` file and edit it:
 
 1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![The More tabs icon](../media/more-tabs-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![The More tabs icon](./sample-code-images/more-tabs-icon-light-theme.png)) button.
 
 1. In DevTools, on the left, select the **Page** tab, and then select the HTML file, such as `index.html` or **(index)**.
 
 1. Press **Esc** to open the **Drawer** at the bottom of DevTools.
 
-1. In the Drawer, click the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button, and then select the **Changes** tool.
+1. In the Drawer, click the **More Tools** (![More Tools icon](./sample-code-images/more-tools-icon-light-theme.png)) button, and then select the **Changes** tool.
 
 1. In the middle, editor pane of the **Sources** tool, edit the `.html` file.  For example, in `demo-to-do/index.html` folder, in the `<h1>` heading line, change **My tasks** to **My modified tasks**:
 

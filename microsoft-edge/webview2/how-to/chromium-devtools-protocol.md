@@ -81,7 +81,7 @@ To create an `HTML file` to find your geolocation, complete following the action
 
 1. To display your latitude and longitude coordinates, click the **Display Location** button.  To verify and compare your geolocation, copy and paste your coordinates in [https://www.bing.com/maps](https://www.bing.com/maps).
 
-   ![Displaying the user's geolocation coordinates in Microsoft Edge](./media/geolocater-browser.png)
+   ![Displaying the user's geolocation coordinates in Microsoft Edge](./chromium-devtools-protocol-images/geolocater-browser.png)
 
 
 <!-- ====================================================================== -->
@@ -101,7 +101,7 @@ To create an `HTML file` to find your geolocation, complete following the action
 
 1. Make sure the `geolocation.html` file is displayed in your WebView2 control app:
 
-   ![The geolocation.html file, displayed in your WebView2 control app](./media/initial-geolocate.png)
+   ![The geolocation.html file, displayed in your WebView2 control app](./chromium-devtools-protocol-images/initial-geolocate.png)
 
 
 <!-- ====================================================================== -->
@@ -117,7 +117,7 @@ To install the package:
 
 1. Make sure **Microsoft.Web.WebView2.DevToolsProtocolExtension** is displayed in the Visual Studio NuGet Package Manager:
 
-   ![Making sure Microsoft.Web.WebView2.DevToolsProtocolExtension is displayed in the Visual Studio NuGet Package Manager](./media/cdp-nuget.png)
+   ![Making sure Microsoft.Web.WebView2.DevToolsProtocolExtension is displayed in the Visual Studio NuGet Package Manager](./chromium-devtools-protocol-images/cdp-nuget.png)
 
 
 <!-- ====================================================================== -->
@@ -164,7 +164,7 @@ To install the package:
 
 1. To display the coordinates of Paris, France, click the **Display Location** button:
 
-   ![Display the .html file in a WebView2 control with the coordinates for Paris](./media/final-location-cdp.png)
+   ![Display the .html file in a WebView2 control with the coordinates for Paris](./chromium-devtools-protocol-images/final-location-cdp.png)
 
 
 <!-- ====================================================================== -->

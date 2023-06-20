@@ -32,7 +32,7 @@ The following figure shows the DevTools homepage on the left and some Snippet so
 
 The webpage before running the Snippet:
 
-![The webpage before running the Snippet](../media/javascript-sources-snippets-split-screen.msft.png)
+![The webpage before running the Snippet](./snippets-images/javascript-sources-snippets-split-screen.png)
 
 The Snippet source code from the webpage before running the Snippet:
 
@@ -46,7 +46,7 @@ document.body.appendChild(p);
 
 In the following figure, the webpage appears after running the Snippet.  The **Console Drawer** pops up to display the **Hello, Snippets!** message that the Snippet logs, and the content of the webpage changes completely:
 
-![The webpage after running the Snippet](../media/javascript-sources-snippets-split-screen-after.msft.png)
+![The webpage after running the Snippet](./snippets-images/javascript-sources-snippets-split-screen-after.png)
 
 
 <!-- ====================================================================== -->
@@ -54,15 +54,15 @@ In the following figure, the webpage appears after running the Snippet.  The **C
 
 The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets.  When you want to edit a Snippet, you need to open it from the **Snippets** tab:
 
-![The Snippets tab](../media/javascript-sources-snippets-pane.msft.png)
+![The Snippets tab](./snippets-images/javascript-sources-snippets-pane.png)
 
 ### Open the Snippets tab with a mouse
 
 1. Select the **Sources** tab.  The **Sources** tool appears:
 
-   ![The Sources tool with the Page tab open on the left](../media/javascript-sources-page-pane.msft.png)
+   ![The Sources tool with the Page tab open on the left](./snippets-images/javascript-sources-page-pane.png)
 
-1. In the **Navigator** pane (on the left), select the **Snippets** tab.  To access the **Snippets** option, you might need to click the **More tabs** (![More tabs](../media/more-tabs-icon.msft.png)) button.
+1. In the **Navigator** pane (on the left), select the **Snippets** tab.  To access the **Snippets** option, you might need to click the **More tabs** (![More tabs](./snippets-images/more-tabs-icon.png)) button.
 
 ### Open the Snippets tab with the Command Menu
 
@@ -72,7 +72,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 1. Type **Snippets**, select **Show Snippets**, and then press **Enter** to run the command:
 
-   ![The Show Snippets command](../media/javascript-search-show-snippets.msft.png)
+   ![The Show Snippets command](./snippets-images/javascript-search-show-snippets.png)
 
 
 <!-- ====================================================================== -->
@@ -86,7 +86,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 1. Enter a name for your Snippet, and then press **Enter**:
 
-   ![Name a Snippet](../media/javascript-sources-snippets-naming.msft.png)
+   ![Name a Snippet](./snippets-images/javascript-sources-snippets-naming.png)
 
 ### Create a Snippet through the Command Menu
 
@@ -96,7 +96,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 1. Start typing **snippet**, select **Create new snippet**, and then press **Enter**:
 
-   ![The command for creating a new Snippet](../media/javascript-search-create-new-snippet.msft.png)
+   ![The command for creating a new Snippet](./snippets-images/javascript-search-create-new-snippet.png)
 
 To rename your new Snippet with a custom name, see [Rename Snippets](#rename-snippets).
 
@@ -108,13 +108,13 @@ To rename your new Snippet with a custom name, see [Rename Snippets](#rename-sni
 
 1. In the **Snippets** tab, select the name of the Snippet that you want to edit.  The Snippet opens in the **Code Editor**:
 
-   ![The Code Editor](../media/javascript-sources-snippets-editor-saved.msft.png)
+   ![The Code Editor](./snippets-images/javascript-sources-snippets-editor-saved.png)
 
 1. Use the **Code Editor** to add JavaScript to your Snippet.
 
 1. When an asterisk appears next to the name of your Snippet, it means you have unsaved code.  Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save:
 
-   ![An asterisk next to the Snippet name indicates unsaved code](../media/javascript-sources-snippets-editor-unsaved.msft.png)
+   ![An asterisk next to the Snippet name indicates unsaved code](./snippets-images/javascript-sources-snippets-editor-unsaved.png)
 
 
 <!-- ====================================================================== -->
@@ -126,7 +126,7 @@ To rename your new Snippet with a custom name, see [Rename Snippets](#rename-sni
 
 1. Click the name of the Snippet that you want to run.  The Snippet opens in the **Code Editor**:
 
-1. Click **Run snippet** (![Run Snippet](../media/run-snippet-icon.msft.png)).
+1. Click **Run snippet** (![Run Snippet](./snippets-images/run-snippet-icon.png)).
 
 ### Run a Snippet with the Command Menu
 
@@ -136,7 +136,7 @@ To rename your new Snippet with a custom name, see [Rename Snippets](#rename-sni
 
 1. Delete the **>** character and type the **!** character followed by the name of the Snippet that you want to run:
 
-   ![Running a Snippet from the Command Menu](../media/javascript-search-run-command.msft.png)
+   ![Running a Snippet from the Command Menu](./snippets-images/javascript-search-run-command.png)
 
 1. Press **Enter** to run the Snippet.
 
