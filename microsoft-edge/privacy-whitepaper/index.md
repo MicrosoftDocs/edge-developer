@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 12/10/2021
+ms.date: 06/20/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -242,6 +242,8 @@ Activity reporting records information about the websites children visit. Record
 
 Safe search adds a safe keyword to the header request to search engines. Bing reads the safe keyword and filters search results returned to the child. Other search engines may return filtered results due to the keyword. All of the child's searches are collected and made available for the family organizer to view in activity reports or at [family.microsoft.com](https://account.microsoft.com/family). The data is collected with the child's Microsoft account so it may be properly managed.
 
+The child account's health status is also monitored.  When a child needs to take action to log back into their account, such as when a password has changed or expired, their parent is informed.  This data is collected, encrypted in transit, and sent to Microsoft and stored on secure Microsoft storage servers. The account health status is stored on [family.microsoft.com](https://account.microsoft.com/family) for up to 30 days and then is deleted afterwards.
+
 The child's browsing data is stored on secure Microsoft servers and made available to parents for up to 30 days, then immediately deleted.  The data may be deleted at any time from the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/). To clear browsing data stored locally on a device, go to `edge://settings/clearBrowserData`.  Choose a **Time range**, select checkboxes as needed, then select **Clear now**.
 
 Collecting child browsing data and sharing it with the family group organizer requires two things. 1.\) The child must be signed in to Windows 10 and later with a Microsoft account. 2.\) The activity reporting setting must be turned on by the family organizer. The child does not need to be signed in to Microsoft Edge to collect browsing data. If family safety features aren't available on your version of Windows, update to the most recent version of Windows.
@@ -314,16 +316,17 @@ To control Image Enhancement, go to `edge://settings/privacy` and turn on or off
 <!-- ====================================================================== -->
 ## Import browser data
 
-Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time.  You can import your browser data to Microsoft Edge from another browser.  During import, you can either keep your existing data, or delete it and start fresh.  The data includes your favorites, browsing history, autofill data, extensions, settings, and other browsing data.
+Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time. You can import your browser data to Microsoft Edge from another browser. The data includes your favorites, browsing history, cookies, autofill data, extensions, settings, and other browsing data.
 
-Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge.  With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you sign in and sync your browsing data.
+With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  If you choose to regularly import your browsing data, browsing data will be imported each time Microsoft Edge is launched.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you sign in and sync your browsing data.
 
-![Import](./index-images/migration.png)
+You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`.
 
-You can import extensions from a different browser such as Google Chrome. If the extension is not available on the Microsoft Edge Add-ons website, Microsoft Edge imports a local copy and asks for permission before starting. The permissions for some of the extensions may have changed. To review the extension permissions, go to `edge://extensions`.
+![Dialog that prompts you to import browser data from another browser](./index-images/migration.png)
 
-To import data from another browser at any time, go to `edge://settings/importData`.
+When importing extensions, if the extension is not available on the Microsoft Edge Add-ons website, Microsoft Edge imports a local copy and asks for permission before starting. The permissions for some of the extensions may have changed. To review the extension permissions, go to `edge://extensions`.
 
+Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge. 
 
 <!-- ====================================================================== -->
 ## Install and update
@@ -459,6 +462,8 @@ Microsoft Edge asks you if you want to store your payment info if payment autofi
 Microsoft Edge lets you save your payment information to your browser profile. Microsoft Edge offers to automatically fill in payment forms when needed. Whenever you encounter a similar payment form, Microsoft Edge offers to fill in the form.  Credit card and other payment information are only saved with your explicit permission.
 
 Microsoft Edge asks you if you want to store your payment information if payment autofill is turned on. The information is encrypted locally on your device. To manage payment information, go to `edge://settings/payments`.  When you delete saved payment information, it no longer appears as an autofill suggestion.
+
+Microsoft Edge also supports saving your payment information to your Microsoft account if you are signed in and syncing, which makes the information available across devices. To save payment information to your Microsoft account, credit card verification (CVV) may be required, depending on your current region. CVV is only used for authorization and will not be stored by Microsoft. 
 
 Microsoft Edge supports the PaymentRequest API. The API lets you pay for purchases with payment information you previously saved using autofill. The PaymentRequest API allows the merchant to request the following information: credit card number, credit card expiration, full name, billing address, email address, phone number, and shipping address. The API tells the merchant that you have credit card information saved, but does not share any information with the merchant unless you allow it. To turn off the Payments feature, go to `edge://settings/privacy`.
 
@@ -692,6 +697,17 @@ To turn off speech translated to text, you may deny microphone access from any s
 ## Suggest similar sites
 
 To help resolve URL typos in the address bar that result in a website error, Microsoft Edge may recommend a corrected URL.  When a website navigation error occurs, Microsoft Edge sends the domain of the web address to the Microsoft service to suggest a corrected URL.  Microsoft Edge does not include identifiers or tokens with the domain.  If the service finds a suggestion, it returns the suggested URL.  Microsoft stores the incorrect domain, and suggested domain, to help improve the service.  To help you go to the correct sites, the feature is turned on by default.  To turn off the feature, go to `edge://settings/privacy` and under the **Services** turn off the **Suggest similar sites when a website can't be found** setting.
+
+<!-- ====================================================================== -->
+## Support nonprofits
+
+Microsoft Edge allows you to support nonprofit organizations using Microsoft Rewards points or cash while browsing. When you are signed in to Microsoft Edge with your Microsoft account and navigate to a nonprofit website, the **Support nonprofits** icon appears on the right side of the Address bar. You can then click this icon to donate to the nonprofit organization.
+
+![The 'Support nonprofits' icon in the address bar](./index-images/support-nonprofit.png)
+ 
+To control this feature, go to `edge://settings/privacy` and turn on or off the **Show opportunities to support causes and nonprofits you care about** setting.
+ 
+Supporting nonprofits is not available when using **InPrivate** or **Guest** modes.
 
 
 <!-- ====================================================================== -->
