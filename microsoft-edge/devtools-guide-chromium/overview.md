@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 09/23/2021
+ms.date: 06/21/2023
 ---
 # Overview of DevTools
 
@@ -33,9 +33,6 @@ With DevTools, you can do the following:
 *  Use a development environment to sync changes in DevTools with the file system and from the web.
 
 <!-- /keep sync'd -->
-
-
-<!-- See also [Reasons to use Microsoft Edge DevTools](devtools-guide-chromium/reasons-edge-devtools.md). -->
 
 
 <!-- ====================================================================== -->
@@ -132,7 +129,6 @@ To have DevTools automatically open whenever you open a new tab in the browser:
    ```bash
    microsoft-edge-dev --auto-open-devtools-for-tabs
    ```
-   
 
 ###### Disabling startup boost
 
@@ -177,8 +173,6 @@ The DevTools UI is implemented using HTML and CSS, like web pages, so you can zo
 
 ![DevTools zoomed out](overview-images/zoom-devtools.png)
 
-<!-- ![DevTools zoomed in](overview-images/zoom-rendered-page.png) -->
-
 To zoom the rendered page, click the page, and then use the same keyboard shortcuts as above.
 
 **To restore zoom to 100%:**
@@ -202,23 +196,7 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 
 
 <!-- ====================================================================== -->
-## Display DevTools Tooltips
-
-The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
-
-*  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
-*  Press **Ctrl+Shift+H** (Windows, Linux) or **Command+Shift+H** (macOS).
-*  [Open the Command Menu](command-menu/index.md#open-the-command-menu) and then type **tooltips**.
-
-Then hover over each outlined region of DevTools:
-
-![DevTools Tooltips](overview-images/tooltips.png)
-
-To turn off Tooltips, press **Esc**.  
-
-
-<!-- ====================================================================== -->
-## Features of the main toolbar
+## Features of the Activity Bar
 
 DevTools gives you an amazing amount of power to inspect, debug, and change the website currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
 
@@ -230,7 +208,7 @@ Other than a couple of icon tools (the **Inspect** tool and **Device Emulation**
 
 **Higher-level tabs:**
 
-Tools are organized into a set of tabs on the main toolbar and on the drawer toolbar.  Most tools are also called _panels_.  A panel is the inner UI of a tool.  A tool has a tab that can be present on the main toolbar and Drawer toolbar.
+Tools are organized into a set of tabs on the **Activity Bar** and on the **Quick View** toolbar.  Most tools are also called _panels_.  A panel is the inner UI of a tool.  A tool has a tab that can be present on the **Activity Bar** and **Quick View** toolbar.
 
 **Lower-level tabs:**
 
@@ -238,13 +216,11 @@ Within the panel of some tools, there are one or more sets of tabs (tabbed panes
 
 
 <!-- ------------------------------ -->
-#### The main toolbar and the Drawer toolbar
+#### The Activity Bar and the Quick View toolbar
 
-<!-- clarify: DevTools also allows you to change web-based third-party products on your computer.  extensions? -->
+There are two toolbars: the **Activity Bar** at the top of DevTools, and the **Quick View** toolbar at the bottom when you press **Esc**.
 
-There are two toolbars: the main toolbar at the top of DevTools, and the **Drawer** at the bottom when you press **Esc**.
-
-The main toolbar contains the following features:
+The **Activity Bar** contains the following features:
 
 * Icon tools:
    *  **Inspect tool** (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) toggle button.
@@ -259,23 +235,17 @@ The main toolbar contains the following features:
    *  **Performance** tool.
    *  **Memory** tool.
    *  **Application** tool.
-   *  **Security** tool.
-   *  **Lighthouse** tool.
-   *  **CSS Overview** tool.
 
 * Icons:
-   *  **More tabs** (![More tabs icon](./overview-images/more-tabs-icon-light-theme.png)) button.
+   *  **Move Activity Bar to left** (![Move Activity Bar to left icon](./overview-images/move-activity-bar-to-left-icon.png)) button.
    *  **More Tools** (![More Tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
-   *  **JavaScript errors counter** (![JavaScript errors counter icon](./overview-images/javascript-counter-icon-light-theme.png)) button.
-   *  **Issues counter** (![Issues counter icon](./overview-images/issues-counter-icon-light-theme.png)) button.
-   *  **Settings** (![Settings icon](./overview-images/settings-gear-icon-light-theme.png)) button.
-   *  **Send Feedback** (![Send Feedback icon](./overview-images/send-feedback-icon-light-theme.png)) button.
    *  **Customize and control DevTools** (![Customize icon](./overview-images/customize-devtools-icon-light-theme.png)) menu button.
+   *  **Help** (![Help icon](./overview-images/help-icon.png)) button.
    *  **Close** DevTools (![Close DevTools icon](./overview-images/close-devtools-icon-light-theme.png)) button.
 
 ![The main toolbar, with labels that identify its features](./overview-images/devtools-intro-menu-bar.png)
 
-The toolbar features are described below.
+The **Activity Bar** features are described below.
 
 
 <!-- ------------------------------ -->
@@ -357,91 +327,23 @@ See [View, edit, and delete cookies](storage/cookies.md).
 
 
 <!-- ------------------------------ -->
-#### Security tool
-
-See [Understand security issues using the Security tool](security/index.md).
-
-
-<!-- ------------------------------ -->
-#### Lighthouse tool
-
-See [Lighthouse tool](lighthouse/lighthouse-tool.md).
-
-
-<!-- ------------------------------ -->
-#### CSS Overview tool
-
-Identify potential CSS improvements.
-
-See [CSS Overview tool](css/css-overview-tool.md).
-
-
-<!-- ------------------------------ -->
-#### More tabs button
-
-To display a tool that's open but hidden because the window is too narrow, click the **More tabs** (![More tabs icon](./overview-images/more-tabs-icon-light-theme.png)) button.
-
-
-<!-- ------------------------------ -->
 #### More Tools button
 
-To add a tool to the toolbar, click the **More Tools** (![More Tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
-
-
-<!-- ------------------------------ -->
-#### JavaScript errors counter
-
-The **JavaScript errors counter** (![JavaScript errors counter icon](./overview-images/javascript-counter-icon-light-theme.png)) button displays the following:
-
-*  A red circle containing an **X**, followed by the number of JavaScript errors that were automatically detected on the current webpage.
-
-*  A yellow triangle containing an exclamation mark, followed by the number of JavaScript warnings that were automatically detected on the current webpage.
-
-The tooltip for the **JavaScript counter** button is **Open Console to view # errors, # warnings**.
-
-Click the JavaScript errors counter to open the [Console](console/index.md) and learn about the error.
-
-
-<!-- ------------------------------ -->
-#### Issues counter
-
-The **Issues counter** (![Issues counter icon](./overview-images/issues-counter-icon-light-theme.png)) button shows the number of HTML or CSS issues that are automatically found on the current webpage.
-
-The tooltip for the **Issues counter** is **Open Issues to view # issues**.  The button's icon is a blue speech bubble icon followed by the number of HTML or CSS issues.
-
-Click the **Issues counter** to open the [Issues](issues/index.md) tool.
-
-
-<!-- ------------------------------ -->
-#### Settings button
-
-To open the DevTools **Settings** webpage, click the **Settings** (![Settings icon](./overview-images/settings-gear-icon-light-theme.png)) button.  The **Settings** page contains the following sub-pages:
-
-*  Preferences
-*  Workspace
-*  Experiments
-*  Ignore List
-*  Devices
-*  Throttling
-*  Locations
-*  Shortcuts
-*  Symbol Server
-
-See [Settings](customize/index.md#settings) in _Customize DevTools_.
-
-
-<!-- ------------------------------ -->
-#### Send Feedback button
-
-To open the **Send Feedback** dialog, click the **Send Feedback** (![Send Feedback icon](./overview-images/send-feedback-icon-light-theme.png)) button.  The **Send Feedback** dialog opens.  Enter information to describe what happened and automatically includes a screenshot.  Use **Send Feedback** to connect with DevTools team to report problems, issues, or suggest ideas.
-
-See [Contact the Microsoft Edge DevTools team](contact.md).
+To add a tool to the **Activity Bar**, click the **More Tools** (![More Tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
 
 
 <!-- ------------------------------ -->
 #### Customize and control DevTools menu
 
-The **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button opens a dropdown menu that enables you to define where to dock DevTools, search, open different tools, and more.
+The **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button opens a dropdown menu that enables you to define where to dock DevTools, choose where the **Activity Bar** is located, search, open different tools, change settings, and more.
+
+
+<!-- ------------------------------ -->
+#### Help button
+
+The **Help** (![Help icon](./overview-images/help-icon.png)) button opens a dropdown menu that gives access to DevTools documentation, release notes, and to the **Feedback** (![Send Feedback icon](./overview-images/send-feedback-icon-light-theme.png)) tool.
+
+To send connect with the Microsoft Edge DevTools team to report problems, issues, or suggest ideas, click the **Feedback** button. The **Send Feedback** dialog opens. Enter information to describe what happened and include a screenshot. See [Contact the Microsoft Edge DevTools team](contact.md).
 
 
 <!-- ------------------------------ -->
@@ -459,33 +361,26 @@ For a summary of each tool, see [Overview of all tools](about-tools.md#overview-
 <!-- ====================================================================== -->
 ## Tool, tab, or panel
 
-Often the words "tool", "tab", or "panel" are used interchangeably.  In the Command Menu, the tools are called _panels_; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.  There's a **More Tools** (**+**) button and list, and there's a **More tabs** button on the toolbar, both of which are used to select tools, which are also called _panels_.
+Often the words "tool", "tab", or "panel" are used interchangeably.  In the Command Menu, the tools are called _panels_; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.  There's a **More Tools** (**+**) button and list used to select tools, which are also called _panels_.
 
 You can customize each of the tools, and the content of a tool can change based on the context.       
 
 
 <!-- ====================================================================== -->
-## About Panel and Drawer tools
+## About Activity Bar and Quick View tools
 
-The tools that are listed in the **More Tools** (**+**) can be displayed either as a Panel tool (on the main toolbar) or a Drawer tool (on the Drawer toolbar).  In the **Command Menu**, each of these tools is labelled as either a **Panel** tool or as a **Drawer** tool.  But you can add them to either the main toolbar or the Drawer toolbar, and you can use any of the following methods to open them or move them between the two toolbars.
-
-Use the **More Tools** (**+**) menu to select any of the Panel tools or Drawer tools.  A **More Tools** menu appears in multiple places:
-
-*  In the upper right of DevTools, on the main toolbar, click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, hover over the **More tools** command, and then select a tool.
-
-*  On the main toolbar at the top of DevTools (where _Panel_ tools usually go).
-
-*  On the **Drawer** toolbar (where _Drawer_ tools usually go).
+The **More Tools** (**+**) button is displayed both in the **Activity Bar** and in the **Quick View** toolbar. When you open a tool from the **More Tools** list that's located in the **Activity Bar**, the tool appears in the **Activity Bar**. When you open a tool from the **More Tools** list that's located in the **Quick View** toolbar, the tool appears in the **Quick View** toolbar.
 
 | Task | Steps |
 | --- | --- |
-| Open a tool on the main toolbar at the top of DevTools | On the main toolbar at the top of DevTools, click **More Tools** (**+**) and then select a tool. |
-| Open a tool on the Drawer toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, click **More Tools** (**+**) and then select a tool. |
-| Move a tool from the Drawer toolbar to the main Toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, right-click the tool's tab, and then select **Move to top**. |
-| Move a tool from the main toolbar to the drawer Toolbar | On the main toolbar, right-click the tool's tab, and then select **Move to bottom**. |
+| Open a tool in the **Activity Bar** at the top of DevTools | In the **Activity Bar** at the top of DevTools, click **More Tools** (**+**) and then select a tool. |
+| Open a tool on the **Quick View** toolbar | When DevTools has focus, press **Esc** to show the **Quick View** toolbar if it's not shown yet.  In the **Quick View** toolbar, click **More Tools** (**+**) and then select a tool. |
+| Move a tool from the **Quick View** toolbar to the **Activity Bar** | When DevTools has focus, press **Esc** to show the **Quick View**.  In the **Quick View** toolbar, right-click the tool's tab, and then select **Move to top Activity Bar**. |
+| Move a tool from the **Activity Bar** to the **Quick View** Toolbar | In the **Activity Bar**, right-click the tool's tab, and then select **Move to bottom Quick View**. |
 | Open a tool in its default toolbar | When DevTools has focus, open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type the name of the tool, and then select the tool. |
 
-In addition to Panel tools and Drawer tools, DevTools includes the following tools:
+In addition to **Activity Bar** and **Quick View** tools, DevTools includes the following tools:
+
 *  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
 *  The **Device Emulation** tool.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 *  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md).
@@ -509,13 +404,11 @@ In the Command Menu, the tools are called "panels"; for example, the **Elements*
 To open the Command Menu, do either of the following:
 
 *  Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
-
 *  Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
+The Command Menu allows you to type commands to display, hide, or run features in DevTools.  With the Command Menu open, enter the word **changes**, and then select **Show Changes**.
 
-The Command Menu allows you to type commands to display, hide, or run features in DevTools.  With the Command Menu open, enter the word **changes**, and then select **Drawer: Show Changes**.
-
-The **Changes** tool opens, which is useful when you edit CSS.  In this case, the Command Menu provides a fast alternative to selecting **More Tools** (...) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
+The **Changes** tool opens, which is useful when you edit CSS.  In this case, the Command Menu provides a fast alternative to selecting **More Tools** (**+**) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
 
 After you type **cha**, the Command Menu displays the options:
 
@@ -531,13 +424,14 @@ See also [Run commands with the Microsoft Edge DevTools Command menu](command-me
 <!-- ====================================================================== -->
 ## Customizing DevTools
 
-You can customize DevTools to meet your needs for the way you work.  To change settings, click the **Settings** (![Settings icon](./overview-images/settings-gear-icon-light-theme.png)) button, or press **F1**.
+You can customize DevTools to meet your needs for the way you work.  To change settings, click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Settings** (![Settings icon](./overview-images/settings-gear-icon-light-theme.png)), or press **F1**.
 
 In the **Settings** > **Preferences** page, you can change several parts of DevTools.  For example, you can use the **Match the browser language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
 
 ![all the settings in DevTools](./overview-images/devtools-intro-all-settings.png)
 
 You can also change the settings of advanced features, such as:
+
 *  Add local files to a [Workspace](workspaces/index.md).
 *  Filter library code by using the **Ignore List**.
 *  Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices (Device Emulation)](device-mode/index.md).
