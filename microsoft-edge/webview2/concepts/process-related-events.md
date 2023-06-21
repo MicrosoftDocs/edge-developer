@@ -1,4 +1,15 @@
-# Overview
+---
+title: Handling Process-related Events in WebView2
+description: Process-related events in WebView2 and how apps can handle them for recovery and improved reliability.
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: conceptual
+ms.prod: microsoft-edge
+ms.technology: webview
+ms.date: 06/20/2023
+---
+# Handling Process-related Events in WebView2
+## Overview
 The WebView2 API provides the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events for your application to react to different scenarios. Use this document to learn how to use these events to react when these scenarios present.
 
   * `CoreWebView2.ProcessFailed`. Use this event for diagnostics and recovery from failures in the WebView2 processes.
@@ -12,7 +23,7 @@ To improve the reliability of your WebView2 application, it is recommended that 
 > [!NOTE]
 > This document is a high-level overview of the aforementioned events. Ultimately, the reference documentation for each individual API mentioned in this document shall prevail.
 
-# WebView2 Process Model and related APIs
+## WebView2 Process Model and related APIs
 The [WebView2 Process Model](<link>) uses the WebView2 Runtime to support your WebView2 application. Because most of the magic in the WebView2 controls in your application happens out-of-process (in the WebView2 Runtime), failures and general information about these processes are passed to your application through different WebView2 APIs. The APIs used to report this information to your application include:
 
   * CoreWebView2
@@ -28,7 +39,7 @@ The [WebView2 Process Model](<link>) uses the WebView2 Runtime to support your W
 
 In this document, we discuss how to handle process exits and failures, using the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events.
 
-# Process Events
+## Process Events
 The WebView2 Runtime is composed of different types of processes, including:
   * Main browser process
   * Renderer processes
@@ -48,7 +59,7 @@ When you create and initialize a WebView2 control, WebView2 will ensure there's 
 
 `CoreWebView2` and `CoreWebView2Environment` report these events so your application can react accordingly. There are multiple scenarios your application can handle through these events.
 
-# Main Browser Process Exits
+## Main Browser Process Exits
 The `BrowserProcessExited` event ([COM](<link>), [.NET](<link>), [WinRT](<link>)) indicates that the main browser process has exited and its resources (including its child processes) have been released. This can happen for the following reasons:
 
   * All WebView2 controls from the CoreWebView2Environment have been closed. Example app scenarios include:
@@ -63,7 +74,7 @@ This event provides the _exit kind_ and the _process ID_ so your application can
   * .NET: [CoreWebView2BrowserProcessExitedEventArgs](<link>)
   * WinRT: [CoreWebView2BrowserProcessExitedEventArgs](<link>)
 
-# Process Failures
+## Process Failures
 The `ProcessFailed` event ([COM](<link>), [.NET](<link>), [WinRT](<link>)) indicates that _any_ of the processes in the _WebView2 Process Group_ has encountered one of the following situations:
 
   * **Unexpected exit.** The process indicated by the event has exited unexpectedly (usually due to a crash). The failure might or might not be recoverable and some failures are auto-recoverable. See [Unexpected Exits](<link>) below for details about which of these can be handled by your application.
@@ -73,7 +84,7 @@ The `ProcessFailed` event ([COM](<link>), [.NET](<link>), [WinRT](<link>)) indic
 
 These situations can be identified through the details provided in the event. See the section below for how your application can do this.
 
-## Process Failure Details
+### Process Failure Details
 The `ProcessFailed` event provides information about the **kind of failure** and the **reason** why it occurred. Your application can interpret these details in the following manner:
 
   * **Failure kind.** Due to historical reasons, this is a combination of process kind (browser, renderer, gpu, ...) and failure (exit, unresponsiveness). Your application can use _failure kind_ to determine the process that has failed. Renderer processes are further divided in _main frame_ renderer (`RenderProcessExited`, `RenderProcessUnresponsive`) and _subframe_ renderer (`FrameRenderProcessExited`). For more details about the conditions under which each specific _failure kind_ is used, see:
@@ -98,7 +109,7 @@ Your application can leverage this information for diagnostics and other scenari
   - .NET: [CoreWebView2ProcessFailedEventArgs](<link>)
   - WinRT: [CoreWebView2ProcessFailedEventArgs](<link>)
 
-## Unexpected Exits
+### Unexpected Exits
 The processes in the _WebView2 Process Group_ can be associated to one or many WebView2 controls in your application. For example:
 
   * **Main browser process.** There is a single main browser process in the _WebView2 Process Group_. Every WebView2 control with the same environment configuration will share this process.
@@ -145,7 +156,7 @@ When a process in the _WebView2 Process Group_ exits unexpectedly (for example, 
 
   These process failures are not fatal and your application does **not** need to handle recovery for any of them, but can collect information to understand any persistent issues. See [Gathering Details](<link>) for more information.
 
-## Unresponsive Renderers
+### Unresponsive Renderers
 When the renderer process for the main frame in a WebView2 control becomes unresponsive to user input, the `ProcessFailed` event will be raised with:
 
   - **Failure kind:** `RenderProcessUnresponsive` ([COM](<link>), [.NET](<link>), [WinRT](<link>))
@@ -158,7 +169,7 @@ The event will continue to be raised every set period of time as long as the pro
 
 As this event will be raised repeatedly, you must decide the threshold for your application to act upon it.
 
-## Gathering Details
+### Gathering Details
 Your application can use and collect information from [Process Failure Details](<link>) to identify the most frequent issues for your application.
 
 > [!NOTE]
@@ -166,7 +177,7 @@ Your application can use and collect information from [Process Failure Details](
 
 Additionally, most process crashes will generate dumps in the [User Data Folder](<link>) or the configured `FailureReportFolderPath` ([COM](<link>), [.NET](<link>), [WinRT](<link>)). You can use these dumps to understand crashes and provide additional information when contacting the WebView2 team.
 
-# Main Browser Process Crashes
+## Main Browser Process Crashes
 When the main browser process in the _WebView2 Process Group_ exits unexpectedly, **both** events discussed in this document will be raised:
 
   * `CoreWebView2.ProcessFailed`
