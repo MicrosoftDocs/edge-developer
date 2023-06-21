@@ -175,7 +175,7 @@ Your application can use and collect information from [Process Failure Details](
 > [!NOTE]
 > Some process failures might raise the `ProcessFailed` event across different WebView2 controls in your application (see [Unexpected Exits](<link>) for more information). You must decide how often to gather details and how to handle duplicates for these cases.
 
-Additionally, most process crashes will generate dumps in the [User Data Folder](user-data-folder.md) or the configured `FailureReportFolderPath` ([COM](<link>), [.NET](<link>), [WinRT](<link>)). You can use these dumps to understand crashes and provide additional information when contacting the WebView2 team.
+Additionally, most process crashes will generate dumps in the [User Data Folder](user-data-folder.md), under the directory returned by `FailureReportFolderPath` ([COM](<link>), [.NET](<link>), [WinRT](<link>)). You can use these dumps to understand crashes and provide additional information when contacting the WebView2 team.
 
 ## Main Browser Process Crashes
 When the main browser process in the _WebView2 Process Group_ exits unexpectedly, **both** events discussed in this document will be raised:
