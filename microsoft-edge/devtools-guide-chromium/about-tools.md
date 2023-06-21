@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/02/2022
+ms.date: 06/21/2023
 ---
 # About the list of tools
 
@@ -14,16 +14,16 @@ DevTools provides 35 tools:
 *  3 permanent toolbar tabs, for the **Elements**, **Console**, and **Sources** tools.
 *  30 optional toolbar tabs, for the optional tools.
 
-The default tools, including toolbar icons, toolbar tabs, and tools on the **More tabs** (![More tabs icon](./about-tools-images/more-tabs-icon-light-theme.png)) menu:
+The default tools, including toolbar icons and toolbar tabs:
 
-![All of the default tools of DevTools, including 2 toolbar icons and 11 toolbar tabs on the toolbar or More tabs menu](./about-tools-images/all-default-tools.png)
+![All of the default tools of DevTools, including 2 toolbar icons and 8 toolbar tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
 
 The optional tools that aren't open by default, on the **More Tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu:
 
-![All of the optional tools of DevTools, on the More Tools menu, with 22 optional tools](./about-tools-images/all-optional-tools.png)
+![All of the optional tools of DevTools, on the More Tools menu, with 24 optional tools](./about-tools-images/all-optional-tools.png)
 
 The following features are additional ways to access the tools:
-*  The **Drawer** is an additional toolbar and area to hold tool tabs.
+*  The **Quick View** is an additional toolbar and area to hold tool tabs.
 *  The **Command Menu** is a way to directly use features of tools.
 *  The **Settings** pages can turn on additional features of tools.
 
@@ -79,25 +79,23 @@ https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-
 <!-- ====================================================================== -->
 ## The More Tools menus
 
-The **More Tools** (**+**) menu on the main toolbar and on the Drawer toolbar is dynamic: it omits any tab tools that are open on that toolbar.
-
-The **More tools** menu in the **Customize and control DevTools** (![Customize icon](./about-tools-images/customize-devtools-icon-light-theme.png)) menu is static: it always lists all of the optional tools.  The selected tool opens in the main toolbar if it's a Panel tool, or on the Drawer if it's a Drawer tool.  You can right-click the tool's tab to move it to the other toolbar.
+The **More Tools** (**+**) menu in the **Activity Bar** and in the **Quick View** toolbar is dynamic: it omits any tab tools that are open on that toolbar.
 
 
 <!-- ====================================================================== -->
-## Panel tools vs. Drawer tools
+## Activity Bar tools vs. Quick View tools
 
 In the **Command Menu**:
 
-* _Panel tools_ are tools which open in the main toolbar by default.
+* _Panel tools_ are tools which open in the **Activity Bar** by default.
 
-* _Drawer tools_ are tools which open in the Drawer toolbar by default, at the bottom of DevTools.  Press **Esc** to show or hide the Drawer.
+* _Quick View tools_ are tools which open in the **Quick View** toolbar by default, at the bottom of DevTools.  Press **Esc** to show or hide the **Quick View**.
 
-The **Command Menu** first lists the Panel tools, and then the Drawer tools:
+The **Command Menu** first lists the Panel tools, and then the **Quick View** tools:
 
-![The Command Menu, showing the Panel tools grouped together, and then the Drawer tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
+![The Command Menu, showing the Panel tools grouped together, and then the Quick View tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
 
-To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom** or **Move to top**.
+To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View** or **Move to top Activity Bar**.
 
 To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Or, click the **Customize and control DevTools** (![Customize icon](./about-tools-images/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
 
@@ -105,32 +103,21 @@ To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Comma
 <!-- ====================================================================== -->
 ## Closing tool tabs
 
-To close a tool tab that's on a toolbar:
+To close a tool tab that's on a toolbar, right-click the tab, and then select **Remove from Activity Bar** or **Remove from Quick View**.
 
-*  Click the **x** on the tab.
-
-   The **Elements**, **Console**, and **Sources** tool tabs cannot be closed.
-
-
-To close all of the optional tabs at once:
-
-*  Right-click an optional tab on the toolbar (a tab that has an **x** button), and then select **Close all**.
-
-   Only the **Elements**, **Console**, and **Sources** remain on the main toolbar.  (The **Drawer** toolbar is unaffected.)
-
-   If you closed all tabs on the **Drawer**, only the **Console** tab remains on the **Drawer** toolbar.  (The main toolbar is unaffected.)
+The **Elements**, **Console**, and **Sources** tool are permanent tabs and cannot be closed.
 
 
 <!-- ====================================================================== -->
 ## Restoring the default tool tabs
 
-To restore all of the default tabs on the main toolbar:
+To restore all of the default tabs in the **Activity Bar** and **Quick View**:
 
-1. In DevTools, select **Settings** (![Settings icon](./about-tools-images/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. In DevTools, select **Customize and control DevTools** (![Customize and control DevTools icon](./about-tools-images/customize-devtools-icon-light-theme.png)) > **Settings** (![Settings icon](./about-tools-images/settings-gear-icon-light-theme.png)) > **Preferences**.
 
 1. Click the **Restore defaults and refresh** button.
 
-   The main toolbar again has all of the default tabs.  The **Drawer** then has only the **Console** tab.
+   DevTools restarts and the default tabs appear in both toolbars.
 
 
 <!-- ====================================================================== -->
