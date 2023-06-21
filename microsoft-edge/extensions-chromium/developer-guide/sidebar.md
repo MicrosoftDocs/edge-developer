@@ -242,16 +242,14 @@ To open an extension in the sidebar, the user can do either of the following:
 
 | Property | Description |
 |---|---|
-| `tabId`  
-`number optional` | If specified, the side panel options for the given tab will be returned. Otherwise, returns the default side panel options (used for any tab that doesn't have specific settings).|
+| `tabId`  (`number optional`) | If specified, the side panel options for the given tab will be returned. Otherwise, returns the default side panel options (used for any tab that doesn't have specific settings).|
 
 <!-- ------------------------------ -->
 #### Panel behavior
 
 | Property | Description |
 |---|---|
-| `openPanelOnActionClick` 
-`boolean optional` | Whether clicking the extension's icon toggles showing the extension's entry in the sidebar.  The default value is `false`. |
+| `openPanelOnActionClick` (`boolean optional`) | Whether clicking the extension's icon toggles showing the extension's entry in the sidebar.  The default value is `false`. |
 
 
 <!-- ------------------------------ -->
@@ -259,12 +257,9 @@ To open an extension in the sidebar, the user can do either of the following:
 
 | Property | Description |
 |---|---|
-| `enabled`
-`boolean optional`
-| `tabId`
-`number optional`| If specified, the sidebar options only apply to the tab that has this ID.  If not specified, these options set the default behavior enabled.  Whether the sidebar is enabled.  The default value is `true`.<!--todo: delete "Whether the sidebar is enabled.  The default value is `true`."? --> |
-| `path` 
-`string optional`| The path to the side panel HTML file to use.  This needs to be a local resource within the extension package. |
+| `enabled` (`boolean optional`) | Whether the sidepanel should be enabled or not. This is optional |
+| `tabId` (`number optional`)| If specified, the sidebar options only apply to the tab that has this ID.  If not specified, these options set the default behavior enabled.  Whether the sidebar is enabled.  The default value is `true`.<!--todo: delete "Whether the sidebar is enabled.  The default value is `true`."? --> |
+| `path` (`string optional`) | The path to the side panel HTML file to use.  This needs to be a local resource within the extension package. |
 
 <!--todo: row 1 col 2: maybe delete "Whether the sidebar is enabled.  The default value is `true`." -->
 
@@ -275,9 +270,111 @@ To open an extension in the sidebar, the user can do either of the following:
 
 | Property | Description |
 |---|---|
-| `default_path`
-'string'| The developer-specified path for sidebar display.|
+| `default_path` ('string') | The developer-specified path for sidebar display.|
 
+### Methods
+
+#### getOptions
+**Function**: Returns the active panel configuration.
+**Parameters**: **options** GetPanelOptions
+**API**
+
+```js
+chrome.sidePanel.getOptions(
+  options: GetPanelOptions,
+  callback?: function,
+)
+```
+Promise
+
+**callback**:{} function optional
+The `callback` parameter looks like:
+
+```js
+(options: PanelOptions) => void
+```
+
+**options**: `PanelOptions`
+
+**RETURNS**: Promise<`PanelOptions`>
+
+Promises are supported in Manifest V3 and later, but callbacks are provided for backward compatibility. You cannot use both on the same function call. The promise resolves with the same type that is passed to the callback.
+
+#### getPanelBehavior
+
+**Function**: Returns the extension's current side panel behavior.
+**Parameters**: callback
+{} function optional
+
+**API**
+
+```js
+chrome.sidePanel.getPanelBehavior(
+  callback?: function,
+)
+```
+Promise Pending
+
+**callback**: {} function optional
+
+The `callback` parameter looks like:
+
+(behavior: PanelBehavior) => void
+
+**behavior**: PanelBehavior
+
+**RETURNS**: Promise<`PanelBehaviour`>
+
+Promises are supported in Manifest V3 and later, but callbacks are provided for backward compatibility. You cannot use both on the same function call. The promise resolves with the same type that is passed to the callback.
+
+#### setOptions
+**Function**: Configures the side panel.
+**Parameters**: **options** PanelOptions
+
+**API**
+
+```js
+chrome.sidePanel.setOptions(
+  options: PanelOptions,
+  callback?: function,
+)
+```
+Promise
+
+**callback**: {} function optional
+
+The `callback` parameter looks like:
+
+() => void
+
+**RETURNS**: Promise<`Void`>
+
+Promises are supported in Manifest V3 and later, but callbacks are provided for backward compatibility. You cannot use both on the same function call. The promise resolves with the same type that is passed to the callback.
+
+#### setPanelBehavior
+
+**Function**: Configures the extension's side panel behavior. This is an upsert operation.
+**Parameters**: **behavior** PanelBehavior
+
+**API**
+
+```js
+chrome.sidePanel.setPanelBehavior(
+  behavior: PanelBehavior,
+  callback?: function,
+)
+```
+Promise Pending
+
+**callback**: {} function optional
+
+The `callback` parameter looks like:
+
+() => void
+
+**RETURNS**: Promise<`Void`>
+
+Promises are supported in Manifest V3 and later, but callbacks are provided for backward compatibility. You cannot use both on the same function call. The promise resolves with the same type that is passed to the callback.
 
 <!-- ====================================================================== -->
 ## See also
