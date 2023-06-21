@@ -119,7 +119,7 @@ DevTools in **Dark+** theme:
 
 ![DevTools in Dark+ theme](./devtools-106-images/dark-plus-theme.png)
 
-There are many DevTools color themes to choose from, such as **Monokai** and **Solarized**.  To change the color theme in DevTools, click the **Settings** (![Settings icon](../../../media/settings-gear-icon-light-theme.png)) button, and then in the **Preferences** page, in the **Theme** dropdown menu, select a theme:
+There are many DevTools color themes to choose from, such as **Monokai** and **Solarized**.  To change the color theme in DevTools, click the **Settings** (![Settings icon](./devtools-106-images/settings-gear-icon-light-theme.png)) button, and then in the **Preferences** page, in the **Theme** dropdown menu, select a theme:
 
 ![Setting the DevTools theme to Monokai](./devtools-106-images/set-theme-monokai.png)
 

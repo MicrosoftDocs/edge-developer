@@ -50,7 +50,7 @@ The [Microsoft Windows UI Automation blog](/archive/blogs/winuiautomation/) has 
 
 The accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3.  The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation layer:
 
-![Content transformed to the engine model is projected into visual and accessibility views, presented as visual or accessible presentation](media/accessibilityarchitecture.png)
+![Content transformed to the engine model is projected into visual and accessibility views, presented as visual or accessible presentation](./index-images/accessibilityarchitecture.png)
 
 The Microsoft Edge team works with the W3C and other browser vendors on an ongoing basis to ensure that new web platform features have sufficient built-in accessibility.
 

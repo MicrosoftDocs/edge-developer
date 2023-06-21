@@ -61,7 +61,7 @@ console.assert(x < y, {x, y, reason});
 
 #### Output
 
-![The result of the console.assert() example](../media/console-demo-assert-button.png)
+![The result of the console.assert() example](./api-images/console-demo-assert-button.png)
 
 <br/><br/>
 
@@ -108,7 +108,7 @@ console.count();
 
 #### Output
 
-![The result of the console.count() example](../media/console-demo-count-button.png)
+![The result of the console.count() example](./api-images/console-demo-count-button.png)
 
 <br/><br/>
 
@@ -153,7 +153,7 @@ console.debug('debug');
 
 #### Output
 
-![The result of the console.debug() example](../media/console-demo-debug-button.png)
+![The result of the console.debug() example](./api-images/console-demo-debug-button.png)
 
 <br/><br/>
 
@@ -178,7 +178,7 @@ console.dir(document.head);
 
 #### Output
 
-![The result of the console.dir() example](../media/console-demo-dir-button.png)
+![The result of the console.dir() example](./api-images/console-demo-dir-button.png)
 
 <br/><br/>
 
@@ -203,7 +203,7 @@ console.dirxml(document);
 
 #### Output
 
-![The result of the console.dirxml() example](../media/console-demo-dirxml-button.png)
+![The result of the console.dirxml() example](./api-images/console-demo-dirxml-button.png)
 
 <br/><br/>
 
@@ -228,7 +228,7 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 
 #### Output
 
-![The result of the console.error() example](../media/console-demo-error-button.png)
+![The result of the console.error() example](./api-images/console-demo-error-button.png)
 
 <br/><br/>
 
@@ -257,7 +257,7 @@ console.groupEnd(label);
 
 #### Output
 
-![The result of the console.group() example](../media/console-demo-group-button.png)
+![The result of the console.group() example](./api-images/console-demo-group-button.png)
 
 <br/><br/>
 
@@ -308,7 +308,7 @@ console.info('info');
 
 #### Output
 
-![The result of the console.info() example](../media/console-demo-info-button.png)
+![The result of the console.info() example](./api-images/console-demo-info-button.png)
 
 <br/><br/>
 
@@ -333,7 +333,7 @@ console.log('log');
 
 #### Output
 
-![The result of the console.log() example](../media/console-demo-log-button.png)
+![The result of the console.log() example](./api-images/console-demo-log-button.png)
 
 <br/><br/>
 
@@ -372,7 +372,7 @@ console.table([
 
 #### Output
 
-![The result of the console.table() example](../media/console-demo-table-button.png)
+![The result of the console.table() example](./api-images/console-demo-table-button.png)
 
 <br/><br/>
 
@@ -399,7 +399,7 @@ console.timeEnd();
 
 #### Output
 
-![The result of the console.time() example](../media/console-demo-time-button.png)
+![The result of the console.time() example](./api-images/console-demo-time-button.png)
 
 <br/><br/>
 
@@ -443,7 +443,7 @@ first();
 
 #### Output
 
-![The result of the console.trace() example](../media/console-demo-trace-button.png)
+![The result of the console.trace() example](./api-images/console-demo-trace-button.png)
 
 <br/><br/>
 
@@ -468,7 +468,7 @@ console.warn('warn');
 
 #### Output
 
-![The result of the console.warn() example](../media/console-demo-warn-button.png)
+![The result of the console.warn() example](./api-images/console-demo-warn-button.png)
 
 <br/><br/>
 

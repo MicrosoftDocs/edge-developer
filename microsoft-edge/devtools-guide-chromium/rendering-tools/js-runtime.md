@@ -24,7 +24,7 @@ ms.date: 05/04/2021
 
 To identify expensive functions, use the **Memory** tool.
 
-![Sample Profiles](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.png)
+![Sample Profiles](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.png)
 
 ### Summary
 
@@ -60,25 +60,25 @@ The default view is **Heavy (Bottom Up)**.  This view allows you to review which
 
 ### Change sort order
 
-To change the sorting order, select the dropdown menu next to the **focus selected function** (![focus selected function](../media/focus-icon.png)) icon and then select one of the following options:
+To change the sorting order, select the dropdown menu next to the **focus selected function** (![focus selected function](./js-runtime-images/focus-icon.png)) icon and then select one of the following options:
 
 **Chart**.  Displays a chronological chart of the recording.
 
-![Flame chart](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.png)
+![Flame chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.png)
 
 **Heavy (Bottom Up)**.  Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view.
 
-![Heavy chart](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.png)
+![Heavy chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.png)
 
 **Tree (Top Down)**.  Shows an overall picture of the calling structure, starting at the top of the call stack.
 
-![Tree chart](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.png)
+![Tree chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.png)
 
 ### Exclude functions
 
-To exclude a function from your Sampling Profile, select it and then click the **exclude selected function** (![exclude selected function](../media/exclude-icon.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
+To exclude a function from your Sampling Profile, select it and then click the **exclude selected function** (![exclude selected function](./js-runtime-images/exclude-icon.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
 
-Click the **restore all functions** (![restore all functions](../media/restore-icon.png)) button to restore all excluded functions back into the recording.
+Click the **restore all functions** (![restore all functions](./js-runtime-images/restore-icon.png)) button to restore all excluded functions back into the recording.
 
 
 <!-- ====================================================================== -->
@@ -88,7 +88,7 @@ The **Chart** view provides a visual representation of the Sampling Profile over
 
 After you [record a Sampling Profile](#record-a-sampling-profile), view the recording as a flame chart by [changing the sort order](#change-sort-order) to **Chart**.
 
-![Flame chart view](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.png)
+![Flame chart view](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.png)
 
 The flame chart is split into two parts:
 
@@ -99,7 +99,7 @@ The flame chart is split into two parts:
 
 Functions are colored randomly.  There is no correlation to the colors used in the other panels.  However, functions are always colored the same across invocations, so that you can observe patterns in each runtime.
 
-![Annotated flame chart](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.png)
+![Annotated flame chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.png)
 
 A tall call stack isn't necessarily significant; it might just mean that a lot of functions were called.  But a wide bar means that a function took a long time to complete, so these are candidates for optimization.
 
@@ -107,7 +107,7 @@ A tall call stack isn't necessarily significant; it might just mean that a lot o
 
 To zoom in on particular parts of the call stack, click and drag left and right across the overview.  After you zoom, the call stack automatically displays the portion of the recording that you selected.
 
-![Chart zoomed](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.png)
+![Chart zoomed](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.png)
 
 ### View function details
 
@@ -125,7 +125,7 @@ Hover on a function to display the name and timing data:
 <!--*  **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->
 <!--*  **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->
 
-![View functions details in the profiles chart](../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.png)
+![View functions details in the profiles chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.png)
 
 
 <!-- ====================================================================== -->

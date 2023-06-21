@@ -32,11 +32,11 @@ To verify that you have correctly defined protocol handlers:
 
 If protocol handlers haven't been defined in the web app manifest, or have been defined incorrectly, the following message will be displayed:
 
-![The Protocol Handlers section of the Manifest pane without protocols defined](./images/protocol-handlers-not-defined.png)
+![The Protocol Handlers section of the Manifest pane without protocols defined](./protocol-handlers-images/protocol-handlers-not-defined.png)
 
 If protocol handlers have been defined successfully in the web app manifest, the following message will be displayed:
 
-![The Protocol Handlers section of the Manifest pane with protocols defined](./images/protocol-handlers-defined.png)
+![The Protocol Handlers section of the Manifest pane with protocols defined](./protocol-handlers-images/protocol-handlers-defined.png)
 
 The **Protocol Handlers** section also makes it possible to test the protocol handlers you've defined.
 
@@ -55,7 +55,7 @@ The **Application** tool detects all the protocol handlers from your web app man
 
 In the following screenshot, the `web+amp://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Jazz_Sampler/Kevin_MacLeod_-_AcidJazz.mp3` URI is being tested.
 
-![Testing the custom web+amp protocol from the Application tool](./images/test-protocol-handlers.png)
+![Testing the custom web+amp protocol from the Application tool](./protocol-handlers-images/test-protocol-handlers.png)
 
 
 <!-- ====================================================================== -->
