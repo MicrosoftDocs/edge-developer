@@ -18,7 +18,7 @@ Progressive Web Apps (PWAs) can also handle links in a similar way.
 <!-- ====================================================================== -->
 ## Automatic link handling
 
-The operating system your PWA is installed on will automatically launch your PWA for any link that refers to content that's within the scope of the PWA when either of the following conditions are met:
+The operating system that your PWA is installed on automatically launches your PWA for any link that refers to content that's within the scope of the PWA, when either of the following conditions are met:
 
 * The PWA was installed from the Microsoft Store on Windows.
 * The PWA was installed by using Microsoft Edge and Microsoft Edge is the default browser on the device.
