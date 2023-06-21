@@ -10,9 +10,9 @@ ms.date: 06/02/2023
 ---
 # Data and privacy in WebView2
 
-WebView2 collects a set of optional and required diagnostic data to keep WebView2 secure and up to date, diagnose issues, and improve WebView2. By agreeing to the WebView2 Runtime Terms and Conditions License, WebView2 developers acknowledge WebView2 will collect the described data in this document.  To view the license, go to [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), where clicking any of the download buttons, such as **Get the Link**, **Download**, or **x64**, shows the license in a dialog.
+WebView2 collects a set of optional and required diagnostic data to keep WebView2 secure and up to date, diagnose issues, and improve WebView2. By agreeing to the WebView2 Runtime Terms and Conditions License, WebView2 developers acknowledge that WebView2 will collect the data that's described in this article. To view the license, go to [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), where clicking any of the download buttons, such as **Get the Link**, **Download**, or **x64**, shows the license in a dialog.
 
-Additionally, WebView2 follows the standards that are outlined in the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md).  WebView2 has mechanisms to ensure privacy.  WebView2 data collection follows the same strict standards as Microsoft Edge. For more information see [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/en-us/privacystatement).
+Additionally, WebView2 follows the standards that are outlined in the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md). WebView2 has mechanisms to ensure privacy. WebView2 data collection follows the same strict standards as Microsoft Edge. For more information, see [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/privacystatement).
 
 The main diagnostic data sources are:
 *  Chromium and Microsoft Edge telemetry infrastructure.
@@ -25,7 +25,7 @@ This article is for WebView2 developers.
 <!-- ====================================================================== -->
 ## Optional diagnostic data
 
-WebView2 is a Windows component and thus follows the Windows diagnostic data collection practices. For more information see [Windows diagnostic data](https://learn.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization).  The data collection consent for WebView2 is governed by the **Settings > Privacy & security > Diagnostics & feedback > Diagnostic data** setting on Windows 10 and Windows 11 as a centralized switch.
+WebView2 is a Windows component and thus follows the Windows diagnostic data collection practices. For more information, see [Windows diagnostic data](/windows/privacy/configure-windows-diagnostic-data-in-your-organization). The data collection consent for WebView2 is governed by the **Settings > Privacy & security > Diagnostics & feedback > Diagnostic data** setting on Windows 10 and Windows 11 as a centralized switch.
 
 Users can control WebView2 data collection through the Windows **Diagnostic data** setting on Windows 10 and Windows 11, as shown below.  As a developer, consider conveying this to your WebView2 app users and inviting them to use the Windows **Diagnostic data** setting to fit their preference.
 <!-- todo: give a specific example of how/where to convey and what to say, eg:
