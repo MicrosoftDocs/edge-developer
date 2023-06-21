@@ -24,7 +24,7 @@ To improve the reliability of your WebView2 application, it is recommended that 
 > This document is a high-level overview of the aforementioned events. Ultimately, the reference documentation for each individual API mentioned in this document shall prevail.
 
 ## WebView2 Process Model and related APIs
-The [WebView2 Process Model](<link>) uses the WebView2 Runtime to support your WebView2 application. Because most of the magic in the WebView2 controls in your application happens out-of-process (in the WebView2 Runtime), failures and general information about these processes are passed to your application through different WebView2 APIs. The APIs used to report this information to your application include:
+The [WebView2 Process Model](process-model.md) uses the WebView2 Runtime to support your WebView2 application. Because most of the magic in the WebView2 controls in your application happens out-of-process (in the WebView2 Runtime), failures and general information about these processes are passed to your application through different WebView2 APIs. The APIs used to report this information to your application include:
 
   * CoreWebView2
     - `BrowserProcessId` property
@@ -35,7 +35,7 @@ The [WebView2 Process Model](<link>) uses the WebView2 Runtime to support your W
     - `GetProcessInfos` method
 
   > [!NOTE]
-  > This is an overview at the conceptual level. For detailed API names and related types in your app's framework, see [Process Management](<link>).
+  > This is an overview at the conceptual level. For detailed API names and related types in your app's framework, see [Process Management](overview-features-apis.md#process-management).
 
 In this document, we discuss how to handle process exits and failures, using the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events.
 
@@ -49,7 +49,7 @@ The WebView2 Runtime is composed of different types of processes, including:
   > [!NOTE]
   > This is an illustrative and incomplete list of process kinds. The purpose and management details for these processes is part of the Chromium architecture and beyond the scope of this document, or the WebView2 architecture.
 
-When you create and initialize a WebView2 control, WebView2 will ensure there's a WebView2 Runtime to power your control and connect to its [WebView2 Process Group](<link>). Once this connection is established, your control will start monitoring these processes for the following events:
+When you create and initialize a WebView2 control, WebView2 will ensure there's a WebView2 Runtime to power your control and connect to its [WebView2 Process Group](process-model.md#processes-in-the-webview2-runtime). Once this connection is established, your control will start monitoring these processes for the following events:
 
   * **Main browser process exits.** If the main browser process exits for _any reason_, the `CoreWebView2Environment` will raise the `BrowserProcessExited` event. Use this event to synchronize operations involving the WebView2 Runtime resources and lifetime, such as _User Data Folder_ management and updates. See [Main Browser Process Exits](<link>) below for more details.
   * **Any process failure.** When _any of the processes_ in the WebView2 Runtime fails, the CoreWebView2 will raise the `ProcessFailed` event. Use this event for diagnostics and recovery from failures in the WebView2 processes. See [Process Failures](<link>) below for more details.
@@ -63,7 +63,7 @@ When you create and initialize a WebView2 control, WebView2 will ensure there's 
 The `BrowserProcessExited` event ([COM](<link>), [.NET](<link>), [WinRT](<link>)) indicates that the main browser process has exited and its resources (including its child processes) have been released. This can happen for the following reasons:
 
   * All WebView2 controls from the CoreWebView2Environment have been closed. Example app scenarios include:
-    - **Clearing the [User Data Folder](<link>).** Your application needs to wait until the WebView2 Runtime has released the _User Data Folder_ before it can delete its contents. After closing all WebView2 controls, the `BrowserProcessExited` event indicates this has happened and your application can proceed with the operation.
+    - **Clearing the [User Data Folder](user-data-folder.md).** Your application needs to wait until the WebView2 Runtime has released the _User Data Folder_ before it can delete its contents. After closing all WebView2 controls, the `BrowserProcessExited` event indicates this has happened and your application can proceed with the operation.
     - **Updating the WebView2 Runtime.** In order to make use of the latest WebView2 Runtime after an update, your application needs to close all WebView2 controls and create a new `CoreWebView2Environment`. To ensure the new version is used, your application must wait for the `BrowserProcessExited` event; otherwise, the main browser process might stay alive when the new environment is created and switching to the new version would fail.
     - **Restarting with a different environment configuration.** Most of the configuration used for a `CoreWebView2Environment` is bound to the main browser process lifetime. In order to make changes to this configuration (for example, to language), your application needs to close existing WebView2 controls and wait for `BrowserProcessExited` before recreating the controls; otherwise, initializing the WebView2 controls from the new CoreWebView2Environment might fail with incompatible configuration.
     - **Clearing auth cache.** Auth cache is bound to the main browser process lifetime. To clear the cache, your application must recreate its WebView2 controls from a new main browser process instance. To ensure a new main browser process instance is used when recreating the controls, your application must wait for the `BrowserProcessExited` event before proceeding; otherwise, the main browser process might stay alive when the cotrols are recreated and preserve the auth cache.
@@ -118,7 +118,7 @@ The processes in the _WebView2 Process Group_ can be associated to one or many W
   * **Utility processes.** Utility processes host one or more _services_ in the _WebView2 Process Group_. Each utility process supports the entire _WebView2 Process Group_ and is thus associated with all WebView2 controls using this _WebView2 Process Group_.
 
   > [!NOTE]
-  > Do not rely on the details about how processes are associated to each WebView2 control, as they are part of the evolving Chromium architecture and subject to change even due to configuration and system conditions. For more information see [Process Model](<link>).
+  > Do not rely on the details about how processes are associated to each WebView2 control, as they are part of the evolving Chromium architecture and subject to change even due to configuration and system conditions. For more information see [Process Model](process-model.md).
 
 When a process in the _WebView2 Process Group_ exits unexpectedly (for example, due to a crash), every WebView2 control **associated** to it will raise a `ProcessFailed` event. You can use the [Process Failure Details](<link>) to decide how to handle each case. The following are some examples of what these cases can be:
 
@@ -175,7 +175,7 @@ Your application can use and collect information from [Process Failure Details](
 > [!NOTE]
 > Some process failures might raise the `ProcessFailed` event across different WebView2 controls in your application (see [Unexpected Exits](<link>) for more information). You must decide how often to gather details and how to handle duplicates for these cases.
 
-Additionally, most process crashes will generate dumps in the [User Data Folder](<link>) or the configured `FailureReportFolderPath` ([COM](<link>), [.NET](<link>), [WinRT](<link>)). You can use these dumps to understand crashes and provide additional information when contacting the WebView2 team.
+Additionally, most process crashes will generate dumps in the [User Data Folder](user-data-folder.md) or the configured `FailureReportFolderPath` ([COM](<link>), [.NET](<link>), [WinRT](<link>)). You can use these dumps to understand crashes and provide additional information when contacting the WebView2 team.
 
 ## Main Browser Process Crashes
 When the main browser process in the _WebView2 Process Group_ exits unexpectedly, **both** events discussed in this document will be raised:
