@@ -196,6 +196,25 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 
 
 <!-- ====================================================================== -->
+## Overview of the user interface
+
+The DevTools user interface is designed to be easy to use and learn. It's composed of the following main areas:
+
+* The **Activity Bar** at the top, or on the left side, which contains icons used to access tools, settings, documentation, and more.
+* The main tabbed tool panel area, where the tool that's currently selected in the **Activity Bar** appears.
+* The **Quick View** toolbar, at the bottom, which contains icons used to access tools.
+* The bottom tabbed tool panel area, where the tool that's currently selected in the **Quick View** toolbar appears.
+
+TODO SCREENSHOT
+
+TODO: bring over some of the focus-mode.md content.
+
+<!-- ------------------------------ -->
+#### Tool icons and names
+
+TODO
+
+<!-- ====================================================================== -->
 ## Features of the Activity Bar
 
 DevTools gives you an amazing amount of power to inspect, debug, and change the website currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
@@ -384,6 +403,12 @@ In addition to **Activity Bar** and **Quick View** tools, DevTools includes the 
 *  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
 *  The **Device Emulation** tool.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 *  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md).
+
+
+<!-- ------------------------------ -->
+#### Change the location of the Activity Bar
+
+TODO
 
 
 <!-- ------------------------------ -->
