@@ -36,7 +36,7 @@ The sidebar refers to a persistent column located on the side of the browser, wh
 | Term | Definition |
 |---|---|
 | Sidebar API | Name of the feature that you can use in your Microsoft Edge extensions. |
-| `sidepanel` | Name of the API and permission to enable any extension as a Sidebar extension, as derived from the Chromium browser engine. |
+| `sidePanel` <!--or side panel--> | Name of the API and permission to enable any extension as a sidebar extension, as derived from the Chromium browser engine. |
 | Sidebar extension | A Microsoft Edge extension that's designed to be opened in the sidebar. |
 
 ![The sidebar for a Microsoft Edge extension](./sidebar-images/sidebar-screenshot.png)
@@ -45,6 +45,8 @@ The sidebar refers to a persistent column located on the side of the browser, wh
 For details on how to create an extension, see:
 * [Create an extension tutorial, part 1](../getting-started/part1-simple-extension.md)
 * [Create an extension tutorial, part 2](../getting-started/part2-content-scripts.md)
+
+These tutorials don't demonstrate the sidebar, but are general extensions examples.
 
 
 <!-- ====================================================================== -->
@@ -69,6 +71,8 @@ Include the `sidePanel` permission in the extension's manifest file:
 ```json
 {
   ...
+  "name": "My sidebar extension",
+  ...
   "side_panel": {
     "default_path": "sidebar.html"
   },
@@ -78,16 +82,6 @@ Include the `sidePanel` permission in the extension's manifest file:
    ...
 }
 ```
-<!-- todo: change to this listing?
-{
-  "name": "My sidebar extension",
-  ...
-  "permissions": [
-    "sidePanel"
-  ]
-}
-compare listing: https://developer.chrome.com/docs/extensions/reference/sidePanel/#manifest
--->
 
 Every extension for Microsoft Edge has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.
 
@@ -102,9 +96,6 @@ See also:
 
 The following sections demonstrate some common use cases for the Side Panel API.
 
-For complete extension examples, see:
-* [Create an extension tutorial, part 1](../getting-started/part1-simple-extension.md)
-* [Create an extension tutorial, part 2](../getting-started/part2-content-scripts.md)
 
 
 <!-- ------------------------------ -->
@@ -178,15 +169,10 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
 });
 ```
 
-When a user switches to a tab or site for which the sidebar is not enabled, the sidebar is hidden.  When the user switches back to a tab where the sidebar was previously open, the sidebar is displayed again.
+When a user switches to a tab or site for which the sidebar is not enabled, the sidebar is hidden.
 
-<!-- todo: add?  derived from https://developer.chrome.com/docs/extensions/reference/sidePanel/#by-site --
-When the user navigates to a site where the sidebar is not enabled, the sidebar closes and the extension isn't listed in the sidebar drop-down menu.
--->
-
-<!-- todo add? from https://developer.chrome.com/docs/extensions/reference/sidePanel/#by-site --
-For a complete example, see the [Tab-specific side panel](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific) sample.
--->
+For a complete example, see the [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific) sample.
+<!-- todo: keep link text consistent in this file -->
 
 
 <!-- ------------------------------ -->
@@ -222,13 +208,6 @@ chrome.sidePanel
   .catch((error) => console.error(error));
 ...
 ```
-
-<!-- todo: add the following?  from https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon --
-With `openPanelOnActionClick()` enabled, you can also open the side panel using a keyboard shortcut by specifying an [action command](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) in the manifest as featured in the [Tab-specific side panel](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific) sample.
--->
-
-<!-- See also:
-* [chrome.sidePanel](https://developer.chrome.com/docs/extensions/reference/sidePanel/) -->
 
 
 <!-- ------------------------------ -->
@@ -270,26 +249,20 @@ Extensions in the Microsoft Edge sidebar have these user experience (UX) feature
 <!-- ------------------------------ -->
 #### How extensions that have sidebar support are indicated
 
-<!-- todo: add?
-###### Navigating to the side panel menu
-
-Users can find available sidebars on the sidebar menu.  Then, they can choose an extension from the drop-down menu:
--->
-
 * The sidebar icon is displayed next to the extension name in the hub in the toolbar:
 
 ![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
 <!-- todo: fresh png -->
 
-* On the Microsoft Edge Add-Ons store page, there's a dialog on the extension product page, highlighting the sidebar feature.
-<!-- todo: show that "dialog", is it actually a dialog? -->
 
-<!-- todo: add?
 ###### Using the action toolbar icon
 
-Users can open the sidebar by clicking [the action icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon), if it's enabled.
+Users can open the sidebar by clicking the extension shortcut in the toolbar, if it's enabled.
+
+See [Enable the extension's shortcut icon to open the sidebar](#enable-the-extensions-shortcut-icon-to-open-the-sidebar), above.
 
 
+<!-- todo: add later after implemented:
 ###### Using a keyboard shortcut
 
 Users can open the sidebar by pressing a keyboard shortcut, if the [action command](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) and the [action icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) are enabled.
@@ -306,6 +279,24 @@ To open a sidebar extension, the user can do either of the following:
 * Click the sidebar icon in the hub in the toolbar.
 
 * Right-click the extension's shortcut in the toolbar.
+
+<!-- true but maybe not needed to point out:
+* On the Microsoft Edge Add-Ons store page, there's a information message on the extension product page, highlighting the sidebar feature. -->
+
+
+<!-- ====================================================================== -->
+## Extension samples
+
+<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#examples -->
+
+For <!--more--> Sidebar API extensions demos, explore any of the following extensions at Chrome docs:
+
+* [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific)
+* [Multiple side panels](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-multiple)
+* [Global side panel](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-global)
+* [Dictionary side panel](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/sample.sidepanel-dictionary)
+
+<!-- link to tut here? -->
 
 
 <!-- ====================================================================== -->
@@ -379,7 +370,7 @@ The path to the sidebar HTML file to use.  This must be a local resource within 
 
 Type: `string`, optional
 
-<!-- Optional; the default is (todo). -->
+The default is a blank page with no UI.
 
 
 ###### tabId
@@ -388,8 +379,13 @@ Type: `number`, optional
 
 If a `tabID` is specified, the sidebar options (`enabled`, `path`, and `tabId`) only apply to the tab that has this ID.  If a `tabID` is not specified, these options set the default behavior, which is used for any tab that doesn't have specific settings defined.
 
-<!-- todo: include this sentence?  from https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-PanelOptions --
-If the same `path` is set for this `tabId` and the default `tabId`, then the panel for this `tabId` will be a different instance than the panel for the default `tabId`. -->
+<!-- todo: what sentence do we want that's equivalent to this sentence?  from https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-PanelOptions --
+If the same `path` is set for this `tabId` and the default `tabId`, then the panel for this `tabId` will be a different instance than the panel for the default `tabId`.
+
+our draft sentence:
+
+... the same instance ...
+-->
 
 
 <!-- ====================================================================== -->
@@ -616,9 +612,19 @@ Promises are supported in Manifest V3 and later, but callbacks are provided for 
 
 
 <!-- ====================================================================== -->
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developer.chrome.com/docs/extensions/reference/sidePanel/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
+<!-- todo: update the author -->
+
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
 ## See also
 
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
 * [Declare API permissions in extension manifests](../developer-guide/declare-permissions.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
-* [chrome.sidePanel](https://developer.chrome.com/docs/extensions/reference/sidePanel/)<!-- todo: keep link? -->
+* [chrome.sidePanel](https://developer.chrome.com/docs/extensions/reference/sidePanel/)
