@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/21/2023
+ms.date: 06/22/2023
 ---
 # Add an extension to the sidebar
 
@@ -172,7 +172,6 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
 When a user switches to a tab or site for which the sidebar is not enabled, the sidebar is hidden.
 
 For a complete example, see the [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific) sample.
-<!-- todo: keep link text consistent in this file -->
 
 
 <!-- ------------------------------ -->
@@ -252,7 +251,6 @@ Extensions in the Microsoft Edge sidebar have these user experience (UX) feature
 * The sidebar icon is displayed next to the extension name in the hub in the toolbar:
 
 ![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
-<!-- todo: fresh png -->
 
 
 ###### Using the action toolbar icon
@@ -262,7 +260,7 @@ Users can open the sidebar by clicking the extension shortcut in the toolbar, if
 See [Enable the extension's shortcut icon to open the sidebar](#enable-the-extensions-shortcut-icon-to-open-the-sidebar), above.
 
 
-<!-- todo: add later after implemented:
+<!-- todo: un-comment & revise, after implemented:
 ###### Using a keyboard shortcut
 
 Users can open the sidebar by pressing a keyboard shortcut, if the [action command](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) and the [action icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) are enabled.
@@ -292,11 +290,9 @@ To open a sidebar extension, the user can do either of the following:
 For <!--more--> Sidebar API extensions demos, explore any of the following extensions at Chrome docs:
 
 * [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific)
-* [Multiple side panels](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-multiple)
-* [Global side panel](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-global)
-* [Dictionary side panel](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/sample.sidepanel-dictionary)
-
-<!-- link to tut here? -->
+* [Multiple side panels example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-multiple)
+* [Global side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-global)
+* [Dictionary side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/sample.sidepanel-dictionary)
 
 
 <!-- ====================================================================== -->
@@ -359,7 +355,7 @@ Panel options, including `enabled`, `path`, and `tabId`.
 
 ###### enabled
 
-Whether the sidebar is enabled.  Optional; the default is `true`.
+Whether the sidebar is enabled.  The default is `true`.
 
 Type: `boolean`, optional
 
@@ -612,19 +608,18 @@ Promises are supported in Manifest V3 and later, but callbacks are provided for 
 
 
 <!-- ====================================================================== -->
-> [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/extensions/reference/sidePanel/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
-<!-- todo: update the author -->
-
-[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-
-<!-- ====================================================================== -->
 ## See also
 
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
 * [Declare API permissions in extension manifests](../developer-guide/declare-permissions.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
 * [chrome.sidePanel](https://developer.chrome.com/docs/extensions/reference/sidePanel/)
+
+
+<!-- ====================================================================== -->
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developer.chrome.com/docs/extensions/reference/sidePanel/).
+
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
