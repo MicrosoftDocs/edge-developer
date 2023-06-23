@@ -31,8 +31,6 @@ When this change is released, Microsoft Edge Enterprise Add-ons with Manifest V2
 <!-- ====================================================================== -->
 ## See also
 
-For Partner Center features or updates, see [Released features for Microsoft Edge Add-ons](released-features.md).
-
-To view the consumer roadmap, go to [Microsoft Edge Insider Roadmap](https://www.microsoftedgeinsider.com/whats-next) and scroll down to the **Feature Roadmap** section. 
-
-To view the full roadmap for Microsoft Edge, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge).
+* [Released features for Microsoft Edge Add-ons](released-features.md) - Partner Center features or updates.
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+* [Microsoft 365 roadmap > Microsoft Edge](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge)
