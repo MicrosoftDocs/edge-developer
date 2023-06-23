@@ -788,6 +788,19 @@ Microsoft Edge WebView controls allow app developers to host web content in nati
 
 To enable diagnostic data collection, go to `edge://settings/privacy`. Turn on the **Optional diagnostic data** setting. To turn off diagnostic data collection for Microsoft Edge on Windows 10 and later, open **Start** > **Settings** > **Privacy** and select **Diagnostics & feedback**. To turn off diagnostic data collection for all other platforms, go to `edge://settings/privacy`. Turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting. The applications hosting Microsoft Edge WebView may collect other data that is governed by the data collection management of the developer and relevant privacy policies.
 
+
+<!-- ====================================================================== -->
+## Workspaces
+
+The Microsoft Edge Workspaces feature allows you to easily organize and share your browsing tasks with collaborators via customizable, shareable browsing windows. Each workspace shares favorites, a set of workspace tabs, and history, all created and curated by you and your collaborators. Workspace data is automatically saved, kept up-to-date, and stored in OneDrive/SharePoint.
+
+Microsoft Edge Workspaces shares tabs, favorites, and history with collaborators in real-time. Collaborators' profile pictures are used to indicate which workspace tab they are using and which workspace tabs they have opened, changed, or closed. Collaborators cannot see how you interact with a webpage (workspaces don't screen-share).
+
+Collaborators cannot see password-protected content unless they sign in and they have access via their own credentials. Microsoft Edge Workspaces doesn't store or share browsing data from non-workspace browsing sessions. If you leave a workspace, the stored contents remain available for other collaborators. If you delete a workspace, the stored contents are deleted for all collaborators.
+
+Microsoft Edge Workspaces is only available for enterprise customers who are signed into Microsoft Edge with a Microsoft Azure Active Directory (AAD) account.  Workspaces aren't available when using Guest mode or InPrivate browsing. 
+
+
 <!-- ====================================================================== -->
 ## Writing assistance
 
