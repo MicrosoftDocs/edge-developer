@@ -776,7 +776,7 @@ To enable diagnostic data collection, go to `edge://settings/privacy`. Turn on t
 <!-- ====================================================================== -->
 ## Workspaces
 
-The Microsoft Edge Workspaces feature allows you to easily organize and share your browsing tasks with collaborators via customizable, shareable browsing windows. Each workspace shares a set of tabs, favorites, and history, all created and curated by you and your collaborators. Workspace data is automatically saved, kept up-to-date, and stored in OneDrive/SharePoint.
+The Microsoft Edge Workspaces feature allows you to easily organize and share your browsing tasks with collaborators via customizable, shareable browsing windows. Each workspace shares favorites, a set of workspace tabs, and history, all created and curated by you and your collaborators. Workspace data is automatically saved, kept up-to-date, and stored in OneDrive/SharePoint.
 
 Microsoft Edge Workspaces shares tabs, favorites, and history with collaborators in real-time. Collaborators' profile pictures are used to indicate which workspace tab they are using and which workspace tabs they have opened, changed, or closed. Collaborators cannot see how you interact with a webpage (workspaces don't screen-share).
 
