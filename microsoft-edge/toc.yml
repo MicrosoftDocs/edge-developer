@@ -848,6 +848,10 @@
             - name: Create an extension that customizes the DevTools UI
               href: extensions-chromium/developer-guide/devtools-extension.md
 
+            - name: Add an extension to the sidebar
+              href: extensions-chromium/developer-guide/sidebar.md
+              displayName: Sidebar extensions
+
         - name: Manifest
           items:
             - name: Overview and timelines for migrating to Manifest V3
@@ -894,10 +898,6 @@
             - name: Reply to user reviews
               href: extensions-chromium/publish/reply-user-reviews.md
               displayName: Respond to user reviews
-
-            - name: Sidebar Extensions
-              href: extensions-chromium/publish/side-bar.md
-              displayName: Sidebar Extensions
 
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
