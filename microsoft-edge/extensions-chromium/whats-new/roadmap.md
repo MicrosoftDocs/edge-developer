@@ -5,11 +5,9 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/19/2023
+ms.date: 07/19/2021
 ---
 # Roadmap for Microsoft Edge Add-ons
-
-<!-- todo: add new things that will be coming -->
 
 These are the next planned [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) features or updates for Microsoft Edge extensions.
 
