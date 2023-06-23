@@ -1235,6 +1235,10 @@
               href: webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps  # top-of-page title
 
+            - name: Process-related events
+              href: webview2/concepts/process-related-events.md
+              displayName: Handling process-related events in WebView2  # top-of-page title
+
             - name: Basic authentication
               href: webview2/concepts/basic-authentication.md
               displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
