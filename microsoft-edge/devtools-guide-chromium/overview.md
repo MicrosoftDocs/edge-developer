@@ -348,11 +348,11 @@ Click **More tools** (**+**) to list all the available tools. Selecting a tool w
 
 If there isn't enough space in the **Activity Bar** to display all pinned tools, some tools may overflow into the **More tools** menu:
 
-![The More tools menu, showing some pinned tools that couldn't fit in the Activity Bar](./focus-mode-images/overflow-tools.png)
+![The More tools menu, showing some pinned tools that couldn't fit in the Activity Bar](./overview-images/overflow-tools.png)
 
 To unpin a tool from the **Activity Bar**, right-click the tool and select **Remove from Activity Bar**:
 
-![The right-click menu to unpin tools from the Activity bar](./focus-mode-images/remove-tool.png)
+![The right-click menu to unpin tools from the Activity bar](./overview-images/remove-tool.png)
 
 Currently, the following tools cannot be unpinned from the **Activity Bar**:
 

@@ -134,8 +134,6 @@ You can filter the experimental features by text included in the title.
 
 We're eager to hear your feedback about experimental features.  To share feedback with us, [Contact the Microsoft Edge DevTools team](../contact.md).
 
-One of the UI experiments adds a new way to provide feedback: when the **Focus Mode** experiment is turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](./index-images/help-icon-of-focus-mode.png)) > **Feedback**.
-
 
 <!-- ====================================================================== -->
 ## List of experiments
@@ -629,7 +627,7 @@ Status:
 <!-- ====================================================================== -->
 ## Focus Mode
 
-Focus Mode is a new user interface for DevTools.  Focus Mode is designed to simplify and streamline the DevTools UI, without compromising its feature set.
+Focus Mode is the name of the user interface of DevTools.  Focus Mode is designed to simplify and streamline the DevTools UI, without compromising its feature set.
 
 Focus Mode replaces the main row of tabs with an **Activity Bar**, which is a compact toolbar with distinctive icons.  The **Activity Bar** makes it possible to pin, rearrange, and open your favorite tools, for quick access.  The **Activity Bar** also provides access to user settings, help, and other features.
 
