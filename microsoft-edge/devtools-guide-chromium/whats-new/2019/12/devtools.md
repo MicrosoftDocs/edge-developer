@@ -257,7 +257,7 @@ You can now view the initiators and dependencies of a network request as a neste
 After [logging network activity in the Network panel](../../../network/index.md), select a resource and then go to the **Initiator** panel to view the **Request Initiator Chain**:
 
 *  The **inspected resource** is bold.  In the screenshot above, `ai.2.min.js` is the inspected resource.
-*  The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.
+*  The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.  (The screenshot shows an outdated URL.  The latest URL is `https://www.microsoft.com/edge/download/insider`.)
 *  The resources below the inspected resource are the **dependencies**.  In the screenshot above, `https://dc.services.visualstudio.com/v2/track` is a dependency of `ai.2.min.js`.  In other words, `ai.2.min.js` caused the network request for `https://dc.services.visualstudio.com/v2/track`.
 
 Initiator and dependency information can also be accessed by holding **Shift** and then hovering over network resources.  See [Display initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies) in _Network features reference_.
