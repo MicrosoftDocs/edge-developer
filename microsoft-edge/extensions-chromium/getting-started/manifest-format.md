@@ -9,8 +9,6 @@ ms.date: 06/22/2023
 ---
 # Manifest file format for extensions
 
-<!-- todo: add manifest code -->
-
 Every extension for Microsoft Edge has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.  The manifest file includes information such as:
 
 *  The version number of the extension.
