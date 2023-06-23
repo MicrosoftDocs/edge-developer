@@ -29,7 +29,7 @@ The **Selector Stats** feature provides statistics about the CSS rule selectors 
 
 To view the statistics of your CSS rule selectors during long-running **Recalculate Style** events, first record a performance trace with the Selector Stats feature enabled.
 
-The Selector Stats feature isn't always enabled, because it adds more overhead to your performance recordings. You should only leave it turned on when you need to investigate the performance of **Recalculate Style** events and other rendering information:
+The Selector Stats feature isn't always enabled, because it adds more overhead to your performance recordings. You should only leave it turned on when you need to investigate the performance of **Recalculate Style** events and other rendering information.
 
 To record a performance trace with selector statistics:
 
@@ -39,7 +39,7 @@ To record a performance trace with selector statistics:
 
    ![The 'Enable advanced rendering instrumentation' checkbox in the Performance tool](./selector-stats-images/enable-feature.png)
  
-1. Click **Record** and run the scenario that you want to improve for your website or app.
+1. Click **Record**, and then run the scenario that you want to improve for your website or app.
 
 1. Click **Stop**.
 
@@ -103,4 +103,4 @@ If you find a CSS selector that took the browser a long time to calculate and wa
 
 * [Get started analyzing runtime performance](./index.md) - An introduction to analyzing runtime performance in DevTools.
 * [Performance features reference](./reference.md) - Covers many of the features in the **Performance** tool.
-* [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/)
+* [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/) - Windows blog post.
