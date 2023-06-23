@@ -201,18 +201,88 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 The DevTools user interface is designed to be easy to use and learn. It's composed of the following main areas:
 
 * The **Activity Bar** at the top, or on the left side, which contains icons used to access tools, settings, documentation, and more.
-* The main tabbed tool panel area, where the tool that's currently selected in the **Activity Bar** appears.
+* The current tool area, where the tool that's currently selected in the **Activity Bar** appears.
 * The **Quick View** toolbar, at the bottom, which contains icons used to access tools.
-* The bottom tabbed tool panel area, where the tool that's currently selected in the **Quick View** toolbar appears.
+* The bottom tool area, where the tool that's currently selected in the **Quick View** toolbar appears.
 
-TODO SCREENSHOT
+!!TODO SCREENSHOT!!
 
-TODO: bring over some of the focus-mode.md content.
+By default, the **Activity Bar** contains the following tools:
+
+*  **Inspect** tool (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) toggle button.
+
+*  **Device Emulation** tool (![Device Emulation icon](./overview-images/device-emulation-icon-light-theme.png)) button.
+
+*  **Welcome** tool (![Welcome tool icon](./overview-images/welcome.png)).
+
+*  **Elements** tool (![Elements tool icon](./overview-images/elements.png)).
+
+*  **Console** tool (![Console tool icon](./overview-images/console.png)).
+
+*  **Sources** tool (![Sources tool icon](./overview-images/sources.png)).
+
+*  **Network** tool (![Network tool icon](./overview-images/network.png)).
+
+*  **Performance** tool (![Performance tool icon](./overview-images/performance.png)).
+
+*  **Memory** tool (![Memory tool icon](./overview-images/memory.png)).
+
+*  **Application** tool (![Application tool icon](./overview-images/application.png)).
+
+By default, the **Quick View** toolbar contains the following tools:
+
+*  **Console** tool (![Console tool icon](./overview-images/console.png)).
+
+*  **Issues** tool (![Issues tool icon](./overview-images/issues.png)).
+
+In the **Activity Bar**, tool tabs either contain the tool name and icon, or just the tool icon, depending on the width of the DevTools window. If the window is wide enough, the tool name and icon appear. If the window is too narrow, only the tool icon appears and the tool name appears when you hover over the tool icon.
+
+If the **Activity Bar** is located on the left side of the DevTools window, vertically, only the tool icons appear, and the tool names appear when you hover over the tool icons.
+
 
 <!-- ------------------------------ -->
-#### Tool icons and names
+#### Change the location of the Activity Bar
 
-TODO
+By default, the **Activity Bar** is displayed horizontally at the top of the DevTools window. To maximize usable screen space in a variety of DevTools window size and locations, you can change the location of the **Activity Bar** to the left side of the DevTools window or to be automatically set depending on the DevTools window docking location.
+
+The **Activity Bar** can be in one of the following locations:
+
+* **Top** (default): The **Activity Bar** will always be horizontal.
+
+* **Left side**: The **Activity Bar** will always be vertical.
+
+* **Adapt to dock location**: The **Activity Bar** will be in a horizontal or vertical orientation depending on where DevTools is docked.
+
+  * If DevTools is docked to the left or right side of the browser window, the **Activity Bar** will be vertical.
+
+  * If DevTools is docked to the bottom side of the browser window, or undocked in its own window, the **Activity Bar** will be horizontal.
+
+When the **Activity Bar** is horizontal, tool names appear next to tool icons if there is enough space to display them.
+
+If there isn't enough space to display all tool names, the horizontal **Activity Bar** shows some tabs with tool icons and names, and some tabs with icons only:
+
+![Focus Mode with the horizontal Activity bar](./overview-images/horizontal.png)
+
+To change the location of the **Activity Bar**, do either of the following:
+
+!!TODO ADD IMAGES FOR THE STEPS!!
+
+* Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then choose a location in **Activity Bar location**.
+
+* In the **Activity Bar**, click **Move Activity Bar to left** (![The Move Activity Bar to left icon](./overview-images/move-activity-bar-to-left-icon.png)) or **Move Activity Bar to top** (![The Move Activity Bar to top icon](./overview-images/move-activity-bar-to-top-icon.png)).
+
+* Use the Command Menu. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS), enter the words **activity bar**, and then select **Move Activity Bar to left** or **Move Activity Bar to top**. See [Power tip: Use the Command Menu](#power-tip-use-the-command-menu).
+
+
+<!-- ------------------------------ -->
+#### Change the location of the Quick View toolbar
+
+By default, the **Quick View** toolbar is located at the bottom of the DevTools window. You can also change the location of the **Quick View** toolbar to the right side of the DevTools window.
+
+To change the location of the **Quick View** toolbar, click the **Dock Quick View to the right** or **Dock Quick View to the bottom** (![The Dock Quick View icon](./overview-images/move-quickview-icon.png)) icon in the **Quick View** toolbar.
+
+!!TODO IMAGE!!
+
 
 <!-- ====================================================================== -->
 ## Features of the Activity Bar
@@ -265,6 +335,30 @@ The **Activity Bar** contains the following features:
 ![The main toolbar, with labels that identify its features](./overview-images/devtools-intro-menu-bar.png)
 
 The **Activity Bar** features are described below.
+
+
+<!-- ------------------------------ -->
+#### Pin and rearrange tools in the Activity Bar
+
+You can choose which tools appear in the **Activity Bar** by pinning or unpinning tools. This allows you to customize DevTools to your preferred workflow.
+
+Click **More tools** (**+**) to list all the available tools. Selecting a tool will pin it to the **Activity Bar**. It will be shown by default every time DevTools is opened.
+
+![The More tools menu in Focus Mode, with the expanded list of all tools](./overview-images/more-tools.png)
+
+If there isn't enough space in the **Activity Bar** to display all pinned tools, some tools may overflow into the **More tools** menu:
+
+![The More tools menu, showing some pinned tools that couldn't fit in the Activity Bar](./focus-mode-images/overflow-tools.png)
+
+To unpin a tool from the **Activity Bar**, right-click the tool and select **Remove from Activity Bar**:
+
+![The right-click menu to unpin tools from the Activity bar](./focus-mode-images/remove-tool.png)
+
+Currently, the following tools cannot be unpinned from the **Activity Bar**:
+
+* **Elements** tool
+* **Console** tool
+* **Sources** tool
 
 
 <!-- ------------------------------ -->
@@ -372,6 +466,22 @@ Click the **Close** DevTools (![Close DevTools icon](./overview-images/close-dev
 
 
 <!-- ====================================================================== -->
+## Features of the Quick View toolbar
+
+Use **Quick View** to open a second tool next to the one already selected from the **Activity Bar**:
+
+1. Select a tool from the **Activity Bar**.
+
+1. In the **Quick View** toolbar, click **More tools** (**+**), and then select a different tool from the list.
+
+The following screenshot shows the **Network** tool and the **Console** tool side-by-side:
+
+![Focus Mode with the Network tool at the top, and the Console tool at the bottom](./overview-images/quick-view-tool.png)
+
+To hide or expand **Quick View**, click **Collapse Quick View** (![Collapse icon](./overview-images/collapse-quick-view-icon.png)) or **Expand Quick View** (![Expand icon](./overview-images/expand-quick-view-icon.png)), or press the **Escape** key.
+
+
+<!-- ====================================================================== -->
 ## Overview of all tools
 
 For a summary of each tool, see [Overview of all tools](about-tools.md#overview-of-all-tools) in _About the list of tools_.
@@ -403,12 +513,6 @@ In addition to **Activity Bar** and **Quick View** tools, DevTools includes the 
 *  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
 *  The **Device Emulation** tool.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 *  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md).
-
-
-<!-- ------------------------------ -->
-#### Change the location of the Activity Bar
-
-TODO
 
 
 <!-- ------------------------------ -->
