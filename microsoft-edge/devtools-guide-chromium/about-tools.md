@@ -10,19 +10,21 @@ ms.date: 06/21/2023
 # About the list of tools
 
 DevTools provides 35 tools:
-*  2 toolbar icons, for the **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)).
-*  3 permanent toolbar tabs, for the **Elements**, **Console**, and **Sources** tools.
-*  30 optional toolbar tabs, for the optional tools.
 
-The default tools, including toolbar icons and toolbar tabs:
+*  2 **Activity Bar** icons, for the **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)).
+*  3 permanent **Activity Bar** tabs, for the **Elements**, **Console**, and **Sources** tools.
+*  30 optional tabs, for the optional tools.
 
-![All of the default tools of DevTools, including 2 toolbar icons and 8 toolbar tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
+The default tools, including **Activity Bar** icons and tabs:
+
+![All of the default tools of DevTools, including 2 icons and 8 tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
 
 The optional tools that aren't open by default, on the **More Tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu:
 
 ![All of the optional tools of DevTools, on the More Tools menu, with 24 optional tools](./about-tools-images/all-optional-tools.png)
 
 The following features are additional ways to access the tools:
+
 *  The **Quick View** is an additional toolbar and area to hold tool tabs.
 *  The **Command Menu** is a way to directly use features of tools.
 *  The **Settings** pages can turn on additional features of tools.
