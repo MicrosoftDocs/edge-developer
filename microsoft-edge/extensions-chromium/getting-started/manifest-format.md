@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/19/2023
+ms.date: 06/22/2023
 ---
 # Manifest file format for extensions
 
@@ -36,6 +36,9 @@ For reference information about each field, see [Manifest file format (V3)](http
 
   // Recommended
   "action": {...},
+  "action": {
+    "default_popup": "mysidepanel.html"
+  },
   "default_locale": "en",
   "description": "A plain-text description",
   "icons": {...},
@@ -90,11 +93,15 @@ For reference information about each field, see [Manifest file format (V3)](http
     "page": "options.html"
   },
   "permissions": ["tabs"],
+  "permissions": ["sidePanel"],
   "platforms": ...,
   "replacement_web_app": ...,
   "requirements": {...},
   "sandbox": [...],
   "short_name": "Short Name",
+  "side_panel": {
+    "default_path": "mysidepanel.html"
+  },
   "storage": {
     "managed_schema": "schema.json"
   },
