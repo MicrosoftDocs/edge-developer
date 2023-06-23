@@ -34,15 +34,15 @@ For reference information about each field, see [Manifest file format (V3)](http
 
   // Recommended
   "action": {...},
-  "action": {
-    "default_popup": "mysidepanel.html"
-  },
   "default_locale": "en",
   "description": "A plain-text description",
   "icons": {...},
 
   // Optional
   "action": ...,
+  "action": {
+    "default_popup": "mysidepanel.html"
+  },
   "author": ...,
   "automation": ...,
   "background": {
