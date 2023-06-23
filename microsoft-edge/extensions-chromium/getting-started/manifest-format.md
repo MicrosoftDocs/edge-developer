@@ -23,7 +23,7 @@ The format for `manifest.json` for extensions is moving from Manifest V2 to Mani
 
 The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V3 package.
 
-For reference information about each field, see [Manifest file format (V3)](https://developer.chrome.com/docs/extensions/mv3/manifest) and then select the links on the fields.
+For reference information about each field, see [Manifest file format (V3)](https://developer.chrome.com/docs/extensions/mv3/manifest) and then click the links on the fields.
 
 ```json
 {
@@ -40,9 +40,6 @@ For reference information about each field, see [Manifest file format (V3)](http
 
   // Optional
   "action": ...,
-  "action": {
-    "default_popup": "mysidepanel.html"
-  },
   "author": ...,
   "automation": ...,
   "background": {
@@ -90,16 +87,13 @@ For reference information about each field, see [Manifest file format (V3)](http
     "chrome_style": true,
     "page": "options.html"
   },
-  "permissions": ["tabs"],
-  "permissions": ["sidePanel"],
+  "permissions": ["..."],
   "platforms": ...,
   "replacement_web_app": ...,
   "requirements": {...},
   "sandbox": [...],
   "short_name": "Short Name",
-  "side_panel": {
-    "default_path": "mysidepanel.html"
-  },
+  "side_panel": {...},
   "storage": {
     "managed_schema": "schema.json"
   },
