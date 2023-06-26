@@ -9,19 +9,14 @@ ms.date: 06/21/2023
 ---
 # About the list of tools
 
-DevTools provides 35 tools:
+DevTools provides more than 30 tools:
 
 *  2 **Activity Bar** icons, for the **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)).
 *  3 permanent **Activity Bar** tabs, for the **Elements**, **Console**, and **Sources** tools.
-*  30 optional tabs, for the optional tools.
-
-The default tools, including **Activity Bar** icons and tabs:
+*  Optional tabs, for optional tools such as the **Welcome**, and **Network** tools.
+* More optional tools, on the **More Tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu, such as the **3D View** and **Detached Elements** tools.
 
 ![All of the default tools of DevTools, including 2 icons and 8 tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
-
-The optional tools that aren't open by default, on the **More Tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu:
-
-![All of the optional tools of DevTools, on the More Tools menu, with 24 optional tools](./about-tools-images/all-optional-tools.png)
 
 The following features are additional ways to access the tools:
 
@@ -97,7 +92,9 @@ The **Command Menu** first lists the Panel tools, and then the **Quick View** to
 
 ![The Command Menu, showing the Panel tools grouped together, and then the Quick View tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
 
-To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View** or **Move to top Activity Bar**.
+To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View** or **Move to top Activity Bar**:
+
+![The contextual menu for the Changes tool, which is displayed in the Quick View toolbar. The menu contains the Move to top Activity Bar item](./about-tools-images/move-from-quickview-to-activitybar.png)
 
 To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Or, click the **Customize and control DevTools** (![Customize icon](./about-tools-images/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
 
@@ -105,7 +102,9 @@ To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Comma
 <!-- ====================================================================== -->
 ## Closing tool tabs
 
-To close a tool tab that's on a toolbar, right-click the tab, and then select **Remove from Activity Bar** or **Remove from Quick View**.
+To close a tool tab that's on a toolbar, right-click the tab, and then select **Remove from Activity Bar** or **Remove from Quick View**:
+
+![The contextual menu for the Network tool, which is displayed in the Activity Bar. The menu contains the Remove from Activity Bar item](./about-tools-images/remove-from-activitybar.png)
 
 The **Elements**, **Console**, and **Sources** tool are permanent tabs and cannot be closed.
 
