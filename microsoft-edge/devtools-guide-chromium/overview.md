@@ -84,11 +84,11 @@ hit counts:
 
 A good way to open DevTools is to right-click an item on a webpage, and then select **Inspect**:
 
-![To open DevTools, right-click any item on a webpage and then select Inspect](./overview-images/devtools-intro-inspect.png)
+![A webpage rendered in Microsoft Edge, the right-click context menu is visible, showing the Inspect item](./overview-images/inspect.png)
 
 DevTools opens, with the right-clicked element highlighted in the **DOM tree** in the **Elements** tool:
 
-![DevTools opens, with the right-clicked element highlighted in the Elements tool](./overview-images/devtools-intro-inspect-devtools-open.png)
+![Edge, with a webpage in a tab, and DevTools opened on the side next to it. The Elements tool is visible and a DOM element is selected](./overview-images/inspect-devtools-open.png)
 
 
 <!-- ------------------------------ -->
@@ -96,7 +96,7 @@ DevTools opens, with the right-clicked element highlighted in the **DOM tree** i
 
 On the Microsoft Edge toolbar, you can select **Settings and more** (`...`) >  **More tools** >  **Developer tools**:
 
-![On the Microsoft Edge toolbar, select 'Settings and more' > 'More tools' > 'Developer tools'](./overview-images/edge-settings-and-more-tools-developer-tools.png)
+![Microsoft Edge, showing the Settings and more menu, with the More tools submenu, and the Developer tools item](./overview-images/edge-settings-and-more-tools-developer-tools.png)
 
 
 <!-- ------------------------------ -->
@@ -142,9 +142,9 @@ To prevent pressing **F12** from opening DevTools:
 
 1. In Microsoft Edge, go to `edge://settings/system`.
 
-1. In the **Developer Tools** section, turn off the **Open the DevTools when the F12 key is pressed** toggle.
+1. Scroll down to the **Developer Tools** section, and then turn off the **Use F12 key to open the Developer tools** toggle.
 
-   ![In Edge Settings, disabling the F12 key for opening DevTools](./overview-images/disable-f12.png)
+   ![The Edge Settings page, with the Developer Tools section, and the toggle to disable the F12 key](./overview-images/disable-f12.png)
 
 
 <!-- ====================================================================== -->
@@ -205,7 +205,7 @@ The DevTools user interface is designed to be easy to use and learn. It's compos
 * The **Quick View** toolbar, at the bottom, which contains icons used to access tools.
 * The bottom tool area, where the tool that's currently selected in the **Quick View** toolbar appears.
 
-!!TODO SCREENSHOT!!
+![Microsoft Edge, with DevTools opened on the side, with the 4 main UI areas highlighted](./overview-images/ui-overview.png)
 
 By default, the **Activity Bar** contains the following tools:
 
@@ -265,9 +265,9 @@ If there isn't enough space to display all tool names, the horizontal **Activity
 
 To change the location of the **Activity Bar**, do either of the following:
 
-!!TODO ADD IMAGES FOR THE STEPS!!
+* Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then choose a location in **Activity Bar location**:
 
-* Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then choose a location in **Activity Bar location**.
+  ![The Customize and control DevTools menu of DevTools, showing the various Activity Bar location options](./overview-images/move-activity-bar-from-customize-menu.png)
 
 * In the **Activity Bar**, click **Move Activity Bar to left** (![The Move Activity Bar to left icon](./overview-images/move-activity-bar-to-left-icon.png)) or **Move Activity Bar to top** (![The Move Activity Bar to top icon](./overview-images/move-activity-bar-to-top-icon.png)).
 
@@ -279,9 +279,9 @@ To change the location of the **Activity Bar**, do either of the following:
 
 By default, the **Quick View** toolbar is located at the bottom of the DevTools window. You can also change the location of the **Quick View** toolbar to the right side of the DevTools window.
 
-To change the location of the **Quick View** toolbar, click the **Dock Quick View to the right** or **Dock Quick View to the bottom** (![The Dock Quick View icon](./overview-images/move-quickview-icon.png)) icon in the **Quick View** toolbar.
+To change the location of the **Quick View** toolbar, click the **Dock Quick View to the right** or **Dock Quick View to the bottom** (![The Dock Quick View icon](./overview-images/move-quickview-icon.png)) icon in the **Quick View** toolbar:
 
-!!TODO IMAGE!!
+![The Dock Quick View icon, displayed in the Quick View toolbar, at the bottom of DevTool](./overview-images/move-quickview.png)
 
 
 <!-- ====================================================================== -->
@@ -332,7 +332,7 @@ The **Activity Bar** contains the following features:
    *  **Help** (![Help icon](./overview-images/help-icon.png)) button.
    *  **Close** DevTools (![Close DevTools icon](./overview-images/close-devtools-icon-light-theme.png)) button.
 
-![The main toolbar, with labels that identify its features](./overview-images/devtools-intro-menu-bar.png)
+![The main toolbar, with labels that identify its features](./overview-images/menu-bar.png)
 
 The **Activity Bar** features are described below.
 
@@ -366,7 +366,7 @@ Currently, the following tools cannot be unpinned from the **Activity Bar**:
 
 When you click the **Inspect tool** (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) button, you can select an element on the current webpage.  While the **Inspect** tool is active, you can move your mouse over different parts of the webpage to get detailed information about page elements, along with a multi-color overlay that shows the layout dimensions, padding, and margin of the page element.
 
-![The Inspect tool while hovering over with the first headline of this article](./overview-images/devtools-intro-inspect-tool.png)
+![The Inspect tool while hovering over with the first headline of this article](./overview-images/inspect-tool.png)
 
 
 <!-- ------------------------------ -->
@@ -374,7 +374,7 @@ When you click the **Inspect tool** (![Inspect tool icon](./overview-images/insp
 
 Click the **Device Emulation** (![Device Emulation icon](./overview-images/device-emulation-icon-light-theme.png)) button to display the current website in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
 
-![DevTools display of this article in an emulated mobile phone](./overview-images/devtools-intro-device-emulation.png)
+![DevTools display of this article in an emulated mobile phone](./overview-images/device-emulation.png)
 
 See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 
@@ -474,9 +474,9 @@ Use **Quick View** to open a second tool next to the one already selected from t
 
 1. In the **Quick View** toolbar, click **More tools** (**+**), and then select a different tool from the list.
 
-The following screenshot shows the **Network** tool and the **Console** tool side-by-side:
+The following screenshot shows the **Network** tool and the **Rendering** tool side-by-side:
 
-![DevTools with the Network tool at the top, and the Console tool at the bottom](./overview-images/quick-view-tool.png)
+![DevTools with the Network tool at the top, and the Rendering tool at the bottom](./overview-images/quick-view-tool.png)
 
 To hide or expand **Quick View**, click **Collapse Quick View** (![Collapse icon](./overview-images/collapse-quick-view-icon.png)) or **Expand Quick View** (![Expand icon](./overview-images/expand-quick-view-icon.png)), or press the **Escape** key.
 
@@ -526,7 +526,7 @@ In addition to **Activity Bar** and **Quick View** tools, DevTools includes the 
 
 DevTools provides lots of features and functionality to use with your website.  You can access the different parts of DevTools in many ways, but often a fast way is to use the Command Menu.
 
-![the Command Menu in DevTools](./overview-images/devtools-intro-command-menu.png)
+![the Command Menu in DevTools](./overview-images/command-menu.png)
 
 In the Command Menu, the tools are called "panels"; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.
 
@@ -541,11 +541,11 @@ The **Changes** tool opens, which is useful when you edit CSS.  In this case, th
 
 After you type **cha**, the Command Menu displays the options:
 
-![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'](./overview-images/devtools-intro-command-menu-show-changes.png)
+![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'](./overview-images/command-menu-show-changes.png)
 
 Press **Enter**, and then the **Changes** tool opens:
 
-![DevTools with the Changes tool open](./overview-images/devtools-intro-showing-changes.png)
+![DevTools with the Changes tool open](./overview-images/showing-changes.png)
 
 See also [Run commands with the Microsoft Edge DevTools Command menu](command-menu/index.md).
 
@@ -555,9 +555,9 @@ See also [Run commands with the Microsoft Edge DevTools Command menu](command-me
 
 You can customize DevTools to meet your needs for the way you work.  To change settings, click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Settings** (![Settings icon](./overview-images/settings-gear-icon-light-theme.png)), or press **F1**.
 
-In the **Settings** > **Preferences** page, you can change several parts of DevTools.  For example, you can use the **Match the browser language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
+In the **Settings** > **Preferences** page, you can change several parts of DevTools.  For example, you can use the **Browser UI language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
 
-![all the settings in DevTools](./overview-images/devtools-intro-all-settings.png)
+![all the settings in DevTools](./overview-images/all-settings.png)
 
 You can also change the settings of advanced features, such as:
 
@@ -568,7 +568,7 @@ You can also change the settings of advanced features, such as:
 *  Define simulated **Locations**.
 *  Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
 
-![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code](./overview-images/devtools-intro-match-keys.png)
+![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code](./overview-images/match-keys.png)
 
 
 <!-- ====================================================================== -->
