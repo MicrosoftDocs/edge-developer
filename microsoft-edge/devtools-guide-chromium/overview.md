@@ -253,9 +253,9 @@ The **Activity Bar** can be in one of the following locations:
 
 * **Adapt to dock location**: The **Activity Bar** will be in a horizontal or vertical orientation depending on where DevTools is docked.
 
-  * If DevTools is docked to the left or right side of the browser window, the **Activity Bar** will be vertical.
+  * When DevTools is docked to the left or right side of the browser window, the **Activity Bar** is vertical.
 
-  * If DevTools is docked to the bottom side of the browser window, or undocked in its own window, the **Activity Bar** will be horizontal.
+  * When DevTools is docked to the bottom side of the browser window, or undocked in its own window, the **Activity Bar** is horizontal.
 
 When the **Activity Bar** is horizontal, tool names appear next to tool icons if there is enough space to display them.
 
@@ -342,7 +342,7 @@ The **Activity Bar** features are described below.
 
 You can choose which tools appear in the **Activity Bar** by pinning or unpinning tools. This allows you to customize DevTools to your preferred workflow.
 
-Click **More tools** (**+**) to list all the available tools. Selecting a tool will pin it to the **Activity Bar**. It will be shown by default every time DevTools is opened.
+Click **More tools** (**+**) to list all the available tools. Selecting a tool pins it to the **Activity Bar**. The tool is then present in the Activity Bar whenever DevTools is opened.
 
 ![The More tools menu in the Activity Bar, with the expanded list of all tools](./overview-images/more-tools.png)
 
