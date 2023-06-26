@@ -5,11 +5,18 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/07/2022
+ms.date: 06/26/2023
 ---
 # Roadmap for Microsoft Edge Add-ons
 
 These are the next planned [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) features or updates for Microsoft Edge extensions.
+
+
+<!-- ====================================================================== -->
+## Additional methods for sidebar extensions
+
+The [getPanelBehavior](../developer-guide/sidepanel-api-reference.md#getpanelbehavior) and [setPanelBehavior](../developer-guide/sidepanel-api-reference.md#setpanelbehavior) methods for sidebar extensions are coming soon and are not yet in a stable release of Microsoft Edge.
+
 
 <!-- ====================================================================== -->
 ## Developers can add their contact information
