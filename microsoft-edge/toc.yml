@@ -943,9 +943,13 @@
             - name: Create an extension that customizes the DevTools UI
               href: extensions-chromium/developer-guide/devtools-extension.md
 
-            - name: Add an extension to the sidebar
+            - name: Make an extension appear in the sidebar
               href: extensions-chromium/developer-guide/sidebar.md
-              displayName: sidebar extensions  # alt lookup phrase
+              displayName: sidebar extensions, sidepanel, side panel  # alt lookup phrase
+
+            - name: Sidebar (sidePanel) API Reference for Microsoft Edge
+              href: extensions-chromium/developer-guide/sidepanel-api-reference.md
+              displayName: sidebar extensions, sidepanel, side panel  # alt lookup phrase
 
             - name: Best Practices
               href: extensions-chromium/developer-guide/best-practices.md

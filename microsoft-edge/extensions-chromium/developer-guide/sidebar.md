@@ -1,5 +1,5 @@
 ---
-title: Add an extension to the sidebar
+title: Make an extension appear in the sidebar
 description: The sidebar (or side panel) feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,11 +7,11 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/23/2023
 ---
-# Add an extension to the sidebar
+# Make an extension appear in the sidebar
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/ -->
 
-As a Microsoft Edge extension developer, use this article to enable the sidebar for your new or existing Microsoft Edge extension.
+As a Microsoft Edge extension developer, use this article to make your new or existing Microsoft Edge extension appear in the sidebar instead of in the main part of Microsoft Edge.
 
 The Microsoft Edge Add-ons API provides an API to enable your extension as sidebar extension. You can use this API to convert your extension to sidebar, and your extension will have the access to Microsoft Edge Sidebar.  You can use this *Sidebar* API by giving permissions in your `manifest.json` file.
 
@@ -199,8 +199,6 @@ Then, add the following code to the code listing that's in [Enable a sidebar for
 `service-worker.js`:
 
 ```js
-const BING_ORIGIN = 'https://www.bing.com';
-
 // Allow users to open the sidebar by clicking on the action toolbar icon
 chrome.sidePanel
   .setPanelBehavior({ openPanelOnActionClick: true })
@@ -221,8 +219,8 @@ This example sets a sidebar containing a welcome message on [runtime.onInstalled
 `service-worker.js`:
 
 ```js
-const welcomePage = 'sidebar/welcome-sp.html';
-const mainPage = 'sidebar/main-sp.html';
+const welcomePage = 'sidebar/welcome-sb.html';
+const mainPage = 'sidebar/main-sb.html';
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.sidePanel.setOptions({ path: welcomePage });
@@ -238,33 +236,17 @@ chrome.tabs.onActivated.addListener(async ({ tabId }) => {
 
 
 <!-- ====================================================================== -->
-## The sidebar user experience (UX)
+## Sidebar user experience
 
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-experience -->
+<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-experience
+* Side panel user experience   h2
+   * Opening the side panel      h4
+      * Navigating to the side panel menu    h6
+      * Using the action toolbar icon    h6
+      * Using a keyboard shortcut    h6
+-->
 
 Extensions in the Microsoft Edge sidebar have these user experience (UX) features.
-
-
-<!-- ------------------------------ -->
-#### How extensions that have sidebar support are indicated
-
-* The sidebar icon is displayed next to the extension name in the hub in the toolbar:
-
-![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
-
-
-###### Using the action toolbar icon
-
-Users can open the sidebar by clicking the extension shortcut in the toolbar, if it's enabled.
-
-See [Enable the extension's shortcut icon to open the sidebar](#enable-the-extensions-shortcut-icon-to-open-the-sidebar), above.
-
-
-<!-- todo: un-comment & revise, after implemented:
-###### Using a keyboard shortcut
-
-Users can open the sidebar by pressing a keyboard shortcut, if the [action command](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) and the [action icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) are enabled.
--->
 
 
 <!-- ------------------------------ -->
@@ -272,14 +254,39 @@ Users can open the sidebar by pressing a keyboard shortcut, if the [action comma
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#open -->
 
-To open a sidebar extension, the user can do either of the following:
+On the Microsoft Edge Add-Ons store page, there's a information message on the extension product page, highlighting the sidebar feature.
 
-* Click the sidebar icon in the hub in the toolbar.
 
-* Right-click the extension's shortcut in the toolbar.
+<!-- ---------- -->
+###### Navigating to the sidebar menu
 
-<!-- true but maybe not needed to point out:
-* On the Microsoft Edge Add-Ons store page, there's a information message on the extension product page, highlighting the sidebar feature. -->
+The sidebar icon is displayed next to the extension name in the hub in the toolbar:
+
+![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
+
+
+<!-- ---------- -->
+###### Using the action toolbar icon
+
+Users can open the sidebar by clicking the sidebar icon in the hub in the toolbar, if the sidebar icon is enabled.
+
+See [Enable the extension's shortcut icon to open the sidebar](#enable-the-extensions-shortcut-icon-to-open-the-sidebar), above.
+
+
+<!-- ---------- -->
+###### Using the extension's shortcut in the toolbar
+
+Users can right-click the extension's shortcut in the toolbar, and then select **Open in sidebar** or **Close sidebar**:
+
+![Right-clicking the shortcut on the toolbar to open the extension](./sidebar-images/toolbar-right-click-shortcut-open.png)
+
+![Right-clicking the shortcut on the toolbar to close the extension](./sidebar-images/toolbar-right-click-shortcut-close.png)
+
+
+<!-- ---------- -->
+###### Using a keyboard shortcut
+
+Users can open the sidebar by pressing a keyboard shortcut, if the [action command](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) and the [action icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) are enabled.
 
 
 <!-- ====================================================================== -->
@@ -296,324 +303,13 @@ For <!--more--> Sidebar API extensions demos, explore any of the following exten
 
 
 <!-- ====================================================================== -->
-## Types for parameters of sidebar methods
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#type (empty heading) -->
-
-The sidebar methods take parameters that are of the following types, or return a value that's one of the following types.
-
-* [GetPanelOptions](#getpaneloptions)
-* [PanelBehavior](#panelbehavior)
-* [PanelOptions](#paneloptions)
-* [SidePanel](#sidepanel)
-
-
-<!-- ====================================================================== -->
-#### GetPanelOptions
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-GetPanelOptions -->
-
-Get panel options, including `tabId`.
-
-<!-- ---------- -->
-**PROPERTIES**
-
-<!-- ---------- -->
-###### tabId
-
-Type: `number`, optional
-
-If `tabId` is specified, the sidebar options for the given tab are returned (by the method that returns this type).  If `tabId` isn't specified, returns the default sidebar options (used for any tab that doesn't have specified settings).
-
-
-<!-- ====================================================================== -->
-#### PanelBehavior
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-PanelBehavior -->
-
-Panel behavior, including `openPanelOnActionClick`.
-
-<!-- ---------- -->
-**PROPERTIES**
-
-###### openPanelOnActionClick
-
-Whether clicking the extension's icon toggles showing the extension's entry in the sidebar.  The default is `false`.
-
-Type: `boolean`, optional
-
-
-<!-- ====================================================================== -->
-#### PanelOptions
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-PanelOptions -->
-
-Panel options, including `enabled`, `path`, and `tabId`.
-
-<!-- ---------- -->
-**PROPERTIES**
-
-###### enabled
-
-Whether the sidebar is enabled.  The default is `true`.
-
-Type: `boolean`, optional
-
-
-###### path
-
-The path to the sidebar HTML file to use.  This must be a local resource within the extension package.
-
-Type: `string`, optional
-
-The default is a blank page with no UI.
-
-
-###### tabId
-
-Type: `number`, optional
-
-If a `tabID` is specified, the sidebar options (`enabled`, `path`, and `tabId`) only apply to the tab that has this ID.  If a `tabID` is not specified, these options set the default behavior, which is used for any tab that doesn't have specific settings defined.
-
-<!-- todo: what sentence do we want that's equivalent to this sentence?  from https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-PanelOptions --
-If the same `path` is set for this `tabId` and the default `tabId`, then the panel for this `tabId` will be a different instance than the panel for the default `tabId`.
-
-our draft sentence:
-
-... the same instance ...
--->
-
-
-<!-- ====================================================================== -->
-#### SidePanel
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-SidePanel -->
-
-Sidebar properties, including `default_path`.
-
-<!-- ---------- -->
-**PROPERTIES**
-
-<!-- ---------- -->
-###### default_path
-
-Type: `string`, required
-
-The developer-specified path for sidebar display.
-
-
-<!-- ====================================================================== -->
-## Methods for sidebar extensions
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#method (empty heading) -->
-
-* [getOptions](#getoptions)
-* [getPanelBehavior](#getpanelbehavior)
-* [setOptions](#setoptions)
-* [setPanelBehavior](#setpanelbehavior)
-
-
-<!-- ====================================================================== -->
-#### getOptions
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-getOptions -->
-
-Returns the active panel configuration.
-
-
-<!-- ---------- -->
-**SYNTAX**
-
-```js
-chrome.sidePanel.getOptions(
-  options: GetPanelOptions,
-  callback?: function,
-)
-```
-
-* Promise - This method an return its result via a Promise, in Manifest V3 or later.
-
-
-<!-- ---------- -->
-**PARAMETERS**
-
-<!-- ---------- -->
-###### options
-
-Type: [GetPanelOptions](#getpaneloptions)
-
-
-<!-- ---------- -->
-###### callback
-
-Type: {} function, optional
-
-The `callback` parameter looks like:
-
-```js
-(options: PanelOptions) => void
-```
-
-Parameter type: [PanelOptions](#paneloptions)
-
-
-<!-- ---------- -->
-**RETURNS**
-
-Promise<[PanelOptions](#paneloptions)>
-
-Promises are supported in Manifest V3 and later, but callbacks are provided for backward compatibility.  You cannot use a promise along with a callback on the same function call.  The promise resolves as the same type that's passed to the callback.
-
-
-<!-- ====================================================================== -->
-#### getPanelBehavior
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-getPanelBehavior -->
-
-Returns the extension's current sidebar behavior.
-
-
-<!-- ---------- -->
-**SYNTAX**
-
-```js
-chrome.sidePanel.getPanelBehavior(
-  callback?: function,
-)
-```
-
-* Promise - This method an return its result via a Promise, in Manifest V3 or later.
-* Pending - This method is coming soon and is not yet in a stable release of Microsoft Edge.
-
-
-<!-- ---------- -->
-**PARAMETERS**
-
-
-###### callback
-
-Type: {} function, optional
-
-The `callback` parameter looks like:
-
-```js
-(behavior: PanelBehavior) => void
-```
-
-Parameter type: [PanelBehavior](#panelbehavior)
-
-
-<!-- ---------- -->
-**RETURNS**
-
-Promise<[PanelBehavior](#panelbehavior)>
-
-Promises are supported in Manifest V3 and later, but callbacks are provided for backward compatibility.  You cannot use a promise together with a callback on the same function call.  The promise resolves as the same type that's passed to the callback.
-
-
-<!-- ====================================================================== -->
-#### setOptions
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setOptions -->
-
-Configures the sidebar.
-
-
-<!-- ---------- -->
-**SYNTAX**
-
-```js
-chrome.sidePanel.setOptions(
-  options: PanelOptions,
-  callback?: function,
-)
-```
-
-* Promise - This method an return its result via a Promise, in Manifest V3 or later.
-
-
-<!-- ---------- -->
-**PARAMETERS**
-
-###### options
-
-Type: [PanelOptions](#paneloptions)
-
-
-###### callback
-
-Type: {} function, optional
-
-The `callback` parameter looks like:
-
-```js
-() => void
-```
-
-
-<!-- ---------- -->
-**RETURNS**
-
-Promise<`Void`>
-
-Promises are supported in Manifest V3 and later, but callbacks are provided for backward compatibility. You cannot use both on the same function call. The promise resolves with the same type that is passed to the callback.
-
-
-<!-- ====================================================================== -->
-#### setPanelBehavior
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior -->
-
-Configures the extension's sidebar behavior.  This is an upsert (update or insert) operation.
-
-
-<!-- ---------- -->
-**SYNTAX**
-
-```js
-chrome.sidePanel.setPanelBehavior(
-  behavior: PanelBehavior,
-  callback?: function,
-)
-```
-
-* Promise - This method an return its result via a Promise, in Manifest V3 or later.
-* Pending - This method is coming soon and is not yet in a stable release of Microsoft Edge.
-
-
-<!-- ---------- -->
-**PARAMETERS**
-
-###### behavior
-
-Type: [PanelBehavior](#panelbehavior)
-
-
-###### callback
-
-Type: {} function, optional
-
-The `callback` parameter looks like:
-
-```js
-() => void
-```
-
-<!-- ---------- -->
-**RETURNS**
-
-Promise<`Void`>
-
-Promises are supported in Manifest V3 and later, but callbacks are provided for backward compatibility. You cannot use both on the same function call. The promise resolves with the same type that is passed to the callback.
-
-
-<!-- ====================================================================== -->
 ## See also
 
+* [Sidebar (sidePanel) API Reference for Microsoft Edge](./sidepanel-api-reference.md)
+   * [chrome.sidePanel](https://developer.chrome.com/docs/extensions/reference/sidePanel/) at `developer.chrome.com`.
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
 * [Declare API permissions in extension manifests](../developer-guide/declare-permissions.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
-* [chrome.sidePanel](https://developer.chrome.com/docs/extensions/reference/sidePanel/)
 
 
 <!-- ====================================================================== -->
