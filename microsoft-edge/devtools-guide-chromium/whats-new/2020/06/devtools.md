@@ -324,7 +324,7 @@ Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead o
 The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints are represented by a red circle, just like [Visual Studio Code](https://code.visualstudio.com/) and [Visual Studio](https://visualstudio.microsoft.com/).  Icons are added to differentiate conditional breakpoints and logpoints.
 
 <!-- todo: update capture -->
-![Breakpoints](./devtools-images/breakpoints.png)
+![Various breakpoint icons in light and dark themes](./devtools-images/breakpoints.png)
 
 Chromium issue [#1041830](https://crbug.com/1041830)
 
