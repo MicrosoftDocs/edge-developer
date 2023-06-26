@@ -261,7 +261,7 @@ When the **Activity Bar** is horizontal, tool names appear next to tool icons if
 
 If there isn't enough space to display all tool names, the horizontal **Activity Bar** shows some tabs with tool icons and names, and some tabs with icons only:
 
-![Focus Mode with the horizontal Activity bar](./overview-images/horizontal.png)
+![The horizontal Activity Bar, showing some tools with icons and labels, and others with just icons](./overview-images/horizontal.png)
 
 To change the location of the **Activity Bar**, do either of the following:
 
@@ -344,7 +344,7 @@ You can choose which tools appear in the **Activity Bar** by pinning or unpinnin
 
 Click **More tools** (**+**) to list all the available tools. Selecting a tool will pin it to the **Activity Bar**. It will be shown by default every time DevTools is opened.
 
-![The More tools menu in Focus Mode, with the expanded list of all tools](./overview-images/more-tools.png)
+![The More tools menu in the Activity Bar, with the expanded list of all tools](./overview-images/more-tools.png)
 
 If there isn't enough space in the **Activity Bar** to display all pinned tools, some tools may overflow into the **More tools** menu:
 
@@ -476,7 +476,7 @@ Use **Quick View** to open a second tool next to the one already selected from t
 
 The following screenshot shows the **Network** tool and the **Console** tool side-by-side:
 
-![Focus Mode with the Network tool at the top, and the Console tool at the bottom](./overview-images/quick-view-tool.png)
+![DevTools with the Network tool at the top, and the Console tool at the bottom](./overview-images/quick-view-tool.png)
 
 To hide or expand **Quick View**, click **Collapse Quick View** (![Collapse icon](./overview-images/collapse-quick-view-icon.png)) or **Expand Quick View** (![Expand icon](./overview-images/expand-quick-view-icon.png)), or press the **Escape** key.
 

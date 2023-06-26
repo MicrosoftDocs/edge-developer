@@ -71,7 +71,7 @@ To turn off Tooltips, press **Esc**.
 
 Update: This feature has been released and is no longer experimental.<!-- valid. -->
 
-Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in [Focus Mode](../../../experimental-features/focus-mode.md).
+Note: As of May 2022, tooltips aren't supported from the **Activity Bar**.
 <!-- Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#group-tools-together-in-focus-mode) experiment, you can also click the **Toggle the DevTools Tooltips** (**?**) button at the bottom of the **Activity Bar**. -->
 <!-- ![Hover on anywhere in the highlighted region of the Issues tool to display more details](../../media/2021/04/elements-issues-focus-mode-tooltips.png) -->
 

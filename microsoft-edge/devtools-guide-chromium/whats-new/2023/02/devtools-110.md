@@ -32,7 +32,7 @@ See also:
 
 <!-- Subtitle: Customize both the Activity Bar and Quick View in Focus Mode to see only the tools you care about. -->
 
-Microsoft Edge 110 contains various improvements to [Focus Mode](../../../experimental-features/focus-mode.md) in DevTools.  The following changes make it easier to customize the Activity Bar and Quick View, to show only the tools that you're currently interested in.
+Microsoft Edge 110 contains various improvements to Focus Mode in DevTools.  The following changes make it easier to customize the Activity Bar and Quick View, to show only the tools that you're currently interested in.
 
 
 <!-- ------------------------------ -->
@@ -73,10 +73,6 @@ For example, suppose the **Network** tool has been moved to Quick View, and you 
 If you then select **Remove from Quick View**, focus stays in the Quick View toolbar and moves to the **Network conditions** tool, which is the next tool in Quick View:
 
 ![Focus stays in Quick View and moves to another tool in Quick View](./devtools-110-images/focus-moves-to-other-tool-same-toolbar.png)
-
-
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->

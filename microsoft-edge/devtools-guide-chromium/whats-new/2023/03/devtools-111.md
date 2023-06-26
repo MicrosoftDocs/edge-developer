@@ -99,7 +99,6 @@ To display only a few of the tabs within the **Styles** pane, click the **More t
 
 See also:
 * [CSS features reference](../../../css/reference.md)
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
@@ -131,7 +130,6 @@ In previous versions of Microsoft Edge, assistive technology, such as screen rea
 ![Moving the Network tool from the Activity Bar to Quick View](./devtools-111-images/move-network-tool-to-quickview.png)
 
 See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 

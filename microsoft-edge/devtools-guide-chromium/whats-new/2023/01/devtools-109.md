@@ -139,9 +139,6 @@ We listened to your feedback and improved the **Quick View** options in Focus Mo
 The state of your **Quick View** persists across DevTools sessions.  The **Quick View** pane automatically collapses if you open the same tool in the upper pane of DevTools.
 
 ![Add tool to Quick View](./devtools-109-images/add-tool-to-quick-view.png)
- 
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->

@@ -56,9 +56,6 @@ You can also open **Settings** from the **Main Menu** under **More tools**.
 
 Chromium issue [#1050855](https://crbug.com/1050855)
 
-See also:
-* [DevTools customization and settings](../../../experimental-features/focus-mode.md#devtools-customization-and-settings) in _Simplify DevTools using Focus Mode_
-
 
 <!-- ====================================================================== -->
 ### New and improved infobars
