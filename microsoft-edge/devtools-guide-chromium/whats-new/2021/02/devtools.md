@@ -72,9 +72,6 @@ See also:
 * [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features_.
 -->
 
-See also:
-* [Display DevTools Tooltips](../../../overview.md#display-devtools-tooltips) in _Overview of DevTools_.
-
 
 <!-- ====================================================================== -->
 ## Customize keyboard shortcuts in Settings

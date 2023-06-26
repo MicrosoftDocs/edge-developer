@@ -114,7 +114,7 @@ Update: This feature has been released and is no longer experimental.<!-- Note: 
 Chromium issue [#897944](https://crbug.com/897944)
 
 See also:
-* [About Panel and Drawer tools](../../../overview.md#about-panel-and-drawer-tools) in _Overview of DevTools_.
+* [About Activity Bar and Quick View tools](../../../overview.md#about-activity-bar-and-quick-view-tools) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->

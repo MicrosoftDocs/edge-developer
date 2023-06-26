@@ -55,7 +55,7 @@ If you want to only allow the Console tool to open in a single place, you can co
 1. In the **Console** section, clear the checkbox **Show Console tab in main panel and drawer**, then click **Close** (**x**).
 
 See also:
-* [Panel tools vs. Drawer tools](../../../about-tools.md#panel-tools-vs-drawer-tools) in _About the list of tools_.
+* [Activity Bar tools vs. Quick View tools](../../../about-tools.md#activity-bar-tools-vs-quick-view-tools) in _About the list of tools_
 * [Move tools between top and bottom panels](../../2020/10/devtools.md#move-tools-between-top-and-bottom-panels) in _What's New in DevTools (Microsoft Edge 87)_.
 
 
