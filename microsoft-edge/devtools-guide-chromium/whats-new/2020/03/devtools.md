@@ -208,9 +208,9 @@ Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead o
 
 The **Sources** panel has new icons for breakpoints, conditional breakpoints, and logpoints:
 
-*  Breakpoints (![Breakpoint](./devtools-images/breakpoint.png)) are represented by red circles.
-*  Conditional Breakpoints (![Conditional Breakpoint](./devtools-images/conditional.png)) are represented by half-red half-white circles.
-*  Logpoints (![Logpoint](./devtools-images/logpoint.png)) are represented by red circles with Console icons.
+*  Breakpoints (![Breakpoint icon, a red circle](./devtools-images/breakpoint.png)) are represented by red circles.
+*  Conditional Breakpoints (![Conditional Breakpoint icon, a circle half red and half black](./devtools-images/conditional.png)) are represented by half-red half-white circles.
+*  Logpoints (![Logpoint icon, a red circle with a black arrow](./devtools-images/logpoint.png)) are represented by red circles with Console icons.
 
 The motivation for the new icons was to make the UI more consistent with other GUI debugging tools (which usually color breakpoints red) and to make it easier to distinguish between the 3 features at a glance.
 
