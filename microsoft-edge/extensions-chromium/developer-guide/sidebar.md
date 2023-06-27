@@ -30,8 +30,8 @@ Extensions can optionally use the sidebar API to show a custom UI in the Microso
 | Term | Definition |
 |---|---|
 | Sidebar API | Name of the feature that you can use in your Microsoft Edge extensions.  Chrome docs use the term _side panel_. |
-| `sidePanel` or `side_panel` | Name of the API and permission to enable any extension as a sidebar extension, as derived from the Chromium browser engine. |
-| Sidebar extension | A Microsoft Edge extension that has a UI in the sidebar.  <!--A sidebar extension can also have other UI the extension needs.--> |
+| `sidePanel` or `side_panel` | Name of the API and permission to enable any extension as a sidebar extension. |
+| Sidebar extension | A Microsoft Edge extension that has a UI in the sidebar. |
 
 
 <!-- ====================================================================== -->
@@ -46,8 +46,6 @@ Extensions can optionally use the sidebar API to show a custom UI in the Microso
 For details on how to create an extension, see:
 * [Create an extension tutorial, part 1](../getting-started/part1-simple-extension.md)
 * [Create an extension tutorial, part 2](../getting-started/part2-content-scripts.md)
-
-These tutorials don't demonstrate the sidebar, but are general extensions examples.
 
 
 <!-- ====================================================================== -->
@@ -259,25 +257,29 @@ Extensions in the Microsoft Edge sidebar have these user experience (UX) feature
 There are several ways to open the extension in the sidebar:
 
 
-*  Click the **Open in sidebar** icon<!--todo: icon png (split rect.)-->, which is displayed next to the extension name in the Extensions hub:
+<!-- ---------- -->
+*  Click the **Open in sidebar** icon (![Open in sidebar icon](./sidebar-images/open-in-sidebar-icon.png)), which is displayed next to the extension's name in the Extensions hub:
 
    ![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
 
 
-
-*  Right-click the extension's icon in the toolbar, and then select **Open in sidebar** or **Close sidebar** (if the user has clicked the **Show in toolbar**<!--todo: icon of strikethru eye--> icon).
+<!-- ---------- -->
+*  Right-click the extension's icon in the toolbar, and then select **Open in sidebar** or **Close sidebar**:
 
    ![Right-clicking the shortcut on the toolbar to open the extension](./sidebar-images/toolbar-right-click-shortcut-open.png)
 
    ![Right-clicking the shortcut on the toolbar to close the extension](./sidebar-images/toolbar-right-click-shortcut-close.png)
 
-
-*  Left-click the extension's icon in the toolbar<!--todo: icon png; in the case of our demo, it's the circle icon - but that's per-ext. -->, if it's enabled.
-
-   <!-- png: circle, for our example -->
+   The extension's icon appears in the toolbar if the user has clicked the **Show in toolbar** (![Show in toolbar icon](./sidebar-images/show-in-toolbar-icon.png)) icon next to the extension's name in the Extensions hub.
 
 
-*  Press a keyboard shortcut.  Users can open the sidebar by pressing a keyboard shortcut, if the [action command](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) and the [action icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) are enabled.
+<!-- ---------- -->
+*  Left-click the extension's custom icon in the toolbar, if it's enabled.  In this example, the extension's custom icon is a circle (![Extension's custom icon](./sidebar-images/custom-icon-for-demo-extension.png)):
+
+   ![Left-clicking the extension's icon in the toolbar](./sidebar-images/left-click-toolbar-icon.png)
+
+<!-- ---------- -->
+*  Press a keyboard shortcut, if the [action command](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) and the [action icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) are enabled.
 
 
 <!-- ====================================================================== -->
