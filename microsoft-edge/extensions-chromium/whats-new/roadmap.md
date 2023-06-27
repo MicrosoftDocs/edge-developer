@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/26/2023
+ms.date: 06/27/2023
 ---
 # Roadmap for Microsoft Edge Add-ons
 
@@ -14,6 +14,8 @@ These are the next planned [Partner Center](https://partner.microsoft.com/dashbo
 
 <!-- ====================================================================== -->
 ## Sidebar extensions
+
+Use the Sidebar API to make your new or existing Microsoft Edge extension appear in the sidebar.  Any extension can use the sidebar, in addition to its other UI.
 
 Sidebar extensions are not yet in a stable release of Microsoft Edge.
 

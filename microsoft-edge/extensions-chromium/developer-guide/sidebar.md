@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/23/2023
+ms.date: 06/27/2023
 ---
 # Extensions in the Microsoft Edge sidebar
 
@@ -138,10 +138,9 @@ A sidebar can be set as the default, to show the same extension throughout all t
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#by-site -->
 
-An extension can use [sidepanel.setOptions()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setOptions) to enable a sidebar on a specific tab.
-This can be a particular website a user is using and would want the same extension to open in the sidebar, once this website is opened.
+An extension can use [sidepanel.setOptions()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setOptions) to enable a sidebar on a specific tab.  This can be a particular website, where the user would want the same extension to open in the sidebar when this website is opened.
 
-This example uses [chrome.tabs.onUpdated()](https://developer.chrome.com/docs/extensions/reference/tabs/#event-onUpdated) to listen for any updates made to the tab.  This example checks whether the URL is `www.bing.com` and conditionally enables the sidebar.  Otherwise, this example disables the sidebar.
+This example uses [chrome.tabs.onUpdated()](https://developer.chrome.com/docs/extensions/reference/tabs/#event-onUpdated) to listen for any updates made to the tab.  It checks whether the URL is `www.bing.com` and if so, enables the sidebar.  Otherwise, it disables the sidebar.
 
 `service-worker.js`:
 
@@ -170,7 +169,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
 
 When a user switches to a tab or site for which the sidebar is not enabled, the sidebar is hidden.
 
-For a complete example, see the [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific) sample.
+For a complete example, see [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific).
 
 
 <!-- ------------------------------ -->
@@ -237,14 +236,7 @@ chrome.tabs.onActivated.addListener(async ({ tabId }) => {
 <!-- ====================================================================== -->
 ## Sidebar extensions user experience
 
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-experience
-* Side panel user experience   h2
-   * Opening the side panel      h4
-      * Navigating to the side panel menu    h6
-      * Using the action toolbar icon    h6
-      * (no heading for shortcut in the toolbar)
-      * Using a keyboard shortcut    h6
--->
+<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-experience -->
 
 Extensions in the Microsoft Edge sidebar have these user experience (UX) features.
 
@@ -287,7 +279,7 @@ There are several ways to open the extension in the sidebar:
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#examples -->
 
-For <!--more--> Sidebar API extensions demos, explore any of the following extensions at Chrome docs:
+For more Sidebar API extensions demos, explore any of the following extensions:
 
 * [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific)
 * [Multiple side panels example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-multiple)
