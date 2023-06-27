@@ -49,7 +49,7 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [proxy](https://developer.chrome.com/extensions/proxy) | Manage proxy settings for Microsoft Edge. This API depends on the `EdgeSetting` prototype of the `types` API to get and set the proxy configuration of Microsoft Edge. |
 | [runtime](https://developer.chrome.com/extensions/runtime) | Retrieve the background page, return details about the manifest, and listen for and respond to events in the app or extension lifecycle. You can also convert the relative path of URLs to fully qualified URLs. |
 | [sessions](https://developer.chrome.com/extensions/sessions) | Query and restore tabs and windows from a browsing session. |
-| [sidePanel](https://developer.chrome.com/extensions/sidePanel) | Host custom content in the browser's sidebar alongside the main content of a webpage.  See [Make an extension appear in the sidebar](../developer-guide/sidebar.md). |
+| [sidePanel](https://developer.chrome.com/extensions/sidePanel) | Host custom content in the browser's sidebar alongside the main content of a webpage.  See [Extensions in the Microsoft Edge sidebar](../developer-guide/sidebar.md). |
 | [storage](https://developer.chrome.com/extensions/storage) | Store, retrieve, and track changes to user data. |
 | [system.memory](https://developer.chrome.com/extensions/system_memory) | The `system.memory` API. |
 | [system.storage](https://developer.chrome.com/extensions/system_storage) | Query information about storage devices. You can also receive notifications when storage devices are attached or detached. |

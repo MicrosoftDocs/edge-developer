@@ -1,5 +1,5 @@
 ---
-title: Make an extension appear in the sidebar
+title: Extensions in the Microsoft Edge sidebar
 description: The sidebar (or side panel) feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,17 +7,31 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/23/2023
 ---
-# Make an extension appear in the sidebar
+# Extensions in the Microsoft Edge sidebar
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/ -->
 
-As a Microsoft Edge extension developer, use this article to make your new or existing Microsoft Edge extension appear in the sidebar instead of in the main part of Microsoft Edge.
+This is a forthcoming feature; sidebar extensions are not yet in a stable release of Microsoft Edge.
 
-The Microsoft Edge Add-ons API provides an API to enable your extension as sidebar extension. You can use this API to convert your extension to sidebar, and your extension will have the access to Microsoft Edge Sidebar.  You can use this *Sidebar* API by giving permissions in your `manifest.json` file.
+As a Microsoft Edge extension developer, use this article to make your new or existing Microsoft Edge extension appear in the sidebar.  Any extension can use the sidebar in addition to its other UI.
 
-By using the Sidebar API feature for extensions, you can enhance the browsing experience by enabling users to view additional information alongside the main content of a webpage.
+![The sidebar for a Microsoft Edge extension](./sidebar-images/sidebar-screenshot.png)
 
-The sidebar refers to a persistent column located on the side of the browser, which coexists with the primary content.  By enabling side-by-side browsing, users can reduce the need to constantly switch between tabs, resulting in a more productive browsing experience.
+By using the Sidebar API for extensions, you can enhance the browsing experience by enabling users to view additional information alongside the main content of a webpage.
+
+The _sidebar_ is a persistent pane located on the side of the browser, which coexists with the primary content of the browser.  The sidebar reduces the need to constantly switch between tabs, resulting in a more productive browsing experience.
+
+Extensions can optionally use the sidebar API to show a custom UI in the Microsoft Edge sidebar.  Extensions can continue appearing in the Microsoft Edge toolbar along with a UI such as popups, and can inject scripts, for example.
+
+
+<!-- ------------------------------ -->
+#### Terminology
+
+| Term | Definition |
+|---|---|
+| Sidebar API | Name of the feature that you can use in your Microsoft Edge extensions.  Chrome docs use the term _side panel_. |
+| `sidePanel` or `side_panel` | Name of the API and permission to enable any extension as a sidebar extension, as derived from the Chromium browser engine. |
+| Sidebar extension | A Microsoft Edge extension that has a UI in the sidebar.  <!--A sidebar extension can also have other UI the extension needs.--> |
 
 
 <!-- ====================================================================== -->
@@ -28,19 +42,6 @@ The sidebar refers to a persistent column located on the side of the browser, wh
 * The sidebar remains open while navigating between tabs.
 
 * An extension in the sidebar can be made available for specific sites.
-
-
-<!-- ------------------------------ -->
-#### Terminology
-
-| Term | Definition |
-|---|---|
-| Sidebar API | Name of the feature that you can use in your Microsoft Edge extensions.  Chrome docs use the term _side panel_. |
-| `sidePanel` or `side_panel` | Name of the API and permission to enable any extension as a sidebar extension, as derived from the Chromium browser engine. |
-| Sidebar extension | A Microsoft Edge extension that's designed to be opened in the sidebar. |
-
-![The sidebar for a Microsoft Edge extension](./sidebar-images/sidebar-screenshot.png)
-
 
 For details on how to create an extension, see:
 * [Create an extension tutorial, part 1](../getting-started/part1-simple-extension.md)
@@ -64,7 +65,7 @@ To add a sidebar to your extension, follow the steps below.
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#manifest -->
 
-Include the `sidePanel` permission in the extension's manifest file:
+To use the Sidebar API, add a permission in your `manifest.json` file.  Include the `sidePanel` permission in the extension's manifest file:
 
 `manifest.json`:
 
@@ -236,13 +237,14 @@ chrome.tabs.onActivated.addListener(async ({ tabId }) => {
 
 
 <!-- ====================================================================== -->
-## Sidebar user experience
+## Sidebar extensions user experience
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-experience
 * Side panel user experience   h2
    * Opening the side panel      h4
       * Navigating to the side panel menu    h6
       * Using the action toolbar icon    h6
+      * (no heading for shortcut in the toolbar)
       * Using a keyboard shortcut    h6
 -->
 
@@ -250,43 +252,32 @@ Extensions in the Microsoft Edge sidebar have these user experience (UX) feature
 
 
 <!-- ------------------------------ -->
-#### Opening the sidebar
+#### Opening the extension in the sidebar
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#open -->
 
-On the Microsoft Edge Add-Ons store page, there's a information message on the extension product page, highlighting the sidebar feature.
+There are several ways to open the extension in the sidebar:
 
 
-<!-- ---------- -->
-###### Navigating to the sidebar menu
+*  Click the **Open in sidebar** icon<!--todo: icon png (split rect.)-->, which is displayed next to the extension name in the Extensions hub:
 
-The sidebar icon is displayed next to the extension name in the hub in the toolbar:
-
-![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
+   ![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
 
 
-<!-- ---------- -->
-###### Using the action toolbar icon
 
-Users can open the sidebar by clicking the sidebar icon in the hub in the toolbar, if the sidebar icon is enabled.
+*  Right-click the extension's icon in the toolbar, and then select **Open in sidebar** or **Close sidebar** (if the user has clicked the **Show in toolbar**<!--todo: icon of strikethru eye--> icon).
 
-See [Enable the extension's shortcut icon to open the sidebar](#enable-the-extensions-shortcut-icon-to-open-the-sidebar), above.
+   ![Right-clicking the shortcut on the toolbar to open the extension](./sidebar-images/toolbar-right-click-shortcut-open.png)
 
-
-<!-- ---------- -->
-###### Using the extension's shortcut in the toolbar
-
-Users can right-click the extension's shortcut in the toolbar, and then select **Open in sidebar** or **Close sidebar**:
-
-![Right-clicking the shortcut on the toolbar to open the extension](./sidebar-images/toolbar-right-click-shortcut-open.png)
-
-![Right-clicking the shortcut on the toolbar to close the extension](./sidebar-images/toolbar-right-click-shortcut-close.png)
+   ![Right-clicking the shortcut on the toolbar to close the extension](./sidebar-images/toolbar-right-click-shortcut-close.png)
 
 
-<!-- ---------- -->
-###### Using a keyboard shortcut
+*  Left-click the extension's icon in the toolbar<!--todo: icon png; in the case of our demo, it's the circle icon - but that's per-ext. -->, if it's enabled.
 
-Users can open the sidebar by pressing a keyboard shortcut, if the [action command](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) and the [action icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) are enabled.
+   <!-- png: circle, for our example -->
+
+
+*  Press a keyboard shortcut.  Users can open the sidebar by pressing a keyboard shortcut, if the [action command](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) and the [action icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) are enabled.
 
 
 <!-- ====================================================================== -->
@@ -303,10 +294,15 @@ For <!--more--> Sidebar API extensions demos, explore any of the following exten
 
 
 <!-- ====================================================================== -->
+## Types and methods
+
+See [chrome.sidePanel Types and Methods](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type) API Reference at `developer.chrome.com`.
+
+
+<!-- ====================================================================== -->
 ## See also
 
-* [Sidebar (sidePanel) API Reference for Microsoft Edge](./sidepanel-api-reference.md)
-   * [chrome.sidePanel](https://developer.chrome.com/docs/extensions/reference/sidePanel/) at `developer.chrome.com`.
+* [chrome.sidePanel Types and Methods](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type) API Reference at `developer.chrome.com`.
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
 * [Declare API permissions in extension manifests](../developer-guide/declare-permissions.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
