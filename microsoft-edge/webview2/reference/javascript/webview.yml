@@ -291,7 +291,7 @@ methods:
     remarks: |-
       #### Examples
 
-      Post a message with File objects from input element to the CoreWebView2:
+      Post a message that includes File objects from an input element to the CoreWebView2:
 
       ```javascript
       const input = document.getElementById('files');
