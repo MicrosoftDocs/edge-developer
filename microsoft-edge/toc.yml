@@ -938,10 +938,15 @@
 
             - name: Create an extension that customizes the DevTools UI
               href: extensions-chromium/developer-guide/devtools-extension.md
-              
+
+            - name: Extensions in the Microsoft Edge sidebar
+              href: extensions-chromium/developer-guide/sidebar.md
+              displayName: sidebar extensions, sidepanel, side panel  # alt lookup phrase
+
             - name: Best Practices
               href: extensions-chromium/developer-guide/best-practices.md
               displayName: Best Practices for extensions  # full title
+
         - name: Manifest
           items:
             - name: Overview and timelines for migrating to Manifest V3
