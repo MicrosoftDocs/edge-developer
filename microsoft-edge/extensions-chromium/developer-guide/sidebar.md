@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/27/2023
+ms.date: 07/01/2023
 ---
 # Extensions in the Microsoft Edge sidebar
 
@@ -37,15 +37,13 @@ Extensions can optionally use the sidebar API to show a custom UI in the Microso
 <!-- ====================================================================== -->
 ## Features of the Sidebar API
 
+<!-- todo: add intro sentence -->
+
 * An extension in the sidebar has access to all of the [Supported APIs for Microsoft Edge extensions](./api-support.md).
 
 * The sidebar remains open while navigating between tabs.
 
 * An extension in the sidebar can be made available for specific sites.
-
-For details on how to create an extension, see:
-* [Create an extension tutorial, part 1](../getting-started/part1-simple-extension.md)
-* [Create an extension tutorial, part 2](../getting-started/part2-content-scripts.md)
 
 
 <!-- ====================================================================== -->
@@ -56,6 +54,7 @@ As with other extension resources, the sidebar page commits to a trusted extensi
 All the existing extensions APIs are available for sidebar extensions, so you can leverage all current capabilities of the extensibility framework in your sidebar-enabled extension.
 
 To add a sidebar to your extension, follow the steps below.
+<!-- todo: Are they actually “steps”?  Be more specific or appropriate wording. -->
 
 
 <!-- ====================================================================== -->
@@ -63,9 +62,7 @@ To add a sidebar to your extension, follow the steps below.
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#manifest -->
 
-To use the Sidebar API, add a permission in your `manifest.json` file.  Include the `sidePanel` permission in the extension's manifest file:
-
-`manifest.json`:
+To use the Sidebar API, add a permission in your `manifest.json` file.  Include the `sidePanel` permission in the extension's `manifest.json` file:
 
 ```json
 {
@@ -104,7 +101,7 @@ The following sections demonstrate some common use cases for the Sidebar API.
 
 A sidebar can be set as the default, to show the same extension throughout all the open browser tabs.  Default values persist across browser sessions.
 
-`manifest.json`:
+In `manifest.json`, define the `"default_path"` key, such as `"sidebar.html"`:
 
 ```json
 {
@@ -117,7 +114,7 @@ A sidebar can be set as the default, to show the same extension throughout all t
 }
 ```
 
-`sidebar.html`:
+The file you specified as the default, such as `sidebar.html`, appears in all the open browser tabs:
 
 ```html
 <!DOCTYPE html>
@@ -142,7 +139,7 @@ An extension can use [sidepanel.setOptions()](https://developer.chrome.com/docs/
 
 This example uses [chrome.tabs.onUpdated()](https://developer.chrome.com/docs/extensions/reference/tabs/#event-onUpdated) to listen for any updates made to the tab.  It checks whether the URL is `www.bing.com` and if so, enables the sidebar.  Otherwise, it disables the sidebar.
 
-`service-worker.js`:
+In `service-worker.js`, in `addListener()`, test `url.origin` to see if it's the desired tab, and then in `sidePanel.setOptions()`, set `enabled` to `true` or `false`:
 
 ```js
 const BING_ORIGIN = 'https://www.bing.com';
@@ -177,9 +174,7 @@ For a complete example, see [Site-specific side panel example](https://github.co
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon -->
 
-To allow users to open the sidebar by clicking the action toolbar icon, use [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior).  First, declare the `"action"` key in the manifest:
-
-`manifest.json`:
+To allow users to open the sidebar by clicking the action toolbar icon, use [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior).  First, declare the `"action"` key in `manifest.json`:
 
 ```json
 {
@@ -192,9 +187,7 @@ To allow users to open the sidebar by clicking the action toolbar icon, use [sid
 }
 ```
 
-Then, add the following code to the code listing that's in [Enable a sidebar for a specific site only](#enable-a-sidebar-for-a-specific-site-only) above:
-
-`service-worker.js`:
+Then, add the following code to the `service-worker.js` code listing that's in [Enable a sidebar for a specific site only](#enable-a-sidebar-for-a-specific-site-only) above:
 
 ```js
 // Allow users to open the sidebar by clicking on the action toolbar icon
@@ -214,9 +207,8 @@ An extension can use [sidepanel.getOptions()](https://developer.chrome.com/docs/
 
 This example sets a sidebar containing a welcome message on [runtime.onInstalled()](https://developer.chrome.com/docs/extensions/reference/runtime/#event-onInstalled).  When the user navigates to a different tab, the sidebar is replaced with the browser-level sidebar.
 
-`service-worker.js`:
-
 ```js
+// service-worker.js:
 const welcomePage = 'sidebar/welcome-sb.html';
 const mainPage = 'sidebar/main-sb.html';
 
@@ -267,11 +259,14 @@ There are several ways to open the extension in the sidebar:
 
 <!-- ---------- -->
 *  Left-click the extension's custom icon in the toolbar, if it's enabled.  In this example, the extension's custom icon is a circle (![Extension's custom icon](./sidebar-images/custom-icon-for-demo-extension.png)):
+<!-- todo: check on Left Click UI design of left-click -->
 
    ![Left-clicking the extension's icon in the toolbar](./sidebar-images/left-click-toolbar-icon.png)
 
 <!-- ---------- -->
 *  Press a keyboard shortcut, if the [action command](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) and the [action icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) are enabled.
+<!-- todo: clarify the wording.  eg Chrome’s note:
+With openPanelOnActionClick() enabled, you can also open the side panel using a keyboard shortcut by specifying an action command in the manifest as featured in the Tab-specific side panel sample. -->
 
 
 <!-- ====================================================================== -->
@@ -300,6 +295,8 @@ See [chrome.sidePanel Types and Methods](https://developer.chrome.com/docs/exten
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
 * [Declare API permissions in extension manifests](../developer-guide/declare-permissions.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
+* [Create an extension tutorial, part 1](../getting-started/part1-simple-extension.md)
+* [Create an extension tutorial, part 2](../getting-started/part2-content-scripts.md)
 
 
 <!-- ====================================================================== -->
