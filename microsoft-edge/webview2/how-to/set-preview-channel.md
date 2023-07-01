@@ -35,7 +35,7 @@ For more information about how SDK versions works in conjunction with the WebVie
 
 To use experimental APIs, download a prerelease version of the WebView2 SDK from [Microsoft.Web.WebView2 package](https://www.nuget.org/packages/Microsoft.Web.WebView2).
 
-To download a Microsoft Edge preview channel, see [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download).
+To download a Microsoft Edge preview channel, see [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider).
 
 
 <!-- intro/overview of 4 approaches ======================================= -->
@@ -243,7 +243,7 @@ If you use the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable, you c
 
 | Value | Description |
 |---|---|
-| `1` | Reverses the search order, to use [preview channels](https://www.microsoftedgeinsider.com/download) first, before the WebView2 Runtime. |
+| `1` | Reverses the search order, to use [preview channels](https://www.microsoft.com/edge/download/insider) first, before the WebView2 Runtime. |
 | `0` or another value other than `1` | Uses the [default channel-search order](#default-channel-search-order), which is to use the WebView2 Runtime before the preview channels. |
 
 

@@ -39,7 +39,7 @@ This sample is built as a Win32 [Visual Studio 2019](https://visualstudio.micros
 <!-- ====================================================================== -->
 ## Step 1: Install a preview channel of Microsoft Edge
 
-*  If not installed yet, install a [preview channel of Microsoft Edge](https://www.microsoftedgeinsider.com/download/) on a supported OS.
+*  If not installed yet, install a [preview channel of Microsoft Edge](https://www.microsoft.com/edge/download/insider/) on a supported OS.
 
 
 <!-- ====================================================================== -->

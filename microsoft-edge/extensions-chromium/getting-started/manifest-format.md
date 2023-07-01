@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/07/2022
+ms.date: 06/23/2023
 ---
 # Manifest file format for extensions
 
@@ -28,7 +28,7 @@ The following code shows the fields that are supported in `manifest.json` for ex
 
 ##### [Manifest V3](#tab/v3)
 
-For reference information about each field, see [Manifest file format (V3)](https://developer.chrome.com/docs/extensions/mv3/manifest) and then select the links on the fields.
+For reference information about each field, see [Manifest file format (V3)](https://developer.chrome.com/docs/extensions/mv3/manifest) and then click the links on the fields.
 
 ```json
 {
@@ -92,12 +92,13 @@ For reference information about each field, see [Manifest file format (V3)](http
     "chrome_style": true,
     "page": "options.html"
   },
-  "permissions": ["tabs"],
+  "permissions": ["..."],
   "platforms": ...,
   "replacement_web_app": ...,
   "requirements": {...},
   "sandbox": [...],
   "short_name": "Short Name",
+  "side_panel": {...},
   "storage": {
     "managed_schema": "schema.json"
   },
@@ -220,3 +221,9 @@ For reference information about each field, see [Manifest file format (V2)](http
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Overview of Microsoft Edge extensions](../index.md)
