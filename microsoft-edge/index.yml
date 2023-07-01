@@ -27,13 +27,17 @@ highlightedContent:
       itemType: download
       url: https://www.microsoft.com/edge
     # Card
-    - title: "Microsoft Edge Insider Channels"
+    - title: "Download Microsoft Edge for Business"
       itemType: download
       url: https://www.microsoft.com/edge/business/download
     # Card
+    - title: "Microsoft Edge Insider Channels"
+      itemType: download
+      url: https://www.microsoft.com/edge/download/insider
+    # Card
     - title: "Find out what's new"
       itemType: learn
-      url: https://www.microsoftedgeinsider.com/whats-new
+      url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # or https://www.microsoft.com/edge/update/latest (1 at a time)
     # Card
     - title: "Get support"
       itemType: reference
