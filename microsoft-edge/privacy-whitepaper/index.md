@@ -403,7 +403,7 @@ Microsoft Edge uses a Microsoft network time service to track time from an exter
 <!-- ====================================================================== -->
 ## New tab page
 
-Microsoft Edge provides an engaging and user-centric new tab page with a search box powered by [Bing](https://bing.com). Microsoft Edge also provides quick link tiles for the sites you visit most frequently, and relevant content from Microsoft News or Office 365. You can change the appearance of the new tab page by selecting the **customize** button. Your new tab page preferences are set for each profile and stored locally on your device. The preferences aren't synced across devices.
+Microsoft Edge provides an engaging and user-centric new tab page with a search box powered by [Bing](https://bing.com). Microsoft Edge also provides quick link tiles for the sites you visit most frequently, and relevant content from Microsoft News or Microsoft 365. You can change the appearance of the new tab page by selecting the **customize** button. Your new tab page preferences are set for each profile and stored locally on your device. The preferences aren't synced across devices.
 
 To speed up load times for the Microsoft Edge new tab page, the page may be loaded in the background. The content that is loaded might include cookies, if you allow cookies. You can turn off background loading for the Microsoft new tab page. Go to `edge://settings/newTabPage` and turn off the **Preload the new tab page for a faster experience** setting.
 
@@ -423,9 +423,9 @@ Microsoft Edge collects diagnostic data about how you use the new tab page, such
 
 The new tab page also lets you set a custom image as the background. The image is stored locally on the device and may be deleted by removing the image or uploading a new image. No information about the image is sent to Microsoft.
 
-#### Office 365
+#### Microsoft 365
 
-If you are signed in to Microsoft Edge with a work or school account, your organization may turn on Office 365 as an option for page content on the new tab page. The feature is currently available only for commercial customers, under the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products). For more information about privacy for Office 365, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls).
+If you are signed in to Microsoft Edge with a work or school account, your organization may turn on Microsoft 365 as an option for page content on the new tab page. The feature is currently available only for commercial customers under the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products). For more information about privacy for Microsoft 365, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls).
 
 **InPrivate** browsing and **Guest** mode offer alternative new tab page experiences.
 
@@ -787,6 +787,19 @@ When you pin a site, it is added to your taskbar or dock.  The data is stored lo
 Microsoft Edge WebView controls allow app developers to host web content in native applications on Windows 7, Windows 10, and later; and selected non-Windows platforms. The applications hosting the WebView2 instance may send diagnostic data with its own identifier to Microsoft. Diagnostic data can include how you use the Microsoft Edge, and sites you visit.
 
 To enable diagnostic data collection, go to `edge://settings/privacy`. Turn on the **Optional diagnostic data** setting. To turn off diagnostic data collection for Microsoft Edge on Windows 10 and later, open **Start** > **Settings** > **Privacy** and select **Diagnostics & feedback**. To turn off diagnostic data collection for all other platforms, go to `edge://settings/privacy`. Turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting. The applications hosting Microsoft Edge WebView may collect other data that is governed by the data collection management of the developer and relevant privacy policies.
+
+
+<!-- ====================================================================== -->
+## Workspaces
+
+The Microsoft Edge Workspaces feature allows you to easily organize and share your browsing tasks with collaborators via customizable, shareable browsing windows. Each workspace shares favorites, a set of workspace tabs, and history, all created and curated by you and your collaborators. Workspace data is automatically saved, kept up-to-date, and stored in OneDrive/SharePoint.
+
+Microsoft Edge Workspaces shares tabs, favorites, and history with collaborators in real-time. Collaborators' profile pictures are used to indicate which workspace tab they are using and which workspace tabs they have opened, changed, or closed. Collaborators cannot see how you interact with a webpage (workspaces don't screen-share).
+
+Collaborators cannot see password-protected content unless they sign in and they have access via their own credentials. Microsoft Edge Workspaces doesn't store or share browsing data from non-workspace browsing sessions. If you leave a workspace, the stored contents remain available for other collaborators. If you delete a workspace, the stored contents are deleted for all collaborators.
+
+Microsoft Edge Workspaces is only available for enterprise customers who are signed into Microsoft Edge with a Microsoft Azure Active Directory (AAD) account.  Workspaces aren't available when using Guest mode or InPrivate browsing. 
+
 
 <!-- ====================================================================== -->
 ## Writing assistance
