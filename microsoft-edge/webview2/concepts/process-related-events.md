@@ -40,7 +40,7 @@ ms.date: 06/29/2023
 * [See also](#see-also)
 
 
-The WebView2 API provides the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events for your application to react to different scenarios.  Use this document to learn how to use these events to react when these scenarios occur.
+WebView2 provides the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events for your application to react to different scenarios.  Use this document to learn how to use these events to react when these scenarios occur.
 
 * `CoreWebView2.ProcessFailed`. Use this event for diagnostics and recovery from failures in the WebView2 processes.
 
