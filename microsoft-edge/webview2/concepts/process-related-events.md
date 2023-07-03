@@ -171,8 +171,6 @@ Subsections below:
 
 When `ProcessFailedKind` indicates an unexpected exit, `ProcessFailedReason` indicates the category of the problem causing the exit. Some of these _failure reasons_ are only applicable to specific _failure kinds_.
 
-For an unresponsive renderer, the `ProcessFailedReason` is always `unresponsive`.
-
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2ProcessFailedReason Enum](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedreason)
