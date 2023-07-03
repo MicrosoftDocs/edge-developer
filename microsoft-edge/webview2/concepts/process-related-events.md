@@ -68,7 +68,7 @@ WebView2 provides the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.
 To improve the reliability of your WebView2 application, it is recommended that it handles at least the following events:
 * [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly).
 * [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly).
-* A renderer process has become unresponsive.  See [Handle unresponsive renderers](#handle-unresponsive-renderers).
+* [A renderer process becomes unresponsive](#handle-unresponsive-renderers).
 
 These events and scenarios are described below.
 
