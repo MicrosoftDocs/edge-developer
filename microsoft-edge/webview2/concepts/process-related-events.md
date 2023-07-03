@@ -87,19 +87,13 @@ This is an illustrative and incomplete list of process kinds. The purpose and ma
 
 When you create and initialize a WebView2 control, WebView2 will ensure there's a WebView2 Runtime to power your control and connect to its [WebView2 Process Group](process-model.md#processes-in-the-webview2-runtime). Once this connection is established, your control will start monitoring these processes for the following events:
 
-* **Any process failure.** When _any of the processes_ in the WebView2 Runtime fail, the CoreWebView2 will raise the `ProcessFailed` event. Use this event for diagnostics and recovery from failures in the WebView2 processes. See [Handle process failures](#handle-process-failures) below.
+* **Any process failure.** When _any of the processes_ in the WebView2 Runtime fail, the CoreWebView2 will raise the `ProcessFailed` event. Use this event for diagnostics and recovery from failures in the WebView2 processes.
 
-* **Main browser process exits.** If the main browser process exits for _any reason_, the `CoreWebView2Environment` will raise the `BrowserProcessExited` event. Use this event to synchronize operations involving the WebView2 Runtime resources and lifetime, such as _User Data Folder_ management and updates. See [Handle main browser process exited](#handle-main-browser-process-exited) below.
+* **Main browser process exits.** If the main browser process exits for _any reason_, the `CoreWebView2Environment` will raise the `BrowserProcessExited` event. Use this event to synchronize operations involving the WebView2 Runtime resources and lifetime, such as _User Data Folder_ management and updates.
 
-* There is some overlap between these two events. For example, a main browser process crash will produce both a `ProcessFailed` event and a `BrowserProcessExited` event, since the main browser process _exited_ because of a failure. See [Handle main browser process crashes](#handle-main-browser-process-crashes) below.
+* There is some overlap between these two events. For example, a main browser process crash will produce both a `ProcessFailed` event and a `BrowserProcessExited` event, since the main browser process _exited_ because of a failure.
 
 `CoreWebView2` and `CoreWebView2Environment` report these events so your application can react accordingly.  There are multiple scenarios your application can handle through these events.
-
-
-Main sections (scenarios) below:
-* [Handle process failures](#handle-process-failures)
-* [Handle main browser process crashes](#handle-main-browser-process-crashes)
-* [Handle main browser process exited](#handle-main-browser-process-exited)
 
 
 <!-- ====================================================================== -->
