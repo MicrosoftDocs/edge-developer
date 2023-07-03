@@ -14,12 +14,6 @@ ms.date: 06/29/2023
 
 * [Process model and APIs](#process-model-and-apis)
 * [Events for processes that exited or failed](#events-for-processes-that-exited-or-failed)
-* [Handle main browser process exited](#handle-main-browser-process-exited)
-   * [BrowserProcessExited event](#browserprocessexited-event)
-   * [Clearing the user data folder](#clearing-the-user-data-folder)
-   * [Updating the WebView2 Runtime](#updating-the-webview2-runtime)
-   * [Restarting with a different environment configuration](#restarting-with-a-different-environment-configuration)
-   * [Clearing the auth cache](#clearing-the-auth-cache)
 * [Handle process failures](#handle-process-failures)
    * [Gather process failure details](#gather-process-failure-details)
       * [Failure kind](#failure-kind)
@@ -37,10 +31,16 @@ ms.date: 06/29/2023
 * [Handle main browser process crashes](#handle-main-browser-process-crashes)
    * [ProcessFailed, for main browser process crashes](#processfailed-for-main-browser-process-crashes)
    * [BrowserProcessExited, for main browser process crashes](#browserprocessexited-for-main-browser-process-crashes)
+* [Handle main browser process exited](#handle-main-browser-process-exited)
+   * [BrowserProcessExited event](#browserprocessexited-event)
+   * [Clearing the user data folder](#clearing-the-user-data-folder)
+   * [Updating the WebView2 Runtime](#updating-the-webview2-runtime)
+   * [Restarting with a different environment configuration](#restarting-with-a-different-environment-configuration)
+   * [Clearing the auth cache](#clearing-the-auth-cache)
 * [See also](#see-also)
 
 
-The WebView2 API provides the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events for your application to react to different scenarios.  Use this document to learn how to use these events to react when these scenarios occur.
+WebView2 provides the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events for your application to react to different scenarios.  Use this document to learn how to use these events to react when these scenarios occur.
 
 * `CoreWebView2.ProcessFailed`. Use this event for diagnostics and recovery from failures in the WebView2 processes.
 
@@ -68,7 +68,7 @@ The WebView2 API provides the `CoreWebView2.ProcessFailed` and `CoreWebView2Envi
 To improve the reliability of your WebView2 application, it is recommended that it handles at least the following events:
 * [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly).
 * [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly).
-* A renderer process has become unresponsive.  See [Handle unresponsive renderers](#handle-unresponsive-renderers).
+* [A renderer process becomes unresponsive](#handle-unresponsive-renderers).
 
 These events and scenarios are described below.
 
@@ -134,9 +134,9 @@ This is an illustrative and incomplete list of process kinds. The purpose and ma
 
 When you create and initialize a WebView2 control, WebView2 will ensure there's a WebView2 Runtime to power your control and connect to its [WebView2 Process Group](process-model.md#processes-in-the-webview2-runtime). Once this connection is established, your control will start monitoring these processes for the following events:
 
-* **Main browser process exits.** If the main browser process exits for _any reason_, the `CoreWebView2Environment` will raise the `BrowserProcessExited` event. Use this event to synchronize operations involving the WebView2 Runtime resources and lifetime, such as _User Data Folder_ management and updates. See [Handle main browser process exited](#handle-main-browser-process-exited) below.
-
 * **Any process failure.** When _any of the processes_ in the WebView2 Runtime fail, the CoreWebView2 will raise the `ProcessFailed` event. Use this event for diagnostics and recovery from failures in the WebView2 processes. See [Handle process failures](#handle-process-failures) below.
+
+* **Main browser process exits.** If the main browser process exits for _any reason_, the `CoreWebView2Environment` will raise the `BrowserProcessExited` event. Use this event to synchronize operations involving the WebView2 Runtime resources and lifetime, such as _User Data Folder_ management and updates. See [Handle main browser process exited](#handle-main-browser-process-exited) below.
 
 * There is some overlap between these two events. For example, a main browser process crash will produce both a `ProcessFailed` event and a `BrowserProcessExited` event, since the main browser process _exited_ because of a failure. See [Handle main browser process crashes](#handle-main-browser-process-crashes) below.
 
@@ -144,79 +144,9 @@ When you create and initialize a WebView2 control, WebView2 will ensure there's 
 
 
 Main sections (scenarios) below:
-* [Handle main browser process exited](#handle-main-browser-process-exited)
 * [Handle process failures](#handle-process-failures)
 * [Handle main browser process crashes](#handle-main-browser-process-crashes)
-
-
-<!-- ====================================================================== -->
-## Handle main browser process exited
-
-The `BrowserProcessExited` event indicates that the main browser process has exited and its resources (including its child processes) have been released. This can happen for the following reasons:
-
-* All WebView2 controls from the `CoreWebView2Environment` have been closed. Example app scenarios include:
-   * Clearing the user data folder
-   * Updating the WebView2 Runtime
-   * Restarting with a different environment configuration
-   * Clearing the auth cache
-
-   These app scenarios are described below.
-
-* The main browser process failed. See [Handle main browser process crashes](#handle-main-browser-process-crashes) below to handle this case.
-
-
-<!-- ------------------------------ -->
-#### BrowserProcessExited event
-
-The `BrowserProcessExited` event provides the _exit kind_ and the _process ID_ so your application can determine when and how to handle the event. For more information about the _exit kind_ and the _process ID_, see `CoreWebView2BrowserProcessExitedEventArgs`.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Environment` Class:
-   * [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserprocessexited)
-* [CoreWebView2BrowserProcessExitedEventArgs Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browserprocessexitedeventargs)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Environment` Class:
-   * [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#browserprocessexited)
-* [CoreWebView2BrowserProcessExitedEventArgs Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browserprocessexitedeventargs)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `ICoreWebView2Environment5` interface:
-   * [ICoreWebView2Environment5::add_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
-   * [ICoreWebView2Environment5::remove_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
-* [ICoreWebView2BrowserProcessExitedEventArgs interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs)
-
----
-
-
-<!-- ------------------------------ -->
-#### Clearing the user data folder
-
-Your application needs to wait until the WebView2 Runtime has released the _User Data Folder_ before it can delete its contents. After closing all WebView2 controls, the `BrowserProcessExited` event indicates this has happened and your application can proceed with the operation.
-
-See also:
-* [Manage user data folders](user-data-folder.md)
-
-
-<!-- ------------------------------ -->
-#### Updating the WebView2 Runtime
-
-In order to make use of the latest WebView2 Runtime after an update, your application needs to close all WebView2 controls and create a new `CoreWebView2Environment`. To ensure the new version is used, your application must wait for the `BrowserProcessExited` event; otherwise, the main browser process might stay alive when the new environment is created and switching to the new version would fail.
-
-
-<!-- ------------------------------ -->
-#### Restarting with a different environment configuration
-
-Most of the configuration used for a `CoreWebView2Environment` is bound to the main browser process lifetime. In order to make changes to this configuration (for example, to language), your application needs to close existing WebView2 controls and wait for `BrowserProcessExited` before recreating the controls; otherwise, initializing the WebView2 controls from the new CoreWebView2Environment might fail with incompatible configuration.
-
-
-<!-- ------------------------------ -->
-#### Clearing the auth cache
-
-The auth cache is bound to the main browser process lifetime. To clear the cache, your application must recreate its WebView2 controls from a new main browser process instance. To ensure a new main browser process instance is used when recreating the controls, your application must wait for the `BrowserProcessExited` event before proceeding; otherwise, the main browser process might stay alive when the controls are recreated and preserve the auth cache.
+* [Handle main browser process exited](#handle-main-browser-process-exited)
 
 
 <!-- ====================================================================== -->
@@ -627,6 +557,76 @@ Although a `BrowserProcessExited` **event** will be raised too, this event is in
 * [ICoreWebView2BrowserProcessExitedEventArgs::get_BrowserProcessExitKind property](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs#get_browserprocessexitkind)
 
 ---
+
+
+<!-- ====================================================================== -->
+## Handle main browser process exited
+
+The `BrowserProcessExited` event indicates that the main browser process has exited and its resources (including its child processes) have been released. This can happen for the following reasons:
+
+* All WebView2 controls from the `CoreWebView2Environment` have been closed. Example app scenarios include:
+   * Clearing the user data folder
+   * Updating the WebView2 Runtime
+   * Restarting with a different environment configuration
+   * Clearing the auth cache
+
+   These app scenarios are described below.
+
+* The main browser process failed. See [Handle main browser process crashes](#handle-main-browser-process-crashes) below to handle this case.
+
+
+<!-- ------------------------------ -->
+#### BrowserProcessExited event
+
+The `BrowserProcessExited` event provides the _exit kind_ and the _process ID_ so your application can determine when and how to handle the event. For more information about the _exit kind_ and the _process ID_, see `CoreWebView2BrowserProcessExitedEventArgs`.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserprocessexited)
+* [CoreWebView2BrowserProcessExitedEventArgs Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browserprocessexitedeventargs)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#browserprocessexited)
+* [CoreWebView2BrowserProcessExitedEventArgs Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browserprocessexitedeventargs)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2Environment5` interface:
+   * [ICoreWebView2Environment5::add_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
+   * [ICoreWebView2Environment5::remove_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
+* [ICoreWebView2BrowserProcessExitedEventArgs interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Clearing the user data folder
+
+Your application needs to wait until the WebView2 Runtime has released the _User Data Folder_ before it can delete its contents. After closing all WebView2 controls, the `BrowserProcessExited` event indicates this has happened and your application can proceed with the operation.
+
+See also:
+* [Manage user data folders](user-data-folder.md)
+
+
+<!-- ------------------------------ -->
+#### Updating the WebView2 Runtime
+
+In order to make use of the latest WebView2 Runtime after an update, your application needs to close all WebView2 controls and create a new `CoreWebView2Environment`. To ensure the new version is used, your application must wait for the `BrowserProcessExited` event; otherwise, the main browser process might stay alive when the new environment is created and switching to the new version would fail.
+
+
+<!-- ------------------------------ -->
+#### Restarting with a different environment configuration
+
+Most of the configuration used for a `CoreWebView2Environment` is bound to the main browser process lifetime. In order to make changes to this configuration (for example, to language), your application needs to close existing WebView2 controls and wait for `BrowserProcessExited` before recreating the controls; otherwise, initializing the WebView2 controls from the new CoreWebView2Environment might fail with incompatible configuration.
+
+
+<!-- ------------------------------ -->
+#### Clearing the auth cache
+
+The auth cache is bound to the main browser process lifetime. To clear the cache, your application must recreate its WebView2 controls from a new main browser process instance. To ensure a new main browser process instance is used when recreating the controls, your application must wait for the `BrowserProcessExited` event before proceeding; otherwise, the main browser process might stay alive when the controls are recreated and preserve the auth cache.
 
 
 <!-- ====================================================================== -->
