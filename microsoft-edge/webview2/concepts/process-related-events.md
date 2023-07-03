@@ -12,7 +12,6 @@ ms.date: 06/29/2023
 
 **Contents:**
 
-* [Process model and APIs](#process-model-and-apis)
 * [Events for processes that exited or failed](#events-for-processes-that-exited-or-failed)
 * [Handle process failures](#handle-process-failures)
    * [Gather process failure details](#gather-process-failure-details)
@@ -40,7 +39,7 @@ ms.date: 06/29/2023
 * [See also](#see-also)
 
 
-WebView2 provides the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events for your application to react to different scenarios.  Use this document to learn how to use these events to react when these scenarios occur.
+WebView2 uses multiple processes to support the WebView2 controls in your application. Because these processes can exit during use, WebView2 provides the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events for your application to react to different scenarios.  Use this document to learn how to use these events to react when these scenarios occur.
 
 * `CoreWebView2.ProcessFailed`. Use this event for diagnostics and recovery from failures in the WebView2 processes.
 
@@ -73,52 +72,6 @@ To improve the reliability of your WebView2 application, it is recommended that 
 These events and scenarios are described below.
 
 This document is a high-level overview of the most relevant events. For details, see the linked API Reference documentation.
-
-
-<!-- ====================================================================== -->
-## Process model and APIs
-
-The [WebView2 Process Model](process-model.md) uses the WebView2 Runtime to support your WebView2 application. Because most of the magic in the WebView2 controls in your application happens out-of-process (in the WebView2 Runtime), failures and general information about these processes are passed to your application through different WebView2 APIs. The APIs used to report this information to your application include:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.BrowserProcessId Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.browserprocessid)
-   * [CoreWebView2.ProcessFailed Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.processfailed)
-* `CoreWebView2Environment` Class:
-   * [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserprocessexited)
-   * [CoreWebView2Environment.ProcessInfosChanged Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.processinfoschanged)
-   * [CoreWebView2Environment.GetProcessInfos Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getprocessinfos)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.BrowserProcessId Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#browserprocessid)
-   * [CoreWebView2.ProcessFailed Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#processfailed)
-* `CoreWebView2Environment` Class:
-   * [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#browserprocessexited)
-   * [CoreWebView2Environment.ProcessInfosChanged Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#processinfoschanged)
-   * [CoreWebView2Environment.GetProcessInfos Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#getprocessinfos)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `ICoreWebView2` interface:
-   * [ICoreWebView2::get_BrowserProcessId method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#get_browserprocessid)<!--no put-->
-   * [ICoreWebView2::add_ProcessFailed method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)
-   * [ICoreWebView2::remove_ProcessFailed method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
-* [ICoreWebView2Environment5 interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
-   * [ICoreWebView2Environment5::add_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
-   * [ICoreWebView2Environment5::remove_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
-* [ICoreWebView2Environment8 interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment8)
-   * [ICoreWebView2Environment8::add_ProcessInfosChanged event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment8#add_processinfoschanged)
-   * [ICoreWebView2Environment8::remove_ProcessInfosChanged event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment8#remove_processinfoschanged)
-   * [ICoreWebView2Environment8::GetProcessInfos method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment8#getprocessinfos)
-
----
-
-This is an overview at the conceptual level. For detailed API names and related types in your app's framework, see [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
-
-In this document, we discuss how to handle process exits and failures, using the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events.
 
 
 <!-- ====================================================================== -->
