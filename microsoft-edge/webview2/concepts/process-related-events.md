@@ -149,7 +149,7 @@ Subsections below:
 <!-- ---------- -->
 ###### Failure kind
 
-`ProcessFailedKind` is a combination of the process purpose (browser, renderer, gpu, etc.) and failure (exit, unresponsiveness). Your application can use _failure kind_ to determine the process that has failed. Renderer processes are further divided in _main frame_ renderer (`RenderProcessExited`, `RenderProcessUnresponsive`) and _subframe_ renderer (`FrameRenderProcessExited`). For more details about the conditions under which each specific _failure kind_ is used, see:
+`ProcessFailedKind` is a combination of the process purpose (like browser, renderer, or gpu) and failure (exit, unresponsiveness). Your application can use this _failure kind_ to determine the process that has failed and what type of failure occurred. Renderer processes are further divided in _main frame_ renderer (`RenderProcessExited`, `RenderProcessUnresponsive`) and _subframe_ renderer (`FrameRenderProcessExited`). For more details about the conditions under which each specific _failure kind_ is used, see:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -169,9 +169,9 @@ Subsections below:
 <!-- ---------- -->
 ###### Failure reason
 
-When the _failure kind_ is for an unexpected exit, _failure reason_ indicates the category of the problem causing the exit. Some of the _failure reasons_ are only applicable to specific _failure kinds_.
+When `ProcessFailedKind` indicates an unexpected exit, `ProcessFailedReason` indicates the category of the problem causing the exit. Some of these _failure reasons_ are only applicable to specific _failure kinds_.
 
-For unresponsive renderer _failure kind_, the _failure reason_ is always `unresponsive`.
+For an unresponsive renderer, the `ProcessFailedReason` is always `unresponsive`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
