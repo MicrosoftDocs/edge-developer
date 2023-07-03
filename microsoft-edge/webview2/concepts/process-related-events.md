@@ -149,7 +149,7 @@ Subsections below:
 <!-- ---------- -->
 ###### Failure kind
 
-Due to historical reasons, _failure kind_ is a combination of process kind (browser, renderer, gpu, ...) and failure (exit, unresponsiveness). Your application can use _failure kind_ to determine the process that has failed. Renderer processes are further divided in _main frame_ renderer (`RenderProcessExited`, `RenderProcessUnresponsive`) and _subframe_ renderer (`FrameRenderProcessExited`). For more details about the conditions under which each specific _failure kind_ is used, see:
+`ProcessFailedKind` is a combination of the process purpose (browser, renderer, gpu, etc.) and failure (exit, unresponsiveness). Your application can use _failure kind_ to determine the process that has failed. Renderer processes are further divided in _main frame_ renderer (`RenderProcessExited`, `RenderProcessUnresponsive`) and _subframe_ renderer (`FrameRenderProcessExited`). For more details about the conditions under which each specific _failure kind_ is used, see:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
