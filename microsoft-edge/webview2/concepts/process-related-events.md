@@ -189,7 +189,7 @@ When `ProcessFailedKind` indicates an unexpected exit, `ProcessFailedReason` ind
 <!-- ---------- -->
 ###### Exit code, process description, and frames information
 
-In addition to _failure kind_ and _failure reason_, the `ProcessFailed` event provides more detailed information about the reported failure, including:
+In addition to `ProcessFailedKind` and `ProcessFailedReason`, the remaining arguments of the `ProcessFailed` event provide more detailed information about the reported failure, including:
 * Exit code
 * Process description (utility only)
 * Frames information (renderer only)
