@@ -29,23 +29,23 @@ The **Selector Stats** feature provides statistics about the CSS rule selectors 
 
 To view the statistics of your CSS rule selectors during long-running **Recalculate Style** events, first record a performance trace with the Selector Stats feature enabled.
 
-The Selector Stats feature isn't always enabled because it adds more overhead to your performance recordings. You should only leave it turned on when you need to investigate the performance of **Recalculate Style** events  and other rendering information:
+The Selector Stats feature isn't always enabled, because it adds more overhead to your performance recordings. You should only leave it turned on when you need to investigate the performance of **Recalculate Style** events and other rendering information.
 
 To record a performance trace with selector statistics:
 
 1. In the **Performance** tool, click **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)).
 
-1. Click **Enable advanced rendering instrumentation (slow)** to turn the setting on:
+1. Select the **Enable advanced rendering instrumentation (slow)** checkbox:
 
-   ![The Enable advanced rendering instrumentation checkbox in the Performance tool](./selector-stats-images/enable-feature.png)
+   ![The 'Enable advanced rendering instrumentation' checkbox in the Performance tool](./selector-stats-images/enable-feature.png)
  
-1. Click **Record** and run the scenario that you want to improve for your website or app.
+1. Click **Record**, and then run the scenario that you want to improve for your website or app.
 
 1. Click **Stop**.
 
 #### View statistics for a single event
 
-To view the statistics of the CSS rule selectors involved in a single **Recalculate Style** event:
+To view the statistics of the CSS rule selectors that are involved in a single **Recalculate Style** event:
 
 1. Find a **Recalculate Style** event in your performance recording and click it.
 
@@ -61,25 +61,25 @@ The **Selector Stats** section of the **Performance** tool shows a table of CSS 
 
 #### View statistics for multiple events
 
-To view aggregate statistics of the CSS rule selectors involved in multiple **Recalculate Style** events, copy multiple **Selector Stats** tables into a spreadsheet:
+To view aggregate statistics of the CSS rule selectors that are involved in multiple **Recalculate Style** events, copy multiple **Selector Stats** tables into a spreadsheet:
 
-1. Find the first **Recalculate Style** event you are interested in and click it.
+1. Find the first **Recalculate Style** event you're interested in, and then click it.
 
 1. In the bottom section of the **Performance** tool, click **Selector Stats**.
 
-1. Right-click the **Selector Stats** table and select **Copy Table**:
+1. Right-click the **Selector Stats** table, and then select **Copy Table**:
 
    ![The Copy Table menu item in the Selector Stats table](./selector-stats-images/copy-table.png)
 
-1. Paste the table into a spreadsheet, for example by using Microsoft Excel.
+1. Paste the table into a spreadsheet, such as Microsoft Excel.
 
-1. Repeat the previous steps with the other **Recalculate Style** events you are interested in.
+1. Repeat the previous steps with the other **Recalculate Style** events you're interested in.
 
 #### View aggregate statistics for the full recording
 
-To view aggregate statistics of the CSS rule selectors involved in the entire performance recording:
+To view aggregate statistics of the CSS rule selectors that are involved in the entire performance recording:
 
-1. Deselect any event you have selected in the performance recording by clicking an empty area of the flame chart.
+1. Deselect any event that's selected in the performance recording, by clicking an empty area of the flame chart.
 
 1. Select the entire recording range. To do this, double-click in the **CPU** chart at the top of the **Performance** tool or, using your mouse, hover over the flame chart and scroll up until the entire chart is displayed.
 
@@ -91,11 +91,11 @@ To view aggregate statistics of the CSS rule selectors involved in the entire pe
 <!-- ====================================================================== -->
 ## Analyze Selector Stats
 
-You can sort the data that's displayed in the **Selector Stats** table in ascending or descending order for any of the columns by clicking the column header.  For example, sort the **Elapsed (µs)** column in descending order to see which selectors take up the most time:
+To sort the data that's displayed in the **Selector Stats** table in ascending or descending order, click a column header.  For example, to see which selectors take up the most time, click the **Elapsed (µs)** column header:
 
 ![The Selector Stats table with the selectors sorted by elapsed time, in descending order](./selector-stats-images/sort-by-elapsed-time.png)
 
-As a general rule, if you find a CSS selector that took the browser a long time to calculate and was matched many times, it's a good candidate to try and improve.  Try to change your selector so it requires less time to calculate and matches fewer elements on the page.  How to improve your CSS selectors depend on your particular use case. Repeat the steps from the previous section to confirm that your changes helped decrease the **Recalculate Style** event duration.
+If you find a CSS selector that took the browser a long time to calculate and was matched many times, it's a good candidate to try and improve.  Try to change your selector so it requires less time to calculate and matches fewer elements on the page.  How to improve your CSS selectors depend on your particular use case. Repeat the steps from the previous section to confirm that your changes helped decrease the **Recalculate Style** event duration.
 
 
 <!-- ====================================================================== -->
@@ -103,4 +103,4 @@ As a general rule, if you find a CSS selector that took the browser a long time 
 
 * [Get started analyzing runtime performance](./index.md) - An introduction to analyzing runtime performance in DevTools.
 * [Performance features reference](./reference.md) - Covers many of the features in the **Performance** tool.
-* [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/)
+* [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/) - Windows blog post.
