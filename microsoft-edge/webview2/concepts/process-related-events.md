@@ -17,9 +17,9 @@ WebView2 uses multiple processes to support the WebView2 controls in your applic
 * [Events for processes that exited or failed](#events-for-processes-that-exited-or-failed)
 * [Handle process failures](#handle-process-failures)
    * [Gather process failure details](#gather-process-failure-details)
+      * [Exit code, process description, and frames information](#exit-code-process-description-and-frames-information)
       * [Failure kind](#failure-kind)
       * [Failure reason](#failure-reason)
-      * [Exit code, process description, and frames information](#exit-code-process-description-and-frames-information)
       * [Gathering details](#gathering-details)
    * [Handle unexpected exits for various types of processes](#handle-unexpected-exits-for-various-types-of-processes)
       * [Types of processes](#types-of-processes)
@@ -72,6 +72,17 @@ To improve the reliability of your WebView2 application, it is recommended that 
 * [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly).
 * [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly).
 * [A renderer process becomes unresponsive](#handle-unresponsive-renderers).
+<!-- TOC headings outline, with + marking the called-out sections:
+   * [Handle unexpected exits for various types of processes](#handle-unexpected-exits-for-various-types-of-processes)
+      * [Types of processes](#types-of-processes)
++     * [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly)
++     * [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly)
+      * [The GPU process has exited unexpectedly](#the-gpu-process-has-exited-unexpectedly)
+      * [A utility process has exited unexpectedly](#a-utility-process-has-exited-unexpectedly)
+      * [Any other process has exited unexpectedly](#any-other-process-has-exited-unexpectedly)
++  * [Handle unresponsive renderers](#handle-unresponsive-renderers)
+-->
+
 
 These events and scenarios are described below.  This document is a high-level overview of the most relevant events. For details, see the API Reference documentation.
 
@@ -116,8 +127,32 @@ See also:
 <!-- ------------------------------ -->
 #### Gather process failure details
 
-
 The `ProcessFailed` event provides information about the **kind of failure** and the **reason** why it occurred.  Your application can interpret these details as follows.
+
+
+<!-- ---------- -->
+###### Exit code, process description, and frames information
+
+In addition to `ProcessFailedKind` and `ProcessFailedReason`, the remaining arguments of the `ProcessFailed` event provide more detailed information about the reported failure, including:
+* Exit code
+* Process description (utility only)
+* Frames information (renderer only)
+
+Your application can leverage this information for diagnostics and other scenarios. For more information about when these details are provided and how your application can use them, see:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2ProcessFailedEventArgs Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2ProcessFailedEventArgs Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ProcessFailedEventArgs2 interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2)
+
+---
 
 
 <!-- ---------- -->
@@ -161,31 +196,6 @@ When `ProcessFailedKind` indicates an unexpected exit, `ProcessFailedReason` ind
 
 
 <!-- ---------- -->
-###### Exit code, process description, and frames information
-
-In addition to `ProcessFailedKind` and `ProcessFailedReason`, the remaining arguments of the `ProcessFailed` event provide more detailed information about the reported failure, including:
-* Exit code
-* Process description (utility only)
-* Frames information (renderer only)
-
-Your application can leverage this information for diagnostics and other scenarios. For more information about when these details are provided and how your application can use them, see:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2ProcessFailedEventArgs Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2ProcessFailedEventArgs Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ProcessFailedEventArgs2 interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2)
-
----
-
-
-<!-- ---------- -->
 ###### Gathering details
 
 Your application can use and collect information from the `ProcessFailed` and `BrowserProcessExited` events to identify the most frequent issues for your application.
@@ -212,11 +222,17 @@ Additionally, most process crashes will generate dumps in the [user data folder]
 <!-- ------------------------------ -->
 #### Handle unexpected exits for various types of processes
 
+To read this section, you should understand the [Process model for WebView2 apps](process-model.md).
+
+When a process in the _WebView2 Process Group_ exits unexpectedly (for example, due to a crash), every WebView2 control **associated** to it will raise a `ProcessFailed` event.  You can use the process failure details to decide how to handle each case; see [Gather process failure details](#gather-process-failure-details) above.
+
+Don't rely on the details about how processes are associated to each WebView2 control, because such details are part of the evolving Chromium architecture and are subject to change due to configuration and system conditions.
+
 
 <!-- ---------- -->
 ###### Types of processes
 
-The processes in the _WebView2 Process Group_ can be associated to one or many WebView2 controls in your application. For example:
+The processes in the _WebView2 Process Group_ can be associated to one or many WebView2 controls in your application.  For example:
 
 * **Main browser process.** There is a single main browser process in the _WebView2 Process Group_. Every WebView2 control with the same environment configuration will share this process.  See [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly), below.
 
@@ -227,11 +243,6 @@ The processes in the _WebView2 Process Group_ can be associated to one or many W
 * **Utility processes.** Utility processes host one or more _services_ in the _WebView2 Process Group_. Each utility process supports the entire _WebView2 Process Group_ and is thus associated with all WebView2 controls using this _WebView2 Process Group_.  See [A utility process has exited unexpectedly](#a-utility-process-has-exited-unexpectedly), below.
 
 * **Other processes.** Most processes in the _WebView2 Process Group_ are associated to all WebView2 controls using it and will raise `ProcessFailed` to each control.  See [Any other process has exited unexpectedly](#any-other-process-has-exited-unexpectedly), below.
-
-> [!NOTE]
-> Do not rely on the details about how processes are associated to each WebView2 control, because they are part of the evolving Chromium architecture and are subject to change due to configuration and system conditions. For more information, see [Process model for WebView2 apps](process-model.md).
-
-When a process in the _WebView2 Process Group_ exits unexpectedly (for example, due to a crash), every WebView2 control **associated** to it will raise a `ProcessFailed` event. You can use the process failure details to decide how to handle each case; see [Gather process failure details](#gather-process-failure-details) above.
 
 
 <!-- ---------- -->
