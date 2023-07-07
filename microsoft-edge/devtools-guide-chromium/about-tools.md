@@ -88,13 +88,13 @@ In the **Command Menu**:
 
 * _Quick View tools_ are tools which open in the **Quick View** toolbar by default, at the bottom of DevTools.  Press **Esc** to show or hide the **Quick View**.
 
-The **Command Menu** first lists the Panel tools, and then the **Quick View** tools:
+The **Command Menu** first lists the **Activity Bar** tools (indicated by the **Panel** label), and then the **Quick View** tools:
 
 ![The Command Menu, showing the Panel tools grouped together, and then the Quick View tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
 
 To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View** or **Move to top Activity Bar**:
 
-![The contextual menu for the Changes tool, which is displayed in the Quick View toolbar. The menu contains the Move to top Activity Bar item](./about-tools-images/move-from-quickview-to-activitybar.png)
+![The right-click menu for a tool in the Quick View toolbar, including the 'Move to top Activity Bar' menu item](./about-tools-images/move-from-quickview-to-activitybar.png)
 
 To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Or, click the **Customize and control DevTools** (![Customize icon](./about-tools-images/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
 
