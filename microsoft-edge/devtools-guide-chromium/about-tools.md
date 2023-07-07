@@ -88,7 +88,7 @@ In the **Command Menu**:
 
 * _Quick View tools_ are tools which open in the **Quick View** toolbar by default, at the bottom of DevTools.  Press **Esc** to show or hide the **Quick View**.
 
-The **Command Menu** first lists the Panel tools, and then the **Quick View** tools:
+The **Command Menu** first lists the **Activity Bar** tools (indicated by the **Panel** label), and then the **Quick View** tools:
 
 ![The Command Menu, showing the Panel tools grouped together, and then the Quick View tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
 
