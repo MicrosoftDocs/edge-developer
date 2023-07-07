@@ -114,6 +114,8 @@ If you want to disable the cache while working in other DevTools panels, use the
 
 1. Select or clear the **Disable cache** checkbox.
 
+![The Disable Cache checkbox in the Network conditions drawer](./reference-images/network-conditions-disable-cache.png)
+
 <!--todo: add network condition section when available -->
 
 ### Manually clear the browser cache
