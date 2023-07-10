@@ -431,7 +431,7 @@ Periodically, Edge could also offer custom browsing streak offers for just brows
 
 ![RewardsSidepaneUI](./media/rewardssidepane.png)
 
-Rewards is an opt in program. You can choose to turn off all Rewards experiences and data sharing in the Edge settings at : edge://settings/profiles/rewards. 
+Rewards is an opt-in program. To turn off all Rewards experiences and data sharing, go to `edge://settings/profiles/rewards`, and then in the **Microsoft Rewards** section, turn off the **Earn Microsoft Rewards in Microsoft Edge** toggle:
 
 ![RewardsSettingsUI](./media/rewardssettings.png)
 
