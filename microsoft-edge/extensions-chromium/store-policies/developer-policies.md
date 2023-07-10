@@ -359,18 +359,18 @@ If you submit a promotional video in the listing, it should follow all the conte
 
 All the extensions should adhere to the store policies listed above. If your extension failed in the review process, please review the store policies to understand the reason for failure. After submitting your extension using Partner Center, to ask a question about the review or certification status of it, go to [New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) and complete the form.
 
-### Microsoft Edge Add-ons appeal statistics for FY2021
+### Microsoft Edge Add-ons appeal statistics for FY2022
 
-Numbers as reported on 8/1/2022
+Numbers as reported on 7/1/2023
 
 
-| Statistic                                             | Count    |
-|----------------------------------------------|----------|
-| App and/or Account Enforcement Action Appeals |      42 |
-| Complaints about Technological Issues  |       27 |
-| Regulatory Compliance Complaints    |       0 |
-| Questions about certification, policy, submission, and technical help                    |      76 |
-| Miscellaneous | 15 |
-| Total Issues                              |      160 |
-| Overturned decisions                        |       8 |
-| Average Processing Time                      | 3.6 days |
+| Statistic                                                             | Count     |
+|-----------------------------------------------------------------------|-----------|
+| App and/or Account Enforcement Action Appeals                         |        34 |
+| Complaints about Technological Issues                                 |         0 |
+| Regulatory Compliance Complaints                                      |         0 |
+| Questions about certification, policy, submission, and technical help |       131 |
+| Miscellaneous                                                         |         5 |
+| Total Issues                                                          |       175 |
+| Overturned decisions                                                  |        28 |
+| Average Processing Time                                               | 6.58 days |
