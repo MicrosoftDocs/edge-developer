@@ -134,6 +134,7 @@ You can delete templates stored on the device and clear the cache data. Go to `e
 You can use the title of your collection to find relevant Pinterest Topic pages when searching in Microsoft Bing. Go to `edge://settings/privacy`. Turn on the **Show suggestions from Pinterest in Collections** setting. Microsoft Edge does not send data about your collections to Pinterest. You can remove the suggestions and stop searches for Pinterest Topic pages. Go to `edge://settings/privacy` and turn off the **Show suggestions from Pinterest in Collections** setting.
 Collections aren't available when using **InPrivate** or **Guest** modes.
 
+
 <!-- ====================================================================== -->
 ## Compose
 
