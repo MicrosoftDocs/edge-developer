@@ -435,35 +435,6 @@ Microsoft Edge WebDriver allows developers to drive the Microsoft Edge browser u
 
 
 <!-- ====================================================================== -->
-## Rewards
-
-Microsoft Rewards (the "Program") enables you to earn redeemable points for activities such as qualified searches, acquisitions, and other offers from Microsoft. These points can then be redeemed for gift cards or non-profit donations or automatic contributions to subscriptions. Microsoft Edge has built-in support for all existing avenues for earning points and also introduces new and exclusive means to earn more than ever. You can easily track your points, and stay up-to-date with limited period offers to get the most out of the program.
-
-For non-members, Microsoft Edge presents personalized joining offers based on the page you're on. Once you engage and choose to enroll, Microsoft Edge uses your Microsoft account identity to sign you up and start the rewards service.  The rewards service automatically adds points to your account for searching, playing, and shopping on Microsoft Edge. Microsoft Edge doesn't send your personal information or browsing data to any third-party services.
-
-Periodically, Edge could also offer custom browsing streak offers for just browsing on Edge for a few minutes every day for a limited period. You can track your streak progress; points earned and discover new offers on the [Rewards dashboard](https://rewards.bing.com/) or the action center on the Edge sidebar. 
-
-![Rewards Dashboard UI](./index-images/rewardsdashboard.png)
-
-![Rewards Sidepane UI](./index-images/rewardssidepane.png)
-
-Rewards is an opt-in program. To turn off all Rewards experiences and data sharing, go to `edge://settings/profiles/rewards`, and then in the **Microsoft Rewards** section, turn off the **Earn Microsoft Rewards in Microsoft Edge** toggle:
-
-![Rewards Settings UI](./index-images/rewardssettings.png)
-
-You can also opt out of the Rewards program.
-Note:
-1.	Offers may vary by market. 
-2.	How to earn: Microsoft Edge provides the greatest number of avenues to earn rewards points while browsing the web. 
-a.	A search is the act of an individual user manually entering text for the good faith purpose of obtaining Bing search results for such user’s own research purposes and does not include any query entered by a bot, macro, or other automated or fraudulent means of any kind ("Search").
-b.	An acquisition is the process of purchasing goods or downloading and acquiring a license for digital content from Microsoft, whether free or paid ("Acquisition"). Rewards points are not offered for every purchase from Microsoft. Microsoft may offer additional opportunities to earn points from time to time, and each point-earning offer will not be available in perpetuity.
-3.	Device requirement: You need a valid Microsoft account, and your devices must meet the minimum [system requirements](https://account.microsoft.com/rewards/).
-4.	Redeeming your points: You may redeem your points, or you may contribute points to a listed nonprofit organization by visiting the [redeem page](https://aka.ms/redeemrewards) or by signing up for automatic contributions to non-profit organizations through a giving program.
-5.	Cancelling Your Participation: If you no longer wish to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false). If you opt out, you will immediately lose all of your available points. 
-6.	For more information see the Rewards section at support.microsoft.com ("FAQ") and refer to Rewards section in the [Microsoft service agreement](https://www.microsoft.com/en-us/servicesagreement/).
-
-
-<!-- ====================================================================== -->
 ## Network time
 
 Microsoft Edge uses a Microsoft network time service to track time from an external source such as a time server.  At random intervals or when Microsoft Edge encounters an expired SSL certificate, Microsoft Edge may send requests to Microsoft to obtain the time from a trusted source.  The requests occur more frequently if Microsoft Edge detects the system clock is inaccurate.  A system clock inaccuracy happens if the user changes the time on the operating system and that conflicts with the correct time zone.  The Microsoft network time service is used to get the Coordinated Universal Time (UTC).  The requests contain no cookies or user identifiers, and no data is logged.
@@ -618,6 +589,35 @@ The functions tag is not unique to your installation of Microsoft Edge. The tag 
 ## Resolve navigation errors
 
 If Microsoft Edge detects SSL connection timeouts, certificate errors, or other network issues that may be caused by a captive portal, it sends a request to `http://edge.microsoft.com/captiveportal/generate_204` and checks the response code. Captive portals include a Wi-Fi network at a hotel or airport. If the request is redirected to another URL, Microsoft Edge opens the URL in a new tab, assuming that it is a sign-in page.  Requests to the captive portal detection page are a stateless service. Requests aren't logged, and cookies aren't sent or saved.  On Windows platforms, Microsoft Edge uses a Windows captive portal service. Otherwise, the Microsoft Edge captive portal service is used. You can turn off the service. Go to `edge://settings/privacy`, and turn off the **Use a web service to help resolve navigation errors** setting.
+
+
+<!-- ====================================================================== -->
+## Rewards
+
+Microsoft Rewards (the "Program") enables you to earn redeemable points for activities such as qualified searches, acquisitions, and other offers from Microsoft. These points can then be redeemed for gift cards or non-profit donations or automatic contributions to subscriptions. Microsoft Edge has built-in support for all existing avenues for earning points and also introduces new and exclusive means to earn more than ever. You can easily track your points, and stay up-to-date with limited period offers to get the most out of the program.
+
+For non-members, Microsoft Edge presents personalized joining offers based on the page you're on. Once you engage and choose to enroll, Microsoft Edge uses your Microsoft account identity to sign you up and start the rewards service.  The rewards service automatically adds points to your account for searching, playing, and shopping on Microsoft Edge. Microsoft Edge doesn't send your personal information or browsing data to any third-party services.
+
+Periodically, Edge could also offer custom browsing streak offers for just browsing on Edge for a few minutes every day for a limited period. You can track your streak progress; points earned and discover new offers on the [Rewards dashboard](https://rewards.bing.com/) or the action center on the Edge sidebar. 
+
+![Rewards Dashboard UI](./index-images/rewardsdashboard.png)
+
+![Rewards Sidepane UI](./index-images/rewardssidepane.png)
+
+Rewards is an opt-in program. To turn off all Rewards experiences and data sharing, go to `edge://settings/profiles/rewards`, and then in the **Microsoft Rewards** section, turn off the **Earn Microsoft Rewards in Microsoft Edge** toggle:
+
+![Rewards Settings UI](./index-images/rewardssettings.png)
+
+You can also opt out of the Rewards program.
+Note:
+1. Offers may vary by market. 
+2. How to earn: Microsoft Edge provides the greatest number of avenues to earn rewards points while browsing the web. 
+a. A search is the act of an individual user manually entering text for the good faith purpose of obtaining Bing search results for such user’s own research purposes and does not include any query entered by a bot, macro, or other automated or fraudulent means of any kind ("Search").
+b. An acquisition is the process of purchasing goods or downloading and acquiring a license for digital content from Microsoft, whether free or paid ("Acquisition"). Rewards points are not offered for every purchase from Microsoft. Microsoft may offer additional opportunities to earn points from time to time, and each point-earning offer will not be available in perpetuity.
+3. Device requirement: You need a valid Microsoft account, and your devices must meet the minimum [system requirements](https://account.microsoft.com/rewards/).
+4. Redeeming your points: You may redeem your points, or you may contribute points to a listed nonprofit organization by visiting the [redeem page](https://aka.ms/redeemrewards) or by signing up for automatic contributions to non-profit organizations through a giving program.
+5. Cancelling Your Participation: If you no longer wish to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false). If you opt out, you will immediately lose all of your available points. 
+6. For more information see the Rewards section at support.microsoft.com ("FAQ") and refer to Rewards section in the [Microsoft service agreement](https://www.microsoft.com/servicesagreement/).
 
 
 <!-- ====================================================================== -->
