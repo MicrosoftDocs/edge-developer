@@ -51,7 +51,7 @@ To begin using **Allocation instrumentation on timeline**:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Memory** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./allocation-profiler-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./allocation-profiler-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Memory** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./allocation-profiler-images/more-tools-icon-light-theme.png)) button.
 
 1. Select the **Allocation instrumentation on timeline** radio button.
 

@@ -33,7 +33,7 @@ To open the **Detached Elements** tool and load the demo page:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Detached Elements** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./dom-leaks-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./dom-leaks-images/more-tools-icon-light-theme.png)) button:
+1. In DevTools, on the main toolbar, select the **Detached Elements** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./dom-leaks-images/more-tools-icon-light-theme.png)) button:
 
    > [!div class="mx-imgBorder"]
    > ![Open the Detached Elements tool](./dom-leaks-images/open-detached-elements.png)
@@ -89,15 +89,15 @@ To identify the JavaScript code that references a detached element:
 
 1. In the **Detached Elements** tool, click the **Analyze** (![The Analyze icon](./dom-leaks-images/analyze-icon-light-mode.png)) icon.
 
-   The **Memory** tool opens in the bottom panel of DevTools.
+   The **Memory** tool opens in the Quick View toolbar of DevTools.
 
 1. From the **Detached Elements** tool, select the **Id** field of a detached element.
 
-   The **Memory** tool in the bottom panel automatically selects the object in the heap that is referencing the detached element. We call these objects **Retainers**:
+   The **Memory** tool in the Quick View toolbar automatically selects the object in the heap that is referencing the detached element. We call these objects **Retainers**:
 
    ![Referencing a heap snapshot from the Detached Elements tool](./dom-leaks-images/detached-elements-heap-snapshot.png)
 
-1. In the **Memory** tool in the bottom panel, select the link **room.js:13**.
+1. In the **Memory** tool in the Quick View toolbar, select the link **room.js:13**.
 
    The **Sources** tool opens in the top panel to line 13 of the file **room.js**.
 
