@@ -19,7 +19,7 @@ To improve the reliability of your WebView2 application, it is recommended that 
 
 For a list of APIs covered by this article, see [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
 
-**Contents:**
+**Detailed contents:**
 
 * [Events for processes that exited or failed](#events-for-processes-that-exited-or-failed)
 * [Gathering process failure details](#gathering-process-failure-details)
@@ -47,7 +47,7 @@ When you initialize a WebView2 control, WebView2 will ensure there's a WebView2 
 
 * **Main browser process exits.**  If the main browser process exits for _any reason_, the `CoreWebView2Environment` will raise the `BrowserProcessExited` event. Use this event to synchronize operations involving the WebView2 Runtime resources and lifetime, such as _User Data Folder_ management and updates. See [Handle main browser process exited](#handle-main-browser-process-exited), below.
 
-* **Main browser process crashes.**  When the main browser process crashes, it will produce both a `ProcessFailed` event and a `BrowserProcessExited` event, since the main browser process _exited_ because of a failure.
+* **Main browser process crashes.**  When the main browser process crashes, it will produce both a `ProcessFailed` event and a `BrowserProcessExited` event, since the main browser process _exited_ because of a failure.  <!--todo: link to a section below?-->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -68,11 +68,14 @@ When you initialize a WebView2 control, WebView2 will ensure there's a WebView2 
 
 ---
 
+See also:
+* [Process model for WebView2 apps](./process-model.md)
+
 
 <!-- ====================================================================== -->
 ## Gathering process failure details
 
-The `ProcessFailed` event provides detailed information about the process failure being reported.  Your application can use and collect information from the event args for monitoring and diagnostics purposes, including process description (utility processes only) and frames information (renderer processes only).
+The `ProcessFailed` event provides detailed information about the process failure being reported.  Your application can use and collect information from the event args for monitoring and diagnostics purposes, including process description (for utility processes only) and frames information (for renderer processes only).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -226,10 +229,10 @@ This event will be raised repeatedly (for example, every 15 seconds), so you nee
 The `BrowserProcessExited` event indicates that the main browser process has exited and its resources (including its child processes) have been released. This can happen for the following reasons:
 
 * All WebView2 controls from the `CoreWebView2Environment` have been closed. Example app scenarios include:
-   * Clearing the user data folder
-   * Updating the WebView2 Runtime
-   * Restarting with a different environment configuration
-   * Clearing the auth cache
+   * Clearing the user data folder.
+   * Updating the WebView2 Runtime.
+   * Restarting with a different environment configuration.
+   * Clearing the auth cache.
 
 * The main browser process failed.  See [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly), above.
 
@@ -276,9 +279,15 @@ Most of the configuration used for a `CoreWebView2Environment` is bound to the m
 
 The auth cache is bound to the main browser process lifetime. To clear the cache, your application must recreate its WebView2 controls from a new main browser process instance. To ensure a new main browser process instance is used when recreating the controls, your application must wait for the `BrowserProcessExited` event before proceeding; otherwise, the main browser process might stay alive when the controls are recreated and preserve the auth cache.
 
+_Auth cache_ means the stored selection and credentials from HTTPS Client Certificate Requests.  For more information, see:
+* [Client Certificate Authentication](https://textslashplain.com/2020/05/04/client-certificate-authentication/).
+* [With WebView2 what is the equivent of "closing the browser"?](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2623) - WebView2Feedback repo issue #2623.
+<!-- todo: link to a page such as https://learn.microsoft.com/docs/ ? -->
+
 
 <!-- ====================================================================== -->
 ## See also
 
 * [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
 * [WebView2 API Reference](../webview2-api-reference.md)
+* [Process model for WebView2 apps](./process-model.md)
