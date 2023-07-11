@@ -58,7 +58,7 @@ By default the Device Toolbar opens in Responsive Viewport Mode.
 
 To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.  You can enter any numeric values in the width and height boxes.  If you select a size larger than available in the browser window, the viewport will be automatically scaled to accommodate for the larger viewport.
 
-In the following figure, the width is set to `626` and the height is set to `516`.
+In the following figure, the width is set to `400` and the height is set to `736`.
 
 ![The handles for changing the dimensions of the viewport when in Responsive Viewport Mode](./index-images/device-mode-toggle-device-toolbar-handles-highlighted.png)
 
@@ -124,9 +124,9 @@ To simulate the dimensions of a specific mobile device, open **More options** an
 
 If a device frame isn't shown for a particular device, it means that DevTools doesn't have art for that device.
 
-The device frame for the iPhone 6:
+The device frame for the iPhone 12 pro:
 
-![The device frame for the iPhone 6](./index-images/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.png)
+![The device frame for the iPhone 12 Pro](./index-images/device-mode-toggle-device-toolbar-options-device-frame-iphone-12-pro.png)
 
 #### Add a custom mobile device
 
@@ -214,7 +214,7 @@ You can also set network throttling from the **Performance** panel:
 
  If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation-overriding UI.
 
-1. Select **Customize and control DevTools** (`...`) > **More tools** > **Sensors**.
+1. Select **Customize and control DevTools** (**+**) > **More tools** > **Sensors**.
 
    ![Sensors for geolocation](./index-images/device-mode-toggle-device-toolbar-more-tools-sensors.png)
 
@@ -232,7 +232,7 @@ On the **Sensors** panel, to select one of the preset locations, use the **Locat
 
 If your page depends on orientation information from a mobile device to render properly, open the orientation UI.
 
-1. Select **Customize and control DevTools** (`...`) > **More tools** > **Sensors**.
+1. Select **Customize and control DevTools** (**+**) > **More tools** > **Sensors**.
 
    ![The Sensors command on the More tools menu](./index-images/device-mode-toggle-device-toolbar-more-tools-sensors.png)
 
@@ -252,7 +252,7 @@ If your page depends on orientation information from a mobile device to render p
 
 If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.
 
-1. Select **Customize and control DevTools** (`...`) > **More tools** > **Network conditions**.
+1. Select **Customize and control DevTools** (**+**) > **More tools** > **Network conditions**.
 
    ![Network conditions entry in the More Tools menu](./index-images/device-mode-toggle-device-toolbar-more-tools-network-conditions.png)
 
