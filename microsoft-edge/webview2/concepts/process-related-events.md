@@ -51,23 +51,30 @@ For a list of APIs covered by this article, see [Process management](overview-fe
 <!-- ====================================================================== -->
 ## Events for processes that exited or failed
 
-The WebView2 Runtime is composed of different types of processes, including:
-* Main browser process
-* Renderer processes
-* Utility processes
-* GPU process
-
-This is an illustrative and incomplete list of process kinds. The purpose and management details for these processes is part of the Chromium architecture and beyond the scope of this document, or the WebView2 architecture.
-
-When you create and initialize a WebView2 control, WebView2 will ensure there's a WebView2 Runtime to power your control and connect to its [WebView2 Process Group](process-model.md#processes-in-the-webview2-runtime). Once this connection is established, your control will start monitoring these processes for the following events:
+When you initialize a WebView2 control, WebView2 will ensure there's a WebView2 Runtime to power your control and connect to its [WebView2 Process Group](process-model.md#processes-in-the-webview2-runtime). Once this connection is established, your control will start monitoring these processes and report the following events so your application can react accordingly:
 
 * **Any process failure.**  When _any of the processes_ in the WebView2 Runtime fail, the CoreWebView2 will raise the `ProcessFailed` event. Use this event for diagnostics and recovery from failures in the WebView2 processes. See [Handle process failures](#handle-process-failures), below.
 
 * **Main browser process exits.**  If the main browser process exits for _any reason_, the `CoreWebView2Environment` will raise the `BrowserProcessExited` event. Use this event to synchronize operations involving the WebView2 Runtime resources and lifetime, such as _User Data Folder_ management and updates. See [Handle main browser process exited](#handle-main-browser-process-exited), below.
 
-* **Main browser process crashes.**  There is some overlap between the `ProcessFailed` and `BrowserProcessExited` events. For example, a main browser process crash will produce both a `ProcessFailed` event and a `BrowserProcessExited` event, since the main browser process _exited_ because of a failure. See [Handle main browser process crashes](#handle-main-browser-process-crashes), below.
+* **Main browser process crashes.**  When the main browser process crashes, it will produce both a `ProcessFailed` event and a `BrowserProcessExited` event, since the main browser process _exited_ because of a failure.
 
-`CoreWebView2` and `CoreWebView2Environment` report these events so your application can react accordingly.  There are multiple scenarios your application can handle through these events.
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.ProcessFailed Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.processfailed)
+* [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserprocessexited)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.ProcessFailed Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#processfailed)
+* [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#browserprocessexited)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2::add_ProcessFailed event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)
+* [ICoreWebView2::remove_ProcessFailed event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
+* [ICoreWebView2Environment5::add_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
+* [ICoreWebView2Environment5::remove_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
 
 
 <!-- ====================================================================== -->
