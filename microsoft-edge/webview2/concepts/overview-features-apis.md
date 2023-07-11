@@ -1184,21 +1184,14 @@ Get information about running WebView2 processes, exiting processes, and failed 
 
 * `CoreWebView2` Class:
    * [CoreWebView2.BrowserProcessId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.browserprocessid)
-   * [CoreWebView2.Reload Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.reload)
    * [CoreWebView2.ProcessFailed Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.processfailed)
 * [CoreWebView2BrowserProcessExitedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2browserprocessexitedeventargs)
-* `CoreWebView2Controller` Class:
-   * [CoreWebView2Controller.Close Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close)
 * `CoreWebView2Environment` Class:
-   * [CoreWebView2Environment.FailureReportFolderPath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.failurereportfolderpath)
    * [CoreWebView2Environment.GetProcessInfos Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getprocessinfos)
    * [CoreWebView2Environment.BrowserProcessExited Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserprocessexited)
    * [CoreWebView2Environment.ProcessInfosChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.processinfoschanged)
 * [CoreWebView2ProcessFailedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs)
-   * [CoreWebView2ProcessFailedEventArgs.FrameInfosForFailedProcess Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.frameinfosforfailedprocess)
 * [CoreWebView2ProcessFailedKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedkind)
-   * [CoreWebView2ProcessFailedKind.GpuProcessExited Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedkind)
-   * [CoreWebView2ProcessFailedKind.UtilityProcessExited Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedkind)
 * [CoreWebView2ProcessFailedReason Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedreason)
 * [CoreWebView2ProcessInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2processinfo)
 
@@ -1206,21 +1199,14 @@ Get information about running WebView2 processes, exiting processes, and failed 
 
 * `CoreWebView2` Class:
    * [CoreWebView2.BrowserProcessId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#browserprocessid)
-   * [CoreWebView2.Reload Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#reload)
    * [CoreWebView2.ProcessFailed Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#processfailed)
 * [CoreWebView2BrowserProcessExitedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browserprocessexitedeventargs)
-* `CoreWebView2Controller` Class:
-   * [CoreWebView2Controller.Close Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#close)
 * `CoreWebView2Environment` Class:
-   * [CoreWebView2Environment.FailureReportFolderPath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#failurereportfolderpath)
    * [CoreWebView2Environment.GetProcessInfos Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#getprocessinfos)
    * [CoreWebView2Environment.BrowserProcessExited Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#browserprocessexited)
    * [CoreWebView2Environment.ProcessInfosChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#processinfoschanged)
 * [CoreWebView2ProcessFailedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs)
-   * [CoreWebView2ProcessFailedEventArgs.FrameInfosForFailedProcess Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs#frameinfosforfailedprocess)
 * [CoreWebView2ProcessFailedKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedkind)
-   * [CoreWebView2ProcessFailedKind.GpuProcessExited Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedkind)
-   * [CoreWebView2ProcessFailedKind.UtilityProcessExited Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedkind)
 * [CoreWebView2ProcessFailedReason Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedreason)
 * [CoreWebView2ProcessInfo Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processinfo)
 
@@ -1229,11 +1215,8 @@ Get information about running WebView2 processes, exiting processes, and failed 
 * `ICoreWebView2` interface:
    * [ICoreWebView2::add_ProcessFailed event](/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)
    * [ICoreWebView2::get_BrowserProcessId property](/microsoft-edge/webview2/reference/win32/icorewebview2#get_browserprocessid)<!--no put-->
-   * [ICoreWebView2::Reload method](/microsoft-edge/webview2/reference/win32/icorewebview2#reload)
    * [ICoreWebView2::remove_ProcessFailed event](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
 * [ICoreWebView2BrowserProcessExitedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs)
-* `ICoreWebView2Controller` interface:
-   * [ICoreWebView2Controller::Close method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)
 * `ICoreWebView2Environment5` interface:
    * [ICoreWebView2Environment5::add_BrowserProcessExited method](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
    * [ICoreWebView2Environment5::remove_BrowserProcessExited method](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
@@ -1241,15 +1224,11 @@ Get information about running WebView2 processes, exiting processes, and failed 
    * [ICoreWebView2Environment8::GetProcessInfos method](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#getprocessinfos)
    * [ICoreWebView2Environment8::add_ProcessInfosChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#add_processinfoschanged)
    * [ICoreWebView2Environment8::remove_ProcessInfosChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#remove_processinfoschanged)
-* `ICoreWebView2Environment11` interface:
-   * [ICoreWebView2Environment11::get_FailureReportFolderPath](/microsoft-edge/webview2/reference/win32/icorewebview2environment11#get_failurereportfolderpath)
 * [ICoreWebView2ProcessFailedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs)
 * [ICoreWebView2ProcessFailedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2)
 * [ICoreWebView2ProcessInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2processinfo)
 * [ICoreWebView2ProcessInfoCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2processinfocollection)
 * [COREWEBVIEW2_PROCESS_FAILED_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_kind)
-   * [COREWEBVIEW2_PROCESS_FAILED_KIND_GPU_PROCESS_EXITED enum value](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_kind)
-   * [COREWEBVIEW2_PROCESS_FAILED_KIND_UTILITY_PROCESS_EXITED enum value](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_kind)
 * [COREWEBVIEW2_PROCESS_FAILED_REASON enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_reason)
 
 ---
