@@ -211,36 +211,19 @@ These process failures are not fatal and your application does **not** need to h
 
 
 <!-- ====================================================================== -->
-#### Handle unresponsive renderers
+## Handle unresponsive renderers
 
 When the renderer process for the main frame in a WebView2 control becomes unresponsive to user input, the `ProcessFailed` event will be raised with:
 * **Failure kind:** `RenderProcessUnresponsive`.
 * **Failure reason:** `Unresponsive`.
 
-The event will continue to be raised every set period of time as long as the process remains unresponsive. Renderer process unresponsiveness can happen for the following reasons:
+The event will continue to be raised as long as the process remains unresponsive. Renderer process unresponsiveness can happen for the following reasons:
 
 * There is a **long-running script** being executed. For example, the web content in your WebView2 control might be performing a synchronous XHR, or have entered an infinite loop. Reloading the WebView2 control (by calling `Reload`) might make the control responsive again.
 
 * The **system is busy**.
 
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2.Reload Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.reload)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2.Reload Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#reload)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2::Reload method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#reload)
-
----
-
-This event will be raised repeatedly, so you need to decide the threshold for your application to act upon it.
-
-See also:
-* [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
+This event will be raised repeatedly (for example, every 15 seconds), so you need to decide the threshold for your application to act upon it.
 
 
 <!-- ====================================================================== -->
@@ -254,15 +237,9 @@ The `BrowserProcessExited` event indicates that the main browser process has exi
    * Restarting with a different environment configuration
    * Clearing the auth cache
 
-   These app scenarios are described below.
+* The main browser process failed.  See [Handle main browser process crashes](#handle-main-browser-process-crashes), above.
 
-* The main browser process failed.  To handle this case, see [Handle main browser process crashes](#handle-main-browser-process-crashes), above.
-
-
-<!-- ------------------------------ -->
-#### BrowserProcessExited event
-
-The `BrowserProcessExited` event provides the _exit kind_ and the _process ID_ so your application can determine when and how to handle the event. For more information about the _exit kind_ and the _process ID_, see `CoreWebView2BrowserProcessExitedEventArgs`.
+The event args for this event provide the _exit kind_ and the _process ID_ so your application can determine when and how to handle the event. For example, you might want coordinate with your `ProcessFailed` event handlers to prevent race conditions that could arise from attempting recovery while also trying to remove the user data folder.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -277,9 +254,6 @@ The `BrowserProcessExited` event provides the _exit kind_ and the _process ID_ s
 * [ICoreWebView2BrowserProcessExitedEventArgs interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs)
 
 ---
-
-See also:
-* [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
