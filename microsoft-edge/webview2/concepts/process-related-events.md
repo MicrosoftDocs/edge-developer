@@ -12,6 +12,13 @@ ms.date: 07/03/2023
 
 WebView2 uses multiple processes to support the WebView2 controls in your application. Because these processes can exit during use, WebView2 provides the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events for your application to react to different scenarios.  Use this document to learn how to use these events to react when these scenarios occur.
 
+To improve the reliability of your WebView2 application, it is recommended that your app handles at least the following events:
+* [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly).
+* [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly).
+* [A renderer process becomes unresponsive](#handle-unresponsive-renderers).
+
+For a list of APIs covered by this article, see [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
+
 **Contents:**
 
 * [Events for processes that exited or failed](#events-for-processes-that-exited-or-failed)
@@ -39,52 +46,6 @@ WebView2 uses multiple processes to support the WebView2 controls in your applic
    * [Restarting with a different environment configuration](#restarting-with-a-different-environment-configuration)
    * [Clearing the auth cache](#clearing-the-auth-cache)
 * [See also](#see-also)
-
-
-These are the main events to handle:
-
-* `ProcessFailed`. Use this event for diagnostics and recovery from failures in the WebView2 processes.
-
-* `BrowserProcessExited`. Use this event to synchronize operations involving WebView2 Runtime resources and lifetime, such as User Data Folder management and updates.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2.ProcessFailed Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.processfailed)
-* [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserprocessexited)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2.ProcessFailed Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#processfailed)
-* [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#browserprocessexited)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2::add_ProcessFailed event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)
-* [ICoreWebView2::remove_ProcessFailed event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
-* [ICoreWebView2Environment5::add_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
-* [ICoreWebView2Environment5::remove_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
-
----
-
-For a list of APIs covered by this article, see [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
-
-To improve the reliability of your WebView2 application, it is recommended that your app handles at least the following events:
-* [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly).
-* [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly).
-* [A renderer process becomes unresponsive](#handle-unresponsive-renderers).
-<!-- TOC headings outline, with + marking the called-out sections:
-   * [Handle unexpected exits for various types of processes](#handle-unexpected-exits-for-various-types-of-processes)
-      * [Types of processes](#types-of-processes)
-+     * [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly)
-+     * [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly)
-      * [The GPU process has exited unexpectedly](#the-gpu-process-has-exited-unexpectedly)
-      * [A utility process has exited unexpectedly](#a-utility-process-has-exited-unexpectedly)
-      * [Any other process has exited unexpectedly](#any-other-process-has-exited-unexpectedly)
-+  * [Handle unresponsive renderers](#handle-unresponsive-renderers)
--->
-
-
-These events and scenarios are described below.  This document is a high-level overview of the most relevant events. For details, see the API Reference documentation.
 
 
 <!-- ====================================================================== -->
