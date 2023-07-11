@@ -22,7 +22,7 @@ For a list of APIs covered by this article, see [Process management](overview-fe
 **Contents:**
 
 * [Events for processes that exited or failed](#events-for-processes-that-exited-or-failed)
-* [Handle process failures](#handle-process-failures)
+* [Handle process crashes](#handle-process-crashes)
    * [Gather process failure details](#gather-process-failure-details)
       * [Exit code, process description, and frames information](#exit-code-process-description-and-frames-information)
       * [Failure kind](#failure-kind)
@@ -53,7 +53,7 @@ For a list of APIs covered by this article, see [Process management](overview-fe
 
 When you initialize a WebView2 control, WebView2 will ensure there's a WebView2 Runtime to power your control and connect to its [WebView2 Process Group](process-model.md#processes-in-the-webview2-runtime). Once this connection is established, your control will start monitoring these processes and report the following events so your application can react accordingly:
 
-* **Any process failure.**  When _any of the processes_ in the WebView2 Runtime fail, the CoreWebView2 will raise the `ProcessFailed` event. Use this event for diagnostics and recovery from failures in the WebView2 processes. See [Handle process failures](#handle-process-failures), below.
+* **Any process failure.**  When _any of the processes_ in the WebView2 Runtime fails, the CoreWebView2 will raise the `ProcessFailed` event. This can be due to a process crash, or an unresponsive renderer process. Use this event for diagnostics and recovery from failures in the WebView2 processes.  See [Handle process crashes](#handle-process-crashes) and [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly), below.
 
 * **Main browser process exits.**  If the main browser process exits for _any reason_, the `CoreWebView2Environment` will raise the `BrowserProcessExited` event. Use this event to synchronize operations involving the WebView2 Runtime resources and lifetime, such as _User Data Folder_ management and updates. See [Handle main browser process exited](#handle-main-browser-process-exited), below.
 
@@ -78,35 +78,9 @@ When you initialize a WebView2 control, WebView2 will ensure there's a WebView2 
 
 
 <!-- ====================================================================== -->
-## Handle process failures
+## Gathering process failure details
 
-The `ProcessFailed` event indicates that _any_ of the processes in the _WebView2 Process Group_ has encountered one of the following situations:
-
-* **Unexpected exit.**  The process indicated by the event has exited unexpectedly (usually due to a crash).  The failure might or might not be recoverable, and some failures are auto-recoverable.  For details about which of these can be handled by your application, see [Handle unexpected exits for various types of processes](#handle-unexpected-exits-for-various-types-of-processes), below.  When the impacted process is the main browser process, a `BrowserProcessExited` event will be raised too; see [Handle main browser process crashes](#handle-main-browser-process-crashes), further below.
-
-* **Unresponsiveness.**  A **renderer process** might become unresponsive to user input.  This is only reported for renderer processes; see [Handle unresponsive renderers](#handle-unresponsive-renderers) below.
-
-These situations can be identified through the details provided in the event. See [Gather process failure details](#gather-process-failure-details), below.
-
-See also:
-* [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
-
-
-<!-- ------------------------------ -->
-#### Gather process failure details
-
-The `ProcessFailed` event provides information about the **kind of failure** and the **reason** why it occurred.  Your application can interpret these details as follows.
-
-
-<!-- ---------- -->
-###### Exit code, process description, and frames information
-
-In addition to `ProcessFailedKind` and `ProcessFailedReason`, the remaining arguments of the `ProcessFailed` event provide more detailed information about the reported failure, including:
-* Exit code
-* Process description (utility only)
-* Frames information (renderer only)
-
-Your application can leverage this information for diagnostics and other scenarios. For more information about when these details are provided and how your application can use them, see:
+The `ProcessFailed` event provides detailed information about the process failure being reported.  Your application can use and collect information from the event args for monitoring and diagnostics purposes, including process description (utility processes only) and frames information (renderer processes only).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -122,53 +96,7 @@ Your application can leverage this information for diagnostics and other scenari
 
 ---
 
-
-<!-- ---------- -->
-###### Failure kind
-
-`ProcessFailedKind` is a combination of the process purpose (such as browser, renderer, or GPU) and failure (exit, unresponsiveness). Your application can use this _failure kind_ to determine the process that has failed and what type of failure occurred. Renderer processes are further divided in _main frame_ renderer (`RenderProcessExited`, `RenderProcessUnresponsive`) and _subframe_ renderer (`FrameRenderProcessExited`). For more details about the conditions under which each specific _failure kind_ is used, see:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2ProcessFailedKind Enum](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedkind)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2ProcessFailedKind Enum](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedkind)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [COREWEBVIEW2_PROCESS_FAILED_KIND enum](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_kind)
-
----
-
-
-<!-- ---------- -->
-###### Failure reason
-
-When `ProcessFailedKind` indicates an unexpected exit, `ProcessFailedReason` indicates the category of the problem causing the exit. Some of these _failure reasons_ are only applicable to specific _failure kinds_.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2ProcessFailedReason Enum](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedreason)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2ProcessFailedReason Enum](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedreason)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [COREWEBVIEW2_PROCESS_FAILED_REASON enum](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_reason)
-
----
-
-
-<!-- ---------- -->
-###### Gathering details
-
-Your application can use and collect information from the `ProcessFailed` and `BrowserProcessExited` events to identify the most frequent issues for your application.
-
-Some process failures might raise the `ProcessFailed` event across different WebView2 controls in your application; see [Handle unexpected exits for various types of processes](#handle-unexpected-exits-for-various-types-of-processes).  You must decide how often to gather details and how to handle duplicates for these cases.
+Some process failures might raise the `ProcessFailed` event across different WebView2 controls in your application.  You must decide how often to gather details and how to handle duplicates for these cases.
 
 Additionally, most process crashes will generate dumps in the [user data folder](./user-data-folder.md), under the directory returned by `FailureReportFolderPath`. You can use these dumps to understand crashes and provide additional information when contacting the WebView2 team.
 
@@ -186,72 +114,37 @@ Additionally, most process crashes will generate dumps in the [user data folder]
 
 ---
 
+<!-- ====================================================================== -->
+## Handle process crashes
 
-<!-- ------------------------------ -->
-#### Handle unexpected exits for various types of processes
+When a crash occurs in the WebView2 Runtime, the `ProcessFailed` event will be raised for every WebView2 control associated to the crashing process.  The failure might or might not be recoverable, and some failures are auto-recoverable.
 
-To read this section, you should understand the [Process model for WebView2 apps](process-model.md).
+You can use the following event args to identify the failure:
 
-When a process in the _WebView2 Process Group_ exits unexpectedly (for example, due to a crash), every WebView2 control **associated** to it will raise a `ProcessFailed` event.  You can use the process failure details to decide how to handle each case; see [Gather process failure details](#gather-process-failure-details) above.
+* `ProcessFailedKind`. A combination of the process purpose (such as browser, renderer, or GPU) and failure (exit, unresponsiveness). Renderer processes are further divided in _main frame_ renderer (`RenderProcessExited`, `RenderProcessUnresponsive`) and _subframe_ renderer (`FrameRenderProcessExited`).
 
-Don't rely on the details about how processes are associated to each WebView2 control, because such details are part of the evolving Chromium architecture and are subject to change due to configuration and system conditions.
-
-
-<!-- ---------- -->
-###### Types of processes
-
-The processes in the _WebView2 Process Group_ can be associated to one or many WebView2 controls in your application.  For example:
-
-* **Main browser process.** There is a single main browser process in the _WebView2 Process Group_. Every WebView2 control with the same environment configuration will share this process.  See [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly), below.
-
-* **Renderer process.** Renderer processes can be associated many-to-many with the WebView2 controls in your application. The details about how this works depend on many factors, including what sites are loaded in the WebView2 control (main frame and subframes), system resources, and runtime configuration. A single renderer process in the _WebView2 Process Group_ can be associated with one or many WebView2 controls in your app.  See [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly), below.
-
-* **GPU process.** There is a single GPU process in the _WebView2 Process Group_. It is associated with all WebView2 controls using this _WebView2 Process Group_.  See [The GPU process has exited unexpectedly](#the-gpu-process-has-exited-unexpectedly), below.
-
-* **Utility processes.** Utility processes host one or more _services_ in the _WebView2 Process Group_. Each utility process supports the entire _WebView2 Process Group_ and is thus associated with all WebView2 controls using this _WebView2 Process Group_.  See [A utility process has exited unexpectedly](#a-utility-process-has-exited-unexpectedly), below.
-
-* **Other processes.** Most processes in the _WebView2 Process Group_ are associated to all WebView2 controls using it and will raise `ProcessFailed` to each control.  See [Any other process has exited unexpectedly](#any-other-process-has-exited-unexpectedly), below.
-
+* `ProcessFailedReason`. Indicates the category of the problem causing the failure. Some of these _failure reasons_ are only applicable to specific _failure kinds_.
 
 <!-- ---------- -->
-###### The main browser process has exited unexpectedly
+#### The main browser process has exited unexpectedly
 
 All the WebView2 controls in your application using the same environment configuration will receive the `ProcessFailed` event with:
 * **Failure kind:** `BrowserProcessExited`.
 * **Failure reason:** any, except `Unresponsive` and `LaunchFailed`.
 
-##### [.NET/C#](#tab/dotnetcsharp)
+All associated WebView2 controls will be closed and your application **must handle recovery** from this failure. The WebView2 controls need to be recreated.
 
-* [CoreWebView2.ProcessFailed Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.processfailed)
-* [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserprocessexited)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2.ProcessFailed Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#processfailed)
-* [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#browserprocessexited)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2::add_ProcessFailed event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)
-* [ICoreWebView2::remove_ProcessFailed event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
-* [ICoreWebView2Environment5::add_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
-* [ICoreWebView2Environment5::remove_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
-
----
-
-All associated WebView2 controls will be closed and your application must handle recovery from this failure. The WebView2 controls need to be recreated.
-
-A single `BrowserProcessExited` event will be raised from the `CoreWebview2Environment` too. See [Handle main browser process crashes](#handle-main-browser-process-crashes) below.
+A single `BrowserProcessExited` event will be raised from the `CoreWebview2Environment` too, but the order of these events is not guaranteed. Your application must coordinate its events handlers for these two events when the browser process crashes. See [BrowserProcessExited event](#browserprocessexited-event).
 
 
 <!-- ---------- -->
-###### A process rendering content in the WebView2 control has exited unexpectedly
+#### A process rendering content in the WebView2 control has exited unexpectedly
 
 The content in impacted frames (main or subframe) is replaced with an error page. Every WebView2 control where content is impacted will receive the `ProcessFailed` event with:
 * **Failure kind:** `RenderProcessExited` or `FrameRenderProcessExited`.
 * **Failure reason:** any, except `Unresponsive` and `ProfileDeleted`.
 
-Your application must handle recovery from this failure. If the main frame is impacted (`RenderProcessExited`), you can use the `Reload` API to reload content in your controls. Alternatively, you can `Close` and recreate the WebView2 controls.
+Your application **must handle recovery** from this failure. If the main frame is impacted (`RenderProcessExited`), you can use the `Reload` API to reload content in your controls. Alternatively, you can `Close` and recreate the WebView2 controls.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -288,66 +181,36 @@ If the main frame is not impacted (`FrameRenderProcessExited`), your application
 
 
 <!-- ---------- -->
-###### The GPU process has exited unexpectedly
+#### The GPU process has exited unexpectedly
 
 The content in your WebView2 controls might flash as the process is automatically recreated. Every WebView2 control in the _WebView2 Process Group_ will receive the `ProcessFailed` event with:
 * **Failure kind:** `GpuProcessExited`.
 * **Failure reason:** any, except `Unresponsive` and `ProfileDeleted`.
 
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2ProcessFailedKind.GpuProcessExited Enum Value](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedkind)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2ProcessFailedKind.GpuProcessExited Enum Value](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedkind)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `COREWEBVIEW2_PROCESS_FAILED_KIND enum`
-   * [COREWEBVIEW2_PROCESS_FAILED_KIND_GPU_PROCESS_EXITED enum value](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_kind)
-
----
-
-This is the most common WebView2 process failure and is auto-recoverable. Your application does **not** need to handle recovery for this event, but can collect information to understand any persistent issues, or if there is an underlying cause for repeated GPU process exits.  For more information, see [Gathering details](#gathering-details), above.
+This is the most common WebView2 process failure and is auto-recoverable. Your application does **not** need to handle recovery for this event, but can collect information to understand any persistent issues, or if there is an underlying cause for repeated GPU process exits.
 
 
 <!-- ---------- -->
-###### A utility process has exited unexpectedly
+#### A utility process has exited unexpectedly
 
 There might be some interruptions (for example, if the utility process was hosting the audio service) necessary processes are automatically recreated. Every WebView2 control in the _WebView2 Process Group_ will receive the `ProcessFailed` event with:
-    - **Failure kind:** `UtilityProcessExited`.
-    - **Failure reason:** any, except `Unresponsive` and `ProfileDeleted`.
+* **Failure kind:** `UtilityProcessExited`.
+* **Failure reason:** any, except `Unresponsive` and `ProfileDeleted`.
 
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2ProcessFailedKind.UtilityProcessExited Enum Value](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedkind)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2ProcessFailedKind.UtilityProcessExited Enum Value](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedkind)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `COREWEBVIEW2_PROCESS_FAILED_KIND` enum:
-   * [COREWEBVIEW2_PROCESS_FAILED_KIND_UTILITY_PROCESS_EXITED enum value](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_kind)
-
----
-
-This process failure is not fatal and is auto-recoverable. Your application does **not** need to handle recovery for this event, but can collect information to understand any persistent issues.  For more information, see [Gathering details](#gathering-details), above.
+This process failure is not fatal and is auto-recoverable. Your application does **not** need to handle recovery for this event, but can collect information to understand any persistent issues, including the `ProcessDescription` provided in the event args.
 
 
 <!-- ---------- -->
-###### Any other process has exited unexpectedly
+#### Any other process has exited unexpectedly
 
 Most processes in the _WebView2 Process Group_ are associated to all WebView2 controls using it and will raise `ProcessFailed` to each control with:
 * **Failure kind:** `PpapiBrokerProcessExited`, `PpapiPluginProcessExited`, `RenderProcessUnresponsive`, `SandboxHelperProcessExited`, or `UnknownProcessExited`.
 * **Failure reason:** any, except `Unresponsive` and `ProfileDeleted`.
 
-These process failures are not fatal and your application does **not** need to handle recovery for any of them, but can collect information to understand any persistent issues.  For more information, see [Gathering details](#gathering-details), above.
+These process failures are not fatal and your application does **not** need to handle recovery for any of them, but can collect information to understand any persistent issues.
 
 
-<!-- ------------------------------ -->
+<!-- ====================================================================== -->
 #### Handle unresponsive renderers
 
 When the renderer process for the main frame in a WebView2 control becomes unresponsive to user input, the `ProcessFailed` event will be raised with:
@@ -375,46 +238,6 @@ The event will continue to be raised every set period of time as long as the pro
 ---
 
 This event will be raised repeatedly, so you need to decide the threshold for your application to act upon it.
-
-See also:
-* [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
-
-
-<!-- ========================================================================== -->
-## Handle main browser process crashes
-
-When the main browser process in the _WebView2 Process Group_ exits unexpectedly, **both** events discussed in this document will be raised:
-
-* `CoreWebView2.ProcessFailed` - raised for every WebView2 control in the application that has been impacted by the failure.
-* `CoreWebView2Environment.BrowserProcessExited` - raised from each CoreWebView2Environment that is associated with the failing process.
-
-The order of these events is not guaranteed.
-
-
-<!-- ------------------------------ -->
-#### ProcessFailed, for main browser process crashes
-
-You can use the `ProcessFailed` event to handle recovery for your application - for example, by re-creating your WebView2 controls when the event is received with **failure kind** of `BrowserProcessExited`.
-
-
-<!-- ------------------------------ -->
-#### BrowserProcessExited, for main browser process crashes
-
-Although a `BrowserProcessExited` **event** will be raised too, this event is intended for operations involving the WebView2 Runtime resources (such as the _User Data Folder_) and lifetime (such as updates or re-launch). The `BrowserProcessExitKind` event argument is provided so your application can identify this scenario and coordinate with your `ProcessFailed` event handlers. For example, you might want to prevent race conditions that could arise from attempting recovery while also trying to remove the user data folder.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2BrowserProcessExitedEventArgs.BrowserProcessExitKind Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browserprocessexitedeventargs.browserprocessexitkind)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2BrowserProcessExitedEventArgs.BrowserProcessExitKind Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browserprocessexitedeventargs#browserprocessexitkind)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2BrowserProcessExitedEventArgs::get_BrowserProcessExitKind property](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs#get_browserprocessexitkind)
-
----
 
 See also:
 * [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
