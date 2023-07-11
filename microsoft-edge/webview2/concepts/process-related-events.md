@@ -239,7 +239,7 @@ The `BrowserProcessExited` event indicates that the main browser process has exi
 
 * The main browser process failed.  See [Handle main browser process crashes](#handle-main-browser-process-crashes), above.
 
-The event args for this event provide the _exit kind_ and the _process ID_ so your application can determine when and how to handle the event. For example, you might want coordinate with your `ProcessFailed` event handlers to prevent race conditions that could arise from attempting recovery while also trying to remove the user data folder.
+This event is intended for operations involving the WebView2 Runtime resources. Your application can use the _exit kind_ and the _process ID_ from the event args to determine when and how to handle the event. For example, you might want coordinate with your `ProcessFailed` event handlers to prevent race conditions that could arise from attempting recovery while also trying to remove the user data folder.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
