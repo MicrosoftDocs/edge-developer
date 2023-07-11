@@ -599,7 +599,7 @@ Microsoft Rewards (the "Program") enables you to earn redeemable points for acti
 
 For non-members, Microsoft Edge presents personalized joining offers based on the page you're on. Once you engage and choose to enroll, Microsoft Edge uses your Microsoft account identity to sign you up and start the rewards service.  The rewards service automatically adds points to your account for searching, playing, and shopping on Microsoft Edge. Microsoft Edge doesn't send your personal information or browsing data to any third-party services.
 
-Periodically, Edge could also offer custom browsing streak offers for just browsing on Edge for a few minutes every day for a limited period. You can track your streak progress; points earned and discover new offers on the [Rewards dashboard](https://rewards.bing.com/) or the action center on the Edge sidebar. 
+Periodically, Microsoft Edge could also offer custom browsing streak offers for just browsing on Microsoft Edge for a few minutes every day for a limited period. You can track your streak progress; points earned and discover new offers on the [Rewards dashboard](https://rewards.bing.com/) or the action center on the Edge sidebar. 
 
 ![Rewards Dashboard UI](./index-images/rewardsdashboard.png)
 
@@ -609,16 +609,29 @@ Rewards is an opt-in program. To turn off all Rewards experiences and data shari
 
 ![Rewards Settings UI](./index-images/rewardssettings.png)
 
-You can also opt out of the Rewards program.
-Note:
-1. Offers may vary by market. 
-2. How to earn: Microsoft Edge provides the greatest number of avenues to earn rewards points while browsing the web. 
-a. A search is the act of an individual user manually entering text for the good faith purpose of obtaining Bing search results for such user’s own research purposes and does not include any query entered by a bot, macro, or other automated or fraudulent means of any kind ("Search").
-b. An acquisition is the process of purchasing goods or downloading and acquiring a license for digital content from Microsoft, whether free or paid ("Acquisition"). Rewards points are not offered for every purchase from Microsoft. Microsoft may offer additional opportunities to earn points from time to time, and each point-earning offer will not be available in perpetuity.
-3. Device requirement: You need a valid Microsoft account, and your devices must meet the minimum [system requirements](https://account.microsoft.com/rewards/).
-4. Redeeming your points: You may redeem your points, or you may contribute points to a listed nonprofit organization by visiting the [redeem page](https://aka.ms/redeemrewards) or by signing up for automatic contributions to non-profit organizations through a giving program.
-5. Cancelling Your Participation: If you no longer wish to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false). If you opt out, you will immediately lose all of your available points. 
-6. For more information see the Rewards section at support.microsoft.com ("FAQ") and refer to Rewards section in the [Microsoft service agreement](https://www.microsoft.com/servicesagreement/).
+Offers may vary by market. 
+
+How to earn: Microsoft Edge provides the greatest number of avenues to earn rewards points while browsing the web. 
+
+A _search_ is the act of an individual user manually entering text for the good faith purpose of obtaining Bing search results for the user's own research purposes, and does not include any query that's entered by a bot, macro, or other automated or fraudulent means of any kind ("Search").
+
+An _acquisition_ is the process of purchasing goods or downloading and acquiring a license for digital content from Microsoft, whether free or paid ("Acquisition"). Rewards points are not offered for every purchase from Microsoft. Microsoft may offer additional opportunities to earn points from time to time, and each point-earning offer will not be available in perpetuity.
+
+#### Device requirement
+
+You need a valid Microsoft account, and your devices must meet the minimum [system requirements](https://account.microsoft.com/rewards/).
+
+#### Redeeming your points
+
+You may redeem your points, or you may contribute points to a listed nonprofit organization by visiting the [redeem page](https://aka.ms/redeemrewards) or by signing up for automatic contributions to non-profit organizations through a giving program.
+
+#### Cancelling your participation
+
+If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false). If you opt out, you will immediately lose all of your available points. 
+
+See also:
+* [Learn about Microsoft Rewards](https://support.microsoft.com/topic/learn-about-microsoft-rewards-c5ab735d-c6d9-4bb9-30ad-d828e954b6a9).
+* The **Microsoft Rewards** section in the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement/).
 
 
 <!-- ====================================================================== -->
@@ -804,7 +817,7 @@ Microsoft Edge offers helpful suggestions on how to organize tabs to save you ti
 
 When two or more tabs are grouped together, Microsoft Edge sends information about the tabs, including the Title and URL, to the Tabs service over HTTPS.  This information is used to generate a relevant name for the Tab Group.
 
-![TabGroupUI](./index-images/tabgrouping1.gif)
+![Tab Group UI](./index-images/tabgrouping1.gif)
 
 You can also choose to have Microsoft Edge auto-group all of your tabs, by using the **Group Similar Tabs** feature from the **Tab Action** menu.  In addition to the Title and URL, Microsoft Edge also sends information about which tabs opened another tab, and a timestamp of when a tab was opened.  This additional data allows the service to more accurately suggest Tab Groups, to organize your tabs. 
 
