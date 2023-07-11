@@ -78,7 +78,6 @@ When you initialize a WebView2 control, WebView2 will ensure there's a WebView2 
 
 ---
 
-
 <!-- ====================================================================== -->
 ## Gathering process failure details
 
