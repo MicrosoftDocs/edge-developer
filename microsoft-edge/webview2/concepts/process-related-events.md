@@ -76,6 +76,8 @@ When you initialize a WebView2 control, WebView2 will ensure there's a WebView2 
 * [ICoreWebView2Environment5::add_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
 * [ICoreWebView2Environment5::remove_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
 
+---
+
 
 <!-- ====================================================================== -->
 ## Gathering process failure details
