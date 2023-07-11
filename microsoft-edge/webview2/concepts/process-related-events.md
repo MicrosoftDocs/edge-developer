@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/03/2023
+ms.date: 07/11/2023
 ---
 # Handling process-related events in WebView2
 
@@ -22,25 +22,15 @@ For a list of APIs covered by this article, see [Process management](overview-fe
 **Contents:**
 
 * [Events for processes that exited or failed](#events-for-processes-that-exited-or-failed)
+* [Gathering process failure details](#gathering-process-failure-details)
 * [Handle process crashes](#handle-process-crashes)
-   * [Gather process failure details](#gather-process-failure-details)
-      * [Exit code, process description, and frames information](#exit-code-process-description-and-frames-information)
-      * [Failure kind](#failure-kind)
-      * [Failure reason](#failure-reason)
-      * [Gathering details](#gathering-details)
-   * [Handle unexpected exits for various types of processes](#handle-unexpected-exits-for-various-types-of-processes)
-      * [Types of processes](#types-of-processes)
-      * [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly)
-      * [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly)
-      * [The GPU process has exited unexpectedly](#the-gpu-process-has-exited-unexpectedly)
-      * [A utility process has exited unexpectedly](#a-utility-process-has-exited-unexpectedly)
-      * [Any other process has exited unexpectedly](#any-other-process-has-exited-unexpectedly)
-   * [Handle unresponsive renderers](#handle-unresponsive-renderers)
-* [Handle main browser process crashes](#handle-main-browser-process-crashes)
-   * [ProcessFailed, for main browser process crashes](#processfailed-for-main-browser-process-crashes)
-   * [BrowserProcessExited, for main browser process crashes](#browserprocessexited-for-main-browser-process-crashes)
+   * [The main browser process has exited unexpectedly](#the-main-browser-process-has-exited-unexpectedly)
+   * [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly)
+   * [The GPU process has exited unexpectedly](#the-gpu-process-has-exited-unexpectedly)
+   * [A utility process has exited unexpectedly](#a-utility-process-has-exited-unexpectedly)
+   * [Any other process has exited unexpectedly](#any-other-process-has-exited-unexpectedly)
+* [Handle unresponsive renderers](#handle-unresponsive-renderers)
 * [Handle main browser process exited](#handle-main-browser-process-exited)
-   * [BrowserProcessExited event](#browserprocessexited-event)
    * [Clearing the user data folder](#clearing-the-user-data-folder)
    * [Updating the WebView2 Runtime](#updating-the-webview2-runtime)
    * [Restarting with a different environment configuration](#restarting-with-a-different-environment-configuration)
