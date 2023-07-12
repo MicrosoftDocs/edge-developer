@@ -620,7 +620,9 @@ Rewards is an opt-in program. To turn off all Rewards experiences and data shari
 
 Offers may vary by market. 
 
-How to earn: Microsoft Edge provides the greatest number of avenues to earn rewards points while browsing the web. 
+#### How to earn
+
+Microsoft Edge provides the greatest number of avenues to earn rewards points while browsing the web.
 
 A _search_ is the act of an individual user manually entering text for the good faith purpose of obtaining Bing search results for the user's own research purposes, and does not include any query that's entered by a bot, macro, or other automated or fraudulent means of any kind ("Search").
 
