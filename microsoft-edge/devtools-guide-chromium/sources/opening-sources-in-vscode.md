@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/22/2021
+ms.date: 07/11/2023
 ---
 # Opening source files in Visual Studio Code
 
@@ -22,7 +22,7 @@ First, select DevTools > **Settings** > **Experiments** > **Open source files in
 
 With this experiment enabled, suppose that in Microsoft Edge, you go to a local server (such as `http://localhost` or `http://127.0.0.1`), or open a local file.
 
-![Microsoft Edge with a local file open](./opening-sources-in-vscode-images/experiment-sources-in-code-local-project.msft..png)
+![Microsoft Edge with a local file open](./opening-sources-in-vscode-images/experiment-sources-in-code-local-project.png)
 
 When you open DevTools, you are prompted to identify your root folder.  You can opt out by selecting **Close** (`x`) or selecting the `Don't show again` button.  You can get more information by selecting the `Learn more` link.
 

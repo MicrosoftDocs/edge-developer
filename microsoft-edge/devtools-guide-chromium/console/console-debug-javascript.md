@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.date: 07/11/2023
 ---
 # Fix JavaScript errors that are reported in the Console
 
@@ -24,9 +24,7 @@ The first experience you have with the **Console** is likely to be errors in scr
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-   In the top right of DevTools, the **Open Console to view errors** button displays an error about the webpage.
-
-1. Click the **Open Console to view errors** button on the top right.  In DevTools, the **Console** gives you more information about the error:
+1. Click the **Console** button in the Activity Bar.  In DevTools, the **Console** gives you more information about the error:
 
    ![DevTools gives detailed information about the error in the Console](./console-debug-javascript-images/console-debug-displays-error.png)
 
