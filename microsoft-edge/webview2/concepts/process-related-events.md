@@ -157,7 +157,7 @@ All the WebView2 controls in your application using the same environment configu
 
 All associated WebView2 controls will be closed and your application **must handle recovery** from this failure. The WebView2 controls need to be recreated.
 
-A single `BrowserProcessExited` event will be raised from the `CoreWebview2Environment` too, but the order of these events is not guaranteed. Your application must coordinate its events handlers for these two events when the browser process crashes. See [Handle main browser process exited](#handle-main-browser-process-exited), below.
+A single `BrowserProcessExited` event will be raised from the `CoreWebview2Environment` too, but the order of these events is not guaranteed. Your application must coordinate its event handlers for these two events when the browser process crashes. See [Handle main browser process exited](#handle-main-browser-process-exited), below.
 
 
 <!-- ------------------------------ -->
