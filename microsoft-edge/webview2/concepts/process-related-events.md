@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/12/2023
+ms.date: 07/13/2023
 ---
 # Handling process-related events in WebView2
 
@@ -20,7 +20,7 @@ To improve the reliability of your WebView2 application, it is recommended that 
 To use this article, we recommend first reading [Process model for WebView2 apps](./process-model.md).  For a list of process-related APIs covered by this article, see [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
 
 
-<!-- ------------------------------ -->
+<!-- ------------------------------ 
 **Detailed contents:**
 
 * [Events for processes that exited or failed](#events-for-processes-that-exited-or-failed)
@@ -38,6 +38,7 @@ To use this article, we recommend first reading [Process model for WebView2 apps
    * [Restarting with a different environment configuration](#restarting-with-a-different-environment-configuration)
    * [Clearing the auth cache](#clearing-the-auth-cache)
 * [See also](#see-also)
+-->
 
 
 <!-- ====================================================================== -->
