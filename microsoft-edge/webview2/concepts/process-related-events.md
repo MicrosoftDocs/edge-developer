@@ -328,6 +328,6 @@ The _auth cache_ stores certificate selection and credentials from HTTPS Client 
 <!-- ====================================================================== -->
 ## See also
 
+* [Process model for WebView2 apps](./process-model.md)
 * [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
 * [WebView2 API Reference](../webview2-api-reference.md)
-* [Process model for WebView2 apps](./process-model.md)
