@@ -195,7 +195,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 ```
 
 > [!NOTE]
-> The 32-bit registry under `HKEY_CURRENT_USER` or the `WOW6432Node` is not searched on 64-bit machines due to the way registry works on them. For more information, see [Registry Keys Affected by Windows Installations That Include Windows on Windows (WOW) Support For Multiple Processor Architectures](https://learn.microsoft.com/en-us/windows/win32/winprog64/shared-registry-keys).
+> The `HKEY_CURRENT_USER\SOFTWARE\WOW6432Node` registry node is not searched on 64-bit machines due to the way registry works on them. For more information, see [Registry Keys Affected by Windows Installations That Include Windows on Windows (WOW) Support For Multiple Processor Architectures](https://learn.microsoft.com/en-us/windows/win32/winprog64/shared-registry-keys).
 
 > [!NOTE]
 > If you have extensions on the Microsoft Edge Add-ons and the Chrome Webstore, you must add the extension IDs corresponding to both the stores in the `allowed_origins` of the native messaging host manifest file.  This is required because only the native messaging host manifest file that corresponds to the first registry location found is read.
