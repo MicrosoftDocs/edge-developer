@@ -32,9 +32,11 @@ Simulate different device orientations from within DevTools.
 
 1. Type **sensors**, select **Show Sensors**, and then press **Enter**.  The **Sensors** tool opens in the bottom of the DevTools window.
 
+   ![Show Sensors from Command Menu](./orientation-images/device-mode-console-command-menu-sensors.png)
+
 1. From the **Orientation** list, select one of the preset orientations, such as **Portrait upside down**, or select **Custom orientation** to provide your own exact orientation.
 
-![Selecting 'Portrait upside down' from the Orientation list](./orientation-images/device-mode-console-sensors-orientation-portrait-upside-down.png)
+   ![Selecting 'Portrait upside down' from the Orientation list](./orientation-images/device-mode-console-sensors-orientation-portrait-upside-down.png)
 
 If you select **Custom orientation**, the **alpha**, **beta**, and **gamma** rotational axis fields are enabled.
 <!--To understand how each axis works, see [Device Orientation & Motion - Rotation data](https://web.dev/native-hardware-device-orientation/#rotation-data). -->

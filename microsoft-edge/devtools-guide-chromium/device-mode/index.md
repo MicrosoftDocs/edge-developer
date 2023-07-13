@@ -124,9 +124,9 @@ To simulate the dimensions of a specific mobile device, open **More options** an
 
 If a device frame isn't shown for a particular device, it means that DevTools doesn't have art for that device.
 
-The device frame for the iPhone 12 pro:
+The device frame for the iPhone 6/7/8:
 
-![The device frame for the iPhone 12 Pro](./index-images/device-mode-toggle-device-toolbar-options-device-frame-iphone-12-pro.png)
+![The device frame for the iPhone 6](./index-images/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.png)
 
 #### Add a custom mobile device
 
@@ -214,7 +214,7 @@ You can also set network throttling from the **Performance** panel:
 
  If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation-overriding UI.
 
-1. Select **Customize and control DevTools** (**+**) > **More tools** > **Sensors**.
+1. Select **More tools** (**+**) > **Sensors**.
 
    ![Sensors for geolocation](./index-images/device-mode-toggle-device-toolbar-more-tools-sensors.png)
 
@@ -232,7 +232,7 @@ On the **Sensors** panel, to select one of the preset locations, use the **Locat
 
 If your page depends on orientation information from a mobile device to render properly, open the orientation UI.
 
-1. Select **Customize and control DevTools** (**+**) > **More tools** > **Sensors**.
+1. Select **More tools** (**+**) > **Sensors**.
 
    ![The Sensors command on the More tools menu](./index-images/device-mode-toggle-device-toolbar-more-tools-sensors.png)
 
@@ -252,7 +252,7 @@ If your page depends on orientation information from a mobile device to render p
 
 If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.
 
-1. Select **Customize and control DevTools** (**+**) > **More tools** > **Network conditions**.
+1. Select **More tools** (**+**) > **Network conditions**.
 
    ![Network conditions entry in the More Tools menu](./index-images/device-mode-toggle-device-toolbar-more-tools-network-conditions.png)
 
