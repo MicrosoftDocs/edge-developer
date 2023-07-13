@@ -181,16 +181,10 @@ If Microsoft Edge finds the registry key at any of the previously listed locatio
 The search order for the registry locations is:
 
 ```output
-HKEY_CURRENT_USER\SOFTWARE\WOW6432Node\Microsoft\Edge\NativeMessagingHosts\
-HKEY_CURRENT_USER\SOFTWARE\WOW6432Node\Chromium\NativeMessagingHosts\
-HKEY_CURRENT_USER\SOFTWARE\WOW6432Node\Google\Chrome\NativeMessagingHosts\
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\
 HKEY_CURRENT_USER\SOFTWARE\Chromium\NativeMessagingHosts\
 HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 
-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Edge\NativeMessagingHosts\
-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Chromium\NativeMessagingHosts\
-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\NativeMessagingHosts\
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\
 HKEY_LOCAL_MACHINE\SOFTWARE\Chromium\NativeMessagingHosts\
 HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
