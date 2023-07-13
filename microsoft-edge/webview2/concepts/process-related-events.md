@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/11/2023
+ms.date: 07/12/2023
 ---
 # Handling process-related events in WebView2
 
@@ -17,8 +17,10 @@ To improve the reliability of your WebView2 application, it is recommended that 
 * [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly).
 * [A renderer process becomes unresponsive](#handle-unresponsive-renderers).
 
-For a list of APIs covered by this article, see [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
+To use this article, we recommend first reading [Process model for WebView2 apps](./process-model.md).  For a list of process-related APIs covered by this article, see [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
 
+
+<!-- ------------------------------ -->
 **Detailed contents:**
 
 * [Events for processes that exited or failed](#events-for-processes-that-exited-or-failed)
@@ -47,29 +49,26 @@ When you initialize a WebView2 control, WebView2 will ensure there's a WebView2 
 
 * **Main browser process exits.**  If the main browser process exits for _any reason_, the `CoreWebView2Environment` will raise the `BrowserProcessExited` event. Use this event to synchronize operations involving the WebView2 Runtime resources and lifetime, such as _User Data Folder_ management and updates. See [Handle main browser process exited](#handle-main-browser-process-exited), below.
 
-* **Main browser process crashes.**  When the main browser process crashes, it will produce both a `ProcessFailed` event and a `BrowserProcessExited` event, since the main browser process _exited_ because of a failure.  <!--todo: link to a section below?-->
+* **Main browser process crashes.**  When the main browser process crashes, it will produce both a `ProcessFailed` event and a `BrowserProcessExited` event, since the main browser process _exited_ because of a failure.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2.ProcessFailed Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.processfailed)
-* [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserprocessexited)
+* [CoreWebView2.ProcessFailed Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.processfailed)
+* [CoreWebView2Environment.BrowserProcessExited Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserprocessexited)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.ProcessFailed Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#processfailed)
-* [CoreWebView2Environment.BrowserProcessExited Event](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#browserprocessexited)
+* [CoreWebView2.ProcessFailed Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#processfailed)
+* [CoreWebView2Environment.BrowserProcessExited Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#browserprocessexited)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2::add_ProcessFailed event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)
-* [ICoreWebView2::remove_ProcessFailed event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
-* [ICoreWebView2Environment5::add_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
-* [ICoreWebView2Environment5::remove_BrowserProcessExited event](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
+* [ICoreWebView2::add_ProcessFailed event](/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)
+* [ICoreWebView2::remove_ProcessFailed event](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
+* [ICoreWebView2Environment5::add_BrowserProcessExited event](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
+* [ICoreWebView2Environment5::remove_BrowserProcessExited event](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
 
 ---
-
-See also:
-* [Process model for WebView2 apps](./process-model.md)
 
 
 <!-- ====================================================================== -->
@@ -79,15 +78,15 @@ The `ProcessFailed` event provides detailed information about the process failur
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2ProcessFailedEventArgs Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs)
+* [CoreWebView2ProcessFailedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2ProcessFailedEventArgs Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs)
+* [CoreWebView2ProcessFailedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ProcessFailedEventArgs2 interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2)
+* [ICoreWebView2ProcessFailedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2)
 
 ---
 
@@ -97,15 +96,15 @@ Additionally, most process crashes will generate dumps in the [user data folder]
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Environment.FailureReportFolderPath Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.failurereportfolderpath)
+* [CoreWebView2Environment.FailureReportFolderPath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.failurereportfolderpath)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Environment.FailureReportFolderPath Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#failurereportfolderpath)
+* [CoreWebView2Environment.FailureReportFolderPath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#failurereportfolderpath)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Environment11::get_FailureReportFolderPath](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment11#get_failurereportfolderpath)
+* [ICoreWebView2Environment11::get_FailureReportFolderPath](/microsoft-edge/webview2/reference/win32/icorewebview2environment11#get_failurereportfolderpath)
 
 ---
 
@@ -120,6 +119,32 @@ You can use the following event args to identify the failure:
 * `ProcessFailedKind`. A combination of the process purpose (such as browser, renderer, or GPU) and failure (exit, unresponsiveness). Renderer processes are further divided in _main frame_ renderer (`RenderProcessExited`, `RenderProcessUnresponsive`) and _subframe_ renderer (`FrameRenderProcessExited`).
 
 * `ProcessFailedReason`. Indicates the category of the problem causing the failure. Some of these _failure reasons_ are only applicable to specific _failure kinds_.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2ProcessFailedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs)
+* [CoreWebView2ProcessFailedKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedkind)
+* [CoreWebView2ProcessFailedReason Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedreason)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2ProcessFailedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs)
+* [CoreWebView2ProcessFailedKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedkind)
+* [CoreWebView2ProcessFailedReason Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedreason)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2ProcessFailedEventArgs` interface:
+   * [ICoreWebView2ProcessFailedEventArgs::get_ProcessFailedKind property](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs#get_processfailedkind)
+* `ICoreWebView2ProcessFailedEventArgs2` interface:
+   * [ICoreWebView2ProcessFailedEventArgs2::get_Reason property](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2#get_reason)
+* [COREWEBVIEW2_PROCESS_FAILED_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_kind)
+* [COREWEBVIEW2_PROCESS_FAILED_REASON enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_reason)
+
+---
+
+See also:
+* [Gathering process failure details](#gathering-process-failure-details)
 
 
 <!-- ------------------------------ -->
@@ -145,18 +170,18 @@ Your application **must handle recovery** from this failure. If the main frame i
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2.Reload Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.reload)
-* [CoreWebView2Controller.Close Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close)
+* [CoreWebView2.Reload Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.reload)
+* [CoreWebView2Controller.Close Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2.Reload Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#reload)
-* [CoreWebView2Controller.Close Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#close)
+* [CoreWebView2.Reload Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#reload)
+* [CoreWebView2Controller.Close Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#close)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2::Reload method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#reload)
-* [ICoreWebView2Controller::Close method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)
+* [ICoreWebView2::Reload method](/microsoft-edge/webview2/reference/win32/icorewebview2#reload)
+* [ICoreWebView2Controller::Close method](/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)
 
 ---
 
@@ -164,15 +189,15 @@ If the main frame is not impacted (`FrameRenderProcessExited`), your application
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2ProcessFailedEventArgs.FrameInfosForFailedProcess Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.frameinfosforfailedprocess)
+* [CoreWebView2ProcessFailedEventArgs.FrameInfosForFailedProcess Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.frameinfosforfailedprocess)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2ProcessFailedEventArgs.FrameInfosForFailedProcess Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs#frameinfosforfailedprocess)
+* [CoreWebView2ProcessFailedEventArgs.FrameInfosForFailedProcess Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs#frameinfosforfailedprocess)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ProcessFailedEventArgs2::get_FrameInfosForFailedProcess property](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2#get_frameinfosforfailedprocess)
+* [ICoreWebView2ProcessFailedEventArgs2::get_FrameInfosForFailedProcess property](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2#get_frameinfosforfailedprocess)
 
 ---
 
@@ -195,6 +220,20 @@ There might be some interruptions (for example, if the utility process was hosti
 * **Failure reason:** any, except `Unresponsive` and `ProfileDeleted`.
 
 This process failure is not fatal and is auto-recoverable. Your application does **not** need to handle recovery for this event, but can collect information to understand any persistent issues, including the `ProcessDescription` provided in the event args.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2ProcessFailedEventArgs.ProcessDescription Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.processdescription)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2ProcessFailedEventArgs.ProcessDescription Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs#processdescription)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ProcessFailedEventArgs2::get_ProcessDescription property](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2#get_processdescription)
+
+---
 
 
 <!-- ------------------------------ -->
@@ -240,15 +279,15 @@ This event is intended for operations involving the WebView2 Runtime resources. 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2BrowserProcessExitedEventArgs Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browserprocessexitedeventargs)
+* [CoreWebView2BrowserProcessExitedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2browserprocessexitedeventargs)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2BrowserProcessExitedEventArgs Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browserprocessexitedeventargs)
+* [CoreWebView2BrowserProcessExitedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browserprocessexitedeventargs)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2BrowserProcessExitedEventArgs interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs)
+* [ICoreWebView2BrowserProcessExitedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs)
 
 ---
 
@@ -277,12 +316,12 @@ Most of the configuration used for a `CoreWebView2Environment` is bound to the m
 <!-- ------------------------------ -->
 #### Clearing the auth cache
 
-The auth cache is bound to the main browser process lifetime. To clear the cache, your application must recreate its WebView2 controls from a new main browser process instance. To ensure a new main browser process instance is used when recreating the controls, your application must wait for the `BrowserProcessExited` event before proceeding; otherwise, the main browser process might stay alive when the controls are recreated and preserve the auth cache.
+The _auth cache_ stores certificate selection and credentials from HTTPS Client Certificate Requests.  The auth cache is bound to the main browser process lifetime.  To clear the auth cache, your application must recreate its WebView2 controls from a new main browser process instance. To ensure that a new main browser process instance is used when recreating the controls, your application must wait for the `BrowserProcessExited` event before proceeding; otherwise, the main browser process might stay alive when the controls are recreated and preserve the auth cache.
 
-_Auth cache_ means the stored selection and credentials from HTTPS Client Certificate Requests.  For more information, see:
-* [Client Certificate Authentication](https://textslashplain.com/2020/05/04/client-certificate-authentication/).
-* [With WebView2 what is the equivent of "closing the browser"?](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2623) - WebView2Feedback repo issue #2623.
-<!-- todo: link to a page such as https://learn.microsoft.com/docs/ ? -->
+<!-- 
+* [Client Certificate Authentication](https://textslashplain.com/2020/05/04/client-certificate-authentication/)
+* [With WebView2 what is the equivent of "closing the browser"?](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2623) - WebView2Feedback repo issue #2623
+-->
 
 
 <!-- ====================================================================== -->
