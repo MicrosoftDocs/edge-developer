@@ -317,9 +317,11 @@ Most of the configuration used for a `CoreWebView2Environment` is bound to the m
 <!-- ------------------------------ -->
 #### Clearing the auth cache
 
-The _auth cache_ stores certificate selection and credentials from HTTPS Client Certificate Requests.  The auth cache is bound to the main browser process lifetime.
+The _auth cache_ stores certificate selection and credentials from HTTPS Client Certificate Requests.
 
-To clear the auth cache, your application must re-create its WebView2 controls from a new main browser process instance. To ensure that a new main browser process instance is used when recreating the controls, your application must wait for the `BrowserProcessExited` event before proceeding; otherwise, the main browser process might stay alive when the controls are recreated, and preserve the auth cache instead of clearing it.
+The auth cache is bound to the main browser process lifetime.  Therefore, to clear the auth cache, your application must re-create its WebView2 controls from a new main browser process instance.
+
+To ensure that a new main browser process instance is used when re-creating the WebView2 controls, your application must wait for the `BrowserProcessExited` event before proceeding; otherwise, the main browser process might stay alive when the controls are recreated, which would preserve the auth cache instead of clearing it as intended.
 
 <!-- 
 * [Client Certificate Authentication](https://textslashplain.com/2020/05/04/client-certificate-authentication/)
