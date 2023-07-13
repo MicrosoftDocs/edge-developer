@@ -99,7 +99,6 @@ You can delete templates stored on the device and clear the cache data. Go to `e
 
 <!-- Above, should pick one way. Check UI for privacy updates -->
 
-
 You can use the title of your collection to find relevant Pinterest Topic pages when searching in Microsoft Bing. Go to `edge://settings/privacy`. Turn on the **Show suggestions from Pinterest in Collections** setting. Microsoft Edge does not send data about your collections to Pinterest. You can remove the suggestions and stop searches for Pinterest Topic pages. Go to `edge://settings/privacy` and turn off the **Show suggestions from Pinterest in Collections** setting.
 Collections aren't available when using **InPrivate** or **Guest** modes.
 
@@ -196,6 +195,7 @@ Microsoft Edge lets you download files safely and securely.  To choose where fil
 
 To view the history of your previous downloads, go to `edge://downloads`.  To clear your browsing data and delete your download history, go to `edge://settings/clearBrowserData`.  Deleting your download history from Microsoft Edge does not remove the files from your device.  Deleting downloaded files from your device does not remove the files from your download history.  When you use **InPrivate** browsing or **Guest** mode, the download history from the session is cleared when you close the **InPrivate** or **Guest** windows. The files remain saved on the device.
 
+
 <!-- ====================================================================== -->
 ## Enterprise security and compliance
 
@@ -204,12 +204,14 @@ Microsoft Edge supports a variety of first-party enterprise security and complia
 * [Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)
 * [Microsoft Endpoint Data Loss Prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
 * [Microsoft Insider Risk Management](/microsoft-365/compliance/insider-risk-management-solution-overview) 
+* [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) 
 
 These features become functional only on enterprise-managed devices by acquiring the right license for the feature or by the administrator deploying specific policies on the device.
 
 When these enterprise features are on, the browser sends auditing and diagnostic data to the administrator as per the feature’s requirement to function, manage or diagnose properly. This data collection is controlled by the enterprise administrator and end user is not able to opt-out.
 
 Please contact your enterprise administrator to understand your company's policies for such data collection.
+
 
 <!-- ====================================================================== -->
 ## Extensions and Microsoft Edge Add-ons
@@ -302,8 +304,6 @@ To control Image Descriptions, go to `edge://settings/accessibility`. Toggle the
 
 Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, right-click the webpage, and select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing. 
 
-<!-- ====================================================================== -->
-
 
 <!-- ====================================================================== -->
 ## Image Enhancement
@@ -327,6 +327,7 @@ You can manage your import preferences any time from `edge://settings/profiles/i
 When importing extensions, if the extension is not available on the Microsoft Edge Add-ons website, Microsoft Edge imports a local copy and asks for permission before starting. The permissions for some of the extensions may have changed. To review the extension permissions, go to `edge://extensions`.
 
 Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge. 
+
 
 <!-- ====================================================================== -->
 ## Install and update
@@ -553,6 +554,7 @@ If Microsoft Edge detects SSL connection timeouts, certificate errors, or other 
 
 <!-- ====================================================================== -->
 ## Search results data for product improvement 
+
 In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone's web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn't own or operate.
 
 * Microsoft Edge will scrub and de-identify the data by removing data identifying the person or device from which it was collected. 
@@ -693,10 +695,12 @@ To convert your speech into text, Microsoft Edge supports the [Web Speech API](h
 
 To turn off speech translated to text, you may deny microphone access from any site that prompts for permission.  To turn off the Microphone permission for all sites, go to `edge://settings/content/microphone`.
 
+
 <!-- ====================================================================== -->
 ## Suggest similar sites
 
 To help resolve URL typos in the address bar that result in a website error, Microsoft Edge may recommend a corrected URL.  When a website navigation error occurs, Microsoft Edge sends the domain of the web address to the Microsoft service to suggest a corrected URL.  Microsoft Edge does not include identifiers or tokens with the domain.  If the service finds a suggestion, it returns the suggested URL.  Microsoft stores the incorrect domain, and suggested domain, to help improve the service.  To help you go to the correct sites, the feature is turned on by default.  To turn off the feature, go to `edge://settings/privacy` and under the **Services** turn off the **Suggest similar sites when a website can't be found** setting.
+
 
 <!-- ====================================================================== -->
 ## Support nonprofits
@@ -839,6 +843,7 @@ If you are browsing while using **InPrivate** or **Guest** mode, text prediction
 If your device is managed by using group policies set by your organization, the feature may be disabled depending on the administrator's policies of your organization.  
 
 Text prediction is only available in select languages and regions.
+
 
 <!-- ====================================================================== -->
 ## Thank you!

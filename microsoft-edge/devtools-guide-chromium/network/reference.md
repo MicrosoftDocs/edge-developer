@@ -355,7 +355,7 @@ Right-click the header of the Requests table and select a column name to hide or
 
 #### Add columns for response headers
 
-To add a column that displays the value of an HTTP response header in the Requests table, right-click the header of the Requests table and then select **Response Headers** > **Manage Header Columns**.
+To add a custom column to the Requests table, right-click the header of the Requests table and then select **Response Headers** > **Manage Header Columns**. The **Manage Header Columns** popup window opens.  Click the **Add custom header** button, enter the custom header name, and then click **Add**. 
 
 ![Adding a custom column to the Requests table](./reference-images/requests-add-custom-column.png)
 
