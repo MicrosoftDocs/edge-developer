@@ -20,7 +20,7 @@ To improve the reliability of your WebView2 application, it is recommended that 
 To use this article, we recommend first reading [Process model for WebView2 apps](./process-model.md).  For a list of process-related APIs covered by this article, see [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 **Detailed contents:**
 
 * [Events for processes that exited or failed](#events-for-processes-that-exited-or-failed)
@@ -115,7 +115,7 @@ Additionally, most process crashes will generate dumps in the [user data folder]
 
 When a crash occurs in the WebView2 Runtime, the `ProcessFailed` event will be raised for every WebView2 control associated to the crashing process.  The failure might or might not be recoverable, and some failures are auto-recoverable.
 
-You can use the following event args to identify the failure:
+You can use the following properties from the event args to identify the failure:
 
 * `ProcessFailedKind`. A combination of the process purpose (such as browser, renderer, or GPU) and failure (exit, unresponsiveness). Renderer processes are further divided in _main frame_ renderer (`RenderProcessExited`, `RenderProcessUnresponsive`) and _subframe_ renderer (`FrameRenderProcessExited`).
 
@@ -123,29 +123,20 @@ You can use the following event args to identify the failure:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2ProcessFailedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs)
-* [CoreWebView2ProcessFailedKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedkind)
-* [CoreWebView2ProcessFailedReason Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedreason)
+* [CoreWebView2ProcessFailedEventArgs.ProcessFailedKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.processfailedkind)
+* [CoreWebView2ProcessFailedEventArgs.Reason Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.reason)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2ProcessFailedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs)
-* [CoreWebView2ProcessFailedKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedkind)
-* [CoreWebView2ProcessFailedReason Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedreason)
+* [CoreWebView2ProcessFailedEventArgs.ProcessFailedKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs#processfailedkind)
+* [CoreWebView2ProcessFailedEventArgs.Reason Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs#processfailedkind#reason)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* `ICoreWebView2ProcessFailedEventArgs` interface:
-   * [ICoreWebView2ProcessFailedEventArgs::get_ProcessFailedKind property](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs#get_processfailedkind)
-* `ICoreWebView2ProcessFailedEventArgs2` interface:
-   * [ICoreWebView2ProcessFailedEventArgs2::get_Reason property](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2#get_reason)
-* [COREWEBVIEW2_PROCESS_FAILED_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_kind)
-* [COREWEBVIEW2_PROCESS_FAILED_REASON enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_reason)
+* [ICoreWebView2ProcessFailedEventArgs::get_ProcessFailedKind property](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs#get_processfailedkind)
+* [ICoreWebView2ProcessFailedEventArgs2::get_Reason property](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2#get_reason)
 
 ---
-
-See also:
-* [Gathering process failure details](#gathering-process-failure-details)
 
 
 <!-- ------------------------------ -->
@@ -323,7 +314,7 @@ The auth cache is bound to the main browser process lifetime.  Therefore, to cle
 
 To ensure that a new main browser process instance is used when re-creating the WebView2 controls, your application must wait for the `BrowserProcessExited` event before proceeding; otherwise, the main browser process might stay alive when the controls are recreated, which would preserve the auth cache instead of clearing it as intended.
 
-<!-- 
+<!--
 * [Client Certificate Authentication](https://textslashplain.com/2020/05/04/client-certificate-authentication/)
 * [With WebView2 what is the equivent of "closing the browser"?](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2623) - WebView2Feedback repo issue #2623
 -->
