@@ -52,7 +52,7 @@ DevTools opens an instance of Visual Studio Code and shows all the files in the 
 
 ![Visual Studio Code open with the root folder files and the selected file open](./opening-sources-in-vscode-images/experiment-sources-in-code-editor-open.png)
 
-Any changes that you make to the file in DevTools will now be synced to Visual Studio Code.  For example, if you change the `background` to be `green` to the styles of the body, the same CSS rule will automatically be added to the `base.css` file in the code editor of Visual Studio Code.
+Any changes that you make to the file in DevTools will now be synced to Visual Studio Code.  For example, if you change the `background` to be `green` for the styles of the body, the same CSS rule will automatically be added to the `base.css` file in the code editor of Visual Studio Code.
 
 ![Changes to the code in the Styles tool now are reflected in the source code in Visual Studio Code](./opening-sources-in-vscode-images/experiment-sources-in-code-code-synced.png)
 
