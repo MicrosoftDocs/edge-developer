@@ -59,7 +59,7 @@ You can also use the **Network Console** to create and send HTTP requests direct
 
 ![The Network Console panel](./devtools-images/experiments-network-console.png)
 
-Tip: To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#drawer), see [moving tools between panels](#move-tools-between-panels).
+Tip: To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#quick-view), see [moving tools between panels](#move-tools-between-panels).
 
 Update: This feature has been released and is no longer experimental.<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**. -->
 
