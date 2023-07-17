@@ -51,7 +51,7 @@ The following screenshot shows four different DevTools themes, from top left to 
 <!-- ====================================================================== -->
 ## Changing the color theme from Settings
 
-1. In DevTools, click the **Customize and control DevTools** (![Settings icon](./theme-images/customize-icon.png)) button, and then click the **Settings** (![Settings icon](./theme-images/settings-icon.png)) button.  Or, press **F1**.
+1. In DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./theme-images/customize-icon.png)) button, and then click the **Settings** (![Settings icon](./theme-images/settings-icon.png)) button.  Or, press **F1**.
 
    ![The Settings (gear) icon](./theme-images/setting-button.png)
 

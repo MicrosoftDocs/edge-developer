@@ -21,7 +21,7 @@ To match the keyboard shortcuts in Microsoft Edge DevTools to their equivalent a
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, in the **Activity Bar**, click the **Customize and control DevTools** (![Settings icon](./shortcuts-images/customize-icon.png)) button, and then click the **Settings** (![Settings icon](./shortcuts-images/settings-icon.png)) button.  Or, press **F1**.
+1. In DevTools, in the **Activity Bar**, click the **Customize and control DevTools** (![Customize and control DevTools icon](./shortcuts-images/customize-icon.png)) button, and then click the **Settings** (![Settings icon](./shortcuts-images/settings-icon.png)) button.  Or, press **F1**.
 
 1. In the **Settings** panel, select the **Shortcuts** page.
 
@@ -42,7 +42,7 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, in the **Activity Bar**, click the **Customize and control DevTools** (![Settings icon](./shortcuts-images/customize-icon.png)) button, and then click the **Settings** (![Settings icon](./shortcuts-images/settings-icon.png)) button.  Or, press **F1**.
+1. In DevTools, in the **Activity Bar**, click the **Customize and control DevTools** (![Customize and control DevTools icon](./shortcuts-images/customize-icon.png)) button, and then click the **Settings** (![Settings icon](./shortcuts-images/settings-icon.png)) button.  Or, press **F1**.
 
 1. In the **Settings** panel, select the **Shortcuts** page.
 
