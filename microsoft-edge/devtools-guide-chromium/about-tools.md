@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/13/2023
+ms.date: 07/17/2023
 ---
 # About the list of tools
 
@@ -88,9 +88,9 @@ The **Command Menu** first lists the **Activity Bar** tools (indicated by the **
 
 ![The Command Menu, showing the Panel tools grouped together, and then the Quick View tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
 
-To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View**, **Move to top Activity Bar**, or **Move to left Activity Bar**:
+To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View**, **Move to side Quick View**, **Move to top Activity Bar**, or **Move to left Activity Bar**:
 
-![The right-click menu for a tool in the Quick View toolbar, including the 'Move to top Activity Bar' menu item](./about-tools-images/move-from-quickview-to-activitybar.png)
+![The right-click menu for a tool in the Quick View toolbar, including the 'Move to top Activity Bar' command](./about-tools-images/move-from-quickview-to-activitybar.png)
 
 To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Or, click the **Customize and control DevTools** (![Customize icon](./about-tools-images/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
 

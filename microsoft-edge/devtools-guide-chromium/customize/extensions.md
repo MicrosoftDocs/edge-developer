@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/30/2022
+ms.date: 07/17/2023
 ---
 # Add custom UI to DevTools using extensions
 

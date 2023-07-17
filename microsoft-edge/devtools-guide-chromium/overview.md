@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 06/26/2023
+ms.date: 07/17/2023
 ---
 # Overview of DevTools
 
@@ -94,7 +94,7 @@ DevTools opens, with the right-clicked element highlighted in the **DOM tree** i
 <!-- ------------------------------ -->
 #### Open DevTools by using the Microsoft Edge toolbar
 
-On the Microsoft Edge toolbar, you can select **Settings and more** (`...`) >  **More tools** >  **Developer tools**:
+On the Microsoft Edge toolbar, select **Settings and more** (`...`) >  **More tools** >  **Developer tools**:
 
 ![The 'Settings and more' menu of Microsoft Edge, with the 'More tools' submenu, and the 'Developer tools' command](./overview-images/edge-settings-and-more-tools-developer-tools.png)
 
@@ -198,12 +198,13 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 <!-- ====================================================================== -->
 ## Overview of the user interface
 
-The DevTools user interface is designed to be easy to use and learn. It's composed of the following main areas:
+The DevTools user interface has the following main areas:
 
 * The **Activity Bar** at the top, or on the left side, which contains icons used to access tools, settings, documentation, and more.
-* The current tool area, where the tool that's currently selected in the **Activity Bar** appears.
-* The **Quick View** toolbar, at the bottom, which contains icons used to access tools.
-* The bottom tool area, where the tool that's currently selected in the **Quick View** toolbar appears.
+   * The current tool area, where the tool that's currently selected in the **Activity Bar** appears.
+
+* The **Quick View** toolbar, at the bottom, which contains tabs used to access tools.
+   * The bottom tool area, where the tool that's currently selected in the **Quick View** toolbar appears.
 
 ![Microsoft Edge, with DevTools opened on the side, with the 4 main UI areas highlighted](./overview-images/ui-overview.png)
 
@@ -259,15 +260,15 @@ The **Activity Bar** can be in one of the following locations:
 
 When the **Activity Bar** is horizontal, tool names appear next to tool icons if there is enough space to display them.
 
-If there isn't enough space to display all tool names, the horizontal **Activity Bar** shows some tabs with tool icons and names, and some tabs with icons only:
+If there isn't enough space to display all tool names, the horizontal **Activity Bar** shows some tabs with tool icons and names, and some tabs with icons that have a tooltip instead:
 
-![The horizontal Activity Bar, showing some tools with icons and labels, and others with just icons](./overview-images/horizontal.png)
+![The horizontal Activity Bar with limited width, so some tools don't have a label, but only an icon with tooltip](./overview-images/horizontal.png)
 
 To change the location of the **Activity Bar**, do either of the following:
 
-* Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then choose a location in **Activity Bar location**:
+* Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select a location in **Activity Bar location**:
 
-  ![The Customize and control DevTools menu of DevTools, showing the various Activity Bar location options](./overview-images/move-activity-bar-from-customize-menu.png)
+  ![The 'Customize and control DevTools' menu of DevTools, showing the various Activity Bar location options](./overview-images/move-activity-bar-from-customize-menu.png)
 
 * In the **Activity Bar**, click **Move Activity Bar to left** (![The Move Activity Bar to left icon](./overview-images/move-activity-bar-to-left-icon.png)) or **Move Activity Bar to top** (![The Move Activity Bar to top icon](./overview-images/move-activity-bar-to-top-icon.png)).
 
@@ -277,9 +278,11 @@ To change the location of the **Activity Bar**, do either of the following:
 <!-- ------------------------------ -->
 #### Change the location of the Quick View toolbar
 
-By default, the **Quick View** toolbar is located at the bottom of the DevTools window. You can also change the location of the **Quick View** toolbar to the right side of the DevTools window.
+By default, the **Quick View** panel is located at the bottom of the DevTools window. You can also change the location of the **Quick View** toolbar to the right side of the DevTools window.
 
-To change the location of the **Quick View** toolbar, click the **Dock Quick View to the right** or **Dock Quick View to the bottom** (![The Dock Quick View icon](./overview-images/move-quickview-icon.png)) icon in the **Quick View** toolbar:
+To display **Quick View**, press **Esc**.
+
+To change the location of the **Quick View** panel, in the **Quick View** toolbar, click the **Dock Quick View to the right** button or the **Dock Quick View to the bottom** (![The Dock Quick View icon](./overview-images/move-quickview-icon.png)) button:
 
 ![The Dock Quick View icon, displayed in the Quick View toolbar, at the bottom of DevTool](./overview-images/move-quickview.png)
 
@@ -287,13 +290,13 @@ To change the location of the **Quick View** toolbar, click the **Dock Quick Vie
 <!-- ====================================================================== -->
 ## Features of the Activity Bar
 
-DevTools gives you an amazing amount of power to inspect, debug, and change the website currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
+DevTools gives you an amazing amount of power to inspect, debug, and change the website currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools useful to refine the appearance and navigation or functionality of a webpage without the need to refresh or build it.
 
 
 <!-- ------------------------------ -->
 #### Tabbed tool panels containing tabs and pages
 
-Other than a couple of icon tools (the **Inspect** tool and **Device Emulation**), DevTools is divided into and a set of tabbed tools, such as the **Elements** tool, the **Console** tool, and the **Sources** tool.  Within the **Command Menu**, tools are referred to as _panels_.  A tool's tab contains a panel which contains the tool's UI.
+Other than the **Inspect** tool and **Device Emulation**, DevTools is divided into a set of tabbed tools, such as the **Elements** tool, the **Console** tool, and the **Sources** tool.  Within the **Command Menu**, tools are referred to as _panels_.  A tool's tab contains a panel which contains the tool's UI.
 
 **Higher-level tabs:**
 
@@ -315,6 +318,10 @@ The **Activity Bar** contains the following features:
    *  **Inspect tool** (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) toggle button.
    *  **Device Emulation** (![Device Emulation icon](./overview-images/device-emulation-icon-light-theme.png)) button.
 
+<!--
+* **Automatically emulate Microsoft-recommended device baselines**
+Present if Experiments > "Emulate Microsoft-recommended hardware and network performance presets" checkbox is selected -->
+
 * Tool tabs:
    *  **Welcome** tool.
    *  **Elements** tool.  Permanent.
@@ -327,7 +334,7 @@ The **Activity Bar** contains the following features:
 
 * Icons:
    *  **Move Activity Bar to left** (![Move Activity Bar to left icon](./overview-images/move-activity-bar-to-left-icon.png)) button.
-   *  **More Tools** (![More Tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
+   *  **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
    *  **Customize and control DevTools** (![Customize icon](./overview-images/customize-devtools-icon-light-theme.png)) menu button.
    *  **Help** (![Help icon](./overview-images/help-icon.png)) button.
    *  **Close** DevTools (![Close DevTools icon](./overview-images/close-devtools-icon-light-theme.png)) button.
@@ -340,25 +347,21 @@ The **Activity Bar** features are described below.
 <!-- ------------------------------ -->
 #### Pin and rearrange tools in the Activity Bar
 
-You can choose which tools appear in the **Activity Bar** by pinning or unpinning tools. This allows you to customize DevTools to your preferred workflow.
+Besides the permanent **Elements**, **Console**, and **Sources** tools, you can control which tools appear in the **Activity Bar**, to customize DevTools to focus on your current activities.
 
-Click **More tools** (**+**) to list all the available tools. Selecting a tool pins it to the **Activity Bar**. The tool is then present in the Activity Bar whenever DevTools is opened.
+1. Click **More tools** (**+**) to list all the available tools:
 
-![The More tools menu in the Activity Bar, with the expanded list of all tools](./overview-images/more-tools.png)
+   ![The More tools menu in the Activity Bar, with the expanded list of all tools](./overview-images/more-tools.png)
 
-If there isn't enough space in the **Activity Bar** to display all pinned tools, some tools may overflow into the **More tools** menu:
+1. Select a tool to pin it to the **Activity Bar**.  The tool is then present in the Activity Bar whenever DevTools is opened.
+
+If there isn't enough space in the **Activity Bar** to display all of the pinned tools, some tools may overflow into the **More tools** menu:
 
 ![The More tools menu, showing some pinned tools that couldn't fit in the Activity Bar](./overview-images/overflow-tools.png)
 
-To unpin a tool from the **Activity Bar**, right-click the tool and select **Remove from Activity Bar**:
+To unpin a tool from the **Activity Bar**, right-click the tool's tab and then select **Remove from Activity Bar**:
 
-![The right-click menu to unpin tools from the Activity bar](./overview-images/remove-tool.png)
-
-Currently, the following tools cannot be unpinned from the **Activity Bar**:
-
-* **Elements** tool
-* **Console** tool
-* **Sources** tool
+![The right-click menu of the Performance tool's tab, to remove the tool from the Activity bar](./overview-images/remove-tool.png)
 
 
 <!-- ------------------------------ -->
@@ -442,13 +445,24 @@ See [View, edit, and delete cookies](storage/cookies.md).
 <!-- ------------------------------ -->
 #### More Tools button
 
-To add a tool to the **Activity Bar**, click the **More Tools** (![More Tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
+To add a tool to the **Activity Bar**, click the **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
 
 
 <!-- ------------------------------ -->
 #### Customize and control DevTools menu
 
-The **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button opens a dropdown menu that enables you to define where to dock DevTools, choose where the **Activity Bar** is located, search, open different tools, change settings, and more.
+The **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button opens a dropdown menu to:
+
+* Dock DevTools.
+* Dock the **Activity Bar**.
+* Select a theme.
+* Show keyboard shortcuts.
+* Change DevTools settings.
+* Open Device Emulation.
+* Toggle the Quick View panel.
+* Run a command.
+* Search for code.
+* Open a file.
 
 
 <!-- ------------------------------ -->
@@ -468,13 +482,13 @@ Click the **Close** DevTools (![Close DevTools icon](./overview-images/close-dev
 <!-- ====================================================================== -->
 ## Features of the Quick View toolbar
 
-Use **Quick View** to open a second tool next to the one already selected from the **Activity Bar**:
+Use **Quick View** to open a second tool below or to the right of the tool that's already selected in the **Activity Bar**:
 
 1. Select a tool from the **Activity Bar**.
 
 1. In the **Quick View** toolbar, click **More tools** (**+**), and then select a different tool from the list.
 
-The following screenshot shows the **Network** tool and the **Rendering** tool side-by-side:
+For example, open the **Network** tool in the **Activity Bar**, above the **Rendering** tool in the **Quick View** panel:
 
 ![DevTools with the Network tool at the top, and the Rendering tool at the bottom](./overview-images/quick-view-tool.png)
 
@@ -504,9 +518,9 @@ The **More Tools** (**+**) button is displayed both in the **Activity Bar** and 
 | --- | --- |
 | Open a tool in the **Activity Bar** at the top of DevTools | In the **Activity Bar** at the top of DevTools, click **More Tools** (**+**) and then select a tool. |
 | Open a tool on the **Quick View** toolbar | When DevTools has focus, press **Esc** to show the **Quick View** toolbar if it's not shown yet.  In the **Quick View** toolbar, click **More Tools** (**+**) and then select a tool. |
-| Move a tool from the **Quick View** toolbar to the **Activity Bar** | When DevTools has focus, press **Esc** to show the **Quick View**.  In the **Quick View** toolbar, right-click the tool's tab, and then select **Move to top Activity Bar**. |
-| Move a tool from the **Activity Bar** to the **Quick View** Toolbar | In the **Activity Bar**, right-click the tool's tab, and then select **Move to bottom Quick View**. |
-| Open a tool in its default toolbar | When DevTools has focus, open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type the name of the tool, and then select the tool. |
+| Move a tool from the **Quick View** toolbar to the **Activity Bar** | When DevTools has focus, press **Esc** to show the **Quick View**.  In the **Quick View** toolbar, right-click the tool's tab, and then select **Move to top Activity Bar** or **Move to left Activity Bar**. |
+| Move a tool from the **Activity Bar** to the **Quick View** Toolbar | In the **Activity Bar**, right-click the tool's tab, and then select **Move to bottom Quick View** or **Move to side Quick View**. |
+| Open a tool in its default toolbar (**Activity Bar** or **Quick View**) | When DevTools has focus, open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type the name of the tool, and then select a **Show \<tool\>** command. |
 
 In addition to **Activity Bar** and **Quick View** tools, DevTools includes the following tools:
 
@@ -530,22 +544,22 @@ DevTools provides lots of features and functionality to use with your website.  
 
 In the Command Menu, the tools are called "panels"; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.
 
-To open the Command Menu, do either of the following:
+1. To open the Command Menu, do either of the following:
 
-*  Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
-*  Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
+   *  Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
+   *  Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
-The Command Menu allows you to type commands to display, hide, or run features in DevTools.  With the Command Menu open, enter the word **changes**, and then select **Show Changes**.
+   The Command Menu allows you to type commands to display, hide, or run features in DevTools.
 
-The **Changes** tool opens, which is useful when you edit CSS.  In this case, the Command Menu provides a fast alternative to selecting **More Tools** (**+**) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
+1. In the Command Menu, start typing the name of a tool, such as **changes**, and then select a **Show** command, such as **Show Changes**.  The Command Menu displays the matching commands:
 
-After you type **cha**, the Command Menu displays the options:
+   ![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'](./overview-images/command-menu-show-changes.png)
 
-![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'](./overview-images/command-menu-show-changes.png)
+1. Press **Enter** to select a **Show** command, such as **Show Changes**.  The selected tool opens in Quick View, at the bottom:
 
-Press **Enter**, and then the **Changes** tool opens:
+   ![DevTools with the Changes tool open in Quick View](./overview-images/showing-changes.png)
 
-![DevTools with the Changes tool open](./overview-images/showing-changes.png)
+   The **Changes** tool is useful when you edit CSS.  In this example, the Command Menu provides a fast alternative to selecting **More Tools** (**+**) and then selecting **Changes**.  This example also provides an alternative to editing a `.js` file in the **Sources** tool, and then right-clicking and selecting **Local modifications**.
 
 See also [Run commands with the Microsoft Edge DevTools Command menu](command-menu/index.md).
 
@@ -557,9 +571,10 @@ You can customize DevTools to meet your needs for the way you work.  To change s
 
 In the **Settings** > **Preferences** page, you can change several parts of DevTools.  For example, you can use the **Browser UI language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
 
-![all the settings in DevTools](./overview-images/all-settings.png)
+![All the settings in DevTools](./overview-images/all-settings.png)
 
 You can also change the settings of advanced features, such as:
+<!-- todo: how/where, for each item in this list?-->
 
 *  Add local files to a [Workspace](workspaces/index.md).
 *  Filter library code by using the **Ignore List**.
@@ -574,33 +589,35 @@ You can also change the settings of advanced features, such as:
 <!-- ====================================================================== -->
 ## Trying experimental features
 
-The DevTools team provides new features as _experiments_ in DevTools.  You can turn each of the experiments on or off.  To see the full list of [Experimental features](experimental-features/index.md), in DevTools, select **Settings** (the gear icon), and then select **Experiments**.
+DevTools provides new potential features as _experiments_ in DevTools.  You can turn each experiment on or off.  To see the full list of experimental features, in DevTools, select **Settings** (the gear icon), and then select **Experiments**.
 
-To preview the [latest features coming to DevTools](whats-new/2021/02/devtools.md), download [Microsoft Edge Canary](https://www.microsoft.com/edge/download/insider), which builds nightly.
+To preview the latest features coming to DevTools, download [Microsoft Edge Canary](https://www.microsoft.com/edge/download/insider), which builds nightly.
+
+See also:
+* [Experimental features](experimental-features/index.md)
+* [What's New in Microsoft Edge DevTools](./whats-new/whats-new.md)
 
 
 <!-- ====================================================================== -->
 ## See also
 
-<!--
-* [Reasons to use Microsoft Edge DevTools](devtools-guide-chromium/reasons-edge-devtools.md)
--->
+<!-- todo: remove all but ~5 links -->
 
-* [About the list of tools](about-tools.md)
-* [Inspect and change the current webpage](dom/index.md)
-* [Emulate how your product behaves on different devices](device-mode/index.md)
-* [Inspect, tweak, and change the styles of elements](inspect-styles/edit-fonts.md)
-* [Debug your JavaScript](javascript/index.md)
-* [Live console](console/index.md)
-* [Accessibility, performance, compatibility, and security issues](issues/index.md)
-* [Inspect the network traffic](network/index.md)
-* [Inspect where the browser stored content](storage/sessionstorage.md)
-* [Evaluate the performance](evaluate-performance/index.md)
-* [Memory problems](memory-problems/index.md)
-* [Rendering issues](rendering-tools/index.md)
-* [Use a development environment](sources/index.md)
-* [Sync changes in DevTools with the file system](workspaces/index.md)
-* [Override files from the web](javascript/overrides.md)
+* [About the list of tools](about-tools.md)<!--keep link-->
+* [Inspect and change the current webpage](dom/index.md)<!--keep link?-->
+* [Emulate how your product behaves on different devices](device-mode/index.md)<!--keep link?-->
+* [Inspect, tweak, and change the styles of elements](inspect-styles/edit-fonts.md)<!--keep link?-->
+* [Debug your JavaScript](javascript/index.md)<!--keep link?-->
+* [Live console](console/index.md)<!--keep link?-->
+* [Accessibility, performance, compatibility, and security issues](issues/index.md)<!--keep link?-->
+* [Inspect the network traffic](network/index.md)<!--keep link?-->
+* [Inspect where the browser stored content](storage/sessionstorage.md)<!--keep link?-->
+* [Evaluate the performance](evaluate-performance/index.md)<!--keep link?-->
+* [Memory problems](memory-problems/index.md)<!--keep link?-->
+* [Rendering issues](rendering-tools/index.md)<!--keep link?-->
+* [Use a development environment](sources/index.md)<!--keep link?-->
+* [Sync changes in DevTools with the file system](workspaces/index.md)<!--keep link?-->
+* [Override files from the web](javascript/overrides.md)<!--keep link?-->
 
 
 <!-- ====================================================================== -->

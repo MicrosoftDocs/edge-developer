@@ -41,8 +41,8 @@ Microsoft Edge 110 contains various improvements to Focus Mode in DevTools.  The
 The right-click menu command for moving a tool between Quick View and the Activity Bar now indicates the placement of the destination toolbar, such as:
 * **Move to bottom Quick View**
 * **Move to side Quick View**
-* **Move to left Activity Bar**
 * **Move to top Activity Bar**
+* **Move to left Activity Bar**
 
 ![Right-click menu showing 'Move to bottom Quick View'](./devtools-110-images/move-to-bottom-quick-view.png)
 
