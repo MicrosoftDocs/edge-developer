@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/08/2022
+ms.date: 07/17/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,29 +30,29 @@ This page lists the ways to customize Microsoft Edge DevTools.
 
 **Settings** > **Preferences** contains many options for customizing DevTools.
 
-To open Settings, in DevTools, click the **Settings** icon (![Settings icon](./index-images/settings-icon-dark.png)).  Or, while DevTools has focus, press **F1**.
+To open Settings, in DevTools, click the **Customize and control DevTools** icon (![Customize and control DevTools icon](./index-images/customize-icon.png)), and then click **Settings** (![Settings icon](./index-images/settings-icon.png)).  Or, while DevTools has focus, press **F1**.
 
-![Settings](./index-images/customize-settings-preferences.png)
+![Settings](./index-images/settings-preferences.png)
 
 
 <!-- ====================================================================== -->
-## Drawer
+## Quick View
 
-In the **Drawer** toolbar in the bottom of DevTools, you can select which tools to display.
+In the **Quick View** toolbar in the bottom of DevTools, you can select which tools to display.
 
-To open (or close) the **Drawer**, press **Esc**.
+To open (or close) the **Quick View**, press **Esc**.
 
-![The Drawer](./index-images/customize-drawer-open.png)
+![The Drawer](./index-images/quick-view.png)
 
-You can move tools between the main panel and the drawer.
+You can move tools between the **Activity Bar** (at the top) and the **Quick View** (at the bottom).
 
-*  To move a tool from the drawer to the main panel, right-click a tool, and then select **Move to top**.
+*  To move a tool from the **Quick View** to the **Activity Bar**, right-click a tool, and then select **Move to top Activity Bar**:
 
-   ![Moving a tool from the Drawer to the main toolbar](./index-images/move-from-drawer.png)
+   ![Moving a tool from the Quick View to the Activity Bar](./index-images/move-from-quick-view.png)
 
-*  To move a tool from the main panel to the drawer, right-click a tool, and then select **Move to bottom**.
+*  To move a tool from the **Activity Bar** to the **Quick View**, right-click a tool, and then select **Move to bottom Quick View**:
 
-   ![Moving a tool from the main toolbar to the Drawer](./index-images/move-to-drawer.png)
+   ![Moving a tool from the Activity Bar to the Quick View](./index-images/move-to-quick-view.png)
 
 
 <!-- ====================================================================== -->
@@ -62,27 +62,29 @@ Click and drag a tool to change the ordering.  Your custom tool order persists a
 
 By default, the **Network** tool is usually the fifth tab on the main toolbar.  In the following figure, the **Network** tool is being moved to become the first tab in the main toolbar.
 
-![Custom order of DevTools in a toolbar](./index-images/customize-network-first-position.png)
+![Custom order of DevTools in a toolbar](./index-images/network-first-position.png)
 
 
 <!-- ====================================================================== -->
 ## Open and close tools
 
-To keep the DevTools interface streamlined, many of the tools aren't opened by default.  To open a tool in the main panel or the **Drawer**, click the **More Tools** (![More Tools](./index-images/open-tab-icon.png)) button to the right of the tabs, and then select a tool from the list.
+To keep the DevTools interface streamlined, many of the tools aren't opened by default.  To open a tool in the **Activity Bar** or the **Quick View**, click the **More Tools** (![More Tools](./index-images/open-tab-icon.png)) button to the right of the tabs, and then select a tool from the list:
 
-![The More Tools (+) button to open a new tool](./index-images/open-tool-in-main-panel-or-drawer.png)
+![The More Tools (+) button to open a new tool](./index-images/open-tool-in-activity-bar.png)
 
-To close a tool, select the **Close** (![Close Tool](./index-images/close-tab-icon.png)) button in the tool's tab.
+To close a tool, right-click a tool's tab and then select **Remove from Activity Bar** or **Remove from Quick View**:
 
-![The tab's Close button](./index-images/close-tool-in-main-panel-or-drawer.png)
+![The tab's Close button](./index-images/close-tool-in-activity-bar.png)
 
 
 <!-- ====================================================================== -->
 ## Change where DevTools is docked in the browser
 
-See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](placement.md).
+To change where DevTools is docked in the browser, click the **Customize and control DevTools** icon (![Customize and control DevTools icon](./index-images/customize-icon.png)) and choose one of the options in the **Dock location** submenu:
 
-![Undocked DevTools](./index-images/customize-dev-tools-dock-side.png)
+![The Dock location menu, with four icons, representing the four possible docking locations](./index-images/dock-side.png)
+
+To learn more, see [Change DevTools placement (Undock, Dock to bottom, Dock to left)](placement.md).
 
 
 <!-- ====================================================================== -->
@@ -96,13 +98,13 @@ See [Zoom DevTools in or out](../overview.md#zoom-devtools-in-or-out) in _Overvi
 
 See [Apply a color theme to DevTools](theme.md).
 
-![Selecting a different color theme](./index-images/customize-theme-setting.png)
+![Selecting a different color theme](./index-images/theme-setting.png)
 
 
 <!-- ====================================================================== -->
 ## Restore default settings
 
-To restore the default theme, placement, tools order, and any other customized settings, select **Settings** > **Preferences** > **Restore defaults and refresh**.
+To restore the default theme, placement, tools order, and any other customized settings, select **Settings** > **Preferences**, scroll down, and then click **Restore defaults and refresh**:
 
 ![Restoring default settings](./index-images/restore-default-settings.png)
 
