@@ -24,6 +24,14 @@ With this experiment enabled, suppose that in Microsoft Edge, you go to a local 
 
 ![Microsoft Edge with a local file open](./opening-sources-in-vscode-images/experiment-sources-in-code-local-project.png)
 
+<!-- todo:
+instead of using 
+https://github.com/codepo8/simple-to-do
+use:
+https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do
+Rewrite article as numbered action steps -> results.
+-->
+
 When you open DevTools, you are prompted to identify your root folder.  You can opt out by selecting **Close** (`x`) or selecting the `Don't show again` button.  You can get more information by selecting the `Learn more` link.
 
 ![Developer Tools showing an information bar asking you to identify your root folder](./opening-sources-in-vscode-images/experiment-sources-in-code-identify-root-folder.png)
