@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/10/2021
+ms.date: 07/17/2023
 ---
 # Customize keyboard shortcuts
 
@@ -17,15 +17,15 @@ For the default keyboard shortcuts, see [Keyboard shortcuts](../shortcuts/index.
 <!-- ====================================================================== -->
 ## Match keyboard shortcuts from Visual Studio Code
 
-To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent action in Visual Studio Code:
+To match the keyboard shortcuts in Microsoft Edge DevTools to their equivalent actions in Visual Studio Code:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./shortcuts-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
+1. In DevTools, in the **Activity Bar**, click the **Customize and control DevTools** (![Settings icon](./shortcuts-images/customize-icon.png)) button, and then click the **Settings** (![Settings icon](./shortcuts-images/settings-icon.png)) button.  Or, press **F1**.
 
 1. In the **Settings** panel, select the **Shortcuts** page.
 
-1. In the upper right, in the **Match shortcuts from preset** dropdown list, select **Visual Studio Code** instead of **DevTools (Default)**.
+1. In the upper right, in the **Match shortcuts from preset** dropdown list, select **Visual Studio Code** instead of **DevTools (Default)**:
 
    ![Matching keyboard shortcuts in DevTools to Visual Studio Code](./shortcuts-images/match-keyboard-shortcuts-visual-studio-code.png)
 
@@ -42,25 +42,25 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./shortcuts-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
+1. In DevTools, in the **Activity Bar**, click the **Customize and control DevTools** (![Settings icon](./shortcuts-images/customize-icon.png)) button, and then click the **Settings** (![Settings icon](./shortcuts-images/settings-icon.png)) button.  Or, press **F1**.
 
 1. In the **Settings** panel, select the **Shortcuts** page.
 
 1. Select the action you want to customize.  For example, in the **Debugger** section, select the **Pause script execution** action.
 
-1. Click the **Edit** (![EditKeyboardShortcut](./shortcuts-images/edit-keyboard-shortcut-icon.png)) icon.
+1. Click the **Edit** (![EditKeyboardShortcut](./shortcuts-images/edit-keyboard-shortcut-icon.png)) icon:
 
-   ![Select the action to customize from the Shortcuts page in Settings](./shortcuts-images/experiments-custom-keyboard-shortcuts-select-action.png)
+   ![Select the action to customize from the Shortcuts page in Settings](./shortcuts-images/select-action.png)
 
 1. To bind the shortcut keys to the action, ensure the text box next to the action has focus, and then use the keyboard to select the shortcut keys.
 
 1. To bind more than one shortcut combination to an action, select **Add a shortcut**, make sure the text box next to the action has focus, and then use the keyboard to select the shortcut keys.
 
-   ![Select the keys you want to assign to the action](./shortcuts-images/experiments-custom-keyboard-shortcuts-enter-key.png)
+   ![Select the keys you want to assign to the action](./shortcuts-images/enter-key.png)
 
 1. To save your new keyboard shortcut, select the checkmark (![CheckmarkKeyboardShortcut](./shortcuts-images/checkmark-keyboard-shortcut-icon.png)) icon.
 
-   ![Select the checkmark icon to save your new keyboard shortcut](./shortcuts-images/experiments-custom-keyboard-shortcuts-save-shortcut.png)
+   ![Select the checkmark icon to save your new keyboard shortcut](./shortcuts-images/save-shortcut.png)
 
 1. Select your new keyboard shortcut to trigger the action in DevTools.
 
