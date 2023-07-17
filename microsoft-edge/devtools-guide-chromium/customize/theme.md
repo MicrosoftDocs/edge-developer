@@ -57,7 +57,7 @@ The following screenshot shows four different DevTools themes, from top left to 
 
 1. Select **Preferences**, and then in the **Appearance** section, select a theme from the **Theme** dropdown list:
 
-   ![Selecting a theme in Preferences](./theme-images/customize-theme-setting.png)
+   ![Selecting a theme in Preferences](./theme-images/setting.png)
 
 
 <!-- ====================================================================== -->
@@ -71,7 +71,7 @@ To use the Command Menu to change which color theme is applied to DevTools:
 
 1. Press **Enter**.
 
-![The list of themes in the Command Menu](./theme-images/customize-theme-command-menu.png)
+![The list of themes in the Command Menu](./theme-images/command-menu.png)
 
 
 <!-- ====================================================================== -->
