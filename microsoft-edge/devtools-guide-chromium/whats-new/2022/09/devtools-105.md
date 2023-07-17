@@ -46,7 +46,7 @@ See also:
 
 Previously in Microsoft Edge, selecting **Edit and resend** for a network request from the Network tool may not have reliably opened the **Network Console** tool and pre-populated it with the values from the request.
 
-In Microsoft Edge 105, this issue has been fixed in the legacy DevTools UI.  This issue will also be fixed in the current DevTools UI in a future release.  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you're looking to resend.  You can continue to modify these values before sending the request from the **Network Console** tool.  Thank you for sending us your feedback about this issue!
+In Microsoft Edge 105, this issue has been fixed in the legacy DevTools UI.  This issue will also be fixed in the Focus Mode DevTools UI in a future release.  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you're looking to resend.  You can continue to modify these values before sending the request from the **Network Console** tool.  Thank you for sending us your feedback about this issue!
 
 Right-click the network request that you want to change and resend, and then select **Edit and Resend**:
 
