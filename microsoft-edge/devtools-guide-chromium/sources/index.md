@@ -431,7 +431,7 @@ For more information, see [Run commands with the Microsoft Edge DevTools Command
 <!-- ------------------------------ -->
 #### Displaying source files when using a different tool
 
-The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  You use the **Quick source** tool in the [Drawer](../customize/index.md#drawer), which appears at the bottom of DevTools.
+The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  You use the **Quick source** tool in the [Drawer](../customize/index.md#quick-view), which appears at the bottom of DevTools.
 
 To use the **Quick source** tool:
 

@@ -53,7 +53,7 @@ You can now use **Edit and Replay** on requests in the [Network Log](../../../ne
 
 ![Edit and Replay a request in the NetworkLog with the Network Console](./devtools-images/experiments-network-console-edit-and-replay.png)
 
-A new panel, the **Network Console** opens in the [DevTools Drawer](../../../customize/index.md#drawer) and automatically populates with information for the HTTP request.  To display the response returned from the server, edit the request (if needed) and select **Send**.
+A new panel, the **Network Console** opens in the [DevTools Drawer](../../../customize/index.md#quick-view) and automatically populates with information for the HTTP request.  To display the response returned from the server, edit the request (if needed) and select **Send**.
 
 You can also use the **Network Console** to create and send HTTP requests directly from the DevTools.
 
