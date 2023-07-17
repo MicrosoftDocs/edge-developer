@@ -84,11 +84,11 @@ hit counts:
 
 A good way to open DevTools is to right-click an item on a webpage, and then select **Inspect**:
 
-![A webpage rendered in Microsoft Edge, the right-click context menu is visible, showing the Inspect item](./overview-images/inspect.png)
+![Right-clicking an About Us link in a demo webpage, and then selecting the Inspect command](./overview-images/inspect.png)
 
 DevTools opens, with the right-clicked element highlighted in the **DOM tree** in the **Elements** tool:
 
-![Edge, with a webpage in a tab, and DevTools opened on the side next to it. The Elements tool is visible and a DOM element is selected](./overview-images/inspect-devtools-open.png)
+![DevTools opened in the right side of Microsoft Edge, with a DOM element selected in the DOM tree in the Elements tool](./overview-images/inspect-devtools-open.png)
 
 
 <!-- ------------------------------ -->
@@ -96,7 +96,7 @@ DevTools opens, with the right-clicked element highlighted in the **DOM tree** i
 
 On the Microsoft Edge toolbar, you can select **Settings and more** (`...`) >  **More tools** >  **Developer tools**:
 
-![Microsoft Edge, showing the Settings and more menu, with the More tools submenu, and the Developer tools item](./overview-images/edge-settings-and-more-tools-developer-tools.png)
+![The 'Settings and more' menu of Microsoft Edge, with the 'More tools' submenu, and the 'Developer tools' command](./overview-images/edge-settings-and-more-tools-developer-tools.png)
 
 
 <!-- ------------------------------ -->

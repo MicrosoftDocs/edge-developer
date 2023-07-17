@@ -11,12 +11,12 @@ ms.date: 07/13/2023
 
 DevTools provides more than 30 tools:
 
-*  2 **Activity Bar** icons, for the **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)).
-*  3 permanent **Activity Bar** tabs, for the **Elements**, **Console**, and **Sources** tools.
+*  Two **Activity Bar** icons, for the **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)).
+*  Three permanent **Activity Bar** tabs, for the **Elements**, **Console**, and **Sources** tools.
 *  Optional tabs, for optional tools such as the **Welcome**, and **Network** tools.
-* More optional tools, on the **More Tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu, such as the **3D View** and **Detached Elements** tools.
+*  More optional tools, on the **More Tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu, such as the **3D View** and **Detached Elements** tools.
 
-![All of the default tools of DevTools, including 2 icons and 8 tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
+![All of the default tools of DevTools, including two icons and eight tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
 
 The following features are additional ways to access the tools:
 
@@ -88,7 +88,7 @@ The **Command Menu** first lists the **Activity Bar** tools (indicated by the **
 
 ![The Command Menu, showing the Panel tools grouped together, and then the Quick View tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
 
-To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View** or **Move to top Activity Bar**:
+To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View**, **Move to top Activity Bar**, or **Move to left Activity Bar**:
 
 ![The right-click menu for a tool in the Quick View toolbar, including the 'Move to top Activity Bar' menu item](./about-tools-images/move-from-quickview-to-activitybar.png)
 
