@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/07/2023
+ms.date: 07/13/2023
 ---
 # About the list of tools
 
@@ -82,11 +82,7 @@ The **More Tools** (**+**) menu in the **Activity Bar** and in the **Quick View*
 <!-- ====================================================================== -->
 ## Activity Bar tools vs. Quick View tools
 
-In the **Command Menu**:
-
-* _Panel tools_ are tools which open in the **Activity Bar** by default.
-
-* _Quick View tools_ are tools which open in the **Quick View** toolbar by default, at the bottom of DevTools.  Press **Esc** to show or hide the **Quick View**.
+_Activity Bar tools_ are tools that open in the **Activity Bar** (upper pane) by default.  _Quick View_ tools are tools that open in the **Quick View** (lower pane) by default.  To show or hide **Quick View**, press **Esc**.
 
 The **Command Menu** first lists the **Activity Bar** tools (indicated by the **Panel** label), and then the **Quick View** tools:
 
