@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/02/2022
+ms.date: 02/02/2023
 ---
 # About the list of tools
 
