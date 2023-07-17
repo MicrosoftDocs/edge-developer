@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/30/2021
+ms.date: 07/17/2023
 ---
 # Change DevTools language settings
 
