@@ -276,9 +276,9 @@ To change the location of the **Activity Bar**, do either of the following:
 
 
 <!-- ------------------------------ -->
-#### Change the location of the Quick View toolbar
+#### Change the location of Quick View
 
-By default, the **Quick View** panel is located at the bottom of the DevTools window. You can also change the location of the **Quick View** toolbar to the right side of the DevTools window.
+By default, the **Quick View** panel is at the bottom of DevTools.  You can also put **Quick View** on the right side of DevTools.
 
 To display **Quick View**, press **Esc**.
 
@@ -488,7 +488,7 @@ Use **Quick View** to open a second tool below or to the right of the tool that'
 
 1. In the **Quick View** toolbar, click **More tools** (**+**), and then select a different tool from the list.
 
-For example, open the **Network** tool in the **Activity Bar**, above the **Rendering** tool in the **Quick View** panel:
+For example, open the **Rendering** tool in the **Quick View** panel, below the **Network** tool that's open in the **Activity Bar**:
 
 ![DevTools with the Network tool at the top, and the Rendering tool at the bottom](./overview-images/quick-view-tool.png)
 
