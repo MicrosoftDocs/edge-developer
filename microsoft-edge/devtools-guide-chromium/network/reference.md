@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/30/2023
+ms.date: 07/18/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,7 +34,9 @@ By default, DevTools records all network requests in the **Network** tool, so lo
 
 ![The Network panel](./reference-images/panel.png)
 
-### Stop recording network requests
+
+<!-- ------------------------------ -->
+#### Stop recording network requests
 
 To stop recording requests:
 
@@ -42,13 +44,17 @@ To stop recording requests:
 
 1. Press **Ctrl+E** (Windows, Linux) or **Command+E** (macOS) while the **Network** tool is in focus.
 
-### Clear requests
+
+<!-- ------------------------------ -->
+#### Clear requests
 
 Click the **Clear** (![Clear](./reference-images/clear-requests-icon.png)) button on the **Network** tool to clear all requests from the Requests table.
 
 ![The Clear button](./reference-images/clear-requests.png)
 
-### Save requests across page loads
+
+<!-- ------------------------------ -->
+#### Save requests across page loads
 
 To save requests across page loads, on the **Network** tool, select the **Preserve log** checkbox:
 
@@ -56,7 +62,9 @@ To save requests across page loads, on the **Network** tool, select the **Preser
 
 DevTools saves all requests until you disable **Preserve log**.
 
-### Capture screenshots during page load
+
+<!-- ------------------------------ -->
+#### Capture screenshots during page load
 
 You can capture screenshots to analyze what's displayed for users while waiting for your page to load.
 
@@ -98,7 +106,9 @@ To capture a screenshot:
 <!-- ====================================================================== -->
 ## Change loading behavior
 
-### Emulate a first-time visitor by disabling the browser cache
+
+<!-- ------------------------------ -->
+#### Emulate a first-time visitor by disabling the browser cache
 
 To emulate how a first-time user experiences your site, turn on the **Disable cache** checkbox.  DevTools disables the browser cache.  This feature more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.
 
@@ -106,7 +116,9 @@ The **Disable Cache** checkbox:
 
 ![The Disable Cache checkbox](./reference-images/disable-cache-checkbox.png)
 
-#### Disable the browser cache from the Network conditions tool
+
+<!-- ---------- -->
+###### Disable the browser cache from the Network conditions tool
 
 If you want to disable the cache while working in other DevTools panels, use the **Network conditions** tool:
 
@@ -122,16 +134,17 @@ If you want to disable the cache while working in other DevTools panels, use the
 
 <!--todo: add network condition section when available -->
 
-### Manually clear the browser cache
 
-To manually clear the browser cache at any time, right-click anywhere in the Requests table, and then click **Clear Browser Cache**.
+<!-- ------------------------------ -->
+#### Manually clear the browser cache
 
-Selecting **Clear Browser Cache**:
+To manually clear the browser cache, right-click the Requests table, and then select **Clear browser cache**:
 
-![Selecting Clear Browser Cache](./reference-images/clear-browser-cache-menu.png)
+![The 'Clear browser cache' right-click command](./reference-images/clear-browser-cache-menu.png)
 
 
-### Emulate offline
+<!-- ------------------------------ -->
+#### Emulate offline
 
 A class of web apps, named [Progressive Web Apps](../progressive-web-apps/index.md) (PWA), are able to function offline with the help of **service workers**.<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> You may find it useful to quickly simulate a device that has no data connection, when you are building this type of app.
 
@@ -142,7 +155,8 @@ The **Offline** dropdown menu:
 ![The Offline dropdown menu](./reference-images/offline-dropdown.png)
 
 
-### Emulate slow network connections
+<!-- ------------------------------ -->
+#### Emulate slow network connections
 
 Emulate Slow 3G, Fast 3G, and other connection speeds from the **No throttling** dropdown menu.
 
@@ -157,7 +171,8 @@ DevTools displays a warning icon next to the **Network** tool to remind you that
 See also [Simulate a slower network connection](../network/index.md#simulate-a-slower-network-connection) in _Inspect network activity_.
 
 
-#### Emulate slow network connections from the Network conditions tool
+<!-- ---------- -->
+###### Emulate slow network connections from the Network conditions tool
 
 If you want to throttle the network connection while working in other DevTools panels, use the **Network conditions** tool:
 
@@ -168,13 +183,16 @@ If you want to throttle the network connection while working in other DevTools p
 <!--todo: add network condition section when available -->
 
 
-### Manually clear browser cookies
+<!-- ------------------------------ -->
+#### Manually clear browser cookies
 
 To manually clear browser cookies at any time, right-click anywhere in the Requests table, and then select **Clear Browser Cookies**.
 
 ![Selecting 'Clear Browser Cookies'](./reference-images/clear-browser-cookies-menu.png)
 
-### Override the user agent
+
+<!-- ------------------------------ -->
+#### Override the user agent
 
 To manually override the user agent:
 
@@ -220,7 +238,9 @@ You can also set user agent client hints in [Emulate mobile devices (Device Emul
 
 You can filter requests by properties, by type, or by time, and you can hide data URLs.
 
-### Filter requests by properties
+
+<!-- ------------------------------ -->
+#### Filter requests by properties
 
 Use the **Filter** text box to filter requests by properties, such as the domain or size of the request.
 
@@ -250,7 +270,9 @@ The complete list of supported properties:
 | `set-cookie-value` | Displays resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populate the autocomplete with all of the cookie values that are found. |
 | `status-code` | Displays resources that match the specific HTTP status code.  DevTools populates the autocomplete dropdown menu with all of the status codes that are found. |
 
-### Filter requests by type
+
+<!-- ------------------------------ -->
+#### Filter requests by type
 
 To filter requests by request type, click the buttons on the **Network** panel:
 *  **XHR**
@@ -272,7 +294,9 @@ Use the **Type** filters to display JS, CSS, and Document resources:
 
 ![Using the Type filters to display JS, CSS, and Document resources](./reference-images/type-filters.png)
 
-### Filter requests by time
+
+<!-- ------------------------------ -->
+#### Filter requests by time
 
 Click and drag left or right on the **Overview** pane to only display requests that were active during that time frame.  The filter is inclusive.  Any request that was active during the highlighted time is shown.
 
@@ -280,7 +304,9 @@ Filtering out any requests that were inactive around 300 ms:
 
 ![Filtering out any requests that were inactive around 300 ms](./reference-images/overview-filter.png)
 
-### Hide data URLs
+
+<!-- ------------------------------ -->
+#### Hide data URLs
 
 [Data URLs](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) are small files embedded into other documents.  Any request that displays in the Requests table that starts with `data:` is a data URL.
 
@@ -294,11 +320,15 @@ To hide the requests, turn off the **Hide data URLs** checkbox:
 
 By default, the requests in the Requests table are sorted by initiation time, but you can sort the table using other criteria.
 
-### Sort by column
+
+<!-- ------------------------------ -->
+#### Sort by column
 
 Click the header of any column in the Requests to sort requests by that column.
 
-### Sort by activity phase
+
+<!-- ------------------------------ -->
+#### Sort by activity phase
 
 To change how the Waterfall sorts requests:
 
@@ -326,7 +356,9 @@ The following shows sorting the Waterfall by total duration.  The lighter portio
 
 So long as DevTools is open, it logs all requests in the **Network** tool.  Use the **Network** tool to analyze requests.
 
-### Display a log of requests
+
+<!-- ------------------------------ -->
+#### Display a log of requests
 
 Use the **Requests** table to display a log of all requests made while DevTools has been open.  To reveal more information about each item, click or hover on requests.
 
@@ -347,19 +379,25 @@ The Requests table displays the following columns by default:
 - **Fulfilled by**. Whether the request was fulfilled by the HTTP cache or the app's service worker.
 - [Waterfall](#display-the-timing-relationship-of-requests). A visual breakdown of each request's activity.
 
-#### Add or remove columns
+
+<!-- ---------- -->
+###### Add or remove columns
 
 Right-click the header of the Requests table and select a column name to hide or show it.  The currently displayed columns have checkmarks next to them.
 
 ![Adding a column to the Requests table](./reference-images/requests-add-column.png)
 
-#### Add columns for response headers
+
+<!-- ---------- -->
+###### Add columns for response headers
 
 To add a custom column to the Requests table, right-click the header of the Requests table and then select **Response Headers** > **Manage Header Columns**. The **Manage Header Columns** popup window opens.  Click the **Add custom header** button, enter the custom header name, and then click **Add**. 
 
 ![Adding a custom column to the Requests table](./reference-images/requests-add-custom-column.png)
 
-### Display the timing relationship of requests
+
+<!-- ------------------------------ -->
+#### Display the timing relationship of requests
 
 Use the Waterfall to display the timing relationships of requests.  The default organization of the Waterfall uses the start time of the requests.  So, requests that are farther to the left started earlier than the requests that are farther to the right.
 
@@ -395,7 +433,9 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 *  WebSocket opcodes are light-yellow.
 *  Errors are light-red.  -->
 
-### Display a preview of a response body
+
+<!-- ------------------------------ -->
+#### Display a preview of a response body
 
 To preview the contents of an HTTP response body:
 
@@ -404,7 +444,9 @@ To preview the contents of an HTTP response body:
 
    ![The Preview panel](./reference-images/resources-preview.png)
 
-### Display a response body
+
+<!-- ------------------------------ -->
+#### Display a response body
 
 To display the response body to a request:
 
@@ -413,7 +455,9 @@ To display the response body to a request:
 
    ![The Response panel](./reference-images/resources-response.png)
 
-### Display HTTP headers
+
+<!-- ------------------------------ -->
+#### Display HTTP headers
 
 To display HTTP header data about a request:
 
@@ -422,8 +466,10 @@ To display HTTP header data about a request:
 
    ![The Headers panel](./reference-images/resources-headers.png)
 
-<!-- This feature does not exist anymore.
-#### Display HTTP header source
+
+<!-- ----------
+###### Display HTTP header source
+this feature doesn't exist anymore
 
 By default, the **Headers** panel shows header names alphabetically.  To display the HTTP header names in the order received:
 
@@ -431,7 +477,9 @@ By default, the **Headers** panel shows header names alphabetically.  To display
 
 1. Click **view source**, next to the **Request Header** or **Response Header** section. -->
 
-### Display query string parameters
+
+<!-- ------------------------------ -->
+#### Display query string parameters
 
 To display the query string parameters of an HTTP request in a human-readable format:
 
@@ -442,7 +490,9 @@ To display the query string parameters of an HTTP request in a human-readable fo
 
    To display the source of the query string parameters instead, click **view source**.
 
-#### Display URL-encoded query string parameters
+
+<!-- ---------- -->
+###### Display URL-encoded query string parameters
 
 To display query string parameters in a human-readable format, but with encodings preserved:
 
@@ -450,7 +500,9 @@ To display query string parameters in a human-readable format, but with encoding
 1. In the sidebar, select the **Payload** tab.
 1. Click **view URL-encoded**.
 
-### Display cookies
+
+<!-- ------------------------------ -->
+#### Display cookies
 
 To display the cookies sent in the HTTP header of a request:
 
@@ -461,7 +513,9 @@ To display the cookies sent in the HTTP header of a request:
 
 <!--For more information about each of the columns, see [Fields](manage-data/cookies#fields).  TODO: add link when section is available -->
 
-### Display the timing breakdown of a request
+
+<!-- ------------------------------ -->
+#### Display the timing breakdown of a request
 
 To display the timing breakdown of a request:
 
@@ -474,7 +528,9 @@ For a faster way to access the data, see [Preview a timing breakdown](#preview-a
 
 For more information about each of the phases that may be displayed in the **Timing** panel, see [Timing breakdown phases explained](#timing-breakdown-phases-explained).
 
-#### Preview a timing breakdown
+
+<!-- ---------- -->
+###### Preview a timing breakdown
 
 To display a preview of the timing breakdown of a request, in the **Waterfall** column of the Requests table, hover on the entry for the request.
 
@@ -484,7 +540,9 @@ Previewing the timing breakdown of a request:
 
 To view the data without hovering, see the top of the present section, [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request).
 
-#### Timing breakdown phases explained
+
+<!-- ---------- -->
+###### Timing breakdown phases explained
 
 Each of these phases may appear in the **Timing** tab:
 
@@ -515,7 +573,9 @@ Each of these phases may appear in the **Timing** tab:
 
 - **Reading Push**. The browser is reading the local data that was previously received.
 
-### Display initiators and dependencies
+
+<!-- ------------------------------ -->
+#### Display initiators and dependencies
 
 To display the initiators and dependencies of a request, hold **Shift** and hover on the request in the **Requests** table.
 
@@ -526,7 +586,9 @@ To display the initiators and dependencies of a request, hold **Shift** and hove
 
 When the Requests table is ordered chronologically, if you hover on a line, the line preceding it displays a green request.  The green request is the initiator of the dependency.  If another green request is displayed on the line before that, that higher request is the initiator of the initiator.  And so on.
 
-### Display load events
+
+<!-- ------------------------------ -->
+#### Display load events
 
 DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the **Network** tool:
 
@@ -538,7 +600,9 @@ The `DOMContentLoaded` event is colored blue, and the `load` event is red.
 
 ![The locations of the DOMContentLoaded and load events on the Network panel](./reference-images/load-events.png)
 
-### Display the total number of requests
+
+<!-- ------------------------------ -->
+#### Display the total number of requests
 
 The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.
 
@@ -547,7 +611,9 @@ The total number of requests is listed in the **Summary** pane, at the bottom of
 > [!CAUTION]
 > This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests aren't counted.
 
-### Display the total download size
+
+<!-- ------------------------------ -->
+#### Display the total download size
 
 The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.
 
@@ -558,7 +624,9 @@ The total download size of requests is listed in the **Summary** pane, at the bo
 
 To verify how large resources are after the browser uncompresses each item, see [display the uncompressed size of a resource](#display-the-uncompressed-size-of-a-resource).
 
-### Display the stack trace that caused a request
+
+<!-- ------------------------------ -->
+#### Display the stack trace that caused a request
 
 After a JavaScript statement requests a resource, hover on the **Initiator** column to display the stack trace leading up to the request.
 
@@ -580,7 +648,9 @@ init();
 ```
 -->
 
-### Display the uncompressed size of a resource
+
+<!-- ------------------------------ -->
+#### Display the uncompressed size of a resource
 
 To see both the transferred size and the uncompressed size of a resource at the same time:
 
@@ -596,7 +666,9 @@ To see both the transferred size and the uncompressed size of a resource at the 
 <!-- ====================================================================== -->
 ## Export requests data
 
-### Save all network requests to a HAR file
+
+<!-- ------------------------------ -->
+#### Save all network requests to a HAR file
 
 To save all network requests to a HAR file:
 
@@ -609,7 +681,9 @@ To save all network requests to a HAR file:
 Once you save a HAR file, you can import it back into DevTools for analysis by drag-and-dropping the HAR file into the **Requests** table.
 <!--For more information, see also [HAR Analyzer](https://toolbox.alphabetapps.com/apps/har_analyzer)  Todo: add section link when content is available  -->
 
-### Copy one or more requests to the clipboard
+
+<!-- ------------------------------ -->
+#### Copy one or more requests to the clipboard
 
 Under the **Name** column of the Requests table, right-click a request, click **Copy**, and then select one of the following options:
 
@@ -625,7 +699,9 @@ Under the **Name** column of the Requests table, right-click a request, click **
 
 ![Selecting 'Copy Response'](./reference-images/copy-response.png)
 
-### Copy formatted response JSON to the clipboard
+
+<!-- ------------------------------ -->
+#### Copy formatted response JSON to the clipboard
 
 To copy the formatted JSON data of a JSON response:
 
@@ -637,7 +713,9 @@ To copy the formatted JSON data of a JSON response:
 
    You can now paste the value into any editor to review it.
 
-### Copy property values from network requests to your clipboard
+
+<!-- ------------------------------ -->
+#### Copy property values from network requests to your clipboard
 
 To copy property values from network requests to your clipboard:
 
@@ -657,13 +735,17 @@ To copy property values from network requests to your clipboard:
 
 You can expand or collapse sections of the **Network** tool UI to focus important information.
 
-### Hide the Filters pane
+
+<!-- ------------------------------ -->
+#### Hide the Filters pane
 
 By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, select **Filter** (![Filter](./reference-images/filter-icon.png)).
 
 ![The Hide Filters button](./reference-images/hide-filters-button.png)
 
-### Use large request rows
+
+<!-- ------------------------------ -->
+#### Use large request rows
 
 Use large rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.
 
@@ -671,7 +753,9 @@ To enable large rows, select the **Use large request rows** checkbox.  An exampl
 
 ![An example of large request rows in the Requests pane](./reference-images/large-request-rows.png)
 
-### Hide the Overview pane
+
+<!-- ------------------------------ -->
+#### Hide the Overview pane
 
 By default, DevTools displays the **Overview** pane.  To hide the **Overview** pane, clear the **Show Overview** checkbox.
 
