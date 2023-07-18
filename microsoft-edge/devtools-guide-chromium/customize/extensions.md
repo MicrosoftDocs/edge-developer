@@ -1,48 +1,52 @@
 ---
 title: Add custom UI to DevTools using extensions
-description: Learn to add custom panels in the DevTools main toolbar by using or creating Microsoft Edge extensions.
+description: Add a tab for a custom tool in the Activity Bar of DevTools by installing or creating a Microsoft Edge extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/17/2023
+ms.date: 07/18/2023
 ---
 # Add custom UI to DevTools using extensions
 
-In addition to the tools available in Microsoft Edge DevTools you can add new tools by installing Microsoft Edge extensions, or build your own extensions for your specific use cases.
-
-Microsoft Edge extensions can insert new tabs in the Activity Bar of DevTools.
+In addition to the tools available in Microsoft Edge DevTools, you can add new tools by installing Microsoft Edge extensions, or build your own extensions for your specific use cases.  Edge Add-ons extensions often extend the Microsoft Edge user interface with new buttons and panels, but can also extend DevTools, within Microsoft Edge, by adding new tool tabs in the Activity Bar.
 
 
 <!-- ====================================================================== -->
-## Install extensions in DevTools
+## Find an extension that extends DevTools
 
-Install extensions in Microsoft Edge by navigating to [Edge Add-ons](https://microsoftedge.microsoft.com/addons/). 
+The Edge Add-ons website has a **Developer tools** category that contains extensions that typically extend DevTools.  See the [Developer tools category](https://microsoftedge.microsoft.com/addons/category/Developer-Tools) on the Edge Add-ons website.
 
-These extensions often extend the Microsoft Edge user interface with new buttons and panels, but can also extend DevTools, within Microsoft Edge, by adding new tabs in the Activity Bar.
+There is no way to know if an extension extends the DevTools Activity Bar, without running it or looking at its source code, but the **Developer tools** category of the Edge Add-ons website is a good place to look.
 
-There is no way to know if an extension extends the DevTools Activity Bar or not without looking at its source code. But the Edge Add-ons website has a **Developer tools** category that contains extensions that often extend DevTools. See the [Developer tools category](https://microsoftedge.microsoft.com/addons/category/Developer-Tools) on the Edge Add-ons website for more details.
 
-To install a DevTools extension:
+<!-- ====================================================================== -->
+## Install an extension in DevTools
 
-1. Navigate to the extension you want to install on the Edge Add-ons website. For example, go to the [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) extension.
+To install an Edge Add-ons extension that extends DevTools:
 
-1. Click the **Get** button, and then confirm the installation dialog:
+1. Go to the [Edge Add-ons](https://microsoftedge.microsoft.com/addons/) website, such as the [Developer tools category](https://microsoftedge.microsoft.com/addons/category/Developer-Tools), and go to the extension you want to install.  For example, go to the [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) extension:
 
-    ![The React Developer Tools page on the Edge Add-ons website](./extensions-images/react-add-on-listing.png)
+   ![The React Developer Tools page on the Edge Add-ons website](./extensions-images/react-add-on-listing.png)
 
-1. Open a new tab and go to a page that uses React. For example, use the [TodoMVC React example page](https://todomvc.com/examples/react/#/).
+1. Click the **Get** button.  An installation dialog opens, **Add \<extension name\> to Microsoft Edge?**
 
-1. Open DevTools by pressing **F12**. Two new tabs are displayed in the Activity Bar: **Components** and **Profiler**. If you don't see the new tabs, make the DevTools window wider, or click **More tools** (![More tools icon](./extensions-images/more-tools-icon.png)).
+1. Click the **Add extension** button.  A dialog indicates that the extension has been installed, and the Extensions (![Extensions icon](./extensions-images/extensions-icon.png)) button now lists the extension.
 
-    ![DevTools, showing the 2 new React extension panels](./extensions-images/react-extensions-panels.png)
+1. Open a new tab or window, and then go to a page that contains content that's relevant for the DevTools extension.  For example, use the [TodoMVC React example page](https://todomvc.com/examples/react/#/), or go to a live [Microsoft Edge Demos repo](https://github.com/MicrosoftEdge/Demos#demos) page, such as [demo-to-do](https://microsoftedge.github.io/Demos/demo-to-do/).
 
-1. Click **Components** or **Profiler** to use the React Developer Tools extension.
+1. Open DevTools, such as by pressing **F12**.  In the case of this React extension, two new tabs are opened in the Activity Bar: **Components** and **Profiler**:
+
+   ![DevTools, showing the two new React extension tool tabs](./extensions-images/react-extensions-panels.png)
+
+1. If the new tabs aren't displayed on the Activity Bar, make DevTools wider, or click the **More tools** (![More tools icon](./extensions-images/more-tools-icon.png)) button, and then select the tool:
+
+   ![More tools button in DevTools to add tool to Activity Bar](./extensions-images/more-tools-add-tool.png)
 
 
 <!-- ====================================================================== -->
 ## Create a DevTools extension
 
-You can create your own DevTools extension to add new tabs in the Activity Bar and interact with the inspected page.
+You can create your own DevTools extension to add new tabs in the Activity Bar of DevTools and to interact with the inspected page.
 
-To learn how to create a DevTools extension, navigate to [Create a DevTools extension](../../extensions-chromium/developer-guide/devtools-extension.md).
+See [Create a DevTools extension](../../extensions-chromium/developer-guide/devtools-extension.md).
