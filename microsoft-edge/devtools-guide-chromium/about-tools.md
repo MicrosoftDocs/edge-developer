@@ -11,16 +11,16 @@ ms.date: 07/17/2023
 
 DevTools provides more than 30 tools:
 
-*  Two **Activity Bar** icons, for the **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)).
-*  Three permanent **Activity Bar** tabs, for the **Elements**, **Console**, and **Sources** tools.
-*  Optional tabs, for optional tools such as the **Welcome**, and **Network** tools.
-*  More optional tools, on the **More Tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu, such as the **3D View** and **Detached Elements** tools.
+*  Two icons on the **Activity Bar**, for the **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)).
+*  Three permanent tool tabs on the **Activity Bar**, for the **Elements**, **Console**, and **Sources** tools.
+*  Optional tabs, for optional tools such as the **Welcome** and **Network** tools.
+*  More optional tools, on the **More tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu, such as the **3D View** and **Detached Elements** tools.
 
-![All of the default tools of DevTools, including two icons and eight tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
+![The default tools, including two icons and eight tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
 
 The following features are additional ways to access the tools:
 
-*  The **Quick View** is an additional toolbar and area to hold tool tabs.
+*  The **Quick View** panel is an additional toolbar and area to hold tools, below or to the right of the **Activity Bar** panel.
 *  The **Command Menu** is a way to directly use features of tools.
 *  The **Settings** pages can turn on additional features of tools.
 
@@ -67,22 +67,27 @@ Microsoft Edge DevTools includes the following tools.
 | **WebAuthn** tool | Use the **WebAuthn** tool to create and interact with software-based virtual authenticators. | [Emulate authenticators and debug WebAuthn](webauthn/index.md) |
 | **Welcome** tool | The **Welcome** tool opens when you first open DevTools.  It displays links to developer docs, latest features, Release Notes, and an option to contact the Microsoft Edge DevTools team. | [Welcome tool](welcome/welcome-tool.md) |
 
-<!-- when no longer experimental, move into table:
-| **CSP Violations** tool | Displays any Content Security Policy (CSP) violations that are detected on the inspected webpage. | [CSP Violations tool](csp-violations/csp-violations-tool.md) |
-https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
--->
+
+<!-- ------------------------------ -->
+#### Experimental tools
+
+Microsoft Edge DevTools potentially includes additional tools, if you select the experiment's check box in DevTools **Settings > Experiments**.  For example:
+
+| Tool | Purpose | Article |
+| --- | --- | --- |
+| **CSP Violations** tool | Displays any Content Security Policy (CSP) violations that are detected on the inspected webpage. | [Show CSP Violations view](./experimental-features/index.md#show-csp-violations-view) in _Experimental features_.<!--[CSP Violations tool](./csp-violations/csp-violations-tool.md)--> |
 
 
 <!-- ====================================================================== -->
 ## The More Tools menus
 
-The **More Tools** (**+**) menu in the **Activity Bar** and in the **Quick View** toolbar is dynamic: it omits any tab tools that are open on that toolbar.
+The **More tools** (**+**) menu in the **Activity Bar** and in the **Quick View** toolbar is dynamic: it omits any tab tools that are open on that toolbar.
 
 
 <!-- ====================================================================== -->
 ## Activity Bar tools vs. Quick View tools
 
-_Activity Bar tools_ are tools that open in the **Activity Bar** (upper pane) by default.  _Quick View_ tools are tools that open in the **Quick View** (lower pane) by default.  To show or hide **Quick View**, press **Esc**.
+_Activity Bar tools_ are tools that open in the **Activity Bar** (upper pane) by default.  _Quick View_ tools are tools that open in the **Quick View** (lower pane) by default.  To show or hide **Quick View**, when focus is on DevTools, press **Esc**.
 
 The **Command Menu** first lists the **Activity Bar** tools (indicated by the **Panel** label), and then the **Quick View** tools:
 
@@ -100,24 +105,24 @@ To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Comma
 
 To close a tool tab that's on a toolbar, right-click the tab, and then select **Remove from Activity Bar** or **Remove from Quick View**:
 
-![The contextual menu for the Network tool, which is displayed in the Activity Bar. The menu contains the Remove from Activity Bar item](./about-tools-images/remove-from-activitybar.png)
+![The right-click menu for the Network tool in the Activity Bar, including the 'Remove from Activity Bar' command](./about-tools-images/remove-from-activitybar.png)
 
-The **Elements**, **Console**, and **Sources** tool are permanent tabs and cannot be closed.
+The **Elements**, **Console**, and **Sources** tools are permanent tabs and cannot be closed or moved from the Activity Bar to the Quick View panel.  You can drag their tabs to reorder them in the **Activity Bar**.
+
+The **Console** tool is also a permanent tab on the Quick View toolbar.  In contrast, the **Issues** tool on the Quick View toolbar can be removed.
 
 
 <!-- ====================================================================== -->
 ## Restoring the default tool tabs
 
-To restore all of the default tabs in the **Activity Bar** and **Quick View**:
+To restore all of the default tool tabs in the **Activity Bar** and **Quick View**:
 
 1. In DevTools, select **Customize and control DevTools** (![Customize and control DevTools icon](./about-tools-images/customize-devtools-icon-light-theme.png)) > **Settings** (![Settings icon](./about-tools-images/settings-gear-icon-light-theme.png)) > **Preferences**.
 
-1. Click the **Restore defaults and refresh** button.
-
-   DevTools restarts and the default tabs appear in both toolbars.
+1. Click the **Restore defaults and refresh** button.  DevTools restarts, and the default tabs appear in both toolbars.
 
 
 <!-- ====================================================================== -->
 ## See also
  
-* [Overview of DevTools](overview.md) - Similar to the present article, but broader coverage, with a top-level introduction of DevTools.
+* [Overview of DevTools](overview.md) - Similar to the present article, but broader coverage, with a top-level introduction to DevTools.
