@@ -22,9 +22,7 @@ ms.date: 07/18/2023
    limitations under the License.  -->
 # Network features reference
 
-This article is an outline of the various features of the **Network** tool, which is used for network analysis and inspecting network activity for a webpage.
-
-See also [Inspect network activity](index.md), which is a step-by-step tutorial walkthrough of the **Network** tool.
+This article is a feature-driven inventory of the **Network** tool.  Use the **Network** tool to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](index.md).
 
 
 <!-- -------------- -->
@@ -810,6 +808,12 @@ To enable large rows, select the **Use large request rows** checkbox.  An exampl
 By default, DevTools displays the **Overview** pane.  To hide the **Overview** pane, clear the **Show Overview** checkbox.
 
 ![The Show Overview checkbox](./reference-images/show-overview-off.png)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Inspect network activity](index.md) - step-by-step walkthrough and introduction to the **Network** tool.
 
 
 <!-- ====================================================================== -->
