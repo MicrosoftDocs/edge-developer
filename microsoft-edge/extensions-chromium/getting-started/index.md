@@ -55,7 +55,7 @@ The zip file includes HTML, CSS, JavaScript, and image files.  One more file is 
 
 Web servers contain your web bundle.  A browser navigates to URLs on the server, and downloads the file to render in the browser.  A browser navigates using certificates, configuration files, and so on.  If an `index.html` file is specified, the file is stored at a special location on the web server.
 
-When you use an extension, the tab page of your browser gets to the web bundle of your extension using the extension runtime.  The extension runtime serves the files from the URL `extension://{some-long-unique-identifier}/index.html`, where `{some-long-unique-identifier}` is a unique identifier assigned to the extension when during installation.  Each extension uses a different unique identifier.  Each identifier points to the web bundle that is installed in your browser.
+When you use an extension, the tab page of your browser gets to the web bundle of your extension using the extension runtime.  The extension runtime serves the files from the URL `extension://{some-long-unique-identifier}/index.html`, where `{some-long-unique-identifier}` is a unique identifier assigned to the extension during installation.  Each extension uses a different unique identifier.  Each identifier points to the web bundle that is installed in your browser.
 
 #### Communication with tabs and browser toolbar
 
