@@ -181,9 +181,6 @@ If Microsoft Edge finds the registry key at any of the previously listed locatio
 The search order for the registry locations is:
 
 ```output
-HKEY_CURRENT_USER\SOFTWARE\WOW6432Node\Microsoft\Edge\NativeMessagingHosts\
-HKEY_CURRENT_USER\SOFTWARE\WOW6432Node\Chromium\NativeMessagingHosts\
-HKEY_CURRENT_USER\SOFTWARE\WOW6432Node\Google\Chrome\NativeMessagingHosts\
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\
 HKEY_CURRENT_USER\SOFTWARE\Chromium\NativeMessagingHosts\
 HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\
@@ -191,13 +188,19 @@ HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Edge\NativeMessagingHosts\
 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Chromium\NativeMessagingHosts\
 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\NativeMessagingHosts\
+
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\
 HKEY_LOCAL_MACHINE\SOFTWARE\Chromium\NativeMessagingHosts\
 HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 ```
 
-> [!NOTE]
-> If you have extensions on the Microsoft Edge Add-ons and the Chrome Webstore, you must add the extension IDs corresponding to both the stores in the `allowed_origins` of the native messaging host manifest file.  This is required because only the native messaging host manifest file that corresponds to the first registry location found is read.
+#### WOW6432Node registry node
+
+The `HKEY_CURRENT_USER\SOFTWARE\WOW6432Node` registry node is not searched on 64-bit machines, due to the way registry works on them. For more information, see [Registry Keys Affected by Windows Installations That Include Windows on Windows (WOW) Support For Multiple Processor Architectures](/windows/win32/winprog64/shared-registry-keys).
+
+#### Extension IDs required for both stores
+
+If you have extensions on the Microsoft Edge Add-ons and the Chrome Webstore, you must add the extension IDs corresponding to both the stores in the `allowed_origins` of the native messaging host manifest file.  This is required because only the native messaging host manifest file that corresponds to the first registry location found is read.
 
 ##### [macOS](#tab/macos/)
 
