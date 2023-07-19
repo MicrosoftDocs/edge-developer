@@ -120,25 +120,22 @@ The **Disable Cache** checkbox:
 <!-- ---------- -->
 ###### Disable the browser cache from the Network conditions tool
 
-If you want to disable the cache while working in other DevTools panels, use the **Network conditions** tool:
+From the **Network** tool, you can open the **Network conditions** tool in the Quick View panel and then disable the browser cache from there:
 
-1. Open the [Command Menu](../command-menu/index.md), by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
+1. In the **Network** tool, click the **More network conditions** (![More network conditions icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the Quick View panel.
 
-1. Type **Network conditions**, and then press **Enter**.
+1. In the **Network conditions** tool, select the **Disable cache** checkbox:
 
-1. Open the **Network conditions** drawer.
+   ![The Network Conditions tool in the Quick View panel, with the 'Disable cache' checkbox selected](./reference-images/network-conditions-cache.png)
 
-1. Select or clear the **Disable cache** checkbox:
-
-   ![The Network Conditions tool, displayed in the Quick View toolbar, with the Disable cache checkbox selected](./reference-images/network-conditions-cache.png)
-
-<!--todo: add network condition section when available -->
+See also:
+* [Network conditions tool](../network-conditions/network-conditions-tool.md)
 
 
 <!-- ------------------------------ -->
 #### Manually clear the browser cache
 
-To manually clear the browser cache, right-click the Requests table, and then select **Clear browser cache**:
+To manually clear the browser cache at any time, right-click anywhere in the **Requests** table, and then select **Clear browser cache**:
 
 ![The 'Clear browser cache' right-click command](./reference-images/clear-browser-cache-menu.png)
 
@@ -172,23 +169,24 @@ See also [Simulate a slower network connection](../network/index.md#simulate-a-s
 
 
 <!-- ---------- -->
-###### Emulate slow network connections from the Network conditions tool
+###### Emulate slow network connections from the Network Conditions tool
 
-If you want to throttle the network connection while working in other DevTools panels, use the **Network conditions** tool:
+From the **Network** tool, you can open the **Network conditions** tool in the Quick View panel and then throttle the network connection from there:
 
-1. Open the **Network conditions** tool.
+1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the Quick View panel.
 
-1. Select your connection speed from the **Throttling** menu.
+1. In the **Network conditions** tool, in the **Network throttling** menu, select a connection speed.
 
-<!--todo: add network condition section when available -->
+See also:
+* [Network conditions tool](../network-conditions/network-conditions-tool.md)
 
 
 <!-- ------------------------------ -->
 #### Manually clear browser cookies
 
-To manually clear browser cookies at any time, right-click anywhere in the Requests table, and then select **Clear Browser Cookies**.
+To manually clear browser cookies at any time, right-click anywhere in the Requests table, and then select **Clear browser cookies**.
 
-![Selecting 'Clear Browser Cookies'](./reference-images/clear-browser-cookies-menu.png)
+![The 'Clear browser cookies' right-click command in the Requests table of the Network tool](./reference-images/clear-browser-cookies-menu.png)
 
 
 <!-- ------------------------------ -->
@@ -196,9 +194,9 @@ To manually clear browser cookies at any time, right-click anywhere in the Reque
 
 To manually override the user agent:
 
-1. Open the **Network conditions** tool.
+1. In the **Network** tool, click the **More network conditions** (![More network conditions icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the Quick View panel.
 
-1. Clear the **Select automatically** checkbox.
+1. In the **Network conditions** tool, clear the **Use browser default** checkbox.  The other controls become available.
 
 1. Select a user agent option from the menu, or enter a custom user agent in the text box.
 
@@ -206,31 +204,33 @@ To manually override the user agent:
 <!-- ====================================================================== -->
 ## Set user agent client hints
 
-If your site employs [user agent client hints](../../web-platform/user-agent-guidance.md), use the **Network conditions** tool to provide different user agent client hints.
+If your site employs user agent client hints and you want to test them, you can set them either in the **Network conditions** tool or in [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
 
-1. In DevTools, open the **Network conditions** tool.
+To set user agent client hints in the **Network conditions** tool:
 
-1. In the **User agent** section, clear the **Use browser default** checkbox, then select **User agent client hints**.
+1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the Quick View panel.
+
+1. In the **User agent** section, clear the **Use browser default** checkbox, and then expand **User agent client hints**:
 
    ![Setting user agent client hints](./reference-images/network-conditions-user-agent-client-hints.png)
 
-1. Accept the default value of **Custom...**, or select a predefined browser and device from the dropdown list.
+1. In the **User agent** dropdown list, select a predefined browser and device.  Or, accept the default value of **Custom...**, and enter information in the **Enter a custom user agent** text box.
 
-1. For either choice, set User agent client hints as follows:
-    * **Brand** and **Version** such as *Edge* and *92*.  Click **+ Add Brand** to add multiple brand and version pairs.
-    * **Full Browser Version** such as *92.0.1111.0*.
-    * **Platform** and **Version** such as *Windows* and *10.0*.
-    * **Architecture** such as *x86*.
-    * **Device model** such as *Galaxy Nexus*.
+1. For either choice (predefined or custom), specify user agent client hints as follows:
+   * **Brand** and **Version** such as *Edge* and *92*.  To add multiple brand/version pairs, click **+ Add Brand**.
+   * **Full Browser Version** such as *92.0.1111.0*.
+   * **Platform** and **Version** such as *Windows* and *10.0*.
+   * **Architecture** such as *x86*.
+   * **Device model** such as *Galaxy Nexus*.
 
-    > [!NOTE]
-    > Set or change any of the user agent client hints. There are no required values.
+   You can set or change any of the user agent client hints; there are no required values.
 
 1. Select **Update**.
 
-1. To verify changes, click **Console** and type `navigator.userAgentData`. Expand the results as needed to view changes to user agent data.
+1. To verify changes, click **Console** and type `navigator.userAgentData`.  Expand the results as needed to view changes to user agent data.
 
-You can also set user agent client hints in [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
+See also:
+* [User-Agent Client Hints](../../web-platform/user-agent-guidance.md#user-agent-client-hints) in _Detecting Microsoft Edge from your website_.
 
 
 <!-- ====================================================================== -->
