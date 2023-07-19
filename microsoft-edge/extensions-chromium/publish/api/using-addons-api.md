@@ -5,11 +5,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/29/2022
+ms.date: 07/19/2023
 ---
 # Using the Microsoft Edge Add-ons API 
 
-The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons to the Microsoft Edge Add-ons website.  You'll use the **Publish API** page at Partner Center to work with these endpoints.
+The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing new versions of your add-ons to the Microsoft Edge Add-ons website.  You'll use the **Publish API** page at Partner Center to work with these endpoints.
 
 To submit suggestions and feedback, enter an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
 
@@ -46,17 +46,17 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 
 1. On the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes to finish.
 
+1. The API credentials have now been created; you've enabled or renewed the API.  The **Client ID**, **Client secret**, **Expiry date**, and **Access token URL** are now displayed on the Publish APIs page:
+
    ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)
-
- > [!IMPORTANT]
-> You can generate multiple client secrets for your client ID.  For example, you can create multiple secrets for multiple projects.
-
-   The API credentials have now been created; you've enabled or renewed the API.  The **Client ID**, **Client secret**, **Expiry date**, and **Access token URL** are now displayed on the Publish APIs page.
 
 1. Write down the **Client ID**, **Client secret** and the **Access token URL**.  You'll use these values in the next step, to get an access token.
 
 > [!IMPORTANT]
 > Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials). This particular secret isn't shown again.
+
+Note that you can generate multiple client secrets for your client ID.  For example, you can create multiple secrets for multiple projects.
+
 
 <!-- ====================================================================== -->
 ## Retrieving the access token
