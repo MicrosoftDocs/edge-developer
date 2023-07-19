@@ -27,6 +27,56 @@ This article is an outline of the various features of the **Network** tool, whic
 See also [Inspect network activity](index.md), which is a step-by-step tutorial walkthrough of the **Network** tool.
 
 
+<!-- -------------- -->
+**Detailed contents:**
+<!-- omit h6 (3rd level).  compare Table of contents in https://developer.chrome.com/docs/devtools/network/reference/ -->
+
+* [Record network requests](#record-network-requests)
+   * [Stop recording network requests](#stop-recording-network-requests)
+   * [Clear requests](#clear-requests)
+   * [Save requests across page loads](#save-requests-across-page-loads)
+   * [Capture screenshots during page load](#capture-screenshots-during-page-load)
+* [Change loading behavior](#change-loading-behavior)
+   * [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache)
+   * [Manually clear the browser cache](#manually-clear-the-browser-cache)
+   * [Emulate offline](#emulate-offline)
+   * [Emulate slow network connections](#emulate-slow-network-connections)
+   * [Manually clear browser cookies](#manually-clear-browser-cookies)
+   * [Override the user agent](#override-the-user-agent)
+* [Set user agent client hints](#set-user-agent-client-hints)
+* [Filter requests](#filter-requests)
+   * [Filter requests by properties](#filter-requests-by-properties)
+   * [Filter requests by type](#filter-requests-by-type)
+   * [Filter requests by time](#filter-requests-by-time)
+   * [Hide data URLs](#hide-data-urls)
+* [Sort requests](#sort-requests)
+   * [Sort by column](#sort-by-column)
+   * [Sort by activity phase](#sort-by-activity-phase)
+* [Analyze requests](#analyze-requests)
+   * [Display the timing relationship of requests](#display-the-timing-relationship-of-requests)
+   * [Display a preview of a response body](#display-a-preview-of-a-response-body)
+   * [Display a response body](#display-a-response-body)
+   * [Display HTTP headers](#display-http-headers)
+   * [Display query string parameters](#display-query-string-parameters)
+   * [Display cookies](#display-cookies)
+   * [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request)
+   * [Display initiators and dependencies](#display-initiators-and-dependencies)
+   * [Display load events](#display-load-events)
+   * [Display the total number of requests](#display-the-total-number-of-requests)
+   * [Display the total download size](#display-the-total-download-size)
+   * [Display the stack trace that caused a request](#display-the-stack-trace-that-caused-a-request)
+   * [Display the uncompressed size of a resource](#display-the-uncompressed-size-of-a-resource)
+* [Export requests data](#export-requests-data)
+   * [Save all network requests to a HAR file](#save-all-network-requests-to-a-har-file)
+   * [Copy one or more requests to the clipboard](#copy-one-or-more-requests-to-the-clipboard)
+   * [Copy formatted response JSON to the clipboard](#copy-formatted-response-json-to-the-clipboard)
+   * [Copy property values from network requests to your clipboard](#copy-property-values-from-network-requests-to-your-clipboard)
+* [Change the layout of the Network panel](#change-the-layout-of-the-network-panel)
+   * [Hide the Filters pane](#hide-the-filters-pane)
+   * [Use large request rows](#use-large-request-rows)
+   * [Hide the Overview pane](#hide-the-overview-pane)
+
+
 <!-- ====================================================================== -->
 ## Record network requests
 
