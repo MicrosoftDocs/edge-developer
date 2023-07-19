@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/01/2023
+ms.date: 07/19/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -91,14 +91,74 @@ SDKs/packages are Prerelease or Release
 
 The following sections cover either a Release SDK package (1.0.####.##) or a Prerelease SDK package (1.0.####-prerelease).
 
-<!-- maintenance notes: version # patterns to check:
-## 1.0.####.##
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+<!-- maintenance notes: version # patterns to check: -->
+## 1.0.1901.177
 
-## 1.0.####-prerelease
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
+Release Date: July 24, 2023
+
+[NuGet package for WebView2 SDK 1.0.1901.177](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1901.177)
+
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 115.0.1901.177 or higher.
+
+<!-- ------------------------------ -->
+#### General
+
+
+<!-- ------------------------------ -->
+###### Promotions
+
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
+<!-- ------------------------------ -->
+* `NavigationKind` gets the navigation kind of each navigation, such as Back/Forward, Reload, or navigation to a new document. 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2NavigationStartingEventArgs` Class:
+   * [CoreWebView2NavigationStartingEventArgs.NavigationKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs.navigationkind?view=webview2-dotnet-1.0.1905-prerelease&preserve-view=true)
+* [CoreWebView2NavigationKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2navigationkind?view=webview2-dotnet-1.0.1905-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2NavigationStartingEventArgs` Class:
+   * [CoreWebView2NavigationStartingEventArgs.NavigationKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs?view=webview2-winrt-1.0.1905-prerelease&preserve-view=true#navigationkind)
+* [CoreWebView2NavigationKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationkind?view=webview2-winrt-1.0.1905-prerelease&preserve-view=true)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2NavigationStartingEventArgs3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs3?view=webview2-1.0.1905-prerelease&preserve-view=true)
+    * [ICoreWebView2NavigationStartingEventArgs3::get_NavigationKind property](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs3?view=webview2-1.0.1905-prerelease&preserve-view=true#get_navigationkind)<!--no put-->
+* [COREWEBVIEW2_NAVIGATION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1905-prerelease&preserve-view=true#corewebview2_navigation_kind)
+
+---
+
+
+<!-- ------------------------------ -->
+* The `ServiceWorkers` enum value in the `BrowsingDataKinds` enum specifies service workers that are registered for an origin.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2BrowsingDataKinds` Enum:
+   * [CoreWebView2BrowsingDataKinds.ServiceWorkers Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds?view=webview2-dotnet-1.0.1905-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2BrowsingDataKinds` Enum:
+   * [CoreWebView2BrowsingDataKinds.ServiceWorkers Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browsingdatakinds?view=webview2-winrt-1.0.1905-prerelease&preserve-view=true)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `COREWEBVIEW2_BROWSING_DATA_KINDS` enum:
+   * [COREWEBVIEW2_BROWSING_DATA_KINDS_SERVICE_WORKERS enum value](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1905-prerelease&preserve-view=true#corewebview2_browsing_data_kinds)
+
+---
+
+<!--
+## 1.0.1988-prerelease
+Release Date: July TBD, 2023
+[NuGet package for WebView2 SDK 1.0.1988-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1988-prerelease)
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 117.0.1988.0 or higher.
 -->
 
 
