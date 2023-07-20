@@ -265,10 +265,9 @@ The heap profiler has the ability to reflect bidirectional dependencies between 
 DOM leaks may be bigger than you think.  Consider the following sample.  When is the `#tree` garbage-collected?
 
 ```javascript
-var select = document.querySelector;
-var treeRef = select("#tree");
-var leafRef = select("#leaf");
-var body = select("body");
+var treeRef = document.querySelector("#tree");
+var leafRef = document.querySelector("#leaf");
+var body = document.querySelector("body");
 
 body.removeChild(treeRef);
 
