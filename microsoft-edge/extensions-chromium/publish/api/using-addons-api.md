@@ -55,7 +55,7 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 > [!IMPORTANT]
 > Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials). This particular secret isn't shown again.
 
-Note that you can generate multiple client secrets for your client ID.  For example, you can create multiple secrets for multiple projects.
+You can generate multiple client secrets for your client ID.  For example, you can create multiple secrets for multiple projects.
 
 
 <!-- ====================================================================== -->
