@@ -1,5 +1,5 @@
 ---
-title: Interop of native-side and web-side code
+title: Interop of native and web code
 description: Embed web content into native applications using WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 2/24/2022
 ---
-# Interop of native-side and web-side code
+# Interop of native and web code
 
 The Microsoft Edge WebView2 control lets you embed web content into native applications.  You can use WebView2 in different ways, depending on what you need to accomplish.  This article describes how to communicate using simple messages, JavaScript code, and native objects.
 

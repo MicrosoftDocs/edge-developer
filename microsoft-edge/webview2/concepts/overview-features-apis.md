@@ -85,7 +85,7 @@ Some common use cases include:
 *  Run a dedicated JavaScript file on the web side of an application.
 
 See also:
-* [Interop of native-side and web-side code](../how-to/communicate-btwn-web-native.md)
+* [Interop of native and web code](../how-to/communicate-btwn-web-native.md)
 * [Call web-side code from native-side code](../how-to/javascript.md)
 * [Call native-side code from web-side code](../how-to/hostobject.md)
 * [Call native-side WinRT code from web-side code](../how-to/winrt-from-js.md)

@@ -249,7 +249,7 @@ window.chrome.webview.addEventListener('message', arg => {
 ---
 
 See also:
-* [Interop of native-side and web-side code](/microsoft-edge/webview2/how-to/communicate-btwn-web-native)
+* [Interop of native and web code](/microsoft-edge/webview2/how-to/communicate-btwn-web-native)
 * [Web messaging](./overview-features-apis.md#web-messaging) in _Overview of WebView2 features and APIs_.
 
 
