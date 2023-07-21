@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.date: 07/12/2023
 ---
 # Run JavaScript in the Console
 

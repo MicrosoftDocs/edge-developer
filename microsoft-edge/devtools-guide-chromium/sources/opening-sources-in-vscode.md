@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/22/2021
+ms.date: 07/12/2023
 ---
 # Opening source files in Visual Studio Code
 
@@ -22,7 +22,15 @@ First, select DevTools > **Settings** > **Experiments** > **Open source files in
 
 With this experiment enabled, suppose that in Microsoft Edge, you go to a local server (such as `http://localhost` or `http://127.0.0.1`), or open a local file.
 
-![Microsoft Edge with a local file open](./opening-sources-in-vscode-images/experiment-sources-in-code-local-project.msft..png)
+![Microsoft Edge with a local file open](./opening-sources-in-vscode-images/experiment-sources-in-code-local-project.png)
+
+<!-- todo:
+instead of using 
+https://github.com/codepo8/simple-to-do
+use:
+https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do
+Rewrite article as numbered action steps -> results.
+-->
 
 When you open DevTools, you are prompted to identify your root folder.  You can opt out by selecting **Close** (`x`) or selecting the `Don't show again` button.  You can get more information by selecting the `Learn more` link.
 
@@ -44,7 +52,7 @@ DevTools opens an instance of Visual Studio Code and shows all the files in the 
 
 ![Visual Studio Code open with the root folder files and the selected file open](./opening-sources-in-vscode-images/experiment-sources-in-code-editor-open.png)
 
-Any changes that you make to the file in DevTools will now be synced to Visual Studio Code.  For example, if you add a `background: green` rule to the styles of the body, the same CSS rule will automatically be added to the `base.css` file in the code editor of Visual Studio Code.
+Any changes that you make to the file in DevTools will now be synced to Visual Studio Code.  For example, if you change the `background` to be `green` for the styles of the body, the same CSS rule will automatically be added to the `base.css` file in the code editor of Visual Studio Code.
 
 ![Changes to the code in the Styles tool now are reflected in the source code in Visual Studio Code](./opening-sources-in-vscode-images/experiment-sources-in-code-code-synced.png)
 

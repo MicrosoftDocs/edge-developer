@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/16/2021
+ms.date: 07/18/2023
 ---
 # Analyze pages using the Inspect tool
 

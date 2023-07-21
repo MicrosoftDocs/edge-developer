@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 07/12/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -89,7 +89,7 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 <!-- ====================================================================== -->
 ## Delete all cache data
 
-1. Open **Application** > **Clear storage**.
+1. Open **Application** > **Storage**.
 
 1. Make sure that the **Cache storage** checkbox is selected.
 

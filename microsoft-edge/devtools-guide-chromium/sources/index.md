@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/31/2023
+ms.date: 07/18/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -91,7 +91,7 @@ Use the **Navigator** pane (on the left) to navigate among the resources that ar
 
 ![The Navigator pane](./index-images/navigator-pane.png)
 
-To access any hidden tabs of the Navigator pane, select ![More tabs](./index-images/more-tabs-icon.png) (**More tabs**).
+To access any hidden tabs of the Navigator pane, click the **More tabs** (![More tabs](./index-images/more-tabs-icon.png)) button.
 
 The following subsections cover the Navigator pane:
 * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
@@ -119,10 +119,10 @@ To load a file into a new tab of the browser, or to display other actions, right
 ###### Icons in the Page tab
 
 The **Page** tab uses the following icons:
-*  The **window** icon, along with the label `top`, represents the main document frame, which is an [HTML frame](https://w3.org/TR/html401/present/frames.html).
-*  The **cloud** icon represents an [origin](https://html.spec.whatwg.org/multipage/origin.html#origin).
-*  The **folder** icon represents a directory.
-*  The **page** icon represents a resource.
+*  The **window** icon, along with the label `top`, represents the main document frame, which is an [HTML frame](https://w3.org/TR/html401/present/frames.html): ![The window icon](./index-images/window-icon.png)
+*  The **cloud** icon represents an [origin](https://html.spec.whatwg.org/multipage/origin.html#origin): ![The cloud icon](./index-images/cloud-icon.png)
+*  The **folder** icon represents a directory: ![The folder icon](./index-images/folder-icon.png)
+*  The **page** icon represents a resource: ![The page icon](./index-images/file-icon.png)
 
 
 ###### Group files by folder or as a flat list
@@ -140,7 +140,8 @@ To change how resources are grouped:
 
 Use the **Filesystem** tab of the **Navigator** pane to add files to a Workspace, so that changes you make in DevTools get saved to your local file system.
 
-A file that's in a Workspace is indicated by a green dot next to the file name, throughout DevTools.
+<!-- Green dots do not appear anymore. -->
+<!-- A file that's in a Workspace is indicated by a green dot next to the file name, throughout DevTools. -->
 
 ![The Filesystem tab, for a Workspace](./index-images/sources-filesystem-tab.png)
 
@@ -299,15 +300,17 @@ To find text in the current file, select the **Editor** pane to give it focus, a
 To find and replace text, select the **Replace** (**A-\>B**) button to the left of the **Find** text box. The **Replace** (**A-\>B**) button appears when viewing an editable file.
 
 
+<!-- Check: Changes to JS aren't saved when not using a workspace, and the Local Modifications menu item does not exist.
 ###### Showing the changes you made
 
 To review the changes you made to a file, right-click in the **Editor** pane and then select **Local Modifications**.
 
 The **Drawer** opens at the bottom of DevTools, showing your changes within the **Changes** tab.
 
-![Showing Local Modifications, in the Changes tab of the Drawer](./index-images/local-modifications.png)
+![Showing Local Modifications, in the Changes tab of the Drawer](./index-images/local-modifications.png) -->
 
 
+<!-- Check: Changes to JS, even inside functions, don't take effect.
 ###### Changes inside a function take effect
 
 DevTools doesn't re-run a script, so the only JavaScript changes that take effect are changes that you make within functions.  For example, in the following figure, we added the following code to the JavaScript that is returned by the server:
@@ -317,25 +320,17 @@ We then saved the changes, entered numbers into the form, and then selected the 
 
 After submitting the form, `console.log('A')`, which is at global scope, doesn't run, but `console.log('B')`, inside an `onClick` function, does run, outputting `B` to the Console:
 
-![Global-scope JavaScript isn't re-run](./index-images/edit-js.png)
+![Global-scope JavaScript isn't re-run](./index-images/edit-js.png) -->
 
 
 <!-- ------------------------------ -->
 #### Reformatting a minified JavaScript file with pretty-print
 
-To use pretty-print to reformat a file to make it readable, select the **Pretty print** button (![Format](./index-images/format-icon.png)), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.
+Minified files are automatically reformatted when you open them in the Editor pane.
+
+To revert the file to its original minified state, click the **Pretty print** button (![Format](./index-images/format-icon.png)), which is shown as braces, at the bottom of the Editor pane. 
 
 ![The Pretty print button](./index-images/minified.png)
-
-The reformatted file appears in a new tab, with `:formatted` appended to the file name.  The reformatted code is read-only.
-
-![A pretty-printed (reformatted) JavaScript file](./index-images/pretty-printed.png)
-
-To make the reformatted file scroll to the code that you select in the minified file:
-1.  If the reformatted file tab is open, close it.
-1.  Select some code in the minified file in the Editor pane.
-1.  Select the **Pretty print** button.
-The formatted code appears in a new tab, scrolled to the code that you selected.
 
 For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
 
@@ -343,7 +338,7 @@ For more information, see [Reformat a minified JavaScript file with pretty-print
 <!-- ------------------------------ -->
 #### Mapping minified code to your source code to show readable code
 
-Source maps from preprocessors cause DevTools to load your original JavaScript source files in addition to your minified, transformed JavaScript files that are returned by the server.  You then view your original source files while you set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code.
+Source maps from pre-processors cause DevTools to load your original JavaScript source files in addition to your minified, transformed JavaScript files that are returned by the server.  You then view your original source files while you set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code.
 
 In the **Editor** pane, if you right-click a JavaScript file and then select **Add source map**, a popup box appears, with a **Source map URL** text box and an **Add** button.
 
@@ -365,8 +360,8 @@ In this scenario, the **Sources** tool is useful for inspecting and stepping-thr
 #### Editing a CSS file
 
 There are two ways to edit CSS in DevTools:
-*  In the **Elements** tool, you work with one CSS setting at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
-*  In the **Sources** tool, you use a text editor.
+*  In the **Elements** tool, you work with one CSS property at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Get started viewing and changing CSS](../css/index.md).
+*  In the **Sources** tool, you use a text editor to edit CSS files.
 
 The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 
@@ -431,7 +426,7 @@ For more information, see [Run commands with the Microsoft Edge DevTools Command
 <!-- ------------------------------ -->
 #### Displaying source files when using a different tool
 
-The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  You use the **Quick source** tool in the [Drawer](../customize/index.md#drawer), which appears at the bottom of DevTools.
+The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  You use the **Quick source** tool in the [Drawer](../customize/index.md#quick-view), which appears at the bottom of DevTools.
 
 To use the **Quick source** tool:
 
@@ -475,7 +470,7 @@ The following subsections cover debugging:
 <!-- ------------------------------ -->
 #### The basic approach to using a debugger
 
-To troubleshoot JavaScript code, you can insert `console.log()` statements in the **Editor** pane.  Another, more powerful approach is to use the debugger of Microsoft Edge DevTools.  Using a debugger can actually be simpler than `console.log()`, once you're familiar with the debugger approach.
+To troubleshoot JavaScript code, you can insert `console.log()` statements in your code.  Another, more powerful approach is to use the debugger of Microsoft Edge DevTools.  Using a debugger can actually be simpler than `console.log()`, once you're familiar with the debugger approach.
 
 To use a debugger on a webpage, you typically set a breakpoint and then send a form from the webpage, as follows:
 
@@ -489,7 +484,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
 1. In the **Navigator** pane (on the left), select the **Page** tab, and then select the JavaScript file, such as `get-started.js`.
 
-1. In the **Editor** pane, select a line number near a suspect line of code, to set a breakpoint on that line.  In the figure below, a breakpoint is set on the line `var sum = addend1 + addend2;`.  (Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead of a red circle.)
+1. In the **Editor** pane, select a line number near a suspect line of code, to set a breakpoint on that line.  In the figure below, a breakpoint is set on the line `var sum = addend1 + addend2;`.
 
 1. In the webpage, enter values and submit the form.  For example, enter numbers, such as **5** and **1**, then select the button **Add Number 1 and Number 2**.
 
