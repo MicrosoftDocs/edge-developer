@@ -985,6 +985,11 @@
         "redirect_document_id": false
       },
       {
+        "source_path": "microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/overview",
+        "redirect_document_id": false
+      },
+      {
         "source_path": "microsoft-edge/devtools-guide-chromium/beginners/css.md",
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/css",
         "redirect_document_id": false

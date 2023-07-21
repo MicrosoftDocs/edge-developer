@@ -134,8 +134,6 @@ You can filter the experimental features by text included in the title.
 
 We're eager to hear your feedback about experimental features.  To share feedback with us, [Contact the Microsoft Edge DevTools team](../contact.md).
 
-One of the UI experiments adds a new way to provide feedback: when the **Focus Mode** experiment is turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](./index-images/help-icon-of-focus-mode.png)) > **Feedback**.
-
 
 <!-- ====================================================================== -->
 ## List of experiments
@@ -620,22 +618,6 @@ Status:
 ## Show issues in Elements
 
 Enable this experiment to view syntax errors under HTML in the **DOM** view of the **Elements** tool. For more information, see [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool).
-
-Status:
-*  This checkbox is present in Microsoft Edge Canary 116.
-*  This checkbox is present in Microsoft Edge Stable 114.
-
-
-<!-- ====================================================================== -->
-## Focus Mode
-
-Focus Mode is a new user interface for DevTools.  Focus Mode is designed to simplify and streamline the DevTools UI, without compromising its feature set.
-
-Focus Mode replaces the main row of tabs with an **Activity Bar**, which is a compact toolbar with distinctive icons.  The **Activity Bar** makes it possible to pin, rearrange, and open your favorite tools, for quick access.  The **Activity Bar** also provides access to user settings, help, and other features.
-
-Focus Mode also provides a **Quick View** list, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
-
-See [Reduce the complexity of DevTools with Focus Mode](focus-mode.md).
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 116.

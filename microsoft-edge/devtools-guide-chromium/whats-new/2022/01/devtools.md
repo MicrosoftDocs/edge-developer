@@ -74,8 +74,6 @@ Thanks to your early feedback, we've continued to make improvements and bug fixe
 When using Focus Mode, all the same tools and custom themes are available as in the existing DevTools UI.  Try Focus Mode for yourself by enabling the **Focus Mode** experiment in DevTools **Settings** > **Experiments**.
 
 See also:
-* [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features_
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 * [Apply a color theme to DevTools](../../../customize/theme.md)
 
 
