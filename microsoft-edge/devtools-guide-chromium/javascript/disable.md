@@ -30,15 +30,15 @@ To turn off JavaScript:
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-   ![The Command Menu](./disable-images/javascript-console-command.png)
+   ![The Command Menu](./disable-images/command.png)
 
 1. Start typing `javascript`, select **Disable JavaScript**, and then press **Enter** to run the command.  JavaScript is now disabled.
 
-   ![Select 'Disable JavaScript' in the Command Menu](./disable-images/javascript-console-command-javascript.png)
+   ![Select 'Disable JavaScript' in the Command Menu](./disable-images/command-javascript.png)
 
     The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.
 
-   ![The warning icon next to Sources](./disable-images/javascript-console-javascript-disabled-warning.png)
+   ![The warning icon next to Sources](./disable-images/javascript-disabled-warning.png)
 
 JavaScript remains disabled in the tab for as long as you have DevTools open.
 

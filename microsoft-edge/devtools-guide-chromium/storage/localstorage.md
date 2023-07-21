@@ -30,19 +30,19 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 
 1. Click the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.
 
-   ![The Manifest pane](./localstorage-images/storage-application-manifest.png)
+   ![The Manifest pane](./localstorage-images/manifest.png)
 
 1. Expand the **Local Storage** menu.
 
-   ![The Local Storage menu](./localstorage-images/storage-application-local-storage.png)
+   ![The Local Storage menu](./localstorage-images/local-storage.png)
 
 1. Click a domain to view the key-value pairs.
 
-   ![The localStorage key-value pairs for the https://www.bing.com domain](./localstorage-images/storage-application-local-storage-view-key-value.png)
+   ![The localStorage key-value pairs for the https://www.bing.com domain](./localstorage-images/view-key-value.png)
 
 1. Click a row of the table to view the value in the viewer below the table.
 
-   ![View the value of the eventLogQueue_Online key](./localstorage-images/storage-application-local-storage-view-key-value-selected.png)
+   ![View the value of the eventLogQueue_Online key](./localstorage-images/view-key-value-selected.png)
 
 
 <!-- ====================================================================== -->
@@ -52,7 +52,7 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 
 1. Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.
 
-   ![The empty part of the table to double-click in order to create a new key-value pair](./localstorage-images/storage-application-local-storage-new-key-value.png)
+   ![The empty part of the table to double-click in order to create a new key-value pair](./localstorage-images/new-key-value.png)
 
 
 <!-- ====================================================================== -->
@@ -62,7 +62,7 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 
 1. Double-click a cell in the **Key** or **Value** column to edit that key or value.
 
-   ![Edit a localStorage key](./localstorage-images/storage-application-local-storage-edit-key-value.png)
+   ![Edit a localStorage key](./localstorage-images/edit-key-value.png)
 
 
 <!-- ====================================================================== -->
@@ -90,11 +90,11 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 1. Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `localStorage` key-value pairs of a domain other than the page that is displayed.
 
-   ![Change the JavaScript context of the Console](./localstorage-images/storage-console-local-storage.png)
+   ![Change the JavaScript context of the Console](./localstorage-images/console-context-dropdown.png)
 
 1. Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.
 
-   ![Interact with localStorage from the Console](./localstorage-images/storage-console-local-storage-interaction.png)
+   ![Interact with localStorage from the Console](./localstorage-images/console-local-storage.png)
 
 
 <!-- ====================================================================== -->

@@ -40,15 +40,15 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 
 1. Click a cache to view the contents.
 
-   ![Viewing the contents of a cache](./cache-images/storage-application-cache-storage-domain-root-headers.png)
+   ![Viewing the contents of a cache](./cache-images/domain-root-headers.png)
 
 1. Click a resource to view the HTTP headers in the section below the table.
 
-   ![Viewing the HTTP headers of a resource](./cache-images/storage-application-cache-storage-index-headers.png)
+   ![Viewing the HTTP headers of a resource](./cache-images/index-headers.png)
 
 1. Click **Preview** to view the content of a resource.
 
-   ![Viewing the content of a resource](./cache-images/storage-application-cache-storage-domain-js-preview.png)
+   ![Viewing the content of a resource](./cache-images/domain-js-preview.png)
 
 To learn more about cache data storage quota, see the [Quota usage](../progressive-web-apps/index.md#quota-usage) section of the Debug Progressive Web Apps article.
 
@@ -59,7 +59,7 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 1. [View the data for a cache](#view-cache-data).
 1. Click the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.
 
-   ![Selecting a resource to refresh](./cache-images/storage-application-cache-storage-domain-refresh.png)
+   ![Selecting a resource to refresh](./cache-images/domain-refresh.png)
 
 1. Click **Refresh** (![Refresh](./cache-images/refresh-icon.png)).
 
@@ -71,7 +71,7 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 
 1. Use the **Filter by Path** text box to filter out any resources that don't match the path that you provide.
 
-   ![Filtering out resources that don't match the specified path](./cache-images/storage-application-cache-storage-filter.png)
+   ![Filtering out resources that don't match the specified path](./cache-images/filter.png)
 
 
 <!-- ====================================================================== -->
@@ -81,7 +81,7 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 
 1. Click the resource that you want to delete.  DevTools highlights it to indicate that it is selected.
 
-   ![Selecting a resource to delete](./cache-images/storage-application-cache-storage-delete-selected.png)
+   ![Selecting a resource to delete](./cache-images/delete-selected.png)
 
 1. Click **Delete Selected** (![Delete Selected](./cache-images/delete-icon.png)).
 
@@ -93,11 +93,11 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 
 1. Make sure that the **Cache storage** checkbox is selected.
 
-   ![The Cache Storage checkbox](./cache-images/storage-application-clear-storage-cache-storage-checkbox.png)
+   ![The Cache Storage checkbox](./cache-images/cache-storage-checkbox.png)
 
 1. Click the **Clear site data** button.
 
-   ![The 'Clear site data' button](./cache-images/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.png)
+   ![The 'Clear site data' button](./cache-images/cache-storage-checkbox-clear-site-data-button.png)
 
 
 <!-- ====================================================================== -->
