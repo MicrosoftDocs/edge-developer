@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/02/2022
+ms.date: 21/07/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -109,10 +109,6 @@ Test your webpage in landscape orientation.
 
    The **Rotate** button disappears if your **Device Toolbar** is narrow.
 
-1. If needed, to access the **Rotate** button, increase the width of the **Device Toolbar**.
-
-   ![The Device Toolbar](./index-images/device-toolbar-highlighted.png)
-
 See also [Set orientation](#set-orientation), below.
 
 
@@ -174,10 +170,6 @@ Mobile devices often have network and CPU constraints.  Test how quickly your pa
 
    If the **Throttle list** is hidden, your **Device Toolbar** is too narrow.
 
-1. If needed, to access the **Throttle list**, increase the width of the **Device Toolbar**.
-
-   ![The Device Toolbar](./index-images/device-toolbar-highlighted.png)
-
 
 ### Throttle the CPU only
 
@@ -212,9 +204,9 @@ You can also set network throttling from the **Performance** panel:
 <!-- ====================================================================== -->
 ## Override geolocation
 
- If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation-overriding UI.
+If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation-overriding UI.
 
-1. Select **More tools** (**+**) > **Sensors**.
+1. In the **Activity Bar**, click the **More tools** (![More tools icon](./index-images/more-tools-icon.png)) button, and then click **Sensors**.
 
    ![Sensors for geolocation](./index-images/device-toolbar-more-tools-sensors.png)
 
@@ -232,7 +224,7 @@ On the **Sensors** panel, to select one of the preset locations, use the **Locat
 
 If your page depends on orientation information from a mobile device to render properly, open the orientation UI.
 
-1. Select **More tools** (**+**) > **Sensors**.
+1. In the **Activity Bar**, click the **More tools** (![More tools icon](./index-images/more-tools-icon.png)) button, and then click **Sensors**.
 
    ![The Sensors command on the More tools menu](./index-images/device-toolbar-more-tools-sensors.png)
 
