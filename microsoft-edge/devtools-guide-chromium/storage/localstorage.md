@@ -94,7 +94,7 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 1. Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.
 
-![Interact with localStorage from the Console](./localstorage-images/storage-console-local-storage-interaction.png)
+   ![Interact with localStorage from the Console](./localstorage-images/storage-console-local-storage-interaction.png)
 
 
 <!-- ====================================================================== -->
