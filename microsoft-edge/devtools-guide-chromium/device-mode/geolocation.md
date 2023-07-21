@@ -32,7 +32,9 @@ If you are building a UI that changes depending on where the user is located, yo
 
    ![The Command Menu](./geolocation-images/device-mode-console-command-menu.png)
 
-1. Type `sensors`, select **Drawer: Show Sensors**, and then press **Enter**.  The **Sensors** tool opens at the bottom of the DevTools window.
+1. Type `sensors`, select **Show Sensors**, and then press **Enter**.  The **Sensors** tool opens at the bottom of the DevTools window.
+
+   ![Show Sensors from Command Menu](./geolocation-images/device-mode-console-command-menu-sensors.png)
 
 1. Click the **Location** dropdown list, and then:
    *  Select a city, such as `Tokyo`.
