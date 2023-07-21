@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.date: 07/12/2023
 ---
 # Console overview
 
@@ -19,13 +19,13 @@ The **Console** tool helps with several tasks, which are covered in more detail 
 * **Try JavaScript expressions** live in a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  See [Run JavaScript in the Console](console-javascript.md).
 * **Interact with the web project in the browser** using JavaScript.  See [Interact with the DOM using the Console](console-dom-interaction.md).
 
-You can open the **Console** tool in the top or bottom of DevTools; it's shown here in upper part, on the main toolbar:
+You can open the **Console** tool in the top or bottom of DevTools; it's shown here in upper part, on the **Activity Bar**:
 
 ![The Console tool open in the upper panel](./index-images/console-intro-console-main.png)
 
-The **Console** is shown here in the lower part of DevTools (the **Drawer**), with the **Elements** tool open above it:
+The **Console** is shown here in the lower part of DevTools (the **Quick View**), with the **Elements** tool open above it:
 
-![The Console in the lower panel with the Elements tool open above it](./index-images/console-intro-console-panel.png)
+![The Console in the lower panel with the Elements tool open above it](./index-images/console-intro-console-quick-view.png)
 
 The fastest way to directly open the **Console** is to press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
@@ -33,7 +33,7 @@ The fastest way to directly open the **Console** is to press **Ctrl+Shift+J** (W
 <!-- ====================================================================== -->
 ## Error reports and the Console
 
-The **Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, the **Issues counter** is displayed next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Click the **Issues counter** to open the **Issues** tool and display the problem.  For more information, see [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
+The **Console** is the default place where JavaScript and connectivity errors are reported.  For more information, see [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
 
 DevTools gives detailed information about the error in the **Console**:
 
