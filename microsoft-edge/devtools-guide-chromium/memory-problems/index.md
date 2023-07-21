@@ -180,7 +180,7 @@ To create a snapshot:
 
 1. To fix the particular memory leak, study the code that uses the `detachedTree` variable and make sure that the reference to the node is removed when it is no longer needed.
 
-![Investigating a node](./index-images/gmemory-heap-snapshot-filter-detached-expanded-selected.png)
+![Investigating a node](./index-images/memory-heap-snapshot-filter-detached-expanded-selected.png)
 
 <!--todo: the allocation timeline doesn't appear in the DevTools in Edge  -->
 
