@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/21/2022
+ms.date: 07/21/2023
 ---
 <!-- Copyright Meggin Kearney
 
@@ -127,9 +127,11 @@ After expanding a total line in the upper view, all of the instances are display
 
 ### Constructor (group) entries in the heap profiler
 
-The various constructor (group) entries in the heap profiler correspond to the following types of objects.
+The **Memory** tool's heap profiler has a **Constructor** section that lists expandable groups of constructors, such as an expandable group of **(array)** constructors:
 
 ![Constructor groups](./heap-snapshots-images/heap-snapshots-constructor-highlight.png)
+
+The various constructor (group) entries in the heap profiler correspond to the following types of objects:
 
 | Constructor (group) entry | Description |
 |:--- |:--- |

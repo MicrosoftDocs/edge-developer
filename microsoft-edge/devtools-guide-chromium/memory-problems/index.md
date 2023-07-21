@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 07/21/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -25,7 +25,7 @@ ms.date: 05/04/2021
 Learn how to use Microsoft Edge and DevTools to find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections.
 
 *  Find out how much memory your page is currently using with the Microsoft Edge Browser Task Manager.
-*  Visualize memory usage over time with the **Memory** panel.
+*  Visualize memory usage over time with the **Memory** tool.
 *  Identify detached DOM trees (a common cause of memory leaks) with **Heap snapshot**.
 *  Find out when new memory is being allocated in your JavaScript heap (JS heap) with **Allocation instrumentation on timeline**.
 
@@ -79,9 +79,9 @@ These two columns tell you different things about how your page is using memory:
 
 
 <!-- ====================================================================== -->
-## Visualize memory leaks with Performance panel
+## Visualize memory leaks with Performance tool
 
-You can also use the Performance panel as another starting point in your investigation.  The Performance panel helps you visualize the memory use of a page over time.
+You can also use the **Performance** tool as another starting point in your investigation.  The **Performance** tool helps you visualize the memory use of a page over time.
 
 1. In DevTools, open the **Performance** tool.
 
@@ -104,7 +104,7 @@ function grow() {
 document.getElementById('grow').addEventListener('click', grow);
 ```
 
-Every time that the button referenced in the code is clicked, 10,000 `div` nodes are appended to the document body, and a string of 1,000,000 `x` characters is pushed onto the `x` array.  Running the previous code sample produces a recording in the **Performance** panel like the following figure:
+Every time that the button referenced in the code is clicked, 10,000 `div` nodes are appended to the document body, and a string of 1,000,000 `x` characters is pushed onto the `x` array.  Running the previous code sample produces a recording in the **Performance** tool like the following figure:
 
 ![Simple growth](./index-images/performance-memory.png)
 
@@ -152,9 +152,9 @@ Heap snapshots are one way to identify detached nodes.  As the name implies, hea
 
 To create a snapshot:
 
-1. Open DevTools and go to the **Memory** panel.
+1. Open DevTools and go to the **Memory** tool.
 
-1. Click the **Heap snapshot** radio button, and then click the **Take snapshot** button at the bottom of the panel.
+1. Click the **Heap snapshot** radio button, and then click the **Take snapshot** button at the bottom of the tool.
 
    ![Taking a heap snapshot](./index-images/memory-heap-snapshot.png)
 
@@ -204,7 +204,7 @@ Every time that the button referenced in the code is clicked, a string of one mi
 
 To record an Allocation instrumentation on timeline:
 
-1. Open DevTools, and select the **Memory** panel.
+1. Open DevTools, and select the **Memory** tool.
 
 1. Click the **Allocation instrumentation on timeline** radio button, then click the **Start** button.
 

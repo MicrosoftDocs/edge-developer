@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/13/2021
+ms.date: 07/21/2023
 ---
 <!-- Copyright Meggin Kearney
 

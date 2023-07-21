@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 07/21/2023
 ---
 <!-- Copyright Meggin Kearney
 
@@ -40,8 +40,7 @@ In the **Memory** tool, use the **Allocation instrumentation on timeline** radio
 
 ![Allocation instrumentation on timeline](./allocation-profiler-images/timeline-snapshot-highlighted.png)
 
-> [!NOTE]
-> The number after the `@` is an object ID that persists across the multiple snapshots taken during the recording session.  The persistent object ID enables precise comparison between heap states.  Objects are moved during garbage collections, so displaying the address of an object makes no sense.
+The number after the `@` is an object ID that persists across the multiple snapshots taken during the recording session.  The persistent object ID enables precise comparison between heap states.  Objects are moved during garbage collections, so displaying the address of an object makes no sense.
 
 
 <!-- ====================================================================== -->
