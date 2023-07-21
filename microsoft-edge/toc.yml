@@ -1115,7 +1115,7 @@
           href: progressive-web-apps-chromium/demo-pwas.md
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords 
     - name: WebView2
       items:
         - name: Introduction to Microsoft Edge WebView2  # existing firstchild article
