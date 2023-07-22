@@ -52,9 +52,11 @@ Select **Toggle device emulation** (![Toggle Device Toolbar](./index-images/togg
 
 ![The Device Toolbar](./index-images/device-toolbar-highlighted.png)
 
-By default the Device Toolbar opens in Responsive Viewport Mode.
+By default, the Device Toolbar opens in Responsive Viewport Mode.
 
-### Responsive Viewport Mode
+
+<!-- ------------------------------ -->
+#### Responsive Viewport Mode
 
 To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.  You can enter any numeric values in the width and height boxes.  If you select a size larger than available in the browser window, the viewport will be automatically scaled to accommodate for the larger viewport.
 
@@ -64,17 +66,34 @@ In the following figure, the width is set to `400` and the height is set to `736
 
 If you need more space on your screen, you can always change the position of DevTools as explained in [Change DevTools placement (Undock, Dock to bottom, Dock to left)](/microsoft-edge/devtools-guide-chromium/customize/placement).
 
-#### Show media queries
 
-If you have defined media queries on your page, jump to the viewport dimensions where those media queries take effect by showing media query breakpoints above your viewport.  Select **More options** > **Show media queries**.
+<!-- ---------- -->
+###### Show media queries
 
-![Show media queries](./index-images/device-toolbar-more-options-show-media-queries.png)
+A _media query_ defines a breakpoint, which is a browser viewport width.  A webpage can define a responsive layout for each breakpoint (width) that it defines.
 
-Select a breakpoint to change the width of the viewport so that the media query gets triggered.
+To show media query breakpoints above the viewport:
 
-![Select a breakpoint to change the width of the viewport](./index-images/device-toolbar-click-breakpoint.png)
+1. Click the **More options** (![More Options icon](./index-images/more-options-icon.png)) button, and then select **Show media queries**:
 
-#### Set the device type
+   ![Show media queries](./index-images/device-toolbar-more-options-show-media-queries.png)
+   <!-- https://microsoftedge.github.io/Demos/devtools-a11y-testing/ -->
+
+   If `max-width` or `min-width` breakpoints are defined by the webpage, DevTools displays additional bars above the viewport:
+   * A blue bar with `max-width` breakpoints.
+   * An orange bar with `min-width` breakpoints:
+
+   ![Select a breakpoint to change the width of the viewport](./index-images/device-toolbar-click-breakpoint.png)
+
+1. To change the width of the viewport so that the media query for that breakpoint is used, click a breakpoint rectangle in the breakpoints bar.  The viewport's width changes so that the breakpoint gets triggered, and the webpage layout is updated.
+
+To find the corresponding `@media` declaration in the code for the webpage:
+
+* Right-click between breakpoint vertical bars, and then select **Reveal in source code**.  DevTools opens the **Sources** tool and displays the corresponding `@media` line in the **Editor**.
+
+
+<!-- ---------- -->
+###### Set the device type
 
 Use the **Device Type** list to simulate a mobile device or desktop device.
 
@@ -89,17 +108,19 @@ The following table describes the differences between the available device type 
 | Desktop | Desktop | Normal | `click` |
 | Desktop (touch) | Desktop | Circle | `touch` |
 
-> [!NOTE]
-> If the **Device Type** list isn't displayed, select **More options** > **Add device type**.
+If the **Device Type** list isn't displayed, select **More options** > **Add device type**.
 
-### Mobile Device Viewport Mode
+
+<!-- ------------------------------ -->
+#### Mobile Device Viewport Mode
 
 To simulate the dimensions of a specific mobile device, select the device from the **Device** list.
 
 ![The Device list](./index-images/device-toolbar-device-list.png)
 
 
-#### Rotate the viewport to landscape orientation
+<!-- ---------- -->
+###### Rotate the viewport to landscape orientation
 
 Test your webpage in landscape orientation.
 
@@ -112,7 +133,8 @@ Test your webpage in landscape orientation.
 See also [Set orientation](#set-orientation), below.
 
 
-#### Show device frame
+<!-- ---------- -->
+###### Show device frame
 
 To simulate the dimensions of a specific mobile device, open **More options** and then select **Show device frame** to show the physical device frame around the viewport.
 
@@ -124,7 +146,9 @@ The device frame for the iPhone 6/7/8:
 
 ![The device frame for the iPhone 6](./index-images/device-toolbar-options-device-frame-iphone-6.png)
 
-#### Add a custom mobile device
+
+<!-- ---------- -->
+###### Add a custom mobile device
 
 If the mobile device option that you need isn't included on the default list, you can add a custom device.  To add a custom device:
 
@@ -138,7 +162,9 @@ If the mobile device option that you need isn't included on the default list, yo
 
    ![Adding a custom device](./index-images/device-toolbar-settings-emulated-devices-add.png)
 
-### Show rulers
+
+<!-- ------------------------------ -->
+#### Show rulers
 
 If you need to measure screen dimensions, you can use rulers to measure the screen size in pixels.  Select **More options** > **Show rulers** to display rulers above and to the left of your viewport.
 
@@ -148,7 +174,9 @@ Rulers appear above and to the left of the viewport:
 
 ![Rulers above and to the left of the viewport](./index-images/device-toolbar-rulers.png)
 
-### Zoom the viewport
+
+<!-- ------------------------------ -->
+#### Zoom the viewport
 
 To test the look and feel of your page at multiple zoom levels, use the **Zoom** list to zoom in or out.
 
@@ -171,7 +199,8 @@ Mobile devices often have network and CPU constraints.  Test how quickly your pa
    If the **Throttle list** is hidden, your **Device Toolbar** is too narrow.
 
 
-### Throttle the CPU only
+<!-- ------------------------------ -->
+#### Throttle the CPU only
 
 To throttle the CPU only and not the network:
 
@@ -182,7 +211,8 @@ To throttle the CPU only and not the network:
    ![The CPU list in the Performance panel](./index-images/performance-cpu-throttle.png)
 
 
-### Throttle the network only
+<!-- ------------------------------ -->
+#### Throttle the network only
 
 To throttle the network only and not the CPU:
 
@@ -261,8 +291,7 @@ If your page depends on the user agent string from a mobile device to render pro
    ![Setting the user agent string to Microsoft Edge on macOS](./index-images/device-toolbar-network-conditions-macos.png)
 
 
-### See also
-
+See also:
 * [Override the user agent string](override-user-agent.md)
 
 
