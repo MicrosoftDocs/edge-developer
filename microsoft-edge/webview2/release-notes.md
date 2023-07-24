@@ -198,8 +198,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 * [CoreWebView2Notification Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification?view=webview2-winrt-1.0.1988.0-prerelease&preserve-view=true)
-* [CoreWebView2.NotificationReceived Event](/microsoft-
-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#notificationreceived?view=webview2-winrt-1.0.1988.0-prerelease&preserve-view=true)
+* [CoreWebView2.NotificationReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceived?view=webview2-winrt-1.0.1988.0-prerelease&preserve-view=true)
 * [CoreWebView2NotificationReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.1988.0-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
@@ -210,8 +209,7 @@ edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#notificat
 
 * [ICoreWebView2ExperimentalNotification](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnotification?view=webview2-1.0.1988-prerelease&preserve-view=true)
 * [ICoreWebView2ExperimentalNotificationReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnotificationreceivedeventhandler?view=webview2-1.0.1988-prerelease&preserve-view=true)
-* [ICoreWebView2ExperimentalNotificationReceivedEventArgs](/microsoft-
-edge/webview2/reference/win32/icorewebview2experimentalnotificationreceivedeventargs?view=webview2-1.0.1988-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalNotificationReceivedEventArgs](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnotificationreceivedeventargs?view=webview2-1.0.1988-prerelease&preserve-view=true)
 
 * [ICoreWebView2ExperimentalNotificationCloseRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnotificationcloserequestedeventhandler?view=webview2-1.0.1988-prerelease&preserve-view=true)
 
