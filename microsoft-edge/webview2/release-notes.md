@@ -170,10 +170,11 @@ The following APIs have been promoted to Stable and are now included in this Rel
 <!-- ------------------------------ -->
 ###### Bug fixes
 
-* Fixed a bug where the whole tool bar will be blank when hiding Bookmarks, Search, and PageSelector buttons simultaneously (Runtime). 
+* Fixed a bug where the whole tool bar will be blank when hiding Bookmarks, Search, and PageSelector buttons simultaneously (Runtime). [Issue 2866](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2866)
+
 
 <!-- ====================================================================== -->
-<!--
+
 ## 1.0.1988-prerelease
 
 Release Date: July TBD, 2023
@@ -182,7 +183,31 @@ Release Date: July TBD, 2023
 
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 117.0.1988.0 or higher.
 
--->
+#### General
+
+<!-- ------------------------------ -->
+###### Experimental features
+
+
+---
+
+<!-- ------------------------------ -->
+###### Bug fixes
+* Fixed CoreWebView2Frame.ExecuteScriptAsync hang if frame was destroyed during script execution. [Issue 3124](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3124)
+* Fixed COMException reading WebResourceResponse content after redirect. [Issue 3229](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3229)
+* Fixed regression where CoreWebView2.AddHostObjectToScript called twice for the same name hangs (Runtime). [Issue 3539](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3539)
+* Fixed an issue where PrintAsync fails when PrinterName has Chinese characters. [Issue 3379](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3379)
+* Fixed an issue to disable context menu in print pages when AreDefaultContextMenusEnabled setting is false. [Issue 3548](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3548)
+* Removed visual search from web capture context menu (Runtime). [Issue 3426](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3426)
+* Fixed an issue that was causing PrintAsync and PrintToPdfStreamAsync to fail when print settings are null
+* 'Launch game' button removed from default 'No Internet Connection' error page (Runtime).
+* Fixed an issue to ensure WebVivew2Loader can be loaded from UNC path. [Issue 3465](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3465)
+* Fix invalid CoreWebView2PdfToolbarItems.FullScreen and CoreWebView2PdfToolbarItems.MoreSettings
+* Added lock for host object access from multithread (Runtime).
+* Fix configuration options(CoreWebView2PdfToolbarItems.MoreSettings,CoreWebView2PdfToolbarItems.FullScreen) are not valid in PDF preview mode. [Issue 3324](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3324)
+* Remove the "Hide all annotations" option in Pdf "Settings and more" (Runtime).
+* Remove "show all saved passwords" context menu item (Runtime).
+
 
 
 <!-- ====================================================================== -->
