@@ -239,10 +239,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 * `CoreWebView2` Class:
    * [CoreWebView2.FrameId Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.frameid?view=webview2-dotnet-1.0.1988-prerelease&preserve-view=true)
 * `CoreWebView2Environment` Class:
-   <!-- * [CoreWebView2Environment.FrameId Property]() todo: not found, delete? -->
-   <!-- * [CoreWebView2Environment.GetDeferral Property]()  todo: not found, delete? -->
    * [CoreWebView2Environment.GetProcessInfosWithDetailsAsync Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getprocessinfoswithdetailsasync?view=webview2-dotnet-1.0.1988-prerelease&preserve-view=true)
-   <!-- * [CoreWebView2Environment.Handled Property]()  todo: not found, delete? -->
 * `CoreWebView2Frame` Class:
    * [CoreWebView2Frame.FrameId Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.frameid?view=webview2-dotnet-1.0.1988-prerelease&preserve-view=true)
 * `CoreWebView2FrameInfo` Class:
@@ -262,13 +259,9 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 * `CoreWebView2` Class:
    * [CoreWebView2.FrameId Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#frameid)
 * `CoreWebView2Environment` Class:
-   <!--* [CoreWebView2Environment.FrameId Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#frameid)  todo: not found, delete? -->
-   <!--* [CoreWebView2Environment.GetDeferral Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#getdeferral)  todo: not found, delete? -->
    * [CoreWebView2Environment.GetProcessInfosWithDetailsAsync Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#getprocessinfoswithdetailsasync)
-   <!--* [CoreWebView2Environment.Handled Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#handled)  todo: not found, delete? -->
 * `CoreWebView2Frame` Class:
    * [CoreWebView2Frame.FrameId Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#frameid)
-   <!-- * [CoreWebView2Frame.Id Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#id)  todo: not found, delete? -->
 * `CoreWebView2FrameInfo` Class:
    * [CoreWebView2FrameInfo.FrameId Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#frameid)
    * [CoreWebView2FrameInfo.FrameKind Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#framekind)
@@ -310,32 +303,25 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 <!-- tested -->
-* [CoreWebView2BrowserExtension Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browserextension?view=webview2-dotnet-1.0.1988-prerelease&preserve-view=true)<!--todo: keep (add) this link?  Win32 has -->
+* [CoreWebView2BrowserExtension Class](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browserextension?view=webview2-dotnet-1.0.1988-prerelease&preserve-view=true)
 
 * `CoreWebView2EnvironmentOptions` Class:
    * [CoreWebView2EnvironmentOptions.AreBrowserExtensionsEnabled Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.arebrowserextensionsenabled?view=webview2-dotnet-1.0.1988-prerelease&preserve-view=true)
-   <!--* [CoreWebView2EnvironmentOptions.IsEnabled Property]()  todo: not found.  delete? -->
-   * [CoreWebView2EnvironmentOptions.Language Property](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.language?view=webview2-dotnet-1.0.1988-prerelease&preserve-view=true)<!--todo: keep (add) this link?  WinRT has-->
-   <!--* [CoreWebView2EnvironmentOptions.Name Property]()  todo: not found.  delete? -->
 
 * `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.AddBrowserExtensionAsync Method](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2profile.addbrowserextensionasync?view=webview2-dotnet-1.0.1988-prerelease&preserve-view=true)<!--todo: keep (add) this link?  Win32 has-->
-   * [ICoreWebView2Profile.GetBrowserExtensionsAsync method](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2profile.getbrowserextensionsasync?view=webview2-dotnet-1.0.1988-prerelease&preserve-view=true)<!--todo: keep (add) this link?  Win32 has-->
+   * [CoreWebView2Profile.AddBrowserExtensionAsync Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2profile.addbrowserextensionasync?view=webview2-dotnet-1.0.1988-prerelease&preserve-view=true)
+   * [CoreWebView2Profile.GetBrowserExtensionsAsync method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2profile.getbrowserextensionsasync?view=webview2-dotnet-1.0.1988-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 <!-- tested -->
-* [CoreWebView2BrowserExtension Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browserextension?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true)<!--todo: keep (add) this link?  Win32 has-->
+* [CoreWebView2BrowserExtension Class](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browserextension?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true)
 
 * `CoreWebView2EnvironmentOptions` Class:
    * [CoreWebView2EnvironmentOptions.AreBrowserExtensionsEnabled Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#arebrowserextensionsenabled)
-   <!--* [CoreWebView2EnvironmentOptions.IsEnabled Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#isenabled)  todo: not found.  delete? -->
-   * [CoreWebView2EnvironmentOptions.Language Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#language)
-   <!--* [CoreWebView2EnvironmentOptions.Name Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1988-prerelease&preserve-view=true#name)  todo: not found.  delete? -->
 
 * `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.AddBrowserExtensionAsync Method](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1988-prerelease#addbrowserextensionasync)<!--todo: keep (add) this link?  Win32 has -->
-   <!--* [ICoreWebView2Profile.GetBrowserExtensionsAsync method]()  todo: not found.  keep as hidden comment saying n/a?  Win32 has, .NET has -->
+   * [CoreWebView2Profile.AddBrowserExtensionAsync Method](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1988-prerelease#addbrowserextensionasync)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -343,20 +329,14 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 * [ICoreWebView2ExperimentalEnvironmentOptions interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1988-prerelease&preserve-view=true)<!--ok-->
    * [ICoreWebView2ExperimentalEnvironmentOptions::get_AreBrowserExtensionsEnabled property](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1988-prerelease&preserve-view=true#get_arebrowserextensionsenabled)<!--ok-->
    * [ICoreWebView2ExperimentalEnvironmentOptions::put_AreBrowserExtensionsEnabled property](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1988-prerelease&preserve-view=true#put_arebrowserextensionsenabled)<!--ok-->
-   <!--* [ICoreWebView2EnvironmentOptions::get_IsEnabled property]()  todo: not found.  delete? -->
-   <!--* [ICoreWebView2EnvironmentOptions::put_IsEnabled property]()  todo: not found.  delete? -->
-   <!--* [ICoreWebView2EnvironmentOptions::get_Language Property]()  todo: not found.  delete? -->
-   <!--* [ICoreWebView2EnvironmentOptions::put_Language Property]()  todo: not found.  delete? -->
-   <!--* [ICoreWebView2EnvironmentOptions::get_Name Property]()  todo: not found.  delete? -->
-   <!--* [ICoreWebView2EnvironmentOptions::put_Name Property]()  todo: not found.  delete? -->
 
 * [ICoreWebView2ExperimentalProfile12 interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile12?view=webview2-1.0.1988-prerelease&preserve-view=true)<!--ok-->
    * [ICoreWebView2ExperimentalProfile12::AddBrowserExtension method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile12?view=webview2-1.0.1988-prerelease&preserve-view=true#addbrowserextension)<!--ok-->
    * [ICoreWebView2ExperimentalProfile12::GetBrowserExtensions method](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile12?view=webview2-1.0.1988-prerelease&preserve-view=true#getbrowserextensions)<!--ok-->
 
 * [ICoreWebView2ExperimentalBrowserExtension interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalbrowserextension?view=webview2-1.0.1988-prerelease&preserve-view=true)
-   <!-- todo: add get_IsEnabled link?  suggesting b/c method not found on other Win32 type but other platform has it there  https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalbrowserextension?view=webview2-1.0.1988-prerelease&preserve-view=true#get_isenabled -->
-   <!-- todo: add get_Name link? https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalbrowserextension?view=webview2-1.0.1988-prerelease&preserve-view=true#get_name -->
+   <!-- pls do. todo: add get_IsEnabled link?  suggesting b/c method not found on other Win32 type but other platform has it there  https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalbrowserextension?view=webview2-1.0.1988-prerelease&preserve-view=true#get_isenabled -->
+   <!-- pls do. todo: add get_Name link? https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalbrowserextension?view=webview2-1.0.1988-prerelease&preserve-view=true#get_name -->
 
 * [ICoreWebView2ExperimentalBrowserExtensionEnableCompletedHandler interface](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalbrowserextensionenablecompletedhandler?view=webview2-1.0.1988-prerelease&preserve-view=true)<!--ok-->
 
