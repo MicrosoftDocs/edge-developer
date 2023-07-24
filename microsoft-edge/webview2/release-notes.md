@@ -167,6 +167,10 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ---
 
+<!-- ------------------------------ -->
+###### Bug fixes
+
+* Fixed a bug where the whole tool bar will be blank when hiding Bookmarks, Search, and PageSelector buttons simultaneously (Runtime). 
 
 <!-- ====================================================================== -->
 <!--
