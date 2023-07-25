@@ -100,8 +100,8 @@ Now you can use Microsoft Edge DevTools to inspect and debug the WebView2 contro
 <!-- ====================================================================== -->
 ## Debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps
 
-WebView2 on HoloLens 2 and the WebView2 plugin for Unity are both in Preview and are subject to change before general availability.  The WebView2 Preview is available in the Insider Preview for Microsoft HoloLens.  
-To access this preview, you must be enrolled in the Windows Insider Program; see [Start receiving Insider builds](/hololens/hololens-insider#start-receiving-insider-builds) in _Insider preview for Microsoft HoloLens_.
+WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability.  
+
 WebView2 and the WebView2 plugin are only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
 
 Attach Microsoft Edge DevTools remotely to a HoloLens 2 WebView2 WinUI 2 (UWP) app as follows:

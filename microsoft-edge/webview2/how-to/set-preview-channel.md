@@ -35,7 +35,7 @@ For more information about how SDK versions works in conjunction with the WebVie
 
 To use experimental APIs, download a prerelease version of the WebView2 SDK from [Microsoft.Web.WebView2 package](https://www.nuget.org/packages/Microsoft.Web.WebView2).
 
-To download a Microsoft Edge preview channel, see [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download).
+To download a Microsoft Edge preview channel, see [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider).
 
 
 <!-- intro/overview of 4 approaches ======================================= -->
@@ -200,11 +200,11 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 1. In the Windows search bar, enter "environment", and then select **Edit the system environment variables**.
 
-   ![Using the Windows search bar to find where to edit environment variables](media/search-bar-edit-sys-env-vars.png)
+   ![Using the Windows search bar to find where to edit environment variables](./set-preview-channel-images/search-bar-edit-sys-env-vars.png)
 
 1. In the **System Properties** dialog, select the **Advanced** tab, and then select the **Environment Variables** button.
 
-   ![The Environment Variables button in the System Properties dialog](media/system-properties-env-vars.png)
+   ![The Environment Variables button in the System Properties dialog](./set-preview-channel-images/system-properties-env-vars.png)
 
 1. In the **User variables** section of the **Environment Variables** dialog, select **New**.
 
@@ -214,7 +214,7 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 1. Click **OK** to close the dialogs.
 
-   ![Adding a new environment variable, as a user variable](media/env-vars-new-user-variable.png)
+   ![Adding a new environment variable, as a user variable](./set-preview-channel-images/env-vars-new-user-variable.png)
 
 ### Which app is affected
 
@@ -224,7 +224,7 @@ If you use the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable, you c
 
 | Value | Description |
 |---|---|
-| `1` | Reverses the search order, to use [preview channels](https://www.microsoftedgeinsider.com/download) first, before the WebView2 Runtime. |
+| `1` | Reverses the search order, to use [preview channels](https://www.microsoft.com/edge/download/insider) first, before the WebView2 Runtime. |
 | `0` or another value other than `1` | Uses the [default channel-search order](#default-channel-search-order), which is to use the WebView2 Runtime before the preview channels. |
 
 ### Applying the new environment variable to running processes
@@ -247,17 +247,17 @@ If you want to make your application use a Microsoft Edge preview channel by usi
 
 1. Expand **Local Computer Policy**, then **Computer Configuration** or **User Configuration**.  Then expand **Administrative Templates** > **Microsoft Edge WebView2**.
 
-   ![Local Group Policy Editor dialog](media/local-group-policy-editor.png)
+   ![Local Group Policy Editor dialog](./set-preview-channel-images/local-group-policy-editor.png)
 
 1. Select **Browser Executable Folder**.  The following screenshots apply to setting the **Browser Executable Folder**.  Alternatively, select **Release Channel Preference**, which uses similar dialogs.
 
-   ![Setting the Browser Executable Folder](media/browser-executable-folder.png)
+   ![Setting the Browser Executable Folder](./set-preview-channel-images/browser-executable-folder.png)
 
 1. Select the **Show** button.
 
 1. Fill-in the **Show Contents** dialog.  In the **Value name** column, enter your app's `.exe` filename or Application User Model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
 
-   ![The Show Contents dialog](media/show-contents.png)
+   ![The Show Contents dialog](./set-preview-channel-images/show-contents.png)
 
 1. Select **OK** to close the dialogs.
 

@@ -18,7 +18,7 @@ If you have concerns or questions about the Roadmap, provide your feedback in th
 
 The WebView2 team is planning the following major efforts for future updates:
 
-* MacOS Preview
+* macOS Preview
 * Xbox Preview
 * Linux Preview
 
@@ -78,4 +78,4 @@ The following technologies are now available in a Preview release.
 <!-- ------------------------------ -->
 #### HoloLens 2
 
-Starting with the Windows 11 update for HoloLens 2, a WebView2 Preview is now available on HoloLens 2 devices. The WebView2 Preview is available in the Insider Preview for Microsoft HoloLens.  For more information, see [Get started with WebView2 in HoloLens 2 Unity apps (Preview)](./get-started/hololens2.md).
+Starting with the Windows 11 update for HoloLens 2, a WebView2 Preview is now available on HoloLens 2 devices. 

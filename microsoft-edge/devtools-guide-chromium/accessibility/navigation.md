@@ -70,7 +70,7 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 
 | Action | Resulting tool |
 |---|---|
-| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon](media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools**. | The previously used tool, or the **Welcome** tool. |
+| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon](./navigation-images/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools**. | The previously used tool, or the **Welcome** tool. |
 | Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS). | The **Console** tool. |
 | Press **Ctrl+Shift+C** (Windows, Linux) or **Command+Option+C** (macOS). | The **Elements** tool, with the DOM tree expanded to show the `<body>` element. |
 | Press **Shift+F10** to open the right-click menu.  To select the **Inspect** command, press **Up Arrow** and then **Enter**. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |
@@ -289,7 +289,7 @@ The **Accessibility Tree** is presented as an [ARIA tree](https://www.w3.org/TR/
 
 When you click the **Inspect** tool button and move around in the rendered webpage, the Inspect tooltip changes.  To keep the current tooltip and grid color overlay displayed, press and hold **Ctrl+Alt** (Windows, Linux) or **Ctrl+Option** (macOS) while you move around in the rendered webpage.
 
-This technique can be helpful when using a screen magnifier or other assistive technologies.  If you don't make the Inspect tool's tooltip persist, the hover overlay constantly changes when you use the **Inspect tool** (![Inspect tool button](../media/inspect-tool-icon-light-theme.png)).
+This technique can be helpful when using a screen magnifier or other assistive technologies.  If you don't make the Inspect tool's tooltip persist, the hover overlay constantly changes when you use the **Inspect tool** (![Inspect tool button](./navigation-images/inspect-tool-icon-light-theme.png)).
 
 See [Analyze pages using the Inspect tool](../css/inspect.md).
 

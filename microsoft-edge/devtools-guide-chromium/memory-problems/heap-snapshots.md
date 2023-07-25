@@ -54,13 +54,13 @@ This article uses five demo webpages, all sourced at https://github.com/Microsof
 
 1. Click the **Take snapshot** button, and then click **Start**.  Or, press **Ctrl+E** (Windows, Linux) or **Command+E** (macOS).
 
-![Selecting the 'Heap snapshot' profiling type in the Memory tool](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png)
+![Selecting the 'Heap snapshot' profiling type in the Memory tool](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.png)
 
 **Snapshots** are initially stored in the renderer process memory.  Snapshots are transferred to the DevTools on demand, when you click the snapshot icon to view it.
 
 After the snapshot has been loaded into DevTools and has been parsed, the number below the snapshot title appears and shows the [total size of the reachable JavaScript objects](memory-101.md#object-sizes).
 
-![Total size of reachable objects](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png)
+![Total size of reachable objects](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.png)
 
 > [!NOTE]
 > Only reachable objects are included in snapshots.  Also, taking a snapshot always starts with a garbage collection.
@@ -71,7 +71,7 @@ After the snapshot has been loaded into DevTools and has been parsed, the number
 
 Click the **Clear all profiles** icon to remove snapshots (both from DevTools and any memory associated with the renderer process).
 
-![Remove snapshots](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png)
+![Remove snapshots](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.png)
 
 Closing the DevTools window doesn't delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
 
@@ -98,7 +98,7 @@ View snapshots from different perspectives for different tasks.
 
 To switch between views, use the selector at the top of the view.
 
-![Switch views selector](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png)
+![Switch views selector](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.png)
 
 > [!NOTE]
 > Not all properties are stored on the JavaScript heap.  Properties implemented using getters that run native code aren't captured.  Also, non-string values such as numbers aren't captured.
@@ -107,7 +107,7 @@ To switch between views, use the selector at the top of the view.
 
 Initially, a snapshot opens in the Summary view, displaying object totals, which can be expanded to show instances:
 
-![Summary view](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png)
+![Summary view](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.png)
 
 Top-level entries are "total" lines.
 
@@ -129,7 +129,7 @@ After expanding a total line in the upper view, all of the instances are display
 
 The various constructor (group) entries in the heap profiler correspond to the following types of objects.
 
-![Constructor groups](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png)
+![Constructor groups](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.png)
 
 | Constructor (group) entry | Description |
 |:--- |:--- |
@@ -165,7 +165,7 @@ To verify that a certain application operation doesn't create leaks:
 
 In the **Comparison** view, the difference between two snapshots is displayed.  When expanding a total entry, added and deleted object instances are shown.
 
-![Comparison view](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png)
+![Comparison view](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.png)
 
 <!--todo: add HeapProfilingComparison section when available  -->
 
@@ -179,7 +179,7 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 | **GC roots** | The actual GC roots used by the garbage of the VM.  GC roots are comprised of built-in object maps, symbol tables, VM thread stacks, compilation caches, handle scopes, and global handles.  |
 | **Native objects** | Browser objects "pushed" inside the JavaScript virtual machine (JavaScript VM) to allow automation, for example, DOM nodes, CSS rules.  |
 
-![Containment view](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png)
+![Containment view](./heap-snapshots-images/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.png)
 
 <!--todo: add heap profiling containment section when available  -->
 
@@ -222,7 +222,7 @@ You may also be interested in following up the above demo with this example that
 <!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 <!--
-![Name functions to distinguish between closures](../media/memory-problems-domleaks.msft.png)
+![Name functions to distinguish between closures](../media/memory-problems-domleaks.png)
 -->
 
 
@@ -265,10 +265,9 @@ The heap profiler has the ability to reflect bidirectional dependencies between 
 DOM leaks may be bigger than you think.  Consider the following sample.  When is the `#tree` garbage-collected?
 
 ```javascript
-var select = document.querySelector;
-var treeRef = select("#tree");
-var leafRef = select("#leaf");
-var body = select("body");
+var treeRef = document.querySelector("#tree");
+var leafRef = document.querySelector("#leaf");
+var body = document.querySelector("body");
 
 body.removeChild(treeRef);
 
@@ -283,7 +282,7 @@ leafRef = null;
 
 The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when `leafRef` is nullified is the WHOLE tree under `#tree` a candidate for garbage-collection (GC).
 
-![DOM subtrees](../media/memory-problems-tree-gc.msft.png)
+![DOM subtrees](./heap-snapshots-images/memory-problems-tree-gc.png)
 
 
 ### Demo webpage: Example 6: Leaking DOM nodes

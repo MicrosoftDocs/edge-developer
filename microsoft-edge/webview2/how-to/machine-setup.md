@@ -26,7 +26,7 @@ This article covers general-purpose setup of your development environment for We
 <!-- ====================================================================== -->
 ## Install a preview channel of Microsoft Edge
 
-1. Install any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
+1. Install any [Microsoft Edge Insider (preview) Channel](https://www.microsoft.com/edge/download/insider) (Beta, Dev, or Canary) on a supported operating system (OS):
    *  Windows 10
    *  Windows 11
 
@@ -56,11 +56,11 @@ To download the repo (as a `.zip` file):
 
 1. Click the green **Code** button in the upper right of the GitHub repo, and then click **Download ZIP**.
 
-   ![Downloading the WebView2Samples repo](../media/download-the-webview2-samples-repo.png)
+   ![Downloading the WebView2Samples repo](./machine-setup-images/download-the-webview2-samples-repo.png)
 
    The **Download** pop-up appears in Microsoft Edge:
 
-   ![The 'Settings and more' icon in the toolbar of Microsoft Edge](../media/settings-and-more-edge-icon.png)
+   ![The 'Settings and more' icon in the toolbar of Microsoft Edge](./machine-setup-images/settings-and-more-edge-icon.png)
 
    In Microsoft Edge, if the **Download** pop-up isn't visible, click **Settings and more** (...) and then click **Downloads**.
 
@@ -72,7 +72,7 @@ To download the repo (as a `.zip` file):
 
 1. Unzip the `WebView2Samples-main.zip` file and note the location of the unzipped files.
 
-   ![The downloaded, unzipped WebView2Samples repo](../media/downloaded-samples-repo-unzipped.png)
+   ![The downloaded, unzipped WebView2Samples repo](./machine-setup-images/downloaded-samples-repo-unzipped.png)
 
 1. Study the breakout of main directories.
 
@@ -105,7 +105,7 @@ To clone the `WebView2Samples` repo (or the `WebView2Browser` repo), you must fi
 
 1. Click the green **Code** button in the upper right of the GitHub repo, select **Clone**, and then click the **Copy** icon (or, select the HTTPS URL string in the text box and copy it).
 
-   ![Cloning the WebView2Samples repo](../media/clone-the-webview2-samples-repo.png)
+   ![Cloning the WebView2Samples repo](./machine-setup-images/clone-the-webview2-samples-repo.png)
 
 1. Decide which tool you want to use to locally clone the repo:
    *  Visual Studio
@@ -159,11 +159,11 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
    git clone https://github.com/MicrosoftEdge/WebView2Samples.git
    ```
 
-   ![Using the Git Bash shell to enter the git clone command in your desired local target git or GitHub repo directory](../media/git-bash-git-clone-url-command.png)
+   ![Using the Git Bash shell to enter the git clone command in your desired local target git or GitHub repo directory](./machine-setup-images/git-bash-git-clone-url-command.png)
 
    The directory is created on your local drive, in the path you specified, such as in the following figure:
 
-   ![File Explorer showing the directory for the cloned WebView2Samples repo](../media/file-explorer-cloned-webview2-samples-repo.png)
+   ![File Explorer showing the directory for the cloned WebView2Samples repo](./machine-setup-images/file-explorer-cloned-webview2-samples-repo.png)
 
    You've cloned the repo to your local drive.
 
@@ -184,7 +184,7 @@ After you clone or download the `WebView2Samples` repo, open a `.sln` file in Vi
 
 1. Open one of the `.sln` files.  For example, open your local copy of the main Win32 solution file [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln) (downloaded as path `WebView2Samples-main/SampleApps/WebView2Samples.sln`) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following projects:
 
-   ![Solution Explorer for the WebView2Samples repo, showing the WebView2 samples as projects](media/machine-setup-solution-file-webview2samples.png)
+   ![Solution Explorer for the WebView2Samples repo, showing the WebView2 samples as projects](./machine-setup-images/machine-setup-solution-file-webview2samples.png)
 
 
 For general, initial Dev environment setup, you can open any type of `.sln` file from the `WebView2Samples` repo:
@@ -205,17 +205,17 @@ Install Visual Studio workloads if prompted.  When you open a `.sln` file from t
 
 1. Click the **OK** button.  Then you might see a workload installer such as:
 
-   ![Visual Studio installer for the .NET desktop development workload](../media/visual-studio-installer-net-desktop-devmt-workload.png).
+   ![Visual Studio installer for the .NET desktop development workload](./machine-setup-images/visual-studio-installer-net-desktop-devmt-workload.png).
 
 1. Select the checkbox and then click the **Install** button.
 
    The Visual Studio installer runs, for the platform's workload:
 
-   ![Visual Studio installer, installing the .NET desktop development workload](../media/visual-studio-installer-for-platform-workload.png).
+   ![Visual Studio installer, installing the .NET desktop development workload](./machine-setup-images/visual-studio-installer-for-platform-workload.png).
 
    A Migration Report log file page might open, such as at `file:///C:/Users/username/Documents/WebView2Samples-main/WebView2Samples-main/SampleApps/UpgradeLog.htm`:
 
-   ![Visual Studio 2022 workload installer Migration Report for the multi-platform, comprehensive-API sample](../media/migration-report-while-installing-workload.png)
+   ![Visual Studio 2022 workload installer Migration Report for the multi-platform, comprehensive-API sample](./machine-setup-images/migration-report-while-installing-workload.png)
 
    _To zoom, right-click > **Open image in new tab**._
 
@@ -223,7 +223,7 @@ Install Visual Studio workloads if prompted.  When you open a `.sln` file from t
 
    Visual Studio opens the selected `.sln` file in Solution Explorer:
 
-   ![Visual Studio 2022 after running the workload installer when opening the multi-platform, comprehensive-API sample](../media/vs2022-after-net-workload-installer.png)
+   ![Visual Studio 2022 after running the workload installer when opening the multi-platform, comprehensive-API sample](./machine-setup-images/vs2022-after-net-workload-installer.png)
 
 
 <!--
@@ -263,7 +263,7 @@ Install or update the Release or Prerelease WebView2 SDK, as follows:
 
    The following image shows a particular .sln file and project; use whichever project you want to install the SDK to:
 
-   ![Manage NuGet packages](../media/manage-nuget-packages.png)
+   ![Manage NuGet packages](./machine-setup-images/manage-nuget-packages.png)
 
    The **NuGet Package Manager** tab opens in Visual Studio.
 
@@ -277,7 +277,7 @@ Install or update the Release or Prerelease WebView2 SDK, as follows:
 
 1. In the right-hand pane, click the **Install** (or **Update**) button.  NuGet downloads the WebView2 SDK to your machine, for use by this project.
 
-   ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio](../media/nuget.png)
+   ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio](./machine-setup-images/nuget.png)
 
    _To zoom, right-click > **Open image in new tab**._
 

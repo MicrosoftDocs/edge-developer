@@ -69,7 +69,7 @@ Cons:
 
 The [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) section of the **Microsoft Edge WebView2** page provides several options for distributing the WebView2 Runtime onto client machines.  Understanding the options at this page provides a good introduction, to help decide which approach you want to use.
 
-![Options for distributing and updating the WebView2 Runtime](../media/runtime-distrib-options.png)
+![Options for distributing and updating the WebView2 Runtime](./distribution-images/runtime-distrib-options.png)
 
 The Evergreen distribution mode is recommended for most apps.
 
@@ -252,7 +252,7 @@ The Web is constantly evolving.  In the Evergreen distribution mode, the WebView
 
 Microsoft Edge preview channels (Beta, Dev, and Canary) provide a sneak peek into what is coming next in the WebView2 Runtime.  Test your WebView2 app regularly against a  Microsoft Edge preview channel, and update your app or [report issues](https://github.com/MicrosoftEdge/WebViewFeedback) if issues arise.  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
 
-To help you decide which channel is right, see [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels).  You can [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download) on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.
+To help you decide which channel is right, see [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels).  You can [Download Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider) on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.
 
 See [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).  You can also use WebDriver to automate WebView2 testing, as described in [Automate, and test WebView2 with Microsoft Edge WebDriver](../how-to/webdriver.md).
 
@@ -350,7 +350,7 @@ To use the Fixed Version distribution mode:
 
    1. To confirm that PlayReady is installed correctly, in the **Security** tab of the **Fixed Version** folder, make sure permissions are granted for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`, as shown below:
 
-      ![Permission for PlayReady](../media/play-ready-permission.png)
+      ![Permission for PlayReady](./distribution-images/play-ready-permission.png)
 
 
 <!-- ====================================================================== -->
