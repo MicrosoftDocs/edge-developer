@@ -113,7 +113,7 @@ The user can modify this permission anytime by going to Microsoft Edge > **Setti
 
 * **Page content** from public **pages on the Bing index** – Bing Chat uses publicly available information from the Bing search engine to summarize pages that are available on the Bing search index.  To answer questions from public pages, Microsoft Edge doesn't need to share this page content with Bing Chat.
 
-* **Page content** from **non-Bing index** pages – information that's used to summarize a non-Bing index page is deleted after 6 hours, and it is only used to answer the query.
+* **Page content** from **non-Bing index pages** – information that's used to summarize a non-Bing index page is deleted after 6 hours, and it is only used to answer the query.
 
 
 <!-- ---------------------------------------------------------------------- -->
