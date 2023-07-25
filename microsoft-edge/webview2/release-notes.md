@@ -349,6 +349,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
    * `COREWEBVIEW2_TEXT_DIRECTION_KIND_LEFT_TO_RIGHT`
    * `COREWEBVIEW2_TEXT_DIRECTION_KIND_RIGHT_TO_LEFT`
 
+---
+
 
 <!-- ------------------------------ -->
 ###### Bug fixes
