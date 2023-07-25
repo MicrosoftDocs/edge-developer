@@ -81,12 +81,11 @@ In **Guest** mode, autofill is not available and new autofill entries aren't add
 <!-- ====================================================================== -->
 ## Bing Chat in Microsoft Edge sidebar
 
-With Bing Chat in the Microsoft Edge sidebar you can ask complex questions, find comprehensive answers, get summarized information, and find inspiration to build upon, in a side-by-side view, with no need to flip between tabs.
+In Bing Chat in the Microsoft Edge sidebar, you can ask complex questions, find comprehensive answers, get summarized information, and find inspiration to build upon, in a side-by-side view, with no need to flip between tabs.
 
-To turn on Bing Chat in the Microsoft Edge sidebar, click the **Bing Chat** (![Bing Chat icon](./index-images/bing-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of the Microsoft Edge toolbar.
+To open Bing Chat in the Microsoft Edge sidebar, click the **Bing Chat** (![Bing Chat icon.](./index-images/bing-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of the Microsoft Edge toolbar:
 
 ![Summarize this page](./index-images/summarize-content.png)
-<!-- todo: red boxes on Bing chat icon and the blue button "summarize this page" -->
 
 
 <!-- --------------------------------------------------------------------- -->
@@ -94,12 +93,11 @@ To turn on Bing Chat in the Microsoft Edge sidebar, click the **Bing Chat** (![B
 
 Microsoft Edge determines what data to send to Bing Chat based on the user's **query** and their consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the user's query and previous conversation history to help Bing Chat answer their query effectively.
 
-For questions that need **browsing context**, such as when the user asks Bing Chat to summarize a large page of text, Microsoft Edge requests permission from the user to access page information.  When the user grants permission to share page information, Microsoft Edge sends the full **browsing context** in addition to the users' **query** and previous **conversation history** to Bing Chat, to help generate a meaningful **response**.
+For questions that need **browsing context**, such as when the user asks Bing Chat to summarize a large page of text, Microsoft Edge requests permission from the user to access page information (the **browsing context**):
 
-Here's an example of what the permission screen looks like to gain access to the browsing context:
-
-<!-- todo: red box on entire chat rect -->
 ![Bing Chat asking for consent to access the page content in Microsoft Edge](./index-images/consent-for-contextual-browsing.png)
+
+When the user grants permission to share page information, Microsoft Edge sends the full **browsing context** in addition to the users' **query** and previous **conversation history** to Bing Chat, to help generate a meaningful **response**.
 
 The user can modify this permission anytime by going to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Bing Chat** and then turning on or off the **Allow access to any webpage or PDF** toggle.
 
@@ -123,24 +121,31 @@ The user can modify this permission anytime by going to Microsoft Edge > **Setti
 
 Bing Chat has numerous protective measures in place that are constantly evolving.  For details, see [The new Bing: Our approach to Responsible AI](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2023/04/RAI-for-the-new-Bing-April-2023.pdf).
 
-<!-- To learn how Bing Chat for Enterprises protects user data and business data, see [Privacy and protections](/bing-chat-enterprise/privacy-and-protections).
+
+<!-- ---------------------------------------------------------------------- -->
+<!--
+#### Bing Chat for Enterprises
+
+Bing Chat for Enterprises ... (introduce).  To learn how Bing Chat for Enterprises protects user data and business data, see [Privacy and protections](/bing-chat-enterprise/privacy-and-protections).
+
 See also:
-* []-->
+* [Privacy and protections](/bing-chat-enterprise/privacy-and-protections)
+-->
 
 
 <!-- ---------------------------------------------------------------------- -->
-#### Glossary of terms
+#### Glossary of terms for Bing Chat
 
 | Term | Definition |
 |---|---|
-| _query_ | A question that a user types in Bing Chat. |
+| _query_ | A question that a user types in the **Ask me anything** text box in Bing Chat. |
 | _Bing index page_ | Any website URL that is publicly available on the internet for Bing to search and can be reached via a URL that starts with `http://` or `https://`. |
-| _non-Bing index page_ | Any webpage or local file that is not available publicly for Bing to search but is open on Microsoft Edge. |
-| _grounding_ | This means that we center the response provided to a user’s query or prompt on high-ranking content from the web, and we provide links to websites so that users can learn more.  Bing ranks web search content by heavily weighting features such as relevance, quality, credibility, and freshness. |
+| _non-Bing index page_ | Any webpage or local file that is not available publicly for Bing to search, but is open in Microsoft Edge. |
+| _grounding_ | Centering the response that's provided to a user's query or prompt on high-ranking content from the web, and providing links to websites so that users can learn more.  Bing ranks web search content by heavily weighting features such as relevance, quality, credibility, and freshness. |
 | _response_ | The text that Bing Chat outputs in response to a prompt.  Synonyms: _completion_, _generation_, _answer_. |
 | _conversation history_ | A combination of user query and response in the Bing Chat format. |
-| _browsing context_ | Browsing context is comprised of the page URL, page content, or documents that are open in the active tab of the Microsoft Edge browser, such as webpages, local PDFs, Word documents, or other local files.  For example, the user can ask **Summarize this page** while they are browsing a long topic or webpage.  Bing Chat uses the page context (such as the page URL) and the page content to summarize the topic for the user. |
-| _page information_ | Page information includes the web page content or the content of the document that a user has open in the active tab of the Microsoft Edge browser. |
+| _browsing context_ | The page URL and page content that's open in the active tab of the Microsoft Edge browser. These could be webpages, local PDFs, Word documents, or other local files.  For example, the user can ask **Summarize this page** while they are browsing a long topic or webpage.  Bing Chat uses the page context (such as the page URL) and the page content to summarize the topic for the user. |
+| _page information_ | The webpage content, or the content of the document, that's open in the active tab of the Microsoft Edge browser. |
 
 
 <!-- ====================================================================== -->
