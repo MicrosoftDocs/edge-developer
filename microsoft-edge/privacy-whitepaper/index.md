@@ -668,10 +668,6 @@ A _search_ is the act of an individual user manually entering text for the good 
 
 An _acquisition_ is the process of purchasing goods or downloading and acquiring a license for digital content from Microsoft, whether free or paid ("Acquisition"). Rewards points are not offered for every purchase from Microsoft. Microsoft may offer additional opportunities to earn points from time to time, and each point-earning offer will not be available in perpetuity.
 
-#### Device requirements
-
-To use the Rewards program, you need a valid Microsoft account, and your devices must meet the minimum [system requirements](https://account.microsoft.com/rewards/).
-
 #### Redeeming your points
 
 To redeem your points or contribute points to a listed nonprofit organization, go to the [redeem page](https://aka.ms/redeemrewards). You can also sign up for automatic contributions to non-profit organizations through a giving program.
