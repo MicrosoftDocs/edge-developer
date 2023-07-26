@@ -654,7 +654,7 @@ The **Action center** in the Microsoft Edge sidebar:
 
 ![Rewards Sidebar UI](./index-images/rewardssidepane.png)
 
-Rewards is an opt-in program. To turn off all Rewards experiences and data sharing, go to `edge://settings/profiles/rewards`, and then in the **Microsoft Rewards** section, turn off the **Earn Microsoft Rewards in Microsoft Edge** toggle:
+Rewards is an opt-in program. To turn off all Rewards experiences and data sharing, go to `edge://settings/profiles/rewards`, and turn off the **Earn Microsoft Rewards in Microsoft Edge** setting.
 
 ![Rewards Settings UI](./index-images/rewardssettings.png)
 
