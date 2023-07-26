@@ -644,7 +644,7 @@ Microsoft Rewards (the "Program") enables you to earn redeemable points for acti
 
 For non-members, Microsoft Edge presents personalized joining offers based on the page you're on. Once you engage and choose to enroll, Microsoft Edge uses your Microsoft account identity to sign you up and start the rewards service.  The rewards service automatically adds points to your account for searching, playing, and shopping on Microsoft Edge. Microsoft Edge doesn't send your personal information or browsing data to any third-party services.
 
-Microsoft Edge periodically offers custom browsing streak offers, for browsing on Microsoft Edge for a few minutes every day for a limited period. You can track your streak progress; points earned and discover new offers on the [Rewards dashboard](https://rewards.bing.com/) or in the **Action center** in the Microsoft Edge sidebar.
+Microsoft Edge periodically offers custom browsing streak offers for a limited period, for browsing on Microsoft Edge for a few minutes every day. You can track your streak progress, track your points earned, and discover new offers on the [Rewards dashboard](https://rewards.bing.com/) or in the **Action center** in the Microsoft Edge sidebar.
 
 The Rewards dashboard (`rewards.bing.com`):
 
