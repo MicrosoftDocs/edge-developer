@@ -648,10 +648,6 @@ The Rewards dashboard (`rewards.bing.com`):
 
 ![Rewards Dashboard UI](./index-images/rewardsdashboard.png)
 
-The **Action center** in the Microsoft Edge sidebar:
-
-![Rewards Sidebar UI](./index-images/rewardssidepane.png)
-
 Rewards is an opt-in program. To turn off all Rewards experiences and data sharing, go to `edge://settings/profiles/rewards`, and turn off the **Earn Microsoft Rewards in Microsoft Edge** setting.
 
 ![Rewards Settings UI](./index-images/rewardssettings.png)
