@@ -874,7 +874,7 @@ You can also choose to have Microsoft Edge auto-group all of your tabs, by using
 
 ![Auto Tab Group UI](./index-images/tabgrouping2.gif)
 
-The Microsoft Edge Tab organization behavior is turned on by default. To turn this behavior off, use the **Privacy, search, and services** settings (`edge://settings/privacy`) > **Services** section > **Let Microsoft Edge help keep your tabs organized** toggle:
+The Microsoft Edge Tab organization behavior is turned on by default. To turn this behavior off, go to `edge://settings/privacy` and under **Services** turn off the **Let Microsoft Edge help keep your tabs organized** setting:
 
 ![Tab Group settings UI](./index-images/tabgroupsettings.png)
 
