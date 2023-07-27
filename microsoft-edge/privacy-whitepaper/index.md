@@ -91,7 +91,7 @@ To open Bing Chat in the Microsoft Edge sidebar, click the **Bing Chat** (![Bing
 <!-- --------------------------------------------------------------------- -->
 #### Data and consent used by Bing Chat in the sidebar
 
-Microsoft Edge determines what data to send to Bing Chat based on the user's **query** and their consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the user's query and previous conversation history to help Bing Chat answer their query effectively.
+Microsoft Edge determines what data to send to Bing Chat based on the user's **query** and their consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, page title, user's query, and previous conversation history to help Bing Chat answer their query effectively.
 
 For questions that need **browsing context**, such as when the user asks Bing Chat to summarize a large page of text, Microsoft Edge requests permission from the user to access page information:
 
