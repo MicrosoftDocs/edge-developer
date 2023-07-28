@@ -274,11 +274,15 @@ You can also set network throttling from within the **Performance** tool:
 <!-- ====================================================================== -->
 ## Emulate sensors
 
+Use the **Sensors** tool to override geolocation and simulate device orientation.
+
+<!--
 Use the **Sensors** tool to override geolocation, simulate device orientation, force touch, and emulate idle state.
 
-The sections below provide a quick look on how to override geolocation and set device orientation.  For a complete list of features, see <!--Emulate device sensors. https://developer.chrome.com/docs/devtools/sensors/-->:
-* [Override geolocation with the Sensors tool](https://review.learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/geolocation?branch=pr-en-us-2726)
-* [Simulate device orientation with the Sensors tool](https://review.learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/orientation?branch=pr-en-us-2726)
+The sections below provide a quick look on how to override geolocation and set device orientation.  For a complete list of features, see [Sensors: Emulate device sensors]().
+
+todo: compare https://developer.chrome.com/docs/devtools/sensors/
+-->
 
 
 <!-- ------------------------------ -->
@@ -302,6 +306,9 @@ To enter a custom location, select **Other** and enter the coordinates of your c
 
 To test how your page behaves when location information is unavailable, select **Location unavailable**.
 
+See also:
+* [Override geolocation with the Sensors tool](./geolocation.md)
+
 
 <!-- ------------------------------ -->
 #### Set orientation
@@ -323,6 +330,9 @@ To set the device orientation:
    Or, to enter your own orientation, select **Custom orientation**, and enter your own [alpha](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/alpha), [beta](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/beta), and [gamma](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/gamma) values:
 
    ![Orientation options on the Sensors tool](./index-images/device-toolbar-sensors-tokyo-portrait-upside-down.png)
+
+See also:
+* [Simulate device orientation with the Sensors tool](./orientation.md)
 
 
 <!-- ====================================================================== -->
