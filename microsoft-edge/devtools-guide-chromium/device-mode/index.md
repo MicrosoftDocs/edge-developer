@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/21/2023
+ms.date: 07/27/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,15 +22,26 @@ ms.date: 07/21/2023
    limitations under the License.  -->
 # Emulate mobile devices (Device Emulation)
 
-Use the **Device Emulation** tool, sometimes called _Device Mode_, to approximate how your page looks and responds on a mobile device.
+Use the **Device Emulation** tool, sometimes called _Device Mode_, to approximate how your page looks and behaves on a mobile device.
 
-DevTools provides the following mobile device emulation features:
-
+**Detailed contents:**<!--July 27, 2023. compare page toc at https://developer.chrome.com/docs/devtools/device-mode/-->
+* [Limitations](#limitations)
 * [Simulate a mobile viewport](#simulate-a-mobile-viewport)
-* [Throttle the network](#throttle-the-network-only)
-* [Throttle the CPU](#throttle-the-cpu-only)
-* [Override geolocation](#override-geolocation)
-* [Set orientation](#set-orientation)
+   * [Responsive Viewport Mode](#responsive-viewport-mode)
+      * [Show media queries](#show-media-queries)
+      * [Set the device type](#set-the-device-type)
+   * [Mobile Device Viewport Mode](#mobile-device-viewport-mode)
+      * [Rotate the viewport to landscape orientation](#rotate-the-viewport-to-landscape-orientation)
+      * [Show device frame](#show-device-frame)
+      * [Add a custom mobile device](#add-a-custom-mobile-device)
+   * [Show rulers](#show-rulers)
+   * [Zoom the viewport](#zoom-the-viewport)
+* [Throttle the network and CPU](#throttle-the-network-and-cpu)
+   * [Throttle the CPU only](#throttle-the-cpu-only)
+   * [Throttle the network only](#throttle-the-network-only)
+* [Emulate sensors](#emulate-sensors)
+   * [Override geolocation](#override-geolocation)
+   * [Set orientation](#set-orientation)
 * [Set the user agent string](#set-the-user-agent-string)
 * [Set user-agent client hints](#set-user-agent-client-hints)
 
@@ -40,7 +51,7 @@ DevTools provides the following mobile device emulation features:
 
 **Device Emulation** is a [first-order approximation](https://en.wikipedia.org/wiki/Order_of_approximation#First-order) of the look and feel of your page on a mobile device.  **Device Emulation** doesn't actually run your code on a mobile device.  Instead, you simulate the mobile user experience from your laptop or desktop.
 
-Some aspects of mobile devices are never emulated in DevTools.  For example, the architecture of mobile CPUs is different than the architecture of laptop or desktop CPUs.  When in doubt, your best bet is to actually run your page on a mobile device.
+Some aspects of mobile devices aren't emulated in DevTools.  For example, the architecture of mobile CPUs is different than the architecture of laptop or desktop CPUs.  For the most robust testing, run your page on a mobile device.
 
 Use [Remote Debugging](../remote-debugging/index.md) to interact with the code of a page from your machine while your page actually runs on a mobile device.  You can view, change, debug, profile, or all four while you interact with the code.  Your machine can be a notebook or desktop computer.
 
@@ -74,7 +85,9 @@ If you need more space on your screen, you can change where DevTools is docked i
 <!-- ---------- -->
 ###### Show media queries
 
-A _media query_ defines a breakpoint, which is a browser viewport width.  A webpage can define a responsive layout for each breakpoint (width) that it defines.
+A CSS _media query_ defines a breakpoint, which is a browser viewport width.  A webpage can define a responsive layout for each breakpoint (viewport width) that the webpage's CSS defines.
+
+Media queries can be used to change the layout of a page when the viewport of the device that the webpage is viewed on is over or under a certain width.  Media queries allow you to write code to use for page layout either when the screen width is under a certain size, or over a certain size, or within a mininum and maximum size.<!-- optional todo: condense -->
 
 To show media query breakpoints above the viewport:
 
@@ -84,16 +97,18 @@ To show media query breakpoints above the viewport:
    <!-- https://microsoftedge.github.io/Demos/devtools-a11y-testing/ -->
 
    If `max-width` or `min-width` breakpoints are defined by the webpage, DevTools displays additional bars above the viewport:
-   * A blue bar with `max-width` breakpoints.
-   * An orange bar with `min-width` breakpoints:
+   *  The blue bar corresponds to `max-width` media queries.
+   *  The green bar corresponds to media queries that use both `min-width` and `max-width`.
+   *  The orange bar corresponds to `min-width` media queries:
 
    ![Select a breakpoint to change the width of the viewport](./index-images/device-toolbar-click-breakpoint.png)
 
 1. To change the width of the viewport so that the media query for that breakpoint is used, click a breakpoint rectangle in the breakpoints bar.  The viewport's width changes so that the breakpoint gets triggered, and the webpage layout is updated.
 
-To find the corresponding `@media` declaration in the code for the webpage:
+1. To go to the corresponding `@media` declaration in the code for the webpage, right-click between breakpoint vertical bars, and then select **Reveal in source code**.  DevTools opens the **Sources** tool and displays the corresponding `@media` line in the **Editor**.
 
-* Right-click between breakpoint vertical bars, and then select **Reveal in source code**.  DevTools opens the **Sources** tool and displays the corresponding `@media` line in the **Editor**.
+See also:
+* [Debugging media queries](../css/index.md#debugging-media-queries) in _Get started viewing and changing CSS_.
 
 
 <!-- ---------- -->
@@ -103,24 +118,24 @@ To simulate a mobile device or desktop device, use the **Device Type** list:
 
 ![The Device Type list](./index-images/device-toolbar-device-type-list.png)
 
-The following device types are available:
+If the **Device Type** list isn't displayed, select **More options** > **Add device type**.
+
+The **Device Type** list contains the following device types:
 
 | Device type | Rendering method | Cursor icon | Events triggered |
 |:--- |:--- |:--- |:--- |
-| Mobile | Mobile | Circle | `touch` |
-| Mobile (no touch) | Mobile | Normal | `click` |
-| Desktop | Desktop | Normal | `click` |
-| Desktop (touch) | Desktop | Circle | `touch` |
+| **Mobile** | Mobile | Circle | `touch` |
+| **Mobile (no touch)** | Mobile | Normal | `click` |
+| **Desktop** | Desktop | Normal | `click` |
+| **Desktop (touch)** | Desktop | Circle | `touch` |
 
-Key:
+Key for columns in the above table:
 
 | Column | Description |
 |---|---|
 | **Rendering method** | Whether Microsoft Edge renders the page as a mobile or desktop viewport. |
 | **Cursor icon** | What type of cursor is displayed when you hover on the page. |
 | **Events triggered** | Whether the page triggers `touch` or `click` events when you interact with the page. |
-
-If the **Device Type** list isn't displayed, select **More options** > **Add device type**.
 
 
 <!-- ------------------------------ -->
@@ -257,7 +272,17 @@ You can also set network throttling from within the **Performance** tool:
 
 
 <!-- ====================================================================== -->
-## Override geolocation
+## Emulate sensors
+
+Use the **Sensors** tool to override geolocation, simulate device orientation, force touch, and emulate idle state.
+
+The sections below provide a quick look on how to override geolocation and set device orientation.  For a complete list of features, see <!--Emulate device sensors. https://developer.chrome.com/docs/devtools/sensors/-->:
+* [Override geolocation with the Sensors tool](https://review.learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/geolocation?branch=pr-en-us-2726)
+* [Simulate device orientation with the Sensors tool](https://review.learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/orientation?branch=pr-en-us-2726)
+
+
+<!-- ------------------------------ -->
+#### Override geolocation
 
 If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation-overriding UI.
 
@@ -278,8 +303,8 @@ To enter a custom location, select **Other** and enter the coordinates of your c
 To test how your page behaves when location information is unavailable, select **Location unavailable**.
 
 
-<!-- ====================================================================== -->
-## Set orientation
+<!-- ------------------------------ -->
+#### Set orientation
 
 If your page depends on orientation information from a mobile device to render properly, open the orientation UI.
 
