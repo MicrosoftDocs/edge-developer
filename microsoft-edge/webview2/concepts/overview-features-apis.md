@@ -2180,8 +2180,11 @@ See also:
    * [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
 * `CoreWebView2EnvironmentOptions` Class:
    * [CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.exclusiveuserdatafolderaccess)
+
+Clearing browser data:
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.ClearBrowsingDataAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync)
+* [CoreWebView2BrowsingDataKinds Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -2193,8 +2196,11 @@ See also:
    * [CoreWebView2Environment.UserDataFolder Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder)
 * `CoreWebView2EnvironmentOptions` Class:
    * [CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#exclusiveuserdatafolderaccess)
+
+Clearing browser data:
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.ClearBrowsingDataAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#clearbrowsingdataasync)
+* [CoreWebView2BrowsingDataKinds Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browsingdatakinds)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -2207,10 +2213,13 @@ See also:
 * `ICoreWebView2EnvironmentOptions2` interface:
    * [ICoreWebView2EnvironmentOptions2::get_ExclusiveUserDataFolderAccess method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#get_exclusiveuserdatafolderaccess)
    * [ICoreWebView2EnvironmentOptions2::put_ExclusiveUserDataFolderAccess method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#put_exclusiveuserdatafolderaccess)
+
+Clearing browser data:
 * `ICoreWebView2Profile2` interface:
    * [ICoreWebView2Profile2::ClearBrowsingData method](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdata)
    * [ICoreWebView2Profile2::ClearBrowsingDataAll method](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataall)
    * [ICoreWebView2Profile2::ClearBrowsingDataInTimeRange method](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataintimerange)
+* [COREWEBVIEW2_BROWSING_DATA_KINDS enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_browsing_data_kinds)
 
 ---
 
@@ -2282,51 +2291,6 @@ Access and manipulate the profile:
 * [ICoreWebView2Profile interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile)
 * [ICoreWebView2Profile2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile2) - Clears browsing data.
 * [ICoreWebView2Profile6 interface](/microsoft-edge/webview2/reference/win32/icorewebview2profile6) - Autofill and password autosave.<!--from v114-->
-
----
-
-
-<!-- ------------------------------ -->
-#### Clearing service worker browsing data
-<!-- todo: delete this new section?  move the 1 link into an above tab-set? -->
-
-The `ServiceWorkers` enum value in the `BrowsingDataKinds` enum specifies service workers that are registered for an origin.  Use this value to clear service workers when calling `CoreWebView2Profile.ClearBrowsingData`.  For information about that method, see [User data](#user-data) above.
-
-<!--
-https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds
-Members of the `BrowsingDataKinds` enum:
-* `AllDomStorage`
-* `AllProfile`
-* `AllSite`
-* `BrowsingHistory`
-* `CacheStorage`
-* `Cookies`
-* `DiskCache`
-* `DownloadHistory`
-* `FileSystems`
-* `GeneralAutofill`
-* `IndexedDb`
-* `LocalStorage`
-* `PasswordAutosave`
-* `ServiceWorkers` <-- new
-* `Settings`
-* `WebSql`
--->
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2BrowsingDataKinds` Enum:
-   * [CoreWebView2BrowsingDataKinds.ServiceWorkers Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2BrowsingDataKinds` Enum:
-   * [CoreWebView2BrowsingDataKinds.ServiceWorkers Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browsingdatakinds)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `COREWEBVIEW2_BROWSING_DATA_KINDS` enum:
-   * [COREWEBVIEW2_BROWSING_DATA_KINDS_SERVICE_WORKERS enum value](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_browsing_data_kinds)
 
 ---
 
