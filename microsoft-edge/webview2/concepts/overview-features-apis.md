@@ -1348,6 +1348,32 @@ The history methods allow back and forward navigation in WebView2, and the histo
 
 
 <!-- ------------------------------ -->
+#### Navigation kind
+
+`NavigationKind` gets the navigation kind of each navigation, such as Back/Forward, Reload, or navigation to a new document. 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2NavigationStartingEventArgs` Class:
+   * [CoreWebView2NavigationStartingEventArgs.NavigationKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs.navigationkind)
+* [CoreWebView2NavigationKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2navigationkind)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2NavigationStartingEventArgs` Class:
+   * [CoreWebView2NavigationStartingEventArgs.NavigationKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs#navigationkind)
+* [CoreWebView2NavigationKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationkind)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2NavigationStartingEventArgs3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs3)
+    * [ICoreWebView2NavigationStartingEventArgs3::get_NavigationKind property](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs3#get_navigationkind)<!--no put-->
+* [COREWEBVIEW2_NAVIGATION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_navigation_kind)
+
+---
+
+
+<!-- ------------------------------ -->
 #### Block unwanted navigating
 
 The `NavigationStarting` event allows the app to cancel navigating to specified URLs in WebView2, including for frames.
@@ -2260,6 +2286,51 @@ Access and manipulate the profile:
 ---
 
 
+<!-- ------------------------------ -->
+#### Clearing service worker browsing data
+<!-- todo: delete this new section?  move the 1 link into an above tab-set? -->
+
+The `ServiceWorkers` enum value in the `BrowsingDataKinds` enum specifies service workers that are registered for an origin.  Use this value to clear service workers when calling `CoreWebView2Profile.ClearBrowsingData`.  For information about that method, see [User data](#user-data) above.
+
+<!--
+https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds
+Members of the `BrowsingDataKinds` enum:
+* `AllDomStorage`
+* `AllProfile`
+* `AllSite`
+* `BrowsingHistory`
+* `CacheStorage`
+* `Cookies`
+* `DiskCache`
+* `DownloadHistory`
+* `FileSystems`
+* `GeneralAutofill`
+* `IndexedDb`
+* `LocalStorage`
+* `PasswordAutosave`
+* `ServiceWorkers` <-- new
+* `Settings`
+* `WebSql`
+-->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2BrowsingDataKinds` Enum:
+   * [CoreWebView2BrowsingDataKinds.ServiceWorkers Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2BrowsingDataKinds` Enum:
+   * [CoreWebView2BrowsingDataKinds.ServiceWorkers Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browsingdatakinds)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `COREWEBVIEW2_BROWSING_DATA_KINDS` enum:
+   * [COREWEBVIEW2_BROWSING_DATA_KINDS_SERVICE_WORKERS enum value](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_browsing_data_kinds)
+
+---
+
+
 <!-- ====================================================================== -->
 ## Performance and debugging
 
@@ -2389,55 +2460,6 @@ Receiver:
    * [ICoreWebView2::GetDevToolsProtocolEventReceiver method](/microsoft-edge/webview2/reference/win32/icorewebview2#getdevtoolsprotocoleventreceiver)
 * [ICoreWebView2DevToolsProtocolEventReceiver interface](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver)
 * [ICoreWebView2DevToolsProtocolEventReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceivedeventargs)
-
----
-
-
-<!-- ====================================================================== -->
-## NavigationKind (todo)
-
-* `NavigationKind` gets the navigation kind of each navigation, such as Back/Forward, Reload, or navigation to a new document. 
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2NavigationStartingEventArgs` Class:
-   * [CoreWebView2NavigationStartingEventArgs.NavigationKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs.navigationkind)
-* [CoreWebView2NavigationKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2navigationkind)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2NavigationStartingEventArgs` Class:
-   * [CoreWebView2NavigationStartingEventArgs.NavigationKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs#navigationkind)
-* [CoreWebView2NavigationKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationkind)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2NavigationStartingEventArgs3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs3)
-    * [ICoreWebView2NavigationStartingEventArgs3::get_NavigationKind property](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs3#get_navigationkind)<!--no put-->
-* [COREWEBVIEW2_NAVIGATION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_navigation_kind)
-
----
-
-
-<!-- ====================================================================== -->
-## BrowsingDataKinds - ServiceWorkers (todo)
-
-* The `ServiceWorkers` enum value in the `BrowsingDataKinds` enum specifies service workers that are registered for an origin.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2BrowsingDataKinds` Enum:
-   * [CoreWebView2BrowsingDataKinds.ServiceWorkers Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2BrowsingDataKinds` Enum:
-   * [CoreWebView2BrowsingDataKinds.ServiceWorkers Enum Value](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browsingdatakinds)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `COREWEBVIEW2_BROWSING_DATA_KINDS` enum:
-   * [COREWEBVIEW2_BROWSING_DATA_KINDS_SERVICE_WORKERS enum value](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_browsing_data_kinds)
 
 ---
 
