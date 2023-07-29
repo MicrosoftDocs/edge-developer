@@ -99,7 +99,7 @@ To show media query breakpoints above the viewport:
    If `max-width` or `min-width` breakpoints are defined by the webpage, DevTools displays additional bars above the viewport:
    *  The blue bar corresponds to `max-width` media queries.
    *  The green bar corresponds to media queries that use both `min-width` and `max-width`.
-   *  The orange bar corresponds to `min-width` media queries:
+   *  The orange bar corresponds to `min-width` media queries.
 
    ![Select a breakpoint to change the width of the viewport](./index-images/device-toolbar-click-breakpoint.png)
 
