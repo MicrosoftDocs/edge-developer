@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/01/2023
+ms.date: 07/31/2023
 ---
 # What's New in DevTools (Microsoft Edge 115)
 
@@ -66,11 +66,19 @@ See also:
 
 Microsoft Edge 115 also includes the following updates from the Chromium project:
 
-tbd
-
-<!-- 
-* [](https://developer.chrome.com/blog/new-in-devtools-115/#x)
--->
+<!-- todo: delete some links? -->
+* [Elements improvements](https://developer.chrome.com/blog/new-in-devtools-115/#elements)
+   * [New CSS subgrid badge](https://developer.chrome.com/blog/new-in-devtools-115/#subgrid)
+   * [Selector specificity in tooltips](https://developer.chrome.com/blog/new-in-devtools-115/#specificity)
+   * [Values of custom CSS properties in tooltips](https://developer.chrome.com/blog/new-in-devtools-115/#css-variable-values)
+* [Sources improvements](https://developer.chrome.com/blog/new-in-devtools-115/#sources)
+   * [CSS syntax highlighting](https://developer.chrome.com/blog/new-in-devtools-115/#css)
+   * [Shortcut to set conditional breakpoints](https://developer.chrome.com/blog/new-in-devtools-115/#breakpoint)
+* [Application > Bounce Tracking Mitigations](https://developer.chrome.com/blog/new-in-devtools-115/#bounce-tracking)
+* [Lighthouse 10.2.0](https://developer.chrome.com/blog/new-in-devtools-115/#lighthouse)
+* [Ignore content scripts by default](https://developer.chrome.com/blog/new-in-devtools-115/#content-script)
+* [Network > Response pretty-printing by default](https://developer.chrome.com/blog/new-in-devtools-115/#network)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-115/#misc)
 
 
 <!-- ====================================================================== -->
