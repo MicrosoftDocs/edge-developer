@@ -1307,7 +1307,7 @@
               href: webview2/concepts/deployment-distribution.md
               displayName: Manage WebView2 applications  # old title
 
-            - name: Prerelease and release SDKs for WebView2
+            - name: Prerelease and Release SDKs for WebView2
               href: webview2/concepts/versioning.md
               displayName: experimental APIs, Understand the different WebView2 SDK versions  # old title
 
