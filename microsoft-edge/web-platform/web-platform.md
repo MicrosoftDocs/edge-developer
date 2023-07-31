@@ -71,7 +71,7 @@ See [Detect Microsoft Edge from your website](./user-agent-guidance.md).
 <!-- ====================================================================== -->
 ## Develop experiences for the sidebar in Microsoft Edge
 
-The sidebar in Microsoft Edge is a persistent pane located on the side of the browser, which coexists with the primary content of the browser. The sidebar allows users to easily access popular websites and utilities alongside their browser tabs. The content in the sidebar augments the user's primary task by enabling side-by-side browsing and minimizing the need to switch contexts between browser tabs. With the sidebar in Microsoft Edge, users can access the productivity tools they need while staying in their workflow.
+The sidebar in Microsoft Edge is a persistent pane located on the side of the browser, which coexists with the primary content of the browser. The sidebar allows users to easily access popular websites and utilities alongside their browser tabs. The content in the sidebar augments the user's primary task by enabling side-by-side browsing and minimizing the need to switch contexts between browser tabs. With the sidebar in Microsoft Edge, users can access the productivity tools they need, while staying in their workflow.
 
 As a developer, you can leverage the sidebar for your own experiences in two ways:
 
