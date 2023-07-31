@@ -58,9 +58,9 @@ You can move tools between the **Activity Bar** (at the top) and the **Quick Vie
 <!-- ====================================================================== -->
 ## Reorder tools
 
-Click and drag a tool to change the ordering.  Your custom tool order persists across DevTools sessions.
+To change the ordering of tabs on a toolbar, drag a tool's tab to the desired location.  Your custom tool order persists across DevTools sessions.
 
-By default, the **Network** tool is usually the fifth tab on the main toolbar.  In the following figure, the **Network** tool is being moved to become the first tab in the main toolbar.
+For example, by default, the **Network** tool is the fifth tab on the Activity Bar.  You can drag the **Network** tab to become the first tab:
 
 ![Custom order of DevTools in a toolbar](./index-images/network-first-position.png)
 

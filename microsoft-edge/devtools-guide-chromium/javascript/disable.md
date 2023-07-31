@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/12/2023
+ms.date: 07/27/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,27 +28,27 @@ To turn off JavaScript:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**:
 
    ![The Command Menu](./disable-images/command.png)
 
-1. Start typing `javascript`, select **Disable JavaScript**, and then press **Enter** to run the command.  JavaScript is now disabled.
+1. Start typing `javascript`, select **Disable JavaScript [Debugger]**, and then press **Enter**:
 
    ![Select 'Disable JavaScript' in the Command Menu](./disable-images/command-javascript.png)
 
-    The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.
+   The yellow triangular warning icon in the **Sources** tab indicates that JavaScript is disabled:
 
    ![The warning icon next to Sources](./disable-images/javascript-disabled-warning.png)
 
 JavaScript remains disabled in the tab for as long as you have DevTools open.
 
-To see whether the page depends on JavaScript while loading, refresh the page.
+To check how the page behaves without JavaScript, refresh the page.
 
 To re-enable JavaScript:
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-1. Select the **Enable JavaScript** command.
+1. Select the **Enable JavaScript [Debugger]** command, and then press **Enter**.
 
 
 <!-- ====================================================================== -->
