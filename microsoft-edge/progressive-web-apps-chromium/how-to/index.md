@@ -51,7 +51,7 @@ On top of the user interface code, you also use JavaScript to make your applicat
 
 The following diagram shows the high-level architecture of a PWA.  The web server is on one side of the PWA, and the device is on the other side. The device contains the front-end code, including HTML, CSS, JavaScript, the service worker, and the manifest:
 
-![Architecture diagram of a PWA](../media/pwa-architecture.png)
+![Architecture diagram of a PWA](./index-images/pwa-architecture.png)
 
 
 <!-- ====================================================================== -->
@@ -95,7 +95,7 @@ So far, there is no content available on your web server. Start by creating the 
 
 1. Open Visual Studio Code, select **File** > **Open Folder** and then select the `MySamplePWA` directory you created in the previous step.
 
-1. Create a new file in the project by pressing `Ctrl+N`, add the following content, and save the file as `index.html`:
+1. Create a new file in the project by pressing **Ctrl+N**, add the following content, and save the file as `index.html`:
 
    ```html
    <!DOCTYPE html>
@@ -114,7 +114,7 @@ So far, there is no content available on your web server. Start by creating the 
 
 1. Go to `http://localhost:8080` to view your app:
 
-   ![Running your new PWA on localhost](../media/sample-pwa-app.png)
+   ![Running your new PWA on localhost](./index-images/sample-pwa-app.png)
 
 The app runs in the browser for now, and can't be installed. To make the app installable, the app needs a web app manifest.
 
@@ -126,7 +126,7 @@ A [Web App Manifest](web-app-manifests.md) is a JSON file containing metadata ab
 
 To add an app manifest to your app:
 
-1.  In Visual Studio Code, press `Ctrl`+`N` to create a new file with the following content, and save the file as `manifest.json`.
+1.  In Visual Studio Code, press **Ctrl+N** to create a new file with the following content, and save the file as `manifest.json`.
 
     ```json
     {
@@ -148,7 +148,7 @@ To add an app manifest to your app:
     }
     ```
 
-1.  Add a 512x512 pixel app icon image named `icon512.png` to your project. You can use the [sample image](../media/icon512.png) for testing purposes.
+1.  Add a 512x512 pixel app icon image named `icon512.png` to your project. You can use the [sample image](./index-images/icon512.png) for testing purposes.
 
 1.  In Visual Studio Code, open `index.html`, and add the following code inside the `<head>` tag.
 
@@ -160,7 +160,7 @@ To add an app manifest to your app:
 
 Your VS Code project should now look somewhat like this:
 
-![Screenshot of VS Code showing the sample PWA project, with the index.html, manifest.json, and icon files](../media/visual-studio-project-with-manifest.png)
+![Screenshot of VS Code showing the sample PWA project, with the index.html, manifest.json, and icon files](./index-images/visual-studio-project-with-manifest.png)
 
 
 <!-- ====================================================================== -->
@@ -298,11 +298,11 @@ In this step of the tutorial, we'll create a basic temperature unit conversion a
 
     Your Visual Studio Code project should now look something like this:
 
-    ![The sample PWA project in Visual Studio Code, with the index.html, converter.js, converter.css, and manifest.json files](../media/visual-studio-project-with-front-end-files.png)
+    ![The sample PWA project in Visual Studio Code, with the index.html, converter.js, converter.css, and manifest.json files](./index-images/visual-studio-project-with-front-end-files.png)
 
 1. Go to `http://localhost:8080` to view your app:
 
-    ![Running your new PWA, with the frontend code, on localhost](../media/sample-pwa-app-with-frontend-code.png)
+    ![Running your new PWA, with the frontend code, on localhost](./index-images/sample-pwa-app-with-frontend-code.png)
 
 Your app does something useful now, but it can't be installed yet, because there's no service worker. You'll make your app installable in the next step, by creating a service worker.
 
@@ -322,7 +322,7 @@ For Microsoft Edge to be able to install the app, your app must have a service w
 
 A service worker is defined in a JavaScript file that's loaded by your app. To add a service worker to your project:
 
-1. In Visual Studio Code, create a new file (`Ctrl`+`N`), add the following content, and save the file as `sw.js`:
+1. In Visual Studio Code, create a new file (**Ctrl+N**), add the following content, and save the file as `sw.js`:
 
     ```javascript
     const CACHE_NAME = `temperature-converter-v1`;
@@ -367,7 +367,7 @@ A service worker is defined in a JavaScript file that's loaded by your app. To a
     
     The code also intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy. The service worker returns cached resources so your app can work offline, and if that fails attempts to download from the server.
 
-1.  Open `index.html` and add the following code at the end of the `<body>` tag to register your servier worker:
+1.  Open `index.html` and add the following code at the end of the `<body>` tag to register your service worker:
 
     ```html
     <script>
@@ -381,21 +381,21 @@ To confirm that your service worker is running:
 
 1. In Microsoft Edge, go to `http://localhost:8080`.
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. Open the **Application** tool, then **Service Workers**.  If the service worker isn't displayed, refresh the page.
 
-    ![The DevTools Application tool, showing the Service Workers panel, with the new sw.js worker running](../media/devtools-sw-overview.png)
+    ![The DevTools Application tool, showing the Service Workers panel, with the new sw.js worker running](./index-images/devtools-sw-overview.png)
 
 1.  View the service worker cache by expanding **Cache Storage** and selecting **temperature-converter-v1**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, and the initial page.
 
-    ![DevTools, showing where to view the cached resources](../media/devtools-cache.png)
+    ![DevTools, showing where to view the cached resources](./index-images/devtools-cache.png)
 
 1.  Try your PWA as an offline app. In DevTools, open the **Network** tool, and change the **Throttling** value to **Offline**.
 
 1.  Refresh your app. It should still appear correctly in the browser, using cached resources served by the service worker.
 
-    ![DevTools, showing where to switch the Throttling value to Offline](../media/devtools-offline.png)
+    ![DevTools, showing where to switch the Throttling value to Offline](./index-images/devtools-offline.png)
 
 
 <!-- ====================================================================== -->
@@ -405,11 +405,11 @@ Now that your app has a web app manifest and a service worker, supporting browse
 
 In Microsoft Edge, once you refresh your app, the **App available** button appears in the address bar. Clicking the **App available** button prompts you to install the app locally.
 
-![Microsoft Edge, with the sample PWA in a tab. The App available button in the address bar has been clicked and the installation prompt is displayed](../media/sample-pwa-app-available-button.png)
+![Microsoft Edge, with the sample PWA in a tab. The App available button in the address bar has been clicked and the installation prompt is displayed](./index-images/sample-pwa-app-available-button.png)
 
 Click **Install** to install the app locally. After the installation completes, your app is displayed in its own window, and its own application icon in the Taskbar.
 
-![The sample PWA, installed and running in its own window](../media/sample-pwa-installed.png)
+![The sample PWA, installed and running in its own window](./index-images/sample-pwa-installed.png)
 
 To learn more about installing PWAs, see [Use Progressive Web Apps in Microsoft Edge](../ux.md).
 

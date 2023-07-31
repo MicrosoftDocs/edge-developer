@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/17/2021
+ms.date: 06/23/2023
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -119,6 +119,7 @@ The following table lists the currently available permission strings to use in y
 | `scripting` | Gives your extension access to the `chrome.scripting` API. |
 | `search` | Gives your extension access to the `chrome.search` API. |
 | `sessions` | Gives your extension access to the `chrome.sessions` API. |
+| `sidePanel` | Gives your extension access to the `chrome.sidePanel` API.  See [Extensions in the Microsoft Edge sidebar](../developer-guide/sidebar.md). |
 | `signedInDevices` | Gives your extension access to the `chrome.signedInDevices` API. |
 | `storage` | Gives your extension access to the `chrome.storage` API. |
 | `system.cpu` | Gives your extension access to the `chrome.system.cpu` API. |
@@ -127,7 +128,7 @@ The following table lists the currently available permission strings to use in y
 | `system.storage` | Gives your extension access to the `chrome.system.storage` API. |
 | `tabCapture` | Gives your extension access to the `chrome.tabCapture` API. |
 | `tabGroups` | Gives your extension access to the `chrome.tabGroups` API. |
-| `tabs` | Gives your extension access to privileged fields of the `Tab` objects that can be used by several APIs, including `chrome.tabs` and `chrome.windows`.  In many circumstances, your extension doesn't need to declare the `tabs` permission, to make use of these APIs. |
+| `tabs` | Gives your extension access to privileged fields of the **Tab** objects that can be used by several APIs, including `chrome.tabs` and `chrome.windows`.  In many circumstances, your extension doesn't need to declare the `tabs` permission, to make use of these APIs. |
 | `topSites` | Gives your extension access to the `chrome.topSites` API. |
 | `tts` | Gives your extension access to the `chrome.tts` API. |
 | `ttsEngine` | Gives your extension access to the `chrome.ttsEngine` API. |
@@ -139,10 +140,16 @@ The following table lists the currently available permission strings to use in y
 | `webRequestBlocking` | Required if the extension uses the `chrome.webRequest` API to block requests. |
 
 
-
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/).
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Overview of Microsoft Edge extensions](../index.md)

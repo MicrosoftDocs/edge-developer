@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 12/10/2021
+ms.date: 07/25/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -23,7 +23,7 @@ This whitepaper focuses on the desktop version of Microsoft Edge. Parts of the d
 
 The address bar allows you to enter website URLs and search the web.  By default, the address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.
 
-![Address bar](./media/address-bar.png)
+![Address bar](./index-images/address-bar.png)
 
 To speed up browsing and searching, characters you type into the address bar are sent to your default search provider. The search provider returns suggested search queries.
 
@@ -79,6 +79,76 @@ In **Guest** mode, autofill is not available and new autofill entries aren't add
 
 
 <!-- ====================================================================== -->
+## Bing Chat in Microsoft Edge sidebar
+
+In Bing Chat in the Microsoft Edge sidebar, you can ask complex questions, find comprehensive answers, get summarized information, and find inspiration to build upon, in a side-by-side view, with no need to flip between tabs.
+
+To open Bing Chat in the Microsoft Edge sidebar, click the **Bing Chat** (![Bing Chat icon.](./index-images/bing-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of the Microsoft Edge toolbar:
+
+![Summarize this page](./index-images/summarize-content.png)
+
+
+<!-- --------------------------------------------------------------------- -->
+#### Data and consent used by Bing Chat in the sidebar
+
+Microsoft Edge determines what data to send to Bing Chat based on the user's **query** and their consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, page title, user's query, and previous conversation history to help Bing Chat answer their query effectively.
+
+For questions that need **browsing context**, such as when the user asks Bing Chat to summarize a large page of text, Microsoft Edge requests permission from the user to access page information:
+
+![Bing Chat asking for consent to access the page content in Microsoft Edge](./index-images/consent-for-contextual-browsing.png)
+
+When the user grants permission to share page information, Microsoft Edge sends the full **browsing context** in addition to the user's **query** and previous **conversation history** to Bing Chat, to help generate a meaningful **response**.
+
+The user can modify this permission anytime by going to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Bing Chat** and then turning on or off the **Allow access to any webpage or PDF** toggle.
+
+
+<!-- ---------------------------------------------------------------------- -->
+#### Duration of storage of conversation history
+
+* **Conversation history** is a history of all queries and responses from Bing Chat.  **Conversation history** is stored for 90 days.  This is independent of whether using Bing Chat in the Microsoft Edge sidebar or by visiting `www.bing.com/chat`.
+
+   * Users can delete a specific conversation or all the conversations from Bing Chat by going to `www.bing.com/chat`, and then deleting the specific conversations in the **Recent activity** section:
+
+     ![Recent conversation history in Bing Chat](./index-images/bing-chat-recent.png)
+
+* **Page content** from public **pages on the Bing index** – Bing Chat uses publicly available information from the Bing search engine to summarize pages that are available on the Bing search index.  To answer questions from public pages, Microsoft Edge doesn't need to share this page content with Bing Chat.
+
+* **Page content** from **non-Bing index pages** – information that's used to summarize a non-Bing index page is deleted after 6 hours, and it is only used to answer the query.
+
+
+<!-- ---------------------------------------------------------------------- -->
+#### Our commitment to responsible AI
+
+Bing Chat has numerous protective measures in place that are constantly evolving.  For details, see [The new Bing: Our approach to Responsible AI](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2023/04/RAI-for-the-new-Bing-April-2023.pdf).
+
+
+<!-- ---------------------------------------------------------------------- -->
+<!--
+#### Bing Chat for Enterprises
+
+Bing Chat for Enterprises ... (introduce).  To learn how Bing Chat for Enterprises protects user data and business data, see [Privacy and protections](/bing-chat-enterprise/privacy-and-protections).
+
+See also:
+* [Privacy and protections](/bing-chat-enterprise/privacy-and-protections)
+-->
+
+
+<!-- ---------------------------------------------------------------------- -->
+#### Glossary of terms for Bing Chat
+
+| Term | Definition |
+|---|---|
+| _query_ | A question that a user types in the **Ask me anything** text box in Bing Chat. |
+| _Bing index page_ | Any website URL that is publicly available on the internet for Bing to search and can be reached via a URL that starts with `http://` or `https://`. |
+| _non-Bing index page_ | Any webpage or local file that is not available publicly for Bing to search, but is open in Microsoft Edge. |
+| _grounding_ | Centering the response that's provided to a user's query or prompt on high-ranking content from the web, and providing links to websites so that users can learn more.  Bing ranks web search content by heavily weighting features such as relevance, quality, credibility, and freshness. |
+| _response_ | The text that Bing Chat outputs in response to a prompt.  Synonyms: _completion_, _generation_, _answer_. |
+| _conversation history_ | A combination of user query and response in the Bing Chat format. |
+| _browsing context_ | The page URL and page content that's open in the active tab of the Microsoft Edge browser. These could be webpages, local PDFs, Microsoft Word documents, or other local files.  For example, the user can ask **Summarize this page** while they are browsing a long topic or webpage.  Bing Chat uses the page context (such as the page URL) and the page content to summarize the topic for the user. |
+| _page information_ | The webpage content, or the content of the document, that's open in the active tab of the Microsoft Edge browser. |
+
+
+<!-- ====================================================================== -->
 ## Cast
 
 Cast in Microsoft Edge lets you display your media to another screen using Google Cast.  To access Cast, open **Settings and more (...)** > **More tools** > **Cast media to device**.  Cast relies on the Media Router extension not automatically installed with Microsoft Edge.  When you first use Cast, Microsoft Edge prompts for permission to install the Media Router extension.
@@ -99,9 +169,22 @@ You can delete templates stored on the device and clear the cache data. Go to `e
 
 <!-- Above, should pick one way. Check UI for privacy updates -->
 
-
 You can use the title of your collection to find relevant Pinterest Topic pages when searching in Microsoft Bing. Go to `edge://settings/privacy`. Turn on the **Show suggestions from Pinterest in Collections** setting. Microsoft Edge does not send data about your collections to Pinterest. You can remove the suggestions and stop searches for Pinterest Topic pages. Go to `edge://settings/privacy` and turn off the **Show suggestions from Pinterest in Collections** setting.
 Collections aren't available when using **InPrivate** or **Guest** modes.
+
+
+<!-- ====================================================================== -->
+## Compose
+
+In the Bing Chat pane, the Compose tool uses AI to write for you, starting from a short prompt and **Tone**, **Format**, and **Length** selections. Text that's generated by Compose can be copied or inserted into the webpage directly.
+
+![Compose UI](./index-images/compose.png)
+
+To access Compose, click the **Bing Chat** (![Bing Chat icon](./index-images/bing-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of Microsoft Edge, and then select **Compose**. Text and selections that you enter are sent to an internal Microsoft Large Language Model (LLM).
+
+Requests for Compose are sent over a secure HTTPS connection. Each request contains the input prompt, formatting selections, and IDs that are associated with your Microsoft Edge profile and device, to reference for subsequent requests.
+
+To change settings for the sidebar or Bing Chat pane, go to `edge://settings/sidebar`, and then select **App and notification settings** > **Bing Chat**.
 
 
 <!-- ====================================================================== -->
@@ -109,7 +192,7 @@ Collections aren't available when using **InPrivate** or **Guest** modes.
 
 If optional diagnostic data, including crash reports, are turned on, diagnostic data is collected when Microsoft Edge crashes or closes unexpectedly. The diagnostic data is used to diagnose and fix problems with Microsoft Edge and other Microsoft products and services.
 
-![Crashes](./media/crashes2.png)
+![Crashes](./index-images/crashes2.png)
 
 Collected diagnostic data is in the form of crash dumps, which contain device and software state captured at the time Microsoft Edge crashed or closed. The crash dump contains information about what was happening at the time of the problem. Information such as the website you were visiting at the time of the crash or your CPU usage may be included in the diagnostic data. If crash reporting is turned on, the crash dump is stored locally on the device and sent to Microsoft using an encrypted link.
 
@@ -135,7 +218,7 @@ Microsoft uses diagnostic data to improve products and services. Diagnostic da
 
 Microsoft Edge collects a set of required diagnostic data needed to keep the product secure, up to date, and performing properly. The required diagnostic data includes device connectivity, configuration information, software setup, and inventory. Microsoft uses this diagnostic data to troubleshoot issues and keep Microsoft products and services reliable, secure, and operating normally. For more information about diagnostic data on managed devices, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) and [Microsoft Edge diagnostic data group policy](/deployedge/microsoft-edge-enterprise-privacy-settings).
 
-![Diagnostic data](./media/diagnostic-data2.png)
+![Diagnostic data](./index-images/diagnostic-data2.png)
 
 You may also choose to share optional diagnostic data. As you use Microsoft Edge features and services, or other applications that use the Microsoft Edge web platform, Microsoft Edge sends optional diagnostic data about how you use those features and the websites you visit. With your permission, this optional diagnostic data is sent to Microsoft to improve products and services for everyone. This data is not collected or stored with your Microsoft account.
 
@@ -196,6 +279,7 @@ Microsoft Edge lets you download files safely and securely.  To choose where fil
 
 To view the history of your previous downloads, go to `edge://downloads`.  To clear your browsing data and delete your download history, go to `edge://settings/clearBrowserData`.  Deleting your download history from Microsoft Edge does not remove the files from your device.  Deleting downloaded files from your device does not remove the files from your download history.  When you use **InPrivate** browsing or **Guest** mode, the download history from the session is cleared when you close the **InPrivate** or **Guest** windows. The files remain saved on the device.
 
+
 <!-- ====================================================================== -->
 ## Enterprise security and compliance
 
@@ -204,12 +288,15 @@ Microsoft Edge supports a variety of first-party enterprise security and complia
 * [Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)
 * [Microsoft Endpoint Data Loss Prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
 * [Microsoft Insider Risk Management](/microsoft-365/compliance/insider-risk-management-solution-overview) 
+* [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) 
+
 
 These features become functional only on enterprise-managed devices by acquiring the right license for the feature or by the administrator deploying specific policies on the device.
 
 When these enterprise features are on, the browser sends auditing and diagnostic data to the administrator as per the feature’s requirement to function, manage or diagnose properly. This data collection is controlled by the enterprise administrator and end user is not able to opt-out.
 
 Please contact your enterprise administrator to understand your company's policies for such data collection.
+
 
 <!-- ====================================================================== -->
 ## Extensions and Microsoft Edge Add-ons
@@ -241,6 +328,8 @@ Web filtering protects children in the family group from going to mature website
 Activity reporting records information about the websites children visit. Records also include searches, screen time, devices used, and attempt to visit blocked sites. The family group organizer may see the information at [family.microsoft.com](https://account.microsoft.com/family). The data is collected, encrypted in transit, sent to Microsoft, and stored on secure Microsoft storage servers. The data is collected with the child's Microsoft account so it may be properly managed. Activity reports are stored on [family.microsoft.com](https://account.microsoft.com/family) for up to 30 days and then deleted after.
 
 Safe search adds a safe keyword to the header request to search engines. Bing reads the safe keyword and filters search results returned to the child. Other search engines may return filtered results due to the keyword. All of the child's searches are collected and made available for the family organizer to view in activity reports or at [family.microsoft.com](https://account.microsoft.com/family). The data is collected with the child's Microsoft account so it may be properly managed.
+
+The child account's health status is also monitored.  When a child needs to take action to log back into their account, such as when a password has changed or expired, their parent is informed.  This data is collected, encrypted in transit, and sent to Microsoft and stored on secure Microsoft storage servers. The account health status is stored on [family.microsoft.com](https://account.microsoft.com/family) for up to 30 days and then is deleted afterwards.
 
 The child's browsing data is stored on secure Microsoft servers and made available to parents for up to 30 days, then immediately deleted.  The data may be deleted at any time from the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/). To clear browsing data stored locally on a device, go to `edge://settings/clearBrowserData`.  Choose a **Time range**, select checkboxes as needed, then select **Clear now**.
 
@@ -278,7 +367,7 @@ Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api)
 
 Microsoft Edge indicates when your precise location is being shared on the right side of the address bar. 
 
-![Location](./media/geolocation2.png)
+![Location](./index-images/geolocation2.png)
 
 You can allow Microsoft Edge to provide the requesting site with a precise location on Windows 10 and Windows 11. Open **Start** > **Settings** > **Privacy** > **Location** and turn on the **Allow access to location on this device** and **Allow apps to access your location** settings. These settings enable the Windows location service. When enabled, Microsoft services may also estimate your imprecise location via the Windows location service to provide locally relevant browsing experiences.
 
@@ -300,13 +389,11 @@ To control Image Descriptions, go to `edge://settings/accessibility`. Toggle the
 
 Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, right-click the webpage, and select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing. 
 
-<!-- ====================================================================== -->
-
 
 <!-- ====================================================================== -->
 ## Image Enhancement
 
-To provide a better browsing experience, Microsoft Edge offers Image Enhancement by improving color, lighting, contrast, and sharpness of images. When Image Enhancement is turned on, Microsoft Edge encrypts and transmits images to Microsoft servers to perform image enhancement. No user identifiers are included in the requests to the servers. The images are cached for 30 days to improve performance. 
+To provide a better browsing experience, Microsoft Edge offers Image Enhancement by improving color, lighting, contrast, and sharpness of images. When Image Enhancement is turned on, Microsoft Edge encrypts and transmits image URLs to Microsoft servers to perform image enhancement. No user identifiers are included in the requests to the servers. The image URL and enhanced image are cached for 7 days solely to improve performance. 
 
 To control Image Enhancement, go to `edge://settings/privacy` and turn on or off the **Enhance images in Microsoft Edge** setting. 
 
@@ -314,15 +401,17 @@ To control Image Enhancement, go to `edge://settings/privacy` and turn on or off
 <!-- ====================================================================== -->
 ## Import browser data
 
-Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time.  You can import your browser data to Microsoft Edge from another browser.  During import, you can either keep your existing data, or delete it and start fresh.  The data includes your favorites, browsing history, autofill data, extensions, settings, and other browsing data.
+Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time. You can import your browser data to Microsoft Edge from another browser. The data includes your favorites, browsing history, cookies, autofill data, extensions, settings, and other browsing data.
 
-Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge.  With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you sign in and sync your browsing data.
+With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  If you choose to regularly import your browsing data, browsing data will be imported each time Microsoft Edge is launched.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you sign in and sync your browsing data.
 
-![Import](./media/migration.png)
+You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`.
 
-You can import extensions from a different browser such as Google Chrome. If the extension is not available on the Microsoft Edge Add-ons website, Microsoft Edge imports a local copy and asks for permission before starting. The permissions for some of the extensions may have changed. To review the extension permissions, go to `edge://extensions`.
+![Dialog that prompts you to import browser data from another browser](./index-images/migration.png)
 
-To import data from another browser at any time, go to `edge://settings/importData`.
+When importing extensions, if the extension is not available on the Microsoft Edge Add-ons website, Microsoft Edge imports a local copy and asks for permission before starting. The permissions for some of the extensions may have changed. To review the extension permissions, go to `edge://extensions`.
+
+Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge. 
 
 
 <!-- ====================================================================== -->
@@ -343,7 +432,7 @@ Automatic updates are turned on by default for all Microsoft Edge users.  On all
 Microsoft Edge offers a simplified experience with the integration of Internet Explorer (IE).  Microsoft Edge only supports IE 11, and IE mode is only available on Windows.  The IE mode feature is available for organizations through group policies.  The administrator chooses to open certain sites in IE mode in Microsoft Edge.
 
 > [!div class="mx-imgBorder"]
-> ![IE mode](./media/ie-mode.png)
+> ![IE mode](./index-images/ie-mode.png)
 
 Microsoft Edge downloads the list of sites from a location defined by the administrator through a policy, and caches the file that determines which sites must be opened in IE mode.  Depending on your Windows or IE 11 settings, Microsoft Edge collects diagnostic data about the use of IE mode. Collected data includes which sites users visit, performance data, reliability data, and feature usage data.  On Windows 10 and later, the diagnostic data is collected according to your Windows Diagnostic data setting.  On Windows 8.1, website information is collected if the user has opted into the Flip Ahead or Suggested Sites feature in IE.  IE mode may not follow the same data collection settings in the Microsoft Edge Privacy settings.
 
@@ -373,7 +462,7 @@ You can clear or change the display of your recently closed tabs in the jump lis
 
 Kids Mode is a convenient browsing mode designed for kids inside Microsoft Edge.  With the kid-friendly features and safety guardrails in place, Kids Mode is a great place for children to safely explore the web.  Kids Mode includes features like custom browser themes, kid-friendly content, browsing based on an allowlist, Bing SafeSearch set to strict, and a password requirement to exit.  Kids Mode doesn't require a child account or profile, therefore you aren't able to sign into Kids Mode.
 
-![Kids Mode](./media/kids-mode.png)
+![Kids Mode](./index-images/kids-mode.png)
 
 Browsing in Kids Mode is limited to a default list of kid-friendly websites.  Upon navigation, the website is compared to a local list of allowed websites.  The websites visited in Kids Mode are not viewable on [family.microsoft.com](https://account.microsoft.com/family) since the browsing in Kids Mode is not associated with any account.  Allowed website exceptions may be added through the profile in which Kids Mode was launched.  Those exceptions are synced to the profile in which Kids Mode was launched, if that user is signed in.
 
@@ -400,11 +489,11 @@ Microsoft Edge uses a Microsoft network time service to track time from an exter
 <!-- ====================================================================== -->
 ## New tab page
 
-Microsoft Edge provides an engaging and user-centric new tab page with a search box powered by [Bing](https://bing.com). Microsoft Edge also provides quick link tiles for the sites you visit most frequently, and relevant content from Microsoft News or Office 365. You can change the appearance of the new tab page by selecting the **customize** button. Your new tab page preferences are set for each profile and stored locally on your device. The preferences aren't synced across devices.
+Microsoft Edge provides an engaging and user-centric new tab page with a search box powered by [Bing](https://bing.com). Microsoft Edge also provides quick link tiles for the sites you visit most frequently, and relevant content from Microsoft News or Microsoft 365. You can change the appearance of the new tab page by selecting the **customize** button. Your new tab page preferences are set for each profile and stored locally on your device. The preferences aren't synced across devices.
 
 To speed up load times for the Microsoft Edge new tab page, the page may be loaded in the background. The content that is loaded might include cookies, if you allow cookies. You can turn off background loading for the Microsoft new tab page. Go to `edge://settings/newTabPage` and turn off the **Preload the new tab page for a faster experience** setting.
 
-![New tab page](./media/n-t-p1.png)
+![New tab page](./index-images/n-t-p1.png)
 
 #### Microsoft News
 
@@ -420,9 +509,9 @@ Microsoft Edge collects diagnostic data about how you use the new tab page, such
 
 The new tab page also lets you set a custom image as the background. The image is stored locally on the device and may be deleted by removing the image or uploading a new image. No information about the image is sent to Microsoft.
 
-#### Office 365
+#### Microsoft 365
 
-If you are signed in to Microsoft Edge with a work or school account, your organization may turn on Office 365 as an option for page content on the new tab page. The feature is currently available only for commercial customers, under the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products). For more information about privacy for Office 365, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls).
+If you are signed in to Microsoft Edge with a work or school account, your organization may turn on Microsoft 365 as an option for page content on the new tab page. The feature is currently available only for commercial customers under the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products). For more information about privacy for Microsoft 365, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls).
 
 **InPrivate** browsing and **Guest** mode offer alternative new tab page experiences.
 
@@ -460,6 +549,8 @@ Microsoft Edge lets you save your payment information to your browser profile. M
 
 Microsoft Edge asks you if you want to store your payment information if payment autofill is turned on. The information is encrypted locally on your device. To manage payment information, go to `edge://settings/payments`.  When you delete saved payment information, it no longer appears as an autofill suggestion.
 
+Microsoft Edge also supports saving your payment information to your Microsoft account if you are signed in and syncing, which makes the information available across devices. To save payment information to your Microsoft account, credit card verification (CVV) may be required, depending on your current region. CVV is only used for authorization and will not be stored by Microsoft. 
+
 Microsoft Edge supports the PaymentRequest API. The API lets you pay for purchases with payment information you previously saved using autofill. The PaymentRequest API allows the merchant to request the following information: credit card number, credit card expiration, full name, billing address, email address, phone number, and shipping address. The API tells the merchant that you have credit card information saved, but does not share any information with the merchant unless you allow it. To turn off the Payments feature, go to `edge://settings/privacy`.
 
 If you previously saved payment information to your Microsoft account, it is also available for autofill in the browser. Payment information stored in your Microsoft account syncs across devices. If you previously made any Xbox or Microsoft Store purchases, you may already have payment information saved to your Microsoft account.  During payment autofill, a card from your Microsoft account is masked and is only fully revealed after two-factor authentication. The masking provides added security when retrieving your payment information.
@@ -481,7 +572,7 @@ Your browsing history is collected and used for personalization only if all four
 * Your group policies managed by an organization (employer, school, and so on) allow personalization.
 * You not using the browser in **Guest** or **InPrivate** modes.
 
-Your browsing history and other data are transferred over HTTPS and attached to your Microsoft account information.  Your browsing history is stored on secure Microsoft servers.  You may view and delete previously shared browsing history by going to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).  Your browsing history is stored on secure Microsoft servers for up to 45 days.  After 45 days, the data is deleted and not used for personalization.
+Your browsing history and other data are transferred over HTTPS and attached to your Microsoft account information.  Your browsing history is stored on secure Microsoft servers.  You may view and delete previously shared browsing history by going to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).  Your browsing history is stored on secure Microsoft servers for up to 180 days.  After 180 days, the data is deleted and not used for personalization.
 
 You may modify your interests or opt-out of personalized ads from the [Ad settings](https://account.microsoft.com/privacy/ad-settings) on the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
 
@@ -547,7 +638,46 @@ If Microsoft Edge detects SSL connection timeouts, certificate errors, or other 
 
 
 <!-- ====================================================================== -->
+## Rewards
+
+Microsoft Rewards (the "Program") enables you to earn redeemable points for activities such as qualified searches, acquisitions, and other offers from Microsoft. These points can then be redeemed for gift cards or non-profit donations or automatic contributions to subscriptions. Microsoft Edge has built-in support for all existing avenues for earning points, and also introduces new and exclusive means to earn more points. You can track your points, and you can stay up-to-date with limited period offers to get the most out of the program.
+
+For non-members, Microsoft Edge presents personalized joining offers based on the page you're on. Once you engage and choose to enroll, Microsoft Edge uses your Microsoft account identity to sign you up and start the rewards service.  The rewards service automatically adds points to your account for searching, playing, and shopping on Microsoft Edge. Microsoft Edge doesn't send your personal information or browsing data to any third-party services.
+
+The Rewards dashboard (`rewards.bing.com`):
+
+![Rewards Dashboard UI](./index-images/rewardsdashboard.png)
+
+Rewards is an opt-in program. To turn off all Rewards experiences and data sharing, go to `edge://settings/profiles/rewards`, and turn off the **Earn Microsoft Rewards in Microsoft Edge** setting.
+
+![Rewards Settings UI](./index-images/rewardssettings.png)
+
+Offers may vary by market. 
+
+#### How to earn
+
+Microsoft Edge provides the greatest number of avenues to earn rewards points while browsing the web.
+
+A _search_ is the act of an individual user manually entering text for the good faith purpose of obtaining Bing search results for the user's own research purposes, and does not include any query that's entered by a bot, macro, or other automated or fraudulent means of any kind ("Search").
+
+An _acquisition_ is the process of purchasing goods or downloading and acquiring a license for digital content from Microsoft, whether free or paid ("Acquisition"). Rewards points are not offered for every purchase from Microsoft. Microsoft may offer additional opportunities to earn points from time to time, and each point-earning offer will not be available in perpetuity.
+
+#### Redeeming your points
+
+To redeem your points or contribute points to a listed nonprofit organization, go to the [redeem page](https://aka.ms/redeemrewards). You can also sign up for automatic contributions to non-profit organizations through a giving program.
+
+#### Cancelling your participation
+
+If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false). If you opt out, you will immediately lose all of your available points. 
+
+See also:
+* [Learn about Microsoft Rewards](https://support.microsoft.com/topic/learn-about-microsoft-rewards-c5ab735d-c6d9-4bb9-30ad-d828e954b6a9).
+* The **Microsoft Rewards** section in the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement/).
+
+
+<!-- ====================================================================== -->
 ## Search results data for product improvement 
+
 In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone's web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn't own or operate.
 
 * Microsoft Edge will scrub and de-identify the data by removing data identifying the person or device from which it was collected. 
@@ -596,11 +726,39 @@ Microsoft also sends the product price, product image, product name, ratings, an
 
 The Microsoft Edge shopping feature requires sharing of cookie information with Bing.  For example, the cookies may be used for debugging, fraud detection, and analytics.  The Microsoft shopping service returns prices from other retailers, historical price trends, and any available coupons for that website.
 
+To help you find and keep track of coupons in your inbox, Microsoft Edge may optionally scan your connected email account for coupons in promotional emails. The Microsoft shopping service extracts coupons from promotional emails that are sent by supported retailers. The extracted coupons are stored and managed by the Microsoft shopping service and are accessible to you. Inbox coupons don't appear when using **Guest mode** or **InPrivate**.
+
+The following steps assume that you have already connected your inbox.
+
+To control which retailers' emails are scanned by Microsoft Edge:
+
+1. In Microsoft Edge, click the **Settings and more** (**...**) button, and then select **Shopping**.  The **Shopping** sidebar appears.
+
+1.  Click the **Your Shopping** tab.
+
+1.  In the **Inbox coupons** card, click the **Settings** (**...**) button:
+
+    ![Coupons for various websites](./index-images/inboxcoupons.png)
+
+1.  In the **Retailers in your inbox** section, expand the section for a retailer, and then turn the toggle on or off:
+
+    ![The toggle to turn coupon email scanning on or off for a retailer](./index-images/inboxcoupons-settings.png)
+
+To turn off Inbox coupons:
+
+1.  On the **Shopping** sidebar, click the **Your Shopping** tab.
+
+1.  In the **Inbox coupons** card, click the **Settings** (**...**) button.
+
+1.  Select an email account, and then click the **Settings** link.
+
+1.  Click the **Disconnect email** button.
+
 When you're applying coupons, cookies are stored on your device to correctly attribute the coupon provider.  Cookies are saved by Microsoft-trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, information about the success of the coupons is sent back to the Microsoft shopping service to help understand which coupons succeeded or failed.
 
 Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier that changes per coupon lookup. Microsoft Edge partners with Bing Shopping to provide coupons relevant to the user's query. In some instances, Microsoft may receive revenue for use of the coupons. Whether a revenue share payment may be received is not factored into the ranking of coupons shown to users.
 
-![Shopping and coupons](./media/shopping.png)
+![Shopping and coupons](./index-images/shopping.png)
 
 If you visit a shopping domain and you are an existing Bing Rebates user, Microsoft Edge sends the domain along with cookies to the Microsoft shopping service to retrieve your Bing Rebates profile and cash back offers for the domain.  If you choose to activate cash back, Microsoft Edge sends your URL to the Microsoft shopping service to receive an affiliate URL.  Cookies may be stored on your device to correctly attribute the rebates provider.
 
@@ -634,7 +792,7 @@ You aren't able to sign into Microsoft Edge when using **Guest** mode or **InPri
 
 SmartScreen is designed to help you safely browse the web.  When you go to websites or download files, SmartScreen checks the reputation of the URL or file.  If SmartScreen determines that the site or file is malicious, it blocks you from going to the site or downloading the file.
 
-![SmartScreen](./media/smart-screen.png)
+![SmartScreen](./index-images/smart-screen.png)
 
 As you browse the web, SmartScreen categorizes websites and downloads as top traffic, dangerous, or unknown.  Top traffic is popular sites that SmartScreen has determined are trustworthy.  If you go to a site marked as dangerous, SmartScreen immediately blocks you from accessing the site.  When you go to an unknown site, SmartScreen checks the reputation to determine if you should access the site.
 
@@ -660,10 +818,23 @@ To convert your speech into text, Microsoft Edge supports the [Web Speech API](h
 
 To turn off speech translated to text, you may deny microphone access from any site that prompts for permission.  To turn off the Microphone permission for all sites, go to `edge://settings/content/microphone`.
 
+
 <!-- ====================================================================== -->
 ## Suggest similar sites
 
 To help resolve URL typos in the address bar that result in a website error, Microsoft Edge may recommend a corrected URL.  When a website navigation error occurs, Microsoft Edge sends the domain of the web address to the Microsoft service to suggest a corrected URL.  Microsoft Edge does not include identifiers or tokens with the domain.  If the service finds a suggestion, it returns the suggested URL.  Microsoft stores the incorrect domain, and suggested domain, to help improve the service.  To help you go to the correct sites, the feature is turned on by default.  To turn off the feature, go to `edge://settings/privacy` and under the **Services** turn off the **Suggest similar sites when a website can't be found** setting.
+
+
+<!-- ====================================================================== -->
+## Support nonprofits
+
+Microsoft Edge allows you to support nonprofit organizations using Microsoft Rewards points or cash while browsing. When you are signed in to Microsoft Edge with your Microsoft account and navigate to a nonprofit website, the **Support nonprofits** icon appears on the right side of the Address bar. You can then click this icon to donate to the nonprofit organization.
+
+![The 'Support nonprofits' icon in the address bar](./index-images/support-nonprofit.png)
+ 
+To control this feature, go to `edge://settings/privacy` and turn on or off the **Show opportunities to support causes and nonprofits you care about** setting.
+ 
+Supporting nonprofits is not available when using **InPrivate** or **Guest** modes.
 
 
 <!-- ====================================================================== -->
@@ -673,7 +844,7 @@ Signing into Microsoft Edge with a Microsoft account will enable syncing your br
 
 Favorites include any tabs you previously set aside in previous versions of Microsoft Edge, which sync along with the rest of your favorites. Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  To manage sync configurations, go to `edge://settings/profiles/sync`.  Your sync settings may be managed by your organization.
 
-![Image of sync setting being set to on](./media/sync.png)
+![Image of sync setting being set to on](./index-images/sync.png)
 
 For sync to function, all device connectivity and configuration data needed to provide the sync experience is sent to Microsoft. Sync data includes the name of your device, make, and model. To delete sync data, see [Microsoft device dashboard](https://account.microsoft.com/devices). To manage your synced favorites, go to `edge://favorites`. To manage all other data types, go to `edge://settings/profiles`.
 
@@ -682,6 +853,25 @@ When you sign into Microsoft Edge with your Microsoft account or work or school 
 All synced data is encrypted in transit over HTTPS when transferred between the browser and Microsoft servers.  The synced data is also stored in an encrypted state in Microsoft servers.  Sensitive data types such as addresses and passwords are further encrypted on the device before being synced.  If you are using a work or school account, all data types are further encrypted before being synced using Microsoft Purview Information Protection.  All other synced data types are stored until you delete the data, the account is deleted, or the account becomes inactive.  An account ID is attached to all synced data, as the ID is necessary to perform sync across multiple devices.
 
 InPrivate and Guest mode browsing data does not sync to your Microsoft account.  However, favorites created during InPrivate sessions are synced across your signed-in versions of Microsoft Edge.
+
+
+<!-- ====================================================================== -->
+## Tab organization
+
+Microsoft Edge offers helpful suggestions on how to organize tabs to save you time and keep you focused on the web content you care about. These suggestions augment the Tab Grouping feature that's built into Microsoft Edge.
+
+When two or more tabs are grouped together, Microsoft Edge sends information about the tabs, including the Title and URL, to the Tabs service over HTTPS.  This information is used to generate a relevant name for the Tab Group.
+
+You can also choose to have Microsoft Edge auto-group all of your tabs, by using the **Group Similar Tabs** feature from the **Tab Action** menu.  In addition to the Title and URL, Microsoft Edge also sends information about which tabs opened another tab, and a timestamp of when a tab was opened.  This additional data allows the service to more accurately suggest Tab Groups, to organize your tabs. 
+
+The Microsoft Edge Tab organization behavior is turned on by default. To turn this behavior off, go to `edge://settings/privacy` and under **Services** turn off the **Let Microsoft Edge help keep your tabs organized** setting:
+
+![Tab Group settings UI](./index-images/tabgroupsettings.png)
+
+When the Tab Organization service is turned off, new Tab groups are given a generic name such as **Group 1**, and you can then rename the Tab group to be more descriptive.  The option to automatically **Group Similar Tabs within the Tab Action Menu** will be turned off.
+
+See also:
+* [Tab groups](https://www.microsoft.com/edge/features/tab-groups)
 
 
 <!-- ====================================================================== -->
@@ -699,7 +889,7 @@ Microsoft Edge is designed to detect and block known trackers.  Users may choose
 
 You may turn off list updates using the following group policy, [Enable component updates in Microsoft Edge](/deployedge/microsoft-edge-policies#componentupdatesenabled).
 
-![Tracking prevention](./media/tracking-prevention.png)
+![Tracking prevention](./index-images/tracking-prevention.png)
 
 
 <!-- ====================================================================== -->
@@ -744,6 +934,19 @@ Microsoft Edge WebView controls allow app developers to host web content in nati
 
 To enable diagnostic data collection, go to `edge://settings/privacy`. Turn on the **Optional diagnostic data** setting. To turn off diagnostic data collection for Microsoft Edge on Windows 10 and later, open **Start** > **Settings** > **Privacy** and select **Diagnostics & feedback**. To turn off diagnostic data collection for all other platforms, go to `edge://settings/privacy`. Turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting. The applications hosting Microsoft Edge WebView may collect other data that is governed by the data collection management of the developer and relevant privacy policies.
 
+
+<!-- ====================================================================== -->
+## Workspaces
+
+The Microsoft Edge Workspaces feature allows you to easily organize and share your browsing tasks with collaborators via customizable, shareable browsing windows. Each workspace shares favorites, a set of workspace tabs, and history, all created and curated by you and your collaborators. Workspace data is automatically saved, kept up-to-date, and stored in OneDrive/SharePoint.
+
+Microsoft Edge Workspaces shares tabs, favorites, and history with collaborators in real-time. Collaborators' profile pictures are used to indicate which workspace tab they are using and which workspace tabs they have opened, changed, or closed. Collaborators cannot see how you interact with a webpage (workspaces don't screen-share).
+
+Collaborators cannot see password-protected content unless they sign in and they have access via their own credentials. Microsoft Edge Workspaces doesn't store or share browsing data from non-workspace browsing sessions. If you leave a workspace, the stored contents remain available for other collaborators. If you delete a workspace, the stored contents are deleted for all collaborators.
+
+Microsoft Edge Workspaces is only available for enterprise customers who are signed into Microsoft Edge with a Microsoft Azure Active Directory (AAD) account.  Workspaces aren't available when using Guest mode or InPrivate browsing. 
+
+
 <!-- ====================================================================== -->
 ## Writing assistance
 
@@ -767,7 +970,7 @@ When you add a new language to Microsoft Edge, the browser downloads the diction
  
 #### Text prediction 
 
-Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press `Tab` or the `Right arrow` key to accept them. Password fields will not offer text predictions.
+Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press **Tab** or the **Right Arrow** key to accept them. Password fields will not offer text predictions.
 
 To turn off text predictions in Microsoft Edge: 
 
@@ -782,6 +985,7 @@ If you are browsing while using **InPrivate** or **Guest** mode, text prediction
 If your device is managed by using group policies set by your organization, the feature may be disabled depending on the administrator's policies of your organization.  
 
 Text prediction is only available in select languages and regions.
+
 
 <!-- ====================================================================== -->
 ## Thank you!

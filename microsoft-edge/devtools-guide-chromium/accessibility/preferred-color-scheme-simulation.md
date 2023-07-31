@@ -31,7 +31,7 @@ This article is about changing the appearance of the webpage under development. 
 
 1. In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: dark** or **prefers-color-scheme: light**.
 
-   ![Emulating dark or light mode using the Rendering tool](../media/css-elements-styles-qs-simulated-light-mode.msft.png)
+   ![Emulating dark or light mode using the Rendering tool](./preferred-color-scheme-simulation-images/css-elements-styles-qs-simulated-light-mode.png)
 
 1. Refresh the page to display the rendered result.
 
@@ -43,11 +43,11 @@ This article is about changing the appearance of the webpage under development. 
 <!-- ====================================================================== -->
 ## Emulating dark or light mode using the Command Menu
 
-1. When DevTools has focus, open the **Command Menu** by selecting `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
+1. When DevTools has focus, open the **Command Menu** by selecting **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
 1. Type **dark**, **light**, or **emulate**, select **Rendering: Emulate CSS prefers-color-scheme: dark** or **Rendering: Emulate CSS prefers-color-scheme: light**, and then press **Enter**.
 
-   ![Emulating dark or light mode using the 'Rendering: Emulate CSS prefers-color-scheme' commands on the Command Menu](../media/css-console-command-menu-rendering.msft.png)
+   ![Emulating dark or light mode using the 'Rendering: Emulate CSS prefers-color-scheme' commands on the Command Menu](./preferred-color-scheme-simulation-images/css-console-command-menu-rendering.png)
 
    Select a **Rendering** command rather than an **Appearance** command.  The **Rendering** commands affect the rendered webpage under development.  The **Appearance** commands instead affect the DevTools part of the window.
 

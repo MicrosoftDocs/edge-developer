@@ -25,7 +25,7 @@ When you have long-running **Recalculate Style** events, you can use the **Selec
 
 To see **Selector Stats** during **Recalculate Style** events:
 
-1. In the **Performance** tool, click **Capture settings** (![Capture settings icon](../media/capture-settings-icon.msft.png)).
+1. In the **Performance** tool, click **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)).
 
 1. Click **Enable advanced rendering instrumentation (slow)** to turn the setting on. Note that this setting adds more overhead for performance recordings, so you should only leave it turned on when you need to record **Selector Stats** and other rendering information.
  
@@ -57,4 +57,4 @@ As a general rule, if you find a CSS selector that took the browser a long time 
 
 * [Introduction to the Performance tool](./index.md) - An introduction to analyzing runtime performance in DevTools.
 * [Performance features reference](./reference.md) - Covers many of the features in the **Performance** tool.
-<!-- TO-DO, add link to Patrick's blog post -->
+* [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/)

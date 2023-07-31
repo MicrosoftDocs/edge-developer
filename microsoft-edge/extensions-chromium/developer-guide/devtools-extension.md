@@ -35,13 +35,13 @@ In this section, you download and run the final state of the extension that the 
 
 1. Click **Load unpacked** and navigate to the folder where you extracted the zip file. In this folder, select **Demos-main** > **devtools-extension** > **sample 4**, and then click **Select Folder**.
 
-  ![The edge://extensions page in Microsoft Edge, showing the Developer mode and Load unpacked buttons](./devtools-extensions-images/edge-extensions-page.png)
+  ![The edge://extensions page in Microsoft Edge, showing the Developer mode and Load unpacked buttons](./devtools-extension-images/edge-extensions-page.png)
 
-Your DevTools extension should now be loaded. Open a new tab in Microsoft Edge, and then open DevTools by pressing `F12`.
+Your DevTools extension should now be loaded. Open a new tab in Microsoft Edge, and then open DevTools by pressing **F12**.
 
 The extension creates a **Sample Panel** tab in the DevTools window:
 
-![Microsoft Edge, showing DevTools on the side, with the extension's Sample Panel selected](./devtools-extensions-images/solution-sample-panel.png)
+![Microsoft Edge, showing DevTools on the side, with the extension's Sample Panel selected](./devtools-extension-images/solution-sample-panel.png)
 
 
 <!-- ====================================================================== -->
@@ -91,7 +91,7 @@ To load and test your DevTools extension in Microsoft Edge, use the **Developer 
 
 1. Click **Load unpacked**, navigate to the folder where you wrote the code for your extension, and click **Select folder**.
 
-Your DevTools extension is now loaded. Open a new tab and then open DevTools (`F12`).
+Your DevTools extension is now loaded. Open a new tab and then open DevTools (**F12**).
 
 Your  extension is loaded, but isn't displayed in DevTools yet, because you haven't created a panel for the extension.
 
@@ -103,7 +103,7 @@ In this step, you'll create a new panel in DevTools. You can find the code for t
 
 A _panel_ is a tab in the main toolbar in DevTools, similar to the **Elements**, **Console**, and **Sources** tools shown below:
 
-![DevTools panels and sidebars](./devtools-extensions-images/devtools-main-toolbar-tabs.png)
+![DevTools panels and sidebars](./devtools-extension-images/devtools-main-toolbar-tabs.png)
 
 In this step, we will create a basic DevTools extension with a sample panel.
 
@@ -155,11 +155,11 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
 
 1. Click **Reload**.
 
-   ![The Microsoft Edge extensions page showing where the Reload button is](./devtools-extensions-images/edge-extensions-page-reload-button.png)
+   ![The Microsoft Edge extensions page showing where the Reload button is](./devtools-extension-images/edge-extensions-page-reload-button.png)
 
-Your DevTools extension should now be reloaded. Open a new tab in Microsoft Edge and then open DevTools (`F12`). Your DevTools extension panel should be displayed in DevTools:
+Your DevTools extension should now be reloaded. Open a new tab in Microsoft Edge and then open DevTools (**F12**). Your DevTools extension panel should be displayed in DevTools:
 
-![Microsoft Edge, with DevTools on the side, showing the new  extension panel](./devtools-extensions-images/devtools-extension-with-panel.png)
+![Microsoft Edge, with DevTools on the side, showing the new  extension panel](./devtools-extension-images/devtools-extension-with-panel.png)
 
 
 <!-- ====================================================================== -->
@@ -232,9 +232,9 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
 
 1. Click **Reload**.
 
-Your DevTools extension should now be reloaded. Open a new tab and then open DevTools (`F12`). Your DevTools extension panel should now show the available and total memory capacities.
+Your DevTools extension should now be reloaded. Open a new tab and then open DevTools (**F12**). Your DevTools extension panel should now show the available and total memory capacities.
 
-![The new  extension panel in DevTools, showing memory information](./devtools-extensions-images/devtools-extension-with-memory-info.png)
+![The new  extension panel in DevTools, showing memory information](./devtools-extension-images/devtools-extension-with-memory-info.png)
 
 More extension APIs can be found in the [API Reference](https://developer.chrome.com/docs/extensions/reference/) page.
 
@@ -257,7 +257,7 @@ Unfortunately, the DevTools panel you just created does not have direct access t
 
 The following diagram gives an overview of how the DevTools page, inspected page, content script, and background service worker fit together in an extension.
 
-![The anatomy of a DevTools extension](./devtools-extensions-images/overall_screenshot_mv3.png)
+![The anatomy of a DevTools extension](./devtools-extension-images/overall_screenshot_mv3.png)
 
 In this part of the tutorial, you will detect the user clicks on a webpage using a content script.  The content script will relay this info to the `devtools.js` file where the data will be displayed in both the console and the DevTools extension panel.
 
@@ -394,11 +394,11 @@ To test the new `sayHello` button:
 
 1. Click the **Reload** button.
 
-1. Open a new browser tab, open DevTools (`F12`), and click the **Sample Panel** tab.
+1. Open a new browser tab, open DevTools (**F12**), and click the **Sample Panel** tab.
 
 1. Click the `"Say Hello to The Inspected Page!"` button in your panel. You should see an alert in the inspected page, as shown below.
 
-    ![Microsoft Edge, showing the new extension panel in DevTools on the side, and an alert dialog window](./devtools-extensions-images/devtools-extension-show-greeting.png)
+    ![Microsoft Edge, showing the new extension panel in DevTools on the side, and an alert dialog window](./devtools-extension-images/devtools-extension-show-greeting.png)
 
 To learn more about content scripts, see [the Content Scripts documentation](https://developer.chrome.com/docs/extensions/mv3/content_scripts/).
 
@@ -408,11 +408,11 @@ To test the `youClickedOn` label:
 
 1. Click anywhere in the inspected page. A **You clicked on position (x,y) in the inspected page** message should appear in the extension panel.
 
-    ![The sample panel in DevTools showing the clicked position message](./devtools-extensions-images/devtools-extension-show-position.png)
+    ![The sample panel in DevTools showing the clicked position message](./devtools-extension-images/devtools-extension-show-position.png)
 
 1. Open the **Console** tool. A message similar to the previous step should also appear in the  **Console** tool.
 
-    ![The DevTools Console tool showing the clicked position message](./devtools-extensions-images/devtools-extension-show-position-in-console.png)
+    ![The DevTools Console tool showing the clicked position message](./devtools-extension-images/devtools-extension-show-position-in-console.png)
 
 
 <!-- ====================================================================== -->

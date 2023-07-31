@@ -9,7 +9,7 @@ ms.date: 02/23/2022
 ---
 # What's New in Progressive Web Apps
 
-This page lists the updates to Progressive Web Apps (PWAs) and Web Apps from the Microsoft Edge Web Apps team.  To try new features, read these announcements.  To stay up to date with the latest and greatest features, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) (Beta, Dev, and Canary).
+This page lists the updates to Progressive Web Apps (PWAs) and Web Apps from the Microsoft Edge Web Apps team.  To try new features, read these announcements.  To stay up to date with the latest and greatest features, download the [Microsoft Edge preview channels](https://www.microsoft.com/edge/download/insider) (Beta, Dev, and Canary).
 
 
 <!-- ====================================================================== -->
@@ -24,7 +24,7 @@ The **Window Controls Overlay** API is now available by default, starting with M
 
 This feature makes PWAs that are installed on desktop operating systems such as Windows, macOS, and Linux, more similar to their native counterparts.
 
-![A PWA, with a custom titlebar](media/custom-title-bar.png)
+![A PWA, with a custom titlebar](./pwa-images/custom-title-bar.png)
 
 To learn more, check out these resources:
 
@@ -39,7 +39,7 @@ In earlier versions, the notifications that were created by PWAs looked like the
 
 With Microsoft Edge 105, notifications from a PWA now display the name and icon of the PWA instead of displaying "Microsoft Edge":
 
-![A PWA app window, with a notification shown near the Windows task bar. The notification has the PWA icon and name](media/pwa-notifications.png)
+![A PWA app window, with a notification shown near the Windows task bar. The notification has the PWA icon and name](./pwa-images/pwa-notifications.png)
 
 
 <!-- ====================================================================== -->
@@ -51,11 +51,11 @@ To access **sidebar search**:
 
 1. Click the **Open sidebar search** button in the title bar of the installed PWA:
 
-   ![The sidebar search icon, shown in the app title bar](media/sidebar-search.png)
+   ![The sidebar search icon, shown in the app title bar](./pwa-images/sidebar-search.png)
 
-1. Type a search query, and then press `Enter`. The search results are displayed, and you can go to a web page from there:
+1. Type a search query, and then press **Enter**. The search results are displayed, and you can go to a web page from there:
 
-   ![The sidebar search, opened on the side of a PWA, with some search results displayed](media/sidebar-search-results.png)
+   ![The sidebar search, opened on the side of a PWA, with some search results displayed](./pwa-images/sidebar-search-results.png)
 
 
 <!-- ====================================================================== -->
@@ -74,7 +74,7 @@ As we test and gradually release this feature over the coming weeks, users who h
 
 The **Your available apps** section will show any apps you've installed on other devices with the same signed-in profile, that aren't currently installed in the Microsoft Edge instance you're using.  The available apps will be shown in their own section with gray icons.  Click the **Install** button on an app to install the app on that device:
 
-![Available apps shown on Apps page with install button highlighted](media/available-app-install.png)
+![Available apps shown on Apps page with install button highlighted](./pwa-images/available-app-install.png)
 
 App sync is available on desktop devices only, at this stage.  To keep your apps in sync across devices, adding an app on one device will add it to the **Your available apps** section on other devices.  Uninstalling an app on one device will remove it from other devices.
 
@@ -89,22 +89,22 @@ In Microsoft Edge, the **Apps** command in the **Settings and more** menu is bei
 Users can show the **Apps** menu icon on the toolbar, for quick access:
 
 > [!div class="mx-imgBorder"]
-> ![The Apps icon can be shown on the toolbar, for quick access](media/apps-toolbar-icon.png)
+> ![The Apps icon can be shown on the toolbar, for quick access](./pwa-images/apps-toolbar-icon.png)
 
 Users can pin the **Apps** menu open as a sidebar:
 
 > [!div class="mx-imgBorder"]
-> ![Users can pin the Apps menu open as a sidebar](media/pin-apps-menu.png)
+> ![Users can pin the Apps menu open as a sidebar](./pwa-images/pin-apps-menu.png)
 
 Users can choose between a list or grid view:
 
 > [!div class="mx-imgBorder"]
-> ![Users can choose between list or grid view for their apps](media/apps-view-options.png)
+> ![Users can choose between list or grid view for their apps](./pwa-images/apps-view-options.png)
 
 Users can choose the sort order of their apps:
 
 > [!div class="mx-imgBorder"]
-> ![Users can choose the sort order of their apps](media/apps-sort-options.png)
+> ![Users can choose the sort order of their apps](./pwa-images/apps-sort-options.png)
 
 
 <!-- ====================================================================== -->
@@ -149,7 +149,7 @@ You can sort your apps by any of the following:
 
 You can arrange apps in a list or grid view, by using the **View as** dropdown list.  In this image, **Grid** view is selected:
 
-![The new, app management page in Microsoft Edge](media/edgeapps-redesign.jpg)
+![The new, app management page in Microsoft Edge](./pwa-images/edgeapps-redesign.jpg)
 
 _To zoom: right-click > Open image in new tab._
 
@@ -167,7 +167,7 @@ There's now an app details page, which provides way to easily access the followi
 
 The app details page:
 
-![The app details page in Microsoft Edge](media/edgeapps-details.jpg)
+![The app details page in Microsoft Edge](./pwa-images/edgeapps-details.jpg)
 
 
 <!-- ====================================================================== -->
@@ -253,15 +253,15 @@ When a user selects the ellipses (**...**) button in the app's title bar, the **
 
 *  Moved the app **Publisher** information to the top level and made it the first thing a user sees:
 
-   ![The new, streamlined App Info menu](media/app-info.png)
+   ![The new, streamlined App Info menu](./pwa-images/app-info.png)
 
 *  Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu:
 
-   ![Privacy controls in the dedicated Privacy menu](media/privacy-menu.png)
+   ![Privacy controls in the dedicated Privacy menu](./pwa-images/privacy-menu.png)
 
 *  Moved content-related tools into a dedicated 2nd-level **More tools** menu:
 
-   ![Content-related tools are now found in the More Tools menu](media/more-tools.png)
+   ![Content-related tools are now found in the More Tools menu](./pwa-images/more-tools.png)
 
 
 #### Post-install flyout dialog
@@ -274,7 +274,7 @@ After a PWA is installed from the Microsoft Edge browser on Windows, users can n
 
 For convenience, this flyout dialog is shown the first time the app is launched:
 
-![The post-install flyout dialog with options for Pin to Taskbar, Pin to Start, Create Desktop Shortcut, and Auto-Start on Device Login](media/post-install-flyout.png)
+![The post-install flyout dialog with options for Pin to Taskbar, Pin to Start, Create Desktop Shortcut, and Auto-Start on Device Login](./pwa-images/post-install-flyout.png)
 
 This feature is being rolled out gradually to all users.  In the meantime, if you'd like to use this feature, go to `edge://flags` and enable the flag **Web Apps Post Install Dialog**.
 

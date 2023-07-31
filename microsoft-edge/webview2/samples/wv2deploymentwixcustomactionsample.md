@@ -53,17 +53,17 @@ If not done yet, install WiX Toolset:
 
    A dialog might open, **Requires .NET Framework 3.5.1 to be enabled**:
 
-   ![Requires .NET Framework dialog](./wv2deploymentwixburnbundlesample-images/wix-requires-dotnet-fwk-351.png)
+   ![Requires .NET Framework dialog](./wv2deploymentwixcustomactionsample-images/wix-requires-dotnet-fwk-351.png)
 
    If .NET Framework 3.5.1 is already enabled on your machine, skip ahead to continue installing this WiX component.
 
 1. Click the **OK** button.  The WiX installer window closes.
 
-1. Press the **Windows** key ![Windows key logo](../../media/windows-keyboard-logo.png) on your keyboard, type **Windows Features**, and then press **Enter**.  The **Turn Windows features on or off** dialog appears.
+1. Press the **Windows** key ![Windows key logo](./wv2deploymentwixcustomactionsample-images/windows-keyboard-logo.png) on your keyboard, type **Windows Features**, and then press **Enter**.  The **Turn Windows features on or off** dialog appears.
 
 1. Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box:
 
-   ![Turn Windows features on or off > .NET Framework 3.5](./wv2deploymentwixburnbundlesample-images/turn-windows-features-on.png)
+   ![Turn Windows features on or off > .NET Framework 3.5](./wv2deploymentwixcustomactionsample-images/turn-windows-features-on.png)
 
    You don't need to select the child items.
 
@@ -90,7 +90,7 @@ If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 
 1. In **User Account Control**, click the **Yes** button.  VSIX Installer for WiX Visual Studio extension opens:
 
-   ![VSIX Installer for WiX Visual Studio 2019 extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2019-ext.png)
+   ![VSIX Installer for WiX Visual Studio 2019 extension](./wv2deploymentwixcustomactionsample-images/vsix-installer-wix-vs-2019-ext.png)
 
    <!-- ![VSIX Installer for WiX Visual Studio 2022 extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2022-ext.png) -->
 
@@ -100,7 +100,7 @@ If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 
    The VSIX Installer reads **Install complete**:
 
-   ![VSIX Installer - Install Complete - WiX Toolset Visual Studio 2019 Extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2019-ext-complete.png)
+   ![VSIX Installer - Install Complete - WiX Toolset Visual Studio 2019 Extension](./wv2deploymentwixcustomactionsample-images/vsix-installer-wix-vs-2019-ext-complete.png)
 
    <!-- ![VSIX Installer - Install Complete - WiX Toolset Visual Studio 2022 Extension](./wv2deploymentwixburnbundlesample-images/vsix-installer-wix-vs-2022-ext-complete.png) -->
    <!--todo: delete the two above pngs after confirm end-to-end -->
@@ -193,7 +193,7 @@ If you plan to package either the Bootstrapper (Approach 2) or the Standalone In
 ## See also
 
 * [Win32 sample app](./webview2apissample.md)
-* [Deploying the Evergreen WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution.md#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
+* [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
 * [Readme for WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme).
 * [WiX Toolset](https://wixtoolset.org/)
 * [WiX > Adding a Custom Action](https://wixtoolset.org/documentation/manual/v3/wixdev/extensions/authoring_custom_actions.html)

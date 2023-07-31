@@ -20,7 +20,7 @@ Support for the following technologies is included in IE mode:
 
 In IE mode, the rendering process is based on Internet Explorer 11. The Microsoft Edge process manager handles the lifetime of the rendering process.  The rendering process is constrained to the lifetime of the tab for a specific site (or app).  When a tab renders in IE mode, the IE mode indicator icon appears in the address bar for the specific tab.
 
-![The IE mode indicator icon in the address bar](../media/ie-mode-badge.msft.png)
+![The IE mode indicator icon in the address bar](./index-images/ie-mode-badge.png)
 
 IE mode is available on Windows 10 Version 1903 (May 2019 Update), and is coming to all supported Windows platforms.
 
@@ -30,7 +30,7 @@ IE mode is available on Windows 10 Version 1903 (May 2019 Update), and is coming
 
 The IE mode indicator icon appears in the address bar if the Enterprise admin has configured the website to appear in IE mode.  To view the document mode of a website in IE mode, select the IE mode indicator icon in the address bar.
 
-![View document mode using the IE mode indicator icon](../media/ie-mode-badge-doc-mode.msft.png)
+![View document mode using the IE mode indicator icon](./index-images/ie-mode-badge-doc-mode.png)
 
 If a tab uses IE mode, the tab has the following limitations:
 
@@ -40,9 +40,9 @@ If a tab uses IE mode, the tab has the following limitations:
 
 *  Right-clicking and then selecting **View Source** launches Notepad.
 
-*  Pressing `F12` or `Ctrl`+`Shift`+`I` opens a blank instance of the Microsoft Edge DevTools and displays the following message: **Developer Tools aren't available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**
+*  Pressing **F12** or **Ctrl+Shift+I** opens a blank instance of the Microsoft Edge DevTools and displays the following message: **Developer Tools aren't available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**
 
-![DevTools launched in IE mode](../media/ie-mode-devtools.msft.png)
+![DevTools launched in IE mode](./index-images/ie-mode-devtools.png)
 
 If Internet Explorer isn't available on your computer, to debug the content of an IE mode tab, use IEChooser to open Internet Explorer DevTools, as follows:
 

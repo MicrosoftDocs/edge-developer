@@ -144,7 +144,7 @@ The following Reference sections are for Remote Tools for Microsoft Edge.
 
 ## /msedge/json/deviceinfo
 
-Provides information about the Windows PC, Xbox, or HoloLens device connected for remote debugging.
+Provides information about the Windows PC or HoloLens 2 device connected for remote debugging.
 
 **Parameters**
 
@@ -276,4 +276,6 @@ JSON object which represents the available API surface for the version of the pr
 <!-- ====================================================================== -->
 ## See also
 
-* [Use the Chrome DevTools Protocol in WebView2 apps](../webview2/how-to/chromium-devtools-protocol.md)
+* [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
+* [Chrome DevTools Protocol (CDP)](../webview2/concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 features and APIs_
+* [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../webview2/how-to/chromium-devtools-protocol.md)

@@ -26,19 +26,19 @@ To see how your webpage renders and behaves when a browser doesn't have JavaScri
 
 To turn off JavaScript:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-   ![The Command Menu](../media/javascript-console-command.msft.png)
+   ![The Command Menu](./disable-images/javascript-console-command.png)
 
-1. Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.  JavaScript is now disabled.
+1. Start typing `javascript`, select **Disable JavaScript**, and then press **Enter** to run the command.  JavaScript is now disabled.
 
-   ![Select 'Disable JavaScript' in the Command Menu](../media/javascript-console-command-javascript.msft.png)
+   ![Select 'Disable JavaScript' in the Command Menu](./disable-images/javascript-console-command-javascript.png)
 
     The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.
 
-   ![The warning icon next to Sources](../media/javascript-console-javascript-disabled-warning.msft.png)
+   ![The warning icon next to Sources](./disable-images/javascript-console-javascript-disabled-warning.png)
 
 JavaScript remains disabled in the tab for as long as you have DevTools open.
 
@@ -46,7 +46,7 @@ To see whether the page depends on JavaScript while loading, refresh the page.
 
 To re-enable JavaScript:
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
 1. Select the **Enable JavaScript** command.
 

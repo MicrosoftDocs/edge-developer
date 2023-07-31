@@ -22,7 +22,7 @@ This sample is built as a WPF Visual Studio 2019 project.  It uses C# and HTML/C
 
 This sample showcases a selection of WebView2's event handlers and API methods that allow a WPF application to directly interact with a WebView and vice versa.
 
-![WebView2WpfBrowser sample app](media/webview2wpfbrowser-sample-app.png)
+![WebView2WpfBrowser sample app](./webview2wpfbrowser-images/webview2wpfbrowser-sample-app.png)
 
 The **WebView2WpfBrowser** sample app has the following menus, containing many useful menuitems:
 *  **File**
@@ -39,6 +39,8 @@ For more information about events and API Handlers in WebView2, see [WebView2 AP
 ## Step 1 - Install a preview channel of Microsoft Edge
 
 1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+
+1. To test the experimental APIs ahead of time and ensure your WebView2 app's forward-compatibility, see [Approaches to making your app use a specific browser channel](../how-to/set-preview-channel.md#approaches-to-making-your-app-use-a-specific-browser-channel) in _Test upcoming APIs and features_. Follow the steps in that section, and then return to this page and continue the steps below.
 
 
 <!-- ====================================================================== -->
@@ -75,7 +77,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    The **WebView2WpfBrowser** project opens in Visual Studio:
 
-   ![The WebView2WpfBrowser project in Visual Studio](media/webview2wpfbrowser-project-opened.png)
+   ![The WebView2WpfBrowser project in Visual Studio](./webview2wpfbrowser-images/webview2wpfbrowser-project-opened.png)
 
 
 <!-- ====================================================================== -->
@@ -91,11 +93,11 @@ At the top of Visual Studio, set the build target, as follows:
 
    This builds the project file `WebView2WpfBrowser.csproj`.
 
-1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
+1. In Visual Studio, select **Debug** > **Start Debugging** (**F5**).
 
    The sample app window opens:
 
-   ![The WebView2WpfBrowser sample app](media/webview2wpfbrowser-sample-app.png)
+   ![The WebView2WpfBrowser sample app](./webview2wpfbrowser-images/webview2wpfbrowser-sample-app.png)
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
@@ -103,7 +105,7 @@ At the top of Visual Studio, set the build target, as follows:
 <!-- ====================================================================== -->
 ## Step 7 - Update the WebView2 SDK
 
-1. Update the prerelease WebView2 SDK on the project node (not the solution node) in Solution Explorer.  Install the latest prerelease of the WebView2 SDK, so that you can try the latest features.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. Update the prerelease WebView2 SDK on the project node (not the solution node) in Solution Explorer.  Install the latest prerelease of the WebView2 SDK, so that you can try the latest features.  In a separate window or tab, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 1. Build and run the project again.
 
@@ -119,7 +121,7 @@ At the top of Visual Studio, set the build target, as follows:
    
 1. In the Visual Studio code editor, inspect the code:
 
-   ![WebView2WpfBrowser project's code in Visual Studio](media/webview2wpfbrowser-code.png)
+   ![WebView2WpfBrowser project's code in Visual Studio](./webview2wpfbrowser-images/webview2wpfbrowser-code.png)
 
 
 <!-- ====================================================================== -->

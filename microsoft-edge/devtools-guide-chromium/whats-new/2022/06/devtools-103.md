@@ -61,7 +61,7 @@ In the new **Focus Mode** DevTools UI, various bugs affecting controls and keybo
 *  Improved reliability of **Quick View** controls.
 *  Improved behavior of opening DevTools by using keyboard shortcuts.
 *  Fixed an issue with navigating to a specific line of code in the **Sources** tool by using keyboard shortcuts.
-*  Restored the keyboard shortcut to open **Search** in **Quick View**, which is `Ctrl`+`Shift`+`F` (Windows, Linux) or `Command`+`Option`+`F` (macOS):
+*  Restored the keyboard shortcut to open **Search** in **Quick View**, which is **Ctrl+Shift+F** (Windows, Linux) or **Command+Option+F** (macOS):
 
 ![The Search keyboard shortcut opens the Search tool in Quick View](devtools-103-images/focus-mode-search-shortcut.png)
 
@@ -89,7 +89,7 @@ See also:
 <!-- Title: Fix: In high contrast mode, the Close button for DevTools is now accessible -->
 <!-- Subtitle: In previous versions of Microsoft Edge, the Close button wasn't visible in high contrast mode, but this issue has been fixed in Microsoft Edge 103. -->
 
-In previous versions of Microsoft Edge, the **Close** button for DevTools didn't render correctly in high contrast mode.  In Microsoft Edge 103, this issue has been fixed.  The **Close** (![Close icon](../../../media/close-devtools-icon-light-theme.png)) button for DevTools is displayed correctly in high contrast mode:
+In previous versions of Microsoft Edge, the **Close** button for DevTools didn't render correctly in high contrast mode.  In Microsoft Edge 103, this issue has been fixed.  The **Close** (![Close icon](./devtools-103-images/close-devtools-icon-light-theme.png)) button for DevTools is displayed correctly in high contrast mode:
 
 ![The Close DevTools (X) button in high contrast mode](devtools-103-images/close-button-high-contrast.png)
 

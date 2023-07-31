@@ -22,15 +22,15 @@ The **Performance monitor** tool helps determine where performance problems come
 
 To open the Performance monitor:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Performance monitor** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Performance monitor** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./performance-monitor-tool-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./performance-monitor-tool-images/more-tools-icon-light-theme.png)) button.
 
-![The More Tools menu, showing the Performance monitor menu command](../media/performance-monitor-tool/open-performance-monitor.png)
+![The More Tools menu, showing the Performance monitor menu command](./performance-monitor-tool-images/open-performance-monitor.png)
 
 The Performance monitor shows graphs of various performance metrics that update in real time.
 
-![What the Performance monitor tool looks like when it is first opened](../media/performance-monitor-tool/performance-monitor-first-open.png)
+![What the Performance monitor tool looks like when it is first opened](./performance-monitor-tool-images/performance-monitor-first-open.png)
 
 
 <!-- ====================================================================== -->
@@ -51,4 +51,4 @@ The **Performance monitor** tool shows three performance metrics by default, and
 
 To enable or disable any of the available performance metrics, click the labels in the side bar.
 
-![The Performance monitor sidebar, showing various metrics that can be toggled](../media/performance-monitor-tool/performance-monitor-metrics.png)
+![The Performance monitor sidebar, showing various metrics that can be toggled](./performance-monitor-tool-images/performance-monitor-metrics.png)

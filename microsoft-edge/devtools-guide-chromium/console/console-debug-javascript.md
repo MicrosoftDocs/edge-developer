@@ -22,13 +22,13 @@ The first experience you have with the **Console** is likely to be errors in scr
 
 1. Open the demo webpage [JavaScript error reported in the Console tool](https://microsoftedge.github.io/Demos/devtools-console/error.html) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
    In the top right of DevTools, the **Open Console to view errors** button displays an error about the webpage.
 
 1. Click the **Open Console to view errors** button on the top right.  In DevTools, the **Console** gives you more information about the error:
 
-   ![DevTools gives detailed information about the error in the Console](../media/console-debug-displays-error.msft.png)
+   ![DevTools gives detailed information about the error in the Console](./console-debug-javascript-images/console-debug-displays-error.png)
 
    Many error messages in the **Console** have a **Search for this message on the Web** button, shown as a magnifying glass.  This feature was introduced in Microsoft Edge version 94.  (For more information, see [Search the web for a Console error message string](index.md#search-the-web-for-a-console-error-message-string).)
 
@@ -36,7 +36,7 @@ The first experience you have with the **Console** is likely to be errors in scr
 
 1. Click the `error.html:16` link on the right of the error message in the **Console**.  The **Sources** tool opens and highlights the line of code with the error:
 
-   ![The Sources tool highlights the line of code that caused the error](../media/console-debug-displays-in-sources.msft.png)
+   ![The Sources tool highlights the line of code that caused the error](./console-debug-javascript-images/console-debug-displays-in-sources.png)
 
    The script tries to get the first `h2` element in the document and paint a red border around it.  But no `h2` element exists, so the script fails.
 
@@ -51,9 +51,9 @@ The **Console** also reports network errors.
 
 1. Open the demo webpage [Network error reported in Console](https://microsoftedge.github.io/Demos/devtools-console/network-error.html) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-   ![Console displays a Network and a JavaScript error](../media/console-debug-network-error.msft.png)
+   ![Console displays a Network and a JavaScript error](./console-debug-javascript-images/console-debug-network-error.png)
 
    The table displays `loading`, but nothing changes on the webpage, because the data is never retrieved.  In the **Console**, the following two errors occurred:
 
@@ -63,13 +63,13 @@ The **Console** also reports network errors.
 
 1. Click the link to the webpage and line of code where the error occurs, to open the Sources tool.  That is, click the `network-error.html:40` link in the **Console**:
 
-   ![Select the link to the webpage and line of code where the error occurs, to open the Sources tool](../media/console-debug-network-error-code-line.msft.png)
+   ![Select the link to the webpage and line of code where the error occurs, to open the Sources tool](./console-debug-javascript-images/console-debug-network-error-code-line.png)
 
    The **Sources** tool opens.  The problematic line of code is highlighted and followed by an `error` (`x`) button.
 
 1. Click the **error** (`x`) button.  The message `Failed to load resource: the server responded with a status of 404 ()` appears.
 
-   ![To find the error in JavaScript, use the Sources tool](../media/console-debug-network-error-sources.msft.png)
+   ![To find the error in JavaScript, use the Sources tool](./console-debug-javascript-images/console-debug-network-error-sources.png)
 
    This error informs you that the requested URL isn't found.
 
@@ -77,21 +77,21 @@ The **Console** also reports network errors.
 
    The Console displays an HTTP status code of the error after a resource isn't loaded:
 
-   ![The Console displays an HTTP status code of the error after a resource isn't loaded](../media/console-debug-network-error-url.msft.png)
+   ![The Console displays an HTTP status code of the error after a resource isn't loaded](./console-debug-javascript-images/console-debug-network-error-url.png)
 
    The **Network** tool displays more information about the failed request:
 
-   ![The Network tool displays more information about the failed request](../media/console-debug-network-error-network.msft.png)
+   ![The Network tool displays more information about the failed request](./console-debug-javascript-images/console-debug-network-error-network.png)
 
 1. Inspect the headers in the **Network** tool to get more insight:
 
-   ![Inspecting the headers in the Network tool may give more insight](../media/console-debug-network-error-network-detail.msft.png)
+   ![Inspecting the headers in the Network tool may give more insight](./console-debug-javascript-images/console-debug-network-error-network-detail.png)
 
    What was the problem?  Two slash characters (`//`) occur in the requested URI after the word `repos`.
 
 1. Open the **Sources** tool and inspect line 26.  A trailing slash character (`/`) occurs at the end of the base URI.  The **Sources** tool displays the line of code with the error:
 
-   ![The Sources tool displays the line of code with the error](../media/console-debug-network-error-code-error.msft.png)
+   ![The Sources tool displays the line of code with the error](./console-debug-javascript-images/console-debug-network-error-code-error.png)
 
 
 ### Viewing the resulting page when there are no errors in the Console
@@ -105,7 +105,7 @@ Next, we'll look at the resulting page when there are no errors in the **Console
 
    The example without any errors loads information from GitHub and displays it:
 
-   ![The example without any errors loads information from GitHub and displays it](../media/console-debug-network-error-fixed.msft.png)
+   ![The example without any errors loads information from GitHub and displays it](./console-debug-javascript-images/console-debug-network-error-fixed.png)
 
 
 #### Demo page: Network error reporting in Console and UI
@@ -114,7 +114,7 @@ Use defensive coding techniques to avoid the previous user experiences.  Make su
 
 1. Open the demo webpage [Network error reporting in Console and UI](https://microsoftedge.github.io/Demos/devtools-console/network-error-reported.html) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
    The example webpage demonstrates these practices:
 
@@ -124,7 +124,7 @@ Use defensive coding techniques to avoid the previous user experiences.  Make su
 
    The example catches and reports errors:
 
-   ![An example that catches and reports errors](../media/console-debug-network-error-report.msft.png)
+   ![An example that catches and reports errors](./console-debug-javascript-images/console-debug-network-error-report.png)
 
    The following code in the demo catches and reports errors using the `handleErrors` method, specifically the `throw Error` line:
 
@@ -154,11 +154,11 @@ To display two created error messages in the **Console**:
 
 1. Open the demo page [Creating error reports and assertions in Console](https://microsoftedge.github.io/Demos/devtools-console/error-assert.html) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
    Error messages appear in the **Console**:
 
-   ![Error messages appear in the Console](../media/console-debug-error-assert.msft.png)
+   ![Error messages appear in the Console](./console-debug-javascript-images/console-debug-error-assert.png)
 
    The demo page uses the following code:
 
@@ -218,7 +218,7 @@ To display the trace in the **Console**:
 
 1. Open the demo page [Creating traces in Console](https://microsoftedge.github.io/Demos/devtools-console/trace.html) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
    The page uses this code:
 
@@ -236,7 +236,7 @@ To display the trace in the **Console**:
 
    Here's the trace that's produced, in the **Console**:
 
-   ![The trace, displayed in the Console](../media/console-debug-trace.msft.png)
+   ![The trace, displayed in the Console](./console-debug-javascript-images/console-debug-trace.png)
 
 
 <!-- ====================================================================== -->

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/02/2023
+ms.date: 02/21/2023
 ---
 # Call native-side WinRT code from web-side code
 
@@ -68,7 +68,7 @@ This article walks you through the following main steps:
 
 1. Run the **wv2winrt** tool to generate C++/WinRT source code for the selected namespaces or classes.
 
-1. Call [AddHostObjectToScript](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript), in the WinUI 2 (UWP) sample WebView2 browser app project, [WebView2Samples > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp).
+1. Call [AddHostObjectToScript](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript), in your main WinUI project.
 
 1. Call methods and properties on the host object from your web-side JavaScript code (or from the DevTools Console).
 
@@ -125,34 +125,40 @@ Let's get started!
 
 ##### [WinUI 2 (UWP)](#tab/winui2)
 
-1. If Visual Studio 2015 or later isn't already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+#### Install Visual Studio
 
-1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) isn't already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+* If Visual Studio 2015 or later isn't already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.  The present article shows screenshots for Visual Studio Community Edition 2022.
 
-   If you have your own app code base already, you can open that project in Visual Studio, instead of starting with the **webview2_sample_uwp** sample from the `WebView2Samples` repo.
+#### Install a preview channel of Microsoft Edge
 
-1. If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+* If a preview channel of Microsoft Edge (Beta, Dev, or Canary) isn't already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
-1. On your local drive, open the `.sln` file in Visual Studio, in a directory such as:
+#### Create or open a basic WebView2 project
 
-   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
-   *  `<your-repos-directory>/WebView2Samples/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
+1. Do any of the following approaches to obtain a baseline starter project that contains a couple lines of WebView2 code that embeds the WebView2 control:
+
+   * **Use the provided baseline sample solution:**  If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.  This approach uses your local copy of https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI2_GettingStarted/MyUWPGetStartApp.sln.
+
+   * **Use a project template in Visual Studio to create a basic UWP app and add a WebView2 control:**  Do the steps in [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md) to create a baseline starter project that contains a couple lines of WebView2 code that embeds the WebView2 control.
+
+   * **Use your existing code base:**  If you have your own app code base already, you can open that project in Visual Studio.
+
+1. On your local drive, open the `.sln` file that you obtained above, such as the Samples repo solution:
+
+   *  `<your-repos-directory>/WebView2Samples-main/GettingStartedGuides/WinUI2_GettingStarted/MyUWPGetStartApp.sln`
+   *  `<your-repos-directory>/WebView2Samples/GettingStartedGuides/WinUI2_GettingStarted/MyUWPGetStartApp.sln`
 
    The sample solution opens in Visual Studio:
 
    ![Adding a new project for the wv2winrt tool](winrt-from-js-images/add-new-project-for-tool.png)
 
-1. In Visual Studio, select **Debug** > **Start Debugging**.  This builds the **webview2_sample_uwp** project, and then runs the baseline version of the project.  The **WebView2 WinUI 2 UWP Sample** window opens:
+1. In Visual Studio, select **Debug** > **Start Debugging**.  This builds the project, and then runs the baseline version of the project.  The baseline app opens, such as the **MyUWPGetStartApp** window:
 
    ![The WebView2 WinUI 2 UWP Sample window](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
 
-1. Close the **WebView2 WinUI 2 UWP Sample** window.
+   Shown is a WinUI 2 (UWP) app that has a WebView control added, set to initially navigate to Bing.com.  This is the app that results from doing the steps in [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md).
 
-In case you need more information, see detailed steps in these pages, and then continue below:
-* [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - steps to open, compile, and run the sample app.
-* [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md) - setting up a basic WebView2 app.
-* [GitHub > WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
-* [Set up your Dev environment for WebView2](machine-setup.md) - details about setting up prerequisites.
+1. Close the app window.
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -212,19 +218,21 @@ Add a project for the **wv2winrt** tool, as follows:
 
    ![In the 'Configure your new project' window, name the project 'WinRTAdapter'](winrt-from-js-images/config-proj-name-winrtadapter.png)
 
+   The path in the above screenshot reflects the approach of cloning the samples repo.
+
 1. Click the **Create** button.
 
-   The **New Universal Windows Platform Project** dialog opens:
+   The **New Windows Project** dialog opens:
 
-   ![The 'New UWP project' dialog](winrt-from-js-images/new-uwpp.png)
+   ![The 'New Windows Project' dialog](winrt-from-js-images/new-uwpp.png)
 
 1. Click the **OK** button.
 
    The **WinRTAdapter** project is created and is added in Solution Explorer next to the main project:
 
-   ![The newly created WinRTAdapter project (if a WinUI 2 solution)](winrt-from-js-images/fresh-winrtadapter-project.png)
+   ![The newly created WinRTAdapter project](winrt-from-js-images/fresh-winrtadapter-project.png)
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -245,7 +253,7 @@ Add a project for the **wv2winrt** tool, as follows:
 
    ![The newly created WinRTAdapter project (if a WinUI 3 solution)](winrt-from-js-images/fresh-winrtadapter-project-winui3.png)
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 ---
 
@@ -268,9 +276,13 @@ In the WinRTAdapter project, install the Windows Implementation Library (WIL), a
 
    ![NuGet Package Manager, selecting the 'Windows Implementation Library' package](winrt-from-js-images/pkg-mgr-wil.png)
 
-1. Click the **Install** button.
+1. Click the **Install** button.  The **Preview Changes** dialog opens:
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+   ![The Preview Changes dialog for WIL for the WinRTAdapter project](winrt-from-js-images/preview-changes-wil.png)
+
+1. Click the **OK** button.
+
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -285,7 +297,7 @@ In the WinRTAdapter project, install the Windows Implementation Library (WIL), a
 
 1. Click the **Install** button.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 ---
 
@@ -314,9 +326,13 @@ In the WinRTAdapter project, also install a prerelease version of the WebView2 S
 
    ![NuGet Package Manager, selecting the WebView2 SDK package, for the WinRTAdapter project](winrt-from-js-images/pkg-mgr-wv2-sdk.png)
 
-1. Click the **Install** button.
+1. Click the **Install** button.  The **Preview Changes** dialog opens:
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+   ![The Preview Changes dialog for adding WebView2 SDK to the WinRTAdapter project](winrt-from-js-images/preview-changes-wv2-prerelease.png)
+
+1. Click the **OK** button.
+
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -337,7 +353,7 @@ In the WinRTAdapter project, also install a prerelease version of the WebView2 S
 
 1. Click the **Install** button.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 ---
 
@@ -350,25 +366,29 @@ The WebView2 prerelease SDK is now installed for the **WinRTAdapter** project.
 
 ##### [WinUI 2 (UWP)](#tab/winui2)
 
-In the **webview2_sample_uwp** project, install the same prerelease version of the WebView2 SDK as you installed for the **WinRTAdapter** project, as follows:
+In the main project, such as **MyUWPGetStartApp**, install the same prerelease version of the WebView2 SDK as you installed for the **WinRTAdapter** project, as follows:
 
-1. In Solution Explorer, right-click the **webview2_sample_uwp** project, and then select **Manage NuGet Packages**.  The NuGet Package Manager window opens.
+1. In Solution Explorer, right-click the main project, such as **MyUWPGetStartApp**, and then select **Manage NuGet Packages**.  The NuGet Package Manager window opens.
 
 1. Select the **Include prerelease** checkbox.
+
+1. Select the **Browse** tab.
 
 1. In the **Search** box, enter **WebView2**.
 
 1. Click the **Microsoft.Web.WebView2** card.  Detailed information appears in the middle area of the window.
 
-1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK.  The version must be 1.0.1243.0 or higher.  If your WinRT WebView2 app targets WinUI 2 (UWP), this needs to be the same version as for the **WinRTAdapter** project.
+1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  Make sure to use the same version as used by the **WinRTAdapter project**; for WinRT WebView2 apps that target WinUI 2 (UWP), this needs to be the same version as for the **WinRTAdapter** project.  The version must be 1.0.1243.0 or higher.
 
-1. Click the **Install** button.
+1. Click the **Install** button.  The Preview Changes dialog opens, to add WebView2 to the main project.
 
-   The screen should look similar to the above section, except that now, **NuGet Package Manager** is open for the **webview2_sample_uwp** project instead of the **WinRTAdapter** project.
+1. Click the **OK** button.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+   Visual Studio should look similar to the above Step section, except that now, **NuGet Package Manager** is open for the main project instead of the **WinRTAdapter** project.
 
-The WebView2 prerelease SDK is now installed for the **webview2_sample_uwp** project.
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
+
+The WebView2 prerelease SDK is now installed for the main project.
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -427,7 +447,7 @@ Specify the namespace and class as follows:
 
 1. Click the **OK** button to close the **Property Pages** dialog.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 <!-- ------------------------------ -->
@@ -438,17 +458,17 @@ Next, add a reference in the main project, pointing to the adapter project.
 
 ##### [WinUI 2 (UWP)](#tab/winui2)
 
-In the **webview2_uwp_sample** project, add a reference that points to the **WinRTAdapter** project, as follows:
+In the main project, such as **MyUWPGetStartApp**, add a reference that points to the **WinRTAdapter** project, as follows:
 
-1. In Solution Explorer, expand the **webview2_uwp_sample** project (if WinUI 2), right-click **References**, and then select **Add Reference**.  The **Reference Manager** dialog opens.
+1. In Solution Explorer, expand the main project, such as **MyUWPGetStartApp**, right-click **References**, and then select **Add Reference**.  The **Reference Manager** dialog opens.
 
 1. In the tree on the left, select **Projects**.  Select the **WinRTAdapter** checkbox:
 
-   ![Adding a reference: The WinRTAdapter checkbox in the Reference Manager dialog for the webview2_uwp_sample project](winrt-from-js-images/winrtadapter-checkbox-ref-mgr-uwp-proj.png)
+   ![The WinRTAdapter checkbox in the Reference Manager dialog for the main project](winrt-from-js-images/winrtadapter-checkbox-ref-mgr-uwp-proj.png)
 
 1. Click the **OK** button to close the **Reference Manager** dialog.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -463,7 +483,7 @@ In the non-Adapter main project, such as **MyWebView2WinUI3**, add a reference t
 
 1. Click the **OK** button to close the **Reference Manager** dialog.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 ---
 
@@ -479,7 +499,7 @@ Next, generate the API code:
    *  `Windows.System.UserProfile` namespace
    *  `Windows.Globalization.Language` class
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. After building is complete, select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 <!-- the next issue didn't occur in WinUI 3 solution: -->
@@ -497,7 +517,7 @@ Next, generate the API code:
 ></ItemGroup>
 >```
 >
-> Replace `$(WebView2SDKPath)` with the directory where the WebView2 SDK was installed, with a `\` at the end. For example: `..\webview2_sample_uwp\packages\Microsoft.Web.WebView2.1.0.1264.42\`.
+> Replace `$(WebView2SDKPath)` with the directory where the WebView2 SDK was installed, with a `\` at the end. For example: `..\<sample-directory>\packages\Microsoft.Web.WebView2.1.0.1264.42\`.
 
 
 <!-- ====================================================================== -->
@@ -558,7 +578,7 @@ This section is for WinUI 3 (Windows App SDK) only.
    <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
    ```
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 The OS target is now updated.
 
@@ -593,7 +613,7 @@ Add the CsWinRT and WinRTAdapter packages in the project file:
    </PropertyGroup> 
    ```
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 
 <!-- ------------------------------ -->
@@ -632,7 +652,7 @@ This section is for WinUI 3 (Windows App SDK) only.
 
 1. Select **View** > **Error List**.
 
-1. Select **Debug** > **Start Debugging** (`F5`).
+1. Select **Debug** > **Start Debugging** (**F5**).
 
    The WinUI 3 app opens:
 
@@ -644,7 +664,7 @@ This section is for WinUI 3 (Windows App SDK) only.
 
    ![Debugger not configured](./winrt-from-js-images/debugger-not-configd.png)
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 ---
 
@@ -657,7 +677,7 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
 ##### [WinUI 2 (UWP)](#tab/winui2)
 
-1. In Solution Explorer, expand the main project, such as **webview2_sample_uwp**, and then select **MainPage.xaml.cs**.
+1. In Solution Explorer, expand the main project, such as **MyUWPGetStartApp**, expand **MainPage.xaml**, and then select **MainPage.xaml.cs**.
 
 1. Below the `MainPage` constructor, add the following `InitializeWebView2Async` method:
 
@@ -682,19 +702,20 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
    For full guidance on how to use custom WinRT components, see [Custom (3rd-party) WinRT components](#custom-3rd-party-winrt-components), below.
 
-1. In the `MainPage` constructor, above the `StatusUpdate("Ready");` line, add the following code:
+1. In the `MainPage` constructor, below `this.InitializeComponent();`, add the following code:
 
    ```csharp
    InitializeWebView2Async();
    ```
 
-1. Right-click the **webview2_sample_uwp** project, and then select **Set as startup project**.  Bold indicates startup project.
+1. Right-click the main project, such as **MyUWPGetStartApp**, and then select **Set as startup project**.  Bold indicates startup project.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
-1. Press `F5` to run the sample app.  The **WebView2 WinUI 2 UWP Sample** window opens.
+1. Press **F5** to run the sample app.  The WebView2-enabled WinUI 2 (UWP) app opens:
 
-   ![The WebView2 WinUI 2 UWP Sample window](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
+   ![The WebView2 WinUI 2 UWP app](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
+   <!-- 2nd use of this png in this article -->
 
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
@@ -736,9 +757,9 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
 1. Right-click the main project, such as **MyWebView2WinUI3**, and then select **Set as startup project**.  Bold indicates startup project.
 
-1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`).
+1. Select **File** > **Save All** (**Ctrl+Shift+S**).
 
-1. Press `F5` to run the sample app.  The **WinUI Desktop** window opens:
+1. Press **F5** to run the sample app.  The **WinUI Desktop** window opens:
 
    ![The WinUI Desktop (WinUI 3) app running](winrt-from-js-images/webview2-winui-3-app-after-addhost.png)
 
@@ -757,19 +778,19 @@ Next, use the DevTools Console to demonstrate that web-side code can call the ho
 * [Windows.System.UserProfile Namespace](/uwp/api/windows.system.userprofile)
 * [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language)
 
-1. If the app isn't running, in Visual Studio, press `F5` to run the sample app.
+1. If the app isn't running, in Visual Studio, press **F5** to run the sample app.
 
-1. Click in the main part of the WebView2 sample app window to give it focus, and then press `Ctrl`+`Shift`+`I` to open Microsoft Edge DevTools.  Or, right-click the page, and then select **Inspect**.
+1. Click in the main part of the WebView2 sample app window to give it focus, and then press **Ctrl+Shift+I** to open Microsoft Edge DevTools.  Or, right-click the page, and then select **Inspect**.
 
    The Microsoft Edge DevTools window opens.
 
-1. If the Microsoft Edge DevTools window isn't displayed, press `Alt+Tab` to display it.
+1. If the Microsoft Edge DevTools window isn't displayed, press **Alt+Tab** to display it.
 
 1. In the **DevTools** window, select the **Console** tab.
 
 1. Click the **Clear console** (![Clear console icon](./winrt-from-js-images/clear-console-icon.png)) button, or right-click in the **Console** and then select **Clear console**.  Messages might periodically appear in the Console.
 
-1. In the DevTools Console, paste the following [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language) code, and then press `Enter`:
+1. In the DevTools Console, paste the following [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language) code, and then press **Enter**:
 
    ```javascript
    const Windows = chrome.webview.hostObjects.sync.Windows;

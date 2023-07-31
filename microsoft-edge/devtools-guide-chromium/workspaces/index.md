@@ -59,10 +59,10 @@ The tutorial steps below walk you through this environment setup.
 If you're  using a modern framework, it probably transforms your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.
 A workspace is usually able to map the optimized code back to the original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS. However, there's a lot of variation in how each framework uses source maps.
 
-**Note:** DevTools doesn't support every framework variation, and the workspace feature doesn't work with the Create React App framework.
+**Note:** DevTools doesn't support every framework variation, and the Workspaces feature (**Filesystem** tab) doesn't work with the Create React App framework.
 
-If you run into issues while using workspaces with your framework of choice, or you identify framework-specific steps that are needed, [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to exchange information with the rest of the DevTools community.
-
+If you run into issues while using workspaces with your framework of choice, or you identify framework-specific steps that are needed, [start a thread in the Chrome DevTools mailing list](https://groups.google.com/forum/#!forum/google-chrome-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=google-chrome-devtools) to exchange information with the rest of the DevTools community.
+                                                                     
 
 <!-- ====================================================================== -->
 #### Related feature: Overrides
@@ -109,19 +109,19 @@ Node.js option:
 
 1. Open a tab in Microsoft Edge and go to the locally hosted version of the site. You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. **Note:** The default port number for the Python server option is `8000`. The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
 
-   ![The DevTools Workspaces Demo](../media/workspaces-workspaces-demo.msft.png)
+   ![The DevTools Workspaces Demo](./index-images/workspaces-workspaces-demo.png)
 
 ## Define a workspace in DevTools
 
-1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) to open the DevTools **Console**.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS) to open the DevTools **Console**.
 
-   ![The DevTools Console](../media/workspaces-workspaces-demo-console.msft.png)
+   ![The DevTools Console](./index-images/workspaces-workspaces-demo-console.png)
 
 1. Click the **Sources** tab.
 
 1. In the **Navigator** pane (on the left), click the **Filesystem** tab.
 
-   ![The Filesystem tab](../media/workspaces-workspaces-demo-sources-filesystem.msft.png)
+   ![The Filesystem tab](./index-images/workspaces-workspaces-demo-sources-filesystem.png)
 
 1. Click **Add Folder To Workspace**.
 
@@ -129,9 +129,9 @@ Node.js option:
 
 1. Click **Allow** to give DevTools permission to read and write to the directory.
 
-In the **Filesystem** tab, the list of files (![Mapped files list](../media/mapped-files-list-icon.png)) shows a page icon with two-way arrows and a green dot beside each of these files: `index.html`, `script.js`, and `styles.css`. (The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.) A green dot indicates that DevTools has established a mapping between a network resource of the page received from the web server, and the local source file in `~/Desktop/app`:
+In the **Filesystem** tab, the list of files (![Mapped files list](./index-images/mapped-files-list-icon.png)) shows a page icon with two-way arrows and a green dot beside each of these files: `index.html`, `script.js`, and `styles.css`. (The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.) A green dot indicates that DevTools has established a mapping between a network resource of the page received from the web server, and the local source file in `~/Desktop/app`:
 
-![The Filesystem tab has a green dot indicating a mapping between a resource received from the server and a local source file](../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png)
+![The Filesystem tab has a green dot indicating a mapping between a resource received from the server and a local source file](./index-images/workspaces-workspaces-demo-sources-filesystem-folder.png)
 
 
 <!-- ====================================================================== -->
@@ -141,17 +141,17 @@ To make a change in the CSS file and save it to disk:
 
 1. Open `styles.css`.  The `color` property of the `h1` element is set to `fuchsia`.
 
-   ![View styles.css in a text editor](../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png)
+   ![View styles.css in a text editor](./index-images/workspaces-workspaces-demo-sources-filesystem-css.png)
 
 1. Select the **Elements** tool.
 
-   The CSS rules that are applied to the `<h1>` element are shown in the **Styles** pane.  The **mapped file** (![Mapped file icon](../media/mapped-file-icon.png)) icon next to `styles.css:1` is a page with two-way arrows.  This icon means that any changes that you make are mapped to `~/Desktop/app/styles.css`.
+   The CSS rules that are applied to the `<h1>` element are shown in the **Styles** pane.  The **mapped file** (![Mapped file icon](./index-images/mapped-file-icon.png)) icon next to `styles.css:1` is a page with two-way arrows.  This icon means that any changes that you make are mapped to `~/Desktop/app/styles.css`.
 
-   ![The 'mapped file' icon, a page with two-way arrows](../media/workspaces-workspaces-demo-elements-styles-css.msft.png)
+   ![The 'mapped file' icon, a page with two-way arrows](./index-images/workspaces-workspaces-demo-elements-styles-css.png)
 
 1. Change the value of the `color` property of the `<h1>` element to your favorite color.  To do this, select the `<h1>` element in the **DOM Tree**. Select `fucshia`, type the new color, and then select it from the color list:
 
-   ![Change the color property in styles.css](../media/workspaces-workspaces-demo-elements-styles-css-pick-color.msft.png)
+   ![Change the color property in styles.css](./index-images/workspaces-workspaces-demo-elements-styles-css-pick-color.png)
 
 1. Open `styles.css` in a text editor.  The `color` property is now set to the new color, which is orange in this example.
 
@@ -176,7 +176,7 @@ The following steps demonstrate that edits aren't preserved across page refreshe
 
 1. Select and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I Love Cake`.
 
-   ![Attempting to change HTML from the DOM tree in the Elements tool](../media/workspaces-workspaces-demo-sources-page-h1.msft.png)
+   ![Attempting to change HTML from the DOM tree in the Elements tool](./index-images/workspaces-workspaces-demo-sources-page-h1.png)
 
 1. Open `~/Desktop/app/index.html` in a text editor.  The change that you just made doesn't appear.
 
@@ -209,11 +209,11 @@ If you want to save a change to the webpage HTML, edit the HTML in the **Sources
 
 1. Replace `<h1>Workspaces Demo</h1>` with `<h1>I Love Cake</h1>`.  The demo title changes.
 
-1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change.
 
 1. Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed.
 
-   ![Change HTML from the Sources tool](../media/workspaces-workspaces-demo-sources-page-h1.msft.png)
+   ![Change HTML from the Sources tool](./index-images/workspaces-workspaces-demo-sources-page-h1.png)
 
 1. Open `~/Desktop/app/index.html` in a text editor.  The `<h1>` element contains the new text.
 
@@ -227,17 +227,17 @@ To open the DevTools code editor alongside other tools:
 
 1. Select the **Elements** tool.
 
-1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-1. Type `quick` at the **Run** prompt, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
+1. Type **quick** at the **Run** prompt, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
 
-   ![Open the 'Quick source' tool by using the Command Menu](../media/workspaces-workspaces-demo-search-show-quick-source.msft.png)
+   ![Open the 'Quick source' tool by using the Command Menu](./index-images/workspaces-workspaces-demo-search-show-quick-source.png)
 
-1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog, shown in the next screenshot.
+1. Press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the **Open File** dialog, shown in the next screenshot.
 
-1. Type `script` at the **Open** prompt, then select **app/script.js**.
+1. Type **script** at the **Open** prompt, then select **app/script.js**.
 
-   ![Opening script.js using the Open File dialog](../media/workspaces-workspaces-demo-search-script.msft.png)
+   ![Opening script.js using the Open File dialog](./index-images/workspaces-workspaces-demo-search-script.png)
 
    The **Edit files with Workspaces** link in the demo is styled regularly.
 
@@ -247,11 +247,11 @@ To open the DevTools code editor alongside other tools:
     document.querySelector('a').style = 'font-style:italic';
     ```
 
-1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change.
 
 1. Refresh the page.  The link on the page is now italicized.
 
-   ![The link on the page is now italicized](../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png)
+   ![The link on the page is now italicized](./index-images/workspaces-workspaces-demo-elements-styles-quick-source-script.png)
 
 
 <!-- ====================================================================== -->

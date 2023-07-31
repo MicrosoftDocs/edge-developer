@@ -43,7 +43,7 @@ These steps explain how to start http-server by using the cross-platform git bas
 
 1. If you haven't already, set up and start a web server for the first time, serving out the **demo-to-do** app from the Demos repo.  To do this, see [Step 6: Set up a localhost server](./install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
 
-1. Open git bash.  For example, on Windows, press `Start` and then enter **git bash**.
+1. Open git bash.  For example, on Windows, press **Start** and then enter **git bash**.
 
 1. `cd` into the the specific folder you want to serve via http, `Demos\demo-to-do\`:
 
@@ -59,7 +59,7 @@ These steps explain how to start http-server by using the cross-platform git bas
    npx http-server
    ```
    
-   ![Starting the server](./install-images/git-bash-starting-server-2nd-time.png)
+   ![Starting the server](./get-started-launch-project-images/git-bash-starting-server-2nd-time.png)
 
    Information about the server and localhost URL is displayed, such as:
 
@@ -82,15 +82,15 @@ This section is in support of clicking the **Launch Project** button.
 
 1. In Visual Studio Code, select **File** > **Open Folder**.  Select your project directory that contains `index.html` for the cloned **demo-to-do** sample in the Demos repo, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\`.
    
-   ![The demo-to-do sample folder opened in Visual Studio Code](./get-started-images/demo-todo-folder-opened.png)
+   ![The demo-to-do sample folder opened in Visual Studio Code](./get-started-launch-project-images/demo-todo-folder-opened.png)
 
    Just like in the repo's [demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) folder, initially there's no `.vscode` folder, and no `launch.json` file in that folder.
 
-1. In the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
+1. In the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-project-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
 
 1. Click the **Generate launch.json** button:
 
-   ![The 'Generate launch.json' button of the DevTools extension](./get-started-images/generate-launch-json.png)
+   ![The 'Generate launch.json' button of the DevTools extension](./get-started-launch-project-images/generate-launch-json.png)
 
    The new `launch.json` file opens.
 
@@ -113,7 +113,7 @@ This section is in support of clicking the **Launch Project** button.
 
 1. Copy and paste the modified URL line to the other places in the `launch.json` file.
 
-   Tip: To modify all instances at the same time, you can copy an updated URL string, then select an instance of the initial URL string, press `Ctrl`+`Shift`+`L` to select all instances, and then paste the updated string.
+   Tip: To modify all instances at the same time, you can copy an updated URL string, then select an instance of the initial URL string, press **Ctrl+Shift+L** to select all instances, and then paste the updated string.
 
 1. Save the `launch.json` file.
 
@@ -121,15 +121,15 @@ This section is in support of clicking the **Launch Project** button.
 <!-- ====================================================================== -->
 ## Step 4: Click the Launch Project button
 
-1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens, now containing a **Launch Project** button but not a **Generate launch.json file** button:
+1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-project-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens, now containing a **Launch Project** button but not a **Generate launch.json file** button:
 
-   ![Targets pane when a launch.json file exists](./get-started-images/targets-pane-when-launch-json-exists.png)
+   ![Targets pane when a launch.json file exists](./get-started-launch-project-images/targets-pane-when-launch-json-exists.png)
 
 1. Click the **Launch Project** button.
 
    The **Edge DevTools** tab and the **Edge DevTools: Browser** tab open in separate panes, showing the **demo-to-do** web app:
 
-   ![The demo-to-do web app running in the 'Edge DevTools: Browser' tab](./get-started-images/demo-app-running-in-extension-browser.png)
+   ![The demo-to-do web app running in the 'Edge DevTools: Browser' tab](./get-started-launch-project-images/demo-app-running-in-extension-browser.png)
 
 At this point, you could work with CSS edits or step through code in the debugger.  See these sections of the tutorial _Get started by right-clicking an HTML file_:
 * [Step 4: Edit CSS in DevTools, updating the .css file automatically](./get-started-right-click-html.md#step-4-edit-css-in-devtools-updating-the-css-file-automatically)
@@ -141,9 +141,9 @@ At this point, you could work with CSS edits or step through code in the debugge
 
 To end debugging and close the **Edge DevTools** tabs:
 
-1. In the Debug toolbar, click the **Stop** (`Shift`+`F5`) button:
+1. In the Debug toolbar, click the **Stop** (**Shift+F5**) button:
 
-   ![Stop button in the Debug toolbar](./get-started-images/stop-button-debug-toolbar.png)
+   ![Stop button in the Debug toolbar](./get-started-launch-project-images/stop-button-debug-toolbar.png)
 
    Or, on the **Run** menu, select **Stop Debugging**.  Or, close the two DevTools tabs.  The Debug toolbar closes.
 

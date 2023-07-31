@@ -26,13 +26,13 @@ When you use the **Sources** tool to step through code, sometimes you pause on c
 
 To avoid pausing on extension code:
 
-1. In DevTools, in the upper right, click the **Settings** (![Settings icon](../../media/settings-gear-icon-light-theme.png)) button.
+1. In DevTools, in the upper right, click the **Settings** (![Settings icon](./mark-content-scripts-library-code-images/settings-gear-icon-light-theme.png)) button.
 
 1. In the **Settings** > **Ignore List** page, select the **Add content scripts to ignore list** checkbox:
 
-   ![Enabling the 'Add content scripts to ignore list' checkbox](../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png)
+   ![Enabling the 'Add content scripts to ignore list' checkbox](./mark-content-scripts-library-code-images/javascript-settings-library-code-mark-content-scripts-library-code.png)
 
-1. Click the **Close** DevTools (![Close DevTools icon](../../media/close-devtools-icon-light-theme.png)) button.
+1. Click the **Close** DevTools (![Close DevTools icon](./mark-content-scripts-library-code-images/close-devtools-icon-light-theme.png)) button.
 
 
 <!-- ====================================================================== -->
@@ -44,7 +44,7 @@ To avoid pausing on extension code:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/ignore-chrome-extension-scripts/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools & Lighthouse).
+> The original page was found at `https://developer.chrome.com/docs/devtools/javascript/ignore-chrome-extension-scripts/` and was authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools & Lighthouse).<!--todo: find where moved or got archived to-->
 
 [![Creative Commons License](../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
