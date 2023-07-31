@@ -22,17 +22,17 @@ As a developer, you can leverage the sidebar for your own experiences in two way
 <!-- ====================================================================== -->
 ## Choose the right approach
 
-The two different ways in which you can leverage the sidebar are designed to meet different developer needs. The following table summarizes the key differences between the two approaches:
+The two different ways in which you can leverage the sidebar are designed to meet different developer needs. The following are the key differences between sidebar apps and sidebar extensions:
 
 |Approach | Sidebar app | Sidebar extension |
 |---|---|---|
 | Definition | A Progressive Web App (PWA) that runs in the sidebar. | A Microsoft Edge extension that displays content in the sidebar. |
 | Distribution | Like a website, the app is hosted on the app's web server. | The extension is distributed through Microsoft Edge Add-ons. |
 | Capabilities | The app can make use of all web APIs and features, as well as PWA capabilities such as offline support, push, or file system access. | The extension can make use of powerful extension APIs, such as reading or modifying the current page. |
-| Context | The app runs in its own web context, separate from the main tab. | The extension can access the current page and modify it via its content script. |
-| Installation | The user installs the app by interacting with the sidebar when visiting the app's website. | The extension is installed by the user from Microsoft Edge Add-ons. |
+| Context | The app runs in its own web context, separate from the main tab. | The extension can access the current webpage and modify the webpage via the extension's content script. |
+| Installation | The user installs the app by interacting with the sidebar when visiting the app's website. | The extension is installed by the user from the Microsoft Edge Add-ons website. |
 | User experience | The app has its own icon in the sidebar. Clicking the icon opens the sidebar if it was closed and displays the app's contents. | The user experience depends on the extension. The extension can open the sidebar depending on the websites the user visits in the browser. |
-| Knowledge required | Web development and PWA knowledge. | Extension development knowledge. |
+| Technologies used | Web development and PWA. See [Overview of Progressive Web Apps (PWAs)](/microsoft-edge/progressive-web-apps-chromium/index.md). | Extension development.  See [Overview of Microsoft Edge extensions](/microsoft-edge/extensions-chromium/index.md). |
 
 
 <!-- ====================================================================== -->
@@ -40,7 +40,7 @@ The two different ways in which you can leverage the sidebar are designed to mee
 
 Sidebar apps allow you to adapt your existing Progressive Web App (PWA) to securely run alongside other browser tabs for a side-by-side co-browsing experience, which is a great choice for web developers who want to offer companion experiences including social, messaging, or media apps that don't require advanced extensions capabilities.
 
-We plan to help users discover and install sidebar apps as they browse the web, providing great discoverability for your app with just a simple change to your web application manifest file. This is a great option if you want to reuse your existing web app for the sidebar in Microsoft Edge and make full use of the web capabilities that are available to PWAs.
+The sidebar app infrastructure helps users discover and install sidebar apps as they browse the web, providing great discoverability for your app with just a simple change to your web application manifest file. Sidebar apps are a great option if you want to reuse your existing web app for the sidebar in Microsoft Edge and make full use of the web capabilities that are available to PWAs.
 
 To learn more about PWAs and how to create them, see [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps-chromium/index.md). And to learn more about adapting your existing PWA to the sidebar in Microsoft Edge, see [Build PWAs for the sidebar in Microsoft Edge](../progressive-web-apps-chromium/how-to/sidebar.md).
 
