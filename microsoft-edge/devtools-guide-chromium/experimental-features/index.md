@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 07/26/2023
+ms.date: 07/31/2023
 ---
 # Experimental features
 
@@ -613,13 +613,14 @@ Status:
 
 _new as of Microsoft Edge 117_
 
-Displays a warning about Self-XSS when pasting code.
-<!--todo: clarify-->
+<!-- _Self cross-site scripting_ (Self-XSS) is a security attack vector that relies on bad actors tricking unsuspecting users into attacking themselves by running code.  For example, a bad actor could create a website that asks users to copy some JavaScript code into their clipboard, then open the Console tool, paste that code into the Console, and then press **Enter**.  This can allow the bad actor to run code on the user's device with the user's privileges. -->
 
-<!-- 
+Displays a warning about self cross-site scripting whenever code is pasted into the Console.  If this checkbox is enabled, when the user pastes code into the Console tool, a warning message appears in the Console, such as the following:
+
+"Warning: Do not paste code you do not understand or have not checked yourself into the DevTools console. This could allow attackers to steal your identity or take control of your computer. Please type 'allow pasting' below to allow pasting."
+
 See also:
-* []()
-* []() -->
+* [Self-XSS](https://en.wikipedia.org/wiki/Self-XSS) at Wikipedia.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 117.
