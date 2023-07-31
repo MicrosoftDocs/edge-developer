@@ -620,7 +620,7 @@ Displays a warning about self cross-site scripting whenever code is pasted into 
 "Warning: Do not paste code you do not understand or have not checked yourself into the DevTools console. This could allow attackers to steal your identity or take control of your computer. Please type 'allow pasting' below to allow pasting."
 
 See also:
-* [Self-XSS](https://en.wikipedia.org/wiki/Self-XSS) at Wikipedia.
+* [Self-XSS](https://wikipedia.org/wiki/Self-XSS) at Wikipedia.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 117.
