@@ -94,7 +94,7 @@ These steps assume that initially, no folder is open in Visual Studio Code, and 
    If you want to obtain a file path: in Visual Studio Code > Activity Bar > **Explorer** (![Explorer button](./open-devtools-and-embedded-browser-images/explorer-icon.png)) > right-click an `.html` file > **Copy Path**.
 
    If you want to paste a URL, examples are:
-   * [http://localhost:8080](http://localhost:8080)
+   * `http://localhost:8080`
    * [http://127.0.0.1:8080](http://127.0.0.1:8080)
    * [http://10.0.1.8:8080](http://10.0.1.8:8080)
 
@@ -166,7 +166,7 @@ Continue below.
    ```
 
    Typical examples:
-   * [http://localhost:8080](http://localhost:8080)
+   * `http://localhost:8080`
    * [http://127.0.0.1:8080](http://127.0.0.1:8080)
    * [http://10.0.1.8:8080](http://10.0.1.8:8080)
 
