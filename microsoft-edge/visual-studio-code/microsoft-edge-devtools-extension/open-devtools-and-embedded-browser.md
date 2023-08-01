@@ -95,8 +95,8 @@ These steps assume that initially, no folder is open in Visual Studio Code, and 
 
    If you want to paste a URL, examples are:
    * `http://localhost:8080`
-   * [http://127.0.0.1:8080](http://127.0.0.1:8080)
-   * [http://10.0.1.8:8080](http://10.0.1.8:8080)
+   * `http://127.0.0.1:8080`
+   * `http://10.0.1.8:8080`
 
    Similar URLs are shown on the command line when you enter (for example) `npx http-server` to run a web server locally.
 
@@ -167,8 +167,8 @@ Continue below.
 
    Typical examples:
    * `http://localhost:8080`
-   * [http://127.0.0.1:8080](http://127.0.0.1:8080)
-   * [http://10.0.1.8:8080](http://10.0.1.8:8080)
+   * `http://127.0.0.1:8080`
+   * `http://10.0.1.8:8080`
 
    Similar URLs are shown on the command line when you start a server by entering `npx http-server`.
 
