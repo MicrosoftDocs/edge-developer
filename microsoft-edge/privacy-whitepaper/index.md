@@ -291,6 +291,7 @@ Microsoft Edge supports a variety of first-party enterprise security and complia
 * [Microsoft Insider Risk Management](/microsoft-365/compliance/insider-risk-management-solution-overview) 
 * [Microsoft Edge management service](/deployedge/microsoft-edge-management-service)
 
+
 These features become functional only on enterprise-managed devices by acquiring the right license for the feature or by the administrator deploying specific policies on the device.
 
 When these enterprise features are on, the browser sends auditing and diagnostic data to the administrator as per the feature’s requirement to function, manage or diagnose properly. This data collection is controlled by the enterprise administrator and end user is not able to opt-out.
