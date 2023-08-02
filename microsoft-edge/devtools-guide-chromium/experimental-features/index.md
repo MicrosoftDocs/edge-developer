@@ -290,7 +290,7 @@ _new as of Microsoft Edge 114_
 Temporarily enables the **JavaScript Profiler** tool (tab) in DevTools.  The **JavaScript Profiler** tool will be deprecated.  To record JavaScript CPU profiles, use the **Performance** tool instead.
 
 See also:
-* [Get started analyzing runtime performance](../evaluate-performance/index.md) - **Performance** tool.
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 116.
