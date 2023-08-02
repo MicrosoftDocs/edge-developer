@@ -289,7 +289,7 @@ Microsoft Edge supports a variety of first-party enterprise security and complia
 * [Microsoft Endpoint Data Loss Prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
 * [Microsoft Defender for Cloud Applications](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 * [Microsoft Insider Risk Management](/microsoft-365/compliance/insider-risk-management-solution-overview) 
-* [Microsoft Edge management service](/deployedge/microsoft-edge-management-service)
+* [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) 
 
 
 These features become functional only on enterprise-managed devices by acquiring the right license for the feature or by the administrator deploying specific policies on the device.
