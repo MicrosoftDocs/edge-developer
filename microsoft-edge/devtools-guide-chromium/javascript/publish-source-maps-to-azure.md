@@ -22,7 +22,7 @@ Source maps map your compiled production code to your original development sourc
 
 You must index your source maps on the Azure Artifacts symbol server, so that your source maps are available to DevTools when you debug your production website.
 
-To do this, add the `x_microsoft_symbol_client_key` string property to your source maps at compilation time.  This property contains the lowercase hexadecimal value of the [256-bit SHA-2 hash](https://en.wikipedia.org/wiki/SHA-2) of your corresponding original source file.
+To do this, add the `x_microsoft_symbol_client_key` string property to your source maps at compilation time.  This property contains the lowercase hexadecimal value of the [256-bit SHA-2 hash](https://wikipedia.org/wiki/SHA-2) of your corresponding original source file.
 
 DevTools is then able to compute this hash for each of your compiled files, and use the hash to retrieve the correct source map from the Azure Artifacts symbol server.  In order to securely retrieve your source maps, DevTools uses a Personal Access Token that you provide, to connect to the Azure Artifacts symbol server.
 

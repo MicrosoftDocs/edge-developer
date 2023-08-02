@@ -191,7 +191,7 @@ None.
         "id": "2AE2506D9FDB1C541FB36DD908ED51DE",
         "title": "Remotely debug Windows devices - Microsoft Edge Development | Microsoft Learn",
         "type": "page",
-        "url": "https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
+        "url": "https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
         "webSocketDebuggerUrl": "wss://172.17.75.195:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE"
       },
       ...
@@ -228,7 +228,7 @@ None.
     "id": "2AE2506D9FDB1C541FB36DD908ED51DE",
     "title": "Remotely debug Windows devices - Microsoft Edge Development | Microsoft Learn",
     "type": "page",
-    "url": "https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
+    "url": "https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
     "webSocketDebuggerUrl": "wss://localhost:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE"
   },
   ...

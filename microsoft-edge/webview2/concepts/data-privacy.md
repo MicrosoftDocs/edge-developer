@@ -41,7 +41,7 @@ When the Windows **Diagnostic data** setting is on:
 *  WebView2-related data is collected, including API usage, SDK usage, and creation failure.
 *  Browser diagnostic data is collected.  Only browser events that are relevant to WebView2 are collected.
 
-Regardless of the Windows **Diagnostic data** setting, WebView2 collects required data that's necessary to maintain performance and reliability; see [Diagnostics, feedback, and privacy in Windows](https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319).
+Regardless of the Windows **Diagnostic data** setting, WebView2 collects required data that's necessary to maintain performance and reliability; see [Diagnostics, feedback, and privacy in Windows](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319).
 
 Although you don't have control of overall diagnostic data collection, WebView2 offers APIs to control the behavior of the following features that generate data:
 *  SmartScreen.
