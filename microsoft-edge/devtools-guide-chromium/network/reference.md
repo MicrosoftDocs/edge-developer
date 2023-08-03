@@ -509,7 +509,7 @@ Each of these phases may appear in the **Timing** tab:
 
 - **Initial connection**. The browser is establishing a connection, including TCP handshakes and retries and negotiating a Secure Socket Layer (SSL).
 
-- **Proxy negotiation**. The browser is negotiating the request with a [proxy server](https://en.wikipedia.org/wiki/Proxy_server).
+- **Proxy negotiation**. The browser is negotiating the request with a [proxy server](https://wikipedia.org/wiki/Proxy_server).
 
 - **Request sent**. The request is being sent.
 

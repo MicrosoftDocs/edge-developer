@@ -4,6 +4,7 @@ _site/
 .DS_Store
 .optemp/
 .vscode/
+.vs/
 _themes*/
 .idea
 
