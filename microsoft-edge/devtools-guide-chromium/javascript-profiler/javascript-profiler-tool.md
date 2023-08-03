@@ -12,6 +12,6 @@ ms.date: 02/15/2022
 
 The **JavaScript Profiler** tool has been replaced by the **Performance** tool and the **Memory** tool.
 
-For the **Performance** tool, see [Get started analyzing runtime performance](../evaluate-performance/index.md).
+For the **Performance** tool, see [Introduction to the Performance tool](../evaluate-performance/index.md).
 
 For the **Memory** tool, see [Fix memory problems](../memory-problems/index.md).
