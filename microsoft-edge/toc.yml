@@ -504,13 +504,13 @@
 # Performance tool ------------------------------------------------------------
             - name: Performance tool
               items:
-                - name: Get started analyzing runtime performance
+                - name: Introduction to the Performance tool
                   href: devtools-guide-chromium/evaluate-performance/index.md
-                  displayName: Performance tool
+                  displayName: Performance tool, Get started analyzing runtime performance  # old title
 
-                - name: Analyze runtime performance
+                - name: Troubleshooting common performance issues
                   href: devtools-guide-chromium/rendering-tools/index.md
-                  displayName: Performance tool
+                  displayName: Performance tool, Analyze runtime performance  # old title
 
                 - name: Optimize website speed using Lighthouse
                   href: devtools-guide-chromium/speed/get-started.md

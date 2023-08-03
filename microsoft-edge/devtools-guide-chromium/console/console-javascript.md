@@ -9,7 +9,7 @@ ms.date: 07/12/2023
 ---
 # Run JavaScript in the Console
 
-You can enter any JavaScript expression, statement, or code snippet in the **Console**, and it runs immediately and interactively as you type.  This is possible because the **Console** tool in DevTools is a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  _REPL_ stands for Read, Evaluate, Print, and Loop.
+You can enter any JavaScript expression, statement, or code snippet in the **Console**, and it runs immediately and interactively as you type.  This is possible because the **Console** tool in DevTools is a [REPL](https://wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  _REPL_ stands for Read, Evaluate, Print, and Loop.
 
 The **Console**:
 1. Reads the JavaScript that you type into it.

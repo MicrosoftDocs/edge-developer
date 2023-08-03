@@ -59,7 +59,7 @@ In the **Issues** tool, in the **Performance** category, a new kind of issue is 
 
 See also:
 * [Minimizing browser reflow | PageSpeed Insights](https://developers.google.com/speed/docs/insights/browser-reflow) - _reflow_ includes Paint, Composite, and Layout operations.
-* [Layout](../../../rendering-tools/index.md#layout) in _Analyze runtime performance_.
+* [Layout](../../../rendering-tools/index.md#layout) in _Troubleshooting common performance issues_.
 * [Open issues from the DOM tree](../../../issues/index.md#open-issues-from-the-dom-tree) in _Find and fix problems using the Issues tool_.
 * [Using CSS animations](https://developer.mozilla.org/docs/Web/CSS/CSS_Animations/Using_CSS_animations), at MDN.
 * [Inspect and modify CSS animation effects](../../../inspect-styles/animations.md)
