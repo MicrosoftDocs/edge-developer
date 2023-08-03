@@ -59,7 +59,7 @@ If not done yet, install WiX Toolset:
 
 1. Click the **OK** button.  The WiX installer window closes.
 
-1. Press the **Windows** key ![Windows key logo](./wv2deploymentwixcustomactionsample-images/windows-keyboard-logo.png) on your keyboard, type **Windows Features**, and then press **Enter**.  The **Turn Windows features on or off** dialog appears.
+1. Press the **Windows logo key** ![Windows logo key](./wv2deploymentwixcustomactionsample-images/windows-keyboard-logo.png), type **Windows features**, and then press **Enter**.  The **Turn Windows features on or off** dialog appears.
 
 1. Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box:
 
