@@ -170,8 +170,6 @@ At the top of Visual Studio, set the build target, as follows:
 
    _To zoom, right-click > **Open image in new tab**._
 
-1. Briefly explore the **WebView2APISample** app; for example, select a menuitem.  A later section, below, will provide more details.
-
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
 
@@ -232,11 +230,7 @@ The latest version of the WebView2 SDK is now installed for this project.
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
-
-<!-- ====================================================================== -->
-## Step 11 - Inspect the code
-
-1. In the Visual Studio code editor, inspect the code, per the following sections.
+This completes the numbered steps for building and running the Win32 sample app.  Next, in the Visual Studio code editor, inspect the code, per the following sections.
 
 
 <!-- ====================================================================== -->
