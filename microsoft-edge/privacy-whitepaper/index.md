@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/25/2023
+ms.date: 08/04/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -284,13 +284,15 @@ To view the history of your previous downloads, go to `edge://downloads`.  To cl
 ## Enterprise security and compliance
 
 Microsoft Edge supports a variety of first-party enterprise security and compliance features, including:
-* [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
-* [Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)
-* [Microsoft Endpoint Data Loss Prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
-* [Microsoft Defender for Cloud Apps](/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview)
-* [Microsoft Insider Risk Management](/microsoft-365/compliance/insider-risk-management-solution-overview) 
-* [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) 
 
+| Feature | Article |
+|---|---|
+| Windows Information Protection | [Protect your enterprise data using Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) |
+| Microsoft Defender Application Guard | [Microsoft Defender Application Guard overview](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) |
+| Microsoft Endpoint Data Loss Prevention (DLP) | [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about) |
+| Microsoft Defender for Cloud Apps | [Integration with Microsoft Edge for business preview](/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview) in _Session policies_ |
+| Microsoft Insider Risk Management | [Insider risk management](/microsoft-365/compliance/insider-risk-management-solution-overview)|
+| Microsoft Edge management service | [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) |
 
 These features become functional only on enterprise-managed devices by acquiring the right license for the feature or by the administrator deploying specific policies on the device.
 
