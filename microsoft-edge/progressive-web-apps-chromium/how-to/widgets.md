@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 08/03/2023
+ms.date: 08/04/2023
 ---
 # Build PWA-driven widgets
 
@@ -20,9 +20,15 @@ In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and 
 
 
 <!-- ====================================================================== -->
+## Install WinAppSDK
+
+To enable developing widgets on your local machine, install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
+
+
+<!-- ====================================================================== -->
 ## Define widgets
 
-widgets are defined in your PWA manifest file, by using the `widgets` manifest member. This manifest member is an array that can contain multiple widget definitions.
+Widgets are defined in your PWA manifest file, by using the `widgets` manifest member. This manifest member is an array that can contain multiple widget definitions.
 
 ```json
 {
@@ -379,9 +385,14 @@ async function updateWidget(widget) {
 
 PWAmp is a music player PWA demo application that defines a widget. The PWAmp widget lets users visualize the current song and play the previous or next songs.
 
+1. If not done yet, install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
+
 1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) and install the app on Windows 11.
-1. Open the Windows 11 widgets board by pressing **Ctrl+W**.
+
+1. Open the Windows 11 widgets board by pressing **Windows logo key + W**.
+
 1. Click **Add widgets** to open the **widgets settings** screen, scroll to the **PWAmp mini player** widget and add it.
+
 1. Close the **widgets settings** screen. The **PWAmp mini player** is now displayed in the widgets board.
 
 The PWAmp widget displays the current song and buttons to play the previous or next song.
