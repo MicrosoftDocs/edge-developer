@@ -391,7 +391,7 @@ Microsoft Edge doesn't store your geolocation coordinates. When making requests 
 
 History now supports views to display images of your web navigations and enhance your history experience.  All history data is stored locally on the device, and is organized per Microsoft Edge profile.  Images are saved for the duration the history exists (90 days).
 
-If you want Microsoft Edge not to capture images for your history, select the **Turn off images** button in the history hub.  Or, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Take Screenshots for History**.<!-- todo: in Dev 117 & Canary 117, there's instead a toggle labeled: **Save screenshots of site for History** -->  All previously saved images will be erased.
+If you want Microsoft Edge not to capture images for your history, select the **Turn off images** button in the history hub.  Or, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Save screenshots of site for History**.  All previously saved images will be erased.
 
 
 <!-- ====================================================================== -->
