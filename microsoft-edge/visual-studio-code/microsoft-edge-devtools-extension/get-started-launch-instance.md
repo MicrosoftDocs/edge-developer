@@ -154,7 +154,7 @@ By entering a file path in the address bar of the **Edge DevTools: Browser** tab
 
 The address bar that results from the **Launch Instance** button can be used to open a URL on a server.  However, the **Launch Project** button, along with a URL stored in `launch.json`, is the main way to open a webpage by specifying a URL, and the tools then open in Debug mode.
 
-1. If your localhost server is running, paste a localhost URL, such as [http://localhost:8080](http://localhost:8080).  Or, paste the github.io server URL, [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
+1. If your localhost server is running, paste a localhost URL, such as `http://localhost:8080`.  Or, paste the github.io server URL, [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 
    If you want to use CSS mirror editing to edit your source files, you'll need to open a folder in Visual Studio Code; otherwise, clear the **CSS mirror editing** checkbox in the **Styles** tab in the **Elements** tool in the **Edge DevTools** tab.  Clearing the checkbox prevents error messages about mapping and mirror editing when you experiment with changing CSS in DevTools and haven't provided a CSS source file for DevTools.
 

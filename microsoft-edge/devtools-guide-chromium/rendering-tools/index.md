@@ -1,11 +1,11 @@
 ---
-title: Analyze runtime performance
+title: Troubleshooting common performance issues
 description: Each stage in the pixel pipeline represents an opportunity to introduce jank (interruptions of rendering).  Learn about tools and strategies to identify and fix common problems that slow down runtime performance, for interactive and smooth pages.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 2/22/2023
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -20,7 +20,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Analyze runtime performance
+# Troubleshooting common performance issues
 
 <!-- not able to find this article or its strings in other repo; the link redirects.  "todo" items might not be actionable -->
 

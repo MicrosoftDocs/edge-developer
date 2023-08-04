@@ -14,7 +14,7 @@ The Playwright library provides cross-browser automation through a single API.
 
 [Playwright](https://playwright.dev/docs/intro) is a [Node.js](https://nodejs.org) library to automate [Chromium](https://www.chromium.org/Home), [Firefox](https://www.mozilla.org/firefox), and [WebKit](https://webkit.org) with a single API.  Playwright is built to enable cross-browser web automation that is evergreen, capable, reliable, and fast.  Because [Microsoft Edge is built on the open-source Chromium web platform](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration), Playwright is also able to automate Microsoft Edge.
 
-Playwright launches [headless browsers](https://en.wikipedia.org/wiki/Headless_browser) by default.  Headless browsers don't display a UI, so instead you must use the command line.  You can also configure Playwright to run full (non-headless) Microsoft Edge as well.
+Playwright launches [headless browsers](https://wikipedia.org/wiki/Headless_browser) by default.  Headless browsers don't display a UI, so instead you must use the command line.  You can also configure Playwright to run full (non-headless) Microsoft Edge as well.
 
 
 <!-- ====================================================================== -->
