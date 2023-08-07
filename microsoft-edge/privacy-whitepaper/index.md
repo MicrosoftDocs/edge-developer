@@ -290,7 +290,7 @@ Microsoft Edge supports a variety of first-party enterprise security and complia
 | Windows Information Protection | [Protect your enterprise data using Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) |
 | Microsoft Defender Application Guard | [Microsoft Defender Application Guard overview](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) |
 | Microsoft Endpoint Data Loss Prevention (DLP) | [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about) |
-| Microsoft Defender for Cloud Apps | [Session policies](/defender-cloud-apps/session-policy-aad) |
+| Microsoft Defender for Cloud Apps (Preview) | [Session policies](/defender-cloud-apps/session-policy-aad) |
 | Microsoft Insider Risk Management | [Insider risk management](/microsoft-365/compliance/insider-risk-management-solution-overview)|
 | Microsoft Edge management service | [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) |
 
