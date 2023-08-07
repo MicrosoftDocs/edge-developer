@@ -343,7 +343,7 @@ Saving files via **Save As** is working and is enabled for WebView2 for UWP apps
 
 If the host doesn't change the `ResultFilePath` of the downloaded file, the downloaded files will be downloaded to a subfolder with the app package's name in the `Downloads` folder.
 
-If the host changes the `ResultFilePath` of the downloaded file, the file will only be downloaded if the app has access to that file path by default. If you would like to use a file location that the app does not have access to by default, you must set the corresponding capability. See [UWP Capabilities](https://learn.microsoft.com/windows/uwp/packaging/app-capability-declarations).
+If the host changes the `ResultFilePath` of the downloaded file, the file will only be downloaded if the app has access to that file path by default. If you want to use a file location that the app doesn't have access to by default, you must set the corresponding capability. See [App capability declarations](https://learn.microsoft.com/windows/uwp/packaging/app-capability-declarations) in the UWP documentation.
 
 ###### Downloads Hub
 
