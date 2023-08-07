@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/25/2023
+ms.date: 08/07/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -338,6 +338,14 @@ Collecting child browsing data and sharing it with the family group organizer re
 **Guest** mode and **InPrivate** browsing aren't available if web filtering or activity reporting is turned on.
 
 The family group organizer may stop the data collection from the family safety portal.  For more information about Microsoft family safety features, see [What is a Microsoft family group?](https://support.microsoft.com/help/12413)
+
+
+<!-- ====================================================================== -->
+## Favorites
+
+Favorites supports views that add an image thumbnail for favorites that you've saved.  All favorites data is stored locally on the device, organized per Microsoft Edge profile.  Favorites are saved for the duration the favorite exists (10 years).  If you have sync turned on for favorites, your saved items are available across all signed-in and syncing versions of Microsoft Edge.
+
+If you want Microsoft Edge not to capture images for your favorites, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Save Images for Favorites**.  All previously saved images will be erased.
 
 
 <!-- ====================================================================== -->
