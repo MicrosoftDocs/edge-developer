@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 08/03/2023
+ms.date: 08/07/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -341,14 +341,6 @@ The family group organizer may stop the data collection from the family safety p
 
 
 <!-- ====================================================================== -->
-## Favorites
-
-Favorites now supports views that add an image thumbnail for favorites that you've saved.  All favorites data is stored locally on the device, organized per Microsoft Edge profile.  Favorites are saved for the duration the favorite exists (10 years).  If you have sync turned on for favorites, your saved items are available across all signed-in and syncing versions of Microsoft Edge.
-
-If you want Microsoft Edge not to capture images for your favorites, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Save Images for Favorites**.<!-- todo: no such control found in Canary 117 -->  All previously saved images will be erased.
-
-
-<!-- ====================================================================== -->
 ## Find on Page 
 
 Find on Page allows you to search a web page for important keywords. Open **Settings and more (...)** > **Find on Page**. A search box will appear. Type any keyword or phrase into this search box and the page will highlight all locations on the page where your exact search term appears. You can then move through these terms with the **Previous result** and **Next result** buttons. 
@@ -389,7 +381,7 @@ Microsoft Edge doesn't store your geolocation coordinates. When making requests 
 <!-- ====================================================================== -->
 ## History
 
-History now supports views to display images of your web navigations and enhance your history experience.  All history data is stored locally on the device, and is organized per Microsoft Edge profile.  Images are saved for the duration the history exists (90 days).
+History supports views to display images of your web navigations and enhance your history experience.  All history data is stored locally on the device, and is organized per Microsoft Edge profile.  Images are saved for the duration the history exists (90 days).
 
 If you want Microsoft Edge not to capture images for your history, select the **Turn off images** button in the history hub.  Or, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Save screenshots of site for History**.  All previously saved images will be erased.
 
