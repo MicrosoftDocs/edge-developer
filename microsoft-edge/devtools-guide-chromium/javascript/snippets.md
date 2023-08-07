@@ -24,7 +24,7 @@ ms.date: 05/04/2021
 
 If you are running the same code in the [Console](../console/index.md) repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [Sources](../sources/index.md) tool.  Snippets have access to the JavaScript context of the webpage, and you can run Snippets on any webpage.  The security settings of most webpages block from loading other scripts in Snippets.  For that reason, you must include all your code in one file.
 
-Snippets are an alternative to [bookmarklets](https://en.wikipedia.org/wiki/Bookmarklet) with the difference that Snippets only run in DevTools and aren't limited to the allowed length of a URL.
+Snippets are an alternative to [bookmarklets](https://wikipedia.org/wiki/Bookmarklet) with the difference that Snippets only run in DevTools and aren't limited to the allowed length of a URL.
 
 Using Snippets is an excellent way to change a few things in a third-party webpage.  Code changes in Snippets are added to the current webpage and run in the same context.  For more information about changing the existing code of a webpage, see [Overrides](overrides.md).
 

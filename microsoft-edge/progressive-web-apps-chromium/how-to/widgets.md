@@ -415,7 +415,7 @@ PWAmp is a music player PWA demo application that defines a widget. The PWAmp wi
 
 1. Follow the instructions in [enable widgets in Microsoft Edge](#enable-widgets-in-microsoft-edge).
 1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) and install the app on Windows 11.
-1. Open the Windows 11 widgets board by pressing **Ctrl+W**.
+1. Open the Windows 11 widgets board by pressing **Windows logo key + W**.
 1. Click **Add widgets** to open the **widgets settings** screen, scroll to the **PWAmp mini player** widget and add it.
 1. Close the **widgets settings** screen. The **PWAmp mini player** is now displayed in the widgets board.
 
