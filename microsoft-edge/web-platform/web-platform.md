@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 11/28/2022
+ms.date: 07/24/2023
 ---
 # Development tips for Microsoft Edge
 
@@ -16,6 +16,7 @@ There are many tips and tricks to be aware of when building websites or web apps
 *  Moving users to Microsoft Edge from Internet Explorer.
 *  Configuring tracking prevention in Microsoft Edge.
 *  Detecting Microsoft Edge from your website.
+*  Developing experiences for the sidebar in Microsoft Edge.
 *  Detecting Windows 11 by using User-Agent Client Hints.
 *  Customizing the **password reveal** button.
 *  Viewing formatted JSON responses and files in browser tabs.
@@ -30,7 +31,7 @@ This article lists the schedule of changes for Microsoft Edge and the Chromium p
 
 The web platform is a collection of technologies used for building webpages, including HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, changes may affect the functionality of existing webpages.
 
-See [Site compatibility-impacting changes coming to Microsoft Edge](site-impacting-changes.md).
+See [Site compatibility-impacting changes coming to Microsoft Edge](./site-impacting-changes.md).
 
 
 <!-- ====================================================================== -->
@@ -40,7 +41,7 @@ When an Internet Explorer user visits an incompatible public website, the user m
 
 To minimize disruptions, Microsoft Edge supports a new capability that automatically redirects users.  When an Internet Explorer user goes to a website that's incompatible with Internet Explorer, Windows can automatically redirect the user to Microsoft Edge.  Only websites that are part of the _Need Microsoft Edge_ list are redirected.
 
-See [Move users to Microsoft Edge from Internet Explorer](ie-to-microsoft-edge-redirection.md).
+See [Move users to Microsoft Edge from Internet Explorer](./ie-to-microsoft-edge-redirection.md).
 
 
 <!-- ====================================================================== -->
@@ -50,7 +51,7 @@ The tracking prevention feature in Microsoft Edge protects users from online tra
 
 The tracking prevention feature is built to uphold the Microsoft Edge _browser privacy promise_, while also ensuring that there is no impact by default to website compatibility or the economic viability of the web.
 
-See [Tracking prevention in Microsoft Edge](tracking-prevention.md).
+See [Tracking prevention in Microsoft Edge](./tracking-prevention.md).
 
 
 <!-- ====================================================================== -->
@@ -64,7 +65,20 @@ Microsoft Edge enables your website to retrieve user agent information.  You use
 
 You may want to provide different experiences to users based on their browser.  If you include steps about how to configure Microsoft Edge or another browser for use with your site, you may want to detect the browser and then show the appropriate content.
 
-See [Detect Microsoft Edge from your website](user-agent-guidance.md).
+See [Detect Microsoft Edge from your website](./user-agent-guidance.md).
+
+
+<!-- ====================================================================== -->
+## Develop experiences for the sidebar in Microsoft Edge
+
+The sidebar in Microsoft Edge is a persistent pane located on the side of the browser, which coexists with the primary content of the browser. The sidebar allows users to easily access popular websites and utilities alongside their browser tabs. The content in the sidebar augments the user's primary task by enabling side-by-side browsing and minimizing the need to switch contexts between browser tabs. With the sidebar in Microsoft Edge, users can access the productivity tools they need, while staying in their workflow.
+
+As a developer, you can leverage the sidebar for your own experiences in two ways:
+
+* By adapting your existing Progressive Web App (PWA) to run in the sidebar.
+* By making use of the Sidebar API in your Microsoft Edge extension.
+
+See [Develop for the sidebar](./sidebar.md).
 
 
 <!-- ====================================================================== -->
@@ -82,7 +96,7 @@ There are two approaches for sites to access user agent information:
 *  User-Agent strings (legacy).
 *  User-Agent Client Hints (recommended).
 
-See [Detect Windows 11 using User-Agent Client Hints](how-to-detect-win11.md).
+See [Detect Windows 11 using User-Agent Client Hints](./how-to-detect-win11.md).
 
 
 <!-- ====================================================================== -->
@@ -90,7 +104,7 @@ See [Detect Windows 11 using User-Agent Client Hints](how-to-detect-win11.md).
 
 The `password` input control in Microsoft Edge includes a **password reveal** button.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press **Alt+F8**, to show the characters in the password field.  You can remove the **password reveal** control, or customize the control styling.
 
-See [Customize the password reveal button](password-reveal.md).
+See [Customize the password reveal button](./password-reveal.md).
 
 
 <!-- ====================================================================== -->
