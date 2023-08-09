@@ -6,13 +6,9 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 06/14/2023
+ms.date: 08/04/2023
 ---
 # Build PWA-driven widgets
-
-![Experimental feature](./widgets-images/experimental-tag.png)
-
-**Note:** Support for the `widgets` manifest member and associated JavaScript APIs, documented below, is experimental and depends on Microsoft Windows functionality that's not widely available yet.
 
 Various operating systems have widgets dashboards that let users read content and perform tasks. Examples of this include Android Home Screen widgets, macOS Dashboard and Today Panel widgets, the Apple Touch Bar, Samsung Daily Cards, Mini App widgets, and smart watch app companions.
 
@@ -24,39 +20,15 @@ In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and 
 
 
 <!-- ====================================================================== -->
-## Enable widgets in Microsoft Edge
+## Install WinAppSDK
 
-Widgets are experimentally supported starting with Microsoft Edge 108.
-
-#### Enable local development of widgets
-
-To enable developing widgets on your local machine:
-
-1. Install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
-
-1. In Microsoft Edge, go to `edge://flags`.
-
-1. In the **Search flags** text box, type **Web App widgets**, and then in the **Web App widgets** dropdown menu, select **Enabled**:
-
-   ![Enabling the Web App widgets flag in the edge://flags page](./widgets-images/widgets-flag.png)
-
-1. In the **Search flags** text box, this time type **Experimental Web Platform Features**, and then in the **Experimental Web Platform Features** dropdown menu, select **Enabled**:
-
-   ![Enabling the Experimental Web Platform Features flag in the edge://flags page](./widgets-images/experimental-features-flag.png)
-
-1. Click the **Restart** button, which appears in the lower right.
-
-#### Enable widgets for your users
-
-To enable widget support in Microsoft Edge for users of your production PWA, enroll your site in the [Web App Widgets](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-widgets/registration/) origin trial.
-
-To learn more about origin trials, see [Enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial) in _Experimental features and origin trials_.
+To enable developing widgets on your local machine, install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
 
 
 <!-- ====================================================================== -->
 ## Define widgets
 
-widgets are defined in your PWA manifest file, by using the `widgets` manifest member. This manifest member is an array that can contain multiple widget definitions.
+Widgets are defined in your PWA manifest file, by using the `widgets` manifest member. This manifest member is an array that can contain multiple widget definitions.
 
 ```json
 {
@@ -413,10 +385,14 @@ async function updateWidget(widget) {
 
 PWAmp is a music player PWA demo application that defines a widget. The PWAmp widget lets users visualize the current song and play the previous or next songs.
 
-1. Follow the instructions in [enable widgets in Microsoft Edge](#enable-widgets-in-microsoft-edge).
+1. If not done yet, install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
+
 1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) and install the app on Windows 11.
+
 1. Open the Windows 11 widgets board by pressing **Windows logo key + W**.
+
 1. Click **Add widgets** to open the **widgets settings** screen, scroll to the **PWAmp mini player** widget and add it.
+
 1. Close the **widgets settings** screen. The **PWAmp mini player** is now displayed in the widgets board.
 
 The PWAmp widget displays the current song and buttons to play the previous or next song.
