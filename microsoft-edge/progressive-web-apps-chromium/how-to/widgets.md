@@ -24,7 +24,7 @@ In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and 
 
 For a PWA-driven widget, you build the widget experience by using the web app manifest, Adaptive Card templates, and JavaScript, rather than putting an existing PWA into a widget.  A PWA-driven widget is a separate experience, distinct from PWAs in the sidebar, which takes the entire PWA and puts it in the sidebar.
 
-No C++/C# code is required, to build a PWA-backed widget and ship through the Microsoft store.  Once you have produced your widget and can successfully install and run your widget from a public endpoint (the tool doesn't work with localhost), you can package your app using PWABuilder.com and ship the app to the Microsoft store without any additional code.
+To build a PWA-driven widget and deliver it via the Microsoft store, no C++/C# code is required.  Once you've produced the PWA-driven widget, and can successfully install and run the PWA-driven widget from a public endpoint, you can package the app by using [PWABuilder.com](https://www.pwabuilder.com) and ship the app to the Microsoft store without requiring any additional code.  A PWA-driven widget must be installed and run from a public endpoint, because the PWABuilder.com tool doesn't work with localhost.
 
 See also:
 * [Build PWAs for the sidebar in Microsoft Edge](./sidebar.md)
