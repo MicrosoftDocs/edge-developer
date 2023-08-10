@@ -12,9 +12,9 @@ ms.date: 08/10/2023
 
 Various operating systems have widgets dashboards that let users read content and perform tasks. Examples of this include Android Home Screen widgets, macOS Dashboard and Today Panel widgets, the Apple Touch Bar, Samsung Daily Cards, Mini App widgets, and smart watch app companions.
 
-On Windows 11, widgets appear in the Widgets board which you open from the left corner of your taskbar:
+On Windows 11, widgets appear in the Widgets Board, which you open from the left side of the taskbar:
 
-![The Widgets board in Windows 11](./widgets-images/windows11-widgets.png) 
+![The Widgets Board in Windows 11](./widgets-images/windows11-widgets.png) 
 
 In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and handle user interactions within them.
 
@@ -23,8 +23,6 @@ In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and 
 #### Requires building a custom widget for the PWA
 
 An existing PWA cannot simply be placed into the widget dashboard as-is, like you can with the Microsoft Edge Sidebar.  Instead, you need to build a custom widget experience that's appropriate for the widget host, which currently is the Win11 Widgets Board.  (There may be other widget hosts in the future.)  The Win11 Widgets Board requires widgets to be built by using Adaptive Card templates instead of HTML and JavaScript, so the widget has to be designed separately from the rest of the app's UI.
-
-For a PWA-driven widget, you build the widget experience by using the web app manifest, Adaptive Card templates, and JavaScript, rather than putting an existing PWA into a widget.  A widget is a separate experience, distinct from PWAs in the sidebar, which takes the entire PWA and puts it in the sidebar.
 
 See also:
 * [Build PWAs for the sidebar in Microsoft Edge](./sidebar.md)
@@ -406,15 +404,15 @@ PWAmp is a music player PWA demo application that defines a widget. The PWAmp wi
 
 1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) and install the app on Windows 11.
 
-1. Open the Windows 11 widgets board by pressing **Windows logo key + W**.
+1. Open the Windows 11 Widgets Board by pressing **Windows logo key + W**.
 
 1. Click **Add widgets** to open the **widgets settings** screen, scroll to the **PWAmp mini player** widget and add it.
 
-1. Close the **widgets settings** screen. The **PWAmp mini player** is now displayed in the widgets board.
+1. Close the **widgets settings** screen. The **PWAmp mini player** is now displayed in the Widgets Board.
 
 The PWAmp widget displays the current song and buttons to play the previous or next song.
 
-![Windows widgets board, next to the PWAmp demo app. The widgets board contains the PWAmp mini player widget, showing the current song playing in the PWAmp app](./widgets-images/pwamp-widget.png)
+![Windows Widgets Board, next to the PWAmp demo app. The Widgets Board contains the PWAmp mini player widget, showing the current song playing in the PWAmp app](./widgets-images/pwamp-widget.png)
 
 
 <!-- ====================================================================== -->
