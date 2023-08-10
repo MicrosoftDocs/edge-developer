@@ -25,7 +25,7 @@ In this tutorial, you:
 * Install the Mixed Reality Toolkit, by using the Mixed Reality Feature Tool.
 * Create an initial Unity project for HoloLens 2 development.
 * Add the Microsoft Mixed Reality WebView plugin for Unity, by using the Mixed Reality Feature Tool.
-* Configure a WebView2 prefab that displays webpage content in your HoloLens 2 app.
+* Configure a WebView prefab that displays webpage content in your HoloLens 2 app.
 * Learn about WebView2 concepts and interactions in Unity.
 
 
@@ -164,7 +164,7 @@ In this step, as above, you'll use the Mixed Reality Feature Tool to install the
 
 1. Click the **Approve** button to finalize the changes.
 
-1. In your Unity project, in your project's **Assets** folder, inspect the WebView2 prefab.
+1. In your Unity project, in your project's **Assets** folder, inspect the WebView prefab.
 
 The Microsoft Mixed Reality WebView plugin for Unity is now installed and imported.  Continue with the next Step below.
 
@@ -172,17 +172,17 @@ For more information, see [Welcome to the Mixed Reality Feature Tool](/windows/m
 
 
 <!-- ====================================================================== -->
-## Step 5 - Set up the WebView2 prefab in Unity scene
+## Step 5 - Set up the WebView prefab in Unity scene
 
-Now that the WebView plugin for Unity is installed and imported, set up the WebView2 prefab in your Unity scene, as follows:
+Now that the WebView plugin for Unity is installed and imported, set up the WebView prefab in your Unity scene, as follows:
 
-1. In the Unity Editor, navigate to the **Project** window, and then find the WebView2 prefab by going to **Packages** > **Microsoft Mixed Reality WebView (Preview)** > **Runtime** > **Prefab**.
+1. In the Unity Editor, navigate to the **Project** window, and then find the WebView prefab by going to **Packages** > **Microsoft Mixed Reality WebView (Preview)** > **Runtime** > **Prefab**.
 
-1. Drag the WebView2 prefab into your scene.
+1. Drag the WebView prefab into your scene.
 
-1. With the WebView2 prefab selected in the **Hierarchy** window, move it to a suitable starting location within the scene (such as under the `MixedRealitySceneContent` node), making sure it's in view of the default camera.
+1. With the WebView prefab selected in the **Hierarchy** window, move it to a suitable starting location within the scene (such as under the `MixedRealitySceneContent` node), making sure it's in view of the default camera.
 
-1. In the **Inspector** window, you can change the initial URL that's loaded by the WebView2 prefab. To do this, locate the **Current URL** text box, and then enter the desired URL. By default, the prefab loads `https://www.microsoft.com`:
+1. In the **Inspector** window, you can change the initial URL that's loaded by the WebView prefab. To do this, locate the **Current URL** text box, and then enter the desired URL. By default, the prefab loads `https://www.microsoft.com`:
 
    ![The Current URL input field for WebView prefab in Unity's Inspector](./hololens2-images/unity_inspector_change_url.png)
 
