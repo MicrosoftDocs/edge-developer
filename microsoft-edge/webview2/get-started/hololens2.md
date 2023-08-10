@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/11/2023
+ms.date: 08/10/2023
 ---
 # Get started with WebView2 in HoloLens 2 Unity apps (Preview)
 
