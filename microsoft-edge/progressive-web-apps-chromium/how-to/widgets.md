@@ -24,12 +24,13 @@ In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and 
 
 An existing PWA cannot simply be placed into the widget dashboard as-is, like you can with the Microsoft Edge Sidebar.  Instead, you need to build a custom widget experience that's appropriate for the widget host, which currently is the Win11 Widgets Board.  (There may be other widget hosts in the future.)  The Win11 Widgets Board requires widgets to be built by using Adaptive Card templates instead of HTML and JavaScript, so the widget has to be designed separately from the rest of the app's UI.
 
-For a PWA-driven widget, you build the widget experience by using the web app manifest, Adaptive Card templates, and JavaScript, rather than putting an existing PWA into a widget.  A PWA-driven widget is a separate experience, distinct from PWAs in the sidebar, which takes the entire PWA and puts it in the sidebar.
+For a PWA-driven widget, you build the widget experience by using the web app manifest, Adaptive Card templates, and JavaScript, rather than putting an existing PWA into a widget.  A widget is a separate experience, distinct from PWAs in the sidebar, which takes the entire PWA and puts it in the sidebar.
 
 See also:
 * [Build PWAs for the sidebar in Microsoft Edge](./sidebar.md)
 
-To build a PWA-driven widget and deliver it via the Microsoft store, no C++/C# code is required.  Once you've produced the PWA-driven widget, and can successfully install and run the PWA-driven widget from a public endpoint, you can package the app by using [PWABuilder.com](https://www.pwabuilder.com) and ship the app to the Microsoft store without requiring any additional code.  A PWA-driven widget must be installed and run from a public endpoint, because the PWABuilder.com tool doesn't work with localhost.
+To build a PWA-driven widget and deliver it via the Microsoft store, no C++/C# code is required.  Once you've produced the widget, and can successfully install and run the widget from a public endpoint, you can package the app by using [PWABuilder.com](https://www.pwabuilder.com) and ship the app to the Microsoft store without requiring any additional code.  The PWA backing the widget must be installable from a public endpoint, because PWABuilder.com doesn't support packing apps from localhost.
+<!-- The PWA (not the widget) is what is installable and packaged, because it's a standalone entity (unlike a widget). -->
 
 See also:
 * [Publish a Progressive Web App to the Microsoft Store](./microsoft-store.md)
