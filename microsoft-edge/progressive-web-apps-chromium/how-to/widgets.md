@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 08/04/2023
+ms.date: 08/10/2023
 ---
 # Build PWA-driven widgets
 
@@ -17,6 +17,16 @@ On Windows 11, widgets appear in the widgets board which you open from the left 
 ![The widgets board in Windows 11](./widgets-images/windows11-widgets.png) 
 
 In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and handle user interactions within them.
+
+
+<!-- ------------------------------ -->
+#### Requires developing a PWA specifically as a widget
+
+You don't put an existing PWA into a widget.  Instead, the PWA developer must build the widget experience using the web app manifest, Adaptive Card templates, and JavaScript.
+
+No C++/C# code is required, to build a PWA-backed widget and ship through the store. Once you have produced your widget and can successfully install and run your widget from a public endpoint (the tool doesn't work with localhost), you can package your app using PWABuilder.com and ship the app to the store without any additional code.
+
+The widget is a separate experience.  We have PWAs in the sidebar, which takes the entire PWA and puts it in the sidebar.
 
 
 <!-- ====================================================================== -->
