@@ -169,7 +169,7 @@ You can delete templates stored on the device and clear the cache data. Go to `e
 
 <!-- Above, should pick one way. Check UI for privacy updates -->
 
-If you're signed in with a **personal Microsoft account**, your collections, notes, comments, and images are automatically saved on Microsoft cloud for free.  If you want to turn off this service, go to `edge://settings/privacy`, <!--todo: scroll down to which section?--> and then turn off the **Show Collections and follow content creators in Microsoft Edge**<!--todo: no such setting--> toggle.  When this setting is turned off, Collections are disabled on this device.  Collections aren't available when using Guest mode or InPrivate browsing for your **personal Microsoft account**.
+If you're signed in with a **personal Microsoft account**, your collections, notes, comments, and images are automatically saved on Microsoft cloud for free.  If you want to turn off this service, disable Collections for this device by going to `edge://settings/privacy` <!--todo: scroll down to which section?--> and then turning off the toggle for **Show Collections and follow content creators in Microsoft Edge**.<!--todo: no such setting-->  Collections aren't available when using Guest mode or InPrivate browsing for your **personal Microsoft account**.
 
 
 <!-- ====================================================================== -->
