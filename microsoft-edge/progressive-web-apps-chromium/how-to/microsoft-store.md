@@ -61,8 +61,9 @@ To generate an app package:
 
 1.  Go to [PWA Builder](https://www.pwabuilder.com).
 1.  Under **Ship your PWA to app stores**, type the URL of your PWA and click **Start**.
-1.  Once your report is complete, make sure your PWA is store-ready. If your PWA score is too low, you can visit the **Manifest Options** and **Service Worker Options** and check out the sections that need work.
-1.  When your PWA is ready to be published, click **Next**, and then select the **Store Package** button in the **Windows** section of the publish page.
+1.  Your PWA will be evaluated to ensure it is store ready. If your PWA is ready to be packaged, you can continue to the next step. Otherwise, take a look at the **Action Items** field to see how to improve your PWA.
+1.  Once you are ready to package, click the **Package For Stores** button in the top-right corner of the PWABuilder report card page.
+1.  Under **Windows**, select **Generate Package**.
 1.  Paste the following values, which you saved in the [Create an app reservation](#create-an-app-reservation) section:
     *   **Package ID**
     *   **Publisher ID**
@@ -70,8 +71,7 @@ To generate an app package:
 
     ![Paste publisher information into PWABuilder](./microsoft-store-images/pwabuilder-windows-package-options.png)
 
-1.  Select **Generate**.
-1.  To download your Windows app package, select **Download**.
+1.  Click **Download Package** to download your Windows package.
 
 Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.  For more information, see [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)<!-- changing master to main doesn't work 5/19/2022 -->
 
