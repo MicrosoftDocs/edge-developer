@@ -148,8 +148,6 @@ At the top of Visual Studio, set the build target, as follows:
 
    ![The WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)
 
-   _To zoom, right-click > **Open image in new tab**._
-
    This builds the project file `SampleApps/WebView2APISample/WebView2APISample.vcxproj`.
 
 
@@ -167,8 +165,6 @@ At the top of Visual Studio, set the build target, as follows:
    The **WebView2APISample** app window opens:
 
    ![The WebView2APISample app window](./webview2apissample-images/webview2apisample-app-window.png)
-
-   _To zoom, right-click > **Open image in new tab**._
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
@@ -197,8 +193,6 @@ Examine and possibly update the installed NuGet packages, as follows:
 1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected, if you want to be able to try the latest APIs:
 
    ![NuGet Package Manager with WebView2 SDK prerelease selected](./webview2apissample-images/webview2apisample-pkg-mgr-prerelease-webview2.png)
-
-   _The above image is from another project, but is similar.  To zoom, right-click > **Open image in new tab**._
 
 1. Click the **Update** button.
 
