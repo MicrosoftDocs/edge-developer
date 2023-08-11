@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/01/2023
+ms.date: 08/11/2023
 ---
 # Win32 sample app
 
@@ -52,7 +52,7 @@ Next, make sure a preview channel of Microsoft Edge in installed, on a supported
 <!-- ====================================================================== -->
 ## Step 2 - Install Visual Studio
 
-Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.  The sample can also be opened using Visual Studio 2022.
+Microsoft Visual Studio is required (minimum version: Visual Studio 2019).  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.  The sample can also be opened using Visual Studio 2022.
 
 1. If Visual Studio is not already installed with C++ support, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio with C++ support, and then return to this page and continue the steps below.
 
@@ -248,7 +248,7 @@ The **WebView2APISample** app is an example of a hybrid application, with a Win3
 
 This hybrid approach allows you to create and iterate faster using web technologies, while still being able to take advantage of native functionality.  The **WebView2APISample** app demonstrates how the Win32 component and the WebView component can interact with each other.
 
-This wide-ranging sample app has grown to include 170 menuitems, demonstrating many WebView2 APIs in the Win32/C++ framework.  The present section focuses on basics of hybrid app implementation.
+This wide-ranging sample app has grown to include over 150 menuitems, demonstrating many WebView2 APIs in the Win32/C++ framework.  The following sections focus on basics of hybrid app implementation.
 
 
 <!-- ====================================================================== -->
