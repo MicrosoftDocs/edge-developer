@@ -60,7 +60,7 @@ Now that you have your app publishing information, generate a Windows app packag
 To generate an app package:
 
 1.  Go to [PWA Builder](https://www.pwabuilder.com).
-1.  Type the URL of your PWA and click **Start**.
+1.  Under **Ship your PWA to app stores**, type the URL of your PWA and click **Start**.
 1.  Once your report is complete, make sure your PWA is store-ready. If your PWA score is too low, you can visit the **Manifest Options** and **Service Worker Options** and check out the sections that need work.
 1.  When your PWA is ready to be published, click **Next**, and then select the **Store Package** button in the **Windows** section of the publish page.
 1.  Paste the following values, which you saved in the [Create an app reservation](#create-an-app-reservation) section:
