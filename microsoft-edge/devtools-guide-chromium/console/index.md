@@ -16,7 +16,7 @@ The **Console** tool helps with several tasks, which are covered in more detail 
 * **Track down problems** to find out why something isn't working in the current project.  See [Fix JavaScript errors that are reported in the Console](console-debug-javascript.md).
 * **Get information about the web project** in the browser as log messages.  See [Filter Console messages](console-filters.md).
 * **Log information** in scripts for debugging purposes.  See [Log messages in the Console tool](console-log.md).
-* **Try JavaScript expressions** live in a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  See [Run JavaScript in the Console](console-javascript.md).
+* **Try JavaScript expressions** live in a [REPL](https://wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  See [Run JavaScript in the Console](console-javascript.md).
 * **Interact with the web project in the browser** using JavaScript.  See [Interact with the DOM using the Console](console-dom-interaction.md).
 
 You can open the **Console** tool in the top or bottom of DevTools; it's shown here in upper part, on the main toolbar:
@@ -131,7 +131,7 @@ Many useful methods are available when you work with the **Console**.  For more 
 <!-- ====================================================================== -->
 ## Try your JavaScript live in the Console
 
-The **Console** isn't only a place to log information.  The **Console** is a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  When you write any JavaScript in the **Console**, the code runs immediately.  You may find it useful to test some new JavaScript features or to do some quick calculations.  Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.
+The **Console** isn't only a place to log information.  The **Console** is a [REPL](https://wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  When you write any JavaScript in the **Console**, the code runs immediately.  You may find it useful to test some new JavaScript features or to do some quick calculations.  Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.
 
 To try running JavaScript in the Console:
 

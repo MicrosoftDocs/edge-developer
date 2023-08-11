@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/29/2022
+ms.date: 08/03/2023
 ---
 # Custom management of network requests
 <!--
@@ -47,7 +47,6 @@ Instead of using the WebResourceRequested APIs, it's preferable to use these oth
 * Setting the user agent string.  See [UserAgent Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#useragent).
 
 **Note:** For URLs with virtual hostnames, using the `WebResourceRequested` event isn't supported.  This is because the `WebResourceRequested` event isn't fired for the [SetVirtualHostNameToFolderMapping method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping).<!-- or ClearVirtualHostNameToFolderMapping. -->
-
 
 
 <!-- ------------------------------ -->
@@ -109,9 +108,7 @@ Another example is if the host app is only interested in all requests that are u
 
 ---
 
-
 For details about how the URL filter works, see [CoreWebView2.AddWebResourceRequestedFilter Method > Remarks](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter#remarks)
-
 
 
 <!-- ------------------------------ -->
@@ -149,7 +146,7 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 
 <!-- this example doesn't exist in the sample repo -->
 
-<!-- note: the below intro is based on copying the main h2's Sentence 1 from above: -->
+<!-- the below intro is based on copying the main h2's Sentence 1 from above: -->
 In the following example, the host app _intercepts_ the document request that is sent from the WebView2 control to the `http://www.example.com` HTTP server, adds a custom header value and sends the request.  
 
 ##### [.NET](#tab/dotnet)
@@ -203,6 +200,7 @@ m_webView->add_WebResourceRequested(
 ```  
 
 ---
+
 
 <!-- ====================================================================== -->
 ## Overriding a response, to proactively replace it
@@ -317,7 +315,6 @@ from https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateW
 
 
 <!-- -------------------------------------------------- -->
-
 ##### [.NET](#tab/dotnet)
 
 ```csharp
@@ -392,7 +389,7 @@ The following code demonstrates how the `WebResourceResponseReceived` event can 
 ##### [.NET](#tab/dotnet)
 
 ```csharp
-WebView.WebResourceResponseReceived += WebView_WebResourceResponseReceived;
+WebView.CoreWebView2.WebResourceResponseReceived += CoreWebView2_WebResourceResponseReceived;
 
 // Note: modifications made to request are set but have no effect on WebView processing it.
 private async void WebView_WebResourceResponseReceived(object sender, CoreWebView2WebResourceResponseReceivedEventArgs e)

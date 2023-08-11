@@ -117,7 +117,7 @@ Your WebView2 control must open the Chrome Developer Protocol (CDP) port to allo
 
 You will also need to add a new REGKEY `*--remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port. To add this registry key:
 
-1. Open the Registry Editor by clicking the `Windows logo key` and searching for **Registry Editor**. Open the Registry Editor application and select **Yes** to allow editing.
+1. Open the Registry Editor by pressing the **Windows logo key** and then searching for **registry editor**. Open the **Registry Editor** application, and then select **Yes** to allow editing.
 
 1. Set the registry key `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` equal to `--remote-debugging-port=9222`.
 
@@ -185,7 +185,7 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
 1. Install a WebView2 Runtime version past `106.0.1370.34`.
 
-1. Open the Registry Editor by clicking the **Windows Key** and searching for **Registry Editor**. Open the **Registry Editor** application and select **Yes** to allow editing.
+1. Open the Registry Editor by pressing the **Windows logo key** and then searching for **registry editor**. Open the **Registry Editor** application and select **Yes** to allow editing.
 
 1. Set the registry key `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` equal to `--remote-debugging-pipe`.  To do this, follow the steps outlined in the [Debug running processes](#debug-running-processes) section above.
 

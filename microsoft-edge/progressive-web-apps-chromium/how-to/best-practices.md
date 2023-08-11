@@ -198,7 +198,7 @@ To test your app in multiple environments, consider the following techniques:
 <!-- ====================================================================== -->
 ## Support deep linking
 
-To improve discovery and sharing of your app through the web and social media, route each page of your app to a unique URL and support [deep linking](https://en.wikipedia.org/wiki/Deep_linking).  
+To improve discovery and sharing of your app through the web and social media, route each page of your app to a unique URL and support [deep linking](https://wikipedia.org/wiki/Deep_linking).  
 
 
 <!-- ======================================================================

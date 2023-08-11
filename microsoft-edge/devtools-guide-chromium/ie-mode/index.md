@@ -46,7 +46,7 @@ If a tab uses IE mode, the tab has the following limitations:
 
 If Internet Explorer isn't available on your computer, to debug the content of an IE mode tab, use IEChooser to open Internet Explorer DevTools, as follows:
 
-1. In Windows, open the **Run** dialog.  For example, press the `Windows logo key` + `R`.
+1. In Windows, open the **Run** dialog.  For example, press **Windows logo key + R**.
 
 1. Enter `%systemroot%\system32\f12\IEChooser.exe`, and then click **OK**.
 

@@ -71,7 +71,7 @@ Start by creating a basic desktop project that contains a single main window.
 
 1. Decide whether to create a **.NET Core/5/6** project (newer), or a **WPF App (.NET Framework)** project (older).  For more information, see:
    * [.NET history](/dotnet/core/introduction#net-history) in _What is .NET? Introduction and overview_.
-   * [.NET](https://en.wikipedia.org/wiki/.NET) at Wikipedia.
+   * [.NET](https://wikipedia.org/wiki/.NET) at Wikipedia.
 
 1. Follow the applicable section below.
 

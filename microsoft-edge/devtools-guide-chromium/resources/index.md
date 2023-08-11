@@ -125,7 +125,7 @@ You can use the **Sources** tool to view the webpage's resource files organized 
 
     | Page item | Description |
     |---|---|
-    | `top` | The main document _browsing context_, such as a browser tab, a browser window, or a frame. See [Browsing context](https://developer.mozilla.org/en-US/docs/Glossary/Browsing_context) or [\<iframe\>: The Inline Frame element](https://developer.mozilla.org/docs/Web/HTML/Element/iframe). |
+    | `top` | The main document _browsing context_, such as a browser tab, a browser window, or a frame. See [Browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context) or [\<iframe\>: The Inline Frame element](https://developer.mozilla.org/docs/Web/HTML/Element/iframe). |
     | `microsoftedge.github.io` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `buttons.js` file is [https://microsoftedge.github.io/Demos/devtools-a11y-testing/buttons.js](https://microsoftedge.github.io/Demos/devtools-a11y-testing/buttons.js). |
     | `css`, `photos` | Directories. |
     | `(index)` | The main HTML document. |
