@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 12/03/2021
+ms.date: 08/11/2023
 ---
 # Publish a Progressive Web App to the Microsoft Store
 
@@ -60,20 +60,27 @@ Now that you have your app publishing information, generate a Windows app packag
 To generate an app package:
 
 1.  Go to [PWA Builder](https://www.pwabuilder.com).
-1.  Under **Ship your PWA to app stores**, type the URL of your PWA and click **Start**.
-1.  Your PWA will be evaluated to ensure it is store ready. If your PWA is ready to be packaged, you can continue to the next step. Otherwise, take a look at the **Action Items** field to see how to improve your PWA.
-1.  Once you are ready to package, click the **Package For Stores** button in the top-right corner of the PWABuilder report card page.
+
+1.  Under **Ship your PWA to app stores**, enter the URL of your PWA in the text box, and then click the **Start** button.
+
+    Your PWA is evaluated to ensure it is store-ready.
+
+1.  If the evaluation in the PWABuilder report card page indicates that your PWA is ready to be packaged, continue to the next step.  If the evaluation indicates that your PWA is not ready to be packaged, examine  the **Action Items** field to see how to improve your PWA.
+
+1.  Once your PWA is ready to be packaged, in the upper-right corner of the PWABuilder report card page, click the **Package For Stores** button.
+
 1.  Under **Windows**, select **Generate Package**.
-1.  Paste the following values, which you saved in the [Create an app reservation](#create-an-app-reservation) section:
-    *   **Package ID**
-    *   **Publisher ID**
-    *   **Publisher Display Name**
+
+1.  Paste the following values, which you saved in the [Create an app reservation](#create-an-app-reservation) section above:
+    *  **Package ID**
+    *  **Publisher display name**
+    *  **Publisher ID**
 
     ![Paste publisher information into PWABuilder](./microsoft-store-images/pwabuilder-windows-package-options.png)
 
-1.  Click **Download Package** to download your Windows package.
+1.  Click the **Download Package** button to download your Windows package.
 
-Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.  For more information, see [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)<!-- changing master to main doesn't work 5/19/2022 -->
+Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.  For more information, see [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)<!-- changing "master" to "main" in that URL doesn't work, as of August 11, 2023 -->
 
 
 ### Submit your app package to the Store
