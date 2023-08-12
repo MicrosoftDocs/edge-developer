@@ -251,7 +251,7 @@ If your extension displays ads, all content displayed must conform to the advert
 
 #### 1.10.4 Promotions
 
-If you purchase or create promotional ad campaigns to promote your extensions through the ad campaign functionality in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs) and [Microsoft Creative Acceptance Policy](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies).
+If you purchase or create promotional ad campaigns to promote your extensions through the ad campaign functionality in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy](https://about.ads.microsoft.com/policies/creative-specs) and [Microsoft Creative Acceptance Policy](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies).
 
 #### 1.10.5 Notifying Users of Opt-Out for Interest-Based Advertising
 

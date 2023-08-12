@@ -57,7 +57,7 @@ To try using the logging functions in the Console:
 
    The `log()` and `info()` methods seem to do the same thing.  Use `info()` and `log()` for different log tasks, because that allows you to [filter Console messages](console-filters.md), to display only a subset of log entries.
   
-   The `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace](https://en.wikipedia.org/wiki/Stack_trace) of the message.
+   The `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace](https://wikipedia.org/wiki/Stack_trace) of the message.
 
 1. Copy and paste any of the examples into the **Console**, and then press **Enter**.
 
