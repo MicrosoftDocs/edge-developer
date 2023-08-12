@@ -1,11 +1,11 @@
 ---
-title: Get started analyzing runtime performance
+title: Introduction to the Performance tool
 description: Tutorial about how to evaluate runtime performance in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/22/2022
+ms.date: 2/22/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -20,15 +20,14 @@ ms.date: 11/22/2022
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Get started analyzing runtime performance
+# Introduction to the Performance tool
 
 _Runtime performance_ is how your page performs when it's running, as opposed to loading.  The following tutorial teaches you how to use the DevTools **Performance** tool to analyze runtime performance.
 
-In terms of the **RAIL** model, the skills you learn in this tutorial are useful for analyzing the Response, Animation, and Idle phases of your page.
+The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for [Core Web Vitals](https://web.dev/vitals/).  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the **Performance** tool.
 
-See also [Optimize website speed using Lighthouse](../speed/get-started.md).
-
-<!--todo: add rail link when section is ready -->
+See also:
+- [Optimize website speed using Lighthouse](../speed/get-started.md)
 
 
 <!-- ====================================================================== -->
@@ -36,24 +35,24 @@ See also [Optimize website speed using Lighthouse](../speed/get-started.md).
 
 In the following tutorial, you open DevTools on a "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
 
-1. Open the [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) demo page in your InPrivate tab or window.  To do that, right-click the link and then select **Open link in InPrivate window**.  You'll profile this page, which shows a variable number of icons moving up and down. For more information about InPrivate, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
+1. Open the [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) demo page in your InPrivate tab or window.  To do that, right-click the link and then select **Open link in InPrivate window**.  You'll profile this page, which shows a variable number of icons moving up and down. For more information about InPrivate, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
 
-   Note: The source for this demo is at [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
+   Source code: [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
 
 
    <!--TODO: replace section when updated for Chromium-based Edge  -->
 
    <!-- You can view the source files for the "Sluggish Animation" demo page at the [MicrosoftEdge/Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) repo folder. -->
 
-1. Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS) to open DevTools.
+1. Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS) to open DevTools:
 
    ![The demo on the left, and DevTools on the right](./index-images/evaluate-performance-get-started-side-by-side.png)
 
+For the rest of the screenshots, DevTools is shown [undocked to a separate window](../customize/placement.md).
 
-For the rest of the following screenshots, DevTools is [undocked to a separate window](../customize/placement.md), to better focus on the contents.
 
-
-### Simulate a mobile CPU
+<!-- ------------------------------ -->
+#### Simulate a mobile CPU
 
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.
 
@@ -70,7 +69,8 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
    If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
 
 
-### Set up the demo
+<!-- ------------------------------ -->
+#### Set up the demo
 
 The following section lets you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions.
 
@@ -78,14 +78,15 @@ The following section lets you customize the demo to make sure that your experie
 
 1. Click **Optimize**.  The blue icons should move faster and more smoothly.
 
-1. To better display a difference between the optimized and non-optimized versions, click the **Subtract 10** button a few times and try again.  If you add too many blue icons, you could max out the CPU, and then you might not observe a major difference in the results for the two versions.
+1. To better display a difference between the optimized and unoptimized versions, click the **Subtract 10** button a few times and try again.  If you add too many blue icons, you could max out the CPU, and then you might not observe a major difference in the results for the two versions.
 
 1. Click **Un-Optimize**.  The blue icons move slower and with more sluggishness again.
 
 
-### Record runtime performance
+<!-- ------------------------------ -->
+#### Record runtime performance
 
-When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the non-optimized version.
+When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the unoptimized version.
 
 1. In DevTools, click **Record** (![Record](./index-images/record-icon.png)).  DevTools captures performance metrics as the page runs.
 
@@ -116,7 +117,7 @@ Once you have a recording of the page's performance, you can assess the page's p
    ![Hover on a frame](./index-images/evaluate-performance-performance-frame-hover.png)
 
 
-
+<!-- ------------------------------ -->
 #### Bonus: Open the Frame Rendering Stats overlay
 
 Another handy tool is the **Frame Rendering Stats** overlay, which provides real-time estimates for FPS as the page runs. The **Frame Rendering Stats** overlay is not required for this tutorial but may provide helpful insight.
@@ -132,7 +133,8 @@ Another handy tool is the **Frame Rendering Stats** overlay, which provides real
 1. When you are done reviewing the FPS data, clear the **Frame Rendering Stats** checkbox to hide the overlay.
 
 
-### Find the bottleneck
+<!-- ------------------------------ -->
+#### Find the bottleneck
 
 After you verified that the animation isn't performing well, the next step is to answer the question "why?"
 
@@ -170,7 +172,7 @@ After you verified that the animation isn't performing well, the next step is to
 
    ![The line of code that caused the forced layout](./index-images/evaluate-performance-sources-app-update.png)
 
-   The problem with the non-optimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
+   The problem with the unoptimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
    <!--
    > To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts).
    -->
@@ -179,12 +181,77 @@ After you verified that the animation isn't performing well, the next step is to
 This article gives you a lot to learn. But now you have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.
 
 
-### Analyze the optimized version
+<!-- ------------------------------ -->
+#### Analyze the optimized version
 
 Using the workflows and tools that you just learned, click **Optimize** on the demo to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
-The optimized code uses a different sequence of actions to do less work. Note that this code could be made even faster by only using properties that only affect compositing, instead of manipulating the `top` property of every icon.
-<!--  > For more information, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations). todo: add rendering section when available -->
+
+<!-- ------------------------------ -->
+#### Unoptimized version
+
+Compare this snippet of JavaScript from the unoptimized version of the app:
+
+```javascript
+var pos = m.classList.contains("down")
+  ? m.offsetTop + distance
+  : m.offsetTop - distance;
+if (pos < 0) pos = 0;
+if (pos > maxHeight) pos = maxHeight;
+m.style.top = pos + "px";
+if (m.offsetTop === 0) {
+  m.classList.remove("up");
+  m.classList.add("down");
+}
+if (m.offsetTop === maxHeight) {
+  m.classList.remove("down");
+  m.classList.add("up");
+}
+```
+
+The above code snippet runs on every frame of the browser rendering loop, for each blue icon on the page.  The `m` variable references a single blue icon.
+
+In this unoptimized version, we create a `pos` variable that's set to the current position of the icon, to which we add some distance.  The current position of the icon is read by using `m.offsetTop`.
+
+After making sure that the icon is still within the bounds of the page, we set its new position by using `m.style.top`, which sets inline styles on the element.
+
+Finally, we read `m.offsetTop` again, to adjust the direction of the icon.
+
+
+<!-- ------------------------------ -->
+#### Optimized version
+
+The optimized code uses a different sequence of actions to do less work. Here is the same snippet of JavaScript from the optimized version of the app: 
+
+```javascript
+var pos = parseInt(m.style.top.slice(0, m.style.top.indexOf("px")));
+m.classList.contains("down") ? (pos += distance) : (pos -= distance);
+if (pos < 0) pos = 0;
+if (pos > maxHeight) pos = maxHeight;
+m.style.top = pos + "px";
+if (pos === 0) {
+  m.classList.remove("up");
+  m.classList.add("down");
+}
+if (pos === maxHeight) {
+  m.classList.remove("down");
+  m.classList.add("up");
+}
+```
+
+In the optimized version, we first set the value of the `pos` variable by reading `m.style.top` instead of using `m.offsetTop`.  Using the element's inline style is faster, because reading `m.offsetTop` forces the browser engine to know where all the elements are on the page, which requires the engine to recalculate the styles and the layout.
+
+We then set the new position of the icon, like done in the unoptimized version, but we don't read `m.offsetTop` again (like done in the unoptimized version) to adjust the icon's direction.
+
+The unoptimized code reads and writes the position of the icon from two different places, forcing the browser to recalculate the style and layout on each frame. The optimized version, however, writes and reads the position of the icon in the inline styles only.
+
+
+<!-- ------------------------------ -->
+#### Further possible optimizations
+
+This code could be made even faster by using CSS properties that only require the browser to do compositing, rather than layout. Instead of manipulating the `top` property, which forces the browser to run its layout code again, using the `transform` property would allow the browser to consider each icon as an individual layer, and then display these layers in the correct positions by re-compositing the final image. For example, instead of using `m.style.top = pos + "px";`, we can use `m.style.transform = translateY(pos + "px,");`.
+
+To learn more, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations).
 
 
 <!-- ====================================================================== -->
@@ -193,13 +260,15 @@ The optimized code uses a different sequence of actions to do less work. Note th
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
 To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rail/). -->
 
-To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS), or [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).  Include screenshots or links to reproducible pages, if possible.
+To get more comfortable with the **Performance** tool, practice profiling your pages and analyzing the results.
+
+If you have any questions about your results, use the **Send Feedback** icon, press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS), or [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues):
 
 ![The **Feedback** icon in the Microsoft Edge DevTools](./index-images/evaluate-performance-feedback-icon.png)
 
-<!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance](https://web.dev/rendering-performance/).  [The Anatomy Of A Frame](https://aerotwist.com/blog/the-anatomy-of-a-frame/) dives into even more detail. -->
+Include screenshots or links to reproducible pages, if possible.
 
-Last, there are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour of the **Performance** tool, but it's only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
+There are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour of the **Performance** tool, but it's only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
 <!--
 * [Optimize JavaScript execution](https://web.dev/optimize-javascript-execution/)
