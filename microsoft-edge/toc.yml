@@ -1559,6 +1559,10 @@
           href: web-platform/user-agent-guidance.md
           displayName: 
 
+        - name: Develop for the sidebar
+          href: web-platform/sidebar.md
+          displayName: sidebar apps, sidebar extensions, pwa, side panel, sidepanel
+
         - name: Detect Windows 11 using User-Agent Client Hints
           href: web-platform/how-to-detect-win11.md
           displayName: 
