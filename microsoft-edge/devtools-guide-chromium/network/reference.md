@@ -350,7 +350,7 @@ Right-click the header of the Requests table and select an option to hide or sho
 
 #### Add custom columns
 
-To add a custom column to the Requests table, right-click the header of the Requests table and then select **Response Headers** > **Manage Header Columns**.
+To add a custom column to the Requests table, right-click the header of the Requests table and then select **Response Headers** > **Manage Header Columns**. The **Manage Header Columns** popup window opens.  Click the **Add custom header** button, enter the custom header name, and then click **Add**. 
 
 ![Adding a custom column to the Requests table](./reference-images/network-network-requests-add-custom.png)
 
@@ -509,7 +509,7 @@ Each of these phases may appear in the **Timing** tab:
 
 - **Initial connection**. The browser is establishing a connection, including TCP handshakes and retries and negotiating a Secure Socket Layer (SSL).
 
-- **Proxy negotiation**. The browser is negotiating the request with a [proxy server](https://en.wikipedia.org/wiki/Proxy_server).
+- **Proxy negotiation**. The browser is negotiating the request with a [proxy server](https://wikipedia.org/wiki/Proxy_server).
 
 - **Request sent**. The request is being sent.
 

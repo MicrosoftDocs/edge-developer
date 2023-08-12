@@ -24,7 +24,7 @@ ms.date: 05/04/2021
 
 This page is a comprehensive reference of DevTools features that are related to analyzing performance.
 
-For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Get started analyzing runtime performance](index.md).
+For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Introduction to the Performance tool](index.md).
 
 
 <!-- ====================================================================== -->

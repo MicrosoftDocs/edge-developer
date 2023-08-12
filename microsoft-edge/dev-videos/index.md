@@ -156,7 +156,7 @@ CSS scroll-linked animations is an experimental feature in Microsoft Edge.  To t
 
 To play with the demo application that's shown in the video, see the rendered [reader demo](https://microsoftedge.github.io/Demos/reader/) and its [source code](https://github.com/MicrosoftEdge/Demos/tree/main/reader).
 
-To learn more about the CSS scroll-linked animations feature, see [@scroll-timeline](https://developer.mozilla.org/en-US/docs/Web/CSS/@scroll-timeline) at MDN.
+To learn more about the CSS scroll-linked animations feature, see [@scroll-timeline](https://developer.mozilla.org/docs/Web/CSS/@scroll-timeline) at MDN.
 
 
 <!-- ====================================================================== -->
