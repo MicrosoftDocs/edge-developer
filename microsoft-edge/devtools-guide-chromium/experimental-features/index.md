@@ -305,7 +305,7 @@ _new as of Microsoft Edge 114_
 Temporarily enables the **JavaScript Profiler** tool (tab) in DevTools.  The **JavaScript Profiler** tool will be deprecated.  To record JavaScript CPU profiles, use the **Performance** tool instead.
 
 See also:
-* [Get started analyzing runtime performance](../evaluate-performance/index.md) - **Performance** tool.
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 117.
@@ -716,12 +716,13 @@ _new as of Microsoft Edge 114_
 Emulates Microsoft-recommended hardware and network performance presets.
 
 See also:
-* [Analyze runtime performance](../rendering-tools/index.md)
+* [Troubleshooting common performance issues](../rendering-tools/index.md)
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 117.
 *  This checkbox is present in Microsoft Edge Stable 115.
 -->
+
 
 <!-- ====================================================================== -->
 ## Enable Crash Analyzer

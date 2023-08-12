@@ -222,7 +222,7 @@ These steps start the server for the first time.
    Hit CTRL-C to stop the server
    ```
 
-   The displayed URLs are usually equivalent to the common standard URL, [http://localhost:8080](http://localhost:8080).
+   The displayed URLs are usually equivalent to the common standard URL, `http://localhost:8080`.
 
    ![Starting the server](./install-images/git-bash-starting-server-2nd-time.png)
 

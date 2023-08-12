@@ -12,7 +12,7 @@ ms.date: 11/17/2021
 
 The [Puppeteer](https://pptr.dev) library provides a high-level API to control Chromium-based browsers, including Microsoft Edge, by using the [DevTools Protocol](https://chromedevtools.github.io/devtools-protocol).
 
-Puppeteer launches [headless browsers](https://en.wikipedia.org/wiki/Headless_browser) by default.  Headless browsers don't display a user interface (UI), so you must use the command line.  You can also configure Puppeteer to run full (non-headless) Microsoft Edge.
+Puppeteer launches [headless browsers](https://wikipedia.org/wiki/Headless_browser) by default.  Headless browsers don't display a user interface (UI), so you must use the command line.  You can also configure Puppeteer to run full (non-headless) Microsoft Edge.
 
 By default, when you install Puppeteer, the installer downloads a recent version of [Chromium](https://www.chromium.org/Home), the open-source browser that [Microsoft Edge is also built upon](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration).
 
@@ -135,4 +135,4 @@ The preceding example demonstrates basic automation and testing scenarios that y
 
 #### Info
 
-* [Headless browser on Wikipedia](https://en.wikipedia.org/wiki/Headless_browser)
+* [Headless browser on Wikipedia](https://wikipedia.org/wiki/Headless_browser)

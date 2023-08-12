@@ -511,13 +511,13 @@
 # Performance tool ------------------------------------------------------------
             - name: Performance tool
               items:
-                - name: Get started analyzing runtime performance
+                - name: Introduction to the Performance tool
                   href: devtools-guide-chromium/evaluate-performance/index.md
-                  displayName: Performance tool
+                  displayName: Performance tool, Get started analyzing runtime performance  # old title
 
-                - name: Analyze runtime performance
+                - name: Troubleshooting common performance issues
                   href: devtools-guide-chromium/rendering-tools/index.md
-                  displayName: Performance tool
+                  displayName: Performance tool, Analyze runtime performance  # old title
 
                 - name: Optimize website speed using Lighthouse
                   href: devtools-guide-chromium/speed/get-started.md
@@ -1565,6 +1565,10 @@
         - name: Detect Microsoft Edge from your website
           href: web-platform/user-agent-guidance.md
           displayName: 
+
+        - name: Develop for the sidebar
+          href: web-platform/sidebar.md
+          displayName: sidebar apps, sidebar extensions, pwa, side panel, sidepanel
 
         - name: Detect Windows 11 using User-Agent Client Hints
           href: web-platform/how-to-detect-win11.md
