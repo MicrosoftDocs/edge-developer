@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 06/20/2023
+ms.date: 08/04/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -79,6 +79,76 @@ In **Guest** mode, autofill is not available and new autofill entries aren't add
 
 
 <!-- ====================================================================== -->
+## Bing Chat in Microsoft Edge sidebar
+
+In Bing Chat in the Microsoft Edge sidebar, you can ask complex questions, find comprehensive answers, get summarized information, and find inspiration to build upon, in a side-by-side view, with no need to flip between tabs.
+
+To open Bing Chat in the Microsoft Edge sidebar, click the **Bing Chat** (![Bing Chat icon.](./index-images/bing-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of the Microsoft Edge toolbar:
+
+![Summarize this page](./index-images/summarize-content.png)
+
+
+<!-- --------------------------------------------------------------------- -->
+#### Data and consent used by Bing Chat in the sidebar
+
+Microsoft Edge determines what data to send to Bing Chat based on the user's **query** and their consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, page title, user's query, and previous conversation history to help Bing Chat answer their query effectively.
+
+For questions that need **browsing context**, such as when the user asks Bing Chat to summarize a large page of text, Microsoft Edge requests permission from the user to access page information:
+
+![Bing Chat asking for consent to access the page content in Microsoft Edge](./index-images/consent-for-contextual-browsing.png)
+
+When the user grants permission to share page information, Microsoft Edge sends the full **browsing context** in addition to the user's **query** and previous **conversation history** to Bing Chat, to help generate a meaningful **response**.
+
+The user can modify this permission anytime by going to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Bing Chat** and then turning on or off the **Allow access to any webpage or PDF** toggle.
+
+
+<!-- ---------------------------------------------------------------------- -->
+#### Duration of storage of conversation history
+
+* **Conversation history** is a history of all queries and responses from Bing Chat.  **Conversation history** is stored for 90 days.  This is independent of whether using Bing Chat in the Microsoft Edge sidebar or by visiting `www.bing.com/chat`.
+
+   * Users can delete a specific conversation or all the conversations from Bing Chat by going to `www.bing.com/chat`, and then deleting the specific conversations in the **Recent activity** section:
+
+     ![Recent conversation history in Bing Chat](./index-images/bing-chat-recent.png)
+
+* **Page content** from public **pages on the Bing index** – Bing Chat uses publicly available information from the Bing search engine to summarize pages that are available on the Bing search index.  To answer questions from public pages, Microsoft Edge doesn't need to share this page content with Bing Chat.
+
+* **Page content** from **non-Bing index pages** – information that's used to summarize a non-Bing index page is deleted after 6 hours, and it is only used to answer the query.
+
+
+<!-- ---------------------------------------------------------------------- -->
+#### Our commitment to responsible AI
+
+Bing Chat has numerous protective measures in place that are constantly evolving.  For details, see [The new Bing: Our approach to Responsible AI](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2023/04/RAI-for-the-new-Bing-April-2023.pdf).
+
+
+<!-- ---------------------------------------------------------------------- -->
+<!--
+#### Bing Chat for Enterprises
+
+Bing Chat for Enterprises ... (introduce).  To learn how Bing Chat for Enterprises protects user data and business data, see [Privacy and protections](/bing-chat-enterprise/privacy-and-protections).
+
+See also:
+* [Privacy and protections](/bing-chat-enterprise/privacy-and-protections)
+-->
+
+
+<!-- ---------------------------------------------------------------------- -->
+#### Glossary of terms for Bing Chat
+
+| Term | Definition |
+|---|---|
+| _query_ | A question that a user types in the **Ask me anything** text box in Bing Chat. |
+| _Bing index page_ | Any website URL that is publicly available on the internet for Bing to search and can be reached via a URL that starts with `http://` or `https://`. |
+| _non-Bing index page_ | Any webpage or local file that is not available publicly for Bing to search, but is open in Microsoft Edge. |
+| _grounding_ | Centering the response that's provided to a user's query or prompt on high-ranking content from the web, and providing links to websites so that users can learn more.  Bing ranks web search content by heavily weighting features such as relevance, quality, credibility, and freshness. |
+| _response_ | The text that Bing Chat outputs in response to a prompt.  Synonyms: _completion_, _generation_, _answer_. |
+| _conversation history_ | A combination of user query and response in the Bing Chat format. |
+| _browsing context_ | The page URL and page content that's open in the active tab of the Microsoft Edge browser. These could be webpages, local PDFs, Microsoft Word documents, or other local files.  For example, the user can ask **Summarize this page** while they are browsing a long topic or webpage.  Bing Chat uses the page context (such as the page URL) and the page content to summarize the topic for the user. |
+| _page information_ | The webpage content, or the content of the document, that's open in the active tab of the Microsoft Edge browser. |
+
+
+<!-- ====================================================================== -->
 ## Cast
 
 Cast in Microsoft Edge lets you display your media to another screen using Google Cast.  To access Cast, open **Settings and more (...)** > **More tools** > **Cast media to device**.  Cast relies on the Media Router extension not automatically installed with Microsoft Edge.  When you first use Cast, Microsoft Edge prompts for permission to install the Media Router extension.
@@ -101,6 +171,20 @@ You can delete templates stored on the device and clear the cache data. Go to `e
 
 You can use the title of your collection to find relevant Pinterest Topic pages when searching in Microsoft Bing. Go to `edge://settings/privacy`. Turn on the **Show suggestions from Pinterest in Collections** setting. Microsoft Edge does not send data about your collections to Pinterest. You can remove the suggestions and stop searches for Pinterest Topic pages. Go to `edge://settings/privacy` and turn off the **Show suggestions from Pinterest in Collections** setting.
 Collections aren't available when using **InPrivate** or **Guest** modes.
+
+
+<!-- ====================================================================== -->
+## Compose
+
+In the Bing Chat pane, the Compose tool uses AI to write for you, starting from a short prompt and **Tone**, **Format**, and **Length** selections. Text that's generated by Compose can be copied or inserted into the webpage directly.
+
+![Compose UI](./index-images/compose.png)
+
+To access Compose, click the **Bing Chat** (![Bing Chat icon](./index-images/bing-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of Microsoft Edge, and then select **Compose**. Text and selections that you enter are sent to an internal Microsoft Large Language Model (LLM).
+
+Requests for Compose are sent over a secure HTTPS connection. Each request contains the input prompt, formatting selections, and IDs that are associated with your Microsoft Edge profile and device, to reference for subsequent requests.
+
+To change settings for the sidebar or Bing Chat pane, go to `edge://settings/sidebar`, and then select **App and notification settings** > **Bing Chat**.
 
 
 <!-- ====================================================================== -->
@@ -200,11 +284,19 @@ To view the history of your previous downloads, go to `edge://downloads`.  To cl
 ## Enterprise security and compliance
 
 Microsoft Edge supports a variety of first-party enterprise security and compliance features, including:
-* [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
-* [Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)
-* [Microsoft Endpoint Data Loss Prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
-* [Microsoft Insider Risk Management](/microsoft-365/compliance/insider-risk-management-solution-overview) 
-* [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) 
+
+| Feature | Article |
+|---|---|
+| Windows Information Protection | [Protect your enterprise data using Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) |
+| Microsoft Defender Application Guard | [Microsoft Defender Application Guard overview](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) |
+| Microsoft Endpoint Data Loss Prevention (DLP) | [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about) |
+| Microsoft Defender for Cloud Apps (Preview) | [Session policies](/defender-cloud-apps/session-policy-aad) |
+| Microsoft Insider Risk Management | [Insider risk management](/microsoft-365/compliance/insider-risk-management-solution-overview)|
+| Microsoft Edge management service | [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) |
+
+<!-- todo (Aug 2023): when the forthcoming anchor link section like https://learn.microsoft.com/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview exists in destination page, replace row by:
+| Microsoft Defender for Cloud Apps | [Integration with Microsoft Edge for business preview](/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview) in _Session policies_ |
+-->
 
 These features become functional only on enterprise-managed devices by acquiring the right license for the feature or by the administrator deploying specific policies on the device.
 
@@ -553,6 +645,44 @@ If Microsoft Edge detects SSL connection timeouts, certificate errors, or other 
 
 
 <!-- ====================================================================== -->
+## Rewards
+
+Microsoft Rewards (the "Program") enables you to earn redeemable points for activities such as qualified searches, acquisitions, and other offers from Microsoft. These points can then be redeemed for gift cards or non-profit donations or automatic contributions to subscriptions. Microsoft Edge has built-in support for all existing avenues for earning points, and also introduces new and exclusive means to earn more points. You can track your points, and you can stay up-to-date with limited period offers to get the most out of the program.
+
+For non-members, Microsoft Edge presents personalized joining offers based on the page you're on. Once you engage and choose to enroll, Microsoft Edge uses your Microsoft account identity to sign you up and start the rewards service.  The rewards service automatically adds points to your account for searching, playing, and shopping on Microsoft Edge. Microsoft Edge doesn't send your personal information or browsing data to any third-party services.
+
+The Rewards dashboard (`rewards.bing.com`):
+
+![Rewards Dashboard UI](./index-images/rewardsdashboard.png)
+
+Rewards is an opt-in program. To turn off all Rewards experiences and data sharing, go to `edge://settings/profiles/rewards`, and turn off the **Earn Microsoft Rewards in Microsoft Edge** setting.
+
+![Rewards Settings UI](./index-images/rewardssettings.png)
+
+Offers may vary by market. 
+
+#### How to earn
+
+Microsoft Edge provides the greatest number of avenues to earn rewards points while browsing the web.
+
+A _search_ is the act of an individual user manually entering text for the good faith purpose of obtaining Bing search results for the user's own research purposes, and does not include any query that's entered by a bot, macro, or other automated or fraudulent means of any kind ("Search").
+
+An _acquisition_ is the process of purchasing goods or downloading and acquiring a license for digital content from Microsoft, whether free or paid ("Acquisition"). Rewards points are not offered for every purchase from Microsoft. Microsoft may offer additional opportunities to earn points from time to time, and each point-earning offer will not be available in perpetuity.
+
+#### Redeeming your points
+
+To redeem your points or contribute points to a listed nonprofit organization, go to the [redeem page](https://aka.ms/redeemrewards). You can also sign up for automatic contributions to non-profit organizations through a giving program.
+
+#### Cancelling your participation
+
+If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false). If you opt out, you will immediately lose all of your available points. 
+
+See also:
+* [Learn about Microsoft Rewards](https://support.microsoft.com/topic/learn-about-microsoft-rewards-c5ab735d-c6d9-4bb9-30ad-d828e954b6a9).
+* The **Microsoft Rewards** section in the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement/).
+
+
+<!-- ====================================================================== -->
 ## Search results data for product improvement 
 
 In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone's web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn't own or operate.
@@ -730,6 +860,25 @@ When you sign into Microsoft Edge with your Microsoft account or work or school 
 All synced data is encrypted in transit over HTTPS when transferred between the browser and Microsoft servers.  The synced data is also stored in an encrypted state in Microsoft servers.  Sensitive data types such as addresses and passwords are further encrypted on the device before being synced.  If you are using a work or school account, all data types are further encrypted before being synced using Microsoft Purview Information Protection.  All other synced data types are stored until you delete the data, the account is deleted, or the account becomes inactive.  An account ID is attached to all synced data, as the ID is necessary to perform sync across multiple devices.
 
 InPrivate and Guest mode browsing data does not sync to your Microsoft account.  However, favorites created during InPrivate sessions are synced across your signed-in versions of Microsoft Edge.
+
+
+<!-- ====================================================================== -->
+## Tab organization
+
+Microsoft Edge offers helpful suggestions on how to organize tabs to save you time and keep you focused on the web content you care about. These suggestions augment the Tab Grouping feature that's built into Microsoft Edge.
+
+When two or more tabs are grouped together, Microsoft Edge sends information about the tabs, including the Title and URL, to the Tabs service over HTTPS.  This information is used to generate a relevant name for the Tab Group.
+
+You can also choose to have Microsoft Edge auto-group all of your tabs, by using the **Group Similar Tabs** feature from the **Tab Action** menu.  In addition to the Title and URL, Microsoft Edge also sends information about which tabs opened another tab, and a timestamp of when a tab was opened.  This additional data allows the service to more accurately suggest Tab Groups, to organize your tabs. 
+
+The Microsoft Edge Tab organization behavior is turned on by default. To turn this behavior off, go to `edge://settings/privacy` and under **Services** turn off the **Let Microsoft Edge help keep your tabs organized** setting:
+
+![Tab Group settings UI](./index-images/tabgroupsettings.png)
+
+When the Tab Organization service is turned off, new Tab groups are given a generic name such as **Group 1**, and you can then rename the Tab group to be more descriptive.  The option to automatically **Group Similar Tabs within the Tab Action Menu** will be turned off.
+
+See also:
+* [Tab groups](https://www.microsoft.com/edge/features/tab-groups)
 
 
 <!-- ====================================================================== -->
