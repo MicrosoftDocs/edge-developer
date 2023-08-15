@@ -40,7 +40,7 @@ Extensions can optionally use the sidebar API to show a custom UI in the Microso
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#overview -->
 
-Features of the sidebar API include:
+Features of the Sidebar API include:
 
 * The sidebar remains open while navigating between tabs.
 <!-- Chrome list item 1:
@@ -55,7 +55,7 @@ Features of the sidebar API include:
 As an extension page, side panels have access to all Chrome APIs. -->
 
 <!-- 
-* In Settings for Microsoft Edge, users can specify which side the panel should be displayed on. -->
+* In Settings for Microsoft Edge, users can specify which side of the window the sidebar should be displayed on. -->
 <!-- Chrome list item 4:
 Within Chrome's settings, users can specify which side the panel should be displayed on. -->
 <!-- todo: uncomment? -->
@@ -248,35 +248,51 @@ Extensions in the Microsoft Edge sidebar have these user experience (UX) feature
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#open -->
 
-There are several ways to open the extension in the sidebar:
+There are several ways for the user to open the extension in the sidebar:
 
 
 <!-- ---------- -->
-*  Click the **Open in sidebar** icon (![Open in sidebar icon](./sidebar-images/open-in-sidebar-icon.png)), which is displayed next to the extension's name in the Extensions hub:
+###### By clicking an icon
 
-   ![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
+<!-- ~= Chrome's way 1: "An [action click](https://developer.chrome.com/docs/extensions/reference/action/)" -->
+Users can click the **Open in sidebar** icon (![Open in sidebar icon](./sidebar-images/open-in-sidebar-icon.png)), which is displayed next to the extension's name in the Extensions hub:
 
+![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
 
-<!-- ---------- -->
-*  Right-click the extension's icon in the toolbar, and then select **Open in sidebar** or **Close sidebar**:
+Or, users can click the extension's custom icon in the toolbar, if it's enabled.  In this example, the extension's custom icon is a circle (![Extension's custom icon](./sidebar-images/custom-icon-for-demo-extension.png)):
 
-   ![Right-clicking the shortcut on the toolbar to open the extension](./sidebar-images/toolbar-right-click-shortcut-open.png)
-
-   ![Right-clicking the shortcut on the toolbar to close the extension](./sidebar-images/toolbar-right-click-shortcut-close.png)
-
-   The extension's icon appears in the toolbar if the user has clicked the **Show in toolbar** (![Show in toolbar icon](./sidebar-images/show-in-toolbar-icon.png)) icon next to the extension's name in the Extensions hub.
+![Clicking the extension's icon in the toolbar](./sidebar-images/left-click-toolbar-icon.png)
 
 
 <!-- ---------- -->
-*  Left-click the extension's custom icon in the toolbar, if it's enabled.  In this example, the extension's custom icon is a circle (![Extension's custom icon](./sidebar-images/custom-icon-for-demo-extension.png)):
-<!-- todo: check on Left Click UI design of left-click -->
+###### By right-clicking the extension's icon
 
-   ![Left-clicking the extension's icon in the toolbar](./sidebar-images/left-click-toolbar-icon.png)
+<!-- = Chrome's way 3: "A [context menu](https://developer.chrome.com/docs/extensions/reference/contextMenus/)" -->
+Users can right-click the extension's icon in the toolbar, and then select **Open in sidebar** or **Close sidebar**:
+
+![Right-clicking the shortcut on the toolbar to open the extension](./sidebar-images/toolbar-right-click-shortcut-open.png)
+
+![Right-clicking the shortcut on the toolbar to close the extension](./sidebar-images/toolbar-right-click-shortcut-close.png)
+
+The extension's icon appears in the toolbar if the user has clicked the **Show in toolbar** (![Show in toolbar icon](./sidebar-images/show-in-toolbar-icon.png)) icon next to the extension's name in the Extensions hub.
+
 
 <!-- ---------- -->
-*  Press a keyboard shortcut, if the [action command](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) and the [action icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) are enabled.
-<!-- todo: clarify the wording.  eg Chrome’s note:
-With openPanelOnActionClick() enabled, you can also open the side panel using a keyboard shortcut by specifying an action command in the manifest as featured in the Tab-specific side panel sample. -->
+###### By pressing a keyboard shortcut
+
+<!-- = Chrome's way 2: "A [keyboard shortcut](https://developer.chrome.com/docs/extensions/reference/commands/)" -->
+Users can press a keyboard shortcut, if the action command is enabled and the action icon is enabled.
+
+* To enable the action command, see [Action commands](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) in _chrome.commands_ in API reference.
+* To enable the action icon, see [Open the side panel by clicking the toolbar icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) in _chrome.sidePanel_ in API reference.
+
+If the `openPanelOnActionClick()` property of the [PanelBehavior](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-PanelBehavior) type is set to `true`, the user can open the sidebar by using a keyboard shortcut.  To enable this, you specify an action command in the manifest.
+
+
+<!-- ----------
+###### By a user gesture
+<!-- = Chrome's way 4: "A [user gesture](https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-interaction) on an extension page or content script."
+-->
 
 
 <!-- ====================================================================== -->
@@ -286,10 +302,11 @@ With openPanelOnActionClick() enabled, you can also open the side panel using a 
 
 For more Sidebar API extensions demos, explore any of the following extensions:
 
-* [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific)
-* [Multiple side panels example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-multiple)
-* [Global side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-global)
 * [Dictionary side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/sample.sidepanel-dictionary)
+* [Global side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-global)
+* [Multiple side panels example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-multiple)
+* [Opening the side panel through a user interaction](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-open)
+* [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific)
 
 
 <!-- ====================================================================== -->
