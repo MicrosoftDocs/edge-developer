@@ -5,13 +5,14 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/01/2023
+ms.date: 08/14/2023
 ---
 # Extensions in the Microsoft Edge sidebar
 
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/ -->
 
 This is a forthcoming feature; sidebar extensions are not yet in a stable release of Microsoft Edge.
+<!-- todo: delete sentence.  Compare "Availability: 114" at top of https://developer.chrome.com/docs/extensions/reference/sidePanel/#overview -->
 
 As a Microsoft Edge extension developer, use this article to make your new or existing Microsoft Edge extension appear in the sidebar.  Any extension can use the sidebar in addition to its other UI.
 
@@ -37,13 +38,27 @@ Extensions can optionally use the sidebar API to show a custom UI in the Microso
 <!-- ====================================================================== -->
 ## Features of the Sidebar API
 
-<!-- todo: add intro sentence -->
+<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#overview -->
 
-* An extension in the sidebar has access to all of the [Supported APIs for Microsoft Edge extensions](./api-support.md).
+Features of the sidebar API include:
 
 * The sidebar remains open while navigating between tabs.
+<!-- Chrome list item 1:
+* The side panel remains open when navigating between tabs (if set to do so). -->
 
-* An extension in the sidebar can be made available for specific sites.
+* An extension in the sidebar can be made available for specific websites.
+<!-- Chrome list item 2:
+* It can be available only on specific websites. -->
+
+* An extension in the sidebar has access to all of the [Supported APIs for Microsoft Edge extensions](./api-support.md).
+<!-- Chrome list item 3:
+As an extension page, side panels have access to all Chrome APIs. -->
+
+<!-- 
+* In Settings for Microsoft Edge, users can specify which side the panel should be displayed on. -->
+<!-- Chrome list item 4:
+Within Chrome's settings, users can specify which side the panel should be displayed on. -->
+<!-- todo: uncomment? -->
 
 
 <!-- ====================================================================== -->
@@ -52,9 +67,6 @@ Extensions can optionally use the sidebar API to show a custom UI in the Microso
 As with other extension resources, the sidebar page commits to a trusted extension context on its origin (`extension://<id>`).  The sidebar has the same API access as other trusted extension contexts.
 
 All the existing extensions APIs are available for sidebar extensions, so you can leverage all current capabilities of the extensibility framework in your sidebar-enabled extension.
-
-To add a sidebar to your extension, follow the steps below.
-<!-- todo: Are they actually “steps”?  Be more specific or appropriate wording. -->
 
 
 <!-- ====================================================================== -->
@@ -91,7 +103,6 @@ See also:
 <!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#use-cases -->
 
 The following sections demonstrate some common use cases for the Sidebar API.
-
 
 
 <!-- ------------------------------ -->
@@ -194,7 +205,6 @@ Then, add the following code to the `service-worker.js` code listing that's in [
 chrome.sidePanel
   .setPanelBehavior({ openPanelOnActionClick: true })
   .catch((error) => console.error(error));
-...
 ```
 
 
@@ -285,7 +295,7 @@ For more Sidebar API extensions demos, explore any of the following extensions:
 <!-- ====================================================================== -->
 ## Types and methods
 
-See [chrome.sidePanel Types and Methods](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type) API Reference at `developer.chrome.com`.
+See [Types](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type) and [Methods](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method) in the _chrome.sidePanel_ API reference page at `developer.chrome.com`.
 
 
 <!-- ====================================================================== -->
