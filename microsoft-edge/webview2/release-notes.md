@@ -117,13 +117,13 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 
 <!-- ====================================================================== -->
-## 1.0.####-prerelease
+## 1.0.1938.48
 
-Release Date: August x, 2023
+Release Date: August 15, 2023
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.1938.48](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1938.48)
 
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 116.0.1938.48 or higher.
 
 <!-- content here -->
 
