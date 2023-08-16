@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/15/2023
+ms.date: 08/16/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -113,24 +113,24 @@ Release Date: August 16, 2023
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 116.0.1938.48 or higher.
 
+
+<!-- ------------------------------ -->
+#### General
+
+
+<!-- ---------- -->
+###### Promotions
+
+No additional APIs have been promoted to Stable and added in this Release SDK.
+
+
+<!-- ---------- -->
 ###### Bug fixes
 
-* Fixed a handle tracking bug where TextureStream API usage could fail.
-* Fixed a bug where WebView2 created on background thread wouldn't come to the foreground on creation. ([Issue 3584](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3584))
-* Fixed a bug where the WebView2 content would sometimes render at the incorrect size after changing the display configuration (i.e. laptop sleeping, remoting, connecting/disconnecting external display). ([Issue 3429](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3429))
+* Fixed a handle tracking bug where `TextureStream` API usage could fail.
+* Fixed a bug where a WebView2 created in a background thread doesn't come to the foreground when created. ([Issue 3584](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3584))
+* Fixed a bug where the WebView2 content sometimes renders at the incorrect size after changing the display configuration, such as laptop sleeping; remoting; or connecting or disconnecting an external display. ([Issue 3429](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3429))
 
-<!-- content here -->
-
-
-<!-- ======================================================================
-## 1.0.####-prerelease
-
-Release Date: August ##, 2023
-
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
-
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
--->
 
 
 <!-- ====================================================================== -->
