@@ -65,18 +65,23 @@ To generate an app package:
 
     Your PWA is evaluated to ensure it is store-ready.
 
-1.  If the evaluation in the PWABuilder report card page indicates that your PWA is ready to be packaged, continue to the next step.  If the evaluation indicates that your PWA is not ready to be packaged, examine  the **Action Items** field to see how to improve your PWA.
+1.  If the evaluation in the PWABuilder report card page indicates that your PWA is ready to be packaged, continue to the next step.  If the evaluation indicates that your PWA is not ready to be packaged, examine the **Action Items** section to see how to improve your PWA:
+
+    ![Report card page](./microsoft-store-images/report-card.png)
 
 1.  Once your PWA is ready to be packaged, in the upper-right corner of the PWABuilder report card page, click the **Package For Stores** button.
 
-1.  Under **Windows**, select **Generate Package**.
+    <!--
+    The XYZ dialog opens. -->
+
+1.  Under **Windows**, click the **Generate Package** button.
 
 1.  Paste the following values, which you saved in the [Create an app reservation](#create-an-app-reservation) section above:
     *  **Package ID**
     *  **Publisher display name**
     *  **Publisher ID**
 
-    ![Paste publisher information into PWABuilder](./microsoft-store-images/pwabuilder-windows-package-options.png)
+    ![Pasting publisher information into the Windows Package Options page](./microsoft-store-images/pwabuilder-windows-package-options.png)
 
 1.  Click the **Download Package** button to download your Windows package.
 
