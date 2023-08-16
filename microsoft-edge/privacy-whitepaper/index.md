@@ -161,7 +161,7 @@ Google may collect some data associated with the Media Router extension. To unin
 <!-- ====================================================================== -->
 ## Collections
 
-You may collect sites, text, and images from the web, and organize the content with Collections in Microsoft Edge.  All collections data is stored locally on the device and organized per Microsoft Edge profile.  If you have sync turned on for Collections, your collections, notes, and comments are available across all signed-in and syncing versions of Microsoft Edge.
+Collections in Microsoft Edge enable you to collect sites, text, and images from the web, and organize the content.  <!--Sentence A:-->All collections data is stored locally on the device and organized per Microsoft Edge profile.  <!--Sentence B:-->If you have sync turned on for Collections, your collections, notes, and comments are available across all signed-in and syncing versions of Microsoft Edge.
 
 Every 24 hours, Microsoft Edge downloads a list of supported sites that have special entity extraction templates. The templates are specific to each website. When you create a new item in your collection, Microsoft Edge verifies that the site you are collecting from is in the list of supported sites. If the site is in the list, Microsoft Edge pings the entity extraction service for the template of the specific site. No user identifiers are associated with the request to the service. The template attempts to identify the name, price, ratings, primary image, and other data about the item being collected. If the site you are collecting from is not on the supported list site, Microsoft Edge does not download a template. Templates allow collection items to be created locally on the device. No data about the collection items are sent to the service when creating the collection.
 
@@ -169,7 +169,41 @@ You can delete templates stored on the device and clear the cache data. Go to `e
 
 <!-- Above, should pick one way. Check UI for privacy updates -->
 
-If you're signed in with a Microsoft account, your collections, notes, comments, and images are automatically saved on Microsoft cloud for free.  If you want to turn off this service, disable Collections for this device as follows: go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Show Collections and follow content creators in Microsoft Edge**.  Collections aren't available when using Guest mode or InPrivate browsing for your Microsoft account.
+If you're signed in with a Microsoft account (MSA), your collections, notes, comments, and images are automatically saved on Microsoft cloud for free.<!--Sentence C-->  If you want to turn off this service, disable Collections for this device as follows: go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Show Collections and follow content creators in Microsoft Edge**.  Collections aren't available when using Guest mode or InPrivate browsing for your Microsoft account.
+
+When you sign in with a work or school account,<!-- (a Microsoft Azure Active Directory (AAD) account)--> your collections are automatically synced across all signed-in Microsoft Edge devices when sync is turned on.  If you want to stop syncing your Collections, you can turn off sync for Collections from `edge://settings/profiles/sync` — then, all Collections data is stored locally with your Microsoft Edge profile on the device.
+
+
+There are three types of Collections data, depending on the type of sign-in:
+
+<!-- ------------------------------ -->
+#### Non-sign-in users
+
+Non-sign-in users have Classic collections without sync.  In this case, all Collections data is stored locally on the device and organized per Microsoft Edge profile.
+
+In this case, <!--Sentence A:-->"All collections data is stored locally on the device and organized per Microsoft Edge profile" (at the top of this section) means all Classic Collections (legacy Collections) data are stored locally, except new Collections (Prism collections).
+
+
+<!-- ------------------------------ -->
+#### AAD sign-in users
+
+Microsoft Azure Active Directory (AAD) sign-in users have Classic collections (legacy mode).
+
+* If sync is not turned on, Collections data is stored locally.
+* If sync is turned on, local stored collections data will sync to Microsoft Edge sync cloud.
+
+In this case, <!--Sentence B:-->"If you have sync turned on for Collections, your collections, notes, and comments are available across all signed-in and syncing versions of Microsoft Edge" (at the top of this section) means for AAD signed in and sync turned on users, Collection data is synced from local store to Edge sync cloud.
+
+
+<!-- ------------------------------ -->
+#### MSA sign-in users
+
+For Microsoft Account (MSA) sign-in users:
+
+* If sync is not turned on, Collections data is stored locally.
+* If sync is turned on, Collections data is updated to New Collections (migrated to Prism collections), and is synced to Microsoft Bing Saves cloud.
+
+In this case, <!--Sentence C:-->"If you're signed in with a Microsoft account (MSA), your collections, notes, comments, and images are automatically saved on Microsoft cloud for free" (in the middle of this section) means for MSA signed in and sync turned on users.  New Collections (Prism Collections) data is saved to Microsoft Bing Saves cloud.
 
 
 <!-- ====================================================================== -->
