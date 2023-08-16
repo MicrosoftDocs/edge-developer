@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/24/2023
+ms.date: 08/16/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -102,6 +102,18 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 -->
 <!-- ====================================================================== -->
 <!-- end of top matter -->
+
+
+<!-- ====================================================================== -->
+## 1.0.####-prerelease
+
+Release Date: August ##, 2023
+
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
+
+<!-- content here -->
 
 
 <!-- ====================================================================== -->
