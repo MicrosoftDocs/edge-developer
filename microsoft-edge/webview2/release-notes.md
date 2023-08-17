@@ -105,7 +105,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ====================================================================== -->
-## 1.0.1938.48 <!-- The Release Number is still TBD -->
+## 1.0.1938.48
+<!-- Release Number is TBD -->
 
 Release Date: August 16, 2023
 
