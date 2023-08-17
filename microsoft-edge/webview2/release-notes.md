@@ -105,15 +105,19 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ====================================================================== -->
-## 1.0.####-prerelease
+## 1.0.2039-prerelease <!-- Pre-release number TBD ->
 
-Release Date: August ##, 2023
+Release Date: August 16, 2023
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.2039-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2039-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 117.0.2039.0 or higher.
 
-<!-- content here -->
+###### Bug fixes
+
+* Disable CRX install in WebView2
+* Fixed an initialization failure when the app has a DPI awareness compatibility setting applied.([3008](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3008))
+* Fixed a bug where visual hosted owned windows couldn't take character input 
 
 
 <!-- ====================================================================== -->
