@@ -30,7 +30,7 @@ By default, the **JSON viewer** isn't enabled. To enable the JSON viewer experim
 
 1. Go to `edge://flags`.
 
-1. In the **Search flags** text field, type **JSON viewer**.
+1. In the **Search flags** text field, start typing **json viewer**.
 
 1. In the **JSON Viewer** dropdown menu, select **Enabled**.
 
@@ -46,9 +46,11 @@ To view a JSON response from a web server as reformatted JSON:
 
 1. Open a new tab or window in Microsoft Edge.
 
-1. Type a URL that returns JSON data in the address bar. For example, use [this sample JSON response](https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json). You can find more samples of JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://microsoftedge.github.io/Demos/json-dummy-data/).
+1. Type a URL that returns JSON data in the address bar.  For example, use this sample JSON response: [https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json](https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json).
 
-1. Microsoft Edge detects that the returned data is JSON and formats it automatically:
+   You can find more samples of JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://microsoftedge.github.io/Demos/json-dummy-data/).
+
+1. Microsoft Edge detects that the returned data is JSON, and formats it automatically:
 
    ![JSON data returned by a web server, formatted and syntax-highlighted by the JSON viewer](./json-viewer-images/json-response.png)
 
@@ -79,16 +81,25 @@ The **JSON viewer** applies syntax highlighting to invalid JSON. However, the **
 
 You can find information about the invalid syntax in the **Console** tool, where the **JSON viewer** reports errors.
 
+
 To view invalid JSON data:
+
+1. Enable the **JSON viewer**, as described in [Enable the JSON viewer](#enable-the-json-viewer), above.
 
 1. Open a new tab or window in Microsoft Edge.
 
-1. Type a URL that returns invalid JSON data in the address bar. For example, use [this sample invalid JSON response](https://microsoftedge.github.io/Demos/json-dummy-data/missing-colon.json). You can find other invalid samples of JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://microsoftedge.github.io/Demos/json-dummy-data/#invalid-json).
+1. In the Address bar, go to a URL that returns invalid JSON data.  For example, use this sample invalid JSON response: [https://microsoftedge.github.io/Demos/json-dummy-data/missing-colon.json](https://microsoftedge.github.io/Demos/json-dummy-data/missing-colon.json).
 
-1. Microsoft Edge detects that the file contains invalid JSON data, highlights it, but does not reformats it.
+   You can find other invalid samples of JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://microsoftedge.github.io/Demos/json-dummy-data/#invalid-json).
+
+1. Microsoft Edge detects that the file contains invalid JSON data, and colorizes the JSON listing, but doesn't wrap or otherwise reformat the JSON listing.  The fact that the JSON isn't wrapped indicates there's malformed JSON.
 
 1. Open the **Console** tool by pressing **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-1. A JavaScript error that indicates where the JSON syntax error is located is shown in the **Console** tool:
+   A JavaScript error indicates where the JSON syntax error is located:
 
    ![Invalid JSON, highlighted by not formatted, with a syntax error displayed in the Console tool](./json-viewer-images/invalid-json.png)
+
+1. In a code editor, such as Microsoft Visual Studio Code, go to the indicated column number to inspect the JSON:
+
+   ![Viewing the malformed JSON by column number in VS Code](./json-viewer-images/column-number.png)
