@@ -131,7 +131,7 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 * Fixed a handle tracking bug where `TextureStream` API usage could fail.
 * Fixed a bug where a WebView2 created in a background thread doesn't come to the foreground when created. ([Issue 3584](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3584))
 * Fixed a bug where the WebView2 content sometimes renders at the incorrect size after changing the display configuration (such as laptop sleeping; remoting; or connecting or disconnecting an external display). ([Issue 3429](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3429))
-
+* Fixed a bug where bluescreen happen when using WebView2 apps on certain hardware configurations. ([Issue 3679](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3679))
 
 
 <!-- ====================================================================== -->
