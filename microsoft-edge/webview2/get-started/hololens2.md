@@ -579,8 +579,8 @@ public class WebViewExample : MonoBehaviour, IPointerDownHandler
         {
             X = hitCoord.x,
             Y = hitCoord.y,
-            Type = PointerEvent.PointerDown,
-            Button = PointerButton.Left,
+            Type = WebViewMouseEventData.EventType.MouseDown,
+            Button = WebViewMouseEventData.MouseButton.ButtonLeft,
             TertiaryAxisDeviceType = WebViewMouseEventData.TertiaryAxisDevice.PointingDevice
         };
 
