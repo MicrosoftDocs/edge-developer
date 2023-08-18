@@ -5,14 +5,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/14/2023
+ms.date: 08/18/2023
 ---
 # Extensions in the Microsoft Edge sidebar
 
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/ -->
-
-This is a forthcoming feature; sidebar extensions are not yet in a stable release of Microsoft Edge.
-<!-- todo: delete sentence.  Compare "Availability: 114" at top of https://developer.chrome.com/docs/extensions/reference/sidePanel/#overview -->
+The sidebar extensions feature is being rolled out to a growing user base for all channels of Microsoft Edge.<!-- todo: delete sentence -->
 
 As a Microsoft Edge extension developer, use this article to make your new or existing Microsoft Edge extension appear in the sidebar.  Any extension can use the sidebar in addition to its other UI.
 
@@ -38,27 +35,13 @@ Extensions can optionally use the sidebar API to show a custom UI in the Microso
 <!-- ====================================================================== -->
 ## Features of the Sidebar API
 
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#overview -->
-
 Features of the Sidebar API include:
 
 * The sidebar remains open while navigating between tabs.
-<!-- Chrome list item 1:
-* The side panel remains open when navigating between tabs (if set to do so). -->
 
 * An extension in the sidebar can be made available for specific websites.
-<!-- Chrome list item 2:
-* It can be available only on specific websites. -->
 
 * An extension in the sidebar has access to all of the [Supported APIs for Microsoft Edge extensions](./api-support.md).
-<!-- Chrome list item 3:
-As an extension page, side panels have access to all Chrome APIs. -->
-
-<!-- 
-* In Settings for Microsoft Edge, users can specify which side of the window the sidebar should be displayed on. -->
-<!-- Chrome list item 4:
-Within Chrome's settings, users can specify which side the panel should be displayed on. -->
-<!-- todo: uncomment? -->
 
 
 <!-- ====================================================================== -->
@@ -71,8 +54,6 @@ All the existing extensions APIs are available for sidebar extensions, so you ca
 
 <!-- ====================================================================== -->
 ## Add the sidePanel permission in the extension's manifest file
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#manifest -->
 
 To use the Sidebar API, add a permission in your `manifest.json` file.  Include the `sidePanel` permission in the extension's `manifest.json` file:
 
@@ -100,15 +81,11 @@ See also:
 <!-- ====================================================================== -->
 ## Use cases for the Sidebar API
 
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#use-cases -->
-
 The following sections demonstrate some common use cases for the Sidebar API.
 
 
 <!-- ------------------------------ -->
 #### Display the same sidebar on every site
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#every-site -->
 
 A sidebar can be set as the default, to show the same extension throughout all the open browser tabs.  Default values persist across browser sessions.
 
@@ -143,8 +120,6 @@ The file you specified as the default, such as `sidebar.html`, appears in all th
 
 <!-- ------------------------------ -->
 #### Enable a sidebar for a specific site only
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#by-site -->
 
 An extension can use [sidepanel.setOptions()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setOptions) to enable a sidebar on a specific tab.  This can be a particular website, so the extension opens in the sidebar when the user goes to this website.
 
@@ -183,8 +158,6 @@ For a complete example, see [Site-specific side panel example](https://github.co
 <!-- ------------------------------ -->
 #### Enable the extension's shortcut icon to open the sidebar
 
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon -->
-
 To allow users to open the sidebar by clicking the action toolbar icon, use [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior).  First, declare the `"action"` key in `manifest.json`:
 
 ```json
@@ -211,8 +184,6 @@ chrome.sidePanel
 <!-- ------------------------------ -->
 #### Switch to a different sidebar
 
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#multi-panels -->
-
 An extension can use [sidepanel.getOptions()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-getOptions) to retrieve the current sidebar, and then enable a different sidebar for a specific tab.
 
 This example sets a sidebar containing a welcome message on [runtime.onInstalled()](https://developer.chrome.com/docs/extensions/reference/runtime/#event-onInstalled).  When the user navigates to a different tab, the sidebar is replaced with the browser-level sidebar.
@@ -238,15 +209,11 @@ chrome.tabs.onActivated.addListener(async ({ tabId }) => {
 <!-- ====================================================================== -->
 ## Sidebar extensions user experience
 
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-experience -->
-
 Extensions in the Microsoft Edge sidebar have these user experience (UX) features.
 
 
 <!-- ------------------------------ -->
 #### Opening the extension in the sidebar
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#open -->
 
 There are several ways for the user to open the extension in the sidebar:
 
@@ -254,7 +221,6 @@ There are several ways for the user to open the extension in the sidebar:
 <!-- ---------- -->
 ###### By clicking an icon
 
-<!-- ~= Chrome's way 1: "An [action click](https://developer.chrome.com/docs/extensions/reference/action/)" -->
 Users can click the **Open in sidebar** icon (![Open in sidebar icon](./sidebar-images/open-in-sidebar-icon.png)), which is displayed next to the extension's name in the Extensions hub:
 
 ![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
@@ -267,7 +233,6 @@ Or, users can click the extension's custom icon in the toolbar, if it's enabled.
 <!-- ---------- -->
 ###### By right-clicking the extension's icon
 
-<!-- = Chrome's way 3: "A [context menu](https://developer.chrome.com/docs/extensions/reference/contextMenus/)" -->
 Users can right-click the extension's icon in the toolbar, and then select **Open in sidebar** or **Close sidebar**:
 
 ![Right-clicking the shortcut on the toolbar to open the extension](./sidebar-images/toolbar-right-click-shortcut-open.png)
@@ -280,7 +245,6 @@ The extension's icon appears in the toolbar if the user has clicked the **Show i
 <!-- ---------- -->
 ###### By pressing a keyboard shortcut
 
-<!-- = Chrome's way 2: "A [keyboard shortcut](https://developer.chrome.com/docs/extensions/reference/commands/)" -->
 Users can press a keyboard shortcut, if the action command is enabled and the action icon is enabled.
 
 * To enable the action command, see [Action commands](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) in _chrome.commands_ in API reference.
@@ -289,23 +253,14 @@ Users can press a keyboard shortcut, if the action command is enabled and the ac
 If the `openPanelOnActionClick()` property of the [PanelBehavior](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-PanelBehavior) type is set to `true`, the user can open the sidebar by using a keyboard shortcut.  To enable this, you specify an action command in the manifest.
 
 
-<!-- ----------
-###### By a user gesture
-<!-- = Chrome's way 4: "A [user gesture](https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-interaction) on an extension page or content script."
--->
-
-
 <!-- ====================================================================== -->
 ## Extension samples
-
-<!-- compare https://developer.chrome.com/docs/extensions/reference/sidePanel/#examples -->
 
 For more Sidebar API extensions demos, explore any of the following extensions:
 
 * [Dictionary side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/sample.sidepanel-dictionary)
 * [Global side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-global)
 * [Multiple side panels example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-multiple)
-* [Opening the side panel through a user interaction](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-open)
 * [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific)
 
 
