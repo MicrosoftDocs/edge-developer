@@ -11,6 +11,7 @@ ms.date: 08/18/2023
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
+
 <!-- ====================================================================== -->
 ## Improvements for connecting DevTools to Azure Artifacts symbol server
 
@@ -32,11 +33,14 @@ Additonally, you can now connect to multiple symbol servers if you need to fetch
 1. Take a screenshot
 1. Draw red highlight boxes around Authorization mode and Filter behavior
 1. See https://dev.azure.com/microsoft/Edge/_git/chromium.devtools-frontend/pullrequest/8874508 for more info
- -->
+-->
+
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
 
+
+<!-- ====================================================================== -->
 ## Snapshotting improvements for the Memory tool
 
 <!-- Subtitle: The "Allocation instrumentation on timeline" profiling type in the Memory tool now samples the heap at variable intervals, depending on the size of the heap. Heap snapshots are now more accurate and don't show objects that have been garbage-collected. -->
@@ -63,7 +67,6 @@ See also:
 * [Limit proportion of CPU time given to requestHeapStatsUpdate (4469909) · Gerrit Code Review](https://chromium-review.googlesource.com/c/v8/v8/+/4469909)
 * [Make heap snapshots more precise (4499405) · Gerrit Code Review](https://chromium-review.googlesource.com/c/v8/v8/+/4499405)
 
-<!-- ====================================================================== -->
 
 <!-- ====================================================================== -->
 ## Refreshing the DevTools icons and buttons
@@ -105,6 +108,7 @@ See also:
 * [Step through code](../../../javascript/reference.md#step-through-code) from _JavaScript debugging features_
 * [The Bottom-Up tab](../../../evaluate-performance/reference.md#the-bottom-up-tab) from _Performance features reference_
 
+
 <!-- ====================================================================== -->
 ## Screen readers now correctly announce dropdown state in Device Mode
 
@@ -128,6 +132,8 @@ In previous versions of Microsoft Edge, in Device Mode, screen readers would inc
 See also:
 * [Emulate mobile devices (Device Emulation)](../../../device-mode/index.md)
 
+
+<!-- ====================================================================== -->
 ## Profiling improvements for the Performance tool
 
 <!-- Subtitle: Your web content will now be more responsive while profiling in the Performance tool and we've added "Profiler Overhead" blocks of CPU time to account for the additional time Microsoft Edge needs when profiling. -->
@@ -156,6 +162,7 @@ See also:
 * [Chroming Bug 1428605 - V8’s code cache deserialization is 2-4× slower than a regular uncached compilation when CPU profiling is enabled](https://bugs.chromium.org/p/chromium/issues/detail?id=1428605)
 
 
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 Microsoft Edge 115 also includes the following updates from the Chromium project:
