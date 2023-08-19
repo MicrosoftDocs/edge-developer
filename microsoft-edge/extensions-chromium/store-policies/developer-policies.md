@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/10/2023
+ms.date: 08/18/2023
 ---
 # Microsoft Edge Add-ons store developer policies
 
