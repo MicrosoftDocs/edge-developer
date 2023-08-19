@@ -1,16 +1,16 @@
 ---
 title: Win32 sample app
-description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
+description: This WebView2 sample, WebView2APISample, demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/29/2022
+ms.date: 08/11/2023
 ---
 # Win32 sample app
 
-This sample, **WebView2APISample**, demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
+The **WebView2APISample** app demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
 
 *  Sample name: **WebView2APISample**
 *  Repo directory: [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)
@@ -35,7 +35,7 @@ The running **WebView2APISample** app window shows the WebView2 SDK version and 
 ![Sample App Snapshot](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Samples/master/SampleApps/WebView2APISample/documentation/screenshots/sample-app-screenshot.png)
 -->
 
-If this is your first time using WebView, we recommend first following the tutorial [Get started with WebView2 in Win32 apps](../get-started/win32.md), which goes over how to create a WebView2 app and walks through some basic WebView2 functionality.  That particular tutorial doesn't start with you creating a new Win32 project using a project template; instead, it starts with a finished project in the WebView2Samples repo, and walks you through how to optionally re-add the WebView2 code.
+If this is your first time using WebView, we recommend first following the tutorial [Get started with WebView2 in Win32 apps](../get-started/win32.md), which goes over how to create a WebView2 app and walks through some basic WebView2 functionality.  That particular tutorial doesn't start with you creating a new Win32 project using a project template; instead, it starts with a finished project in the WebView2Samples repo, and walks you through the added WebView2 code.
 <!-- the getstart tut should probably create new app from project template, but, currently starts from existing project, that is provided now as a finished project -->
 
 For details of events and API handlers in WebView2, see [WebView2 API Reference](../webview2-api-reference.md).
@@ -50,11 +50,11 @@ Next, make sure a preview channel of Microsoft Edge in installed, on a supported
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install Visual Studio 2019
+## Step 2 - Install Visual Studio
 
-Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.
+Microsoft Visual Studio is required (minimum version: Visual Studio 2019).  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.  The sample can also be opened using Visual Studio 2022.
 
-1. If Visual Studio 2019 (minimum required version) is not already installed with C++ support, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio 2019 with C++ support, and then return to this page and continue the steps below.
+1. If Visual Studio is not already installed with C++ support, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section to install Visual Studio with C++ support, and then return to this page and continue the steps below.
 
 If you want to use Visual Studio 2017, after you open the solution in Visual Studio 2017, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.
 
@@ -106,7 +106,7 @@ Continue the steps below.
 <!-- ====================================================================== -->
 ## Step 6 - View the opened project
 
-1. On your local drive, open again the **WebView2Samples** solution in the same version of Visual Studio that you set up, such as Visual Studio 2019:
+1. On your local drive, open again the **WebView2Samples** solution in the same version of Visual Studio that you set up:
 
    *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2Samples.sln`
 
@@ -148,8 +148,6 @@ At the top of Visual Studio, set the build target, as follows:
 
    ![The WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)
 
-   _To zoom, right-click > **Open image in new tab**._
-
    This builds the project file `SampleApps/WebView2APISample/WebView2APISample.vcxproj`.
 
 
@@ -168,19 +166,15 @@ At the top of Visual Studio, set the build target, as follows:
 
    ![The WebView2APISample app window](./webview2apissample-images/webview2apisample-app-window.png)
 
-   _To zoom, right-click > **Open image in new tab**._
-
-1. Use the sample app.  See [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme), which is a long Readme about the code in this sample.
-
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
 
 <!-- ====================================================================== -->
 ## Step 9 - Update the prerelease WebView2 SDK
 
-After you initially build & run this project, update the WebView2 SDK and then re-build the project.
+Next, you'll update the WebView2 SDK and then re-build the project.
 
-To quickly see which version of the WebView2 SDK is installed in the repo's copy of the sample app at GitHub, see [packages.config](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/packages.config).
+If you want to quickly see which version of the WebView2 SDK is installed in the repo's copy of the **WebView2APISample** app at GitHub, see [packages.config](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/packages.config).
 
 The repo version of this sample has a pre-release version of the WebView2 SDK installed.  Below, you'll update it to the latest pre-release version of the WebView2 SDK, or confirm that the latest SDK is installed.  Using a pre-release SDK gives you access to the latest functionality.
 
@@ -200,8 +194,6 @@ Examine and possibly update the installed NuGet packages, as follows:
 
    ![NuGet Package Manager with WebView2 SDK prerelease selected](./webview2apissample-images/webview2apisample-pkg-mgr-prerelease-webview2.png)
 
-   _The above image is from another project, but is similar.  To zoom, right-click > **Open image in new tab**._
-
 1. Click the **Update** button.
 
    The **Preview Changes** dialog appears:
@@ -218,7 +210,6 @@ The latest version of the WebView2 SDK is now installed for this project.
 <!-- ====================================================================== -->
 ## Step 10 - Build and run the project with updated SDK
 
-
 1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
    ![WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)
@@ -229,118 +220,126 @@ The latest version of the WebView2 SDK is now installed for this project.
 
    ![The WebView2APISample app window](./webview2apissample-images/webview2apisample-app-window.png)
 
-1. Use the sample app.
+1. Use the **WebView2APISample** app.
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
-
-<!-- ====================================================================== -->
-## Step 11 - Inspect the code
-
-1. In the Visual Studio code editor, inspect the code, per the following sections.
+This completes the numbered steps for building and running the Win32 sample app.  Next, in the Visual Studio code editor, inspect the code, per the following sections.
 
 
 <!-- ====================================================================== -->
-## Application architecture
+## Hybrid app architecture
 
-The API Sample App is an example of a hybrid application. It has two parts: a Win32 native part and a WebView part.
-*  The Win32 part can access native Windows APIs.
-*  The WebView container can utilize standard web technologies (HTML, CSS, JavaScript).
-
-This hybrid approach allows you to create and iterate faster using web technologies, while still being able to take advantage of native functionalities. The Sample App specifically demonstrates how both components can interact with each other.
-
-Both of these parts of the Sample App are displayed in the image below:
+The **WebView2APISample** app is an example of a hybrid application, with a Win32 native part and a WebView part.
+*  The Win32 part can directly access native Windows APIs.
+*  The WebView is a container for standard web technologies (HTML, CSS, and JavaScript).
 
 ![Hybrid app](./webview2apissample-images/sample-app-layout-diagram.png)
-<!-- todo: remove from PR 140: ![alt text](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Samples/master/SampleApps/WebView2APISample/documentation/screenshots/sample-app-layout-diagram.png) -->
 
+* Section 1: The top part of the **WebView2APISample** app is a Win32 component written in C++. This part of the application takes in UI inputs from the user and uses them to control the WebView.
 
-1. Section One: The top part of the Sample App is a Win32 component written in C++. This part of the application takes in UI inputs from the user and uses them to control the WebView.
+* Section 2: The main part of the **WebView2APISample** app is a WebView that can be repurposed using standard web technologies (HTML/CSS/JavaScript).  It can be navigated to websites or local content.
 
-2. Section Two: The main part of the Sample App is a WebView that can be repurposed using standard web technologies (HTML/CSS/JavaScript). It can be navigated to websites or local content.
+This hybrid approach allows you to create and iterate faster using web technologies, while still being able to take advantage of native functionality.  The **WebView2APISample** app demonstrates how the Win32 component and the WebView component can interact with each other.
+
+This wide-ranging sample app has grown to include over 150 menuitems, demonstrating many WebView2 APIs in the Win32/C++ framework.  The following sections focus on basics of hybrid app implementation.
 
 
 <!-- ====================================================================== -->
 ## Project Files
 
-This section briefly explains some key files within the repository. The WebView2APISample is divided vertically into components, instead of horizontally into layers.  Each component implements the whole workflow of a category of example features, from listening for menu commands, to calling WebView API methods to implement them.
+This section briefly explains some key files within the repository.  The **WebView2APISample** app is divided vertically into components, instead of horizontally into layers.  Each component implements the whole workflow of a category of example features, from listening for menu commands, to calling WebView API methods to implement them.
 
 
 <!-- ------------------------------ -->
-#### 1. App.cpp
+#### App.cpp
 
-This is the top-level file that runs the Sample App. It reads command line options, sets up the process environment, and handles the app's threading model.
-
-
-<!-- ------------------------------ -->
-#### 2. AppWindow.cpp
-
-This file implements the application window. In this file, we first set up all the Win32 controls. Second, we initialize the WebView Environment and the WebView. Third, we add some event handlers to the WebView and create all the components that handle various features of the application. The `AppWindow` class itself handles commands from the application's Window menu.
+This is the top-level file that runs the **WebView2APISample** app. It reads command-line options, sets up the process environment, and handles the app's threading model.
 
 
 <!-- ------------------------------ -->
-#### 3. FileComponent.cpp
+#### AppWindow.cpp (Window menu)
 
-This component handles commands from the File menu (except for Exit), as well as the `DocumentTitleChanged` event.
+This file implements the application window, by doing the following:
 
+1. Set up all the Win32 controls.
 
-<!-- ------------------------------ -->
-#### 4. ScriptComponent.cpp
+1. Initialize the WebView Environment and the WebView.
 
-This component handles commands from the Script menu, which involve interacting with the WebView by injecting JavaScript, posting WebMessages, adding native objects to the webpage, or using the DevTools protocol to communicate with the webpage.
+1. Add event handlers to the WebView and create all the components that handle various features of the application.
 
+The `AppWindow` class handles commands from the sample app's **Window** menu.
 
-<!-- ------------------------------ -->
-#### 5. ProcessComponent.cpp
-
-This component handles commands from the Process menu, which involve interaction with the browser's process. It also handles the ProcessFailed event, in case the browser process or one of its render process crashes or is unresponsive.
+This file is described in more detail in [Key functions in AppWindow.cpp](#key-functions-in-appwindowcpp), below.
 
 
 <!-- ------------------------------ -->
-#### 6. SettingsComponent.cpp
+#### FileComponent.cpp (File menu)
 
-This component handles commands from the Settings menu, and is also in charge of copying settings from an old WebView when a new one is created. Most code that interacts with the `ICoreWebView2Settings` interface can be found here.
-
-
-<!-- ------------------------------ -->
-#### 7. ViewComponent.cpp
-
-This component handles commands from the View menu, and any functionality related to sizing and visibility of the WebView. When the app window is resized, minimized, or restored, `ViewComponent` will resize, hide, or show the WebView in response. It also responds to the `ZoomFactorChanged` event.
+This component handles commands from the **File** menu (except for **Exit**), as well as the `DocumentTitleChanged` event.
 
 
 <!-- ------------------------------ -->
-#### 8. ScenarioWebMessage.cpp and ScenarioWebMessage.html
+#### ScriptComponent.cpp (Script menu)
 
-This component is created when you select the Scenario/Web Messaging menu item. It implements an example application with a C++ part and an HTML+JavaScript part, which communicate with each other by asynchronously posting and receiving messages.
-
-![Web Messaging: Posting and receiving messages](./webview2apissample-images/sample-app-webmessaging-screenshot.png)
-<!-- todo: remove from PR 140: ![alt text](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Samples/master/SampleApps/WebView2APISample/documentation/screenshots/sample-app-webmessaging-screenshot.png) -->
+This component handles commands from the **Script** menu, which involve interacting with the WebView by injecting JavaScript, posting WebMessages, adding native objects to the webpage, or using the DevTools protocol to communicate with the webpage.
 
 
 <!-- ------------------------------ -->
-#### 9. ScenarioAddHostObject.cpp and ScenarioAddHostObject.html
+#### ProcessComponent.cpp (Process menu)
 
-This component is created when you select the Scenario/Host Objects menu item. It demonstrates communication between the native app and the HTML webpage by means of host object injection.  The interface of the host object is declared in `HostObjectSample.idl`, and the object itself is implemented in `HostObjectSampleImpl.cpp`.
+This component handles commands from the **Process** menu, which involve interaction with the browser's process.  It also handles the `ProcessFailed` event, in case the browser process or one of its render process crashes or is unresponsive.
+
+
+<!-- ------------------------------ -->
+#### SettingsComponent.cpp (Settings menu)
+
+This component handles commands from the **Settings** menu.  This component is also in charge of copying settings from an old WebView when a new one is created.  Most code that interacts with the `ICoreWebView2Settings` interface is found here.
+
+
+<!-- ------------------------------ -->
+#### ViewComponent.cpp (View menu)
+
+This component handles commands from the **View** menu, and any functionality related to sizing and visibility of the WebView.  When the app window is resized, minimized, or restored, `ViewComponent` will resize, hide, or show the WebView in response.  It also responds to the `ZoomFactorChanged` event.
+
+
+<!-- ------------------------------ -->
+#### ScenarioWebMessage.cpp and ScenarioWebMessage.html (Scenario menu)
+
+The `ScenarioWebMessage` component is created when you select the **Scenario** > **Web Messaging** menu item.  This component implements an example application with a C++ part and an HTML + JavaScript part, which communicate with each other by asynchronously posting and receiving messages.
+
+This component is described in more detail in [ScenarioWebMessage (.html, .cpp, and .h)](#scenariowebmessage-html-cpp-and-h), below.
+
+
+<!-- ------------------------------ -->
+#### ScenarioAddHostObject.cpp and ScenarioAddHostObject.html (Scenario menu)
+
+This component is created when you select the **Scenario** > **Host Objects** menu item.  It demonstrates communication between the native app and the HTML webpage by means of host object injection.  The interface of the host object is declared in `HostObjectSample.idl`, and the object itself is implemented in `HostObjectSampleImpl.cpp`.
+
+See also:
+* [Call native-side code from web-side code](../how-to/hostobject.md)
 
 
 <!-- ====================================================================== -->
-## Key Functions
+## Key functions in AppWindow.cpp
 
-The section below briefly explains some of the key functions in the Sample App.
+`AppWindow.cpp` implements the application window, by doing the following:
 
+1. Set up all the Win32 controls.
 
-<!-- ====================================================================== -->
-## AppWindow.cpp
+1. Initialize the WebView Environment and the WebView.
+
+1. Add event handlers to the WebView and create all the components that handle various features of the application.
+
+The `AppWindow` class handles commands from the sample app's **Window** menu.  The following are some of the key functions in `AppWindow.cpp`.
 
 
 <!-- ------------------------------ -->
 #### InitializeWebView()
 
-In the AppWindow file, we use the InitializeWebView() function to create the WebView2 environment by using [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
+In `AppWindow.cpp`, the `InitializeWebView()` function creates the WebView2 environment by using [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
 
-Once we've created the environment, we create the WebView by using `CreateCoreWebView2Controller`.
-
-To see these API calls in action, refer to the following code snippet from `InitializeWebView()`.
+To see these API calls in action, inspect the following code from `InitializeWebView()`:
 
 ```cpp
 HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
@@ -370,7 +369,9 @@ if (!SUCCEEDED(hr))
 <!-- ------------------------------ -->
 #### OnCreateEnvironmentCompleted()
 
-This callback function is passed to `CreateCoreWebView2EnvironmentWithOptions` in `InitializeWebView()`.  It stored the environment pointer and then uses it to create a new WebView.
+After creating the environment, we create the WebView by using `CreateCoreWebView2Controller`.
+
+The `OnCreateEnvironmentCompleted` callback function is passed to `CreateCoreWebView2EnvironmentWithOptions` in `InitializeWebView()`.  The callback stores the environment pointer and then uses it to create a new WebView:
 
 ```cpp
 HRESULT AppWindow::OnCreateEnvironmentCompleted(
@@ -392,17 +393,20 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 <!-- ------------------------------ -->
 #### OnCreateCoreWebView2ControllerCompleted()
 
-This callback function is passed to `CreateCoreWebView2Controller` in `InitializeWebView()`. Here, we initialize the WebView-related state, register some event handlers, and create the app components.
+The `OnCreateCoreWebView2ControllerCompleted` callback function is passed to `CreateCoreWebView2Controller` in `InitializeWebView()`.  This callback:
+* Initializes the WebView-related state.
+* Registers some event handlers.
+* Creates the app components.
 
 
 <!-- ------------------------------ -->
 #### RegisterEventHandlers()
 
-This function is called within `CreateCoreWebView2Controller`. It sets up some of the event handlers used by the application, and adds them to the WebView.
+The `RegisterEventHandlers` function is called within `CreateCoreWebView2Controller`.  It sets up some of the event handlers used by the application, and adds them to the WebView.
 
-To read more about event handlers in WebView2, you can refer to this [documentation](/microsoft-edge/webview2/reference/win32/icorewebview2).
+For more information about event handlers in WebView2, see [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2).
 
-Below is a code snippet from `RegisterEventHandlers()`, where we set up an event handler for the `NewWindowRequested` event. This event is fired when JavaScript in the webpage calls `window.open()`, and our handler makes a new `AppWindow` and passes the new window's WebView back to the browser so it can return it from the `window.open()` call. Unlike our calls to `CreateCoreWebView2EnvironmentWithOptions` and `CreateCoreWebView2Controller`, instead of providing a method for the callback, we just provide a C++ lambda right then and there.
+Below is a code snippet from `RegisterEventHandlers()`, where we set up an event handler for the `NewWindowRequested` event.  This event is fired when JavaScript in the webpage calls `window.open()`.   `ICoreWebView2NewWindowRequestedEventHandler` makes a new `AppWindow` and passes the new window's WebView back to the browser, so it<!-- todo: specify "it": the browser? --> can return it<!-- todo: specify "it": the WebView? -->  from the `window.open()` call.  Unlike our calls to `CreateCoreWebView2EnvironmentWithOptions` and `CreateCoreWebView2Controller`, instead of providing a method for the callback, we just provide a C++ lambda right then and there:
 
 ```cpp
 CHECK_FAILURE(m_webView->add_NewWindowRequested(
@@ -429,167 +433,183 @@ CHECK_FAILURE(m_webView->add_NewWindowRequested(
 
 
 <!-- ====================================================================== -->
-## ScenarioWebMessage
+## ScenarioWebMessage (.html, .cpp, and .h)
 
-The `ScenarioWebMessage` files show how the Win32 Host can modify the WebView, how the WebView can modify the Win32Host, and how the WebView can modify itself by accessing information from the Win32 Host. This is done asynchronously.
+The `ScenarioWebMessage` files show how the Win32 host can modify the WebView, how the WebView can modify the Win32 host, and how the WebView can modify itself by accessing information from the Win32 host.  This is done asynchronously.
 
-The following sections demonstrate how each discrete function works using the Sample App and then explains how to implement this functionality.
+The `ScenarioWebMessage` component is created when you select the **Scenario** > **Web Messaging** menu item.  The `ScenarioWebMessage` component implements an example application with a C++ part and an HTML+JavaScript part, which communicate with each other by asynchronously posting and receiving messages:
 
-First, navigate to the ScenarioWebMessage application within the Sample App, using the following steps:
-
-1. Open the Sample App
-2. Click on Scenario
-3. Click on Web Messaging
-
-The WebView should display a simple webpage titled: "WebMessage sample page". The code for this page can be found in the `ScenarioWebMessage.html` file.
-
-![Web Messaging for posting and receiving messages](./webview2apissample-images/sample-app-webmessaging-screenshot.png)
-
-To better understand ScenarioWebMessage functionality, you can either follow the instructions on the page or the steps detailed below.
+![Web Messaging: Posting and receiving messages](./webview2apissample-images/sample-app-webmessaging-screenshot.png)
 
 
-<!-- ------------------------------ -->
-#### 1. Posting Messages (Win32 Host to WebView)
+The following sections demonstrate how each discrete function works using the **WebView2APISample** app, and then explains how to implement this functionality.
 
-The following steps show how the Win32 Host can modify a WebView. In this example, you will turn the text blue:
+First, go to the **ScenarioWebMessage** web app within the sample app:
 
-1. Click on Script in the Toolbar
-2. Click on Post Web Message JSON
+1. Open (run) the **WebView2APISample** app.
 
-A dialog with the pre-written code `{"SetColor":"blue"}` should appear.
+1. In the **Scenario** menu, select **Web Messaging**.
 
-3. Click OK
+   The WebView displays a webpage titled **WebMessage sample page** (`ScenarioWebMessage.html`):
 
-The text under Posting Messages should now be blue.
+   ![Web Messaging for posting and receiving messages](./webview2apissample-images/sample-app-webmessaging-screenshot.png)
 
-Here's how it works:
-
-1. In `ScriptComponent.cpp`, we use [PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson) to post user input to the `ScenarioMessage.html` web application.
-
-```cpp
-// Prompt the user for some JSON and then post it as a web message.
-void ScriptComponent::SendJsonWebMessage()
-{
-    TextInputDialog dialog(
-        m_appWindow->GetMainWindow(),
-        L"Post Web Message JSON",
-        L"Web message JSON:",
-        L"Enter the web message as JSON.",
-        L"{\"SetColor\":\"blue\"}");
-    if (dialog.confirmed)
-    {
-        m_webView->PostWebMessageAsJson(dialog.input.c_str());
-    }
-}
-```
-
-2. Within the web application, event listeners are used to receive and respond to the web message. The code snippet below is from `ScenarioWebMessage.html`. The event listener changes the color of the text if it reads "SetColor".
-
-```js
-window.chrome.webview.addEventListener('message', arg => {
-    if ("SetColor" in arg.data) {
-        document.getElementById("colorable").style.color = arg.data.SetColor;
-    }
-});
-```
+To explore the `ScenarioWebMessage` functionality, you can follow the instructions on the page, or follow the steps below.
 
 
 <!-- ------------------------------ -->
-#### 2. Receiving Messages (WebView to Win32 Host)
+#### Posting Messages from the Win32 host to the WebView
 
-The following steps show how the WebView can modify the Win32 Host App by changing the title of the Win32 App:
+The following steps show how the Win32 Host can modify a WebView.  In this example, you'll turn the text blue:
 
-1. Locate the Title of the Sample App - the top left of the window next to the icon.
-2. Under the Receiving Message section, fill out the form with the new title of your choice.
-3. Click Send
+1. Open the **WebMessage sample page** (`ScenarioWebMessage.html`) as described above.
 
-Locate the Title of the Sample App, it should have changed to the title you have just inputted.
+1. In the **Script** menu, select **Post Web Message JSON**.
 
-Here's how it works:
+   A dialog containing the pre-written code `{"SetColor":"blue"}` appears.
 
-1. Within `ScenarioWebMessage.html`, we call [window.chrome.webview.postMessage()](https://developer.mozilla.org/docs/Web/API/Window/postMessage) to send the user input to the host application. Refer to code snippet below:
+1. Click **OK**.
 
-```js
-function SetTitleText() {
-    let titleText = document.getElementById("title-text");
-    window.chrome.webview.postMessage(`SetTitleText ${titleText.value}`);
-}
-```
+   The text in the **Posting Messages** section of the page changes from black to blue.
 
-2. Within `ScenarioWebMessage.cpp`, we use [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) to register the event handler. When we receive the event, after validating the input, we change the title of the App Window.
 
-```cpp
-// Setup the web message received event handler before navigating to
-// ensure we don't miss any messages.
-CHECK_FAILURE(m_webview->add_WebMessageReceived(
-    Microsoft::WRL::Callback<ICoreWebView2WebMessageReceivedEventHandler>(
-        [this](ICoreWebView2* sender, ICoreWebView2WebMessageReceivedEventArgs* args)
-{
-    wil::unique_cotaskmem_string uri;
-    CHECK_FAILURE(args->get_Source(&uri));
+<!-- ---------- -->
+###### How it works
 
-    // Always validate that the origin of the message is what you expect.
-    if (uri.get() != m_sampleUri)
-    {
-        return S_OK;
-    }
-    wil::unique_cotaskmem_string messageRaw;
-    CHECK_FAILURE(args->TryGetWebMessageAsString(&messageRaw));
-    std::wstring message = messageRaw.get();
+1. In `ScriptComponent.cpp`, the call to [PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson) posts user input to the `ScenarioMessage.html` web application:
 
-    if (message.compare(0, 13, L"SetTitleText ") == 0)
-    {
-        m_appWindow->SetTitleText(message.substr(13).c_str());
-    }
-    return S_OK;
-}).Get(), &m_webMessageReceivedToken));
-```
+   ```cpp
+   // Prompt the user for some JSON and then post it as a web message.
+   void ScriptComponent::SendJsonWebMessage()
+   {
+      TextInputDialog dialog(
+         m_appWindow->GetMainWindow(),
+         L"Post Web Message JSON",
+         L"Web message JSON:",
+         L"Enter the web message as JSON.",
+         L"{\"SetColor\":\"blue\"}");
+      if (dialog.confirmed)
+      {
+         m_webView->PostWebMessageAsJson(dialog.input.c_str());
+      }
+   }
+   ```
+
+1. Within the web application, event listeners are used to receive and respond to the web message.  The code snippet below is from `ScenarioWebMessage.html`.  The event listener changes the color of the text if the argument is "SetColor":
+
+   ```js
+   window.chrome.webview.addEventListener('message', arg => {
+      if ("SetColor" in arg.data) {
+         document.getElementById("colorable").style.color = arg.data.SetColor;
+      }
+   });
+   ```
 
 
 <!-- ------------------------------ -->
-#### 3. Roundtrip (WebView to WebView)
+#### Receiving messages (from the WebView to the Win32 host)
+
+The following steps show how the WebView can modify the Win32 Host App by changing the title of the Win32 app:
+
+1. Open the **WebMessage sample page** (`ScenarioWebMessage.html`) as described above.
+
+1. Note the title of the **WebView2APISample** app, displayed in the top left of the window next to the icon.  It's initially **WebView2APISample - Microsoft Edge WebView2**.
+
+1. In the **Receiving Messages** section of the page, enter a new title, and then click the **Send** button.
+
+1. Note the new title that's displayed in the titlebar of the **WebView2APISample** app.
+
+
+<!-- ---------- -->
+###### How it works
+
+1. In `ScenarioWebMessage.html`, [window.chrome.webview.postMessage()](https://developer.mozilla.org/docs/Web/API/Window/postMessage) sends the user input to the host application:
+
+   ```js
+   function SetTitleText() {
+      let titleText = document.getElementById("title-text");
+      window.chrome.webview.postMessage(`SetTitleText ${titleText.value}`);
+   }
+   ```
+
+1. Within `ScenarioWebMessage.cpp`, we use [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) to register the event handler.  When we receive the event, after validating the input, we change the title of the App Window (`m_appWindow`):
+
+   ```cpp
+   // Setup the web message received event handler before navigating to
+   // ensure we don't miss any messages.
+   CHECK_FAILURE(m_webview->add_WebMessageReceived(
+      Microsoft::WRL::Callback<ICoreWebView2WebMessageReceivedEventHandler>(
+         [this](ICoreWebView2* sender, ICoreWebView2WebMessageReceivedEventArgs* args)
+   {
+      wil::unique_cotaskmem_string uri;
+      CHECK_FAILURE(args->get_Source(&uri));
+   
+      // Always validate that the origin of the message is what you expect.
+      if (uri.get() != m_sampleUri)
+      {
+         return S_OK;
+      }
+      wil::unique_cotaskmem_string messageRaw;
+      CHECK_FAILURE(args->TryGetWebMessageAsString(&messageRaw));
+      std::wstring message = messageRaw.get();
+   
+      if (message.compare(0, 13, L"SetTitleText ") == 0)
+      {
+         m_appWindow->SetTitleText(message.substr(13).c_str());
+      }
+      return S_OK;
+   }).Get(), &m_webMessageReceivedToken));
+   ```
+
+
+<!-- ------------------------------ -->
+#### Round trip messages (from the WebView to the host back to the WebView)
 
 The following steps show how the WebView can get information from the Win32 Host and modify itself by displaying the size of the Win32 App.
 
-1. Under RoundTrip, click GetWindowBounds
+1. Open the **WebMessage sample page** (`ScenarioWebMessage.html`) as described above.
 
-The box underneath the button should display the bounds for the Sample App.
+1. In the **Round trip** section of the page, click the **GetWindowBounds** button.
 
-Here's how it works:
+   The text box below the button displays the bounds for the **WebView2APISample** app.
 
-1. When the 'Get window bounds' button is clicked, the `GetWindowBounds` function in `ScenarioWebMessage.html` gets called. It uses [window.chrome.webview.postMessage()](https://developer.mozilla.org/docs/Web/API/Window/postMessage) to send a message to the host application.
 
-```js
-function GetWindowBounds() {
-    window.chrome.webview.postMessage("GetWindowBounds");
- }
-```
+<!-- ---------- -->
+###### How it works
 
-2. Within `ScenarioWebMessage.cpp`, we use [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) to register the received event handler. After validating the input, the event handler gets window bounds from the App Window. [PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson) sends the bounds to the web application.
+1. When the **Get window bounds** button is clicked, the `GetWindowBounds` function in `ScenarioWebMessage.html` gets called.  `GetWindowBounds` calls [window.chrome.webview.postMessage()](https://developer.mozilla.org/docs/Web/API/Window/postMessage) to send a message to the host application:
 
-```cpp
-if (message.compare(L"GetWindowBounds") == 0)
-{
-    RECT bounds = m_appWindow->GetWindowBounds();
-    std::wstring reply =
-        L"{\"WindowBounds\":\"Left:" + std::to_wstring(bounds.left)
-        + L"\\nTop:" + std::to_wstring(bounds.top)
-        + L"\\nRight:" + std::to_wstring(bounds.right)
-        + L"\\nBottom:" + std::to_wstring(bounds.bottom)
-        + L"\"}";
-    CHECK_FAILURE(sender->PostWebMessageAsJson(reply.c_str()));
-}
-```
+   ```js
+   function GetWindowBounds() {
+       window.chrome.webview.postMessage("GetWindowBounds");
+   }
+   ```
 
-3. Within `ScenarioWebMessage.html`, an event listener responds to the WindowBounds message and displays the bounds of the window:
+1. In `ScenarioWebMessage.cpp`, we use [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) to register the received event handler.  After validating the input, the event handler gets window bounds from the App Window. [PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson) sends the bounds to the web application:
 
-```js
-window.chrome.webview.addEventListener('message', arg => {
-    if ("WindowBounds" in arg.data) {
-        document.getElementById("window-bounds").value = arg.data.WindowBounds;
-    }
-});
-```
+   ```cpp
+   if (message.compare(L"GetWindowBounds") == 0)
+   {
+      RECT bounds = m_appWindow->GetWindowBounds();
+      std::wstring reply =
+         L"{\"WindowBounds\":\"Left:" + std::to_wstring(bounds.left)
+         + L"\\nTop:" + std::to_wstring(bounds.top)
+         + L"\\nRight:" + std::to_wstring(bounds.right)
+         + L"\\nBottom:" + std::to_wstring(bounds.bottom)
+         + L"\"}";
+      CHECK_FAILURE(sender->PostWebMessageAsJson(reply.c_str()));
+   }
+   ```
+
+1. In `ScenarioWebMessage.html`, an event listener responds to the `WindowBounds` message and displays the bounds of the window:
+
+   ```js
+   window.chrome.webview.addEventListener('message', arg => {
+      if ("WindowBounds" in arg.data) {
+         document.getElementById("window-bounds").value = arg.data.WindowBounds;
+      }
+   });
+   ```
 
 
 <!-- ====================================================================== -->
