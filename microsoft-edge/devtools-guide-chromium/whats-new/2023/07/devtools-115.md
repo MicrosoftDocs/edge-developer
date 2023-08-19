@@ -19,16 +19,16 @@ ms.date: 08/18/2023
 
 <!-- Reviewer: Rob Paveza-->
 
-In Microsoft Edge 115, we've made it easier and more customizable to connect DevTools to Azure Artifacts symbol server.  In previous versions of Microsoft Edge, you had to generate Personal Access Tokens (PATs) in Azure DevOps and paste them into DevTools in order to authenticate to symbol server. Now, as long as you are logged into Microsoft Edge, you can connect to symbol server with Azure Active Directory.
+In Microsoft Edge 115, we've made it easier and more customizable to connect DevTools to Azure Artifacts symbol server.  In previous versions of Microsoft Edge, you had to generate Personal Access Tokens (PATs) in Azure DevOps and paste them into DevTools in order to authenticate to the symbol server. Now, as long as you are logged into Microsoft Edge, you can connect to the symbol server by using<!--todo: that uses? --> Azure Active Directory.
 
-Additonally, you can now connect to multiple symbol servers if you need to fetch sourcemaps from different Azure DevOps organizations. Finally, you can filter which sourcemaps you want DevTools to fetch from symbol server by specifying the sourcemap URLs in an inclusion or exclusion list.
+Additonally, you can now connect to multiple symbol servers, in case you need to fetch sourcemaps from different Azure DevOps organizations. You can also filter which sourcemaps you want DevTools to fetch from the symbol server, by specifying the sourcemap URLs in an inclusion or exclusion list.
 
 ![Connecting to symbol server using Azure Active Directory from DevTools settings](./devtools-115-images/aad-symbol-server.png)
 <!-- todo: steps to re-create screenshot -->
 <!--
 1. Launch Edge, ensure that you are logged in to the browser
 1. Open DevTools > Settings > Symbol Server
-1. Under **Authorizaiton mode:**, select the dropdown and select Azure Active Directory
+1. Under **Authorization mode:**, select the dropdown and select Azure Active Directory
 1. Load the Azure DevOps organizations
 1. Take a screenshot
 1. Draw red highlight boxes around Authorization mode and Filter behavior
@@ -47,7 +47,7 @@ See also:
 
 <!-- Reviewer: Seth Brenith and Sulekha Kulkarni -->
 
-In previous versions of Microsoft Edge, in the **Memory** tool, when using the "Allocation instrumentation on timeline" option, the **Memory** tool takes a sample of the heap every 50 milliseconds.  However, taking a sample of the heap scales with the size of the heap so with a heap size of 200 MB, the sample actually takes 1.5 seconds to generate.  As a result, there is very little time left on the main thread for your website, outside of taking and generating snapshots.  In practice, this looks like your web content is hanging or blocked when "Allocation instrumentation on timeline" is running.
+In previous versions of Microsoft Edge, in the **Memory** tool, when using the **Allocation instrumentation on timeline** option, the **Memory** tool takes a sample of the heap every 50 milliseconds.  However, taking a sample of the heap scales with the size of the heap, so with a heap size of 200 MB, the sample actually takes 1.5 seconds to generate.  As a result, there is very little time left on the main thread for your website, outside of taking and generating snapshots.  In practice, this looks like your web content is hanging or blocked when **Allocation instrumentation on timeline** is running.
 
 In Microsoft Edge 115, the sample rate for the heap now scales to the time it takes to generate a sample, freeing up the main thread so that you can interact with your web content while profiling.
 
@@ -71,7 +71,7 @@ See also:
 <!-- ====================================================================== -->
 ## Refreshing the DevTools icons and buttons
 
-<!-- Subtitle: In Microsoft Edge 115, new icons and buttons give an update to the DevTools look and feel. -->
+<!-- Subtitle: New icons and buttons give an update to the DevTools look and feel. -->
 
 <!-- Reviewer: Jimmy Seto and Vidal Guillermo Diazleal Ortega -->
 
@@ -112,11 +112,11 @@ See also:
 <!-- ====================================================================== -->
 ## Screen readers now correctly announce dropdown state in Device Mode
 
-<!-- Subtitle: In previous versions of Microsoft Edge, in Device Mode, screen readers would incorrectly announce that dropdowns were expanded when they were collapsed. This issue has now been fixed. -->
+<!-- Subtitle: In Device Mode, screen readers now correctly announce the state of dropdown menus (for example, announcing "collapsed" when the dropdown menu is collapsed). -->
 
 <!-- Reviewer: Natasha Lee -->
 
-In previous versions of Microsoft Edge, in Device Mode, screen readers would incorrectly announce the state of dropdown menus as "Expanded" when these menus were actually collapsed.  In Microsoft Edge 115, this issue has been fixed and screen readers now correctly announce dropdown state (for example, collapsed when the menu is collapsed) in Device Mode.
+In previous versions of Microsoft Edge, in Device Mode, screen readers incorrectly announced the state of dropdown menus as "Expanded", when these menus were actually collapsed.  In Microsoft Edge 115, this issue has been fixed and screen readers now correctly announce the state of dropdown menus in Device Mode (for example, announcing "collapsed" when the dropdown menu is collapsed).
 
 ![No throttling dropdown menu expanded in Device Mode](./devtools-115-images/device-mode-dropdown.png)
 <!-- todo: steps to re-create screenshot -->
@@ -136,13 +136,13 @@ See also:
 <!-- ====================================================================== -->
 ## Profiling improvements for the Performance tool
 
-<!-- Subtitle: Your web content will now be more responsive while profiling in the Performance tool and we've added "Profiler Overhead" blocks of CPU time to account for the additional time Microsoft Edge needs when profiling. -->
+<!-- Subtitle: Your web content will now be more responsive while profiling in the Performance tool, and "Profiler Overhead" blocks of CPU time have been added, to account for the additional time Microsoft Edge needs when profiling. -->
 
 <!-- Reviewer: Seth Brenith and Sulekha Kulkarni -->
 
-When recording a profile in the **Performance** tool, V8, the JavaScript engine in Microsoft Edge, takes a sample of all the JavaScript functions that are running to accurately report CPU time in the flame chart.  When profiling a website with many cross-domain iframes, these samples take a long time to collect and result in significant overhead, slowing down the main thread and subsequently, the performance of the website.  On Windows in Microsoft Edge 115, V8 collects these samples more efficently, resulting in better site performance while profiling.
+When recording a profile in the **Performance** tool, V8, the JavaScript engine in Microsoft Edge, takes a sample of all the JavaScript functions that are running, to accurately report CPU time in the flame chart.  When profiling a website that has many cross-domain iframes, these samples take a long time to collect, and result in significant overhead, slowing down the main thread and subsequently, the performance of the website.  In Microsoft Edge 115 on Windows, V8 collects these samples more efficently, resulting in better site performance while profiling.
 
-Additionally, in the **Performance** tool, you can now see a representation of "Profiler Overhead" in the flame chart when recording a profile. This block of time represents the CPU time needed to sample and parse events when recording a profile and does not represent CPU time the real users of your website are encountering.  We added "Profiler Overhead" to help you focus your performance investigations on "Compile Code" and "Evaluate Script" events that affect your real users, not events that only take time when you are actively profiling in the **Performance** tool.
+Additionally, in the **Performance** tool, you can now see a representation of "Profiler Overhead" in the flame chart when recording a profile. This block of time represents the CPU time that's needed to sample and parse events when recording a profile, and does not represent CPU time that the users of your website are actually encountering.  "Profiler Overhead" has been added to help you focus your performance investigations on "Compile Code" and "Evaluate Script" events that affect your actual users, not events that only take time when you are actively profiling in the **Performance** tool.
 
 ![The "Profiling Overhead" block of time in a recorded Performance profile](./devtools-115-images/profiling-overhead-performance.png)
 <!-- todo: steps to re-create screenshot -->
