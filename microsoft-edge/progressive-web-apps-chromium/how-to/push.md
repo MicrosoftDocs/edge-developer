@@ -14,7 +14,7 @@ Push messages are a useful communication channel that lets applications update t
 
 One of the most significant advantages of push messages is that they can be delivered by your app's server even when the user isn't actively using your app.
 
-Push message notifications take part in the system's notification center display images and text information.  Notifications are useful to alert the user about an important updates in your app.  However, notifications should be used rarely, because they tend to be disruptive to the user's workflow.
+Push message notifications take part in the system's notification center, and they can display images and text information.  Notifications are useful to alert the user about an important updates in your app.  However, notifications should be used rarely, because they tend to be disruptive to the user's workflow.
 
 To create a PWA that supports push notifications:
 
@@ -105,11 +105,11 @@ The VAPID key mentioned in the previous code snippet is a public key that is use
 <!-- ====================================================================== -->
 ## Step 3 - Send push messages from your server
 
-Your application needs VAPID (Voluntary Application Server Identification) keys in order to send push messages from your server to your PWA clients.  There are several VAPID key generators available online (for example, [vapidkeys.com](https://vapidkeys.com)).
+Your application needs VAPID (Voluntary Application Server Identification) keys in order to send push messages from your server to your PWA clients.  There are several VAPID key generators available online (for example, [Vapidkeys.com](https://vapidkeys.com)).
 
 Once you have a VAPID key, you can send push messages to your PWA clients by using the Web Push Protocol. To learn more about the protocol, see [The Web Push Protocol](https://web.dev/push-notifications-web-push-protocol/).
 
-You can use a library to send push messages from your server, depending on the programming language you use.  For example, you can use the [web-push](https://github.com/web-push-libs/web-push) if your server uses Node.js. Other libraries are available on the [WebPush libraries repo](https://github.com/web-push-libs/).
+You can use a library to send push messages from your server, depending on the programming language you use.  For example, you can use the [web-push](https://github.com/web-push-libs/web-push) library if your server uses Node.js. Other libraries are available on the [WebPush libraries repo](https://github.com/web-push-libs/).
 
 
 <!-- ====================================================================== -->
