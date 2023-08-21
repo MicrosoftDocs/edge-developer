@@ -41,10 +41,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Snapshotting improvements for the Memory tool
-<!-- 
-## Improvements to Memory Tool
-todo: change heading? -->
+## Improvements for the Memory tool
 
 <!-- Subtitle: The "Allocation instrumentation on timeline" profiling type in the Memory tool now samples the heap at variable intervals, depending on the size of the heap. Heap snapshots are now more accurate and don't show objects that have been garbage-collected. -->
 
@@ -64,7 +61,7 @@ In Microsoft Edge 115, the sample rate for the heap now scales to the time it ta
 1. Draw a red highlight box around the "Allocation instrumentation on timeline" option
  -->
 
-Additionally, in previous versions of Microsoft Edge, heap snapshots would sometimes include objects that have been garbage-collected (GC'd).  In Microsoft Edge 115, this issue has been fixed and heap snapshots are now more accurate.
+Additionally, in previous versions of Microsoft Edge, heap snapshots would sometimes include objects that should have been garbage-collected (GC'd).  In Microsoft Edge 115, this issue has been fixed and heap snapshots are now more accurate.
 
 See also:
 * [Limit proportion of CPU time given to requestHeapStatsUpdate (4469909) · Gerrit Code Review](https://chromium-review.googlesource.com/c/v8/v8/+/4469909)
