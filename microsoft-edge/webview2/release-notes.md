@@ -24,9 +24,9 @@ WebView2 changes may require an update to the Runtime, SDK, or both.  Most new A
 
 | Indicator | Meaning |
 |---|---|
-| No label | Both the Runtime and the SDK need to be updated. |
-| **Runtime-only** | Only the Runtime needs to be updated. |
-| **SDK-only** | Only the SDK needs to be updated. |
+| **(Runtime and SDK)**, or no indicator | Both the Runtime and the SDK need to be updated. |
+| **(Runtime-only)** | Only the Runtime needs to be updated. |
+| **(SDK-only)** | Only the SDK needs to be updated. |
 
 WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time.  As a result, WebView2 Runtime releases generally also include Microsoft Edge updates.
 
@@ -127,10 +127,11 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 <!-- ---------- -->
 ###### Bug fixes
 
-* Fixed a handle tracking bug where `TextureStream` API usage could fail. (Runtime)
-* Fixed a bug where a WebView2 created in a background thread doesn't come to the foreground when created. (Runtime) ([Issue 3584](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3584))
-* Fixed a bug where the WebView2 content sometimes renders at the incorrect size after changing the display configuration (such as laptop sleeping; remoting; or connecting or disconnecting an external display). (Runtime) ([Issue 3429](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3429))
-* Fixed a bug where a bluescreen happens when using WebView2 apps on certain hardware configurations. (Runtime) ([Issue 3679](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3679))
+* Fixed a handle tracking bug where `TextureStream` API usage could fail.  (Runtime-only)
+* Fixed a bug where a WebView2 created in a background thread doesn't come to the foreground when created.  (Runtime-only)  ([Issue 3584](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3584))
+* Fixed a bug where the WebView2 content sometimes renders at the incorrect size after changing the display configuration (such as laptop sleeping; remoting; or connecting or disconnecting an external display).  (Runtime-only)  ([Issue 3429](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3429))
+* Fixed a bug where a bluescreen happens when using WebView2 apps on certain hardware configurations.  (Runtime-only)  ([Issue 3679](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3679))
+
 
 <!-- ====================================================================== -->
 ## 1.0.1901.177
@@ -199,7 +200,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 <!-- ------------------------------ -->
 ###### Bug fixes
 
-* Fixed a bug where the entire toolbar is blank when hiding the Bookmarks, Search, and PageSelector buttons simultaneously (Runtime). [Issue 2866](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2866)
+* Fixed a bug where the entire toolbar is blank when hiding the Bookmarks, Search, and PageSelector buttons simultaneously.  (Runtime-only)  [Issue 2866](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2866)
 
 <!-- end of ## 1.0.1901.177 July -->
 
@@ -385,18 +386,18 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 * Fixed a `CoreWebView2Frame.ExecuteScriptAsync` hang that occurred when a frame was destroyed during script execution. [Issue 3124](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3124)
 * Fixed a `COMException` when reading `WebResourceResponse` content after a redirect. [Issue 3229](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3229)
-* Fixed a regression where calling `CoreWebView2.AddHostObjectToScript` twice for the same name hangs (Runtime). [Issue 3539](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3539)
+* Fixed a regression where calling `CoreWebView2.AddHostObjectToScript` twice for the same name hangs.  (Runtime-only)  [Issue 3539](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3539)
 * Fixed an issue where `PrintAsync` fails when `PrinterName` contains Chinese characters. [Issue 3379](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3379)
 * Fixed an issue to disable the context menu in print pages when `AreDefaultContextMenusEnabled` is set to `false`. [Issue 3548](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3548)
-* Removed visual search from the web capture context menu (Runtime). [Issue 3426](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3426)
+* Removed visual search from the web capture context menu.  (Runtime-only)  [Issue 3426](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3426)
 * Fixed an issue that caused `PrintAsync` and `PrintToPdfStreamAsync` to fail when print settings are `null`.
-* Removed the **Launch game** button from the default **No Internet Connection** error page (Runtime).
+* Removed the **Launch game** button from the default **No Internet Connection** error page.  (Runtime-only)
 * Fixed an issue to ensure that `WebVivew2Loader` can be loaded from a UNC path. [Issue 3465](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3465)
 * Fixed invalid `CoreWebView2PdfToolbarItems.FullScreen` and `CoreWebView2PdfToolbarItems.MoreSettings`.
-* Added a lock for host object access from multithread (Runtime).
+* Added a lock for host object access from multithread.  (Runtime-only)
 * Fixed configuration options that (`CoreWebView2PdfToolbarItems.MoreSettings`, `CoreWebView2PdfToolbarItems.FullScreen`) are not valid in PDF preview mode. [Issue 3324](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3324)
-* Removed the **Hide all annotations** option in PDF **Settings and more** (Runtime).
-* Removed the **Show all saved passwords** context menu item (Runtime).
+* Removed the **Hide all annotations** option in PDF **Settings and more**.  (Runtime-only)
+* Removed the **Show all saved passwords** context menu item.  (Runtime-only)
 
 <!-- end of ## 1.0.1988-prerelease July -->
 
@@ -750,7 +751,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ---
 
-* (Runtime-only)  Fixed an issue that was causing the `X-Edge-Shopping-Flag` header to be added to web requests that are coming from WebView2.  ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
+*  Fixed an issue that was causing the `X-Edge-Shopping-Flag` header to be added to web requests that are coming from WebView2.  (Runtime-only)  ([Issue #3365](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3365))
 
 
 <!-- ====================================================================== -->
@@ -807,7 +808,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 * Disabled the Chrome Web Store info banner that displays the option to allow extensions installation. ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
 * Fixed an issue where a custom menu item wasn't firing. ([Issue #3300](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3300))
 * Fixed a crash during initialization when creating a WebView2 using WPF and SDK version 1.0.1722.32, which is now deprecated.  (See [SDK 1.0.1722.32 is deprecated](#sdk-10172232-is-deprecated) below.)  ([Issue #3375](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3375))
-* (Runtime-only)  Fixed a bug in `PostSharedBufferToScript` that stops after about 32000x1MB buffers are posted.  ([Issue #3360](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3360))
+*  Fixed a bug in `PostSharedBufferToScript` that stops after about 32000x1MB buffers are posted.  (Runtime-only)  ([Issue #3360](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3360))
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -826,8 +827,8 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ---
 
-* (Runtime-only)  Fixed an issue where navigation will always take place within a `ScriptDialogOpening` event callback.  ([Issue #3355](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3355))
-* (Runtime-only)  Fixed an issue to support the `BackForwardCache` flag.
+* Fixed an issue where navigation will always take place within a `ScriptDialogOpening` event callback.  (Runtime-only)  ([Issue #3355](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3355))
+* Fixed an issue to support the `BackForwardCache` flag.  (Runtime-only)
 * Fixed an issue with visual hosted owned windows, where clicking into the Find bar from outside the window didn't activate the Find bar.
 
 
@@ -1571,7 +1572,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 *  Fixed a bug in `PrintAsync` and `PrintToPdfStreamAsync` that throws an exception when print settings are null.
 *  Improved handling of apps running elevated.  (Runtime-only)
-*  Added support for window management permission kind.  (SDK and Runtime)
+*  Added support for window management permission kind.  (Runtime and SDK)
 *  Reliability improvement.  (Runtime-only)
 
 
