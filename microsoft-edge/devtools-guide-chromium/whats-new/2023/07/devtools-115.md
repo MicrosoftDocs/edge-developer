@@ -42,12 +42,15 @@ See also:
 
 <!-- ====================================================================== -->
 ## Snapshotting improvements for the Memory tool
+<!-- 
+## Improvements to Memory Tool
+todo: change heading? -->
 
 <!-- Subtitle: The "Allocation instrumentation on timeline" profiling type in the Memory tool now samples the heap at variable intervals, depending on the size of the heap. Heap snapshots are now more accurate and don't show objects that have been garbage-collected. -->
 
 <!-- Reviewer: Seth Brenith and Sulekha Kulkarni -->
 
-In previous versions of Microsoft Edge, in the **Memory** tool, when using the **Allocation instrumentation on timeline** option, the **Memory** tool takes a sample of the heap every 50 milliseconds.  However, taking a sample of the heap scales with the size of the heap, so with a heap size of 200 MB, the sample actually takes 1.5 seconds to generate.  As a result, there is very little time left on the main thread for your website, outside of taking and generating snapshots.  In practice, this looks like your web content is hanging or blocked when **Allocation instrumentation on timeline** is running.
+In previous versions of Microsoft Edge, in the **Memory** tool, when using the **Allocation instrumentation on timeline** option, the **Memory** tool takes a sample of the heap every 50 milliseconds.  However, taking a sample of the heap scales with the size of the heap, so with a heap size of 200 MB, the sample actually takes 1.5 seconds to generate.  As a result, there is very little time left on the main thread for your website, outside of generating heap samples.  In practice, this looks like your web content is hanging or blocked when **Allocation instrumentation on timeline** is running.
 
 In Microsoft Edge 115, the sample rate for the heap now scales to the time it takes to generate a sample, freeing up the main thread so that you can interact with your web content while profiling.
 
