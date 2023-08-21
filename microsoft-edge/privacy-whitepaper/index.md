@@ -185,7 +185,9 @@ If you're signed in with a work or school account and are syncing Collections, y
 
 When you don't sign in to Microsoft Edge, or when you sign in with sync disabled, all collections data is stored locally on the device, organized per Microsoft Edge profile.
 
-Collections aren't available when using Guest mode or InPrivate browsing.
+Collections aren't available when using Guest mode.
+
+When using a Microsoft Account (MSA), collections aren't available when InPrivate browsing.  InPrivate browsing is supported when using a Microsoft Azure Active Directory (AAD) account, or when not signed in.
 
 
 <!-- ====================================================================== -->
