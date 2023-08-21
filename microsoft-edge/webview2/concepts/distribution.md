@@ -6,9 +6,19 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 3/29/2023
+ms.date: 08/21/2023
 ---
 # Distribute your app and the WebView2 Runtime
+
+<!-- todo: 
+Packaged apps can declare a dependency on WebView2 and it'll get installed if necessary. Mention this option, it's a simpler and more attractive option for many devs. No need to use Evergreen Bootstrapper, Evergreen Standalone Installer or SelfContained (Fixed Version) distribution.
+
+Update this page to include this option
+
+See https://learn.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-win32dependencies-externaldependency
+
+(that has an example explicitly citing WebView2)
+-->
 
 When releasing an app that uses Microsoft Edge WebView2, you need distribute the WebView2 Runtime, either by distributing the automatically updated _Evergreen_ Runtime, or by distributing a _Fixed Version_ of the Runtime.
 
