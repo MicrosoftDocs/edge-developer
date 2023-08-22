@@ -72,11 +72,11 @@ See also:
 
 <!-- Reviewer: Jimmy Seto and Vidal Guillermo Diazleal Ortega -->
 
-In Microsoft Edge 115, the DevTools UI has gotten a makeover with new icons and buttons.  For example, when debugging in the **Sources** tool, the current frame in the call stack is indicated by a right-pointing blue arrow.  This icon is more consistent with the debugging icons in Microsoft Visual Studio and Microsoft Visual Studio Code.
+In Microsoft Edge 115, the DevTools UI has gotten a makeover with new icons and buttons.  For example, when debugging in the **Sources** tool, the current frame in the call stack is indicated by a right-pointing blue arrow.  This icon is more consistent with the debugging icons in Microsoft Visual Studio and Microsoft Visual Studio Code:
 
 ![The right-pointing blue arrow icon for the current frame in the call stack](./devtools-115-images/icon-update-sources.png)
 
-In previous versions of Microsoft Edge, in the **Bottom-Up** view in the **Performance** tool, the triangle buttons for collapsing and expanding the recorded activities rendered incorrectly.  In Microsoft Edge 115, this issue has been fixed and you can now expand and collapse individual activities to see which functions are calling them.
+In previous versions of Microsoft Edge, in the **Bottom-Up** view in the **Performance** tool, the triangle buttons for collapsing and expanding the recorded activities rendered incorrectly.  In Microsoft Edge 115, this issue has been fixed and you can now expand and collapse individual activities to see which functions are calling them:
 
 ![The triangle icons for expanding and collapsing activities in the Bottom-Up view](./devtools-115-images/icon-update-performance.png)
 
@@ -86,15 +86,15 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Screen readers now correctly announce dropdown state in Device Mode
+## Screen readers correctly announce dropdown state in Device Mode
 
 <!-- Subtitle: In Device Mode, screen readers now correctly announce the state of dropdown menus (for example, announcing "collapsed" when the dropdown menu is collapsed). -->
 
 <!-- Reviewer: Natasha Lee -->
 
-In previous versions of Microsoft Edge, in Device Mode, screen readers incorrectly announced the state of dropdown menus as "Expanded", when these menus were actually collapsed.  In Microsoft Edge 115, this issue has been fixed and screen readers now correctly announce the state of dropdown menus in Device Mode (for example, announcing "collapsed" when the dropdown menu is collapsed).
+In previous versions of Microsoft Edge, in Device Mode, screen readers incorrectly announced the state of dropdown menus as "Expanded", when these menus were actually collapsed.  In Microsoft Edge 115, this issue has been fixed and screen readers now correctly announce the state of dropdown menus in Device Mode as "collapsed" or "expanded":
 
-![No throttling dropdown menu expanded in Device Mode](./devtools-115-images/device-mode-dropdown.png)
+![The 'Throttling' dropdown menu expanded in Device Mode](./devtools-115-images/device-mode-dropdown.png)
 <!-- todo: steps to re-create screenshot -->
 <!--
 1. Navigate to https://microsoftedge.github.io/Demos/demo-to-do/
