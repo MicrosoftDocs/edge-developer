@@ -35,6 +35,9 @@ Additonally, you can now connect to multiple symbol servers, in case you need to
 1. See https://dev.azure.com/microsoft/Edge/_git/chromium.devtools-frontend/pullrequest/8874508 for more info
 -->
 
+![todo temp alt png](./devtools-115-images/aad-symbol-server-2-temp.png)
+<!-- todo: see if 2nd png is ok, with fewer orgs listed -->
+
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
