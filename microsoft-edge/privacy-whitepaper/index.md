@@ -167,7 +167,7 @@ Collections storage and feature availability depend on your Microsoft Edge Sign-
 
 
 <!-- ------------------------------ -->
-#### Signed-in with a personal account, and Sync enabled
+#### Signed in with a personal account, and Sync enabled
 
 When you sign in to Microsoft Edge with a personal Microsoft Account (MSA) and enable Sync, your collections, saved items, notes, and images are automatically saved on Microsoft cloud for free. You can access your collections from Microsoft Edge on any device where you're signed in with Sync enabled. You can even view and manage your collections online in any browser by visiting the [Collections portal](https://www.bing.com/saves) at Bing.com. Collections also enhance your experience with a personalized interest feed, if your personalization settings support this feature.
 
@@ -175,7 +175,7 @@ If you want to disable Collections for a signed-in profile using a personal acco
 
 
 <!-- ------------------------------ -->
-#### Signed-in with a work or school account, and Sync enabled
+#### Signed in with a work or school account, and Sync enabled
 
 If you're signed in with a work or school account and are syncing Collections, your collections, saved items, notes, and images are synced across devices. If you want to stop syncing your Collections, you can turn off Sync for Collections from `edge://settings/profiles/sync`.
 
