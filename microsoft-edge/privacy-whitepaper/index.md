@@ -334,6 +334,7 @@ The template attempts to identify the name, price, ratings, primary image, and o
 If the site you are collecting from is not on the supported list site, Microsoft Edge doesn't download a template.
 Templates allow collection items to be created locally on the device.
 No data about the collection items are sent to the service when creating the collection.
+<!-- todo: check "collect" above (8x), broaden focus beyond collections? -->
 <!-- todo: break into multiple paragraphs for readability: 
 1. Group and arrange sentences in logical order.
 1. Add blank lines between paragraphs.  Aim for 1-3 short sentences per paragraph.
