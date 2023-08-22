@@ -18,8 +18,9 @@ ms.date: 08/18/2023
 <!-- Subtitle: You can now use Azure Active Directory for authentication instead of Personal Access Tokens (PATs). You can connect to multiple symbol servers and filter which sourcemaps you want DevTools to fetch. -->
 
 <!-- Reviewer: Rob Paveza-->
+<!-- todo: delete Reviewer: lines -->
 
-In Microsoft Edge 115, we've made it easier and more customizable to connect DevTools to Azure Artifacts symbol server.  In previous versions of Microsoft Edge, you had to generate Personal Access Tokens (PATs) in Azure DevOps and paste them into DevTools in order to authenticate to the symbol server. Now, as long as you are logged into Microsoft Edge, you can connect to the symbol server by using<!--todo: that uses? --> Azure Active Directory.
+In Microsoft Edge 115, it's easier and more customizable to connect DevTools to Azure Artifacts symbol server.  In previous versions of Microsoft Edge, to authenticate to the symbol server, you had to generate Personal Access Tokens (PATs) in Azure DevOps and then paste them into DevTools. Now, as long as you're logged into Microsoft Edge, you can connect to the symbol server by using Azure Active Directory.
 
 Additonally, you can now connect to multiple symbol servers, in case you need to fetch sourcemaps from different Azure DevOps organizations. You can also filter which sourcemaps you want DevTools to fetch from the symbol server, by specifying the sourcemap URLs in an inclusion or exclusion list.
 
@@ -56,14 +57,6 @@ In previous versions of Microsoft Edge, in the **Memory** tool, when using the *
 In Microsoft Edge 115, the sample rate for the heap now scales to the time it takes to generate a sample, freeing up the main thread so that you can interact with your web content while profiling.
 
 ![The "Allocation instrumentation on timeline" profiling option in the Memory tool](./devtools-115-images/allocation-instrumentation-on-timeline.png)
-<!-- todo: steps to re-create screenshot -->
-<!--
-1. Navigate to https://microsoftedge.github.io/Demos/demo-to-do/
-1. Open DevTools > Memory.
-1. Select the "Allocation instrumentation on timeline" profiling type
-1. Take a screenshot
-1. Draw a red highlight box around the "Allocation instrumentation on timeline" option
--->
 
 Additionally, in previous versions of Microsoft Edge, heap snapshots would sometimes include objects that should have been garbage-collected (GC'd).  In Microsoft Edge 115, this issue has been fixed and heap snapshots are now more accurate.
 
@@ -73,40 +66,19 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Refreshing the DevTools icons and buttons
+## Refreshed DevTools icons and buttons
 
 <!-- Subtitle: New icons and buttons give an update to the DevTools look and feel. -->
 
 <!-- Reviewer: Jimmy Seto and Vidal Guillermo Diazleal Ortega -->
 
-In Microsoft Edge 115, the DevTools UI has gotten a small makeover with new icons and buttons.  For example, when debugging in the Sources tool, the current frame in the call stack is indicated with a right-facing blue arrow.  This icon is more consistent with debugging icons in Visual Studio and Visual Studio Code.
+In Microsoft Edge 115, the DevTools UI has gotten a makeover with new icons and buttons.  For example, when debugging in the **Sources** tool, the current frame in the call stack is indicated by a right-pointing blue arrow.  This icon is more consistent with the debugging icons in Microsoft Visual Studio and Microsoft Visual Studio Code.
 
-![The right-facing blue arrow icon for the current frame in the call stack](./devtools-115-images/icon-update-sources.png)
-<!-- todo: steps to re-create screenshot -->
-<!--
-1. Navigate to https://microsoftedge.github.io/Demos/demo-to-do/
-1. Open DevTools > Sources. Open the to-do.js file
-1. Set a breakpoint on line 14
-1. Add an item to the to-do list. The breakpoint should trigger
-1. Ensure that the Call Stack section of the Sources tool is visible
-1. Take a screenshot
-1. Draw a red highlight box around the right-facing blue arrow icon
-1. See: https://dev.azure.com/microsoft/Edge/_git/chromium.devtools-frontend/pullrequest/8927764 for more info
- -->
+![The right-pointing blue arrow icon for the current frame in the call stack](./devtools-115-images/icon-update-sources.png)
 
-In previous versions of Microsoft Edge, in the **Bottom-Up** view in the **Performance** tool, the triangle buttons for collapsing and expanding the recorded activities were not rendering correctly.  In Microsoft Edge 115, this issue has been fixed and you can now expand and collapse individual activities to see what functions are calling them.
+In previous versions of Microsoft Edge, in the **Bottom-Up** view in the **Performance** tool, the triangle buttons for collapsing and expanding the recorded activities rendered incorrectly.  In Microsoft Edge 115, this issue has been fixed and you can now expand and collapse individual activities to see which functions are calling them.
 
 ![The triangle icons for expanding and collapsing activities in the Bottom-Up view](./devtools-115-images/icon-update-performance.png)
-<!-- todo: steps to re-create screenshot -->
-<!--
-1. Navigate to https://microsoftedge.github.io/Demos/demo-to-do/
-1. Open DevTools > Performance. Select the Reload icon to start profiling and reload the page
-1. Wait and profiling will end on its own
-1. Make sure the bottom pane is visible in the Performance tool. Switch to the Bottom-Up view.
-1. Take a screenshot
-1. Draw red highlight boxes around the triangle icons in the Bottom-Up view for expanding/collapsing activities
-1. See: https://dev.azure.com/microsoft/Edge/_git/chromium.devtools-frontend/pullrequest/8952566 for more info
- -->
 
 See also:
 * [Step through code](../../../javascript/reference.md#step-through-code) from _JavaScript debugging features_
