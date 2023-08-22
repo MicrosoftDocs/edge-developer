@@ -37,6 +37,7 @@ Additonally, you can now connect to multiple symbol servers, in case you need to
 
 ![todo temp alt png](./devtools-115-images/aad-symbol-server-2-temp.png)
 <!-- todo: see if 2nd png is ok, with fewer orgs listed -->
+<!-- todo: add red boxes if png is ok -->
 
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
@@ -62,7 +63,7 @@ In Microsoft Edge 115, the sample rate for the heap now scales to the time it ta
 1. Select the "Allocation instrumentation on timeline" profiling type
 1. Take a screenshot
 1. Draw a red highlight box around the "Allocation instrumentation on timeline" option
- -->
+-->
 
 Additionally, in previous versions of Microsoft Edge, heap snapshots would sometimes include objects that should have been garbage-collected (GC'd).  In Microsoft Edge 115, this issue has been fixed and heap snapshots are now more accurate.
 
