@@ -22,20 +22,6 @@ In Microsoft Edge 115, it's easier and more customizable to connect DevTools to 
 Additonally, you can now connect to multiple symbol servers, in case you need to fetch sourcemaps from different Azure DevOps organizations. You can also filter which sourcemaps you want DevTools to fetch from the symbol server, by specifying the sourcemap URLs in an inclusion or exclusion list.
 
 ![Connecting to symbol server using Azure Active Directory from DevTools settings](./devtools-115-images/aad-symbol-server.png)
-<!-- todo: steps to re-create screenshot -->
-<!--
-1. Launch Edge, ensure that you are logged in to the browser
-1. Open DevTools > Settings > Symbol Server
-1. Under **Authorization mode:**, select the dropdown and select Azure Active Directory
-1. Load the Azure DevOps organizations
-1. Take a screenshot
-1. Draw red highlight boxes around Authorization mode and Filter behavior
-1. See https://dev.azure.com/microsoft/Edge/_git/chromium.devtools-frontend/pullrequest/8874508 for more info
--->
-
-![todo temp alt png](./devtools-115-images/aad-symbol-server-2-temp.png)
-<!-- todo: see if 2nd png is ok, with fewer orgs listed -->
-<!-- todo: add red boxes if png is ok -->
 
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
