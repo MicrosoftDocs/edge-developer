@@ -17,9 +17,6 @@ ms.date: 08/18/2023
 
 <!-- Subtitle: You can now use Azure Active Directory for authentication instead of Personal Access Tokens (PATs). You can connect to multiple symbol servers and filter which sourcemaps you want DevTools to fetch. -->
 
-<!-- Reviewer: Rob Paveza-->
-<!-- todo: delete Reviewer: lines -->
-
 In Microsoft Edge 115, it's easier and more customizable to connect DevTools to Azure Artifacts symbol server.  In previous versions of Microsoft Edge, to authenticate to the symbol server, you had to generate Personal Access Tokens (PATs) in Azure DevOps and then paste them into DevTools. Now, as long as you're logged into Microsoft Edge, you can connect to the symbol server by using Azure Active Directory.
 
 Additonally, you can now connect to multiple symbol servers, in case you need to fetch sourcemaps from different Azure DevOps organizations. You can also filter which sourcemaps you want DevTools to fetch from the symbol server, by specifying the sourcemap URLs in an inclusion or exclusion list.
@@ -50,8 +47,6 @@ See also:
 
 <!-- Subtitle: The "Allocation instrumentation on timeline" profiling type in the Memory tool now samples the heap at variable intervals, depending on the size of the heap. Heap snapshots are now more accurate and don't show objects that have been garbage-collected. -->
 
-<!-- Reviewer: Seth Brenith and Sulekha Kulkarni -->
-
 In previous versions of Microsoft Edge, in the **Memory** tool, when using the **Allocation instrumentation on timeline** option, the **Memory** tool takes a sample of the heap every 50 milliseconds.  However, taking a sample of the heap scales with the size of the heap, so with a heap size of 200 MB, the sample actually takes 1.5 seconds to generate.  As a result, there is very little time left on the main thread for your website, outside of generating heap samples.  In practice, this looks like your web content is hanging or blocked when **Allocation instrumentation on timeline** is running.
 
 In Microsoft Edge 115, the sample rate for the heap now scales to the time it takes to generate a sample, freeing up the main thread so that you can interact with your web content while profiling.
@@ -69,8 +64,6 @@ See also:
 ## Refreshed DevTools icons and buttons
 
 <!-- Subtitle: New icons and buttons give an update to the DevTools look and feel. -->
-
-<!-- Reviewer: Jimmy Seto and Vidal Guillermo Diazleal Ortega -->
 
 In Microsoft Edge 115, the DevTools UI has gotten a makeover with new icons and buttons.  For example, when debugging in the **Sources** tool, the current frame in the call stack is indicated by a right-pointing blue arrow.  This icon is more consistent with the debugging icons in Microsoft Visual Studio and Microsoft Visual Studio Code:
 
@@ -90,20 +83,9 @@ See also:
 
 <!-- Subtitle: In Device Mode, screen readers now correctly announce the state of dropdown menus (for example, announcing "collapsed" when the dropdown menu is collapsed). -->
 
-<!-- Reviewer: Natasha Lee -->
-
 In previous versions of Microsoft Edge, in Device Mode, screen readers incorrectly announced the state of dropdown menus as "Expanded", when these menus were actually collapsed.  In Microsoft Edge 115, this issue has been fixed and screen readers now correctly announce the state of dropdown menus in Device Mode as "collapsed" or "expanded":
 
 ![The 'Throttling' dropdown menu expanded in Device Mode](./devtools-115-images/device-mode-dropdown.png)
-<!-- todo: steps to re-create screenshot -->
-<!--
-1. Navigate to https://microsoftedge.github.io/Demos/demo-to-do/
-1. Open DevTools. Turn on Device Mode with the Toggle device emulation button in the top-left corner
-1. Expand the viewport so that you can see all the buttons in the Device Mode toolbar
-1. Select the **No throttling** dropdown menu
-1. Take a screenshot with the menu expanded
-1. Draw a red highlight box around the dropdown menu
- -->
 
 See also:
 * [Emulate mobile devices (Device Emulation)](../../../device-mode/index.md)
@@ -114,23 +96,11 @@ See also:
 
 <!-- Subtitle: Your web content will now be more responsive while profiling in the Performance tool, and "Profiler Overhead" blocks of CPU time have been added, to account for the additional time Microsoft Edge needs when profiling. -->
 
-<!-- Reviewer: Seth Brenith and Sulekha Kulkarni -->
-
 When recording a profile in the **Performance** tool, V8, the JavaScript engine in Microsoft Edge, takes a sample of all the JavaScript functions that are running, to accurately report CPU time in the flame chart.  When profiling a website that has many cross-domain iframes, these samples take a long time to collect, and result in significant overhead, slowing down the main thread and subsequently, the performance of the website.  In Microsoft Edge 115 on Windows, V8 collects these samples more efficently, resulting in better site performance while profiling.
 
 Additionally, in the **Performance** tool, you can now see a representation of "Profiler Overhead" in the flame chart when recording a profile. This block of time represents the CPU time that's needed to sample and parse events when recording a profile, and does not represent CPU time that the users of your website are actually encountering.  "Profiler Overhead" has been added to help you focus your performance investigations on "Compile Code" and "Evaluate Script" events that affect your actual users, not events that only take time when you are actively profiling in the **Performance** tool.
 
 ![The "Profiling Overhead" block of time in a recorded Performance profile](./devtools-115-images/profiling-overhead-performance.png)
-<!-- todo: steps to re-create screenshot -->
-<!--
-1. Navigate to https://microsoftedge.github.io/Demos/demo-to-do/
-1. Open DevTools > Performance. Press the Reload button to reload the page and start profiling
-1. Wait for profiling to stop on its own
-1. In the flame chart, zoom in on the start of the profile to look for a "Profiling Overhead" block
-1. With the "Profiling Overhead" block in view, take a screenshot
-1. Draw a red highlight box around the "Profiling Overhead" box
-1. If you have difficulty, ping Zoher and I can share with you the trace I recorded that I know has the event
- -->
 
 See also:
 * [Avoid busy-waiting in sampler thread if Windows supports precise sleep (4453767) · Gerrit Code Review](https://chromium-review.googlesource.com/c/v8/v8/+/4453767)
