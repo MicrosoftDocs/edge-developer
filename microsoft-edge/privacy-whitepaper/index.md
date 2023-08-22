@@ -325,22 +325,6 @@ Please contact your enterprise administrator to understand your company's polici
 <!-- ====================================================================== -->
 ## Entity extraction
 
-Every 24 hours, Microsoft Edge downloads a list of supported sites that have special entity extraction templates.
-The templates are specific to each website.
-When you create a new item in your collection, Microsoft Edge verifies that the site you are collecting from is in the list of supported sites.
-If the site is in the list, Microsoft Edge pings the entity extraction service for the template of the specific site.
-No user identifiers are associated with the request to the service.
-The template attempts to identify the name, price, ratings, primary image, and other data about the item being collected.
-If the site you are collecting from is not on the supported list site, Microsoft Edge doesn't download a template.
-Templates allow collection items to be created locally on the device.
-No data about the collection items are sent to the service when creating the collection.
-<!-- todo: check "collect" above (8x), broaden focus beyond collections? -->
-<!-- todo: break into multiple paragraphs for readability: 
-1. Group and arrange sentences in logical order.
-1. Add blank lines between paragraphs.  Aim for 1-3 short sentences per paragraph.
-1. Concat the sentences in each paragraph.
-1. If needed, add some h4 "#### Foo" section headings. -->
-
 Microsoft Edge uses entity extraction templates that are specific to a list of supported websites to identify the name, price, ratings, primary image, and other data about the item being collected locally. When creating the collection, no user identifiers or other data are sent to Microsoft services.
 
 If you want to delete such templates stored on the device, go to `edge://settings/clearBrowserData`, select the desired time range and type of data, and then click the **Clear now** button.
