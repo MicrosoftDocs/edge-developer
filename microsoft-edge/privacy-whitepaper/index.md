@@ -161,29 +161,29 @@ Google may collect some data associated with the Media Router extension. To unin
 <!-- ====================================================================== -->
 ## Collections
 
-The Collections feature in Microsoft Edge allows you to save web pages, text, images, and videos from the web. You can organize the content based on the projects, events, and interests that matter to you. You can also save notes in your collections and add notes to individual items as well. Collections uses the Microsoft Edge Entity Extraction service to enrich the content that you collect by including thumbnails and metadata, such as price and star rating. For more information, see [Entity Extraction](#entity-extraction) below.
+The Collections feature in Microsoft Edge allows you to save web pages, text, images, and videos from the web. You can organize the content based on the projects, events, and interests that matter to you. You can also save notes in your collections and add notes to individual items as well. Collections uses the Microsoft Edge Entity Extraction service to enrich the content that you collect by including thumbnails and metadata, such as price and star rating. For more information, see [Entity extraction](#entity-extraction) below.
 
 Collections storage and feature availability depend on your Microsoft Edge Sign-in and Sync settings.
 
 
 <!-- ------------------------------ -->
-#### Signed-in with Personal Account and Sync Enabled
+#### Signed-in with a personal account, and Sync enabled
 
-When you sign in to Microsoft Edge with a personal Microsoft Account (MSA) and enable Sync, your collections, saved items, notes, and images are automatically saved on Microsoft cloud for free. You can access your collections from Microsoft Edge on any device where you're signed in with sync enabled. You can even view and manage your collections online in any browser by visiting the [Collections portal](https://www.bing.com/saves) at Bing.com. Collections also enhance your experience with a personalized interest feed, if your personalization settings support this feature.
+When you sign in to Microsoft Edge with a personal Microsoft Account (MSA) and enable Sync, your collections, saved items, notes, and images are automatically saved on Microsoft cloud for free. You can access your collections from Microsoft Edge on any device where you're signed in with Sync enabled. You can even view and manage your collections online in any browser by visiting the [Collections portal](https://www.bing.com/saves) at Bing.com. Collections also enhance your experience with a personalized interest feed, if your personalization settings support this feature.
 
-If you want to disable Collections for a signed-in profile using a personal account with sync enabled, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Show Collections and follow content creators in Microsoft Edge**.
-
-
-<!-- ------------------------------ -->
-#### Signed-in with Work or School Account and Sync Enabled
-
-If you're signed in with a work or school account and are syncing Collections, your collections, saved items, notes, and images are synced across devices. If you want to stop syncing your Collections, you can turn off sync for Collections from `edge://settings/profiles/sync`.
+If you want to disable Collections for a signed-in profile using a personal account with Sync enabled, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Show Collections and follow content creators in Microsoft Edge**.
 
 
 <!-- ------------------------------ -->
-#### Signed-out or Sync Disabled
+#### Signed-in with a work or school account, and Sync enabled
 
-When you don't sign in to Microsoft Edge, or when you sign in with sync disabled, all collections data is stored locally on the device, organized per Microsoft Edge profile.
+If you're signed in with a work or school account and are syncing Collections, your collections, saved items, notes, and images are synced across devices. If you want to stop syncing your Collections, you can turn off Sync for Collections from `edge://settings/profiles/sync`.
+
+
+<!-- ------------------------------ -->
+#### Signed-out, or Sync disabled
+
+When you don't sign in to Microsoft Edge, or when you sign in with Sync disabled, all collections data is stored locally on the device, organized per Microsoft Edge profile.
 
 Collections aren't available when using Guest mode.
 
