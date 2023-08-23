@@ -27,7 +27,7 @@ To create a PWA that supports push notifications:
 <!-- ====================================================================== -->
 ## Step 1 - Request the user's permission to receive push notifications
 
-Before you can send push notifications to your PWA, you must request permission from the user to receive messages.  To request permission, use the [Notification.requestPermission API](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission_static) in your client-side code, when the user clicks a button, for example:
+Before you can send push notifications to your PWA, you must request permission from the user to receive messages.  To request permission, use the [Notification.requestPermission API](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission_static) in your client-side code, such as when the user clicks a button:
 
 ```javascript
 button.addEventListener("click", () => {
@@ -55,7 +55,7 @@ To receive push events from your server, subscribe to push notifications by usin
 
 Before a new push subscription is created, Microsoft Edge checks whether the user has granted the PWA permission to receive notifications.
 
-If the user has not granted the PWA permission to receive notifications, the user is prompted by the browser for permission.  If the user doesn't grant permission to the browser, the request to `registration.pushManager.subscribe` throws a `DOMException`.
+If the user hasn't granted the PWA permission to receive notifications, the user is prompted by the browser for permission.  If the user doesn't grant permission to the browser, the request to `registration.pushManager.subscribe` throws a `DOMException`.
 
 The following code snippet shows how to subscribe to push notifications in your PWA:
 
@@ -99,7 +99,7 @@ function urlBase64ToUint8Array(base64String) {
 }
 ```
 
-The VAPID key mentioned in the previous code snippet is a public key that is used to identify the server that sends the push messages and encrypt the push message payload.  See [Step 3 - Send push messages from your server](#step-3---send-push-messages-from-your-server) for more information about VAPID keys.
+The VAPID key that's mentioned in the previous code snippet is a public key that's used to identify the server that sends the push messages and encrypt the push message payload.  See [Step 3 - Send push messages from your server](#step-3---send-push-messages-from-your-server) for more information about VAPID keys.
 
 
 <!-- ====================================================================== -->
@@ -107,7 +107,7 @@ The VAPID key mentioned in the previous code snippet is a public key that is use
 
 Your application needs VAPID (Voluntary Application Server Identification) keys in order to send push messages from your server to your PWA clients.  There are several VAPID key generators available online (for example, [Vapidkeys.com](https://vapidkeys.com)).
 
-Once you have a VAPID key, you can send push messages to your PWA clients by using the Web Push Protocol. To learn more about the protocol, see [The Web Push Protocol](https://web.dev/push-notifications-web-push-protocol/).
+Once you have a VAPID key, you can send push messages to your PWA clients by using [the Web Push Protocol](https://web.dev/push-notifications-web-push-protocol/).
 
 You can use a library to send push messages from your server, depending on the programming language you use.  For example, you can use the [web-push](https://github.com/web-push-libs/web-push) library if your server uses Node.js. Other libraries are available on the [WebPush libraries repo](https://github.com/web-push-libs/).
 
@@ -115,7 +115,7 @@ You can use a library to send push messages from your server, depending on the p
 <!-- ====================================================================== -->
 ## Step 4 - Display notifications when push messages are received
 
-After a subscription is created in your PWA (as shown in [Step 2 - Subscribe to push notifications](#step-2---subscribe-to-push-notifications)), add a `push` event handler in your service worker to handle push messages sent by your server.
+After a subscription is created in your PWA (as shown in [Step 2 - Subscribe to push notifications](#step-2---subscribe-to-push-notifications)), add a `push` event handler in your service worker to handle push messages that are sent by your server.
 
 The following code snippet shows how to display a notification when a push message is received:
 
