@@ -64,19 +64,19 @@ In the following figure, after you click
 <!-- ====================================================================== -->
 ## View only the CSS that is actually applied to an element
 
-The **Styles** panel shows you all of the rules that apply to an element, including declarations that have been overridden.  When you aren't interested in overridden declarations, use the **Computed** panel to view only the CSS that is actually being applied to an element.
+The **Styles** pane shows you all of the rules that apply to an element, including declarations that have been overridden.  When you aren't interested in overridden declarations, use the **Computed** pane to view only the CSS that is actually being applied to an element.
 
 1. [Select an element](#select-an-element).
 
-1. Go to the **Computed** panel in the **Elements** tool.
+1. Go to the **Computed** pane in the **Elements** tool.
 
-   On a wide DevTools window, the **Computed** panel doesn't exist.  The contents of the **Computed** panel are shown on the **Styles** panel.
+   On a wide DevTools window, the **Computed** pane doesn't exist.  The contents of the **Computed** pane are shown on the **Styles** pane.
 
    Inherited properties are opaque.
 
 1. To display all inherited values, select the **Show All** checkbox.
 
-   In the following figure, the **Computed** panel shows the CSS properties being applied to the currently selected `h1` element:
+   In the following figure, the **Computed** pane shows the CSS properties being applied to the currently selected `h1` element:
 
    ![The Computed panel](./reference-images/css-elements-computed-h1.png)
 
@@ -84,23 +84,23 @@ The **Styles** panel shows you all of the rules that apply to an element, includ
 <!-- ====================================================================== -->
 ## View CSS properties in alphabetical order
 
-Use the **Computed** panel.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
+Use the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
 
 
 <!-- ====================================================================== -->
 ## View inherited CSS properties
 
-Check the **Show All** checkbox in the **Computed** panel.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
+Check the **Show All** checkbox in the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
 
 
 <!-- ====================================================================== -->
 ## View an element's box model
 
-To view [the box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model) of an element, go to the **Styles** panel.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.
+To view [the box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model) of an element, go to the **Styles** pane.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.
 
 To change a value, double-click it.
 
-In the following figure, the **Box Model** diagram in the **Styles** panel shows the box model for the currently selected `h1` element.
+In the following figure, the **Box Model** diagram in the **Styles** pane shows the box model for the currently selected `h1` element.
 
 ![The Box Model diagram](./reference-images/css-elements-styles-h1-2.png)
 
@@ -108,15 +108,15 @@ In the following figure, the **Box Model** diagram in the **Styles** panel shows
 <!-- ====================================================================== -->
 ## Search and filter the CSS of an element
 
-Use the **Filter** text box on the **Styles** and **Computed** panels to search for specific CSS properties or values.
+Use the **Filter** text box on the **Styles** and **Computed** panes to search for specific CSS properties or values.
 
-To also search inherited properties in the **Computed** panel, check the **Show All** checkbox.
+To also search inherited properties in the **Computed** pane, check the **Show All** checkbox.
 
-In the following figure, the **Styles** panel is filtered to only show rules that include the search query `color`.
+In the following figure, the **Styles** pane is filtered to only show rules that include the search query `color`.
 
 ![Filter the Styles panel](./reference-images/css-elements-styles-filter-color.png)
 
-In the following figure, the **Computed** panel is filtered to only show declarations that include the search query `100%`.
+In the following figure, the **Computed** pane is filtered to only show declarations that include the search query `100%`.
 
 ![Filter the Computed panel](./reference-images/css-elements-computed-filter-100.png)
 
@@ -129,7 +129,7 @@ To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
 
 1. [Select an element](#select-an-element).
 
-1. On the **Elements** tool, go to the **Styles** tab.
+1. On the **Elements** tool, go to the **Styles** pane.
 
 1. Click **:hov**.
 
@@ -163,15 +163,15 @@ The **Coverage** tool shows you what CSS a page actually uses.
 
 1. Start typing `coverage`, and then select **Show Coverage**.  The **Coverage** tool appears.
 
-   Opening the Coverage tab from the Command Menu:
+   Opening the **Coverage** tool from the Command Menu:
 
-   ![Opening the Coverage tab from the Command Menu](./reference-images/css-console-command-menu-coverage.png)
+   ![Opening the Coverage tool from the Command Menu](./reference-images/css-console-command-menu-coverage.png)
 
-   The Coverage tab:
+   The **Coverage** tool:
 
-   ![The Coverage tab](./reference-images/css-console-qs-coverage-empty.png)
+   ![The Coverage tool](./reference-images/css-console-qs-coverage-empty.png)
 
-1. Click **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page](./reference-images/refresh-icon.png)).  The page refreshes and the **Coverage** tab provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
+1. Click **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page](./reference-images/refresh-icon.png)).  The page refreshes and the **Coverage** tool provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
 
    An overview of how much CSS (and JavaScript) is used and unused:
 
@@ -325,7 +325,7 @@ To instead add the rule in an existing stylesheet:
 
 By default, adding a style rule by clicking on **New Style Rule** inserts the new rule beneath the **element.style** rule in the `inspector-stylesheet` stylesheet.
 
-To add a style rule in a specific location of the **Styles** panel instead:
+To add a style rule in a specific location of the **Styles** pane instead:
 
 1. Hover on the style rule that is directly above where you want to add your new style rule.
 
@@ -353,13 +353,13 @@ To toggle a single declaration on or off:
 <!-- ====================================================================== -->
 ## Change colors with the Color Picker
 
-The **Color Picker** provides a GUI for changing `color` and `background-color` declarations.
+The **Color Picker** provides a user interface for changing `color` and `background-color` declarations.
 
 To open the **Color Picker**:
 
 1. [Select an element](#select-an-element).
 
-1. In the **Styles** panel, find the `color`, `background-color`, or similar declaration that you want to change.  To the left of the `color`, `background-color`, or similar value, there is a small square, which is a preview of the color.
+1. In the **Styles** pane, find the `color`, `background-color`, or similar declaration that you want to change.  To the left of the `color`, `background-color`, or similar value, there is a small square, which is a preview of the color.
 
    In the following figure, the small square to the left of `rgba(0, 0, 0, 0.7)` is a preview of that color.
 
@@ -407,13 +407,13 @@ See also:
 <!-- ====================================================================== -->
 ## Change angle value with the Angle Clock
 
-The **Angle Clock** provides a GUI for changing the angle amounts in CSS property values.
+The **Angle Clock** provides a user interface for changing the angle amounts in CSS property values.
 
 To open the **Angle Clock**:
 
 1. Select an element which includes an angle declaration. <!-- For example, select the text below. -->
 
-1. In the **Styles** tab, find the `transform` or `background` declaration that you want to change.  Click the **Angle Preview** box next to the angle value.
+1. In the **Styles** pane, find the `transform` or `background` declaration that you want to change.  Click the **Angle Preview** box next to the angle value.
 
    In the following figure, the small clock to the left of `100deg` is a preview of the angle.
 
@@ -424,6 +424,58 @@ To open the **Angle Clock**:
 1. Change the angle value by clicking on the **Angle Clock** circle, or scroll your mouse to increase or decrease the angle value by 1.
 
 There are more keyboard shortcuts to change the angle value.  Find out more in the [Styles pane keyboard shortcuts](../shortcuts/index.md#styles-pane-keyboard-shortcuts).
+
+
+<!-- ====================================================================== -->
+## Change box and text shadows with the Shadow Editor
+
+Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shadow` CSS property on an HTML element:
+
+1. [Select an element](#select-an-element) with a `box-shadow` or `text-shadow` declaration.
+
+   For example, open [the 1DIV demo page](https://microsoftedge.github.io/Demos/1DIV/dist/) in a new tab or window, and then select the `<div class="demos">` element in the **Elements** tool.
+
+1. In the **Styles** pane, find the `box-shadow` declaration in the `.demos` CSS rule, and click the **Open shadow editor** button (![The shadow editor button icon](./reference-images/shadow-editor-icon.png)).
+
+   The **Shadow Editor** appears:
+
+   ![The Shadow Editor](./reference-images/shadow-editor.png)
+
+1. Change the shadow properties:
+
+   * Click **Outset** or **Inset** to change the shadow type.
+   * Click and drag the handle in the chart to change the shadow offset.
+   * Use the **Blur** slider to change the amount of shadow blur.
+   * Use the **Spread** slider to change the amount of shadow spread.
+
+1. The changes are applied to the element in the page in real time:
+
+   ![The effect of changes made in the Shadow Editor](./reference-images/shadow-editor-changes.png)
+
+
+<!-- ====================================================================== -->
+## Edit animation and transition timings with the Easing Editor
+
+Use the **Easing Editor** to change the value of the `animation-timing-function` or `transition-timing-function` property on an HTML element:
+
+1. [Select an element](#select-an-element) that has a CSS animation or transition applied.
+
+   For example, open the [animated property demo page](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) in a new tab or window, and then select the `<div class="spinner">` element in the **Elements** tool.
+
+1. In the **Styles** pane, find the `animation` declaration in the `.bad .spinner` CSS rule, and click the **Open cubic bezier editor** button (![The cubic bezier editor button icon](./reference-images/easing-editor-icon.png)).
+
+   The **Easing Editor** appears:
+
+   ![The Easing Editor](./reference-images/easing-editor.png)
+
+1. Change the properties of the animation timing function:
+
+   * Choose one of the pre-defined timing functions from the list.
+   * Create your own timing function by dragging the cubic-bezier curve handles.
+
+1. The changes are applied to the element in the page in real time:
+
+   ![The effect of changes made in the Easing Editor](./reference-images/easing-editor-changes.png)
 
 
 <!-- ====================================================================== -->
