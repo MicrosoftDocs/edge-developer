@@ -18,12 +18,14 @@ ms.date: 08/18/2023
 <!-- Subtitle: You can now use Azure Active Directory for authentication instead of Personal Access Tokens (PATs). You can connect to multiple symbol servers and filter which sourcemaps you want DevTools to fetch. -->
 
 In Microsoft Edge 115, it's easier and more customizable to connect DevTools to Azure Artifacts symbol server.  In previous versions of Microsoft Edge, to authenticate to the symbol server, you had to generate Personal Access Tokens (PATs) in Azure DevOps and then paste them into DevTools. Now, as long as you're logged into Microsoft Edge using a work account, you can connect to the symbol server by using Azure Active Directory.
-<!-- todo: at "work account", specify eg: 
-a Microsoft account (MSA) that's a work account
+<!-- re: work account, possibly:
 enterprise customers who are signed into Microsoft Edge with a Microsoft Azure Active Directory (AAD) account
+a Microsoft account (MSA) that's a work account
 -->
 
 Additionally, you can now connect to multiple symbol servers, in case you need to fetch sourcemaps from different Azure DevOps organizations. You can also filter which sourcemaps you want DevTools to fetch from the symbol server, by specifying the sourcemap URLs in an inclusion or exclusion list.
+
+![Connecting to symbol server using Azure Active Directory from DevTools settings](./devtools-115-images/aad-symbol-server.png)
 
 In the **Filter behavior** text box, the following wildcards are supported:
 
@@ -32,18 +34,16 @@ In the **Filter behavior** text box, the following wildcards are supported:
 | ? | Matches a single character. |
 | * | Matches one or more of any character. |
 
-If you select **Exclusion List**, it attempts to look up any source maps for scripts except those that have a URL that matches one of the entries in the list.
+If you select **Exclusion List**, DevTools attempts to look up any source maps for scripts except those that have a URL that matches one of the entries in the list.
 
-If you select **Inclusion List**, it only attempts to look up source maps for scripts that have URLs that match one of the entries in the list.  For example, suppose you select **Inclusion List** in the **Filter behavior** dropdown list, and then enter the following in the **Filter behavior** text box:
+If you select **Inclusion List**, DevTools only attempts to look up source maps for scripts that have URLs that match one of the entries in the list.  For example, suppose you select **Inclusion List** in the **Filter behavior** dropdown list, and then enter the following in the **Filter behavior** text box:
 
 ```http
 https://cdn.contoso.com/*
 https://packages.contoso.com/*
 ```
 
-In this example, it only attempts to resolve source maps that match these two URL patterns, and doesn't attempt to load source maps for other scripts.  The [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) has been updated to show what has or hasn't been attempted.
-
-![Connecting to symbol server using Azure Active Directory from DevTools settings](./devtools-115-images/aad-symbol-server.png)
+In this example, DevTools only attempts to resolve source maps that match these two URL patterns, and doesn't attempt to load source maps for other scripts.  The [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) has been updated to show which URL lookups have or haven't been attempted.
 
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
