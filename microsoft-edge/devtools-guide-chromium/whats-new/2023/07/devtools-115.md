@@ -43,7 +43,9 @@ https://cdn.contoso.com/*
 https://packages.contoso.com/*
 ```
 
-In this example, DevTools only attempts to resolve source maps that match these two URL patterns, and doesn't attempt to load source maps for other scripts.  The [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) has been updated to show which URL lookups have or haven't been attempted:
+In this example, DevTools only attempts to resolve source maps that match these two URL patterns, and doesn't attempt to load source maps for other scripts.
+
+The [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) has also been updated, to show which URL lookups have or haven't been attempted:
 
 ![Source Map Monitor tool indicates source map URL lookups attempted](./devtools-115-images/source-maps-monitor.png)
 
