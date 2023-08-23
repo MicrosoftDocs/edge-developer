@@ -783,9 +783,9 @@ _new as of Microsoft Edge 118_
 Explains Console errors by using AI.
 <!-- todo: need text -->
 
-<!--
 See also:
-* []() -->
+* [Fix JavaScript errors that are reported in the Console](../console/console-debug-javascript.md)
+* [Console overview](../console/index.md)
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 118.
@@ -917,9 +917,9 @@ _new as of Microsoft Edge 118_
 Whether to use scope information from source maps.
 <!-- todo: need text -->
 
-<!--
 See also:
-* []() -->
+* [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
+* [Mapping minified code to your source code to show readable code](../sources/index.md#mapping-minified-code-to-your-source-code-to-show-readable-code) in _Sources tool overview_.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 118.
