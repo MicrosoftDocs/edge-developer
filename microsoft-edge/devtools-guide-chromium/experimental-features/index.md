@@ -775,23 +775,6 @@ Status:
 *  This checkbox is present in Microsoft Edge Stable 116.
 
 
-<!-- ====================================================================== -->
-## Explain Console errors with AI
-
-_new as of Microsoft Edge 118_
-
-Explains Console errors by using AI.
-<!-- todo: need text -->
-
-See also:
-* [Fix JavaScript errors that are reported in the Console](../console/console-debug-javascript.md)
-* [Console overview](../console/index.md)
-
-Status:
-*  This checkbox is present in Microsoft Edge Canary 118.
-*  This checkbox is not present in Microsoft Edge Stable 116.
-
-
 <!-- ============================================================================================================================================ -->
 <!-- >> [!WARNING]
 > These experiments are particularly unstable. Enable at your own risk. -->
