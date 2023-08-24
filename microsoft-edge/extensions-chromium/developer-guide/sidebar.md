@@ -5,15 +5,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/18/2023
+ms.date: 08/24/2023
 ---
 # Extensions in the Microsoft Edge sidebar
-
-The sidebar extensions feature is being rolled out to a growing user base for all channels of Microsoft Edge.<!-- todo: delete sentence -->
 
 As a Microsoft Edge extension developer, use this article to make your new or existing Microsoft Edge extension appear in the sidebar.  Any extension can use the sidebar in addition to its other UI.
 
 ![The sidebar for a Microsoft Edge extension](./sidebar-images/sidebar-screenshot.png)
+
+Note: The sidebar extensions feature is being rolled out to a growing user base for all channels of Microsoft Edge.<!-- todo: delete sentence -->
 
 By using the Sidebar API for extensions, you can enhance the browsing experience by enabling users to view additional information alongside the main content of a webpage.
 
