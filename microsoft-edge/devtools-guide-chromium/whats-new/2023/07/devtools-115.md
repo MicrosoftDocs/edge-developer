@@ -129,7 +129,6 @@ See also:
 
 Microsoft Edge 115 also includes the following updates from the Chromium project:
 
-<!-- todo: delete some links? -->
 * [Elements improvements](https://developer.chrome.com/blog/new-in-devtools-115/#elements)
    * [New CSS subgrid badge](https://developer.chrome.com/blog/new-in-devtools-115/#subgrid)
    * [Selector specificity in tooltips](https://developer.chrome.com/blog/new-in-devtools-115/#specificity)
@@ -140,6 +139,7 @@ Microsoft Edge 115 also includes the following updates from the Chromium project
 * [Application > Bounce Tracking Mitigations](https://developer.chrome.com/blog/new-in-devtools-115/#bounce-tracking)
 * [Ignore content scripts by default](https://developer.chrome.com/blog/new-in-devtools-115/#content-script)
 * [Network > Response pretty-printing by default](https://developer.chrome.com/blog/new-in-devtools-115/#network)
+
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
