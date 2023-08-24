@@ -137,7 +137,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2ExperimentalNewWindowRequestedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs2?view=webview2-1.0.2057-prerelease&preserve-view=true)
-    * [ICoreWebView2ExperimentalNewWindowRequestedEventArgs2::get_OriginalSourceFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs2?view=webview2-1.0.2057-prerelease&preserve-view=true#get_originalsourceframeinfo)
+    * [ICoreWebView2ExperimentalNewWindowRequestedEventArgs2::get_OriginalSourceFrameInfo property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs2?view=webview2-1.0.2057-prerelease&preserve-view=true#get_originalsourceframeinfo)
 
 
 <!-- ---------- -->
