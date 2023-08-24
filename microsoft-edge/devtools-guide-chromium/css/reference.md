@@ -462,7 +462,7 @@ Use the **Easing Editor** to change the value of the `animation-timing-function`
 
    For example, open the [animated property demo page](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) in a new tab or window, and then select the `<div class="spinner">` element in the **Elements** tool.
 
-1. In the **Styles** pane, find the `animation` declaration in the `.bad .spinner` CSS rule, and click the **Open cubic bezier editor** button (![The cubic bezier editor button icon](./reference-images/easing-editor-icon.png)).
+1. In the **Styles** pane, find the `animation` declaration in the `.bad .spinner` CSS rule, and click the **Open cubic bezier editor** (![The cubic bezier editor button icon](./reference-images/easing-editor-icon.png)) button.
 
    The **Easing Editor** appears:
 
