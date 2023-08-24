@@ -22,7 +22,7 @@ In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and 
 <!-- ------------------------------ -->
 #### Requires building a custom widget for the PWA
 
-An existing PWA cannot simply be placed into the widget dashboard as-is, like you can with the Microsoft Edge Sidebar.  Instead, you need to build a custom widget experience that's appropriate for the widget host, which currently is the Win11 Widgets Board.  (There may be other widget hosts in the future.)  The Win11 Widgets Board requires widgets to be built by using Adaptive Card templates instead of HTML and JavaScript, so the widget has to be designed separately from the rest of the app's UI.
+An existing PWA cannot simply be placed into the widget dashboard as-is, like you can with the Microsoft Edge Sidebar.  Instead, you need to build a custom widget experience that's appropriate for the widget host, which currently is the Windows 11 Widgets Board.  (There may be other widget hosts in the future.)  The Windows 11 Widgets Board requires widgets to be built by using Adaptive Card templates instead of HTML and JavaScript, so the widget has to be designed separately from the rest of the app's UI.
 
 See also:
 * [Build PWAs for the sidebar in Microsoft Edge](./sidebar.md)
@@ -35,9 +35,12 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Install WinAppSDK
+## Install WinAppSDK and enable Developer Mode
 
-To enable developing widgets on your local machine, install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
+To enable developing and testing widgets on your local machine:
+
+* Install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
+* Enable Developer Mode in Windows 11: go to **Settings** > **For developers** and then enable **Developer Mode**.
 
 
 <!-- ====================================================================== -->
@@ -400,7 +403,7 @@ async function updateWidget(widget) {
 
 PWAmp is a music player PWA demo application that defines a widget. The PWAmp widget lets users visualize the current song and play the previous or next songs.
 
-1. If not done yet, install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
+1. If not done yet, install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12) and enable Developer Mode in Windows 11.
 
 1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) and install the app on Windows 11.
 
