@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/17/2023
+ms.date: 08/23/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -112,33 +112,40 @@ Release Date: August 23, 2023
 
 [NuGet package for WebView2 SDK 1.0.2057-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2057-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 118.0.2057.0 or higher.
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 118.0.2057.0 or higher.<!-- todo: is .0 correct?  usually a nonzero number -->
 
 
 <!-- ------------------------------ -->
 #### General
 
+
+<!-- ---------- -->
 ###### Experimental features
 
-* Supports identifying the source by adding source frame info to `NewWindowRequested`
+* Added source frame info to `NewWindowRequested`, to support identifying the source:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
+
 * `CoreWebView2NewWindowRequestedEventArgs` Class
     * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs.originalsourceframeinfo?view=webview2-dotnet-1.0.2057-prerelease&preserve-view=true)
 
 #### [WinRT/C#](#tab/winrtcsharp)
+
 * `CoreWebView2NewWindowRequestedEventArgs` Class
     * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2newwindowrequestedeventargs#originalsourceframeinfo?view=webview2-winrt-1.0.2057-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
+
 * [ICoreWebView2ExperimentalNewWindowRequestedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs2?view=webview2-1.0.2057-prerelease&preserve-view=true)
     * [ICoreWebView2ExperimentalNewWindowRequestedEventArgs2::get_OriginalSourceFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs2?view=webview2-1.0.2057-prerelease&preserve-view=true#get_originalsourceframeinfo)
+
+
 <!-- ---------- -->
 ###### Bug fixes
 
-* Disable CRX install in WebView2. (Runtime-Only)
-* Fixed an initialization failure when the app has a DPI awareness compatibility setting applied. (Runtime-Only)  ([Issue 3008](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3008))
-* Fixed a bug where visual hosted owned windows couldn't take character input. (Runtime-Only)
+* Disabled installing CRX in WebView2. (Runtime-only)
+* Fixed an initialization failure when the app has a DPI awareness compatibility setting applied. (Runtime-only)  ([Issue 3008](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3008))
+* Fixed a bug where visual hosted owned windows couldn't take character input. (Runtime-only)
 
 
 <!-- ====================================================================== -->
