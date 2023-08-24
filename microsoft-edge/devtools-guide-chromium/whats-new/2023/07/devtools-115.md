@@ -138,11 +138,8 @@ Microsoft Edge 115 also includes the following updates from the Chromium project
    * [CSS syntax highlighting](https://developer.chrome.com/blog/new-in-devtools-115/#css)
    * [Shortcut to set conditional breakpoints](https://developer.chrome.com/blog/new-in-devtools-115/#breakpoint)
 * [Application > Bounce Tracking Mitigations](https://developer.chrome.com/blog/new-in-devtools-115/#bounce-tracking)
-* [Lighthouse 10.2.0](https://developer.chrome.com/blog/new-in-devtools-115/#lighthouse)
 * [Ignore content scripts by default](https://developer.chrome.com/blog/new-in-devtools-115/#content-script)
 * [Network > Response pretty-printing by default](https://developer.chrome.com/blog/new-in-devtools-115/#network)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-115/#misc)
-
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
