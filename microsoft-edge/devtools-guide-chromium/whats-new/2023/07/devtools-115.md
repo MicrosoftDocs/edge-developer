@@ -49,7 +49,7 @@ https://cdn.contoso.com/*
 https://packages.contoso.com/*
 ```
 
-In that example, DevTools only attempts to resolve source maps that match these two URL patterns, and doesn't attempt to load source maps for other scripts.
+In this example, DevTools only attempts to resolve source maps that match these two URL patterns, and doesn't attempt to load source maps for other scripts.
 
 
 <!-- ------------------------------ -->
@@ -57,7 +57,9 @@ In that example, DevTools only attempts to resolve source maps that match these 
 
 The [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) has also been updated, to show which URL lookups have or haven't been attempted.  For example:
 
-1. In DevTools **Settings > Symbol Server**, double-click the **microsoft** org to select it.
+1. In DevTools **Settings > Symbol Server**, in the **Authorization mode** dropdown list, select **Azure Active Directory**.
+
+1. Double-click the **microsoft** org to select it.
 
 1. In the **Filter behavior** dropdown list, select **Exclusion List**.
 
