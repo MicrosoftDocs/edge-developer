@@ -51,25 +51,7 @@ https://packages.contoso.com/*
 
 In this example, DevTools only attempts to resolve source maps that match these two URL patterns, and doesn't attempt to load source maps for other scripts.
 
-
-<!-- ------------------------------ -->
-#### Source Maps Monitor tool
-
-The [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) has also been updated, to show which URL lookups have or haven't been attempted.  For example:
-
-1. In DevTools **Settings > Symbol Server**, in the **Authorization mode** dropdown list, select **Azure Active Directory**.
-
-1. Double-click the **microsoft** org to select it.
-
-1. In the **Filter behavior** dropdown list, select **Exclusion List**.
-
-1. In the **Filter behavior** text box, enter a domain with wildcard (`https://ryanseddon.com/*`) to exclude.
-
-1. Close DevTools **Settings**.
-
-As a result, the **Source Maps Monitor** tool indicates excluded source map URL lookup attempts:
-
-![Source Maps Monitor tool indicates source map URL lookups attempted](./devtools-115-images/source-maps-monitor.png)
+<!-- The [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) has also been updated, to show which URL lookups have or haven't been attempted. -->
 
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
@@ -77,9 +59,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Improvements for the Memory tool
+## Memory tool enhancements
 
-<!-- Subtitle: The "Allocation instrumentation on timeline" profiling type in the Memory tool now samples the heap at variable intervals, depending on the size of the heap. Heap snapshots are now more accurate and don't show objects that have been garbage-collected. -->
+<!-- Subtitle: The "Allocation instrumentation on timeline" profiling type in the Memory tool now samples the heap at variable intervals, depending on the size of the heap. Heap snapshots are now more accurate and don't show objects that should have been garbage-collected. -->
 
 In previous versions of Microsoft Edge, in the **Memory** tool, when using the **Allocation instrumentation on timeline** option, the **Memory** tool takes a sample of the heap every 50 milliseconds.  However, taking a sample of the heap scales with the size of the heap, so with a heap size of 200 MB, the sample actually takes 1.5 seconds to generate.  As a result, there's little time left on the main thread for your website, outside of generating heap samples.  When **Allocation instrumentation on timeline** is running, it might look like your web content is hanging or blocked.
 
