@@ -129,7 +129,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 * `CoreWebView2NewWindowRequestedEventArgs` Class
     * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs.originalsourceframeinfo?view=webview2-dotnet-1.0.2057-prerelease&preserve-view=true)
 
-#### [WinRT/C#](#tab/winrtcsharp)
+##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2NewWindowRequestedEventArgs` Class
     * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2newwindowrequestedeventargs#originalsourceframeinfo?view=webview2-winrt-1.0.2057-prerelease&preserve-view=true)
