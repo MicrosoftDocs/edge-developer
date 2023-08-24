@@ -120,7 +120,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Experimental features
 
-* Supports identifying the source for `NewWindowRequested` by adding source frame info
+* Supports identifying the source by adding source frame info to `NewWindowRequested`
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 * `CoreWebView2NewWindowRequestedEventArgs` Class
