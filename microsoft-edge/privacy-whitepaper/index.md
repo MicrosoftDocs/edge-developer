@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 08/21/2023
+ms.date: 08/23/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -169,27 +169,31 @@ Collections storage and feature availability depend on your Microsoft Edge Sign-
 
 
 <!-- ------------------------------ -->
-#### Signed in with a personal account, and Sync enabled
+#### Signed in with a personal account
 
-When you sign in to Microsoft Edge with a personal Microsoft Account (MSA) and enable Sync, your collections, saved items, notes, and images are automatically saved on Microsoft cloud for free. You can access your collections from Microsoft Edge on any device where you're signed in with Sync enabled. You can even view and manage your collections online in any browser by visiting the [Collections portal](https://www.bing.com/saves) at Bing.com. Collections also enhance your experience with a personalized interest feed, if your personalization settings support this feature.
+When you sign in to Microsoft Edge with a personal Microsoft Account (MSA), your collections, saved items, notes, and images are automatically saved on Microsoft cloud for free. You can access your collections from Microsoft Edge on any device where you're signed in. You can even view and manage your collections online in any browser by visiting the [Collections portal](https://www.bing.com/saves) at Bing.com. Collections also enhance your experience with a personalized interest feed, if your personalization settings support this feature.
+
+If you want to disable Collections for a signed-in profile using a personal account, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Show Collections and follow content creators in Microsoft Edge**.
+
+When you sign in with a personal account and Sync for Collections is disabled, all collections data is stored locally on the device, organized per Microsoft Edge profile.
 
 You cannot access Collections from an InPrivate window while signed in with a personal account.
 
-If you want to disable Collections for a signed-in profile using a personal account with Sync enabled, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Show Collections and follow content creators in Microsoft Edge**.
-
 
 <!-- ------------------------------ -->
-#### Signed in with a work or school account, and Sync enabled
+#### Signed in with a work or school account
 
 If you're signed in with a work or school account and are syncing Collections, your collections, saved items, notes, and images are synced across devices. If you want to stop syncing your Collections, you can turn off Sync for Collections from `edge://settings/profiles/sync`.
+
+When you sign in with a work or school account and Sync for Collections is disabled, all collections data is stored locally on the device, organized per Microsoft Edge profile.
 
 You can access Collections from an InPrivate window while signed in with a work or school account.
 
 
 <!-- ------------------------------ -->
-#### Signed-out, or Sync disabled
+#### Signed-out
 
-When you don't sign in to Microsoft Edge, or when you sign in with Sync disabled, all collections data is stored locally on the device, organized per Microsoft Edge profile.
+When you don't sign in to Microsoft Edge, all collections data is stored locally on the device, organized per Microsoft Edge profile.
 
 You can access Collections from an InPrivate window when using a signed-out profile.
 
