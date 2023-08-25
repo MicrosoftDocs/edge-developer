@@ -435,7 +435,7 @@ Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shado
 
    For example, open [the 1DIV demo page](https://microsoftedge.github.io/Demos/1DIV/dist/) in a new tab or window, and then select the `<div class="demos">` element in the **Elements** tool.
 
-1. In the **Styles** pane, find the `box-shadow` declaration in the `.demos` CSS rule, and click the **Open shadow editor** button (![The shadow editor button icon](./reference-images/shadow-editor-icon.png)).
+1. In the **Styles** pane, find the `box-shadow` declaration in the `.demos` CSS rule, and click the **Open shadow editor** (![The shadow editor button icon](./reference-images/shadow-editor-icon.png)) button.
 
    The **Shadow Editor** appears:
 
@@ -448,7 +448,7 @@ Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shado
    * Use the **Blur** slider to change the amount of shadow blur.
    * Use the **Spread** slider to change the amount of shadow spread.
 
-1. The changes are applied to the element in the page in real time:
+   The changes are applied to the element in the page in real time:
 
    ![The effect of changes made in the Shadow Editor](./reference-images/shadow-editor-changes.png)
 
@@ -456,7 +456,7 @@ Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shado
 <!-- ====================================================================== -->
 ## Edit animation and transition timings with the Easing Editor
 
-Use the **Easing Editor** to change the value of the `animation-timing-function` or `transition-timing-function` property on an HTML element:
+Use the **Easing Editor** to change the value of the [animation-timing-function](https://developer.mozilla.org/docs/Web/CSS/animation-timing-function) or [transition-timing-function](https://developer.mozilla.org/docs/Web/CSS/transition-timing-function) property on an HTML element:
 
 1. [Select an element](#select-an-element) that has a CSS animation or transition applied.
 
@@ -473,7 +473,7 @@ Use the **Easing Editor** to change the value of the `animation-timing-function`
    * Choose one of the pre-defined timing functions from the list.
    * Create your own timing function by dragging the cubic-bezier curve handles.
 
-1. The changes are applied to the element in the page in real time:
+   The changes are applied to the element in the page in real time:
 
    ![The effect of changes made in the Easing Editor](./reference-images/easing-editor-changes.png)
 
