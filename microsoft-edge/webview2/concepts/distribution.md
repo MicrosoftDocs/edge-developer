@@ -10,16 +10,6 @@ ms.date: 08/21/2023
 ---
 # Distribute your app and the WebView2 Runtime
 
-<!-- todo: 
-Packaged apps can declare a dependency on WebView2 and it'll get installed if necessary. Mention this option, it's a simpler and more attractive option for many devs. No need to use Evergreen Bootstrapper, Evergreen Standalone Installer or SelfContained (Fixed Version) distribution.
-
-Update this page to include this option
-
-See https://learn.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-win32dependencies-externaldependency
-
-(that has an example explicitly citing WebView2)
--->
-
 When releasing an app that uses Microsoft Edge WebView2, you need distribute the WebView2 Runtime, either by distributing the automatically updated _Evergreen_ Runtime, or by distributing a _Fixed Version_ of the Runtime.
 
 A WebView2 app depends on the WebView2 Runtime on client machines.  When you distribute your WebView2 app, you need to take into account how the WebView2 Runtime is distributed to and updated on client machines.
@@ -169,6 +159,8 @@ Only one installation of the Evergreen WebView2 Runtime is needed for all Evergr
    *  Or, download the bootstrapper and package it with your WebView2 app.
 
 *  For offline clients: _WebView2 Runtime Standalone Installer_ is a full installer that installs the Evergreen WebView2 Runtime in offline environments.
+
+*  If you're using App Installer to deploy MSIX applications, you can specify the WebView2 Runtime as a dependency, to have it be installed with the application.<!-- (instead of using the Evergreen Bootstrapper, Evergreen Standalone Installer, or Fixed Version (Self-Contained) distribution).-->  For details about how to do this, see [win32dependencies:ExternalDependency (Windows 10, Windows 11)](/uwp/schemas/appxpackage/uapmanifestschema/element-win32dependencies-externaldependency) in the App package manifest docs.  See also [Install Windows 10 apps with App Installer](/windows/msix/app-installer/app-installer-root).
 
 
 #### Installing the Runtime as per-machine or per-user
