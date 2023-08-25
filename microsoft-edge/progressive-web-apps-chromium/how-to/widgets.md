@@ -40,7 +40,13 @@ See also:
 To enable developing and testing widgets on your local machine:
 
 * Install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
-* Enable Developer Mode in Windows 11: go to **Settings** > **For developers** and then enable **Developer Mode**.
+* Enable Developer Mode in Windows 11:
+
+  1. Open **Settings**.
+  1. In the **Find a setting** textbox, enter `developer`, and then click **Use developer features**.
+  1. Enable **Developer Mode**:
+
+     ![The Developer settings of Windows 11](./widgets-images/developer-mode.png)
 
 
 <!-- ====================================================================== -->
