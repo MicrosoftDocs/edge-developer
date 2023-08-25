@@ -161,14 +161,12 @@ The **Coverage** tool shows you what CSS a page actually uses.
 
 1. Open the [Command Menu](../command-menu/index.md) by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS), while DevTools has focus.
 
-1. Start typing `coverage`, and then select **Show Coverage**.  The **Coverage** tool appears.
-
-   Opening the **Coverage** tool from the Command Menu:
-
+1. Start typing `coverage`, and then select **Show Coverage**:
+   
    ![Opening the Coverage tool from the Command Menu](./reference-images/css-console-command-menu-coverage.png)
-
-   The **Coverage** tool:
-
+   
+   The **Coverage** tool appears:
+   
    ![The Coverage tool](./reference-images/css-console-qs-coverage-empty.png)
 
 1. Click **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page](./reference-images/refresh-icon.png)).  The page refreshes and the **Coverage** tool provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
@@ -443,10 +441,10 @@ Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shado
 
 1. Change the shadow properties:
 
-   * Click **Outset** or **Inset** to change the shadow type.
-   * Click and drag the handle in the chart to change the shadow offset.
-   * Use the **Blur** slider to change the amount of shadow blur.
-   * Use the **Spread** slider to change the amount of shadow spread.
+   * Type (only for box-shadow). Pick **Outset** or **Inset**.
+   * X and Y offsets. Drag the blue dot or specify values.
+   * Blur. Drag the slider or specify a value.
+   * Spread (only for box-shadow). Drag the slider or specify a value.
 
    The changes are applied to the element in the page in real time:
 
@@ -461,6 +459,8 @@ Use the **Easing Editor** to change the value of the [animation-timing-function]
 1. [Select an element](#select-an-element) that has a CSS animation or transition applied.
 
    For example, open the [animated property demo page](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) in a new tab or window, and then select the `<div class="spinner">` element in the **Elements** tool.
+
+   The red and green boxes on this demo page are two different CSS animations. Both animations run with CSS, using the `animation` CSS property, and define an `ease-in-out` timing function.
 
 1. In the **Styles** pane, find the `animation` declaration in the `.bad .spinner` CSS rule, and click the **Open cubic bezier editor** (![The cubic bezier editor button icon](./reference-images/easing-editor-icon.png)) button.
 
