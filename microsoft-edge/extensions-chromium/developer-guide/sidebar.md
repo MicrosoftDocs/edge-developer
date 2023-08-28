@@ -13,7 +13,7 @@ As a Microsoft Edge extension developer, use this article to make your new or ex
 
 ![The sidebar for a Microsoft Edge extension](./sidebar-images/sidebar-screenshot.png)
 
-Note: The sidebar extensions feature is being rolled out to a growing user base for all channels of Microsoft Edge.<!-- todo: delete sentence -->
+Note: The sidebar extensions feature is being rolled out to a growing user base for all channels of Microsoft Edge.<!-- todo: after rollout is complete, delete sentence -->
 
 By using the Sidebar API for extensions, you can enhance the browsing experience by enabling users to view additional information alongside the main content of a webpage.
 
@@ -225,7 +225,7 @@ Users can click the **Open in sidebar** icon (![Open in sidebar icon](./sidebar-
 
 ![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
 
-Or, users can click the extension's custom icon in the toolbar, if it's enabled.  In this example, the extension's custom icon is a circle (![Extension's custom icon](./sidebar-images/custom-icon-for-demo-extension.png)):
+Or, users can click the extension's custom icon in the toolbar, if it's enabled.  This user experience requires that the extension has enabled the shortcut icon to open the sidebar, as described in [Enable the extension's shortcut icon to open the sidebar](#enable-the-extensions-shortcut-icon-to-open-the-sidebar) above.  In this example, the extension's custom icon is a circle (![Extension's custom icon](./sidebar-images/custom-icon-for-demo-extension.png)):
 
 ![Clicking the extension's icon in the toolbar](./sidebar-images/left-click-toolbar-icon.png)
 
@@ -245,7 +245,7 @@ The extension's icon appears in the toolbar if the user has clicked the **Show i
 <!-- ---------- -->
 ###### By pressing a keyboard shortcut
 
-Users can press a keyboard shortcut, if the action command is enabled and the action icon is enabled.
+Users can press a keyboard shortcut, if the action command is enabled and the action icon is enabled to open the sidebar.
 
 * To enable the action command, see [Action commands](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands) in _chrome.commands_ in API reference.
 * To enable the action icon, see [Open the side panel by clicking the toolbar icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) in _chrome.sidePanel_ in API reference.
@@ -273,7 +273,6 @@ See [Types](https://developer.chrome.com/docs/extensions/reference/sidePanel/#ty
 <!-- ====================================================================== -->
 ## See also
 
-* [chrome.sidePanel Types and Methods](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type) API Reference at `developer.chrome.com`.
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
 * [Declare API permissions in extension manifests](../developer-guide/declare-permissions.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
