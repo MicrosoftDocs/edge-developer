@@ -136,14 +136,14 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 
 
 <!-- ====================================================================== -->
-## 1.0.2057-prerelease
+## 1.0.2065-prerelease
 <!-- todo: finalize Prerelease version number globally in this section incl. links -->
 
 Release Date: August 29, 2023<!-- todo: finalize date -->
 
-[NuGet package for WebView2 SDK 1.0.2057-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2057-prerelease)<!-- todo: finalize version number 2x -->
+[NuGet package for WebView2 SDK 1.0.2065-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2065-prerelease)<!-- todo: finalize version number 2x -->
 
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 118.0.2057.0 or higher.<!-- todo: finalize version number -->
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 118.0.2065.0 or higher.<!-- todo: finalize version number -->
 
 
 <!-- ------------------------------ -->
@@ -158,17 +158,17 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2NewWindowRequestedEventArgs` Class
-    * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs.originalsourceframeinfo?view=webview2-dotnet-1.0.2057-prerelease&preserve-view=true)
+    * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs.originalsourceframeinfo?view=webview2-dotnet-1.0.2065-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2NewWindowRequestedEventArgs` Class
-    * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2newwindowrequestedeventargs#originalsourceframeinfo?view=webview2-winrt-1.0.2057-prerelease&preserve-view=true)
+    * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2newwindowrequestedeventargs#originalsourceframeinfo?view=webview2-winrt-1.0.2065-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ExperimentalNewWindowRequestedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs2?view=webview2-1.0.2057-prerelease&preserve-view=true)
-    * [ICoreWebView2ExperimentalNewWindowRequestedEventArgs2::get_OriginalSourceFrameInfo property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs2?view=webview2-1.0.2057-prerelease&preserve-view=true#get_originalsourceframeinfo)
+* [ICoreWebView2ExperimentalNewWindowRequestedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs2?view=webview2-1.0.2065-prerelease&preserve-view=true)
+    * [ICoreWebView2ExperimentalNewWindowRequestedEventArgs2::get_OriginalSourceFrameInfo property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs2?view=webview2-1.0.2065-prerelease&preserve-view=true#get_originalsourceframeinfo)
 
 ---
 
