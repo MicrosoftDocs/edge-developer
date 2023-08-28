@@ -132,6 +132,8 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 * Fixed a bug where the WebView2 content sometimes renders at the incorrect size after changing the display configuration (such as laptop sleeping; remoting; or connecting or disconnecting an external display).  (Runtime-only)  ([Issue 3429](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3429))
 * Fixed a bug where a bluescreen happens when using WebView2 apps on certain hardware configurations.  (Runtime-only)  ([Issue 3679](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3679))
 
+<!-- end of August 2023 Release SDK -->
+
 
 <!-- ====================================================================== -->
 ## 1.0.2057-prerelease
@@ -175,8 +177,10 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ###### Bug fixes
 
 * Disabled installing CRX in WebView2. (Runtime-only)
-* Fixed an initialization failure when the app has a DPI awareness compatibility setting applied. (Runtime-only)  ([Issue 3008](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3008))
-* Fixed a bug where visual hosted owned windows couldn't take character input. (Runtime-only)
+* Fixed an initialization failure when the app has a DPI awareness compatibility setting applied.  (Runtime-only)  ([Issue 3008](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3008))
+* Fixed a bug where visual hosted owned windows couldn't take character input.  (Runtime-only)
+
+<!-- end of August 2023 Prerelease SDK -->
 
 
 <!-- ====================================================================== -->
@@ -187,6 +191,7 @@ Release Date: July 24, 2023
 [NuGet package for WebView2 SDK 1.0.1901.177](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1901.177)
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 115.0.1901.177 or higher.
+
 
 <!-- ------------------------------ -->
 #### General
@@ -248,7 +253,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 * Fixed a bug where the entire toolbar is blank when hiding the Bookmarks, Search, and PageSelector buttons simultaneously.  (Runtime-only)  [Issue 2866](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2866)
 
-<!-- end of ## 1.0.1901.177 July -->
+<!-- end of July 2023 Release SDK -->
 
 
 <!-- ====================================================================== -->
@@ -445,7 +450,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 * Removed the **Hide all annotations** option in PDF **Settings and more**.  (Runtime-only)
 * Removed the **Show all saved passwords** context menu item.  (Runtime-only)
 
-<!-- end of ## 1.0.1988-prerelease July -->
+<!-- end of July 2023 Prerelease SDK -->
 
 
 <!-- ====================================================================== -->
