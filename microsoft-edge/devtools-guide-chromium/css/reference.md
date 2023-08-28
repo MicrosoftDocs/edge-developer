@@ -435,16 +435,23 @@ Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shado
 
 1. In the **Styles** pane, find the `box-shadow` declaration in the `.demos` CSS rule, and click the **Open shadow editor** (![The shadow editor button icon](./reference-images/shadow-editor-icon.png)) button.
 
-   The **Shadow Editor** appears:
+   The **Shadow Editor** opens:
 
    ![The Shadow Editor](./reference-images/shadow-editor.png)
 
-1. Change the shadow properties:
+1. Change the shadow properties, as follows:
 
-   * Type (only for box-shadow). Pick **Outset** or **Inset**.
-   * X and Y offsets. Drag the blue dot or specify values.
-   * Blur. Drag the slider or specify a value.
-   * Spread (only for box-shadow). Drag the slider or specify a value.
+   | Property | How to change |
+   |---|---|
+   | **Type** | Select **Outset** or **Inset**.  Only for `box-shadow`. |
+   | **X offset** | Drag the blue dot, or specify a value. |
+   | **Y offset** | Drag the blue dot, or specify a value. |
+   | **Blur** | Drag the slider or specify a value. |
+   | **Spread** | Drag the slider or specify a value.  Only for `box-shadow`. |
+   <!-- todo: explain the meaning of each property, not only how to change the value.  change column heading to:
+   | Property | Description |
+   | Property | Description and how to change |
+   -->
 
    The changes are applied to the element in the page in real time:
 
