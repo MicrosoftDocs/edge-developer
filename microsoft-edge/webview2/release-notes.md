@@ -137,13 +137,12 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 
 <!-- ====================================================================== -->
 ## 1.0.2065-prerelease
-<!-- todo: finalize Prerelease version number globally in this section incl. links -->
 
-Release Date: August 29, 2023<!-- todo: finalize date -->
+Release Date: August 29, 2023
 
-[NuGet package for WebView2 SDK 1.0.2065-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2065-prerelease)<!-- todo: finalize version number 2x -->
+[NuGet package for WebView2 SDK 1.0.2065-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2065-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 118.0.2065.0 or higher.<!-- todo: finalize version number -->
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 118.0.2065.0 or higher.
 
 
 <!-- ------------------------------ -->
@@ -153,6 +152,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 <!-- ---------- -->
 ###### Experimental features
 
+
+<!-- ------------------------------ -->
 * Added source frame info to `NewWindowRequested`, to support identifying the source:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
