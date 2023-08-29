@@ -431,9 +431,9 @@ Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shado
 
 1. [Select an element](#select-an-element) with a `box-shadow` or `text-shadow` declaration.
 
-   For example, open [the 1DIV demo page](https://microsoftedge.github.io/Demos/1DIV/dist/) in a new tab or window, and then select the `<div class="demos">` element in the **Elements** tool.
+   For example, open [the 1DIV demo page](https://microsoftedge.github.io/Demos/1DIV/dist/) in a new tab or window, right-click the page and select **Inspect** to open DevTools, and then in the **Elements** tool, select the `<div class="demos">` element.
 
-1. In the **Styles** pane, find the `box-shadow` declaration in the `.demos` CSS rule, and click the **Open shadow editor** (![The shadow editor button icon](./reference-images/shadow-editor-icon.png)) button.
+1. In the **Styles** pane, in the `.demos` CSS rule, find the `box-shadow` declaration, and then click its **Open shadow editor** (![The shadow editor button icon](./reference-images/shadow-editor-icon.png)) button.
 
    The **Shadow Editor** opens:
 
@@ -444,16 +444,16 @@ Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shado
    | Property | How to change |
    |---|---|
    | **Type** | Select **Outset** or **Inset**.  Only for `box-shadow`. |
-   | **X offset** | Drag the blue dot, or specify a value. |
-   | **Y offset** | Drag the blue dot, or specify a value. |
-   | **Blur** | Drag the slider or specify a value. |
-   | **Spread** | Drag the slider or specify a value.  Only for `box-shadow`. |
+   | **X offset** | Specify a value in the text box, or drag the blue dot. |
+   | **Y offset** | Specify a value in the text box, or drag the blue dot. |
+   | **Blur** | Specify a value in the text box, or drag the slider. |
+   | **Spread** | Specify a value in the text box, or drag the slider.  Only for `box-shadow`. |
    <!-- todo: explain the meaning of each property, not only how to change the value.  change column heading to:
    | Property | Description |
    | Property | Description and how to change |
    -->
 
-   The changes are applied to the element in the page in real time:
+   The changes are applied to the element in the rendered webpage in real time:
 
    ![The effect of changes made in the Shadow Editor](./reference-images/shadow-editor-changes.png)
 
@@ -465,13 +465,13 @@ Use the **Easing Editor** to change the value of the [animation-timing-function]
 
 1. [Select an element](#select-an-element) that has a CSS animation or transition applied.
 
-   For example, open the [animated property demo page](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) in a new tab or window, and then select the `<div class="spinner">` element in the **Elements** tool.
+   For example, open the [animated property demo page](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) in a new tab or window, right-click the page and select **Inspect** to open DevTools, and then in the **Elements** tool, press **Ctrl+F** and find "spinner", and then select the `<div class="spinner">` element.
 
-   The red and green boxes on this demo page are two different CSS animations. Both animations run with CSS, using the `animation` CSS property, and define an `ease-in-out` timing function.
+   The red and green boxes on this demo page are two different CSS animations. Both animations run with CSS by using the `animation` CSS property, and define an `ease-in-out` timing function.
 
 1. In the **Styles** pane, find the `animation` declaration in the `.bad .spinner` CSS rule, and click the **Open cubic bezier editor** (![The cubic bezier editor button icon](./reference-images/easing-editor-icon.png)) button.
 
-   The **Easing Editor** appears:
+   The **Easing Editor** opens:
 
    ![The Easing Editor](./reference-images/easing-editor.png)
 
@@ -480,7 +480,7 @@ Use the **Easing Editor** to change the value of the [animation-timing-function]
    * Choose one of the pre-defined timing functions from the list.
    * Create your own timing function by dragging the cubic-bezier curve handles.
 
-   The changes are applied to the element in the page in real time:
+   The changes are applied to the element in the rendered webpage in real time:
 
    ![The effect of changes made in the Easing Editor](./reference-images/easing-editor-changes.png)
 
