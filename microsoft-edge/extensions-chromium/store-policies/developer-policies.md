@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/10/2023
+ms.date: 08/18/2023
 ---
 # Microsoft Edge Add-ons store developer policies
 
@@ -239,7 +239,7 @@ The primary content of your extension must not be advertising, and advertising m
 
 #### 1.10.2 Policies and Agreements
 
-Any advertising content your extension displays must adhere to [Microsoft Creative Acceptance Policy](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies).
+Any advertising content your extension displays must adhere to [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).
 
 If your extension displays ads, all content displayed must conform to the advertising requirements of the [App Developer Agreement](/legal/windows/agreements/app-developer-agreement) and this Policy.
 
@@ -251,7 +251,7 @@ If your extension displays ads, all content displayed must conform to the advert
 
 #### 1.10.4 Promotions
 
-If you purchase or create promotional ad campaigns to promote your extensions through the ad campaign functionality in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy](https://about.ads.microsoft.com/policies/creative-specs) and [Microsoft Creative Acceptance Policy](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies).
+If you purchase or create promotional ad campaigns to promote your extensions through the ad campaign functionality in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy](https://about.ads.microsoft.com/policies/creative-specs) and [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).
 
 #### 1.10.5 Notifying Users of Opt-Out for Interest-Based Advertising
 
