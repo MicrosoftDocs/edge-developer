@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 06/16/2023
+ms.date: 08/03/2023
 ---
 # Re-engage users with push messages
 
@@ -14,147 +14,133 @@ Push messages are a useful communication channel that lets applications update t
 
 One of the most significant advantages of push messages is that they can be delivered by your app's server even when the user isn't actively using your app.
 
-Push message notifications are useful for apps to take part in the system's notification center and display images and text information.  Notifications are useful to alert the user about an important updates in your app.  However, notifications should be used rarely, because they tend to be disruptive to the user's workflow.
+Push message notifications take part in the system's notification center, and they can display images and text information.  Notifications are useful to alert the user about an important updates in your app.  However, notifications should be used rarely, because they tend to be disruptive to the user's workflow.
 
 To create a PWA that supports push notifications:
 
-1.  Subscribe to a messaging service using the [Push API](https://developer.mozilla.org/docs/Web/API/Push_API).
-1.  Display a toast message when a message is received from the service, by using the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API).
-
-Like Service Workers, the push notification APIs are standards-based APIs.  The push notification APIs work across browsers, so your code should work everywhere that PWAs are supported.  For more information about delivering push messages to different browsers on your server, see [Web-Push](https://www.npmjs.com/package/web-push).
+1.  Request the user's permission to receive push notifications in the client-side code of your PWA.
+1.  Subscribe to your server's push messages.
+1.  Send push messages from the server-side code of your PWA.
+1.  Display notifications when push messages are received.
 
 
 <!-- ====================================================================== -->
-## Step 1 - Generate VAPID keys
+## Step 1 - Request the user's permission to receive push notifications
 
-Push notifications require VAPID (Voluntary Application Server Identification) keys in order to send push messages to the PWA client.  There are several VAPID key generators available online (for example, [vapidkeys.com](https://vapidkeys.com)).
+Before you can send push notifications to your PWA, you must request permission from the user to receive messages.  To request permission, use the [Notification.requestPermission API](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission_static) in your client-side code, such as when the user clicks a button:
 
-After the keys are generated, you'll receive a JSON object that contains a public and private key.  Save the VAPID keys for later use in the tutorial below.
+```javascript
+button.addEventListener("click", () => {
+  Notification.requestPermission().then(permission => {
+    if (permission === "granted") {
+      console.log("The user accepted to receive notifications");
+    }
+  });
+});
+```
 
-For information about VAPID and WebPush, see [Sending VAPID identified WebPush Notifications using the Mozilla Push Service](https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service).
+You can check the permission status again later:
+
+```javascript
+if (Notification.permission === "granted") {
+  console.log("The user already accepted");
+}
+```
 
 
 <!-- ====================================================================== -->
 ## Step 2 - Subscribe to push notifications
 
-Service workers handle push events and toast notification interactions in your PWA.  To subscribe the PWA to server push notifications:
-
-*   Make sure your service worker is installed, active, and registered.
-*   Make sure your code for completing the subscription task is on the main UI thread of the PWA.
-*   Make sure you have network connectivity.
+To receive push events from your server, subscribe to push notifications by using the [Push API](https://developer.mozilla.org/docs/Web/API/Push_API).
 
 Before a new push subscription is created, Microsoft Edge checks whether the user has granted the PWA permission to receive notifications.
 
-If the user has not granted the PWA permission to receive notifications, the user is prompted by the browser for permission.  If the user doesn't grant permission to the browser, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.  For more on permission management, go to [Push Notifications in Microsoft Edge](https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97).
+If the user hasn't granted the PWA permission to receive notifications, the user is prompted by the browser for permission.  If the user doesn't grant permission to the browser, the request to `registration.pushManager.subscribe` throws a `DOMException`.
 
-In your `pwabuilder-sw-register.js` file, append the following code:
+The following code snippet shows how to subscribe to push notifications in your PWA:
 
 ```javascript
-// Ask the user for permission to send push notifications.
-navigator.serviceWorker.ready
-    .then(function (registration) {
-        // Check if the user has an existing subscription
-        return registration.pushManager.getSubscription()
-            .then(function (subscription) {
-                if (subscription) {
-                    return subscription;
-                }
+async function subscribeToPushMessages() {
+  const serviceWorkerRegistration = await navigator.serviceWorker.ready;
 
-                const vapidPublicKey = "PASTE YOUR PUBLIC VAPID KEY HERE";
-                return registration.pushManager.subscribe({
-                    userVisibleOnly: true,
-                    applicationServerKey: urlBase64ToUint8Array(vapidPublicKey)
-                });
-            });
+  // Check if the user has an existing subscription
+  let pushSubscription = serviceWorkerRegistration.pushManager.getSubscription();
+  if (pushSubscription) {
+    // The user is already subscribed to push notifications
+    return;
+  }
+
+  try {
+    // Subscribe the user to push notifications
+    pushSubscription = await serviceWorkerRegistration.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: urlBase64ToUint8Array("YOUR PUBLIC VAPID KEY HERE")
     });
+  } catch (err) {
+    // The subscription wasn't successful.
+    console.log("Error", err);
+  }
+}
 
 // Utility function for browser interoperability
 function urlBase64ToUint8Array(base64String) {
-    var padding = '='.repeat((4 - base64String.length % 4) % 4);
-    var base64 = (base64String + padding)
-        .replace(/\-/g, '+')
-        .replace(/_/g, '/');
-
-    var rawData = window.atob(base64);
-    var outputArray = new Uint8Array(rawData.length);
-
-    for (var i = 0; i < rawData.length; ++i) {
-        outputArray[i] = rawData.charCodeAt(i);
-    }
-    return outputArray;
+  var padding = '='.repeat((4 - base64String.length % 4) % 4);
+  var base64 = (base64String + padding)
+      .replace(/\-/g, '+')
+      .replace(/_/g, '/');
+  
+  var rawData = window.atob(base64);
+  var outputArray = new Uint8Array(rawData.length);
+  
+  for (var i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
 }
 ```
 
-See also [PushManager](https://developer.mozilla.org/docs/Web/API/PushManager) and [Web-Push](https://www.npmjs.com/package/web-push#usage).
+The VAPID key that's mentioned in the previous code snippet is a public key that's used to identify the server that sends the push messages and encrypt the push message payload.  See [Step 3 - Send push messages from your server](#step-3---send-push-messages-from-your-server) for more information about VAPID keys.
 
 
 <!-- ====================================================================== -->
-## Step 3 - Listen for push notifications
+## Step 3 - Send push messages from your server
 
-After a subscription is created in your PWA, add handlers to the service worker to respond to push events.  Push event are sent from the server to display toast notifications.  Toast notifications display data for a received message.  To do any of the following tasks, you must add a `click` handler:
+Your application needs VAPID (Voluntary Application Server Identification) keys in order to send push messages from your server to your PWA clients.  There are several VAPID key generators available online (for example, [Vapidkeys.com](https://vapidkeys.com)).
 
-*   Dismissing the toast notification.
-*   Opening a window.
-*   Putting focus on a window.
-*   Opening and putting focus on a new window to display a PWA client page.
+Once you have a VAPID key, you can send push messages to your PWA clients by using [the Web Push Protocol](https://web.dev/push-notifications-web-push-protocol/).
 
-To add a `click` handler, in your `pwabuilder-sw.js` file, add the following handlers for the `push` event and the `notificationclick` event:
+You can use a library to send push messages from your server, depending on the programming language you use.  For example, you can use the [web-push](https://github.com/web-push-libs/web-push) library if your server uses Node.js. Other libraries are available on the [WebPush libraries repo](https://github.com/web-push-libs/).
+
+
+<!-- ====================================================================== -->
+## Step 4 - Display notifications when push messages are received
+
+After a subscription is created in your PWA (as shown in [Step 2 - Subscribe to push notifications](#step-2---subscribe-to-push-notifications)), add a `push` event handler in your service worker to handle push messages that are sent by your server.
+
+The following code snippet shows how to display a notification when a push message is received:
 
 ```javascript
-// Respond to a server push with a user notification.
-self.addEventListener('push', function (event) {
-    if (Notification.permission === "granted") {
-        const notificationText = event.data.text();
-        const showNotification = self.registration.showNotification('Sample PWA', {
-            body: notificationText,
-            icon: 'images/icon512.png'
-        });
-        // Make sure the toast notification is displayed.
-        event.waitUntil(showNotification);
-    }
-});
+// Listen to push events.
+self.addEventListener('push', event => {
+  // Check if the user has granted permission to display notifications.
+  if (Notification.permission === "granted") {
+    // Get the notification data from the server.
+    const notificationText = event.data.text();
 
-// Respond to the user selecting the toast notification.
-self.addEventListener('notificationclick', function (event) {
-    console.log('On notification click: ', event.notification.tag);
-    event.notification.close();
+    // Display a notification.
+    const showNotificationPromise = self.registration.showNotification('Sample PWA', {
+      body: notificationText,
+      icon: 'images/icon512.png'
+    });
 
-    // Display the current notification if it is already open, and then put focus on it.
-    event.waitUntil(clients.matchAll({
-        type: 'window'
-    }).then(function (clientList) {
-        for (var i = 0; i < clientList.length; i++) {
-            var client = clientList[i];
-            if (client.url == 'http://localhost:1337/' && 'focus' in client)
-                return client.focus();
-        }
-        if (clients.openWindow)
-            return clients.openWindow('/');
-    }));
+    // Keep the service worker running until the notification is displayed.
+    event.waitUntil(showNotificationPromise);
+  }
 });
 ```
-
-<!-- ====================================================================== -->
-## Step 4 - Try it out
-
-To test push notifications for your PWA:
-
-1.  Go to your PWA at `http://localhost:3000`.  When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow your PWA to show notifications.  Select **Allow**.
-
-    ![Permission dialog for enabling notifications](./push-images/notification-permission.png)
-
-1.  Simulate a server-side push notification, as follows.  With your PWA opened at `http://localhost:3000` in your browser, select **F12** to open DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.
-
-    The push notification is displayed near the taskbar.
-
-    ![Push a notification from DevTools](./push-images/devtools-push.png)
-
-    If you don't select (or _activate_) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.
-
-    ![Notifications in Windows Action Center](./push-images/windows-action-center.png)
-
 
 <!-- ====================================================================== -->
 ## See also
 
-*   [Web Push Notifications Demo](https://webpushdemo.azurewebsites.net)
+* [Push notifications overview](https://web.dev/push-notifications-overview/).
+* [How to make PWAs re-engageable using Notifications and Push](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Re-engageable_Notifications_Push).

@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 08/07/2023
+ms.date: 08/29/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -161,16 +161,41 @@ Google may collect some data associated with the Media Router extension. To unin
 <!-- ====================================================================== -->
 ## Collections
 
-You may collect sites, text, and images from the web, and organize the content with Collections in Microsoft Edge.  All collections data is stored locally on the device and organized per Microsoft Edge profile.  If you have sync turned on for Collections, your collections, notes, and comments are available across all signed-in and syncing versions of Microsoft Edge.
+The Collections feature in Microsoft Edge allows you to save web pages, text, images, and videos from the web. You can organize the content based on the projects, events, and interests that matter to you. You can also save notes in your collections and add notes to individual items as well. Collections uses the Microsoft Edge Entity Extraction service to enrich the content that you collect by including thumbnails and metadata, such as price and star rating. For more information, see [Entity extraction](#entity-extraction) below.
 
-Every 24 hours, Microsoft Edge downloads a list of supported sites that have special entity extraction templates. The templates are specific to each website. When you create a new item in your collection, Microsoft Edge verifies that the site you are collecting from is in the list of supported sites. If the site is in the list, Microsoft Edge pings the entity extraction service for the template of the specific site. No user identifiers are associated with the request to the service. The template attempts to identify the name, price, ratings, primary image, and other data about the item being collected. If the site you are collecting from is not on the supported list site, Microsoft Edge does not download a template. Templates allow collection items to be created locally on the device. No data about the collection items are sent to the service when creating the collection.
+The Collections feature is not available in **Guest** mode or Kids Mode.
 
-You can delete templates stored on the device and clear the cache data. Go to `edge://settings/privacy`. In **Clear browsing data** next to **Clear browsing data now**, select the **Choose what to clear** button. Choose your desired time range and type of data, then select the **Clear now** button.  Another way to delete cached data, go to `edge://settings/clearBrowserData` select the desired time range and type of data, then select the **Clear now** button.
+Collections storage and feature availability depend on your Microsoft Edge Sign-in and Sync settings.
 
-<!-- Above, should pick one way. Check UI for privacy updates -->
 
-You can use the title of your collection to find relevant Pinterest Topic pages when searching in Microsoft Bing. Go to `edge://settings/privacy`. Turn on the **Show suggestions from Pinterest in Collections** setting. Microsoft Edge does not send data about your collections to Pinterest. You can remove the suggestions and stop searches for Pinterest Topic pages. Go to `edge://settings/privacy` and turn off the **Show suggestions from Pinterest in Collections** setting.
-Collections aren't available when using **InPrivate** or **Guest** modes.
+<!-- ------------------------------ -->
+#### Signed in with a personal account
+
+When you sign in to Microsoft Edge with a personal Microsoft Account (MSA), your collections, saved items, notes, and images are automatically saved on Microsoft cloud for free. You can access your collections from Microsoft Edge on any device where you're signed in. You can even view and manage your collections online in any browser by visiting the [Collections portal](https://www.bing.com/saves) at Bing.com. Collections also enhance your experience with a personalized interest feed, if your personalization settings support this feature.
+
+If you want to disable Collections for a signed-in profile using a personal account, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Show Collections and follow content creators in Microsoft Edge**.
+
+When you sign in with a personal account and Sync for Collections is disabled, all collections data is stored locally on the device, organized per Microsoft Edge profile.
+
+You cannot access Collections from an InPrivate window while signed in with a personal account.
+
+
+<!-- ------------------------------ -->
+#### Signed in with a work or school account
+
+If you're signed in with a work or school account and are syncing Collections, your collections, saved items, notes, and images are synced across devices. If you want to stop syncing your Collections, you can turn off Sync for Collections from `edge://settings/profiles/sync`.
+
+When you sign in with a work or school account and Sync for Collections is disabled, all collections data is stored locally on the device, organized per Microsoft Edge profile.
+
+You can access Collections from an InPrivate window while signed in with a work or school account.
+
+
+<!-- ------------------------------ -->
+#### Signed-out
+
+When you don't sign in to Microsoft Edge, all collections data is stored locally on the device, organized per Microsoft Edge profile.
+
+You can access Collections from an InPrivate window when using a signed-out profile.
 
 
 <!-- ====================================================================== -->
@@ -303,6 +328,14 @@ These features become functional only on enterprise-managed devices by acquiring
 When these enterprise features are on, the browser sends auditing and diagnostic data to the administrator as per the feature’s requirement to function, manage or diagnose properly. This data collection is controlled by the enterprise administrator and end user is not able to opt-out.
 
 Please contact your enterprise administrator to understand your company's policies for such data collection.
+
+
+<!-- ====================================================================== -->
+## Entity extraction
+
+Microsoft Edge uses entity extraction templates that are specific to a list of supported websites to identify the name, price, ratings, primary image, and other data about the item being collected locally. When creating the collection, no user identifiers or other data are sent to Microsoft services.
+
+If you want to delete such templates stored on the device, go to `edge://settings/clearBrowserData`, select the desired time range and type of data, and then click the **Clear now** button.
 
 
 <!-- ====================================================================== -->
