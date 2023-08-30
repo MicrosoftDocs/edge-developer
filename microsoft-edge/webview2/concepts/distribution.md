@@ -50,9 +50,9 @@ The Evergreen Runtime is preinstalled onto all Windows 11 devices as a part of t
 <!-- ====================================================================== -->
 ## The Fixed Version runtime distribution mode
 
-The Fixed Version runtime distribution mode is also called a "self-contained" distribution model; the redistributable bits are included with your app.  This approach is similar to .NET's "Self-Contained deployment option".
-
 In the _Fixed Version_ distribution mode, you download a specific version of the WebView2 Runtime and package it together with your WebView2 app in your app package.  The WebView2 Runtime that you package with your app is used only by your WebView2 app, not by any other apps on the client's machine.
+
+The Fixed Version runtime distribution mode is also called a "self-contained" distribution model; the redistributable bits are included with your app.  This approach is similar to .NET's "Self-Contained deployment option".
 
 Pros:
 *  You have more control over versioning of the WebView2 Runtime.  You know which WebView2 APIs are available to your app, because you control which version of the WebView2 Runtime is available to your app.  Your app doesn't need to test whether the latest APIs are present.
