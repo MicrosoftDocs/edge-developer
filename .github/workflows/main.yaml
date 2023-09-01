@@ -25,4 +25,4 @@ jobs:
         id: findversions
         run: |
           cd scripts
-          node report-references-to-old-versions.js
+          token=${{ secrets.GITHUB_TOKEN }} node report-references-to-old-versions.js

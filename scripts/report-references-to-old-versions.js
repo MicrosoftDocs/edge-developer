@@ -99,7 +99,7 @@ async function findReferencesToEdgeVersionsOlderThanRelease() {
 
 async function createIssue(title, content) {
     // Create a new issue.
-    const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
+    const octokit = github.getOctokit(process.env.token);
 
     const {data: issue} = await octokit.rest.issues.create({
         owner: "MicrosoftDocs",
@@ -124,8 +124,8 @@ findReferencesToEdgeVersionsOlderThanRelease().then(matches => {
     console.log('Outdated Edge version references found:');
     console.log(report);
 
-    if (!process.env.GITHUB_TOKEN) {
-        console.log('No GITHUB_TOKEN environment variable found, skipping issue creation.');
+    if (!process.env.token) {
+        console.log('No token environment variable found, skipping issue creation.');
         return;
     }
 
