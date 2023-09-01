@@ -25,9 +25,4 @@ jobs:
         id: findversions
         run: |
           cd scripts
-          node find-references-to-old-versions.js > report.md
-      - name: Create an issue
-        uses: peter-evans/create-issue-from-file
-        with:
-          title: 'Outdated versions of Edge found in the docs'
-          content-filepath: scripts/report.md
+          node report-references-to-old-versions.js
