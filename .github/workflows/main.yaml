@@ -22,18 +22,7 @@ jobs:
           cd scripts
           npm install
       - name: Run script
+        id: findversions
         run: |
           cd scripts
-          node find-references-to-old-versions.js > issues.txt
-      - name: Read the issues file
-        uses: juliangruber/read-file-action@v1
-        id: issues
-        with:
-          path: ./scripts/issues.txt
-      - name: Create an issue
-        uses: JasonEtco/create-an-issue@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CONTENT: ${{ steps.issues.outputs.content }}
-        with:
-          filename: .github/old_version_issue.md
+          token=${{ secrets.GITHUB_TOKEN }} node report-references-to-old-versions.js
