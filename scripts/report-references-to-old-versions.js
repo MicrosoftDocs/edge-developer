@@ -13,14 +13,20 @@ const FILES_TO_IGNORE = [
     '../microsoft-edge/devtools-guide-chromium/experimental-features/index.md'
 ];
 // This script attempts to find the current edge release version by looking at this page and finding the first version header occurrence.
-const RELEASE_NOTES_PAGE = 'https://docs.microsoft.com/deployedge/microsoft-edge-relnote-stable-channel';
+const RELEASE_NOTES_PAGE = 'https://learn.microsoft.com/deployedge/microsoft-edge-relnote-stable-channel';
 
+// This is the list of regular expressions we use to find references to Edge versions.
+// For each file, we split by line, and run these expressions on each line.
 // Parenthesis and g flag are important, please add them to all patterns.
 const PATTERNS_TO_LOOK_FOR = [
     /Microsoft Edge version ([0-9]{2,3})/g,
     /Microsoft Edge ([0-9]{2,3})/g,
-    /Edge ([0-9]{2,3}) /g,
-    / ([0-9]{2,3}) or later/g,
+];
+
+// These are strings that we know we should ignore.
+// Even if a line matches one of the patterns above, if it contains one of these strings, we ignore it.
+const STRINGS_TO_IGNORE = [
+    "What's New in DevTools (Microsoft Edge"
 ];
 
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
@@ -44,16 +50,13 @@ async function findMatchingPatternsIn(file) {
     const lines = content.split('\n');
     const matches = [];
     lines.forEach((line, i) => {
+        if (STRINGS_TO_IGNORE.some(string => line.toLowerCase().includes(string.toLocaleLowerCase()))) {
+            return;
+        }
         for (const pattern of PATTERNS_TO_LOOK_FOR) {
             let match;
             while ((match = pattern.exec(line)) !== null) {
                 const version = parseInt(match[1], 10);
-
-                if (version < 40) {
-                    // 40 is random, but it's enough for what we need here:
-                    // avoid matching Windows 10 or Windows 11.
-                    continue;
-                }
 
                 matches.push({
                     file,

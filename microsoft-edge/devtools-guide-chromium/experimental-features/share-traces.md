@@ -13,11 +13,9 @@ The **Performance** and **Memory** tools record runtime data about your webpage.
 
 Additionally, the recorded data can be exported to files on disk. The exported files are called _traces_.
 
-Exporting performance and memory traces is useful when you want to share these files with other people to get help with investigating issues. An exported trace is a `.json`, `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file which can be imported in DevTools at any time. By default, traces contain minimal information about the runtime data from the traced webpage.
+Exporting performance and memory traces is useful when you want to share these files with other people to get help with investigating issues. An exported trace is a `.json`, `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file which can be imported in DevTools at any time.
 
-Starting with Microsoft Edge 109, traces can be exported as _enhanced traces_, as an experimental feature.
-
-An enhanced trace is a `.devtools` file which contains much more runtime data from the traced webpage.  Enhanced traces make it easier to resolve performance and memory issues by recreating the environment in which the trace was recorded and by providing original source files.
+By default, traces contain minimal information about the runtime data from the traced webpage, but traces can also be exported as _enhanced traces_, as an experimental feature. An enhanced trace is a `.devtools` file which contains much more runtime data from the traced webpage.  Enhanced traces make it easier to resolve performance and memory issues by recreating the environment in which the trace was recorded and by providing original source files.
 
 Using enhanced traces makes it possible to reliably resolve source code references found in imported traces to the actual runtime code in the **Sources** tool. Additionally, if source maps were present when a trace was recorded, or if they are stored on the [Azure Artifacts Symbol Server](../javascript/consume-source-maps-from-azure.md), it will also be possible to resolve code references to their original source code.
 
@@ -48,7 +46,7 @@ Enhanced traces can only be imported in Microsoft Edge, while normal traces are 
 <!-- ====================================================================== -->
 ## Set the default trace type
 
-By default, the **Performance** and **Memory** tools export data as normal traces. Starting with Microsoft Edge 109, it's possible to set the default trace type to enhanced.
+By default, the **Performance** and **Memory** tools export data as normal traces, but you can set the default trace type to enhanced.
 
 To change the trace type:
 

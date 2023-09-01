@@ -26,8 +26,6 @@ By signaling intent to be pinned to the sidebar, your PWA gets the following ben
 <!-- ====================================================================== -->
 ## Enable sidebar support of PWAs in Microsoft Edge
 
-Experimental support for PWAs that can target the sidebar in Microsoft Edge starts with Microsoft Edge 112. Some parts of the feature are available starting with Microsoft Edge 114, such as the ability to detect if your PWA is running in the sidebar by using User Agent Client Hints.
-
 To locally enable PWA sidebar support in Microsoft Edge:
 
 1. Download and install the Canary channel of Microsoft Edge from the [Microsoft Edge Insider website](https://www.microsoft.com/edge/download/insider).
@@ -147,7 +145,7 @@ However, if you prefer to build an app that can only be pinned to the sidebar bu
 
 Detecting when your app is running in the sidebar can be useful to provide your users with the best possible experience when your app runs in this browser panel.
 
-Starting with Microsoft Edge 114, you can detect when your app runs in the sidebar by using User-Agent Client Hints. To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from your website](../../web-platform/user-agent-guidance.md).
+You can detect when your app runs in the sidebar by using User-Agent Client Hints. To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from your website](../../web-platform/user-agent-guidance.md).
 
 To detect when your app runs in the sidebar, do one of the following:
 
