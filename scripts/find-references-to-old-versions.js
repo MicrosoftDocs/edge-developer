@@ -1,6 +1,7 @@
 const glob = require('glob');
 const fs = require('fs').promises;
 const path = require('path');
+const core = require('@actions/core')
 
 const FILES_TO_INCLUDE = '../microsoft-edge/**/*.md';
 const FILES_TO_IGNORE = [
@@ -16,7 +17,8 @@ const RELEASE_NOTES_PAGE = 'https://docs.microsoft.com/deployedge/microsoft-edge
 
 // Parenthesis and g flag are important, please add them to all patterns.
 const PATTERNS_TO_LOOK_FOR = [
-    /Microsoft Edge version ([0-9]{2,3}) /g,
+    /Microsoft Edge version ([0-9]{2,3})/g,
+    /Microsoft Edge ([0-9]{2,3})/g,
     /Edge ([0-9]{2,3}) /g,
     / ([0-9]{2,3}) or later/g,
 ];
@@ -97,7 +99,11 @@ async function findReferencesToEdgeVersionsOlderThanRelease() {
 
 findReferencesToEdgeVersionsOlderThanRelease().then(matches => {
     // Output a human readable list of errors.
-    console.log(matches.map(match => {
+    const report = matches.map(match => {
         return `* Article __${match.file.replace('../', '')}__ mentions Edge version __${match.version}__ on line __${match.line}__`;
-    }).join('\n'));
+    }).join('\n');
+
+    console.log(report);
+
+    core.setOutput('report', report)
 });
