@@ -1,7 +1,6 @@
 const glob = require('glob');
 const fs = require('fs').promises;
 const path = require('path');
-const core = require('@actions/core')
 
 const FILES_TO_INCLUDE = '../microsoft-edge/**/*.md';
 const FILES_TO_IGNORE = [
@@ -104,6 +103,4 @@ findReferencesToEdgeVersionsOlderThanRelease().then(matches => {
     }).join('\n');
 
     console.log(report);
-
-    core.setOutput('report', report)
 });

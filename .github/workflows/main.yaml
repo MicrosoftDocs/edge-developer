@@ -25,12 +25,9 @@ jobs:
         id: findversions
         run: |
           cd scripts
-          # This script will store a string report in the output `report`.
-          node find-references-to-old-versions.js
+          node find-references-to-old-versions.js > report.md
       - name: Create an issue
-        uses: JasonEtco/create-an-issue@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CONTENT: ${{ steps.findversions.outputs.report }}
+        uses: peter-evans/create-issue-from-file@v4
         with:
-          filename: .github/old_version_issue.md
+          title: 'Outdated versions of Edge found in the docs'
+          content-filepath: scripts/report.md
