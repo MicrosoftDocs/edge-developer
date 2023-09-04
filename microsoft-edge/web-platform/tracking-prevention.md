@@ -148,7 +148,7 @@ The following table shows the enforcement actions and mitigations that are appli
 
 By default, InPrivate windows in Microsoft Edge use the same tracking prevention settings as regular windows.
 
-To always apply the Strict level of tracking prevention to InPrivate windows:
+To always apply the "Strict" level of tracking prevention to InPrivate windows:
 
 1. Go to `edge://settings/privacy`.
 1. Click **Always use "Strict" tracking prevention when browsing InPrivate**.
