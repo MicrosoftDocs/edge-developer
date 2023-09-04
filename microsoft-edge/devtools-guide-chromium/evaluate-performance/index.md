@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/31/2023
+ms.date: 09/04/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -152,15 +152,17 @@ After you verified that the animation isn't performing well, the next step is to
    * `W` to zoom in, `S` to zoom out.
    * `A` to move selection left, `D` to move selection right.
 
-1. Select an **Animation Frame Fired** event.  When a red triangle is displayed at the top right of an event, it's a warning that there might be an issue related to the event.
+1. Click an **Animation Frame Fired** event.  When a red triangle is displayed at the top right of an event, it's a warning that there might be an issue related to the event.
 
    The **Animation Frame Fired** event occurs whenever a [requestAnimationFrame() callback](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame) is run.
 
-1. Click the **Animation Frame Fired** event.  The **Summary** panel now shows you information about that event.  Note the **Reveal** link.  After you click it, DevTools highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:125** link.  After you click it, the relevant line in the source code is displayed.
+   The **Summary** panel displays information about that event:
+	
+	![More information about the Animation Frame Fired event](./index-images/animation-frame-fired.png)
 
-   ![More information about the Animation Frame Fired event](./index-images/animation-frame-fired.png)
-
-   After clicking an event, if you want to select an event next to it, you can press the arrow keys.
+1. Click the **Reveal** link.  DevTools highlights the event that initiated the **Animation Frame Fired** event.
+	
+1. Click the **app.js:125** link.  The relevant line of source code is displayed in the **Sources** tool.
 
 1. Zoom in on the **Animation Frame Fired** event and its child events, by using the mouse wheel or trackpad. Or, press **W**.
 
@@ -178,9 +180,6 @@ After you verified that the animation isn't performing well, the next step is to
    <!--
    > To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts).
    -->
-
-
-This article gives you a lot to learn. But now you have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.
 
 
 <!-- ------------------------------ -->
@@ -272,13 +271,11 @@ To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rai
 
 To get more comfortable with the **Performance** tool, practice profiling your pages and analyzing the results.
 
-If you have any questions about your results, click the **Send Feedback** <!--todo: (![Send Feedback icon](./foo-images/send-feedback-icon.png))--> button (**Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS)):
+If you have any questions about your results, click the **Send Feedback** (![Send Feedback icon](./index-images/send-feedback-icon.png)) button on the main toolbar (or press **Alt+Shift+I** on Windows and Linux or **Option+Shift+I** on macOS):
 
 ![The **Send Feedback** icon in Microsoft Edge DevTools](./index-images/feedback-icon.png)
  
 Or, [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).
-
-![The **Feedback** icon in the Microsoft Edge DevTools](./index-images/feedback-icon.png)
 
 In your feedback, include screenshots or links to reproducible pages, if possible.
 
