@@ -160,15 +160,15 @@ After you verified that the animation isn't performing well, the next step is to
 
    ![More information about the Animation Frame Fired event](./index-images/animation-frame-fired.png)
 
-   After clicking an event, use the arrow keys to select the events next to it.
+   After clicking an event, if you want to select an event next to it, you can press the arrow keys.
 
-1. Use your trackpad or mouse wheel on the **Main** section to zoom in on the **Animation Frame Fired** event and its child events. You can also press `W` to zoom in.
+1. Zoom in on the **Animation Frame Fired** event and its child events, by using the mouse wheel or trackpad. Or, press **W**.
 
    You can now see the events that occur when a single frame of the animation is rendered. The **update** function is called, which, in turn, calls the **updateSlow** function, which triggers many **Recalculate Style** and **Layout** events:
    
    ![The Animation Frame Fired event and its child events](./index-images/animation-frame-children.png)
 
-1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  There is a warning about forced reflows (another word for _layout_).
+1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  There's a warning about "forced reflows" (re-layout).
 
 1. In the **Summary** panel, click the **app.js:104** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout in the **Sources** tool:
 
@@ -259,7 +259,7 @@ In the optimized version, we first set the value of the `nextPos` variable by re
 
 We then adjust the direction of the icon, but this time we don't read `element.offsetTop` again like done in the unoptimized version.
 
-Finally, we set the new position of the icon, but this time we use `element.style.transform` instead of `element.style.top`. Using `element.style.transform` is faster because the CSS `transform` property can be applied by the browser rendering engine without having to recalculate the layout of the page. When using the `transform` property, the browser considers each icon as an individual layer, and then displays these layers in the correct positions by re-compositing the final image.
+Finally, we set the new position of the icon, but this time we use `element.style.transform` instead of `element.style.top`. Using `element.style.transform` is faster, because the CSS `transform` property can be applied by the browser rendering engine without having to recalculate the layout of the page. When using the `transform` property, the browser considers each icon as an individual layer, and then displays these layers in the correct positions by re-compositing the final image.
 
 To learn more, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations).
 
@@ -272,11 +272,15 @@ To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rai
 
 To get more comfortable with the **Performance** tool, practice profiling your pages and analyzing the results.
 
-If you have any questions about your results, use the **Send Feedback** icon, press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS), or [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues):
+If you have any questions about your results, click the **Send Feedback** <!--todo: (![Send Feedback icon](./foo-images/send-feedback-icon.png))--> button (**Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS)):
+
+![The **Send Feedback** icon in Microsoft Edge DevTools](./index-images/feedback-icon.png)
+ 
+Or, [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).
 
 ![The **Feedback** icon in the Microsoft Edge DevTools](./index-images/feedback-icon.png)
 
-Include screenshots or links to reproducible pages, if possible.
+In your feedback, include screenshots or links to reproducible pages, if possible.
 
 There are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour of the **Performance** tool, but it's only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
