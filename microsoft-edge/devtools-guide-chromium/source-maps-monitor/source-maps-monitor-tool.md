@@ -32,13 +32,13 @@ The **Source Maps Monitor** tool shows which URL lookups have or haven't been at
 
 1. Right-click a webpage and then select **Inspect**.  DevTools opens.
 
-1. Click the **Settings** button, and then select the **Symbol Server** page.
+1. Click the **Settings** (![Settings icon for DevTools](./source-maps-monitor-tool-images/settings-icon.png)) button, and then select **Symbol Server**.
 
-1. In the **Filter behavior** dropdown list, select **Exclusion List** (or, select **Inclusion List**).  If the **Filter behavior** dropdown list isn't displayed, first set the settings above it, as described in the following articles:
+1. In the **Filter behavior** dropdown list, select **Exclusion List** (or, select **Inclusion List**).  If the **Filter behavior** dropdown list isn't displayed, set the **Symbol Server** settings, as described in the following articles:
 
-   * [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's New in DevTools (Microsoft Edge 115)_.
    * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md)
    * [Securely debug original code by using Azure Artifacts symbol server source maps](../javascript/consume-source-maps-from-azure.md)
+   * [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's New in DevTools (Microsoft Edge 115)_.
 
 1. In the **Filter behavior** text box, enter a domain with wildcard to exclude (or, to include), such as: `https://ryanseddon.com/*`
 
