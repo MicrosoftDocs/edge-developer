@@ -1,6 +1,7 @@
 const glob = require('glob');
 const fs = require('fs').promises;
 const path = require('path');
+const github = require('@actions/github');
 
 const FILES_TO_INCLUDE = '../microsoft-edge/**/*.md';
 const FILES_TO_IGNORE = [
@@ -16,7 +17,8 @@ const RELEASE_NOTES_PAGE = 'https://docs.microsoft.com/deployedge/microsoft-edge
 
 // Parenthesis and g flag are important, please add them to all patterns.
 const PATTERNS_TO_LOOK_FOR = [
-    /Microsoft Edge version ([0-9]{2,3}) /g,
+    /Microsoft Edge version ([0-9]{2,3})/g,
+    /Microsoft Edge ([0-9]{2,3})/g,
     /Edge ([0-9]{2,3}) /g,
     / ([0-9]{2,3}) or later/g,
 ];
@@ -95,9 +97,39 @@ async function findReferencesToEdgeVersionsOlderThanRelease() {
     });
 }
 
+async function createIssue(title, content) {
+    // Create a new issue.
+    const octokit = github.getOctokit(process.env.token);
+
+    const {data: issue} = await octokit.rest.issues.create({
+        owner: "MicrosoftDocs",
+        repo: "edge-developer",
+        title: title,
+        body: content
+    });
+
+    return issue;
+}
+
 findReferencesToEdgeVersionsOlderThanRelease().then(matches => {
-    // Output a human readable list of errors.
-    console.log(matches.map(match => {
-        return `* Article __${match.file.replace('../', '')}__ mentions Edge version __${match.version}__ on line __${match.line}__`;
-    }).join('\n'));
+    if (!matches.length) {
+        console.log('No outdated Edge version references found.');
+        return;
+    }
+
+    const report = matches.sort((a, b) => a.version - b.version).map(match => {
+        return `* Outdated Edge version __${match.version}__ mentioned in __${match.file.replace('../', '')}__:__${match.line}__`;
+    }).join('\n');
+
+    console.log('Outdated Edge version references found:');
+    console.log(report);
+
+    if (!process.env.token) {
+        console.log('No token environment variable found, skipping issue creation.');
+        return;
+    }
+
+    return createIssue('Outdated Edge version references found', report).then(issue => {
+        console.log(`Created issue ${issue.number} at ${issue.html_url}`);
+    });
 });
