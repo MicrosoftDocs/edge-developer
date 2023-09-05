@@ -28,24 +28,27 @@ To try this feature:
 <!-- ====================================================================== -->
 ## Exclusions and inclusions
 
-The **Source Maps Monitor** tool shows which URL lookups have or haven't been attempted, as configured in DevTools **Settings > Symbol Server > Authorization mode = Azure Active Directory > Filter behavior = Exclusion List** or **Inclusion List**.  For example:
+The **Source Maps Monitor** tool shows which URL lookups have or haven't been attempted, as configured in filter settings in DevTools **Settings > Symbol Server > Filter behavior**.  For example:
 
-1. In DevTools **Settings > Symbol Server**, in the **Authorization mode** dropdown list, select **Azure Active Directory**.
+1. Right-click a webpage and then select **Inspect**.  DevTools opens.
 
-1. Double-click the **microsoft** org to select it.
+1. Click the **Settings** button, and then select the **Symbol Server** page.
 
-1. In the **Filter behavior** dropdown list, select **Exclusion List**.
+1. In the **Filter behavior** dropdown list, select **Exclusion List** (or, select **Inclusion List**).  If the **Filter behavior** dropdown list isn't displayed, first set the settings above it, as described in the following articles:
 
-1. In the **Filter behavior** text box, enter a domain with wildcard (`https://ryanseddon.com/*`) to exclude.
+   * [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's New in DevTools (Microsoft Edge 115)_.
+   * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md)
+   * [Securely debug original code by using Azure Artifacts symbol server source maps](../javascript/consume-source-maps-from-azure.md)
+
+1. In the **Filter behavior** text box, enter a domain with wildcard to exclude (or, to include), such as: `https://ryanseddon.com/*`
 
 1. Close DevTools **Settings**.
 
-As a result, the **Source Maps Monitor** tool indicates excluded source map URL lookup attempts:
+1. In DevTools, select the **Source Maps Monitor** tool.
+
+   The **Source Maps Monitor** tool now indicates excluded (or, included) source map URL lookup attempts:
 
 ![Source Maps Monitor tool indicates source map URL lookups attempted](./source-maps-monitor-tool-images/source-maps-monitor-exclusions.png)
-
-See also:
-* [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's New in DevTools (Microsoft Edge 115)_.
 
 
 <!-- ====================================================================== -->
