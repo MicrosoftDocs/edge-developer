@@ -70,7 +70,7 @@ Submit one of the following documents for business verification:
 * Record on a Government registry website. The site/link must be displayed.
 * Stock exchange filings or tax filing records.
 * External company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
-* Receipt from the company's home country, municipality.
+* Receipt from the company's home country/region, municipality.
 
 Confirm that the company name and address in your [Legal business profile](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) don't have spelling errors or abbreviations. They must match your formal company business registration records exactly. If appropriate, select the match found in external company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
 
