@@ -28,7 +28,7 @@ To try this feature:
 <!-- ====================================================================== -->
 ## Exclusions and inclusions
 
-The **Source Maps Monitor** tool shows which URL lookups have or haven't been attempted.  For example:
+The **Source Maps Monitor** tool shows which URL lookups have or haven't been attempted, as configured in DevTools **Settings > Symbol Server > Authorization mode = Azure Active Directory > Filter behavior = Exclusion List** or **Inclusion List**.  For example:
 
 1. In DevTools **Settings > Symbol Server**, in the **Authorization mode** dropdown list, select **Azure Active Directory**.
 
