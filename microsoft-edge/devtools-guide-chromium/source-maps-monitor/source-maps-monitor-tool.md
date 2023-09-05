@@ -42,10 +42,10 @@ The **Source Maps Monitor** tool shows which URL lookups have or haven't been at
 
 As a result, the **Source Maps Monitor** tool indicates excluded source map URL lookup attempts:
 
-![Source Maps Monitor tool indicates source map URL lookups attempted](./devtools-115-images/source-maps-monitor.png)
+![Source Maps Monitor tool indicates source map URL lookups attempted](./source-maps-monitor-tool-images/source-maps-monitor-exclusions.png)
 
 See also:
-* [Improvements for connecting DevTools to Azure Artifacts symbol server](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2023/07/devtools-115#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's New in DevTools (Microsoft Edge 115)_.
+* [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's New in DevTools (Microsoft Edge 115)_.
 
 
 <!-- ====================================================================== -->
