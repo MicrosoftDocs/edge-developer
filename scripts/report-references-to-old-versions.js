@@ -15,7 +15,7 @@ const FILES_TO_IGNORE = [
 // This script attempts to find the current edge release version by looking at this page and finding the first version header occurrence.
 const RELEASE_NOTES_PAGE = 'https://learn.microsoft.com/deployedge/microsoft-edge-relnote-stable-channel';
 
-// This is the list of regular expressions we use to find references to Edge versions.
+// This is the list of regular expressions we use to find references to Microsoft Edge versions.
 // For each file, we split by line, and run these expressions on each line.
 // Parenthesis and g flag are important, please add them to all patterns.
 const PATTERNS_TO_LOOK_FOR = [
