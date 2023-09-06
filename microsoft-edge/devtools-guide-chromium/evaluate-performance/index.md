@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 2/22/2023
+ms.date: 09/04/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -46,7 +46,7 @@ In the following tutorial, you open DevTools on a "Sluggish Animation" demo page
 
 1. Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS) to open DevTools:
 
-   ![The demo on the left, and DevTools on the right](./index-images/evaluate-performance-get-started-side-by-side.png)
+   ![The demo on the left, and DevTools on the right](./index-images/get-started-side-by-side.png)
 
 For the rest of the screenshots, DevTools is shown [undocked to a separate window](../customize/placement.md).
 
@@ -64,7 +64,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.
 
-   ![CPU throttle](./index-images/evaluate-performance-performance-capture-settings.png)
+   ![CPU throttle](./index-images/capture-settings.png)
 
    If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
 
@@ -74,13 +74,13 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 The following section lets you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions.
 
-1. Click the **Add 10** button until the blue icons move noticeably slower than before.  On a high-end machine, you can click it about 20 times.
+1. Click the **Add elements** button until the blue icons move noticeably slower than before.  On a high-end machine, you can click it about 20 times.
 
-1. Click **Optimize**.  The blue icons should move faster and more smoothly.
+1. Click **Optimized**.  The blue icons should move faster and more smoothly.
 
-1. To better display a difference between the optimized and unoptimized versions, click the **Subtract 10** button a few times and try again.  If you add too many blue icons, you could max out the CPU, and then you might not observe a major difference in the results for the two versions.
+1. To better display a difference between the optimized and unoptimized versions, click the **Remove elements** button a few times and try again.  If you add too many blue icons, you could max out the CPU, and then you might not observe a major difference in the results for the two versions.
 
-1. Click **Un-Optimize**.  The blue icons move slower and with more sluggishness again.
+1. Click **Slow**.  The blue icons move slower and with more sluggishness again.
 
 
 <!-- ------------------------------ -->
@@ -90,17 +90,15 @@ When you ran the optimized version of the page, the blue icons move faster.  Why
 
 1. In DevTools, click **Record** (![Record](./index-images/record-icon.png)).  DevTools captures performance metrics as the page runs.
 
-   ![Profile the page](./index-images/evaluate-performance-performance-profiling.png)
+   ![Profile the page](./index-images/profiling.png)
 
 1. Wait a few seconds.
 
 1. Click **Stop**.  DevTools stops recording, processes the data, then displays the results in the **Performance** tool.
 
-   ![The results of the profile](./index-images/evaluate-performance-performance-capture-results.png)
-
+   ![The results of the profile](./index-images/capture-results.png)
 
 These performance results show an overwhelming amount of data, but it will all make more sense shortly.
-
 
 
 <!-- ====================================================================== -->
@@ -110,11 +108,11 @@ Once you have a recording of the page's performance, you can assess the page's p
 
 1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
 
-   ![The CPU chart and Summary panel](./index-images/evaluate-performance-performance-cpu-chart.png)
+   ![The CPU chart and Summary panel](./index-images/cpu-chart.png)
 
 1. Hover over the **CPU** or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of the performance recording.
 
-   ![Hover on a frame](./index-images/evaluate-performance-performance-frame-hover.png)
+   ![Hover on a frame](./index-images/frame-hover.png)
 
 
 <!-- ------------------------------ -->
@@ -128,7 +126,7 @@ Another handy tool is the **Frame Rendering Stats** overlay, which provides real
 
 1. In the **Rendering** tool, turn on **Frame Rendering Stats**.  A new overlay appears in the top-left of your webpage.
 
-   ![The FPS overlay](./index-images/evaluate-performance-fps-meter-overlay.png)
+   ![The FPS overlay](./index-images/fps-meter-overlay.png)
 
 1. When you are done reviewing the FPS data, clear the **Frame Rendering Stats** checkbox to hide the overlay.
 
@@ -140,37 +138,43 @@ After you verified that the animation isn't performing well, the next step is to
 
 1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
 
-   ![The Summary panel](./index-images/evaluate-performance-performance-summary-tab.png)
+   ![The Summary panel](./index-images/summary-tab.png)
 
 1. Expand the **Main** section.  DevTools shows you a flame chart of activity on the main thread, over time.  The x-axis represents the recording, over time.  Each bar represents an event.  A wider bar means that event took longer.  The y-axis represents the call stack.  When events are stacked on top of each other, it means the upper events caused the lower events.
 
-   ![The Main section](./index-images/evaluate-performance-performance-main.png)
+   ![The Main section](./index-images/main.png)
 
 1. There is a lot of data in the recording.  To zoom into a portion of the recording, click and drag in the **Overview** area toward the top of the **Performance** tool.  The **Overview** area includes the **CPU** and **NET** charts (indicated on the right).  The **Main** section and **Summary** panel only display information for the selected portion of the recording.
 
-   ![Zoom into a section](./index-images/evaluate-performance-performance-main-zoomed.png)
+   ![Zoom into a section](./index-images/main-zoomed.png)
 
    Another way to change the selected area is to put focus on the **Main** section, click the background or an event, and then press:
    * `W` to zoom in, `S` to zoom out.
    * `A` to move selection left, `D` to move selection right.
 
-1. Select an **Animation Frame Fired** event.  When a red triangle is displayed at the top right of an event, it's a warning that there might be an issue related to the event.
+1. Click an **Animation Frame Fired** event.
 
-   The **Animation Frame Fired** event occurs whenever a [requestAnimationFrame() callback](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame) is run.
+   When a red triangle is displayed at the top right of an event, it's a warning that there might be an issue related to the event.  The **Animation Frame Fired** event occurs whenever a [requestAnimationFrame() callback](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame) is run.
 
-1. Click the **Animation Frame Fired** event.  The **Summary** panel now shows you information about that event.  Note the **Reveal** link.  After you click it, DevTools highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:96** link.  After you click it, the relevant line in the source code is displayed.
+   The **Summary** panel displays information about that event:
+	
+	![More information about the Animation Frame Fired event](./index-images/animation-frame-fired.png)
 
-   ![More information about the Animation Frame Fired event](./index-images/evaluate-performance-performance-animation-frame-fired.png)
+1. Click the **Reveal** link.  DevTools highlights the event that initiated the **Animation Frame Fired** event.
+	
+1. Click the **app.js:125** link.  The relevant line of source code is displayed in the **Sources** tool.
 
-   After clicking an event, use the arrow keys to select the events next to it.
+1. Zoom in on the **Animation Frame Fired** event and its child events, by using the mouse wheel or trackpad. Or, press **W**.
 
-1. Under the **app.update** event, there's a bunch of purple events, and they each have a red triangle.
+   You can now see the events that occur when a single frame of the animation is rendered. The **update** function is called, which, in turn, calls the **updateSlow** function, which triggers many **Recalculate Style** and **Layout** events:
+   
+   ![The Animation Frame Fired event and its child events](./index-images/animation-frame-children.png)
 
-1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  There is a warning about forced reflows (another word for _layout_).
+1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  There's a warning about "forced reflows" (re-layout).
 
-1. In the **Summary** panel, click the **app.js:72** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.
+1. In the **Summary** panel, click the **app.js:104** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout in the **Sources** tool:
 
-   ![The line of code that caused the forced layout](./index-images/evaluate-performance-sources-app-update.png)
+   ![The line of code that caused the forced layout](./index-images/sources-app-update.png)
 
    The problem with the unoptimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
    <!--
@@ -178,13 +182,10 @@ After you verified that the animation isn't performing well, the next step is to
    -->
 
 
-This article gives you a lot to learn. But now you have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.
-
-
 <!-- ------------------------------ -->
 #### Analyze the optimized version
 
-Using the workflows and tools that you just learned, click **Optimize** on the demo to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
+Using the workflows and tools that you just learned, click **Optimized** on the demo webpage to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
 
 <!-- ------------------------------ -->
@@ -193,29 +194,38 @@ Using the workflows and tools that you just learned, click **Optimize** on the d
 Compare this snippet of JavaScript from the unoptimized version of the app:
 
 ```javascript
-var pos = m.classList.contains("down")
-  ? m.offsetTop + distance
-  : m.offsetTop - distance;
-if (pos < 0) pos = 0;
-if (pos > maxHeight) pos = maxHeight;
-m.style.top = pos + "px";
-if (m.offsetTop === 0) {
-  m.classList.remove("up");
-  m.classList.add("down");
+// Read the current position.
+const currentPos = element.offsetTop;
+// Read the direction.
+const direction = element.dataset.dir;
+// Calculate the next position.
+let nextPos = direction === 'up' ? currentPos - SPEED : currentPos + SPEED;
+
+// If the new position is out of bounds, reset it.
+if (nextPos < 0) {
+  nextPos = 0;
+} else if (nextPos > canvas.offsetHeight) {
+  nextPos = canvas.offsetHeight;
 }
-if (m.offsetTop === maxHeight) {
-  m.classList.remove("down");
-  m.classList.add("up");
+
+// Set the new position on the element.
+element.style.top = `${nextPos}px`;
+
+// Switch the direction if needed.
+if (element.offsetTop === 0) {
+  element.dataset.dir = 'down';
+} else if (element.offsetTop === canvas.offsetHeight) {
+  element.dataset.dir = 'up';
 }
 ```
 
-The above code snippet runs on every frame of the browser rendering loop, for each blue icon on the page.  The `m` variable references a single blue icon.
+The above code snippet runs on every frame of the browser rendering loop, for each blue icon on the page.  The `element` variable references a single blue icon.
 
-In this unoptimized version, we create a `pos` variable that's set to the current position of the icon, to which we add some distance.  The current position of the icon is read by using `m.offsetTop`.
+In this unoptimized version, we create a `nextPos` variable that's set to the current position of the icon, to which we add some distance.  The current position of the icon is read by using `element.offsetTop`.
 
-After making sure that the icon is still within the bounds of the page, we set its new position by using `m.style.top`, which sets inline styles on the element.
+After making sure that the icon is still within the bounds of the page, we set its new position by using `element.style.top`, which sets inline styles on the element.
 
-Finally, we read `m.offsetTop` again, to adjust the direction of the icon.
+Finally, we read `element.offsetTop` again, to adjust the direction of the icon.
 
 
 <!-- ------------------------------ -->
@@ -224,32 +234,31 @@ Finally, we read `m.offsetTop` again, to adjust the direction of the icon.
 The optimized code uses a different sequence of actions to do less work. Here is the same snippet of JavaScript from the optimized version of the app: 
 
 ```javascript
-var pos = parseInt(m.style.top.slice(0, m.style.top.indexOf("px")));
-m.classList.contains("down") ? (pos += distance) : (pos -= distance);
-if (pos < 0) pos = 0;
-if (pos > maxHeight) pos = maxHeight;
-m.style.top = pos + "px";
-if (pos === 0) {
-  m.classList.remove("up");
-  m.classList.add("down");
+// Read the current position.
+const currentPos = parseFloat(element.style.transform.match(/[0-9.]+/)[0]);
+// Read the direction.
+const direction = element.dataset.dir;
+// Calculate the next position.
+let nextPos = direction === 'up' ? currentPos - (SPEED * 100 / canvasHeight) : currentPos + (SPEED * 100 / canvasHeight);
+
+// If the new position is out of bounds, reset it, and switch the direction.
+if (nextPos < 0) {
+  nextPos = 0;
+  element.dataset.dir = 'down';
+} else if (nextPos > 100) {
+  nextPos = 100;
+  element.dataset.dir = 'up';
 }
-if (pos === maxHeight) {
-  m.classList.remove("down");
-  m.classList.add("up");
-}
+
+// Set the new position on the element.
+element.style.transform = `translateY(${nextPos}vh)`;
 ```
 
-In the optimized version, we first set the value of the `pos` variable by reading `m.style.top` instead of using `m.offsetTop`.  Using the element's inline style is faster, because reading `m.offsetTop` forces the browser engine to know where all the elements are on the page, which requires the engine to recalculate the styles and the layout.
+In the optimized version, we first set the value of the `nextPos` variable by reading `element.style.transform` instead of using `element.offsetTop`.  Using the element's inline style is faster, because reading `element.offsetTop` forces the browser engine to know where all the elements are on the page, which requires the engine to recalculate the styles and the layout.
 
-We then set the new position of the icon, like done in the unoptimized version, but we don't read `m.offsetTop` again (like done in the unoptimized version) to adjust the icon's direction.
+We then adjust the direction of the icon, but this time we don't read `element.offsetTop` again like done in the unoptimized version.
 
-The unoptimized code reads and writes the position of the icon from two different places, forcing the browser to recalculate the style and layout on each frame. The optimized version, however, writes and reads the position of the icon in the inline styles only.
-
-
-<!-- ------------------------------ -->
-#### Further possible optimizations
-
-This code could be made even faster by using CSS properties that only require the browser to do compositing, rather than layout. Instead of manipulating the `top` property, which forces the browser to run its layout code again, using the `transform` property would allow the browser to consider each icon as an individual layer, and then display these layers in the correct positions by re-compositing the final image. For example, instead of using `m.style.top = pos + "px";`, we can use `m.style.transform = translateY(pos + "px,");`.
+Finally, we set the new position of the icon, but this time we use `element.style.transform` instead of `element.style.top`. Using `element.style.transform` is faster, because the CSS `transform` property can be applied by the browser rendering engine without having to recalculate the layout of the page. When using the `transform` property, the browser considers each icon as an individual layer, and then displays these layers in the correct positions by re-compositing the final image.
 
 To learn more, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations).
 
@@ -262,11 +271,13 @@ To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rai
 
 To get more comfortable with the **Performance** tool, practice profiling your pages and analyzing the results.
 
-If you have any questions about your results, use the **Send Feedback** icon, press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS), or [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues):
+If you have any questions about your results, click the **Send Feedback** (![Send Feedback icon](./index-images/send-feedback-icon.png)) button on the main toolbar (or press **Alt+Shift+I** on Windows and Linux or **Option+Shift+I** on macOS):
 
-![The **Feedback** icon in the Microsoft Edge DevTools](./index-images/evaluate-performance-feedback-icon.png)
+![The **Send Feedback** icon in Microsoft Edge DevTools](./index-images/feedback-icon.png)
+ 
+Or, [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).
 
-Include screenshots or links to reproducible pages, if possible.
+In your feedback, include screenshots or links to reproducible pages, if possible.
 
 There are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour of the **Performance** tool, but it's only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
