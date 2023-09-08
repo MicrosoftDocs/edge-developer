@@ -116,8 +116,6 @@ Referer: app-info://platform/microsoft-store
 
 Use this feature to measure distinct traffic from your PWA that was installed from the Microsoft Store.  Based on the traffic, you can adjust your app's content to improve the user experience.  This feature is accessible to both client and server code. To access this information on the client side, you can query `document.referrer` in your JavaScript.
 
-This feature was first introduced in Microsoft Edge version 91, and the DOM API was introduced in Microsoft Edge version 93.
-
 
 <!-- ====================================================================== -->
 ## Redirect to locale-specific domains without displaying additional UI
@@ -152,8 +150,6 @@ To prevent displaying the URL and page title:
 When these domain lists are in place, Microsoft Edge no longer shows the additional UI when the principal domain is redirected to the locale-specific domains.
 
 Eventually, the `url_handlers` feature will be replaced by [`scope_extensions`](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md), but that spec is still in development.  `scope_extensions` will produce the same result as `url_handlers`.
-
-This feature was first introduced in Microsoft Edge version 97.
 
 
 <!-- ====================================================================== -->
