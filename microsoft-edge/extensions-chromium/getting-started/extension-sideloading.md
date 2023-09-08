@@ -19,11 +19,11 @@ To sideload an extension into Microsoft Edge:
 
    The **Extensions** pop-up box opens.
 
-1. Click **Manage extensions**.  The **Extensions** page (`edge://extensions`) opens in a new tab:
+1. Click **Manage extensions**.  The **Extensions** page (`edge://extensions`) opens in a new tab.
+
+1. Turn on the **Developer mode** toggle:
 
    ![Turning on Developer Mode](./extension-sideloading-images/part1-developermode-toggle.png)
-
-1. Turn on the **Developer mode** toggle.
 
 1. When installing your extension for the first time, click the **Load unpacked** button.  The **Select the extension directory** dialog opens.
 
