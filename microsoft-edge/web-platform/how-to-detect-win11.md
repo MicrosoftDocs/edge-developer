@@ -48,8 +48,8 @@ The following table shows which browsers support differentiating between Windows
 
 | Browser | Supports differentiation via User-Agent Client Hints? |
 | --- | --- |
-| Microsoft Edge 94+ | Yes |
-| Chrome 95+ | Yes |
+| Microsoft Edge | Yes |
+| Chrome | Yes |
 | Opera | Yes |
 | Firefox | No |
 | Internet Explorer 11 | No |
@@ -134,7 +134,7 @@ To further optimize this flow, the new `Critical-CH` header can be used in addit
 <!-- To edit SVG go to link: http://www.plantuml.com/plantuml/uml/lOz1ImCn48Nl-ol6dkf2-WCMAQrxwLaHBrwcwRCD9DauCz6_RvQYk8XNJmFpFjx7swcnM4snkx4B4YYnGGAxgLeC6LrfSV2XS3PQZJ6WtVMzJ1yAkLqHA_abymXvXz3w6KSDXYkZdIUt9Hsexn_mLg561_09edrFBvcgGXoVM_j0TqzxKfEGpzivKdZdBwxoG9lDPl5nQJg6YE-WdKvT4_chICkK5KlJtdiKS-DX-D5J8jlh96a6HWbj3SU_aF-Pybly5SqZTyYdck8d -->
 ![Requests using Critical-CH and Accept-CH headers](./how-to-detect-win11-images/criticalCH.svg)
 
-Starting with Microsoft Edge version 96, you can use the new `Critical-CH` header to receive desired high entropy headers with optimized performance. 
+You can use the `Critical-CH` header to receive desired high entropy headers with optimized performance.
 
 Remember that `Critical-CH` and `Accept-CH` preferences persist until session cookies are cleared, or until a user clears site data or cookies for a given origin. For more information about `Critical-CH`, refer to [Client Hint Reliability](https://github.com/WICG/client-hints-infrastructure/blob/main/reliability.md).
 

@@ -235,7 +235,7 @@ For a small app, doing a one-off resize like this might be good enough. But for 
 
 *  At least, optimize each image.  This can often create huge savings.
 
-_Optimization_ means running an image through a program that reduces the size of the image file.  For more tips, see [Essential Image Optimization](https://images.guide).
+_Optimization_ means running an image through a program that reduces the size of the image file.  For more tips, see [Optimize your images](https://web.dev/fast/#optimize-your-images) in _Fast load times_ at web.dev.
 
 #### Reduce unused JavaScript
 
