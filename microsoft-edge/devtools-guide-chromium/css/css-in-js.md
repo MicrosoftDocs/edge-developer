@@ -42,7 +42,7 @@ To copy a style rule as JavaScript:
 
    ![Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands](./css-in-js-images/copy-declaration-as-js.png)
 
-This feature is available starting with Microsoft Edge version 93. <!-- delete statement sometime after September 2, 2021 --> To learn more about viewing and changing CSS, see [CSS features reference](reference.md).
+To learn more about viewing and changing CSS, see [CSS features reference](reference.md).
 
 
 <!-- ====================================================================== -->
