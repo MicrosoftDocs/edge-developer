@@ -34,7 +34,7 @@ To open the Command Menu:
 
 1. To open DevTools, right-click a webpage and then select **Inspect**.
 
-1. Click the **Customize and control DevTools** (![Customize icon](./index-images/customize-devtools-icon.png)) menu button, and then select **Run command**:
+1. Click the **Customize and control DevTools** (![Customize icon](./index-images/customize-devtools-icon.png)) button, and then select **Run command**:
 
    ![The Run Command](./index-images/command-menu-options-run-command.png)
 
