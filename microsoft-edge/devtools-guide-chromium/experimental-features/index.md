@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 08/22/2023
+ms.date: 09/11/2023
 ---
 # Experimental features
 
@@ -94,15 +94,15 @@ To turn an experiment on or off in Microsoft Edge:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./index-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
+1. In DevTools, on the main toolbar, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-devtools-icon.png)) button, and then click the **Settings** (![Settings icon](./index-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
 
-1. On the left side of the **Settings** panel, select the **Experiments** page.
+1. On the left side of the **Settings** panel, select the **Experiments** page:
 
    ![The Experiments page in Settings](./index-images/experiments-devtools.png)
 
-1. On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
+1. Select or clear the checkbox for an experiment. Some experiments are selected by default.
 
-1. Click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
+1. Click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) in the upper right of DevTools **Settings**.
 
 1. Click the **Reload DevTools** button.
 
@@ -222,7 +222,7 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 1. Click the **Reload DevTools** button that appears next to the message.
 
-1. The **Protocol monitor** tool is displayed in the **Drawer** at the bottom of DevTools.
+1. The **Protocol monitor** tool is displayed in **Quick View** or the **Drawer** at the bottom of DevTools.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 117.
@@ -669,7 +669,7 @@ Status:
 *  Progressive Web Apps (PWAs)
 *  Other common web development issues
 
-The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
+The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant tool, such as **Network**, **Sources**, or **Elements**:
 
 ![webhint feedback in the Issues panel](./index-images/experiments-webhint.png)
 
@@ -921,19 +921,21 @@ This experiment enables the **Prefetching & Prerendering** section in the **Appl
 
 To learn more about prerendering pages, see [Prerender pages in Chrome for instant page navigations](https://developer.chrome.com/blog/prerender-pages/).
 
-Selecting this experiment checkbox adds the **Preloading** section within the **Application** tool.  The **Preloading** section of the list of pages contains a **Prefetching & Prerendering** page, which contains columns:
-* **Started at**
-* **Type**
-* **Trigger**
-* **URL**
-* **Status**
+Selecting this experiment checkbox adds the **Preloading** section within the **Application** tool:
 
 ![The Preloading page in the Application tool](./index-images/preloading-page-of-application-tool.png)
-
 <!--
-Select an element for more details.
-todo: how select element, where?  that instruction is prominent in UI, so clarify here
+todo: explain UI message: "Select an element for more details"
 -->
+
+The **Preloading** section of the list of pages contains a **Prefetching & Prerendering** page, which contains columns:
+* **Validity**
+* **Location**
+* **URL**
+* **Action**
+* **Status**
+
+Use the dropdown list to select rule sets, such as **All rule sets**.
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 117.
