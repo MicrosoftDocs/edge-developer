@@ -53,7 +53,7 @@ A DevTools _workspace_ lets you save changes that you make to a local copy of th
 The tutorial steps below walk you through this environment setup.
 
 
-<!-- ====================================================================== -->
+<!-- ------------------------------ -->
 #### Limitations
 
 If you're  using a modern framework, it probably transforms your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.
@@ -64,7 +64,7 @@ A workspace is usually able to map the optimized code back to the original sourc
 If you run into issues while using workspaces with your framework of choice, or you identify framework-specific steps that are needed, [start a thread in the Chrome DevTools mailing list](https://groups.google.com/forum/#!forum/google-chrome-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=google-chrome-devtools) to exchange information with the rest of the DevTools community.
                                                                      
 
-<!-- ====================================================================== -->
+<!-- ------------------------------ -->
 #### Related feature: Overrides
 
 **Overrides** is a DevTools feature that’s similar to a workspace. You can use an override when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you don't care about mapping your changes to the source code of the webpage. However, your changes aren’t saved when you refresh the webpage. 
@@ -75,51 +75,60 @@ The **Overrides** feature lets you store a local copy of the webpage files on th
 
 
 <!-- ====================================================================== -->
-
 ## Create the directory of source files
 
 We'll set up the demo files, and then set up DevTools.
 
 1. In another window or tab, go to the [Workspaces demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
 
-1. Create an `app` directory on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, this directory is referred to as `~/Desktop/app`, though you can use a different path.
+1. Create an `app` directory on your desktop, such as `C:\Users\myusername\app\`.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, this directory is referred to as `~/Desktop/app`, though you can use a different path.
 
-1. Install Node.js and npm. For more information, see [Install Node.js and Node Package Manager (npm)](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/install#step-4-save-a-javascript-change-to-disk)
+1. If you haven't already, install Node.js and npm.  For more information, see [Install Node.js and Node Package Manager (npm)](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
 
-1. Start a local web server in `~/Desktop/app`. Go to the `app` folder and then run one of the following commands from the command prompt to start up the web server.<br>
+1. Go to a command prompt, such as the git bash shell.
+
+1. Go to the `app` directory that you created, such as `~/Desktop/app` or `C:/Users/myusername/app/`.  If you use the git bash shell, it's a UNIX shell, so even on Windows, you need to use forward slashes rather than backslashes for directory paths.
+
+1. Run one of the following commands, to start up the web server:<br>
 Node.js option:
 
    ```bash
    # Node.js option
-   cd ~/Desktop/app
-   npx http-server # Node.js
+   cd ~/Desktop/app  # or:  cd C:/Users/myusername/app/
+   npx http-server  # Node.js
    ```
-  
+
+   For more information and options, see [Start the server (npx http-server)](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#start-the-server-npx-http-server) in _Installing the DevTools extension for Visual Studio Code_.
+
    ``` bash
    # Python 2 option
-   cd ~/Desktop/app
-   python -m SimpleHTTPServer # Python 2
+   cd ~/Desktop/app  # or:  cd C:/Users/myusername/app/
+   python -m SimpleHTTPServer  # Python 2
    ```
   
    ``` bash
    # Python 3 option
-   cd ~/Desktop/app
-   python -m http.server # Python 3
+   cd ~/Desktop/app  # or:  cd C:/Users/myusername/app/
+   python -m http.server  # Python 3
    ```
 
-1. Open a tab in Microsoft Edge and go to the locally hosted version of the site. You should be able to access it using these URLs:  `localhost:8080` or `http://0.0.0.0:8080`. **Note:** The default port number for the Python server option is `8000`. The exact [port number](https://wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
+1. Open a tab in Microsoft Edge, and go to the locally hosted version of the site.  You should be able to access it by using `localhost:8080`:
 
    ![The DevTools Workspaces Demo](./index-images/workspaces-workspaces-demo.png)
 
+   Another common equivalent URL is `http://0.0.0.0:8080`.  The default port number for the Python server option is `8000`.  The exact [port number](https://wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
+
+
+<!-- ====================================================================== -->
 ## Define a workspace in DevTools
 
-1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS) to open the DevTools **Console**.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS) to open the DevTools **Console**:
 
    ![The DevTools Console](./index-images/workspaces-workspaces-demo-console.png)
 
 1. Click the **Sources** tab.
 
-1. In the **Navigator** pane (on the left), click the **Filesystem** tab.
+1. In the **Navigator** pane (on the left), click the **Filesystem** tab:
 
    ![The Filesystem tab](./index-images/workspaces-workspaces-demo-sources-filesystem.png)
 
@@ -161,11 +170,14 @@ The color of the `<h1>` element is still set to the new color.  The change remai
 
 **Tip:** You can also change the color by clicking the fucshia-colored swatch to open the color picker to pick a new color. The HEX value for the color you pick is the color name.
 
+
 <!-- ====================================================================== -->
 ## Edit HTML and save changes to the source file
 
 In the **Elements** tool, it's possible to change HTML tagging in a copy of the file that's returned by the server.  However, to save your edits to a local source file, you need to use the **Sources** tool instead of the **Elements** tool.
 
+
+<!-- ------------------------------ -->
 #### Changing HTML from the Elements tool doesn't save changes
 
 You can make changes to the HTML content using the **Elements** tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
@@ -181,7 +193,10 @@ The following steps demonstrate that edits aren't preserved across page refreshe
 1. Open `~/Desktop/app/index.html` in a text editor.  The change that you just made doesn't appear.
 
 1. Refresh the page.  The page reverts to the original title. 
-<!--
+
+
+
+<!-- ------------------------------
 #### Optional: Why it isn't working
 
 > [!NOTE]
@@ -197,6 +212,8 @@ The following steps demonstrate that edits aren't preserved across page refreshe
 In short, the **DOM Tree** `!==` HTML.
 -->
 
+
+<!-- ------------------------------ -->
 #### Changing HTML from the Sources tool saves changes
 
 If you want to save a change to the webpage HTML, edit the HTML in the **Sources** tool with a workspace defined (in the **Filesystem** tab), rather than changing the HTML in the **Elements** tool.
@@ -211,7 +228,7 @@ If you want to save a change to the webpage HTML, edit the HTML in the **Sources
 
 1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change.
 
-1. Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed.
+1. Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed:
 
    ![Change HTML from the Sources tool](./index-images/workspaces-workspaces-demo-sources-page-h1.png)
 
