@@ -137,7 +137,26 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ###### Experimental features
 
-<!-- todo: add --> 
+Additional options used to create a WebView2 Environment to manage custom scheme registration added to WinRT
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* N/A
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2CustomSchemeRegistration` Class
+    * [CoreWebView2CustomSchemeRegistration.AllowedOrigins Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#allowedorigins)
+    * [CoreWebView2CustomSchemeRegistration.SchemeName Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#schemename)
+* `CoreWebView2EnvironmentOptions` Class
+    * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#customschemeregistrations)
+    
+
+##### [Win32/C++](#tab/win32cpp)
+
+* N/A
+
+---
 
 ###### Bug fixes
 
