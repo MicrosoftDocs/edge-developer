@@ -81,12 +81,12 @@ We'll set up the demo files, and then set up DevTools.
 1. In another window or tab, go to the [Workspaces demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
 
 1. Create an `app` directory, such as `~/Desktop/app` or `C:\Users\myusername\app\`.  Copy `index.html`, `../shared/img/logo.png`, `README.md`, `script.js`, and `styles.css` from the demo source code to your `app` directory.  For the rest of the tutorial, this directory is referred to as `~/Desktop/app` or `C:\Users\myusername\app\`, though you can use a different path.
-<!-- 
-on Windows with OneDrive, the result of creating an app dir on your desktop is 
-"C:\Users\myusername\OneDrive - Microsoft\Desktop\app"
-That is not accessible via `cd ~/Desktop/app`; it is accessible via the following (w/ backslashes):
-cd "C:\Users\myusername\OneDrive - Microsoft\Desktop\app"
--->
+   <!-- 
+   on Windows with OneDrive, the result of creating an app dir on your desktop is 
+   "C:\Users\myusername\OneDrive - Microsoft\Desktop\app"
+   That is not accessible via `cd ~/Desktop/app`; it is accessible via the following (w/ backslashes):
+   cd "C:\Users\myusername\OneDrive - Microsoft\Desktop\app"
+   -->
 
 1. If you haven't already, install Node.js and npm.  For more information, see [Install Node.js and Node Package Manager (npm)](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
 
