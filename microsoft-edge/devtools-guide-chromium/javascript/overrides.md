@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/11/2020
+ms.date: 09/14/2023
 ---
 # Override webpage resources with local copies (Overrides tab)
 
