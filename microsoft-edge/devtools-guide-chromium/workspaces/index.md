@@ -245,6 +245,7 @@ If you want to save a change to the webpage HTML, edit the HTML in the **Sources
 ## Edit JavaScript and save changes to the source file
 
 The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console**, while editing files.  The **Quick source** tool gives you just the editor from the **Sources** tool, while any tool is open.
+<!-- todo: avoid Quick source tool and just use Sources tool for this section -->
 
 To open the DevTools code editor alongside other tools:
 
@@ -275,7 +276,7 @@ To open the DevTools code editor alongside other tools:
 
 1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change.
 
-1. Refresh the page.  The **Edit files with Workspaces** hyperlink on the page is now italicized:
+1. Refresh the page.  If needed, click and hold the **Refresh** button and then select **Hard Refresh**.  The **Edit files with Workspaces** hyperlink on the page is now italicized:
 
    ![The link on the page is now italicized](./index-images/workspaces-workspaces-demo-elements-styles-quick-source-script.png)
 
