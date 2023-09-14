@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 09/28/2023
+ms.date: 09/18/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -107,7 +107,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 <!-- ====================================================================== -->
 ## 1.0.2045.28
 
-Release Date: September 18, 2023 <!-- TBD -->
+Release Date: September 18, 2023<!-- todo: finalize -->
 
 [NuGet package for WebView2 SDK 1.0.2045.28](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2045.28)
 
@@ -117,36 +117,45 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ###### Bug fixes
 
-* Disabled Mouse Gesture feature by default (Runtime-only) ([Issue 3737](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3737))
-* Fixed a bug where mousewheel scrolling was intermittently broken for visual hosting (Runtime-only)
-* Fixed a bug where downloading APK files in WebView2 crashes WV2 browser process. (Runtime-only) ([Issue 3569](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3569))
+* Disabled the Mouse Gesture feature by default.  (Runtime-only)  ([Issue #3737](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3737))
+* Fixed a bug where mouse wheel scrolling was intermittently broken for visual hosting.  (Runtime-only)
+* Fixed a bug where downloading APK files in WebView2 crashes the WV2<!--todo: spell out as "WebView2"?  lowercase it?--> browser process.  (Runtime-only)  ([Issue #3569](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3569))
 
+<!-- end of Sep 2023 Release SDK -->
+
+
+<!-- ====================================================================== -->
 ## 1.0.2098-prerelease
 
-Release Date: September 18, 2023  <!-- TBD -->
+Release Date: September 18, 2023<!-- todo: finalize -->
 
 [NuGet package for WebView2 SDK 1.0.2098-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2098-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 119.0.2098.0 or higher.
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 119.0.2098.0 or higher.
 
 #### General
 
 ###### Experimental features
 
-<!-- To be added --> 
+<!-- todo: add --> 
 
 ###### Bug fixes
 
-* Updated Screen Capture UI to remove mention of tabs (Runtime-only)
-* Fixed a bug where PrintAsync doesn't print with the default DPI on the printer. (Runtime-only) ([Issue 3709](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3709))
-* Fix WebView creation failure when app running as a different admin user. (Runtime-only) ([Issue 3738](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3738))
-* Fixed a bug where CoreWebView2EnvironmentOptions.Language property doesn't change accept-language http header. (SDK-only) ([Issue 3635](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3635))
-* Custom URI scheme registration APIs now work in WinRT. See CoreWebView2EnvironmentOptions.CustomSchemeRegistrations. (SDK only)
-* Fixed bug where developer was not able to set an automation name for the WV on WinUI3. (Runtime-only)
-* Fixed bug that runtime exits unexpectedly when calling SetPermissionState API with invalid enum value. (SDK-only)
-* Also enable new inter-process communication implementation for apps using very old SDKs. (Runtime-only)
-* Support longer runtime installation path. (SDK-only)
-* Fixed a bug in the UWP sample app where the text color in the navigation bar on the Browser page was not appropriate for the background color behind the text. (Runtime-only)
+* Updated the Screen Capture UI to remove mention of tabs.  (Runtime-only)
+* Fixed a bug where `PrintAsync` doesn't print using the default DPI on the printer.  (Runtime-only)  ([Issue #3709](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3709))
+* Fix a WebView creation failure when app is running as a different admin user.  (Runtime-only)  ([Issue #3738](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3738))
+* Fixed a bug where the `CoreWebView2EnvironmentOptions.Language` property doesn't change the `accept-language` HTTP header.  (SDK-only)  ([Issue #3635](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3635))
+* Custom URI scheme registration APIs now works in WinRT.  See [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions).  (SDK only)
+<!--todo: exact link.  A .NET link is:
+* [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.customschemeregistrations?view=webview2-dotnet-1.0.1938.49) -->
+* Fixed a bug where the developer was not able to set an automation name for the WebView2 control on WinUI 3.  (Runtime-only)
+* Fixed a bug where the Runtime exits unexpectedly when calling `SetPermissionState` with an invalid enum value.  (SDK-only)
+* Enabled the new inter-process communication implementation for apps that are using very old SDKs.  (Runtime-only)
+* Added support for longer runtime installation paths.  (SDK-only)
+* Fixed a bug in the UWP sample app where the text color in the navigation bar on the Browser page was not appropriate for the background color behind the text.  (Runtime-only)
+
+<!-- end of Sep 2023 Prerelease SDK -->
+
 
 <!-- ====================================================================== -->
 ## 1.0.1938.49
@@ -172,9 +181,9 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 ###### Bug fixes
 
 * Fixed a handle tracking bug where `TextureStream` API usage could fail.  (Runtime-only)
-* Fixed a bug where a WebView2 created in a background thread doesn't come to the foreground when created.  (Runtime-only)  ([Issue 3584](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3584))
+* Fixed a bug where a WebView2 created in a background thread doesn't come to the foreground when created.  (Runtime-only)  ([Issue #3584](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3584))
 * Fixed a bug where the WebView2 content sometimes renders at the incorrect size after changing the display configuration (such as laptop sleeping; remoting; or connecting or disconnecting an external display).  (Runtime-only)  ([Issue 3429](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3429))
-* Fixed a bug where a bluescreen happens when using WebView2 apps on certain hardware configurations.  (Runtime-only)  ([Issue 3679](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3679))
+* Fixed a bug where a bluescreen happens when using WebView2 apps on certain hardware configurations.  (Runtime-only)  ([Issue #3679](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3679))
 
 <!-- end of August 2023 Release SDK -->
 
@@ -222,7 +231,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ###### Bug fixes
 
 * Disabled installing CRX in WebView2.  (Runtime-only)
-* Fixed an initialization failure when the app has a DPI awareness compatibility setting applied.  (Runtime-only)  ([Issue 3008](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3008))
+* Fixed an initialization failure when the app has a DPI awareness compatibility setting applied.  (Runtime-only)  ([Issue #3008](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3008))
 * Fixed a bug where visual hosted owned windows couldn't take character input.  (Runtime-only)
 
 <!-- end of August 2023 Prerelease SDK -->
