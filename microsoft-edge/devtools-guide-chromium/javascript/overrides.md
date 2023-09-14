@@ -17,26 +17,31 @@ You can now take a resource of the current webpage and store it locally.  When y
 <!-- ====================================================================== -->
 ## Setting up your local folder to store Overrides
 
-1. Navigate to the **Sources** tool.
-1. In the **Navigator** pane (on the left), click the **Overrides** tab.  If the **Overrides** tab isn't displayed, click the <code>&#x0226B;</code><!--`≫`--> icon.
+1. Right-click a webpage, such as https://microsoftedge.github.io/Demos/demo-to-do/ and then select **Inspect**.  DevTools opens.
 
-    The **Sources** tool with insufficient space to display the **Overrides** tab:
+1. Select the **Sources** tool.
+
+1. In the **Navigator** pane (on the left), click the **Overrides** tab (grouped with the **Page** tab); if needed, click the **More tabs** (**v**) button:
 
    ![Sources tool with insufficient space to show the overrides option](./overrides-images/javascript-overrides-overflow-menu.png)
 
-    Selecting the **Overrides** tab:
+1. Select the **Overrides** tab and then click the **More tabs** button again to collapse the tabs:
 
    ![Selecting the Overrides tab](./overrides-images/javascript-overrides-menu.png)
 
-1. Select a folder on your local computer to store the resource files that you want to replace.  To search for a folder, click **+ Select folder for overrides**.
+1. Click **+ Select folder for overrides**:
 
    ![Selecting a folder to use for overrides](./overrides-images/javascript-overrides-select-folder.png)
 
-1. DevTools warns you that must have full access to the folder and that you should not reveal any sensitive information.  Select **Allow** to grant access.
+1. In the file navigation dialog, select a folder on your local computer to store the resource files that you want to replace, such as `C:\Users\myusername\overrides`, and then click the **Select Folder** button.
+
+   DevTools warns you that must have full access to the folder and that you should not reveal any sensitive information:
 
    ![Granting DevTools access to a folder](./overrides-images/javascript-overrides-give-access-to-folder.png)
 
-1. In the **Overrides** tab, a checkbox is shown next to **Enable Local Overrides**.  To the right of **Enable Local Overrides** is a **Clear configuration** icon that allows you to delete your local overrides settings.  You are now done setting up your folder, and are ready to replace live resources with local resources.
+1. Click the **Allow** button.
+
+   In the **Overrides** tab, a checkbox is shown next to **Enable Local Overrides**.  To the right of **Enable Local Overrides** is a **Clear configuration** icon that allows you to delete your local overrides settings.  You are now done setting up your folder, and are ready to replace live resources with local resources:
 
    ![Successful setup of an overrides folder](./overrides-images/javascript-overrides-folder-setup-complete.png)
 
@@ -44,54 +49,67 @@ You can now take a resource of the current webpage and store it locally.  When y
 <!-- ====================================================================== -->
 ## Adding files to your Overrides folder
 
-To add files to your overrides folder, open the **Elements** tool and inspect the webpage.  To edit, click the name of the CSS file in the **Styles** inspector.
+Next, add files to your Overrides folder, as follows.  This example will add a CSS file.
 
-Selecting a file in the **Styles** inspector:
+1. Select the **Elements** tool, and then in the **Styles** tab, click the name of a CSS file, such as `to-do-styles.css`:
 
-![Selecting a file in the Styles inspector](./overrides-images/javascript-overrides-select-css-file.png)
+   ![Selecting a file in the Styles inspector](./overrides-images/javascript-overrides-select-css-file.png)
 
-In the **Sources** editor, right-click the file name, and then click **Save for overrides**.
+   The **Sources** tool opens, with the selected file opened in a tab in the editor pane.
 
-In the Sources editor, adding the name of the file to the overrides list:
+1. In the editor pane, right-click the file's tab, such as **to-do-styles.css**, and then select **Override content**:
 
-![In the Sources editor, adding the name of the file to the overrides list](./overrides-images/javascript-overrides-file-name.png)
+   ![Right-click a file name and then select 'Save for overrides'](./overrides-images/javascript-overrides-save-for-overrides.png)
 
-Right-click a file name and then select **Save for overrides**:
+   In the file's tab, a page icon with a purple dot is added, and in the **Overrides** tab, the file is added:
 
-![Right-click a file name and then select 'Save for overrides'](./overrides-images/javascript-overrides-save-for-overrides.png)
+   ![In the Sources editor, adding the name of the file to the overrides list](./overrides-images/javascript-overrides-file-name.png)
 
-The file is stored in your overrides folder.  Verify that DevTools create a folder that is named using the URL of the file with the correct directory structure.  The file is stored inside.  The file name in the editor now also shows a purple dot that indicates that the file is local and not a live one.
+   In this example, the file is listed as: `microsoftedge.github.io/Demos/demo-to-do//styles > to-do-styles.css`
 
-Successfully stored the file in your overrides folder:
+   The file is stored in a new directory that's in your overrides folder (such as in `C:\Users\myusername\overrides`).
+ 
+1. Verify that DevTools created a subfolder that is named using the URL of the file (such as **microsoftedge.github.io**) and contains the correct directory structure, such as `C:\Users\myusername\overrides\microsoftedge.github.io\Demos\demo-to-do\styles`.
 
-![Successfully stored the file in your overrides folder](./overrides-images/javascript-overrides-file-stored.png)
+   The overriding file is stored in this directory.  In DevTools > **Sources** tool > editor pane, the file name shows a purple dot, which indicates that the file is local file that overrides the file that's returned from the web server:
 
-In the following example, you can now change the styles of the webpage.  To add a red border around the file, on the **Styles** editor, copy the following style, and add it to the body element.
+   <!-- todo: resume here -->
+   ![Successfully stored the file in your overrides folder](./overrides-images/javascript-overrides-file-stored.png)
 
-```css
-border: 10px solid firebrick
-```
 
-The file is automatically saved on your computer.  If you refresh the file, the border is displayed and none of your work is lost.
+<!-- ====================================================================== -->
+## Changing the style by using the override file
 
-Changing the webpage styles persistently by editing a file in your overrides folder:
+Continuing from above, you can now change the styles of the webpage by using your local override file:
 
-![Changing the webpage styles persistently by editing a file in your overrides folder](./overrides-images/javascript-overrides-changing-styles.png)
+1. To add a red border around the file, copy the following CSS style property, and then in the **Elements** tool, in the **Styles** tab, add the CSS property to the existing `body` element CSS rule:
 
-On the **Sources** tool, in the **Page** section, right-click a file and then add it to overrides.  Files that are already in your overrides folder have a purple dot on the icon.
+   ```css
+   border: 10px solid firebrick
+   ```
 
-Selecting a file from the **Sources** tool for overrides:
+   The modified CSS file is automatically saved on your computer.  If you refresh the webpage, the border is displayed and none of your work is lost, as it would have been if rendering the CSS file that's returned by the web server instead of using the local override file:
 
-![Selecting a file from the Sources tool for overrides](./overrides-images/javascript-overrides-safe-from-sources.png)
+   ![Changing the webpage styles persistently by editing a file in your overrides folder](./overrides-images/javascript-overrides-changing-styles.png)
 
-Alternatively, on the **Network** tool, right-click a file and then add it to overrides.  When overrides are in effect, files that are located on your computer and not from the live webpage.  When overrides are in effect, on the **Network** tool, locate a warning icon next to the file name.
+1. On the **Sources** tool, in the **Page** section, right-click a file and then add it to overrides.  Files that are already in your overrides folder have a purple dot on the icon.
 
-Selecting a file from the **Network** tool for overrides:
+   Selecting a file from the **Sources** tool for overrides:
 
-![Selecting a file from the Network tool for overrides](./overrides-images/javascript-overrides-network.png)
+   ![Selecting a file from the Sources tool for overrides](./overrides-images/javascript-overrides-safe-from-sources.png)
+
+   Alternatively, on the **Network** tool, right-click a file and then add it to overrides.  When overrides are in effect, files that are located on your computer and not from the live webpage.  When overrides are in effect, on the **Network** tool, locate a warning icon next to the file name.
+
+   Selecting a file from the **Network** tool for overrides:
+
+   ![Selecting a file from the Network tool for overrides](./overrides-images/javascript-overrides-network.png)
 
 
 <!-- ====================================================================== -->
 ## Two-way interaction of overrides
 
 Use the editor provided with the **Sources** tool of DevTools or any editor you want to change the files.  Changes are synced across all the products that access the files in the overrides folder.
+
+
+<!-- ====================================================================== -->
+<!-- ## See also -->
