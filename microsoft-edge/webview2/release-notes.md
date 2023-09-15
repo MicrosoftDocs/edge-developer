@@ -141,7 +141,6 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 * Fixed a bug where the Runtime exits unexpectedly when calling `SetPermissionState` with an invalid enum value.  (SDK-only)
 * Enabled the new inter-process communication implementation for apps that are using very old SDKs.  (Runtime-only)
 * Added support for longer runtime installation paths.  (SDK-only)
-* Fixed a bug in the UWP sample app where the text color in the navigation bar on the Browser page was not appropriate for the background color behind the text.  (Runtime-only)
 
 <!-- end of Sep 2023 Prerelease SDK -->
 
