@@ -131,6 +131,8 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 <!-- ====================================================================== -->
 ## 1.0.2098-prerelease
 
+Note: This section is preliminary and subject to change, including version number, release date, and overall content.<!-- todo: update notice -->
+
 Release Date: September 18, 2023<!-- todo: finalize -->
 
 [NuGet package for WebView2 SDK 1.0.2098-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2098-prerelease)
