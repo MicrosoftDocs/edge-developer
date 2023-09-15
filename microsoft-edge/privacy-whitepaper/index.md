@@ -381,21 +381,19 @@ The family group organizer may stop the data collection from the family safety p
 
 
 <!-- ====================================================================== -->
-## Find on Page 
+## Find on page 
 
-Find on Page allows you to search a web page for important keywords. Open **Settings and more (...)** > **Find on Page**. A search box will appear. Type any keyword or phrase into this search box and the page will highlight all locations on the page where your exact search term appears. You can then move through these terms with the **Previous result** and **Next result** buttons. 
+Find on page allows you to search a web page for important keywords. Open **Settings and more (...)** > **Find on page** or invoke **Ctrl + F shortcut**. A search box will appear. Type any keyword or phrase into this search box and the page will highlight all locations on the page where your exact search term appears. You can then move through these terms with the **Previous result** and **Next result** buttons.
 
-To help you find exactly what you're looking for, Microsoft Edge uses a Microsoft cloud service to find additional related matches for your search.  This only happens when the **Include related matches** toggle in **Find on Page** is turned on.
+By default, the **Find on page** feature sends data to Microsoft to help find other related matches, including synonyms and alternate spellings.
 
-If the **Include related matches** toggle is turned on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection.  The service token doesn't contain any user-identifiable information.  A Microsoft cloud service then processes the text to find results on the page that are related to your search.  The webpage text and search terms sent to Microsoft are both deleted immediately after processing occurs. No data is stored for any period of time.
+Related matches in **Find on page** aren't available in **InPrivate browsing**.
 
-Related matches in **Find on Page** aren't available in **InPrivate** browsing. 
+To stop Microsoft Edge from finding related matches in **Find on page**:
+1. Go to edge://settings/privacy
+2. In the **Services** section, turn off the **Include related matches in Find on page** toggle.
 
-To stop Microsoft Edge from finding related matches in **Find on Page**:
-
-1. Select **Settings and more** (...) > **Find on Page**.
-
-1. Turn off the **Include related matches** toggle.
+If the **Include related matches in Find on page** toggle is turned on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to find results on the page that are related to your search. The webpage text and search terms sent to Microsoft are both deleted immediately after processing occurs. No data is stored for any period of time.
 
 
 <!-- ====================================================================== -->
