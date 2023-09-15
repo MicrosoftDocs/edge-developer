@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/30/2023
+ms.date: 09/19/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -102,6 +102,50 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 -->
 <!-- ====================================================================== -->
 <!-- end of top matter -->
+
+
+<!-- ====================================================================== -->
+## 1.0.2098-prerelease
+
+Note: This section is preliminary and subject to change, including version number, release date, and overall content.<!-- todo: update notice -->
+
+Release Date: September 19, 2023<!-- todo: finalize -->
+
+[NuGet package for WebView2 SDK 1.0.2098-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2098-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 119.0.2098.0 or higher.
+
+
+#### Experimental features
+
+For WinRT, options have been added to manage custom scheme registration when creating a `CoreWebView2Environment`:
+
+* `CoreWebView2CustomSchemeRegistration` Class
+    * [CoreWebView2CustomSchemeRegistration.AllowedOrigins Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#allowedorigins)
+    * [CoreWebView2CustomSchemeRegistration.SchemeName Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#schemename)
+* `CoreWebView2EnvironmentOptions` Class
+    * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#customschemeregistrations)
+
+
+#### Promotions
+
+No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+
+#### Bug fixes
+
+* Updated the Screen Capture UI to remove mention of tabs.  (Runtime-only)
+* Fixed a bug where `PrintAsync` doesn't print using the default DPI on the printer.  (Runtime-only)  ([Issue #3709](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3709))
+* Fix a WebView creation failure when app is running as a different admin user.  (Runtime-only)  ([Issue #3738](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3738))
+* Fixed a bug where the `CoreWebView2EnvironmentOptions.Language` property doesn't change the `accept-language` HTTP header.  (SDK-only)  ([Issue #3635](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3635))
+* Custom URI scheme registration APIs now works in WinRT.  See [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions).  (SDK only)<!--todo: exact link.  A .NET link is: https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.customschemeregistrations?view=webview2-dotnet-1.0.1938.49 -->
+* Fixed a bug that prevented setting an automation name for the WebView2 control on WinUI 3.  (Runtime-only)
+* Fixed a bug where the Runtime exits unexpectedly when calling `SetPermissionState` with an invalid enum value.  (SDK-only)
+* Enabled the new inter-process communication implementation for apps that are using very old SDKs.  (Runtime-only)
+* Added support for longer runtime installation paths.  (SDK-only)
+* Fixed a bug in the UWP sample app where the text color in the navigation bar on the Browser page was not appropriate for the background color behind the text.  (Runtime-only)
+
+<!-- end of Sep 2023 Prerelease SDK -->
 
 
 <!-- ====================================================================== -->
