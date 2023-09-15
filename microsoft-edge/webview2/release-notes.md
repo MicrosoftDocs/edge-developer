@@ -113,17 +113,13 @@ Release Date: September 18, 2023<!-- todo: finalize -->
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 117.0.2045.28 or higher.
 
-#### General
 
-
-<!--
-###### Promotions
+#### Promotions
 
 No additional APIs have been promoted to Stable and added in this Release SDK.
--->
 
 
-###### Bug fixes
+#### Bug fixes
 
 * Disabled the Mouse Gesture feature by default.  (Runtime-only)  ([Issue #3737](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3737))
 * Fixed a bug where mouse wheel scrolling was intermittently broken for visual hosting.  (Runtime-only)
@@ -141,41 +137,24 @@ Release Date: September 18, 2023<!-- todo: finalize -->
 
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 119.0.2098.0 or higher.
 
-#### General
 
-###### Experimental features
+#### Experimental features
 
-For WinRT, additional options for creating a WebView2 Environment to manage custom scheme registration:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* N/A
-
-##### [WinRT/C#](#tab/winrtcsharp)
+For WinRT, options have been added to manage custom scheme registration when creating a `CoreWebView2Environment`:
 
 * `CoreWebView2CustomSchemeRegistration` Class
     * [CoreWebView2CustomSchemeRegistration.AllowedOrigins Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#allowedorigins)
     * [CoreWebView2CustomSchemeRegistration.SchemeName Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#schemename)
 * `CoreWebView2EnvironmentOptions` Class
     * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#customschemeregistrations)
-    
-
-##### [Win32/C++](#tab/win32cpp)
-
-* N/A
-
----
 
 
-<!--
-###### Promotions
+#### Promotions
 
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
--->
 
 
-<!-- ------------------------------ -->
-###### Bug fixes
+#### Bug fixes
 
 * Updated the Screen Capture UI to remove mention of tabs.  (Runtime-only)
 * Fixed a bug where `PrintAsync` doesn't print using the default DPI on the printer.  (Runtime-only)  ([Issue #3709](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3709))
