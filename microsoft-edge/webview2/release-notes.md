@@ -115,11 +115,19 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 #### General
 
+
+<!--
+###### Promotions
+
+No additional APIs have been promoted to Stable and added in this Release SDK.
+-->
+
+
 ###### Bug fixes
 
 * Disabled the Mouse Gesture feature by default.  (Runtime-only)  ([Issue #3737](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3737))
 * Fixed a bug where mouse wheel scrolling was intermittently broken for visual hosting.  (Runtime-only)
-* Fixed a bug where downloading APK files in WebView2 crashes the WV2<!--todo: spell out as "WebView2"?  lowercase it?--> browser process.  (Runtime-only)  ([Issue #3569](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3569))
+* Fixed a bug where downloading APK files in WebView2 crashes the WebView2 browser process.  (Runtime-only)  ([Issue #3569](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3569))
 
 <!-- end of Sep 2023 Release SDK -->
 
@@ -137,7 +145,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ###### Experimental features
 
-Additional options used to create a WebView2 Environment to manage custom scheme registration added to WinRT
+For WinRT, additional options for creating a WebView2 Environment to manage custom scheme registration:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -158,6 +166,15 @@ Additional options used to create a WebView2 Environment to manage custom scheme
 
 ---
 
+
+<!--
+###### Promotions
+
+No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+-->
+
+
+<!-- ------------------------------ -->
 ###### Bug fixes
 
 * Updated the Screen Capture UI to remove mention of tabs.  (Runtime-only)
@@ -654,9 +671,10 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ------------------------------ -->
-<!-- ###### Experimental features -->
+<!-- ###### Experimental features
 
-<!-- no added experimental features this time  ------------------------------ -->
+No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+-->
 
 
 <!-- ------------------------------ -->
@@ -1360,11 +1378,11 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 #### General
 
 <!-- ------------------------------ -->
-###### Experimental Features
+###### Experimental features
 
 
 <!-- ------------------------------ -->
-*  Added AdditionalObjects for WebMessage received:
+*  Added `AdditionalObjects` for WebMessage received:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2228,6 +2246,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
+###### Bug fixes
+
 This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1466-prerelease](#bug-fixes-for-101466-prerelease).
 
 
@@ -3001,6 +3021,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 * [Theming API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1210.39&preserve-view=true) which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
 
 * [Default Download API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1210.39&preserve-view=true) which provides a way to customize the default download location.
+
 
 <!-- ====================================================================== -->
 ## 1.0.1248-prerelease
