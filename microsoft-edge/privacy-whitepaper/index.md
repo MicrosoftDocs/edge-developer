@@ -383,7 +383,7 @@ The family group organizer may stop the data collection from the family safety p
 <!-- ====================================================================== -->
 ## Find on page 
 
-Find on page allows you to search a web page for important keywords.  In a webpage, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  Or, click **Settings** (**..**), and then select **Find on page**. A search box opens. Type a word or phrase into this search box, and the page highlights all locations on the page where your search string appears. You can then move through these terms by clicking the **Previous result** and **Next result** buttons.
+Use the "Find on page" feature to search a webpage for key words.  In a webpage, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  Or, click **Settings** (**..**), and then select **Find on page**.  A search box opens.  Enter a word, phrase, or other string into this search box.  As you type, all occurrences of the string in the page are highlighted. You can then move through the search results by clicking the **Previous result** and **Next result** buttons.
 
 By default, the **Find on page** feature sends data to Microsoft to help find other related matches, including synonyms and alternate spellings.
 
