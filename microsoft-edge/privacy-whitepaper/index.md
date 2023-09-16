@@ -387,7 +387,7 @@ Use the "Find on page" feature to search a webpage for key words.  In a webpage,
 
 By default, the **Find on page** feature sends data to Microsoft to help find other related matches, including synonyms and alternate spellings.
 
-Related matches in **Find on page** aren't available in **InPrivate browsing**.
+Related matches in **Find on page** aren't available when using InPrivate browsing.
 
 To stop Microsoft Edge from finding related matches in **Find on page**:
 1. Go to edge://settings/privacy
