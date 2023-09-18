@@ -105,18 +105,18 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ====================================================================== -->
-## 1.0.2098-prerelease
+## 1.0.2106-prerelease
 
-Release Date: September 19, 2023<!-- todo: finalize -->
+Release Date: September 18, 2023
 
-[NuGet package for WebView2 SDK 1.0.2098-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2098-prerelease)
+[NuGet package for WebView2 SDK 1.0.2106-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2106-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 119.0.2098.0 or higher.
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 119.0.2106.0 or higher.
 
 
 #### Experimental features
 
-For WinRT, options have been added to manage custom scheme registration when creating a `CoreWebView2Environment`:
+* For WinRT, options have been added to manage custom scheme registration when creating a `CoreWebView2Environment`:
 
 * `CoreWebView2CustomSchemeRegistration` Class
     * [CoreWebView2CustomSchemeRegistration.AllowedOrigins Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#allowedorigins)
@@ -124,10 +124,56 @@ For WinRT, options have been added to manage custom scheme registration when cre
 * `CoreWebView2EnvironmentOptions` Class
     * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#customschemeregistrations)
 
+* Adds the `GetProcessInfos` API for host applications to understand which processes are part of their WebView2s. Provides enough information to understand overall performance impact of WebView2 on their application or user's device.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2ProcessExtendedInfo` Class
+    * [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.associatedframeinfos?view=webview2-dotnet-1.0.2106-prerelease&preserve-view=true)
+    * [CoreWebView2ProcessExtendedInfo.ProcessInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.processinfo?view=webview2-dotnet-1.0.2106-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2ProcessExtendedInfo` Class
+    * [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processextendedinfo?view=webview2-winrt-1.0.2106-prerelease&preserve-view=true#associatedframeinfos)
+    * [CoreWebView2ProcessExtendedInfo.ProcessInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processextendedinfo?view=webview2-winrt-1.0.2106-prerelease&preserve-view=true#processinfo)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalEnvironment13 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment13?view=webview2-1.0.2106-prerelease&preserve-view=true)
+    * [ICoreWebView2ExperimentalEnvironment13::GetProcessExtendedInfos](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment13?view=webview2-1.0.2106-prerelease&preserve-view=true#getprocessextendedinfos)
+* [ICoreWebView2ExperimentalFrameInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true)
+    * [ICoreWebView2ExperimentalFrameInfo::get_ParentFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_parentframeinfo)
+    * [ICoreWebView2ExperimentalFrameInfo::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_frameid)
+    * [ICoreWebView2ExperimentalFrameInfo::get_FrameKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_framekind)
+* [ICoreWebView2ExperimentalGetProcessExtendedInfosCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalgetprocessextendedinfoscompletedhandler?view=webview2-1.0.2106-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalProcessExtendedInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfo?view=webview2-1.0.2106-prerelease&preserve-view=true)
+    * [ICoreWebView2ExperimentalProcessExtendedInfo::get_ProcessInfo](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_processinfo)
+    * [ICoreWebView2ExperimentalProcessExtendedInfo::get_AssociatedFrameInfos](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_associatedframeinfos)
+* [ICoreWebView2ExperimentalProcessExtendedInfoCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfocollection?view=webview2-1.0.2106-prerelease&preserve-view=true)
+    * [ICoreWebView2ExperimentalProcessExtendedInfoCollection::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfocollection?view=webview2-1.0.2106-prerelease&preserve-view=true#get_count)
+    * [ICoreWebView2ExperimentalProcessExtendedInfoCollection::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfocollection?view=webview2-1.0.2106-prerelease&preserve-view=true#getvalueatindex)
+
 
 #### Promotions
 
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+* Added source frame info to `NewWindowRequested`, to support identifying the source:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2NewWindowRequestedEventArgs` Class
+    * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs.originalsourceframeinfo?view=webview2-dotnet-1.0.2106-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2NewWindowRequestedEventArgs` Class
+    * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2newwindowrequestedeventargs?view=webview2-winrt-1.0.2106-prerelease&preserve-view=true#originalsourceframeinfo)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2NewWindowRequestedEventArgs3 interface](/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs3?view=webview2-1.0.2106-prerelease&preserve-view=true)
+    * [ICoreWebView2NewWindowRequestedEventArgs3::get_OriginalSourceFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs3?view=webview2-1.0.2106-prerelease&preserve-view=true#get_originalsourceframeinfo)
+
 
 
 #### Bug fixes
