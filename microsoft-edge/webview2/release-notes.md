@@ -141,7 +141,7 @@ n/a; WinRT only
 
 <!-- ------------------------------ -->
 
-* Adds the `GetProcessExtendedInfo` API that provides a snapshot collection of all actively running frames in the associated renderer process. This provides the granularity needed for the host application to know which part of WebView2 is consuming resources (memory, CPU usage, etc.)
+* The `GetProcessExtendedInfo` API provides a snapshot collection of all actively running frames in the associated renderer process. This provides the granularity needed for the host application to know which part of WebView2 is consuming resources, such as memory or CPU usage.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
