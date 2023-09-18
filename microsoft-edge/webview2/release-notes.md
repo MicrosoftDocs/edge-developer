@@ -140,7 +140,8 @@ n/a; WinRT only
 
 
 <!-- ------------------------------ -->
-* Added the Frame Process Info API, enabling host applications to identify which processes are for each WebView2 control, to assess the performance impact of WebView2 on the application and on the user's device.
+
+* Adds the `GetProcessExtendedInfo` API that provides a snapshot collection of all actively running frames in the associated renderer process. This provides the granularity needed for the host application to know which part of WebView2 is consuming resources (memory, CPU usage, etc.)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
