@@ -124,7 +124,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 * `CoreWebView2EnvironmentOptions` Class
     * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2098-prerelease&preserve-view=true#customschemeregistrations)
 
-* Adds the `GetProcessInfos` API for host applications to understand which processes are part of their WebView2s. Provides enough information to understand overall performance impact of WebView2 on their application or user's device.
+* Adds the Frame Process Info API for host applications to understand which processes are part of their WebView2s. Provides enough information to understand overall performance impact of WebView2 on their application or user's device.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
