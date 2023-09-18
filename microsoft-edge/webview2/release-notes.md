@@ -141,17 +141,13 @@ n/a; WinRT only
 
 <!-- ------------------------------ -->
 
-* The `GetProcessExtendedInfo` API provides a snapshot collection of all actively running frames in the associated renderer process. This provides the granularity needed for the host application to know which part of WebView2 is consuming resources, such as memory or CPU usage.
+* The Frame Process Info API provides a snapshot collection of all actively running frames in the associated renderer process. This provides the granularity needed for the host application to know which part of WebView2 is consuming resources, such as memory or CPU usage.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 <!-- todo: add for .NET, like for Win32?
 * `CoreWebView2Environment` Class
     * [CoreWebView2Environment.GetProcessExtendedInfos Method]()
-* [CoreWebView2FrameInfo Class]()
-    * [CoreWebView2FrameInfo.ParentFrameInfo Property]()
-    * [CoreWebView2FrameInfo.FrameId Property]()
-    * [CoreWebView2FrameInfo.FrameKind Property]()
 -->
 * `CoreWebView2ProcessExtendedInfo` Class
     * [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.associatedframeinfos?view=webview2-dotnet-1.0.2106-prerelease&preserve-view=true)
@@ -162,10 +158,6 @@ n/a; WinRT only
 <!-- todo: add for WinRT, like for Win32?
 * `CoreWebView2Environment` Class
     * [CoreWebView2Environment.GetProcessExtendedInfos Method]()
-* [CoreWebView2FrameInfo Class]()
-    * [CoreWebView2FrameInfo.ParentFrameInfo Property]()
-    * [CoreWebView2FrameInfo.FrameId Property]()
-    * [CoreWebView2FrameInfo.FrameKind Property]()
 -->
 * `CoreWebView2ProcessExtendedInfo` Class
     * [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processextendedinfo?view=webview2-winrt-1.0.2106-prerelease&preserve-view=true#associatedframeinfos)
@@ -175,11 +167,6 @@ n/a; WinRT only
 
 * [ICoreWebView2ExperimentalEnvironment13 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment13?view=webview2-1.0.2106-prerelease&preserve-view=true)
     * [ICoreWebView2ExperimentalEnvironment13::GetProcessExtendedInfos method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment13?view=webview2-1.0.2106-prerelease&preserve-view=true#getprocessextendedinfos)
-
-* [ICoreWebView2ExperimentalFrameInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true)<!-- todo: if iface contains add'l members, un-link -->
-    * [ICoreWebView2ExperimentalFrameInfo::get_ParentFrameInfo property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_parentframeinfo)
-    * [ICoreWebView2ExperimentalFrameInfo::get_FrameId property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_frameid)
-    * [ICoreWebView2ExperimentalFrameInfo::get_FrameKind property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_framekind)
 
 * [ICoreWebView2ExperimentalGetProcessExtendedInfosCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalgetprocessextendedinfoscompletedhandler?view=webview2-1.0.2106-prerelease&preserve-view=true)<!-- Handler is Win32-only -->
 
