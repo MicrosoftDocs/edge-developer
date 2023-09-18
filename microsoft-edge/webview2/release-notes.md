@@ -105,30 +105,6 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ====================================================================== -->
-## 1.0.2045.28
-
-Release Date: September 18, 2023
-
-[NuGet package for WebView2 SDK 1.0.2045.28](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2045.28)
-
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 117.0.2045.28 or higher.
-
-
-#### Promotions
-
-No additional APIs have been promoted to Stable and added in this Release SDK.
-
-
-#### Bug fixes
-
-* Disabled the Mouse Gesture feature by default.  (Runtime-only)  ([Issue #3737](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3737))
-* Fixed a bug where mouse wheel scrolling was intermittently broken for visual hosting.  (Runtime-only)
-* Fixed a bug where downloading APK files in WebView2 crashes the WebView2 browser process.  (Runtime-only)  ([Issue #3569](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3569))
-
-<!-- end of Sep 2023 Release SDK -->
-
-
-<!-- ====================================================================== -->
 ## 1.0.2106-prerelease
 
 Release Date: September 19, 2023
