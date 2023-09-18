@@ -173,22 +173,22 @@ n/a; WinRT only
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2ExperimentalEnvironment13 interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment13?view=webview2-1.0.2106-prerelease&preserve-view=true)
-    * [ICoreWebView2ExperimentalEnvironment13::GetProcessExtendedInfos](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment13?view=webview2-1.0.2106-prerelease&preserve-view=true#getprocessextendedinfos)
+    * [ICoreWebView2ExperimentalEnvironment13::GetProcessExtendedInfos method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment13?view=webview2-1.0.2106-prerelease&preserve-view=true#getprocessextendedinfos)
 
 * [ICoreWebView2ExperimentalFrameInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true)<!-- todo: if iface contains add'l members, un-link -->
-    * [ICoreWebView2ExperimentalFrameInfo::get_ParentFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_parentframeinfo)
-    * [ICoreWebView2ExperimentalFrameInfo::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_frameid)
-    * [ICoreWebView2ExperimentalFrameInfo::get_FrameKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_framekind)
+    * [ICoreWebView2ExperimentalFrameInfo::get_ParentFrameInfo property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_parentframeinfo)
+    * [ICoreWebView2ExperimentalFrameInfo::get_FrameId property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_frameid)
+    * [ICoreWebView2ExperimentalFrameInfo::get_FrameKind property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframeinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_framekind)
 
 * [ICoreWebView2ExperimentalGetProcessExtendedInfosCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalgetprocessextendedinfoscompletedhandler?view=webview2-1.0.2106-prerelease&preserve-view=true)<!-- Handler is Win32-only -->
 
 * [ICoreWebView2ExperimentalProcessExtendedInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfo?view=webview2-1.0.2106-prerelease&preserve-view=true)
-    * [ICoreWebView2ExperimentalProcessExtendedInfo::get_ProcessInfo](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_processinfo)
-    * [ICoreWebView2ExperimentalProcessExtendedInfo::get_AssociatedFrameInfos](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_associatedframeinfos)
+    * [ICoreWebView2ExperimentalProcessExtendedInfo::get_ProcessInfo property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_processinfo)
+    * [ICoreWebView2ExperimentalProcessExtendedInfo::get_AssociatedFrameInfos property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfo?view=webview2-1.0.2106-prerelease&preserve-view=true#get_associatedframeinfos)
 
 * [ICoreWebView2ExperimentalProcessExtendedInfoCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfocollection?view=webview2-1.0.2106-prerelease&preserve-view=true)<!-- Collection is Win32-only -->
-    * [ICoreWebView2ExperimentalProcessExtendedInfoCollection::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfocollection?view=webview2-1.0.2106-prerelease&preserve-view=true#get_count)
-    * [ICoreWebView2ExperimentalProcessExtendedInfoCollection::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfocollection?view=webview2-1.0.2106-prerelease&preserve-view=true#getvalueatindex)
+    * [ICoreWebView2ExperimentalProcessExtendedInfoCollection::get_Count property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfocollection?view=webview2-1.0.2106-prerelease&preserve-view=true#get_count)
+    * [ICoreWebView2ExperimentalProcessExtendedInfoCollection::GetValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfocollection?view=webview2-1.0.2106-prerelease&preserve-view=true#getvalueatindex)
 
 ---
 
