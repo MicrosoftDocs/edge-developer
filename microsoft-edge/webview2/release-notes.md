@@ -181,6 +181,10 @@ n/a; WinRT only
 <!-- ------------------------------ -->
 #### Promotions
 
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+
+<!-- ---------- -->
 * Added source frame info to `NewWindowRequested`, to support identifying the source of the request:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
