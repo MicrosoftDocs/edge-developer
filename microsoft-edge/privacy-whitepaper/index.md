@@ -390,7 +390,7 @@ By default, the **Find on page** feature sends data to Microsoft to help find ot
 Related matches in **Find on page** aren't available when using InPrivate browsing.
 
 To stop Microsoft Edge from finding related matches in **Find on page**:
-1. Go to edge://settings/privacy
+1. Go to `edge://settings/privacy`.
 2. In the **Services** section, turn off the **Include related matches in Find on page** toggle.
 
 If the **Include related matches in Find on page** toggle is turned on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to find results on the page that are related to your search. The webpage text and search terms that are sent to Microsoft are deleted immediately after processing occurs. No data is stored for any period of time.
