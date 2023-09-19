@@ -100,6 +100,8 @@ The following sections cover either a Release SDK package (1.0.####.##) or a Pre
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
 
+#### General features
+
 #### Promotions
 No additional APIs have been promoted to Stable and added in this Release SDK.
 The following APIs have been promoted to Stable and are now included in this Release SDK.
@@ -119,6 +121,8 @@ The following APIs have been promoted to Stable and are now included in this Rel
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
 
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
+
+#### General features
 
 #### Experimental APIs
 
