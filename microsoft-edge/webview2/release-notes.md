@@ -91,17 +91,47 @@ SDKs/packages are Prerelease or Release
 
 The following sections cover either a Release SDK package (1.0.####.##) or a Prerelease SDK package (1.0.####-prerelease).
 
-<!-- maintenance notes: version # patterns to check.  to use as a template, copy/paste/modify these lines.
+
+<!-- Release section template -->
+<!-- ======================================================================
 ## 1.0.####.##
+
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
 
-## 1.0.####-prerelease
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
+#### Promotions
+No additional APIs have been promoted to Stable and added in this Release SDK.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+##### [.NET/C#](#tab/dotnetcsharp)
+##### [WinRT/C#](#tab/winrtcsharp)
+##### [Win32/C++](#tab/win32cpp)
+---
+
+#### Bug fixes
 -->
-<!-- ====================================================================== -->
-<!-- end of top matter -->
+
+
+<!-- Prerelease section template -->
+<!-- ======================================================================
+## 1.0.####-prerelease
+
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version ###.0.####.0 or higher.
+
+#### Experimental APIs
+
+#### Promotions
+No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+##### [.NET/C#](#tab/dotnetcsharp)
+##### [WinRT/C#](#tab/winrtcsharp)
+##### [Win32/C++](#tab/win32cpp)
+---
+
+#### Bug fixes
+-->
 
 
 <!-- ====================================================================== -->
@@ -141,7 +171,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ------------------------------ -->
-#### Experimental features
+#### Experimental APIs
 
 
 <!-- ---------- -->
