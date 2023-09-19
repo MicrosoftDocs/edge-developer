@@ -2788,13 +2788,9 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- another section links to here -->
 
 *  Fixed a bug where WPF apps would crash when windows with WebView2 were closed.  ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
-
 *  Fixed a bug that produced simultaneous WebView creation failure.  (Runtime-only)  ([Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703))
-
 *  Fixed print settings paper size to support dimensions as small as 0.01 inches.  (Runtime-only)
-
 *  Fixed a bug where the WebView2 print dialog reset the **Scale** setting to **Fit to printable area** every time.  ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
-
 *  Fixed a bug in the **wv2winrt** tool where a WinMD file wasn't referenced in some projects.
 
 
@@ -3089,15 +3085,10 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 #### Bug fixes
 
 * Fixed an unavoidable crash that occurred in the WPF control's `OnWindowPositionChanged` event. ([Issue #1531](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1531))
-
 * Fixed the issue with `CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess` not working properly in .NET SDK. ([Issue #2363](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2363))
-
 * Fixed a runtime regression that caused some Office Add-ins which use host objects to crash during operations that previously worked. ([Issue #2337](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2337))
-
 * Fixed an issue where WebView2 content can become blurry when moving between monitors with different scaling.
-
 * Fixed a regression to make sure that WebView2 creation fails quickly with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` instead of time out.
-
 * Fixed a bug where changes from Chromium broke WebView2 background color.
 
 
@@ -3175,17 +3166,11 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 #### Bug fixes
 
 * Fixed `ZoomFactor` issue that incorrectly sets `ZoomFactor` value to the maximum value when it is out of bounds.
-
 * Fixed an issue in which WebView2 content can become blurry when moving between monitors with different scaling.
-
 * Fixed a bug where `MouseEvent.movementX` and `MouseEvent.movementY` will always be **0** in visual hosting mode. ([Issue #2220](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2220))
-
 * Fixed log in issue caused by a password regression in WebView2. ([Issue #2291](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2291))
-
 * Fixed a failure caused when a user opens a new app window and the web page does not have a navigation entry assigned.
-
 * Made a runtime change to fix a bug in WinUI 2 (UWP) in which owned windows were not showing up.
-
 * Fixed `ICoreWebView2Frame::PostWebMessage` functionality after source update. ([Issue #2267](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2267))
 
 
@@ -3496,18 +3481,18 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 
 <!-- ------------------------------ -->
-#### Bug fixes
-
-*  Updated `EnsureCoreWebView2Async` to not throw exceptions when the WPF source property is set. ([Issue #1781](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1781))
-*  Fixed a bug where WebView2 crashes after interacting with multiple windows that show a download UI. ([Issue #1723](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1723))
-
-
-<!-- ------------------------------ -->
 #### Promotions
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 *  [PrintToPdf API](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30&preserve-view=true#printtopdf).
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+*  Updated `EnsureCoreWebView2Async` to not throw exceptions when the WPF source property is set. ([Issue #1781](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1781))
+*  Fixed a bug where WebView2 crashes after interacting with multiple windows that show a download UI. ([Issue #1723](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1723))
 
 
 <!-- ====================================================================== -->
@@ -3521,12 +3506,6 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 
 <!-- ------------------------------ -->
-#### Bug fixes
-
-*  Fixed missing WebView2 DLLs (which led to initialization failure) when `PlatformTarget` isn't set in the user's .NET project. ([Issue #1061](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1061))
-
-
-<!-- ------------------------------ -->
 #### Promotions
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
@@ -3535,6 +3514,12 @@ The following APIs have been promoted to Stable and are now included in this Rel
 *  [isSwipeNavigationEnabled property](/microsoft-edge/webview2/reference/win32/icorewebview2settings6?view=webview2-1.0.992.28&preserve-view=true#summary).
 *  [BrowserProcessExited API](/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs?view=webview2-1.0.992.28&preserve-view=true#summary).
 *  [get_Name property](/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs2?view=webview2-1.0.992.28#get_name&preserve-view=true#summary) on `ICoreWebView2NewWindowRequestedEventArgs2` interface.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+*  Fixed missing WebView2 DLLs (which led to initialization failure) when `PlatformTarget` isn't set in the user's .NET project. ([Issue #1061](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1061))
 
 
 <!-- ====================================================================== -->
@@ -3599,6 +3584,16 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
+#### Promotions
+
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+*  `IsSwipeNavigationEnabled`
+*  `BrowserProcessExited`
+*  `OpenBrowserTaskManager`
+
+
+<!-- ------------------------------ -->
 #### Bug fixes
 
 *  Improved how host objects exceptions are caught in your JavaScript code.
@@ -3612,16 +3607,6 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 *  Fixed bugs where an `IDispatch` objects were returned as `IUnknown`.
 
 
-<!-- ------------------------------ -->
-#### Promotions
-
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-*  `IsSwipeNavigationEnabled`
-*  `BrowserProcessExited`
-*  `OpenBrowserTaskManager`
-
-
 <!-- ====================================================================== -->
 ## 1.0.961.33
 
@@ -3633,6 +3618,14 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 
 <!-- ------------------------------ -->
+#### Promotions
+
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
+*  [Client Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.961.33&preserve-view=true#add_clientcertificaterequested).
+
+
+<!-- ------------------------------ -->
 #### Bug fixes
 
 *  Fixed a bug that caused `ERR_SSL_CLIENT_AUTH_CERT_NEEDED` errors. This is a Runtime change.
@@ -3641,14 +3634,6 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 *  Fixed a bug that caused a white flicker when loading WebView2.
 *  Fixed a bug in WebView2 .NET controls where WebView2 windows were blank when created in the background. ([Issue #1077](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1077))
 *  Fixed a bug where settings were not updated when the user navigated to or a new window displayed `about:blank` pages. This is a Runtime change.
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-The following APIs have been promoted to Stable and are now included in this Release SDK.
-
-*  [Client Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.961.33&preserve-view=true#add_clientcertificaterequested).
 
 
 <!-- ====================================================================== -->
@@ -3680,6 +3665,14 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
+#### Promotions
+
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+*  [add_ClientCertificateRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.955-prerelease&preserve-view=true#add_clientcertificaterequested)
+
+
+<!-- ------------------------------ -->
 #### Bug fixes
 
 *  Fixed bug that broke the `edge://downloads` and `edge://history` pages. This change is Runtime-specific.
@@ -3692,14 +3685,6 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 *  Fixed bug when `ExecuteScriptAsync` blocked after several successful runs. This change is Runtime-specific. ([Issue #1348](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1348))
 *  Fixed bug preventing non-ASCII filenames from being used in `ResultFilePath` in `DownloadStartingEventArgs`. ([Issue #1428](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1428))
 *  Fixed bug where the title bar on the default pop-up wasn't displayed completely. This change is Runtime-specific. ([Issue #1016](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1016))
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-*  [add_ClientCertificateRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.955-prerelease&preserve-view=true#add_clientcertificaterequested)
 
 
 <!-- ------------------------------ -->
@@ -3725,15 +3710,6 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 
 <!-- ------------------------------ -->
-#### Bug fixes
-*  Fix bug that broke the `IsBuiltInErrorPageEnabled` property, which turned off the error page that's displayed when there's a navigation failure or render process failure.  This change is Runtime-specific. ([Issue #634](https://github.com/MicrosoftEdge/WebViewFeedback/issues/634))
-*  Fixed an issue where WebView2 controls took focus away from the user's focus.
-*  Fixed bug when `AddScriptToExecuteOnDocumentCreated` didn't work on child windows. ([Issue #935](https://github.com/MicrosoftEdge/WebViewFeedback/issues/935))
-*  Fixed a bug that caused inactive tabs to be automatically discarded. ([Issue #637](https://github.com/MicrosoftEdge/WebViewFeedback/issues/637))
-*  Fixed a bug when a navigation event was interrupted by another navigation event resulting in the Navigation ID of `NavigationCompleted` events to be incorrect. ([Issue #1142](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1142))
-
-
-<!-- ------------------------------ -->
 #### Promotions
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
@@ -3743,6 +3719,15 @@ The following APIs have been promoted to Stable and are now included in this Rel
 *  [get_IsPinchZoomEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902.49&preserve-view=true#get_ispinchzoomenabled).
 *  [The Download APIs](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting).
 *  [AddHostObjectToScriptWithOrigins](/microsoft-edge/webview2/reference/win32/icorewebview2frame?view=webview2-1.0.902-prerelease&preserve-view=true#addhostobjecttoscriptwithorigins) API with iframe element support.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+*  Fix bug that broke the `IsBuiltInErrorPageEnabled` property, which turned off the error page that's displayed when there's a navigation failure or render process failure.  This change is Runtime-specific. ([Issue #634](https://github.com/MicrosoftEdge/WebViewFeedback/issues/634))
+*  Fixed an issue where WebView2 controls took focus away from the user's focus.
+*  Fixed bug when `AddScriptToExecuteOnDocumentCreated` didn't work on child windows. ([Issue #935](https://github.com/MicrosoftEdge/WebViewFeedback/issues/935))
+*  Fixed a bug that caused inactive tabs to be automatically discarded. ([Issue #637](https://github.com/MicrosoftEdge/WebViewFeedback/issues/637))
+*  Fixed a bug when a navigation event was interrupted by another navigation event resulting in the Navigation ID of `NavigationCompleted` events to be incorrect. ([Issue #1142](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1142))
 
 
 <!-- ====================================================================== -->
@@ -3770,6 +3755,20 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
+#### Promotions
+
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+*  [Download API](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting).
+*  [PinchZoom API](/microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_ispinchzoomenabled).
+*  [AddFrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_framecreated).
+*  [AddHostObjectToScriptWithOrigins](/microsoft-edge/webview2/reference/win32/icorewebview2frame?view=webview2-1.0.902-prerelease&preserve-view=true#addhostobjecttoscriptwithorigins) API promoted to Stable with iframe element support.
+*  [Autofill API](/microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902-prerelease&preserve-view=true#get_isgeneralautofillenabled).
+   > [!NOTE]
+   > There is no current API to delete the locally stored general autofill and password autosave information.  Please provide a control to delete the data, which will involve deleting the entire user data folder.
+
+
+<!-- ------------------------------ -->
 #### Bug fixes
 
 *  Fix a bug where mouse left click doesn't dismiss context menu. This change is Runtime-specific.
@@ -3785,20 +3784,6 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 *  Fixed a bug where right-clicking a link crashes the WebView2 host app. This change is Runtime-specific.
 *  Fixed a reliability bug that could crash the host app process when moving to a newer Edge WebView2 Runtime version.
 *  **DEPRECATION**: Officially deprecated the `DefaultBackgroundColor` API for Windows 7.
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-*  [Download API](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting).
-*  [PinchZoom API](/microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_ispinchzoomenabled).
-*  [AddFrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_framecreated).
-*  [AddHostObjectToScriptWithOrigins](/microsoft-edge/webview2/reference/win32/icorewebview2frame?view=webview2-1.0.902-prerelease&preserve-view=true#addhostobjecttoscriptwithorigins) API promoted to Stable with iframe element support.
-*  [Autofill API](/microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902-prerelease&preserve-view=true#get_isgeneralautofillenabled).
-   > [!NOTE]
-   > There is no current API to delete the locally stored general autofill and password autosave information.  Please provide a control to delete the data, which will involve deleting the entire user data folder.
 
 
 <!-- ------------------------------ -->
