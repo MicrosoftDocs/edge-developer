@@ -4292,20 +4292,20 @@ This version of the WebView2 SDK requires Microsoft Edge version 86.0.579.0 or h
 <!-- ------------------------------ -->
 #### All platforms
 
-> [!IMPORTANT]
-> **Announcement**: Evergreen WebView2 Runtime and installer is released for preview.  See [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
+*  > [!IMPORTANT]
+   > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview.  See [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
 
-> [!IMPORTANT]
-> **Announcement**:  The following WebView2 SDK Versions are no longer supported after the next SDK release:
->
-> *  [0.8.190](#08190)
-> *  [0.8.230](#08230)
-> *  [0.8.270](#08270)
-> *  [0.8.314](#08314)
-> *  [0.8.355](#08355)
->
-> The WebView2 SDK Versions are also marked deprecated on nuget.org.  WebView2 recommends staying up to date with the latest version of WebView2.
-
+*  > [!IMPORTANT]
+   > **Announcement**:  The following WebView2 SDK Versions are no longer supported after the next SDK release:
+   >
+   > *  [0.8.190](#08190)
+   > *  [0.8.230](#08230)
+   > *  [0.8.270](#08270)
+   > *  [0.8.314](#08314)
+   > *  [0.8.355](#08355)
+   >
+   > The WebView2 SDK Versions are also marked deprecated on nuget.org.  WebView2 recommends staying up to date with the latest version of WebView2.
+    
 *  Added WebView2 worker thread improvements.  ([Issue #318](https://github.com/MicrosoftEdge/WebViewFeedback/issues/318)).
 *  Turned off the pop-up blocker in WebView2.  See the [IsUserInitiated](/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs?view=webview2-0.9.538&preserve-view=true#get_isuserinitiated) property in the `NewWindowRequested` event.
 *  Ensured WebView2 navigation starting event is run for `about:blank`.  Now, `NavigationStarting` events are run for all navigation, but cancellations for `about:blank` or `srcdoc` of the `iframe` element aren't supported and ignored.
