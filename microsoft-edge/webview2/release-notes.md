@@ -275,7 +275,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ------------------------------ -->
-* Added source frame info to the `NewWindowRequested` event, to identify the source of the request:
+* Added source frame info to the `NewWindowRequested` event arguments, to identify the source of the request:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -298,14 +298,23 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ------------------------------ -->
 #### Bug fixes
 
+
+<!-- ---------- -->
+###### Runtime
+
 * Updated the Screen Capture UI to remove mention of tabs.  (Runtime-only)
 * Fixed a bug where `PrintAsync` doesn't print using the default DPI on the printer.  (Runtime-only)  ([Issue #3709](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3709))
 * Fix a WebView creation failure when app is running as a different admin user.  (Runtime-only)  ([Issue #3738](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3738))
-* Fixed a bug where the `CoreWebView2EnvironmentOptions.Language` property doesn't change the `accept-language` HTTP header.  (SDK-only)  ([Issue #3635](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3635))
-* Custom URI scheme registration APIs now works in WinRT.  See [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions).  (SDK only)<!--todo: exact link.  A .NET link is: https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.customschemeregistrations?view=webview2-dotnet-1.0.1938.49 -->
 * Fixed a bug that prevented setting an automation name for the WebView2 control on WinUI 3.  (Runtime-only)
-* Fixed a bug where the Runtime exits unexpectedly when calling `SetPermissionState` with an invalid enum value.  (SDK-only)
 * Enabled the new inter-process communication implementation for apps that are using very old SDKs.  (Runtime-only)
+
+
+<!-- ---------- -->
+###### SDK
+
+* Fixed a bug where the `CoreWebView2EnvironmentOptions.Language` property doesn't change the `accept-language` HTTP header.  (SDK-only)  ([Issue #3635](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3635))
+* Custom URI scheme registration APIs now works in WinRT.  See [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions).  (SDK-only)<!--todo: exact link.  A .NET link is: https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.customschemeregistrations?view=webview2-dotnet-1.0.1938.49 -->
+* Fixed a bug where the Runtime exits unexpectedly when calling `SetPermissionState` with an invalid enum value.  (SDK-only)
 * Added support for longer runtime installation paths.  (SDK-only)
 
 <!-- end of Sep 2023 Prerelease SDK -->
