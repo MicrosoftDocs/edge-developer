@@ -202,7 +202,7 @@ n/a
 
 
 <!-- ------------------------------ -->
-* The `GetProcessExtendedInfos`<!--aka Frame Process Info--> API provides a snapshot collection of all actively running frames in the associated renderer process. This provides the granularity needed for the host application to know which part of WebView2 is consuming resources, such as memory or CPU usage.
+* The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process.  This API provides the granularity needed for the host application to detect which part of WebView2 is consuming resources, such as memory or CPU usage:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
