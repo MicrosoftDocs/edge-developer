@@ -203,9 +203,9 @@ n/a; WinRT only
     * [ICoreWebView2ExperimentalProcessExtendedInfoCollection::get_Count property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfocollection?view=webview2-1.0.2106-prerelease&preserve-view=true#get_count)
     * [ICoreWebView2ExperimentalProcessExtendedInfoCollection::GetValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessextendedinfocollection?view=webview2-1.0.2106-prerelease&preserve-view=true#getvalueatindex)
 * `COREWEBVIEW2_FRAME_KIND` enum:
-    * [CoreWebView2FrameKind.Embed enum value](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2106-prerelease&preserve-view=true#corewebview2_frame_kind)
-    * [CoreWebView2FrameKind.Object enum value](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2106-prerelease&preserve-view=true#corewebview2_frame_kind)
-    * [CoreWebView2FrameKind.Unknown enum value](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2106-prerelease&preserve-view=true#corewebview2_frame_kind)
+    * [COREWEBVIEW2_FRAME_KIND_EMBED enum value](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2106-prerelease&preserve-view=true#corewebview2_frame_kind)
+    * [COREWEBVIEW2_FRAME_KIND_OBJECT enum value](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2106-prerelease&preserve-view=true#corewebview2_frame_kind)
+    * [COREWEBVIEW2_FRAME_KIND_UNKNOWN enum value](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2106-prerelease&preserve-view=true#corewebview2_frame_kind)
 
 ---
 
