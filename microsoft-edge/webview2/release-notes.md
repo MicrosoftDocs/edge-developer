@@ -3806,7 +3806,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ---------- -->
-#### Bug fixes
+###### Bug fixes
 
 *  Fixed a bug in WebView2 WinForm control where WebView2 window visibility isn't updated properly after parent window is disposed.  ([Issue #1282](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1282) and [Issue #828](https://github.com/MicrosoftEdge/WebViewFeedback/issues/828))
 *  Fixed a bug in WebView2 WPF control that Source property binding in WPF OneWay binding mode isn't working properly.  ([Issue #619](https://github.com/MicrosoftEdge/WebViewFeedback/issues/619) and [Issue #608](https://github.com/MicrosoftEdge/WebViewFeedback/issues/608))
@@ -4513,15 +4513,6 @@ This version of the WebView2 SDK requires Microsoft Edge version 80.0.314.0 or h
 [NuGet package for WebView2 SDK 0.8.270](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.270)
 
 This version of the WebView2 SDK requires Microsoft Edge version 78.0.270.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-*  Visual Hosting APIs
-*  [SetVirtualHostNameToFolderMapping](/microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.790-prerelease&preserve-view=true#setvirtualhostnametofoldermapping)
 
 
 <!-- ------------------------------ -->
