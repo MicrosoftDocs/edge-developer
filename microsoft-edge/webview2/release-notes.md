@@ -303,7 +303,7 @@ n/a
 
 * Fixed a bug where the `CoreWebView2EnvironmentOptions.Language` property doesn't change the `accept-language` HTTP header.  (SDK-only)  ([Issue #3635](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3635))
 * Added support for longer runtime installation paths.  (SDK-only)
-* Custom URI scheme registration APIs now works in WinRT.  (SDK-only):
+* The custom URI scheme registration API now works in WinRT.  (SDK-only):
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
