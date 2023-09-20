@@ -500,15 +500,13 @@ Status:
 *  This checkbox is present in Microsoft Edge Stable 117.
 
 
-
-
 <!-- ====================================================================== -->
 ## Enable "Delete all overrides" temporarily
 <!-- no (?) link -->
 
 _new as of Microsoft Edge 119_
 
-<!-- todo: need text -->
+Adds a **Delete all overrides** menuitem in the right-click menu for folders in the **Overrides** tab of the **Sources** tool.  When you select **Delete all overrides**, a dialog appears: "Are you sure you want to delete all overrides in this folder?"<!-- todo: clarify result of clicking OK button-->
 
 Status:
 *  This checkbox is present in Microsoft Edge Canary 119.
