@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/15/2022
+ms.date: 09/05/2023
 ---
 # Source Maps Monitor tool
 
@@ -23,6 +23,32 @@ To try this feature:
 1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon](./source-maps-monitor-tool-images/more-tools-icon-light-theme.png)) button, and then select the **Source Maps Monitor** tool.
 
    ![The Source Maps Monitor tool](./source-maps-monitor-tool-images/source-maps-monitor-tool.png)
+
+
+<!-- ====================================================================== -->
+## Exclusions and inclusions
+
+The **Source Maps Monitor** tool shows which URL lookups have or haven't been attempted, as configured in filter settings in DevTools **Settings > Symbol Server > Filter behavior**.  For example:
+
+1. Right-click a webpage and then select **Inspect**.  DevTools opens.
+
+1. Click the **Settings** (![Settings icon for DevTools](./source-maps-monitor-tool-images/settings-icon.png)) button, and then select **Symbol Server**.
+
+1. In the **Filter behavior** dropdown list, select **Exclusion List** (or, select **Inclusion List**).  If the **Filter behavior** dropdown list isn't displayed, set the **Symbol Server** settings, as described in the following articles:
+
+   * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md)
+   * [Securely debug original code by using Azure Artifacts symbol server source maps](../javascript/consume-source-maps-from-azure.md)
+   * [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's New in DevTools (Microsoft Edge 115)_.
+
+1. In the **Filter behavior** text box, enter a domain with wildcard to exclude (or, to include), such as: `https://ryanseddon.com/*`
+
+1. Close DevTools **Settings**.
+
+1. In DevTools, select the **Source Maps Monitor** tool.
+
+   The **Source Maps Monitor** tool now indicates excluded (or, included) source map URL lookup attempts:
+
+![Source Maps Monitor tool indicates source map URL lookups attempted](./source-maps-monitor-tool-images/source-maps-monitor-exclusions.png)
 
 
 <!-- ====================================================================== -->
