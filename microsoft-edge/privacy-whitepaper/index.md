@@ -902,7 +902,9 @@ Microsoft Edge offers helpful suggestions on how to organize tabs to save you ti
 
 When two or more tabs are grouped together, Microsoft Edge sends information about the tabs, including the Title and URL, to the Tabs service over HTTPS.  This information is used to generate a relevant name for the Tab Group.
 
-You can also choose to have Microsoft Edge auto-group all of your tabs, by using the **Group Similar Tabs** feature from the **Tab Action** menu.  In addition to the Title and URL, Microsoft Edge also sends information about which tabs opened another tab, and a timestamp of when a tab was opened.  This additional data allows the service to more accurately suggest Tab Groups, to organize your tabs. 
+You can also choose to have Microsoft Edge auto-group all of your tabs, by using the **Group Similar Tabs** feature from the **Tab Action** menu.  In addition to the Title and URL, Microsoft Edge also sends information about which tabs opened another tab, and a timestamp of when a tab was opened.  This additional data allows the service to more accurately suggest Tab Groups, to organize your tabs.
+
+All tab information that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time. 
 
 The Microsoft Edge Tab organization behavior is turned on by default. To turn this behavior off, go to `edge://settings/privacy` and under **Services** turn off the **Let Microsoft Edge help keep your tabs organized** setting:
 
