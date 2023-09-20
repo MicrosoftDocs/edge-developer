@@ -179,29 +179,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-* For WinRT, options have been added to manage custom scheme registration when creating a `CoreWebView2Environment`:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-n/a
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2CustomSchemeRegistration` Class:
-    * [CoreWebView2CustomSchemeRegistration.AllowedOrigins Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.2106-prerelease&preserve-view=true#allowedorigins)
-    * [CoreWebView2CustomSchemeRegistration.SchemeName Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.2106-prerelease&preserve-view=true#schemename)
-
-* `CoreWebView2EnvironmentOptions` Class:
-    * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2106-prerelease&preserve-view=true#customschemeregistrations)
-
-##### [Win32/C++](#tab/win32cpp)
-
-n/a
-
----
-
-
-<!-- ------------------------------ -->
 * The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process. This API enables the host application to detect which part of WebView2 is consuming resources such as memory or CPU usage:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -210,9 +187,9 @@ n/a
     * [CoreWebView2Environment.GetProcessExtendedInfosAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getprocessextendedinfosasync?view=webview2-dotnet-1.0.2106-prerelease&preserve-view=true)
 
 * `CoreWebView2FrameKind` Enum:
-    * [CoreWebView2FrameKind.Unknown Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2framekind?view=webview2-dotnet-1.0.2106-prerelease&preserve-view=true)
     * [CoreWebView2FrameKind.Embed Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2framekind?view=webview2-dotnet-1.0.2106-prerelease&preserve-view=true)
     * [CoreWebView2FrameKind.Object Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2framekind?view=webview2-dotnet-1.0.2106-prerelease&preserve-view=true)
+    * [CoreWebView2FrameKind.Unknown Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2framekind?view=webview2-dotnet-1.0.2106-prerelease&preserve-view=true)
 
 * [CoreWebView2ProcessExtendedInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo?view=webview2-dotnet-1.0.2106-prerelease&preserve-view=true)
     * [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.associatedframeinfos?view=webview2-dotnet-1.0.2106-prerelease&preserve-view=true)
@@ -261,6 +238,29 @@ n/a
 #### Promotions
 
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+* For WinRT, options have been added to manage custom scheme registration when creating a `CoreWebView2Environment`:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+n/a
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2CustomSchemeRegistration` Class:
+    * [CoreWebView2CustomSchemeRegistration.AllowedOrigins Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.2106-prerelease&preserve-view=true#allowedorigins)
+    * [CoreWebView2CustomSchemeRegistration.SchemeName Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.2106-prerelease&preserve-view=true#schemename)
+
+* `CoreWebView2EnvironmentOptions` Class:
+    * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2106-prerelease&preserve-view=true#customschemeregistrations)
+
+##### [Win32/C++](#tab/win32cpp)
+
+n/a
+
+---
 
 
 <!-- ------------------------------ -->
