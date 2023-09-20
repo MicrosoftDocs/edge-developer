@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/30/2023
+ms.date: 09/18/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -105,6 +105,30 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ====================================================================== -->
+## 1.0.2045.28
+
+Release Date: September 18, 2023
+
+[NuGet package for WebView2 SDK 1.0.2045.28](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2045.28)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 117.0.2045.28 or higher.
+
+
+#### Promotions
+
+No additional APIs have been promoted to Stable and added in this Release SDK.
+
+
+#### Bug fixes
+
+* Disabled the Mouse Gesture feature by default.  (Runtime-only)  ([Issue #3737](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3737))
+* Fixed a bug where mouse wheel scrolling was intermittently broken for visual hosting.  (Runtime-only)
+* Fixed a bug where downloading APK files in WebView2 crashes the WebView2 browser process.  (Runtime-only)  ([Issue #3569](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3569))
+
+<!-- end of Sep 2023 Release SDK -->
+
+
+<!-- ====================================================================== -->
 ## 1.0.1938.49
 
 Release Date: August 28, 2023
@@ -128,9 +152,9 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 ###### Bug fixes
 
 * Fixed a handle tracking bug where `TextureStream` API usage could fail.  (Runtime-only)
-* Fixed a bug where a WebView2 created in a background thread doesn't come to the foreground when created.  (Runtime-only)  ([Issue 3584](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3584))
+* Fixed a bug where a WebView2 created in a background thread doesn't come to the foreground when created.  (Runtime-only)  ([Issue #3584](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3584))
 * Fixed a bug where the WebView2 content sometimes renders at the incorrect size after changing the display configuration (such as laptop sleeping; remoting; or connecting or disconnecting an external display).  (Runtime-only)  ([Issue 3429](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3429))
-* Fixed a bug where a bluescreen happens when using WebView2 apps on certain hardware configurations.  (Runtime-only)  ([Issue 3679](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3679))
+* Fixed a bug where a bluescreen happens when using WebView2 apps on certain hardware configurations.  (Runtime-only)  ([Issue #3679](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3679))
 
 <!-- end of August 2023 Release SDK -->
 
@@ -178,7 +202,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 ###### Bug fixes
 
 * Disabled installing CRX in WebView2.  (Runtime-only)
-* Fixed an initialization failure when the app has a DPI awareness compatibility setting applied.  (Runtime-only)  ([Issue 3008](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3008))
+* Fixed an initialization failure when the app has a DPI awareness compatibility setting applied.  (Runtime-only)  ([Issue #3008](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3008))
 * Fixed a bug where visual hosted owned windows couldn't take character input.  (Runtime-only)
 
 <!-- end of August 2023 Prerelease SDK -->
@@ -582,9 +606,10 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 
 <!-- ------------------------------ -->
-<!-- ###### Experimental features -->
+<!-- ###### Experimental features
 
-<!-- no added experimental features this time  ------------------------------ -->
+No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+-->
 
 
 <!-- ------------------------------ -->
@@ -1288,11 +1313,11 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 #### General
 
 <!-- ------------------------------ -->
-###### Experimental Features
+###### Experimental features
 
 
 <!-- ------------------------------ -->
-*  Added AdditionalObjects for WebMessage received:
+*  Added `AdditionalObjects` for WebMessage received:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2156,6 +2181,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### General
 
+###### Bug fixes
+
 This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1466-prerelease](#bug-fixes-for-101466-prerelease).
 
 
@@ -2929,6 +2956,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 * [Theming API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1210.39&preserve-view=true) which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
 
 * [Default Download API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1210.39&preserve-view=true) which provides a way to customize the default download location.
+
 
 <!-- ====================================================================== -->
 ## 1.0.1248-prerelease
