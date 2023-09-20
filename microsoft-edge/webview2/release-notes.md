@@ -303,8 +303,13 @@ n/a
 
 * Fixed a bug where the `CoreWebView2EnvironmentOptions.Language` property doesn't change the `accept-language` HTTP header.  (SDK-only)  ([Issue #3635](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3635))
 * Custom URI scheme registration APIs now works in WinRT.  See [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2106-prerelease#customschemeregistrations).  (SDK-only)
-* Fixed a bug where the Runtime exits unexpectedly when calling `SetPermissionState` with an invalid enum value.  (SDK-only)
 * Added support for longer runtime installation paths.  (SDK-only)
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed a bug where the Runtime exits unexpectedly when calling `SetPermissionState` with an invalid enum value.  (Runtime and SDK)
 
 <!-- end of Sep 2023 Prerelease SDK -->
 
