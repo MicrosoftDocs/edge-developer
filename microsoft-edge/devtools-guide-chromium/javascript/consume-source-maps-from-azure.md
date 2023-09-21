@@ -40,19 +40,19 @@ To make sure that source maps are enabled in DevTools:
 
 
 <!-- ====================================================================== -->
-## Step 2 - Connect DevTools to the Azure Artifacts symbol server
+## Step 2: Connect DevTools to the Azure Artifacts symbol server
 
 DevTools needs to be configured to successfully retrieve the published source maps for your website.
 
 To configure DevTools, you create an Azure Artifacts symbol server connection. There are two types of connections: **Azure Active Directory**, which is the easiest to use, and **Personal Access Token**.
 
-#### Connect to the symbol server with Azure Active Directory
+#### Connect to the symbol server by using Azure Active Directory
 
 1. In DevTools, click **Settings** (![Settings icon](./consume-source-maps-from-azure-images/settings-gear-icon-light-theme.png)) > **Symbol Server**.
 
 1. Click **Add Symbol Server connection** to start creating a new connection.
 
-1. In the **Authorization mode** dropdown, select **Azure Active Directory**.
+1. In the **Authorization mode** dropdown list, select **Azure Active Directory**.
 
    If the **Azure Active Directory** option is disabled, sign in to Microsoft Edge. To learn more, see [Sign in to sync Microsoft Edge across devices](https://support.microsoft.com/microsoft-edge/sign-in-to-sync-microsoft-edge-across-devices-e6ffa79b-ed52-aa32-47e2-5d5597fe4674).
 
@@ -70,7 +70,7 @@ To configure DevTools, you create an Azure Artifacts symbol server connection. T
 
 1. Click the **Close** (![Close settings icon](./consume-source-maps-from-azure-images/close-settings-icon.png)) button  in the upper right to close the **Settings** panel, and then click the **Reload DevTools** button.
 
-#### Connect to the symbol server with a Personal Access Token
+#### Connect to the symbol server by using a Personal Access Token
 
 To connect to the symbol server with a Personal Access Token (PAT), first generate a new PAT in Azure DevOps:
 
@@ -104,7 +104,12 @@ To connect to the symbol server with a Personal Access Token (PAT), first genera
 
 To learn more about PAT, see [Use personal access tokens](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate).
 
-With your new PAT generated, configure DevTools:
+Your new PAT has now been generated.  Next, configure DevTools.
+
+
+<!-- ---------- -->
+###### Configure DevTools
+
 
 1. In DevTools, click **Settings** (![Settings icon](./consume-source-maps-from-azure-images/settings-gear-icon-light-theme.png)) > **Symbol Server**.
 
@@ -114,11 +119,11 @@ With your new PAT generated, configure DevTools:
 
 1. In the **Azure DevOps organization** text box, enter the Azure DevOps organization where you created the PAT.
 
-1. In the **Personal access token** text box, paste your personal access token (PAT).
-
-1. Click **Add** to create the connection.
+1. In the **Personal access token** text box, paste your personal access token (PAT):
 
    ![The Symbol Server configuration screen in DevTools settings, showing the fields required to create a new PAT connection](./consume-source-maps-from-azure-images/create-new-pat-connection.png)
+
+1. Click the **Add** button. The connection is created.
 
 1. Click the **Close** (![Close settings icon](./consume-source-maps-from-azure-images/close-settings-icon.png)) button  in the upper right to close the **Settings** panel, and then click the **Reload DevTools** button.
 
@@ -126,7 +131,7 @@ With your new PAT generated, configure DevTools:
 <!-- ====================================================================== -->
 ## Step 3: Retrieve original code in DevTools
 
-After the above setup steps, when you use DevTools to work on a build of your website for which symbols have been published, you can now see your original source code, instead of the transformed code.
+After doing the above setup steps, when you use DevTools to work on a build of your website for which symbols have been published, you can now see your original source code, instead of the transformed code.
 
 *  In the **Console** tool, links from log messages to source files go to the original files, not the compiled files.
 
@@ -138,15 +143,15 @@ After the above setup steps, when you use DevTools to work on a build of your we
 <!-- ====================================================================== -->
 ## Connect to multiple Azure Artifacts symbol servers
 
-You can configure DevTools to connect to multiple Azure Artifacts symbol servers if you need to fetch sourcemaps from different Azure DevOps organizations for your website.
+To fetch sourcemaps from multiple Azure DevOps organizations, configure DevTools to connect to multiple Azure Artifacts symbol servers, as follows:
 
 1. In DevTools, click **Settings** (![Settings icon](./consume-source-maps-from-azure-images/settings-gear-icon-light-theme.png)) > **Symbol Server**.
 
 1. Click **Add Symbol Server connection** to create an additional connection.
 
-1. Refer to [Connect to the symbol server with Azure Active Directory](#connect-to-the-symbol-server-with-azure-active-directory) or [Connect to the symbol server with a Personal Access Token](#connect-to-the-symbol-server-with-a-personal-access-token) to configure the new connection.
+1. Configure the new connection.  See [Connect to the symbol server with Azure Active Directory](#connect-to-the-symbol-server-with-azure-active-directory) or [Connect to the symbol server with a Personal Access Token](#connect-to-the-symbol-server-with-a-personal-access-token).
 
-To edit or remove an existing connection, hover over the connection, and then click the **Edit** (![Edit icon](./consume-source-maps-from-azure-images/edit-connection-icon.png)) or **Remove** (![Remove icon](./consume-source-maps-from-azure-images/remove-connection-icon.png)) button next to the connection on the **Symbol Server** settings page.
+To edit or remove an existing connection, hover over the connection, and then click the **Edit** (![Edit icon](./consume-source-maps-from-azure-images/edit-connection-icon.png)) or **Remove** (![Remove icon](./consume-source-maps-from-azure-images/remove-connection-icon.png)) button next to the connection on the **Symbol Server** settings page:
 
 ![The remove and edit buttons, on a connection item, in the Symbol Server settings page](./consume-source-maps-from-azure-images/edit-remove-connection.png)
 
@@ -154,7 +159,7 @@ To edit or remove an existing connection, hover over the connection, and then cl
 <!-- ====================================================================== -->
 ## Filter source maps by URL
 
-You can decide which source maps to download, per Azure Artifacts symbol server connection, by using the **Filter behavior** feature.
+To decide which source maps to download via the Azure Artifacts symbol server connection, use the **Filter behavior** feature.
 
 1. In DevTools, click **Settings** (![Settings icon](./consume-source-maps-from-azure-images/settings-gear-icon-light-theme.png)) > **Symbol Server**.
 
@@ -162,7 +167,7 @@ You can decide which source maps to download, per Azure Artifacts symbol server 
 
 1. In the **Filter behavior** dropdown, select either **Exclusion List** to exclude specific source maps, or **Inclusion List** to only include specific source maps.
 
-1. In the text box below the dropdown, enter one URL per line for the source maps that you want to exclude or include.
+1. In the text box below the dropdown, enter one URL per line for the source maps that you want to exclude or include:
 
    ![The inclusion list setting in a symbol server connection edit screen](./consume-source-maps-from-azure-images/filter-inclusion-list.png)
 
