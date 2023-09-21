@@ -1,5 +1,5 @@
 ---
-title: Operating System Regional Data Display
+title: Operating System regional data display
 description: How users and web developers can use the OS regional format in Microsoft Edge for improved site experiences
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/19/2022
 ---
-# Operating System Regional Data Display
+# Operating System regional data display
 
 Microsoft Edge provides operating system (OS) regional preference information to help website authors create regional experiences on their website, when viewing your site using Microsoft Edge. This feature allows website authors to deliver value to users who specifically change their regional preferences in the OS to reflect their personal preferences.
 
@@ -25,7 +25,7 @@ Granting access to this setting allows websites to have visibility into more use
 
 
 <!-- ====================================================================== -->
-## OS Regional Data Display Codes
+## OS regional data display codes
 
 The user's formatting preferences are abstracted into a simple regional code, which is used by web applications to infer the various details noted above about dates, times, and other formatting preferences.
 
@@ -49,7 +49,7 @@ The UI, HTTP header, and API interact as follows:
 
 
 <!-- ====================================================================== -->
-## Regional Data Display options
+## Regional data display options
 
 Users have three options on Microsoft Edge to select the level of information their browser will share about their regions:
 
@@ -80,7 +80,7 @@ Users can disable the sharing of OS regional information by selecting **Never**.
 
 
 <!-- ====================================================================== -->
-## Policy Controls
+## Policy controls
 
 A related new policy in Microsoft Edge, [DefaultShareAdditionalOSRegionSetting](/DeployEdge/microsoft-edge-policies#defaultshareadditionalosregionsetting), provides a setting for corporate or enterprise-level default configurations.  This setting accepts an integer with the following potential values:
 
@@ -99,14 +99,14 @@ In addition, an older policy, [ApplicationLocaleValue](/DeployEdge/microsoft-edg
 We believe that **Limited** is the right option for most users. **Limited** respects the user's regional preferences while introducing the least amount of risk of the website misusing this information.
 
 
-#### Fingerprinting Entropy
+#### Fingerprinting entropy
 
 OS regional information could be misused to compromise the user's privacy.  The regional information would help hackers establish fingerprinting entropy. In combination with many other pre-existing bits of entropy in the platform today, the user could be uniquely identified leading to more potential secondary harm.
 
 While a user's region and language are already available via the web platform, users generally fall into well-recognized regional codes that are similar across geographies. Because the sample sizes are so large, the risk of any specific regional code standing out is small, and thus the risk is small. If the user changes their OS preferences to a unique language + region, websites may be able to identify the anomaly in a population, and uniquely identify the associated user.
 
 
-#### Content Presentation
+#### Content presentation
 
 The OS regional information can also be misused and lead to inconsistency of a website's language presentation. Microsoft Edge provides multiple language and regional APIs to websites developers.  Websites may process regional information in one place, while deriving language preferences from another.
 
@@ -114,7 +114,7 @@ When the language and regional information is self-consistent, then it doesn't r
 
 
 <!-- ====================================================================== -->
-## Developer Details
+## Developer details
 
 The new setting to **Share additional OS regional format** directly impacts the JavaScript `Intl` object's default regional value and all other JavaScript APIs that use the default region (such as the `Date` constructor).
 
