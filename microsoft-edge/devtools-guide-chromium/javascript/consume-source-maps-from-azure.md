@@ -150,7 +150,7 @@ To fetch sourcemaps from multiple Azure DevOps organizations, configure DevTools
 
 1. Click **Add Symbol Server connection** to create an additional connection.
 
-1. Configure the new connection.  See [Connect to the symbol server with Azure Active Directory](#connect-to-the-symbol-server-with-azure-active-directory) or [Connect to the symbol server with a Personal Access Token](#connect-to-the-symbol-server-with-a-personal-access-token).
+1. Configure the new connection.  See [Connect to the symbol server with Azure Active Directory](#connect-to-the-symbol-server-by-using-azure-active-directory) or [Connect to the symbol server with a Personal Access Token](#connect-to-the-symbol-server-by-using-a-personal-access-token).
 
 To edit or remove an existing connection, hover over the connection, and then click the **Edit** (![Edit icon](./consume-source-maps-from-azure-images/edit-connection-icon.png)) or **Remove** (![Remove icon](./consume-source-maps-from-azure-images/remove-connection-icon.png)) button next to the connection on the **Symbol Server** settings page:
 
