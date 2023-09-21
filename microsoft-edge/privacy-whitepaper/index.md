@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 08/23/2023
+ms.date: 09/21/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -385,15 +385,17 @@ The family group organizer may stop the data collection from the family safety p
 
 Use the "Find on page" feature to search a webpage for key words.  In a webpage, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  Or, click **Settings** (**..**), and then select **Find on page**.  A search box opens.  Enter a word, phrase, or other string into this search box.  As you type, all occurrences of the string in the page are highlighted. You can then move through the search results by clicking the **Previous result** and **Next result** buttons.
 
-By default, the **Find on page** feature sends data to Microsoft to help find other related matches, including synonyms and alternate spellings.
+By default, the **Include related matches in Find on page** feature allows **Find on page** to find other related matches, including synonyms and alternate spellings.
+
+When the **Include related matches in Find on page** toggle is turned on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to find results on the page that are related to your search. The webpage text and search terms that are sent to Microsoft are deleted immediately after processing occurs.
 
 Related matches in **Find on page** aren't available when using InPrivate browsing.
 
 To stop Microsoft Edge from finding related matches in **Find on page**:
-1. Go to `edge://settings/privacy`.
-2. In the **Services** section, turn off the **Include related matches in Find on page** toggle.
 
-If the **Include related matches in Find on page** toggle is turned on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to find results on the page that are related to your search. The webpage text and search terms that are sent to Microsoft are deleted immediately after processing occurs. No data is stored for any period of time.
+1. Select **Settings and more** (**...**) > **Settings** > **Privacy, search, and services**, and then scroll down to the **Services** section.  Or, go to `edge://settings/privacy`, and then scroll down to the **Services** section.
+
+1. Turn off the **Include related matches in Find on page** toggle.
 
 
 <!-- ====================================================================== -->
