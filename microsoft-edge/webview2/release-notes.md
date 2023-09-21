@@ -143,7 +143,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 118.0.####.## or higher.
 
 
 <!-- ------------------------------ -->
