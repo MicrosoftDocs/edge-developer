@@ -172,6 +172,8 @@ To decide which source maps to download via the Azure Artifacts symbol server co
 
    ![The inclusion list setting in a symbol server connection edit screen](./consume-source-maps-from-azure-images/filter-inclusion-list.png)
 
+1. Click the **Save** button.
+
    The following wildcards are supported:
 
    | Wildcard | Meaning |
