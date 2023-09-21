@@ -72,7 +72,10 @@ To configure DevTools, you create an Azure Artifacts symbol server connection. T
 
 #### Connect to the symbol server by using a Personal Access Token
 
-To connect to the symbol server with a Personal Access Token (PAT), first generate a new PAT in Azure DevOps:
+To connect to the symbol server by using a Personal Access Token (PAT), first generate a new PAT in Azure DevOps, and then configure DevTools.
+
+<!-- ---------- -->
+###### Generate a new PAT in Azure DevOps
 
 1. Sign in to your Azure DevOps organization by going to `https://dev.azure.com/{yourorganization}`.
 
@@ -106,16 +109,14 @@ To learn more about PAT, see [Use personal access tokens](/azure/devops/organiza
 
 Your new PAT has now been generated.  Next, configure DevTools.
 
-
 <!-- ---------- -->
 ###### Configure DevTools
-
 
 1. In DevTools, click **Settings** (![Settings icon](./consume-source-maps-from-azure-images/settings-gear-icon-light-theme.png)) > **Symbol Server**.
 
 1. Click **Add Symbol Server connection** to start creating a new connection.
 
-1. In the **Authorization mode** dropdown, select **Personal Access Token**.
+1. In the **Authorization mode** dropdown list, select **Personal Access Token**.
 
 1. In the **Azure DevOps organization** text box, enter the Azure DevOps organization where you created the PAT.
 
@@ -165,9 +166,9 @@ To decide which source maps to download via the Azure Artifacts symbol server co
 
 1. Create a new connection or edit an existing connection.
 
-1. In the **Filter behavior** dropdown, select either **Exclusion List** to exclude specific source maps, or **Inclusion List** to only include specific source maps.
+1. In the **Filter behavior** dropdown list, select either **Exclusion List** to exclude specific source maps, or **Inclusion List** to only include specific source maps.
 
-1. In the text box below the dropdown, enter one URL per line for the source maps that you want to exclude or include:
+1. In the text box below the dropdown list, enter one URL per line for the source maps that you want to exclude or include:
 
    ![The inclusion list setting in a symbol server connection edit screen](./consume-source-maps-from-azure-images/filter-inclusion-list.png)
 
