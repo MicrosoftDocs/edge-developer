@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/24/2021
+ms.date: 09/25/2023
 ---
 <!-- Copyright Sam Dutton
 
