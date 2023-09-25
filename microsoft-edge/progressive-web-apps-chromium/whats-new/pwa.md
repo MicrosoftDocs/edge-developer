@@ -32,7 +32,7 @@ The sidebar in Microsoft Edge allows users to easily access popular websites and
 
 To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `edge_side_panel` manifest member.
 
-![Microsoft Edge with one tab opened on a TODO list app, and PWAmp in the sidebar](./pwa-images/using-pwamp-in-sidebar.png)
+![Microsoft Edge with one tab opened in a TODO list app, and PWAmp in the sidebar](./pwa-images/using-pwamp-in-sidebar.png)
 
 To learn more, see [Build PWAs for the sidebar in Microsoft Edge](../how-to/sidebar.md).
 
