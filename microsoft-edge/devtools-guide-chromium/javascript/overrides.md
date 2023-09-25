@@ -69,9 +69,9 @@ Next, add files to your Overrides folder, as follows.  This example will add a C
 
    The file is stored in a new directory that's in your overrides folder (such as in `C:\Users\myusername\overrides`).
  
-1. Verify that DevTools created a subfolder that is named using the URL of the file (such as **microsoftedge.github.io**) and contains the correct directory structure, such as `C:\Users\myusername\overrides\microsoftedge.github.io\Demos\demo-to-do\styles`.  The overriding file is stored in this directory.
+1. In File Explorer or Finder, verify that DevTools created a subfolder that is named using the URL of the file (such as **microsoftedge.github.io**) and contains the correct directory structure, such as `C:\Users\myusername\overrides\microsoftedge.github.io\Demos\demo-to-do\styles`.  The overriding file is stored in this directory.
 
-   In DevTools > **Sources** tool > editor pane, the file name shows a purple dot, which indicates that the file is a local file that overrides the file that's returned from the web server:
+   In the editor pane of the **Sources** tool, a page icon with a purple dot is added to the file's tab. The purple dot indicates that the file is a local file that overrides the file that's returned from the web server:
 
    ![Storing the file in your overrides folder adds a purple dot to the page icon](./overrides-images/javascript-overrides-file-stored.png)
 
@@ -83,17 +83,17 @@ Continuing from above, you can now change the styles of the webpage by using you
 
 1. In DevTools, select the **Elements** (![Elements tool icon](./overrides-images/elements-tool-icon.png)) tool, and then make sure the **Styles** tab is selected.
 
-1. Copy the following CSS style property to the existing `body` element CSS rule that's in your CSS override file, such as `to-do-styles.css`:
+1. Copy the following CSS style property, and then paste it into the existing `body` element CSS rule that's in your CSS override file, such as `to-do-styles.css`:
 
    ```css
    border: 10px solid firebrick
    ```
 
+   ![Changing the webpage styles persistently by editing a file in your overrides folder](./overrides-images/javascript-overrides-changing-styles.png)
+
    A thick red ("firebrick") border is added around the body of the rendered webpage, and the modified CSS file is automatically saved on your computer, in your Overrides directory.
 
-1. Refresh the webpage.  The thick red border remains displayed, and none of your work is lost, as it would have been if rendering the CSS file that's returned by the web server instead of using the local override file:
-
-   ![Changing the webpage styles persistently by editing a file in your overrides folder](./overrides-images/javascript-overrides-changing-styles.png)
+1. Refresh the webpage.  The thick red border remains displayed, and none of your work is lost, as it would have been if rendering the CSS file that's returned by the web server instead of using the local override file.
 
 
 <!-- ====================================================================== -->
@@ -101,7 +101,7 @@ Continuing from above, you can now change the styles of the webpage by using you
 
 1. Continuing from above, select the **Sources** (![Sources icon.](./overrides-images/sources-tool-icon.png)) tool, and then on the left, select the **Page** tab (grouped with the **Overrides** tab).
 
-1. Expand the **styles** folder in the tree of resource files.  Files that are already placed in your overrides folder (by using the **Overrides** tab), such as `to-do-styles.css`, have a purple dot on the icon.
+1. In the tree of resource files for the page, expand the **styles** folder.  Files that are already placed in your overrides folder (by using the **Overrides** tab), such as `to-do-styles.css`, have a purple dot on the icon.
 
 1. Right-click a different file, such as **(index)** (which is `index.html`), and then select **Override content**:
 
