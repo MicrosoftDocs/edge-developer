@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/14/2023
+ms.date: 09/25/2023
 ---
 # Override webpage resources with local copies (Overrides tab)
 
@@ -19,7 +19,7 @@ You can now take a resource of the current webpage and store it locally.  When y
 
 1. Right-click a webpage, such as https://microsoftedge.github.io/Demos/demo-to-do/ and then select **Inspect**.  DevTools opens.
 
-1. Select the **Sources** tool.
+1. Select the **Sources** (![Sources icon](./overrides-images/sources-tool-icon.png)) tool.
 
 1. In the **Navigator** pane (on the left), click the **Overrides** tab (grouped with the **Page** tab); if needed, click the **More tabs** (**v**) button:
 
@@ -69,40 +69,54 @@ Next, add files to your Overrides folder, as follows.  This example will add a C
 
    The file is stored in a new directory that's in your overrides folder (such as in `C:\Users\myusername\overrides`).
  
-1. Verify that DevTools created a subfolder that is named using the URL of the file (such as **microsoftedge.github.io**) and contains the correct directory structure, such as `C:\Users\myusername\overrides\microsoftedge.github.io\Demos\demo-to-do\styles`.
+1. Verify that DevTools created a subfolder that is named using the URL of the file (such as **microsoftedge.github.io**) and contains the correct directory structure, such as `C:\Users\myusername\overrides\microsoftedge.github.io\Demos\demo-to-do\styles`.  The overriding file is stored in this directory.
 
-   The overriding file is stored in this directory.  In DevTools > **Sources** tool > editor pane, the file name shows a purple dot, which indicates that the file is local file that overrides the file that's returned from the web server:
+   In DevTools > **Sources** tool > editor pane, the file name shows a purple dot, which indicates that the file is a local file that overrides the file that's returned from the web server:
 
-   <!-- todo: resume here -->
-   ![Successfully stored the file in your overrides folder](./overrides-images/javascript-overrides-file-stored.png)
+   ![Storing the file in your overrides folder adds a purple dot to the page icon](./overrides-images/javascript-overrides-file-stored.png)
 
 
 <!-- ====================================================================== -->
 ## Changing the style by using the override file
 
-Continuing from above, you can now change the styles of the webpage by using your local override file:
+Continuing from above, you can now change the styles of the webpage by using your local override CSS file (in this example, `to-do-styles.css`).  Add a thick red border around the rendered webpage body, as follows:
 
-1. To add a red border around the file, copy the following CSS style property, and then in the **Elements** tool, in the **Styles** tab, add the CSS property to the existing `body` element CSS rule:
+1. In DevTools, select the **Elements** (![Elements tool icon](./overrides-images/elements-tool-icon.png)) tool, and then make sure the **Styles** tab is selected.
+
+1. Copy the following CSS style property to the existing `body` element CSS rule that's in your CSS override file, such as `to-do-styles.css`:
 
    ```css
    border: 10px solid firebrick
    ```
 
-   The modified CSS file is automatically saved on your computer.  If you refresh the webpage, the border is displayed and none of your work is lost, as it would have been if rendering the CSS file that's returned by the web server instead of using the local override file:
+   A thick red ("firebrick") border is added around the body of the rendered webpage, and the modified CSS file is automatically saved on your computer, in your Overrides directory.
+
+1. Refresh the webpage.  The thick red border remains displayed, and none of your work is lost, as it would have been if rendering the CSS file that's returned by the web server instead of using the local override file:
 
    ![Changing the webpage styles persistently by editing a file in your overrides folder](./overrides-images/javascript-overrides-changing-styles.png)
 
-1. On the **Sources** tool, in the **Page** section, right-click a file and then add it to overrides.  Files that are already in your overrides folder have a purple dot on the icon.
 
-   Selecting a file from the **Sources** tool for overrides:
+<!-- ====================================================================== -->
+## Adding files to Overrides from within other tabs or tools
+
+1. Continuing from above, select the **Sources** (![Sources icon.](./overrides-images/sources-tool-icon.png)) tool, and then on the left, select the **Page** tab (grouped with the **Overrides** tab).
+
+1. Expand the **styles** folder in the tree of resource files.  Files that are already placed in your overrides folder (by using the **Overrides** tab), such as `to-do-styles.css`, have a purple dot on the icon.
+
+1. Right-click a different file, such as **(index)** (which is `index.html`), and then select **Override content**:
 
    ![Selecting a file from the Sources tool for overrides](./overrides-images/javascript-overrides-safe-from-sources.png)
 
-   Alternatively, on the **Network** tool, right-click a file and then add it to overrides.  When overrides are in effect, files that are located on your computer and not from the live webpage.  When overrides are in effect, on the **Network** tool, locate a warning icon next to the file name.
+   In the **Page** tab and **Overrides** tab in the **Sources** tool, the file's icon changes to a page icon with a purple dot (such as for `index.html`), and the file is added to your local drive's Overrides directory.
 
-   Selecting a file from the **Network** tool for overrides:
+1. Select the **Network** (![Network tool icon](./overrides-images/network-tool-icon.png)) tool, right-click a resource file for the webpage, such as **to-do.js**, and then select **Override content**:
 
    ![Selecting a file from the Network tool for overrides](./overrides-images/javascript-overrides-network.png)
+
+   Throughout the DevTools UI, the file's icon changes to a page icon with a purple dot (such as for `to-do.js`), and the file is added to your local drive's Overrides directory.
+
+   When overrides are in effect, resource files that are located on your computer in your Overrides folder are used, rather than resource files that are returned by the web server.
+   <!--When overrides are in effect, on the **Network** tool, there's a yellow warning icon next to the file name.-->
 
 
 <!-- ====================================================================== -->
