@@ -30,7 +30,7 @@ Starting with Microsoft Edge 112, Progressive Web Apps can experimentally opt-in
 
 The sidebar in Microsoft Edge allows users to easily access popular websites and utilities alongside their browser tabs. The content in the sidebar augments the user's primary task by enabling side-by-side browsing and minimizing the need to switch contexts between browser tabs.
 
-To make yoiur PWA ready for pinning to the sidebar in Microsoft Edge, use the `edge_side_panel` manifest member.
+To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `edge_side_panel` manifest member.
 
 ![Microsoft Edge with one tab opened on a TODO list app, and PWAmp in the sidebar](./pwa-images/using-pwamp-in-sidebar.png)
 
