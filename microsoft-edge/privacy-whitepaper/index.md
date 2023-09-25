@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 08/23/2023
+ms.date: 09/21/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -381,21 +381,21 @@ The family group organizer may stop the data collection from the family safety p
 
 
 <!-- ====================================================================== -->
-## Find on Page 
+## Find on page 
 
-Find on Page allows you to search a web page for important keywords. Open **Settings and more (...)** > **Find on Page**. A search box will appear. Type any keyword or phrase into this search box and the page will highlight all locations on the page where your exact search term appears. You can then move through these terms with the **Previous result** and **Next result** buttons. 
+Use the "Find on page" feature to search a webpage for key words.  In a webpage, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  Or, click **Settings** (**..**), and then select **Find on page**.  A search box opens.  Enter a word, phrase, or other string into this search box.  As you type, all occurrences of the string in the page are highlighted. You can then move through the search results by clicking the **Previous result** and **Next result** buttons.
 
-To help you find exactly what you're looking for, Microsoft Edge uses a Microsoft cloud service to find additional related matches for your search.  This only happens when the **Include related matches** toggle in **Find on Page** is turned on.
+By default, the **Include related matches in Find on page** feature allows **Find on page** to find other related matches, including synonyms and alternate spellings.
 
-If the **Include related matches** toggle is turned on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection.  The service token doesn't contain any user-identifiable information.  A Microsoft cloud service then processes the text to find results on the page that are related to your search.  The webpage text and search terms sent to Microsoft are both deleted immediately after processing occurs. No data is stored for any period of time.
+When the **Include related matches in Find on page** toggle is turned on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to find results on the page that are related to your search. The webpage text and search terms that are sent to Microsoft are deleted immediately after processing occurs.
 
-Related matches in **Find on Page** aren't available in **InPrivate** browsing. 
+Related matches in **Find on page** aren't available when using InPrivate browsing.
 
-To stop Microsoft Edge from finding related matches in **Find on Page**:
+To stop Microsoft Edge from finding related matches in **Find on page**:
 
-1. Select **Settings and more** (...) > **Find on Page**.
+1. Select **Settings and more** (**...**) > **Settings** > **Privacy, search, and services**, and then scroll down to the **Services** section.  Or, go to `edge://settings/privacy`, and then scroll down to the **Services** section.
 
-1. Turn off the **Include related matches** toggle.
+1. Turn off the **Include related matches in Find on page** toggle.
 
 
 <!-- ====================================================================== -->
@@ -902,7 +902,9 @@ Microsoft Edge offers helpful suggestions on how to organize tabs to save you ti
 
 When two or more tabs are grouped together, Microsoft Edge sends information about the tabs, including the Title and URL, to the Tabs service over HTTPS.  This information is used to generate a relevant name for the Tab Group.
 
-You can also choose to have Microsoft Edge auto-group all of your tabs, by using the **Group Similar Tabs** feature from the **Tab Action** menu.  In addition to the Title and URL, Microsoft Edge also sends information about which tabs opened another tab, and a timestamp of when a tab was opened.  This additional data allows the service to more accurately suggest Tab Groups, to organize your tabs. 
+You can also choose to have Microsoft Edge auto-group all of your tabs, by using the **Group Similar Tabs** feature from the **Tab Action** menu.  In addition to the Title and URL, Microsoft Edge also sends information about which tabs opened another tab, and a timestamp of when a tab was opened.  This additional data allows the service to more accurately suggest Tab Groups, to organize your tabs.
+
+All tab information that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time. 
 
 The Microsoft Edge Tab organization behavior is turned on by default. To turn this behavior off, go to `edge://settings/privacy` and under **Services** turn off the **Let Microsoft Edge help keep your tabs organized** setting:
 
