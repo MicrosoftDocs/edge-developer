@@ -76,7 +76,7 @@ Within each category of issues, first the errors are listed, then warnings, and 
 
 ![The Issues tool displays Performance issues sorted by severity](./index-images/ordered-by-severity.png)
 
-(The **Severity** dropdown list controls whether Warnings, Errors, Tips, and Info items are listed.)
+The **Severity** dropdown list controls whether Warnings, Errors, Tips, and Info items are listed.  See [Filter by severity](#filter-by-severity) below.
 
 
 <!-- ====================================================================== -->
@@ -114,11 +114,10 @@ To open a linked tool from an entry in the **Issues** tool:
 
 1. As described above, open a webpage, open DevTools, select the **Issues** tool, and then expand an issue.
 
-<!-- Elements link not present
-1. In **AFFECTED RESOURCES** > **Open in**, click the tool name, such as **Elements**:
-
+   <!-- Elements link not present
+   1. In **AFFECTED RESOURCES** > **Open in**, click the tool name, such as **Elements**:
    ![Select a tool, to open an affected resource from within the Issues tool](./index-images/affected-resource-opens-elements-tool.png)
--->
+   -->
 
 1. In the **AFFECTED RESOURCES** section, in an **Open in** link, click the tool name, such as **Network**:
 
