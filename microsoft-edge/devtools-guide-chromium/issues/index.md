@@ -43,42 +43,57 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 1. Go to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab or window.
 
-1. Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter](./index-images/issues-counter-icon.png)) appears in the upper right corner of DevTools.
+1. Right-click the webpage and then select **Inspect**.  DevTools opens.
+
+<!--
+   After a few seconds, the **Issues counter** (![Issues counter](./index-images/issues-counter-icon.png)) appears in the upper right corner of DevTools.
 
 1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
+-->
 
-1. Select the **Issues counter**.  The **Issues** tool opens with issues grouped into different categories.
+1. In the Quick View toolbar at the bottom of DevTools, select the **Issues** tab.
+
+   If Quick View isn't displayed, select **Customize and control DevTools** (**...**), and then select **Toggle Quick View panel** (**Esc**).  If the **Quick View** toolbar doesn't have the **Issues** tab, in the **Quick View** toolbar, click the **More tools** (**+**) button, and then select **Issues**.
+
+   The **Issues** tool groups issues into categories, such as **Accessibility**, **Performance**, **Security**, and **Other**:
 
    ![Categories of issues in the Issues tool on the demo page](./index-images/categories.png)
 
 
 ### Other ways to open the Issues tool
 
-There are several additional ways to open the **Issues** tool:
-*  Click the **More Tools** (**+**) menu in the main panel or the **Drawer**, and then select **Issues**.
+There are multiple ways to open the **Issues** tool, such as:
+
+*  In the **Activity Bar** or in **Quick View**, click the **More tools** (**+**) button, and then select **Issues**.
+*  In the **Elements** tool, in the DOM tree, find a wavy-underlined element name, and then press and hold **Shift** and click the element.  Or, right-click a wavy-underlined element, and then select **View issues**.
+<!-- legacy ui
 *  Select **Customize and control DevTools** > **More tools** > **Issues**.
-*  In the DOM tree in the **Elements** tool, press **Shift** and then click a wavy-underlined element name.  Or, open the context menu on a wavy-underlined element and then select **View issues**.
+-->
 
 
 ### Issues are automatically ordered by severity
 
-Within each category of issues, first the errors are listed, then warnings, and then tips.
+Within each category of issues, first the errors are listed, then warnings, and then tips:
 
 ![The Issues tool displays Performance issues sorted by severity](./index-images/ordered-by-severity.png)
+
+(The **Severity** dropdown list controls whether Warnings, Errors, Tips, and Info items are listed.)
 
 
 <!-- ====================================================================== -->
 ## Expand entries in the Issues tool
 
-The **Issues** tool presents additional documentation and recommended fixes to apply to each issue.  To expand an issue to get this additional information, select an issue, as follows.
+The **Issues** tool presents additional documentation and recommended fixes to apply to each issue.  To expand an issue to get this additional information:
 
-1. Open the [accessibility-testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab, and then open DevTools.
+1. Open a webpage and the **Issues** tool, as described above.
 
+<!-- legacy ui
 1. Open the **Issues** tool by selecting the **Issues counter** (![Issues counter](./index-images/issues-counter-icon.png)).
+-->
 
-1. Select an issue, to expand the issue.
+1. Select an issue.  The issue expands to show details:
 
-   ![The Issues tool, displaying additional information on how to fix the issue](./index-images/initial-view-accessibility-page.png)
+   ![An issue expanded in the Issues tool, displaying additional information on how to fix the issue](./index-images/initial-view-accessibility-page.png)
 
 Each displayed issue has the following components:
 
@@ -96,21 +111,26 @@ Each displayed issue has the following components:
 
 An issue in the **Issues** tool may include one or more links that open different tools, such as the **Elements**, **Sources**, or **Network** tool. You can open one of these tools to perform additional troubleshooting steps.
 
-To open a linked tool from the **Issues** tool:
+To open a linked tool from an entry in the **Issues** tool:
 
-1. As described in the previous section, open the demo page and then expand an issue in the **Issues** tool.
+1. As described above, open a webpage, open DevTools, select the **Issues** tool, and then expand an issue.
 
-1. In **AFFECTED RESOURCES** > **Open in**, select the tool name.  The affected resource is displayed in the selected tool:
+<!-- Elements link not present
+1. In **AFFECTED RESOURCES** > **Open in**, click the tool name, such as **Elements**:
 
    ![Select a tool, to open an affected resource from within the Issues tool](./index-images/affected-resource-opens-elements-tool.png)
+-->
 
-    An expanded issue may have a **Network** link, to display the affected resource in the **Network** tool:
+1. In the **AFFECTED RESOURCES** section, in an **Open in** link, click the tool name, such as **Network**:
 
    ![The Network tool opens when you select a Network resource link](./index-images/view-issue-in-network.png)
+
+   The affected resource is displayed in the indicated tool.
 
 
 <!-- ====================================================================== -->
 ## Open issues from the DOM tree
+<!-- resume here -->
 
 If an element has an associated issue, the DOM tree in the **Elements** tool shows a wavy underline under the element name.  Right-click the element and then select **View issues**.  Or, press and hold **Shift** and then click the element with the wavy underline.
 
