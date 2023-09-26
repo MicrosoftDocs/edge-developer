@@ -60,10 +60,10 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 <!-- ------------------------------ -->
 #### Other ways to open the Issues tool
 
-There are multiple ways to open the **Issues** tool, such as:
-
 *  In the **Activity Bar** or in **Quick View**, click the **More tools** (**+**) button, and then select **Issues**.
+
 *  In the **Elements** tool, in the DOM tree, find a wavy-underlined element name, and then press and hold **Shift** and click the element.  Or, right-click a wavy-underlined element, and then select **View issues**.
+
 <!-- legacy ui
 *  Select **Customize and control DevTools** > **More tools** > **Issues**.
 -->
