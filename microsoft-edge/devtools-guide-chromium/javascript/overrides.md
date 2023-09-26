@@ -11,13 +11,13 @@ ms.date: 09/25/2023
 
 Sometimes you need to try out some possible fixes for a webpage, but you don't have access to the source files, or changing the page requires a slow and complex build process.  You can debug and fix all kind of problems in DevTools.  But the changes don't persist; after you refresh the local file, all your work is gone.  The Overrides feature in the [Sources](../sources/index.md) tool helps you solve this problem.
 
-You can now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser doesn't load the resource from the server.  Instead, the browser replaces the server resource with your local copy of the resource.
+You can now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser doesn't load the resource from the server; instead, the browser replaces the server resource with your local copy of the resource.
 
 
 <!-- ====================================================================== -->
 ## Setting up your local folder to store Overrides
 
-1. Right-click a webpage, such as https://microsoftedge.github.io/Demos/demo-to-do/ and then select **Inspect**.  DevTools opens.
+1. Right-click a webpage, such as https://microsoftedge.github.io/Demos/demo-to-do/, and then select **Inspect**.  DevTools opens.
 
 1. Select the **Sources** (![Sources icon](./overrides-images/sources-tool-icon.png)) tool.
 
@@ -65,7 +65,7 @@ Next, add files to your Overrides folder, as follows.  This example will add a C
 
    ![In the Sources editor, adding the name of the file to the overrides list](./overrides-images/javascript-overrides-file-name.png)
 
-   In this example, the file is listed as: `microsoftedge.github.io/Demos/demo-to-do//styles > to-do-styles.css`
+   In this example, the file is listed as: `microsoftedge.github.io/Demos/demo-to-do/styles > to-do-styles.css`
 
    The file is stored in a new directory that's in your overrides folder (such as in `C:\Users\myusername\overrides`).
  
@@ -93,7 +93,9 @@ Continuing from above, you can now change the styles of the webpage by using you
 
    A thick red ("firebrick") border is added around the body of the rendered webpage, and the modified CSS file is automatically saved on your computer, in your Overrides directory.
 
-1. Refresh the webpage.  The thick red border remains displayed, and none of your work is lost, as it would have been if rendering the CSS file that's returned by the web server instead of using the local override file.
+1. Refresh the webpage.
+
+   The thick red border remains displayed, and none of your work is lost, as it would have been if rendering the CSS file that's returned by the web server instead of using the local override file.
 
 
 <!-- ====================================================================== -->
