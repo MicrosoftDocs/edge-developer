@@ -45,11 +45,8 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 1. Right-click the webpage and then select **Inspect**.  DevTools opens.
 
-<!--
-   After a few seconds, the **Issues counter** (![Issues counter](./index-images/issues-counter-icon.png)) appears in the upper right corner of DevTools.
-
-1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
--->
+   <!--After a few seconds, the **Issues counter** (![Issues counter](./index-images/issues-counter-icon.png)) appears in the upper right corner of DevTools.
+   1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.-->
 
 1. In the Quick View toolbar at the bottom of DevTools, select the **Issues** tab.
 
@@ -60,7 +57,8 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
    ![Categories of issues in the Issues tool on the demo page](./index-images/categories.png)
 
 
-### Other ways to open the Issues tool
+<!-- ------------------------------ -->
+#### Other ways to open the Issues tool
 
 There are multiple ways to open the **Issues** tool, such as:
 
@@ -71,7 +69,8 @@ There are multiple ways to open the **Issues** tool, such as:
 -->
 
 
-### Issues are automatically ordered by severity
+<!-- ------------------------------ -->
+#### Issues are automatically ordered by severity
 
 Within each category of issues, first the errors are listed, then warnings, and then tips:
 
@@ -87,9 +86,9 @@ The **Issues** tool presents additional documentation and recommended fixes to a
 
 1. Open a webpage and the **Issues** tool, as described above.
 
-<!-- legacy ui
-1. Open the **Issues** tool by selecting the **Issues counter** (![Issues counter](./index-images/issues-counter-icon.png)).
--->
+   <!-- legacy ui
+   1. Open the **Issues** tool by selecting the **Issues counter** (![Issues counter](./index-images/issues-counter-icon.png)).
+   -->
 
 1. Select an issue.  The issue expands to show details:
 
@@ -158,7 +157,9 @@ To display an issue for elements with wavy underlines in the DOM tree:
 
 To reduce the number of issues displayed in the **Issues** tool, you can filter the list by severity, browser, and origin.
 
-### Filter by severity
+
+<!-- ------------------------------ -->
+#### Filter by severity
 
 By default, only errors and warnings are displayed. To display issues with other severity levels:
 
@@ -168,7 +169,9 @@ By default, only errors and warnings are displayed. To display issues with other
 
 ![The Issues panel with the Severity dropdown expanded, showing the different levels that can be selected](./index-images/severity-filter.png)
 
-### Filter by browser
+
+<!-- ------------------------------ -->
+#### Filter by browser
 
 Issues that belong to the **Compatibility** category can also be filtered by browser. By default, the following browsers are tested:
 
@@ -189,7 +192,9 @@ To change the list of browsers that are tested for compatibility issues:
 
 ![The Issues panel with the Browser dropdown expanded, showing the different browsers that can be selected](./index-images/browser-filter.png)
 
-### Filter by origin
+
+<!-- ------------------------------ -->
+#### Filter by origin
 
 By default, the **Issues** tool only lists issues that pertain to the current web page's code. To include issues that are caused by third-party libraries or frameworks loaded by the web page too, select the **Include third-party issues** checkbox.
 
