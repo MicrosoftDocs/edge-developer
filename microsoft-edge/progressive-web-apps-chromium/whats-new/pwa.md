@@ -42,7 +42,7 @@ To learn more, see [Build PWAs for the sidebar in Microsoft Edge](../how-to/side
 
 Microsoft Edge 108 introduces experimental support for Progressive Web Apps to define their own widgets in the Widgets Board in Windows 11.
 
-Widgets are defined in your PWA manifest file, by using the `widgets` manifest member. To make widgets easy to create and adapt to various operating system widgets dashboards in the future, widgets are displayed using Adaptive Cards templates. Microsoft Edge also makes it possible to handle user actions on PWA widgets from your service worker file.
+Widgets are defined in your PWA manifest file, by using the `widgets` manifest member. Widgets are displayed by using Adaptive Cards templates, which makes widgets easy to create, and makes them easy to adapt to various operating system widgets dashboards in the future. Microsoft Edge also makes it possible to handle user actions on PWA widgets from your service worker file.
 
 ![Windows Widgets Board, next to the PWAmp demo app. The Widgets Board contains the PWAmp mini player widget, showing the current song playing in the PWAmp app](./pwa-images/pwamp-widget.png)
 
