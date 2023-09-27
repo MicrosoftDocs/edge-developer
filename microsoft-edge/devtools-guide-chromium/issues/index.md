@@ -84,7 +84,7 @@ Within each category of issues, first the errors are listed, then warnings, and 
 
 ![The Issues tool displays Performance issues sorted by severity](./index-images/ordered-by-severity.png)
 
-The **Severity** dropdown list controls whether Warnings, Errors, Tips, and Info items are listed.  See [Filter by severity](#filter-by-severity) below.
+The **Severity** dropdown list controls whether Warnings, Errors, Tips, and Info items are listed.  See [Filter issues by severity](#filter-issues-by-severity) below.
 
 
 <!-- ====================================================================== -->
