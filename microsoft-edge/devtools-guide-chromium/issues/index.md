@@ -62,7 +62,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 *  In the **Activity Bar** or in **Quick View**, click the **More tools** (**+**) button, and then select **Issues**.
 
-*  In the **Elements** tool, in the DOM tree, find a wavy-underlined element name, and then press and hold **Shift** and click the element.  Or, right-click a wavy-underlined element, and then select **View issues**.  See [Open issues from the DOM tree](#open-issues-from-the-dom-tree), below.
+*  In the **Elements** tool, in the DOM tree, find a wavy-underlined element name, and then press and hold **Shift** and then click the element.  Or, right-click a wavy-underlined element, and then select **View issues**.  See [Open issues from the DOM tree](#open-issues-from-the-dom-tree), below.
 
 
 <!-- ------------------------------ -->
@@ -153,7 +153,7 @@ To display an issue for elements with wavy underlines in the DOM tree:
 
 1. Hover over the `<img>` element start-tag.  A tooltip displays information about the issue.
 
-1. Right-click the `<img>` element, and then select **View issues**.  The **Issues** tool opens and displays the issue that's associated with that element:
+1. Right-click the `<img>` element, and then select **View issues**.  Or, press and hold **Shift** and then click the element.  The **Issues** tool opens and displays the issues that are associated with that element:
 
    ![Details about issues on a wavy-underlined element in the DOM tree](./index-images/opened-from-dom-tree-wavy-underline.png)
 
