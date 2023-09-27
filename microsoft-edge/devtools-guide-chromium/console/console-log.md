@@ -14,7 +14,8 @@ Ever since browsers started to offer developer tools, the **Console** is a favor
 Before DevTools, for JavaScript, you were limited to an `alert()` or `document.write()` statement to debug in the browser.  With DevTools, to log information in the **Console**, many methods of the `Console` object are available in the **Console**, listed in [Console object API Reference](api.md).
 
 
-## Console messages examples: log, info, error, and warn
+<!-- ========================================================================== -->
+## Levels of Console log messages: console.log, .info, .error, and .warn
 
 The `Console` object has several levels of message-logging methods:
 
@@ -24,7 +25,8 @@ The `Console` object has several levels of message-logging methods:
 * `console.warn` - Prints the text to the console as a warning.
 
 
-### Example code
+<!-- ------------------------------ -->
+#### Example code for levels of Console log messages
 
 ```javascript
 // prints the text to the console as  a log message
@@ -41,7 +43,8 @@ console.warn('This is a warning')
 ```
 
 
-### Demo webpage: Console messages examples: log, info, error, and warn
+<!-- ------------------------------ -->
+#### Demo webpage for levels of Console log messages
 
 To try using the logging functions in the Console:
 
@@ -49,9 +52,9 @@ To try using the logging functions in the Console:
 
 1. Open the demo webpage [Console messages examples: log, info, error, and warn](https://microsoftedge.github.io/Demos/devtools-console/logging-examples.html) in a new window or tab.
 
-1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-   The demo page has already sent the above log messages to the **Console**:
+   DevTools opens, with the **Console** open in the Activity Bar.  The demo page has already sent the above log messages to the **Console**:
 
    ![The Console shows the messages from different log APIs](./console-log-images/console-log-examples.png)
 
@@ -65,12 +68,13 @@ To try using the logging functions in the Console:
 
 
 <!-- ====================================================================== -->
-## Different types of log entries and variables
+## Logging various types of values
 
-Instead of log text, you can send any valid JavaScript or DOM references to the **Console**.  The **Console** appropriately displays the various types of JavaScript values that you send to it from console log messages.  The **Console** displays a filtered and formatted representation of the results.
+Instead of logging text values, you can send any valid JavaScript or DOM references to the **Console**.  The **Console** appropriately displays the various types of JavaScript values that you send to it from console log messages.  The **Console** displays a filtered and formatted representation of the results.
 
 
-### Example code
+<!-- ------------------------------ -->
+#### Example code for logging various types of values
 
 ```javascript
 let x = 2;
@@ -93,7 +97,8 @@ console.log(w3techs);
 ```
 
 
-### Demo webpage: Logging different variable types
+<!-- ------------------------------ -->
+#### Demo webpage for logging various types of values
 
 To use the `log` function to display different variable types:
 
@@ -101,13 +106,13 @@ To use the `log` function to display different variable types:
 
 1. Open the demo webpage [Console messages examples: Logging different types](https://microsoftedge.github.io/Demos/devtools-console/logging-types.html) in a new window or tab.
 
-1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-   Each type of result is displayed in a different way.
+   DevTools opens, with the **Console** open in the Activity Bar, displaying several types of values.  Each type of result is displayed in a different way.
 
-1. Click the triangles to toggle the information and analyze each result in more detail.
+1. Expand each output entry to analyze each result in more detail.
 
-   Suppose you get many log messages that only display a value, but you don't know where the value originated.  For that case, we added curly braces `{}` around the `x` variable, to provide better grouping.
+   Suppose you get many log messages that only display a value, but you want to display where the value originated from.  For that case, the example code adds curly braces `{}` as a format specifier, around the `x` variable to output the name of the variable, in addition to the value of the variable.
 
    Logging variables of different types in the **Console**:
 
@@ -117,24 +122,26 @@ To use the `log` function to display different variable types:
 
    ![Log variables of different types in the console with expanded extra information](./console-log-images/console-log-types-expanded.png)
 
-1. Copy and paste any of the examples into the **Console**, and then press **Enter**.
+1. Copy and paste any of the examples from the rendered webpage into the **Console**, such as `console.log({x})`, and then press **Enter**.
 
-   Output is displayed in the **Console**, below the code that you entered.
+   Formatted output is displayed in the **Console**, below the code that you entered.
 
 
 <!-- ====================================================================== -->
-## Format and convert values with specifiers
+## Format and convert values by using format specifiers
 
-A special feature of all the log methods is that you can use specifiers in your log statement's message.  Specifiers are part of a log message and start with a percentage sign (`%`) character.  Specifiers allow you to log certain values in different formats and even convert between formats.
+A feature of all the log methods is that you can use format specifiers in your log statement's message.  Format specifiers are part of a log message, and start with a percentage sign (`%`) character.  Specifiers allow you to log certain values in different formats, and convert between formats:
 
-*  `%s` logs as Strings.
-*  `%i` or `%d` logs as Integers.
-*  `%f` logs as a floating-point value.
-*  `%o` logs as an expandable DOM element.
-*  `%O` logs as an expandable JavaScript object.
-*  `%c` allows you to style you message with CSS.
+*  `%s` logs output as Strings.
+*  `%i` or `%d` logs output as Integers.
+*  `%f` logs output as a floating-point value.
+*  `%o` logs output as an expandable DOM element.
+*  `%O` logs output as an expandable JavaScript object.
+*  `%c` allows you to style a message by using CSS properties.
 
-### Example code
+
+<!-- ------------------------------ -->
+#### Example code for logging values using format specifiers
 
 ```javascript
 // logs "10x console developer"
@@ -157,15 +164,17 @@ console.log('%cImportant message follows','color:red;font-size:40px')
 ```
 
 
-### Demo webpage: Logging with specifiers
+<!-- ------------------------------ -->
+#### Demo webpage for logging values using format specifiers
 
 <!-- demo 3 -->
 
+<!-- resume here -->
 1. Open the demo page [Console messages examples: Logging with specifiers](https://microsoftedge.github.io/Demos/devtools-console/logging-with-specifiers.html) in a new tab or window.
 
-1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-   The webpage has already populated the **Console** with output.
+   DevTools opens, with the **Console** open in the Activity Bar.  The webpage has already populated the **Console** with output.
 
    The first example demonstrates that the order of replacement of specifiers is the parameter order following the string:
 
@@ -193,11 +202,13 @@ console.log('%cImportant message follows','color:red;font-size:40px')
 
 
 <!-- ====================================================================== -->
-## Group log messages
+## Grouping log messages
 
 If you log a lot of information, you can use the `group` and `groupCollapsed` methods to display log messages as expandable and collapsible groups in the **Console**.  Groups can be nested and named to make the data much easier to understand.
 
-### Example code
+
+<!-- ------------------------------ -->
+#### Example code for grouping log messages
 
 ```javascript
 // Example 1: Nested groups, with the inner group hidden (collapsed):
@@ -225,7 +236,8 @@ for (tech in technologies) {
 ```
 
 
-### Demo webpage: Grouping logs
+<!-- ------------------------------ -->
+#### Demo webpage for grouping log messages
 
 In this example, the group names are optionally generated.
 
@@ -233,7 +245,7 @@ In this example, the group names are optionally generated.
 
 1. Open the demo page [Console messages examples: Grouping logs](https://microsoftedge.github.io/Demos/devtools-console/logging-with-groups.html) in a new tab or window.
 
-1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in the Activity Bar.
 
    The webpage has already populated the **Console** with output.
 
@@ -251,12 +263,13 @@ In this example, the group names are optionally generated.
 
 
 <!-- ====================================================================== -->
-## Display complex data as tables
+## Displaying complex data as tables
 
 The `console.table()` method logs complex data not as a collapsible and expandable object, but as a table that you can sort using different headers.  A sorted table makes it much easier for people to review the information.
 
 
-### Example code
+<!-- ------------------------------ -->
+#### Example code for displaying complex data as tables
 
 ```javascript
 let technologies = {
@@ -279,7 +292,8 @@ console.table(bodyDimensions);
 The second portion of the code listing from the demo page is shown further down.
 
 
-### Demo webpage: Using table formatting
+<!-- ------------------------------ -->
+#### Demo webpage for displaying complex data as tables
 
 To show complex data as tables:
 
@@ -287,7 +301,7 @@ To show complex data as tables:
 
 1. Open the demo page [Console messages examples: Using table](https://microsoftedge.github.io/Demos/devtools-console/logging-with-table.html) in a new window or tab.
 
-1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in the Activity Bar.
 
    The webpage has already populated the **Console** with output.
 
@@ -305,11 +319,14 @@ To show complex data as tables:
 The output of `console.table` has a table format.  The output has a table format not only when the output is displayed in the **Console**, but also, if you copy and paste a table into Microsoft Excel, Microsoft Word, or any other product that supports tabular data, the structure of the output remains intact.
 
 
-#### Specify an array of columns for each property, for readability
+<!-- ------------------------------ -->
+#### Specifying an array of columns for each property, for readability
 
 If the data has named parameters, the `console.table()` method also allows you to specify an `Array` of columns for each property to display as a second parameter.  The following example shows how to specify an array of columns that is more readable:
 
-##### Example code
+
+<!-- ---------- -->
+###### Example code for specifying an array of columns
 
 This code is from the same demo webpage as above.
 
@@ -333,8 +350,16 @@ The code provides an array of properties to display, as a second parameter:
    Output is displayed in the **Console**, below the code that you entered.
 
 
-### Log statements vs. breakpoint debugging and Live Expressions
+<!-- ====================================================================== -->
+## Log statements vs. breakpoint debugging and Live Expressions
 
-You may be tempted to use the `log` methods as your main means to debug webpages, because log methods are simple to use.  Consider the result of any `console.log()` request.  Released products shouldn't use any `log` statement that was used for debugging, because it could reveal inside information to people.  And the noise created in the **Console** is overwhelming.
+You may be tempted to use the `log` methods as your main means to debug webpages, because log methods are simple to use.  However, consider the result of any `console.log()` request: released products shouldn't use any `log` statement that was used for debugging, because it could reveal inside information to people.  And excess noise is created in the **Console**.
 
-Instead of `log` statements, try using [Breakpoint Debugging](../javascript/breakpoints.md) or [Live Expressions](live-expressions.md).  You may find that your workflows are more effective and you get better results.
+So, instead of `log` statements, try using [Breakpoint Debugging](../javascript/breakpoints.md) or [Live Expressions](live-expressions.md).  You may find that your workflows are more effective and you get better results.
+
+
+<!-- ====================================================================== -->
+<!--
+## See also
+
+-->
