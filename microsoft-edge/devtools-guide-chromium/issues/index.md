@@ -48,7 +48,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
    <!--After a few seconds, the **Issues counter** (![Issues counter](./index-images/issues-counter-icon.png)) appears in the upper right corner of DevTools.
    1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.-->
 
-1. In the Quick View toolbar at the bottom of DevTools, select the **Issues** tab.
+1. In the Quick View toolbar at the bottom of DevTools, select the **Issues** tab, which is present by default.
 
    If Quick View isn't displayed, select **Customize and control DevTools** (**...**), and then select **Toggle Quick View panel** (**Esc**).  If the **Quick View** toolbar doesn't have the **Issues** tab, in the **Quick View** toolbar, click the **More tools** (**+**) button, and then select **Issues**.
 
@@ -62,7 +62,15 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 *  In the **Activity Bar** or in **Quick View**, click the **More tools** (**+**) button, and then select **Issues**.
 
-*  In the **Elements** tool, in the DOM tree, find a wavy-underlined element name, and then press and hold **Shift** and click the element.  Or, right-click a wavy-underlined element, and then select **View issues**.
+*  In the **Elements** tool, in the DOM tree, find a wavy-underlined element name, and then press and hold **Shift** and click the element.  Or, right-click a wavy-underlined element, and then select **View issues**.  See [Open issues from the DOM tree](#open-issues-from-the-dom-tree), below.
+
+
+<!-- ------------------------------ -->
+#### Placement of Issues tool: Quick View or Activity Bar
+
+By default, such as from the Command Menu, the **Issues** tool opens in the **Quick View** panel.  You can instead open it in the Activity Bar, or move it to the Activity Bar: 
+
+*  In the **Quick View** toolbar, right-click the **Inspect** tab and then select **Move to top Activity Bar** or **Move to left Activity Bar**.
 
 <!-- legacy ui
 *  Select **Customize and control DevTools** > **More tools** > **Issues**.
@@ -128,25 +136,24 @@ To open a linked tool from an entry in the **Issues** tool:
 
 <!-- ====================================================================== -->
 ## Open issues from the DOM tree
-<!-- resume here -->
 
 If an element has an associated issue, the DOM tree in the **Elements** tool shows a wavy underline under the element name.  Right-click the element and then select **View issues**.  Or, press and hold **Shift** and then click the element with the wavy underline.
 
 To display an issue for elements with wavy underlines in the DOM tree:
 
-1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
+1. Open a webpage.  For example, open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. In DevTools, select the **Elements** tab.
+1. In DevTools, select the **Elements** (![Elements tool icon](./index-images/elements-tool-icon.png)) tab.
 
-1. In the DOM tree, expand `<body>` > `<section>` > `<main>` > `<article id="cats">`.  Notice that the `<img>` element has a wavy underline.
+1. In the DOM tree, expand `<body>` > `<section>` > `<main>` > `<article id="cats">` > `<img>`.  The `<img>` element start-tag has a wavy underline:
 
    ![Wavy-underlined issues in the DOM tree in the Elements tool](./index-images/wavy-underlines-dom-tree.png)
 
-1. Hover over the `<img>` element.  A tooltip displays information about the issue.
+1. Hover over the `<img>` element start-tag.  A tooltip displays information about the issue.
 
-1. Open the context menu on the element with the wavy underline, and then select **View issues**.  The **Issues** tool opens and displays the issue that's associated with that element.
+1. Right-click the `<img>` element, and then select **View issues**.  The **Issues** tool opens and displays the issue that's associated with that element:
 
    ![Details about issues on a wavy-underlined element in the DOM tree](./index-images/opened-from-dom-tree-wavy-underline.png)
 
@@ -154,23 +161,23 @@ To display an issue for elements with wavy underlines in the DOM tree:
 <!-- ====================================================================== -->
 ## Filter issues
 
-To reduce the number of issues displayed in the **Issues** tool, you can filter the list by severity, browser, and origin.
+To reduce the number of issues that are displayed in the **Issues** tool, you can filter the list by severity, browser, and origin.
 
 
 <!-- ------------------------------ -->
-#### Filter by severity
+#### Filter issues by severity
 
-By default, only errors and warnings are displayed. To display issues with other severity levels:
+By default, only errors and warnings are displayed.  To display issues that have other severity levels:
 
-* Click **Default levels**.
-* Select any number of severity levels: **Tips**, **Info**, **Warnings**, **Errors**.
-* Select **Default** to revert back to just warnings and errors.
+* From the **Severity** dropdown list, select any number of severity levels: **Tips**, **Info**, **Warnings**, or **Errors**:
 
 ![The Issues panel with the Severity dropdown expanded, showing the different levels that can be selected](./index-images/severity-filter.png)
 
+To revert back to showing only warnings and errors, select **Default levels**.
+
 
 <!-- ------------------------------ -->
-#### Filter by browser
+#### Filter issues by browser
 
 Issues that belong to the **Compatibility** category can also be filtered by browser. By default, the following browsers are tested:
 
@@ -193,9 +200,9 @@ To change the list of browsers that are tested for compatibility issues:
 
 
 <!-- ------------------------------ -->
-#### Filter by origin
+#### Filter issues by origin
 
-By default, the **Issues** tool only lists issues that pertain to the current web page's code. To include issues that are caused by third-party libraries or frameworks loaded by the web page too, select the **Include third-party issues** checkbox.
+By default, the **Issues** tool only lists issues that pertain to the current web page's code. To include issues that are caused by third-party libraries or frameworks loaded by the web page too, select the **Include third-party issues** checkbox:
 
 ![The Issues panel with the 'Include third-party issues' checkbox](./index-images/third-party-checkbox.png)
 
