@@ -1326,9 +1326,23 @@
               href: webview2/how-to/debug-visual-studio.md
               displayName: Debug WebView2 apps with Visual Studio  # top-of-page title
 
-            - name: Remote debugging
-              href: webview2/how-to/remote-debugging.md
-              displayName: Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge  # top-of-page title
+            - name: Remote debugging WebView2 WinUI 2 (UWP) apps
+              items: 
+                - name: Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge
+                  href: webview2/how-to/remote-debugging.md
+                  displayName: 
+
+                - name: Remote debugging desktop WebView2 WinUI 2 (UWP) apps
+                  href: webview2/how-to/remote-debugging-desktop.md
+                  displayName: 
+
+                - name: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps
+                  href: webview2/how-to/remote-debugging-hololens.md
+                  displayName: 
+
+                - name: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
+                  href: webview2/how-to/remote-debugging-xbox.md
+                  displayName: 
 
             - name: Use Playwright to automate in WebView2
               href: webview2/how-to/playwright.md
