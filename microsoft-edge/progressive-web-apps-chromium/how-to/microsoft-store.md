@@ -19,7 +19,7 @@ Publishing your Progressive Web App (PWA) to the [Microsoft Store](/windows/uwp/
 | **Easy install** | The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 or later apps](https://www.microsoft.com/store/apps/windows). |
 | **App analytics** | The [Microsoft Partner Center dashboard](/windows/uwp/publish/index) provides [detailed analytics](/windows/uwp/publish/analytics) about your app's health, usage, and more. |
 
-To publish your PWA to the Microsoft Store, no code changes are required.  Instead, you create an app reservation in Microsoft Partner Center, then package your PWA using PWA Builder, and finally submit your package to the Microsoft Store.  The following sections explain the steps.
+To publish your PWA to the Microsoft Store, no code changes are required.  Instead, you create an app reservation in Microsoft Partner Center, package your PWA using PWA Builder, and then submit your package to the Microsoft Store.  The following sections explain these steps.
 
 
 <!-- ====================================================================== -->
@@ -55,7 +55,7 @@ To create an app reservation:
 <!-- ====================================================================== -->
 ## Package your PWA for the Store
 
-Now that you have your app publishing information, generate a Windows app package for your PWA by using PWA Builder.
+Now that you've gathered the publishing information about your app, generate a Windows app package for your PWA by using PWA Builder.
 
 To generate an app package:
 
@@ -156,7 +156,7 @@ Eventually, the `url_handlers` feature will be replaced by [`scope_extensions`](
 <!-- ====================================================================== -->
 ## Make updates to your app
 
-Generally, when you update your PWA code, you don't need to create a new app package and submit it to the Microsoft Store again. For example, when you make changes to your app's front-end HTML, CSS, and JavaScript code, or to your service worker, the changes are downloaded by the browser that's running your app from your web server the next time the app is launched.
+Generally, when you update your PWA code, you don't need to create a new app package and submit it to the Microsoft Store again. For example, when you make changes to your app's front-end HTML, CSS, and JavaScript code, or to your service worker, the next time the app is launched, the changes are downloaded by the browser that's running your app from your web server.
 
 However, if you make changes to the web app manifest file, for example if you change the app icon or name, or if you change or add manifest members like `file_handlers`, `protocol_handlers`, or `share_handlers`, then you must create a new app package and submit it to the Microsoft Store.  This is because the information found in the web app manifest file is copied to the Windows app package for better integration with Windows.
 
