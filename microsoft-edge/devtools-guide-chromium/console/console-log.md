@@ -11,18 +11,18 @@ ms.date: 09/27/2023
 
 Ever since browsers started to offer developer tools, the **Console** is a favorite, because in most programming courses, you learn to output some kind of `print` or `log` command, to gain insights about what happens in your code.
 
-Before DevTools, for JavaScript, you were limited to an `alert()` or `document.write()` statement to debug in the browser.  With DevTools, to log information in the **Console**, many methods of the `Console` object are available in the **Console**, listed in [Console object API Reference](api.md).
+Before DevTools, for JavaScript, you were limited to an `alert()` or `document.write()` statement to debug in the browser.  With DevTools, to log information in the **Console**, many methods of the `Console` object are available in the **Console**, listed in [Console object API Reference](./api.md).
 
 
 <!-- ========================================================================== -->
 ## Levels of Console log messages: console.log, .info, .error, and .warn
 
-The `Console` object has several levels of message-logging methods:
+The `console` object has methods to log various levels of messages:
 
-* `console.log` - Prints the text to the console as a log message.
-* `console.info` - Prints the text to the console as an informational message.
-* `console.error` - Prints the text to the console as an error message.
-* `console.warn` - Prints the text to the console as a warning.
+* `console.log` - Prints the text to the **Console** as a log message.
+* `console.info` - Prints the text to the **Console** as an informational message.
+* `console.error` - Prints the text to the **Console** as an error message.
+* `console.warn` - Prints the text to the **Console** as a warning.
 
 
 <!-- ------------------------------ -->
@@ -46,7 +46,7 @@ console.warn('This is a warning')
 <!-- ------------------------------ -->
 #### Demo webpage for levels of Console log messages
 
-To try using the logging functions in the Console:
+To try using the logging functions in the **Console**:
 
 <!-- demo 1 of 6 -->
 
@@ -247,7 +247,7 @@ for (tech in technologies) {
 
    ![Log lots of values as groups](./console-log-images/console-log-groups.png)
 
-1. In the Console output, expand or collapse the sections:
+1. In the **Console** output, expand or collapse the sections:
 
    ![Each group can be expanded and collapsed](./console-log-images/console-log-groups-expanded.png)
 
@@ -279,7 +279,7 @@ console.log(bodyDimensions);
 console.table(bodyDimensions);
 ```
 
-This code in the demo webpage produces the first four `console` outputs, with four line numbers shown on the right side of the Console.
+This code in the demo webpage produces the first four `console` outputs, with four line numbers shown on the right side of the **Console**.
 
 
 <!-- ------------------------------ -->
@@ -301,7 +301,7 @@ To show complex data as tables:
 
    ![Display data with console.table to make it easier to read](./console-log-images/console-log-table.png)<!-- resume here -->
 
-The output of `console.table` has a table format.  If you copy and paste a table from the Console into an app that supports tabular data, such as Microsoft Excel or Microsoft Word, the structuring of the output as rows and columns is preserved.
+The output of `console.table` has a table format.  If you copy and paste a table from the **Console** into an app that supports tabular data, such as Microsoft Excel or Microsoft Word, the structuring of the output as rows and columns is preserved.
 
 
 <!-- ------------------------------ -->
@@ -322,7 +322,7 @@ console.table(contentElements)
 console.table(contentElements, ['nodeName', 'innerText', 'offsetHeight'])
 ```
 
-This code produces the final two `console` outputs, with two line numbers shown on the right side of the Console:
+This code produces the final two `console` outputs, with two line numbers shown on the right side of the **Console**:
 
 ![Filtering information that 'console.table' displays, and providing an array of properties to display, as a second parameter](./console-log-images/console-log-table-filtered.png)
 
@@ -338,7 +338,6 @@ So, instead of `log` statements, try using [Breakpoint Debugging](../javascript/
 
 
 <!-- ====================================================================== -->
-<!--
 ## See also
 
--->
+* [Console object API Reference](./api.md)
