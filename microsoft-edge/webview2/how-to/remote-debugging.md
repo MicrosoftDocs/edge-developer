@@ -181,7 +181,7 @@ Attach Microsoft Edge DevTools remotely to an Xbox WebView2 WinUI 2 (UWP) app as
 
     ![DevTools Inspect utility page](./remote-debugging-images/inspect-devtools-page-supported.png)
 
-1.  Enable Developer Mode on Xbox.  See https://learn.microsoft.com/en-us/windows/uwp/xbox-apps/devkit-activation. 
+1.  Enable Developer Mode on Xbox.  See [Xbox One Developer Mode activation](/windows/uwp/xbox-apps/devkit-activation).
 
 1.  In Microsoft Edge, navigate to `https://<System IP>:11443`.  Verify that the **Confirm security settings** page is loaded (in the **Windows Device Portal** tab).  For these examples, `<System IP>` is the Xbox System OS IP, replace that with your Xbox System OS IP.
 
