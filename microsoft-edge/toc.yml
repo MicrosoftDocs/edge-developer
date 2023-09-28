@@ -1328,7 +1328,7 @@
 
             - name: Remote debugging WebView2 WinUI 2 (UWP) apps
               items: 
-                - name: Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge
+                - name: Remote debugging WebView2 WinUI 2 (UWP) apps
                   href: webview2/how-to/remote-debugging.md
                   displayName: 
 
