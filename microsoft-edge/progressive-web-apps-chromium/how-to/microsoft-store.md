@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 08/11/2023
+ms.date: 09/28/2023
 ---
 # Publish a Progressive Web App to the Microsoft Store
 
@@ -19,7 +19,7 @@ Publishing your Progressive Web App (PWA) to the [Microsoft Store](/windows/uwp/
 | **Easy install** | The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 or later apps](https://www.microsoft.com/store/apps/windows). |
 | **App analytics** | The [Microsoft Partner Center dashboard](/windows/uwp/publish/index) provides [detailed analytics](/windows/uwp/publish/analytics) about your app's health, usage, and more. |
 
-To publish your PWA to the Microsoft Store, no code changes are required.  Instead, you create an app reservation, package your PWA, and submit your package to the Store.  The following sections explain the steps.
+To publish your PWA to the Microsoft Store, no code changes are required.  Instead, you create an app reservation in Microsoft Partner Center, then package your PWA using PWA Builder, and finally submit your package to the Microsoft Store.  The following sections explain the steps.
 
 
 <!-- ====================================================================== -->
@@ -55,7 +55,7 @@ To create an app reservation:
 <!-- ====================================================================== -->
 ## Package your PWA for the Store
 
-Now that you have your app publishing information, generate a Windows app package for your PWA.
+Now that you have your app publishing information, generate a Windows app package for your PWA by using PWA Builder.
 
 To generate an app package:
 
@@ -69,10 +69,7 @@ To generate an app package:
 
     ![Report card page](./microsoft-store-images/report-card.png)
 
-1.  Once your PWA is ready to be packaged, in the upper-right corner of the PWABuilder report card page, click the **Package For Stores** button.
-
-    <!--
-    The XYZ dialog opens. -->
+1.  Once your PWA is ready to be packaged, in the upper-right corner of the PWABuilder report card page, click the **Package For Stores** button. The store packages dialog opens.
 
 1.  Under **Windows**, click the **Generate Package** button.
 
@@ -85,10 +82,14 @@ To generate an app package:
 
 1.  Click the **Download Package** button to download your Windows package.
 
-Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.  For more information, see [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)<!-- changing "master" to "main" in that URL doesn't work, as of August 11, 2023 -->
+Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.
 
+See also:
 
-### Submit your app package to the Store
+* [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)<!-- changing "master" to "main" in that URL doesn't work, as of August 11, 2023 -->
+* [Bundling MSIX packages](/windows/msix/package/bundling-overview).
+
+### Submit your app package to the Microsoft Store
 
 To submit your app to the Microsoft Store:
 
@@ -150,6 +151,14 @@ To prevent displaying the URL and page title:
 When these domain lists are in place, Microsoft Edge no longer shows the additional UI when the principal domain is redirected to the locale-specific domains.
 
 Eventually, the `url_handlers` feature will be replaced by [`scope_extensions`](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md), but that spec is still in development.  `scope_extensions` will produce the same result as `url_handlers`.
+
+
+<!-- ====================================================================== -->
+## Make updates to your app
+
+Generally, when you update your PWA code, you don't need to create a new app package and submit it to the Microsoft Store again. For example, when you make changes to your app's front-end HTML, CSS, and JavaScript code, or to your service worker, the changes are downloaded by the browser that's running your app from your web server the next time the app is launched.
+
+However, if you make changes to the web app manifest file, for example if you change the app icon or name, or if you change or add manifest members like `file_handlers`, `protocol_handlers`, or `share_handlers`, then you must create a new app package and submit it to the Microsoft Store.  This is because the information found in the web app manifest file is copied to the Windows app package for better integration with Windows.
 
 
 <!-- ====================================================================== -->
