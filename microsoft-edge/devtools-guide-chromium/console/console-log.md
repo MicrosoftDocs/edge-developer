@@ -128,9 +128,11 @@ To use the `log` function to display different variable types:
 
 
 <!-- ====================================================================== -->
-## Format and convert values by using format specifiers
+## Logging values using format specifiers
 
-A feature of all the log methods is that you can use format specifiers in your log statement's message.  Format specifiers are part of a log message, and start with a percentage sign (`%`) character.  Specifiers allow you to log certain values in different formats, and convert between formats:
+A feature of all the log methods is that you can use format specifiers in your log statement's message.  Format specifiers are part of a log message, and start with a percentage sign (`%`) character.
+
+Use format specifiers to log certain values in different formats, and to convert between formats:
 
 *  `%s` logs output as Strings.
 *  `%i` or `%d` logs output as Integers.
@@ -169,42 +171,37 @@ console.log('%cImportant message follows','color:red;font-size:40px')
 
 <!-- demo 3 -->
 
-<!-- resume here -->
 1. Open the demo page [Console messages examples: Logging with specifiers](https://microsoftedge.github.io/Demos/devtools-console/logging-with-specifiers.html) in a new tab or window.
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
    DevTools opens, with the **Console** open in the Activity Bar.  The webpage has already populated the **Console** with output.
 
-   The first example demonstrates that the order of replacement of specifiers is the parameter order following the string:
+   The first example demonstrates that the order of replacement of format specifiers is the parameter order following the string:
 
    ```javascript
    console.log('%ix %s developer', 10, 'console'); // logs "10x console developer"
    ```
    
-1. Click the expander triangles in the output results, to expand and see the data that's output by the above `log` statements that are in the webpage.
+1. Click the expander triangles in the output results, to expand the data that's output by the above `log` statements that are in the webpage.
 
 1. If necessary, press **F5** to reload the page and re-populate the **Console** output.
 
-   Specifiers are used to log, format, and convert values:
+   Format specifiers are used to log, format, and convert values:
 
    ![Use specifiers to log and convert values](./console-log-images/console-log-specifiers.png)
 
-1. In the **Console**, click triangles to expand the log results, to see the difference between the `%o` and `%O` specifiers.
+1. In the **Console**, on the two `body` entries, click the triangles to expand the log results, to see the difference between the `%o` and `%O` format specifiers.
 
-   The body of the webpage is either displayed as an expandable DOM node, or as a full list of all JavaScript properties on the webpage body:
+   The `body` element of the webpage is either displayed as an expandable DOM node (`console.log('%o', document.body);`), or as a full list of all JavaScript properties on the `body` element (`console.log('%O', document.body);`):
 
-   ![Expand the results displays the difference between the %O and %o specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the webpage body](./console-log-images/console-log-specifiers-expanded.png)
-
-1. Copy and paste the above example code listing into the **Console**, and then press **Enter**.
-
-   Output is displayed in the **Console**, below the code that you entered.
+   ![Results expanded to display the difference between the %O and %o specifiers](./console-log-images/console-log-specifiers-expanded.png)
 
 
 <!-- ====================================================================== -->
 ## Grouping log messages
 
-If you log a lot of information, you can use the `group` and `groupCollapsed` methods to display log messages as expandable and collapsible groups in the **Console**.  Groups can be nested and named to make the data much easier to understand.
+If you log a lot of information, you can use the `group` and `groupCollapsed` methods to display log messages as expandable and collapsible groups in the **Console**.  Groups can be nested and named, to make the data easier to understand.
 
 
 <!-- ------------------------------ -->
@@ -223,6 +220,7 @@ console.log('(Frankie & Benjy)');
 console.groupEnd("Hidden");
 console.groupEnd("Passengers: Heart of Gold");
 
+
 // Example 2:
 let technologies = {
   "Standards": ["HTML", "CSS", "SVG", "ECMAScript"],
@@ -239,33 +237,25 @@ for (tech in technologies) {
 <!-- ------------------------------ -->
 #### Demo webpage for grouping log messages
 
-In this example, the group names are optionally generated.
-
 <!-- demo 4 -->
 
 1. Open the demo page [Console messages examples: Grouping logs](https://microsoftedge.github.io/Demos/devtools-console/logging-with-groups.html) in a new tab or window.
 
-1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in the Activity Bar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-   The webpage has already populated the **Console** with output.
-
-   Logging lots of values as groups:
+   DevTools opens, with the **Console** open in the Activity Bar.  The webpage has already populated the **Console** with output, logging many values as groups:
 
    ![Log lots of values as groups](./console-log-images/console-log-groups.png)
 
-1. In the Console output, expand and collapse each of the sections:
+1. In the Console output, expand or collapse the sections:
 
    ![Each group can be expanded and collapsed](./console-log-images/console-log-groups-expanded.png)
 
-1. Copy and paste the above example code listing into the **Console**, and then press **Enter**.
-
-   Output is displayed in the **Console**, below the code that you entered.
-
 
 <!-- ====================================================================== -->
-## Displaying complex data as tables
+## Displaying data as tables
 
-The `console.table()` method logs complex data not as a collapsible and expandable object, but as a table that you can sort using different headers.  A sorted table makes it much easier for people to review the information.
+As an alternative to outputting expandable objects, the `console.table()` method logs data as a table that you can sort by using the table headers, to make it easier to view the information.
 
 
 <!-- ------------------------------ -->
@@ -289,7 +279,7 @@ console.log(bodyDimensions);
 console.table(bodyDimensions);
 ```
 
-The second portion of the code listing from the demo page is shown further down.
+This code in the demo webpage produces the first four `console` outputs, with four line numbers shown on the right side of the Console.
 
 
 <!-- ------------------------------ -->
@@ -301,34 +291,27 @@ To show complex data as tables:
 
 1. Open the demo page [Console messages examples: Using table](https://microsoftedge.github.io/Demos/devtools-console/logging-with-table.html) in a new window or tab.
 
-1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens, with the **Console** open in the Activity Bar.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-   The webpage has already populated the **Console** with output.
+   DevTools opens, with the **Console** open in the Activity Bar.  The webpage has already populated the **Console** with output.
 
 1. In the **Console**, click the expander triangles.
 
-1. Click the expander triangles.  Displaying data with `console.table` makes the data easier to read:
+   The data is output by using `console.table`, which makes the data easier to read:
 
-   ![Display data with console.table to make it easier to read](./console-log-images/console-log-table.png)
+   ![Display data with console.table to make it easier to read](./console-log-images/console-log-table.png)<!-- resume here -->
 
-1. Copy and paste the above code listing into the **Console**, and then press **Enter**.
-
-   Output is displayed in the **Console**, below the code that you entered.
-
-
-The output of `console.table` has a table format.  The output has a table format not only when the output is displayed in the **Console**, but also, if you copy and paste a table into Microsoft Excel, Microsoft Word, or any other product that supports tabular data, the structure of the output remains intact.
+The output of `console.table` has a table format.  If you copy and paste a table from the Console into an app that supports tabular data, such as Microsoft Excel or Microsoft Word, the structuring of the output as rows and columns is preserved.
 
 
 <!-- ------------------------------ -->
-#### Specifying an array of columns for each property, for readability
+#### Specifying an array of properties to display as columns
 
 If the data has named parameters, the `console.table()` method also allows you to specify an `Array` of columns for each property to display as a second parameter.  The following example shows how to specify an array of columns that is more readable:
 
-
-<!-- ---------- -->
-###### Example code for specifying an array of columns
-
-This code is from the same demo webpage as above.
+The remaining code in the demo webpage shows:
+1. How to output all the properties as columns, for the selected elements.
+1. How to specify an array only of specified properties as columns, for the selected elements.
 
 ```javascript
 // get all the h1, p and script elements
@@ -336,24 +319,20 @@ let contentElements = document.querySelectorAll(':is(h1,p,script)');
 // show the elements as an unfiltered table
 console.table(contentElements)
 // show only relevant columns
-console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
+console.table(contentElements, ['nodeName', 'innerText', 'offsetHeight'])
 ```
 
-This code filters the information that the `console.table()` method displays.
-
-The code provides an array of properties to display, as a second parameter:
+This code produces the final two `console` outputs, with two line numbers shown on the right side of the Console:
 
 ![Filtering information that 'console.table' displays, and providing an array of properties to display, as a second parameter](./console-log-images/console-log-table-filtered.png)
 
-1. Copy and paste the above code listing into the **Console**, and then press **Enter**.
-
-   Output is displayed in the **Console**, below the code that you entered.
+The final call to `console.table` filters the information that the `console.table()` method displays, by specifying an array of properties to display, as a second parameter.
 
 
 <!-- ====================================================================== -->
 ## Log statements vs. breakpoint debugging and Live Expressions
 
-You may be tempted to use the `log` methods as your main means to debug webpages, because log methods are simple to use.  However, consider the result of any `console.log()` request: released products shouldn't use any `log` statement that was used for debugging, because it could reveal inside information to people.  And excess noise is created in the **Console**.
+You might be tempted to use the `log` methods as your main means to debug webpages, because log methods are simple to use.  However, consider the result of any `console.log()` request: released products shouldn't use any `log` statement that was used for debugging, because it could reveal inside information to people.  And excess noise is created in the **Console**.
 
 So, instead of `log` statements, try using [Breakpoint Debugging](../javascript/breakpoints.md) or [Live Expressions](live-expressions.md).  You may find that your workflows are more effective and you get better results.
 
