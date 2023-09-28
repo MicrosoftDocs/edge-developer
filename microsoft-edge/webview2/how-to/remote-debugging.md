@@ -24,7 +24,3 @@ To use [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium/landing
 * [Remotely debug Android WebViews](../../devtools-guide-chromium/remote-debugging/webviews.md)
 * [Remotely debug Surface Duo emulators](../../devtools-guide-chromium/remote-debugging/surface-duo-emulator.md)
 * [Remotely debug Windows devices](../../devtools-guide-chromium/remote-debugging/windows.md)
-* [Overview of DevTools](../index.md)
-* [Get started with WebView2](../get-started/get-started.md)
-* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
-* [WebView2 API reference](../webview2-api-reference.md)
