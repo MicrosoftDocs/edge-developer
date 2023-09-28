@@ -28,19 +28,19 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 <!-- ====================================================================== -->
 ## View sessionStorage keys and values
 
-1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.
+1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default:
 
    ![The Manifest pane](./sessionstorage-images/storage-application-manifest.png)
 
-1. Expand the **Session Storage** menu.
+1. In the **Storage** section on the left, expand **Session storage**:
 
    ![The Session Storage Menu](./sessionstorage-images/storage-application-storage-session-storage.png)
 
-1. Click a domain to view the key-value pairs.
+1. In the **Session storage** on the left, select a domain.  The domain's key-value pairs are listed in the upper right:
 
    ![The sessionStorage key-value pairs](./sessionstorage-images/storage-application-storage-session-storage-domain.png)
 
-1. Click a row of the table to view the value in the viewer below the table.
+1. Click a row of the key-value table.  The value for the selected key is displayed below the key-value table:
 
    ![View the value of the x-sid key](./sessionstorage-images/storage-application-storage-session-storage-domain-key-value-selected.png)
 
