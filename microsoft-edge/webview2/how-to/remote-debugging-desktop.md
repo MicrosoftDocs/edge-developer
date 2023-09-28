@@ -10,6 +10,12 @@ ms.date: 09/27/2023
 ---
 # Remote debugging desktop WebView2 WinUI 2 (UWP) apps
 
+To use [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium/landing/) to debug a WebView2 WinUI 2 (UWP) app, use remote debugging.  Remote debugging is necessary for WebView2 WinUI 2 (UWP) apps because currently, the built-in DevTools can't be launched inside a store-signed WebView2 WinUI 2 (UWP) app.
+
+
+<!-- ========================================================================== -->
+## Attach DevTools remotely to a desktop WebView2 WinUI 2 (UWP) app
+
 Attach Microsoft Edge DevTools remotely to a desktop WebView2 WinUI 2 (UWP) app as follows:
 
 1.  In Microsoft Edge, go to `edge://inspect`.  The **Inspect with Edge Developer Tools** page opens:

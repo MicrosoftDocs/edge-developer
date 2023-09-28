@@ -10,9 +10,15 @@ ms.date: 09/27/2023
 ---
 # Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps
 
+To use [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium/landing/) to debug a WebView2 WinUI 2 (UWP) app, use remote debugging.  Remote debugging is necessary for WebView2 WinUI 2 (UWP) apps because currently, the built-in DevTools can't be launched inside a store-signed WebView2 WinUI 2 (UWP) app.
+
 WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability.  
 
 WebView2 and the WebView2 plugin are only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
+
+
+<!-- ========================================================================== -->
+## Attach DevTools remotely to a HoloLens 2 WebView2 WinUI 2 (UWP) app
 
 Attach Microsoft Edge DevTools remotely to a HoloLens 2 WebView2 WinUI 2 (UWP) app as follows:
 
