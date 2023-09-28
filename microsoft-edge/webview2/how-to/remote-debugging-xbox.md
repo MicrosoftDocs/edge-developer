@@ -24,7 +24,7 @@ Attach Microsoft Edge DevTools remotely to an Xbox WebView2 WinUI 2 (UWP) app as
 
 1.  Enable Developer Mode on Xbox.  See [Xbox One Developer Mode activation](/windows/uwp/xbox-apps/devkit-activation).
 
-1.  In Microsoft Edge, navigate to `https://<System IP>:11443`.  Verify that the **Confirm security settings** page is loaded (in the **Windows Device Portal** tab).  For these examples, `<System IP>` is the Xbox System OS IP, replace that with your Xbox System OS IP.
+1.  In Microsoft Edge, go to `https://<System IP>:11443`, where `<System IP>` is replaced by your Xbox System OS IP.  The **Confirm security settings** page is displayed, in the **Windows Device Portal** tab:
 
     ![The 'Confirm security settings' page in the 'Windows Device Portal' tab](./remote-debugging-xbox-images/open-device-portal.png)
 
@@ -32,47 +32,55 @@ Attach Microsoft Edge DevTools remotely to an Xbox WebView2 WinUI 2 (UWP) app as
 
     ![SSL Error](./remote-debugging-xbox-images/xbox_ssl_error.png)
 
-1.  Click the **Advanced** button, and then click **Continue** to `<System IP>`.
+1.  Click the **Advanced** button. <!--todo: state the system result-->
+
+1.  Click **Continue**<!--todo: button?--> to `<System IP>`,<!--todo: clarify "Click Continue to System IP"--> where `<System IP>` is replaced by your Xbox System OS IP.
 
     Xbox Device Portal opens:
 
     ![Xbox Device Portal](./remote-debugging-xbox-images/unsecure-xbox-device-portal.png)
 
-1.  Navigate to `https://<System IP>:11443/config/rootcertificate`. This downloads a `rootcertificate.cer` file:
+1.  Go to `https://<System IP>:11443/config/rootcertificate`, where `<System IP>` is replaced by your Xbox System OS IP.  This downloads a `rootcertificate.cer` file:
 
-    ![Root Certificate](./remote-debugging-xbox-images/root-certificate.png)
+    ![Root Certificate file listed in Downloads dialog of Microsoft Edge](./remote-debugging-xbox-images/root-certificate.png)
 
-1.  Open the downloaded `rootcertificate.cer` file and then click **Open** when the following dialog is displayed:
+1.  Open the downloaded `rootcertificate.cer` file.  A security warning dialog box opens:
 
-    ![Open File](./remote-debugging-xbox-images/open-file-security-warning.png)
+    ![Security warning dialog box](./remote-debugging-xbox-images/open-file-security-warning.png)
 
-1.  Click **Install Certificate**:
+1.  Click the **Open** button.  A **Certificate** dialog opens:
 
-    ![Install Certificate](./remote-debugging-xbox-images/certificate.png)
+    ![The Certificate dialog](./remote-debugging-xbox-images/certificate.png)
 
-1.  Select **Current User** and click **Next**:
+1.  Click the **Install Certificate** button.  A **Welcome to the Certificate Import Wizard** dialog opens:
 
-    ![Current User](./remote-debugging-xbox-images/current-user-certificate.png)
+    ![The 'Welcome to the Certificate Import Wizard' dialog](./remote-debugging-xbox-images/current-user-certificate.png)
 
-1.  Click the option to `Place all certificates in the following store`. Click **Browse** and select `Trusted Root Certification Authorities`:
+1.  Select the **Current User** option button, and then click the **Next** button.
+
+    The Certificate Import Wizard opens:
 
     ![Certificate Import Wizard](./remote-debugging-xbox-images/certificate-import-wizard.png)
 
-1.  Click **Yes** to accept the security warning:
+1.  Select the option **Place all certificates in the following store**, click the **Browse** button, and then select **Trusted Root Certification Authorities**.
 
-    ![Security Warning](./remote-debugging-xbox-images/security-warning.png)
+1.  Click the **Next** button.
+
+    A **Security Warning** dialog opens:
+
+    ![Security Warning dialog](./remote-debugging-xbox-images/security-warning.png)
+
+1.  Click the **Yes** button.
 
 1.  Restart Microsoft Edge.
 
-1.  Navigate to `https://<System IP>:11443` and verify the connection shows as secure:
+1.  Go to `https://<System IP>:11443`, where `<System IP>` is replaced by your Xbox System OS IP, and verify that the connection is indicated as secure:<!--todo: clarify exactly how to verify that the connection is indicated as secure; and add red box on png.  do we mean https in Address bar? specify -->
 
     ![Secure XDP](./remote-debugging-xbox-images/secure-xbox-device-portal.png)
 
-1.  Configure your WebView2 WinUI 2 (UWP) app for remote debugging:
+1.  In your app project, set the following variable, to configure your WebView2 WinUI 2 (UWP) app for remote debugging.
 
     To enable remote debugging, an environment variable must be set in your project.  This variable must be set before creating the `CoreWebView2` instance, and before either setting the `WebView2.Source` property or calling the `WebView2.EnsureCoreWebView2Async` method.
-
-    Set the following variable:
 
     ```
     "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--enable-features=msEdgeDevToolsWdpRemoteDebugging"
@@ -90,19 +98,21 @@ Attach Microsoft Edge DevTools remotely to an Xbox WebView2 WinUI 2 (UWP) app as
 
 1.  Deploy your app to your Xbox using `Xbox Device Portal` and launch your app.
 
-1.  Go to `edge://inspect`.  In the **Connect to a remote Windows device** text box, enter `https://<System IP>:11443`, and then click **Connect to Device**.
+1.  Go to `edge://inspect`.
+
+1.  In the **Connect to a remote Windows device** text box, enter `https://<System IP>:11443`, where `<System IP>` is replaced by your Xbox System OS IP, and then click the **Connect to Device** button.
 
 1.  Verify that you can successfully connect, so that your debuggable WebView2 control, named **Edge**, is listed under your machine name:
 
     ![Edge Inspect Xbox](./remote-debugging-xbox-images/xbox-edge-inspect.png)
 
-1.  At the bottom of the **Edge** WebView2 control entry, click the **inspect** link.  Microsoft Edge DevTools opens for the WebView2 control:
+1.  At the bottom of the **Edge** WebView2 control entry, click the **inspect** link.
+
+    Microsoft Edge DevTools opens for the WebView2 control:
 
     ![DevTools Inspect Xbox](./remote-debugging-xbox-images/xbox-devtools-tab.png)
 
 Now you can use Microsoft Edge DevTools to inspect and debug the WebView2 control in your Xbox WebView2 WinUI 2 (UWP) app.
-
-
 
 
 <!-- ========================================================================== -->
