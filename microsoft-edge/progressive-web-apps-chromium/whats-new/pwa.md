@@ -44,7 +44,9 @@ Microsoft Edge 108 introduces experimental support for Progressive Web Apps to d
 
 Widgets are defined in your PWA manifest file, by using the `widgets` manifest member. Widgets are displayed by using Adaptive Cards templates, which makes widgets easy to create, and makes them easy to adapt to various operating system widgets dashboards in the future. Microsoft Edge also makes it possible to handle user actions on PWA widgets from your service worker file.
 
-![Windows Widgets Board, next to the PWAmp demo app. The Widgets Board contains the PWAmp mini player widget, showing the current song playing in the PWAmp app](./pwa-images/pwamp-widget.png)
+The following screenshot shows the Windows Widgets Board on the left and the PWAmp demo app on the right. The Widgets Board contains the PWAmp mini player widget, showing the current song that's playing in the PWAmp app:
+
+![The PWAmp mini player widget, in the Windows Widgets board, next to the PWAmp app](./pwa-images/pwamp-widget.png)
 
 To learn more, see [Build PWA-driven widgets](../how-to/widgets.md).
 
