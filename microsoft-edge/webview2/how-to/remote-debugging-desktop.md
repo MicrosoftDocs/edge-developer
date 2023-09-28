@@ -92,4 +92,4 @@ Now you can use Microsoft Edge DevTools to inspect and debug the WebView2 contro
 <!-- ========================================================================== -->
 ## See also
 
-* [Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge](./remote-debugging.md)
+* [Remote debugging WebView2 WinUI 2 (UWP) apps](./remote-debugging.md)
