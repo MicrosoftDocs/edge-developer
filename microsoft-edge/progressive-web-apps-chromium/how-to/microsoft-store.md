@@ -69,9 +69,9 @@ To generate an app package:
 
     ![Report card page](./microsoft-store-images/report-card.png)
 
-1.  Once your PWA is ready to be packaged, in the upper-right corner of the PWABuilder report card page, click the **Package For Stores** button. The store packages dialog opens.
+1.  Once your PWA is ready to be packaged, in the upper-right corner of the PWABuilder report card page, click the **Package For Stores** button. A dialog opens, showing the message **Awesome! Your PWA is store ready!**.
 
-1.  Under **Windows**, click the **Generate Package** button.
+1.  Under **Windows**, click the **Generate Package** button. The **Windows Package Options** dialog opens.
 
 1.  Paste the following values, which you saved in the [Create an app reservation](#create-an-app-reservation) section above:
     *  **Package ID**
@@ -89,7 +89,7 @@ See also:
 * [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)<!-- changing "master" to "main" in that URL doesn't work, as of August 11, 2023 -->
 * [Bundling MSIX packages](/windows/msix/package/bundling-overview).
 
-### Submit your app package to the Microsoft Store
+#### Submit your app package to the Microsoft Store
 
 To submit your app to the Microsoft Store:
 
@@ -127,19 +127,19 @@ The following figure shows the UI that is introduced when a user moves outside t
 
 ![The additional UI with URL and page title when the app is redirected to another domain](./microsoft-store-images/locale-redirection-additional-ui.png)
 
-### Domain redirection with browser-installed PWAs
+#### Domain redirection with browser-installed PWAs
 
 A Web App Manifest is tied to a single domain.  However, some PWAs use locale-specific domains for their customers in specific regions of the globe.  When visiting the PWA in a web browser, customers are seamlessly transitioned from the principal domain (for example, contoso.com) to a locale-specific domain (for example, contoso.co.ke), because the redirect happens during initial load of that website.
 
 Customers who install the PWA from Microsoft Edge would therefore install the PWA from the locale-specific domain.  Subsequent launches of the PWA go directly to that locale-specific domain, instead of first going to the principal domain.
 
-### Domain redirection with PWAs installed from the Microsoft Store
+#### Domain redirection with PWAs installed from the Microsoft Store
 
 PWAs that are installed from the Microsoft Store have a hard-coded start URL that is pointed at the principal domain.  When the PWA is launched, the PWA initially navigates to the principal domain, and then a customer may (as necessary) be redirected to their locale-specific domain. If that redirection occurs, the navigation is considered "out of scope".  As a result, the app displays the URL and page title at the top of the page.
 
 Displaying the URL and page title is a security feature to ensure that users know they have left the context of the PWA.  This added UI makes sense when a user loads a page from another website in the context of the PWA.  However, that added UI may be inappropriate when a user moves among domains that are all part of the same website.
 
-### Prevent the locale-specific URL and title from being displayed
+#### Prevent the locale-specific URL and title from being displayed
 
 To prevent the additional UI from being shown in a PWA that's installed from the Microsoft Store, you can use [URL Handlers](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md) to enable the PWA to span multiple locale-specific domains.
 
@@ -156,9 +156,9 @@ Eventually, the `url_handlers` feature will be replaced by [`scope_extensions`](
 <!-- ====================================================================== -->
 ## Make updates to your app
 
-Generally, when you update your PWA code, you don't need to create a new app package and submit it to the Microsoft Store again. For example, when you make changes to your app's front-end HTML, CSS, and JavaScript code, or to your service worker, the next time the app is launched, the changes are downloaded by the browser that's running your app from your web server.
+Generally, when you update your PWA code, you don't need to create a new app package and submit it to the Microsoft Store again. For example, suppose you make changes to your app's front-end HTML, CSS, or JavaScript code, or to your service worker. The next time the user launches the app, the changes are downloaded by the browser that's running your app from your web server.
 
-However, if you make changes to the web app manifest file, for example if you change the app icon or name, or if you change or add manifest members like `file_handlers`, `protocol_handlers`, or `share_handlers`, then you must create a new app package and submit it to the Microsoft Store.  This is because the information found in the web app manifest file is copied to the Windows app package for better integration with Windows.
+However, if you make changes to the web app manifest file, you must create a new app package and submit it to the Microsoft Store. For example, in the manifest, you might change the app icon or app name, or add manifest members such as `file_handlers`, `protocol_handlers`, or `share_handlers`. Creating and submitting a new app package is required when the manifest is changed, because the information in the web app manifest file is copied to the Windows app package, for better integration with Windows.
 
 
 <!-- ====================================================================== -->
