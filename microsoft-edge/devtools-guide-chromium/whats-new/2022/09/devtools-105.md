@@ -57,7 +57,7 @@ In the **Network Console**, edit the network request information, and then click
 ![Network Console Edit and Send](./devtools-105-images/networkconsole-edit.png)
 
 See also:
-* [Starting from the Network tool](../../../network-console/network-console-tool.md#starting-from-the-network-tool) in _Compose and send web API requests using the Network Console tool_.
+* [Opening the Network Console tool from within the Network tool](../../../network-console/network-console-tool.md#opening-the-network-console-tool-from-within-the-network-tool) in _Compose and send web API requests using the Network Console tool_.
 
 
 <!-- ====================================================================== -->
