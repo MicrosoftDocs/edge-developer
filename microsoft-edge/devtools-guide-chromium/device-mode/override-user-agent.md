@@ -30,6 +30,8 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
     
 1. Type `network conditions`, select **Show Network conditions**, and then press **Enter** to open the **Network conditions** tool.
 
+   ![Network Conditions from Command Menu](./override-user-agent-images/device-mode-console-command-menu-network-conditions.png)
+
 1. In the **User agent** section, clear the **Use browser default** checkbox.
 
    ![Clearing the 'Use browser default' checkbox](./override-user-agent-images/clear-use-browser-default-checkbox.png)

@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 07/21/2023
 ---
 # Emulate dual-screen and foldable devices
 

@@ -59,7 +59,7 @@ To move any bottom tool to the top, right-click a tab and then select **Move to 
 For the history of this feature in the Chromium open-source project, see Issue [#1075732](https://crbug.com/1075732).
 
 See also:
-* [Panel tools vs. Drawer tools](../../../about-tools.md#panel-tools-vs-drawer-tools) in _About the list of tools_
+* [Activity Bar tools vs. Quick View tools](../../../about-tools.md#activity-bar-tools-vs-quick-view-tools) in _About the list of tools_
 
 
 <!-- ====================================================================== -->

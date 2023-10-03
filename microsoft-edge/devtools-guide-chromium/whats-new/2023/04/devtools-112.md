@@ -144,9 +144,6 @@ Previously, selecting an icon with the keyboard or hovering over an icon with th
 
 ![A label is displayed when hovering over an icon in the Activity Bar](./devtools-112-images/focus-mode-label-vertical-activity-bar.png)
 
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
-
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
