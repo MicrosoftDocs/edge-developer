@@ -65,9 +65,6 @@ In the new **Focus Mode** DevTools UI, various bugs affecting controls and keybo
 
 ![The Search keyboard shortcut opens the Search tool in Quick View](devtools-103-images/focus-mode-search-shortcut.png)
 
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
-
 
 <!-- ====================================================================== -->
 ## The 3D View tool responds better in narrow layouts

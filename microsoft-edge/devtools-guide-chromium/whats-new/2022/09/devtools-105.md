@@ -46,7 +46,7 @@ See also:
 
 Previously in Microsoft Edge, selecting **Edit and resend** for a network request from the Network tool may not have reliably opened the **Network Console** tool and pre-populated it with the values from the request.
 
-In Microsoft Edge 105, this issue has been fixed in the default UI.  This issue will also be fixed in [Focus Mode](../../../experimental-features/focus-mode.md) in a future release.  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you're looking to resend.  You can continue to modify these values before sending the request from the **Network Console** tool.  Thank you for sending us your feedback about this issue!
+In Microsoft Edge 105, this issue has been fixed in the legacy DevTools UI.  This issue will also be fixed in the Focus Mode DevTools UI in a future release.  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you're looking to resend.  You can continue to modify these values before sending the request from the **Network Console** tool.  Thank you for sending us your feedback about this issue!
 
 Right-click the network request that you want to change and resend, and then select **Edit and Resend**:
 
@@ -66,7 +66,7 @@ See also:
 <!-- Title: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View -->
 <!-- Subtitle: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View. -->
 
-In Microsoft Edge 105, several improvements to location controls have been made in [Focus Mode](../../../experimental-features/focus-mode.md), including a new option for changing the orientation of **Quick View**.
+In Microsoft Edge 105, several improvements to location controls have been made, including a new option for changing the orientation of **Quick View**.
 
 The **Customize and control DevTools** (**...**) menu now directly contains buttons to set the docking location of DevTools, instead of requiring opening a submenu.  The **Dock location** icons now have greater contrast, and the currently selected **Dock location** button is now highlighted.
 
@@ -92,9 +92,6 @@ To minimize **Quick View** in either orientation, click the **Collapse Quick Vie
 
 ![Minimizing Quick View](./devtools-105-images/focus-mode-improved-location-controls.png)
 
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
-
 
 <!-- ====================================================================== -->
 ## Fix: Search in the Sources and Network tools now works as expected in Focus Mode
@@ -113,7 +110,6 @@ To search in all files in the **Sources** tool, in the **Page** section, right-c
 ![Networking Search All](./devtools-105-images/sources-search-all-files.png)
 
 See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 * [Search network headers and responses](../../../network/index.md#search-network-headers-and-responses) in _Inspect network activity_.
 * [Find source files for a page using the Search tool](../../../search/search-tool.md)
 

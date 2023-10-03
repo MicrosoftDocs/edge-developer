@@ -134,7 +134,6 @@ The **Activity Bar** and **Quick View** (of Focus Mode) are displayed correctly 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 * [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->

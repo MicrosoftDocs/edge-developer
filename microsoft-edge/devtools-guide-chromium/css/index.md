@@ -148,13 +148,13 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
 
 <!-- ====================================================================== -->
-## Debugging Media Queries
+## Debugging media queries
 
-[Media Queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your website react to changes in the configuration settings for each user. The most common use case is to give your page a different CSS layout depending on the dimensions of the viewport.
+CSS [media queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your website react to changes in the configuration settings for each user. The most common use case is to give your page a different CSS layout depending on the dimensions of the viewport.
 
 Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there's more screen real estate available.
 
-Use the following steps to debug or test the Media Queries you defined in your CSS.
+Use the following steps to debug or test the media queries that you defined in your CSS.
 
 1. To open DevTools, you can right-click in a webpage and then select **Inspect**.
 
@@ -166,7 +166,7 @@ Use the following steps to debug or test the Media Queries you defined in your C
 
 1. With the device toolbar open, click the **...** menu on the top-right and then select **Show media queries**:
 
-   ![Showing Media Queries in the Device Toolbar](./index-images/css-elements-media-queries-showing-mq.png)
+   ![Showing media queries in the Device Toolbar](./index-images/css-elements-media-queries-showing-mq.png)
 
    The colored bars above the webpage represent the different media queries.
        
@@ -176,7 +176,7 @@ Use the following steps to debug or test the Media Queries you defined in your C
 
 1. To debug media queries and open the CSS file in the **Sources** editor, right-click a bar segment, and then select **Reveal in source code**:
 
-   ![Reveal Media Queries in Sources Editor](./index-images/css-elements-media-queries-reveal-in-sources.png)
+   ![Showing media queries in the editor in the Sources tool](./index-images/css-elements-media-queries-reveal-in-sources.png)
 
 
 <!-- ====================================================================== -->
