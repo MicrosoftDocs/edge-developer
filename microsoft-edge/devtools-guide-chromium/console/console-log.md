@@ -112,7 +112,7 @@ To use the `log` function to display different variable types:
 
 1. Expand each output entry to analyze each result in more detail.
 
-   Suppose you get many log messages that only display a value, but you want to display where the value originated from.  For that case, the example code adds curly braces `{}` as a format specifier, around the `x` variable to output the name of the variable, in addition to the value of the variable.
+   The second log message in the example code uses curly braces `{}` around the `x` variable, to output the name of the variable in addition to the value of the variable.  This syntax logs an object that contains a single property named `x`, instead of logging the value of `x` only.
 
    Logging variables of different types in the **Console**:
 
@@ -323,6 +323,8 @@ console.table(contentElements, ['nodeName', 'innerText', 'offsetHeight'])
 ```
 
 This code produces the final two `console` outputs, with two line numbers shown on the right side of the **Console**:
+* `logging-with-table.html:37`
+* `logging-with-table.html:39`
 
 ![Filtering information that 'console.table' displays, and providing an array of properties to display, as a second parameter](./console-log-images/console-log-table-filtered.png)
 
