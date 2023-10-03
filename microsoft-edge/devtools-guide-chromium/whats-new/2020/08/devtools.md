@@ -225,7 +225,7 @@ Third-party issues are now hidden by default in the **Issues** tool.  Select the
 
 Chromium issues: [1096481](https://crbug.com/1096481), [1068116](https://crbug.com/1068116), [1080589](https://crbug.com/1080589)
 
-For more information, see [Filter by origin](../../../issues/index.md#filter-by-origin) in _Find and fix problems using the Issues tool_.
+For more information, see [Filter issues by origin](../../../issues/index.md#filter-issues-by-origin) in _Find and fix problems using the Issues tool_.
 
 
 <!-- ====================================================================== -->
