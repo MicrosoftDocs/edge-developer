@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/24/2023
+ms.date: 10/05/2023
 ---
 # Extensions in the Microsoft Edge sidebar
 
