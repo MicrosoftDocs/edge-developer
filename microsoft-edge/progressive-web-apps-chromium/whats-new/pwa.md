@@ -13,6 +13,45 @@ This page lists the updates to Progressive Web Apps (PWAs) and Web Apps from the
 
 
 <!-- ====================================================================== -->
+## What's New in Microsoft Edge 114
+
+Starting with Microsoft Edge 114, you can detect when your PWA runs in the sidebar in Microsoft Edge by using User-Agent Client Hints.
+
+To learn more, check out these resources:
+
+* [Detect usage in the sidebar](../how-to/sidebar.md#detect-usage-in-the-sidebar), in _Build PWAs for the sidebar in Microsoft Edge_.
+* [Detecting Microsoft Edge from your website](../../web-platform/user-agent-guidance.md).
+
+
+<!-- ====================================================================== -->
+## What's New in Microsoft Edge 112
+
+Starting with Microsoft Edge 112, Progressive Web Apps can experimentally opt-in to be pinned to the sidebar in Microsoft Edge.
+
+The sidebar in Microsoft Edge allows users to easily access popular websites and utilities alongside their browser tabs. The content in the sidebar augments the user's primary task by enabling side-by-side browsing and minimizing the need to switch contexts between browser tabs.
+
+To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `edge_side_panel` manifest member.
+
+![Microsoft Edge with one tab opened in a TODO list app, and PWAmp in the sidebar](./pwa-images/using-pwamp-in-sidebar.png)
+
+To learn more, see [Build PWAs for the sidebar in Microsoft Edge](../how-to/sidebar.md).
+
+
+<!-- ====================================================================== -->
+## What's New in Microsoft Edge 108
+
+Microsoft Edge 108 introduces experimental support for Progressive Web Apps to define their own widgets in the Widgets Board in Windows 11.
+
+Widgets are defined in your PWA manifest file, by using the `widgets` manifest member. Widgets are displayed by using Adaptive Cards templates, which makes widgets easy to create, and makes them easy to adapt to various operating system widgets dashboards in the future. Microsoft Edge also makes it possible to handle user actions on PWA widgets from your service worker file.
+
+The following screenshot shows the Windows Widgets Board on the left and the PWAmp demo app on the right. The Widgets Board contains the PWAmp mini player widget, showing the current song that's playing in the PWAmp app:
+
+![The PWAmp mini player widget, in the Windows Widgets board, next to the PWAmp app](./pwa-images/pwamp-widget.png)
+
+To learn more, see [Build PWA-driven widgets](../how-to/widgets.md).
+
+
+<!-- ====================================================================== -->
 ## What's New in Microsoft Edge 105
 
 Microsoft Edge 105 brings the following new features for Progressive Web Apps.
