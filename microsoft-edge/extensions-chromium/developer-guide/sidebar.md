@@ -174,7 +174,7 @@ To allow users to open the sidebar by clicking the action toolbar icon, use [sid
 Then, add the following code to the `service-worker.js` code listing that's in [Enable a sidebar for a specific site only](#enable-a-sidebar-for-a-specific-site-only), above:
 
 ```js
-// Allow users to open the sidebar by clicking on the action toolbar icon
+// Allow users to open the sidebar by clicking the action toolbar icon
 chrome.sidePanel
   .setPanelBehavior({ openPanelOnActionClick: true })
   .catch((error) => console.error(error));
@@ -211,13 +211,13 @@ chrome.tabs.onActivated.addListener(async ({ tabId }) => {
 <!-- todo: note: new section.
 other doc: https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-interaction -->
 
-[sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open) allows extensions to open the sidebar through an user gesture, such as clicking on the action icon.  Or any user interaction on an extension page or content script, such as clicking a button. 
+[sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open) allows extensions to open the sidebar through an user gesture, such as clicking the action icon.  Or any user interaction on an extension page or content script, such as clicking a button. 
 
-The following code shows how to open a global sidebar on the current window when the user clicks on a context menu.  When using `sidePanel.open()`, choose the context in which it should open.  Use `windowId` to open a global sidebar. 
+The following code shows how to open a global sidebar on the current window when the user clicks on a context menu.  When using `sidePanel.open()`, choose the context in which the sidebar should open:
+* Use `windowId` to open a global sidebar, as shown in the following example.
+* Or, set the `tabId` to open the sidebar only on a specific tab.
 
-`sidePanel.open()` is available starting with Microsoft Edge version 117.
-
-Alternatively, set the `tabId` to open the sidebar only on a specific tab.
+`sidePanel.open()` is available starting with Microsoft Edge version 117.<!-- todo: later remove the version number statement -->
 
 ```js
 // service-worker.js:
@@ -290,11 +290,11 @@ If the `openPanelOnActionClick()` property of the [PanelBehavior](https://develo
 
 <!-- todo: note: new section -->
 
-The sidebar can be opened through the following interactions:
+The sidebar can also be opened through the following interactions:
 
 * Open the sidebar by an extension user gesture, such as clicking the action icon.  This approach uses [sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open).  See [Opening the sidebar upon user interaction](#opening-the-sidebar-upon-user-interaction),<!-- todo: note: other doc: [Programmatically open the side panel on user interaction](https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-interaction) --> above.
 
-* Open the sidebar by clicking the toolbar icon - This approach uses [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior).  See [By clicking an icon](#by-clicking-an-icon) in section "Opening the extension in the sidebar",<!-- todo: note: other doc: [Open the side panel by clicking the toolbar icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) --> above.
+* Open the sidebar by clicking the toolbar icon.  This approach uses [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior).  See [By clicking an icon](#by-clicking-an-icon) in section "Opening the extension in the sidebar",<!-- todo: note: other doc: [Open the side panel by clicking the toolbar icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) --> above.
 
 
 <!-- ====================================================================== -->
