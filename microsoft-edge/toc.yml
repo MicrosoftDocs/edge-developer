@@ -1295,7 +1295,7 @@
               displayName: Understand WebView2 SDK versions  # old title
 
             # update needed?
-            - name: Test upcoming APIs and features
+            - name: Test upcoming APIs and features  # todo: move to test toc bucket?
               href: webview2/how-to/set-preview-channel.md
               displayName: 
 
