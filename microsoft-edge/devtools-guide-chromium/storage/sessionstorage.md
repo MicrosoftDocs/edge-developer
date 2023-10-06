@@ -42,7 +42,7 @@ To view the `sessionStorage` key-value pairs of a domain:
 
    ![The sessionStorage key-value pairs](./sessionstorage-images/storage-application-storage-session-storage-domain.png)
 
-1. Click a row of the key-value table.  The value for the selected key is displayed below the key-value table:
+1. Select a row of the key-value table.  The value for the selected key is displayed below the key-value table:
 
    ![View the value of the x-sid key](./sessionstorage-images/storage-application-storage-session-storage-domain-key-value-selected.png)
 
@@ -60,7 +60,7 @@ To add a new key/value pair for session storage:
 
 1. In the **Value** field of the row, enter a value for the key.
 
-1. Press **Enter**, or click an empty area.  The value is also displayed below the key/value table:
+1. Press **Enter**, or click an empty area.  The value is then also displayed below the key/value table:
 
    ![The empty part of the table to double-click in order to create a new key-value pair](./sessionstorage-images/storage-application-storage-session-storage-domain-key-value-new.png)
 
@@ -106,7 +106,7 @@ You can run JavaScript expressions and statements in the **Console**, and the **
 
 To interact with `sessionStorage` by using the **Console**:
 
-1. In DevTools, select the **Console** tool.
+1. In DevTools, select the **Console** tool.  For example, press **Esc** to display the Quick View panel, which always includes a **Console** tab.
 
 1. If you want to access the `sessionStorage` key-value pairs of a domain other than the page you're on, use the **JavaScript contexts** menu to change the JavaScript context of the **Console**:
 
@@ -131,7 +131,7 @@ To interact with `sessionStorage` by using the **Console**:
    <· 'efgh-5678'
    ```
 
-   The **Key/Value** pair table is updated to reflect changes that you make by entering JavaScript assignment statements using the **Console**.
+   When you enter JavaScript assignment expressions by using the **Console**, the **Key/Value** pair table is updated.
 
 
 <!-- ====================================================================== -->
