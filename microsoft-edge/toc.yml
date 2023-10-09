@@ -790,9 +790,15 @@
           href: devtools-guide-chromium/sample-code/sample-code.md
           displayName: sample code, demo
 # IE mode ---------------------------------------------------------------------
-        - name: Use DevTools in Internet Explorer mode (IE mode)  # added article
-          href: devtools-guide-chromium/ie-mode/index.md
-          displayName: IE mode
+        - name: DevTools in Internet Explorer mode (IE mode)
+          items:
+            - name: Use DevTools in Internet Explorer mode (IE mode)
+              href: devtools-guide-chromium/ie-mode/index.md
+              displayName:
+
+            - name: Reference for Internet Explorer mode (IE mode)
+              href: devtools-guide-chromium/ie-mode/ie-mode-ref.md
+              displayName:
 # DevTools Protocol -----------------------------------------------------------
         - name: Microsoft Edge DevTools Protocol  # added article
           href: devtools-protocol-chromium/index.md
