@@ -208,8 +208,6 @@ chrome.tabs.onActivated.addListener(async ({ tabId }) => {
 
 <!-- ------------------------------ -->
 #### Opening the sidebar upon user interaction
-<!-- todo: note: new section.
-other doc: https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-interaction -->
 
 [sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open) allows extensions to open the sidebar through a user gesture, such as clicking the action icon, or through any user interaction on an extension page or content script, such as clicking a button.
 
@@ -288,13 +286,11 @@ If the `openPanelOnActionClick()` property of the [PanelBehavior](https://develo
 <!-- ---------- -->
 ###### Open through a gesture
 
-<!-- todo: note: new section -->
-
 The sidebar can also be opened through the following interactions:
 
-* Open the sidebar by an extension user gesture, such as clicking the action icon.  This approach uses [sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open).  See [Opening the sidebar upon user interaction](#opening-the-sidebar-upon-user-interaction),<!-- todo: note: other doc: [Programmatically open the side panel on user interaction](https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-interaction) --> above.
+* Open the sidebar by an extension user gesture, such as clicking the action icon.  This approach uses [sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open).  See [Opening the sidebar upon user interaction](#opening-the-sidebar-upon-user-interaction), above.
 
-* Open the sidebar by clicking the toolbar icon.  This approach uses [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior).  See [By clicking an icon](#by-clicking-an-icon) in section "Opening the extension in the sidebar",<!-- todo: note: other doc: [Open the side panel by clicking the toolbar icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon) --> above.
+* Open the sidebar by clicking the toolbar icon.  This approach uses [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior).  See [By clicking an icon](#by-clicking-an-icon) in section "Opening the extension in the sidebar", above.
 
 
 <!-- ====================================================================== -->
