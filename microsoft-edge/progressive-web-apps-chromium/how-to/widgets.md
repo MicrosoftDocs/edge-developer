@@ -14,7 +14,7 @@ Various operating systems have widgets dashboards that let users read content an
 
 On Windows 11, widgets appear in the Widgets Board, which you open from the left side of the taskbar:
 
-![The Widgets Board in Windows 11](./widgets-images/windows11-widgets.png) 
+![The Widgets Board in Windows 11](./widgets-images/windows11-widgets.png)
 
 In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and handle user interactions within them.
 
@@ -111,8 +111,8 @@ In the above example, a music player application defines a mini player widget. A
 | `name` | The title of the widget, presented to users. | Yes |
 | `short_name` | An alternative short version of the name. | No |
 | `description` | A description of what the widget does. | Yes |
-| `icons` | An array of icons to be used for the widget. If missing, the `icons` manifest member is used instead. | No |
-| `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). Note that the `platform` field of a screenshot item currently supports the `Windows` and `any` values. | Yes |
+| `icons` | An array of icons to be used for the widget. If missing, the `icons` manifest member is used instead. Icons larger than 1024x1024 will be ignored. | No |
+| `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). Note that the `platform` field of a screenshot item currently supports the `Windows` and `any` values. Images larger than 1024x1024 pixels will be ignored. See [Integrate with the widget picker](https://learn.microsoft.com/en-us/windows/apps/design/widgets/widgets-picker-integration#screenshot-image-requirements) for screenshot requirements specific to the Windows 11 Widget Board. | Yes |
 | `tag` | A string used to reference the widget in the PWA service worker. | Yes |
 | `template` | The template to use to display the widget in the operating system widgets dashboard. Note: this property is currently only informational and not used. See `ms_ac_template` below. | No |
 | `ms_ac_template` | The URL of the custom Adaptive Cards template to use to display the widget in the operating system widgets dashboard. See [Define a widget template](#define-a-widget-template) below. | Yes |
@@ -120,6 +120,7 @@ In the above example, a music player application defines a mini player widget. A
 | `type` | The MIME type for the widget data. | No |
 | `auth` | A boolean indicating if the widget requires authentication. | No |
 | `update` | The frequency, in seconds, at which the widget will be updated. Code in your service worker must perform the updating; the widget is not updated automatically. See [Access widget instances at runtime](#access-widget-instances-at-runtime). | No |
+| `multiple` | A boolean indicating whether the to allow multiple instances of the widget. Defaults to true. | No |
 
 
 <!-- ====================================================================== -->
@@ -184,7 +185,7 @@ To bind data to your template, use the `data` field in your widget definition. T
 
 The template defined in [the previous section](#define-a-widget-template) contains two variables: `song` and `artist`, which are enclosed in the binding expression syntax: `${}`. The data that's returned by the `data` URL in your widget definition should contain values for these variables.
 
-Here's an example of what the `data` URL might return: 
+Here's an example of what the `data` URL might return:
 
 ```json
 {
@@ -462,10 +463,10 @@ Each widget is represented as a `widget` object, which contains the following pr
 When using `matchAll(options)` to get multiple widgets, a `widgetOptions` object is necessary to filter which widgets to return. The `widgetOptions` object contains the following properties, all of which are optional:
 
 * `installable`: A Boolean indicating if the returned widgets should be installable.
-* `installed`: A Boolean indicating if the returned widgets should be installed in the widget host.
+* `installed`: A Boolean indicating if the returned widgets are installed in the widget host.
 * `tag`: A string used to filter the returned widgets by tag.
-* `instance`: A string used to filter the returned widgets by instance ID.
-* `host`: A string used to filter the returned widgets by widget host ID.
+* `instanceId`: A string used to filter the returned widgets by instance ID.
+* `hostId`: A string used to filter the returned widgets by widget host ID.
 
 #### widgetPayload object
 
@@ -491,22 +492,17 @@ This object represents the original definition of the widget, found in the PWA m
 
 This object is passed as an argument to listeners of service worker widget events of type `widgetinstall`, `widgetuninstall`, and `widgetresume`.
 
-For the `widgetinstall` and `widgetuninstall` event types, the `widgetEvent` object has the following properties:
+For the `widgetinstall`, `widgetuninstall`, and `widgetresume` event types, the `widgetEvent` object has the following properties:
 
 | Property | Description | Type |
 |:--- |:--- |:--- |
-| `widget` | The widget instance that triggered the event. | [widgetInstance](#widgetinstance-object) |
+| `widget` | The widget instance that triggered the event. | [widget](#widget-object) |
 | `instanceId` | The widget instance ID. | `String` |
-
-For the `widgetresume` event type, the `widgetEvent` object has the following property:
-
-| Property | Description | Type |
-|:--- |:--- |:--- |
 | `hostId` | The widget host ID. | `String` |
 
 #### widgetClickEvent object
 
-This object is passed as an argument to listeners of service worker widget events of type `widgetclick`.
+This object is passed as an argument to listeners of service worker widget events of type `widgetclick`. App windows can be opened in response to the `widgetclick` event using `clients.openWindow()`.
 
 The `widgetClickEvent` object has the following properties:
 
