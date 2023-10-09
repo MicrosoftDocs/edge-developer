@@ -1633,6 +1633,15 @@
           href: accessibility/test.md
           displayName: 
 
+#==============================================================================
+# Dual Engine
+    - name: DualEngine API
+      items:
+        - name: Reference
+          href: dualengine/index.md
+          displayName:
+      
+
 # =============================================================================
 # bottom leaf nodes
     - name: Videos about web development with Microsoft Edge
