@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/05/2023
+ms.date: 10/09/2023
 ---
 # Extensions in the Microsoft Edge sidebar
 
@@ -211,7 +211,7 @@ chrome.tabs.onActivated.addListener(async ({ tabId }) => {
 <!-- todo: note: new section.
 other doc: https://developer.chrome.com/docs/extensions/reference/sidePanel/#user-interaction -->
 
-[sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open) allows extensions to open the sidebar through an user gesture, such as clicking the action icon.  Or any user interaction on an extension page or content script, such as clicking a button. 
+[sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open) allows extensions to open the sidebar through a user gesture, such as clicking the action icon, or through any user interaction on an extension page or content script, such as clicking a button.
 
 The following code shows how to open a global sidebar on the current window when the user clicks on a context menu.  When using `sidePanel.open()`, choose the context in which the sidebar should open:
 * Use `windowId` to open a global sidebar, as shown in the following example.
@@ -231,7 +231,7 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === 'openSidePanel') {
-    // This will open the panel in all the pages on the current window.
+    // Open the sidebar in all the tabs of the current window.
     chrome.sidePanel.open({ windowId: tab.windowId });
   }
 });
