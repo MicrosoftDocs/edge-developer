@@ -502,7 +502,7 @@ For the `widgetinstall`, `widgetuninstall`, and `widgetresume` event types, the 
 
 #### widgetClickEvent object
 
-This object is passed as an argument to listeners of service worker widget events of type `widgetclick`. App windows can be opened in response to the `widgetclick` event, by using `clients.openWindow()`.
+This object is passed as an argument to listeners of service worker widget events of type `widgetclick`. You can open your app's window in response to the `widgetclick` event, by using `clients.openWindow()`.
 
 The `widgetClickEvent` object has the following properties:
 
