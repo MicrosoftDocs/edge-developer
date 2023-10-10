@@ -112,7 +112,7 @@ In the above example, a music player application defines a mini player widget. A
 | `short_name` | An alternative short version of the name. | No |
 | `description` | A description of what the widget does. | Yes |
 | `icons` | An array of icons to be used for the widget. If missing, the `icons` manifest member is used instead. Icons larger than 1024x1024 will be ignored. | No |
-| `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). Note that the `platform` field of a screenshot item currently supports the `Windows` and `any` values. Images larger than 1024x1024 pixels will be ignored. See [Integrate with the widget picker](/windows/apps/design/widgets/widgets-picker-integration#screenshot-image-requirements) for screenshot requirements specific to the Windows 11 Widget Board. | Yes |
+| `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). Note that the `platform` field of a screenshot item currently supports the `Windows` and `any` values. Images larger than 1024x1024 pixels will be ignored. For screenshot requirements specific to the Windows 11 Widgets Board, see [Screenshot image requirements](/windows/apps/design/widgets/widgets-picker-integration#screenshot-image-requirements) in _Integrate with the widget picker_. | Yes |
 | `tag` | A string used to reference the widget in the PWA service worker. | Yes |
 | `template` | The template to use to display the widget in the operating system widgets dashboard. Note: this property is currently only informational and not used. See `ms_ac_template` below. | No |
 | `ms_ac_template` | The URL of the custom Adaptive Cards template to use to display the widget in the operating system widgets dashboard. See [Define a widget template](#define-a-widget-template) below. | Yes |
@@ -502,7 +502,7 @@ For the `widgetinstall`, `widgetuninstall`, and `widgetresume` event types, the 
 
 #### widgetClickEvent object
 
-This object is passed as an argument to listeners of service worker widget events of type `widgetclick`. App windows can be opened in response to the `widgetclick` event using `clients.openWindow()`.
+This object is passed as an argument to listeners of service worker widget events of type `widgetclick`. App windows can be opened in response to the `widgetclick` event, by using `clients.openWindow()`.
 
 The `widgetClickEvent` object has the following properties:
 
