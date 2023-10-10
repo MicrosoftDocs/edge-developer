@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 09/28/2023
+ms.date: 10/06/2023
 ---
 # Publish a Progressive Web App to the Microsoft Store
 
@@ -127,9 +127,9 @@ The following figure shows the UI that is introduced when a user moves outside t
 
 ![The additional UI with URL and page title when the app is redirected to another domain](./microsoft-store-images/locale-redirection-additional-ui.png)
 
-#### Domain redirection with browser-installed PWAs
+#### Domain redirection with PWAs installed from the browser
 
-A Web App Manifest is tied to a single domain.  However, some PWAs use locale-specific domains for their customers in specific regions of the globe.  When visiting the PWA in a web browser, customers are seamlessly transitioned from the principal domain (for example, contoso.com) to a locale-specific domain (for example, contoso.co.ke), because the redirect happens during initial load of that website.
+A Web App Manifest is tied to a single domain.  However, some PWAs use locale-specific domains for their customers in specific regions of the globe.  When visiting the PWA in a web browser, customers are seamlessly transitioned from the principal domain (for example, `contoso.com`) to a locale-specific domain (for example, `contoso.co.ke`), because the redirect happens during initial load of that website.
 
 Customers who install the PWA from Microsoft Edge would therefore install the PWA from the locale-specific domain.  Subsequent launches of the PWA go directly to that locale-specific domain, instead of first going to the principal domain.
 
@@ -158,7 +158,7 @@ Eventually, the `url_handlers` feature will be replaced by [`scope_extensions`](
 
 Generally, when you update your PWA code, you don't need to create a new app package and submit it to the Microsoft Store again. For example, suppose you make changes to your app's front-end HTML, CSS, or JavaScript code, or to your service worker. The next time the user launches the app, the changes are downloaded by the browser that's running your app from your web server.
 
-However, if you make changes to the web app manifest file, you must create a new app package and submit it to the Microsoft Store. For example, in the manifest, you might change the app icon or app name, or add manifest members such as `file_handlers`, `protocol_handlers`, or `share_handlers`. Creating and submitting a new app package is required when the manifest is changed, because the information in the web app manifest file is copied to the Windows app package, for better integration with Windows.
+However, if you make changes to the web app manifest file, you must create a new app package and submit it to the Microsoft Store again. For example, in the manifest, you might change the app icon or app name, or add manifest members such as `file_handlers`, `protocol_handlers`, or `share_target`. Creating and submitting a new app package is required when the manifest is changed, because the information in the web app manifest file is copied to the Windows app package, for better integration with Windows.
 
 
 <!-- ====================================================================== -->
