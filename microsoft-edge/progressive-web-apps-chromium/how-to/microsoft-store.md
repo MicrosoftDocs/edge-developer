@@ -121,7 +121,7 @@ Use this feature to measure distinct traffic from your PWA that was installed fr
 <!-- ====================================================================== -->
 ## Redirect to locale-specific domains without displaying additional UI
 
-By default, a PWA that's installed from the Microsoft Store displays an additional UI when the app is redirected to a locale-specific domain.  The added UI shows the URL and page title.  This UI is added because navigation to the locale-specific domain is considered "out-of-scope".  However, you can prevent this UI from being displayed, by specifying locale-specific origins that are associated with the PWA.
+By default, a PWA that's installed from the Microsoft Store displays an additional UI when the app is redirected to a locale-specific domain.  The added UI shows the URL and page title.  This UI is added because navigation to the locale-specific domain is considered _out of scope_.
 
 The following figure shows the UI that is introduced when a user moves outside the scope of a PWA. 
 
@@ -141,16 +141,11 @@ Displaying the URL and page title is a security feature to ensure that users kno
 
 #### Prevent the locale-specific URL and title from being displayed
 
-To prevent the additional UI from being shown in a PWA that's installed from the Microsoft Store, you can use [URL Handlers](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md) to enable the PWA to span multiple locale-specific domains.
+It's currently impossible, for apps installed from the Microsoft Store, to prevent displaying the additional URL and title UI when redirecting to a locale-specific domain.
 
-To prevent displaying the URL and page title:
+In the future, _scope extensions_ will make it possible for a PWA to capture navigation to paths, subdomains, or even sites other than its own scope. The scope extensions feature is in active development and isn't ready to be used yet. To find out more about the state of development of this feature in Chromium, check out the [Web app scope extensions feature](https://chromestatus.com/feature/5746537956114432) at Chrome Platform Status.
 
-1. Within the PWA's Web App Manifest, use [the `url_handlers` member](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#manifest-changes) to specify an array of origins that are associated with that app.
-1. On each of the referenced origins, include a [`web-app-origin-association` file](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file) that associates the PWA with that domain.
-
-When these domain lists are in place, Microsoft Edge no longer shows the additional UI when the principal domain is redirected to the locale-specific domains.
-
-Eventually, the `url_handlers` feature will be replaced by [`scope_extensions`](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md), but that spec is still in development.  `scope_extensions` will produce the same result as `url_handlers`.
+Once the feature can be used in Microsoft Edge, we will document it here. In the meantime, to learn more about how scope extensions will work, see the [explainer document on the WICG repository](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md).
 
 
 <!-- ====================================================================== -->
