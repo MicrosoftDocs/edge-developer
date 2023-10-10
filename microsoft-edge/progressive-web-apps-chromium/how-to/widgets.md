@@ -120,7 +120,7 @@ In the above example, a music player application defines a mini player widget. A
 | `type` | The MIME type for the widget data. | No |
 | `auth` | A boolean indicating if the widget requires authentication. | No |
 | `update` | The frequency, in seconds, at which the widget will be updated. Code in your service worker must perform the updating; the widget is not updated automatically. See [Access widget instances at runtime](#access-widget-instances-at-runtime). | No |
-| `multiple` | A boolean indicating whether to allow multiple instances of the widget. Defaults to true. | No |
+| `multiple` | A boolean indicating whether to allow multiple instances of the widget. Defaults to `true`. | No |
 
 
 <!-- ====================================================================== -->
