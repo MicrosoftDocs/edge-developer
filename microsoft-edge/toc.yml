@@ -1303,7 +1303,7 @@
               displayName: 
 
 # -----------------------------------------------------------------------------
-        - name: Test and automate WebView2 apps
+        - name: Test and automation in WebView2 apps
           items:
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
