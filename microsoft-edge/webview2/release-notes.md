@@ -139,15 +139,13 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ====================================================================== -->
-## 1.0.####.##
+## 1.0.2088.41
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+Release Date: October 16, 2023
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 118.0.####.## or higher.
+[NuGet package for WebView2 SDK 1.0.2088.41](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2088.41)
 
-
-<!-- ------------------------------ -->
-#### General features
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 118.0.2088.41 or higher.
 
 
 <!-- ------------------------------ -->
@@ -155,20 +153,13 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 No additional APIs have been promoted to Stable and added in this Release SDK.
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
+* Fixed an issue causing some UWP apps to be unable to input text. (Runtime-only) ([Issue #3805](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3805))
+* Fixed an initialization failure for apps that were using the Windows PerProcessSystemDPIForceOff compatibility setting. (Runtime-only) ([Issue #3692](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3692))
+* Fixed a Dialog Position Offset bug in WebView2 (Runtime-only) ([Issue #3763](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3763))
 
 <!-- end of Oct 2023 Release SDK -->
 
