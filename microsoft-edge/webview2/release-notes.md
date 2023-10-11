@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 10/01/2023
+ms.date: 10/16/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -157,9 +157,9 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 <!-- ------------------------------ -->
 #### Bug fixes
 
-* Fixed an issue causing some UWP apps to be unable to input text. (Runtime-only) ([Issue #3805](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3805))
-* Fixed an initialization failure for apps that were using the Windows PerProcessSystemDPIForceOff compatibility setting. (Runtime-only) ([Issue #3692](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3692))
-* Fixed a Dialog Position Offset bug in WebView2 (Runtime-only) ([Issue #3763](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3763))
+* Fixed an issue causing some UWP apps to be unable to input text.  (Runtime-only)  ([Issue #3805](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3805))
+* Fixed an initialization failure for apps that were using the Windows `PerProcessSystemDPIForceOff` compatibility setting.  (Runtime-only)  ([Issue #3692](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3692))
+* Fixed a Dialog Position Offset bug in WebView2.  (Runtime-only)  ([Issue #3763](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3763))
 
 <!-- end of Oct 2023 Release SDK -->
 
