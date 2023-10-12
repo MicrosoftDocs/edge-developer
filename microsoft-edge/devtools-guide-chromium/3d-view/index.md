@@ -25,6 +25,8 @@ On the right, the 3D canvas represents the webpage according to which tab and op
 <!-- ====================================================================== -->
 ## Zoom, pan, and rotate the 3D canvas
 
+This article shows the [Animal shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo page, which uses layers.
+
 
 ### Zoom the page in or out
 
