@@ -21,3 +21,4 @@ jobs:
           ado_tags: 'edge-docs-github-issue'
           ado_area_path: 'Edge\Web Experience\Ecosystem\Content'
           ado_work_item_type: 'Deliverable'
+          ado_product: 'Documentation'
