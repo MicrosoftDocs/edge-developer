@@ -137,24 +137,22 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 #### Bug fixes
 -->
 
-<!-- Version TBD -->
-## 1.0.2158-prerelease
 
-Release Date: October 13, 2023
+<!-- ====================================================================== -->
+## 1.0.2158-prerelease
+<!-- todo: version tbd -->
+
+Release Date: October 17, 2023
 
 [NuGet package for WebView2 SDK 1.0.2158-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2158-prerelease)
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 120.0.2158.0 or higher.
 
-### REMOVE_ME
 
-#### General features
-  
 <!-- ------------------------------ -->
 #### Experimental APIs
 
-
-* Added FailureSourceModulePath to ProcessFailedEventArgs which is the full path of the module that caused the crash in cases of [Windows Code Integrity](https://learn.microsoft.com/en-us/mem/intune/user-help/you-need-to-enable-code-integrity) failures -  i.e when process exited with `STATUS_INVALID_IMAGE_HASH`
+* Added `FailureSourceModulePath` to `ProcessFailedEventArgs`, to specify the full path of the module that caused the crash in cases of [Windows Code Integrity](/mem/intune/user-help/you-need-to-enable-code-integrity) failures - that is, when a process exited with `STATUS_INVALID_IMAGE_HASH`:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -172,18 +170,22 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 * [ICoreWebView2ExperimentalProcessFailedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs?view=webview2-1.0.2158-prerelease&preserve-view=true)
     * [ICoreWebView2ExperimentalProcessFailedEventArgs::get_FailureSourceModulePath](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs?view=webview2-1.0.2158-prerelease&preserve-view=true#get_failuresourcemodulepath)
   
----  
+---
+
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-* Support additional page settings (PageRange and PagesPerSheert) in PrintToPDF API (Runtime-only) ([Issue #3719](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3719))
-* Navigation to Extension Resource file was not handled correctly and now fix with correct handle method. (Runtime-only) ([Issue #3728](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3728))
-* Fixed an issue causing some UWP apps to be unable to input text. (Runtime-only) ([Issue #3805](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3805))
-* Fixed an initialization failure for apps that were using the Windows PerProcessSystemDPIForceOff compatibility setting. (Runtime-only) ([Issue #3692](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3692))
-* Remove monitors that collecting data when system default browser setting changes. (Runtime-only)
-* Fixed a Dialog Position Offset Bug in WebView2. (Runtime-only) ([Issue #3763](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3763))
-* Fixed a crash in NewWindowRequested event if the NewWindow is set to null. (Runtime-only)
+* Added support for additional page settings (`PageRange` and `PagesPerSheet`) in the PrintToPDF API.  (Runtime-only)  ([Issue #3719](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3719))
+* Navigation to an Extension Resource file was not handled correctly, and has now been fixed with the correct handling method.  (Runtime-only)  ([Issue #3728](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3728))
+* Fixed an issue causing some UWP apps to be unable to input text.  (Runtime-only)  ([Issue #3805](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3805))
+* Fixed an initialization failure for apps that were using the Windows `PerProcessSystemDPIForceOff` compatibility setting.  (Runtime-only)  ([Issue #3692](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3692))
+* Removed monitors that were collecting data when the system default browser setting changes.  (Runtime-only)
+* Fixed a Dialog Position Offset bug in WebView2.  (Runtime-only)  ([Issue #3763](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3763))
+* Fixed a crash in the `NewWindowRequested` event if the `NewWindow` is set to `null`.  (Runtime-only)
+
+<!-- end of Oct 2023 Prerelease SDK -->
+
 
 <!-- ====================================================================== -->
 ## 1.0.2045.28
