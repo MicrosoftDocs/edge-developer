@@ -1,6 +1,6 @@
 ---
 title: Edge Web Store Curation and Reviews
-description: 
+description: How submissions to the Microsoft Edge Web Store are curated and reviewed by the store team.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -50,4 +50,4 @@ Users can provide a rating and a written review for the item they are using on t
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge Add-ons store developer policies](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/store-policies/developer-policies)
+* [Microsoft Edge Add-ons store developer policies](../store-policies/developer-policies.md)
