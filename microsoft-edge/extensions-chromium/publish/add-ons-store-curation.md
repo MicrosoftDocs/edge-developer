@@ -1,5 +1,5 @@
 ---
-title: Edge Web Store Curation and Reviews
+title: Edge Web Store curation and reviews
 description: How submissions to the Microsoft Edge Web Store are curated and reviewed by the store team.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/13/2023
 ---
-# Edge Web Store Curation and Reviews
+# Edge Web Store curation and reviews
 
 The Microsoft Edge Add-Ons Store has curated the Edge store experience so that users can find all items like themes, extensions, and apps to customize their browser at one place.
 
@@ -23,16 +23,19 @@ Users can also discover the items they are interested in on the Edge Add-Ons Sto
 
 The following factors are used to organize items:
 * **Quality:** Items featured on the Edge Add-Ons Store are selected based on their eligibility criteria.
-* **Relevance:** Ranking takes into consideration factors such as the item name, description relevancy, popularity, and user experience.
+* **Relevancy:** Ranking takes into consideration factors such as the item name, description relevancy, popularity, and user experience.
 * **Popularity:** The number of ratings and the average rating are used for prioritizing items.
 
 
 <!-- ====================================================================== -->
-## Security Review
+## Security review
 
 The quality and compliance of the item that is displayed on the Edge Add-Ons store is thoroughly verified per the guidelines that are set in our developer policy.
 
 Items violating the policy guidelines are not allowed in the store. There is a standard review process for each new item submission and new versions according to the developer policies.
+
+See also:
+* [Content Security Policy (CSP)](../store-policies/csp.md)
 
 
 <!-- ====================================================================== -->
@@ -42,7 +45,7 @@ Every item submitted to the Edge Add-Ons Store, has detailed information about t
 
 
 <!-- ====================================================================== -->
-## User Feedback
+## User feedback
 
 Users can provide a rating and a written review for the item they are using on the Edge Add-Ons Store. Users and developers may report an abusive review from the review section of the item listing page. Items are ranked for popularity as per user ratings on the store.
 
