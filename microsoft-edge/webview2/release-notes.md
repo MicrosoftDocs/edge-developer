@@ -137,34 +137,53 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 #### Bug fixes
 -->
 
+<!-- Version TBD -->
+## 1.0.2158-prerelease
 
-<!-- ====================================================================== -->
-## 1.0.####-prerelease
+Release Date: October 13, 2023
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.2158-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2158-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 120.0.2158.0 or higher.
+
+### REMOVE_ME
 
 #### General features
-
+  
+<!-- ------------------------------ -->
 #### Experimental APIs
 
-#### Promotions
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+* Added FailureSourceModulePath to ProcessFailedEventArgs which is the full path of the module that caused the crash in cases of [Windows Code Integrity](https://learn.microsoft.com/en-us/mem/intune/user-help/you-need-to-enable-code-integrity) failures -  i.e when process exited with `STATUS_INVALID_IMAGE_HASH`
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* `CoreWebView2ProcessFailedEventArgs` Class:
+    * [CoreWebView2ProcessFailedEventArgs.FailureSourceModulePath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.failuresourcemodulepath?view=webview2-dotnet-1.0.2158-prerelease&preserve-view=true)
+
 ##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2ProcessFailedEventArgs` Class:
+    * [CoreWebView2ProcessFailedEventArgs.FailureSourceModulePath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.2158-prerelease&preserve-view=true#failuresourcemodulepath)
+  
 
 ##### [Win32/C++](#tab/win32cpp)
 
----
+* [ICoreWebView2ExperimentalProcessFailedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs?view=webview2-1.0.2158-prerelease&preserve-view=true)
+    * [ICoreWebView2ExperimentalProcessFailedEventArgs::get_FailureSourceModulePath](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs?view=webview2-1.0.2158-prerelease&preserve-view=true#get_failuresourcemodulepath)
+  
+---  
 
+<!-- ------------------------------ -->
 #### Bug fixes
 
-tbd
-
+* Support additional page settings (PageRange and PagesPerSheert) in PrintToPDF API (Runtime-only) ([Issue #3719](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3719))
+* Navigation to Extension Resource file was not handled correctly and now fix with correct handle method. (Runtime-only) ([Issue #3728](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3728))
+* Fixed an issue causing some UWP apps to be unable to input text. (Runtime-only) ([Issue #3805](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3805))
+* Fixed an initialization failure for apps that were using the Windows PerProcessSystemDPIForceOff compatibility setting. (Runtime-only) ([Issue #3692](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3692))
+* Remove monitors that collecting data when system default browser setting changes. (Runtime-only)
+* Fixed a Dialog Position Offset Bug in WebView2. (Runtime-only) ([Issue #3763](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3763))
+* Fixed a crash in NewWindowRequested event if the NewWindow is set to null. (Runtime-only)
 
 <!-- ====================================================================== -->
 ## 1.0.2045.28
