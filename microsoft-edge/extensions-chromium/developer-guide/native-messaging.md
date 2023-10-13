@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/31/2021
+ms.date: 10/13/2023
 ---
 # Native messaging
 
@@ -20,6 +20,25 @@ To acquire the extension and native app host, there are two different distributi
 *  Or, install your extension using the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home), and your extension prompts users to install the host.
 
 To create your extension to send and receive messages with native app hosts, do the following steps.
+
+
+<!-- ====================================================================== -->
+## Writing the chrome_native_messaging_host.exe app
+
+Writing the chrome_native_messaging_host.exe app - this section provides code examples in multiple programming languages.
+
+How you actually write the chrome_native_messaging_host.exe application.
+
+stdin and stdout are used to communicate with the host.
+
+How the information sent from the extension is encoded.
+
+Perhaps:
+The first four bytes is a number that specifies packet length, and the rest is the packet data encoded as JSON.
+
+How to encode the information that is sent back to the extension: tbd
+
+How the chrome_native_messaging_host.exe application knows when to exit: tbd
 
 
 <!-- ====================================================================== -->
