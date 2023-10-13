@@ -994,6 +994,9 @@
             - name: Submission states for extensions in the Microsoft Edge Add-ons website
               href: extensions-chromium/publish/submission-states.md
 
+            - name: Edge Web Store Curation and Reviews
+              href: extensions-chromium/publish/add-ons-store-curation.md
+
             - name: View Microsoft Edge extensions analytics dashboard
               href: extensions-chromium/publish/extensions-analytics.md
 
