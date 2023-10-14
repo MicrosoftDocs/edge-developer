@@ -152,7 +152,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
-* Added `FailureSourceModulePath` to `ProcessFailedEventArgs`, to specify the full path of the module that caused the crash in cases of [Windows Code Integrity](/mem/intune/user-help/you-need-to-enable-code-integrity) failures - that is, when a process exited with `STATUS_INVALID_IMAGE_HASH`:
+* Added the `FailureSourceModulePath` property to the `ProcessFailedEventArgs` type, to specify the full path of the module that caused the crash in cases of Windows code integrity failures - that is, when a process exited with `STATUS_INVALID_IMAGE_HASH`.  See also [Enable code integrity](/mem/intune/user-help/you-need-to-enable-code-integrity) in the Microsoft Intune docs.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
