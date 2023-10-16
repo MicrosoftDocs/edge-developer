@@ -139,14 +139,13 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ====================================================================== -->
-## 1.0.2158-prerelease
-<!-- todo: version tbd -->
+## 1.0.2164-prerelease
 
 Release Date: October 17, 2023
 
-[NuGet package for WebView2 SDK 1.0.2158-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2158-prerelease)
+[NuGet package for WebView2 SDK 1.0.2164-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2164-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 120.0.2158.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 120.0.2164.0 or higher.
 
 
 <!-- ------------------------------ -->
@@ -157,19 +156,18 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2ProcessFailedEventArgs` Class:
-    * [CoreWebView2ProcessFailedEventArgs.FailureSourceModulePath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.failuresourcemodulepath?view=webview2-dotnet-1.0.2158-prerelease&preserve-view=true)
+    * [CoreWebView2ProcessFailedEventArgs.FailureSourceModulePath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.failuresourcemodulepath?view=webview2-dotnet-1.0.2164-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2ProcessFailedEventArgs` Class:
-    * [CoreWebView2ProcessFailedEventArgs.FailureSourceModulePath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.2158-prerelease&preserve-view=true#failuresourcemodulepath)
-  
+    * [CoreWebView2ProcessFailedEventArgs.FailureSourceModulePath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.2164-prerelease&preserve-view=true#failuresourcemodulepath)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ExperimentalProcessFailedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs?view=webview2-1.0.2158-prerelease&preserve-view=true)
-    * [ICoreWebView2ExperimentalProcessFailedEventArgs::get_FailureSourceModulePath](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs?view=webview2-1.0.2158-prerelease&preserve-view=true#get_failuresourcemodulepath)
-  
+* [ICoreWebView2ExperimentalProcessFailedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs?view=webview2-1.0.2164-prerelease&preserve-view=true)
+    * [ICoreWebView2ExperimentalProcessFailedEventArgs::get_FailureSourceModulePath](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs?view=webview2-1.0.2164-prerelease&preserve-view=true#get_failuresourcemodulepath)
+
 ---
 
 
