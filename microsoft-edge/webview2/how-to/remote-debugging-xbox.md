@@ -76,7 +76,7 @@ Attach Microsoft Edge DevTools remotely to an Xbox WebView2 WinUI 2 (UWP) app as
 
 1.  Restart Microsoft Edge.
 
-1.  Go to `https://<System IP>:11443`, where `<System IP>` is replaced by your Xbox System OS IP, and verify that the connection is indicated as secure:<!--todo: clarify exactly how to verify that the connection is indicated as secure; and add red box on png.  do we mean https in Address bar? specify -->
+1.  Go to `https://<System IP>:11443`, where `<System IP>` is replaced by your Xbox System OS IP, and verify that the connection is indicated as secure (that is, an HTTPS URL):
 
     ![Secure XDP](./remote-debugging-xbox-images/secure-xbox-device-portal.png)
 
