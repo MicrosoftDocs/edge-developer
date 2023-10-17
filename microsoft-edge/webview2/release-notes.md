@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 10/17/2023
+ms.date: 10/18/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -167,7 +167,7 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 <!-- ====================================================================== -->
 ## 1.0.2164-prerelease
 
-Release Date: October 17, 2023
+Release Date: October 18, 2023
 
 [NuGet package for WebView2 SDK 1.0.2164-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2164-prerelease)
 
