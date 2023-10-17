@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 09/27/2023
+ms.date: 10/17/2023
 ---
 # Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
 
@@ -28,17 +28,15 @@ Attach Microsoft Edge DevTools remotely to an Xbox WebView2 WinUI 2 (UWP) app as
 
     ![The 'Confirm security settings' page in the 'Windows Device Portal' tab](./remote-debugging-xbox-images/open-device-portal.png)
 
-    An SSL cert error appears:
+1.  Click the **Continue with an unsecured connection** button.  An SSL cert error appears, **NET::ERR__CERT_AUTHORITY_INVALID**:
 
     ![SSL Error](./remote-debugging-xbox-images/xbox_ssl_error.png)
 
-1.  Click the **Advanced** button. An option to continue to the page is displayed.
+1.  Click the **Advanced** button.  A message is displayed, "The server couldn't prove ...":
 
     ![Advanced Option](./remote-debugging-xbox-images/advanced-option-prompt.png)
 
-1.  Click the **Continue** to `<System IP>` button, where `<System IP>` is replaced by your Xbox System OS IP.
-
-    Xbox Device Portal opens:
+1.  Click the **Continue to** `<System IP>` **(unsafe)** link, where `<System IP>` is replaced by your Xbox System OS IP.  Xbox Device Portal opens:
 
     ![Xbox Device Portal](./remote-debugging-xbox-images/unsecure-xbox-device-portal.png)
 
@@ -58,17 +56,13 @@ Attach Microsoft Edge DevTools remotely to an Xbox WebView2 WinUI 2 (UWP) app as
 
     ![The 'Welcome to the Certificate Import Wizard' dialog](./remote-debugging-xbox-images/current-user-certificate.png)
 
-1.  Select the **Current User** option button, and then click the **Next** button.
-
-    The Certificate Import Wizard opens:
+1.  Select the **Current User** option button, and then click the **Next** button.  The Certificate Import Wizard opens:
 
     ![Certificate Import Wizard](./remote-debugging-xbox-images/certificate-import-wizard.png)
 
 1.  Select the option **Place all certificates in the following store**, click the **Browse** button, and then select **Trusted Root Certification Authorities**.
 
-1.  Click the **Next** button.
-
-    A **Security Warning** dialog opens:
+1.  Click the **Next** button.  A **Security Warning** dialog opens:
 
     ![Security Warning dialog](./remote-debugging-xbox-images/security-warning.png)
 
@@ -108,9 +102,7 @@ Attach Microsoft Edge DevTools remotely to an Xbox WebView2 WinUI 2 (UWP) app as
 
     ![Edge Inspect Xbox](./remote-debugging-xbox-images/xbox-edge-inspect.png)
 
-1.  At the bottom of the **Edge** WebView2 control entry, click the **inspect** link.
-
-    Microsoft Edge DevTools opens for the WebView2 control:
+1.  At the bottom of the **Edge** WebView2 control entry, click the **inspect** link.  Microsoft Edge DevTools opens for the WebView2 control:
 
     ![DevTools Inspect Xbox](./remote-debugging-xbox-images/xbox-devtools-tab.png)
 
