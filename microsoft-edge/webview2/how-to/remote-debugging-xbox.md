@@ -32,7 +32,7 @@ Attach Microsoft Edge DevTools remotely to an Xbox WebView2 WinUI 2 (UWP) app as
 
     ![SSL Error](./remote-debugging-xbox-images/xbox_ssl_error.png)
 
-1.  Click the **Advanced** button. An option to continue to the page will display. 
+1.  Click the **Advanced** button. An option to continue to the page is displayed.
 
     ![Advanced Option](./remote-debugging-xbox-images/advanced-option-prompt.png)
 
