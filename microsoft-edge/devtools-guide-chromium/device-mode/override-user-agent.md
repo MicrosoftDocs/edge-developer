@@ -1,11 +1,11 @@
 ---
 title: Override the user agent string
-description: Open the Network conditions tool, disable 'Select automatically', and then select from the list or enter a custom string.
+description: Learn to override the user agent string in the Network conditions tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/19/2021
+ms.date: 10/17/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -24,19 +24,21 @@ ms.date: 07/19/2021
 
 To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_agent) string from Microsoft Edge DevTools:
 
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS). DevTools opens.
+
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-   ![The Command Menu](./override-user-agent-images/device-mode-console-command-menu.png)
+   ![The Command Menu popup in DevTools](./override-user-agent-images/command-menu.png)
     
-1. Type `network conditions`, select **Show Network conditions**, and then press **Enter** to open the **Network conditions** tool.
+1. Start typing "network conditions", select **Show Network conditions**, and then press **Enter** to open the **Network conditions** tool. The **Network conditions** tool opens in the Quick View panel at the bottom of DevTools.
 
 1. In the **User agent** section, clear the **Use browser default** checkbox.
 
-   ![Clearing the 'Use browser default' checkbox](./override-user-agent-images/clear-use-browser-default-checkbox.png)
+1. Either select a user agent string from the dropdown list below the checkbox, or enter a custom user agent string in the **Enter a user custom agent** field.
 
-1. Select a user agent from the dropdown list, or enter a custom user agent.
+   ![The Network conditions tool, in the Quick View panel, showing the 'Use browser default' checkbox, the list of user agent strings, and the custom user agent field](./override-user-agent-images/custom-ua.png)
 
-1. Click **User agent client hints** to view and change these values as described in [Network features reference](../network/reference.md).
+**Note:** You can also change the user agent client hints by using  **User agent client hints** section. To learn more, see [Set user agent client hints](../network/reference.md#set-user-agent-client-hints) in _Network features reference_.
 
 
 <!-- ====================================================================== -->
