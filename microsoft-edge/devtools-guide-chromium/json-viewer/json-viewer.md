@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/04/2023
+ms.date: 10/17/2023
 ---
 # View formatted JSON
 
@@ -20,23 +20,7 @@ The **JSON viewer** improves readability of JSON data in several ways:
 *  Objects can be collapsed or expanded.
 *  The JSON viewer matches your operating system's dark or light theme.
 
-The **JSON viewer** tool is included as an experiment in Microsoft Edge starting with version 110.
-
-
-<!-- ====================================================================== -->
-## Enable the JSON viewer
-
-By default, the **JSON viewer** isn't enabled. To enable the JSON viewer experiment:
-
-1. Go to `edge://flags`.
-
-1. In the **Search flags** text field, type **JSON viewer**.
-
-1. In the **JSON Viewer** dropdown menu, select **Enabled**.
-
-1. Click the **Restart** button which appears in the lower right:
-
-   ![The edge://flags page showing the JSON viewer flag](./json-viewer-images/enable-flag.png)
+**Note:** The **JSON viewer** is not supported in windows that are opened by using the `window.open` JavaScript method. In windows opened with `window.open`, JSON data is displayed as a single line of text, without formatting or syntax highlighting.
 
 
 <!-- ====================================================================== -->
@@ -85,7 +69,7 @@ To view invalid JSON data:
 
 1. Type a URL that returns invalid JSON data in the address bar. For example, use [this sample invalid JSON response](https://microsoftedge.github.io/Demos/json-dummy-data/missing-colon.json). You can find other invalid samples of JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://microsoftedge.github.io/Demos/json-dummy-data/#invalid-json).
 
-1. Microsoft Edge detects that the file contains invalid JSON data, highlights it, but does not reformats it.
+1. Microsoft Edge detects that the file contains invalid JSON data, highlights it, but does not reformat it.
 
 1. Open the **Console** tool by pressing **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
