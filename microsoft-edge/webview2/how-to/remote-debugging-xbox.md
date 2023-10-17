@@ -36,7 +36,7 @@ Attach Microsoft Edge DevTools remotely to an Xbox WebView2 WinUI 2 (UWP) app as
 
     ![Advanced Option](./remote-debugging-xbox-images/advanced-option-prompt.png)
 
-1.  Click **Continue** to `<System IP>` button, where `<System IP>` is replaced by your Xbox System OS IP.
+1.  Click the **Continue** to `<System IP>` button, where `<System IP>` is replaced by your Xbox System OS IP.
 
     Xbox Device Portal opens:
 
