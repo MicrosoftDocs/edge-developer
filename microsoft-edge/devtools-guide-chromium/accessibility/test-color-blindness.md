@@ -33,7 +33,7 @@ To check whether a webpage is usable by people with color blindness:
 
    ![Showing the document as someone with protanopia would see it](./test-color-blindness-images/a11y-testing-simulating-protanopia.png)
 
-1. In the **Rendering** tool, below **Emulate vision deficiencies**, select **No emulation** to remove the simulation.
+1. To remove the simulation, in the **Emulate vision deficiencies** dropdown list, select **No emulation**.
 
 
 <!-- ====================================================================== -->
