@@ -271,7 +271,7 @@ To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rai
 
 To get more comfortable with the **Performance** tool, practice profiling your pages and analyzing the results.
 
-If you have any questions about your results, in the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar](./index-images/help-icon.png)) > **Feedback** (or press **Alt+Shift+I** on Windows and Linux or **Option+Shift+I** on macOS).
+If you have any questions about your results, in the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar](./index-images/help-icon.png)) > **Feedback**.  Or, press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS).
  
 Or, [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).
 
