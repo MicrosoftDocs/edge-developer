@@ -33,11 +33,11 @@ To find an element in the DOM tree from the **Console** tool:
 
    The `<main>` element from the DOM tree is displayed in the **Console**:
 
-   ![The Console tool of DevTools, showing the document.querySelector expression, and the resulting <main>](./console-dom-interaction-images/get-main-element.png)
+   ![The Console tool of DevTools, showing the document.querySelector expression, and the resulting main element](./console-dom-interaction-images/get-main-element.png)
 
 1. In the **Console**, hover over the resulting HTML `<main>` element, or press **Shift+Tab**.  In the rendered webpage, DevTools highlights the corresponding `<main>` element:
 
-   ![The <main> element, highlighted in the rendered webpage](./console-dom-interaction-images/highlight-on-hover.png)
+   ![The main element, highlighted in the rendered webpage](./console-dom-interaction-images/highlight-on-hover.png)
 
 
 <!-- ====================================================================== -->
@@ -286,7 +286,7 @@ To start monitoring events:
 
 1. In the rendered webpage, hover over the image, and move your mouse, or tab to the image with the keyboard. Events such as `mouseover`, `mousemove`, and `focus` get logged to the **Console**:
 
-   ![The Console tool, showing the list of mouse events that are triggered on the image](./console-dom-interaction-images/monitored-events.png)
+   ![The Console tool, showing the list of all mouse events that are triggered on the image](./console-dom-interaction-images/monitored-events.png)
 
 When you monitor events, you get logs in the **Console** every time an event is triggered by the browser. This can lead to a lot of noise in the **Console**. You can also monitor specific events on an element.
 
