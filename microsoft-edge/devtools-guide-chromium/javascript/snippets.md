@@ -106,7 +106,7 @@ To create a new snippet from the **Snippets** tab:
 
    ![The command for creating a new snippet](./snippets-images/new-snippet-command-menu.png)
 
-To rename your new snippet, see [Rename snippets](#rename-snippets), below.
+To rename your new snippet, see [Rename a snippet](#rename-a-snippet), below.
 
 
 <!-- ====================================================================== -->
