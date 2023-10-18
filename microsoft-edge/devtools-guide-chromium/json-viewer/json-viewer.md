@@ -9,7 +9,7 @@ ms.date: 10/17/2023
 ---
 # View formatted JSON
 
-Use the **JSON viewer** to automatically format and highlight JSON responses and files in browser tabs.
+Use the **JSON viewer** to automatically format and syntax highlight JSON responses and files in browser tabs.
 
 The **JSON viewer** changes the returned JSON data to make it easier to read. Sometimes a web server responds to HTTP requests by returning data encoded as JSON.  JSON data can be difficult to read when it's formatted as a single long, concatenated line of text. The same can occur when opening a JSON file from disk.
 
@@ -72,7 +72,7 @@ To view invalid JSON data:
 
 1. Type a URL that returns invalid JSON data in the address bar. For example, use [this sample invalid JSON response](https://microsoftedge.github.io/Demos/json-dummy-data/missing-colon.json). You can find other invalid samples of JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://microsoftedge.github.io/Demos/json-dummy-data/#invalid-json).
 
-1. Microsoft Edge detects that the file contains invalid JSON data and highlights it, but doesn't reformat it.
+1. Microsoft Edge detects that the file contains invalid JSON data and highlights its syntax, but doesn't reformat it.
 
 1. Open the **Console** tool by pressing **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
