@@ -31,8 +31,8 @@ The following screenshot shows Microsoft Edge with a webpage on the left and Dev
 The snippet source code is shown below:
 
 ```javascript
-// Change the background color to "red".
-document.body.style.backgroundColor = "red";
+// Change the background color to "dimgrey".
+document.body.style.backgroundColor = "dimgrey";
 
 // Add a paragraph at the bottom of the document.
 const p = document.createElement("p");
@@ -45,11 +45,13 @@ document.body.appendChild(p);
 console.log("Hello world");
 ```
 
-The code changes the background color of the webpage to red, adds a new line of text at the bottom of the webpage, and logs a message to the **Console** tool.
+The code changes the background color of the webpage to dimgrey, adds a new line of text at the bottom of the webpage, and logs a message to the **Console** tool.
 
 When you run a snippet on a webpage, the snippet's source code is added to the current webpage. For more information about changing the existing code of a webpage instead of adding new code, see [Override webpage resources with local copies (Overrides tab)](./overrides.md).
 
-**Note:** The security settings of most webpages block from loading other scripts in snippets. For this reason, you must include all your code in one file.
+#### Include all your code in one file
+
+The security settings of most webpages block from loading other scripts in snippets. For this reason, you must include all your code in one file.
 
 
 <!-- ====================================================================== -->
@@ -88,7 +90,7 @@ To create a new snippet from the **Snippets** tab:
 
 1. [Open the Snippets tab](#open-the-snippets-tab).
 
-1. Click **New snippet**.
+1. Click **New snippet** (**+**).
 
 1. Enter a name for your snippet, and then press **Enter**:
 
@@ -138,7 +140,7 @@ To edit the source code of a snippet:
 
    ![The run snippet button at the bottom of the code editor](./snippets-images/run-snippet-from-sources-tool.png)
 
-#### Run a snippet with the Command Menu
+#### Run a snippet from the Command Menu
 
 1. Focus your cursor somewhere in DevTools.
 
@@ -176,7 +178,7 @@ By default, snippets are only available within DevTools, but you can also save t
 
 1. Right-click the snippet name, and then select **Save as**.
 
-1. Enter a file name and location when prompted.
+1. When prompted, enter a file name and location.
 
 
 <!-- ====================================================================== -->
