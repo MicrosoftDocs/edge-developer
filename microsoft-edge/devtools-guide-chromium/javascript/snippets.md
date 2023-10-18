@@ -22,9 +22,9 @@ ms.date: 10/17/2023
    limitations under the License.  -->
 # Run snippets of JavaScript on any webpage
 
-If you're running the same code in the **Console** tool repeatedly, consider saving the code as a snippet instead.  Snippets are scripts that you author in the **Sources** tool.  Snippets have access to the JavaScript context of the webpage and you can run snippets on any webpage.  Snippets can be used to alter a webpage, for example to change its content or appearance, or to extract data.
+If you're entering the same code into the **Console** tool repeatedly, consider saving the code as a snippet instead, and then running the snippet.  Snippets are scripts that you author in the **Sources** tool.  Snippets have access to the JavaScript context of the webpage, and you can run snippets on any webpage.  Snippets can be used to alter a webpage, such as to change its content or appearance, or to extract data.
 
-The following screenshot shows Microsoft Edge with a webpage on the left, and DevTools on the right. The **Sources** tool is open showing the source code of a snippet. The snippet code was run, making changes to the webpage.
+The following screenshot shows Microsoft Edge with a webpage on the left and DevTools on the right. The **Sources** tool is open, displaying the source code of the snippet that's selected in the **Snippets** tab. The snippet code was run, making changes to the webpage:
 
 ![The webpage, altered by the snippet](./snippets-images/snippets-overview.png)
 
@@ -47,7 +47,7 @@ console.log("Hello world");
 
 The code changes the background color of the webpage to red, adds a new line of text at the bottom of the webpage, and logs a message to the **Console** tool.
 
-When you run a snippet on a webpage, the snippet's source code is added to the current webpage. For more information about changing the existing code of a webpage, instead of adding new code, see [Override webpage resources with local copies (Overrides tab)](./overrides.md).
+When you run a snippet on a webpage, the snippet's source code is added to the current webpage. For more information about changing the existing code of a webpage instead of adding new code, see [Override webpage resources with local copies (Overrides tab)](./overrides.md).
 
 **Note:** The security settings of most webpages block from loading other scripts in snippets. For this reason, you must include all your code in one file.
 
@@ -55,7 +55,7 @@ When you run a snippet on a webpage, the snippet's source code is added to the c
 <!-- ====================================================================== -->
 ## Open the Snippets tab
 
-The **Snippets** tab is located in the **Navigator** pane, on the left of the **Sources** tool.
+The **Snippets** tab is grouped with the **Page** tab in the **Navigator** pane, on the left of the **Sources** tool.
 
 To open the **Snippets** tab:
 
@@ -67,21 +67,22 @@ To open the **Snippets** tab:
 
 1. In the **Navigator** pane (on the left), select the **Snippets** tab.  To access the **Snippets** option, you might need to click the **More tabs** (![More tabs](./snippets-images/more-tabs-icon.png)) button.
 
-#### Open the Snippets tab with the Command Menu
 
-You can also open the **Snippets** tab with the Command Menu:
+#### Open the Snippets tab from the Command Menu
+
+You can also open the **Snippets** tab by using the Command Menu:
 
 1. Select anything in DevTools, so that DevTools has focus.
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
 
-1. Start typing "Snippets", select **Show Snippets**, and then press **Enter** to run the command:
+1. Start typing "snippets", select **Show Snippets**, and then press **Enter** to run the command:
 
    ![The Show Snippets command](./snippets-images/command-menu.png)
 
 
 <!-- ====================================================================== -->
-## Create new snippets
+## Create a new snippet
 
 To create a new snippet from the **Snippets** tab:
 
@@ -93,7 +94,7 @@ To create a new snippet from the **Snippets** tab:
 
    ![A new, empty, snippet in the Sources tool](./snippets-images/new-snippet.png)
 
-#### Create a new snippet with the Command Menu
+#### Create a new snippet from the Command Menu
 
 1. Focus your cursor somewhere in DevTools.
 
@@ -103,11 +104,11 @@ To create a new snippet from the **Snippets** tab:
 
    ![The command for creating a new snippet](./snippets-images/new-snippet-command-menu.png)
 
-To rename your new snippet, see [Rename snippets](#rename-snippets).
+To rename your new snippet, see [Rename snippets](#rename-snippets), below.
 
 
 <!-- ====================================================================== -->
-## Edit snippets
+## Edit a snippet
 
 To edit the source code of a snippet:
 
@@ -125,7 +126,7 @@ To edit the source code of a snippet:
 
 
 <!-- ====================================================================== -->
-## Run snippets
+## Run a snippet
 
 #### Run a snippet from the Sources tool
 
@@ -151,7 +152,7 @@ To edit the source code of a snippet:
 
 
 <!-- ====================================================================== -->
-## Rename snippets
+## Rename a snippet
 
 1. [Open the Snippets tab](#open-the-snippets-tab).
 
@@ -159,7 +160,7 @@ To edit the source code of a snippet:
 
 
 <!-- ====================================================================== -->
-## Delete snippets
+## Delete a snippet
 
 1. [Open the Snippets tab](#open-the-snippets-tab).
 
@@ -167,7 +168,7 @@ To edit the source code of a snippet:
 
 
 <!-- ====================================================================== -->
-## Save snippets
+## Save a snippet
 
 By default, snippets are only available within DevTools, but you can also save them to disk.
 
