@@ -5,15 +5,19 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.date: 10/17/2023
 ---
 # Interact with the DOM using the Console
 
-The **Console** tool is a great way to interact with the webpage in the browser.<!-- todo: add intro explanation -->  The **Console** is like a script-environment version of the [Inspect tool](../css/inspect.md).<!-- todo: add intro explanation -->
+The **Console** tool is a great way to interact with the webpage in the browser. In DevTools, you usually interact with the DOM by using the **Inspect** tool to select elements, and by using the **Elements** tool to modify the DOM, for example to add or change element attributes.
+
+The **Console** tool can also be used to interact with the DOM by using JavaScript code and DOM APIs. For example, you can find elements in the DOM tree and manipulate DOM elements.
+
+To learn more about the **Inspect** tool and the **Elements** tool, see [Analyze pages using the Inspect tool](../css/inspect.md) and [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements-tool/elements-tool.md).
 
 
 <!-- ====================================================================== -->
-## Read from the DOM
+## Find elements in the DOM
 
 To reference the header of the webpage:
 
@@ -50,7 +54,7 @@ You can manipulate the webpage from the **Console**, as follows.  In this exampl
    ![Adding a border to an element by using the Console](./console-dom-interaction-images/console-dom-add-border.png)
 
 
-### Get a direct reference an element
+#### Get a direct reference to an element
 
 Depending on the complexity of the webpage, it can be daunting to find the right element to manipulate.  But you can use the **Inspect** tool to help you.  Suppose you want to manipulate the **Documentation** region within the header of the rendered page:
 
@@ -101,7 +105,7 @@ Use any JavaScript DOM manipulations you want in the **Console**.  To make it mo
 Many convenience methods and shortcuts are available to you as [Console Utilities](utilities.md).  Some of the methods are incredibly powerful and are much more effective than using `console.log()` statements.
 
 
-### The power of the $ functions
+#### The power of the $ functions
 
 The `$` has special powers in **Console**, and you may remember that from jQuery.
 
@@ -114,7 +118,7 @@ The `$` has special powers in **Console**, and you may remember that from jQuery
 *  `$()` and `$$()` are shorter versions of for `document.querySelector()` and `document.querySelectorAll()`.
 
 
-### Example: Extracting all links from a page, as a sortable table
+#### Example: Extracting all links from a page, as a sortable table
 
 1. Enter the following code, which retrieves all the links in the webpage, and displays the links as a sortable table to copy and paste (for example, into Excel):
 
@@ -175,7 +179,7 @@ The `$` has special powers in **Console**, and you may remember that from jQuery
 Instead of writing complex JavaScript to filter results, use the power of CSS selectors.
 
 
-### Creating a table
+#### Creating a table
 
 To create a table of the `src` and `alt` information for all images on the webpage that aren't inline images:
 
@@ -192,7 +196,7 @@ To create a table of the `src` and `alt` information for all images on the webpa
 <!-- mystery wiggly line preventer -->
 
 
-### Example: Getting all page headings and anchor URLs
+#### Example: Getting all page headings and anchor URLs
 
 Ready for an even more complex example?  HTML webpages that are generated from Markdown tagging, like the present article, have automatic ID values for each heading, to allow you to deep-link directly to that section of the webpage.  For example, a `# New features` h1 heading in the Markdown source file becomes `<h1 id="new-features">New features</h1>` in the HTML file.
 
@@ -219,7 +223,7 @@ To list all of the automatic headings to copy and paste:
    ![Getting all the headings and the generated URLs from the webpage](./console-dom-interaction-images/console-dom-get-generated-headings.png)
 
 
-### Clean up with clear and copy
+#### Clean up with clear and copy
 
 When developing in the **Console**, things can get messy.  It can be difficult to select results to copy and paste.  The following two utility methods help you:
 
@@ -228,7 +232,7 @@ When developing in the **Console**, things can get messy.  It can be difficult t
 * `clear()` clears the **Console**.
 
 
-### Read and monitor events
+#### Read and monitor events
 
 Two other interesting utility methods of **Console** deal with event handling:
 
