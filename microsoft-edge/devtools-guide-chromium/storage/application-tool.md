@@ -50,7 +50,7 @@ The **Application** tool has the following pages, listed on the left:
 * Frames 
    * top
 
-To accurately interpret the **Storage Usage** chart in the **Application** tool, see [Quota usage](../progressive-web-apps/index.md#quota-usage) in _Debug Progressive Web Apps (PWAs)_.
+To interpret the **Storage** > **Usage** section in the **Application** tool, see [Quota usage](../progressive-web-apps/index.md#quota-usage) in _Debug Progressive Web Apps (PWAs)_.
 
 
 <!-- ====================================================================== -->
