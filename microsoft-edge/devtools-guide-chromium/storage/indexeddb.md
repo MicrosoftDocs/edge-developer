@@ -1,6 +1,6 @@
 ---
 title: View and change IndexedDB data
-description: How to view and change IndexedDB data with the Application tool and snippets.
+description: How to view and change IndexedDB data by using the Application tool and snippets.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -78,7 +78,7 @@ IndexedDB values in the **Application** tool don't update in real-time.
 
 IndexedDB keys and values aren't editable from the **Application** tool.  However, since DevTools has access to the page context, you can run JavaScript code within DevTools to edit the data stored in an IndexedDB database.
 
-#### Edit IndexedDB data with the Console tool
+#### Edit IndexedDB data by using the Console tool
 
 1. In DevTools, on the Activity Bar, select the **Console** tab.
 
@@ -98,9 +98,9 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
    }
    ```
 
-#### Edit IndexedDB data with snippets
+#### Edit IndexedDB data by using snippets
 
-[Snippets](../javascript/snippets.md) are a way to store and run JavaScript code repeatedly, within DevTools.  If you need to edit IndexedDB data often, store it in a new snippet. To learn more, see [Run snippets of JavaScript on any webpage](../javascript/snippets.md).
+[Snippets](../javascript/snippets.md) are a way to store and run JavaScript code repeatedly, within DevTools.  If you need to edit IndexedDB data often, store it in a new snippet, and then run the snippet. To learn more, see [Run snippets of JavaScript on any webpage](../javascript/snippets.md).
 
 ![Using a Snippet to interact with IndexedDB](./indexeddb-images/edit-from-snippet.png)
 
@@ -108,11 +108,21 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 <!-- ====================================================================== -->
 ## Delete IndexedDB data
 
+
+You can delete any of the following:
+* An IndexedDB key-value pair.
+* All key-value pairs in an object store.
+* An IndexedDB database.
+* All IndexedDB storage.
+
+These options are described below.
+
+
 #### Delete an IndexedDB key-value pair
 
 1. [View an IndexedDB object store](#view-indexeddb-data).
 
-1. Click the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected:
+1. Click the key-value pair that you want to delete.  DevTools highlights the key-value pair to indicate that it is selected:
 
    ![A key-value pair item is selected in the object store view](./indexeddb-images/select-keyval.png)
 
@@ -140,7 +150,7 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 
 1. In the sidebar of the **Application** tool, click **Storage**.
 
-1. Scroll down to the **Storage** checkboxes and make sure that the **IndexedDB** checkbox is enabled.
+1. Scroll down to the **Storage** checkboxes and make sure that the **IndexedDB** checkbox is selected.
 
 1. Click **Clear site data**.
 
