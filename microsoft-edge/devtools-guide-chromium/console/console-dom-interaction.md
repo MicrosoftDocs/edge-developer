@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/17/2023
+ms.date: 10/18/2023
 ---
 # Interact with the DOM using the Console
 
