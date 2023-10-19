@@ -9,9 +9,9 @@ ms.date: 10/13/2023
 ---
 # Curation and review process for submissions to the Edge Add-ons store
 
-The Microsoft Edge Add-ons store curates the Edge store experience so that users can find all items such as themes, extensions, and apps to customize their browser, in one place.
+The Microsoft Edge Add-ons store curates the Edge store experience so that users can find all the items to customize their browser in one place, such as themes, extensions, and apps.
 
-Before installing an item from the Edge Add-ons store, users can learn more about the functionality, data permissions, and publisher by viewing the description and listing.
+Before installing an item from the Edge Add-ons store, users can learn more about the functionality, data permissions, and publisher by viewing the item's description and listing.
 
 
 <!-- ====================================================================== -->
@@ -50,7 +50,7 @@ Every item submitted to the Microsoft Edge Add-ons store has detailed informatio
 * Screenshots.
 * The description of the item's features and functionality.
 * Publisher information.
-* Links to the publisher site, privacy policies and financial policies.
+* Links to the publisher site, privacy policies, and financial policies.
 
 The Search ranking of the item is based on these characteristics.
 
@@ -58,10 +58,13 @@ The Search ranking of the item is based on these characteristics.
 <!-- ====================================================================== -->
 ## User feedback
 
-In the Microsoft Edge Add-ons store, users can provide a rating and a written review for the item they are using. Users and developers can report an abusive review from within the review section of the item listing page. Items are ranked for popularity based on user ratings at the store.
+In the Microsoft Edge Add-ons store, users can provide a rating and a written review for the item they are using. Users and developers can report an abusive review from within the review section of the item listing page.
+
+Items are ranked for popularity based on user ratings at the store.
 
 
 <!-- ====================================================================== -->
 ## See also
 
 * [Microsoft Edge Add-ons store developer policies](../store-policies/developer-policies.md)
+* [Content Security Policy (CSP)](../store-policies/csp.md)
