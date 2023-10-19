@@ -1,5 +1,5 @@
 ---
-title: Curation and review process for submissions to the Edge Add-ons store
+title: Curation and review process for the Edge Add-ons store
 description: How submissions to the Microsoft Edge Add-ons store are curated and reviewed by the store team.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/13/2023
 ---
-# Curation and review process for submissions to the Edge Add-ons store
+# Curation and review process for the Edge Add-ons store
 
 The Microsoft Edge Add-ons store curates the Edge store experience so that users can find all the items to customize their browser in one place, such as themes, extensions, and apps.
 
