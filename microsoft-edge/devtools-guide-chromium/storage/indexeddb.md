@@ -38,7 +38,7 @@ To view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/Indexe
 
    ![The Manifest pane of the Application tool](./indexeddb-images/application-tool-manifest-panel.png)
 
-1. In the sidebar, under **Storage**, expand the **IndexedDB** menu to review which databases are available:
+1. In the sidebar, under **Storage**, expand the **IndexedDB** menu to see which databases are available:
 
    ![The IndexedDB menu](./indexeddb-images/expanded-indexeddb-menu.png)
 
@@ -122,11 +122,11 @@ These options are described below.
 
 1. [View an IndexedDB object store](#view-indexeddb-data).
 
-1. Click the key-value pair that you want to delete.  DevTools highlights the key-value pair to indicate that it is selected:
+1. Click the key-value pair that you want to delete.  DevTools highlights the key-value pair to indicate that it's selected:
 
    ![A key-value pair item is selected in the object store view](./indexeddb-images/select-keyval.png)
 
-1. Press `Delete` on your keyboard or click the **Delete Selected** (![Delete Selected icon](./indexeddb-images/delete-icon.png)) button:
+1. Press `Delete`, or click the **Delete selected** (![Delete Selected icon](./indexeddb-images/delete-icon.png)) button:
 
    ![The delete key value button in the toolbar of the object store view](./indexeddb-images/delete-keyval.png)
 
@@ -152,7 +152,7 @@ These options are described below.
 
 1. Scroll down to the **Storage** checkboxes and make sure that the **IndexedDB** checkbox is selected.
 
-1. Click **Clear site data**.
+1. Click the **Clear site data** button.
 
    ![The Storage pane, showing the various storage checkboxes and the Clear site data button](./indexeddb-images/clear-site-data.png)
 
