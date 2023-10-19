@@ -13,7 +13,7 @@ The **Console** tool is a great way to interact with the webpage in the browser.
 
 The **Console** tool can also be used to interact with the DOM by using JavaScript code. For example, you can find elements in the DOM tree and manipulate them by using DOM APIs.
 
-To learn more about the **Inspect** tool and the **Elements** tool, see [Analyze pages using the Inspect tool](../css/inspect.md) and [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements-tool/elements-tool.md).
+To learn more about the **Inspect** tool, see [Analyze pages using the Inspect tool](../css/inspect.md). To learn more about the **Elements** tool, see [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements-tool/elements-tool.md).
 
 
 <!-- ====================================================================== -->
@@ -62,7 +62,7 @@ You can make changes to the DOM tree of the webpage from the **Console** tool. I
 
 #### Get a reference to an element
 
-Depending on the complexity of the webpage, it can be daunting to find the right element to change.  But you can use the **Inspect** tool to help you.  Suppose you want to change the text of the first link within the **Section 1** element of the rendered page:
+In a complex webpage, it can be hard to find the right element to change.  But you can use the **Inspect** tool to help you.  Suppose you want to change the text of the first link within the **Section 1** element of the rendered page:
 
 ![The link that you want to change in the page](./console-dom-interaction-images/link-to-change.png)
 
@@ -72,15 +72,15 @@ To get a reference to the link element that you want to change:
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-1. Click the **Inspect** tool, and then in the rendered webpage, hover over the link element:
+1. Click the **Inspect** (![Inspect tool icon](./console-dom-interaction-images/inspect-tool-icon.png)) tool, and then in the rendered webpage, hover over a link, such as **Link 1**:
 
-   ![Hovering over the link with The Inspect tool, the link is highlighted](./console-dom-interaction-images/inspect-link-to-change.png)
+   ![When you hover over a link when using the Inspect tool, the link is highlighted](./console-dom-interaction-images/inspect-link-to-change.png)
 
-1. Click the hovered link element on the rendered webpage. DevTools opens the **Elements** tool, with the corresponding element selected:
+1. Click the hovered link on the rendered webpage. DevTools opens the **Elements** tool, with the corresponding element selected:
 
    ![The Elements tool in DevTools, with the link element selected](./console-dom-interaction-images/link-in-elements-tool.png)
 
-1. Click the `...` button next to the element in the DOM tree and then select **Copy** > **Copy JS Path**.
+1. Click the `...` button next to the element in the DOM tree, and then select **Copy** > **Copy JS path**:
 
    ![The Copy JS Path menu item in the Elements tool](./console-dom-interaction-images/copy-js-path-menu.png)
 
@@ -104,7 +104,7 @@ Use any DOM APIs you want to change the DOM tree in the **Console**.  To make it
 <!-- ====================================================================== -->
 ## Helpful console utility functions
 
-Many convenience methods and shortcuts are available to you as utility functions in the **Console** tool. Some of these utility functions are very useful for interacting with the DOM tree of a webpage and are described below. To learn more, see [Console tool utility functions and selectors](./utilities.md).
+Many convenience methods and shortcuts are available to you as utility functions in the **Console** tool. Some of these utility functions are very useful for interacting with the DOM tree of a webpage, and are described below. To learn more, see [Console tool utility functions and selectors](./utilities.md).
 
 
 #### Get elements with the $ functions and shortcuts
@@ -120,13 +120,13 @@ The `$` character has a special meaning in the **Console** tool:
 
 ###### Get all links from the page
 
-In this example, you use the `$$()` utility function to list all links on the webpage and filter the list to just the external links.
+In this example, you use the `$$()` utility function to list all links on the webpage.  You then use that function along with the `filter()` array method to get rid of the links that don't start with `https` (such as the anchor links in the present webpage), in order to filter the list to only include external links.
 
 1. Go to the webpage that you want to get the links from. For example, open the [DevTools Console tool DOM interactions demo page](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) in a new tab or window.
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-1. To get the list of all links in the page, enter the following code in the **Console** and press `Enter`:
+1. To get the list of all links in the page, enter the following code in the **Console**, and then press **Enter**:
 
    ```javascript
    $$('a');
@@ -136,7 +136,7 @@ In this example, you use the `$$()` utility function to list all links on the we
 
    `$$('a')` is short for `document.querySelectorAll('a')`.
 
-   Expand the list of links that's logged in the **Console**, and then expand the first link object. The link's properties are displayed:
+1. Expand the list of links that's logged in the **Console**, and then expand the first link object. The link's properties are displayed:
 
    ![Expanding the first element in the array, its properties are displayed](./console-dom-interaction-images/link-properties.png)
 
@@ -150,7 +150,7 @@ In this example, you use the `$$()` utility function to list all links on the we
 
    The above code returns an array of all the links, where each link object is mapped to a JavaScript objects with the `url` and `text` properties.
 
-   Expand a few of the returned link objects to see their properties:
+1. Expand a few of the returned link objects to see their properties:
 
    ![The list of links on the page, with each link's text and href attribute](./console-dom-interaction-images/mapped-links.png)
 
@@ -220,7 +220,7 @@ To copy the return value from an expression that you run in the **Console**, use
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-1. To copy the list of all image URLs on the page, enter the following code in the **Console** and press `Enter`:
+1. To copy the list of all image URLs on the page, enter the following code in the **Console**, and then press **Enter**:
 
    ```javascript
    copy($$('img').map(img => img.src).join("\n"));
@@ -228,17 +228,17 @@ To copy the return value from an expression that you run in the **Console**, use
 
    The `copy()` utility function can take any argument that can be converted into a string and copies it to the clipboard. In this example, the argument is a string that contains all the image URLs on the page, separated by a new line.
 
-1. Open a text editor, and then paste the copied image URLs into the editor.
+1. Open a text editor, such as Visual Studio Code, and then paste the copied image URLs into the editor:
 
    ![The list of image URLs in a text editor](./console-dom-interaction-images/pasted-strings.png)
 
 
 #### Clear the Console
 
-When running code in the **Console**, things can get messy.  You can clear the **Console** by using the `clear()` utility function.
+When running code in the **Console**, you often end up with many input statements and output results that you no longer need to display.  You can clear the **Console** by using the `clear()` utility function.
 
 
-#### List the event listeners assigned to an element
+#### List the event listeners that are assigned to an element
 
 To list all event listeners that are assigned to an element, use the `getEventListeners()` utility function:
 
@@ -256,9 +256,9 @@ To list all event listeners that are assigned to an element, use the `getEventLi
    getEventListeners($0);
    ```
 
-   In the above code snippet, `$0` is a shortcut to the currently selected `<img>` element in the **Elements** tool. The `getEventListeners()` utility function returns an object that contains all the event listeners that are assigned to the image:
+   In the above code snippet, `$0` is a shortcut to the currently selected `<img>` element in the **Elements** tool. The `getEventListeners()` utility function returns an object that contains all the event listeners that are assigned to the image.
 
-1. Expand the object, and then expand the only event listener in the list to see the listener's properties. The `listener` property shows the name of the function that's called when the event is triggered:
+1. Expand the object, and then expand the only event listener in the list to see the listener's properties. The `listener` property shows the name of the function that's called when the event is triggered (in this example, `showImage`):
 
    ![The expanded object, showing the listener property](./console-dom-interaction-images/event-listener-properties.png)
 
@@ -276,7 +276,7 @@ To start monitoring events:
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-1. To start monitoring the events triggered on an element, for example on one of the `<img>` elements, enter the following code in the **Console** and press `Enter`:
+1. To start monitoring the events triggered on an element, for example on one of the `<img>` elements, enter the following code in the **Console**, and then press **Enter**:
 
    ```javascript
    monitorEvents(document.querySelector('img'));
@@ -299,7 +299,7 @@ To start monitoring specific events on an element:
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-1. To start monitoring only the mousedown, mouseup, and click events that are triggered on a the first `<img>` element on the page, enter the following code in the **Console** and press `Enter`:
+1. To start monitoring only the mousedown, mouseup, and click events that are triggered on a the first `<img>` element on the page, enter the following code in the **Console**, and then press **Enter**:
 
    ```javascript
    monitorEvents(document.querySelector('img'), ['mousedown', 'mouseup', 'click']);
@@ -339,7 +339,7 @@ unmonitorEvents(window, ['resize', 'scroll']);
 <!-- ====================================================================== -->
 ## Save DOM interaction scripts as snippets
 
-If you run the same DOM interaction code repeatedly in the **Console**, consider saving the code as a snippet instead. Snippets are saved in the **Sources** tool, and you can run them from there or from the **Command menu**.  To learn more, see [Run snippets of JavaScript on any webpage](../javascript/snippets.md).
+If you enter the same DOM interaction code repeatedly in the **Console**, consider instead saving the code as a snippet and then running the snippet. Snippets are saved in the **Sources** tool, and you can run them from there or from the **Command menu**.  To learn more, see [Run snippets of JavaScript on any webpage](../javascript/snippets.md).
 
 
 <!-- ====================================================================== -->
