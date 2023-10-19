@@ -74,7 +74,7 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 
     The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** panel:
 
-   ![Add a CSS declaration to the element using the Styles panel](./index-images/add-background-color-to-me-styles-p.png)
+   ![Add a CSS declaration to the element by using the Styles panel](./index-images/add-background-color-to-me-styles-p.png)
 
 
 <!-- ====================================================================== -->
@@ -90,7 +90,7 @@ To display how an element looks when a CSS class is applied to or removed from a
 
 1. Click the **Element Classes** (**.cls**) button.  DevTools shows a text box where you can add CSS classes to the page element that you're inspecting.
 
-1. Type `color_me` in the **Add new class** text box and then press **Enter**.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you can also toggle each class from here.
+1. Type `color_me` in the **Add new class** text box, and then press **Enter**.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you can also toggle each class from here.
 
    The `color_me` class is applied to the element using the **.cls** section of the **Styles** panel:
 
@@ -162,11 +162,11 @@ Use the following steps to debug or test the media queries that you defined in y
 
 1. Click the **Toggle device emulation** (![Device Emulation icon](./index-images/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+M** (Windows, Linux) or **Command+Shift+M** (macOS).
 
-   The Device Toolbar opens in the webpage and the webpage is now rendered within the Device Emulation pane:
+   The Device Toolbar opens in the webpage, and the webpage is now rendered within the Device Emulation pane:
 
    ![Opening the device toolbar](./index-images/media-queries-open-device-toolbar.png)
 
-1. With the device toolbar open, click the **More options** (![The more options icon](./index-images/more-options-icon.png)) button on the top-right and then select **Show media queries**:
+1. With the device toolbar open, click the **More options** (![The more options icon](./index-images/more-options-icon.png)) button on the top-right, and then select **Show media queries**:
 
    ![Showing media queries in the Device Toolbar](./index-images/media-queries-showing-mq.png)
 
