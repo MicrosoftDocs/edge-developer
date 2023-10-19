@@ -70,7 +70,7 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 
 1. Type `background-color` or select it from the drop-down list and then press **Enter**.
 
-1. Type `honeydew` or select it from the drop-down list of colors and then press **Enter**.  After you pick a color, an inline style declaration that's applied to the element is displayed In the **DOM Tree**, 
+1. Type `honeydew` or select it from the drop-down list of colors and then press **Enter**.  After you pick a color, an inline style declaration that's applied to the element is displayed in the **DOM Tree**.
 
     The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** panel:
 
