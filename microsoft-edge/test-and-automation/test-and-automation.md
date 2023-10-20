@@ -37,7 +37,8 @@ See [DevTools Protocol](devtools-protocol.md).
 
 You can use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you don't need to go to `edge://flags` and turn on feature flags.
 
-To see a list of the available origin trials and register your origin to give them a try, see the [Microsft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials/).  You can also provide feedback to browser engineers and the web standards community about the design of the API, your use cases, or your experience using the APIs.
+To see a list of the available origin trials and register your origin to give them a try, see the [Microsft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/).  You can also provide feedback to browser engineers and the web standards community about the design of the API, your use cases, or your experience using the APIs.
+
 
 <!-- ====================================================================== -->
 ## Playwright
