@@ -50,13 +50,17 @@ To register for a trial of an experimental API:
    
 1. Click the **ACCEPT and REGISTER** button.<!--todo: confirm it's a button, not link -->
 
+   A token is immediately generated and is displayed in the [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).
+
+1. Keep a record of the token.
+
 Continue to the next section below.
 
 
 <!-- ====================================================================== -->
 ## Apply your token
 
-A token is instantly generated and displayed on the [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).  To begin using the trial on your website, use either of the following approaches to apply the token to your webpage:
+To begin using the trial on your website, use either of the following approaches to apply the token to your webpage:
 
 * Approach 1: In every webpage that uses the experimental API, add the following `<meta>` tag, where the `content` attribute value is your token:
 
