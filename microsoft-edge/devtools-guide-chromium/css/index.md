@@ -22,7 +22,7 @@ ms.date: 10/19/2023
    limitations under the License.  -->
 # Get started viewing and changing CSS
 
-Follow the interactive tutorial sections in this article to learn the basics of using DevTools to view and change the CSS for a page.
+To learn the basics of using DevTools to view and change the CSS for a page, follow the interactive tutorial sections in this article.
 
 
 <!-- ====================================================================== -->
@@ -34,13 +34,13 @@ Follow the interactive tutorial sections in this article to learn the basics of 
 
 1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
-   In the **DOM Tree** panel under the **Elements tool**, the `Inspect Me!` element is highlighted.
+   In the **DOM Tree** panel under the **Elements tool**, the `Inspect Me!` element is highlighted:
 
    ![The inspected element is highlighted in the DOM Tree](./index-images/inspect-me.png)
 
 1. In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.
 
-1. On the page view, enter the `data-message` value that you copied in the **Value of data-message:** text box.
+1. On the page view, enter the `data-message` value that you copied in the **Value of data-message** text box.
 
 1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
@@ -48,11 +48,11 @@ Follow the interactive tutorial sections in this article to learn the basics of 
 
 1. In the `Inspect Me!` element, find the `aloha` class rule.  This rule is displayed, because it's being applied to the `Inspect Me!` element.
 
-1. In the `aloha` class, find the value for the `padding` style and copy it.
+1. In the `aloha` class, find the value for the `padding` style and copy it:
 
    ![CSS class applied to the inspected element is highlighted in the Styles panel](./index-images/inspect-me-styles.png)
 
-1. On the page view, paste the `padding` value in the **Value of padding:** text box.
+1. On the page view, paste the `padding` value in the **Value of padding** text box.
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  
 
 1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
 
-1. Hover on the `Hover Over Me!` text.  The background color changes.
+1. Hover over the `Hover Over Me!` text.  The background color changes.
 
 1. Right-click the `Hover Over Me!` text, and then select **Inspect**.
 
@@ -130,7 +130,7 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
 1. Right-click the `Change My Margin!` text, and then select **Inspect**.
 
-1. In the **Box Model** diagram in the **Styles** panel, hover on **padding**.  The element's padding is highlighted in the viewport.
+1. In the **Box Model** diagram in the **Styles** panel, hover over **padding**.  The element's padding is highlighted in the viewport.
 
    Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** panel to display the **Box Model**.
 
@@ -148,13 +148,13 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
 
 <!-- ====================================================================== -->
-## Debugging media queries
+## Debug media queries
 
 CSS [media queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your website react to changes in the configuration settings for each user. The most common use case is to give your page a different CSS layout depending on the dimensions of the viewport.
 
 Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there's more screen real estate available.
 
-Use the following steps to debug or test the media queries that you defined in your CSS.
+To debug or test the media queries that you defined in your CSS:
 
 1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
 
@@ -162,7 +162,7 @@ Use the following steps to debug or test the media queries that you defined in y
 
 1. Click the **Toggle device emulation** (![Device Emulation icon](./index-images/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+M** (Windows, Linux) or **Command+Shift+M** (macOS).
 
-   The Device Toolbar opens in the webpage, and the webpage is now rendered within the Device Emulation pane:
+   The device toolbar opens in the webpage, and the webpage is now rendered within the Device Emulation pane:
 
    ![Opening the device toolbar](./index-images/media-queries-open-device-toolbar.png)
 
@@ -172,7 +172,7 @@ Use the following steps to debug or test the media queries that you defined in y
 
    The colored bars above the webpage represent the different media queries.
        
-1. Hover on the boundaries in the bars to display the values of the different media queries.  Click each media query value to resize the web page to match.
+1. Hover over the boundaries in the bars to display the values of the different media queries.  Click each media query value to resize the web page to match.
 
    ![Selecting a media query from the preview bar](./index-images/media-queries-select-bar.png)
 
