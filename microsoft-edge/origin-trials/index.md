@@ -56,15 +56,15 @@ Continue to the next section below.
 <!-- ====================================================================== -->
 ## Apply your token
 
-A token is instantly generated and displayed on the [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).  To begin using the trial on your website, use either of the following methods to apply the token to your page:
+A token is instantly generated and displayed on the [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).  To begin using the trial on your website, use either of the following approaches to apply the token to your webpage:
 
-*  Add the `origin-trial` attribute value and your token to the `meta` tag on every page that uses the experimental API.
+* Approach 1: In every webpage that uses the experimental API, add the following `<meta>` tag, where the `content` attribute value is your token:
 
    ```html
    <meta http-equiv="origin-trial" content="replace-with-your-token">
    ```
 
-*  Add `Origin-Trial` to the HTTP response header of your server.
+* Approach 2: Add `Origin-Trial` to the HTTP response header of your server, specifying your token:
 
    ```json
    Origin-Trial: replace-with-your-token
@@ -76,15 +76,15 @@ Your token is valid for 6 weeks.  Before your trial ends, reminder emails are se
 <!-- ====================================================================== -->
 ## Opt out of an experiment
 
-To opt out of an experiment, use one of the following methods to remove your token.
+To opt out of an experiment, use one of the following approaches to remove your token:
 
-*  Remove the `meta` tag from every page that used the experimental API.
+* Approach 1: Remove the following `meta` tag from every webpage that used the experimental API:
 
    ```html
    <meta http-equiv="origin-trial" content="your-token">
    ```
 
-*  Remove `Origin-Trial` from the HTTP response header of your server.
+* Approach 2: Remove `Origin-Trial` from the HTTP response header of your server:
 
    ```json
    Origin-Trial: your-token
@@ -94,19 +94,24 @@ To opt out of an experiment, use one of the following methods to remove your tok
 <!-- ====================================================================== -->
 ## Detect experimental features and provide a fallback
 
-When using experimental APIs, ensure you provide a working experience to all visitors of your website.  Visitors may use browsers that don't support the experimental APIs that you added to your code.  Additionally, if your token expires before you renew it, the experimental API is no longer available, which may result in errors.
+When using an experimental API, make sure to provide a working experience to all visitors of your website.
 
-To avoid this situation, make sure you detect features available in your browser.  For more information, see [Implementing feature detection](https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection).
+* A visitor might use a browser that doesn't support the experimental API that's used in your code.
+
+* If your token expires before you renew it, the experimental API is no longer available for your webpage, which might result in errors.
+
+To avoid this situation, make sure you detect features available in your browser.  See [Implementing feature detection](https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection).
 
 
 <!-- ====================================================================== -->
 ## Roadmap for Allowed Origins
 
-The Microsoft Edge Origin Trials portal today only supports SSL Enabled Origins, which means that websites must have HTTPS properly implemented to register for an experiment.  In the future, the following secure origins are planned:
+<!-- todo: update -->
+The Microsoft Edge Origin Trials portal only supports SSL Enabled Origins.  This means that to register for an experiment, the website must have HTTPS properly implemented.  In the future, the following secure origins are planned:
 
-*  Register `http://localhost` as the origin for your experiments.  To use `http://localhost` today, go to `edge://flags` and set the experiment to **Enabled**.
+* You'll be able to register `http://localhost` as the origin for experiments.  To use `http://localhost` today, go to `edge://flags` and set the experiment to **Enabled**.
 
-*  Use extensions with `extensions://` prefixed origins to enroll in experiments.
+* To enroll in experiments, you'll be able to use extensions that have an origin prefixed with: `extensions://`
 
 
 <!-- ====================================================================== -->
