@@ -252,7 +252,7 @@ Learn more in [Publish a Progressive Web App to the Microsoft Store](../how-to/m
 
 To have more control over the title bar area that's currently displayed in standalone display mode, you may want to experiment with Window Controls Overlay. Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window. This layout frees up more space for the web content layer. WCO is available for installed desktop PWAs.
 
-Learn more about experimenting with Window Controls Overlay at [Experimental features in Progressive Web Apps (PWAs)](../how-to/window-controls-overlay.md).
+Learn more about experimenting with Window Controls Overlay at [Display content in the title bar](../how-to/window-controls-overlay.md).
 
 Register your origin for the **Web App Window Controls Overlay** trial at our [Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/).<!-- todo: update per https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/ -->
 
@@ -261,7 +261,7 @@ Register your origin for the **Web App Window Controls Overlay** trial at our [O
 
 Developers can now use the experimental feature Web App URL Handlers in origin trial. This feature allows the registration of an installed PWA to open links from other apps that refer to its scope.
 
-Learn more about experimenting with URL handlers at [Experimental features in Progressive Web Apps (PWAs)](../how-to/handle-urls.md).
+Learn more about experimenting with URL handlers at [Handle links to your Progressive Web Apps](../how-to/handle-urls.md).
 
 Register your domain for the **Web App URL Handlers** trial at our [Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/).<!-- todo: update per https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/ -->
 
@@ -283,7 +283,7 @@ Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22
 
 You can now register your PWA to handle specific protocols with the host operating system. The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at the [origin trial signup page](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration).<!-- todo: update per https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/ -->
 
-Learn more about using protocol handlers with your PWA at [Experimental features in Progressive Web Apps (PWAs)](../how-to/handle-protocols.md).
+Learn more about using protocol handlers with your PWA at [Handle protocols in Progressive Web Apps](../how-to/handle-protocols.md).
 
 
 #### Streamlined App Info menu
