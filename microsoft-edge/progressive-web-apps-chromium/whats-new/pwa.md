@@ -261,9 +261,11 @@ Register your origin for the **Web App Window Controls Overlay** trial at our [O
 
 Developers can now use the experimental feature Web App URL Handlers in origin trial. This feature allows the registration of an installed PWA to open links from other apps that refer to its scope.
 
-Learn more about experimenting with URL handlers at [Handle links to your Progressive Web Apps](../how-to/handle-urls.md).
-
 Register your domain for the **Web App URL Handlers** trial at our [Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/).<!-- todo: update per https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/ -->
+
+See also:
+* [Handle links to your Progressive Web Apps](../how-to/handle-urls.md)
+* [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)
 
 
 #### Support for the Share API on macOS

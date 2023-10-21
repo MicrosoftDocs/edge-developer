@@ -15,6 +15,9 @@ Native applications on many operating systems can handle links. Native applicati
 Progressive Web Apps (PWAs) can also handle links in a similar way.
 
 
+<!-- although the present filename is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.  see also [PWAs as URL Handlers](https://web.dev/pwa-url-handler/) -->
+
+
 <!-- ====================================================================== -->
 ## Automatic link handling
 
@@ -49,4 +52,4 @@ Once the feature can be used in Microsoft Edge, we will document it here. In the
 <!-- ====================================================================== -->
 ## See also
 
-*  [PWAs as URL Handlers](https://web.dev/pwa-url-handler/).
+* [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)
