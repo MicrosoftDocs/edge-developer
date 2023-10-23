@@ -41,7 +41,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
 <!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
-1. In the rendered webpage, under **Inspect a Node**, right-click **Michelangelo** and then select **Inspect**.
+1. In the rendered webpage, under **Inspect a Node**, right-click **Michelangelo** and then select **Inspect**:
 
    ![Inspecting a node](./index-images/michelangelo-inspect.png)
 
@@ -49,7 +49,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
    ![Highlighting the Michelangelo node](./index-images/michelangelo-elements-highlighted.png)
 
-1. Click the **Inspect** (![Inspect](./index-images/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools.
+1. Click the **Inspect** (![Inspect](./index-images/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools:
 
    ![The Inspect icon](./index-images/select-element-page-inspect.png)
 
@@ -64,11 +64,11 @@ Once you have selected a node in the DOM Tree, you can navigate the DOM Tree wit
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
-1. In the rendered webpage, under **Navigate the DOM Tree with a Keyboard**, right-click **Ringo** and then select **Inspect**.  `<p>Ringo</p>` is selected in the DOM Tree.
+1. In the rendered webpage, under **Navigate the DOM Tree with a Keyboard**, right-click **Ringo** and then select **Inspect**.  `<p>Ringo</p>` is selected in the DOM Tree:
 
    ![Inspecting the 'Ringo' node](./index-images/navigate-dom-tree-keyboard-ringo.png)
 
-1. Press the **Up Arrow** key two times.  `<div>` is selected.
+1. Press the **Up Arrow** key two times.  `<div>` is selected:
 
    ![Inspecting the 'div' node](./index-images/navigate-dom-tree-keyboard-ul.png)
 
@@ -95,9 +95,11 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 
 1. The `<p>Magritte</p>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.
 
-1. Right-click the `<p>Magritte</p>` node, and then click **Scroll into view**.  Your viewport scrolls back up to display the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if the **Scroll into view** option isn't displayed.
+1. Right-click the `<p>Magritte</p>` node, and then click **Scroll into view**:
 
-![Scroll into view](./index-images/scroll-into-view-dropdown.png)
+   ![Scroll into view](./index-images/scroll-into-view-dropdown.png)
+   
+   Your viewport scrolls back up to display the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if the **Scroll into view** option isn't displayed.
 
 
 #### Search for nodes
@@ -128,7 +130,7 @@ To edit the text content of a node, double-click the content in the DOM Tree.
 
 1. In the rendered webpage, under **Edit Content**, right-click **Michelle** and then select **Inspect**.
 
-1. In the DOM Tree, double-click `Michelle`.  In other words, double-click the text between `<p>` and `</p>`.  The text is highlighted to indicate that it is selected.
+1. In the DOM Tree, double-click `Michelle`.  In other words, double-click the text between `<p>` and `</p>`.  The text is highlighted to indicate that it is selected:
 
    ![Edit the text](./index-images/edit-content.png)
 
@@ -142,11 +144,11 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
 1. In the rendered webpage, under **Edit Attributes**, right-click **Howard** and then select **Inspect**.
 
-1. Double-click `<p>`.  The text is highlighted to indicate that the node is selected.
+1. Double-click `<p>`.  The text is highlighted to indicate that the node is selected:
 
    ![Edit the node](./index-images/edit-attributes-highlighted.png)
 
-1. Press the **Right Arrow** key, add a space, type `style="background-color:gold"`, and then press **Enter**.  The background color of the node changes to gold.
+1. Press the **Right Arrow** key, add a space, type `style="background-color:gold"`, and then press **Enter**.  The background color of the node changes to gold:
 
    ![Add a style attribute to the node](./index-images/edit-attributes-inline-css.png)
 
@@ -160,7 +162,7 @@ To edit the tag name of a node, double-click the tag name and then type in the n
 
 1. Double-click `<p>`.  The text `p` is highlighted.
 
-1. Delete `p`, type `button`, then press **Enter**.  The `<p>` node changes to a `<button>` node.
+1. Delete `p`, type `button`, then press **Enter**.  The `<p>` node changes to a `<button>` node:
 
    ![Change the node type to button](./index-images/edit-node-type-button.png)
 
@@ -174,7 +176,7 @@ To use the HTML editor:
 
 1. In the rendered webpage, right-click in the **Edit Content, Tag Name, and Attributes** section, and then select **Inspect**.
 
-1. In the DOM Tree, right-click the `<section id="edit-as-html-1">` node and select **Edit as HTML**. The HTML editor appears.
+1. In the DOM Tree, right-click the `<section id="edit-as-html-1">` node and select **Edit as HTML**. The HTML editor appears:
 
    ![The HTML editor](./index-images/edit-html-editor.png)
 
@@ -186,7 +188,7 @@ To use the HTML editor:
 
    For example, try adding `<p>Dijon</p>` after the `<p>Marseille</p>` line.
 
-1. Type **Ctrl+Enter** to apply the changes to the DOM tree and close the HTML editor.
+1. Type **Ctrl+Enter** to apply the changes to the DOM tree and close the HTML editor:
 
    ![The new DOM tree, with the an extra <p> node, after the HTML editor closed](./index-images/edit-html-editor-closed.png)
 
@@ -198,9 +200,9 @@ Drag nodes to reorder them.
 
 1. In the rendered webpage, under **Reorder DOM Nodes**, right-click **Elvis Presley** and then select **Inspect**.
 
-1. In the DOM Tree, drag `<p>Elvis Presley</p>` to the top of the list.
+1. In the DOM Tree, drag `<p>Elvis Presley</p>` to the top of the list:
 
-![Drag the node to the top of the list](./index-images/reorder-dom-nodes.png)
+   ![Drag the node to the top of the list](./index-images/reorder-dom-nodes.png)
 
 #### Force state
 
@@ -222,21 +224,21 @@ Press `H` to hide a node, as follows:
 
 1. In the rendered webpage, under **Hide a node**, right-click **The Stars My Destination** and then select **Inspect**.
 
-1. Press the `H` key.  The node is hidden from the rendered webpage:
+1. Press the **H** key.  The node is hidden from the rendered webpage:
 
    ![What the node looks like in the DOM Tree after it is hidden](./index-images/hide-a-node.png)
 
-1. Press the `H` key again.  The node is shown again.
+1. Press the **H** key again.  The node is shown again.
 
 #### Delete a node
 
-Press `Delete` to delete a node, as follows:
+Press **Delete** to delete a node, as follows:
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
 1. In the rendered webpage, under **Delete a Node**, right-click **Foundation** and then select **Inspect**.
 
-1. Press `Delete`.  The node is deleted.
+1. Press **Delete**.  The node is deleted.
 
 1. Press **Ctrl+Z** (Windows, Linux) or **Command+Z** (macOS).  The last action is undone and the node reappears.
 
@@ -310,9 +312,11 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
 1. In the rendered webpage, under **Break on attribute modifications**, right-click **Sauerkraut** and then select **Inspect**.
 
-1. In the DOM Tree, right-click `<p id="botm_target">Sauerkraut</p>`, and then select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
+1. In the DOM Tree, right-click `<p id="botm_target">Sauerkraut</p>`, and then select **Break On** > **Attribute Modifications**:
 
    ![Break on attribute modifications](./index-images/break-attribute-modifications-break-on-attribute-modifications.png)
+
+   See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
 1. Click the **Set Background** button.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change in the **Sources** tool:
 
@@ -422,7 +426,7 @@ See [Introduction to the DOM](https://developer.mozilla.org/docs/Web/API/Documen
 <!-- ====================================================================== -->
 ## Appendix: Missing options
 
-Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If you don't see the specified option in the context menu, try right-clicking away from the node text, or click the `...` button to the left of the node.
+Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If you don't see the specified option in the context menu, try right-clicking away from the node text, or click the `...` button to the left of the node:
 
 ![Where to click if all of the options aren't displayed](./index-images/right-click-right-side.png)
 
