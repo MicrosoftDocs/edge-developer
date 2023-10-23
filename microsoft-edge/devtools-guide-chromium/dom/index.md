@@ -41,15 +41,15 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
 <!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
-1. In the rendered webpage, under **Inspect a Node**, right-click **Michelangelo** and then select **Inspect**.
+1. In the rendered webpage, under **Inspect a Node**, right-click **Michelangelo** and then select **Inspect**:
 
    ![Inspecting a node](./index-images/michelangelo-inspect.png)
 
-   The **Elements** tool of DevTools opens.  `<p>Michelangelo</p>` node is highlighted in the **DOM Tree**:
+   The **Elements** tool of DevTools opens.  The `<p>Michelangelo</p>` node is highlighted in the **DOM Tree**:
 
    ![Highlighting the Michelangelo node](./index-images/michelangelo-elements-highlighted.png)
 
-1. Click the **Inspect** (![Inspect](./index-images/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools.
+1. Click the **Inspect** (![Inspect](./index-images/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools:
 
    ![The Inspect icon](./index-images/select-element-page-inspect.png)
 
@@ -85,7 +85,7 @@ Once you have selected a node in the DOM Tree, you can navigate the DOM Tree wit
 
 #### Scroll into view
 
-When viewing the DOM Tree, you may find yourself interested in a DOM node that isn't currently visible in the rendered webpage.  For example, suppose that you scrolled to the bottom of the page, and you're interested in the `<h1>` node at the top of the page.  **Scroll into view** lets you quickly reposition the viewport so that you can review the node.
+When viewing the DOM Tree, you may find yourself interested in a DOM node that isn't currently visible in the rendered webpage.  For example, suppose that you scrolled to the bottom of the page, and you're interested in the `<h1>` node at the top of the page.  **Scroll into view** lets you quickly reposition the viewport so that you can see the node.
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
@@ -104,7 +104,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 
 You can search the DOM Tree by string, CSS selector, or XPath selector.
 
-1. Focus your cursor on the **Elements** tool.
+1. Focus your cursor on the **Elements** tool, such as by clicking the **Elements** tab.
 
 1. Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  The Search bar opens at the bottom of the DOM Tree.
 
@@ -142,11 +142,11 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
 1. In the rendered webpage, under **Edit Attributes**, right-click **Howard** and then select **Inspect**.
 
-1. Double-click `<p>`.  The text is highlighted to indicate that the node is selected.
+1. Double-click `<p>`.  The text is highlighted to indicate that the node is selected:
 
    ![Edit the node](./index-images/edit-attributes-highlighted.png)
 
-1. Press the **Right Arrow** key, add a space, type `style="background-color:gold"`, and then press **Enter**.  The background color of the node changes to gold.
+1. Press the **Right Arrow** key, add a space, type `style="background-color:gold"`, and then press **Enter**.  The background color of the node changes to gold:
 
    ![Add a style attribute to the node](./index-images/edit-attributes-inline-css.png)
 
@@ -174,7 +174,7 @@ To use the HTML editor:
 
 1. In the rendered webpage, right-click in the **Edit Content, Tag Name, and Attributes** section, and then select **Inspect**.
 
-1. In the DOM Tree, right-click the `<section id="edit-as-html-1">` node and select **Edit as HTML**. The HTML editor appears.
+1. In the DOM Tree, right-click the `<section id="edit-as-html-1">` node, and then select **Edit as HTML**. The HTML editor appears within the DOM tree, with a box around the section that's being edited:
 
    ![The HTML editor](./index-images/edit-html-editor.png)
 
@@ -186,25 +186,25 @@ To use the HTML editor:
 
    For example, try adding `<p>Dijon</p>` after the `<p>Marseille</p>` line.
 
-1. Type **Ctrl+Enter** to apply the changes to the DOM tree and close the HTML editor.
+1. Press **Ctrl+Enter** to apply the changes to the DOM tree and close the HTML editor:
 
    ![The new DOM tree, with the an extra <p> node, after the HTML editor closed](./index-images/edit-html-editor-closed.png)
 
 #### Reorder DOM nodes
 
-Drag nodes to reorder them.
+To reorder nodes in the DOM tree, drag the nodes, as follows:
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
 1. In the rendered webpage, under **Reorder DOM Nodes**, right-click **Elvis Presley** and then select **Inspect**.
 
-1. In the DOM Tree, drag `<p>Elvis Presley</p>` to the top of the list.
+1. In the DOM Tree, drag `<p>Elvis Presley</p>` to the top of the list:
 
 ![Drag the node to the top of the list](./index-images/reorder-dom-nodes.png)
 
 #### Force state
 
-You can force nodes to remain in states including `:active`, `:hover`, `:focus`, `:visited`, and `:focus-within`:
+You can force nodes to remain in states including `:active`, `:hover`, `:focus`, `:visited`, and `:focus-within`, as follows:
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
@@ -212,7 +212,7 @@ You can force nodes to remain in states including `:active`, `:hover`, `:focus`,
 
 1. Right-click **The Lord of the Flies**, and then select **Inspect**.
 
-1. Right-click `<p class="demo--hover">The Lord of the Flies</p>`, and then select **Force State** > **:hover**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.  The background color remains orange even though you aren't actually hovering over the node.
+1. Right-click `<p class="demo--hover">The Lord of the Flies</p>`, and then select **Force State** > **:hover**.  If that option isn't displayed, see [Appendix: Missing options](#appendix-missing-options).  The background color remains orange even though you aren't actually hovering over the node.
 
 #### Hide a node
 
@@ -260,7 +260,7 @@ When you inspect a node, the `== $0` text next to the node means that you can re
 
    ![The result of the first $0 expression in the Console](./index-images/reference-currently-selected-node-console-1.png)
 
-1. Hover on the result.  The node is highlighted in the viewport.
+1. Hover over the result.  The node is highlighted in the viewport.
 
 1. Click `<p>Dune</p>` in the DOM Tree, type `$0` in the Console again, and then press **Enter** again.  Now, `$0` evaluates to `<p>Dune</p>`:
 
