@@ -67,7 +67,7 @@ The following experimental features are turned on by default. You can use these 
 * [Enable Preloading Status Panel in Application panel](#enable-preloading-status-panel-in-application-panel)
 <!-- [Emulate Microsoft-recommended hardware and network performance presets] - internal only -->
 
-**Turned on by default in Microsoft Edge Stable 117:**
+**Turned on by default in Microsoft Edge Stable 118:**
 * [Automatically pretty print minified sources](#automatically-pretty-print-minified-sources)
 * [Source order viewer](#source-order-viewer)
 * [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor)
@@ -80,6 +80,7 @@ The following experimental features are turned on by default. You can use these 
 * [Enable background page selector (e.g. for prerendering debugging)](#enable-background-page-selector-eg-for-prerendering-debugging)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
+* [Focus Mode](#focus-mode) - selected by default on some machines.
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 * [View console.profile() results in the Performance panel for Node.js](#view-consoleprofile-results-in-the-performance-panel-for-nodejs)
 * [Enable Preloading Status Panel in Application panel](#enable-preloading-status-panel-in-application-panel)
