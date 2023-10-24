@@ -17,7 +17,7 @@ To see a list of the available origin trials and register your origin to give th
 
 You can also provide feedback to browser engineers and the web standards community about the design of the API, your use cases, or your experience using the APIs.
 
-For more information, see the **Getting Started** section in [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/).
+For more information, see the **Getting Started** and **Developer Guidelines** sections in [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/).
 
 
 <!-- ====================================================================== -->
