@@ -108,7 +108,7 @@ To show media query breakpoints above the viewport:
 1. To go to the corresponding `@media` declaration in the code for the webpage, right-click between breakpoint vertical bars, and then select **Reveal in source code**.  DevTools opens the **Sources** tool and displays the corresponding `@media` line in the **Editor**.
 
 See also:
-* [Debugging media queries](../css/index.md#debugging-media-queries) in _Get started viewing and changing CSS_.
+* [Debug media queries](../css/index.md#debug-media-queries) in _Get started viewing and changing CSS_.
 
 
 <!-- ---------- -->
