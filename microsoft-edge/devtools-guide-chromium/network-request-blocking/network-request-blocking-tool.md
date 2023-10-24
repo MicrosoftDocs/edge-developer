@@ -75,7 +75,7 @@ To delete all network blocking requests at once:
 
 To change an existing blocked network request:
 
-*  In the **Network request blocking** table, hover over the blocked network request, and then click **Edit** (![edit blocked request icon](./network-request-blocking-tool-images/edit-blocked-request-icon.png)):
+*  In the **Network request blocking** table, hover over a blocked network request, and then click **Edit** (![edit blocked request icon](./network-request-blocking-tool-images/edit-blocked-request-icon.png)):
 
    ![Editing a blocked request](./network-request-blocking-tool-images/edit-blocked-request.png)
 
