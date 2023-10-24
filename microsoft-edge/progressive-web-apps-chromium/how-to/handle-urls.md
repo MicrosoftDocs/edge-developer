@@ -10,12 +10,16 @@ ms.date: 09/15/2022
 ---
 # Handle links to your Progressive Web Apps
 
-Native applications on many operating systems can handle links. Native applications can request to be launched, instead of the web browser, when associated URLs are activated, to create a more engaging experience for these applications.
+Native apps on many operating systems can handle links.  When associated URLs are activated, native apps can request to be launched instead of the web browser, to create a more engaging experience for these apps.
 
 Progressive Web Apps (PWAs) can also handle links in a similar way.
 
-
-<!-- although the present filename is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.  see also [PWAs as URL Handlers](https://web.dev/pwa-url-handler/) -->
+<!--
+link handling vs. url handling:
+Although the present filename is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.
+The PWA URL handlers feature was removed from Chromium.
+See also [PWAs as URL Handlers](https://web.dev/pwa-url-handler/).
+-->
 
 
 <!-- ====================================================================== -->
