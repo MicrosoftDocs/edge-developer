@@ -990,6 +990,9 @@
             - name: Submission states for extensions in the Microsoft Edge Add-ons website
               href: extensions-chromium/publish/submission-states.md
 
+            - name: Curation and review process for the Edge Add-ons store
+              href: extensions-chromium/publish/add-ons-store-curation.md
+
             - name: View Microsoft Edge extensions analytics dashboard
               href: extensions-chromium/publish/extensions-analytics.md
 
@@ -1582,7 +1585,7 @@
 
         - name: View formatted JSON
           href: devtools-guide-chromium/json-viewer/json-viewer.md
-          displayName: JSON viewer
+          displayName: JSON viewer, view JSON
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
