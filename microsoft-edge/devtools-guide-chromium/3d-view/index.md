@@ -67,7 +67,7 @@ In the Composited Layers view, the 3D canvas displays the list of layers created
 
 Use the Composited Layers view to analyze how many layers are created by your CSS code, how big they are, and how often they change.
 
-On the 3D canvas on the right, select an element of the webpage.  In the **Composited Layers** tab, the layers tree expands automatically, and the **Details** tab below the layers tree shows information about the selected layer.
+On the 3D canvas on the right, select an element of the webpage.  In the **Composited Layers** tab, the layers tree expands automatically, and the **Details** tab below the layers tree shows information about the selected layer:
 
 ![The Composited Layers tab](index-images/composited-layers-tab.png)
 
