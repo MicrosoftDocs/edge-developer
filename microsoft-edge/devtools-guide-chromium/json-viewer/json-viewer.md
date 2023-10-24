@@ -33,11 +33,11 @@ To view a JSON response from a web server as reformatted JSON:
 
 1. Open a new tab or window in Microsoft Edge.
 
-1. Type a URL that returns JSON data in the address bar.  For example, use this sample JSON response: [https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json](https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json).
+1. Type a URL that returns JSON data in the address bar. For example, use this sample JSON response: [https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json](https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json).
 
    You can find more samples of JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://microsoftedge.github.io/Demos/json-dummy-data/).
 
-1. Microsoft Edge detects that the returned data is JSON, and formats it automatically:
+1. Microsoft Edge detects that the returned data is JSON and formats it automatically:
 
    ![JSON data returned by a web server, formatted and syntax-highlighted by the JSON viewer](./json-viewer-images/json-response.png)
 
@@ -68,10 +68,7 @@ The **JSON viewer** applies syntax highlighting to invalid JSON. However, the **
 
 You can find information about the invalid syntax in the **Console** tool, where the **JSON viewer** reports errors.
 
-
 To view invalid JSON data:
-
-1. Enable the **JSON viewer**, as described in [Enable the JSON viewer](#enable-the-json-viewer), above.
 
 1. Open a new tab or window in Microsoft Edge.
 
