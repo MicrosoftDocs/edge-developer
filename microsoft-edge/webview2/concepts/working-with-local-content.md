@@ -428,7 +428,7 @@ When loading local content via `WebResourceRequested`, you specify the local con
 
 ###### Additional web resources
 
-`WebResourceRequested` modifies the content that's loaded via HTTP or HTTPS URLs, which support relative URL resolution. This menas that the resulting document can have references to additional web resources such as CSS, script, or image files that are also served via `WebResourceRequested`.
+`WebResourceRequested` modifies the content that's loaded via HTTP or HTTPS URLs, which support relative URL resolution. This means that the resulting document can have references to additional web resources such as CSS, script, or image files that are also served via `WebResourceRequested`.
 
 
 ###### Additional web resources resolved in WebView2 process
