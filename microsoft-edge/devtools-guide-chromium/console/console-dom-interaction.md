@@ -205,7 +205,7 @@ In this example, you get all the headings on the webpage that have an `id` attri
    console.log(headings.join("\n"));
    ```
    
-   The result is text that contains content for each heading followed by the full URL that points to it:
+   The result is text that contains content for each section heading, followed by the full URL for the section heading:
 
    ![The Console tool, showing the list of all headings on the page, along with their URLs](./console-dom-interaction-images/heading-links.png)
 
