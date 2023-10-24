@@ -189,8 +189,8 @@ Name the functions, so that you can easily distinguish between closures in the s
 
 ```javascript
 function createLargeClosure() {
-    var largeStr = new Array(1000000).join('x');
-    var lC = function() { // this is NOT a named function
+    var largeStr = 'x'.repeat(1000000).toLowerCase();
+    var lC = function() { // This is not a named function
         return largeStr;
     };
     return lC;
@@ -201,8 +201,8 @@ The following code uses named functions, to easily distinguish between closures 
 
 ```javascript
 function createLargeClosure() {
-    var largeStr = new Array(1000000).join('x');
-    var lC = function lC() { // this IS a named function
+    var largeStr = 'x'.repeat(1000000).toLowerCase();
+    var lC = function lC() { // This is a named function
         return largeStr;
     };
     return lC;

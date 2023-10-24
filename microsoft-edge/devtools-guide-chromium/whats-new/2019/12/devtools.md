@@ -132,7 +132,7 @@ The DevTools team has also released some extensions for [Visual Studio Code](htt
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
-Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge ](https://aka.ms/elements4code) Visual Studio Code extension.
+Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) Visual Studio Code extension.
 
 ![The Elements tool in Visual Studio Code using the Elements for Microsoft Edge extension](./devtools-images/elements-for-edge.png)
 
@@ -145,7 +145,8 @@ For more information, check out [Microsoft Edge DevTools extension for Visual St
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
-With the [Debugger for Microsoft Edge](https://aka.ms/debugger4code) Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.
+With the Debugger for Microsoft Edge Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.
+<!-- old url: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge -->
 
 ![The Debugger for Microsoft Edge Extension in Visual Studio Code](./devtools-images/vscode-debugger.png)
 
