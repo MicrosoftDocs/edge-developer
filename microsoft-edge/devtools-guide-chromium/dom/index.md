@@ -172,8 +172,6 @@ To edit the tag name of a node, double-click the tag name and then type in the n
 
 To change the tag name, text content, or attributes of multiple nodes at once, you can edit part of the DOM by using the DOM tree's HTML text editor, as follows:
 
-To use the HTML editor:
-
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
 1. In the rendered webpage, right-click in the **Edit Content, Tag Name, and Attributes** section, and then select **Inspect**.
