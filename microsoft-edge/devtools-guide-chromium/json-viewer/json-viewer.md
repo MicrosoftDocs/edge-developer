@@ -5,11 +5,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/04/2023
+ms.date: 10/17/2023
 ---
 # View formatted JSON
 
-Use the **JSON viewer** to automatically format and highlight JSON responses and files in browser tabs.
+Use the **JSON viewer** to automatically format and syntax highlight JSON responses and files in browser tabs.
 
 The **JSON viewer** changes the returned JSON data to make it easier to read. Sometimes a web server responds to HTTP requests by returning data encoded as JSON.  JSON data can be difficult to read when it's formatted as a single long, concatenated line of text. The same can occur when opening a JSON file from disk.
 
@@ -20,23 +20,10 @@ The **JSON viewer** improves readability of JSON data in several ways:
 *  Objects can be collapsed or expanded.
 *  The JSON viewer matches your operating system's dark or light theme.
 
-The **JSON viewer** tool is included as an experiment in Microsoft Edge starting with version 110.
 
+#### Supported scenarios
 
-<!-- ====================================================================== -->
-## Enable the JSON viewer
-
-By default, the **JSON viewer** isn't enabled. To enable the JSON viewer experiment:
-
-1. Go to `edge://flags`.
-
-1. In the **Search flags** text field, start typing **json viewer**.
-
-1. In the **JSON Viewer** dropdown menu, select **Enabled**.
-
-1. Click the **Restart** button which appears in the lower right:
-
-   ![The edge://flags page showing the JSON viewer flag](./json-viewer-images/enable-flag.png)
+The **JSON viewer** is not supported in windows that are opened by using the `window.open` JavaScript method. In windows opened with `window.open`, JSON data is displayed as a single line of text, without formatting or syntax highlighting.
 
 
 <!-- ====================================================================== -->
@@ -46,11 +33,11 @@ To view a JSON response from a web server as reformatted JSON:
 
 1. Open a new tab or window in Microsoft Edge.
 
-1. Type a URL that returns JSON data in the address bar.  For example, use this sample JSON response: [https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json](https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json).
+1. Type a URL that returns JSON data in the address bar. For example, use this sample JSON response: [https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json](https://microsoftedge.github.io/Demos/json-dummy-data/256KB-min.json).
 
    You can find more samples of JSON responses at [MicrosoftEdge / Demos > json-dummy-data](https://microsoftedge.github.io/Demos/json-dummy-data/).
 
-1. Microsoft Edge detects that the returned data is JSON, and formats it automatically:
+1. Microsoft Edge detects that the returned data is JSON and formats it automatically:
 
    ![JSON data returned by a web server, formatted and syntax-highlighted by the JSON viewer](./json-viewer-images/json-response.png)
 
@@ -81,10 +68,7 @@ The **JSON viewer** applies syntax highlighting to invalid JSON. However, the **
 
 You can find information about the invalid syntax in the **Console** tool, where the **JSON viewer** reports errors.
 
-
 To view invalid JSON data:
-
-1. Enable the **JSON viewer**, as described in [Enable the JSON viewer](#enable-the-json-viewer), above.
 
 1. Open a new tab or window in Microsoft Edge.
 
