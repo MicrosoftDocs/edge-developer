@@ -37,7 +37,7 @@ The DOM Tree of the **Elements** tool is where you do all DOM-related activities
 
 When you are interested in a particular DOM node, **Inspect** is a fast way to open DevTools and investigate that node.
 
-1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.  To do this, right-click the link, or press and hold **Ctrl** (Windows, Linux) or **Command** (macOS) and then click the link.
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.  (To open a link in a new window or tab, right-click the link.  Or, press and hold **Ctrl** (Windows, Linux) or **Command** (macOS) and then click the link.)
 
 <!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
@@ -95,7 +95,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 
 1. The `<p>Magritte</p>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.
 
-1. Right-click the `<p>Magritte</p>` node, and then click **Scroll into view**:
+1. Right-click the `<p>Magritte</p>` node, and then select **Scroll into view**:
 
    ![Scroll into view](./index-images/scroll-into-view-dropdown.png)
    
@@ -124,21 +124,23 @@ You can edit the DOM in DevTools and view how the changes affect the page in rea
 
 #### Edit text content
 
-To edit the text content of a node, double-click the content in the DOM Tree.
+To edit the text content of a node, double-click the content in the DOM Tree, as follows:
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
 1. In the rendered webpage, under **Edit Content**, right-click **Michelle** and then select **Inspect**.
 
-1. In the DOM Tree, double-click `Michelle`.  In other words, double-click the text between `<p>` and `</p>`.  The text is highlighted to indicate that it is selected:
+1. In the DOM Tree, double-click the text `Michelle`, between the `<p>` and `</p>` tags.  The text is highlighted to indicate that it's selected:
 
    ![Edit the text](./index-images/edit-content.png)
 
 1. Delete `Michelle`, type `Leela`, then press **Enter** to confirm the change.  The text in the DOM changes from **Michelle** to **Leela**.
 
-#### Edit attributes
+#### Edit or add attributes
 
-To edit attributes, double-click the attribute name or value.  Follow the instructions to learn how to add attributes to a node.
+To edit an existing attribute, double-click the attribute name or value.
+
+To add a new attribute, double-click the element for which to add an attribute, as follows:
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.
 
@@ -168,7 +170,7 @@ To edit the tag name of a node, double-click the tag name and then type in the n
 
 #### Edit multiple nodes, text, and attributes 
 
-To change the tag name, text content, or attributes of multiple nodes at once, you can edit part of the DOM using an HTML text editor.
+To change the tag name, text content, or attributes of multiple nodes at once, you can edit part of the DOM by using the DOM tree's HTML text editor, as follows:
 
 To use the HTML editor:
 
@@ -186,9 +188,9 @@ To use the HTML editor:
    * Adding or deleting nodes.
    * Editing nodes' text content or tag names.
 
-   For example, try adding `<p>Dijon</p>` after the `<p>Marseille</p>` line.
+   For example, add `<p>Dijon</p>` after the `<p>Marseille</p>` line.
 
-1. Press **Ctrl+Enter** to apply the changes to the DOM tree and close the HTML editor:
+1. Click the DOM tree outside the HTML editor, or press **Ctrl+Enter**.  Your edits are applied to the DOM tree and the rendered webpage, and the HTML editor closes:
 
    ![The new DOM tree, with the an extra <p> node, after the HTML editor closed](./index-images/edit-html-editor-closed.png)
 
