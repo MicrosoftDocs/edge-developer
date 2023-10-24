@@ -339,7 +339,7 @@ Present if Experiments > "Emulate Microsoft-recommended hardware and network per
    *  **Help** (![Help icon](./overview-images/help-icon.png)) button.
    *  **Close** DevTools (![Close DevTools icon](./overview-images/close-devtools-icon-light-theme.png)) button.
 
-![The main toolbar, with labels that identify its features](./overview-images/menu-bar.png)
+![The Activity Bar, with labels that identify its features](./overview-images/menu-bar.png)
 
 The **Activity Bar** features are described below.
 
@@ -393,17 +393,18 @@ Includes information about the new features of DevTools, how to contact the team
 
 Allows you to inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.
 
-The **Elements** tool is always present on the main toolbar.
+The **Elements** tool is always present on the Activity Bar.
 
 
 <!-- ------------------------------ -->
 #### Console tool
 
 In the **Console** tool, you can:
+
 *  View and filter logged messages from network requests or from JavaScript log statements.
 *  Enter JavaScript statements to evaluate in realtime.  Expressions are evaluated in the current context, such as when the JavaScript debugger in the **Sources** tool is paused at a breakpoint.
 
-The **Console** tool is always present on the main toolbar and on the Drawer toolbar.
+The **Console** tool is always present on the Activity Bar and on the Quick View toolbar.
 
 See [Console](console/index.md).
 
@@ -413,7 +414,7 @@ See [Console](console/index.md).
 
 The [Sources](sources/index.md) tool is a code editor and JavaScript debugger.  You can edit projects, maintain snippets, and debug your current project.
 
-The **Sources** tool is always present on the main toolbar.
+The **Sources** tool is always present on the Activity Bar.
 
 
 <!-- ------------------------------ -->
@@ -553,7 +554,7 @@ In the Command Menu, the tools are called "panels"; for example, the **Elements*
 
 1. In the Command Menu, start typing the name of a tool, such as **changes**, and then select a **Show** command, such as **Show Changes**.  The Command Menu displays the matching commands:
 
-   ![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'](./overview-images/command-menu-show-changes.png)
+   ![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Quick View'](./overview-images/command-menu-show-changes.png)
 
 1. Press **Enter** to select a **Show** command, such as **Show Changes**.  The selected tool opens in Quick View, at the bottom:
 
