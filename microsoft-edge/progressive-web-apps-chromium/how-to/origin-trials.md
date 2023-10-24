@@ -41,3 +41,4 @@ For more information, see [Microsoft Edge Origin Trials](https://microsoftedge.g
 ## See also
 
 * [Use Origin Trials in Microsoft Edge](../../origin-trials/index.md)
+* [What's New in Progressive Web Apps](../whats-new/pwa.md)

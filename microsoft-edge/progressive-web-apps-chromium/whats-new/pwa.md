@@ -327,3 +327,10 @@ This feature is being rolled out gradually to all users.  In the meantime, if yo
 Installed sites and PWAs that were running before an unexpected shutdown will now restore (that is, they will be restarted) when the system recovers.
 
 An unexpected shutdown can occur due to process failure, system restart, or power outage. Before this change, installed sites and PWAs had indeterminate behavior upon system restore.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Experimental features and origin trials](../how-to/origin-trials.md)
+* [Use Origin Trials in Microsoft Edge](../../origin-trials/index.md)
