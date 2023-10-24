@@ -29,9 +29,12 @@ To block a network request:
 
 1. Click the **Add pattern** (![Add pattern icon](./network-request-blocking-tool-images/add-pattern-icon.png)) button.  The **Enable network request blocking** checkbox is automatically selected.
 
-1. In the **Text pattern to block matching requests** text box, type **\*.jpg** to block all requests for JPEG images.
+1. In the **Text pattern to block matching requests** text box, type **\*.jpg**.  This blocks all requests for JPEG images.
 
-   You can either type the full URL, just the domain name to block all requests from this domain, or replace parts of it with `*` for wildcard pattern matching.
+   You can do any of the following:
+   * Type the full URL.
+   * Type only the domain name, to block all requests from this domain.
+   * Replace parts of the URL with `*`, for wildcard pattern matching.
    
    For example, `contoso.com` matches URLs like:
 
@@ -48,7 +51,7 @@ To block a network request:
 
    ![The Network request blocking tool, showing the new *.jpg blocking pattern](./network-request-blocking-tool-images/block-network-request.png)
 
-1. Refresh the page.  Now all JPEG images are blocked, the number of blocked network requests is indicated in the **Network request blocking** tool, and the images in the rendered webpage are missing:
+1. Refresh the page.  All JPEG images are blocked, so in the rendered webpage, each image is indicated as missing, by a "broken image" icon.  The number of blocked network requests is indicated in the **Network request blocking** tool:
 
    ![The Network request blocking tool, blocking all JPEG images](./network-request-blocking-tool-images/blocked-images.png)
 
@@ -58,7 +61,7 @@ To block a network request:
 
 To delete a specific network blocking request pattern:
 
-*  In the **Network request blocking** table, hover over the network blocking request pattern, and then click the **Remove** (![Remove blocked request icon](./network-request-blocking-tool-images/remove-blocked-request-icon.png)) button:
+*  In the **Network request blocking** table, hover over a network blocking request pattern, and then click the **Remove** (![Remove blocked request icon](./network-request-blocking-tool-images/remove-blocked-request-icon.png)) button:
 
    ![Removing a blocked request](./network-request-blocking-tool-images/remove-blocked-request.png)
 
