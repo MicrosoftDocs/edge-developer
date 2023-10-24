@@ -997,6 +997,9 @@
             - name: Submission states for extensions in the Microsoft Edge Add-ons website
               href: extensions-chromium/publish/submission-states.md
 
+            - name: Curation and review process for the Edge Add-ons store
+              href: extensions-chromium/publish/add-ons-store-curation.md
+
             - name: View Microsoft Edge extensions analytics dashboard
               href: extensions-chromium/publish/extensions-analytics.md
 
@@ -1297,11 +1300,6 @@
               href: webview2/concepts/versioning.md
               displayName: Understand WebView2 SDK versions  # old title
 
-            # update needed?
-            - name: Test upcoming APIs and features
-              href: webview2/how-to/set-preview-channel.md
-              displayName: 
-
             - name: Distribute your app and the WebView2 Runtime
               href: webview2/concepts/distribution.md
               displayName: 
@@ -1309,6 +1307,21 @@
             - name: Working with local content in WebView2 apps
               href: webview2/concepts/working-with-local-content.md
               displayName: 
+
+# -----------------------------------------------------------------------------
+        - name: Test and automation in WebView2 apps
+          items:
+            - name: Test upcoming APIs and features
+              href: webview2/how-to/set-preview-channel.md
+              displayName:
+
+            - name: Use Playwright to automate and test in WebView2
+              href: webview2/how-to/playwright.md
+              displayName:
+
+            - name: Automate and test WebView2 apps with Microsoft Edge WebDriver
+              href: webview2/how-to/webdriver.md
+              displayName:
 
 # -----------------------------------------------------------------------------
         - name: Debug WebView2 apps
@@ -1332,10 +1345,6 @@
             - name: Remote debugging
               href: webview2/how-to/remote-debugging.md
               displayName: Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge  # top-of-page title
-
-            - name: Use Playwright to automate in WebView2
-              href: webview2/how-to/playwright.md
-              displayName: Use Playwright to automate and test in WebView2  # top-of-page title
 
 # -----------------------------------------------------------------------------
         - name: Architecture
@@ -1393,10 +1402,6 @@
               href: webview2/how-to/chromium-devtools-protocol.md
               displayName: Use the Chrome DevTools Protocol (CDP) in WebView2 apps, chrome developer protocol  # top-of-page title & catch a mis-type
 
-            - name: Automate and test with Microsoft Edge WebDriver
-              href: webview2/how-to/webdriver.md
-              displayName: Automate and test WebView2 apps with Microsoft Edge WebDriver  # top-of-page title
-            
             - name: Data and privacy
               href: webview2/concepts/data-privacy.md
               displayName: Data and privacy in WebView2  # top-of-page title
@@ -1587,7 +1592,7 @@
 
         - name: View formatted JSON
           href: devtools-guide-chromium/json-viewer/json-viewer.md
-          displayName: JSON viewer
+          displayName: JSON viewer, view JSON
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords

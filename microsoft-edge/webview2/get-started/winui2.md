@@ -365,7 +365,7 @@ XAML Island support requires additional work and may be considered for future re
 On WinUI 2, the `DefaultBackgroundColor` property is not exposed directly.  You can set the default background color by setting an environment variable, as follows:
 
 ```csharp
-Environment.SetVariable("WEBVIEW2_DEFAULT_BACKGROUND_COLOR", "FF000000");
+Environment.SetEnvironmentVariable("WEBVIEW2_DEFAULT_BACKGROUND_COLOR", "FF000000");
 ```
 
 See also:
