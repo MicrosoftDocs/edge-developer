@@ -214,7 +214,7 @@ You can force nodes to remain in states including `:active`, `:hover`, `:focus`,
 
 1. Right-click **The Lord of the Flies**, and then select **Inspect**.
 
-1. Right-click `<p class="demo--hover">The Lord of the Flies</p>`, and then select **Force State** > **:hover**.  If that option isn't displayed, see [Appendix: Missing options](#appendix-missing-options).  The background color remains orange even though you aren't actually hovering over the node.
+1. Right-click `<p class="demo--hover">The Lord of the Flies</p>`, and then select **Force State** > **:hover**.  If that option isn't displayed, see [Appendix: Missing options](#appendix-missing-options), below.  The background color remains orange, even though you aren't actually hovering over the node.
 
 #### Hide a node
 
@@ -276,7 +276,7 @@ If you need to refer back to a node many times, store it as a global variable.
 
 1. In the rendered webpage, under **Store as global variable**, right-click **The Big Sleep**, and then select **Inspect**.
 
-1. Right-click `<p>The Big Sleep</p>` in the DOM Tree, and then select **Store as global variable**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
+1. Right-click `<p>The Big Sleep</p>` in the DOM Tree, and then select **Store as global variable**.  If that option isn't displayed, see[Appendix: Missing options](#appendix-missing-options), below.
 
 1. Type `temp1` in the **Console** and then press **Enter**.  The result of the expression shows that the variable evaluates to the node:
 
@@ -356,7 +356,7 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 <!-- ====================================================================== -->
 ## Next steps
 
-That covers most of the DOM-related features in DevTools.  You can discover the rest of the features by right-clicking nodes in the DOM Tree, and experimenting with the other options that were not covered in this tutorial.  See [Elements panel keyboard shortcuts](../shortcuts/index.md#elements-tool-keyboard-shortcuts).
+That covers most of the DOM-related features in DevTools.  You can discover the rest of the features by right-clicking nodes in the DOM Tree, and experimenting with the other options that were not covered in this tutorial.  See also [Elements tool keyboard shortcuts](../shortcuts/index.md#elements-tool-keyboard-shortcuts).
 
 Check out [Overview of DevTools](../../devtools-guide-chromium/overview.md) to discover everything else you can do with DevTools.
 
@@ -426,7 +426,7 @@ See [Introduction to the DOM](https://developer.mozilla.org/docs/Web/API/Documen
 <!-- ====================================================================== -->
 ## Appendix: Missing options
 
-Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If you don't see the specified option in the context menu, try right-clicking away from the node text, or click the `...` button to the left of the node:
+Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If the specified option isn't listed in the context menu, right-click away from the node text, or click the `...` button to the left of the node:
 
 ![Where to click if all of the options aren't displayed](./index-images/right-click-right-side.png)
 
