@@ -94,7 +94,7 @@ After your code is paused at a breakpoint, step through the code, one line at a 
 
 
 <!-- ------------------------------ -->
-#### Step over line of code
+#### Step over a line of code
 
 When paused on a line of code containing a function that isn't relevant to the problem you are debugging, click the **Step over** (![Step over](./reference-images/step-over-icon.png)) button to run the function without stepping into it.
 
@@ -121,9 +121,9 @@ You are paused on `A`.  After you click **Step over**, DevTools runs all the cod
 
 
 <!-- ------------------------------ -->
-#### Step into line of code
+#### Step into a line of code
 
-When paused on a line of code containing a function call that is related to the problem you are debugging, click the **Step into** (![Step into](./reference-images/step-into-icon.png)) button to investigate that function further.
+When paused on a line of code containing a function call that is related to the problem you are debugging, click the **Step into** (![Step into](./reference-images/step-into-icon.png)) button to investigate that function further:
 
 ![Clicking Step into](./reference-images/step-into.png)
 
@@ -215,7 +215,7 @@ You are paused on `A`.  After selecting **Restart frame**, you're be paused on `
 
 
 <!-- ------------------------------ -->
-#### Resume script runtime
+#### Resume script execution
 
 To continue the runtime after a pause of your script, click the **Resume script execution** (![Resume script execution](./reference-images/resume-script-run-icon.png)) button.  DevTools runs the script up until the next breakpoint, if any.
 
@@ -223,7 +223,7 @@ To continue the runtime after a pause of your script, click the **Resume script 
 
 
 <!-- ------------------------------ -->
-#### Force script runtime
+#### Force script execution
 
 To ignore all breakpoints and force your script to continue to run, click and hold the **Resume script execution** (![Resume script execution](./reference-images/resume-script-run-icon.png)) button and then click the **Force script execution** (![Force script execution](./reference-images/force-script-run-icon.png)) button.
 
@@ -231,9 +231,9 @@ To ignore all breakpoints and force your script to continue to run, click and ho
 
 
 <!-- ------------------------------ -->
-#### Change thread context
+#### Change the thread context
 
-When working with web workers or service workers, click on a context listed in the **Threads** pane to switch to that context.  The blue arrow icon represents which context is currently selected.
+When working with web workers or service workers, click on a context listed in the **Threads** pane to switch to that context.  The blue arrow icon represents which context is currently selected:
 
 ![The Threads pane](./reference-images/threads.png)
 
@@ -270,7 +270,7 @@ Use the **Watch** pane to watch the values of custom expressions.  You can watch
 
 While paused on a line of code, use the **Call Stack** pane to view the call stack that got you to this point.
 
-Click an entry to jump to the line of code where that function was called.  The blue arrow icon represents which function DevTools is currently highlighting.
+Click an entry to jump to the line of code where that function was called.  The blue arrow icon represents which function DevTools is currently highlighting:
 
 ![The Call Stack pane](./reference-images/call-stack.png)
 
