@@ -1044,6 +1044,7 @@
 
         - name: Get started with PWAs
           href: progressive-web-apps-chromium/how-to/index.md
+          displayName: Get started with Progressive Web Apps  # top-of-page title
 
         - name: Best practices for PWAs
           href: progressive-web-apps-chromium/how-to/best-practices.md
@@ -1053,6 +1054,7 @@
 
             - name: Publish PWAs to the Microsoft Store
               href: progressive-web-apps-chromium/how-to/microsoft-store.md
+              displayName: Publish a Progressive Web App to the Microsoft Store  # top-of-page title
 
             - name: Experimental features and origin trials
               href: progressive-web-apps-chromium/how-to/origin-trials.md
@@ -1068,9 +1070,11 @@
 
             - name: Web app manifest
               href: progressive-web-apps-chromium/how-to/web-app-manifests.md
+              displayName: Use a web app manifest to integrate a Progressive Web App into the operating system  # top-of-page title
 
             - name: Service Workers
               href: progressive-web-apps-chromium/how-to/service-workers.md
+              displayName: Use Service Workers to manage network requests  # top-of-page title
 
             - name: Store data on the device
               href: progressive-web-apps-chromium/how-to/offline.md
@@ -1088,37 +1092,47 @@
 
             - name: Synchronize and update in the background
               href: progressive-web-apps-chromium/how-to/background-syncs.md
+              displayName: Synchronize and update a PWA in the background  # top-of-page title
 
             - name: Handle files
               href: progressive-web-apps-chromium/how-to/handle-files.md
+              displayName: Handle files in Progressive Web Apps  # top-of-page title
 
             - name: Handle URLs
               href: progressive-web-apps-chromium/how-to/handle-urls.md
+              displayName: Handle links to your Progressive Web Apps  # top-of-page title
 
             - name: Handle protocols
               href: progressive-web-apps-chromium/how-to/handle-protocols.md
+              displayName: Handle protocols in Progressive Web Apps  # top-of-page title
 
             - name: Display content in the title bar
               href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
+              displayName: 
 
             - name: Share content with other apps
               href: progressive-web-apps-chromium/how-to/share.md
+              displayName: 
 
             - name: Define app shortcuts
               href: progressive-web-apps-chromium/how-to/shortcuts.md
+              displayName: 
 
             - name: Build operating system Widgets
               href: progressive-web-apps-chromium/how-to/widgets.md
+              displayName: Build PWA-driven widgets  # top-of-page title
 
             - name: Build PWAs for the sidebar in Microsoft Edge
               href: progressive-web-apps-chromium/how-to/sidebar.md
+              displayName: 
 
-        - name: What's new
+        - name: What's New
           href: progressive-web-apps-chromium/whats-new/pwa.md
-          displayName: release notes, announcements
+          displayName: release notes, announcements, What's New in Progressive Web Apps  # top-of-page title
 
         - name: Progressive Web App demos
           href: progressive-web-apps-chromium/demo-pwas.md
+          displayName: 
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
