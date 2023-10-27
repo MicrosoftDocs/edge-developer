@@ -88,6 +88,9 @@ WebView2 apps can run on the following versions of Windows:
 *  Windows Server 2019
 *  Windows Server 2016
 
+WebView2 is supported in the following devices:
+*  Xbox
+*  HoloLens 2
 
 #### Windows 7 and 8
 
