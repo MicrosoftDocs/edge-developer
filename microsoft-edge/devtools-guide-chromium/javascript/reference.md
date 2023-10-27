@@ -148,7 +148,7 @@ You are paused on `A`.  After you click **Step into**, DevTools runs this line o
 
 
 <!-- ------------------------------ -->
-#### Step out of line of code
+#### Step out from a line of code
 
 When paused inside of a function that isn't related to the problem you are debugging, click the **Step out** (![Step out](./reference-images/step-out-icon.png)) button to run the rest of the code of the function.
 
@@ -279,7 +279,7 @@ Click an entry to jump to the line of code where that function was called.  The 
 
 
 <!-- ------------------------------ -->
-#### Copy stack trace
+#### Copy a stack trace
 
 <!--
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there isn't right now, so it is here.
