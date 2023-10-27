@@ -11,7 +11,7 @@ ms.date: 02/21/2023
 # Get started with WebView2 in WinUI 2 (UWP) apps
 
 In this tutorial, you:
-*  Set up your development tools for creating UWP apps that use WebView2 to display web content.
+*  Set up your development tools for creating UWP apps that use WebView2 to display web content. These instructions are also applicable to Xbox. 
 *  Create an initial WinUI 2 (UWP) app.
 *  Install the **Microsoft.UI.Xaml** package (WinUI 2) for the project.
 *  Add a WebView2 control that displays webpage content.
