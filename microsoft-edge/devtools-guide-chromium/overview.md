@@ -121,10 +121,10 @@ To have DevTools automatically open whenever you open a new tab in the browser:
    Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
    ```
    
-   bash shell on macOS:
+   macOS Terminal:
    
    ```bash
-   /Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
+   /Applications/Microsoft\ Edge.app/Contents/MacOS/Microsoft\ Edge --auto-open-devtools-for-tabs
    ```
    
    bash shell on Linux:
