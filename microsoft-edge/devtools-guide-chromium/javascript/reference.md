@@ -22,9 +22,11 @@ ms.date: 10/26/2023
    limitations under the License.  -->
 # JavaScript debugging features
 
-This article covers how to use the debugger in Microsoft Edge DevTools, including how to set a line-of-code breakpoint.  To set other types of breakpoints, see [Pause your code with breakpoints](breakpoints.md).
+This article covers how to use the debugger features in Microsoft Edge DevTools, including how to set a line-of-code breakpoint.
 
-To learn the basics of debugging, see [Get started debugging JavaScript](index.md), which is a tutorial that uses an existing, form-based webpage.  The tutorial has screen captures, so you can skim it.  You can easily try out the debugger features by using the demo webpage.
+See also:
+* [Pause your code with breakpoints](breakpoints.md).
+* [Get started debugging JavaScript](index.md).
 
 
 <!-- ====================================================================== -->
