@@ -92,6 +92,15 @@ The following table describes the differences between the available device type 
 > [!NOTE]
 > If the **Device Type** list isn't displayed, select **More options** > **Add device type**.
 
+#### Add device pixel ratio
+
+To set a device pixel ratio, select **More options** > **Add device pixel ratio**. In the action bar at the top of the viewport, select a DPR value from the new DPR drop-down menu. The default value is **2**.
+
+![Add device pixel ratio](./index-images/add-device-pixel-ratio.png)
+
+> [!NOTE]
+> **Device pixel ratio (DPR)** is the ratio between physical pixels on the hardware screen and logical (CSS) pixels. In other words, DPR tells Chrome how many screen pixels to use to draw a CSS pixel.
+
 ### Mobile Device Viewport Mode
 
 To simulate the dimensions of a specific mobile device, select the device from the **Device** list.
