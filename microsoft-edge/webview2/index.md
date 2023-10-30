@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
-ms.date: 11/12/2021
+ms.date: 10/31/2023
 ---
 # Introduction to Microsoft Edge WebView2
 
@@ -88,10 +88,12 @@ WebView2 apps can run on the following versions of Windows:
 *  Windows Server 2019
 *  Windows Server 2016
 
-WebView2 is supported in the following devices:
+WebView2 is also supported on the following devices:
 *  Xbox
 *  HoloLens 2
 
+
+<!-- ------------------------------ -->
 #### Windows 7 and 8
 
 WebView2 Runtime version 109 is the final version that supports the following versions of Windows.  WebView2 Runtime and SDK version 110.0.1519.0 and higher don't support these operating systems.
