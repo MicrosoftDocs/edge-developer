@@ -901,138 +901,124 @@
         - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
 
-        - name: What's new
-          items:
-            - name: Released features for Microsoft Edge Add-ons
-              href: extensions-chromium/whats-new/released-features.md
+        - name: Released features for Microsoft Edge Add-ons
+          href: extensions-chromium/whats-new/released-features.md
 
-            - name: Roadmap for Microsoft Edge Add-ons
-              href: extensions-chromium/whats-new/roadmap.md
+        - name: Roadmap for Microsoft Edge Add-ons
+          href: extensions-chromium/whats-new/roadmap.md
 
-        - name: Getting started
-          items:
-            - name: Extension concepts and architecture
-              href: extensions-chromium/getting-started/index.md
+        - name: Extension concepts and architecture
+          href: extensions-chromium/getting-started/index.md
 
-            - name: Create an extension tutorial, part 1
-              href: extensions-chromium/getting-started/part1-simple-extension.md
+        - name: Create an extension tutorial, part 1
+          href: extensions-chromium/getting-started/part1-simple-extension.md
 
-            - name: Create an extension tutorial, part 2
-              href: extensions-chromium/getting-started/part2-content-scripts.md
+        - name: Create an extension tutorial, part 2
+          href: extensions-chromium/getting-started/part2-content-scripts.md
 
-            - name: Sideload an extension
-              href: extensions-chromium/getting-started/extension-sideloading.md
+        - name: Sideload an extension
+          href: extensions-chromium/getting-started/extension-sideloading.md
 
-        - name: Developer Guide
-          items:
-            - name: Supported APIs for Microsoft Edge extensions
-              href: extensions-chromium/developer-guide/api-support.md
+        - name: Supported APIs for Microsoft Edge extensions
+          href: extensions-chromium/developer-guide/api-support.md
 
-            - name: Declare API permissions in extension manifests
-              href: extensions-chromium/developer-guide/declare-permissions.md  # moved from /enterprise/
+        - name: Declare API permissions in extension manifests
+          href: extensions-chromium/developer-guide/declare-permissions.md  # moved from /enterprise/
 
-            - name: Port a Chrome extension to Microsoft Edge
-              href: extensions-chromium/developer-guide/port-chrome-extension.md
+        - name: Port a Chrome extension to Microsoft Edge
+          href: extensions-chromium/developer-guide/port-chrome-extension.md
 
-            - name: Alternative ways to distribute extensions
-              href: extensions-chromium/developer-guide/alternate-distribution-options.md
+        - name: Alternative ways to distribute extensions
+          href: extensions-chromium/developer-guide/alternate-distribution-options.md
 
-            - name: Native messaging
-              href: extensions-chromium/developer-guide/native-messaging.md
+        - name: Native messaging
+          href: extensions-chromium/developer-guide/native-messaging.md
 
-            - name: Defining match patterns for an extension to access file URLs
-              href: extensions-chromium/developer-guide/match-patterns.md  # moved from /enterprise/
+        - name: Defining match patterns for an extension to access file URLs
+          href: extensions-chromium/developer-guide/match-patterns.md  # moved from /enterprise/
 
-            - name: Create an extension that customizes the DevTools UI
-              href: extensions-chromium/developer-guide/devtools-extension.md
+        - name: Create an extension that customizes the DevTools UI
+          href: extensions-chromium/developer-guide/devtools-extension.md
 
-            - name: Extensions in the Microsoft Edge sidebar
-              href: extensions-chromium/developer-guide/sidebar.md
-              displayName: sidebar extensions, sidepanel, side panel  # alt lookup phrase
+        - name: Extensions in the Microsoft Edge sidebar
+          href: extensions-chromium/developer-guide/sidebar.md
+          displayName: sidebar extensions, sidepanel, side panel  # alt lookup phrase
 
-            - name: Best Practices
-              href: extensions-chromium/developer-guide/best-practices.md
-              displayName: Best Practices for extensions  # full title
+        - name: Best Practices
+          href: extensions-chromium/developer-guide/best-practices.md
+          displayName: Best Practices for extensions  # full title
 
-        - name: Manifest
-          items:
-            - name: Overview and timelines for migrating to Manifest V3
-              href: extensions-chromium/developer-guide/manifest-v3.md
+        - name: Overview and timelines for migrating to Manifest V3
+          href: extensions-chromium/developer-guide/manifest-v3.md
 
-            - name: Migrate an extension from Manifest V2 to V3
-              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+        - name: Migrate an extension from Manifest V2 to V3
+          href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
 
-            - name: Manifest file format for extensions
-              href: extensions-chromium/getting-started/manifest-format.md
+        - name: Manifest file format for extensions
+          href: extensions-chromium/getting-started/manifest-format.md
 
-        - name: Publish to the Add-ons website
-          items:
-            - name: Register as a Microsoft Edge extension developer
-              href: extensions-chromium/publish/create-dev-account.md
+        - name: Register as a Microsoft Edge extension developer
+          href: extensions-chromium/publish/create-dev-account.md
 
-            - name: Verify your company account information
-              href: extensions-chromium/publish/verify-microsoft-edge-program.md
+        - name: Verify your company account information
+          href: extensions-chromium/publish/verify-microsoft-edge-program.md
 
-            - name: Publish a Microsoft Edge extension by using a GitHub account
-              href: extensions-chromium/publish/github.md
+        - name: Publish a Microsoft Edge extension by using a GitHub account
+          href: extensions-chromium/publish/github.md
 
-            - name: Add users to the Microsoft Edge program
-              href: extensions-chromium/publish/aad-account.md
+        - name: Add users to the Microsoft Edge program
+          href: extensions-chromium/publish/aad-account.md
 
-            - name: Publish a Microsoft Edge extension
-              href: extensions-chromium/publish/publish-extension.md
+        - name: Publish a Microsoft Edge extension
+          href: extensions-chromium/publish/publish-extension.md
 
-            - name: Extension hosting
-              href: extensions-chromium/publish/hosting-and-updating.md  # moved from /enterprise/
+        - name: Extension hosting
+          href: extensions-chromium/publish/hosting-and-updating.md  # moved from /enterprise/
 
-            - name: Update a Microsoft Edge extension
-              href: extensions-chromium/publish/update-extension.md
+        - name: Update a Microsoft Edge extension
+          href: extensions-chromium/publish/update-extension.md
 
-            - name: Automatically update extensions in Microsoft Edge
-              href: extensions-chromium/publish/auto-update.md  # moved from /enterprise/
+        - name: Automatically update extensions in Microsoft Edge
+          href: extensions-chromium/publish/auto-update.md  # moved from /enterprise/
 
-            - name: Submission states for extensions in the Microsoft Edge Add-ons website
-              href: extensions-chromium/publish/submission-states.md
+        - name: Submission states for extensions in the Microsoft Edge Add-ons website
+          href: extensions-chromium/publish/submission-states.md
 
-            - name: Curation and review process for the Edge Add-ons store
-              href: extensions-chromium/publish/add-ons-store-curation.md
+        - name: Curation and review process for the Edge Add-ons store
+          href: extensions-chromium/publish/add-ons-store-curation.md
 
-            - name: View Microsoft Edge extensions analytics dashboard
-              href: extensions-chromium/publish/extensions-analytics.md
+        - name: View Microsoft Edge extensions analytics dashboard
+          href: extensions-chromium/publish/extensions-analytics.md
 
-            - name: Reply to user reviews
-              href: extensions-chromium/publish/reply-user-reviews.md
-              displayName: Respond to user reviews
+        - name: Reply to user reviews
+          href: extensions-chromium/publish/reply-user-reviews.md
+          displayName: Respond to user reviews
 
-            - name: Manage account settings
-              href: extensions-chromium/publish/manage-settings.md
+        - name: Manage account settings
+          href: extensions-chromium/publish/manage-settings.md
 
-            - name: Contact Microsoft Edge extensions support
-              href: extensions-chromium/publish/contact-extensions-team.md
-              displayName: feedback, log issues, enter issues, report issues, reporting issues
+        - name: Contact Microsoft Edge extensions support
+          href: extensions-chromium/publish/contact-extensions-team.md
+          displayName: feedback, log issues, enter issues, report issues, reporting issues
 
-            - name: Policies for Microsoft Edge Add-ons
-              items:
-                - name: Content Security Policy (CSP)
-                  href: extensions-chromium/store-policies/csp.md
+        - name: Content Security Policy (CSP)
+          href: extensions-chromium/store-policies/csp.md
 
-                - name: App Developer Agreement Addendum for Microsoft Edge program users
-                  href: extensions-chromium/store-policies/ada-addendum.md
+        - name: App Developer Agreement Addendum for Microsoft Edge program users
+          href: extensions-chromium/store-policies/ada-addendum.md
 
-                - name: Microsoft Edge Add-ons store developer policies
-                  href: extensions-chromium/store-policies/developer-policies.md
+        - name: Microsoft Edge Add-ons store developer policies
+          href: extensions-chromium/store-policies/developer-policies.md
 
-            - name: Microsoft Edge Add-ons API
-              items:
-                - name: Using the Microsoft Edge Add-ons API
-                  href: extensions-chromium/publish/api/using-addons-api.md
+        - name: Using the Microsoft Edge Add-ons API
+          href: extensions-chromium/publish/api/using-addons-api.md
 
-                - name: Microsoft Edge Add-ons API Reference
-                  href: extensions-chromium/publish/api/addons-api-reference.md
+        - name: Microsoft Edge Add-ons API Reference
+          href: extensions-chromium/publish/api/addons-api-reference.md
 
         - name: Samples
           href: extensions-chromium/samples.md
-          displayName: Samples for Microsoft Edge extensions # full title
+          displayName: Samples for Microsoft Edge extensions  # top-of-page title
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
