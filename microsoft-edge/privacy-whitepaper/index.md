@@ -634,15 +634,27 @@ Profiles in Microsoft Edge allow you to separate your browsing data into indepen
 
 However, users can easily switch between existing profiles in Microsoft Edge without the need for passwords.  If users have access to the same device, users may create another profile on the same version of Microsoft Edge without the permission of the current profile owner.  Removing the profile from Microsoft Edge settings permanently deletes browsing data for the specific profile stored on the device, such as browsing history, favorites, form fill data, and passwords.  Data synced to your account may still be stored in the Microsoft cloud and may be cleared from the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
 
+
+<!-- ------------------------------ -->
+#### Guest mode
+
 **Guest** mode is a temporary instance of a fresh profile.  It allows you to browse on another user's device without modifying the signed-in profile. Browsing data from **Guest** mode such as favorites, browsing history, passwords, and form fill data does not persist after you close all **Guest** mode windows.  Downloaded files are stored on the device, but the history of the downloads is deleted.
 
 **Guest** mode allows you to browse the web without being signed in to other sites automatically.  Microsoft Edge does not send websites any information to indicate that the user is browsing in **Guest** mode.  When you use **Guest** mode, permission to collect diagnostic data about how you use the browser and websites you visit is taken from the profile of Microsoft Edge from which the **Guest** mode session was launched.  All browsing data for the specific **Guest** mode session is cleared after all **Guest** windows are closed.
+
+
+<!-- ------------------------------ -->
+#### InPrivate browsing
 
 **InPrivate** browsing is a private browsing mode. No browsing history, download history, cookies and site data, nor form fill data are remembered. Microsoft Edge saves downloaded files and any new favorites created while browsing **InPrivate**.
 
 By default, while browsing **InPrivate**, Microsoft does not collect any information about websites you visit for product improvement purposes. Your school, workplace, or internet service provider may still be able to see your browsing activity.
 
-Browsing data for the specific **InPrivate** session is cleared after all **InPrivate** windows are closed.  When using the Windows Input Method Editor (IME) keyboard for typing and inking, data may be collected to improve language recognition and suggestion capabilities.  You can stop inking and typing data from being collected by Microsoft while using the Windows IME keyboard during **InPrivate** and normal browsing. Open **Start** > **Settings** > **Privacy** and turn off **Inking & typing personalization**.  For more information about **InPrivate** browsing, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/help/4533513).
+Browsing data for the specific **InPrivate** session is cleared after all **InPrivate** windows are closed.  When using the Windows Input Method Editor (IME) keyboard for typing and inking, data may be collected to improve language recognition and suggestion capabilities.
+
+To stop inking and typing data from being collected by Microsoft while using the Windows IME keyboard during **InPrivate** and normal browsing:
+
+* On Windows, open **Start** > **Settings** > **Privacy**, and then turn off **Inking & typing personalization**.  For more information about **InPrivate** browsing, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/help/4533513).<!-- todo: * On macOS, do X. -->
 
 
 <!-- ------------------------------ -->
