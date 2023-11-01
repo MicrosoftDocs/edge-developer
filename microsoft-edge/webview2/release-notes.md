@@ -147,7 +147,11 @@ Release Date: November 01, 2023
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 119.0.2151.40 or higher.
 
-#### General features
+#### General Availability
+
+> [!IMPORTANT]
+> **Announcement**: Xbox WebView2 SDK is now Generally Available (GA) and is available on Xbox October 2310 version (231018-2200). For more details, see [WebView2 for Xbox announcement](https://blogs.windows.com/msedgedev/2023/11/01/webview2-for-xbox-announcement/).
+
 
 #### Promotions
 The following APIs have been promoted to Stable and are now included in this Release SDK.
