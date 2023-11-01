@@ -10,6 +10,10 @@ ms.date: 08/29/2022
 ---
 # Sample apps
 
+
+<!-- ====================================================================== -->
+## WebView2Samples repo
+
 Sample apps that use WebView2 are available in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps), for various frameworks or platforms.
 
 | Article | Sample | Notes |
@@ -22,6 +26,7 @@ Sample apps that use WebView2 are available in the [WebView2Samples repo](https:
 | [WPF app with CDP extension](samples/wv2cdpextensionwpfsample.md) | [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample) | Use Chrome DevTools Protocol APIs in a WPF app. |
 | [WinForms sample app](samples/webview2windowsformsbrowser.md) | [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser) | &nbsp; |
 
+
 <!--
 | [WinUI 3 (Windows App SDK) sample app](./samples/webview2-winui3-sample.md) | _pending_ PR: https://github.com/MicrosoftEdge/WebView2Samples/pull/142 [WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample) | [Tutorial](get-started/winui.md).<br/> [Completed tutorial project](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted). |
 -->
@@ -29,11 +34,18 @@ Sample apps that use WebView2 are available in the [WebView2Samples repo](https:
 These articles provide the specific steps to set up your machine and build, run, and update each sample.
 
 
+<!-- ------------------------------ -->
 #### Sample apps vs. completed Getting Started tutorials
 
 The sample apps are the source of the sample code snippets that are shown in the API Reference docs and conceptual docs.
 
 For some frameworks or platforms, the samples repo contains both a completed Getting Started tutorial and a sample app.  These sample apps showcase more of the WebView2 APIs than the Getting Started tutorials.
+
+
+<!-- ====================================================================== -->
+## Xbox WebView2 samples
+
+* [Media App Samples for Xbox](https://github.com/microsoft/Media-App-Samples-for-Xbox)
 
 
 <!-- ====================================================================== -->
