@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/21/2023
+ms.date: 10/31/2023
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps
 
@@ -23,6 +23,12 @@ The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  
 *  UWP XAML controls.
 *  Dense control styles.
 *  Fluent styles and materials.
+
+
+<!-- ------------------------------ -->
+#### Platforms
+
+This article applies to Windows and Xbox.
 
 WinUI 2 supports UWP only.  These controls are backward-compatible.
 

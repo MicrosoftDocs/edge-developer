@@ -69,6 +69,12 @@ You can access WebView2 controls in your applications using [Windows UI Library 
 XAML Island support requires additional work and may be considered for future releases.
 
 
+<!-- ------------------------------ -->
+#### Xbox
+
+WebView2 is now available on Xbox devices. 
+
+
 <!-- ====================================================================== -->
 ## Preview Availability
 
