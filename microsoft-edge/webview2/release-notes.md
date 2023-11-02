@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/15/2023
+ms.date: 11/01/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -141,19 +141,23 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ====================================================================== -->
 ## 1.0.2151.40
 
-Release Date: November 01, 2023
+Release Date: November 1, 2023
 
 [NuGet package for WebView2 SDK 1.0.2151.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2151.40)
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 119.0.2151.40 or higher.
 
+
+<!-- ------------------------------ -->
 #### General Availability
 
 > [!IMPORTANT]
 > **Announcement**: Xbox WebView2 SDK is now Generally Available (GA) and is available on Xbox October 2310 version (231018-2200). For more details, see [WebView2 for Xbox announcement](https://blogs.windows.com/msedgedev/2023/11/01/webview2-for-xbox-announcement/).
 
 
+<!-- ------------------------------ -->
 #### Promotions
+
 The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 * Added source frame info to the `NewWindowRequested` event arguments, to identify the source of the request:
@@ -208,8 +212,10 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ---
 
+
+<!-- ------------------------------ -->
 #### Bug fixes
-* Fixed a reliability issue where multiple WebView creations could lead to a crash. (Runtime-only)  ([Issue #3793](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3793))
+* Fixed a reliability issue where multiple WebView creations could lead to a crash.  (Runtime-only)  ([Issue #3793](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3793))
 
 <!-- end of Nov 2023 Release SDK -->
 
