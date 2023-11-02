@@ -99,7 +99,7 @@ Chromium issue [#1070378](https://crbug.com/1070378)
 
 See also:
 * [webhint extension for Visual Studio Code](../../../../test-and-automation/webhint.md)
-* [Enable webhint](../../../experimental-features/index.md#enable-webhint) in _Experimental features_
+* [Enable webhint](../../../experimental-features/index.md#enable-webhint) in _Experimental features in Microsoft Edge DevTools_
 
 
 <!-- ====================================================================== -->

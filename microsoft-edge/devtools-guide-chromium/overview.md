@@ -551,7 +551,7 @@ You can also change the settings of advanced features, such as:
 <!-- ====================================================================== -->
 ## Trying experimental features
 
-The DevTools team provides new features as _experiments_ in DevTools.  You can turn each of the experiments on or off.  To see the full list of [Experimental features](experimental-features/index.md), in DevTools, select **Settings** (the gear icon), and then select **Experiments**.
+The DevTools team provides new features as _experiments_ in DevTools.  You can turn each of the experiments on or off.  To see the full list of [Experimental features in Microsoft Edge DevTools](experimental-features/index.md), in DevTools, select **Settings** (![Settings icon](./overview-images/settings-gear-icon-light-theme.png)), and then select **Experiments**.
 
 To preview the [latest features coming to DevTools](whats-new/2021/02/devtools.md), download [Microsoft Edge Canary](https://www.microsoft.com/edge/download/insider), which builds nightly.
 
