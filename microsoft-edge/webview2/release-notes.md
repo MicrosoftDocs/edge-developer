@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/01/2023
+ms.date: 11/06/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -141,7 +141,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ====================================================================== -->
 ## 1.0.2151.40
 
-Release Date: November 1, 2023
+Release Date: November 6, 2023
 
 [NuGet package for WebView2 SDK 1.0.2151.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2151.40)
 
@@ -221,19 +221,22 @@ The following APIs have been promoted to Stable and are now included in this Rel
 <!-- end of Nov 2023 Release SDK -->
 
 
+<!-- ====================================================================== -->
 ## 1.0.2194-prerelease
 
-Release Date: November 02, 2023
+Release Date: November 6, 2023
 
 [NuGet package for WebView2 SDK 1.0.2194-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2194-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 120.0.2194.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 121.0.2194.0 or higher.
 
 
+<!-- ------------------------------ -->
 #### Promotions
+
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
-* Supports extensions in WebView2.
+* Support for browser extensions in WebView2:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -276,11 +279,17 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ---
 
+
+<!-- ------------------------------ -->
 #### Bug fixes
-* Fixed an issue where WebView2 would sometimes render blurry content or no content after changing monitor scale or switching between RDP/docking modes.(Runtime-only)
-* Fixed issue in implementation of TextServicesFoundation causing a crash when a WebView2 was destroyed. (Runtime-only)
-* Fixes memory leak in .NET when web messages are sent from WebView2, but are not read from application side. (Runtime-only) ([Issue #3794](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3794))
-* Fixed an issue causing ScaleFactor setting not working properly for all WV2 Print APIs (Runtime-only) ([Issue #4082](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4082))
+
+* Fixed an issue where WebView2 would sometimes render blurry content or no content after changing monitor scale or switching between RDP and docking modes.  (Runtime-only)
+* Fixed an issue in `TextServicesFoundation` causing a crash when a WebView2 instance was destroyed.  (Runtime-only)
+* Fixes a memory leak in .NET when web messages are sent from WebView2, but aren't read from the application side.  (Runtime-only)  ([Issue #3794](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3794))
+* Fixed an issue causing the `ScaleFactor` setting to not work properly for all WebView2 Print APIs.  (Runtime-only)  ([Issue #4082](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4082))
+
+<!-- end of Nov 2023 Prerelease SDK -->
+
 
 <!-- ====================================================================== -->
 ## 1.0.2088.41
