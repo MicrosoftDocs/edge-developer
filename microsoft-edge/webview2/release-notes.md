@@ -215,7 +215,11 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 <!-- ------------------------------ -->
 #### Bug fixes
+
 * Fixed a reliability issue where multiple WebView creations could lead to a crash.  (Runtime-only)  ([Issue #3793](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3793))
+
+<!-- end of Nov 2023 Release SDK -->
+
 
 <!-- ====================================================================== -->
 ## 1.0.2088.41
