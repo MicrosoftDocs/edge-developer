@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 10/31/2023
+ms.date: 11/02/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -652,15 +652,13 @@ By default, while browsing **InPrivate**, Microsoft does not collect any informa
 
 Browsing data for the specific **InPrivate** session is cleared after all **InPrivate** windows are closed.  When using the Windows Input Method Editor (IME) keyboard for typing and inking, data may be collected to improve language recognition and suggestion capabilities.
 
-To stop inking and typing data from being collected by Microsoft while using the Windows IME keyboard during **InPrivate** and normal browsing:
-
-* On Windows, open **Start** > **Settings** > **Privacy**, and then turn off **Inking & typing personalization**.  For more information about **InPrivate** browsing, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/help/4533513).<!-- todo: * On macOS, do X. -->
+To stop inking and typing data from being collected by Microsoft while using the Windows IME keyboard during **InPrivate** and normal browsing, open **Start** > **Settings** > **Privacy**, and then turn off **Inking & typing personalization**.  For more information about **InPrivate** browsing, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/help/4533513).
 
 
 <!-- ------------------------------ -->
 #### Data privacy when using a work profile
 
-When working with the work profile, the organization can see the following data:
+When working with the work profile, the organization may see the following data:
 * The application URL.
 * The identity of the user in the profile.
 * The file name.
