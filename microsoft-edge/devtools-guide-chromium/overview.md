@@ -130,7 +130,7 @@ To have DevTools automatically open whenever you open a new tab in the browser:
    bash shell on Linux:
    
    ```bash
-   microsoft-edge-dev --auto-open-devtools-for-tabs
+   microsoft-edge --auto-open-devtools-for-tabs
    ```
    
 
