@@ -147,7 +147,7 @@
         - name: Experimental features
           items:
 
-            - name: Experimental features
+            - name: Experimental features in Microsoft Edge DevTools
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: Experimental features, settings
 
