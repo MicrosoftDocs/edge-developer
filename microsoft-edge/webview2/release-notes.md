@@ -141,7 +141,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ====================================================================== -->
 ## 1.0.2151.40
 
-Release Date: November 6, 2023
+Release Date: November 6, 2023 
 
 [NuGet package for WebView2 SDK 1.0.2151.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2151.40)
 
