@@ -19,7 +19,6 @@ If you have concerns or questions about the Roadmap, provide your feedback in th
 The WebView2 team is planning the following major efforts for future updates:
 
 * macOS Preview
-* Xbox Preview
 * Linux Preview
 
 
@@ -67,6 +66,12 @@ You can access WebView2 controls in your applications using [Windows UI Library 
 ###### XAML limitation
 
 XAML Island support requires additional work and may be considered for future releases.
+
+
+<!-- ------------------------------ -->
+#### Xbox
+
+WebView2 is now available on Xbox devices. 
 
 
 <!-- ====================================================================== -->
