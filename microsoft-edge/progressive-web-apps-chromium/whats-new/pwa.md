@@ -5,11 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/23/2022
+ms.date: 10/24/2023
 ---
 # What's New in Progressive Web Apps
 
 This page lists the updates to Progressive Web Apps (PWAs) and Web Apps from the Microsoft Edge Web Apps team.  To try new features, read these announcements.  To stay up to date with the latest and greatest features, download the [Microsoft Edge preview channels](https://www.microsoft.com/edge/download/insider) (Beta, Dev, and Canary).
+
+Sections of this document correspond to historical releases of Microsoft Edge, and are not updated over time.  For example, references below to "new features" or "origin trials" might become outdated as new versions of Microsoft Edge are released.
 
 
 <!-- ====================================================================== -->
@@ -252,18 +254,20 @@ Learn more in [Publish a Progressive Web App to the Microsoft Store](../how-to/m
 
 To have more control over the title bar area that's currently displayed in standalone display mode, you may want to experiment with Window Controls Overlay. Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window. This layout frees up more space for the web content layer. WCO is available for installed desktop PWAs.
 
-Learn more about experimenting with Window Controls Overlay at [Experimental features in Progressive Web Apps (PWAs)](../how-to/window-controls-overlay.md).
+Learn more about experimenting with Window Controls Overlay at [Display content in the title bar](../how-to/window-controls-overlay.md).
 
-Register your origin for the **Web App Window Controls Overlay** trial at our [Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/).
+_2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and is available to all users, so the following no longer applies:_ Register your origin for the **Web App Window Controls Overlay** trial at our [Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/).
 
 
 #### URL Handlers origin trial
 
 Developers can now use the experimental feature Web App URL Handlers in origin trial. This feature allows the registration of an installed PWA to open links from other apps that refer to its scope.
 
-Learn more about experimenting with URL handlers at [Experimental features in Progressive Web Apps (PWAs)](../how-to/handle-urls.md).
+_2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and has been removed, so the following no longer applies, and the PWA URL Handlers feature was removed from the Chromium browser engine:_ Register your domain for the **Web App URL Handlers** trial at our [Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/).
 
-Register your domain for the **Web App URL Handlers** trial at our [Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/).
+See also:
+* [Handle links to your Progressive Web Apps](../how-to/handle-urls.md)
+* [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)
 
 
 #### Support for the Share API on macOS
@@ -281,9 +285,9 @@ Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22
 
 #### Protocol handlers origin trial
 
-You can now register your PWA to handle specific protocols with the host operating system. The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at the [origin trial signup page](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration).
+You can now register your PWA to handle specific protocols with the host operating system.  Learn more about using protocol handlers with your PWA at [Handle protocols in Progressive Web Apps](../how-to/handle-protocols.md).
 
-Learn more about using protocol handlers with your PWA at [Experimental features in Progressive Web Apps (PWAs)](../how-to/handle-protocols.md).
+_2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and is available to all users, so the following no longer applies:_ The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at the [origin trial signup page](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration).
 
 
 #### Streamlined App Info menu
@@ -323,3 +327,10 @@ This feature is being rolled out gradually to all users.  In the meantime, if yo
 Installed sites and PWAs that were running before an unexpected shutdown will now restore (that is, they will be restarted) when the system recovers.
 
 An unexpected shutdown can occur due to process failure, system restart, or power outage. Before this change, installed sites and PWAs had indeterminate behavior upon system restore.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Experimental features and origin trials](../how-to/origin-trials.md)
+* [Use Origin Trials in Microsoft Edge](../../origin-trials/index.md)
