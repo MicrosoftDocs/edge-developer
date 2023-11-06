@@ -19,7 +19,6 @@ If you have concerns or questions about the Roadmap, provide your feedback in th
 The WebView2 team is planning the following major efforts for future updates:
 
 * macOS Preview
-* Xbox Preview
 * Linux Preview
 
 
