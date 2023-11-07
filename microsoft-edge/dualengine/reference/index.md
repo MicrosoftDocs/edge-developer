@@ -15,6 +15,7 @@ The Microsoft DualEngine API enables you to host and control an Internet Explore
 
 ## Interfaces
 
+* [DualEngineSessionFactory](dualenginesessionfactory.md)
 * [IDualEngine20BrowserSessionObserver](idualengine20browsersessionobserver.md)
 * [IDualEngine20BrowserSession](idualengine20browsersession.md)
 * [IDualEngine20BrowserObserver](idualengine20browserobserver.md)

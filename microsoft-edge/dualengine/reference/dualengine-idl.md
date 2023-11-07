@@ -8,8 +8,6 @@ topic_type:
 api_name:
 - DualEngineInitialize
 - DualEngineReady
-- GetSpecifiedVersion
-- GetVersionedBrowserSession
 api_type:
 - DllExport
 api_loction:
@@ -47,8 +45,6 @@ api_loction:
 [VisibleEntryUpdateOperation](#visibleentryupdateoperation) | Indicates the type of operation of the VisibleListUpdateEntry.
 [DualEngineInitialize](#dualengineinitialize) | 
 [DualEngineReady](#dualengineready) | 
-[GetSpecifiedVersion](#getspecifiedversion) | 
-[GetVersionedBrowserSession](#getversionedbrowsersession) | 
 
 ## Members
 
@@ -356,12 +352,4 @@ Indicates the type of operation of the VisibleListUpdateEntry.
 #### DualEngineReady
 
 > public HRESULT APIENTRY [DualEngineReady](#dualengineready)()
-
-#### GetSpecifiedVersion
-
-> public STDMETHOD() [GetSpecifiedVersion](#getspecifiedversion)(__out UINT * version) const
-
-#### GetVersionedBrowserSession
-
-> public STDMETHOD() [GetVersionedBrowserSession](#getversionedbrowsersession)(__in UINT version, __out IUnknown ** ppSession)
 

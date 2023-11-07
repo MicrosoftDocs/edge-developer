@@ -205,7 +205,7 @@ Sets whether cookie changes are synced back to the host.
 > public HRESULT [SetReverseCookieSync](#setreversecookiesync)(BOOL fEnable)
 
 #### Parameters
-* `fEnabled` If true, the host will be notified of cookie changes by the IDualEngine20BrowserSessionObserver::ReverseSyncCookies event otherwise it is not.
+* `fEnable` If true, the host will be notified of cookie changes by the IDualEngine20BrowserSessionObserver::ReverseSyncCookies event otherwise it is not.
 
 #### SetSitePermissions
 

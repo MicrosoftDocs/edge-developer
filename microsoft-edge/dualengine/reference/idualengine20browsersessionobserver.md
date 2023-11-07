@@ -49,9 +49,9 @@ Raised when the Session Download window is requesting to navigate to a url.
 > public HRESULT [NavigateDownloadLink](#navigatedownloadlink)(BSTR url, VARIANT * PostData)
 
 #### Parameters
-* `pszUrl` The URL that should be navigated to. 
+* `url` The URL that should be navigated to. 
 
-* `postData` HTTP POST data such as form data.
+* `PostData` HTTP POST data such as form data.
 
 #### ReverseSyncCookies
 

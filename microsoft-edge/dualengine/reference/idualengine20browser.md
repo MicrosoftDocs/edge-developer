@@ -402,7 +402,7 @@ Changes the Theater mode state of the browser.
 
 In theater mode, the browsers window fills the entire screen and displays a toolbar that has a minimal set of navigational buttons. A status bar is also provided in the upper-right corner of the screen. Explorer bars, such as History and Favorites, are displayed as an autohide pane on the left edge of the screen in theater mode. 
 #### Parameters
-* `fFullScreen` If true and not currently in theater mode the browser will enter theater mode, if false and currently in theater mode the browser will exit theater mode.
+* `fFullscreen` If true and not currently in theater mode the browser will enter theater mode, if false and currently in theater mode the browser will exit theater mode.
 
 #### DualEngineSetTheaterMargins
 

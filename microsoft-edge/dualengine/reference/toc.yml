@@ -3,6 +3,12 @@
   items:
     
 +
+- name: DualEngineSessionFactory
+    
++
+  href: dualenginesessionfactory.md
+    
++
 - name: IDualEngine20BrowserSessionObserver
     
 +

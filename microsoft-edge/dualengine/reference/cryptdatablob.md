@@ -1,5 +1,5 @@
 ---
-description: 
+description: Represents an SSL Certificate.
 title: DualEngine Win32 C++ CryptDataBlob
 ms.date: 11/06/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, CryptDataBlob
@@ -16,6 +16,8 @@ api_location:
 ---
 
 # struct CryptDataBlob
+
+Represents an SSL Certificate.
 
 ## Summary
 

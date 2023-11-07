@@ -103,7 +103,7 @@ Receives events from the Browser.
 [OnNavigationToDownload](#onnavigationtodownload) | Raised when a navigation has ended in a download.
 [OnNewWindow](#onnewwindow) | Raised when a new window has been created.
 [OnPopupBlocked](#onpopupblocked) | Raised when a popup window was blocked.
-[OnPrepareToExitRegionFailed](#onpreparetoexitregionfailed) | 
+[OnPrepareToExitRegionFailed](#onpreparetoexitregionfailed) | Raised when the browser has failed to a handle a previous `DualEnginePrepareToExitRegion` call.
 [OnReadyToExitRegion](#onreadytoexitregion) | Raised when the browser has successfully handled a previous `DualEnginePrepareToExitRegion` call.
 [OnTabCrashed](#ontabcrashed) | Raised when the tab has crashed.
 [OnTabHangReported](#ontabhangreported) | Raised when the browser is hung.
@@ -160,7 +160,7 @@ Raised when the browser wants to stop hosting content and have the navigation to
 
 * `pszReferrer` The HTTP Referer request header. 
 
-* `pszHeader` Additional HTTP headers 
+* `pszHeaders` Additional HTTP headers 
 
 * `postData` HTTP POST data such as form data.
 
@@ -410,6 +410,8 @@ Raised when a popup window was blocked.
 
 #### OnPrepareToExitRegionFailed
 
+Raised when the browser has failed to a handle a previous `DualEnginePrepareToExitRegion` call.
+
 > public HRESULT [OnPrepareToExitRegionFailed](#onpreparetoexitregionfailed)()
 
 #### OnReadyToExitRegion
@@ -456,7 +458,7 @@ Raised when processing a keyboard accelerator and it is determined that browser 
 
 In this version the event is raised asynchronously and keyboard state may have changed since it was processed so the state of modifier keys are provided. 
 #### Parameters
-* `lpMsg` The win32 message for the unhandled keyboard accelerator. 
+* `pMsg` The win32 message for the unhandled keyboard accelerator. 
 
 * `isShiftDown` Indicates whether the shift key was pressed. 
 
@@ -507,7 +509,7 @@ Raised when the browser is requesting the host to navigate to a url in a new win
 
 * `pszReferrer` The HTTP Referer request header. 
 
-* `pszHeader` Additional HTTP headers 
+* `pszHeaders` Additional HTTP headers 
 
 * `postData` HTTP POST data such as form data.
 
@@ -538,7 +540,7 @@ Raised when focus is being requested to move to the host window.
 > public HRESULT [RequestHostFocus](#requesthostfocus)(DUALENGINE_FOCUSDIRECTION focusDirection, const MSG * msg)
 
 #### Parameters
-* `focusDirect` The direction that focus is moving. 
+* `focusDirection` The direction that focus is moving. 
 
 * `msg` A pointer to the message that caused the focus change.
 
@@ -616,7 +618,7 @@ Raised when the favicon has changed.
 
 * `pIconUrls` A list of favicon urls. 
 
-* `cIconUrl` The number of items in `pIconUrls`.
+* `cIconUrls` The number of items in `pIconUrls`.
 
 #### UpdateHostTitle
 
