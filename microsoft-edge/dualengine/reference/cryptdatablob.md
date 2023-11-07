@@ -1,0 +1,40 @@
+---
+description: 
+title: DualEngine Win32 C++ CryptDataBlob
+ms.date: 11/06/2023
+keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, CryptDataBlob
+topic_type: 
+- APIRef
+api_name:
+- CryptDataBlob
+- CryptDataBlob.cbData
+- CryptDataBlob.pbData
+api_type:
+- COM
+api_location:
+- ieframe.dll
+---
+
+# struct CryptDataBlob
+
+## Summary
+
+ Members                        | Descriptions
+--------------------------------|---------------------------------------------
+[cbData](#cbdata) | The number of bytes in pbData.
+[pbData](#pbdata) | A buffer containing DER encoded X509 certificate string.
+
+## Members
+
+#### cbData
+
+The number of bytes in pbData.
+
+> public DWORD [cbData](#cbdata)
+
+#### pbData
+
+A buffer containing DER encoded X509 certificate string.
+
+> public BYTE * [pbData](#pbdata)
+

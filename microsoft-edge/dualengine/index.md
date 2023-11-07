@@ -1,21 +1,35 @@
 ---
-description: WebView2 Win32 C++ Reference
-title: WebView2 Win32 C++ Reference
-ms.date: 09/07/2023
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+title: Introduction to Microsoft DualEngine
+description: Host web content in your Win32 apps with the Microsoft DualEngine interface.
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: conceptual
+ms.prod: microsoft-edge
+ms.localizationpriority: high
+ms.technology: dualengine
+ms.date: 11/06/2023
 ---
+# Introduction to Microsoft DualEngine API
 
-# Reference (WebView2 Win32 C++)
+TODO
 
-The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge \(Chromium\)](https://www.microsoftedgeinsider.com) as the rendering engine.  For more information, see [Overview of Microsoft Edge WebView2](/microsoft-edge/webview2/index)) and [Getting Started with WebView2](/microsoft-edge/webview2/gettingstarted/win32).  [ICoreWebView2](icorewebview2.md) is a great place to start learning the details of the API.
 
-## Globals
 
-* [Globals](dualengine-idl.md)
+<!-- ====================================================================== -->
+## Supported platforms
 
-## Interfaces
+The following programming environments are supported:
 
-* [IDualEngine20Browser](idualengine20browser.md)
-* [IDualEngine20BrowserObserver](idualengine20browserobserver.md)
-* [IDualEngine20BrowserSession](idualengine20browsersession.md)
-* [IDualEngine20BrowserSessionObserver](idualengine20browsersessionobserver.md)
+*  Win32 C/C++
+
+DualEngine APIs can be used on the following versions of Windows:
+
+*  Windows 11
+*  Windows 10
+*  Windows Server 2022
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Getting Started tutorials](get-started.md)

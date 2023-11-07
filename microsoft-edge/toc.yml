@@ -1635,11 +1635,20 @@
 
 #==============================================================================
 # Dual Engine
-    - name: DualEngine API
+    - name: DualEngine
       items:
-        - name: Reference
+        - name: Introduction to Microsoft DualEngine API  # existing firstchild article
           href: dualengine/index.md
+          displayName: 
+
+        - name: Getting Started with DualEngine API
+          href: dualengine/get-started.md
           displayName:
+
+        - name: DualEngine API Reference
+          href: dualengine/reference/index.md
+          displayName: functions, methods  # list relevant platforms
+
       
 
 # =============================================================================
