@@ -1,7 +1,10 @@
 ---
 description: Receives events from the Browser.
 title: DualEngine Win32 C++ IDualEngine20BrowserObserver
-ms.date: 11/06/2023
+author: MSEdgeTeam
+ms.author: edgededev
+ms.prod: microsoft-edge
+ms.date: 11/07/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserObserver
 topic_type: 
 - APIRef
@@ -80,7 +83,7 @@ Receives events from the Browser.
 [ContinueNavigationInEdge2](#continuenavigationinedge2) | Raised when the browser wants to stop hosting content and have the navigation to the url continue in the hosting process, this version provides extra information about the navigation.
 [NavigateToOffsetInEdge](#navigatetooffsetinedge) | Raised when the browser requests to navigate to a travel log entry offset.
 [OnAllButCurrentEntryDeleted](#onallbutcurrententrydeleted) | Raised when the browser has deleted all entries in its travel log except for the current entry.
-[OnAsyncHungCheckReply](#onasynchungcheckreply) | Raised when the browser processes an async hang check message, see `SetHangDetectionMessages`
+[OnAsyncHungCheckReply](#onasynchungcheckreply) | Raised when the browser processes an async hang check message, see IDualEngine20BrowserSession::SetHangDetectionMessages().
 [OnAttentionState](#onattentionstate) | Raised when requesting user attention.
 [OnBeforeUnloadAndStopComplete](#onbeforeunloadandstopcomplete) | Raised when the beforeUnload event has finished being processed.
 [OnCloseCompleted](#onclosecompleted) | Raised when the browser has closed.
@@ -103,8 +106,8 @@ Receives events from the Browser.
 [OnNavigationToDownload](#onnavigationtodownload) | Raised when a navigation has ended in a download.
 [OnNewWindow](#onnewwindow) | Raised when a new window has been created.
 [OnPopupBlocked](#onpopupblocked) | Raised when a popup window was blocked.
-[OnPrepareToExitRegionFailed](#onpreparetoexitregionfailed) | Raised when the browser has failed to a handle a previous `DualEnginePrepareToExitRegion` call.
-[OnReadyToExitRegion](#onreadytoexitregion) | Raised when the browser has successfully handled a previous `DualEnginePrepareToExitRegion` call.
+[OnPrepareToExitRegionFailed](#onpreparetoexitregionfailed) | Raised when the browser has failed to a handle a previous IDualEngine20Browser::DualEnginePrepareToExitRegion() call.
+[OnReadyToExitRegion](#onreadytoexitregion) | Raised when the browser has successfully handled a previous IDualEngine20Browser::DualEnginePrepareToExitRegion() call.
 [OnTabCrashed](#ontabcrashed) | Raised when the tab has crashed.
 [OnTabHangReported](#ontabhangreported) | Raised when the browser is hung.
 [OnUnexpectedRundown](#onunexpectedrundown) | Raised when the browser has closed unexpectedly.
@@ -160,7 +163,7 @@ Raised when the browser wants to stop hosting content and have the navigation to
 
 * `pszReferrer` The HTTP Referer request header. 
 
-* `pszHeaders` Additional HTTP headers 
+* `pszHeaders` Additional HTTP headers. 
 
 * `postData` HTTP POST data such as form data.
 
@@ -179,9 +182,14 @@ Raised when the browser has deleted all entries in its travel log except for the
 
 > public HRESULT [OnAllButCurrentEntryDeleted](#onallbutcurrententrydeleted)(VisibleListUpdateEntry * pVisibleListEntries, int cVisibleListEntries)
 
+#### Parameters
+* `pVisibleListEntries` A list containing the new travel log entries since the last update. In this case it will only have the current active entry. 
+
+* `cVisibleListEntries` The number of items in `pVisibleListEntries`
+
 #### OnAsyncHungCheckReply
 
-Raised when the browser processes an async hang check message, see `SetHangDetectionMessages`
+Raised when the browser processes an async hang check message, see IDualEngine20BrowserSession::SetHangDetectionMessages().
 
 > public HRESULT [OnAsyncHungCheckReply](#onasynchungcheckreply)(ULONG correlationId)
 
@@ -265,7 +273,7 @@ Raised when find on page results change.
 > public HRESULT [OnFindOnPageResult](#onfindonpageresult)(int iRequestID, int cMatches, int iActiveMatch)
 
 #### Parameters
-* `iRequestID` An id to correlate results with `DualEngineFindOnPage` requests. 
+* `iRequestID` An id to correlate results with IDualEngine20Browser::DualEngineFindOnPage() requests. 
 
 * `cMatches` The count of matches. 
 
@@ -355,7 +363,7 @@ Raised when a navigation has been completed.
 
 * `pVisibleListEntries` A list containing the new travel log entries since the last update. 
 
-* `cVisibleListEntries` The number of items in `pVisibleListEntries`
+* `cVisibleListEntries` The number of items in `pVisibleListEntries`. 
 
 * `dwNavFlags` Flags indicating the type of navigation that occurred. 
 
@@ -365,7 +373,7 @@ Raised when a navigation has been completed.
 
 * `pDualEngineCertificates` A list containing certificate chain for the current entry's page. 
 
-* `cCertificateChainBlobs` The number of items in `pDualEngineCertificates`
+* `cCertificateChainBlobs` The number of items in `pDualEngineCertificates`.
 
 #### OnNavigationFailed
 
@@ -410,15 +418,24 @@ Raised when a popup window was blocked.
 
 #### OnPrepareToExitRegionFailed
 
-Raised when the browser has failed to a handle a previous `DualEnginePrepareToExitRegion` call.
+Raised when the browser has failed to a handle a previous IDualEngine20Browser::DualEnginePrepareToExitRegion() call.
 
 > public HRESULT [OnPrepareToExitRegionFailed](#onpreparetoexitregionfailed)()
 
 #### OnReadyToExitRegion
 
-Raised when the browser has successfully handled a previous `DualEnginePrepareToExitRegion` call.
+Raised when the browser has successfully handled a previous IDualEngine20Browser::DualEnginePrepareToExitRegion() call.
 
 > public HRESULT [OnReadyToExitRegion](#onreadytoexitregion)(REFGUID guidClonedTabId, ULONG ulCurrentEntryId, VisibleListUpdateEntry * pVisibleListEntriesComplete, int cVisibleListEntriesComplete)
+
+#### Parameters
+* `guidClonedTabId` The GUID of the tab recovery data file backing the exited region. 
+
+* `ulCurrentEntryId` The travel log entry id for the page that raised this event. 
+
+* `pVisibleListEntriesComplete` A list containing the new travel log entries since the last update. 
+
+* `cVisibleListEntriesComplete` The number of items in `pVisibleListEntriesComplete`
 
 #### OnTabCrashed
 
@@ -501,7 +518,7 @@ Raised when the browser is requesting the host to navigate to a url in a new win
 > public HRESULT [OpenURLInEdge2](#openurlinedge2)(LPCWSTR pszUrl, const DualEngineNewWindowOptions * options, ULONG ulCookieSyncVersion, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
 #### Parameters
-* `pszUrl` The url to navigate to 
+* `pszUrl` The url to navigate to. 
 
 * `options` Options to apply to the navigation. 
 

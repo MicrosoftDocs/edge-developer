@@ -1,7 +1,10 @@
 ---
 description: Factory object for DualEngine interfaces.
 title: DualEngine Win32 C++ DualEngineSessionFactory
-ms.date: 11/06/2023
+author: MSEdgeTeam
+ms.author: edgededev
+ms.prod: microsoft-edge
+ms.date: 11/07/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, DualEngineSessionFactory
 topic_type: 
 - APIRef
@@ -63,7 +66,7 @@ Called to unlock the DualEngine interface.
 > public STDMETHOD() [TryUnlockFeature](#tryunlockfeature)(PCWSTR token, PCWSTR attestation)
 
 > [!WARNING]<br/>
-> This MUST be called successfully before any other methonds on this interface can be called. Equivalent to Windows::ApplicationModel::LimitedAccessFeatures::TryUnlockFeature except it checks the adapter dll for the identity resource instead of the process exe. 
+> This MUST be called successfully before any other methods on this interface can be called. Equivalent to Windows::ApplicationModel::LimitedAccessFeatures::TryUnlockFeature except it checks the adapter dll for the identity resource instead of the process exe. 
 #### Parameters
 * `token` The LAF token provided by Microsoft. 
 

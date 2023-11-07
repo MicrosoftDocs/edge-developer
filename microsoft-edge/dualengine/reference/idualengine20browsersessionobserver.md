@@ -1,7 +1,10 @@
 ---
 description: Receives events from the Session.
 title: DualEngine Win32 C++ IDualEngine20BrowserSessionObserver
-ms.date: 11/06/2023
+author: MSEdgeTeam
+ms.author: edgededev
+ms.prod: microsoft-edge
+ms.date: 11/07/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserSessionObserver
 topic_type: 
 - APIRef
@@ -59,7 +62,7 @@ Raised when a cookie is set in the Session if reverse cookie sync is enabled.
 
 > public HRESULT [ReverseSyncCookies](#reversesynccookies)(const DualEngineCookie * pCookies, DWORD cCookies, ULONG ulCookieSyncVersion)
 
-See IDualEngine20BrowserSession::SetReverseCookieSync. 
+See IDualEngine20BrowserSession::SetReverseCookieSync(). 
 #### Parameters
 * `pCookies` The cookies that were set. 
 

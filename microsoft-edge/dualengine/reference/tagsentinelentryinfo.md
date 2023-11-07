@@ -1,7 +1,10 @@
 ---
 description: Represents the position of the current region in the travel log.
 title: DualEngine Win32 C++ tagSentinelEntryInfo
-ms.date: 11/06/2023
+author: MSEdgeTeam
+ms.author: edgededev
+ms.prod: microsoft-edge
+ms.date: 11/07/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, tagSentinelEntryInfo
 topic_type: 
 - APIRef

@@ -1,7 +1,10 @@
 ---
 description: Represents an Internet Explorer tab.
 title: DualEngine Win32 C++ IDualEngine20Browser
-ms.date: 11/06/2023
+author: MSEdgeTeam
+ms.author: edgededev
+ms.prod: microsoft-edge
+ms.date: 11/07/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20Browser
 topic_type: 
 - APIRef
@@ -63,7 +66,7 @@ Represents an Internet Explorer tab.
 --------------------------------|---------------------------------------------
 [DualEngineBrowserCommitted](#dualenginebrowsercommitted) | Notify the browser that it has been committed and is no longer speculative.
 [DualEngineClose](#dualengineclose) | Close the browser instance.
-[DualEngineDeleteTabRecoveryData](#dualenginedeletetabrecoverydata) | Deletes tab recover data.
+[DualEngineDeleteTabRecoveryData](#dualenginedeletetabrecoverydata) | Deletes tab recovery data.
 [DualEngineDoOnBeforeUnloadAndStop](#dualenginedoonbeforeunloadandstop) | Stops any navigations that are in progress and runs the onBeforeUnload handlers.
 [DualEngineDPIChanged](#dualenginedpichanged) | Notify that DPI has changed and page layout should be recalculated.
 [DualEngineEnableCaretMode](#dualengineenablecaretmode) | Enables or disables Caret Browsing mode.
@@ -120,7 +123,7 @@ Close the browser instance.
 
 #### DualEngineDeleteTabRecoveryData
 
-Deletes tab recover data.
+Deletes tab recovery data.
 
 > public HRESULT [DualEngineDeleteTabRecoveryData](#dualenginedeletetabrecoverydata)(REFGUID guidTabId)
 
@@ -170,7 +173,7 @@ Finds an instance of text on the page.
 
 * `fFindNext` Indicates whether the selection should move to the next instance the find text, true advances the selection and false does not. 
 
-* `fForward` Indicates the direction the selection should me, true moves forward and false moves backwards
+* `fForward` Indicates the direction the selection should me, true moves forward and false moves backwards.
 
 #### DualEngineForceClose
 
@@ -413,7 +416,7 @@ Adjusts the top margin of the browser window when it is being displayed in theat
 #### Parameters
 * `fTheaterShowing` Indicates whether the host is currently in theater mode. 
 
-* `yTheaterThreshold` The size in pixels of the margin between the top of the screen and the fullscreen browser window
+* `yTheaterThreshold` The size in pixels of the margin between the top of the screen and the fullscreen browser window.
 
 #### DualEngineSetVisible
 

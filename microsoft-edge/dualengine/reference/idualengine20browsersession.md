@@ -1,7 +1,10 @@
 ---
 description: Represents an Internet Explorer process session.
 title: DualEngine Win32 C++ IDualEngine20BrowserSession
-ms.date: 11/06/2023
+author: MSEdgeTeam
+ms.author: edgededev
+ms.prod: microsoft-edge
+ms.date: 11/07/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserSession
 topic_type: 
 - APIRef
@@ -178,7 +181,7 @@ Sets hang detection messages that will be sent to the Session by the host to det
 #### Parameters
 * `uiSyncHungCheckMsg` The window message id of the message that the host will synchronously wait on to be handled. 
 
-* `uiAsyncHungCheckMsg` The window message id of the message that the host will asynchronously wait on. Browsers signal the host by calling IDualEngine20BrowserObserver::OnAsyncHungCheckReply
+* `uiAsyncHungCheckMsg` The window message id of the message that the host will asynchronously wait on. Browsers signal the host by calling IDualEngine20BrowserObserver::OnAsyncHungCheckReply()
 
 #### SetHostIntranetInInternetExplorer
 
@@ -205,7 +208,7 @@ Sets whether cookie changes are synced back to the host.
 > public HRESULT [SetReverseCookieSync](#setreversecookiesync)(BOOL fEnable)
 
 #### Parameters
-* `fEnable` If true, the host will be notified of cookie changes by the IDualEngine20BrowserSessionObserver::ReverseSyncCookies event otherwise it is not.
+* `fEnable` If true, the host will be notified of cookie changes by the IDualEngine20BrowserSessionObserver::ReverseSyncCookies() event otherwise it is not.
 
 #### SetSitePermissions
 
