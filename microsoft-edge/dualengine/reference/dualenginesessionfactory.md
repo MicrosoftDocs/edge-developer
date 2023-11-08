@@ -65,7 +65,7 @@ Called to unlock the DualEngine interface.
 
 > public STDMETHOD() [TryUnlockFeature](#tryunlockfeature)(PCWSTR token, PCWSTR attestation)
 
-> [!WARNING]<br/>
+> [!IMPORTANT]
 > This MUST be called successfully before any other methods on this interface can be called. Equivalent to Windows::ApplicationModel::LimitedAccessFeatures::TryUnlockFeature except it checks the adapter dll for the identity resource instead of the process exe. 
 #### Parameters
 * `token` The LAF token provided by Microsoft. 

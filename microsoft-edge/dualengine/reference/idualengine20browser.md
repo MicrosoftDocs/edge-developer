@@ -149,7 +149,7 @@ Enables or disables Caret Browsing mode.
 > public HRESULT [DualEngineEnableCaretMode](#dualengineenablecaretmode)(BOOL fEnable)
 
 #### Parameters
-* `fEnable` Specifies whether caret browsing should be enabled. <br/>
+* `fEnable` Specifies whether caret browsing should be enabled. 
 
 #### DualEngineExecNavigationCommand
 
@@ -376,9 +376,9 @@ Changes the fullscreen state of the media playing in the browser.
 
 > public HRESULT [DualEngineSetMediaFullscreen](#dualenginesetmediafullscreen)(BOOL fFullscreen)
 
-> [!WARNING]<br/>
-> Despite its name this function only exits fullscreen and will do nothing if no media is fullscreen. Passing `true` into the function is always a no-op.
-
+> [!WARNING]
+> Despite its name this function only exits fullscreen and will do nothing if no media is fullscreen.
+> Passing `true` into the function is always a no-op.
 #### Parameters
 * `fFullscreen` If false fullscreen will be exited if media is fullscreen, if true nothing happens.
 

@@ -465,7 +465,7 @@ Raised when processing a keyboard accelerator and it is determined that browser 
 > public HRESULT [OnUnhandledKeyboardAccelerator](#onunhandledkeyboardaccelerator)(LPMSG lpMsg)
 
 #### Parameters
-* `lpMsg` The win32 message for the unhandled keyboard accelerator. <br/>
+* `lpMsg` The win32 message for the unhandled keyboard accelerator. 
 
 #### OnUnhandledKeyboardAcceleratorAsync
 

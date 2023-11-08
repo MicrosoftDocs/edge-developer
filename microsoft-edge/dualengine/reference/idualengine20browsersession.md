@@ -286,7 +286,7 @@ Shows the Internet Explorer download window.
 
 Sends cookie data to the session process.
 
-> public HRESULT [SyncCookies](#synccookies)(const [DualEngineCookie](C:\Edge\src\out\docs\markdown\dualenginecookie.md) * pCookies, DWORD cCookies)
+> public HRESULT [SyncCookies](#synccookies)(const [DualEngineCookie](dualenginecookie.md) * pCookies, DWORD cCookies)
 
 #### Parameters
 * `pCookies` An array of cookies to be sent to session. 
