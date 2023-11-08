@@ -971,32 +971,6 @@ WebView2 provides functionality to handle the JavaScript function `window.open()
 ---
 
 
-#### todo: add link to the above tab-set?  Nov 2023 incoming
-
-* Added source frame info to the `NewWindowRequested` event arguments, to identify the source of the request:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2NewWindowRequestedEventArgs` Class:
-    * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs.originalsourceframeinfo)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2NewWindowRequestedEventArgs` Class:
-    * [CoreWebView2NewWindowRequestedEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2newwindowrequestedeventargs#originalsourceframeinfo)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2NewWindowRequestedEventArgs3](/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs3)
-    * [ICoreWebView2NewWindowRequestedEventArgs3::get_OriginalSourceFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs3#get_originalsourceframeinfo)<!--no put-->
-
----
-
-
-
-
-
-
 <!-- ------------------------------ -->
 #### Close window
 
@@ -1555,6 +1529,8 @@ The `CustomSchemeRegistration` allows registration of custom schemes in WebView2
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2CustomSchemeRegistration Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration)
+* `CoreWebView2EnvironmentOptions` Class:
+    * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#customschemeregistrations)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -1563,42 +1539,6 @@ The `CustomSchemeRegistration` allows registration of custom schemes in WebView2
    * [ICoreWebView2EnvironmentOptions4::GetCustomSchemeRegistrations method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4#getcustomschemeregistrations)
    * [ICoreWebView2EnvironmentOptions4::SetCustomSchemeRegistrations method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4#setcustomschemeregistrations)
    
----
-
-
-#### todo: add links to the above tab-set?  Nov 2023 incoming
-
-* For WinRT, options have been added to manage custom scheme registration when creating a `CoreWebView2Environment`:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2CustomSchemeRegistration` Class:
-    * [CoreWebView2CustomSchemeRegistration.AllowedOrigins Property](/dotnet/api/microsoft.web.webview2.core.corewebview2customschemeregistration.allowedorigins)
-    * [CoreWebView2CustomSchemeRegistration.SchemeName Property](/dotnet/api/microsoft.web.webview2.core.corewebview2customschemeregistration.schemename)
-
-* `CoreWebView2EnvironmentOptions` Class:
-   * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.customschemeregistrations)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2CustomSchemeRegistration` Class:
-    * [CoreWebView2CustomSchemeRegistration.AllowedOrigins Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration#allowedorigins)
-    * [CoreWebView2CustomSchemeRegistration.SchemeName Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration#schemename)
-
-* `CoreWebView2EnvironmentOptions` Class:
-    * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#customschemeregistrations)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `ICoreWebView2CustomSchemeRegistration`:
-    * [ICoreWebView2CustomSchemeRegistration::get_SchemeName](/microsoft-edge/webview2/reference/win32/icorewebview2customschemeregistration#get_schemename)<!--no put-->
-    * [ICoreWebView2CustomSchemeRegistration::GetAllowedOrigins](/microsoft-edge/webview2/reference/win32/icorewebview2customschemeregistration#getallowedorigins)
-    * [ICoreWebView2CustomSchemeRegistration::SetAllowedOrigins](/microsoft-edge/webview2/reference/win32/icorewebview2customschemeregistration#setallowedorigins)
-
-* [ICoreWebView2EnvironmentOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4)
-   * [ICoreWebView2EnvironmentOptions4::GetCustomSchemeRegistrations](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4#getcustomschemeregistrations)
-   * [ICoreWebView2EnvironmentOptions4::SetCustomSchemeRegistrations](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4#setcustomschemeregistrations)
-
 ---
 
 
