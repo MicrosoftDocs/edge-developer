@@ -127,7 +127,7 @@ To have DevTools automatically open whenever you open a new tab in the browser:
    bash shell on Linux:
    
    ```bash
-   microsoft-edge-dev --auto-open-devtools-for-tabs
+   microsoft-edge --auto-open-devtools-for-tabs
    ```
 
 ###### Disabling startup boost
@@ -590,7 +590,7 @@ You can also change the settings of advanced features, such as:
 <!-- ====================================================================== -->
 ## Trying experimental features
 
-DevTools provides new potential features as _experiments_ in DevTools.  You can turn each experiment on or off.  To see the full list of experimental features, in DevTools, select **Settings** (the gear icon), and then select **Experiments**.
+The DevTools team provides new features as _experiments_ in DevTools.  You can turn each of the experiments on or off.  To see the full list of [Experimental features in Microsoft Edge DevTools](experimental-features/index.md), in DevTools, select **Settings** (![Settings icon](./overview-images/settings-gear-icon-light-theme.png)), and then select **Experiments**.
 
 To preview the latest features coming to DevTools, download [Microsoft Edge Canary](https://www.microsoft.com/edge/download/insider), which builds nightly.
 

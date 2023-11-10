@@ -147,7 +147,7 @@
         - name: Experimental features
           items:
 
-            - name: Experimental features
+            - name: Experimental features in Microsoft Edge DevTools
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: Experimental features, settings
 
@@ -1349,9 +1349,23 @@
               href: webview2/how-to/debug-visual-studio.md
               displayName: Debug WebView2 apps with Visual Studio  # top-of-page title
 
-            - name: Remote debugging
-              href: webview2/how-to/remote-debugging.md
-              displayName: Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge  # top-of-page title
+            - name: Remote debugging WebView2 WinUI 2 (UWP) apps
+              items: 
+                - name: Remote debugging WebView2 WinUI 2 (UWP) apps
+                  href: webview2/how-to/remote-debugging.md
+                  displayName: remotely debug
+
+                - name: Remote debugging desktop WebView2 WinUI 2 (UWP) apps
+                  href: webview2/how-to/remote-debugging-desktop.md
+                  displayName: remotely debug, Remote Tools for Microsoft Edge
+
+                - name: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps
+                  href: webview2/how-to/remote-debugging-hololens.md
+                  displayName: remotely debug, Remote Tools for Microsoft Edge
+
+                - name: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
+                  href: webview2/how-to/remote-debugging-xbox.md
+                  displayName: remotely debug
 
 # -----------------------------------------------------------------------------
         - name: Architecture

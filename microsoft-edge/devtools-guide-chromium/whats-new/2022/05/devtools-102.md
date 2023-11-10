@@ -146,7 +146,7 @@ In the **Settings** > **Experiments** page, each experiment now has a **Help** (
 
 ![Help icons for Settings > Experiments checkboxes](devtools-102-images/settings-experiments-help-icons.png)
 
-To get more information about an experimental feature, click the corresponding **Help** (![Help icon](devtools-102-images/settings-experiments-help-icon.png)) button.  The **Help** button displays the relevant section of the [Experimental features](../../../experimental-features/index.md) article.
+To get more information about an experimental feature, click the corresponding **Help** (![Help icon](devtools-102-images/settings-experiments-help-icon.png)) button.  The **Help** button displays the relevant section of the [Experimental features in Microsoft Edge DevTools](../../../experimental-features/index.md) article.
 
 
 <!-- ====================================================================== -->

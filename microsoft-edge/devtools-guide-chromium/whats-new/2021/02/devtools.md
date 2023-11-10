@@ -69,7 +69,7 @@ Note: As of May 2022, tooltips aren't supported from the **Activity Bar**.
 <!-- ![Click the Help (?) icon in the Activity Bar to display tooltips](../../media/2021/02/focus-mode-and-tooltips-help.png) -->
 <!--
 See also:
-* [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features_.
+* [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features in Microsoft Edge DevTools_.
 -->
 
 
@@ -77,7 +77,6 @@ See also:
 ## Customize keyboard shortcuts in Settings
 
 <!-- Title: Change keyboard shortcuts in Settings  -->
-<!-- TODO:  Rachel's feedback is about the fact that this experimental feature is turned on by default, may have separate section in What's New for experimental features)  -->
 <!-- Subtitle: Make DevTools work better for you by creating new keyboard shortcuts for any action in the DevTools.  -->
 
 You can now customize the keyboard shortcut for any action in the DevTools.
