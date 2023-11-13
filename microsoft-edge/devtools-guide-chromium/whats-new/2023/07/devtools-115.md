@@ -15,17 +15,17 @@ ms.date: 08/18/2023
 <!-- ====================================================================== -->
 ## Improvements for connecting DevTools to Azure Artifacts symbol server
 
-<!-- Subtitle: You can now use Azure Active Directory for authentication instead of Personal Access Tokens (PATs). You can connect to multiple symbol servers and filter which sourcemaps you want DevTools to fetch. -->
+<!-- Subtitle: You can now use Microsoft Entra ID for authentication instead of Personal Access Tokens (PATs). You can connect to multiple symbol servers and filter which sourcemaps you want DevTools to fetch. -->
 
-In Microsoft Edge 115, it's easier and more customizable to connect DevTools to Azure Artifacts symbol server.  In previous versions of Microsoft Edge, to authenticate to the symbol server, you had to generate Personal Access Tokens (PATs) in Azure DevOps and then paste them into DevTools. Now, as long as you're logged into Microsoft Edge using a work account, you can connect to the symbol server by using Azure Active Directory.
+In Microsoft Edge 115, it's easier and more customizable to connect DevTools to Azure Artifacts symbol server.  In previous versions of Microsoft Edge, to authenticate to the symbol server, you had to generate Personal Access Tokens (PATs) in Azure DevOps and then paste them into DevTools. Now, as long as you're logged into Microsoft Edge using a work account, you can connect to the symbol server by using Microsoft Entra ID.
 <!-- re: work account, possibly:
-enterprise customers who are signed into Microsoft Edge with a Microsoft Azure Active Directory (AAD) account
+enterprise customers who are signed into Microsoft Edge with a Microsoft Entra ID account
 a Microsoft account (MSA) that's a work account
 -->
 
 Additionally, you can now connect to multiple symbol servers, in case you need to fetch sourcemaps from different Azure DevOps organizations. You can also filter which sourcemaps you want DevTools to fetch from the symbol server, by specifying the sourcemap URLs in an inclusion or exclusion list.
 
-![Connecting to symbol server using Azure Active Directory from DevTools settings](./devtools-115-images/aad-symbol-server.png)
+![Connecting to symbol server using Microsoft Entra ID from DevTools settings](./devtools-115-images/entra-id-symbol-server.png)
 
 The message **An Azure DevOps organization must be selected** means double-click the organization, or click it and then press **Enter**.
 
