@@ -288,7 +288,7 @@ How does a page look and behave when some of the page resources aren't available
 
 1. Type `block`, select **Show Network request blocking**, and then press **Enter**:
 
-   ![Show Network Request Blocking](./index-images/network-glitch-network-cli-block.png)
+   ![Show Network Request Blocking](./index-images/command-menu-block-requests.png)
 
 1. Click **Add Pattern** (![Add Pattern](./index-images/add-icon.png)), then type `main.css`, and then click **Add**:
 

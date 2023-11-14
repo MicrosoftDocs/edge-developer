@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/27/2023
+ms.date: 11/13/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -82,8 +82,10 @@ In the following example, the viewport width is set to `400` and the height is s
 If you need more space on your screen, you can change where DevTools is docked in the browser window.  See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](/microsoft-edge/devtools-guide-chromium/customize/placement).
 
 
-<!-- ---------- -->
-###### Show media queries
+<!-- ------------------------------ -->
+#### Show media queries
+
+If you have defined media queries on your page, jump to the viewport dimensions where those media queries take effect by showing media query breakpoints above your viewport.  Select **More options** (![More Options icon](./index-images/more-options-icon.png)) > **Show media queries**.
 
 A CSS _media query_ defines a breakpoint, which is a browser viewport width.  A webpage can define a responsive layout for each breakpoint (viewport width) that the webpage's CSS defines.
 
@@ -111,8 +113,28 @@ See also:
 * [Debug media queries](../css/index.md#debug-media-queries) in _Get started viewing and changing CSS_.
 
 
-<!-- ---------- -->
-###### Set the device type
+<!-- ------------------------------ -->
+#### Set device pixel ratio
+
+[Device pixel ratio (DPR)](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio) is the ratio between physical pixels on the hardware screen and logical (CSS) pixels.  In other words, DPR tells the browser how many screen pixels to use to draw a CSS pixel.  Microsoft Edge uses the DPR value when drawing on HiDPI (High Dots Per Inch) displays.
+
+To set a device pixel ratio:
+
+1. Select **More options** (![The More Options icon](./index-images/more-options-icon.png)) > **Add device pixel ratio**:
+
+   ![Add device pixel ratio](./index-images/add-device-pixel-ratio.png)
+
+   A **DPR** dropdown list is added at the top of the viewport.
+
+1. In the **DPR** dropdown list, select a DPR value (**1**, **2**, or **3**).  The default value is **2**.
+
+To remove the device pixel ratio:
+
+* Select **More options** (![The More Options icon.](./index-images/more-options-icon.png)) > **Remove device pixel ratio**.
+
+
+<!-- ------------------------------ -->
+#### Set the device type
 
 To simulate a mobile device or desktop device, use the **Device Type** list:
 
@@ -146,8 +168,8 @@ To simulate the dimensions of a specific mobile device, select the device from t
 ![The Device list](./index-images/device-toolbar-device-list.png)
 
 
-<!-- ---------- -->
-###### Rotate the viewport to landscape orientation
+<!-- ------------------------------ -->
+#### Rotate the viewport to landscape orientation
 
 Test your webpage in landscape orientation.
 
@@ -160,10 +182,10 @@ Test your webpage in landscape orientation.
 See also [Set orientation](#set-orientation), below.
 
 
-<!-- ---------- -->
-###### Show device frame
+<!-- ------------------------------ -->
+#### Show device frame
 
-To simulate the dimensions of a specific mobile device, open **More options** and then select **Show device frame** to show the physical device frame around the viewport:
+To simulate the dimensions of a specific mobile device, click **More options** (![The More Options button.](./index-images/more-options-icon.png)), and then select **Show device frame** to show the physical device frame around the viewport:
 
 ![The Show Device Frame menu item](./index-images/device-toolbar-option-show-device-frame.png)
 
@@ -174,8 +196,8 @@ The device frame for the iPhone 6/7/8:
 ![The device frame for the iPhone 6](./index-images/device-toolbar-options-device-frame-iphone-6.png)
 
 
-<!-- ---------- -->
-###### Add a custom mobile device
+<!-- ------------------------------ -->
+#### Add a custom mobile device
 
 If the mobile device option that you need isn't included on the default list, you can add a custom device.
 
@@ -197,11 +219,11 @@ To add a custom device:
 <!-- ------------------------------ -->
 #### Show rulers
 
-To measure screen dimensions, you can use rulers to measure the screen size in pixels.
+If you need to measure screen dimensions, you can use rulers to measure the screen size in pixels.
 
 To display rulers above and to the left of your viewport:
 
-*  Select **More options** > **Show rulers**:
+*  Select **More options** (![The More Options icon](./index-images/more-options-icon.png)) > **Show rulers**:
 
    ![The Show Rulers menu item](./index-images/device-toolbar-options-show-rulers.png)
 
@@ -216,6 +238,16 @@ To display rulers above and to the left of your viewport:
 To test the look and feel of your page at multiple zoom levels, use the **Zoom** list to zoom in or out.
 
 ![The Zoom list](./index-images/device-toolbar-zoom.png)
+
+
+<!-- ------------------------------ -->
+#### Capture a screenshot
+
+To capture a screenshot of what you currently see in the viewport, click **More options** (![The More Options icon](./index-images/more-options-icon.png)) > **Capture screenshot**:
+
+![The Capture screenshot option in the More options menu](./index-images/capture-screenshot.png)
+
+To capture a screenshot of the whole page including the content that isn't currently visible in the viewport, select **Capture a full size screenshot** from the same menu.
 
 
 <!-- ====================================================================== -->
@@ -274,15 +306,16 @@ You can also set network throttling from within the **Performance** tool:
 <!-- ====================================================================== -->
 ## Emulate sensors
 
+Use the **Sensors** tab to override geolocation, simulate device orientation, force touch, and emulate idle state.
+
+The sections below provide a quick look on how to override geolocation and set device orientation.
+<!-- For a complete list of features, see [Emulate device sensors](). -->
+
+
+<!-- ------------------------------ -->
+#### Override geolocation
+
 Use the **Sensors** tool to override geolocation and simulate device orientation.
-
-<!--
-Use the **Sensors** tool to override geolocation, simulate device orientation, force touch, and emulate idle state.
-
-The sections below provide a quick look on how to override geolocation and set device orientation.  For a complete list of features, see [Sensors: Emulate device sensors]().
-
-todo: compare https://developer.chrome.com/docs/devtools/sensors/
--->
 
 
 <!-- ------------------------------ -->
