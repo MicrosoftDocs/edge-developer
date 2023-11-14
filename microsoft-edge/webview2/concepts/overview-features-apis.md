@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/28/2023
+ms.date: 11/06/2023
 ---
 # Overview of WebView2 features and APIs
 
@@ -970,6 +970,7 @@ WebView2 provides functionality to handle the JavaScript function `window.open()
 
 ---
 
+
 <!-- ------------------------------ -->
 #### Close window
 
@@ -1528,6 +1529,8 @@ The `CustomSchemeRegistration` allows registration of custom schemes in WebView2
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2CustomSchemeRegistration Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration)
+* `CoreWebView2EnvironmentOptions` Class:
+    * [CoreWebView2EnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#customschemeregistrations)
 
 ##### [Win32/C++](#tab/win32cpp)
 

@@ -22,7 +22,7 @@ A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.  
 
 To create a Partner Center account that can publish Microsoft Edge extensions, you must have a Microsoft account (MSA), either by creating one directly or by using your personal GitHub account credentials.
 
-After your Partner Center account is able to publish Microsoft Edge extensions, you can link the Partner Center account to an Azure Active Directory (Azure AD) tenant.  A linked Active Directory tenant enables the added users to sign in to your Partner Center developer account by using their work accounts.
+After your Partner Center account is able to publish Microsoft Edge extensions, you can link the Partner Center account to an Microsoft Entra tenant.  A linked Microsoft Entra tenant enables the added users to sign in to your Partner Center developer account by using their work accounts.
 
 Different programs on Partner Center require different types of accounts:
 
@@ -46,7 +46,7 @@ First, determine whether you have a Partner Center account.  If you have a Partn
 
 1.  Use a Microsoft account (MSA) to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer](create-dev-account.md). As mentioned in that article, you can use your GitHub account to create a Microsoft account (MSA).
 
-Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
+Next, do [Step 2: Associate Microsoft Entra ID with your Microsoft Edge Program account](#step-2-associate-microsoft-entra-id-with-your-microsoft-edge-program-account) below.
 
 
 #### If the Primary Owner of your Partner Center account isn't a Microsoft account (MSA)
@@ -63,7 +63,7 @@ To determine whether the Primary Owner of your Partner Center account is a Micro
 
 1. Use a personal Microsoft account (MSA) (not a work Microsoft account (MSA) or a school Microsoft account (MSA)) to register with the Microsoft Edge program, by following the steps in [Register as a Microsoft Edge extension developer](create-dev-account.md).
 
-   Next, go to [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
+   Next, go to [Step 2: Associate Microsoft Entra ID with your Microsoft Edge Program account](#step-2-associate-microsoft-entra-id-with-your-microsoft-edge-program-account) below.
 
 
 #### If the Primary Owner of your Partner Center account is a Microsoft account (MSA)
@@ -80,40 +80,40 @@ To determine whether the Primary Owner of your Partner Center account is a Micro
 
 1. Have the Primary Owner of the Partner Center developer account register for the Microsoft Edge program by following the steps in [Register as a Microsoft Edge extension developer](create-dev-account.md).
 
-   Next, go to [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account).
+   Next, go to [Step 2: Associate Microsoft Entra ID with your Microsoft Edge Program account](#step-2-associate-microsoft-entra-id-with-your-microsoft-edge-program-account).
 
 
 <!-- ====================================================================== -->
-## Step 2: Associate Azure Active Directory with your Microsoft Edge Program account
+## Step 2: Associate Microsoft Entra ID with your Microsoft Edge Program account
 
-To enable managing Microsoft Edge extensions, you'll link your Azure Active Directory tenants (Azure AD tenants) to your Microsoft Edge Program account.  You can use Azure Active Directory to add users to your Microsoft Edge Program account and manage those users in that account.  You can add individual users, groups of users, or Azure Active Directory applications.
+To enable managing Microsoft Edge extensions, you'll link your Microsoft Entra tenants to your Microsoft Edge Program account.  You can use Microsoft Entra ID to add users to your Microsoft Edge Program account and manage those users in that account.  You can add individual users, groups of users, or Microsoft Entra ID applications.
 
-To be able to add users to your Microsoft Edge Program account, and to manage the users in that account, you must first associate your Microsoft Edge Program account with your organization's Azure Active Directory tenant (Azure AD tenant).  If your organization already uses Office 365 or other business services from Microsoft, you already have an Azure AD tenant.  Otherwise, you can create a new Azure AD tenant for free.
+To be able to add users to your Microsoft Edge Program account, and to manage the users in that account, you must first associate your Microsoft Edge Program account with your organization's Microsoft Entra tenant.  If your organization already uses Office 365 or other business services from Microsoft, you already have a Microsoft Entra tenant.  Otherwise, you can create a new Microsoft Entra tenant for free.
 
-To create an AD tenant, see [Create a brand new Azure AD to associate with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account) in the article _Associate Azure Active Directory with your Partner Center account_.
+To create an AD tenant, see [Create a new Microsoft Entra tenant to associate with your Partner Center account](/windows/apps/publish/partner-center/create-new-azure-ad-tenant).
 
-Also see [Associate Azure Active Directory with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center), in the Windows UWP documentation.  Associating an Azure AD tenant with a Microsoft Edge Program account at Partner Center works the same way as associating a tenant with the Windows apps developer program.
+Also see [Associate an existing Microsoft Entra tenant with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center), in the Windows UWP documentation.  Associating a Microsoft Entra tenant with a Microsoft Edge Program account at Partner Center works the same way as associating a tenant with the Windows apps developer program.
 
 > [!IMPORTANT]
-> If you added users after associating your Azure AD tenant with your Microsoft account on Partner Center, note that changing user roles or permissions isn't currently supported.  However, you can continue to add as many users as you require and use the filter option of the [user management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) section to locate admins of specific roles.
+> If you added users after associating your Microsoft Entra tenant with your Microsoft account on Partner Center, note that changing user roles or permissions isn't currently supported.  However, you can continue to add as many users as you require and use the filter option of the [user management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) section to locate admins of specific roles.
 
 
 <!-- ====================================================================== -->
-## Step 3: Add users, groups, and Azure Active Directory applications to your account
+## Step 3: Add users, groups, and Microsoft Entra ID applications to your account
 
-After you've set up the Azure Active Directory association, you can add users at **Account settings** > **User management** on the Partner Center.  Each user has full access the extensions available in the program.  You can also add groups of users, or add Azure Active Directory applications, to grant them access to your Partner Center account.
+After you've set up the Microsoft Entra ID association, you can add users at **Account settings** > **User management** on the Partner Center.  Each user has full access the extensions available in the program.  You can also add groups of users, or add Microsoft Entra ID applications, to grant them access to your Partner Center account.
 
-For more information about adding users, see [Add users, groups, and Azure AD applications](/windows/uwp/publish/add-users-groups-and-azure-ad-applications) in the Windows UWP documentation.
+For more information about adding users, see [Users, groups, and applications in Microsoft Entra ID](/windows/uwp/publish/add-users-groups-and-azure-ad-applications) in the Windows UWP documentation.
 
 
 <!-- ====================================================================== -->
 ## Contact us
 
-If you need help or assistance with associating your Azure Active Directory account or other related queries, [Contact Microsoft Edge extensions support](contact-extensions-team.md).
+If you need help or assistance with associating your Microsoft Entra ID account or other related queries, [Contact Microsoft Edge extensions support](contact-extensions-team.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Azure Active Directory (Azure AD) tenants in the Active Directory documentation.
+*  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Microsoft Entra tenants in the Microsoft Entra ID documentation.
 <!-- contrasts "Work and school accounts, or personal Microsoft accounts" -->
