@@ -11,6 +11,8 @@ ms.date: 08/18/2023
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](includes/edge-whats-new-note.md)]
 
+What's New articles correspond to historical releases of Microsoft Edge, and are not updated over time.  References to "new features" and "experiments" might become outdated as new versions of Microsoft Edge are released.
+
 <!-- maintenance notes:
 * add the new page to toc.yml
 * move eleventh oldest link into whats-new-archive.md
