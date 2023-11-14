@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 08/03/2023
+ms.date: 11/13/2023
 ---
 # Re-engage users with push messages
 
@@ -101,6 +101,8 @@ function urlBase64ToUint8Array(base64String) {
 
 The VAPID key that's mentioned in the previous code snippet is a public key that's used to identify the server that sends the push messages and encrypt the push message payload.  See [Step 3 - Send push messages from your server](#step-3---send-push-messages-from-your-server) for more information about VAPID keys.
 
+The `userVisibleOnly` configuration option of the `registration.pushManager.subscribe` function must be present and set to `true`.  This option indicates that the push message must be displayed to the user.  Microsoft Edge doesn't support push messages that aren't displayed to the user.
+
 
 <!-- ====================================================================== -->
 ## Step 3 - Send push messages from your server
@@ -138,6 +140,9 @@ self.addEventListener('push', event => {
   }
 });
 ```
+
+If your PWA doesn't display a notification when a push message is received, Microsoft Edge displays a generic notification that indicates that a push message was received.
+
 
 <!-- ====================================================================== -->
 ## See also
