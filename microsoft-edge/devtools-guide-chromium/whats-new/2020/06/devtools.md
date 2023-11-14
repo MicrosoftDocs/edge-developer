@@ -99,7 +99,7 @@ Chromium issue [#1070378](https://crbug.com/1070378)
 
 See also:
 * [webhint extension for Visual Studio Code](../../../../test-and-automation/webhint.md)
-* [Enable webhint](../../../experimental-features/index.md#enable-webhint) in _Experimental features_
+* [Enable webhint](../../../experimental-features/index.md#enable-webhint) in _Experimental features in Microsoft Edge DevTools_
 
 
 <!-- ====================================================================== -->
@@ -324,7 +324,7 @@ Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead o
 The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints are represented by a red circle, just like [Visual Studio Code](https://code.visualstudio.com/) and [Visual Studio](https://visualstudio.microsoft.com/).  Icons are added to differentiate conditional breakpoints and logpoints.
 
 <!-- todo: update capture -->
-![Breakpoints](./devtools-images/breakpoints.png)
+![Breakpoint indicators](./devtools-images/breakpoints.png)
 
 Chromium issue [#1041830](https://crbug.com/1041830)
 
