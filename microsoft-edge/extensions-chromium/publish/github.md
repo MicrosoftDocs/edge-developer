@@ -48,7 +48,7 @@ Microsoft checks whether your GitHub account is already linked to a Microsoft ac
 
 After your GitHub account is linked to a Microsoft account, you can start using your GitHub account to register as a Microsoft Edge extension developer to publish extensions free of charge.  See [Register as a Microsoft Edge extension developer](create-dev-account.md).
 
-After you're registered for the Microsoft Edge program, you can port your Chrome extensions to Microsoft Edge.  To help manage your Microsoft Edge extensions, you can add more users to the Partner Center account by linking an Azure Active Directory (Azure AD) account with your Partner Center account.  See [Add users to the Microsoft Edge program](aad-account.md).
+After you're registered for the Microsoft Edge program, you can port your Chrome extensions to Microsoft Edge.  To help manage your Microsoft Edge extensions, you can add more users to the Partner Center account by linking a Microsoft Entra ID account with your Partner Center account.  See [Add users to the Microsoft Edge program](aad-account.md).
 
 
 <!-- ====================================================================== -->

@@ -6,14 +6,14 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 11/25/2022
+ms.date: 10/20/2023
 ---
 # Experimental features and origin trials
 
-Some of the PWA features in Microsoft Edge are still experimental. Experimental features can be used in two ways:
+Some of the PWA features in Microsoft Edge are still experimental.  Experimental features can be used in either of two ways:
 
-*   By enabling the corresponding flag in Microsoft Edge.
-*   By enrolling your site in an origin trial to test features in production with your users.
+* By enabling the corresponding flag in Microsoft Edge.
+* By enrolling your site in an origin trial to test features in production with your users.
 
 
 <!-- ====================================================================== -->
@@ -21,12 +21,12 @@ Some of the PWA features in Microsoft Edge are still experimental. Experimental 
 
 To turn experimental features on or off:
 
-1.  Open Microsoft Edge.
-1.  Go to `edge://flags`.
-1.  Navigate to the relevant experiment.
-1.  Select the dropdown menu next to the experiment description and select **Enabled** to turn on the feature or **Disabled** to turn it off.
+1. Open Microsoft Edge.
+1. Go to `edge://flags`.
+1. Navigate to the relevant experiment.
+1. In the dropdown menu next to the experiment description, select **Enabled** to turn on the feature, or **Disabled** to turn it off:
 
-    ![Select Enabled to turn on an experiment](./origin-trials-images/turn-on-experimental-flag.png)
+   ![Select Enabled to turn on an experiment](./origin-trials-images/turn-on-experimental-flag.png)
 
 
 <!-- ====================================================================== -->
@@ -34,4 +34,11 @@ To turn experimental features on or off:
 
 Microsoft Edge sometimes uses origin trials to test features for specific domains or websites. You may want to use an origin trial for your website to apply a specific feature. If you're a website owner, you can enroll in an origin trial. An origin trial provides features to a percentage of Microsoft Edge users who visit your website.
 
-For more information about Origin Trials, see [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).
+For more information, see [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Use Origin Trials in Microsoft Edge](../../origin-trials/index.md)
+* [What's New in Progressive Web Apps](../whats-new/pwa.md)
