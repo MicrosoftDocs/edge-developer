@@ -79,7 +79,7 @@ Microsoft Edge doesn't support the following Extension APIs:
 <!-- ====================================================================== -->
 ## Additional considerations for supported APIs
 
-*  The user must be signed into Microsoft Edge using a Microsoft account (MSA) or Azure Active Directory account to use `chrome.identity.getProfileUserInfo`. If the user is signed into Microsoft Edge using an on-premises Active Directory account, the API returns `null` for the email and ID values.
+*  The user must be signed into Microsoft Edge using a Microsoft account (MSA) or Microsoft Entra ID account to use `chrome.identity.getProfileUserInfo`. If the user is signed into Microsoft Edge using an on-premises Microsoft Entra ID account, the API returns `null` for the email and ID values.
 
    A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
 

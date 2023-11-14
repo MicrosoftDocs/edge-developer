@@ -13,7 +13,7 @@ If you're new to Partner Center, this article will help you create a Partner Cen
 
 If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article will help you create and link to a suitable account. You'll learn how to create a Microsoft account (MSA) if you don't have one, and help you link the Microsoft account (MSA) to your Partner Center account.
 
-To add and manage users in the Microsoft Edge program to manage extensions, you can associate your Partner Center account with your organization's Azure Active Directory (Azure AD) tenant.
+To add and manage users in the Microsoft Edge program to manage extensions, you can associate your Partner Center account with your organization's Microsoft Entra tenant.
 
 
 <!-- ====================================================================== -->
@@ -25,8 +25,8 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 | _GitHub account_ | A user account at GitHub.com.  You can use your personal GitHub account to sign in to Partner Center—a Microsoft account (MSA) will be created for you. |
 | _Partner Center account_, _Partner Center developer account_ | A _Partner Center account_ is an account on partner.microsoft.com.  To submit Microsoft Edge extensions, you need a _Partner Center developer account_, which is a Partner Center account that has a Microsoft account (MSA) as the Primary Owner. |
 | _Microsoft Edge Program account_ | Enables multiple users to work with Microsoft Edge extensions at Partner Center. |
-| _Azure Active Directory_, _AD account_, _Azure AD_ | An Azure Active Directory account. |
-| _Azure Active Directory tenant_, _AAD tenant_ | A _tenant_ represents an organization.  A tenant is a dedicated instance of Azure AD that an organization or app developer receives at the beginning of a relationship with Microsoft. |
+| _Microsoft Entra ID_ | A Microsoft Entra ID account. |
+| _Microsoft Entra tenant_ | A _tenant_ represents an organization.  A tenant is a dedicated instance of Microsoft Entra ID that an organization or app developer receives at the beginning of a relationship with Microsoft. |
 
 
 <!-- ====================================================================== -->
@@ -53,7 +53,7 @@ To create a Microsoft account (MSA):
 
 If you have a Partner Center account for which the Primary Owner is a Microsoft account (MSA), use that Microsoft account (MSA) to sign into your Partner Center account.  Then enroll in the Microsoft Edge program.
 
-**Note:** The Microsoft Edge program doesn't currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Azure AD tenants with that account, to be able to manage extensions.
+**Note:** The Microsoft Edge program doesn't currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Microsoft Entra tenants with that account, to be able to manage extensions.
 
 
 <!-- ====================================================================== -->
@@ -127,10 +127,10 @@ To display your verification status, go to [Partner Center](https://partner.micr
 
 *  [Extension concepts and architecture](../getting-started/index.md)
 
-*  [Add users to the Microsoft Edge program](aad-account.md) - Add more users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Azure Active Directory account with your Microsoft account (MSA) on Partner Center.
+*  [Add users to the Microsoft Edge program](aad-account.md) - Add more users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Microsoft Entra ID account with your Microsoft account (MSA) on Partner Center.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Azure Active Directory (Azure AD) tenants, in the Active Directory documentation.
+*  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Microsoft Entra tenants, in the Microsoft Entra documentation.
