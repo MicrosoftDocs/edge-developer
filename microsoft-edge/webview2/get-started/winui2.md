@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/21/2023
+ms.date: 10/31/2023
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps
 
@@ -24,7 +24,16 @@ The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  
 *  Dense control styles.
 *  Fluent styles and materials.
 
+
+<!-- ------------------------------ -->
+#### Platforms
+
+This article applies to Windows and Xbox.
+
 WinUI 2 supports UWP only.  These controls are backward-compatible.
+
+See also:
+* [Media App Samples for Xbox](https://github.com/microsoft/Media-App-Samples-for-Xbox)
 
 
 <!-- ------------------------------ -->
@@ -447,7 +456,7 @@ See also:
 <!-- ------------------------------ -->
 #### Microsoft Edge Developer Tools
 
-On WinUI 2, Microsoft Edge DevTools cannot be launched inside a store-signed WebView2 WinUI 2 (UWP) app.  However, you can work around this by using remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge](../how-to/remote-debugging.md).
+On WinUI 2, Microsoft Edge DevTools cannot be launched inside a store-signed WebView2 WinUI 2 (UWP) app.  However, you can work around this by using remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps](../how-to/remote-debugging.md).
 
 
 <!-- ------------------------------ -->
@@ -474,3 +483,4 @@ GitHub:
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
 *  Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
 * [Microsoft.UI.Xaml NuGet package](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
+* [Media App Samples for Xbox](https://github.com/microsoft/Media-App-Samples-for-Xbox)
