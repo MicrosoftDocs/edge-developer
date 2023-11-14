@@ -200,7 +200,7 @@ To test the look and feel of your page at multiple zoom levels, use the **Zoom**
 <!-- ------------------------------ -->
 #### Capture a screenshot
 
-To capture a screenshot of what you currently see in the viewport, click **More options** (![The More Options icon](./index-images/more-options-icon.png)) > Capture screenshot:
+To capture a screenshot of what you currently see in the viewport, click **More options** (![The More Options icon](./index-images/more-options-icon.png)) > **Capture screenshot**:
 
 ![The Capture screenshot option in the More options menu](./index-images/capture-screenshot.png)
 
