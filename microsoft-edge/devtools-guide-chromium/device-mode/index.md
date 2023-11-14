@@ -287,7 +287,7 @@ On the **Sensors** panel, to select one of the preset locations, use the **Locat
 
 
 See also:
-* [Override geolocation with the Sensors tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/geolocation)
+* [Override geolocation with the Sensors tool](./geolocation.md)
 
 
 <!-- ------------------------------ -->
@@ -311,7 +311,7 @@ If your page depends on orientation information from a mobile device to render p
 
 
 See also:
-* [Simulate device orientation with the Sensors tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/orientation)
+* [Simulate device orientation with the Sensors tool](./orientation.md)
 
 
 <!-- ====================================================================== -->
