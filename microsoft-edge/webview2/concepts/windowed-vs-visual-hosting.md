@@ -53,7 +53,7 @@ Key compatibility limitations include the operating system and rendering in fram
 
 Windows 7 and Windows 8 can only do windowed hosting, not visual hosting.
 
-See [Windows versions supported with limitations](../index.md#windows-versions-supported-with-limitations) in _Introduction to Microsoft Edge WebView2_.
+See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
 
 
 <!-- ------------------------------ -->
