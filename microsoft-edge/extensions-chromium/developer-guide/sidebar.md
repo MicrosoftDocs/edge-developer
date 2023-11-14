@@ -215,8 +215,6 @@ The following code shows how to open a global sidebar on the current window when
 * Use `windowId` to open a global sidebar, as shown in the following example.
 * Or, set the `tabId` to open the sidebar only on a specific tab.
 
-`sidePanel.open()` is available starting with Microsoft Edge version 117.<!-- todo: later remove the version number statement -->
-
 ```js
 // service-worker.js:
 chrome.runtime.onInstalled.addListener(() => {
