@@ -129,5 +129,5 @@ To view your verification status, go to [Partner Center](https://partner.microso
 
 *  [Publish an extension](publish-extension.md) - Provides detailed information and steps for publishing an extension.
 
-*  [Add users to the Microsoft Edge program](aad-account.md) - Describes how to add more users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Azure Active Directory account with your Microsoft account (MSA) on Partner Center.
+*  [Add users to the Microsoft Edge program](aad-account.md) - Describes how to add more users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Microsoft Entra ID account with your Microsoft account (MSA) on Partner Center.
 

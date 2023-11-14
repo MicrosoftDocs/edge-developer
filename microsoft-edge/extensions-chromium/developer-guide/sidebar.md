@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/24/2023
+ms.date: 10/09/2023
 ---
 # Extensions in the Microsoft Edge sidebar
 
@@ -171,10 +171,10 @@ To allow users to open the sidebar by clicking the action toolbar icon, use [sid
 }
 ```
 
-Then, add the following code to the `service-worker.js` code listing that's in [Enable a sidebar for a specific site only](#enable-a-sidebar-for-a-specific-site-only) above:
+Then, add the following code to the `service-worker.js` code listing that's in [Enable a sidebar for a specific site only](#enable-a-sidebar-for-a-specific-site-only), above:
 
 ```js
-// Allow users to open the sidebar by clicking on the action toolbar icon
+// Allow users to open the sidebar by clicking the action toolbar icon
 chrome.sidePanel
   .setPanelBehavior({ openPanelOnActionClick: true })
   .catch((error) => console.error(error));
@@ -206,6 +206,34 @@ chrome.tabs.onActivated.addListener(async ({ tabId }) => {
 ```
 
 
+<!-- ------------------------------ -->
+#### Opening the sidebar upon user interaction
+
+[sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open) allows extensions to open the sidebar through a user gesture, such as clicking the action icon, or through any user interaction on an extension page or content script, such as clicking a button.
+
+The following code shows how to open a global sidebar on the current window when the user clicks on a context menu.  When using `sidePanel.open()`, choose the context in which the sidebar should open:
+* Use `windowId` to open a global sidebar, as shown in the following example.
+* Or, set the `tabId` to open the sidebar only on a specific tab.
+
+```js
+// service-worker.js:
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.contextMenus.create({
+    id: 'openSidePanel',
+    title: 'Open sidebar',
+    contexts: ['all']
+  });
+});
+
+chrome.contextMenus.onClicked.addListener((info, tab) => {
+  if (info.menuItemId === 'openSidePanel') {
+    // Open the sidebar in all the tabs of the current window.
+    chrome.sidePanel.open({ windowId: tab.windowId });
+  }
+});
+```
+
+
 <!-- ====================================================================== -->
 ## Sidebar extensions user experience
 
@@ -225,7 +253,7 @@ Users can click the **Open in sidebar** icon (![Open in sidebar icon](./sidebar-
 
 ![Sidebar dialog](./sidebar-images/sidebar-dialog.png)
 
-Or, users can click the extension's custom icon in the toolbar, if it's enabled.  This user experience requires that the extension has enabled the shortcut icon to open the sidebar, as described in [Enable the extension's shortcut icon to open the sidebar](#enable-the-extensions-shortcut-icon-to-open-the-sidebar) above.  In this example, the extension's custom icon is a circle (![Extension's custom icon](./sidebar-images/custom-icon-for-demo-extension.png)):
+Or, users can click the extension's custom icon in the toolbar, if it's enabled.  This user experience requires that the extension has enabled the shortcut icon to open the sidebar, as described in [Enable the extension's shortcut icon to open the sidebar](#enable-the-extensions-shortcut-icon-to-open-the-sidebar), above.  In this example, the extension's custom icon is a circle (![Extension's custom icon](./sidebar-images/custom-icon-for-demo-extension.png)):
 
 ![Clicking the extension's icon in the toolbar](./sidebar-images/left-click-toolbar-icon.png)
 
@@ -253,6 +281,16 @@ Users can press a keyboard shortcut, if the action command is enabled and the ac
 If the `openPanelOnActionClick()` property of the [PanelBehavior](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-PanelBehavior) type is set to `true`, the user can open the sidebar by using a keyboard shortcut.  To enable this, you specify an action command in the manifest.
 
 
+<!-- ---------- -->
+###### Open through a gesture
+
+The sidebar can also be opened through the following interactions:
+
+* Open the sidebar by an extension user gesture, such as clicking the action icon.  This approach uses [sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open).  See [Opening the sidebar upon user interaction](#opening-the-sidebar-upon-user-interaction), above.
+
+* Open the sidebar by clicking the toolbar icon.  This approach uses [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior).  See [By clicking an icon](#by-clicking-an-icon) in section "Opening the extension in the sidebar", above.
+
+
 <!-- ====================================================================== -->
 ## Extension samples
 
@@ -261,6 +299,7 @@ For more Sidebar API extensions demos, explore any of the following extensions:
 * [Dictionary side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/sample.sidepanel-dictionary)
 * [Global side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-global)
 * [Multiple side panels example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-multiple)
+* [Opening the side panel through a user interaction](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-open)
 * [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific)
 
 
