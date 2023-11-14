@@ -661,9 +661,9 @@ To stop inking and typing data from being collected by Microsoft while using the
 When using a work profile, the organization may see the following data:
 * The application URL.
 * The identity of the user in the profile.
-* The file name.
+* The file names of files that the user attempts to download or upload.
+* The content of files that the user attempts to download or upload.
 * Any attempted actions, such as cut, copy, print, download, or upload.
-* The content of files.
 * The operating system, browser, and browser version.
 
 
