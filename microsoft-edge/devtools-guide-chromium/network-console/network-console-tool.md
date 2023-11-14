@@ -72,8 +72,7 @@ To get to the **Network Console** tool by starting from the **Network** tool:
 
    ![Editing the network request and then clicking Send, in the Network Console tool](./network-console-tool-images/edit-then-send.png)
 
-   <!-- Another screenshot (used by Experimental Features article)
-
+   <!-- another screenshot (used by "Experimental features in Microsoft Edge DevTools" article):
    ![The Network Console tool in the main toolbar](../media/network-network-console.png) -->
 
 

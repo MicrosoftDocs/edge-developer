@@ -125,4 +125,5 @@ To restore all of the default tool tabs in the **Activity Bar** and **Quick View
 <!-- ====================================================================== -->
 ## See also
  
-* [Overview of DevTools](overview.md) - Similar to the present article, but broader coverage, with a top-level introduction to DevTools.
+* [Overview of DevTools](overview.md) - Similar to the present article, but broader coverage, with a top-level introduction of DevTools.
+* [Simplify DevTools using Focus Mode](experimental-features/focus-mode.md) - In **Focus Mode**, the **Activity Bar** is a compact replacement for the main toolbar, and the **Quick View** list is a replacement for the tabs on the Drawer toolbar.

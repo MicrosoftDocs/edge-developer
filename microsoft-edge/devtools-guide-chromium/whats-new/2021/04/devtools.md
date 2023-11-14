@@ -379,7 +379,7 @@ Find experiments quicker with the new experiment filter.  For example, to turn o
 ![Filter experiments in the Experiments setting](./devtools-images/settings-experiments-filter-by-issues.png)
 
 See also:
-* [Experimental features](../../../experimental-features/index.md)
+* [Experimental features in Microsoft Edge DevTools](../../../experimental-features/index.md)
 
 
 <!-- ====================================================================== -->

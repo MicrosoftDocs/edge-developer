@@ -28,7 +28,7 @@ To give us feedback on the remote debugging flow for Microsoft Edge, leave a com
 See also:
 * [Remotely debug Windows devices](../../../remote-debugging/windows.md)
 * [Windows Device Portal for Desktop](/windows/uwp/debug-test-perf/device-portal-desktop)
-* [Remote debugging WebView2 WinUI 2 (UWP) apps with Remote Tools for Microsoft Edge](../../../../webview2/how-to/remote-debugging.md)
+* [Remote debugging WebView2 WinUI 2 (UWP) apps](../../../../webview2/how-to/remote-debugging.md)
 
 
 <!-- ====================================================================== -->

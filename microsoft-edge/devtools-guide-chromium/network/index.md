@@ -286,9 +286,9 @@ How does a page look and behave when some of the page resources aren't available
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-1. Type `block`, select **Show Request Blocking**, and then press **Enter**:
+1. Type `block`, select **Show Network request blocking**, and then press **Enter**:
 
-   ![Show Request Blocking](./index-images/command-menu-block-requests.png)
+   ![Show Network Request Blocking](./index-images/network-glitch-network-cli-block.png)
 
 1. Click **Add Pattern** (![Add Pattern](./index-images/add-icon.png)), then type `main.css`, and then click **Add**:
 
@@ -300,7 +300,7 @@ How does a page look and behave when some of the page resources aren't available
 
    ![main.css has been blocked](./index-images/blocked-main-css.png)
 
-1. Clear the **Enable request blocking** checkbox.
+1. Clear the **Enable network request blocking** checkbox.
 
 
 <!-- ====================================================================== -->
