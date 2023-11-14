@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 11/02/2023
+ms.date: 11/13/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -658,7 +658,7 @@ To stop inking and typing data from being collected by Microsoft while using the
 <!-- ------------------------------ -->
 #### Data privacy when using a work profile
 
-When working with the work profile, the organization may see the following data:
+When using a work profile, the organization may see the following data:
 * The application URL.
 * The identity of the user in the profile.
 * The file name.
