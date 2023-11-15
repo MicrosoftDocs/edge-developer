@@ -647,7 +647,8 @@ To stop inking and typing data from being collected by Microsoft while using the
 <!-- ------------------------------ -->
 #### Data privacy when using a work profile
 
-When using a work profile, the organization may see the following data:
+When a user is signed in via a work profile, the user's organization has access to the following data.  For example, when a user is signed in with the profile user1@contoso.com, Contoso can see this data:
+
 * The URL.
 * The identity of the user in the profile.
 * The file names of files that the user attempts to download or upload.
