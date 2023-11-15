@@ -94,7 +94,7 @@ Most devices include assistive technology that is built-in to the OS.  Microsoft
 
 ### Testing in virtual machines and emulators
 
-Under macOS, if you want to test with an assistive technology only available for Windows, like Windows Narrator or NVDA, create a Windows virtual machine.  Virtual machines with Microsoft Edge (EdgeHTML) and IE are available for VirtualBox and VMWare on the [Virtual Machines download page](https://developer.microsoft.com/microsoft-edge/tools/vms).
+Under macOS, if you want to test with an assistive technology only available for Windows, like Windows Narrator or NVDA, create a Windows virtual machine.
 
 [Android Studio](https://developer.android.com/sdk/installing/studio.html) includes an emulator that for you to test assistive technologies in the [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback).  Follow the instructions to [set up a virtual device](https://developer.android.com/tools/devices/managing-avds.html) and [start the emulator](https://developer.android.com/tools/devices/emulator.html), then install [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback) from the GooglePlay store.
 
