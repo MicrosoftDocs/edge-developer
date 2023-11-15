@@ -79,39 +79,39 @@ In **Guest** mode, autofill is not available and new autofill entries aren't add
 
 
 <!-- ====================================================================== -->
-## Bing Chat in Microsoft Edge sidebar
+## Copilot in Microsoft Edge sidebar
 
-In Bing Chat in the Microsoft Edge sidebar, you can ask complex questions, find comprehensive answers, get summarized information, and find inspiration to build upon, in a side-by-side view, with no need to flip between tabs.
+In Copilot in the Microsoft Edge sidebar, you can ask complex questions, find comprehensive answers, get summarized information, and find inspiration to build upon, in a side-by-side view, with no need to flip between tabs.
 
-To open Bing Chat in the Microsoft Edge sidebar, click the **Bing Chat** (![Bing Chat icon.](./index-images/bing-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of the Microsoft Edge toolbar:
+To open Copilot in the Microsoft Edge sidebar, click the **Copilot** (![Copilot icon.](./index-images/copilot-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of the Microsoft Edge toolbar: 
 
-![Summarize this page](./index-images/summarize-content.png)
+![Summarize this page](./index-images/summarize-content.png) 
 
 
 <!-- --------------------------------------------------------------------- -->
-#### Data and consent used by Bing Chat in the sidebar
+#### Data and consent used by Copilot in Microsoft Edge 
 
-Microsoft Edge determines what data to send to Bing Chat based on the user's **query** and their consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, page title, user's query, and previous conversation history to help Bing Chat answer their query effectively.
+Microsoft Edge determines what data to send to Copilot based on the user's **query** and their consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, page title, user's query, and previous conversation history to help Copilot answer their query effectively.
 
-For questions that need **browsing context**, such as when the user asks Bing Chat to summarize a large page of text, Microsoft Edge requests permission from the user to access page information:
+For questions that need **browsing context**, such as when the user asks Copilot to summarize a large page of text, Microsoft Edge requests permission from the user to access page information:
 
-![Bing Chat asking for consent to access the page content in Microsoft Edge](./index-images/consent-for-contextual-browsing.png)
+![Copilot asking for consent to access the page content in Microsoft Edge](./index-images/consent-for-contextual-browsing.png) <!-- Update Bing chat screenshot-->
 
-When the user grants permission to share page information, Microsoft Edge sends the full **browsing context** in addition to the user's **query** and previous **conversation history** to Bing Chat, to help generate a meaningful **response**.
+When the user grants permission to share page information, Microsoft Edge sends the full **browsing context** in addition to the user's **query** and previous **conversation history** to Copilot, to help generate a meaningful **response**.
 
-The user can modify this permission anytime by going to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Bing Chat** and then turning on or off the **Allow access to any webpage or PDF** toggle.
+The user can modify this permission anytime by going to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Copilot** and then turning on or off the **Allow access to any webpage or PDF** toggle.
 
 
 <!-- ---------------------------------------------------------------------- -->
 #### Duration of storage of conversation history
 
-* **Conversation history** is a history of all queries and responses from Bing Chat.  **Conversation history** is stored for 90 days.  This is independent of whether using Bing Chat in the Microsoft Edge sidebar or by visiting `www.bing.com/chat`.
+* **Conversation history** is a history of all queries and responses from Copilot.  **Conversation history** is stored for 90 days.  This is independent of whether using Copilot in Bing or Copilot in the Microsoft Edge sidebar or by visiting `www.bing.com/chat`.
 
-   * Users can delete a specific conversation or all the conversations from Bing Chat by going to `www.bing.com/chat`, and then deleting the specific conversations in the **Recent activity** section:
+   * Users can delete a specific conversation or all the conversations from Copilot in Bing by going to `www.bing.com/chat`, and then deleting the specific conversations in the **Recent activity** section:
 
-     ![Recent conversation history in Bing Chat](./index-images/bing-chat-recent.png)
+     ![Recent conversation history in Copilot](./index-images/bing-chat-recent.png)
 
-* **Page content** from public **pages on the Bing index** – Bing Chat uses publicly available information from the Bing search engine to summarize pages that are available on the Bing search index.  To answer questions from public pages, Microsoft Edge doesn't need to share this page content with Bing Chat.
+* **Page content** from public **pages on the Bing index** – Copilot uses publicly available information from the Bing search engine to summarize pages that are available on the Bing search index.  To answer questions from public pages, Microsoft Edge doesn't need to share this page content with Copilot.
 
 * **Page content** from **non-Bing index pages** – information that's used to summarize a non-Bing index page is deleted after 6 hours, and it is only used to answer the query.
 
@@ -119,32 +119,21 @@ The user can modify this permission anytime by going to Microsoft Edge > **Setti
 <!-- ---------------------------------------------------------------------- -->
 #### Our commitment to responsible AI
 
-Bing Chat has numerous protective measures in place that are constantly evolving.  For details, see [The new Bing: Our approach to Responsible AI](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2023/04/RAI-for-the-new-Bing-April-2023.pdf).
+Copilot has numerous protective measures in place that are constantly evolving.  For details, see [The new Bing: Our approach to Responsible AI](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2023/04/RAI-for-the-new-Bing-April-2023.pdf).
 
 
 <!-- ---------------------------------------------------------------------- -->
-<!--
-#### Bing Chat for Enterprises
-
-Bing Chat for Enterprises ... (introduce).  To learn how Bing Chat for Enterprises protects user data and business data, see [Privacy and protections](/bing-chat-enterprise/privacy-and-protections).
-
-See also:
-* [Privacy and protections](/bing-chat-enterprise/privacy-and-protections)
--->
-
-
-<!-- ---------------------------------------------------------------------- -->
-#### Glossary of terms for Bing Chat
+#### Glossary of terms for Copilot
 
 | Term | Definition |
 |---|---|
-| _query_ | A question that a user types in the **Ask me anything** text box in Bing Chat. |
+| _query_ | A question that a user types in the **Ask me anything** text box in Copilot. |
 | _Bing index page_ | Any website URL that is publicly available on the internet for Bing to search and can be reached via a URL that starts with `http://` or `https://`. |
 | _non-Bing index page_ | Any webpage or local file that is not available publicly for Bing to search, but is open in Microsoft Edge. |
 | _grounding_ | Centering the response that's provided to a user's query or prompt on high-ranking content from the web, and providing links to websites so that users can learn more.  Bing ranks web search content by heavily weighting features such as relevance, quality, credibility, and freshness. |
-| _response_ | The text that Bing Chat outputs in response to a prompt.  Synonyms: _completion_, _generation_, _answer_. |
-| _conversation history_ | A combination of user query and response in the Bing Chat format. |
-| _browsing context_ | The page URL and page content that's open in the active tab of the Microsoft Edge browser. These could be webpages, local PDFs, Microsoft Word documents, or other local files.  For example, the user can ask **Summarize this page** while they are browsing a long topic or webpage.  Bing Chat uses the page context (such as the page URL) and the page content to summarize the topic for the user. |
+| _response_ | The text that Copilot in Bing outputs in response to a prompt.  Synonyms: _completion_, _generation_, _answer_. |
+| _conversation history_ | A combination of user query and response in the Copilot format. |
+| _browsing context_ | The page URL and page content that's open in the active tab of the Microsoft Edge browser. These could be webpages, local PDFs, Microsoft Word documents, or other local files.  For example, the user can ask **Summarize this page** while they are browsing a long topic or webpage.  Copilot in Microsoft Edge uses the page context (such as the page URL) and the page content to summarize the topic for the user. |
 | _page information_ | The webpage content, or the content of the document, that's open in the active tab of the Microsoft Edge browser. |
 
 
@@ -201,15 +190,15 @@ You can access Collections from an InPrivate window when using a signed-out prof
 <!-- ====================================================================== -->
 ## Compose
 
-In the Bing Chat pane, the Compose tool uses AI to write for you, starting from a short prompt and **Tone**, **Format**, and **Length** selections. Text that's generated by Compose can be copied or inserted into the webpage directly.
+In the Copilot pane, the Compose tool uses AI to write for you, starting from a short prompt and **Tone**, **Format**, and **Length** selections. Text that's generated by Compose can be copied or inserted into the webpage directly.
 
 ![Compose UI](./index-images/compose.png)
 
-To access Compose, click the **Bing Chat** (![Bing Chat icon](./index-images/bing-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of Microsoft Edge, and then select **Compose**. Text and selections that you enter are sent to an internal Microsoft Large Language Model (LLM).
+To access Compose, click the **Copilot** (![Copilot icon](./index-images/copilot-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of Microsoft Edge, and then select **Compose**. Text and selections that you enter are sent to an internal Microsoft Large Language Model (LLM). 
 
 Requests for Compose are sent over a secure HTTPS connection. Each request contains the input prompt, formatting selections, and IDs that are associated with your Microsoft Edge profile and device, to reference for subsequent requests.
 
-To change settings for the sidebar or Bing Chat pane, go to `edge://settings/sidebar`, and then select **App and notification settings** > **Bing Chat**.
+To change settings for the sidebar or Copilot pane, go to `edge://settings/sidebar`, and then select **App and notification settings** > **Copilot**.
 
 
 <!-- ====================================================================== -->
