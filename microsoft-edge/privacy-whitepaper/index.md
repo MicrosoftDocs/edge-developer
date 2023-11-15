@@ -659,7 +659,7 @@ To stop inking and typing data from being collected by Microsoft while using the
 #### Data privacy when using a work profile
 
 When using a work profile, the organization may see the following data:
-* The application URL.
+* The URL.
 * The identity of the user in the profile.
 * The file names of files that the user attempts to download or upload.
 * The content of files that the user attempts to download or upload.
