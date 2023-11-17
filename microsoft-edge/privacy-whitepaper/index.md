@@ -647,14 +647,16 @@ To stop inking and typing data from being collected by Microsoft while using the
 <!-- ------------------------------ -->
 #### Data privacy when using a work profile
 
-When a user is signed in via a work profile, the user's organization has access to the following data.  For example, when a user is signed in with the profile user1@contoso.com, Contoso can see this data:
+When a user is signed in via a work profile, the user's organization has access to the following data:
 
-* The URL.
 * The identity of the user in the profile.
+* The user's operating system, browser, and browser version.
+* The URLs that are accessed by the user.
 * The file names of files that the user attempts to download or upload.
 * The content of files that the user attempts to download or upload.
-* Any attempted actions, such as cut, copy, print, download, or upload.
-* The operating system, browser, and browser version.
+* Any attempted actions by the user, such as cut, copy, print, download, or upload.
+
+For example, when a user is signed in with the work profile user1@contoso.com, Contoso can see this data.
 
 
 <!-- ====================================================================== -->
