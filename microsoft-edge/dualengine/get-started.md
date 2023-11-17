@@ -14,7 +14,7 @@ In this article we will walk you through the steps needed to start using the Dua
 
 ## Step 1 - Receiving Access to the DualEngine LAF
 Access to the DualEngine API is controlled via a Limited Access Feature.
-To gain access to the feature reach out to ####@microsoft.com
+To gain access to the feature reach out to dualengineapiaccess@microsoft.com
 
 Those familiar with LAF should note that the DualEngine LAF is handled somewhat differently than is typical, the 
 details of which can be found in the [Limited Access Feature Requirements](concepts/adapter-dll.md#limited-access-feature-requirements)
