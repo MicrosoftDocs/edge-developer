@@ -20,9 +20,11 @@ api_type:
 api_location:
 - ieframe.dll
 ---
+
+# struct VisibleListUpdateEntry
+
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
-# struct VisibleListUpdateEntry
 
 Represents a change to a travel log entry.
 

@@ -17,9 +17,11 @@ api_type:
 api_location:
 - ieframe.dll
 ---
+
+# struct tagSentinelEntryInfo
+
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
-# struct tagSentinelEntryInfo
 
 Represents the position of the current region in the travel log.
 

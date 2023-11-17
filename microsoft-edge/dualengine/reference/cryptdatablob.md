@@ -17,9 +17,11 @@ api_type:
 api_location:
 - ieframe.dll
 ---
+
+# struct CryptDataBlob
+
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
-# struct CryptDataBlob
 
 Represents an SSL Certificate.
 

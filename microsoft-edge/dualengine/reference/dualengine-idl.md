@@ -16,9 +16,11 @@ api_type:
 api_loction:
 - ieframe.dll
 ---
+
+# Globals
+
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
-# Globals
 
 ## Summary
 

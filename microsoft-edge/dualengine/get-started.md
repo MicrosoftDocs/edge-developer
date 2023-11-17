@@ -17,7 +17,7 @@ Access to the DualEngine API is controlled via a Limited Access Feature.
 To gain access to the feature reach out to ####@microsoft.com
 
 Those familiar with LAF should note that the DualEngine LAF is handled somewhat differently than is typical, the 
-details of which can be found in the [Limited Access Feature Requirements](adapter-dll.md#limited-access-feature-requirements)
+details of which can be found in the [Limited Access Feature Requirements](concepts/adapter-dll.md#limited-access-feature-requirements)
 
 ## Step 2 - Download the DualEngine API header
 The DualEngine API is a COM interface that we only officially support via C++ and is not part of the normal Windows
@@ -35,7 +35,7 @@ by launching Internet Explorer with the correct command line arguments.
 ```
 C:\Program Files\Internet Explorer\iexplore.exe -DualEngineAdapter=C:\temp\TestApp\TestAdapter.dll -DualEnginePipe=784 APPID:TESTAPP
 ```
-See [Launching Internet Explorer](concepts/launching-internet-explore.md) for more information on these arguments.
+See [Launching Internet Explorer](concepts/launching-internet-explorer.md) for more information on these arguments.
 
 
 At this point assuming your adapter is properly written, Internet Explorer is now running your adapter code which

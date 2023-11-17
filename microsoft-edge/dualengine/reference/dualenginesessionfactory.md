@@ -18,9 +18,11 @@ api_type:
 api_location:
 - ieframe.dll
 ---
+
+# interface DualEngineSessionFactory
+
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
-# interface DualEngineSessionFactory
 
 Factory object for DualEngine interfaces.
 

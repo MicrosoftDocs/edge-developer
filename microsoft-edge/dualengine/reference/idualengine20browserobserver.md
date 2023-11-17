@@ -65,9 +65,11 @@ api_type:
 api_location:
 - ieframe.dll
 ---
+
+# interface IDualEngine20BrowserObserver
+
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
-# interface IDualEngine20BrowserObserver
 
 ```
 interface IDualEngine20BrowserObserver

@@ -28,9 +28,11 @@ api_type:
 api_location:
 - ieframe.dll
 ---
+
+# struct DualEngineNewWindowOptions
+
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
-# struct DualEngineNewWindowOptions
 
 Represents the requested state of a new window.
 

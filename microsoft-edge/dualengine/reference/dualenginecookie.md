@@ -23,9 +23,11 @@ api_type:
 api_location:
 - ieframe.dll
 ---
+
+# struct DualEngineCookie
+
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
-# struct DualEngineCookie
 
 Represents the constituent parts of a cookie.
 

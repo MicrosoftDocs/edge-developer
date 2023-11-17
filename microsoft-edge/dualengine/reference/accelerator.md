@@ -18,9 +18,11 @@ api_type:
 api_location:
 - ieframe.dll
 ---
+
+# struct ACCELERATOR
+
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
-# struct ACCELERATOR
 
 Contains the information representing a keyboard accelerator.
 

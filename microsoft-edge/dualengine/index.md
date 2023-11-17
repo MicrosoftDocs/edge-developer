@@ -38,5 +38,5 @@ DualEngine APIs can be used on the following versions of Windows:
 
 * [Getting Started with DualEngine API](get-started.md)
 * [Understanding the DualEngine Adapter DLL](concepts/adapter-dll.md)
-* [Launching Internet Explorer](concepts/launching-internet-explore.md)
+* [Launching Internet Explorer](concepts/launching-internet-explorer.md)
 * [DualEngine Win32 C++ Reference](reference/index.md).
