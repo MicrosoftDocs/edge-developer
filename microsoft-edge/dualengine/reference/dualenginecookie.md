@@ -4,7 +4,7 @@ title: DualEngine Win32 C++ DualEngineCookie
 author: MSEdgeTeam
 ms.author: edgededev
 ms.prod: microsoft-edge
-ms.date: 11/07/2023
+ms.date: 11/16/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, DualEngineCookie
 topic_type: 
 - APIRef
@@ -23,7 +23,8 @@ api_type:
 api_location:
 - ieframe.dll
 ---
-
+> [!IMPORTANT]
+> The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
 # struct DualEngineCookie
 
 Represents the constituent parts of a cookie.
@@ -33,7 +34,7 @@ Represents the constituent parts of a cookie.
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [domain](#domain) | Pointer to a string containing the cookie domain.
-[expiry](#expiry) | Expiry time for persistent cookies Should only be used if INTERNET_COOKIE_IS_SESSION is *not* set in flags, or if this is a delete (i.e.
+[expiry](#expiry) | Expiry time for persistent cookies Should only be used if INTERNET_COOKIE_IS_SESSION is *not* set in flags, or if this is a delete (an expiry set to a past date)
 [flags](#flags) | Flags for additional cookie details.
 [forceSync](#forcesync) | Indicates that when setting the cookie whether to wait for a process of the appropriate PIC to be created and ready to receive the cookie before returning.
 [integrity](#integrity) | The Integrity Level of the cookie.
@@ -51,11 +52,9 @@ Pointer to a string containing the cookie domain.
 
 #### expiry
 
-Expiry time for persistent cookies Should only be used if INTERNET_COOKIE_IS_SESSION is *not* set in flags, or if this is a delete (i.e.
+Expiry time for persistent cookies Should only be used if INTERNET_COOKIE_IS_SESSION is *not* set in flags, or if this is a delete (an expiry set to a past date)
 
 > public FILETIME [expiry](#expiry)
-
-expiry set to a past date)
 
 #### flags
 

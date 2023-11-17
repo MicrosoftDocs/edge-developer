@@ -1682,6 +1682,16 @@
           href: dualengine/reference/index.md
           displayName: functions, methods  # list relevant platforms
 
+        - name: Concepts
+          items:
+            - name: Understanding the DualEngine Adapter DLL
+              href: dualengine/concepts/adapter-dll.md
+              displayName: 
+
+            - name: Launching Internet Explorer
+              href: dualengine/concepts/launching-internet-explorer.md
+              displayName:
+
       
 
 # =============================================================================

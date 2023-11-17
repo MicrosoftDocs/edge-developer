@@ -11,9 +11,13 @@ ms.date: 11/06/2023
 ---
 # Introduction to Microsoft DualEngine API
 
-TODO
+The Microsoft DualEngine API allows you to embed and control a Internet Explorer within your app.
 
+The DualEngine API differs from similar APIs like the Web Browser Control by providing a browsing experience
+equivalent to a normal Internet Explorer tab for increased compatibility with legacy websites. However this
+increase in compatibility comes at the cost of increased developer overhead.
 
+To start building with the DualEngine APi, see [Getting Started with DualEngine API](get-started.md)
 
 <!-- ====================================================================== -->
 ## Supported platforms
@@ -32,4 +36,7 @@ DualEngine APIs can be used on the following versions of Windows:
 <!-- ====================================================================== -->
 ## See also
 
-* [Getting Started tutorials](get-started.md)
+* [Getting Started with DualEngine API](get-started.md)
+* [Understanding the DualEngine Adapter DLL](concepts/adapter-dll.md)
+* [Launching Internet Explorer](concepts/launching-internet-explore.md)
+* [DualEngine Win32 C++ Reference](reference/index.md).

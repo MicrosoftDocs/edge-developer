@@ -4,7 +4,7 @@ title: Globals
 author: MSEdgeTeam
 ms.author: edgededev
 ms.prod: microsoft-edge
-ms.date: 11/07/2023
+ms.date: 11/16/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html
 topic_type: 
 - APIRef
@@ -16,7 +16,8 @@ api_type:
 api_loction:
 - ieframe.dll
 ---
-
+> [!IMPORTANT]
+> The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
 # Globals
 
 ## Summary
@@ -122,7 +123,8 @@ Represents a certificate error.
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
 FOCUSDIRECTION_NONE            | The constant for specifying no focus direction.
-FOCUSDIRECTION_BACKWARD            | The constant for specifying the forward focus direction.
+FOCUSDIRECTION_FORWARD            | The constant for specifying the forward focus direction.
+FOCUSDIRECTION_BACKWARD            | The constant for specifying the back focus direction.
 
 Represents the direction of a focus change.
 

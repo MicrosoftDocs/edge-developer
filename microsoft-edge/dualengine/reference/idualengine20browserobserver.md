@@ -4,7 +4,7 @@ title: DualEngine Win32 C++ IDualEngine20BrowserObserver
 author: MSEdgeTeam
 ms.author: edgededev
 ms.prod: microsoft-edge
-ms.date: 11/07/2023
+ms.date: 11/16/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserObserver
 topic_type: 
 - APIRef
@@ -65,7 +65,8 @@ api_type:
 api_location:
 - ieframe.dll
 ---
-
+> [!IMPORTANT]
+> The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
 # interface IDualEngine20BrowserObserver
 
 ```
