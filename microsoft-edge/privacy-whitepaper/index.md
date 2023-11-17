@@ -647,7 +647,7 @@ To stop inking and typing data from being collected by Microsoft while using the
 <!-- ------------------------------ -->
 #### Data privacy when using a work profile
 
-When a user is signed in via a work profile, the user's organization has access to the following data:
+When a user is signed in with a work profile, the user's organization has access to the following data:
 
 * The identity of the user in the profile.
 * The user's operating system, browser, and browser version.
