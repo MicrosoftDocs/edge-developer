@@ -22,7 +22,7 @@ api_location:
 # struct ACCELERATOR
 
 > [!IMPORTANT]
-> The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
+> The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
 Contains the information representing a keyboard accelerator.
 

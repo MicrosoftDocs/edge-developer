@@ -22,7 +22,7 @@ api_location:
 # interface DualEngineSessionFactory
 
 > [!IMPORTANT]
-> The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
+> The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
 Factory object for DualEngine interfaces.
 

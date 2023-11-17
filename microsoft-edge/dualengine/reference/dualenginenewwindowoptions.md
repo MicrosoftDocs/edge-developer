@@ -32,7 +32,7 @@ api_location:
 # struct DualEngineNewWindowOptions
 
 > [!IMPORTANT]
-> The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
+> The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
 Represents the requested state of a new window.
 

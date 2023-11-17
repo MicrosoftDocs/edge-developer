@@ -36,7 +36,7 @@ api_location:
 # interface IDualEngine20BrowserSession
 
 > [!IMPORTANT]
-> The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
+> The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
 ```
 interface IDualEngine20BrowserSession

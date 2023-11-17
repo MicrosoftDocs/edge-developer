@@ -27,7 +27,7 @@ api_location:
 # struct DualEngineCookie
 
 > [!IMPORTANT]
-> The DualEngine API is a limited access feature. Contact dualengineapi@microsoft.com for more information.
+> The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
 Represents the constituent parts of a cookie.
 
