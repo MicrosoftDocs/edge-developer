@@ -164,7 +164,9 @@ The device frame for the iPhone 6:
 <!-- ------------------------------ -->
 #### Add a custom mobile device
 
-If the mobile device option that you need isn't included on the default list, you can add a custom device.  To add a custom device:
+If the mobile device option that you need isn't included on the default list, you can add a custom device.  
+
+To add a custom device:
 
 1. Select the **Device** list > **Edit**.
 
@@ -176,6 +178,11 @@ If the mobile device option that you need isn't included on the default list, yo
 
    ![Adding a custom device](./index-images/device-mode-toggle-device-toolbar-settings-emulated-devices-add.png)
 
+1. Click **Add** to add the new custom device. The new device should now be available in the **Device** list.
+
+To remove a custom device:
+
+1. Under **Emulated Devices**, in the **Devices** list, hover over the custom device name and click the trash icon to delete the custom device.
 
 <!-- ------------------------------ -->
 #### Show rulers
