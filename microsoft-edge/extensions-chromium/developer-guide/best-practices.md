@@ -22,7 +22,7 @@ Build extensions that conform to Microsoft's standards for security, privacy, tr
 
 **Privacy**: Make sure that your extension handles user data appropriately. 
 
-**User experience**: Make sure that your extension provides an intuitive and seamless user experience. 
+**User experience**: Make sure that your extension provides a clean, intuitive, and seamless user experience on the web without ads that can be interruptive.  
 
 **Store listing**: Make sure that your extension's store listing sets correct user expectations and clearly communicates what the extension does.
 
