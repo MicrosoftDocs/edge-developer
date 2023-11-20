@@ -434,7 +434,7 @@ Microsoft Edge offers an interactive and seamless experience when you launch the
 
 With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  If you choose to regularly import your browsing data, browsing data will be imported each time Microsoft Edge is launched.
 
-Importing your data is completed locally on your device and is stored locally.  Your data is sent to Microsoft only after you do at least one of the following actions: 
+Importing your data is completed locally on your device and is stored locally.  The imported data is sent to Microsoft only after you do at least one of the following actions: 
 
 * Sign into Microsoft Edge with a Microsoft account, and turn on sync'ing of your browsing data across all signed-in devices.
 
