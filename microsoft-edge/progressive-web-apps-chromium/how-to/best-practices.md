@@ -103,9 +103,9 @@ See [Handle links to your Progressive Web Apps](./handle-urls.md) and [Handle pr
 
 #### Widgets
 
-![Experimental feature](../../media/experimental-tag.png)
+![Experimental feature](./best-practices-images/experimental-tag.png)
 
-Create your own app widgets to display in the operating system widget dashboard such as the Windows 11 widgets board.
+Create your own app widgets to display in the operating system widget dashboard such as the Windows 11 Widgets Board.
 
 See [Build PWA-driven widgets](./widgets.md).
 
@@ -198,7 +198,7 @@ To test your app in multiple environments, consider the following techniques:
 <!-- ====================================================================== -->
 ## Support deep linking
 
-To improve discovery and sharing of your app through the web and social media, route each page of your app to a unique URL and support [deep linking](https://en.wikipedia.org/wiki/Deep_linking).  
+To improve discovery and sharing of your app through the web and social media, route each page of your app to a unique URL and support [deep linking](https://wikipedia.org/wiki/Deep_linking).  
 
 
 <!-- ======================================================================

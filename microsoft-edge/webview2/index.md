@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
-ms.date: 11/12/2021
+ms.date: 10/31/2023
 ---
 # Introduction to Microsoft Edge WebView2
 
-The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses [Microsoft Edge](https://www.microsoftedgeinsider.com) as the rendering engine to display the web content in native apps.
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses [Microsoft Edge](https://www.microsoft.com/edge/download/insider) as the rendering engine to display the web content in native apps.
 
 With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
 
-![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](media/webview2/what-webview.png)
+![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](./index-images/what-webview.png)
 
 To start building a WebView2 app, see [Get started with WebView2](get-started/get-started.md).
 
@@ -31,7 +31,7 @@ Developers must often decide between building a web app or a native app.  This d
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
-![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](media/webview2/web-native.png)
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./index-images/web-native.png)
 
 *  Wide **reach** includes websites and Progressive Web Apps.
 
@@ -88,7 +88,12 @@ WebView2 apps can run on the following versions of Windows:
 *  Windows Server 2019
 *  Windows Server 2016
 
+WebView2 is also supported on the following devices:
+*  Xbox
+*  HoloLens 2
 
+
+<!-- ------------------------------ -->
 #### Windows 7 and 8
 
 WebView2 Runtime version 109 is the final version that supports the following versions of Windows.  WebView2 Runtime and SDK version 110.0.1519.0 and higher don't support these operating systems.

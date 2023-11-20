@@ -144,7 +144,7 @@ The following Reference sections are for Remote Tools for Microsoft Edge.
 
 ## /msedge/json/deviceinfo
 
-Provides information about the Windows PC, Xbox, or HoloLens device connected for remote debugging.
+Provides information about the Windows PC or HoloLens 2 device connected for remote debugging.
 
 **Parameters**
 
@@ -191,7 +191,7 @@ None.
         "id": "2AE2506D9FDB1C541FB36DD908ED51DE",
         "title": "Remotely debug Windows devices - Microsoft Edge Development | Microsoft Learn",
         "type": "page",
-        "url": "https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
+        "url": "https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
         "webSocketDebuggerUrl": "wss://172.17.75.195:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE"
       },
       ...
@@ -228,7 +228,7 @@ None.
     "id": "2AE2506D9FDB1C541FB36DD908ED51DE",
     "title": "Remotely debug Windows devices - Microsoft Edge Development | Microsoft Learn",
     "type": "page",
-    "url": "https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
+    "url": "https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
     "webSocketDebuggerUrl": "wss://localhost:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE"
   },
   ...
@@ -276,4 +276,6 @@ JSON object which represents the available API surface for the version of the pr
 <!-- ====================================================================== -->
 ## See also
 
-* [Use the Chrome DevTools Protocol in WebView2 apps](../webview2/how-to/chromium-devtools-protocol.md)
+* [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
+* [Chrome DevTools Protocol (CDP)](../webview2/concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 features and APIs_
+* [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../webview2/how-to/chromium-devtools-protocol.md)

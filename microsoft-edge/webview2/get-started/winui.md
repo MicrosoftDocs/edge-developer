@@ -46,7 +46,7 @@ For this sample, you don't need to separately install the WebView2 SDK.  Below, 
 <!-- ====================================================================== -->
 ## Step 2 - Install a preview channel of Microsoft Edge
 
-1.  Install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2) or any [Microsoft Edge preview channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) installed on Windows 10 version 1803 (build 17134) or later.
+1.  Install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2) or any [Microsoft Edge preview channel](https://www.microsoft.com/edge/download/insider) (Beta, Dev, or Canary) installed on Windows 10 version 1803 (build 17134) or later.
 
 Return from that page and continue the steps below.
 
@@ -447,11 +447,10 @@ WinUI 3 doesn't support transparent backgrounds.  See [Transparent background su
 <!-- ------------------------------ -->
 #### API limitations
 
-The following interfaces aren't accessible in WinUI 3:
+The following classes aren't accessible in WinUI 3:
 
-* `ICoreWebView2Environment`
-* `ICoreWebView2EnvironmentOptions` and `ICoreWebView2EnvironmentOptions2`
-* `ICoreWebView2ControllerOptions`
+* `CoreWebView2EnvironmentOptions`
+* `CoreWebView2ControllerOptions`
 
 
 <!-- ====================================================================== -->

@@ -10,15 +10,25 @@ ms.date: 09/15/2022
 ---
 # Handle links to your Progressive Web Apps
 
-Native applications on many operating systems can handle links. Native applications can request to be launched, instead of the web browser, when associated URLs are activated, to create a more engaging experience for these applications.
+Native apps on many operating systems can handle links.  When associated URLs are activated, native apps can request to be launched instead of the web browser, to create a more engaging experience for these apps.
 
 Progressive Web Apps (PWAs) can also handle links in a similar way.
+
+<!--
+link handling vs. url handling:
+Although the present filename is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.
+The PWA URL handlers feature was removed from Chromium.
+See also [PWAs as URL Handlers](https://web.dev/pwa-url-handler/).
+-->
 
 
 <!-- ====================================================================== -->
 ## Automatic link handling
 
-When you install a PWA using Microsoft Edge, all the links that refer to content within the scope of this PWA will automatically launch it instead of the web browser.
+The operating system that your PWA is installed on automatically launches your PWA for any link that refers to content that's within the scope of the PWA, when either of the following conditions are met:
+
+* The PWA was installed from the Microsoft Store on Windows.
+* The PWA was installed by using Microsoft Edge, and Microsoft Edge is the default browser on the device.
 
 No code is required for automatic link handling to work, but end users can opt-out of automatic link handling. To opt-out of automatic link handling:
 
@@ -28,7 +38,7 @@ No code is required for automatic link handling to work, but end users can opt-o
 
 1. On the PWA details page, under the **Link handling** section, click the toggle button.
 
-![The edge://apps details page for the PWAmp music player app, showing where the link handling toggle button is](../media/link-handling-opt-out.png)
+![The edge://apps details page for the PWAmp music player app, showing where the link handling toggle button is](./handle-urls-images/link-handling-opt-out.png)
 
 
 <!-- ====================================================================== -->
@@ -46,4 +56,4 @@ Once the feature can be used in Microsoft Edge, we will document it here. In the
 <!-- ====================================================================== -->
 ## See also
 
-*  [PWAs as URL Handlers](https://web.dev/pwa-url-handler/).
+* [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)

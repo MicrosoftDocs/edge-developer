@@ -84,7 +84,7 @@ The baseline is a record of how the site performed before you made any performan
 
 1. In Microsoft Edge, open DevTools by right-clicking the webpage, and then selecting **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, on the main toolbar, select the **Lighthouse** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](../media/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Lighthouse** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./get-started-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./get-started-images/more-tools-icon-light-theme.png)) button.
 
 1. Select the **Performance** category, and clear all the other categories. For now, keep the other default options. The options are:
 
@@ -211,7 +211,7 @@ Next, resize the images and run a new audit:
 
     * Replace the four instances of `.jpg` in the file with `.webp`.
 
-1. In **Lighthouse**, click **Run an audit** (![Run an audit icon](./get-started-images/perform-icon.msft.png)) to go back to the main **Lighthouse** page without losing your baseline report.
+1. In **Lighthouse**, click **Run an audit** (![Run an audit icon](./get-started-images/perform-icon.png)) to go back to the main **Lighthouse** page without losing your baseline report.
 
 1. Click **Analyze page load** again to see how the change affects load performance:
 
@@ -235,7 +235,7 @@ For a small app, doing a one-off resize like this might be good enough. But for 
 
 *  At least, optimize each image.  This can often create huge savings.
 
-_Optimization_ means running an image through a program that reduces the size of the image file.  For more tips, see [Essential Image Optimization](https://images.guide).
+_Optimization_ means running an image through a program that reduces the size of the image file.  For more tips, see [Optimize your images](https://web.dev/fast/#optimize-your-images) in _Fast load times_ at web.dev.
 
 #### Reduce unused JavaScript
 
@@ -255,7 +255,7 @@ To confirm the amount of unused code and possibly find other resources that are 
 
     ![The Command Menu in DevTools, showing the Show Coverage command](./get-started-images/command-menu-coverage.png)
 
-1. In the **Coverage** tool, click **Start instrumenting coverage and refresh the page** (![Refresh icon](../media/reload-icon.msft.png)). The **Coverage** tool provides an overview of how much of the JavaScript and CSS code that's loaded on the page was actually run.
+1. In the **Coverage** tool, click **Start instrumenting coverage and refresh the page** (![Refresh icon](./get-started-images/reload-icon.png)). The **Coverage** tool provides an overview of how much of the JavaScript and CSS code that's loaded on the page was actually run.
 
     ![The Coverage tool, in the Drawer panel, showing the report of how much code is unused](./get-started-images/coverage-report.png)
 
@@ -331,7 +331,7 @@ The first task, then, is to find code that you don't need to run on page load.
 
 1. Open the **Coverage** tool again: press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS), type **Coverage**, and then select **Show Coverage**.
 
-1. Click **Start instrumenting coverage and refresh the page** (![Refresh icon](../media/reload-icon.msft.png)) to display the coverage report, and then type `css` in the **URL filter** field to only display the CSS files:
+1. Click **Start instrumenting coverage and refresh the page** (![Refresh icon](./get-started-images/reload-icon.png)) to display the coverage report, and then type `css` in the **URL filter** field to only display the CSS files:
 
    ![The new Coverage report, now showing the CSS files](./get-started-images/coverage-report-css.png)
 
@@ -449,7 +449,7 @@ Use the **Performance** tool to analyze what work the main thread is doing while
 
 1. Open the **Performance** tool.
 
-1. In the **Performance** tool, click **Start profiling and reload the page** (![Refresh](../media/reload-icon.msft.png)), and then click **Stop** once the page has fully loaded.
+1. In the **Performance** tool, click **Start profiling and reload the page** (![Refresh](./get-started-images/reload-icon.png)), and then click **Stop** once the page has fully loaded.
 
     DevTools displays a visualization of all the work that the browser performed in order to load the page. This visualization is referred to as the _trace_:
 

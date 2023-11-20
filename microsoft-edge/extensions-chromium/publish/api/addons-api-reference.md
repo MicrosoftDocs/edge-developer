@@ -387,7 +387,7 @@ See also:
 <!-- ====================================================================== -->
 ## Error codes
 
-Here's a list of common error codes and possible reasons.  For a full list, see [Partner Center REST error codes](/partner-center/develop/error-codes) or [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+Here's a list of common error codes and possible reasons.  For a full list, see [Partner Center REST error codes](/partner-center/develop/error-codes) or [List of HTTP status codes](https://wikipedia.org/wiki/List_of_HTTP_status_codes).
 
 #### 4xx: Client error
 

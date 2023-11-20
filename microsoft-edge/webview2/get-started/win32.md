@@ -85,7 +85,7 @@ You start with a basic desktop project that contains a single main window.  We'l
 
 Visual Studio Installer might open and prompt you to install a Workload:
 
-![Visual Studio Installer prompting to install the 'Desktop development with C++' workload](../media/installer-prompt-desktop-cpp-workload.png)
+![Visual Studio Installer prompting to install the 'Desktop development with C++' workload](./win32-images/installer-prompt-desktop-cpp-workload.png)
 
 If Visual Studio Installer prompts you to install a Workload:
 
@@ -102,7 +102,7 @@ The Installer closes.
 
 The Visual Studio **Review Solution Actions** dialog might appear, prompting you whether you want to **Retarget Projects**:
 
-![Visual Studio's 'Review Solution Actions' dialog, prompting to Retarget Projects](../media/review-solution-actions-retarget-projects.png)
+![Visual Studio's 'Review Solution Actions' dialog, prompting to Retarget Projects](./win32-images/review-solution-actions-retarget-projects.png)
 
 1. If that dialog appears, you can click **OK**.
 
@@ -120,7 +120,7 @@ If the **WebView2GettingStarted** project isn't open in Visual Studio, open it i
 
    `HelloWebView.cpp` opens in the code editor of Visual Studio.
 
-   ![The 'WebView2GettingStarted.sln' file from the cloned or downloaded WebView2 repo, opened in Visual Studio, in Solution Explorer](../media/webview2gettingstarted-sln-in-solution-explorer.png)
+   ![The 'WebView2GettingStarted.sln' file from the cloned or downloaded WebView2 repo, opened in Visual Studio, in Solution Explorer](./win32-images/webview2gettingstarted-sln-in-solution-explorer.png)
 
 The above screenshot shows some WebView2 code (`#include "WebView2.h"`), that's already present in the file immediately after cloning (downloading) the repo.
 
@@ -143,11 +143,11 @@ This step is only needed for older versions of Visual Studio, so it's likely you
 
    Here's a Visual Studio 2017 screenshot showing some valid settings:
 
-   ![In Visual Studio 2017, set Windows SDK Version to 10, and Platform Toolset to Visual Studio](../media/tool-version.png)
+   ![In Visual Studio 2017, set Windows SDK Version to 10, and Platform Toolset to Visual Studio](./win32-images/tool-version.png)
 
    The following is a Visual Studio 2022 screenshot; the values were already correct, so no change was required:
 
-   ![In Visual Studio 2022, Windows SDK Version is already 10, and Platform Toolset is already Visual Studio](../media/tool-version-2022.png)
+   ![In Visual Studio 2022, Windows SDK Version is already 10, and Platform Toolset is already Visual Studio](./win32-images/tool-version-2022.png)
 
 Continue with the steps below.
 
@@ -165,14 +165,14 @@ To confirm that your system is set up for WebView2 coding, run the project in De
 
    The sample app first opens a pop-up window, which displays the URL that will be loaded, along with an **OK** button:
 
-   ![The sample app displays a pop-up window with URL and OK button over an empty WebView2 window](../media/show-url.png)
+   ![The sample app displays a pop-up window with URL and OK button over an empty WebView2 window](./win32-images/show-url.png)
 
 1. Click the **OK** button to dismiss the pop-window and continue to the URL:
 
    The WebView2 window now displays webpage content: the Bing website, `http://www.bing.com`.
 
    <!-- instance 3 of bing-window.png -->
-   ![The sample app now displays the Bing website](../media/bing-window.png)
+   ![The sample app now displays the Bing website](./win32-images/bing-window.png)
 
 1. Close the **WebView sample** window.
 
@@ -194,7 +194,7 @@ Install the Windows Implementation Libraries (WIL) from within Visual Studio, as
 
 1. In **Solution Explorer**, right-click the **WebView2GettingStarted** project node (not the solution node) and then select **Manage NuGet Packages**.
 
-   ![Manage NuGet packages](../media/manage-nuget-packages.png)
+   ![Manage NuGet packages](./win32-images/manage-nuget-packages.png)
 
 1. In the **NuGet** window, click the **Browse** tab.
 
@@ -206,7 +206,7 @@ Install the Windows Implementation Libraries (WIL) from within Visual Studio, as
 
    Selecting the **Microsoft.Windows.ImplementationLibrary** package in NuGet Package Manager in Visual Studio:
 
-   ![Selecting the 'Microsoft.Windows.ImplementationLibrary' package in NuGet Package Manager in Visual Studio](../media/wil.png)
+   ![Selecting the 'Microsoft.Windows.ImplementationLibrary' package in NuGet Package Manager in Visual Studio](./win32-images/wil.png)
 
    _To zoom, right-click > **Open image in new tab**._
 
@@ -226,7 +226,7 @@ Continue with the steps below.
 
 
 <!-- maintenance link; keep: main copy:
-[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+[Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
 ## Step 9 - Update or install the WebView2 SDK
@@ -245,7 +245,7 @@ Update (or install) the WebView2 SDK, as follows:
 
    The **NuGet Package Manager** tab and panel opens in Visual Studio.
 
-   ![Manage NuGet packages](../media/manage-nuget-packages.png)
+   ![Manage NuGet packages](./win32-images/manage-nuget-packages.png)
 
 1. If the WebView2 SDK is already installed for the project, as is the case with the repo project, in the **NuGet** window, click the **Installed** tab or the **Update** tab.
 
@@ -261,7 +261,7 @@ Update (or install) the WebView2 SDK, as follows:
 
 1. In the right-hand side window, click **Update** (or **Install**).  NuGet downloads the WebView2 SDK to your machine.
 
-   ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio](../media/nuget.png)
+   ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio](./win32-images/nuget.png)
 
 1. Close the **NuGet Package Manager** tab.
 
@@ -340,7 +340,7 @@ Continue with the steps below.
 
    The sample app opens and displays an empty window:
 
-   ![The sample app displays an empty window](../media/empty-app.png)
+   ![The sample app displays an empty window](./win32-images/empty-app.png)
 
    You now have a running, empty Win32 desktop app with potential WebView2 capabilities.
 
@@ -436,13 +436,13 @@ Now to do the above, in the callback, you'll:
 
    If you started by deleting all of the WebView2 code, at this point, you now have a Win32 window that's filled with a WebView2 control that's filled with webpage content:
 
-   ![Bing window](../media/bing-window.png)
+   ![Bing window](./win32-images/bing-window.png)
 
 1. Close the **WebView sample** app window.
 
    Or, if you kept all of the WebView2 code, at this point, a pop-up WebView2 window with an alert dialog from Bing opens, over an empty WebView2 window.  Click the **OK** button to close the Bing dialog.  Now the WebView2 control is filled by Bing page content:
 
-   ![The sample app displays an initially empty window with a Bing dialog](../media/empty-app-with-bing-dialog.png)
+   ![The sample app displays an initially empty window with a Bing dialog](./win32-images/empty-app-with-bing-dialog.png)
 
 1. If the **WebView sample** app window is open, close it.
 
@@ -466,7 +466,7 @@ In the previous step, we discussed navigating to URL by using the `ICoreWebView2
 
    If you want more information now, in a new window or tab, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
-![Navigation events](../media/navigation-events.png)
+![Navigation events](./win32-images/navigation-events.png)
 
 In error cases, one or more of the following events may occur, depending on whether the navigation continued to an error webpage:
 
@@ -556,14 +556,14 @@ Have the host app and web content communicate through `postMessage`, as follows:
 
    The sample app first opens a pop-up window, which displays the URL that will be loaded, along with an **OK** button:
 
-   ![The sample app displays a pop-up window with URL and OK button over an empty WebView2 window](../media/show-url.png)
+   ![The sample app displays a pop-up window with URL and OK button over an empty WebView2 window](./win32-images/show-url.png)
 
 1. Click the **OK** button to dismiss the pop-window and continue to the URL:
 
    The WebView2 window now displays webpage content: the Bing website, `http://www.bing.com`.
 
    <!-- instance 2 of bing-window.png -->
-   ![The sample app now displays the Bing website](../media/bing-window.png)
+   ![The sample app now displays the Bing website](./win32-images/bing-window.png)
 
 1. When you are ready, close the **WebView sample** window.
 

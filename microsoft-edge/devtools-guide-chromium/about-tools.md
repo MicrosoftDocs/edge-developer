@@ -10,17 +10,17 @@ ms.date: 02/02/2022
 # About the list of tools
 
 DevTools provides 35 tools:
-*  2 toolbar icons, for the **Inspect tool** (![Inspect tool icon](media/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](media/device-emulation-icon-light-theme.png)).
+*  2 toolbar icons, for the **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)).
 *  3 permanent toolbar tabs, for the **Elements**, **Console**, and **Sources** tools.
 *  30 optional toolbar tabs, for the optional tools.
 
-The default tools, including toolbar icons, toolbar tabs, and tools on the **More tabs** (![More tabs icon](media/more-tabs-icon-light-theme.png)) menu:
+The default tools, including toolbar icons, toolbar tabs, and tools on the **More tabs** (![More tabs icon](./about-tools-images/more-tabs-icon-light-theme.png)) menu:
 
-![All of the default tools of DevTools, including 2 toolbar icons and 11 toolbar tabs on the toolbar or More tabs menu](media/all-default-tools.png)
+![All of the default tools of DevTools, including 2 toolbar icons and 11 toolbar tabs on the toolbar or More tabs menu](./about-tools-images/all-default-tools.png)
 
-The optional tools that aren't open by default, on the **More Tools** (![More Tools icon](media/more-tools-icon-light-theme.png)) menu:
+The optional tools that aren't open by default, on the **More Tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu:
 
-![All of the optional tools of DevTools, on the More Tools menu, with 22 optional tools](media/all-optional-tools.png)
+![All of the optional tools of DevTools, on the More Tools menu, with 22 optional tools](./about-tools-images/all-optional-tools.png)
 
 The following features are additional ways to access the tools:
 *  The **Drawer** is an additional toolbar and area to hold tool tabs.
@@ -57,7 +57,7 @@ Microsoft Edge DevTools includes the following tools.
 | **Network conditions** tool | Use the **Network conditions** tool to disable the browser cache, set network throttling, set the user agent string, and set Content-Encodings such as deflate, gzip, and br. | [Network conditions tool](network-conditions/network-conditions-tool.md) |
 | **Network Console** tool | Use the **Network Console** tool to make changes to network requests (network calls) to see why they fail.  Change and replay any of the network requests, and make detailed network API calls.  | [Network Console tool](network-console/network-console-tool.md) |
 | **Network request blocking** tool | Use the **Network request blocking** tool to test blocking network requests to a specified URL pattern and see how a webpage behaves. | [Network request blocking tool](network-request-blocking/network-request-blocking-tool.md) |
-| **Performance** tool | Analyze runtime performance, which is how your page performs when it's running, as opposed to loading. | [Get started analyzing runtime performance](evaluate-performance/index.md) |
+| **Performance** tool | Analyze runtime performance, which is how your page performs when it's running, as opposed to loading. | [Introduction to the Performance tool](evaluate-performance/index.md) |
 | **Performance monitor** tool | Provides a real-time view of the runtime performance of a webpage, to determine where performance problems come from, making a website run slowly.  Finds whether problems are from high memory or CPU usage, too-frequent layout and style calculations, or too many DOM nodes and event listeners. | [Measure runtime performance of a page using the Performance monitor tool](performance-monitor/performance-monitor-tool.md) |
 | **Quick source** tool | Use the **Quick source** tool to display or edit source files when using a tool other than the **Sources** tool. | [Display or edit source files using the Quick source tool](quick-source/quick-source-tool.md) |
 | **Rendering** tool | Use the **Rendering** tool to see what your webpage looks like with different display options or vision deficiencies. | [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](rendering-tools/rendering-tool.md) |
@@ -81,7 +81,7 @@ https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-
 
 The **More Tools** (**+**) menu on the main toolbar and on the Drawer toolbar is dynamic: it omits any tab tools that are open on that toolbar.
 
-The **More tools** menu in the **Customize and control DevTools** (![Customize icon](media/customize-devtools-icon-light-theme.png)) menu is static: it always lists all of the optional tools.  The selected tool opens in the main toolbar if it's a Panel tool, or on the Drawer if it's a Drawer tool.  You can right-click the tool's tab to move it to the other toolbar.
+The **More tools** menu in the **Customize and control DevTools** (![Customize icon](./about-tools-images/customize-devtools-icon-light-theme.png)) menu is static: it always lists all of the optional tools.  The selected tool opens in the main toolbar if it's a Panel tool, or on the Drawer if it's a Drawer tool.  You can right-click the tool's tab to move it to the other toolbar.
 
 
 <!-- ====================================================================== -->
@@ -95,11 +95,11 @@ In the **Command Menu**:
 
 The **Command Menu** first lists the Panel tools, and then the Drawer tools:
 
-![The Command Menu, showing the Panel tools grouped together, and then the Drawer tools](media/command-menu-panel-vs-drawer-tools.png)
+![The Command Menu, showing the Panel tools grouped together, and then the Drawer tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
 
 To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom** or **Move to top**.
 
-To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Or, click the **Customize and control DevTools** (![Customize icon](media/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
+To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Or, click the **Customize and control DevTools** (![Customize icon](./about-tools-images/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
 
 
 <!-- ====================================================================== -->
@@ -126,7 +126,7 @@ To close all of the optional tabs at once:
 
 To restore all of the default tabs on the main toolbar:
 
-1. In DevTools, select **Settings** (![Settings icon](media/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. In DevTools, select **Settings** (![Settings icon](./about-tools-images/settings-gear-icon-light-theme.png)) > **Preferences**.
 
 1. Click the **Restore defaults and refresh** button.
 
@@ -137,4 +137,4 @@ To restore all of the default tabs on the main toolbar:
 ## See also
  
 * [Overview of DevTools](overview.md) - Similar to the present article, but broader coverage, with a top-level introduction of DevTools.
-* [Simplify DevTools using Focus Mode](experimental-features/focus-mode.md), in _Experimental features_.  In **Focus Mode**, the **Activity Bar** is a compact replacement for the main toolbar, and the **Quick View** list is a replacement for the tabs on the Drawer toolbar.
+* [Simplify DevTools using Focus Mode](experimental-features/focus-mode.md) - In **Focus Mode**, the **Activity Bar** is a compact replacement for the main toolbar, and the **Quick View** list is a replacement for the tabs on the Drawer toolbar.

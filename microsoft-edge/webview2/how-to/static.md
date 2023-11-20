@@ -21,7 +21,7 @@ For an app that doesn't ship `WebView2Loader.dll`, do the following:
 
 1. Locate the section in the code where you include the WebView2 NuGet package target files.  The location in the code is highlighted in the following figure:
 
-   ![Project Files code](./media/insert-here.png)
+   ![Project Files code](./static-images/insert-here.png)
 
 1. Copy the following code and paste it where the `Microsoft.Web.WebView2.targets` is included:
 
@@ -33,7 +33,7 @@ For an app that doesn't ship `WebView2Loader.dll`, do the following:
 
    The inserted code is shown below:
 
-   ![The inserted code](./media/static-lib.png)
+   ![The inserted code](./static-images/static-lib.png)
 
 1. Compile and run your app.
 

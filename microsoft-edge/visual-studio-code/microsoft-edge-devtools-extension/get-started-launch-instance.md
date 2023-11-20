@@ -43,13 +43,13 @@ This way of opening DevTools is useful for these simple scenarios:
 
 1. In Visual Studio Code, select **File** > **New Window**.  Initially, no folder is opened.
 
-1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens:
+1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens:
 
-   ![The Launch Instance button with no folder open](./get-started-images/launch-instance-button-no-folder.png)
+   ![The Launch Instance button with no folder open](./get-started-launch-instance-images/launch-instance-button-no-folder.png)
 
 1. Click the **Launch Instance** button.  The **Edge DevTools** tab opens, and the **Edge DevTools: Browser** tab opens, displaying the default, Success page:
 
-   ![The default result of Launch Instance: the 'Edge DevTools' tabs](./get-started-images/launch-instance-result.png)
+   ![The default result of Launch Instance: the 'Edge DevTools' tabs](./get-started-launch-instance-images/launch-instance-result.png)
 
    The Success page source file is a self-contained `.html` file in a directory on your drive.  This is a single `.html` file that includes CSS rules (in a `<style>` element).  It also includes a JavaScript `console` statement (in a `<script>` element).
 
@@ -73,7 +73,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 
    The first time you open a folder, you must confirm that you trust the authors of files in this folder:
 
-   ![Do you trust the authors in the files of this folder?](./get-started-images/trust.png)
+   ![Do you trust the authors in the files of this folder?](./get-started-launch-instance-images/trust.png)
 
 1. Click the **Yes, I trust the authors** button.
 
@@ -81,7 +81,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 
 <!-- if Trust requires re-trying these two steps: -->
 
-1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools button](./get-started-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens.
+1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools button](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens.
 
 1. Click the **Launch Instance** button.  The **Edge DevTools** tab opens, and the **Edge DevTools: Browser** tab opens, displaying the default, Success page.
 
@@ -89,7 +89,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 <!-- ====================================================================== -->
 ## Step 4: Edit CSS
 
-1. In the **Edge DevTools** tab, click the **Select an element in the page to inspect it** (![Inspect tool icon](./get-started-images/inspect-tool-icon.png)) button, sometimes called the **Inspect** button.
+1. In the **Edge DevTools** tab, click the **Select an element in the page to inspect it** (![Inspect tool icon](./get-started-launch-instance-images/inspect-tool-icon.png)) button, sometimes called the **Inspect** button.
 
 1. In the **Edge DevTools: Browser** tab, hover over different parts of the page, while you watch the **Elements** tool's DOM tree expand and update.
 
@@ -118,7 +118,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
    *  The **Edge DevTools** tab.
    *  The **Edge DevTools: Browser** tab.
 
-   ![Success page editing h2 CSS size](./get-started-images/success-page-edit-h2-css.png)
+   ![Success page editing h2 CSS size](./get-started-launch-instance-images/success-page-edit-h2-css.png)
 
 
 <!-- ====================================================================== -->
@@ -136,9 +136,9 @@ By entering a file path in the address bar of the **Edge DevTools: Browser** tab
 
 1. If prompted, click the **Yes, I trust the authors** button.  Aside from granting trust, the **Launch Instance** approach doesn't actually require opening a folder, if you specify a file path rather than a URL in the DevTools browser.
 
-1. If the **Edge DevTools** tabs aren't open already, in the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-images/microsoft-edge-tools-icon.png)), and then click the **Launch Instance** button:
+1. If the **Edge DevTools** tabs aren't open already, in the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)), and then click the **Launch Instance** button:
 
-   ![The Launch Instance button with no folder open](./get-started-images/launch-instance-button-no-folder.png)
+   ![The Launch Instance button with no folder open](./get-started-launch-instance-images/launch-instance-button-no-folder.png)
 
 1. In the Activity Bar, select **Explorer**, and then right-click `\demo-to-do\index.html` > **Copy Path**.
 
@@ -154,7 +154,7 @@ By entering a file path in the address bar of the **Edge DevTools: Browser** tab
 
 The address bar that results from the **Launch Instance** button can be used to open a URL on a server.  However, the **Launch Project** button, along with a URL stored in `launch.json`, is the main way to open a webpage by specifying a URL, and the tools then open in Debug mode.
 
-1. If your localhost server is running, paste a localhost URL, such as [http://localhost:8080](http://localhost:8080).  Or, paste the github.io server URL, [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
+1. If your localhost server is running, paste a localhost URL, such as `http://localhost:8080`.  Or, paste the github.io server URL, [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 
    If you want to use CSS mirror editing to edit your source files, you'll need to open a folder in Visual Studio Code; otherwise, clear the **CSS mirror editing** checkbox in the **Styles** tab in the **Elements** tool in the **Edge DevTools** tab.  Clearing the checkbox prevents error messages about mapping and mirror editing when you experiment with changing CSS in DevTools and haven't provided a CSS source file for DevTools.
 
@@ -170,7 +170,7 @@ The address bar that results from the **Launch Instance** button can be used to 
 
 1. Select Activity Bar > **Microsoft Edge Tools**.  If the **Targets** section lists any targets, hover on the right side of the target instance and then click **Close instance** (**x**).  The **Launch Instance** button appears, indicating that all DevTools instances are closed.
 
-   ![Closing DevTools opened via Launch Instance](./get-started-images/launch-instance-close-devtools.png)
+   ![Closing DevTools opened via Launch Instance](./get-started-launch-instance-images/launch-instance-close-devtools.png)
 
    Note that in the above screenshot, Visual Studio Code isn't in Debug mode; for example, there's no Debug toolbar.  If there were a Debug toolbar, you could close DevTools by clicking the **Stop** button.
 

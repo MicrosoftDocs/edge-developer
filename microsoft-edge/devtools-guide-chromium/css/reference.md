@@ -34,13 +34,13 @@ The **Elements** tool in DevTools lets you view or change the CSS of one element
 
 In the following figure, the `h1` element that is highlighted in the **DOM Tree** is the selected element.  On the right, the styles of the element are shown in the **Styles** pane.  On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**:
 
-![An example of a selected element](../media/css-elements-styles-h1.msft.png)
+![An example of a selected element](./reference-images/css-elements-styles-h1.png)
 
 There are many ways to select an element:
 
 *  In a rendered webpage, right-click a page element, and then click **Inspect**.
 
-*  In DevTools, click **Select an element** (![Select an element](../media/select-an-element-icon.msft.png)) or press **Ctrl+Shift+C** (Windows, Linux) or **Command+Shift+C** (macOS), and then click the element in the viewport.
+*  In DevTools, click **Select an element** (![Select an element](./reference-images/select-an-element-icon.png)) or press **Ctrl+Shift+C** (Windows, Linux) or **Command+Shift+C** (macOS), and then click the element in the viewport.
 
 *  In DevTools, click the element in the **DOM Tree**.
 
@@ -52,74 +52,73 @@ There are many ways to select an element:
 
 In the **Styles** pane, click the link next to a CSS rule to open the external stylesheet that defines the rule.  The stylesheet opens in the **Editor** pane of the **Sources** tool.
 
-If the stylesheet is minified, click the **Format** (![Format](../media/format-icon.msft.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
+If the stylesheet is minified, click the **Format** (![Format](./reference-images/format-icon.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
 
-<!-- todo: delete /en-us ? 2x -->
 In the following figure, after you click
-`https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --> you are taken to line 2 of
-`https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- master kind of works but all lines are concated.  changing master to main doesn't work -->
+`https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --><!--keep /en-us--> you are taken to line 2 of
+`https://learn.microsoft.com/_themes/docs.theme/master/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- master kind of works but all lines are concated.  changing master to main doesn't work -->
 
-![Viewing the stylesheet where a rule is defined](../media/css-elements-styles-h1-highlight.msft.png)
+![Viewing the stylesheet where a rule is defined](./reference-images/css-elements-styles-h1-highlight.png)
 
 
 <!-- ====================================================================== -->
 ## View only the CSS that is actually applied to an element
 
-The **Styles** panel shows you all of the rules that apply to an element, including declarations that have been overridden.  When you aren't interested in overridden declarations, use the **Computed** panel to view only the CSS that is actually being applied to an element.
+The **Styles** pane shows you all of the rules that apply to an element, including declarations that have been overridden.  When you aren't interested in overridden declarations, use the **Computed** pane to view only the CSS that is actually being applied to an element.
 
 1. [Select an element](#select-an-element).
 
-1. Go to the **Computed** panel in the **Elements** tool.
+1. Go to the **Computed** pane in the **Elements** tool.
 
-   On a wide DevTools window, the **Computed** panel doesn't exist.  The contents of the **Computed** panel are shown on the **Styles** panel.
+   On a wide DevTools window, the **Computed** pane doesn't exist.  The contents of the **Computed** pane are shown on the **Styles** pane.
 
    Inherited properties are opaque.
 
 1. To display all inherited values, select the **Show All** checkbox.
 
-   In the following figure, the **Computed** panel shows the CSS properties being applied to the currently selected `h1` element:
+   In the following figure, the **Computed** pane shows the CSS properties being applied to the currently selected `h1` element:
 
-   ![The Computed panel](../media/css-elements-computed-h1.msft.png)
+   ![The Computed panel](./reference-images/css-elements-computed-h1.png)
 
 
 <!-- ====================================================================== -->
 ## View CSS properties in alphabetical order
 
-Use the **Computed** panel.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
+Use the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
 
 
 <!-- ====================================================================== -->
 ## View inherited CSS properties
 
-Check the **Show All** checkbox in the **Computed** panel.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
+Check the **Show All** checkbox in the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
 
 
 <!-- ====================================================================== -->
 ## View an element's box model
 
-To view [the box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model) of an element, go to the **Styles** panel.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.
+To view [the box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model) of an element, go to the **Styles** pane.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.
 
 To change a value, double-click it.
 
-In the following figure, the **Box Model** diagram in the **Styles** panel shows the box model for the currently selected `h1` element.
+In the following figure, the **Box Model** diagram in the **Styles** pane shows the box model for the currently selected `h1` element.
 
-![The Box Model diagram](../media/css-elements-styles-h1-2.msft.png)
+![The Box Model diagram](./reference-images/css-elements-styles-h1-2.png)
 
 
 <!-- ====================================================================== -->
 ## Search and filter the CSS of an element
 
-Use the **Filter** text box on the **Styles** and **Computed** panels to search for specific CSS properties or values.
+Use the **Filter** text box on the **Styles** and **Computed** panes to search for specific CSS properties or values.
 
-To also search inherited properties in the **Computed** panel, check the **Show All** checkbox.
+To also search inherited properties in the **Computed** pane, check the **Show All** checkbox.
 
-In the following figure, the **Styles** panel is filtered to only show rules that include the search query `color`.
+In the following figure, the **Styles** pane is filtered to only show rules that include the search query `color`.
 
-![Filter the Styles panel](../media/css-elements-styles-filter-color.msft.png)
+![Filter the Styles panel](./reference-images/css-elements-styles-filter-color.png)
 
-In the following figure, the **Computed** panel is filtered to only show declarations that include the search query `100%`.
+In the following figure, the **Computed** pane is filtered to only show declarations that include the search query `100%`.
 
-![Filter the Computed panel](../media/css-elements-computed-filter-100.msft.png)
+![Filter the Computed panel](./reference-images/css-elements-computed-filter-100.png)
 
 
 <!-- ====================================================================== -->
@@ -130,7 +129,7 @@ To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
 
 1. [Select an element](#select-an-element).
 
-1. On the **Elements** tool, go to the **Styles** tab.
+1. On the **Elements** tool, go to the **Styles** pane.
 
 1. Click **:hov**.
 
@@ -138,7 +137,7 @@ To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
 
    The following figure shows toggling the `:hover` pseudo-class.  In the viewport, the `background-color: cornflowerblue` declaration is applied to the element, even though the element isn't actually being hovered over.
 
-   ![Toggle the :hover pseudo-class](../media/css-elements-styles-hov-hover.msft.png)
+   ![Toggle the :hover pseudo-class](./reference-images/css-elements-styles-hov-hover.png)
 
 For an interactive tutorial, see [Add a pseudo-state to a class](../css/index.md#add-a-pseudostate-to-a-class).
 
@@ -162,27 +161,25 @@ The **Coverage** tool shows you what CSS a page actually uses.
 
 1. Open the [Command Menu](../command-menu/index.md) by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS), while DevTools has focus.
 
-1. Start typing `coverage`, and then select **Show Coverage**.  The **Coverage** tool appears.
+1. Start typing `coverage`, and then select **Show Coverage**:
+   
+   ![Opening the Coverage tool from the Command Menu](./reference-images/css-console-command-menu-coverage.png)
+   
+   The **Coverage** tool appears:
+   
+   ![The Coverage tool](./reference-images/css-console-qs-coverage-empty.png)
 
-   Opening the Coverage tab from the Command Menu:
-
-   ![Opening the Coverage tab from the Command Menu](../media/css-console-command-menu-coverage.msft.png)
-
-   The Coverage tab:
-
-   ![The Coverage tab](../media/css-console-qs-coverage-empty.msft.png)
-
-1. Click **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page](../media/refresh-icon.msft.png)).  The page refreshes and the **Coverage** tab provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
+1. Click **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page](./reference-images/refresh-icon.png)).  The page refreshes and the **Coverage** tool provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
 
    An overview of how much CSS (and JavaScript) is used and unused:
 
-   ![An overview of how much CSS (and JavaScript) is used and unused](../media/css-console-qs-coverage-run.msft.png)
+   ![An overview of how much CSS (and JavaScript) is used and unused](./reference-images/css-console-qs-coverage-run.png)
 
 1. To display a line-by-line breakdown of what CSS is used, click a CSS file.
 
    In the following figure, lines 145 to 147 and 149 to 151 of `b66bc881.site-ltr.css` are unused, whereas lines 163 to 166 are used:
 
-   ![A line-by-line breakdown of used and unused CSS](../media/css-sources-css-coverage.msft.png)
+   ![A line-by-line breakdown of used and unused CSS](./reference-images/css-sources-css-coverage.png)
 
 
 <!-- ====================================================================== -->
@@ -221,7 +218,7 @@ To add an inline declaration:
 
 In the following figure, the `margin-top` and `background-color` properties have been applied to the selected element.  In the **DOM Tree**, the declarations are reflected in the element's `style` attribute.
 
-![Add inline declarations](../media/css-elements-styles-margin-top-background-color.msft.png)
+![Add inline declarations](./reference-images/css-elements-styles-margin-top-background-color.png)
 
 
 <!-- ====================================================================== -->
@@ -239,7 +236,7 @@ To add a declaration to an existing style rule:
 
 1. Enter a valid value for that property and press **Enter**.
 
-![Adding a declaration to a style rule](../media/css-elements-styles-border-bottom-style.msft.png)
+![Adding a declaration to a style rule](./reference-images/css-elements-styles-border-bottom-style.png)
 
 
 <!-- ====================================================================== -->
@@ -249,7 +246,7 @@ To change the name of a CSS declaration, double-click the declaration's name.
 
 To change the value of a CSS declaration, double-click the declaration's value.  The following screenshot shows selecting a value from a list:
 
-![Changing the value of a declaration](../media/css-elements-styles-border-bottom-style-dropdown.msft.png)
+![Changing the value of a declaration](./reference-images/css-elements-styles-border-bottom-style-dropdown.png)
 
 To change a numerical value, type in the value, or use the arrow keys, per the next section.
 
@@ -282,7 +279,7 @@ To add a class to an element:
 
 1. Press **Enter**.
 
-   ![The Element Classes pane](../media/css-elements-styles-filter-classes.msft.png)
+   ![The Element Classes pane](./reference-images/css-elements-styles-filter-classes.png)
 
 
 <!-- ====================================================================== -->
@@ -304,11 +301,11 @@ To add a new style rule:
 
 1. [Select an element](#select-an-element).
 
-1. Click **New Style Rule** (![New Style Rule](../media/new-style-rule-icon.msft.png)).  DevTools inserts a new rule beneath the **element.style** rule.
+1. Click **New Style Rule** (![New Style Rule](./reference-images/new-style-rule-icon.png)).  DevTools inserts a new rule beneath the **element.style** rule.
 
    In the following figure, DevTools adds the `h1.devsite-page-title` style rule after you click **New Style Rule**.
 
-   ![Add a new style rule](../media/css-elements-styles-style-new.msft.png)
+   ![Add a new style rule](./reference-images/css-elements-styles-style-new.png)
 
 
 ### Select a stylesheet to add a rule to
@@ -317,22 +314,22 @@ By default, when adding a style rule, DevTools creates a new stylesheet named `i
 
 To instead add the rule in an existing stylesheet:
 
-*  Click and hold **New Style Rule** (![New Style Rule](../media/new-style-rule-icon.msft.png)) and then select a stylesheet from the list to add the style rule to.
+*  Click and hold **New Style Rule** (![New Style Rule](./reference-images/new-style-rule-icon.png)) and then select a stylesheet from the list to add the style rule to.
 
-![Selecting a stylesheet](../media/css-elements-styles-style-new-select-existing.msft.png)
+![Selecting a stylesheet](./reference-images/css-elements-styles-style-new-select-existing.png)
 
 
 ### Add a style rule to a specific location
 
 By default, adding a style rule by clicking on **New Style Rule** inserts the new rule beneath the **element.style** rule in the `inspector-stylesheet` stylesheet.
 
-To add a style rule in a specific location of the **Styles** panel instead:
+To add a style rule in a specific location of the **Styles** pane instead:
 
 1. Hover on the style rule that is directly above where you want to add your new style rule.
 
-1. Click **Insert Style Rule Below** (![Insert Style Rule Below icon](../media/new-style-rule-icon.msft.png)).
+1. Click **Insert Style Rule Below** (![Insert Style Rule Below icon](./reference-images/new-style-rule-icon.png)).
 
-![Insert Style Rule Below](../media/css-elements-styles-insert-style-rule-below.msft.png)
+![Insert Style Rule Below](./reference-images/css-elements-styles-insert-style-rule-below.png)
 
 
 <!-- ====================================================================== -->
@@ -348,31 +345,31 @@ To toggle a single declaration on or off:
 
    In the following figure, the `margin-top` property for the currently selected element has been toggled off.
 
-   ![Toggle a declaration](../media/css-elements-styles-rule-deactivated.msft.png)
+   ![Toggle a declaration](./reference-images/css-elements-styles-rule-deactivated.png)
 
 
 <!-- ====================================================================== -->
 ## Change colors with the Color Picker
 
-The **Color Picker** provides a GUI for changing `color` and `background-color` declarations.
+The **Color Picker** provides a user interface for changing `color` and `background-color` declarations.
 
 To open the **Color Picker**:
 
 1. [Select an element](#select-an-element).
 
-1. In the **Styles** panel, find the `color`, `background-color`, or similar declaration that you want to change.  To the left of the `color`, `background-color`, or similar value, there is a small square, which is a preview of the color.
+1. In the **Styles** pane, find the `color`, `background-color`, or similar declaration that you want to change.  To the left of the `color`, `background-color`, or similar value, there is a small square, which is a preview of the color.
 
    In the following figure, the small square to the left of `rgba(0, 0, 0, 0.7)` is a preview of that color.
 
-   ![Color preview](../media/css-elements-styles-rule-overlay-color-box.msft.png)
+   ![Color preview](./reference-images/css-elements-styles-rule-overlay-color-box.png)
 
 1. Click the preview to open the **Color Picker**.
 
-   ![The Color Picker](../media/css-elements-styles-rule-color-picker.msft.png)
+   ![The Color Picker](./reference-images/css-elements-styles-rule-color-picker.png)
 
 The following figure and list describes of each of the UI elements of the **Color Picker**.
 
-![The Color Picker, annotated](../media/css-elements-styles-rule-color-picker-annotated.msft.png)
+![The Color Picker, annotated](./reference-images/css-elements-styles-rule-color-picker-annotated.png)
 
 | Callout | Component | Description |
 |---|---|---|
@@ -391,7 +388,7 @@ The following figure and list describes of each of the UI elements of the **Colo
 
 To change the selected color to some other color on the page:
 
-1. Click the **Eyedropper** icon (![Eyedropper](../media/eyedropper-icon.msft.png)). Your cursor changes to a magnifying glass.
+1. Click the **Eyedropper** icon (![Eyedropper](./reference-images/eyedropper-icon.png)). Your cursor changes to a magnifying glass.
 
 1. Hover on the pixel that has the color you want to sample, anywhere on your screen.
 
@@ -399,7 +396,7 @@ To change the selected color to some other color on the page:
 
    In the following figure, the **Color Picker** shows a current color value of `rgba(0,0,0,0.7)`, which is close to black.  The specific color changes to the version of black that is currently highlighted in the viewport after you clicked it.
 
-   ![Using the Eyedropper](../media/css-color-picker-eye-dropper.msft.png)
+   ![Using the Eyedropper](./reference-images/css-color-picker-eye-dropper.png)
 
 See also:
 * [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
@@ -408,23 +405,84 @@ See also:
 <!-- ====================================================================== -->
 ## Change angle value with the Angle Clock
 
-The **Angle Clock** provides a GUI for changing the angle amounts in CSS property values.
+The **Angle Clock** provides a user interface for changing the angle amounts in CSS property values.
 
 To open the **Angle Clock**:
 
 1. Select an element which includes an angle declaration. <!-- For example, select the text below. -->
 
-1. In the **Styles** tab, find the `transform` or `background` declaration that you want to change.  Click the **Angle Preview** box next to the angle value.
+1. In the **Styles** pane, find the `transform` or `background` declaration that you want to change.  Click the **Angle Preview** box next to the angle value.
 
    In the following figure, the small clock to the left of `100deg` is a preview of the angle.
 
 1. Click the preview to open the **Angle Clock**:
 
-   ![Angle preview](images/css-angle.msft.png)
+   ![Angle preview](./reference-images/css-angle.png)
 
 1. Change the angle value by clicking on the **Angle Clock** circle, or scroll your mouse to increase or decrease the angle value by 1.
 
 There are more keyboard shortcuts to change the angle value.  Find out more in the [Styles pane keyboard shortcuts](../shortcuts/index.md#styles-pane-keyboard-shortcuts).
+
+
+<!-- ====================================================================== -->
+## Change box and text shadows with the Shadow Editor
+
+Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shadow` CSS property on an HTML element:
+
+1. [Select an element](#select-an-element) with a `box-shadow` or `text-shadow` declaration.
+
+   For example, open [the 1DIV demo page](https://microsoftedge.github.io/Demos/1DIV/dist/) in a new tab or window, right-click the page and select **Inspect** to open DevTools, and then in the **Elements** tool, select the `<div class="demos">` element.
+
+1. In the **Styles** pane, in the `.demos` CSS rule, find the `box-shadow` declaration, and then click its **Open shadow editor** (![The shadow editor button icon](./reference-images/shadow-editor-icon.png)) button.
+
+   The **Shadow Editor** opens:
+
+   ![The Shadow Editor](./reference-images/shadow-editor.png)
+
+1. Change the shadow properties, as follows:
+
+   | Property | How to change |
+   |---|---|
+   | **Type** | Select **Outset** or **Inset**.  Only for `box-shadow`. |
+   | **X offset** | Specify a value in the text box, or drag the blue dot. |
+   | **Y offset** | Specify a value in the text box, or drag the blue dot. |
+   | **Blur** | Specify a value in the text box, or drag the slider. |
+   | **Spread** | Specify a value in the text box, or drag the slider.  Only for `box-shadow`. |
+   <!-- todo: explain the meaning of each property, not only how to change the value.  change column heading to:
+   | Property | Description |
+   | Property | Description and how to change |
+   -->
+
+   The changes are applied to the element in the rendered webpage in real time:
+
+   ![The effect of changes made in the Shadow Editor](./reference-images/shadow-editor-changes.png)
+
+
+<!-- ====================================================================== -->
+## Edit animation and transition timings with the Easing Editor
+
+Use the **Easing Editor** to change the value of the [animation-timing-function](https://developer.mozilla.org/docs/Web/CSS/animation-timing-function) or [transition-timing-function](https://developer.mozilla.org/docs/Web/CSS/transition-timing-function) property on an HTML element:
+
+1. [Select an element](#select-an-element) that has a CSS animation or transition applied.
+
+   For example, open the [animated property demo page](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) in a new tab or window, right-click the page and select **Inspect** to open DevTools, and then in the **Elements** tool, press **Ctrl+F** and find "spinner", and then select the `<div class="spinner">` element.
+
+   The red and green boxes on this demo page are two different CSS animations. Both animations run with CSS by using the `animation` CSS property, and define an `ease-in-out` timing function.
+
+1. In the **Styles** pane, find the `animation` declaration in the `.bad .spinner` CSS rule, and click the **Open cubic bezier editor** (![The cubic bezier editor button icon](./reference-images/easing-editor-icon.png)) button.
+
+   The **Easing Editor** opens:
+
+   ![The Easing Editor](./reference-images/easing-editor.png)
+
+1. Change the properties of the animation timing function:
+
+   * Choose one of the pre-defined timing functions from the list.
+   * Create your own timing function by dragging the cubic-bezier curve handles.
+
+   The changes are applied to the element in the rendered webpage in real time:
+
+   ![The effect of changes made in the Easing Editor](./reference-images/easing-editor-changes.png)
 
 
 <!-- ====================================================================== -->

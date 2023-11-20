@@ -73,7 +73,7 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/customize/theme
       - linkListType: whats-new
         links:
-          - text: Experimental features
+          - text: Experimental features in Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/experimental-features/index
       - linkListType: how-to-guide
         links:
@@ -152,7 +152,7 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks
           - text: Understand security issues using the Security tool
             url: /microsoft-edge/devtools-guide-chromium/security/index
-          - text: Analyze runtime performance
+          - text: Troubleshooting common performance issues
             url: /microsoft-edge/devtools-guide-chromium/rendering-tools/index
 
 # =============================================================================

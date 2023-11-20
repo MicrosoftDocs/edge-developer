@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/07/2021
+ms.date: 08/28/2023
 ---
 # Supported APIs for Microsoft Edge extensions
 
@@ -49,6 +49,7 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [proxy](https://developer.chrome.com/extensions/proxy) | Manage proxy settings for Microsoft Edge. This API depends on the `EdgeSetting` prototype of the `types` API to get and set the proxy configuration of Microsoft Edge. |
 | [runtime](https://developer.chrome.com/extensions/runtime) | Retrieve the background page, return details about the manifest, and listen for and respond to events in the app or extension lifecycle. You can also convert the relative path of URLs to fully qualified URLs. |
 | [sessions](https://developer.chrome.com/extensions/sessions) | Query and restore tabs and windows from a browsing session. |
+| [sidePanel](https://developer.chrome.com/extensions/sidePanel) | Host custom content in the browser's sidebar alongside the main content of a webpage.  See [Extensions in the Microsoft Edge sidebar](../developer-guide/sidebar.md). |
 | [storage](https://developer.chrome.com/extensions/storage) | Store, retrieve, and track changes to user data. |
 | [system.memory](https://developer.chrome.com/extensions/system_memory) | The `system.memory` API. |
 | [system.storage](https://developer.chrome.com/extensions/system_storage) | Query information about storage devices. You can also receive notifications when storage devices are attached or detached. |
@@ -63,33 +64,39 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [windows](https://developer.chrome.com/extensions/windows) | Interact with browser windows to create, modify, and rearrange windows in the browser. |
 
 
-
 <!-- ====================================================================== -->
 ## Unsupported extension APIs
 
 Microsoft Edge doesn't support the following Extension APIs:
 
-* `chrome.gcm`.
-* `chrome.identity.getAccounts`.
+* `chrome.gcm`
+* `chrome.identity.getAccounts`
 * `chrome.identity.getAuthToken` - As an alternate, you can use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.
-* `chrome.instanceID`.
+* `chrome.instanceID`
+* `chrome.readingList`<!-- [Chrome Extension API Proposal: chrome.readingList](https://docs.google.com/document/d/1f1wW2955nY5Rp3vfS0JGuo1kACOAmsjZupvLYknWKII/edit#heading=h.mbf7udvanbrr) -->
 
 
 <!-- ====================================================================== -->
 ## Additional considerations for supported APIs
 
-*  The user must be signed into Microsoft Edge using a Microsoft account (MSA) or Azure Active Directory account to use `chrome.identity.getProfileUserInfo`. If the user is signed into Microsoft Edge using an on-premises Active Directory account, the API returns `null` for the email and ID values.
+*  The user must be signed into Microsoft Edge using a Microsoft account (MSA) or Microsoft Entra ID account to use `chrome.identity.getProfileUserInfo`. If the user is signed into Microsoft Edge using an on-premises Microsoft Entra ID account, the API returns `null` for the email and ID values.
 
    A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
 
 *  Microsoft Edge doesn't support extensions that use Chrome Web Store payments because it uses `identity.getAuthtoken` to request tokens for signed-in users.  These tokens are sent to the REST-based licensing API.
 
 
-
-
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/apps/external_extensions).
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Overview of Microsoft Edge extensions](../index.md)
+* [API reference](https://developer.chrome.com/extensions/) for Chromium extensions.

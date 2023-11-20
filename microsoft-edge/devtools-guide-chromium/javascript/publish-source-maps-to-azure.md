@@ -22,7 +22,7 @@ Source maps map your compiled production code to your original development sourc
 
 You must index your source maps on the Azure Artifacts symbol server, so that your source maps are available to DevTools when you debug your production website.
 
-To do this, add the `x_microsoft_symbol_client_key` string property to your source maps at compilation time.  This property contains the lowercase hexadecimal value of the [256-bit SHA-2 hash](https://en.wikipedia.org/wiki/SHA-2) of your corresponding original source file.
+To do this, add the `x_microsoft_symbol_client_key` string property to your source maps at compilation time.  This property contains the lowercase hexadecimal value of the [256-bit SHA-2 hash](https://wikipedia.org/wiki/SHA-2) of your corresponding original source file.
 
 DevTools is then able to compute this hash for each of your compiled files, and use the hash to retrieve the correct source map from the Azure Artifacts symbol server.  In order to securely retrieve your source maps, DevTools uses a Personal Access Token that you provide, to connect to the Azure Artifacts symbol server.
 
@@ -38,15 +38,15 @@ To generate a PAT in Azure DevOps:
 
 1. In Azure DevOps, go to **User settings** > **Personal access tokens**:
     
-   ![The 'User settings' menu in Azure DevOps, with the 'Personal access tokens' command](images/ado-pat-settings.png)
+   ![The 'User settings' menu in Azure DevOps, with the 'Personal access tokens' command](./publish-source-maps-to-azure-images/ado-pat-settings.png)
 
    The **Personal Access Tokens** page appears:
 
-   ![The 'Personal Access Tokens' page in Azure DevOps](images/ado-pat-page.png)
+   ![The 'Personal Access Tokens' page in Azure DevOps](./publish-source-maps-to-azure-images/ado-pat-page.png)
 
 1. Click **New Token**.  The **Create a new personal access token** dialog opens:
 
-   ![The 'Create a new personal access token' dialog, with 'Read & write' scope for Symbols selected](images/ado-pat-config-write.png)
+   ![The 'Create a new personal access token' dialog, with 'Read & write' scope for Symbols selected](./publish-source-maps-to-azure-images/ado-pat-config-write.png)
 
 1. In the **Name** text box, enter a name for the PAT, such as "publish source maps".
 
@@ -58,7 +58,7 @@ To generate a PAT in Azure DevOps:
 
 1. Click the **Create** button.  The **Success!** dialog appears:
 
-   ![The 'Success!' dialog with the PAT to copy](images/ado-pat-success-copy-clipboard.png)
+   ![The 'Success!' dialog with the PAT to copy](./publish-source-maps-to-azure-images/ado-pat-success-copy-clipboard.png)
 
 1. Click the **Copy to clipboard** button to copy the PAT.  Make sure to copy the token and store it in a secure location. For your security, it won't be shown again.
 
@@ -190,3 +190,4 @@ Note here that the `-n` parameter must be unique. Repetition of job names, even 
 
 * [Securely debug original code by using Azure Artifacts symbol server source maps](consume-source-maps-from-azure.md)
 * [Map the processed code to your original source code, for debugging](source-maps.md)
+* [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's New in DevTools (Microsoft Edge 115)_.

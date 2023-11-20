@@ -83,11 +83,11 @@ To make sure that source maps are enabled:
 
 1. To open DevTools, in Microsoft Edge, right-click a webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, click **Settings** (![Settings icon](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. In DevTools, click **Settings** (![Settings icon](./source-maps-images/settings-gear-icon-light-theme.png)) > **Preferences**.
 
 1. In the **Preferences** page, in the **Sources** section, make sure the **Enable JavaScript source maps** checkbox and the **Enable CSS source maps** checkbox are selected:
 
-   ![The Preferences page's Sources section with the 'Enable source maps' checkboxes selected](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)
+   ![The Preferences page's Sources section with the 'Enable source maps' checkboxes selected](./source-maps-images/javascript-settings-preferences-sources-enable-javascript-source-maps.png)
 
 1. In the upper right of **Settings**, click the **Close** (**x**) button.
 

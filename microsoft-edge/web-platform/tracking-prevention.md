@@ -19,7 +19,7 @@ The tracking prevention feature is built to uphold the Microsoft Edge [browser p
 
 Microsoft Edge currently offers users three levels of tracking prevention, which are selected by navigating to `edge://settings/privacy`.
 
-![Three settings of tracking prevention](media/tracking-prevention-settings.png)
+![Three settings of tracking prevention](./tracking-prevention-images/tracking-prevention-settings.png)
 
 1. **Basic** - The least restrictive level of tracking prevention that is designed for users who enjoy personalized advertisements and who don't mind being tracked on the web.  Basic only protects users against malicious trackers such as fingerprinters and cryptominers.
 
@@ -71,7 +71,7 @@ To provide protection from tracking actions on the web, Microsoft Edge takes two
 
 A user may choose the page info flyout icon on the left side of the address bar to find out which trackers were blocked on a specific page:
 
-![Blocked trackers in the page info flyout](media/page-info-flyout.png)
+![Blocked trackers in the page info flyout](./tracking-prevention-images/page-info-flyout.png)
 
 How the enforcements are applied depends on what level of tracking prevention the user selected and the mitigations that may apply.
 
@@ -146,7 +146,12 @@ The following table shows the enforcement actions and mitigations that are appli
 
 ### InPrivate behavior
 
-In Microsoft Edge 79, the default behavior was to apply Strict mode protections in InPrivate.  In Microsoft Edge 80, this behavior was replaced by a switch in `edge://settings/privacy` that allows users to decide whether to apply Strict mode protections or to keep their regular settings while browsing InPrivate.
+By default, InPrivate windows in Microsoft Edge use the same tracking prevention settings as regular windows.
+
+To always apply the "Strict" level of tracking prevention to InPrivate windows:
+
+1. Go to `edge://settings/privacy`.
+1. Click **Always use "Strict" tracking prevention when browsing InPrivate**.
 
 
 <!-- ====================================================================== -->

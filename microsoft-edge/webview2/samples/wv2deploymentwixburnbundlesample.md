@@ -68,7 +68,7 @@ If you haven't installed WiX tools, the WiX deployment projects in Solution Expl
 
 1. Click the **OK** button.  The WiX installer window closes.
 
-1. Press the **Windows** key ![Windows key logo](../../media/windows-keyboard-logo.png) on your keyboard, type **Windows Features**, and then press **Enter**.  The **Turn Windows features on or off** dialog appears.
+1. Press the **Windows logo key** ![Windows logo key](./wv2deploymentwixburnbundlesample-images/windows-keyboard-logo.png), type **Windows features**, and then press **Enter**.  The **Turn Windows features on or off** dialog appears.
 
 1. Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box:
 
@@ -137,7 +137,7 @@ Follow the steps in that section, and then return to this page and continue belo
 
    If the **Unsupported ... .wixproj** dialog appears, install the WiX Toolset and the WiX Toolset Extension, above:
 
-   ![Unsupported wix projects message](./media/unsupported-review-project-dialog.png)
+   ![Unsupported wix projects message](./wv2deploymentwixburnbundlesample-images/unsupported-review-project-dialog.png)
 
 1. This sample is an extension to the [WV2DeploymentWiXCustomActionSample](./wv2deploymentwixcustomactionsample.md) sample.  In Solution Explorer, expand **WV2DeploymentWiXCustomActionSample** and then double-click `Product.wxs`.
 

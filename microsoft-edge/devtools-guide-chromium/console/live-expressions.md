@@ -5,14 +5,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.date: 08/29/2023
 ---
 # Monitor changes in JavaScript using Live Expressions
 
-<!-- very short article in other repo:
-Watch JavaScript values in real-time with Live Expressions -->
+**Live Expressions** are a great way to monitor the value of JavaScript expressions that change a lot over time.  Instead of generating many distinct **Console** messages that you have to read and scroll through, you can pin JavaScript expressions to the top of the **Console** tool.
 
-**Live Expressions** are a great way to monitor JavaScript expressions that change a lot.  Instead of generating many **Console** messages to read and navigate, you can pin your specific JavaScript expressions to the top of the **Console**.
+With **Live Expressions**, you see the value of your JavaScript expressions at the top of the **Console** tool, always in the same place, and you can keep using **Console** logs for values that don't change as often.
+
+**Live Expressions** run exclusively on your computer, and you don't need to change anything in your code to display their values.
 
 
 <!-- ====================================================================== -->
@@ -20,17 +21,17 @@ Watch JavaScript values in real-time with Live Expressions -->
 
 To add a live expression:
 
-1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
+1. Open the [live expression demo webpage](https://microsoftedge.github.io/Demos/devtools-console/live-expressions.html) in a new window or tab.
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. In DevTools, open the **Console**.
+1. In DevTools, open the **Console** tool.
 
-1. In the **Console**, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** text box.
+1. In the **Console**, click the **Create live expression** (![The 'Create live expression' icon](./live-expressions-images/live-expression-icon.png)) icon next to the **Filter** text box.
 
-   A text box opens:
+   A text box appears:
 
-   ![Click the New live expression button to open a text box to type an expression](../media/console-live-expressions-new.msft.png)
+   ![The Console tool in DevTools, with the live expression text box below the toolbar](./live-expressions-images/empty-expression.png)
 
 1. Enter the JavaScript expression `document.activeElement` into the text box.  A Live Expression can be any valid JavaScript expression.
 
@@ -38,37 +39,43 @@ To add a live expression:
 
    The expression is now live, and displays `body` as the result:
 
-   <!-- update the captures, they assume that you're not reading the present article or accessibility demo page, but are reading the Dev Tools Overview article: -->
+   ![The Console tool, with a Live Expression row below the toolbar, showing the JavaScript expression document.activeElement, and its current result: body](./live-expressions-images/body-active-element.png)
 
-   ![The Live Expression for document.activeElement displays 'body' as the result](../media/console-live-expressions-document-active-element.msft.png)
+1. Click different parts of the webpage, or press **Tab** or **Shift+Tab** to move the focus around in the webpage.
 
-1. Click different parts of the webpage, or press **Tab** or **Shift+Tab** to move around in the webpage, the `document.activeElement` Live Expression value changes.
+   The `document.activeElement` Live Expression value changes to reflect the currently focused element in real time:
 
-   In the accessibility-testing demo webpage, when you **Tab** to put focus on the **Other** text box in the **Donation** section, the Live Expression value reads `input#freedonation.smallinput`.
+   ![The Console tool, with a Live Expression row below the toolbar, showing the JavaScript expression document.activeElement, and its current result: input#password](./live-expressions-images/input-active-element.png)
 
-   <!-- revise the step & the capture after it: -->
 
-1. In that same window, go to the webpage [Overview of DevTools](../overview.md), and then click the **Docs** button in the upper left.
+<!-- ====================================================================== -->
+## Add more live expressions
 
-   The Live Expression value changes to `button.nav-bar-button.focus-visible`:
+You can add multiple Live Expressions to the **Console** tool.  Each Live Expression is evaluated independently, and the results are displayed in the order that you add them.
 
-   ![To change the value of the Live Expression, interact with different elements on the webpage](../media/console-live-expressions-document-active-element-nav-button.msft.png)
+To add a second Live Expression:
 
-1. To change the value again, open and click the **Search** text box on the webpage.
+1. In the **Console** tool, click the **Create live expression** (![The 'Create live expression' icon](./live-expressions-images/live-expression-icon.png)) icon next to the **Filter** text box.
 
-   The Live Expression value changes to `input#site-search-input.autocomplete-input.input.is-small.focus-visible`:
+   A new text box appears below the first Live Expression:
 
-   ![Navigate to a different element in the webpage to update the Live Expression](../media/console-live-expressions-document-active-element-search.msft.png)
+   ![The Console tool in DevTools, with a live expression and a new live expression text box below it](./live-expressions-images/second-empty-expression.png)
+
+1. Enter a new JavaScript expression in the text box, for example `window.innerWidth` to display the width of the browser window.
+
+1. Repeat the steps to add another Live Expression for `window.innerHeight`.
+
+   The **Console** tool now displays three Live Expressions:
+
+   ![The Console tool in DevTools, with three live expressions: document.activeElement, window.innerWidth, and window.innerHeight](./live-expressions-images/three-expressions.png)
 
 
 <!-- ====================================================================== -->
 ## Remove Live Expressions
 
-A Live Expression is available as long as you keep it active.
+To get rid of a Live Expression, click the **Close** (![The close live expression icon](./live-expressions-images/close-icon.png)) icon next to the expression:
 
-*  To get rid of a Live Expression, click the `x` next to it:
-
-   ![To remove Live Expressions, click the 'x' next to it](../media/console-live-expressions-remove.msft.png)
+![The Console tool, with three live expressions, each with a close icon next to them](./live-expressions-images/remove-live-expression.png)
 
 
 <!-- ====================================================================== -->
@@ -77,7 +84,7 @@ A Live Expression is available as long as you keep it active.
 You can create as many Live Expressions as you want, and persist each Live Expression across browser sessions and windows.  Live Expressions are a way to cut down on noise in your debugging workflow.
 
 
-### Using Console logging to display mouse coordinates
+### Use Console logging to display mouse coordinates
 
 To monitor the mouse movement in the current webpage:
 
@@ -87,14 +94,14 @@ To monitor the mouse movement in the current webpage:
 
 1. Move your mouse around over the rendered demo webpage.
 
-   Many log messages are output, displayed in the **Console**:
+   Many log messages appear in the **Console**:
 
-   ![The Console tool displays an overwhelming number of messages about the mouse position](../media/console-live-expression-mouse-logging.msft.png)
+   ![The Console tool displays an overwhelming number of messages about the mouse position](./live-expressions-images/mouse-position-logs.png)
 
 The large amount of information slows down your debugging process, and makes it hard to see the changes that you're trying to monitor.  As the **Console** displays more messages when you move your mouse, the values that you want to see scroll off the screen.
 
 
-### Using Live Expressions to display mouse coordinates
+### Use Live Expressions to display mouse coordinates
 
 Use Live Expressions to monitor the mouse movement in the current webpage, without relying on verbose log messages.
 
@@ -102,22 +109,20 @@ To use Live Expressions to avoid excessive Console log messages:
 
 1. Open the demo webpage [Mouse movement without logging demo](https://microsoftedge.github.io/Demos/devtools-console/mousemove-no-log.html) in a new window or tab.
 
+   This demo webpage uses JavaScript to track the current position of the mouse and stores the coordinates in the `x` and `y` global variables.
+
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the demo webpage.
 
-1. Move your mouse around.  No log messages are output.
-
-   Enter two Live Expressions: the expression `x`, and the expression `y`, as follows:
-
-1. In the **Console** tool, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** text box.
-
-1. Enter the JavaScript expression `x` into the text box, and then click outside of the **Live Expression** text box.  Repeat for `y`.  If needed, see [Add a new live expression](#add-a-new-live-expression), above.
-
 1. Move your mouse around.
+   
+   The values of the `x` and `y` variables are updated, but no log messages are displayed.
 
-   Now in the DevTools Console, the Live Expression value is updated, below the Live Expression, showing the `x` and `y` coordinates of the mouse:
+1. In the **Console** tool, click the **Create live expression** (![The 'Create live expression' icon](./live-expressions-images/live-expression-icon.png)) icon next to the **Filter** text box, and then enter the JavaScript expression `x`.
 
-   ![Displaying the 'x' and 'y' coordinates of the mouse as Live Expressions](../media/console-live-expressions-x-and-y.msft.png)
+1. Repeat the above step to add a second Live Expression for `y`.
 
-When you use **Live Expressions**, you always get the information on the same part of your screen, and keep **Console** logs for values that don't change as much.
+1. Move your mouse around in the rendered webpage.
 
-**Live Expressions** run exclusively on your computer, and you don't need to change anything in your code to display the expression and its result.  **Live Expressions** are a great way to ensure that you only display the information that you want to debug.  Live Expressions also help you limit the noise on your users' computers.
+   Now in the **Console**, the values of the `x` and `y` Live Expressions are updated in real time:
+
+   ![The Console tool, with the x and y live expressions, showing the coordinates of the mouse in the rendered webpage](./live-expressions-images/x-and-y.png)

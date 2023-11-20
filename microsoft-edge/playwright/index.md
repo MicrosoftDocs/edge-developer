@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 11/24/2020
+ms.date: 06/05/2023
 ---
 # Use Playwright to automate and test in Microsoft Edge
 
@@ -14,7 +14,7 @@ The Playwright library provides cross-browser automation through a single API.
 
 [Playwright](https://playwright.dev/docs/intro) is a [Node.js](https://nodejs.org) library to automate [Chromium](https://www.chromium.org/Home), [Firefox](https://www.mozilla.org/firefox), and [WebKit](https://webkit.org) with a single API.  Playwright is built to enable cross-browser web automation that is evergreen, capable, reliable, and fast.  Because [Microsoft Edge is built on the open-source Chromium web platform](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration), Playwright is also able to automate Microsoft Edge.
 
-Playwright launches [headless browsers](https://en.wikipedia.org/wiki/Headless_browser) by default.  Headless browsers don't display a UI, so instead you must use the command line.  You can also configure Playwright to run full (non-headless) Microsoft Edge as well.
+Playwright launches [headless browsers](https://wikipedia.org/wiki/Headless_browser) by default.  Headless browsers don't display a UI, so instead you must use the command line.  You can also configure Playwright to run full (non-headless) Microsoft Edge as well.
 
 
 <!-- ====================================================================== -->
@@ -122,7 +122,7 @@ const playwright = require('playwright');
 })();
 ```
 
-![The example.png file produced by example.js](../media/playwright-example.png)
+![The example.png file produced by example.js](./index-images/playwright-example.png)
 
 `example.js` is a simple demonstration of the automation and testing scenarios that are enabled by Playwright.  To take screenshots in other web browsers, change the above code from `await playwright.chromium.launch` to the following code:
 
@@ -139,3 +139,9 @@ WebKit:
 ```
 
 For more information about Playwright and Playwright Test, go to the [Playwright website](https://playwright.dev/docs/intro).  Check out the [Playwright repo](https://github.com/microsoft/playwright) on GitHub.  To share your feedback on automating and testing your website or app with Playwright, [file an issue](https://github.com/microsoft/playwright/issues/new/choose).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Use Playwright to automate and test in WebView2](../webview2/how-to/playwright.md)
