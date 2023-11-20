@@ -438,7 +438,7 @@ Importing your data is completed locally on your device and is stored locally.  
 
 * Sign into Microsoft Edge with a Microsoft account, and turn on sync'ing of your browsing data across all signed-in devices.
 
-* Allow personalization of experiences and advertising on Bing, Microsoft News, and other Microsoft services.  To view or delete the imported browsing history that's available for personalization, along with Microsoft Edge browsing history, go to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
+* Allow personalization of experiences and advertising on [Bing](https://www.bing.com), Microsoft News, and other Microsoft services.  To view or delete the imported browsing history that's available for personalization, along with Microsoft Edge browsing history, go to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
 
 You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`.
 
