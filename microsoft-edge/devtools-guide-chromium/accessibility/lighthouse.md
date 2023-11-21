@@ -47,13 +47,13 @@ To audit a page using the Lighthouse tool:
 
    * For **Mode**, select **Navigation**.
    * For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  This option can affect the audit results.
-   * In the **Categories** section, select **Accessibility**, and clear the other categories.
+   * In the **Categories** section, select **Accessibility**, and clear the other categories:
 
    ![The configuration options to use](./lighthouse-images/configuration-options.png)
 
-1. Click **Generate report**.
+1. Click the **Analyze page load** button.
 
-   After 10 to 30 seconds, DevTools displays a report. The report shows a score for the page's accessibility out of 100. The report also gives tips on how to improve the accessibility of the page:
+   Lighthouse analyzes the page, and then DevTools displays a report.  The report shows a score for the page's accessibility, out of 100.  The report also gives tips on how to improve the accessibility of the page:
 
    ![A Lighthouse report for the Accessibility category](./lighthouse-images/accessibility-lighthouse-result.png)
 
