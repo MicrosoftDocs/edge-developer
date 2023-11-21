@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/13/2023
+ms.date: 11/20/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -199,21 +199,42 @@ The device frame for the iPhone 6/7/8:
 <!-- ------------------------------ -->
 #### Add a custom mobile device
 
-If the mobile device option that you need isn't included on the default list, you can add a custom device.
+If the mobile device option that you need isn't included on the default list, you can add a custom device.  
 
 To add a custom device:
+
+1. In DevTools, click the **Toggle device emulation** (![The 'Toggle device emulation' icon](./index-images/toggle-device-toolbar-dark-icon.png)) button to turn on device emulation.
+
+1. In the device dropdown list on the left,<!--no tooltip--> select the **Edit** menuitem:
 
 1. Select the **Device** list > **Edit**:
 
    ![Selecting Edit from the Device list](./index-images/device-toolbar-device-list-edit.png)
 
-1. Select **Add custom device**.
+   The DevTools **Settings** > **Devices** (**Emulated Devices**) page opens.
 
-1. On **Emulated Devices**, enter a device name, screen width, and screen height for the custom device.
+1. Click the **Add custom device** button.  The **Emulated Devices** page in settings adds a **Device** section at the top:
 
    The [device pixel ratio](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio), [user agent string](https://developer.mozilla.org/docs/Glossary/User_agent), and [device type](#set-the-device-type) fields are optional.  The device type defaults to **Mobile**:
 
    ![Adding a custom device](./index-images/device-toolbar-settings-emulated-devices-add.png)
+
+1. In the **Device** section, in the text boxes, enter a device name, screen width, and screen height for the custom device.
+
+1. Optionally, fill in the following fields:
+
+   * **Device pixel ratio**.  See [Set device pixel ratio](#set-device-pixel-ratio), above; and [Window: devicePixelRatio property](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio), at MDN.
+
+   * **User agent string**.  See [Set the user agent string](#set-the-user-agent-string), below; and [User agent](https://developer.mozilla.org/docs/Glossary/User_agent), at MDN.
+
+   * **User agent type** (device type).  See [Set the device type](#set-the-device-type), above.  Defaults to **Mobile**.
+
+1. Click the **Add** button.  The new device is now available in the device dropdown list in the upper left of the device emulator.
+
+
+To remove a custom device:
+
+* In DevTools > **Settings** > **Devices** (**Emulated Devices**), hover over the custom device name, and then click the trashcan icon.
 
 
 <!-- ------------------------------ -->
