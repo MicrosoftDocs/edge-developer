@@ -40,11 +40,11 @@ These variables and functions only work by entering them directly into the DevTo
 
 | Variable or function | Description |
 |---|---|
-| [Recently evaluated expression - $_](#recently-evaluated-expression---_) | Returns the value of the most recently evaluated expression. |
-| [Recently selected element or JavaScript object - $0-$4](#recently-selected-element-or-javascript-object---0-4) | Returns a recently selected element or JavaScript object. |
-| [Query selector - $(selector)](#query-selector---selector) | Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`. |
-| [Query selector all - \$\$(selector, \[startNode\])](#query-selector-all---selector-startnode) | Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`. |
-| [XPath - \$x(path, \[startNode\])](#xpath---xpath-startnode) | Returns an array of DOM elements that match the specified XPath expression. |
+| [Recently evaluated expression: $_](#recently-evaluated-expression-_) | Returns the value of the most recently evaluated expression. |
+| [Recently selected element or JavaScript object: $0-$4](#recently-selected-element-or-javascript-object-0-4) | Returns a recently selected element or JavaScript object. |
+| [Query selector: $(selector)](#query-selector-selector) | Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`. |
+| [Query selector all: \$\$(selector, \[startNode\])](#query-selector-all-selector-startnode) | Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`. |
+| [XPath: \$x(path, \[startNode\])](#xpath-xpath-startnode) | Returns an array of DOM elements that match the specified XPath expression. |
 | [clear()](#clear) | Clears the console of its history. |
 | [copy(object)](#copyobject) | Copies a string representation of the specified object to the clipboard. |
 | [debug(function)](#debugfunction) | When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel. |
@@ -66,9 +66,9 @@ These variables and functions only work by entering them directly into the DevTo
 
 
 <!-- ====================================================================== -->
-## Recently evaluated expression - $_
+## Recently evaluated expression: $_
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `$_` returns the value of the most recently evaluated expression.
 
 **Syntax:**
@@ -121,9 +121,9 @@ $_
 
 
 <!-- ====================================================================== -->
-## Recently selected element or JavaScript object - $0-$4
+## Recently selected element or JavaScript object: $0-$4
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `$0`, `$1`, `$2`, `$3`, and `$4` return recently selected elements or JavaScript objects.
 
 <!-- add'l info -->
@@ -163,9 +163,9 @@ $0
 
 
 <!-- ====================================================================== -->
-## Query selector - $(selector)
+## Query selector: $(selector)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `$(selector)` returns the reference to the first DOM element that matches the specified CSS selector `selector`.
 
 <!-- add'l info -->
@@ -203,9 +203,9 @@ The `$()` function accepts a second parameter, `parentElement`, that specifies a
 
 
 <!-- ====================================================================== -->
-## Query selector all - \$\$(selector, \[startNode\])
+## Query selector all: \$\$(selector, \[startNode\])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `$$()` returns a list of elements that match the specified CSS selector, like `document.querySelectorAll()`.
 
 <!-- add'l info -->
@@ -237,9 +237,9 @@ This `$$()` function also supports a second parameter, `parentElement`, that spe
 
 
 <!-- ====================================================================== -->
-## XPath - \$x(path, \[startNode\])
+## XPath: \$x(path, \[startNode\])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `$x(path)` returns an array of DOM elements that match the specified XPath expression `path`.
 
 <!-- add'l info: n/a -->
@@ -272,7 +272,7 @@ Similar to the other selector commands, `$x(path)` has an optional second parame
 <!-- ====================================================================== -->
 ## clear()
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `clear()` clears the console of its history.
 
 <!-- add'l info: n/a -->
@@ -303,7 +303,7 @@ clear()
 <!-- ====================================================================== -->
 ## copy(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `copy(object)` copies a string representation of the specified object to the clipboard.
 
 <!-- add'l info: n/a -->
@@ -336,7 +336,7 @@ copy(object)
 <!-- ====================================================================== -->
 ## debug(function)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `debug(function)` pauses  inside the specified function `function` in the **Sources** tool, when that function is called.
 
 <!-- add'l info -->
@@ -370,7 +370,7 @@ For more information on breakpoints, see [Pause your code with breakpoints](../j
 <!-- ====================================================================== -->
 ## dir(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `dir(object)` displays an object-style listing of all of the properties for the specified object, like `console.dir()`.
 
 <!-- add'l info -->
@@ -402,7 +402,7 @@ For more information, see [console.dir()](api.md#dir) in the Console API.
 <!-- ====================================================================== -->
 ## dirxml(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `dirxml(object)` prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`.
 
 <!-- add'l info -->
@@ -418,7 +418,7 @@ dirxml(object)
 <!-- ====================================================================== -->
 ## inspect(object/function)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `inspect(element/function)` opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript function in the **Sources** tool.
 
 <!-- add'l info -->
@@ -447,7 +447,7 @@ When passing a function to inspect, the function opens the webpage in the **Sour
 <!-- ====================================================================== -->
 ## getEventListeners(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `getEventListeners(object)` returns the event listeners that are registered on the specified object.
 
 <!-- add'l info -->
@@ -477,11 +477,11 @@ If more than one listener is registered on the specified object, then the array 
 <!-- ====================================================================== -->
 ## keys(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `keys(object)` returns an array containing the names of the properties belonging to the specified object.
 
 <!-- add'l info -->
-To get the associated values of the same properties, see [values](#values), below.
+To get the associated values of the same properties, see [values(object)](#valuesobject), below.
 
 #### Syntax
 
@@ -513,7 +513,7 @@ keys(object)
 <!-- ====================================================================== -->
 ## monitor(function)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `monitor(function)` logs a message to the console everytime the specified function is called. The message indicates the function name and the arguments passed to the function.
 
 <!-- add'l info: n/a -->
@@ -550,7 +550,7 @@ To end monitoring, use `unmonitor(function)`.
 <!-- ====================================================================== -->
 ## monitorEvents(object\[, events\])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `monitorEvents(object[, events])` logs an event object to the console every time the specified events occur on the specified object.
 
 <!-- add'l info -->
@@ -627,11 +627,11 @@ You can also specify a collection of events by using one of the predefined sets 
 <!-- ====================================================================== -->
 ## profile([name])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `profile([name])` starts a JavaScript CPU profiling session with an optional name.
 
 <!-- add'l info -->
-To complete the profile and display the results in the **Performance** tool, call [profileEnd()](#profileend).  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+To complete the profile and display the results in the **Performance** tool, call [profileEnd([name])](#profileendname).  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 #### Syntax
 
@@ -666,11 +666,11 @@ profileEnd('A');
 <!-- ====================================================================== -->
 ## profileEnd([name])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 Completes a JavaScript CPU profiling session and displays the results in the **Performance** tool.
 
 <!-- add'l info -->
-To call this function, you must be running the [profile()](#profile) function.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+To call this function, you must be running the [profile([name])](#profilename) function.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 #### Syntax
 
@@ -678,13 +678,13 @@ To call this function, you must be running the [profile()](#profile) function.  
 profileEnd([name])
 ```
 
-For more information, see [profile](#profile), above.
+For more information, see [profile([name])](#profilename), above.
 
 
 <!-- ====================================================================== -->
 ## queryObjects(Constructor)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `queryObjects(constructor)` returns an array of the objects that were created by the specified constructor.
 
 <!-- add'l info -->
@@ -713,7 +713,7 @@ Other examples:
 <!-- ====================================================================== -->
 ## table(data\[, columns\])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `table(data[, columns])` logs object data, formatted as a table with column headings, for the specified data object.
 
 <!-- add'l info: n/a -->
@@ -756,11 +756,11 @@ To display a list of people's names as a table, in the **Console**:
 <!-- ====================================================================== -->
 ## undebug(function)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `undebug(function)` stops the debug of the specified function, so that when the function runs, the debugger no longer pauses in the function.
 
 <!-- add'l info: n/a -->
-For more information, see [debug()](#debug), above.
+For more information, see [debug(function)](#debugfunction), above.
 
 #### Syntax
 
@@ -772,11 +772,11 @@ undebug(function)
 <!-- ====================================================================== -->
 ## unmonitor(function)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `unmonitor(function)` stops the monitoring of the specified function.
 
 <!-- add'l info -->
-For more information, see [monitor()](#monitor), above.
+For more information, see [monitor(function)](#monitorfunction), above.
 
 #### Syntax
 
@@ -788,11 +788,11 @@ unmonitor(function)
 <!-- ====================================================================== -->
 ## unmonitorEvents(object\[, events\])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `unmonitorEvents(object[, events])` stops monitoring events for the specified object and events.
 
 <!-- add'l info: n/a -->
-For more information, see [monitorEvents()](#monitorevents), above.
+For more information, see [monitorEvents(object[, events])](#monitoreventsobject-events), above.
 
 #### Syntax
 
@@ -804,11 +804,11 @@ unmonitorEvents(object[, events])
 <!-- ====================================================================== -->
 ## values(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `values(object)` returns an array containing the values of all properties belonging to the specified object.
 
 <!-- add'l info: n/a -->
-To get the associated keys of the same properties, see [keys](#keys), above.
+To get the associated keys of the same properties, see [keys(object)](#keysobject), above.
 
 #### Syntax
 
@@ -818,7 +818,7 @@ values(object)
 
 #### Example
 
-See the example in [keys](#keys), above.
+See the example in [keys(object)](#keysobject), above.
 
 
 <!-- ====================================================================== -->
