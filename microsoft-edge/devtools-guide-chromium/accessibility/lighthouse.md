@@ -57,11 +57,11 @@ To audit a page using the Lighthouse tool:
 
    ![A Lighthouse report for the Accessibility category](./lighthouse-images/accessibility-lighthouse-result.png)
 
-1. Select an item in the report to learn more about it.
+1. Select an item in the report.  The item is expanded to show more information:
 
    ![An expanded issue in a Lighthouse report](./lighthouse-images/accessibility-lighthouse-result-issue-expanded.png)
 
-1. Click the **Learn more** link to view the documentation of the issue:
+1. Click the **Learn ...** link.  Documentation about the issue is displayed:
 
    ![View the documentation of an issue](./lighthouse-images/accessibility-web-dev-accessibility-audits-learn-more.png)
 
