@@ -110,7 +110,7 @@ Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from 
 
 *  Right-click anywhere in the **Breakpoints** pane to remove all breakpoints.
 
-To disable all breakpoints, click **Deactive breakpoints** (![The Deactivate breakpoints icon](./breakpoints-images/deactivate-breakpoints-icon.png)) button:
+To disable all breakpoints, click the **Deactive breakpoints** (![The Deactivate breakpoints icon](./breakpoints-images/deactivate-breakpoints-icon.png)) button:
 
 ![The Deactivate breakpoints button](./breakpoints-images/deactivate-breakpoints.png)
 
@@ -126,7 +126,7 @@ To set a DOM change breakpoint:
 
 1. Go the element on which you want to set the breakpoint.
 
-1. Right-click the element, click **Break on**, and then click **subtree modifications**, **attribute modifications**, or **node removal**.
+1. Right-click the element, click **Break on**, and then click **subtree modifications**, **attribute modifications**, or **node removal**:
 
    ![The context menu for creating a DOM change breakpoint](./breakpoints-images/break-on-subtree-modifications.png)
 
@@ -154,7 +154,7 @@ To set an XHR breakpoint:
 
 1. Click **Add breakpoint**.
 
-1. Enter all or part of the URL which you want to break on.  DevTools pauses when the value you enter is present anywhere in an XHR or Fetch request URL.
+1. Enter all or part of the URL that you want to break on.  DevTools pauses when the value you enter is present anywhere in an XHR or Fetch request URL.
 
 1. Press **Enter** to confirm.
 
@@ -170,7 +170,7 @@ Use event listener breakpoints when you want to pause on the event listener code
 
 1. Expand the **Event Listener Breakpoints** panel.  DevTools shows a list of event categories, such as **Animation**.
 
-1. Check one of these categories to pause whenever any event from that category is fired, or expand the category and check a specific event:
+1. Select a category, to pause whenever any event from that category is fired. Or, expand the category, and then select a specific event:
 
    ![Create an event listener breakpoint](./breakpoints-images/event-listener-breakpoints.png)
 
@@ -182,9 +182,9 @@ Use exception breakpoints when you want to pause on the line of code that is thr
 
 1. Select the **Sources** tool.
 
-1. In the **Breakpoints** panel, select **Pause on uncaught exceptions** to pause when the code throws a JavaScript exception.
+1. To pause when the code throws a JavaScript exception, in the **Breakpoints** pane, select the **Pause on uncaught exceptions** checkbox.
 
-1. **Optional:** Select **Pause on caught exceptions** if you also want to pause on caught exceptions, for example when an exception is caught by a `try/catch` block.
+1. To pause on caught exceptions, such as when an exception is caught by a `try/catch` block, select the **Pause on caught exceptions** checkbox:
 
    ![The Pause on exceptions button](./breakpoints-images/pause-on-exceptions.png)
 
@@ -230,7 +230,7 @@ DevTools throws a `ReferenceError` if the function you want to debug isn't in sc
   bar();
 })();
 
-// Here, calling debug(foo) won't work because foo
+// Here, calling debug(foo) won't work, because foo
 // isn't defined in the current scope.
 debug(foo);
 ```
