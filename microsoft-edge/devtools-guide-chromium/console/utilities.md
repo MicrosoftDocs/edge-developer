@@ -653,7 +653,7 @@ profile([name])
 
    ![The result of the profile() function](./utilities-images/memory-cpu-profile.png)
 
-You can create multiple profiles at the same time and you aren't required to end each profile in creation order. For example, the following code creates two profiles, and then ends them in the opposite order:
+You can create multiple profiles at the same time, and you aren't required to end each profile in creation order. For example, the following code creates two profiles, and then ends them in the opposite order:
 
 ```javascript
 profile('A');
