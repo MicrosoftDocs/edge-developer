@@ -40,11 +40,11 @@ These variables and functions only work by entering them directly into the DevTo
 
 | Variable or function | Description |
 |---|---|
-| [$_](#_-most-recently-evaluated-expression-value) | Returns the value of the most recently evaluated expression. |
-| [$0 - $4](#0-1-2-3-4-recently-selected-elements-or-objects) | Returns a recently selected element or JavaScript object. |
+| [$_](#recently-evaluated-expression) | Returns the value of the most recently evaluated expression. |
+| [$0 - $4](#recently-selected-element-or-javascript-object) | Returns a recently selected element or JavaScript object. |
 | [$(selector)](#query-selector) | Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`. |
-| [$$(selector, [parentElement])](#query-selector-all) | Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`. |
-| [$x(path, [startNode])](#x-xpath) | Returns an array of DOM elements that match the specified XPath expression. |
+| [$$(selector, [startNode])](#query-selector-all) | Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`. |
+| [$x(path, [startNode])](#xpath) | Returns an array of DOM elements that match the specified XPath expression. |
 | [clear()](#clear) | Clears the console of its history. |
 | [copy(object)](#copy) | Copies a string representation of the specified object to the clipboard. |
 | [debug(function)](#debug) | When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel. |
@@ -66,8 +66,11 @@ These variables and functions only work by entering them directly into the DevTo
 
 
 <!-- ====================================================================== -->
-## $_ (Most recently evaluated expression value)
+## Recently evaluated expression
+<!-- planned new heading to troubleshoot: -->
+<!-- ## $_ (Recent expression value) -->
 
+<!-- summary to bubble up: -->
 `$_` returns the value of the most recently evaluated expression.
 
 **Syntax:**
@@ -120,10 +123,14 @@ $_
 
 
 <!-- ====================================================================== -->
-## $0, $1, $2, $3, $4 (Recently selected elements or objects)
+## Recently selected element or JavaScript object
+<!-- planned new heading to troubleshoot: -->
+<!-- ## $0 - $4 -->
 
+<!-- summary to bubble up: -->
 `$0`, `$1`, `$2`, `$3`, and `$4` return recently selected elements or JavaScript objects.
 
+<!-- add'l info -->
 `$0` returns the most recently selected element or JavaScript object, `$1` returns the second most recently selected one, and so on.  The `$0`, `$1`, `$2`, `$3`, and `$4` variables work as a historical reference to the last five DOM elements that were inspected within the **Elements** tool, or the last five JavaScript heap objects that were selected in the **Memory** tool.
 
 #### Syntax
@@ -160,10 +167,14 @@ $0
 
 
 <!-- ====================================================================== -->
-## $ (Query selector)
+## Query selector
+<!-- planned new heading to troubleshoot: -->
+<!-- ## $(selector) -->
 
+<!-- summary to bubble up: -->
 `$()` returns the reference to the first DOM element with the specified CSS selector.
 
+<!-- add'l info -->
 This function is similar to the [document.querySelector()](https://developer.mozilla.org/docs/Web/API/Document/querySelector) function.
 
 If you are using a library such as jQuery that uses `$`, the functionality is overwritten, and `$` corresponds to the implementation from that library.
@@ -198,10 +209,14 @@ The `$()` function accepts a second parameter, `parentElement`, that specifies a
 
 
 <!-- ====================================================================== -->
-## $$ (Query selector all)
+## Query selector all
+<!-- planned new heading to troubleshoot: -->
+<!-- ## \$\$(selector, \[startNode\]) -->
 
+<!-- summary to bubble up: -->
 `$$()` returns a list of elements that match the specified CSS selector, like `document.querySelectorAll()`.
 
+<!-- add'l info -->
 This function is similar to [document.querySelectorAll()](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll) but returns an `array` of element, instead of a `NodeList`.
 
 #### Syntax
@@ -230,9 +245,14 @@ This `$$()` function also supports a second parameter, `parentElement`, that spe
 
 
 <!-- ====================================================================== -->
-## $x (XPath)
+## XPath
+<!-- planned new heading to troubleshoot: -->
+<!-- ## \$x(path, \[startNode\]) -->
 
+<!-- summary to bubble up: -->
 `$x()` returns an array of DOM elements that match the specified XPath expression.
+
+<!-- add'l info: n/a -->
 
 #### Syntax
 
