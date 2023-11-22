@@ -55,7 +55,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Toggle [Device emulation](../device-mode/index.md) | **Ctrl+Shift+M** | **Command+Shift+M** |
 | Toggle **Inspect Element Mode** | **Ctrl+Shift+C** | **Command+Shift+C** |
 | Open the [Command Menu](../command-menu/index.md) | **Ctrl+Shift+P** | **Command+Shift+P** |
-| Toggle the [Quick View](../customize/index.md#quick-view) | **Esc** | **Esc** |
+| Toggle the [Quick View](../customize/index.md#quick-view) panel | **Esc** | **Esc** |
 | Normal refresh | **F5** or **Ctrl+R** | **Command+R** |
 | Hard refresh | **Ctrl+F5** or **Ctrl+Shift+R** | **Command+Shift+R** |
 | Search for text within the current panel.  Not supported in the **Audits**, **Application**, and **Security** tools | **Ctrl+F** | **Command+F** |

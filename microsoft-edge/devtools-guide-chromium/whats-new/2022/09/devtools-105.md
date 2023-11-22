@@ -66,7 +66,7 @@ See also:
 <!-- Title: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View -->
 <!-- Subtitle: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View. -->
 
-In Microsoft Edge 105, several improvements to location controls have been made, including a new option for changing the orientation of **Quick View**.
+In Microsoft Edge 105, several improvements to location controls have been made, including a new option for changing the orientation of the **Quick View** panel.
 
 The **Customize and control DevTools** (**...**) menu now directly contains buttons to set the docking location of DevTools, instead of requiring opening a submenu.  The **Dock location** icons now have greater contrast, and the currently selected **Dock location** button is now highlighted.
 
@@ -80,15 +80,15 @@ Selecting the docking location in Focus Mode, in Microsoft Edge 105:
 
 ![Dock location menu icons after](./devtools-105-images/after-docking-menu.png)
 
-You can now change the orientation of the **Quick View** panel as well.  To display **Quick View** vertically instead of horizontally, click the **Dock Quick View to right** button:
+You can now change the orientation of the **Quick View** toolbar and panel as well.  To display the **Quick View** panel vertically instead of horizontally, click the **Dock Quick View to right** button:
 
 ![Docking Quick View to the right](./devtools-105-images/quickview-console.png)
 
-To return **Quick View** to the horizontal orientation, click the **Dock Quick View to bottom** button:
+To return the **Quick View** toolbar and panel to the horizontal orientation, click the **Dock Quick View to bottom** button:
 
 ![Docking Quick View to the bottom](./devtools-105-images/dock-quick-view-bottom.png)
 
-To minimize **Quick View** in either orientation, click the **Collapse Quick View** button, or press **Esc**:
+To minimize the **Quick View** panel in either orientation, click the **Collapse Quick View** button, or press **Esc**:
 
 ![Minimizing Quick View](./devtools-105-images/focus-mode-improved-location-controls.png)
 

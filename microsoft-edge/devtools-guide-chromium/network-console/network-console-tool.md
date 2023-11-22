@@ -64,7 +64,7 @@ To get to the **Network Console** tool by starting from the **Network** tool:
 
    ![Right-clicking a resource for the webpage to select 'Edit and resend' in the Network tool](./network-console-tool-images/edit-and-resend.png)
 
-   The **Network Console** tool opens in **Quick View** or the **Drawer** at the bottom of DevTools.
+   The **Network Console** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. Click the **Hide Network Console navigator** (![The 'Hide Network Console navigator' icon](./network-console-tool-images/hide-network-console-navigator-icon.png)) button, to get more space.
 

@@ -168,9 +168,9 @@ The **Disable Cache** checkbox:
 <!-- ---------- -->
 ###### Disable the browser cache from the Network conditions tool
 
-From the **Network** tool, you can open the **Network conditions** tool in the Quick View panel and then disable the browser cache from there:
+From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel and then disable the browser cache from there:
 
-1. In the **Network** tool, click the **More network conditions** (![More network conditions icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the Quick View panel.
+1. In the **Network** tool, click the **More network conditions** (![More network conditions icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
 
 1. In the **Network conditions** tool, select the **Disable cache** checkbox:
 
@@ -219,9 +219,9 @@ See also [Simulate a slower network connection](../network/index.md#simulate-a-s
 <!-- ---------- -->
 ###### Emulate slow network connections from the Network Conditions tool
 
-From the **Network** tool, you can open the **Network conditions** tool in the Quick View panel and then throttle the network connection from there:
+From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel and then throttle the network connection from there:
 
-1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the Quick View panel.
+1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
 
 1. In the **Network conditions** tool, in the **Network throttling** menu, select a connection speed.
 
@@ -242,7 +242,7 @@ To manually clear browser cookies at any time, right-click anywhere in the Reque
 
 To manually override the user agent:
 
-1. In the **Network** tool, click the **More network conditions** (![More network conditions icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the Quick View panel.
+1. In the **Network** tool, click the **More network conditions** (![More network conditions icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
 
 1. In the **Network conditions** tool, clear the **Use browser default** checkbox.  The other controls become available.
 
@@ -256,7 +256,7 @@ If your site employs user agent client hints and you want to test them, you can 
 
 To set user agent client hints in the **Network conditions** tool:
 
-1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the Quick View panel.
+1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
 
 1. In the **User agent** section, clear the **Use browser default** checkbox, and then expand **User agent client hints**:
 

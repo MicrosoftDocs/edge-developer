@@ -48,9 +48,9 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
    <!--After a few seconds, the **Issues counter** (![Issues counter](./index-images/issues-counter-icon.png)) appears in the upper right corner of DevTools.
    1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.-->
 
-1. In the Quick View toolbar at the bottom of DevTools, select the **Issues** tab, which is present by default.
+1. In the **Quick View** toolbar at the bottom of DevTools, select the **Issues** tab, which is present by default.
 
-   If Quick View isn't displayed, select **Customize and control DevTools** (**...**), and then select **Toggle Quick View panel** (**Esc**).  If the **Quick View** toolbar doesn't have the **Issues** tab, in the **Quick View** toolbar, click the **More tools** (**+**) button, and then select **Issues**.
+   If the **Quick View** panel isn't displayed, select **Customize and control DevTools** (**...**), and then select **Toggle Quick View panel** (**Esc**).  If the **Quick View** toolbar doesn't have the **Issues** tab, in the **Quick View** toolbar, click the **More tools** (**+**) button, and then select **Issues**.
 
    The **Issues** tool groups issues into categories, such as **Accessibility**, **Performance**, **Security**, and **Other**:
 
@@ -60,7 +60,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 <!-- ------------------------------ -->
 #### Other ways to open the Issues tool
 
-*  In the **Activity Bar** or in **Quick View**, click the **More tools** (**+**) button, and then select **Issues**.
+*  In the **Activity Bar** or in the **Quick View** toolbar, click the **More tools** (**+**) button, and then select **Issues**.
 
 *  In the **Elements** tool, in the DOM tree, find a wavy-underlined element name, and then press and hold **Shift** and then click the element.  Or, right-click a wavy-underlined element, and then select **View issues**.  See [Open issues from the DOM tree](#open-issues-from-the-dom-tree), below.
 

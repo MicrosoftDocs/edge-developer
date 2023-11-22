@@ -106,7 +106,7 @@ You can run JavaScript expressions and statements in the **Console**, and the **
 
 To interact with `sessionStorage` by using the **Console**:
 
-1. In DevTools, select the **Console** tool.  For example, press **Esc** to display the Quick View panel, which always includes a **Console** tab.
+1. In DevTools, select the **Console** tool.  For example, press **Esc** to display the **Quick View** panel, which always includes a **Console** tab.
 
 1. If you want to access the `sessionStorage` key-value pairs of a domain other than the page you're on, use the **JavaScript contexts** menu to change the JavaScript context of the **Console**:
 

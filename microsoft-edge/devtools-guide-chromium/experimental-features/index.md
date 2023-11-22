@@ -222,7 +222,7 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 1. Click the **Reload DevTools** button that appears next to the message.
 
-1. The **Protocol monitor** tool is displayed in **Quick View** or the **Drawer** at the bottom of DevTools.
+1. The **Protocol monitor** tool is displayed in the **Quick View** panel at the bottom of DevTools.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 120.
@@ -737,7 +737,7 @@ Focus Mode is a new user interface for DevTools.  Focus Mode is designed to simp
 
 Focus Mode replaces the main row of tabs with an **Activity Bar**, which is a compact toolbar with distinctive icons.  The **Activity Bar** makes it possible to pin, rearrange, and open your favorite tools, for quick access.  The **Activity Bar** also provides access to user settings, help, and other features.
 
-Focus Mode also provides a **Quick View** list, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
+Focus Mode also provides a **Quick View** panel at the bottom of DevTools, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
 
 See [Reduce the complexity of DevTools with Focus Mode](focus-mode.md).
 
