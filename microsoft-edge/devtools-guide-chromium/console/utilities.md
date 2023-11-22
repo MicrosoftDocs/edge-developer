@@ -40,37 +40,35 @@ These variables and functions only work by entering them directly into the DevTo
 
 | Variable or function | Description |
 |---|---|
-| [$_](#recently-evaluated-expression) | Returns the value of the most recently evaluated expression. |
-| [$0 - $4](#recently-selected-element-or-javascript-object) | Returns a recently selected element or JavaScript object. |
-| [$(selector)](#query-selector) | Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`. |
-| [$$(selector, [startNode])](#query-selector-all) | Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`. |
-| [$x(path, [startNode])](#xpath) | Returns an array of DOM elements that match the specified XPath expression. |
+| [Recently evaluated expression: $_](#recently-evaluated-expression-_) | Returns the value of the most recently evaluated expression. |
+| [Recently selected element or JavaScript object: $0-$4](#recently-selected-element-or-javascript-object-0-4) | Returns a recently selected element or JavaScript object. |
+| [Query selector: $(selector)](#query-selector-selector) | Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`. |
+| [Query selector all: \$\$(selector, \[startNode\])](#query-selector-all-selector-startnode) | Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`. |
+| [XPath: \$x(path, \[startNode\])](#xpath-xpath-startnode) | Returns an array of DOM elements that match the specified XPath expression. |
 | [clear()](#clear) | Clears the console of its history. |
-| [copy(object)](#copy) | Copies a string representation of the specified object to the clipboard. |
-| [debug(function)](#debug) | When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel. |
-| [dir(object)](#dir) | Displays an object-style listing of all of the properties for the specified object, like `console.dir()`. |
-| [dirxml(object)](#dirxml) | Prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`. |
-| [inspect(object/function)](#inspect) | Opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript heap object in the **Memory** tool. |
-| [getEventListeners(object)](#geteventlisteners) | Returns the event listeners that are registered on the specified object. |
-| [keys(object)](#keys) | Returns an array containing the names of the properties belonging to the specified object. |
-| [monitor(function)](#monitor) | Logs a message to the console that indicates the function name, along with the arguments passed to the function as part of a request. |
-| [monitorEvents(object[, events])](#monitorevents) | When one of the specified events occurs on the specified object, the event object is logged to the console. |
-| [profile([name])](#profile) | Starts a JavaScript CPU profiling session with an optional name. |
-| [profileEnd([name])](#profileend) | Completes a JavaScript CPU profiling session and displays the results in the **Performance** tool. |
-| [queryObjects(Constructor)](#queryobjects) | Returns an array of the objects that were created by the specified constructor. |
-| [table(data[, columns])](#table) | Logs object data, formatted as a table with column headings, for the specified data object. |
-| [undebug(function)](#undebug) | Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked. |
-| [unmonitor(function)](#unmonitor) | Stops the monitoring of the specified function. |
-| [unmonitorEvents(object[, events])](#unmonitorevents) | Stops monitoring events for the specified object and events. |
-| [values(object)](#values) | Returns an array containing the values of all properties belonging to the specified object. |
+| [copy(object)](#copyobject) | Copies a string representation of the specified object to the clipboard. |
+| [debug(function)](#debugfunction) | When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel. |
+| [dir(object)](#dirobject) | Displays an object-style listing of all of the properties for the specified object, like `console.dir()`. |
+| [dirxml(object)](#dirxmlobject) | Prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`. |
+| [inspect(object/function)](#inspectobjectfunction) | Opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript heap object in the **Memory** tool. |
+| [getEventListeners(object)](#geteventlistenersobject) | Returns the event listeners that are registered on the specified object. |
+| [keys(object)](#keysobject) | Returns an array containing the names of the properties belonging to the specified object. |
+| [monitor(function)](#monitorfunction) | Logs a message to the console that indicates the function name, along with the arguments passed to the function as part of a request. |
+| [monitorEvents(object[, events])](#monitoreventsobject-events) | When one of the specified events occurs on the specified object, the event object is logged to the console. |
+| [profile([name])](#profilename) | Starts a JavaScript CPU profiling session with an optional name. |
+| [profileEnd([name])](#profileendname) | Completes a JavaScript CPU profiling session and displays the results in the **Performance** tool. |
+| [queryObjects(Constructor)](#queryobjectsconstructor) | Returns an array of the objects that were created by the specified constructor. |
+| [table(data[, columns])](#tabledata-columns) | Logs object data, formatted as a table with column headings, for the specified data object. |
+| [undebug(function)](#undebugfunction) | Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked. |
+| [unmonitor(function)](#unmonitorfunction) | Stops the monitoring of the specified function. |
+| [unmonitorEvents(object[, events])](#unmonitoreventsobject-events) | Stops monitoring events for the specified object and events. |
+| [values(object)](#valuesobject) | Returns an array containing the values of all properties belonging to the specified object. |
 
 
 <!-- ====================================================================== -->
-## Recently evaluated expression
-<!-- planned new heading to troubleshoot: -->
-<!-- ## $_ (Recent expression value) -->
+## Recently evaluated expression: $_
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `$_` returns the value of the most recently evaluated expression.
 
 **Syntax:**
@@ -123,11 +121,9 @@ $_
 
 
 <!-- ====================================================================== -->
-## Recently selected element or JavaScript object
-<!-- planned new heading to troubleshoot: -->
-<!-- ## $0 - $4 -->
+## Recently selected element or JavaScript object: $0-$4
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `$0`, `$1`, `$2`, `$3`, and `$4` return recently selected elements or JavaScript objects.
 
 <!-- add'l info -->
@@ -167,11 +163,9 @@ $0
 
 
 <!-- ====================================================================== -->
-## Query selector
-<!-- planned new heading to troubleshoot: -->
-<!-- ## $(selector) -->
+## Query selector: $(selector)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `$(selector)` returns the reference to the first DOM element that matches the specified CSS selector `selector`.
 
 <!-- add'l info -->
@@ -209,11 +203,9 @@ The `$()` function accepts a second parameter, `parentElement`, that specifies a
 
 
 <!-- ====================================================================== -->
-## Query selector all
-<!-- planned new heading to troubleshoot: -->
-<!-- ## \$\$(selector, \[startNode\]) -->
+## Query selector all: \$\$(selector, \[startNode\])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `$$()` returns a list of elements that match the specified CSS selector, like `document.querySelectorAll()`.
 
 <!-- add'l info -->
@@ -245,11 +237,9 @@ This `$$()` function also supports a second parameter, `parentElement`, that spe
 
 
 <!-- ====================================================================== -->
-## XPath
-<!-- planned new heading to troubleshoot: -->
-<!-- ## \$x(path, \[startNode\]) -->
+## XPath: \$x(path, \[startNode\])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `$x(path)` returns an array of DOM elements that match the specified XPath expression `path`.
 
 <!-- add'l info: n/a -->
@@ -280,11 +270,9 @@ Similar to the other selector commands, `$x(path)` has an optional second parame
 
 
 <!-- ====================================================================== -->
-## clear
-<!-- planned new heading to troubleshoot: -->
-<!-- ## clear() -->
+## clear()
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `clear()` clears the console of its history.
 
 <!-- add'l info: n/a -->
@@ -313,10 +301,9 @@ clear()
 
 
 <!-- ====================================================================== -->
-## copy
-<!-- ## copy(object) -->
+## copy(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `copy(object)` copies a string representation of the specified object to the clipboard.
 
 <!-- add'l info: n/a -->
@@ -347,10 +334,9 @@ copy(object)
 
 
 <!-- ====================================================================== -->
-## debug
-<!-- ## debug(function) -->
+## debug(function)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `debug(function)` pauses  inside the specified function `function` in the **Sources** tool, when that function is called.
 
 <!-- add'l info -->
@@ -382,10 +368,9 @@ For more information on breakpoints, see [Pause your code with breakpoints](../j
 
 
 <!-- ====================================================================== -->
-## dir
-<!-- ## dir(object) -->
+## dir(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `dir(object)` displays an object-style listing of all of the properties for the specified object, like `console.dir()`.
 
 <!-- add'l info -->
@@ -415,10 +400,9 @@ For more information, see [console.dir()](api.md#dir) in the Console API.
 
 
 <!-- ====================================================================== -->
-## dirxml
-<!-- ## dirxml(object) -->
+## dirxml(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `dirxml(object)` prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`.
 
 <!-- add'l info -->
@@ -432,10 +416,9 @@ dirxml(object)
 
 
 <!-- ====================================================================== -->
-## inspect
-<!-- ## inspect(object/function) -->
+## inspect(object/function)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `inspect(element/function)` opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript function in the **Sources** tool.
 
 <!-- add'l info -->
@@ -462,10 +445,9 @@ When passing a function to inspect, the function opens the webpage in the **Sour
 
 
 <!-- ====================================================================== -->
-## getEventListeners
-<!-- ## getEventListeners(object) -->
+## getEventListeners(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `getEventListeners(object)` returns the event listeners that are registered on the specified object.
 
 <!-- add'l info -->
@@ -493,14 +475,13 @@ If more than one listener is registered on the specified object, then the array 
 
 
 <!-- ====================================================================== -->
-## keys
-<!-- ## keys(object) -->
+## keys(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `keys(object)` returns an array containing the names of the properties belonging to the specified object.
 
 <!-- add'l info -->
-To get the associated values of the same properties, see [values](#values), below.
+To get the associated values of the same properties, see [values(object)](#valuesobject), below.
 
 #### Syntax
 
@@ -530,10 +511,9 @@ keys(object)
 
 
 <!-- ====================================================================== -->
-## monitor
-<!-- ## monitor(function) -->
+## monitor(function)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `monitor(function)` logs a message to the console everytime the specified function is called. The message indicates the function name and the arguments passed to the function.
 
 <!-- add'l info: n/a -->
@@ -568,10 +548,9 @@ To end monitoring, use `unmonitor(function)`.
 
 
 <!-- ====================================================================== -->
-## monitorEvents
-<!-- ## monitorEvents(object\[, events\]) -->
+## monitorEvents(object\[, events\])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `monitorEvents(object[, events])` logs an event object to the console every time the specified events occur on the specified object.
 
 <!-- add'l info -->
@@ -646,14 +625,13 @@ You can also specify a collection of events by using one of the predefined sets 
 
 
 <!-- ====================================================================== -->
-## profile
-<!-- ## profile([name]) -->
+## profile([name])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `profile([name])` starts a JavaScript CPU profiling session with an optional name.
 
 <!-- add'l info -->
-To complete the profile and display the results in the **Performance** tool, call [profileEnd()](#profileend).  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+To complete the profile and display the results in the **Performance** tool, call [profileEnd([name])](#profileendname).  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 #### Syntax
 
@@ -675,7 +653,7 @@ profile([name])
 
    ![The result of the profile() function](./utilities-images/memory-cpu-profile.png)
 
-You can create multiple profiles at the same time and you aren't required to end each profile in creation order. For example, the following code creates two profiles, and then ends them in the opposite order:
+You can create multiple profiles at the same time, and you aren't required to end each profile in creation order. For example, the following code creates two profiles, and then ends them in the opposite order:
 
 ```javascript
 profile('A');
@@ -686,14 +664,13 @@ profileEnd('A');
 
 
 <!-- ====================================================================== -->
-## profileEnd
-<!-- ## profileEnd([name]) -->
+## profileEnd([name])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 Completes a JavaScript CPU profiling session and displays the results in the **Performance** tool.
 
 <!-- add'l info -->
-To call this function, you must be running the [profile()](#profile) function.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+To call this function, you must be running the [profile([name])](#profilename) function.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 #### Syntax
 
@@ -701,14 +678,13 @@ To call this function, you must be running the [profile()](#profile) function.  
 profileEnd([name])
 ```
 
-For more information, see [profile](#profile), above.
+For more information, see [profile([name])](#profilename), above.
 
 
 <!-- ====================================================================== -->
-## queryObjects
-<!-- ## queryObjects(Constructor) -->
+## queryObjects(Constructor)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `queryObjects(constructor)` returns an array of the objects that were created by the specified constructor.
 
 <!-- add'l info -->
@@ -735,10 +711,9 @@ Other examples:
 
 
 <!-- ====================================================================== -->
-## table
-<!-- ## table(data\[, columns\]) -->
+## table(data\[, columns\])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `table(data[, columns])` logs object data, formatted as a table with column headings, for the specified data object.
 
 <!-- add'l info: n/a -->
@@ -779,14 +754,13 @@ To display a list of people's names as a table, in the **Console**:
 
 
 <!-- ====================================================================== -->
-## undebug
-<!-- ## undebug(function) -->
+## undebug(function)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `undebug(function)` stops the debug of the specified function, so that when the function runs, the debugger no longer pauses in the function.
 
 <!-- add'l info: n/a -->
-For more information, see [debug()](#debug), above.
+For more information, see [debug(function)](#debugfunction), above.
 
 #### Syntax
 
@@ -796,14 +770,13 @@ undebug(function)
 
 
 <!-- ====================================================================== -->
-## unmonitor
-<!-- ## unmonitor(function) -->
+## unmonitor(function)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `unmonitor(function)` stops the monitoring of the specified function.
 
 <!-- add'l info -->
-For more information, see [monitor()](#monitor), above.
+For more information, see [monitor(function)](#monitorfunction), above.
 
 #### Syntax
 
@@ -813,14 +786,13 @@ unmonitor(function)
 
 
 <!-- ====================================================================== -->
-## unmonitorEvents
-<!-- ## unmonitorEvents(object\[, events\]) -->
+## unmonitorEvents(object\[, events\])
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `unmonitorEvents(object[, events])` stops monitoring events for the specified object and events.
 
 <!-- add'l info: n/a -->
-For more information, see [monitorEvents()](#monitorevents), above.
+For more information, see [monitorEvents(object[, events])](#monitoreventsobject-events), above.
 
 #### Syntax
 
@@ -830,14 +802,13 @@ unmonitorEvents(object[, events])
 
 
 <!-- ====================================================================== -->
-## values
-<!-- ## values(object) -->
+## values(object)
 
-<!-- summary to bubble up: -->
+<!-- summary bubbled up to Summary table: -->
 `values(object)` returns an array containing the values of all properties belonging to the specified object.
 
 <!-- add'l info: n/a -->
-To get the associated keys of the same properties, see [keys](#keys), above.
+To get the associated keys of the same properties, see [keys(object)](#keysobject), above.
 
 #### Syntax
 
@@ -847,7 +818,7 @@ values(object)
 
 #### Example
 
-See the example in [keys](#keys), above.
+See the example in [keys(object)](#keysobject), above.
 
 
 <!-- ====================================================================== -->
