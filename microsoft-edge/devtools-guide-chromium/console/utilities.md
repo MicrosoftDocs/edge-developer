@@ -56,7 +56,7 @@ These variables and functions only work by entering them directly into the DevTo
 | [monitor(function)](#monitor) | Logs a message to the console that indicates the function name, along with the arguments passed to the function as part of a request. |
 | [monitorEvents(object[, events])](#monitorevents) | When one of the specified events occurs on the specified object, the event object is logged to the console. |
 | [profile([name])](#profile) | Starts a JavaScript CPU profiling session with an optional name. |
-| [profileEnd([name])](#profileend) | Completes a JavaScript CPU profiling session and displays the results in the **Memory** tool. |
+| [profileEnd([name])](#profileend) | Completes a JavaScript CPU profiling session and displays the results in the **Performance** tool. |
 | [queryObjects(Constructor)](#queryobjects) | Returns an array of the objects that were created by the specified constructor. |
 | [table(data[, columns])](#table) | Logs object data, formatted as a table with column headings, for the specified data object. |
 | [undebug(function)](#undebug) | Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked. |
