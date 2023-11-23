@@ -26,21 +26,29 @@ ms.date: 11/22/2023
 
 <!--todo: add section when why-https is available -->
 
-Use the **Security** panel to inspect the security of a page.
+Use the **Security** tool to inspect the security of a page.
+
+
+<!-- ====================================================================== -->
+## Open the Security tool
+
+To open the **Security** tool:
 
 1. To open DevTools, right-click a webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. In DevTools, on the Activity Bar, click the **Security** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
 
-   The **Security** tool (or _panel_) opens:
+   The **Security** tool opens:
 
-![The Security panel](./index-images/overview-secure.png)
+   ![The Security panel](./index-images/overview-secure.png)
 
 
 <!-- ====================================================================== -->
-## Common problems
+## Debug common security problems
 
-### Non-secure main origins
+The **Security** tool is useful for debugging a variety of security issues. The sections below describe some common problems that you might use the **Security** tool for.
+
+#### Non-secure main origins
 
 When the main origin of a page isn't secure, the **Security Overview** says **This page is not secure**.
 
@@ -55,7 +63,7 @@ If you haven't set up HTTPS on your server, [Let's Encrypt](https://letsencrypt.
 > [!TIP]
 > The [Use HTTPS](https://webhint.io/docs/user-guide/hints/hint-https-only) hint in [webhint](https://webhint.io) can help automate the process of making sure that all HTTP requests are directed to HTTPS.
 
-### Mixed content
+#### Mixed content
 
 **Mixed content**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> means that the main origin of a page is secure, but the page requested resources from non-secure origins.  Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to [man-in-the-middle attacks](https://wikipedia.org/wiki/Man-in-the-middle_attack).
 
@@ -65,15 +73,17 @@ In Microsoft Edge, mixed content requests are automatically upgraded to HTTPS wh
 
 
 <!-- ====================================================================== -->
-## View details
+## View more details
 
-### View main origin certificate
+The **Security** tool provides more details about the origins which a webpage requested resources from, and the security of those origins. The sections below describe how to view more details.
+
+#### View main origin certificate
 
 To quickly inspect the certificate for the main origin, in the **Security Overview**, click **View certificate**. The **Certificate Viewer** opens:
 
 ![A main origin certificate](./index-images/overview-secure-view-certificate.png)
 
-### View origin details
+#### View origin details
 
 To view the details of an origin, in the left navigation panel, click one of the origins. Detailed information about the origin appears:
 
