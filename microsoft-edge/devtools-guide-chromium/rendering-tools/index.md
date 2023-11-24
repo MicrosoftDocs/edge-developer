@@ -172,7 +172,7 @@ Compositing is where the painted parts of the page are put together for displayi
 <!-- ------------------------------ -->
 #### Paint and composite: Tools
 
-Want to know how long painting takes or how often painting occurs?  Check the [Enable advanced paint instrumentation](../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation) setting in the **Performance** panel and then take a recording.  If most of your rendering time is spent painting, you have paint problems.
+Want to know how long painting takes or how often painting occurs?  Check the [Enable advanced rendering instrumentation](../evaluate-performance/reference.md#turn-on-advanced-rendering-instrumentation) setting in the **Performance** panel and then take a recording.  If most of your rendering time is spent painting, you have paint problems.
 
 <!--
 ![Long paint times in timeline recording](../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.png)
