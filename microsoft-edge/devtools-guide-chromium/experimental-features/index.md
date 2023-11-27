@@ -730,23 +730,6 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Focus Mode
-<!-- checkbox has a (?) link to this anchor wording -->
-
-Focus Mode is a new user interface for DevTools.  Focus Mode is designed to simplify and streamline the DevTools UI, without compromising its feature set.
-
-Focus Mode replaces the main row of tabs with an **Activity Bar**, which is a compact toolbar with distinctive icons.  The **Activity Bar** makes it possible to pin, rearrange, and open your favorite tools, for quick access.  The **Activity Bar** also provides access to user settings, help, and other features.
-
-Focus Mode also provides a **Quick View** panel at the bottom of DevTools, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
-
-See [Reduce the complexity of DevTools with Focus Mode](focus-mode.md).
-
-Status:
-* This checkbox is present in Microsoft Edge Canary 120.
-* This checkbox is present in Microsoft Edge Stable 118.
-
-
-<!-- ====================================================================== -->
 ## Open source files in Visual Studio Code
 <!-- checkbox has a (?) link to this anchor wording -->
 
