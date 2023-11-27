@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/02/2022
+ms.date: 11/20/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -54,7 +54,9 @@ Select **Toggle device emulation** (![Toggle Device Toolbar](./index-images/togg
 
 By default the Device Toolbar opens in Responsive Viewport Mode.
 
-### Responsive Viewport Mode
+
+<!-- ------------------------------ -->
+#### Responsive Viewport Mode
 
 To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.  You can enter any numeric values in the width and height boxes.  If you select a size larger than available in the browser window, the viewport will be automatically scaled to accommodate for the larger viewport.
 
@@ -64,9 +66,11 @@ In the following figure, the width is set to `626` and the height is set to `516
 
 If you need more space on your screen, you can always change the position of DevTools as explained in [Change DevTools placement (Undock, Dock to bottom, Dock to left)](/microsoft-edge/devtools-guide-chromium/customize/placement).
 
+
+<!-- ------------------------------ -->
 #### Show media queries
 
-If you have defined media queries on your page, jump to the viewport dimensions where those media queries take effect by showing media query breakpoints above your viewport.  Select **More options** > **Show media queries**.
+If you have defined media queries on your page, jump to the viewport dimensions where those media queries take effect by showing media query breakpoints above your viewport.  Select **More options** (![More Options icon](./index-images/more-options-icon.png)) > **Show media queries**.
 
 ![Show media queries](./index-images/device-mode-toggle-device-toolbar-more-options-show-media-queries.png)
 
@@ -74,6 +78,30 @@ Select a breakpoint to change the width of the viewport so that the media query 
 
 ![Select a breakpoint to change the width of the viewport](./index-images/device-mode-toggle-device-toolbar-click-breakpoint.png)
 
+
+<!-- ------------------------------ -->
+#### Set device pixel ratio
+
+[Device pixel ratio (DPR)](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio) is the ratio between physical pixels on the hardware screen and logical (CSS) pixels.  In other words, DPR tells the browser how many screen pixels to use to draw a CSS pixel.  Microsoft Edge uses the DPR value when drawing on HiDPI (High Dots Per Inch) displays.
+
+
+To set a device pixel ratio:
+
+1. Select **More options** (![The More Options icon](./index-images/more-options-icon.png)) > **Add device pixel ratio**:
+
+   ![Add device pixel ratio](./index-images/add-device-pixel-ratio.png)
+
+   A **DPR** dropdown list is added at the top of the viewport.
+
+1. In the **DPR** dropdown list, select a DPR value (**1**, **2**, or **3**).  The default value is **2**.
+
+
+To remove the device pixel ratio:
+
+* Select **More options** (![The More Options icon.](./index-images/more-options-icon.png)) > **Remove device pixel ratio**.
+
+
+<!-- ------------------------------ -->
 #### Set the device type
 
 Use the **Device Type** list to simulate a mobile device or desktop device.
@@ -90,15 +118,18 @@ The following table describes the differences between the available device type 
 | Desktop (touch) | Desktop | Circle | `touch` |
 
 > [!NOTE]
-> If the **Device Type** list isn't displayed, select **More options** > **Add device type**.
+> If the **Device Type** list isn't displayed, select **More options** (![The More Options button](./index-images/more-options-icon.png)) > **Add device type**.
 
-### Mobile Device Viewport Mode
 
-To simulate the dimensions of a specific mobile device, select the device from the **Device** list.
+<!-- ------------------------------ -->
+#### Mobile Device Viewport Mode
+
+To simulate the dimensions of a specific mobile device, select the device from the **Device** list:
 
 ![The Device list](./index-images/device-mode-toggle-device-toolbar-device-list.png)
 
 
+<!-- ------------------------------ -->
 #### Rotate the viewport to landscape orientation
 
 Test your webpage in landscape orientation.
@@ -116,9 +147,10 @@ Test your webpage in landscape orientation.
 See also [Set orientation](#set-orientation), below.
 
 
+<!-- ------------------------------ -->
 #### Show device frame
 
-To simulate the dimensions of a specific mobile device, open **More options** and then select **Show device frame** to show the physical device frame around the viewport.
+To simulate the dimensions of a specific mobile device, click **More options** (![The More Options button.](./index-images/more-options-icon.png)), and then select **Show device frame** to show the physical device frame around the viewport:
 
 ![The Show Device Frame menu item](./index-images/device-mode-toggle-device-toolbar-option-show-device-frame.png)
 
@@ -128,23 +160,48 @@ The device frame for the iPhone 6:
 
 ![The device frame for the iPhone 6](./index-images/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.png)
 
+
+<!-- ------------------------------ -->
 #### Add a custom mobile device
 
-If the mobile device option that you need isn't included on the default list, you can add a custom device.  To add a custom device:
+If the mobile device option that you need isn't included on the default list, you can add a custom device.  
 
-1. Select the **Device** list > **Edit**.
+To add a custom device:
+
+1. In DevTools, click the **Toggle device emulation** (![The 'Toggle device emulation' icon](./index-images/toggle-device-toolbar-dark-icon.png)) button to turn on device emulation.
+
+1. In the device dropdown list on the left,<!--no tooltip--> select the **Edit** menuitem:
 
    ![Selecting Edit from the Device list](./index-images/device-mode-toggle-device-toolbar-device-list-edit.png)
 
-1. Select **Add custom device**.
+   The DevTools **Settings** > **Devices** (**Emulated Devices**) page opens.
 
-1. On **Emulated Devices**, enter a device name, screen width, and screen height for the custom device.  The [device pixel ratio](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio), [user agent string](https://developer.mozilla.org/docs/Glossary/User_agent), and [device type](#set-the-device-type) fields are optional.  The device type field defaults to **Mobile**.
+1. Click the **Add custom device** button.  The **Emulated Devices** page in settings adds a **Device** section at the top:
 
    ![Adding a custom device](./index-images/device-mode-toggle-device-toolbar-settings-emulated-devices-add.png)
 
-### Show rulers
+1. In the **Device** section, in the text boxes, enter a device name, screen width, and screen height for the custom device.
 
-If you need to measure screen dimensions, you can use rulers to measure the screen size in pixels.  Select **More options** > **Show rulers** to display rulers above and to the left of your viewport.
+1. Optionally, fill in the following fields:
+
+   * **Device pixel ratio**.  See [Set device pixel ratio](#set-device-pixel-ratio), above; and [Window: devicePixelRatio property](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio), at MDN.
+
+   * **User agent string**.  See [Set the user agent string](#set-the-user-agent-string), below; and [User agent](https://developer.mozilla.org/docs/Glossary/User_agent), at MDN.
+
+   * **User agent type** (device type).  See [Set the device type](#set-the-device-type), above.  Defaults to **Mobile**.
+
+1. Click the **Add** button.  The new device is now available in the device dropdown list in the upper left of the device emulator.
+
+
+To remove a custom device:
+
+* In DevTools > **Settings** > **Devices** (**Emulated Devices**), hover over the custom device name, and then click the trashcan icon.
+
+
+<!-- ------------------------------ -->
+#### Show rulers
+
+If you need to measure screen dimensions, you can use rulers to measure the screen size in pixels.  Select **More options** (![The More Options icon](./index-images/more-options-icon.png)) > **Show rulers** to display rulers above and to the left of your viewport.
 
 ![The Show Rulers menu item](./index-images/device-mode-toggle-device-toolbar-options-show-rulers.png)
 
@@ -152,11 +209,23 @@ Rulers appear above and to the left of the viewport:
 
 ![Rulers above and to the left of the viewport](./index-images/device-mode-toggle-device-toolbar-rulers.png)
 
-### Zoom the viewport
+
+<!-- ------------------------------ -->
+#### Zoom the viewport
 
 To test the look and feel of your page at multiple zoom levels, use the **Zoom** list to zoom in or out.
 
 ![The Zoom list](./index-images/device-mode-toggle-device-toolbar-zoom.png)
+
+
+<!-- ------------------------------ -->
+#### Capture a screenshot
+
+To capture a screenshot of what you currently see in the viewport, click **More options** (![The More Options icon](./index-images/more-options-icon.png)) > **Capture screenshot**:
+
+![The Capture screenshot option in the More options menu](./index-images/capture-screenshot.png)
+
+To capture a screenshot of the whole page including the content that isn't currently visible in the viewport, select **Capture a full size screenshot** from the same menu.
 
 
 <!-- ====================================================================== -->
@@ -179,7 +248,8 @@ Mobile devices often have network and CPU constraints.  Test how quickly your pa
    ![The Device Toolbar](./index-images/device-mode-toggle-device-toolbar-highlighted.png)
 
 
-### Throttle the CPU only
+<!-- ------------------------------ -->
+#### Throttle the CPU only
 
 To throttle the CPU only and not the network:
 
@@ -190,7 +260,8 @@ To throttle the CPU only and not the network:
    ![The CPU list in the Performance panel](./index-images/device-mode-performance-cpu-throttle.png)
 
 
-### Throttle the network only
+<!-- ------------------------------ -->
+#### Throttle the network only
 
 To throttle the network only and not the CPU:
 
@@ -210,7 +281,16 @@ You can also set network throttling from the **Performance** panel:
 
 
 <!-- ====================================================================== -->
-## Override geolocation
+## Emulate sensors
+
+Use the **Sensors** tab to override geolocation, simulate device orientation, force touch, and emulate idle state.
+
+The sections below provide a quick look on how to override geolocation and set device orientation.
+<!-- For a complete list of features, see [Emulate device sensors](). -->
+
+
+<!-- ------------------------------ -->
+#### Override geolocation
 
  If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation-overriding UI.
 
@@ -227,8 +307,12 @@ On the **Sensors** panel, to select one of the preset locations, use the **Locat
 ![Sensors panel with a preset location selected](./index-images/device-mode-toggle-device-toolbar-sensors-tokyo.png)
 
 
-<!-- ====================================================================== -->
-## Set orientation
+See also:
+* [Override geolocation with the Sensors tool](./geolocation.md)
+
+
+<!-- ------------------------------ -->
+#### Set orientation
 
 If your page depends on orientation information from a mobile device to render properly, open the orientation UI.
 
@@ -245,6 +329,10 @@ If your page depends on orientation information from a mobile device to render p
 1. To enter your own orientation, select **Custom orientation**, and enter your own [alpha](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/alpha), [beta](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/beta), and [gamma](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/gamma) values.
 
    ![Orientation options on the Sensors panel](./index-images/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.png)
+
+
+See also:
+* [Simulate device orientation with the Sensors tool](./orientation.md)
 
 
 <!-- ====================================================================== -->
@@ -269,8 +357,7 @@ If your page depends on the user agent string from a mobile device to render pro
    ![Setting the user agent string to Microsoft Edge on macOS](./index-images/device-mode-toggle-device-toolbar-network-conditions-macos.png)
 
 
-### See also
-
+See also:
 * [Override the user agent string](override-user-agent.md)
 
 

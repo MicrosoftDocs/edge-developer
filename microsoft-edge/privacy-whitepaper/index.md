@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 08/04/2023
+ms.date: 09/21/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -79,39 +79,39 @@ In **Guest** mode, autofill is not available and new autofill entries aren't add
 
 
 <!-- ====================================================================== -->
-## Bing Chat in Microsoft Edge sidebar
+## Copilot in Microsoft Edge sidebar
 
-In Bing Chat in the Microsoft Edge sidebar, you can ask complex questions, find comprehensive answers, get summarized information, and find inspiration to build upon, in a side-by-side view, with no need to flip between tabs.
+In Copilot in the Microsoft Edge sidebar, you can ask complex questions, find comprehensive answers, get summarized information, and find inspiration to build upon, in a side-by-side view, with no need to flip between tabs.
 
-To open Bing Chat in the Microsoft Edge sidebar, click the **Bing Chat** (![Bing Chat icon.](./index-images/bing-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of the Microsoft Edge toolbar:
+To open Copilot in the Microsoft Edge sidebar, click the **Copilot** (![Copilot icon.](./index-images/copilot-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of the Microsoft Edge toolbar: 
 
-![Summarize this page](./index-images/summarize-content.png)
+![Summarize this page](./index-images/summarize-content.png) 
 
 
 <!-- --------------------------------------------------------------------- -->
-#### Data and consent used by Bing Chat in the sidebar
+#### Data and consent used by Copilot in Microsoft Edge 
 
-Microsoft Edge determines what data to send to Bing Chat based on the user's **query** and their consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, page title, user's query, and previous conversation history to help Bing Chat answer their query effectively.
+Microsoft Edge determines what data to send to Copilot based on the user's **query** and their consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, page title, user's query, and previous conversation history to help Copilot answer their query effectively.
 
-For questions that need **browsing context**, such as when the user asks Bing Chat to summarize a large page of text, Microsoft Edge requests permission from the user to access page information:
+For questions that need **browsing context**, such as when the user asks Copilot to summarize a large page of text, Microsoft Edge requests permission from the user to access page information:
 
-![Bing Chat asking for consent to access the page content in Microsoft Edge](./index-images/consent-for-contextual-browsing.png)
+![Copilot asking for consent to access the page content in Microsoft Edge](./index-images/consent-for-contextual-browsing.png) <!-- Update Bing chat screenshot-->
 
-When the user grants permission to share page information, Microsoft Edge sends the full **browsing context** in addition to the user's **query** and previous **conversation history** to Bing Chat, to help generate a meaningful **response**.
+When the user grants permission to share page information, Microsoft Edge sends the full **browsing context** in addition to the user's **query** and previous **conversation history** to Copilot, to help generate a meaningful **response**.
 
-The user can modify this permission anytime by going to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Bing Chat** and then turning on or off the **Allow access to any webpage or PDF** toggle.
+The user can modify this permission anytime by going to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Copilot** and then turning on or off the **Allow access to any webpage or PDF** toggle.
 
 
 <!-- ---------------------------------------------------------------------- -->
 #### Duration of storage of conversation history
 
-* **Conversation history** is a history of all queries and responses from Bing Chat.  **Conversation history** is stored for 90 days.  This is independent of whether using Bing Chat in the Microsoft Edge sidebar or by visiting `www.bing.com/chat`.
+* **Conversation history** is a history of all queries and responses from Copilot.  **Conversation history** is stored for 90 days.  This is independent of whether using Copilot in Bing or Copilot in the Microsoft Edge sidebar or by visiting `www.bing.com/chat`.
 
-   * Users can delete a specific conversation or all the conversations from Bing Chat by going to `www.bing.com/chat`, and then deleting the specific conversations in the **Recent activity** section:
+   * Users can delete a specific conversation or all the conversations from Copilot in Bing by going to `www.bing.com/chat`, and then deleting the specific conversations in the **Recent activity** section:
 
-     ![Recent conversation history in Bing Chat](./index-images/bing-chat-recent.png)
+     ![Recent conversation history in Copilot](./index-images/bing-chat-recent.png)
 
-* **Page content** from public **pages on the Bing index** – Bing Chat uses publicly available information from the Bing search engine to summarize pages that are available on the Bing search index.  To answer questions from public pages, Microsoft Edge doesn't need to share this page content with Bing Chat.
+* **Page content** from public **pages on the Bing index** – Copilot uses publicly available information from the Bing search engine to summarize pages that are available on the Bing search index.  To answer questions from public pages, Microsoft Edge doesn't need to share this page content with Copilot.
 
 * **Page content** from **non-Bing index pages** – information that's used to summarize a non-Bing index page is deleted after 6 hours, and it is only used to answer the query.
 
@@ -119,32 +119,21 @@ The user can modify this permission anytime by going to Microsoft Edge > **Setti
 <!-- ---------------------------------------------------------------------- -->
 #### Our commitment to responsible AI
 
-Bing Chat has numerous protective measures in place that are constantly evolving.  For details, see [The new Bing: Our approach to Responsible AI](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2023/04/RAI-for-the-new-Bing-April-2023.pdf).
+Copilot has numerous protective measures in place that are constantly evolving.  For details, see [The new Bing: Our approach to Responsible AI](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2023/04/RAI-for-the-new-Bing-April-2023.pdf).
 
 
 <!-- ---------------------------------------------------------------------- -->
-<!--
-#### Bing Chat for Enterprises
-
-Bing Chat for Enterprises ... (introduce).  To learn how Bing Chat for Enterprises protects user data and business data, see [Privacy and protections](/bing-chat-enterprise/privacy-and-protections).
-
-See also:
-* [Privacy and protections](/bing-chat-enterprise/privacy-and-protections)
--->
-
-
-<!-- ---------------------------------------------------------------------- -->
-#### Glossary of terms for Bing Chat
+#### Glossary of terms for Copilot
 
 | Term | Definition |
 |---|---|
-| _query_ | A question that a user types in the **Ask me anything** text box in Bing Chat. |
+| _query_ | A question that a user types in the **Ask me anything** text box in Copilot. |
 | _Bing index page_ | Any website URL that is publicly available on the internet for Bing to search and can be reached via a URL that starts with `http://` or `https://`. |
 | _non-Bing index page_ | Any webpage or local file that is not available publicly for Bing to search, but is open in Microsoft Edge. |
 | _grounding_ | Centering the response that's provided to a user's query or prompt on high-ranking content from the web, and providing links to websites so that users can learn more.  Bing ranks web search content by heavily weighting features such as relevance, quality, credibility, and freshness. |
-| _response_ | The text that Bing Chat outputs in response to a prompt.  Synonyms: _completion_, _generation_, _answer_. |
-| _conversation history_ | A combination of user query and response in the Bing Chat format. |
-| _browsing context_ | The page URL and page content that's open in the active tab of the Microsoft Edge browser. These could be webpages, local PDFs, Microsoft Word documents, or other local files.  For example, the user can ask **Summarize this page** while they are browsing a long topic or webpage.  Bing Chat uses the page context (such as the page URL) and the page content to summarize the topic for the user. |
+| _response_ | The text that Copilot in Bing outputs in response to a prompt.  Synonyms: _completion_, _generation_, _answer_. |
+| _conversation history_ | A combination of user query and response in the Copilot format. |
+| _browsing context_ | The page URL and page content that's open in the active tab of the Microsoft Edge browser. These could be webpages, local PDFs, Microsoft Word documents, or other local files.  For example, the user can ask **Summarize this page** while they are browsing a long topic or webpage.  Copilot in Microsoft Edge uses the page context (such as the page URL) and the page content to summarize the topic for the user. |
 | _page information_ | The webpage content, or the content of the document, that's open in the active tab of the Microsoft Edge browser. |
 
 
@@ -161,30 +150,55 @@ Google may collect some data associated with the Media Router extension. To unin
 <!-- ====================================================================== -->
 ## Collections
 
-You may collect sites, text, and images from the web, and organize the content with Collections in Microsoft Edge.  All collections data is stored locally on the device and organized per Microsoft Edge profile.  If you have sync turned on for Collections, your collections, notes, and comments are available across all signed-in and syncing versions of Microsoft Edge.
+The Collections feature in Microsoft Edge allows you to save web pages, text, images, and videos from the web. You can organize the content based on the projects, events, and interests that matter to you. You can also save notes in your collections and add notes to individual items as well. Collections uses the Microsoft Edge Entity Extraction service to enrich the content that you collect by including thumbnails and metadata, such as price and star rating. For more information, see [Entity extraction](#entity-extraction) below.
 
-Every 24 hours, Microsoft Edge downloads a list of supported sites that have special entity extraction templates. The templates are specific to each website. When you create a new item in your collection, Microsoft Edge verifies that the site you are collecting from is in the list of supported sites. If the site is in the list, Microsoft Edge pings the entity extraction service for the template of the specific site. No user identifiers are associated with the request to the service. The template attempts to identify the name, price, ratings, primary image, and other data about the item being collected. If the site you are collecting from is not on the supported list site, Microsoft Edge does not download a template. Templates allow collection items to be created locally on the device. No data about the collection items are sent to the service when creating the collection.
+The Collections feature is not available in **Guest** mode or Kids Mode.
 
-You can delete templates stored on the device and clear the cache data. Go to `edge://settings/privacy`. In **Clear browsing data** next to **Clear browsing data now**, select the **Choose what to clear** button. Choose your desired time range and type of data, then select the **Clear now** button.  Another way to delete cached data, go to `edge://settings/clearBrowserData` select the desired time range and type of data, then select the **Clear now** button.
+Collections storage and feature availability depend on your Microsoft Edge Sign-in and Sync settings.
 
-<!-- Above, should pick one way. Check UI for privacy updates -->
 
-You can use the title of your collection to find relevant Pinterest Topic pages when searching in Microsoft Bing. Go to `edge://settings/privacy`. Turn on the **Show suggestions from Pinterest in Collections** setting. Microsoft Edge does not send data about your collections to Pinterest. You can remove the suggestions and stop searches for Pinterest Topic pages. Go to `edge://settings/privacy` and turn off the **Show suggestions from Pinterest in Collections** setting.
-Collections aren't available when using **InPrivate** or **Guest** modes.
+<!-- ------------------------------ -->
+#### Signed in with a personal account
+
+When you sign in to Microsoft Edge with a personal Microsoft Account (MSA), your collections, saved items, notes, and images are automatically saved on Microsoft cloud for free. You can access your collections from Microsoft Edge on any device where you're signed in. You can even view and manage your collections online in any browser by visiting the [Collections portal](https://www.bing.com/saves) at Bing.com. Collections also enhance your experience with a personalized interest feed, if your personalization settings support this feature.
+
+If you want to disable Collections for a signed-in profile using a personal account, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Show Collections and follow content creators in Microsoft Edge**.
+
+When you sign in with a personal account and Sync for Collections is disabled, all collections data is stored locally on the device, organized per Microsoft Edge profile.
+
+You cannot access Collections from an InPrivate window while signed in with a personal account.
+
+
+<!-- ------------------------------ -->
+#### Signed in with a work or school account
+
+If you're signed in with a work or school account and are syncing Collections, your collections, saved items, notes, and images are synced across devices. If you want to stop syncing your Collections, you can turn off Sync for Collections from `edge://settings/profiles/sync`.
+
+When you sign in with a work or school account and Sync for Collections is disabled, all collections data is stored locally on the device, organized per Microsoft Edge profile.
+
+You can access Collections from an InPrivate window while signed in with a work or school account.
+
+
+<!-- ------------------------------ -->
+#### Signed-out
+
+When you don't sign in to Microsoft Edge, all collections data is stored locally on the device, organized per Microsoft Edge profile.
+
+You can access Collections from an InPrivate window when using a signed-out profile.
 
 
 <!-- ====================================================================== -->
 ## Compose
 
-In the Bing Chat pane, the Compose tool uses AI to write for you, starting from a short prompt and **Tone**, **Format**, and **Length** selections. Text that's generated by Compose can be copied or inserted into the webpage directly.
+In the Copilot pane, the Compose tool uses AI to write for you, starting from a short prompt and **Tone**, **Format**, and **Length** selections. Text that's generated by Compose can be copied or inserted into the webpage directly.
 
 ![Compose UI](./index-images/compose.png)
 
-To access Compose, click the **Bing Chat** (![Bing Chat icon](./index-images/bing-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of Microsoft Edge, and then select **Compose**. Text and selections that you enter are sent to an internal Microsoft Large Language Model (LLM).
+To access Compose, click the **Copilot** (![Copilot icon](./index-images/copilot-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of Microsoft Edge, and then select **Compose**. Text and selections that you enter are sent to an internal Microsoft Large Language Model (LLM). 
 
 Requests for Compose are sent over a secure HTTPS connection. Each request contains the input prompt, formatting selections, and IDs that are associated with your Microsoft Edge profile and device, to reference for subsequent requests.
 
-To change settings for the sidebar or Bing Chat pane, go to `edge://settings/sidebar`, and then select **App and notification settings** > **Bing Chat**.
+To change settings for the sidebar or Copilot pane, go to `edge://settings/sidebar`, and then select **App and notification settings** > **Copilot**.
 
 
 <!-- ====================================================================== -->
@@ -306,6 +320,14 @@ Please contact your enterprise administrator to understand your company's polici
 
 
 <!-- ====================================================================== -->
+## Entity extraction
+
+Microsoft Edge uses entity extraction templates that are specific to a list of supported websites to identify the name, price, ratings, primary image, and other data about the item being collected locally. When creating the collection, no user identifiers or other data are sent to Microsoft services.
+
+If you want to delete such templates stored on the device, go to `edge://settings/clearBrowserData`, select the desired time range and type of data, and then click the **Clear now** button.
+
+
+<!-- ====================================================================== -->
 ## Extensions and Microsoft Edge Add-ons
 
 You may install extensions in Microsoft Edge to add functions to the browser. When you install an extension from the Microsoft Edge Add-ons website or another extension store, Microsoft collects information about the extension to help developers and Microsoft understand how the extension is used. Microsoft Edge collects aggregated data including the number of times an extension was downloaded and information about how it is performing, such as crash data. Microsoft shares the aggregated data with the developers of the extension.
@@ -348,21 +370,21 @@ The family group organizer may stop the data collection from the family safety p
 
 
 <!-- ====================================================================== -->
-## Find on Page 
+## Find on page 
 
-Find on Page allows you to search a web page for important keywords. Open **Settings and more (...)** > **Find on Page**. A search box will appear. Type any keyword or phrase into this search box and the page will highlight all locations on the page where your exact search term appears. You can then move through these terms with the **Previous result** and **Next result** buttons. 
+Use the "Find on page" feature to search a webpage for key words.  In a webpage, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  Or, click **Settings** (**..**), and then select **Find on page**.  A search box opens.  Enter a word, phrase, or other string into this search box.  As you type, all occurrences of the string in the page are highlighted. You can then move through the search results by clicking the **Previous result** and **Next result** buttons.
 
-To help you find exactly what you're looking for, Microsoft Edge uses a Microsoft cloud service to find additional related matches for your search.  This only happens when the **Include related matches** toggle in **Find on Page** is turned on.
+By default, the **Include related matches in Find on page** feature allows **Find on page** to find other related matches, including synonyms and alternate spellings.
 
-If the **Include related matches** toggle is turned on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection.  The service token doesn't contain any user-identifiable information.  A Microsoft cloud service then processes the text to find results on the page that are related to your search.  The webpage text and search terms sent to Microsoft are both deleted immediately after processing occurs. No data is stored for any period of time.
+When the **Include related matches in Find on page** toggle is turned on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to find results on the page that are related to your search. The webpage text and search terms that are sent to Microsoft are deleted immediately after processing occurs.
 
-Related matches in **Find on Page** aren't available in **InPrivate** browsing. 
+Related matches in **Find on page** aren't available when using InPrivate browsing.
 
-To stop Microsoft Edge from finding related matches in **Find on Page**:
+To stop Microsoft Edge from finding related matches in **Find on page**:
 
-1. Select **Settings and more** (...) > **Find on Page**.
+1. Select **Settings and more** (**...**) > **Settings** > **Privacy, search, and services**, and then scroll down to the **Services** section.  Or, go to `edge://settings/privacy`, and then scroll down to the **Services** section.
 
-1. Turn off the **Include related matches** toggle.
+1. Turn off the **Include related matches in Find on page** toggle.
 
 
 <!-- ====================================================================== -->
@@ -869,7 +891,9 @@ Microsoft Edge offers helpful suggestions on how to organize tabs to save you ti
 
 When two or more tabs are grouped together, Microsoft Edge sends information about the tabs, including the Title and URL, to the Tabs service over HTTPS.  This information is used to generate a relevant name for the Tab Group.
 
-You can also choose to have Microsoft Edge auto-group all of your tabs, by using the **Group Similar Tabs** feature from the **Tab Action** menu.  In addition to the Title and URL, Microsoft Edge also sends information about which tabs opened another tab, and a timestamp of when a tab was opened.  This additional data allows the service to more accurately suggest Tab Groups, to organize your tabs. 
+You can also choose to have Microsoft Edge auto-group all of your tabs, by using the **Group Similar Tabs** feature from the **Tab Action** menu.  In addition to the Title and URL, Microsoft Edge also sends information about which tabs opened another tab, and a timestamp of when a tab was opened.  This additional data allows the service to more accurately suggest Tab Groups, to organize your tabs.
+
+All tab information that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time. 
 
 The Microsoft Edge Tab organization behavior is turned on by default. To turn this behavior off, go to `edge://settings/privacy` and under **Services** turn off the **Let Microsoft Edge help keep your tabs organized** setting:
 
@@ -951,7 +975,7 @@ Microsoft Edge Workspaces shares tabs, favorites, and history with collaborators
 
 Collaborators cannot see password-protected content unless they sign in and they have access via their own credentials. Microsoft Edge Workspaces doesn't store or share browsing data from non-workspace browsing sessions. If you leave a workspace, the stored contents remain available for other collaborators. If you delete a workspace, the stored contents are deleted for all collaborators.
 
-Microsoft Edge Workspaces is only available for enterprise customers who are signed into Microsoft Edge with a Microsoft Azure Active Directory (AAD) account.  Workspaces aren't available when using Guest mode or InPrivate browsing. 
+Microsoft Edge Workspaces is only available for enterprise customers who are signed into Microsoft Edge with a Microsoft Entra ID account.  Workspaces aren't available when using Guest mode or InPrivate browsing. 
 
 
 <!-- ====================================================================== -->

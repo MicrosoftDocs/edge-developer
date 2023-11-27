@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/23/2023
+ms.date: 08/28/2023
 ---
 # Supported APIs for Microsoft Edge extensions
 
@@ -64,22 +64,22 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [windows](https://developer.chrome.com/extensions/windows) | Interact with browser windows to create, modify, and rearrange windows in the browser. |
 
 
-
 <!-- ====================================================================== -->
 ## Unsupported extension APIs
 
 Microsoft Edge doesn't support the following Extension APIs:
 
-* `chrome.gcm`.
-* `chrome.identity.getAccounts`.
+* `chrome.gcm`
+* `chrome.identity.getAccounts`
 * `chrome.identity.getAuthToken` - As an alternate, you can use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.
-* `chrome.instanceID`.
+* `chrome.instanceID`
+* `chrome.readingList`<!-- [Chrome Extension API Proposal: chrome.readingList](https://docs.google.com/document/d/1f1wW2955nY5Rp3vfS0JGuo1kACOAmsjZupvLYknWKII/edit#heading=h.mbf7udvanbrr) -->
 
 
 <!-- ====================================================================== -->
 ## Additional considerations for supported APIs
 
-*  The user must be signed into Microsoft Edge using a Microsoft account (MSA) or Azure Active Directory account to use `chrome.identity.getProfileUserInfo`. If the user is signed into Microsoft Edge using an on-premises Active Directory account, the API returns `null` for the email and ID values.
+*  The user must be signed into Microsoft Edge using a Microsoft account (MSA) or Microsoft Entra ID account to use `chrome.identity.getProfileUserInfo`. If the user is signed into Microsoft Edge using an on-premises Microsoft Entra ID account, the API returns `null` for the email and ID values.
 
    A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
 

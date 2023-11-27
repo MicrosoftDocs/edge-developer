@@ -6,23 +6,47 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 08/04/2023
+ms.date: 08/10/2023
 ---
 # Build PWA-driven widgets
 
 Various operating systems have widgets dashboards that let users read content and perform tasks. Examples of this include Android Home Screen widgets, macOS Dashboard and Today Panel widgets, the Apple Touch Bar, Samsung Daily Cards, Mini App widgets, and smart watch app companions.
 
-On Windows 11, widgets appear in the widgets board which you open from the left corner of your taskbar:
+On Windows 11, widgets appear in the Widgets Board, which you open from the left side of the taskbar:
 
-![The widgets board in Windows 11](./widgets-images/windows11-widgets.png) 
+![The Widgets Board in Windows 11](./widgets-images/windows11-widgets.png)
 
 In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and handle user interactions within them.
 
 
-<!-- ====================================================================== -->
-## Install WinAppSDK
+<!-- ------------------------------ -->
+#### Requires building a custom widget for the PWA
 
-To enable developing widgets on your local machine, install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
+An existing PWA cannot simply be placed into the widget dashboard as-is, like you can with the Microsoft Edge Sidebar.  Instead, you need to build a custom widget experience that's appropriate for the widget host, which currently is the Windows 11 Widgets Board.  (There may be other widget hosts in the future.)  The Windows 11 Widgets Board requires widgets to be built by using Adaptive Card templates instead of HTML and JavaScript, so the widget has to be designed separately from the rest of the app's UI.
+
+See also:
+* [Build PWAs for the sidebar in Microsoft Edge](./sidebar.md)
+
+To build a PWA-driven widget and deliver it via the Microsoft store, no C++/C# code is required.  Once you've produced the widget, and can successfully install and run the widget from a public endpoint, you can package the app by using [PWABuilder.com](https://www.pwabuilder.com) and ship the app to the Microsoft store without requiring any additional code.  The PWA backing the widget must be installable from a public endpoint, because PWABuilder.com doesn't support packing apps from localhost.
+<!-- The PWA (not the widget) is what is installable and packaged, because it's a standalone entity (unlike a widget). -->
+
+See also:
+* [Publish a Progressive Web App to the Microsoft Store](./microsoft-store.md)
+
+
+<!-- ====================================================================== -->
+## Install WinAppSDK and enable Developer Mode
+
+To enable developing and testing widgets on your local machine:
+
+* Install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
+* Enable Developer Mode in Windows 11:
+
+  1. Open **Settings**.
+  1. In the **Find a setting** textbox, enter `developer`, and then click **Use developer features**.
+  1. Enable **Developer Mode**:
+
+     ![The Developer settings of Windows 11](./widgets-images/developer-mode.png)
 
 
 <!-- ====================================================================== -->
@@ -87,8 +111,8 @@ In the above example, a music player application defines a mini player widget. A
 | `name` | The title of the widget, presented to users. | Yes |
 | `short_name` | An alternative short version of the name. | No |
 | `description` | A description of what the widget does. | Yes |
-| `icons` | An array of icons to be used for the widget. If missing, the `icons` manifest member is used instead. | No |
-| `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). Note that the `platform` field of a screenshot item currently supports the `Windows` and `any` values. | Yes |
+| `icons` | An array of icons to be used for the widget. If missing, the `icons` manifest member is used instead. Icons larger than 1024x1024 are ignored. | No |
+| `screenshots` | An array of screenshots that show what the widget looks like. Analogous to the [`screenshot` manifest member](https://developer.mozilla.org/docs/Web/Manifest/screenshots). The `platform` field of a screenshot item supports the `Windows` and `any` values. Images larger than 1024x1024 pixels are ignored. For screenshot requirements specific to the Windows 11 Widgets Board, see [Screenshot image requirements](/windows/apps/design/widgets/widgets-picker-integration#screenshot-image-requirements) in _Integrate with the widget picker_. | Yes |
 | `tag` | A string used to reference the widget in the PWA service worker. | Yes |
 | `template` | The template to use to display the widget in the operating system widgets dashboard. Note: this property is currently only informational and not used. See `ms_ac_template` below. | No |
 | `ms_ac_template` | The URL of the custom Adaptive Cards template to use to display the widget in the operating system widgets dashboard. See [Define a widget template](#define-a-widget-template) below. | Yes |
@@ -96,6 +120,7 @@ In the above example, a music player application defines a mini player widget. A
 | `type` | The MIME type for the widget data. | No |
 | `auth` | A boolean indicating if the widget requires authentication. | No |
 | `update` | The frequency, in seconds, at which the widget will be updated. Code in your service worker must perform the updating; the widget is not updated automatically. See [Access widget instances at runtime](#access-widget-instances-at-runtime). | No |
+| `multiple` | A boolean indicating whether to allow multiple instances of the widget. Defaults to `true`. | No |
 
 
 <!-- ====================================================================== -->
@@ -160,7 +185,7 @@ To bind data to your template, use the `data` field in your widget definition. T
 
 The template defined in [the previous section](#define-a-widget-template) contains two variables: `song` and `artist`, which are enclosed in the binding expression syntax: `${}`. The data that's returned by the `data` URL in your widget definition should contain values for these variables.
 
-Here's an example of what the `data` URL might return: 
+Here's an example of what the `data` URL might return:
 
 ```json
 {
@@ -385,19 +410,19 @@ async function updateWidget(widget) {
 
 PWAmp is a music player PWA demo application that defines a widget. The PWAmp widget lets users visualize the current song and play the previous or next songs.
 
-1. If not done yet, install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12).
+1. If not done yet, install [WinAppSDK 1.2](/windows/apps/windows-app-sdk/older-downloads#windows-app-sdk-12) and enable Developer Mode in Windows 11.
 
 1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) and install the app on Windows 11.
 
-1. Open the Windows 11 widgets board by pressing **Windows logo key + W**.
+1. Open the Windows 11 Widgets Board by pressing **Windows logo key + W**.
 
 1. Click **Add widgets** to open the **widgets settings** screen, scroll to the **PWAmp mini player** widget and add it.
 
-1. Close the **widgets settings** screen. The **PWAmp mini player** is now displayed in the widgets board.
+1. Close the **widgets settings** screen. The **PWAmp mini player** is now displayed in the Widgets Board.
 
 The PWAmp widget displays the current song and buttons to play the previous or next song.
 
-![Windows widgets board, next to the PWAmp demo app. The widgets board contains the PWAmp mini player widget, showing the current song playing in the PWAmp app](./widgets-images/pwamp-widget.png)
+![Windows Widgets Board, next to the PWAmp demo app. The Widgets Board contains the PWAmp mini player widget, showing the current song playing in the PWAmp app](./widgets-images/pwamp-widget.png)
 
 
 <!-- ====================================================================== -->
@@ -438,10 +463,10 @@ Each widget is represented as a `widget` object, which contains the following pr
 When using `matchAll(options)` to get multiple widgets, a `widgetOptions` object is necessary to filter which widgets to return. The `widgetOptions` object contains the following properties, all of which are optional:
 
 * `installable`: A Boolean indicating if the returned widgets should be installable.
-* `installed`: A Boolean indicating if the returned widgets should be installed in the widget host.
+* `installed`: A Boolean indicating if the returned widgets are installed in the widget host.
 * `tag`: A string used to filter the returned widgets by tag.
-* `instance`: A string used to filter the returned widgets by instance ID.
-* `host`: A string used to filter the returned widgets by widget host ID.
+* `instanceId`: A string used to filter the returned widgets by instance ID.
+* `hostId`: A string used to filter the returned widgets by widget host ID.
 
 #### widgetPayload object
 
@@ -467,22 +492,17 @@ This object represents the original definition of the widget, found in the PWA m
 
 This object is passed as an argument to listeners of service worker widget events of type `widgetinstall`, `widgetuninstall`, and `widgetresume`.
 
-For the `widgetinstall` and `widgetuninstall` event types, the `widgetEvent` object has the following properties:
+For the `widgetinstall`, `widgetuninstall`, and `widgetresume` event types, the `widgetEvent` object has the following properties:
 
 | Property | Description | Type |
 |:--- |:--- |:--- |
-| `widget` | The widget instance that triggered the event. | [widgetInstance](#widgetinstance-object) |
+| `widget` | The widget instance that triggered the event. | [widget](#widget-object) |
 | `instanceId` | The widget instance ID. | `String` |
-
-For the `widgetresume` event type, the `widgetEvent` object has the following property:
-
-| Property | Description | Type |
-|:--- |:--- |:--- |
 | `hostId` | The widget host ID. | `String` |
 
 #### widgetClickEvent object
 
-This object is passed as an argument to listeners of service worker widget events of type `widgetclick`.
+This object is passed as an argument to listeners of service worker widget events of type `widgetclick`. You can open your app's window in response to the `widgetclick` event, by using `clients.openWindow()`.
 
 The `widgetClickEvent` object has the following properties:
 
