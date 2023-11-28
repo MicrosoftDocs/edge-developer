@@ -61,7 +61,6 @@ The following experimental features are turned on by default. You can use these 
 * [Enable background page selector (e.g. for prerendering debugging)](#enable-background-page-selector-eg-for-prerendering-debugging)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
-* [Focus Mode](#focus-mode) - selected by default on some machines.
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 * [View console.profile() results in the Performance panel for Node.js](#view-consoleprofile-results-in-the-performance-panel-for-nodejs)
 * [Enable Preloading Status Panel in Application panel](#enable-preloading-status-panel-in-application-panel)
@@ -80,7 +79,6 @@ The following experimental features are turned on by default. You can use these 
 * [Enable background page selector (e.g. for prerendering debugging)](#enable-background-page-selector-eg-for-prerendering-debugging)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
-* [Focus Mode](#focus-mode) - selected by default on some machines.
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 * [View console.profile() results in the Performance panel for Node.js](#view-consoleprofile-results-in-the-performance-panel-for-nodejs)
 * [Enable Preloading Status Panel in Application panel](#enable-preloading-status-panel-in-application-panel)
