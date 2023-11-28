@@ -48,7 +48,7 @@ The sections below describe how to record the performance of a webpage in DevToo
 <!-- ------------------------------ -->
 #### Record runtime performance
 
-To analyze the performance of a webpage while it is running, as opposed to loading:
+To analyze the performance of a webpage while it's running (rather than while it's loading):
 
 1. Go to the page that you want to analyze.
 
@@ -68,7 +68,7 @@ To analyze the performance of a webpage while it is running, as opposed to loadi
 <!-- ------------------------------ -->
 #### Record load performance
 
-To analyze the performance of a webpage while it is loading, as opposed to running:
+To analyze the performance of a webpage while it's loading (rather than while it's running):
 
 1. Go to the page that you want to analyze.
 
@@ -90,13 +90,13 @@ To capture a screenshot of every frame while recording, select the **Screenshots
 
 ![The Screenshots checkbox](./reference-images/capture-screenshots-checkbox.png)
 
-To learn how to interact with screenshots, see [View a screenshot](#view-a-screenshot).
+To learn how to interact with screenshots, see [View a screenshot](#view-a-screenshot), below.
 
 
 <!-- ------------------------------ -->
 #### Force garbage collection while recording
 
-To force garbage collection while you are recording a page, click **Collect garbage** (![Collect garbage icon](./reference-images/collect-garbage-icon.png)):
+To force garbage collection while you are recording a page, click the **Collect garbage** (![Collect garbage icon](./reference-images/collect-garbage-icon.png)) button:
 
 ![Collect garbage](./reference-images/collect-garbage-button.png)
 
@@ -104,7 +104,7 @@ To force garbage collection while you are recording a page, click **Collect garb
 <!-- ------------------------------ -->
 #### Show recording settings
 
-To expose more settings related to how DevTools captures performance recordings, click **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)):
+To expose more settings related to how DevTools captures performance recordings, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button:
 
 ![The Capture Settings section](./reference-images/capture-settings.png)
 
@@ -136,7 +136,7 @@ An example of a recording when JS samples are turned on:
 
 To throttle the network while recording:
 
-1. Open the **Capture settings** menu.  See [Show recording settings](#show-recording-settings).
+1. Open the **Capture settings** menu, as described in [Show recording settings](#show-recording-settings), above.
 
 1. Set **Network** to the desired level of throttling.
 
@@ -146,7 +146,7 @@ To throttle the network while recording:
 
 To throttle the CPU while recording:
 
-1. Open the **Capture settings** menu.  See [Show recording settings](#show-recording-settings).
+1. Open the **Capture settings** menu, as described in [Show recording settings](#show-recording-settings), above.
 
 1. Set **CPU** to the desired level of throttling.
 
@@ -158,7 +158,7 @@ Throttling is relative to the capabilities of your computer.  For example, the *
 
 To record more rendering information, enable advanced rendering instrumentation:
 
-1. Open the **Capture settings** menu.  See [Show recording settings](#show-recording-settings).
+1. Open the **Capture settings** menu, as described in [Show recording settings](#show-recording-settings), above.
 
 1. Check the **Enable advanced rendering instrumentation (slow)** checkbox.
 
@@ -202,31 +202,41 @@ After you [record runtime performance](#record-runtime-performance) or [record l
 <!-- ------------------------------ -->
 #### Select a portion of a recording
 
-Drag your mouse left or right across the **Overview** to select a portion of a recording.  The **Overview** is the section that contains the **CPU** and **NET** charts:
+You can select a portion of a recording by using a mouse, keyboard, or trackpad, as follows.
+
+
+###### Mouse
+
+* Drag your mouse left or right across the **Overview**.  The **Overview** is the section that contains the **CPU** and **NET** charts:
 
 ![Drag the mouse across the Overview to zoom](./reference-images/zoom-highlighted.png)
 
-To select a portion using the keyboard:
 
-1. Select the background of the **Main** section, or any of the sections next to it, such as **Interactions**, **Network**, or **GPU**.  This keyboard workflow only works when one of these sections is in focus.
+###### Keyboard
 
-1. Use the `W`, `A`, `S`, `D` keys to zoom in, move left, zoom out, and move right, respectively.
+1. Select the background of the **Main** section, or select the background of a section that's next to the **Main** section, such as **Interactions**, **Network**, or **GPU**.  This keyboard workflow only works when one of these sections is in focus.
 
-To select a portion using a trackpad:
+1. Press `W` or `S` to zoom in or out.  Press `A` or `D` to move left or right.
 
-1. Hover your mouse over the **Overview** section or the **Details** section.  The **Overview** section is the area containing the **FPS**, **CPU**, and **NET** charts.  The **Details** section is the area containing the **Main** section, the **Interactions** section, and so on.
 
-1. Using two fingers, swipe up to zoom out, swipe left to move left, swipe down to zoom in, and swipe right to move right.
+###### Trackpad
 
-To scroll a long flame chart in the **Main** section or any of the neighbors, click and hold while dragging up and down.  Drag left and right to move what portion of the recording is selected.
+To select a portion by using a trackpad:
+
+1. Hover your mouse over the **Overview** section or the **Details** section.  The **Overview** section is the area containing the **FPS**, **CPU**, and **NET** charts.  The **Details** section is the area containing the **Main** section and the **Interactions** section.
+
+1. Using two fingers, swipe up to zoom out, or down to zoom in.  Using two fingers, swipe left to move left, or right to move right.
+
+To scroll a long flame chart in the **Main** section or any of the neighbors, click and hold while dragging up and down.  Drag left and right to move which portion of the recording is selected.
 
 
 <!-- ------------------------------ -->
 #### Search activities
 
-Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS) to open the search box at the bottom of the **Performance** tool:
+To open the search box at the bottom of the **Performance** tool, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS):
 
 ![The search box](./reference-images/search-regex.png)
+
 
 To navigate activities that match your query:
 
@@ -234,11 +244,13 @@ To navigate activities that match your query:
 
 1. To select the next activity, press **Enter**.  To select the previous activity, press **Shift+Enter**.
 
+
 To modify the query settings:
 
 *  To make the query case-sensitive, click the **Case sensitive** (![Case sensitive](./reference-images/search-case-icon.png)) button.
 
 *  To use a regular expression in your query, click the **Regex** (![Regex](./reference-images/search-regex-icon.png)) button.
+
 
 To hide the search box, click **Cancel**.
 

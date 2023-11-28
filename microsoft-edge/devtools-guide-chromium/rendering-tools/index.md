@@ -174,7 +174,7 @@ Compositing is where the painted parts of the page are put together for displayi
 
 To find out how long painting takes, or how often painting occurs:
 
-1. In DevTools, in the **Performance** tool, select the **Capture settings** (![The 'Capture settings' icon](./index-images/capture-settings-icon.png)) button, and then select the **Enable advanced rendering instrumentation**.
+1. In DevTools, in the **Performance** tool, click the **Capture settings** (![The 'Capture settings' icon](./index-images/capture-settings-icon.png)) button, and then select the **Enable advanced rendering instrumentation** checkbox.
 
 1. Take a recording.
 
