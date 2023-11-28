@@ -64,8 +64,7 @@ The following experimental features are turned on by default. You can use these 
 * [View console.profile() results in the Performance panel for Node.js](#view-consoleprofile-results-in-the-performance-panel-for-nodejs)
 * [Enable Speculative Loads Panel in Application panel](#enable-speculative-loads-panel-in-application-panel)
 
-<!-- todo: update present file to Stable 119 -->
-**Turned on by default in Microsoft Edge Stable 118:**
+**Turned on by default in Microsoft Edge Stable 119:**
 * [Automatically pretty print minified sources](#automatically-pretty-print-minified-sources)
 * [Source order viewer](#source-order-viewer)
 * [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor)
@@ -164,7 +163,7 @@ Some Microsoft Edge Add-ons can define custom color themes for DevTools. If you 
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -175,7 +174,7 @@ To capture JavaScript stack traces when DOM nodes are added to the DOM at runtim
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -197,7 +196,7 @@ When this experiment is turned off, a UI prompt with a button asks you whether t
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -226,7 +225,7 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -239,7 +238,7 @@ Adds the **CSP Violations** tool, which displays any Content Security Policy (CS
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -249,14 +248,14 @@ Status:
 _new as of Microsoft Edge 105_
 
 Whether to display a checkbox to expose internals in heap snapshots in the **Memory** tool.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 See also:
 * [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -270,7 +269,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -284,7 +283,7 @@ See also:
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -292,11 +291,11 @@ Status:
 <!-- checkbox has a (?) link to this anchor wording -->
 
 Whether to include event initiators in the Timeline.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -312,7 +311,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -320,11 +319,11 @@ Status:
 <!-- checkbox has a (?) link to this anchor wording -->
 
 Enables DWARF support for WebAssembly debugging.  See [Improved WebAssembly debugging](../whats-new/2019/12/devtools.md#improved-webassembly-debugging) in _What's new in DevTools (Microsoft Edge 80)_.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -341,7 +340,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -355,7 +354,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -377,7 +376,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -388,7 +387,7 @@ Adds a button in the **Elements** tool which toggles between the DOM tree and th
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -424,7 +423,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -432,11 +431,11 @@ Status:
 <!-- checkbox has a (?) link to this anchor wording -->
 
 Enables automatic contrast issue reporting in the **Issues** tool.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -444,11 +443,11 @@ Status:
 <!-- checkbox has a (?) link to this anchor wording -->
 
 Enables experimental cookie features.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -459,7 +458,7 @@ See [More precise changes in the Changes tab](https://developer.chrome.com/blog/
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -467,11 +466,11 @@ Status:
 <!-- checkbox has a (?) link to this anchor wording -->
 
 Whether to sync CSS changes in the **Styles** tab in the **Elements** tool.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -479,11 +478,11 @@ Status:
 <!-- no (?) link -->
 
 _new as of Microsoft Edge 106_
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -491,11 +490,11 @@ Status:
 <!-- checkbox has a (?) link to this anchor wording -->
 
 Whether to use local overrides for response headers.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -504,11 +503,11 @@ Status:
 
 _new as of Microsoft Edge 119_
 
-Adds a **Delete all overrides** menuitem in the right-click menu for folders in the **Overrides** tab of the **Sources** tool.  When you select **Delete all overrides**, a dialog appears: "Are you sure you want to delete all overrides in this folder?"<!-- todo: clarify result of clicking OK button-->
+Adds a **Delete all overrides** menuitem in the right-click menu for folders in the **Overrides** tab of the **Sources** tool.  When you select **Delete all overrides**, a dialog appears: "Are you sure you want to delete all overrides in this folder?"<!-- todo old: clarify result of clicking OK button-->
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -526,7 +525,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -542,7 +541,7 @@ Controls whether to group resources into separate **Authored** and **Deployed** 
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -554,7 +553,7 @@ _new as of Microsoft Edge 106_
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -596,7 +595,7 @@ To see the Object Properties viewer in the **Sources** tool:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -616,7 +615,7 @@ For now, these controls enable you to disable the experiment and re-activate the
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -626,7 +625,7 @@ Status:
 _new as of Microsoft Edge 114_
 
 Enables the background page selector, such as for prerendering debugging.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 See also:
 * [Overview and timelines for migrating to Manifest V3](../../extensions-chromium/developer-guide/manifest-v3.md) - service workers instead of background pages, for Microsoft Edge extensions.
@@ -634,7 +633,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -654,7 +653,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -681,33 +680,29 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is not present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
 ## Enable breadcrumbs in the Performance Panel
 <!-- no (?) link -->
-<!-- todo: new -->
 
 _new as of Microsoft Edge 121_
 
 Enables breadcrumbs in the **Performance** tool.
 <!-- todo: need sentence -->
 
+See also:
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
+
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is not present in Microsoft Edge Stable 118.<!-- todo: check 119 -->
-
-<!--
-See also:
-* []()
--->
+* This checkbox is not present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
 ## Enable Autofill view
 <!-- no (?) link -->
-<!-- todo: new -->
 
 _new as of Microsoft Edge 121_
 
@@ -717,11 +712,12 @@ Enables Autofill view.
 <!--
 See also:
 * []()
+todo: link, after clarify
 -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is not present in Microsoft Edge Stable 118.<!-- todo: check -->
+* This checkbox is not present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -729,11 +725,11 @@ Status:
 <!-- checkbox has a (?) link to this anchor wording -->
 
 Controls whether to log DevTools uncaught exceptions in the **Console** tool.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -755,7 +751,7 @@ The [webhint](https://webhint.io) experiment displays the webhint feedback in th
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -766,7 +762,7 @@ Enable this experiment to view syntax errors under HTML in the **DOM** view of t
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -783,7 +779,7 @@ See [Reduce the complexity of DevTools with Focus Mode](focus-mode.md).
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -800,7 +796,7 @@ Any edits that you make in DevTools now change the file on the hard drive and sy
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ======================================================================
@@ -818,7 +814,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 -->
 
 
@@ -829,14 +825,14 @@ Status:
 _new as of Microsoft Edge 114_
 
 Enables the **Crash Analyzer** tool.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 See also:
 * [Debug JavaScript error stack traces by using the Crash Analyzer tool](../whats-new/2023/05/devtools-113.md#debug-javascript-error-stack-traces-by-using-the-crash-analyzer-tool) in _What's New in DevTools (Microsoft Edge 113)_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -846,18 +842,18 @@ Status:
 _new as of Microsoft Edge 114_
 
 Enables Adaptive CPU throttling.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 See also:
 *  [Throttle the CPU while recording](../evaluate-performance/reference.md#throttle-the-cpu-while-recording) in _Performance features reference_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ======================================================================
-## internal-only console checkbox -->
+## internal-only Console checkbox -->
 
 
 <!-- ============================================================================================================================================ -->
@@ -870,11 +866,11 @@ Status:
 <!-- checkbox has a (?) link to this anchor wording -->
 
 Whether to include the Ignore list for JavaScript frames on the Timeline.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -882,14 +878,14 @@ Status:
 <!-- checkbox has a (?) link to this anchor wording -->
 
 Controls whether to live-update the heap profile.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 See also:
 * [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -897,14 +893,14 @@ Status:
 <!-- checkbox has a (?) link to this anchor wording -->
 
 Controls whether to show the Sampling heap profiler timeline.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 See also:
 * [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -915,7 +911,7 @@ Controls whether to show invalidation tracking on the Timeline.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -926,7 +922,7 @@ Controls whether to show all events on the Timeline.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -937,7 +933,7 @@ Controls whether to show v8 runtime call stats on the Timeline.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -956,7 +952,7 @@ When DevTools is used to debug processes that are running in Node.js, this exper
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 See also:
 * [JavaScript Profiler tool](../javascript-profiler/javascript-profiler-tool.md)
@@ -974,7 +970,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -984,7 +980,7 @@ Status:
 _new as of Microsoft Edge 118_
 
 Whether to use scope information from source maps.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 See also:
 * [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
@@ -992,7 +988,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -1018,12 +1014,12 @@ Selecting this experiment checkbox adds the **Preloading** section within the **
 
 <!--
 Select an element for more details.
-todo: how select element, where?  that instruction is prominent in UI, so clarify here
+todo old: how select element, where?  that instruction is prominent in UI, so clarify here
 -->
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -1032,17 +1028,27 @@ Status:
 
 _new as of Microsoft Edge 121_
 
-Enables the **Speculative Loads** pane within the **Application** tool:
+Enables the **Speculative loads** page within the **Background services** section of the **Application** tool, including the **Rules** page and the **Speculations** page:
+<!-- todo: explain speculative loads -->
 
-![The `Speculative Loads` pane within the Application tool](./focus-mode-images/speculative-loads-pane.png)
-<!-- todo: png -->
+![The `Speculative Loads` page within the Application tool](./index-images/speculative-loads-page.png)
+
+The **Rules** page has columns:
+* **Rule set**
+* **Status**
+
+The **Speculations** page has columns:
+* **URL**
+* **Action**
+* **Rule set**
+* **Status**
 
 See also:
 * [Enable Preloading Status Panel in Application panel](#enable-preloading-status-panel-in-application-panel), above.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is not present in Microsoft Edge Stable 118.<!-- todo: check -->
+* This checkbox is not present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -1052,7 +1058,7 @@ Status:
 _new as of Microsoft Edge 118_
 
 Whether to enable the Storage Buckets Tree in the **Application** tool.
-<!-- todo: need text -->
+<!-- todo old: need text -->
 
 <!-- 
 See also:
@@ -1060,7 +1066,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 118.
+* This checkbox is present in Microsoft Edge Stable 119.
 
 
 <!-- ====================================================================== -->
@@ -1078,4 +1084,4 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is not present in Microsoft Edge Stable 118.<!-- todo: check -->
+* This checkbox is not present in Microsoft Edge Stable 119.
