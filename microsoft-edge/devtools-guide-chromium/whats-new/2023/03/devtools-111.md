@@ -125,9 +125,9 @@ See also:
 <!-- ====================================================================== -->
 ## In Focus Mode, assistive technology announces when you move a tool to Quick View
 
-In previous versions of Microsoft Edge, assistive technology, such as screen readers, didn't announce confirmation when moving a tool from the Activity Bar to Quick View.  In Microsoft Edge 111, this issue has been fixed.  Screen readers now announce "Successfully added Network to Quick View" when you move the **Network** tool from the Activity Bar to Quick View:
+In previous versions of Microsoft Edge, assistive technology, such as screen readers, didn't announce confirmation when moving a tool from the Activity Bar to the **Quick View** toolbar.  In Microsoft Edge 111, this issue has been fixed.  Screen readers now announce "Successfully added Network to Quick View" when you move the **Network** tool from the Activity Bar to the **Quick View** toolbar:
 
-![Moving the Network tool from the Activity Bar to Quick View](./devtools-111-images/move-network-tool-to-quickview.png)
+![Moving the Network tool from the Activity Bar to the Quick View toolbar](./devtools-111-images/move-network-tool-to-quickview.png)
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)

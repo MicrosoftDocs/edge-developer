@@ -61,7 +61,6 @@ The following experimental features are turned on by default. You can use these 
 * [Enable background page selector (e.g. for prerendering debugging)](#enable-background-page-selector-eg-for-prerendering-debugging)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
-* [Focus Mode](#focus-mode) - selected by default on some machines.
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 * [View console.profile() results in the Performance panel for Node.js](#view-consoleprofile-results-in-the-performance-panel-for-nodejs)
 * [Enable Preloading Status Panel in Application panel](#enable-preloading-status-panel-in-application-panel)
@@ -80,7 +79,6 @@ The following experimental features are turned on by default. You can use these 
 * [Enable background page selector (e.g. for prerendering debugging)](#enable-background-page-selector-eg-for-prerendering-debugging)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
-* [Focus Mode](#focus-mode) - selected by default on some machines.
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 * [View console.profile() results in the Performance panel for Node.js](#view-consoleprofile-results-in-the-performance-panel-for-nodejs)
 * [Enable Preloading Status Panel in Application panel](#enable-preloading-status-panel-in-application-panel)
@@ -222,7 +220,7 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 1. Click the **Reload DevTools** button that appears next to the message.
 
-1. The **Protocol monitor** tool is displayed in **Quick View** or the **Drawer** at the bottom of DevTools.
+1. The **Protocol monitor** tool is displayed in the **Quick View** panel at the bottom of DevTools.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 120.
@@ -723,23 +721,6 @@ Status:
 <!-- checkbox has a (?) link to this anchor wording -->
 
 Enable this experiment to view syntax errors under HTML in the **DOM** view of the **Elements** tool. For more information, see [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool).
-
-Status:
-* This checkbox is present in Microsoft Edge Canary 120.
-* This checkbox is present in Microsoft Edge Stable 118.
-
-
-<!-- ====================================================================== -->
-## Focus Mode
-<!-- checkbox has a (?) link to this anchor wording -->
-
-Focus Mode is a new user interface for DevTools.  Focus Mode is designed to simplify and streamline the DevTools UI, without compromising its feature set.
-
-Focus Mode replaces the main row of tabs with an **Activity Bar**, which is a compact toolbar with distinctive icons.  The **Activity Bar** makes it possible to pin, rearrange, and open your favorite tools, for quick access.  The **Activity Bar** also provides access to user settings, help, and other features.
-
-Focus Mode also provides a **Quick View** list, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
-
-See [Reduce the complexity of DevTools with Focus Mode](focus-mode.md).
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 120.

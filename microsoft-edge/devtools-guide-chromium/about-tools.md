@@ -87,7 +87,7 @@ The **More tools** (**+**) menu in the **Activity Bar** and in the **Quick View*
 <!-- ====================================================================== -->
 ## Activity Bar tools vs. Quick View tools
 
-_Activity Bar tools_ are tools that open in the **Activity Bar** (upper pane) by default.  _Quick View_ tools are tools that open in the **Quick View** (lower pane) by default.  To show or hide **Quick View**, when focus is on DevTools, press **Esc**.
+_Activity Bar tools_ are tools that open in the **Activity Bar** (the upper pane) by default.  _Quick View_ tools are tools that open in the **Quick View** panel (the lower pane) by default.  To show or hide the **Quick View** panel: when focus is on DevTools, press **Esc**.
 
 The **Command Menu** first lists the **Activity Bar** tools (indicated by the **Panel** label), and then the **Quick View** tools:
 
@@ -107,9 +107,9 @@ To close a tool tab that's on a toolbar, right-click the tab, and then select **
 
 ![The right-click menu for the Network tool in the Activity Bar, including the 'Remove from Activity Bar' command](./about-tools-images/remove-from-activitybar.png)
 
-The **Elements**, **Console**, and **Sources** tools are permanent tabs and cannot be closed or moved from the Activity Bar to the Quick View panel.  You can drag their tabs to reorder them in the **Activity Bar**.
+The **Elements**, **Console**, and **Sources** tools are permanent tabs and cannot be closed or moved from the Activity Bar to the **Quick View** panel.  You can drag their tabs to reorder them in the **Activity Bar**.
 
-The **Console** tool is also a permanent tab on the Quick View toolbar.  In contrast, the **Issues** tool on the Quick View toolbar can be removed.
+The **Console** tool is also a permanent tab on the **Quick View** toolbar.  In contrast, the **Issues** tool on the **Quick View** toolbar can be removed.
 
 
 <!-- ====================================================================== -->

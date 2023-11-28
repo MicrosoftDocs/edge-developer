@@ -278,9 +278,9 @@ To change the location of the **Activity Bar**, do either of the following:
 <!-- ------------------------------ -->
 #### Change the location of Quick View
 
-By default, the **Quick View** panel is at the bottom of DevTools.  You can also put **Quick View** on the right side of DevTools.
+By default, the **Quick View** panel is at the bottom of DevTools.  You can also put the **Quick View** panel on the right side of DevTools.
 
-To display **Quick View**, press **Esc**.
+To display the **Quick View** panel, press **Esc**.
 
 To change the location of the **Quick View** panel, in the **Quick View** toolbar, click the **Dock Quick View to the right** button or the **Dock Quick View to the bottom** (![The Dock Quick View icon](./overview-images/move-quickview-icon.png)) button:
 
@@ -404,7 +404,7 @@ In the **Console** tool, you can:
 *  View and filter logged messages from network requests or from JavaScript log statements.
 *  Enter JavaScript statements to evaluate in realtime.  Expressions are evaluated in the current context, such as when the JavaScript debugger in the **Sources** tool is paused at a breakpoint.
 
-The **Console** tool is always present on the Activity Bar and on the Quick View toolbar.
+The **Console** tool is always present on the Activity Bar and on the **Quick View** toolbar.
 
 See [Console](console/index.md).
 
@@ -460,7 +460,7 @@ The **Customize and control DevTools** (![Customize and control DevTools](./over
 * Show keyboard shortcuts.
 * Change DevTools settings.
 * Open Device Emulation.
-* Toggle the Quick View panel.
+* Toggle the **Quick View** panel.
 * Run a command.
 * Search for code.
 * Open a file.
@@ -483,7 +483,7 @@ Click the **Close** DevTools (![Close DevTools icon](./overview-images/close-dev
 <!-- ====================================================================== -->
 ## Features of the Quick View toolbar
 
-Use **Quick View** to open a second tool below or to the right of the tool that's already selected in the **Activity Bar**:
+Use the **Quick View** panel to open a second tool below or to the right of the tool that's already selected in the **Activity Bar**:
 
 1. Select a tool from the **Activity Bar**.
 
@@ -520,7 +520,7 @@ The **More tools** (**+**) button is displayed both in the **Activity Bar** and 
 | Open a tool in the **Activity Bar** at the top of DevTools | In the **Activity Bar** at the top of DevTools, click **More tools** (**+**) and then select a tool. |
 | Open a tool on the **Quick View** toolbar | When DevTools has focus, press **Esc** to show the **Quick View** toolbar if it's not shown yet.  In the **Quick View** toolbar, click the **More tools** (**+**) button, and then select a tool. |
 | Move a tool from the **Quick View** toolbar to the **Activity Bar** | When DevTools has focus, press **Esc** to show the **Quick View**.  In the **Quick View** toolbar, right-click the tool's tab, and then select **Move to top Activity Bar** or **Move to left Activity Bar**. |
-| Move a tool from the **Activity Bar** to the **Quick View** Toolbar | In the **Activity Bar**, right-click the tool's tab, and then select **Move to bottom Quick View** or **Move to side Quick View**. |
+| Move a tool from the **Activity Bar** to the **Quick View** toolbar | In the **Activity Bar**, right-click the tool's tab, and then select **Move to bottom Quick View** or **Move to side Quick View**. |
 | Open a tool in its default toolbar (**Activity Bar** or **Quick View**) | When DevTools has focus, open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type the name of the tool, and then select a **Show \<tool\>** command. |
 
 In addition to **Activity Bar** and **Quick View** tools, DevTools includes the following tools:
@@ -556,9 +556,9 @@ In the Command Menu, the tools are called "panels"; for example, the **Elements*
 
    ![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Quick View'](./overview-images/command-menu-show-changes.png)
 
-1. Press **Enter** to select a **Show** command, such as **Show Changes**.  The selected tool opens in Quick View, at the bottom:
+1. Press **Enter** to select a **Show** command, such as **Show Changes**.  The selected tool opens in the **Quick View** panel, at the bottom:
 
-   ![DevTools with the Changes tool open in Quick View](./overview-images/showing-changes.png)
+   ![DevTools with the Changes tool open in the Quick View panel](./overview-images/showing-changes.png)
 
    The **Changes** tool is useful when you edit CSS.  In this example, the Command Menu provides a fast alternative to selecting **More tools** (**+**) and then selecting **Changes**.  This example also provides an alternative to editing a `.js` file in the **Sources** tool, and then right-clicking and selecting **Local modifications**.
 

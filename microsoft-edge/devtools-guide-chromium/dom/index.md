@@ -256,7 +256,7 @@ When you inspect a node, the `== $0` text next to the node means that you can re
 
 1. In the rendered webpage, under **Reference the currently-selected node with $0**, right-click **The Left Hand of Darkness** and then select **Inspect**.
 
-1. Press the **Esc** key to open the **Console** tool in the Quick View panel.
+1. Press the **Esc** key to open the **Console** tool in the **Quick View** panel.
 
 1. Type `$0` and press **Enter**.  The result of the expression shows that `$0` evaluates to `<p>The Left Hand of Darkness</p>`:
 

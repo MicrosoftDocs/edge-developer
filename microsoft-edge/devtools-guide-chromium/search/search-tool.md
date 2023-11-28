@@ -27,7 +27,7 @@ To quickly open the **Search** tool:
 
    Or, press **Ctrl+Shift+F** (Windows, Linux) or **Command+Option+F** (macOS).
 
-The **Search** tool opens in the **Quick View** part of DevTools:
+The **Search** tool opens in the **Quick View** panel:
 
 ![The Search tool, with the search toolbar](./search-tool-images/search-tool-first-open.png)
 

@@ -40,19 +40,19 @@ To open Settings, in DevTools, click the **Customize and control DevTools** icon
 
 In the **Quick View** toolbar in the bottom of DevTools, you can select which tools to display.
 
-To open (or close) the **Quick View**, press **Esc**.
+To open (or close) the **Quick View** panel, press **Esc** when focus is on DevTools.
 
 ![The Drawer](./index-images/quick-view.png)
 
-You can move tools between the **Activity Bar** (at the top) and the **Quick View** (at the bottom).
+You can move tools between the **Activity Bar** (at the top) and the **Quick View** toolbar (at the bottom).
 
-*  To move a tool from the **Quick View** to the **Activity Bar**, right-click a tool, and then select **Move to top Activity Bar**:
+*  To move a tool from the **Quick View** toolbar to the **Activity Bar**, right-click a tool, and then select **Move to top Activity Bar**:
 
-   ![Moving a tool from the Quick View to the Activity Bar](./index-images/move-from-quick-view.png)
+   ![Moving a tool from the Quick View toolbar to the Activity Bar](./index-images/move-from-quick-view.png)
 
-*  To move a tool from the **Activity Bar** to the **Quick View**, right-click a tool, and then select **Move to bottom Quick View**:
+*  To move a tool from the **Activity Bar** to the **Quick View** toolbar, right-click a tool, and then select **Move to bottom Quick View**:
 
-   ![Moving a tool from the Activity Bar to the Quick View](./index-images/move-to-quick-view.png)
+   ![Moving a tool from the Activity Bar to the Quick View toolbar](./index-images/move-to-quick-view.png)
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ For example, by default, the **Network** tool is the fifth tab on the Activity B
 <!-- ====================================================================== -->
 ## Open and close tools
 
-To keep the DevTools interface streamlined, many of the tools aren't opened by default.  To open a tool in the **Activity Bar** or the **Quick View**, click the **More Tools** (![More Tools](./index-images/open-tab-icon.png)) button to the right of the tabs, and then select a tool from the list:
+To keep the DevTools interface streamlined, many of the tools aren't opened by default.  To open a tool in the **Activity Bar** or the **Quick View** toolbar, click the **More Tools** (![More Tools](./index-images/open-tab-icon.png)) button to the right of the tabs, and then select a tool from the list:
 
 ![The More Tools (+) button to open a new tool](./index-images/open-tool-in-activity-bar.png)
 

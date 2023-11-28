@@ -23,7 +23,7 @@ You can open the **Console** tool in the top or bottom of DevTools; it's shown h
 
 ![The Console tool open in the upper panel](./index-images/console-main.png)
 
-The **Console** is shown here in the lower part of DevTools (the **Quick View**), with the **Elements** tool open above it:
+The **Console** is shown here in the lower part of DevTools (the **Quick View** panel), with the **Elements** tool open above it:
 
 ![The Console in the lower panel with the Elements tool open above it](./index-images/console-quick-view.png)
 
