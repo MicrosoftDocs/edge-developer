@@ -86,9 +86,9 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 ### Navigate by keyboard
 
-*  With DevTools open, press **Ctrl**+**]** (Windows, Linux) or **Command**+**]** (macOS) to move focus to the next tool on the main toolbar.
-*  Press **Ctrl**+**[** (Windows, Linux) or **Command**+**[** (macOS) to move focus to the previous tool on the main toolbar.
-*  Press **Tab** or **Shift+Tab** repeatedly until focus moves to the tabs of the main toolbar or drawer toolbar, and then use the arrow keys to move among the tools.
+*  With DevTools open, press **Ctrl+]** (Windows, Linux) or **Command+]** (macOS) to move focus to the next tool on the main toolbar.
+*  Press **Ctrl+[** (Windows, Linux) or **Command+[** (macOS) to move focus to the previous tool on the main toolbar.
+*  Press **Tab** or **Shift+Tab** repeatedly until focus moves to the tabs of the **Activity Bar** or **Quick View** toolbar, and then use the arrow keys to move among the tools.
 
 #### Known issues
 

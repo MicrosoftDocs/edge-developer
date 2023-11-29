@@ -38,8 +38,6 @@ To turn on the experiment, see [Turning an experiment on or off](../../../experi
 
 ![Display the Activity Bar.](./devtools-images/focus-mode.png)
 
-See [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md).
-
 
 <!-- ====================================================================== -->
 ## Learn about DevTools with informative tooltips
@@ -66,16 +64,13 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 *  **Enable + button tab menus to open more tools**
 -->
 
-Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in [Focus Mode](../../../experimental-features/focus-mode.md).
+Note: As of May 2022, tooltips aren't supported from the **Activity Bar**.
 <!--Click the Help (**?**) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.-->
 <!-- ![Click the Help (?) icon in the Activity Bar to display tooltips](../../media/2021/02/focus-mode-and-tooltips-help.png) -->
 <!--
 See also:
 * [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features in Microsoft Edge DevTools_.
 -->
-
-See also:
-* [Display DevTools Tooltips](../../../overview.md#display-devtools-tooltips) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->

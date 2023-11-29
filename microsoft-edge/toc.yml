@@ -151,10 +151,6 @@
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: Experimental features, settings
 
-            - name: Simplify DevTools using Focus Mode
-              href: devtools-guide-chromium/experimental-features/focus-mode.md
-              displayName: Experimental features, Focus Mode
-
             - name: Run commands via keyboard with Command Palette
               href: devtools-guide-chromium/experimental-features/edge-command-palette.md
               displayName: Experimental features, Edge Command Palette
