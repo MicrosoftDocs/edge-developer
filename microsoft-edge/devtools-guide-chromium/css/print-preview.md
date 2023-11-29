@@ -26,45 +26,50 @@ The [CSS print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Que
 
 Use the **Rendering** tool to force a webpage into print preview mode in order to debug your print styles.
 
+
 To force a page into print preview mode:
 
-1. In DevTools, open the **Command Menu**. To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
+1. Go to a webpage, such as the [Todo demo app](https://microsoftedge.github.io/Demos/demo-to-do/).
 
-1. Start typing **rendering**, select **Show Rendering**, and then press **Enter**.
+1. Right-click the webpage, and then select **Inspect**.  DevTools opens.
 
+1. If the **Quick View** panel or toolbar isn't shown at bottom of DevTools, press **Esc** when focus is on DevTools.  The **Quick View** panel opens.
+
+1. In the **Quick View** toolbar, click the **More tools** (+) button, and then select the **Rendering** tool.
+
+   <!-- the Command Menu way:
+   1. In DevTools, open the **Command Menu**. To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
+   1. Start typing **rendering**, select **Show Rendering**, and then press **Enter**. -->
+    
    The **Rendering** tool opens in the **Quick View** panel:
    
    ![The Rendering tool, in the Quick View panel](./print-preview-images/rendering-tool.png)
 
-1. Scroll down to the **Emulate CSS media type** section, and then select **print** in the **No emulation** drop-down menu:
+1. Scroll down to the **Emulate CSS media type** section, and then in the drop-down menu, select **print** rather than **No emulation**:
 
    ![The Emulate CSS media type section in the Rendering tool](./print-preview-images/print-preview-css-media-type.png)
 
-   The webpage is rendered with its print media styles applied.
+   The webpage is rendered with its print media CSS styles applied.
 
-1. Make change to your print media CSS styles by using the **Elements** tool as normal:
+1. In the **Elements** tool, edit the print media CSS styles:
 
    ![The Elements tool, inspecting an element in the page that's rendered with its print styles](./print-preview-images/change-print-styles.png)
 
    To learn more about changing CSS, see [Get started viewing and changing CSS](index.md).
 
-To exit the print preview mode, select **No emulation** in the drop-down menu. The webpage is rendered with its screen styles applied.
+
+<!-- ------------------------------ -->
+#### Exiting print preview mode
+
+*  In the **Rendering** tool, in the **Emulate CSS media type** section, select **No emulation** in the drop-down menu.
+
+   The webpage is rendered with its screen styles applied.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Analyze rendering performance with the Rendering tool](../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_
-
-The Rendering tool is also used for the following:
-
-* [Check for contrast issues with dark theme and light theme](../accessibility/test-dark-mode.md)
-* [Verify that a page is usable by people with color blindness](../accessibility/test-color-blindness.md)
-* [Verify that a page is usable with blurred vision](../accessibility/test-blurred-vision.md)
-* [Verify that a page is usable with UI animation turned off](../accessibility/test-reduced-ui-motion.md)
-* [Emulate vision deficiencies](../accessibility/emulate-vision-deficiencies.md)
-* [Emulate dark or light schemes in the rendered page](../accessibility/preferred-color-scheme-simulation.md)
-* [Simulate reduced motion](../accessibility/reduced-motion-simulation.md)
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md)
 
 
 <!-- ====================================================================== -->
