@@ -1,11 +1,11 @@
 ---
 title: Force print preview mode
-description: Open the "Rendering" tool and select Emulate CSS media > print.
+description: Emulate the print CSS media on your webpage to debug your print styles
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 11/29/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,23 +22,33 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Force print preview mode
 
-The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) controls how a page looks when printed.  To force a page into print preview mode:
+The [CSS print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) allows you to define CSS styles that only apply when a page is printed.
 
-1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
+Use the **Rendering** tool to force a webpage into print preview mode in order to debug your print styles.
 
-   > [!div class="mx-imgBorder"]
-   > ![Opening the command menu](./print-preview-images/print-preview-open-command-menu.png)
+To force a page into print preview mode:
 
-1. Type `rendering`, select **Show Rendering**, and then press **Enter**.
+1. In DevTools, open the **Command Menu**. To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
-   The **Rendering** panel opens in the **Drawer**.
+1. Start typing **rendering**, select **Show Rendering**, and then press **Enter**.
 
-1. Under **Emulate CSS media type**, select **print**.
+   The **Rendering** tool opens in the **Quick View** panel:
+   
+   ![The Rendering tool, in the Quick View panel](./print-preview-images/rendering-tool.png)
 
-   > [!div class="mx-imgBorder"]
-   > ![The Rendering panel with the print CSS media type selected](./print-preview-images/print-preview-css-media-type.png)
+1. Scroll down to the **Emulate CSS media type** section, and then select **print** in the **No emulation** drop-down menu:
 
-From here, you can display and change your CSS, like any other web page.  See [Get started viewing and changing CSS](index.md).
+   ![The Emulate CSS media type section in the Rendering tool](./print-preview-images/print-preview-css-media-type.png)
+
+   The webpage is rendered with its print media styles applied.
+
+1. Make change to your print media CSS styles by using the **Elements** tool as normal:
+
+   ![The Elements tool, inspecting an element in the page that's rendered with its print styles](./print-preview-images/change-print-styles.png)
+
+   To learn more about changing CSS, see [Get started viewing and changing CSS](index.md).
+
+To exit the print preview mode, select **No emulation** in the drop-down menu. The webpage is rendered with its screen styles applied.
 
 
 <!-- ====================================================================== -->
