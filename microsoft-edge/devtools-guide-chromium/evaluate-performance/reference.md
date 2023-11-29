@@ -50,7 +50,7 @@ The sections below describe how to record the performance of a webpage in DevToo
 
 To analyze the performance of a webpage while it's running (rather than while it's loading):
 
-1. Go to the page that you want to analyze.
+1. Go to the webpage that you want to analyze, such as the [Photo Gallery demo](https://microsoftedge.github.io/Demos/photo-gallery/).
 
 1. In DevTools, open the **Performance** tool.
 
@@ -60,7 +60,7 @@ To analyze the performance of a webpage while it's running (rather than while it
 
 1. Interact with the page for a while.  DevTools records all page activity that occurs as a result of your interactions.
 
-1. Click **Record** again or click **Stop** to stop recording.
+1. Click **Record** again.  Or, click **Stop** to stop recording.
 
    The **Performance** tool displays the recording.
 
@@ -70,7 +70,7 @@ To analyze the performance of a webpage while it's running (rather than while it
 
 To analyze the performance of a webpage while it's loading (rather than while it's running):
 
-1. Go to the page that you want to analyze.
+1. Go to the webpage that you want to analyze, such as the [Photo Gallery demo](https://microsoftedge.github.io/Demos/photo-gallery/).
 
 1. In DevTools, open the **Performance** tool.
 
@@ -104,9 +104,9 @@ To force garbage collection while you are recording a page, click the **Collect 
 <!-- ------------------------------ -->
 #### Show recording settings
 
-To expose more settings related to how DevTools captures performance recordings, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button:
+To expose more settings related to how DevTools captures performance recordings, in the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.  Checkboxes and drop-down lists are displayed at the top of the **Performance** tool:
 
-![The Capture Settings section](./reference-images/capture-settings.png)
+![The Capture Settings section at top of the Performance tool](./reference-images/capture-settings.png)
 
 
 <!-- ------------------------------ -->
@@ -114,21 +114,22 @@ To expose more settings related to how DevTools captures performance recordings,
 
 By default, the **Main** section of a recording displays detailed call stacks of JavaScript functions that were called during the recording.  To disable the JavaScript call stacks:
 
-1. Open the **Capture settings** menu.  See [Show recording settings](#show-recording-settings).
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.
 
-1. Turn on the **Disable JavaScript samples** checkbox.
+1. Select the **Disable JavaScript samples** checkbox.
 
 1. Take a recording of the page.
 
-The following two figures show the difference between disabling and enabling JavaScript samples.  The **Main** section of the recording is much shorter when sampling is disabled, because it omits all of the JavaScript call stacks.
+
+The following two figures show the difference between disabling and enabling JavaScript samples.  The **Main** section of the recording is much shorter when JavaScript sampling is disabled, because the recording omits the JavaScript call stacks.
 
 An example of a recording when JS samples are disabled:
 
 ![An example of a recording when JS samples are disabled.](./reference-images/disable-javascript-samples-checkbox-on.png)
 
-An example of a recording when JS samples are turned on:
+An example of a recording when JS samples are enabled:
 
-![An example of a recording when JS samples are turned on.](./reference-images/disable-javascript-samples-checkbox-off.png)
+![An example of a recording when JS samples are enabled.](./reference-images/disable-javascript-samples-checkbox-off.png)
 
 
 <!-- ------------------------------ -->
@@ -136,7 +137,7 @@ An example of a recording when JS samples are turned on:
 
 To throttle the network while recording:
 
-1. Open the **Capture settings** menu, as described in [Show recording settings](#show-recording-settings), above.
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.
 
 1. Set **Network** to the desired level of throttling.
 
@@ -146,7 +147,7 @@ To throttle the network while recording:
 
 To throttle the CPU while recording:
 
-1. Open the **Capture settings** menu, as described in [Show recording settings](#show-recording-settings), above.
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.
 
 1. Set **CPU** to the desired level of throttling.
 
@@ -158,9 +159,9 @@ Throttling is relative to the capabilities of your computer.  For example, the *
 
 To record more rendering information, enable advanced rendering instrumentation:
 
-1. Open the **Capture settings** menu, as described in [Show recording settings](#show-recording-settings), above.
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.
 
-1. Check the **Enable advanced rendering instrumentation (slow)** checkbox.
+1. Select the **Enable advanced rendering instrumentation (slow)** checkbox.
 
 With advanced rendering instrumentation enabled, DevTools records more information about the rendering of the page, such as layer information, and CSS selector statistics. The performance of the page may be affected.
 
@@ -170,17 +171,17 @@ See [View layers](#view-layers-information), and [View CSS selector statistics](
 <!-- ====================================================================== -->
 ## Save a recording
 
-To save a recording as a file on your device, right-click the recording and then select **Save Profile**:
+To save a recording as a file on your device, right-click the recording and then select **Save profile**:
 
-![Save Profile](./reference-images/save-profile.png)
+![The 'Save profile' right-click menuitem](./reference-images/save-profile.png)
 
 
 <!-- ====================================================================== -->
 ## Load a recording
 
-To load a recording from a file, right-click in the **Performance** tool and then select **Load Profile**:
+To load a recording from a file, right-click in the **Performance** tool and then select **Load profile**:
 
-![Load Profile](./reference-images/load-profile.png)
+![The 'Load profile' right-click menuitem](./reference-images/load-profile.png)
 
 You can right-click in an existing recording, or on the screen that's displayed in the **Performance** tool when there are no recordings.
 
@@ -188,7 +189,7 @@ You can right-click in an existing recording, or on the screen that's displayed 
 <!-- ====================================================================== -->
 ## Clear the previous recording
 
-After making a recording, click **Clear recording** (![Clear recording icon](./reference-images/clear-recording-icon.png)) to clear that recording from the **Performance** tool:
+After making a recording, to remove that recording from the **Performance** tool, click the **Clear recording** (![Clear recording icon](./reference-images/clear-recording-icon.png)) button:
 
 ![Clear recording](./reference-images/clear-button.png)
 
@@ -202,17 +203,23 @@ After you [record runtime performance](#record-runtime-performance) or [record l
 <!-- ------------------------------ -->
 #### Select a portion of a recording
 
-You can select a portion of a recording by using a mouse, keyboard, or trackpad, as follows.
+You can select a portion of a recording by using a mouse, keyboard, or trackpad.
 
 
 ###### Mouse
+
+To select a portion of a recording by using the mouse:
 
 * Drag your mouse left or right across the **Overview**.  The **Overview** is the section that contains the **CPU** and **NET** charts:
 
 ![Drag the mouse across the Overview to zoom](./reference-images/zoom-highlighted.png)
 
+To scroll a long flame chart in the **Main** section or in any of the neighboring sections, click and hold while dragging up and down.  Drag left or right to move which portion of the recording is selected.
+
 
 ###### Keyboard
+
+To select a portion of a recording by using the keyboard:
 
 1. Select the background of the **Main** section, or select the background of a section that's next to the **Main** section, such as **Interactions**, **Network**, or **GPU**.  This keyboard workflow only works when one of these sections is in focus.
 
@@ -221,13 +228,12 @@ You can select a portion of a recording by using a mouse, keyboard, or trackpad,
 
 ###### Trackpad
 
-To select a portion by using a trackpad:
+To select a portion of a recording by using a trackpad:
 
-1. Hover your mouse over the **Overview** section or the **Details** section.  The **Overview** section is the area containing the **FPS**, **CPU**, and **NET** charts.  The **Details** section is the area containing the **Main** section and the **Interactions** section.
+1. Hover over the **Overview** section or the **Details** section.  The **Overview** section is the area containing the **FPS**, **CPU**, and **NET** charts.  The **Details** section is the area containing the **Main** section and the **Interactions** section.
 
 1. Using two fingers, swipe up to zoom out, or down to zoom in.  Using two fingers, swipe left to move left, or right to move right.
 
-To scroll a long flame chart in the **Main** section or any of the neighbors, click and hold while dragging up and down.  Drag left and right to move which portion of the recording is selected.
 
 
 <!-- ------------------------------ -->
@@ -238,7 +244,7 @@ To open the search box at the bottom of the **Performance** tool, press **Ctrl+F
 ![The search box](./reference-images/search-regex.png)
 
 
-To navigate activities that match your query:
+To navigate among the activities that match your query:
 
 1. Click the **Previous** (![Previous](./reference-images/previous-icon.png)) and **Next** (![Next](./reference-images/next-icon.png)) buttons.
 
@@ -252,7 +258,7 @@ To modify the query settings:
 *  To use a regular expression in your query, click the **Regex** (![Regex](./reference-images/search-regex-icon.png)) button.
 
 
-To hide the search box, click **Cancel**.
+To hide the search box, click the **Cancel** button.
 
 
 <!-- ------------------------------ -->
@@ -266,23 +272,23 @@ Select an event to view more information about it in the **Summary** tab.  DevTo
 
 ![More information about the anonymous function in the Summary tab](./reference-images/summary-me.png)
 
-DevTools represents main thread activity with a flame chart.  The x-axis represents the recording over time.  The y-axis represents the call stack.  The events on top cause the events below it.
+DevTools represents main thread activity with a flame chart: 
 
 ![A flame chart](./reference-images/main-flame-chart.png)
 
-In the previous figure, an `input` event caused a `Function Call`, which ran an anonymous function that called `filterByCamera` and then `populateGallery`.  The `populateGallery` function then made DOM changes by calling `innerHTML`.
+The x-axis represents the recording over time.  The y-axis represents the call stack.  An event that's near the top causes the events that are below it; for example, in the previous figure, an `input` event caused a `Function Call`, which ran an anonymous function that called `filterByCamera` and then `populateGallery`.  The `populateGallery` function then made DOM changes by calling `set innerHTML`.
 
-DevTools assigns scripts random colors.  In the previous figure, function requests from a script are colored fuchsia.  The darker yellow represents scripting activity, and the purple event represents rendering activity.  These darker yellow and purple events are consistent across all recordings.
+DevTools assigns scripts random colors.  In the previous figure, function requests from a script are colored fuchsia (purple-pink).  The darker yellow represents scripting activity, and the purple event represents rendering activity.  These darker yellow and purple events are consistent across all recordings.
 
 If you want to hide the detailed flame chart of JavaScript requests, see [Disable JavaScript samples](#disable-javascript-samples), above.
-When JS samples are disabled, only high-level events such as `Event: click` and `Function Call` from the previous figure <!--`str` (?)--> are displayed.
+When JavaScript samples are disabled, only high-level events are displayed, such as `Event: input` and `Function Call` from the previous figure.
 <!--When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call` (script_foot_closure.js:53) from Figure 16.-->
 
 
 <!-- ------------------------------ -->
 #### View activities in a table
 
-After recording a page, you don't need to rely solely on the **Main** section to analyze activities.  DevTools also provides three tabular views for analyzing activities.  Each view gives you a different perspective on the activities:
+After recording a page, in addition to the **Main** section to analyze activities, DevTools also provides three tabular views for analyzing activities.  Each view gives you a different perspective on the activities:
 
 *  To view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-tab) tab.
 
@@ -318,11 +324,13 @@ Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-per
 
 Use the **Bottom-Up** tab to view which activities directly took up the most time in aggregate.
 
-The **Bottom-Up** tab only displays activities during the selected portion of the recording.  See [Select a portion of a recording](#select-a-portion-of-a-recording) to learn how to select portions.
+The **Bottom-Up** tab only displays activities during the selected portion of the recording:
 
 ![The Bottom-Up tab](./reference-images/bottoms-up.png)
 
-In the **Main** section flame chart of the previous figure, you can see that almost practically all of the time was spent running the `a`, `b`, and `c` functions.  The top activities in the **Bottom-Up** tab of the previous figure are also `a`, `b`, and `c`. In the **Bottom-Up** tab, the next most expensive activity is `Minor GC`.
+To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
+
+In the **Main** section flame chart of the previous figure, almost all of the time was spent running the `a`, `b`, and `c` functions.  The top activities in the **Bottom-Up** tab of the previous figure are also `a`, `b`, and `c`. In the **Bottom-Up** tab, the next most expensive activity is `Minor GC`.
 
 The **Self Time** column represents the aggregated time spent directly in that activity, across all of the occurrences.
 
@@ -335,9 +343,11 @@ Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-per
 
 Use the **Call Tree** tab to view which [root activities](#root-activities) cause the most work.
 
-The **Call Tree** tab only displays activities during the selected portion of the recording.  See [Select a portion of a recording](#select-a-portion-of-a-recording) to learn how to select portions.
+The **Call Tree** tab only displays activities during the selected portion of the recording:
 
 ![The Call Tree tab](./reference-images/call-tree.png)
+
+To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
 
 In the previous figure, the top-level items in the **Activity** column, such as `Event Timing`, are root activities.  The nesting represents the call stack.  For example, in the previous figure, `Event Timing` caused `Event: mouseup`, which caused `Function Call`, which cause `(anonymous)`, and so on.
 
@@ -356,29 +366,31 @@ Click **Show Heaviest Stack** (![Show Heaviest Stack](./reference-images/show-he
 
 Use the **Event Log** tab to view activities in the order in which they occurred during the recording.
 
-The **Event Log** tab only displays activities during the selected portion of the recording.  See [Select a portion of a recording](#select-a-portion-of-a-recording) to learn how to select portions.
+The **Event Log** tab only displays activities during the selected portion of the recording:
 
 ![The Event Log tab](./reference-images/event-log.png)
+
+To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
 
 The **Start Time** column represents the point at which that activity started, relative to the start of the recording.  For example, the start time of `175.7 ms` for the selected item in the previous figure means that activity started 175.7 ms after the recording started.
 
 The **Self Time** column represents the time spent directly in that activity.
 
-The **Total Time** columns represents time spent directly in that activity or in any of the children.
+The **Total Time** column represents time spent directly in that activity or in any of the children.
 
-Click **Start Time**, **Self Time**, or **Total Time** to sort the table by that column.
+Click the **Start Time**, **Self Time**, or **Total Time** column heading, to sort the table by that column.
 
 Use the **Filter** text box to filter activities by name.
 
-Use the **Duration** menu to filter out any activities that took less than 1 ms or 15 ms.  By default the **Duration** menu is set to **All**, meaning all activities are shown.
+Use the **Duration** menu to filter out any activities that took less than 1 ms or 15 ms.  By default, the **Duration** menu is set to **All**, meaning that all activities are shown.
 
-Disable the **Loading**, **Scripting**, **Rendering**, or **Painting** checkboxes to filter out all activities from those categories.
+Clear the **Loading**, **Scripting**, **Rendering**, or **Painting** checkboxes to filter out all activities from those categories.
 
 
 <!-- ------------------------------ -->
 #### View GPU activity
 
-View GPU activity in the **GPU** section:
+View GPU activity in the **GPU** section of the **Performance** tool:
 
 ![The GPU section](./reference-images/gpu-zoomed.png)
 
@@ -389,7 +401,7 @@ View GPU activity in the **GPU** section:
 TODO: wait for this bug to be fixed, and then add the section again
 https://bugs.chromium.org/p/chromium/issues/detail?id=1504808
 
-View raster activity in the **Raster** section.
+View raster activity in the **Raster** section of the **Performance** tool:
 
 ![The Raster section](./reference-images/raster.png)
 -->
@@ -413,7 +425,8 @@ Click an interaction to view more information about it in the **Summary** tab.
 DevTools provides two ways to analyze frames per second:
 
 *  Use [the Frames section](#the-frames-section) to view how long a particular frame took.
-*  Use the **FPS meter** for a realtime estimate of FPS as the page runs.  See [View frames per second in realtime with the FPS meter](#view-frames-per-second-in-realtime-with-the-fps-meter).
+
+*  Use the **FPS meter** for a realtime estimate of FPS as the page runs.  See [View frames per second in realtime with the FPS meter](#view-frames-per-second-in-realtime-with-the-fps-meter), below.
 
 
 ###### The Frames section
@@ -447,9 +460,13 @@ Requests in the **Network** section are color-coded as follows:
 *  Dark yellow background: JS request.
 *  Green background: image request.
 
-Requests have squares in the top-left corner. A darker-blue square in the top-left of a request means it's a higher-priority request.  A lighter-blue square means lower-priority.  For example, in the previous figure, the **photo-gallery** request, in the top left corner of the **Network** section is higher-priority.
+Requests have squares in the top-left corner:
+*  A darker-blue square in the top-left of a request means it's a higher-priority request.
+*  A lighter-blue square means lower-priority.
 
-Requests might have lines on the left and right sides, and their bars might be split into two colors. HEre is what these lines and colors represent:
+For example, in the previous figure, the **photo-gallery** request, in the top left corner of the **Network** section is higher-priority.
+
+Requests might have lines on the left and right sides, and their bars might be split into two colors. Here's what these lines and colors represent:
 
 *  The left line is everything up to the `Connection Start` group of events, inclusive.  In other words, it's everything before `Request Sent`, exclusive.
 
@@ -463,7 +480,7 @@ Requests might have lines on the left and right sides, and their bars might be s
 <!-- ------------------------------ -->
 #### View memory metrics
 
-Turn on the **Memory** checkbox to view memory metrics in a performance recording:
+Select the **Memory** checkbox to view memory metrics in a performance recording:
 
 ![The Memory checkbox](./reference-images/memory-highlight.png)
 
@@ -487,9 +504,9 @@ When analyzing a section like **Network** or **Main**, sometimes you need a more
 <!-- ------------------------------ -->
 #### View a screenshot
 
-See [Capture screenshots while recording](#capture-screenshots-while-recording) to learn how to turn on screenshots.
+To learn how to turn on screenshots, see [Capture screenshots while recording](#capture-screenshots-while-recording), above.
 
-Hover over the **Overview** to view a screenshot of how the page looked during that moment of the recording.  The **Overview** is the section that contains the **CPU** and **NET** charts.
+To view a screenshot of how the page looked during that moment of the recording, hover over the **Overview**.  The **Overview** is the section that contains the **CPU** and **NET** charts:
 
 ![Viewing a screenshot](./reference-images/screenshots-hover.png)
 
@@ -497,7 +514,7 @@ You can also view screenshots by selecting a frame in the **Frames** section.  D
 
 ![Viewing a screenshot in the Summary tab](./reference-images/summary-preview.png)
 
-Click the thumbnail in the **Summary** tab to zoom in on the screenshot.
+To zoom in on the screenshot, click the thumbnail in the **Summary** tab.
 
 
 <!-- ------------------------------ -->
@@ -511,7 +528,7 @@ To view advanced layers information about a frame:
 
    ![The Layers pane](./reference-images/layers-all.png)
 
-The **Layers** tab works like the **Composited Layers** tab in the **3D View** tool.  See [Navigate webpage layers, z-index, and DOM using the 3D View tool](../3d-view/index.md) to learn how to interact with the **Layers** tab.
+The **Layers** tab works like the **Composited Layers** tab in the **3D View** tool.  To learn how to interact with the **Layers** tab, see [Navigate webpage layers, z-index, and DOM using the 3D View tool](../3d-view/index.md).
 
 
 <!-- ------------------------------
@@ -541,13 +558,13 @@ To view statistics about the selectors of the CSS rules that got recalculated du
 
    ![The Selector Stats tab](./reference-images/selector-stats.png)
 
-1. Select a **Recalculate Style** event in the **Main** section. DevTools displays information about the selectors of the CSS rules that were recalculated during that event in the **Selector Stats** tab:
+1. In the **Main** section, select a **Recalculate Style** event. In the **Selector Stats** tab, DevTools displays information about the selectors of the CSS rules that were recalculated during that event.
 
 
 <!-- ====================================================================== -->
 ## Analyze rendering performance with the Rendering tool
 
-Use the features of the **Rendering** tool to help visualize the rendering performance of your page.
+Use the **Rendering** tool to help visualize the rendering performance of your page.
 
 To open the **Rendering** tool:
 
@@ -589,11 +606,9 @@ To turn on Paint Flashing:
 <!-- ------------------------------ -->
 #### View an overlay of layers with Layer Borders
 
-Use **Layer Borders** to view an overlay of layer borders and tiles on top of the page.
+To view an overlay of layer borders and tiles on top of the page:
 
-To turn on Layer Borders:
-
-1. Open the **Rendering** tool.  See [Analyze rendering performance with the Rendering tool](#analyze-rendering-performance-with-the-rendering-tool), above.
+1. Open the **Rendering** tool, as described in [Analyze rendering performance with the Rendering tool](#analyze-rendering-performance-with-the-rendering-tool), above.
 
 1. Select the **Layer Borders** checkbox. Layer borders appear in the rendered webpage:
 
@@ -605,11 +620,11 @@ See the comments in [debug_colors.cc](https://source.chromium.org/chromium/chrom
 <!-- ------------------------------ -->
 #### Find scroll performance issues in realtime
 
-Use Scrolling Performance Issues to identify elements of the page that have event listeners related to scrolling that may harm the performance of the page.  DevTools outlines the potentially problematic elements in teal.
+Use the **Scrolling Performance Issues** checkbox to identify elements of the page that have event listeners related to scrolling that may harm the performance of the page.  DevTools outlines the potentially problematic elements in teal.
 
 To view scroll performance issues:
 
-1. Open the **Rendering** tool.  See [Analyze rendering performance with the Rendering tool](#analyze-rendering-performance-with-the-rendering-tool), above.
+1. Open the **Rendering** tool, as described in [Analyze rendering performance with the Rendering tool](#analyze-rendering-performance-with-the-rendering-tool), above.
 
 1. Select the **Scrolling Performance Issues** checkbox. Potentially problematic elements are outlined:
 
