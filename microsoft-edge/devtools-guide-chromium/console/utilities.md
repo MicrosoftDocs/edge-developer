@@ -57,7 +57,7 @@ These variables and functions only work by entering them directly into the DevTo
 | [monitorEvents(object[, events])](#monitoreventsobject-events) | When one of the specified events occurs on the specified object, the event object is logged to the console. |
 | [profile([name])](#profilename) | Starts a JavaScript CPU profiling session with an optional name. |
 | [profileEnd([name])](#profileendname) | Completes a JavaScript CPU profiling session and displays the results in the **Performance** tool. |
-| [queryObjects(Constructor)](#queryobjectsconstructor) | Returns an array of the objects that were created by the specified constructor. |
+| [queryObjects(constructor)](#queryobjectsconstructor) | Returns an array of the objects that were created by the specified constructor. |
 | [table(data[, columns])](#tabledata-columns) | Logs object data, formatted as a table with column headings, for the specified data object. |
 | [undebug(function)](#undebugfunction) | Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked. |
 | [unmonitor(function)](#unmonitorfunction) | Stops the monitoring of the specified function. |
@@ -667,7 +667,7 @@ profileEnd('A');
 ## profileEnd([name])
 
 <!-- summary bubbled up to Summary table: -->
-Completes a JavaScript CPU profiling session and displays the results in the **Performance** tool.
+`profileEnd([name])` completes a JavaScript CPU profiling session and displays the results in the **Performance** tool.
 
 <!-- add'l info -->
 To call this function, you must be running the [profile([name])](#profilename) function.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
@@ -682,7 +682,7 @@ For more information, see [profile([name])](#profilename), above.
 
 
 <!-- ====================================================================== -->
-## queryObjects(Constructor)
+## queryObjects(constructor)
 
 <!-- summary bubbled up to Summary table: -->
 `queryObjects(constructor)` returns an array of the objects that were created by the specified constructor.
