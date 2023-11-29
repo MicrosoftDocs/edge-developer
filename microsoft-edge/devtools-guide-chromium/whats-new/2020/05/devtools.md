@@ -294,7 +294,7 @@ The **Properties** pane in the **Elements** tool is deprecated.  Run `console.di
 #### Reference
 
 * [console.dir()](../../../console/api.md#dir)
-* [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object)
+* [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object-0-4)
 
 
 <!-- ====================================================================== -->
