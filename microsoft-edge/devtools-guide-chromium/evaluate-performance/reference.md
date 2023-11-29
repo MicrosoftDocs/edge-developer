@@ -165,7 +165,7 @@ To record more rendering information, enable advanced rendering instrumentation:
 
 With advanced rendering instrumentation enabled, DevTools records more information about the rendering of the page, such as layer information, and CSS selector statistics. The performance of the page may be affected.
 
-See [View layers](#view-layers-information), and [View CSS selector statistics](#view-css-selector-statistics), below.
+For example, see [View layers information](#view-layers-information), and [View CSS selector statistics](#view-css-selector-statistics), below.
 
 
 <!-- ====================================================================== -->
@@ -522,9 +522,9 @@ To zoom in on the screenshot, click the thumbnail in the **Summary** tab.
 
 To view advanced layers information about a frame:
 
-1. [Turn on advanced rendering instrumentation](#turn-on-advanced-rendering-instrumentation).
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button, and then select the **Enable advanced rendering instrumentation (slow)** checkbox.
 
-1. Select a frame in the **Frames** section.  DevTools displays information about the layers in the **Layers** tab, next to the **Event Log** tab:
+1. In the **Frames** section, select a frame.  DevTools displays information about the layers in the **Layers** tab at the bottom of the **Performance** tool:
 
    ![The Layers pane](./reference-images/layers-all.png)
 
@@ -539,7 +539,7 @@ https://bugs.chromium.org/p/chromium/issues/detail?id=1505065
 
 To view advanced information about a paint event:
 
-1. [Turn on advanced rendering instrumentation](#turn-on-advanced-rendering-instrumentation).
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button, and then select the **Enable advanced rendering instrumentation (slow)** checkbox.
 
 1. Select a **Paint** event in the **Main** section. DevTools displays information about the paint event in the **Paint Profiler** tab:
 
@@ -552,9 +552,9 @@ To view advanced information about a paint event:
 
 To view statistics about the selectors of the CSS rules that got recalculated during a performance recording:
 
-1. [Turn on advanced rendering instrumentation](#turn-on-advanced-rendering-instrumentation).
+*  In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button, and then select the **Enable advanced rendering instrumentation (slow)** checkbox.
 
-1. DevTools displays aggregate information about the selectors of the CSS rules that were recalculated during the recording in the **Selector Stats** tab:
+   DevTools displays aggregate information about the selectors of the CSS rules that were recalculated during the recording in the **Selector Stats** tab:
 
    ![The Selector Stats tab](./reference-images/selector-stats.png)
 
