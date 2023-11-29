@@ -45,7 +45,7 @@ To force a page into print preview mode:
    
    ![The Rendering tool, in the Quick View panel](./print-preview-images/rendering-tool.png)
 
-1. Scroll down to the **Emulate CSS media type** section, and then in the drop-down menu, select **print** rather than **No emulation**:
+1. Scroll down to the **Emulate CSS media type** section, and then in the dropdown list, select **print** rather than **No emulation**:
 
    ![The Emulate CSS media type section in the Rendering tool](./print-preview-images/print-preview-css-media-type.png)
 
@@ -61,7 +61,7 @@ To force a page into print preview mode:
 <!-- ------------------------------ -->
 #### Exiting print preview mode
 
-*  In the **Rendering** tool, in the **Emulate CSS media type** section, select **No emulation** in the drop-down menu.
+*  In the **Rendering** tool, in the **Emulate CSS media type** section, select **No emulation** in the dropdown menu.
 
    The webpage is rendered with its screen styles applied.
 

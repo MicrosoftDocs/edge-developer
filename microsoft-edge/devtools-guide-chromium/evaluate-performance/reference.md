@@ -104,7 +104,7 @@ To force garbage collection while you are recording a page, click the **Collect 
 <!-- ------------------------------ -->
 #### Show recording settings
 
-To expose more settings related to how DevTools captures performance recordings, in the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.  Checkboxes and drop-down lists are displayed at the top of the **Performance** tool:
+To expose more settings related to how DevTools captures performance recordings, in the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.  Checkboxes and dropdown lists are displayed at the top of the **Performance** tool:
 
 ![The Capture Settings section at top of the Performance tool](./reference-images/capture-settings.png)
 
