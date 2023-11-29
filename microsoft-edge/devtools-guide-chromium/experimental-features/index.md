@@ -689,8 +689,19 @@ Status:
 
 _new as of Microsoft Edge 121_
 
-Enables breadcrumbs in the **Performance** tool.
-<!-- todo: need sentence -->
+Adds a timing-breadcrumbs path in the **Application** tool, such as:
+
+Full range (5111.69ms) > 437.30ms > 46.52ms > 7.44ms
+
+![The timing breadcrumbs path](./index-images/timing-breadcrumbs-path.png)
+<!-- todo: redo png -->
+
+When you drag your mouse over the overview, to select a time range, you have the added option of clicking on a magnifier icon in the middle of the range to zoom in on that range only, and ignore everything else. When you do that, a new item is added to the breadcrumbs path.  You can then click on any item in the breadcrumbs path to go back to a previous range.
+
+Here's what zooming in on a range looks like:
+
+![Zooming in on a range by using the breadcrumbs path](./index-images/timing-breadcrumbs-zoom.png)
+<!-- todo: redo png -->
 
 See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
@@ -706,14 +717,13 @@ Status:
 
 _new as of Microsoft Edge 121_
 
-Enables Autofill view.
-<!-- todo: need sentence -->
+Adds an **Autofill** tool to DevTools, to record various events that the browser triggers when a user is filling in a form by using the browser's autofill feature.  For example, when the browser remembers your address and autofills it in an address field.
 
-<!--
+![The Autofill tool](./index-images/autofill-tool.png)
+
 See also:
-* []()
-todo: link, after clarify
--->
+* [Autofill](https://learn.microsoft.com/en-us/microsoft-edge/privacy-whitepaper/#autofill) in _Microsoft Edge Privacy Whitepaper_.
+* [Autofill](https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/overview-features-apis?tabs=dotnetcsharp#autofill) in _Overview of WebView2 features and APIs_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
@@ -1028,10 +1038,14 @@ Status:
 
 _new as of Microsoft Edge 121_
 
-Enables the **Speculative loads** page within the **Background services** section of the **Application** tool, including the **Rules** page and the **Speculations** page:
+Adds a **Speculative loads** page within the **Background services** section of the **Application** tool, including a **Rules** page and a **Speculations** page:
 <!-- todo: explain speculative loads -->
 
 ![The `Speculative Loads` page within the Application tool](./index-images/speculative-loads-page.png)
+
+The Speculation Rules API can be used to programmatically tell Microsoft Edge to pre-render certain pages.  This is useful because pre-rendered pages are almost instantaneous to navigate to.  The browser pre-renders, in a hidden way, the next pages that a user is likely to navigate to, while the user is still on the current page.
+
+The **Speculative loads** page lists the speculation rules that the web author has defined in the webpage.  The page provides debugging information that shows whether a rule was actually used, showing whether a particular page was pre-rendered.
 
 The **Rules** page has columns:
 * **Rule set**
@@ -1075,8 +1089,20 @@ Status:
 
 _new as of Microsoft Edge 121_
 
-Enables the right-click menuitem that allows modifying trees in the flame chart in the **Performance** tool.
-<!-- todo: details, png -->
+Adds a right-click menu that allows modifying trees in the flame chart in the **Performance** tool.  Menuitems:
+* **Merge function**
+* **Collapse function**
+* **Collapse repeating descendants**
+* **Undo collapse function**
+* **Undo collapse repeating descendants**
+* **Undo all actions**
+* **Load profile**
+* **Save profile**
+
+With this experiment enabled, you can right-click events in the flame chart of the **Performance** tool, and modify the chart at that location.
+
+![Context menu to modify flame chart trees](./index-images/context-menu-modify-flame-chart-trees.png)
+<!-- todo: redo png -->
 
 See also:
 * [Find the bottleneck](../evaluate-performance/index.md#find-the-bottleneck) in _Introduction to the Performance tool_.
