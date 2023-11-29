@@ -63,7 +63,7 @@ This article is about changing the appearance of the webpage under development. 
 
 * [Analyze rendering performance with the Rendering tool](../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.
 
-The Rendering tool is also used for the following:
+The **Rendering** tool is also used for the following tasks:
 
 * [Check for contrast issues with dark theme and light theme](test-dark-mode.md)
 * [Verify that a page is usable by people with color blindness](test-color-blindness.md)
