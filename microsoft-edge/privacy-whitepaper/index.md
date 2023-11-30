@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 11/20/2023
+ms.date: 11/29/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -438,7 +438,15 @@ Importing your data is completed locally on your device and is stored locally.  
 
 * Sign into Microsoft Edge with a Microsoft account, and turn on sync'ing of your browsing data across all signed-in devices.
 
-* Allow personalization of experiences and advertising on [Bing](https://www.bing.com), Microsoft News, and other Microsoft services.  To view or delete the imported browsing history that's available for personalization, along with Microsoft Edge browsing history, go to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
+* Allow personalization of experiences and advertising on [Bing](https://www.bing.com), Microsoft News, and other Microsoft services.
+<!-- todo: add directions for how to opt-out of personalization on Bing -->
+
+To view or delete the imported browsing history that's available for personalization, along with Microsoft Edge browsing history, go to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
+<!-- todo: 
+* Provide a more direct link to view/delete the imported data.
+* Include step-by-step instructions to delete the data.
+do those b/c the existing link takes me to myaccount.microsoft.com and makes me re-sign in to my account.  once i land on that page, it still is not obvious how to view/delete the imported data.
+-->
 
 You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`.
 
