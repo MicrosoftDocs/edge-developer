@@ -25,7 +25,11 @@ On the right, the 3D canvas represents the webpage according to which tab and op
 <!-- ====================================================================== -->
 ## Open the 3D View tool
 
-You can open the **3D View** tool either in the **Activity Bar** or in the **Quick View** panel. Open the **3D View** tool in the **Activity Bar** to get more space to work with the tool.  Open the **3D View** tool in the **Quick View** panel to use the **Elements** tool at the same time and inspect the elements represented in the 3D canvas in the **Elements** tool.
+You can open the **3D View** tool either in the **Activity Bar** or in the **Quick View** panel.
+
+* To get maximum canvas space, open the **3D View** tool in the **Activity Bar**.
+
+* To use the **Elements** tool and **3D View** tool at the same time, open the **3D View** tool in the **Quick View** panel.  This enables you to view the DOM tree elements represented in the 3D canvas.  This is the default; in the Command Menu, **Show 3D View** is indicated as opening in the **Quick View** panel.
 
 
 <!-- ------------------------------ -->
@@ -35,7 +39,7 @@ You can open the **3D View** tool either in the **Activity Bar** or in the **Qui
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **3D View** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./index-images/more-tools-icon.png)) button. The **3D View** tab opens in the Activity Bar:
+1. In DevTools, on the **Activity Bar**, select the **3D View** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./index-images/more-tools-icon.png)) button. The **3D View** tab opens in the **Activity Bar**:
 
    ![The 3D View tool, displayed in the main area, with its tab displayed in the Activity Bar](./index-images/tool-in-activity-bar.png)
 
@@ -47,9 +51,9 @@ You can open the **3D View** tool either in the **Activity Bar** or in the **Qui
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. If the **Quick View** panel isn't displayed, select **Customize and control DevTools** (**...**), and then select **Toggle Quick View panel**, or press **Esc**.
+1. If the **Quick View** panel isn't displayed, select **Customize and control DevTools** (**...**), and then select **Toggle Quick View panel**.  Or, when focus is on DevTools, press **Esc**.
 
-1. In the Quick View toolbar, select the **3D View** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./index-images/more-tools-icon.png)) button. The **3D View** tab opens in the Quick View panel:
+1. In the **Quick View** toolbar, select the **3D View** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./index-images/more-tools-icon.png)) button. The **3D View** tab opens in the **Quick View** panel:
 
    ![The 3D View tool, displayed in the Quick View panel](./index-images/tool-in-quick-view.png)
 
@@ -58,7 +62,7 @@ You can open the **3D View** tool either in the **Activity Bar** or in the **Qui
 <!-- ====================================================================== -->
 ## Zoom, pan, and rotate the 3D canvas
 
-You can zoom, pan, and rotate the 3D canvas that's displayed on the right side of the **3D View** tool to view the webpage from different angles.
+To view the webpage from different angles, you can zoom, pan, and rotate the 3D canvas that's displayed on the right side of the **3D View** tool.
 
 
 <!-- ------------------------------ -->
@@ -128,11 +132,13 @@ Renders the content from the webpage (color or image file) onto the elements.
 <!-- ------------------------------ -->
 #### Layers expander tree
 
-Expand this tree to display the list of composited layers. Click on a layer to review detailed information about it in the Details info pane.
+Expand this tree to display the list of composited layers. Click on a layer to display detailed information about it in the **Details** info pane.
 
 
 <!-- ------------------------------ -->
-#### Details info pane
+#### Details (info pane)
+
+The **Details** info pane below the **Composited Layers** pane contains the following fields.
 
 ###### Size
 
@@ -162,9 +168,11 @@ How many times the selected layer was painted by the rendering engine.
 <!-- ====================================================================== -->
 ## The Z-index tab
 
-The **Z-index** tab shows only the elements of the webpage that are stacking contexts or that are positioned along the z-axis. To learn more, see [Stacking context](https://developer.mozilla.org/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context) and [Using z-index](https://developer.mozilla.org/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Using_z-index) on MDN.
+The **Z-index** tab shows only the elements of the webpage that are stacking contexts or that are positioned along the z-axis:
 
 ![The Z-index tab](index-images/z-index-tab.png)
+
+To learn more, see [Stacking context](https://developer.mozilla.org/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context) and [Using z-index](https://developer.mozilla.org/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Using_z-index) at MDN.
 
 
 <!-- ------------------------------ -->
@@ -194,15 +202,18 @@ These radio buttons allow you to toggle through the options and pick the color t
 <!-- ====================================================================== -->
 ## The DOM tab
 
-The **DOM** tab provides a general debugging view of the DOM tree.  The **DOM** tab shows all the elements of the webpage in the 3D canvas. The elements' X and Y coordinates in the 3D canvas match their coordinates in the webpage. The elements' Z coordinates are based on how deeply nested the elements are in the DOM tree.
+The **DOM** tab provides a general debugging view of the DOM tree.  The **DOM** tab shows all the elements of the webpage in the 3D canvas:
 
 ![The DOM tab](index-images/dom-tab.png)
+
+An element's X and Y coordinates in the 3D canvas match the element's coordinates in the webpage. An element's Z coordinate is based on how deeply nested the element is in the DOM tree.
 
 
 <!-- ------------------------------ -->
 #### Nesting level for page (slider)
 
-The slider controls how many levels of the DOM tree are displayed in the 3D canvas. The value displayed next to the slider indicates the maximum depth of the elements that are displayed in the 3D canvas.  Dragging the slider to the left causes the outermost layers to peel away until you are left with a nesting level set to `1`, which displays only the furthest-back element in the DOM.  To remove some of the clutter, drag the slider.  It helps you get a closer look at what is happening in the lower levels.
+The slider controls how many levels of the DOM tree are displayed in the 3D canvas. The value displayed next to the slider indicates the maximum depth of the elements that are displayed in the 3D canvas.  Dragging the slider to the left causes the outermost layers to peel away until you are left with a nesting level set to `1`, which displays only the furthest-back element in the DOM.  To remove some of the clutter, drag the slider, to get a closer look at what's happening in the lower levels.
+
 
 ###### Reset button
 
@@ -212,7 +223,7 @@ Resets the **Nesting level for page** slider to the default value for the page.
 <!-- ------------------------------ -->
 #### Color type (section)
 
-In the **DOM** tab, You can choose from the following color schemes visualize the DOM in the 3D canvas:
+In the **DOM** tab, you can choose from the following color schemes visualize the DOM in the 3D canvas:
 
 *  **Purple to White** radio button - The 3D canvas shows elements ranging from purple to white.
 
