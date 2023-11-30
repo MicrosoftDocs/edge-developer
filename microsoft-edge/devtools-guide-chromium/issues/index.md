@@ -171,7 +171,7 @@ By default, only errors and warnings are displayed.  To display issues that have
 
 * From the **Severity** dropdown list, select any number of severity levels: **Tips**, **Info**, **Warnings**, or **Errors**:
 
-![The Issues panel with the Severity dropdown expanded, showing the different levels that can be selected](./index-images/severity-filter.png)
+![The Issues panel with the Severity dropdown list expanded, showing the different levels that can be selected](./index-images/severity-filter.png)
 
 To revert back to showing only warnings and errors, select **Default levels**.
 
@@ -196,7 +196,7 @@ To change the list of browsers that are tested for compatibility issues:
 * Or select any number of individual browsers from the list.
 * Click **Regenerate issues** to update the compatibility issues based on the selected browsers.
 
-![The Issues panel with the Browser dropdown expanded, showing the different browsers that can be selected](./index-images/browser-filter.png)
+![The Issues panel with the Browser dropdown list expanded, showing the different browsers that can be selected](./index-images/browser-filter.png)
 
 
 <!-- ------------------------------ -->
