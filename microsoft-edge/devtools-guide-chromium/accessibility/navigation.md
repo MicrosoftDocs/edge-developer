@@ -26,7 +26,7 @@ This article helps you use DevTools through the keyboard and through assistive t
 
 <!-- DevTools is a suite of web developer tools built into the Microsoft Edge browser. -->
 
-For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features](reference.md) and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
+For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features](reference.md).
 
 
 ### Tabbed tool panels containing tabs and pages

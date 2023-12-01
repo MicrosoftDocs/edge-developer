@@ -55,4 +55,3 @@ Use the following DevTools features to inspect text-color contrast.
 
 *  [Verify accessibility of all states of elements](test-inspect-states.md)
 *  [Use the Inspect tool to detect accessibility issues by hovering over the webpage](test-inspect-tool.md)
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

@@ -100,9 +100,3 @@ To turn on the hover state while using the Inspect tool:
    ![Testing the contrast of an element in a simulated hover state](./test-inspect-states-images/a11y-testing-hover-contrast-testing.png)
 
 State simulation is also a good way to check whether you considered different user needs, such as the needs of keyboard users.  By using the **Force element state** checkboxes, you can simulate the `:focus` state to discover that the UI remains unchanged when it has focus. This lack of an indicator when an element has focus is a problem.
-
-
-<!-- ====================================================================== -->
-## See also
-
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

@@ -53,9 +53,3 @@ Based on the above walkthrough, we found the following issues that need to be fi
 *  The order of the keyboard access through sections of the page isn't correct.  You navigate through all the **More** links in the document before you reach the sidebar navigation menu.  By the time the **Tab** key puts focus on the sidebar navigation menu, you've already traversed all the page content. The sidebar navigation menu was intended to provide easy access to the page content.
 
    For more information on how to solve this issue, see [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
-
-
-<!-- ====================================================================== -->
-## See also
-
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

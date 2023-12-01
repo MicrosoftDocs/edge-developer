@@ -5,11 +5,22 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/07/2021
+ms.date: 12/01/2023
 ---
 # Accessibility-testing features
 
-To test your webpages for accessibility, first make a checklist of accessibility aspects to test, and then use the relevant DevTools features to check each aspect.
+This article lists the accessibility aspects to test, and the corresponding features in Microsoft DevTools.
+
+Testing the accessibility of your website is important to ensure that people with different needs can use your website. In the best scenario, you'd have access to testers with different accessibility needs, and testers using various environments. But you can already do a lot by using automated tools.
+
+For example, the [Issues tool](../issues/index.md), [Accessibility Insights](https://accessibilityinsights.io), and [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) are tools that automatically generate accessibility reports for a webpage.  Getting an automated report from such tools is only the beginning of your accessibility-testing journey.
+
+Accessibility testing can't be fully automated and needs verification by a human navigating the product. You can do a lot yourself, for example:
+
+* You can use the keyboard to navigate the page.
+* You can inspect different parts of the page with DevTools.
+* You can look for issues that arise when interacting with the page.
+* You can look for issues related to changes in display, such as making the window narrow.
 
 
 <!-- ====================================================================== -->
@@ -69,13 +80,27 @@ To test your webpages for accessibility, first make a checklist of accessibility
 
 | Accessibility aspect to check | Feature of DevTools | Article or subheading |
 |---|---|---|
-| Verify that the webpage layout is usable when narrow | **Device Emulation** tool | [Verify that the webpage layout is usable when narrow](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow), and [Emulate mobile devices (Device Emulation)](../device-mode/index.md) |
+| Verify that the webpage layout is usable when narrow | **Device Emulation** tool | [Verify that the webpage layout is usable when narrow](./narrow.md), and [Emulate mobile devices (Device Emulation)](../device-mode/index.md) |
+
+
+<!-- ====================================================================== -->
+## What to do next?
+
+The DevTools features described above are a good start to catch accessibility problems in your products.  These features range from automated checks and manual detail checks to simulation of different states and environments.
+
+Automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use. None of these features can replace a proper round of testing with people that use assistive technologies and following a plan to check for all the required tests. You can also use the [Assessments](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/) feature of [Accessibility Insights](https://accessibilityinsights.io).  You may need to perform additional checks such as:
+
+* Testing when zoomed-in.
+* Testing with screen readers.
+* Testing with voice recognition.
+* Testing in high-contrast mode.
+
+Another way to find out what to do to improve your webpage is to use the [webhint extension for Visual Studio Code](https://aka.ms/webhint4code).  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 *  [Navigate DevTools with assistive technology](navigation.md)
 *  [Accessibility testing](../../accessibility/test.md)
 *  [Accessibility principles and best practices](https://developer.mozilla.org/docs/Web/Accessibility)

@@ -122,4 +122,3 @@ After clicking an element in the rendered webpage, you can then use the **Access
 *  [Analyze HTML pages using the Inspect tool](../css/inspect.md)
 *  [Inspect a node](../dom/index.md#inspect-a-node)
 *  [Check text-color contrast in the default state using the Inspect tool](test-inspect-text-contrast.md)
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

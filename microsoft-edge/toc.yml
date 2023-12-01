@@ -676,10 +676,6 @@
               href: devtools-guide-chromium/accessibility/reference.md
               displayName: Elements tool, Accessibility tab
 
-            - name: Overview of accessibility testing using DevTools  # added article
-              href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
-              displayName: Elements tool, Accessibility tab  # many tools
-
 # Inspect tool (distinct from Tools > Inspect tool bucket)
             - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage  # added article
               href: devtools-guide-chromium/accessibility/test-inspect-tool.md

@@ -48,4 +48,3 @@ To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link 
 ## See also
 
 *  [Track which element has focus](focus.md)
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

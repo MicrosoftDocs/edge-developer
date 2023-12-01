@@ -34,4 +34,3 @@ To check whether a webpage is usable with blurred vision:
 ## See also
 
 *  [Emulate vision deficiencies](emulate-vision-deficiencies.md)
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

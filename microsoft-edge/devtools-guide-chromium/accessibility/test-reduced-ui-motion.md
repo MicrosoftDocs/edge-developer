@@ -54,4 +54,3 @@ Notice that the demo webpage still runs the following animations, even with the 
 ## See also
 
 *  [Reduced motion simulation](reduced-motion-simulation.md)
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

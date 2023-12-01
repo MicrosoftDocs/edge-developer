@@ -78,9 +78,3 @@ To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard 
    Using a `click` event to read the buttons is good practice, because a `click` event fires both on mouse pointer and keyboard interaction.  However, because a `div` element isn't keyboard-accessible, and this **Donate** button is implemented as a `div` element (`<div class="submitbutton">Donate</div>`), this JavaScript functionality never runs unless you use a mouse or another source of a `click` event, such as a special button available on some keyboards.
 
 This is a classic example where JavaScript was added to create functionality that `button` elements provide natively.  Simulating the functionality of buttons with `div` elements ended up producing an inaccessible experience.
-
-
-<!-- ====================================================================== -->
-## See also
-
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

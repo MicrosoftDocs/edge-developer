@@ -36,4 +36,3 @@ Any element in the tree that doesn't have a name, or has a role of `generic` (su
 ## See also
 
 *  [View the position of an element in the Accessibility Tree](accessibility-tab.md#view-the-position-of-an-element-in-the-accessibility-tree)
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

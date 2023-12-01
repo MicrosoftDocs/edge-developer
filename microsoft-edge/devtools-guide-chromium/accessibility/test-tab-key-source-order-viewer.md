@@ -70,9 +70,3 @@ To activate and use the Source Order Viewer, with the demo page:
    ![Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page](./test-tab-key-source-order-viewer-images/a11y-testing-source-order-viewer.png)
 
 1. Scroll the page to see all of the numeric overlays, including on the page footer section.
-
-
-<!-- ====================================================================== -->
-## See also
-
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

@@ -82,7 +82,7 @@ Update: This feature has been released and is no longer experimental.<!-- To tur
 See also:
 * [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
 * [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
-* [Using the Inspect tool to detect accessibility issues](../../../accessibility/accessibility-testing-in-devtools.md#using-the-inspect-tool-to-detect-accessibility-issues) in _Overview of accessibility testing using DevTools_.
+* [Use the Inspect tool to detect accessibility issues by hovering over the webpage](../../../accessibility/test-inspect-tool.md).
 * [Update .css files from within the Styles tab (CSS mirror editing)](../../../../visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md).
 
 Grid:
