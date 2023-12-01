@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/29/2023
+ms.date: 11/30/2023
 ---
 # Navigate webpage layers, z-index, and DOM using the 3D View tool
 
@@ -56,7 +56,6 @@ You can open the **3D View** tool either in the **Activity Bar** or in the **Qui
 1. In the **Quick View** toolbar, select the **3D View** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./index-images/more-tools-icon.png)) button. The **3D View** tab opens in the **Quick View** panel:
 
    ![The 3D View tool, displayed in the Quick View panel](./index-images/tool-in-quick-view.png)
-
 
 
 <!-- ====================================================================== -->
