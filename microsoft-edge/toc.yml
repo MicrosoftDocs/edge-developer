@@ -707,7 +707,7 @@
                   href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
                   displayName: keyboard support
 
-                - name: Analyze the lack of indication of keyboard focus in a sidebar menu  # added article
+                - name: Analyze the lack of indication of keyboard focus  # added article
                   href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
                   displayName: keyboard focus
 

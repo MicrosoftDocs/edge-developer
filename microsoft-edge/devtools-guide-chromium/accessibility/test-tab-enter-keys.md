@@ -46,7 +46,7 @@ To check the demo page for accessibility issues by using a keyboard rather than 
 
 Based on the above walkthrough, we found the following issues that need to be fixed.
 
-*  When using a keyboard, the blue links of the sidebar navigation menu don't visually indicate which link has focus.  See [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md).
+*  When using a keyboard, the blue links of the sidebar navigation menu don't visually indicate which link has focus.  See [Analyze the lack of indication of keyboard focus](test-analyze-no-focus-indicator.md).
 
 *  In the donation form, the amount buttons and the **Donate** button don't work with a keyboard.  See [Analyze the lack of keyboard support in a form](test-analyze-no-keyboard-support.md).
 

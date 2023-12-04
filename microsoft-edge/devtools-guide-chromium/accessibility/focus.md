@@ -107,7 +107,7 @@ To manipulate the focused element in the **Console** tool, create a reference to
 <!-- ====================================================================== -->
 ## See also
 
-*  [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md)
+*  [Analyze the lack of indication of keyboard focus](test-analyze-no-focus-indicator.md)
 
 
 <!-- ====================================================================== -->
