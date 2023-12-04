@@ -440,8 +440,7 @@ Importing your data is completed locally on your device and is stored locally.  
 
 * In Microsoft Edge settings, turn on the toggle **Privacy, search, and services** > **Personalization & advertising** > **Allow Microsoft to save your browsing activity including history, usage, favorites, web content, and other browsing data to personalize Microsoft Edge and Microsoft services like ads, search, shopping and news**.
 
-You can manage your cloud browsing history by visiting [https://account.microsoft.com](https://account.microsoft.com).
-<!-- todo: clarify scope: locally there is one set, cloud there is another.  Dashboard has documentation about browsing history that talks about local vs. cloud data -->
+You can manage your browsing history that's stored on secure Microsoft servers by visiting [https://account.microsoft.com](https://account.microsoft.com).
 
 You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`.
 
