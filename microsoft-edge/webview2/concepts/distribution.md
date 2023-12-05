@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/21/2023
+ms.date: 12/05/2023
 ---
 # Distribute your app and the WebView2 Runtime
 
@@ -248,6 +248,7 @@ If you have an offline deployment scenario, where app deployment has to work ent
    MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install
    ```
 
+
 #### Test your app for forward-compatibility
 
 The Web is constantly evolving.  In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.
@@ -329,11 +330,7 @@ To use the Fixed Version distribution mode:
 
       Verify that the `bin\**designated architecture**\Release` folder has a matching FixedRuntime\\(version number) folder with the runtime files in it.
 
-#### Known issues for Fixed Version
-
-*  Currently, Fixed Version cannot be run from a network location or UNC path.
-
-*  Installing the Fixed Version of the WebView2 Runtime on the client causes [Microsoft PlayReady](https://www.microsoft.com/playready) to stop working.  Fix the PlayReady setup as follows:
+1. Starting with Fixed Version 120, unpackaged Win32 application developers using Fixed Version are required to run the following commands, for Fixed Version to continue to work.  This is due to the security improvement in v120 to run the Renderer process inside the App Container.  This doesn't impact the older runtime.  Packaged apps aren't affected by this change.
 
    1. Locate the path where you deploy the Fixed Version package on the user's device, such as the following location:
 
@@ -348,11 +345,14 @@ To use the Fixed Version distribution mode:
       icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
       ```
 
-      PlayReady should be working now on the user's device.
-
-   1. To confirm that PlayReady is installed correctly, in the **Security** tab of the **Fixed Version** folder, make sure permissions are granted for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`, as shown below:
+   1. Confirm that permissions are granted for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES` in the **Security** tab of the **Fixed Version** folder, as shown below:
 
       ![Permission for PlayReady](./distribution-images/play-ready-permission.png)
+
+
+#### Known issues for Fixed Version
+
+*  Currently, Fixed Version cannot be run from a network location or UNC path.
 
 
 <!-- ====================================================================== -->
