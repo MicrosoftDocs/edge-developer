@@ -126,5 +126,5 @@ Another way to find out what to do to improve your webpage is to use the [webhin
 
 *  [Navigate DevTools with assistive technology](navigation.md)
 *  [Accessibility testing](../../accessibility/test.md)
-*  [Accessibility principles and best practices](https://developer.mozilla.org/docs/Web/Accessibility)
-*  [Screen reader](https://developer.mozilla.org/docs/Glossary/Screen_reader)
+*  [Accessibility principles and best practices](https://developer.mozilla.org/docs/Web/Accessibility) at MDN
+*  [Screen reader](https://developer.mozilla.org/docs/Glossary/Screen_reader) at MDN
