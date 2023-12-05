@@ -225,13 +225,13 @@ If you have extensions on the Microsoft Edge Add-ons and the Chrome Webstore, yo
 
 To store the native messaging host manifest file:
 
-*  System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  For example, the native messaging host manifest file must be stored in following location:
+*  System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  For example, the native messaging host manifest file must be stored in the following location:
 
    ```bash
    /Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_app.json
    ```
 
-*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user profile directory.  For example, the native messaging host manifest file must be stored in following location:
+*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user profile directory.  For example, the native messaging host manifest file must be stored in the following location:
 
    ```bash
    ~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/com.my_company.my_app.json
